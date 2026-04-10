@@ -1,0 +1,381 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Assista o processo de fabricação das salsichas!
+1	Assista	assistir	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	processo	processo	NOUN	_	Gender=Masc|Number=Sing	1	obj	1:obj	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	fabricação	fabricação	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:de	_
+6-7	das	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	8:det	_
+8	salsichas	salsicha	NOUN	_	Gender=Fem|Number=Plur	5	nmod	5:nmod:de	SpaceAfter=No
+9	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Você nunca mais vai comer esse lixo!.
+1	Você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	5	nsubj	5:nsubj	_
+2	nunca	nunca	ADV	_	_	5	advmod	5:advmod	_
+3	mais	mais	ADV	_	_	2	advmod	2:advmod	_
+4	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	5:aux	_
+5	comer	comer	VERB	_	VerbForm=Inf	0	root	0:root	_
+6	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	7	det	7:det	_
+7	lixo	lixo	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	SpaceAfter=No
+8	!	!	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+9	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0005
+# text = A salsicha, usada em cachorros-quentes e várias receitas populares, é feita em linhas de produção automatizadas.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	salsicha	salsicha	NOUN	_	Gender=Fem|Number=Sing	13	nsubj:pass	13:nsubj:pass	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	usada	usar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	2:acl	_
+5	em	em	ADP	_	_	6	case	6:case|9:case	_
+6	cachorros-quentes	cachorros-quentes	NOUN	_	Number=Plur	4	obl	4:obl:em	_
+7	e	e	CCONJ	_	_	9	cc	9:cc	_
+8	várias	vários	DET	_	Gender=Fem|Number=Plur|PronType=Ind	9	det	9:det	_
+9	receitas	receita	NOUN	_	Gender=Fem|Number=Plur	6	conj	4:obl:em|6:conj:e	_
+10	populares	popular	ADJ	_	Number=Plur	9	amod	9:amod	SpaceAfter=No
+11	,	,	PUNCT	_	_	4	punct	4:punct	_
+12	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux:pass	13:aux:pass	_
+13	feita	fazer	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+14	em	em	ADP	_	_	15	case	15:case	_
+15	linhas	linha	NOUN	_	Gender=Fem|Number=Plur	13	obl	13:obl:em	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	produção	produção	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:de	_
+18	automatizadas	automatizado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	15	amod	15:amod	SpaceAfter=No
+19	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0007
+# text = A coisa mais importante que você precisa saber é que as salsichas são feitas com restos de carnes diversas que são descartadas na produção de outros alimentos.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	coisa	coisa	NOUN	_	Gender=Fem|Number=Sing	14	nsubj:pass	8:obj|14:nsubj:pass	_
+3	mais	mais	ADV	_	_	4	advmod	4:advmod	_
+4	importante	importante	ADJ	_	Number=Sing	2	amod	2:amod	_
+5	que	que	PRON	_	PronType=Rel	7	obj	2:ref	_
+6	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	7	nsubj	7:nsubj|8:nsubj	_
+7	precisa	precisar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+8	saber	saber	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+9	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	14:cop	_
+10	que	que	SCONJ	_	_	14	mark	14:mark	_
+11	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	12:det	_
+12	salsichas	salsicha	NOUN	_	Gender=Fem|Number=Plur	14	nsubj:pass	14:nsubj:pass	_
+13	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	aux:pass	14:aux:pass	_
+14	feitas	fazer	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	_
+15	com	com	ADP	_	_	16	case	16:case	_
+16	restos	resto	NOUN	_	Gender=Masc|Number=Plur	14	obl	14:obl:com	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	carnes	carne	NOUN	_	Gender=Fem|Number=Plur	16	nmod	16:nmod:de|22:nsubj:pass	_
+19	diversas	diversos	DET	_	Gender=Fem|Number=Plur|PronType=Dem	18	det	18:det	_
+20	que	que	PRON	_	PronType=Rel	22	nsubj:pass	18:ref	_
+21	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	aux:pass	22:aux:pass	_
+22	descartadas	descartar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	18	acl:relcl	18:acl:relcl	_
+23-24	na	_	_	_	_	_	_	_	_
+23	em	em	ADP	_	_	25	case	25:case	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	produção	produção	NOUN	_	Gender=Fem|Number=Sing	22	obl	22:obl:em	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	28	det	28:det	_
+28	alimentos	alimento	NOUN	_	Gender=Masc|Number=Plur	25	nmod	25:nmod:de	SpaceAfter=No
+29	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0009
+# text = A indústria chama esses "restos" de " aparas ".
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	indústria	indústria	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_
+3	chama	chamar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	6	det	6:det	_
+5	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+6	restos	resto	NOUN	_	Gender=Masc|Number=Plur	3	obj	3:obj	SpaceAfter=No
+7	"	"	PUNCT	_	_	6	punct	6:punct	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	"	"	PUNCT	_	_	10	punct	10:punct	_
+10	aparas	apara	NOUN	_	Gender=Fem|Number=Plur	3	obl	3:obl:de	_
+11	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+12	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0011
+# text = Na verdade é uma nomeação "educada" para se referir às cartilagens, à gordura e às outras miudezas que sobram das carcaças de vacas, porcos e aves [...] como carne de cabeça, pescoço, patas de animais, peles, sangue, fígado e demais "produtos comestíveis do abate".
+1-2	Na	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	verdade	verdade	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:em	_
+4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	nomeação	nomeação	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+7	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	educada	educar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	6	acl	6:acl	SpaceAfter=No
+9	"	"	PUNCT	_	_	8	punct	8:punct	_
+10	para	para	ADP	_	_	12	mark	12:mark	_
+11	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	12	expl	12:expl	_
+12	referir	referir	VERB	_	VerbForm=Inf	6	advcl	6:advcl:para	_
+13-14	às	_	_	_	_	_	_	_	_
+13	a	a	ADP	_	_	15	case	15:case	_
+14	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	15:det	_
+15	cartilagens	cartilagem	NOUN	_	Gender=Fem|Number=Plur	12	obl	12:obl:a	SpaceAfter=No
+16	,	,	PUNCT	_	_	19	punct	19:punct	_
+17-18	à	_	_	_	_	_	_	_	_
+17	a	a	ADP	_	_	19	case	19:case	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	gordura	gordura	NOUN	_	Number=Sing	15	conj	12:obl:a|15:conj:e	_
+20	e	e	CCONJ	_	_	24	cc	24:cc	_
+21-22	às	_	_	_	_	_	_	_	_
+21	a	a	ADP	_	_	24	case	24:case	_
+22	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	24:det	_
+23	outras	outro	DET	_	Gender=Fem|Number=Plur|PronType=Ind	24	det	24:det	_
+24	miudezas	miudeza	NOUN	_	Gender=Fem|Number=Plur	15	conj	12:obl:a|15:conj:e|26:nsubj	_
+25	que	que	PRON	_	PronType=Rel	26	nsubj	24:ref	_
+26	sobram	sobrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	24	acl:relcl	24:acl:relcl	_
+27-28	das	_	_	_	_	_	_	_	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	29	det	29:det	_
+29	carcaças	carcaça	NOUN	_	Gender=Fem|Number=Plur	26	obl	26:obl:de	_
+30	de	de	ADP	_	_	31	case	31:case|33:case|35:case	_
+31	vacas	vaca	NOUN	_	Gender=Fem|Number=Plur	29	nmod	29:nmod:de	SpaceAfter=No
+32	,	,	PUNCT	_	_	33	punct	33:punct	_
+33	porcos	porco	NOUN	_	Gender=Masc|Number=Plur	31	conj	29:nmod:de|31:conj:e	_
+34	e	e	CCONJ	_	_	35	cc	35:cc	_
+35	aves	ave	NOUN	_	Gender=Fem|Number=Plur	31	conj	29:nmod:de|31:conj:e	_
+36	[	[	PUNCT	_	_	37	punct	37:punct	SpaceAfter=No
+37	.	.	PUNCT	_	_	24	appos	24:appos	SpaceAfter=No
+38	..	..	PUNCT	_	_	37	punct	37:punct	SpaceAfter=No
+39	]	]	PUNCT	_	_	37	punct	37:punct	_
+40	como	como	ADP	_	_	41	case	41:case|47:case|51:case|53:case|55:case|59:case	_
+41	carne	carne	NOUN	_	Gender=Fem|Number=Sing	24	nmod	24:nmod:como	_
+42	de	de	ADP	_	_	43	case	43:case|45:case	_
+43	cabeça	cabeça	NOUN	_	Gender=Fem|Number=Sing	41	nmod	41:nmod:de	SpaceAfter=No
+44	,	,	PUNCT	_	_	45	punct	45:punct	_
+45	pescoço	pescoço	NOUN	_	Gender=Masc|Number=Sing	43	conj	41:nmod:de|43:conj	SpaceAfter=No
+46	,	,	PUNCT	_	_	51	punct	51:punct	_
+47	patas	pato	NOUN	_	Gender=Fem|Number=Plur	41	conj	24:nmod:como|41:conj:e	_
+48	de	de	ADP	_	_	49	case	49:case	_
+49	animais	animal	NOUN	_	Number=Plur	47	nmod	47:nmod:de	SpaceAfter=No
+50	,	,	PUNCT	_	_	51	punct	51:punct	_
+51	peles	pele	NOUN	_	Gender=Fem|Number=Plur	41	conj	24:nmod:como|41:conj:e	SpaceAfter=No
+52	,	,	PUNCT	_	_	53	punct	53:punct	_
+53	sangue	sangue	NOUN	_	Gender=Masc|Number=Sing	41	conj	24:nmod:como|41:conj:e	SpaceAfter=No
+54	,	,	PUNCT	_	_	55	punct	55:punct	_
+55	fígado	fígado	NOUN	_	Gender=Masc|Number=Sing	41	conj	24:nmod:como|41:conj:e	_
+56	e	e	CCONJ	_	_	59	cc	59:cc	_
+57	demais	demais	DET	_	Number=Plur|PronType=Ind	59	det	59:det	_
+58	"	"	PUNCT	_	_	59	punct	59:punct	SpaceAfter=No
+59	produtos	produto	NOUN	_	Gender=Masc|Number=Plur	41	conj	24:nmod:como|41:conj:e	_
+60	comestíveis	comestível	ADJ	_	Number=Plur	59	amod	59:amod	_
+61-62	do	_	_	_	_	_	_	_	_
+61	de	de	ADP	_	_	63	case	63:case	_
+62	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	63	det	63:det	_
+63	abate	abate	NOUN	_	Gender=Masc|Number=Sing	59	nmod	59:nmod:de	SpaceAfter=No
+64	"	"	PUNCT	_	_	59	punct	59:punct	SpaceAfter=No
+65	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0013
+# text = As fábricas então usam essas aparas pré-cozidas em temperaturas entre 65oC e 90oC, dependendo do tamanho da carcaça ou do tipo da carne em questão.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	fábricas	fábrica	NOUN	_	Number=Plur	4	nsubj	4:nsubj	_
+3	então	então	ADV	_	_	4	advmod	4:advmod	_
+4	usam	usar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	6	det	6:det	_
+6	aparas	apara	NOUN	_	Gender=Fem|Number=Plur	4	obj	4:obj	_
+7	pré-cozidas	pré-cozidas	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	6	acl	6:acl	_
+8	em	em	ADP	_	_	9	case	9:case	_
+9	temperaturas	temperatura	NOUN	_	Gender=Fem|Number=Plur	4	obl	4:obl:em	_
+10	entre	entre	ADP	_	_	11	case	11:case	_
+11	65oC	65oC	NOUN	_	_	9	nmod	9:nmod:entre	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	90oC	90oC	NOUN	_	_	11	conj	9:nmod:entre|11:conj:e	SpaceAfter=No
+14	,	,	PUNCT	_	_	15	punct	15:punct	_
+15	dependendo	depender	VERB	_	VerbForm=Ger	4	advcl	4:advcl	_
+16-17	do	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	tamanho	tamanho	NOUN	_	Gender=Masc|Number=Sing	15	obl	15:obl:de	_
+19-20	da	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	carcaça	carcaça	NOUN	_	Gender=Fem|Number=Sing	18	nmod	18:nmod:de	_
+22	ou	ou	CCONJ	_	_	25	cc	25:cc	_
+23-24	do	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	tipo	tipo	NOUN	_	Gender=Masc|Number=Sing	18	conj	15:obl:de|18:conj:ou	_
+26-27	da	_	_	_	_	_	_	_	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	carne	carne	NOUN	_	Gender=Fem|Number=Sing	25	nmod	25:nmod:de	_
+29	em	em	ADP	_	_	30	case	30:case	_
+30	questão	questão	NOUN	_	Gender=Fem|Number=Sing	28	nmod	28:nmod:em	SpaceAfter=No
+31	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0015
+# text = Essa espécie de fervura também serve para ajudar a eliminar os diferentes tipos de bactérias que proliferam nesses pedaços descartados.
+1	Essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	2	det	2:det	_
+2	espécie	espécie	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	fervura	fervura	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+5	também	também	ADV	_	_	6	advmod	6:advmod	_
+6	serve	servir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	para	para	ADP	_	_	8	mark	8:mark	_
+8	ajudar	ajudar	VERB	_	VerbForm=Inf	6	advcl	6:advcl:para	_
+9	a	a	ADP	_	_	10	mark	10:mark	_
+10	eliminar	eliminar	VERB	_	VerbForm=Inf	8	xcomp	8:xcomp	_
+11	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	13:det	_
+12	diferentes	diferente	ADJ	_	Number=Plur	13	amod	13:amod	_
+13	tipos	tipo	NOUN	_	Gender=Masc|Number=Plur	10	obj	10:obj|17:nsubj	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	bactérias	bactéria	NOUN	_	Gender=Fem|Number=Plur	13	nmod	13:nmod:de	_
+16	que	que	PRON	_	PronType=Rel	17	nsubj	13:ref	_
+17	proliferam	proliferar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	acl:relcl	13:acl:relcl	_
+18-19	nesses	_	_	_	_	_	_	_	_
+18	em	em	ADP	_	_	20	case	20:case	_
+19	esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	20	det	20:det	_
+20	pedaços	pedaço	NOUN	_	Gender=Masc|Number=Plur	17	obl	17:obl:em	_
+21	descartados	descartar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	20	acl	20:acl	SpaceAfter=No
+22	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0017
+# text = A próxima etapa da fabricação das salsichas para cachorro-quente é ainda pior!
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+2	próxima	próximo	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+3	etapa	etapa	NOUN	_	Gender=Fem|Number=Sing	14	nsubj	14:nsubj	_
+4-5	da	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	fabricação	fabricação	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:de	_
+7-8	das	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	9:det	_
+9	salsichas	salsicha	NOUN	_	Gender=Fem|Number=Plur	6	nmod	6:nmod:de	_
+10	para	para	ADP	_	_	11	case	11:case	_
+11	cachorro-quente	cachorro-quente	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:para	_
+12	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	14:cop	_
+13	ainda	ainda	ADV	_	_	14	advmod	14:advmod	_
+14	pior	pior	ADJ	_	Number=Sing	0	root	0:root	SpaceAfter=No
+15	!	!	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0019
+# text = Consiste em fazer uma espécie de "massa de carne" a partir da mistura de alguns produtos com a carne que foi moída.
+1	Consiste	consistir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	em	em	ADP	_	_	3	mark	3:mark	_
+3	fazer	fazer	VERB	_	VerbForm=Inf	1	xcomp	1:xcomp	_
+4	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	espécie	espécie	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	massa	massa	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	carne	carne	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	SpaceAfter=No
+11	"	"	PUNCT	_	_	8	punct	8:punct	_
+12	a	a	ADP	_	_	13	mark	13:mark	_
+13	partir	partir	VERB	_	VerbForm=Inf	3	advcl	3:advcl:a	_
+14-15	da	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	mistura	mistura	NOUN	_	Gender=Fem|Number=Sing	13	obl	13:obl:de	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	alguns	algum	DET	_	Gender=Masc|Number=Plur|PronType=Ind	19	det	19:det	_
+19	produtos	produto	NOUN	_	Gender=Masc|Number=Plur	16	nmod	16:nmod:de	_
+20	com	com	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	carne	carne	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:com|25:nsubj:pass	_
+23	que	que	PRON	_	PronType=Rel	25	nsubj:pass	22:ref	_
+24	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	25	aux:pass	25:aux:pass	_
+25	moída	moír	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	22	acl:relcl	22:acl:relcl	SpaceAfter=No
+26	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0021
+# text = Sal, temperos, amido, além de água e xarope de milho são alguns desses produtos acrescentados à receita.
+1	Sal	sal	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	15:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	temperos	tempero	NOUN	_	Gender=Masc|Number=Plur	1	conj	1:conj|15:nsubj	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	amido	amido	NOUN	_	Gender=Masc|Number=Sing	1	conj	1:conj|15:nsubj	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	além	além	ADV	_	_	1	advmod	1:advmod|3:advmod|5:advmod	_
+8	de	de	ADP	_	_	9	case	9:case|11:case	_
+9	água	água	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:de	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	xarope	xarope	NOUN	_	Gender=Masc|Number=Sing	9	conj	7:obl:de|9:conj:e	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	milho	milho	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:de	_
+14	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	cop	15:cop	_
+15	alguns	algum	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	0	root	0:root	_
+16-17	desses	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	18	det	18:det	_
+18	produtos	produto	NOUN	_	Gender=Masc|Number=Plur	15	nmod	15:nmod:de	_
+19	acrescentados	acrescentar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	18	acl	18:acl	_
+20-21	à	_	_	_	_	_	_	_	_
+20	a	a	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	receita	receita	NOUN	_	Gender=Fem|Number=Sing	19	obl	19:obl:a	SpaceAfter=No
+23	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0023
+# text = O excesso de líquidos da massa é sugado e a carne começa a tomar a forma que conhecemos, em embalagens de celulose, na maioria das vezes.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	excesso	excesso	NOUN	_	Gender=Masc|Number=Sing	9	nsubj:pass	9:nsubj:pass	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	líquidos	líquido	NOUN	_	Gender=Masc|Number=Plur	2	nmod	2:nmod:de	_
+5-6	da	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	massa	massa	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:de	_
+8	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:pass	9:aux:pass	_
+9	sugado	sugar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+10	e	e	CCONJ	_	_	13	cc	13:cc	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	carne	carne	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	13:nsubj|15:nsubj	_
+13	começa	começar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	conj	9:conj:e	_
+14	a	a	ADP	_	_	15	mark	15:mark	_
+15	tomar	tomar	VERB	_	VerbForm=Inf	13	xcomp	13:xcomp	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	forma	forma	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj|19:obj	_
+18	que	que	PRON	_	PronType=Rel	19	obj	17:ref	_
+19	conhecemos	conhecer	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	17	acl:relcl	17:acl:relcl	SpaceAfter=No
+20	,	,	PUNCT	_	_	22	punct	22:punct	_
+21	em	em	ADP	_	_	22	case	22:case	_
+22	embalagens	embalagem	NOUN	_	Gender=Fem|Number=Plur	15	obl	15:obl:em	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	celulose	celulose	NOUN	_	Gender=Fem|Number=Sing	22	nmod	22:nmod:de	SpaceAfter=No
+25	,	,	PUNCT	_	_	28	punct	28:punct	_
+26-27	na	_	_	_	_	_	_	_	_
+26	em	em	ADP	_	_	28	case	28:case	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	maioria	maioria	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl:em	_
+29-30	das	_	_	_	_	_	_	_	_
+29	de	de	ADP	_	_	31	case	31:case	_
+30	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	31	det	31:det	_
+31	vezes	vez	NOUN	_	Gender=Fem|Number=Plur	28	nmod	28:nmod:de	SpaceAfter=No
+32	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0025
+# text = Na etapa final o produto está praticamente pronto e precisa apenas passar pela defumação.
+1-2	Na	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	etapa	etapa	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:em	_
+4	final	final	ADJ	_	Number=Sing	3	amod	3:amod	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	produto	produto	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	9:nsubj|11:nsubj|13:nsubj	_
+7	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	9:cop	_
+8	praticamente	praticamente	ADV	_	_	9	advmod	9:advmod	_
+9	pronto	pronto	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	precisa	precisar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	conj	9:conj:e	_
+12	apenas	apenas	ADV	_	_	13	advmod	13:advmod	_
+13	passar	passar	VERB	_	VerbForm=Inf	11	xcomp	11:xcomp	_
+14-15	pela	_	_	_	_	_	_	_	_
+14	por	por	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	defumação	defumação	NOUN	_	Gender=Fem|Number=Sing	13	obl	13:obl:por	SpaceAfter=No
+17	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0026
+# text = vídeo 1 vídeo 2 leia também:
+1	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	5	dep	5:dep	_
+2	1	1	NUM	_	NumType=Card	3	nummod	3:nummod	_
+3	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	1	nmod	1:nmod	_
+4	2	2	NUM	_	NumType=Card	3	nmod	3:nmod	_
+5	leia	ler	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	também	também	ADV	_	_	5	advmod	5:advmod	SpaceAfter=No
+7	:	:	PUNCT	_	_	5	punct	5:punct	_

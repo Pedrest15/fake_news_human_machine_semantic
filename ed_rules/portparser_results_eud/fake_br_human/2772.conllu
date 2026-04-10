@@ -1,0 +1,488 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Shrek, Peppa Pig, MC Guimê e José Dirceu.
+1	Shrek	Shrek	PROPN	_	_	0	root	0:root	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	Peppa	Peppa	PROPN	_	_	1	conj	1:conj:e	_
+4	Pig	Pig	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	MC	MC	PROPN	_	_	1	conj	1:conj:e	_
+7	Guimê	Guimê	PROPN	_	_	6	flat:name	6:flat:name	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	José	José	PROPN	_	_	1	conj	1:conj:e	_
+10	Dirceu	Dirceu	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+11	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Essa é a Lei Rouanet, incentivando a "curtura".
+1	Essa	esse	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	4	nsubj	4:nsubj	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	Lei	Lei	PROPN	_	_	0	root	0:root	_
+5	Rouanet	Rouanet	PROPN	_	_	4	flat:name	4:flat:name	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	incentivando	incentivar	VERB	_	VerbForm=Ger	4	advcl	4:advcl	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+9	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+10	curtura	curtura	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	SpaceAfter=No
+11	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+12	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0005
+# text = A famosa LEI ROUANET foi criada durante o governo Collor e mais tarde ficaria conhecida pelo nome do Secretário da Cultura à época, Sérgio Paulo Rouanet.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+2	famosa	famoso	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+3	LEI	LEI	PROPN	_	_	6	nsubj:pass	6:nsubj:pass|14:nsubj|15:nsubj	_
+4	ROUANET	ROUANET	PROPN	_	_	3	flat:name	3:flat:name	_
+5	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	aux:pass	6:aux:pass	_
+6	criada	criar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+7	durante	durante	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	governo	governo	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:durante	_
+10	Collor	Collor	PROPN	_	_	9	nmod	9:nmod	_
+11	e	e	CCONJ	_	_	14	cc	14:cc	_
+12	mais	mais	ADV	_	_	13	advmod	13:advmod	_
+13	tarde	tarde	ADV	_	_	14	advmod	14:advmod	_
+14	ficaria	ficar	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	6	conj	6:conj:e	_
+15	conhecida	conhecido	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	14	xcomp	14:xcomp	_
+16-17	pelo	_	_	_	_	_	_	_	_
+16	por	por	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	nome	nome	NOUN	_	Gender=Masc|Number=Sing	15	obl	15:obl:por	_
+19-20	do	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	Secretário	Secretário	PROPN	_	_	18	nmod	18:nmod:de	_
+22-23	da	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	Cultura	Cultura	PROPN	_	_	21	flat:name	21:flat:name	_
+25-26	à	_	_	_	_	_	_	_	_
+25	a	a	ADP	_	_	27	case	27:case	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	época	época	NOUN	_	Gender=Fem|Number=Sing	21	nmod	21:nmod:a	SpaceAfter=No
+28	,	,	PUNCT	_	_	29	punct	29:punct	_
+29	Sérgio	Sérgio	PROPN	_	_	21	appos	21:appos	_
+30	Paulo	Paulo	PROPN	_	_	29	flat:name	29:flat:name	_
+31	Rouanet	Rouanet	PROPN	_	_	29	flat:name	29:flat:name	SpaceAfter=No
+32	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0007
+# text = Amanhã (24) será apresentado na Câmara dos Deputados um requerimento para a abertura da CPI da Lei Rouanet.
+1	Amanhã	amanhã	ADV	_	_	6	advmod	6:advmod	_
+2	(	(	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+3	24	24	NUM	_	NumType=Card	1	appos	1:appos	SpaceAfter=No
+4	)	)	PUNCT	_	_	3	punct	3:punct	_
+5	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	6	aux:pass	6:aux:pass	_
+6	apresentado	apresentar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+7-8	na	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	Câmara	Câmara	PROPN	_	_	6	obl	6:obl:em	_
+10-11	dos	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	12:det	_
+12	Deputados	Deputados	PROPN	_	_	9	flat:name	9:flat:name	_
+13	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	requerimento	requerimento	NOUN	_	Gender=Masc|Number=Sing	6	nsubj:pass	6:nsubj:pass	_
+15	para	para	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	abertura	abertura	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:para	_
+18-19	da	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	CPI	CPI	PROPN	_	_	17	nmod	17:nmod:de	_
+21-22	da	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	Lei	Lei	PROPN	_	_	20	flat:name	20:flat:name	_
+24	Rouanet	Rouanet	PROPN	_	_	23	flat:name	23:flat:name	SpaceAfter=No
+25	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0009
+# text = Através de renúncia fiscal, empresas públicas e privadas e pessoas físicas podem patrocinar projetos culturais e receberem o valor em forma de desconto no imposto de renda.
+1	Através	através	ADV	_	_	13	advmod	13:advmod	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	renúncia	renúncia	NOUN	_	Gender=Fem|Number=Sing	1	obl	1:obl:de	_
+4	fiscal	fiscal	ADJ	_	Number=Sing	3	amod	3:amod	SpaceAfter=No
+5	,	,	PUNCT	_	_	1	punct	1:punct	_
+6	empresas	empresa	NOUN	_	Gender=Fem|Number=Plur	13	nsubj	13:nsubj|14:nsubj|18:nsubj	_
+7	públicas	público	ADJ	_	Gender=Fem|Number=Plur	6	amod	6:amod	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	privadas	privado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	7	conj	6:amod|7:conj:e	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	6	conj	6:conj:e|13:nsubj|14:nsubj|18:nsubj	_
+12	físicas	físico	ADJ	_	Gender=Fem|Number=Plur	11	amod	11:amod	_
+13	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+14	patrocinar	patrocinar	VERB	_	VerbForm=Inf	13	xcomp	13:xcomp	_
+15	projetos	projeto	NOUN	_	Gender=Masc|Number=Plur	14	obj	14:obj	_
+16	culturais	cultural	ADJ	_	Number=Plur	15	amod	15:amod	_
+17	e	e	CCONJ	_	_	18	cc	18:cc	_
+18	receberem	receber	VERB	_	Number=Plur|Person=3|VerbForm=Inf	14	conj	13:xcomp|14:conj:e	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	valor	valor	NOUN	_	Gender=Masc|Number=Sing	18	obj	18:obj	_
+21	em	em	ADP	_	_	22	case	22:case	_
+22	forma	forma	NOUN	_	Gender=Fem|Number=Sing	18	obl	18:obl:em	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	desconto	desconto	NOUN	_	Gender=Masc|Number=Sing	22	nmod	22:nmod:de	_
+25-26	no	_	_	_	_	_	_	_	_
+25	em	em	ADP	_	_	27	case	27:case	_
+26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	imposto	imposto	NOUN	_	Gender=Masc|Number=Sing	24	nmod	24:nmod:em	_
+28	de	de	ADP	_	_	29	case	29:case	_
+29	renda	renda	NOUN	_	Gender=Fem|Number=Sing	27	nmod	27:nmod:de	SpaceAfter=No
+30	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0011
+# text = Resumindo, os cofres públicos deixam de receber parte daquele dinheiro em troca de um patrocínio cultural, uma forma de "terceirizar" um repasse de recursos federais.
+1	Resumindo	resumir	VERB	_	VerbForm=Ger	6	parataxis	6:parataxis	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	4:det	_
+4	cofres	cofre	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	6:nsubj	_
+5	públicos	público	ADJ	_	Gender=Masc|Number=Plur	4	amod	4:amod	_
+6	deixam	deixar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	de	de	ADP	_	_	8	mark	8:mark	_
+8	receber	receber	VERB	_	VerbForm=Inf	6	xcomp	6:xcomp	_
+9	parte	parte	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	_
+10-11	daquele	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	aquele	aquele	DET	_	Gender=Masc|Number=Sing|PronType=Dem	12	det	12:det	_
+12	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:de	_
+13	em	em	ADP	_	_	14	case	14:case	_
+14	troca	troca	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:em	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	patrocínio	patrocínio	NOUN	_	Gender=Masc|Number=Sing	14	nmod	14:nmod:de	_
+18	cultural	cultural	ADJ	_	Number=Sing	17	amod	17:amod	SpaceAfter=No
+19	,	,	PUNCT	_	_	21	punct	21:punct	_
+20	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	forma	forma	NOUN	_	Gender=Fem|Number=Sing	17	appos	17:appos	_
+22	de	de	ADP	_	_	24	mark	24:mark	_
+23	"	"	PUNCT	_	_	24	punct	24:punct	SpaceAfter=No
+24	terceirizar	terceirizar	VERB	_	VerbForm=Inf	21	acl	21:acl:de	SpaceAfter=No
+25	"	"	PUNCT	_	_	24	punct	24:punct	_
+26	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	repasse	repasse	NOUN	_	Gender=Masc|Number=Sing	24	obj	24:obj	_
+28	de	de	ADP	_	_	29	case	29:case	_
+29	recursos	recurso	NOUN	_	Gender=Masc|Number=Plur	27	nmod	27:nmod:de	_
+30	federais	federal	ADJ	_	Number=Plur	29	amod	29:amod	SpaceAfter=No
+31	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0013
+# text = No primeiro governo Dilma, 3% das propostas levaram 50% dos incentivos, um cenário que só contribui para a concentração cultural do país, enquanto pouco incentiva projetos menores.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	4	case	4:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+3	primeiro	primeiro	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	4	amod	4:amod	_
+4	governo	governo	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:em	_
+5	Dilma	Dilma	PROPN	_	_	4	nmod	4:nmod	SpaceAfter=No
+6	,	,	PUNCT	_	_	4	punct	4:punct	_
+7	3	3	NUM	_	NumType=Card	8	nummod	8:nummod	SpaceAfter=No
+8	%	%	SYM	_	_	12	nsubj	12:nsubj	_
+9-10	das	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	11:det	_
+11	propostas	proposta	NOUN	_	Gender=Fem|Number=Plur	8	nmod	8:nmod:de	_
+12	levaram	levar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+13	50	50	NUM	_	NumType=Card	14	nummod	14:nummod	SpaceAfter=No
+14	%	%	SYM	_	_	12	obj	12:obj	_
+15-16	dos	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	17:det	_
+17	incentivos	incentivo	NOUN	_	Gender=Masc|Number=Plur	14	nmod	14:nmod:de	SpaceAfter=No
+18	,	,	PUNCT	_	_	20	punct	20:punct	_
+19	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	cenário	cenário	NOUN	_	Gender=Masc|Number=Sing	12	parataxis	12:parataxis|23:nsubj	_
+21	que	que	PRON	_	PronType=Rel	23	nsubj	20:ref	_
+22	só	só	ADV	_	_	23	advmod	23:advmod	_
+23	contribui	contribuir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	acl:relcl	20:acl:relcl	_
+24	para	para	ADP	_	_	26	case	26:case	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	concentração	concentração	NOUN	_	Gender=Fem|Number=Sing	23	obl	23:obl:para	_
+27	cultural	cultural	ADJ	_	Number=Sing	26	amod	26:amod	_
+28-29	do	_	_	_	_	_	_	_	_
+28	de	de	ADP	_	_	30	case	30:case	_
+29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	30:det	_
+30	país	país	NOUN	_	Gender=Masc|Number=Sing	26	nmod	26:nmod:de	SpaceAfter=No
+31	,	,	PUNCT	_	_	34	punct	34:punct	_
+32	enquanto	enquanto	SCONJ	_	_	34	mark	34:mark	_
+33	pouco	pouco	ADV	_	_	34	advmod	34:advmod	_
+34	incentiva	incentivar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	advcl	23:advcl:enquanto	_
+35	projetos	projeto	NOUN	_	Gender=Masc|Number=Plur	34	obj	34:obj	_
+36	menores	menor	ADJ	_	Number=Plur	35	amod	35:amod	SpaceAfter=No
+37	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0015
+# text = A maior parte dos "incentivos" dessa LEI está concentrada nas mãos de meia dúzia de pseudo artistas [...] que na verdade são [quer dizer ERAM] usados como massa de manobra pelo PT.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+2	maior	maior	ADJ	_	Number=Sing	3	amod	3:amod	_
+3	parte	parte	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	13:nsubj	_
+4-5	dos	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	7	case	7:case	_
+5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	7:det	_
+6	"	"	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+7	incentivos	incentivo	NOUN	_	Gender=Masc|Number=Plur	3	nmod	3:nmod:de	SpaceAfter=No
+8	"	"	PUNCT	_	_	7	punct	7:punct	_
+9-10	dessa	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	11	det	11:det	_
+11	LEI	LEI	PROPN	_	_	7	nmod	7:nmod:de	_
+12	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	13:cop	_
+13	concentrada	concentrado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	0	root	0:root	_
+14-15	nas	_	_	_	_	_	_	_	_
+14	em	em	ADP	_	_	16	case	16:case	_
+15	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	16:det	_
+16	mãos	mão	NOUN	_	Gender=Fem|Number=Plur	13	obl	13:obl:em	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	meia	meio	NUM	_	Gender=Fem|NumType=Frac	19	nummod	19:nummod	_
+19	dúzia	dúzia	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:de	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	pseudo	pseudo	ADJ	_	_	22	amod	22:amod	_
+22	artistas	artista	NOUN	_	Number=Plur	19	nmod	19:nmod:de	_
+23	[	[	PUNCT	_	_	24	punct	24:punct	SpaceAfter=No
+24	.	.	PUNCT	_	_	22	appos	22:appos	SpaceAfter=No
+25	..	..	PUNCT	_	_	24	punct	24:punct	SpaceAfter=No
+26	]	]	PUNCT	_	_	24	punct	24:punct	_
+27	que	que	PRON	_	PronType=Rel	37	nsubj	37:nsubj:pass	_
+28-29	na	_	_	_	_	_	_	_	_
+28	em	em	ADP	_	_	30	case	30:case	_
+29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	verdade	verdade	NOUN	_	Gender=Fem|Number=Sing	33	obl	33:obl:em	_
+31	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	37	cop	37:cop	_
+32	[	[	PUNCT	_	_	33	punct	33:punct	SpaceAfter=No
+33	quer	querer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	37	parataxis	37:parataxis	_
+34	dizer	dizer	VERB	_	VerbForm=Inf	33	xcomp	33:xcomp	_
+35	ERAM	ERAM	PROPN	_	_	33	obj	33:obj|34:nsubj	SpaceAfter=No
+36	]	]	PUNCT	_	_	33	punct	33:punct	_
+37	usados	usar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	19	acl	19:acl	_
+38	como	como	ADP	_	_	39	case	39:case	_
+39	massa	massa	NOUN	_	Gender=Fem|Number=Sing	37	obl	37:obl:como	_
+40	de	de	ADP	_	_	41	case	41:case	_
+41	manobra	manobra	NOUN	_	Gender=Fem|Number=Sing	39	nmod	39:nmod:de	_
+42-43	pelo	_	_	_	_	_	_	_	_
+42	por	por	ADP	_	_	44	case	44:case	_
+43	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	44:det	_
+44	PT	PT	PROPN	_	_	37	obl:agent	37:obl:agent	SpaceAfter=No
+45	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0017
+# text = Veja alguns exemplos de onde o dinheiro público foi aplicado durante o governo Dilma: 1.
+1	Veja	ver	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	alguns	algum	DET	_	Gender=Masc|Number=Plur|PronType=Ind	3	det	3:det	_
+3	exemplos	exemplo	NOUN	_	Gender=Masc|Number=Plur	1	obj	1:obj|10:obl	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	onde	onde	ADV	_	_	10	advmod	3:ref	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	10	nsubj:pass	10:nsubj:pass	_
+8	público	público	ADJ	_	Gender=Masc|Number=Sing	7	amod	7:amod	_
+9	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	aux:pass	10:aux:pass	_
+10	aplicado	aplicar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	acl:relcl	3:acl:relcl	_
+11	durante	durante	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	governo	governo	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:durante	_
+14	Dilma	Dilma	PROPN	_	_	13	nmod	13:nmod	SpaceAfter=No
+15	:	:	PUNCT	_	_	16	punct	16:punct	_
+16	1	1	NUM	_	NumType=Card	1	parataxis	1:parataxis	SpaceAfter=No
+17	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0019
+# text = Filme Brizola, tempos de luta e exposição Um brasileiro chamado Brizola (2006) Valor: R$ 1.886.800, 38 2.
+1	Filme	filme	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+2	Brizola	Brizola	PROPN	_	_	1	nmod	1:nmod	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	tempos	tempo	NOUN	_	Gender=Masc|Number=Plur	1	conj	1:conj	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	luta	luta	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:de	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	exposição	exposição	NOUN	_	Gender=Fem|Number=Sing	2	conj	1:nmod|2:conj:e|4:nmod	_
+9	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	brasileiro	brasileiro	NOUN	_	Gender=Masc|Number=Sing	1	obj	1:obj|4:obj	_
+11	chamado	chamar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	10	acl	10:acl	_
+12	Brizola	Brizola	PROPN	_	_	11	xcomp	11:xcomp	_
+13	(	(	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+14	2006	2006	NUM	_	NumType=Card	10	parataxis	10:parataxis	SpaceAfter=No
+15	)	)	PUNCT	_	_	14	punct	14:punct	_
+16	Valor	valor	NOUN	_	Gender=Masc|Number=Sing	1	parataxis	1:parataxis	SpaceAfter=No
+17	:	:	PUNCT	_	_	18	punct	18:punct	_
+18	R$	R$	SYM	_	_	10	parataxis	10:parataxis	_
+19	1.886.800	1.886.800	NUM	_	NumType=Card	18	nummod	18:nummod	SpaceAfter=No
+20	,	,	PUNCT	_	_	21	punct	21:punct	_
+21	38	38	NUM	_	NumType=Card	18	nummod	18:nummod	_
+22	2	2	NUM	_	NumType=Card	18	nummod	18:nummod	SpaceAfter=No
+23	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0021
+# text = Peppa Pig (2014) Valor: R$ 1.772.320, 00 3.
+1	Peppa	Peppa	PROPN	_	_	0	root	0:root	_
+2	Pig	Pig	PROPN	_	_	1	flat:name	1:flat:name	_
+3	(	(	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+4	2014	2014	NUM	_	NumType=Card	1	parataxis	1:parataxis	SpaceAfter=No
+5	)	)	PUNCT	_	_	4	punct	4:punct	_
+6	Valor	valor	NOUN	_	Gender=Masc|Number=Sing	1	parataxis	1:parataxis	SpaceAfter=No
+7	:	:	PUNCT	_	_	8	punct	8:punct	_
+8	R$	R$	SYM	_	_	6	parataxis	6:parataxis	_
+9	1.772.320	1.772.320	NUM	_	NumType=Card	8	nummod	8:nummod	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	00	00	NUM	_	NumType=Card	8	nummod	8:nummod	_
+12	3	3	NUM	_	NumType=Card	8	nummod	8:nummod	SpaceAfter=No
+13	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0023
+# text = Shrek: musical e turnê (2011 e 2012) Valor: R$ 17.878.740, 00 4.
+1	Shrek	Shrek	PROPN	_	_	11	dep	11:dep	SpaceAfter=No
+2	:	:	PUNCT	_	_	3	punct	3:punct	_
+3	musical	musical	NOUN	_	Number=Sing	1	parataxis	1:parataxis	_
+4	e	e	CCONJ	_	_	5	cc	5:cc	_
+5	turnê	turnê	NOUN	_	Gender=Fem|Number=Sing	3	conj	1:parataxis|3:conj:e	_
+6	(	(	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+7	2011	2011	NUM	_	NumType=Card	3	parataxis	3:parataxis	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	2012	2012	NUM	_	NumType=Card	7	conj	3:parataxis|7:conj:e	SpaceAfter=No
+10	)	)	PUNCT	_	_	7	punct	7:punct	_
+11	Valor	valor	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+12	:	:	PUNCT	_	_	13	punct	13:punct	_
+13	R$	R$	SYM	_	_	11	parataxis	11:parataxis	_
+14	17.878.740	17.878.740	NUM	_	NumType=Card	13	nummod	13:nummod	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	00	00	NUM	_	NumType=Card	13	nummod	13:nummod	_
+17	4	4	NUM	_	NumType=Card	13	nummod	13:nummod	SpaceAfter=No
+18	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0025
+# text = Cirque Du Soleil (2005) Valor: R$ 9.400.450, 00 5.
+1	Cirque	Cirque	PROPN	_	_	0	root	0:root	_
+2	Du	Du	PROPN	_	_	1	flat:name	1:flat:name	_
+3	Soleil	Soleil	PROPN	_	_	1	flat:name	1:flat:name	_
+4	(	(	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+5	2005	2005	NUM	_	NumType=Card	1	parataxis	1:parataxis	SpaceAfter=No
+6	)	)	PUNCT	_	_	5	punct	5:punct	_
+7	Valor	valor	NOUN	_	Gender=Masc|Number=Sing	1	parataxis	1:parataxis	SpaceAfter=No
+8	:	:	PUNCT	_	_	9	punct	9:punct	_
+9	R$	R$	SYM	_	_	7	parataxis	7:parataxis	_
+10	9.400.450	9.400.450	NUM	_	NumType=Card	9	nummod	9:nummod	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	00	00	NUM	_	NumType=Card	9	nummod	9:nummod	_
+13	5	5	NUM	_	NumType=Card	9	nummod	9:nummod	SpaceAfter=No
+14	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0027
+# text = Turnê Luan Santana (2014) Valor: R$ 4.143.325, 00 6.
+1	Turnê	turnê	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+2	Luan	Luan	PROPN	_	_	1	nmod	1:nmod	_
+3	Santana	Santana	PROPN	_	_	2	flat:name	2:flat:name	_
+4	(	(	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+5	2014	2014	NUM	_	NumType=Card	1	parataxis	1:parataxis	SpaceAfter=No
+6	)	)	PUNCT	_	_	5	punct	5:punct	_
+7	Valor	valor	NOUN	_	Gender=Masc|Number=Sing	1	parataxis	1:parataxis	SpaceAfter=No
+8	:	:	PUNCT	_	_	9	punct	9:punct	_
+9	R$	R$	SYM	_	_	7	parataxis	7:parataxis	_
+10	4.143.325	4.143.325	NUM	_	NumType=Card	9	nummod	9:nummod	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	00	00	NUM	_	NumType=Card	9	nummod	9:nummod	_
+13	6	6	NUM	_	NumType=Card	9	nummod	9:nummod	SpaceAfter=No
+14	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0029
+# text = Turnê Detonautas (2013) Valor: 1.086.214, 40 7.
+1	Turnê	Turnê	PROPN	_	_	0	root	0:root	_
+2	Detonautas	Detonautas	PROPN	_	_	1	nmod	1:nmod	_
+3	(	(	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+4	2013	2013	NUM	_	NumType=Card	1	parataxis	1:parataxis	SpaceAfter=No
+5	)	)	PUNCT	_	_	4	punct	4:punct	_
+6	Valor	valor	NOUN	_	Gender=Masc|Number=Sing	1	parataxis	1:parataxis	SpaceAfter=No
+7	:	:	PUNCT	_	_	8	punct	8:punct	_
+8	1.086.214	1.086.214	NUM	_	NumType=Card	6	parataxis	6:parataxis	SpaceAfter=No
+9	,	,	PUNCT	_	_	10	punct	10:punct	_
+10	40	40	NUM	_	NumType=Card	8	nummod	8:nummod	_
+11	7	7	NUM	_	NumType=Card	1	parataxis	1:parataxis	SpaceAfter=No
+12	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0031
+# text = Shows Cláudia Leitte (2013) Valor: R$ 5.883.100, 00 8.
+1	Shows	show	NOUN	_	Gender=Masc|Number=Plur	0	root	0:root	_
+2	Cláudia	Cláudia	PROPN	_	_	1	nmod	1:nmod	_
+3	Leitte	Leitte	PROPN	_	_	2	flat:name	2:flat:name	_
+4	(	(	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+5	2013	2013	NUM	_	NumType=Card	1	parataxis	1:parataxis	SpaceAfter=No
+6	)	)	PUNCT	_	_	5	punct	5:punct	_
+7	Valor	valor	NOUN	_	Gender=Masc|Number=Sing	1	parataxis	1:parataxis	SpaceAfter=No
+8	:	:	PUNCT	_	_	9	punct	9:punct	_
+9	R$	R$	SYM	_	_	7	parataxis	7:parataxis	_
+10	5.883.100	5.883.100	NUM	_	NumType=Card	9	nummod	9:nummod	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	00	00	NUM	_	NumType=Card	9	nummod	9:nummod	_
+13	8	8	NUM	_	NumType=Card	9	nummod	9:nummod	SpaceAfter=No
+14	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0033
+# text = Blog O mundo precisa de poesia, de Maria Bethânia (2011) Valor: R$ 1.356.858, 00 9.
+1	Blog	blog	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+2	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	1	nmod	1:nmod	_
+4	precisa	precisar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	poesia	poesia	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:de	SpaceAfter=No
+7	,	,	PUNCT	_	_	9	punct	9:punct	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	Maria	Maria	PROPN	_	_	6	nmod	6:nmod:de	_
+10	Bethânia	Bethânia	PROPN	_	_	9	flat:name	9:flat:name	_
+11	(	(	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+12	2011	2011	NUM	_	NumType=Card	9	parataxis	9:parataxis	SpaceAfter=No
+13	)	)	PUNCT	_	_	12	punct	12:punct	_
+14	Valor	valor	NOUN	_	Gender=Masc|Number=Sing	4	parataxis	4:parataxis	SpaceAfter=No
+15	:	:	PUNCT	_	_	16	punct	16:punct	_
+16	R$	R$	SYM	_	_	14	parataxis	14:parataxis	_
+17	1.356.858	1.356.858	NUM	_	NumType=Card	16	nummod	16:nummod	SpaceAfter=No
+18	,	,	PUNCT	_	_	19	punct	19:punct	_
+19	00	00	NUM	_	NumType=Card	16	nummod	16:nummod	_
+20	9	9	NUM	_	NumType=Card	16	nummod	16:nummod	SpaceAfter=No
+21	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0035
+# text = Gravação do DVD de MC Guimê (2015) Valor: R$ 516.550, 00 10.
+1	Gravação	gravação	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+2-3	do	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	DVD	DVD	PROPN	_	_	1	nmod	1:nmod:de	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	MC	MC	PROPN	_	_	4	nmod	4:nmod:de	_
+7	Guimê	Guimê	PROPN	_	_	6	flat:name	6:flat:name	_
+8	(	(	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+9	2015	2015	NUM	_	NumType=Card	4	parataxis	4:parataxis	SpaceAfter=No
+10	)	)	PUNCT	_	_	9	punct	9:punct	_
+11	Valor	valor	NOUN	_	Gender=Masc|Number=Sing	1	parataxis	1:parataxis	SpaceAfter=No
+12	:	:	PUNCT	_	_	13	punct	13:punct	_
+13	R$	R$	SYM	_	_	11	parataxis	11:parataxis	_
+14	516.550	516.550	NUM	_	NumType=Card	13	nummod	13:nummod	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	00	00	NUM	_	NumType=Card	13	nummod	13:nummod	_
+17	10	10	NUM	_	NumType=Card	13	nummod	13:nummod	SpaceAfter=No
+18	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0037
+# text = Documentário O vilão da República, sobre a vida de José Dirceu (2013) Valor: R$ 1.526.536, 35.
+1	Documentário	documentário	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+2	O	O	PROPN	_	_	3	det	3:det	_
+3	vilão	vilão	NOUN	_	Gender=Masc|Number=Sing	1	nmod	1:nmod	_
+4-5	da	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	República	República	PROPN	_	_	3	nmod	3:nmod:de	SpaceAfter=No
+7	,	,	PUNCT	_	_	10	punct	10:punct	_
+8	sobre	sobre	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	vida	vida	NOUN	_	Gender=Fem|Number=Sing	1	nmod	1:nmod:sobre	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	José	José	PROPN	_	_	10	nmod	10:nmod:de	_
+13	Dirceu	Dirceu	PROPN	_	_	12	flat:name	12:flat:name	_
+14	(	(	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+15	2013	2013	NUM	_	NumType=Card	10	parataxis	10:parataxis	SpaceAfter=No
+16	)	)	PUNCT	_	_	15	punct	15:punct	_
+17	Valor	valor	NOUN	_	Gender=Masc|Number=Sing	1	parataxis	1:parataxis	SpaceAfter=No
+18	:	:	PUNCT	_	_	19	punct	19:punct	_
+19	R$	R$	SYM	_	_	17	parataxis	17:parataxis	_
+20	1.526.536	1.526.536	NUM	_	NumType=Card	19	nummod	19:nummod	SpaceAfter=No
+21	,	,	PUNCT	_	_	22	punct	22:punct	_
+22	35	35	NUM	_	NumType=Card	19	nummod	19:nummod	SpaceAfter=No
+23	.	.	PUNCT	_	_	1	punct	1:punct	_

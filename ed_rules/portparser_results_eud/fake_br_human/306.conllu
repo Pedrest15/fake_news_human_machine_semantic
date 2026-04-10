@@ -1,0 +1,149 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Sérgio Moro no aeroporto: Liberdade cerceada para salvar um país.
+1	Sérgio	Sérgio	PROPN	_	_	0	root	0:root	_
+2	Moro	Moro	PROPN	_	_	1	flat:name	1:flat:name	_
+3-4	no	_	_	_	_	_	_	_	_
+3	em	em	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	aeroporto	aeroporto	NOUN	_	Gender=Masc|Number=Sing	1	nmod	1:nmod:em	SpaceAfter=No
+6	:	:	PUNCT	_	_	7	punct	7:punct	_
+7	Liberdade	liberdade	NOUN	_	Gender=Fem|Number=Sing	1	parataxis	1:parataxis	_
+8	cerceada	cercear	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	7	acl	7:acl	_
+9	para	para	ADP	_	_	10	mark	10:mark	_
+10	salvar	salvar	VERB	_	VerbForm=Inf	8	advcl	8:advcl:para	_
+11	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	país	país	NOUN	_	Gender=Masc|Number=Sing	10	obj	10:obj	SpaceAfter=No
+13	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Cinco seguranças fazendo o cerco, fechando 360 graus e mesmo assim ele olha pra todos os lados... o tempo todo.
+1	Cinco	cinco	NUM	_	NumType=Card	2	nummod	2:nummod	_
+2	seguranças	segurança	NOUN	_	Number=Plur	0	root	0:root	_
+3	fazendo	fazer	VERB	_	VerbForm=Ger	2	acl	2:acl	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	cerco	cerco	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	fechando	fechar	VERB	_	VerbForm=Ger	3	conj	2:acl|3:conj:e	_
+8	360	360	NUM	_	NumType=Card	9	nummod	9:nummod	_
+9	graus	grau	NOUN	_	Gender=Masc|Number=Plur	7	obj	7:obj	_
+10	e	e	CCONJ	_	_	14	cc	14:cc	_
+11	mesmo	mesmo	ADV	_	_	12	advmod	12:advmod	_
+12	assim	assim	ADV	_	_	14	advmod	14:advmod	_
+13	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	nsubj	14:nsubj	_
+14	olha	olhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	2:acl|3:conj:e	_
+15	pra	para	ADP	_	_	18	case	18:case	_
+16	todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Ind	18	det	18:det	_
+17	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	18:det	_
+18	lados	lado	NOUN	_	Gender=Masc|Number=Plur	14	obl	14:obl:para	SpaceAfter=No
+19	...	...	PUNCT	_	_	21	punct	21:punct	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl	_
+22	todo	todo	DET	_	Gender=Masc|Number=Sing|PronType=Ind	21	det	21:det	SpaceAfter=No
+23	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = O preço de um nov o Brasil!.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	preço	preço	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	nmod	2:nmod:de	_
+5	nov	nov	NOUN	_	_	7	nmod	7:nmod	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Brasil	Brasil	PROPN	_	_	4	nmod	4:nmod	SpaceAfter=No
+8	!	!	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+9	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0007
+# text = Pedimos desculpas a você, prezado Sérgio Moro, e te agradecemos por cercear sua liberdade para nos salvar.
+1	Pedimos	pedir	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	desculpas	desculpa	NOUN	_	Gender=Fem|Number=Plur	1	obj	1:obj	_
+3	a	a	ADP	_	_	4	case	4:case	_
+4	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	1	obl	1:obl:a	SpaceAfter=No
+5	,	,	PUNCT	_	_	7	punct	7:punct	_
+6	prezado	prezado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	7	amod	7:amod	_
+7	Sérgio	Sérgio	PROPN	_	_	4	appos	4:appos	_
+8	Moro	Moro	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+9	,	,	PUNCT	_	_	7	punct	7:punct	_
+10	e	e	CCONJ	_	_	12	cc	12:cc	_
+11	te	te	PRON	_	Case=Acc|Number=Sing|Person=2|PronType=Prs	12	obj	12:obj|14:nsubj	_
+12	agradecemos	agradecer	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	1	conj	1:conj:e	_
+13	por	por	ADP	_	_	14	mark	14:mark	_
+14	cercear	cercear	VERB	_	VerbForm=Inf	12	xcomp	12:xcomp	_
+15	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	16	det	16:det	_
+16	liberdade	liberdade	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	_
+17	para	para	ADP	_	_	19	mark	19:mark	_
+18	nos	nos	PRON	_	Case=Acc|Number=Plur|Person=1|PronType=Prs	19	obj	19:obj	_
+19	salvar	salvar	VERB	_	VerbForm=Inf	14	advcl	14:advcl:para	SpaceAfter=No
+20	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0009
+# text = Admiramos sua firmeza e reconhecemos seu valor.
+1	Admiramos	admirar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	3	det	3:det	_
+3	firmeza	firmeza	NOUN	_	Gender=Fem|Number=Sing	1	obj	1:obj	_
+4	e	e	CCONJ	_	_	5	cc	5:cc	_
+5	reconhecemos	reconhecer	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	1	conj	1:conj:e	_
+6	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	7	det	7:det	_
+7	valor	valor	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	SpaceAfter=No
+8	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0011
+# text = A liberdade tem um custo tão alto quanto o da escravidão.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	liberdade	liberdade	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_
+3	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	custo	custo	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	_
+6	tão	tão	ADV	_	_	7	advmod	7:advmod	_
+7	alto	alto	ADJ	_	Gender=Masc|Number=Sing	5	amod	5:amod	_
+8	quanto	quanto	SCONJ	_	_	9	mark	9:mark	_
+9	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	advcl	7:advcl:quanto	_
+10-11	da	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	escravidão	escravidão	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:de	SpaceAfter=No
+13	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0013
+# text = Infelizmente esse é o preço que se paga quando a honestidade (decoro, honra, virtude, pudor) é colocada em primeiro lugar.
+1	Infelizmente	infelizmente	ADV	_	_	5	advmod	5:advmod	_
+2	esse	esse	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	5	nsubj	5:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	preço	preço	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root|8:obj	_
+6	que	que	PRON	_	PronType=Rel	8	obj	5:ref	_
+7	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	8	expl:impers	8:expl:impers	_
+8	paga	pagar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_
+9	quando	quando	SCONJ	_	_	22	mark	22:mark	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	honestidade	honestidade	NOUN	_	Gender=Fem|Number=Sing	22	nsubj:pass	22:nsubj:pass	_
+12	(	(	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+13	decoro	decoro	NOUN	_	Gender=Masc|Number=Sing	11	appos	11:appos	SpaceAfter=No
+14	,	,	PUNCT	_	_	15	punct	15:punct	_
+15	honra	honra	NOUN	_	Gender=Fem|Number=Sing	13	conj	11:appos|13:conj	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	virtude	virtude	NOUN	_	Gender=Fem|Number=Sing	13	conj	11:appos|13:conj	SpaceAfter=No
+18	,	,	PUNCT	_	_	19	punct	19:punct	_
+19	pudor	pudor	NOUN	_	Gender=Masc|Number=Sing	13	conj	11:appos|13:conj	SpaceAfter=No
+20	)	)	PUNCT	_	_	13	punct	13:punct	_
+21	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	aux:pass	22:aux:pass	_
+22	colocada	colocar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	5	acl:relcl	5:acl:relcl	_
+23	em	em	ADP	_	_	25	case	25:case	_
+24	primeiro	primeiro	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	25	amod	25:amod	_
+25	lugar	lugar	NOUN	_	Gender=Masc|Number=Sing	22	obl	22:obl:em	SpaceAfter=No
+26	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0015
+# text = Que Deus te proteja e te livre de todo mal.
+1	Que	que	SCONJ	_	_	4	mark	4:mark|7:mark	_
+2	Deus	Deus	PROPN	_	_	4	nsubj	4:nsubj|7:nsubj	_
+3	te	te	PRON	_	Case=Acc|Number=Sing|Person=2|PronType=Prs	4	obj	4:obj	_
+4	proteja	proteger	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	e	e	CCONJ	_	_	7	cc	7:cc	_
+6	te	te	PRON	_	Case=Acc|Number=Sing|Person=2|PronType=Prs	7	obj	7:obj	_
+7	livre	livrar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	4:conj:e	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	todo	todo	DET	_	Gender=Masc|Number=Sing|PronType=Ind	10	det	10:det	_
+10	mal	mal	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:de	SpaceAfter=No
+11	.	.	PUNCT	_	_	4	punct	4:punct	_

@@ -1,0 +1,453 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Tragédia em Urucânia: Família inteira levada por enchente, incluindo pets, enquanto esperam milagre.
+1	Tragédia	tragédia	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+2	em	em	ADP	_	_	3	case	3:case	_
+3	Urucânia	Urucânia	PROPN	_	_	1	nmod	1:nmod:em	SpaceAfter=No
+4	:	:	PUNCT	_	_	5	punct	5:punct	_
+5	Família	família	NOUN	_	Gender=Fem|Number=Sing	1	appos	1:appos	_
+6	inteira	inteiro	ADJ	_	Gender=Fem|Number=Sing	5	amod	5:amod	_
+7	levada	levar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	5	acl	5:acl	_
+8	por	por	ADP	_	_	9	case	9:case	_
+9	enchente	enchente	NOUN	_	Gender=Fem|Number=Sing	7	obl:agent	7:obl:agent	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	incluindo	incluir	VERB	_	VerbForm=Ger	9	acl	9:acl	_
+12	pets	pet	NOUN	_	Foreign=Yes|Gender=Masc|Number=Plur	11	obj	11:obj	SpaceAfter=No
+13	,	,	PUNCT	_	_	11	punct	11:punct	_
+14	enquanto	enquanto	SCONJ	_	_	15	mark	15:mark	_
+15	esperam	esperar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	advcl	7:advcl:enquanto	_
+16	milagre	milagre	NOUN	_	Gender=Masc|Number=Sing	15	obj	15:obj	SpaceAfter=No
+17	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Érica Rozeno, 31 anos, enfrenta o desespero após perder filha de 13 anos, mãe de 67 e busca pelo filho de 7 anos, desaparecido desde 3 de dezembro.
+1	Érica	Érica	PROPN	_	_	7	nsubj	7:nsubj	_
+2	Rozeno	Rozeno	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	5	punct	5:punct	_
+4	31	31	NUM	_	NumType=Card	5	nummod	5:nummod	_
+5	anos	ano	NOUN	_	Gender=Masc|Number=Plur	1	parataxis	1:parataxis	SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	5:punct	_
+7	enfrenta	enfrentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	desespero	desespero	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+10	após	após	ADP	_	_	11	mark	11:mark	_
+11	perder	perder	VERB	_	VerbForm=Inf	7	advcl	7:advcl:após	_
+12	filha	filho	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	13	13	NUM	_	NumType=Card	15	nummod	15:nummod	_
+15	anos	ano	NOUN	_	Gender=Masc|Number=Plur	12	nmod	12:nmod:de	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	mãe	mãe	NOUN	_	Gender=Fem|Number=Sing	12	conj	11:obj|12:conj:e	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	67	67	NUM	_	NumType=Card	17	nmod	17:nmod:de	_
+20	e	e	CCONJ	_	_	21	cc	21:cc	_
+21	busca	busca	NOUN	_	Gender=Fem|Number=Sing	12	conj	11:obj|12:conj:e	_
+22-23	pelo	_	_	_	_	_	_	_	_
+22	por	por	ADP	_	_	24	case	24:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	filho	filho	NOUN	_	Gender=Masc|Number=Sing	21	nmod	21:nmod:por	_
+25	de	de	ADP	_	_	27	case	27:case	_
+26	7	7	NUM	_	NumType=Card	27	nummod	27:nummod	_
+27	anos	ano	NOUN	_	Gender=Masc|Number=Plur	24	nmod	24:nmod:de	SpaceAfter=No
+28	,	,	PUNCT	_	_	29	punct	29:punct	_
+29	desaparecido	desaparecer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	24	acl	24:acl	_
+30	desde	desde	ADP	_	_	31	case	31:case	_
+31	3	3	NUM	_	NumType=Card	29	obl	29:obl:desde	_
+32	de	de	ADP	_	_	33	case	33:case	_
+33	dezembro	dezembro	NOUN	_	Gender=Masc|Number=Sing	31	nmod	31:nmod:de	SpaceAfter=No
+34	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0005
+# text = Além disso, seu amado cão também não foi encontrado.
+1	Além	além	ADV	_	_	11	advmod	11:advmod	_
+2-3	disso	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	obl	1:obl:de	_
+4	,	,	PUNCT	_	_	1	punct	1:punct	_
+5	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	7	det	7:det	_
+6	amado	amado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	7	amod	7:amod	_
+7	cão	cão	NOUN	_	Gender=Masc|Number=Sing	11	nsubj:pass	11:nsubj:pass	_
+8	também	também	ADV	_	_	11	advmod	11:advmod	_
+9	não	não	ADV	_	_	11	advmod	11:advmod	_
+10	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	aux:pass	11:aux:pass	_
+11	encontrado	encontrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	SpaceAfter=No
+12	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0007
+# text = A cidade mineira de Urucânia sofreu uma devastação sem precedentes com o temporal que atingiu a região.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	cidade	cidade	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj	_
+3	mineira	mineiro	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	Urucânia	Urucânia	PROPN	_	_	2	nmod	2:nmod:de	_
+6	sofreu	sofrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	devastação	devastação	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+9	sem	sem	ADP	_	_	10	case	10:case	_
+10	precedentes	precedente	NOUN	_	Number=Plur	8	nmod	8:nmod:sem	_
+11	com	com	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	temporal	temporal	NOUN	_	Number=Sing	6	obl	6:obl:com|15:nsubj	_
+14	que	que	PRON	_	PronType=Rel	15	nsubj	13:ref	_
+15	atingiu	atingir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	acl:relcl	13:acl:relcl	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	região	região	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	SpaceAfter=No
+18	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0009
+# text = A estudante Érica, em uma entrevista emocionada, relatou que a tromba dágua destruiu sua casa em menos de cinco minutos.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	estudante	estudante	NOUN	_	Number=Sing	10	nsubj	10:nsubj	_
+3	Érica	Érica	PROPN	_	_	2	nmod	2:nmod	SpaceAfter=No
+4	,	,	PUNCT	_	_	7	punct	7:punct	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	entrevista	entrevista	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:em	_
+8	emocionada	emocionado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	7	amod	7:amod	SpaceAfter=No
+9	,	,	PUNCT	_	_	7	punct	7:punct	_
+10	relatou	relatar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+11	que	que	SCONJ	_	_	15	mark	15:mark	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	tromba	tromba	NOUN	_	Gender=Fem|Number=Sing	15	nsubj	15:nsubj	_
+14	dágua	dágua	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod	_
+15	destruiu	destruir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	ccomp	10:ccomp	_
+16	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	17	det	17:det	_
+17	casa	casa	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	_
+18	em	em	ADP	_	_	22	case	22:case	_
+19	menos	menos	ADV	_	ExtPos=ADV	21	advmod	21:advmod	_
+20	de	de	ADP	_	_	19	fixed	19:fixed	_
+21	cinco	cinco	NUM	_	NumType=Card	22	nummod	22:nummod	_
+22	minutos	minuto	NOUN	_	Gender=Masc|Number=Plur	15	obl	15:obl:em	SpaceAfter=No
+23	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0011
+# text = 'Foi como se um monstro tivesse engolido tudo', disse ela.
+1	'	'	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+2	Foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	cop	8:cop	_
+3	como	como	SCONJ	_	ExtPos=SCONJ	8	mark	8:mark	_
+4	se	se	SCONJ	_	_	3	fixed	3:fixed	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	monstro	monstro	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	8:nsubj	_
+7	tivesse	ter	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	aux	8:aux	_
+8	engolido	engolir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	12	ccomp:speech	12:ccomp:speech	_
+9	tudo	tudo	PRON	_	PronType=Ind	8	obj	8:obj	SpaceAfter=No
+10	'	'	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+11	,	,	PUNCT	_	_	8	punct	8:punct	_
+12	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+13	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	12	nsubj	12:nsubj	SpaceAfter=No
+14	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0013
+# text = O marido de Érica, Ronaldo Rozeno, 41 anos, havia saído para trabalhar na usina local antes do dilúvio.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	marido	marido	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	13:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Érica	Érica	PROPN	_	_	2	nmod	2:nmod:de	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	Ronaldo	Ronaldo	PROPN	_	_	2	appos	2:appos	_
+7	Rozeno	Rozeno	PROPN	_	_	6	flat:name	6:flat:name	SpaceAfter=No
+8	,	,	PUNCT	_	_	10	punct	10:punct	_
+9	41	41	NUM	_	NumType=Card	10	nummod	10:nummod	_
+10	anos	ano	NOUN	_	Gender=Masc|Number=Plur	2	parataxis	2:parataxis	SpaceAfter=No
+11	,	,	PUNCT	_	_	10	punct	10:punct	_
+12	havia	haver	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	13	aux	13:aux	_
+13	saído	sair	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+14	para	para	ADP	_	_	15	mark	15:mark	_
+15	trabalhar	trabalhar	VERB	_	VerbForm=Inf	13	advcl	13:advcl:para	_
+16-17	na	_	_	_	_	_	_	_	_
+16	em	em	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	usina	usina	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl:em	_
+19	local	local	ADJ	_	Number=Sing	18	amod	18:amod	_
+20	antes	antes	ADV	_	_	15	advmod	15:advmod	_
+21-22	do	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	dilúvio	dilúvio	NOUN	_	Gender=Masc|Number=Sing	20	obl	20:obl:de	SpaceAfter=No
+24	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0015
+# text = Érica tentou salvar os filhos e a mãe, mas a força da correnteza foi implacável.
+1	Érica	Érica	PROPN	_	_	2	nsubj	2:nsubj|3:nsubj	_
+2	tentou	tentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	salvar	salvar	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	_
+4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	5:det	_
+5	filhos	filho	NOUN	_	Gender=Masc|Number=Plur	3	obj	3:obj	_
+6	e	e	CCONJ	_	_	8	cc	8:cc	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	mãe	mãe	NOUN	_	Gender=Fem|Number=Sing	5	conj	3:obj|5:conj:e	SpaceAfter=No
+9	,	,	PUNCT	_	_	17	punct	17:punct	_
+10	mas	mas	CCONJ	_	_	17	cc	17:cc	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	força	força	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	17:nsubj	_
+13-14	da	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	correnteza	correnteza	NOUN	_	Gender=Fem|Number=Sing	12	nmod	12:nmod:de	_
+16	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	cop	17:cop	_
+17	implacável	implacável	ADJ	_	Number=Sing	2	conj	2:conj:mas	SpaceAfter=No
+18	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0017
+# text = Eles se agarraram desesperadamente a móveis flutuantes e cabos, mas a tragédia se abateu.
+1	Eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	nsubj	3:nsubj	_
+2	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	3	expl	3:expl	_
+3	agarraram	agarrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	desesperadamente	desesperadamente	ADV	_	_	3	advmod	3:advmod	_
+5	a	a	ADP	_	_	6	case	6:case|9:case	_
+6	móveis	móvel	NOUN	_	Number=Plur	3	obl	3:obl:a	_
+7	flutuantes	flutuante	ADJ	_	Number=Plur	6	amod	6:amod	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	cabos	cabo	NOUN	_	Gender=Masc|Number=Plur	6	conj	3:obl:a|6:conj:e	SpaceAfter=No
+10	,	,	PUNCT	_	_	15	punct	15:punct	_
+11	mas	mas	CCONJ	_	_	15	cc	15:cc	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	tragédia	tragédia	NOUN	_	Gender=Fem|Number=Sing	15	nsubj	15:nsubj	_
+14	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	15	expl	15:expl	_
+15	abateu	abater	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	3:conj:mas	SpaceAfter=No
+16	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0019
+# text = 'Minha filha Fernanda ainda tentou se segurar, e meu filho Vinícius beijava nosso cachorro, procurando conforto no caos', contou Érica, com a voz embargada.
+1	'	'	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+2	Minha	meu	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	det	3:det	_
+3	filha	filho	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj|8:nsubj	_
+4	Fernanda	Fernanda	PROPN	_	_	3	nmod	3:nmod	_
+5	ainda	ainda	ADV	_	_	6	advmod	6:advmod	_
+6	tentou	tentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	25	ccomp:speech	25:ccomp:speech	_
+7	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	8	expl	8:expl	_
+8	segurar	segurar	VERB	_	VerbForm=Inf	6	xcomp	6:xcomp	SpaceAfter=No
+9	,	,	PUNCT	_	_	14	punct	14:punct	_
+10	e	e	CCONJ	_	_	14	cc	14:cc	_
+11	meu	meu	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	12	det	12:det	_
+12	filho	filho	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	14:nsubj	_
+13	Vinícius	Vinícius	PROPN	_	_	12	nmod	12:nmod	_
+14	beijava	beijar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	conj	6:conj:e|25:ccomp:speech	_
+15	nosso	nosso	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	16	det	16:det	_
+16	cachorro	cachorro	NOUN	_	Gender=Masc|Number=Sing	14	obj	14:obj	SpaceAfter=No
+17	,	,	PUNCT	_	_	18	punct	18:punct	_
+18	procurando	procurar	VERB	_	VerbForm=Ger	14	advcl	14:advcl	_
+19	conforto	conforto	NOUN	_	Gender=Masc|Number=Sing	18	obj	18:obj	_
+20-21	no	_	_	_	_	_	_	_	_
+20	em	em	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	caos	caos	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:em	SpaceAfter=No
+23	'	'	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+24	,	,	PUNCT	_	_	6	punct	6:punct	_
+25	contou	contar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+26	Érica	Érica	PROPN	_	_	25	nsubj	25:nsubj	SpaceAfter=No
+27	,	,	PUNCT	_	_	30	punct	30:punct	_
+28	com	com	ADP	_	_	30	case	30:case	_
+29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	voz	voz	NOUN	_	Gender=Fem|Number=Sing	25	obl	25:obl:com	_
+31	embargada	embargado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	30	amod	30:amod	SpaceAfter=No
+32	.	.	PUNCT	_	_	25	punct	25:punct	_
+
+# sent_id = S0021
+# text = A própria Érica foi arrastada pela correnteza, salvando-se milagrosamente ao se agarrar a um pedaço de madeira e subir em árvores, de onde continuou a gritar por socorro.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+2	própria	próprio	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	3:det	_
+3	Érica	Érica	PROPN	_	_	5	nsubj:pass	5:nsubj:pass	_
+4	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	aux:pass	5:aux:pass	_
+5	arrastada	arrastar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+6-7	pela	_	_	_	_	_	_	_	_
+6	por	por	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	correnteza	correnteza	NOUN	_	Gender=Fem|Number=Sing	5	obl:agent	5:obl:agent	SpaceAfter=No
+9	,	,	PUNCT	_	_	10	punct	10:punct	_
+10-11	salvando-se	_	_	_	_	_	_	_	_
+10	salvando	salvar	VERB	_	VerbForm=Ger	5	advcl	5:advcl	_
+11	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	10	expl	10:expl	_
+12	milagrosamente	milagrosamente	ADV	_	_	10	advmod	10:advmod	_
+13-14	ao	_	_	_	_	_	_	_	_
+13	a	a	ADP	_	ExtPos=SCONJ	16	mark	16:mark|23:mark	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	fixed	13:fixed	_
+15	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	16	expl	16:expl	_
+16	agarrar	agarrar	VERB	_	VerbForm=Inf	10	advcl	10:advcl:a_o|29:obl	_
+17	a	a	ADP	_	_	19	case	19:case	_
+18	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	pedaço	pedaço	NOUN	_	Gender=Masc|Number=Sing	16	obl	16:obl:a	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	madeira	madeira	NOUN	_	Number=Sing	19	nmod	19:nmod:de	_
+22	e	e	CCONJ	_	_	23	cc	23:cc	_
+23	subir	subir	VERB	_	VerbForm=Inf	16	conj	10:advcl:a_o|16:conj:e	_
+24	em	em	ADP	_	_	25	case	25:case	_
+25	árvores	árvore	NOUN	_	Gender=Fem|Number=Plur	23	obl	23:obl:em	SpaceAfter=No
+26	,	,	PUNCT	_	_	29	punct	29:punct	_
+27	de	de	ADP	_	_	28	case	28:case	_
+28	onde	onde	ADV	_	_	29	advmod	16:ref	_
+29	continuou	continuar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	acl:relcl	16:acl:relcl|23:acl:relcl	_
+30	a	a	ADP	_	_	31	mark	31:mark	_
+31	gritar	gritar	VERB	_	VerbForm=Inf	29	xcomp	29:xcomp	_
+32	por	por	ADP	_	_	33	case	33:case	_
+33	socorro	socorro	NOUN	_	Gender=Masc|Number=Sing	31	obl	31:obl:por	SpaceAfter=No
+34	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0023
+# text = Ao ser resgatada pelos bombeiros e chegar ao hospital, a angústia de não encontrar sua família era insuportável.
+1-2	Ao	_	_	_	_	_	_	_	_
+1	A	a	ADP	_	ExtPos=SCONJ	4	mark	4:mark|9:mark	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	1:fixed	_
+3	ser	ser	AUX	_	VerbForm=Inf	4	aux:pass	4:aux:pass	_
+4	resgatada	resgatar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	22	advcl	22:advcl:a_o	_
+5-6	pelos	_	_	_	_	_	_	_	_
+5	por	por	ADP	_	_	7	case	7:case	_
+6	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	7:det	_
+7	bombeiros	bombeiro	NOUN	_	Gender=Masc|Number=Plur	4	obl:agent	4:obl:agent	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	chegar	chegar	VERB	_	VerbForm=Inf	4	conj	4:conj:e|22:advcl:a_o	_
+10-11	ao	_	_	_	_	_	_	_	_
+10	a	a	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	hospital	hospital	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:a	SpaceAfter=No
+13	,	,	PUNCT	_	_	4	punct	4:punct	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	angústia	angústia	NOUN	_	Gender=Fem|Number=Sing	22	nsubj	22:nsubj	_
+16	de	de	ADP	_	_	18	mark	18:mark	_
+17	não	não	ADV	_	_	18	advmod	18:advmod	_
+18	encontrar	encontrar	VERB	_	VerbForm=Inf	15	acl	15:acl:de	_
+19	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	20	det	20:det	_
+20	família	família	NOUN	_	Gender=Fem|Number=Sing	18	obj	18:obj	_
+21	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	22	cop	22:cop	_
+22	insuportável	insuportável	ADJ	_	Number=Sing	0	root	0:root	SpaceAfter=No
+23	.	.	PUNCT	_	_	22	punct	22:punct	_
+
+# sent_id = S0025
+# text = Eu ainda tinha esperança, mas a realidade era cruel.
+1	Eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	3:nsubj	_
+2	ainda	ainda	ADV	_	_	3	advmod	3:advmod	_
+3	tinha	ter	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+4	esperança	esperança	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	SpaceAfter=No
+5	,	,	PUNCT	_	_	10	punct	10:punct	_
+6	mas	mas	CCONJ	_	_	10	cc	10:cc	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	realidade	realidade	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	10:nsubj	_
+9	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	10	cop	10:cop	_
+10	cruel	cruel	ADJ	_	Number=Sing	3	conj	3:conj:mas	SpaceAfter=No
+11	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0027
+# text = Agora, vivemos um pesadelo sem fim, afirmou.
+1	Agora	agora	ADV	_	_	3	advmod	3:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	vivemos	viver	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	9	ccomp:speech	9:ccomp:speech	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	pesadelo	pesadelo	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	_
+6	sem	sem	ADP	_	_	7	case	7:case	_
+7	fim	fim	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:sem	SpaceAfter=No
+8	,	,	PUNCT	_	_	3	punct	3:punct	_
+9	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+10	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0029
+# text = A prefeitura de Urucânia, sob o comando de Frederico de Carvalho (PRB), decretou situação de emergência, e o governo federal prometeu recursos urgentes.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	prefeitura	prefeitura	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	17:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Urucânia	Urucânia	PROPN	_	_	2	nmod	2:nmod:de	SpaceAfter=No
+5	,	,	PUNCT	_	_	8	punct	8:punct	_
+6	sob	sob	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	comando	comando	NOUN	_	Gender=Masc|Number=Sing	17	obl	17:obl:sob	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	Frederico	Frederico	PROPN	_	_	8	nmod	8:nmod:de	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	Carvalho	Carvalho	PROPN	_	_	10	flat:name	10:flat:name	_
+13	(	(	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+14	PRB	PRB	PROPN	_	_	10	parataxis	10:parataxis	SpaceAfter=No
+15	)	)	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+16	,	,	PUNCT	_	_	8	punct	8:punct	_
+17	decretou	decretar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+18	situação	situação	NOUN	_	Gender=Fem|Number=Sing	17	obj	17:obj	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	emergência	emergência	NOUN	_	Gender=Fem|Number=Sing	18	nmod	18:nmod:de	SpaceAfter=No
+21	,	,	PUNCT	_	_	26	punct	26:punct	_
+22	e	e	CCONJ	_	_	26	cc	26:cc	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	governo	governo	NOUN	_	Gender=Masc|Number=Sing	26	nsubj	26:nsubj	_
+25	federal	federal	ADJ	_	Number=Sing	24	amod	24:amod	_
+26	prometeu	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	conj	17:conj:e	_
+27	recursos	recurso	NOUN	_	Gender=Masc|Number=Plur	26	obj	26:obj	_
+28	urgentes	urgente	ADJ	_	Number=Plur	27	amod	27:amod	SpaceAfter=No
+29	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0031
+# text = O Corpo de Bombeiros, com cães farejadores veteranos da tragédia de Mariana, intensificam as buscas, mas a cada dia que passa, a esperança de encontrar os desaparecidos com vida diminui.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Corpo	Corpo	PROPN	_	_	16	nsubj	16:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Bombeiros	Bombeiros	PROPN	_	_	2	flat:name	2:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	7	punct	7:punct	_
+6	com	com	ADP	_	_	7	case	7:case	_
+7	cães	cão	NOUN	_	Gender=Masc|Number=Plur	2	nmod	2:nmod:com	_
+8	farejadores	farejador	NOUN	_	Gender=Masc|Number=Plur	7	amod	7:amod	_
+9	veteranos	veterano	ADJ	_	Gender=Masc|Number=Plur	7	amod	7:amod	_
+10-11	da	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	tragédia	tragédia	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:de	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	Mariana	Mariana	PROPN	_	_	12	nmod	12:nmod:de	SpaceAfter=No
+15	,	,	PUNCT	_	_	7	punct	7:punct	_
+16	intensificam	intensificar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+17	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	18:det	_
+18	buscas	busca	NOUN	_	Gender=Fem|Number=Plur	16	obj	16:obj	SpaceAfter=No
+19	,	,	PUNCT	_	_	35	punct	35:punct	_
+20	mas	mas	CCONJ	_	_	35	cc	35:cc	_
+21	a	a	ADP	_	_	23	case	23:case	_
+22	cada	cada	DET	_	Number=Sing|PronType=Ind	23	det	23:det	_
+23	dia	dia	NOUN	_	Gender=Masc|Number=Sing	35	obl	25:nsubj|35:obl:a	_
+24	que	que	PRON	_	PronType=Rel	25	nsubj	23:ref	_
+25	passa	passar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	acl:relcl	23:acl:relcl	SpaceAfter=No
+26	,	,	PUNCT	_	_	23	punct	23:punct	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	esperança	esperança	NOUN	_	Gender=Fem|Number=Sing	35	nsubj	35:nsubj	_
+29	de	de	ADP	_	_	30	mark	30:mark	_
+30	encontrar	encontrar	VERB	_	VerbForm=Inf	28	acl	28:acl:de	_
+31	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	det	32:det	_
+32	desaparecidos	desaparecido	NOUN	_	Gender=Masc|Number=Plur	30	obj	30:obj	_
+33	com	com	ADP	_	_	34	case	34:case	_
+34	vida	vida	NOUN	_	Gender=Fem|Number=Sing	32	nmod	32:nmod:com	_
+35	diminui	diminuir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	conj	16:conj:mas	SpaceAfter=No
+36	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0033
+# text = 'Ainda temos fé em um milagre, especialmente pelo nosso menino e o cão que era parte da família', disse Érica, mantendo a chama da esperança acesa.
+1	'	'	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	Ainda	ainda	ADV	_	_	3	advmod	3:advmod	_
+3	temos	ter	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	25	ccomp:speech	25:ccomp:speech	_
+4	fé	fé	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	milagre	milagre	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:em	SpaceAfter=No
+8	,	,	PUNCT	_	_	13	punct	13:punct	_
+9	especialmente	especialmente	ADV	_	_	13	advmod	13:advmod	_
+10-11	pelo	_	_	_	_	_	_	_	_
+10	por	por	ADP	_	_	13	case	13:case|16:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+12	nosso	nosso	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	13	det	13:det	_
+13	menino	menino	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:por|19:nsubj	_
+14	e	e	CCONJ	_	_	16	cc	16:cc	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	cão	cão	NOUN	_	Gender=Masc|Number=Sing	13	conj	4:nmod:por|13:conj:e|19:nsubj	_
+17	que	que	PRON	_	PronType=Rel	19	nsubj	13:ref|16:ref	_
+18	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	19	cop	19:cop	_
+19	parte	parte	NOUN	_	Gender=Fem|Number=Sing	13	acl:relcl	13:acl:relcl|16:acl:relcl	_
+20-21	da	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	família	família	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:de	SpaceAfter=No
+23	'	'	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+24	,	,	PUNCT	_	_	3	punct	3:punct	_
+25	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+26	Érica	Érica	PROPN	_	_	25	nsubj	25:nsubj	SpaceAfter=No
+27	,	,	PUNCT	_	_	28	punct	28:punct	_
+28	mantendo	manter	VERB	_	VerbForm=Ger	25	advcl	25:advcl	_
+29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	chama	chama	NOUN	_	Gender=Fem|Number=Sing	28	obj	28:obj|34:nsubj	_
+31-32	da	_	_	_	_	_	_	_	_
+31	de	de	ADP	_	_	33	case	33:case	_
+32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	33:det	_
+33	esperança	esperança	NOUN	_	Gender=Fem|Number=Sing	30	nmod	30:nmod:de	_
+34	acesa	aceso	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	28	xcomp	28:xcomp	SpaceAfter=No
+35	.	.	PUNCT	_	_	25	punct	25:punct	_

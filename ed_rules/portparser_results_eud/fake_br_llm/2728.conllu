@@ -1,0 +1,380 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Exclusivo: Comissão aprova fundo eleitoral ilimitado com dinheiro público e permite bingos para arrecadação!
+1	Exclusivo	exclusivo	ADJ	_	Gender=Masc|Number=Sing	4	dep	4:dep	SpaceAfter=No
+2	:	:	PUNCT	_	_	1	punct	1:punct	_
+3	Comissão	Comissão	PROPN	_	_	4	nsubj	4:nsubj|12:nsubj	_
+4	aprova	aprovar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	fundo	fundo	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+6	eleitoral	eleitoral	ADJ	_	Number=Sing	5	amod	5:amod	_
+7	ilimitado	ilimitado	ADJ	_	Gender=Masc|Number=Sing	5	amod	5:amod	_
+8	com	com	ADP	_	_	9	case	9:case	_
+9	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:com	_
+10	público	público	ADJ	_	Gender=Masc|Number=Sing	9	amod	9:amod	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	permite	permitir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	4:conj:e	_
+13	bingos	bingo	NOUN	_	Gender=Masc|Number=Plur	12	obj	12:obj	_
+14	para	para	ADP	_	_	15	case	15:case	_
+15	arrecadação	arrecadação	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:para	SpaceAfter=No
+16	!	!	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0003
+# text = Deputados aprovaram um projeto revolucionário que promete mudar as eleições de 2018.
+1	Deputados	deputado	NOUN	_	Gender=Masc|Number=Plur	2	nsubj	2:nsubj	_
+2	aprovaram	aprovar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj|7:nsubj|8:nsubj	_
+5	revolucionário	revolucionário	ADJ	_	Gender=Masc|Number=Sing	4	amod	4:amod	_
+6	que	que	PRON	_	PronType=Rel	7	nsubj	4:ref	_
+7	promete	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	4:acl:relcl	_
+8	mudar	mudar	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+9	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	10:det	_
+10	eleições	eleição	NOUN	_	Gender=Fem|Number=Plur	8	obj	8:obj	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	2018	2018	NUM	_	NumType=Card	10	nmod	10:nmod:de	SpaceAfter=No
+13	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = O texto-base, aprovado nesta terça-feira (12), prevê um Fundo Especial de Financiamento da Democracia (FFD) sem limites de valor, garantindo uma injeção massiva de recursos para campanhas eleitorais.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	texto-base	texto-base	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	12:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	aprovado	aprovar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	2:acl	_
+5-6	nesta	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	7	det	7:det	_
+7	terça-feira	terça-feira	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:em	_
+8	(	(	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+9	12	12	NUM	_	NumType=Card	7	appos	7:appos	SpaceAfter=No
+10	)	)	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+11	,	,	PUNCT	_	_	4	punct	4:punct	_
+12	prevê	prever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+13	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	Fundo	Fundo	PROPN	_	_	12	obj	12:obj	_
+15	Especial	Especial	PROPN	_	_	14	flat:name	14:flat:name	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	Financiamento	Financiamento	PROPN	_	_	14	flat:name	14:flat:name	_
+18-19	da	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	Democracia	Democracia	PROPN	_	_	14	flat:name	14:flat:name	_
+21	(	(	PUNCT	_	_	22	punct	22:punct	SpaceAfter=No
+22	FFD	FFD	PROPN	_	_	14	appos	14:appos	SpaceAfter=No
+23	)	)	PUNCT	_	_	22	punct	22:punct	_
+24	sem	sem	ADP	_	_	25	case	25:case	_
+25	limites	limite	NOUN	_	Gender=Masc|Number=Plur	14	nmod	14:nmod:sem	_
+26	de	de	ADP	_	_	27	case	27:case	_
+27	valor	valor	NOUN	_	Gender=Masc|Number=Sing	25	nmod	25:nmod:de	SpaceAfter=No
+28	,	,	PUNCT	_	_	29	punct	29:punct	_
+29	garantindo	garantir	VERB	_	VerbForm=Ger	12	advcl	12:advcl	_
+30	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+31	injeção	injeção	NOUN	_	Gender=Fem|Number=Sing	29	obj	29:obj	_
+32	massiva	massivo	ADJ	_	Gender=Fem|Number=Sing	31	amod	31:amod	_
+33	de	de	ADP	_	_	34	case	34:case	_
+34	recursos	recurso	NOUN	_	Gender=Masc|Number=Plur	31	nmod	31:nmod:de	_
+35	para	para	ADP	_	_	36	case	36:case	_
+36	campanhas	campanha	NOUN	_	Gender=Fem|Number=Plur	34	nmod	34:nmod:para	_
+37	eleitorais	eleitoral	ADJ	_	Number=Plur	36	amod	36:amod	SpaceAfter=No
+38	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0007
+# text = Além disso, uma novidade bombástica: partidos poderão arrecadar dinheiro por meio de jogos como bingos e sorteios, ampliando drasticamente suas fontes de financiamento.
+1	Além	além	ADV	_	_	6	advmod	6:advmod	_
+2-3	disso	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	obl	1:obl:de	_
+4	,	,	PUNCT	_	_	1	punct	1:punct	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	novidade	novidade	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+7	bombástica	bombástico	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	SpaceAfter=No
+8	:	:	PUNCT	_	_	10	punct	10:punct	_
+9	partidos	partido	NOUN	_	Gender=Masc|Number=Plur	10	nsubj	10:nsubj|11:nsubj	_
+10	poderão	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	6	parataxis	6:parataxis	_
+11	arrecadar	arrecadar	VERB	_	VerbForm=Inf	10	xcomp	10:xcomp	_
+12	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj	_
+13	por	por	ADP	_	_	14	case	14:case	_
+14	meio	meio	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:por	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	jogos	jogo	NOUN	_	Gender=Masc|Number=Plur	14	nmod	14:nmod:de	_
+17	como	como	ADP	_	_	18	case	18:case|20:case	_
+18	bingos	bingo	NOUN	_	Gender=Masc|Number=Plur	16	nmod	16:nmod:como	_
+19	e	e	CCONJ	_	_	20	cc	20:cc	_
+20	sorteios	sorteio	NOUN	_	Gender=Masc|Number=Plur	18	conj	16:nmod:como|18:conj:e	SpaceAfter=No
+21	,	,	PUNCT	_	_	22	punct	22:punct	_
+22	ampliando	ampliar	VERB	_	VerbForm=Ger	10	advcl	10:advcl	_
+23	drasticamente	drasticamente	ADV	_	_	22	advmod	22:advmod	_
+24	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	25	det	25:det	_
+25	fontes	fonte	NOUN	_	Gender=Fem|Number=Plur	22	obj	22:obj	_
+26	de	de	ADP	_	_	27	case	27:case	_
+27	financiamento	financiamento	NOUN	_	Gender=Masc|Number=Sing	25	nmod	25:nmod:de	SpaceAfter=No
+28	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0009
+# text = Os deputados também aprovaram a exclusão de penalidades severas para mal uso dos fundos, facilitando a gestão financeira das campanhas.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	deputados	deputado	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	4:nsubj	_
+3	também	também	ADV	_	_	4	advmod	4:advmod	_
+4	aprovaram	aprovar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	exclusão	exclusão	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	penalidades	penalidade	NOUN	_	Gender=Fem|Number=Plur	6	nmod	6:nmod:de	_
+9	severas	severo	ADJ	_	Gender=Fem|Number=Plur	8	amod	8:amod	_
+10	para	para	ADP	_	_	12	case	12:case	_
+11	mal	mal	ADJ	_	Gender=Masc|Number=Sing	12	amod	12:amod	_
+12	uso	uso	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:para	_
+13-14	dos	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	15:det	_
+15	fundos	fundo	NOUN	_	Gender=Masc|Number=Plur	12	nmod	12:nmod:de	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	facilitando	facilitar	VERB	_	VerbForm=Ger	4	advcl	4:advcl	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	gestão	gestão	NOUN	_	Gender=Fem|Number=Sing	17	obj	17:obj	_
+20	financeira	financeiro	ADJ	_	Gender=Fem|Number=Sing	19	amod	19:amod	_
+21-22	das	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	23:det	_
+23	campanhas	campanha	NOUN	_	Gender=Fem|Number=Plur	19	nmod	19:nmod:de	SpaceAfter=No
+24	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0011
+# text = Com essa nova flexibilização, candidatos poderão se beneficiar de recursos sem tantas amarras legais.
+1	Com	com	ADP	_	_	4	case	4:case	_
+2	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	4	det	4:det	_
+3	nova	novo	ADJ	_	Gender=Fem|Number=Sing	4	amod	4:amod	_
+4	flexibilização	flexibilização	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:com	SpaceAfter=No
+5	,	,	PUNCT	_	_	4	punct	4:punct	_
+6	candidatos	candidato	NOUN	_	Gender=Masc|Number=Plur	7	nsubj	7:nsubj|9:nsubj	_
+7	poderão	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+8	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	9	expl	9:expl	_
+9	beneficiar	beneficiar	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	recursos	recurso	NOUN	_	Gender=Masc|Number=Plur	9	obl	9:obl:de	_
+12	sem	sem	ADP	_	_	14	case	14:case	_
+13	tantas	tanto	DET	_	Gender=Fem|Number=Plur|PronType=Ind	14	det	14:det	_
+14	amarras	amarra	NOUN	_	Gender=Fem|Number=Plur	11	nmod	11:nmod:sem	_
+15	legais	legal	ADJ	_	Number=Plur	14	amod	14:amod	SpaceAfter=No
+16	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0013
+# text = Outro ponto polêmico é a redução drástica de multas eleitorais com descontos de até 90% se pagas à vista, além de parcelamentos generosos em até 60 meses tanto para partidos quanto para devedores individuais.
+1	Outro	outro	DET	_	Gender=Masc|Number=Sing|PronType=Ind	2	det	2:det	_
+2	ponto	ponto	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+3	polêmico	polêmico	ADJ	_	Gender=Masc|Number=Sing	2	amod	2:amod	_
+4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	redução	redução	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+7	drástica	drástico	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	multas	multa	NOUN	_	Gender=Fem|Number=Plur	6	nmod	6:nmod:de	_
+10	eleitorais	eleitoral	ADJ	_	Number=Plur	9	amod	9:amod	_
+11	com	com	ADP	_	_	12	case	12:case	_
+12	descontos	desconto	NOUN	_	Gender=Masc|Number=Plur	9	nmod	9:nmod:com	_
+13	de	de	ADP	_	_	16	case	16:case	_
+14	até	até	ADP	_	_	15	case	15:case	_
+15	90	90	NUM	_	NumType=Card	16	nummod	16:nummod	SpaceAfter=No
+16	%	%	SYM	_	_	12	nmod	12:nmod:de	_
+17	se	se	SCONJ	_	_	18	mark	18:mark	_
+18	pagas	pagar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	9	acl	9:acl:se	_
+19-20	à	_	_	_	_	_	_	_	_
+19	a	a	ADP	_	_	21	case	21:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	vista	vista	NOUN	_	Gender=Fem|Number=Sing	18	obl	18:obl:a	SpaceAfter=No
+22	,	,	PUNCT	_	_	23	punct	23:punct	_
+23	além	além	ADV	_	_	6	advmod	6:advmod	_
+24	de	de	ADP	_	_	25	case	25:case	_
+25	parcelamentos	parcelamento	NOUN	_	Gender=Masc|Number=Plur	23	obl	23:obl:de	_
+26	generosos	generoso	ADJ	_	Gender=Masc|Number=Plur	25	amod	25:amod	_
+27	em	em	ADP	_	_	30	case	30:case	_
+28	até	até	ADP	_	_	29	case	29:case	_
+29	60	60	NUM	_	NumType=Card	30	nummod	30:nummod	_
+30	meses	mÃªs	NOUN	_	Gender=Masc|Number=Plur	25	nmod	25:nmod:em	_
+31	tanto	tanto	CCONJ	_	_	33	cc	33:cc	_
+32	para	para	ADP	_	_	33	case	33:case	_
+33	partidos	partido	NOUN	_	Gender=Masc|Number=Plur	25	nmod	25:nmod:para	_
+34	quanto	quanto	CCONJ	_	_	36	cc	36:cc	_
+35	para	para	ADP	_	_	36	case	36:case	_
+36	devedores	devedor	NOUN	_	Gender=Masc|Number=Plur	33	conj	25:nmod:para|33:conj:quanto	_
+37	individuais	individual	ADJ	_	Number=Plur	36	amod	36:amod	SpaceAfter=No
+38	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0015
+# text = As regras de propaganda eleitoral também sofreram alterações significativas.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	regras	regra	NOUN	_	Gender=Fem|Number=Plur	7	nsubj	7:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	propaganda	propaganda	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+5	eleitoral	eleitoral	ADJ	_	Number=Sing	4	amod	4:amod	_
+6	também	também	ADV	_	_	7	advmod	7:advmod	_
+7	sofreram	sofrer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	alterações	alteração	NOUN	_	Gender=Fem|Number=Plur	7	obj	7:obj	_
+9	significativas	significativo	ADJ	_	Gender=Fem|Number=Plur	8	amod	8:amod	SpaceAfter=No
+10	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0017
+# text = Agora, será permitida propaganda paga na internet e telemarketing entre 9h e 20h, ampliando o alcance e a capacidade de persuasão dos candidatos.
+1	Agora	agora	ADV	_	_	4	advmod	4:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	permitida	permitir	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5	propaganda	propaganda	NOUN	_	Gender=Fem|Number=Sing	4	nsubj:pass	4:nsubj:pass	_
+6	paga	pago	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	5	amod	5:amod	_
+7-8	na	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case|11:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	internet	internet	NOUN	_	Foreign=Yes|Gender=Fem|Number=Sing	5	nmod	5:nmod:em	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	telemarketing	telemarketing	NOUN	_	Gender=Masc|Number=Sing	9	conj	5:nmod:em|9:conj:e	_
+12	entre	entre	ADP	_	_	13	case	13:case	_
+13	9h	9h	NOUN	_	_	4	obl	4:obl:entre	_
+14	e	e	CCONJ	_	_	15	cc	15:cc	_
+15	20h	20h	NOUN	_	_	13	conj	4:obl:entre|13:conj:e	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	ampliando	ampliar	VERB	_	VerbForm=Ger	4	advcl	4:advcl	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	alcance	alcance	NOUN	_	Gender=Masc|Number=Sing	17	obj	17:obj	_
+20	e	e	CCONJ	_	_	22	cc	22:cc	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	capacidade	capacidade	NOUN	_	Gender=Fem|Number=Sing	19	conj	17:obj|19:conj:e	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	persuasão	persuasão	NOUN	_	Gender=Fem|Number=Sing	22	nmod	22:nmod:de	_
+25-26	dos	_	_	_	_	_	_	_	_
+25	de	de	ADP	_	_	27	case	27:case	_
+26	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	27:det	_
+27	candidatos	candidato	NOUN	_	Gender=Masc|Number=Plur	22	nmod	22:nmod:de	SpaceAfter=No
+28	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0019
+# text = Por outro lado, a divulgação de pesquisas eleitorais está proibida na semana anterior à eleição, promovendo um ambiente de maior incerteza nos últimos dias de campanha.
+1	Por	por	ADP	_	_	3	case	3:case	_
+2	outro	outro	DET	_	Gender=Masc|Number=Sing|PronType=Ind	3	det	3:det	_
+3	lado	lado	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:por	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	divulgação	divulgação	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	11:nsubj	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	pesquisas	pesquisa	NOUN	_	Gender=Fem|Number=Plur	6	nmod	6:nmod:de	_
+9	eleitorais	eleitoral	ADJ	_	Number=Plur	8	amod	8:amod	_
+10	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	11:cop	_
+11	proibida	proibido	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	0	root	0:root	_
+12-13	na	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	semana	semana	NOUN	_	Gender=Fem|Number=Sing	11	obl	11:obl:em	_
+15	anterior	anterior	ADJ	_	Number=Sing	14	amod	14:amod	_
+16-17	à	_	_	_	_	_	_	_	_
+16	a	a	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	eleição	eleição	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl:a	SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	20:punct	_
+20	promovendo	promover	VERB	_	VerbForm=Ger	11	advcl	11:advcl	_
+21	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	ambiente	ambiente	NOUN	_	Number=Sing	20	obj	20:obj	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	maior	maior	ADJ	_	Number=Sing	25	amod	25:amod	_
+25	incerteza	incerteza	NOUN	_	Gender=Fem|Number=Sing	22	nmod	22:nmod:de	_
+26-27	nos	_	_	_	_	_	_	_	_
+26	em	em	ADP	_	_	29	case	29:case	_
+27	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	29:det	_
+28	últimos	último	ADJ	_	Gender=Masc|Number=Plur	29	amod	29:amod	_
+29	dias	dia	NOUN	_	Gender=Masc|Number=Plur	20	obl	20:obl:em	_
+30	de	de	ADP	_	_	31	case	31:case	_
+31	campanha	campanha	NOUN	_	Gender=Fem|Number=Sing	29	nmod	29:nmod:de	SpaceAfter=No
+32	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0021
+# text = A proposta ainda prevê uma transição gradual para a constituição de órgãos partidários definitivos, começando com apenas 10% em 2018 e chegando a 70% em 2022.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	proposta	proposta	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+3	ainda	ainda	ADV	_	_	4	advmod	4:advmod	_
+4	prevê	prever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	transição	transição	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+7	gradual	gradual	ADJ	_	Number=Sing	6	amod	6:amod	_
+8	para	para	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	constituição	constituição	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:para	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	órgãos	órgão	NOUN	_	Gender=Masc|Number=Plur	10	nmod	10:nmod:de	_
+13	partidários	partidário	ADJ	_	Gender=Masc|Number=Plur	12	amod	12:amod	_
+14	definitivos	definitivo	ADJ	_	Gender=Masc|Number=Plur	12	amod	12:amod	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	começando	começar	VERB	_	VerbForm=Ger	4	advcl	4:advcl	_
+17	com	com	ADP	_	_	20	case	20:case	_
+18	apenas	apenas	ADV	_	_	19	advmod	19:advmod	_
+19	10	10	NUM	_	NumType=Card	20	nummod	20:nummod	SpaceAfter=No
+20	%	%	SYM	_	_	16	obl	16:obl:com	_
+21	em	em	ADP	_	_	22	case	22:case	_
+22	2018	2018	NUM	_	NumType=Card	16	obl	16:obl:em	_
+23	e	e	CCONJ	_	_	24	cc	24:cc	_
+24	chegando	chegar	VERB	_	VerbForm=Ger	16	conj	4:advcl|16:conj:e	_
+25	a	a	ADP	_	_	27	case	27:case	_
+26	70	70	NUM	_	NumType=Card	27	nummod	27:nummod	SpaceAfter=No
+27	%	%	SYM	_	_	24	obl	24:obl:a	_
+28	em	em	ADP	_	_	29	case	29:case	_
+29	2022	2022	NUM	_	NumType=Card	24	obl	24:obl:em	SpaceAfter=No
+30	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0023
+# text = Enquanto isso, os diretórios provisórios poderão operar com maior liberdade.
+1	Enquanto	enquanto	ADV	_	ExtPos=ADV	7	advmod	7:advmod	_
+2	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	fixed	1:fixed	SpaceAfter=No
+3	,	,	PUNCT	_	_	1	punct	1:punct	_
+4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	5:det	_
+5	diretórios	diretório	NOUN	_	Gender=Masc|Number=Plur	7	nsubj	7:nsubj|8:nsubj	_
+6	provisórios	provisório	ADJ	_	Gender=Masc|Number=Plur	5	amod	5:amod	_
+7	poderão	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+8	operar	operar	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+9	com	com	ADP	_	_	11	case	11:case	_
+10	maior	maior	ADJ	_	Number=Sing	11	amod	11:amod	_
+11	liberdade	liberdade	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:com	SpaceAfter=No
+12	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0025
+# text = Com essas mudanças, espera-se uma eleição com mais recursos, menos restrições e maior dinamismo na corrida eleitoral.
+1	Com	com	ADP	_	_	3	case	3:case	_
+2	essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	3	det	3:det	_
+3	mudanças	mudança	NOUN	_	Gender=Fem|Number=Plur	5	obl	5:obl:com	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5-6	espera-se	_	_	_	_	_	_	_	_
+5	espera	esperar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	5	expl:impers	5:expl:impers	_
+7	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	eleição	eleição	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+9	com	com	ADP	_	_	11	case	11:case|14:case|17:case	_
+10	mais	mais	DET	_	PronType=Ind	11	det	11:det	_
+11	recursos	recurso	NOUN	_	Gender=Masc|Number=Plur	8	nmod	8:nmod:com	SpaceAfter=No
+12	,	,	PUNCT	_	_	14	punct	14:punct	_
+13	menos	menos	DET	_	PronType=Ind	14	det	14:det	_
+14	restrições	restrição	NOUN	_	Gender=Fem|Number=Plur	11	conj	8:nmod:com|11:conj:e	_
+15	e	e	CCONJ	_	_	17	cc	17:cc	_
+16	maior	maior	ADJ	_	Number=Sing	17	amod	17:amod	_
+17	dinamismo	dinamismo	NOUN	_	Gender=Masc|Number=Sing	11	conj	8:nmod:com|11:conj:e	_
+18-19	na	_	_	_	_	_	_	_	_
+18	em	em	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	corrida	corrida	NOUN	_	Gender=Fem|Number=Sing	17	nmod	17:nmod:em	_
+21	eleitoral	eleitoral	ADJ	_	Number=Sing	20	amod	20:amod	SpaceAfter=No
+22	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0027
+# text = Fique atento para as próximas etapas da votação e como isso impactará o cenário político!
+1	Fique	ficar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	atento	atento	ADJ	_	Gender=Masc|Number=Sing	1	xcomp	1:xcomp	_
+3	para	para	ADP	_	_	6	case	6:case	_
+4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	6:det	_
+5	próximas	próximo	ADJ	_	Gender=Fem|Number=Plur	6	amod	6:amod	_
+6	etapas	etapa	NOUN	_	Gender=Fem|Number=Plur	2	obl	2:obl:para	_
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	votação	votação	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de	_
+10	e	e	CCONJ	_	_	13	cc	13:cc	_
+11	como	como	ADV	_	_	13	advmod	13:advmod	_
+12	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	13	nsubj	13:nsubj	_
+13	impactará	impactar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	1	conj	1:conj:e	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	cenário	cenário	NOUN	_	Gender=Masc|Number=Sing	13	obj	13:obj	_
+16	político	político	ADJ	_	Gender=Masc|Number=Sing	15	amod	15:amod	SpaceAfter=No
+17	!	!	PUNCT	_	_	1	punct	1:punct	_

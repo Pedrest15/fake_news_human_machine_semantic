@@ -1,0 +1,405 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = felipe neto e o stf querem implementar “age fluid” (idade fluída) para justificar pedofilia “age fluid.
+1	felipe	felipe	PROPN	_	_	6	nsubj	6:nsubj|7:nsubj	_
+2	neto	neto	NOUN	_	Gender=Masc|Number=Sing	1	nmod	1:nmod	_
+3	e	e	CCONJ	_	_	5	cc	5:cc	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	stf	stf	NOUN	_	_	1	conj	1:conj:e|6:nsubj|7:nsubj	_
+6	querem	querer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	implementar	implementar	VERB	_	VerbForm=Inf	6	xcomp	6:xcomp	_
+8	“age	“age	X	_	Foreign=Yes	7	obj	7:obj	_
+9	fluid”	fluid”	X	_	Foreign=Yes	8	flat:foreign	8:flat:foreign	_
+10	(	(	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+11	idade	idade	NOUN	_	Gender=Fem|Number=Sing	8	appos	8:appos	_
+12	fluída	fluído	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	11	amod	11:amod	SpaceAfter=No
+13	)	)	PUNCT	_	_	11	punct	11:punct	_
+14	para	para	ADP	_	_	15	mark	15:mark	_
+15	justificar	justificar	VERB	_	VerbForm=Inf	7	advcl	7:advcl:para	_
+16	pedofilia	pedofilia	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	_
+17	“age	“age	X	_	Foreign=Yes	16	nmod	16:nmod	_
+18	fluid	fluid	X	_	Foreign=Yes	16	flat:foreign	16:flat:foreign	SpaceAfter=No
+19	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0003
+# text = esse movimento visa algo que é estarrecedor: pessoas pedófilas estão usando essa questão da saúde como um mecanismo para que a idade dessas pessoas pedófilas sejam diminuídas judicialmente.
+1	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	2:det	_
+2	movimento	movimento	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	visa	visar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	algo	algo	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	3	obj	3:obj|7:nsubj	_
+5	que	que	PRON	_	PronType=Rel	7	nsubj	4:ref	_
+6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+7	estarrecedor	estarrecedor	ADJ	_	Gender=Masc|Number=Sing	4	acl:relcl	4:acl:relcl	SpaceAfter=No
+8	:	:	PUNCT	_	_	12	punct	12:punct	_
+9	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	12	nsubj	12:nsubj	_
+10	pedófilas	pedófilo	ADJ	_	Gender=Fem|Number=Plur	9	amod	9:amod	_
+11	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	aux	12:aux	_
+12	usando	usar	VERB	_	VerbForm=Ger	3	parataxis	3:parataxis	_
+13	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	14	det	14:det	_
+14	questão	questão	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+15-16	da	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:de	_
+18	como	como	ADP	_	_	20	case	20:case	_
+19	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	mecanismo	mecanismo	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:como	_
+21	para	para	ADP	_	ExtPos=SCONJ	30	mark	30:mark	_
+22	que	que	SCONJ	_	_	21	fixed	21:fixed	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	idade	idade	NOUN	_	Gender=Fem|Number=Sing	30	nsubj:pass	30:nsubj:pass	_
+25-26	dessas	_	_	_	_	_	_	_	_
+25	de	de	ADP	_	_	27	case	27:case	_
+26	essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	27	det	27:det	_
+27	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	24	nmod	24:nmod:de	_
+28	pedófilas	pedófilo	ADJ	_	Gender=Fem|Number=Plur	27	amod	27:amod	_
+29	sejam	ser	AUX	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	30	aux:pass	30:aux:pass	_
+30	diminuídas	diminuír	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	20	acl	20:acl:para_que	_
+31	judicialmente	judicialmente	ADV	_	_	30	advmod	30:advmod	SpaceAfter=No
+32	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0005
+# text = isso mesmo!!!
+1	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	0	root	0:root	_
+2	mesmo	mesmo	ADV	_	_	1	advmod	1:advmod	SpaceAfter=No
+3	!	!	PUNCT	_	_	1	punct	1:punct	SpaceAfter=No
+4	!	!	PUNCT	_	_	1	punct	1:punct	SpaceAfter=No
+5	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0007
+# text = e como e que eles estão fazendo isso?
+1	e	e	CCONJ	_	_	7	cc	7:cc	_
+2	como	como	ADV	_	_	7	advmod	7:advmod	_
+3	e	e	CCONJ	_	_	4	cc	4:cc	_
+4	que	que	SCONJ	_	_	2	conj	2:conj:e	_
+5	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	7	nsubj	7:nsubj	_
+6	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux	7:aux	_
+7	fazendo	fazer	VERB	_	VerbForm=Ger	0	root	0:root	_
+8	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	7	obj	7:obj	SpaceAfter=No
+9	?	?	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0009
+# text = o garoto propaganda é o felipe neto.
+1	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	garoto	garoto	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+3	propaganda	propaganda	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod	_
+4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	felipe	felipe	NOUN	_	_	0	root	0:root	_
+7	neto	neto	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod	SpaceAfter=No
+8	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0011
+# text = exemplo: o felipe neto tem comportamento de criança.
+1	exemplo	exemplo	NOUN	_	Gender=Masc|Number=Sing	6	parataxis	6:parataxis	SpaceAfter=No
+2	:	:	PUNCT	_	_	1	punct	1:punct	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	felipe	felipe	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+5	neto	neto	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod	_
+6	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	comportamento	comportamento	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	criança	criança	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:de	SpaceAfter=No
+10	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0013
+# text = então ele vai na justiça e diz que embora ele seja um adulto a mentalidade dele é infantil e com isso ele está valizado pela justiça a praticar crime de pedofilia sem que seja punido é uma onda gigantesca que chegou ao brasil e o filipe neto está sendo usado coniventemente como garoto propaganda.
+1	então	então	ADV	_	_	3	advmod	3:advmod	_
+2	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	3:nsubj|8:nsubj	_
+3	vai	ir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4-5	na	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	justiça	justiça	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:em	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	3:conj:e	_
+9	que	que	SCONJ	_	_	20	mark	20:mark|26:mark	_
+10	embora	embora	SCONJ	_	_	14	mark	14:mark	_
+11	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	nsubj	14:nsubj	_
+12	seja	ser	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	14:cop	_
+13	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	adulto	adulto	NOUN	_	Gender=Masc|Number=Sing	26	advcl	26:advcl:embora	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	mentalidade	mentalidade	NOUN	_	Gender=Fem|Number=Sing	20	nsubj	20:nsubj	_
+17-18	dele	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	nmod	16:nmod:de	_
+19	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	cop	20:cop	_
+20	infantil	infantil	ADJ	_	Number=Sing	8	ccomp	8:ccomp	_
+21	e	e	CCONJ	_	_	26	cc	26:cc	_
+22	com	com	ADP	_	_	23	case	23:case	_
+23	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	26	obl	26:obl:com	_
+24	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	26	nsubj	26:nsubj|31:nsubj	_
+25	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	cop	26:cop	_
+26	valizado	valizado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	20	conj	8:ccomp|20:conj:e	_
+27-28	pela	_	_	_	_	_	_	_	_
+27	por	por	ADP	_	_	29	case	29:case	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	justiça	justiça	NOUN	_	Gender=Fem|Number=Sing	26	obl:agent	26:obl:agent	_
+30	a	a	ADP	_	_	31	mark	31:mark	_
+31	praticar	praticar	VERB	_	VerbForm=Inf	26	xcomp	26:xcomp	_
+32	crime	crime	NOUN	_	Gender=Masc|Number=Sing	31	obj	31:obj	_
+33	de	de	ADP	_	_	34	case	34:case	_
+34	pedofilia	pedofilia	NOUN	_	Gender=Fem|Number=Sing	32	nmod	32:nmod:de	_
+35	sem	sem	ADP	_	ExtPos=SCONJ	38	mark	38:mark	_
+36	que	que	SCONJ	_	_	35	fixed	35:fixed	_
+37	seja	ser	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	38	aux:pass	38:aux:pass	_
+38	punido	punir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	26	advcl	26:advcl:sem_que	_
+39	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	41	cop	41:cop	_
+40	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	41	det	41:det	_
+41	onda	onda	NOUN	_	Gender=Fem|Number=Sing	8	ccomp	8:ccomp|44:nsubj	_
+42	gigantesca	gigantesco	ADJ	_	Gender=Fem|Number=Sing	41	amod	41:amod	_
+43	que	que	PRON	_	PronType=Rel	44	nsubj	41:ref	_
+44	chegou	chegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	41	acl:relcl	41:acl:relcl	_
+45-46	ao	_	_	_	_	_	_	_	_
+45	a	a	ADP	_	_	47	case	47:case	_
+46	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	det	47:det	_
+47	brasil	brasil	NOUN	_	Gender=Masc|Number=Sing	44	obl	44:obl:a	_
+48	e	e	CCONJ	_	_	54	cc	54:cc	_
+49	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	50	det	50:det	_
+50	filipe	filipe	NOUN	_	Gender=Masc|Number=Sing	54	nsubj:pass	54:nsubj:pass	_
+51	neto	neto	NOUN	_	Gender=Masc|Number=Sing	50	nmod	50:nmod	_
+52	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	54	aux	54:aux	_
+53	sendo	ser	AUX	_	VerbForm=Ger	54	aux:pass	54:aux:pass	_
+54	usado	usar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	44	conj	41:acl:relcl|44:conj:e	_
+55	coniventemente	coniventemente	ADV	_	_	54	advmod	54:advmod	_
+56	como	como	ADP	_	_	57	case	57:case	_
+57	garoto	garoto	NOUN	_	Gender=Masc|Number=Sing	54	obl	54:obl:como	_
+58	propaganda	propaganda	NOUN	_	Gender=Fem|Number=Sing	57	nmod	57:nmod	SpaceAfter=No
+59	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0015
+# text = entra também a xuxa com o lançamento do livro lgbt, basta juntar os ganchos.
+1	entra	entrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	também	também	ADV	_	_	1	advmod	1:advmod	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	xuxa	xuxa	NOUN	_	Gender=Fem|Number=Sing	1	nsubj	1:nsubj	_
+5	com	com	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	lançamento	lançamento	NOUN	_	Gender=Masc|Number=Sing	1	obl	1:obl:com	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	livro	livro	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	_
+11	lgbt	lgbt	NOUN	_	_	10	nmod	10:nmod	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	basta	bastar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	1:parataxis	_
+14	juntar	juntar	VERB	_	VerbForm=Inf	13	csubj	13:csubj	_
+15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	16:det	_
+16	ganchos	gancho	NOUN	_	Gender=Masc|Number=Plur	14	obj	14:obj	SpaceAfter=No
+17	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0017
+# text = eles adotam um comportamento infantil, trazem um contexto comportamental dos jovens como crianças nessa intenção, levam à justiça alegando que não tem a mentalidade adulta para que posteriormente possam praticar o ato e não serem punidos ficando livres para praticar pedofilia.
+1	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	2	nsubj	2:nsubj|7:nsubj|20:nsubj	_
+2	adotam	adotar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	comportamento	comportamento	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+5	infantil	infantil	ADJ	_	Number=Sing	4	amod	4:amod	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	trazem	trazer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	contexto	contexto	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+10	comportamental	comportamental	ADJ	_	Number=Sing	9	amod	9:amod	_
+11-12	dos	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	13:det	_
+13	jovens	jovem	NOUN	_	Number=Plur	9	nmod	9:nmod:de	_
+14	como	como	ADP	_	_	15	case	15:case	_
+15	crianças	criança	NOUN	_	Gender=Fem|Number=Plur	9	nmod	9:nmod:como	_
+16-17	nessa	_	_	_	_	_	_	_	_
+16	em	em	ADP	_	_	18	case	18:case	_
+17	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	18	det	18:det	_
+18	intenção	intenção	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:em	SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	20:punct	_
+20	levam	levar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj	_
+21-22	à	_	_	_	_	_	_	_	_
+21	a	a	ADP	_	_	23	case	23:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	justiça	justiça	NOUN	_	Gender=Fem|Number=Sing	20	obl	20:obl:a	_
+24	alegando	alegar	VERB	_	VerbForm=Ger	20	advcl	20:advcl	_
+25	que	que	SCONJ	_	_	27	mark	27:mark	_
+26	não	não	ADV	_	_	27	advmod	27:advmod	_
+27	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	ccomp	24:ccomp	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	mentalidade	mentalidade	NOUN	_	Gender=Fem|Number=Sing	27	obj	27:obj	_
+30	adulta	adulto	ADJ	_	Gender=Fem|Number=Sing	29	amod	29:amod	_
+31	para	para	ADP	_	ExtPos=SCONJ	34	mark	34:mark	_
+32	que	que	SCONJ	_	_	31	fixed	31:fixed	_
+33	posteriormente	posteriormente	ADV	_	_	34	advmod	34:advmod	_
+34	possam	possam	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	24	advcl	24:advcl:para_que	_
+35	praticar	praticar	VERB	_	VerbForm=Inf	34	xcomp	34:xcomp	_
+36	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	37:det	_
+37	ato	ato	NOUN	_	Gender=Masc|Number=Sing	35	obj	35:obj	_
+38	e	e	CCONJ	_	_	41	cc	41:cc	_
+39	não	não	ADV	_	_	41	advmod	41:advmod	_
+40	serem	ser	AUX	_	Number=Plur|Person=3|VerbForm=Inf	41	aux:pass	41:aux:pass	_
+41	punidos	punir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	35	conj	34:xcomp|35:conj:e	_
+42	ficando	ficar	VERB	_	VerbForm=Ger	41	advcl	41:advcl	_
+43	livres	livre	ADJ	_	Number=Plur	42	xcomp	42:xcomp	_
+44	para	para	ADP	_	_	45	mark	45:mark	_
+45	praticar	praticar	VERB	_	VerbForm=Inf	43	acl	43:acl:para	_
+46	pedofilia	pedofilia	NOUN	_	Gender=Fem|Number=Sing	45	obj	45:obj	SpaceAfter=No
+47	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0019
+# text = *o movimento se chama age fluid!
+1	*	*	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	movimento	movimento	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+4	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	5	expl	5:expl	_
+5	chama	chamar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	age	age	X	_	Foreign=Yes	5	obj	5:obj	_
+7	fluid	fluid	X	_	Foreign=Yes	6	flat:foreign	6:flat:foreign	SpaceAfter=No
+8	!	!	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0021
+# text = * é estarrecedor o stf está acobertando isso porque já essa semana roberto jefferson abriu a boca dizendo que existem pedófilos no supremo!
+1	*	*	PUNCT	_	_	3	punct	3:punct	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+3	estarrecedor	estarrecedor	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	stf	stf	NOUN	_	_	7	nsubj	7:nsubj	_
+6	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	7:aux	_
+7	acobertando	acobertar	VERB	_	VerbForm=Ger	3	dep	3:dep	_
+8	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	7	obj	7:obj	_
+9	porque	porque	SCONJ	_	_	15	mark	15:mark	_
+10	já	já	ADV	_	_	12	advmod	12:advmod	_
+11	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	12	det	12:det	_
+12	semana	semana	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl	_
+13	roberto	roberto	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	15:nsubj	_
+14	jefferson	jefferson	NOUN	_	_	13	flat:name	13:flat:name	_
+15	abriu	abrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	advcl	7:advcl:porque	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	boca	boca	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	_
+18	dizendo	dizer	VERB	_	VerbForm=Ger	15	advcl	15:advcl	_
+19	que	que	SCONJ	_	_	20	mark	20:mark	_
+20	existem	existir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	ccomp	18:ccomp	_
+21	pedófilos	pedófilo	NOUN	_	Gender=Masc|Number=Plur	20	nsubj	20:nsubj	_
+22-23	no	_	_	_	_	_	_	_	_
+22	em	em	ADP	_	_	24	case	24:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	supremo	supremo	NOUN	_	Gender=Masc|Number=Sing	20	obl	20:obl:em	SpaceAfter=No
+25	!	!	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0023
+# text = percebem???
+1	percebem	perceber	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+2	?	?	PUNCT	_	_	1	punct	1:punct	SpaceAfter=No
+3	?	?	PUNCT	_	_	1	punct	1:punct	SpaceAfter=No
+4	?	?	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0025
+# text = essa bomba aí vai explodir!!!
+1	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	2	det	2:det	_
+2	bomba	bomba	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+3	aí	aí	ADV	_	_	5	advmod	5:advmod	_
+4	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	5:aux	_
+5	explodir	explodir	VERB	_	VerbForm=Inf	0	root	0:root	SpaceAfter=No
+6	!	!	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+7	!	!	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+8	!	!	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0027
+# text = ”idade fluída” age fluid ou “idade fluída” diz respeito a uma pessoa que por vezes se sente adulta e quer se relacionar com adultos, por vezes se sente criança e quer se relacionar com crianças”.
+1	”idade	”idade	NOUN	_	_	8	nsubj	8:nsubj	_
+2	fluída”	fluída”	X	_	Foreign=Yes	1	punct	1:punct	_
+3	age	age	X	_	Foreign=Yes	1	nmod	1:nmod	_
+4	fluid	fluid	X	_	Foreign=Yes	3	flat:foreign	3:flat:foreign	_
+5	ou	ou	CCONJ	_	_	6	cc	6:cc	_
+6	“idade	“idade	NOUN	_	_	1	conj	1:conj:ou|8:nsubj	_
+7	fluída”	fluída”	PUNCT	_	_	6	punct	6:punct	_
+8	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+9	respeito	respeito	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	_
+10	a	a	ADP	_	_	12	case	12:case	_
+11	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	pessoa	pessoa	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:a|17:nsubj|18:nsubj|20:nsubj|22:nsubj|29:nsubj|30:nsubj|32:nsubj|34:nsubj	_
+13	que	que	PRON	_	PronType=Rel	17	nsubj	12:ref	_
+14	por	por	ADP	_	_	15	case	15:case	_
+15	vezes	vez	NOUN	_	Gender=Fem|Number=Plur	17	obl	17:obl:por	_
+16	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	17	expl	17:expl	_
+17	sente	sentir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	acl:relcl	12:acl:relcl	_
+18	adulta	adulto	ADJ	_	Gender=Fem|Number=Sing	17	xcomp	17:xcomp	_
+19	e	e	CCONJ	_	_	20	cc	20:cc	_
+20	quer	querer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	conj	12:acl:relcl|17:conj:e	_
+21	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	22	expl	22:expl	_
+22	relacionar	relacionar	VERB	_	VerbForm=Inf	20	xcomp	20:xcomp	_
+23	com	com	ADP	_	_	24	case	24:case	_
+24	adultos	adulto	NOUN	_	Gender=Masc|Number=Plur	22	obl	22:obl:com	SpaceAfter=No
+25	,	,	PUNCT	_	_	29	punct	29:punct	_
+26	por	por	ADP	_	_	27	case	27:case	_
+27	vezes	vez	NOUN	_	Gender=Fem|Number=Plur	29	obl	29:obl:por	_
+28	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	29	expl	29:expl	_
+29	sente	sentir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	conj	12:acl:relcl|17:conj	_
+30	criança	criança	NOUN	_	Gender=Fem|Number=Sing	29	xcomp	29:xcomp	_
+31	e	e	CCONJ	_	_	32	cc	32:cc	_
+32	quer	querer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	conj	12:acl|29:conj:e	_
+33	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	34	expl	34:expl	_
+34	relacionar	relacionar	VERB	_	VerbForm=Inf	32	xcomp	32:xcomp	_
+35	com	com	ADP	_	_	36	case	36:case	_
+36	crianças”	crianças”	ADJ	_	_	34	obl	34:obl:com	SpaceAfter=No
+37	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0029
+# text = …, “todos que possuem filhos, fiquem atentos à uma onda da esquerda “agefluid” que chegou ao brasil esta semana e está sendo acobertada pelo stf e estão usando o nelipe feto como garoto propaganda para o tiro de misericórdia.
+1	…	…	ADJ	_	_	8	discourse	8:discourse	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	“todos	“todo	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	8	nsubj	5:nsubj|8:nsubj|9:nsubj	_
+4	que	que	PRON	_	PronType=Rel	5	nsubj	3:ref	_
+5	possuem	possuir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_
+6	filhos	filho	NOUN	_	Gender=Masc|Number=Plur	5	obj	5:obj	SpaceAfter=No
+7	,	,	PUNCT	_	_	1	punct	1:punct	_
+8	fiquem	ficar	VERB	_	Mood=Imp|Number=Plur|Person=3|VerbForm=Fin	0	root	0:root	_
+9	atentos	atento	ADJ	_	Gender=Masc|Number=Plur	8	xcomp	8:xcomp	_
+10-11	à	_	_	_	_	_	_	_	_
+10	a	a	ADP	_	_	13	case	13:case	_
+11	a	a	ADP	_	_	13	case	13:case	_
+12	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	onda	onda	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:a_a	_
+14-15	da	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	esquerda	esquerda	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:de|19:nsubj|28:nsubj:pass	_
+17	“agefluid”	“agefluid”	PUNCT	_	_	16	punct	16:punct	_
+18	que	que	PRON	_	PronType=Rel	19	nsubj	16:ref	_
+19	chegou	chegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	acl:relcl	16:acl:relcl	_
+20-21	ao	_	_	_	_	_	_	_	_
+20	a	a	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	brasil	brasil	NOUN	_	Gender=Masc|Number=Sing	19	obl	19:obl:a	_
+23	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	24	det	24:det	_
+24	semana	semana	NOUN	_	Gender=Fem|Number=Sing	19	obl	19:obl	_
+25	e	e	CCONJ	_	_	28	cc	28:cc	_
+26	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	aux	28:aux	_
+27	sendo	ser	AUX	_	VerbForm=Ger	28	aux:pass	28:aux:pass	_
+28	acobertada	acobertar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	19	conj	16:acl:relcl|19:conj:e	_
+29-30	pelo	_	_	_	_	_	_	_	_
+29	por	por	ADP	_	_	31	case	31:case	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	stf	stf	NOUN	_	_	28	obl:agent	28:obl:agent	_
+32	e	e	CCONJ	_	_	34	cc	34:cc	_
+33	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	34	aux	34:aux	_
+34	usando	usar	VERB	_	VerbForm=Ger	19	conj	16:acl:relcl|19:conj:e	_
+35	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	36:det	_
+36	nelipe	nelipe	X	_	Foreign=Yes	34	obj	34:obj	_
+37	feto	feto	X	_	Foreign=Yes	36	flat:foreign	36:flat:foreign	_
+38	como	como	ADP	_	_	39	case	39:case	_
+39	garoto	garoto	NOUN	_	Gender=Masc|Number=Sing	34	obl	34:obl:como	_
+40	propaganda	propaganda	NOUN	_	Gender=Fem|Number=Sing	39	nmod	39:nmod	_
+41	para	para	ADP	_	_	43	case	43:case	_
+42	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	43	det	43:det	_
+43	tiro	tiro	NOUN	_	Gender=Masc|Number=Sing	34	obl	34:obl:para	_
+44	de	de	ADP	_	_	45	case	45:case	_
+45	misericórdia	misericórdia	NOUN	_	Gender=Fem|Number=Sing	43	nmod	43:nmod:de	SpaceAfter=No
+46	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0031
+# text = esse movimento visa algo que é estarrecedor”.
+1	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	2:det	_
+2	movimento	movimento	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	visa	visar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	algo	algo	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	3	obj	3:obj|7:nsubj	_
+5	que	que	PRON	_	PronType=Rel	7	nsubj	4:ref	_
+6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+7	estarrecedor”	estarrecedor”	PUNCT	_	_	4	acl:relcl	4:acl:relcl	SpaceAfter=No
+8	.	.	PUNCT	_	_	3	punct	3:punct	_

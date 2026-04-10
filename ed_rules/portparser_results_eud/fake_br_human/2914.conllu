@@ -1,0 +1,194 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Premeditado?
+1	Premeditado	premeditado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	SpaceAfter=No
+2	?	?	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Vídeo em câmera lenta mostra Jean Wyllys dizendo: "Vou cuspir na cara do Bolsonaro".
+1	Vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+2	em	em	ADP	_	_	3	case	3:case	_
+3	câmera	câmera	NOUN	_	Gender=Fem|Number=Sing	1	nmod	1:nmod:em	_
+4	lenta	lento	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+5	mostra	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	Jean	Jean	PROPN	_	_	5	obj	5:obj|8:nsubj	_
+7	Wyllys	Wyllys	PROPN	_	_	6	flat:name	6:flat:name	_
+8	dizendo	dizer	VERB	_	VerbForm=Ger	5	xcomp	5:xcomp	SpaceAfter=No
+9	:	:	PUNCT	_	_	12	punct	12:punct	_
+10	"	"	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+11	Vou	ir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	12	aux	12:aux	_
+12	cuspir	cuspir	VERB	_	VerbForm=Inf	8	ccomp:speech	8:ccomp:speech	_
+13-14	na	_	_	_	_	_	_	_	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	cara	cara	NOUN	_	Number=Sing	12	obl	12:obl:em	_
+16-17	do	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	Bolsonaro	Bolsonaro	PROPN	_	_	15	nmod	15:nmod:de	SpaceAfter=No
+19	"	"	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+20	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0005
+# text = O deputado Jean Wyllys premeditou toda a palhaçada que fez na sessão de ontem (17) na Câmara Federal.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+3	Jean	Jean	PROPN	_	_	2	nmod	2:nmod	_
+4	Wyllys	Wyllys	PROPN	_	_	3	flat:name	3:flat:name	_
+5	premeditou	premeditar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	toda	todo	DET	_	Gender=Fem|Number=Sing|PronType=Ind	8	det	8:det	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	palhaçada	palhaçada	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj|10:obj	_
+9	que	que	PRON	_	PronType=Rel	10	obj	8:ref	_
+10	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	acl:relcl	8:acl:relcl	_
+11-12	na	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	sessão	sessão	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:em	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	ontem	ontem	ADV	_	_	13	nmod	13:nmod:de	_
+16	(	(	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+17	17	17	NUM	_	NumType=Card	15	appos	15:appos	SpaceAfter=No
+18	)	)	PUNCT	_	_	17	punct	17:punct	_
+19-20	na	_	_	_	_	_	_	_	_
+19	em	em	ADP	_	_	21	case	21:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	Câmara	Câmara	PROPN	_	_	13	nmod	13:nmod:em	_
+22	Federal	Federal	PROPN	_	_	21	flat:name	21:flat:name	SpaceAfter=No
+23	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0007
+# text = Ao contrário do que disse o ex-BBB Jean Wyllys, o deputado Jair Bolsonaro não o provocou durante a sessão de votação do impeachment.
+1-2	Ao	_	_	_	_	_	_	_	_
+1	A	a	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	contrário	contrário	NOUN	_	Gender=Masc|Number=Sing	19	obl	19:obl:a	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nmod	3:nmod:de|7:obj	_
+6	que	que	PRON	_	PronType=Rel	7	obj	5:ref	_
+7	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	ex-BBB	ex-bbb	NOUN	_	_	7	nsubj	7:nsubj	_
+10	Jean	Jean	PROPN	_	_	9	nmod	9:nmod	_
+11	Wyllys	Wyllys	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+12	,	,	PUNCT	_	_	3	punct	3:punct	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	19	nsubj	19:nsubj	_
+15	Jair	Jair	PROPN	_	_	14	nmod	14:nmod	_
+16	Bolsonaro	Bolsonaro	PROPN	_	_	15	flat:name	15:flat:name	_
+17	não	não	ADV	_	_	19	advmod	19:advmod	_
+18	o	o	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	19	obj	19:obj	_
+19	provocou	provocar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+20	durante	durante	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	sessão	sessão	NOUN	_	Gender=Fem|Number=Sing	19	obl	19:obl:durante	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	votação	votação	NOUN	_	Gender=Fem|Number=Sing	22	nmod	22:nmod:de	_
+25-26	do	_	_	_	_	_	_	_	_
+25	de	de	ADP	_	_	27	case	27:case	_
+26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	impeachment	impeachment	NOUN	_	Gender=Masc|Number=Sing	24	nmod	24:nmod:de	SpaceAfter=No
+28	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0009
+# text = Um vídeo postado na rede social SEM CENSURA mostra, em câmera lenta, que a estupidez de Wyllys foi planejada com antecedência.
+1	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	10:nsubj	_
+3	postado	postar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	2:acl	_
+4-5	na	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	rede	rede	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:em	_
+7	social	social	ADJ	_	Number=Sing	6	amod	6:amod	_
+8	SEM	SEM	PROPN	_	_	6	nmod	6:nmod	_
+9	CENSURA	CENSURA	PROPN	_	_	8	flat:name	8:flat:name	_
+10	mostra	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+11	,	,	PUNCT	_	_	13	punct	13:punct	_
+12	em	em	ADP	_	_	13	case	13:case	_
+13	câmera	câmera	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:em	_
+14	lenta	lento	ADJ	_	Gender=Fem|Number=Sing	13	amod	13:amod	SpaceAfter=No
+15	,	,	PUNCT	_	_	13	punct	13:punct	_
+16	que	que	SCONJ	_	_	22	mark	22:mark	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	estupidez	estupidez	NOUN	_	Gender=Fem|Number=Sing	22	nsubj:pass	22:nsubj:pass	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	Wyllys	Wyllys	PROPN	_	_	18	nmod	18:nmod:de	_
+21	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	aux:pass	22:aux:pass	_
+22	planejada	planejar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	10	ccomp	10:ccomp	_
+23	com	com	ADP	_	_	24	case	24:case	_
+24	antecedência	antecedência	NOUN	_	Gender=Fem|Number=Sing	22	obl	22:obl:com	SpaceAfter=No
+25	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0011
+# text = Na filmagem podemos fazer uma "leitura labial" e dá pra perceber claramente que o deputado avisou alguém sobre o ato que iria cometer.
+1-2	Na	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	filmagem	filmagem	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:em	_
+4	podemos	poder	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	fazer	fazer	VERB	_	VerbForm=Inf	4	xcomp	4:xcomp	_
+6	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+7	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	leitura	leitura	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+9	labial	labial	ADJ	_	Number=Sing	8	amod	8:amod	SpaceAfter=No
+10	"	"	PUNCT	_	_	8	punct	8:punct	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	dá	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	4:conj:e	_
+13	pra	para	ADP	_	_	14	mark	14:mark	_
+14	perceber	perceber	VERB	_	VerbForm=Inf	12	csubj	12:csubj	_
+15	claramente	claramente	ADV	_	_	14	advmod	14:advmod	_
+16	que	que	SCONJ	_	_	19	mark	19:mark	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	19	nsubj	19:nsubj	_
+19	avisou	avisar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	ccomp	14:ccomp	_
+20	alguém	alguém	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	19	obj	19:obj	_
+21	sobre	sobre	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	ato	ato	NOUN	_	Gender=Masc|Number=Sing	19	obl	19:obl:sobre|26:obj	_
+24	que	que	PRON	_	PronType=Rel	26	obj	23:ref	_
+25	iria	ir	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	26	aux	26:aux	_
+26	cometer	cometer	VERB	_	VerbForm=Inf	23	acl:relcl	23:acl:relcl	SpaceAfter=No
+27	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0013
+# text = "Vou cuspir na cara do Bolsonaro" disse Jean.
+1	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	Vou	ir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	aux	3:aux	_
+3	cuspir	cuspir	VERB	_	VerbForm=Inf	11	ccomp:speech	11:ccomp:speech	_
+4-5	na	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	cara	cara	NOUN	_	Number=Sing	3	obl	3:obl:em	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	Bolsonaro	Bolsonaro	PROPN	_	_	6	nmod	6:nmod:de	SpaceAfter=No
+10	"	"	PUNCT	_	_	3	punct	3:punct	_
+11	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	Jean	Jean	PROPN	_	_	11	nsubj	11:nsubj	SpaceAfter=No
+13	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0014
+# text = confira no vídeo abaixo: *** presta atenção aos 10 segundos ***.
+1	confira	conferir	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2-3	no	_	_	_	_	_	_	_	_
+2	em	em	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	1	obl	1:obl:em	_
+5	abaixo	abaixo	ADV	_	_	4	advmod	4:advmod	SpaceAfter=No
+6	:	:	PUNCT	_	_	10	punct	10:punct	_
+7	*	*	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+8	*	*	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+9	*	*	PUNCT	_	_	10	punct	10:punct	_
+10	presta	prestar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp:speech	1:ccomp:speech	_
+11	atenção	atenção	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+12-13	aos	_	_	_	_	_	_	_	_
+12	a	a	ADP	_	_	15	case	15:case	_
+13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	15:det	_
+14	10	10	NUM	_	NumType=Card	15	nummod	15:nummod	_
+15	segundos	segundo	NOUN	_	Gender=Masc|Number=Plur	11	nmod	11:nmod:a	_
+16	*	*	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+17	*	*	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+18	*	*	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+19	.	.	PUNCT	_	_	1	punct	1:punct	_

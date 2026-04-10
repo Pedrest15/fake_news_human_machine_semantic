@@ -1,0 +1,723 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = MPF acusa Lula, Dilma e Mantega de esquema milionário com contas secretas no exterior.
+1	MPF	MPF	PROPN	_	_	2	nsubj	2:nsubj	_
+2	acusa	acusar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	Lula	Lula	PROPN	_	_	2	obj	2:obj	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	Dilma	Dilma	PROPN	_	_	3	conj	2:obj|3:conj:e	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	Mantega	Mantega	PROPN	_	_	3	conj	2:obj|3:conj:e	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	esquema	esquema	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:de	_
+10	milionário	milionário	ADJ	_	Gender=Masc|Number=Sing	9	amod	9:amod	_
+11	com	com	ADP	_	_	12	case	12:case	_
+12	contas	conta	NOUN	_	Gender=Fem|Number=Plur	9	nmod	9:nmod:com	_
+13	secretas	secreto	ADJ	_	Gender=Fem|Number=Plur	12	amod	12:amod	_
+14-15	no	_	_	_	_	_	_	_	_
+14	em	em	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	exterior	exterior	NOUN	_	Number=Sing	12	nmod	12:nmod:em	SpaceAfter=No
+17	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Revelações bombásticas indicam transferência de US$ 500 milhões para campanhas.
+1	Revelações	revelação	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	3:nsubj	_
+2	bombásticas	bombástico	ADJ	_	Gender=Fem|Number=Plur	1	amod	1:amod	_
+3	indicam	indicar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	transferência	transferência	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+5	de	de	ADP	_	_	8	case	8:case	_
+6	US$	US$	SYM	_	_	8	nmod	8:nmod	_
+7	500	500	NUM	_	NumType=Card	8	nummod	8:nummod	_
+8	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	4	nmod	4:nmod:de	_
+9	para	para	ADP	_	_	10	case	10:case	_
+10	campanhas	campanha	NOUN	_	Gender=Fem|Number=Plur	4	nmod	4:nmod:para	SpaceAfter=No
+11	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0005
+# text = Em um escândalo que promete abalar ainda mais a já fragilizada política brasileira, o Ministério Público Federal (MPF) convocou os ex-presidentes Luiz Inácio Lula da Silva e Dilma Rousseff, além do ex-ministro da Fazenda Guido Mantega, para prestar esclarecimentos sobre contas secretas no exterior.
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	escândalo	escândalo	NOUN	_	Gender=Masc|Number=Sing	22	obl	5:nsubj|6:nsubj|22:obl:em	_
+4	que	que	PRON	_	PronType=Rel	5	nsubj	3:ref	_
+5	promete	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_
+6	abalar	abalar	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	_
+7	ainda	ainda	ADV	_	_	8	advmod	8:advmod	_
+8	mais	mais	ADV	_	_	6	advmod	6:advmod	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+10	já	já	ADV	_	_	11	advmod	11:advmod	_
+11	fragilizada	fragilizado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	12	amod	12:amod	_
+12	política	política	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+13	brasileira	brasileiro	ADJ	_	Gender=Fem|Number=Sing	12	amod	12:amod	SpaceAfter=No
+14	,	,	PUNCT	_	_	3	punct	3:punct	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	Ministério	Ministério	PROPN	_	_	22	nsubj	22:nsubj	_
+17	Público	Público	PROPN	_	_	16	flat:name	16:flat:name	_
+18	Federal	Federal	PROPN	_	_	16	flat:name	16:flat:name	_
+19	(	(	PUNCT	_	_	20	punct	20:punct	SpaceAfter=No
+20	MPF	MPF	PROPN	_	_	16	appos	16:appos	SpaceAfter=No
+21	)	)	PUNCT	_	_	20	punct	20:punct	_
+22	convocou	convocar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+23	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	24:det	_
+24	ex-presidentes	ex-presidentes	NOUN	_	Number=Plur	22	obj	22:obj	_
+25	Luiz	Luiz	PROPN	_	_	24	nmod	24:nmod	_
+26	Inácio	Inácio	PROPN	_	_	25	flat:name	25:flat:name	_
+27	Lula	Lula	PROPN	_	_	25	flat:name	25:flat:name	_
+28-29	da	_	_	_	_	_	_	_	_
+28	de	de	ADP	_	_	30	case	30:case	_
+29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	Silva	Silva	PROPN	_	_	25	flat:name	25:flat:name	_
+31	e	e	CCONJ	_	_	32	cc	32:cc	_
+32	Dilma	Dilma	PROPN	_	_	25	conj	24:nmod|25:conj:e	_
+33	Rousseff	Rousseff	PROPN	_	_	32	flat:name	32:flat:name	SpaceAfter=No
+34	,	,	PUNCT	_	_	35	punct	35:punct	_
+35	além	além	ADV	_	_	24	advmod	24:advmod	_
+36-37	do	_	_	_	_	_	_	_	_
+36	de	de	ADP	_	_	38	case	38:case	_
+37	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	38:det	_
+38	ex-ministro	ex-ministro	NOUN	_	Gender=Masc|Number=Sing	35	obl	35:obl:de	_
+39-40	da	_	_	_	_	_	_	_	_
+39	de	de	ADP	_	_	41	case	41:case	_
+40	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	41:det	_
+41	Fazenda	Fazenda	PROPN	_	_	38	nmod	38:nmod:de	_
+42	Guido	Guido	PROPN	_	_	38	nmod	38:nmod	_
+43	Mantega	Mantega	PROPN	_	_	42	flat:name	42:flat:name	SpaceAfter=No
+44	,	,	PUNCT	_	_	35	punct	35:punct	_
+45	para	para	ADP	_	_	46	mark	46:mark	_
+46	prestar	prestar	VERB	_	VerbForm=Inf	22	advcl	22:advcl:para	_
+47	esclarecimentos	esclarecimento	NOUN	_	Gender=Masc|Number=Plur	46	obj	46:obj	_
+48	sobre	sobre	ADP	_	_	49	case	49:case	_
+49	contas	conta	NOUN	_	Gender=Fem|Number=Plur	47	nmod	47:nmod:sobre	_
+50	secretas	secreto	ADJ	_	Gender=Fem|Number=Plur	49	amod	49:amod	_
+51-52	no	_	_	_	_	_	_	_	_
+51	em	em	ADP	_	_	53	case	53:case	_
+52	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	53	det	53:det	_
+53	exterior	exterior	NOUN	_	Number=Sing	49	nmod	49:nmod:em	SpaceAfter=No
+54	.	.	PUNCT	_	_	22	punct	22:punct	_
+
+# sent_id = S0007
+# text = O empresário Joesley Batista, dono do grupo J&F, teria confessado em depoimento que transferiu impressionantes US$ 500 milhões para financiar campanhas eleitorais dos petistas, a mando de Mantega.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	empresário	empresário	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	13:nsubj	_
+3	Joesley	Joesley	PROPN	_	_	2	nmod	2:nmod	_
+4	Batista	Batista	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	dono	dono	NOUN	_	Gender=Masc|Number=Sing	2	appos	2:appos	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	grupo	grupo	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de	_
+10	J&F	J&F	PROPN	_	_	9	nmod	9:nmod	SpaceAfter=No
+11	,	,	PUNCT	_	_	6	punct	6:punct	_
+12	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	13	aux	13:aux	_
+13	confessado	confessar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+14	em	em	ADP	_	_	15	case	15:case	_
+15	depoimento	depoimento	NOUN	_	Gender=Masc|Number=Sing	13	obl	13:obl:em	_
+16	que	que	SCONJ	_	_	17	mark	17:mark	_
+17	transferiu	transferir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	ccomp	13:ccomp	_
+18	impressionantes	impressionante	ADJ	_	Number=Plur	21	amod	21:amod	_
+19	US$	US$	SYM	_	_	21	nmod	21:nmod	_
+20	500	500	NUM	_	NumType=Card	21	nummod	21:nummod	_
+21	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	17	obj	17:obj	_
+22	para	para	ADP	_	_	23	mark	23:mark	_
+23	financiar	financiar	VERB	_	VerbForm=Inf	17	advcl	17:advcl:para	_
+24	campanhas	campanha	NOUN	_	Gender=Fem|Number=Plur	23	obj	23:obj	_
+25	eleitorais	eleitoral	ADJ	_	Number=Plur	24	amod	24:amod	_
+26-27	dos	_	_	_	_	_	_	_	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	28:det	_
+28	petistas	petista	NOUN	_	Number=Plur	24	nmod	24:nmod:de	SpaceAfter=No
+29	,	,	PUNCT	_	_	31	punct	31:punct	_
+30	a	a	ADP	_	_	31	case	31:case	_
+31	mando	mando	NOUN	_	Gender=Masc|Number=Sing	23	obl	23:obl:a	_
+32	de	de	ADP	_	_	33	case	33:case	_
+33	Mantega	Mantega	PROPN	_	_	31	nmod	31:nmod:de	SpaceAfter=No
+34	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0009
+# text = De acordo com Joesley, US$ 250 milhões foram destinados a Lula e outros US$ 250 milhões a Dilma, tudo sob a supervisão direta de Mantega.
+1	De	de	ADP	_	_	2	case	2:case	_
+2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:de	_
+3	com	com	ADP	_	_	4	case	4:case	_
+4	Joesley	Joesley	PROPN	_	_	2	nmod	2:nmod:com	SpaceAfter=No
+5	,	,	PUNCT	_	_	2	punct	2:punct	_
+6	US$	US$	SYM	_	_	8	nmod	8:nmod	_
+7	250	250	NUM	_	NumType=Card	8	nummod	8:nummod	_
+8	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	10	nsubj:pass	10:nsubj:pass	_
+9	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	10	aux:pass	10:aux:pass	_
+10	destinados	destinar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	_
+11	a	a	ADP	_	_	12	case	12:case	_
+12	Lula	Lula	PROPN	_	_	10	obl	10:obl:a	_
+13	e	e	CCONJ	_	_	17	cc	17:cc	_
+14	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	17	det	17:det	_
+15	US$	US$	SYM	_	_	17	nmod	17:nmod	_
+16	250	250	NUM	_	NumType=Card	17	nummod	17:nummod	_
+17	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	10	conj	10:conj:e	_
+18	a	a	ADP	_	_	19	case	19:case	_
+19	Dilma	Dilma	PROPN	_	_	17	nmod	17:nmod:a	SpaceAfter=No
+20	,	,	PUNCT	_	_	21	punct	21:punct	_
+21	tudo	tudo	PRON	_	PronType=Ind	10	parataxis	10:parataxis	_
+22	sob	sob	ADP	_	_	24	case	24:case	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	supervisão	supervisão	NOUN	_	Gender=Fem|Number=Sing	21	nmod	21:nmod:sob	_
+25	direta	direto	ADJ	_	Gender=Fem|Number=Sing	24	amod	24:amod	_
+26	de	de	ADP	_	_	27	case	27:case	_
+27	Mantega	Mantega	PROPN	_	_	24	nmod	24:nmod:de	SpaceAfter=No
+28	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0011
+# text = As revelações indicam que o esquema começou em 2008 e se estendeu até 2016, envolvendo não só transferências financeiras, mas também um complexo sistema de ocultação de provas.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	revelações	revelação	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	3:nsubj	_
+3	indicam	indicar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	7	mark	7:mark|12:mark	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	esquema	esquema	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj|12:nsubj	_
+7	começou	começar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	ccomp	3:ccomp	_
+8	em	em	ADP	_	_	9	case	9:case	_
+9	2008	2008	NUM	_	NumType=Card	7	obl	7:obl:em	_
+10	e	e	CCONJ	_	_	12	cc	12:cc	_
+11	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	12	expl	12:expl	_
+12	estendeu	estender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	conj	3:ccomp|7:conj:e	_
+13	até	até	ADP	_	_	14	case	14:case	_
+14	2016	2016	NUM	_	NumType=Card	12	obl	12:obl:até	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	envolvendo	envolver	VERB	_	VerbForm=Ger	7	advcl	7:advcl|12:advcl	_
+17	não	não	ADV	_	_	18	advmod	18:advmod	_
+18	só	só	ADV	_	_	19	advmod	19:advmod	_
+19	transferências	transferência	NOUN	_	Gender=Fem|Number=Plur	16	obj	16:obj	_
+20	financeiras	financeiro	ADJ	_	Gender=Fem|Number=Plur	19	amod	19:amod	SpaceAfter=No
+21	,	,	PUNCT	_	_	26	punct	26:punct	_
+22	mas	mas	CCONJ	_	_	26	cc	26:cc	_
+23	também	também	ADV	_	_	26	advmod	26:advmod	_
+24	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+25	complexo	complexo	ADJ	_	Gender=Masc|Number=Sing	26	amod	26:amod	_
+26	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	19	conj	16:obj|19:conj:mas	_
+27	de	de	ADP	_	_	28	case	28:case	_
+28	ocultação	ocultação	NOUN	_	Gender=Fem|Number=Sing	26	nmod	26:nmod:de	_
+29	de	de	ADP	_	_	30	case	30:case	_
+30	provas	prova	NOUN	_	Gender=Fem|Number=Plur	28	nmod	28:nmod:de	SpaceAfter=No
+31	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0013
+# text = O MPF e a Polícia Federal exigiram que Joesley apresente comprovantes das transações financeiras e documentos que atestem a existência das contas secretas.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	MPF	MPF	PROPN	_	_	7	nsubj	7:nsubj	_
+3	e	e	CCONJ	_	_	5	cc	5:cc	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	Polícia	Polícia	PROPN	_	_	2	conj	2:conj:e|7:nsubj	_
+6	Federal	Federal	PROPN	_	_	5	flat:name	5:flat:name	_
+7	exigiram	exigir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	que	que	SCONJ	_	_	10	mark	10:mark	_
+9	Joesley	Joesley	PROPN	_	_	10	nsubj	10:nsubj	_
+10	apresente	apresentar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	ccomp	7:ccomp	_
+11	comprovantes	comprovante	NOUN	_	Number=Plur	10	obj	10:obj	_
+12-13	das	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	14:det	_
+14	transações	transação	NOUN	_	Gender=Fem|Number=Plur	11	nmod	11:nmod:de	_
+15	financeiras	financeiro	ADJ	_	Gender=Fem|Number=Plur	14	amod	14:amod	_
+16	e	e	CCONJ	_	_	17	cc	17:cc	_
+17	documentos	documento	NOUN	_	Gender=Masc|Number=Plur	11	conj	10:obj|11:conj:e|19:nsubj	_
+18	que	que	PRON	_	PronType=Rel	19	nsubj	17:ref	_
+19	atestem	atestar	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	acl:relcl	17:acl:relcl	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	existência	existência	NOUN	_	Gender=Fem|Number=Sing	19	obj	19:obj	_
+22-23	das	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	24:det	_
+24	contas	conta	NOUN	_	Gender=Fem|Number=Plur	21	nmod	21:nmod:de	_
+25	secretas	secreto	ADJ	_	Gender=Fem|Number=Plur	24	amod	24:amod	SpaceAfter=No
+26	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0015
+# text = Em depoimentos recentes, o empresário detalhou as operações, alegando que o dinheiro era movimentado por meio de offshores em paraísos fiscais, dificultando o rastreamento.
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	depoimentos	depoimento	NOUN	_	Gender=Masc|Number=Plur	7	obl	7:obl:em	_
+3	recentes	recente	ADJ	_	Number=Plur	2	amod	2:amod	SpaceAfter=No
+4	,	,	PUNCT	_	_	2	punct	2:punct	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	empresário	empresário	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+7	detalhou	detalhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	9:det	_
+9	operações	operação	NOUN	_	Gender=Fem|Number=Plur	7	obj	7:obj	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	alegando	alegar	VERB	_	VerbForm=Ger	7	advcl	7:advcl	_
+12	que	que	SCONJ	_	_	16	mark	16:mark	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	16	nsubj:pass	16:nsubj:pass	_
+15	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	16	aux:pass	16:aux:pass	_
+16	movimentado	movimentar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	11	ccomp	11:ccomp	_
+17	por	por	ADP	_	_	18	case	18:case	_
+18	meio	meio	NOUN	_	Gender=Masc|Number=Sing	16	obl	16:obl:por	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	offshores	offshores	X	_	Foreign=Yes	18	nmod	18:nmod:de	_
+21	em	em	ADP	_	_	22	case	22:case	_
+22	paraísos	paraíso	NOUN	_	Gender=Masc|Number=Plur	20	nmod	20:nmod:em	_
+23	fiscais	fiscal	ADJ	_	Number=Plur	22	amod	22:amod	SpaceAfter=No
+24	,	,	PUNCT	_	_	25	punct	25:punct	_
+25	dificultando	dificultar	VERB	_	VerbForm=Ger	16	advcl	16:advcl	_
+26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	rastreamento	rastreamento	NOUN	_	Gender=Masc|Number=Sing	25	obj	25:obj	SpaceAfter=No
+28	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0017
+# text = Joesley afirmou que as negociações com Mantega eram frequentes e envolviam até mesmo outros empresários, como Victor Sandri, do setor de cimentos, que atuaria como intermediário.
+1	Joesley	Joesley	PROPN	_	_	2	nsubj	2:nsubj	_
+2	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	9	mark	9:mark|11:mark	_
+4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	5:det	_
+5	negociações	negociação	NOUN	_	Gender=Fem|Number=Plur	9	nsubj	9:nsubj|11:nsubj	_
+6	com	com	ADP	_	_	7	case	7:case	_
+7	Mantega	Mantega	PROPN	_	_	5	nmod	5:nmod:com	_
+8	eram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	9	cop	9:cop	_
+9	frequentes	frequente	ADJ	_	Number=Plur	2	ccomp	2:ccomp	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	envolviam	envolver	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	9	conj	2:ccomp|9:conj:e	_
+12	até	até	ADV	_	_	15	advmod	15:advmod	_
+13	mesmo	mesmo	ADV	_	_	12	advmod	12:advmod	_
+14	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	15	det	15:det	_
+15	empresários	empresário	NOUN	_	Gender=Masc|Number=Plur	11	obj	11:obj	SpaceAfter=No
+16	,	,	PUNCT	_	_	18	punct	18:punct	_
+17	como	como	ADP	_	_	18	case	18:case	_
+18	Victor	Victor	PROPN	_	_	15	nmod	15:nmod:como|28:nsubj	_
+19	Sandri	Sandri	PROPN	_	_	18	flat:name	18:flat:name	SpaceAfter=No
+20	,	,	PUNCT	_	_	23	punct	23:punct	_
+21-22	do	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	setor	setor	NOUN	_	Gender=Masc|Number=Sing	18	nmod	18:nmod:de	_
+24	de	de	ADP	_	_	25	case	25:case	_
+25	cimentos	cimento	NOUN	_	Gender=Masc|Number=Plur	23	nmod	23:nmod:de	SpaceAfter=No
+26	,	,	PUNCT	_	_	23	punct	23:punct	_
+27	que	que	PRON	_	PronType=Rel	28	nsubj	18:ref	_
+28	atuaria	atuar	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	18	acl:relcl	18:acl:relcl	_
+29	como	como	ADP	_	_	30	case	30:case	_
+30	intermediário	intermediário	NOUN	_	Gender=Masc|Number=Sing	28	obl	28:obl:como	SpaceAfter=No
+31	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0019
+# text = Eu disse ao ministro que não queria mais envolver intermediários e que poderíamos acertar tudo diretamente.
+1	Eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	2:nsubj	_
+2	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3-4	ao	_	_	_	_	_	_	_	_
+3	a	a	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	ministro	ministro	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:a	_
+6	que	que	SCONJ	_	_	8	mark	8:mark	_
+7	não	não	ADV	_	_	8	advmod	8:advmod	_
+8	queria	querer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	2	ccomp	2:ccomp	_
+9	mais	mais	ADV	_	_	8	advmod	8:advmod	_
+10	envolver	envolver	VERB	_	VerbForm=Inf	8	xcomp	8:xcomp	_
+11	intermediários	intermediário	NOUN	_	Gender=Masc|Number=Plur	10	obj	10:obj	_
+12	e	e	CCONJ	_	_	14	cc	14:cc	_
+13	que	que	SCONJ	_	_	14	mark	14:mark	_
+14	poderíamos	poder	VERB	_	Mood=Cnd|Number=Plur|Person=1|VerbForm=Fin	8	conj	2:ccomp|8:conj:e	_
+15	acertar	acertar	VERB	_	VerbForm=Inf	14	xcomp	14:xcomp	_
+16	tudo	tudo	PRON	_	PronType=Ind	15	obj	15:obj	_
+17	diretamente	diretamente	ADV	_	_	15	advmod	15:advmod	SpaceAfter=No
+18	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0021
+# text = Ele concordou e disse: Confio em você, Joesley.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj|4:nsubj	_
+2	concordou	concordar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	e	e	CCONJ	_	_	4	cc	4:cc	_
+4	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	2:conj:e	SpaceAfter=No
+5	:	:	PUNCT	_	_	6	punct	6:punct	_
+6	Confio	confiar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	ccomp:speech	2:ccomp:speech|4:ccomp:speech	_
+7	em	em	ADP	_	_	8	case	8:case	_
+8	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	6	obl	6:obl:em	SpaceAfter=No
+9	,	,	PUNCT	_	_	10	punct	10:punct	_
+10	Joesley	Joesley	PROPN	_	_	6	vocative	6:vocative	SpaceAfter=No
+11	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0023
+# text = Vamos fazer dessa forma, relatou o empresário.
+1	Vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	aux	2:aux	_
+2	fazer	fazer	VERB	_	VerbForm=Inf	7	ccomp:speech	7:ccomp:speech	_
+3-4	dessa	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	5	det	5:det	_
+5	forma	forma	NOUN	_	Gender=Fem|Number=Sing	2	obl	2:obl:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	2	punct	2:punct	_
+7	relatou	relatar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	empresário	empresário	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	SpaceAfter=No
+10	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0025
+# text = Em 2011, após a eleição de Dilma, Mantega teria ordenado a abertura de uma segunda conta para separar os fundos destinados a ela dos de Lula.
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	2011	2011	NUM	_	NumType=Card	12	obl	12:obl:em	SpaceAfter=No
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
+4	após	após	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	eleição	eleição	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl:após	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	Dilma	Dilma	PROPN	_	_	6	nmod	6:nmod:de	SpaceAfter=No
+9	,	,	PUNCT	_	_	6	punct	6:punct	_
+10	Mantega	Mantega	PROPN	_	_	12	nsubj	12:nsubj	_
+11	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	12	aux	12:aux	_
+12	ordenado	ordenar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	abertura	abertura	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+15	de	de	ADP	_	_	18	case	18:case	_
+16	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+17	segunda	segundo	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	18	amod	18:amod	_
+18	conta	conta	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:de	_
+19	para	para	ADP	_	_	20	mark	20:mark	_
+20	separar	separar	VERB	_	VerbForm=Inf	12	advcl	12:advcl:para	_
+21	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	22:det	_
+22	fundos	fundo	NOUN	_	Gender=Masc|Number=Plur	20	obj	20:obj	_
+23	destinados	destinar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	22	acl	22:acl	_
+24	a	a	ADP	_	_	25	case	25:case	_
+25	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	23	obl	23:obl:a	_
+26-27	dos	_	_	_	_	_	_	_	_
+26	de	de	ADP	_	_	27	case	27:case	_
+27	os	o	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Dem	23	obl	23:obl:de	_
+28	de	de	ADP	_	_	29	case	29:case	_
+29	Lula	Lula	PROPN	_	_	27	nmod	27:nmod:de	SpaceAfter=No
+30	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0027
+# text = Guido foi claro: Essa conta é do Lula.
+1	Guido	Guido	PROPN	_	_	3	nsubj	3:nsubj	_
+2	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	cop	3:cop	_
+3	claro	claro	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+4	:	:	PUNCT	_	_	10	punct	10:punct	_
+5	Essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	6	det	6:det	_
+6	conta	conta	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	10:nsubj	_
+7	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	Lula	Lula	PROPN	_	_	3	parataxis	3:parataxis	SpaceAfter=No
+11	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0029
+# text = Abra outra para Dilma, narrou Joesley.
+1	Abra	abrir	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	6	ccomp:speech	6:ccomp:speech	_
+2	outra	outro	PRON	_	Gender=Fem|Number=Sing|PronType=Ind	1	obj	1:obj	_
+3	para	para	ADP	_	_	4	case	4:case	_
+4	Dilma	Dilma	PROPN	_	_	1	obl	1:obl:para	SpaceAfter=No
+5	,	,	PUNCT	_	_	1	punct	1:punct	_
+6	narrou	narrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	Joesley	Joesley	PROPN	_	_	6	nsubj	6:nsubj	SpaceAfter=No
+8	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0031
+# text = O empresário também relatou encontros tensos com os ex-presidentes, onde teria discutido abertamente o esquema de financiamento.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	empresário	empresário	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+3	também	também	ADV	_	_	4	advmod	4:advmod	_
+4	relatou	relatar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	encontros	encontro	NOUN	_	Gender=Masc|Number=Plur	4	obj	4:obj|13:obl	_
+6	tensos	tenso	ADJ	_	Gender=Masc|Number=Plur	5	amod	5:amod	_
+7	com	com	ADP	_	_	9	case	9:case	_
+8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	9:det	_
+9	ex-presidentes	ex-presidente	NOUN	_	Number=Plur	5	nmod	5:nmod:com	SpaceAfter=No
+10	,	,	PUNCT	_	_	13	punct	13:punct	_
+11	onde	onde	ADV	_	_	13	advmod	5:ref	_
+12	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	13	aux	13:aux	_
+13	discutido	discutir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	5	acl:relcl	5:acl:relcl	_
+14	abertamente	abertamente	ADV	_	_	13	advmod	13:advmod	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	esquema	esquema	NOUN	_	Gender=Masc|Number=Sing	13	obj	13:obj	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	financiamento	financiamento	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod:de	SpaceAfter=No
+19	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0033
+# text = Em 2014, durante uma reunião no Instituto Lula, Joesley teria alertado Lula sobre a exposição e os riscos envolvidos.
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	2014	2014	NUM	_	NumType=Card	14	obl	14:obl:em	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	durante	durante	ADP	_	_	6	case	6:case	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	reunião	reunião	NOUN	_	Gender=Fem|Number=Sing	14	obl	14:obl:durante	_
+7-8	no	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	Instituto	Instituto	PROPN	_	_	6	nmod	6:nmod:em	_
+10	Lula	Lula	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+11	,	,	PUNCT	_	_	6	punct	6:punct	_
+12	Joesley	Joesley	PROPN	_	_	14	nsubj	14:nsubj	_
+13	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	14	aux	14:aux	_
+14	alertado	alertar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+15	Lula	Lula	PROPN	_	_	14	obj	14:obj	_
+16	sobre	sobre	ADP	_	_	18	case	18:case|21:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	exposição	exposição	NOUN	_	Gender=Fem|Number=Sing	14	obl	14:obl:sobre	_
+19	e	e	CCONJ	_	_	21	cc	21:cc	_
+20	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	21:det	_
+21	riscos	risco	NOUN	_	Gender=Masc|Number=Plur	18	conj	14:obl:sobre|18:conj:e	_
+22	envolvidos	envolver	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	21	acl	21:acl	SpaceAfter=No
+23	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0035
+# text = "Lula apenas me olhou e não disse nada, mas entendi que ele estava ciente de tudo", afirmou.
+1	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+2	Lula	Lula	PROPN	_	_	5	nsubj	5:nsubj|8:nsubj	_
+3	apenas	apenas	ADV	_	_	5	advmod	5:advmod	_
+4	me	me	PRON	_	Case=Dat|Number=Sing|Person=1|PronType=Prs	5	obj	5:obj	_
+5	olhou	olhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	21	ccomp:speech	21:ccomp:speech	_
+6	e	e	CCONJ	_	_	8	cc	8:cc	_
+7	não	não	ADV	_	_	8	advmod	8:advmod	_
+8	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	conj	5:conj:e|21:ccomp:speech	_
+9	nada	nada	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	8	obj	8:obj	SpaceAfter=No
+10	,	,	PUNCT	_	_	12	punct	12:punct	_
+11	mas	mas	CCONJ	_	_	12	cc	12:cc	_
+12	entendi	entender	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	5	conj	5:conj:mas|21:ccomp:speech	_
+13	que	que	SCONJ	_	_	16	mark	16:mark	_
+14	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	nsubj	16:nsubj	_
+15	estava	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	16	cop	16:cop	_
+16	ciente	ciente	ADJ	_	Number=Sing	12	ccomp	12:ccomp	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	tudo	tudo	PRON	_	PronType=Ind	16	obl	16:obl:de	SpaceAfter=No
+19	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+20	,	,	PUNCT	_	_	5	punct	5:punct	_
+21	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+22	.	.	PUNCT	_	_	21	punct	21:punct	_
+
+# sent_id = S0037
+# text = Já com Dilma, em um encontro no Palácio do Planalto, a conversa teria sido mais direta.
+1	Já	já	CCONJ	_	_	20	cc	20:cc	_
+2	com	com	ADP	_	_	3	case	3:case	_
+3	Dilma	Dilma	PROPN	_	_	20	obl	20:obl:com	SpaceAfter=No
+4	,	,	PUNCT	_	_	7	punct	7:punct	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	encontro	encontro	NOUN	_	Gender=Masc|Number=Sing	20	obl	20:obl:em	_
+8-9	no	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	Palácio	Palácio	PROPN	_	_	7	nmod	7:nmod:em	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	Planalto	Planalto	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+14	,	,	PUNCT	_	_	7	punct	7:punct	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	conversa	conversa	NOUN	_	Gender=Fem|Number=Sing	20	nsubj	20:nsubj	_
+17	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	20	aux	20:aux	_
+18	sido	ser	AUX	_	Gender=Masc|Number=Sing|VerbForm=Part	20	cop	20:cop	_
+19	mais	mais	ADV	_	_	20	advmod	20:advmod	_
+20	direta	direto	ADJ	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+21	.	.	PUNCT	_	_	20	punct	20:punct	_
+
+# sent_id = S0039
+# text = Presidenta, estamos falando de mais de 300 milhões já transferidos.
+1	Presidenta	presidenta	NOUN	_	Gender=Fem|Number=Sing	4	vocative	4:vocative	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	estamos	estar	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	4	aux	4:aux	_
+4	falando	falar	VERB	_	VerbForm=Ger	0	root	0:root	_
+5	de	de	ADP	_	_	9	case	9:case	_
+6	mais	mais	ADV	_	ExtPos=ADV	8	advmod	8:advmod	_
+7	de	de	ADP	_	_	6	fixed	6:fixed	_
+8	300	300	NUM	_	NumType=Card	9	nummod	9:nummod	_
+9	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	4	obl	4:obl:de	_
+10	já	já	ADV	_	_	11	advmod	11:advmod	_
+11	transferidos	transferir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	9	acl	9:acl	SpaceAfter=No
+12	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0041
+# text = A senhora sabe dos riscos, né?
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	senhora	senhor	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_
+3	sabe	saber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4-5	dos	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	6:det	_
+6	riscos	risco	NOUN	_	Gender=Masc|Number=Plur	3	obl	3:obl:de	SpaceAfter=No
+7	,	,	PUNCT	_	_	3	punct	3:punct	_
+8	né	né	INTJ	_	_	3	discourse	3:discourse	SpaceAfter=No
+9	?	?	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0043
+# text = Mas o Edinho [Silva] está pedindo mais R$ 50 milhões para a campanha de Fernando Pimentel.
+1	Mas	mas	CCONJ	_	_	8	cc	8:cc	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	Edinho	Edinho	PROPN	_	_	8	nsubj	8:nsubj	_
+4	[	[	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+5	Silva	Silva	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+6	]	]	PUNCT	_	_	5	punct	5:punct	_
+7	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	8:aux	_
+8	pedindo	pedir	VERB	_	VerbForm=Ger	0	root	0:root	_
+9	mais	mais	ADV	_	_	12	advmod	12:advmod	_
+10	R$	R$	SYM	_	_	12	nmod	12:nmod	_
+11	50	50	NUM	_	NumType=Card	12	nummod	12:nummod	_
+12	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	8	obj	8:obj	_
+13	para	para	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	campanha	campanha	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:para	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	Fernando	Fernando	PROPN	_	_	15	nmod	15:nmod:de	_
+18	Pimentel	Pimentel	PROPN	_	_	17	flat:name	17:flat:name	SpaceAfter=No
+19	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0045
+# text = A senhora autoriza?
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	senhora	senhor	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_
+3	autoriza	autorizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+4	?	?	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0047
+# text = , teria perguntado Joesley, recebendo um sim enfático de Dilma.
+1	,	,	PUNCT	_	_	3	punct	3:punct	_
+2	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	3	aux	3:aux	_
+3	perguntado	perguntar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+4	Joesley	Joesley	PROPN	_	_	3	obj	3:obj	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	recebendo	receber	VERB	_	VerbForm=Ger	3	advcl	3:advcl	_
+7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	sim	sim	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+9	enfático	enfático	ADJ	_	Gender=Masc|Number=Sing	8	amod	8:amod	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	Dilma	Dilma	PROPN	_	_	8	nmod	8:nmod:de	SpaceAfter=No
+12	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0049
+# text = As defesas de Lula, Dilma, Mantega, Pimentel e Sandri negaram todas as acusações, alegando falta de provas e que as declarações de Joesley visam apenas obter benefícios judiciais.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	defesas	defesa	NOUN	_	Gender=Fem|Number=Plur	13	nsubj	13:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case|6:case|8:case|10:case|12:case	_
+4	Lula	Lula	PROPN	_	_	2	nmod	2:nmod:de	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	Dilma	Dilma	PROPN	_	_	4	conj	2:nmod:de|4:conj:e	SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	8:punct	_
+8	Mantega	Mantega	PROPN	_	_	4	conj	2:nmod:de|4:conj:e	SpaceAfter=No
+9	,	,	PUNCT	_	_	10	punct	10:punct	_
+10	Pimentel	Pimentel	PROPN	_	_	4	conj	2:nmod:de|4:conj:e	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	Sandri	Sandri	PROPN	_	_	4	conj	2:nmod:de|4:conj:e	_
+13	negaram	negar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	todas	todo	DET	_	Gender=Fem|Number=Plur|PronType=Ind	16	det	16:det	_
+15	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	16:det	_
+16	acusações	acusação	NOUN	_	Gender=Fem|Number=Plur	13	obj	13:obj	SpaceAfter=No
+17	,	,	PUNCT	_	_	18	punct	18:punct	_
+18	alegando	alegar	VERB	_	VerbForm=Ger	13	advcl	13:advcl	_
+19	falta	falta	NOUN	_	Gender=Fem|Number=Sing	18	obj	18:obj	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	provas	prova	NOUN	_	Gender=Fem|Number=Plur	19	nmod	19:nmod:de	_
+22	e	e	CCONJ	_	_	28	cc	28:cc	_
+23	que	que	SCONJ	_	_	28	mark	28:mark	_
+24	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	25:det	_
+25	declarações	declaração	NOUN	_	Gender=Fem|Number=Plur	28	nsubj	28:nsubj|30:nsubj	_
+26	de	de	ADP	_	_	27	case	27:case	_
+27	Joesley	Joesley	PROPN	_	_	25	nmod	25:nmod:de	_
+28	visam	visar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	conj	13:advcl:que|18:conj:e	_
+29	apenas	apenas	ADV	_	_	30	advmod	30:advmod	_
+30	obter	obter	VERB	_	VerbForm=Inf	28	xcomp	28:xcomp	_
+31	benefícios	benefício	NOUN	_	Gender=Masc|Number=Plur	30	obj	30:obj	_
+32	judiciais	judicial	ADJ	_	Number=Plur	31	amod	31:amod	SpaceAfter=No
+33	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0051
+# text = A defesa de Lula destacou que a Operação Lava Jato já investigou profundamente a vida financeira do ex-presidente sem encontrar irregularidades.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	defesa	defesa	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Lula	Lula	PROPN	_	_	2	nmod	2:nmod:de	_
+5	destacou	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	que	que	SCONJ	_	_	12	mark	12:mark	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	Operação	Operação	PROPN	_	_	12	nsubj	12:nsubj	_
+9	Lava	Lava	PROPN	_	_	8	flat:name	8:flat:name	_
+10	Jato	Jato	PROPN	_	_	8	flat:name	8:flat:name	_
+11	já	já	ADV	_	_	12	advmod	12:advmod	_
+12	investigou	investigar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	ccomp	5:ccomp	_
+13	profundamente	profundamente	ADV	_	_	12	advmod	12:advmod	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	vida	vida	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+16	financeira	financeiro	ADJ	_	Gender=Fem|Number=Sing	15	amod	15:amod	_
+17-18	do	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	ex-presidente	ex-presidente	NOUN	_	Number=Sing	15	nmod	15:nmod:de	_
+20	sem	sem	ADP	_	_	21	mark	21:mark	_
+21	encontrar	encontrar	VERB	_	VerbForm=Inf	12	advcl	12:advcl:sem	_
+22	irregularidades	irregularidade	NOUN	_	Gender=Fem|Number=Plur	21	obj	21:obj	SpaceAfter=No
+23	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0053
+# text = A assessoria de Dilma não respondeu aos contatos da imprensa, enquanto o PT reiterou que todas as doações foram legais e declaradas.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	assessoria	assessoria	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Dilma	Dilma	PROPN	_	_	2	nmod	2:nmod:de	_
+5	não	não	ADV	_	_	6	advmod	6:advmod	_
+6	respondeu	responder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7-8	aos	_	_	_	_	_	_	_	_
+7	a	a	ADP	_	_	9	case	9:case	_
+8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	9:det	_
+9	contatos	contato	NOUN	_	Gender=Masc|Number=Plur	6	obl	6:obl:a	_
+10-11	da	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	imprensa	imprensa	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:de	SpaceAfter=No
+13	,	,	PUNCT	_	_	17	punct	17:punct	_
+14	enquanto	enquanto	SCONJ	_	_	17	mark	17:mark	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	PT	PT	PROPN	_	_	17	nsubj	17:nsubj	_
+17	reiterou	reiterar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	advcl	6:advcl:enquanto	_
+18	que	que	SCONJ	_	_	23	mark	23:mark|25:mark	_
+19	todas	todo	DET	_	Gender=Fem|Number=Plur|PronType=Ind	21	det	21:det	_
+20	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	21	det	21:det	_
+21	doações	doação	NOUN	_	Gender=Fem|Number=Plur	23	nsubj	23:nsubj|25:nsubj:pass	_
+22	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	23	cop	23:cop|25:cop	_
+23	legais	legal	ADJ	_	Number=Plur	17	ccomp	17:ccomp	_
+24	e	e	CCONJ	_	_	25	cc	25:cc	_
+25	declaradas	declarar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	23	conj	17:ccomp|23:conj:e	SpaceAfter=No
+26	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0055
+# text = A defesa de Guido Mantega classificou as acusações como infundadas, enfatizando que Joesley não apresentou evidências concretas.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	defesa	defesa	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Guido	Guido	PROPN	_	_	2	nmod	2:nmod:de	_
+5	Mantega	Mantega	PROPN	_	_	4	flat:name	4:flat:name	_
+6	classificou	classificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	8:det	_
+8	acusações	acusação	NOUN	_	Gender=Fem|Number=Plur	6	obj	6:obj	_
+9	como	como	ADP	_	_	10	case	10:case	_
+10	infundadas	infundado	ADJ	_	Gender=Fem|Number=Plur	6	obl	6:obl:como	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	enfatizando	enfatizar	VERB	_	VerbForm=Ger	6	advcl	6:advcl	_
+13	que	que	SCONJ	_	_	16	mark	16:mark	_
+14	Joesley	Joesley	PROPN	_	_	16	nsubj	16:nsubj	_
+15	não	não	ADV	_	_	16	advmod	16:advmod	_
+16	apresentou	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	ccomp	12:ccomp	_
+17	evidências	evidência	NOUN	_	Gender=Fem|Number=Plur	16	obj	16:obj	_
+18	concretas	concreto	ADJ	_	Gender=Fem|Number=Plur	17	amod	17:amod	SpaceAfter=No
+19	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0057
+# text = O caso promete novos desdobramentos, com a expectativa de que os comprovantes financeiros apresentados por Joesley possam confirmar ou refutar suas alegações explosivas.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	caso	caso	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	promete	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	novos	novo	ADJ	_	Gender=Masc|Number=Plur	5	amod	5:amod	_
+5	desdobramentos	desdobramento	NOUN	_	Gender=Masc|Number=Plur	3	obj	3:obj	SpaceAfter=No
+6	,	,	PUNCT	_	_	9	punct	9:punct	_
+7	com	com	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	expectativa	expectativa	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:com	_
+10	de	de	ADP	_	ExtPos=SCONJ	18	mark	18:mark	_
+11	que	que	SCONJ	_	_	10	fixed	10:fixed	_
+12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	13:det	_
+13	comprovantes	comprovante	NOUN	_	Number=Plur	18	nsubj	18:nsubj|19:nsubj|21:nsubj	_
+14	financeiros	financeiro	ADJ	_	Gender=Masc|Number=Plur	13	amod	13:amod	_
+15	apresentados	apresentar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	13	acl	13:acl	_
+16	por	por	ADP	_	_	17	case	17:case	_
+17	Joesley	Joesley	PROPN	_	_	15	obl:agent	15:obl:agent	_
+18	possam	possam	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	acl	9:acl:de_que	_
+19	confirmar	confirmar	VERB	_	VerbForm=Inf	18	xcomp	18:xcomp	_
+20	ou	ou	CCONJ	_	_	21	cc	21:cc	_
+21	refutar	refutar	VERB	_	VerbForm=Inf	19	conj	18:xcomp|19:conj:ou	_
+22	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	23	det	23:det	_
+23	alegações	alegação	NOUN	_	Gender=Fem|Number=Plur	19	obj	19:obj|21:obj	_
+24	explosivas	explosivo	ADJ	_	Gender=Fem|Number=Plur	23	amod	23:amod	SpaceAfter=No
+25	.	.	PUNCT	_	_	3	punct	3:punct	_

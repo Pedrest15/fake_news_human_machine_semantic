@@ -1,0 +1,497 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Bomba!
+1	Bomba	bomba	VERB	_	Number=Sing|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+2	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Bitcoin pode valer mais que ouro em 2024, afirmam especialistas.
+1	Bitcoin	Bitcoin	PROPN	_	_	2	nsubj	2:nsubj|3:nsubj	_
+2	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	ccomp:speech	10:ccomp:speech	_
+3	valer	valer	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	_
+4	mais	mais	ADV	_	_	3	advmod	3:advmod	_
+5	que	que	SCONJ	_	_	6	mark	6:mark	_
+6	ouro	ouro	NOUN	_	Gender=Masc|Number=Sing	3	advcl	3:advcl:que	_
+7	em	em	ADP	_	_	8	case	8:case	_
+8	2024	2024	NUM	_	NumType=Card	3	obl	3:obl:em	SpaceAfter=No
+9	,	,	PUNCT	_	_	2	punct	2:punct	_
+10	afirmam	afirmar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+11	especialistas	especialista	NOUN	_	Number=Plur	10	nsubj	10:nsubj	SpaceAfter=No
+12	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0005
+# text = Investidores estão em frenesi com a nova moeda digital que promete revolucionar o mercado financeiro global.
+1	Investidores	investidor	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	4:nsubj	_
+2	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+3	em	em	ADP	_	_	4	case	4:case	_
+4	frenesi	frenesi	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+5	com	com	ADP	_	_	8	case	8:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+7	nova	novo	ADJ	_	Gender=Fem|Number=Sing	8	amod	8:amod	_
+8	moeda	moeda	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:com|11:nsubj|12:nsubj	_
+9	digital	digital	ADJ	_	Number=Sing	8	amod	8:amod	_
+10	que	que	PRON	_	PronType=Rel	11	nsubj	8:ref	_
+11	promete	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	8:acl:relcl	_
+12	revolucionar	revolucionar	VERB	_	VerbForm=Inf	11	xcomp	11:xcomp	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	mercado	mercado	NOUN	_	Gender=Masc|Number=Sing	12	obj	12:obj	_
+15	financeiro	financeiro	ADJ	_	Gender=Masc|Number=Sing	14	amod	14:amod	_
+16	global	global	ADJ	_	Number=Sing	14	amod	14:amod	SpaceAfter=No
+17	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0007
+# text = A euforia é palpável, com histórias de novos milionários surgindo diariamente.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	euforia	euforia	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+4	palpável	palpável	ADJ	_	Number=Sing	0	root	0:root	SpaceAfter=No
+5	,	,	PUNCT	_	_	7	punct	7:punct	_
+6	com	com	ADP	_	_	7	case	7:case	_
+7	histórias	história	NOUN	_	Gender=Fem|Number=Plur	4	obl	4:obl:com	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	novos	novo	ADJ	_	Gender=Masc|Number=Plur	10	amod	10:amod	_
+10	milionários	milionário	NOUN	_	Gender=Masc|Number=Plur	7	nmod	7:nmod:de	_
+11	surgindo	surgir	VERB	_	VerbForm=Ger	7	acl	7:acl	_
+12	diariamente	diariamente	ADV	_	_	11	advmod	11:advmod	SpaceAfter=No
+13	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0009
+# text = No entanto, alguns alertam: será que estamos diante de uma nova bolha?
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	ExtPos=CCONJ	6	cc	6:cc	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	1:fixed	_
+3	entanto	entanto	NOUN	_	Gender=Masc|Number=Sing	1	fixed	1:fixed	SpaceAfter=No
+4	,	,	PUNCT	_	_	1	punct	1:punct	_
+5	alguns	algum	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	6	nsubj	6:nsubj	_
+6	alertam	alertar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+7	:	:	PUNCT	_	_	11	punct	11:punct	_
+8	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	11	discourse	11:discourse	_
+9	que	que	SCONJ	_	_	11	discourse	11:discourse	_
+10	estamos	estar	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	11	cop	11:cop	_
+11	diante	diante	ADV	_	_	6	ccomp:speech	6:ccomp:speech	_
+12	de	de	ADP	_	_	15	case	15:case	_
+13	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+14	nova	novo	ADJ	_	Gender=Fem|Number=Sing	15	amod	15:amod	_
+15	bolha	bolha	NOUN	_	Gender=Fem|Number=Sing	11	obl	11:obl:de	SpaceAfter=No
+16	?	?	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0011
+# text = O professor de economia da Unicamp, Fernando Nogueira da Costa, conhecido por prever crises financeiras, afirma que o Bitcoin segue um roteiro clássico de bolhas especulativas.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	professor	professor	NOUN	_	Gender=Masc|Number=Sing	21	nsubj	21:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	economia	economia	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+5-6	da	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	Unicamp	Unicamp	PROPN	_	_	2	nmod	2:nmod:de	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	Fernando	Fernando	PROPN	_	_	2	appos	2:appos	_
+10	Nogueira	Nogueira	PROPN	_	_	9	flat:name	9:flat:name	_
+11-12	da	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	Costa	Costa	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+14	,	,	PUNCT	_	_	9	punct	9:punct	_
+15	conhecido	conhecido	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	2	amod	2:amod	_
+16	por	por	ADP	_	_	17	mark	17:mark	_
+17	prever	prever	VERB	_	VerbForm=Inf	15	acl	15:acl:por	_
+18	crises	crise	NOUN	_	Gender=Fem|Number=Plur	17	obj	17:obj	_
+19	financeiras	financeiro	ADJ	_	Gender=Fem|Number=Plur	18	amod	18:amod	SpaceAfter=No
+20	,	,	PUNCT	_	_	9	punct	9:punct	_
+21	afirma	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+22	que	que	SCONJ	_	_	25	mark	25:mark	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	Bitcoin	Bitcoin	PROPN	_	_	25	nsubj	25:nsubj	_
+25	segue	seguir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	ccomp	21:ccomp	_
+26	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	roteiro	roteiro	NOUN	_	Gender=Masc|Number=Sing	25	obj	25:obj	_
+28	clássico	clássico	ADJ	_	Gender=Masc|Number=Sing	27	amod	27:amod	_
+29	de	de	ADP	_	_	30	case	30:case	_
+30	bolhas	bolha	NOUN	_	Gender=Fem|Number=Plur	27	nmod	27:nmod:de	_
+31	especulativas	especulativo	ADJ	_	Gender=Fem|Number=Plur	30	amod	30:amod	SpaceAfter=No
+32	.	.	PUNCT	_	_	21	punct	21:punct	_
+
+# sent_id = S0013
+# text = "É um movimento emocional e imaginário, onde a crença no ativo o torna extremamente valioso", diz ele.
+1	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+2	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	movimento	movimento	NOUN	_	Gender=Masc|Number=Sing	21	ccomp:speech	16:obl|21:ccomp:speech	_
+5	emocional	emocional	ADJ	_	Number=Sing	4	amod	4:amod	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	imaginário	imaginário	ADJ	_	Gender=Masc|Number=Sing	5	conj	4:amod|5:conj:e	SpaceAfter=No
+8	,	,	PUNCT	_	_	16	punct	16:punct	_
+9	onde	onde	ADV	_	_	16	advmod	4:ref	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	crença	crença	NOUN	_	Gender=Fem|Number=Sing	16	nsubj	16:nsubj	_
+12-13	no	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	ativo	ativo	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:em	_
+15	o	o	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	obj	16:obj|18:nsubj	_
+16	torna	tornar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	4:acl:relcl	_
+17	extremamente	extremamente	ADV	_	_	18	advmod	18:advmod	_
+18	valioso	valioso	ADJ	_	Gender=Masc|Number=Sing	16	xcomp	16:xcomp	SpaceAfter=No
+19	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+20	,	,	PUNCT	_	_	4	punct	4:punct	_
+21	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+22	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	21	nsubj	21:nsubj	SpaceAfter=No
+23	.	.	PUNCT	_	_	21	punct	21:punct	_
+
+# sent_id = S0015
+# text = A mais recente previsão bombástica sugere que o preço do Bitcoin pode atingir US$ 500.000, superando o valor do ouro.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+2	mais	mais	ADV	_	_	3	advmod	3:advmod	_
+3	recente	recente	ADJ	_	Number=Sing	4	amod	4:amod	_
+4	previsão	previsão	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj	_
+5	bombástica	bombástico	ADJ	_	Gender=Fem|Number=Sing	4	amod	4:amod	_
+6	sugere	sugerir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	que	que	SCONJ	_	_	13	mark	13:mark	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	preço	preço	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	13:nsubj|14:nsubj	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	Bitcoin	Bitcoin	PROPN	_	_	9	nmod	9:nmod:de	_
+13	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	ccomp	6:ccomp	_
+14	atingir	atingir	VERB	_	VerbForm=Inf	13	xcomp	13:xcomp	_
+15	US$	US$	SYM	_	_	14	obj	14:obj	_
+16	500.000	500.000	NUM	_	NumType=Card	15	nummod	15:nummod	SpaceAfter=No
+17	,	,	PUNCT	_	_	18	punct	18:punct	_
+18	superando	superar	VERB	_	VerbForm=Ger	14	advcl	14:advcl	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	valor	valor	NOUN	_	Gender=Masc|Number=Sing	18	obj	18:obj	_
+21-22	do	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	ouro	ouro	NOUN	_	Gender=Masc|Number=Sing	20	nmod	20:nmod:de	SpaceAfter=No
+24	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0017
+# text = Esse otimismo tem atraído até mesmo investidores conservadores, que veem a criptomoeda como um porto seguro contra a inflação.
+1	Esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	2:det	_
+2	otimismo	otimismo	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+3	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	4:aux	_
+4	atraído	atraír	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+5	até	até	ADV	_	_	7	advmod	7:advmod	_
+6	mesmo	mesmo	ADV	_	_	7	advmod	7:advmod	_
+7	investidores	investidor	NOUN	_	Gender=Masc|Number=Plur	4	obj	4:obj|11:nsubj	_
+8	conservadores	conservador	ADJ	_	Gender=Masc|Number=Plur	7	amod	7:amod	SpaceAfter=No
+9	,	,	PUNCT	_	_	11	punct	11:punct	_
+10	que	que	PRON	_	PronType=Rel	11	nsubj	7:ref	_
+11	veem	ver	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	7:acl:relcl	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	criptomoeda	criptomoeda	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	_
+14	como	como	ADP	_	_	16	case	16:case	_
+15	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	porto	porto	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:como	_
+17	seguro	seguro	ADJ	_	Gender=Masc|Number=Sing	16	amod	16:amod	_
+18	contra	contra	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	inflação	inflação	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:contra	SpaceAfter=No
+21	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0019
+# text = Mas não é a primeira vez que uma bolha desse tipo chama a atenção.
+1	Mas	mas	CCONJ	_	_	6	cc	6:cc	_
+2	não	não	ADV	_	_	6	advmod	6:advmod	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+5	primeira	primeiro	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	6	amod	6:amod	_
+6	vez	vez	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root|13:obl	_
+7	que	que	PRON	_	PronType=Rel	13	obl	6:ref	_
+8	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	bolha	bolha	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	13:nsubj	_
+10-11	desse	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	12	det	12:det	_
+12	tipo	tipo	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:de	_
+13	chama	chamar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl:relcl	6:acl:relcl	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	atenção	atenção	NOUN	_	Gender=Fem|Number=Sing	13	obj	13:obj	SpaceAfter=No
+16	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0021
+# text = Lembra-se da Mania das Tulipas no século XVII?
+1-2	Lembra-se	_	_	_	_	_	_	_	_
+1	Lembra	lembrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	1	expl	1:expl	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	Mania	Mania	PROPN	_	_	1	obl	1:obl:de	_
+6-7	das	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	8:det	_
+8	Tulipas	Tulipas	PROPN	_	_	5	flat:name	5:flat:name	_
+9-10	no	_	_	_	_	_	_	_	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	século	século	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:em	_
+12	XVII	xvii	NUM	_	NumType=Card	11	nmod	11:nmod	SpaceAfter=No
+13	?	?	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0023
+# text = Bulbos de tulipas chegavam a custar o equivalente a casas inteiras!
+1	Bulbos	bulbo	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	4:nsubj|6:nsubj	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	tulipas	tulipa	NOUN	_	Gender=Fem|Number=Plur	1	nmod	1:nmod:de	_
+4	chegavam	chegar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+5	a	a	ADP	_	_	6	mark	6:mark	_
+6	custar	custar	VERB	_	VerbForm=Inf	4	xcomp	4:xcomp	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	equivalente	equivalente	NOUN	_	Number=Sing	6	obj	6:obj	_
+9	a	a	ADP	_	_	10	case	10:case	_
+10	casas	casa	NOUN	_	Gender=Fem|Number=Plur	8	nmod	8:nmod:a	_
+11	inteiras	inteiro	ADJ	_	Gender=Fem|Number=Plur	10	amod	10:amod	SpaceAfter=No
+12	!	!	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0025
+# text = Contratos futuros foram inventados para permitir transações o ano todo, mas a descoberta de títulos falsos levou ao colapso.
+1	Contratos	contrato	NOUN	_	Gender=Masc|Number=Plur	4	nsubj:pass	4:nsubj:pass	_
+2	futuros	futuro	ADJ	_	Gender=Masc|Number=Plur	1	amod	1:amod	_
+3	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	inventados	inventar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5	para	para	ADP	_	_	6	mark	6:mark	_
+6	permitir	permitir	VERB	_	VerbForm=Inf	4	advcl	4:advcl:para	_
+7	transações	transação	NOUN	_	Gender=Fem|Number=Plur	6	obj	6:obj	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	ano	ano	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+10	todo	todo	DET	_	Gender=Masc|Number=Sing|PronType=Ind	9	det	9:det	SpaceAfter=No
+11	,	,	PUNCT	_	_	18	punct	18:punct	_
+12	mas	mas	CCONJ	_	_	18	cc	18:cc	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	descoberta	descoberto	NOUN	_	Gender=Fem|Number=Sing	18	nsubj	18:nsubj	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	títulos	título	NOUN	_	Gender=Masc|Number=Plur	14	nmod	14:nmod:de	_
+17	falsos	falso	ADJ	_	Gender=Masc|Number=Plur	16	amod	16:amod	_
+18	levou	levar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	conj	4:conj:mas	_
+19-20	ao	_	_	_	_	_	_	_	_
+19	a	a	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	colapso	colapso	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:a	SpaceAfter=No
+22	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0027
+# text = Ou a Grande Depressão de 1929, quando ações infladas artificialmente desmoronaram após o aumento das taxas de juros pelo Fed, levando bancos à falência e desencadeando uma crise mundial?
+1	Ou	ou	CCONJ	_	_	3	cc	3:cc	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	Grande	Grande	PROPN	_	_	0	root	0:root	_
+4	Depressão	Depressão	PROPN	_	_	3	flat:name	3:flat:name	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	1929	1929	NUM	_	NumType=Card	3	nmod	3:nmod:de	SpaceAfter=No
+7	,	,	PUNCT	_	_	12	punct	12:punct	_
+8	quando	quando	ADV	_	_	12	mark	12:mark	_
+9	ações	ação	NOUN	_	Gender=Fem|Number=Plur	12	nsubj	12:nsubj	_
+10	infladas	inflar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	9	acl	9:acl	_
+11	artificialmente	artificialmente	ADV	_	_	10	advmod	10:advmod	_
+12	desmoronaram	desmoronar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_
+13	após	após	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	aumento	aumento	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:após	_
+16-17	das	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	18:det	_
+18	taxas	taxa	NOUN	_	Gender=Fem|Number=Plur	15	nmod	15:nmod:de	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	juros	juro	NOUN	_	Gender=Masc|Number=Plur	18	nmod	18:nmod:de	_
+21-22	pelo	_	_	_	_	_	_	_	_
+21	por	por	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	Fed	Fed	PROPN	_	_	15	nmod	15:nmod:por	SpaceAfter=No
+24	,	,	PUNCT	_	_	25	punct	25:punct	_
+25	levando	levar	VERB	_	VerbForm=Ger	12	advcl	12:advcl	_
+26	bancos	banco	NOUN	_	Gender=Masc|Number=Plur	25	obj	25:obj	_
+27-28	à	_	_	_	_	_	_	_	_
+27	a	a	ADP	_	_	29	case	29:case	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	falência	falência	NOUN	_	Gender=Fem|Number=Sing	25	obl	25:obl:a	_
+30	e	e	CCONJ	_	_	31	cc	31:cc	_
+31	desencadeando	desencadear	VERB	_	VerbForm=Ger	25	conj	12:advcl|25:conj:e	_
+32	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	33	det	33:det	_
+33	crise	crise	NOUN	_	Gender=Fem|Number=Sing	31	obj	31:obj	_
+34	mundial	mundial	ADJ	_	Number=Sing	33	amod	33:amod	SpaceAfter=No
+35	?	?	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0029
+# text = E quem poderia esquecer a bolha das "ponto com" no início dos anos 2000?
+1	E	e	CCONJ	_	_	3	cc	3:cc	_
+2	quem	quem	PRON	_	PronType=Int	3	nsubj	3:nsubj|4:nsubj	_
+3	poderia	poder	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+4	esquecer	esquecer	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	bolha	bolha	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+7-8	das	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	10	case	10:case	_
+8	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	10:det	_
+9	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+10	ponto	ponto	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de	_
+11	com	com	ADP	_	_	10	case	10:case	SpaceAfter=No
+12	"	"	PUNCT	_	_	10	punct	10:punct	_
+13-14	no	_	_	_	_	_	_	_	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	início	início	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:em	_
+16-17	dos	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	18:det	_
+18	anos	ano	NOUN	_	Gender=Masc|Number=Plur	15	nmod	15:nmod:de	_
+19	2000	2000	NUM	_	NumType=Card	18	nmod	18:nmod	SpaceAfter=No
+20	?	?	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0031
+# text = Empresas como a Webvan e o Yahoo gastaram bilhões em apostas arriscadas na internet, e quando os balanços revelaram a verdade, a Nasdaq perdeu quase 80% do seu valor.
+1	Empresas	empresa	NOUN	_	Gender=Fem|Number=Plur	8	nsubj	8:nsubj	_
+2	como	como	ADP	_	_	4	case	4:case|7:case	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	Webvan	Webvan	PROPN	_	_	1	nmod	1:nmod:como	_
+5	e	e	CCONJ	_	_	7	cc	7:cc	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Yahoo	Yahoo	PROPN	_	_	4	conj	1:nmod:como|4:conj:e	_
+8	gastaram	gastar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	bilhões	bilhão	NOUN	_	Gender=Masc|Number=Plur	8	obj	8:obj	_
+10	em	em	ADP	_	_	11	case	11:case	_
+11	apostas	aposta	NOUN	_	Gender=Fem|Number=Plur	8	obl	8:obl:em	_
+12	arriscadas	arriscado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	11	amod	11:amod	_
+13-14	na	_	_	_	_	_	_	_	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	internet	internet	NOUN	_	Foreign=Yes|Gender=Fem|Number=Sing	11	nmod	11:nmod:em	SpaceAfter=No
+16	,	,	PUNCT	_	_	27	punct	27:punct	_
+17	e	e	CCONJ	_	_	27	cc	27:cc	_
+18	quando	quando	SCONJ	_	_	21	mark	21:mark	_
+19	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	20:det	_
+20	balanços	balanço	NOUN	_	Gender=Masc|Number=Plur	21	nsubj	21:nsubj	_
+21	revelaram	revelar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	27	advcl	27:advcl:quando	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	verdade	verdade	NOUN	_	Gender=Fem|Number=Sing	21	obj	21:obj	SpaceAfter=No
+24	,	,	PUNCT	_	_	21	punct	21:punct	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	Nasdaq	Nasdaq	PROPN	_	_	27	nsubj	27:nsubj	_
+27	perdeu	perder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	conj	8:conj:e	_
+28	quase	quase	ADV	_	_	29	advmod	29:advmod	_
+29	80	80	NUM	_	NumType=Card	30	nummod	30:nummod	SpaceAfter=No
+30	%	%	SYM	_	_	27	obj	27:obj	_
+31-32	do	_	_	_	_	_	_	_	_
+31	de	de	ADP	_	_	34	case	34:case	_
+32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	34:det	_
+33	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	34	det	34:det	_
+34	valor	valor	NOUN	_	Gender=Masc|Number=Sing	30	nmod	30:nmod:de	SpaceAfter=No
+35	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0033
+# text = Agora, a crise imobiliária de 2008 parece estar sendo superada pela "febre do Bitcoin".
+1	Agora	agora	ADV	_	_	8	advmod	8:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	crise	crise	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	8:nsubj|11:nsubj:pass	_
+5	imobiliária	imobiliário	ADJ	_	Gender=Fem|Number=Sing	4	amod	4:amod	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	2008	2008	NUM	_	NumType=Card	4	nmod	4:nmod:de	_
+8	parece	parecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+9	estar	estar	AUX	_	VerbForm=Inf	11	aux	11:aux	_
+10	sendo	ser	AUX	_	VerbForm=Ger	11	aux:pass	11:aux:pass	_
+11	superada	superar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	8	xcomp	8:xcomp	_
+12-13	pela	_	_	_	_	_	_	_	_
+12	por	por	ADP	_	_	15	case	15:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+14	"	"	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+15	febre	febre	NOUN	_	Gender=Fem|Number=Sing	11	obl:agent	11:obl:agent	_
+16-17	do	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	Bitcoin	Bitcoin	PROPN	_	_	15	nmod	15:nmod:de	SpaceAfter=No
+19	"	"	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+20	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0035
+# text = Especialistas advertem que, assim como os empréstimos "subprime" que detonaram a última crise, a volatilidade do Bitcoin pode ser o gatilho para uma catástrofe financeira ainda maior.
+1	Especialistas	especialista	NOUN	_	Number=Plur	2	nsubj	2:nsubj	_
+2	advertem	advertir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	23	mark	23:mark	SpaceAfter=No
+4	,	,	PUNCT	_	_	8	punct	8:punct	_
+5	assim	assim	ADV	_	ExtPos=SCONJ	8	mark	8:mark	_
+6	como	como	SCONJ	_	_	5	fixed	5:fixed	_
+7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	8:det	_
+8	empréstimos	empréstimo	NOUN	_	Gender=Masc|Number=Plur	23	advcl	13:nsubj|23:advcl:assim_como	_
+9	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+10	subprime	subprime	X	_	Foreign=Yes	8	nmod	8:nmod	SpaceAfter=No
+11	"	"	PUNCT	_	_	10	punct	10:punct	_
+12	que	que	PRON	_	PronType=Rel	13	nsubj	8:ref	_
+13	detonaram	detonar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	8	acl:relcl	8:acl:relcl	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+15	última	último	ADJ	_	Gender=Fem|Number=Sing	16	amod	16:amod	_
+16	crise	crise	NOUN	_	Gender=Fem|Number=Sing	13	obj	13:obj	SpaceAfter=No
+17	,	,	PUNCT	_	_	8	punct	8:punct	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	volatilidade	volatilidade	NOUN	_	Gender=Fem|Number=Sing	23	nsubj	23:nsubj|26:nsubj	_
+20-21	do	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	Bitcoin	Bitcoin	PROPN	_	_	19	nmod	19:nmod:de	_
+23	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	2:ccomp	_
+24	ser	ser	AUX	_	VerbForm=Inf	26	cop	26:cop	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	gatilho	gatilho	NOUN	_	Gender=Masc|Number=Sing	23	xcomp	23:xcomp	_
+27	para	para	ADP	_	_	29	case	29:case	_
+28	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	catástrofe	catástrofe	NOUN	_	Gender=Fem|Number=Sing	26	nmod	26:nmod:para	_
+30	financeira	financeiro	ADJ	_	Gender=Fem|Number=Sing	29	amod	29:amod	_
+31	ainda	ainda	ADV	_	_	32	advmod	32:advmod	_
+32	maior	maior	ADJ	_	Number=Sing	29	amod	29:amod	SpaceAfter=No
+33	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0037
+# text = "Todo investidor acredita que pode sair antes da queda, mas a história nos mostra que nem todos conseguem", alerta Costa.
+1	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+2	Todo	todo	DET	_	Gender=Masc|Number=Sing|PronType=Ind	3	det	3:det	_
+3	investidor	investidor	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+4	acredita	acreditar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	ccomp:speech	24:ccomp:speech	_
+5	que	que	SCONJ	_	_	6	mark	6:mark	_
+6	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	ccomp	4:ccomp	_
+7	sair	sair	VERB	_	VerbForm=Inf	6	xcomp	6:xcomp	_
+8	antes	antes	ADV	_	_	7	advmod	7:advmod	_
+9-10	da	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	queda	queda	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:de	SpaceAfter=No
+12	,	,	PUNCT	_	_	17	punct	17:punct	_
+13	mas	mas	CCONJ	_	_	17	cc	17:cc	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	história	história	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	17:nsubj	_
+16	nos	nos	PRON	_	Case=Dat|Number=Plur|Person=1|PronType=Prs	17	iobj	17:iobj	_
+17	mostra	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	4:conj:mas|24:ccomp:speech	_
+18	que	que	SCONJ	_	_	21	mark	21:mark	_
+19	nem	nem	ADV	_	_	20	advmod	20:advmod	_
+20	todos	todo	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	21	nsubj	21:nsubj	_
+21	conseguem	conseguir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	ccomp	17:ccomp	SpaceAfter=No
+22	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+23	,	,	PUNCT	_	_	4	punct	4:punct	_
+24	alerta	alertar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+25	Costa	Costa	PROPN	_	_	24	nsubj	24:nsubj	SpaceAfter=No
+26	.	.	PUNCT	_	_	24	punct	24:punct	_
+
+# sent_id = S0039
+# text = A questão é: quem será o último a apagar a luz do aeroporto desta vez?
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	questão	questão	NOUN	_	Gender=Fem|Number=Sing	7	nsubj:outer	7:nsubj:outer	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	SpaceAfter=No
+4	:	:	PUNCT	_	_	7	punct	7:punct	_
+5	quem	quem	PRON	_	PronType=Int	7	nsubj	7:nsubj	_
+6	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	7	cop	7:cop	_
+7	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	0	root	0:root	_
+8	último	último	ADJ	_	Gender=Masc|Number=Sing	7	amod	7:amod	_
+9	a	a	ADP	_	_	10	mark	10:mark	_
+10	apagar	apagar	VERB	_	VerbForm=Inf	7	acl	7:acl:a	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	luz	luz	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+13-14	do	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	aeroporto	aeroporto	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:de	_
+16-17	desta	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	18	det	18:det	_
+18	vez	vez	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:de	SpaceAfter=No
+19	?	?	PUNCT	_	_	7	punct	7:punct	_

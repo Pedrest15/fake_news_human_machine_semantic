@@ -1,0 +1,756 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = MP de Contas expõe escândalo: Servidores da Assembleia do RS recebem salários milionários sem trabalhar!
+1	MP	MP	PROPN	_	_	4	nsubj	4:nsubj	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	Contas	Contas	PROPN	_	_	1	flat:name	1:flat:name	_
+4	expõe	expor	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	escândalo	escândalo	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	SpaceAfter=No
+6	:	:	PUNCT	_	_	14	punct	14:punct	_
+7	Servidores	servidor	NOUN	_	Gender=Masc|Number=Plur	14	nsubj	14:nsubj	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	Assembleia	Assembleia	PROPN	_	_	7	nmod	7:nmod:de	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	RS	RS	PROPN	_	_	10	nmod	10:nmod:de	_
+14	recebem	receber	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	parataxis	4:parataxis	_
+15	salários	salário	NOUN	_	Gender=Masc|Number=Plur	14	obj	14:obj	_
+16	milionários	milionário	ADJ	_	Gender=Masc|Number=Plur	15	amod	15:amod	_
+17	sem	sem	ADP	_	_	18	mark	18:mark	_
+18	trabalhar	trabalhar	VERB	_	VerbForm=Inf	14	advcl	14:advcl:sem	SpaceAfter=No
+19	!	!	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0003
+# text = Denúncias bombásticas foram destaque no Bom Dia Brasil.
+1	Denúncias	denúncia	NOUN	_	Gender=Fem|Number=Plur	4	nsubj	4:nsubj	_
+2	bombásticas	bombástico	ADJ	_	Gender=Fem|Number=Plur	1	amod	1:amod	_
+3	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	4	cop	4:cop	_
+4	destaque	destaque	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+5-6	no	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Bom	Bom	PROPN	_	_	4	nmod	4:nmod:em	_
+8	Dia	Dia	PROPN	_	_	7	flat:name	7:flat:name	_
+9	Brasil	Brasil	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+10	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0005
+# text = Um dos envolvidos, Daniel Maccari, acumulava função de corretor de imóveis e assessor parlamentar, gerando suspeitas de esquema de "funcionários fantasmas".
+1	Um	um	NUM	_	Gender=Masc|NumType=Card	9	nsubj	9:nsubj	_
+2-3	dos	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	4:det	_
+4	envolvidos	envolvido	NOUN	_	Gender=Masc|Number=Plur	1	nmod	1:nmod:de	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	Daniel	Daniel	PROPN	_	_	4	appos	4:appos	_
+7	Maccari	Maccari	PROPN	_	_	6	flat:name	6:flat:name	SpaceAfter=No
+8	,	,	PUNCT	_	_	6	punct	6:punct	_
+9	acumulava	acumular	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+10	função	função	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+11	de	de	ADP	_	_	12	case	12:case|16:case	_
+12	corretor	corretor	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:de	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	imóveis	imóvel	NOUN	_	Number=Plur	12	nmod	12:nmod:de	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	assessor	assessor	NOUN	_	Gender=Masc|Number=Sing	12	conj	10:nmod:de|12:conj:e	_
+17	parlamentar	parlamentar	ADJ	_	Number=Sing	16	amod	16:amod	SpaceAfter=No
+18	,	,	PUNCT	_	_	19	punct	19:punct	_
+19	gerando	gerar	VERB	_	VerbForm=Ger	9	advcl	9:advcl	_
+20	suspeitas	suspeito	NOUN	_	Gender=Fem|Number=Plur	19	obj	19:obj	_
+21	de	de	ADP	_	_	22	case	22:case	_
+22	esquema	esquema	NOUN	_	Gender=Masc|Number=Sing	20	nmod	20:nmod:de	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	"	"	PUNCT	_	_	25	punct	25:punct	SpaceAfter=No
+25	funcionários	funcionário	NOUN	_	Gender=Masc|Number=Plur	22	nmod	22:nmod:de	_
+26	fantasmas	fantasma	ADJ	_	Gender=Masc|Number=Plur	25	amod	25:amod	SpaceAfter=No
+27	"	"	PUNCT	_	_	25	punct	25:punct	SpaceAfter=No
+28	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0007
+# text = O Ministério Público de Contas do Rio Grande do Sul (MPC-RS) está no centro de uma investigação chocante sobre funcionários da Assembleia Legislativa gaúcha que teriam recebido salários astronômicos sem cumprir suas funções, conforme revelado nesta quinta-feira (24) pelo Bom Dia Brasil.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Ministério	Ministério	PROPN	_	_	19	nsubj	19:nsubj	_
+3	Público	Público	PROPN	_	_	2	flat:name	2:flat:name	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	Contas	Contas	PROPN	_	_	2	flat:name	2:flat:name	_
+6-7	do	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	Rio	Rio	PROPN	_	_	2	flat:name	2:flat:name	_
+9	Grande	Grande	PROPN	_	_	2	flat:name	2:flat:name	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	Sul	Sul	PROPN	_	_	2	flat:name	2:flat:name	_
+13	(	(	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+14	MPC-RS	MPC-RS	PROPN	_	_	2	appos	2:appos	SpaceAfter=No
+15	)	)	PUNCT	_	_	14	punct	14:punct	_
+16	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	cop	19:cop	_
+17-18	no	_	_	_	_	_	_	_	_
+17	em	em	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	centro	centro	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	investigação	investigação	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:de|33:nsubj	_
+23	chocante	chocante	ADJ	_	Number=Sing	22	amod	22:amod	_
+24	sobre	sobre	ADP	_	_	25	case	25:case	_
+25	funcionários	funcionário	NOUN	_	Gender=Masc|Number=Plur	22	nmod	22:nmod:sobre	_
+26-27	da	_	_	_	_	_	_	_	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	Assembleia	Assembleia	PROPN	_	_	25	nmod	25:nmod:de	_
+29	Legislativa	Legislativa	PROPN	_	_	28	flat:name	28:flat:name	_
+30	gaúcha	gaúcho	ADJ	_	Gender=Fem|Number=Sing	28	amod	28:amod	_
+31	que	que	PRON	_	PronType=Rel	33	nsubj	22:ref	_
+32	teriam	ter	AUX	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	33	aux	33:aux	_
+33	recebido	receber	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	22	acl:relcl	22:acl:relcl	_
+34	salários	salário	NOUN	_	Gender=Masc|Number=Plur	33	obj	33:obj	_
+35	astronômicos	astronômico	ADJ	_	Gender=Masc|Number=Plur	34	amod	34:amod	_
+36	sem	sem	ADP	_	_	37	mark	37:mark	_
+37	cumprir	cumprir	VERB	_	VerbForm=Inf	33	advcl	33:advcl:sem	_
+38	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	39	det	39:det	_
+39	funções	função	NOUN	_	Gender=Fem|Number=Plur	37	obj	37:obj	SpaceAfter=No
+40	,	,	PUNCT	_	_	42	punct	42:punct	_
+41	conforme	conforme	SCONJ	_	_	42	mark	42:mark	_
+42	revelado	revelar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	33	advcl	33:advcl:conforme	_
+43-44	nesta	_	_	_	_	_	_	_	_
+43	em	em	ADP	_	_	45	case	45:case	_
+44	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	45	det	45:det	_
+45	quinta-feira	quinta-feira	NOUN	_	Gender=Fem|Number=Sing	42	obl	42:obl:em	_
+46	(	(	PUNCT	_	_	47	punct	47:punct	SpaceAfter=No
+47	24	24	NUM	_	NumType=Card	45	appos	45:appos	SpaceAfter=No
+48	)	)	PUNCT	_	_	47	punct	47:punct	_
+49-50	pelo	_	_	_	_	_	_	_	_
+49	por	por	ADP	_	_	51	case	51:case	_
+50	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	51	det	51:det	_
+51	Bom	Bom	PROPN	_	_	42	obl:agent	42:obl:agent	_
+52	Dia	Dia	PROPN	_	_	51	flat:name	51:flat:name	_
+53	Brasil	Brasil	PROPN	_	_	51	flat:name	51:flat:name	SpaceAfter=No
+54	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0009
+# text = Daniel Maccari, assessor do deputado Álvaro Boésio (PMDB), foi flagrado atuando em uma imobiliária em Farroupilha, na Serra, durante o horário de expediente parlamentar.
+1	Daniel	Daniel	PROPN	_	_	15	nsubj:pass	15:nsubj:pass	_
+2	Maccari	Maccari	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	assessor	assessor	NOUN	_	Gender=Masc|Number=Sing	1	appos	1:appos	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:de	_
+8	Álvaro	Álvaro	PROPN	_	_	7	nmod	7:nmod	_
+9	Boésio	Boésio	PROPN	_	_	8	flat:name	8:flat:name	_
+10	(	(	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+11	PMDB	PMDB	PROPN	_	_	7	parataxis	7:parataxis	SpaceAfter=No
+12	)	)	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+13	,	,	PUNCT	_	_	4	punct	4:punct	_
+14	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	aux:pass	15:aux:pass	_
+15	flagrado	flagrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+16	atuando	atuar	VERB	_	VerbForm=Ger	15	advcl	15:advcl	_
+17	em	em	ADP	_	_	19	case	19:case	_
+18	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	imobiliária	imobiliária	NOUN	_	Gender=Fem|Number=Sing	16	obl	16:obl:em	_
+20	em	em	ADP	_	_	21	case	21:case	_
+21	Farroupilha	Farroupilha	PROPN	_	_	19	nmod	19:nmod:em	SpaceAfter=No
+22	,	,	PUNCT	_	_	25	punct	25:punct	_
+23-24	na	_	_	_	_	_	_	_	_
+23	em	em	ADP	_	_	25	case	25:case	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	Serra	Serra	PROPN	_	_	21	nmod	21:nmod:em	SpaceAfter=No
+26	,	,	PUNCT	_	_	25	punct	25:punct	_
+27	durante	durante	ADP	_	_	29	case	29:case	_
+28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	29:det	_
+29	horário	horário	NOUN	_	Gender=Masc|Number=Sing	16	obl	16:obl:durante	_
+30	de	de	ADP	_	_	31	case	31:case	_
+31	expediente	expediente	NOUN	_	Number=Sing	29	nmod	29:nmod:de	_
+32	parlamentar	parlamentar	ADJ	_	Number=Sing	31	amod	31:amod	SpaceAfter=No
+33	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0011
+# text = Além de não trabalhar na Assembleia, ele teria acumulado um salário de R$ 50 mil mensais, combinado com a atividade de corretagem.
+1	Além	além	ADV	_	_	11	advmod	11:advmod	_
+2	de	de	ADP	_	_	4	mark	4:mark	_
+3	não	não	ADV	_	_	4	advmod	4:advmod	_
+4	trabalhar	trabalhar	VERB	_	VerbForm=Inf	1	acl	1:acl:de	_
+5-6	na	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	Assembleia	Assembleia	PROPN	_	_	4	obl	4:obl:em	SpaceAfter=No
+8	,	,	PUNCT	_	_	1	punct	1:punct	_
+9	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	nsubj	11:nsubj	_
+10	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	11	aux	11:aux	_
+11	acumulado	acumular	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+12	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	salário	salário	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	R$	R$	SYM	_	_	13	nmod	13:nmod:de	_
+16	50	50	NUM	_	NumType=Card	15	nummod	15:nummod	_
+17	mil	mil	NUM	_	NumType=Card	16	flat	16:flat	_
+18	mensais	mensal	ADJ	_	Number=Plur	15	amod	15:amod	SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	20:punct	_
+20	combinado	combinar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	11	advcl	11:advcl	_
+21	com	com	ADP	_	_	23	case	23:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	atividade	atividade	NOUN	_	Gender=Fem|Number=Sing	20	obl	20:obl:com	_
+24	de	de	ADP	_	_	25	case	25:case	_
+25	corretagem	corretagem	NOUN	_	Gender=Fem|Number=Sing	23	nmod	23:nmod:de	SpaceAfter=No
+26	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0013
+# text = De imediato instauramos um processo rigoroso.
+1	De	de	ADP	_	_	2	case	2:case	_
+2	imediato	imediato	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:de	_
+3	instauramos	instaurar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	processo	processo	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	_
+6	rigoroso	rigoroso	ADJ	_	Gender=Masc|Number=Sing	5	amod	5:amod	SpaceAfter=No
+7	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0015
+# text = Estamos desvendando um possível esquema de corrupção, afirmou o procurador-geral do MPC, Geraldo da Camino.
+1	Estamos	estar	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	aux	2:aux	_
+2	desvendando	desvendar	VERB	_	VerbForm=Ger	9	ccomp:speech	9:ccomp:speech	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+4	possível	possível	ADJ	_	Number=Sing	5	amod	5:amod	_
+5	esquema	esquema	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	corrupção	corrupção	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	SpaceAfter=No
+8	,	,	PUNCT	_	_	2	punct	2:punct	_
+9	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	procurador-geral	procurador-geral	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	9:nsubj	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	MPC	MPC	PROPN	_	_	11	nmod	11:nmod:de	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	Geraldo	Geraldo	PROPN	_	_	11	appos	11:appos	_
+17-18	da	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	Camino	Camino	PROPN	_	_	16	flat:name	16:flat:name	SpaceAfter=No
+20	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0017
+# text = Em gravações secretas, Maccari se mostrou disponível para negociações imobiliárias, sem jamais se identificar como funcionário do parlamento.
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	gravações	gravação	NOUN	_	Gender=Fem|Number=Plur	7	obl	7:obl:em	_
+3	secretas	secreto	ADJ	_	Gender=Fem|Number=Plur	2	amod	2:amod	SpaceAfter=No
+4	,	,	PUNCT	_	_	2	punct	2:punct	_
+5	Maccari	Maccari	PROPN	_	_	7	nsubj	7:nsubj|8:nsubj	_
+6	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	7	expl	7:expl	_
+7	mostrou	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	disponível	disponível	ADJ	_	Number=Sing	7	xcomp	7:xcomp	_
+9	para	para	ADP	_	_	10	case	10:case	_
+10	negociações	negociação	NOUN	_	Gender=Fem|Number=Plur	8	obl	8:obl:para	_
+11	imobiliárias	imobiliário	ADJ	_	Gender=Fem|Number=Plur	10	amod	10:amod	SpaceAfter=No
+12	,	,	PUNCT	_	_	16	punct	16:punct	_
+13	sem	sem	ADP	_	_	16	mark	16:mark	_
+14	jamais	jamais	ADV	_	_	16	advmod	16:advmod	_
+15	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	16	expl	16:expl	_
+16	identificar	identificar	VERB	_	VerbForm=Inf	7	advcl	7:advcl:sem	_
+17	como	como	ADP	_	_	18	case	18:case	_
+18	funcionário	funcionário	NOUN	_	Gender=Masc|Number=Sing	16	obl	16:obl:como	_
+19-20	do	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	parlamento	parlamento	NOUN	_	Gender=Masc|Number=Sing	18	nmod	18:nmod:de	SpaceAfter=No
+22	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0019
+# text = Estou sempre à disposição aqui na imobiliária.
+1	Estou	estar	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+2	sempre	sempre	ADV	_	_	5	advmod	5:advmod	_
+3-4	à	_	_	_	_	_	_	_	_
+3	a	a	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	disposição	disposição	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+6	aqui	aqui	ADV	_	_	5	advmod	5:advmod	_
+7-8	na	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	imobiliária	imobiliária	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:em	SpaceAfter=No
+10	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0021
+# text = É só me ligar, disse ele, descontraído.
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+2	só	só	ADV	_	_	4	advmod	4:advmod	_
+3	me	me	PRON	_	Case=Dat|Number=Sing|Person=1|PronType=Prs	4	obj	4:obj	_
+4	ligar	ligar	VERB	_	VerbForm=Inf	6	ccomp:speech	6:ccomp:speech	SpaceAfter=No
+5	,	,	PUNCT	_	_	4	punct	4:punct	_
+6	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj	6:nsubj	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	descontraído	descontraído	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	6	advcl	6:advcl	SpaceAfter=No
+10	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0023
+# text = A imobiliária, após a divulgação do caso, garantiu que Maccari não terá mais qualquer vínculo com a empresa.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	imobiliária	imobiliário	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	11:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
+4	após	após	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	divulgação	divulgação	NOUN	_	Gender=Fem|Number=Sing	11	obl	11:obl:após	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	caso	caso	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de	SpaceAfter=No
+10	,	,	PUNCT	_	_	6	punct	6:punct	_
+11	garantiu	garantir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	que	que	SCONJ	_	_	15	mark	15:mark	_
+13	Maccari	Maccari	PROPN	_	_	15	nsubj	15:nsubj	_
+14	não	não	ADV	_	_	15	advmod	15:advmod	_
+15	terá	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	11	ccomp	11:ccomp	_
+16	mais	mais	ADV	_	_	15	advmod	15:advmod	_
+17	qualquer	qualquer	DET	_	Number=Sing|PronType=Ind	18	det	18:det	_
+18	vínculo	vínculo	NOUN	_	Gender=Masc|Number=Sing	15	obj	15:obj	_
+19	com	com	ADP	_	_	21	case	21:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	empresa	empresa	NOUN	_	Gender=Fem|Number=Sing	18	nmod	18:nmod:com	SpaceAfter=No
+22	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0025
+# text = Para nós, ele é passado.
+1	Para	para	ADP	_	_	2	case	2:case	_
+2	nós	nós	PRON	_	Case=Nom|Number=Plur|Person=1|PronType=Prs	6	obl	6:obl:para	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj	6:nsubj	_
+5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+6	passado	passado	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+7	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0027
+# text = Não compactuamos com irregularidades, declarou a advogada Aline Maurer.
+1	Não	não	ADV	_	_	2	advmod	2:advmod	_
+2	compactuamos	compactuar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	6	ccomp:speech	6:ccomp:speech	_
+3	com	com	ADP	_	_	4	case	4:case	_
+4	irregularidades	irregularidade	NOUN	_	Gender=Fem|Number=Plur	2	obl	2:obl:com	SpaceAfter=No
+5	,	,	PUNCT	_	_	2	punct	2:punct	_
+6	declarou	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	advogada	advogado	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj	_
+9	Aline	Aline	PROPN	_	_	8	nmod	8:nmod	_
+10	Maurer	Maurer	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+11	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0029
+# text = O deputado Álvaro Boésio, quando confrontado com as evidências, afirmou ignorar a dupla função de Maccari e pediu sua exoneração imediata, mas a suspeita de conivência paira no ar.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	12:nsubj|13:nsubj|20:nsubj	_
+3	Álvaro	Álvaro	PROPN	_	_	2	nmod	2:nmod	_
+4	Boésio	Boésio	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	7	punct	7:punct	_
+6	quando	quando	SCONJ	_	_	7	mark	7:mark	_
+7	confrontado	confrontar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	12	advcl	12:advcl:quando|20:advcl:quando|30:advcl:quando	_
+8	com	com	ADP	_	_	10	case	10:case	_
+9	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	10:det	_
+10	evidências	evidência	NOUN	_	Gender=Fem|Number=Plur	7	obl	7:obl:com	SpaceAfter=No
+11	,	,	PUNCT	_	_	7	punct	7:punct	_
+12	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+13	ignorar	ignorar	VERB	_	VerbForm=Inf	12	xcomp	12:xcomp	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+15	dupla	duplo	ADJ	_	Gender=Fem|Number=Sing	16	amod	16:amod	_
+16	função	função	NOUN	_	Gender=Fem|Number=Sing	13	obj	13:obj	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	Maccari	Maccari	PROPN	_	_	16	nmod	16:nmod:de	_
+19	e	e	CCONJ	_	_	20	cc	20:cc	_
+20	pediu	pedir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	conj	12:conj:e	_
+21	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	22	det	22:det	_
+22	exoneração	exoneração	NOUN	_	Gender=Fem|Number=Sing	20	obj	20:obj	_
+23	imediata	imediato	ADJ	_	Gender=Fem|Number=Sing	22	amod	22:amod	SpaceAfter=No
+24	,	,	PUNCT	_	_	30	punct	30:punct	_
+25	mas	mas	CCONJ	_	_	30	cc	30:cc	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	suspeita	suspeita	NOUN	_	Gender=Fem|Number=Sing	30	nsubj	30:nsubj	_
+28	de	de	ADP	_	_	29	case	29:case	_
+29	conivência	conivência	NOUN	_	Gender=Fem|Number=Sing	27	nmod	27:nmod:de	_
+30	paira	pairar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	conj	12:conj:mas	_
+31-32	no	_	_	_	_	_	_	_	_
+31	em	em	ADP	_	_	33	case	33:case	_
+32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	33:det	_
+33	ar	ar	NOUN	_	Gender=Masc|Number=Sing	30	obl	30:obl:em	SpaceAfter=No
+34	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0031
+# text = Outro caso ainda mais alarmante envolve Miguelina Vecchio, presidente da Ação da Mulher Trabalhista (AMT) e vice-presidente nacional do PDT.
+1	Outro	outro	DET	_	Gender=Masc|Number=Sing|PronType=Ind	2	det	2:det	_
+2	caso	caso	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+3	ainda	ainda	ADV	_	_	5	advmod	5:advmod	_
+4	mais	mais	ADV	_	_	5	advmod	5:advmod	_
+5	alarmante	alarmante	ADJ	_	Number=Sing	2	amod	2:amod	_
+6	envolve	envolver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	Miguelina	Miguelina	PROPN	_	_	6	obj	6:obj	_
+8	Vecchio	Vecchio	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+9	,	,	PUNCT	_	_	10	punct	10:punct	_
+10	presidente	presidente	NOUN	_	Number=Sing	7	appos	7:appos	_
+11-12	da	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	Ação	Ação	PROPN	_	_	10	nmod	10:nmod:de	_
+14-15	da	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	Mulher	Mulher	PROPN	_	_	13	flat:name	13:flat:name	_
+17	Trabalhista	Trabalhista	PROPN	_	_	13	flat:name	13:flat:name	_
+18	(	(	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+19	AMT	AMT	PROPN	_	_	13	appos	13:appos	SpaceAfter=No
+20	)	)	PUNCT	_	_	19	punct	19:punct	_
+21	e	e	CCONJ	_	_	22	cc	22:cc	_
+22	vice-presidente	vice-presidente	NOUN	_	Gender=Masc|Number=Sing	10	conj	7:appos|10:conj:e	_
+23	nacional	nacional	ADJ	_	Number=Sing	22	amod	22:amod	_
+24-25	do	_	_	_	_	_	_	_	_
+24	de	de	ADP	_	_	26	case	26:case	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	PDT	PDT	PROPN	_	_	22	nmod	22:nmod:de	SpaceAfter=No
+27	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0033
+# text = Com um salário de R$ 100 mil por mês como chefe de gabinete, ela teria viajado pelo mundo afora, desfrutando de luxo enquanto deveria estar trabalhando.
+1	Com	com	ADP	_	_	3	case	3:case	_
+2	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	salário	salário	NOUN	_	Gender=Masc|Number=Sing	17	obl	17:obl:com	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	R$	R$	SYM	_	_	3	nmod	3:nmod:de	_
+6	100	100	NUM	_	NumType=Card	5	nummod	5:nummod	_
+7	mil	mil	NUM	_	NumType=Card	6	flat	6:flat	_
+8	por	por	ADP	_	_	9	case	9:case	_
+9	mês	mês	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:por	_
+10	como	como	ADP	_	_	11	case	11:case	_
+11	chefe	chefe	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:como	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	gabinete	gabinete	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:de	SpaceAfter=No
+14	,	,	PUNCT	_	_	3	punct	3:punct	_
+15	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	17	nsubj	17:nsubj	_
+16	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	17	aux	17:aux	_
+17	viajado	viajar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+18-19	pelo	_	_	_	_	_	_	_	_
+18	por	por	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	17	obl	17:obl:por	_
+21	afora	afora	ADV	_	_	20	advmod	20:advmod	SpaceAfter=No
+22	,	,	PUNCT	_	_	23	punct	23:punct	_
+23	desfrutando	desfrutar	VERB	_	VerbForm=Ger	17	advcl	17:advcl	_
+24	de	de	ADP	_	_	25	case	25:case	_
+25	luxo	luxo	NOUN	_	Gender=Masc|Number=Sing	23	obl	23:obl:de	_
+26	enquanto	enquanto	SCONJ	_	_	27	mark	27:mark	_
+27	deveria	dever	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	23	advcl	23:advcl:enquanto	_
+28	estar	estar	AUX	_	VerbForm=Inf	29	aux	29:aux	_
+29	trabalhando	trabalhar	VERB	_	VerbForm=Ger	27	xcomp	27:xcomp	SpaceAfter=No
+30	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0035
+# text = Postagens em redes sociais mostram aventuras em destinos como Paris, Nova York e Dubai, além de atividades políticas no Brasil e na América Latina, tudo financiado com dinheiro público.
+1	Postagens	postagem	NOUN	_	Gender=Fem|Number=Plur	5	nsubj	5:nsubj	_
+2	em	em	ADP	_	_	3	case	3:case	_
+3	redes	rede	NOUN	_	Gender=Fem|Number=Plur	1	nmod	1:nmod:em	_
+4	sociais	social	ADJ	_	Number=Plur	3	amod	3:amod	_
+5	mostram	mostrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	aventuras	aventura	NOUN	_	Gender=Fem|Number=Plur	5	obj	5:obj	_
+7	em	em	ADP	_	_	8	case	8:case	_
+8	destinos	destino	NOUN	_	Gender=Masc|Number=Plur	6	nmod	6:nmod:em	_
+9	como	como	ADP	_	_	10	case	10:case|12:case|15:case	_
+10	Paris	Paris	PROPN	_	_	8	nmod	8:nmod:como	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	Nova	Nova	PROPN	_	_	10	conj	8:nmod:como|10:conj:e	_
+13	York	York	PROPN	_	_	12	flat:name	12:flat:name	_
+14	e	e	CCONJ	_	_	15	cc	15:cc	_
+15	Dubai	Dubai	PROPN	_	_	10	conj	8:nmod:como|10:conj:e	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	além	além	ADV	_	_	5	advmod	5:advmod	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	atividades	atividade	NOUN	_	Gender=Fem|Number=Plur	17	obl	17:obl:de	_
+20	políticas	político	ADJ	_	Gender=Fem|Number=Plur	19	amod	19:amod	_
+21-22	no	_	_	_	_	_	_	_	_
+21	em	em	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	Brasil	Brasil	PROPN	_	_	19	nmod	19:nmod:em	_
+24	e	e	CCONJ	_	_	27	cc	27:cc	_
+25-26	na	_	_	_	_	_	_	_	_
+25	em	em	ADP	_	_	27	case	27:case	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	América	América	PROPN	_	_	23	conj	19:nmod:em|23:conj:e	_
+28	Latina	Latina	PROPN	_	_	27	flat:name	27:flat:name	SpaceAfter=No
+29	,	,	PUNCT	_	_	30	punct	30:punct	_
+30	tudo	tudo	PRON	_	PronType=Ind	19	appos	19:appos	_
+31	financiado	financiar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	30	acl	30:acl	_
+32	com	com	ADP	_	_	33	case	33:case	_
+33	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	31	obl	31:obl:com	_
+34	público	público	ADJ	_	Gender=Masc|Number=Sing	33	amod	33:amod	SpaceAfter=No
+35	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0037
+# text = Miguelina teria recebido diárias que somam mais de R$ 200 mil nos últimos anos, incluindo uma viagem a Brasília, quando discursou na filiação de Ciro Gomes ao PDT.
+1	Miguelina	Miguelina	PROPN	_	_	3	nsubj	3:nsubj	_
+2	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	3	aux	3:aux	_
+3	recebido	receber	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+4	diárias	diária	NOUN	_	Gender=Fem|Number=Plur	3	obj	3:obj|6:nsubj	_
+5	que	que	PRON	_	PronType=Rel	6	nsubj	4:ref	_
+6	somam	somar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	4:acl:relcl	_
+7	mais	mais	ADV	_	ExtPos=ADV	9	advmod	9:advmod	_
+8	de	de	ADP	_	_	7	fixed	7:fixed	_
+9	R$	R$	SYM	_	_	6	obj	6:obj	_
+10	200	200	NUM	_	NumType=Card	9	nummod	9:nummod	_
+11	mil	mil	NUM	_	NumType=Card	10	flat	10:flat	_
+12-13	nos	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	15	case	15:case	_
+13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	15:det	_
+14	últimos	último	ADJ	_	Gender=Masc|Number=Plur	15	amod	15:amod	_
+15	anos	ano	NOUN	_	Gender=Masc|Number=Plur	6	obl	6:obl:em	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	incluindo	incluir	VERB	_	VerbForm=Ger	3	advcl	3:advcl	_
+18	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	viagem	viagem	NOUN	_	Gender=Fem|Number=Sing	17	obj	17:obj	_
+20	a	a	ADP	_	_	21	case	21:case	_
+21	Brasília	Brasília	PROPN	_	_	19	nmod	19:nmod:a	SpaceAfter=No
+22	,	,	PUNCT	_	_	24	punct	24:punct	_
+23	quando	quando	SCONJ	_	_	24	mark	24:mark	_
+24	discursou	discursar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	advcl	17:advcl:quando	_
+25-26	na	_	_	_	_	_	_	_	_
+25	em	em	ADP	_	_	27	case	27:case	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	filiação	filiação	NOUN	_	Gender=Fem|Number=Sing	24	obl	24:obl:em	_
+28	de	de	ADP	_	_	29	case	29:case	_
+29	Ciro	Ciro	PROPN	_	_	27	nmod	27:nmod:de	_
+30	Gomes	Gomes	PROPN	_	_	29	flat:name	29:flat:name	_
+31-32	ao	_	_	_	_	_	_	_	_
+31	a	a	ADP	_	_	33	case	33:case	_
+32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	33:det	_
+33	PDT	PDT	PROPN	_	_	27	nmod	27:nmod:a	SpaceAfter=No
+34	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0039
+# text = "Eu desconto das minhas férias", alegou ela por telefone, mas a reportagem confirmou que tais descontos nunca ocorreram.
+1	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	Eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	3:nsubj	_
+3	desconto	descontar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	10	ccomp:speech	10:ccomp:speech	_
+4-5	das	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	7	case	7:case	_
+5	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	7:det	_
+6	minhas	meu	DET	_	Gender=Fem|Number=Plur|Person=1|Poss=Yes|PronType=Prs	7	det	7:det	_
+7	férias	féria	NOUN	_	Gender=Fem|Number=Plur	3	obl	3:obl:de	SpaceAfter=No
+8	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+9	,	,	PUNCT	_	_	3	punct	3:punct	_
+10	alegou	alegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+11	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	10	nsubj	10:nsubj	_
+12	por	por	ADP	_	_	13	case	13:case	_
+13	telefone	telefone	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:por	SpaceAfter=No
+14	,	,	PUNCT	_	_	18	punct	18:punct	_
+15	mas	mas	CCONJ	_	_	18	cc	18:cc	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	reportagem	reportagem	NOUN	_	Gender=Fem|Number=Sing	18	nsubj	18:nsubj	_
+18	confirmou	confirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	conj	10:conj:mas	_
+19	que	que	SCONJ	_	_	23	mark	23:mark	_
+20	tais	tal	DET	_	Number=Plur|PronType=Dem	21	det	21:det	_
+21	descontos	desconto	NOUN	_	Gender=Masc|Number=Plur	23	nsubj	23:nsubj	_
+22	nunca	nunca	ADV	_	_	23	advmod	23:advmod	_
+23	ocorreram	ocorrer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	18	ccomp	18:ccomp	SpaceAfter=No
+24	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0041
+# text = Em defesa, o líder do PDT na Assembleia, Gilmar Sossella, insistiu que todas as viagens foram autorizadas e que Miguelina é uma funcionária exemplar.
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	defesa	defesa	NOUN	_	Gender=Fem|Number=Sing	16	obl	16:obl:em	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	líder	líder	NOUN	_	Gender=Masc|Number=Sing	16	nsubj	16:nsubj	_
+6-7	do	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	PDT	PDT	PROPN	_	_	5	nmod	5:nmod:de	_
+9-10	na	_	_	_	_	_	_	_	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	Assembleia	Assembleia	PROPN	_	_	5	nmod	5:nmod:em	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	Gilmar	Gilmar	PROPN	_	_	5	appos	5:appos	_
+14	Sossella	Sossella	PROPN	_	_	13	flat:name	13:flat:name	SpaceAfter=No
+15	,	,	PUNCT	_	_	13	punct	13:punct	_
+16	insistiu	insistir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+17	que	que	SCONJ	_	_	22	mark	22:mark	_
+18	todas	todo	DET	_	Gender=Fem|Number=Plur|PronType=Ind	20	det	20:det	_
+19	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	20:det	_
+20	viagens	viagem	NOUN	_	Gender=Fem|Number=Plur	22	nsubj:pass	22:nsubj:pass	_
+21	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	22	aux:pass	22:aux:pass	_
+22	autorizadas	autorizar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	16	ccomp	16:ccomp	_
+23	e	e	CCONJ	_	_	28	cc	28:cc	_
+24	que	que	SCONJ	_	_	28	mark	28:mark	_
+25	Miguelina	Miguelina	PROPN	_	_	28	nsubj	28:nsubj	_
+26	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	cop	28:cop	_
+27	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	funcionária	funcionário	NOUN	_	Gender=Fem|Number=Sing	22	conj	16:ccomp|22:conj:e	_
+29	exemplar	exemplar	ADJ	_	Number=Sing	28	amod	28:amod	SpaceAfter=No
+30	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0043
+# text = "Ela aplica todo o conhecimento adquirido nessas viagens em seu trabalho", defendeu Sossella.
+1	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	Ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nsubj	3:nsubj	_
+3	aplica	aplicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	ccomp:speech	16:ccomp:speech	_
+4	todo	todo	DET	_	Gender=Masc|Number=Sing|PronType=Ind	6	det	6:det	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	conhecimento	conhecimento	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	_
+7	adquirido	adquirir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	6	acl	6:acl	_
+8-9	nessas	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	10	det	10:det	_
+10	viagens	viagem	NOUN	_	Gender=Fem|Number=Plur	7	obl	7:obl:em	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	13	det	13:det	_
+13	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:em	SpaceAfter=No
+14	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+15	,	,	PUNCT	_	_	3	punct	3:punct	_
+16	defendeu	defender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+17	Sossella	Sossella	PROPN	_	_	16	nsubj	16:nsubj	SpaceAfter=No
+18	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0045
+# text = No entanto, a RBS TV constatou que, na prática, o gabinete do PDT frequentemente fica sem sua presença.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	ExtPos=CCONJ	8	cc	8:cc	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	1:fixed	_
+3	entanto	entanto	NOUN	_	Gender=Masc|Number=Sing	1	fixed	1:fixed	SpaceAfter=No
+4	,	,	PUNCT	_	_	1	punct	1:punct	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	RBS	RBS	PROPN	_	_	8	nsubj	8:nsubj	_
+7	TV	TV	PROPN	_	_	6	flat:name	6:flat:name	_
+8	constatou	constatar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	que	que	SCONJ	_	_	21	mark	21:mark	SpaceAfter=No
+10	,	,	PUNCT	_	_	13	punct	13:punct	_
+11-12	na	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	prática	prática	NOUN	_	Gender=Fem|Number=Sing	21	obl	21:obl:em	SpaceAfter=No
+14	,	,	PUNCT	_	_	13	punct	13:punct	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	gabinete	gabinete	NOUN	_	Gender=Masc|Number=Sing	21	nsubj	21:nsubj	_
+17-18	do	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	PDT	PDT	PROPN	_	_	16	nmod	16:nmod:de	_
+20	frequentemente	frequentemente	ADV	_	_	21	advmod	21:advmod	_
+21	fica	ficar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	ccomp	8:ccomp	_
+22	sem	sem	ADP	_	_	24	case	24:case	_
+23	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	24	det	24:det	_
+24	presença	presença	NOUN	_	Gender=Fem|Number=Sing	21	obl	21:obl:sem	SpaceAfter=No
+25	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0047
+# text = Miguelina foi abordada no aeroporto após retornar de mais uma agenda política fora do estado e manteve a postura defensiva: Chego às 8h da manhã e trabalho duro nas comissões.
+1	Miguelina	Miguelina	PROPN	_	_	3	nsubj:pass	3:nsubj:pass|19:nsubj	_
+2	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	aux:pass	3:aux:pass	_
+3	abordada	abordar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+4-5	no	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	aeroporto	aeroporto	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:em	_
+7	após	após	ADP	_	_	8	mark	8:mark	_
+8	retornar	retornar	VERB	_	VerbForm=Inf	3	advcl	3:advcl:após	_
+9	de	de	ADP	_	_	12	case	12:case	_
+10	mais	mais	ADV	_	_	11	advmod	11:advmod	_
+11	uma	um	NUM	_	Gender=Fem|NumType=Card	12	nummod	12:nummod	_
+12	agenda	agenda	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:de	_
+13	política	político	ADJ	_	Gender=Fem|Number=Sing	12	amod	12:amod	_
+14	fora	fora	ADV	_	_	8	advmod	8:advmod	_
+15-16	do	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	estado	estado	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:de	_
+18	e	e	CCONJ	_	_	19	cc	19:cc	_
+19	manteve	manter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	3:conj:e	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	postura	postura	NOUN	_	Gender=Fem|Number=Sing	19	obj	19:obj	_
+22	defensiva	defensivo	ADJ	_	Gender=Fem|Number=Sing	21	amod	21:amod	SpaceAfter=No
+23	:	:	PUNCT	_	_	24	punct	24:punct	_
+24	Chego	chegar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	parataxis	3:parataxis	_
+25-26	às	_	_	_	_	_	_	_	_
+25	a	a	ADP	_	_	27	case	27:case	_
+26	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	27	det	27:det	_
+27	8h	8h	NOUN	_	_	24	obl	24:obl:a	_
+28-29	da	_	_	_	_	_	_	_	_
+28	de	de	ADP	_	_	30	case	30:case	_
+29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	manhã	manhã	NOUN	_	Gender=Fem|Number=Sing	27	nmod	27:nmod:de	_
+31	e	e	CCONJ	_	_	32	cc	32:cc	_
+32	trabalho	trabalhar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	24	conj	3:parataxis|24:conj:e	_
+33	duro	duro	ADJ	_	Gender=Masc|Number=Sing	32	amod	32:amod	_
+34-35	nas	_	_	_	_	_	_	_	_
+34	em	em	ADP	_	_	36	case	36:case	_
+35	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	36	det	36:det	_
+36	comissões	comissão	NOUN	_	Gender=Fem|Number=Plur	32	obl	32:obl:em	SpaceAfter=No
+37	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0049
+# text = O que faço é de interesse público, justificou.
+1	O	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	nsubj	3:obj|6:nsubj	_
+2	que	que	PRON	_	PronType=Rel	3	obj	1:ref	_
+3	faço	fazer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	interesse	interesse	NOUN	_	Gender=Masc|Number=Sing	9	ccomp:speech	9:ccomp:speech	_
+7	público	público	ADJ	_	Gender=Masc|Number=Sing	6	amod	6:amod	SpaceAfter=No
+8	,	,	PUNCT	_	_	6	punct	6:punct	_
+9	justificou	justificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+10	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0051
+# text = A superintendente-geral da Assembleia Legislativa, Mari Perusso, destacou que tais comportamentos violam o Estatuto do Servidor, que proíbe atividades comerciais paralelas para cargos comissionados.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	superintendente-geral	superintendente-geral	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	11:nsubj	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	Assembleia	Assembleia	PROPN	_	_	2	nmod	2:nmod:de	_
+6	Legislativa	Legislativa	PROPN	_	_	5	flat:name	5:flat:name	SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	8:punct	_
+8	Mari	Mari	PROPN	_	_	2	appos	2:appos	_
+9	Perusso	Perusso	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+10	,	,	PUNCT	_	_	8	punct	8:punct	_
+11	destacou	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	que	que	SCONJ	_	_	15	mark	15:mark	_
+13	tais	tal	DET	_	Number=Plur|PronType=Dem	14	det	14:det	_
+14	comportamentos	comportamento	NOUN	_	Gender=Masc|Number=Plur	15	nsubj	15:nsubj	_
+15	violam	violar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	ccomp	11:ccomp	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	Estatuto	Estatuto	PROPN	_	_	15	obj	15:obj|23:nsubj	_
+18-19	do	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	Servidor	Servidor	PROPN	_	_	17	flat:name	17:flat:name	SpaceAfter=No
+21	,	,	PUNCT	_	_	23	punct	23:punct	_
+22	que	que	PRON	_	PronType=Rel	23	nsubj	17:ref	_
+23	proíbe	proíbe	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	acl:relcl	17:acl:relcl	_
+24	atividades	atividade	NOUN	_	Gender=Fem|Number=Plur	23	obj	23:obj	_
+25	comerciais	comercial	ADJ	_	Number=Plur	24	amod	24:amod	_
+26	paralelas	paralelo	ADJ	_	Gender=Fem|Number=Plur	24	amod	24:amod	_
+27	para	para	ADP	_	_	28	case	28:case	_
+28	cargos	cargo	NOUN	_	Gender=Masc|Number=Plur	24	nmod	24:nmod:para	_
+29	comissionados	comissionado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	28	amod	28:amod	SpaceAfter=No
+30	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0053
+# text = A investigação promete revelar uma rede de irregularidades que pode abalar a estrutura política do estado.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	investigação	investigação	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj|4:nsubj	_
+3	promete	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	revelar	revelar	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	rede	rede	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj|10:nsubj|11:nsubj	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	irregularidades	irregularidade	NOUN	_	Gender=Fem|Number=Plur	6	nmod	6:nmod:de	_
+9	que	que	PRON	_	PronType=Rel	10	nsubj	6:ref	_
+10	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl:relcl	6:acl:relcl	_
+11	abalar	abalar	VERB	_	VerbForm=Inf	10	xcomp	10:xcomp	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	estrutura	estrutura	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	_
+14	política	político	ADJ	_	Gender=Fem|Number=Sing	13	amod	13:amod	_
+15-16	do	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	estado	estado	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod:de	SpaceAfter=No
+18	.	.	PUNCT	_	_	3	punct	3:punct	_

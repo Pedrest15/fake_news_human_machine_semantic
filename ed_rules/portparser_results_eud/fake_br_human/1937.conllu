@@ -1,0 +1,185 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Justin Bieber dá murro na cara de fã antes de show em Barcelona.
+1	Justin	Justin	PROPN	_	_	3	nsubj	3:nsubj	_
+2	Bieber	Bieber	PROPN	_	_	1	flat:name	1:flat:name	_
+3	dá	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	murro	murro	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	_
+5-6	na	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	cara	cara	NOUN	_	Number=Sing	3	obl	3:obl:em	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	fã	fã	NOUN	_	Number=Sing	7	nmod	7:nmod:de	_
+10	antes	antes	ADV	_	_	3	advmod	3:advmod	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	show	show	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:de	_
+13	em	em	ADP	_	_	14	case	14:case	_
+14	Barcelona	Barcelona	PROPN	_	_	12	nmod	12:nmod:em	SpaceAfter=No
+15	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = O cantor Justin Bieber deixou um fã com o lábio cortado após socá-lo no rosto.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	cantor	cantor	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+3	Justin	Justin	PROPN	_	_	2	nmod	2:nmod	_
+4	Bieber	Bieber	PROPN	_	_	3	flat:name	3:flat:name	_
+5	deixou	deixar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	fã	fã	NOUN	_	Number=Sing	5	obj	5:obj	_
+8	com	com	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	lábio	lábio	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:com	_
+11	cortado	cortar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	10	acl	10:acl	_
+12	após	após	ADP	_	_	13	mark	13:mark	_
+13-14	socá-lo	_	_	_	_	_	_	_	_
+13	socar	socar	VERB	_	VerbForm=Inf	5	advcl	5:advcl:após	_
+14	lo	lo	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	obj	13:obj	_
+15-16	no	_	_	_	_	_	_	_	_
+15	em	em	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	rosto	rosto	NOUN	_	Gender=Masc|Number=Sing	13	obl	13:obl:em	SpaceAfter=No
+18	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0005
+# text = Bieber, que tem fama de ser brigão, só anda com seguranças armados e carros blindados.
+1	Bieber	Bieber	PROPN	_	_	11	nsubj	4:nsubj|11:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	4	punct	4:punct	_
+3	que	que	PRON	_	PronType=Rel	4	nsubj	1:ref	_
+4	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+5	fama	fama	NOUN	_	Number=Sing	4	obj	4:obj	_
+6	de	de	ADP	_	_	8	mark	8:mark	_
+7	ser	ser	AUX	_	VerbForm=Inf	8	cop	8:cop	_
+8	brigão	brigão	ADJ	_	Gender=Masc|Number=Sing	5	acl	5:acl:de	SpaceAfter=No
+9	,	,	PUNCT	_	_	4	punct	4:punct	_
+10	só	só	ADV	_	_	11	advmod	11:advmod	_
+11	anda	andar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+12	com	com	ADP	_	_	13	case	13:case|16:case	_
+13	seguranças	segurança	NOUN	_	Number=Plur	11	obl	11:obl:com	_
+14	armados	armado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	13	amod	13:amod	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	carros	carro	NOUN	_	Gender=Masc|Number=Plur	13	conj	11:obl:com|13:conj:e	_
+17	blindados	blindado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	16	amod	16:amod	SpaceAfter=No
+18	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0007
+# text = Ao chegar para uma apresentação ontem (22) em Barcelona, ele abaixou o vidro do veículo em que estava e um fã colocou o braço para dentro do carro.
+1-2	Ao	_	_	_	_	_	_	_	_
+1	A	a	ADP	_	ExtPos=SCONJ	3	mark	3:mark	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	1:fixed	_
+3	chegar	chegar	VERB	_	VerbForm=Inf	15	advcl	15:advcl:a_o|27:advcl:a_o	_
+4	para	para	ADP	_	_	6	case	6:case	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	apresentação	apresentação	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:para	_
+7	ontem	ontem	ADV	_	_	6	advmod	6:advmod	_
+8	(	(	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+9	22	22	NUM	_	NumType=Card	6	appos	6:appos	SpaceAfter=No
+10	)	)	PUNCT	_	_	9	punct	9:punct	_
+11	em	em	ADP	_	_	12	case	12:case	_
+12	Barcelona	Barcelona	PROPN	_	_	3	obl	3:obl:em	SpaceAfter=No
+13	,	,	PUNCT	_	_	3	punct	3:punct	_
+14	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	nsubj	15:nsubj	_
+15	abaixou	abaixar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	vidro	vidro	NOUN	_	Gender=Masc|Number=Sing	15	obj	15:obj	_
+18-19	do	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	veículo	veículo	NOUN	_	Gender=Masc|Number=Sing	17	nmod	17:nmod:de	_
+21	em	em	ADP	_	_	22	case	22:case	_
+22	que	que	PRON	_	PronType=Rel	20	nmod	20:nmod:em	_
+23	estava	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	22	cop	22:cop	_
+24	e	e	CCONJ	_	_	27	cc	27:cc	_
+25	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	fã	fã	NOUN	_	Number=Sing	27	nsubj	27:nsubj	_
+27	colocou	colocar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	conj	15:conj:e	_
+28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	29:det	_
+29	braço	braço	NOUN	_	Gender=Masc|Number=Sing	27	obj	27:obj	_
+30	para	para	ADP	_	_	31	case	31:case	_
+31	dentro	dentro	ADV	_	_	27	advmod	27:advmod	_
+32-33	do	_	_	_	_	_	_	_	_
+32	de	de	ADP	_	_	34	case	34:case	_
+33	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	34:det	_
+34	carro	carro	NOUN	_	Gender=Masc|Number=Sing	31	obl	31:obl:de	SpaceAfter=No
+35	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0009
+# text = No vídeo dá pra ver que o fã queria apenas tocar em seu ídolo.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:em	_
+4	dá	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	pra	para	ADP	_	_	6	mark	6:mark	_
+6	ver	ver	VERB	_	VerbForm=Inf	4	csubj	4:csubj	_
+7	que	que	SCONJ	_	_	10	mark	10:mark	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	fã	fã	NOUN	_	Number=Sing	10	nsubj	10:nsubj|12:nsubj	_
+10	queria	querer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	ccomp	6:ccomp	_
+11	apenas	apenas	ADV	_	_	12	advmod	12:advmod	_
+12	tocar	tocar	VERB	_	VerbForm=Inf	10	xcomp	10:xcomp	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	15	det	15:det	_
+15	ídolo	ídolo	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:em	SpaceAfter=No
+16	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0011
+# text = O cantorzinho não gostou do gesto do jovem e decidiu revidar dando-lhe um soco no rosto.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	cantorzinho	cantorzinho	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj|12:nsubj|13:nsubj	_
+3	não	não	ADV	_	_	4	advmod	4:advmod	_
+4	gostou	gostar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	gesto	gesto	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:de	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	jovem	jovem	NOUN	_	Number=Sing	7	nmod	7:nmod:de	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	decidiu	decidir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	conj	4:conj:e	_
+13	revidar	revidar	VERB	_	VerbForm=Inf	12	xcomp	12:xcomp	_
+14-15	dando-lhe	_	_	_	_	_	_	_	_
+14	dando	dar	VERB	_	VerbForm=Ger	13	advcl	13:advcl	_
+15	lhe	lhe	PRON	_	Case=Dat|Number=Sing|Person=3|PronType=Prs	14	iobj	14:iobj	_
+16	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	soco	soco	NOUN	_	Gender=Masc|Number=Sing	14	obj	14:obj	_
+18-19	no	_	_	_	_	_	_	_	_
+18	em	em	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	rosto	rosto	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:em	SpaceAfter=No
+21	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0013
+# text = O ato de covardia foi filmado por outros fans que estavam no local.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	ato	ato	NOUN	_	Gender=Masc|Number=Sing	6	nsubj:pass	6:nsubj:pass	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	covardia	covardia	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+5	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	aux:pass	6:aux:pass	_
+6	filmado	filmar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+7	por	por	ADP	_	_	9	case	9:case	_
+8	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	9	det	9:det	_
+9	fans	fan	NOUN	_	Foreign=Yes|Gender=Masc|Number=Plur	6	obl:agent	6:obl:agent|14:nsubj	_
+10	que	que	PRON	_	PronType=Rel	14	nsubj	9:ref	_
+11	estavam	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	14	cop	14:cop	_
+12-13	no	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	local	local	NOUN	_	Number=Sing	9	acl:relcl	9:acl:relcl	SpaceAfter=No
+15	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0014
+# text = confira no vídeo do Daily Mail:
+1	confira	conferir	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2-3	no	_	_	_	_	_	_	_	_
+2	em	em	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	1	obl	1:obl:em	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Daily	Daily	PROPN	_	_	4	nmod	4:nmod:de	_
+8	Mail	Mail	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+9	:	:	PUNCT	_	_	1	punct	1:punct	_

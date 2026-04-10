@@ -1,0 +1,569 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Exclusivo: Senador Requião acusa Sérgio Moro de tentar enfraquecer a lei contra abuso de autoridade.
+1	Exclusivo	exclusivo	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+2	:	:	PUNCT	_	_	1	punct	1:punct	_
+3	Senador	Senador	PROPN	_	_	5	nsubj	5:nsubj	_
+4	Requião	Requião	PROPN	_	_	3	flat:name	3:flat:name	_
+5	acusa	acusar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	dep	1:dep	_
+6	Sérgio	Sérgio	PROPN	_	_	5	obj	5:obj|9:nsubj|10:nsubj	_
+7	Moro	Moro	PROPN	_	_	6	flat:name	6:flat:name	_
+8	de	de	ADP	_	_	9	mark	9:mark	_
+9	tentar	tentar	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	_
+10	enfraquecer	enfraquecer	VERB	_	VerbForm=Inf	9	xcomp	9:xcomp	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	lei	lei	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+13	contra	contra	ADP	_	_	14	case	14:case	_
+14	abuso	abuso	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:contra	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	autoridade	autoridade	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:de	SpaceAfter=No
+17	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0003
+# text = Relator afirma que proposta de Moro abriria brechas para impunidade.
+1	Relator	relator	NOUN	_	Gender=Masc|Number=Sing	2	nsubj	2:nsubj	_
+2	afirma	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	7	mark	7:mark	_
+4	proposta	proposta	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	Moro	Moro	PROPN	_	_	4	nmod	4:nmod:de	_
+7	abriria	abrir	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	2	ccomp	2:ccomp	_
+8	brechas	brecha	NOUN	_	Gender=Fem|Number=Plur	7	obj	7:obj	_
+9	para	para	ADP	_	_	10	case	10:case	_
+10	impunidade	impunidade	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:para	SpaceAfter=No
+11	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = Nesta segunda-feira (5), o senador Roberto Requião (PMDB-PR), relator e defensor do projeto que endurece as punições para autoridades que cometem abuso, acusou o juiz Sérgio Moro de tentar minar a eficácia da nova legislação.
+1-2	Nesta	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	3:det	_
+3	segunda-feira	segunda-feira	NOUN	_	Gender=Fem|Number=Sing	32	obl	32:obl:em	_
+4	(	(	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+5	5	5	NUM	_	NumType=Card	3	appos	3:appos	SpaceAfter=No
+6	)	)	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+7	,	,	PUNCT	_	_	3	punct	3:punct	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	senador	senador	NOUN	_	Gender=Masc|Number=Sing	32	nsubj	32:nsubj	_
+10	Roberto	Roberto	PROPN	_	_	9	nmod	9:nmod	_
+11	Requião	Requião	PROPN	_	_	10	flat:name	10:flat:name	_
+12	(	(	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+13	PMDB-PR	PMDB-PR	PROPN	_	_	9	parataxis	9:parataxis	SpaceAfter=No
+14	)	)	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	relator	relator	NOUN	_	Gender=Masc|Number=Sing	9	appos	9:appos	_
+17	e	e	CCONJ	_	_	18	cc	18:cc	_
+18	defensor	defensor	NOUN	_	Gender=Masc|Number=Sing	16	conj	9:appos|16:conj:e	_
+19-20	do	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod:de|18:nmod:de|23:nsubj	_
+22	que	que	PRON	_	PronType=Rel	23	nsubj	21:ref	_
+23	endurece	endurecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	acl:relcl	21:acl:relcl	_
+24	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	25:det	_
+25	punições	punição	NOUN	_	Gender=Fem|Number=Plur	23	obj	23:obj	_
+26	para	para	ADP	_	_	27	case	27:case	_
+27	autoridades	autoridade	NOUN	_	Gender=Fem|Number=Plur	23	obl	23:obl:para|29:nsubj	_
+28	que	que	PRON	_	PronType=Rel	29	nsubj	27:ref	_
+29	cometem	cometer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	27	acl:relcl	27:acl:relcl	_
+30	abuso	abuso	NOUN	_	Gender=Masc|Number=Sing	29	obj	29:obj	SpaceAfter=No
+31	,	,	PUNCT	_	_	16	punct	16:punct	_
+32	acusou	acusar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+33	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	34:det	_
+34	juiz	juiz	NOUN	_	Gender=Masc|Number=Sing	32	obj	32:obj|38:nsubj|39:nsubj	_
+35	Sérgio	Sérgio	PROPN	_	_	34	nmod	34:nmod	_
+36	Moro	Moro	PROPN	_	_	35	flat:name	35:flat:name	_
+37	de	de	ADP	_	_	38	mark	38:mark	_
+38	tentar	tentar	VERB	_	VerbForm=Inf	32	xcomp	32:xcomp	_
+39	minar	minar	VERB	_	VerbForm=Inf	38	xcomp	38:xcomp	_
+40	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	41:det	_
+41	eficácia	eficácia	NOUN	_	Gender=Fem|Number=Sing	39	obj	39:obj	_
+42-43	da	_	_	_	_	_	_	_	_
+42	de	de	ADP	_	_	45	case	45:case	_
+43	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	45	det	45:det	_
+44	nova	novo	ADJ	_	Gender=Fem|Number=Sing	45	amod	45:amod	_
+45	legislação	legislação	NOUN	_	Gender=Fem|Number=Sing	41	nmod	41:nmod:de	SpaceAfter=No
+46	.	.	PUNCT	_	_	32	punct	32:punct	_
+
+# sent_id = S0007
+# text = Requião disse que a sugestão de Moro, que visava proteger juízes e procuradores de serem punidos por divergências na interpretação das leis, na verdade, abriria caminho para a impunidade.
+1	Requião	Requião	PROPN	_	_	2	nsubj	2:nsubj	_
+2	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	31	mark	31:mark	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	sugestão	sugestão	NOUN	_	Gender=Fem|Number=Sing	31	nsubj	10:nsubj|11:nsubj|31:nsubj	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	Moro	Moro	PROPN	_	_	5	nmod	5:nmod:de	SpaceAfter=No
+8	,	,	PUNCT	_	_	10	punct	10:punct	_
+9	que	que	PRON	_	PronType=Rel	10	nsubj	5:ref	_
+10	visava	visar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_
+11	proteger	proteger	VERB	_	VerbForm=Inf	10	xcomp	10:xcomp	_
+12	juízes	juíz	NOUN	_	Gender=Masc|Number=Plur	11	obj	11:obj|17:nsubj:pass	_
+13	e	e	CCONJ	_	_	14	cc	14:cc	_
+14	procuradores	procurador	NOUN	_	Gender=Masc|Number=Plur	12	conj	11:obj|12:conj:e|17:nsubj:pass	_
+15	de	de	ADP	_	_	17	mark	17:mark	_
+16	serem	ser	AUX	_	Number=Plur|Person=3|VerbForm=Inf	17	aux:pass	17:aux:pass	_
+17	punidos	punir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	11	xcomp	11:xcomp	_
+18	por	por	ADP	_	_	19	case	19:case	_
+19	divergências	divergêncão	NOUN	_	Gender=Fem|Number=Plur	17	obl:agent	17:obl:agent	_
+20-21	na	_	_	_	_	_	_	_	_
+20	em	em	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	interpretação	interpretação	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:em	_
+23-24	das	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	25:det	_
+25	leis	lei	NOUN	_	Gender=Fem|Number=Plur	22	nmod	22:nmod:de	SpaceAfter=No
+26	,	,	PUNCT	_	_	29	punct	29:punct	_
+27-28	na	_	_	_	_	_	_	_	_
+27	em	em	ADP	_	_	29	case	29:case	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	verdade	verdade	NOUN	_	Gender=Fem|Number=Sing	31	obl	31:obl:em	SpaceAfter=No
+30	,	,	PUNCT	_	_	29	punct	29:punct	_
+31	abriria	abrir	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	2	ccomp	2:ccomp	_
+32	caminho	caminho	NOUN	_	Gender=Masc|Number=Sing	31	obj	31:obj	_
+33	para	para	ADP	_	_	35	case	35:case	_
+34	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	35:det	_
+35	impunidade	impunidade	NOUN	_	Gender=Fem|Number=Sing	32	nmod	32:nmod:para	SpaceAfter=No
+36	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0009
+# text = É uma tentativa clara de enfraquecer nossa luta contra os abusos.
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+2	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	tentativa	tentativa	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+4	clara	claro	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+5	de	de	ADP	_	_	6	mark	6:mark	_
+6	enfraquecer	enfraquecer	VERB	_	VerbForm=Inf	3	acl	3:acl:de	_
+7	nossa	nosso	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	8	det	8:det	_
+8	luta	luta	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+9	contra	contra	ADP	_	_	11	case	11:case	_
+10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	11:det	_
+11	abusos	abuso	NOUN	_	Gender=Masc|Number=Plur	8	nmod	8:nmod:contra	SpaceAfter=No
+12	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0011
+# text = Se aceitássemos a sugestão de Moro, seria o mesmo que dizer: 'Façam o que quiserem, não haverá consequências', declarou Requião em sessão.
+1	Se	se	SCONJ	_	_	2	mark	2:mark	_
+2	aceitássemos	aer	VERB	_	Mood=Sub|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	10	advcl	10:advcl:se	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	sugestão	sugestão	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	Moro	Moro	PROPN	_	_	4	nmod	4:nmod:de	SpaceAfter=No
+7	,	,	PUNCT	_	_	2	punct	2:punct	_
+8	seria	ser	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	10	cop	10:cop	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	mesmo	mesmo	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	25	ccomp:speech	25:ccomp:speech	_
+11	que	que	PRON	_	PronType=Rel	12	mark	12:mark	_
+12	dizer	dizer	VERB	_	VerbForm=Inf	10	acl	10:acl:que	SpaceAfter=No
+13	:	:	PUNCT	_	_	15	punct	15:punct	_
+14	'	'	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+15	Façam	façam	VERB	_	Mood=Imp|Number=Plur|Person=3|VerbForm=Fin	12	ccomp:speech	12:ccomp:speech	_
+16	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	15	obj	15:obj|18:obj	_
+17	que	que	PRON	_	PronType=Rel	18	obj	16:ref	_
+18	quiserem	querer	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	16	acl:relcl	16:acl:relcl	SpaceAfter=No
+19	,	,	PUNCT	_	_	21	punct	21:punct	_
+20	não	não	ADV	_	_	21	advmod	21:advmod	_
+21	haverá	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	15	parataxis	15:parataxis	_
+22	consequências	consequência	NOUN	_	Gender=Fem|Number=Plur	21	obj	21:obj	SpaceAfter=No
+23	'	'	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+24	,	,	PUNCT	_	_	10	punct	10:punct	_
+25	declarou	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+26	Requião	Requião	PROPN	_	_	25	nsubj	25:nsubj	_
+27	em	em	ADP	_	_	28	case	28:case	_
+28	sessão	sessão	NOUN	_	Gender=Fem|Number=Sing	25	obl	25:obl:em	SpaceAfter=No
+29	.	.	PUNCT	_	_	25	punct	25:punct	_
+
+# sent_id = S0013
+# text = O senador afirmou ainda que a sugestão do juiz era "vaga e perigosa" e que, se adotada, poderia comprometer a integridade da operação contra corrupção.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	senador	senador	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	ainda	ainda	ADV	_	_	3	advmod	3:advmod	_
+5	que	que	SCONJ	_	_	13	mark	13:mark|15:mark	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	sugestão	sugestão	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	13:nsubj|15:nsubj|23:nsubj|24:nsubj	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	juiz	juiz	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	_
+11	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	13	cop	13:cop|15:cop	_
+12	"	"	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+13	vaga	vago	ADJ	_	Gender=Fem|Number=Sing	3	ccomp	3:ccomp	_
+14	e	e	CCONJ	_	_	15	cc	15:cc	_
+15	perigosa	perigoso	ADJ	_	Gender=Fem|Number=Sing	13	conj	3:ccomp|13:conj:e	SpaceAfter=No
+16	"	"	PUNCT	_	_	13	punct	13:punct	_
+17	e	e	CCONJ	_	_	23	cc	23:cc	_
+18	que	que	SCONJ	_	_	23	mark	23:mark	SpaceAfter=No
+19	,	,	PUNCT	_	_	21	punct	21:punct	_
+20	se	se	SCONJ	_	_	21	mark	21:mark	_
+21	adotada	adotar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	23	advcl	23:advcl:se	SpaceAfter=No
+22	,	,	PUNCT	_	_	21	punct	21:punct	_
+23	poderia	poder	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	13	conj	3:ccomp|13:conj:e	_
+24	comprometer	comprometer	VERB	_	VerbForm=Inf	23	xcomp	23:xcomp	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	integridade	integridade	NOUN	_	Gender=Fem|Number=Sing	24	obj	24:obj	_
+27-28	da	_	_	_	_	_	_	_	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	operação	operação	NOUN	_	Gender=Fem|Number=Sing	26	nmod	26:nmod:de	_
+30	contra	contra	ADP	_	_	31	case	31:case	_
+31	corrupção	corrupção	NOUN	_	Gender=Fem|Number=Sing	29	nmod	29:nmod:contra	SpaceAfter=No
+32	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0015
+# text = O Conselho Nacional do Ministério Público (CNMP) aprovou um documento expressando "grande preocupação" com o projeto, enquanto senadores contrários, como Ronaldo Caiado (DEM-GO) e Álvaro Dias (PV-PR), preparam um requerimento para retirar a urgência da proposta.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Conselho	Conselho	PROPN	_	_	11	nsubj	11:nsubj	_
+3	Nacional	Nacional	PROPN	_	_	2	flat:name	2:flat:name	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	Ministério	Ministério	PROPN	_	_	2	flat:name	2:flat:name	_
+7	Público	Público	PROPN	_	_	2	flat:name	2:flat:name	_
+8	(	(	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+9	CNMP	CNMP	PROPN	_	_	2	appos	2:appos	SpaceAfter=No
+10	)	)	PUNCT	_	_	9	punct	9:punct	_
+11	aprovou	aprovar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	documento	documento	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj	_
+14	expressando	expressar	VERB	_	VerbForm=Ger	13	acl	13:acl	_
+15	"	"	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+16	grande	grande	ADJ	_	Number=Sing	17	amod	17:amod	_
+17	preocupação	preocupação	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	SpaceAfter=No
+18	"	"	PUNCT	_	_	17	punct	17:punct	_
+19	com	com	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	17	nmod	17:nmod:com	SpaceAfter=No
+22	,	,	PUNCT	_	_	40	punct	40:punct	_
+23	enquanto	enquanto	SCONJ	_	_	40	mark	40:mark	_
+24	senadores	senador	NOUN	_	Gender=Masc|Number=Plur	40	nsubj	40:nsubj	_
+25	contrários	contrário	ADJ	_	Gender=Masc|Number=Plur	24	amod	24:amod	SpaceAfter=No
+26	,	,	PUNCT	_	_	28	punct	28:punct	_
+27	como	como	ADP	_	_	28	case	28:case|34:case	_
+28	Ronaldo	Ronaldo	PROPN	_	_	24	nmod	24:nmod:como	_
+29	Caiado	Caiado	PROPN	_	_	28	flat:name	28:flat:name	_
+30	(	(	PUNCT	_	_	31	punct	31:punct	SpaceAfter=No
+31	DEM-GO	DEM-GO	PROPN	_	_	28	parataxis	28:parataxis	SpaceAfter=No
+32	)	)	PUNCT	_	_	31	punct	31:punct	_
+33	e	e	CCONJ	_	_	34	cc	34:cc	_
+34	Álvaro	Álvaro	PROPN	_	_	28	conj	24:nmod:como|28:conj:e	_
+35	Dias	Dias	PROPN	_	_	34	flat:name	34:flat:name	_
+36	(	(	PUNCT	_	_	37	punct	37:punct	SpaceAfter=No
+37	PV-PR	PV-PR	PROPN	_	_	34	parataxis	34:parataxis	SpaceAfter=No
+38	)	)	PUNCT	_	_	37	punct	37:punct	SpaceAfter=No
+39	,	,	PUNCT	_	_	28	punct	28:punct	_
+40	preparam	preparar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	conj	11:conj	_
+41	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	42	det	42:det	_
+42	requerimento	requerimento	NOUN	_	Gender=Masc|Number=Sing	40	obj	40:obj	_
+43	para	para	ADP	_	_	44	mark	44:mark	_
+44	retirar	retirar	VERB	_	VerbForm=Inf	42	acl	42:acl:para	_
+45	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	46:det	_
+46	urgência	urgência	NOUN	_	Gender=Fem|Number=Sing	44	obj	44:obj	_
+47-48	da	_	_	_	_	_	_	_	_
+47	de	de	ADP	_	_	49	case	49:case	_
+48	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	49	det	49:det	_
+49	proposta	proposta	NOUN	_	Gender=Fem|Number=Sing	44	obl	44:obl:de	SpaceAfter=No
+50	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0017
+# text = A proposta, agora, prevê penas mais severas para ações como divulgar gravações íntimas, interceptações sem autorização judicial e extensão injustificada de investigações.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	proposta	proposta	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	agora	agora	ADV	_	_	6	advmod	6:advmod	SpaceAfter=No
+5	,	,	PUNCT	_	_	4	punct	4:punct	_
+6	prevê	prever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	penas	pena	NOUN	_	Gender=Fem|Number=Plur	6	obj	6:obj	_
+8	mais	mais	ADV	_	_	9	advmod	9:advmod	_
+9	severas	severo	ADJ	_	Gender=Fem|Number=Plur	7	amod	7:amod	_
+10	para	para	ADP	_	_	11	case	11:case	_
+11	ações	ação	NOUN	_	Gender=Fem|Number=Plur	6	obl	6:obl:para	_
+12	como	como	ADP	_	_	13	mark	13:mark	_
+13	divulgar	divulgar	VERB	_	VerbForm=Inf	11	acl	11:acl:como	_
+14	gravações	gravação	NOUN	_	Gender=Fem|Number=Plur	13	obj	13:obj	_
+15	íntimas	íntimo	ADJ	_	Gender=Fem|Number=Plur	14	amod	14:amod	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	interceptações	interceptação	NOUN	_	Gender=Fem|Number=Plur	14	conj	13:obj|14:conj	_
+18	sem	sem	ADP	_	_	19	case	19:case	_
+19	autorização	autorização	NOUN	_	Gender=Fem|Number=Sing	17	nmod	17:nmod:sem	_
+20	judicial	judicial	ADJ	_	Number=Sing	19	amod	19:amod	_
+21	e	e	CCONJ	_	_	22	cc	22:cc	_
+22	extensão	extensão	NOUN	_	Gender=Fem|Number=Sing	13	conj	11:nmod:como|13:conj:e	_
+23	injustificada	injustificado	ADJ	_	Gender=Fem|Number=Sing	22	amod	22:amod	_
+24	de	de	ADP	_	_	25	case	25:case	_
+25	investigações	investigação	NOUN	_	Gender=Fem|Number=Plur	22	nmod	22:nmod:de	SpaceAfter=No
+26	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0019
+# text = Moro, por sua vez, contestou, afirmando que a redação atual ameaça a independência judicial.
+1	Moro	Moro	PROPN	_	_	7	nsubj	7:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	5	punct	5:punct	_
+3	por	por	ADP	_	_	5	case	5:case	_
+4	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	det	5:det	_
+5	vez	vez	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:por	SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	5:punct	_
+7	contestou	contestar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	afirmando	afirmar	VERB	_	VerbForm=Ger	7	advcl	7:advcl	_
+10	que	que	SCONJ	_	_	14	mark	14:mark	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	redação	redação	NOUN	_	Gender=Fem|Number=Sing	14	nsubj	14:nsubj	_
+13	atual	atual	ADJ	_	Number=Sing	12	amod	12:amod	_
+14	ameaça	ameaçar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	ccomp	9:ccomp	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	independência	independência	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	_
+17	judicial	judicial	ADJ	_	Number=Sing	16	amod	16:amod	SpaceAfter=No
+18	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0021
+# text = Não há como o legislador restringir o juiz a um método de interpretação.
+1	Não	não	ADV	_	_	2	advmod	2:advmod	_
+2	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	como	como	ADV	_	_	6	advmod	6:advmod	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	legislador	legislador	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+6	restringir	restringir	VERB	_	VerbForm=Inf	2	ccomp	2:ccomp	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	juiz	juiz	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+9	a	a	ADP	_	_	11	case	11:case	_
+10	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	método	método	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:a	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	interpretação	interpretação	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:de	SpaceAfter=No
+14	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0023
+# text = Isso é um ataque à nossa autonomia, afirmou Moro.
+1	Isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	4	nsubj	4:nsubj	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	ataque	ataque	NOUN	_	Gender=Masc|Number=Sing	10	ccomp:speech	10:ccomp:speech	_
+5-6	à	_	_	_	_	_	_	_	_
+5	a	a	ADP	_	_	8	case	8:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+7	nossa	nosso	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	8	det	8:det	_
+8	autonomia	autonomia	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:a	SpaceAfter=No
+9	,	,	PUNCT	_	_	4	punct	4:punct	_
+10	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+11	Moro	Moro	PROPN	_	_	10	nsubj	10:nsubj	SpaceAfter=No
+12	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0025
+# text = Requião, no entanto, defende que seu relatório "corrige" a proposta de Moro, mantendo um equilíbrio entre proteção judicial e a necessidade de coibir abusos.
+1	Requião	Requião	PROPN	_	_	7	nsubj	7:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3-4	no	_	_	_	_	_	_	_	_
+3	em	em	ADP	_	ExtPos=CCONJ	7	cc	7:cc	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	fixed	3:fixed	_
+5	entanto	entanto	NOUN	_	Gender=Masc|Number=Sing	3	fixed	3:fixed	SpaceAfter=No
+6	,	,	PUNCT	_	_	3	punct	3:punct	_
+7	defende	defender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	que	que	SCONJ	_	_	12	mark	12:mark	_
+9	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	10	det	10:det	_
+10	relatório	relatório	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	12:nsubj	_
+11	"	"	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+12	corrige	corrigir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	ccomp	7:ccomp	SpaceAfter=No
+13	"	"	PUNCT	_	_	12	punct	12:punct	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	proposta	proposta	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	Moro	Moro	PROPN	_	_	15	nmod	15:nmod:de	SpaceAfter=No
+18	,	,	PUNCT	_	_	19	punct	19:punct	_
+19	mantendo	manter	VERB	_	VerbForm=Ger	12	advcl	12:advcl	_
+20	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	equilíbrio	equilíbrio	NOUN	_	Gender=Masc|Number=Sing	19	obj	19:obj	_
+22	entre	entre	ADP	_	_	23	case	23:case	_
+23	proteção	proteção	NOUN	_	Gender=Fem|Number=Sing	21	nmod	21:nmod:entre	_
+24	judicial	judicial	ADJ	_	Number=Sing	23	amod	23:amod	_
+25	e	e	CCONJ	_	_	27	cc	27:cc	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	necessidade	necessidade	NOUN	_	Gender=Fem|Number=Sing	23	conj	21:nmod:entre|23:conj:e	_
+28	de	de	ADP	_	_	29	mark	29:mark	_
+29	coibir	coibir	VERB	_	VerbForm=Inf	27	acl	27:acl:de	_
+30	abusos	abuso	NOUN	_	Gender=Masc|Number=Plur	29	obj	29:obj	SpaceAfter=No
+31	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0027
+# text = Ele também destacou que a crise política atual é uma oportunidade para melhorar a legislação e proteger os cidadãos.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	3:nsubj	_
+2	também	também	ADV	_	_	3	advmod	3:advmod	_
+3	destacou	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	11	mark	11:mark	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	crise	crise	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	11:nsubj	_
+7	política	político	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	_
+8	atual	atual	ADJ	_	Number=Sing	6	amod	6:amod	_
+9	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	11:cop	_
+10	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	oportunidade	oportunidade	NOUN	_	Gender=Fem|Number=Sing	3	ccomp	3:ccomp	_
+12	para	para	ADP	_	_	13	mark	13:mark|17:mark	_
+13	melhorar	melhorar	VERB	_	VerbForm=Inf	11	acl	11:acl:para	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	legislação	legislação	NOUN	_	Gender=Fem|Number=Sing	13	obj	13:obj	_
+16	e	e	CCONJ	_	_	17	cc	17:cc	_
+17	proteger	proteger	VERB	_	VerbForm=Inf	13	conj	11:acl:para|13:conj:e	_
+18	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	19:det	_
+19	cidadãos	cidadão	NOUN	_	Gender=Masc|Number=Plur	17	obj	17:obj	SpaceAfter=No
+20	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0029
+# text = "O momento é delicado, mas precisamente por isso devemos fortalecer as leis que protegem a cidadania", concluiu Requião.
+1	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+2	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	momento	momento	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+5	delicado	delicado	ADJ	_	Gender=Masc|Number=Sing	21	ccomp:speech	21:ccomp:speech	SpaceAfter=No
+6	,	,	PUNCT	_	_	11	punct	11:punct	_
+7	mas	mas	CCONJ	_	_	11	cc	11:cc	_
+8	precisamente	precisamente	ADV	_	_	11	advmod	11:advmod	_
+9	por	por	ADP	_	_	10	case	10:case	_
+10	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	11	obl	11:obl:por	_
+11	devemos	dever	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	5	conj	5:conj:mas|21:ccomp:speech	_
+12	fortalecer	fortalecer	VERB	_	VerbForm=Inf	11	xcomp	11:xcomp	_
+13	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	14:det	_
+14	leis	lei	NOUN	_	Gender=Fem|Number=Plur	12	obj	12:obj|16:nsubj	_
+15	que	que	PRON	_	PronType=Rel	16	nsubj	14:ref	_
+16	protegem	proteger	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	acl:relcl	14:acl:relcl	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	cidadania	cidadania	NOUN	_	Gender=Fem|Number=Sing	16	obj	16:obj	SpaceAfter=No
+19	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+20	,	,	PUNCT	_	_	5	punct	5:punct	_
+21	concluiu	concluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+22	Requião	Requião	PROPN	_	_	21	nsubj	21:nsubj	SpaceAfter=No
+23	.	.	PUNCT	_	_	21	punct	21:punct	_
+
+# sent_id = S0031
+# text = As mudanças propostas incluem: - Detenção de 1 a 4 anos para divulgação de gravações íntimas ou difamatórias.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	mudanças	mudança	NOUN	_	Gender=Fem|Number=Plur	4	nsubj	4:nsubj	_
+3	propostas	propor	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	2	acl	2:acl	_
+4	incluem	incluir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+5	:	:	PUNCT	_	_	7	punct	7:punct	_
+6	-	-	PUNCT	_	_	7	punct	7:punct	_
+7	Detenção	detenção	NOUN	_	Gender=Fem|Number=Sing	4	parataxis	4:parataxis	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	1	1	NUM	_	NumType=Card	12	nummod	12:nummod	_
+10	a	a	ADP	_	_	11	case	11:case	_
+11	4	4	NUM	_	NumType=Card	12	nummod	12:nummod	_
+12	anos	ano	NOUN	_	Gender=Masc|Number=Plur	7	nmod	7:nmod	_
+13	para	para	ADP	_	_	14	case	14:case	_
+14	divulgação	divulgação	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:para	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	gravações	gravação	NOUN	_	Gender=Fem|Number=Plur	14	nmod	14:nmod:de	_
+17	íntimas	íntimo	ADJ	_	Gender=Fem|Number=Plur	16	amod	16:amod	_
+18	ou	ou	CCONJ	_	_	19	cc	19:cc	_
+19	difamatórias	difamatório	ADJ	_	Gender=Fem|Number=Plur	17	conj	16:amod|17:conj:ou	SpaceAfter=No
+20	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0033
+# text = - Reclusão de 2 a 4 anos para interceptações ilegais.
+1	-	-	PUNCT	_	_	2	punct	2:punct	_
+2	Reclusão	reclusão	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	2	2	NUM	_	NumType=Card	7	nummod	7:nummod	_
+5	a	a	ADP	_	_	6	case	6:case	_
+6	4	4	NUM	_	NumType=Card	7	nummod	7:nummod	_
+7	anos	ano	NOUN	_	Gender=Masc|Number=Plur	2	nmod	2:nmod	_
+8	para	para	ADP	_	_	9	case	9:case	_
+9	interceptações	interceptação	NOUN	_	Gender=Fem|Number=Plur	2	nmod	2:nmod:para	_
+10	ilegais	ilegal	ADJ	_	Number=Plur	9	amod	9:amod	SpaceAfter=No
+11	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0035
+# text = - Detenção de 1 a 5 anos para início de processos penais abusivos.
+1	-	-	PUNCT	_	_	2	punct	2:punct	_
+2	Detenção	detenção	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	1	1	NUM	_	NumType=Card	7	nummod	7:nummod	_
+5	a	a	ADP	_	_	6	case	6:case	_
+6	5	5	NUM	_	NumType=Card	7	nummod	7:nummod	_
+7	anos	ano	NOUN	_	Gender=Masc|Number=Plur	2	nmod	2:nmod	_
+8	para	para	ADP	_	_	9	case	9:case	_
+9	início	início	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:para	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	processos	processo	NOUN	_	Gender=Masc|Number=Plur	9	nmod	9:nmod:de	_
+12	penais	penal	ADJ	_	Number=Plur	11	amod	11:amod	_
+13	abusivos	abusivo	ADJ	_	Gender=Masc|Number=Plur	11	amod	11:amod	SpaceAfter=No
+14	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0037
+# text = - Detenção de 6 meses a 2 anos para investigações prolongadas sem justificativa.
+1	-	-	PUNCT	_	_	2	punct	2:punct	_
+2	Detenção	detenção	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	6	6	NUM	_	NumType=Card	5	nummod	5:nummod	_
+5	meses	mÃªs	NOUN	_	Gender=Masc|Number=Plur	2	nmod	2:nmod:de	_
+6	a	a	ADP	_	_	8	case	8:case	_
+7	2	2	NUM	_	NumType=Card	8	nummod	8:nummod	_
+8	anos	ano	NOUN	_	Gender=Masc|Number=Plur	5	nmod	5:nmod:a	_
+9	para	para	ADP	_	_	10	case	10:case	_
+10	investigações	investigação	NOUN	_	Gender=Fem|Number=Plur	2	nmod	2:nmod:para	_
+11	prolongadas	prolongado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	10	amod	10:amod	_
+12	sem	sem	ADP	_	_	13	case	13:case	_
+13	justificativa	justificativa	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:sem	SpaceAfter=No
+14	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0039
+# text = - Detenção de 1 a 4 anos para decretar indisponibilidade excessiva de ativos financeiros.
+1	-	-	PUNCT	_	_	2	punct	2:punct	_
+2	Detenção	detenção	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	1	1	NUM	_	NumType=Card	7	nummod	7:nummod	_
+5	a	a	ADP	_	_	6	case	6:case	_
+6	4	4	NUM	_	NumType=Card	7	nummod	7:nummod	_
+7	anos	ano	NOUN	_	Gender=Masc|Number=Plur	2	nmod	2:nmod	_
+8	para	para	ADP	_	_	9	mark	9:mark	_
+9	decretar	decretar	VERB	_	VerbForm=Inf	2	acl	2:acl:para	_
+10	indisponibilidade	indisponibilidade	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+11	excessiva	excessivo	ADJ	_	Gender=Fem|Number=Sing	10	amod	10:amod	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	ativos	ativo	NOUN	_	Gender=Masc|Number=Plur	10	nmod	10:nmod:de	_
+14	financeiros	financeiro	ADJ	_	Gender=Masc|Number=Plur	13	amod	13:amod	SpaceAfter=No
+15	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0041
+# text = A votação do projeto está prevista para os próximos dias e promete ser um campo de batalha entre defensores da lei mais rigorosa e aqueles que acreditam na necessidade de proteção à autonomia judicial.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	votação	votação	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj|13:nsubj|16:nsubj	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	_
+6	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+7	prevista	previsto	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	0	root	0:root	_
+8	para	para	ADP	_	_	11	case	11:case	_
+9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	11:det	_
+10	próximos	próximo	ADJ	_	Gender=Masc|Number=Plur	11	amod	11:amod	_
+11	dias	dia	NOUN	_	Gender=Masc|Number=Plur	7	obl	7:obl:para	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	promete	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	7:conj:e	_
+14	ser	ser	AUX	_	VerbForm=Inf	16	cop	16:cop	_
+15	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	campo	campo	NOUN	_	Gender=Masc|Number=Sing	13	xcomp	13:xcomp	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	batalha	batalha	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:de	_
+19	entre	entre	ADP	_	_	20	case	20:case	_
+20	defensores	defensor	NOUN	_	Gender=Masc|Number=Plur	16	nmod	16:nmod:entre	_
+21-22	da	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	lei	lei	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:de	_
+24	mais	mais	ADV	_	_	25	advmod	25:advmod	_
+25	rigorosa	rigoroso	ADJ	_	Gender=Fem|Number=Sing	23	amod	23:amod	_
+26	e	e	CCONJ	_	_	27	cc	27:cc	_
+27	aqueles	aquele	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	20	conj	16:nmod:entre|20:conj:e|29:nsubj	_
+28	que	que	PRON	_	PronType=Rel	29	nsubj	27:ref	_
+29	acreditam	acreditar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	27	acl:relcl	27:acl:relcl	_
+30-31	na	_	_	_	_	_	_	_	_
+30	em	em	ADP	_	_	32	case	32:case	_
+31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	32:det	_
+32	necessidade	necessidade	NOUN	_	Gender=Fem|Number=Sing	29	obl	29:obl:em	_
+33	de	de	ADP	_	_	34	case	34:case	_
+34	proteção	proteção	NOUN	_	Gender=Fem|Number=Sing	32	nmod	32:nmod:de	_
+35-36	à	_	_	_	_	_	_	_	_
+35	a	a	ADP	_	_	37	case	37:case	_
+36	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	37:det	_
+37	autonomia	autonomia	NOUN	_	Gender=Fem|Number=Sing	34	nmod	34:nmod:a	_
+38	judicial	judicial	ADJ	_	Number=Sing	37	amod	37:amod	SpaceAfter=No
+39	.	.	PUNCT	_	_	7	punct	7:punct	_

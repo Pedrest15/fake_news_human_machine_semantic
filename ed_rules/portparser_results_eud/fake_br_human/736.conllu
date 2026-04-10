@@ -1,0 +1,335 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Jornalista diz que Lula se prepara para pedir asilo em embaixada comunista.
+1	Jornalista	jornalista	NOUN	_	Number=Sing	2	nsubj	2:nsubj	_
+2	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	6	mark	6:mark	_
+4	Lula	Lula	PROPN	_	_	6	nsubj	6:nsubj	_
+5	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	6	expl	6:expl	_
+6	prepara	preparar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	2:ccomp	_
+7	para	para	ADP	_	_	8	mark	8:mark	_
+8	pedir	pedir	VERB	_	VerbForm=Inf	6	advcl	6:advcl:para	_
+9	asilo	asilo	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	_
+10	em	em	ADP	_	_	11	case	11:case	_
+11	embaixada	embaixada	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:em	_
+12	comunista	comunista	ADJ	_	Number=Sing	11	amod	11:amod	SpaceAfter=No
+13	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Já condenado em 1a instância (pelo juiz Sérgio Moro), Lula tem visto sua situação se agravar a cada dia que passa.
+1	Já	já	ADV	_	_	2	advmod	2:advmod	_
+2	condenado	condenar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	16	advcl	16:advcl	_
+3	em	em	ADP	_	_	5	case	5:case	_
+4	1a	1a	ADJ	_	Gender=Fem|NumType=Ord	5	amod	5:amod	_
+5	instância	instância	NOUN	_	Gender=Fem|Number=Sing	2	obl	2:obl:em	_
+6	(	(	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+7-8	pelo	_	_	_	_	_	_	_	_
+7	por	por	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	juiz	juiz	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:por	_
+10	Sérgio	Sérgio	PROPN	_	_	9	nmod	9:nmod	_
+11	Moro	Moro	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+12	)	)	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+13	,	,	PUNCT	_	_	2	punct	2:punct	_
+14	Lula	Lula	PROPN	_	_	16	nsubj	16:nsubj	_
+15	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux	16:aux	_
+16	visto	ver	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+17	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	18	det	18:det	_
+18	situação	situação	NOUN	_	Gender=Fem|Number=Sing	16	obj	16:obj|20:nsubj	_
+19	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	20	expl	20:expl	_
+20	agravar	agravar	VERB	_	VerbForm=Inf	16	xcomp	16:xcomp	_
+21	a	a	ADP	_	_	23	case	23:case	_
+22	cada	cada	DET	_	Number=Sing|PronType=Ind	23	det	23:det	_
+23	dia	dia	NOUN	_	Gender=Masc|Number=Sing	20	obl	20:obl:a|25:nsubj	_
+24	que	que	PRON	_	PronType=Rel	25	nsubj	23:ref	_
+25	passa	passar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	acl:relcl	23:acl:relcl	SpaceAfter=No
+26	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0005
+# text = As penas determinadas pela Justiça em primeira instância só podem ser executadas a partir da confirmação feita pela segunda instância [...] no caso de Lula (especificamente) a 8a Turma do TRF4, que é composta por 3 desembargadores.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	penas	pena	NOUN	_	Gender=Fem|Number=Plur	11	nsubj	11:nsubj|13:nsubj:pass	_
+3	determinadas	determinar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	2	acl	2:acl	_
+4-5	pela	_	_	_	_	_	_	_	_
+4	por	por	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	Justiça	Justiça	PROPN	_	_	3	obl:agent	3:obl:agent	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	primeira	primeiro	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	9	amod	9:amod	_
+9	instância	instância	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:em	_
+10	só	só	ADV	_	_	11	advmod	11:advmod	_
+11	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+12	ser	ser	AUX	_	VerbForm=Inf	13	aux:pass	13:aux:pass	_
+13	executadas	executar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	11	xcomp	11:xcomp	_
+14	a	a	ADP	_	_	15	mark	15:mark	_
+15	partir	partir	VERB	_	VerbForm=Inf	13	advcl	13:advcl:a	_
+16-17	da	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	confirmação	confirmação	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl:de	_
+19	feita	fazer	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	18	acl	18:acl	_
+20-21	pela	_	_	_	_	_	_	_	_
+20	por	por	ADP	_	_	23	case	23:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+22	segunda	segundo	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	23	amod	23:amod	_
+23	instância	instância	NOUN	_	Gender=Fem|Number=Sing	19	obl:agent	19:obl:agent	_
+24	[	[	PUNCT	_	_	25	punct	25:punct	SpaceAfter=No
+25	.	.	PUNCT	_	_	30	appos	30:appos	SpaceAfter=No
+26	..	..	PUNCT	_	_	25	punct	25:punct	SpaceAfter=No
+27	]	]	PUNCT	_	_	34	punct	34:punct	_
+28-29	no	_	_	_	_	_	_	_	_
+28	em	em	ADP	_	_	30	case	30:case	_
+29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	30:det	_
+30	caso	caso	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:em	_
+31	de	de	ADP	_	_	32	case	32:case	_
+32	Lula	Lula	PROPN	_	_	30	nmod	30:nmod:de	_
+33	(	(	PUNCT	_	_	34	punct	34:punct	SpaceAfter=No
+34	especificamente	especificamente	ADV	_	_	38	advmod	38:advmod	SpaceAfter=No
+35	)	)	PUNCT	_	_	34	punct	34:punct	_
+36	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	38:det	_
+37	8a	8a	ADJ	_	Gender=Fem|NumType=Ord	38	amod	38:amod	_
+38	Turma	Turma	PROPN	_	_	18	appos	18:appos|45:nsubj:pass	_
+39-40	do	_	_	_	_	_	_	_	_
+39	de	de	ADP	_	_	41	case	41:case	_
+40	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	41:det	_
+41	TRF4	TRF4	PROPN	_	_	38	nmod	38:nmod:de	SpaceAfter=No
+42	,	,	PUNCT	_	_	45	punct	45:punct	_
+43	que	que	PRON	_	PronType=Rel	45	nsubj:pass	38:ref	_
+44	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	45	aux:pass	45:aux:pass	_
+45	composta	compor	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	38	acl:relcl	38:acl:relcl	_
+46	por	por	ADP	_	_	48	case	48:case	_
+47	3	3	NUM	_	NumType=Card	48	nummod	48:nummod	_
+48	desembargadores	desembargador	NOUN	_	Gender=Masc|Number=Plur	45	obl:agent	45:obl:agent	SpaceAfter=No
+49	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0007
+# text = O jornalista Cláudio Humberto, do site Diário do Poder, informou que as chances de Lula não só ser condenado, mas como também ter sua pena aumentada pelo TRF4 são grandes.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	jornalista	jornalista	NOUN	_	Number=Sing	14	nsubj	14:nsubj	_
+3	Cláudio	Cláudio	PROPN	_	_	2	nmod	2:nmod	_
+4	Humberto	Humberto	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	8	punct	8:punct	_
+6-7	do	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	site	site	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	_
+9	Diário	Diário	PROPN	_	_	8	nmod	8:nmod	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	Poder	Poder	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+13	,	,	PUNCT	_	_	8	punct	8:punct	_
+14	informou	informar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+15	que	que	SCONJ	_	_	36	mark	36:mark	_
+16	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	17:det	_
+17	chances	chance	NOUN	_	Gender=Fem|Number=Plur	36	nsubj	36:nsubj	_
+18	de	de	ADP	_	_	23	mark	23:mark	_
+19	Lula	Lula	PROPN	_	_	23	nsubj:pass	23:nsubj:pass|28:nsubj	_
+20	não	não	ADV	_	_	21	advmod	21:advmod	_
+21	só	só	ADV	_	_	23	advmod	23:advmod	_
+22	ser	ser	AUX	_	Number=Sing|Person=3|VerbForm=Inf	23	aux:pass	23:aux:pass	_
+23	condenado	condenar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	17	acl	17:acl:de	SpaceAfter=No
+24	,	,	PUNCT	_	_	28	punct	28:punct	_
+25	mas	mas	CCONJ	_	_	28	cc	28:cc	_
+26	como	como	ADP	_	_	28	mark	28:mark	_
+27	também	também	ADV	_	_	28	advmod	28:advmod	_
+28	ter	ter	VERB	_	VerbForm=Inf	23	conj	17:acl:de|23:conj:mas	_
+29	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	30	det	30:det	_
+30	pena	pena	NOUN	_	Gender=Fem|Number=Sing	28	obj	28:obj|31:nsubj:pass	_
+31	aumentada	aumentar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	28	xcomp	28:xcomp	_
+32-33	pelo	_	_	_	_	_	_	_	_
+32	por	por	ADP	_	_	34	case	34:case	_
+33	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	34:det	_
+34	TRF4	TRF4	PROPN	_	_	31	obl:agent	31:obl:agent	_
+35	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	36	cop	36:cop	_
+36	grandes	grande	ADJ	_	Number=Plur	14	ccomp	14:ccomp	SpaceAfter=No
+37	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0009
+# text = Parlamentares do PT voltaram a discutir a hipótese de fuga do país.
+1	Parlamentares	parlamentar	NOUN	_	Gender=Masc|Number=Plur	5	nsubj	5:nsubj|7:nsubj	_
+2-3	do	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	PT	PT	PROPN	_	_	1	nmod	1:nmod:de	_
+5	voltaram	voltar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	a	a	ADP	_	_	7	mark	7:mark	_
+7	discutir	discutir	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	hipótese	hipótese	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	fuga	fuga	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:de	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	país	país	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:de	SpaceAfter=No
+15	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0010
+# text = disse o jornalista, acrescentando que o próprio Lula já considera essa opção.
+1	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	jornalista	jornalista	NOUN	_	Number=Sing	1	nsubj	1:nsubj	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	acrescentando	acrescentar	VERB	_	VerbForm=Ger	1	advcl	1:advcl	_
+6	que	que	SCONJ	_	_	11	mark	11:mark	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+8	próprio	próprio	DET	_	Gender=Masc|Number=Sing|PronType=Dem	9	det	9:det	_
+9	Lula	Lula	PROPN	_	_	11	nsubj	11:nsubj	_
+10	já	já	ADV	_	_	11	advmod	11:advmod	_
+11	considera	considerar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	ccomp	5:ccomp	_
+12	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	13	det	13:det	_
+13	opção	opção	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	SpaceAfter=No
+14	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0012
+# text = A alternativa acima é um tanto quanto "burra e inocente" [...] assim que fugisse do Brasil, a Interpol seria acionada e, em questão de dias, o pixuleco estaria de volta.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	alternativa	alternativa	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	9:nsubj|11:nsubj	_
+3	acima	acima	ADV	_	_	2	advmod	2:advmod	_
+4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	9:cop|11:cop	_
+5	um	um	DET	_	Definite=Ind|ExtPos=ADV|Gender=Masc|Number=Sing|PronType=Art	9	advmod	9:advmod	_
+6	tanto	tanto	NOUN	_	Gender=Masc|Number=Sing	5	fixed	5:fixed	_
+7	quanto	quanto	ADV	_	_	5	fixed	5:fixed	_
+8	"	"	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+9	burra	burro	ADJ	_	Gender=Fem|Number=Sing	0	root	0:root	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	inocente	inocente	ADJ	_	Number=Sing	9	conj	9:conj:e	SpaceAfter=No
+12	"	"	PUNCT	_	_	9	punct	9:punct	_
+13	[	[	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+14	.	.	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+15	..	..	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+16	]	]	PUNCT	_	_	14	punct	14:punct	_
+17	assim	assim	ADV	_	ExtPos=SCONJ	19	mark	19:mark	_
+18	que	que	SCONJ	_	_	17	fixed	17:fixed	_
+19	fugisse	fugir	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	27	advcl	27:advcl:assim_que|39:advcl:assim_que	_
+20-21	do	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	Brasil	Brasil	PROPN	_	_	19	obl	19:obl:de	SpaceAfter=No
+23	,	,	PUNCT	_	_	19	punct	19:punct	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	Interpol	Interpol	PROPN	_	_	27	nsubj:pass	27:nsubj:pass	_
+26	seria	ser	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	27	aux:pass	27:aux:pass	_
+27	acionada	acionar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	9	dep	9:dep|11:dep	_
+28	e	e	CCONJ	_	_	39	cc	39:cc	SpaceAfter=No
+29	,	,	PUNCT	_	_	31	punct	31:punct	_
+30	em	em	ADP	_	_	31	case	31:case	_
+31	questão	questão	NOUN	_	Gender=Fem|Number=Sing	39	obl	39:obl:em	_
+32	de	de	ADP	_	_	33	case	33:case	_
+33	dias	dia	NOUN	_	Gender=Masc|Number=Plur	31	nmod	31:nmod:de	SpaceAfter=No
+34	,	,	PUNCT	_	_	31	punct	31:punct	_
+35	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	36:det	_
+36	pixuleco	pixuleco	NOUN	_	Gender=Masc|Number=Sing	39	nsubj	39:nsubj	_
+37	estaria	estar	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	39	cop	39:cop	_
+38	de	de	ADP	_	_	39	case	39:case	_
+39	volta	volta	NOUN	_	Gender=Fem|Number=Sing	27	conj	9:dep|11:dep|27:conj:e	SpaceAfter=No
+40	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0014
+# text = Uma outra saída para Lula seria pedir asilo em alguma embaixada "comunista" no Brasil: Cuba, Equador, Bolívia e Venezuela estariam entre as opções, explicou Cláudio Humberto.
+1	Uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+2	outra	outro	DET	_	Gender=Fem|Number=Sing|PronType=Ind	3	det	3:det	_
+3	saída	saída	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj	_
+4	para	para	ADP	_	_	5	case	5:case	_
+5	Lula	Lula	PROPN	_	_	3	nmod	3:nmod:para	_
+6	seria	ser	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	7	cop	7:cop	_
+7	pedir	pedir	VERB	_	VerbForm=Inf	31	ccomp:speech	31:ccomp:speech	_
+8	asilo	asilo	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	alguma	algum	DET	_	Gender=Fem|Number=Sing|PronType=Ind	11	det	11:det	_
+11	embaixada	embaixada	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:em	_
+12	"	"	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+13	comunista	comunista	ADJ	_	Number=Sing	11	amod	11:amod	SpaceAfter=No
+14	"	"	PUNCT	_	_	13	punct	13:punct	_
+15-16	no	_	_	_	_	_	_	_	_
+15	em	em	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	Brasil	Brasil	PROPN	_	_	11	nmod	11:nmod:em	SpaceAfter=No
+18	:	:	PUNCT	_	_	19	punct	19:punct	_
+19	Cuba	Cuba	PROPN	_	_	29	nsubj	29:nsubj	SpaceAfter=No
+20	,	,	PUNCT	_	_	21	punct	21:punct	_
+21	Equador	Equador	PROPN	_	_	19	conj	19:conj:e|29:nsubj	SpaceAfter=No
+22	,	,	PUNCT	_	_	23	punct	23:punct	_
+23	Bolívia	Bolívia	PROPN	_	_	19	conj	19:conj:e|29:nsubj	_
+24	e	e	CCONJ	_	_	25	cc	25:cc	_
+25	Venezuela	Venezuela	PROPN	_	_	19	conj	19:conj:e|29:nsubj	_
+26	estariam	estar	AUX	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	29	cop	29:cop	_
+27	entre	entre	ADP	_	_	29	case	29:case	_
+28	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	29	det	29:det	_
+29	opções	opção	NOUN	_	Gender=Fem|Number=Plur	7	parataxis	7:parataxis	SpaceAfter=No
+30	,	,	PUNCT	_	_	7	punct	7:punct	_
+31	explicou	explicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+32	Cláudio	Cláudio	PROPN	_	_	31	nsubj	31:nsubj	_
+33	Humberto	Humberto	PROPN	_	_	32	flat:name	32:flat:name	SpaceAfter=No
+34	.	.	PUNCT	_	_	31	punct	31:punct	_
+
+# sent_id = S0016
+# text = De acordo com os tratados internacionais, um condenado em ação penal não recebe status de "asilado político" e sim de "fugitivo da Justiça".
+1	De	de	ADP	_	_	2	case	2:case	_
+2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:de	_
+3	com	com	ADP	_	_	5	case	5:case	_
+4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	5:det	_
+5	tratados	tratado	NOUN	_	Gender=Masc|Number=Plur	2	nmod	2:nmod:com	_
+6	internacionais	internacional	ADJ	_	Number=Plur	5	amod	5:amod	SpaceAfter=No
+7	,	,	PUNCT	_	_	2	punct	2:punct	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	condenado	condenado	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	14:nsubj	_
+10	em	em	ADP	_	_	11	case	11:case	_
+11	ação	ação	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:em	_
+12	penal	penal	ADJ	_	Number=Sing	11	amod	11:amod	_
+13	não	não	ADV	_	_	14	advmod	14:advmod	_
+14	recebe	receber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+15	status	status	NOUN	_	Gender=Masc	14	obj	14:obj	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	"	"	PUNCT	_	_	18	punct	18:punct	SpaceAfter=No
+18	asilado	asilado	NOUN	_	Gender=Masc|Number=Sing	15	nmod	15:nmod:de	_
+19	político	político	ADJ	_	Gender=Masc|Number=Sing	18	amod	18:amod	SpaceAfter=No
+20	"	"	PUNCT	_	_	18	punct	18:punct	_
+21	e	e	CCONJ	_	_	25	cc	25:cc	_
+22	sim	sim	ADV	_	_	25	advmod	25:advmod	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	"	"	PUNCT	_	_	25	punct	25:punct	SpaceAfter=No
+25	fugitivo	fugitivo	NOUN	_	Gender=Masc|Number=Sing	18	conj	15:nmod:de|18:conj:e	_
+26-27	da	_	_	_	_	_	_	_	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	Justiça	Justiça	PROPN	_	_	25	nmod	25:nmod:de	SpaceAfter=No
+29	"	"	PUNCT	_	_	25	punct	25:punct	SpaceAfter=No
+30	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0018
+# text = Quer uma sugestão Lula?
+1	Quer	querer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	sugestão	sugestão	NOUN	_	Gender=Fem|Number=Sing	1	obj	1:obj	_
+4	Lula	Lula	PROPN	_	_	3	nmod	3:nmod	SpaceAfter=No
+5	?	?	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0020
+# text = Vai logo pra Venezuela e nos deixe em paz [...] aqui você só dá prejuízo!
+1	Vai	ir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	logo	logo	ADV	_	_	1	advmod	1:advmod	_
+3	pra	para	ADP	_	_	4	case	4:case	_
+4	Venezuela	Venezuela	PROPN	_	_	1	obl	1:obl:para	_
+5	e	e	CCONJ	_	_	7	cc	7:cc	_
+6	nos	nos	PRON	_	Case=Acc|Number=Plur|Person=1|PronType=Prs	7	obj	7:obj	_
+7	deixe	deixar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	1:conj:e	_
+8	em	em	ADP	_	_	9	case	9:case	_
+9	paz	paz	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:em	_
+10	[	[	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+11	.	.	PUNCT	_	_	17	parataxis	17:parataxis	SpaceAfter=No
+12	..	..	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+13	]	]	PUNCT	_	_	11	punct	11:punct	_
+14	aqui	aqui	ADV	_	_	17	advmod	17:advmod	_
+15	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	17	nsubj	17:nsubj	_
+16	só	só	ADV	_	_	17	advmod	17:advmod	_
+17	dá	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	1:parataxis	_
+18	prejuízo	prejuízo	NOUN	_	Gender=Masc|Number=Sing	17	obj	17:obj	SpaceAfter=No
+19	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0021
+# text = leia também:
+1	leia	ler	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	também	também	ADV	_	_	1	advmod	1:advmod	SpaceAfter=No
+3	:	:	PUNCT	_	_	1	punct	1:punct	_

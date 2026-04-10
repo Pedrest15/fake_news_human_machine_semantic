@@ -1,0 +1,201 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Reunião urgente do Foro de SP?
+1	Reunião	reunião	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+2	urgente	urgente	ADJ	_	Number=Sing	1	amod	1:amod	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	Foro	Foro	PROPN	_	_	1	nmod	1:nmod:de	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	SP	SP	PROPN	_	_	5	nmod	5:nmod:de	SpaceAfter=No
+8	?	?	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Dilma chega à capital paulista para encontrar Lula.
+1	Dilma	Dilma	PROPN	_	_	2	nsubj	2:nsubj	_
+2	chega	chegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3-4	à	_	_	_	_	_	_	_	_
+3	a	a	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	capital	capital	NOUN	_	Number=Sing	2	obl	2:obl:a	_
+6	paulista	paulista	ADJ	_	Number=Sing	5	amod	5:amod	_
+7	para	para	ADP	_	_	8	mark	8:mark	_
+8	encontrar	encontrar	VERB	_	VerbForm=Inf	2	advcl	2:advcl:para	_
+9	Lula	Lula	PROPN	_	_	8	obj	8:obj	SpaceAfter=No
+10	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = A presidente futura ex-presidente Dilma Rousseff nessa tarde desta em São Paulo para se encontrar com Lula.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	presidente	presidente	NOUN	_	Number=Sing	13	nsubj	13:nsubj	_
+3	futura	futuro	ADJ	_	Gender=Fem|Number=Sing	4	amod	4:amod	_
+4	ex-presidente	ex-presidente	NOUN	_	Number=Sing	2	nmod	2:nmod	_
+5	Dilma	Dilma	PROPN	_	_	4	nmod	4:nmod	_
+6	Rousseff	Rousseff	PROPN	_	_	5	flat:name	5:flat:name	_
+7-8	nessa	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	9	det	9:det	_
+9	tarde	tarde	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:em	_
+10-11	desta	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	esta	este	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	9	nmod	9:nmod:de	_
+12	em	em	ADP	_	_	13	case	13:case	_
+13	São	São	PROPN	_	_	0	root	0:root	_
+14	Paulo	Paulo	PROPN	_	_	13	flat:name	13:flat:name	_
+15	para	para	ADP	_	_	17	mark	17:mark	_
+16	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	17	expl	17:expl	_
+17	encontrar	encontrar	VERB	_	VerbForm=Inf	13	advcl	13:advcl:para	_
+18	com	com	ADP	_	_	19	case	19:case	_
+19	Lula	Lula	PROPN	_	_	17	obl	17:obl:com	SpaceAfter=No
+20	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0007
+# text = Dilma vai se hospedar no hotel Renaissance, onde farão o encontro "secreto" [...] que não é tão secreto assim.
+1	Dilma	Dilma	PROPN	_	_	4	nsubj	4:nsubj	_
+2	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	4:aux	_
+3	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	4	expl	4:expl	_
+4	hospedar	hospedar	VERB	_	VerbForm=Inf	0	root	0:root	_
+5-6	no	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	hotel	hotel	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:em|11:obl	_
+8	Renaissance	Renaissance	PROPN	_	_	7	nmod	7:nmod	SpaceAfter=No
+9	,	,	PUNCT	_	_	11	punct	11:punct	_
+10	onde	onde	ADV	_	_	11	advmod	7:ref	_
+11	farão	fazer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	7	acl:relcl	7:acl:relcl	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	encontro	encontro	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj|25:nsubj	_
+14	"	"	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+15	secreto	secreto	ADJ	_	Gender=Masc|Number=Sing	13	amod	13:amod	SpaceAfter=No
+16	"	"	PUNCT	_	_	15	punct	15:punct	_
+17	[	[	PUNCT	_	_	18	punct	18:punct	SpaceAfter=No
+18	.	.	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+19	..	..	PUNCT	_	_	18	punct	18:punct	SpaceAfter=No
+20	]	]	PUNCT	_	_	18	punct	18:punct	_
+21	que	que	PRON	_	PronType=Rel	25	nsubj	13:ref	_
+22	não	não	ADV	_	_	25	advmod	25:advmod	_
+23	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	cop	25:cop	_
+24	tão	tão	ADV	_	_	25	advmod	25:advmod	_
+25	secreto	secreto	ADJ	_	Gender=Masc|Number=Sing	13	acl:relcl	13:acl:relcl	_
+26	assim	assim	ADV	_	_	25	advmod	25:advmod	SpaceAfter=No
+27	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0009
+# text = Após virem à tona uma série de denúncias contra o petista, a presidenta resolveu dar seu apoio a Lula, antes dele ser encaminhado (se Deus quiser) para a prisão da Papuda.
+1	Após	após	ADP	_	_	2	mark	2:mark	_
+2	virem	vir	VERB	_	Number=Plur|Person=3|VerbForm=Inf	16	advcl	16:advcl:após	_
+3-4	à	_	_	_	_	_	_	_	_
+3	a	a	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	tona	tona	NOUN	_	Gender=Fem|Number=Sing	2	obl	2:obl:a	_
+6	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	série	série	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	denúncias	denúncia	NOUN	_	Gender=Fem|Number=Plur	7	nmod	7:nmod:de	_
+10	contra	contra	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	petista	petista	NOUN	_	Number=Sing	9	nmod	9:nmod:contra	SpaceAfter=No
+13	,	,	PUNCT	_	_	2	punct	2:punct	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	presidenta	presidenta	NOUN	_	Gender=Fem|Number=Sing	16	nsubj	16:nsubj|17:nsubj	_
+16	resolveu	resolver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+17	dar	dar	VERB	_	VerbForm=Inf	16	xcomp	16:xcomp	_
+18	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	19	det	19:det	_
+19	apoio	apoio	NOUN	_	Gender=Masc|Number=Sing	17	obj	17:obj	_
+20	a	a	ADP	_	_	21	case	21:case	_
+21	Lula	Lula	PROPN	_	_	17	obl	17:obl:a	SpaceAfter=No
+22	,	,	PUNCT	_	_	23	punct	23:punct	_
+23	antes	antes	ADV	_	_	17	advmod	17:advmod	_
+24-25	dele	_	_	_	_	_	_	_	_
+24	de	de	ADP	_	_	27	mark	27:mark	_
+25	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	27	nsubj:pass	27:nsubj:pass	_
+26	ser	ser	AUX	_	VerbForm=Inf	27	aux:pass	27:aux:pass	_
+27	encaminhado	encaminhar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	23	acl	23:acl:de	_
+28	(	(	PUNCT	_	_	31	punct	31:punct	SpaceAfter=No
+29	se	se	SCONJ	_	_	31	mark	31:mark	_
+30	Deus	Deus	PROPN	_	_	31	nsubj	31:nsubj	_
+31	quiser	querer	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	27	advcl	27:advcl:se	SpaceAfter=No
+32	)	)	PUNCT	_	_	31	punct	31:punct	_
+33	para	para	ADP	_	_	35	case	35:case	_
+34	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	35:det	_
+35	prisão	prisão	NOUN	_	Gender=Fem|Number=Sing	27	obl	27:obl:para	_
+36-37	da	_	_	_	_	_	_	_	_
+36	de	de	ADP	_	_	38	case	38:case	_
+37	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	38:det	_
+38	Papuda	Papuda	PROPN	_	_	35	nmod	35:nmod:de	SpaceAfter=No
+39	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0011
+# text = O último encontro entre Dilma e Lula foi no início de janeiro no Palácio da Alvorada, em Brasília.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+2	último	último	ADJ	_	Gender=Masc|Number=Sing	3	amod	3:amod	_
+3	encontro	encontro	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	11:nsubj	_
+4	entre	entre	ADP	_	_	5	case	5:case	_
+5	Dilma	Dilma	PROPN	_	_	3	nmod	3:nmod:entre	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	Lula	Lula	PROPN	_	_	5	conj	3:nmod:entre|5:conj:e	_
+8	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	cop	11:cop	_
+9-10	no	_	_	_	_	_	_	_	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	início	início	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	janeiro	janeiro	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:de	_
+14-15	no	_	_	_	_	_	_	_	_
+14	em	em	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	Palácio	Palácio	PROPN	_	_	11	nmod	11:nmod:em	_
+17-18	da	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	Alvorada	Alvorada	PROPN	_	_	16	flat:name	16:flat:name	SpaceAfter=No
+20	,	,	PUNCT	_	_	22	punct	22:punct	_
+21	em	em	ADP	_	_	22	case	22:case	_
+22	Brasília	Brasília	PROPN	_	_	11	nmod	11:nmod:em	SpaceAfter=No
+23	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0013
+# text = Não resta a menor dúvida de que Lula está encrencado [...] e muito!
+1	Não	não	ADV	_	_	2	advmod	2:advmod	_
+2	resta	restar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+4	menor	menor	ADJ	_	Number=Sing	5	amod	5:amod	_
+5	dúvida	dúvida	NOUN	_	Gender=Fem|Number=Sing	2	nsubj	2:nsubj	_
+6	de	de	ADP	_	ExtPos=SCONJ	10	mark	10:mark|16:mark	_
+7	que	que	SCONJ	_	_	6	fixed	6:fixed	_
+8	Lula	Lula	PROPN	_	_	10	nsubj	10:nsubj|16:nsubj	_
+9	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop|16:cop	_
+10	encrencado	encrencado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	5	acl	5:acl:de_que	_
+11	[	[	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+12	.	.	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+13	..	..	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+14	]	]	PUNCT	_	_	12	punct	12:punct	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	muito	muito	ADV	_	_	10	conj	5:advmod|10:conj:e	SpaceAfter=No
+17	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0015
+# text = E o pior de tudo é que nós brasileiros acabamos pagando por esses deslocamentos e hospedagens inúteis da presidenta.
+1	E	e	CCONJ	_	_	10	cc	10:cc	_
+2	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	10	nsubj:outer	10:nsubj:outer	_
+3	pior	pior	ADJ	_	Number=Sing	2	amod	2:amod	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	tudo	tudo	PRON	_	PronType=Ind	2	nmod	2:nmod:de	_
+6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_
+7	que	que	SCONJ	_	_	10	mark	10:mark	_
+8	nós	nós	PRON	_	Case=Nom|Number=Plur|Person=1|PronType=Prs	9	det	9:det	_
+9	brasileiros	brasileiro	NOUN	_	Gender=Masc|Number=Plur	10	nsubj	10:nsubj|11:nsubj	_
+10	acabamos	acabar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+11	pagando	pagar	VERB	_	VerbForm=Ger	10	xcomp	10:xcomp	_
+12	por	por	ADP	_	_	14	case	14:case|16:case	_
+13	esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	14	det	14:det	_
+14	deslocamentos	deslocamento	NOUN	_	Gender=Masc|Number=Plur	11	obl	11:obl:por	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	hospedagens	hospedagem	NOUN	_	Gender=Fem|Number=Plur	14	conj	11:obl:por|14:conj:e	_
+17	inúteis	inútil	ADJ	_	Number=Plur	16	amod	16:amod	_
+18-19	da	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	presidenta	presidenta	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:de|16:nmod:de	SpaceAfter=No
+21	.	.	PUNCT	_	_	10	punct	10:punct	_

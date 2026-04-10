@@ -1,0 +1,355 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Ele contou que entregou propina a pedido de um amigo.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj	_
+2	contou	contar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	4	mark	4:mark	_
+4	entregou	entregar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	ccomp	2:ccomp	_
+5	propina	propina	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+6	a	a	ADP	_	_	7	case	7:case	_
+7	pedido	pedido	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:a	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	amigo	amigo	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	SpaceAfter=No
+11	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Dias depois,o amigo morreu.
+1	Dias	dia	NOUN	_	Gender=Masc|Number=Plur	4	obl	4:obl	_
+2	depois,o	depois,o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	amigo	amigo	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+4	morreu	morrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0005
+# text = Almeida conta que era amigo íntimo de Fernando de Arruda Botelho, um acionista da Camargo Corrêa que morreu em um acidente aéreo.
+1	Almeida	Almeida	PROPN	_	_	2	nsubj	2:nsubj	_
+2	conta	contar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	5	mark	5:mark	_
+4	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	cop	5:cop	_
+5	amigo	amigo	NOUN	_	Gender=Masc|Number=Sing	2	ccomp	2:ccomp	_
+6	íntimo	íntimo	ADJ	_	Gender=Masc|Number=Sing	5	amod	5:amod	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	Fernando	Fernando	PROPN	_	_	5	nmod	5:nmod:de	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	Arruda	Arruda	PROPN	_	_	8	flat:name	8:flat:name	_
+11	Botelho	Botelho	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+12	,	,	PUNCT	_	_	14	punct	14:punct	_
+13	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	acionista	acionista	NOUN	_	Number=Sing	8	appos	8:appos|20:nsubj	_
+15-16	da	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	Camargo	Camargo	PROPN	_	_	14	nmod	14:nmod:de	_
+18	Corrêa	Corrêa	PROPN	_	_	17	flat:name	17:flat:name	_
+19	que	que	PRON	_	PronType=Rel	20	nsubj	14:ref	_
+20	morreu	morrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	acl:relcl	14:acl:relcl	_
+21	em	em	ADP	_	_	23	case	23:case	_
+22	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	acidente	acidente	NOUN	_	Gender=Masc|Number=Sing	20	obl	20:obl:em	_
+24	aéreo	aéreo	ADJ	_	Gender=Masc|Number=Sing	23	amod	23:amod	SpaceAfter=No
+25	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0007
+# text = Para ele, seu amigo foi assassinado para encobrir um esquema de corrupção na empresa.
+1	Para	para	ADP	_	_	2	case	2:case	_
+2	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	obl	7:obl:para	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	det	5:det	_
+5	amigo	amigo	NOUN	_	Gender=Masc|Number=Sing	7	nsubj:pass	7:nsubj:pass	_
+6	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	aux:pass	7:aux:pass	_
+7	assassinado	assassinar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+8	para	para	ADP	_	_	9	mark	9:mark	_
+9	encobrir	encobrir	VERB	_	VerbForm=Inf	7	advcl	7:advcl:para	_
+10	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	esquema	esquema	NOUN	_	Gender=Masc|Number=Sing	9	obj	9:obj	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	corrupção	corrupção	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:de	_
+14-15	na	_	_	_	_	_	_	_	_
+14	em	em	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	empresa	empresa	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:em	SpaceAfter=No
+17	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0009
+# text = O acidente aconteceu na tarde de uma sexta-feira 13 (abril de 2012), quando Arruda Botelho (o acionista da Camargo Corrêa) e o piloto Sérgio foram carbonizados após o avião em que voavam cair nas proximidades de um aeródromo na cidade de São Carlos, SP.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	acidente	acidente	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	aconteceu	acontecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4-5	na	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	tarde	tarde	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:em	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	sexta-feira	sexta-feira	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de	_
+10	13	13	NUM	_	NumType=Card	9	nmod	9:nmod	_
+11	(	(	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+12	abril	abril	NOUN	_	Gender=Masc|Number=Sing	9	appos	9:appos	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	2012	2012	NUM	_	NumType=Card	12	nmod	12:nmod:de	SpaceAfter=No
+15	)	)	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+16	,	,	PUNCT	_	_	33	punct	33:punct	_
+17	quando	quando	SCONJ	_	_	33	mark	33:mark	_
+18	Arruda	Arruda	PROPN	_	_	33	nsubj:pass	33:nsubj:pass	_
+19	Botelho	Botelho	PROPN	_	_	18	flat:name	18:flat:name	_
+20	(	(	PUNCT	_	_	22	punct	22:punct	SpaceAfter=No
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	acionista	acionista	NOUN	_	Number=Sing	18	appos	18:appos	_
+23-24	da	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	Camargo	Camargo	PROPN	_	_	22	nmod	22:nmod:de	_
+26	Corrêa	Corrêa	PROPN	_	_	25	flat:name	25:flat:name	SpaceAfter=No
+27	)	)	PUNCT	_	_	22	punct	22:punct	_
+28	e	e	CCONJ	_	_	30	cc	30:cc	_
+29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	30:det	_
+30	piloto	piloto	NOUN	_	Gender=Masc|Number=Sing	18	conj	18:conj:e|33:nsubj:pass	_
+31	Sérgio	Sérgio	PROPN	_	_	30	nmod	30:nmod	_
+32	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	33	aux:pass	33:aux:pass	_
+33	carbonizados	carbonizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	3	conj	3:conj	_
+34	após	após	ADP	_	_	40	mark	40:mark	_
+35	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	36:det	_
+36	avião	avião	NOUN	_	Gender=Masc|Number=Sing	33	nsubj:pass	33:nsubj:pass|39:obl:em	_
+37	em	em	ADP	_	_	38	case	38:case	_
+38	que	que	PRON	_	PronType=Rel	39	obl	36:ref	_
+39	voavam	voar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	36	acl:relcl	36:acl:relcl	_
+40	cair	cair	VERB	_	VerbForm=Inf	33	advcl	33:advcl:após	_
+41-42	nas	_	_	_	_	_	_	_	_
+41	em	em	ADP	_	_	43	case	43:case	_
+42	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	43	det	43:det	_
+43	proximidades	proximidade	NOUN	_	Gender=Fem|Number=Plur	40	obl	40:obl:em	_
+44	de	de	ADP	_	_	46	case	46:case	_
+45	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	46	det	46:det	_
+46	aeródromo	aeródromo	NOUN	_	Gender=Masc|Number=Sing	43	nmod	43:nmod:de	_
+47-48	na	_	_	_	_	_	_	_	_
+47	em	em	ADP	_	_	49	case	49:case	_
+48	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	49	det	49:det	_
+49	cidade	cidade	NOUN	_	Gender=Fem|Number=Sing	43	nmod	43:nmod:em	_
+50	de	de	ADP	_	_	51	case	51:case	_
+51	São	São	PROPN	_	_	49	nmod	49:nmod:de	_
+52	Carlos	Carlos	PROPN	_	_	51	flat:name	51:flat:name	SpaceAfter=No
+53	,	,	PUNCT	_	_	54	punct	54:punct	_
+54	SP	SP	PROPN	_	_	49	parataxis	49:parataxis	SpaceAfter=No
+55	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0011
+# text = Abaixo a narração de Almeida: "Levei uma mala de dólares para Lula", disse na reportagem.
+1	Abaixo	abaixo	ADV	_	_	3	advmod	3:advmod	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	narração	narração	NOUN	_	Gender=Fem|Number=Sing	17	ccomp:speech	17:ccomp:speech	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	Almeida	Almeida	PROPN	_	_	3	nmod	3:nmod:de	SpaceAfter=No
+6	:	:	PUNCT	_	_	8	punct	8:punct	_
+7	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	Levei	levar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	3	parataxis	3:parataxis	_
+9	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	mala	mala	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	dólares	dólar	NOUN	_	Gender=Masc|Number=Plur	10	nmod	10:nmod:de	_
+13	para	para	ADP	_	_	14	case	14:case	_
+14	Lula	Lula	PROPN	_	_	8	obl	8:obl:para	SpaceAfter=No
+15	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+16	,	,	PUNCT	_	_	8	punct	8:punct	_
+17	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+18-19	na	_	_	_	_	_	_	_	_
+18	em	em	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	reportagem	reportagem	NOUN	_	Gender=Fem|Number=Sing	17	obl	17:obl:em	SpaceAfter=No
+21	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0013
+# text = Os valores não foram revelados, porém ele contou detalhes do transporte da suposta mala: Ela foi entregue para um funcionário da Morro Vermelho (a mesma empresa do avião que caiu com o empresário Arruda Botelho), William Steinmeyer, a quem ficou encarregado de entregar para o ex-presidente.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	valores	valor	NOUN	_	Gender=Masc|Number=Plur	5	nsubj:pass	5:nsubj:pass	_
+3	não	não	ADV	_	_	5	advmod	5:advmod	_
+4	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	5	aux:pass	5:aux:pass	_
+5	revelados	revelar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	SpaceAfter=No
+6	,	,	PUNCT	_	_	9	punct	9:punct	_
+7	porém	porém	CCONJ	_	_	9	cc	9:cc	_
+8	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nsubj	9:nsubj	_
+9	contou	contar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	conj	5:conj:porém	_
+10	detalhes	detalhe	NOUN	_	Gender=Masc|Number=Plur	9	obj	9:obj	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	transporte	transporte	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:de	_
+14-15	da	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	17	case	17:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+16	suposta	suposto	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	17	amod	17:amod	_
+17	mala	mala	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:de	SpaceAfter=No
+18	:	:	PUNCT	_	_	21	punct	21:punct	_
+19	Ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	21	nsubj:pass	21:nsubj:pass	_
+20	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	21	aux:pass	21:aux:pass	_
+21	entregue	entregar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	5	parataxis	5:parataxis	_
+22	para	para	ADP	_	_	24	case	24:case	_
+23	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	funcionário	funcionário	NOUN	_	Gender=Masc|Number=Sing	21	obl	21:obl:para	_
+25-26	da	_	_	_	_	_	_	_	_
+25	de	de	ADP	_	_	27	case	27:case	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	Morro	Morro	PROPN	_	_	24	nmod	24:nmod:de	_
+28	Vermelho	Vermelho	PROPN	_	_	27	flat:name	27:flat:name	_
+29	(	(	PUNCT	_	_	32	punct	32:punct	SpaceAfter=No
+30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	32:det	_
+31	mesma	mesmo	DET	_	Gender=Fem|Number=Sing|PronType=Dem	32	det	32:det	_
+32	empresa	empresa	NOUN	_	Gender=Fem|Number=Sing	27	appos	27:appos	_
+33-34	do	_	_	_	_	_	_	_	_
+33	de	de	ADP	_	_	35	case	35:case	_
+34	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	35:det	_
+35	avião	avião	NOUN	_	Gender=Masc|Number=Sing	32	nmod	32:nmod:de|37:nsubj	_
+36	que	que	PRON	_	PronType=Rel	37	nsubj	35:ref	_
+37	caiu	cair	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	35	acl:relcl	35:acl:relcl	_
+38	com	com	ADP	_	_	40	case	40:case	_
+39	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	40:det	_
+40	empresário	empresário	NOUN	_	Gender=Masc|Number=Sing	37	obl	37:obl:com	_
+41	Arruda	Arruda	PROPN	_	_	40	nmod	40:nmod	_
+42	Botelho	Botelho	PROPN	_	_	41	flat:name	41:flat:name	SpaceAfter=No
+43	)	)	PUNCT	_	_	32	punct	32:punct	SpaceAfter=No
+44	,	,	PUNCT	_	_	45	punct	45:punct	_
+45	William	William	PROPN	_	_	27	appos	27:appos|50:obl:a	_
+46	Steinmeyer	Steinmeyer	PROPN	_	_	45	flat:name	45:flat:name	SpaceAfter=No
+47	,	,	PUNCT	_	_	50	punct	50:punct	_
+48	a	a	ADP	_	_	49	case	49:case	_
+49	quem	quem	PRON	_	PronType=Rel	50	obl	45:ref	_
+50	ficou	ficar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	45	acl:relcl	45:acl:relcl	_
+51	encarregado	encarregado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	50	xcomp	50:xcomp	_
+52	de	de	ADP	_	_	53	mark	53:mark	_
+53	entregar	entregar	VERB	_	VerbForm=Inf	51	acl	51:acl:de	_
+54	para	para	ADP	_	_	56	case	56:case	_
+55	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	56	det	56:det	_
+56	ex-presidente	ex-presidente	NOUN	_	Number=Sing	53	obl	53:obl:para	SpaceAfter=No
+57	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0015
+# text = O dinheiro estava em um saco, dentro da mala.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+3	estava	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	cop	6:cop	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	saco	saco	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	8:punct	_
+8	dentro	dentro	ADV	_	_	6	advmod	6:advmod	_
+9-10	da	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	mala	mala	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:de	SpaceAfter=No
+12	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0017
+# text = Eu entreguei o saco com os valores e trouxe a mala de volta Almeida disse que após alguns dias, Lula apareceu (junto com um segurança) para recolher o pacote: Ele ficou de ajudar a fechar um contrato com a Petrobras, algo em torno de R$ 100 milhões, contou.
+1	Eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	2:nsubj	_
+2	entreguei	entregar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	54	ccomp:speech	54:ccomp:speech	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	saco	saco	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+5	com	com	ADP	_	_	7	case	7:case	_
+6	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	7:det	_
+7	valores	valor	NOUN	_	Gender=Masc|Number=Plur	4	nmod	4:nmod:com	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	trouxe	trazer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	22	conj	15:ccomp|22:conj:e	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	mala	mala	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	volta	volta	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:de	_
+14	Almeida	Almeida	PROPN	_	_	15	nsubj	15:nsubj	_
+15	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	54	dep	54:dep	_
+16	que	que	SCONJ	_	_	22	mark	9:mark|22:mark	_
+17	após	após	ADP	_	_	19	case	19:case	_
+18	alguns	algum	DET	_	Gender=Masc|Number=Plur|PronType=Ind	19	det	19:det	_
+19	dias	dia	NOUN	_	Gender=Masc|Number=Plur	22	obl	9:obl:após|22:obl:após	SpaceAfter=No
+20	,	,	PUNCT	_	_	19	punct	19:punct	_
+21	Lula	Lula	PROPN	_	_	22	nsubj	9:nsubj|22:nsubj	_
+22	apareceu	aparecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	ccomp	15:ccomp	_
+23	(	(	PUNCT	_	_	24	punct	24:punct	SpaceAfter=No
+24	junto	junto	ADV	_	_	22	advmod	9:advmod|22:advmod	_
+25	com	com	ADP	_	_	27	case	27:case	_
+26	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	segurança	segurança	NOUN	_	Number=Sing	24	obl	24:obl:com	SpaceAfter=No
+28	)	)	PUNCT	_	_	24	punct	24:punct	_
+29	para	para	ADP	_	_	30	mark	30:mark	_
+30	recolher	recolher	VERB	_	VerbForm=Inf	22	advcl	9:advcl:para|22:advcl:para	_
+31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+32	pacote	pacote	NOUN	_	Gender=Masc|Number=Sing	30	obj	30:obj	SpaceAfter=No
+33	:	:	PUNCT	_	_	35	punct	35:punct	_
+34	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	35	nsubj	35:nsubj|37:nsubj|39:nsubj	_
+35	ficou	ficar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	parataxis	2:parataxis	_
+36	de	de	ADP	_	_	37	mark	37:mark	_
+37	ajudar	ajudar	VERB	_	VerbForm=Inf	35	xcomp	35:xcomp	_
+38	a	a	ADP	_	_	39	mark	39:mark	_
+39	fechar	fechar	VERB	_	VerbForm=Inf	37	xcomp	37:xcomp	_
+40	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	41	det	41:det	_
+41	contrato	contrato	NOUN	_	Gender=Masc|Number=Sing	39	obj	39:obj	_
+42	com	com	ADP	_	_	44	case	44:case	_
+43	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	44:det	_
+44	Petrobras	Petrobras	PROPN	_	_	41	nmod	41:nmod:com	SpaceAfter=No
+45	,	,	PUNCT	_	_	46	punct	46:punct	_
+46	algo	algo	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	41	appos	41:appos	_
+47	em	em	ADP	_	ExtPos=ADP	52	case	52:case	_
+48	torno	torno	NOUN	_	Gender=Masc|Number=Sing	47	fixed	47:fixed	_
+49	de	de	ADP	_	_	47	fixed	47:fixed	_
+50	R$	R$	SYM	_	_	52	nmod	52:nmod	_
+51	100	100	NUM	_	NumType=Card	52	nummod	52:nummod	_
+52	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	46	nmod	46:nmod:em_torno_de	SpaceAfter=No
+53	,	,	PUNCT	_	_	35	punct	35:punct	_
+54	contou	contar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+55	.	.	PUNCT	_	_	54	punct	54:punct	_
+
+# sent_id = S0019
+# text = Além de Lula, o Davincci também disse que entregou malas cheias para funcionários da Petrobras, em outras ocasiões.
+1	Além	além	ADV	_	_	8	advmod	8:advmod	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	Lula	Lula	PROPN	_	_	1	obl	1:obl:de	SpaceAfter=No
+4	,	,	PUNCT	_	_	1	punct	1:punct	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	Davincci	Davincci	PROPN	_	_	8	nsubj	8:nsubj	_
+7	também	também	ADV	_	_	8	advmod	8:advmod	_
+8	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	que	que	SCONJ	_	_	10	mark	10:mark	_
+10	entregou	entregar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	ccomp	8:ccomp	_
+11	malas	mala	NOUN	_	Gender=Fem|Number=Plur	10	obj	10:obj	_
+12	cheias	cheio	ADJ	_	Gender=Fem|Number=Plur	11	amod	11:amod	_
+13	para	para	ADP	_	_	14	case	14:case	_
+14	funcionários	funcionário	NOUN	_	Gender=Masc|Number=Plur	10	obl	10:obl:para	_
+15-16	da	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	Petrobras	Petrobras	PROPN	_	_	14	nmod	14:nmod:de	SpaceAfter=No
+18	,	,	PUNCT	_	_	21	punct	21:punct	_
+19	em	em	ADP	_	_	21	case	21:case	_
+20	outras	outro	DET	_	Gender=Fem|Number=Plur|PronType=Ind	21	det	21:det	_
+21	ocasiões	ocasião	NOUN	_	Gender=Fem|Number=Plur	10	obl	10:obl:em	SpaceAfter=No
+22	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0021
+# text = Eita Brasil!
+1	Eita	eita	INTJ	_	_	0	root	0:root	_
+2	Brasil	Brasil	PROPN	_	_	1	nsubj	1:nsubj	SpaceAfter=No
+3	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0023
+# text = Corrupção mata mesmo [...] eita país pra cair avião!
+1	Corrupção	corrupção	NOUN	_	Gender=Fem|Number=Sing	2	nsubj	2:nsubj	_
+2	mata	matar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	mesmo	mesmo	ADV	_	_	2	advmod	2:advmod	_
+4	[	[	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+5	.	.	PUNCT	_	_	9	parataxis	9:parataxis	SpaceAfter=No
+6	..	..	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+7	]	]	PUNCT	_	_	5	punct	5:punct	_
+8	eita	eita	DET	_	PronType=Ind	9	det	9:det	_
+9	país	país	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+10	pra	para	ADP	_	_	11	mark	11:mark	_
+11	cair	cair	VERB	_	VerbForm=Inf	9	acl	9:acl:para	_
+12	avião	avião	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj	SpaceAfter=No
+13	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0025
+# text = reportagem da Revista IstoÉ.
+1	reportagem	reportagem	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+2-3	da	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	Revista	Revista	PROPN	_	_	1	nmod	1:nmod:de	_
+5	IstoÉ	IstoÉ	PROPN	_	_	4	flat:name	4:flat:name	SpaceAfter=No
+6	.	.	PUNCT	_	_	1	punct	1:punct	_

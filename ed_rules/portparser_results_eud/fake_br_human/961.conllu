@@ -1,0 +1,61 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Cantora Elza Soares (80 anos) era um dos passageiros do avião que pegou fogo no ar: "Fiquei paralisada".
+1	Cantora	cantor	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	9:nsubj	_
+2	Elza	Elza	PROPN	_	_	1	nmod	1:nmod	_
+3	Soares	Soares	PROPN	_	_	2	flat:name	2:flat:name	_
+4	(	(	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+5	80	80	NUM	_	NumType=Card	6	nummod	6:nummod	_
+6	anos	ano	NOUN	_	Gender=Masc|Number=Plur	1	parataxis	1:parataxis	SpaceAfter=No
+7	)	)	PUNCT	_	_	6	punct	6:punct	_
+8	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	cop	9:cop	_
+9	um	um	NUM	_	Gender=Masc|NumType=Card	0	root	0:root	_
+10-11	dos	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	12:det	_
+12	passageiros	passageiro	NOUN	_	Gender=Masc|Number=Plur	9	nmod	9:nmod:de	_
+13-14	do	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	avião	avião	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:de|17:nsubj	_
+16	que	que	PRON	_	PronType=Rel	17	nsubj	15:ref	_
+17	pegou	pegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	acl:relcl	15:acl:relcl	_
+18	fogo	fogo	NOUN	_	Gender=Masc|Number=Sing	17	obj	17:obj	_
+19-20	no	_	_	_	_	_	_	_	_
+19	em	em	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	ar	ar	NOUN	_	Gender=Masc|Number=Sing	17	obl	17:obl:em	SpaceAfter=No
+22	:	:	PUNCT	_	_	24	punct	24:punct	_
+23	"	"	PUNCT	_	_	24	punct	24:punct	SpaceAfter=No
+24	Fiquei	ficar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	9	parataxis	9:parataxis	_
+25	paralisada	paralisado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	24	xcomp	24:xcomp	SpaceAfter=No
+26	"	"	PUNCT	_	_	24	punct	24:punct	SpaceAfter=No
+27	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0003
+# text = O incidente aconteceu na madrugada da última sexta-feira (4) durante um voo da empresa American Airlines.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	incidente	incidente	NOUN	_	Number=Sing	3	nsubj	3:nsubj	_
+3	aconteceu	acontecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4-5	na	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	madrugada	madrugada	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:em	_
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	10	case	10:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+9	última	último	ADJ	_	Gender=Fem|Number=Sing	10	amod	10:amod	_
+10	sexta-feira	sexta-feira	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de	_
+11	(	(	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+12	4	4	NUM	_	NumType=Card	10	appos	10:appos	SpaceAfter=No
+13	)	)	PUNCT	_	_	12	punct	12:punct	_
+14	durante	durante	ADP	_	_	16	case	16:case	_
+15	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	voo	voo	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:durante	_
+17-18	da	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	empresa	empresa	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:de	_
+20	American	American	PROPN	_	_	19	nmod	19:nmod	_
+21	Airlines	Airlines	PROPN	_	_	20	flat:name	20:flat:name	SpaceAfter=No
+22	.	.	PUNCT	_	_	3	punct	3:punct	_

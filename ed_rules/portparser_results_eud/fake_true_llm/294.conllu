@@ -1,0 +1,264 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = circulam nas redes sociais vídeos que mostram o presidente eleito do Chile, Gabriel Boric, sentado em um banco de parque, com as roupas e cabelos molhados, aparentemente desorientado.
+1	circulam	circular	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2-3	nas	_	_	_	_	_	_	_	_
+2	em	em	ADP	_	_	4	case	4:case	_
+3	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	4:det	_
+4	redes	rede	NOUN	_	Gender=Fem|Number=Plur	1	obl	1:obl:em	_
+5	sociais	social	ADJ	_	Number=Plur	4	amod	4:amod	_
+6	vídeos	vídeo	NOUN	_	Gender=Masc|Number=Plur	1	nsubj	1:nsubj|8:nsubj	_
+7	que	que	PRON	_	PronType=Rel	8	nsubj	6:ref	_
+8	mostram	mostrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	acl:relcl	6:acl:relcl	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	presidente	presidente	NOUN	_	Number=Sing	8	obj	8:obj	_
+11	eleito	eleito	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	10	amod	10:amod	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	Chile	Chile	PROPN	_	_	10	nmod	10:nmod:de	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	Gabriel	Gabriel	PROPN	_	_	10	appos	10:appos	_
+17	Boric	Boric	PROPN	_	_	16	flat:name	16:flat:name	SpaceAfter=No
+18	,	,	PUNCT	_	_	16	punct	16:punct	_
+19	sentado	sentar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	8	advcl	8:advcl	_
+20	em	em	ADP	_	_	22	case	22:case	_
+21	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	banco	banco	NOUN	_	Gender=Masc|Number=Sing	19	obl	19:obl:em	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	parque	parque	NOUN	_	Gender=Masc|Number=Sing	22	nmod	22:nmod:de	SpaceAfter=No
+25	,	,	PUNCT	_	_	28	punct	28:punct	_
+26	com	com	ADP	_	_	28	case	28:case|30:case	_
+27	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	28	det	28:det	_
+28	roupas	roupa	NOUN	_	Gender=Fem|Number=Plur	19	obl	19:obl:com	_
+29	e	e	CCONJ	_	_	30	cc	30:cc	_
+30	cabelos	cabelo	NOUN	_	Gender=Masc|Number=Plur	28	conj	19:obl:com|28:conj:e	_
+31	molhados	molhado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	28	amod	28:amod|30:amod	SpaceAfter=No
+32	,	,	PUNCT	_	_	34	punct	34:punct	_
+33	aparentemente	aparentemente	ADV	_	_	34	advmod	34:advmod	_
+34	desorientado	desorientado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	19	advcl	19:advcl	SpaceAfter=No
+35	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = legendas afirmam que o presidente foi flagrado "chapado" e fora de controle no vídeo.
+1	legendas	legenda	NOUN	_	Gender=Fem|Number=Plur	2	nsubj	2:nsubj	_
+2	afirmam	afirmar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	7	mark	7:mark	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	presidente	presidente	NOUN	_	Number=Sing	7	nsubj:pass	7:nsubj:pass|9:nsubj|12:nsubj	_
+6	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	aux:pass	7:aux:pass	_
+7	flagrado	flagrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	ccomp	2:ccomp	_
+8	"	"	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+9	chapado	chapado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	7	xcomp	7:xcomp	SpaceAfter=No
+10	"	"	PUNCT	_	_	9	punct	9:punct	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	fora	fora	ADV	_	_	9	conj	7:xcomp|9:conj:e	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	controle	controle	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:de	_
+15-16	no	_	_	_	_	_	_	_	_
+15	em	em	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:em	SpaceAfter=No
+18	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = Uma busca reversa nas imagens leva a uma versão mais longa da gravação, mas com detalhes distorcidos que alimentam ainda mais as suspeitas.
+1	Uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	busca	busca	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj	_
+3	reversa	reverso	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	_
+4-5	nas	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	6:det	_
+6	imagens	imagem	NOUN	_	Gender=Fem|Number=Plur	2	nmod	2:nmod:em	_
+7	leva	levar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	a	a	ADP	_	_	10	case	10:case	_
+9	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	versão	versão	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:a	_
+11	mais	mais	ADV	_	_	12	advmod	12:advmod	_
+12	longa	longo	ADJ	_	Gender=Fem|Number=Sing	10	amod	10:amod	_
+13-14	da	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	gravação	gravação	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:de	SpaceAfter=No
+16	,	,	PUNCT	_	_	19	punct	19:punct	_
+17	mas	mas	CCONJ	_	_	19	cc	19:cc	_
+18	com	com	ADP	_	_	19	case	19:case	_
+19	detalhes	detalhe	NOUN	_	Gender=Masc|Number=Plur	10	conj	7:obl:com|10:conj:mas|22:nsubj	_
+20	distorcidos	distorcido	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	19	amod	19:amod	_
+21	que	que	PRON	_	PronType=Rel	22	nsubj	19:ref	_
+22	alimentam	alimentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	19	acl:relcl	19:acl:relcl	_
+23	ainda	ainda	ADV	_	_	24	advmod	24:advmod	_
+24	mais	mais	ADV	_	_	22	advmod	22:advmod	_
+25	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	26	det	26:det	_
+26	suspeitas	suspeito	NOUN	_	Gender=Fem|Number=Plur	22	obj	22:obj	SpaceAfter=No
+27	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0007
+# text = Supostamente, a gravação é de 2 de dezembro de 2023, e o título do vídeo "Gabriel Boric perde o controle no Parque Forestal" sugere um comportamento inadequado do político.
+1	Supostamente	supostamente	ADV	_	_	7	advmod	7:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	gravação	gravação	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj	_
+5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	2	2	NUM	_	NumType=Card	0	root	0:root	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	dezembro	dezembro	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	2023	2023	NUM	_	NumType=Card	9	nmod	9:nmod:de	SpaceAfter=No
+12	,	,	PUNCT	_	_	30	punct	30:punct	_
+13	e	e	CCONJ	_	_	30	cc	30:cc	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	título	título	NOUN	_	Gender=Masc|Number=Sing	30	nsubj	30:nsubj	_
+16-17	do	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	15	nmod	15:nmod:de	_
+19	"	"	PUNCT	_	_	20	punct	20:punct	SpaceAfter=No
+20	Gabriel	Gabriel	PROPN	_	_	18	nmod	18:nmod	_
+21	Boric	Boric	PROPN	_	_	20	flat:name	20:flat:name	_
+22	perde	perder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	parataxis	7:parataxis	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	controle	controle	NOUN	_	Gender=Masc|Number=Sing	22	obj	22:obj	_
+25-26	no	_	_	_	_	_	_	_	_
+25	em	em	ADP	_	_	27	case	27:case	_
+26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	Parque	Parque	PROPN	_	_	22	obl	22:obl:em	_
+28	Forestal	Forestal	PROPN	_	_	27	flat:name	27:flat:name	SpaceAfter=No
+29	"	"	PUNCT	_	_	20	punct	20:punct	_
+30	sugere	sugerir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	parataxis	7:parataxis	_
+31	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+32	comportamento	comportamento	NOUN	_	Gender=Masc|Number=Sing	30	obj	30:obj	_
+33	inadequado	inadequado	ADJ	_	Gender=Masc|Number=Sing	32	amod	32:amod	_
+34-35	do	_	_	_	_	_	_	_	_
+34	de	de	ADP	_	_	36	case	36:case	_
+35	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	36:det	_
+36	político	político	NOUN	_	Gender=Masc|Number=Sing	32	nmod	32:nmod:de	SpaceAfter=No
+37	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0009
+# text = Vários blogs e perfis anônimos têm compartilhado a história, alegando que Boric foi abandonado por seus seguranças após um "surto" em público.
+1	Vários	vários	DET	_	Gender=Masc|Number=Plur|PronType=Ind	2	det	2:det	_
+2	blogs	blog	NOUN	_	Foreign=Yes|Gender=Masc|Number=Plur	7	nsubj	7:nsubj	_
+3	e	e	CCONJ	_	_	4	cc	4:cc	_
+4	perfis	perfil	NOUN	_	Gender=Masc|Number=Plur	2	conj	2:conj:e|7:nsubj	_
+5	anônimos	anônimo	ADJ	_	Gender=Masc|Number=Plur	4	amod	4:amod	_
+6	têm	ter	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux	7:aux	_
+7	compartilhado	compartilhar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	história	história	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	alegando	alegar	VERB	_	VerbForm=Ger	7	advcl	7:advcl	_
+12	que	que	SCONJ	_	_	15	mark	15:mark	_
+13	Boric	Boric	PROPN	_	_	15	nsubj:pass	15:nsubj:pass	_
+14	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	aux:pass	15:aux:pass	_
+15	abandonado	abandonar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	11	ccomp	11:ccomp	_
+16	por	por	ADP	_	_	18	case	18:case	_
+17	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	18	det	18:det	_
+18	seguranças	segurança	NOUN	_	Number=Plur	15	obl:agent	15:obl:agent	_
+19	após	após	ADP	_	_	22	case	22:case	_
+20	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+21	"	"	PUNCT	_	_	22	punct	22:punct	SpaceAfter=No
+22	surto	surto	NOUN	_	Gender=Masc|Number=Sing	15	obl	15:obl:após	SpaceAfter=No
+23	"	"	PUNCT	_	_	22	punct	22:punct	_
+24	em	em	ADP	_	_	25	case	25:case	_
+25	público	público	NOUN	_	Gender=Masc|Number=Sing	22	nmod	22:nmod:em	SpaceAfter=No
+26	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0011
+# text = O jornal "La Nueva Prensa" destacou que, após o incidente, a popularidade de Boric caiu drasticamente, com muitos cidadãos questionando sua capacidade de liderar o país.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	jornal	jornal	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	8:nsubj	_
+3	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+4	La	La	PROPN	_	_	2	nmod	2:nmod	_
+5	Nueva	Nueva	PROPN	_	_	4	flat:name	4:flat:name	_
+6	Prensa	Prensa	PROPN	_	_	4	flat:name	4:flat:name	SpaceAfter=No
+7	"	"	PUNCT	_	_	4	punct	4:punct	_
+8	destacou	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	que	que	SCONJ	_	_	19	mark	19:mark	SpaceAfter=No
+10	,	,	PUNCT	_	_	13	punct	13:punct	_
+11	após	após	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	incidente	incidente	NOUN	_	Number=Sing	19	obl	19:obl:após	SpaceAfter=No
+14	,	,	PUNCT	_	_	13	punct	13:punct	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	popularidade	popularidade	NOUN	_	Gender=Fem|Number=Sing	19	nsubj	19:nsubj	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	Boric	Boric	PROPN	_	_	16	nmod	16:nmod:de	_
+19	caiu	cair	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	ccomp	8:ccomp	_
+20	drasticamente	drasticamente	ADV	_	_	19	advmod	19:advmod	SpaceAfter=No
+21	,	,	PUNCT	_	_	25	punct	25:punct	_
+22	com	com	ADP	_	_	24	case	24:case	_
+23	muitos	muito	ADJ	_	Gender=Masc|Number=Plur	24	amod	24:amod	_
+24	cidadãos	cidadão	NOUN	_	Gender=Masc|Number=Plur	19	obl	19:obl:com	_
+25	questionando	questionar	VERB	_	VerbForm=Ger	19	advcl	19:advcl	_
+26	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	27	det	27:det	_
+27	capacidade	capacidade	NOUN	_	Gender=Fem|Number=Sing	25	obj	25:obj	_
+28	de	de	ADP	_	_	29	mark	29:mark	_
+29	liderar	liderar	VERB	_	VerbForm=Inf	27	acl	27:acl:de	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	país	país	NOUN	_	Gender=Masc|Number=Sing	29	obj	29:obj	SpaceAfter=No
+32	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0013
+# text = "Manifestantes afirmam que Gabriel Boric falhou com o povo e mostrou incapacidade de manter compostura", relata o jornal, sem mencionar apoio de outros políticos.
+1	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	Manifestantes	manifestante	NOUN	_	Number=Plur	3	nsubj	3:nsubj	_
+3	afirmam	afirmar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	19	ccomp:speech	19:ccomp:speech	_
+4	que	que	SCONJ	_	_	7	mark	7:mark|12:mark	_
+5	Gabriel	Gabriel	PROPN	_	_	7	nsubj	7:nsubj|12:nsubj	_
+6	Boric	Boric	PROPN	_	_	5	flat:name	5:flat:name	_
+7	falhou	falhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	ccomp	3:ccomp	_
+8	com	com	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	povo	povo	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:com	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	mostrou	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	conj	3:ccomp|7:conj:e	_
+13	incapacidade	incapacidade	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+14	de	de	ADP	_	_	15	mark	15:mark	_
+15	manter	manter	VERB	_	VerbForm=Inf	13	acl	13:acl:de	_
+16	compostura	compostura	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	SpaceAfter=No
+17	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+18	,	,	PUNCT	_	_	3	punct	3:punct	_
+19	relata	relatar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	jornal	jornal	NOUN	_	Gender=Masc|Number=Sing	19	nsubj	19:nsubj	SpaceAfter=No
+22	,	,	PUNCT	_	_	24	punct	24:punct	_
+23	sem	sem	ADP	_	_	24	mark	24:mark	_
+24	mencionar	mencionar	VERB	_	VerbForm=Inf	19	advcl	19:advcl:sem	_
+25	apoio	apoio	NOUN	_	Gender=Masc|Number=Sing	24	obj	24:obj	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	28	det	28:det	_
+28	políticos	político	NOUN	_	Gender=Masc|Number=Plur	25	nmod	25:nmod:de	SpaceAfter=No
+29	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0015
+# text = Nas redes, o próprio Boric teria se pronunciado de maneira evasiva, apenas dizendo: Momentos difíceis nos fortalecem.
+1-2	Nas	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	3:det	_
+3	redes	rede	NOUN	_	Gender=Fem|Number=Plur	10	obl	10:obl:em	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+6	próprio	próprio	DET	_	Gender=Masc|Number=Sing|PronType=Dem	7	det	7:det	_
+7	Boric	Boric	PROPN	_	_	10	nsubj	10:nsubj	_
+8	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	10	aux	10:aux	_
+9	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	10	expl	10:expl	_
+10	pronunciado	pronunciar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	maneira	maneira	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:de	_
+13	evasiva	evasivo	ADJ	_	Gender=Fem|Number=Sing	12	amod	12:amod	SpaceAfter=No
+14	,	,	PUNCT	_	_	16	punct	16:punct	_
+15	apenas	apenas	ADV	_	_	16	advmod	16:advmod	_
+16	dizendo	dizer	VERB	_	VerbForm=Ger	10	advcl	10:advcl	SpaceAfter=No
+17	:	:	PUNCT	_	_	18	punct	18:punct	_
+18	Momentos	momento	NOUN	_	Gender=Masc|Number=Plur	21	nsubj	21:nsubj	_
+19	difíceis	difícil	ADJ	_	Number=Plur	18	amod	18:amod	_
+20	nos	nos	PRON	_	Case=Acc|Number=Plur|Person=1|PronType=Prs	21	obj	21:obj	_
+21	fortalecem	fortalecer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	ccomp:speech	16:ccomp:speech	SpaceAfter=No
+22	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0017
+# text = Seguimos.
+1	Seguimos	seguir	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+2	.	.	PUNCT	_	_	1	punct	1:punct	_

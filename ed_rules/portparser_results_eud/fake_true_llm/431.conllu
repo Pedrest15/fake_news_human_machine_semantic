@@ -1,0 +1,414 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Atenção! Alerta Internacional de Frio Extremo para o Brasil!
+1	Atenção	atenção	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+2	!	!	PUNCT	_	_	3	punct	3:punct	_
+3	Alerta	alerta	NOUN	_	Number=Sing	1	parataxis	1:parataxis	_
+4	Internacional	Internacional	PROPN	_	_	3	flat:name	3:flat:name	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	Frio	Frio	PROPN	_	_	3	flat:name	3:flat:name	_
+7	Extremo	Extremo	PROPN	_	_	3	flat:name	3:flat:name	_
+8	para	para	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	Brasil	Brasil	PROPN	_	_	3	nmod	3:nmod:para	SpaceAfter=No
+11	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Os governos dos Estados Unidos e do Canadá emitiram um alerta urgente sobre uma onda de frio polar que deve atingir o Brasil com intensidade sem precedentes nesta semana.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	governos	governo	NOUN	_	Gender=Masc|Number=Plur	11	nsubj	11:nsubj	_
+3-4	dos	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	5:det	_
+5	Estados	Estados	PROPN	_	_	2	nmod	2:nmod:de	_
+6	Unidos	Unidos	PROPN	_	_	5	flat:name	5:flat:name	_
+7	e	e	CCONJ	_	_	10	cc	10:cc	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	Canadá	Canadá	PROPN	_	_	5	conj	2:nmod:de|5:conj:e	_
+11	emitiram	emitir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	alerta	alerta	NOUN	_	Number=Sing	11	obj	11:obj	_
+14	urgente	urgente	ADJ	_	Number=Sing	13	amod	13:amod	_
+15	sobre	sobre	ADP	_	_	17	case	17:case	_
+16	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	onda	onda	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:sobre|22:nsubj|23:nsubj	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	frio	frio	NOUN	_	Gender=Masc|Number=Sing	17	nmod	17:nmod:de	_
+20	polar	polar	ADJ	_	Number=Sing	19	amod	19:amod	_
+21	que	que	PRON	_	PronType=Rel	22	nsubj	17:ref	_
+22	deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	acl:relcl	17:acl:relcl	_
+23	atingir	atingir	VERB	_	VerbForm=Inf	22	xcomp	22:xcomp	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	Brasil	Brasil	PROPN	_	_	23	obj	23:obj	_
+26	com	com	ADP	_	_	27	case	27:case	_
+27	intensidade	intensidade	NOUN	_	Gender=Fem|Number=Sing	23	obl	23:obl:com	_
+28	sem	sem	ADP	_	_	29	case	29:case	_
+29	precedentes	precedente	NOUN	_	Number=Plur	27	nmod	27:nmod:sem	_
+30-31	nesta	_	_	_	_	_	_	_	_
+30	em	em	ADP	_	_	32	case	32:case	_
+31	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	32	det	32:det	_
+32	semana	semana	NOUN	_	Gender=Fem|Number=Sing	23	obl	23:obl:em	SpaceAfter=No
+33	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0005
+# text = Segundo comunicados divulgados por essas autoridades, temperaturas podem despencar para mínimas de -15°C na região Sul, trazendo risco de morte por hipotermia.
+1	Segundo	segundo	ADP	_	_	2	case	2:case	_
+2	comunicados	comunicado	NOUN	_	Gender=Masc|Number=Plur	9	obl	9:obl:segundo	_
+3	divulgados	divulgar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	2	acl	2:acl	_
+4	por	por	ADP	_	_	6	case	6:case	_
+5	essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	6	det	6:det	_
+6	autoridades	autoridade	NOUN	_	Gender=Fem|Number=Plur	3	obl:agent	3:obl:agent	SpaceAfter=No
+7	,	,	PUNCT	_	_	2	punct	2:punct	_
+8	temperaturas	temperatura	NOUN	_	Gender=Fem|Number=Plur	9	nsubj	9:nsubj|10:nsubj	_
+9	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+10	despencar	despencar	VERB	_	VerbForm=Inf	9	xcomp	9:xcomp	_
+11	para	para	ADP	_	_	12	case	12:case	_
+12	mínimas	mínima	NOUN	_	Gender=Fem|Number=Plur	10	obl	10:obl:para	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	-15°C	-15°c	NOUN	_	_	12	nmod	12:nmod:de	_
+15-16	na	_	_	_	_	_	_	_	_
+15	em	em	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	região	região	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:em	_
+18	Sul	sul	ADJ	_	Number=Sing	17	amod	17:amod	SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	20:punct	_
+20	trazendo	trazer	VERB	_	VerbForm=Ger	9	advcl	9:advcl	_
+21	risco	risco	NOUN	_	Gender=Masc|Number=Sing	20	obj	20:obj	_
+22	de	de	ADP	_	_	23	case	23:case	_
+23	morte	morte	NOUN	_	Gender=Fem|Number=Sing	21	nmod	21:nmod:de	_
+24	por	por	ADP	_	_	25	case	25:case	_
+25	hipotermia	hipotermia	NOUN	_	Gender=Fem|Number=Sing	23	nmod	23:nmod:por	SpaceAfter=No
+26	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0007
+# text = "Estamos em um momento crítico", afirmou o Serviço Meteorológico Nacional dos Estados Unidos, destacando que os modelos meteorológicos indicam uma "invasão de ar polar" com potencial devastador.
+1	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+2	Estamos	estar	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+3	em	em	ADP	_	_	5	case	5:case	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	momento	momento	NOUN	_	Gender=Masc|Number=Sing	9	ccomp:speech	9:ccomp:speech	_
+6	crítico	crítico	ADJ	_	Gender=Masc|Number=Sing	5	amod	5:amod	SpaceAfter=No
+7	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+8	,	,	PUNCT	_	_	5	punct	5:punct	_
+9	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	Serviço	Serviço	PROPN	_	_	9	nsubj	9:nsubj	_
+12	Meteorológico	Meteorológico	PROPN	_	_	11	flat:name	11:flat:name	_
+13	Nacional	Nacional	PROPN	_	_	11	flat:name	11:flat:name	_
+14-15	dos	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	16:det	_
+16	Estados	Estados	PROPN	_	_	11	flat:name	11:flat:name	_
+17	Unidos	Unidos	PROPN	_	_	16	flat:name	16:flat:name	SpaceAfter=No
+18	,	,	PUNCT	_	_	19	punct	19:punct	_
+19	destacando	destacar	VERB	_	VerbForm=Ger	9	advcl	9:advcl	_
+20	que	que	SCONJ	_	_	24	mark	24:mark	_
+21	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	22:det	_
+22	modelos	modelo	NOUN	_	Number=Plur	24	nsubj	24:nsubj	_
+23	meteorológicos	meteorológico	ADJ	_	Gender=Masc|Number=Plur	22	amod	22:amod	_
+24	indicam	indicar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	19	ccomp	19:ccomp	_
+25	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+26	"	"	PUNCT	_	_	27	punct	27:punct	SpaceAfter=No
+27	invasão	invasão	NOUN	_	Gender=Fem|Number=Sing	24	obj	24:obj	_
+28	de	de	ADP	_	_	29	case	29:case	_
+29	ar	ar	NOUN	_	Gender=Masc|Number=Sing	27	nmod	27:nmod:de	_
+30	polar	polar	ADJ	_	Number=Sing	29	amod	29:amod	SpaceAfter=No
+31	"	"	PUNCT	_	_	27	punct	27:punct	_
+32	com	com	ADP	_	_	33	case	33:case	_
+33	potencial	potencial	NOUN	_	Gender=Masc|Number=Sing	27	nmod	27:nmod:com	_
+34	devastador	devastador	ADJ	_	Gender=Masc|Number=Sing	33	amod	33:amod	SpaceAfter=No
+35	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0009
+# text = O Canadá complementou, alertando para a possibilidade de sensações térmicas abaixo de -20°C em áreas de maior altitude.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Canadá	Canadá	PROPN	_	_	3	nsubj	3:nsubj	_
+3	complementou	complementar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	alertando	alertar	VERB	_	VerbForm=Ger	3	advcl	3:advcl	_
+6	para	para	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	possibilidade	possibilidade	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:para	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	sensações	sensação	NOUN	_	Gender=Fem|Number=Plur	8	nmod	8:nmod:de	_
+11	térmicas	térmico	ADJ	_	Gender=Fem|Number=Plur	10	amod	10:amod	_
+12	abaixo	abaixo	ADV	_	_	10	advmod	10:advmod	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	-20°C	-20°c	NOUN	_	_	12	obl	12:obl:de	_
+15	em	em	ADP	_	_	16	case	16:case	_
+16	áreas	área	NOUN	_	Gender=Fem|Number=Plur	10	nmod	10:nmod:em	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	maior	maior	ADJ	_	Number=Sing	19	amod	19:amod	_
+19	altitude	altitude	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:de	SpaceAfter=No
+20	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0011
+# text = O serviço de meteorologia brasileiro Metsul confirmou essas previsões, destacando que "a situação é alarmante e requer ações imediatas".
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	serviço	serviço	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	meteorologia	meteorologia	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+5	brasileiro	brasileiro	ADJ	_	Gender=Masc|Number=Sing	4	amod	4:amod	_
+6	Metsul	Metsul	PROPN	_	_	2	nmod	2:nmod	_
+7	confirmou	confirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	9	det	9:det	_
+9	previsões	previsão	NOUN	_	Gender=Fem|Number=Plur	7	obj	7:obj	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	destacando	destacar	VERB	_	VerbForm=Ger	7	advcl	7:advcl	_
+12	que	que	SCONJ	_	_	17	mark	17:mark|19:mark	_
+13	"	"	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	situação	situação	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	17:nsubj|19:nsubj	_
+16	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	17:cop	_
+17	alarmante	alarmante	ADJ	_	Number=Sing	11	ccomp	11:ccomp	_
+18	e	e	CCONJ	_	_	19	cc	19:cc	_
+19	requer	requerer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	conj	11:ccomp|17:conj:e	_
+20	ações	ação	NOUN	_	Gender=Fem|Number=Plur	19	obj	19:obj	_
+21	imediatas	imediato	ADJ	_	Gender=Fem|Number=Plur	20	amod	20:amod	SpaceAfter=No
+22	"	"	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+23	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0013
+# text = O Metsul alertou que cidades como Porto Alegre podem enfrentar temperaturas de até -8°C, algo nunca registrado na história recente.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Metsul	Metsul	PROPN	_	_	3	nsubj	3:nsubj	_
+3	alertou	alertar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	9	mark	9:mark	_
+5	cidades	cidade	NOUN	_	Gender=Fem|Number=Plur	9	nsubj	9:nsubj|10:nsubj	_
+6	como	como	ADP	_	_	7	case	7:case	_
+7	Porto	Porto	PROPN	_	_	5	nmod	5:nmod:como	_
+8	Alegre	Alegre	PROPN	_	_	7	flat:name	7:flat:name	_
+9	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	3:ccomp	_
+10	enfrentar	enfrentar	VERB	_	VerbForm=Inf	9	xcomp	9:xcomp	_
+11	temperaturas	temperatura	NOUN	_	Gender=Fem|Number=Plur	10	obj	10:obj	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	até	até	ADP	_	_	14	case	14:case	_
+14	-8°C	-8°c	NOUN	_	_	11	nmod	11:nmod:de_até	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	algo	algo	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	11	appos	11:appos	_
+17	nunca	nunca	ADV	_	_	18	advmod	18:advmod	_
+18	registrado	registrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	16	acl	16:acl	_
+19-20	na	_	_	_	_	_	_	_	_
+19	em	em	ADP	_	_	21	case	21:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	história	história	NOUN	_	Gender=Fem|Number=Sing	18	obl	18:obl:em	_
+22	recente	recente	ADJ	_	Number=Sing	21	amod	21:amod	SpaceAfter=No
+23	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0015
+# text = Governos estaduais já estão em estado de emergência.
+1	Governos	governo	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	6:nsubj	_
+2	estaduais	estadual	ADJ	_	Number=Plur	1	amod	1:amod	_
+3	já	já	ADV	_	_	6	advmod	6:advmod	_
+4	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+5	em	em	ADP	_	_	6	case	6:case	_
+6	estado	estado	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	emergência	emergência	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de	SpaceAfter=No
+9	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0017
+# text = Santa Catarina, por exemplo, convocou uma reunião de crise com a Defesa Civil e o Corpo de Bombeiros.
+1	Santa	Santa	PROPN	_	_	7	nsubj	7:nsubj	_
+2	Catarina	Catarina	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	5	punct	5:punct	_
+4	por	por	ADP	_	_	5	case	5:case	_
+5	exemplo	exemplo	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:por	SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	5:punct	_
+7	convocou	convocar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	reunião	reunião	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	crise	crise	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:de	_
+12	com	com	ADP	_	_	14	case	14:case|18:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	Defesa	Defesa	PROPN	_	_	9	nmod	9:nmod:com	_
+15	Civil	Civil	PROPN	_	_	14	flat:name	14:flat:name	_
+16	e	e	CCONJ	_	_	18	cc	18:cc	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	Corpo	Corpo	PROPN	_	_	14	conj	9:nmod:com|14:conj:e	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	Bombeiros	Bombeiros	PROPN	_	_	18	flat:name	18:flat:name	SpaceAfter=No
+21	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0019
+# text = "Esperamos o pior frio dos últimos 50 anos", declarou o coordenador de monitoramento e alerta da Defesa Civil de Santa Catarina, Frederico Rudhorff.
+1	"	"	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+2	Esperamos	esperar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	13	ccomp:speech	13:ccomp:speech	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+4	pior	pior	ADJ	_	Number=Sing	5	amod	5:amod	_
+5	frio	frio	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+6-7	dos	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	10	case	10:case	_
+7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	10:det	_
+8	últimos	último	ADJ	_	Gender=Masc|Number=Plur	10	amod	10:amod	_
+9	50	50	NUM	_	NumType=Card	10	nummod	10:nummod	_
+10	anos	ano	NOUN	_	Gender=Masc|Number=Plur	5	nmod	5:nmod:de	SpaceAfter=No
+11	"	"	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+12	,	,	PUNCT	_	_	2	punct	2:punct	_
+13	declarou	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	coordenador	coordenador	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	13:nsubj	_
+16	de	de	ADP	_	_	17	case	17:case|19:case	_
+17	monitoramento	monitoramento	NOUN	_	Gender=Masc|Number=Sing	15	nmod	15:nmod:de	_
+18	e	e	CCONJ	_	_	19	cc	19:cc	_
+19	alerta	alerta	NOUN	_	Number=Sing	17	conj	15:nmod:de|17:conj:e	_
+20-21	da	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	Defesa	Defesa	PROPN	_	_	19	nmod	19:nmod:de	_
+23	Civil	Civil	PROPN	_	_	22	flat:name	22:flat:name	_
+24	de	de	ADP	_	_	25	case	25:case	_
+25	Santa	Santa	PROPN	_	_	22	flat:name	22:flat:name	_
+26	Catarina	Catarina	PROPN	_	_	22	flat:name	22:flat:name	SpaceAfter=No
+27	,	,	PUNCT	_	_	28	punct	28:punct	_
+28	Frederico	Frederico	PROPN	_	_	15	appos	15:appos	_
+29	Rudhorff	Rudhorff	PROPN	_	_	28	flat:name	28:flat:name	SpaceAfter=No
+30	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0021
+# text = Medidas de assistência à população vulnerável estão sendo reforçadas em todo o país.
+1	Medidas	medida	NOUN	_	Gender=Fem|Number=Plur	10	nsubj:pass	10:nsubj:pass	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	assistência	assistência	NOUN	_	Gender=Fem|Number=Sing	1	nmod	1:nmod:de	_
+4-5	à	_	_	_	_	_	_	_	_
+4	a	a	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	população	população	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:a	_
+7	vulnerável	vulnerável	ADJ	_	Number=Sing	6	amod	6:amod	_
+8	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	aux	10:aux	_
+9	sendo	ser	AUX	_	VerbForm=Ger	10	aux:pass	10:aux:pass	_
+10	reforçadas	reforçar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	_
+11	em	em	ADP	_	_	14	case	14:case	_
+12	todo	todo	DET	_	Gender=Masc|Number=Sing|PronType=Ind	14	det	14:det	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	país	país	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:em	SpaceAfter=No
+15	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0023
+# text = O risco de geada é alto não só no Sul, mas também em São Paulo, Mato Grosso do Sul, Minas Gerais e até no extremo sul do Rio de Janeiro.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	risco	risco	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	geada	geada	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+6	alto	alto	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	_
+7	não	não	ADV	_	_	8	advmod	8:advmod	_
+8	só	só	ADV	_	_	11	advmod	11:advmod	_
+9-10	no	_	_	_	_	_	_	_	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	Sul	Sul	PROPN	_	_	6	obl	6:obl:em	SpaceAfter=No
+12	,	,	PUNCT	_	_	16	punct	16:punct	_
+13	mas	mas	CCONJ	_	_	16	cc	16:cc	_
+14	também	também	ADV	_	_	16	advmod	16:advmod	_
+15	em	em	ADP	_	_	16	case	16:case|19:case|25:case	_
+16	São	São	PROPN	_	_	11	conj	6:obl:em|11:conj:mas	_
+17	Paulo	Paulo	PROPN	_	_	16	flat:name	16:flat:name	SpaceAfter=No
+18	,	,	PUNCT	_	_	19	punct	19:punct	_
+19	Mato	Mato	PROPN	_	_	16	conj	6:obl:em|16:conj:e	_
+20	Grosso	Grosso	PROPN	_	_	19	flat:name	19:flat:name	_
+21-22	do	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	Sul	Sul	PROPN	_	_	19	flat:name	19:flat:name	SpaceAfter=No
+24	,	,	PUNCT	_	_	25	punct	25:punct	_
+25	Minas	Minas	PROPN	_	_	16	conj	6:obl:em|16:conj:e	_
+26	Gerais	Gerais	PROPN	_	_	25	flat:name	25:flat:name	_
+27	e	e	CCONJ	_	_	31	cc	31:cc	_
+28	até	até	ADV	_	_	31	advmod	31:advmod	_
+29-30	no	_	_	_	_	_	_	_	_
+29	em	em	ADP	_	_	31	case	31:case	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	extremo	extremo	NOUN	_	Gender=Masc|Number=Sing	16	conj	6:obl:em|16:conj:e	_
+32	sul	sul	NOUN	_	Gender=Masc|Number=Sing	31	amod	31:amod	_
+33-34	do	_	_	_	_	_	_	_	_
+33	de	de	ADP	_	_	35	case	35:case	_
+34	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	35:det	_
+35	Rio	Rio	PROPN	_	_	31	nmod	31:nmod:de	_
+36	de	de	ADP	_	_	37	case	37:case	_
+37	Janeiro	Janeiro	PROPN	_	_	35	flat:name	35:flat:name	SpaceAfter=No
+38	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0025
+# text = Além disso, o frio pode avançar até o sul da Bahia e o interior do Nordeste, provocando quedas drásticas de temperatura, segundo o Climatempo.
+1	Além	além	ADV	_	_	7	advmod	7:advmod	_
+2-3	disso	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	obl	1:obl:de	_
+4	,	,	PUNCT	_	_	1	punct	1:punct	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	frio	frio	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj|8:nsubj	_
+7	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	avançar	avançar	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+9	até	até	ADP	_	_	11	case	11:case|17:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	sul	sul	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:até	_
+12-13	da	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	Bahia	Bahia	PROPN	_	_	11	nmod	11:nmod:de	_
+15	e	e	CCONJ	_	_	17	cc	17:cc	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	interior	interior	NOUN	_	Number=Sing	11	conj	8:obl:até|11:conj:e	_
+18-19	do	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	Nordeste	Nordeste	PROPN	_	_	17	nmod	17:nmod:de	SpaceAfter=No
+21	,	,	PUNCT	_	_	22	punct	22:punct	_
+22	provocando	provocar	VERB	_	VerbForm=Ger	7	advcl	7:advcl	_
+23	quedas	queda	NOUN	_	Gender=Fem|Number=Plur	22	obj	22:obj	_
+24	drásticas	drástico	ADJ	_	Gender=Fem|Number=Plur	23	amod	23:amod	_
+25	de	de	ADP	_	_	26	case	26:case	_
+26	temperatura	temperatura	NOUN	_	Gender=Fem|Number=Sing	23	nmod	23:nmod:de	SpaceAfter=No
+27	,	,	PUNCT	_	_	30	punct	30:punct	_
+28	segundo	segundo	ADP	_	_	30	case	30:case	_
+29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	30:det	_
+30	Climatempo	Climatempo	PROPN	_	_	22	obl	22:obl:segundo	SpaceAfter=No
+31	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0027
+# text = Prepare-se! Esta onda de frio pode ser mortal.
+1-2	Prepare-se	_	_	_	_	_	_	_	_
+1	Prepare	preparar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	1	expl	1:expl	_
+3	!	!	PUNCT	_	_	8	punct	8:punct	_
+4	Esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	5	det	5:det	_
+5	onda	onda	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	8:nsubj|10:nsubj	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	frio	frio	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:de	_
+8	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	1:parataxis	_
+9	ser	ser	AUX	_	VerbForm=Inf	10	cop	10:cop	_
+10	mortal	mortal	ADJ	_	Number=Sing	8	xcomp	8:xcomp	SpaceAfter=No
+11	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0029
+# text = Autoridades pedem que a população fique em alerta e adote medidas de proteção, especialmente para os desabrigados e aqueles sem condições adequadas de aquecimento.
+1	Autoridades	autoridade	NOUN	_	Gender=Fem|Number=Plur	2	nsubj	2:nsubj	_
+2	pedem	pedir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	6	mark	6:mark|10:mark	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	população	população	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj|10:nsubj	_
+6	fique	ficar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	2:ccomp	_
+7	em	em	ADP	_	_	8	case	8:case	_
+8	alerta	alerta	NOUN	_	Number=Sing	6	obl	6:obl:em	_
+9	e	e	CCONJ	_	_	10	cc	10:cc	_
+10	adote	adotar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	2:ccomp|6:conj:e	_
+11	medidas	medida	NOUN	_	Gender=Fem|Number=Plur	10	obj	10:obj	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	proteção	proteção	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:de	SpaceAfter=No
+14	,	,	PUNCT	_	_	18	punct	18:punct	_
+15	especialmente	especialmente	ADV	_	_	18	advmod	18:advmod	_
+16	para	para	ADP	_	_	18	case	18:case|20:case	_
+17	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	18:det	_
+18	desabrigados	desabrigado	NOUN	_	Gender=Masc|Number=Plur	11	nmod	11:nmod:para	_
+19	e	e	CCONJ	_	_	20	cc	20:cc	_
+20	aqueles	aquele	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	18	conj	11:nmod:para|18:conj:e	_
+21	sem	sem	ADP	_	_	22	case	22:case	_
+22	condições	condição	NOUN	_	Gender=Fem|Number=Plur	20	nmod	20:nmod:sem	_
+23	adequadas	adequado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	22	amod	22:amod	_
+24	de	de	ADP	_	_	25	case	25:case	_
+25	aquecimento	aquecimento	NOUN	_	Gender=Masc|Number=Sing	22	nmod	22:nmod:de	SpaceAfter=No
+26	.	.	PUNCT	_	_	2	punct	2:punct	_

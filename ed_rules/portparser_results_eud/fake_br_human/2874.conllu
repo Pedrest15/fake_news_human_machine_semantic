@@ -1,0 +1,183 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Conchavo?
+1	Conchavo	conchavar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+2	?	?	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Folha diz que assim que Dilma cair, Michel Temer irá procurar Lula.
+1	Folha	Folha	PROPN	_	_	2	nsubj	2:nsubj	_
+2	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	12	mark	12:mark	_
+4	assim	assim	ADV	_	ExtPos=SCONJ	7	mark	7:mark	_
+5	que	que	SCONJ	_	_	4	fixed	4:fixed	_
+6	Dilma	Dilma	PROPN	_	_	7	nsubj	7:nsubj	_
+7	cair	cair	VERB	_	Number=Sing|Person=3|VerbForm=Inf	12	advcl	12:advcl:assim_que	SpaceAfter=No
+8	,	,	PUNCT	_	_	7	punct	7:punct	_
+9	Michel	Michel	PROPN	_	_	12	nsubj	12:nsubj	_
+10	Temer	Temer	PROPN	_	_	9	flat:name	9:flat:name	_
+11	irá	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	12	aux	12:aux	_
+12	procurar	procurar	VERB	_	VerbForm=Inf	2	ccomp	2:ccomp	_
+13	Lula	Lula	PROPN	_	_	12	obj	12:obj	SpaceAfter=No
+14	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = A coluna painel da Folha informou que Michel Temer deve procurar Lula assim que o Senado aprovar o processo de impeachment da presidente Dilma Rousseff.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	coluna	coluna	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj	_
+3	painel	painel	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod	_
+4-5	da	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	Folha	Folha	PROPN	_	_	3	nmod	3:nmod:de	_
+7	informou	informar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	que	que	SCONJ	_	_	11	mark	11:mark	_
+9	Michel	Michel	PROPN	_	_	11	nsubj	11:nsubj|12:nsubj	_
+10	Temer	Temer	PROPN	_	_	9	flat:name	9:flat:name	_
+11	deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	ccomp	7:ccomp	_
+12	procurar	procurar	VERB	_	VerbForm=Inf	11	xcomp	11:xcomp	_
+13	Lula	Lula	PROPN	_	_	12	obj	12:obj	_
+14	assim	assim	ADV	_	ExtPos=SCONJ	18	mark	18:mark	_
+15	que	que	SCONJ	_	_	14	fixed	14:fixed	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	Senado	Senado	PROPN	_	_	18	nsubj	18:nsubj	_
+18	aprovar	aprovar	VERB	_	Number=Sing|Person=3|VerbForm=Inf	12	advcl	12:advcl:assim_que	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	processo	processo	NOUN	_	Gender=Masc|Number=Sing	18	obj	18:obj	_
+21	de	de	ADP	_	_	22	case	22:case	_
+22	impeachment	impeachment	NOUN	_	Gender=Masc|Number=Sing	20	nmod	20:nmod:de	_
+23-24	da	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	presidente	presidente	NOUN	_	Number=Sing	22	nmod	22:nmod:de	_
+26	Dilma	Dilma	PROPN	_	_	25	nmod	25:nmod	_
+27	Rousseff	Rousseff	PROPN	_	_	26	flat:name	26:flat:name	SpaceAfter=No
+28	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0007
+# text = Em conversas reservadas, Temer disse que a contribuição do PT é de extrema importância para estabilizar o novo governo do peemedebista.
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	conversas	conversa	NOUN	_	Gender=Fem|Number=Plur	6	obl	6:obl:em	_
+3	reservadas	reservado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	2	amod	2:amod	SpaceAfter=No
+4	,	,	PUNCT	_	_	2	punct	2:punct	_
+5	Temer	Temer	PROPN	_	_	6	nsubj	6:nsubj	_
+6	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	que	que	SCONJ	_	_	16	mark	16:mark	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	contribuição	contribuição	NOUN	_	Gender=Fem|Number=Sing	16	nsubj	16:nsubj	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	PT	PT	PROPN	_	_	9	nmod	9:nmod:de	_
+13	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	16:cop	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	extrema	extremo	ADJ	_	Gender=Fem|Number=Sing	16	amod	16:amod	_
+16	importância	importância	NOUN	_	Gender=Fem|Number=Sing	6	ccomp	6:ccomp	_
+17	para	para	ADP	_	_	18	mark	18:mark	_
+18	estabilizar	estabilizar	VERB	_	VerbForm=Inf	16	acl	16:acl:para	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+20	novo	novo	ADJ	_	Gender=Masc|Number=Sing	21	amod	21:amod	_
+21	governo	governo	NOUN	_	Gender=Masc|Number=Sing	18	obj	18:obj	_
+22-23	do	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	peemedebista	peemedebista	NOUN	_	Number=Sing	21	nmod	21:nmod:de	SpaceAfter=No
+25	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0009
+# text = O PMDB avaliou que Lula é fundamental para segurar a pressão das ruas.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	PMDB	PMDB	PROPN	_	_	3	nsubj	3:nsubj	_
+3	avaliou	avaliar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	7	mark	7:mark	_
+5	Lula	Lula	PROPN	_	_	7	nsubj	7:nsubj	_
+6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+7	fundamental	fundamental	ADJ	_	Number=Sing	3	ccomp	3:ccomp	_
+8	para	para	ADP	_	_	9	mark	9:mark	_
+9	segurar	segurar	VERB	_	VerbForm=Inf	7	advcl	7:advcl:para	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	pressão	pressão	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+12-13	das	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	14:det	_
+14	ruas	rua	NOUN	_	Gender=Fem|Number=Plur	11	nmod	11:nmod:de	SpaceAfter=No
+15	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0011
+# text = "Não se pode mais dividir a sociedade entre nós e eles", diz um representante do vice-presidente.
+1	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+2	Não	não	ADV	_	_	4	advmod	4:advmod	_
+3	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	4	expl:impers	4:expl:impers	_
+4	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	ccomp:speech	15:ccomp:speech	_
+5	mais	mais	ADV	_	_	4	advmod	4:advmod	_
+6	dividir	dividir	VERB	_	VerbForm=Inf	4	xcomp	4:xcomp	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	sociedade	sociedade	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+9	entre	entre	ADP	_	_	10	case	10:case	_
+10	nós	nós	PRON	_	Case=Nom|Number=Plur|Person=1|PronType=Prs	6	obl	6:obl:entre	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	10	conj	6:obl:entre|10:conj:e	SpaceAfter=No
+13	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+14	,	,	PUNCT	_	_	4	punct	4:punct	_
+15	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+16	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	representante	representante	NOUN	_	Number=Sing	15	nsubj	15:nsubj	_
+18-19	do	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	vice-presidente	vice-presidente	NOUN	_	Gender=Masc|Number=Sing	17	nmod	17:nmod:de	SpaceAfter=No
+21	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0013
+# text = Petistas de "carteirinha" afirmam que não há sentido em apoiar o possível novo presidente.
+1	Petistas	petista	NOUN	_	Number=Plur	6	nsubj	6:nsubj	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+4	carteirinha	carteirinha	NOUN	_	Gender=Fem|Number=Sing	1	nmod	1:nmod:de	SpaceAfter=No
+5	"	"	PUNCT	_	_	4	punct	4:punct	_
+6	afirmam	afirmar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	que	que	SCONJ	_	_	9	mark	9:mark	_
+8	não	não	ADV	_	_	9	advmod	9:advmod	_
+9	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	ccomp	6:ccomp	_
+10	sentido	sentido	NOUN	_	Gender=Masc|Number=Sing	9	obj	9:obj	_
+11	em	em	ADP	_	_	12	mark	12:mark	_
+12	apoiar	apoiar	VERB	_	VerbForm=Inf	10	acl	10:acl:em	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+14	possível	possível	ADJ	_	Number=Sing	16	amod	16:amod	_
+15	novo	novo	ADJ	_	Gender=Masc|Number=Sing	16	amod	16:amod	_
+16	presidente	presidente	NOUN	_	Number=Sing	12	obj	12:obj	SpaceAfter=No
+17	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0015
+# text = Temer não precisará do PT para garantir sua governabilidade no Congresso.
+1	Temer	Temer	PROPN	_	_	3	nsubj	3:nsubj	_
+2	não	não	ADV	_	_	3	advmod	3:advmod	_
+3	precisará	precisar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	PT	PT	PROPN	_	_	3	obl	3:obl:de	_
+7	para	para	ADP	_	_	8	mark	8:mark	_
+8	garantir	garantir	VERB	_	VerbForm=Inf	3	advcl	3:advcl:para	_
+9	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	10	det	10:det	_
+10	governabilidade	governabilidade	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	_
+11-12	no	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	Congresso	Congresso	PROPN	_	_	8	obl	8:obl:em	SpaceAfter=No
+14	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0017
+# text = A aproximação não faria qualquer sentido, diz um dirigente petista.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	aproximação	aproximação	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+3	não	não	ADV	_	_	4	advmod	4:advmod	_
+4	faria	fazer	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	8	ccomp:speech	8:ccomp:speech	_
+5	qualquer	qualquer	DET	_	Number=Sing|PronType=Ind	6	det	6:det	_
+6	sentido	sentido	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	SpaceAfter=No
+7	,	,	PUNCT	_	_	4	punct	4:punct	_
+8	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+9	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	dirigente	dirigente	NOUN	_	Number=Sing	8	nsubj	8:nsubj	_
+11	petista	petista	ADJ	_	Number=Sing	10	amod	10:amod	SpaceAfter=No
+12	.	.	PUNCT	_	_	8	punct	8:punct	_

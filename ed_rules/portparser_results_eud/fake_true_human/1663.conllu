@@ -1,0 +1,388 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = respire fundo por 10 segundos para testar se coronavirus causou fibrose no pulmao o novo coronavirus pode nao mostrar sinais de infeccao por muitos dias, como saber se esta infectado.
+1	respire	respirar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	fundo	fundo	ADV	_	_	1	advmod	1:advmod	_
+3	por	por	ADP	_	_	5	case	5:case	_
+4	10	10	NUM	_	NumType=Card	5	nummod	5:nummod	_
+5	segundos	segundo	NOUN	_	Gender=Masc|Number=Plur	1	obl	1:obl:por	_
+6	para	para	ADP	_	_	7	mark	7:mark	_
+7	testar	testar	VERB	_	VerbForm=Inf	1	advcl	1:advcl:para	_
+8	se	se	SCONJ	_	_	10	mark	10:mark	_
+9	coronavirus	coronavirus	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	10:nsubj	_
+10	causou	causar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	ccomp	7:ccomp	_
+11	fibrose	fibrose	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+12-13	no	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	pulmao	pulmao	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:em	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+16	novo	novo	ADJ	_	Gender=Masc|Number=Sing	17	amod	17:amod	_
+17	coronavirus	coronavirus	NOUN	_	Gender=Masc	18	nsubj	18:nsubj|20:nsubj	_
+18	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	1:parataxis	_
+19	nao	nao	ADV	_	_	20	advmod	20:advmod	_
+20	mostrar	mostrar	VERB	_	VerbForm=Inf	18	xcomp	18:xcomp	_
+21	sinais	sinal	NOUN	_	Gender=Masc|Number=Plur	20	obj	20:obj	_
+22	de	de	ADP	_	_	23	case	23:case	_
+23	infeccao	infeccao	NOUN	_	Gender=Fem|Number=Sing	21	nmod	21:nmod:de	_
+24	por	por	ADP	_	_	26	case	26:case	_
+25	muitos	muito	ADJ	_	Gender=Masc|Number=Plur	26	amod	26:amod	_
+26	dias	dia	NOUN	_	Gender=Masc|Number=Plur	20	obl	20:obl:por	SpaceAfter=No
+27	,	,	PUNCT	_	_	29	punct	29:punct	_
+28	como	como	ADP	_	_	29	mark	29:mark	_
+29	saber	saber	VERB	_	VerbForm=Inf	21	acl	21:acl:como	_
+30	se	se	SCONJ	_	_	32	mark	32:mark	_
+31	esta	este	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	32	cop	32:cop	_
+32	infectado	infectado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	29	ccomp	29:ccomp	SpaceAfter=No
+33	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = quando tiver febre e / ou tosse e ir ao hospital, os pulmoes geralmente tem 50% de fibrose e e tarde demais!
+1	quando	quando	SCONJ	_	_	2	mark	2:mark|9:mark	_
+2	tiver	ter	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	17	advcl	17:advcl:quando|24:advcl:quando	_
+3	febre	febre	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+4	e	e	CCONJ	_	_	7	cc	7:cc	_
+5	/	/	PUNCT	_	_	7	punct	7:punct	_
+6	ou	ou	CCONJ	_	_	7	cc	7:cc	_
+7	tosse	tosse	NOUN	_	Gender=Fem|Number=Sing	3	conj	2:obj|3:conj:e	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	ir	ir	VERB	_	VerbForm=Inf	2	conj	2:conj:e|17:advcl:quando|24:advcl:quando	_
+10-11	ao	_	_	_	_	_	_	_	_
+10	a	a	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	hospital	hospital	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:a	SpaceAfter=No
+13	,	,	PUNCT	_	_	2	punct	2:punct	_
+14	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	15:det	_
+15	pulmoes	pulmo	NOUN	_	Gender=Masc|Number=Plur	17	nsubj	17:nsubj	_
+16	geralmente	geralmente	ADV	_	_	17	advmod	17:advmod	_
+17	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+18	50	50	NUM	_	NumType=Card	19	nummod	19:nummod	SpaceAfter=No
+19	%	%	SYM	_	_	17	obj	17:obj	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	fibrose	fibrose	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:de	_
+22	e	e	CCONJ	_	_	24	cc	24:cc	_
+23	e	e	CCONJ	_	_	24	cc	24:cc	_
+24	tarde	tarde	ADV	_	_	17	conj	17:conj:e_e	_
+25	demais	demais	ADV	_	_	24	advmod	24:advmod	SpaceAfter=No
+26	!	!	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0005
+# text = os especialistas de taiwan fornecem uma autoavaliacao simples que podemos fazer todas as manhas: respire fundo e prenda a respiracao por mais de 10 segundos.
+1	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	especialistas	especialista	NOUN	_	Number=Plur	5	nsubj	5:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	taiwan	taiwan	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	_
+5	fornecem	fornecer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	autoavaliacao	autoavaliacao	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj|11:obj	_
+8	simples	simples	ADJ	_	_	7	amod	7:amod	_
+9	que	que	PRON	_	PronType=Rel	10	obj	7:ref	_
+10	podemos	poder	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	7	acl:relcl	7:acl:relcl	_
+11	fazer	fazer	VERB	_	VerbForm=Inf	10	xcomp	10:xcomp	_
+12	todas	todo	DET	_	Gender=Fem|Number=Plur|PronType=Ind	14	det	14:det	_
+13	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	14:det	_
+14	manhas	manha	NOUN	_	Gender=Fem|Number=Plur	11	obj	11:obj	SpaceAfter=No
+15	:	:	PUNCT	_	_	16	punct	16:punct	_
+16	respire	respirar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	5	parataxis	5:parataxis	_
+17	fundo	fundo	ADV	_	_	16	advmod	16:advmod	_
+18	e	e	CCONJ	_	_	19	cc	19:cc	_
+19	prenda	prendar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	16	conj	5:parataxis|16:conj:e	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	respiracao	respiracao	NOUN	_	Gender=Fem|Number=Sing	19	obj	19:obj	_
+22	por	por	ADP	_	_	26	case	26:case	_
+23	mais	mais	ADV	_	ExtPos=ADV	25	advmod	25:advmod	_
+24	de	de	ADP	_	_	23	fixed	23:fixed	_
+25	10	10	NUM	_	NumType=Card	26	nummod	26:nummod	_
+26	segundos	segundo	NOUN	_	Gender=Masc|Number=Plur	19	obl	19:obl:por	SpaceAfter=No
+27	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0007
+# text = se voce completa-lo com sucesso sem tossir, sem desconforto, congestao ou aperto etc, isso prova que nao ha fibrose nos pulmoes, basicamente indicando que nao ha infeccao.
+1	se	se	SCONJ	_	_	3	mark	3:mark	_
+2	voce	voce	PRON	_	PronType=Dem	3	nsubj	3:nsubj	_
+3-4	completa-lo	_	_	_	_	_	_	_	_
+3	completa	completar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	advcl	19:advcl:se	_
+4	lo	lo	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	obj	3:obj	_
+5	com	com	ADP	_	_	6	case	6:case	_
+6	sucesso	sucesso	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:com	_
+7	sem	sem	ADP	_	_	8	mark	8:mark	_
+8	tossir	tossir	VERB	_	VerbForm=Inf	3	advcl	3:advcl:sem	SpaceAfter=No
+9	,	,	PUNCT	_	_	11	punct	11:punct	_
+10	sem	sem	ADP	_	_	11	case	11:case|15:case	_
+11	desconforto	desconforto	NOUN	_	Gender=Masc|Number=Sing	8	conj	3:obl:sem|8:conj	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	congestao	congestao	NOUN	_	Gender=Fem|Number=Sing	8	conj	3:obl:sem|8:conj	_
+14	ou	ou	CCONJ	_	_	15	cc	15:cc	_
+15	aperto	aperto	NOUN	_	Gender=Masc|Number=Sing	11	conj	3:obl:sem|11:conj:ou	_
+16	etc	etc	PRON	_	PronType=Dem	13	advmod	13:advmod	SpaceAfter=No
+17	,	,	PUNCT	_	_	3	punct	3:punct	_
+18	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	19	nsubj	19:nsubj	_
+19	prova	provar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+20	que	que	SCONJ	_	_	22	mark	22:mark	_
+21	nao	nao	ADV	_	_	22	advmod	22:advmod	_
+22	ha	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	ccomp	19:ccomp	_
+23	fibrose	fibrose	NOUN	_	Gender=Fem|Number=Sing	22	obj	22:obj	_
+24-25	nos	_	_	_	_	_	_	_	_
+24	em	em	ADP	_	_	26	case	26:case	_
+25	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	26:det	_
+26	pulmoes	pulmo	NOUN	_	Gender=Masc|Number=Plur	22	obl	22:obl:em	SpaceAfter=No
+27	,	,	PUNCT	_	_	29	punct	29:punct	_
+28	basicamente	basicamente	ADV	_	_	29	advmod	29:advmod	_
+29	indicando	indicar	VERB	_	VerbForm=Ger	19	advcl	19:advcl	_
+30	que	que	SCONJ	_	_	32	mark	32:mark	_
+31	nao	nao	ADV	_	_	32	advmod	32:advmod	_
+32	ha	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	ccomp	29:ccomp	_
+33	infeccao	infeccao	NOUN	_	Gender=Fem|Number=Sing	32	obj	32:obj	SpaceAfter=No
+34	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0009
+# text = em tempos criticos, verifique todas as manhas em um ambiente com ar limpo!
+1	em	em	ADP	_	_	2	case	2:case	_
+2	tempos	tempo	NOUN	_	Gender=Masc|Number=Plur	5	obl	5:obl:em	_
+3	criticos	critico	ADJ	_	Gender=Masc|Number=Plur	2	amod	2:amod	SpaceAfter=No
+4	,	,	PUNCT	_	_	2	punct	2:punct	_
+5	verifique	verificar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+6	todas	todo	DET	_	Gender=Fem|Number=Plur|PronType=Ind	8	det	8:det	_
+7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	8:det	_
+8	manhas	manha	NOUN	_	Gender=Fem|Number=Plur	5	obj	5:obj	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	ambiente	ambiente	NOUN	_	Number=Sing	5	obl	5:obl:em	_
+12	com	com	ADP	_	_	13	case	13:case	_
+13	ar	ar	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:com	_
+14	limpo	limpo	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	13	amod	13:amod	SpaceAfter=No
+15	!	!	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0011
+# text = conselhos excelentes serios por medicos japoneses que tratam casos de covid-19.
+1	conselhos	conselho	NOUN	_	Gender=Masc|Number=Plur	0	root	0:root	_
+2	excelentes	excelente	ADJ	_	Number=Plur	1	amod	1:amod	_
+3	serios	serio	ADJ	_	Gender=Masc|Number=Plur	1	amod	1:amod	_
+4	por	por	ADP	_	_	5	case	5:case	_
+5	medicos	medico	NOUN	_	Gender=Masc|Number=Plur	1	nmod	1:nmod:por|8:nsubj	_
+6	japoneses	japonÃªs	ADJ	_	Gender=Masc|Number=Plur	5	amod	5:amod	_
+7	que	que	PRON	_	PronType=Rel	8	nsubj	5:ref	_
+8	tratam	tratar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_
+9	casos	caso	NOUN	_	Gender=Masc|Number=Plur	8	obj	8:obj	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	covid-19	covid-19	NUM	_	NumType=Card	9	nmod	9:nmod:de	SpaceAfter=No
+12	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0013
+# text = todos devem garantir que sua boca e garganta estejam umidas, nunca seca.
+1	todos	todo	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	2	nsubj	2:nsubj|3:nsubj	_
+2	devem	dever	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	garantir	garantir	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	_
+4	que	que	SCONJ	_	_	10	mark	10:mark|13:mark	_
+5	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	6	det	6:det	_
+6	boca	boca	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	10:nsubj|13:nsubj	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	garganta	garganta	NOUN	_	Gender=Fem|Number=Sing	6	conj	6:conj:e|10:nsubj|13:nsubj	_
+9	estejam	estar	AUX	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop|13:cop	_
+10	umidas	umido	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	3	ccomp	3:ccomp	SpaceAfter=No
+11	,	,	PUNCT	_	_	13	punct	13:punct	_
+12	nunca	nunca	ADV	_	_	13	advmod	13:advmod	_
+13	seca	seco	ADJ	_	Gender=Fem|Number=Sing	10	conj	3:ccomp|10:conj	SpaceAfter=No
+14	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0015
+# text = tome alguns goles de agua a cada 15 minutos, pelo menos.
+1	tome	tomar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	alguns	algum	DET	_	Gender=Masc|Number=Plur|PronType=Ind	3	det	3:det	_
+3	goles	gole	NOUN	_	Gender=Masc|Number=Plur	1	obj	1:obj	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	agua	agua	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:de	_
+6	a	a	ADP	_	_	9	case	9:case	_
+7	cada	cada	DET	_	Number=Sing|PronType=Ind	9	det	9:det	_
+8	15	15	NUM	_	NumType=Card	9	nummod	9:nummod	_
+9	minutos	minuto	NOUN	_	Gender=Masc|Number=Plur	1	obl	1:obl:a	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11-12	pelo	_	_	_	_	_	_	_	_
+11	por	por	ADP	_	ExtPos=ADV	1	advmod	1:advmod	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	fixed	11:fixed	_
+13	menos	menos	NOUN	_	Gender=Masc|Number=Sing	11	fixed	11:fixed	SpaceAfter=No
+14	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0017
+# text = porque?
+1	porque	porque	ADV	_	_	0	root	0:root	SpaceAfter=No
+2	?	?	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0019
+# text = mesmo que o virus entre em sua boca beber agua ou outros liquidos os lavara pelo esofago e pelo estomago.
+1	mesmo	mesmo	ADV	_	ExtPos=SCONJ	5	mark	5:mark	_
+2	que	que	SCONJ	_	_	1	fixed	1:fixed	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	virus	virus	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+5	entre	entrar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	advcl	15:advcl:mesmo_que	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	8	det	8:det	_
+8	boca	boca	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:em	_
+9	beber	beber	VERB	_	VerbForm=Inf	15	xcomp	15:xcomp	_
+10	agua	agua	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+11	ou	ou	CCONJ	_	_	13	cc	13:cc	_
+12	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	13	det	13:det	_
+13	liquidos	liquido	NOUN	_	Gender=Masc|Number=Plur	10	conj	9:obj|10:conj:ou	_
+14	os	o	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	15	obj	9:nsubj|15:obj	_
+15	lavara	lavar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pqp|VerbForm=Fin	0	root	0:root	_
+16-17	pelo	_	_	_	_	_	_	_	_
+16	por	por	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	esofago	esofago	NOUN	_	Gender=Masc|Number=Sing	15	obl	15:obl:por	_
+19	e	e	CCONJ	_	_	22	cc	22:cc	_
+20-21	pelo	_	_	_	_	_	_	_	_
+20	por	por	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	estomago	estomago	NOUN	_	Gender=Masc|Number=Sing	18	conj	15:obl:por|18:conj:e	SpaceAfter=No
+23	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0021
+# text = uma vez la na barriga seu acido do estomago matara todo o virus.
+1	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	vez	vez	NOUN	_	Gender=Fem|Number=Sing	12	fixed	12:fixed	_
+3	la	lo	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	12	advcl	12:advcl	_
+4-5	na	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	barriga	barriga	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:em	_
+7	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	8	det	8:det	_
+8	acido	acido	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	12:nsubj	_
+9-10	do	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	estomago	estomago	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:de	_
+12	matara	matar	VERB	_	ExtPos=VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pqp|VerbForm=Fin	0	root	0:root	_
+13	todo	todo	DET	_	Gender=Masc|Number=Sing|PronType=Ind	15	det	15:det	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	virus	virus	NOUN	_	Gender=Masc	12	obj	12:obj	SpaceAfter=No
+16	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0023
+# text = se voce nao beber agua suficiente com mais regularidade o virus pode entrar nas traqueias e nos pulmoes.
+1	se	se	SCONJ	_	_	4	mark	4:mark	_
+2	voce	voce	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	4	nsubj	4:nsubj	_
+3	nao	nao	ADV	_	_	4	advmod	4:advmod	_
+4	beber	beber	VERB	_	VerbForm=Inf	12	advcl	12:advcl:se	_
+5	agua	agua	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+6	suficiente	suficiente	ADJ	_	Number=Sing	5	amod	5:amod	_
+7	com	com	ADP	_	_	9	case	9:case	_
+8	mais	mais	DET	_	PronType=Ind	9	det	9:det	_
+9	regularidade	regularidade	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:com	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	virus	virus	NOUN	_	Gender=Masc	12	nsubj	12:nsubj|13:nsubj	_
+12	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+13	entrar	entrar	VERB	_	VerbForm=Inf	12	xcomp	12:xcomp	_
+14-15	nas	_	_	_	_	_	_	_	_
+14	em	em	ADP	_	_	16	case	16:case	_
+15	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	16:det	_
+16	traqueias	traqueia	NOUN	_	Gender=Fem|Number=Plur	13	obl	13:obl:em	_
+17	e	e	CCONJ	_	_	20	cc	20:cc	_
+18-19	nos	_	_	_	_	_	_	_	_
+18	em	em	ADP	_	_	20	case	20:case	_
+19	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	20:det	_
+20	pulmoes	pulmo	NOUN	_	Gender=Masc|Number=Plur	16	conj	13:obl:em|16:conj:e	SpaceAfter=No
+21	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0025
+# text = isso e muito perigoso.
+1	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	4	nsubj	4:nsubj	_
+2	e	e	CCONJ	_	_	4	cc	4:cc	_
+3	muito	muito	ADV	_	_	4	advmod	4:advmod	_
+4	perigoso	perigoso	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0027
+# text = pode enviar e compartilhar com a familia, amigos e todos sobre isso!
+1	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	enviar	enviar	VERB	_	VerbForm=Inf	1	xcomp	1:xcomp	_
+3	e	e	CCONJ	_	_	4	cc	4:cc	_
+4	compartilhar	compartilhar	VERB	_	VerbForm=Inf	2	conj	1:xcomp|2:conj:e	_
+5	com	com	ADP	_	_	7	case	7:case|9:case|11:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	familia	familia	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:com	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	amigos	amigo	NOUN	_	Gender=Masc|Number=Plur	7	conj	4:obl:com|7:conj:e	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	todos	todo	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	7	conj	4:obl:com|7:conj:e	_
+12	sobre	sobre	ADP	_	_	13	case	13:case	_
+13	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	2	obl	2:obl:sobre|4:obl:sobre	SpaceAfter=No
+14	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0029
+# text = tome cuidado com todos e que o mundo se recupere do virus corona em breve.
+1	tome	tomar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	cuidado	cuidado	NOUN	_	Gender=Masc|Number=Sing	1	obj	1:obj	_
+3	com	com	ADP	_	_	4	case	4:case	_
+4	todos	todo	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	2	nmod	2:nmod:com	_
+5	e	e	CCONJ	_	_	10	cc	10:cc	_
+6	que	que	SCONJ	_	_	10	mark	10:mark	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	10:nsubj	_
+9	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	10	expl	10:expl	_
+10	recupere	recuperar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	1:conj:e	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	virus	virus	NOUN	_	Gender=Masc	10	obl	10:obl:de	_
+14	corona	corona	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod	_
+15	em	em	ADP	_	_	16	case	16:case	_
+16	breve	breve	NOUN	_	Number=Sing	10	obl	10:obl:em	SpaceAfter=No
+17	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0031
+# text = ps.
+1	ps	ps	NOUN	_	_	0	root	0:root	SpaceAfter=No
+2	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0033
+# text = : esse artigo e uma sugestao de leitores do boatos.org.
+1	:	:	PUNCT	_	_	6	punct	6:punct	_
+2	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	3	det	3:det	_
+3	artigo	artigo	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+4	e	e	CCONJ	_	_	6	cc	6:cc	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	sugestao	sugestao	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	leitores	leitor	NOUN	_	Gender=Masc|Number=Plur	6	nmod	6:nmod:de	_
+9-10	do	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	boatos.org	boatos.org	SYM	_	_	8	nmod	8:nmod:de	SpaceAfter=No
+12	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0035
+# text = se voce quiser sugerir um tema ao boatos.org, entre em contato com a gente pelo site, facebook e whatsapp no telefone (61) 99177-9164.
+1	se	se	SCONJ	_	_	3	mark	3:mark	_
+2	voce	voce	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	3	nsubj	3:nsubj|4:nsubj	_
+3	quiser	querer	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	11	advcl	11:advcl:se	_
+4	sugerir	sugerir	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	tema	tema	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7-8	ao	_	_	_	_	_	_	_	_
+7	a	a	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	boatos.org	boatos.org	SYM	_	_	4	obl	4:obl:a	SpaceAfter=No
+10	,	,	PUNCT	_	_	3	punct	3:punct	_
+11	entre	entrar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+12	em	em	ADP	_	_	13	case	13:case	_
+13	contato	contato	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:em	_
+14	com	com	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	gente	gente	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:com	_
+17-18	pelo	_	_	_	_	_	_	_	_
+17	por	por	ADP	_	_	19	case	19:case|21:case|23:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	site	site	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:por	SpaceAfter=No
+20	,	,	PUNCT	_	_	21	punct	21:punct	_
+21	facebook	facebook	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	19	conj	11:obl:por|19:conj:e	_
+22	e	e	CCONJ	_	_	23	cc	23:cc	_
+23	whatsapp	whatsapp	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	19	conj	11:obl:por|19:conj:e	_
+24-25	no	_	_	_	_	_	_	_	_
+24	em	em	ADP	_	_	26	case	26:case	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	telefone	telefone	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:em	_
+27	(	(	PUNCT	_	_	28	punct	28:punct	SpaceAfter=No
+28	61	61	NUM	_	NumType=Card	26	appos	26:appos	SpaceAfter=No
+29	)	)	PUNCT	_	_	28	punct	28:punct	_
+30	99177-9164	99177-9164	NUM	_	NumType=Card	28	nmod	28:nmod	SpaceAfter=No
+31	.	.	PUNCT	_	_	11	punct	11:punct	_

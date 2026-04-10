@@ -1,0 +1,456 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Encontraram a dona do triplex.
+1	Encontraram	encontrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	dona	dono	NOUN	_	Gender=Fem|Number=Sing	1	obj	1:obj	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	triplex	triplex	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	SpaceAfter=No
+7	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = É uma publicitária que tem 6 empresas e nenhum funcionário.
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+2	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	publicitária	publicitário	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root|5:nsubj	_
+4	que	que	PRON	_	PronType=Rel	5	nsubj	3:ref	_
+5	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_
+6	6	6	NUM	_	NumType=Card	7	nummod	7:nummod	_
+7	empresas	empresa	NOUN	_	Gender=Fem|Number=Plur	5	obj	5:obj	_
+8	e	e	CCONJ	_	_	10	cc	10:cc	_
+9	nenhum	nenhum	DET	_	Gender=Masc|Number=Sing|PronType=Ind	10	det	10:det	_
+10	funcionário	funcionário	NOUN	_	Gender=Masc|Number=Sing	7	conj	5:obj|7:conj:e	SpaceAfter=No
+11	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0005
+# text = A publicitária Nelci Warken, presa na 22a fase da Operação Lava Jato, batizada de Triplo X, confirmou hoje (29) para a Polícia Federal ser a controladora da offshore Murray Holdings, dona de um tríplex no Edifício Solaris, no Guarujá, onde a família do ex-presidente Lula seria dona de outro tríplex.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	publicitária	publicitário	NOUN	_	Gender=Fem|Number=Sing	22	nsubj	22:nsubj	_
+3	Nelci	Nelci	PROPN	_	_	2	nmod	2:nmod	_
+4	Warken	Warken	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	presa	prender	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	2	acl	2:acl	_
+7-8	na	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	10	case	10:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+9	22a	22a	ADJ	_	Gender=Fem|NumType=Ord	10	amod	10:amod	_
+10	fase	fase	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:em	_
+11-12	da	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	Operação	Operação	PROPN	_	_	10	nmod	10:nmod:de	_
+14	Lava	Lava	PROPN	_	_	13	flat:name	13:flat:name	_
+15	Jato	Jato	PROPN	_	_	13	flat:name	13:flat:name	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	batizada	batizar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	2:acl	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	Triplo	Triplo	PROPN	_	_	17	obl	17:obl:de	_
+20	X	X	PROPN	_	_	19	flat:name	19:flat:name	SpaceAfter=No
+21	,	,	PUNCT	_	_	17	punct	17:punct	_
+22	confirmou	confirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+23	hoje	hoje	ADV	_	_	22	advmod	22:advmod	_
+24	(	(	PUNCT	_	_	25	punct	25:punct	SpaceAfter=No
+25	29	29	NUM	_	NumType=Card	23	appos	23:appos	SpaceAfter=No
+26	)	)	PUNCT	_	_	25	punct	25:punct	_
+27	para	para	ADP	_	_	29	case	29:case	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	Polícia	Polícia	PROPN	_	_	33	obl	33:obl:para	_
+30	Federal	Federal	PROPN	_	_	29	flat:name	29:flat:name	_
+31	ser	ser	AUX	_	VerbForm=Inf	33	cop	33:cop	_
+32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	33:det	_
+33	controladora	controlador	NOUN	_	Gender=Fem|Number=Sing	22	ccomp	22:ccomp	_
+34-35	da	_	_	_	_	_	_	_	_
+34	de	de	ADP	_	_	36	case	36:case	_
+35	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	36:det	_
+36	offshore	offshore	NOUN	_	Foreign=Yes	33	nmod	33:nmod:de	_
+37	Murray	Murray	PROPN	_	_	36	nmod	36:nmod	_
+38	Holdings	Holdings	PROPN	_	_	37	flat:name	37:flat:name	SpaceAfter=No
+39	,	,	PUNCT	_	_	40	punct	40:punct	_
+40	dona	dono	NOUN	_	Gender=Fem|Number=Sing	36	appos	36:appos	_
+41	de	de	ADP	_	_	43	case	43:case	_
+42	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	43	det	43:det	_
+43	tríplex	tríplex	NOUN	_	Gender=Masc|Number=Sing	40	nmod	40:nmod:de|61:obl	_
+44-45	no	_	_	_	_	_	_	_	_
+44	em	em	ADP	_	_	46	case	46:case	_
+45	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	46	det	46:det	_
+46	Edifício	Edifício	PROPN	_	_	43	nmod	43:nmod:em	_
+47	Solaris	Solaris	PROPN	_	_	46	flat:name	46:flat:name	SpaceAfter=No
+48	,	,	PUNCT	_	_	51	punct	51:punct	_
+49-50	no	_	_	_	_	_	_	_	_
+49	em	em	ADP	_	_	51	case	51:case	_
+50	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	51	det	51:det	_
+51	Guarujá	Guarujá	PROPN	_	_	46	nmod	46:nmod:em	SpaceAfter=No
+52	,	,	PUNCT	_	_	51	punct	51:punct	_
+53	onde	onde	ADV	_	_	61	advmod	43:ref	_
+54	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	55	det	55:det	_
+55	família	família	NOUN	_	Gender=Fem|Number=Sing	61	nsubj	61:nsubj	_
+56-57	do	_	_	_	_	_	_	_	_
+56	de	de	ADP	_	_	58	case	58:case	_
+57	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	58	det	58:det	_
+58	ex-presidente	ex-presidente	NOUN	_	Number=Sing	55	nmod	55:nmod:de	_
+59	Lula	Lula	PROPN	_	_	58	nmod	58:nmod	_
+60	seria	ser	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	61	cop	61:cop	_
+61	dona	dono	NOUN	_	Gender=Fem|Number=Sing	43	acl:relcl	43:acl:relcl	_
+62	de	de	ADP	_	_	64	case	64:case	_
+63	outro	outro	DET	_	Gender=Masc|Number=Sing|PronType=Ind	64	det	64:det	_
+64	tríplex	tríplex	NOUN	_	Gender=Masc|Number=Sing	61	nmod	61:nmod:de	SpaceAfter=No
+65	.	.	PUNCT	_	_	22	punct	22:punct	_
+
+# sent_id = S0007
+# text = O advogado criminalista Alexandre Crepaldi, que defende Nelci, disse que sua cliente não é laranja.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	advogado	advogado	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	8:nsubj|11:nsubj	_
+3	criminalista	criminalista	ADJ	_	Number=Sing	2	amod	2:amod	_
+4	Alexandre	Alexandre	PROPN	_	_	2	nmod	2:nmod	_
+5	Crepaldi	Crepaldi	PROPN	_	_	4	flat:name	4:flat:name	SpaceAfter=No
+6	,	,	PUNCT	_	_	8	punct	8:punct	_
+7	que	que	PRON	_	PronType=Rel	8	nsubj	2:ref	_
+8	defende	defender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+9	Nelci	Nelci	PROPN	_	_	8	obj	8:obj	SpaceAfter=No
+10	,	,	PUNCT	_	_	8	punct	8:punct	_
+11	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	que	que	SCONJ	_	_	17	mark	17:mark	_
+13	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	14	det	14:det	_
+14	cliente	cliente	NOUN	_	Number=Sing	17	nsubj	17:nsubj	_
+15	não	não	ADV	_	_	17	advmod	17:advmod	_
+16	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	17:cop	_
+17	laranja	laranja	NOUN	_	Number=Sing	11	ccomp	11:ccomp	SpaceAfter=No
+18	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0009
+# text = O apartamento foi comprado com dinheiro do trabalho dela.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	apartamento	apartamento	NOUN	_	Gender=Masc|Number=Sing	4	nsubj:pass	4:nsubj:pass	_
+3	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	comprado	comprar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5	com	com	ADP	_	_	6	case	6:case	_
+6	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:com	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de	_
+10-11	dela	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	9	nmod	9:nmod:de	_
+12	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0011
+# text = DETALHES (COM INFORMAÇÕES DO ANTAGONISTA) A força-tarefa descobriu que Nelci Warken é quem paga o boleto do condomínio.
+1	DETALHES	DETALHES	PROPN	_	_	11	nsubj	11:nsubj	_
+2	(	(	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+3	COM	com	ADP	_	_	4	case	4:case	_
+4	INFORMAÇÕES	informação	NOUN	_	Gender=Fem|Number=Plur	1	nmod	1:nmod:com	_
+5-6	DO	_	_	_	_	_	_	_	_
+5	DE	de	ADP	_	_	7	case	7:case	_
+6	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	ANTAGONISTA	ANTAGONISTA	PROPN	_	_	4	nmod	4:nmod:de	SpaceAfter=No
+8	)	)	PUNCT	_	_	4	punct	4:punct	_
+9	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	força-tarefa	força-tarefa	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	11:nsubj	_
+11	descobriu	descobrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	que	que	SCONJ	_	_	16	mark	16:mark	_
+13	Nelci	Nelci	PROPN	_	_	16	nsubj	16:nsubj	_
+14	Warken	Warken	PROPN	_	_	13	flat:name	13:flat:name	_
+15	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	16:cop	_
+16	quem	quem	PRON	_	PronType=Rel	11	ccomp	11:ccomp	_
+17	paga	pagar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	acl:relcl	16:acl:relcl	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	boleto	boleto	NOUN	_	Gender=Masc|Number=Sing	17	obj	17:obj	_
+20-21	do	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	condomínio	condomínio	NOUN	_	Gender=Masc|Number=Sing	19	nmod	19:nmod:de	SpaceAfter=No
+23	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0013
+# text = Escutas telefônicas também confirmaram que Nelci se apresenta como a proprietária do imóvel.
+1	Escutas	escuta	NOUN	_	Gender=Fem|Number=Plur	4	nsubj	4:nsubj	_
+2	telefônicas	telefônico	ADJ	_	Gender=Fem|Number=Plur	1	amod	1:amod	_
+3	também	também	ADV	_	_	4	advmod	4:advmod	_
+4	confirmaram	confirmar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	que	que	SCONJ	_	_	8	mark	8:mark	_
+6	Nelci	Nelci	PROPN	_	_	8	nsubj	8:nsubj	_
+7	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	8	expl	8:expl	_
+8	apresenta	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	ccomp	4:ccomp	_
+9	como	como	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	proprietária	proprietári	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:como	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	imóvel	imóvel	NOUN	_	Number=Sing	11	nmod	11:nmod:de	SpaceAfter=No
+15	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0015
+# text = Além da Paulista Plus Promoções, Nelci é titular das empresas Paulista Line Publicidade, juntamente com Milania Warken, cuja sede fica num terreno baldio, Nelci Warken ME, não localizada pelo MPF, e Paulista Consultoria de Imóveis, em sociedade com Teresinha de Jesus Pontes e Edson de Azevedo Pontes, que está em imóvel atualmente disponível para locação.
+1	Além	além	ADV	_	_	10	advmod	10:advmod	_
+2-3	da	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	Paulista	Paulista	PROPN	_	_	1	obl	1:obl:de	_
+5	Plus	Plus	PROPN	_	_	4	flat:name	4:flat:name	_
+6	Promoções	Promoções	PROPN	_	_	4	flat:name	4:flat:name	SpaceAfter=No
+7	,	,	PUNCT	_	_	1	punct	1:punct	_
+8	Nelci	Nelci	PROPN	_	_	10	nsubj	10:nsubj	_
+9	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_
+10	titular	titular	NOUN	_	Number=Sing	0	root	0:root	_
+11-12	das	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	13:det	_
+13	empresas	empresa	NOUN	_	Gender=Fem|Number=Plur	10	nmod	10:nmod:de	_
+14	Paulista	Paulista	PROPN	_	_	13	nmod	13:nmod	_
+15	Line	Line	PROPN	_	_	14	flat:name	14:flat:name	_
+16	Publicidade	Publicidade	PROPN	_	_	14	flat:name	14:flat:name	SpaceAfter=No
+17	,	,	PUNCT	_	_	18	punct	18:punct	_
+18	juntamente	juntamente	ADV	_	_	13	advmod	13:advmod	_
+19	com	com	ADP	_	_	20	case	20:case|31:case|42:case	_
+20	Milania	Milania	PROPN	_	_	18	obl	18:obl:com|24:nmod	_
+21	Warken	Warken	PROPN	_	_	20	flat:name	20:flat:name	SpaceAfter=No
+22	,	,	PUNCT	_	_	25	punct	25:punct	_
+23	cuja	cujo	DET	_	Gender=Fem|Number=Sing|PronType=Rel	24	det	20:ref	_
+24	sede	sede	NOUN	_	Gender=Fem|Number=Sing	25	nsubj	25:nsubj	_
+25	fica	ficar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	acl:relcl	20:acl:relcl	_
+26-27	num	_	_	_	_	_	_	_	_
+26	em	em	ADP	_	_	28	case	28:case	_
+27	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	terreno	terreno	NOUN	_	Gender=Masc|Number=Sing	25	obl	25:obl:em	_
+29	baldio	baldio	ADJ	_	Gender=Masc|Number=Sing	28	amod	28:amod	SpaceAfter=No
+30	,	,	PUNCT	_	_	31	punct	31:punct	_
+31	Nelci	Nelci	PROPN	_	_	20	conj	18:obl:com|20:conj:e	_
+32	Warken	Warken	PROPN	_	_	31	flat:name	31:flat:name	_
+33	ME	ME	PROPN	_	_	31	flat:name	31:flat:name	SpaceAfter=No
+34	,	,	PUNCT	_	_	36	punct	36:punct	_
+35	não	não	ADV	_	_	36	advmod	36:advmod	_
+36	localizada	localizar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	31	acl	31:acl	_
+37-38	pelo	_	_	_	_	_	_	_	_
+37	por	por	ADP	_	_	39	case	39:case	_
+38	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	39:det	_
+39	MPF	MPF	PROPN	_	_	36	obl:agent	36:obl:agent	SpaceAfter=No
+40	,	,	PUNCT	_	_	42	punct	42:punct	_
+41	e	e	CCONJ	_	_	42	cc	42:cc	_
+42	Paulista	Paulista	PROPN	_	_	20	conj	18:obl:com|20:conj:e	_
+43	Consultoria	Consultoria	PROPN	_	_	42	flat:name	42:flat:name	_
+44	de	de	ADP	_	_	45	case	45:case	_
+45	Imóveis	Imóveis	PROPN	_	_	42	flat:name	42:flat:name	SpaceAfter=No
+46	,	,	PUNCT	_	_	48	punct	48:punct	_
+47	em	em	ADP	_	_	48	case	48:case	_
+48	sociedade	sociedade	NOUN	_	Gender=Fem|Number=Sing	42	nmod	42:nmod:em	_
+49	com	com	ADP	_	_	50	case	50:case|55:case	_
+50	Teresinha	Teresinha	PROPN	_	_	48	nmod	48:nmod:com|63:nsubj	_
+51	de	de	ADP	_	_	52	case	52:case	_
+52	Jesus	Jesus	PROPN	_	_	50	flat:name	50:flat:name	_
+53	Pontes	Pontes	PROPN	_	_	50	flat:name	50:flat:name	_
+54	e	e	CCONJ	_	_	55	cc	55:cc	_
+55	Edson	Edson	PROPN	_	_	50	conj	48:nmod:com|50:conj:e|63:nsubj	_
+56	de	de	ADP	_	_	57	case	57:case	_
+57	Azevedo	Azevedo	PROPN	_	_	55	flat:name	55:flat:name	_
+58	Pontes	Pontes	PROPN	_	_	55	flat:name	55:flat:name	SpaceAfter=No
+59	,	,	PUNCT	_	_	63	punct	63:punct	_
+60	que	que	PRON	_	PronType=Rel	63	nsubj	50:ref|55:ref	_
+61	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	63	cop	63:cop	_
+62	em	em	ADP	_	_	63	case	63:case	_
+63	imóvel	imóvel	NOUN	_	Number=Sing	50	acl:relcl	50:acl:relcl|55:acl:relcl	_
+64	atualmente	atualmente	ADV	_	_	65	advmod	65:advmod	_
+65	disponível	disponível	ADJ	_	Number=Sing	63	amod	63:amod	_
+66	para	para	ADP	_	_	67	case	67:case	_
+67	locação	locação	NOUN	_	Gender=Fem|Number=Sing	65	obl	65:obl:para	SpaceAfter=No
+68	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0017
+# text = Nelci é titular, ainda, das offshores WoodBay Holdings e Hazelville International Inc, constituídas no Panamá, no mesmo endereço da sede da Mossack & Fonseca naquele país.
+1	Nelci	Nelci	PROPN	_	_	3	nsubj	3:nsubj	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+3	titular	titular	NOUN	_	Number=Sing	0	root	0:root	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	ainda	ainda	ADV	_	_	3	advmod	3:advmod	SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	5:punct	_
+7-8	das	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	9:det	_
+9	offshores	offshoro	NOUN	_	Foreign=Yes|Gender=Fem|Number=Plur	3	nmod	3:nmod:de	_
+10	WoodBay	WoodBay	PROPN	_	_	9	nmod	9:nmod	_
+11	Holdings	Holdings	PROPN	_	_	10	flat:name	10:flat:name	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	Hazelville	Hazelville	PROPN	_	_	10	conj	9:nmod|10:conj:e	_
+14	International	International	PROPN	_	_	13	flat:name	13:flat:name	_
+15	Inc	Inc	PROPN	_	_	13	flat:name	13:flat:name	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	constituídas	constituír	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	9	acl	9:acl	_
+18-19	no	_	_	_	_	_	_	_	_
+18	em	em	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	Panamá	Panamá	PROPN	_	_	17	obl	17:obl:em	SpaceAfter=No
+21	,	,	PUNCT	_	_	25	punct	25:punct	_
+22-23	no	_	_	_	_	_	_	_	_
+22	em	em	ADP	_	_	25	case	25:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+24	mesmo	mesmo	DET	_	Gender=Masc|Number=Sing|PronType=Dem	25	det	25:det	_
+25	endereço	endereço	NOUN	_	Gender=Masc|Number=Sing	17	obl	17:obl:em	_
+26-27	da	_	_	_	_	_	_	_	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	sede	sede	NOUN	_	Gender=Fem|Number=Sing	25	nmod	25:nmod:de	_
+29-30	da	_	_	_	_	_	_	_	_
+29	de	de	ADP	_	_	31	case	31:case	_
+30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+31	Mossack	Mossack	PROPN	_	_	28	nmod	28:nmod:de	_
+32	&	&	SYM	_	_	33	cc	33:cc	_
+33	Fonseca	Fonseca	PROPN	_	_	31	flat:name	31:flat:name	_
+34-35	naquele	_	_	_	_	_	_	_	_
+34	em	em	ADP	_	_	36	case	36:case	_
+35	aquele	aquele	DET	_	Gender=Masc|Number=Sing|PronType=Dem	36	det	36:det	_
+36	país	país	NOUN	_	Gender=Masc|Number=Sing	28	nmod	28:nmod:em	SpaceAfter=No
+37	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0019
+# text = Tais offshores seriam sócias daPaulista Line.
+1	Tais	tal	DET	_	Number=Plur|PronType=Dem	2	det	2:det	_
+2	offshores	offshores	NOUN	_	Foreign=Yes	4	nsubj	4:nsubj	_
+3	seriam	ser	AUX	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	4	cop	4:cop	_
+4	sócias	sócio	NOUN	_	Gender=Fem|Number=Plur	0	root	0:root	_
+5	daPaulista	dapaulista	NOUN	_	Number=Sing	4	nmod	4:nmod	_
+6	Line	Line	PROPN	_	_	5	flat:name	5:flat:name	SpaceAfter=No
+7	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0021
+# text = Essas empresas nunca tiveram um funcionário.
+1	Essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	2	det	2:det	_
+2	empresas	empresa	NOUN	_	Gender=Fem|Number=Plur	4	nsubj	4:nsubj	_
+3	nunca	nunca	ADV	_	_	4	advmod	4:advmod	_
+4	tiveram	ter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	funcionário	funcionário	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	SpaceAfter=No
+7	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0023
+# text = Tudo indica que são empresas de fachada.
+1	Tudo	tudo	PRON	_	PronType=Ind	2	nsubj	2:nsubj	_
+2	indica	indicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	5	mark	5:mark	_
+4	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+5	empresas	empresa	NOUN	_	Gender=Fem|Number=Plur	2	ccomp	2:ccomp	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	fachada	fachada	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	SpaceAfter=No
+8	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0025
+# text = RESUMINDO (ironia) Essa moça deve servir como exemplo para todos os trabalhadores do Brasil.
+1	RESUMINDO	resumir	VERB	_	VerbForm=Ger	7	advcl	7:advcl	_
+2	(	(	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+3	ironia	ironia	NOUN	_	Gender=Fem|Number=Sing	1	parataxis	1:parataxis	SpaceAfter=No
+4	)	)	PUNCT	_	_	3	punct	3:punct	_
+5	Essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	6	det	6:det	_
+6	moça	moço	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj|8:nsubj	_
+7	deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	servir	servir	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+9	como	como	ADP	_	_	10	case	10:case	_
+10	exemplo	exemplo	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:como	_
+11	para	para	ADP	_	_	14	case	14:case	_
+12	todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Ind	14	det	14:det	_
+13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	14:det	_
+14	trabalhadores	trabalhador	NOUN	_	Gender=Masc|Number=Plur	8	obl	8:obl:para	_
+15-16	do	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	Brasil	Brasil	PROPN	_	_	14	nmod	14:nmod:de	SpaceAfter=No
+18	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0027
+# text = Disse que comprou o apartamento economizando dinheiro durante 29 anos.
+1	Disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	que	que	SCONJ	_	_	3	mark	3:mark	_
+3	comprou	comprar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	ccomp	1:ccomp	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	apartamento	apartamento	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	_
+6	economizando	economizar	VERB	_	VerbForm=Ger	3	advcl	3:advcl	_
+7	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+8	durante	durante	ADP	_	_	10	case	10:case	_
+9	29	29	NUM	_	NumType=Card	10	nummod	10:nummod	_
+10	anos	ano	NOUN	_	Gender=Masc|Number=Plur	6	obl	6:obl:durante	SpaceAfter=No
+11	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0029
+# text = O valor de mercado do triplex é de R$ 1, 8 milhão.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	valor	valor	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	10:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	mercado	mercado	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	triplex	triplex	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	_
+8	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	R$	R$	SYM	_	_	0	root	0:root	_
+11	1	1	NUM	_	NumType=Card	14	nummod	14:nummod	SpaceAfter=No
+12	,	,	PUNCT	_	_	14	punct	14:punct	_
+13	8	8	NUM	_	NumType=Card	14	nummod	14:nummod	_
+14	milhão	milhão	NOUN	_	Gender=Masc|Number=Sing	10	appos	10:appos	SpaceAfter=No
+15	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0031
+# text = Ela teria que economizar mais de R$ 5 mil por mês durante os 29 anos.
+1	Ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj|4:nsubj	_
+2	teria	ter	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+3	que	que	ADP	_	_	4	mark	4:mark	_
+4	economizar	economizar	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	_
+5	mais	mais	ADV	_	ExtPos=ADV	7	advmod	7:advmod	_
+6	de	de	ADP	_	_	5	fixed	5:fixed	_
+7	R$	R$	SYM	_	_	4	obj	4:obj	_
+8	5	5	NUM	_	NumType=Card	7	nummod	7:nummod	_
+9	mil	mil	NUM	_	NumType=Card	8	flat	8:flat	_
+10	por	por	ADP	_	_	11	case	11:case	_
+11	mês	mês	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:por	_
+12	durante	durante	ADP	_	_	15	case	15:case	_
+13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	15:det	_
+14	29	29	NUM	_	NumType=Card	15	nummod	15:nummod	_
+15	anos	ano	NOUN	_	Gender=Masc|Number=Plur	4	obl	4:obl:durante	SpaceAfter=No
+16	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0033
+# text = Ahhhh... ela também era funcionária da Bancoop, chefiada pelo tesoureiro do PT, João Vaccari Neto.
+1	Ahhhh	ahhhh	INTJ	_	_	6	discourse	6:discourse	SpaceAfter=No
+2	...	...	PUNCT	_	_	1	punct	1:punct	_
+3	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	6	nsubj	6:nsubj	_
+4	também	também	ADV	_	_	6	advmod	6:advmod	_
+5	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	cop	6:cop	_
+6	funcionária	funcionário	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	Bancoop	Bancoop	PROPN	_	_	6	nmod	6:nmod:de	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	chefiada	chefiar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	9	acl	9:acl	_
+12-13	pelo	_	_	_	_	_	_	_	_
+12	por	por	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	tesoureiro	tesoureiro	NOUN	_	Gender=Masc|Number=Sing	11	obl:agent	11:obl:agent	_
+15-16	do	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	PT	PT	PROPN	_	_	14	nmod	14:nmod:de	SpaceAfter=No
+18	,	,	PUNCT	_	_	19	punct	19:punct	_
+19	João	João	PROPN	_	_	14	appos	14:appos	_
+20	Vaccari	Vaccari	PROPN	_	_	19	flat:name	19:flat:name	_
+21	Neto	Neto	PROPN	_	_	19	flat:name	19:flat:name	SpaceAfter=No
+22	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0035
+# text = MOÇA, com todo respeito.
+1	MOÇA	MOÇA	PROPN	_	_	0	root	0:root	SpaceAfter=No
+2	,	,	PUNCT	_	_	5	punct	5:punct	_
+3	com	com	ADP	_	_	5	case	5:case	_
+4	todo	todo	DET	_	Gender=Masc|Number=Sing|PronType=Ind	5	det	5:det	_
+5	respeito	respeito	NOUN	_	Gender=Masc|Number=Sing	1	nmod	1:nmod:com	SpaceAfter=No
+6	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0037
+# text = Me engana que eu gosto!
+1	Me	me	PRON	_	Case=Dat|Number=Sing|Person=1|PronType=Prs	2	iobj	2:iobj	_
+2	engana	enganar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	5	mark	5:mark	_
+4	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	5:nsubj	_
+5	gosto	gostar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	ccomp	2:ccomp	SpaceAfter=No
+6	!	!	PUNCT	_	_	2	punct	2:punct	_

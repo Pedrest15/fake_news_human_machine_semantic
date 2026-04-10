@@ -1,0 +1,166 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = URGENTE: Homem ameaça explodir prédio durante exame da OAB em Salvador.
+1	URGENTE	URGENTE	PROPN	_	_	4	parataxis	4:parataxis	SpaceAfter=No
+2	:	:	PUNCT	_	_	1	punct	1:punct	_
+3	Homem	homem	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj|5:nsubj	_
+4	ameaça	ameaçar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	explodir	explodir	VERB	_	VerbForm=Inf	4	xcomp	4:xcomp	_
+6	prédio	prédio	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+7	durante	durante	ADP	_	_	8	case	8:case	_
+8	exame	exame	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:durante	_
+9-10	da	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	OAB	OAB	PROPN	_	_	8	nmod	8:nmod:de	_
+12	em	em	ADP	_	_	13	case	13:case	_
+13	Salvador	Salvador	PROPN	_	_	8	nmod	8:nmod:em	SpaceAfter=No
+14	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0003
+# text = Um homem ameaçou explodir um prédio durante o exame da OAB em Salvador.
+1	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	homem	homem	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj|4:nsubj	_
+3	ameaçou	ameaçar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	explodir	explodir	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	prédio	prédio	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7	durante	durante	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	exame	exame	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:durante	_
+10-11	da	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	OAB	OAB	PROPN	_	_	9	nmod	9:nmod:de	_
+13	em	em	ADP	_	_	14	case	14:case	_
+14	Salvador	Salvador	PROPN	_	_	9	nmod	9:nmod:em	SpaceAfter=No
+15	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0005
+# text = Os exames seriam realizados hoje (24) no Centro Universitário Jorge Amado.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	exames	exame	NOUN	_	Gender=Masc|Number=Plur	4	nsubj:pass	4:nsubj:pass	_
+3	seriam	ser	AUX	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	realizados	realizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5	hoje	hoje	ADV	_	_	4	advmod	4:advmod	_
+6	(	(	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+7	24	24	NUM	_	NumType=Card	5	appos	5:appos	SpaceAfter=No
+8	)	)	PUNCT	_	_	7	punct	7:punct	_
+9-10	no	_	_	_	_	_	_	_	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	Centro	Centro	PROPN	_	_	4	obl	4:obl:em	_
+12	Universitário	Universitário	PROPN	_	_	11	flat:name	11:flat:name	_
+13	Jorge	Jorge	PROPN	_	_	11	flat:name	11:flat:name	_
+14	Amado	Amado	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+15	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0007
+# text = O edifício foi evacuado e a polícia já está no local.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	edifício	edifício	NOUN	_	Gender=Masc|Number=Sing	4	nsubj:pass	4:nsubj:pass	_
+3	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	evacuado	evacuar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5	e	e	CCONJ	_	_	12	cc	12:cc	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	polícia	polícia	NOUN	_	Number=Sing	12	nsubj	12:nsubj	_
+8	já	já	ADV	_	_	12	advmod	12:advmod	_
+9	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	12:cop	_
+10-11	no	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	local	local	NOUN	_	Number=Sing	4	conj	4:conj:e	SpaceAfter=No
+13	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0009
+# text = A Secretaria de Segurança da Bahia disse que o homem entrou em uma das salas, pouco antes do início da prova, informou que carregava uma bomba e que iria explodir o prédio.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Secretaria	Secretaria	PROPN	_	_	8	nsubj	8:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Segurança	Segurança	PROPN	_	_	2	flat:name	2:flat:name	_
+5-6	da	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	Bahia	Bahia	PROPN	_	_	2	nmod	2:nmod:de	_
+8	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	que	que	SCONJ	_	_	12	mark	12:mark|28:mark	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	homem	homem	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	12:nsubj|28:nsubj	_
+12	entrou	entrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	ccomp	8:ccomp	_
+13	em	em	ADP	_	_	14	case	14:case	_
+14	uma	um	NUM	_	Gender=Fem|NumType=Card	12	obl	12:obl:em	_
+15-16	das	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	17:det	_
+17	salas	sala	NOUN	_	Gender=Fem|Number=Plur	14	nmod	14:nmod:de	SpaceAfter=No
+18	,	,	PUNCT	_	_	20	punct	20:punct	_
+19	pouco	pouco	ADV	_	_	20	advmod	20:advmod	_
+20	antes	antes	ADV	_	_	12	advmod	12:advmod	_
+21-22	do	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	início	início	NOUN	_	Gender=Masc|Number=Sing	20	obl	20:obl:de	_
+24-25	da	_	_	_	_	_	_	_	_
+24	de	de	ADP	_	_	26	case	26:case	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	prova	prova	NOUN	_	Gender=Fem|Number=Sing	23	nmod	23:nmod:de	SpaceAfter=No
+27	,	,	PUNCT	_	_	28	punct	28:punct	_
+28	informou	informar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	conj	8:ccomp|12:conj	_
+29	que	que	SCONJ	_	_	30	mark	30:mark	_
+30	carregava	carregar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	28	ccomp	28:ccomp	_
+31	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	32	det	32:det	_
+32	bomba	bomba	NOUN	_	Gender=Fem|Number=Sing	30	obj	30:obj	_
+33	e	e	CCONJ	_	_	36	cc	36:cc	_
+34	que	que	SCONJ	_	_	36	mark	36:mark	_
+35	iria	ir	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	36	aux	36:aux	_
+36	explodir	explodir	VERB	_	VerbForm=Inf	30	conj	28:ccomp|30:conj:e	_
+37	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	38:det	_
+38	prédio	prédio	NOUN	_	Gender=Masc|Number=Sing	36	obj	36:obj	SpaceAfter=No
+39	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0011
+# text = O cidadão se isolou em uma sala do sétimo andar da faculdade e a polícia está negociando a saída dele do local.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	cidadão	cidadão	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+3	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	4	expl	4:expl	_
+4	isolou	isolar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	sala	sala	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:em	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	11	case	11:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+10	sétimo	sétimo	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	11	amod	11:amod	_
+11	andar	andar	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	_
+12-13	da	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	faculdade	faculdade	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:de	_
+15	e	e	CCONJ	_	_	19	cc	19:cc	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	polícia	polícia	NOUN	_	Number=Sing	19	nsubj	19:nsubj	_
+18	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux	19:aux	_
+19	negociando	negociar	VERB	_	VerbForm=Ger	4	conj	4:conj:e	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	saída	saída	NOUN	_	Gender=Fem|Number=Sing	19	obj	19:obj	_
+22-23	dele	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	23	case	23:case	_
+23	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	21	nmod	21:nmod:de	_
+24-25	do	_	_	_	_	_	_	_	_
+24	de	de	ADP	_	_	26	case	26:case	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	local	local	NOUN	_	Number=Sing	21	nmod	21:nmod:de	SpaceAfter=No
+27	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0013
+# text = A OAB na Bahia confirmou a ameaça.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	OAB	OAB	PROPN	_	_	6	nsubj	6:nsubj	_
+3-4	na	_	_	_	_	_	_	_	_
+3	em	em	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	Bahia	Bahia	PROPN	_	_	2	nmod	2:nmod:em	_
+6	confirmou	confirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	ameaça	ameaça	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	SpaceAfter=No
+9	.	.	PUNCT	_	_	6	punct	6:punct	_

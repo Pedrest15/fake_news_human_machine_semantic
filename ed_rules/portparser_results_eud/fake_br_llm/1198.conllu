@@ -1,0 +1,434 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Monica Iozzi revela perseguição em Brasília e pacto demoníaco para sucesso.
+1	Monica	Monica	PROPN	_	_	3	nsubj	3:nsubj	_
+2	Iozzi	Iozzi	PROPN	_	_	1	flat:name	1:flat:name	_
+3	revela	revelar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	perseguição	perseguição	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+5	em	em	ADP	_	_	6	case	6:case	_
+6	Brasília	Brasília	PROPN	_	_	4	nmod	4:nmod:em	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	pacto	pacto	NOUN	_	Gender=Masc|Number=Sing	4	conj	3:obj|4:conj:e	_
+9	demoníaco	demoníaco	ADJ	_	Gender=Masc|Number=Sing	8	amod	8:amod	_
+10	para	para	ADP	_	_	11	case	11:case	_
+11	sucesso	sucesso	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:para	SpaceAfter=No
+12	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = Em uma entrevista bombástica ao G1, a atriz Monica Iozzi fez revelações chocantes sobre sua carreira e vida pessoal.
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	entrevista	entrevista	NOUN	_	Gender=Fem|Number=Sing	13	obl	13:obl:em	_
+4	bombástica	bombástico	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+5-6	ao	_	_	_	_	_	_	_	_
+5	a	a	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	G1	G1	PROPN	_	_	3	nmod	3:nmod:a	SpaceAfter=No
+8	,	,	PUNCT	_	_	3	punct	3:punct	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	atriz	atriz	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	13:nsubj	_
+11	Monica	Monica	PROPN	_	_	10	nmod	10:nmod	_
+12	Iozzi	Iozzi	PROPN	_	_	11	flat:name	11:flat:name	_
+13	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	revelações	revelação	NOUN	_	Gender=Fem|Number=Plur	13	obj	13:obj	_
+15	chocantes	chocante	ADJ	_	Number=Plur	14	amod	14:amod	_
+16	sobre	sobre	ADP	_	_	18	case	18:case|20:case	_
+17	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	18	det	18:det	_
+18	carreira	carreira	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:sobre	_
+19	e	e	CCONJ	_	_	20	cc	20:cc	_
+20	vida	vida	NOUN	_	Gender=Fem|Number=Sing	18	conj	14:nmod:sobre|18:conj:e	_
+21	pessoal	pessoal	ADJ	_	Number=Sing	20	amod	20:amod	SpaceAfter=No
+22	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0005
+# text = Ela afirmou ter sofrido uma campanha de perseguição durante o tempo em que trabalhou como repórter em Brasília, envolvendo figuras poderosas da política.
+1	Ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj|4:nsubj	_
+2	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	ter	ter	AUX	_	VerbForm=Inf	4	aux	4:aux	_
+4	sofrido	sofrer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	2	xcomp	2:xcomp	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	campanha	campanha	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	perseguição	perseguição	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de	_
+9	durante	durante	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:durante|14:obl:em	_
+12	em	em	ADP	_	_	13	case	13:case	_
+13	que	que	PRON	_	PronType=Rel	14	obl	11:ref	_
+14	trabalhou	trabalhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	acl:relcl	11:acl:relcl	_
+15	como	como	ADP	_	_	16	case	16:case	_
+16	repórter	repórter	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:como	_
+17	em	em	ADP	_	_	18	case	18:case	_
+18	Brasília	Brasília	PROPN	_	_	14	obl	14:obl:em	SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	20:punct	_
+20	envolvendo	envolver	VERB	_	VerbForm=Ger	14	advcl	14:advcl	_
+21	figuras	figura	NOUN	_	Gender=Fem|Number=Plur	20	obj	20:obj	_
+22	poderosas	poderoso	ADJ	_	Gender=Fem|Number=Plur	21	amod	21:amod	_
+23-24	da	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	política	política	NOUN	_	Gender=Fem|Number=Sing	21	nmod	21:nmod:de	SpaceAfter=No
+26	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0007
+# text = "Era uma caçada diária, não apenas assédio, mas uma tentativa clara de me silenciar", declarou.
+1	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+2	Era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	cop	4:cop|9:cop	_
+3	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	caçada	caçada	NOUN	_	Gender=Fem|Number=Sing	20	ccomp:speech	20:ccomp:speech	_
+5	diária	diário	ADJ	_	Gender=Fem|Number=Sing	4	amod	4:amod	SpaceAfter=No
+6	,	,	PUNCT	_	_	9	punct	9:punct	_
+7	não	não	ADV	_	_	8	advmod	8:advmod	_
+8	apenas	apenas	ADV	_	_	9	advmod	9:advmod	_
+9	assédio	assédio	NOUN	_	Gender=Masc|Number=Sing	4	conj	4:conj|20:ccomp:speech	SpaceAfter=No
+10	,	,	PUNCT	_	_	13	punct	13:punct	_
+11	mas	mas	CCONJ	_	_	13	cc	13:cc	_
+12	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	tentativa	tentativa	NOUN	_	Gender=Fem|Number=Sing	9	conj	9:conj:mas|20:ccomp:speech	_
+14	clara	claro	ADJ	_	Gender=Fem|Number=Sing	13	amod	13:amod	_
+15	de	de	ADP	_	_	17	mark	17:mark	_
+16	me	me	PRON	_	Case=Acc|Number=Sing|Person=1|PronType=Prs	17	obj	17:obj	_
+17	silenciar	silenciar	VERB	_	VerbForm=Inf	13	acl	13:acl:de	SpaceAfter=No
+18	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+19	,	,	PUNCT	_	_	4	punct	4:punct	_
+20	declarou	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+21	.	.	PUNCT	_	_	20	punct	20:punct	_
+
+# sent_id = S0009
+# text = Atualmente em cartaz com o filme A comédia divina, onde interpreta uma jornalista que faz um pacto com o demônio (Murilo Rosa) para ascender profissionalmente, Iozzi fez uma revelação surpreendente: Não é tão diferente da realidade que vivi.
+1	Atualmente	atualmente	ADV	_	_	3	advmod	3:advmod	_
+2	em	em	ADP	_	_	3	case	3:case	_
+3	cartaz	cartaz	NOUN	_	Gender=Masc|Number=Sing	31	obl	31:obl:em	_
+4	com	com	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	filme	filme	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:com|12:obl	_
+7	A	A	PROPN	_	_	6	nmod	6:nmod	_
+8	comédia	comédia	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod	_
+9	divina	divino	ADJ	_	Gender=Fem|Number=Sing	7	amod	7:amod	SpaceAfter=No
+10	,	,	PUNCT	_	_	12	punct	12:punct	_
+11	onde	onde	ADV	_	_	12	advmod	6:ref	_
+12	interpreta	interpretar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl:relcl	6:acl:relcl	_
+13	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	jornalista	jornalista	NOUN	_	Number=Sing	12	obj	12:obj|16:nsubj	_
+15	que	que	PRON	_	PronType=Rel	16	nsubj	14:ref	_
+16	faz	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	acl:relcl	14:acl:relcl	_
+17	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	pacto	pacto	NOUN	_	Gender=Masc|Number=Sing	16	obj	16:obj	_
+19	com	com	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	demônio	demônio	NOUN	_	Gender=Masc|Number=Sing	18	nmod	18:nmod:com	_
+22	(	(	PUNCT	_	_	23	punct	23:punct	SpaceAfter=No
+23	Murilo	Murilo	PROPN	_	_	21	appos	21:appos	_
+24	Rosa	Rosa	PROPN	_	_	23	flat:name	23:flat:name	SpaceAfter=No
+25	)	)	PUNCT	_	_	23	punct	23:punct	_
+26	para	para	ADP	_	_	27	mark	27:mark	_
+27	ascender	ascender	VERB	_	VerbForm=Inf	16	advcl	16:advcl:para	_
+28	profissionalmente	profissionalmente	ADV	_	_	27	advmod	27:advmod	SpaceAfter=No
+29	,	,	PUNCT	_	_	12	punct	12:punct	_
+30	Iozzi	Iozzi	PROPN	_	_	31	nsubj	31:nsubj	_
+31	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+32	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	33	det	33:det	_
+33	revelação	revelação	NOUN	_	Gender=Fem|Number=Sing	31	obj	31:obj	_
+34	surpreendente	surpreendente	ADJ	_	Number=Sing	33	amod	33:amod	SpaceAfter=No
+35	:	:	PUNCT	_	_	39	punct	39:punct	_
+36	Não	não	ADV	_	_	39	advmod	39:advmod	_
+37	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	39	cop	39:cop	_
+38	tão	tão	ADV	_	_	39	advmod	39:advmod	_
+39	diferente	diferente	ADJ	_	Number=Sing	31	parataxis	31:parataxis	_
+40-41	da	_	_	_	_	_	_	_	_
+40	de	de	ADP	_	_	42	case	42:case	_
+41	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	42:det	_
+42	realidade	realidade	NOUN	_	Gender=Fem|Number=Sing	39	obl	39:obl:de|44:obj	_
+43	que	que	PRON	_	PronType=Rel	44	obj	42:ref	_
+44	vivi	viver	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	42	acl:relcl	42:acl:relcl	SpaceAfter=No
+45	.	.	PUNCT	_	_	31	punct	31:punct	_
+
+# sent_id = S0011
+# text = Em Brasília, senti que precisava fazer acordos obscuros apenas para sobreviver no meio.
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	Brasília	Brasília	PROPN	_	_	4	obl	4:obl:em	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	senti	sentir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	que	que	SCONJ	_	_	6	mark	6:mark	_
+6	precisava	precisar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	4	ccomp	4:ccomp	_
+7	fazer	fazer	VERB	_	VerbForm=Inf	6	xcomp	6:xcomp	_
+8	acordos	acordo	NOUN	_	Gender=Masc|Number=Plur	7	obj	7:obj	_
+9	obscuros	obscuro	ADJ	_	Gender=Masc|Number=Plur	8	amod	8:amod	_
+10	apenas	apenas	ADV	_	_	12	advmod	12:advmod	_
+11	para	para	ADP	_	_	12	mark	12:mark	_
+12	sobreviver	sobreviver	VERB	_	VerbForm=Inf	7	advcl	7:advcl:para	_
+13-14	no	_	_	_	_	_	_	_	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	meio	meio	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:em	SpaceAfter=No
+16	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0013
+# text = A atriz também comentou sobre o caso de Harvey Weinstein, comparando-o a experiências próprias na indústria do entretenimento brasileiro.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	atriz	atriz	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+3	também	também	ADV	_	_	4	advmod	4:advmod	_
+4	comentou	comentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	sobre	sobre	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	caso	caso	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:sobre	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	Harvey	Harvey	PROPN	_	_	7	nmod	7:nmod:de	_
+10	Weinstein	Weinstein	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12-13	comparando-o	_	_	_	_	_	_	_	_
+12	comparando	comparar	VERB	_	VerbForm=Ger	4	advcl	4:advcl	_
+13	o	o	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	obj	12:obj	_
+14	a	a	ADP	_	_	15	case	15:case	_
+15	experiências	experiência	NOUN	_	Gender=Fem|Number=Plur	12	obl	12:obl:a	_
+16	próprias	próprio	ADJ	_	Gender=Fem|Number=Plur	15	amod	15:amod	_
+17-18	na	_	_	_	_	_	_	_	_
+17	em	em	ADP	_	_	19	case	19:case	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	indústria	indústria	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:em	_
+20-21	do	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	entretenimento	entretenimento	NOUN	_	Gender=Masc|Number=Sing	19	nmod	19:nmod:de	_
+23	brasileiro	brasileiro	ADJ	_	Gender=Masc|Number=Sing	22	amod	22:amod	SpaceAfter=No
+24	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0015
+# text = Infelizmente, isso é mais comum do que se imagina.
+1	Infelizmente	infelizmente	ADV	_	_	6	advmod	6:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	6	nsubj	6:nsubj	_
+4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+5	mais	mais	ADV	_	_	6	advmod	6:advmod	_
+6	comum	comum	ADJ	_	Number=Sing	0	root	0:root	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	ExtPos=SCONJ	11	mark	11:mark	_
+8	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	fixed	7:fixed	_
+9	que	que	PRON	_	PronType=Rel	7	fixed	7:fixed	_
+10	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	11	expl:impers	11:expl:impers	_
+11	imagina	imaginar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	advcl	6:advcl:de_o_que	SpaceAfter=No
+12	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0017
+# text = Eu mesma recusei propostas indecentes que poderiam ter alterado meu destino, disse ela.
+1	Eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	3:nsubj	_
+2	mesma	mesmo	DET	_	Gender=Fem|Number=Sing|PronType=Dem	1	det	1:det	_
+3	recusei	recusar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	13	ccomp:speech	13:ccomp:speech	_
+4	propostas	proposta	NOUN	_	Gender=Fem|Number=Plur	3	obj	3:obj|7:nsubj|9:nsubj	_
+5	indecentes	indecente	ADJ	_	Number=Plur	4	amod	4:amod	_
+6	que	que	PRON	_	PronType=Rel	7	nsubj	4:ref	_
+7	poderiam	poder	VERB	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	4	acl:relcl	4:acl:relcl	_
+8	ter	ter	AUX	_	VerbForm=Inf	9	aux	9:aux	_
+9	alterado	alterar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	7	xcomp	7:xcomp	_
+10	meu	meu	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	11	det	11:det	_
+11	destino	destino	NOUN	_	Gender=Masc|Number=Sing	9	obj	9:obj	SpaceAfter=No
+12	,	,	PUNCT	_	_	3	punct	3:punct	_
+13	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	13	nsubj	13:nsubj	SpaceAfter=No
+15	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0019
+# text = Monica Iozzi, que já foi condenada a pagar R$ 30 mil ao ministro Gilmar Mendes após críticas em rede social, revelou que a condenação foi apenas a ponta do iceberg.
+1	Monica	Monica	PROPN	_	_	24	nsubj	7:nsubj:pass|9:nsubj|24:nsubj	_
+2	Iozzi	Iozzi	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	7	punct	7:punct	_
+4	que	que	PRON	_	PronType=Rel	7	nsubj:pass	1:ref	_
+5	já	já	ADV	_	_	7	advmod	7:advmod	_
+6	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	aux:pass	7:aux:pass	_
+7	condenada	condenar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	1	acl:relcl	1:acl:relcl	_
+8	a	a	ADP	_	_	9	mark	9:mark	_
+9	pagar	pagar	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+10	R$	R$	SYM	_	_	9	obj	9:obj	_
+11	30	30	NUM	_	NumType=Card	10	nummod	10:nummod	_
+12	mil	mil	NUM	_	NumType=Card	11	flat	11:flat	_
+13-14	ao	_	_	_	_	_	_	_	_
+13	a	a	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	ministro	ministro	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:a	_
+16	Gilmar	Gilmar	PROPN	_	_	15	nmod	15:nmod	_
+17	Mendes	Mendes	PROPN	_	_	16	flat:name	16:flat:name	_
+18	após	após	ADP	_	_	19	case	19:case	_
+19	críticas	crítico	NOUN	_	Gender=Fem|Number=Plur	9	obl	9:obl:após	_
+20	em	em	ADP	_	_	21	case	21:case	_
+21	rede	rede	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:em	_
+22	social	social	ADJ	_	Number=Sing	21	amod	21:amod	SpaceAfter=No
+23	,	,	PUNCT	_	_	7	punct	7:punct	_
+24	revelou	revelar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+25	que	que	SCONJ	_	_	31	mark	31:mark	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	condenação	condenação	NOUN	_	Gender=Fem|Number=Sing	31	nsubj	31:nsubj	_
+28	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	31	cop	31:cop	_
+29	apenas	apenas	ADV	_	_	31	advmod	31:advmod	_
+30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+31	ponta	ponta	NOUN	_	Gender=Fem|Number=Sing	24	ccomp	24:ccomp	_
+32-33	do	_	_	_	_	_	_	_	_
+32	de	de	ADP	_	_	34	case	34:case	_
+33	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	34:det	_
+34	iceberg	iceberg	NOUN	_	Gender=Masc|Number=Sing	31	nmod	31:nmod:de	SpaceAfter=No
+35	.	.	PUNCT	_	_	24	punct	24:punct	_
+
+# sent_id = S0021
+# text = Depois disso, passei a receber ameaças veladas.
+1	Depois	depois	ADV	_	_	5	advmod	5:advmod	_
+2-3	disso	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	obl	1:obl:de	_
+4	,	,	PUNCT	_	_	1	punct	1:punct	_
+5	passei	passar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	a	a	ADP	_	_	7	mark	7:mark	_
+7	receber	receber	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	_
+8	ameaças	ameaça	NOUN	_	Gender=Fem|Number=Plur	7	obj	7:obj	_
+9	veladas	velado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	8	amod	8:amod	SpaceAfter=No
+10	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0023
+# text = A sensação de censura é constante, e isso não é apenas sobre mim, mas sobre liberdade de expressão no país, afirmou.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	sensação	sensação	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	censura	censura	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+6	constante	constante	ADJ	_	Number=Sing	25	ccomp:speech	25:ccomp:speech	SpaceAfter=No
+7	,	,	PUNCT	_	_	14	punct	14:punct	_
+8	e	e	CCONJ	_	_	14	cc	14:cc	_
+9	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	14	nsubj	14:nsubj|18:nsubj	_
+10	não	não	ADV	_	_	14	advmod	14:advmod	_
+11	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	14:cop|18:cop	_
+12	apenas	apenas	ADV	_	_	14	advmod	14:advmod	_
+13	sobre	sobre	ADP	_	_	14	case	14:case	_
+14	mim	mim	PRON	_	Case=Dat|Number=Sing|Person=1|PronType=Prs	6	conj	6:conj:e|25:ccomp:speech	SpaceAfter=No
+15	,	,	PUNCT	_	_	18	punct	18:punct	_
+16	mas	mas	CCONJ	_	_	18	cc	18:cc	_
+17	sobre	sobre	ADP	_	_	18	case	18:case	_
+18	liberdade	liberdade	NOUN	_	Gender=Fem|Number=Sing	14	conj	14:conj:mas|25:ccomp:speech	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	expressão	expressão	NOUN	_	Gender=Fem|Number=Sing	18	nmod	18:nmod:de	_
+21-22	no	_	_	_	_	_	_	_	_
+21	em	em	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	país	país	NOUN	_	Gender=Masc|Number=Sing	20	nmod	20:nmod:em	SpaceAfter=No
+24	,	,	PUNCT	_	_	6	punct	6:punct	_
+25	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+26	.	.	PUNCT	_	_	25	punct	25:punct	_
+
+# sent_id = S0025
+# text = A decisão de fechar suas redes sociais, segundo Iozzi, foi motivada por um clima de "intolerância e perseguição digital".
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	decisão	decisão	NOUN	_	Gender=Fem|Number=Sing	13	nsubj:pass	13:nsubj:pass	_
+3	de	de	ADP	_	_	4	mark	4:mark	_
+4	fechar	fechar	VERB	_	VerbForm=Inf	2	acl	2:acl:de	_
+5	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	6	det	6:det	_
+6	redes	rede	NOUN	_	Gender=Fem|Number=Plur	4	obj	4:obj	_
+7	sociais	social	ADJ	_	Number=Plur	6	amod	6:amod	SpaceAfter=No
+8	,	,	PUNCT	_	_	10	punct	10:punct	_
+9	segundo	segundo	ADP	_	_	10	case	10:case	_
+10	Iozzi	Iozzi	PROPN	_	_	13	obl	13:obl:segundo	SpaceAfter=No
+11	,	,	PUNCT	_	_	10	punct	10:punct	_
+12	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	aux:pass	13:aux:pass	_
+13	motivada	motivar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+14	por	por	ADP	_	_	16	case	16:case	_
+15	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	clima	clima	NOUN	_	Gender=Masc|Number=Sing	13	obl:agent	13:obl:agent	_
+17	de	de	ADP	_	_	19	case	19:case|21:case	_
+18	"	"	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+19	intolerância	intolerância	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:de	_
+20	e	e	CCONJ	_	_	21	cc	21:cc	_
+21	perseguição	perseguição	NOUN	_	Gender=Fem|Number=Sing	19	conj	16:nmod:de|19:conj:e	_
+22	digital	digital	ADJ	_	Number=Sing	21	amod	21:amod	SpaceAfter=No
+23	"	"	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+24	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0027
+# text = Não era apenas o ódio generalizado, eu me sentia vigiada e pressionada.
+1	Não	não	ADV	_	_	5	advmod	5:advmod	_
+2	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	cop	5:cop	_
+3	apenas	apenas	ADV	_	_	5	advmod	5:advmod	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	ódio	ódio	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+6	generalizado	generalizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	5	acl	5:acl	SpaceAfter=No
+7	,	,	PUNCT	_	_	10	punct	10:punct	_
+8	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	10	nsubj	10:nsubj|11:nsubj|13:nsubj	_
+9	me	me	PRON	_	Case=Dat|Number=Sing|Person=1|PronType=Prs	10	expl	10:expl	_
+10	sentia	sentir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	5	parataxis	5:parataxis	_
+11	vigiada	vigiar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	10	xcomp	10:xcomp	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	pressionada	pressionar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	11	conj	10:xcomp|11:conj:e	SpaceAfter=No
+14	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0029
+# text = Isso me fez optar pelo silêncio online, explicou.
+1	Isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	3	nsubj	3:nsubj	_
+2	me	me	PRON	_	Case=Acc|Number=Sing|Person=1|PronType=Prs	3	obj	3:obj|4:nsubj	_
+3	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	ccomp:speech	10:ccomp:speech	_
+4	optar	optar	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+5-6	pelo	_	_	_	_	_	_	_	_
+5	por	por	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	silêncio	silêncio	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:por	_
+8	online	online	ADJ	_	Number=Sing	7	amod	7:amod	SpaceAfter=No
+9	,	,	PUNCT	_	_	3	punct	3:punct	_
+10	explicou	explicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+11	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0031
+# text = A atriz finalizou a entrevista reforçando que as mulheres estão se unindo, mas que o preço por denunciar abusos ainda é alto.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	atriz	atriz	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_
+3	finalizou	finalizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	entrevista	entrevista	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+6	reforçando	reforçar	VERB	_	VerbForm=Ger	3	advcl	3:advcl	_
+7	que	que	SCONJ	_	_	12	mark	12:mark	_
+8	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	9:det	_
+9	mulheres	mulher	NOUN	_	Gender=Fem|Number=Plur	12	nsubj	12:nsubj	_
+10	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	aux	12:aux	_
+11	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	12	expl	12:expl	_
+12	unindo	unir	VERB	_	VerbForm=Ger	6	ccomp	6:ccomp	SpaceAfter=No
+13	,	,	PUNCT	_	_	23	punct	23:punct	_
+14	mas	mas	CCONJ	_	_	23	cc	23:cc	_
+15	que	que	SCONJ	_	_	23	mark	23:mark	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	preço	preço	NOUN	_	Gender=Masc|Number=Sing	23	nsubj	23:nsubj	_
+18	por	por	ADP	_	_	19	mark	19:mark	_
+19	denunciar	denunciar	VERB	_	VerbForm=Inf	17	acl	17:acl:por	_
+20	abusos	abuso	NOUN	_	Gender=Masc|Number=Plur	19	obj	19:obj	_
+21	ainda	ainda	ADV	_	_	23	advmod	23:advmod	_
+22	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	cop	23:cop	_
+23	alto	alto	ADJ	_	Gender=Masc|Number=Sing	6	conj	3:advcl:que|6:conj:mas	SpaceAfter=No
+24	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0033
+# text = Estamos vivendo uma primavera das mulheres, mas em meio a um inverno de retrocessos e conservadorismo.
+1	Estamos	estar	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	aux	2:aux	_
+2	vivendo	viver	VERB	_	VerbForm=Ger	0	root	0:root	_
+3	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	primavera	primavera	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+5-6	das	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	7:det	_
+7	mulheres	mulher	NOUN	_	Gender=Fem|Number=Plur	4	nmod	4:nmod:de	SpaceAfter=No
+8	,	,	PUNCT	_	_	14	punct	14:punct	_
+9	mas	mas	CCONJ	_	_	14	cc	14:cc	_
+10	em	em	ADP	_	ExtPos=ADP	14	case	14:case	_
+11	meio	meio	NOUN	_	Gender=Masc|Number=Sing	10	fixed	10:fixed	_
+12	a	a	ADP	_	_	10	fixed	10:fixed	_
+13	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	inverno	inverno	NOUN	_	Gender=Masc|Number=Sing	2	conj	2:conj:mas	_
+15	de	de	ADP	_	_	16	case	16:case|18:case	_
+16	retrocessos	retrocesso	NOUN	_	Gender=Masc|Number=Plur	14	nmod	14:nmod:de	_
+17	e	e	CCONJ	_	_	18	cc	18:cc	_
+18	conservadorismo	conservadorismo	NOUN	_	Gender=Masc|Number=Sing	16	conj	14:nmod:de|16:conj:e	SpaceAfter=No
+19	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0035
+# text = Precisamos falar mais e nos proteger melhor, concluiu.
+1	Precisamos	precisar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	9	ccomp:speech	9:ccomp:speech	_
+2	falar	falar	VERB	_	VerbForm=Inf	1	xcomp	1:xcomp	_
+3	mais	mais	ADV	_	_	2	advmod	2:advmod	_
+4	e	e	CCONJ	_	_	6	cc	6:cc	_
+5	nos	nos	PRON	_	Case=Acc|Number=Plur|Person=1|PronType=Prs	6	obj	6:obj	_
+6	proteger	proteger	VERB	_	VerbForm=Inf	2	conj	1:xcomp|2:conj:e	_
+7	melhor	melhor	ADV	_	_	6	advmod	6:advmod	SpaceAfter=No
+8	,	,	PUNCT	_	_	1	punct	1:punct	_
+9	concluiu	concluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+10	.	.	PUNCT	_	_	9	punct	9:punct	_

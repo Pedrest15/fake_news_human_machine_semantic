@@ -1,0 +1,826 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Criminosos estão utilizando táticas engenhosas para roubar dados e dinheiro dos brasileiros.
+1	Criminosos	criminoso	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	3:nsubj	_
+2	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	aux	3:aux	_
+3	utilizando	utilizar	VERB	_	VerbForm=Ger	0	root	0:root	_
+4	táticas	tática	NOUN	_	Gender=Fem|Number=Plur	3	obj	3:obj	_
+5	engenhosas	engenhoso	ADJ	_	Gender=Fem|Number=Plur	4	amod	4:amod	_
+6	para	para	ADP	_	_	7	mark	7:mark	_
+7	roubar	roubar	VERB	_	VerbForm=Inf	3	advcl	3:advcl:para	_
+8	dados	dado	NOUN	_	Gender=Masc|Number=Plur	7	obj	7:obj	_
+9	e	e	CCONJ	_	_	10	cc	10:cc	_
+10	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	8	conj	7:obj|8:conj:e	_
+11-12	dos	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	13:det	_
+13	brasileiros	brasileiro	NOUN	_	Gender=Masc|Number=Plur	8	nmod	8:nmod:de|10:nmod:de	SpaceAfter=No
+14	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = A Federação Brasileira de Bancos (FEBRABAN) alertou sobre uma nova onda de golpes digitais que estão se espalhando rapidamente.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Federação	Federação	PROPN	_	_	9	nsubj	9:nsubj	_
+3	Brasileira	Brasileira	PROPN	_	_	2	flat:name	2:flat:name	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	Bancos	Bancos	PROPN	_	_	2	flat:name	2:flat:name	_
+6	(	(	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+7	FEBRABAN	FEBRABAN	PROPN	_	_	2	appos	2:appos	SpaceAfter=No
+8	)	)	PUNCT	_	_	7	punct	7:punct	_
+9	alertou	alertar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	sobre	sobre	ADP	_	_	13	case	13:case	_
+11	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+12	nova	novo	ADJ	_	Gender=Fem|Number=Sing	13	amod	13:amod	_
+13	onda	onda	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:sobre	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	golpes	golpe	NOUN	_	Gender=Masc|Number=Plur	13	nmod	13:nmod:de|20:nsubj	_
+16	digitais	digital	ADJ	_	Number=Plur	15	amod	15:amod	_
+17	que	que	PRON	_	PronType=Rel	20	nsubj	15:ref	_
+18	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	aux	20:aux	_
+19	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	20	expl	20:expl	_
+20	espalhando	espalhar	VERB	_	VerbForm=Ger	15	acl:relcl	15:acl:relcl	_
+21	rapidamente	rapidamente	ADV	_	_	20	advmod	20:advmod	SpaceAfter=No
+22	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0005
+# text = Confira os detalhes alarmantes e as dicas cruciais para se proteger:
+1	Confira	conferir	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	3:det	_
+3	detalhes	detalhe	NOUN	_	Gender=Masc|Number=Plur	1	obj	1:obj	_
+4	alarmantes	alarmante	ADJ	_	Number=Plur	3	amod	3:amod	_
+5	e	e	CCONJ	_	_	7	cc	7:cc	_
+6	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	7:det	_
+7	dicas	dica	NOUN	_	Gender=Fem|Number=Plur	3	conj	1:obj|3:conj:e	_
+8	cruciais	crucial	ADJ	_	Number=Plur	7	amod	7:amod	_
+9	para	para	ADP	_	_	11	mark	11:mark	_
+10	se	se	PRON	_	Case=Acc|Person=3|PronType=Prs	11	obj	11:obj	_
+11	proteger	proteger	VERB	_	VerbForm=Inf	7	acl	7:acl:para	SpaceAfter=No
+12	:	:	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0009
+# text = **Golpe do Cartão Fraudado**: A vítima recebe uma ligação de um suposto funcionário do banco afirmando que seu cartão foi clonado.
+1	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+3	Golpe	golpe	NOUN	_	Gender=Masc|Number=Sing	13	obj	13:obj	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	Cartão	Cartão	PROPN	_	_	3	nmod	3:nmod:de	_
+7	Fraudado	Fraudado	PROPN	_	_	6	flat:name	6:flat:name	SpaceAfter=No
+8	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+9	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+10	:	:	PUNCT	_	_	13	punct	13:punct	_
+11	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	vítima	vítima	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	13:nsubj	_
+13	recebe	receber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+14	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	ligação	ligação	NOUN	_	Gender=Fem|Number=Sing	13	obj	13:obj	_
+16	de	de	ADP	_	_	19	case	19:case	_
+17	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+18	suposto	suposto	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	19	amod	19:amod	_
+19	funcionário	funcionário	NOUN	_	Gender=Masc|Number=Sing	15	nmod	15:nmod:de	_
+20-21	do	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	banco	banco	NOUN	_	Gender=Masc|Number=Sing	19	nmod	19:nmod:de	_
+23	afirmando	afirmar	VERB	_	VerbForm=Ger	19	acl	19:acl	_
+24	que	que	SCONJ	_	_	28	mark	28:mark	_
+25	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	26	det	26:det	_
+26	cartão	cartão	NOUN	_	Gender=Masc|Number=Sing	28	nsubj:pass	28:nsubj:pass	_
+27	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	28	aux:pass	28:aux:pass	_
+28	clonado	clonar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	23	ccomp	23:ccomp	SpaceAfter=No
+29	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0011
+# text = Eles pedem a senha e instruem para cortar o cartão, mas mantendo o chip intacto.
+1	Eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	2	nsubj	2:nsubj|6:nsubj	_
+2	pedem	pedir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	senha	senha	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	instruem	instruir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:e	_
+7	para	para	ADP	_	_	8	mark	8:mark|13:mark	_
+8	cortar	cortar	VERB	_	VerbForm=Inf	6	ccomp	6:ccomp	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	cartão	cartão	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	SpaceAfter=No
+11	,	,	PUNCT	_	_	13	punct	13:punct	_
+12	mas	mas	CCONJ	_	_	13	cc	13:cc	_
+13	mantendo	manter	VERB	_	VerbForm=Ger	8	conj	6:ccomp|8:conj:mas	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	chip	chip	NOUN	_	Gender=Masc|Number=Sing	13	obj	13:obj|16:nsubj	_
+16	intacto	intacto	ADJ	_	Gender=Masc|Number=Sing	13	xcomp	13:xcomp	SpaceAfter=No
+17	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0013
+# text = Posteriormente, um "motoboy" do banco retira o cartão.
+1	Posteriormente	posteriormente	ADV	_	_	10	advmod	10:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+4	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+5	motoboy	motoboy	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	10:nsubj	SpaceAfter=No
+6	"	"	PUNCT	_	_	5	punct	5:punct	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	banco	banco	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:de	_
+10	retira	retirar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	cartão	cartão	NOUN	_	Gender=Masc|Number=Sing	10	obj	10:obj	SpaceAfter=No
+13	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0015
+# text = Com o chip intacto, os golpistas realizam diversas transações.
+1	Com	com	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	chip	chip	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:com	_
+4	intacto	intacto	ADJ	_	Gender=Masc|Number=Sing	3	amod	3:amod	SpaceAfter=No
+5	,	,	PUNCT	_	_	3	punct	3:punct	_
+6	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	7:det	_
+7	golpistas	golpista	NOUN	_	Number=Plur	8	nsubj	8:nsubj	_
+8	realizam	realizar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+9	diversas	diversos	DET	_	Gender=Fem|Number=Plur|PronType=Dem	10	det	10:det	_
+10	transações	transação	NOUN	_	Gender=Fem|Number=Plur	8	obj	8:obj	SpaceAfter=No
+11	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0017
+# text = **Como evitar**: Lembre-se, os bancos nunca solicitam a devolução do cartão físico e não enviam pessoas para buscá-lo.
+1	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+2	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+3	Como	como	ADV	_	_	4	advmod	4:advmod	_
+4	evitar	evitar	VERB	_	VerbForm=Inf	0	root	0:root	SpaceAfter=No
+5	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+6	*	*	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+7	:	:	PUNCT	_	_	8	punct	8:punct	_
+8-9	Lembre-se	_	_	_	_	_	_	_	_
+8	Lembre	lembrar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	4	parataxis	4:parataxis	_
+9	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	8	expl	8:expl	_
+10	,	,	PUNCT	_	_	14	punct	14:punct	_
+11	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	12:det	_
+12	bancos	banco	NOUN	_	Gender=Masc|Number=Plur	14	nsubj	14:nsubj|23:nsubj	_
+13	nunca	nunca	ADV	_	_	14	advmod	14:advmod	_
+14	solicitam	solicitar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	ccomp	8:ccomp	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	devolução	devolução	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	_
+17-18	do	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	cartão	cartão	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod:de	_
+20	físico	físico	ADJ	_	Gender=Masc|Number=Sing	19	amod	19:amod	_
+21	e	e	CCONJ	_	_	23	cc	23:cc	_
+22	não	não	ADV	_	_	23	advmod	23:advmod	_
+23	enviam	enviar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	conj	8:ccomp|14:conj:e	_
+24	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	23	obj	23:obj	_
+25	para	para	ADP	_	_	26	mark	26:mark	_
+26-27	buscá-lo	_	_	_	_	_	_	_	_
+26	buscar	buscar	VERB	_	VerbForm=Inf	23	advcl	23:advcl:para	_
+27	lo	lo	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	26	obj	26:obj	_
+28	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0019
+# text = Em caso de suspeita, contate seu banco imediatamente usando um celular seguro.
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	caso	caso	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:em	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	suspeita	suspeito	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	SpaceAfter=No
+5	,	,	PUNCT	_	_	2	punct	2:punct	_
+6	contate	contatar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+7	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	8	det	8:det	_
+8	banco	banco	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+9	imediatamente	imediatamente	ADV	_	_	6	advmod	6:advmod	_
+10	usando	usar	VERB	_	VerbForm=Ger	6	advcl	6:advcl	_
+11	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	celular	celular	NOUN	_	Gender=Masc|Number=Sing	10	obj	10:obj	_
+13	seguro	seguro	ADJ	_	Gender=Masc|Number=Sing	12	amod	12:amod	SpaceAfter=No
+14	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0023
+# text = **Falso Atendimento do Banco**: Golpistas se passam por funcionários de instituições financeiras, alegando invasão ou problemas na conta.
+1	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+2	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+3	Falso	falso	ADJ	_	Gender=Masc|Number=Sing	4	amod	4:amod	_
+4	Atendimento	Atendimento	PROPN	_	_	13	nsubj	13:nsubj	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Banco	Banco	PROPN	_	_	4	flat:name	4:flat:name	SpaceAfter=No
+8	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+9	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+10	:	:	PUNCT	_	_	13	punct	13:punct	_
+11	Golpistas	golpista	NOUN	_	Number=Plur	13	nsubj	13:nsubj	_
+12	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	13	expl	13:expl	_
+13	passam	passar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+14	por	por	ADP	_	_	15	case	15:case	_
+15	funcionários	funcionário	NOUN	_	Gender=Masc|Number=Plur	13	obl	13:obl:por	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	instituições	instituição	NOUN	_	Gender=Fem|Number=Plur	15	nmod	15:nmod:de	_
+18	financeiras	financeiro	ADJ	_	Gender=Fem|Number=Plur	17	amod	17:amod	SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	20:punct	_
+20	alegando	alegar	VERB	_	VerbForm=Ger	13	advcl	13:advcl	_
+21	invasão	invasão	NOUN	_	Gender=Fem|Number=Sing	20	obj	20:obj	_
+22	ou	ou	CCONJ	_	_	23	cc	23:cc	_
+23	problemas	problema	NOUN	_	Gender=Masc|Number=Plur	21	conj	20:obj|21:conj:ou	_
+24-25	na	_	_	_	_	_	_	_	_
+24	em	em	ADP	_	_	26	case	26:case	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	conta	conta	NOUN	_	Gender=Fem|Number=Sing	23	nmod	23:nmod:em	SpaceAfter=No
+27	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0025
+# text = Eles induzem a vítima a ligar para a central de atendimento, mas permanecem na linha para interceptar informações sensíveis, como senhas e números de cartão.
+1	Eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	2	nsubj	2:nsubj|14:nsubj	_
+2	induzem	induzir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	vítima	vítima	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj|6:nsubj	_
+5	a	a	ADP	_	_	6	mark	6:mark	_
+6	ligar	ligar	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	_
+7	para	para	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	central	central	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:para	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	atendimento	atendimento	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:de	SpaceAfter=No
+12	,	,	PUNCT	_	_	14	punct	14:punct	_
+13	mas	mas	CCONJ	_	_	14	cc	14:cc	_
+14	permanecem	permanecer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:mas	_
+15-16	na	_	_	_	_	_	_	_	_
+15	em	em	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	linha	linha	NOUN	_	Gender=Fem|Number=Sing	14	obl	14:obl:em	_
+18	para	para	ADP	_	_	19	mark	19:mark	_
+19	interceptar	interceptar	VERB	_	VerbForm=Inf	14	advcl	14:advcl:para	_
+20	informações	informação	NOUN	_	Gender=Fem|Number=Plur	19	obj	19:obj	_
+21	sensíveis	sensível	ADJ	_	Number=Plur	20	amod	20:amod	SpaceAfter=No
+22	,	,	PUNCT	_	_	24	punct	24:punct	_
+23	como	como	ADP	_	_	24	case	24:case|26:case	_
+24	senhas	senha	NOUN	_	Gender=Fem|Number=Plur	20	nmod	20:nmod:como	_
+25	e	e	CCONJ	_	_	26	cc	26:cc	_
+26	números	número	NOUN	_	Gender=Masc|Number=Plur	24	conj	20:nmod:como|24:conj:e	_
+27	de	de	ADP	_	_	28	case	28:case	_
+28	cartão	cartão	NOUN	_	Gender=Masc|Number=Sing	26	nmod	26:nmod:de	SpaceAfter=No
+29	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0027
+# text = **Como evitar**: Desligue imediatamente e utilize os canais oficiais do banco, como aplicativos de celular, para verificar a situação da sua conta.
+1	*	*	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+2	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+3	Como	como	ADV	_	_	4	advmod	4:advmod	_
+4	evitar	evitar	VERB	_	VerbForm=Inf	1	dep	1:dep	SpaceAfter=No
+5	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+6	*	*	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+7	:	:	PUNCT	_	_	8	punct	8:punct	_
+8	Desligue	desligar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+9	imediatamente	imediatamente	ADV	_	_	8	advmod	8:advmod	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	utilize	utilizar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	8	conj	8:conj:e	_
+12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	13:det	_
+13	canais	canal	NOUN	_	Gender=Masc|Number=Plur	11	obj	11:obj	_
+14	oficiais	oficial	ADJ	_	Number=Plur	13	amod	13:amod	_
+15-16	do	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	banco	banco	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod:de	SpaceAfter=No
+18	,	,	PUNCT	_	_	20	punct	20:punct	_
+19	como	como	ADP	_	_	20	case	20:case	_
+20	aplicativos	aplicativo	NOUN	_	Gender=Masc|Number=Plur	13	nmod	13:nmod:como	_
+21	de	de	ADP	_	_	22	case	22:case	_
+22	celular	celular	NOUN	_	Gender=Masc|Number=Sing	20	nmod	20:nmod:de	SpaceAfter=No
+23	,	,	PUNCT	_	_	20	punct	20:punct	_
+24	para	para	ADP	_	_	25	mark	25:mark	_
+25	verificar	verificar	VERB	_	VerbForm=Inf	11	advcl	11:advcl:para	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	situação	situação	NOUN	_	Gender=Fem|Number=Sing	25	obj	25:obj	_
+28-29	da	_	_	_	_	_	_	_	_
+28	de	de	ADP	_	_	31	case	31:case	_
+29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+30	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	31	det	31:det	_
+31	conta	conta	NOUN	_	Gender=Fem|Number=Sing	27	nmod	27:nmod:de	SpaceAfter=No
+32	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0029
+# text = O banco jamais solicitará sua senha ou pedirá para realizar transferências não autorizadas.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	banco	banco	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj|8:nsubj|10:nsubj	_
+3	jamais	jamais	ADV	_	_	4	advmod	4:advmod	_
+4	solicitará	solicitar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+5	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	6	det	6:det	_
+6	senha	senha	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+7	ou	ou	CCONJ	_	_	8	cc	8:cc	_
+8	pedirá	pedir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	conj	4:conj:ou	_
+9	para	para	ADP	_	_	10	mark	10:mark	_
+10	realizar	realizar	VERB	_	VerbForm=Inf	8	xcomp	8:xcomp	_
+11	transferências	transferência	NOUN	_	Gender=Fem|Number=Plur	10	obj	10:obj	_
+12	não	não	ADV	_	_	13	advmod	13:advmod	_
+13	autorizadas	autorizar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	11	acl	11:acl	SpaceAfter=No
+14	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0033
+# text = **Clonagem de WhatsApp**: Os criminosos usam dados pessoais para tentar clonar o WhatsApp da vítima.
+1	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+3	Clonagem	clonagem	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	WhatsApp	WhatsApp	PROPN	_	_	3	nmod	3:nmod:de	SpaceAfter=No
+6	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+7	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+8	:	:	PUNCT	_	_	11	punct	11:punct	_
+9	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	10:det	_
+10	criminosos	criminoso	NOUN	_	Gender=Masc|Number=Plur	11	nsubj	11:nsubj	_
+11	usam	usar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+12	dados	dado	NOUN	_	Gender=Masc|Number=Plur	11	obj	11:obj	_
+13	pessoais	pessoal	ADJ	_	Number=Plur	12	amod	12:amod	_
+14	para	para	ADP	_	_	15	mark	15:mark	_
+15	tentar	tentar	VERB	_	VerbForm=Inf	11	advcl	11:advcl:para	_
+16	clonar	clonar	VERB	_	VerbForm=Inf	15	xcomp	15:xcomp	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	WhatsApp	WhatsApp	PROPN	_	_	16	obj	16:obj	_
+19-20	da	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	vítima	vítima	NOUN	_	Gender=Fem|Number=Sing	18	nmod	18:nmod:de	SpaceAfter=No
+22	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0035
+# text = Eles enviam mensagens fingindo ser do suporte de uma plataforma conhecida e pedem o código de segurança enviado por SMS.
+1	Eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	2	nsubj	2:nsubj|14:nsubj	_
+2	enviam	enviar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	mensagens	mensagem	NOUN	_	Gender=Fem|Number=Plur	2	obj	2:obj	_
+4	fingindo	fingir	VERB	_	VerbForm=Ger	2	advcl	2:advcl	_
+5	ser	ser	AUX	_	VerbForm=Inf	8	cop	8:cop	_
+6-7	do	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	suporte	suporte	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:de	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	plataforma	plataforma	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	_
+12	conhecida	conhecido	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	11	amod	11:amod	_
+13	e	e	CCONJ	_	_	14	cc	14:cc	_
+14	pedem	pedir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:e	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	código	código	NOUN	_	Gender=Masc|Number=Sing	14	obj	14:obj	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	segurança	segurança	NOUN	_	Number=Sing	16	nmod	16:nmod:de	_
+19	enviado	enviar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	16	acl	16:acl	_
+20	por	por	ADP	_	_	21	case	21:case	_
+21	SMS	SMS	PROPN	_	_	19	obl:agent	19:obl:agent	SpaceAfter=No
+22	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0037
+# text = Com acesso ao WhatsApp, eles pedem dinheiro aos contatos da vítima, alegando urgências.
+1	Com	com	ADP	_	_	2	case	2:case	_
+2	acesso	acesso	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:com	_
+3-4	ao	_	_	_	_	_	_	_	_
+3	a	a	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	WhatsApp	WhatsApp	PROPN	_	_	2	nmod	2:nmod:a	SpaceAfter=No
+6	,	,	PUNCT	_	_	2	punct	2:punct	_
+7	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	8	nsubj	8:nsubj	_
+8	pedem	pedir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+9	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	_
+10-11	aos	_	_	_	_	_	_	_	_
+10	a	a	ADP	_	_	12	case	12:case	_
+11	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	12:det	_
+12	contatos	contato	NOUN	_	Gender=Masc|Number=Plur	8	obl	8:obl:a	_
+13-14	da	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	vítima	vítima	NOUN	_	Gender=Fem|Number=Sing	12	nmod	12:nmod:de	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	alegando	alegar	VERB	_	VerbForm=Ger	8	advcl	8:advcl	_
+18	urgências	urgência	NOUN	_	Gender=Fem|Number=Plur	17	obj	17:obj	SpaceAfter=No
+19	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0039
+# text = **Como evitar**: Ative a confirmação em duas etapas no WhatsApp e mantenha sua foto de perfil visível apenas para contatos.
+1	*	*	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+2	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+3	Como	como	ADV	_	_	4	advmod	4:advmod	_
+4	evitar	evitar	VERB	_	VerbForm=Inf	1	ccomp:speech	1:ccomp:speech	SpaceAfter=No
+5	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+6	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+7	:	:	PUNCT	_	_	8	punct	8:punct	_
+8	Ative	ativar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	confirmação	confirmação	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	duas	dois	NUM	_	Gender=Fem|NumType=Card	13	nummod	13:nummod	_
+13	etapas	etapa	NOUN	_	Gender=Fem|Number=Plur	8	obl	8:obl:em	_
+14-15	no	_	_	_	_	_	_	_	_
+14	em	em	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	WhatsApp	WhatsApp	PROPN	_	_	8	obl	8:obl:em	_
+17	e	e	CCONJ	_	_	18	cc	18:cc	_
+18	mantenha	manter	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	8	conj	8:conj:e	_
+19	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	20	det	20:det	_
+20	foto	foto	NOUN	_	Number=Sing	18	obj	18:obj|23:nsubj	_
+21	de	de	ADP	_	_	22	case	22:case	_
+22	perfil	perfil	NOUN	_	Gender=Masc|Number=Sing	20	nmod	20:nmod:de	_
+23	visível	visível	ADJ	_	Number=Sing	18	xcomp	18:xcomp	_
+24	apenas	apenas	ADV	_	_	26	advmod	26:advmod	_
+25	para	para	ADP	_	_	26	case	26:case	_
+26	contatos	contato	NOUN	_	Gender=Masc|Number=Plur	23	obl	23:obl:para	SpaceAfter=No
+27	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0041
+# text = Nunca compartilhe o código de segurança recebido por SMS.
+1	Nunca	nunca	ADV	_	_	2	advmod	2:advmod	_
+2	compartilhe	compartilhar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	código	código	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	segurança	segurança	NOUN	_	Number=Sing	4	nmod	4:nmod:de	_
+7	recebido	receber	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	4	acl	4:acl	_
+8	por	por	ADP	_	_	9	case	9:case	_
+9	SMS	SMS	PROPN	_	_	7	obl:agent	7:obl:agent	SpaceAfter=No
+10	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0043
+# text = Confirme a identidade de quem solicita dinheiro.
+1	Confirme	confirmar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	identidade	identidade	NOUN	_	Gender=Fem|Number=Sing	1	obj	1:obj	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	quem	quem	PRON	_	PronType=Ind	3	nmod	3:nmod:de	_
+6	solicita	solicitar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_
+7	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	SpaceAfter=No
+8	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0047
+# text = **Troca de Cartão em Compras**: Durante uma compra, golpistas que atuam como vendedores observam a vítima digitar a senha e realizam a troca do cartão na devolução.
+1	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+3	Troca	Troca	PROPN	_	_	20	dep	20:dep	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	Cartão	Cartão	PROPN	_	_	3	flat:name	3:flat:name	_
+6	em	em	ADP	_	_	7	case	7:case	_
+7	Compras	Compras	PROPN	_	_	3	nmod	3:nmod:em	SpaceAfter=No
+8	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+9	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+10	:	:	PUNCT	_	_	20	punct	20:punct	_
+11	Durante	durante	ADP	_	_	13	case	13:case	_
+12	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	compra	compra	NOUN	_	Gender=Fem|Number=Sing	20	obl	20:obl:durante	SpaceAfter=No
+14	,	,	PUNCT	_	_	13	punct	13:punct	_
+15	golpistas	golpista	NOUN	_	Number=Plur	20	nsubj	17:nsubj|20:nsubj|27:nsubj	_
+16	que	que	PRON	_	PronType=Rel	17	nsubj	15:ref	_
+17	atuam	atuar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	acl:relcl	15:acl:relcl	_
+18	como	como	ADP	_	_	19	case	19:case	_
+19	vendedores	vendedor	NOUN	_	Gender=Masc|Number=Plur	17	obl	17:obl:como	_
+20	observam	observar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	vítima	vítima	NOUN	_	Gender=Fem|Number=Sing	20	obj	20:obj|23:nsubj	_
+23	digitar	digitar	VERB	_	Number=Sing|Person=3|VerbForm=Inf	20	xcomp	20:xcomp	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	senha	senha	NOUN	_	Gender=Fem|Number=Sing	23	obj	23:obj	_
+26	e	e	CCONJ	_	_	27	cc	27:cc	_
+27	realizam	realizar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	conj	20:conj:e	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	troca	troca	NOUN	_	Gender=Fem|Number=Sing	27	obj	27:obj	_
+30-31	do	_	_	_	_	_	_	_	_
+30	de	de	ADP	_	_	32	case	32:case	_
+31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+32	cartão	cartão	NOUN	_	Gender=Masc|Number=Sing	29	nmod	29:nmod:de	_
+33-34	na	_	_	_	_	_	_	_	_
+33	em	em	ADP	_	_	35	case	35:case	_
+34	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	35:det	_
+35	devolução	devolução	NOUN	_	Gender=Fem|Number=Sing	27	obl	27:obl:em	SpaceAfter=No
+36	.	.	PUNCT	_	_	20	punct	20:punct	_
+
+# sent_id = S0049
+# text = Em caixas eletrônicos, desconhecidos oferecem ajuda e aproveitam para trocar o cartão e roubar a senha.
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	caixas	caixa	NOUN	_	Number=Plur	6	obl	6:obl:em	_
+3	eletrônicos	eletrônico	ADJ	_	Gender=Masc|Number=Plur	2	amod	2:amod	SpaceAfter=No
+4	,	,	PUNCT	_	_	2	punct	2:punct	_
+5	desconhecidos	desconhecido	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	6:nsubj|9:nsubj	_
+6	oferecem	oferecer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	ajuda	ajuda	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	aproveitam	aproveitar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	conj	6:conj:e	_
+10	para	para	ADP	_	_	11	mark	11:mark|15:mark	_
+11	trocar	trocar	VERB	_	VerbForm=Inf	9	advcl	9:advcl:para	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	cartão	cartão	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj	_
+14	e	e	CCONJ	_	_	15	cc	15:cc	_
+15	roubar	roubar	VERB	_	VerbForm=Inf	11	conj	9:advcl:para|11:conj:e	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	senha	senha	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	SpaceAfter=No
+18	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0051
+# text = **Como evitar**: Esteja sempre alerta ao realizar compras e confira se o nome no cartão devolvido é realmente o seu.
+1	*	*	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+2	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+3	Como	como	ADV	_	_	4	advmod	4:advmod	_
+4	evitar	evitar	VERB	_	VerbForm=Inf	1	ccomp:speech	1:ccomp:speech	SpaceAfter=No
+5	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+6	*	*	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+7	:	:	PUNCT	_	_	10	punct	10:punct	_
+8	Esteja	estar	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_
+9	sempre	sempre	ADV	_	_	10	advmod	10:advmod	_
+10	alerta	alerta	ADJ	_	Number=Sing	0	root	0:root	_
+11-12	ao	_	_	_	_	_	_	_	_
+11	a	a	ADP	_	ExtPos=SCONJ	13	mark	13:mark	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	fixed	11:fixed	_
+13	realizar	realizar	VERB	_	VerbForm=Inf	10	advcl	10:advcl:a_o	_
+14	compras	compra	NOUN	_	Gender=Fem|Number=Plur	13	obj	13:obj	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	confira	conferir	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	10	conj	10:conj:e	_
+17	se	se	SCONJ	_	_	27	mark	27:mark	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	nome	nome	NOUN	_	Gender=Masc|Number=Sing	27	nsubj	27:nsubj	_
+20-21	no	_	_	_	_	_	_	_	_
+20	em	em	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	cartão	cartão	NOUN	_	Gender=Masc|Number=Sing	19	nmod	19:nmod:em	_
+23	devolvido	devolver	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	22	acl	22:acl	_
+24	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	cop	27:cop	_
+25	realmente	realmente	ADV	_	_	27	advmod	27:advmod	_
+26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	seu	seu	PRON	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	16	ccomp	16:ccomp	SpaceAfter=No
+28	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0053
+# text = Nos caixas eletrônicos, busque auxílio apenas de funcionários uniformizados do banco.
+1-2	Nos	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	3:det	_
+3	caixas	caixa	NOUN	_	Number=Plur	6	obl	6:obl:em	_
+4	eletrônicos	eletrônico	ADJ	_	Gender=Masc|Number=Plur	3	amod	3:amod	SpaceAfter=No
+5	,	,	PUNCT	_	_	3	punct	3:punct	_
+6	busque	buscar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+7	auxílio	auxílio	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+8	apenas	apenas	ADV	_	_	10	advmod	10:advmod	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	funcionários	funcionário	NOUN	_	Gender=Masc|Number=Plur	7	nmod	7:nmod:de	_
+11	uniformizados	uniformizado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	10	amod	10:amod	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	banco	banco	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:de	SpaceAfter=No
+15	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0057
+# text = **Phishing com Ofertas Irresistíveis**: Emails e mensagens nas redes sociais promovem ofertas tentadoras, levando os usuários a clicar em links maliciosos que roubam dados pessoais e financeiros.
+1	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+3	Phishing	Phishing	PROPN	_	_	17	dep	17:dep	_
+4	com	com	ADP	_	_	5	case	5:case	_
+5	Ofertas	Ofertas	PROPN	_	_	3	flat:name	3:flat:name	_
+6	Irresistíveis	Irresistíveis	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+7	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+8	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+9	:	:	PUNCT	_	_	17	punct	17:punct	_
+10	Emails	email	NOUN	_	Foreign=Yes|Gender=Masc|Number=Plur	17	nsubj	17:nsubj	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	mensagens	mensagem	NOUN	_	Gender=Fem|Number=Plur	10	conj	10:conj:e|17:nsubj	_
+13-14	nas	_	_	_	_	_	_	_	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	15:det	_
+15	redes	rede	NOUN	_	Gender=Fem|Number=Plur	10	nmod	10:nmod:em|12:nmod:em	_
+16	sociais	social	ADJ	_	Number=Plur	15	amod	15:amod	_
+17	promovem	promover	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+18	ofertas	oferta	NOUN	_	Gender=Fem|Number=Plur	17	obj	17:obj	_
+19	tentadoras	tentador	ADJ	_	Gender=Fem|Number=Plur	18	amod	18:amod	SpaceAfter=No
+20	,	,	PUNCT	_	_	21	punct	21:punct	_
+21	levando	levar	VERB	_	VerbForm=Ger	17	advcl	17:advcl	_
+22	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	23:det	_
+23	usuários	usuário	NOUN	_	Gender=Masc|Number=Plur	21	obj	21:obj|25:nsubj	_
+24	a	a	ADP	_	_	25	mark	25:mark	_
+25	clicar	clicar	VERB	_	VerbForm=Inf	21	xcomp	21:xcomp	_
+26	em	em	ADP	_	_	27	case	27:case	_
+27	links	link	NOUN	_	Gender=Masc|Number=Plur	25	obl	25:obl:em|30:nsubj	_
+28	maliciosos	malicioso	ADJ	_	Gender=Masc|Number=Plur	27	amod	27:amod	_
+29	que	que	PRON	_	PronType=Rel	30	nsubj	27:ref	_
+30	roubam	roubar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	27	acl:relcl	27:acl:relcl	_
+31	dados	dado	NOUN	_	Gender=Masc|Number=Plur	30	obj	30:obj	_
+32	pessoais	pessoal	ADJ	_	Number=Plur	31	amod	31:amod	_
+33	e	e	CCONJ	_	_	34	cc	34:cc	_
+34	financeiros	financeiro	ADJ	_	Gender=Masc|Number=Plur	32	conj	31:amod|32:conj:e	SpaceAfter=No
+35	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0059
+# text = **Como evitar**: Desconfie de ofertas muito vantajosas e sempre verifique o email do remetente.
+1	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+2	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+3	Como	como	ADV	_	_	4	advmod	4:advmod	_
+4	evitar	evitar	VERB	_	VerbForm=Inf	0	root	0:root	SpaceAfter=No
+5	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+6	*	*	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+7	:	:	PUNCT	_	_	8	punct	8:punct	_
+8	Desconfie	desconfiar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	4	parataxis	4:parataxis	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	ofertas	oferta	NOUN	_	Gender=Fem|Number=Plur	8	obl	8:obl:de	_
+11	muito	muito	ADV	_	_	12	advmod	12:advmod	_
+12	vantajosas	vantajoso	ADJ	_	Gender=Fem|Number=Plur	10	amod	10:amod	_
+13	e	e	CCONJ	_	_	15	cc	15:cc	_
+14	sempre	sempre	ADV	_	_	15	advmod	15:advmod	_
+15	verifique	verificar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	8	conj	4:parataxis|8:conj:e	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	email	email	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	15	obj	15:obj	_
+18-19	do	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	remetente	remetente	NOUN	_	Number=Sing	17	nmod	17:nmod:de	SpaceAfter=No
+21	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0061
+# text = Grandes empresas não utilizam contas de email genéricas.
+1	Grandes	grande	ADJ	_	Number=Plur	2	amod	2:amod	_
+2	empresas	empresa	NOUN	_	Gender=Fem|Number=Plur	4	nsubj	4:nsubj	_
+3	não	não	ADV	_	_	4	advmod	4:advmod	_
+4	utilizam	utilizar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	contas	conta	NOUN	_	Gender=Fem|Number=Plur	4	obj	4:obj	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	email	email	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	5	nmod	5:nmod:de	_
+8	genéricas	genérico	ADJ	_	Gender=Fem|Number=Plur	5	amod	5:amod	SpaceAfter=No
+9	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0063
+# text = Evite clicar em links suspeitos.
+1	Evite	evitar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	clicar	clicar	VERB	_	VerbForm=Inf	1	xcomp	1:xcomp	_
+3	em	em	ADP	_	_	4	case	4:case	_
+4	links	link	NOUN	_	Gender=Masc|Number=Plur	2	obl	2:obl:em	_
+5	suspeitos	suspeito	ADJ	_	Gender=Masc|Number=Plur	4	amod	4:amod	SpaceAfter=No
+6	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0067
+# text = **Leilões Falsos**: Sites fraudulentos de leilão anunciam produtos a preços baixíssimos.
+1	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+3	Leilões	Leilões	PROPN	_	_	12	nsubj	12:nsubj	_
+4	Falsos	Falsos	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+5	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+6	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+7	:	:	PUNCT	_	_	3	punct	3:punct	_
+8	Sites	site	NOUN	_	Gender=Masc|Number=Plur	12	nsubj	12:nsubj	_
+9	fraudulentos	fraudulento	ADJ	_	Gender=Masc|Number=Plur	8	amod	8:amod	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	leilão	leilão	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:de	_
+12	anunciam	anunciar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+13	produtos	produto	NOUN	_	Gender=Masc|Number=Plur	12	obj	12:obj	_
+14	a	a	ADP	_	_	15	case	15:case	_
+15	preços	preço	NOUN	_	Gender=Masc|Number=Plur	12	obl	12:obl:a	_
+16	baixíssimos	baixíssimo	ADJ	_	Gender=Masc|Number=Plur	15	amod	15:amod	SpaceAfter=No
+17	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0069
+# text = Os golpistas exigem pagamentos via PIX para garantir a "compra", mas as mercadorias nunca são entregues e dados pessoais são roubados.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	golpistas	golpista	NOUN	_	Number=Plur	3	nsubj	3:nsubj	_
+3	exigem	exigir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	pagamentos	pagamento	NOUN	_	Gender=Masc|Number=Plur	3	obj	3:obj	_
+5	via	via	ADP	_	_	6	case	6:case	_
+6	PIX	PIX	PROPN	_	_	4	nmod	4:nmod:via	_
+7	para	para	ADP	_	_	8	mark	8:mark	_
+8	garantir	garantir	VERB	_	VerbForm=Inf	3	advcl	3:advcl:para	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+10	"	"	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+11	compra	compra	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	SpaceAfter=No
+12	"	"	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+13	,	,	PUNCT	_	_	19	punct	19:punct	_
+14	mas	mas	CCONJ	_	_	19	cc	19:cc	_
+15	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	16:det	_
+16	mercadorias	mercadoria	NOUN	_	Gender=Fem|Number=Plur	19	nsubj:pass	19:nsubj:pass	_
+17	nunca	nunca	ADV	_	_	19	advmod	19:advmod	_
+18	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	19	aux:pass	19:aux:pass	_
+19	entregues	entregar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	3	conj	3:conj:mas	_
+20	e	e	CCONJ	_	_	24	cc	24:cc	_
+21	dados	dado	NOUN	_	Gender=Masc|Number=Plur	24	nsubj:pass	24:nsubj:pass	_
+22	pessoais	pessoal	ADJ	_	Number=Plur	21	amod	21:amod	_
+23	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	24	aux:pass	24:aux:pass	_
+24	roubados	roubar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	19	conj	19:conj:e	SpaceAfter=No
+25	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0071
+# text = **Como evitar**: Pesquise a reputação da empresa de leilões e verifique o CNPJ.
+1	*	*	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+2	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+3	Como	como	ADV	_	_	4	advmod	4:advmod	_
+4	evitar	evitar	VERB	_	VerbForm=Inf	1	dep	1:dep	SpaceAfter=No
+5	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+6	*	*	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+7	:	:	PUNCT	_	_	8	punct	8:punct	_
+8	Pesquise	pesquisar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	reputação	reputação	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	_
+11-12	da	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	empresa	empresa	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:de	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	leilões	leilão	NOUN	_	Gender=Masc|Number=Plur	13	nmod	13:nmod:de	_
+16	e	e	CCONJ	_	_	17	cc	17:cc	_
+17	verifique	verificar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	8	conj	8:conj:e	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	CNPJ	CNPJ	PROPN	_	_	17	obj	17:obj	SpaceAfter=No
+20	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0073
+# text = Não realize transações em sites sem cadeado de segurança e nunca transfira dinheiro para contas de pessoas físicas em leilões.
+1	Não	não	ADV	_	_	2	advmod	2:advmod	_
+2	realize	realizar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+3	transações	transação	NOUN	_	Gender=Fem|Number=Plur	2	obj	2:obj	_
+4	em	em	ADP	_	_	5	case	5:case	_
+5	sites	site	NOUN	_	Gender=Masc|Number=Plur	3	nmod	3:nmod:em	_
+6	sem	sem	ADP	_	_	7	case	7:case	_
+7	cadeado	cadeado	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:sem	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	segurança	segurança	NOUN	_	Number=Sing	7	nmod	7:nmod:de	_
+10	e	e	CCONJ	_	_	12	cc	12:cc	_
+11	nunca	nunca	ADV	_	_	12	advmod	12:advmod	_
+12	transfira	transferir	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	2	conj	2:conj:e	_
+13	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	12	obj	12:obj	_
+14	para	para	ADP	_	_	15	case	15:case	_
+15	contas	conta	NOUN	_	Gender=Fem|Number=Plur	12	obl	12:obl:para	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	15	nmod	15:nmod:de	_
+18	físicas	físico	ADJ	_	Gender=Fem|Number=Plur	17	amod	17:amod	_
+19	em	em	ADP	_	_	20	case	20:case	_
+20	leilões	leilão	NOUN	_	Gender=Masc|Number=Plur	12	obl	12:obl:em	SpaceAfter=No
+21	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0077
+# text = **Empréstimos Fraudulentos**: Falsas instituições financeiras oferecem crédito fácil, inclusive para negativados, mas exigem pagamentos antecipados de taxas e impostos.
+1	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+3	Empréstimos	Empréstimos	PROPN	_	_	11	nsubj	11:nsubj|20:nsubj	_
+4	Fraudulentos	Fraudulentos	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+5	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+6	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+7	:	:	PUNCT	_	_	11	punct	11:punct	_
+8	Falsas	falso	ADJ	_	Gender=Fem|Number=Plur	9	amod	9:amod	_
+9	instituições	instituição	NOUN	_	Gender=Fem|Number=Plur	11	nsubj	11:nsubj|20:nsubj	_
+10	financeiras	financeiro	ADJ	_	Gender=Fem|Number=Plur	9	amod	9:amod	_
+11	oferecem	oferecer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+12	crédito	crédito	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj	_
+13	fácil	fácil	ADJ	_	Number=Sing	12	amod	12:amod	SpaceAfter=No
+14	,	,	PUNCT	_	_	17	punct	17:punct	_
+15	inclusive	inclusive	ADV	_	_	17	advmod	17:advmod	_
+16	para	para	ADP	_	_	17	case	17:case	_
+17	negativados	negativado	NOUN	_	Gender=Masc|Number=Plur	11	obl	11:obl:para	SpaceAfter=No
+18	,	,	PUNCT	_	_	20	punct	20:punct	_
+19	mas	mas	CCONJ	_	_	20	cc	20:cc	_
+20	exigem	exigir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	conj	11:conj:mas	_
+21	pagamentos	pagamento	NOUN	_	Gender=Masc|Number=Plur	20	obj	20:obj	_
+22	antecipados	antecipado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	21	amod	21:amod	_
+23	de	de	ADP	_	_	24	case	24:case|26:case	_
+24	taxas	taxa	NOUN	_	Gender=Fem|Number=Plur	21	nmod	21:nmod:de	_
+25	e	e	CCONJ	_	_	26	cc	26:cc	_
+26	impostos	imposto	NOUN	_	Gender=Masc|Number=Plur	24	conj	21:nmod:de|24:conj:e	SpaceAfter=No
+27	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0079
+# text = A FEBRABAN adverte que isso é um golpe.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	FEBRABAN	FEBRABAN	PROPN	_	_	3	nsubj	3:nsubj	_
+3	adverte	advertir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	8	mark	8:mark	_
+5	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	8	nsubj	8:nsubj	_
+6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop	_
+7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	golpe	golpe	NOUN	_	Gender=Masc|Number=Sing	3	ccomp	3:ccomp	SpaceAfter=No
+9	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0081
+# text = **Como evitar**: Nunca pague adiantamentos para obter um empréstimo.
+1	*	*	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+2	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+3	Como	como	ADV	_	_	4	advmod	4:advmod	_
+4	evitar	evitar	VERB	_	VerbForm=Inf	1	ccomp:speech	1:ccomp:speech	SpaceAfter=No
+5	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+6	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+7	:	:	PUNCT	_	_	9	punct	9:punct	_
+8	Nunca	nunca	ADV	_	_	9	advmod	9:advmod	_
+9	pague	pagar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+10	adiantamentos	adiantamento	NOUN	_	Gender=Masc|Number=Plur	9	obj	9:obj	_
+11	para	para	ADP	_	_	12	mark	12:mark	_
+12	obter	obter	VERB	_	VerbForm=Inf	9	advcl	9:advcl:para	_
+13	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	empréstimo	empréstimo	NOUN	_	Gender=Masc|Number=Sing	12	obj	12:obj	SpaceAfter=No
+15	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0083
+# text = Instituições legítimas não solicitam pagamentos prévios.
+1	Instituições	instituição	NOUN	_	Gender=Fem|Number=Plur	4	nsubj	4:nsubj	_
+2	legítimas	legítimo	ADJ	_	Gender=Fem|Number=Plur	1	amod	1:amod	_
+3	não	não	ADV	_	_	4	advmod	4:advmod	_
+4	solicitam	solicitar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	pagamentos	pagamento	NOUN	_	Gender=Masc|Number=Plur	4	obj	4:obj	_
+6	prévios	prévio	ADJ	_	Gender=Masc|Number=Plur	5	amod	5:amod	SpaceAfter=No
+7	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0085
+# text = Verifique se a instituição está autorizada pelo Banco Central.
+1	Verifique	verificar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	se	se	SCONJ	_	_	6	mark	6:mark	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	instituição	instituição	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj	_
+5	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+6	autorizada	autorizado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	1	ccomp	1:ccomp	_
+7-8	pelo	_	_	_	_	_	_	_	_
+7	por	por	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	Banco	Banco	PROPN	_	_	6	obl:agent	6:obl:agent	_
+10	Central	Central	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+11	.	.	PUNCT	_	_	1	punct	1:punct	_

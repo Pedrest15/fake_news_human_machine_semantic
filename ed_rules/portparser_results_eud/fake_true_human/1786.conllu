@@ -1,0 +1,306 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = gasolina e vendida a r$ 2,62 no paraguai em 2021, mostra video - bom dia, eu to aqui no paraguai.
+1	gasolina	gasolina	NOUN	_	Gender=Fem|Number=Sing	3	nsubj:pass	3:nsubj:pass	_
+2	e	e	CCONJ	_	_	3	cc	3:cc	_
+3	vendida	vender	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+4	a	a	ADP	_	_	5	case	5:case	_
+5	r$	r$	SYM	_	_	3	obl	3:obl:a	_
+6	2,62	2,62	NUM	_	NumType=Card	5	nummod	5:nummod	_
+7-8	no	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	paraguai	paraguai	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:em	_
+10	em	em	ADP	_	_	11	case	11:case	_
+11	2021	2021	NUM	_	NumType=Card	3	obl	3:obl:em	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	mostra	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	parataxis	3:parataxis	_
+14	video	video	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	13:nsubj	_
+15	-	-	PUNCT	_	_	21	punct	21:punct	_
+16	bom	bom	ADJ	_	Gender=Masc|Number=Sing	17	amod	17:amod	_
+17	dia	dia	NOUN	_	Gender=Masc|Number=Sing	21	parataxis	21:parataxis	SpaceAfter=No
+18	,	,	PUNCT	_	_	17	punct	17:punct	_
+19	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	21	nsubj	21:nsubj	_
+20	to	ar	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	21	cop	21:cop	_
+21	aqui	aqui	ADV	_	_	3	parataxis	3:parataxis	_
+22-23	no	_	_	_	_	_	_	_	_
+22	em	em	ADP	_	_	24	case	24:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	paraguai	paraguai	NOUN	_	Gender=Masc|Number=Sing	21	obl	21:obl:em	SpaceAfter=No
+25	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = estamos aqui no paraguai fazendo compra.
+1	estamos	estar	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	cop	2:cop	_
+2	aqui	aqui	ADV	_	_	0	root	0:root	_
+3-4	no	_	_	_	_	_	_	_	_
+3	em	em	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	paraguai	paraguai	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:em	_
+6	fazendo	fazer	VERB	_	VerbForm=Ger	2	advcl	2:advcl	_
+7	compra	compra	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	SpaceAfter=No
+8	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = hoje e domingo e eu queria saber o preco da gasolina.
+1	hoje	hoje	ADV	_	_	0	root	0:root	_
+2	e	e	CCONJ	_	_	3	cc	3:cc	_
+3	domingo	domingo	NOUN	_	Gender=Masc|Number=Sing	1	conj	1:conj:e	_
+4	e	e	CCONJ	_	_	6	cc	6:cc	_
+5	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj	6:nsubj|7:nsubj	_
+6	queria	querer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	1	conj	1:conj:e	_
+7	saber	saber	VERB	_	VerbForm=Inf	6	xcomp	6:xcomp	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	preco	preco	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+10-11	da	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	gasolina	gasolina	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:de	SpaceAfter=No
+13	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0007
+# text = r$2,62, e?
+1	r$2,62	r$2,62	NUM	_	NumType=Card	0	root	0:root	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	e	e	CCONJ	_	_	1	conj	1:conj	SpaceAfter=No
+4	?	?	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0009
+# text = esse posto aqui e petrobras?
+1	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	2:det	_
+2	posto	posto	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+3	aqui	aqui	ADV	_	_	2	advmod	2:advmod	_
+4	e	e	CCONJ	_	_	5	cc	5:cc	_
+5	petrobras	petrobras	NOUN	_	_	2	conj	2:conj:e	SpaceAfter=No
+6	?	?	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0011
+# text = e, petrobras.
+1	e	e	CCONJ	_	_	0	root	0:root	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	petrobras	petrobras	NOUN	_	Gender=Fem|Number=Plur	1	dep	1:dep	SpaceAfter=No
+4	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0013
+# text = el mismo petrobras de brasil.
+1	el	el	DET	_	Foreign=Yes|PronType=Art	3	det	3:det	_
+2	mismo	mismo	X	_	Foreign=Yes	0	root	0:root	_
+3	petrobras	petrobras	NOUN	_	Foreign=Yes	2	nmod	2:nmod	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	brasil	brasil	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	SpaceAfter=No
+6	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0015
+# text = olha, estamos abastecendo o carro aqui, ta?
+1	olha	olhar	VERB	_	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	4	discourse	4:discourse	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	estamos	estar	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	4	aux	4:aux	_
+4	abastecendo	abastecer	VERB	_	VerbForm=Ger	0	root	0:root	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	carro	carro	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7	aqui	aqui	ADV	_	_	4	advmod	4:advmod	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	ta	tar	INTJ	_	Abbr=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Pres	4	discourse	4:discourse	SpaceAfter=No
+10	?	?	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0017
+# text = aqui em salto del guaira.
+1	aqui	aqui	ADV	_	_	0	root	0:root	_
+2	em	em	ADP	_	_	3	case	3:case	_
+3	salto	salto	NOUN	_	Gender=Masc|Number=Sing	1	obl	1:obl:em	_
+4	del	del	X	_	Foreign=Yes	3	case	3:case	_
+5	guaira	guaira	X	_	Foreign=Yes	3	nmod	3:nmod	SpaceAfter=No
+6	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0019
+# text = como e que e o nome da cidade aqui?
+1	como	como	ADV	_	_	0	root	0:root	_
+2	e	e	CCONJ	_	_	3	cc	3:cc	_
+3	que	que	PRON	_	PronType=Int	1	conj	1:conj:e	_
+4	e	e	CCONJ	_	_	6	cc	6:cc	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	nome	nome	NOUN	_	Gender=Masc|Number=Sing	1	conj	1:conj:e	_
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	cidade	cidade	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de	_
+10	aqui	aqui	ADV	_	_	6	advmod	6:advmod	SpaceAfter=No
+11	?	?	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0021
+# text = salto del guaira.
+1	salto	salto	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+2	del	del	X	_	Foreign=Yes	1	nmod	1:nmod	_
+3	guaira	guaira	X	_	Foreign=Yes	1	nmod	1:nmod	SpaceAfter=No
+4	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0023
+# text = r$2,62?
+1	r$2,62	r$2,62	NUM	_	NumType=Card	0	root	0:root	SpaceAfter=No
+2	?	?	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0025
+# text = r$2,62.
+1	r$2,62	r$2,62	NUM	_	NumType=Card	0	root	0:root	SpaceAfter=No
+2	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0027
+# text = fala mostra pros brasileiros que estao sendo roubados la no brasil.
+1	fala	fala	NOUN	_	Gender=Fem|Number=Sing	2	nsubj	2:nsubj	_
+2	mostra	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3-4	pros	_	_	_	_	_	_	_	_
+3	para	para	ADP	_	_	5	case	5:case	_
+4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	5:det	_
+5	brasileiros	brasileiro	NOUN	_	Gender=Masc|Number=Plur	2	obl	2:obl:para	_
+6	que	que	SCONJ	_	_	9	mark	9:mark	_
+7	estao	estao	ADV	_	_	9	nsubj:pass	9:nsubj:pass	_
+8	sendo	ser	AUX	_	VerbForm=Ger	9	aux:pass	9:aux:pass	_
+9	roubados	roubar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	5	acl:relcl	5:acl:relcl	_
+10	la	la	ADV	_	_	9	advmod	9:advmod	_
+11-12	no	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	brasil	brasil	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:em	SpaceAfter=No
+14	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0029
+# text = pode falar a verdade.
+1	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	falar	falar	VERB	_	VerbForm=Inf	1	xcomp	1:xcomp	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	verdade	verdade	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	SpaceAfter=No
+5	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0031
+# text = e verdade mesmo.
+1	e	e	CCONJ	_	_	2	cc	2:cc	_
+2	verdade	verdade	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+3	mesmo	mesmo	ADV	_	_	2	advmod	2:advmod	SpaceAfter=No
+4	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0033
+# text = e e exportada do brasil pra ca?
+1	e	e	CCONJ	_	_	3	cc	3:cc	_
+2	e	e	CCONJ	_	_	3	cc	3:cc	_
+3	exportada	exportar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	brasil	brasil	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:de	_
+7	pra	para	ADP	_	_	8	case	8:case	_
+8	ca	ca	NOUN	_	_	3	obl	3:obl:para	SpaceAfter=No
+9	?	?	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0035
+# text = e. olha, eu vou mostrar bem o bone da menina, o. chapeuzinho da menina, o. pra todo mundo ver, pro brasil inteiro ver essa vergonha.
+1	e.	e.	PUNCT	_	_	2	punct	2:punct	_
+2	olha	olhar	VERB	_	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	6	parataxis	6:parataxis	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj	6:nsubj	_
+5	vou	ir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	aux	6:aux	_
+6	mostrar	mostrar	VERB	_	VerbForm=Inf	0	root	0:root	_
+7	bem	bem	ADV	_	_	6	advmod	6:advmod	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	bone	bone	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+10-11	da	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	menina	menino	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:de	SpaceAfter=No
+13	,	,	PUNCT	_	_	15	punct	15:punct	_
+14	o.	o.	PUNCT	_	_	15	punct	15:punct	_
+15	chapeuzinho	chapeuzinho	NOUN	_	Gender=Masc|Number=Sing	9	conj	6:obj|9:conj	_
+16-17	da	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	menina	menino	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:de	SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	20:punct	_
+20	o.	o.	NOUN	_	_	9	conj	6:obj|9:conj	_
+21	pra	para	ADP	_	_	24	mark	24:mark	_
+22	todo	todo	DET	_	Gender=Masc|Number=Sing|PronType=Ind	23	det	23:det	_
+23	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	24	nsubj	24:nsubj	_
+24	ver	ver	VERB	_	VerbForm=Inf	6	advcl	6:advcl:para	SpaceAfter=No
+25	,	,	PUNCT	_	_	30	punct	30:punct	_
+26-27	pro	_	_	_	_	_	_	_	_
+26	para	para	ADP	_	_	30	mark	30:mark	_
+27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	brasil	brasil	NOUN	_	Gender=Masc|Number=Sing	30	nsubj	30:nsubj	_
+29	inteiro	inteiro	ADJ	_	Gender=Masc|Number=Sing	28	amod	28:amod	_
+30	ver	ver	VERB	_	VerbForm=Inf	24	advcl	24:advcl:para	_
+31	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	32	det	32:det	_
+32	vergonha	vergonha	NOUN	_	Gender=Fem|Number=Sing	30	obj	30:obj	SpaceAfter=No
+33	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0037
+# text = o povo ta sendo roubado.
+1	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	povo	povo	NOUN	_	Gender=Masc|Number=Sing	5	nsubj:pass	5:nsubj:pass	_
+3	ta	estar	AUX	_	Abbr=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	5:aux	_
+4	sendo	ser	AUX	_	VerbForm=Ger	5	aux:pass	5:aux:pass	_
+5	roubado	roubar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	SpaceAfter=No
+6	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0039
+# text = r$2,62 a gasolina aqui no paraguai.
+1	r$2,62	r$2,62	NUM	_	NumType=Card	0	root	0:root	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	gasolina	gasolina	NOUN	_	Gender=Fem|Number=Sing	1	dep	1:dep	_
+4	aqui	aqui	ADV	_	_	3	advmod	3:advmod	_
+5-6	no	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	paraguai	paraguai	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:em	SpaceAfter=No
+8	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0041
+# text = aditivada, ne?
+1	aditivada	aditivado	ADJ	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	ne	ne	INTJ	_	_	1	discourse	1:discourse	SpaceAfter=No
+4	?	?	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0043
+# text = e, aditivada.
+1	e	e	CCONJ	_	_	3	cc	3:cc	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	aditivada	aditivar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	0	root	0:root	SpaceAfter=No
+4	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0045
+# text = meu deus, isso e uma vergonha.
+1	meu	meu	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	det	2:det	_
+2	deus	deus	NOUN	_	Gender=Masc|Number=Sing	7	parataxis	7:parataxis	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	7	nsubj	7:nsubj	_
+5	e	e	CCONJ	_	_	7	cc	7:cc	_
+6	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	vergonha	vergonha	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+8	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0047
+# text = eu vou botar no whatsapp essa p******, essa m**** de pais ai.
+1	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	3:nsubj	_
+2	vou	ir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	aux	3:aux	_
+3	botar	botar	VERB	_	VerbForm=Inf	0	root	0:root	_
+4-5	no	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	whatsapp	whatsapp	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	3	obl	3:obl:em	_
+7	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	8	det	8:det	_
+8	p	p	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	SpaceAfter=No
+9	*	*	SYM	_	_	10	nmod	10:nmod	SpaceAfter=No
+10	*	*	SYM	_	_	8	nmod	8:nmod	SpaceAfter=No
+11	*	*	SYM	_	_	10	nmod	10:nmod	SpaceAfter=No
+12	*	*	SYM	_	_	11	nmod	11:nmod	SpaceAfter=No
+13	*	*	SYM	_	_	11	nmod	11:nmod	SpaceAfter=No
+14	*	*	NOUN	_	_	11	flat:foreign	11:flat:foreign	SpaceAfter=No
+15	,	,	PUNCT	_	_	17	punct	17:punct	_
+16	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	17	det	17:det	_
+17	m	metro	NOUN	_	Abbr=Yes|Gender=Masc	8	conj	3:obj|8:conj	SpaceAfter=No
+18	*	*	SYM	_	_	19	nmod	19:nmod	SpaceAfter=No
+19	*	*	SYM	_	_	17	nmod	17:nmod	SpaceAfter=No
+20	*	*	SYM	_	_	19	nmod	19:nmod	SpaceAfter=No
+21	*	*	NOUN	_	_	19	nmod	19:nmod	_
+22	de	de	ADP	_	_	23	case	23:case	_
+23	pais	pai	NOUN	_	Gender=Masc|Number=Plur	18	nmod	18:nmod:de	_
+24	ai	ai	ADV	_	_	23	advmod	23:advmod	SpaceAfter=No
+25	.	.	PUNCT	_	_	3	punct	3:punct	_

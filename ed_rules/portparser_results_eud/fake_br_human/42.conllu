@@ -1,0 +1,724 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Quatro ex-presidentes presos até 2019 é o que a Lava Jato está preparando.
+1	Quatro	quatro	NUM	_	NumType=Card	2	nummod	2:nummod	_
+2	ex-presidentes	ex-presidente	NOUN	_	Number=Plur	7	nsubj	7:nsubj	_
+3	presos	prender	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	2	acl	2:acl	_
+4	até	até	ADP	_	_	5	case	5:case	_
+5	2019	2019	NUM	_	NumType=Card	3	obl	3:obl:até	_
+6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+7	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	0	root	0:root|13:obj	_
+8	que	que	PRON	_	PronType=Rel	13	obj	7:ref	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	Lava	Lava	PROPN	_	_	13	nsubj	13:nsubj	_
+11	Jato	Jato	PROPN	_	_	10	flat:name	10:flat:name	_
+12	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux	13:aux	_
+13	preparando	preparar	VERB	_	VerbForm=Ger	7	acl:relcl	7:acl:relcl	SpaceAfter=No
+14	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0003
+# text = A Força Tarefa da operação Lava Jato está com farto material acusatório para levar para a cadeia simultaneamente 4 ex-presidentes do Brasil.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Força	Força	PROPN	_	_	12	nsubj	12:nsubj	_
+3	Tarefa	Tarefa	PROPN	_	_	2	flat:name	2:flat:name	_
+4-5	da	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	operação	operação	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+7	Lava	Lava	PROPN	_	_	6	nmod	6:nmod	_
+8	Jato	Jato	PROPN	_	_	7	flat:name	7:flat:name	_
+9	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	12:cop	_
+10	com	com	ADP	_	_	12	case	12:case	_
+11	farto	farto	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	12	amod	12:amod	_
+12	material	material	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+13	acusatório	acusatório	ADJ	_	Gender=Masc|Number=Sing	12	amod	12:amod	_
+14	para	para	ADP	_	_	15	mark	15:mark	_
+15	levar	levar	VERB	_	VerbForm=Inf	12	acl	12:acl:para	_
+16	para	para	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	cadeia	cadeia	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl:para	_
+19	simultaneamente	simultaneamente	ADV	_	_	15	advmod	15:advmod	_
+20	4	4	NUM	_	NumType=Card	21	nummod	21:nummod	_
+21	ex-presidentes	ex-presidentes	NOUN	_	Number=Plur	15	obj	15:obj	_
+22-23	do	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	Brasil	Brasil	PROPN	_	_	21	nmod	21:nmod:de	SpaceAfter=No
+25	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0005
+# text = Lula, Dilma, Temer e Collor podem terminar sua vida política atrás das grades.
+1	Lula	Lula	PROPN	_	_	8	nsubj	8:nsubj|9:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	Dilma	Dilma	PROPN	_	_	1	conj	1:conj:e|8:nsubj|9:nsubj	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	Temer	Temer	PROPN	_	_	1	conj	1:conj:e|8:nsubj|9:nsubj	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	Collor	Collor	PROPN	_	_	1	conj	1:conj:e|8:nsubj|9:nsubj	_
+8	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+9	terminar	terminar	VERB	_	VerbForm=Inf	8	xcomp	8:xcomp	_
+10	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	11	det	11:det	_
+11	vida	vida	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+12	política	político	ADJ	_	Gender=Fem|Number=Sing	11	amod	11:amod	_
+13	atrás	atrás	ADV	_	_	9	advmod	9:advmod	_
+14-15	das	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	16:det	_
+16	grades	grade	NOUN	_	Gender=Fem|Number=Plur	13	obl	13:obl:de	SpaceAfter=No
+17	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0007
+# text = A condenação de Lula acendeu o alerta vermelho em políticos que se achavam intocáveis.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	condenação	condenação	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Lula	Lula	PROPN	_	_	2	nmod	2:nmod:de	_
+5	acendeu	acender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	alerta	alerta	NOUN	_	Number=Sing	5	obj	5:obj	_
+8	vermelho	vermelho	ADJ	_	Gender=Masc|Number=Sing	7	amod	7:amod	_
+9	em	em	ADP	_	_	10	case	10:case	_
+10	políticos	político	NOUN	_	Gender=Masc|Number=Plur	5	obl	5:obl:em|13:nsubj|14:nsubj	_
+11	que	que	PRON	_	PronType=Rel	13	nsubj	10:ref	_
+12	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	13	expl	13:expl	_
+13	achavam	achar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	10	acl:relcl	10:acl:relcl	_
+14	intocáveis	intocável	ADJ	_	Number=Plur	13	xcomp	13:xcomp	SpaceAfter=No
+15	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0009
+# text = A operação Lava Jato ao condenar o maior líder político da Esquerda no Brasil demonstrou que nenhuma pessoa está acima da lei.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	operação	operação	NOUN	_	Gender=Fem|Number=Sing	18	nsubj	18:nsubj	_
+3	Lava	Lava	PROPN	_	_	2	nmod	2:nmod	_
+4	Jato	Jato	PROPN	_	_	3	flat:name	3:flat:name	_
+5-6	ao	_	_	_	_	_	_	_	_
+5	a	a	ADP	_	ExtPos=SCONJ	7	mark	7:mark	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	fixed	5:fixed	_
+7	condenar	condenar	VERB	_	VerbForm=Inf	18	advcl	18:advcl:a_o	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+9	maior	maior	ADJ	_	Number=Sing	10	amod	10:amod	_
+10	líder	líder	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+11	político	político	ADJ	_	Gender=Masc|Number=Sing	10	amod	10:amod	_
+12-13	da	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	Esquerda	Esquerda	PROPN	_	_	10	nmod	10:nmod:de	_
+15-16	no	_	_	_	_	_	_	_	_
+15	em	em	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	Brasil	Brasil	PROPN	_	_	10	nmod	10:nmod:em	_
+18	demonstrou	demonstrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+19	que	que	SCONJ	_	_	23	mark	23:mark	_
+20	nenhuma	nenhum	DET	_	Gender=Fem|Number=Sing|PronType=Ind	21	det	21:det	_
+21	pessoa	pessoa	NOUN	_	Gender=Fem|Number=Sing	23	nsubj	23:nsubj	_
+22	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	cop	23:cop	_
+23	acima	acima	ADV	_	_	18	ccomp	18:ccomp	_
+24-25	da	_	_	_	_	_	_	_	_
+24	de	de	ADP	_	_	26	case	26:case	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	lei	lei	NOUN	_	Gender=Fem|Number=Sing	23	obl	23:obl:de	SpaceAfter=No
+27	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0011
+# text = A condenação a nove anos e seis meses de prisão pelo juiz federal Sergio Moro, nesta quarta-feira, não mandará o petista automaticamente para a cadeia.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	condenação	condenação	NOUN	_	Gender=Fem|Number=Sing	23	nsubj	23:nsubj	_
+3	a	a	ADP	_	_	5	case	5:case|8:case	_
+4	nove	nove	NUM	_	NumType=Card	5	nummod	5:nummod	_
+5	anos	ano	NOUN	_	Gender=Masc|Number=Plur	2	nmod	2:nmod:a	_
+6	e	e	CCONJ	_	_	8	cc	8:cc	_
+7	seis	seis	NUM	_	NumType=Card	8	nummod	8:nummod	_
+8	meses	mÃªs	NOUN	_	Gender=Masc|Number=Plur	5	conj	2:nmod:a|5:conj:e	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	prisão	prisão	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de|8:nmod:de	_
+11-12	pelo	_	_	_	_	_	_	_	_
+11	por	por	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	juiz	juiz	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:por	_
+14	federal	federal	ADJ	_	Number=Sing	13	amod	13:amod	_
+15	Sergio	Sergio	PROPN	_	_	13	nmod	13:nmod	_
+16	Moro	Moro	PROPN	_	_	15	flat:name	15:flat:name	SpaceAfter=No
+17	,	,	PUNCT	_	_	20	punct	20:punct	_
+18-19	nesta	_	_	_	_	_	_	_	_
+18	em	em	ADP	_	_	20	case	20:case	_
+19	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	20	det	20:det	_
+20	quarta-feira	quarta-feira	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:em	SpaceAfter=No
+21	,	,	PUNCT	_	_	20	punct	20:punct	_
+22	não	não	ADV	_	_	23	advmod	23:advmod	_
+23	mandará	mandar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	petista	petista	NOUN	_	Number=Sing	23	obj	23:obj	_
+26	automaticamente	automaticamente	ADV	_	_	23	advmod	23:advmod	_
+27	para	para	ADP	_	_	29	case	29:case	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	cadeia	cadeia	NOUN	_	Gender=Fem|Number=Sing	23	obl	23:obl:para	SpaceAfter=No
+30	.	.	PUNCT	_	_	23	punct	23:punct	_
+
+# sent_id = S0013
+# text = Isso porque Moro é um juiz de primeira instância e, assim, sua decisão não basta para que a pena seja cumprida imediatamente.
+1	Isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	0	root	0:root	_
+2	porque	porque	SCONJ	_	_	6	mark	6:mark|17:mark	_
+3	Moro	Moro	PROPN	_	_	6	nsubj	6:nsubj	_
+4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	juiz	juiz	NOUN	_	Gender=Masc|Number=Sing	1	advcl	1:advcl:porque	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	primeira	primeiro	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	9	amod	9:amod	_
+9	instância	instância	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de	_
+10	e	e	CCONJ	_	_	17	cc	17:cc	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	assim	assim	ADV	_	_	17	advmod	17:advmod	SpaceAfter=No
+13	,	,	PUNCT	_	_	12	punct	12:punct	_
+14	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	15	det	15:det	_
+15	decisão	decisão	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	17:nsubj	_
+16	não	não	ADV	_	_	17	advmod	17:advmod	_
+17	basta	bastar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	1:advcl:porque|6:conj:e	_
+18	para	para	ADP	_	ExtPos=SCONJ	23	mark	23:mark	_
+19	que	que	SCONJ	_	_	18	fixed	18:fixed	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	pena	pena	NOUN	_	Gender=Fem|Number=Sing	23	nsubj:pass	23:nsubj:pass	_
+22	seja	ser	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	aux:pass	23:aux:pass	_
+23	cumprida	cumprir	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	17	advcl	17:advcl:para_que	_
+24	imediatamente	imediatamente	ADV	_	_	23	advmod	23:advmod	SpaceAfter=No
+25	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0015
+# text = Toda decisão que o juiz da Lava Jato toma em primeira instância é depois revisada, em segunda instância, pelos desembargadores do Tribunal Regional da 4a Região (TRF4) João Pedro Gebran Neto, relator da operação, Leandro Paulsen e Victor Luiz dos Santos Laus, membros da 8a Turma da Corte sediada em Porto Alegre.
+1	Toda	todo	DET	_	Gender=Fem|Number=Sing|PronType=Ind	2	det	2:det	_
+2	decisão	decisão	NOUN	_	Gender=Fem|Number=Sing	16	nsubj:pass	10:obj|16:nsubj:pass	_
+3	que	que	PRON	_	PronType=Rel	10	obj	2:ref	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	juiz	juiz	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	10:nsubj	_
+6-7	da	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	Lava	Lava	PROPN	_	_	5	nmod	5:nmod:de	_
+9	Jato	Jato	PROPN	_	_	8	flat:name	8:flat:name	_
+10	toma	tomar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	primeira	primeiro	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	13	amod	13:amod	_
+13	instância	instância	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:em	_
+14	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux:pass	16:aux:pass	_
+15	depois	depois	ADV	_	_	16	advmod	16:advmod	_
+16	revisada	revisar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	SpaceAfter=No
+17	,	,	PUNCT	_	_	20	punct	20:punct	_
+18	em	em	ADP	_	_	20	case	20:case	_
+19	segunda	segundo	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	20	amod	20:amod	_
+20	instância	instância	NOUN	_	Gender=Fem|Number=Sing	16	obl	16:obl:em	SpaceAfter=No
+21	,	,	PUNCT	_	_	20	punct	20:punct	_
+22-23	pelos	_	_	_	_	_	_	_	_
+22	por	por	ADP	_	_	24	case	24:case	_
+23	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	24:det	_
+24	desembargadores	desembargador	NOUN	_	Gender=Masc|Number=Plur	16	obl:agent	16:obl:agent	_
+25-26	do	_	_	_	_	_	_	_	_
+25	de	de	ADP	_	_	27	case	27:case	_
+26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	Tribunal	Tribunal	PROPN	_	_	24	nmod	24:nmod:de	_
+28	Regional	Regional	PROPN	_	_	27	flat:name	27:flat:name	_
+29-30	da	_	_	_	_	_	_	_	_
+29	de	de	ADP	_	_	32	case	32:case	_
+30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	32:det	_
+31	4a	4a	ADJ	_	Gender=Fem|NumType=Ord	32	amod	32:amod	_
+32	Região	Região	PROPN	_	_	27	flat:name	27:flat:name	_
+33	(	(	PUNCT	_	_	34	punct	34:punct	SpaceAfter=No
+34	TRF4	TRF4	PROPN	_	_	27	appos	27:appos	SpaceAfter=No
+35	)	)	PUNCT	_	_	34	punct	34:punct	_
+36	João	João	PROPN	_	_	24	nmod	24:nmod	_
+37	Pedro	Pedro	PROPN	_	_	36	flat:name	36:flat:name	_
+38	Gebran	Gebran	PROPN	_	_	36	flat:name	36:flat:name	_
+39	Neto	Neto	PROPN	_	_	36	flat:name	36:flat:name	SpaceAfter=No
+40	,	,	PUNCT	_	_	41	punct	41:punct	_
+41	relator	relator	NOUN	_	Gender=Masc|Number=Sing	27	appos	27:appos	_
+42-43	da	_	_	_	_	_	_	_	_
+42	de	de	ADP	_	_	44	case	44:case	_
+43	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	44:det	_
+44	operação	operação	NOUN	_	Gender=Fem|Number=Sing	41	nmod	41:nmod:de	SpaceAfter=No
+45	,	,	PUNCT	_	_	46	punct	46:punct	_
+46	Leandro	Leandro	PROPN	_	_	16	conj	16:conj	_
+47	Paulsen	Paulsen	PROPN	_	_	46	flat:name	46:flat:name	_
+48	e	e	CCONJ	_	_	49	cc	49:cc	_
+49	Victor	Victor	PROPN	_	_	46	conj	46:conj:e	_
+50	Luiz	Luiz	PROPN	_	_	49	flat:name	49:flat:name	_
+51-52	dos	_	_	_	_	_	_	_	_
+51	de	de	ADP	_	_	53	case	53:case	_
+52	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	53	det	53:det	_
+53	Santos	Santos	PROPN	_	_	49	flat:name	49:flat:name	_
+54	Laus	Laus	PROPN	_	_	49	flat:name	49:flat:name	SpaceAfter=No
+55	,	,	PUNCT	_	_	56	punct	56:punct	_
+56	membros	membro	NOUN	_	Gender=Masc|Number=Plur	24	appos	24:appos	_
+57-58	da	_	_	_	_	_	_	_	_
+57	de	de	ADP	_	_	60	case	60:case	_
+58	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	60	det	60:det	_
+59	8a	8a	ADJ	_	Gender=Fem|NumType=Ord	60	amod	60:amod	_
+60	Turma	Turma	PROPN	_	_	56	nmod	56:nmod:de	_
+61-62	da	_	_	_	_	_	_	_	_
+61	de	de	ADP	_	_	63	case	63:case	_
+62	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	63	det	63:det	_
+63	Corte	Corte	PROPN	_	_	60	nmod	60:nmod:de	_
+64	sediada	sediar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	60	acl	60:acl	_
+65	em	em	ADP	_	_	66	case	66:case	_
+66	Porto	Porto	PROPN	_	_	64	obl	64:obl:em	_
+67	Alegre	Alegre	PROPN	_	_	66	flat:name	66:flat:name	SpaceAfter=No
+68	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0017
+# text = O trio da segunda instância é muito mais duro que o juiz Sergio Moro.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	trio	trio	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	10:nsubj	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	6	case	6:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+5	segunda	segundo	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	6	amod	6:amod	_
+6	instância	instância	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+7	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_
+8	muito	muito	ADV	_	_	9	advmod	9:advmod	_
+9	mais	mais	ADV	_	_	10	advmod	10:advmod	_
+10	duro	duro	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	_
+11	que	que	SCONJ	_	_	13	mark	13:mark	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	juiz	juiz	NOUN	_	Gender=Masc|Number=Sing	10	advcl	10:advcl:que	_
+14	Sergio	Sergio	PROPN	_	_	13	nmod	13:nmod	_
+15	Moro	Moro	PROPN	_	_	14	flat:name	14:flat:name	SpaceAfter=No
+16	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0019
+# text = A pena de Lula provavelmente será confirmada e ampliada.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	pena	pena	NOUN	_	Gender=Fem|Number=Sing	7	nsubj:pass	7:nsubj:pass|9:nsubj:pass	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Lula	Lula	PROPN	_	_	2	nmod	2:nmod:de	_
+5	provavelmente	provavelmente	ADV	_	_	7	advmod	7:advmod	_
+6	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	7	aux:pass	7:aux:pass|9:aux:pass	_
+7	confirmada	confirmar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	ampliada	ampliar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	7	conj	7:conj:e	SpaceAfter=No
+10	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0021
+# text = Ele ficará fora das eleições de 2018 e com ele levará mais três ex-presidentes que lhe foram muito próximos durante os anos em que o petismo conduziu os rumos políticos do Brasil.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj|12:nsubj	_
+2	ficará	ficar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+3	fora	fora	ADV	_	_	2	advmod	2:advmod	_
+4-5	das	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	6:det	_
+6	eleições	eleição	NOUN	_	Gender=Fem|Number=Plur	3	obl	3:obl:de	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	2018	2018	NUM	_	NumType=Card	6	nmod	6:nmod:de	_
+9	e	e	CCONJ	_	_	12	cc	12:cc	_
+10	com	com	ADP	_	_	11	case	11:case	_
+11	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	obl	12:obl:com	_
+12	levará	levar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	2	conj	2:conj:e	_
+13	mais	mais	ADV	_	_	14	advmod	14:advmod	_
+14	três	três	NUM	_	NumType=Card	15	nummod	15:nummod	_
+15	ex-presidentes	ex-presidente	NOUN	_	Number=Plur	12	obj	12:obj|20:nsubj	_
+16	que	que	PRON	_	PronType=Rel	20	nsubj	15:ref	_
+17	lhe	lhe	PRON	_	Case=Dat|Number=Sing|Person=3|PronType=Prs	20	iobj	20:iobj	_
+18	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	20	cop	20:cop	_
+19	muito	muito	ADV	_	_	20	advmod	20:advmod	_
+20	próximos	próximo	ADJ	_	Gender=Masc|Number=Plur	15	acl:relcl	15:acl:relcl	_
+21	durante	durante	ADP	_	_	23	case	23:case	_
+22	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	23:det	_
+23	anos	ano	NOUN	_	Gender=Masc|Number=Plur	20	obl	20:obl:durante|28:obl:em	_
+24	em	em	ADP	_	_	25	case	25:case	_
+25	que	que	PRON	_	PronType=Rel	28	obl	23:ref	_
+26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	petismo	petismo	NOUN	_	Gender=Masc|Number=Sing	28	nsubj	28:nsubj	_
+28	conduziu	conduzir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	acl:relcl	23:acl:relcl	_
+29	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	30:det	_
+30	rumos	rumo	NOUN	_	Gender=Masc|Number=Plur	28	obj	28:obj	_
+31	políticos	político	ADJ	_	Gender=Masc|Number=Plur	30	amod	30:amod	_
+32-33	do	_	_	_	_	_	_	_	_
+32	de	de	ADP	_	_	34	case	34:case	_
+33	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	34:det	_
+34	Brasil	Brasil	PROPN	_	_	30	nmod	30:nmod:de	SpaceAfter=No
+35	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0023
+# text = Pesa sobre Michel Temer fortíssimos indícios de corrupção passiva, organização criminosa e obstrução de justiça.
+1	Pesa	pesar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	sobre	sobre	ADP	_	_	3	case	3:case	_
+3	Michel	Michel	PROPN	_	_	1	obl	1:obl:sobre	_
+4	Temer	Temer	PROPN	_	_	3	flat:name	3:flat:name	_
+5	fortíssimos	fortíssimo	ADJ	_	Gender=Masc|Number=Plur	6	amod	6:amod	_
+6	indícios	indício	NOUN	_	Gender=Masc|Number=Plur	1	nsubj	1:nsubj	_
+7	de	de	ADP	_	_	8	case	8:case|11:case|14:case	_
+8	corrupção	corrupção	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de	_
+9	passiva	passivo	ADJ	_	Gender=Fem|Number=Sing	8	amod	8:amod	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	organização	organização	NOUN	_	Gender=Fem|Number=Sing	8	conj	6:nmod:de|8:conj:e	_
+12	criminosa	criminoso	ADJ	_	Gender=Fem|Number=Sing	11	amod	11:amod	_
+13	e	e	CCONJ	_	_	14	cc	14:cc	_
+14	obstrução	obstrução	NOUN	_	Gender=Fem|Number=Sing	8	conj	6:nmod:de|8:conj:e	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	justiça	justiça	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:de	SpaceAfter=No
+17	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0025
+# text = Somente com as provas levantadas até agora ele pode pegar até 33 anos de cadeia.
+1	Somente	somente	ADV	_	_	4	advmod	4:advmod	_
+2	com	com	ADP	_	_	4	case	4:case	_
+3	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	4:det	_
+4	provas	prova	NOUN	_	Gender=Fem|Number=Plur	9	obl	9:obl:com	_
+5	levantadas	levantar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	4	acl	4:acl	_
+6	até	até	ADP	_	_	7	case	7:case	_
+7	agora	agora	ADV	_	_	5	advmod	5:advmod	_
+8	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nsubj	9:nsubj|10:nsubj	_
+9	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+10	pegar	pegar	VERB	_	VerbForm=Inf	9	xcomp	9:xcomp	_
+11	até	até	ADP	_	_	12	case	12:case	_
+12	33	33	NUM	_	NumType=Card	13	nummod	13:nummod	_
+13	anos	ano	NOUN	_	Gender=Masc|Number=Plur	10	obj	10:obj	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	cadeia	cadeia	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:de	SpaceAfter=No
+16	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0027
+# text = Contra Dilma Vana Rousseff pesa mais fortemente a acusação de tentativa de obstrução da Justiça.
+1	Contra	contra	ADP	_	_	2	case	2:case	_
+2	Dilma	Dilma	PROPN	_	_	5	obl	5:obl:contra	_
+3	Vana	Vana	PROPN	_	_	2	flat:name	2:flat:name	_
+4	Rousseff	Rousseff	PROPN	_	_	2	flat:name	2:flat:name	_
+5	pesa	pesar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	mais	mais	ADV	_	_	7	advmod	7:advmod	_
+7	fortemente	fortemente	ADV	_	_	5	advmod	5:advmod	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	acusação	acusação	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	tentativa	tentativa	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:de	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	obstrução	obstrução	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:de	_
+14-15	da	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	Justiça	Justiça	PROPN	_	_	13	nmod	13:nmod:de	SpaceAfter=No
+17	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0029
+# text = Tal acusação fundamenta pela Policia Federal do Brasil aponta tentativa de blindar o ex-presidente Lula e barrar os processos em que ele está envolvido na Operação Lava Jato ao nomeá-lo como ministro.
+1	Tal	tal	DET	_	Number=Sing|PronType=Dem	2	det	2:det	_
+2	acusação	acusação	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	11:nsubj	_
+3	fundamenta	fundamentar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	2:acl	_
+4-5	pela	_	_	_	_	_	_	_	_
+4	por	por	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	Policia	Policia	PROPN	_	_	3	obl:agent	3:obl:agent	_
+7	Federal	Federal	PROPN	_	_	6	flat:name	6:flat:name	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	Brasil	Brasil	PROPN	_	_	6	flat:name	6:flat:name	_
+11	aponta	apontar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+12	tentativa	tentativa	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	_
+13	de	de	ADP	_	_	14	mark	14:mark|19:mark	_
+14	blindar	blindar	VERB	_	VerbForm=Inf	12	acl	12:acl:de	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	ex-presidente	ex-presidente	NOUN	_	Number=Sing	14	obj	14:obj	_
+17	Lula	Lula	PROPN	_	_	16	nmod	16:nmod	_
+18	e	e	CCONJ	_	_	19	cc	19:cc	_
+19	barrar	barrar	VERB	_	VerbForm=Inf	14	conj	12:acl:de|14:conj:e	_
+20	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	21:det	_
+21	processos	processo	NOUN	_	Gender=Masc|Number=Plur	19	obj	19:obj|26:obl:em	_
+22	em	em	ADP	_	_	23	case	23:case	_
+23	que	que	PRON	_	PronType=Rel	26	obl	21:ref	_
+24	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	26	nsubj	26:nsubj	_
+25	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	cop	26:cop	_
+26	envolvido	envolvido	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	21	acl:relcl	21:acl:relcl	_
+27-28	na	_	_	_	_	_	_	_	_
+27	em	em	ADP	_	_	29	case	29:case	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	Operação	Operação	PROPN	_	_	26	obl	26:obl:em	_
+30	Lava	Lava	PROPN	_	_	29	flat:name	29:flat:name	_
+31	Jato	Jato	PROPN	_	_	29	flat:name	29:flat:name	_
+32-33	ao	_	_	_	_	_	_	_	_
+32	a	a	ADP	_	ExtPos=SCONJ	34	mark	34:mark	_
+33	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	fixed	32:fixed	_
+34-35	nomeá-lo	_	_	_	_	_	_	_	_
+34	nomear	nomear	VERB	_	VerbForm=Inf	14	advcl	14:advcl:a_o|19:advcl:a_o	_
+35	lo	lo	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	34	obj	34:obj	_
+36	como	como	ADP	_	_	37	case	37:case	_
+37	ministro	ministro	NOUN	_	Gender=Masc|Number=Sing	34	obl	34:obl:como	SpaceAfter=No
+38	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0031
+# text = Embora contra Dilma ainda existam investigações sobre o caixa dois em suas campanhas eleitorais ela é a que possui mais chances de se livrar das garras da justiça.
+1	Embora	embora	SCONJ	_	_	5	mark	5:mark	_
+2	contra	contra	ADP	_	_	3	case	3:case	_
+3	Dilma	Dilma	PROPN	_	_	5	obl	5:obl:contra	_
+4	ainda	ainda	ADV	_	_	5	advmod	5:advmod	_
+5	existam	existir	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	advcl	17:advcl:embora	_
+6	investigações	investigação	NOUN	_	Gender=Fem|Number=Plur	5	nsubj	5:nsubj	_
+7	sobre	sobre	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	caixa	caixa	NOUN	_	Number=Sing	6	nmod	6:nmod:sobre	_
+10	dois	dois	NUM	_	Gender=Masc|NumType=Card	9	nmod	9:nmod	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	13	det	13:det	_
+13	campanhas	campanha	NOUN	_	Gender=Fem|Number=Plur	5	obl	5:obl:em	_
+14	eleitorais	eleitoral	ADJ	_	Number=Plur	13	amod	13:amod	_
+15	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	17	nsubj	17:nsubj	_
+16	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	17:cop	_
+17	a	o	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Dem	0	root	0:root|19:nsubj	_
+18	que	que	PRON	_	PronType=Rel	19	nsubj	17:ref	_
+19	possui	possuir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	acl:relcl	17:acl:relcl	_
+20	mais	mais	DET	_	PronType=Ind	21	det	21:det	_
+21	chances	chance	NOUN	_	Gender=Fem|Number=Plur	19	obj	19:obj	_
+22	de	de	ADP	_	_	24	mark	24:mark	_
+23	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	24	expl	24:expl	_
+24	livrar	livrar	VERB	_	VerbForm=Inf	21	acl	21:acl:de	_
+25-26	das	_	_	_	_	_	_	_	_
+25	de	de	ADP	_	_	27	case	27:case	_
+26	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	27	det	27:det	_
+27	garras	garra	NOUN	_	Gender=Fem|Number=Plur	24	obl	24:obl:de	_
+28-29	da	_	_	_	_	_	_	_	_
+28	de	de	ADP	_	_	30	case	30:case	_
+29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	justiça	justiça	NOUN	_	Gender=Fem|Number=Sing	27	nmod	27:nmod:de	SpaceAfter=No
+31	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0033
+# text = Caso seja condenada por obstrução da Justiça, sua pena será de até 3 anos de reclusão.
+1	Caso	caso	SCONJ	_	_	3	mark	3:mark	_
+2	seja	ser	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:pass	3:aux:pass	_
+3	condenada	condenar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	16	advcl	16:advcl:caso	_
+4	por	por	ADP	_	_	5	case	5:case	_
+5	obstrução	obstrução	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:por	_
+6-7	da	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	Justiça	Justiça	PROPN	_	_	5	nmod	5:nmod:de	SpaceAfter=No
+9	,	,	PUNCT	_	_	3	punct	3:punct	_
+10	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	11	det	11:det	_
+11	pena	pena	NOUN	_	Gender=Fem|Number=Sing	16	nsubj	16:nsubj	_
+12	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	16	cop	16:cop	_
+13	de	de	ADP	_	_	16	case	16:case	_
+14	até	até	ADP	_	_	15	case	15:case	_
+15	3	3	NUM	_	NumType=Card	16	nummod	16:nummod	_
+16	anos	ano	NOUN	_	Gender=Masc|Number=Plur	0	root	0:root	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	reclusão	reclusão	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:de	SpaceAfter=No
+19	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0035
+# text = Como as penas inferiores a 4 anos de reclusão são substituídas por penas são substituídas por prestação de serviços a comunidade.
+1	Como	como	SCONJ	_	_	11	mark	11:mark	_
+2	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	3:det	_
+3	penas	pena	NOUN	_	Gender=Fem|Number=Plur	11	nsubj:pass	11:nsubj:pass	_
+4	inferiores	inferior	ADJ	_	Number=Plur	3	amod	3:amod	_
+5	a	a	ADP	_	_	7	case	7:case	_
+6	4	4	NUM	_	NumType=Card	7	nummod	7:nummod	_
+7	anos	ano	NOUN	_	Gender=Masc|Number=Plur	4	obl	4:obl:a	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	reclusão	reclusão	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:de	_
+10	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	aux:pass	11:aux:pass	_
+11	substituídas	substituír	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	15	dep	15:dep	_
+12	por	por	ADP	_	_	13	case	13:case	_
+13	penas	pena	NOUN	_	Gender=Fem|Number=Plur	11	obl:agent	11:obl:agent	_
+14	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	aux:pass	15:aux:pass	_
+15	substituídas	substituír	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	_
+16	por	por	ADP	_	_	17	case	17:case	_
+17	prestação	prestação	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl:por	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	serviços	serviço	NOUN	_	Gender=Masc|Number=Plur	17	nmod	17:nmod:de	_
+20	a	a	ADP	_	_	21	case	21:case	_
+21	comunidade	comunidade	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:a	SpaceAfter=No
+22	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0037
+# text = Ela precisa de mais uma condenação para de fato se juntar ao time dos ex-presidentes presos.
+1	Ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj	_
+2	precisa	precisar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	de	de	ADP	_	_	6	case	6:case	_
+4	mais	mais	ADV	_	_	5	advmod	5:advmod	_
+5	uma	um	NUM	_	Gender=Fem|NumType=Card	6	nummod	6:nummod	_
+6	condenação	condenação	NOUN	_	Gender=Fem|Number=Sing	2	obl	2:obl:de	_
+7	para	para	ADP	_	_	11	mark	11:mark	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	fato	fato	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:de	_
+10	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	11	expl	11:expl	_
+11	juntar	juntar	VERB	_	Number=Sing|Person=3|VerbForm=Inf	2	advcl	2:advcl:para	_
+12-13	ao	_	_	_	_	_	_	_	_
+12	a	a	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	time	time	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:a	_
+15-16	dos	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	17:det	_
+17	ex-presidentes	ex-presidentes	NOUN	_	Number=Plur	14	nmod	14:nmod:de	_
+18	presos	prender	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	17	acl	17:acl	SpaceAfter=No
+19	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0039
+# text = O ex-presidente Fernando Collor de Melo (PTC-AL) é acusado pela Procuradoria-Geral da República de ter recebido ao menos R$ 29 milhões em propinas entre 2010 e 2014 referentes a dois contratos da BR Distribuidora, subsidiária da Petrobrás que, segundo revelaram as investigações da Lava Jato, também teria sido palco de um esquema de corrupção e loteamento de cargos políticos de maneira similar ao que ocorreu na estatal petrolífera.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	ex-presidente	ex-presidente	NOUN	_	Number=Sing	11	nsubj:pass	11:nsubj:pass|20:nsubj	_
+3	Fernando	Fernando	PROPN	_	_	2	nmod	2:nmod	_
+4	Collor	Collor	PROPN	_	_	3	flat:name	3:flat:name	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	Melo	Melo	PROPN	_	_	3	flat:name	3:flat:name	_
+7	(	(	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	PTC-AL	PTC-AL	PROPN	_	_	2	parataxis	2:parataxis	SpaceAfter=No
+9	)	)	PUNCT	_	_	8	punct	8:punct	_
+10	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:pass	11:aux:pass	_
+11	acusado	acusar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+12-13	pela	_	_	_	_	_	_	_	_
+12	por	por	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	Procuradoria-Geral	Procuradoria-Geral	PROPN	_	_	11	obl:agent	11:obl:agent	_
+15-16	da	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	República	República	PROPN	_	_	14	flat:name	14:flat:name	_
+18	de	de	ADP	_	_	20	mark	20:mark	_
+19	ter	ter	AUX	_	VerbForm=Inf	20	aux	20:aux	_
+20	recebido	receber	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	11	xcomp	11:xcomp	_
+21-22	ao	_	_	_	_	_	_	_	_
+21	a	a	ADP	_	ExtPos=ADV	26	advmod	26:advmod	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	fixed	21:fixed	_
+23	menos	menos	NOUN	_	Gender=Masc|Number=Sing	21	fixed	21:fixed	_
+24	R$	R$	SYM	_	_	26	nmod	26:nmod	_
+25	29	29	NUM	_	NumType=Card	26	nummod	26:nummod	_
+26	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	20	obj	20:obj	_
+27	em	em	ADP	_	_	28	case	28:case	_
+28	propinas	propina	NOUN	_	Gender=Fem|Number=Plur	20	obl	20:obl:em	_
+29	entre	entre	ADP	_	_	30	case	30:case	_
+30	2010	2010	NUM	_	NumType=Card	28	nmod	28:nmod:entre	_
+31	e	e	CCONJ	_	_	32	cc	32:cc	_
+32	2014	2014	NUM	_	NumType=Card	30	conj	28:nmod:entre|30:conj:e	_
+33	referentes	referente	ADJ	_	Number=Plur	28	amod	28:amod	_
+34	a	a	ADP	_	_	36	case	36:case	_
+35	dois	dois	NUM	_	Gender=Masc|NumType=Card	36	nummod	36:nummod	_
+36	contratos	contrato	NOUN	_	Gender=Masc|Number=Plur	33	obl	33:obl:a	_
+37-38	da	_	_	_	_	_	_	_	_
+37	de	de	ADP	_	_	39	case	39:case	_
+38	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	39:det	_
+39	BR	BR	PROPN	_	_	36	nmod	36:nmod:de	_
+40	Distribuidora	Distribuidora	PROPN	_	_	39	flat:name	39:flat:name	SpaceAfter=No
+41	,	,	PUNCT	_	_	42	punct	42:punct	_
+42	subsidiária	subsidiária	NOUN	_	Gender=Fem|Number=Sing	39	appos	39:appos	_
+43-44	da	_	_	_	_	_	_	_	_
+43	de	de	ADP	_	_	45	case	45:case	_
+44	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	45	det	45:det	_
+45	Petrobrás	Petrobrás	PROPN	_	_	42	nmod	42:nmod:de	_
+46	que	que	PRON	_	PronType=Rel	60	nsubj	60:nsubj	SpaceAfter=No
+47	,	,	PUNCT	_	_	49	punct	49:punct	_
+48	segundo	segundo	ADP	_	_	49	mark	49:mark	_
+49	revelaram	revelar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	60	advcl	60:advcl:segundo	_
+50	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	51	det	51:det	_
+51	investigações	investigação	NOUN	_	Gender=Fem|Number=Plur	49	nsubj	49:nsubj	_
+52-53	da	_	_	_	_	_	_	_	_
+52	de	de	ADP	_	_	54	case	54:case	_
+53	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	54	det	54:det	_
+54	Lava	Lava	PROPN	_	_	51	nmod	51:nmod:de	_
+55	Jato	Jato	PROPN	_	_	54	flat:name	54:flat:name	SpaceAfter=No
+56	,	,	PUNCT	_	_	49	punct	49:punct	_
+57	também	também	ADV	_	_	60	advmod	60:advmod	_
+58	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	60	aux	60:aux	_
+59	sido	ser	AUX	_	Gender=Masc|Number=Sing|VerbForm=Part	60	cop	60:cop	_
+60	palco	palco	NOUN	_	Gender=Masc|Number=Sing	20	ccomp	20:ccomp	_
+61	de	de	ADP	_	_	63	case	63:case	_
+62	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	63	det	63:det	_
+63	esquema	esquema	NOUN	_	Gender=Masc|Number=Sing	60	nmod	60:nmod:de	_
+64	de	de	ADP	_	_	65	case	65:case|67:case	_
+65	corrupção	corrupção	NOUN	_	Gender=Fem|Number=Sing	63	nmod	63:nmod:de	_
+66	e	e	CCONJ	_	_	67	cc	67:cc	_
+67	loteamento	loteamento	NOUN	_	Gender=Masc|Number=Sing	65	conj	63:nmod:de|65:conj:e	_
+68	de	de	ADP	_	_	69	case	69:case	_
+69	cargos	cargo	NOUN	_	Gender=Masc|Number=Plur	67	nmod	67:nmod:de	_
+70	políticos	político	ADJ	_	Gender=Masc|Number=Plur	69	amod	69:amod	_
+71	de	de	ADP	_	_	72	case	72:case	_
+72	maneira	maneira	NOUN	_	Gender=Fem|Number=Sing	20	obl	20:obl:de	_
+73	similar	similar	ADJ	_	Number=Sing	72	amod	72:amod	_
+74-75	ao	_	_	_	_	_	_	_	_
+74	a	a	ADP	_	_	75	case	75:case	_
+75	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	73	obl	73:obl:a|77:nsubj	_
+76	que	que	PRON	_	PronType=Rel	77	nsubj	75:ref	_
+77	ocorreu	ocorrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	75	acl:relcl	75:acl:relcl	_
+78-79	na	_	_	_	_	_	_	_	_
+78	em	em	ADP	_	_	80	case	80:case	_
+79	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	80	det	80:det	_
+80	estatal	estatal	NOUN	_	Number=Sing	77	obl	77:obl:em	_
+81	petrolífera	petrolífero	ADJ	_	Gender=Fem|Number=Sing	80	amod	80:amod	SpaceAfter=No
+82	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0041
+# text = Agora Collor tem um conjunto pesado de acusações de peculato e lavagem de dinheiro.
+1	Agora	agora	ADV	_	_	3	advmod	3:advmod	_
+2	Collor	Collor	PROPN	_	_	3	nsubj	3:nsubj	_
+3	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	conjunto	conjunto	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	_
+6	pesado	pesado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	5	amod	5:amod	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	acusações	acusação	NOUN	_	Gender=Fem|Number=Plur	5	nmod	5:nmod:de	_
+9	de	de	ADP	_	_	10	case	10:case|12:case	_
+10	peculato	peculato	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:de	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	lavagem	lavagem	NOUN	_	Gender=Fem|Number=Sing	10	conj	8:nmod:de|10:conj:e	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:de	SpaceAfter=No
+15	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0043
+# text = Pode ser condenado a 47 anos de cadeia em regime fechado.
+1	Pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	ser	ser	AUX	_	VerbForm=Inf	3	aux:pass	3:aux:pass	_
+3	condenado	condenar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	1	xcomp	1:xcomp	_
+4	a	a	ADP	_	_	6	case	6:case	_
+5	47	47	NUM	_	NumType=Card	6	nummod	6:nummod	_
+6	anos	ano	NOUN	_	Gender=Masc|Number=Plur	3	obl	3:obl:a	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	cadeia	cadeia	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de	_
+9	em	em	ADP	_	_	10	case	10:case	_
+10	regime	regime	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:em	_
+11	fechado	fechado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	10	amod	10:amod	SpaceAfter=No
+12	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0045
+# text = Como podemos notar a operação Lava Jato está passando a limpo a história do Brasil.
+1	Como	como	SCONJ	_	_	2	mark	2:mark	_
+2	podemos	poder	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	9	advcl	9:advcl:como	_
+3	notar	notar	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	operação	operação	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	9:nsubj	_
+6	Lava	Lava	PROPN	_	_	5	nmod	5:nmod	_
+7	Jato	Jato	PROPN	_	_	6	flat:name	6:flat:name	_
+8	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux	9:aux	_
+9	passando	passar	VERB	_	VerbForm=Ger	0	root	0:root	_
+10	a	a	ADP	_	_	11	case	11:case	_
+11	limpo	limpo	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:a	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	história	história	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+14-15	do	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	Brasil	Brasil	PROPN	_	_	13	nmod	13:nmod:de	SpaceAfter=No
+17	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0047
+# text = Se os políticos não abafarem a operação teremos uma depuração dos processos políticos e um novo Brasil surgindo das cinzas.
+1	Se	se	SCONJ	_	_	5	mark	5:mark	_
+2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	3:det	_
+3	políticos	político	NOUN	_	Gender=Masc|Number=Plur	5	nsubj	5:nsubj	_
+4	não	não	ADV	_	_	5	advmod	5:advmod	_
+5	abafarem	abafar	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	8	advcl	8:advcl:se	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	operação	operação	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+8	teremos	ter	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+9	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	depuração	depuração	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	_
+11-12	dos	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	13:det	_
+13	processos	processo	NOUN	_	Gender=Masc|Number=Plur	10	nmod	10:nmod:de	_
+14	políticos	político	ADJ	_	Gender=Masc|Number=Plur	13	amod	13:amod	_
+15	e	e	CCONJ	_	_	18	cc	18:cc	_
+16	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+17	novo	novo	ADJ	_	Gender=Masc|Number=Sing	18	amod	18:amod	_
+18	Brasil	Brasil	PROPN	_	_	10	conj	8:obj|10:conj:e	_
+19	surgindo	surgir	VERB	_	VerbForm=Ger	18	acl	18:acl	_
+20-21	das	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	22:det	_
+22	cinzas	cinza	NOUN	_	Gender=Fem|Number=Plur	19	obl	19:obl:de	SpaceAfter=No
+23	.	.	PUNCT	_	_	8	punct	8:punct	_

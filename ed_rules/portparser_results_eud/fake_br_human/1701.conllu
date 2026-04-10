@@ -1,0 +1,151 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Marina descobriu a América!
+1	Marina	Marina	PROPN	_	_	2	nsubj	2:nsubj	_
+2	descobriu	descobrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	América	América	PROPN	_	_	2	obj	2:obj	SpaceAfter=No
+5	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Nas próximas eleições, vote em Marina e Rubinho.
+1-2	Nas	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	4	case	4:case	_
+2	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	4:det	_
+3	próximas	próximo	ADJ	_	Gender=Fem|Number=Plur	4	amod	4:amod	_
+4	eleições	eleição	NOUN	_	Gender=Fem|Number=Plur	6	obl	6:obl:em	SpaceAfter=No
+5	,	,	PUNCT	_	_	4	punct	4:punct	_
+6	vote	votar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+7	em	em	ADP	_	_	8	case	8:case|10:case	_
+8	Marina	Marina	PROPN	_	_	6	obl	6:obl:em	_
+9	e	e	CCONJ	_	_	10	cc	10:cc	_
+10	Rubinho	Rubinho	PROPN	_	_	8	conj	6:obl:em|8:conj:e	SpaceAfter=No
+11	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0005
+# text = Marina Silva, como sempre, não deixa de dar pitacos ridículos e oportunistas.
+1	Marina	Marina	PROPN	_	_	8	nsubj	8:nsubj	_
+2	Silva	Silva	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	5	punct	5:punct	_
+4	como	como	ADP	_	_	5	case	5:case	_
+5	sempre	sempre	ADV	_	_	8	advmod	8:advmod	SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	5:punct	_
+7	não	não	ADV	_	_	8	advmod	8:advmod	_
+8	deixa	deixar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+9	de	de	ADP	_	_	10	mark	10:mark	_
+10	dar	dar	VERB	_	VerbForm=Inf	8	xcomp	8:xcomp	_
+11	pitacos	pitaco	NOUN	_	Gender=Masc|Number=Plur	10	obj	10:obj	_
+12	ridículos	ridículo	ADJ	_	Gender=Masc|Number=Plur	11	amod	11:amod	_
+13	e	e	CCONJ	_	_	14	cc	14:cc	_
+14	oportunistas	oportunista	ADJ	_	Number=Plur	12	conj	11:amod|12:conj:e	SpaceAfter=No
+15	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0007
+# text = Através do Twitter, ela expandiu seus neurônios e pensou em algo inédito (ironia): "Será que os massacres nos presídios não deixam evidente que esse é um problema nacional que merece máxima atenção"?
+1	Através	através	ADV	_	_	7	advmod	7:advmod	_
+2-3	do	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	Twitter	Twitter	PROPN	_	_	1	obl	1:obl:de	SpaceAfter=No
+5	,	,	PUNCT	_	_	1	punct	1:punct	_
+6	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	7	nsubj	7:nsubj|11:nsubj	_
+7	expandiu	expandir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	9	det	9:det	_
+9	neurônios	neurônio	NOUN	_	Gender=Masc|Number=Plur	7	obj	7:obj	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	pensou	pensar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	conj	7:conj:e	_
+12	em	em	ADP	_	_	13	case	13:case	_
+13	algo	algo	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	11	obl	11:obl:em	_
+14	inédito	inédito	ADJ	_	Gender=Masc|Number=Sing	13	amod	13:amod	_
+15	(	(	PUNCT	_	_	16	punct	16:punct	SpaceAfter=No
+16	ironia	ironia	NOUN	_	Gender=Fem|Number=Sing	13	parataxis	13:parataxis	SpaceAfter=No
+17	)	)	PUNCT	_	_	16	punct	16:punct	SpaceAfter=No
+18	:	:	PUNCT	_	_	28	punct	28:punct	_
+19	"	"	PUNCT	_	_	28	punct	28:punct	SpaceAfter=No
+20	Será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	28	discourse	28:discourse	_
+21	que	que	SCONJ	_	_	28	discourse	28:discourse	_
+22	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	23:det	_
+23	massacres	massacre	NOUN	_	Gender=Masc|Number=Plur	28	nsubj	28:nsubj	_
+24-25	nos	_	_	_	_	_	_	_	_
+24	em	em	ADP	_	_	26	case	26:case	_
+25	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	26:det	_
+26	presídios	presídio	NOUN	_	Gender=Masc|Number=Plur	23	nmod	23:nmod:em	_
+27	não	não	ADV	_	_	28	advmod	28:advmod	_
+28	deixam	deixar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	parataxis	7:parataxis	_
+29	evidente	evidente	ADJ	_	Number=Sing	28	xcomp	28:xcomp	_
+30	que	que	SCONJ	_	_	34	mark	34:mark	_
+31	esse	esse	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	34	nsubj	34:nsubj	_
+32	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	34	cop	34:cop	_
+33	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	34	det	34:det	_
+34	problema	problema	NOUN	_	Gender=Masc|Number=Sing	29	ccomp	29:ccomp|37:nsubj	_
+35	nacional	nacional	ADJ	_	Number=Sing	34	amod	34:amod	_
+36	que	que	PRON	_	PronType=Rel	37	nsubj	34:ref	_
+37	merece	merecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	34	acl:relcl	34:acl:relcl	_
+38	máxima	máximo	ADJ	_	Gender=Fem|Number=Sing	39	amod	39:amod	_
+39	atenção	atenção	NOUN	_	Gender=Fem|Number=Sing	37	obj	37:obj	SpaceAfter=No
+40	"	"	PUNCT	_	_	28	punct	28:punct	SpaceAfter=No
+41	?	?	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0009
+# text = Marina está com um pequeno probleminha de "delay"... ela descobriu algo que os brasileiros já sabem há mais de 30 anos.
+1	Marina	Marina	PROPN	_	_	6	nsubj	6:nsubj	_
+2	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+3	com	com	ADP	_	_	6	case	6:case	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+5	pequeno	pequeno	ADJ	_	Gender=Masc|Number=Sing	6	amod	6:amod	_
+6	probleminha	probleminha	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	"	"	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+9	delay	delay	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de	SpaceAfter=No
+10	"	"	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+11	...	...	PUNCT	_	_	13	punct	13:punct	_
+12	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	13	nsubj	13:nsubj	_
+13	descobriu	descobrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	parataxis	6:parataxis	_
+14	algo	algo	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	13	obj	13:obj|19:obj	_
+15	que	que	PRON	_	PronType=Rel	19	obj	14:ref	_
+16	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	17:det	_
+17	brasileiros	brasileiro	NOUN	_	Gender=Masc|Number=Plur	19	nsubj	19:nsubj	_
+18	já	já	ADV	_	_	19	advmod	19:advmod	_
+19	sabem	saber	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	acl:relcl	14:acl:relcl	_
+20	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	advcl	19:advcl	_
+21	mais	mais	ADV	_	ExtPos=ADV	23	advmod	23:advmod	_
+22	de	de	ADP	_	_	21	fixed	21:fixed	_
+23	30	30	NUM	_	NumType=Card	24	nummod	24:nummod	_
+24	anos	ano	NOUN	_	Gender=Masc|Number=Plur	20	obj	20:obj	SpaceAfter=No
+25	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0011
+# text = Será que nas próximas eleições teremos uma chapa Marina Silva e Rubinho Barrichello?
+1	Será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	7	discourse	7:discourse	_
+2	que	que	SCONJ	_	_	7	discourse	7:discourse	_
+3-4	nas	_	_	_	_	_	_	_	_
+3	em	em	ADP	_	_	6	case	6:case	_
+4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	6:det	_
+5	próximas	próximo	ADJ	_	Gender=Fem|Number=Plur	6	amod	6:amod	_
+6	eleições	eleição	NOUN	_	Gender=Fem|Number=Plur	7	obl	7:obl:em	_
+7	teremos	ter	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+8	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	chapa	chapa	NOUN	_	Number=Sing	7	obj	7:obj	_
+10	Marina	Marina	PROPN	_	_	9	nmod	9:nmod	_
+11	Silva	Silva	PROPN	_	_	10	flat:name	10:flat:name	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	Rubinho	Rubinho	PROPN	_	_	10	conj	9:nmod|10:conj:e	_
+14	Barrichello	Barrichello	PROPN	_	_	13	flat:name	13:flat:name	SpaceAfter=No
+15	?	?	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0012
+# text = ps: Foi mal Rubinho!
+1	ps	ps	NOUN	_	_	5	dep	5:dep	SpaceAfter=No
+2	:	:	PUNCT	_	_	1	punct	1:punct	_
+3	Foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	cop	5:cop	_
+4	mal	mal	ADV	_	_	5	advmod	5:advmod	_
+5	Rubinho	Rubinho	PROPN	_	_	0	root	0:root	SpaceAfter=No
+6	!	!	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0014
+# text = A gente te adora!
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	gente	gente	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+3	te	te	PRON	_	Case=Acc|Number=Sing|Person=2|PronType=Prs	4	obj	4:obj	_
+4	adora	adorar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+5	!	!	PUNCT	_	_	4	punct	4:punct	_

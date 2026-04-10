@@ -1,0 +1,343 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Urgente: João Doria ordena ação brutal da polícia para impor quarentena em São Paulo!
+1	Urgente	urgente	ADJ	_	Number=Sing	5	dep	5:dep	SpaceAfter=No
+2	:	:	PUNCT	_	_	1	punct	1:punct	_
+3	João	João	PROPN	_	_	5	nsubj	5:nsubj	_
+4	Doria	Doria	PROPN	_	_	3	flat:name	3:flat:name	_
+5	ordena	ordenar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	ação	ação	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+7	brutal	brutal	ADJ	_	Number=Sing	6	amod	6:amod	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	polícia	polícia	NOUN	_	Number=Sing	6	nmod	6:nmod:de	_
+11	para	para	ADP	_	_	12	mark	12:mark	_
+12	impor	impor	VERB	_	VerbForm=Inf	5	advcl	5:advcl:para	_
+13	quarentena	quarentena	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+14	em	em	ADP	_	_	15	case	15:case	_
+15	São	São	PROPN	_	_	12	obl	12:obl:em	_
+16	Paulo	Paulo	PROPN	_	_	15	flat:name	15:flat:name	SpaceAfter=No
+17	!	!	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0003
+# text = Circulam nas redes sociais dois vídeos chocantes que mostram policiais agindo com extrema violência contra cidadãos.
+1	Circulam	circular	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2-3	nas	_	_	_	_	_	_	_	_
+2	em	em	ADP	_	_	4	case	4:case	_
+3	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	4:det	_
+4	redes	rede	NOUN	_	Gender=Fem|Number=Plur	1	obl	1:obl:em	_
+5	sociais	social	ADJ	_	Number=Plur	4	amod	4:amod	_
+6	dois	dois	NUM	_	Gender=Masc|NumType=Card	7	nummod	7:nummod	_
+7	vídeos	vídeo	NOUN	_	Gender=Masc|Number=Plur	1	nsubj	1:nsubj|10:nsubj	_
+8	chocantes	chocante	ADJ	_	Number=Plur	7	amod	7:amod	_
+9	que	que	PRON	_	PronType=Rel	10	nsubj	7:ref	_
+10	mostram	mostrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	7:acl:relcl	_
+11	policiais	policial	NOUN	_	Number=Plur	10	obj	10:obj	_
+12	agindo	agir	VERB	_	VerbForm=Ger	11	acl	11:acl	_
+13	com	com	ADP	_	_	15	case	15:case	_
+14	extrema	extremo	ADJ	_	Gender=Fem|Number=Sing	15	amod	15:amod	_
+15	violência	violência	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl:com	_
+16	contra	contra	ADP	_	_	17	case	17:case	_
+17	cidadãos	cidadão	NOUN	_	Gender=Masc|Number=Plur	12	obl	12:obl:contra	SpaceAfter=No
+18	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0005
+# text = Alega-se que essas ações foram ordenadas diretamente pelo governador de São Paulo, João Doria, para garantir o isolamento social de forma truculenta em meio à pandemia de coronavírus.
+1-2	Alega-se	_	_	_	_	_	_	_	_
+1	Alega	alegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	1	expl:impers	1:expl:impers	_
+3	que	que	SCONJ	_	_	7	mark	7:mark	_
+4	essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	5	det	5:det	_
+5	ações	ação	NOUN	_	Gender=Fem|Number=Plur	7	nsubj:pass	7:nsubj:pass	_
+6	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	7	aux:pass	7:aux:pass	_
+7	ordenadas	ordenar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	1	ccomp	1:ccomp	_
+8	diretamente	diretamente	ADV	_	_	7	advmod	7:advmod	_
+9-10	pelo	_	_	_	_	_	_	_	_
+9	por	por	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	governador	governador	NOUN	_	Gender=Masc|Number=Sing	7	obl:agent	7:obl:agent	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	São	São	PROPN	_	_	11	nmod	11:nmod:de	_
+14	Paulo	Paulo	PROPN	_	_	13	flat:name	13:flat:name	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	João	João	PROPN	_	_	11	appos	11:appos	_
+17	Doria	Doria	PROPN	_	_	16	flat:name	16:flat:name	SpaceAfter=No
+18	,	,	PUNCT	_	_	16	punct	16:punct	_
+19	para	para	ADP	_	_	20	mark	20:mark	_
+20	garantir	garantir	VERB	_	VerbForm=Inf	7	advcl	7:advcl:para	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	isolamento	isolamento	NOUN	_	Gender=Masc|Number=Sing	20	obj	20:obj	_
+23	social	social	ADJ	_	Number=Sing	22	amod	22:amod	_
+24	de	de	ADP	_	_	25	case	25:case	_
+25	forma	forma	NOUN	_	Gender=Fem|Number=Sing	20	obl	20:obl:de	_
+26	truculenta	truculento	ADJ	_	Gender=Fem|Number=Sing	25	amod	25:amod	_
+27	em	em	ADP	_	ExtPos=ADP	31	case	31:case	_
+28	meio	meio	NOUN	_	Gender=Masc|Number=Sing	27	fixed	27:fixed	_
+29-30	à	_	_	_	_	_	_	_	_
+29	a	a	ADP	_	_	27	fixed	27:fixed	_
+30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+31	pandemia	pandemia	NOUN	_	Gender=Fem|Number=Sing	20	obl	20:obl:em_meio_a	_
+32	de	de	ADP	_	_	33	case	33:case	_
+33	coronavírus	coronavírus	NOUN	_	Gender=Masc	31	nmod	31:nmod:de	SpaceAfter=No
+34	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0007
+# text = As imagens são recentes e demonstram um uso desproporcional da força, gerando revolta entre os internautas.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	imagens	imagem	NOUN	_	Gender=Fem|Number=Plur	4	nsubj	4:nsubj|6:nsubj	_
+3	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+4	recentes	recente	ADJ	_	Number=Plur	0	root	0:root	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	demonstram	demonstrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	conj	4:conj:e	_
+7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	uso	uso	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+9	desproporcional	desproporcional	ADJ	_	Number=Sing	8	amod	8:amod	_
+10-11	da	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	força	força	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	gerando	gerar	VERB	_	VerbForm=Ger	6	advcl	6:advcl	_
+15	revolta	revolto	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	_
+16	entre	entre	ADP	_	_	18	case	18:case	_
+17	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	18:det	_
+18	internautas	internauta	NOUN	_	Number=Plur	14	obl	14:obl:entre	SpaceAfter=No
+19	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0009
+# text = No primeiro vídeo, gravado na Rua Itariri, no Canindé, zona norte da capital, um homem é brutalmente imobilizado por policiais, enquanto a legenda afirma que ele foi agredido apenas por questionar a necessidade do lockdown.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	4	case	4:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+3	primeiro	primeiro	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	4	amod	4:amod	_
+4	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	26	obl	26:obl:em	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	gravado	gravar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	4	acl	4:acl	_
+7-8	na	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	Rua	Rua	PROPN	_	_	6	obl	6:obl:em	_
+10	Itariri	Itariri	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+11	,	,	PUNCT	_	_	14	punct	14:punct	_
+12-13	no	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	Canindé	Canindé	PROPN	_	_	9	nmod	9:nmod:em	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	zona	zona	NOUN	_	Gender=Fem|Number=Sing	14	appos	14:appos	_
+17	norte	norte	ADJ	_	Number=Sing	16	amod	16:amod	_
+18-19	da	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	capital	capital	NOUN	_	Number=Sing	16	nmod	16:nmod:de	SpaceAfter=No
+21	,	,	PUNCT	_	_	6	punct	6:punct	_
+22	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	homem	homem	NOUN	_	Gender=Masc|Number=Sing	26	nsubj:pass	26:nsubj:pass	_
+24	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	aux:pass	26:aux:pass	_
+25	brutalmente	brutalmente	ADV	_	_	26	advmod	26:advmod	_
+26	imobilizado	imobilizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+27	por	por	ADP	_	_	28	case	28:case	_
+28	policiais	policial	NOUN	_	Number=Plur	26	obl:agent	26:obl:agent	SpaceAfter=No
+29	,	,	PUNCT	_	_	33	punct	33:punct	_
+30	enquanto	enquanto	SCONJ	_	_	33	mark	33:mark	_
+31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	32:det	_
+32	legenda	legenda	NOUN	_	Gender=Fem|Number=Sing	33	nsubj	33:nsubj	_
+33	afirma	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	advcl	26:advcl:enquanto	_
+34	que	que	SCONJ	_	_	37	mark	37:mark	_
+35	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	37	nsubj:pass	37:nsubj:pass	_
+36	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	37	aux:pass	37:aux:pass	_
+37	agredido	agredir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	33	ccomp	33:ccomp	_
+38	apenas	apenas	ADV	_	_	40	advmod	40:advmod	_
+39	por	por	ADP	_	_	40	mark	40:mark	_
+40	questionar	questionar	VERB	_	VerbForm=Inf	37	advcl	37:advcl:por	_
+41	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	42:det	_
+42	necessidade	necessidade	NOUN	_	Gender=Fem|Number=Sing	40	obj	40:obj	_
+43-44	do	_	_	_	_	_	_	_	_
+43	de	de	ADP	_	_	45	case	45:case	_
+44	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	45:det	_
+45	lockdown	lockdown	NOUN	_	Gender=Masc|Number=Sing	42	nmod	42:nmod:de	SpaceAfter=No
+46	.	.	PUNCT	_	_	26	punct	26:punct	_
+
+# sent_id = S0011
+# text = A Secretaria da Segurança Pública não se pronunciou sobre este caso específico, aumentando as suspeitas de uma operação sob comando direto de Doria.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Secretaria	Secretaria	PROPN	_	_	9	nsubj	9:nsubj	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	Segurança	Segurança	PROPN	_	_	2	flat:name	2:flat:name	_
+6	Pública	Pública	PROPN	_	_	2	flat:name	2:flat:name	_
+7	não	não	ADV	_	_	9	advmod	9:advmod	_
+8	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	9	expl	9:expl	_
+9	pronunciou	pronunciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	sobre	sobre	ADP	_	_	12	case	12:case	_
+11	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	12	det	12:det	_
+12	caso	caso	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:sobre	_
+13	específico	específico	ADJ	_	Gender=Masc|Number=Sing	12	amod	12:amod	SpaceAfter=No
+14	,	,	PUNCT	_	_	15	punct	15:punct	_
+15	aumentando	aumentar	VERB	_	VerbForm=Ger	9	advcl	9:advcl	_
+16	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	17:det	_
+17	suspeitas	suspeito	NOUN	_	Gender=Fem|Number=Plur	15	obj	15:obj	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	operação	operação	NOUN	_	Gender=Fem|Number=Sing	17	nmod	17:nmod:de	_
+21	sob	sob	ADP	_	_	22	case	22:case	_
+22	comando	comando	NOUN	_	Gender=Masc|Number=Sing	20	nmod	20:nmod:sob	_
+23	direto	direto	ADJ	_	Gender=Masc|Number=Sing	22	amod	22:amod	_
+24	de	de	ADP	_	_	25	case	25:case	_
+25	Doria	Doria	PROPN	_	_	22	nmod	22:nmod:de	SpaceAfter=No
+26	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0013
+# text = Já o segundo vídeo, que teria sido gravado em Mogi das Cruzes, mostra um homem sendo agredido e preso em sua própria residência após uma suposta denúncia de violência doméstica.
+1	Já	já	CCONJ	_	_	16	cc	16:cc	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+3	segundo	segundo	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	4	amod	4:amod	_
+4	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	16	nsubj	9:nsubj:pass|16:nsubj	SpaceAfter=No
+5	,	,	PUNCT	_	_	9	punct	9:punct	_
+6	que	que	PRON	_	PronType=Rel	9	nsubj:pass	4:ref	_
+7	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	9	aux	9:aux	_
+8	sido	ser	AUX	_	Gender=Masc|Number=Sing|VerbForm=Part	9	aux:pass	9:aux:pass	_
+9	gravado	gravar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	4	acl:relcl	4:acl:relcl	_
+10	em	em	ADP	_	_	11	case	11:case	_
+11	Mogi	Mogi	PROPN	_	_	9	obl	9:obl:em	_
+12-13	das	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	14:det	_
+14	Cruzes	Cruzes	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+15	,	,	PUNCT	_	_	9	punct	9:punct	_
+16	mostra	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+17	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	homem	homem	NOUN	_	Gender=Masc|Number=Sing	16	obj	16:obj	_
+19	sendo	ser	AUX	_	VerbForm=Ger	20	aux:pass	20:aux:pass|22:aux:pass	_
+20	agredido	agredir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	18	acl	18:acl	_
+21	e	e	CCONJ	_	_	22	cc	22:cc	_
+22	preso	prender	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	20	conj	18:acl|20:conj:e	_
+23	em	em	ADP	_	_	26	case	26:case	_
+24	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	26	det	26:det	_
+25	própria	próprio	ADJ	_	Gender=Fem|Number=Sing	26	amod	26:amod	_
+26	residência	residência	NOUN	_	Gender=Fem|Number=Sing	20	obl	20:obl:em|22:obl:em	_
+27	após	após	ADP	_	_	30	case	30:case	_
+28	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+29	suposta	suposto	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	30	amod	30:amod	_
+30	denúncia	denúncia	NOUN	_	Gender=Fem|Number=Sing	20	obl	20:obl:após|22:obl:após	_
+31	de	de	ADP	_	_	32	case	32:case	_
+32	violência	violência	NOUN	_	Gender=Fem|Number=Sing	30	nmod	30:nmod:de	_
+33	doméstica	doméstico	ADJ	_	Gender=Fem|Number=Sing	32	amod	32:amod	SpaceAfter=No
+34	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0015
+# text = Internautas alegam que a ação também faz parte de uma campanha mais ampla para reprimir qualquer desobediência às medidas de quarentena.
+1	Internautas	internauta	NOUN	_	Number=Plur	2	nsubj	2:nsubj	_
+2	alegam	alegar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	7	mark	7:mark	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	ação	ação	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj	_
+6	também	também	ADV	_	_	7	advmod	7:advmod	_
+7	faz	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	2:ccomp	_
+8	parte	parte	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	campanha	campanha	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:de	_
+12	mais	mais	ADV	_	_	13	advmod	13:advmod	_
+13	ampla	amplo	ADJ	_	Gender=Fem|Number=Sing	11	amod	11:amod	_
+14	para	para	ADP	_	_	15	mark	15:mark	_
+15	reprimir	reprimir	VERB	_	VerbForm=Inf	11	acl	11:acl:para	_
+16	qualquer	qualquer	DET	_	Number=Sing|PronType=Ind	17	det	17:det	_
+17	desobediência	desobediência	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	_
+18-19	às	_	_	_	_	_	_	_	_
+18	a	a	ADP	_	_	20	case	20:case	_
+19	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	20:det	_
+20	medidas	medida	NOUN	_	Gender=Fem|Number=Plur	17	nmod	17:nmod:a	_
+21	de	de	ADP	_	_	22	case	22:case	_
+22	quarentena	quarentena	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:de	SpaceAfter=No
+23	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0017
+# text = A Polícia Militar não negou as acusações e o governador, que inicialmente prometeu prisões para os infratores, agora enfrenta críticas por supostamente exceder os limites de seu poder.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Polícia	Polícia	PROPN	_	_	5	nsubj	5:nsubj	_
+3	Militar	Militar	PROPN	_	_	2	flat:name	2:flat:name	_
+4	não	não	ADV	_	_	5	advmod	5:advmod	_
+5	negou	negar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	7:det	_
+7	acusações	acusação	NOUN	_	Gender=Fem|Number=Plur	5	obj	5:obj	_
+8	e	e	CCONJ	_	_	21	cc	21:cc	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	governador	governador	NOUN	_	Gender=Masc|Number=Sing	21	nsubj	14:nsubj|21:nsubj	SpaceAfter=No
+11	,	,	PUNCT	_	_	14	punct	14:punct	_
+12	que	que	PRON	_	PronType=Rel	14	nsubj	10:ref	_
+13	inicialmente	inicialmente	ADV	_	_	14	advmod	14:advmod	_
+14	prometeu	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	acl:relcl	10:acl:relcl	_
+15	prisões	prisão	NOUN	_	Gender=Fem|Number=Plur	14	obj	14:obj	_
+16	para	para	ADP	_	_	18	case	18:case	_
+17	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	18:det	_
+18	infratores	infrator	NOUN	_	Gender=Masc|Number=Plur	14	obl	14:obl:para	SpaceAfter=No
+19	,	,	PUNCT	_	_	14	punct	14:punct	_
+20	agora	agora	ADV	_	_	21	advmod	21:advmod	_
+21	enfrenta	enfrentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	5:conj:e	_
+22	críticas	crítico	NOUN	_	Gender=Fem|Number=Plur	21	obj	21:obj	_
+23	por	por	ADP	_	_	25	mark	25:mark	_
+24	supostamente	supostamente	ADV	_	_	25	advmod	25:advmod	_
+25	exceder	exceder	VERB	_	VerbForm=Inf	21	advcl	21:advcl:por	_
+26	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	27:det	_
+27	limites	limite	NOUN	_	Gender=Masc|Number=Plur	25	obj	25:obj	_
+28	de	de	ADP	_	_	30	case	30:case	_
+29	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	30	det	30:det	_
+30	poder	poder	NOUN	_	Gender=Masc|Number=Sing	27	nmod	27:nmod:de	SpaceAfter=No
+31	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0019
+# text = Doria, que antes adotava um discurso de flexibilização, agora é acusado de uma guinada autoritária, impondo um regime de medo para forçar a adesão ao isolamento social.
+1	Doria	Doria	PROPN	_	_	13	nsubj:pass	5:nsubj|13:nsubj:pass	SpaceAfter=No
+2	,	,	PUNCT	_	_	5	punct	5:punct	_
+3	que	que	PRON	_	PronType=Rel	5	nsubj	1:ref	_
+4	antes	antes	ADV	_	_	5	advmod	5:advmod	_
+5	adotava	adotar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	discurso	discurso	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	flexibilização	flexibilização	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:de	SpaceAfter=No
+10	,	,	PUNCT	_	_	5	punct	5:punct	_
+11	agora	agora	ADV	_	_	13	advmod	13:advmod	_
+12	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux:pass	13:aux:pass	_
+13	acusado	acusar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	guinada	guinada	NOUN	_	Gender=Fem|Number=Sing	13	obl	13:obl:de	_
+17	autoritária	autoritário	ADJ	_	Gender=Fem|Number=Sing	16	amod	16:amod	SpaceAfter=No
+18	,	,	PUNCT	_	_	19	punct	19:punct	_
+19	impondo	impor	VERB	_	VerbForm=Ger	13	advcl	13:advcl	_
+20	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	regime	regime	NOUN	_	Gender=Masc|Number=Sing	19	obj	19:obj	_
+22	de	de	ADP	_	_	23	case	23:case	_
+23	medo	medo	NOUN	_	Gender=Masc|Number=Sing	21	nmod	21:nmod:de	_
+24	para	para	ADP	_	_	25	mark	25:mark	_
+25	forçar	forçar	VERB	_	VerbForm=Inf	19	advcl	19:advcl:para	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	adesão	adesão	NOUN	_	Gender=Fem|Number=Sing	25	obj	25:obj	_
+28-29	ao	_	_	_	_	_	_	_	_
+28	a	a	ADP	_	_	30	case	30:case	_
+29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	30:det	_
+30	isolamento	isolamento	NOUN	_	Gender=Masc|Number=Sing	27	nmod	27:nmod:a	_
+31	social	social	ADJ	_	Number=Sing	30	amod	30:amod	SpaceAfter=No
+32	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0021
+# text = Internautas clamam por justiça e por uma investigação independente para apurar essas graves denúncias.
+1	Internautas	internauta	NOUN	_	Number=Plur	2	nsubj	2:nsubj	_
+2	clamam	clamar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	por	por	ADP	_	_	4	case	4:case	_
+4	justiça	justiça	NOUN	_	Gender=Fem|Number=Sing	2	obl	2:obl:por	_
+5	e	e	CCONJ	_	_	8	cc	8:cc	_
+6	por	por	ADP	_	_	8	case	8:case	_
+7	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	investigação	investigação	NOUN	_	Gender=Fem|Number=Sing	4	conj	2:obl:por|4:conj:e	_
+9	independente	independente	ADJ	_	Number=Sing	8	amod	8:amod	_
+10	para	para	ADP	_	_	11	mark	11:mark	_
+11	apurar	apurar	VERB	_	VerbForm=Inf	2	advcl	2:advcl:para	_
+12	essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	14	det	14:det	_
+13	graves	grave	ADJ	_	Number=Plur	14	amod	14:amod	_
+14	denúncias	denúncia	NOUN	_	Gender=Fem|Number=Plur	11	obj	11:obj	SpaceAfter=No
+15	.	.	PUNCT	_	_	2	punct	2:punct	_

@@ -1,0 +1,126 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Aconteceu de novo!
+1	Aconteceu	acontecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	de	de	ADP	_	ExtPos=ADV	1	advmod	1:advmod	_
+3	novo	novo	ADJ	_	Gender=Masc|Number=Sing	2	fixed	2:fixed	SpaceAfter=No
+4	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Sérgio Moro é aclamado em teatro lotado.
+1	Sérgio	Sérgio	PROPN	_	_	4	nsubj:pass	4:nsubj:pass	_
+2	Moro	Moro	PROPN	_	_	1	flat:name	1:flat:name	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	aclamado	aclamar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5	em	em	ADP	_	_	6	case	6:case	_
+6	teatro	teatro	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:em	_
+7	lotado	lotado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	6	amod	6:amod	SpaceAfter=No
+8	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0005
+# text = Sérgio Moro, o juiz responsável pela Operação Lava Jato, foi ovacionado ontem (26) durante o show do cantor Fagner.
+1	Sérgio	Sérgio	PROPN	_	_	14	nsubj:pass	14:nsubj:pass	_
+2	Moro	Moro	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	5	punct	5:punct	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	juiz	juiz	NOUN	_	Gender=Masc|Number=Sing	1	appos	1:appos	_
+6	responsável	responsável	ADJ	_	Number=Sing	5	amod	5:amod	_
+7-8	pela	_	_	_	_	_	_	_	_
+7	por	por	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	Operação	Operação	PROPN	_	_	6	obl	6:obl:por	_
+10	Lava	Lava	PROPN	_	_	9	flat:name	9:flat:name	_
+11	Jato	Jato	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+12	,	,	PUNCT	_	_	5	punct	5:punct	_
+13	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	aux:pass	14:aux:pass	_
+14	ovacionado	ovacionar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+15	ontem	ontem	ADV	_	_	14	advmod	14:advmod	_
+16	(	(	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+17	26	26	NUM	_	NumType=Card	15	appos	15:appos	SpaceAfter=No
+18	)	)	PUNCT	_	_	17	punct	17:punct	_
+19	durante	durante	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	show	show	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:durante	_
+22-23	do	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	cantor	cantor	NOUN	_	Gender=Masc|Number=Sing	21	nmod	21:nmod:de	_
+25	Fagner	Fagner	PROPN	_	_	24	nmod	24:nmod	SpaceAfter=No
+26	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0007
+# text = Não foi a primeira vez que isso aconteceu.
+1	Não	não	ADV	_	_	5	advmod	5:advmod	_
+2	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	cop	5:cop	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+4	primeira	primeiro	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	5	amod	5:amod	_
+5	vez	vez	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root|8:obl	_
+6	que	que	PRON	_	PronType=Rel	8	obl	5:ref	_
+7	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	8	nsubj	8:nsubj	_
+8	aconteceu	acontecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	acl:relcl	5:acl:relcl	SpaceAfter=No
+9	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0009
+# text = O cantor Raimundo Fagner fez um agradecimento ao juiz e o reverenciou.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	cantor	cantor	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj|13:nsubj	_
+3	Raimundo	Raimundo	PROPN	_	_	2	nmod	2:nmod	_
+4	Fagner	Fagner	PROPN	_	_	3	flat:name	3:flat:name	_
+5	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	agradecimento	agradecimento	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+8-9	ao	_	_	_	_	_	_	_	_
+8	a	a	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	juiz	juiz	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:a	_
+11	e	e	CCONJ	_	_	13	cc	13:cc	_
+12	o	o	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	obj	13:obj	_
+13	reverenciou	reverenciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	conj	5:conj:e	SpaceAfter=No
+14	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0011
+# text = O público foi ao delírio e começou a aplaudir Sérgio Moro.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	público	público	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj|8:nsubj|10:nsubj	_
+3	foi	ir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4-5	ao	_	_	_	_	_	_	_	_
+4	a	a	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	delírio	delírio	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:a	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	começou	começar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	3:conj:e	_
+9	a	a	ADP	_	_	10	mark	10:mark	_
+10	aplaudir	aplaudir	VERB	_	VerbForm=Inf	8	xcomp	8:xcomp	_
+11	Sérgio	Sérgio	PROPN	_	_	10	obj	10:obj	_
+12	Moro	Moro	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+13	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0013
+# text = O show aconteceu no Teatro Guaíra, em Curitiba.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	show	show	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	aconteceu	acontecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4-5	no	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	Teatro	Teatro	PROPN	_	_	3	obl	3:obl:em	_
+7	Guaíra	Guaíra	PROPN	_	_	6	flat:name	6:flat:name	SpaceAfter=No
+8	,	,	PUNCT	_	_	10	punct	10:punct	_
+9	em	em	ADP	_	_	10	case	10:case	_
+10	Curitiba	Curitiba	PROPN	_	_	3	obl	3:obl:em	SpaceAfter=No
+11	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0015
+# text = Você já viu um político ser ovacionado dessa forma?
+1	Você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	3	nsubj	3:nsubj	_
+2	já	já	ADV	_	_	3	advmod	3:advmod	_
+3	viu	ver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	político	político	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj|7:nsubj:pass	_
+6	ser	ser	AUX	_	Number=Sing|Person=3|VerbForm=Inf	7	aux:pass	7:aux:pass	_
+7	ovacionado	ovacionar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	xcomp	3:xcomp	_
+8-9	dessa	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	10	det	10:det	_
+10	forma	forma	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:de	SpaceAfter=No
+11	?	?	PUNCT	_	_	3	punct	3:punct	_

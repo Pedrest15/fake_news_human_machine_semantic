@@ -1,0 +1,156 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = A vida de um juiz do Supremo na Suécia: sem foro privilegiado, sem imunidade e sem auxílios.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	vida	vida	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	juiz	juiz	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	_
+6-7	do	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	Supremo	Supremo	PROPN	_	_	5	nmod	5:nmod:de	_
+9-10	na	_	_	_	_	_	_	_	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	Suécia	Suécia	PROPN	_	_	5	nmod	5:nmod:em	SpaceAfter=No
+12	:	:	PUNCT	_	_	14	punct	14:punct	_
+13	sem	sem	ADP	_	_	14	case	14:case	_
+14	foro	foro	NOUN	_	Gender=Masc|Number=Sing	2	parataxis	2:parataxis	_
+15	privilegiado	privilegiado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	14	amod	14:amod	SpaceAfter=No
+16	,	,	PUNCT	_	_	18	punct	18:punct	_
+17	sem	sem	ADP	_	_	18	case	18:case	_
+18	imunidade	imunidade	NOUN	_	Gender=Fem|Number=Sing	14	conj	2:parataxis|14:conj:e	_
+19	e	e	CCONJ	_	_	21	cc	21:cc	_
+20	sem	sem	ADP	_	_	21	case	21:case	_
+21	auxílios	auxílio	NOUN	_	Gender=Masc|Number=Plur	14	conj	2:parataxis|14:conj:e	SpaceAfter=No
+22	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Assim como os políticos, um juiz do tribunal superior da Suécia (equivalente ao nosso STF) não tem imunidade nem foro privilegiado e pode ser processado como qualquer cidadão.
+1	Assim	assim	ADV	_	ExtPos=SCONJ	4	mark	4:mark	_
+2	como	como	SCONJ	_	_	1	fixed	1:fixed	_
+3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	4:det	_
+4	políticos	político	NOUN	_	Gender=Masc|Number=Plur	23	advcl	23:advcl:assim_como|29:advcl:assim_como	SpaceAfter=No
+5	,	,	PUNCT	_	_	4	punct	4:punct	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	juiz	juiz	NOUN	_	Gender=Masc|Number=Sing	23	nsubj	23:nsubj|29:nsubj|31:nsubj:pass	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	tribunal	tribunal	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	_
+11	superior	superior	ADJ	_	Number=Sing	10	amod	10:amod	_
+12-13	da	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	Suécia	Suécia	PROPN	_	_	10	nmod	10:nmod:de	_
+15	(	(	PUNCT	_	_	16	punct	16:punct	SpaceAfter=No
+16	equivalente	equivalente	ADJ	_	Number=Sing	10	amod	10:amod	_
+17-18	ao	_	_	_	_	_	_	_	_
+17	a	a	ADP	_	_	20	case	20:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+19	nosso	nosso	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	20	det	20:det	_
+20	STF	STF	PROPN	_	_	16	obl	16:obl:a	SpaceAfter=No
+21	)	)	PUNCT	_	_	16	punct	16:punct	_
+22	não	não	ADV	_	_	23	advmod	23:advmod	_
+23	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+24	imunidade	imunidade	NOUN	_	Gender=Fem|Number=Sing	23	obj	23:obj	_
+25	nem	nem	CCONJ	_	_	26	cc	26:cc	_
+26	foro	foro	NOUN	_	Gender=Masc|Number=Sing	24	conj	23:obj|24:conj:nem	_
+27	privilegiado	privilegiado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	26	amod	26:amod	_
+28	e	e	CCONJ	_	_	29	cc	29:cc	_
+29	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	conj	23:conj:e	_
+30	ser	ser	AUX	_	VerbForm=Inf	31	aux:pass	31:aux:pass	_
+31	processado	processar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	29	xcomp	29:xcomp	_
+32	como	como	ADP	_	_	34	case	34:case	_
+33	qualquer	qualquer	DET	_	Number=Sing|PronType=Ind	34	det	34:det	_
+34	cidadão	cidadão	NOUN	_	Gender=Masc|Number=Sing	31	obl	31:obl:como	SpaceAfter=No
+35	.	.	PUNCT	_	_	23	punct	23:punct	_
+
+# sent_id = S0005
+# text = Um juiz do Supremo na Suécia pedala até a estação ferroviária e toma o trem para chegar à Corte, em Estocolmo.
+1	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	juiz	juiz	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	9:nsubj|15:nsubj	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	Supremo	Supremo	PROPN	_	_	2	nmod	2:nmod:de	_
+6-7	na	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	Suécia	Suécia	PROPN	_	_	2	nmod	2:nmod:em	_
+9	pedala	pedalar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+10	até	até	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	estação	estação	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:até	_
+13	ferroviária	ferroviário	ADJ	_	Gender=Fem|Number=Sing	12	amod	12:amod	_
+14	e	e	CCONJ	_	_	15	cc	15:cc	_
+15	toma	tomar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	conj	9:conj:e	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	trem	trem	NOUN	_	Gender=Masc|Number=Sing	15	obj	15:obj	_
+18	para	para	ADP	_	_	19	mark	19:mark	_
+19	chegar	chegar	VERB	_	VerbForm=Inf	15	advcl	15:advcl:para	_
+20-21	à	_	_	_	_	_	_	_	_
+20	a	a	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	Corte	Corte	PROPN	_	_	19	obl	19:obl:a	SpaceAfter=No
+23	,	,	PUNCT	_	_	25	punct	25:punct	_
+24	em	em	ADP	_	_	25	case	25:case	_
+25	Estocolmo	Estocolmo	PROPN	_	_	19	obl	19:obl:em	SpaceAfter=No
+26	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0007
+# text = Ele não mora em apartamento funcional, não recebe auxílio-moradia e nem auxílio-saúde.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	3:nsubj|9:nsubj	_
+2	não	não	ADV	_	_	3	advmod	3:advmod	_
+3	mora	morar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	em	em	ADP	_	_	5	case	5:case	_
+5	apartamento	apartamento	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:em	_
+6	funcional	funcional	ADJ	_	Number=Sing	5	amod	5:amod	SpaceAfter=No
+7	,	,	PUNCT	_	_	9	punct	9:punct	_
+8	não	não	ADV	_	_	9	advmod	9:advmod	_
+9	recebe	receber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	3:conj	_
+10	auxílio-moradia	auxílio-moradia	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+11	e	e	CCONJ	_	_	13	cc	13:cc	_
+12	nem	nem	CCONJ	_	_	13	cc	13:cc	_
+13	auxílio-saúde	auxílio-saúde	NOUN	_	Gender=Fem|Number=Sing	10	conj	9:obj|10:conj:e_nem	SpaceAfter=No
+14	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0009
+# text = Não goza de imunidades.
+1	Não	não	ADV	_	_	2	advmod	2:advmod	_
+2	goza	gozar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	imunidades	imunidade	NOUN	_	Gender=Fem|Number=Plur	2	obl	2:obl:de	SpaceAfter=No
+5	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0011
+# text = Não tem foro privilegiado.
+1	Não	não	ADV	_	_	2	advmod	2:advmod	_
+2	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	foro	foro	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+4	privilegiado	privilegiado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	3	amod	3:amod	SpaceAfter=No
+5	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0013
+# text = Ganha entre R$ 12 mil e R$ 25 mil por mês e é proibido de aceitar viagens e presentes.
+1	Ganha	ganhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	entre	entre	ADP	_	_	3	case	3:case	_
+3	R$	R$	SYM	_	_	1	obl	1:obl:entre	_
+4	12	12	NUM	_	NumType=Card	3	nummod	3:nummod	_
+5	mil	mil	NUM	_	NumType=Card	4	flat	4:flat	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	R$	R$	SYM	_	_	3	conj	1:obl:entre|3:conj:e	_
+8	25	25	NUM	_	NumType=Card	7	nummod	7:nummod	_
+9	mil	mil	NUM	_	NumType=Card	8	flat	8:flat	_
+10	por	por	ADP	_	_	11	case	11:case	_
+11	mês	mês	NOUN	_	Gender=Masc|Number=Sing	1	obl	1:obl:por	_
+12	e	e	CCONJ	_	_	14	cc	14:cc	_
+13	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux:pass	14:aux:pass	_
+14	proibido	proibir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	1	conj	1:conj:e	_
+15	de	de	ADP	_	_	16	mark	16:mark	_
+16	aceitar	aceitar	VERB	_	VerbForm=Inf	14	xcomp	14:xcomp	_
+17	viagens	viagem	NOUN	_	Gender=Fem|Number=Plur	16	obj	16:obj	_
+18	e	e	CCONJ	_	_	19	cc	19:cc	_
+19	presentes	presente	NOUN	_	Gender=Masc|Number=Plur	17	conj	16:obj|17:conj:e	SpaceAfter=No
+20	.	.	PUNCT	_	_	1	punct	1:punct	_

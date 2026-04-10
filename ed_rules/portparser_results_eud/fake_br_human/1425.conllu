@@ -1,0 +1,78 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Deputados trocam elogios durante comissão: "Caloteiro...vagabundo..." Assista o vídeo.
+1	Deputados	deputado	NOUN	_	Gender=Masc|Number=Plur	2	nsubj	2:nsubj	_
+2	trocam	trocar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	elogios	elogio	NOUN	_	Gender=Masc|Number=Plur	2	obj	2:obj	_
+4	durante	durante	ADP	_	_	5	case	5:case	_
+5	comissão	comissão	NOUN	_	Gender=Fem|Number=Sing	2	obl	2:obl:durante	SpaceAfter=No
+6	:	:	PUNCT	_	_	8	punct	8:punct	_
+7	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	Caloteiro...vagabundo	Caloteiro...vagabundo	NOUN	_	_	2	parataxis	2:parataxis	SpaceAfter=No
+9	...	...	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+10	"	"	PUNCT	_	_	8	punct	8:punct	_
+11	Assista	assistir	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	2	parataxis	2:parataxis	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj	SpaceAfter=No
+14	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Os parlamentares Arlindo Chinaglia (PT-SP) e Arthur Maia (SD-BA) trocaram farpas na comissão da Previdência.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	parlamentares	parlamentar	NOUN	_	Gender=Masc|Number=Plur	14	nsubj	14:nsubj	_
+3	Arlindo	Arlindo	PROPN	_	_	2	nmod	2:nmod	_
+4	Chinaglia	Chinaglia	PROPN	_	_	3	flat:name	3:flat:name	_
+5	(	(	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+6	PT-SP	PT-SP	PROPN	_	_	3	parataxis	3:parataxis	SpaceAfter=No
+7	)	)	PUNCT	_	_	6	punct	6:punct	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	Arthur	Arthur	PROPN	_	_	3	conj	2:nmod|3:conj:e	_
+10	Maia	Maia	PROPN	_	_	9	flat:name	9:flat:name	_
+11	(	(	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+12	SD-BA	SD-BA	PROPN	_	_	9	parataxis	9:parataxis	SpaceAfter=No
+13	)	)	PUNCT	_	_	12	punct	12:punct	_
+14	trocaram	trocar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+15	farpas	farpa	NOUN	_	Gender=Fem|Number=Plur	14	obj	14:obj	_
+16-17	na	_	_	_	_	_	_	_	_
+16	em	em	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	comissão	comissão	NOUN	_	Gender=Fem|Number=Sing	14	obl	14:obl:em	_
+19-20	da	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	Previdência	Previdência	PROPN	_	_	18	nmod	18:nmod:de	SpaceAfter=No
+22	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0005
+# text = Chinaglia chamou Maia de caloteiro e vagabundo e foi retrucado: "Vagabundo é você", disse o petista.
+1	Chinaglia	Chinaglia	PROPN	_	_	2	nsubj	2:nsubj|10:nsubj:pass	_
+2	chamou	chamar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	ccomp:speech	18:ccomp:speech	_
+3	Maia	Maia	PROPN	_	_	2	obj	2:obj	_
+4	de	de	ADP	_	_	5	case	5:case|7:case	_
+5	caloteiro	caloteiro	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:de	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	vagabundo	vagabundo	NOUN	_	Gender=Masc|Number=Sing	5	conj	2:obl:de|5:conj:e	_
+8	e	e	CCONJ	_	_	10	cc	10:cc	_
+9	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	aux:pass	10:aux:pass	_
+10	retrucado	retrucar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	conj	2:conj:e|18:ccomp:speech	SpaceAfter=No
+11	:	:	PUNCT	_	_	15	punct	15:punct	_
+12	"	"	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+13	Vagabundo	vagabundo	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	15:nsubj	_
+14	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	15:cop	_
+15	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	10	ccomp:speech	10:ccomp:speech	SpaceAfter=No
+16	"	"	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+17	,	,	PUNCT	_	_	2	punct	2:punct	_
+18	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	petista	petista	NOUN	_	Number=Sing	18	nsubj	18:nsubj	SpaceAfter=No
+21	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0007
+# text = Parabéns deputados, vocês nos representam!
+1	Parabéns	parabéns	NOUN	_	Gender=Masc|Number=Plur	0	root	0:root	_
+2	deputados	deputado	NOUN	_	Gender=Masc|Number=Plur	1	dep	1:dep	SpaceAfter=No
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
+4	vocês	você	PRON	_	Case=Nom|Number=Plur|Person=2|PronType=Prs	6	nsubj	6:nsubj	_
+5	nos	nos	PRON	_	Case=Acc|Number=Plur|Person=1|PronType=Prs	6	obj	6:obj	_
+6	representam	representar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	2:parataxis	SpaceAfter=No
+7	!	!	PUNCT	_	_	1	punct	1:punct	_

@@ -1,0 +1,417 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Urgente: Senado em sessão secreta para aprovar a "lei de proteção doméstica" que pode prender religiosos!
+1	Urgente	urgente	ADJ	_	Number=Sing	0	root	0:root	SpaceAfter=No
+2	:	:	PUNCT	_	_	1	punct	1:punct	_
+3	Senado	Senado	PROPN	_	_	1	nsubj	1:nsubj	_
+4	em	em	ADP	_	_	5	case	5:case	_
+5	sessão	sessão	NOUN	_	Gender=Fem|Number=Sing	1	obl	1:obl:em	_
+6	secreta	secreto	ADJ	_	Gender=Fem|Number=Sing	5	amod	5:amod	_
+7	para	para	ADP	_	_	8	mark	8:mark	_
+8	aprovar	aprovar	VERB	_	VerbForm=Inf	5	acl	5:acl:para	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+10	"	"	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+11	lei	lei	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj|17:nsubj|18:nsubj	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	proteção	proteção	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:de	_
+14	doméstica	doméstico	ADJ	_	Gender=Fem|Number=Sing	13	amod	13:amod	SpaceAfter=No
+15	"	"	PUNCT	_	_	11	punct	11:punct	_
+16	que	que	PRON	_	PronType=Rel	17	nsubj	11:ref	_
+17	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	11:acl:relcl	_
+18	prender	prender	VERB	_	VerbForm=Inf	17	xcomp	17:xcomp	_
+19	religiosos	religioso	NOUN	_	Gender=Masc|Number=Plur	18	obj	18:obj	SpaceAfter=No
+20	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Circula nas redes sociais uma mensagem alarmante: o Senado estaria debatendo em sessão secreta um projeto de lei intitulado "lei de proteção doméstica".
+1	Circula	circular	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2-3	nas	_	_	_	_	_	_	_	_
+2	em	em	ADP	_	_	4	case	4:case	_
+3	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	4:det	_
+4	redes	rede	NOUN	_	Gender=Fem|Number=Plur	1	obl	1:obl:em	_
+5	sociais	social	ADJ	_	Number=Plur	4	amod	4:amod	_
+6	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	mensagem	mensagem	NOUN	_	Gender=Fem|Number=Sing	1	nsubj	1:nsubj	_
+8	alarmante	alarmante	ADJ	_	Number=Sing	7	amod	7:amod	SpaceAfter=No
+9	:	:	PUNCT	_	_	13	punct	13:punct	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	Senado	Senado	PROPN	_	_	13	nsubj	13:nsubj	_
+12	estaria	estar	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	13	aux	13:aux	_
+13	debatendo	debater	VERB	_	VerbForm=Ger	1	parataxis	1:parataxis	_
+14	em	em	ADP	_	_	15	case	15:case	_
+15	sessão	sessão	NOUN	_	Gender=Fem|Number=Sing	13	obl	13:obl:em	_
+16	secreta	secreto	ADJ	_	Gender=Fem|Number=Sing	15	amod	15:amod	_
+17	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	13	obj	13:obj	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	lei	lei	NOUN	_	Gender=Fem|Number=Sing	18	nmod	18:nmod:de	_
+21	intitulado	intitular	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	18	acl	18:acl	_
+22	"	"	PUNCT	_	_	23	punct	23:punct	SpaceAfter=No
+23	lei	lei	NOUN	_	Gender=Fem|Number=Sing	21	xcomp	21:xcomp	_
+24	de	de	ADP	_	_	25	case	25:case	_
+25	proteção	proteção	NOUN	_	Gender=Fem|Number=Sing	23	nmod	23:nmod:de	_
+26	doméstica	doméstico	ADJ	_	Gender=Fem|Number=Sing	25	amod	25:amod	SpaceAfter=No
+27	"	"	PUNCT	_	_	23	punct	23:punct	SpaceAfter=No
+28	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0005
+# text = Este projeto, segundo a mensagem, prevê a prisão de líderes religiosos que realizem pregações em horários inadequados, além de severas sanções às congregações que fizerem barulho excessivo durante suas cerimônias.
+1	Este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	2:det	_
+2	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	8:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
+4	segundo	segundo	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	mensagem	mensagem	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:segundo	SpaceAfter=No
+7	,	,	PUNCT	_	_	6	punct	6:punct	_
+8	prevê	prever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	prisão	prisão	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	líderes	líder	NOUN	_	Gender=Masc|Number=Plur	10	nmod	10:nmod:de|15:nsubj	_
+13	religiosos	religioso	ADJ	_	Gender=Masc|Number=Plur	12	amod	12:amod	_
+14	que	que	PRON	_	PronType=Rel	15	nsubj	12:ref	_
+15	realizem	realizar	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	acl:relcl	12:acl:relcl	_
+16	pregações	pregação	NOUN	_	Gender=Fem|Number=Plur	15	obj	15:obj	_
+17	em	em	ADP	_	_	18	case	18:case	_
+18	horários	horário	NOUN	_	Gender=Masc|Number=Plur	15	obl	15:obl:em	_
+19	inadequados	inadequado	ADJ	_	Gender=Masc|Number=Plur	18	amod	18:amod	SpaceAfter=No
+20	,	,	PUNCT	_	_	21	punct	21:punct	_
+21	além	além	ADV	_	_	15	advmod	15:advmod	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	severas	severo	ADJ	_	Gender=Fem|Number=Plur	24	amod	24:amod	_
+24	sanções	sanção	NOUN	_	Gender=Fem|Number=Plur	21	obl	21:obl:de	_
+25-26	às	_	_	_	_	_	_	_	_
+25	a	a	ADP	_	_	27	case	27:case	_
+26	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	27	det	27:det	_
+27	congregações	congregação	NOUN	_	Gender=Fem|Number=Plur	24	nmod	24:nmod:a|29:nsubj	_
+28	que	que	PRON	_	PronType=Rel	29	nsubj	27:ref	_
+29	fizerem	fazer	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	27	acl:relcl	27:acl:relcl	_
+30	barulho	barulho	NOUN	_	Gender=Masc|Number=Sing	29	obj	29:obj	_
+31	excessivo	excessivo	ADJ	_	Gender=Masc|Number=Sing	30	amod	30:amod	_
+32	durante	durante	ADP	_	_	34	case	34:case	_
+33	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	34	det	34:det	_
+34	cerimônias	cerimônia	NOUN	_	Gender=Fem|Number=Plur	29	obl	29:obl:durante	SpaceAfter=No
+35	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0007
+# text = Ativistas afirmam que o projeto também inclui multas pesadas e até mesmo a suspensão de atividades para aqueles que forem flagrados visitando casas e incomodando pedestres.
+1	Ativistas	ativista	NOUN	_	Number=Plur	2	nsubj	2:nsubj	_
+2	afirmam	afirmar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	7	mark	7:mark	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+6	também	também	ADV	_	_	7	advmod	7:advmod	_
+7	inclui	incluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	2:ccomp	_
+8	multas	multa	NOUN	_	Gender=Fem|Number=Plur	7	obj	7:obj	_
+9	pesadas	pesado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	8	amod	8:amod	_
+10	e	e	CCONJ	_	_	14	cc	14:cc	_
+11	até	até	ADV	_	_	14	case	14:case	_
+12	mesmo	mesmo	ADV	_	_	11	advmod	11:advmod	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	suspensão	suspensão	NOUN	_	Gender=Fem|Number=Sing	8	conj	7:obj|8:conj:e	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	atividades	atividade	NOUN	_	Gender=Fem|Number=Plur	14	nmod	14:nmod:de	_
+17	para	para	ADP	_	_	18	case	18:case	_
+18	aqueles	aquele	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	14	nmod	14:nmod:para|21:nsubj:pass|22:nsubj|25:nsubj	_
+19	que	que	PRON	_	PronType=Rel	21	nsubj:pass	18:ref	_
+20	forem	ser	AUX	_	Mood=Sub|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	21	aux:pass	21:aux:pass	_
+21	flagrados	flagrar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	18	acl:relcl	18:acl:relcl	_
+22	visitando	visitar	VERB	_	VerbForm=Ger	21	xcomp	21:xcomp	_
+23	casas	casa	NOUN	_	Gender=Fem|Number=Plur	22	obj	22:obj	_
+24	e	e	CCONJ	_	_	25	cc	25:cc	_
+25	incomodando	incomodar	VERB	_	VerbForm=Ger	22	conj	21:xcomp|22:conj:e	_
+26	pedestres	pedestre	NOUN	_	Number=Plur	25	obj	25:obj	SpaceAfter=No
+27	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0009
+# text = A mensagem viral diz: Senado da República em sessão secreta para debater a lei de proteção doméstica.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	mensagem	mensagem	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+3	viral	viral	ADJ	_	Number=Sing	2	amod	2:amod	_
+4	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+5	:	:	PUNCT	_	_	6	punct	6:punct	_
+6	Senado	Senado	PROPN	_	_	4	nsubj	4:nsubj	_
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	República	República	PROPN	_	_	6	nmod	6:nmod:de	_
+10	em	em	ADP	_	_	11	case	11:case	_
+11	sessão	sessão	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:em	_
+12	secreta	secreto	ADJ	_	Gender=Fem|Number=Sing	11	amod	11:amod	_
+13	para	para	ADP	_	_	14	mark	14:mark	_
+14	debater	debater	VERB	_	VerbForm=Inf	11	acl	11:acl:para	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	lei	lei	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	proteção	proteção	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:de	_
+19	doméstica	doméstico	ADJ	_	Gender=Fem|Number=Sing	18	amod	18:amod	SpaceAfter=No
+20	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0011
+# text = Ela inclui prisão para religiosos que ousarem pregar em momentos impróprios, penalidades severas para templos que excederem limites de som e restrições para missionários nas ruas.
+1	Ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj	_
+2	inclui	incluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	prisão	prisão	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+4	para	para	ADP	_	_	5	case	5:case	_
+5	religiosos	religioso	NOUN	_	Gender=Masc|Number=Plur	3	nmod	3:nmod:para|7:nsubj|8:nsubj	_
+6	que	que	PRON	_	PronType=Rel	7	nsubj	5:ref	_
+7	ousarem	ousar	VERB	_	Number=Plur|Person=3|VerbForm=Inf	5	acl:relcl	5:acl:relcl	_
+8	pregar	pregar	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+9	em	em	ADP	_	_	10	case	10:case	_
+10	momentos	momento	NOUN	_	Gender=Masc|Number=Plur	8	obl	8:obl:em	_
+11	impróprios	impróprio	ADJ	_	Gender=Masc|Number=Plur	10	amod	10:amod	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	penalidades	penalidade	NOUN	_	Gender=Fem|Number=Plur	3	conj	2:obj|3:conj:e	_
+14	severas	severo	ADJ	_	Gender=Fem|Number=Plur	13	amod	13:amod	_
+15	para	para	ADP	_	_	16	case	16:case	_
+16	templos	templo	NOUN	_	Gender=Masc|Number=Plur	13	nmod	13:nmod:para|18:nsubj	_
+17	que	que	PRON	_	PronType=Rel	18	nsubj	16:ref	_
+18	excederem	exceder	VERB	_	Number=Plur|Person=3|VerbForm=Inf	16	acl:relcl	16:acl:relcl	_
+19	limites	limite	NOUN	_	Gender=Masc|Number=Plur	18	obj	18:obj	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	som	som	NOUN	_	Gender=Masc|Number=Sing	19	nmod	19:nmod:de	_
+22	e	e	CCONJ	_	_	23	cc	23:cc	_
+23	restrições	restrição	NOUN	_	Gender=Fem|Number=Plur	3	conj	2:obj|3:conj:e	_
+24	para	para	ADP	_	_	25	case	25:case	_
+25	missionários	missionário	NOUN	_	Gender=Masc|Number=Plur	23	nmod	23:nmod:para	_
+26-27	nas	_	_	_	_	_	_	_	_
+26	em	em	ADP	_	_	28	case	28:case	_
+27	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	28	det	28:det	_
+28	ruas	rua	NOUN	_	Gender=Fem|Number=Plur	25	nmod	25:nmod:em	SpaceAfter=No
+29	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0013
+# text = Uma cláusula polêmica menciona até a proibição da leitura bíblica obrigatória em escolas públicas!
+1	Uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	cláusula	cláusula	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+3	polêmica	polêmico	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	_
+4	menciona	mencionar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	até	até	ADV	_	_	7	advmod	7:advmod	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	proibição	proibição	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	leitura	leitura	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:de	_
+11	bíblica	bíblico	ADJ	_	Gender=Fem|Number=Sing	10	amod	10:amod	_
+12	obrigatória	obrigatório	ADJ	_	Gender=Fem|Number=Sing	10	amod	10:amod	_
+13	em	em	ADP	_	_	14	case	14:case	_
+14	escolas	escola	NOUN	_	Gender=Fem|Number=Plur	7	nmod	7:nmod:em	_
+15	públicas	público	ADJ	_	Gender=Fem|Number=Plur	14	amod	14:amod	SpaceAfter=No
+16	!	!	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0015
+# text = Ainda que o Senado negue a existência de tal projeto, muitos acreditam que ele está camuflado sob outro nome.
+1	Ainda	ainda	ADV	_	ExtPos=SCONJ	5	mark	5:mark	_
+2	que	que	SCONJ	_	_	1	fixed	1:fixed	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	Senado	Senado	PROPN	_	_	5	nsubj	5:nsubj	_
+5	negue	negar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	advcl	13:advcl:ainda_que	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	existência	existência	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	tal	tal	DET	_	Number=Sing|PronType=Dem	10	det	10:det	_
+10	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	SpaceAfter=No
+11	,	,	PUNCT	_	_	5	punct	5:punct	_
+12	muitos	muito	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	13	nsubj	13:nsubj	_
+13	acreditam	acreditar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+14	que	que	SCONJ	_	_	17	mark	17:mark	_
+15	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	nsubj	17:nsubj	_
+16	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	17:cop	_
+17	camuflado	camuflado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	13	ccomp	13:ccomp	_
+18	sob	sob	ADP	_	_	20	case	20:case	_
+19	outro	outro	DET	_	Gender=Masc|Number=Sing|PronType=Ind	20	det	20:det	_
+20	nome	nome	NOUN	_	Gender=Masc|Number=Sing	17	obl	17:obl:sob	SpaceAfter=No
+21	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0017
+# text = A mensagem pede uma mobilização urgente: Não há mais tempo! Precisamos pressionar os senadores agora! Oremos, independentemente de onde estivermos, para que nossos representantes rejeitem essa iniciativa opressiva.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	mensagem	mensagem	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_
+3	pede	pedir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	mobilização	mobilização	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+6	urgente	urgente	ADJ	_	Number=Sing	5	amod	5:amod	SpaceAfter=No
+7	:	:	PUNCT	_	_	9	punct	9:punct	_
+8	Não	não	ADV	_	_	9	advmod	9:advmod	_
+9	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	parataxis	3:parataxis	_
+10	mais	mais	DET	_	PronType=Ind	11	det	11:det	_
+11	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	9	obj	9:obj	SpaceAfter=No
+12	!	!	PUNCT	_	_	13	punct	13:punct	_
+13	Precisamos	precisar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	parataxis	3:parataxis	_
+14	pressionar	pressionar	VERB	_	VerbForm=Inf	13	xcomp	13:xcomp	_
+15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	16:det	_
+16	senadores	senador	NOUN	_	Gender=Masc|Number=Plur	14	obj	14:obj	_
+17	agora	agora	ADV	_	_	14	advmod	14:advmod	SpaceAfter=No
+18	!	!	PUNCT	_	_	19	punct	19:punct	_
+19	Oremos	orar	VERB	_	Mood=Imp|Number=Plur|Person=1|VerbForm=Fin	3	parataxis	3:parataxis	SpaceAfter=No
+20	,	,	PUNCT	_	_	21	punct	21:punct	_
+21	independentemente	independentemente	ADV	_	_	19	advmod	19:advmod	_
+22	de	de	ADP	_	_	23	case	23:case	_
+23	onde	onde	ADV	_	_	21	advmod	21:advmod	_
+24	estivermos	estar	AUX	_	Mood=Sub|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	23	cop	23:cop	SpaceAfter=No
+25	,	,	PUNCT	_	_	21	punct	21:punct	_
+26	para	para	ADP	_	ExtPos=SCONJ	30	mark	30:mark	_
+27	que	que	SCONJ	_	_	26	fixed	26:fixed	_
+28	nossos	nosso	DET	_	Gender=Masc|Number=Plur|Person=1|Poss=Yes|PronType=Prs	29	det	29:det	_
+29	representantes	representante	NOUN	_	Number=Plur	30	nsubj	30:nsubj	_
+30	rejeitem	rejeitar	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	19	advcl	19:advcl:para_que	_
+31	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	32	det	32:det	_
+32	iniciativa	iniciativa	NOUN	_	Gender=Fem|Number=Sing	30	obj	30:obj	_
+33	opressiva	opressivo	ADJ	_	Gender=Fem|Number=Sing	32	amod	32:amod	SpaceAfter=No
+34	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0019
+# text = A aprovação significaria uma perseguição sem precedentes à liberdade religiosa!
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	aprovação	aprovação	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_
+3	significaria	significar	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+4	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	perseguição	perseguição	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+6	sem	sem	ADP	_	_	7	case	7:case	_
+7	precedentes	precedente	NOUN	_	Number=Plur	5	nmod	5:nmod:sem	_
+8-9	à	_	_	_	_	_	_	_	_
+8	a	a	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	liberdade	liberdade	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:a	_
+11	religiosa	religioso	ADJ	_	Gender=Fem|Number=Sing	10	amod	10:amod	SpaceAfter=No
+12	!	!	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0021
+# text = Embora haja um Projeto de Lei PL 5.
+1	Embora	embora	SCONJ	_	_	2	mark	2:mark	_
+2	haja	haver	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	Projeto	Projeto	PROPN	_	_	2	obj	2:obj	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	Lei	Lei	PROPN	_	_	4	flat:name	4:flat:name	_
+7	PL	PL	PROPN	_	_	4	flat:name	4:flat:name	_
+8	5	5	NUM	_	NumType=Card	7	nummod	7:nummod	SpaceAfter=No
+9	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0023
+# text = 1/219 que estabelece limites para emissão sonora em templos religiosos, as informações que estão sendo compartilhadas são muito mais alarmantes e detalhadas, sugerindo uma ameaça direta à liberdade de culto.
+1	1/219	1/219	NUM	_	NumType=Card	21	nsubj	3:nsubj|17:nsubj:pass|21:nsubj|23:nsubj	_
+2	que	que	PRON	_	PronType=Rel	3	nsubj	13:ref	_
+3	estabelece	estabelecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	acl:relcl	13:acl:relcl	_
+4	limites	limite	NOUN	_	Gender=Masc|Number=Plur	3	obj	3:obj	_
+5	para	para	ADP	_	_	6	case	6:case	_
+6	emissão	emissão	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:para	_
+7	sonora	sonoro	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	_
+8	em	em	ADP	_	_	9	case	9:case	_
+9	templos	templo	NOUN	_	Gender=Masc|Number=Plur	6	nmod	6:nmod:em	_
+10	religiosos	religioso	ADJ	_	Gender=Masc|Number=Plur	9	amod	9:amod	SpaceAfter=No
+11	,	,	PUNCT	_	_	3	punct	3:punct	_
+12	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	13:det	_
+13	informações	informação	NOUN	_	Gender=Fem|Number=Plur	21	nsubj	3:nsubj|17:nsubj:pass|21:nsubj|23:nsubj	_
+14	que	que	PRON	_	PronType=Rel	17	nsubj:pass	13:ref	_
+15	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	aux	17:aux	_
+16	sendo	ser	AUX	_	VerbForm=Ger	17	aux:pass	17:aux:pass	_
+17	compartilhadas	compartilhar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	13	acl:relcl	13:acl:relcl	_
+18	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	21	cop	21:cop|23:cop	_
+19	muito	muito	ADV	_	_	20	advmod	20:advmod	_
+20	mais	mais	ADV	_	_	21	advmod	21:advmod	_
+21	alarmantes	alarmante	ADJ	_	Number=Plur	0	root	0:root	_
+22	e	e	CCONJ	_	_	23	cc	23:cc	_
+23	detalhadas	detalhado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	21	conj	21:conj:e	SpaceAfter=No
+24	,	,	PUNCT	_	_	25	punct	25:punct	_
+25	sugerindo	sugerir	VERB	_	VerbForm=Ger	21	advcl	21:advcl|23:advcl	_
+26	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	ameaça	ameaça	NOUN	_	Gender=Fem|Number=Sing	25	obj	25:obj	_
+28	direta	direto	ADJ	_	Gender=Fem|Number=Sing	27	amod	27:amod	_
+29-30	à	_	_	_	_	_	_	_	_
+29	a	a	ADP	_	_	31	case	31:case	_
+30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+31	liberdade	liberdade	NOUN	_	Gender=Fem|Number=Sing	27	nmod	27:nmod:a	_
+32	de	de	ADP	_	_	33	case	33:case	_
+33	culto	culto	NOUN	_	Gender=Masc|Number=Sing	31	nmod	31:nmod:de	SpaceAfter=No
+34	.	.	PUNCT	_	_	21	punct	21:punct	_
+
+# sent_id = S0025
+# text = O PL em questão, que está na Comissão do Meio Ambiente, apenas define limites de decibéis e prevê sanções como multas e suspensão de benefícios fiscais, mas sem qualquer menção a prisões ou restrições à pregação religiosa.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	PL	PL	PROPN	_	_	17	nsubj	10:nsubj|17:nsubj|22:nsubj	_
+3	em	em	ADP	_	_	4	case	4:case	_
+4	questão	questão	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:em	SpaceAfter=No
+5	,	,	PUNCT	_	_	10	punct	10:punct	_
+6	que	que	PRON	_	PronType=Rel	10	nsubj	2:ref	_
+7	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_
+8-9	na	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	Comissão	Comissão	PROPN	_	_	2	acl:relcl	2:acl:relcl	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	Meio	Meio	PROPN	_	_	10	flat:name	10:flat:name	_
+14	Ambiente	Ambiente	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+15	,	,	PUNCT	_	_	10	punct	10:punct	_
+16	apenas	apenas	ADV	_	_	17	advmod	17:advmod	_
+17	define	definir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+18	limites	limite	NOUN	_	Gender=Masc|Number=Plur	17	obj	17:obj	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	decibéis	decibel	NOUN	_	Gender=Masc|Number=Plur	18	nmod	18:nmod:de	_
+21	e	e	CCONJ	_	_	22	cc	22:cc	_
+22	prevê	prever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	conj	17:conj:e	_
+23	sanções	sanção	NOUN	_	Gender=Fem|Number=Plur	22	obj	22:obj	_
+24	como	como	ADP	_	_	25	case	25:case|27:case	_
+25	multas	multa	NOUN	_	Gender=Fem|Number=Plur	23	nmod	23:nmod:como	_
+26	e	e	CCONJ	_	_	27	cc	27:cc	_
+27	suspensão	suspensão	NOUN	_	Gender=Fem|Number=Sing	25	conj	23:nmod:como|25:conj:e	_
+28	de	de	ADP	_	_	29	case	29:case	_
+29	benefícios	benefício	NOUN	_	Gender=Masc|Number=Plur	27	nmod	27:nmod:de	_
+30	fiscais	fiscal	ADJ	_	Number=Plur	29	amod	29:amod	SpaceAfter=No
+31	,	,	PUNCT	_	_	35	punct	35:punct	_
+32	mas	mas	CCONJ	_	_	35	cc	35:cc	_
+33	sem	sem	ADP	_	_	35	case	35:case	_
+34	qualquer	qualquer	DET	_	Number=Sing|PronType=Ind	35	det	35:det	_
+35	menção	menção	NOUN	_	Gender=Fem|Number=Sing	23	conj	22:obj|23:conj:mas	_
+36	a	a	ADP	_	_	37	case	37:case|39:case	_
+37	prisões	prisão	NOUN	_	Gender=Fem|Number=Plur	35	nmod	35:nmod:a	_
+38	ou	ou	CCONJ	_	_	39	cc	39:cc	_
+39	restrições	restrição	NOUN	_	Gender=Fem|Number=Plur	37	conj	35:nmod:a|37:conj:ou	_
+40-41	à	_	_	_	_	_	_	_	_
+40	a	a	ADP	_	_	42	case	42:case	_
+41	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	42:det	_
+42	pregação	pregação	NOUN	_	Gender=Fem|Number=Sing	39	nmod	39:nmod:a	_
+43	religiosa	religioso	ADJ	_	Gender=Fem|Number=Sing	42	amod	42:amod	SpaceAfter=No
+44	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0027
+# text = A verdade é que, com ou sem projeto oficial, a mensagem está gerando grande preocupação e tem sido amplamente compartilhada, refletindo tempos de crescente tensão em torno da liberdade religiosa.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	verdade	verdade	NOUN	_	Gender=Fem|Number=Sing	15	nsubj:outer	15:nsubj:outer	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	9:cop|15:cop	_
+4	que	que	SCONJ	_	_	15	mark	9:mark|15:mark|22:mark	SpaceAfter=No
+5	,	,	PUNCT	_	_	9	punct	9:punct	_
+6	com	com	ADP	_	_	9	case	9:case	_
+7	ou	ou	CCONJ	_	_	6	cc	6:cc	_
+8	sem	sem	ADP	_	_	9	case	9:case	_
+9	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	15	conj	15:conj:e	_
+10	oficial	oficial	ADJ	_	Number=Sing	9	amod	9:amod	SpaceAfter=No
+11	,	,	PUNCT	_	_	9	punct	9:punct	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	mensagem	mensagem	NOUN	_	Gender=Fem|Number=Sing	15	nsubj	9:nsubj|15:nsubj|22:nsubj:pass	_
+14	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux	15:aux	_
+15	gerando	gerar	VERB	_	VerbForm=Ger	0	root	0:root	_
+16	grande	grande	ADJ	_	Number=Sing	17	amod	17:amod	_
+17	preocupação	preocupação	NOUN	_	Gender=Fem|Number=Sing	15	obj	9:obj|15:obj	_
+18	e	e	CCONJ	_	_	22	cc	22:cc	_
+19	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	aux	22:aux	_
+20	sido	ser	AUX	_	Gender=Masc|Number=Sing|VerbForm=Part	22	aux:pass	22:aux:pass	_
+21	amplamente	amplamente	ADV	_	_	22	advmod	22:advmod	_
+22	compartilhada	compartilhar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	15	conj	15:conj:e	SpaceAfter=No
+23	,	,	PUNCT	_	_	24	punct	24:punct	_
+24	refletindo	refletir	VERB	_	VerbForm=Ger	15	advcl	9:advcl|15:advcl|22:advcl	_
+25	tempos	tempo	NOUN	_	Gender=Masc|Number=Plur	24	obj	24:obj	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	crescente	crescente	ADJ	_	Number=Sing	28	amod	28:amod	_
+28	tensão	tensão	NOUN	_	Gender=Fem|Number=Sing	25	nmod	25:nmod:de	_
+29	em	em	ADP	_	_	30	case	30:case	_
+30	torno	torno	NOUN	_	Gender=Masc|Number=Sing	28	nmod	28:nmod:em	_
+31-32	da	_	_	_	_	_	_	_	_
+31	de	de	ADP	_	_	33	case	33:case	_
+32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	33:det	_
+33	liberdade	liberdade	NOUN	_	Gender=Fem|Number=Sing	30	nmod	30:nmod:de	_
+34	religiosa	religioso	ADJ	_	Gender=Fem|Number=Sing	33	amod	33:amod	SpaceAfter=No
+35	.	.	PUNCT	_	_	15	punct	15:punct	_

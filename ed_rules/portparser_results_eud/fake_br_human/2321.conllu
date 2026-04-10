@@ -1,0 +1,191 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Deputado tucano diz que "aprovar pacote anticorrupção é voltar à Idade Média".
+1	Deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+2	tucano	tucano	ADJ	_	Gender=Masc|Number=Sing	1	amod	1:amod	_
+3	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	10	mark	10:mark	_
+5	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+6	aprovar	aprovar	VERB	_	VerbForm=Inf	10	csubj	10:csubj	_
+7	pacote	pacote	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+8	anticorrupção	anticorrupção	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod	_
+9	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_
+10	voltar	voltar	VERB	_	VerbForm=Inf	3	ccomp	3:ccomp	_
+11-12	à	_	_	_	_	_	_	_	_
+11	a	a	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	Idade	Idade	PROPN	_	_	10	obl	10:obl:a	_
+14	Média	Média	PROPN	_	_	13	flat:name	13:flat:name	SpaceAfter=No
+15	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+16	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = Há um ditado que diz mais ou menos assim.
+1	Há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	ditado	ditado	NOUN	_	Gender=Masc|Number=Sing	1	obj	1:obj|5:nsubj	_
+4	que	que	PRON	_	PronType=Rel	5	nsubj	3:ref	_
+5	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_
+6	mais	mais	ADV	_	ExtPos=ADV	9	advmod	9:advmod	_
+7	ou	ou	CCONJ	_	_	6	fixed	6:fixed	_
+8	menos	menos	ADV	_	_	6	fixed	6:fixed	_
+9	assim	assim	ADV	_	_	5	advmod	5:advmod	SpaceAfter=No
+10	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0005
+# text = Bom [...] um deputado de Minas Gerais "parece" que acabou com a nossa dúvida!
+1	Bom	bom	ADJ	_	Gender=Masc|Number=Sing	12	discourse	12:discourse	_
+2	[	[	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+3	.	.	PUNCT	_	_	1	parataxis	1:parataxis	SpaceAfter=No
+4	..	..	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+5	]	]	PUNCT	_	_	3	punct	3:punct	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	12:nsubj	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	Minas	Minas	PROPN	_	_	7	nmod	7:nmod:de	_
+10	Gerais	Gerais	PROPN	_	_	9	flat:name	9:flat:name	_
+11	"	"	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+12	parece	parecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+13	"	"	PUNCT	_	_	12	punct	12:punct	_
+14	que	que	SCONJ	_	_	15	mark	15:mark	_
+15	acabou	acabar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	ccomp	12:ccomp	_
+16	com	com	ADP	_	_	19	case	19:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+18	nossa	nosso	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	19	det	19:det	_
+19	dúvida	dúvida	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl:com	SpaceAfter=No
+20	!	!	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0007
+# text = Domingos Sávio (PSDB) disse que será uma "irresponsabilidade" caso a Câmara aprove o pacote das dez medidas contra a corrupção, incentivado pelo Ministério Público Federal (MPF).
+1	Domingos	Domingos	PROPN	_	_	6	nsubj	6:nsubj	_
+2	Sávio	Sávio	PROPN	_	_	1	flat:name	1:flat:name	_
+3	(	(	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+4	PSDB	PSDB	PROPN	_	_	1	parataxis	1:parataxis	SpaceAfter=No
+5	)	)	PUNCT	_	_	4	punct	4:punct	_
+6	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	que	que	SCONJ	_	_	11	mark	11:mark	_
+8	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	11	cop	11:cop	_
+9	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+10	"	"	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+11	irresponsabilidade	irresponsabilidade	NOUN	_	Gender=Fem|Number=Sing	6	ccomp	6:ccomp	SpaceAfter=No
+12	"	"	PUNCT	_	_	11	punct	11:punct	_
+13	caso	caso	SCONJ	_	_	16	mark	16:mark	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	Câmara	Câmara	PROPN	_	_	16	nsubj	16:nsubj	_
+16	aprove	aprovar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	advcl	11:advcl:caso	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	pacote	pacote	NOUN	_	Gender=Masc|Number=Sing	16	obj	16:obj	_
+19-20	das	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	22	case	22:case	_
+20	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	22:det	_
+21	dez	dez	NUM	_	NumType=Card	22	nummod	22:nummod	_
+22	medidas	medida	NOUN	_	Gender=Fem|Number=Plur	18	nmod	18:nmod:de	_
+23	contra	contra	ADP	_	_	25	case	25:case	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	corrupção	corrupção	NOUN	_	Gender=Fem|Number=Sing	22	nmod	22:nmod:contra	SpaceAfter=No
+26	,	,	PUNCT	_	_	27	punct	27:punct	_
+27	incentivado	incentivar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	18	acl	18:acl	_
+28-29	pelo	_	_	_	_	_	_	_	_
+28	por	por	ADP	_	_	30	case	30:case	_
+29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	30:det	_
+30	Ministério	Ministério	PROPN	_	_	27	obl:agent	27:obl:agent	_
+31	Público	Público	PROPN	_	_	30	flat:name	30:flat:name	_
+32	Federal	Federal	PROPN	_	_	30	flat:name	30:flat:name	_
+33	(	(	PUNCT	_	_	34	punct	34:punct	SpaceAfter=No
+34	MPF	MPF	PROPN	_	_	30	appos	30:appos	SpaceAfter=No
+35	)	)	PUNCT	_	_	34	punct	34:punct	SpaceAfter=No
+36	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0009
+# text = Sávio disse que "não podemos dizer amém à proposta do MPF".
+1	Sávio	Sávio	PROPN	_	_	2	nsubj	2:nsubj	_
+2	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	6	mark	6:mark	_
+4	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+5	não	não	ADV	_	_	6	advmod	6:advmod	_
+6	podemos	poder	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	ccomp	2:ccomp	_
+7	dizer	dizer	VERB	_	VerbForm=Inf	6	xcomp	6:xcomp	_
+8	amém	amém	ADV	_	_	7	obj	7:obj	_
+9-10	à	_	_	_	_	_	_	_	_
+9	a	a	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	proposta	proposta	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:a	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	MPF	MPF	PROPN	_	_	11	nmod	11:nmod:de	SpaceAfter=No
+15	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+16	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0011
+# text = O deputado argumenta que o projeto seria "uma volta à Idade Média com uma caça às bruxas irresponsável".
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	argumenta	argumentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	10	mark	10:mark	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	10:nsubj	_
+7	seria	ser	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	10	cop	10:cop	_
+8	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+9	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	volta	volta	NOUN	_	Gender=Fem|Number=Sing	3	ccomp	3:ccomp	_
+11-12	à	_	_	_	_	_	_	_	_
+11	a	a	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	Idade	Idade	PROPN	_	_	10	nmod	10:nmod:a	_
+14	Média	Média	PROPN	_	_	13	flat:name	13:flat:name	_
+15	com	com	ADP	_	_	17	case	17:case	_
+16	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	caça	caça	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:com	_
+18-19	às	_	_	_	_	_	_	_	_
+18	a	a	ADP	_	_	20	case	20:case	_
+19	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	20:det	_
+20	bruxas	bruxo	NOUN	_	Gender=Fem|Number=Plur	17	nmod	17:nmod:a	_
+21	irresponsável	irresponsável	ADJ	_	Number=Sing	17	amod	17:amod	SpaceAfter=No
+22	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+23	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0013
+# text = Pois é caro deputado [...] pode deixar que o povo vai continuar trabalhando para sustentar a vida de monarquia que os senhores têm!
+1	Pois	pois	CCONJ	_	_	9	cc	9:cc	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+3	caro	caro	ADJ	_	Gender=Masc|Number=Sing	4	amod	4:amod	_
+4	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	9:nsubj|10:nsubj	_
+5	[	[	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+6	.	.	PUNCT	_	_	4	parataxis	4:parataxis	SpaceAfter=No
+7	..	..	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+8	]	]	PUNCT	_	_	6	punct	6:punct	_
+9	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+10	deixar	deixar	VERB	_	VerbForm=Inf	9	xcomp	9:xcomp	_
+11	que	que	SCONJ	_	_	15	mark	15:mark	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	povo	povo	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	15:nsubj|16:nsubj	_
+14	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux	15:aux	_
+15	continuar	continuar	VERB	_	VerbForm=Inf	10	ccomp	10:ccomp	_
+16	trabalhando	trabalhar	VERB	_	VerbForm=Ger	15	xcomp	15:xcomp	_
+17	para	para	ADP	_	_	18	mark	18:mark	_
+18	sustentar	sustentar	VERB	_	VerbForm=Inf	16	advcl	16:advcl:para	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	vida	vida	NOUN	_	Gender=Fem|Number=Sing	18	obj	18:obj|26:obj	_
+21	de	de	ADP	_	_	22	case	22:case	_
+22	monarquia	monarquia	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:de	_
+23	que	que	PRON	_	PronType=Rel	26	obj	20:ref	_
+24	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	25:det	_
+25	senhores	senhor	NOUN	_	Gender=Masc|Number=Plur	26	nsubj	26:nsubj	_
+26	têm	ter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	acl:relcl	20:acl:relcl	SpaceAfter=No
+27	!	!	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0015
+# text = a informaçao é de Julia Lindner, do Estado.
+1	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	informaçao	informaçao	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	Julia	Julia	PROPN	_	_	0	root	0:root	_
+6	Lindner	Lindner	PROPN	_	_	5	flat:name	5:flat:name	SpaceAfter=No
+7	,	,	PUNCT	_	_	10	punct	10:punct	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	Estado	Estado	PROPN	_	_	5	nmod	5:nmod:de	SpaceAfter=No
+11	.	.	PUNCT	_	_	5	punct	5:punct	_

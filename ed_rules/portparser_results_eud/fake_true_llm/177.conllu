@@ -1,0 +1,331 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Atenção! Urgente: Nova regra do WhatsApp em vigor amanhã! 🚨.
+1	Atenção	atenção	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+2	!	!	PUNCT	_	_	1	punct	1:punct	_
+3	Urgente	urgente	ADJ	_	Number=Sing	1	parataxis	1:parataxis	SpaceAfter=No
+4	:	:	PUNCT	_	_	6	punct	6:punct	_
+5	Nova	novo	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	_
+6	regra	regra	NOUN	_	Gender=Fem|Number=Sing	1	parataxis	1:parataxis	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	WhatsApp	WhatsApp	PROPN	_	_	6	nmod	6:nmod:de	_
+10	em	em	ADP	_	_	11	case	11:case	_
+11	vigor	vigor	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:em	_
+12	amanhã	amanhã	ADV	_	_	11	advmod	11:advmod	SpaceAfter=No
+13	!	!	PUNCT	_	_	14	punct	14:punct	_
+14	🚨	🚨	ADJ	_	_	11	amod	11:amod	SpaceAfter=No
+15	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = A partir de amanhã, uma atualização nas políticas do WhatsApp permitirá que o aplicativo utilize suas fotos e mensagens para fins comerciais e legais.
+1	A	a	ADP	_	_	2	mark	2:mark	_
+2	partir	partir	VERB	_	VerbForm=Inf	14	advcl	14:advcl:a	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	amanhã	amanhã	ADV	_	_	2	advmod	2:advmod	SpaceAfter=No
+5	,	,	PUNCT	_	_	2	punct	2:punct	_
+6	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	atualização	atualização	NOUN	_	Gender=Fem|Number=Sing	14	nsubj	14:nsubj	_
+8-9	nas	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	10:det	_
+10	políticas	política	NOUN	_	Gender=Fem|Number=Plur	7	nmod	7:nmod:em	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	WhatsApp	WhatsApp	PROPN	_	_	10	nmod	10:nmod:de	_
+14	permitirá	permitir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+15	que	que	SCONJ	_	_	18	mark	18:mark	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	aplicativo	aplicativo	NOUN	_	Gender=Masc|Number=Sing	18	nsubj	18:nsubj	_
+18	utilize	utilizar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	ccomp	14:ccomp	_
+19	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	20	det	20:det	_
+20	fotos	foto	NOUN	_	Number=Plur	18	obj	18:obj	_
+21	e	e	CCONJ	_	_	22	cc	22:cc	_
+22	mensagens	mensagem	NOUN	_	Gender=Fem|Number=Plur	20	conj	18:obj|20:conj:e	_
+23	para	para	ADP	_	_	24	case	24:case	_
+24	fins	fim	NOUN	_	Gender=Masc|Number=Plur	18	obl	18:obl:para	_
+25	comerciais	comercial	ADJ	_	Number=Plur	24	amod	24:amod	_
+26	e	e	CCONJ	_	_	27	cc	27:cc	_
+27	legais	legal	ADJ	_	Number=Plur	25	conj	24:amod|25:conj:e	SpaceAfter=No
+28	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0005
+# text = Segundo fontes internas, tudo o que você postou, inclusive mensagens excluídas, poderá ser acessado e usado em ações judiciais contra você.
+1	Segundo	segundo	ADP	_	_	2	case	2:case	_
+2	fontes	fonte	NOUN	_	Gender=Fem|Number=Plur	15	obl	15:obl:segundo	_
+3	internas	interno	ADJ	_	Gender=Fem|Number=Plur	2	amod	2:amod	SpaceAfter=No
+4	,	,	PUNCT	_	_	2	punct	2:punct	_
+5	tudo	tudo	PRON	_	PronType=Ind	15	nsubj	9:obj|15:nsubj|17:nsubj:pass|19:nsubj:pass	_
+6	o	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	9	obj	5:ref|9:obj	_
+7	que	que	PRON	_	PronType=Rel	6	fixed	6:fixed	_
+8	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	9	nsubj	9:nsubj	_
+9	postou	postar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	acl:relcl	5:acl:relcl	SpaceAfter=No
+10	,	,	PUNCT	_	_	12	punct	12:punct	_
+11	inclusive	inclusive	ADV	_	_	12	case	12:case	_
+12	mensagens	mensagem	NOUN	_	Gender=Fem|Number=Plur	5	nmod	5:nmod:inclusive	_
+13	excluídas	excluír	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	12	acl	12:acl	SpaceAfter=No
+14	,	,	PUNCT	_	_	12	punct	12:punct	_
+15	poderá	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+16	ser	ser	AUX	_	VerbForm=Inf	17	aux:pass	17:aux:pass|19:aux:pass	_
+17	acessado	acessar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	15	xcomp	15:xcomp	_
+18	e	e	CCONJ	_	_	19	cc	19:cc	_
+19	usado	usar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	17	conj	15:xcomp|17:conj:e	_
+20	em	em	ADP	_	_	21	case	21:case	_
+21	ações	ação	NOUN	_	Gender=Fem|Number=Plur	17	obl	17:obl:em|19:obl:em	_
+22	judiciais	judicial	ADJ	_	Number=Plur	21	amod	21:amod	_
+23	contra	contra	ADP	_	_	24	case	24:case	_
+24	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	21	nmod	21:nmod:contra	SpaceAfter=No
+25	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0007
+# text = A privacidade que você conhece está com os dias contados!
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	privacidade	privacidade	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	5:obj|9:nsubj	_
+3	que	que	PRON	_	PronType=Rel	5	obj	2:ref	_
+4	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	5	nsubj	5:nsubj	_
+5	conhece	conhecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+6	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	9:cop	_
+7	com	com	ADP	_	_	9	case	9:case	_
+8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	9:det	_
+9	dias	dia	NOUN	_	Gender=Masc|Number=Plur	0	root	0:root	_
+10	contados	contado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	9	acl	9:acl	SpaceAfter=No
+11	!	!	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0009
+# text = Proteja-se agora: copie e compartilhe este aviso em 10 grupos diferentes.
+1-2	Proteja-se	_	_	_	_	_	_	_	_
+1	Proteja	proteger	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	1	expl	1:expl	_
+3	agora	agora	ADV	_	_	1	advmod	1:advmod	SpaceAfter=No
+4	:	:	PUNCT	_	_	5	punct	5:punct	_
+5	copie	copiar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	1	parataxis	1:parataxis	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	compartilhe	compartilhar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	5	conj	1:parataxis|5:conj:e	_
+8	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	9	det	9:det	_
+9	aviso	aviso	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	10	10	NUM	_	NumType=Card	12	nummod	12:nummod	_
+12	grupos	grupo	NOUN	_	Gender=Masc|Number=Plur	7	obl	7:obl:em	_
+13	diferentes	diferente	ADJ	_	Number=Plur	12	amod	12:amod	SpaceAfter=No
+14	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0011
+# text = É a única maneira de garantir que suas informações privadas permaneçam protegidas.
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+3	única	único	ADJ	_	Gender=Fem|Number=Sing	4	amod	4:amod	_
+4	maneira	maneira	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+5	de	de	ADP	_	_	6	mark	6:mark	_
+6	garantir	garantir	VERB	_	VerbForm=Inf	4	acl	4:acl:de	_
+7	que	que	SCONJ	_	_	11	mark	11:mark	_
+8	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	9	det	9:det	_
+9	informações	informação	NOUN	_	Gender=Fem|Number=Plur	11	nsubj	11:nsubj|12:nsubj	_
+10	privadas	privado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	9	amod	9:amod	_
+11	permaneçam	permanecer	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	ccomp	6:ccomp	_
+12	protegidas	protegido	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	11	xcomp	11:xcomp	SpaceAfter=No
+13	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0013
+# text = Atenção: não se esqueça de incluir "Eu não autorizo" no texto para que tenha validade!
+1	Atenção	atenção	NOUN	_	Gender=Fem|Number=Sing	5	discourse	5:discourse	SpaceAfter=No
+2	:	:	PUNCT	_	_	1	punct	1:punct	_
+3	não	não	ADV	_	_	5	advmod	5:advmod	_
+4	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	5	expl	5:expl	_
+5	esqueça	esquecer	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+6	de	de	ADP	_	_	7	mark	7:mark	_
+7	incluir	incluir	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	_
+8	"	"	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+9	Eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	11	nsubj	11:nsubj	_
+10	não	não	ADV	_	_	11	advmod	11:advmod	_
+11	autorizo	autorizar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	7	ccomp	7:ccomp	SpaceAfter=No
+12	"	"	PUNCT	_	_	11	punct	11:punct	_
+13-14	no	_	_	_	_	_	_	_	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	texto	texto	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:em	_
+16	para	para	ADP	_	ExtPos=SCONJ	18	mark	18:mark	_
+17	que	que	SCONJ	_	_	16	fixed	16:fixed	_
+18	tenha	ter	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	advcl	7:advcl:para_que	_
+19	validade	validade	NOUN	_	Gender=Fem|Number=Sing	18	obj	18:obj	SpaceAfter=No
+20	!	!	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0015
+# text = Eu, [seu nome], não autorizo o WhatsApp ou qualquer organização associada, como Facebook e Instagram, a utilizar minhas imagens, informações, mensagens, fotos, mensagens excluídas, arquivos, etc.
+1	Eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	9	nsubj	9:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	5	punct	5:punct	_
+3	[	[	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+4	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	det	5:det	_
+5	nome	nome	NOUN	_	Gender=Masc|Number=Sing	1	appos	1:appos	SpaceAfter=No
+6	]	]	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+7	,	,	PUNCT	_	_	5	punct	5:punct	_
+8	não	não	ADV	_	_	9	advmod	9:advmod	_
+9	autorizo	autorizar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	WhatsApp	WhatsApp	PROPN	_	_	9	obj	9:obj|23:nsubj	_
+12	ou	ou	CCONJ	_	_	14	cc	14:cc	_
+13	qualquer	qualquer	DET	_	Number=Sing|PronType=Ind	14	det	14:det	_
+14	organização	organização	NOUN	_	Gender=Fem|Number=Sing	11	conj	9:obj|11:conj:ou|23:nsubj	_
+15	associada	associado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	14	amod	14:amod	SpaceAfter=No
+16	,	,	PUNCT	_	_	18	punct	18:punct	_
+17	como	como	ADP	_	_	18	case	18:case|20:case	_
+18	Facebook	Facebook	PROPN	_	_	14	nmod	14:nmod:como	_
+19	e	e	CCONJ	_	_	20	cc	20:cc	_
+20	Instagram	Instagram	PROPN	_	_	18	conj	14:nmod:como|18:conj:e	SpaceAfter=No
+21	,	,	PUNCT	_	_	18	punct	18:punct	_
+22	a	a	ADP	_	_	23	mark	23:mark	_
+23	utilizar	utilizar	VERB	_	VerbForm=Inf	9	xcomp	9:xcomp	_
+24	minhas	meu	DET	_	Gender=Fem|Number=Plur|Person=1|Poss=Yes|PronType=Prs	25	det	25:det	_
+25	imagens	imagem	NOUN	_	Gender=Fem|Number=Plur	23	obj	23:obj	SpaceAfter=No
+26	,	,	PUNCT	_	_	27	punct	27:punct	_
+27	informações	informação	NOUN	_	Gender=Fem|Number=Plur	25	conj	23:obj|25:conj	SpaceAfter=No
+28	,	,	PUNCT	_	_	29	punct	29:punct	_
+29	mensagens	mensagem	NOUN	_	Gender=Fem|Number=Plur	25	conj	23:obj|25:conj	SpaceAfter=No
+30	,	,	PUNCT	_	_	31	punct	31:punct	_
+31	fotos	foto	NOUN	_	Number=Plur	25	conj	23:obj|25:conj	SpaceAfter=No
+32	,	,	PUNCT	_	_	33	punct	33:punct	_
+33	mensagens	mensagem	NOUN	_	Gender=Fem|Number=Plur	25	conj	23:obj|25:conj	_
+34	excluídas	excluír	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	33	acl	33:acl	SpaceAfter=No
+35	,	,	PUNCT	_	_	36	punct	36:punct	_
+36	arquivos	arquivo	NOUN	_	Gender=Masc|Number=Plur	25	conj	23:obj|25:conj	SpaceAfter=No
+37	,	,	PUNCT	_	_	36	punct	36:punct	_
+38	etc.	etc.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0017
+# text = Qualquer uso sem minha autorização expressa e por escrito será seguido de medidas legais.
+1	Qualquer	qualquer	DET	_	Number=Sing|PronType=Ind	2	det	2:det	_
+2	uso	uso	NOUN	_	Gender=Masc|Number=Sing	11	nsubj:pass	11:nsubj:pass	_
+3	sem	sem	ADP	_	_	5	case	5:case	_
+4	minha	meu	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	5	det	5:det	_
+5	autorização	autorização	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:sem	_
+6	expressa	expresso	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	5	amod	5:amod	_
+7	e	e	CCONJ	_	_	9	cc	9:cc	_
+8	por	por	ADP	_	_	9	case	9:case	_
+9	escrito	escrito	NOUN	_	Gender=Masc|Number=Sing	6	conj	5:nmod:por|6:conj:e	_
+10	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	11	aux:pass	11:aux:pass	_
+11	seguido	seguir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	medidas	medida	NOUN	_	Gender=Fem|Number=Plur	11	obl	11:obl:de	_
+14	legais	legal	ADJ	_	Number=Plur	13	amod	13:amod	SpaceAfter=No
+15	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0019
+# text = Lembre-se, a criptografia que prometiam não é mais suficiente para proteger seus dados.
+1-2	Lembre-se	_	_	_	_	_	_	_	_
+1	Lembre	lembrar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	1	expl	1:expl	_
+3	,	,	PUNCT	_	_	11	punct	11:punct	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	criptografia	criptografia	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	7:obj|11:nsubj	_
+6	que	que	PRON	_	PronType=Rel	7	obj	5:ref	_
+7	prometiam	prometer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_
+8	não	não	ADV	_	_	11	advmod	11:advmod	_
+9	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	11:cop	_
+10	mais	mais	ADV	_	_	11	advmod	11:advmod	_
+11	suficiente	suficiente	ADJ	_	Number=Sing	1	ccomp	1:ccomp	_
+12	para	para	ADP	_	_	13	mark	13:mark	_
+13	proteger	proteger	VERB	_	VerbForm=Inf	11	acl	11:acl:para	_
+14	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	15	det	15:det	_
+15	dados	dado	NOUN	_	Gender=Masc|Number=Plur	13	obj	13:obj	SpaceAfter=No
+16	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0021
+# text = Compartilhe e garanta a proteção do seu celular! Se você enviar este aviso para 10 grupos, um símbolo de escudo aparecerá no seu WhatsApp, confirmando a proteção contra essa nova regra.
+1	Compartilhe	compartilhar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	e	e	CCONJ	_	_	3	cc	3:cc	_
+3	garanta	garantir	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	1	conj	1:conj:e	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	proteção	proteção	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+6-7	do	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	9	case	9:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+8	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	9	det	9:det	_
+9	celular	celular	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:de	SpaceAfter=No
+10	!	!	PUNCT	_	_	24	punct	24:punct	_
+11	Se	se	SCONJ	_	_	13	mark	13:mark	_
+12	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	13	nsubj	13:nsubj	_
+13	enviar	enviar	VERB	_	VerbForm=Inf	24	advcl	24:advcl:se	_
+14	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	15	det	15:det	_
+15	aviso	aviso	NOUN	_	Gender=Masc|Number=Sing	13	obj	13:obj	_
+16	para	para	ADP	_	_	18	case	18:case	_
+17	10	10	NUM	_	NumType=Card	18	nummod	18:nummod	_
+18	grupos	grupo	NOUN	_	Gender=Masc|Number=Plur	13	obl	13:obl:para	SpaceAfter=No
+19	,	,	PUNCT	_	_	13	punct	13:punct	_
+20	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	símbolo	símbolo	NOUN	_	Gender=Masc|Number=Sing	24	nsubj	24:nsubj	_
+22	de	de	ADP	_	_	23	case	23:case	_
+23	escudo	escudo	NOUN	_	Gender=Masc|Number=Sing	21	nmod	21:nmod:de	_
+24	aparecerá	aparecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	1	dep	1:dep|3:dep	_
+25-26	no	_	_	_	_	_	_	_	_
+25	em	em	ADP	_	_	28	case	28:case	_
+26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+27	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	28	det	28:det	_
+28	WhatsApp	WhatsApp	PROPN	_	_	24	obl	24:obl:em	SpaceAfter=No
+29	,	,	PUNCT	_	_	30	punct	30:punct	_
+30	confirmando	confirmar	VERB	_	VerbForm=Ger	24	advcl	24:advcl	_
+31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	32:det	_
+32	proteção	proteção	NOUN	_	Gender=Fem|Number=Sing	30	obj	30:obj	_
+33	contra	contra	ADP	_	_	36	case	36:case	_
+34	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	36	det	36:det	_
+35	nova	novo	ADJ	_	Gender=Fem|Number=Sing	36	amod	36:amod	_
+36	regra	regra	NOUN	_	Gender=Fem|Number=Sing	32	nmod	32:nmod:contra	SpaceAfter=No
+37	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0023
+# text = O prazo é até hoje!
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	prazo	prazo	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+4	até	até	ADP	_	_	5	case	5:case	_
+5	hoje	hoje	ADV	_	_	0	root	0:root	SpaceAfter=No
+6	!	!	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0025
+# text = Avisem seus amigos e familiares! Vamos nos unir e nos proteger.
+1	Avisem	avisar	VERB	_	Mood=Imp|Number=Plur|Person=3|VerbForm=Fin	0	root	0:root	_
+2	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	3	det	3:det	_
+3	amigos	amigo	NOUN	_	Gender=Masc|Number=Plur	1	obj	1:obj	_
+4	e	e	CCONJ	_	_	5	cc	5:cc	_
+5	familiares	familiar	NOUN	_	Number=Plur	3	conj	1:obj|3:conj:e	SpaceAfter=No
+6	!	!	PUNCT	_	_	9	punct	9:punct	_
+7	Vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	9	aux	9:aux|12:aux	_
+8	nos	nos	PRON	_	Case=Acc|Number=Plur|Person=1|PronType=Prs	9	obj	9:obj	_
+9	unir	unir	VERB	_	VerbForm=Inf	1	parataxis	1:parataxis	_
+10	e	e	CCONJ	_	_	12	cc	12:cc	_
+11	nos	nos	PRON	_	Case=Acc|Number=Plur|Person=1|PronType=Prs	12	obj	12:obj	_
+12	proteger	proteger	VERB	_	VerbForm=Inf	9	conj	1:parataxis|9:conj:e	SpaceAfter=No
+13	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0027
+# text = #PrivacidadeNoWhatsApp #EuNãoAutorizo.
+1	#PrivacidadeNoWhatsApp	#PrivacidadeNoWhatsApp	PROPN	_	_	2	dep	2:dep	_
+2	#EuNãoAutorizo	#EuNãoAutorizo	PROPN	_	_	0	root	0:root	SpaceAfter=No
+3	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0029
+# text = Nota: O WhatsApp sinaliza essa mensagem como falsa, mas muitos usuários estão tomando precauções extras devido a preocupações crescentes com privacidade.
+1	Nota	nota	NOUN	_	Gender=Fem|Number=Sing	5	parataxis	5:parataxis|15:parataxis	SpaceAfter=No
+2	:	:	PUNCT	_	_	1	punct	1:punct	_
+3	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	WhatsApp	WhatsApp	PROPN	_	_	5	nsubj	5:nsubj	_
+5	sinaliza	sinalizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	7	det	7:det	_
+7	mensagem	mensagem	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+8	como	como	ADP	_	_	9	case	9:case	_
+9	falsa	falso	ADJ	_	Gender=Fem|Number=Sing	5	obl	5:obl:como	SpaceAfter=No
+10	,	,	PUNCT	_	_	15	punct	15:punct	_
+11	mas	mas	CCONJ	_	_	15	cc	15:cc	_
+12	muitos	muito	ADJ	_	Gender=Masc|Number=Plur	13	amod	13:amod	_
+13	usuários	usuário	NOUN	_	Gender=Masc|Number=Plur	15	nsubj	15:nsubj	_
+14	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	aux	15:aux	_
+15	tomando	tomar	VERB	_	VerbForm=Ger	5	conj	5:conj:mas	_
+16	precauções	precaução	NOUN	_	Gender=Fem|Number=Plur	15	obj	15:obj	_
+17	extras	extra	ADJ	_	Number=Plur	16	amod	16:amod	_
+18	devido	dever	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	15	advcl	15:advcl	_
+19	a	a	ADP	_	_	20	case	20:case	_
+20	preocupações	preocupação	NOUN	_	Gender=Fem|Number=Plur	18	obl	18:obl:a	_
+21	crescentes	crescente	ADJ	_	Number=Plur	20	amod	20:amod	_
+22	com	com	ADP	_	_	23	case	23:case	_
+23	privacidade	privacidade	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:com	SpaceAfter=No
+24	.	.	PUNCT	_	_	5	punct	5:punct	_

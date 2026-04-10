@@ -1,0 +1,133 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = URGENTE: Revelação Bombástica! Médicos italianos afirmam ter descoberto que o coronavírus não é o causador das mortes, mas sim uma bactéria letal.
+1	URGENTE	URGENTE	PROPN	_	_	8	parataxis	8:parataxis	SpaceAfter=No
+2	:	:	PUNCT	_	_	3	punct	3:punct	_
+3	Revelação	Revelação	PROPN	_	_	1	parataxis	1:parataxis	_
+4	Bombástica	Bombástica	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+5	!	!	PUNCT	_	_	3	punct	3:punct	_
+6	Médicos	médico	NOUN	_	Gender=Masc|Number=Plur	8	nsubj	8:nsubj|10:nsubj	_
+7	italianos	italiano	ADJ	_	Gender=Masc|Number=Plur	6	amod	6:amod	_
+8	afirmam	afirmar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+9	ter	ter	AUX	_	VerbForm=Inf	10	aux	10:aux	_
+10	descoberto	descobrir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	8	xcomp	8:xcomp	_
+11	que	que	SCONJ	_	_	17	mark	17:mark|25:mark	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	coronavírus	coronavírus	NOUN	_	Gender=Masc	17	nsubj	17:nsubj|25:nsubj	_
+14	não	não	ADV	_	_	17	advmod	17:advmod	_
+15	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	17:cop|25:cop	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	causador	causador	NOUN	_	Gender=Masc|Number=Sing	10	ccomp	10:ccomp	_
+18-19	das	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	20:det	_
+20	mortes	morte	NOUN	_	Gender=Fem|Number=Plur	17	nmod	17:nmod:de	SpaceAfter=No
+21	,	,	PUNCT	_	_	25	punct	25:punct	_
+22	mas	mas	CCONJ	_	_	25	cc	25:cc	_
+23	sim	sim	ADV	_	_	25	advmod	25:advmod	_
+24	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	bactéria	bactéria	NOUN	_	Gender=Fem|Number=Sing	17	conj	10:ccomp|17:conj:mas	_
+26	letal	letal	ADJ	_	Number=Sing	25	amod	25:amod	SpaceAfter=No
+27	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0003
+# text = Segundo relatórios exclusivos, os profissionais de saúde desobedeceram às diretrizes da OMS para realizar autópsias secretas e encontraram evidências de que a COVID-19 seria, na verdade, uma condição provocada por uma bactéria desconhecida até então.
+1	Segundo	segundo	ADP	_	_	2	case	2:case	_
+2	relatórios	relatório	NOUN	_	Gender=Masc|Number=Plur	9	obl	9:obl:segundo	_
+3	exclusivos	exclusivo	ADJ	_	Gender=Masc|Number=Plur	2	amod	2:amod	SpaceAfter=No
+4	,	,	PUNCT	_	_	2	punct	2:punct	_
+5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	6:det	_
+6	profissionais	profissional	NOUN	_	Number=Plur	9	nsubj	9:nsubj|21:nsubj	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de	_
+9	desobedeceram	desobedecer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10-11	às	_	_	_	_	_	_	_	_
+10	a	a	ADP	_	_	12	case	12:case	_
+11	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	12:det	_
+12	diretrizes	diretrize	NOUN	_	Gender=Fem|Number=Plur	9	obl	9:obl:a	_
+13-14	da	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	OMS	OMS	PROPN	_	_	12	nmod	12:nmod:de	_
+16	para	para	ADP	_	_	17	mark	17:mark	_
+17	realizar	realizar	VERB	_	VerbForm=Inf	12	acl	12:acl:para	_
+18	autópsias	autópsia	NOUN	_	Gender=Fem|Number=Plur	17	obj	17:obj	_
+19	secretas	secreto	ADJ	_	Gender=Fem|Number=Plur	18	amod	18:amod	_
+20	e	e	CCONJ	_	_	21	cc	21:cc	_
+21	encontraram	encontrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	9	conj	9:conj:e	_
+22	evidências	evidência	NOUN	_	Gender=Fem|Number=Plur	21	obj	21:obj	_
+23	de	de	ADP	_	ExtPos=SCONJ	34	mark	34:mark	_
+24	que	que	SCONJ	_	_	23	fixed	23:fixed	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	COVID-19	COVID-19	PROPN	_	_	34	nsubj	34:nsubj	_
+27	seria	ser	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	34	cop	34:cop	SpaceAfter=No
+28	,	,	PUNCT	_	_	31	punct	31:punct	_
+29-30	na	_	_	_	_	_	_	_	_
+29	em	em	ADP	_	_	31	case	31:case	_
+30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+31	verdade	verdade	NOUN	_	Gender=Fem|Number=Sing	34	nmod	34:nmod:em	SpaceAfter=No
+32	,	,	PUNCT	_	_	31	punct	31:punct	_
+33	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	34	det	34:det	_
+34	condição	condição	NOUN	_	Gender=Fem|Number=Sing	22	acl	22:acl:de_que	_
+35	provocada	provocar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	34	acl	34:acl	_
+36	por	por	ADP	_	_	38	case	38:case	_
+37	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	38	det	38:det	_
+38	bactéria	bactéria	NOUN	_	Gender=Fem|Number=Sing	35	obl:agent	35:obl:agent	_
+39	desconhecida	desconhecido	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	38	amod	38:amod	_
+40	até	até	ADP	_	_	41	case	41:case	_
+41	então	então	ADV	_	_	39	advmod	39:advmod	SpaceAfter=No
+42	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0005
+# text = Esta bactéria estaria formando coágulos sanguíneos, levando a óbito muitos pacientes.
+1	Esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	2	det	2:det	_
+2	bactéria	bactéria	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+3	estaria	estar	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	4	aux	4:aux	_
+4	formando	formar	VERB	_	VerbForm=Ger	0	root	0:root	_
+5	coágulos	coágulo	NOUN	_	Gender=Masc|Number=Plur	4	obj	4:obj	_
+6	sanguíneos	sanguíneo	ADJ	_	Gender=Masc|Number=Plur	5	amod	5:amod	SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	8:punct	_
+8	levando	levar	VERB	_	VerbForm=Ger	4	advcl	4:advcl	_
+9	a	a	ADP	_	_	10	case	10:case	_
+10	óbito	óbito	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:a	_
+11	muitos	muito	ADJ	_	Gender=Masc|Number=Plur	12	amod	12:amod	_
+12	pacientes	paciente	NOUN	_	Number=Plur	8	obj	8:obj	SpaceAfter=No
+13	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0007
+# text = Especialistas afirmam que isso pode mudar completamente a abordagem do tratamento.
+1	Especialistas	especialista	NOUN	_	Number=Plur	2	nsubj	2:nsubj	_
+2	afirmam	afirmar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	5	mark	5:mark	_
+4	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	5	nsubj	5:nsubj|6:nsubj	_
+5	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	2:ccomp	_
+6	mudar	mudar	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	_
+7	completamente	completamente	ADV	_	_	6	advmod	6:advmod	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	abordagem	abordagem	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	tratamento	tratamento	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:de	SpaceAfter=No
+13	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0009
+# text = Fonte: Documentos confidenciais vazados do Ministério da Saúde da Itália.
+1	Fonte	fonte	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+2	:	:	PUNCT	_	_	3	punct	3:punct	_
+3	Documentos	documento	NOUN	_	Gender=Masc|Number=Plur	1	appos	1:appos	_
+4	confidenciais	confidencial	ADJ	_	Number=Plur	3	amod	3:amod	_
+5	vazados	vazar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	3	acl	3:acl	_
+6-7	do	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	Ministério	Ministério	PROPN	_	_	5	obl	5:obl:de	_
+9-10	da	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	Saúde	Saúde	PROPN	_	_	8	flat:name	8:flat:name	_
+12-13	da	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	Itália	Itália	PROPN	_	_	8	nmod	8:nmod:de	SpaceAfter=No
+15	.	.	PUNCT	_	_	1	punct	1:punct	_

@@ -1,0 +1,172 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = nova york acabou de aprovar aborto ate um dia antes do nascimento aborto aprovado ate um dia antes do nascimento.
+1	nova	novo	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj|5:nsubj	_
+2	york	york	X	_	_	1	nmod	1:nmod	_
+3	acabou	acabar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	de	de	ADP	_	_	5	mark	5:mark	_
+5	aprovar	aprovar	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+6	aborto	aborto	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+7	ate	ate	ADP	_	_	9	case	9:case	_
+8	um	um	NUM	_	Gender=Masc|NumType=Card	9	nummod	9:nummod	_
+9	dia	dia	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:ate	_
+10	antes	antes	ADV	_	_	9	advmod	9:advmod	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	nascimento	nascimento	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:de	_
+14	aborto	aborto	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+15	aprovado	aprovar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	14	acl	14:acl	_
+16	ate	ate	ADP	_	_	18	case	18:case	_
+17	um	um	NUM	_	Gender=Masc|NumType=Card	18	nummod	18:nummod	_
+18	dia	dia	NOUN	_	Gender=Masc|Number=Sing	15	obl	15:obl:ate	_
+19	antes	antes	ADV	_	_	15	advmod	15:advmod	_
+20-21	do	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	nascimento	nascimento	NOUN	_	Gender=Masc|Number=Sing	19	obl	19:obl:de	SpaceAfter=No
+23	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = vcs ainda acham que estamos brincando , de servir deus e combater o mal.
+1	vcs	vcs	PRON	_	Case=Nom|Number=Plur|Person=2|PronType=Prs	3	nsubj	3:nsubj	_
+2	ainda	ainda	ADV	_	_	3	advmod	3:advmod	_
+3	acham	achar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	6	mark	6:mark	_
+5	estamos	estar	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	6	aux	6:aux	_
+6	brincando	brincar	VERB	_	VerbForm=Ger	3	ccomp	3:ccomp	_
+7	,	,	PUNCT	_	_	9	punct	9:punct	_
+8	de	de	ADP	_	_	9	mark	9:mark|12:mark	_
+9	servir	servir	VERB	_	VerbForm=Inf	6	parataxis	6:parataxis	_
+10	deus	deus	NOUN	_	Gender=Masc|Number=Sing	9	obj	9:obj	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	combater	combater	VERB	_	VerbForm=Inf	9	conj	6:parataxis|9:conj:e	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	mal	mal	NOUN	_	Gender=Masc|Number=Sing	12	obj	12:obj	SpaceAfter=No
+15	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0005
+# text = olha o que a esquerda conquistou em nova york.
+1	olha	olhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	1	obj	1:obj|6:obj	_
+3	que	que	PRON	_	PronType=Rel	6	obj	2:ref	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	esquerda	esquerda	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj	_
+6	conquistou	conquistar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	nova	novo	ADJ	_	Gender=Fem|Number=Sing	9	amod	9:amod	_
+9	york	york	X	_	Foreign=Yes	6	obl	6:obl:em	SpaceAfter=No
+10	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0007
+# text = caso aja risco de bem-estar para a gestante lembrando que o prefeito de la e o mesmo que diz odiar o presidente bolsonaro.
+1	caso	caso	SCONJ	_	_	2	mark	2:mark	_
+2	aja	agir	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	risco	risco	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	bem-estar	bem-estar	NOUN	_	Gender=Masc	3	nmod	3:nmod:de	_
+6	para	para	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	gestante	gestante	NOUN	_	Number=Sing	2	obl	2:obl:para	_
+9	lembrando	lembrar	VERB	_	VerbForm=Ger	2	advcl	2:advcl	_
+10	que	que	SCONJ	_	_	17	mark	17:mark	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	prefeito	prefeito	NOUN	_	Gender=Masc|Number=Sing	17	nsubj	17:nsubj	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	la	lo	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	12	nmod	12:nmod:de	_
+15	e	e	CCONJ	_	_	17	cc	17:cc	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	mesmo	mesmo	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	9	ccomp	9:ccomp|19:nsubj|20:nsubj	_
+18	que	que	PRON	_	PronType=Rel	19	nsubj	17:ref	_
+19	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	acl:relcl	17:acl:relcl	_
+20	odiar	odiar	VERB	_	VerbForm=Inf	19	xcomp	19:xcomp	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	presidente	presidente	NOUN	_	Number=Sing	20	obj	20:obj	_
+23	bolsonaro	bolsonaro	ADJ	_	_	22	nmod	22:nmod	SpaceAfter=No
+24	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0009
+# text = lei arbitraria e subjetiva tambem garante 6 meses de aborto gratis e mais 3 se houver alegacao de risco de bem-estar para a gestante.
+1	lei	lei	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj	_
+2	arbitraria	arbitrario	ADJ	_	Gender=Fem|Number=Sing	1	amod	1:amod	_
+3	e	e	CCONJ	_	_	4	cc	4:cc	_
+4	subjetiva	subjetivo	ADJ	_	Gender=Fem|Number=Sing	2	conj	1:amod|2:conj:e	_
+5	tambem	tambem	ADV	_	_	6	advmod	6:advmod	_
+6	garante	garantir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	6	6	NUM	_	NumType=Card	8	nummod	8:nummod	_
+8	meses	mÃªs	NOUN	_	Gender=Masc|Number=Plur	6	obj	6:obj	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	aborto	aborto	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:de	_
+11	gratis	gratis	ADJ	_	Number=Sing	10	amod	10:amod	_
+12	e	e	CCONJ	_	_	14	cc	14:cc	_
+13	mais	mais	ADV	_	_	14	advmod	14:advmod	_
+14	3	3	NUM	_	NumType=Card	8	conj	6:obj|8:conj:e	_
+15	se	se	SCONJ	_	_	16	mark	16:mark	_
+16	houver	haver	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	14	advcl	14:advcl:se	_
+17	alegacao	alegacao	NOUN	_	Gender=Fem|Number=Sing	16	obj	16:obj	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	risco	risco	NOUN	_	Gender=Masc|Number=Sing	17	nmod	17:nmod:de	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	bem-estar	bem-estar	NOUN	_	Gender=Masc	19	nmod	19:nmod:de	_
+22	para	para	ADP	_	_	24	case	24:case	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	gestante	gestante	NOUN	_	Number=Sing	19	nmod	19:nmod:para	SpaceAfter=No
+25	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0011
+# text = o estado de nova iorque aprovou a lei mais extrema que ja existiu nos estados unidos em relacao ao exterminio de seres humanos no ventre materno: as mulheres poderao abortar ate nada menos que um dia antes do nascimento do bebe [].
+1	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	estado	estado	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	nova	novo	ADJ	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+5	iorque	iorque	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod	_
+6	aprovou	aprovar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	lei	lei	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj|13:nsubj	_
+9	mais	mais	ADV	_	_	10	advmod	10:advmod	_
+10	extrema	extremo	ADJ	_	Gender=Fem|Number=Sing	8	amod	8:amod	_
+11	que	que	PRON	_	PronType=Rel	13	nsubj	8:ref	_
+12	ja	ja	ADV	_	_	13	advmod	13:advmod	_
+13	existiu	existir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	acl:relcl	8:acl:relcl	_
+14-15	nos	_	_	_	_	_	_	_	_
+14	em	em	ADP	_	_	16	case	16:case	_
+15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	16:det	_
+16	estados	estado	NOUN	_	Gender=Masc|Number=Plur	13	obl	13:obl:em	_
+17	unidos	unido	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	16	amod	16:amod	_
+18	em	em	ADP	_	_	19	case	19:case	_
+19	relacao	relacao	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:em	_
+20-21	ao	_	_	_	_	_	_	_	_
+20	a	a	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	exterminio	exterminio	NOUN	_	Gender=Masc|Number=Sing	19	nmod	19:nmod:a	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	seres	ser	NOUN	_	Gender=Masc|Number=Plur	22	nmod	22:nmod:de	_
+25	humanos	humano	ADJ	_	Gender=Masc|Number=Plur	24	amod	24:amod	_
+26-27	no	_	_	_	_	_	_	_	_
+26	em	em	ADP	_	_	28	case	28:case	_
+27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	ventre	ventre	NOUN	_	Gender=Masc|Number=Sing	22	nmod	22:nmod:em	_
+29	materno	materno	ADJ	_	Gender=Masc|Number=Sing	28	amod	28:amod	SpaceAfter=No
+30	:	:	PUNCT	_	_	33	punct	33:punct	_
+31	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	32	det	32:det	_
+32	mulheres	mulher	NOUN	_	Gender=Fem|Number=Plur	33	nsubj	33:nsubj|34:nsubj	_
+33	poderao	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	6	parataxis	6:parataxis	_
+34	abortar	abortar	VERB	_	VerbForm=Inf	33	xcomp	33:xcomp	_
+35	ate	ate	ADP	_	ExtPos=ADP	40	case	40:case	_
+36	nada	nada	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	37	fixed	37:fixed	_
+37	menos	menos	ADV	_	ExtPos=ADV	35	fixed	35:fixed	_
+38	que	que	ADP	_	_	35	fixed	35:fixed	_
+39	um	um	NUM	_	Gender=Masc|NumType=Card	40	nummod	40:nummod	_
+40	dia	dia	NOUN	_	Gender=Masc|Number=Sing	41	obl	41:obl:ate_menos_que	_
+41	antes	antes	ADV	_	_	34	advmod	34:advmod	_
+42-43	do	_	_	_	_	_	_	_	_
+42	de	de	ADP	_	_	44	case	44:case	_
+43	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	44:det	_
+44	nascimento	nascimento	NOUN	_	Gender=Masc|Number=Sing	41	obl	41:obl:de	_
+45-46	do	_	_	_	_	_	_	_	_
+45	de	de	ADP	_	_	47	case	47:case	_
+46	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	det	47:det	_
+47	bebe	bebe	NOUN	_	Gender=Masc|Number=Sing	44	nmod	44:nmod:de	_
+48	[	[	PUNCT	_	_	33	punct	33:punct	SpaceAfter=No
+49	]	]	PUNCT	_	_	33	punct	33:punct	SpaceAfter=No
+50	.	.	PUNCT	_	_	6	punct	6:punct	_

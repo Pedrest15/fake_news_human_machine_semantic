@@ -1,0 +1,130 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Supremo Tribunal Federal em crise: Ministro Gilmar Mendes acusado de manipulação para favorecer Lula!
+1	Supremo	Supremo	PROPN	_	_	0	root	0:root	_
+2	Tribunal	Tribunal	PROPN	_	_	1	flat:name	1:flat:name	_
+3	Federal	Federal	PROPN	_	_	1	flat:name	1:flat:name	_
+4	em	em	ADP	_	_	5	case	5:case	_
+5	crise	crise	NOUN	_	Gender=Fem|Number=Sing	1	nmod	1:nmod:em	SpaceAfter=No
+6	:	:	PUNCT	_	_	7	punct	7:punct	_
+7	Ministro	ministro	NOUN	_	Gender=Masc|Number=Sing	1	appos	1:appos	_
+8	Gilmar	Gilmar	PROPN	_	_	7	nmod	7:nmod	_
+9	Mendes	Mendes	PROPN	_	_	8	flat:name	8:flat:name	_
+10	acusado	acusar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	7	acl	7:acl	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	manipulação	manipulação	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:de	_
+13	para	para	ADP	_	_	14	mark	14:mark	_
+14	favorecer	favorecer	VERB	_	VerbForm=Inf	12	acl	12:acl:para	_
+15	Lula	Lula	PROPN	_	_	14	obj	14:obj	SpaceAfter=No
+16	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Documentos vazados revelam supostas pressões e acordos secretos para alterar decisões sobre a prisão do ex-presidente.
+1	Documentos	documento	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	3:nsubj	_
+2	vazados	vazar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	1	acl	1:acl	_
+3	revelam	revelar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	supostas	suposto	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	5	amod	5:amod	_
+5	pressões	pressão	NOUN	_	Gender=Fem|Number=Plur	3	obj	3:obj	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	acordos	acordo	NOUN	_	Gender=Masc|Number=Plur	5	conj	3:obj|5:conj:e	_
+8	secretos	secreto	ADJ	_	Gender=Masc|Number=Plur	7	amod	7:amod	_
+9	para	para	ADP	_	_	10	mark	10:mark	_
+10	alterar	alterar	VERB	_	VerbForm=Inf	5	acl	5:acl:para|7:acl:para	_
+11	decisões	decisão	NOUN	_	Gender=Fem|Number=Plur	10	obj	10:obj	_
+12	sobre	sobre	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	prisão	prisão	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:sobre	_
+15-16	do	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	ex-presidente	ex-presidente	NOUN	_	Number=Sing	14	nmod	14:nmod:de	SpaceAfter=No
+18	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0005
+# text = Fontes anônimas afirmam que mudanças repentinas de opinião entre os Ministros não são meras coincidências, mas resultado de influências políticas e financeiras.
+1	Fontes	fonte	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	3:nsubj	_
+2	anônimas	anônimo	ADJ	_	Gender=Fem|Number=Plur	1	amod	1:amod	_
+3	afirmam	afirmar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	15	mark	15:mark|18:mark	_
+5	mudanças	mudança	NOUN	_	Gender=Fem|Number=Plur	15	nsubj	15:nsubj|18:nsubj	_
+6	repentinas	repentino	ADJ	_	Gender=Fem|Number=Plur	5	amod	5:amod	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	opinião	opinião	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	_
+9	entre	entre	ADP	_	_	11	case	11:case	_
+10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	11:det	_
+11	Ministros	Ministros	PROPN	_	_	5	nmod	5:nmod:entre	_
+12	não	não	ADV	_	_	15	advmod	15:advmod	_
+13	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	cop	15:cop|18:cop	_
+14	meras	mero	ADJ	_	Gender=Fem|Number=Plur	15	amod	15:amod	_
+15	coincidências	coincidência	NOUN	_	Gender=Fem|Number=Plur	3	ccomp	3:ccomp	SpaceAfter=No
+16	,	,	PUNCT	_	_	18	punct	18:punct	_
+17	mas	mas	CCONJ	_	_	18	cc	18:cc	_
+18	resultado	resultado	NOUN	_	Gender=Masc|Number=Sing	15	conj	3:ccomp|15:conj:mas	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	influências	influência	NOUN	_	Gender=Fem|Number=Plur	18	nmod	18:nmod:de	_
+21	políticas	político	ADJ	_	Gender=Fem|Number=Plur	20	amod	20:amod	_
+22	e	e	CCONJ	_	_	23	cc	23:cc	_
+23	financeiras	financeiro	ADJ	_	Gender=Fem|Number=Plur	21	conj	20:amod|21:conj:e	SpaceAfter=No
+24	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = Relatórios indicam que o Habeas Corpus de Lula foi priorizado devido a interesses ocultos, enquanto casos de réus presos aguardam indefinidamente.
+1	Relatórios	relatório	NOUN	_	Gender=Masc|Number=Plur	2	nsubj	2:nsubj	_
+2	indicam	indicar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	10	mark	10:mark	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	Habeas	Habeas	PROPN	_	_	10	nsubj:pass	10:nsubj:pass	_
+6	Corpus	Corpus	PROPN	_	_	5	flat:name	5:flat:name	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	Lula	Lula	PROPN	_	_	5	nmod	5:nmod:de	_
+9	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	aux:pass	10:aux:pass	_
+10	priorizado	priorizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	ccomp	2:ccomp	_
+11	devido	dever	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	10	advcl	10:advcl	_
+12	a	a	ADP	_	_	13	case	13:case	_
+13	interesses	interesse	NOUN	_	Gender=Masc|Number=Plur	11	obl	11:obl:a	_
+14	ocultos	oculto	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	13	amod	13:amod	SpaceAfter=No
+15	,	,	PUNCT	_	_	21	punct	21:punct	_
+16	enquanto	enquanto	SCONJ	_	_	21	mark	21:mark	_
+17	casos	caso	NOUN	_	Gender=Masc|Number=Plur	21	nsubj	21:nsubj	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	réus	réu	NOUN	_	Gender=Masc|Number=Plur	17	nmod	17:nmod:de	_
+20	presos	prender	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	19	acl	19:acl	_
+21	aguardam	aguardar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	advcl	10:advcl:enquanto	_
+22	indefinidamente	indefinidamente	ADV	_	_	21	advmod	21:advmod	SpaceAfter=No
+23	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0009
+# text = A sociedade clama por justiça e transparência, questionando a integridade do STF.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	sociedade	sociedade	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_
+3	clama	clamar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	por	por	ADP	_	_	5	case	5:case|7:case	_
+5	justiça	justiça	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:por	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	transparência	transparência	NOUN	_	Gender=Fem|Number=Sing	5	conj	3:obl:por|5:conj:e	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	questionando	questionar	VERB	_	VerbForm=Ger	3	advcl	3:advcl	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	integridade	integridade	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	STF	STF	PROPN	_	_	11	nmod	11:nmod:de	SpaceAfter=No
+15	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0011
+# text = Será que a segurança jurídica no Brasil é apenas uma fachada?
+1	Será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	12	discourse	12:discourse	_
+2	que	que	SCONJ	_	_	12	mark	12:mark	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	segurança	segurança	NOUN	_	Number=Sing	12	nsubj	12:nsubj	_
+5	jurídica	jurídico	ADJ	_	Gender=Fem|Number=Sing	4	amod	4:amod	_
+6-7	no	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	Brasil	Brasil	PROPN	_	_	4	nmod	4:nmod:em	_
+9	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	12:cop	_
+10	apenas	apenas	ADV	_	_	12	advmod	12:advmod	_
+11	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	fachada	fachada	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+13	?	?	PUNCT	_	_	12	punct	12:punct	_

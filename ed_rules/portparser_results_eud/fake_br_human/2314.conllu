@@ -1,0 +1,72 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Site diz que nadador americano que "inventou" assalto estava na gandaia com mulheres.
+1	Site	site	NOUN	_	Gender=Masc|Number=Sing	2	nsubj	2:nsubj	_
+2	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	14	mark	14:mark	_
+4	nadador	nadador	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	8:nsubj|14:nsubj	_
+5	americano	americano	ADJ	_	Gender=Masc|Number=Sing	4	amod	4:amod	_
+6	que	que	PRON	_	PronType=Rel	8	nsubj	4:ref	_
+7	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	inventou	inventar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	acl:relcl	4:acl:relcl	SpaceAfter=No
+9	"	"	PUNCT	_	_	8	punct	8:punct	_
+10	assalto	assalto	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	_
+11	estava	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	14	cop	14:cop	_
+12-13	na	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	gandaia	gandaia	NOUN	_	Gender=Fem|Number=Sing	2	ccomp	2:ccomp	_
+15	com	com	ADP	_	_	16	case	16:case	_
+16	mulheres	mulher	NOUN	_	Gender=Fem|Number=Plur	14	nmod	14:nmod:com	SpaceAfter=No
+17	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = PF está na cola dele.
+1	PF	PF	PROPN	_	_	5	nsubj	5:nsubj	_
+2	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+3-4	na	_	_	_	_	_	_	_	_
+3	em	em	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	cola	cola	NOUN	_	Number=Sing	0	root	0:root	_
+6-7	dele	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nmod	5:nmod:de	_
+8	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0005
+# text = A PF cumpriu, na manhã de hoje (17), um mandado de busca e apreensão dos passaportes dos nadadores americanos Ryan Lochte e James Feigen.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	PF	PF	PROPN	_	_	3	nsubj	3:nsubj	_
+3	cumpriu	cumprir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+4	,	,	PUNCT	_	_	7	punct	7:punct	_
+5-6	na	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	manhã	manhã	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:em	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	hoje	hoje	ADV	_	_	7	nmod	7:nmod:de	_
+10	(	(	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+11	17	17	NUM	_	NumType=Card	9	appos	9:appos	SpaceAfter=No
+12	)	)	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+13	,	,	PUNCT	_	_	7	punct	7:punct	_
+14	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	mandado	mandado	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	_
+16	de	de	ADP	_	_	17	case	17:case|19:case	_
+17	busca	busca	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:de	_
+18	e	e	CCONJ	_	_	19	cc	19:cc	_
+19	apreensão	apreensão	NOUN	_	Gender=Fem|Number=Sing	17	conj	15:nmod:de|17:conj:e	_
+20-21	dos	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	22:det	_
+22	passaportes	passaporte	NOUN	_	Gender=Masc|Number=Plur	15	nmod	15:nmod:de	_
+23-24	dos	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	25:det	_
+25	nadadores	nadador	NOUN	_	Gender=Masc|Number=Plur	22	nmod	22:nmod:de	_
+26	americanos	americano	ADJ	_	Gender=Masc|Number=Plur	25	amod	25:amod	_
+27	Ryan	Ryan	PROPN	_	_	25	nmod	25:nmod	_
+28	Lochte	Lochte	PROPN	_	_	27	flat:name	27:flat:name	_
+29	e	e	CCONJ	_	_	30	cc	30:cc	_
+30	James	James	PROPN	_	_	27	conj	25:nmod|27:conj:e	_
+31	Feigen	Feigen	PROPN	_	_	30	flat:name	30:flat:name	SpaceAfter=No
+32	.	.	PUNCT	_	_	3	punct	3:punct	_

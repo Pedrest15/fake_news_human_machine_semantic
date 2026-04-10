@@ -1,0 +1,551 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Polícia identifica veterano do Exército como autor de ataque em Dallas.
+1	Polícia	polícia	NOUN	_	Number=Sing	2	nsubj	2:nsubj	_
+2	identifica	identificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	veterano	veterano	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	Exército	Exército	PROPN	_	_	3	nmod	3:nmod:de	_
+7	como	como	ADP	_	_	8	case	8:case	_
+8	autor	autor	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:como	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	ataque	ataque	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:de	_
+11	em	em	ADP	_	_	12	case	12:case	_
+12	Dallas	Dallas	PROPN	_	_	10	nmod	10:nmod:em	SpaceAfter=No
+13	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Micah Xavier Johnson, negro, de 25 anos, morreu durante o tiroteio era entusiasta de armas e táticas militares.
+1	Micah	Micah	PROPN	_	_	11	nsubj	11:nsubj	_
+2	Xavier	Xavier	PROPN	_	_	1	flat:name	1:flat:name	_
+3	Johnson	Johnson	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	negro	negro	NOUN	_	Gender=Masc|Number=Sing	1	appos	1:appos	SpaceAfter=No
+6	,	,	PUNCT	_	_	9	punct	9:punct	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	25	25	NUM	_	NumType=Card	9	nummod	9:nummod	_
+9	anos	ano	NOUN	_	Gender=Masc|Number=Plur	1	nmod	1:nmod:de	SpaceAfter=No
+10	,	,	PUNCT	_	_	5	punct	5:punct	_
+11	morreu	morrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	durante	durante	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	tiroteio	tiroteio	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:durante	_
+15	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	16	cop	16:cop	_
+16	entusiasta	entusiasta	NOUN	_	Number=Sing	11	ccomp	11:ccomp	_
+17	de	de	ADP	_	_	18	case	18:case|20:case	_
+18	armas	arma	NOUN	_	Gender=Fem|Number=Plur	16	nmod	16:nmod:de	_
+19	e	e	CCONJ	_	_	20	cc	20:cc	_
+20	táticas	tática	NOUN	_	Gender=Fem|Number=Plur	18	conj	16:nmod:de|18:conj:e	_
+21	militares	militar	ADJ	_	Number=Plur	20	amod	20:amod	SpaceAfter=No
+22	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0005
+# text = DALLAS, EUA - Em um desenvolvimento surpreendente, autoridades de Dallas afirmaram que o ataque que matou cinco policiais na noite de quinta-feira durante um protesto contra abusos policiais foi orquestrado por uma rede de extremistas.
+1	DALLAS	DALLAS	PROPN	_	_	13	nsubj	13:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	EUA	EUA	PROPN	_	_	1	parataxis	1:parataxis	_
+4	-	-	PUNCT	_	_	3	punct	3:punct	_
+5	Em	em	ADP	_	_	7	case	7:case	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	desenvolvimento	desenvolvimento	NOUN	_	Gender=Masc|Number=Sing	13	obl	13:obl:em	_
+8	surpreendente	surpreendente	ADJ	_	Number=Sing	7	amod	7:amod	SpaceAfter=No
+9	,	,	PUNCT	_	_	7	punct	7:punct	_
+10	autoridades	autoridade	NOUN	_	Gender=Fem|Number=Plur	13	nsubj	13:nsubj	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	Dallas	Dallas	PROPN	_	_	10	nmod	10:nmod:de	_
+13	afirmaram	afirmar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	que	que	SCONJ	_	_	33	mark	33:mark	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	ataque	ataque	NOUN	_	Gender=Masc|Number=Sing	33	nsubj:pass	18:nsubj|33:nsubj:pass	_
+17	que	que	PRON	_	PronType=Rel	18	nsubj	16:ref	_
+18	matou	matar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	acl:relcl	16:acl:relcl	_
+19	cinco	cinco	NUM	_	NumType=Card	20	nummod	20:nummod	_
+20	policiais	policial	NOUN	_	Number=Plur	18	obj	18:obj	_
+21-22	na	_	_	_	_	_	_	_	_
+21	em	em	ADP	_	_	23	case	23:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	noite	noite	NOUN	_	Gender=Fem|Number=Sing	18	obl	18:obl:em	_
+24	de	de	ADP	_	_	25	case	25:case	_
+25	quinta-feira	quinta-feira	NOUN	_	Gender=Fem|Number=Sing	23	nmod	23:nmod:de	_
+26	durante	durante	ADP	_	_	28	case	28:case	_
+27	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	protesto	protesto	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:durante	_
+29	contra	contra	ADP	_	_	30	case	30:case	_
+30	abusos	abuso	NOUN	_	Gender=Masc|Number=Plur	28	nmod	28:nmod:contra	_
+31	policiais	policial	ADJ	_	Number=Plur	30	amod	30:amod	_
+32	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	33	aux:pass	33:aux:pass	_
+33	orquestrado	orquestrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	13	ccomp	13:ccomp	_
+34	por	por	ADP	_	_	36	case	36:case	_
+35	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	36	det	36:det	_
+36	rede	rede	NOUN	_	Gender=Fem|Number=Sing	33	obl:agent	33:obl:agent	_
+37	de	de	ADP	_	_	38	case	38:case	_
+38	extremistas	extremista	NOUN	_	Number=Plur	36	nmod	36:nmod:de	SpaceAfter=No
+39	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0007
+# text = Micah Xavier Johnson, um veterano negro de 25 anos da guerra do Afeganistão, foi identificado como o principal atirador, mas, segundo fontes não oficiais, ele seria apenas a ponta do iceberg.
+1	Micah	Micah	PROPN	_	_	19	nsubj:pass	19:nsubj:pass	_
+2	Xavier	Xavier	PROPN	_	_	1	flat:name	1:flat:name	_
+3	Johnson	Johnson	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+4	,	,	PUNCT	_	_	6	punct	6:punct	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	veterano	veterano	NOUN	_	Gender=Masc|Number=Sing	1	appos	1:appos	_
+7	negro	negro	ADJ	_	Gender=Masc|Number=Sing	6	amod	6:amod	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	25	25	NUM	_	NumType=Card	10	nummod	10:nummod	_
+10	anos	ano	NOUN	_	Gender=Masc|Number=Plur	6	nmod	6:nmod:de	_
+11-12	da	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	guerra	guerra	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:de	_
+14-15	do	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	Afeganistão	Afeganistão	PROPN	_	_	13	nmod	13:nmod:de	SpaceAfter=No
+17	,	,	PUNCT	_	_	6	punct	6:punct	_
+18	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	aux:pass	19:aux:pass	_
+19	identificado	identificar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+20	como	como	ADP	_	_	23	case	23:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+22	principal	principal	ADJ	_	Number=Sing	23	amod	23:amod	_
+23	atirador	atirador	NOUN	_	Gender=Masc|Number=Sing	19	obl	19:obl:como	SpaceAfter=No
+24	,	,	PUNCT	_	_	36	punct	36:punct	_
+25	mas	mas	CCONJ	_	_	36	cc	36:cc	SpaceAfter=No
+26	,	,	PUNCT	_	_	28	punct	28:punct	_
+27	segundo	segundo	ADP	_	_	28	case	28:case	_
+28	fontes	fonte	NOUN	_	Gender=Fem|Number=Plur	36	nmod	36:nmod:segundo	_
+29	não	não	ADV	_	_	30	advmod	30:advmod	_
+30	oficiais	oficial	ADJ	_	Number=Plur	28	amod	28:amod	SpaceAfter=No
+31	,	,	PUNCT	_	_	28	punct	28:punct	_
+32	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	36	nsubj	36:nsubj	_
+33	seria	ser	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	36	cop	36:cop	_
+34	apenas	apenas	ADV	_	_	36	advmod	36:advmod	_
+35	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	36:det	_
+36	ponta	ponta	NOUN	_	Gender=Fem|Number=Sing	19	conj	19:conj:mas	_
+37-38	do	_	_	_	_	_	_	_	_
+37	de	de	ADP	_	_	39	case	39:case	_
+38	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	39:det	_
+39	iceberg	iceberg	NOUN	_	Gender=Masc|Number=Sing	36	nmod	36:nmod:de	SpaceAfter=No
+40	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0009
+# text = Johnson, que morreu durante o confronto, teria confessado que fazia parte de um grupo secreto planejando uma série de ataques contra as forças de segurança.
+1	Johnson	Johnson	PROPN	_	_	10	nsubj	4:nsubj|10:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	4	punct	4:punct	_
+3	que	que	PRON	_	PronType=Rel	4	nsubj	1:ref	_
+4	morreu	morrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+5	durante	durante	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	confronto	confronto	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:durante	SpaceAfter=No
+8	,	,	PUNCT	_	_	4	punct	4:punct	_
+9	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	10	aux	10:aux	_
+10	confessado	confessar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+11	que	que	SCONJ	_	_	12	mark	12:mark	_
+12	fazia	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	10	ccomp	10:ccomp	_
+13	parte	parte	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	grupo	grupo	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:de	_
+17	secreto	secreto	ADJ	_	Gender=Masc|Number=Sing	16	amod	16:amod	_
+18	planejando	planejar	VERB	_	VerbForm=Ger	16	acl	16:acl	_
+19	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	série	série	NOUN	_	Gender=Fem|Number=Sing	18	obj	18:obj	_
+21	de	de	ADP	_	_	22	case	22:case	_
+22	ataques	ataque	NOUN	_	Gender=Masc|Number=Plur	20	nmod	20:nmod:de	_
+23	contra	contra	ADP	_	_	25	case	25:case	_
+24	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	25:det	_
+25	forças	força	NOUN	_	Gender=Fem|Number=Plur	22	nmod	22:nmod:contra	_
+26	de	de	ADP	_	_	27	case	27:case	_
+27	segurança	segurança	NOUN	_	Number=Sing	25	nmod	25:nmod:de	SpaceAfter=No
+28	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0011
+# text = O presidente Barack Obama, em um discurso emocionado em Varsóvia, na Polônia, não só condenou a violência como também sugeriu que o evento poderia ter ligações internacionais.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	presidente	presidente	NOUN	_	Number=Sing	19	nsubj	19:nsubj|24:nsubj	_
+3	Barack	Barack	PROPN	_	_	2	nmod	2:nmod	_
+4	Obama	Obama	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	8	punct	8:punct	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	discurso	discurso	NOUN	_	Gender=Masc|Number=Sing	19	obl	19:obl:em	_
+9	emocionado	emocionado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	8	amod	8:amod	_
+10	em	em	ADP	_	_	11	case	11:case	_
+11	Varsóvia	Varsóvia	PROPN	_	_	8	nmod	8:nmod:em	SpaceAfter=No
+12	,	,	PUNCT	_	_	15	punct	15:punct	_
+13-14	na	_	_	_	_	_	_	_	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	Polônia	Polônia	PROPN	_	_	11	nmod	11:nmod:em	SpaceAfter=No
+16	,	,	PUNCT	_	_	15	punct	15:punct	_
+17	não	não	ADV	_	_	18	advmod	18:advmod	_
+18	só	só	ADV	_	_	19	advmod	19:advmod	_
+19	condenou	condenar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	violência	violência	NOUN	_	Gender=Fem|Number=Sing	19	obj	19:obj	_
+22	como	como	CCONJ	_	_	24	cc	24:cc	_
+23	também	também	ADV	_	_	24	advmod	24:advmod	_
+24	sugeriu	sugerir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	conj	19:conj:como	_
+25	que	que	SCONJ	_	_	28	mark	28:mark	_
+26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	evento	evento	NOUN	_	Gender=Masc|Number=Sing	28	nsubj	28:nsubj|29:nsubj	_
+28	poderia	poder	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	24	ccomp	24:ccomp	_
+29	ter	ter	VERB	_	VerbForm=Inf	28	xcomp	28:xcomp	_
+30	ligações	ligação	NOUN	_	Gender=Fem|Number=Plur	29	obj	29:obj	_
+31	internacionais	internacional	ADJ	_	Number=Plur	30	amod	30:amod	SpaceAfter=No
+32	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0013
+# text = "Este ataque sádico e desprezível em Dallas levanta preocupações sobre a influência de grupos extremistas estrangeiros em nosso solo", declarou Obama.
+1	"	"	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+2	Este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	3	det	3:det	_
+3	ataque	ataque	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	9:nsubj	_
+4	sádico	sádico	ADJ	_	Gender=Masc|Number=Sing	3	amod	3:amod	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	desprezível	desprezível	ADJ	_	Number=Sing	4	conj	3:amod|4:conj:e	_
+7	em	em	ADP	_	_	8	case	8:case	_
+8	Dallas	Dallas	PROPN	_	_	3	nmod	3:nmod:em	_
+9	levanta	levantar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	ccomp:speech	23:ccomp:speech	_
+10	preocupações	preocupação	NOUN	_	Gender=Fem|Number=Plur	9	obj	9:obj	_
+11	sobre	sobre	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	influência	influência	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:sobre	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	grupos	grupo	NOUN	_	Gender=Masc|Number=Plur	13	nmod	13:nmod:de	_
+16	extremistas	extremista	ADJ	_	Number=Plur	15	amod	15:amod	_
+17	estrangeiros	estrangeiro	ADJ	_	Gender=Masc|Number=Plur	15	amod	15:amod	_
+18	em	em	ADP	_	_	20	case	20:case	_
+19	nosso	nosso	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	20	det	20:det	_
+20	solo	solo	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod:em	SpaceAfter=No
+21	"	"	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+22	,	,	PUNCT	_	_	9	punct	9:punct	_
+23	declarou	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+24	Obama	Obama	PROPN	_	_	23	nsubj	23:nsubj	SpaceAfter=No
+25	.	.	PUNCT	_	_	23	punct	23:punct	_
+
+# sent_id = S0015
+# text = Estamos investigando todas as possibilidades, incluindo conexões internacionais.
+1	Estamos	estar	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	aux	2:aux	_
+2	investigando	investigar	VERB	_	VerbForm=Ger	0	root	0:root	_
+3	todas	todo	DET	_	Gender=Fem|Number=Plur|PronType=Ind	5	det	5:det	_
+4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	5:det	_
+5	possibilidades	possibilidade	NOUN	_	Gender=Fem|Number=Plur	2	obj	2:obj	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	incluindo	incluir	VERB	_	VerbForm=Ger	2	advcl	2:advcl	_
+8	conexões	conexão	NOUN	_	Gender=Fem|Number=Plur	7	obj	7:obj	_
+9	internacionais	internacional	ADJ	_	Number=Plur	8	amod	8:amod	SpaceAfter=No
+10	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0017
+# text = A polícia de Dallas, liderada pelo chefe David Brown, informou que Johnson possuía um arsenal em casa, incluindo armas de última geração e explosivos de origem questionável.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	polícia	polícia	NOUN	_	Number=Sing	13	nsubj	13:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Dallas	Dallas	PROPN	_	_	2	nmod	2:nmod:de	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	liderada	liderar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	2:acl	_
+7-8	pelo	_	_	_	_	_	_	_	_
+7	por	por	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	chefe	chefe	NOUN	_	Gender=Masc|Number=Sing	6	obl:agent	6:obl:agent	_
+10	David	David	PROPN	_	_	9	nmod	9:nmod	_
+11	Brown	Brown	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+12	,	,	PUNCT	_	_	6	punct	6:punct	_
+13	informou	informar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	que	que	SCONJ	_	_	16	mark	16:mark	_
+15	Johnson	Johnson	PROPN	_	_	16	nsubj	16:nsubj	_
+16	possuía	possuer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	13	ccomp	13:ccomp	_
+17	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	arsenal	arsenal	NOUN	_	Gender=Masc|Number=Sing	16	obj	16:obj	_
+19	em	em	ADP	_	_	20	case	20:case	_
+20	casa	casa	NOUN	_	Gender=Fem|Number=Sing	16	obl	16:obl:em	SpaceAfter=No
+21	,	,	PUNCT	_	_	22	punct	22:punct	_
+22	incluindo	incluir	VERB	_	VerbForm=Ger	18	acl	18:acl	_
+23	armas	arma	NOUN	_	Gender=Fem|Number=Plur	22	obj	22:obj	_
+24	de	de	ADP	_	_	26	case	26:case	_
+25	última	último	ADJ	_	Gender=Fem|Number=Sing	26	amod	26:amod	_
+26	geração	geração	NOUN	_	Gender=Fem|Number=Sing	23	nmod	23:nmod:de	_
+27	e	e	CCONJ	_	_	28	cc	28:cc	_
+28	explosivos	explosivo	NOUN	_	Gender=Masc|Number=Plur	23	conj	22:obj|23:conj:e	_
+29	de	de	ADP	_	_	30	case	30:case	_
+30	origem	origem	NOUN	_	Gender=Fem|Number=Sing	28	nmod	28:nmod:de	_
+31	questionável	questionável	ADJ	_	Number=Sing	30	amod	30:amod	SpaceAfter=No
+32	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0019
+# text = Além disso, o suspeito teria deixado mensagens cifradas em seu diário, indicando comunicação com células similares em outras cidades americanas.
+1	Além	além	ADV	_	_	8	advmod	8:advmod	_
+2-3	disso	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	obl	1:obl:de	_
+4	,	,	PUNCT	_	_	1	punct	1:punct	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	suspeito	suspeito	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	8:nsubj	_
+7	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	8	aux	8:aux	_
+8	deixado	deixar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+9	mensagens	mensagem	NOUN	_	Gender=Fem|Number=Plur	8	obj	8:obj	_
+10	cifradas	cifrado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	9	amod	9:amod	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	13	det	13:det	_
+13	diário	diário	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:em	SpaceAfter=No
+14	,	,	PUNCT	_	_	15	punct	15:punct	_
+15	indicando	indicar	VERB	_	VerbForm=Ger	8	advcl	8:advcl	_
+16	comunicação	comunicação	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	_
+17	com	com	ADP	_	_	18	case	18:case	_
+18	células	célula	NOUN	_	Gender=Fem|Number=Plur	16	nmod	16:nmod:com	_
+19	similares	similar	ADJ	_	Number=Plur	18	amod	18:amod	_
+20	em	em	ADP	_	_	22	case	22:case	_
+21	outras	outro	DET	_	Gender=Fem|Number=Plur|PronType=Ind	22	det	22:det	_
+22	cidades	cidade	NOUN	_	Gender=Fem|Number=Plur	18	nmod	18:nmod:em	_
+23	americanas	americano	ADJ	_	Gender=Fem|Number=Plur	22	amod	22:amod	SpaceAfter=No
+24	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0021
+# text = Outros cinco policiais e dois civis foram baleados no ataque, que transformou o protesto pacífico em um caos.
+1	Outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	3	det	3:det	_
+2	cinco	cinco	NUM	_	NumType=Card	3	nummod	3:nummod	_
+3	policiais	policial	NOUN	_	Number=Plur	8	nsubj:pass	8:nsubj:pass	_
+4	e	e	CCONJ	_	_	6	cc	6:cc	_
+5	dois	dois	NUM	_	Gender=Masc|NumType=Card	6	nummod	6:nummod	_
+6	civis	civil	NOUN	_	Number=Plur	3	conj	3:conj:e|8:nsubj:pass	_
+7	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	8	aux:pass	8:aux:pass	_
+8	baleados	balear	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	_
+9-10	no	_	_	_	_	_	_	_	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	ataque	ataque	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:em|14:nsubj	SpaceAfter=No
+12	,	,	PUNCT	_	_	14	punct	14:punct	_
+13	que	que	PRON	_	PronType=Rel	14	nsubj	11:ref	_
+14	transformou	transformar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	acl:relcl	11:acl:relcl	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	protesto	protesto	NOUN	_	Gender=Masc|Number=Sing	14	obj	14:obj	_
+17	pacífico	pacífico	ADJ	_	Gender=Masc|Number=Sing	16	amod	16:amod	_
+18	em	em	ADP	_	_	20	case	20:case	_
+19	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	caos	caos	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:em	SpaceAfter=No
+21	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0023
+# text = Testemunhas relatam que Johnson não agiu sozinho, mencionando ter visto outros suspeitos em posições estratégicas.
+1	Testemunhas	testemunha	NOUN	_	Gender=Fem|Number=Plur	2	nsubj	2:nsubj	_
+2	relatam	relatar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	6	mark	6:mark	_
+4	Johnson	Johnson	PROPN	_	_	6	nsubj	6:nsubj	_
+5	não	não	ADV	_	_	6	advmod	6:advmod	_
+6	agiu	agir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	ccomp	2:ccomp	_
+7	sozinho	sozinho	ADJ	_	Gender=Masc|Number=Sing	6	advcl	6:advcl	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	mencionando	mencionar	VERB	_	VerbForm=Ger	6	advcl	6:advcl	_
+10	ter	ter	AUX	_	VerbForm=Inf	11	aux	11:aux	_
+11	visto	ver	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	9	xcomp	9:xcomp	_
+12	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	13	det	13:det	_
+13	suspeitos	suspeito	NOUN	_	Gender=Masc|Number=Plur	11	obj	11:obj	_
+14	em	em	ADP	_	_	15	case	15:case	_
+15	posições	posição	NOUN	_	Gender=Fem|Number=Plur	11	obl	11:obl:em	_
+16	estratégicas	estratégico	ADJ	_	Gender=Fem|Number=Plur	15	amod	15:amod	SpaceAfter=No
+17	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0025
+# text = Três pessoas foram presas, mas a polícia acredita que mais membros da suposta rede estejam foragidos.
+1	Três	três	NUM	_	NumType=Card	2	nummod	2:nummod	_
+2	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	4	nsubj:pass	4:nsubj:pass	_
+3	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	presas	prender	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	SpaceAfter=No
+5	,	,	PUNCT	_	_	9	punct	9:punct	_
+6	mas	mas	CCONJ	_	_	9	cc	9:cc	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	polícia	polícia	NOUN	_	Number=Sing	9	nsubj	9:nsubj	_
+9	acredita	acreditar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	4:conj:mas	_
+10	que	que	SCONJ	_	_	18	mark	18:mark	_
+11	mais	mais	DET	_	PronType=Ind	12	det	12:det	_
+12	membros	membro	NOUN	_	Gender=Masc|Number=Plur	18	nsubj	18:nsubj	_
+13-14	da	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	16	case	16:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+15	suposta	suposto	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	16	amod	16:amod	_
+16	rede	rede	NOUN	_	Gender=Fem|Number=Sing	12	nmod	12:nmod:de	_
+17	estejam	estar	AUX	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	cop	18:cop	_
+18	foragidos	foragido	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	9	ccomp	9:ccomp	SpaceAfter=No
+19	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0027
+# text = As investigações iniciais revelaram que Johnson tinha um histórico de viagens suspeitas ao exterior, aumentando as suspeitas de uma conexão internacional.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	investigações	investigação	NOUN	_	Gender=Fem|Number=Plur	4	nsubj	4:nsubj	_
+3	iniciais	inicial	ADJ	_	Number=Plur	2	amod	2:amod	_
+4	revelaram	revelar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	que	que	SCONJ	_	_	7	mark	7:mark	_
+6	Johnson	Johnson	PROPN	_	_	7	nsubj	7:nsubj	_
+7	tinha	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	ccomp	4:ccomp	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	histórico	histórico	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	viagens	viagem	NOUN	_	Gender=Fem|Number=Plur	9	nmod	9:nmod:de	_
+12	suspeitas	suspeito	ADJ	_	Gender=Fem|Number=Plur	11	amod	11:amod	_
+13-14	ao	_	_	_	_	_	_	_	_
+13	a	a	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	exterior	exterior	NOUN	_	Number=Sing	11	nmod	11:nmod:a	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	aumentando	aumentar	VERB	_	VerbForm=Ger	7	advcl	7:advcl	_
+18	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	19:det	_
+19	suspeitas	suspeito	NOUN	_	Gender=Fem|Number=Plur	17	obj	17:obj	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	conexão	conexão	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:de	_
+23	internacional	internacional	ADJ	_	Number=Sing	22	amod	22:amod	SpaceAfter=No
+24	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0029
+# text = Seu perfil nas redes sociais também mostrava apoio a ideologias extremas, incluindo simpatia por grupos armados clandestinos.
+1	Seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	det	2:det	_
+2	perfil	perfil	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	8:nsubj	_
+3-4	nas	_	_	_	_	_	_	_	_
+3	em	em	ADP	_	_	5	case	5:case	_
+4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	5:det	_
+5	redes	rede	NOUN	_	Gender=Fem|Number=Plur	2	nmod	2:nmod:em	_
+6	sociais	social	ADJ	_	Number=Plur	5	amod	5:amod	_
+7	também	também	ADV	_	_	8	advmod	8:advmod	_
+8	mostrava	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+9	apoio	apoio	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	_
+10	a	a	ADP	_	_	11	case	11:case	_
+11	ideologias	ideologia	NOUN	_	Gender=Fem|Number=Plur	9	nmod	9:nmod:a	_
+12	extremas	extremo	ADJ	_	Gender=Fem|Number=Plur	11	amod	11:amod	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	incluindo	incluir	VERB	_	VerbForm=Ger	9	acl	9:acl	_
+15	simpatia	simpatia	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	_
+16	por	por	ADP	_	_	17	case	17:case	_
+17	grupos	grupo	NOUN	_	Gender=Masc|Number=Plur	15	nmod	15:nmod:por	_
+18	armados	armado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	17	amod	17:amod	_
+19	clandestinos	clandestino	ADJ	_	Gender=Masc|Number=Plur	17	amod	17:amod	SpaceAfter=No
+20	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0031
+# text = Durante a operação, um robô com explosivos foi utilizado para neutralizar Johnson após a falha nas negociações, que foram complicadas por ameaças de bombas supostamente plantadas em vários locais.
+1	Durante	durante	ADP	_	_	3	case	3:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	operação	operação	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:durante	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	robô	robô	NOUN	_	Gender=Masc|Number=Sing	10	nsubj:pass	10:nsubj:pass	_
+7	com	com	ADP	_	_	8	case	8:case	_
+8	explosivos	explosivo	NOUN	_	Gender=Masc|Number=Plur	6	nmod	6:nmod:com	_
+9	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	aux:pass	10:aux:pass	_
+10	utilizado	utilizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+11	para	para	ADP	_	_	12	mark	12:mark	_
+12	neutralizar	neutralizar	VERB	_	VerbForm=Inf	10	advcl	10:advcl:para	_
+13	Johnson	Johnson	PROPN	_	_	12	obj	12:obj	_
+14	após	após	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	falha	falha	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl:após	_
+17-18	nas	_	_	_	_	_	_	_	_
+17	em	em	ADP	_	_	19	case	19:case	_
+18	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	19:det	_
+19	negociações	negociação	NOUN	_	Gender=Fem|Number=Plur	16	nmod	16:nmod:em|23:nsubj:pass	SpaceAfter=No
+20	,	,	PUNCT	_	_	23	punct	23:punct	_
+21	que	que	PRON	_	PronType=Rel	23	nsubj:pass	19:ref	_
+22	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	23	aux:pass	23:aux:pass	_
+23	complicadas	complicar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	19	acl:relcl	19:acl:relcl	_
+24	por	por	ADP	_	_	25	case	25:case	_
+25	ameaças	ameaça	NOUN	_	Gender=Fem|Number=Plur	23	obl:agent	23:obl:agent	_
+26	de	de	ADP	_	_	27	case	27:case	_
+27	bombas	bomba	NOUN	_	Gender=Fem|Number=Plur	25	nmod	25:nmod:de	_
+28	supostamente	supostamente	ADV	_	_	29	advmod	29:advmod	_
+29	plantadas	plantar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	27	acl	27:acl	_
+30	em	em	ADP	_	_	32	case	32:case	_
+31	vários	vários	DET	_	Gender=Masc|Number=Plur|PronType=Ind	32	det	32:det	_
+32	locais	local	NOUN	_	Number=Plur	29	obl	29:obl:em	SpaceAfter=No
+33	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0033
+# text = A tensão na cidade de Dallas escalou, com relatos de abordagens policiais agressivas a cidadãos negros, gerando mais protestos e confrontos.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	tensão	tensão	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	8:nsubj	_
+3-4	na	_	_	_	_	_	_	_	_
+3	em	em	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	cidade	cidade	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:em	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	Dallas	Dallas	PROPN	_	_	5	nmod	5:nmod:de	_
+8	escalou	escalar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+9	,	,	PUNCT	_	_	11	punct	11:punct	_
+10	com	com	ADP	_	_	11	case	11:case	_
+11	relatos	relato	NOUN	_	Gender=Masc|Number=Plur	8	obl	8:obl:com	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	abordagens	abordagem	NOUN	_	Gender=Fem|Number=Plur	11	nmod	11:nmod:de	_
+14	policiais	policial	ADJ	_	Number=Plur	13	amod	13:amod	_
+15	agressivas	agressivo	ADJ	_	Gender=Fem|Number=Plur	13	amod	13:amod	_
+16	a	a	ADP	_	_	17	case	17:case	_
+17	cidadãos	cidadão	NOUN	_	Gender=Masc|Number=Plur	13	nmod	13:nmod:a	_
+18	negros	negro	ADJ	_	Gender=Masc|Number=Plur	17	amod	17:amod	SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	20:punct	_
+20	gerando	gerar	VERB	_	VerbForm=Ger	8	advcl	8:advcl	_
+21	mais	mais	DET	_	PronType=Ind	22	det	22:det	_
+22	protestos	protesto	NOUN	_	Gender=Masc|Number=Plur	20	obj	20:obj	_
+23	e	e	CCONJ	_	_	24	cc	24:cc	_
+24	confrontos	confronto	NOUN	_	Gender=Masc|Number=Plur	22	conj	20:obj|22:conj:e	SpaceAfter=No
+25	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0035
+# text = O FBI foi chamado para auxiliar na investigação, que agora se expande para identificar e capturar outros membros da rede mencionada.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	FBI	FBI	PROPN	_	_	4	nsubj:pass	4:nsubj:pass	_
+3	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	chamado	chamar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5	para	para	ADP	_	_	6	mark	6:mark	_
+6	auxiliar	auxiliar	VERB	_	VerbForm=Inf	4	advcl	4:advcl:para	_
+7-8	na	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	investigação	investigação	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:em|14:nsubj	SpaceAfter=No
+10	,	,	PUNCT	_	_	14	punct	14:punct	_
+11	que	que	PRON	_	PronType=Rel	14	nsubj	9:ref	_
+12	agora	agora	ADV	_	_	14	advmod	14:advmod	_
+13	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	14	expl	14:expl	_
+14	expande	expandir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	acl:relcl	9:acl:relcl	_
+15	para	para	ADP	_	_	16	mark	16:mark|18:mark	_
+16	identificar	identificar	VERB	_	VerbForm=Inf	14	advcl	14:advcl:para	_
+17	e	e	CCONJ	_	_	18	cc	18:cc	_
+18	capturar	capturar	VERB	_	VerbForm=Inf	16	conj	14:advcl:para|16:conj:e	_
+19	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	20	det	20:det	_
+20	membros	membro	NOUN	_	Gender=Masc|Number=Plur	16	obj	16:obj|18:obj	_
+21-22	da	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	rede	rede	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:de	_
+24	mencionada	mencionar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	23	acl	23:acl	SpaceAfter=No
+25	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0037
+# text = A agência também está rastreando comunicações digitais para desvendar a extensão das operações planejadas por esse grupo.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	agência	agência	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+3	também	também	ADV	_	_	5	advmod	5:advmod	_
+4	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	5:aux	_
+5	rastreando	rastrear	VERB	_	VerbForm=Ger	0	root	0:root	_
+6	comunicações	comunicação	NOUN	_	Gender=Fem|Number=Plur	5	obj	5:obj	_
+7	digitais	digital	ADJ	_	Number=Plur	6	amod	6:amod	_
+8	para	para	ADP	_	_	9	mark	9:mark	_
+9	desvendar	desvendar	VERB	_	VerbForm=Inf	5	advcl	5:advcl:para	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	extensão	extensão	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+12-13	das	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	14:det	_
+14	operações	operação	NOUN	_	Gender=Fem|Number=Plur	11	nmod	11:nmod:de	_
+15	planejadas	planejar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	14	acl	14:acl	_
+16	por	por	ADP	_	_	18	case	18:case	_
+17	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	18	det	18:det	_
+18	grupo	grupo	NOUN	_	Gender=Masc|Number=Sing	15	obl:agent	15:obl:agent	SpaceAfter=No
+19	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0039
+# text = / Adaptado NYT e WP.
+1	/	/	PUNCT	_	_	2	punct	2:punct	_
+2	Adaptado	adaptar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+3	NYT	NYT	PROPN	_	_	2	obj	2:obj	_
+4	e	e	CCONJ	_	_	5	cc	5:cc	_
+5	WP	WP	PROPN	_	_	3	conj	2:obj|3:conj:e	SpaceAfter=No
+6	.	.	PUNCT	_	_	2	punct	2:punct	_

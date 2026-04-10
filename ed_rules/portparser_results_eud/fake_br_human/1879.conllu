@@ -1,0 +1,99 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = O deputado Lorenzoni está no senado.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+3	Lorenzoni	Lorenzoni	PROPN	_	_	2	nmod	2:nmod	_
+4	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+5-6	no	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	senado	senado	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+8	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0003
+# text = Ele luta sozinho para salvar o Brasil das organizações criminosas.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj	_
+2	luta	lutar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	sozinho	sozinho	ADJ	_	Gender=Masc|Number=Sing	2	advcl	2:advcl	_
+4	para	para	ADP	_	_	5	mark	5:mark	_
+5	salvar	salvar	VERB	_	VerbForm=Inf	2	advcl	2:advcl:para	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Brasil	Brasil	PROPN	_	_	5	obj	5:obj	_
+8-9	das	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	10:det	_
+10	organizações	organização	NOUN	_	Gender=Fem|Number=Plur	5	obl	5:obl:de	_
+11	criminosas	criminoso	ADJ	_	Gender=Fem|Number=Plur	10	amod	10:amod	SpaceAfter=No
+12	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = O deputado relator das 10 medidas contra a corrupção perdeu na Câmara, mas está lá no senado tentando reverter esse quadro.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	11:nsubj|18:nsubj	_
+3	relator	relator	NOUN	_	Gender=Masc|Number=Sing	2	amod	2:amod	_
+4-5	das	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	7	case	7:case	_
+5	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	7:det	_
+6	10	10	NUM	_	NumType=Card	7	nummod	7:nummod	_
+7	medidas	medida	NOUN	_	Gender=Fem|Number=Plur	2	nmod	2:nmod:de	_
+8	contra	contra	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	corrupção	corrupção	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:contra	_
+11	perdeu	perder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12-13	na	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	Câmara	Câmara	PROPN	_	_	11	obl	11:obl:em	SpaceAfter=No
+15	,	,	PUNCT	_	_	18	punct	18:punct	_
+16	mas	mas	CCONJ	_	_	18	cc	18:cc	_
+17	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	cop	18:cop	_
+18	lá	lá	ADV	_	_	11	conj	11:conj:mas	_
+19-20	no	_	_	_	_	_	_	_	_
+19	em	em	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	senado	senado	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:em	_
+22	tentando	tentar	VERB	_	VerbForm=Ger	11	advcl	11:advcl|18:advcl	_
+23	reverter	reverter	VERB	_	VerbForm=Inf	22	xcomp	22:xcomp	_
+24	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	25	det	25:det	_
+25	quadro	quadro	NOUN	_	Gender=Masc|Number=Sing	23	obj	23:obj	SpaceAfter=No
+26	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0007
+# text = Direto do senado.
+1	Direto	direto	ADV	_	_	0	root	0:root	_
+2-3	do	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	senado	senado	NOUN	_	Gender=Masc|Number=Sing	1	obl	1:obl:de	SpaceAfter=No
+5	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0009
+# text = Nem tudo está perdido.
+1	Nem	nem	ADV	_	_	2	advmod	2:advmod	_
+2	tudo	tudo	PRON	_	PronType=Ind	4	nsubj	4:nsubj	_
+3	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+4	perdido	perdido	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0010
+# text = disse Onix Lorenzoni.
+1	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	Onix	Onix	PROPN	_	_	1	nsubj	1:nsubj	_
+3	Lorenzoni	Lorenzoni	PROPN	_	_	2	flat:name	2:flat:name	SpaceAfter=No
+4	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0011
+# text = assista o recado dele no vídeo abaixo:
+1	assista	assistir	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	recado	recado	NOUN	_	Gender=Masc|Number=Sing	1	obj	1:obj	_
+4-5	dele	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nmod	3:nmod:de	_
+6-7	no	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	1	obl	1:obl:em	_
+9	abaixo	abaixo	ADV	_	_	8	advmod	8:advmod	SpaceAfter=No
+10	:	:	PUNCT	_	_	1	punct	1:punct	_

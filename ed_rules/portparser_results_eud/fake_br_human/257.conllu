@@ -1,0 +1,342 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Projeto de lei obriga presos a pagar estadia nos presídios do Brasil, 97% aprovam a ideia, qual sua opinião?.
+1	Projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	lei	lei	NOUN	_	Gender=Fem|Number=Sing	1	nmod	1:nmod:de	_
+4	obriga	obrigar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	presos	preso	NOUN	_	Gender=Masc|Number=Plur	4	obj	4:obj|7:nsubj	_
+6	a	a	ADP	_	_	7	mark	7:mark	_
+7	pagar	pagar	VERB	_	VerbForm=Inf	4	xcomp	4:xcomp	_
+8	estadia	estadia	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	_
+9-10	nos	_	_	_	_	_	_	_	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	11:det	_
+11	presídios	presídio	NOUN	_	Gender=Masc|Number=Plur	8	nmod	8:nmod:em	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	Brasil	Brasil	PROPN	_	_	11	nmod	11:nmod:de	SpaceAfter=No
+15	,	,	PUNCT	_	_	18	punct	18:punct	_
+16	97	97	NUM	_	NumType=Card	17	nummod	17:nummod	SpaceAfter=No
+17	%	%	SYM	_	_	18	nsubj	18:nsubj	_
+18	aprovam	aprovar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	parataxis	4:parataxis	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	ideia	ideia	NOUN	_	Gender=Fem|Number=Sing	18	obj	18:obj	SpaceAfter=No
+21	,	,	PUNCT	_	_	24	punct	24:punct	_
+22	qual	qual	PRON	_	Number=Sing|PronType=Int	24	parataxis	24:parataxis	_
+23	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	24	det	24:det	_
+24	opinião	opinião	NOUN	_	Gender=Fem|Number=Sing	18	parataxis	18:parataxis	SpaceAfter=No
+25	?	?	PUNCT	_	_	24	punct	24:punct	SpaceAfter=No
+26	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0003
+# text = Michel Temer irá adotar modelo de privatização, ao qual obriga presos a trabalharem para pagarem suas despesas durante suas "estadias" dentro dos presídios.
+1	Michel	Michel	PROPN	_	_	4	nsubj	4:nsubj	_
+2	Temer	Temer	PROPN	_	_	1	flat:name	1:flat:name	_
+3	irá	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	aux	4:aux	_
+4	adotar	adotar	VERB	_	VerbForm=Inf	0	root	0:root	_
+5	modelo	modelo	NOUN	_	Number=Sing	4	obj	4:obj|12:obl:a	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	privatização	privatização	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	SpaceAfter=No
+8	,	,	PUNCT	_	_	12	punct	12:punct	_
+9-10	ao	_	_	_	_	_	_	_	_
+9	a	a	ADP	_	_	10	case	10:case	_
+10	o	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	12	obl	5:ref|12:obl	_
+11	qual	qual	PRON	_	Number=Sing|PronType=Rel	10	fixed	10:fixed	_
+12	obriga	obrigar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_
+13	presos	preso	NOUN	_	Gender=Masc|Number=Plur	12	obj	12:obj|15:nsubj	_
+14	a	a	ADP	_	_	15	mark	15:mark	_
+15	trabalharem	trabalhar	VERB	_	Number=Plur|Person=3|VerbForm=Inf	12	xcomp	12:xcomp	_
+16	para	para	ADP	_	_	17	mark	17:mark	_
+17	pagarem	pagar	VERB	_	Number=Plur|Person=3|VerbForm=Inf	15	advcl	15:advcl:para	_
+18	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	19	det	19:det	_
+19	despesas	despesa	NOUN	_	Gender=Fem|Number=Plur	17	obj	17:obj	_
+20	durante	durante	ADP	_	_	23	case	23:case	_
+21	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	23	det	23:det	_
+22	"	"	PUNCT	_	_	23	punct	23:punct	SpaceAfter=No
+23	estadias	estadia	NOUN	_	Gender=Fem|Number=Plur	17	obl	17:obl:durante	SpaceAfter=No
+24	"	"	PUNCT	_	_	23	punct	23:punct	_
+25	dentro	dentro	ADV	_	_	23	advmod	23:advmod	_
+26-27	dos	_	_	_	_	_	_	_	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	28:det	_
+28	presídios	presídio	NOUN	_	Gender=Masc|Number=Plur	25	obl	25:obl:de	SpaceAfter=No
+29	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0005
+# text = A partir disso os presídios deverão passar por uma pequena reforma para que fiquem aptos a exercerem atividades laborais,e outras funções para ajudar a pagar os custos com eles mesmos na cadeia, ou seja despesas dentro do sistema prisional.
+1	A	a	ADP	_	_	2	mark	2:mark	_
+2	partir	partir	VERB	_	VerbForm=Inf	7	advcl	7:advcl:a	_
+3-4	disso	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	2	obl	2:obl:de	_
+5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	6:det	_
+6	presídios	presídio	NOUN	_	Gender=Masc|Number=Plur	7	nsubj	7:nsubj|8:nsubj	_
+7	deverão	dever	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+8	passar	passar	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+9	por	por	ADP	_	_	12	case	12:case	_
+10	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+11	pequena	pequeno	ADJ	_	Gender=Fem|Number=Sing	12	amod	12:amod	_
+12	reforma	reforma	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:por	_
+13	para	para	ADP	_	ExtPos=SCONJ	15	mark	15:mark	_
+14	que	que	SCONJ	_	_	13	fixed	13:fixed	_
+15	fiquem	ficar	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	advcl	8:advcl:para_que	_
+16	aptos	apto	ADJ	_	Gender=Masc|Number=Plur	15	xcomp	15:xcomp	_
+17	a	a	ADP	_	_	18	mark	18:mark	_
+18	exercerem	exercer	VERB	_	Number=Plur|Person=3|VerbForm=Inf	16	acl	16:acl:a	_
+19	atividades	atividade	NOUN	_	Gender=Fem|Number=Plur	18	obj	18:obj	_
+20	laborais,e	laborais,e	CCONJ	_	_	22	cc	22:cc	_
+21	outras	outro	DET	_	Gender=Fem|Number=Plur|PronType=Ind	22	det	22:det	_
+22	funções	função	NOUN	_	Gender=Fem|Number=Plur	19	conj	18:obj|19:conj:laborais,e	_
+23	para	para	ADP	_	_	24	mark	24:mark	_
+24	ajudar	ajudar	VERB	_	VerbForm=Inf	15	advcl	15:advcl:para	_
+25	a	a	ADP	_	_	26	mark	26:mark	_
+26	pagar	pagar	VERB	_	VerbForm=Inf	24	xcomp	24:xcomp	_
+27	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	28:det	_
+28	custos	custo	NOUN	_	Gender=Masc|Number=Plur	26	obj	26:obj	_
+29	com	com	ADP	_	_	30	case	30:case	_
+30	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	28	nmod	28:nmod:com	_
+31	mesmos	mesmo	DET	_	Gender=Masc|Number=Plur|PronType=Dem	30	det	30:det	_
+32-33	na	_	_	_	_	_	_	_	_
+32	em	em	ADP	_	_	34	case	34:case	_
+33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	34:det	_
+34	cadeia	cadeia	NOUN	_	Gender=Fem|Number=Sing	30	nmod	30:nmod:em	SpaceAfter=No
+35	,	,	PUNCT	_	_	38	punct	38:punct	_
+36	ou	ou	CCONJ	_	_	38	cc	38:cc	_
+37	seja	ser	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	38	cop	38:cop	_
+38	despesas	despesa	NOUN	_	Gender=Fem|Number=Plur	28	conj	26:obj|28:conj:ou	_
+39	dentro	dentro	ADV	_	_	38	advmod	38:advmod	_
+40-41	do	_	_	_	_	_	_	_	_
+40	de	de	ADP	_	_	42	case	42:case	_
+41	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	42	det	42:det	_
+42	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	39	obl	39:obl:de	_
+43	prisional	prisional	ADJ	_	Number=Sing	42	amod	42:amod	SpaceAfter=No
+44	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0007
+# text = Diante disso é uma maneira do governo gastar menos e poder usar esse dinheiro de outra forma com a população.
+1	Diante	diante	ADV	_	_	6	advmod	6:advmod	_
+2-3	disso	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	obl	1:obl:de	_
+4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	maneira	maneira	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	10	mark	10:mark|13:mark	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	governo	governo	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	10:nsubj|13:nsubj|14:nsubj	_
+10	gastar	gastar	VERB	_	Number=Sing|Person=3|VerbForm=Inf	6	acl	6:acl:de	_
+11	menos	menos	ADV	_	_	10	advmod	10:advmod	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	poder	poder	VERB	_	VerbForm=Inf	10	conj	6:acl:de|10:conj:e	_
+14	usar	usar	VERB	_	VerbForm=Inf	13	xcomp	13:xcomp	_
+15	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	16	det	16:det	_
+16	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	14	obj	14:obj	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	outra	outro	DET	_	Gender=Fem|Number=Sing|PronType=Ind	19	det	19:det	_
+19	forma	forma	NOUN	_	Gender=Fem|Number=Sing	14	obl	14:obl:de	_
+20	com	com	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	população	população	NOUN	_	Gender=Fem|Number=Sing	14	obl	14:obl:com	SpaceAfter=No
+23	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0009
+# text = O senador Waldemir Moka (PMDB-MS) já havia apresentado esse projeto em 2015 em que gerou muita polêmica, O senador ainda disse em reportagem: Decidi apresentar o projeto quando tomei conhecimento de que um preso custa mais ao Estado do que um estudante de escola pública.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	senador	senador	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	10:nsubj	_
+3	Waldemir	Waldemir	PROPN	_	_	2	nmod	2:nmod	_
+4	Moka	Moka	PROPN	_	_	3	flat:name	3:flat:name	_
+5	(	(	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+6	PMDB-MS	PMDB-MS	PROPN	_	_	2	parataxis	2:parataxis	SpaceAfter=No
+7	)	)	PUNCT	_	_	6	punct	6:punct	_
+8	já	já	ADV	_	_	10	advmod	10:advmod	_
+9	havia	haver	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	10	aux	10:aux	_
+10	apresentado	apresentar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	24	dep	24:dep	_
+11	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	12	det	12:det	_
+12	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	10	obj	10:obj	_
+13	em	em	ADP	_	_	14	case	14:case	_
+14	2015	2015	NUM	_	NumType=Card	10	obl	10:obl:em|17:obl:em	_
+15	em	em	ADP	_	_	16	case	16:case	_
+16	que	que	PRON	_	PronType=Rel	17	obl	14:ref	_
+17	gerou	gerar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	acl:relcl	14:acl:relcl	_
+18	muita	muito	ADJ	_	Gender=Fem|Number=Sing	19	amod	19:amod	_
+19	polêmica	polêmica	NOUN	_	Gender=Fem|Number=Sing	17	obj	17:obj	SpaceAfter=No
+20	,	,	PUNCT	_	_	10	punct	10:punct	_
+21	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	senador	senador	NOUN	_	Gender=Masc|Number=Sing	24	nsubj	24:nsubj	_
+23	ainda	ainda	ADV	_	_	24	advmod	24:advmod	_
+24	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+25	em	em	ADP	_	_	26	case	26:case	_
+26	reportagem	reportagem	NOUN	_	Gender=Fem|Number=Sing	24	obl	24:obl:em	SpaceAfter=No
+27	:	:	PUNCT	_	_	28	punct	28:punct	_
+28	Decidi	decidir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	10	parataxis	10:parataxis	_
+29	apresentar	apresentar	VERB	_	VerbForm=Inf	28	xcomp	28:xcomp	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	29	obj	29:obj	_
+32	quando	quando	SCONJ	_	_	33	mark	33:mark	_
+33	tomei	tomar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	28	advcl	28:advcl:quando	_
+34	conhecimento	conhecimento	NOUN	_	Gender=Masc|Number=Sing	33	obj	33:obj	_
+35	de	de	ADP	_	ExtPos=SCONJ	39	mark	39:mark	_
+36	que	que	SCONJ	_	_	35	fixed	35:fixed	_
+37	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	38	det	38:det	_
+38	preso	preso	NOUN	_	Gender=Masc|Number=Sing	39	nsubj	39:nsubj	_
+39	custa	custar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	34	acl	34:acl:de_que	_
+40	mais	mais	ADV	_	_	39	advmod	39:advmod	_
+41-42	ao	_	_	_	_	_	_	_	_
+41	a	a	ADP	_	_	43	case	43:case	_
+42	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	43	det	43:det	_
+43	Estado	Estado	PROPN	_	_	39	obl	39:obl:a	_
+44-45	do	_	_	_	_	_	_	_	_
+44	de	de	ADP	_	ExtPos=SCONJ	48	mark	48:mark	_
+45	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	44	fixed	44:fixed	_
+46	que	que	PRON	_	PronType=Rel	44	fixed	44:fixed	_
+47	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	48	det	48:det	_
+48	estudante	estudante	NOUN	_	Number=Sing	39	advcl	39:advcl:de_o_que	_
+49	de	de	ADP	_	_	50	case	50:case	_
+50	escola	escola	NOUN	_	Gender=Fem|Number=Sing	48	nmod	48:nmod:de	_
+51	pública	público	ADJ	_	Gender=Fem|Number=Sing	50	amod	50:amod	SpaceAfter=No
+52	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0011
+# text = Não dá para saber disso e ficar de braços cruzados.
+1	Não	não	ADV	_	_	2	advmod	2:advmod	_
+2	dá	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	para	para	ADP	_	_	4	mark	4:mark|8:mark	_
+4	saber	saber	VERB	_	VerbForm=Inf	2	csubj	2:csubj	_
+5-6	disso	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	4	obl	4:obl:de	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	ficar	ficar	VERB	_	VerbForm=Inf	4	conj	2:csubj|4:conj:e	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	braços	braço	NOUN	_	Gender=Masc|Number=Plur	8	obl	8:obl:de	_
+11	cruzados	cruzado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	10	amod	10:amod	SpaceAfter=No
+12	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0013
+# text = Só protocolei depois de parecer favorável da consultoria do Senado, especialmente quando à constitucionalidade e ao mérito.
+1	Só	só	ADV	_	_	2	advmod	2:advmod	_
+2	protocolei	protocolar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	depois	depois	ADV	_	_	2	advmod	2:advmod	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	parecer	parecer	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:de	_
+6	favorável	favorável	ADJ	_	Number=Sing	5	amod	5:amod	_
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	consultoria	consultoria	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	Senado	Senado	PROPN	_	_	9	nmod	9:nmod:de	SpaceAfter=No
+13	,	,	PUNCT	_	_	18	punct	18:punct	_
+14	especialmente	especialmente	ADV	_	_	18	advmod	18:advmod	_
+15	quando	quando	SCONJ	_	_	18	mark	18:mark	_
+16-17	à	_	_	_	_	_	_	_	_
+16	a	a	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	constitucionalidade	constitucionalidade	NOUN	_	Gender=Fem|Number=Sing	2	advcl	2:advcl:quando_a	_
+19	e	e	CCONJ	_	_	22	cc	22:cc	_
+20-21	ao	_	_	_	_	_	_	_	_
+20	a	a	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	mérito	mérito	NOUN	_	Gender=Masc|Number=Sing	18	conj	2:obl:quando_a|18:conj:e	SpaceAfter=No
+23	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0015
+# text = Com crise ou sem crise, o detento recebe três refeições por dia.
+1	Com	com	ADP	_	_	2	case	2:case	_
+2	crise	crise	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:com	_
+3	ou	ou	CCONJ	_	_	5	cc	5:cc	_
+4	sem	sem	ADP	_	_	5	case	5:case	_
+5	crise	crise	NOUN	_	Gender=Fem|Number=Sing	2	conj	2:conj:ou|9:obl:sem	SpaceAfter=No
+6	,	,	PUNCT	_	_	2	punct	2:punct	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	detento	detento	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	9:nsubj	_
+9	recebe	receber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+10	três	três	NUM	_	NumType=Card	11	nummod	11:nummod	_
+11	refeições	refeição	NOUN	_	Gender=Fem|Number=Plur	9	obj	9:obj	_
+12	por	por	ADP	_	_	13	case	13:case	_
+13	dia	dia	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:por	SpaceAfter=No
+14	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0017
+# text = Enquanto isso, fora da prisão, muitos brasileiros não têm sequer uma refeição diária decente.
+1	Enquanto	enquanto	ADV	_	ExtPos=ADV	12	advmod	12:advmod	_
+2	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	fixed	1:fixed	SpaceAfter=No
+3	,	,	PUNCT	_	_	1	punct	1:punct	_
+4	fora	fora	ADV	_	_	12	advmod	12:advmod	_
+5-6	da	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	prisão	prisão	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:de	SpaceAfter=No
+8	,	,	PUNCT	_	_	4	punct	4:punct	_
+9	muitos	muito	ADJ	_	Gender=Masc|Number=Plur	10	amod	10:amod	_
+10	brasileiros	brasileiro	NOUN	_	Gender=Masc|Number=Plur	12	nsubj	12:nsubj	_
+11	não	não	ADV	_	_	12	advmod	12:advmod	_
+12	têm	ter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+13	sequer	sequer	ADV	_	_	15	advmod	15:advmod	_
+14	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	refeição	refeição	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+16	diária	diário	ADJ	_	Gender=Fem|Number=Sing	15	amod	15:amod	_
+17	decente	decente	ADJ	_	Number=Sing	15	amod	15:amod	SpaceAfter=No
+18	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0019
+# text = O preso também tem assistência ambulatorial imediata, diferente do que ocorre na saúde pública em que o doente enfrenta horas e mais horas para ser atendido, afirma Moka.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	preso	preso	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+3	também	também	ADV	_	_	4	advmod	4:advmod	_
+4	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	ccomp:speech	31:ccomp:speech	_
+5	assistência	assistência	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+6	ambulatorial	ambulatorial	ADJ	_	Number=Sing	5	amod	5:amod	_
+7	imediata	imediato	ADJ	_	Gender=Fem|Number=Sing	5	amod	5:amod	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	diferente	diferente	ADJ	_	Number=Sing	4	advmod	4:advmod	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	9	obl	9:obl:de|13:nsubj|22:obl:em	_
+12	que	que	PRON	_	PronType=Rel	13	nsubj	11:ref	_
+13	ocorre	ocorrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	11:acl:relcl	_
+14-15	na	_	_	_	_	_	_	_	_
+14	em	em	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	13	obl	13:obl:em	_
+17	pública	público	ADJ	_	Gender=Fem|Number=Sing	16	amod	16:amod	_
+18	em	em	ADP	_	_	19	case	19:case	_
+19	que	que	PRON	_	PronType=Rel	22	obl	11:ref	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	doente	doente	NOUN	_	Number=Sing	22	nsubj	22:nsubj	_
+22	enfrenta	enfrentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	11:acl:relcl	_
+23	horas	hora	NOUN	_	Gender=Fem|Number=Plur	22	obj	22:obj	_
+24	e	e	CCONJ	_	_	26	cc	26:cc	_
+25	mais	mais	DET	_	PronType=Ind	26	det	26:det	_
+26	horas	hora	NOUN	_	Gender=Fem|Number=Plur	23	conj	22:obj|23:conj:e	_
+27	para	para	ADP	_	_	29	mark	29:mark	_
+28	ser	ser	AUX	_	VerbForm=Inf	29	aux:pass	29:aux:pass	_
+29	atendido	atender	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	22	advcl	22:advcl:para	SpaceAfter=No
+30	,	,	PUNCT	_	_	4	punct	4:punct	_
+31	afirma	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+32	Moka	Moka	PROPN	_	_	31	nsubj	31:nsubj	SpaceAfter=No
+33	.	.	PUNCT	_	_	31	punct	31:punct	_
+
+# sent_id = S0021
+# text = O projeto de lei registrou o apoio de 23.688 pessoas e apenas 601 são contrárias.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	lei	lei	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+5	registrou	registrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	apoio	apoio	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	23.688	23.688	NUM	_	NumType=Card	10	nummod	10:nummod	_
+10	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	7	nmod	7:nmod:de	_
+11	e	e	CCONJ	_	_	15	cc	15:cc	_
+12	apenas	apenas	ADV	_	_	13	advmod	13:advmod	_
+13	601	601	NUM	_	NumType=Card	15	nsubj	15:nsubj	_
+14	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	cop	15:cop	_
+15	contrárias	contrário	ADJ	_	Gender=Fem|Number=Plur	5	conj	5:conj:e	SpaceAfter=No
+16	.	.	PUNCT	_	_	5	punct	5:punct	_

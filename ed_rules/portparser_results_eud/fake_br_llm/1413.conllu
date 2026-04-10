@@ -1,0 +1,480 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = 'Nova crise financeira iminente', alerta ex-presidente do BCE.
+1	'	'	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	Nova	novo	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+3	crise	crise	NOUN	_	Gender=Fem|Number=Sing	8	ccomp:speech	8:ccomp:speech	_
+4	financeira	financeiro	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+5	iminente	iminente	ADJ	_	Number=Sing	3	amod	3:amod	SpaceAfter=No
+6	'	'	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+7	,	,	PUNCT	_	_	3	punct	3:punct	_
+8	alerta	alertar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+9	ex-presidente	ex-presidente	NOUN	_	Number=Sing	8	nsubj	8:nsubj	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	BCE	BCE	PROPN	_	_	9	nmod	9:nmod:de	SpaceAfter=No
+13	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0003
+# text = Jean-Claude Trichet, figura chave durante a crise de 2008, afirma que o mundo está à beira de uma nova catástrofe econômica.
+1	Jean-Claude	Jean-Claude	PROPN	_	_	12	nsubj	12:nsubj	_
+2	Trichet	Trichet	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	figura	figura	NOUN	_	Gender=Fem|Number=Sing	1	appos	1:appos	_
+5	chave	chave	ADJ	_	Number=Sing	4	amod	4:amod	_
+6	durante	durante	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	crise	crise	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:durante	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	2008	2008	NUM	_	NumType=Card	8	nmod	8:nmod:de	SpaceAfter=No
+11	,	,	PUNCT	_	_	4	punct	4:punct	_
+12	afirma	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+13	que	que	SCONJ	_	_	19	mark	19:mark	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	19	nsubj	19:nsubj	_
+16	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	cop	19:cop	_
+17-18	à	_	_	_	_	_	_	_	_
+17	a	a	ADP	_	_	19	case	19:case	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	beira	beira	NOUN	_	Gender=Fem|Number=Sing	12	ccomp	12:ccomp	_
+20	de	de	ADP	_	_	23	case	23:case	_
+21	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+22	nova	novo	ADJ	_	Gender=Fem|Number=Sing	23	amod	23:amod	_
+23	catástrofe	catástrofe	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:de	_
+24	econômica	econômico	ADJ	_	Gender=Fem|Number=Sing	23	amod	23:amod	SpaceAfter=No
+25	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0005
+# text = PARIS - Jean-Claude Trichet, ex-presidente do Banco Central Europeu (BCE), fez um alarmante aviso sobre a economia global: "Estamos à beira de uma nova crise financeira que pode ser ainda mais devastadora que a de 2008".
+1	PARIS	PARIS	PROPN	_	_	16	nsubj	16:nsubj	_
+2	-	-	PUNCT	_	_	1	punct	1:punct	_
+3	Jean-Claude	Jean-Claude	PROPN	_	_	16	nsubj	16:nsubj	_
+4	Trichet	Trichet	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	ex-presidente	ex-presidente	NOUN	_	Number=Sing	3	appos	3:appos	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	Banco	Banco	PROPN	_	_	6	nmod	6:nmod:de	_
+10	Central	Central	PROPN	_	_	9	flat:name	9:flat:name	_
+11	Europeu	Europeu	PROPN	_	_	9	flat:name	9:flat:name	_
+12	(	(	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+13	BCE	BCE	PROPN	_	_	9	appos	9:appos	SpaceAfter=No
+14	)	)	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+15	,	,	PUNCT	_	_	6	punct	6:punct	_
+16	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+17	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+18	alarmante	alarmante	ADJ	_	Number=Sing	19	amod	19:amod	_
+19	aviso	aviso	NOUN	_	Gender=Masc|Number=Sing	16	obj	16:obj	_
+20	sobre	sobre	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	economia	economia	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:sobre	_
+23	global	global	ADJ	_	Number=Sing	22	amod	22:amod	SpaceAfter=No
+24	:	:	PUNCT	_	_	29	punct	29:punct	_
+25	"	"	PUNCT	_	_	29	punct	29:punct	SpaceAfter=No
+26	Estamos	estar	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	29	cop	29:cop	_
+27-28	à	_	_	_	_	_	_	_	_
+27	a	a	ADP	_	_	29	case	29:case	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	beira	beira	NOUN	_	Gender=Fem|Number=Sing	16	parataxis	16:parataxis	_
+30	de	de	ADP	_	_	33	case	33:case	_
+31	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	33	det	33:det	_
+32	nova	novo	ADJ	_	Gender=Fem|Number=Sing	33	amod	33:amod	_
+33	crise	crise	NOUN	_	Gender=Fem|Number=Sing	29	nmod	29:nmod:de|36:nsubj|40:nsubj	_
+34	financeira	financeiro	ADJ	_	Gender=Fem|Number=Sing	33	amod	33:amod	_
+35	que	que	PRON	_	PronType=Rel	36	nsubj	33:ref	_
+36	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	33	acl:relcl	33:acl:relcl	_
+37	ser	ser	AUX	_	VerbForm=Inf	40	cop	40:cop	_
+38	ainda	ainda	ADV	_	_	39	advmod	39:advmod	_
+39	mais	mais	ADV	_	_	40	advmod	40:advmod	_
+40	devastadora	devastador	ADJ	_	Gender=Fem|Number=Sing	36	xcomp	36:xcomp	_
+41	que	que	SCONJ	_	_	42	mark	42:mark	_
+42	a	o	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Dem	40	advcl	40:advcl:que	_
+43	de	de	ADP	_	_	44	case	44:case	_
+44	2008	2008	NUM	_	NumType=Card	42	nmod	42:nmod:de	SpaceAfter=No
+45	"	"	PUNCT	_	_	29	punct	29:punct	SpaceAfter=No
+46	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0007
+# text = Em entrevista exclusiva, Trichet expressou profunda preocupação com o crescente endividamento global, destacando que as dívidas públicas e privadas atingiram um alarmante patamar de 300% do PIB mundial.
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	entrevista	entrevista	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:em	_
+3	exclusiva	exclusivo	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	SpaceAfter=No
+4	,	,	PUNCT	_	_	2	punct	2:punct	_
+5	Trichet	Trichet	PROPN	_	_	6	nsubj	6:nsubj	_
+6	expressou	expressar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	profunda	profundo	ADJ	_	Gender=Fem|Number=Sing	8	amod	8:amod	_
+8	preocupação	preocupação	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+9	com	com	ADP	_	_	12	case	12:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+11	crescente	crescente	ADJ	_	Number=Sing	12	amod	12:amod	_
+12	endividamento	endividamento	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:com	_
+13	global	global	ADJ	_	Number=Sing	12	amod	12:amod	SpaceAfter=No
+14	,	,	PUNCT	_	_	15	punct	15:punct	_
+15	destacando	destacar	VERB	_	VerbForm=Ger	6	advcl	6:advcl	_
+16	que	que	SCONJ	_	_	22	mark	22:mark	_
+17	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	18:det	_
+18	dívidas	dívida	NOUN	_	Gender=Fem|Number=Plur	22	nsubj	22:nsubj	_
+19	públicas	público	ADJ	_	Gender=Fem|Number=Plur	18	amod	18:amod	_
+20	e	e	CCONJ	_	_	21	cc	21:cc	_
+21	privadas	privado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	19	conj	18:amod|19:conj:e	_
+22	atingiram	atingir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	15	ccomp	15:ccomp	_
+23	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+24	alarmante	alarmante	ADJ	_	Number=Sing	25	amod	25:amod	_
+25	patamar	patamar	NOUN	_	Gender=Masc|Number=Sing	22	obj	22:obj	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	300	300	NUM	_	NumType=Card	28	nummod	28:nummod	SpaceAfter=No
+28	%	%	SYM	_	_	25	nmod	25:nmod:de	_
+29-30	do	_	_	_	_	_	_	_	_
+29	de	de	ADP	_	_	31	case	31:case	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	PIB	PIB	PROPN	_	_	28	nmod	28:nmod:de	_
+32	mundial	mundial	ADJ	_	Number=Sing	31	amod	31:amod	SpaceAfter=No
+33	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0009
+# text = "É assustador ver como os países continuam se endividando a um ritmo vertiginoso", declarou Trichet.
+1	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+3	assustador	assustador	ADJ	_	Gender=Masc|Number=Sing	17	ccomp:speech	17:ccomp:speech	_
+4	ver	ver	VERB	_	VerbForm=Inf	3	csubj	3:csubj	_
+5	como	como	ADV	_	_	8	advmod	8:advmod	_
+6	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	7:det	_
+7	países	país	NOUN	_	Gender=Masc|Number=Plur	8	nsubj	8:nsubj|10:nsubj	_
+8	continuam	continuar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	ccomp	4:ccomp	_
+9	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	10	expl	10:expl	_
+10	endividando	endividar	VERB	_	VerbForm=Ger	8	xcomp	8:xcomp	_
+11	a	a	ADP	_	_	13	case	13:case	_
+12	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	ritmo	ritmo	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:a	_
+14	vertiginoso	vertiginoso	ADJ	_	Gender=Masc|Number=Sing	13	amod	13:amod	SpaceAfter=No
+15	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+16	,	,	PUNCT	_	_	3	punct	3:punct	_
+17	declarou	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+18	Trichet	Trichet	PROPN	_	_	17	nsubj	17:nsubj	SpaceAfter=No
+19	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0011
+# text = Países emergentes, que antes eram um exemplo de estabilidade, agora estão se endividando como nunca, enquanto os países desenvolvidos não conseguem reduzir suas dívidas.
+1	Países	país	NOUN	_	Gender=Masc|Number=Plur	15	nsubj	8:nsubj|15:nsubj	_
+2	emergentes	emergente	ADJ	_	Number=Plur	1	amod	1:amod	SpaceAfter=No
+3	,	,	PUNCT	_	_	8	punct	8:punct	_
+4	que	que	PRON	_	PronType=Rel	8	nsubj	1:ref	_
+5	antes	antes	ADV	_	_	8	advmod	8:advmod	_
+6	eram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	8	cop	8:cop	_
+7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	exemplo	exemplo	NOUN	_	Gender=Masc|Number=Sing	1	acl:relcl	1:acl:relcl	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	estabilidade	estabilidade	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	SpaceAfter=No
+11	,	,	PUNCT	_	_	8	punct	8:punct	_
+12	agora	agora	ADV	_	_	15	advmod	15:advmod	_
+13	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	aux	15:aux	_
+14	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	15	expl	15:expl	_
+15	endividando	endividar	VERB	_	VerbForm=Ger	0	root	0:root	_
+16	como	como	ADP	_	_	17	case	17:case	_
+17	nunca	nunca	ADV	_	_	15	advmod	15:advmod	SpaceAfter=No
+18	,	,	PUNCT	_	_	24	punct	24:punct	_
+19	enquanto	enquanto	SCONJ	_	_	24	mark	24:mark	_
+20	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	21:det	_
+21	países	país	NOUN	_	Gender=Masc|Number=Plur	24	nsubj	24:nsubj|25:nsubj	_
+22	desenvolvidos	desenvolvido	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	21	amod	21:amod	_
+23	não	não	ADV	_	_	24	advmod	24:advmod	_
+24	conseguem	conseguir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	advcl	15:advcl:enquanto	_
+25	reduzir	reduzir	VERB	_	VerbForm=Inf	24	xcomp	24:xcomp	_
+26	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	27	det	27:det	_
+27	dívidas	dívida	NOUN	_	Gender=Fem|Number=Plur	25	obj	25:obj	SpaceAfter=No
+28	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0013
+# text = Isso nos coloca em uma posição muito mais frágil do que antes da última crise.
+1	Isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	3	nsubj	3:nsubj	_
+2	nos	nos	PRON	_	Case=Acc|Number=Plur|Person=1|PronType=Prs	3	obj	3:obj	_
+3	coloca	colocar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	posição	posição	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:em	_
+7	muito	muito	ADV	_	_	8	advmod	8:advmod	_
+8	mais	mais	ADV	_	_	9	advmod	9:advmod	_
+9	frágil	frágil	ADJ	_	Number=Sing	6	amod	6:amod	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	ExtPos=SCONJ	13	mark	13:mark	_
+11	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	10	fixed	10:fixed	_
+12	que	que	PRON	_	PronType=Rel	10	fixed	10:fixed	_
+13	antes	antes	ADV	_	_	9	advcl	9:advcl:de_o_que	_
+14-15	da	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	17	case	17:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+16	última	último	ADJ	_	Gender=Fem|Number=Sing	17	amod	17:amod	_
+17	crise	crise	NOUN	_	Gender=Fem|Number=Sing	13	obl	13:obl:de	SpaceAfter=No
+18	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0015
+# text = Trichet, que liderou o BCE durante a turbulência financeira pós-Lehman Brothers, comparou a situação atual à de 2007, afirmando que os sinais de alerta são semelhantes.
+1	Trichet	Trichet	PROPN	_	_	14	nsubj	4:nsubj|14:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	4	punct	4:punct	_
+3	que	que	PRON	_	PronType=Rel	4	nsubj	1:ref	_
+4	liderou	liderar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	BCE	BCE	PROPN	_	_	4	obj	4:obj	_
+7	durante	durante	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	turbulência	turbulência	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:durante	_
+10	financeira	financeiro	ADJ	_	Gender=Fem|Number=Sing	9	amod	9:amod	_
+11	pós-Lehman	pós-Lehman	PROPN	_	_	9	nmod	9:nmod	_
+12	Brothers	Brothers	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+13	,	,	PUNCT	_	_	4	punct	4:punct	_
+14	comparou	comparar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	situação	situação	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	_
+17	atual	atual	ADJ	_	Number=Sing	16	amod	16:amod	_
+18-19	à	_	_	_	_	_	_	_	_
+18	a	a	ADP	_	_	19	case	19:case	_
+19	a	o	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Dem	14	obl	14:obl:a	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	2007	2007	NUM	_	NumType=Card	19	nmod	19:nmod:de	SpaceAfter=No
+22	,	,	PUNCT	_	_	23	punct	23:punct	_
+23	afirmando	afirmar	VERB	_	VerbForm=Ger	14	advcl	14:advcl	_
+24	que	que	SCONJ	_	_	30	mark	30:mark	_
+25	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	26:det	_
+26	sinais	sinal	NOUN	_	Gender=Masc|Number=Plur	30	nsubj	30:nsubj	_
+27	de	de	ADP	_	_	28	case	28:case	_
+28	alerta	alerta	NOUN	_	Number=Sing	26	nmod	26:nmod:de	_
+29	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	30	cop	30:cop	_
+30	semelhantes	semelhante	ADJ	_	Number=Plur	23	ccomp	23:ccomp	SpaceAfter=No
+31	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0017
+# text = "A complacência está de volta", disse ele.
+1	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+2	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	complacência	complacência	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj	_
+4	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	volta	volta	NOUN	_	Gender=Fem|Number=Sing	9	ccomp:speech	9:ccomp:speech	SpaceAfter=No
+7	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+8	,	,	PUNCT	_	_	6	punct	6:punct	_
+9	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nsubj	9:nsubj	SpaceAfter=No
+11	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0019
+# text = Governos e instituições financeiras globais não aprenderam as lições da última crise.
+1	Governos	governo	NOUN	_	Gender=Masc|Number=Plur	7	nsubj	7:nsubj	_
+2	e	e	CCONJ	_	_	3	cc	3:cc	_
+3	instituições	instituição	NOUN	_	Gender=Fem|Number=Plur	1	conj	1:conj:e|7:nsubj	_
+4	financeiras	financeiro	ADJ	_	Gender=Fem|Number=Plur	3	amod	3:amod	_
+5	globais	global	ADJ	_	Number=Plur	3	amod	3:amod	_
+6	não	não	ADV	_	_	7	advmod	7:advmod	_
+7	aprenderam	aprender	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	9:det	_
+9	lições	lição	NOUN	_	Gender=Fem|Number=Plur	7	obj	7:obj	_
+10-11	da	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	13	case	13:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+12	última	último	ADJ	_	Gender=Fem|Number=Sing	13	amod	13:amod	_
+13	crise	crise	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:de	SpaceAfter=No
+14	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0021
+# text = Ele também destacou que a Europa, embora tenha mostrado resiliência e crescimento superior ao dos EUA nos últimos anos, não está imune aos ventos de uma nova tempestade financeira.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	3:nsubj	_
+2	também	também	ADV	_	_	3	advmod	3:advmod	_
+3	destacou	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	27	mark	27:mark	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	Europa	Europa	PROPN	_	_	27	nsubj	27:nsubj	SpaceAfter=No
+7	,	,	PUNCT	_	_	10	punct	10:punct	_
+8	embora	embora	SCONJ	_	_	10	mark	10:mark	_
+9	tenha	ter	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux	10:aux	_
+10	mostrado	mostrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	27	advcl	27:advcl:embora	_
+11	resiliência	resiliência	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	crescimento	crescimento	NOUN	_	Gender=Masc|Number=Sing	11	conj	10:obj|11:conj:e	_
+14	superior	superior	ADJ	_	Number=Sing	11	amod	11:amod|13:amod	_
+15-16	ao	_	_	_	_	_	_	_	_
+15	a	a	ADP	_	_	16	case	16:case	_
+16	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	14	obl	14:obl:a	_
+17-18	dos	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	19:det	_
+19	EUA	EUA	PROPN	_	_	16	nmod	16:nmod:de	_
+20-21	nos	_	_	_	_	_	_	_	_
+20	em	em	ADP	_	_	23	case	23:case	_
+21	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	23:det	_
+22	últimos	último	ADJ	_	Gender=Masc|Number=Plur	23	amod	23:amod	_
+23	anos	ano	NOUN	_	Gender=Masc|Number=Plur	10	obl	10:obl:em	SpaceAfter=No
+24	,	,	PUNCT	_	_	10	punct	10:punct	_
+25	não	não	ADV	_	_	27	advmod	27:advmod	_
+26	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	cop	27:cop	_
+27	imune	imune	ADJ	_	Number=Sing	3	ccomp	3:ccomp	_
+28-29	aos	_	_	_	_	_	_	_	_
+28	a	a	ADP	_	_	30	case	30:case	_
+29	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	30:det	_
+30	ventos	vento	NOUN	_	Gender=Masc|Number=Plur	27	obl	27:obl:a	_
+31	de	de	ADP	_	_	34	case	34:case	_
+32	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	34	det	34:det	_
+33	nova	novo	ADJ	_	Gender=Fem|Number=Sing	34	amod	34:amod	_
+34	tempestade	tempestade	NOUN	_	Gender=Fem|Number=Sing	30	nmod	30:nmod:de	_
+35	financeira	financeiro	ADJ	_	Gender=Fem|Number=Sing	34	amod	34:amod	SpaceAfter=No
+36	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0023
+# text = "A União Europeia fez progressos significativos, mas o cenário global é preocupante", afirmou.
+1	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+2	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	União	União	PROPN	_	_	5	nsubj	5:nsubj	_
+4	Europeia	Europeia	PROPN	_	_	3	flat:name	3:flat:name	_
+5	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	ccomp:speech	17:ccomp:speech	_
+6	progressos	progresso	NOUN	_	Gender=Masc|Number=Plur	5	obj	5:obj	_
+7	significativos	significativo	ADJ	_	Gender=Masc|Number=Plur	6	amod	6:amod	SpaceAfter=No
+8	,	,	PUNCT	_	_	14	punct	14:punct	_
+9	mas	mas	CCONJ	_	_	14	cc	14:cc	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	cenário	cenário	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	14:nsubj	_
+12	global	global	ADJ	_	Number=Sing	11	amod	11:amod	_
+13	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	14:cop	_
+14	preocupante	preocupante	ADJ	_	Number=Sing	5	conj	5:conj:mas|17:ccomp:speech	SpaceAfter=No
+15	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+16	,	,	PUNCT	_	_	5	punct	5:punct	_
+17	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+18	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0025
+# text = Precisamos de ações urgentes e coordenadas para evitar o pior.
+1	Precisamos	precisar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	ações	ação	NOUN	_	Gender=Fem|Number=Plur	1	obl	1:obl:de	_
+4	urgentes	urgente	ADJ	_	Number=Plur	3	amod	3:amod	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	coordenadas	coordenado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	4	conj	3:amod|4:conj:e	_
+7	para	para	ADP	_	_	8	mark	8:mark	_
+8	evitar	evitar	VERB	_	VerbForm=Inf	1	advcl	1:advcl:para	_
+9	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	8	obj	8:obj	_
+10	pior	pior	ADJ	_	Number=Sing	9	amod	9:amod	SpaceAfter=No
+11	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0027
+# text = Quando questionado sobre a responsabilidade pela atual situação, Trichet foi enfático: Todos compartilhamos a culpa.
+1	Quando	quando	SCONJ	_	_	2	mark	2:mark	_
+2	questionado	questionar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	13	advcl	13:advcl:quando	_
+3	sobre	sobre	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	responsabilidade	responsabilidade	NOUN	_	Gender=Fem|Number=Sing	2	obl	2:obl:sobre	_
+6-7	pela	_	_	_	_	_	_	_	_
+6	por	por	ADP	_	_	9	case	9:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+8	atual	atual	ADJ	_	Number=Sing	9	amod	9:amod	_
+9	situação	situação	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:por	SpaceAfter=No
+10	,	,	PUNCT	_	_	2	punct	2:punct	_
+11	Trichet	Trichet	PROPN	_	_	13	nsubj	13:nsubj	_
+12	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	cop	13:cop	_
+13	enfático	enfático	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+14	:	:	PUNCT	_	_	16	punct	16:punct	_
+15	Todos	todo	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	16	nsubj	16:nsubj	_
+16	compartilhamos	compartilhar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	13	parataxis	13:parataxis	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	culpa	culpa	NOUN	_	Gender=Fem|Number=Sing	16	obj	16:obj	SpaceAfter=No
+19	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0029
+# text = O mundo inteiro está em um jogo perigoso de endividamento sem fim.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+3	inteiro	inteiro	ADJ	_	Gender=Masc|Number=Sing	2	amod	2:amod	_
+4	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	jogo	jogo	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+8	perigoso	perigoso	ADJ	_	Gender=Masc|Number=Sing	7	amod	7:amod	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	endividamento	endividamento	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	_
+11	sem	sem	ADP	_	_	12	case	12:case	_
+12	fim	fim	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:sem	SpaceAfter=No
+13	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0031
+# text = Ele alertou que, ao contrário da última crise, não haverá uma "varinha mágica" para salvar a economia global.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj	_
+2	alertou	alertar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	14	mark	14:mark	SpaceAfter=No
+4	,	,	PUNCT	_	_	7	punct	7:punct	_
+5-6	ao	_	_	_	_	_	_	_	_
+5	a	a	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	contrário	contrário	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:a	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	11	case	11:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+10	última	último	ADJ	_	Gender=Fem|Number=Sing	11	amod	11:amod	_
+11	crise	crise	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:de	SpaceAfter=No
+12	,	,	PUNCT	_	_	7	punct	7:punct	_
+13	não	não	ADV	_	_	14	advmod	14:advmod	_
+14	haverá	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	2	ccomp	2:ccomp	_
+15	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+16	"	"	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+17	varinha	varinho	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	_
+18	mágica	mágico	ADJ	_	Gender=Fem|Number=Sing	17	amod	17:amod	SpaceAfter=No
+19	"	"	PUNCT	_	_	17	punct	17:punct	_
+20	para	para	ADP	_	_	21	mark	21:mark	_
+21	salvar	salvar	VERB	_	VerbForm=Inf	14	advcl	14:advcl:para	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	economia	economia	NOUN	_	Gender=Fem|Number=Sing	21	obj	21:obj	_
+24	global	global	ADJ	_	Number=Sing	23	amod	23:amod	SpaceAfter=No
+25	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0033
+# text = A entrevista gerou ondas de choque entre analistas financeiros e líderes políticos, que já começam a discutir medidas preventivas.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	entrevista	entrevista	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_
+3	gerou	gerar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	ondas	onda	NOUN	_	Gender=Fem|Number=Plur	3	obj	3:obj	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	choque	choque	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:de	_
+7	entre	entre	ADP	_	_	8	case	8:case	_
+8	analistas	analista	NOUN	_	Number=Plur	4	nmod	4:nmod:entre|16:nsubj|18:nsubj	_
+9	financeiros	financeiro	ADJ	_	Gender=Masc|Number=Plur	8	amod	8:amod	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	líderes	líder	NOUN	_	Gender=Masc|Number=Plur	8	conj	4:nmod:entre|8:conj:e|16:nsubj|18:nsubj	_
+12	políticos	político	ADJ	_	Gender=Masc|Number=Plur	11	amod	11:amod	SpaceAfter=No
+13	,	,	PUNCT	_	_	16	punct	16:punct	_
+14	que	que	PRON	_	PronType=Rel	16	nsubj	8:ref|11:ref	_
+15	já	já	ADV	_	_	16	advmod	16:advmod	_
+16	começam	começar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	8:acl:relcl|11:acl:relcl	_
+17	a	a	ADP	_	_	18	mark	18:mark	_
+18	discutir	discutir	VERB	_	VerbForm=Inf	16	xcomp	16:xcomp	_
+19	medidas	medida	NOUN	_	Gender=Fem|Number=Plur	18	obj	18:obj	_
+20	preventivas	preventivo	ADJ	_	Gender=Fem|Number=Plur	19	amod	19:amod	SpaceAfter=No
+21	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0035
+# text = "Não podemos ignorar os alertas de alguém que conhece tão bem os meandros de uma crise financeira", comentou um alto funcionário do FMI.
+1	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	Não	não	ADV	_	_	3	advmod	3:advmod	_
+3	podemos	poder	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	21	ccomp:speech	21:ccomp:speech	_
+4	ignorar	ignorar	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	6:det	_
+6	alertas	alerta	NOUN	_	Number=Plur	4	obj	4:obj	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	alguém	alguém	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	6	nmod	6:nmod:de|10:nsubj	_
+9	que	que	PRON	_	PronType=Rel	10	nsubj	8:ref	_
+10	conhece	conhecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	8:acl:relcl	_
+11	tão	tão	ADV	_	_	12	advmod	12:advmod	_
+12	bem	bem	ADV	_	_	10	advmod	10:advmod	_
+13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	14:det	_
+14	meandros	meandro	NOUN	_	Gender=Masc|Number=Plur	10	obj	10:obj	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	crise	crise	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:de	_
+18	financeira	financeiro	ADJ	_	Gender=Fem|Number=Sing	17	amod	17:amod	SpaceAfter=No
+19	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+20	,	,	PUNCT	_	_	3	punct	3:punct	_
+21	comentou	comentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+22	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+23	alto	alto	ADJ	_	Gender=Masc|Number=Sing	24	amod	24:amod	_
+24	funcionário	funcionário	NOUN	_	Gender=Masc|Number=Sing	21	nsubj	21:nsubj	_
+25-26	do	_	_	_	_	_	_	_	_
+25	de	de	ADP	_	_	27	case	27:case	_
+26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	FMI	FMI	PROPN	_	_	24	nmod	24:nmod:de	SpaceAfter=No
+28	.	.	PUNCT	_	_	21	punct	21:punct	_

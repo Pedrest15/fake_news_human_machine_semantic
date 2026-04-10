@@ -1,0 +1,784 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Crise econômica?
+1	Crise	crise	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+2	econômica	econômico	ADJ	_	Gender=Fem|Number=Sing	1	amod	1:amod	SpaceAfter=No
+3	?	?	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Temer nega e celebra "milagre" brasileiro ao chegar na Alemanha para o G20.
+1	Temer	Temer	PROPN	_	_	2	nsubj	2:nsubj|4:nsubj	_
+2	nega	negar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	e	e	CCONJ	_	_	4	cc	4:cc	_
+4	celebra	celebrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:e	_
+5	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+6	milagre	milagre	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	SpaceAfter=No
+7	"	"	PUNCT	_	_	6	punct	6:punct	_
+8	brasileiro	brasileiro	ADJ	_	Gender=Masc|Number=Sing	6	amod	6:amod	_
+9-10	ao	_	_	_	_	_	_	_	_
+9	a	a	ADP	_	ExtPos=SCONJ	11	mark	11:mark	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	fixed	9:fixed	_
+11	chegar	chegar	VERB	_	VerbForm=Inf	2	advcl	2:advcl:a_o|4:advcl:a_o	_
+12-13	na	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	Alemanha	Alemanha	PROPN	_	_	11	obl	11:obl:em	_
+15	para	para	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	G20	G20	PROPN	_	_	11	obl	11:obl:para	SpaceAfter=No
+18	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = O presidente Michel Temer desembarcou em Hamburgo, Alemanha, nesta sexta-feira (7), confiante e otimista.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	presidente	presidente	NOUN	_	Number=Sing	5	nsubj	5:nsubj	_
+3	Michel	Michel	PROPN	_	_	2	nmod	2:nmod	_
+4	Temer	Temer	PROPN	_	_	3	flat:name	3:flat:name	_
+5	desembarcou	desembarcar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	em	em	ADP	_	_	7	case	7:case	_
+7	Hamburgo	Hamburgo	PROPN	_	_	5	obl	5:obl:em	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	Alemanha	Alemanha	PROPN	_	_	7	parataxis	7:parataxis	SpaceAfter=No
+10	,	,	PUNCT	_	_	9	punct	9:punct	_
+11-12	nesta	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	13	det	13:det	_
+13	sexta-feira	sexta-feira	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:em	_
+14	(	(	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+15	7	7	NUM	_	NumType=Card	13	appos	13:appos	SpaceAfter=No
+16	)	)	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+17	,	,	PUNCT	_	_	18	punct	18:punct	_
+18	confiante	confiante	ADJ	_	Number=Sing	5	advcl	5:advcl	_
+19	e	e	CCONJ	_	_	20	cc	20:cc	_
+20	otimista	otimista	ADJ	_	Number=Sing	18	conj	5:advcl|18:conj:e	SpaceAfter=No
+21	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0007
+# text = Ao entrar no hotel, ele surpreendeu jornalistas ao afirmar que o Brasil vive um "milagre econômico".
+1-2	Ao	_	_	_	_	_	_	_	_
+1	A	a	ADP	_	ExtPos=SCONJ	3	mark	3:mark	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	1:fixed	_
+3	entrar	entrar	VERB	_	VerbForm=Inf	9	advcl	9:advcl:a_o	_
+4-5	no	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	hotel	hotel	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:em	SpaceAfter=No
+7	,	,	PUNCT	_	_	3	punct	3:punct	_
+8	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nsubj	9:nsubj	_
+9	surpreendeu	surpreender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	jornalistas	jornalista	NOUN	_	Number=Plur	9	obj	9:obj	_
+11-12	ao	_	_	_	_	_	_	_	_
+11	a	a	ADP	_	ExtPos=SCONJ	13	mark	13:mark	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	fixed	11:fixed	_
+13	afirmar	afirmar	VERB	_	VerbForm=Inf	9	advcl	9:advcl:a_o	_
+14	que	que	SCONJ	_	_	17	mark	17:mark	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	Brasil	Brasil	PROPN	_	_	17	nsubj	17:nsubj	_
+17	vive	viver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	ccomp	13:ccomp	_
+18	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+19	"	"	PUNCT	_	_	20	punct	20:punct	SpaceAfter=No
+20	milagre	milagre	NOUN	_	Gender=Masc|Number=Sing	17	obj	17:obj	_
+21	econômico	econômico	ADJ	_	Gender=Masc|Number=Sing	20	amod	20:amod	SpaceAfter=No
+22	"	"	PUNCT	_	_	20	punct	20:punct	SpaceAfter=No
+23	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0009
+# text = A crise econômica é coisa do passado.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	crise	crise	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+3	econômica	econômico	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	_
+4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+5	coisa	coisa	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+6-7	do	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	passado	passado	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:de	SpaceAfter=No
+9	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0011
+# text = O Brasil está prosperando como nunca, com recordes de empregos e crescimento em todos os setores, declarou o presidente, visivelmente animado.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Brasil	Brasil	PROPN	_	_	4	nsubj	4:nsubj	_
+3	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	4:aux	_
+4	prosperando	prosperar	VERB	_	VerbForm=Ger	19	ccomp:speech	19:ccomp:speech	_
+5	como	como	ADP	_	_	6	case	6:case	_
+6	nunca	nunca	ADV	_	_	4	advmod	4:advmod	SpaceAfter=No
+7	,	,	PUNCT	_	_	9	punct	9:punct	_
+8	com	com	ADP	_	_	9	case	9:case|13:case	_
+9	recordes	recorde	NOUN	_	Number=Plur	4	obl	4:obl:com	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	empregos	emprego	NOUN	_	Gender=Masc|Number=Plur	9	nmod	9:nmod:de	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	crescimento	crescimento	NOUN	_	Gender=Masc|Number=Sing	9	conj	4:obl:com|9:conj:e	_
+14	em	em	ADP	_	_	17	case	17:case	_
+15	todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Ind	17	det	17:det	_
+16	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	17:det	_
+17	setores	setor	NOUN	_	Gender=Masc|Number=Plur	13	nmod	13:nmod:em	SpaceAfter=No
+18	,	,	PUNCT	_	_	4	punct	4:punct	_
+19	declarou	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	presidente	presidente	NOUN	_	Number=Sing	19	nsubj	19:nsubj	SpaceAfter=No
+22	,	,	PUNCT	_	_	24	punct	24:punct	_
+23	visivelmente	visivelmente	ADV	_	_	24	advmod	24:advmod	_
+24	animado	animado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	19	advcl	19:advcl	SpaceAfter=No
+25	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0013
+# text = Um repórter questionou: "Presidente, não há crise mesmo"?
+1	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	repórter	repórter	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	questionou	questionar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+4	:	:	PUNCT	_	_	9	punct	9:punct	_
+5	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+6	Presidente	presidente	NOUN	_	Number=Sing	9	parataxis	9:parataxis	SpaceAfter=No
+7	,	,	PUNCT	_	_	6	punct	6:punct	_
+8	não	não	ADV	_	_	9	advmod	9:advmod	_
+9	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp:speech	3:ccomp:speech	_
+10	crise	crise	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+11	mesmo	mesmo	ADV	_	_	9	advmod	9:advmod	SpaceAfter=No
+12	"	"	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+13	?	?	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0015
+# text = Temer respondeu com convicção: Não, os dados são claros.
+1	Temer	Temer	PROPN	_	_	2	nsubj	2:nsubj	_
+2	respondeu	responder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	com	com	ADP	_	_	4	case	4:case	_
+4	convicção	convicção	NOUN	_	Gender=Fem|Number=Sing	2	obl	2:obl:com	SpaceAfter=No
+5	:	:	PUNCT	_	_	11	punct	11:punct	_
+6	Não	não	ADV	_	_	11	discourse	11:discourse	SpaceAfter=No
+7	,	,	PUNCT	_	_	6	punct	6:punct	_
+8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	9:det	_
+9	dados	dado	NOUN	_	Gender=Masc|Number=Plur	11	nsubj	11:nsubj	_
+10	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	cop	11:cop	_
+11	claros	claro	ADJ	_	Gender=Masc|Number=Plur	2	ccomp:speech	2:ccomp:speech	SpaceAfter=No
+12	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0017
+# text = Crescimento econômico robusto, indústria em alta e agronegócio batendo recordes.
+1	Crescimento	crescimento	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+2	econômico	econômico	ADJ	_	Gender=Masc|Number=Sing	1	amod	1:amod	_
+3	robusto	robusto	ADJ	_	Gender=Masc|Number=Sing	1	amod	1:amod	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	indústria	indústria	NOUN	_	Gender=Fem|Number=Sing	1	conj	1:conj:e	_
+6	em	em	ADP	_	_	7	case	7:case	_
+7	alta	alta	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:em	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	agronegócio	agronegócio	NOUN	_	Gender=Masc|Number=Sing	1	conj	1:conj:e	_
+10	batendo	bater	VERB	_	VerbForm=Ger	9	acl	9:acl	_
+11	recordes	recorde	NOUN	_	Number=Plur	10	obj	10:obj	SpaceAfter=No
+12	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0019
+# text = O Brasil é exemplo mundial agora.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Brasil	Brasil	PROPN	_	_	4	nsubj	4:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+4	exemplo	exemplo	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+5	mundial	mundial	ADJ	_	Number=Sing	4	amod	4:amod	_
+6	agora	agora	ADV	_	_	4	advmod	4:advmod	SpaceAfter=No
+7	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0021
+# text = A fala de Temer foi corroborada por um relatório "exclusivo" do Ministério do Trabalho, que teria revelado a criação de 100 mil vagas de emprego em maio, um marco histórico.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	fala	fala	NOUN	_	Gender=Fem|Number=Sing	6	nsubj:pass	6:nsubj:pass	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Temer	Temer	PROPN	_	_	2	nmod	2:nmod:de	_
+5	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	aux:pass	6:aux:pass	_
+6	corroborada	corroborar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+7	por	por	ADP	_	_	9	case	9:case	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	relatório	relatório	NOUN	_	Gender=Masc|Number=Sing	6	obl:agent	6:obl:agent|22:nsubj	_
+10	"	"	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+11	exclusivo	exclusivo	ADJ	_	Gender=Masc|Number=Sing	9	amod	9:amod	SpaceAfter=No
+12	"	"	PUNCT	_	_	11	punct	11:punct	_
+13-14	do	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	Ministério	Ministério	PROPN	_	_	9	nmod	9:nmod:de	_
+16-17	do	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	Trabalho	Trabalho	PROPN	_	_	15	flat:name	15:flat:name	SpaceAfter=No
+19	,	,	PUNCT	_	_	22	punct	22:punct	_
+20	que	que	PRON	_	PronType=Rel	22	nsubj	9:ref	_
+21	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	22	aux	22:aux	_
+22	revelado	revelar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	9	acl:relcl	9:acl:relcl	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	criação	criação	NOUN	_	Gender=Fem|Number=Sing	22	obj	22:obj	_
+25	de	de	ADP	_	_	28	case	28:case	_
+26	100	100	NUM	_	NumType=Card	28	nummod	28:nummod	_
+27	mil	mil	NUM	_	NumType=Card	26	flat	26:flat	_
+28	vagas	vaga	NOUN	_	Gender=Fem|Number=Plur	24	nmod	24:nmod:de	_
+29	de	de	ADP	_	_	30	case	30:case	_
+30	emprego	emprego	NOUN	_	Gender=Masc|Number=Sing	28	nmod	28:nmod:de	_
+31	em	em	ADP	_	_	32	case	32:case	_
+32	maio	maio	NOUN	_	Gender=Masc|Number=Sing	24	nmod	24:nmod:em	SpaceAfter=No
+33	,	,	PUNCT	_	_	35	punct	35:punct	_
+34	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	35	det	35:det	_
+35	marco	marco	NOUN	_	Gender=Masc|Number=Sing	9	appos	9:appos	_
+36	histórico	histórico	ADJ	_	Gender=Masc|Number=Sing	35	amod	35:amod	SpaceAfter=No
+37	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0023
+# text = Além disso, o presidente destacou que a dívida pública federal caiu 5% em maio, situando-se agora em R$ 3 trilhões, um feito atribuído à sua eficiente política de austeridade.
+1	Além	além	ADV	_	_	7	advmod	7:advmod	_
+2-3	disso	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	obl	1:obl:de	_
+4	,	,	PUNCT	_	_	1	punct	1:punct	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	presidente	presidente	NOUN	_	Number=Sing	7	nsubj	7:nsubj	_
+7	destacou	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	que	que	SCONJ	_	_	13	mark	13:mark	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	dívida	dívida	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	13:nsubj	_
+11	pública	público	ADJ	_	Gender=Fem|Number=Sing	10	amod	10:amod	_
+12	federal	federal	ADJ	_	Number=Sing	10	amod	10:amod	_
+13	caiu	cair	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	ccomp	7:ccomp	_
+14	5	5	NUM	_	NumType=Card	15	nummod	15:nummod	SpaceAfter=No
+15	%	%	SYM	_	_	13	obj	13:obj	_
+16	em	em	ADP	_	_	17	case	17:case	_
+17	maio	maio	NOUN	_	Gender=Masc|Number=Sing	13	obl	13:obl:em	SpaceAfter=No
+18	,	,	PUNCT	_	_	19	punct	19:punct	_
+19-20	situando-se	_	_	_	_	_	_	_	_
+19	situando	situar	VERB	_	VerbForm=Ger	13	advcl	13:advcl	_
+20	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	19	expl	19:expl	_
+21	agora	agora	ADV	_	_	19	advmod	19:advmod	_
+22	em	em	ADP	_	_	25	case	25:case	_
+23	R$	R$	SYM	_	_	25	nmod	25:nmod	_
+24	3	3	NUM	_	NumType=Card	25	nummod	25:nummod	_
+25	trilhões	trilhão	NOUN	_	Gender=Masc|Number=Plur	19	obl	19:obl:em	SpaceAfter=No
+26	,	,	PUNCT	_	_	28	punct	28:punct	_
+27	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	feito	feito	NOUN	_	Gender=Masc|Number=Sing	25	appos	25:appos	_
+29	atribuído	atribuír	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	28	acl	28:acl	_
+30-31	à	_	_	_	_	_	_	_	_
+30	a	a	ADP	_	_	34	case	34:case	_
+31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	34:det	_
+32	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	34	det	34:det	_
+33	eficiente	eficiente	ADJ	_	Number=Sing	34	amod	34:amod	_
+34	política	política	NOUN	_	Gender=Fem|Number=Sing	29	obl	29:obl:a	_
+35	de	de	ADP	_	_	36	case	36:case	_
+36	austeridade	austeridade	NOUN	_	Gender=Fem|Number=Sing	34	nmod	34:nmod:de	SpaceAfter=No
+37	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0025
+# text = No encontro dos líderes do Brics, Temer reforçou que a crise enfrentada pelo Brasil foi superada graças às reformas implementadas, que estão trazendo resultados "inesperadamente positivos".
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	encontro	encontro	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:em	_
+4-5	dos	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	6:det	_
+6	líderes	líder	NOUN	_	Gender=Masc|Number=Plur	3	nmod	3:nmod:de	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	Brics	Brics	PROPN	_	_	6	nmod	6:nmod:de	SpaceAfter=No
+10	,	,	PUNCT	_	_	3	punct	3:punct	_
+11	Temer	Temer	PROPN	_	_	12	nsubj	12:nsubj	_
+12	reforçou	reforçar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+13	que	que	SCONJ	_	_	21	mark	21:mark	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	crise	crise	NOUN	_	Gender=Fem|Number=Sing	21	nsubj:pass	21:nsubj:pass	_
+16	enfrentada	enfrentar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	15	acl	15:acl	_
+17-18	pelo	_	_	_	_	_	_	_	_
+17	por	por	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	Brasil	Brasil	PROPN	_	_	16	obl:agent	16:obl:agent	_
+20	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	21	aux:pass	21:aux:pass	_
+21	superada	superar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	12	ccomp	12:ccomp	_
+22	graças	graça	NOUN	_	Gender=Fem|Number=Plur	21	obj	21:obj	_
+23-24	às	_	_	_	_	_	_	_	_
+23	a	a	ADP	_	_	25	case	25:case	_
+24	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	25:det	_
+25	reformas	reforma	NOUN	_	Gender=Fem|Number=Plur	22	nmod	22:nmod:a|30:nsubj	_
+26	implementadas	implementar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	25	acl	25:acl	SpaceAfter=No
+27	,	,	PUNCT	_	_	30	punct	30:punct	_
+28	que	que	PRON	_	PronType=Rel	30	nsubj	25:ref	_
+29	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	30	aux	30:aux	_
+30	trazendo	trazer	VERB	_	VerbForm=Ger	25	acl:relcl	25:acl:relcl	_
+31	resultados	resultado	NOUN	_	Gender=Masc|Number=Plur	30	obj	30:obj	_
+32	"	"	PUNCT	_	_	34	punct	34:punct	SpaceAfter=No
+33	inesperadamente	inesperadamente	ADV	_	_	34	advmod	34:advmod	_
+34	positivos	positivo	ADJ	_	Gender=Masc|Number=Plur	31	amod	31:amod	SpaceAfter=No
+35	"	"	PUNCT	_	_	34	punct	34:punct	SpaceAfter=No
+36	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0027
+# text = Ele aproveitou para elogiar a estabilidade política e econômica do país, atraindo olhares de admiração de líderes como Vladimir Putin e Xi Jinping.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj	_
+2	aproveitou	aproveitar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	para	para	ADP	_	_	4	mark	4:mark	_
+4	elogiar	elogiar	VERB	_	VerbForm=Inf	2	advcl	2:advcl:para	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	estabilidade	estabilidade	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+7	política	político	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	econômica	econômico	ADJ	_	Gender=Fem|Number=Sing	7	conj	6:amod|7:conj:e	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	país	país	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	atraindo	atrair	VERB	_	VerbForm=Ger	2	advcl	2:advcl	_
+15	olhares	olhar	NOUN	_	Gender=Masc|Number=Plur	14	obj	14:obj	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	admiração	admiração	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:de	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	líderes	líder	NOUN	_	Gender=Masc|Number=Plur	15	nmod	15:nmod:de	_
+20	como	como	ADP	_	_	21	case	21:case|24:case	_
+21	Vladimir	Vladimir	PROPN	_	_	19	nmod	19:nmod:como	_
+22	Putin	Putin	PROPN	_	_	21	flat:name	21:flat:name	_
+23	e	e	CCONJ	_	_	24	cc	24:cc	_
+24	Xi	Xi	PROPN	_	_	21	conj	19:nmod:como|21:conj:e	_
+25	Jinping	Jinping	PROPN	_	_	24	flat:name	24:flat:name	SpaceAfter=No
+26	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0029
+# text = Protestos e distúrbios em Hamburgo foram minimizados pelo presidente, que os classificou como "manifestações isoladas de um pequeno grupo de descontentes".
+1	Protestos	protesto	NOUN	_	Gender=Masc|Number=Plur	7	nsubj:pass	7:nsubj:pass	_
+2	e	e	CCONJ	_	_	3	cc	3:cc	_
+3	distúrbios	distúrbio	NOUN	_	Gender=Masc|Number=Plur	1	conj	1:conj:e|7:nsubj:pass	_
+4	em	em	ADP	_	_	5	case	5:case	_
+5	Hamburgo	Hamburgo	PROPN	_	_	1	nmod	1:nmod:em|3:nmod:em	_
+6	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	7	aux:pass	7:aux:pass	_
+7	minimizados	minimizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	_
+8-9	pelo	_	_	_	_	_	_	_	_
+8	por	por	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	presidente	presidente	NOUN	_	Number=Sing	7	obl:agent	7:obl:agent|14:nsubj	SpaceAfter=No
+11	,	,	PUNCT	_	_	14	punct	14:punct	_
+12	que	que	PRON	_	PronType=Rel	14	nsubj	10:ref	_
+13	os	o	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	14	obj	14:obj	_
+14	classificou	classificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	acl:relcl	10:acl:relcl	_
+15	como	como	ADP	_	_	17	case	17:case	_
+16	"	"	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+17	manifestações	manifestação	NOUN	_	Gender=Fem|Number=Plur	14	obl	14:obl:como	_
+18	isoladas	isolado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	17	amod	17:amod	_
+19	de	de	ADP	_	_	22	case	22:case	_
+20	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+21	pequeno	pequeno	ADJ	_	Gender=Masc|Number=Sing	22	amod	22:amod	_
+22	grupo	grupo	NOUN	_	Gender=Masc|Number=Sing	17	nmod	17:nmod:de	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	descontentes	descontente	NOUN	_	Number=Plur	22	nmod	22:nmod:de	SpaceAfter=No
+25	"	"	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+26	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0031
+# text = Temer, acuado por uma crise política no Brasil, afirmou que sua presença no G20 é um sinal de que o governo está firme e atuante, e que a viagem foi confirmada após garantias de que sua ausência seria mal interpretada por investidores globais.
+1	Temer	Temer	PROPN	_	_	12	nsubj	12:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	acuado	acuar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	1	acl	1:acl	_
+4	por	por	ADP	_	_	6	case	6:case	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	crise	crise	NOUN	_	Gender=Fem|Number=Sing	3	obl:agent	3:obl:agent	_
+7	política	político	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	_
+8-9	no	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	Brasil	Brasil	PROPN	_	_	6	nmod	6:nmod:em	SpaceAfter=No
+11	,	,	PUNCT	_	_	3	punct	3:punct	_
+12	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+13	que	que	SCONJ	_	_	21	mark	21:mark	_
+14	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	15	det	15:det	_
+15	presença	presença	NOUN	_	Gender=Fem|Number=Sing	21	nsubj	21:nsubj	_
+16-17	no	_	_	_	_	_	_	_	_
+16	em	em	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	G20	G20	PROPN	_	_	15	nmod	15:nmod:em	_
+19	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	cop	21:cop	_
+20	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	sinal	sinal	NOUN	_	Gender=Masc|Number=Sing	12	ccomp	12:ccomp	_
+22	de	de	ADP	_	ExtPos=SCONJ	27	mark	27:mark|29:mark	_
+23	que	que	SCONJ	_	_	22	fixed	22:fixed	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	governo	governo	NOUN	_	Gender=Masc|Number=Sing	27	nsubj	27:nsubj|29:nsubj	_
+26	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	cop	27:cop|29:cop	_
+27	firme	firme	ADJ	_	Number=Sing	21	acl	21:acl:de_que	_
+28	e	e	CCONJ	_	_	29	cc	29:cc	_
+29	atuante	atuante	ADJ	_	Number=Sing	27	conj	21:acl:de_que|27:conj:e	SpaceAfter=No
+30	,	,	PUNCT	_	_	36	punct	36:punct	_
+31	e	e	CCONJ	_	_	36	cc	36:cc	_
+32	que	que	SCONJ	_	_	36	mark	36:mark	_
+33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	34:det	_
+34	viagem	viagem	NOUN	_	Gender=Fem|Number=Sing	36	nsubj:pass	36:nsubj:pass	_
+35	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	36	aux:pass	36:aux:pass	_
+36	confirmada	confirmar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	21	conj	12:ccomp|21:conj:e	_
+37	após	após	ADP	_	_	38	case	38:case	_
+38	garantias	garantia	NOUN	_	Gender=Fem|Number=Plur	36	obl	36:obl:após	_
+39	de	de	ADP	_	ExtPos=SCONJ	45	mark	45:mark	_
+40	que	que	SCONJ	_	_	39	fixed	39:fixed	_
+41	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	42	det	42:det	_
+42	ausência	ausência	NOUN	_	Gender=Fem|Number=Sing	45	nsubj:pass	45:nsubj:pass	_
+43	seria	ser	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	45	aux:pass	45:aux:pass	_
+44	mal	mal	ADV	_	_	45	advmod	45:advmod	_
+45	interpretada	interpretar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	38	acl	38:acl:de_que	_
+46	por	por	ADP	_	_	47	case	47:case	_
+47	investidores	investidor	NOUN	_	Gender=Masc|Number=Plur	45	obl:agent	45:obl:agent	_
+48	globais	global	ADJ	_	Number=Plur	47	amod	47:amod	SpaceAfter=No
+49	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0033
+# text = A agenda de Temer em Hamburgo promete ser agitada, com reuniões de alto nível e a expectativa de novos acordos comerciais.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	agenda	agenda	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj|9:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Temer	Temer	PROPN	_	_	2	nmod	2:nmod:de	_
+5	em	em	ADP	_	_	6	case	6:case	_
+6	Hamburgo	Hamburgo	PROPN	_	_	2	nmod	2:nmod:em	_
+7	promete	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	ser	ser	AUX	_	VerbForm=Inf	9	cop	9:cop	_
+9	agitada	agitado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	7	xcomp	7:xcomp	SpaceAfter=No
+10	,	,	PUNCT	_	_	12	punct	12:punct	_
+11	com	com	ADP	_	_	12	case	12:case|18:case	_
+12	reuniões	reunião	NOUN	_	Gender=Fem|Number=Plur	7	obl	7:obl:com	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	alto	alto	ADJ	_	Gender=Masc|Number=Sing	15	amod	15:amod	_
+15	nível	nível	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:de	_
+16	e	e	CCONJ	_	_	18	cc	18:cc	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	expectativa	expectativa	NOUN	_	Gender=Fem|Number=Sing	12	conj	7:obl:com|12:conj:e	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	novos	novo	ADJ	_	Gender=Masc|Number=Plur	21	amod	21:amod	_
+21	acordos	acordo	NOUN	_	Gender=Masc|Number=Plur	18	nmod	18:nmod:de	_
+22	comerciais	comercial	ADJ	_	Number=Plur	21	amod	21:amod	SpaceAfter=No
+23	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0035
+# text = O presidente brasileiro também destacou que o Brasil está pronto para assumir um papel de liderança nas discussões sobre comércio global e proteção climática, alinhando-se com a posição da União Europeia.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	presidente	presidente	NOUN	_	Number=Sing	5	nsubj	5:nsubj	_
+3	brasileiro	brasileiro	ADJ	_	Gender=Masc|Number=Sing	2	amod	2:amod	_
+4	também	também	ADV	_	_	5	advmod	5:advmod	_
+5	destacou	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	que	que	SCONJ	_	_	10	mark	10:mark	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	Brasil	Brasil	PROPN	_	_	10	nsubj	10:nsubj	_
+9	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_
+10	pronto	pronto	ADJ	_	Gender=Masc|Number=Sing	5	ccomp	5:ccomp	_
+11	para	para	ADP	_	_	12	mark	12:mark	_
+12	assumir	assumir	VERB	_	VerbForm=Inf	10	acl	10:acl:para	_
+13	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	papel	papel	NOUN	_	Gender=Masc|Number=Sing	12	obj	12:obj	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	liderança	liderança	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:de	_
+17-18	nas	_	_	_	_	_	_	_	_
+17	em	em	ADP	_	_	19	case	19:case	_
+18	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	19:det	_
+19	discussões	discussão	NOUN	_	Gender=Fem|Number=Plur	14	nmod	14:nmod:em	_
+20	sobre	sobre	ADP	_	_	21	case	21:case|24:case	_
+21	comércio	comércio	NOUN	_	Gender=Masc|Number=Sing	19	nmod	19:nmod:sobre	_
+22	global	global	ADJ	_	Number=Sing	21	amod	21:amod	_
+23	e	e	CCONJ	_	_	24	cc	24:cc	_
+24	proteção	proteção	NOUN	_	Gender=Fem|Number=Sing	21	conj	19:nmod:sobre|21:conj:e	_
+25	climática	climático	ADJ	_	Gender=Fem|Number=Sing	24	amod	24:amod	SpaceAfter=No
+26	,	,	PUNCT	_	_	27	punct	27:punct	_
+27-28	alinhando-se	_	_	_	_	_	_	_	_
+27	alinhando	alinhar	VERB	_	VerbForm=Ger	12	advcl	12:advcl	_
+28	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	27	expl	27:expl	_
+29	com	com	ADP	_	_	31	case	31:case	_
+30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+31	posição	posição	NOUN	_	Gender=Fem|Number=Sing	27	obl	27:obl:com	_
+32-33	da	_	_	_	_	_	_	_	_
+32	de	de	ADP	_	_	34	case	34:case	_
+33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	34:det	_
+34	União	União	PROPN	_	_	31	nmod	31:nmod:de	_
+35	Europeia	Europeia	PROPN	_	_	34	flat:name	34:flat:name	SpaceAfter=No
+36	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0037
+# text = Enquanto isso, Angela Merkel, anfitriã do evento, pareceu aliviada com a presença de Temer, vendo nela uma oportunidade de fortalecer laços com um importante país sul-americano.
+1	Enquanto	enquanto	ADV	_	ExtPos=ADV	12	advmod	12:advmod	_
+2	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	fixed	1:fixed	SpaceAfter=No
+3	,	,	PUNCT	_	_	1	punct	1:punct	_
+4	Angela	Angela	PROPN	_	_	12	nsubj	12:nsubj|13:nsubj	_
+5	Merkel	Merkel	PROPN	_	_	4	flat:name	4:flat:name	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	anfitriã	anfitrião	NOUN	_	Gender=Fem|Number=Sing	4	appos	4:appos	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	evento	evento	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	SpaceAfter=No
+11	,	,	PUNCT	_	_	7	punct	7:punct	_
+12	pareceu	parecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+13	aliviada	aliviado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	12	xcomp	12:xcomp	_
+14	com	com	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	presença	presença	NOUN	_	Gender=Fem|Number=Sing	13	obl	13:obl:com	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	Temer	Temer	PROPN	_	_	16	nmod	16:nmod:de	SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	20:punct	_
+20	vendo	ver	VERB	_	VerbForm=Ger	12	advcl	12:advcl	_
+21-22	nela	_	_	_	_	_	_	_	_
+21	em	em	ADP	_	_	22	case	22:case	_
+22	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	20	obl	20:obl:em	_
+23	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	oportunidade	oportunidade	NOUN	_	Gender=Fem|Number=Sing	20	obj	20:obj	_
+25	de	de	ADP	_	_	26	mark	26:mark	_
+26	fortalecer	fortalecer	VERB	_	VerbForm=Inf	24	acl	24:acl:de	_
+27	laços	laço	NOUN	_	Gender=Masc|Number=Plur	26	obj	26:obj	_
+28	com	com	ADP	_	_	31	case	31:case	_
+29	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+30	importante	importante	ADJ	_	Number=Sing	31	amod	31:amod	_
+31	país	país	NOUN	_	Gender=Masc|Number=Sing	27	nmod	27:nmod:com	_
+32	sul-americano	sul-americano	ADJ	_	Gender=Masc|Number=Sing	31	amod	31:amod	SpaceAfter=No
+33	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0039
+# text = A chanceler alemã espera que a cúpula do G20 ajude a desviar a atenção das controvérsias internas e reforce sua imagem como líder global.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	chanceler	chanceler	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+3	alemã	alemão	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	_
+4	espera	esperar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	que	que	SCONJ	_	_	11	mark	11:mark|21:mark	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	cúpula	cúpula	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	11:nsubj|13:nsubj|21:nsubj	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	G20	G20	PROPN	_	_	7	nmod	7:nmod:de	_
+11	ajude	ajudar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	ccomp	4:ccomp	_
+12	a	a	ADP	_	_	13	mark	13:mark	_
+13	desviar	desviar	VERB	_	VerbForm=Inf	11	xcomp	11:xcomp	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	atenção	atenção	NOUN	_	Gender=Fem|Number=Sing	13	obj	13:obj	_
+16-17	das	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	18:det	_
+18	controvérsias	controvérsão	NOUN	_	Gender=Fem|Number=Plur	13	obl	13:obl:de	_
+19	internas	interno	ADJ	_	Gender=Fem|Number=Plur	18	amod	18:amod	_
+20	e	e	CCONJ	_	_	21	cc	21:cc	_
+21	reforce	reforÃ§ar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	conj	4:ccomp|11:conj:e	_
+22	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	23	det	23:det	_
+23	imagem	imagem	NOUN	_	Gender=Fem|Number=Sing	21	obj	21:obj	_
+24	como	como	ADP	_	_	25	case	25:case	_
+25	líder	líder	NOUN	_	Gender=Masc|Number=Sing	23	nmod	23:nmod:como	_
+26	global	global	ADJ	_	Number=Sing	25	amod	25:amod	SpaceAfter=No
+27	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0041
+# text = Trump e Putin também marcarão presença, com especialistas prevendo uma conversa produtiva e um possível realinhamento de políticas entre os EUA e a Rússia.
+1	Trump	Trump	PROPN	_	_	5	nsubj	5:nsubj	_
+2	e	e	CCONJ	_	_	3	cc	3:cc	_
+3	Putin	Putin	PROPN	_	_	1	conj	1:conj:e|5:nsubj	_
+4	também	também	ADV	_	_	5	advmod	5:advmod	_
+5	marcarão	marcar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+6	presença	presença	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	SpaceAfter=No
+7	,	,	PUNCT	_	_	9	punct	9:punct	_
+8	com	com	ADP	_	_	9	case	9:case	_
+9	especialistas	especialista	NOUN	_	Number=Plur	5	obl	5:obl:com	_
+10	prevendo	prever	VERB	_	VerbForm=Ger	9	acl	9:acl	_
+11	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	conversa	conversa	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+13	produtiva	produtivo	ADJ	_	Gender=Fem|Number=Sing	12	amod	12:amod	_
+14	e	e	CCONJ	_	_	17	cc	17:cc	_
+15	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+16	possível	possível	ADJ	_	Number=Sing	17	amod	17:amod	_
+17	realinhamento	realinhamento	NOUN	_	Gender=Masc|Number=Sing	12	conj	10:obj|12:conj:e	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	políticas	política	NOUN	_	Gender=Fem|Number=Plur	17	nmod	17:nmod:de	_
+20	entre	entre	ADP	_	_	22	case	22:case	_
+21	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	22:det	_
+22	EUA	EUA	PROPN	_	_	17	nmod	17:nmod:entre	_
+23	e	e	CCONJ	_	_	25	cc	25:cc	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	Rússia	Rússia	PROPN	_	_	22	conj	17:nmod:entre|22:conj:e	SpaceAfter=No
+26	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0043
+# text = As expectativas são altas, especialmente em torno de temas como o combate ao terrorismo e o controle de armas nucleares.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	expectativas	expectativa	NOUN	_	Gender=Fem|Number=Plur	4	nsubj	4:nsubj	_
+3	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+4	altas	alto	ADJ	_	Gender=Fem|Number=Plur	0	root	0:root	SpaceAfter=No
+5	,	,	PUNCT	_	_	8	punct	8:punct	_
+6	especialmente	especialmente	ADV	_	_	8	advmod	8:advmod	_
+7	em	em	ADP	_	_	8	case	8:case	_
+8	torno	torno	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:em	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	temas	tema	NOUN	_	Gender=Masc|Number=Plur	8	nmod	8:nmod:de	_
+11	como	como	ADP	_	_	13	case	13:case|19:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	combate	combate	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:como	_
+14-15	ao	_	_	_	_	_	_	_	_
+14	a	a	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	terrorismo	terrorismo	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod:a	_
+17	e	e	CCONJ	_	_	19	cc	19:cc	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	controle	controle	NOUN	_	Gender=Masc|Number=Sing	13	conj	10:nmod:como|13:conj:e	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	armas	arma	NOUN	_	Gender=Fem|Number=Plur	19	nmod	19:nmod:de	_
+22	nucleares	nuclear	ADJ	_	Number=Plur	21	amod	21:amod	SpaceAfter=No
+23	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0045
+# text = A China, por sua vez, vê o G20 como uma plataforma para expandir sua influência mundial e defender o livre-comércio.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	China	China	PROPN	_	_	8	nsubj	8:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
+4	por	por	ADP	_	_	6	case	6:case	_
+5	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	6	det	6:det	_
+6	vez	vez	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:por	SpaceAfter=No
+7	,	,	PUNCT	_	_	6	punct	6:punct	_
+8	vê	ver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	G20	G20	PROPN	_	_	8	obj	8:obj	_
+11	como	como	ADP	_	_	13	case	13:case	_
+12	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	plataforma	plataforma	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:como	_
+14	para	para	ADP	_	_	15	mark	15:mark|20:mark	_
+15	expandir	expandir	VERB	_	VerbForm=Inf	13	acl	13:acl:para	_
+16	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	17	det	17:det	_
+17	influência	influência	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	_
+18	mundial	mundial	ADJ	_	Number=Sing	17	amod	17:amod	_
+19	e	e	CCONJ	_	_	20	cc	20:cc	_
+20	defender	defender	VERB	_	VerbForm=Inf	15	conj	13:acl:para|15:conj:e	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	livre-comércio	livre-comércio	NOUN	_	Gender=Masc|Number=Sing	20	obj	20:obj	SpaceAfter=No
+23	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0047
+# text = Michel Temer, ao conversar com Xi Jinping, destacou o Brasil como um mercado emergente vital e pronto para novos investimentos.
+1	Michel	Michel	PROPN	_	_	11	nsubj	11:nsubj	_
+2	Temer	Temer	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
+4-5	ao	_	_	_	_	_	_	_	_
+4	a	a	ADP	_	ExtPos=SCONJ	6	mark	6:mark	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	fixed	4:fixed	_
+6	conversar	conversar	VERB	_	VerbForm=Inf	11	advcl	11:advcl:a_o	_
+7	com	com	ADP	_	_	8	case	8:case	_
+8	Xi	Xi	PROPN	_	_	6	obl	6:obl:com	_
+9	Jinping	Jinping	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+10	,	,	PUNCT	_	_	6	punct	6:punct	_
+11	destacou	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	Brasil	Brasil	PROPN	_	_	11	obj	11:obj	_
+14	como	como	ADP	_	_	16	case	16:case	_
+15	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	mercado	mercado	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:como	_
+17	emergente	emergente	ADJ	_	Number=Sing	16	amod	16:amod	_
+18	vital	vital	ADJ	_	Number=Sing	16	amod	16:amod	_
+19	e	e	CCONJ	_	_	20	cc	20:cc	_
+20	pronto	pronto	ADJ	_	Gender=Masc|Number=Sing	18	conj	16:amod|18:conj:e	_
+21	para	para	ADP	_	_	23	case	23:case	_
+22	novos	novo	ADJ	_	Gender=Masc|Number=Plur	23	amod	23:amod	_
+23	investimentos	investimento	NOUN	_	Gender=Masc|Number=Plur	20	obl	20:obl:para	SpaceAfter=No
+24	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0049
+# text = Narendra Modi, da Índia, e Recep Tayyip Erdogan, da Turquia, têm suas próprias agendas, mas ambos reconheceram a importância do G20 para seus países.
+1	Narendra	Narendra	PROPN	_	_	17	nsubj	17:nsubj	_
+2	Modi	Modi	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
+4-5	da	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	Índia	Índia	PROPN	_	_	1	nmod	1:nmod:de	SpaceAfter=No
+7	,	,	PUNCT	_	_	6	punct	6:punct	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	Recep	Recep	PROPN	_	_	1	conj	1:conj:e|17:nsubj	_
+10	Tayyip	Tayyip	PROPN	_	_	9	flat:name	9:flat:name	_
+11	Erdogan	Erdogan	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+12	,	,	PUNCT	_	_	15	punct	15:punct	_
+13-14	da	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	Turquia	Turquia	PROPN	_	_	9	nmod	9:nmod:de	SpaceAfter=No
+16	,	,	PUNCT	_	_	15	punct	15:punct	_
+17	têm	ter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+18	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	20	det	20:det	_
+19	próprias	próprio	ADJ	_	Gender=Fem|Number=Plur	20	amod	20:amod	_
+20	agendas	agenda	NOUN	_	Gender=Fem|Number=Plur	17	obj	17:obj	SpaceAfter=No
+21	,	,	PUNCT	_	_	24	punct	24:punct	_
+22	mas	mas	CCONJ	_	_	24	cc	24:cc	_
+23	ambos	ambos	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	24	nsubj	24:nsubj	_
+24	reconheceram	reconhecer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	17	conj	17:conj:mas	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	importância	importância	NOUN	_	Gender=Fem|Number=Sing	24	obj	24:obj	_
+27-28	do	_	_	_	_	_	_	_	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	29:det	_
+29	G20	G20	PROPN	_	_	26	nmod	26:nmod:de	_
+30	para	para	ADP	_	_	32	case	32:case	_
+31	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	32	det	32:det	_
+32	países	país	NOUN	_	Gender=Masc|Number=Plur	26	nmod	26:nmod:para	SpaceAfter=No
+33	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0051
+# text = Já a África do Sul, representada por Jacob Zuma, espera que a iniciativa Compact with Africa impulsione investimentos no continente, aliviando a crise de desemprego.
+1	Já	já	CCONJ	_	_	13	cc	13:cc	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	África	África	PROPN	_	_	13	nsubj	13:nsubj	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	Sul	Sul	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	8:punct	_
+8	representada	representar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	3	acl	3:acl	_
+9	por	por	ADP	_	_	10	case	10:case	_
+10	Jacob	Jacob	PROPN	_	_	8	obl:agent	8:obl:agent	_
+11	Zuma	Zuma	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+12	,	,	PUNCT	_	_	8	punct	8:punct	_
+13	espera	esperar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+14	que	que	SCONJ	_	_	20	mark	20:mark	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	iniciativa	iniciativa	NOUN	_	Gender=Fem|Number=Sing	20	nsubj	20:nsubj	_
+17	Compact	Compact	PROPN	_	_	16	nmod	16:nmod	_
+18	with	with	PROPN	_	_	17	flat:name	17:flat:name	_
+19	Africa	Africa	PROPN	_	_	17	flat:name	17:flat:name	_
+20	impulsione	impulsionar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	ccomp	13:ccomp	_
+21	investimentos	investimento	NOUN	_	Gender=Masc|Number=Plur	20	obj	20:obj	_
+22-23	no	_	_	_	_	_	_	_	_
+22	em	em	ADP	_	_	24	case	24:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	continente	continente	NOUN	_	Number=Sing	21	nmod	21:nmod:em	SpaceAfter=No
+25	,	,	PUNCT	_	_	26	punct	26:punct	_
+26	aliviando	aliviar	VERB	_	VerbForm=Ger	20	advcl	20:advcl	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	crise	crise	NOUN	_	Gender=Fem|Number=Sing	26	obj	26:obj	_
+29	de	de	ADP	_	_	30	case	30:case	_
+30	desemprego	desemprego	NOUN	_	Gender=Masc|Number=Sing	28	nmod	28:nmod:de	SpaceAfter=No
+31	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0053
+# text = A cúpula do G20 em Hamburgo promete ser um palco de grandes avanços e cooperação internacional, com o Brasil assumindo um papel protagonista na narrativa de recuperação econômica global.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	cúpula	cúpula	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	8:nsubj|11:nsubj	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	G20	G20	PROPN	_	_	2	nmod	2:nmod:de	_
+6	em	em	ADP	_	_	7	case	7:case	_
+7	Hamburgo	Hamburgo	PROPN	_	_	2	nmod	2:nmod:em	_
+8	promete	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+9	ser	ser	AUX	_	VerbForm=Inf	11	cop	11:cop	_
+10	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	palco	palco	NOUN	_	Gender=Masc|Number=Sing	8	xcomp	8:xcomp	_
+12	de	de	ADP	_	_	14	case	14:case|16:case	_
+13	grandes	grande	ADJ	_	Number=Plur	14	amod	14:amod	_
+14	avanços	avanço	NOUN	_	Gender=Masc|Number=Plur	11	nmod	11:nmod:de	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	cooperação	cooperação	NOUN	_	Gender=Fem|Number=Sing	14	conj	11:nmod:de|14:conj:e	_
+17	internacional	internacional	ADJ	_	Number=Sing	16	amod	16:amod	SpaceAfter=No
+18	,	,	PUNCT	_	_	22	punct	22:punct	_
+19	com	com	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	Brasil	Brasil	PROPN	_	_	22	obl	22:obl:com	_
+22	assumindo	assumir	VERB	_	VerbForm=Ger	8	advcl	8:advcl	_
+23	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	papel	papel	NOUN	_	Gender=Masc|Number=Sing	22	obj	22:obj	_
+25	protagonista	protagonista	ADJ	_	Number=Sing	24	amod	24:amod	_
+26-27	na	_	_	_	_	_	_	_	_
+26	em	em	ADP	_	_	28	case	28:case	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	narrativa	narrativa	NOUN	_	Gender=Fem|Number=Sing	24	nmod	24:nmod:em	_
+29	de	de	ADP	_	_	30	case	30:case	_
+30	recuperação	recuperação	NOUN	_	Gender=Fem|Number=Sing	28	nmod	28:nmod:de	_
+31	econômica	econômico	ADJ	_	Gender=Fem|Number=Sing	30	amod	30:amod	_
+32	global	global	ADJ	_	Number=Sing	30	amod	30:amod	SpaceAfter=No
+33	.	.	PUNCT	_	_	8	punct	8:punct	_

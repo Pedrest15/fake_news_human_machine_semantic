@@ -1,0 +1,577 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Gilmar Mendes recebe secretamente Temer e dois ministros investigados.
+1	Gilmar	Gilmar	PROPN	_	_	3	nsubj	3:nsubj	_
+2	Mendes	Mendes	PROPN	_	_	1	flat:name	1:flat:name	_
+3	recebe	receber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	secretamente	secretamente	ADV	_	_	3	advmod	3:advmod	_
+5	Temer	Temer	PROPN	_	_	3	obj	3:obj	_
+6	e	e	CCONJ	_	_	8	cc	8:cc	_
+7	dois	dois	NUM	_	Gender=Masc|NumType=Card	8	nummod	8:nummod	_
+8	ministros	ministro	NOUN	_	Gender=Masc|Number=Plur	5	conj	3:obj|5:conj:e	_
+9	investigados	investigar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	8	acl	8:acl	SpaceAfter=No
+10	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = Gilmar Mendes recebeu para o jantar Michel Temer, Moreira Franco e Eliseu Padilha.
+1	Gilmar	Gilmar	PROPN	_	_	3	nsubj	3:nsubj	_
+2	Mendes	Mendes	PROPN	_	_	1	flat:name	1:flat:name	_
+3	recebeu	receber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	para	para	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	jantar	jantar	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:para	_
+7	Michel	Michel	PROPN	_	_	3	obj	3:obj	_
+8	Temer	Temer	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+9	,	,	PUNCT	_	_	10	punct	10:punct	_
+10	Moreira	Moreira	PROPN	_	_	7	conj	3:obj|7:conj:e	_
+11	Franco	Franco	PROPN	_	_	10	flat:name	10:flat:name	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	Eliseu	Eliseu	PROPN	_	_	7	conj	3:obj|7:conj:e	_
+14	Padilha	Padilha	PROPN	_	_	13	flat:name	13:flat:name	SpaceAfter=No
+15	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0005
+# text = O dono da casa é ministro do Supremo Tribunal Federal.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	dono	dono	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	casa	casa	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+7	ministro	ministro	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	Supremo	Supremo	PROPN	_	_	7	nmod	7:nmod:de	_
+11	Tribunal	Tribunal	PROPN	_	_	10	flat:name	10:flat:name	_
+12	Federal	Federal	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+13	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0007
+# text = Os visitantes, encalacrados em inquéritos que correm na Corte Suprema, são matéria-prima para futuras sentenças do anfitrião.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	visitantes	visitante	NOUN	_	Number=Plur	15	nsubj	15:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	encalacrados	encalacrado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	2	acl	2:acl	_
+5	em	em	ADP	_	_	6	case	6:case	_
+6	inquéritos	inquérito	NOUN	_	Gender=Masc|Number=Plur	4	obl	4:obl:em|8:nsubj	_
+7	que	que	PRON	_	PronType=Rel	8	nsubj	6:ref	_
+8	correm	correr	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	acl:relcl	6:acl:relcl	_
+9-10	na	_	_	_	_	_	_	_	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	Corte	Corte	PROPN	_	_	8	obl	8:obl:em	_
+12	Suprema	Suprema	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+13	,	,	PUNCT	_	_	4	punct	4:punct	_
+14	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	cop	15:cop	_
+15	matéria-prima	matéria-prima	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+16	para	para	ADP	_	_	18	case	18:case	_
+17	futuras	futuro	ADJ	_	Gender=Fem|Number=Plur	18	amod	18:amod	_
+18	sentenças	sentença	NOUN	_	Gender=Fem|Number=Plur	15	nmod	15:nmod:para	_
+19-20	do	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	anfitrião	anfitrião	NOUN	_	Gender=Masc|Number=Sing	18	nmod	18:nmod:de	SpaceAfter=No
+22	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0009
+# text = O que aconteceu entre uma garfada e outra só os envolvidos podem dizer.
+1	O	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	12	nsubj	3:nsubj|12:nsubj|13:nsubj	_
+2	que	que	PRON	_	PronType=Rel	3	nsubj	1:ref	_
+3	aconteceu	acontecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+4	entre	entre	ADP	_	_	6	case	6:case	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	garfada	garfada	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:entre	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	outra	outro	PRON	_	Gender=Fem|Number=Sing|PronType=Ind	6	conj	3:obl:entre|6:conj:e	_
+9	só	só	ADV	_	_	11	advmod	11:advmod	_
+10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	11:det	_
+11	envolvidos	envolvido	NOUN	_	Gender=Masc|Number=Plur	12	nsubj	3:nsubj|12:nsubj|13:nsubj	_
+12	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+13	dizer	dizer	VERB	_	VerbForm=Inf	12	xcomp	12:xcomp	SpaceAfter=No
+14	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0011
+# text = Mas restou uma evidência: Gilmar, Temer, Moreira e Padilha mastigaram a vergonha na cara.
+1	Mas	mas	CCONJ	_	_	2	cc	2:cc	_
+2	restou	restar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	evidência	evidência	NOUN	_	Gender=Fem|Number=Sing	2	nsubj	2:nsubj	SpaceAfter=No
+5	:	:	PUNCT	_	_	6	punct	6:punct	_
+6	Gilmar	Gilmar	PROPN	_	_	13	nsubj	13:nsubj	SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	8:punct	_
+8	Temer	Temer	PROPN	_	_	6	conj	6:conj:e|13:nsubj	SpaceAfter=No
+9	,	,	PUNCT	_	_	10	punct	10:punct	_
+10	Moreira	Moreira	PROPN	_	_	6	conj	6:conj:e|13:nsubj	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	Padilha	Padilha	PROPN	_	_	6	conj	6:conj:e|13:nsubj	_
+13	mastigaram	mastigar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	2	conj	2:conj	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	vergonha	vergonha	NOUN	_	Gender=Fem|Number=Sing	13	obj	13:obj	_
+16-17	na	_	_	_	_	_	_	_	_
+16	em	em	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	cara	cara	NOUN	_	Number=Sing	13	obl	13:obl:em	SpaceAfter=No
+19	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0013
+# text = Esqueceram de maneirar.
+1	Esqueceram	esquecer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	de	de	ADP	_	_	3	mark	3:mark	_
+3	maneirar	maneirar	VERB	_	VerbForm=Inf	1	xcomp	1:xcomp	SpaceAfter=No
+4	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0015
+# text = O encontro não constou das agendas dos envolvidos.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	encontro	encontro	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+3	não	não	ADV	_	_	4	advmod	4:advmod	_
+4	constou	constar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5-6	das	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	7:det	_
+7	agendas	agenda	NOUN	_	Gender=Fem|Number=Plur	4	obl	4:obl:de	_
+8-9	dos	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	10:det	_
+10	envolvidos	envolvido	NOUN	_	Gender=Masc|Number=Plur	7	nmod	7:nmod:de	SpaceAfter=No
+11	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0017
+# text = Ocorreu às vésperas da indicação de Raquel Dodge para substituir na Procuradoria-Geral da República Rodrigo Janot, um desafeto de Temer e Gilmar.
+1	Ocorreu	ocorrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2-3	às	_	_	_	_	_	_	_	_
+2	a	a	ADP	_	_	4	case	4:case	_
+3	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	4:det	_
+4	vésperas	véspera	NOUN	_	Gender=Fem|Number=Plur	1	obl	1:obl:a	_
+5-6	da	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	indicação	indicação	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:de	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	Raquel	Raquel	PROPN	_	_	7	nmod	7:nmod:de	_
+10	Dodge	Dodge	PROPN	_	_	9	flat:name	9:flat:name	_
+11	para	para	ADP	_	_	12	mark	12:mark	_
+12	substituir	substituir	VERB	_	VerbForm=Inf	7	acl	7:acl:para	_
+13-14	na	_	_	_	_	_	_	_	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	Procuradoria-Geral	Procuradoria-Geral	PROPN	_	_	12	obl	12:obl:em	_
+16-17	da	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	República	República	PROPN	_	_	15	flat:name	15:flat:name	_
+19	Rodrigo	Rodrigo	PROPN	_	_	12	obj	12:obj	_
+20	Janot	Janot	PROPN	_	_	19	flat:name	19:flat:name	SpaceAfter=No
+21	,	,	PUNCT	_	_	23	punct	23:punct	_
+22	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	desafeto	desafeto	NOUN	_	Gender=Masc|Number=Sing	19	appos	19:appos	_
+24	de	de	ADP	_	_	25	case	25:case|27:case	_
+25	Temer	Temer	PROPN	_	_	23	nmod	23:nmod:de	_
+26	e	e	CCONJ	_	_	27	cc	27:cc	_
+27	Gilmar	Gilmar	PROPN	_	_	25	conj	23:nmod:de|25:conj:e	SpaceAfter=No
+28	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0019
+# text = Deu-se em meio a um julgamento em que Gilmar torpedeou Janot e tentou, sem sucesso, emplacar a tese segundo a qual cabe ao colegiado do Supremo, não ao relator, homologar acordos de delação como o que transformou Temer em denunciado.
+1-2	Deu-se	_	_	_	_	_	_	_	_
+1	Deu	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	1	expl	1:expl	_
+3	em	em	ADP	_	ExtPos=ADP	7	case	7:case	_
+4	meio	meio	NOUN	_	Gender=Masc|Number=Sing	3	fixed	3:fixed	_
+5	a	a	ADP	_	_	3	fixed	3:fixed	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	julgamento	julgamento	NOUN	_	Gender=Masc|Number=Sing	1	obl	1:obl:em_meio_a|11:obl:em	_
+8	em	em	ADP	_	_	9	case	9:case	_
+9	que	que	PRON	_	PronType=Rel	11	obl	7:ref	_
+10	Gilmar	Gilmar	PROPN	_	_	11	nsubj	11:nsubj|14:nsubj|19:nsubj	_
+11	torpedeou	torpedear	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	acl:relcl	7:acl:relcl	_
+12	Janot	Janot	PROPN	_	_	11	obj	11:obj	_
+13	e	e	CCONJ	_	_	14	cc	14:cc	_
+14	tentou	tentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	conj	7:acl:relcl|11:conj:e	SpaceAfter=No
+15	,	,	PUNCT	_	_	17	punct	17:punct	_
+16	sem	sem	ADP	_	_	17	case	17:case	_
+17	sucesso	sucesso	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:sem	SpaceAfter=No
+18	,	,	PUNCT	_	_	17	punct	17:punct	_
+19	emplacar	emplacar	VERB	_	VerbForm=Inf	14	xcomp	14:xcomp	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	tese	tese	NOUN	_	Gender=Fem|Number=Sing	19	obj	19:obj|25:obl:segundo|38:nsubj	_
+22	segundo	segundo	ADP	_	_	23	case	23:case	_
+23	a	o	PRON	_	ExtPos=PRON|Gender=Fem|Number=Sing|Person=3|PronType=Dem	25	obl	21:ref|25:obl	_
+24	qual	qual	PRON	_	Number=Sing|PronType=Rel	23	fixed	23:fixed	_
+25	cabe	caber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	acl:relcl	21:acl:relcl	_
+26-27	ao	_	_	_	_	_	_	_	_
+26	a	a	ADP	_	_	28	case	28:case	_
+27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	colegiado	colegiado	NOUN	_	Gender=Masc|Number=Sing	25	obl	25:obl:a	_
+29-30	do	_	_	_	_	_	_	_	_
+29	de	de	ADP	_	_	31	case	31:case	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	Supremo	Supremo	PROPN	_	_	28	nmod	28:nmod:de	SpaceAfter=No
+32	,	,	PUNCT	_	_	36	punct	36:punct	_
+33	não	não	ADV	_	_	36	advmod	36:advmod	_
+34-35	ao	_	_	_	_	_	_	_	_
+34	a	a	ADP	_	_	36	case	36:case	_
+35	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	36:det	_
+36	relator	relator	NOUN	_	Gender=Masc|Number=Sing	28	conj	25:obl:a|28:conj	SpaceAfter=No
+37	,	,	PUNCT	_	_	36	punct	36:punct	_
+38	homologar	homologar	VERB	_	VerbForm=Inf	19	xcomp	19:xcomp	_
+39	acordos	acordo	NOUN	_	Gender=Masc|Number=Plur	38	obj	38:obj	_
+40	de	de	ADP	_	_	41	case	41:case	_
+41	delação	delação	NOUN	_	Gender=Fem|Number=Sing	39	nmod	39:nmod:de	_
+42	como	como	ADP	_	_	43	case	43:case	_
+43	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	39	nmod	39:nmod:como|45:nsubj	_
+44	que	que	PRON	_	PronType=Rel	45	nsubj	43:ref	_
+45	transformou	transformar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	43	acl:relcl	43:acl:relcl	_
+46	Temer	Temer	PROPN	_	_	45	obj	45:obj	_
+47	em	em	ADP	_	_	48	case	48:case	_
+48	denunciado	denunciado	NOUN	_	Gender=Masc|Number=Sing	45	obl	45:obl:em	SpaceAfter=No
+49	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0021
+# text = Contra esse pano de fundo, as assessorias do Planalto e de Gilmar informam que os personagens discutiram no fatídico jantar apenas reforma política.
+1	Contra	contra	ADP	_	_	3	case	3:case	_
+2	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	3	det	3:det	_
+3	pano	pano	NOUN	_	Gender=Masc|Number=Sing	15	obl	15:obl:contra	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	fundo	fundo	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	3	punct	3:punct	_
+7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	8:det	_
+8	assessorias	assessoria	NOUN	_	Gender=Fem|Number=Plur	15	nsubj	15:nsubj	_
+9-10	do	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	Planalto	Planalto	PROPN	_	_	8	nmod	8:nmod:de	_
+12	e	e	CCONJ	_	_	14	cc	14:cc	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	Gilmar	Gilmar	PROPN	_	_	11	conj	8:nmod:de|11:conj:e	_
+15	informam	informar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+16	que	que	SCONJ	_	_	19	mark	19:mark	_
+17	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	18:det	_
+18	personagens	personagem	NOUN	_	Number=Plur	19	nsubj	19:nsubj	_
+19	discutiram	discutir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	15	ccomp	15:ccomp	_
+20-21	no	_	_	_	_	_	_	_	_
+20	em	em	ADP	_	_	23	case	23:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+22	fatídico	fatídico	ADJ	_	Gender=Masc|Number=Sing	23	amod	23:amod	_
+23	jantar	jantar	NOUN	_	Gender=Masc|Number=Sing	19	obl	19:obl:em	_
+24	apenas	apenas	ADV	_	_	25	advmod	25:advmod	_
+25	reforma	reforma	NOUN	_	Gender=Fem|Number=Sing	19	obj	19:obj	_
+26	política	político	ADJ	_	Gender=Fem|Number=Sing	25	amod	25:amod	SpaceAfter=No
+27	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0023
+# text = Recorda-se que, além de ministro do Supremo, Gilmar é presidente do Tribunal Superior Eleitoral (TSE).
+1-2	Recorda-se	_	_	_	_	_	_	_	_
+1	Recorda	recordar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	1	expl:impers	1:expl:impers	_
+3	que	que	SCONJ	_	_	14	mark	14:mark	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	além	além	ADV	_	_	14	advmod	14:advmod	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	ministro	ministro	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:de	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	Supremo	Supremo	PROPN	_	_	7	nmod	7:nmod:de	SpaceAfter=No
+11	,	,	PUNCT	_	_	5	punct	5:punct	_
+12	Gilmar	Gilmar	PROPN	_	_	14	nsubj	14:nsubj	_
+13	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	14:cop	_
+14	presidente	presidente	NOUN	_	Number=Sing	1	ccomp	1:ccomp	_
+15-16	do	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	Tribunal	Tribunal	PROPN	_	_	14	nmod	14:nmod:de	_
+18	Superior	Superior	PROPN	_	_	17	flat:name	17:flat:name	_
+19	Eleitoral	Eleitoral	PROPN	_	_	17	flat:name	17:flat:name	_
+20	(	(	PUNCT	_	_	21	punct	21:punct	SpaceAfter=No
+21	TSE	TSE	PROPN	_	_	17	appos	17:appos	SpaceAfter=No
+22	)	)	PUNCT	_	_	21	punct	21:punct	SpaceAfter=No
+23	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0025
+# text = A lembrança é ofensiva e inócua.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	lembrança	lembrança	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj|6:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop|6:cop	_
+4	ofensiva	ofensivo	ADJ	_	Gender=Fem|Number=Sing	0	root	0:root	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	inócua	inócuo	ADJ	_	Gender=Fem|Number=Sing	4	conj	4:conj:e	SpaceAfter=No
+7	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0027
+# text = É insultuosa porque desmerece a inteligência alheia.
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	2:cop	_
+2	insultuosa	insultuoso	ADJ	_	Gender=Fem|Number=Sing	0	root	0:root	_
+3	porque	porque	SCONJ	_	_	4	mark	4:mark	_
+4	desmerece	desmerecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	advcl	2:advcl:porque	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	inteligência	inteligência	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+7	alheia	alheio	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	SpaceAfter=No
+8	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0029
+# text = É desnecessária porque ninguém esqueceu o recente vexame da absolvição da chapa Dilma-Temer, no TSE, por excesso de provas.
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	2:cop	_
+2	desnecessária	desnecessário	ADJ	_	Gender=Fem|Number=Sing	0	root	0:root	_
+3	porque	porque	SCONJ	_	_	5	mark	5:mark	_
+4	ninguém	ninguém	PRON	_	Number=Sing|PronType=Ind	5	nsubj	5:nsubj	_
+5	esqueceu	esquecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	advcl	2:advcl:porque	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+7	recente	recente	ADJ	_	Number=Sing	8	amod	8:amod	_
+8	vexame	vexame	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+9-10	da	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	absolvição	absolvição	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	_
+12-13	da	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	chapa	chapa	NOUN	_	Number=Sing	11	nmod	11:nmod:de	_
+15	Dilma-Temer	Dilma-Temer	PROPN	_	_	14	nmod	14:nmod	SpaceAfter=No
+16	,	,	PUNCT	_	_	19	punct	19:punct	_
+17-18	no	_	_	_	_	_	_	_	_
+17	em	em	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	TSE	TSE	PROPN	_	_	11	nmod	11:nmod:em	SpaceAfter=No
+20	,	,	PUNCT	_	_	22	punct	22:punct	_
+21	por	por	ADP	_	_	22	case	22:case	_
+22	excesso	excesso	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:por	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	provas	prova	NOUN	_	Gender=Fem|Number=Plur	22	nmod	22:nmod:de	SpaceAfter=No
+25	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0031
+# text = Gilmar, Temer, Moreira e Padilha abstiveram-se de prestar esclarecimentos adicionais.
+1	Gilmar	Gilmar	PROPN	_	_	8	nsubj	8:nsubj|11:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	Temer	Temer	PROPN	_	_	1	conj	1:conj:e|8:nsubj|11:nsubj	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	Moreira	Moreira	PROPN	_	_	1	conj	1:conj:e|8:nsubj|11:nsubj	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	Padilha	Padilha	PROPN	_	_	1	conj	1:conj:e|8:nsubj|11:nsubj	_
+8-9	abstiveram-se	_	_	_	_	_	_	_	_
+8	abstiveram	abster	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	8	expl	8:expl	_
+10	de	de	ADP	_	_	11	mark	11:mark	_
+11	prestar	prestar	VERB	_	VerbForm=Inf	8	xcomp	8:xcomp	_
+12	esclarecimentos	esclarecimento	NOUN	_	Gender=Masc|Number=Plur	11	obj	11:obj	_
+13	adicionais	adicional	ADJ	_	Number=Plur	12	amod	12:amod	SpaceAfter=No
+14	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0033
+# text = Mantiveram o jantar no porão das confidências que alimentam a quadrilha de Brasília.
+1	Mantiveram	manter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	jantar	jantar	NOUN	_	Gender=Masc|Number=Sing	1	obj	1:obj	_
+4-5	no	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	porão	porão	NOUN	_	Gender=Masc|Number=Sing	1	obl	1:obl:em	_
+7-8	das	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	9:det	_
+9	confidências	confidência	NOUN	_	Gender=Fem|Number=Plur	6	nmod	6:nmod:de|11:nsubj	_
+10	que	que	PRON	_	PronType=Rel	11	nsubj	9:ref	_
+11	alimentam	alimentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	acl:relcl	9:acl:relcl	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	quadrilha	quadrilha	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	Brasília	Brasília	PROPN	_	_	13	nmod	13:nmod:de	SpaceAfter=No
+16	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0035
+# text = Coube ao líder do governo no Senado, Romero Jucá, outro protagonista de inquérito, acomodar a coisa em pratos asseados.
+1	Coube	caber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2-3	ao	_	_	_	_	_	_	_	_
+2	a	a	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	líder	líder	NOUN	_	Gender=Masc|Number=Sing	1	obl	1:obl:a	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	governo	governo	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:de	_
+8-9	no	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	Senado	Senado	PROPN	_	_	4	nmod	4:nmod:em	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	Romero	Romero	PROPN	_	_	4	appos	4:appos	_
+13	Jucá	Jucá	PROPN	_	_	12	flat:name	12:flat:name	SpaceAfter=No
+14	,	,	PUNCT	_	_	16	punct	16:punct	_
+15	outro	outro	DET	_	Gender=Masc|Number=Sing|PronType=Ind	16	det	16:det	_
+16	protagonista	protagonista	NOUN	_	Number=Sing	4	appos	4:appos	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	inquérito	inquérito	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod:de	SpaceAfter=No
+19	,	,	PUNCT	_	_	12	punct	12:punct	_
+20	acomodar	acomodar	VERB	_	VerbForm=Inf	1	csubj	1:csubj	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	coisa	coisa	NOUN	_	Gender=Fem|Number=Sing	20	obj	20:obj	_
+23	em	em	ADP	_	_	24	case	24:case	_
+24	pratos	prato	NOUN	_	Gender=Masc|Number=Plur	20	obl	20:obl:em	_
+25	asseados	asseado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	24	amod	24:amod	SpaceAfter=No
+26	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0037
+# text = O senador declarou: Não vejo nenhum problema, nenhuma incompatibilidade.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	senador	senador	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	declarou	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+4	:	:	PUNCT	_	_	6	punct	6:punct	_
+5	Não	não	ADV	_	_	6	advmod	6:advmod	_
+6	vejo	ver	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	ccomp:speech	3:ccomp:speech	_
+7	nenhum	nenhum	DET	_	Gender=Masc|Number=Sing|PronType=Ind	8	det	8:det	_
+8	problema	problema	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	SpaceAfter=No
+9	,	,	PUNCT	_	_	11	punct	11:punct	_
+10	nenhuma	nenhum	DET	_	Gender=Fem|Number=Sing|PronType=Ind	11	det	11:det	_
+11	incompatibilidade	incompatibilidade	NOUN	_	Gender=Fem|Number=Sing	8	conj	6:obj|8:conj	SpaceAfter=No
+12	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0039
+# text = As instituições têm que governar.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	instituições	instituição	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	3:nsubj|5:nsubj	_
+3	têm	ter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	ADP	_	_	5	mark	5:mark	_
+5	governar	governar	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	SpaceAfter=No
+6	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0041
+# text = O ministro Gilmar Mendes é um homem sério, competente.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	ministro	ministro	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+3	Gilmar	Gilmar	PROPN	_	_	2	nmod	2:nmod	_
+4	Mendes	Mendes	PROPN	_	_	3	flat:name	3:flat:name	_
+5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	homem	homem	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+8	sério	sério	ADJ	_	Gender=Masc|Number=Sing	7	amod	7:amod	SpaceAfter=No
+9	,	,	PUNCT	_	_	10	punct	10:punct	_
+10	competente	competente	ADJ	_	Number=Sing	8	conj	7:amod|8:conj	SpaceAfter=No
+11	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0043
+# text = É um homem que tem uma história.
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+2	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	homem	homem	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root|5:nsubj	_
+4	que	que	PRON	_	PronType=Rel	5	nsubj	3:ref	_
+5	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_
+6	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	história	história	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	SpaceAfter=No
+8	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0045
+# text = O presidente Michel Temer é um republicano, é um constitucionalista, sabe como deve se comportar.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	presidente	presidente	NOUN	_	Number=Sing	7	nsubj	7:nsubj|11:nsubj|13:nsubj	_
+3	Michel	Michel	PROPN	_	_	2	nmod	2:nmod	_
+4	Temer	Temer	PROPN	_	_	3	flat:name	3:flat:name	_
+5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	republicano	republicano	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+8	,	,	PUNCT	_	_	11	punct	11:punct	_
+9	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	11:cop	_
+10	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	constitucionalista	constitucionalista	NOUN	_	Number=Sing	7	conj	7:conj	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	sabe	saber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	7:conj	_
+14	como	como	ADV	_	_	15	advmod	15:advmod	_
+15	deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	ccomp	13:ccomp	_
+16	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	17	expl	17:expl	_
+17	comportar	comportar	VERB	_	VerbForm=Inf	15	xcomp	15:xcomp	SpaceAfter=No
+18	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0047
+# text = Portanto, não há nenhum tipo de problema numa conversa institucional entre o presidente do Tribunal Superior Eleitoral e o presidente da República Ah, bom!
+1	Portanto	portanto	CCONJ	_	_	4	cc	4:cc	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	não	não	ADV	_	_	4	advmod	4:advmod	_
+4	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	nenhum	nenhum	DET	_	Gender=Masc|Number=Sing|PronType=Ind	6	det	6:det	_
+6	tipo	tipo	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	problema	problema	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de	_
+9-10	numa	_	_	_	_	_	_	_	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	conversa	conversa	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:em	_
+12	institucional	institucional	ADJ	_	Number=Sing	11	amod	11:amod	_
+13	entre	entre	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	presidente	presidente	NOUN	_	Number=Sing	11	nmod	11:nmod:entre	_
+16-17	do	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	Tribunal	Tribunal	PROPN	_	_	15	nmod	15:nmod:de	_
+19	Superior	Superior	PROPN	_	_	18	flat:name	18:flat:name	_
+20	Eleitoral	Eleitoral	PROPN	_	_	18	flat:name	18:flat:name	_
+21	e	e	CCONJ	_	_	23	cc	23:cc	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	presidente	presidente	NOUN	_	Number=Sing	15	conj	11:nmod:entre|15:conj:e	_
+24-25	da	_	_	_	_	_	_	_	_
+24	de	de	ADP	_	_	26	case	26:case	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	República	República	PROPN	_	_	23	nmod	23:nmod:de	_
+27	Ah	ah	INTJ	_	_	23	discourse	23:discourse	SpaceAfter=No
+28	,	,	PUNCT	_	_	29	punct	29:punct	_
+29	bom	bom	ADJ	_	Gender=Masc|Number=Sing	4	parataxis	4:parataxis	SpaceAfter=No
+30	!	!	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0049
+# text = Então, tá!
+1	Então	então	ADV	_	_	3	discourse	3:discourse	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	tá	estar	AUX	_	Abbr=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+4	!	!	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0051
+# text = O governo decerto já identificou o sósia que travou com o delator Joesley Batista, no escurinho do Jaburu, aquela conversa vadia que levou a Procuradoria-Geral da República a suspeitar que o país estivesse sendo presidido por um corrupto.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	governo	governo	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+3	decerto	decerto	ADV	_	_	5	advmod	5:advmod	_
+4	já	já	ADV	_	_	5	advmod	5:advmod	_
+5	identificou	identificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	sósia	sósia	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj|9:nsubj	_
+8	que	que	PRON	_	PronType=Rel	9	nsubj	7:ref	_
+9	travou	travar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	acl:relcl	7:acl:relcl	_
+10	com	com	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	delator	delator	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:com	_
+13	Joesley	Joesley	PROPN	_	_	12	nmod	12:nmod	_
+14	Batista	Batista	PROPN	_	_	13	flat:name	13:flat:name	SpaceAfter=No
+15	,	,	PUNCT	_	_	18	punct	18:punct	_
+16-17	no	_	_	_	_	_	_	_	_
+16	em	em	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	escurinho	escurinho	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:em	_
+19-20	do	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	Jaburu	Jaburu	PROPN	_	_	18	nmod	18:nmod:de	SpaceAfter=No
+22	,	,	PUNCT	_	_	18	punct	18:punct	_
+23	aquela	aquele	DET	_	Gender=Fem|Number=Sing|PronType=Dem	24	det	24:det	_
+24	conversa	conversa	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj|27:nsubj	_
+25	vadia	vadio	ADJ	_	Gender=Fem|Number=Sing	24	amod	24:amod	_
+26	que	que	PRON	_	PronType=Rel	27	nsubj	24:ref	_
+27	levou	levar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	24	acl:relcl	24:acl:relcl	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	Procuradoria-Geral	Procuradoria-Geral	PROPN	_	_	27	obj	27:obj|34:nsubj	_
+30-31	da	_	_	_	_	_	_	_	_
+30	de	de	ADP	_	_	32	case	32:case	_
+31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	32:det	_
+32	República	República	PROPN	_	_	29	flat:name	29:flat:name	_
+33	a	a	ADP	_	_	34	mark	34:mark	_
+34	suspeitar	suspeitar	VERB	_	VerbForm=Inf	27	xcomp	27:xcomp	_
+35	que	que	SCONJ	_	_	40	mark	40:mark	_
+36	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	37:det	_
+37	país	país	NOUN	_	Gender=Masc|Number=Sing	40	nsubj:pass	40:nsubj:pass	_
+38	estivesse	estar	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	40	aux	40:aux	_
+39	sendo	ser	AUX	_	VerbForm=Ger	40	aux:pass	40:aux:pass	_
+40	presidido	presidir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	34	ccomp	34:ccomp	_
+41	por	por	ADP	_	_	43	case	43:case	_
+42	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	43	det	43:det	_
+43	corrupto	corrupto	NOUN	_	Gender=Masc|Number=Sing	40	obl:agent	40:obl:agent	SpaceAfter=No
+44	.	.	PUNCT	_	_	5	punct	5:punct	_

@@ -1,0 +1,290 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = PF encontra contrato de compra e venda do sítio.
+1	PF	PF	PROPN	_	_	2	nsubj	2:nsubj	_
+2	encontra	encontrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	contrato	contrato	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+4	de	de	ADP	_	_	5	case	5:case|7:case	_
+5	compra	compra	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:de	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	venda	venda	NOUN	_	Gender=Fem|Number=Sing	5	conj	3:nmod:de|5:conj:e	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	sítio	sítio	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:de|7:nmod:de	SpaceAfter=No
+11	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = A minuta diz que Lula pagaria R$ 800 mil pelo imóvel.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	minuta	minuta	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_
+3	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	6	mark	6:mark	_
+5	Lula	Lula	PROPN	_	_	6	nsubj	6:nsubj	_
+6	pagaria	pagar	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	3	ccomp	3:ccomp	_
+7	R$	R$	SYM	_	_	6	obj	6:obj	_
+8	800	800	NUM	_	NumType=Card	7	nummod	7:nummod	_
+9	mil	mil	NUM	_	NumType=Card	8	flat	8:flat	_
+10-11	pelo	_	_	_	_	_	_	_	_
+10	por	por	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	imóvel	imóvel	NOUN	_	Number=Sing	6	obl	6:obl:por	SpaceAfter=No
+13	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0005
+# text = Investigadores da Operação Lava-Jato encontraram um contrato de compra e venda ( clique para ler o documento em PDF ) no qual Fernando Bittar dono "no papel "do sítio de Atibaia transfere a propriedade para o Lula e sua esposa, Marisa Letícia.
+1	Investigadores	investigador	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	6:nsubj	_
+2-3	da	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	Operação	Operação	PROPN	_	_	1	nmod	1:nmod:de	_
+5	Lava-Jato	Lava-Jato	PROPN	_	_	4	flat:name	4:flat:name	_
+6	encontraram	encontrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	contrato	contrato	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+9	de	de	ADP	_	_	10	case	10:case|12:case	_
+10	compra	compra	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	venda	venda	NOUN	_	Gender=Fem|Number=Sing	10	conj	8:nmod:de|10:conj:e	_
+13	(	(	PUNCT	_	_	14	punct	14:punct	_
+14	clique	cliquar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	6	parataxis	6:parataxis	_
+15	para	para	ADP	_	_	16	mark	16:mark	_
+16	ler	ler	VERB	_	VerbForm=Inf	14	advcl	14:advcl:para	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	documento	documento	NOUN	_	Gender=Masc|Number=Sing	16	obj	16:obj	_
+19	em	em	ADP	_	_	20	case	20:case	_
+20	PDF	PDF	PROPN	_	_	18	nmod	18:nmod:em	_
+21	)	)	PUNCT	_	_	14	punct	14:punct	_
+22-23	no	_	_	_	_	_	_	_	_
+22	em	em	ADP	_	_	23	case	23:case	_
+23	o	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	38	obl	38:obl:em	_
+24	qual	qual	PRON	_	Number=Sing|PronType=Rel	23	fixed	23:fixed	_
+25	Fernando	Fernando	PROPN	_	_	38	nsubj	38:nsubj	_
+26	Bittar	Bittar	PROPN	_	_	25	flat:name	25:flat:name	_
+27	dono	dono	NOUN	_	Gender=Masc|Number=Sing	25	appos	25:appos	_
+28	"	"	PUNCT	_	_	31	punct	31:punct	SpaceAfter=No
+29-30	no	_	_	_	_	_	_	_	_
+29	em	em	ADP	_	_	31	case	31:case	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	papel	papel	NOUN	_	Gender=Masc|Number=Sing	27	nmod	27:nmod:em	_
+32	"	"	PUNCT	_	_	31	punct	31:punct	SpaceAfter=No
+33-34	do	_	_	_	_	_	_	_	_
+33	de	de	ADP	_	_	35	case	35:case	_
+34	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	35:det	_
+35	sítio	sítio	NOUN	_	Gender=Masc|Number=Sing	31	nmod	31:nmod:de	_
+36	de	de	ADP	_	_	37	case	37:case	_
+37	Atibaia	Atibaia	PROPN	_	_	35	nmod	35:nmod:de	_
+38	transfere	transferir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	ccomp	14:ccomp	_
+39	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	40:det	_
+40	propriedade	propriedade	NOUN	_	Gender=Fem|Number=Sing	38	obj	38:obj	_
+41	para	para	ADP	_	_	43	case	43:case|46:case	_
+42	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	43	det	43:det	_
+43	Lula	Lula	PROPN	_	_	38	obl	38:obl:para	_
+44	e	e	CCONJ	_	_	46	cc	46:cc	_
+45	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	46	det	46:det	_
+46	esposa	esposo	NOUN	_	Gender=Fem|Number=Sing	43	conj	38:obl:para|43:conj:e	SpaceAfter=No
+47	,	,	PUNCT	_	_	48	punct	48:punct	_
+48	Marisa	Marisa	PROPN	_	_	46	appos	46:appos	_
+49	Letícia	Letícia	PROPN	_	_	48	flat:name	48:flat:name	SpaceAfter=No
+50	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0007
+# text = O ex-presidente está cada vez mais encrencado e novos documentos comprometedores não param de aparecer.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	ex-presidente	ex-presidente	NOUN	_	Number=Sing	7	nsubj	7:nsubj	_
+3	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+4	cada	cada	DET	_	ExtPos=ADV|Number=Sing|PronType=Ind	7	advmod	7:advmod	_
+5	vez	vez	NOUN	_	Gender=Fem|Number=Sing	4	fixed	4:fixed	_
+6	mais	mais	ADV	_	_	4	fixed	4:fixed	_
+7	encrencado	encrencado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+8	e	e	CCONJ	_	_	13	cc	13:cc	_
+9	novos	novo	ADJ	_	Gender=Masc|Number=Plur	10	amod	10:amod	_
+10	documentos	documento	NOUN	_	Gender=Masc|Number=Plur	13	nsubj	13:nsubj|15:nsubj	_
+11	comprometedores	comprometedor	ADJ	_	Gender=Masc|Number=Plur	10	amod	10:amod	_
+12	não	não	ADV	_	_	13	advmod	13:advmod	_
+13	param	parar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	conj	7:conj:e	_
+14	de	de	ADP	_	_	15	mark	15:mark	_
+15	aparecer	aparecer	VERB	_	VerbForm=Inf	13	xcomp	13:xcomp	SpaceAfter=No
+16	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0009
+# text = Lula teria negociado o sítio de Atibaia por R$ 800 mil.
+1	Lula	Lula	PROPN	_	_	3	nsubj	3:nsubj	_
+2	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	3	aux	3:aux	_
+3	negociado	negociar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	sítio	sítio	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	Atibaia	Atibaia	PROPN	_	_	5	nmod	5:nmod:de	_
+8	por	por	ADP	_	_	9	case	9:case	_
+9	R$	R$	SYM	_	_	3	obl	3:obl:por	_
+10	800	800	NUM	_	NumType=Card	9	nummod	9:nummod	_
+11	mil	mil	NUM	_	NumType=Card	10	flat	10:flat	SpaceAfter=No
+12	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0011
+# text = No, Lula se comprometia a pagar 200 000 reais de entrada e quitar o restante da dívida com Bittar em três parcelas iguais de 200 000 reais.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	obl	6:obl:em	_
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	Lula	Lula	PROPN	_	_	6	nsubj	6:nsubj|8:nsubj|15:nsubj	_
+5	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	6	expl	6:expl	_
+6	comprometia	comprometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+7	a	a	ADP	_	_	8	mark	8:mark|15:mark	_
+8	pagar	pagar	VERB	_	VerbForm=Inf	6	xcomp	6:xcomp	_
+9	200	200	NUM	_	NumType=Card	11	nummod	11:nummod	_
+10	000	000	NUM	_	NumType=Card	11	nummod	11:nummod	_
+11	reais	real	NOUN	_	Gender=Masc|Number=Plur	8	obj	8:obj	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	entrada	entrada	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:de	_
+14	e	e	CCONJ	_	_	15	cc	15:cc	_
+15	quitar	quitar	VERB	_	VerbForm=Inf	8	conj	6:xcomp|8:conj:e	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	restante	restante	NOUN	_	Number=Sing	15	obj	15:obj	_
+18-19	da	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	dívida	dívida	NOUN	_	Gender=Fem|Number=Sing	17	nmod	17:nmod:de	_
+21	com	com	ADP	_	_	22	case	22:case	_
+22	Bittar	Bittar	PROPN	_	_	20	nmod	20:nmod:com	_
+23	em	em	ADP	_	_	25	case	25:case	_
+24	três	três	NUM	_	NumType=Card	25	nummod	25:nummod	_
+25	parcelas	parcela	NOUN	_	Gender=Fem|Number=Plur	15	obl	15:obl:em	_
+26	iguais	igual	ADJ	_	Number=Plur	25	amod	25:amod	_
+27	de	de	ADP	_	_	30	case	30:case	_
+28	200	200	NUM	_	NumType=Card	30	nummod	30:nummod	_
+29	000	000	NUM	_	NumType=Card	30	nummod	30:nummod	_
+30	reais	real	NOUN	_	Gender=Masc|Number=Plur	25	nmod	25:nmod:de	SpaceAfter=No
+31	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0013
+# text = Na minuta do contrato, não assinada, Bittar repassa a propriedade para Lula e Marisa pelo valor de 800 000 reais.
+1-2	Na	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	minuta	minuta	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl:em	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	contrato	contrato	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	SpaceAfter=No
+7	,	,	PUNCT	_	_	9	punct	9:punct	_
+8	não	não	ADV	_	_	9	advmod	9:advmod	_
+9	assinada	assinar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	3	acl	3:acl	SpaceAfter=No
+10	,	,	PUNCT	_	_	9	punct	9:punct	_
+11	Bittar	Bittar	PROPN	_	_	12	nsubj	12:nsubj	_
+12	repassa	repassar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	propriedade	propriedade	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+15	para	para	ADP	_	_	16	case	16:case|18:case	_
+16	Lula	Lula	PROPN	_	_	12	obl	12:obl:para	_
+17	e	e	CCONJ	_	_	18	cc	18:cc	_
+18	Marisa	Marisa	PROPN	_	_	16	conj	12:obl:para|16:conj:e	_
+19-20	pelo	_	_	_	_	_	_	_	_
+19	por	por	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	valor	valor	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:por	_
+22	de	de	ADP	_	_	25	case	25:case	_
+23	800	800	NUM	_	NumType=Card	25	nummod	25:nummod	_
+24	000	000	NUM	_	NumType=Card	25	nummod	25:nummod	_
+25	reais	real	NOUN	_	Gender=Masc|Number=Plur	21	nmod	21:nmod:de	SpaceAfter=No
+26	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0015
+# text = O documento foi encontrado pela Polícia Federal durante as buscas no apartamento de Lula em São Bernardo.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	documento	documento	NOUN	_	Gender=Masc|Number=Sing	4	nsubj:pass	4:nsubj:pass	_
+3	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	encontrado	encontrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5-6	pela	_	_	_	_	_	_	_	_
+5	por	por	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	Polícia	Polícia	PROPN	_	_	4	obl:agent	4:obl:agent	_
+8	Federal	Federal	PROPN	_	_	7	flat:name	7:flat:name	_
+9	durante	durante	ADP	_	_	11	case	11:case	_
+10	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	11:det	_
+11	buscas	busca	NOUN	_	Gender=Fem|Number=Plur	4	obl	4:obl:durante	_
+12-13	no	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	apartamento	apartamento	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:em	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	Lula	Lula	PROPN	_	_	14	nmod	14:nmod:de	_
+17	em	em	ADP	_	_	18	case	18:case	_
+18	São	São	PROPN	_	_	14	nmod	14:nmod:em	_
+19	Bernardo	Bernardo	PROPN	_	_	18	flat:name	18:flat:name	SpaceAfter=No
+20	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0017
+# text = "Pelo preço adiante ajustado, vendem, ao comprador, o imóvel descrito, transmitindo-lhe desde já, a posse, domínio, direitos e ações que sobre o mesmo tinham e exerciam, para que dele, o comprador use, goze e livremente disponha como bem e melhor lhe convier".
+1	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+2-3	Pelo	_	_	_	_	_	_	_	_
+2	Por	por	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	preço	preço	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:por	_
+5	adiante	adiante	ADV	_	_	6	advmod	6:advmod	_
+6	ajustado	ajustar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	4	acl	4:acl	SpaceAfter=No
+7	,	,	PUNCT	_	_	4	punct	4:punct	_
+8	vendem	vender	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+9	,	,	PUNCT	_	_	12	punct	12:punct	_
+10-11	ao	_	_	_	_	_	_	_	_
+10	a	a	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	comprador	comprador	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:a	SpaceAfter=No
+13	,	,	PUNCT	_	_	12	punct	12:punct	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	imóvel	imóvel	NOUN	_	Number=Sing	8	obj	8:obj	_
+16	descrito	descrever	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	15	acl	15:acl	SpaceAfter=No
+17	,	,	PUNCT	_	_	18	punct	18:punct	_
+18-19	transmitindo-lhe	_	_	_	_	_	_	_	_
+18	transmitindo	transmitir	VERB	_	VerbForm=Ger	8	advcl	8:advcl	_
+19	lhe	lhe	PRON	_	Case=Dat|Number=Sing|Person=3|PronType=Prs	18	iobj	18:iobj	_
+20	desde	desde	ADP	_	_	21	case	21:case	_
+21	já	já	ADV	_	_	18	advmod	18:advmod	SpaceAfter=No
+22	,	,	PUNCT	_	_	18	punct	18:punct	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	posse	posse	NOUN	_	Gender=Fem|Number=Sing	18	obj	18:obj|35:obj	SpaceAfter=No
+25	,	,	PUNCT	_	_	26	punct	26:punct	_
+26	domínio	domínio	NOUN	_	Gender=Masc|Number=Sing	24	conj	18:obj|24:conj:e|35:obj	SpaceAfter=No
+27	,	,	PUNCT	_	_	28	punct	28:punct	_
+28	direitos	direito	NOUN	_	Gender=Masc|Number=Plur	24	conj	18:obj|24:conj:e|35:obj	_
+29	e	e	CCONJ	_	_	30	cc	30:cc	_
+30	ações	ação	NOUN	_	Gender=Fem|Number=Plur	24	conj	18:obj|24:conj:e|35:obj	_
+31	que	que	PRON	_	PronType=Rel	35	obj	24:ref|26:ref|28:ref|30:ref	_
+32	sobre	sobre	ADP	_	_	34	case	34:case	_
+33	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	34:det	_
+34	mesmo	mesmo	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	35	obl	35:obl:sobre	_
+35	tinham	ter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	24	acl:relcl	24:acl:relcl|26:acl:relcl|28:acl:relcl|30:acl:relcl	_
+36	e	e	CCONJ	_	_	37	cc	37:cc	_
+37	exerciam	exercer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	35	conj	24:acl:relcl|26:acl:relcl|28:acl:relcl|30:acl:relcl|35:conj:e	SpaceAfter=No
+38	,	,	PUNCT	_	_	46	punct	46:punct	_
+39	para	para	ADP	_	ExtPos=SCONJ	46	mark	46:mark|48:mark|51:mark	_
+40	que	que	SCONJ	_	_	39	fixed	39:fixed	_
+41-42	dele	_	_	_	_	_	_	_	_
+41	de	de	ADP	_	_	42	case	42:case	_
+42	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	46	obl	46:obl:de	_
+43	,	,	PUNCT	_	_	42	punct	42:punct	_
+44	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	45:det	_
+45	comprador	comprador	NOUN	_	Gender=Masc|Number=Sing	46	nsubj	46:nsubj|48:nsubj|51:nsubj|57:nsubj	_
+46	use	usar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	advcl	18:advcl:para_que	SpaceAfter=No
+47	,	,	PUNCT	_	_	48	punct	48:punct	_
+48	goze	gozar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	46	conj	18:advcl:para_que|46:conj:e	_
+49	e	e	CCONJ	_	_	51	cc	51:cc	_
+50	livremente	livremente	ADV	_	_	51	advmod	51:advmod	_
+51	disponha	dispor	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	46	conj	18:advcl:para_que|46:conj:e	_
+52	como	como	ADP	_	_	53	case	53:case	_
+53	bem	bem	NOUN	_	Gender=Masc|Number=Sing	51	obl	51:obl:como	_
+54	e	e	CCONJ	_	_	57	cc	57:cc	_
+55	melhor	melhor	ADV	_	_	57	advmod	57:advmod	_
+56	lhe	lhe	PRON	_	Case=Dat|Number=Sing|Person=3|PronType=Prs	57	iobj	57:iobj	_
+57	convier	convir	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	51	conj	51:conj:e	SpaceAfter=No
+58	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+59	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0019
+# text = com informações via Veja.
+1	com	com	ADP	_	_	2	case	2:case	_
+2	informações	informação	NOUN	_	Gender=Fem|Number=Plur	0	root	0:root	_
+3	via	via	ADP	_	_	4	case	4:case	_
+4	Veja	Veja	PROPN	_	_	2	nmod	2:nmod:via	SpaceAfter=No
+5	.	.	PUNCT	_	_	2	punct	2:punct	_

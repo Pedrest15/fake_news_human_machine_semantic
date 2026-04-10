@@ -1,0 +1,406 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Brasil cria 200 mil novos postos de trabalho em 2017, anuncia governo.
+1	Brasil	Brasil	PROPN	_	_	2	nsubj	2:nsubj	_
+2	cria	criar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	ccomp:speech	12:ccomp:speech	_
+3	200	200	NUM	_	NumType=Card	6	nummod	6:nummod	_
+4	mil	mil	NUM	_	NumType=Card	3	flat	3:flat	_
+5	novos	novo	ADJ	_	Gender=Masc|Number=Plur	6	amod	6:amod	_
+6	postos	posto	NOUN	_	Gender=Masc|Number=Plur	2	obj	2:obj	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de	_
+9	em	em	ADP	_	_	10	case	10:case	_
+10	2017	2017	NUM	_	NumType=Card	2	obl	2:obl:em	SpaceAfter=No
+11	,	,	PUNCT	_	_	2	punct	2:punct	_
+12	anuncia	anunciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+13	governo	governo	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	12:nsubj	SpaceAfter=No
+14	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0003
+# text = Surpreendentemente, após dois anos de queda, o mercado brasileiro volta a crescer, impulsionado por setores chave.
+1	Surpreendentemente	surpreendentemente	ADV	_	_	12	advmod	12:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	após	após	ADP	_	_	5	case	5:case	_
+4	dois	dois	NUM	_	Gender=Masc|NumType=Card	5	nummod	5:nummod	_
+5	anos	ano	NOUN	_	Gender=Masc|Number=Plur	12	obl	12:obl:após	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	queda	queda	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	SpaceAfter=No
+8	,	,	PUNCT	_	_	5	punct	5:punct	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	mercado	mercado	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	12:nsubj|14:nsubj	_
+11	brasileiro	brasileiro	ADJ	_	Gender=Masc|Number=Sing	10	amod	10:amod	_
+12	volta	voltar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+13	a	a	ADP	_	_	14	mark	14:mark	_
+14	crescer	crescer	VERB	_	VerbForm=Inf	12	xcomp	12:xcomp	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	impulsionado	impulsionar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	12	advcl	12:advcl	_
+17	por	por	ADP	_	_	18	case	18:case	_
+18	setores	setor	NOUN	_	Gender=Masc|Number=Plur	16	obl:agent	16:obl:agent	_
+19	chave	chave	ADJ	_	Number=Sing	18	amod	18:amod	SpaceAfter=No
+20	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0005
+# text = O Ministério do Trabalho divulgou nesta sexta-feira (26) dados que revelam um saldo positivo de 200.000 vagas formais, marcando uma reviravolta na economia.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Ministério	Ministério	PROPN	_	_	6	nsubj	6:nsubj	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	Trabalho	Trabalho	PROPN	_	_	2	flat:name	2:flat:name	_
+6	divulgou	divulgar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7-8	nesta	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	9	det	9:det	_
+9	sexta-feira	sexta-feira	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:em	_
+10	(	(	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+11	26	26	NUM	_	NumType=Card	9	appos	9:appos	SpaceAfter=No
+12	)	)	PUNCT	_	_	11	punct	11:punct	_
+13	dados	dado	NOUN	_	Gender=Masc|Number=Plur	6	obj	6:obj|15:nsubj	_
+14	que	que	PRON	_	PronType=Rel	15	nsubj	13:ref	_
+15	revelam	revelar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	acl:relcl	13:acl:relcl	_
+16	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	saldo	saldo	NOUN	_	Gender=Masc|Number=Sing	15	obj	15:obj	_
+18	positivo	positivo	ADJ	_	Gender=Masc|Number=Sing	17	amod	17:amod	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	200.000	200.000	NUM	_	NumType=Card	21	nummod	21:nummod	_
+21	vagas	vaga	NOUN	_	Gender=Fem|Number=Plur	17	nmod	17:nmod:de	_
+22	formais	formal	ADJ	_	Number=Plur	21	amod	21:amod	SpaceAfter=No
+23	,	,	PUNCT	_	_	24	punct	24:punct	_
+24	marcando	marcar	VERB	_	VerbForm=Ger	15	advcl	15:advcl	_
+25	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	reviravolta	reviravolta	NOUN	_	Gender=Fem|Number=Sing	24	obj	24:obj	_
+27-28	na	_	_	_	_	_	_	_	_
+27	em	em	ADP	_	_	29	case	29:case	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	economia	economia	NOUN	_	Gender=Fem|Number=Sing	26	nmod	26:nmod:em	SpaceAfter=No
+30	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0007
+# text = Este crescimento é atribuído a um aumento significativo nas contratações nos setores de comércio e agricultura.
+1	Este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	2:det	_
+2	crescimento	crescimento	NOUN	_	Gender=Masc|Number=Sing	4	nsubj:pass	4:nsubj:pass	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	atribuído	atribuír	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5	a	a	ADP	_	_	7	case	7:case	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	aumento	aumento	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:a	_
+8	significativo	significativo	ADJ	_	Gender=Masc|Number=Sing	7	amod	7:amod	_
+9-10	nas	_	_	_	_	_	_	_	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	11:det	_
+11	contratações	contratação	NOUN	_	Gender=Fem|Number=Plur	7	nmod	7:nmod:em	_
+12-13	nos	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	14:det	_
+14	setores	setor	NOUN	_	Gender=Masc|Number=Plur	11	nmod	11:nmod:em	_
+15	de	de	ADP	_	_	16	case	16:case|18:case	_
+16	comércio	comércio	NOUN	_	Gender=Masc|Number=Sing	14	nmod	14:nmod:de	_
+17	e	e	CCONJ	_	_	18	cc	18:cc	_
+18	agricultura	agricultura	NOUN	_	Gender=Fem|Number=Sing	16	conj	14:nmod:de|16:conj:e	SpaceAfter=No
+19	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0009
+# text = As mulheres lideraram a ocupação das novas vagas, com um saldo positivo de 60.000 postos, enquanto os homens também se beneficiaram, com 140.000 novas oportunidades.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	mulheres	mulher	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	3:nsubj	_
+3	lideraram	liderar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	ocupação	ocupação	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+6-7	das	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	9	case	9:case	_
+7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	9:det	_
+8	novas	novo	ADJ	_	Gender=Fem|Number=Plur	9	amod	9:amod	_
+9	vagas	vaga	NOUN	_	Gender=Fem|Number=Plur	5	nmod	5:nmod:de	SpaceAfter=No
+10	,	,	PUNCT	_	_	13	punct	13:punct	_
+11	com	com	ADP	_	_	13	case	13:case	_
+12	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	saldo	saldo	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:com	_
+14	positivo	positivo	ADJ	_	Gender=Masc|Number=Sing	13	amod	13:amod	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	60.000	60.000	NUM	_	NumType=Card	17	nummod	17:nummod	_
+17	postos	posto	NOUN	_	Gender=Masc|Number=Plur	13	nmod	13:nmod:de	SpaceAfter=No
+18	,	,	PUNCT	_	_	24	punct	24:punct	_
+19	enquanto	enquanto	SCONJ	_	_	24	mark	24:mark	_
+20	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	21:det	_
+21	homens	homem	NOUN	_	Gender=Masc|Number=Plur	24	nsubj	24:nsubj	_
+22	também	também	ADV	_	_	24	advmod	24:advmod	_
+23	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	24	expl	24:expl	_
+24	beneficiaram	beneficiar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	3	advcl	3:advcl:enquanto	SpaceAfter=No
+25	,	,	PUNCT	_	_	29	punct	29:punct	_
+26	com	com	ADP	_	_	29	case	29:case	_
+27	140.000	140.000	NUM	_	NumType=Card	29	nummod	29:nummod	_
+28	novas	novo	ADJ	_	Gender=Fem|Number=Plur	29	amod	29:amod	_
+29	oportunidades	oportunidade	NOUN	_	Gender=Fem|Number=Plur	24	obl	24:obl:com	SpaceAfter=No
+30	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0011
+# text = A região Centro-Oeste foi destaque, com um superávit de 70.000 vagas, impulsionada pelo agronegócio.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	região	região	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+3	Centro-Oeste	Centro-Oeste	PROPN	_	_	2	nmod	2:nmod	_
+4	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	cop	5:cop	_
+5	destaque	destaque	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+6	,	,	PUNCT	_	_	9	punct	9:punct	_
+7	com	com	ADP	_	_	9	case	9:case	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	superávit	superávit	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:com	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	70.000	70.000	NUM	_	NumType=Card	12	nummod	12:nummod	_
+12	vagas	vaga	NOUN	_	Gender=Fem|Number=Plur	9	nmod	9:nmod:de	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	impulsionada	impulsionar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	9	acl	9:acl	_
+15-16	pelo	_	_	_	_	_	_	_	_
+15	por	por	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	agronegócio	agronegócio	NOUN	_	Gender=Masc|Number=Sing	14	obl:agent	14:obl:agent	SpaceAfter=No
+18	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0013
+# text = O otimismo é generalizado, com especialistas do governo projetando um crescimento ainda maior para 2018.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	otimismo	otimismo	NOUN	_	Gender=Masc|Number=Sing	4	nsubj:pass	4:nsubj:pass	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	generalizado	generalizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	SpaceAfter=No
+5	,	,	PUNCT	_	_	7	punct	7:punct	_
+6	com	com	ADP	_	_	7	case	7:case	_
+7	especialistas	especialista	NOUN	_	Number=Plur	4	obl	4:obl:com	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	governo	governo	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	_
+11	projetando	projetar	VERB	_	VerbForm=Ger	7	acl	7:acl	_
+12	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	crescimento	crescimento	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj	_
+14	ainda	ainda	ADV	_	_	15	advmod	15:advmod	_
+15	maior	maior	ADJ	_	Number=Sing	13	amod	13:amod	_
+16	para	para	ADP	_	_	17	case	17:case	_
+17	2018	2018	NUM	_	NumType=Card	11	obl	11:obl:para	SpaceAfter=No
+18	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0015
+# text = Os dados do Cadastro Geral de Empregados e Desempregados (Caged) mostram que a recuperação atingiu todos os níveis de escolaridade, com trabalhadores de ensino superior completo ocupando 80.000 novas vagas.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	dados	dado	NOUN	_	Gender=Masc|Number=Plur	14	nsubj	14:nsubj	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	Cadastro	Cadastro	PROPN	_	_	2	nmod	2:nmod:de	_
+6	Geral	Geral	PROPN	_	_	5	flat:name	5:flat:name	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	Empregados	Empregados	PROPN	_	_	5	flat:name	5:flat:name	_
+9	e	e	CCONJ	_	_	10	cc	10:cc	_
+10	Desempregados	Desempregados	PROPN	_	_	5	flat:name	5:flat:name	_
+11	(	(	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+12	Caged	Caged	PROPN	_	_	5	appos	5:appos	SpaceAfter=No
+13	)	)	PUNCT	_	_	12	punct	12:punct	_
+14	mostram	mostrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+15	que	que	SCONJ	_	_	18	mark	18:mark	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	recuperação	recuperação	NOUN	_	Gender=Fem|Number=Sing	18	nsubj	18:nsubj	_
+18	atingiu	atingir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	ccomp	14:ccomp	_
+19	todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Ind	21	det	21:det	_
+20	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	21:det	_
+21	níveis	nível	NOUN	_	Gender=Masc|Number=Plur	18	obj	18:obj	_
+22	de	de	ADP	_	_	23	case	23:case	_
+23	escolaridade	escolaridade	NOUN	_	Gender=Fem|Number=Sing	21	nmod	21:nmod:de	SpaceAfter=No
+24	,	,	PUNCT	_	_	26	punct	26:punct	_
+25	com	com	ADP	_	_	26	case	26:case	_
+26	trabalhadores	trabalhador	NOUN	_	Gender=Masc|Number=Plur	18	obl	18:obl:com	_
+27	de	de	ADP	_	_	28	case	28:case	_
+28	ensino	ensino	NOUN	_	Gender=Masc|Number=Sing	26	nmod	26:nmod:de	_
+29	superior	superior	ADJ	_	Number=Sing	28	amod	28:amod	_
+30	completo	completo	ADJ	_	Gender=Masc|Number=Sing	28	amod	28:amod	_
+31	ocupando	ocupar	VERB	_	VerbForm=Ger	26	acl	26:acl	_
+32	80.000	80.000	NUM	_	NumType=Card	34	nummod	34:nummod	_
+33	novas	novo	ADJ	_	Gender=Fem|Number=Plur	34	amod	34:amod	_
+34	vagas	vaga	NOUN	_	Gender=Fem|Number=Plur	31	obj	31:obj	SpaceAfter=No
+35	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0017
+# text = O ministro do Trabalho substituto, Helton Yomura, declarou: Estes números são um sinal claro de que a economia brasileira está se recuperando.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	ministro	ministro	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	11:nsubj	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	Trabalho	Trabalho	PROPN	_	_	2	nmod	2:nmod:de	_
+6	substituto	substituto	ADJ	_	Gender=Masc|Number=Sing	5	amod	5:amod	SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	8:punct	_
+8	Helton	Helton	PROPN	_	_	2	appos	2:appos	_
+9	Yomura	Yomura	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+10	,	,	PUNCT	_	_	8	punct	8:punct	_
+11	declarou	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+12	:	:	PUNCT	_	_	17	punct	17:punct	_
+13	Estes	este	DET	_	Gender=Masc|Number=Plur|PronType=Dem	14	det	14:det	_
+14	números	número	NOUN	_	Gender=Masc|Number=Plur	17	nsubj	17:nsubj	_
+15	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	cop	17:cop	_
+16	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	sinal	sinal	NOUN	_	Gender=Masc|Number=Sing	11	ccomp:speech	11:ccomp:speech	_
+18	claro	claro	ADJ	_	Gender=Masc|Number=Sing	17	amod	17:amod	_
+19	de	de	ADP	_	ExtPos=SCONJ	26	mark	26:mark	_
+20	que	que	SCONJ	_	_	19	fixed	19:fixed	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	economia	economia	NOUN	_	Gender=Fem|Number=Sing	26	nsubj	26:nsubj	_
+23	brasileira	brasileiro	ADJ	_	Gender=Fem|Number=Sing	22	amod	22:amod	_
+24	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	aux	26:aux	_
+25	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	26	expl	26:expl	_
+26	recuperando	recuperar	VERB	_	VerbForm=Ger	17	acl	17:acl:de_que	SpaceAfter=No
+27	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0019
+# text = Esperamos que este ritmo se mantenha e possamos continuar a gerar empregos de qualidade para todos os brasileiros.
+1	Esperamos	esperar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	que	que	SCONJ	_	_	6	mark	6:mark|8:mark	_
+3	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	4	det	4:det	_
+4	ritmo	ritmo	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+5	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	6	expl	6:expl	_
+6	mantenha	manter	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	1:ccomp	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	possamos	possar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	6	conj	1:ccomp|6:conj:e	_
+9	continuar	continuar	VERB	_	VerbForm=Inf	8	xcomp	8:xcomp	_
+10	a	a	ADP	_	_	11	mark	11:mark	_
+11	gerar	gerar	VERB	_	VerbForm=Inf	9	xcomp	9:xcomp	_
+12	empregos	emprego	NOUN	_	Gender=Masc|Number=Plur	11	obj	11:obj	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	qualidade	qualidade	NOUN	_	Gender=Fem|Number=Sing	12	nmod	12:nmod:de	_
+15	para	para	ADP	_	_	18	case	18:case	_
+16	todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Ind	18	det	18:det	_
+17	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	18:det	_
+18	brasileiros	brasileiro	NOUN	_	Gender=Masc|Number=Plur	11	obl	11:obl:para	SpaceAfter=No
+19	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0021
+# text = Dezembro de 2017 encerrou com um saldo positivo de 100.000 vagas, o melhor resultado para o mês em uma década, refletindo a confiança renovada no mercado de trabalho.
+1	Dezembro	dezembro	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	2017	2017	NUM	_	NumType=Card	1	nmod	1:nmod:de	_
+4	encerrou	encerrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	com	com	ADP	_	_	7	case	7:case	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	saldo	saldo	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:com	_
+8	positivo	positivo	ADJ	_	Gender=Masc|Number=Sing	7	amod	7:amod	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	100.000	100.000	NUM	_	NumType=Card	11	nummod	11:nummod	_
+11	vagas	vaga	NOUN	_	Gender=Fem|Number=Plur	7	nmod	7:nmod:de	SpaceAfter=No
+12	,	,	PUNCT	_	_	15	punct	15:punct	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+14	melhor	melhor	ADJ	_	Number=Sing	15	amod	15:amod	_
+15	resultado	resultado	NOUN	_	Gender=Masc|Number=Sing	4	parataxis	4:parataxis	_
+16	para	para	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	mês	mês	NOUN	_	Gender=Masc|Number=Sing	15	nmod	15:nmod:para	_
+19	em	em	ADP	_	_	21	case	21:case	_
+20	uma	um	NUM	_	Gender=Fem|NumType=Card	21	nummod	21:nummod	_
+21	década	década	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:em	SpaceAfter=No
+22	,	,	PUNCT	_	_	23	punct	23:punct	_
+23	refletindo	refletir	VERB	_	VerbForm=Ger	4	advcl	4:advcl	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	confiança	confiança	NOUN	_	Number=Sing	23	obj	23:obj	_
+26	renovada	renovar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	25	acl	25:acl	_
+27-28	no	_	_	_	_	_	_	_	_
+27	em	em	ADP	_	_	29	case	29:case	_
+28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	29:det	_
+29	mercado	mercado	NOUN	_	Gender=Masc|Number=Sing	26	obl	26:obl:em	_
+30	de	de	ADP	_	_	31	case	31:case	_
+31	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	29	nmod	29:nmod:de	SpaceAfter=No
+32	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0023
+# text = Apenas o setor de construção civil ainda enfrenta desafios, com um fechamento de 20.000 postos no ano, mas o governo acredita em uma recuperação gradual para os próximos meses.
+1	Apenas	apenas	ADV	_	_	3	advmod	3:advmod	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	setor	setor	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	8:nsubj	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	construção	construção	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:de	_
+6	civil	civil	ADJ	_	Number=Sing	5	amod	5:amod	_
+7	ainda	ainda	ADV	_	_	8	advmod	8:advmod	_
+8	enfrenta	enfrentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+9	desafios	desafio	NOUN	_	Gender=Masc|Number=Plur	8	obj	8:obj	SpaceAfter=No
+10	,	,	PUNCT	_	_	13	punct	13:punct	_
+11	com	com	ADP	_	_	13	case	13:case	_
+12	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	fechamento	fechamento	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:com	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	20.000	20.000	NUM	_	NumType=Card	16	nummod	16:nummod	_
+16	postos	posto	NOUN	_	Gender=Masc|Number=Plur	13	nmod	13:nmod:de	_
+17-18	no	_	_	_	_	_	_	_	_
+17	em	em	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	ano	ano	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod:em	SpaceAfter=No
+20	,	,	PUNCT	_	_	24	punct	24:punct	_
+21	mas	mas	CCONJ	_	_	24	cc	24:cc	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	governo	governo	NOUN	_	Gender=Masc|Number=Sing	24	nsubj	24:nsubj	_
+24	acredita	acreditar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	conj	8:conj:mas	_
+25	em	em	ADP	_	_	27	case	27:case	_
+26	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	recuperação	recuperação	NOUN	_	Gender=Fem|Number=Sing	24	obl	24:obl:em	_
+28	gradual	gradual	ADJ	_	Number=Sing	27	amod	27:amod	_
+29	para	para	ADP	_	_	32	case	32:case	_
+30	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	det	32:det	_
+31	próximos	próximo	ADJ	_	Gender=Masc|Number=Plur	32	amod	32:amod	_
+32	meses	mÃªs	NOUN	_	Gender=Masc|Number=Plur	27	nmod	27:nmod:para	SpaceAfter=No
+33	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0025
+# text = A análise por raça e cor também apresentou melhorias, com trabalhadores autodeclarados pretos e pardos ocupando 90.000 novas vagas.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	análise	análise	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	8:nsubj	_
+3	por	por	ADP	_	_	4	case	4:case|6:case	_
+4	raça	raça	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:por	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	cor	cor	NOUN	_	Gender=Fem|Number=Sing	4	conj	2:nmod:por|4:conj:e	_
+7	também	também	ADV	_	_	8	advmod	8:advmod	_
+8	apresentou	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	melhorias	melhoria	NOUN	_	Gender=Fem|Number=Plur	8	obj	8:obj	SpaceAfter=No
+10	,	,	PUNCT	_	_	12	punct	12:punct	_
+11	com	com	ADP	_	_	12	case	12:case	_
+12	trabalhadores	trabalhador	NOUN	_	Gender=Masc|Number=Plur	8	obl	8:obl:com	_
+13	autodeclarados	autodeclarado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	12	amod	12:amod	_
+14	pretos	preto	ADJ	_	Gender=Masc|Number=Plur	12	amod	12:amod	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	pardos	pardo	ADJ	_	Gender=Masc|Number=Plur	14	conj	12:amod|14:conj:e	_
+17	ocupando	ocupar	VERB	_	VerbForm=Ger	12	acl	12:acl	_
+18	90.000	90.000	NUM	_	NumType=Card	20	nummod	20:nummod	_
+19	novas	novo	ADJ	_	Gender=Fem|Number=Plur	20	amod	20:amod	_
+20	vagas	vaga	NOUN	_	Gender=Fem|Number=Plur	17	obj	17:obj	SpaceAfter=No
+21	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0027
+# text = Ainda que com um saldo negativo, os trabalhadores brancos perderam menos postos (-10.000) comparados aos anos anteriores.
+1	Ainda	ainda	ADV	_	ExtPos=SCONJ	5	mark	5:mark	_
+2	que	que	SCONJ	_	_	1	fixed	1:fixed	_
+3	com	com	ADP	_	_	5	case	5:case	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	saldo	saldo	NOUN	_	Gender=Masc|Number=Sing	11	advcl	11:advcl:ainda_que	_
+6	negativo	negativo	ADJ	_	Gender=Masc|Number=Sing	5	amod	5:amod	SpaceAfter=No
+7	,	,	PUNCT	_	_	5	punct	5:punct	_
+8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	9:det	_
+9	trabalhadores	trabalhador	NOUN	_	Gender=Masc|Number=Plur	11	nsubj	11:nsubj	_
+10	brancos	branco	ADJ	_	Gender=Masc|Number=Plur	9	amod	9:amod	_
+11	perderam	perder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	menos	menos	DET	_	PronType=Ind	13	det	13:det	_
+13	postos	posto	NOUN	_	Gender=Masc|Number=Plur	11	obj	11:obj	_
+14	(	(	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+15	-10.000	-10.000	NUM	_	NumType=Card	13	parataxis	13:parataxis	SpaceAfter=No
+16	)	)	PUNCT	_	_	15	punct	15:punct	_
+17	comparados	comparar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	11	advcl	11:advcl	_
+18-19	aos	_	_	_	_	_	_	_	_
+18	a	a	ADP	_	_	20	case	20:case	_
+19	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	20:det	_
+20	anos	ano	NOUN	_	Gender=Masc|Number=Plur	17	obl	17:obl:a	_
+21	anteriores	anterior	ADJ	_	Number=Plur	20	amod	20:amod	SpaceAfter=No
+22	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0029
+# text = Esses dados reforçam a tendência de recuperação econômica inclusiva.
+1	Esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	2	det	2:det	_
+2	dados	dado	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	3:nsubj	_
+3	reforçam	reforçar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	tendência	tendência	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	recuperação	recuperação	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	_
+8	econômica	econômico	ADJ	_	Gender=Fem|Number=Sing	7	amod	7:amod	_
+9	inclusiva	inclusivo	ADJ	_	Gender=Fem|Number=Sing	7	amod	7:amod	SpaceAfter=No
+10	.	.	PUNCT	_	_	3	punct	3:punct	_

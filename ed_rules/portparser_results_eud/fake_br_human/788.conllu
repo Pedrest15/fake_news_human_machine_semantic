@@ -1,0 +1,41 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Brasileiro (que mora nos EUA) compara Miami com Rio de Janeiro e texto viraliza: "Obrigado Furacão Irma".
+1	Brasileiro	brasileiro	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	4:nsubj|9:nsubj	_
+2	(	(	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+3	que	que	PRON	_	PronType=Rel	4	nsubj	1:ref	_
+4	mora	morar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+5-6	nos	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	7:det	_
+7	EUA	EUA	PROPN	_	_	4	obl	4:obl:em	SpaceAfter=No
+8	)	)	PUNCT	_	_	4	punct	4:punct	_
+9	compara	comparar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+10	Miami	Miami	PROPN	_	_	9	obj	9:obj	_
+11	com	com	ADP	_	_	12	case	12:case	_
+12	Rio	Rio	PROPN	_	_	9	obl	9:obl:com	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	Janeiro	Janeiro	PROPN	_	_	12	flat:name	12:flat:name	_
+15	e	e	CCONJ	_	_	17	cc	17:cc	_
+16	texto	texto	NOUN	_	Gender=Masc|Number=Sing	17	nsubj	17:nsubj	_
+17	viraliza	viralizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	conj	9:conj:e	SpaceAfter=No
+18	:	:	PUNCT	_	_	20	punct	20:punct	_
+19	"	"	PUNCT	_	_	20	punct	20:punct	SpaceAfter=No
+20	Obrigado	obrigado	INTJ	_	_	17	ccomp:speech	17:ccomp:speech	_
+21	Furacão	Furacão	PROPN	_	_	20	obj	20:obj	_
+22	Irma	Irma	PROPN	_	_	20	flat:name	20:flat:name	SpaceAfter=No
+23	"	"	PUNCT	_	_	20	punct	20:punct	SpaceAfter=No
+24	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0003
+# text = Obrigado, Irma!.
+1	Obrigado	obrigado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	Irma	Irma	PROPN	_	_	1	vocative	1:vocative	SpaceAfter=No
+4	!	!	PUNCT	_	_	1	punct	1:punct	SpaceAfter=No
+5	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0004
+# text = obrigadoirma.
+1	obrigadoirma	obrigadoirmar	NOUN	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres	0	root	0:root	SpaceAfter=No
+2	.	.	PUNCT	_	_	1	punct	1:punct	_

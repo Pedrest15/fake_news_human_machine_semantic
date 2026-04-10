@@ -1,0 +1,455 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Oprah Winfrey anuncia candidatura presidencial após Globo de Ouro.
+1	Oprah	Oprah	PROPN	_	_	3	nsubj	3:nsubj	_
+2	Winfrey	Winfrey	PROPN	_	_	1	flat:name	1:flat:name	_
+3	anuncia	anunciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	candidatura	candidatura	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+5	presidencial	presidencial	ADJ	_	Number=Sing	4	amod	4:amod	_
+6	após	após	ADP	_	_	7	case	7:case	_
+7	Globo	Globo	PROPN	_	_	4	nmod	4:nmod:após	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	Ouro	Ouro	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+10	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = Fontes da CNN confirmam que a apresentadora e atriz Oprah Winfrey decidiu concorrer à presidência dos Estados Unidos pelo Partido Democrata, motivada por um clamor popular sem precedentes.
+1	Fontes	fonte	NOUN	_	Gender=Fem|Number=Plur	5	nsubj	5:nsubj	_
+2-3	da	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	CNN	CNN	PROPN	_	_	1	nmod	1:nmod:de	_
+5	confirmam	confirmar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	que	que	SCONJ	_	_	13	mark	13:mark	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	apresentadora	apresentador	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	13:nsubj|14:nsubj	_
+9	e	e	CCONJ	_	_	10	cc	10:cc	_
+10	atriz	atriz	NOUN	_	Gender=Fem|Number=Sing	8	conj	8:conj:e|13:nsubj|14:nsubj	_
+11	Oprah	Oprah	PROPN	_	_	8	nmod	8:nmod|10:nmod	_
+12	Winfrey	Winfrey	PROPN	_	_	11	flat:name	11:flat:name	_
+13	decidiu	decidir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	ccomp	5:ccomp	_
+14	concorrer	concorrer	VERB	_	VerbForm=Inf	13	xcomp	13:xcomp	_
+15-16	à	_	_	_	_	_	_	_	_
+15	a	a	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	presidência	presidência	NOUN	_	Gender=Fem|Number=Sing	14	obl	14:obl:a	_
+18-19	dos	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	20:det	_
+20	Estados	Estados	PROPN	_	_	17	nmod	17:nmod:de	_
+21	Unidos	Unidos	PROPN	_	_	20	flat:name	20:flat:name	_
+22-23	pelo	_	_	_	_	_	_	_	_
+22	por	por	ADP	_	_	24	case	24:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	Partido	Partido	PROPN	_	_	14	obl	14:obl:por	_
+25	Democrata	Democrata	PROPN	_	_	24	flat:name	24:flat:name	SpaceAfter=No
+26	,	,	PUNCT	_	_	27	punct	27:punct	_
+27	motivada	motivar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	14	advcl	14:advcl	_
+28	por	por	ADP	_	_	30	case	30:case	_
+29	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	30	det	30:det	_
+30	clamor	clamor	NOUN	_	Gender=Masc|Number=Sing	27	obl:agent	27:obl:agent	_
+31	popular	popular	ADJ	_	Number=Sing	30	amod	30:amod	_
+32	sem	sem	ADP	_	_	33	case	33:case	_
+33	precedentes	precedente	NOUN	_	Number=Plur	30	nmod	30:nmod:sem	SpaceAfter=No
+34	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0005
+# text = Amigos próximos afirmam que Oprah já montou uma equipe de campanha e planeja um anúncio oficial nos próximos dias.
+1	Amigos	amigo	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	3:nsubj	_
+2	próximos	próximo	ADJ	_	Gender=Masc|Number=Plur	1	amod	1:amod	_
+3	afirmam	afirmar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	7	mark	7:mark|13:mark	_
+5	Oprah	Oprah	PROPN	_	_	7	nsubj	7:nsubj|13:nsubj	_
+6	já	já	ADV	_	_	7	advmod	7:advmod	_
+7	montou	montar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	ccomp	3:ccomp	_
+8	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	equipe	equipe	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	campanha	campanha	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:de	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	planeja	planejar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	3:ccomp|7:conj:e	_
+14	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	anúncio	anúncio	NOUN	_	Gender=Masc|Number=Sing	13	obj	13:obj	_
+16	oficial	oficial	ADJ	_	Number=Sing	15	amod	15:amod	_
+17-18	nos	_	_	_	_	_	_	_	_
+17	em	em	ADP	_	_	20	case	20:case	_
+18	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	20:det	_
+19	próximos	próximo	ADJ	_	Gender=Masc|Number=Plur	20	amod	20:amod	_
+20	dias	dia	NOUN	_	Gender=Masc|Number=Plur	13	obl	13:obl:em	SpaceAfter=No
+21	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = Especialistas políticos acreditam que sua entrada pode transformar radicalmente a corrida eleitoral de 2020.
+1	Especialistas	especialista	NOUN	_	Number=Plur	3	nsubj	3:nsubj	_
+2	políticos	político	ADJ	_	Gender=Masc|Number=Plur	1	amod	1:amod	_
+3	acreditam	acreditar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	7	mark	7:mark	_
+5	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	6	det	6:det	_
+6	entrada	entrada	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj|8:nsubj	_
+7	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	3:ccomp	_
+8	transformar	transformar	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+9	radicalmente	radicalmente	ADV	_	_	8	advmod	8:advmod	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	corrida	corrida	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	_
+12	eleitoral	eleitoral	ADJ	_	Number=Sing	11	amod	11:amod	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	2020	2020	NUM	_	NumType=Card	11	nmod	11:nmod:de	SpaceAfter=No
+15	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0009
+# text = A decisão veio logo após o discurso emocionante de Oprah ao receber o prêmio Cecil B. DeMille no Globo de Ouro 2018, onde ela abordou temas como assédio sexual em Hollywood e racismo nos EUA.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	decisão	decisão	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_
+3	veio	vir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	logo	logo	ADV	_	_	3	advmod	3:advmod	_
+5	após	após	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	discurso	discurso	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:após	_
+8	emocionante	emocionante	ADJ	_	Number=Sing	7	amod	7:amod	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	Oprah	Oprah	PROPN	_	_	7	nmod	7:nmod:de	_
+11-12	ao	_	_	_	_	_	_	_	_
+11	a	a	ADP	_	ExtPos=SCONJ	13	mark	13:mark	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	fixed	11:fixed	_
+13	receber	receber	VERB	_	VerbForm=Inf	3	advcl	3:advcl:a_o	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	prêmio	prêmio	NOUN	_	Gender=Masc|Number=Sing	13	obj	13:obj|28:obl	_
+16	Cecil	Cecil	PROPN	_	_	15	nmod	15:nmod	_
+17	B.	B.	PROPN	_	_	16	flat:name	16:flat:name	_
+18	DeMille	DeMille	PROPN	_	_	16	flat:name	16:flat:name	_
+19-20	no	_	_	_	_	_	_	_	_
+19	em	em	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	Globo	Globo	PROPN	_	_	13	obl	13:obl:em	_
+22	de	de	ADP	_	_	23	case	23:case	_
+23	Ouro	Ouro	PROPN	_	_	21	flat:name	21:flat:name	_
+24	2018	2018	NUM	_	NumType=Card	21	nummod	21:nummod	SpaceAfter=No
+25	,	,	PUNCT	_	_	28	punct	28:punct	_
+26	onde	onde	ADV	_	_	28	advmod	15:ref	_
+27	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	28	nsubj	28:nsubj	_
+28	abordou	abordar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	acl:relcl	15:acl:relcl	_
+29	temas	tema	NOUN	_	Gender=Masc|Number=Plur	28	obj	28:obj	_
+30	como	como	ADP	_	_	31	case	31:case|36:case	_
+31	assédio	assédio	NOUN	_	Gender=Masc|Number=Sing	29	nmod	29:nmod:como	_
+32	sexual	sexual	ADJ	_	Number=Sing	31	amod	31:amod	_
+33	em	em	ADP	_	_	34	case	34:case	_
+34	Hollywood	Hollywood	PROPN	_	_	31	nmod	31:nmod:em	_
+35	e	e	CCONJ	_	_	36	cc	36:cc	_
+36	racismo	racismo	NOUN	_	Gender=Masc|Number=Sing	31	conj	29:nmod:como|31:conj:e	_
+37-38	nos	_	_	_	_	_	_	_	_
+37	em	em	ADP	_	_	39	case	39:case	_
+38	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	39	det	39:det	_
+39	EUA	EUA	PROPN	_	_	36	nmod	36:nmod:em	SpaceAfter=No
+40	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0011
+# text = Durante o evento, o apresentador Seth Meyers fez uma piada sobre uma possível chapa presidencial com Oprah e Tom Hanks, gerando enorme repercussão nas redes sociais e entre os espectadores.
+1	Durante	durante	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	evento	evento	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:durante	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	apresentador	apresentador	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	9:nsubj	_
+7	Seth	Seth	PROPN	_	_	6	nmod	6:nmod	_
+8	Meyers	Meyers	PROPN	_	_	7	flat:name	7:flat:name	_
+9	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	piada	piada	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+12	sobre	sobre	ADP	_	_	15	case	15:case	_
+13	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+14	possível	possível	ADJ	_	Number=Sing	15	amod	15:amod	_
+15	chapa	chapa	NOUN	_	Number=Sing	11	nmod	11:nmod:sobre	_
+16	presidencial	presidencial	ADJ	_	Number=Sing	15	amod	15:amod	_
+17	com	com	ADP	_	_	18	case	18:case|20:case	_
+18	Oprah	Oprah	PROPN	_	_	15	nmod	15:nmod:com	_
+19	e	e	CCONJ	_	_	20	cc	20:cc	_
+20	Tom	Tom	PROPN	_	_	18	conj	15:nmod:com|18:conj:e	_
+21	Hanks	Hanks	PROPN	_	_	20	flat:name	20:flat:name	SpaceAfter=No
+22	,	,	PUNCT	_	_	23	punct	23:punct	_
+23	gerando	gerar	VERB	_	VerbForm=Ger	9	advcl	9:advcl	_
+24	enorme	enorme	ADJ	_	Number=Sing	25	amod	25:amod	_
+25	repercussão	repercussão	NOUN	_	Gender=Fem|Number=Sing	23	obj	23:obj	_
+26-27	nas	_	_	_	_	_	_	_	_
+26	em	em	ADP	_	_	28	case	28:case	_
+27	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	28	det	28:det	_
+28	redes	rede	NOUN	_	Gender=Fem|Number=Plur	23	obl	23:obl:em	_
+29	sociais	social	ADJ	_	Number=Plur	28	amod	28:amod	_
+30	e	e	CCONJ	_	_	33	cc	33:cc	_
+31	entre	entre	ADP	_	_	33	case	33:case	_
+32	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	33	det	33:det	_
+33	espectadores	espectador	NOUN	_	Gender=Masc|Number=Plur	28	conj	23:obl:entre|28:conj:e	SpaceAfter=No
+34	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0013
+# text = "Em 1964, eu era uma pequena garota assistindo à história ser feita", Oprah disse em seu discurso.
+1	"	"	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+2	Em	em	ADP	_	_	3	case	3:case	_
+3	1964	1964	NUM	_	NumType=Card	9	nmod	9:nmod:em	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	9	nsubj	9:nsubj	_
+6	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	9	cop	9:cop	_
+7	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+8	pequena	pequeno	ADJ	_	Gender=Fem|Number=Sing	9	amod	9:amod	_
+9	garota	garoto	NOUN	_	Gender=Fem|Number=Sing	19	ccomp:speech	19:ccomp:speech	_
+10	assistindo	assistir	VERB	_	VerbForm=Ger	9	acl	9:acl	_
+11-12	à	_	_	_	_	_	_	_	_
+11	a	a	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	história	história	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:a	_
+14	ser	ser	AUX	_	Number=Sing|Person=3|VerbForm=Inf	15	aux:pass	15:aux:pass	_
+15	feita	fazer	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	10	xcomp	10:xcomp	SpaceAfter=No
+16	"	"	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+17	,	,	PUNCT	_	_	9	punct	9:punct	_
+18	Oprah	Oprah	PROPN	_	_	19	nsubj	19:nsubj	_
+19	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+20	em	em	ADP	_	_	22	case	22:case	_
+21	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	22	det	22:det	_
+22	discurso	discurso	NOUN	_	Gender=Masc|Number=Sing	19	obl	19:obl:em	SpaceAfter=No
+23	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0015
+# text = E hoje, estou pronta para fazer história novamente, não apenas na indústria do entretenimento, mas em nosso país.
+1	E	e	CCONJ	_	_	5	cc	5:cc	_
+2	hoje	hoje	ADV	_	_	5	advmod	5:advmod	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	estou	estar	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+5	pronta	pronto	ADJ	_	Gender=Fem|Number=Sing	0	root	0:root	_
+6	para	para	ADP	_	_	7	mark	7:mark	_
+7	fazer	fazer	VERB	_	VerbForm=Inf	5	acl	5:acl:para	_
+8	história	história	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	_
+9	novamente	novamente	ADV	_	_	7	advmod	7:advmod	SpaceAfter=No
+10	,	,	PUNCT	_	_	15	punct	15:punct	_
+11	não	não	ADV	_	_	12	advmod	12:advmod	_
+12	apenas	apenas	ADV	_	_	15	advmod	15:advmod	_
+13-14	na	_	_	_	_	_	_	_	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	indústria	indústria	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:em	_
+16-17	do	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	entretenimento	entretenimento	NOUN	_	Gender=Masc|Number=Sing	15	nmod	15:nmod:de	SpaceAfter=No
+19	,	,	PUNCT	_	_	23	punct	23:punct	_
+20	mas	mas	CCONJ	_	_	23	cc	23:cc	_
+21	em	em	ADP	_	_	23	case	23:case	_
+22	nosso	nosso	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	23	det	23:det	_
+23	país	país	NOUN	_	Gender=Masc|Number=Sing	15	conj	7:obl:em|15:conj:mas	SpaceAfter=No
+24	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0017
+# text = A verdade é nossa maior arma, e estou determinada a usá-la para lutar pela justiça e igualdade que tanto desejamos.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	verdade	verdade	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj|10:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+4	nossa	nosso	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	6	det	6:det	_
+5	maior	maior	ADJ	_	Number=Sing	6	amod	6:amod	_
+6	arma	arma	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+7	,	,	PUNCT	_	_	10	punct	10:punct	_
+8	e	e	CCONJ	_	_	10	cc	10:cc	_
+9	estou	estar	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_
+10	determinada	determinado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	6	conj	6:conj:e	_
+11	a	a	ADP	_	_	12	mark	12:mark	_
+12-13	usá-la	_	_	_	_	_	_	_	_
+12	usar	usar	VERB	_	VerbForm=Inf	10	acl	10:acl:a	_
+13	la	lo	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	12	obj	12:obj	_
+14	para	para	ADP	_	_	15	mark	15:mark	_
+15	lutar	lutar	VERB	_	VerbForm=Inf	12	advcl	12:advcl:para	_
+16-17	pela	_	_	_	_	_	_	_	_
+16	por	por	ADP	_	_	18	case	18:case|20:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	justiça	justiça	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl:por|23:obj	_
+19	e	e	CCONJ	_	_	20	cc	20:cc	_
+20	igualdade	igualdade	NOUN	_	Gender=Fem|Number=Sing	18	conj	15:obl:por|18:conj:e|23:obj	_
+21	que	que	PRON	_	PronType=Rel	23	obj	18:ref|20:ref	_
+22	tanto	tanto	ADV	_	_	23	advmod	23:advmod	_
+23	desejamos	desejar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	18	acl:relcl	18:acl:relcl|20:acl:relcl	SpaceAfter=No
+24	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0019
+# text = Fontes ainda indicam que Oprah já teria iniciado conversas com líderes democratas influentes, incluindo Barack e Michelle Obama, para discutir sua plataforma e estratégias de campanha.
+1	Fontes	fonte	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	3:nsubj	_
+2	ainda	ainda	ADV	_	_	3	advmod	3:advmod	_
+3	indicam	indicar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	8	mark	8:mark	_
+5	Oprah	Oprah	PROPN	_	_	8	nsubj	8:nsubj	_
+6	já	já	ADV	_	_	8	advmod	8:advmod	_
+7	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	8	aux	8:aux	_
+8	iniciado	iniciar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	3	ccomp	3:ccomp	_
+9	conversas	conversa	NOUN	_	Gender=Fem|Number=Plur	8	obj	8:obj	_
+10	com	com	ADP	_	_	11	case	11:case	_
+11	líderes	líder	NOUN	_	Gender=Masc|Number=Plur	9	nmod	9:nmod:com	_
+12	democratas	democrata	ADJ	_	Number=Plur	11	amod	11:amod	_
+13	influentes	influente	ADJ	_	Number=Plur	11	amod	11:amod	SpaceAfter=No
+14	,	,	PUNCT	_	_	15	punct	15:punct	_
+15	incluindo	incluir	VERB	_	VerbForm=Ger	11	acl	11:acl	_
+16	Barack	Barack	PROPN	_	_	15	obj	15:obj	_
+17	e	e	CCONJ	_	_	18	cc	18:cc	_
+18	Michelle	Michelle	PROPN	_	_	16	conj	15:obj|16:conj:e	_
+19	Obama	Obama	PROPN	_	_	18	flat:name	18:flat:name	SpaceAfter=No
+20	,	,	PUNCT	_	_	15	punct	15:punct	_
+21	para	para	ADP	_	_	22	mark	22:mark	_
+22	discutir	discutir	VERB	_	VerbForm=Inf	8	advcl	8:advcl:para	_
+23	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	24	det	24:det	_
+24	plataforma	plataforma	NOUN	_	Gender=Fem|Number=Sing	22	obj	22:obj	_
+25	e	e	CCONJ	_	_	26	cc	26:cc	_
+26	estratégias	estratégia	NOUN	_	Gender=Fem|Number=Plur	24	conj	22:obj|24:conj:e	_
+27	de	de	ADP	_	_	28	case	28:case	_
+28	campanha	campanha	NOUN	_	Gender=Fem|Number=Sing	26	nmod	26:nmod:de	SpaceAfter=No
+29	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0021
+# text = A expectativa é que ela proponha políticas progressistas focadas em igualdade social, saúde e educação.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	expectativa	expectativa	NOUN	_	Gender=Fem|Number=Sing	6	nsubj:outer	6:nsubj:outer	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+4	que	que	SCONJ	_	_	6	mark	6:mark	_
+5	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	6	nsubj	6:nsubj	_
+6	proponha	propor	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	políticas	política	NOUN	_	Gender=Fem|Number=Plur	6	obj	6:obj	_
+8	progressistas	progressista	ADJ	_	Number=Plur	7	amod	7:amod	_
+9	focadas	focar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	7	acl	7:acl	_
+10	em	em	ADP	_	_	11	case	11:case|14:case|16:case	_
+11	igualdade	igualdade	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:em	_
+12	social	social	ADJ	_	Number=Sing	11	amod	11:amod	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	11	conj	9:obl:em|11:conj:e	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	educação	educação	NOUN	_	Gender=Fem|Number=Sing	11	conj	9:obl:em|11:conj:e	SpaceAfter=No
+17	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0023
+# text = A corrida presidencial do Partido Democrata para 2020, que começa oficialmente após as eleições de meio de mandato em novembro de 2018, promete ser mais emocionante e polarizada com a presença de Oprah.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	corrida	corrida	NOUN	_	Gender=Fem|Number=Sing	26	nsubj	12:nsubj|26:nsubj|29:nsubj|31:nsubj	_
+3	presidencial	presidencial	ADJ	_	Number=Sing	2	amod	2:amod	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	Partido	Partido	PROPN	_	_	2	nmod	2:nmod:de	_
+7	Democrata	Democrata	PROPN	_	_	6	flat:name	6:flat:name	_
+8	para	para	ADP	_	_	9	case	9:case	_
+9	2020	2020	NUM	_	NumType=Card	2	nmod	2:nmod:para	SpaceAfter=No
+10	,	,	PUNCT	_	_	12	punct	12:punct	_
+11	que	que	PRON	_	PronType=Rel	12	nsubj	2:ref	_
+12	começa	começar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+13	oficialmente	oficialmente	ADV	_	_	12	advmod	12:advmod	_
+14	após	após	ADP	_	_	16	case	16:case	_
+15	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	16:det	_
+16	eleições	eleição	NOUN	_	Gender=Fem|Number=Plur	12	obl	12:obl:após	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	meio	meio	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod:de	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	mandato	mandato	NOUN	_	Gender=Masc|Number=Sing	18	nmod	18:nmod:de	_
+21	em	em	ADP	_	_	22	case	22:case	_
+22	novembro	novembro	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod:em	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	2018	2018	NUM	_	NumType=Card	22	nmod	22:nmod:de	SpaceAfter=No
+25	,	,	PUNCT	_	_	12	punct	12:punct	_
+26	promete	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+27	ser	ser	AUX	_	VerbForm=Inf	29	cop	29:cop|31:cop	_
+28	mais	mais	ADV	_	_	29	advmod	29:advmod	_
+29	emocionante	emocionante	ADJ	_	Number=Sing	26	xcomp	26:xcomp	_
+30	e	e	CCONJ	_	_	31	cc	31:cc	_
+31	polarizada	polarizado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	29	conj	26:xcomp|29:conj:e	_
+32	com	com	ADP	_	_	34	case	34:case	_
+33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	34:det	_
+34	presença	presença	NOUN	_	Gender=Fem|Number=Sing	29	obl	29:obl:com|31:obl:com	_
+35	de	de	ADP	_	_	36	case	36:case	_
+36	Oprah	Oprah	PROPN	_	_	34	nmod	34:nmod:de	SpaceAfter=No
+37	.	.	PUNCT	_	_	26	punct	26:punct	_
+
+# sent_id = S0025
+# text = Ainda não há confirmação sobre quem seria seu vice, mas especulações apontam para nomes de peso como Tom Hanks e até mesmo a senadora Elizabeth Warren.
+1	Ainda	ainda	ADV	_	_	3	advmod	3:advmod	_
+2	não	não	ADV	_	_	3	advmod	3:advmod	_
+3	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	confirmação	confirmação	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+5	sobre	sobre	ADP	_	_	6	case	6:case	_
+6	quem	quem	PRON	_	PronType=Ind	4	nmod	4:nmod:sobre	_
+7	seria	ser	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	9	cop	9:cop	_
+8	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	9	det	9:det	_
+9	vice	vice	NOUN	_	Number=Sing	6	acl:relcl	6:acl:relcl	SpaceAfter=No
+10	,	,	PUNCT	_	_	13	punct	13:punct	_
+11	mas	mas	CCONJ	_	_	13	cc	13:cc	_
+12	especulações	especulação	NOUN	_	Gender=Fem|Number=Plur	13	nsubj	13:nsubj	_
+13	apontam	apontar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	conj	3:conj:mas	_
+14	para	para	ADP	_	_	15	case	15:case	_
+15	nomes	nome	NOUN	_	Gender=Masc|Number=Plur	13	obl	13:obl:para	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	peso	peso	NOUN	_	Gender=Masc|Number=Sing	15	nmod	15:nmod:de	_
+18	como	como	ADP	_	_	19	case	19:case|25:case	_
+19	Tom	Tom	PROPN	_	_	15	nmod	15:nmod:como	_
+20	Hanks	Hanks	PROPN	_	_	19	flat:name	19:flat:name	_
+21	e	e	CCONJ	_	_	25	cc	25:cc	_
+22	até	até	ADV	_	_	25	advmod	25:advmod	_
+23	mesmo	mesmo	ADV	_	_	25	advmod	25:advmod	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	senadora	senador	NOUN	_	Gender=Fem|Number=Sing	19	conj	15:nmod:como|19:conj:e	_
+26	Elizabeth	Elizabeth	PROPN	_	_	25	nmod	25:nmod	_
+27	Warren	Warren	PROPN	_	_	26	flat:name	26:flat:name	SpaceAfter=No
+28	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0027
+# text = Os representantes de Oprah não responderam aos pedidos de comentários, mas analistas afirmam que o silêncio é uma estratégia para gerar ainda mais expectativa e interesse público.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	representantes	representante	NOUN	_	Number=Plur	6	nsubj	6:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Oprah	Oprah	PROPN	_	_	2	nmod	2:nmod:de	_
+5	não	não	ADV	_	_	6	advmod	6:advmod	_
+6	responderam	responder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7-8	aos	_	_	_	_	_	_	_	_
+7	a	a	ADP	_	_	9	case	9:case	_
+8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	9:det	_
+9	pedidos	pedido	NOUN	_	Gender=Masc|Number=Plur	6	obl	6:obl:a	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	comentários	comentário	NOUN	_	Gender=Masc|Number=Plur	9	nmod	9:nmod:de	SpaceAfter=No
+12	,	,	PUNCT	_	_	15	punct	15:punct	_
+13	mas	mas	CCONJ	_	_	15	cc	15:cc	_
+14	analistas	analista	NOUN	_	Number=Plur	15	nsubj	15:nsubj	_
+15	afirmam	afirmar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	conj	6:conj:mas	_
+16	que	que	SCONJ	_	_	21	mark	21:mark	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	silêncio	silêncio	NOUN	_	Gender=Masc|Number=Sing	21	nsubj	21:nsubj	_
+19	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	cop	21:cop	_
+20	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	estratégia	estratégia	NOUN	_	Gender=Fem|Number=Sing	15	ccomp	15:ccomp	_
+22	para	para	ADP	_	_	23	mark	23:mark	_
+23	gerar	gerar	VERB	_	VerbForm=Inf	21	acl	21:acl:para	_
+24	ainda	ainda	ADV	_	_	23	advmod	23:advmod	_
+25	mais	mais	DET	_	PronType=Ind	26	det	26:det	_
+26	expectativa	expectativa	NOUN	_	Gender=Fem|Number=Sing	23	obj	23:obj	_
+27	e	e	CCONJ	_	_	28	cc	28:cc	_
+28	interesse	interesse	NOUN	_	Gender=Masc|Number=Sing	26	conj	23:obj|26:conj:e	_
+29	público	público	ADJ	_	Gender=Masc|Number=Sing	28	amod	28:amod	SpaceAfter=No
+30	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0029
+# text = A candidatura de Oprah é vista como um fenômeno capaz de unir diversas facetas da sociedade americana em torno de uma liderança carismática e visionária.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	candidatura	candidatura	NOUN	_	Gender=Fem|Number=Sing	6	nsubj:pass	6:nsubj:pass	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Oprah	Oprah	PROPN	_	_	2	nmod	2:nmod:de	_
+5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:pass	6:aux:pass	_
+6	vista	ver	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+7	como	como	ADP	_	_	9	case	9:case	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	fenômeno	fenômeno	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:como	_
+10	capaz	capaz	ADJ	_	Number=Sing	9	amod	9:amod	_
+11	de	de	ADP	_	_	12	mark	12:mark	_
+12	unir	unir	VERB	_	VerbForm=Inf	10	acl	10:acl:de	_
+13	diversas	diversos	DET	_	Gender=Fem|Number=Plur|PronType=Dem	14	det	14:det	_
+14	facetas	faceta	NOUN	_	Gender=Fem|Number=Plur	12	obj	12:obj	_
+15-16	da	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	sociedade	sociedade	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:de	_
+18	americana	americano	ADJ	_	Gender=Fem|Number=Sing	17	amod	17:amod	_
+19	em	em	ADP	_	_	20	case	20:case	_
+20	torno	torno	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:em	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	liderança	liderança	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:de	_
+24	carismática	carismático	ADJ	_	Gender=Fem|Number=Sing	23	amod	23:amod	_
+25	e	e	CCONJ	_	_	26	cc	26:cc	_
+26	visionária	visionário	ADJ	_	Gender=Fem|Number=Sing	24	conj	23:amod|24:conj:e	SpaceAfter=No
+27	.	.	PUNCT	_	_	6	punct	6:punct	_

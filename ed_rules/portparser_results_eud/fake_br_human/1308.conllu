@@ -1,0 +1,178 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = China poderá suspender fornecimento de combustível para a Coreia.
+1	China	China	PROPN	_	_	2	nsubj	2:nsubj|3:nsubj	_
+2	poderá	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+3	suspender	suspender	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	_
+4	fornecimento	fornecimento	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	combustível	combustível	NOUN	_	Number=Sing	4	nmod	4:nmod:de	_
+7	para	para	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	Coreia	Coreia	PROPN	_	_	4	nmod	4:nmod:para	SpaceAfter=No
+10	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = País de Kim Jon entraria em colapso.
+1	País	país	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	Kim	Kim	PROPN	_	_	1	nmod	1:nmod:de	_
+4	Jon	Jon	PROPN	_	_	3	flat:name	3:flat:name	_
+5	entraria	entrar	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+6	em	em	ADP	_	_	7	case	7:case	_
+7	colapso	colapso	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:em	SpaceAfter=No
+8	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0005
+# text = Os preços da gasolina em Pyongyang dispararam 83% em apenas três dias, segundo estrangeiros que residem no país.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	preços	preço	NOUN	_	Gender=Masc|Number=Plur	8	nsubj	8:nsubj	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	gasolina	gasolina	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+6	em	em	ADP	_	_	7	case	7:case	_
+7	Pyongyang	Pyongyang	PROPN	_	_	5	nmod	5:nmod:em	_
+8	dispararam	disparar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	83	83	NUM	_	NumType=Card	10	nummod	10:nummod	SpaceAfter=No
+10	%	%	SYM	_	_	8	obj	8:obj	_
+11	em	em	ADP	_	_	14	case	14:case	_
+12	apenas	apenas	ADV	_	_	13	advmod	13:advmod	_
+13	três	três	NUM	_	NumType=Card	14	nummod	14:nummod	_
+14	dias	dia	NOUN	_	Gender=Masc|Number=Plur	8	obl	8:obl:em	SpaceAfter=No
+15	,	,	PUNCT	_	_	17	punct	17:punct	_
+16	segundo	segundo	ADP	_	_	17	case	17:case	_
+17	estrangeiros	estrangeiro	NOUN	_	Gender=Masc|Number=Plur	8	obl	8:obl:segundo|19:nsubj	_
+18	que	que	PRON	_	PronType=Rel	19	nsubj	17:ref	_
+19	residem	residir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	acl:relcl	17:acl:relcl	_
+20-21	no	_	_	_	_	_	_	_	_
+20	em	em	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	país	país	NOUN	_	Gender=Masc|Number=Sing	19	obl	19:obl:em	SpaceAfter=No
+23	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0007
+# text = Em alguns postos de gasolina, apenas diplomatas e organizações internacionais estão sendo atendidos.
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	alguns	algum	DET	_	Gender=Masc|Number=Plur|PronType=Ind	3	det	3:det	_
+3	postos	posto	NOUN	_	Gender=Masc|Number=Plur	14	obl	14:obl:em	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	gasolina	gasolina	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	3	punct	3:punct	_
+7	apenas	apenas	ADV	_	_	8	advmod	8:advmod	_
+8	diplomatas	diplomata	NOUN	_	Number=Plur	14	nsubj:pass	14:nsubj:pass	_
+9	e	e	CCONJ	_	_	10	cc	10:cc	_
+10	organizações	organização	NOUN	_	Gender=Fem|Number=Plur	8	conj	8:conj:e|14:nsubj:pass	_
+11	internacionais	internacional	ADJ	_	Number=Plur	10	amod	10:amod	_
+12	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	aux	14:aux	_
+13	sendo	ser	AUX	_	VerbForm=Ger	14	aux:pass	14:aux:pass	_
+14	atendidos	atender	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	SpaceAfter=No
+15	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0009
+# text = O Querosene, um hidrocarboneto líquido obtido através da destilação do petróleo bruto, também poderá ser restringido e afetará diretamente o programa nuclear da Coreia, já que vários foguetes e mísseis dependem dessa fonte específica de energia.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Querosene	Querosene	PROPN	_	_	18	nsubj	18:nsubj|20:nsubj:pass|22:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	5	punct	5:punct	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	hidrocarboneto	hidrocarboneto	NOUN	_	Gender=Masc|Number=Sing	2	appos	2:appos	_
+6	líquido	líquido	ADJ	_	Gender=Masc|Number=Sing	5	amod	5:amod	_
+7	obtido	obter	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	5	acl	5:acl	_
+8	através	através	ADV	_	_	7	advmod	7:advmod	_
+9-10	da	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	destilação	destilação	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:de	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	petróleo	petróleo	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:de	_
+15	bruto	bruto	ADJ	_	Gender=Masc|Number=Sing	14	amod	14:amod	SpaceAfter=No
+16	,	,	PUNCT	_	_	5	punct	5:punct	_
+17	também	também	ADV	_	_	18	advmod	18:advmod	_
+18	poderá	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+19	ser	ser	AUX	_	VerbForm=Inf	20	aux:pass	20:aux:pass	_
+20	restringido	restringir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	18	xcomp	18:xcomp	_
+21	e	e	CCONJ	_	_	22	cc	22:cc	_
+22	afetará	afetar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	20	conj	18:xcomp|20:conj:e	_
+23	diretamente	diretamente	ADV	_	_	22	advmod	22:advmod	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	programa	programa	NOUN	_	Gender=Masc|Number=Sing	22	obj	22:obj	_
+26	nuclear	nuclear	ADJ	_	Number=Sing	25	amod	25:amod	_
+27-28	da	_	_	_	_	_	_	_	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	Coreia	Coreia	PROPN	_	_	25	nmod	25:nmod:de	SpaceAfter=No
+30	,	,	PUNCT	_	_	37	punct	37:punct	_
+31	já	já	ADV	_	ExtPos=SCONJ	37	mark	37:mark	_
+32	que	que	SCONJ	_	_	31	fixed	31:fixed	_
+33	vários	vários	DET	_	Gender=Masc|Number=Plur|PronType=Ind	34	det	34:det	_
+34	foguetes	foguete	NOUN	_	Gender=Masc|Number=Plur	37	nsubj	37:nsubj	_
+35	e	e	CCONJ	_	_	36	cc	36:cc	_
+36	mísseis	míssei	NOUN	_	Number=Plur	34	conj	34:conj:e|37:nsubj	_
+37	dependem	depender	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	advcl	22:advcl:já_que	_
+38-39	dessa	_	_	_	_	_	_	_	_
+38	de	de	ADP	_	_	40	case	40:case	_
+39	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	40	det	40:det	_
+40	fonte	fonte	NOUN	_	Gender=Fem|Number=Sing	37	obl	37:obl:de	_
+41	específica	específico	ADJ	_	Gender=Fem|Number=Sing	40	amod	40:amod	_
+42	de	de	ADP	_	_	43	case	43:case	_
+43	energia	energia	NOUN	_	Gender=Fem|Number=Sing	40	nmod	40:nmod:de	SpaceAfter=No
+44	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0011
+# text = Vale ressaltar que uma outra parte do arsenal nuclear de Kim Jon-un é movido a combustível sólido.
+1	Vale	valer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	ressaltar	ressaltar	VERB	_	VerbForm=Inf	1	xcomp	1:xcomp	_
+3	que	que	SCONJ	_	_	15	mark	15:mark	_
+4	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+5	outra	outro	DET	_	Gender=Fem|Number=Sing|PronType=Ind	6	det	6:det	_
+6	parte	parte	NOUN	_	Gender=Fem|Number=Sing	15	nsubj:pass	15:nsubj:pass	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	arsenal	arsenal	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de	_
+10	nuclear	nuclear	ADJ	_	Number=Sing	9	amod	9:amod	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	Kim	Kim	PROPN	_	_	9	nmod	9:nmod:de	_
+13	Jon-un	Jon-un	PROPN	_	_	12	flat:name	12:flat:name	_
+14	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux:pass	15:aux:pass	_
+15	movido	mover	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	ccomp	2:ccomp	_
+16	a	a	ADP	_	_	17	case	17:case	_
+17	combustível	combustível	NOUN	_	Number=Sing	15	obl	15:obl:a	_
+18	sólido	sólido	ADJ	_	Gender=Masc|Number=Sing	17	amod	17:amod	SpaceAfter=No
+19	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0013
+# text = Um especialista do banco IBK da Coreia do Sul disse que um embargo do petróleo deixaria o Norte "totalmente paralisado".
+1	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	especialista	especialista	NOUN	_	Number=Sing	13	nsubj	13:nsubj	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	banco	banco	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	_
+6	IBK	IBK	PROPN	_	_	5	nmod	5:nmod	_
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	Coreia	Coreia	PROPN	_	_	5	nmod	5:nmod:de	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	Sul	Sul	PROPN	_	_	9	flat:name	9:flat:name	_
+13	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	que	que	SCONJ	_	_	20	mark	20:mark	_
+15	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	embargo	embargo	NOUN	_	Gender=Masc|Number=Sing	20	nsubj	20:nsubj	_
+17-18	do	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	petróleo	petróleo	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod:de	_
+20	deixaria	deixar	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	13	ccomp	13:ccomp	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	Norte	Norte	PROPN	_	_	20	obj	20:obj|25:nsubj	_
+23	"	"	PUNCT	_	_	25	punct	25:punct	SpaceAfter=No
+24	totalmente	totalmente	ADV	_	_	25	advmod	25:advmod	_
+25	paralisado	paralisado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	20	xcomp	20:xcomp	SpaceAfter=No
+26	"	"	PUNCT	_	_	25	punct	25:punct	SpaceAfter=No
+27	.	.	PUNCT	_	_	13	punct	13:punct	_

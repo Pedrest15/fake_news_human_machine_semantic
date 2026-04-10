@@ -1,0 +1,46 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Site hospedado na Hungria vaza telefone fixo, endereço, celular e até email de brasileiros.
+1	Site	site	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+2	hospedado	hospedar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	1	acl	1:acl	_
+3-4	na	_	_	_	_	_	_	_	_
+3	em	em	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	Hungria	Hungria	PROPN	_	_	2	obl	2:obl:em	_
+6	vaza	vazar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	telefone	telefone	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+8	fixo	fixo	ADJ	_	Gender=Masc|Number=Sing	7	amod	7:amod	SpaceAfter=No
+9	,	,	PUNCT	_	_	10	punct	10:punct	_
+10	endereço	endereço	NOUN	_	Gender=Masc|Number=Sing	7	conj	6:obj|7:conj:e	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	celular	celular	NOUN	_	Gender=Masc|Number=Sing	7	conj	6:obj|7:conj:e	_
+13	e	e	CCONJ	_	_	15	cc	15:cc	_
+14	até	até	ADV	_	_	15	case	15:case	_
+15	email	email	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	7	conj	6:obj|7:conj:e	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	brasileiros	brasileiro	NOUN	_	Gender=Masc|Number=Plur	15	nmod	15:nmod:de	SpaceAfter=No
+18	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0003
+# text = O site informa endereço, telefones (incluindo celulares) e, em alguns casos, até e-mail de brasileiros.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	site	site	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	informa	informar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	endereço	endereço	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	telefones	telefone	NOUN	_	Gender=Masc|Number=Plur	4	conj	3:obj|4:conj:e	_
+7	(	(	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	incluindo	incluir	VERB	_	VerbForm=Ger	6	acl	6:acl	_
+9	celulares	celular	NOUN	_	Gender=Masc|Number=Plur	8	obj	8:obj	SpaceAfter=No
+10	)	)	PUNCT	_	_	8	punct	8:punct	_
+11	e	e	CCONJ	_	_	18	cc	18:cc	SpaceAfter=No
+12	,	,	PUNCT	_	_	15	punct	15:punct	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	alguns	algum	DET	_	Gender=Masc|Number=Plur|PronType=Ind	15	det	15:det	_
+15	casos	caso	NOUN	_	Gender=Masc|Number=Plur	18	nmod	18:nmod:em	SpaceAfter=No
+16	,	,	PUNCT	_	_	15	punct	15:punct	_
+17	até	até	ADV	_	_	18	advmod	18:advmod	_
+18	e-mail	e-mail	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	4	conj	3:obj|4:conj:e	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	brasileiros	brasileiro	NOUN	_	Gender=Masc|Number=Plur	18	nmod	18:nmod:de	SpaceAfter=No
+21	.	.	PUNCT	_	_	3	punct	3:punct	_

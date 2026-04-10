@@ -1,0 +1,345 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Urgente: Revelações chocantes sobre o assassinato de Marielle Franco!
+1	Urgente	urgente	ADJ	_	Number=Sing	0	root	0:root	SpaceAfter=No
+2	:	:	PUNCT	_	_	3	punct	3:punct	_
+3	Revelações	revelação	NOUN	_	Gender=Fem|Number=Plur	1	parataxis	1:parataxis	_
+4	chocantes	chocante	ADJ	_	Number=Plur	3	amod	3:amod	_
+5	sobre	sobre	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	assassinato	assassinato	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:sobre	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	Marielle	Marielle	PROPN	_	_	7	nmod	7:nmod:de	_
+10	Franco	Franco	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+11	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Documentos secretos vazados indicam que a vereadora do PSOL foi vítima de uma conspiração política.
+1	Documentos	documento	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	4:nsubj	_
+2	secretos	secreto	ADJ	_	Gender=Masc|Number=Plur	1	amod	1:amod	_
+3	vazados	vazar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	1	acl	1:acl	_
+4	indicam	indicar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	que	que	SCONJ	_	_	12	mark	12:mark	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	vereadora	vereador	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	12:nsubj	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	PSOL	PSOL	PROPN	_	_	7	nmod	7:nmod:de	_
+11	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	cop	12:cop	_
+12	vítima	vítima	NOUN	_	Gender=Fem|Number=Sing	4	ccomp	4:ccomp	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	conspiração	conspiração	NOUN	_	Gender=Fem|Number=Sing	12	nmod	12:nmod:de	_
+16	política	político	ADJ	_	Gender=Fem|Number=Sing	15	amod	15:amod	SpaceAfter=No
+17	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0005
+# text = Marielle Franco teria descoberto um esquema de corrupção envolvendo altos escalões de diferentes partidos e foi silenciada.
+1	Marielle	Marielle	PROPN	_	_	4	nsubj	4:nsubj|17:nsubj:pass	_
+2	Franco	Franco	PROPN	_	_	1	flat:name	1:flat:name	_
+3	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	4	aux	4:aux	_
+4	descoberto	descobrir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	esquema	esquema	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	corrupção	corrupção	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de	_
+9	envolvendo	envolver	VERB	_	VerbForm=Ger	6	acl	6:acl	_
+10	altos	alto	ADJ	_	Gender=Masc|Number=Plur	11	amod	11:amod	_
+11	escalões	escalão	NOUN	_	Gender=Masc|Number=Plur	9	obj	9:obj	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	diferentes	diferente	ADJ	_	Number=Plur	14	amod	14:amod	_
+14	partidos	partido	NOUN	_	Gender=Masc|Number=Plur	11	nmod	11:nmod:de	_
+15	e	e	CCONJ	_	_	17	cc	17:cc	_
+16	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	aux:pass	17:aux:pass	_
+17	silenciada	silenciar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	4	conj	4:conj:e	SpaceAfter=No
+18	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0007
+# text = Na noite de quarta-feira (14), após um evento no centro do Rio, Marielle foi atingida por quatro tiros.
+1-2	Na	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	noite	noite	NOUN	_	Gender=Fem|Number=Sing	22	obl	22:obl:em	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	quarta-feira	quarta-feira	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:de	_
+6	(	(	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+7	14	14	NUM	_	NumType=Card	5	appos	5:appos	SpaceAfter=No
+8	)	)	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+9	,	,	PUNCT	_	_	12	punct	12:punct	_
+10	após	após	ADP	_	_	12	case	12:case	_
+11	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	evento	evento	NOUN	_	Gender=Masc|Number=Sing	22	obl	22:obl:após	_
+13-14	no	_	_	_	_	_	_	_	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	centro	centro	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:em	_
+16-17	do	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	Rio	Rio	PROPN	_	_	15	nmod	15:nmod:de	SpaceAfter=No
+19	,	,	PUNCT	_	_	12	punct	12:punct	_
+20	Marielle	Marielle	PROPN	_	_	22	nsubj:pass	22:nsubj:pass	_
+21	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	aux:pass	22:aux:pass	_
+22	atingida	atingir	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+23	por	por	ADP	_	_	25	case	25:case	_
+24	quatro	quatro	NUM	_	NumType=Card	25	nummod	25:nummod	_
+25	tiros	tiro	NOUN	_	Gender=Masc|Number=Plur	22	obl:agent	22:obl:agent	SpaceAfter=No
+26	.	.	PUNCT	_	_	22	punct	22:punct	_
+
+# sent_id = S0009
+# text = O motorista Anderson Pedro Gomes também foi morto.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	motorista	motorista	NOUN	_	Number=Sing	8	nsubj:pass	8:nsubj:pass	_
+3	Anderson	Anderson	PROPN	_	_	2	nmod	2:nmod	_
+4	Pedro	Pedro	PROPN	_	_	3	flat:name	3:flat:name	_
+5	Gomes	Gomes	PROPN	_	_	3	flat:name	3:flat:name	_
+6	também	também	ADV	_	_	8	advmod	8:advmod	_
+7	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	aux:pass	8:aux:pass	_
+8	morto	morto	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	SpaceAfter=No
+9	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0011
+# text = Deputados de várias legendas, incluindo PSOL, PT, PSB, PCdoB, Rede e até mesmo o DEM, uniram-se em um ato na Câmara dos Deputados, carregando faixas pretas e girassóis, clamando por justiça e exigindo a verdade.
+1	Deputados	deputado	NOUN	_	Gender=Masc|Number=Plur	22	nsubj	22:nsubj	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	várias	vários	DET	_	Gender=Fem|Number=Plur|PronType=Ind	4	det	4:det	_
+4	legendas	legenda	NOUN	_	Gender=Fem|Number=Plur	1	nmod	1:nmod:de	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	incluindo	incluir	VERB	_	VerbForm=Ger	4	acl	4:acl	_
+7	PSOL	PSOL	PROPN	_	_	6	obj	6:obj	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	PT	PT	PROPN	_	_	7	conj	6:obj|7:conj:e	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	PSB	PSB	PROPN	_	_	7	conj	6:obj|7:conj:e	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	PCdoB	PCdoB	PROPN	_	_	7	conj	6:obj|7:conj:e	SpaceAfter=No
+14	,	,	PUNCT	_	_	15	punct	15:punct	_
+15	Rede	Rede	PROPN	_	_	7	conj	6:obj|7:conj:e	_
+16	e	e	CCONJ	_	_	20	cc	20:cc	_
+17	até	até	ADV	_	_	20	advmod	20:advmod	_
+18	mesmo	mesmo	ADV	_	_	20	advmod	20:advmod	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	DEM	DEM	PROPN	_	_	7	conj	6:obj|7:conj:e	SpaceAfter=No
+21	,	,	PUNCT	_	_	6	punct	6:punct	_
+22-23	uniram-se	_	_	_	_	_	_	_	_
+22	uniram	unir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+23	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	22	expl	22:expl	_
+24	em	em	ADP	_	_	26	case	26:case	_
+25	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	ato	ato	NOUN	_	Gender=Masc|Number=Sing	22	obl	22:obl:em	_
+27-28	na	_	_	_	_	_	_	_	_
+27	em	em	ADP	_	_	29	case	29:case	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	Câmara	Câmara	PROPN	_	_	26	nmod	26:nmod:em	_
+30-31	dos	_	_	_	_	_	_	_	_
+30	de	de	ADP	_	_	32	case	32:case	_
+31	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	det	32:det	_
+32	Deputados	Deputados	PROPN	_	_	29	flat:name	29:flat:name	SpaceAfter=No
+33	,	,	PUNCT	_	_	34	punct	34:punct	_
+34	carregando	carregar	VERB	_	VerbForm=Ger	22	advcl	22:advcl	_
+35	faixas	faixa	NOUN	_	Number=Plur	34	obj	34:obj	_
+36	pretas	preto	ADJ	_	Gender=Fem|Number=Plur	35	amod	35:amod	_
+37	e	e	CCONJ	_	_	38	cc	38:cc	_
+38	girassóis	girassói	NOUN	_	Gender=Masc|Number=Plur	35	conj	34:obj|35:conj:e	SpaceAfter=No
+39	,	,	PUNCT	_	_	40	punct	40:punct	_
+40	clamando	clamar	VERB	_	VerbForm=Ger	34	conj	22:advcl|34:conj:e	_
+41	por	por	ADP	_	_	42	case	42:case	_
+42	justiça	justiça	NOUN	_	Gender=Fem|Number=Sing	40	obl	40:obl:por	_
+43	e	e	CCONJ	_	_	44	cc	44:cc	_
+44	exigindo	exigir	VERB	_	VerbForm=Ger	34	conj	22:advcl|34:conj:e	_
+45	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	46:det	_
+46	verdade	verdade	NOUN	_	Gender=Fem|Number=Sing	44	obj	44:obj	SpaceAfter=No
+47	.	.	PUNCT	_	_	22	punct	22:punct	_
+
+# sent_id = S0013
+# text = A sessão solene foi comandada pelo presidente da Câmara, Rodrigo Maia, que se mostrou abalado com as recentes revelações.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	sessão	sessão	NOUN	_	Gender=Fem|Number=Sing	5	nsubj:pass	5:nsubj:pass	_
+3	solene	solene	ADJ	_	Number=Sing	2	amod	2:amod	_
+4	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	aux:pass	5:aux:pass	_
+5	comandada	comandar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+6-7	pelo	_	_	_	_	_	_	_	_
+6	por	por	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	presidente	presidente	NOUN	_	Number=Sing	5	obl:agent	5:obl:agent|18:nsubj|19:nsubj	_
+9-10	da	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	Câmara	Câmara	PROPN	_	_	8	nmod	8:nmod:de	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	Rodrigo	Rodrigo	PROPN	_	_	8	appos	8:appos	_
+14	Maia	Maia	PROPN	_	_	13	flat:name	13:flat:name	SpaceAfter=No
+15	,	,	PUNCT	_	_	13	punct	13:punct	_
+16	que	que	PRON	_	PronType=Rel	18	nsubj	8:ref	_
+17	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	18	expl	18:expl	_
+18	mostrou	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	acl:relcl	8:acl:relcl	_
+19	abalado	abalado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	18	xcomp	18:xcomp	_
+20	com	com	ADP	_	_	23	case	23:case	_
+21	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	23:det	_
+22	recentes	recente	ADJ	_	Number=Plur	23	amod	23:amod	_
+23	revelações	revelação	NOUN	_	Gender=Fem|Number=Plur	19	obl	19:obl:com	SpaceAfter=No
+24	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0015
+# text = A deputada Luiza Erundina afirmou que "a voz de Marielle ecoará como um grito de liberdade, desmascarando os corruptos".
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	deputada	deputado	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+3	Luiza	Luiza	PROPN	_	_	2	nmod	2:nmod	_
+4	Erundina	Erundina	PROPN	_	_	3	flat:name	3:flat:name	_
+5	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	que	que	SCONJ	_	_	12	mark	12:mark	_
+7	"	"	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	voz	voz	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	12:nsubj	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	Marielle	Marielle	PROPN	_	_	9	nmod	9:nmod:de	_
+12	ecoará	ecoar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	5	ccomp	5:ccomp	_
+13	como	como	ADP	_	_	15	case	15:case	_
+14	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	grito	grito	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:como	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	liberdade	liberdade	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:de	SpaceAfter=No
+18	,	,	PUNCT	_	_	19	punct	19:punct	_
+19	desmascarando	desmascarar	VERB	_	VerbForm=Ger	12	advcl	12:advcl	_
+20	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	21:det	_
+21	corruptos	corrupto	NOUN	_	Gender=Masc|Number=Plur	19	obj	19:obj	SpaceAfter=No
+22	"	"	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+23	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0017
+# text = O deputado Arlindo Chinaglia pediu a Rodrigo Maia celeridade na votação de um projeto de lei contra o abuso de autoridade, sugerindo que agentes do Estado poderiam estar envolvidos.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+3	Arlindo	Arlindo	PROPN	_	_	2	nmod	2:nmod	_
+4	Chinaglia	Chinaglia	PROPN	_	_	3	flat:name	3:flat:name	_
+5	pediu	pedir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	a	a	ADP	_	_	7	case	7:case	_
+7	Rodrigo	Rodrigo	PROPN	_	_	5	obl	5:obl:a	_
+8	Maia	Maia	PROPN	_	_	7	flat:name	7:flat:name	_
+9	celeridade	celeridade	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+10-11	na	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	votação	votação	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:em	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:de	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	lei	lei	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:de	_
+18	contra	contra	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	abuso	abuso	NOUN	_	Gender=Masc|Number=Sing	15	nmod	15:nmod:contra	_
+21	de	de	ADP	_	_	22	case	22:case	_
+22	autoridade	autoridade	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:de	SpaceAfter=No
+23	,	,	PUNCT	_	_	24	punct	24:punct	_
+24	sugerindo	sugerir	VERB	_	VerbForm=Ger	5	advcl	5:advcl	_
+25	que	que	SCONJ	_	_	30	mark	30:mark	_
+26	agentes	agente	NOUN	_	Number=Plur	30	nsubj	30:nsubj|32:nsubj	_
+27-28	do	_	_	_	_	_	_	_	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	29:det	_
+29	Estado	Estado	PROPN	_	_	26	nmod	26:nmod:de	_
+30	poderiam	poder	VERB	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	24	ccomp	24:ccomp	_
+31	estar	estar	AUX	_	VerbForm=Inf	32	cop	32:cop	_
+32	envolvidos	envolvido	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	30	xcomp	30:xcomp	SpaceAfter=No
+33	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0019
+# text = Júlio Delgado, líder do PSB, questionou: A quem interessa a execução de Marielle?
+1	Júlio	Júlio	PROPN	_	_	9	nsubj	9:nsubj	_
+2	Delgado	Delgado	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	líder	líder	NOUN	_	Gender=Masc|Number=Sing	1	appos	1:appos	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	PSB	PSB	PROPN	_	_	4	nmod	4:nmod:de	SpaceAfter=No
+8	,	,	PUNCT	_	_	4	punct	4:punct	_
+9	questionou	questionar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+10	:	:	PUNCT	_	_	13	punct	13:punct	_
+11	A	a	ADP	_	_	12	case	12:case	_
+12	quem	quem	PRON	_	PronType=Int	13	obl	13:obl:a	_
+13	interessa	interessar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	ccomp:speech	9:ccomp:speech	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	execução	execução	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	13:nsubj	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	Marielle	Marielle	PROPN	_	_	15	nmod	15:nmod:de	SpaceAfter=No
+18	?	?	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0021
+# text = Exigimos respostas já!
+1	Exigimos	exigir	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	respostas	resposta	NOUN	_	Gender=Fem|Number=Plur	1	obj	1:obj	_
+3	já	já	ADV	_	_	1	advmod	1:advmod	SpaceAfter=No
+4	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0023
+# text = A deputada Jô Moraes destacou a "indignação nacional" e Jean Wyllys entregou a Maia um pedido para criação de uma comissão externa, enfatizando: "As ideias de Marielle são à prova de bala".
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	deputada	deputado	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+3	Jô	Jô	PROPN	_	_	2	nmod	2:nmod	_
+4	Moraes	Moraes	PROPN	_	_	3	flat:name	3:flat:name	_
+5	destacou	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+7	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	indignação	indignação	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+9	nacional	nacional	ADJ	_	Number=Sing	8	amod	8:amod	SpaceAfter=No
+10	"	"	PUNCT	_	_	8	punct	8:punct	_
+11	e	e	CCONJ	_	_	14	cc	14:cc	_
+12	Jean	Jean	PROPN	_	_	14	nsubj	14:nsubj	_
+13	Wyllys	Wyllys	PROPN	_	_	12	flat:name	12:flat:name	_
+14	entregou	entregar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	conj	5:conj:e	_
+15	a	a	ADP	_	_	16	case	16:case	_
+16	Maia	Maia	PROPN	_	_	14	obl	14:obl:a	_
+17	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	pedido	pedido	NOUN	_	Gender=Masc|Number=Sing	14	obj	14:obj	_
+19	para	para	ADP	_	_	20	case	20:case	_
+20	criação	criação	NOUN	_	Gender=Fem|Number=Sing	18	nmod	18:nmod:para	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	comissão	comissão	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:de	_
+24	externa	externo	ADJ	_	Gender=Fem|Number=Sing	23	amod	23:amod	SpaceAfter=No
+25	,	,	PUNCT	_	_	26	punct	26:punct	_
+26	enfatizando	enfatizar	VERB	_	VerbForm=Ger	5	advcl	5:advcl|14:advcl	SpaceAfter=No
+27	:	:	PUNCT	_	_	36	punct	36:punct	_
+28	"	"	PUNCT	_	_	36	punct	36:punct	SpaceAfter=No
+29	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	30	det	30:det	_
+30	ideias	ideia	NOUN	_	Gender=Fem|Number=Plur	36	nsubj	36:nsubj	_
+31	de	de	ADP	_	_	32	case	32:case	_
+32	Marielle	Marielle	PROPN	_	_	30	nmod	30:nmod:de	_
+33	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	36	cop	36:cop	_
+34-35	à	_	_	_	_	_	_	_	_
+34	a	a	ADP	_	_	36	case	36:case	_
+35	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	36:det	_
+36	prova	prova	NOUN	_	Gender=Fem|Number=Sing	26	ccomp:speech	26:ccomp:speech	_
+37	de	de	ADP	_	_	38	case	38:case	_
+38	bala	bala	NOUN	_	Gender=Fem|Number=Sing	36	nmod	36:nmod:de	SpaceAfter=No
+39	"	"	PUNCT	_	_	36	punct	36:punct	SpaceAfter=No
+40	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0025
+# text = Professora Dorinha Seabra Rezende reforçou a necessidade de a Câmara monitorar de perto as investigações, diante das graves acusações.
+1	Professora	professor	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+2	Dorinha	Dorinha	PROPN	_	_	1	nmod	1:nmod	_
+3	Seabra	Seabra	PROPN	_	_	2	flat:name	2:flat:name	_
+4	Rezende	Rezende	PROPN	_	_	2	flat:name	2:flat:name	_
+5	reforçou	reforçar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	necessidade	necessidade	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+8	de	de	ADP	_	_	11	mark	11:mark	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	Câmara	Câmara	PROPN	_	_	11	nsubj	11:nsubj	_
+11	monitorar	monitorar	VERB	_	VerbForm=Inf	7	acl	7:acl:de	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	perto	perto	ADV	_	_	11	advmod	11:advmod	_
+14	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	15:det	_
+15	investigações	investigação	NOUN	_	Gender=Fem|Number=Plur	11	obj	11:obj	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	diante	diante	ADV	_	_	11	advmod	11:advmod	_
+18-19	das	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	21	case	21:case	_
+19	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	21	det	21:det	_
+20	graves	grave	ADJ	_	Number=Plur	21	amod	21:amod	_
+21	acusações	acusação	NOUN	_	Gender=Fem|Number=Plur	17	obl	17:obl:de	SpaceAfter=No
+22	.	.	PUNCT	_	_	5	punct	5:punct	_

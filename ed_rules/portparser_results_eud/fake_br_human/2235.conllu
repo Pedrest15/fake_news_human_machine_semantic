@@ -1,0 +1,112 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = A dificuldade de Dilma em reconhecer figuras geométricas.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	dificuldade	dificuldade	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Dilma	Dilma	PROPN	_	_	2	nmod	2:nmod:de	_
+5	em	em	ADP	_	_	6	mark	6:mark	_
+6	reconhecer	reconhecer	VERB	_	VerbForm=Inf	2	acl	2:acl:em	_
+7	figuras	figura	NOUN	_	Gender=Fem|Number=Plur	6	obj	6:obj	_
+8	geométricas	geométrico	ADJ	_	Gender=Fem|Number=Plur	7	amod	7:amod	SpaceAfter=No
+9	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Ronaldo Caiado tinha acabado de mostrar um gráfico durante sua fala na tribuna.
+1	Ronaldo	Ronaldo	PROPN	_	_	4	nsubj	4:nsubj|6:nsubj	_
+2	Caiado	Caiado	PROPN	_	_	1	flat:name	1:flat:name	_
+3	tinha	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	aux	4:aux	_
+4	acabado	acabar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+5	de	de	ADP	_	_	6	mark	6:mark	_
+6	mostrar	mostrar	VERB	_	VerbForm=Inf	4	xcomp	4:xcomp	_
+7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	gráfico	gráfico	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+9	durante	durante	ADP	_	_	11	case	11:case	_
+10	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	11	det	11:det	_
+11	fala	fala	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:durante	_
+12-13	na	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	tribuna	tribuna	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:em	SpaceAfter=No
+15	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0005
+# text = Ofendida com a fala do senador, Dilma não deixou barato e também quis mostrar seu gráfico.
+1	Ofendida	ofendido	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	11	advcl	11:advcl|15:advcl	_
+2	com	com	ADP	_	_	4	case	4:case	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	fala	fala	NOUN	_	Gender=Fem|Number=Sing	1	obl	1:obl:com	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	senador	senador	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:de	SpaceAfter=No
+8	,	,	PUNCT	_	_	1	punct	1:punct	_
+9	Dilma	Dilma	PROPN	_	_	11	nsubj	11:nsubj|15:nsubj|16:nsubj	_
+10	não	não	ADV	_	_	11	advmod	11:advmod	_
+11	deixou	deixar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	barato	barato	ADJ	_	Gender=Masc|Number=Sing	11	xcomp	11:xcomp	_
+13	e	e	CCONJ	_	_	15	cc	15:cc	_
+14	também	também	ADV	_	_	15	advmod	15:advmod	_
+15	quis	querer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	conj	11:conj:e	_
+16	mostrar	mostrar	VERB	_	VerbForm=Inf	15	xcomp	15:xcomp	_
+17	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	18	det	18:det	_
+18	gráfico	gráfico	NOUN	_	Gender=Masc|Number=Sing	16	obj	16:obj	SpaceAfter=No
+19	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0007
+# text = Ao tentar explicar uma área do gráfico, Dilma se confundiu!
+1-2	Ao	_	_	_	_	_	_	_	_
+1	A	a	ADP	_	ExtPos=SCONJ	3	mark	3:mark	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	1:fixed	_
+3	tentar	tentar	VERB	_	VerbForm=Inf	13	advcl	13:advcl:a_o	_
+4	explicar	explicar	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	área	área	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	gráfico	gráfico	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de	SpaceAfter=No
+10	,	,	PUNCT	_	_	3	punct	3:punct	_
+11	Dilma	Dilma	PROPN	_	_	13	nsubj	13:nsubj	_
+12	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	13	expl	13:expl	_
+13	confundiu	confundir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+14	!	!	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0009
+# text = Foi difícil para a presidenta saber a diferença entre um quadrado e um retângulo.
+1	Foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	cop	2:cop	_
+2	difícil	difícil	ADJ	_	Number=Sing	0	root	0:root	_
+3	para	para	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	presidenta	presidenta	NOUN	_	Gender=Fem|Number=Sing	2	obl	2:obl:para	_
+6	saber	saber	VERB	_	VerbForm=Inf	2	csubj	2:csubj	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	diferença	diferença	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+9	entre	entre	ADP	_	_	11	case	11:case	_
+10	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	quadrado	quadrado	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:entre	_
+12	e	e	CCONJ	_	_	14	cc	14:cc	_
+13	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	retângulo	retângulo	NOUN	_	Gender=Masc|Number=Sing	11	conj	8:nmod:entre|11:conj:e	SpaceAfter=No
+15	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0011
+# text = *** preste atenção aos 50 segundos do vídeo ***.
+1	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+2	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+3	*	*	PUNCT	_	_	1	punct	1:punct	_
+4	preste	prestar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+5	atenção	atenção	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+6-7	aos	_	_	_	_	_	_	_	_
+6	a	a	ADP	_	_	9	case	9:case	_
+7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	9:det	_
+8	50	50	NUM	_	NumType=Card	9	nummod	9:nummod	_
+9	segundos	segundo	NOUN	_	Gender=Masc|Number=Plur	5	nmod	5:nmod:a	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:de	_
+13	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+14	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+15	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+16	.	.	PUNCT	_	_	4	punct	4:punct	_

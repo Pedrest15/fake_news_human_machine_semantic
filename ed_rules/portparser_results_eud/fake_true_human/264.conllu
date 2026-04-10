@@ -1,0 +1,75 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = neta de elvis presley canta em homenagem aos 8 anos do avô neta de elvis presley homenageando o avô que faria 8 anos., linda demais!
+1	neta	neto	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	elvis	elvis	NOUN	_	_	1	nmod	1:nmod:de	_
+4	presley	presley	PROPN	_	_	3	nmod	3:nmod	_
+5	canta	cantar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	em	em	ADP	_	_	7	case	7:case	_
+7	homenagem	homenagem	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:em	_
+8-9	aos	_	_	_	_	_	_	_	_
+8	a	a	ADP	_	_	11	case	11:case	_
+9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	11:det	_
+10	8	8	NUM	_	NumType=Card	11	nummod	11:nummod	_
+11	anos	ano	NOUN	_	Gender=Masc|Number=Plur	7	nmod	7:nmod:a	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	avô	avô	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:de	_
+15	neta	neto	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	elvis	elvis	NOUN	_	_	15	nmod	15:nmod:de	_
+18	presley	presley	PROPN	_	_	17	flat:name	17:flat:name	_
+19	homenageando	homenagear	VERB	_	VerbForm=Ger	15	acl	15:acl	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	avô	avô	NOUN	_	Gender=Masc|Number=Sing	19	obj	19:obj|23:nsubj	_
+22	que	que	PRON	_	PronType=Rel	23	nsubj	21:ref	_
+23	faria	fazer	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	21	acl:relcl	21:acl:relcl	_
+24	8	8	NUM	_	NumType=Card	25	nummod	25:nummod	_
+25	anos	ano	NOUN	_	Gender=Masc|Number=Plur	23	obj	23:obj	SpaceAfter=No
+26	.	.	PUNCT	_	_	28	punct	28:punct	SpaceAfter=No
+27	,	,	PUNCT	_	_	28	punct	28:punct	_
+28	linda	lindo	ADJ	_	Gender=Fem|Number=Sing	5	parataxis	5:parataxis	_
+29	demais	demais	ADV	_	_	28	advmod	28:advmod	SpaceAfter=No
+30	!	!	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0003
+# text = esta é michelly presley, neta do pioneiro do rock mundial élvis presley que está completando 4 anos de morto e, que, se vivo estivesse, estaria com 82 anos.
+1	esta	este	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	3	nsubj	3:nsubj	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+3	michelly	michelly	PROPN	_	_	0	root	0:root	_
+4	presley	presley	X	_	Foreign=Yes	3	flat:name	3:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	neta	neto	NOUN	_	Gender=Fem|Number=Sing	3	appos	3:appos|18:nsubj|34:nsubj	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	pioneiro	pioneiro	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	rock	rock	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:de	_
+13	mundial	mundial	ADJ	_	Number=Sing	12	amod	12:amod	_
+14	élvis	élvis	PROPN	_	_	9	nmod	9:nmod	_
+15	presley	presley	X	_	_	14	flat:name	14:flat:name	_
+16	que	que	PRON	_	PronType=Rel	18	nsubj	6:ref	_
+17	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux	18:aux	_
+18	completando	completar	VERB	_	VerbForm=Ger	6	acl:relcl	6:acl:relcl	_
+19	4	4	NUM	_	NumType=Card	20	nummod	20:nummod	_
+20	anos	ano	NOUN	_	Gender=Masc|Number=Plur	18	obj	18:obj	_
+21	de	de	ADP	_	_	22	case	22:case	_
+22	morto	morto	NOUN	_	Gender=Masc|Number=Sing	20	nmod	20:nmod:de	_
+23	e	e	CCONJ	_	_	34	cc	34:cc	SpaceAfter=No
+24	,	,	PUNCT	_	_	28	punct	28:punct	_
+25	que	que	PRON	_	PronType=Rel	34	nsubj	6:ref	SpaceAfter=No
+26	,	,	PUNCT	_	_	28	punct	28:punct	_
+27	se	se	SCONJ	_	_	28	mark	28:mark	_
+28	vivo	vivo	ADJ	_	Gender=Masc|Number=Sing	34	advcl	34:advcl:se	_
+29	estivesse	estar	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	28	cop	28:cop	SpaceAfter=No
+30	,	,	PUNCT	_	_	28	punct	28:punct	_
+31	estaria	estar	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	34	cop	34:cop	_
+32	com	com	ADP	_	_	34	case	34:case	_
+33	82	82	NUM	_	NumType=Card	34	nummod	34:nummod	_
+34	anos	ano	NOUN	_	Gender=Masc|Number=Plur	18	advcl	18:advcl:com	SpaceAfter=No
+35	.	.	PUNCT	_	_	3	punct	3:punct	_

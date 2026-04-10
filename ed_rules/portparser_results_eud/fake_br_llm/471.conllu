@@ -1,0 +1,574 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Famoso Escritor Acusado de Tortura: "É uma conspiração para destruir minha carreira"!
+1	Famoso	famoso	ADJ	_	Gender=Masc|Number=Sing	2	amod	2:amod	_
+2	Escritor	Escritor	PROPN	_	_	10	dep	10:dep	_
+3	Acusado	Acusado	PROPN	_	_	2	flat:name	2:flat:name	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	Tortura	Tortura	PROPN	_	_	2	flat:name	2:flat:name	SpaceAfter=No
+6	:	:	PUNCT	_	_	10	punct	10:punct	_
+7	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+8	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_
+9	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	conspiração	conspiração	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+11	para	para	ADP	_	_	12	mark	12:mark	_
+12	destruir	destruir	VERB	_	VerbForm=Inf	10	acl	10:acl:para	_
+13	minha	meu	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	14	det	14:det	_
+14	carreira	carreira	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	SpaceAfter=No
+15	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+16	!	!	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0003
+# text = Joselito Oliveira Rocha, renomado escritor de 40 anos, nega veementemente as acusações de violência doméstica feitas pela filha Gloria, de 17 anos.
+1	Joselito	Joselito	PROPN	_	_	11	nsubj	11:nsubj	_
+2	Oliveira	Oliveira	PROPN	_	_	1	flat:name	1:flat:name	_
+3	Rocha	Rocha	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+4	,	,	PUNCT	_	_	6	punct	6:punct	_
+5	renomado	renomado	ADJ	_	Gender=Masc|Number=Sing	6	amod	6:amod	_
+6	escritor	escritor	NOUN	_	Gender=Masc|Number=Sing	1	appos	1:appos	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	40	40	NUM	_	NumType=Card	9	nummod	9:nummod	_
+9	anos	ano	NOUN	_	Gender=Masc|Number=Plur	6	nmod	6:nmod:de	SpaceAfter=No
+10	,	,	PUNCT	_	_	6	punct	6:punct	_
+11	nega	negar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+12	veementemente	veementemente	ADV	_	_	11	advmod	11:advmod	_
+13	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	14:det	_
+14	acusações	acusação	NOUN	_	Gender=Fem|Number=Plur	11	obj	11:obj	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	violência	violência	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:de	_
+17	doméstica	doméstico	ADJ	_	Gender=Fem|Number=Sing	16	amod	16:amod	_
+18	feitas	fazer	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	14	acl	14:acl	_
+19-20	pela	_	_	_	_	_	_	_	_
+19	por	por	ADP	_	_	21	case	21:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	filha	filho	NOUN	_	Gender=Fem|Number=Sing	18	obl:agent	18:obl:agent	_
+22	Gloria	Gloria	PROPN	_	_	21	nmod	21:nmod	SpaceAfter=No
+23	,	,	PUNCT	_	_	26	punct	26:punct	_
+24	de	de	ADP	_	_	26	case	26:case	_
+25	17	17	NUM	_	NumType=Card	26	nummod	26:nummod	_
+26	anos	ano	NOUN	_	Gender=Masc|Number=Plur	21	nmod	21:nmod:de	SpaceAfter=No
+27	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0005
+# text = Em uma entrevista emocionada, ele afirmou que as alegações são parte de um complô orquestrado pela irmã de Gloria, Erika Cristina Carballo, de 23 anos, e seu marido, para arruinar sua reputação e carreira literária.
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	entrevista	entrevista	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:em	_
+4	emocionada	emocionado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	3	amod	3:amod	SpaceAfter=No
+5	,	,	PUNCT	_	_	3	punct	3:punct	_
+6	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	nsubj	7:nsubj	_
+7	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	que	que	SCONJ	_	_	12	mark	12:mark	_
+9	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	10:det	_
+10	alegações	alegação	NOUN	_	Gender=Fem|Number=Plur	12	nsubj	12:nsubj	_
+11	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	cop	12:cop	_
+12	parte	parte	NOUN	_	Gender=Fem|Number=Sing	7	ccomp	7:ccomp	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	complô	complô	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:de	_
+16	orquestrado	orquestrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	15	acl	15:acl	_
+17-18	pela	_	_	_	_	_	_	_	_
+17	por	por	ADP	_	_	19	case	19:case|33:case	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	irmã	irmão	NOUN	_	Gender=Fem|Number=Sing	16	obl:agent	16:obl:agent	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	Gloria	Gloria	PROPN	_	_	19	nmod	19:nmod:de	SpaceAfter=No
+22	,	,	PUNCT	_	_	23	punct	23:punct	_
+23	Erika	Erika	PROPN	_	_	19	appos	19:appos	_
+24	Cristina	Cristina	PROPN	_	_	23	flat:name	23:flat:name	_
+25	Carballo	Carballo	PROPN	_	_	23	flat:name	23:flat:name	SpaceAfter=No
+26	,	,	PUNCT	_	_	29	punct	29:punct	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	23	23	NUM	_	NumType=Card	29	nummod	29:nummod	_
+29	anos	ano	NOUN	_	Gender=Masc|Number=Plur	19	nmod	19:nmod:de	SpaceAfter=No
+30	,	,	PUNCT	_	_	29	punct	29:punct	_
+31	e	e	CCONJ	_	_	33	cc	33:cc	_
+32	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	33	det	33:det	_
+33	marido	marido	NOUN	_	Gender=Masc|Number=Sing	19	conj	16:obl:agent|19:conj:e	SpaceAfter=No
+34	,	,	PUNCT	_	_	36	punct	36:punct	_
+35	para	para	ADP	_	_	36	mark	36:mark	_
+36	arruinar	arruinar	VERB	_	VerbForm=Inf	16	advcl	16:advcl:para	_
+37	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	38	det	38:det	_
+38	reputação	reputação	NOUN	_	Gender=Fem|Number=Sing	36	obj	36:obj	_
+39	e	e	CCONJ	_	_	40	cc	40:cc	_
+40	carreira	carreira	NOUN	_	Gender=Fem|Number=Sing	38	conj	36:obj|38:conj:e	_
+41	literária	literário	ADJ	_	Gender=Fem|Number=Sing	40	amod	40:amod	SpaceAfter=No
+42	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0007
+# text = Isso é uma farsa!
+1	Isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	4	nsubj	4:nsubj	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+3	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	farsa	farsa	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+5	!	!	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0009
+# text = Minha filha nunca sofreu um arranhão sequer.
+1	Minha	meu	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	det	2:det	_
+2	filha	filho	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+3	nunca	nunca	ADV	_	_	4	advmod	4:advmod	_
+4	sofreu	sofrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	um	um	NUM	_	Gender=Masc|NumType=Card	6	nummod	6:nummod	_
+6	arranhão	arranhão	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7	sequer	sequer	ADV	_	_	6	advmod	6:advmod	SpaceAfter=No
+8	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0011
+# text = Eu corrigia com amor, sem agressões.
+1	Eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	2:nsubj	_
+2	corrigia	corrigir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+3	com	com	ADP	_	_	4	case	4:case	_
+4	amor	amor	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:com	SpaceAfter=No
+5	,	,	PUNCT	_	_	7	punct	7:punct	_
+6	sem	sem	ADP	_	_	7	case	7:case	_
+7	agressões	agressão	NOUN	_	Gender=Fem|Number=Plur	4	conj	2:obl:sem|4:conj	SpaceAfter=No
+8	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0013
+# text = Erika e seu marido estão manipulando Gloria, usando um incidente antigo para vingança, declarou Joselito.
+1	Erika	Erika	PROPN	_	_	6	nsubj	6:nsubj	_
+2	e	e	CCONJ	_	_	4	cc	4:cc	_
+3	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	4	det	4:det	_
+4	marido	marido	NOUN	_	Gender=Masc|Number=Sing	1	conj	1:conj:e|6:nsubj	_
+5	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	aux	6:aux	_
+6	manipulando	manipular	VERB	_	VerbForm=Ger	16	ccomp:speech	16:ccomp:speech	_
+7	Gloria	Gloria	PROPN	_	_	6	obj	6:obj	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	usando	usar	VERB	_	VerbForm=Ger	6	advcl	6:advcl	_
+10	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	incidente	incidente	NOUN	_	Number=Sing	9	obj	9:obj	_
+12	antigo	antigo	ADJ	_	Gender=Masc|Number=Sing	11	amod	11:amod	_
+13	para	para	ADP	_	_	14	case	14:case	_
+14	vingança	vingança	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:para	SpaceAfter=No
+15	,	,	PUNCT	_	_	6	punct	6:punct	_
+16	declarou	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+17	Joselito	Joselito	PROPN	_	_	16	nsubj	16:nsubj	SpaceAfter=No
+18	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0015
+# text = O escritor, que possui nove pós-graduações, enfatizou que as "regras" em casa são simples e envolvem horários e tarefas domésticas.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	escritor	escritor	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	5:nsubj|9:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	5	punct	5:punct	_
+4	que	que	PRON	_	PronType=Rel	5	nsubj	2:ref	_
+5	possui	possuir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+6	nove	nove	NUM	_	NumType=Card	7	nummod	7:nummod	_
+7	pós-graduações	pós-graduação	NOUN	_	Gender=Fem|Number=Plur	5	obj	5:obj	SpaceAfter=No
+8	,	,	PUNCT	_	_	5	punct	5:punct	_
+9	enfatizou	enfatizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	que	que	SCONJ	_	_	18	mark	18:mark|20:mark	_
+11	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	13:det	_
+12	"	"	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+13	regras	regra	NOUN	_	Gender=Fem|Number=Plur	18	nsubj	18:nsubj|20:nsubj	SpaceAfter=No
+14	"	"	PUNCT	_	_	13	punct	13:punct	_
+15	em	em	ADP	_	_	16	case	16:case	_
+16	casa	casa	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:em	_
+17	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	cop	18:cop	_
+18	simples	simples	ADJ	_	_	9	ccomp	9:ccomp	_
+19	e	e	CCONJ	_	_	20	cc	20:cc	_
+20	envolvem	envolver	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	conj	9:ccomp|18:conj:e	_
+21	horários	horário	NOUN	_	Gender=Masc|Number=Plur	20	obj	20:obj	_
+22	e	e	CCONJ	_	_	23	cc	23:cc	_
+23	tarefas	tarefa	NOUN	_	Gender=Fem|Number=Plur	21	conj	20:obj|21:conj:e	_
+24	domésticas	doméstico	ADJ	_	Gender=Fem|Number=Plur	23	amod	23:amod	SpaceAfter=No
+25	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0017
+# text = A nossa família é estruturada e amorosa.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+2	nossa	nosso	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	det	3:det	_
+3	família	família	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj|7:nsubj	_
+4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop|7:cop	_
+5	estruturada	estruturar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	0	root	0:root	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	amorosa	amoroso	ADJ	_	Gender=Fem|Number=Sing	5	conj	5:conj:e	SpaceAfter=No
+8	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0019
+# text = Essas acusações são absurdas e motivadas por uma agenda oculta, afirmou, enquanto sua esposa, Maria José de Souza Franklin, de 44 anos, chorava ao lado.
+1	Essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	2	det	2:det	_
+2	acusações	acusação	NOUN	_	Gender=Fem|Number=Plur	4	nsubj	4:nsubj|6:nsubj:pass	_
+3	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop|6:cop	_
+4	absurdas	absurdo	ADJ	_	Gender=Fem|Number=Plur	12	ccomp:speech	12:ccomp:speech	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	motivadas	motivar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	4	conj	4:conj:e|12:ccomp:speech	_
+7	por	por	ADP	_	_	9	case	9:case	_
+8	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	agenda	agenda	NOUN	_	Gender=Fem|Number=Sing	6	obl:agent	6:obl:agent	_
+10	oculta	oculto	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	9	amod	9:amod	SpaceAfter=No
+11	,	,	PUNCT	_	_	4	punct	4:punct	_
+12	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+13	,	,	PUNCT	_	_	28	punct	28:punct	_
+14	enquanto	enquanto	SCONJ	_	_	28	mark	28:mark	_
+15	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	16	det	16:det	_
+16	esposa	esposo	NOUN	_	Gender=Fem|Number=Sing	28	nsubj	28:nsubj	SpaceAfter=No
+17	,	,	PUNCT	_	_	18	punct	18:punct	_
+18	Maria	Maria	PROPN	_	_	16	appos	16:appos	_
+19	José	José	PROPN	_	_	18	flat:name	18:flat:name	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	Souza	Souza	PROPN	_	_	18	flat:name	18:flat:name	_
+22	Franklin	Franklin	PROPN	_	_	18	flat:name	18:flat:name	SpaceAfter=No
+23	,	,	PUNCT	_	_	26	punct	26:punct	_
+24	de	de	ADP	_	_	26	case	26:case	_
+25	44	44	NUM	_	NumType=Card	26	nummod	26:nummod	_
+26	anos	ano	NOUN	_	Gender=Masc|Number=Plur	18	nmod	18:nmod:de	SpaceAfter=No
+27	,	,	PUNCT	_	_	26	punct	26:punct	_
+28	chorava	chorar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	12	ccomp:speech	12:ccomp:speech	_
+29-30	ao	_	_	_	_	_	_	_	_
+29	a	a	ADP	_	_	31	case	31:case	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	lado	lado	NOUN	_	Gender=Masc|Number=Sing	28	obl	28:obl:a	SpaceAfter=No
+32	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0021
+# text = Maria José reforçou que nunca houve agressões e que o erro foi "mimar demais" a filha.
+1	Maria	Maria	PROPN	_	_	3	nsubj	3:nsubj	_
+2	José	José	PROPN	_	_	1	flat:name	1:flat:name	_
+3	reforçou	reforçar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	6	mark	6:mark	_
+5	nunca	nunca	ADV	_	_	6	advmod	6:advmod	_
+6	houve	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	ccomp	3:ccomp	_
+7	agressões	agressão	NOUN	_	Gender=Fem|Number=Plur	6	obj	6:obj	_
+8	e	e	CCONJ	_	_	14	cc	14:cc	_
+9	que	que	SCONJ	_	_	14	mark	14:mark	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	erro	erro	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	14:nsubj	_
+12	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	cop	14:cop	_
+13	"	"	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+14	mimar	mimar	VERB	_	VerbForm=Inf	6	conj	3:ccomp|6:conj:e	_
+15	demais	demais	ADV	_	_	14	advmod	14:advmod	SpaceAfter=No
+16	"	"	PUNCT	_	_	14	punct	14:punct	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	filha	filho	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	SpaceAfter=No
+19	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0023
+# text = Em meio às acusações, Joselito revelou um detalhe surpreendente: Gloria foi encontrada com vídeos de conteúdo impróprio no celular.
+1	Em	em	ADP	_	ExtPos=ADP	5	case	5:case	_
+2	meio	meio	NOUN	_	Gender=Masc|Number=Sing	1	fixed	1:fixed	_
+3-4	às	_	_	_	_	_	_	_	_
+3	a	a	ADP	_	_	1	fixed	1:fixed	_
+4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	5:det	_
+5	acusações	acusação	NOUN	_	Gender=Fem|Number=Plur	8	obl	8:obl:em_meio_a	SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	5:punct	_
+7	Joselito	Joselito	PROPN	_	_	8	nsubj	8:nsubj	_
+8	revelou	revelar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	detalhe	detalhe	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	_
+11	surpreendente	surpreendente	ADJ	_	Number=Sing	10	amod	10:amod	SpaceAfter=No
+12	:	:	PUNCT	_	_	15	punct	15:punct	_
+13	Gloria	Gloria	PROPN	_	_	15	nsubj:pass	15:nsubj:pass	_
+14	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	aux:pass	15:aux:pass	_
+15	encontrada	encontrar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	8	parataxis	8:parataxis	_
+16	com	com	ADP	_	_	17	case	17:case	_
+17	vídeos	vídeo	NOUN	_	Gender=Masc|Number=Plur	15	obl	15:obl:com	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	conteúdo	conteúdo	NOUN	_	Gender=Masc|Number=Sing	17	nmod	17:nmod:de	_
+20	impróprio	impróprio	ADJ	_	Gender=Masc|Number=Sing	19	amod	19:amod	_
+21-22	no	_	_	_	_	_	_	_	_
+21	em	em	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	celular	celular	NOUN	_	Gender=Masc|Number=Sing	15	obl	15:obl:em	SpaceAfter=No
+24	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0025
+# text = Ela estava se envolvendo em atividades ilícitas e queria esconder a verdade.
+1	Ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	4	nsubj	4:nsubj|9:nsubj|10:nsubj	_
+2	estava	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	aux	4:aux	_
+3	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	4	expl	4:expl	_
+4	envolvendo	envolver	VERB	_	VerbForm=Ger	0	root	0:root	_
+5	em	em	ADP	_	_	6	case	6:case	_
+6	atividades	atividade	NOUN	_	Gender=Fem|Number=Plur	4	obl	4:obl:em	_
+7	ilícitas	ilícito	ADJ	_	Gender=Fem|Number=Plur	6	amod	6:amod	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	queria	querer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	conj	4:conj:e	_
+10	esconder	esconder	VERB	_	VerbForm=Inf	9	xcomp	9:xcomp	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	verdade	verdade	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	SpaceAfter=No
+13	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0027
+# text = A história do chicote é uma mentira total, não há nada disso aqui em casa.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	história	história	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	8:nsubj	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	chicote	chicote	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	_
+6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop	_
+7	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	mentira	mentira	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+9	total	total	ADJ	_	Number=Sing	8	amod	8:amod	SpaceAfter=No
+10	,	,	PUNCT	_	_	12	punct	12:punct	_
+11	não	não	ADV	_	_	12	advmod	12:advmod	_
+12	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	parataxis	8:parataxis	_
+13	nada	nada	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	12	obj	12:obj	_
+14-15	disso	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	13	nmod	13:nmod:de	_
+16	aqui	aqui	ADV	_	_	12	advmod	12:advmod	_
+17	em	em	ADP	_	_	18	case	18:case	_
+18	casa	casa	NOUN	_	Gender=Fem|Number=Sing	16	obl	16:obl:em	SpaceAfter=No
+19	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0029
+# text = Ericson Pereira Cavalcante, um dos jovens que vivem com o casal e vendem seus livros, corroborou a versão de Joselito, afirmando que as metas de venda são estabelecidas por ele próprio, sem qualquer tipo de coerção.
+1	Ericson	Ericson	PROPN	_	_	19	nsubj	19:nsubj	_
+2	Pereira	Pereira	PROPN	_	_	1	flat:name	1:flat:name	_
+3	Cavalcante	Cavalcante	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	um	um	NUM	_	Gender=Masc|NumType=Card	1	appos	1:appos	_
+6-7	dos	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	8:det	_
+8	jovens	jovem	NOUN	_	Number=Plur	5	nmod	5:nmod:de|10:nsubj|15:nsubj	_
+9	que	que	PRON	_	PronType=Rel	10	nsubj	8:ref	_
+10	vivem	viver	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	8:acl:relcl	_
+11	com	com	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	casal	casal	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:com	_
+14	e	e	CCONJ	_	_	15	cc	15:cc	_
+15	vendem	vender	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	conj	8:acl:relcl|10:conj:e	_
+16	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	17	det	17:det	_
+17	livros	livro	NOUN	_	Gender=Masc|Number=Plur	15	obj	15:obj	SpaceAfter=No
+18	,	,	PUNCT	_	_	5	punct	5:punct	_
+19	corroborou	corroborar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	versão	versão	NOUN	_	Gender=Fem|Number=Sing	19	obj	19:obj	_
+22	de	de	ADP	_	_	23	case	23:case	_
+23	Joselito	Joselito	PROPN	_	_	21	nmod	21:nmod:de	SpaceAfter=No
+24	,	,	PUNCT	_	_	25	punct	25:punct	_
+25	afirmando	afirmar	VERB	_	VerbForm=Ger	19	advcl	19:advcl	_
+26	que	que	SCONJ	_	_	32	mark	32:mark	_
+27	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	28	det	28:det	_
+28	metas	meta	NOUN	_	Gender=Fem|Number=Plur	32	nsubj:pass	32:nsubj:pass	_
+29	de	de	ADP	_	_	30	case	30:case	_
+30	venda	venda	NOUN	_	Gender=Fem|Number=Sing	28	nmod	28:nmod:de	_
+31	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	32	aux:pass	32:aux:pass	_
+32	estabelecidas	estabelecer	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	25	ccomp	25:ccomp	_
+33	por	por	ADP	_	_	34	case	34:case	_
+34	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	32	obl:agent	32:obl:agent	_
+35	próprio	próprio	DET	_	Gender=Masc|Number=Sing|PronType=Dem	34	det	34:det	SpaceAfter=No
+36	,	,	PUNCT	_	_	39	punct	39:punct	_
+37	sem	sem	ADP	_	_	39	case	39:case	_
+38	qualquer	qualquer	DET	_	Number=Sing|PronType=Ind	39	det	39:det	_
+39	tipo	tipo	NOUN	_	Gender=Masc|Number=Sing	32	obl	32:obl:sem	_
+40	de	de	ADP	_	_	41	case	41:case	_
+41	coerção	coerção	NOUN	_	Gender=Fem|Number=Sing	39	nmod	39:nmod:de	SpaceAfter=No
+42	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0031
+# text = Após o reencontro de Gloria com sua irmã Erika, as tensões aumentaram.
+1	Após	após	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	reencontro	reencontro	NOUN	_	Gender=Masc|Number=Sing	13	obl	13:obl:após	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	Gloria	Gloria	PROPN	_	_	3	nmod	3:nmod:de	_
+6	com	com	ADP	_	_	8	case	8:case	_
+7	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	8	det	8:det	_
+8	irmã	irmão	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:com	_
+9	Erika	Erika	PROPN	_	_	8	nmod	8:nmod	SpaceAfter=No
+10	,	,	PUNCT	_	_	3	punct	3:punct	_
+11	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	12:det	_
+12	tensões	tensão	NOUN	_	Gender=Fem|Number=Plur	13	nsubj	13:nsubj	_
+13	aumentaram	aumentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+14	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0033
+# text = Joselito alega ter sido ameaçado por um homem armado em sua própria casa e que, por isso, ele e Maria José fugiram para São Paulo, temendo por suas vidas.
+1	Joselito	Joselito	PROPN	_	_	2	nsubj	2:nsubj|5:nsubj:pass	_
+2	alega	alegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	ter	ter	AUX	_	VerbForm=Inf	5	aux	5:aux	_
+4	sido	ser	AUX	_	Gender=Masc|Number=Sing|VerbForm=Part	5	aux:pass	5:aux:pass	_
+5	ameaçado	ameaçar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	xcomp	2:xcomp	_
+6	por	por	ADP	_	_	8	case	8:case	_
+7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	homem	homem	NOUN	_	Gender=Masc|Number=Sing	5	obl:agent	5:obl:agent	_
+9	armado	armado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	8	amod	8:amod	_
+10	em	em	ADP	_	_	13	case	13:case	_
+11	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	13	det	13:det	_
+12	própria	próprio	ADJ	_	Gender=Fem|Number=Sing	13	amod	13:amod	_
+13	casa	casa	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:em	_
+14	e	e	CCONJ	_	_	24	cc	24:cc	_
+15	que	que	SCONJ	_	_	24	mark	24:mark	SpaceAfter=No
+16	,	,	PUNCT	_	_	18	punct	18:punct	_
+17	por	por	ADP	_	_	18	case	18:case	_
+18	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	24	obl	24:obl:por	SpaceAfter=No
+19	,	,	PUNCT	_	_	18	punct	18:punct	_
+20	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	24	nsubj	24:nsubj	_
+21	e	e	CCONJ	_	_	22	cc	22:cc	_
+22	Maria	Maria	PROPN	_	_	20	conj	20:conj:e|24:nsubj	_
+23	José	José	PROPN	_	_	22	flat:name	22:flat:name	_
+24	fugiram	fugir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	2	conj	2:conj:e	_
+25	para	para	ADP	_	_	26	case	26:case	_
+26	São	São	PROPN	_	_	24	obl	24:obl:para	_
+27	Paulo	Paulo	PROPN	_	_	26	flat:name	26:flat:name	SpaceAfter=No
+28	,	,	PUNCT	_	_	29	punct	29:punct	_
+29	temendo	temer	VERB	_	VerbForm=Ger	24	advcl	24:advcl	_
+30	por	por	ADP	_	_	32	case	32:case	_
+31	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	32	det	32:det	_
+32	vidas	vida	NOUN	_	Gender=Fem|Number=Plur	29	obl	29:obl:por	SpaceAfter=No
+33	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0035
+# text = "Voltamos agora para provar nossa inocência e recuperar nossa filha dessa manipulação", disse.
+1	"	"	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+2	Voltamos	voltar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	17	ccomp:speech	17:ccomp:speech	_
+3	agora	agora	ADV	_	_	2	advmod	2:advmod	_
+4	para	para	ADP	_	_	5	mark	5:mark|9:mark	_
+5	provar	provar	VERB	_	VerbForm=Inf	2	advcl	2:advcl:para	_
+6	nossa	nosso	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	7	det	7:det	_
+7	inocência	inocência	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	recuperar	recuperar	VERB	_	VerbForm=Inf	5	conj	2:advcl:para|5:conj:e	_
+10	nossa	nosso	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	11	det	11:det	_
+11	filha	filho	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+12-13	dessa	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	14	det	14:det	_
+14	manipulação	manipulação	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:de	SpaceAfter=No
+15	"	"	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+16	,	,	PUNCT	_	_	2	punct	2:punct	_
+17	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+18	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0037
+# text = O casal também acusa Gloria de roubar R$ 63 mil e promete apresentar-se à polícia para esclarecer todos os fatos.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	casal	casal	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj|12:nsubj|13:nsubj	_
+3	também	também	ADV	_	_	4	advmod	4:advmod	_
+4	acusa	acusar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	Gloria	Gloria	PROPN	_	_	4	obj	4:obj|7:nsubj	_
+6	de	de	ADP	_	_	7	mark	7:mark	_
+7	roubar	roubar	VERB	_	VerbForm=Inf	4	xcomp	4:xcomp	_
+8	R$	R$	SYM	_	_	7	obj	7:obj	_
+9	63	63	NUM	_	NumType=Card	8	nummod	8:nummod	_
+10	mil	mil	NUM	_	NumType=Card	9	flat	9:flat	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	promete	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	4:conj:e	_
+13-14	apresentar-se	_	_	_	_	_	_	_	_
+13	apresentar	apresentar	VERB	_	VerbForm=Inf	12	xcomp	12:xcomp	_
+14	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	13	expl	13:expl	_
+15-16	à	_	_	_	_	_	_	_	_
+15	a	a	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	polícia	polícia	NOUN	_	Number=Sing	13	obl	13:obl:a	_
+18	para	para	ADP	_	_	19	mark	19:mark	_
+19	esclarecer	esclarecer	VERB	_	VerbForm=Inf	13	advcl	13:advcl:para	_
+20	todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Ind	22	det	22:det	_
+21	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	22:det	_
+22	fatos	fato	NOUN	_	Gender=Masc|Number=Plur	19	obj	19:obj	SpaceAfter=No
+23	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0039
+# text = Vou processar todos que difamaram minha imagem na internet.
+1	Vou	ir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	aux	2:aux	_
+2	processar	processar	VERB	_	VerbForm=Inf	0	root	0:root	_
+3	todos	todo	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	2	obj	2:obj|5:nsubj	_
+4	que	que	PRON	_	PronType=Rel	5	nsubj	3:ref	_
+5	difamaram	difamar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_
+6	minha	meu	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	7	det	7:det	_
+7	imagem	imagem	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+8-9	na	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	internet	internet	NOUN	_	Foreign=Yes|Gender=Fem|Number=Sing	5	obl	5:obl:em	SpaceAfter=No
+11	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0041
+# text = Espero que minha filha se retrate e volte para casa, finalizou Joselito.
+1	Espero	esperar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	12	ccomp:speech	12:ccomp:speech	_
+2	que	que	SCONJ	_	_	6	mark	6:mark|8:mark	_
+3	minha	meu	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	det	4:det	_
+4	filha	filho	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj|8:nsubj	_
+5	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	6	expl	6:expl	_
+6	retrate	retratar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	1:ccomp	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	volte	voltar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	1:ccomp|6:conj:e	_
+9	para	para	ADP	_	_	10	case	10:case	_
+10	casa	casa	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:para	SpaceAfter=No
+11	,	,	PUNCT	_	_	1	punct	1:punct	_
+12	finalizou	finalizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+13	Joselito	Joselito	PROPN	_	_	12	nsubj	12:nsubj	SpaceAfter=No
+14	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0043
+# text = Enquanto isso, Erika conseguiu a guarda provisória de Gloria, que agora está em local seguro.
+1	Enquanto	enquanto	ADV	_	ExtPos=ADV	5	advmod	5:advmod	_
+2	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	fixed	1:fixed	SpaceAfter=No
+3	,	,	PUNCT	_	_	1	punct	1:punct	_
+4	Erika	Erika	PROPN	_	_	5	nsubj	5:nsubj	_
+5	conseguiu	conseguir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	guarda	guarda	NOUN	_	Number=Sing	5	obj	5:obj	_
+8	provisória	provisório	ADJ	_	Gender=Fem|Number=Sing	7	amod	7:amod	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	Gloria	Gloria	PROPN	_	_	7	nmod	7:nmod:de|16:nsubj	SpaceAfter=No
+11	,	,	PUNCT	_	_	16	punct	16:punct	_
+12	que	que	PRON	_	PronType=Rel	16	nsubj	10:ref	_
+13	agora	agora	ADV	_	_	16	advmod	16:advmod	_
+14	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	16:cop	_
+15	em	em	ADP	_	_	16	case	16:case	_
+16	local	local	NOUN	_	Number=Sing	10	acl:relcl	10:acl:relcl	_
+17	seguro	seguro	ADJ	_	Gender=Masc|Number=Sing	16	amod	16:amod	SpaceAfter=No
+18	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0045
+# text = As jovens negam todas as novas acusações de Joselito, afirmando que não há provas e que a polícia já verificou suas mochilas, não encontrando nada.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	jovens	jovem	NOUN	_	Number=Plur	3	nsubj	3:nsubj	_
+3	negam	negar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	todas	todo	DET	_	Gender=Fem|Number=Plur|PronType=Ind	7	det	7:det	_
+5	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	7:det	_
+6	novas	novo	ADJ	_	Gender=Fem|Number=Plur	7	amod	7:amod	_
+7	acusações	acusação	NOUN	_	Gender=Fem|Number=Plur	3	obj	3:obj	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	Joselito	Joselito	PROPN	_	_	7	nmod	7:nmod:de	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	afirmando	afirmar	VERB	_	VerbForm=Ger	3	advcl	3:advcl	_
+12	que	que	SCONJ	_	_	14	mark	14:mark	_
+13	não	não	ADV	_	_	14	advmod	14:advmod	_
+14	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	ccomp	11:ccomp	_
+15	provas	prova	NOUN	_	Gender=Fem|Number=Plur	14	obj	14:obj	_
+16	e	e	CCONJ	_	_	21	cc	21:cc	_
+17	que	que	SCONJ	_	_	21	mark	21:mark	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	polícia	polícia	NOUN	_	Number=Sing	21	nsubj	21:nsubj	_
+20	já	já	ADV	_	_	21	advmod	21:advmod	_
+21	verificou	verificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	conj	11:ccomp|14:conj:e	_
+22	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	23	det	23:det	_
+23	mochilas	mochila	NOUN	_	Gender=Fem|Number=Plur	21	obj	21:obj	SpaceAfter=No
+24	,	,	PUNCT	_	_	26	punct	26:punct	_
+25	não	não	ADV	_	_	26	advmod	26:advmod	_
+26	encontrando	encontrar	VERB	_	VerbForm=Ger	21	advcl	21:advcl	_
+27	nada	nada	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	26	obj	26:obj	SpaceAfter=No
+28	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0047
+# text = O caso está sob investigação da delegada Fernanda dos Santos Souza, que promete apurar todos os detalhes com rigor.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	caso	caso	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+3	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+4	sob	sob	ADP	_	_	5	case	5:case	_
+5	investigação	investigação	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+6-7	da	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	delegada	delegado	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de|16:nsubj|17:nsubj	_
+9	Fernanda	Fernanda	PROPN	_	_	8	nmod	8:nmod	_
+10-11	dos	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	12:det	_
+12	Santos	Santos	PROPN	_	_	9	flat:name	9:flat:name	_
+13	Souza	Souza	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+14	,	,	PUNCT	_	_	16	punct	16:punct	_
+15	que	que	PRON	_	PronType=Rel	16	nsubj	8:ref	_
+16	promete	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	8:acl:relcl	_
+17	apurar	apurar	VERB	_	VerbForm=Inf	16	xcomp	16:xcomp	_
+18	todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Ind	20	det	20:det	_
+19	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	20:det	_
+20	detalhes	detalhe	NOUN	_	Gender=Masc|Number=Plur	17	obj	17:obj	_
+21	com	com	ADP	_	_	22	case	22:case	_
+22	rigor	rigor	NOUN	_	Gender=Masc|Number=Sing	17	obl	17:obl:com	SpaceAfter=No
+23	.	.	PUNCT	_	_	5	punct	5:punct	_

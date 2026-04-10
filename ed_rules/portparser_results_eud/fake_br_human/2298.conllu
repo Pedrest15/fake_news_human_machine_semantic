@@ -1,0 +1,374 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = RIO 2016: Advogado diz que comprou ingressos falsos de ator da Globo.
+1	RIO	RIO	PROPN	_	_	5	nsubj	5:nsubj	_
+2	2016	2016	NUM	_	NumType=Card	1	nmod	1:nmod	SpaceAfter=No
+3	:	:	PUNCT	_	_	1	punct	1:punct	_
+4	Advogado	advogado	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+5	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	que	que	SCONJ	_	_	7	mark	7:mark	_
+7	comprou	comprar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	ccomp	5:ccomp	_
+8	ingressos	ingresso	NOUN	_	Gender=Masc|Number=Plur	7	obj	7:obj	_
+9	falsos	falso	ADJ	_	Gender=Masc|Number=Plur	8	amod	8:amod	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	ator	ator	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:de	_
+12-13	da	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	Globo	Globo	PROPN	_	_	11	nmod	11:nmod:de	SpaceAfter=No
+15	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0003
+# text = Ator diz que também foi enganado.
+1	Ator	ator	NOUN	_	Gender=Masc|Number=Sing	2	nsubj	2:nsubj	_
+2	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	6	mark	6:mark	_
+4	também	também	ADV	_	_	6	advmod	6:advmod	_
+5	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	aux:pass	6:aux:pass	_
+6	enganado	enganar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	ccomp	2:ccomp	SpaceAfter=No
+7	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = Um torcedor disse que o ator Murilo Rosa lhe vendeu 2 ingressos falsos para a final do futebol entre Brasil e Alemanha, no Maracanã.
+1	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	torcedor	torcedor	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	10	mark	10:mark	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	ator	ator	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	10:nsubj	_
+7	Murilo	Murilo	PROPN	_	_	6	nmod	6:nmod	_
+8	Rosa	Rosa	PROPN	_	_	7	flat:name	7:flat:name	_
+9	lhe	lhe	PRON	_	Case=Dat|Number=Sing|Person=3|PronType=Prs	10	iobj	10:iobj	_
+10	vendeu	vender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	ccomp	3:ccomp	_
+11	2	2	NUM	_	NumType=Card	12	nummod	12:nummod	_
+12	ingressos	ingresso	NOUN	_	Gender=Masc|Number=Plur	10	obj	10:obj	_
+13	falsos	falso	ADJ	_	Gender=Masc|Number=Plur	12	amod	12:amod	_
+14	para	para	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	final	final	NOUN	_	Number=Sing	12	nmod	12:nmod:para	_
+17-18	do	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	futebol	futebol	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod:de	_
+20	entre	entre	ADP	_	_	21	case	21:case	_
+21	Brasil	Brasil	PROPN	_	_	19	nmod	19:nmod:entre	_
+22	e	e	CCONJ	_	_	23	cc	23:cc	_
+23	Alemanha	Alemanha	PROPN	_	_	21	conj	19:nmod:entre|21:conj:e	SpaceAfter=No
+24	,	,	PUNCT	_	_	27	punct	27:punct	_
+25-26	no	_	_	_	_	_	_	_	_
+25	em	em	ADP	_	_	27	case	27:case	_
+26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	Maracanã	Maracanã	PROPN	_	_	16	nmod	16:nmod:em	SpaceAfter=No
+28	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = O advogado relata que o ator cobrou R$ 1, 5 mil por dois bilhetes para o jogo da final do futebol masculino.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	advogado	advogado	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	relata	relatar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	7	mark	7:mark	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	ator	ator	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+7	cobrou	cobrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	ccomp	3:ccomp	_
+8	R$	R$	SYM	_	_	7	obj	7:obj	_
+9	1	1	NUM	_	NumType=Card	8	nummod	8:nummod	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	5	5	NUM	_	NumType=Card	8	nummod	8:nummod	_
+12	mil	mil	NUM	_	NumType=Card	11	flat	11:flat	_
+13	por	por	ADP	_	_	15	case	15:case	_
+14	dois	dois	NUM	_	Gender=Masc|NumType=Card	15	nummod	15:nummod	_
+15	bilhetes	bilhete	NOUN	_	Gender=Masc|Number=Plur	7	obl	7:obl:por	_
+16	para	para	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	jogo	jogo	NOUN	_	Gender=Masc|Number=Sing	15	nmod	15:nmod:para	_
+19-20	da	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	final	final	NOUN	_	Number=Sing	18	nmod	18:nmod:de	_
+22-23	do	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	futebol	futebol	NOUN	_	Gender=Masc|Number=Sing	21	nmod	21:nmod:de	_
+25	masculino	masculino	ADJ	_	Gender=Masc|Number=Sing	24	amod	24:amod	SpaceAfter=No
+26	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0009
+# text = O homem e seu filho, de 12 anos, foram barrados ao tentar entrar com os ingressos no Maracanã.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	homem	homem	NOUN	_	Gender=Masc|Number=Sing	12	nsubj:pass	12:nsubj:pass	_
+3	e	e	CCONJ	_	_	5	cc	5:cc	_
+4	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	det	5:det	_
+5	filho	filho	NOUN	_	Gender=Masc|Number=Sing	2	conj	2:conj:e|12:nsubj:pass	SpaceAfter=No
+6	,	,	PUNCT	_	_	9	punct	9:punct	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	12	12	NUM	_	NumType=Card	9	nummod	9:nummod	_
+9	anos	ano	NOUN	_	Gender=Masc|Number=Plur	2	nmod	2:nmod:de|5:nmod:de	SpaceAfter=No
+10	,	,	PUNCT	_	_	9	punct	9:punct	_
+11	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	12	aux:pass	12:aux:pass	_
+12	barrados	barrar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	_
+13-14	ao	_	_	_	_	_	_	_	_
+13	a	a	ADP	_	ExtPos=SCONJ	15	mark	15:mark	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	fixed	13:fixed	_
+15	tentar	tentar	VERB	_	VerbForm=Inf	12	advcl	12:advcl:a_o	_
+16	entrar	entrar	VERB	_	VerbForm=Inf	15	xcomp	15:xcomp	_
+17	com	com	ADP	_	_	19	case	19:case	_
+18	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	19:det	_
+19	ingressos	ingresso	NOUN	_	Gender=Masc|Number=Plur	16	obl	16:obl:com	_
+20-21	no	_	_	_	_	_	_	_	_
+20	em	em	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	Maracanã	Maracanã	PROPN	_	_	16	obl	16:obl:em	SpaceAfter=No
+23	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0011
+# text = Estávamos na fila do portão B quando fiquei sabendo o ator estava vendendo ingressos.
+1	Estávamos	estar	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin	4	cop	4:cop	_
+2-3	na	_	_	_	_	_	_	_	_
+2	em	em	ADP	_	_	4	case	4:case	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	fila	fila	NOUN	_	Number=Sing	0	root	0:root	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	portão	portão	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:de	_
+8	B	b	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod	_
+9	quando	quando	SCONJ	_	_	10	mark	10:mark	_
+10	fiquei	ficar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	4	advcl	4:advcl:quando	_
+11	sabendo	saber	VERB	_	VerbForm=Ger	10	xcomp	10:xcomp	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	ator	ator	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	15:nsubj	_
+14	estava	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	15	aux	15:aux	_
+15	vendendo	vender	VERB	_	VerbForm=Ger	10	ccomp	10:ccomp	_
+16	ingressos	ingresso	NOUN	_	Gender=Masc|Number=Plur	15	obj	15:obj	SpaceAfter=No
+17	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0013
+# text = Ele estava com a mulher e queria vender os 2 ingressos por R$ 2 mil.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	5:nsubj|7:nsubj|8:nsubj	_
+2	estava	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	cop	5:cop	_
+3	com	com	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	mulher	mulher	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	queria	querer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	conj	5:conj:e	_
+8	vender	vender	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	11:det	_
+10	2	2	NUM	_	NumType=Card	11	nummod	11:nummod	_
+11	ingressos	ingresso	NOUN	_	Gender=Masc|Number=Plur	8	obj	8:obj	_
+12	por	por	ADP	_	_	13	case	13:case	_
+13	R$	R$	SYM	_	_	8	obl	8:obl:por	_
+14	2	2	NUM	_	NumType=Card	13	nummod	13:nummod	_
+15	mil	mil	NUM	_	NumType=Card	14	flat	14:flat	SpaceAfter=No
+16	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0015
+# text = Ofereci R$ 1, 5 mil e ele aceitou.
+1	Ofereci	oferecer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	R$	R$	SYM	_	_	1	obj	1:obj	_
+3	1	1	NUM	_	NumType=Card	2	nummod	2:nummod	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	5	5	NUM	_	NumType=Card	2	nummod	2:nummod	_
+6	mil	mil	NUM	_	NumType=Card	5	flat	5:flat	_
+7	e	e	CCONJ	_	_	9	cc	9:cc	_
+8	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nsubj	9:nsubj	_
+9	aceitou	aceitar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	conj	1:conj:e	SpaceAfter=No
+10	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0017
+# text = Comprei dele porque ele é um ator famoso e passa credibilidade.
+1	Comprei	comprar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2-3	dele	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	obl	1:obl:de	_
+4	porque	porque	SCONJ	_	_	8	mark	8:mark|11:mark	_
+5	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nsubj	8:nsubj|11:nsubj	_
+6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop	_
+7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	ator	ator	NOUN	_	Gender=Masc|Number=Sing	1	advcl	1:advcl:porque	_
+9	famoso	famoso	ADJ	_	Gender=Masc|Number=Sing	8	amod	8:amod	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	passa	passar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	conj	1:advcl:porque|8:conj:e	_
+12	credibilidade	credibilidade	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	SpaceAfter=No
+13	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0019
+# text = Ao usar os ingressos fui barrado e me informaram que era m falsos disse o advogado.
+1-2	Ao	_	_	_	_	_	_	_	_
+1	A	a	ADP	_	ExtPos=SCONJ	3	mark	3:mark	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	1:fixed	_
+3	usar	usar	VERB	_	VerbForm=Inf	7	advcl	7:advcl:a_o|10:advcl:a_o	_
+4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	5:det	_
+5	ingressos	ingresso	NOUN	_	Gender=Masc|Number=Plur	3	obj	3:obj	_
+6	fui	ser	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	7	aux:pass	7:aux:pass	_
+7	barrado	barrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	15	ccomp:speech	15:ccomp:speech	_
+8	e	e	CCONJ	_	_	10	cc	10:cc	_
+9	me	me	PRON	_	Case=Dat|Number=Sing|Person=1|PronType=Prs	10	iobj	10:iobj	_
+10	informaram	informar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	7	conj	7:conj:e|15:ccomp:speech	_
+11	que	que	SCONJ	_	_	14	mark	14:mark	_
+12	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	14	cop	14:cop	_
+13	m	metro	NOUN	_	Abbr=Yes|Gender=Masc	14	advmod	14:advmod	_
+14	falsos	falso	ADJ	_	Gender=Masc|Number=Plur	10	ccomp	10:ccomp	_
+15	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	advogado	advogado	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	15:nsubj	SpaceAfter=No
+18	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0021
+# text = O ator Murilo Rosa disse ao jornal EXTRA que comprou os ingressos de um desconhecido e não fazia idéia de que as entradas eram falsas.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	ator	ator	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+3	Murilo	Murilo	PROPN	_	_	2	nmod	2:nmod	_
+4	Rosa	Rosa	PROPN	_	_	3	flat:name	3:flat:name	_
+5	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6-7	ao	_	_	_	_	_	_	_	_
+6	a	a	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	jornal	jornal	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:a	_
+9	EXTRA	EXTRA	PROPN	_	_	8	nmod	8:nmod	_
+10	que	que	SCONJ	_	_	11	mark	11:mark|19:mark	_
+11	comprou	comprar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	ccomp	5:ccomp	_
+12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	13:det	_
+13	ingressos	ingresso	NOUN	_	Gender=Masc|Number=Plur	11	obj	11:obj	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	desconhecido	desconhecido	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:de	_
+17	e	e	CCONJ	_	_	19	cc	19:cc	_
+18	não	não	ADV	_	_	19	advmod	19:advmod	_
+19	fazia	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	11	conj	5:ccomp|11:conj:e	_
+20	idéia	idéia	NOUN	_	Gender=Fem|Number=Sing	19	obj	19:obj	_
+21	de	de	ADP	_	ExtPos=SCONJ	26	mark	26:mark	_
+22	que	que	SCONJ	_	_	21	fixed	21:fixed	_
+23	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	24:det	_
+24	entradas	entrada	NOUN	_	Gender=Fem|Number=Plur	26	nsubj	26:nsubj	_
+25	eram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	26	cop	26:cop	_
+26	falsas	falso	ADJ	_	Gender=Fem|Number=Plur	20	acl	20:acl:de_que	SpaceAfter=No
+27	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0023
+# text = Ele confirmou que realmente vendeu os ingressos para o homem e só se desfez das entradas porque descobriu que os lugares eram em assentos separados, o que não permitiria que ele ficasse junto de sua esposa.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj|14:nsubj	_
+2	confirmou	confirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	5	mark	5:mark	_
+4	realmente	realmente	ADV	_	_	5	advmod	5:advmod	_
+5	vendeu	vender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	ccomp	2:ccomp	_
+6	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	7:det	_
+7	ingressos	ingresso	NOUN	_	Gender=Masc|Number=Plur	5	obj	5:obj	_
+8	para	para	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	homem	homem	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:para	_
+11	e	e	CCONJ	_	_	14	cc	14:cc	_
+12	só	só	ADV	_	_	14	advmod	14:advmod	_
+13	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	14	expl	14:expl	_
+14	desfez	desfazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	2:conj:e	_
+15-16	das	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	17:det	_
+17	entradas	entrada	NOUN	_	Gender=Fem|Number=Plur	14	obl	14:obl:de	_
+18	porque	porque	SCONJ	_	_	19	mark	19:mark	_
+19	descobriu	descobrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	advcl	14:advcl:porque	_
+20	que	que	SCONJ	_	_	25	mark	25:mark	_
+21	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	22:det	_
+22	lugares	lugar	NOUN	_	Gender=Masc|Number=Plur	25	nsubj	25:nsubj	_
+23	eram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	25	cop	25:cop	_
+24	em	em	ADP	_	_	25	case	25:case	_
+25	assentos	assento	NOUN	_	Gender=Masc|Number=Plur	19	ccomp	19:ccomp	_
+26	separados	separado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	25	amod	25:amod	SpaceAfter=No
+27	,	,	PUNCT	_	_	31	punct	31:punct	_
+28	o	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	31	nsubj	31:nsubj	_
+29	que	que	PRON	_	PronType=Rel	28	fixed	28:fixed	_
+30	não	não	ADV	_	_	31	advmod	31:advmod	_
+31	permitiria	permitir	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	25	parataxis	25:parataxis	_
+32	que	que	SCONJ	_	_	34	mark	34:mark	_
+33	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	34	nsubj	34:nsubj	_
+34	ficasse	ficar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	31	ccomp	31:ccomp	_
+35	junto	junto	ADV	_	_	34	advmod	34:advmod	_
+36	de	de	ADP	_	_	38	case	38:case	_
+37	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	38	det	38:det	_
+38	esposa	esposo	NOUN	_	Gender=Fem|Number=Sing	35	obl	35:obl:de	SpaceAfter=No
+39	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0025
+# text = Comprei esses ingressos por R$ 2 mil no Parque Olímpico de um homem bem apessoado.
+1	Comprei	comprar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	3	det	3:det	_
+3	ingressos	ingresso	NOUN	_	Gender=Masc|Number=Plur	1	obj	1:obj	_
+4	por	por	ADP	_	_	5	case	5:case	_
+5	R$	R$	SYM	_	_	1	obl	1:obl:por	_
+6	2	2	NUM	_	NumType=Card	5	nummod	5:nummod	_
+7	mil	mil	NUM	_	NumType=Card	6	flat	6:flat	_
+8-9	no	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	Parque	Parque	PROPN	_	_	1	obl	1:obl:em	_
+11	Olímpico	Olímpico	PROPN	_	_	10	flat:name	10:flat:name	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	homem	homem	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:de	_
+15	bem	bem	ADV	_	_	16	advmod	16:advmod	_
+16	apessoado	apessoado	ADJ	_	Gender=Masc|Number=Sing	14	amod	14:amod	SpaceAfter=No
+17	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0027
+# text = Fiquei um pouco constrangido de vender, mas tinha muita gente querendo ingresso e decidir vender.
+1	Fiquei	ficar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	um	um	DET	_	Definite=Ind|ExtPos=ADV|Gender=Masc|Number=Sing|PronType=Art	4	advmod	4:advmod	_
+3	pouco	pouco	NOUN	_	Gender=Masc|Number=Sing	2	fixed	2:fixed	_
+4	constrangido	constrangido	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	1	xcomp	1:xcomp	_
+5	de	de	ADP	_	_	6	mark	6:mark	_
+6	vender	vender	VERB	_	VerbForm=Inf	4	acl	4:acl:de	SpaceAfter=No
+7	,	,	PUNCT	_	_	9	punct	9:punct	_
+8	mas	mas	CCONJ	_	_	9	cc	9:cc	_
+9	tinha	ter	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	1	conj	1:conj:mas	_
+10	muita	muito	ADJ	_	Gender=Fem|Number=Sing	11	amod	11:amod	_
+11	gente	gente	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+12	querendo	querer	VERB	_	VerbForm=Ger	11	acl	11:acl	_
+13	ingresso	ingresso	NOUN	_	Gender=Masc|Number=Sing	12	obj	12:obj	_
+14	e	e	CCONJ	_	_	15	cc	15:cc	_
+15	decidir	decidir	VERB	_	VerbForm=Inf	12	conj	11:acl|12:conj:e	_
+16	vender	vender	VERB	_	VerbForm=Inf	15	xcomp	15:xcomp	SpaceAfter=No
+17	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0029
+# text = Jamais imaginei que os ingressos eram falsos relatou Murilo.
+1	Jamais	jamais	ADV	_	_	2	advmod	2:advmod	_
+2	imaginei	imaginar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	8	ccomp:speech	8:ccomp:speech	_
+3	que	que	SCONJ	_	_	7	mark	7:mark	_
+4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	5:det	_
+5	ingressos	ingresso	NOUN	_	Gender=Masc|Number=Plur	7	nsubj	7:nsubj	_
+6	eram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	7	cop	7:cop	_
+7	falsos	falso	ADJ	_	Gender=Masc|Number=Plur	2	ccomp	2:ccomp	_
+8	relatou	relatar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	Murilo	Murilo	PROPN	_	_	8	nsubj	8:nsubj	SpaceAfter=No
+10	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0031
+# text = Foi aberto inquérito na 18a DP e o caso será investigado como estelionato.
+1	Foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	aux:pass	2:aux:pass	_
+2	aberto	abrir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+3	inquérito	inquérito	NOUN	_	Gender=Masc|Number=Sing	2	nsubj:pass	2:nsubj:pass	_
+4-5	na	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	7	case	7:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+6	18a	18a	ADJ	_	Gender=Fem|NumType=Ord	7	amod	7:amod	_
+7	DP	DP	PROPN	_	_	2	obl	2:obl:em	_
+8	e	e	CCONJ	_	_	12	cc	12:cc	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	caso	caso	NOUN	_	Gender=Masc|Number=Sing	12	nsubj:pass	12:nsubj:pass	_
+11	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	12	aux:pass	12:aux:pass	_
+12	investigado	investigar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	conj	2:conj:e	_
+13	como	como	ADP	_	_	14	case	14:case	_
+14	estelionato	estelionato	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:como	SpaceAfter=No
+15	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0033
+# text = A informação é do jornal carioca EXTRA.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	informação	informação	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	jornal	jornal	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+7	carioca	carioca	ADJ	_	Number=Sing	6	amod	6:amod	_
+8	EXTRA	EXTRA	PROPN	_	_	6	nmod	6:nmod	SpaceAfter=No
+9	.	.	PUNCT	_	_	6	punct	6:punct	_

@@ -1,0 +1,273 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Deus mandou votar a favor de Temer, disseram deputados evangélicos.
+1	Deus	Deus	PROPN	_	_	2	nsubj	2:nsubj	_
+2	mandou	mandar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	ccomp:speech	9:ccomp:speech	_
+3	votar	votar	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	_
+4	a	a	ADP	_	_	5	case	5:case	_
+5	favor	favor	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:a	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	Temer	Temer	PROPN	_	_	5	nmod	5:nmod:de	SpaceAfter=No
+8	,	,	PUNCT	_	_	2	punct	2:punct	_
+9	disseram	dizer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	deputados	deputado	NOUN	_	Gender=Masc|Number=Plur	9	nsubj	9:nsubj	_
+11	evangélicos	evangélico	ADJ	_	Gender=Masc|Number=Plur	10	amod	10:amod	SpaceAfter=No
+12	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0003
+# text = Deputados da bancada evangélica fecharam apoio incondicional ao presidente Michel Temer.
+1	Deputados	deputado	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	6:nsubj	_
+2-3	da	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	bancada	bancada	NOUN	_	Gender=Fem|Number=Sing	1	nmod	1:nmod:de	_
+5	evangélica	evangélico	ADJ	_	Gender=Fem|Number=Sing	4	amod	4:amod	_
+6	fecharam	fechar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	apoio	apoio	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+8	incondicional	incondicional	ADJ	_	Number=Sing	7	amod	7:amod	_
+9-10	ao	_	_	_	_	_	_	_	_
+9	a	a	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	presidente	presidente	NOUN	_	Number=Sing	7	nmod	7:nmod:a	_
+12	Michel	Michel	PROPN	_	_	11	nmod	11:nmod	_
+13	Temer	Temer	PROPN	_	_	12	flat:name	12:flat:name	SpaceAfter=No
+14	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0005
+# text = Decidiram que Temer não deve ser processado e afirmam que a orientação para este posicionamento partiu de Deus.
+1	Decidiram	decidir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	que	que	SCONJ	_	_	5	mark	5:mark	_
+3	Temer	Temer	PROPN	_	_	5	nsubj	5:nsubj|7:nsubj:pass	_
+4	não	não	ADV	_	_	5	advmod	5:advmod	_
+5	deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	1:ccomp	_
+6	ser	ser	AUX	_	VerbForm=Inf	7	aux:pass	7:aux:pass	_
+7	processado	processar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	5	xcomp	5:xcomp	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	afirmam	afirmar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	conj	1:conj:e	_
+10	que	que	SCONJ	_	_	16	mark	16:mark	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	orientação	orientação	NOUN	_	Gender=Fem|Number=Sing	16	nsubj	16:nsubj	_
+13	para	para	ADP	_	_	15	case	15:case	_
+14	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	15	det	15:det	_
+15	posicionamento	posicionamento	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:para	_
+16	partiu	partir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	ccomp	9:ccomp	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	Deus	Deus	PROPN	_	_	16	obl	16:obl:de	SpaceAfter=No
+19	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0007
+# text = A bancada Evangélica votou a favor de Temer em troca de projetos que são de interesse dos parlamentares, mas eles dizem que foi Deus que mandou.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	bancada	bancada	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+3	Evangélica	Evangélica	PROPN	_	_	2	amod	2:amod	_
+4	votou	votar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	a	a	ADP	_	_	6	case	6:case	_
+6	favor	favor	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:a	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	Temer	Temer	PROPN	_	_	6	nmod	6:nmod:de	_
+9	em	em	ADP	_	_	10	case	10:case	_
+10	troca	troca	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:em	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	projetos	projeto	NOUN	_	Gender=Masc|Number=Plur	10	nmod	10:nmod:de|16:nsubj	_
+13	que	que	PRON	_	PronType=Rel	16	nsubj	12:ref	_
+14	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	cop	16:cop	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	interesse	interesse	NOUN	_	Gender=Masc|Number=Sing	12	acl:relcl	12:acl:relcl	_
+17-18	dos	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	19:det	_
+19	parlamentares	parlamentar	NOUN	_	Gender=Masc|Number=Plur	16	nmod	16:nmod:de	SpaceAfter=No
+20	,	,	PUNCT	_	_	23	punct	23:punct	_
+21	mas	mas	CCONJ	_	_	23	cc	23:cc	_
+22	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	23	nsubj	23:nsubj	_
+23	dizem	dizer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	conj	4:conj:mas	_
+24	que	que	SCONJ	_	_	28	mark	28:mark	_
+25	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	26	cop	26:cop	_
+26	Deus	Deus	PROPN	_	_	28	nsubj	28:nsubj	_
+27	que	que	PRON	_	PronType=Rel	28	discourse	28:discourse	_
+28	mandou	mandar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	ccomp	23:ccomp	SpaceAfter=No
+29	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0009
+# text = O presidente da Frente Parlamentar Evangélica, o deputado Hidekazu Takayama (PSC-PR), deu a senha para os demais quando anunciou seu voto.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	presidente	presidente	NOUN	_	Number=Sing	17	nsubj	17:nsubj	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	Frente	Frente	PROPN	_	_	2	nmod	2:nmod:de	_
+6	Parlamentar	Parlamentar	PROPN	_	_	5	flat:name	5:flat:name	_
+7	Evangélica	Evangélica	PROPN	_	_	5	flat:name	5:flat:name	SpaceAfter=No
+8	,	,	PUNCT	_	_	10	punct	10:punct	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	2	appos	2:appos	_
+11	Hidekazu	Hidekazu	PROPN	_	_	10	nmod	10:nmod	_
+12	Takayama	Takayama	PROPN	_	_	11	flat:name	11:flat:name	_
+13	(	(	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+14	PSC-PR	PSC-PR	PROPN	_	_	10	parataxis	10:parataxis	SpaceAfter=No
+15	)	)	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+16	,	,	PUNCT	_	_	10	punct	10:punct	_
+17	deu	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	senha	senha	NOUN	_	Gender=Fem|Number=Sing	17	obj	17:obj	_
+20	para	para	ADP	_	_	22	case	22:case	_
+21	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	22:det	_
+22	demais	demais	PRON	_	Number=Plur|PronType=Ind	17	obl	17:obl:para	_
+23	quando	quando	SCONJ	_	_	24	mark	24:mark	_
+24	anunciou	anunciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	advcl	17:advcl:quando	_
+25	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	26	det	26:det	_
+26	voto	voto	NOUN	_	Gender=Masc|Number=Sing	24	obj	24:obj	SpaceAfter=No
+27	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0011
+# text = Disseram que em oração veio a resposta que salvar Temer seria salvar o Brasil.
+1	Disseram	dizer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	que	que	SCONJ	_	_	5	mark	5:mark	_
+3	em	em	ADP	_	_	4	case	4:case	_
+4	oração	oração	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:em	_
+5	veio	vir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	ccomp	1:ccomp	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	resposta	resposta	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+8	que	que	SCONJ	_	_	12	mark	12:mark	_
+9	salvar	salvar	VERB	_	VerbForm=Inf	7	acl	7:acl	_
+10	Temer	Temer	PROPN	_	_	9	obj	9:obj	_
+11	seria	ser	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	12	cop	12:cop	_
+12	salvar	salvar	VERB	_	VerbForm=Inf	7	ccomp	7:ccomp	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	Brasil	Brasil	PROPN	_	_	12	obj	12:obj	SpaceAfter=No
+15	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0013
+# text = Como ele, votaram Silas Câmara, Victório Galli, Marcelo Aguiar, Marco Feliciano, Paulo Freire, Ezequiel Teixeira, Rosangela Gomes, Pastor Luciano Braga, deputado pastor João Campos, entre outros.
+1	Como	como	ADP	_	_	2	case	2:case	_
+2	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	obl	4:obl:como	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	votaram	votar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	Silas	Silas	PROPN	_	_	4	nsubj	4:nsubj	_
+6	Câmara	Câmara	PROPN	_	_	5	flat:name	5:flat:name	SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	8:punct	_
+8	Victório	Victório	PROPN	_	_	5	conj	4:nsubj|5:conj	_
+9	Galli	Galli	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	Marcelo	Marcelo	PROPN	_	_	5	conj	4:nsubj|5:conj	_
+12	Aguiar	Aguiar	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	Marco	Marco	PROPN	_	_	5	conj	4:nsubj|5:conj	_
+15	Feliciano	Feliciano	PROPN	_	_	17	flat:name	17:flat:name	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	Paulo	Paulo	PROPN	_	_	5	conj	4:nsubj|5:conj	_
+18	Freire	Freire	PROPN	_	_	20	flat:name	20:flat:name	SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	20:punct	_
+20	Ezequiel	Ezequiel	PROPN	_	_	5	conj	4:nsubj|5:conj	_
+21	Teixeira	Teixeira	PROPN	_	_	23	flat:name	23:flat:name	SpaceAfter=No
+22	,	,	PUNCT	_	_	23	punct	23:punct	_
+23	Rosangela	Rosangela	PROPN	_	_	5	conj	4:nsubj|5:conj	_
+24	Gomes	Gomes	PROPN	_	_	23	flat:name	23:flat:name	SpaceAfter=No
+25	,	,	PUNCT	_	_	26	punct	26:punct	_
+26	Pastor	Pastor	PROPN	_	_	5	conj	4:nsubj|5:conj	_
+27	Luciano	Luciano	PROPN	_	_	26	flat:name	26:flat:name	_
+28	Braga	Braga	PROPN	_	_	26	flat:name	26:flat:name	SpaceAfter=No
+29	,	,	PUNCT	_	_	30	punct	30:punct	_
+30	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	5	conj	4:nsubj|5:conj	_
+31	pastor	pastor	NOUN	_	Gender=Masc|Number=Sing	30	nmod	30:nmod	_
+32	João	João	PROPN	_	_	30	nmod	30:nmod	_
+33	Campos	Campos	PROPN	_	_	32	flat:name	32:flat:name	SpaceAfter=No
+34	,	,	PUNCT	_	_	36	punct	36:punct	_
+35	entre	entre	ADP	_	_	36	case	36:case	_
+36	outros	outro	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	4	obl	4:obl:entre	SpaceAfter=No
+37	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0015
+# text = Santas emendas Para barrar o prosseguimento da denúncia e garantir os votos necessários, Temer acabou direcionando bilhões de reais em emendas parlamentares da bancada evangélica.
+1	Santas	santo	ADJ	_	Gender=Fem|Number=Plur	2	amod	2:amod	_
+2	emendas	emenda	NOUN	_	Gender=Fem|Number=Plur	17	nsubj	17:nsubj|18:nsubj	_
+3	Para	para	ADP	_	_	4	mark	4:mark|11:mark	_
+4	barrar	barrar	VERB	_	VerbForm=Inf	17	advcl	17:advcl:para	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	prosseguimento	prosseguimento	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	denúncia	denúncia	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	garantir	garantir	VERB	_	VerbForm=Inf	4	conj	4:conj:e|17:advcl:para	_
+12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	13:det	_
+13	votos	voto	NOUN	_	Gender=Masc|Number=Plur	11	obj	11:obj	_
+14	necessários	necessário	ADJ	_	Gender=Masc|Number=Plur	13	amod	13:amod	SpaceAfter=No
+15	,	,	PUNCT	_	_	4	punct	4:punct	_
+16	Temer	Temer	PROPN	_	_	17	nsubj	17:nsubj|18:nsubj	_
+17	acabou	acabar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+18	direcionando	direcionar	VERB	_	VerbForm=Ger	17	xcomp	17:xcomp	_
+19	bilhões	bilhão	NOUN	_	Gender=Masc|Number=Plur	18	obj	18:obj	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	reais	real	NOUN	_	Gender=Masc|Number=Plur	19	nmod	19:nmod:de	_
+22	em	em	ADP	_	_	23	case	23:case	_
+23	emendas	emenda	NOUN	_	Gender=Fem|Number=Plur	18	obl	18:obl:em	_
+24	parlamentares	parlamentar	ADJ	_	Number=Plur	23	amod	23:amod	_
+25-26	da	_	_	_	_	_	_	_	_
+25	de	de	ADP	_	_	27	case	27:case	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	bancada	bancada	NOUN	_	Gender=Fem|Number=Sing	23	nmod	23:nmod:de	_
+28	evangélica	evangélico	ADJ	_	Gender=Fem|Number=Sing	27	amod	27:amod	SpaceAfter=No
+29	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0017
+# text = Essas liberações de dinheiro público ocorreram, segundo o jornal O Globo, até horas antes do início da votação, e nos últimos meses já contabiliza ao todo R$ 4 bilhões de reais, cerca de 64% do previsto para todo o ano de 2017.
+1	Essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	2	det	2:det	_
+2	liberações	liberação	NOUN	_	Gender=Fem|Number=Plur	6	nsubj	6:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	_
+5	público	público	ADJ	_	Gender=Masc|Number=Sing	4	amod	4:amod	_
+6	ocorreram	ocorrer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+7	,	,	PUNCT	_	_	10	punct	10:punct	_
+8	segundo	segundo	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	jornal	jornal	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:segundo	_
+11	O	O	PROPN	_	_	10	nmod	10:nmod	_
+12	Globo	Globo	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+13	,	,	PUNCT	_	_	10	punct	10:punct	_
+14	até	até	ADP	_	_	15	case	15:case	_
+15	horas	hora	NOUN	_	Gender=Fem|Number=Plur	16	obl	16:obl:até	_
+16	antes	antes	ADV	_	_	6	advmod	6:advmod	_
+17-18	do	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	início	início	NOUN	_	Gender=Masc|Number=Sing	16	obl	16:obl:de	_
+20-21	da	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	votação	votação	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:de	SpaceAfter=No
+23	,	,	PUNCT	_	_	30	punct	30:punct	_
+24	e	e	CCONJ	_	_	30	cc	30:cc	_
+25-26	nos	_	_	_	_	_	_	_	_
+25	em	em	ADP	_	_	28	case	28:case	_
+26	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	28:det	_
+27	últimos	último	ADJ	_	Gender=Masc|Number=Plur	28	amod	28:amod	_
+28	meses	mÃªs	NOUN	_	Gender=Masc|Number=Plur	30	obl	30:obl:em	_
+29	já	já	ADV	_	_	30	advmod	30:advmod	_
+30	contabiliza	contabilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	6:conj:e	_
+31-32	ao	_	_	_	_	_	_	_	_
+31	a	a	ADP	_	_	33	case	33:case	_
+32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	33:det	_
+33	todo	todo	NOUN	_	Gender=Masc|Number=Sing	30	obl	30:obl:a	_
+34	R$	R$	SYM	_	_	36	nmod	36:nmod	_
+35	4	4	NUM	_	NumType=Card	36	nummod	36:nummod	_
+36	bilhões	bilhão	NOUN	_	Gender=Masc|Number=Plur	30	obj	30:obj	_
+37	de	de	ADP	_	_	38	case	38:case	_
+38	reais	real	NOUN	_	Gender=Masc|Number=Plur	36	nmod	36:nmod:de	SpaceAfter=No
+39	,	,	PUNCT	_	_	43	punct	43:punct	_
+40	cerca	cerca	ADV	_	ExtPos=ADV	42	advmod	42:advmod	_
+41	de	de	ADP	_	_	40	fixed	40:fixed	_
+42	64	64	NUM	_	NumType=Card	43	nummod	43:nummod	SpaceAfter=No
+43	%	%	SYM	_	_	36	appos	36:appos	_
+44-45	do	_	_	_	_	_	_	_	_
+44	de	de	ADP	_	_	45	case	45:case	_
+45	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	43	nmod	43:nmod:de	_
+46	previsto	prever	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	45	acl	45:acl	_
+47	para	para	ADP	_	_	50	case	50:case	_
+48	todo	todo	DET	_	Gender=Masc|Number=Sing|PronType=Ind	50	det	50:det	_
+49	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	50	det	50:det	_
+50	ano	ano	NOUN	_	Gender=Masc|Number=Sing	46	obl	46:obl:para	_
+51	de	de	ADP	_	_	52	case	52:case	_
+52	2017	2017	NUM	_	NumType=Card	50	nmod	50:nmod:de	SpaceAfter=No
+53	.	.	PUNCT	_	_	6	punct	6:punct	_

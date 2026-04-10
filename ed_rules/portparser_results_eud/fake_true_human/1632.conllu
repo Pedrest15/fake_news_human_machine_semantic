@@ -1,0 +1,718 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = cuidado com as cebolas elas absorvem bacterias e sao venenosas cuidado com as cebolas.
+1	cuidado	cuidado	NOUN	_	Gender=Masc|Number=Sing	6	dep	6:dep	_
+2	com	com	ADP	_	_	4	case	4:case	_
+3	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	4:det	_
+4	cebolas	cebola	NOUN	_	Gender=Fem|Number=Plur	1	nmod	1:nmod:com	_
+5	elas	ele	PRON	_	Case=Nom|Gender=Fem|Number=Plur|Person=3|PronType=Prs	6	nsubj	6:nsubj	_
+6	absorvem	absorver	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	bacterias	bacteria	NOUN	_	Gender=Fem|Number=Plur	6	obj	6:obj	_
+8	e	e	CCONJ	_	_	10	cc	10:cc	_
+9	sao	sao	PROPN	_	_	10	advmod	10:advmod	_
+10	venenosas	venenoso	ADJ	_	Gender=Fem|Number=Plur	6	conj	6:conj:e	_
+11	cuidado	cuidado	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj|10:obj	_
+12	com	com	ADP	_	_	14	case	14:case	_
+13	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	14:det	_
+14	cebolas	cebola	NOUN	_	Gender=Fem|Number=Plur	11	nmod	11:nmod:com	SpaceAfter=No
+15	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0003
+# text = em 1919, a gripe matou 40 milhoes de pessoas.
+1	em	em	ADP	_	_	2	case	2:case	_
+2	1919	1919	NUM	_	NumType=Card	6	obl	6:obl:em	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	gripe	gripe	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj	_
+6	matou	matar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	40	40	NUM	_	NumType=Card	8	nummod	8:nummod	_
+8	milhoes	milho	NOUN	_	Gender=Masc|Number=Plur	6	obj	6:obj	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	8	nmod	8:nmod:de	SpaceAfter=No
+11	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0005
+# text = um medico visitou os agricultores, que tiveram o ataque, para ver se poderia ajuda-los a combater a gripe.
+1	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	medico	medico	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	visitou	visitar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	5:det	_
+5	agricultores	agricultor	NOUN	_	Gender=Masc|Number=Plur	3	obj	3:obj|8:nsubj	SpaceAfter=No
+6	,	,	PUNCT	_	_	8	punct	8:punct	_
+7	que	que	PRON	_	PronType=Rel	8	nsubj	5:ref	_
+8	tiveram	ter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	ataque	ataque	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	SpaceAfter=No
+11	,	,	PUNCT	_	_	8	punct	8:punct	_
+12	para	para	ADP	_	_	13	mark	13:mark	_
+13	ver	ver	VERB	_	VerbForm=Inf	3	advcl	3:advcl:para	_
+14	se	se	SCONJ	_	_	15	mark	15:mark	_
+15	poderia	poder	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	13	ccomp	13:ccomp	_
+16-17	ajuda-los	_	_	_	_	_	_	_	_
+16	ajuda	ajudar	VERB	_	VerbForm=Inf	15	xcomp	15:xcomp	_
+17	los	lo	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	16	obj	16:obj|19:nsubj	_
+18	a	a	ADP	_	_	19	mark	19:mark	_
+19	combater	combater	VERB	_	VerbForm=Inf	16	xcomp	16:xcomp	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	gripe	gripe	NOUN	_	Gender=Fem|Number=Sing	19	obj	19:obj	SpaceAfter=No
+22	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = muitos dos agricultores e suas familias, que haviam contraido a gripe, morreram.
+1	muitos	muito	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	15	nsubj	15:nsubj	_
+2-3	dos	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case|7:case	_
+3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	4:det	_
+4	agricultores	agricultor	NOUN	_	Gender=Masc|Number=Plur	1	nmod	1:nmod:de	_
+5	e	e	CCONJ	_	_	7	cc	7:cc	_
+6	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	7	det	7:det	_
+7	familias	familia	NOUN	_	Gender=Fem|Number=Plur	4	conj	1:nmod:de|4:conj:e|11:nsubj	SpaceAfter=No
+8	,	,	PUNCT	_	_	11	punct	11:punct	_
+9	que	que	PRON	_	PronType=Rel	11	nsubj	7:ref	_
+10	haviam	haver	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	11	aux	11:aux	_
+11	contraido	contrair	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	7	acl:relcl	7:acl:relcl	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	gripe	gripe	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	SpaceAfter=No
+14	,	,	PUNCT	_	_	11	punct	11:punct	_
+15	morreram	morrer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+16	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0009
+# text = no entanto, o medico conheceu um fazendeiro cuja familia era saudavel e ninguem na casa pegou a gripe.
+1-2	no	_	_	_	_	_	_	_	_
+1	em	em	ADP	_	ExtPos=CCONJ	7	cc	7:cc	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	1:fixed	_
+3	entanto	entanto	NOUN	_	Gender=Masc|Number=Sing	1	fixed	1:fixed	SpaceAfter=No
+4	,	,	PUNCT	_	_	1	punct	1:punct	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	medico	medico	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+7	conheceu	conhecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	fazendeiro	fazendeiro	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj|11:nmod	_
+10	cuja	cujo	DET	_	Gender=Fem|Number=Sing|PronType=Rel	11	det	9:ref	_
+11	familia	familia	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	13:nsubj	_
+12	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	13	cop	13:cop	_
+13	saudavel	saudavel	ADJ	_	Number=Sing	9	acl:relcl	9:acl:relcl	_
+14	e	e	CCONJ	_	_	19	cc	19:cc	_
+15	ninguem	ninguem	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	19	nsubj	19:nsubj	_
+16-17	na	_	_	_	_	_	_	_	_
+16	em	em	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	casa	casa	NOUN	_	Gender=Fem|Number=Sing	19	obl	19:obl:em	_
+19	pegou	pegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	conj	9:acl:relcl|13:conj:e	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	gripe	gripe	NOUN	_	Gender=Fem|Number=Sing	19	obj	19:obj	SpaceAfter=No
+22	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0011
+# text = o medico perguntou ao agricultor o que ele estava fazendo que era diferente dos outros.
+1	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	medico	medico	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	perguntou	perguntar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4-5	ao	_	_	_	_	_	_	_	_
+4	a	a	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	agricultor	agricultor	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:a	_
+7	o	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	11	obj	11:obj	_
+8	que	que	PRON	_	PronType=Int	7	fixed	7:fixed	_
+9	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	nsubj	11:nsubj	_
+10	estava	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	11	aux	11:aux	_
+11	fazendo	fazer	VERB	_	VerbForm=Ger	6	acl:relcl	6:acl:relcl	_
+12	que	que	SCONJ	_	_	14	mark	14:mark	_
+13	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	14	cop	14:cop	_
+14	diferente	diferente	ADJ	_	Number=Sing	11	ccomp	11:ccomp	_
+15-16	dos	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	17:det	_
+17	outros	outro	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	14	obl	14:obl:de	SpaceAfter=No
+18	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0013
+# text = a esposa do fazendeiro respondeu que ela cortou uma cebola com casca em um prato e colocou em todos os comodos de sua casa.
+1	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	esposa	esposo	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	fazendeiro	fazendeiro	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	_
+6	respondeu	responder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	que	que	SCONJ	_	_	9	mark	9:mark|18:mark	_
+8	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	9	nsubj	9:nsubj|18:nsubj	_
+9	cortou	cortar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	ccomp	6:ccomp	_
+10	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	cebola	cebola	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+12	com	com	ADP	_	_	13	case	13:case	_
+13	casca	casca	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:com	_
+14	em	em	ADP	_	_	16	case	16:case	_
+15	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	prato	prato	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:em	_
+17	e	e	CCONJ	_	_	18	cc	18:cc	_
+18	colocou	colocar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	conj	6:ccomp|9:conj:e	_
+19	em	em	ADP	_	_	22	case	22:case	_
+20	todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Ind	22	det	22:det	_
+21	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	22:det	_
+22	comodos	comodo	NOUN	_	Gender=Masc|Number=Plur	18	obl	18:obl:em	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	25	det	25:det	_
+25	casa	casa	NOUN	_	Gender=Fem|Number=Sing	22	nmod	22:nmod:de	SpaceAfter=No
+26	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0015
+# text = o medico pensou que poderia ter sido a cura, entao ele pediu uma dessas cebolas.
+1	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	medico	medico	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	pensou	pensar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	5	mark	5:mark	_
+5	poderia	poder	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	3	ccomp	3:ccomp	_
+6	ter	ter	AUX	_	VerbForm=Inf	9	aux	9:aux	_
+7	sido	ser	AUX	_	Gender=Masc|Number=Sing|VerbForm=Part	9	cop	9:cop	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	cura	cura	NOUN	_	Gender=Fem|Number=Sing	5	xcomp	5:xcomp	SpaceAfter=No
+10	,	,	PUNCT	_	_	13	punct	13:punct	_
+11	entao	entao	ADV	_	_	13	advmod	13:advmod	_
+12	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	nsubj	13:nsubj	_
+13	pediu	pedir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	parataxis	3:parataxis	_
+14	uma	um	NUM	_	Gender=Fem|NumType=Card	13	obj	13:obj	_
+15-16	dessas	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	17	det	17:det	_
+17	cebolas	cebola	NOUN	_	Gender=Fem|Number=Plur	14	nmod	14:nmod:de	SpaceAfter=No
+18	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0017
+# text = * quando a colocou sob o microscopio, ele encontrou nela o virus da gripe.
+1	*	*	PUNCT	_	_	10	punct	10:punct	_
+2	quando	quando	SCONJ	_	_	4	mark	4:mark	_
+3	a	o	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	4	obj	4:obj	_
+4	colocou	colocar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	advcl	10:advcl:quando	_
+5	sob	sob	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	microscopio	microscopio	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:sob	SpaceAfter=No
+8	,	,	PUNCT	_	_	4	punct	4:punct	_
+9	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	nsubj	10:nsubj	_
+10	encontrou	encontrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+11-12	nela	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	12	case	12:case	_
+12	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	10	obl	10:obl:em	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	virus	virus	NOUN	_	Gender=Masc	10	obj	10:obj	_
+15-16	da	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	gripe	gripe	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:de	SpaceAfter=No
+18	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0019
+# text = * as cebolas, obviamente, absorveram todas as bacterias e, portanto, mantiveram a familia saudavel.
+1	*	*	PUNCT	_	_	7	punct	7:punct	_
+2	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	3:det	_
+3	cebolas	cebola	NOUN	_	Gender=Fem|Number=Plur	7	nsubj	7:nsubj|15:nsubj	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	obviamente	obviamente	ADV	_	_	7	advmod	7:advmod	SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	5:punct	_
+7	absorveram	absorver	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	todas	todo	DET	_	Gender=Fem|Number=Plur|PronType=Ind	10	det	10:det	_
+9	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	10:det	_
+10	bacterias	bacteria	NOUN	_	Gender=Fem|Number=Plur	7	obj	7:obj	_
+11	e	e	CCONJ	_	_	15	cc	15:cc	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	portanto	portanto	CCONJ	_	_	15	cc	15:cc	SpaceAfter=No
+14	,	,	PUNCT	_	_	13	punct	13:punct	_
+15	mantiveram	manter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	7	conj	7:conj:e	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	familia	familia	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	_
+18	saudavel	saudavel	ADJ	_	Number=Sing	17	amod	17:amod	SpaceAfter=No
+19	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0021
+# text = enviei esta historia para um amigo no oregon que regularmente me da material sobre questoes de saude.
+1	enviei	enviar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	3:det	_
+3	historia	historia	NOUN	_	Gender=Fem|Number=Sing	1	obj	1:obj	_
+4	para	para	ADP	_	_	6	case	6:case	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	amigo	amigo	NOUN	_	Gender=Masc|Number=Sing	1	obl	1:obl:para|13:nsubj	_
+7-8	no	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	oregon	oregon	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:em	_
+10	que	que	PRON	_	PronType=Rel	13	nsubj	6:ref	_
+11	regularmente	regularmente	ADV	_	_	13	advmod	13:advmod	_
+12	me	me	PRON	_	Case=Dat|Number=Sing|Person=1|PronType=Prs	13	iobj	13:iobj	_
+13-14	da	_	_	_	_	_	_	_	_
+13	de	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl:relcl	6:acl:relcl	_
+14	a	a	ADP	_	_	15	case	15:case	_
+15	material	material	NOUN	_	Gender=Masc|Number=Sing	13	obl	13:obl:a	_
+16	sobre	sobre	ADP	_	_	17	case	17:case	_
+17	questoes	questoe	NOUN	_	Gender=Fem|Number=Plur	15	nmod	15:nmod:sobre	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	saude	saude	NOUN	_	Gender=Fem|Number=Sing	17	nmod	17:nmod:de	SpaceAfter=No
+20	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0023
+# text = ele me respondeu com esta interessante experiencia sobre as cebolas: ele disse: obrigado pelo lembrete.
+1	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	3:nsubj	_
+2	me	me	PRON	_	Case=Dat|Number=Sing|Person=1|PronType=Prs	3	iobj	3:iobj	_
+3	respondeu	responder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	com	com	ADP	_	_	7	case	7:case	_
+5	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	7	det	7:det	_
+6	interessante	interessante	ADJ	_	Number=Sing	7	amod	7:amod	_
+7	experiencia	experiencia	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:com	_
+8	sobre	sobre	ADP	_	_	10	case	10:case	_
+9	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	10:det	_
+10	cebolas	cebola	NOUN	_	Gender=Fem|Number=Plur	7	nmod	7:nmod:sobre	SpaceAfter=No
+11	:	:	PUNCT	_	_	13	punct	13:punct	_
+12	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	nsubj	13:nsubj	_
+13	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	parataxis	3:parataxis	SpaceAfter=No
+14	:	:	PUNCT	_	_	15	punct	15:punct	_
+15	obrigado	obrigado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	13	ccomp:speech	13:ccomp:speech	_
+16-17	pelo	_	_	_	_	_	_	_	_
+16	por	por	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	lembrete	lembrete	NOUN	_	Gender=Masc|Number=Sing	15	obl	15:obl:por	SpaceAfter=No
+19	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0025
+# text = nao conheco a historia do agricultor, mas sei que tambem tive pneumonia e fiquei muito doente.
+1	nao	nao	ADV	_	_	2	advmod	2:advmod	_
+2	conheco	conhecer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	historia	historia	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	agricultor	agricultor	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:de	SpaceAfter=No
+8	,	,	PUNCT	_	_	10	punct	10:punct	_
+9	mas	mas	CCONJ	_	_	10	cc	10:cc	_
+10	sei	saber	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	conj	2:conj:mas	_
+11	que	que	SCONJ	_	_	13	mark	13:mark|16:mark	_
+12	tambem	tambem	ADV	_	_	13	advmod	13:advmod	_
+13	tive	ter	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	10	ccomp	10:ccomp	_
+14	pneumonia	pneumonia	NOUN	_	Gender=Fem|Number=Sing	13	obj	13:obj	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	fiquei	ficar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	13	conj	10:ccomp|13:conj:e	_
+17	muito	muito	ADV	_	_	18	advmod	18:advmod	_
+18	doente	doente	ADJ	_	Number=Sing	16	xcomp	16:xcomp	SpaceAfter=No
+19	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0027
+# text = do meu conhecimento anterior de cebolas, cortei as duas pontas de uma cebola, a coloquei em um jarro vazio, e o coloquei ao meu lado durante a noite.
+1-2	do	_	_	_	_	_	_	_	_
+1	de	de	ADP	_	_	4	case	4:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+3	meu	meu	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	det	4:det	_
+4	conhecimento	conhecimento	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:de	_
+5	anterior	anterior	ADJ	_	Number=Sing	4	amod	4:amod	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	cebolas	cebola	NOUN	_	Gender=Fem|Number=Plur	4	nmod	4:nmod:de	SpaceAfter=No
+8	,	,	PUNCT	_	_	4	punct	4:punct	_
+9	cortei	cortar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	12:det	_
+11	duas	dois	NUM	_	Gender=Fem|NumType=Card	12	nummod	12:nummod	_
+12	pontas	ponta	NOUN	_	Gender=Fem|Number=Plur	9	obj	9:obj	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	cebola	cebola	NOUN	_	Gender=Fem|Number=Sing	12	nmod	12:nmod:de	SpaceAfter=No
+16	,	,	PUNCT	_	_	18	punct	18:punct	_
+17	a	o	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	18	obj	18:obj	_
+18	coloquei	colocar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	9	conj	9:conj:e	_
+19	em	em	ADP	_	_	21	case	21:case	_
+20	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	jarro	jarro	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:em	_
+22	vazio	vazio	ADJ	_	Gender=Masc|Number=Sing	21	amod	21:amod	SpaceAfter=No
+23	,	,	PUNCT	_	_	26	punct	26:punct	_
+24	e	e	CCONJ	_	_	26	cc	26:cc	_
+25	o	o	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	26	obj	26:obj	_
+26	coloquei	colocar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	9	conj	9:conj:e	_
+27-28	ao	_	_	_	_	_	_	_	_
+27	a	a	ADP	_	_	30	case	30:case	_
+28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	30:det	_
+29	meu	meu	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	30	det	30:det	_
+30	lado	lado	NOUN	_	Gender=Masc|Number=Sing	26	obl	26:obl:a	_
+31	durante	durante	ADP	_	_	33	case	33:case	_
+32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	33:det	_
+33	noite	noite	NOUN	_	Gender=Fem|Number=Sing	26	obl	26:obl:durante	SpaceAfter=No
+34	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0029
+# text = de manha, comecei a me sentir melhor, enquanto a cebola ficava preta.
+1	de	de	ADP	_	_	2	case	2:case	_
+2	manha	manha	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:de	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	comecei	comeÃ§ar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	a	a	ADP	_	_	7	mark	7:mark	_
+6	me	me	PRON	_	Case=Dat|Number=Sing|Person=1|PronType=Prs	7	expl	7:expl	_
+7	sentir	sentir	VERB	_	VerbForm=Inf	4	xcomp	4:xcomp	_
+8	melhor	melhor	ADV	_	_	7	xcomp	7:xcomp	SpaceAfter=No
+9	,	,	PUNCT	_	_	13	punct	13:punct	_
+10	enquanto	enquanto	SCONJ	_	_	13	mark	13:mark	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	cebola	cebola	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	13:nsubj|14:nsubj	_
+13	ficava	ficar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	advcl	4:advcl:enquanto	_
+14	preta	preto	ADJ	_	Gender=Fem|Number=Sing	13	xcomp	13:xcomp	SpaceAfter=No
+15	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0031
+# text = muitas vezes quando temos problemas de estomago, nao sabemos a que culpar.
+1	muitas	muito	ADJ	_	Gender=Fem|Number=Plur	2	amod	2:amod	_
+2	vezes	vez	NOUN	_	Gender=Fem|Number=Plur	10	obl	10:obl	_
+3	quando	quando	SCONJ	_	_	4	mark	4:mark	_
+4	temos	ter	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	10	advcl	10:advcl:quando	_
+5	problemas	problema	NOUN	_	Gender=Masc|Number=Plur	4	obj	4:obj	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	estomago	estomago	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:de	SpaceAfter=No
+8	,	,	PUNCT	_	_	4	punct	4:punct	_
+9	nao	nao	ADV	_	_	10	advmod	10:advmod	_
+10	sabemos	saber	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+11	a	a	ADP	_	_	12	case	12:case	_
+12	que	que	PRON	_	PronType=Int	13	obl	13:obl:a	_
+13	culpar	culpar	VERB	_	VerbForm=Inf	10	xcomp	10:xcomp	SpaceAfter=No
+14	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0033
+# text = talvez as cebolas que comemos antes, sejam as culpadas.
+1	talvez	talvez	ADV	_	_	9	advmod	9:advmod	_
+2	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	3:det	_
+3	cebolas	cebola	NOUN	_	Gender=Fem|Number=Plur	10	nsubj	5:obj|10:nsubj	_
+4	que	que	PRON	_	PronType=Rel	5	obj	3:ref	_
+5	comemos	comer	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_
+6	antes	antes	ADV	_	_	5	advmod	5:advmod	SpaceAfter=No
+7	,	,	PUNCT	_	_	5	punct	5:punct	_
+8	sejam	ser	AUX	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_
+9	as	o	PRON	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	dep	10:dep	_
+10	culpadas	culpar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	0	root	0:root	SpaceAfter=No
+11	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0035
+# text = * cebola absorve bacteria * e essa e a razao pela qual elas sao tao boas em nos impedir de pegar * gripes e resfriados * * e, por essa razao, nao devemos comer uma cebola que esteja descansando por um tempo depois de cortada.
+1	*	*	PUNCT	_	_	3	punct	3:punct	_
+2	cebola	cebola	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_
+3	absorve	absorver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	bacteria	bacteria	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+5	*	*	PUNCT	_	_	3	punct	3:punct	_
+6	e	e	CCONJ	_	_	10	cc	10:cc	_
+7	essa	esse	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	10	nsubj	10:nsubj	_
+8	e	e	CCONJ	_	_	10	cc	10:cc	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	razao	razao	NOUN	_	Gender=Fem|Number=Sing	3	conj	3:conj:e|17:obl:por	_
+11-12	pela	_	_	_	_	_	_	_	_
+11	por	por	ADP	_	_	12	case	12:case	_
+12	a	o	PRON	_	ExtPos=PRON|Gender=Fem|Number=Sing|Person=3|PronType=Dem	17	obl	10:ref|17:obl	_
+13	qual	qual	PRON	_	Number=Sing|PronType=Rel	12	fixed	12:fixed	_
+14	elas	ele	PRON	_	Case=Nom|Gender=Fem|Number=Plur|Person=3|PronType=Prs	17	nsubj	17:nsubj	_
+15	sao	sao	ADV	_	_	17	advmod	17:advmod	_
+16	tao	tao	ADV	_	_	17	advmod	17:advmod	_
+17	boas	bom	ADJ	_	Gender=Fem|Number=Plur	10	acl:relcl	10:acl:relcl	_
+18	em	em	ADP	_	_	20	mark	20:mark	_
+19	nos	nos	PRON	_	Case=Acc|Number=Plur|Person=1|PronType=Prs	20	obj	20:obj|22:nsubj	_
+20	impedir	impedir	VERB	_	VerbForm=Inf	17	acl	17:acl:em	_
+21	de	de	ADP	_	_	22	mark	22:mark	_
+22	pegar	pegar	VERB	_	VerbForm=Inf	20	xcomp	20:xcomp	_
+23	*	*	PUNCT	_	_	24	punct	24:punct	_
+24	gripes	gripe	NOUN	_	Gender=Fem|Number=Plur	22	obj	22:obj	_
+25	e	e	CCONJ	_	_	26	cc	26:cc	_
+26	resfriados	resfriado	NOUN	_	Gender=Masc|Number=Plur	24	conj	22:obj|24:conj:e	_
+27	*	*	PUNCT	_	_	24	punct	24:punct	_
+28	*	*	PUNCT	_	_	36	punct	36:punct	_
+29	e	e	CCONJ	_	_	36	cc	36:cc	SpaceAfter=No
+30	,	,	PUNCT	_	_	33	punct	33:punct	_
+31	por	por	ADP	_	_	33	case	33:case	_
+32	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	33	det	33:det	_
+33	razao	razao	NOUN	_	Gender=Fem|Number=Sing	36	obl	36:obl:por	SpaceAfter=No
+34	,	,	PUNCT	_	_	33	punct	33:punct	_
+35	nao	nao	ADV	_	_	36	advmod	36:advmod	_
+36	devemos	dever	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	conj	3:conj:e	_
+37	comer	comer	VERB	_	VerbForm=Inf	36	xcomp	36:xcomp	_
+38	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	39	det	39:det	_
+39	cebola	cebola	NOUN	_	Gender=Fem|Number=Sing	37	obj	37:obj|42:nsubj	_
+40	que	que	PRON	_	PronType=Rel	42	nsubj	39:ref	_
+41	esteja	estar	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	42	aux	42:aux	_
+42	descansando	descansar	VERB	_	VerbForm=Ger	39	acl:relcl	39:acl:relcl	_
+43	por	por	ADP	_	_	45	case	45:case	_
+44	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	45	det	45:det	_
+45	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	42	obl	42:obl:por	_
+46	depois	depois	ADV	_	_	37	advmod	37:advmod	_
+47	de	de	ADP	_	_	48	mark	48:mark	_
+48	cortada	cortar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	46	acl	46:acl:de	SpaceAfter=No
+49	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0037
+# text = * restos de cebola sao venenosos.
+1	*	*	PUNCT	_	_	2	punct	2:punct	_
+2	restos	resto	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	6:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	cebola	cebola	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+5	sao	sao	ADV	_	_	6	advmod	6:advmod	_
+6	venenosos	venenoso	ADJ	_	Gender=Masc|Number=Plur	0	root	0:root	SpaceAfter=No
+7	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0039
+# text = quando uma intoxicacao alimentar e relatada, a primeira coisa que as autoridades procuram e se a vitima comeu cebolas e de onde vieram essas cebolas.
+1	quando	quando	SCONJ	_	_	6	mark	6:mark	_
+2	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	intoxicacao	intoxicacao	NOUN	_	Gender=Fem|Number=Sing	6	nsubj:pass	6:nsubj:pass	_
+4	alimentar	alimentar	ADJ	_	Number=Sing	3	amod	3:amod	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	relatada	relatar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	10	advcl	10:advcl:quando|19:advcl:quando|24:advcl:quando	SpaceAfter=No
+7	,	,	PUNCT	_	_	6	punct	6:punct	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+9	primeira	primeiro	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	10	amod	10:amod	_
+10	coisa	coisa	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root|14:obj	_
+11	que	que	PRON	_	PronType=Rel	14	obj	10:ref	_
+12	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	13:det	_
+13	autoridades	autoridade	NOUN	_	Gender=Fem|Number=Plur	14	nsubj	14:nsubj	_
+14	procuram	procurar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	acl:relcl	10:acl:relcl	_
+15	e	e	CCONJ	_	_	19	cop	19:cop	_
+16	se	se	SCONJ	_	_	19	mark	19:mark|24:mark	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	vitima	vitima	NOUN	_	Gender=Fem|Number=Sing	19	nsubj	19:nsubj	_
+19	comeu	comer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	conj	10:conj	_
+20	cebolas	cebola	NOUN	_	Gender=Fem|Number=Plur	19	obj	19:obj	_
+21	e	e	CCONJ	_	_	24	cc	24:cc	_
+22	de	de	ADP	_	_	23	case	23:case	_
+23	onde	onde	ADV	_	_	24	advmod	24:advmod	_
+24	vieram	vir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	19	conj	19:conj:e	_
+25	essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	26	det	26:det	_
+26	cebolas	cebola	NOUN	_	Gender=Fem|Number=Plur	24	nsubj	24:nsubj	SpaceAfter=No
+27	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0041
+# text = muito provavelmente, as *cebolas* sao a causa.
+1	muito	muito	ADV	_	_	2	advmod	2:advmod	_
+2	provavelmente	provavelmente	ADV	_	_	10	advmod	10:advmod	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	6:det	_
+5	*	*	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+6	cebolas	cebola	NOUN	_	Gender=Fem|Number=Plur	10	nsubj	10:nsubj	SpaceAfter=No
+7	*	*	PUNCT	_	_	6	punct	6:punct	_
+8	sao	sao	ADV	_	_	10	advmod	10:advmod	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	causa	causa	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+11	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0043
+# text = * as cebolas sao enormes imas para bacterias, especialmente as cruas .
+1	*	*	PUNCT	_	_	6	punct	6:punct	_
+2	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	3:det	_
+3	cebolas	cebola	NOUN	_	Gender=Fem|Number=Plur	6	nsubj	6:nsubj	_
+4	sao	sao	PROPN	_	_	6	advmod	6:advmod	_
+5	enormes	enorme	ADJ	_	Number=Plur	6	amod	6:amod	_
+6	imas	imo	NOUN	_	Gender=Fem|Number=Plur	0	root	0:root	_
+7	para	para	ADP	_	_	8	case	8:case|11:case	_
+8	bacterias	bacteria	NOUN	_	Gender=Fem|Number=Plur	6	nmod	6:nmod:para	SpaceAfter=No
+9	,	,	PUNCT	_	_	11	punct	11:punct	_
+10	especialmente	especialmente	ADV	_	_	11	advmod	11:advmod	_
+11	as	o	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Dem	8	conj	6:nmod:para|8:conj	_
+12	cruas	cru	ADJ	_	Gender=Fem|Number=Plur	11	amod	11:amod	_
+13	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0045
+# text = * nunca guarde uma porcao de cebola em fatias por um periodo de tempo e depois use-a na preparacao de alimentos.
+1	*	*	PUNCT	_	_	3	punct	3:punct	_
+2	nunca	nunca	ADV	_	_	3	advmod	3:advmod	_
+3	guarde	guardar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	porcao	porcao	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	cebola	cebola	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	_
+8	em	em	ADP	_	_	9	case	9:case	_
+9	fatias	fatia	NOUN	_	Gender=Fem|Number=Plur	3	obl	3:obl:em	_
+10	por	por	ADP	_	_	12	case	12:case	_
+11	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	periodo	periodo	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:por	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:de	_
+15	e	e	CCONJ	_	_	17	cc	17:cc	_
+16	depois	depois	ADV	_	_	17	advmod	17:advmod	_
+17-18	use-a	_	_	_	_	_	_	_	_
+17	use	usar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	3:conj:e	_
+18	a	o	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	17	obj	17:obj	_
+19-20	na	_	_	_	_	_	_	_	_
+19	em	em	ADP	_	_	21	case	21:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	preparacao	preparacao	NOUN	_	Gender=Fem|Number=Sing	17	obl	17:obl:em	_
+22	de	de	ADP	_	_	23	case	23:case	_
+23	alimentos	alimento	NOUN	_	Gender=Masc|Number=Plur	21	nmod	21:nmod:de	SpaceAfter=No
+24	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0047
+# text = * * nao e seguro nem mesmo se voce armazenar a cebola em um saco com ziper e coloca-la na geladeira.
+1	*	*	PUNCT	_	_	5	punct	5:punct	_
+2	*	*	PUNCT	_	_	5	punct	5:punct	_
+3	nao	nao	ADV	_	_	5	advmod	5:advmod	_
+4	e	e	CCONJ	_	_	5	cop	5:cop	_
+5	seguro	seguro	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	_
+6	nem	nem	ADV	_	_	5	advmod	5:advmod	_
+7	mesmo	mesmo	ADV	_	_	6	advmod	6:advmod	_
+8	se	se	SCONJ	_	_	10	mark	10:mark|19:mark	_
+9	voce	voce	PRON	_	PronType=Dem	10	nsubj	10:nsubj	_
+10	armazenar	armazenar	VERB	_	VerbForm=Inf	5	advcl	5:advcl:se	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	cebola	cebola	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	saco	saco	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:em	_
+16	com	com	ADP	_	_	17	case	17:case	_
+17	ziper	ziper	NOUN	_	Gender=Masc|Number=Sing	15	nmod	15:nmod:com	_
+18	e	e	CCONJ	_	_	19	cc	19:cc	_
+19-20	coloca-la	_	_	_	_	_	_	_	_
+19	coloca	colocar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	conj	5:advcl:se|10:conj:e	_
+20	la	lo	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	19	obj	19:obj	_
+21-22	na	_	_	_	_	_	_	_	_
+21	em	em	ADP	_	_	23	case	23:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	geladeira	geladeira	NOUN	_	Gender=Fem|Number=Sing	19	obl	19:obl:em	SpaceAfter=No
+24	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0049
+# text = ainda e venenoso * alem disso, nao de cebolas para os caes.
+1	ainda	ainda	ADV	_	_	3	advmod	3:advmod	_
+2	e	e	CCONJ	_	_	3	cc	3:cc	_
+3	venenoso	venenoso	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	_
+4	*	*	PUNCT	_	_	5	punct	5:punct	_
+5	alem	alem	ADV	_	_	3	advmod	3:advmod	_
+6-7	disso	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	5	obl	5:obl:de	_
+8	,	,	PUNCT	_	_	5	punct	5:punct	_
+9	nao	nao	ADV	_	_	11	advmod	11:advmod	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	cebolas	cebola	NOUN	_	Gender=Fem|Number=Plur	3	obl	3:obl:de	_
+12	para	para	ADP	_	_	14	case	14:case	_
+13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	14:det	_
+14	caes	ca	NOUN	_	Gender=Masc|Number=Plur	11	nmod	11:nmod:para	SpaceAfter=No
+15	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0051
+# text = seus estomagos nao podem metabolizar cebolas.
+1	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	2	det	2:det	_
+2	estomagos	estomago	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	4:nsubj|5:nsubj	_
+3	nao	nao	ADV	_	_	4	advmod	4:advmod	_
+4	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	metabolizar	metabolizar	VERB	_	VerbForm=Inf	4	xcomp	4:xcomp	_
+6	cebolas	cebola	NOUN	_	Gender=Fem|Number=Plur	5	obj	5:obj	SpaceAfter=No
+7	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0053
+# text = * lembre-se que e perigoso cortar uma cebola, usar a metade e guardar a outra para cozinhar no dia seguinte.
+1	*	*	PUNCT	_	_	2	punct	2:punct	_
+2-3	lembre-se	_	_	_	_	_	_	_	_
+2	lembre	lembrar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+3	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	2	expl:impers	2:expl:impers	_
+4	que	que	SCONJ	_	_	6	mark	6:mark	_
+5	e	e	CCONJ	_	_	6	cop	6:cop	_
+6	perigoso	perigoso	ADJ	_	Gender=Masc|Number=Sing	2	ccomp	2:ccomp	_
+7	cortar	cortar	VERB	_	VerbForm=Inf	6	csubj	6:csubj	_
+8	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	cebola	cebola	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	usar	usar	VERB	_	VerbForm=Inf	7	conj	6:csubj|7:conj:e	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	metade	metade	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	_
+14	e	e	CCONJ	_	_	15	cc	15:cc	_
+15	guardar	guardar	VERB	_	VerbForm=Inf	7	conj	6:csubj|7:conj:e	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	outra	outro	PRON	_	Gender=Fem|Number=Sing|PronType=Ind	15	obj	15:obj	_
+18	para	para	ADP	_	_	19	mark	19:mark	_
+19	cozinhar	cozinhar	VERB	_	VerbForm=Inf	15	advcl	15:advcl:para	_
+20-21	no	_	_	_	_	_	_	_	_
+20	em	em	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	dia	dia	NOUN	_	Gender=Masc|Number=Sing	19	obl	19:obl:em	_
+23	seguinte	seguinte	ADJ	_	Number=Sing	22	amod	22:amod	SpaceAfter=No
+24	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0055
+# text = esta segunda metade torna-se altamente venenosa, mesmo em uma unica noite, porque cria bacterias toxicas que causam infeccoes estomacais adversas devido as secrecoes biliares em excesso, tornando os alimentos envenenados.
+1	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	3:det	_
+2	segunda	segundo	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	3	amod	3:amod	_
+3	metade	metade	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj|7:nsubj	_
+4-5	torna-se	_	_	_	_	_	_	_	_
+4	torna	tornar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	4	expl	4:expl	_
+6	altamente	altamente	ADV	_	_	7	advmod	7:advmod	_
+7	venenosa	venenoso	ADJ	_	Gender=Fem|Number=Sing	4	xcomp	4:xcomp	SpaceAfter=No
+8	,	,	PUNCT	_	_	13	punct	13:punct	_
+9	mesmo	mesmo	ADV	_	_	13	advmod	13:advmod	_
+10	em	em	ADP	_	_	13	case	13:case	_
+11	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+12	unica	unico	ADJ	_	Gender=Fem|Number=Sing	13	amod	13:amod	_
+13	noite	noite	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:em	SpaceAfter=No
+14	,	,	PUNCT	_	_	16	punct	16:punct	_
+15	porque	porque	SCONJ	_	_	16	mark	16:mark	_
+16	cria	criar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	4:advcl:porque	_
+17	bacterias	bacteria	NOUN	_	Gender=Fem|Number=Plur	16	obj	16:obj|20:nsubj	_
+18	toxicas	toxico	ADJ	_	Gender=Fem|Number=Plur	17	amod	17:amod	_
+19	que	que	PRON	_	PronType=Rel	20	nsubj	17:ref	_
+20	causam	causar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	acl:relcl	17:acl:relcl	_
+21	infeccoes	infeccoe	NOUN	_	Gender=Fem|Number=Plur	20	obj	20:obj	_
+22	estomacais	estomacal	ADJ	_	Number=Plur	21	amod	21:amod	_
+23	adversas	adverso	ADJ	_	Gender=Fem|Number=Plur	21	amod	21:amod	_
+24	devido	dever	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	20	advcl	20:advcl	_
+25	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	26	det	26:det	_
+26	secrecoes	secrecoe	NOUN	_	Gender=Fem|Number=Plur	24	obl	24:obl	_
+27	biliares	biliar	ADJ	_	Number=Plur	26	amod	26:amod	_
+28	em	em	ADP	_	_	29	case	29:case	_
+29	excesso	excesso	NOUN	_	Gender=Masc|Number=Sing	26	nmod	26:nmod:em	SpaceAfter=No
+30	,	,	PUNCT	_	_	31	punct	31:punct	_
+31	tornando	tornar	VERB	_	VerbForm=Ger	20	advcl	20:advcl	_
+32	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	33	det	33:det	_
+33	alimentos	alimento	NOUN	_	Gender=Masc|Number=Plur	31	obj	31:obj|34:nsubj	_
+34	envenenados	envenenado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	31	xcomp	31:xcomp	SpaceAfter=No
+35	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0057
+# text = * sempre que cortar uma cebola e usar so a metade, coloque a outra metade em algum ponto de sua casa, de preferencia nos quartos, para que absorvam possiveis bacterias!
+1	*	*	PUNCT	_	_	13	punct	13:punct	_
+2	sempre	sempre	ADV	_	ExtPos=SCONJ	4	mark	4:mark|8:mark	_
+3	que	que	SCONJ	_	_	2	fixed	2:fixed	_
+4	cortar	cortar	VERB	_	VerbForm=Inf	13	advcl	13:advcl:sempre_que	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	cebola	cebola	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	usar	usar	VERB	_	VerbForm=Inf	4	conj	4:conj:e|13:advcl:sempre_que	_
+9	so	so	ADV	_	_	11	advmod	11:advmod	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	metade	metade	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	SpaceAfter=No
+12	,	,	PUNCT	_	_	4	punct	4:punct	_
+13	coloque	colocar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+15	outra	outro	DET	_	Gender=Fem|Number=Sing|PronType=Ind	16	det	16:det	_
+16	metade	metade	NOUN	_	Gender=Fem|Number=Sing	13	obj	13:obj	_
+17	em	em	ADP	_	_	19	case	19:case	_
+18	algum	algum	DET	_	Gender=Masc|Number=Sing|PronType=Ind	19	det	19:det	_
+19	ponto	ponto	NOUN	_	Gender=Masc|Number=Sing	13	obl	13:obl:em	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	22	det	22:det	_
+22	casa	casa	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:de	SpaceAfter=No
+23	,	,	PUNCT	_	_	28	punct	28:punct	_
+24	de	de	ADP	_	_	25	case	25:case	_
+25	preferencia	preferencia	NOUN	_	Gender=Fem|Number=Sing	28	nmod	28:nmod:de	_
+26-27	nos	_	_	_	_	_	_	_	_
+26	em	em	ADP	_	_	28	case	28:case	_
+27	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	28:det	_
+28	quartos	quarto	NOUN	_	Gender=Masc|Number=Plur	19	nmod	19:nmod:em	SpaceAfter=No
+29	,	,	PUNCT	_	_	32	punct	32:punct	_
+30	para	para	ADP	_	ExtPos=SCONJ	32	mark	32:mark	_
+31	que	que	SCONJ	_	_	30	fixed	30:fixed	_
+32	absorvam	absorver	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	advcl	13:advcl:para_que	_
+33	possiveis	possivel	ADJ	_	Number=Plur	34	amod	34:amod	_
+34	bacterias	bacteria	NOUN	_	Gender=Fem|Number=Plur	32	obj	32:obj	SpaceAfter=No
+35	!	!	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0059
+# text = deixe o maior numero possivel de pessoas saberem.
+1	deixe	deixar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+3	maior	maior	ADJ	_	Number=Sing	4	amod	4:amod	_
+4	numero	numero	NOUN	_	Gender=Masc|Number=Sing	1	obj	1:obj|8:nsubj	_
+5	possivel	possivel	ADJ	_	Number=Sing	4	amod	4:amod	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	4	nmod	4:nmod:de	_
+8	saberem	saber	VERB	_	Number=Plur|Person=3|VerbForm=Inf	1	xcomp	1:xcomp	SpaceAfter=No
+9	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0061
+# text = compartilhe!
+1	compartilhe	compartilhar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+2	!	!	PUNCT	_	_	1	punct	1:punct	_

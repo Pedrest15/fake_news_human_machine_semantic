@@ -1,0 +1,704 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Famílias em SP vivem drama: Escolha entre comida e remédios com salário mínimo.
+1	Famílias	família	NOUN	_	Gender=Fem|Number=Plur	4	nsubj	4:nsubj	_
+2	em	em	ADP	_	_	3	case	3:case	_
+3	SP	SP	PROPN	_	_	1	nmod	1:nmod:em	_
+4	vivem	viver	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	drama	drama	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	SpaceAfter=No
+6	:	:	PUNCT	_	_	7	punct	7:punct	_
+7	Escolha	escolha	NOUN	_	Gender=Fem|Number=Sing	4	parataxis	4:parataxis	_
+8	entre	entre	ADP	_	_	9	case	9:case	_
+9	comida	comida	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:entre	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	remédios	remédio	NOUN	_	Gender=Masc|Number=Plur	9	conj	7:nmod:entre|9:conj:e	_
+12	com	com	ADP	_	_	13	case	13:case	_
+13	salário	salário	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:com|11:nmod:com	_
+14	mínimo	mínimo	ADJ	_	Gender=Masc|Number=Sing	13	amod	13:amod	SpaceAfter=No
+15	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0003
+# text = Em uma realidade chocante, famílias sobrevivendo com apenas um salário mínimo em São Paulo enfrentam decisões cruciais entre alimentação e saúde.
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	realidade	realidade	NOUN	_	Gender=Fem|Number=Sing	16	obl	16:obl:em	_
+4	chocante	chocante	ADJ	_	Number=Sing	3	amod	3:amod	SpaceAfter=No
+5	,	,	PUNCT	_	_	3	punct	3:punct	_
+6	famílias	família	NOUN	_	Gender=Fem|Number=Plur	16	nsubj	16:nsubj	_
+7	sobrevivendo	sobreviver	VERB	_	VerbForm=Ger	6	acl	6:acl	_
+8	com	com	ADP	_	_	11	case	11:case	_
+9	apenas	apenas	ADV	_	_	10	advmod	10:advmod	_
+10	um	um	NUM	_	Gender=Masc|NumType=Card	11	nummod	11:nummod	_
+11	salário	salário	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:com	_
+12	mínimo	mínimo	ADJ	_	Gender=Masc|Number=Sing	11	amod	11:amod	_
+13	em	em	ADP	_	_	14	case	14:case	_
+14	São	São	PROPN	_	_	7	obl	7:obl:em	_
+15	Paulo	Paulo	PROPN	_	_	14	flat:name	14:flat:name	_
+16	enfrentam	enfrentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+17	decisões	decisão	NOUN	_	Gender=Fem|Number=Plur	16	obj	16:obj	_
+18	cruciais	crucial	ADJ	_	Number=Plur	17	amod	17:amod	_
+19	entre	entre	ADP	_	_	20	case	20:case	_
+20	alimentação	alimentação	NOUN	_	Gender=Fem|Number=Sing	17	nmod	17:nmod:entre	_
+21	e	e	CCONJ	_	_	22	cc	22:cc	_
+22	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	20	conj	17:nmod:entre|20:conj:e	SpaceAfter=No
+23	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0005
+# text = Carlos e Odilene, residentes em uma ocupação, relatam que, às vezes, precisam escolher entre comprar sabonete ou um pedaço de carne.
+1	Carlos	Carlos	PROPN	_	_	10	nsubj	10:nsubj	_
+2	e	e	CCONJ	_	_	3	cc	3:cc	_
+3	Odilene	Odilene	PROPN	_	_	1	conj	1:conj:e|10:nsubj	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	residentes	residente	NOUN	_	Number=Plur	1	appos	1:appos|3:appos	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	ocupação	ocupação	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:em	SpaceAfter=No
+9	,	,	PUNCT	_	_	5	punct	5:punct	_
+10	relatam	relatar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+11	que	que	SCONJ	_	_	17	mark	17:mark	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13-14	às	_	_	_	_	_	_	_	_
+13	a	a	ADP	_	ExtPos=ADV	17	advmod	17:advmod	_
+14	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	fixed	13:fixed	_
+15	vezes	vez	NOUN	_	Gender=Fem|Number=Plur	13	fixed	13:fixed	SpaceAfter=No
+16	,	,	PUNCT	_	_	13	punct	13:punct	_
+17	precisam	precisar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	ccomp	10:ccomp	_
+18	escolher	escolher	VERB	_	VerbForm=Inf	17	xcomp	17:xcomp	_
+19	entre	entre	ADP	_	_	20	mark	20:mark	_
+20	comprar	comprar	VERB	_	VerbForm=Inf	18	xcomp	18:xcomp	_
+21	sabonete	sabonete	NOUN	_	Gender=Masc|Number=Sing	20	obj	20:obj	_
+22	ou	ou	CCONJ	_	_	24	cc	24:cc	_
+23	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	pedaço	pedaço	NOUN	_	Gender=Masc|Number=Sing	21	conj	20:obj|21:conj:ou	_
+25	de	de	ADP	_	_	26	case	26:case	_
+26	carne	carne	NOUN	_	Gender=Fem|Number=Sing	24	nmod	24:nmod:de	SpaceAfter=No
+27	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0007
+# text = "Nós preferimos garantir que a comida esteja na mesa, mesmo que isso signifique sacrificar a higiene", diz Carlos.
+1	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	Nós	nós	PRON	_	Case=Nom|Number=Plur|Person=1|PronType=Prs	3	nsubj	3:nsubj|4:nsubj	_
+3	preferimos	preferir	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	22	ccomp:speech	22:ccomp:speech	_
+4	garantir	garantir	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+5	que	que	SCONJ	_	_	11	mark	11:mark	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	comida	comida	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	11:nsubj	_
+8	esteja	estar	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	11:cop	_
+9-10	na	_	_	_	_	_	_	_	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	mesa	mesa	NOUN	_	Gender=Fem|Number=Sing	4	ccomp	4:ccomp	SpaceAfter=No
+12	,	,	PUNCT	_	_	16	punct	16:punct	_
+13	mesmo	mesmo	ADV	_	ExtPos=SCONJ	16	mark	16:mark	_
+14	que	que	SCONJ	_	_	13	fixed	13:fixed	_
+15	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	16	nsubj	16:nsubj|17:nsubj	_
+16	signifique	significar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	4:advcl:mesmo_que	_
+17	sacrificar	sacrificar	VERB	_	VerbForm=Inf	16	xcomp	16:xcomp	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	higiene	higiene	NOUN	_	Gender=Fem|Number=Sing	17	obj	17:obj	SpaceAfter=No
+20	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+21	,	,	PUNCT	_	_	3	punct	3:punct	_
+22	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+23	Carlos	Carlos	PROPN	_	_	22	nsubj	22:nsubj	SpaceAfter=No
+24	.	.	PUNCT	_	_	22	punct	22:punct	_
+
+# sent_id = S0009
+# text = Já Reginaldo e Rafaela, na favela de Paraisópolis, convivem com um telhado quebrado e goteiras que transformam suas noites em pesadelos.
+1	Já	já	CCONJ	_	_	12	cc	12:cc	_
+2	Reginaldo	Reginaldo	PROPN	_	_	12	nsubj	12:nsubj	_
+3	e	e	CCONJ	_	_	4	cc	4:cc	_
+4	Rafaela	Rafaela	PROPN	_	_	2	conj	2:conj:e|12:nsubj	SpaceAfter=No
+5	,	,	PUNCT	_	_	8	punct	8:punct	_
+6-7	na	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	favela	favela	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl:em	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	Paraisópolis	Paraisópolis	PROPN	_	_	8	nmod	8:nmod:de	SpaceAfter=No
+11	,	,	PUNCT	_	_	8	punct	8:punct	_
+12	convivem	conviver	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+13	com	com	ADP	_	_	15	case	15:case|18:case	_
+14	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	telhado	telhado	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:com	_
+16	quebrado	quebrado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	15	amod	15:amod	_
+17	e	e	CCONJ	_	_	18	cc	18:cc	_
+18	goteiras	goteira	NOUN	_	Gender=Fem|Number=Plur	15	conj	12:obl:com|15:conj:e|20:nsubj	_
+19	que	que	PRON	_	PronType=Rel	20	nsubj	18:ref	_
+20	transformam	transformar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	acl:relcl	18:acl:relcl	_
+21	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	22	det	22:det	_
+22	noites	noite	NOUN	_	Gender=Fem|Number=Plur	20	obj	20:obj	_
+23	em	em	ADP	_	_	24	case	24:case	_
+24	pesadelos	pesadelo	NOUN	_	Gender=Masc|Number=Plur	20	obl	20:obl:em	SpaceAfter=No
+25	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0011
+# text = Ou consertamos o telhado ou alimentamos nossos filhos.
+1	Ou	ou	CCONJ	_	_	2	cc	2:cc	_
+2	consertamos	consertar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	telhado	telhado	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+5	ou	ou	CCONJ	_	_	6	cc	6:cc	_
+6	alimentamos	alimentar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	conj	2:conj:ou	_
+7	nossos	nosso	DET	_	Gender=Masc|Number=Plur|Person=1|Poss=Yes|PronType=Prs	8	det	8:det	_
+8	filhos	filho	NOUN	_	Gender=Masc|Number=Plur	6	obj	6:obj	SpaceAfter=No
+9	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0013
+# text = A escolha é cruel, mas óbvia, afirma Reginaldo.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	escolha	escolha	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj|7:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop|7:cop	_
+4	cruel	cruel	ADJ	_	Number=Sing	9	ccomp:speech	9:ccomp:speech	SpaceAfter=No
+5	,	,	PUNCT	_	_	7	punct	7:punct	_
+6	mas	mas	CCONJ	_	_	7	cc	7:cc	_
+7	óbvia	óbvio	ADJ	_	Gender=Fem|Number=Sing	4	conj	4:conj:mas|9:ccomp:speech	SpaceAfter=No
+8	,	,	PUNCT	_	_	4	punct	4:punct	_
+9	afirma	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+10	Reginaldo	Reginaldo	PROPN	_	_	9	nsubj	9:nsubj	SpaceAfter=No
+11	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0015
+# text = Renata, mãe solteira vendendo marmitas na Cracolândia, revela um dilema ainda mais desafiador.
+1	Renata	Renata	PROPN	_	_	11	nsubj	11:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	mãe	mãe	NOUN	_	Gender=Fem|Number=Sing	1	appos	1:appos	_
+4	solteira	solteiro	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+5	vendendo	vender	VERB	_	VerbForm=Ger	3	acl	3:acl	_
+6	marmitas	marmita	NOUN	_	Gender=Fem|Number=Plur	5	obj	5:obj	_
+7-8	na	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	Cracolândia	Cracolândia	PROPN	_	_	5	obl	5:obl:em	SpaceAfter=No
+10	,	,	PUNCT	_	_	3	punct	3:punct	_
+11	revela	revelar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+12	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	dilema	dilema	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj	_
+14	ainda	ainda	ADV	_	_	16	advmod	16:advmod	_
+15	mais	mais	ADV	_	_	16	advmod	16:advmod	_
+16	desafiador	desafiador	ADJ	_	Gender=Masc|Number=Sing	13	amod	13:amod	SpaceAfter=No
+17	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0017
+# text = "Não tenho escolha a não ser economizar ao máximo, e isso significa que, às vezes, faltam itens básicos como leite e fraldas", lamenta.
+1	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	Não	não	ADV	_	_	3	advmod	3:advmod	_
+3	tenho	ter	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	31	ccomp:speech	31:ccomp:speech	_
+4	escolha	escolha	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+5	a	a	ADP	_	_	8	mark	8:mark	_
+6	não	não	ADV	_	_	8	advmod	8:advmod	_
+7	ser	ser	AUX	_	VerbForm=Inf	8	cop	8:cop	_
+8	economizar	economizar	VERB	_	VerbForm=Inf	4	acl	4:acl:a	_
+9-10	ao	_	_	_	_	_	_	_	_
+9	a	a	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	máximo	máximo	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:a	SpaceAfter=No
+12	,	,	PUNCT	_	_	15	punct	15:punct	_
+13	e	e	CCONJ	_	_	15	cc	15:cc	_
+14	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	15	nsubj	15:nsubj	_
+15	significa	significar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	3:conj:e|31:ccomp:speech	_
+16	que	que	SCONJ	_	_	22	mark	22:mark	SpaceAfter=No
+17	,	,	PUNCT	_	_	18	punct	18:punct	_
+18-19	às	_	_	_	_	_	_	_	_
+18	a	a	ADP	_	ExtPos=ADV	22	advmod	22:advmod	_
+19	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	fixed	18:fixed	_
+20	vezes	vez	NOUN	_	Gender=Fem|Number=Plur	18	fixed	18:fixed	SpaceAfter=No
+21	,	,	PUNCT	_	_	18	punct	18:punct	_
+22	faltam	faltar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	ccomp	15:ccomp	_
+23	itens	item	NOUN	_	Gender=Masc|Number=Plur	22	nsubj	22:nsubj	_
+24	básicos	básico	ADJ	_	Gender=Masc|Number=Plur	23	amod	23:amod	_
+25	como	como	ADP	_	_	26	case	26:case|28:case	_
+26	leite	leite	NOUN	_	Gender=Masc|Number=Sing	23	nmod	23:nmod:como	_
+27	e	e	CCONJ	_	_	28	cc	28:cc	_
+28	fraldas	fralda	NOUN	_	Gender=Fem|Number=Plur	26	conj	23:nmod:como|26:conj:e	SpaceAfter=No
+29	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+30	,	,	PUNCT	_	_	3	punct	3:punct	_
+31	lamenta	lamentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+32	.	.	PUNCT	_	_	31	punct	31:punct	_
+
+# sent_id = S0019
+# text = O custo de vida na região central de São Paulo é impiedoso, e Renata, que sustenta sete crianças, vê-se obrigada a usar o pouco dinheiro que sobra para necessidades emergenciais.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	custo	custo	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	13:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	vida	vida	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+5-6	na	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	região	região	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:em	_
+8	central	central	ADJ	_	Number=Sing	7	amod	7:amod	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	São	São	PROPN	_	_	7	nmod	7:nmod:de	_
+11	Paulo	Paulo	PROPN	_	_	10	flat:name	10:flat:name	_
+12	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	13:cop	_
+13	impiedoso	impiedoso	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+14	,	,	PUNCT	_	_	23	punct	23:punct	_
+15	e	e	CCONJ	_	_	23	cc	23:cc	_
+16	Renata	Renata	PROPN	_	_	23	nsubj	19:nsubj|23:nsubj|25:nsubj:pass|27:nsubj	SpaceAfter=No
+17	,	,	PUNCT	_	_	19	punct	19:punct	_
+18	que	que	PRON	_	PronType=Rel	19	nsubj	16:ref	_
+19	sustenta	sustentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	acl:relcl	16:acl:relcl	_
+20	sete	sete	NUM	_	NumType=Card	21	nummod	21:nummod	_
+21	crianças	criança	NOUN	_	Gender=Fem|Number=Plur	19	obj	19:obj	SpaceAfter=No
+22	,	,	PUNCT	_	_	19	punct	19:punct	_
+23-24	vê-se	_	_	_	_	_	_	_	_
+23	ver	ver	VERB	_	VerbForm=Inf	13	conj	13:conj:e	_
+24	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	23	expl	23:expl	_
+25	obrigada	obrigar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	23	xcomp	23:xcomp	_
+26	a	a	ADP	_	_	27	mark	27:mark	_
+27	usar	usar	VERB	_	VerbForm=Inf	25	xcomp	25:xcomp	_
+28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	30:det	_
+29	pouco	pouco	ADJ	_	Gender=Masc|Number=Sing	30	amod	30:amod	_
+30	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	27	obj	27:obj|32:nsubj	_
+31	que	que	PRON	_	PronType=Rel	32	nsubj	30:ref	_
+32	sobra	sobrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	acl:relcl	30:acl:relcl	_
+33	para	para	ADP	_	_	34	case	34:case	_
+34	necessidades	necessidade	NOUN	_	Gender=Fem|Number=Plur	27	obl	27:obl:para	_
+35	emergenciais	emergencial	ADJ	_	Number=Plur	34	amod	34:amod	SpaceAfter=No
+36	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0021
+# text = Material escolar e remédios são luxos que nem sempre podemos ter.
+1	Material	material	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+2	escolar	escolar	ADJ	_	Number=Sing	1	amod	1:amod	_
+3	e	e	CCONJ	_	_	4	cc	4:cc	_
+4	remédios	remédio	NOUN	_	Gender=Masc|Number=Plur	1	conj	1:conj:e|6:nsubj	_
+5	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+6	luxos	luxo	NOUN	_	Gender=Masc|Number=Plur	0	root	0:root|10:obj	_
+7	que	que	PRON	_	PronType=Rel	10	obj	6:ref	_
+8	nem	nem	ADV	_	_	9	advmod	9:advmod	_
+9	sempre	sempre	ADV	_	_	10	advmod	10:advmod	_
+10	podemos	poder	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	6	acl:relcl	6:acl:relcl	_
+11	ter.	ter.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0023
+# text = Essas famílias vivem um ciclo de pobreza agravado pela crise econômica e pela falta de políticas públicas eficazes.
+1	Essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	2	det	2:det	_
+2	famílias	família	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	3:nsubj	_
+3	vivem	viver	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	ciclo	ciclo	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	pobreza	pobreza	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	_
+8	agravado	agravar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	5	acl	5:acl	_
+9-10	pela	_	_	_	_	_	_	_	_
+9	por	por	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	crise	crise	NOUN	_	Gender=Fem|Number=Sing	8	obl:agent	8:obl:agent	_
+12	econômica	econômico	ADJ	_	Gender=Fem|Number=Sing	11	amod	11:amod	_
+13	e	e	CCONJ	_	_	16	cc	16:cc	_
+14-15	pela	_	_	_	_	_	_	_	_
+14	por	por	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	falta	falta	NOUN	_	Gender=Fem|Number=Sing	11	conj	8:obl:agent|11:conj:e	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	políticas	política	NOUN	_	Gender=Fem|Number=Plur	16	nmod	16:nmod:de	_
+19	públicas	público	ADJ	_	Gender=Fem|Number=Plur	18	amod	18:amod	_
+20	eficazes	eficaz	ADJ	_	Number=Plur	18	amod	18:amod	SpaceAfter=No
+21	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0025
+# text = Segundo o Departamento Intersindical de Estatísticas e Estudos Socioeconômicos (Dieese), o salário mínimo ideal para sustentar uma família de quatro pessoas deveria ser R$ 3.810,36, quase quatro vezes o valor atual.
+1	Segundo	segundo	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	Departamento	Departamento	PROPN	_	_	25	obl	25:obl:segundo	_
+4	Intersindical	Intersindical	PROPN	_	_	3	flat:name	3:flat:name	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	Estatísticas	Estatísticas	PROPN	_	_	3	flat:name	3:flat:name	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	Estudos	Estudos	PROPN	_	_	3	flat:name	3:flat:name	_
+9	Socioeconômicos	Socioeconômicos	PROPN	_	_	3	flat:name	3:flat:name	_
+10	(	(	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+11	Dieese	Dieese	PROPN	_	_	3	appos	3:appos	SpaceAfter=No
+12	)	)	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+13	,	,	PUNCT	_	_	3	punct	3:punct	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	salário	salário	NOUN	_	Gender=Masc|Number=Sing	25	nsubj	25:nsubj|27:nsubj	_
+16	mínimo	mínimo	ADJ	_	Gender=Masc|Number=Sing	15	amod	15:amod	_
+17	ideal	ideal	ADJ	_	Number=Sing	15	amod	15:amod	_
+18	para	para	ADP	_	_	19	mark	19:mark	_
+19	sustentar	sustentar	VERB	_	VerbForm=Inf	15	acl	15:acl:para	_
+20	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	família	família	NOUN	_	Gender=Fem|Number=Sing	19	obj	19:obj	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	quatro	quatro	NUM	_	NumType=Card	24	nummod	24:nummod	_
+24	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	21	nmod	21:nmod:de	_
+25	deveria	dever	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+26	ser	ser	AUX	_	VerbForm=Inf	27	cop	27:cop	_
+27	R$	R$	SYM	_	_	25	xcomp	25:xcomp	_
+28	3.810,36	3.810,36	NUM	_	NumType=Card	27	nummod	27:nummod	SpaceAfter=No
+29	,	,	PUNCT	_	_	32	punct	32:punct	_
+30	quase	quase	ADV	_	_	31	advmod	31:advmod	_
+31	quatro	quatro	NUM	_	NumType=Card	32	nummod	32:nummod	_
+32	vezes	vez	NOUN	_	Gender=Fem|Number=Plur	27	parataxis	27:parataxis	_
+33	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	34:det	_
+34	valor	valor	NOUN	_	Gender=Masc|Number=Sing	32	obj	32:obj	_
+35	atual	atual	ADJ	_	Number=Sing	34	amod	34:amod	SpaceAfter=No
+36	.	.	PUNCT	_	_	25	punct	25:punct	_
+
+# sent_id = S0027
+# text = "As famílias estão vivendo com um orçamento que deveria ter sido suficiente há 20 anos", destaca a economista Patrícia Lino Costa.
+1	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+2	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	3:det	_
+3	famílias	família	NOUN	_	Gender=Fem|Number=Plur	5	nsubj	5:nsubj	_
+4	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux	5:aux	_
+5	vivendo	viver	VERB	_	VerbForm=Ger	19	ccomp:speech	19:ccomp:speech	_
+6	com	com	ADP	_	_	8	case	8:case	_
+7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	orçamento	orçamento	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:com|10:nsubj|13:nsubj	_
+9	que	que	PRON	_	PronType=Rel	10	nsubj	8:ref	_
+10	deveria	dever	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	8	acl:relcl	8:acl:relcl	_
+11	ter	ter	AUX	_	VerbForm=Inf	13	aux	13:aux	_
+12	sido	ser	AUX	_	Gender=Masc|Number=Sing|VerbForm=Part	13	cop	13:cop	_
+13	suficiente	suficiente	ADJ	_	Number=Sing	10	xcomp	10:xcomp	_
+14	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	advcl	13:advcl	_
+15	20	20	NUM	_	NumType=Card	16	nummod	16:nummod	_
+16	anos	ano	NOUN	_	Gender=Masc|Number=Plur	14	obj	14:obj	SpaceAfter=No
+17	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+18	,	,	PUNCT	_	_	5	punct	5:punct	_
+19	destaca	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	economista	economista	NOUN	_	Number=Sing	19	nsubj	19:nsubj	_
+22	Patrícia	Patrícia	PROPN	_	_	21	nmod	21:nmod	_
+23	Lino	Lino	PROPN	_	_	22	flat:name	22:flat:name	_
+24	Costa	Costa	PROPN	_	_	22	flat:name	22:flat:name	SpaceAfter=No
+25	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0029
+# text = Carlos, que ajudou a construir prédios de luxo, ironiza: "Fiz casas onde nunca poderei morar".
+1	Carlos	Carlos	PROPN	_	_	11	nsubj	4:nsubj|6:nsubj|11:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	4	punct	4:punct	_
+3	que	que	PRON	_	PronType=Rel	4	nsubj	1:ref	_
+4	ajudou	ajudar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+5	a	a	ADP	_	_	6	mark	6:mark	_
+6	construir	construir	VERB	_	VerbForm=Inf	4	xcomp	4:xcomp	_
+7	prédios	prédio	NOUN	_	Gender=Masc|Number=Plur	6	obj	6:obj	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	luxo	luxo	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	SpaceAfter=No
+10	,	,	PUNCT	_	_	4	punct	4:punct	_
+11	ironiza	ironizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+12	:	:	PUNCT	_	_	14	punct	14:punct	_
+13	"	"	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+14	Fiz	fazer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	11	ccomp:speech	11:ccomp:speech	_
+15	casas	casa	NOUN	_	Gender=Fem|Number=Plur	14	obj	14:obj|18:obl	_
+16	onde	onde	ADV	_	_	18	advmod	15:ref	_
+17	nunca	nunca	ADV	_	_	18	advmod	18:advmod	_
+18	poderei	poder	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin	15	acl:relcl	15:acl:relcl	_
+19	morar	morar	VERB	_	VerbForm=Inf	18	xcomp	18:xcomp	SpaceAfter=No
+20	"	"	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+21	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0031
+# text = Ele e Odilene dividem a esperança de melhores dias através de um filho que recebe uma pensão devido a problemas de saúde.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	4:nsubj	_
+2	e	e	CCONJ	_	_	3	cc	3:cc	_
+3	Odilene	Odilene	PROPN	_	_	1	conj	1:conj:e|4:nsubj	_
+4	dividem	dividir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	esperança	esperança	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	melhores	melhor	ADJ	_	Number=Plur	9	amod	9:amod	_
+9	dias	dia	NOUN	_	Gender=Masc|Number=Plur	6	nmod	6:nmod:de	_
+10	através	através	ADV	_	_	4	advmod	4:advmod	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	filho	filho	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:de|15:nsubj	_
+14	que	que	PRON	_	PronType=Rel	15	nsubj	13:ref	_
+15	recebe	receber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	acl:relcl	13:acl:relcl	_
+16	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	pensão	pensão	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	_
+18	devido	dever	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	15	advcl	15:advcl	_
+19	a	a	ADP	_	_	20	case	20:case	_
+20	problemas	problema	NOUN	_	Gender=Masc|Number=Plur	18	obl	18:obl:a	_
+21	de	de	ADP	_	_	22	case	22:case	_
+22	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:de	SpaceAfter=No
+23	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0033
+# text = "Esse dinheiro é a nossa salvação", confessa Carlos.
+1	"	"	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+2	Esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	3	det	3:det	_
+3	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+6	nossa	nosso	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	7	det	7:det	_
+7	salvação	salvação	NOUN	_	Gender=Fem|Number=Sing	10	ccomp:speech	10:ccomp:speech	SpaceAfter=No
+8	"	"	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+9	,	,	PUNCT	_	_	7	punct	7:punct	_
+10	confessa	confessar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+11	Carlos	Carlos	PROPN	_	_	10	nsubj	10:nsubj	SpaceAfter=No
+12	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0035
+# text = Renata e seus filhos enfrentam a violência e a degradação da Cracolândia, um ambiente que a força a vender marmitas para quem quer que seja, sem discriminação.
+1	Renata	Renata	PROPN	_	_	5	nsubj	5:nsubj	_
+2	e	e	CCONJ	_	_	4	cc	4:cc	_
+3	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	4	det	4:det	_
+4	filhos	filho	NOUN	_	Gender=Masc|Number=Plur	1	conj	1:conj:e|5:nsubj	_
+5	enfrentam	enfrentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	violência	violência	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+8	e	e	CCONJ	_	_	10	cc	10:cc	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	degradação	degradação	NOUN	_	Gender=Fem|Number=Sing	7	conj	5:obj|7:conj:e	_
+11-12	da	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	Cracolândia	Cracolândia	PROPN	_	_	7	nmod	7:nmod:de|10:nmod:de	SpaceAfter=No
+14	,	,	PUNCT	_	_	16	punct	16:punct	_
+15	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	ambiente	ambiente	NOUN	_	Number=Sing	13	appos	13:appos|19:nsubj	_
+17	que	que	PRON	_	PronType=Rel	19	nsubj	16:ref	_
+18	a	o	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	19	obj	19:obj|21:nsubj	_
+19	força	forçar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	acl:relcl	16:acl:relcl	_
+20	a	a	ADP	_	_	21	mark	21:mark	_
+21	vender	vender	VERB	_	VerbForm=Inf	19	xcomp	19:xcomp	_
+22	marmitas	marmita	NOUN	_	Gender=Fem|Number=Plur	21	obj	21:obj	_
+23	para	para	ADP	_	_	24	case	24:case	_
+24	quem	quem	PRON	_	PronType=Ind	21	obl	21:obl:para|25:nsubj	_
+25	quer	querer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	acl:relcl	24:acl:relcl	_
+26	que	que	PRON	_	PronType=Rel	25	nsubj	24:ref	_
+27	seja	ser	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	cop	25:cop	SpaceAfter=No
+28	,	,	PUNCT	_	_	30	punct	30:punct	_
+29	sem	sem	ADP	_	_	30	case	30:case	_
+30	discriminação	discriminação	NOUN	_	Gender=Fem|Number=Sing	21	obl	21:obl:sem	SpaceAfter=No
+31	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0037
+# text = "Eu preciso sobreviver, não posso escolher clientes", diz ela, destacando a urgência de suas necessidades.
+1	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	Eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	3:nsubj|4:nsubj	_
+3	preciso	precisar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	12	ccomp:speech	12:ccomp:speech	_
+4	sobreviver	sobreviver	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	SpaceAfter=No
+5	,	,	PUNCT	_	_	7	punct	7:punct	_
+6	não	não	ADV	_	_	7	advmod	7:advmod	_
+7	posso	poder	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	parataxis	3:parataxis	_
+8	escolher	escolher	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+9	clientes	cliente	NOUN	_	Number=Plur	8	obj	8:obj	SpaceAfter=No
+10	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+11	,	,	PUNCT	_	_	3	punct	3:punct	_
+12	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+13	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	12	nsubj	12:nsubj	SpaceAfter=No
+14	,	,	PUNCT	_	_	15	punct	15:punct	_
+15	destacando	destacar	VERB	_	VerbForm=Ger	12	advcl	12:advcl	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	urgência	urgência	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	20	det	20:det	_
+20	necessidades	necessidade	NOUN	_	Gender=Fem|Number=Plur	17	nmod	17:nmod:de	SpaceAfter=No
+21	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0039
+# text = Os sonhos de futuro, comuns a todas essas famílias, parecem distantes.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	sonhos	sonho	NOUN	_	Gender=Masc|Number=Plur	12	nsubj	12:nsubj|13:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	futuro	futuro	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	comuns	comum	ADJ	_	Number=Plur	2	amod	2:amod	_
+7	a	a	ADP	_	_	10	case	10:case	_
+8	todas	todo	DET	_	Gender=Fem|Number=Plur|PronType=Ind	10	det	10:det	_
+9	essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	10	det	10:det	_
+10	famílias	família	NOUN	_	Gender=Fem|Number=Plur	6	obl	6:obl:a	SpaceAfter=No
+11	,	,	PUNCT	_	_	6	punct	6:punct	_
+12	parecem	parecer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+13	distantes	distante	ADJ	_	Number=Plur	12	xcomp	12:xcomp	SpaceAfter=No
+14	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0041
+# text = Rafaela deseja que seus filhos estudem e tenham sucesso, mas o mais velho ainda não começou a 1a série.
+1	Rafaela	Rafaela	PROPN	_	_	2	nsubj	2:nsubj	_
+2	deseja	desejar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	6	mark	6:mark|8:mark	_
+4	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	5	det	5:det	_
+5	filhos	filho	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	6:nsubj|8:nsubj	_
+6	estudem	estudar	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	2:ccomp	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	tenham	ter	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	conj	2:ccomp|6:conj:e	_
+9	sucesso	sucesso	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	SpaceAfter=No
+10	,	,	PUNCT	_	_	17	punct	17:punct	_
+11	mas	mas	CCONJ	_	_	17	cc	17:cc	_
+12	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	17	nsubj	17:nsubj	_
+13	mais	mais	ADV	_	_	14	advmod	14:advmod	_
+14	velho	velho	ADJ	_	Gender=Masc|Number=Sing	12	amod	12:amod	_
+15	ainda	ainda	ADV	_	_	17	advmod	17:advmod	_
+16	não	não	ADV	_	_	17	advmod	17:advmod	_
+17	começou	começar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	2:conj:mas	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+19	1a	1a	ADJ	_	Gender=Fem|NumType=Ord	20	amod	20:amod	_
+20	série	série	NOUN	_	Gender=Fem|Number=Sing	17	obj	17:obj	SpaceAfter=No
+21	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0043
+# text = Reginaldo sonha com uma casa própria e um carro, mas reconhece a dificuldade em realizar esses desejos com sua renda atual.
+1	Reginaldo	Reginaldo	PROPN	_	_	2	nsubj	2:nsubj|12:nsubj	_
+2	sonha	sonhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	com	com	ADP	_	_	5	case	5:case|9:case	_
+4	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	casa	casa	NOUN	_	Gender=Fem|Number=Sing	2	obl	2:obl:com	_
+6	própria	próprio	ADJ	_	Gender=Fem|Number=Sing	5	amod	5:amod	_
+7	e	e	CCONJ	_	_	9	cc	9:cc	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	carro	carro	NOUN	_	Gender=Masc|Number=Sing	5	conj	2:obl:com|5:conj:e	SpaceAfter=No
+10	,	,	PUNCT	_	_	12	punct	12:punct	_
+11	mas	mas	CCONJ	_	_	12	cc	12:cc	_
+12	reconhece	reconhecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:mas	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	dificuldade	dificuldade	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+15	em	em	ADP	_	_	16	mark	16:mark	_
+16	realizar	realizar	VERB	_	VerbForm=Inf	14	acl	14:acl:em	_
+17	esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	18	det	18:det	_
+18	desejos	desejo	NOUN	_	Gender=Masc|Number=Plur	16	obj	16:obj	_
+19	com	com	ADP	_	_	21	case	21:case	_
+20	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	21	det	21:det	_
+21	renda	renda	NOUN	_	Gender=Fem|Number=Sing	16	obl	16:obl:com	_
+22	atual	atual	ADJ	_	Number=Sing	21	amod	21:amod	SpaceAfter=No
+23	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0045
+# text = A economista Patrícia Costa reforça que a política atual perpetua a pobreza, impedindo qualquer ascensão social.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	economista	economista	NOUN	_	Number=Sing	5	nsubj	5:nsubj	_
+3	Patrícia	Patrícia	PROPN	_	_	2	nmod	2:nmod	_
+4	Costa	Costa	PROPN	_	_	3	flat:name	3:flat:name	_
+5	reforça	reforçar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	que	que	SCONJ	_	_	10	mark	10:mark	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	política	política	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	10:nsubj	_
+9	atual	atual	ADJ	_	Number=Sing	8	amod	8:amod	_
+10	perpetua	perpetuar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	ccomp	5:ccomp	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	pobreza	pobreza	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	impedindo	impedir	VERB	_	VerbForm=Ger	10	advcl	10:advcl	_
+15	qualquer	qualquer	DET	_	Number=Sing|PronType=Ind	16	det	16:det	_
+16	ascensão	ascensão	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	_
+17	social	social	ADJ	_	Number=Sing	16	amod	16:amod	SpaceAfter=No
+18	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0047
+# text = "Sem valorização do salário mínimo e investimentos em educação e saúde, essas famílias continuam presas em um ciclo sem fim", alerta.
+1	"	"	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+2	Sem	sem	ADP	_	_	3	case	3:case|9:case	_
+3	valorização	valorização	NOUN	_	Gender=Fem|Number=Sing	17	obl	17:obl:sem	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	salário	salário	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	_
+7	mínimo	mínimo	ADJ	_	Gender=Masc|Number=Sing	6	amod	6:amod	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	investimentos	investimento	NOUN	_	Gender=Masc|Number=Plur	3	conj	3:conj:e|17:obl:sem	_
+10	em	em	ADP	_	_	11	case	11:case|13:case	_
+11	educação	educação	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:em	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	11	conj	9:nmod:em|11:conj:e	SpaceAfter=No
+14	,	,	PUNCT	_	_	3	punct	3:punct	_
+15	essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	16	det	16:det	_
+16	famílias	família	NOUN	_	Gender=Fem|Number=Plur	17	nsubj	17:nsubj|18:nsubj	_
+17	continuam	continuar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	26	ccomp:speech	26:ccomp:speech	_
+18	presas	preso	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	17	xcomp	17:xcomp	_
+19	em	em	ADP	_	_	21	case	21:case	_
+20	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	ciclo	ciclo	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:em	_
+22	sem	sem	ADP	_	_	23	case	23:case	_
+23	fim	fim	NOUN	_	Gender=Masc|Number=Sing	21	nmod	21:nmod:sem	SpaceAfter=No
+24	"	"	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+25	,	,	PUNCT	_	_	17	punct	17:punct	_
+26	alerta	alertar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+27	.	.	PUNCT	_	_	26	punct	26:punct	_
+
+# sent_id = S0049
+# text = Enquanto isso, a falta de documentação adequada impede famílias como a de Reginaldo de acessar benefícios sociais, como o Bolsa Família.
+1	Enquanto	enquanto	ADV	_	ExtPos=ADV	9	advmod	9:advmod	_
+2	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	fixed	1:fixed	SpaceAfter=No
+3	,	,	PUNCT	_	_	1	punct	1:punct	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	falta	falta	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	9:nsubj	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	documentação	documentação	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	_
+8	adequada	adequado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	7	amod	7:amod	_
+9	impede	impedir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+10	famílias	família	NOUN	_	Gender=Fem|Number=Plur	9	obj	9:obj|16:nsubj	_
+11	como	como	ADP	_	_	12	case	12:case	_
+12	a	o	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Dem	10	nmod	10:nmod:como	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	Reginaldo	Reginaldo	PROPN	_	_	12	nmod	12:nmod:de	_
+15	de	de	ADP	_	_	16	mark	16:mark	_
+16	acessar	acessar	VERB	_	VerbForm=Inf	9	xcomp	9:xcomp	_
+17	benefícios	benefício	NOUN	_	Gender=Masc|Number=Plur	16	obj	16:obj	_
+18	sociais	social	ADJ	_	Number=Plur	17	amod	17:amod	SpaceAfter=No
+19	,	,	PUNCT	_	_	22	punct	22:punct	_
+20	como	como	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	Bolsa	Bolsa	PROPN	_	_	17	nmod	17:nmod:como	_
+23	Família	Família	PROPN	_	_	22	flat:name	22:flat:name	SpaceAfter=No
+24	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0051
+# text = É um descaso total.
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+2	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	descaso	descaso	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+4	total	total	ADJ	_	Number=Sing	3	amod	3:amod	SpaceAfter=No
+5	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0053
+# text = Estamos esquecidos pelo sistema, desabafa Rafaela.
+1	Estamos	estar	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	cop	2:cop	_
+2	esquecidos	esquecido	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	7	ccomp:speech	7:ccomp:speech	_
+3-4	pelo	_	_	_	_	_	_	_	_
+3	por	por	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	2	obl:agent	2:obl:agent	SpaceAfter=No
+6	,	,	PUNCT	_	_	2	punct	2:punct	_
+7	desabafa	desabafar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	Rafaela	Rafaela	PROPN	_	_	7	nsubj	7:nsubj	SpaceAfter=No
+9	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0055
+# text = Carlos, com lágrimas nos olhos, recorda o pedido do filho por um videogame.
+1	Carlos	Carlos	PROPN	_	_	9	nsubj	9:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	4	punct	4:punct	_
+3	com	com	ADP	_	_	4	case	4:case	_
+4	lágrimas	lágrima	NOUN	_	Gender=Fem|Number=Plur	9	obl	9:obl:com	_
+5-6	nos	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	7:det	_
+7	olhos	olho	NOUN	_	Gender=Masc|Number=Plur	4	nmod	4:nmod:em	SpaceAfter=No
+8	,	,	PUNCT	_	_	4	punct	4:punct	_
+9	recorda	recordar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	pedido	pedido	NOUN	_	Gender=Masc|Number=Sing	9	obj	9:obj	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	filho	filho	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:de	_
+15	por	por	ADP	_	_	17	case	17:case	_
+16	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	videogame	videogame	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:por	SpaceAfter=No
+18	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0057
+# text = Prometi a ele, mas a realidade é dura.
+1	Prometi	prometer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	a	a	ADP	_	_	3	case	3:case	_
+3	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	obl	1:obl:a	SpaceAfter=No
+4	,	,	PUNCT	_	_	9	punct	9:punct	_
+5	mas	mas	CCONJ	_	_	9	cc	9:cc	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	realidade	realidade	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	9:nsubj	_
+8	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	9:cop	_
+9	dura	duro	ADJ	_	Gender=Fem|Number=Sing	1	conj	1:conj:mas	SpaceAfter=No
+10	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0059
+# text = A esperança é tudo que nos resta, conclui.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	esperança	esperança	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+4	tudo	tudo	PRON	_	PronType=Ind	9	ccomp:speech	7:nsubj|9:ccomp:speech	_
+5	que	que	PRON	_	PronType=Rel	7	nsubj	4:ref	_
+6	nos	nos	PRON	_	Case=Dat|Number=Plur|Person=1|PronType=Prs	7	iobj	7:iobj	_
+7	resta	restar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	4:acl:relcl	SpaceAfter=No
+8	,	,	PUNCT	_	_	4	punct	4:punct	_
+9	conclui	concluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+10	.	.	PUNCT	_	_	9	punct	9:punct	_

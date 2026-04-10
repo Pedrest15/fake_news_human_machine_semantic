@@ -1,0 +1,72 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Sítio de Atibaia: PF investiga se Lula "pegou" objetos que pertencem ao Palácio do Planalto.
+1	Sítio	Sítio	PROPN	_	_	6	dislocated	6:dislocated	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	Atibaia	Atibaia	PROPN	_	_	1	nmod	1:nmod:de	SpaceAfter=No
+4	:	:	PUNCT	_	_	1	punct	1:punct	_
+5	PF	PF	PROPN	_	_	6	nsubj	6:nsubj	_
+6	investiga	investigar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	se	se	SCONJ	_	_	10	mark	10:mark	_
+8	Lula	Lula	PROPN	_	_	10	nsubj	10:nsubj	_
+9	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+10	pegou	pegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	ccomp	6:ccomp	SpaceAfter=No
+11	"	"	PUNCT	_	_	12	punct	12:punct	_
+12	objetos	objeto	NOUN	_	Gender=Masc|Number=Plur	10	obj	10:obj|14:nsubj	_
+13	que	que	PRON	_	PronType=Rel	14	nsubj	12:ref	_
+14	pertencem	pertencer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	acl:relcl	12:acl:relcl	_
+15-16	ao	_	_	_	_	_	_	_	_
+15	a	a	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	Palácio	Palácio	PROPN	_	_	14	obl	14:obl:a	_
+18-19	do	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	Planalto	Planalto	PROPN	_	_	17	flat:name	17:flat:name	SpaceAfter=No
+21	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0003
+# text = Os mandados de busca e apreensão da PF visam também vasculhar containers num depósito em São Bernardo do Campo, pagos pela OAS, que guardam uma grande quantidade de objetos pessoais de Lula.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	mandados	mandado	NOUN	_	Gender=Masc|Number=Plur	10	nsubj	10:nsubj|12:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case|6:case	_
+4	busca	busca	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	apreensão	apreensão	NOUN	_	Gender=Fem|Number=Sing	4	conj	2:nmod:de|4:conj:e	_
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	PF	PF	PROPN	_	_	2	nmod	2:nmod:de	_
+10	visam	visar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+11	também	também	ADV	_	_	10	advmod	10:advmod	_
+12	vasculhar	vasculhar	VERB	_	VerbForm=Inf	10	xcomp	10:xcomp	_
+13	containers	container	NOUN	_	Gender=Masc|Number=Plur	12	obj	12:obj	_
+14-15	num	_	_	_	_	_	_	_	_
+14	em	em	ADP	_	_	16	case	16:case	_
+15	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	depósito	depósito	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod:em	_
+17	em	em	ADP	_	_	18	case	18:case	_
+18	São	São	PROPN	_	_	16	nmod	16:nmod:em	_
+19	Bernardo	Bernardo	PROPN	_	_	18	flat:name	18:flat:name	_
+20-21	do	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	Campo	Campo	PROPN	_	_	18	flat:name	18:flat:name	SpaceAfter=No
+23	,	,	PUNCT	_	_	24	punct	24:punct	_
+24	pagos	pagar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	13	acl	13:acl	_
+25-26	pela	_	_	_	_	_	_	_	_
+25	por	por	ADP	_	_	27	case	27:case	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	OAS	OAS	PROPN	_	_	24	obl:agent	24:obl:agent|30:nsubj	SpaceAfter=No
+28	,	,	PUNCT	_	_	30	punct	30:punct	_
+29	que	que	PRON	_	PronType=Rel	30	nsubj	27:ref	_
+30	guardam	guardar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	27	acl:relcl	27:acl:relcl	_
+31	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	33	det	33:det	_
+32	grande	grande	ADJ	_	Number=Sing	33	amod	33:amod	_
+33	quantidade	quantidade	NOUN	_	Gender=Fem|Number=Sing	30	obj	30:obj	_
+34	de	de	ADP	_	_	35	case	35:case	_
+35	objetos	objeto	NOUN	_	Gender=Masc|Number=Plur	33	nmod	33:nmod:de	_
+36	pessoais	pessoal	ADJ	_	Number=Plur	35	amod	35:amod	_
+37	de	de	ADP	_	_	38	case	38:case	_
+38	Lula	Lula	PROPN	_	_	35	nmod	35:nmod:de	SpaceAfter=No
+39	.	.	PUNCT	_	_	10	punct	10:punct	_

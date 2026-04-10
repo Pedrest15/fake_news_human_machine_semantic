@@ -1,0 +1,462 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Dinamarca inova e inaugura supermercado com produtos vencidos.
+1	Dinamarca	Dinamarca	PROPN	_	_	2	nsubj	2:nsubj|4:nsubj	_
+2	inova	inovar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	e	e	CCONJ	_	_	4	cc	4:cc	_
+4	inaugura	inaugurar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:e	_
+5	supermercado	supermercado	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+6	com	com	ADP	_	_	7	case	7:case	_
+7	produtos	produto	NOUN	_	Gender=Masc|Number=Plur	4	obl	4:obl:com	_
+8	vencidos	vencido	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	7	amod	7:amod	SpaceAfter=No
+9	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Foi inaugurado em Copenhague, capital da Dinamarca, O Wefood, primeiro supermercado dedicado exclusivamente à venda de alimentos que seriam destinados à lata do lixo.
+1	Foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	aux:pass	2:aux:pass	_
+2	inaugurado	inaugurar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+3	em	em	ADP	_	_	4	case	4:case	_
+4	Copenhague	Copenhague	PROPN	_	_	2	obl	2:obl:em	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	capital	capital	NOUN	_	Number=Sing	4	appos	4:appos	_
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	Dinamarca	Dinamarca	PROPN	_	_	6	nmod	6:nmod:de	SpaceAfter=No
+10	,	,	PUNCT	_	_	6	punct	6:punct	_
+11	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	Wefood	Wefood	PROPN	_	_	2	nsubj:pass	2:nsubj:pass	SpaceAfter=No
+13	,	,	PUNCT	_	_	15	punct	15:punct	_
+14	primeiro	primeiro	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	15	amod	15:amod	_
+15	supermercado	supermercado	NOUN	_	Gender=Masc|Number=Sing	12	appos	12:appos	_
+16	dedicado	dedicar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	15	acl	15:acl	_
+17	exclusivamente	exclusivamente	ADV	_	_	16	advmod	16:advmod	_
+18-19	à	_	_	_	_	_	_	_	_
+18	a	a	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	venda	venda	NOUN	_	Gender=Fem|Number=Sing	16	obl	16:obl:a	_
+21	de	de	ADP	_	_	22	case	22:case	_
+22	alimentos	alimento	NOUN	_	Gender=Masc|Number=Plur	20	nmod	20:nmod:de|25:nsubj:pass	_
+23	que	que	PRON	_	PronType=Rel	25	nsubj:pass	22:ref	_
+24	seriam	ser	AUX	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	25	aux:pass	25:aux:pass	_
+25	destinados	destinar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	22	acl:relcl	22:acl:relcl	_
+26-27	à	_	_	_	_	_	_	_	_
+26	a	a	ADP	_	_	28	case	28:case	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	lata	lata	NOUN	_	Gender=Fem|Number=Sing	25	obl	25:obl:a	_
+29-30	do	_	_	_	_	_	_	_	_
+29	de	de	ADP	_	_	31	case	31:case	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	lixo	lixo	NOUN	_	Gender=Masc|Number=Sing	28	nmod	28:nmod:de	SpaceAfter=No
+32	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = (BBC) São produtos com prazo de validade vencidos, porém que ainda são apropriados para o consumo.
+1	(	(	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+2	BBC	BBC	PROPN	_	_	5	parataxis	5:parataxis	SpaceAfter=No
+3	)	)	PUNCT	_	_	2	punct	2:punct	_
+4	São	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+5	produtos	produto	NOUN	_	Gender=Masc|Number=Plur	0	root	0:root	_
+6	com	com	ADP	_	_	7	case	7:case	_
+7	prazo	prazo	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:com|16:nsubj	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	validade	validade	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:de	_
+10	vencidos	vencido	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	7	amod	7:amod	SpaceAfter=No
+11	,	,	PUNCT	_	_	16	punct	16:punct	_
+12	porém	porém	CCONJ	_	_	16	cc	16:cc	_
+13	que	que	PRON	_	PronType=Rel	16	nsubj	7:ref	_
+14	ainda	ainda	ADV	_	_	16	advmod	16:advmod	_
+15	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	aux:pass	16:aux:pass	_
+16	apropriados	apropriado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	10	conj	7:acl:relcl|10:conj:porém	_
+17	para	para	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	consumo	consumo	NOUN	_	Gender=Masc|Number=Sing	16	obl	16:obl:para	SpaceAfter=No
+20	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0007
+# text = A iniciativa é de uma ONG e a ideia é combater o desperdício.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	iniciativa	iniciativa	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	ONG	ong	NOUN	_	_	0	root	0:root	_
+7	e	e	CCONJ	_	_	11	cc	11:cc	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	ideia	ideia	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	11:nsubj	_
+10	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	11:cop	_
+11	combater	combater	VERB	_	VerbForm=Inf	6	conj	6:conj:e	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	desperdício	desperdício	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj	SpaceAfter=No
+14	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0009
+# text = De acordo com informações da ONU, aproximadamente 33% dos alimentos produzidos em todo mundo é jogado fora a cada ano.
+1	De	de	ADP	_	_	2	case	2:case	_
+2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	20	obl	20:obl:de	_
+3	com	com	ADP	_	_	4	case	4:case	_
+4	informações	informação	NOUN	_	Gender=Fem|Number=Plur	2	nmod	2:nmod:com	_
+5-6	da	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	ONU	ONU	PROPN	_	_	4	nmod	4:nmod:de	SpaceAfter=No
+8	,	,	PUNCT	_	_	2	punct	2:punct	_
+9	aproximadamente	aproximadamente	ADV	_	_	10	advmod	10:advmod	_
+10	33	33	NUM	_	NumType=Card	11	nummod	11:nummod	SpaceAfter=No
+11	%	%	SYM	_	_	20	nsubj:pass	20:nsubj:pass	_
+12-13	dos	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	14:det	_
+14	alimentos	alimento	NOUN	_	Gender=Masc|Number=Plur	11	nmod	11:nmod:de	_
+15	produzidos	produzir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	14	acl	14:acl	_
+16	em	em	ADP	_	_	18	case	18:case	_
+17	todo	todo	DET	_	Gender=Masc|Number=Sing|PronType=Ind	18	det	18:det	_
+18	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	15	obl	15:obl:em	_
+19	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	aux:pass	20:aux:pass	_
+20	jogado	jogar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+21	fora	fora	ADV	_	_	20	advmod	20:advmod	_
+22	a	a	ADP	_	_	24	case	24:case	_
+23	cada	cada	DET	_	Number=Sing|PronType=Ind	24	det	24:det	_
+24	ano	ano	NOUN	_	Gender=Masc|Number=Sing	20	obl	20:obl:a	SpaceAfter=No
+25	.	.	PUNCT	_	_	20	punct	20:punct	_
+
+# sent_id = S0011
+# text = Per Bjerre, da ONG responsável pelo Wefood disse que Diariamente mais de 800 milhões de pessoas no mundo vão dormir com fome.
+1	Per	Per	PROPN	_	_	11	nsubj	11:nsubj	_
+2	Bjerre	Bjerre	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
+4-5	da	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	ONG	ong	NOUN	_	Gender=Fem|Number=Sing	1	nmod	1:nmod:de	_
+7	responsável	responsável	ADJ	_	Number=Sing	6	amod	6:amod	_
+8-9	pelo	_	_	_	_	_	_	_	_
+8	por	por	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	Wefood	Wefood	PROPN	_	_	7	obl	7:obl:por	_
+11	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	que	que	SCONJ	_	_	24	mark	24:mark	_
+13	Diariamente	diariamente	ADV	_	_	24	advmod	24:advmod	_
+14	mais	mais	ADV	_	ExtPos=ADV	16	advmod	16:advmod	_
+15	de	de	ADP	_	_	14	fixed	14:fixed	_
+16	800	800	NUM	_	NumType=Card	17	nummod	17:nummod	_
+17	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	24	nsubj	24:nsubj	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	17	nmod	17:nmod:de	_
+20-21	no	_	_	_	_	_	_	_	_
+20	em	em	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	17	nmod	17:nmod:em	_
+23	vão	ir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	24	aux	24:aux	_
+24	dormir	dormir	VERB	_	VerbForm=Inf	11	ccomp	11:ccomp	_
+25	com	com	ADP	_	_	26	case	26:case	_
+26	fome	fome	NOUN	_	Gender=Fem|Number=Sing	24	obl	24:obl:com	SpaceAfter=No
+27	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0013
+# text = Ao mesmo tempo, só na Dinamarca cerca de 700 mil toneladas de alimentos por ano vão para o lixo.
+1-2	Ao	_	_	_	_	_	_	_	_
+1	A	a	ADP	_	_	4	case	4:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+3	mesmo	mesmo	DET	_	Gender=Masc|Number=Sing|PronType=Dem	4	det	4:det	_
+4	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	19	obl	19:obl:a	SpaceAfter=No
+5	,	,	PUNCT	_	_	4	punct	4:punct	_
+6	só	só	ADV	_	_	4	advmod	4:advmod	_
+7-8	na	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	Dinamarca	Dinamarca	PROPN	_	_	19	obl	19:obl:em	_
+10	cerca	cerca	ADV	_	ExtPos=ADV	12	advmod	12:advmod	_
+11	de	de	ADP	_	_	10	fixed	10:fixed	_
+12	700	700	NUM	_	NumType=Card	14	nummod	14:nummod	_
+13	mil	mil	NUM	_	NumType=Card	12	flat	12:flat	_
+14	toneladas	tonelada	NOUN	_	Gender=Fem|Number=Plur	19	nsubj	19:nsubj	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	alimentos	alimento	NOUN	_	Gender=Masc|Number=Plur	14	nmod	14:nmod:de	_
+17	por	por	ADP	_	_	18	case	18:case	_
+18	ano	ano	NOUN	_	Gender=Masc|Number=Sing	14	nmod	14:nmod:por	_
+19	vão	ir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+20	para	para	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	lixo	lixo	NOUN	_	Gender=Masc|Number=Sing	19	obl	19:obl:para	SpaceAfter=No
+23	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0015
+# text = O Wefood é o primeiro supermercado do tipo no mundo.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Wefood	Wefood	PROPN	_	_	6	nsubj	6:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+5	primeiro	primeiro	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	6	amod	6:amod	_
+6	supermercado	supermercado	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	tipo	tipo	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de	_
+10-11	no	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:em	SpaceAfter=No
+13	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0017
+# text = São clientes de todas as camadas da sociedade, e têm em comum o desejo de comprar produtos a preços menores e combater o desperdício de alimentos.
+1	São	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	cop	2:cop	_
+2	clientes	cliente	NOUN	_	Number=Plur	0	root	0:root	_
+3	de	de	ADP	_	_	6	case	6:case	_
+4	todas	todo	DET	_	Gender=Fem|Number=Plur|PronType=Ind	6	det	6:det	_
+5	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	6:det	_
+6	camadas	camada	NOUN	_	Gender=Fem|Number=Plur	2	nmod	2:nmod:de	_
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	sociedade	sociedade	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de	SpaceAfter=No
+10	,	,	PUNCT	_	_	12	punct	12:punct	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	têm	ter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:e	_
+13	em	em	ADP	_	_	14	case	14:case	_
+14	comum	comum	NOUN	_	Number=Sing	12	obl	12:obl:em	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	desejo	desejo	NOUN	_	Gender=Masc|Number=Sing	12	obj	12:obj	_
+17	de	de	ADP	_	_	18	mark	18:mark|24:mark	_
+18	comprar	comprar	VERB	_	VerbForm=Inf	16	acl	16:acl:de	_
+19	produtos	produto	NOUN	_	Gender=Masc|Number=Plur	18	obj	18:obj	_
+20	a	a	ADP	_	_	21	case	21:case	_
+21	preços	preço	NOUN	_	Gender=Masc|Number=Plur	19	nmod	19:nmod:a	_
+22	menores	menor	ADJ	_	Number=Plur	21	amod	21:amod	_
+23	e	e	CCONJ	_	_	24	cc	24:cc	_
+24	combater	combater	VERB	_	VerbForm=Inf	18	conj	16:acl:de|18:conj:e	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	desperdício	desperdício	NOUN	_	Gender=Masc|Number=Sing	24	obj	24:obj	_
+27	de	de	ADP	_	_	28	case	28:case	_
+28	alimentos	alimento	NOUN	_	Gender=Masc|Number=Plur	26	nmod	26:nmod:de	SpaceAfter=No
+29	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0019
+# text = O novo supermercado oferece uma variedade de produtos que inclui laticínios, carnes, frutas, vegetais, pães e alimentos congelados que já ultrapassaram a data de validade recomendada nas embalagens.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+2	novo	novo	ADJ	_	Gender=Masc|Number=Sing	3	amod	3:amod	_
+3	supermercado	supermercado	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+4	oferece	oferecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	variedade	variedade	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	produtos	produto	NOUN	_	Gender=Masc|Number=Plur	6	nmod	6:nmod:de|10:nsubj	_
+9	que	que	PRON	_	PronType=Rel	10	nsubj	8:ref	_
+10	inclui	incluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	8:acl:relcl	_
+11	laticínios	laticínio	NOUN	_	Gender=Masc|Number=Plur	10	obj	10:obj	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	carnes	carne	NOUN	_	Gender=Fem|Number=Plur	11	conj	10:obj|11:conj:e	SpaceAfter=No
+14	,	,	PUNCT	_	_	15	punct	15:punct	_
+15	frutas	fruta	NOUN	_	Gender=Fem|Number=Plur	11	conj	10:obj|11:conj:e	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	vegetais	vegetal	NOUN	_	Number=Plur	11	conj	10:obj|11:conj:e	SpaceAfter=No
+18	,	,	PUNCT	_	_	19	punct	19:punct	_
+19	pães	pão	NOUN	_	Gender=Masc|Number=Plur	11	conj	10:obj|11:conj:e	_
+20	e	e	CCONJ	_	_	21	cc	21:cc	_
+21	alimentos	alimento	NOUN	_	Gender=Masc|Number=Plur	11	conj	10:obj|11:conj:e|25:nsubj	_
+22	congelados	congelado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	21	amod	21:amod	_
+23	que	que	PRON	_	PronType=Rel	25	nsubj	21:ref	_
+24	já	já	ADV	_	_	25	advmod	25:advmod	_
+25	ultrapassaram	ultrapassar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	21	acl:relcl	21:acl:relcl	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	data	data	NOUN	_	Gender=Fem|Number=Sing	25	obj	25:obj	_
+28	de	de	ADP	_	_	29	case	29:case	_
+29	validade	validade	NOUN	_	Gender=Fem|Number=Sing	27	nmod	27:nmod:de	_
+30	recomendada	recomendar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	27	acl	27:acl	_
+31-32	nas	_	_	_	_	_	_	_	_
+31	em	em	ADP	_	_	33	case	33:case	_
+32	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	33	det	33:det	_
+33	embalagens	embalagem	NOUN	_	Gender=Fem|Number=Plur	30	obl	30:obl:em	SpaceAfter=No
+34	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0021
+# text = Os preços são entre 30 a 50 % mais baixos em comparação ao que é cobrado nos supermercados tradicionais.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	preços	preço	NOUN	_	Gender=Masc|Number=Plur	10	nsubj	10:nsubj	_
+3	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_
+4	entre	entre	ADP	_	_	5	case	5:case	_
+5	30	30	NUM	_	NumType=Card	8	nummod	8:nummod	_
+6	a	a	ADP	_	_	7	case	7:case	_
+7	50	50	NUM	_	NumType=Card	8	nummod	8:nummod	_
+8	%	%	SYM	_	_	10	obl	10:obl	_
+9	mais	mais	ADV	_	_	10	advmod	10:advmod	_
+10	baixos	baixo	ADJ	_	Gender=Masc|Number=Plur	0	root	0:root	_
+11	em	em	ADP	_	_	12	case	12:case	_
+12	comparação	comparação	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:em	_
+13-14	ao	_	_	_	_	_	_	_	_
+13	a	a	ADP	_	_	14	case	14:case	_
+14	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	12	nmod	12:nmod:a|17:nsubj:pass	_
+15	que	que	PRON	_	PronType=Rel	17	nsubj:pass	14:ref	_
+16	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux:pass	17:aux:pass	_
+17	cobrado	cobrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	14	acl:relcl	14:acl:relcl	_
+18-19	nos	_	_	_	_	_	_	_	_
+18	em	em	ADP	_	_	20	case	20:case	_
+19	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	20:det	_
+20	supermercados	supermercado	NOUN	_	Gender=Masc|Number=Plur	17	obl	17:obl:em	_
+21	tradicionais	tradicional	ADJ	_	Number=Plur	20	amod	20:amod	SpaceAfter=No
+22	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0023
+# text = Quando há frutas já em vias de apodrecer em uma caixa, é mais barato para os supermercados jogar toda a caixa fora, em vez de gastar tempo selecionando as frutas boas e ruins.
+1	Quando	quando	SCONJ	_	_	2	mark	2:mark	_
+2	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	advcl	15:advcl:quando	_
+3	frutas	fruta	NOUN	_	Gender=Fem|Number=Plur	2	obj	2:obj	_
+4	já	já	ADV	_	_	6	advmod	6:advmod	_
+5	em	em	ADP	_	_	6	case	6:case	_
+6	vias	via	NOUN	_	Gender=Fem|Number=Plur	2	obl	2:obl:em	_
+7	de	de	ADP	_	_	8	mark	8:mark	_
+8	apodrecer	apodrecer	VERB	_	VerbForm=Inf	6	acl	6:acl:de	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	caixa	caixa	NOUN	_	Number=Sing	8	obl	8:obl:em	SpaceAfter=No
+12	,	,	PUNCT	_	_	2	punct	2:punct	_
+13	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	15:cop	_
+14	mais	mais	ADV	_	_	15	advmod	15:advmod	_
+15	barato	barato	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	_
+16	para	para	ADP	_	_	18	case	18:case	_
+17	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	18:det	_
+18	supermercados	supermercado	NOUN	_	Gender=Masc|Number=Plur	15	obl	15:obl:para	_
+19	jogar	jogar	VERB	_	VerbForm=Inf	15	csubj	15:csubj	_
+20	toda	todo	DET	_	Gender=Fem|Number=Sing|PronType=Ind	22	det	22:det	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	caixa	caixa	NOUN	_	Number=Sing	19	obj	19:obj	_
+23	fora	fora	ADV	_	_	19	advmod	19:advmod	SpaceAfter=No
+24	,	,	PUNCT	_	_	26	punct	26:punct	_
+25	em	em	ADP	_	_	26	case	26:case	_
+26	vez	vez	NOUN	_	Gender=Fem|Number=Sing	19	obl	19:obl:em	_
+27	de	de	ADP	_	_	28	mark	28:mark	_
+28	gastar	gastar	VERB	_	VerbForm=Inf	26	acl	26:acl:de	_
+29	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	28	obj	28:obj	_
+30	selecionando	selecionar	VERB	_	VerbForm=Ger	28	advcl	28:advcl	_
+31	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	32	det	32:det	_
+32	frutas	fruta	NOUN	_	Gender=Fem|Number=Plur	30	obj	30:obj	_
+33	boas	bom	ADJ	_	Gender=Fem|Number=Plur	32	amod	32:amod	_
+34	e	e	CCONJ	_	_	35	cc	35:cc	_
+35	ruins	ruim	ADJ	_	Number=Plur	33	conj	32:amod|33:conj:e	SpaceAfter=No
+36	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0025
+# text = Mas os voluntários do WeFood fazem esse trabalho com prazer, disse o coordenador da ONG.
+1	Mas	mas	CCONJ	_	_	7	cc	7:cc	_
+2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	3:det	_
+3	voluntários	voluntário	NOUN	_	Gender=Masc|Number=Plur	7	nsubj	7:nsubj	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	WeFood	WeFood	PROPN	_	_	3	nmod	3:nmod:de	_
+7	fazem	fazer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	ccomp:speech	13:ccomp:speech	_
+8	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	9	det	9:det	_
+9	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+10	com	com	ADP	_	_	11	case	11:case	_
+11	prazer	prazer	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:com	SpaceAfter=No
+12	,	,	PUNCT	_	_	7	punct	7:punct	_
+13	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	coordenador	coordenador	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	13:nsubj	_
+16-17	da	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	ONG	ONG	PROPN	_	_	15	nmod	15:nmod:de	SpaceAfter=No
+19	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0027
+# text = A ministra dinamarquesa do Meio Ambiente esteve presente na inauguração do Wefood e relatou que ainda existem regras e barreiras que tornam difícil distribuir alimentos com prazos de validade vencidos.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	ministra	ministro	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	9:nsubj|17:nsubj	_
+3	dinamarquesa	dinamarquÃªs	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	Meio	Meio	PROPN	_	_	2	nmod	2:nmod:de	_
+7	Ambiente	Ambiente	PROPN	_	_	6	flat:name	6:flat:name	_
+8	esteve	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	cop	9:cop	_
+9	presente	presente	ADJ	_	Number=Sing	0	root	0:root	_
+10-11	na	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	inauguração	inauguração	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:em	_
+13-14	do	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	Wefood	Wefood	PROPN	_	_	12	nmod	12:nmod:de	_
+16	e	e	CCONJ	_	_	17	cc	17:cc	_
+17	relatou	relatar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	conj	9:conj:e	_
+18	que	que	SCONJ	_	_	20	mark	20:mark	_
+19	ainda	ainda	ADV	_	_	20	advmod	20:advmod	_
+20	existem	existir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	ccomp	17:ccomp	_
+21	regras	regra	NOUN	_	Gender=Fem|Number=Plur	20	nsubj	20:nsubj|25:nsubj|26:nsubj|27:nsubj	_
+22	e	e	CCONJ	_	_	23	cc	23:cc	_
+23	barreiras	barreira	NOUN	_	Gender=Fem|Number=Plur	21	conj	20:nsubj|21:conj:e|25:nsubj|26:nsubj|27:nsubj	_
+24	que	que	PRON	_	PronType=Rel	25	nsubj	21:ref|23:ref	_
+25	tornam	tornar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	21	acl:relcl	21:acl:relcl|23:acl:relcl	_
+26	difícil	difícil	ADJ	_	Number=Sing	25	xcomp	25:xcomp	_
+27	distribuir	distribuir	VERB	_	VerbForm=Inf	25	xcomp	25:xcomp	_
+28	alimentos	alimento	NOUN	_	Gender=Masc|Number=Plur	27	obj	27:obj	_
+29	com	com	ADP	_	_	30	case	30:case	_
+30	prazos	prazo	NOUN	_	Gender=Masc|Number=Plur	28	nmod	28:nmod:com	_
+31	de	de	ADP	_	_	32	case	32:case	_
+32	validade	validade	NOUN	_	Gender=Fem|Number=Sing	30	nmod	30:nmod:de	_
+33	vencidos	vencido	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	30	amod	30:amod	SpaceAfter=No
+34	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0029
+# text = É ridículo jogar comida fora e é prejudicial ao meio ambiente.
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	2:cop	_
+2	ridículo	ridículo	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	_
+3	jogar	jogar	VERB	_	VerbForm=Inf	2	csubj	2:csubj	_
+4	comida	comida	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+5	fora	fora	ADV	_	_	3	advmod	3:advmod	_
+6	e	e	CCONJ	_	_	8	cc	8:cc	_
+7	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop	_
+8	prejudicial	prejudicial	ADJ	_	Number=Sing	3	conj	2:csubj|3:conj:e	_
+9-10	ao	_	_	_	_	_	_	_	_
+9	a	a	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	meio	meio	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:a	_
+12	ambiente	ambiente	NOUN	_	Number=Sing	11	nmod	11:nmod	SpaceAfter=No
+13	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0031
+# text = Isso implica em desperdício de recursos como água e energia, necessários à sua produção.
+1	Isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	2	nsubj	2:nsubj	_
+2	implica	implicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	em	em	ADP	_	_	4	case	4:case	_
+4	desperdício	desperdício	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:em	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	recursos	recurso	NOUN	_	Gender=Masc|Number=Plur	4	nmod	4:nmod:de	_
+7	como	como	ADP	_	_	8	case	8:case|10:case	_
+8	água	água	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:como	_
+9	e	e	CCONJ	_	_	10	cc	10:cc	_
+10	energia	energia	NOUN	_	Gender=Fem|Number=Sing	8	conj	6:nmod:como|8:conj:e	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	necessários	necessário	ADJ	_	Gender=Masc|Number=Plur	6	amod	6:amod	_
+13-14	à	_	_	_	_	_	_	_	_
+13	a	a	ADP	_	_	16	case	16:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+15	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	16	det	16:det	_
+16	produção	produção	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl:a	SpaceAfter=No
+17	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0033
+# text = O Wefood é um passo importante na batalha contra o desperdício de alimentos, disse a ministra.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Wefood	Wefood	PROPN	_	_	5	nsubj	5:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	passo	passo	NOUN	_	Gender=Masc|Number=Sing	16	ccomp:speech	16:ccomp:speech	_
+6	importante	importante	ADJ	_	Number=Sing	5	amod	5:amod	_
+7-8	na	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	batalha	batalha	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:em	_
+10	contra	contra	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	desperdício	desperdício	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:contra	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	alimentos	alimento	NOUN	_	Gender=Masc|Number=Plur	12	nmod	12:nmod:de	SpaceAfter=No
+15	,	,	PUNCT	_	_	5	punct	5:punct	_
+16	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	ministra	ministro	NOUN	_	Gender=Fem|Number=Sing	16	nsubj	16:nsubj	SpaceAfter=No
+19	.	.	PUNCT	_	_	16	punct	16:punct	_

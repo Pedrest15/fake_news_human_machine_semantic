@@ -1,0 +1,533 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Atenção: Revelação chocante sobre celebridade nacional!
+1	Atenção	atenção	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+2	:	:	PUNCT	_	_	3	punct	3:punct	_
+3	Revelação	revelação	NOUN	_	Gender=Fem|Number=Sing	1	parataxis	1:parataxis	_
+4	chocante	chocante	ADJ	_	Number=Sing	3	amod	3:amod	_
+5	sobre	sobre	ADP	_	_	6	case	6:case	_
+6	celebridade	celebridade	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:sobre	_
+7	nacional	nacional	ADJ	_	Number=Sing	6	amod	6:amod	SpaceAfter=No
+8	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = A famosa escritora e ativista Maria** expõe detalhes íntimos de sua vida em nova autobiografia.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+2	famosa	famoso	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+3	escritora	escritor	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	9:nsubj	_
+4	e	e	CCONJ	_	_	5	cc	5:cc	_
+5	ativista	ativista	NOUN	_	Number=Sing	3	conj	3:conj:e|9:nsubj	_
+6	Maria	Maria	PROPN	_	_	3	nmod	3:nmod|5:nmod	SpaceAfter=No
+7	*	*	PROPN	_	_	6	flat:name	6:flat:name	SpaceAfter=No
+8	*	*	PROPN	_	_	6	flat:name	6:flat:name	_
+9	expõe	expor	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+10	detalhes	detalhe	NOUN	_	Gender=Masc|Number=Plur	9	obj	9:obj	_
+11	íntimos	íntimo	ADJ	_	Gender=Masc|Number=Plur	10	amod	10:amod	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	14	det	14:det	_
+14	vida	vida	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:de	_
+15	em	em	ADP	_	_	17	case	17:case	_
+16	nova	novo	ADJ	_	Gender=Fem|Number=Sing	17	amod	17:amod	_
+17	autobiografia	autobiografia	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:em	SpaceAfter=No
+18	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0005
+# text = Em um relato emocionante, ela revela ter sido vítima de um relacionamento abusivo e manipulador desde a adolescência, algo que quase destruiu sua vida e carreira.
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	relato	relato	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:em	_
+4	emocionante	emocionante	ADJ	_	Number=Sing	3	amod	3:amod	SpaceAfter=No
+5	,	,	PUNCT	_	_	3	punct	3:punct	_
+6	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	7	nsubj	7:nsubj|10:nsubj	_
+7	revela	revelar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	ter	ter	AUX	_	VerbForm=Inf	10	aux	10:aux	_
+9	sido	ser	AUX	_	Gender=Masc|Number=Sing|VerbForm=Part	10	cop	10:cop	_
+10	vítima	vítima	NOUN	_	Gender=Fem|Number=Sing	7	xcomp	7:xcomp	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	relacionamento	relacionamento	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:de	_
+14	abusivo	abusivo	ADJ	_	Gender=Masc|Number=Sing	13	amod	13:amod	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	manipulador	manipulador	ADJ	_	Gender=Masc|Number=Sing	14	conj	13:amod|14:conj:e	_
+17	desde	desde	ADP	_	_	19	case	19:case	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	adolescência	adolescência	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:desde	SpaceAfter=No
+20	,	,	PUNCT	_	_	21	punct	21:punct	_
+21	algo	algo	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	10	appos	10:appos|24:nsubj	_
+22	que	que	PRON	_	PronType=Rel	24	nsubj	21:ref	_
+23	quase	quase	ADV	_	_	24	advmod	24:advmod	_
+24	destruiu	destruir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	21	acl:relcl	21:acl:relcl	_
+25	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	26	det	26:det	_
+26	vida	vida	NOUN	_	Gender=Fem|Number=Sing	24	obj	24:obj	_
+27	e	e	CCONJ	_	_	28	cc	28:cc	_
+28	carreira	carreira	NOUN	_	Gender=Fem|Number=Sing	26	conj	24:obj|26:conj:e	SpaceAfter=No
+29	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0007
+# text = O agressor, Paulo, não só tentou controlar cada passo de Maria, mas também se envolveu em um triângulo amoroso com sua própria mãe, causando uma crise familiar sem precedentes.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	agressor	agressor	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	8:nsubj|9:nsubj|18:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	Paulo	Paulo	PROPN	_	_	2	appos	2:appos	SpaceAfter=No
+5	,	,	PUNCT	_	_	4	punct	4:punct	_
+6	não	não	ADV	_	_	7	advmod	7:advmod	_
+7	só	só	ADV	_	_	8	advmod	8:advmod	_
+8	tentou	tentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	controlar	controlar	VERB	_	VerbForm=Inf	8	xcomp	8:xcomp	_
+10	cada	cada	DET	_	Number=Sing|PronType=Ind	11	det	11:det	_
+11	passo	passo	NOUN	_	Gender=Masc|Number=Sing	9	obj	9:obj	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	Maria	Maria	PROPN	_	_	11	nmod	11:nmod:de	SpaceAfter=No
+14	,	,	PUNCT	_	_	18	punct	18:punct	_
+15	mas	mas	CCONJ	_	_	18	cc	18:cc	_
+16	também	também	ADV	_	_	18	advmod	18:advmod	_
+17	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	18	expl	18:expl	_
+18	envolveu	envolver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	conj	8:conj:mas	_
+19	em	em	ADP	_	_	21	case	21:case	_
+20	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	triângulo	triângulo	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:em	_
+22	amoroso	amoroso	ADJ	_	Gender=Masc|Number=Sing	21	amod	21:amod	_
+23	com	com	ADP	_	_	26	case	26:case	_
+24	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	26	det	26:det	_
+25	própria	próprio	DET	_	Gender=Fem|Number=Sing|PronType=Dem	26	det	26:det	_
+26	mãe	mãe	NOUN	_	Gender=Fem|Number=Sing	21	nmod	21:nmod:com	SpaceAfter=No
+27	,	,	PUNCT	_	_	28	punct	28:punct	_
+28	causando	causar	VERB	_	VerbForm=Ger	18	advcl	18:advcl	_
+29	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	crise	crise	NOUN	_	Gender=Fem|Number=Sing	28	obj	28:obj	_
+31	familiar	familiar	ADJ	_	Number=Sing	30	amod	30:amod	_
+32	sem	sem	ADP	_	_	33	case	33:case	_
+33	precedentes	precedente	NOUN	_	Number=Plur	30	nmod	30:nmod:sem	SpaceAfter=No
+34	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0009
+# text = Maria, conhecida por sua luta pelos direitos das mulheres, relata que Paulo, um jovem de 18 anos na época, foi seu primeiro namorado e se tornou uma sombra tóxica em sua vida.
+1	Maria	Maria	PROPN	_	_	14	nsubj	14:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	conhecida	conhecido	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	1	amod	1:amod	_
+4	por	por	ADP	_	_	6	case	6:case	_
+5	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	6	det	6:det	_
+6	luta	luta	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:por	_
+7-8	pelos	_	_	_	_	_	_	_	_
+7	por	por	ADP	_	_	9	case	9:case	_
+8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	9:det	_
+9	direitos	direito	NOUN	_	Gender=Masc|Number=Plur	6	nmod	6:nmod:por	_
+10-11	das	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	12:det	_
+12	mulheres	mulher	NOUN	_	Gender=Fem|Number=Plur	9	nmod	9:nmod:de	SpaceAfter=No
+13	,	,	PUNCT	_	_	3	punct	3:punct	_
+14	relata	relatar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+15	que	que	SCONJ	_	_	30	mark	30:mark|33:mark	_
+16	Paulo	Paulo	PROPN	_	_	30	nsubj	30:nsubj|33:nsubj|35:nsubj	SpaceAfter=No
+17	,	,	PUNCT	_	_	19	punct	19:punct	_
+18	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	jovem	jovem	NOUN	_	Number=Sing	16	appos	16:appos	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	18	18	NUM	_	NumType=Card	22	nummod	22:nummod	_
+22	anos	ano	NOUN	_	Gender=Masc|Number=Plur	19	nmod	19:nmod:de	_
+23-24	na	_	_	_	_	_	_	_	_
+23	em	em	ADP	_	_	25	case	25:case	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	época	época	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:em	SpaceAfter=No
+26	,	,	PUNCT	_	_	19	punct	19:punct	_
+27	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	30	cop	30:cop	_
+28	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	30	det	30:det	_
+29	primeiro	primeiro	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	30	amod	30:amod	_
+30	namorado	namorado	NOUN	_	Gender=Masc|Number=Sing	14	ccomp	14:ccomp	_
+31	e	e	CCONJ	_	_	33	cc	33:cc	_
+32	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	33	expl	33:expl	_
+33	tornou	tornar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	30	conj	14:ccomp|30:conj:e	_
+34	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	35	det	35:det	_
+35	sombra	sombra	NOUN	_	Gender=Fem|Number=Sing	33	xcomp	33:xcomp	_
+36	tóxica	tóxico	ADJ	_	Gender=Fem|Number=Sing	35	amod	35:amod	_
+37	em	em	ADP	_	_	39	case	39:case	_
+38	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	39	det	39:det	_
+39	vida	vida	NOUN	_	Gender=Fem|Number=Sing	33	obl	33:obl:em	SpaceAfter=No
+40	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0011
+# text = Ele teria dito que, se não casasse com ele, jamais se casaria com ninguém.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	3:nsubj	_
+2	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	3	aux	3:aux	_
+3	dito	dizer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+4	que	que	SCONJ	_	_	14	mark	14:mark	SpaceAfter=No
+5	,	,	PUNCT	_	_	8	punct	8:punct	_
+6	se	se	SCONJ	_	_	8	mark	8:mark	_
+7	não	não	ADV	_	_	8	advmod	8:advmod	_
+8	casasse	casar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	advcl	14:advcl:se	_
+9	com	com	ADP	_	_	10	case	10:case	_
+10	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	obl	8:obl:com	SpaceAfter=No
+11	,	,	PUNCT	_	_	8	punct	8:punct	_
+12	jamais	jamais	ADV	_	_	14	advmod	14:advmod	_
+13	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	14	expl	14:expl	_
+14	casaria	casar	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	3	ccomp	3:ccomp	_
+15	com	com	ADP	_	_	16	case	16:case	_
+16	ninguém	ninguém	PRON	_	Number=Sing|PronType=Ind	14	obl	14:obl:com	SpaceAfter=No
+17	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0013
+# text = Coincidentemente, sua mãe, influenciada por crenças espíritas, acreditava que Paulo era a reencarnação de seu falecido marido e passou a viver com ele, gerando um escândalo familiar.
+1	Coincidentemente	coincidentemente	ADV	_	_	11	advmod	11:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	4	det	4:det	_
+4	mãe	mãe	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	11:nsubj|22:nsubj|24:nsubj	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	influenciada	influenciar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	4	acl	4:acl	_
+7	por	por	ADP	_	_	8	case	8:case	_
+8	crenças	crenão	NOUN	_	Gender=Fem|Number=Plur	6	obl:agent	6:obl:agent	_
+9	espíritas	espírita	ADJ	_	Number=Plur	8	amod	8:amod	SpaceAfter=No
+10	,	,	PUNCT	_	_	6	punct	6:punct	_
+11	acreditava	acreditar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+12	que	que	SCONJ	_	_	16	mark	16:mark	_
+13	Paulo	Paulo	PROPN	_	_	16	nsubj	16:nsubj	_
+14	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	16	cop	16:cop	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	reencarnação	reencarnação	NOUN	_	Gender=Fem|Number=Sing	11	ccomp	11:ccomp	_
+17	de	de	ADP	_	_	20	case	20:case	_
+18	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	20	det	20:det	_
+19	falecido	falecido	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	20	amod	20:amod	_
+20	marido	marido	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod:de	_
+21	e	e	CCONJ	_	_	22	cc	22:cc	_
+22	passou	passar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	conj	11:conj:e	_
+23	a	a	ADP	_	_	24	mark	24:mark	_
+24	viver	viver	VERB	_	VerbForm=Inf	22	xcomp	22:xcomp	_
+25	com	com	ADP	_	_	26	case	26:case	_
+26	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	24	obl	24:obl:com	SpaceAfter=No
+27	,	,	PUNCT	_	_	28	punct	28:punct	_
+28	gerando	gerar	VERB	_	VerbForm=Ger	22	advcl	22:advcl	_
+29	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	30	det	30:det	_
+30	escândalo	escândalo	NOUN	_	Gender=Masc|Number=Sing	28	obj	28:obj	_
+31	familiar	familiar	ADJ	_	Number=Sing	30	amod	30:amod	SpaceAfter=No
+32	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0015
+# text = A escritora descreve tentativas de suicídio e internações em sanatórios, além de uma depressão que a acompanhou por anos.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	escritora	escritor	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_
+3	descreve	descrever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	tentativas	tentativa	NOUN	_	Gender=Fem|Number=Plur	3	obj	3:obj	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	suicídio	suicídio	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:de	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	internações	internação	NOUN	_	Gender=Fem|Number=Plur	4	conj	3:obj|4:conj:e	_
+9	em	em	ADP	_	_	10	case	10:case	_
+10	sanatórios	sanatório	NOUN	_	Gender=Masc|Number=Plur	8	nmod	8:nmod:em	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	além	além	ADV	_	_	3	advmod	3:advmod	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	depressão	depressão	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl:de|18:nsubj	_
+16	que	que	PRON	_	PronType=Rel	18	nsubj	15:ref	_
+17	a	o	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	18	obj	18:obj	_
+18	acompanhou	acompanhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	acl:relcl	15:acl:relcl	_
+19	por	por	ADP	_	_	20	case	20:case	_
+20	anos	ano	NOUN	_	Gender=Masc|Number=Plur	18	obl	18:obl:por	SpaceAfter=No
+21	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0017
+# text = Em um momento de desespero, Maria foi salva por um salva-vidas casado, que posteriormente se tornou pai de sua primeira filha.
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	momento	momento	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:em	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	desespero	desespero	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	3	punct	3:punct	_
+7	Maria	Maria	PROPN	_	_	9	nsubj:pass	9:nsubj:pass	_
+8	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	aux:pass	9:aux:pass	_
+9	salva	salvar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+10	por	por	ADP	_	_	12	case	12:case	_
+11	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	salva-vidas	salva-vidas	NOUN	_	Number=Plur	9	obl:agent	9:obl:agent|18:nsubj|19:nsubj	_
+13	casado	casado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	12	amod	12:amod	SpaceAfter=No
+14	,	,	PUNCT	_	_	18	punct	18:punct	_
+15	que	que	PRON	_	PronType=Rel	18	nsubj	12:ref	_
+16	posteriormente	posteriormente	ADV	_	_	18	advmod	18:advmod	_
+17	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	18	expl	18:expl	_
+18	tornou	tornar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	acl:relcl	12:acl:relcl	_
+19	pai	pai	NOUN	_	Gender=Masc|Number=Sing	18	xcomp	18:xcomp	_
+20	de	de	ADP	_	_	23	case	23:case	_
+21	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	23	det	23:det	_
+22	primeira	primeiro	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	23	amod	23:amod	_
+23	filha	filho	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:de	SpaceAfter=No
+24	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0019
+# text = A revelação mais surpreendente é a constante vigilância e perseguição de Paulo, que incluía invasões de domicílio e ameaças com arma de fogo.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	revelação	revelação	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	8:nsubj|10:nsubj	_
+3	mais	mais	ADV	_	_	4	advmod	4:advmod	_
+4	surpreendente	surpreendente	ADJ	_	Number=Sing	2	amod	2:amod	_
+5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop|10:cop	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+7	constante	constante	ADJ	_	Number=Sing	8	amod	8:amod	_
+8	vigilância	vigilância	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root|15:nsubj	_
+9	e	e	CCONJ	_	_	10	cc	10:cc	_
+10	perseguição	perseguição	NOUN	_	Gender=Fem|Number=Sing	8	conj	8:conj:e|15:nsubj	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	Paulo	Paulo	PROPN	_	_	8	nmod	8:nmod:de|10:nmod:de	SpaceAfter=No
+13	,	,	PUNCT	_	_	15	punct	15:punct	_
+14	que	que	PRON	_	PronType=Rel	15	nsubj	8:ref|10:ref	_
+15	incluía	incluer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	8	acl:relcl	8:acl:relcl|10:acl:relcl	_
+16	invasões	invasão	NOUN	_	Gender=Fem|Number=Plur	15	obj	15:obj	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	domicílio	domicílio	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod:de	_
+19	e	e	CCONJ	_	_	20	cc	20:cc	_
+20	ameaças	ameaça	NOUN	_	Gender=Fem|Number=Plur	16	conj	15:obj|16:conj:e	_
+21	com	com	ADP	_	_	22	case	22:case	_
+22	arma	arma	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:com	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	fogo	fogo	NOUN	_	Gender=Masc|Number=Sing	22	nmod	22:nmod:de	SpaceAfter=No
+25	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0021
+# text = Mesmo após anos, Paulo continuou a assombrá-la, aparecendo em missas e causando-lhe crises de saúde, como um princípio de enfarte e AVC.
+1	Mesmo	mesmo	ADV	_	_	3	advmod	3:advmod	_
+2	após	após	ADP	_	_	3	case	3:case	_
+3	anos	ano	NOUN	_	Gender=Masc|Number=Plur	6	obl	6:obl:após	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	Paulo	Paulo	PROPN	_	_	6	nsubj	6:nsubj|8:nsubj	_
+6	continuou	continuar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	a	a	ADP	_	_	8	mark	8:mark	_
+8-9	assombrá-la	_	_	_	_	_	_	_	_
+8	assombrar	assombrar	VERB	_	VerbForm=Inf	6	xcomp	6:xcomp	_
+9	la	lo	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	8	obj	8:obj	_
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	aparecendo	aparecer	VERB	_	VerbForm=Ger	8	advcl	8:advcl	_
+12	em	em	ADP	_	_	13	case	13:case	_
+13	missas	missa	NOUN	_	Number=Plur	11	obl	11:obl:em	_
+14	e	e	CCONJ	_	_	15	cc	15:cc	_
+15-16	causando-lhe	_	_	_	_	_	_	_	_
+15	causando	causar	VERB	_	VerbForm=Ger	11	conj	8:advcl|11:conj:e	_
+16	lhe	lhe	PRON	_	Case=Dat|Number=Sing|Person=3|PronType=Prs	15	iobj	15:iobj	_
+17	crises	crise	NOUN	_	Gender=Fem|Number=Plur	15	obj	15:obj	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	17	nmod	17:nmod:de	SpaceAfter=No
+20	,	,	PUNCT	_	_	23	punct	23:punct	_
+21	como	como	ADP	_	_	23	case	23:case	_
+22	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	princípio	princípio	NOUN	_	Gender=Masc|Number=Sing	17	nmod	17:nmod:como	_
+24	de	de	ADP	_	_	25	case	25:case|27:case	_
+25	enfarte	enfarte	NOUN	_	Gender=Masc|Number=Sing	23	nmod	23:nmod:de	_
+26	e	e	CCONJ	_	_	27	cc	27:cc	_
+27	AVC	AVC	PROPN	_	_	25	conj	23:nmod:de|25:conj:e	SpaceAfter=No
+28	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0023
+# text = Maria confessa ter sentido nojo e repulsa nas tentativas de aproximação de Paulo, que alegava amor enquanto praticava atos violentos e manipuladores.
+1	Maria	Maria	PROPN	_	_	2	nsubj	2:nsubj|4:nsubj	_
+2	confessa	confessar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	ter	ter	AUX	_	VerbForm=Inf	4	aux	4:aux	_
+4	sentido	sentir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	2	xcomp	2:xcomp	_
+5	nojo	nojo	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	repulsa	repulso	NOUN	_	Gender=Fem|Number=Sing	5	conj	4:obj|5:conj:e	_
+8-9	nas	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	10:det	_
+10	tentativas	tentativa	NOUN	_	Gender=Fem|Number=Plur	4	obl	4:obl:em	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	aproximação	aproximação	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:de	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	Paulo	Paulo	PROPN	_	_	12	nmod	12:nmod:de|17:nsubj	SpaceAfter=No
+15	,	,	PUNCT	_	_	17	punct	17:punct	_
+16	que	que	PRON	_	PronType=Rel	17	nsubj	14:ref	_
+17	alegava	alegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	14	acl:relcl	14:acl:relcl	_
+18	amor	amor	NOUN	_	Gender=Masc|Number=Sing	17	obj	17:obj	_
+19	enquanto	enquanto	SCONJ	_	_	20	mark	20:mark	_
+20	praticava	praticar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	17	advcl	17:advcl:enquanto	_
+21	atos	ato	NOUN	_	Gender=Masc|Number=Plur	20	obj	20:obj	_
+22	violentos	violento	ADJ	_	Gender=Masc|Number=Plur	21	amod	21:amod	_
+23	e	e	CCONJ	_	_	24	cc	24:cc	_
+24	manipuladores	manipulador	ADJ	_	Gender=Masc|Number=Plur	22	conj	21:amod|22:conj:e	SpaceAfter=No
+25	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0025
+# text = Sua mãe, ao invés de apoiá-la, a acusava de ser lésbica, espalhando rumores infundados entre a família.
+1	Sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	det	2:det	_
+2	mãe	mãe	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	12:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
+4-5	ao	_	_	_	_	_	_	_	_
+4	a	a	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	invés	invés	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:a	_
+7	de	de	ADP	_	_	8	mark	8:mark	_
+8-9	apoiá-la	_	_	_	_	_	_	_	_
+8	apoiar	apoiar	VERB	_	VerbForm=Inf	6	acl	6:acl:de	_
+9	la	lo	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	8	obj	8:obj	_
+10	,	,	PUNCT	_	_	6	punct	6:punct	_
+11	a	o	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	12	obj	12:obj|15:nsubj	_
+12	acusava	acusar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+13	de	de	ADP	_	_	15	mark	15:mark	_
+14	ser	ser	AUX	_	VerbForm=Inf	15	cop	15:cop	_
+15	lésbica	lésbico	ADJ	_	Gender=Fem|Number=Sing	12	xcomp	12:xcomp	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	espalhando	espalhar	VERB	_	VerbForm=Ger	12	advcl	12:advcl	_
+18	rumores	rumor	NOUN	_	Gender=Masc|Number=Plur	17	obj	17:obj	_
+19	infundados	infundado	ADJ	_	Gender=Masc|Number=Plur	18	amod	18:amod	_
+20	entre	entre	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	família	família	NOUN	_	Gender=Fem|Number=Sing	17	obl	17:obl:entre	SpaceAfter=No
+23	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0027
+# text = Com a ajuda de terapias e se tornando uma Agente Bem Querer, Maria conseguiu superar parte do trauma e hoje ajuda outras mulheres a saírem de situações de violência.
+1	Com	com	ADP	_	_	3	case	3:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	ajuda	ajuda	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl:com	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	terapias	terapia	NOUN	_	Gender=Fem|Number=Plur	3	nmod	3:nmod:de	_
+6	e	e	CCONJ	_	_	8	cc	8:cc	_
+7	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	8	expl	8:expl	_
+8	tornando	tornar	VERB	_	VerbForm=Ger	3	conj	3:conj:e|15:advcl:com|23:advcl:com	_
+9	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	Agente	Agente	PROPN	_	_	8	xcomp	8:xcomp	_
+11	Bem	Bem	PROPN	_	_	10	flat:name	10:flat:name	_
+12	Querer	Querer	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+13	,	,	PUNCT	_	_	3	punct	3:punct	_
+14	Maria	Maria	PROPN	_	_	15	nsubj	15:nsubj|16:nsubj|23:nsubj	_
+15	conseguiu	conseguir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+16	superar	superar	VERB	_	VerbForm=Inf	15	xcomp	15:xcomp	_
+17	parte	parte	NOUN	_	Gender=Fem|Number=Sing	16	obj	16:obj	_
+18-19	do	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	trauma	trauma	NOUN	_	Gender=Masc|Number=Sing	17	nmod	17:nmod:de	_
+21	e	e	CCONJ	_	_	23	cc	23:cc	_
+22	hoje	hoje	ADV	_	_	23	advmod	23:advmod	_
+23	ajuda	ajudar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	conj	15:conj:e	_
+24	outras	outro	DET	_	Gender=Fem|Number=Plur|PronType=Ind	25	det	25:det	_
+25	mulheres	mulher	NOUN	_	Gender=Fem|Number=Plur	23	obj	23:obj|27:nsubj	_
+26	a	a	ADP	_	_	27	mark	27:mark	_
+27	saírem	sair	VERB	_	Number=Plur|Person=3|VerbForm=Inf	23	xcomp	23:xcomp	_
+28	de	de	ADP	_	_	29	case	29:case	_
+29	situações	situação	NOUN	_	Gender=Fem|Number=Plur	27	obl	27:obl:de	_
+30	de	de	ADP	_	_	31	case	31:case	_
+31	violência	violência	NOUN	_	Gender=Fem|Number=Sing	29	nmod	29:nmod:de	SpaceAfter=No
+32	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0029
+# text = Ela destaca a importância de falar sobre o problema e busca usar sua influência para criar uma rede de apoio, incluindo um ateliê de artesanato para gerar renda a vítimas de violência.
+1	Ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj|11:nsubj|12:nsubj	_
+2	destaca	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	importância	importância	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+5	de	de	ADP	_	_	6	mark	6:mark	_
+6	falar	falar	VERB	_	VerbForm=Inf	4	acl	4:acl:de	_
+7	sobre	sobre	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	problema	problema	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:sobre	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	busca	buscar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:e	_
+12	usar	usar	VERB	_	VerbForm=Inf	11	xcomp	11:xcomp	_
+13	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	14	det	14:det	_
+14	influência	influência	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+15	para	para	ADP	_	_	16	mark	16:mark	_
+16	criar	criar	VERB	_	VerbForm=Inf	12	advcl	12:advcl:para	_
+17	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	rede	rede	NOUN	_	Gender=Fem|Number=Sing	16	obj	16:obj	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	apoio	apoio	NOUN	_	Gender=Masc|Number=Sing	18	nmod	18:nmod:de	SpaceAfter=No
+21	,	,	PUNCT	_	_	22	punct	22:punct	_
+22	incluindo	incluir	VERB	_	VerbForm=Ger	18	acl	18:acl	_
+23	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	ateliê	ateliê	NOUN	_	Gender=Masc|Number=Sing	22	obj	22:obj	_
+25	de	de	ADP	_	_	26	case	26:case	_
+26	artesanato	artesanato	NOUN	_	Gender=Masc|Number=Sing	24	nmod	24:nmod:de	_
+27	para	para	ADP	_	_	28	mark	28:mark	_
+28	gerar	gerar	VERB	_	VerbForm=Inf	22	advcl	22:advcl:para	_
+29	renda	renda	NOUN	_	Gender=Fem|Number=Sing	28	obj	28:obj	_
+30	a	a	ADP	_	_	31	case	31:case	_
+31	vítimas	vítima	NOUN	_	Gender=Fem|Number=Plur	28	obl	28:obl:a	_
+32	de	de	ADP	_	_	33	case	33:case	_
+33	violência	violência	NOUN	_	Gender=Fem|Number=Sing	31	nmod	31:nmod:de	SpaceAfter=No
+34	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0031
+# text = A história de Maria é um alerta para a violência psicológica, muitas vezes invisível, mas devastadora.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	história	história	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Maria	Maria	PROPN	_	_	2	nmod	2:nmod:de	_
+5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	alerta	alerta	NOUN	_	Number=Sing	0	root	0:root	_
+8	para	para	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	violência	violência	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:para	_
+11	psicológica	psicológico	ADJ	_	Gender=Fem|Number=Sing	10	amod	10:amod	SpaceAfter=No
+12	,	,	PUNCT	_	_	15	punct	15:punct	_
+13	muitas	muito	ADJ	_	Gender=Fem|Number=Plur	14	amod	14:amod	_
+14	vezes	vez	NOUN	_	Gender=Fem|Number=Plur	15	obl	15:obl	_
+15	invisível	invisível	ADJ	_	Number=Sing	10	acl:relcl	10:acl:relcl	SpaceAfter=No
+16	,	,	PUNCT	_	_	18	punct	18:punct	_
+17	mas	mas	CCONJ	_	_	18	cc	18:cc	_
+18	devastadora	devastador	ADJ	_	Gender=Fem|Number=Sing	15	conj	10:acl:relcl|15:conj:mas	SpaceAfter=No
+19	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0033
+# text = Ela conclui dizendo que, apesar das cicatrizes, a capacidade de buscar ajuda e denunciar é um avanço crucial para as mulheres de hoje.
+1	Ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj	_
+2	conclui	concluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	dizendo	dizer	VERB	_	VerbForm=Ger	2	advcl	2:advcl	_
+4	que	que	SCONJ	_	_	20	mark	20:mark	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	apesar	apesar	ADV	_	_	20	advmod	20:advmod	_
+7-8	das	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	9:det	_
+9	cicatrizes	cicatriz	NOUN	_	Gender=Fem|Number=Plur	6	obl	6:obl:de	SpaceAfter=No
+10	,	,	PUNCT	_	_	6	punct	6:punct	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	capacidade	capacidade	NOUN	_	Gender=Fem|Number=Sing	20	nsubj	20:nsubj	_
+13	de	de	ADP	_	_	14	mark	14:mark	_
+14	buscar	buscar	VERB	_	VerbForm=Inf	12	acl	12:acl:de	_
+15	ajuda	ajuda	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	_
+16	e	e	CCONJ	_	_	17	cc	17:cc	_
+17	denunciar	denunciar	VERB	_	VerbForm=Inf	15	conj	14:obj|15:conj:e	_
+18	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	cop	20:cop	_
+19	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	avanço	avanço	NOUN	_	Gender=Masc|Number=Sing	3	ccomp	3:ccomp	_
+21	crucial	crucial	ADJ	_	Number=Sing	20	amod	20:amod	_
+22	para	para	ADP	_	_	24	case	24:case	_
+23	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	24:det	_
+24	mulheres	mulher	NOUN	_	Gender=Fem|Number=Plur	20	nmod	20:nmod:para	_
+25	de	de	ADP	_	_	26	case	26:case	_
+26	hoje	hoje	ADV	_	_	24	advmod	24:advmod	SpaceAfter=No
+27	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0035
+# text = A autobiografia promete ser um best-seller e tem gerado grande comoção nas redes sociais.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	autobiografia	autobiografia	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj|6:nsubj|9:nsubj	_
+3	promete	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	ser	ser	AUX	_	VerbForm=Inf	6	cop	6:cop	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	best-seller	best-seller	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	3	xcomp	3:xcomp	_
+7	e	e	CCONJ	_	_	9	cc	9:cc	_
+8	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux	9:aux	_
+9	gerado	gerar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	3	conj	3:conj:e	_
+10	grande	grande	ADJ	_	Number=Sing	11	amod	11:amod	_
+11	comoção	comoção	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+12-13	nas	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	14:det	_
+14	redes	rede	NOUN	_	Gender=Fem|Number=Plur	9	obl	9:obl:em	_
+15	sociais	social	ADJ	_	Number=Plur	14	amod	14:amod	SpaceAfter=No
+16	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0037
+# text = **Nome alterado para preservar a identidade da vítima.
+1	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+3	Nome	nome	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+4	alterado	alterar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	acl	3:acl	_
+5	para	para	ADP	_	_	6	mark	6:mark	_
+6	preservar	preservar	VERB	_	VerbForm=Inf	4	advcl	4:advcl:para	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	identidade	identidade	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+9-10	da	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	vítima	vítima	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	SpaceAfter=No
+12	.	.	PUNCT	_	_	3	punct	3:punct	_

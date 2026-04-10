@@ -1,0 +1,519 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = A farra não para!
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	farra	farra	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+3	não	não	ADV	_	_	4	advmod	4:advmod	_
+4	para	parar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+5	!	!	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0003
+# text = Senado vai gastar R$ 50 mil para comprar xícaras com "frisos dourados".
+1	Senado	Senado	PROPN	_	_	3	nsubj	3:nsubj	_
+2	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux	3:aux	_
+3	gastar	gastar	VERB	_	VerbForm=Inf	0	root	0:root	_
+4	R$	R$	SYM	_	_	3	obj	3:obj	_
+5	50	50	NUM	_	NumType=Card	4	nummod	4:nummod	_
+6	mil	mil	NUM	_	NumType=Card	5	flat	5:flat	_
+7	para	para	ADP	_	_	8	mark	8:mark	_
+8	comprar	comprar	VERB	_	VerbForm=Inf	3	advcl	3:advcl:para	_
+9	xícaras	xícara	NOUN	_	Gender=Fem|Number=Plur	8	obj	8:obj	_
+10	com	com	ADP	_	_	12	case	12:case	_
+11	"	"	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+12	frisos	friso	NOUN	_	Gender=Masc|Number=Plur	9	nmod	9:nmod:com	_
+13	dourados	dourado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	12	amod	12:amod	SpaceAfter=No
+14	"	"	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+15	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0005
+# text = A informações são da ONG Contas Abertas.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	informações	informação	NOUN	_	Gender=Fem|Number=Plur	6	nsubj	6:nsubj	_
+3	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+4-5	da	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	ONG	ONG	PROPN	_	_	0	root	0:root	_
+7	Contas	Contas	PROPN	_	_	6	nmod	6:nmod	_
+8	Abertas	Abertas	PROPN	_	_	6	flat:name	6:flat:name	SpaceAfter=No
+9	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0007
+# text = O senado empenhou R$ 47, 2 mil para a compra de diversos itens de casa e cozinha.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	senado	senado	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	empenhou	empenhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	R$	R$	SYM	_	_	3	obj	3:obj	_
+5	47	47	NUM	_	NumType=Card	4	nummod	4:nummod	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	2	2	NUM	_	NumType=Card	4	nummod	4:nummod	_
+8	mil	mil	NUM	_	NumType=Card	7	flat	7:flat	_
+9	para	para	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	compra	compra	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:para	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	diversos	diversos	DET	_	Gender=Masc|Number=Plur|PronType=Dem	14	det	14:det	_
+14	itens	item	NOUN	_	Gender=Masc|Number=Plur	11	nmod	11:nmod:de	_
+15	de	de	ADP	_	_	16	case	16:case|18:case	_
+16	casa	casa	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:de	_
+17	e	e	CCONJ	_	_	18	cc	18:cc	_
+18	cozinha	cozinha	NOUN	_	Gender=Fem|Number=Sing	16	conj	14:nmod:de|16:conj:e	SpaceAfter=No
+19	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0009
+# text = Na lista das aquisições estão 100 açucareiros com custo total de R$ 3 mil.
+1-2	Na	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	lista	lista	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+4-5	das	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	6:det	_
+6	aquisições	aquisição	NOUN	_	Gender=Fem|Number=Plur	3	nmod	3:nmod:de	_
+7	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+8	100	100	NUM	_	NumType=Card	9	nummod	9:nummod	_
+9	açucareiros	açucareiro	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	3:nsubj	_
+10	com	com	ADP	_	_	11	case	11:case	_
+11	custo	custo	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:com	_
+12	total	total	ADJ	_	Number=Sing	11	amod	11:amod	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	R$	R$	SYM	_	_	11	nmod	11:nmod:de	_
+15	3	3	NUM	_	NumType=Card	14	nummod	14:nummod	_
+16	mil	mil	NUM	_	NumType=Card	15	flat	15:flat	SpaceAfter=No
+17	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0011
+# text = Os objetos são totalmente confeccionados em aço inox, com tampa solta e capacidade para 300 gramas.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	objetos	objeto	NOUN	_	Gender=Masc|Number=Plur	5	nsubj:pass	5:nsubj:pass	_
+3	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux:pass	5:aux:pass	_
+4	totalmente	totalmente	ADV	_	_	5	advmod	5:advmod	_
+5	confeccionados	confeccionar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	_
+6	em	em	ADP	_	_	7	case	7:case	_
+7	aço	aço	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:em	_
+8	inox	inox	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod	SpaceAfter=No
+9	,	,	PUNCT	_	_	11	punct	11:punct	_
+10	com	com	ADP	_	_	11	case	11:case|14:case	_
+11	tampa	tampa	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:com	_
+12	solta	solto	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	11	amod	11:amod	_
+13	e	e	CCONJ	_	_	14	cc	14:cc	_
+14	capacidade	capacidade	NOUN	_	Gender=Fem|Number=Sing	11	conj	7:nmod:com|11:conj:e	_
+15	para	para	ADP	_	_	17	case	17:case	_
+16	300	300	NUM	_	NumType=Card	17	nummod	17:nummod	_
+17	gramas	grama	NOUN	_	Number=Plur	14	nmod	14:nmod:para	SpaceAfter=No
+18	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0013
+# text = As características adicionais são liso sem decoração, alto brilho e colher para acompanhar.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	características	característica	NOUN	_	Gender=Fem|Number=Plur	5	nsubj	5:nsubj|10:nsubj|12:nsubj	_
+3	adicionais	adicional	ADJ	_	Number=Plur	2	amod	2:amod	_
+4	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop|10:cop|12:cop	_
+5	liso	liso	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+6	sem	sem	ADP	_	_	7	case	7:case	_
+7	decoração	decoração	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:sem	SpaceAfter=No
+8	,	,	PUNCT	_	_	10	punct	10:punct	_
+9	alto	alto	ADJ	_	Gender=Masc|Number=Sing	10	amod	10:amod	_
+10	brilho	brilho	NOUN	_	Gender=Masc|Number=Sing	5	conj	5:conj:e	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	colher	colher	NOUN	_	Gender=Fem|Number=Sing	5	conj	5:conj:e	_
+13	para	para	ADP	_	_	14	mark	14:mark	_
+14	acompanhar	acompanhar	VERB	_	VerbForm=Inf	12	acl	12:acl:para	SpaceAfter=No
+15	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0015
+# text = Outros R$ 7, 2 mil foram destinados para compra de 1.100 colheres de café, 450 colheres para chá, 400 colheres de sopa, 300 colheres para suco e 350 garfos de mesa.
+1	Outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	2	det	2:det	_
+2	R$	R$	SYM	_	_	8	nsubj:pass	8:nsubj:pass	_
+3	7	7	NUM	_	NumType=Card	2	nummod	2:nummod	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	2	2	NUM	_	NumType=Card	2	nummod	2:nummod	_
+6	mil	mil	NUM	_	NumType=Card	5	flat	5:flat	_
+7	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	8	aux:pass	8:aux:pass	_
+8	destinados	destinar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	_
+9	para	para	ADP	_	_	10	case	10:case	_
+10	compra	compra	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:para	_
+11	de	de	ADP	_	_	13	case	13:case|18:case|23:case|28:case|33:case	_
+12	1.100	1.100	NUM	_	NumType=Card	13	nummod	13:nummod	_
+13	colheres	colher	NOUN	_	Gender=Fem|Number=Plur	10	nmod	10:nmod:de	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	café	café	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod:de	SpaceAfter=No
+16	,	,	PUNCT	_	_	18	punct	18:punct	_
+17	450	450	NUM	_	NumType=Card	18	nummod	18:nummod	_
+18	colheres	colher	NOUN	_	Gender=Fem|Number=Plur	13	conj	10:nmod:de|13:conj:e	_
+19	para	para	ADP	_	_	20	case	20:case	_
+20	chá	chá	NOUN	_	Gender=Masc|Number=Sing	18	nmod	18:nmod:para	SpaceAfter=No
+21	,	,	PUNCT	_	_	23	punct	23:punct	_
+22	400	400	NUM	_	NumType=Card	23	nummod	23:nummod	_
+23	colheres	colher	NOUN	_	Gender=Fem|Number=Plur	13	conj	10:nmod:de|13:conj:e	_
+24	de	de	ADP	_	_	25	case	25:case	_
+25	sopa	sopa	NOUN	_	Gender=Fem|Number=Sing	23	nmod	23:nmod:de	SpaceAfter=No
+26	,	,	PUNCT	_	_	28	punct	28:punct	_
+27	300	300	NUM	_	NumType=Card	28	nummod	28:nummod	_
+28	colheres	colher	NOUN	_	Gender=Fem|Number=Plur	13	conj	10:nmod:de|13:conj:e	_
+29	para	para	ADP	_	_	30	case	30:case	_
+30	suco	suco	NOUN	_	Gender=Masc|Number=Sing	28	nmod	28:nmod:para	_
+31	e	e	CCONJ	_	_	33	cc	33:cc	_
+32	350	350	NUM	_	NumType=Card	33	nummod	33:nummod	_
+33	garfos	garfo	NOUN	_	Gender=Masc|Number=Plur	13	conj	10:nmod:de|13:conj:e	_
+34	de	de	ADP	_	_	35	case	35:case	_
+35	mesa	mesa	NOUN	_	Gender=Fem|Number=Sing	33	nmod	33:nmod:de	SpaceAfter=No
+36	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0017
+# text = Os utensílios serão com bojo em formato simétrico e bordas cuidadosamente arredondadas, todos em aço inox, alto brilho, com bojo e cabo monobloco, isto é, em uma única peça.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	utensílios	utensílio	NOUN	_	Gender=Masc|Number=Plur	5	nsubj	5:nsubj	_
+3	serão	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	5	cop	5:cop	_
+4	com	com	ADP	_	_	5	case	5:case	_
+5	bojo	bojo	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+6	em	em	ADP	_	_	7	case	7:case|10:case	_
+7	formato	formato	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:em	_
+8	simétrico	simétrico	ADJ	_	Gender=Masc|Number=Sing	7	amod	7:amod	_
+9	e	e	CCONJ	_	_	10	cc	10:cc	_
+10	bordas	borda	NOUN	_	Gender=Fem|Number=Plur	7	conj	5:nmod:em|7:conj:e	_
+11	cuidadosamente	cuidadosamente	ADV	_	_	12	advmod	12:advmod	_
+12	arredondadas	arredondado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	10	amod	10:amod	SpaceAfter=No
+13	,	,	PUNCT	_	_	16	punct	16:punct	_
+14	todos	todo	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	5	nsubj	5:nsubj	_
+15	em	em	ADP	_	_	16	case	16:case|20:case	_
+16	aço	aço	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:em	_
+17	inox	inox	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod	SpaceAfter=No
+18	,	,	PUNCT	_	_	20	punct	20:punct	_
+19	alto	alto	ADJ	_	Gender=Masc|Number=Sing	20	amod	20:amod	_
+20	brilho	brilho	NOUN	_	Gender=Masc|Number=Sing	16	conj	5:nmod:em|16:conj	SpaceAfter=No
+21	,	,	PUNCT	_	_	23	punct	23:punct	_
+22	com	com	ADP	_	_	23	case	23:case|25:case	_
+23	bojo	bojo	NOUN	_	Gender=Masc|Number=Sing	16	conj	5:nmod:com|16:conj	_
+24	e	e	CCONJ	_	_	25	cc	25:cc	_
+25	cabo	cabo	NOUN	_	Gender=Masc|Number=Sing	23	conj	5:nmod:com|23:conj:e	_
+26	monobloco	monobloco	ADJ	_	Gender=Masc|Number=Sing	25	amod	25:amod	SpaceAfter=No
+27	,	,	PUNCT	_	_	28	punct	28:punct	_
+28	isto	isto	PRON	_	ExtPos=CCONJ|Gender=Masc|Number=Sing|PronType=Dem	34	cc	34:cc	_
+29	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	fixed	28:fixed	SpaceAfter=No
+30	,	,	PUNCT	_	_	28	punct	28:punct	_
+31	em	em	ADP	_	_	34	case	34:case	_
+32	uma	um	NUM	_	Gender=Fem|NumType=Card	34	nummod	34:nummod	_
+33	única	único	ADJ	_	Gender=Fem|Number=Sing	34	amod	34:amod	_
+34	peça	peça	NOUN	_	Gender=Fem|Number=Sing	23	nmod	23:nmod:em|25:nmod:em	SpaceAfter=No
+35	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0019
+# text = Do total, R$ 6, 9 mil devem atender à compra de 150 jarras, em material aço inoxidável, com capacidade para dois litros, modelo com tampa e aparador para gelo.
+1-2	Do	_	_	_	_	_	_	_	_
+1	De	de	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	total	total	NOUN	_	Number=Sing	10	obl	10:obl:de	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	R$	R$	SYM	_	_	10	nsubj	10:nsubj|11:nsubj	_
+6	6	6	NUM	_	NumType=Card	5	nummod	5:nummod	SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	8:punct	_
+8	9	9	NUM	_	NumType=Card	5	nummod	5:nummod	_
+9	mil	mil	NUM	_	NumType=Card	8	flat	8:flat	_
+10	devem	dever	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+11	atender	atender	VERB	_	VerbForm=Inf	10	xcomp	10:xcomp	_
+12-13	à	_	_	_	_	_	_	_	_
+12	a	a	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	compra	compra	NOUN	_	Gender=Fem|Number=Sing	11	obl	11:obl:a	_
+15	de	de	ADP	_	_	17	case	17:case|30:case	_
+16	150	150	NUM	_	NumType=Card	17	nummod	17:nummod	_
+17	jarras	jarra	NOUN	_	Gender=Fem|Number=Plur	14	nmod	14:nmod:de	SpaceAfter=No
+18	,	,	PUNCT	_	_	20	punct	20:punct	_
+19	em	em	ADP	_	_	20	case	20:case	_
+20	material	material	NOUN	_	Gender=Masc|Number=Sing	17	nmod	17:nmod:em	_
+21	aço	aço	NOUN	_	Gender=Masc|Number=Sing	20	nmod	20:nmod	_
+22	inoxidável	inoxidável	ADJ	_	Number=Sing	21	amod	21:amod	SpaceAfter=No
+23	,	,	PUNCT	_	_	25	punct	25:punct	_
+24	com	com	ADP	_	_	25	case	25:case	_
+25	capacidade	capacidade	NOUN	_	Gender=Fem|Number=Sing	21	nmod	21:nmod:com	_
+26	para	para	ADP	_	_	28	case	28:case	_
+27	dois	dois	NUM	_	Gender=Masc|NumType=Card	28	nummod	28:nummod	_
+28	litros	litro	NOUN	_	Gender=Masc|Number=Plur	25	nmod	25:nmod:para	SpaceAfter=No
+29	,	,	PUNCT	_	_	30	punct	30:punct	_
+30	modelo	modelo	NOUN	_	Number=Sing	17	conj	14:nmod:de|17:conj	_
+31	com	com	ADP	_	_	32	case	32:case|34:case	_
+32	tampa	tampa	NOUN	_	Gender=Fem|Number=Sing	30	nmod	30:nmod:com	_
+33	e	e	CCONJ	_	_	34	cc	34:cc	_
+34	aparador	aparador	NOUN	_	Gender=Masc|Number=Sing	32	conj	30:nmod:com|32:conj:e	_
+35	para	para	ADP	_	_	36	case	36:case	_
+36	gelo	gelo	NOUN	_	Gender=Masc|Number=Sing	34	nmod	34:nmod:para	SpaceAfter=No
+37	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0021
+# text = As jarras servem para água e para suco.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	jarras	jarra	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	3:nsubj	_
+3	servem	servir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	para	para	ADP	_	_	5	case	5:case	_
+5	água	água	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:para	_
+6	e	e	CCONJ	_	_	8	cc	8:cc	_
+7	para	para	ADP	_	_	8	case	8:case	_
+8	suco	suco	NOUN	_	Gender=Masc|Number=Sing	5	conj	3:obl:para|5:conj:e	SpaceAfter=No
+9	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0023
+# text = A Casa ainda reservou R$ 3, 3 mil para a compra de 250 pratos para refeição.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Casa	Casa	PROPN	_	_	4	nsubj	4:nsubj	_
+3	ainda	ainda	ADV	_	_	4	advmod	4:advmod	_
+4	reservou	reservar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	R$	R$	SYM	_	_	4	obj	4:obj	_
+6	3	3	NUM	_	NumType=Card	5	nummod	5:nummod	SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	8:punct	_
+8	3	3	NUM	_	NumType=Card	5	nummod	5:nummod	_
+9	mil	mil	NUM	_	NumType=Card	8	flat	8:flat	_
+10	para	para	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	compra	compra	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:para	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	250	250	NUM	_	NumType=Card	15	nummod	15:nummod	_
+15	pratos	prato	NOUN	_	Gender=Masc|Number=Plur	12	nmod	12:nmod:de	_
+16	para	para	ADP	_	_	17	case	17:case	_
+17	refeição	refeição	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:para	SpaceAfter=No
+18	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0025
+# text = Os objetos são no formato octogonal, confeccionados em porcelana fina, na cor branca esmaltado, resistente à forno microondas, esmaltação sem falhas, bolhas ou riscos.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	objetos	objeto	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	6:nsubj	_
+3	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+4-5	no	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	formato	formato	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+7	octogonal	octogonal	ADJ	_	Number=Sing	6	amod	6:amod	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	confeccionados	confeccionar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	6	acl	6:acl	_
+10	em	em	ADP	_	_	11	case	11:case	_
+11	porcelana	porcelana	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:em	_
+12	fina	fino	ADJ	_	Gender=Fem|Number=Sing	11	amod	11:amod	SpaceAfter=No
+13	,	,	PUNCT	_	_	16	punct	16:punct	_
+14-15	na	_	_	_	_	_	_	_	_
+14	em	em	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	cor	cor	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:em	_
+17	branca	branco	ADJ	_	Gender=Fem|Number=Sing	16	amod	16:amod	_
+18	esmaltado	esmaltado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	9	amod	9:amod	SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	20:punct	_
+20	resistente	resistente	ADJ	_	Number=Sing	18	conj	9:amod|18:conj	_
+21-22	à	_	_	_	_	_	_	_	_
+21	a	a	ADP	_	_	23	case	23:case	_
+22	a	a	ADP	_	_	23	det	23:det	_
+23	forno	forno	NOUN	_	Gender=Masc|Number=Sing	20	obl	20:obl:a	_
+24	microondas	microonda	NOUN	_	Gender=Fem|Number=Plur	23	nmod	23:nmod	SpaceAfter=No
+25	,	,	PUNCT	_	_	26	punct	26:punct	_
+26	esmaltação	esmaltação	NOUN	_	Gender=Fem|Number=Sing	18	conj	9:nmod|18:conj	_
+27	sem	sem	ADP	_	_	28	case	28:case|30:case|32:case	_
+28	falhas	falha	NOUN	_	Gender=Fem|Number=Plur	26	nmod	26:nmod:sem	SpaceAfter=No
+29	,	,	PUNCT	_	_	30	punct	30:punct	_
+30	bolhas	bolha	NOUN	_	Gender=Fem|Number=Plur	28	conj	26:nmod:sem|28:conj:ou	_
+31	ou	ou	CCONJ	_	_	32	cc	32:cc	_
+32	riscos	risco	NOUN	_	Gender=Masc|Number=Plur	28	conj	26:nmod:sem|28:conj:ou	SpaceAfter=No
+33	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0027
+# text = A parte mais cara dos utensílios, no entanto, ficou por conta das xícaras.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	parte	parte	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	13:nsubj	_
+3	mais	mais	ADV	_	_	4	advmod	4:advmod	_
+4	cara	caro	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	_
+5-6	dos	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	7:det	_
+7	utensílios	utensílio	NOUN	_	Gender=Masc|Number=Plur	2	nmod	2:nmod:de	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9-10	no	_	_	_	_	_	_	_	_
+9	em	em	ADP	_	ExtPos=CCONJ	13	cc	13:cc	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	fixed	9:fixed	_
+11	entanto	entanto	NOUN	_	Gender=Masc|Number=Sing	9	fixed	9:fixed	SpaceAfter=No
+12	,	,	PUNCT	_	_	9	punct	9:punct	_
+13	ficou	ficar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	por	por	ADP	_	_	15	case	15:case	_
+15	conta	conta	NOUN	_	Gender=Fem|Number=Sing	13	obl	13:obl:por	_
+16-17	das	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	18:det	_
+18	xícaras	xícara	NOUN	_	Gender=Fem|Number=Plur	15	nmod	15:nmod:de	SpaceAfter=No
+19	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0029
+# text = Mais R$ 21, 1 mil para a compra de 1, 7 mil xícaras de café, com pires, com capacidade para 50 ml, confeccionadas em porcelana fina, na cor branca esmaltada, resistente à forno microondas, esmaltação sem falhas, bolhas ou riscos.
+1	Mais	mais	ADV	_	_	2	det	2:det	_
+2	R$	R$	SYM	_	_	0	root	0:root	_
+3	21	21	NUM	_	NumType=Card	2	nummod	2:nummod	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	1	1	NUM	_	NumType=Card	2	nummod	2:nummod	_
+6	mil	mil	NUM	_	NumType=Card	5	flat	5:flat	_
+7	para	para	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	compra	compra	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:para	_
+10	de	de	ADP	_	_	15	case	15:case	_
+11	1	1	NUM	_	NumType=Card	15	nummod	15:nummod	SpaceAfter=No
+12	,	,	PUNCT	_	_	5	punct	5:punct	_
+13	7	7	NUM	_	NumType=Card	15	nummod	15:nummod	_
+14	mil	mil	NUM	_	NumType=Card	13	flat	13:flat	_
+15	xícaras	xícara	NOUN	_	Gender=Fem|Number=Plur	9	nmod	9:nmod:de	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	café	café	NOUN	_	Gender=Masc|Number=Sing	15	nmod	15:nmod:de	SpaceAfter=No
+18	,	,	PUNCT	_	_	20	punct	20:punct	_
+19	com	com	ADP	_	_	20	case	20:case	_
+20	pires	pires	NOUN	_	Gender=Masc	15	nmod	15:nmod:com	SpaceAfter=No
+21	,	,	PUNCT	_	_	23	punct	23:punct	_
+22	com	com	ADP	_	_	23	case	23:case	_
+23	capacidade	capacidade	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:com	_
+24	para	para	ADP	_	_	26	case	26:case	_
+25	50	50	NUM	_	NumType=Card	26	nummod	26:nummod	_
+26	ml	mililitro	NOUN	_	Abbr=Yes|Gender=Masc	23	nmod	23:nmod:para	SpaceAfter=No
+27	,	,	PUNCT	_	_	28	punct	28:punct	_
+28	confeccionadas	confeccionar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	15	acl	15:acl	_
+29	em	em	ADP	_	_	30	case	30:case|45:case	_
+30	porcelana	porcelana	NOUN	_	Gender=Fem|Number=Sing	28	obl	28:obl:em	_
+31	fina	fino	ADJ	_	Gender=Fem|Number=Sing	30	amod	30:amod	SpaceAfter=No
+32	,	,	PUNCT	_	_	35	punct	35:punct	_
+33-34	na	_	_	_	_	_	_	_	_
+33	em	em	ADP	_	_	35	case	35:case	_
+34	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	35:det	_
+35	cor	cor	NOUN	_	Gender=Fem|Number=Sing	30	nmod	30:nmod:em	_
+36	branca	branco	ADJ	_	Gender=Fem|Number=Sing	35	amod	35:amod	_
+37	esmaltada	esmaltado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	35	amod	35:amod	SpaceAfter=No
+38	,	,	PUNCT	_	_	39	punct	39:punct	_
+39	resistente	resistente	ADJ	_	Number=Sing	28	conj	15:amod|28:conj	_
+40-41	à	_	_	_	_	_	_	_	_
+40	a	a	ADP	_	_	42	case	42:case	_
+41	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	42:det	_
+42	forno	forno	NOUN	_	Gender=Masc|Number=Sing	39	obl	39:obl:a	_
+43	microondas	microonda	NOUN	_	Gender=Fem|Number=Plur	42	nmod	42:nmod	SpaceAfter=No
+44	,	,	PUNCT	_	_	45	punct	45:punct	_
+45	esmaltação	esmaltação	NOUN	_	Gender=Fem|Number=Sing	30	conj	28:obl:em|30:conj|39:obl:em	_
+46	sem	sem	ADP	_	_	47	case	47:case|49:case|51:case	_
+47	falhas	falha	NOUN	_	Gender=Fem|Number=Plur	45	nmod	45:nmod:sem	SpaceAfter=No
+48	,	,	PUNCT	_	_	49	punct	49:punct	_
+49	bolhas	bolha	NOUN	_	Gender=Fem|Number=Plur	47	conj	45:nmod:sem|47:conj:ou	_
+50	ou	ou	CCONJ	_	_	51	cc	51:cc	_
+51	riscos	risco	NOUN	_	Gender=Masc|Number=Plur	47	conj	45:nmod:sem|47:conj:ou	SpaceAfter=No
+52	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0031
+# text = A borda da xícara e pires deverá se contornada com um friso dourado com espessura de 2 mm.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	borda	borda	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	8:nsubj|10:nsubj:pass	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case|7:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	xícara	xícara	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	pires	pires	NOUN	_	Gender=Masc	5	conj	2:nmod:de|5:conj:e	_
+8	deverá	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+9	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	10	expl	10:expl	_
+10	contornada	contornar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	8	xcomp	8:xcomp	_
+11	com	com	ADP	_	_	13	case	13:case	_
+12	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	friso	friso	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:com	_
+14	dourado	dourado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	13	amod	13:amod	_
+15	com	com	ADP	_	_	16	case	16:case	_
+16	espessura	espessura	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:com	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	2	2	NUM	_	NumType=Card	19	nummod	19:nummod	_
+19	mm	mm	NOUN	_	Gender=Masc	16	nmod	16:nmod:de	SpaceAfter=No
+20	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0033
+# text = Os objetos ainda terão logotipo do Senado na borda do pires.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	objetos	objeto	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	4:nsubj	_
+3	ainda	ainda	ADV	_	_	4	advmod	4:advmod	_
+4	terão	ter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+5	logotipo	logotipo	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+6-7	do	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	Senado	Senado	PROPN	_	_	5	nmod	5:nmod:de	_
+9-10	na	_	_	_	_	_	_	_	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	borda	borda	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:em	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	pires	pires	NOUN	_	Gender=Masc	11	nmod	11:nmod:de	SpaceAfter=No
+15	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0035
+# text = Ainda foram reservados R$ 5, 7 mil para a aquisição de 400 xícaras de chá, também com pires.
+1	Ainda	ainda	ADV	_	_	3	advmod	3:advmod	_
+2	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	3	aux:pass	3:aux:pass	_
+3	reservados	reservar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	_
+4	R$	R$	SYM	_	_	3	nsubj:pass	3:nsubj:pass	_
+5	5	5	NUM	_	NumType=Card	4	nummod	4:nummod	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	7	7	NUM	_	NumType=Card	4	nummod	4:nummod	_
+8	mil	mil	NUM	_	NumType=Card	7	flat	7:flat	_
+9	para	para	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	aquisição	aquisição	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:para	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	400	400	NUM	_	NumType=Card	14	nummod	14:nummod	_
+14	xícaras	xícara	NOUN	_	Gender=Fem|Number=Plur	11	nmod	11:nmod:de	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	chá	chá	NOUN	_	Gender=Masc|Number=Sing	14	nmod	14:nmod:de	SpaceAfter=No
+17	,	,	PUNCT	_	_	20	punct	20:punct	_
+18	também	também	ADV	_	_	20	advmod	20:advmod	_
+19	com	com	ADP	_	_	20	case	20:case	_
+20	pires	pires	NOUN	_	Gender=Masc	14	nmod	14:nmod:com	SpaceAfter=No
+21	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0037
+# text = A capacidade da xícara de 200 ml, em porcelana fina, ambos na cor branca esmaltado.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	capacidade	capacidade	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	xícara	xícara	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	200	200	NUM	_	NumType=Card	8	nummod	8:nummod	_
+8	ml	mililitro	NOUN	_	Abbr=Yes|Gender=Masc	5	nmod	5:nmod:de	SpaceAfter=No
+9	,	,	PUNCT	_	_	11	punct	11:punct	_
+10	em	em	ADP	_	_	11	case	11:case	_
+11	porcelana	porcelana	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:em	_
+12	fina	fino	ADJ	_	Gender=Fem|Number=Sing	11	amod	11:amod	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	ambos	ambos	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	2	parataxis	2:parataxis	_
+15-16	na	_	_	_	_	_	_	_	_
+15	em	em	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	cor	cor	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:em	_
+18	branca	branco	ADJ	_	Gender=Fem|Number=Sing	17	amod	17:amod	_
+19	esmaltado	esmaltado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	17	amod	17:amod	SpaceAfter=No
+20	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0039
+# text = A esmaltação sem falhas, bolhas ou riscos rachaduras.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	esmaltação	esmaltação	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+3	sem	sem	ADP	_	_	4	case	4:case|6:case|8:case	_
+4	falhas	falha	NOUN	_	Gender=Fem|Number=Plur	2	nmod	2:nmod:sem	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	bolhas	bolha	NOUN	_	Gender=Fem|Number=Plur	4	conj	2:nmod:sem|4:conj:ou	_
+7	ou	ou	CCONJ	_	_	8	cc	8:cc	_
+8	riscos	risco	NOUN	_	Gender=Masc|Number=Plur	4	conj	2:nmod:sem|4:conj:ou	_
+9	rachaduras	rachadura	NOUN	_	Gender=Fem|Number=Plur	8	nmod	8:nmod	SpaceAfter=No
+10	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0041
+# text = As unidades também terão friso dourado e logotipo do Senado Federal.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	unidades	unidade	NOUN	_	Gender=Fem|Number=Plur	4	nsubj	4:nsubj	_
+3	também	também	ADV	_	_	4	advmod	4:advmod	_
+4	terão	ter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+5	friso	friso	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+6	dourado	dourado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	5	amod	5:amod	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	logotipo	logotipo	NOUN	_	Gender=Masc|Number=Sing	5	conj	4:obj|5:conj:e	_
+9-10	do	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	Senado	Senado	PROPN	_	_	8	nmod	8:nmod:de	_
+12	Federal	Federal	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+13	.	.	PUNCT	_	_	4	punct	4:punct	_

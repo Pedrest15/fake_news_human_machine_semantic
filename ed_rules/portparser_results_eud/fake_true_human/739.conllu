@@ -1,0 +1,159 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = lula faz ameaça a padres e pastores durante discurso, mostra vídeo a todos os cristãos recadinho (ameaça) do lula.
+1	lula	lula	PROPN	_	_	2	nsubj	2:nsubj|11:nsubj	_
+2	faz	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	ameaça	ameaça	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+4	a	a	ADP	_	_	5	case	5:case|7:case	_
+5	padres	padre	NOUN	_	Gender=Masc|Number=Plur	3	nmod	3:nmod:a	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	pastores	pastor	NOUN	_	Gender=Masc|Number=Plur	5	conj	3:nmod:a|5:conj:e	_
+8	durante	durante	ADP	_	_	9	case	9:case	_
+9	discurso	discurso	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:durante	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	mostra	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj	_
+12	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj	_
+13	a	a	ADP	_	_	16	case	16:case	_
+14	todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Ind	16	det	16:det	_
+15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	16:det	_
+16	cristãos	cristão	NOUN	_	Gender=Masc|Number=Plur	11	obl	11:obl:a	_
+17	recadinho	recadinho	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj	_
+18	(	(	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+19	ameaça	ameaça	NOUN	_	Gender=Fem|Number=Sing	17	appos	17:appos	SpaceAfter=No
+20	)	)	PUNCT	_	_	19	punct	19:punct	_
+21-22	do	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	lula	lula	NOUN	_	Gender=Fem|Number=Sing	17	nmod	17:nmod:de	SpaceAfter=No
+24	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = aos padres e pastores., olha, com todo o respeito que eu tenho pelas instituições brasileiras.
+1-2	aos	_	_	_	_	_	_	_	_
+1	a	a	ADP	_	_	3	case	3:case|5:case	_
+2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	3:det	_
+3	padres	padre	NOUN	_	Gender=Masc|Number=Plur	8	dep	8:dep	_
+4	e	e	CCONJ	_	_	5	cc	5:cc	_
+5	pastores	pastor	NOUN	_	Gender=Masc|Number=Plur	3	conj	3:conj:e|8:dep	SpaceAfter=No
+6	.	.	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	8:punct	_
+8	olha	olhar	VERB	_	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	13	parataxis	13:parataxis	SpaceAfter=No
+9	,	,	PUNCT	_	_	8	punct	8:punct	_
+10	com	com	ADP	_	_	13	case	13:case	_
+11	todo	todo	DET	_	Gender=Masc|Number=Sing|PronType=Ind	13	det	13:det	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	respeito	respeito	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root|16:obj	_
+14	que	que	PRON	_	PronType=Rel	16	obj	13:ref	_
+15	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	16	nsubj	16:nsubj	_
+16	tenho	ter	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	13	acl:relcl	13:acl:relcl	_
+17-18	pelas	_	_	_	_	_	_	_	_
+17	por	por	ADP	_	_	19	case	19:case	_
+18	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	19:det	_
+19	instituições	instituição	NOUN	_	Gender=Fem|Number=Plur	16	obl	16:obl:por	_
+20	brasileiras	brasileiro	ADJ	_	Gender=Fem|Number=Plur	19	amod	19:amod	SpaceAfter=No
+21	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0005
+# text = eu tô conversando com quem é pastor, com quem é padre.
+1	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	3:nsubj	_
+2	tô	estar	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	aux	3:aux	_
+3	conversando	conversar	VERB	_	VerbForm=Ger	0	root	0:root	_
+4	com	com	ADP	_	_	5	case	5:case|12:case	_
+5	quem	quem	PRON	_	PronType=Ind	3	obl	3:obl:com	_
+6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop|10:cop	_
+7	pastor	pastor	NOUN	_	Gender=Masc|Number=Sing	5	acl:relcl	5:acl:relcl	SpaceAfter=No
+8	,	,	PUNCT	_	_	12	punct	12:punct	_
+9	com	com	ADP	_	_	10	case	10:case	_
+10	quem	quem	PRON	_	PronType=Ind	7	conj	5:acl:relcl|7:conj	_
+11	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	12:cop	_
+12	padre	padre	NOUN	_	Gender=Masc|Number=Sing	5	conj	3:advcl:com|5:conj	SpaceAfter=No
+13	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = eu vou conversar com todo mundo, enquanto povo brasileiro e enquanto eleitores, se eu ganhar as eleições, aí eu vou conversar como chefe do supremo, pra dizer qual é o papel deles e não é se intrometendo na política porque isso não tá certo nem hoje, ontem e nem anteontem.
+1	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	3:nsubj	_
+2	vou	ir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	aux	3:aux	_
+3	conversar	conversar	VERB	_	VerbForm=Inf	0	root	0:root	_
+4	com	com	ADP	_	_	6	case	6:case	_
+5	todo	todo	DET	_	Gender=Masc|Number=Sing|PronType=Ind	6	det	6:det	_
+6	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:com	SpaceAfter=No
+7	,	,	PUNCT	_	_	9	punct	9:punct	_
+8	enquanto	enquanto	SCONJ	_	_	9	mark	9:mark	_
+9	povo	povo	NOUN	_	Gender=Masc|Number=Sing	3	advcl	3:advcl:enquanto	_
+10	brasileiro	brasileiro	ADJ	_	Gender=Masc|Number=Sing	9	amod	9:amod	_
+11	e	e	CCONJ	_	_	13	cc	13:cc	_
+12	enquanto	enquanto	SCONJ	_	_	13	mark	13:mark	_
+13	eleitores	eleitor	NOUN	_	Gender=Masc|Number=Plur	9	conj	3:advcl:enquanto|9:conj:e	SpaceAfter=No
+14	,	,	PUNCT	_	_	17	punct	17:punct	_
+15	se	se	SCONJ	_	_	17	mark	17:mark	_
+16	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	17	nsubj	17:nsubj	_
+17	ganhar	ganhar	VERB	_	VerbForm=Inf	24	advcl	24:advcl:se	_
+18	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	19:det	_
+19	eleições	eleição	NOUN	_	Gender=Fem|Number=Plur	17	obj	17:obj	SpaceAfter=No
+20	,	,	PUNCT	_	_	17	punct	17:punct	_
+21	aí	aí	ADV	_	_	24	advmod	24:advmod	_
+22	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	24	nsubj	24:nsubj	_
+23	vou	ir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	24	aux	24:aux	_
+24	conversar	conversar	VERB	_	VerbForm=Inf	3	dep	3:dep	_
+25	como	como	ADP	_	_	26	case	26:case	_
+26	chefe	chefe	NOUN	_	Gender=Masc|Number=Sing	24	obl	24:obl:como	_
+27-28	do	_	_	_	_	_	_	_	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	29:det	_
+29	supremo	supremo	NOUN	_	Gender=Masc|Number=Sing	26	nmod	26:nmod:de	SpaceAfter=No
+30	,	,	PUNCT	_	_	32	punct	32:punct	_
+31	pra	para	ADP	_	_	32	mark	32:mark|43:mark	_
+32	dizer	dizer	VERB	_	VerbForm=Inf	24	advcl	24:advcl:para	_
+33	qual	qual	PRON	_	Number=Sing|PronType=Int	36	nsubj	36:nsubj	_
+34	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	36	cop	36:cop	_
+35	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	36:det	_
+36	papel	papel	NOUN	_	Gender=Masc|Number=Sing	32	ccomp	32:ccomp	_
+37-38	deles	_	_	_	_	_	_	_	_
+37	de	de	ADP	_	_	38	case	38:case	_
+38	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	36	nmod	36:nmod:de	_
+39	e	e	CCONJ	_	_	43	cc	43:cc	_
+40	não	não	ADV	_	_	43	advmod	43:advmod	_
+41	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	43	cop	43:cop	_
+42	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	43	expl	43:expl	_
+43	intrometendo	intrometer	VERB	_	VerbForm=Ger	32	conj	24:advcl:para|32:conj:e	_
+44-45	na	_	_	_	_	_	_	_	_
+44	em	em	ADP	_	_	46	case	46:case	_
+45	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	46:det	_
+46	política	política	NOUN	_	Gender=Fem|Number=Sing	43	obl	43:obl:em	_
+47	porque	porque	SCONJ	_	_	51	mark	51:mark	_
+48	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	51	nsubj	51:nsubj	_
+49	não	não	ADV	_	_	51	advmod	51:advmod	_
+50	tá	estar	AUX	_	Abbr=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	51	cop	51:cop	_
+51	certo	certo	ADJ	_	Gender=Masc|Number=Sing	32	advcl	32:advcl:porque|43:advcl:porque	_
+52	nem	nem	CCONJ	_	_	53	cc	53:cc	_
+53	hoje	hoje	ADV	_	_	51	advmod	51:advmod	SpaceAfter=No
+54	,	,	PUNCT	_	_	55	punct	55:punct	_
+55	ontem	ontem	ADV	_	_	53	conj	51:advmod|53:conj:e	_
+56	e	e	CCONJ	_	_	58	cc	58:cc	_
+57	nem	nem	CCONJ	_	_	58	cc	58:cc	_
+58	anteontem	anteontem	ADV	_	_	53	conj	51:advmod|53:conj:e_nem	SpaceAfter=No
+59	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0009
+# text = eles não podem dar sustentação a um genocida que já é responsável por 45 mil mortes nesse país.
+1	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	nsubj	3:nsubj|4:nsubj	_
+2	não	não	ADV	_	_	3	advmod	3:advmod	_
+3	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	dar	dar	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+5	sustentação	sustentação	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+6	a	a	ADP	_	_	8	case	8:case	_
+7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	genocida	genocida	NOUN	_	Number=Sing	4	obl	4:obl:a|12:nsubj	_
+9	que	que	PRON	_	PronType=Rel	12	nsubj	8:ref	_
+10	já	já	ADV	_	_	12	advmod	12:advmod	_
+11	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	12:cop	_
+12	responsável	responsável	NOUN	_	Number=Sing	8	acl:relcl	8:acl:relcl	_
+13	por	por	ADP	_	_	16	case	16:case	_
+14	45	45	NUM	_	NumType=Card	16	nummod	16:nummod	_
+15	mil	mil	NUM	_	NumType=Card	14	flat	14:flat	_
+16	mortes	morte	NOUN	_	Gender=Fem|Number=Plur	12	nmod	12:nmod:por	_
+17-18	nesse	_	_	_	_	_	_	_	_
+17	em	em	ADP	_	_	19	case	19:case	_
+18	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	19	det	19:det	_
+19	país	país	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod:em	SpaceAfter=No
+20	.	.	PUNCT	_	_	3	punct	3:punct	_

@@ -1,0 +1,189 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Acabou!
+1	Acabou	acabar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+2	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Por 6 votos a 3, STF decide que Renan Calheiros continua na presidência do senado.
+1	Por	por	ADP	_	_	3	case	3:case	_
+2	6	6	NUM	_	NumType=Card	3	nummod	3:nummod	_
+3	votos	voto	NOUN	_	Gender=Masc|Number=Plur	8	obl	8:obl:por	_
+4	a	a	ADP	_	_	5	case	5:case	_
+5	3	3	NUM	_	NumType=Card	3	nmod	3:nmod:a	SpaceAfter=No
+6	,	,	PUNCT	_	_	3	punct	3:punct	_
+7	STF	STF	PROPN	_	_	8	nsubj	8:nsubj	_
+8	decide	decidir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+9	que	que	SCONJ	_	_	12	mark	12:mark	_
+10	Renan	Renan	PROPN	_	_	12	nsubj	12:nsubj	_
+11	Calheiros	Calheiros	PROPN	_	_	10	flat:name	10:flat:name	_
+12	continua	continuar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	ccomp	8:ccomp	_
+13-14	na	_	_	_	_	_	_	_	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	presidência	presidência	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl:em	_
+16-17	do	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	senado	senado	NOUN	_	Gender=Masc|Number=Sing	15	nmod	15:nmod:de	SpaceAfter=No
+19	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0005
+# text = O STF decidiu por maioria manter Renan Calheiros (PMDB-AL) na presidência do Senado.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	STF	STF	PROPN	_	_	3	nsubj	3:nsubj|6:nsubj	_
+3	decidiu	decidir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	por	por	ADP	_	_	5	case	5:case	_
+5	maioria	maioria	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:por	_
+6	manter	manter	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+7	Renan	Renan	PROPN	_	_	6	obj	6:obj	_
+8	Calheiros	Calheiros	PROPN	_	_	7	flat:name	7:flat:name	_
+9	(	(	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+10	PMDB-AL	PMDB-AL	PROPN	_	_	7	parataxis	7:parataxis	SpaceAfter=No
+11	)	)	PUNCT	_	_	10	punct	10:punct	_
+12-13	na	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	presidência	presidência	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:em	_
+15-16	do	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	Senado	Senado	PROPN	_	_	14	nmod	14:nmod:de	SpaceAfter=No
+18	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = A ressalva é de que Renan fique impedido de substituir Temer na presidência da República.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	ressalva	ressalva	NOUN	_	Gender=Fem|Number=Sing	7	nsubj:outer	7:nsubj:outer	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+4	de	de	ADP	_	ExtPos=SCONJ	7	mark	7:mark	_
+5	que	que	SCONJ	_	_	4	fixed	4:fixed	_
+6	Renan	Renan	PROPN	_	_	7	nsubj	7:nsubj|8:nsubj|10:nsubj	_
+7	fique	ficar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	impedido	impedido	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	7	xcomp	7:xcomp	_
+9	de	de	ADP	_	_	10	mark	10:mark	_
+10	substituir	substituir	VERB	_	VerbForm=Inf	8	xcomp	8:xcomp	_
+11	Temer	Temer	PROPN	_	_	10	obj	10:obj	_
+12-13	na	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	presidência	presidência	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:em	_
+15-16	da	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	República	República	PROPN	_	_	14	nmod	14:nmod:de	SpaceAfter=No
+18	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0009
+# text = Todos os ministros que cotaram até agora concordaram que Renan fica proibido de substituir o presidente da República.
+1	Todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Ind	3	det	3:det	_
+2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	3:det	_
+3	ministros	ministro	NOUN	_	Gender=Masc|Number=Plur	8	nsubj	5:nsubj|8:nsubj	_
+4	que	que	PRON	_	PronType=Rel	5	nsubj	3:ref	_
+5	cotaram	cotar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_
+6	até	até	ADP	_	_	7	case	7:case	_
+7	agora	agora	ADV	_	_	5	advmod	5:advmod	_
+8	concordaram	concordar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	que	que	SCONJ	_	_	11	mark	11:mark	_
+10	Renan	Renan	PROPN	_	_	11	nsubj	11:nsubj|12:nsubj|14:nsubj	_
+11	fica	ficar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	ccomp	8:ccomp	_
+12	proibido	proibido	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	11	xcomp	11:xcomp	_
+13	de	de	ADP	_	_	14	mark	14:mark	_
+14	substituir	substituir	VERB	_	VerbForm=Inf	12	xcomp	12:xcomp	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	presidente	presidente	NOUN	_	Number=Sing	14	obj	14:obj	_
+17-18	da	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	República	República	PROPN	_	_	16	nmod	16:nmod:de	SpaceAfter=No
+20	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0011
+# text = Votaram a favor de manter Renan na presidência: Celso de Mello, Teori Zavascki, Dias Toffoli, Luiz Fux e Ricardo Lewandowski e a presidente Cármen Lúcia.
+1	Votaram	votar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	a	a	ADP	_	_	3	case	3:case	_
+3	favor	favor	NOUN	_	Gender=Masc|Number=Sing	1	obl	1:obl:a	_
+4	de	de	ADP	_	_	5	mark	5:mark	_
+5	manter	manter	VERB	_	VerbForm=Inf	3	acl	3:acl:de	_
+6	Renan	Renan	PROPN	_	_	5	obj	5:obj	_
+7-8	na	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	presidência	presidência	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:em	SpaceAfter=No
+10	:	:	PUNCT	_	_	11	punct	11:punct	_
+11	Celso	Celso	PROPN	_	_	1	nsubj	1:nsubj	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	Mello	Mello	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+14	,	,	PUNCT	_	_	15	punct	15:punct	_
+15	Teori	Teori	PROPN	_	_	11	conj	1:nsubj|11:conj:e	_
+16	Zavascki	Zavascki	PROPN	_	_	18	flat:name	18:flat:name	SpaceAfter=No
+17	,	,	PUNCT	_	_	18	punct	18:punct	_
+18	Dias	Dias	PROPN	_	_	11	conj	1:nsubj|11:conj:e	_
+19	Toffoli	Toffoli	PROPN	_	_	18	flat:name	18:flat:name	SpaceAfter=No
+20	,	,	PUNCT	_	_	21	punct	21:punct	_
+21	Luiz	Luiz	PROPN	_	_	11	conj	1:nsubj|11:conj:e	_
+22	Fux	Fux	PROPN	_	_	21	flat:name	21:flat:name	_
+23	e	e	CCONJ	_	_	24	cc	24:cc	_
+24	Ricardo	Ricardo	PROPN	_	_	11	conj	1:nsubj|11:conj:e	_
+25	Lewandowski	Lewandowski	PROPN	_	_	24	flat:name	24:flat:name	_
+26	e	e	CCONJ	_	_	28	cc	28:cc	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	presidente	presidente	NOUN	_	Number=Sing	11	conj	1:nsubj|11:conj:e	_
+29	Cármen	Cármen	PROPN	_	_	28	nmod	28:nmod	_
+30	Lúcia	Lúcia	PROPN	_	_	29	flat:name	29:flat:name	SpaceAfter=No
+31	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0013
+# text = Votaram a favor do afastamento: Marco Aurélio Mello (relator), Edson Fachin e Rosa Weber.
+1	Votaram	votar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	a	a	ADP	_	_	3	case	3:case	_
+3	favor	favor	NOUN	_	Gender=Masc|Number=Sing	1	obl	1:obl:a	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	afastamento	afastamento	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	SpaceAfter=No
+7	:	:	PUNCT	_	_	8	punct	8:punct	_
+8	Marco	Marco	PROPN	_	_	1	nsubj	1:nsubj	_
+9	Aurélio	Aurélio	PROPN	_	_	8	flat:name	8:flat:name	_
+10	Mello	Mello	PROPN	_	_	8	flat:name	8:flat:name	_
+11	(	(	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+12	relator	relator	NOUN	_	Gender=Masc|Number=Sing	8	parataxis	8:parataxis	SpaceAfter=No
+13	)	)	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+14	,	,	PUNCT	_	_	15	punct	15:punct	_
+15	Edson	Edson	PROPN	_	_	8	conj	1:nsubj|8:conj:e	_
+16	Fachin	Fachin	PROPN	_	_	15	flat:name	15:flat:name	_
+17	e	e	CCONJ	_	_	18	cc	18:cc	_
+18	Rosa	Rosa	PROPN	_	_	8	conj	1:nsubj|8:conj:e	_
+19	Weber	Weber	PROPN	_	_	18	flat:name	18:flat:name	SpaceAfter=No
+20	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0015
+# text = Valeu STF!
+1	Valeu	valeu	INTJ	_	_	0	root	0:root	_
+2	STF	STF	PROPN	_	_	1	nsubj	1:nsubj	SpaceAfter=No
+3	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0017
+# text = De hoje em diante vamos todos fugir dos oficiais de justiça!
+1	De	de	ADP	_	_	2	case	2:case	_
+2	hoje	hoje	ADV	_	_	7	advmod	7:advmod	_
+3	em	em	ADP	_	_	4	case	4:case	_
+4	diante	diante	ADV	_	_	2	advmod	2:advmod	_
+5	vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	7	aux	7:aux	_
+6	todos	todo	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	7	nsubj	7:nsubj	_
+7	fugir	fugir	VERB	_	VerbForm=Inf	0	root	0:root	_
+8-9	dos	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	10:det	_
+10	oficiais	oficial	NOUN	_	Number=Plur	7	obl	7:obl:de	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	justiça	justiça	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:de	SpaceAfter=No
+13	!	!	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0019
+# text = Respeitar liminar pra quê?
+1	Respeitar	respeitar	VERB	_	VerbForm=Inf	0	root	0:root	_
+2	liminar	liminar	NOUN	_	Number=Sing	1	obj	1:obj	_
+3	pra	para	ADP	_	_	4	case	4:case	_
+4	quê	quê	PRON	_	PronType=Int	1	obl	1:obl:para	SpaceAfter=No
+5	?	?	PUNCT	_	_	1	punct	1:punct	_

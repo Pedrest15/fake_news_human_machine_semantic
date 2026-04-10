@@ -1,0 +1,68 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = atualizado silvio santos foi internado com suspeita de covid-19 silvio santos está sendo internado agora no hospital albert eistein.
+1	atualizado	atualizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	5	advcl	5:advcl	_
+2	silvio	silvio	NOUN	_	Gender=Masc|Number=Sing	5	nsubj:pass	5:nsubj:pass	_
+3	santos	santo	NOUN	_	Gender=Masc|Number=Plur	2	nmod	2:nmod	_
+4	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	aux:pass	5:aux:pass	_
+5	internado	internar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+6	com	com	ADP	_	_	7	case	7:case	_
+7	suspeita	suspeita	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:com	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	covid-19	covid-19	NUM	_	NumType=Card	7	nmod	7:nmod:de	_
+10	silvio	silvio	PROPN	_	_	9	nmod	9:nmod	_
+11	santos	santo	NOUN	_	Gender=Masc|Number=Plur	10	flat:name	10:flat:name	_
+12	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux	14:aux	_
+13	sendo	ser	AUX	_	VerbForm=Ger	14	aux:pass	14:aux:pass	_
+14	internado	internar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	5	dep	5:dep	_
+15	agora	agora	ADV	_	_	14	advmod	14:advmod	_
+16-17	no	_	_	_	_	_	_	_	_
+16	em	em	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	hospital	hospital	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:em	_
+19	albert	albert	NOUN	_	Foreign=Yes	18	nmod	18:nmod	_
+20	eistein	eistein	PROPN	_	_	19	flat:name	19:flat:name	SpaceAfter=No
+21	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0003
+# text = aos 9 anos, silvio santos, mesmo vacinado pegou covid.
+1-2	aos	_	_	_	_	_	_	_	_
+1	a	a	ADP	_	_	4	case	4:case	_
+2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	4:det	_
+3	9	9	NUM	_	NumType=Card	4	nummod	4:nummod	_
+4	anos	ano	NOUN	_	Gender=Masc|Number=Plur	11	obl	11:obl:a	SpaceAfter=No
+5	,	,	PUNCT	_	_	4	punct	4:punct	_
+6	silvio	silvio	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	11:nsubj	_
+7	santos	santo	NOUN	_	Gender=Masc|Number=Plur	6	flat:name	6:flat:name	SpaceAfter=No
+8	,	,	PUNCT	_	_	10	punct	10:punct	_
+9	mesmo	mesmo	ADV	_	_	10	advmod	10:advmod	_
+10	vacinado	vacinado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	6	acl	6:acl	_
+11	pegou	pegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	covid	covid	NOUN	_	_	11	obj	11:obj	SpaceAfter=No
+13	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0005
+# text = , silvio santos é internado em hospital com suspeita de covid-19, <i> bomba… silvio santos internado com covid-19</i>.
+1	,	,	PUNCT	_	_	5	punct	5:punct	_
+2	silvio	silvio	NOUN	_	Gender=Masc|Number=Sing	5	nsubj:pass	5:nsubj:pass	_
+3	santos	santo	NOUN	_	Gender=Masc|Number=Plur	2	flat:name	2:flat:name	_
+4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:pass	5:aux:pass	_
+5	internado	internar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+6	em	em	ADP	_	_	7	case	7:case	_
+7	hospital	hospital	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:em	_
+8	com	com	ADP	_	_	9	case	9:case	_
+9	suspeita	suspeita	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:com	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	covid-19	covid-19	NUM	_	NumType=Card	9	nmod	9:nmod:de	SpaceAfter=No
+12	,	,	PUNCT	_	_	14	punct	14:punct	_
+13	<	<	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+14	i	i	NOUN	_	Gender=Masc|Number=Sing	9	parataxis	9:parataxis	SpaceAfter=No
+15	>	>	PUNCT	_	_	14	punct	14:punct	_
+16	bomba…	bomba…	PUNCT	_	_	17	punct	17:punct	_
+17	silvio	silvio	NOUN	_	Gender=Masc|Number=Sing	9	appos	9:appos	_
+18	santos	santo	ADJ	_	Gender=Masc|Number=Plur	17	flat:name	17:flat:name	_
+19	internado	internar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	17	acl	17:acl	_
+20	com	com	ADP	_	_	21	case	21:case	_
+21	covid-19</i	covid-19</i	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	19	obl	19:obl:com	SpaceAfter=No
+22	>	>	PUNCT	_	_	21	punct	21:punct	SpaceAfter=No
+23	.	.	PUNCT	_	_	5	punct	5:punct	_

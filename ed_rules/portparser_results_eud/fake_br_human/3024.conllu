@@ -1,0 +1,194 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Jornalista "petista" é condenado novamente.
+1	Jornalista	jornalista	NOUN	_	Number=Sing	6	nsubj:pass	6:nsubj:pass	_
+2	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+3	petista	petista	ADJ	_	Number=Sing	1	amod	1:amod	SpaceAfter=No
+4	"	"	PUNCT	_	_	3	punct	3:punct	_
+5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:pass	6:aux:pass	_
+6	condenado	condenar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+7	novamente	novamente	ADV	_	_	6	advmod	6:advmod	SpaceAfter=No
+8	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0003
+# text = Amorim perde ação e terá que pagar R$ 50 mil de indenização.
+1	Amorim	Amorim	PROPN	_	_	2	nsubj	2:nsubj|5:nsubj|7:nsubj	_
+2	perde	perder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	ação	ação	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+4	e	e	CCONJ	_	_	5	cc	5:cc	_
+5	terá	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	2	conj	2:conj:e	_
+6	que	que	ADP	_	_	7	mark	7:mark	_
+7	pagar	pagar	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	_
+8	R$	R$	SYM	_	_	7	obj	7:obj	_
+9	50	50	NUM	_	NumType=Card	8	nummod	8:nummod	_
+10	mil	mil	NUM	_	NumType=Card	9	flat	9:flat	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	indenização	indenização	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	SpaceAfter=No
+13	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = Após ter sido condenado a um mês e dez dias de detenção, convertida em pena restritiva de direitos [pagamento de 30 salários mínimos], por matéria publicada em 2012, quando chamou Merval Pereira de "jornalista bandido", PHA voltou a ser condenado.
+1	Após	após	ADP	_	_	4	mark	4:mark|14:mark	_
+2	ter	ter	AUX	_	VerbForm=Inf	4	aux	4:aux	_
+3	sido	ser	AUX	_	Gender=Masc|Number=Sing|VerbForm=Part	4	aux:pass	4:aux:pass|14:aux:pass	_
+4	condenado	condenar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	45	advcl	45:advcl:após	_
+5	a	a	ADP	_	_	7	case	7:case|10:case	_
+6	um	um	NUM	_	Gender=Masc|NumType=Card	7	nummod	7:nummod	_
+7	mês	mês	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:a	_
+8	e	e	CCONJ	_	_	10	cc	10:cc	_
+9	dez	dez	NUM	_	NumType=Card	10	nummod	10:nummod	_
+10	dias	dia	NOUN	_	Gender=Masc|Number=Plur	7	conj	4:obl:a|7:conj:e	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	detenção	detenção	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:de|10:nmod:de	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	convertida	converter	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	4	conj	4:conj|45:advcl:após	_
+15	em	em	ADP	_	_	16	case	16:case	_
+16	pena	pena	NOUN	_	Gender=Fem|Number=Sing	14	obl	14:obl:em	_
+17	restritiva	restritivo	ADJ	_	Gender=Fem|Number=Sing	16	amod	16:amod	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	direitos	direito	NOUN	_	Gender=Masc|Number=Plur	16	nmod	16:nmod:de	_
+20	[	[	PUNCT	_	_	21	punct	21:punct	SpaceAfter=No
+21	pagamento	pagamento	NOUN	_	Gender=Masc|Number=Sing	16	appos	16:appos	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	30	30	NUM	_	NumType=Card	24	nummod	24:nummod	_
+24	salários	salário	NOUN	_	Gender=Masc|Number=Plur	21	nmod	21:nmod:de	_
+25	mínimos	mínimo	ADJ	_	Gender=Masc|Number=Plur	24	amod	24:amod	SpaceAfter=No
+26	]	]	PUNCT	_	_	21	punct	21:punct	SpaceAfter=No
+27	,	,	PUNCT	_	_	29	punct	29:punct	_
+28	por	por	ADP	_	_	29	case	29:case	_
+29	matéria	matéria	NOUN	_	Gender=Fem|Number=Sing	45	obl	35:obl|45:obl:por	_
+30	publicada	publicar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	29	acl	29:acl	_
+31	em	em	ADP	_	_	32	case	32:case	_
+32	2012	2012	NUM	_	NumType=Card	30	obl	30:obl:em	SpaceAfter=No
+33	,	,	PUNCT	_	_	35	punct	35:punct	_
+34	quando	quando	ADV	_	_	35	advmod	29:ref	_
+35	chamou	chamar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	29	acl:relcl	29:acl:relcl	_
+36	Merval	Merval	PROPN	_	_	35	obj	35:obj	_
+37	Pereira	Pereira	PROPN	_	_	36	flat:name	36:flat:name	_
+38	de	de	ADP	_	_	40	case	40:case	_
+39	"	"	PUNCT	_	_	40	punct	40:punct	SpaceAfter=No
+40	jornalista	jornalista	NOUN	_	Number=Sing	35	obl	35:obl:de	_
+41	bandido	bandido	ADJ	_	Gender=Masc|Number=Sing	40	amod	40:amod	SpaceAfter=No
+42	"	"	PUNCT	_	_	40	punct	40:punct	SpaceAfter=No
+43	,	,	PUNCT	_	_	4	punct	4:punct	_
+44	PHA	PHA	PROPN	_	_	45	nsubj	45:nsubj|48:nsubj:pass	_
+45	voltou	voltar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+46	a	a	ADP	_	_	48	mark	48:mark	_
+47	ser	ser	AUX	_	VerbForm=Inf	48	aux:pass	48:aux:pass	_
+48	condenado	condenar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	45	xcomp	45:xcomp	SpaceAfter=No
+49	.	.	PUNCT	_	_	45	punct	45:punct	_
+
+# sent_id = S0007
+# text = Dessa vez, Paulo Henrique Amorim foi condenado em uma uma ação cível.
+1-2	Dessa	_	_	_	_	_	_	_	_
+1	De	de	ADP	_	_	3	case	3:case	_
+2	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	3:det	_
+3	vez	vez	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:de	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	Paulo	Paulo	PROPN	_	_	9	nsubj:pass	9:nsubj:pass	_
+6	Henrique	Henrique	PROPN	_	_	5	flat:name	5:flat:name	_
+7	Amorim	Amorim	PROPN	_	_	5	flat:name	5:flat:name	_
+8	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	aux:pass	9:aux:pass	_
+9	condenado	condenar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+10	em	em	ADP	_	_	13	case	13:case	_
+11	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+12	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	ação	ação	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:em	_
+14	cível	cível	ADJ	_	Number=Sing	13	amod	13:amod	SpaceAfter=No
+15	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0009
+# text = No último dia 19, foi publicado o acórdão do julgamento do recurso apresentado pelo blogueiro progressista Amorim contra a sentença que o condenou ao pagamento de uma indenização de R$ 50.000, 00.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	4	case	4:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+3	último	último	ADJ	_	Gender=Masc|Number=Sing	4	amod	4:amod	_
+4	dia	dia	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:em	_
+5	19	19	NUM	_	NumType=Card	4	nmod	4:nmod	SpaceAfter=No
+6	,	,	PUNCT	_	_	4	punct	4:punct	_
+7	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	aux:pass	8:aux:pass	_
+8	publicado	publicar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	acórdão	acórdão	NOUN	_	Gender=Masc|Number=Sing	8	nsubj:pass	8:nsubj:pass	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	julgamento	julgamento	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:de	_
+14-15	do	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	recurso	recurso	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod:de	_
+17	apresentado	apresentar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	16	acl	16:acl	_
+18-19	pelo	_	_	_	_	_	_	_	_
+18	por	por	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	blogueiro	blogueiro	NOUN	_	Gender=Masc|Number=Sing	17	obl:agent	17:obl:agent	_
+21	progressista	progressista	ADJ	_	Number=Sing	20	amod	20:amod	_
+22	Amorim	Amorim	PROPN	_	_	20	nmod	20:nmod	_
+23	contra	contra	ADP	_	_	25	case	25:case	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	sentença	sentença	NOUN	_	Gender=Fem|Number=Sing	17	obl	17:obl:contra|28:nsubj	_
+26	que	que	PRON	_	PronType=Rel	28	nsubj	25:ref	_
+27	o	o	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	28	obj	28:obj	_
+28	condenou	condenar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	25	acl:relcl	25:acl:relcl	_
+29-30	ao	_	_	_	_	_	_	_	_
+29	a	a	ADP	_	_	31	case	31:case	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	pagamento	pagamento	NOUN	_	Gender=Masc|Number=Sing	28	obl	28:obl:a	_
+32	de	de	ADP	_	_	34	case	34:case	_
+33	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	34	det	34:det	_
+34	indenização	indenização	NOUN	_	Gender=Fem|Number=Sing	31	nmod	31:nmod:de	_
+35	de	de	ADP	_	_	36	case	36:case	_
+36	R$	R$	SYM	_	_	34	nmod	34:nmod:de	_
+37	50.000	50.000	NUM	_	NumType=Card	36	nummod	36:nummod	SpaceAfter=No
+38	,	,	PUNCT	_	_	39	punct	39:punct	_
+39	00	00	NUM	_	NumType=Card	36	nummod	36:nummod	SpaceAfter=No
+40	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0011
+# text = O Tribunal de Justiça (TJ/RJ) negou recurso, mantendo integralmente a sentença.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Tribunal	Tribunal	PROPN	_	_	8	nsubj	8:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Justiça	Justiça	PROPN	_	_	2	flat:name	2:flat:name	_
+5	(	(	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+6	TJ/RJ	TJ/RJ	PROPN	_	_	2	appos	2:appos	SpaceAfter=No
+7	)	)	PUNCT	_	_	6	punct	6:punct	_
+8	negou	negar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	recurso	recurso	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	mantendo	manter	VERB	_	VerbForm=Ger	8	advcl	8:advcl	_
+12	integralmente	integralmente	ADV	_	_	11	advmod	11:advmod	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	sentença	sentença	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	SpaceAfter=No
+15	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0013
+# text = A causa da vez foi uma ofensa contra o colunista Merval Pereira, chamado por Amorim de "jornalista bandido" em seu blog.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	causa	causa	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	8:nsubj	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	vez	vez	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+6	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	cop	8:cop	_
+7	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	ofensa	ofensa	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+9	contra	contra	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	colunista	colunista	NOUN	_	Number=Sing	8	nmod	8:nmod:contra	_
+12	Merval	Merval	PROPN	_	_	11	nmod	11:nmod	_
+13	Pereira	Pereira	PROPN	_	_	12	flat:name	12:flat:name	SpaceAfter=No
+14	,	,	PUNCT	_	_	15	punct	15:punct	_
+15	chamado	chamar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	11	acl	11:acl	_
+16	por	por	ADP	_	_	17	case	17:case	_
+17	Amorim	Amorim	PROPN	_	_	15	obl:agent	15:obl:agent	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	"	"	PUNCT	_	_	20	punct	20:punct	SpaceAfter=No
+20	jornalista	jornalista	NOUN	_	Number=Sing	15	obl	15:obl:de	_
+21	bandido	bandido	ADJ	_	Gender=Masc|Number=Sing	20	amod	20:amod	SpaceAfter=No
+22	"	"	PUNCT	_	_	20	punct	20:punct	_
+23	em	em	ADP	_	_	25	case	25:case	_
+24	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	25	det	25:det	_
+25	blog	blog	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	15	obl	15:obl:em	SpaceAfter=No
+26	.	.	PUNCT	_	_	8	punct	8:punct	_

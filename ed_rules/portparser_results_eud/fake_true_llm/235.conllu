@@ -1,0 +1,412 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Atenção: Revelado antigo manuscrito de C.
+1	Atenção	atenção	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+2	:	:	PUNCT	_	_	1	punct	1:punct	_
+3	Revelado	revelar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	1	parataxis	1:parataxis	_
+4	antigo	antigo	ADJ	_	Gender=Masc|Number=Sing	5	amod	5:amod	_
+5	manuscrito	manuscrito	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	C.	C.	PUNCT	_	_	5	nmod	5:nmod:de	_
+
+# sent_id = S0003
+# text = S.
+1	S.	S.	PROPN	_	_	0	root	0:root	_
+
+# sent_id = S0005
+# text = Lewis sobre a COVID-19! Um texto intitulado "COVID-19: A Pandemia do Medo" está circulando nas redes sociais, apresentado como um trecho inédito do lendário autor de "As Crônicas de Nárnia".
+1	Lewis	Lewis	PROPN	_	_	19	nsubj	19:nsubj	_
+2	sobre	sobre	ADP	_	_	4	case	4:case	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	COVID-19	covid-19	NUM	_	NumType=Card	1	nmod	1:nmod:sobre	SpaceAfter=No
+5	!	!	PUNCT	_	_	19	punct	19:punct	_
+6	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	texto	texto	NOUN	_	Gender=Masc|Number=Sing	19	nsubj	19:nsubj	_
+8	intitulado	intitular	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	7	acl	7:acl	_
+9	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+10	COVID-19	covid-19	NUM	_	NumType=Card	8	obj	8:obj	SpaceAfter=No
+11	:	:	PUNCT	_	_	12	punct	12:punct	_
+12	A	A	PROPN	_	_	10	appos	10:appos	_
+13	Pandemia	Pandemia	PROPN	_	_	12	flat:name	12:flat:name	_
+14-15	do	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	Medo	Medo	PROPN	_	_	12	flat:name	12:flat:name	SpaceAfter=No
+17	"	"	PUNCT	_	_	10	punct	10:punct	_
+18	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux	19:aux	_
+19	circulando	circular	VERB	_	VerbForm=Ger	0	root	0:root	_
+20-21	nas	_	_	_	_	_	_	_	_
+20	em	em	ADP	_	_	22	case	22:case	_
+21	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	22:det	_
+22	redes	rede	NOUN	_	Gender=Fem|Number=Plur	19	obl	19:obl:em	_
+23	sociais	social	ADJ	_	Number=Plur	22	amod	22:amod	SpaceAfter=No
+24	,	,	PUNCT	_	_	25	punct	25:punct	_
+25	apresentado	apresentar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	19	advcl	19:advcl	_
+26	como	como	ADP	_	_	28	case	28:case	_
+27	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	trecho	trecho	NOUN	_	Gender=Masc|Number=Sing	25	obl	25:obl:como	_
+29	inédito	inédito	ADJ	_	Gender=Masc|Number=Sing	28	amod	28:amod	_
+30-31	do	_	_	_	_	_	_	_	_
+30	de	de	ADP	_	_	33	case	33:case	_
+31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	33:det	_
+32	lendário	lendário	ADJ	_	Gender=Masc|Number=Sing	33	amod	33:amod	_
+33	autor	autor	NOUN	_	Gender=Masc|Number=Sing	28	nmod	28:nmod:de	_
+34	de	de	ADP	_	_	36	case	36:case	_
+35	"	"	PUNCT	_	_	36	punct	36:punct	SpaceAfter=No
+36	As	As	PROPN	_	_	33	nmod	33:nmod:de	_
+37	Crônicas	Crônicas	PROPN	_	_	36	flat:name	36:flat:name	_
+38	de	de	ADP	_	_	39	case	39:case	_
+39	Nárnia	Nárnia	PROPN	_	_	36	flat:name	36:flat:name	SpaceAfter=No
+40	"	"	PUNCT	_	_	36	punct	36:punct	SpaceAfter=No
+41	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0007
+# text = Esse suposto manuscrito, que muitos acreditam ser uma adição secreta ao livro "Cartas do Diabo a Seu Aprendiz", publicado em 1943, tem gerado grande repercussão entre fãs e acadêmicos.
+1	Esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	3	det	3:det	_
+2	suposto	suposto	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	3	amod	3:amod	_
+3	manuscrito	manuscrito	NOUN	_	Gender=Masc|Number=Sing	30	nsubj	7:obj|10:nsubj|30:nsubj	SpaceAfter=No
+4	,	,	PUNCT	_	_	7	punct	7:punct	_
+5	que	que	PRON	_	PronType=Rel	7	obj	3:ref	_
+6	muitos	muito	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	7	nsubj	7:nsubj	_
+7	acreditam	acreditar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_
+8	ser	ser	AUX	_	VerbForm=Inf	10	cop	10:cop	_
+9	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	adição	adição	NOUN	_	Gender=Fem|Number=Sing	7	xcomp	7:xcomp	_
+11	secreta	secreto	ADJ	_	Gender=Fem|Number=Sing	10	amod	10:amod	_
+12-13	ao	_	_	_	_	_	_	_	_
+12	a	a	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	livro	livro	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:a	_
+15	"	"	PUNCT	_	_	16	punct	16:punct	SpaceAfter=No
+16	Cartas	Cartas	PROPN	_	_	14	nmod	14:nmod	_
+17-18	do	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	Diabo	Diabo	PROPN	_	_	16	flat:name	16:flat:name	_
+20	a	a	ADP	_	_	22	case	22:case	_
+21	Seu	Seu	PROPN	_	_	16	flat:name	16:flat:name	_
+22	Aprendiz	Aprendiz	PROPN	_	_	16	flat:name	16:flat:name	SpaceAfter=No
+23	"	"	PUNCT	_	_	16	punct	16:punct	SpaceAfter=No
+24	,	,	PUNCT	_	_	25	punct	25:punct	_
+25	publicado	publicar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	14	acl	14:acl	_
+26	em	em	ADP	_	_	27	case	27:case	_
+27	1943	1943	NUM	_	NumType=Card	25	obl	25:obl:em	SpaceAfter=No
+28	,	,	PUNCT	_	_	25	punct	25:punct	_
+29	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	aux	30:aux	_
+30	gerado	gerar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+31	grande	grande	ADJ	_	Number=Sing	32	amod	32:amod	_
+32	repercussão	repercussão	NOUN	_	Gender=Fem|Number=Sing	30	obj	30:obj	_
+33	entre	entre	ADP	_	_	34	case	34:case	_
+34	fãs	fã	NOUN	_	Number=Plur	30	obl	30:obl:entre	_
+35	e	e	CCONJ	_	_	36	cc	36:cc	_
+36	acadêmicos	acadêmico	NOUN	_	Gender=Masc|Number=Plur	34	conj	30:obl:entre|34:conj:e	SpaceAfter=No
+37	.	.	PUNCT	_	_	30	punct	30:punct	_
+
+# sent_id = S0009
+# text = A mensagem profunda e misteriosa sugere que a pandemia é uma criação do medo coletivo, manipulada por forças obscuras para desestabilizar a sociedade.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	mensagem	mensagem	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj	_
+3	profunda	profundo	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	_
+4	e	e	CCONJ	_	_	5	cc	5:cc	_
+5	misteriosa	misterioso	ADJ	_	Gender=Fem|Number=Sing	3	conj	2:amod|3:conj:e	_
+6	sugere	sugerir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	que	que	SCONJ	_	_	12	mark	12:mark	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	pandemia	pandemia	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	12:nsubj	_
+10	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	12:cop	_
+11	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	criação	criação	NOUN	_	Gender=Fem|Number=Sing	6	ccomp	6:ccomp	_
+13-14	do	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	medo	medo	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:de	_
+16	coletivo	coletivo	ADJ	_	Gender=Masc|Number=Sing	15	amod	15:amod	SpaceAfter=No
+17	,	,	PUNCT	_	_	18	punct	18:punct	_
+18	manipulada	manipular	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	12	acl	12:acl	_
+19	por	por	ADP	_	_	20	case	20:case	_
+20	forças	força	NOUN	_	Gender=Fem|Number=Plur	18	obl:agent	18:obl:agent	_
+21	obscuras	obscuro	ADJ	_	Gender=Fem|Number=Plur	20	amod	20:amod	_
+22	para	para	ADP	_	_	23	mark	23:mark	_
+23	desestabilizar	desestabilizar	VERB	_	VerbForm=Inf	18	advcl	18:advcl:para	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	sociedade	sociedade	NOUN	_	Gender=Fem|Number=Sing	23	obj	23:obj	SpaceAfter=No
+26	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0011
+# text = "Cartas do Diabo a Seu Aprendiz" sempre foi conhecido por suas perspectivas satíricas e, agora, esse novo fragmento parece seguir a mesma linha, propondo teorias surpreendentes sobre a atual crise global.
+1	"	"	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+2	Cartas	Cartas	PROPN	_	_	12	nsubj:pass	12:nsubj:pass	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	Diabo	Diabo	PROPN	_	_	2	flat:name	2:flat:name	_
+6	a	a	ADP	_	_	8	case	8:case	_
+7	Seu	Seu	PROPN	_	_	8	det	8:det	_
+8	Aprendiz	Aprendiz	PROPN	_	_	2	flat:name	2:flat:name	SpaceAfter=No
+9	"	"	PUNCT	_	_	2	punct	2:punct	_
+10	sempre	sempre	ADV	_	_	12	advmod	12:advmod	_
+11	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	aux:pass	12:aux:pass	_
+12	conhecido	conhecer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+13	por	por	ADP	_	_	15	case	15:case	_
+14	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	15	det	15:det	_
+15	perspectivas	perspectiva	NOUN	_	Gender=Fem|Number=Plur	12	obl	12:obl:por	_
+16	satíricas	satírico	ADJ	_	Gender=Fem|Number=Plur	15	amod	15:amod	_
+17	e	e	CCONJ	_	_	24	cc	24:cc	SpaceAfter=No
+18	,	,	PUNCT	_	_	19	punct	19:punct	_
+19	agora	agora	ADV	_	_	24	advmod	24:advmod	SpaceAfter=No
+20	,	,	PUNCT	_	_	19	punct	19:punct	_
+21	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	23	det	23:det	_
+22	novo	novo	ADJ	_	Gender=Masc|Number=Sing	23	amod	23:amod	_
+23	fragmento	fragmento	NOUN	_	Gender=Masc|Number=Sing	24	nsubj	24:nsubj|25:nsubj	_
+24	parece	parecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	conj	12:conj:e	_
+25	seguir	seguir	VERB	_	VerbForm=Inf	24	xcomp	24:xcomp	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+27	mesma	mesmo	DET	_	Gender=Fem|Number=Sing|PronType=Dem	28	det	28:det	_
+28	linha	linha	NOUN	_	Gender=Fem|Number=Sing	25	obj	25:obj	SpaceAfter=No
+29	,	,	PUNCT	_	_	30	punct	30:punct	_
+30	propondo	propor	VERB	_	VerbForm=Ger	25	advcl	25:advcl	_
+31	teorias	teoria	NOUN	_	Gender=Fem|Number=Plur	30	obj	30:obj	_
+32	surpreendentes	surpreendente	ADJ	_	Number=Plur	31	amod	31:amod	_
+33	sobre	sobre	ADP	_	_	36	case	36:case	_
+34	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	36:det	_
+35	atual	atual	ADJ	_	Number=Sing	36	amod	36:amod	_
+36	crise	crise	NOUN	_	Gender=Fem|Number=Sing	31	nmod	31:nmod:sobre	_
+37	global	global	ADJ	_	Number=Sing	36	amod	36:amod	SpaceAfter=No
+38	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0013
+# text = A HarperCollins, editora responsável pela obra de Lewis, se manteve em silêncio sobre a autenticidade do manuscrito, aumentando ainda mais a especulação.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	HarperCollins	HarperCollins	PROPN	_	_	13	nsubj	13:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	editora	editor	NOUN	_	Gender=Fem|Number=Sing	2	appos	2:appos	_
+5	responsável	responsável	ADJ	_	Number=Sing	4	amod	4:amod	_
+6-7	pela	_	_	_	_	_	_	_	_
+6	por	por	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	obra	obra	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:por	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	Lewis	Lewis	PROPN	_	_	8	nmod	8:nmod:de	SpaceAfter=No
+11	,	,	PUNCT	_	_	4	punct	4:punct	_
+12	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	13	expl	13:expl	_
+13	manteve	manter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	em	em	ADP	_	_	15	case	15:case	_
+15	silêncio	silêncio	NOUN	_	Gender=Masc|Number=Sing	13	obl	13:obl:em	_
+16	sobre	sobre	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	autenticidade	autenticidade	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:sobre	_
+19-20	do	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	manuscrito	manuscrito	NOUN	_	Gender=Masc|Number=Sing	18	nmod	18:nmod:de	SpaceAfter=No
+22	,	,	PUNCT	_	_	23	punct	23:punct	_
+23	aumentando	aumentar	VERB	_	VerbForm=Ger	13	advcl	13:advcl	_
+24	ainda	ainda	ADV	_	_	25	advmod	25:advmod	_
+25	mais	mais	ADV	_	_	23	advmod	23:advmod	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	especulação	especulação	NOUN	_	Gender=Fem|Number=Sing	23	obj	23:obj	SpaceAfter=No
+28	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0015
+# text = Enquanto isso, Camila Abadie, uma escritora brasileira, reivindica a autoria do texto, mas suas palavras são vistas com ceticismo por muitos que desejam acreditar na intervenção póstuma de Lewis.
+1	Enquanto	enquanto	ADV	_	ExtPos=ADV	11	advmod	11:advmod	_
+2	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	fixed	1:fixed	SpaceAfter=No
+3	,	,	PUNCT	_	_	1	punct	1:punct	_
+4	Camila	Camila	PROPN	_	_	11	nsubj	11:nsubj	_
+5	Abadie	Abadie	PROPN	_	_	4	flat:name	4:flat:name	SpaceAfter=No
+6	,	,	PUNCT	_	_	8	punct	8:punct	_
+7	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	escritora	escritor	NOUN	_	Gender=Fem|Number=Sing	4	appos	4:appos	_
+9	brasileira	brasileiro	ADJ	_	Gender=Fem|Number=Sing	8	amod	8:amod	SpaceAfter=No
+10	,	,	PUNCT	_	_	8	punct	8:punct	_
+11	reivindica	reivindicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	autoria	autoria	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	_
+14-15	do	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	texto	texto	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod:de	SpaceAfter=No
+17	,	,	PUNCT	_	_	22	punct	22:punct	_
+18	mas	mas	CCONJ	_	_	22	cc	22:cc	_
+19	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	20	det	20:det	_
+20	palavras	palavra	NOUN	_	Gender=Fem|Number=Plur	22	nsubj:pass	22:nsubj:pass	_
+21	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	aux:pass	22:aux:pass	_
+22	vistas	ver	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	11	conj	11:conj:mas	_
+23	com	com	ADP	_	_	24	case	24:case	_
+24	ceticismo	ceticismo	NOUN	_	Gender=Masc|Number=Sing	22	obl	22:obl:com	_
+25	por	por	ADP	_	_	26	case	26:case	_
+26	muitos	muito	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	22	obl:agent	22:obl:agent|28:nsubj|29:nsubj	_
+27	que	que	PRON	_	PronType=Rel	28	nsubj	26:ref	_
+28	desejam	desejar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	26	acl:relcl	26:acl:relcl	_
+29	acreditar	acreditar	VERB	_	VerbForm=Inf	28	xcomp	28:xcomp	_
+30-31	na	_	_	_	_	_	_	_	_
+30	em	em	ADP	_	_	32	case	32:case	_
+31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	32:det	_
+32	intervenção	intervenção	NOUN	_	Gender=Fem|Number=Sing	29	obl	29:obl:em	_
+33	póstuma	póstumo	ADJ	_	Gender=Fem|Number=Sing	32	amod	32:amod	_
+34	de	de	ADP	_	_	35	case	35:case	_
+35	Lewis	Lewis	PROPN	_	_	32	nmod	32:nmod:de	SpaceAfter=No
+36	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0017
+# text = O mistério continua, e o texto viraliza rapidamente, levantando questões sobre a verdadeira origem da pandemia.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	mistério	mistério	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	continua	continuar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+4	,	,	PUNCT	_	_	8	punct	8:punct	_
+5	e	e	CCONJ	_	_	8	cc	8:cc	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	texto	texto	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	8:nsubj	_
+8	viraliza	viralizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	3:conj:e	_
+9	rapidamente	rapidamente	ADV	_	_	8	advmod	8:advmod	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	levantando	levantar	VERB	_	VerbForm=Ger	8	advcl	8:advcl	_
+12	questões	questão	NOUN	_	Gender=Fem|Number=Plur	11	obj	11:obj	_
+13	sobre	sobre	ADP	_	_	16	case	16:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+15	verdadeira	verdadeiro	ADJ	_	Gender=Fem|Number=Sing	16	amod	16:amod	_
+16	origem	origem	NOUN	_	Gender=Fem|Number=Sing	12	nmod	12:nmod:sobre	_
+17-18	da	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	pandemia	pandemia	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:de	SpaceAfter=No
+20	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0019
+# text = Será que C.
+1	Será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	2	discourse	2:discourse	_
+2	que	que	SCONJ	_	_	0	root	0:root	_
+3	C.	C.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0021
+# text = S.
+1	S.	S.	PROPN	_	_	0	root	0:root	_
+
+# sent_id = S0023
+# text = Lewis previu os tempos atuais? Assista ao vídeo exclusivo onde especialistas debatem a veracidade desse manuscrito e suas implicações!
+1	Lewis	Lewis	PROPN	_	_	2	nsubj	2:nsubj	_
+2	previu	prever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	4:det	_
+4	tempos	tempo	NOUN	_	Gender=Masc|Number=Plur	2	obj	2:obj	_
+5	atuais	atual	ADJ	_	Number=Plur	4	amod	4:amod	SpaceAfter=No
+6	?	?	PUNCT	_	_	2	punct	2:punct	_
+7	Assista	assistir	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	2	dep	2:dep	_
+8-9	ao	_	_	_	_	_	_	_	_
+8	a	a	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:a|14:obl	_
+11	exclusivo	exclusivo	ADJ	_	Gender=Masc|Number=Sing	10	amod	10:amod	_
+12	onde	onde	ADV	_	_	14	advmod	10:ref	_
+13	especialistas	especialista	NOUN	_	Number=Plur	14	nsubj	14:nsubj	_
+14	debatem	debater	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	acl:relcl	10:acl:relcl	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	veracidade	veracidade	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	_
+17-18	desse	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case|22:case	_
+18	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	19	det	19:det	_
+19	manuscrito	manuscrito	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod:de	_
+20	e	e	CCONJ	_	_	22	cc	22:cc	_
+21	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	22	det	22:det	_
+22	implicações	implicação	NOUN	_	Gender=Fem|Number=Plur	19	conj	16:nmod:de|19:conj:e	SpaceAfter=No
+23	!	!	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0025
+# text = Publicado pela primeira vez na década de 1940, "Cartas de um Diabo a Seu Aprendiz" é uma obra-prima que explora a natureza do mal através de cartas trocadas entre um diabo e seu sobrinho aprendiz.
+1	Publicado	publicar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	23	advcl	23:advcl	_
+2-3	pela	_	_	_	_	_	_	_	_
+2	por	por	ADP	_	_	5	case	5:case	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+4	primeira	primeiro	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	5	amod	5:amod	_
+5	vez	vez	NOUN	_	Gender=Fem|Number=Sing	1	obl	1:obl:por	_
+6-7	na	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	década	década	NOUN	_	Gender=Fem|Number=Sing	1	obl	1:obl:em	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	1940	1940	NUM	_	NumType=Card	8	nmod	8:nmod:de	SpaceAfter=No
+11	,	,	PUNCT	_	_	1	punct	1:punct	_
+12	"	"	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+13	Cartas	Cartas	PROPN	_	_	23	nsubj	23:nsubj	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	Diabo	Diabo	PROPN	_	_	13	flat:name	13:flat:name	_
+17	a	a	ADP	_	_	19	case	19:case	_
+18	Seu	Seu	PROPN	_	_	16	det	16:det	_
+19	Aprendiz	Aprendiz	PROPN	_	_	13	flat:name	13:flat:name	SpaceAfter=No
+20	"	"	PUNCT	_	_	13	punct	13:punct	_
+21	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	cop	23:cop	_
+22	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	obra-prima	obra-prima	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root|25:nsubj	_
+24	que	que	PRON	_	PronType=Rel	25	nsubj	23:ref	_
+25	explora	explorar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	acl:relcl	23:acl:relcl	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	natureza	natureza	NOUN	_	Gender=Fem|Number=Sing	25	obj	25:obj	_
+28-29	do	_	_	_	_	_	_	_	_
+28	de	de	ADP	_	_	30	case	30:case	_
+29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	30:det	_
+30	mal	mal	NOUN	_	Gender=Masc|Number=Sing	27	nmod	27:nmod:de	_
+31	através	através	ADV	_	_	25	advmod	25:advmod	_
+32	de	de	ADP	_	_	33	case	33:case	_
+33	cartas	carta	NOUN	_	Gender=Fem|Number=Plur	31	obl	31:obl:de	_
+34	trocadas	trocar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	33	acl	33:acl	_
+35	entre	entre	ADP	_	_	37	case	37:case	_
+36	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	37	det	37:det	_
+37	diabo	diabo	NOUN	_	Gender=Masc|Number=Sing	34	obl	34:obl:entre	_
+38	e	e	CCONJ	_	_	40	cc	40:cc	_
+39	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	40	det	40:det	_
+40	sobrinho	sobrinho	NOUN	_	Gender=Masc|Number=Sing	37	conj	34:obl:entre|37:conj:e	_
+41	aprendiz	aprendiz	NOUN	_	Gender=Masc|Number=Sing	40	nmod	40:nmod	SpaceAfter=No
+42	.	.	PUNCT	_	_	23	punct	23:punct	_
+
+# sent_id = S0027
+# text = C.
+1	C.	C.	PROPN	_	_	0	root	0:root	_
+
+# sent_id = S0029
+# text = S.
+1	S.	S.	PROPN	_	_	0	root	0:root	_
+
+# sent_id = S0031
+# text = Lewis, nascido em 1898 em Belfast, na Irlanda do Norte, e falecido em 1963, continua a fascinar o mundo com suas visões profundas e agora, possivelmente, com suas previsões assustadoramente precisas.
+1	Lewis	Lewis	PROPN	_	_	21	nsubj	21:nsubj|23:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	nascido	nascer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	1	acl	1:acl	_
+4	em	em	ADP	_	_	5	case	5:case	_
+5	1898	1898	NUM	_	NumType=Card	3	obl	3:obl:em	_
+6	em	em	ADP	_	_	7	case	7:case	_
+7	Belfast	Belfast	PROPN	_	_	3	obl	3:obl:em	SpaceAfter=No
+8	,	,	PUNCT	_	_	11	punct	11:punct	_
+9-10	na	_	_	_	_	_	_	_	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	Irlanda	Irlanda	PROPN	_	_	7	nmod	7:nmod:em	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	Norte	Norte	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+15	,	,	PUNCT	_	_	11	punct	11:punct	_
+16	e	e	CCONJ	_	_	17	cc	17:cc	_
+17	falecido	falecer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	3	conj	1:acl|3:conj:e	_
+18	em	em	ADP	_	_	19	case	19:case	_
+19	1963	1963	NUM	_	NumType=Card	17	obl	17:obl:em	SpaceAfter=No
+20	,	,	PUNCT	_	_	3	punct	3:punct	_
+21	continua	continuar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+22	a	a	ADP	_	_	23	mark	23:mark	_
+23	fascinar	fascinar	VERB	_	VerbForm=Inf	21	xcomp	21:xcomp	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	23	obj	23:obj	_
+26	com	com	ADP	_	_	28	case	28:case	_
+27	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	28	det	28:det	_
+28	visões	visão	NOUN	_	Gender=Fem|Number=Plur	23	obl	23:obl:com	_
+29	profundas	profundo	ADJ	_	Gender=Fem|Number=Plur	28	amod	28:amod	_
+30	e	e	CCONJ	_	_	37	cc	37:cc	_
+31	agora	agora	ADV	_	_	37	advmod	37:advmod	SpaceAfter=No
+32	,	,	PUNCT	_	_	33	punct	33:punct	_
+33	possivelmente	possivelmente	ADV	_	_	37	advmod	37:advmod	SpaceAfter=No
+34	,	,	PUNCT	_	_	33	punct	33:punct	_
+35	com	com	ADP	_	_	37	case	37:case	_
+36	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	37	det	37:det	_
+37	previsões	previsão	NOUN	_	Gender=Fem|Number=Plur	28	conj	23:obl:com|28:conj:e	_
+38	assustadoramente	assustadoramente	ADV	_	_	39	advmod	39:advmod	_
+39	precisas	preciso	ADJ	_	Gender=Fem|Number=Plur	37	amod	37:amod	SpaceAfter=No
+40	.	.	PUNCT	_	_	21	punct	21:punct	_

@@ -1,0 +1,64 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = primeiros 2 médicos cubanos que foram embora eram policiais cubanos aí está a resposta do porque que 2 “médicos” saíram de um dia para outro, do brasil.
+1	primeiros	primeiro	ADJ	_	Gender=Masc|Number=Plur|NumType=Ord	3	det	3:det	_
+2	2	2	NUM	_	NumType=Card	3	nummod	3:nummod	_
+3	médicos	médico	NOUN	_	Gender=Masc|Number=Plur	9	nsubj	6:nsubj|9:nsubj	_
+4	cubanos	cubano	ADJ	_	Gender=Masc|Number=Plur	3	amod	3:amod	_
+5	que	que	PRON	_	PronType=Rel	6	nsubj	3:ref	_
+6	foram	foram	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_
+7	embora	embora	ADV	_	_	6	advmod	6:advmod	_
+8	eram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	9	cop	9:cop	_
+9	policiais	policial	NOUN	_	Number=Plur	14	dep	14:dep	_
+10	cubanos	cubano	ADJ	_	Gender=Masc|Number=Plur	9	amod	9:amod	_
+11	aí	aí	ADV	_	_	14	advmod	14:advmod	_
+12	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	14:cop	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	resposta	resposta	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+15-16	do	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	21	mark	21:mark	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	porque	porque	PRON	_	PronType=Dem	21	obl	21:obl	_
+18	que	que	SCONJ	_	_	21	mark	21:mark	_
+19	2	2	NUM	_	NumType=Card	20	nummod	20:nummod	_
+20	“médicos”	“médicos”	ADJ	_	_	21	nsubj	21:nsubj	_
+21	saíram	sair	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	14	acl	14:acl:de	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	dia	dia	NOUN	_	Gender=Masc|Number=Sing	21	obl	21:obl:de	_
+25	para	para	ADP	_	_	26	case	26:case	_
+26	outro	outro	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	24	nmod	24:nmod:para	SpaceAfter=No
+27	,	,	PUNCT	_	_	30	punct	30:punct	_
+28-29	do	_	_	_	_	_	_	_	_
+28	de	de	ADP	_	_	30	case	30:case	_
+29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	30:det	_
+30	brasil	brasil	NOUN	_	Gender=Masc|Number=Sing	21	obl	21:obl:de	SpaceAfter=No
+31	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0003
+# text = eram 2 policiais cubanos, que vigiavam os “médicos cubanos”e recebiam do pt (brasil) r$ 25 mil reais por mês.
+1	eram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	3	cop	3:cop	_
+2	2	2	NUM	_	NumType=Card	3	nummod	3:nummod	_
+3	policiais	policial	NOUN	_	Number=Plur	0	root	0:root|7:nsubj|11:nsubj	_
+4	cubanos	cubano	ADJ	_	Gender=Masc|Number=Plur	3	amod	3:amod	SpaceAfter=No
+5	,	,	PUNCT	_	_	7	punct	7:punct	_
+6	que	que	PRON	_	PronType=Rel	7	nsubj	3:ref	_
+7	vigiavam	vigiar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_
+8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	9:det	_
+9	“médicos	“médicos	NOUN	_	_	7	obj	7:obj	_
+10	cubanos”e	cubanos”e	CCONJ	_	_	11	cc	11:cc	_
+11	recebiam	receber	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	7	conj	3:acl:relcl|7:conj:cubanos”e	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	pt	pt	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	11	obl	11:obl:de	_
+15	(	(	PUNCT	_	_	16	punct	16:punct	SpaceAfter=No
+16	brasil	brasil	NOUN	_	Gender=Masc|Number=Sing	14	parataxis	14:parataxis	SpaceAfter=No
+17	)	)	PUNCT	_	_	16	punct	16:punct	_
+18	r$	r$	SYM	_	_	21	nmod	21:nmod	_
+19	25	25	NUM	_	NumType=Card	21	nummod	21:nummod	_
+20	mil	mil	NUM	_	NumType=Card	19	flat	19:flat	_
+21	reais	real	NOUN	_	Gender=Masc|Number=Plur	11	obj	11:obj	_
+22	por	por	ADP	_	_	23	case	23:case	_
+23	mês	mês	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:por	SpaceAfter=No
+24	.	.	PUNCT	_	_	3	punct	3:punct	_

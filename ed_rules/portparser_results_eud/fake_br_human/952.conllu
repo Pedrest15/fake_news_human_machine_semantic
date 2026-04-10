@@ -1,0 +1,302 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Kim Jon e Assad se juntam e declaram guerra contra a "ambição selvagem" dos EUA.
+1	Kim	Kim	PROPN	_	_	6	nsubj	6:nsubj|8:nsubj	_
+2	Jon	Jon	PROPN	_	_	1	flat:name	1:flat:name	_
+3	e	e	CCONJ	_	_	4	cc	4:cc	_
+4	Assad	Assad	PROPN	_	_	1	conj	1:conj:e|6:nsubj|8:nsubj	_
+5	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	6	expl	6:expl	_
+6	juntam	juntar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	declaram	declarar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	conj	6:conj:e	_
+9	guerra	guerra	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	_
+10	contra	contra	ADP	_	_	13	case	13:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+12	"	"	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+13	ambição	ambição	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:contra	_
+14	selvagem	selvagem	ADJ	_	Number=Sing	13	amod	13:amod	SpaceAfter=No
+15	"	"	PUNCT	_	_	13	punct	13:punct	_
+16-17	dos	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	18:det	_
+18	EUA	EUA	PROPN	_	_	13	nmod	13:nmod:de	SpaceAfter=No
+19	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0003
+# text = Os ditadores Bashar al-Assad e Kim Jong-un anunciaram uma união para combater as grandes potências.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	ditadores	ditador	NOUN	_	Gender=Masc|Number=Plur	8	nsubj	8:nsubj	_
+3	Bashar	Bashar	PROPN	_	_	2	nmod	2:nmod	_
+4	al-Assad	al-Assad	PROPN	_	_	3	flat:name	3:flat:name	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	Kim	Kim	PROPN	_	_	3	conj	2:nmod|3:conj:e	_
+7	Jong-un	Jong-un	PROPN	_	_	6	flat:name	6:flat:name	_
+8	anunciaram	anunciar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	união	união	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	_
+11	para	para	ADP	_	_	12	mark	12:mark	_
+12	combater	combater	VERB	_	VerbForm=Inf	8	advcl	8:advcl:para	_
+13	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	15:det	_
+14	grandes	grande	ADJ	_	Number=Plur	15	amod	15:amod	_
+15	potências	potência	NOUN	_	Gender=Fem|Number=Plur	12	obj	12:obj	SpaceAfter=No
+16	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0005
+# text = Os líderes da Coréia do Norte e da Síria concordaram em aumentar a cooperação diante das crescentes ameaças militares dos EUA.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	líderes	líder	NOUN	_	Gender=Masc|Number=Plur	13	nsubj	13:nsubj|15:nsubj	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	Coréia	Coréia	PROPN	_	_	2	nmod	2:nmod:de	_
+6-7	do	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	Norte	Norte	PROPN	_	_	5	flat:name	5:flat:name	_
+9	e	e	CCONJ	_	_	12	cc	12:cc	_
+10-11	da	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	Síria	Síria	PROPN	_	_	5	conj	2:nmod:de|5:conj:e	_
+13	concordaram	concordar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	em	em	ADP	_	_	15	mark	15:mark	_
+15	aumentar	aumentar	VERB	_	VerbForm=Inf	13	xcomp	13:xcomp	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	cooperação	cooperação	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	_
+18	diante	diante	ADV	_	_	15	advmod	15:advmod	_
+19-20	das	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	22	case	22:case	_
+20	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	22:det	_
+21	crescentes	crescente	ADJ	_	Number=Plur	22	amod	22:amod	_
+22	ameaças	ameaça	NOUN	_	Gender=Fem|Number=Plur	18	obl	18:obl:de	_
+23	militares	militar	ADJ	_	Number=Plur	22	amod	22:amod	_
+24-25	dos	_	_	_	_	_	_	_	_
+24	de	de	ADP	_	_	26	case	26:case	_
+25	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	26:det	_
+26	EUA	EUA	PROPN	_	_	22	nmod	22:nmod:de	SpaceAfter=No
+27	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0007
+# text = Uma nota oficial foi divulgada pelo governo sírio destacando as relações "amigáveis" entre as duas nações totalitárias.
+1	Uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	nota	nota	NOUN	_	Gender=Fem|Number=Sing	5	nsubj:pass	5:nsubj:pass	_
+3	oficial	oficial	ADJ	_	Number=Sing	2	amod	2:amod	_
+4	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	aux:pass	5:aux:pass	_
+5	divulgada	divulgar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+6-7	pelo	_	_	_	_	_	_	_	_
+6	por	por	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	governo	governo	NOUN	_	Gender=Masc|Number=Sing	5	obl:agent	5:obl:agent	_
+9	sírio	sírio	ADJ	_	Gender=Masc|Number=Sing	8	amod	8:amod	_
+10	destacando	destacar	VERB	_	VerbForm=Ger	5	advcl	5:advcl	_
+11	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	12:det	_
+12	relações	relação	NOUN	_	Gender=Fem|Number=Plur	10	obj	10:obj	_
+13	"	"	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+14	amigáveis	amigável	ADJ	_	Number=Plur	12	amod	12:amod	SpaceAfter=No
+15	"	"	PUNCT	_	_	14	punct	14:punct	_
+16	entre	entre	ADP	_	_	19	case	19:case	_
+17	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	19:det	_
+18	duas	dois	NUM	_	Gender=Fem|NumType=Card	19	nummod	19:nummod	_
+19	nações	nação	NOUN	_	Gender=Fem|Number=Plur	12	nmod	12:nmod:entre	_
+20	totalitárias	totalitário	ADJ	_	Gender=Fem|Number=Plur	19	amod	19:amod	SpaceAfter=No
+21	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0009
+# text = Agora, os "países amigos" da Coréia do Norte e da Síria juraram trabalhar juntos contra a "ambição selvagem" dos norte-americanos.
+1	Agora	agora	ADV	_	_	18	advmod	18:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	5:det	_
+4	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+5	países	país	NOUN	_	Gender=Masc|Number=Plur	18	nsubj	18:nsubj|19:nsubj	_
+6	amigos	amigo	ADJ	_	Gender=Masc|Number=Plur	5	amod	5:amod	SpaceAfter=No
+7	"	"	PUNCT	_	_	5	punct	5:punct	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	Coréia	Coréia	PROPN	_	_	5	nmod	5:nmod:de	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	Norte	Norte	PROPN	_	_	10	flat:name	10:flat:name	_
+14	e	e	CCONJ	_	_	17	cc	17:cc	_
+15-16	da	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	Síria	Síria	PROPN	_	_	10	conj	5:nmod:de|10:conj:e	_
+18	juraram	jurar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+19	trabalhar	trabalhar	VERB	_	VerbForm=Inf	18	xcomp	18:xcomp	_
+20	juntos	junto	ADJ	_	Gender=Masc|Number=Plur	19	advcl	19:advcl	_
+21	contra	contra	ADP	_	_	24	case	24:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+23	"	"	PUNCT	_	_	24	punct	24:punct	SpaceAfter=No
+24	ambição	ambição	NOUN	_	Gender=Fem|Number=Sing	19	obl	19:obl:contra	_
+25	selvagem	selvagem	ADJ	_	Number=Sing	24	amod	24:amod	SpaceAfter=No
+26	"	"	PUNCT	_	_	24	punct	24:punct	_
+27-28	dos	_	_	_	_	_	_	_	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	29:det	_
+29	norte-americanos	norte-americano	NOUN	_	Gender=Masc|Number=Plur	24	nmod	24:nmod:de	SpaceAfter=No
+30	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0011
+# text = Assad declarou a Kim: Os dois países amigáveis comemoram esta data (se referindo ao 105o aniversário do fundador da Coréia do Norte, Kim Il Sung) e ao mesmo tempo conduzem uma guerra contra a ambição selvagem das grandes potências em querer submeter todos os países à sua política expansionista.
+1	Assad	Assad	PROPN	_	_	2	nsubj	2:nsubj	_
+2	declarou	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	a	a	ADP	_	_	4	case	4:case	_
+4	Kim	Kim	PROPN	_	_	2	obl	2:obl:a	SpaceAfter=No
+5	:	:	PUNCT	_	_	10	punct	10:punct	_
+6	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	8:det	_
+7	dois	dois	NUM	_	Gender=Masc|NumType=Card	8	nummod	8:nummod	_
+8	países	país	NOUN	_	Gender=Masc|Number=Plur	10	nsubj	10:nsubj|39:nsubj	_
+9	amigáveis	amigável	ADJ	_	Number=Plur	8	amod	8:amod	_
+10	comemoram	comemorar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp:speech	2:ccomp:speech	_
+11	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	12	det	12:det	_
+12	data	data	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+13	(	(	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+14	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	15	expl	15:expl	_
+15	referindo	referir	VERB	_	VerbForm=Ger	10	parataxis	10:parataxis	_
+16-17	ao	_	_	_	_	_	_	_	_
+16	a	a	ADP	_	_	19	case	19:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+18	105o	105o	ADJ	_	Gender=Masc|NumType=Ord	19	amod	19:amod	_
+19	aniversário	aniversário	NOUN	_	Gender=Masc|Number=Sing	15	obl	15:obl:a	_
+20-21	do	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	fundador	fundador	NOUN	_	Gender=Masc|Number=Sing	19	nmod	19:nmod:de	_
+23-24	da	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	Coréia	Coréia	PROPN	_	_	22	nmod	22:nmod:de	_
+26-27	do	_	_	_	_	_	_	_	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	Norte	Norte	PROPN	_	_	25	flat:name	25:flat:name	SpaceAfter=No
+29	,	,	PUNCT	_	_	30	punct	30:punct	_
+30	Kim	Kim	PROPN	_	_	22	appos	22:appos	_
+31	Il	Il	PROPN	_	_	30	flat:name	30:flat:name	_
+32	Sung	Sung	PROPN	_	_	30	flat:name	30:flat:name	SpaceAfter=No
+33	)	)	PUNCT	_	_	15	punct	15:punct	_
+34	e	e	CCONJ	_	_	39	cc	39:cc	_
+35-36	ao	_	_	_	_	_	_	_	_
+35	a	a	ADP	_	_	38	case	38:case	_
+36	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	38:det	_
+37	mesmo	mesmo	DET	_	Gender=Masc|Number=Sing|PronType=Dem	38	det	38:det	_
+38	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	39	obl	39:obl:a	_
+39	conduzem	conduzir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	conj	2:ccomp:speech|10:conj:e	_
+40	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	41	det	41:det	_
+41	guerra	guerra	NOUN	_	Gender=Fem|Number=Sing	39	obj	39:obj	_
+42	contra	contra	ADP	_	_	44	case	44:case	_
+43	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	44:det	_
+44	ambição	ambição	NOUN	_	Gender=Fem|Number=Sing	41	nmod	41:nmod:contra	_
+45	selvagem	selvagem	ADJ	_	Number=Sing	44	amod	44:amod	_
+46-47	das	_	_	_	_	_	_	_	_
+46	de	de	ADP	_	_	49	case	49:case	_
+47	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	49	det	49:det	_
+48	grandes	grande	ADJ	_	Number=Plur	49	amod	49:amod	_
+49	potências	potência	NOUN	_	Gender=Fem|Number=Plur	44	nmod	44:nmod:de	_
+50	em	em	ADP	_	_	51	mark	51:mark	_
+51	querer	querer	VERB	_	VerbForm=Inf	44	acl	44:acl:em	_
+52	submeter	submeter	VERB	_	VerbForm=Inf	51	xcomp	51:xcomp	_
+53	todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Ind	55	det	55:det	_
+54	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	55	det	55:det	_
+55	países	país	NOUN	_	Gender=Masc|Number=Plur	52	obj	52:obj	_
+56-57	à	_	_	_	_	_	_	_	_
+56	a	a	ADP	_	_	59	case	59:case	_
+57	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	59	det	59:det	_
+58	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	59	det	59:det	_
+59	política	política	NOUN	_	Gender=Fem|Number=Sing	52	obl	52:obl:a	_
+60	expansionista	expansionista	ADJ	_	Number=Sing	59	amod	59:amod	SpaceAfter=No
+61	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0013
+# text = As duas nações lutarão pela autodeterminação, soberania nacional, segurança e prosperidade de seus países.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	3:det	_
+2	duas	dois	NUM	_	Gender=Fem|NumType=Card	3	nummod	3:nummod	_
+3	nações	nação	NOUN	_	Gender=Fem|Number=Plur	4	nsubj	4:nsubj	_
+4	lutarão	lutar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+5-6	pela	_	_	_	_	_	_	_	_
+5	por	por	ADP	_	_	7	case	7:case|9:case|12:case|14:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	autodeterminação	autodeterminação	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:por	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	soberania	soberania	NOUN	_	Gender=Fem|Number=Sing	7	conj	4:obl:por|7:conj:e	_
+10	nacional	nacional	ADJ	_	Number=Sing	9	amod	9:amod	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	segurança	segurança	NOUN	_	Number=Sing	7	conj	4:obl:por|7:conj:e	_
+13	e	e	CCONJ	_	_	14	cc	14:cc	_
+14	prosperidade	prosperidade	NOUN	_	Gender=Fem|Number=Sing	7	conj	4:obl:por|7:conj:e	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	17	det	17:det	_
+17	países	país	NOUN	_	Gender=Masc|Number=Plur	14	nmod	14:nmod:de	SpaceAfter=No
+18	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0015
+# text = Kim retribuiu a nota e parabenizou a Assad no 90o aniversário de seu partido Ba"ath, informou a KCNA, agência de mídia estatal norte-coreana: "Espero que nossa parceria contra o imperialismo cresça firmemente.
+1	Kim	Kim	PROPN	_	_	2	nsubj	2:nsubj|6:nsubj	_
+2	retribuiu	retribuir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	ccomp:speech	18:ccomp:speech	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	nota	nota	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	parabenizou	parabenizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	2:conj:e|18:ccomp:speech	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	Assad	Assad	PROPN	_	_	6	obj	6:obj	_
+9-10	no	_	_	_	_	_	_	_	_
+9	em	em	ADP	_	_	12	case	12:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+11	90o	90o	ADJ	_	Gender=Masc|NumType=Ord	12	amod	12:amod	_
+12	aniversário	aniversário	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:em	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	15	det	15:det	_
+15	partido	partido	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:de	_
+16	Ba"ath	ba"ath	INTJ	_	_	15	nmod	15:nmod	SpaceAfter=No
+17	,	,	PUNCT	_	_	2	punct	2:punct	_
+18	informou	informar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	KCNA	KCNA	PROPN	_	_	18	nsubj	18:nsubj	SpaceAfter=No
+21	,	,	PUNCT	_	_	22	punct	22:punct	_
+22	agência	agência	NOUN	_	Gender=Fem|Number=Sing	20	appos	20:appos	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	mídia	mídia	NOUN	_	Gender=Fem|Number=Sing	22	nmod	22:nmod:de	_
+25	estatal	estatal	ADJ	_	Number=Sing	24	amod	24:amod	_
+26	norte-coreana	norte-coreana	ADJ	_	Gender=Fem|Number=Sing	24	amod	24:amod	SpaceAfter=No
+27	:	:	PUNCT	_	_	29	punct	29:punct	_
+28	"	"	PUNCT	_	_	29	punct	29:punct	SpaceAfter=No
+29	Espero	esperar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	18	ccomp:speech	18:ccomp:speech	_
+30	que	que	SCONJ	_	_	36	mark	36:mark	_
+31	nossa	nosso	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	32	det	32:det	_
+32	parceria	parceria	NOUN	_	Gender=Fem|Number=Sing	36	nsubj	36:nsubj	_
+33	contra	contra	ADP	_	_	35	case	35:case	_
+34	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	35:det	_
+35	imperialismo	imperialismo	NOUN	_	Gender=Masc|Number=Sing	32	nmod	32:nmod:contra	_
+36	cresça	crescer	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	ccomp	29:ccomp	_
+37	firmemente	firmemente	ADV	_	_	36	advmod	36:advmod	SpaceAfter=No
+38	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0017
+# text = Conte conosco disse Kim Jon-un.
+1	Conte	contar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	4	ccomp:speech	4:ccomp:speech	_
+2-3	conosco	_	_	_	_	_	_	_	_
+2	com	com	ADP	_	_	3	case	3:case	_
+3	nós	nós	PRON	_	Case=Nom|Number=Plur|Person=1|PronType=Prs	1	obl	1:obl:com	_
+4	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	Kim	Kim	PROPN	_	_	4	nsubj	4:nsubj	_
+6	Jon-un	Jon-un	PROPN	_	_	5	flat:name	5:flat:name	SpaceAfter=No
+7	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0019
+# text = Diário do Brasil com informações do jornal Washington Post.
+1	Diário	Diário	PROPN	_	_	0	root	0:root	_
+2-3	do	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	Brasil	Brasil	PROPN	_	_	1	flat:name	1:flat:name	_
+5	com	com	ADP	_	_	6	case	6:case	_
+6	informações	informação	NOUN	_	Gender=Fem|Number=Plur	1	nmod	1:nmod:com	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	jornal	jornal	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de	_
+10	Washington	Washington	PROPN	_	_	9	nmod	9:nmod	_
+11	Post	Post	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+12	.	.	PUNCT	_	_	1	punct	1:punct	_

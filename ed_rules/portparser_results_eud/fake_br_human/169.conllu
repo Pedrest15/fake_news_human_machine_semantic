@@ -1,0 +1,808 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Vou processar o meu pai, afirma filho de Tiririca.
+1	Vou	ir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	aux	2:aux	_
+2	processar	processar	VERB	_	VerbForm=Inf	7	ccomp:speech	7:ccomp:speech	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+4	meu	meu	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	5	det	5:det	_
+5	pai	pai	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	SpaceAfter=No
+6	,	,	PUNCT	_	_	2	punct	2:punct	_
+7	afirma	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	filho	filho	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	Tiririca	Tiririca	PROPN	_	_	8	nmod	8:nmod:de	SpaceAfter=No
+11	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0003
+# text = Filho de Tiririca declara que vai processar o pai.
+1	Filho	filho	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	Tiririca	Tiririca	PROPN	_	_	1	nmod	1:nmod:de	_
+4	declara	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	que	que	SCONJ	_	_	7	mark	7:mark	_
+6	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	7:aux	_
+7	processar	processar	VERB	_	VerbForm=Inf	4	ccomp	4:ccomp	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	pai	pai	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	SpaceAfter=No
+10	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0005
+# text = Declaração polêmica do humorista Tirulipa está causando alvoroço nas redes sociais.
+1	Declaração	declaração	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	8:nsubj	_
+2	polêmica	polêmico	ADJ	_	Gender=Fem|Number=Sing	1	amod	1:amod	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	humorista	humorista	NOUN	_	Number=Sing	1	nmod	1:nmod:de	_
+6	Tirulipa	Tirulipa	PROPN	_	_	5	nmod	5:nmod	_
+7	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	8:aux	_
+8	causando	causar	VERB	_	VerbForm=Ger	0	root	0:root	_
+9	alvoroço	alvoroço	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	_
+10-11	nas	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	12:det	_
+12	redes	rede	NOUN	_	Gender=Fem|Number=Plur	8	obl	8:obl:em	_
+13	sociais	social	ADJ	_	Number=Plur	12	amod	12:amod	SpaceAfter=No
+14	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0007
+# text = A razão do processo é inusitada e deixa um recado para os políticos brasileiros.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	razão	razão	NOUN	_	Number=Sing	7	nsubj	7:nsubj|9:nsubj	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	processo	processo	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	_
+6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+7	inusitada	inusitado	ADJ	_	Gender=Fem|Number=Sing	0	root	0:root	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	deixa	deixar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	7:conj:e	_
+10	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	recado	recado	NOUN	_	Gender=Masc|Number=Sing	9	obj	9:obj	_
+12	para	para	ADP	_	_	14	case	14:case	_
+13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	14:det	_
+14	políticos	político	NOUN	_	Gender=Masc|Number=Plur	9	obl	9:obl:para	_
+15	brasileiros	brasileiro	ADJ	_	Gender=Masc|Number=Plur	14	amod	14:amod	SpaceAfter=No
+16	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0009
+# text = Everson de Brito Silva, hoje com 33 anos, é filho do primeiro casamento do palhaço Tiririca.
+1	Everson	Everson	PROPN	_	_	12	nsubj	12:nsubj	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	Brito	Brito	PROPN	_	_	1	flat:name	1:flat:name	_
+4	Silva	Silva	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	9	punct	9:punct	_
+6	hoje	hoje	ADV	_	_	9	advmod	9:advmod	_
+7	com	com	ADP	_	_	9	case	9:case	_
+8	33	33	NUM	_	NumType=Card	9	nummod	9:nummod	_
+9	anos	ano	NOUN	_	Gender=Masc|Number=Plur	1	nmod	1:nmod:com	SpaceAfter=No
+10	,	,	PUNCT	_	_	9	punct	9:punct	_
+11	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	12:cop	_
+12	filho	filho	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+13-14	do	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	16	case	16:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+15	primeiro	primeiro	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	16	amod	16:amod	_
+16	casamento	casamento	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:de	_
+17-18	do	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	palhaço	palhaço	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod:de	_
+20	Tiririca	Tiririca	PROPN	_	_	19	nmod	19:nmod	SpaceAfter=No
+21	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0011
+# text = A convivência na infância com o pai em casa foi até os três anos de idade.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	convivência	convivência	NOUN	_	Gender=Fem|Number=Sing	15	nsubj	15:nsubj	_
+3-4	na	_	_	_	_	_	_	_	_
+3	em	em	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	infância	infância	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:em	_
+6	com	com	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	pai	pai	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:com	_
+9	em	em	ADP	_	_	10	case	10:case	_
+10	casa	casa	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:em	_
+11	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	cop	15:cop	_
+12	até	até	ADP	_	_	15	case	15:case	_
+13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	15:det	_
+14	três	três	NUM	_	NumType=Card	15	nummod	15:nummod	_
+15	anos	ano	NOUN	_	Gender=Masc|Number=Plur	0	root	0:root	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	idade	idade	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:de	SpaceAfter=No
+18	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0013
+# text = Logo seu pai se separou e ele foi criado quase que exclusivamente pela mãe.
+1	Logo	logo	ADV	_	_	5	advmod	5:advmod	_
+2	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	3	det	3:det	_
+3	pai	pai	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+4	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	5	expl	5:expl	_
+5	separou	separar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	e	e	CCONJ	_	_	9	cc	9:cc	_
+7	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nsubj:pass	9:nsubj:pass	_
+8	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	aux:pass	9:aux:pass	_
+9	criado	criar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	5	conj	5:conj:e	_
+10	quase	quase	ADV	_	ExtPos=ADV	12	advmod	12:advmod	_
+11	que	que	PRON	_	PronType=Dem	10	fixed	10:fixed	_
+12	exclusivamente	exclusivamente	ADV	_	_	9	advmod	9:advmod	_
+13-14	pela	_	_	_	_	_	_	_	_
+13	por	por	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	mãe	mãe	NOUN	_	Gender=Fem|Number=Sing	9	obl:agent	9:obl:agent	SpaceAfter=No
+16	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0015
+# text = Começou sua trajetória artística aos 10 anos imitando o pai nos circos atuando como Tiririca Jr.
+1	Começou	começar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	3	det	3:det	_
+3	trajetória	trajetória	NOUN	_	Gender=Fem|Number=Sing	1	obj	1:obj	_
+4	artística	artístico	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+5-6	aos	_	_	_	_	_	_	_	_
+5	a	a	ADP	_	_	8	case	8:case	_
+6	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	8:det	_
+7	10	10	NUM	_	NumType=Card	8	nummod	8:nummod	_
+8	anos	ano	NOUN	_	Gender=Masc|Number=Plur	1	obl	1:obl:a	_
+9	imitando	imitar	VERB	_	VerbForm=Ger	1	advcl	1:advcl	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	pai	pai	NOUN	_	Gender=Masc|Number=Sing	9	obj	9:obj	_
+12-13	nos	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	14:det	_
+14	circos	circo	NOUN	_	Gender=Masc|Number=Plur	9	obl	9:obl:em	_
+15	atuando	atuar	VERB	_	VerbForm=Ger	9	advcl	9:advcl	_
+16	como	como	ADP	_	_	17	case	17:case	_
+17	Tiririca	Tiririca	PROPN	_	_	15	obl	15:obl:como	_
+18	Jr.	Jr.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0017
+# text = Persistente e dedicado foi criando seu espaço e passou a ser reconhecido como Tirulipa.
+1	Persistente	persistente	ADJ	_	Number=Sing	5	advcl	5:advcl|9:advcl	_
+2	e	e	CCONJ	_	_	3	cc	3:cc	_
+3	dedicado	dedicado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	1	conj	1:conj:e|5:advcl|9:advcl	_
+4	foi	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	aux	5:aux	_
+5	criando	criar	VERB	_	VerbForm=Ger	0	root	0:root	_
+6	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	7	det	7:det	_
+7	espaço	espaço	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	passou	passar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	conj	5:conj:e	_
+10	a	a	ADP	_	_	12	mark	12:mark	_
+11	ser	ser	AUX	_	VerbForm=Inf	12	aux:pass	12:aux:pass	_
+12	reconhecido	reconhecer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	9	xcomp	9:xcomp	_
+13	como	como	ADP	_	_	14	case	14:case	_
+14	Tirulipa	Tirulipa	PROPN	_	_	12	obl	12:obl:como	SpaceAfter=No
+15	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0019
+# text = Hoje seu sucesso é maior que o do pai.
+1	Hoje	hoje	ADV	_	_	5	advmod	5:advmod	_
+2	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	3	det	3:det	_
+3	sucesso	sucesso	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+5	maior	maior	ADJ	_	Number=Sing	0	root	0:root	_
+6	que	que	SCONJ	_	_	7	mark	7:mark	_
+7	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	advcl	5:advcl:que	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	pai	pai	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	SpaceAfter=No
+11	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0021
+# text = As redes sociais dão conta do enorme crescimento artístico e profissional do filho de Tiririca.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	redes	rede	NOUN	_	Gender=Fem|Number=Plur	4	nsubj	4:nsubj	_
+3	sociais	social	ADJ	_	Number=Plur	2	amod	2:amod	_
+4	dão	dar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	conta	conta	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+6-7	do	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	9	case	9:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+8	enorme	enorme	ADJ	_	Number=Sing	9	amod	9:amod	_
+9	crescimento	crescimento	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:de	_
+10	artístico	artístico	ADJ	_	Gender=Masc|Number=Sing	9	amod	9:amod	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	profissional	profissional	ADJ	_	Number=Sing	10	conj	9:amod|10:conj:e	_
+13-14	do	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	filho	filho	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:de	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	Tiririca	Tiririca	PROPN	_	_	15	nmod	15:nmod:de	SpaceAfter=No
+18	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0023
+# text = No Facebook sua página conta com 4,3 milhões de fãs, a de Tiririca apenas 1,3 milhão.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	Facebook	Facebook	PROPN	_	_	6	obl	6:obl:em	_
+4	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	det	5:det	_
+5	página	página	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj	_
+6	conta	contar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	com	com	ADP	_	_	9	case	9:case	_
+8	4,3	4,3	NUM	_	NumType=Card	9	nummod	9:nummod	_
+9	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	6	obl	6:obl:com	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	fãs	fã	NOUN	_	Number=Plur	9	nmod	9:nmod:de	SpaceAfter=No
+12	,	,	PUNCT	_	_	18	punct	18:punct	_
+13	a	o	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Dem	18	nsubj	18:nsubj	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	Tiririca	Tiririca	PROPN	_	_	13	nmod	13:nmod:de	_
+16	apenas	apenas	ADV	_	_	18	advmod	18:advmod	_
+17	1,3	1,3	NUM	_	NumType=Card	18	nummod	18:nummod	_
+18	milhão	milhão	NOUN	_	Gender=Masc|Number=Sing	6	conj	6:conj	SpaceAfter=No
+19	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0025
+# text = No canal oficial do YouTube o vídeo mais visto de Tirulipa alcançou mais de 8 milhões de visualizações.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	canal	canal	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:em	_
+4	oficial	oficial	ADJ	_	Number=Sing	3	amod	3:amod	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	YouTube	YouTube	PROPN	_	_	3	nmod	3:nmod:de	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	14:nsubj	_
+10	mais	mais	ADV	_	_	11	advmod	11:advmod	_
+11	visto	ver	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	9	acl	9:acl	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	Tirulipa	Tirulipa	PROPN	_	_	11	obl	11:obl:de	_
+14	alcançou	alcançar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+15	mais	mais	ADV	_	ExtPos=ADV	17	advmod	17:advmod	_
+16	de	de	ADP	_	_	15	fixed	15:fixed	_
+17	8	8	NUM	_	NumType=Card	18	nummod	18:nummod	_
+18	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	14	obj	14:obj	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	visualizações	visualização	NOUN	_	Gender=Fem|Number=Plur	18	nmod	18:nmod:de	SpaceAfter=No
+21	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0027
+# text = O vídeo mais visto de Tiririca no YouTube é de 1997 na Praça é Nossa onde ele alcançou 4 milhões de visualizações.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	12:nsubj	_
+3	mais	mais	ADV	_	_	4	advmod	4:advmod	_
+4	visto	ver	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	2:acl	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	Tiririca	Tiririca	PROPN	_	_	4	obl	4:obl:de	_
+7-8	no	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	YouTube	YouTube	PROPN	_	_	4	obl	4:obl:em	_
+10	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	12:cop	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	1997	1997	NUM	_	NumType=Card	0	root	0:root	_
+13-14	na	_	_	_	_	_	_	_	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	Praça	Praça	PROPN	_	_	12	nmod	12:nmod:em|20:obl	_
+16	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	17:cop	_
+17	Nossa	Nossa	PROPN	_	_	15	flat:name	15:flat:name	_
+18	onde	onde	ADV	_	_	20	advmod	15:ref	_
+19	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	20	nsubj	20:nsubj	_
+20	alcançou	alcançar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	acl:relcl	15:acl:relcl	_
+21	4	4	NUM	_	NumType=Card	22	nummod	22:nummod	_
+22	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	20	obj	20:obj	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	visualizações	visualização	NOUN	_	Gender=Fem|Number=Plur	22	nmod	22:nmod:de	SpaceAfter=No
+25	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0029
+# text = O sucesso de Tirulipa ter superado o do pai em muito se deve ao fato de Tiririca ter entrado para a política.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	sucesso	sucesso	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	14:nsubj	_
+3	de	de	ADP	_	_	6	mark	6:mark	_
+4	Tirulipa	Tirulipa	PROPN	_	_	6	nsubj	6:nsubj	_
+5	ter	ter	AUX	_	Number=Sing|Person=3|VerbForm=Inf	6	aux	6:aux	_
+6	superado	superar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	2	acl	2:acl:de	_
+7	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	obj	6:obj	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	pai	pai	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	_
+11	em	em	ADP	_	_	12	case	12:case	_
+12	muito	muito	ADV	_	_	14	advmod	14:advmod	_
+13	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	14	expl	14:expl	_
+14	deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+15-16	ao	_	_	_	_	_	_	_	_
+15	a	a	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	fato	fato	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:a	_
+18	de	de	ADP	_	_	21	mark	21:mark	_
+19	Tiririca	Tiririca	PROPN	_	_	21	nsubj	21:nsubj	_
+20	ter	ter	AUX	_	VerbForm=Inf	21	aux	21:aux	_
+21	entrado	entrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	17	acl	17:acl:de	_
+22	para	para	ADP	_	_	24	case	24:case	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	política	política	NOUN	_	Gender=Fem|Number=Sing	21	obl	21:obl:para	SpaceAfter=No
+25	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0031
+# text = A entrada para a Câmara dos Deputados fez com que ele se afastasse dos palcos e da TV.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	entrada	entrada	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	9:nsubj	_
+3	para	para	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	Câmara	Câmara	PROPN	_	_	2	nmod	2:nmod:para	_
+6-7	dos	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	8:det	_
+8	Deputados	Deputados	PROPN	_	_	5	flat:name	5:flat:name	_
+9	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	com	com	ADP	_	ExtPos=SCONJ	14	mark	14:mark	_
+11	que	que	SCONJ	_	_	10	fixed	10:fixed	_
+12	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	nsubj	14:nsubj	_
+13	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	14	expl	14:expl	_
+14	afastasse	afastar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	ccomp	9:ccomp	_
+15-16	dos	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	17:det	_
+17	palcos	palco	NOUN	_	Gender=Masc|Number=Plur	14	obl	14:obl:de	_
+18	e	e	CCONJ	_	_	21	cc	21:cc	_
+19-20	da	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	TV	televisão	NOUN	_	Abbr=Yes|Gender=Fem|Number=Sing	17	conj	14:obl:de|17:conj:e	SpaceAfter=No
+22	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0033
+# text = Em recente entrevista para um programa de rádio Tirulipa revelou seu desejo de processar o pai por uma razão inusitada, segundo ele a causa do processo será Empobrecimento Ilícito.
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	recente	recente	ADJ	_	Number=Sing	3	amod	3:amod	_
+3	entrevista	entrevista	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:em	_
+4	para	para	ADP	_	_	6	case	6:case	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	programa	programa	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:para	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	rádio	rádio	NOUN	_	Number=Sing	6	nmod	6:nmod:de	_
+9	Tirulipa	Tirulipa	PROPN	_	_	6	nmod	6:nmod	_
+10	revelou	revelar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+11	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	12	det	12:det	_
+12	desejo	desejo	NOUN	_	Gender=Masc|Number=Sing	10	obj	10:obj	_
+13	de	de	ADP	_	_	14	mark	14:mark	_
+14	processar	processar	VERB	_	VerbForm=Inf	12	acl	12:acl:de	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	pai	pai	NOUN	_	Gender=Masc|Number=Sing	14	obj	14:obj	_
+17	por	por	ADP	_	_	19	case	19:case	_
+18	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	razão	razão	NOUN	_	Number=Sing	14	obl	14:obl:por	_
+20	inusitada	inusitado	ADJ	_	Gender=Fem|Number=Sing	19	amod	19:amod	SpaceAfter=No
+21	,	,	PUNCT	_	_	30	punct	30:punct	_
+22	segundo	segundo	ADP	_	_	23	case	23:case	_
+23	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	30	nmod	30:nmod:segundo	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	causa	causa	NOUN	_	Gender=Fem|Number=Sing	30	nsubj	30:nsubj	_
+26-27	do	_	_	_	_	_	_	_	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	processo	processo	NOUN	_	Gender=Masc|Number=Sing	25	nmod	25:nmod:de	_
+29	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	30	cop	30:cop	_
+30	Empobrecimento	Empobrecimento	PROPN	_	_	10	parataxis	10:parataxis	_
+31	Ilícito	Ilícito	PROPN	_	_	30	flat:name	30:flat:name	SpaceAfter=No
+32	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0035
+# text = Tirulipa revelou que os deputados e senadores trabalham de terça a quinta, não vão a Brasília as segundas nem as sextas.
+1	Tirulipa	Tirulipa	PROPN	_	_	2	nsubj	2:nsubj	_
+2	revelou	revelar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	8	mark	8:mark|15:mark	_
+4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	5:det	_
+5	deputados	deputado	NOUN	_	Gender=Masc|Number=Plur	8	nsubj	8:nsubj|15:nsubj	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	senadores	senador	NOUN	_	Gender=Masc|Number=Plur	5	conj	5:conj:e|8:nsubj|15:nsubj	_
+8	trabalham	trabalhar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	2:ccomp	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	terça	terça-feira	NOUN	_	Abbr=Yes|Gender=Fem|Number=Sing	8	obl	8:obl:de	_
+11	a	a	ADP	_	_	12	case	12:case	_
+12	quinta	quinto	NOUN	_	Abbr=Yes|Gender=Fem|Number=Sing	10	nmod	10:nmod:a	SpaceAfter=No
+13	,	,	PUNCT	_	_	15	punct	15:punct	_
+14	não	não	ADV	_	_	15	advmod	15:advmod	_
+15	vão	ir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	conj	2:ccomp|8:conj	_
+16	a	a	ADP	_	_	17	case	17:case	_
+17	Brasília	Brasília	PROPN	_	_	15	obl	15:obl:a	_
+18	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	19:det	_
+19	segundas	segundo	NOUN	_	Gender=Fem|Number=Plur	15	obl	15:obl	_
+20	nem	nem	CCONJ	_	_	22	cc	22:cc	_
+21	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	22:det	_
+22	sextas	sexto	NOUN	_	Gender=Fem|Number=Plur	19	conj	15:obl|19:conj:nem	SpaceAfter=No
+23	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0037
+# text = No entanto, seu pai comparece de segunda a sexta e domingo após o almoço já embarca pra Brasília pra na segunda pela manhã já possa dar continuidade aos trabalhos legislativos.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	ExtPos=CCONJ	7	cc	7:cc	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	1:fixed	_
+3	entanto	entanto	NOUN	_	Gender=Masc|Number=Sing	1	fixed	1:fixed	SpaceAfter=No
+4	,	,	PUNCT	_	_	1	punct	1:punct	_
+5	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	6	det	6:det	_
+6	pai	pai	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+7	comparece	comparecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	segunda	segundo	NOUN	_	Abbr=Yes|Gender=Fem|Number=Sing	7	obl	7:obl:de	_
+10	a	a	ADP	_	_	11	case	11:case	_
+11	sexta	sexto	NOUN	_	Abbr=Yes|Gender=Fem|Number=Sing	9	nmod	9:nmod:a	_
+12	e	e	CCONJ	_	_	18	cc	18:cc	_
+13	domingo	domingo	NOUN	_	Gender=Masc|Number=Sing	18	nsubj	18:nsubj	_
+14	após	após	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	almoço	almoço	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod:após	_
+17	já	já	ADV	_	_	18	advmod	18:advmod	_
+18	embarca	embarcar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	7:conj:e	_
+19	pra	para	ADP	_	_	20	case	20:case	_
+20	Brasília	Brasília	PROPN	_	_	18	obl	18:obl:para	_
+21	pra	para	ADP	_	_	29	mark	29:mark	_
+22-23	na	_	_	_	_	_	_	_	_
+22	em	em	ADP	_	_	24	case	24:case	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	segunda	segundo	NOUN	_	Abbr=Yes|Gender=Fem|Number=Sing	29	obl	29:obl:em	_
+25-26	pela	_	_	_	_	_	_	_	_
+25	por	por	ADP	_	_	27	case	27:case	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	manhã	manhã	NOUN	_	Gender=Fem|Number=Sing	24	nmod	24:nmod:por	_
+28	já	já	ADV	_	_	29	advmod	29:advmod	_
+29	possa	poder	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	advcl	18:advcl:para	_
+30	dar	dar	VERB	_	VerbForm=Inf	29	xcomp	29:xcomp	_
+31	continuidade	continuidade	NOUN	_	Gender=Fem|Number=Sing	30	obj	30:obj	_
+32-33	aos	_	_	_	_	_	_	_	_
+32	a	a	ADP	_	_	34	case	34:case	_
+33	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	34	det	34:det	_
+34	trabalhos	trabalho	NOUN	_	Gender=Masc|Number=Plur	31	nmod	31:nmod:a	_
+35	legislativos	legislativo	ADJ	_	Gender=Masc|Number=Plur	34	amod	34:amod	SpaceAfter=No
+36	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0039
+# text = Com isso sua carreira na TV e nos palcos ficou em segundo plano.
+1	Com	com	ADP	_	_	2	case	2:case	_
+2	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	12	obl	12:obl:com	_
+3	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	4	det	4:det	_
+4	carreira	carreira	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	12:nsubj	_
+5-6	na	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	TV	televisão	NOUN	_	Abbr=Yes|Gender=Fem|Number=Sing	4	nmod	4:nmod:em	_
+8	e	e	CCONJ	_	_	11	cc	11:cc	_
+9-10	nos	_	_	_	_	_	_	_	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	11:det	_
+11	palcos	palco	NOUN	_	Gender=Masc|Number=Plur	7	conj	4:nmod:em|7:conj:e	_
+12	ficou	ficar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	segundo	segundo	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	15	amod	15:amod	_
+15	plano	plano	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:em	SpaceAfter=No
+16	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0041
+# text = Em tom de humor Tirulipa revela: Vou ter que processar meu pai por empobrecimento ilícito.
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	tom	tom	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:em	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	humor	humor	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	_
+5	Tirulipa	Tirulipa	PROPN	_	_	6	nsubj	6:nsubj	_
+6	revela	revelar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+7	:	:	PUNCT	_	_	9	punct	9:punct	_
+8	Vou	ir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	9	aux	9:aux	_
+9	ter	ter	VERB	_	VerbForm=Inf	6	ccomp:speech	6:ccomp:speech	_
+10	que	que	ADP	_	_	11	mark	11:mark	_
+11	processar	processar	VERB	_	VerbForm=Inf	9	xcomp	9:xcomp	_
+12	meu	meu	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	13	det	13:det	_
+13	pai	pai	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj	_
+14	por	por	ADP	_	_	15	case	15:case	_
+15	empobrecimento	empobrecimento	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:por	_
+16	ilícito	ilícito	ADJ	_	Gender=Masc|Number=Sing	15	amod	15:amod	SpaceAfter=No
+17	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0043
+# text = Ele é o único político que eu conheço que ficou mais pobre depois que entrou pra política.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	5:nsubj	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+4	único	único	ADJ	_	Gender=Masc|Number=Sing	5	amod	5:amod	_
+5	político	político	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root|8:obj|10:nsubj|12:nsubj	_
+6	que	que	PRON	_	PronType=Rel	8	obj	5:ref	_
+7	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	8	nsubj	8:nsubj	_
+8	conheço	conhecer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_
+9	que	que	PRON	_	PronType=Rel	10	nsubj	5:ref	_
+10	ficou	ficar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_
+11	mais	mais	ADV	_	_	12	advmod	12:advmod	_
+12	pobre	pobre	ADJ	_	Number=Sing	10	xcomp	10:xcomp	_
+13	depois	depois	ADV	_	ExtPos=SCONJ	15	mark	15:mark	_
+14	que	que	SCONJ	_	_	13	fixed	13:fixed	_
+15	entrou	entrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	advcl	10:advcl:depois_que	_
+16-17	pra	_	_	_	_	_	_	_	_
+16	para	para	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	política	política	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl:para	SpaceAfter=No
+19	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0045
+# text = Mas ao menos meu pai não tá na lista de Odebrecht, Friboi e nem usa tornozeleira eletrônica.
+1	Mas	mas	CCONJ	_	_	11	cc	11:cc	_
+2-3	ao	_	_	_	_	_	_	_	_
+2	a	a	ADP	_	ExtPos=ADV	11	advmod	11:advmod	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	fixed	2:fixed	_
+4	menos	menos	NOUN	_	Gender=Masc|Number=Sing	2	fixed	2:fixed	_
+5	meu	meu	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	6	det	6:det	_
+6	pai	pai	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	11:nsubj|18:nsubj	_
+7	não	não	ADV	_	_	11	advmod	11:advmod	_
+8	tá	estar	AUX	_	Abbr=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	11:cop	_
+9-10	na	_	_	_	_	_	_	_	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	lista	lista	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+12	de	de	ADP	_	_	13	case	13:case|15:case	_
+13	Odebrecht	Odebrecht	PROPN	_	_	11	nmod	11:nmod:de	SpaceAfter=No
+14	,	,	PUNCT	_	_	15	punct	15:punct	_
+15	Friboi	Friboi	PROPN	_	_	13	conj	11:nmod:de|13:conj	_
+16	e	e	CCONJ	_	_	18	cc	18:cc	_
+17	nem	nem	ADV	_	_	18	advmod	18:advmod	_
+18	usa	usar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	conj	11:conj:e	_
+19	tornozeleira	tornozeleira	NOUN	_	Gender=Fem|Number=Sing	18	obj	18:obj	_
+20	eletrônica	eletrônico	ADJ	_	Gender=Fem|Number=Sing	19	amod	19:amod	SpaceAfter=No
+21	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0047
+# text = Tenho um puta orgulho do homem que ele é.
+1	Tenho	ter	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+3	puta	puto	ADJ	_	Gender=Fem|Number=Sing	4	amod	4:amod	_
+4	orgulho	orgulho	NOUN	_	Gender=Masc|Number=Sing	1	obj	1:obj	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	homem	homem	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:de|10:obj	_
+8	que	que	PRON	_	PronType=Rel	10	obj	7:ref	_
+9	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	nsubj	10:nsubj	_
+10	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	7:acl:relcl	SpaceAfter=No
+11	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0049
+# text = Emocionado Tirulipa disse: Meu pai hoje poderia ser um dos humoristas mais famosos e bem pagos do Brasil.
+1	Emocionado	emocionado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	3	advcl	3:advcl	_
+2	Tirulipa	Tirulipa	PROPN	_	_	3	nsubj	3:nsubj	_
+3	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+4	:	:	PUNCT	_	_	8	punct	8:punct	_
+5	Meu	meu	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	6	det	6:det	_
+6	pai	pai	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	8:nsubj|10:nsubj	_
+7	hoje	hoje	ADV	_	_	8	advmod	8:advmod	_
+8	poderia	poder	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	3	ccomp:speech	3:ccomp:speech	_
+9	ser	ser	AUX	_	VerbForm=Inf	10	cop	10:cop	_
+10	um	um	NUM	_	Gender=Masc|NumType=Card	8	xcomp	8:xcomp	_
+11-12	dos	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	13:det	_
+13	humoristas	humorista	NOUN	_	Number=Plur	10	nmod	10:nmod:de	_
+14	mais	mais	ADV	_	_	15	advmod	15:advmod	_
+15	famosos	famoso	ADJ	_	Gender=Masc|Number=Plur	13	amod	13:amod	_
+16	e	e	CCONJ	_	_	18	cc	18:cc	_
+17	bem	bem	ADV	_	_	18	advmod	18:advmod	_
+18	pagos	pagar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	15	conj	13:acl|15:conj:e	_
+19-20	do	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	Brasil	Brasil	PROPN	_	_	13	nmod	13:nmod:de	SpaceAfter=No
+22	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0051
+# text = Mas ele em um momento da vida parou pra pensar em todas as outras pessoas que não tiveram a mesma sorte que ele.
+1	Mas	mas	CCONJ	_	_	9	cc	9:cc	_
+2	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nsubj	9:nsubj	_
+3	em	em	ADP	_	_	5	case	5:case	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	momento	momento	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:em	_
+6-7	da	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	vida	vida	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	_
+9	parou	parar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	pra	para	ADP	_	_	11	mark	11:mark	_
+11	pensar	pensar	VERB	_	VerbForm=Inf	9	advcl	9:advcl:para	_
+12	em	em	ADP	_	_	16	case	16:case	_
+13	todas	todo	DET	_	Gender=Fem|Number=Plur|PronType=Ind	16	det	16:det	_
+14	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	16:det	_
+15	outras	outro	DET	_	Gender=Fem|Number=Plur|PronType=Ind	16	det	16:det	_
+16	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	11	obl	11:obl:em|19:nsubj	_
+17	que	que	PRON	_	PronType=Rel	19	nsubj	16:ref	_
+18	não	não	ADV	_	_	19	advmod	19:advmod	_
+19	tiveram	ter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	16	acl:relcl	16:acl:relcl	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+21	mesma	mesmo	DET	_	Gender=Fem|Number=Sing|PronType=Dem	22	det	22:det	_
+22	sorte	sorte	NOUN	_	Gender=Fem|Number=Sing	19	obj	19:obj|24:obj	_
+23	que	que	PRON	_	PronType=Rel	24	obj	22:ref	_
+24	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	22	acl:relcl	22:acl:relcl	SpaceAfter=No
+25	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0053
+# text = Fez isso com dignidade num tempo em que malas de dinheiro corrompem tantos por lá.
+1	Fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	obj	1:obj	_
+3	com	com	ADP	_	_	4	case	4:case	_
+4	dignidade	dignidade	NOUN	_	Gender=Fem|Number=Sing	1	obl	1:obl:com	_
+5-6	num	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	1	obl	1:obl:em|13:obl:em	_
+8	em	em	ADP	_	_	9	case	9:case	_
+9	que	que	PRON	_	PronType=Rel	13	obl	7:ref	_
+10	malas	mala	NOUN	_	Gender=Fem|Number=Plur	13	nsubj	13:nsubj	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:de	_
+13	corrompem	corromper	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	7:acl:relcl	_
+14	tantos	tanto	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	13	obj	13:obj	_
+15	por	por	ADP	_	_	16	case	16:case	_
+16	lá	lá	ADV	_	_	13	advmod	13:advmod	SpaceAfter=No
+17	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0055
+# text = Ele não pegou um real que não é dele e está ajudando muita gente.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	3:nsubj|13:nsubj	_
+2	não	não	ADV	_	_	3	advmod	3:advmod	_
+3	pegou	pegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	real	real	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj|10:nsubj	_
+6	que	que	PRON	_	PronType=Rel	10	nsubj	5:ref	_
+7	não	não	ADV	_	_	10	advmod	10:advmod	_
+8	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_
+9-10	dele	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	acl:relcl	5:acl:relcl	_
+11	e	e	CCONJ	_	_	13	cc	13:cc	_
+12	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux	13:aux	_
+13	ajudando	ajudar	VERB	_	VerbForm=Ger	3	conj	3:conj:e	_
+14	muita	muito	ADJ	_	Gender=Fem|Number=Sing	15	amod	15:amod	_
+15	gente	gente	NOUN	_	Gender=Fem|Number=Sing	13	obj	13:obj	SpaceAfter=No
+16	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0057
+# text = A FOLHA decidiu fazer um comparativo para avaliar o salário do deputado federal e concluiu que um deputado federal hoje recebe bruto R$ 33.763,00.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	FOLHA	FOLHA	PROPN	_	_	3	nsubj	3:nsubj|4:nsubj|16:nsubj	_
+3	decidiu	decidir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	fazer	fazer	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	comparativo	comparativo	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7	para	para	ADP	_	_	8	mark	8:mark	_
+8	avaliar	avaliar	VERB	_	VerbForm=Inf	4	advcl	4:advcl:para	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	salário	salário	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:de	_
+14	federal	federal	ADJ	_	Number=Sing	13	amod	13:amod	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	concluiu	concluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	3:conj:e	_
+17	que	que	SCONJ	_	_	22	mark	22:mark	_
+18	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	22	nsubj	22:nsubj	_
+20	federal	federal	ADJ	_	Number=Sing	19	amod	19:amod	_
+21	hoje	hoje	ADV	_	_	22	advmod	22:advmod	_
+22	recebe	receber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	ccomp	16:ccomp	_
+23	bruto	bruto	ADJ	_	Gender=Masc|Number=Sing	22	obj	22:obj	_
+24	R$	R$	SYM	_	_	22	obj	22:obj	_
+25	33.763,00	33.763,00	NUM	_	NumType=Card	24	nummod	24:nummod	SpaceAfter=No
+26	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0059
+# text = Com os descontos Tiririca recebe ao final de um mês de trabalho R$ 19.850,30.
+1	Com	com	ADP	_	_	3	case	3:case	_
+2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	3:det	_
+3	descontos	desconto	NOUN	_	Gender=Masc|Number=Plur	5	obl	5:obl:com	_
+4	Tiririca	Tiririca	PROPN	_	_	3	nmod	3:nmod	_
+5	recebe	receber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6-7	ao	_	_	_	_	_	_	_	_
+6	a	a	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	final	final	NOUN	_	Number=Sing	5	obl	5:obl:a	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	um	um	NUM	_	Gender=Masc|NumType=Card	11	nummod	11:nummod	_
+11	mês	mês	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:de	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:de	_
+14	R$	R$	SYM	_	_	5	obj	5:obj	_
+15	19.850,30	19.850,30	NUM	_	NumType=Card	14	nummod	14:nummod	SpaceAfter=No
+16	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0061
+# text = Se comparado com a média dos salários da população é um ótimo salário, mas se comparado ao que ganham outros artistas do humor, ele se torna irrisório.
+1	Se	se	SCONJ	_	_	2	mark	2:mark	_
+2	comparado	comparar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	32	advcl	32:advcl:se	_
+3	com	com	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	média	média	NOUN	_	Gender=Fem|Number=Sing	2	obl	2:obl:com	_
+6-7	dos	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	8:det	_
+8	salários	salário	NOUN	_	Gender=Masc|Number=Plur	5	nmod	5:nmod:de	_
+9-10	da	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	população	população	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	_
+12	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	15:cop	_
+13	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+14	ótimo	ótimo	ADJ	_	Gender=Masc|Number=Sing	15	amod	15:amod	_
+15	salário	salário	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+16	,	,	PUNCT	_	_	19	punct	19:punct	_
+17	mas	mas	CCONJ	_	_	32	cc	32:cc	_
+18	se	se	SCONJ	_	_	19	mark	19:mark	_
+19	comparado	comparar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	32	advcl	32:advcl:se	_
+20-21	ao	_	_	_	_	_	_	_	_
+20	a	a	ADP	_	_	21	case	21:case	_
+21	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	19	obl	19:obl:a|23:obj	_
+22	que	que	PRON	_	PronType=Rel	23	obj	21:ref	_
+23	ganham	ganhar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	21	acl:relcl	21:acl:relcl	_
+24	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	25	det	25:det	_
+25	artistas	artista	NOUN	_	Number=Plur	23	nsubj	23:nsubj	_
+26-27	do	_	_	_	_	_	_	_	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	humor	humor	NOUN	_	Gender=Masc|Number=Sing	25	nmod	25:nmod:de	SpaceAfter=No
+29	,	,	PUNCT	_	_	19	punct	19:punct	_
+30	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	32	nsubj	32:nsubj|33:nsubj	_
+31	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	32	expl	32:expl	_
+32	torna	tornar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	dep	15:dep	_
+33	irrisório	irrisório	ADJ	_	Gender=Masc|Number=Sing	32	xcomp	32:xcomp	SpaceAfter=No
+34	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0063
+# text = Confira: CUSTO DO CACHÊ POR SHOW Fabio Porchat R$ 130 mil Paulo Gustavo R$ 120 mil Whinderson Nunes R$ 90 mil Lembre-se que este cachê é por show.
+1	Confira	conferir	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+2	:	:	PUNCT	_	_	3	punct	3:punct	_
+3	CUSTO	custo	NOUN	_	Gender=Masc|Number=Sing	1	obj	1:obj	_
+4-5	DO	_	_	_	_	_	_	_	_
+4	DE	de	ADP	_	_	6	case	6:case	_
+5	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	CACHÊ	CACHÊ	PROPN	_	_	3	nmod	3:nmod:de	_
+7	POR	por	ADP	_	_	8	case	8:case	_
+8	SHOW	SHOW	PROPN	_	_	3	nmod	3:nmod:por	_
+9	Fabio	Fabio	PROPN	_	_	3	nmod	3:nmod	_
+10	Porchat	Porchat	PROPN	_	_	14	flat:name	14:flat:name	_
+11	R$	R$	SYM	_	_	3	nmod	3:nmod	_
+12	130	130	NUM	_	NumType=Card	11	nummod	11:nummod	_
+13	mil	mil	NUM	_	NumType=Card	12	flat	12:flat	_
+14	Paulo	Paulo	PROPN	_	_	3	nmod	3:nmod	_
+15	Gustavo	Gustavo	PROPN	_	_	14	flat:name	14:flat:name	_
+16	R$	R$	SYM	_	_	14	nmod	14:nmod	_
+17	120	120	NUM	_	NumType=Card	16	nummod	16:nummod	_
+18	mil	mil	NUM	_	NumType=Card	17	flat	17:flat	_
+19	Whinderson	Whinderson	PROPN	_	_	14	nmod	14:nmod	_
+20	Nunes	Nunes	PROPN	_	_	19	flat:name	19:flat:name	_
+21	R$	R$	SYM	_	_	19	nmod	19:nmod	_
+22	90	90	NUM	_	NumType=Card	21	nummod	21:nummod	_
+23	mil	mil	NUM	_	NumType=Card	22	flat	22:flat	_
+24-25	Lembre-se	_	_	_	_	_	_	_	_
+24	Lembre	lembrar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	dep	1:dep	_
+25	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	24	expl:impers	24:expl:impers	_
+26	que	que	SCONJ	_	_	31	mark	31:mark	_
+27	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	28	det	28:det	_
+28	cachê	cachê	NOUN	_	Gender=Masc|Number=Sing	31	nsubj	31:nsubj	_
+29	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	cop	31:cop	_
+30	por	por	ADP	_	_	31	case	31:case	_
+31	show	show	NOUN	_	Gender=Masc|Number=Sing	24	ccomp	24:ccomp	SpaceAfter=No
+32	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0065
+# text = Não é por mês.
+1	Não	não	ADV	_	_	4	advmod	4:advmod	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+3	por	por	ADP	_	_	4	case	4:case	_
+4	mês	mês	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0067
+# text = Whinderson Nunes chega a fazer 12 shows em um único mês.
+1	Whinderson	Whinderson	PROPN	_	_	3	nsubj	3:nsubj|5:nsubj	_
+2	Nunes	Nunes	PROPN	_	_	1	flat:name	1:flat:name	_
+3	chega	chegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	a	a	ADP	_	_	5	mark	5:mark	_
+5	fazer	fazer	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+6	12	12	NUM	_	NumType=Card	7	nummod	7:nummod	_
+7	shows	show	NOUN	_	Gender=Masc|Number=Plur	5	obj	5:obj	_
+8	em	em	ADP	_	_	11	case	11:case	_
+9	um	um	NUM	_	Gender=Masc|NumType=Card	11	nummod	11:nummod	_
+10	único	único	ADJ	_	Gender=Masc|Number=Sing	11	amod	11:amod	_
+11	mês	mês	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:em	SpaceAfter=No
+12	.	.	PUNCT	_	_	3	punct	3:punct	_

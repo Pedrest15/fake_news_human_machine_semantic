@@ -1,0 +1,590 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = TSE prepara estrutura monumental para julgamento histórico da chapa Dilma-Temer.
+1	TSE	TSE	PROPN	_	_	2	nsubj	2:nsubj	_
+2	prepara	preparar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	estrutura	estrutura	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+4	monumental	monumental	ADJ	_	Number=Sing	3	amod	3:amod	_
+5	para	para	ADP	_	_	6	case	6:case	_
+6	julgamento	julgamento	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:para	_
+7	histórico	histórico	ADJ	_	Gender=Masc|Number=Sing	6	amod	6:amod	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	chapa	chapa	NOUN	_	Number=Sing	6	nmod	6:nmod:de	_
+11	Dilma-Temer	Dilma-Temer	PROPN	_	_	10	nmod	10:nmod	SpaceAfter=No
+12	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Tribunal inicia na terça (4) o caso que pode redefinir o cenário político brasileiro.
+1	Tribunal	Tribunal	PROPN	_	_	2	nsubj	2:nsubj	_
+2	inicia	iniciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3-4	na	_	_	_	_	_	_	_	_
+3	em	em	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	terça	terça-feira	NOUN	_	Abbr=Yes|Gender=Fem|Number=Sing	2	obl	2:obl:em	_
+6	(	(	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+7	4	4	NUM	_	NumType=Card	5	appos	5:appos	SpaceAfter=No
+8	)	)	PUNCT	_	_	7	punct	7:punct	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	caso	caso	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj|12:nsubj|13:nsubj	_
+11	que	que	PRON	_	PronType=Rel	12	nsubj	10:ref	_
+12	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	acl:relcl	10:acl:relcl	_
+13	redefinir	redefinir	VERB	_	VerbForm=Inf	12	xcomp	12:xcomp	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	cenário	cenário	NOUN	_	Gender=Masc|Number=Sing	13	obj	13:obj	_
+16	político	político	ADJ	_	Gender=Masc|Number=Sing	15	amod	15:amod	_
+17	brasileiro	brasileiro	ADJ	_	Gender=Masc|Number=Sing	15	amod	15:amod	SpaceAfter=No
+18	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = Segurança reforçada e UTI móvel são apenas o começo das surpresas!
+1	Segurança	segurança	NOUN	_	Number=Sing	9	nsubj	9:nsubj	_
+2	reforçada	reforçado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	1	amod	1:amod	_
+3	e	e	CCONJ	_	_	4	cc	4:cc	_
+4	UTI	UTI	PROPN	_	_	1	conj	1:conj:e|9:nsubj	_
+5	móvel	móvel	ADJ	_	Number=Sing	4	amod	4:amod	_
+6	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	cop	9:cop	_
+7	apenas	apenas	ADV	_	_	9	advmod	9:advmod	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	começo	começo	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+10-11	das	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	12:det	_
+12	surpresas	surpresa	NOUN	_	Gender=Fem|Number=Plur	9	nmod	9:nmod:de	SpaceAfter=No
+13	!	!	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0007
+# text = A partir desta terça-feira (4), o Tribunal Superior Eleitoral (TSE) estará no centro de uma verdadeira tempestade política, ao começar o julgamento que pode resultar na cassação da chapa vencedora das eleições presidenciais de 2014, encabeçada por Dilma Rousseff e Michel Temer.
+1	A	a	ADP	_	_	2	mark	2:mark	_
+2	partir	partir	VERB	_	VerbForm=Inf	20	advcl	20:advcl:a	_
+3-4	desta	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	5	det	5:det	_
+5	terça-feira	terça-feira	NOUN	_	Gender=Fem|Number=Sing	2	obl	2:obl:de	_
+6	(	(	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+7	4	4	NUM	_	NumType=Card	5	appos	5:appos	SpaceAfter=No
+8	)	)	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+9	,	,	PUNCT	_	_	2	punct	2:punct	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	Tribunal	Tribunal	PROPN	_	_	20	nsubj	20:nsubj	_
+12	Superior	Superior	PROPN	_	_	11	flat:name	11:flat:name	_
+13	Eleitoral	Eleitoral	PROPN	_	_	11	flat:name	11:flat:name	_
+14	(	(	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+15	TSE	TSE	PROPN	_	_	11	appos	11:appos	SpaceAfter=No
+16	)	)	PUNCT	_	_	15	punct	15:punct	_
+17	estará	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	20	cop	20:cop	_
+18-19	no	_	_	_	_	_	_	_	_
+18	em	em	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	centro	centro	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+21	de	de	ADP	_	_	24	case	24:case	_
+22	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+23	verdadeira	verdadeiro	ADJ	_	Gender=Fem|Number=Sing	24	amod	24:amod	_
+24	tempestade	tempestade	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:de	_
+25	política	político	ADJ	_	Gender=Fem|Number=Sing	24	amod	24:amod	SpaceAfter=No
+26	,	,	PUNCT	_	_	29	punct	29:punct	_
+27-28	ao	_	_	_	_	_	_	_	_
+27	a	a	ADP	_	ExtPos=SCONJ	29	mark	29:mark	_
+28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	fixed	27:fixed	_
+29	começar	começar	VERB	_	VerbForm=Inf	20	advcl	20:advcl:a_o	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	julgamento	julgamento	NOUN	_	Gender=Masc|Number=Sing	29	obj	29:obj|33:nsubj|34:nsubj	_
+32	que	que	PRON	_	PronType=Rel	33	nsubj	31:ref	_
+33	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	acl:relcl	31:acl:relcl	_
+34	resultar	resultar	VERB	_	VerbForm=Inf	33	xcomp	33:xcomp	_
+35-36	na	_	_	_	_	_	_	_	_
+35	em	em	ADP	_	_	37	case	37:case	_
+36	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	37:det	_
+37	cassação	cassação	NOUN	_	Gender=Fem|Number=Sing	34	obl	34:obl:em	_
+38-39	da	_	_	_	_	_	_	_	_
+38	de	de	ADP	_	_	40	case	40:case	_
+39	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	40:det	_
+40	chapa	chapa	NOUN	_	Number=Sing	37	nmod	37:nmod:de	_
+41	vencedora	vencedor	ADJ	_	Gender=Fem|Number=Sing	40	amod	40:amod	_
+42-43	das	_	_	_	_	_	_	_	_
+42	de	de	ADP	_	_	44	case	44:case	_
+43	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	44	det	44:det	_
+44	eleições	eleição	NOUN	_	Gender=Fem|Number=Plur	40	nmod	40:nmod:de	_
+45	presidenciais	presidencial	ADJ	_	Number=Plur	44	amod	44:amod	_
+46	de	de	ADP	_	_	47	case	47:case	_
+47	2014	2014	NUM	_	NumType=Card	44	nmod	44:nmod:de	SpaceAfter=No
+48	,	,	PUNCT	_	_	49	punct	49:punct	_
+49	encabeçada	encabeçar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	40	acl	40:acl	_
+50	por	por	ADP	_	_	51	case	51:case|54:case	_
+51	Dilma	Dilma	PROPN	_	_	49	obl:agent	49:obl:agent	_
+52	Rousseff	Rousseff	PROPN	_	_	51	flat:name	51:flat:name	_
+53	e	e	CCONJ	_	_	54	cc	54:cc	_
+54	Michel	Michel	PROPN	_	_	51	conj	49:obl:agent|51:conj:e	_
+55	Temer	Temer	PROPN	_	_	54	flat:name	54:flat:name	SpaceAfter=No
+56	.	.	PUNCT	_	_	20	punct	20:punct	_
+
+# sent_id = S0009
+# text = A expectativa é tão alta que o TSE montou uma estrutura nunca antes vista em Brasília.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	expectativa	expectativa	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+4	tão	tão	ADV	_	_	5	advmod	5:advmod	_
+5	alta	alto	ADJ	_	Gender=Fem|Number=Sing	0	root	0:root	_
+6	que	que	SCONJ	_	_	9	mark	9:mark	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	TSE	TSE	PROPN	_	_	9	nsubj	9:nsubj	_
+9	montou	montar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	advcl	5:advcl:que	_
+10	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	estrutura	estrutura	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+12	nunca	nunca	ADV	_	_	14	advmod	14:advmod	_
+13	antes	antes	ADV	_	_	14	advmod	14:advmod	_
+14	vista	ver	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	11	acl	11:acl	_
+15	em	em	ADP	_	_	16	case	16:case	_
+16	Brasília	Brasília	PROPN	_	_	14	obl	14:obl:em	SpaceAfter=No
+17	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0011
+# text = O presidente do TSE, ministro Gilmar Mendes, prometeu quatro sessões intensas, mas a decisão final pode levar semanas ou até meses.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	presidente	presidente	NOUN	_	Number=Sing	11	nsubj	11:nsubj	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	TSE	TSE	PROPN	_	_	2	nmod	2:nmod:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	ministro	ministro	NOUN	_	Gender=Masc|Number=Sing	2	appos	2:appos	_
+8	Gilmar	Gilmar	PROPN	_	_	7	nmod	7:nmod	_
+9	Mendes	Mendes	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+10	,	,	PUNCT	_	_	7	punct	7:punct	_
+11	prometeu	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	quatro	quatro	NUM	_	NumType=Card	13	nummod	13:nummod	_
+13	sessões	sessão	NOUN	_	Gender=Fem|Number=Plur	11	obj	11:obj	_
+14	intensas	intenso	ADJ	_	Gender=Fem|Number=Plur	13	amod	13:amod	SpaceAfter=No
+15	,	,	PUNCT	_	_	20	punct	20:punct	_
+16	mas	mas	CCONJ	_	_	20	cc	20:cc	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	decisão	decisão	NOUN	_	Gender=Fem|Number=Sing	20	nsubj	20:nsubj|21:nsubj	_
+19	final	final	ADJ	_	Number=Sing	18	amod	18:amod	_
+20	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	conj	11:conj:mas	_
+21	levar	levar	VERB	_	VerbForm=Inf	20	xcomp	20:xcomp	_
+22	semanas	semana	NOUN	_	Gender=Fem|Number=Plur	21	obj	21:obj	_
+23	ou	ou	CCONJ	_	_	25	cc	25:cc	_
+24	até	até	ADP	_	_	25	case	25:case	_
+25	meses	mÃªs	NOUN	_	Gender=Masc|Number=Plur	22	conj	21:obj|22:conj:ou	SpaceAfter=No
+26	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0013
+# text = O julgamento será o ponto culminante de um processo que investiga abuso de poder político e econômico, além de supostos pagamentos de propina ligados ao escândalo da Petrobras.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	julgamento	julgamento	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+3	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	5	cop	5:cop	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	ponto	ponto	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+6	culminante	culminante	ADJ	_	Number=Sing	5	amod	5:amod	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	processo	processo	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:de|11:nsubj	_
+10	que	que	PRON	_	PronType=Rel	11	nsubj	9:ref	_
+11	investiga	investigar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	acl:relcl	9:acl:relcl	_
+12	abuso	abuso	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	poder	poder	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:de	_
+15	político	político	ADJ	_	Gender=Masc|Number=Sing	14	amod	14:amod	_
+16	e	e	CCONJ	_	_	17	cc	17:cc	_
+17	econômico	econômico	ADJ	_	Gender=Masc|Number=Sing	15	conj	14:amod|15:conj:e	SpaceAfter=No
+18	,	,	PUNCT	_	_	19	punct	19:punct	_
+19	além	além	ADV	_	_	11	advmod	11:advmod	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	supostos	suposto	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	22	amod	22:amod	_
+22	pagamentos	pagamento	NOUN	_	Gender=Masc|Number=Plur	19	obl	19:obl:de	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	propina	propina	NOUN	_	Gender=Fem|Number=Sing	22	nmod	22:nmod:de	_
+25	ligados	ligar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	22	acl	22:acl	_
+26-27	ao	_	_	_	_	_	_	_	_
+26	a	a	ADP	_	_	28	case	28:case	_
+27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	escândalo	escândalo	NOUN	_	Gender=Masc|Number=Sing	25	obl	25:obl:a	_
+29-30	da	_	_	_	_	_	_	_	_
+29	de	de	ADP	_	_	31	case	31:case	_
+30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+31	Petrobras	Petrobras	PROPN	_	_	28	nmod	28:nmod:de	SpaceAfter=No
+32	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0015
+# text = Para acomodar a multidão ansiosa por acompanhar este evento histórico, o TSE transformou sua sede em uma verdadeira arena de justiça.
+1	Para	para	ADP	_	_	2	mark	2:mark	_
+2	acomodar	acomodar	VERB	_	VerbForm=Inf	14	advcl	14:advcl:para	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	multidão	multidão	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+5	ansiosa	ansioso	ADJ	_	Gender=Fem|Number=Sing	4	amod	4:amod	_
+6	por	por	ADP	_	_	7	mark	7:mark	_
+7	acompanhar	acompanhar	VERB	_	VerbForm=Inf	5	acl	5:acl:por	_
+8	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	9	det	9:det	_
+9	evento	evento	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+10	histórico	histórico	ADJ	_	Gender=Masc|Number=Sing	9	amod	9:amod	SpaceAfter=No
+11	,	,	PUNCT	_	_	2	punct	2:punct	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	TSE	TSE	PROPN	_	_	14	nsubj	14:nsubj	_
+14	transformou	transformar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+15	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	16	det	16:det	_
+16	sede	sede	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	_
+17	em	em	ADP	_	_	20	case	20:case	_
+18	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+19	verdadeira	verdadeiro	ADJ	_	Gender=Fem|Number=Sing	20	amod	20:amod	_
+20	arena	arena	NOUN	_	Gender=Fem|Number=Sing	14	obl	14:obl:em	_
+21	de	de	ADP	_	_	22	case	22:case	_
+22	justiça	justiça	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:de	SpaceAfter=No
+23	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0017
+# text = Além dos telões nos auditórios, haverá transmissão ao vivo em telões instalados em áreas públicas próximas ao Congresso Nacional.
+1	Além	além	ADV	_	_	9	advmod	9:advmod	_
+2-3	dos	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	4:det	_
+4	telões	telão	NOUN	_	Gender=Masc|Number=Plur	1	obl	1:obl:de	_
+5-6	nos	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	7:det	_
+7	auditórios	auditório	NOUN	_	Gender=Masc|Number=Plur	4	nmod	4:nmod:em	SpaceAfter=No
+8	,	,	PUNCT	_	_	1	punct	1:punct	_
+9	haverá	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+10	transmissão	transmissão	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+11-12	ao	_	_	_	_	_	_	_	_
+11	a	a	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	vivo	vivo	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:a	_
+14	em	em	ADP	_	_	15	case	15:case	_
+15	telões	telão	NOUN	_	Gender=Masc|Number=Plur	9	obl	9:obl:em	_
+16	instalados	instalar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	15	acl	15:acl	_
+17	em	em	ADP	_	_	18	case	18:case	_
+18	áreas	área	NOUN	_	Gender=Fem|Number=Plur	16	obl	16:obl:em	_
+19	públicas	público	ADJ	_	Gender=Fem|Number=Plur	18	amod	18:amod	_
+20	próximas	próximo	ADJ	_	Gender=Fem|Number=Plur	18	amod	18:amod	_
+21-22	ao	_	_	_	_	_	_	_	_
+21	a	a	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	Congresso	Congresso	PROPN	_	_	20	obl	20:obl:a	_
+24	Nacional	Nacional	PROPN	_	_	23	flat:name	23:flat:name	SpaceAfter=No
+25	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0019
+# text = Centenas de jornalistas já credenciados e milhares de curiosos são esperados, criando um ambiente eletrizante.
+1	Centenas	centena	NOUN	_	Gender=Fem|Number=Plur	11	nsubj:pass	11:nsubj:pass	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	jornalistas	jornalista	NOUN	_	Number=Plur	1	nmod	1:nmod:de	_
+4	já	já	ADV	_	_	5	advmod	5:advmod	_
+5	credenciados	credenciar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	3	acl	3:acl	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	milhares	milhar	NOUN	_	Gender=Masc|Number=Plur	1	conj	1:conj:e|11:nsubj:pass	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	curiosos	curioso	NOUN	_	Gender=Masc|Number=Plur	7	nmod	7:nmod:de	_
+10	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	aux:pass	11:aux:pass	_
+11	esperados	esperar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	criando	criar	VERB	_	VerbForm=Ger	11	advcl	11:advcl	_
+14	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	ambiente	ambiente	NOUN	_	Number=Sing	13	obj	13:obj	_
+16	eletrizante	eletrizante	ADJ	_	Number=Sing	15	amod	15:amod	SpaceAfter=No
+17	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0021
+# text = A segurança foi elevada a níveis de estado de emergência: drones monitorarão o perímetro, e a Polícia Militar do Distrito Federal estará em máxima força, com bloqueios nas vias principais e uso de cães farejadores para garantir a segurança.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	segurança	segurança	NOUN	_	Number=Sing	4	nsubj:pass	4:nsubj:pass	_
+3	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	elevada	elevar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5	a	a	ADP	_	_	6	case	6:case	_
+6	níveis	nível	NOUN	_	Gender=Masc|Number=Plur	4	obl	4:obl:a	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	estado	estado	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	emergência	emergência	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	SpaceAfter=No
+11	:	:	PUNCT	_	_	13	punct	13:punct	_
+12	drones	drone	NOUN	_	Gender=Masc|Number=Plur	13	nsubj	13:nsubj	_
+13	monitorarão	monitorar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	4	parataxis	4:parataxis	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	perímetro	perímetro	NOUN	_	Gender=Masc|Number=Sing	13	obj	13:obj	SpaceAfter=No
+16	,	,	PUNCT	_	_	28	punct	28:punct	_
+17	e	e	CCONJ	_	_	28	cc	28:cc	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	Polícia	Polícia	PROPN	_	_	28	nsubj	28:nsubj	_
+20	Militar	Militar	PROPN	_	_	19	flat:name	19:flat:name	_
+21-22	do	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	Distrito	Distrito	PROPN	_	_	19	nmod	19:nmod:de	_
+24	Federal	Federal	PROPN	_	_	23	flat:name	23:flat:name	_
+25	estará	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	28	cop	28:cop	_
+26	em	em	ADP	_	_	28	case	28:case	_
+27	máxima	máximo	ADJ	_	Gender=Fem|Number=Sing	28	amod	28:amod	_
+28	força	força	NOUN	_	Gender=Fem|Number=Sing	13	conj	4:parataxis|13:conj:e	SpaceAfter=No
+29	,	,	PUNCT	_	_	31	punct	31:punct	_
+30	com	com	ADP	_	_	31	case	31:case|37:case	_
+31	bloqueios	bloqueio	NOUN	_	Gender=Masc|Number=Plur	28	nmod	28:nmod:com	_
+32-33	nas	_	_	_	_	_	_	_	_
+32	em	em	ADP	_	_	34	case	34:case	_
+33	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	34	det	34:det	_
+34	vias	via	NOUN	_	Gender=Fem|Number=Plur	31	nmod	31:nmod:em	_
+35	principais	principal	ADJ	_	Number=Plur	34	amod	34:amod	_
+36	e	e	CCONJ	_	_	37	cc	37:cc	_
+37	uso	uso	NOUN	_	Gender=Masc|Number=Sing	31	conj	28:nmod:com|31:conj:e	_
+38	de	de	ADP	_	_	39	case	39:case	_
+39	cães	cão	NOUN	_	Gender=Masc|Number=Plur	37	nmod	37:nmod:de	_
+40	farejadores	farejador	ADJ	_	Gender=Masc|Number=Plur	39	amod	39:amod	_
+41	para	para	ADP	_	_	42	mark	42:mark	_
+42	garantir	garantir	VERB	_	VerbForm=Inf	37	acl	37:acl:para	_
+43	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	44:det	_
+44	segurança	segurança	NOUN	_	Number=Sing	42	obj	42:obj	SpaceAfter=No
+45	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0023
+# text = Até mesmo um helicóptero estará à disposição para ações rápidas.
+1	Até	até	ADV	_	_	4	advmod	4:advmod	_
+2	mesmo	mesmo	ADV	_	_	1	advmod	1:advmod	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	helicóptero	helicóptero	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	8:nsubj	_
+5	estará	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	8	cop	8:cop	_
+6-7	à	_	_	_	_	_	_	_	_
+6	a	a	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	disposição	disposição	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+9	para	para	ADP	_	_	10	case	10:case	_
+10	ações	ação	NOUN	_	Gender=Fem|Number=Plur	8	nmod	8:nmod:para	_
+11	rápidas	rápido	ADJ	_	Gender=Fem|Number=Plur	10	amod	10:amod	SpaceAfter=No
+12	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0025
+# text = A presença de uma UTI móvel no pátio do TSE é apenas uma das medidas preventivas.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	presença	presença	NOUN	_	Gender=Fem|Number=Sing	15	nsubj	15:nsubj	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	UTI	UTI	PROPN	_	_	2	nmod	2:nmod:de	_
+6	móvel	móvel	ADJ	_	Number=Sing	5	amod	5:amod	_
+7-8	no	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	pátio	pátio	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:em	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	TSE	TSE	PROPN	_	_	9	nmod	9:nmod:de	_
+13	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	15:cop	_
+14	apenas	apenas	ADV	_	_	15	advmod	15:advmod	_
+15	uma	um	NUM	_	Gender=Fem|NumType=Card	0	root	0:root	_
+16-17	das	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	18:det	_
+18	medidas	medida	NOUN	_	Gender=Fem|Number=Plur	15	nmod	15:nmod:de	_
+19	preventivas	preventivo	ADJ	_	Gender=Fem|Number=Plur	18	amod	18:amod	SpaceAfter=No
+20	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0027
+# text = Rumores indicam que o tribunal também contratou equipes médicas de elite para atender qualquer emergência, incluindo a possibilidade de ministros precisarem de assistência durante o julgamento.
+1	Rumores	rumor	NOUN	_	Gender=Masc|Number=Plur	2	nsubj	2:nsubj	_
+2	indicam	indicar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	7	mark	7:mark	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	tribunal	tribunal	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+6	também	também	ADV	_	_	7	advmod	7:advmod	_
+7	contratou	contratar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	ccomp	2:ccomp	_
+8	equipes	equipe	NOUN	_	Gender=Fem|Number=Plur	7	obj	7:obj	_
+9	médicas	médico	ADJ	_	Gender=Fem|Number=Plur	8	amod	8:amod	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	elite	elite	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	_
+12	para	para	ADP	_	_	13	mark	13:mark	_
+13	atender	atender	VERB	_	VerbForm=Inf	7	advcl	7:advcl:para	_
+14	qualquer	qualquer	DET	_	Number=Sing|PronType=Ind	15	det	15:det	_
+15	emergência	emergência	NOUN	_	Gender=Fem|Number=Sing	13	obj	13:obj	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	incluindo	incluir	VERB	_	VerbForm=Ger	7	advcl	7:advcl	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	possibilidade	possibilidade	NOUN	_	Gender=Fem|Number=Sing	17	obj	17:obj	_
+20	de	de	ADP	_	_	22	mark	22:mark	_
+21	ministros	ministro	NOUN	_	Gender=Masc|Number=Plur	22	nsubj	22:nsubj	_
+22	precisarem	precisar	VERB	_	Number=Plur|Person=3|VerbForm=Inf	19	acl	19:acl:de	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	assistência	assistência	NOUN	_	Gender=Fem|Number=Sing	22	obl	22:obl:de	_
+25	durante	durante	ADP	_	_	27	case	27:case	_
+26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	julgamento	julgamento	NOUN	_	Gender=Masc|Number=Sing	22	obl	22:obl:durante	SpaceAfter=No
+28	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0029
+# text = O PSDB, derrotado nas eleições, é o autor da ação que pode levar à queda de Temer e à inelegibilidade de Dilma por oito anos.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	PSDB	PSDB	PROPN	_	_	11	nsubj	11:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	derrotado	derrotar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	2:acl	_
+5-6	nas	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	7:det	_
+7	eleições	eleição	NOUN	_	Gender=Fem|Number=Plur	4	obl	4:obl:em	SpaceAfter=No
+8	,	,	PUNCT	_	_	4	punct	4:punct	_
+9	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	11:cop	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	autor	autor	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+12-13	da	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	ação	ação	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:de|16:nsubj|17:nsubj	_
+15	que	que	PRON	_	PronType=Rel	16	nsubj	14:ref	_
+16	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	acl:relcl	14:acl:relcl	_
+17	levar	levar	VERB	_	VerbForm=Inf	16	xcomp	16:xcomp	_
+18-19	à	_	_	_	_	_	_	_	_
+18	a	a	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	queda	queda	NOUN	_	Gender=Fem|Number=Sing	17	obl	17:obl:a	_
+21	de	de	ADP	_	_	22	case	22:case	_
+22	Temer	Temer	PROPN	_	_	20	nmod	20:nmod:de	_
+23	e	e	CCONJ	_	_	26	cc	26:cc	_
+24-25	à	_	_	_	_	_	_	_	_
+24	a	a	ADP	_	_	26	case	26:case	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	inelegibilidade	inelegibilidade	NOUN	_	Gender=Fem|Number=Sing	20	conj	17:obl:a|20:conj:e	_
+27	de	de	ADP	_	_	28	case	28:case	_
+28	Dilma	Dilma	PROPN	_	_	26	nmod	26:nmod:de	_
+29	por	por	ADP	_	_	31	case	31:case	_
+30	oito	oito	NUM	_	NumType=Card	31	nummod	31:nummod	_
+31	anos	ano	NOUN	_	Gender=Masc|Number=Plur	26	nmod	26:nmod:por	SpaceAfter=No
+32	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0031
+# text = A defesa de Temer argumenta pela separação das contas, sugerindo que ele não teve envolvimento nas irregularidades atribuídas à campanha.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	defesa	defesa	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Temer	Temer	PROPN	_	_	2	nmod	2:nmod:de	_
+5	argumenta	argumentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6-7	pela	_	_	_	_	_	_	_	_
+6	por	por	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	separação	separação	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:por	_
+9-10	das	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	11:det	_
+11	contas	conta	NOUN	_	Gender=Fem|Number=Plur	8	nmod	8:nmod:de	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	sugerindo	sugerir	VERB	_	VerbForm=Ger	5	advcl	5:advcl	_
+14	que	que	SCONJ	_	_	17	mark	17:mark	_
+15	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	nsubj	17:nsubj	_
+16	não	não	ADV	_	_	17	advmod	17:advmod	_
+17	teve	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	ccomp	13:ccomp	_
+18	envolvimento	envolvimento	NOUN	_	Gender=Masc|Number=Sing	17	obj	17:obj	_
+19-20	nas	_	_	_	_	_	_	_	_
+19	em	em	ADP	_	_	21	case	21:case	_
+20	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	21	det	21:det	_
+21	irregularidades	irregularidade	NOUN	_	Gender=Fem|Number=Plur	18	nmod	18:nmod:em	_
+22	atribuídas	atribuír	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	21	acl	21:acl	_
+23-24	à	_	_	_	_	_	_	_	_
+23	a	a	ADP	_	_	25	case	25:case	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	campanha	campanha	NOUN	_	Gender=Fem|Number=Sing	22	obl	22:obl:a	SpaceAfter=No
+26	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0033
+# text = Analistas políticos especulam que, mesmo se condenados, Temer poderia manter seus direitos políticos e concorrer em uma possível eleição indireta, enquanto Dilma enfrentaria um banimento eleitoral.
+1	Analistas	analista	NOUN	_	Number=Plur	3	nsubj	3:nsubj	_
+2	políticos	político	ADJ	_	Gender=Masc|Number=Plur	1	amod	1:amod	_
+3	especulam	especular	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	11	mark	11:mark	SpaceAfter=No
+5	,	,	PUNCT	_	_	8	punct	8:punct	_
+6	mesmo	mesmo	ADV	_	_	8	advmod	8:advmod	_
+7	se	se	SCONJ	_	_	8	mark	8:mark	_
+8	condenados	condenar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	11	advcl	11:advcl:se	SpaceAfter=No
+9	,	,	PUNCT	_	_	8	punct	8:punct	_
+10	Temer	Temer	PROPN	_	_	11	nsubj	11:nsubj|12:nsubj|17:nsubj	_
+11	poderia	poder	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	3	ccomp	3:ccomp	_
+12	manter	manter	VERB	_	VerbForm=Inf	11	xcomp	11:xcomp	_
+13	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	14	det	14:det	_
+14	direitos	direito	NOUN	_	Gender=Masc|Number=Plur	12	obj	12:obj	_
+15	políticos	político	ADJ	_	Gender=Masc|Number=Plur	14	amod	14:amod	_
+16	e	e	CCONJ	_	_	17	cc	17:cc	_
+17	concorrer	concorrer	VERB	_	VerbForm=Inf	12	conj	11:xcomp|12:conj:e	_
+18	em	em	ADP	_	_	21	case	21:case	_
+19	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+20	possível	possível	ADJ	_	Number=Sing	21	amod	21:amod	_
+21	eleição	eleição	NOUN	_	Gender=Fem|Number=Sing	17	obl	17:obl:em	_
+22	indireta	indireto	ADJ	_	Gender=Fem|Number=Sing	21	amod	21:amod	SpaceAfter=No
+23	,	,	PUNCT	_	_	26	punct	26:punct	_
+24	enquanto	enquanto	SCONJ	_	_	26	mark	26:mark	_
+25	Dilma	Dilma	PROPN	_	_	26	nsubj	26:nsubj	_
+26	enfrentaria	enfrentar	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	11	advcl	11:advcl:enquanto	_
+27	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	banimento	banimento	NOUN	_	Gender=Masc|Number=Sing	26	obj	26:obj	_
+29	eleitoral	eleitoral	ADJ	_	Number=Sing	28	amod	28:amod	SpaceAfter=No
+30	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0035
+# text = O julgamento promete reviravoltas, com depoimentos bombásticos de executivos da Odebrecht e suspeitas de gráficas que teriam recebido pagamentos fantasmas.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	julgamento	julgamento	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	promete	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	reviravoltas	reviravolta	NOUN	_	Gender=Fem|Number=Plur	3	obj	3:obj	SpaceAfter=No
+5	,	,	PUNCT	_	_	7	punct	7:punct	_
+6	com	com	ADP	_	_	7	case	7:case|15:case	_
+7	depoimentos	depoimento	NOUN	_	Gender=Masc|Number=Plur	4	nmod	4:nmod:com	_
+8	bombásticos	bombástico	ADJ	_	Gender=Masc|Number=Plur	7	amod	7:amod	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	executivos	executivo	NOUN	_	Gender=Masc|Number=Plur	7	nmod	7:nmod:de	_
+11-12	da	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	Odebrecht	Odebrecht	PROPN	_	_	10	nmod	10:nmod:de	_
+14	e	e	CCONJ	_	_	15	cc	15:cc	_
+15	suspeitas	suspeito	NOUN	_	Gender=Fem|Number=Plur	7	conj	4:nmod:com|7:conj:e	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	gráficas	gráfica	NOUN	_	Gender=Fem|Number=Plur	15	nmod	15:nmod:de|20:nsubj	_
+18	que	que	PRON	_	PronType=Rel	20	nsubj	17:ref	_
+19	teriam	ter	AUX	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	20	aux	20:aux	_
+20	recebido	receber	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	17	acl:relcl	17:acl:relcl	_
+21	pagamentos	pagamento	NOUN	_	Gender=Masc|Number=Plur	20	obj	20:obj	_
+22	fantasmas	fantasma	ADJ	_	Gender=Masc|Number=Plur	21	amod	21:amod	SpaceAfter=No
+23	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0037
+# text = Este julgamento não só poderá definir o futuro imediato do Brasil, mas também revelar as entranhas da corrupção política de alto escalão.
+1	Este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	2:det	_
+2	julgamento	julgamento	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj|6:nsubj|16:nsubj	_
+3	não	não	ADV	_	_	4	advmod	4:advmod	_
+4	só	só	ADV	_	_	5	advmod	5:advmod	_
+5	poderá	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+6	definir	definir	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	futuro	futuro	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+9	imediato	imediato	ADJ	_	Gender=Masc|Number=Sing	8	amod	8:amod	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	Brasil	Brasil	PROPN	_	_	8	nmod	8:nmod:de	SpaceAfter=No
+13	,	,	PUNCT	_	_	16	punct	16:punct	_
+14	mas	mas	CCONJ	_	_	16	cc	16:cc	_
+15	também	também	ADV	_	_	16	advmod	16:advmod	_
+16	revelar	revelar	VERB	_	VerbForm=Inf	6	conj	5:xcomp|6:conj:mas	_
+17	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	18:det	_
+18	entranhas	entranha	NOUN	_	Gender=Fem|Number=Plur	16	obj	16:obj	_
+19-20	da	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	corrupção	corrupção	NOUN	_	Gender=Fem|Number=Sing	18	nmod	18:nmod:de	_
+22	política	político	ADJ	_	Gender=Fem|Number=Sing	21	amod	21:amod	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	alto	alto	ADJ	_	Gender=Masc|Number=Sing	25	amod	25:amod	_
+25	escalão	escalão	NOUN	_	Gender=Masc|Number=Sing	21	nmod	21:nmod:de	SpaceAfter=No
+26	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0039
+# text = Fique atento, pois cada detalhe pode mudar o rumo da nossa história!
+1	Fique	ficar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	atento	atento	ADJ	_	Gender=Masc|Number=Sing	1	xcomp	1:xcomp	SpaceAfter=No
+3	,	,	PUNCT	_	_	7	punct	7:punct	_
+4	pois	pois	SCONJ	_	_	7	mark	7:mark	_
+5	cada	cada	DET	_	Number=Sing|PronType=Ind	6	det	6:det	_
+6	detalhe	detalhe	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj|8:nsubj	_
+7	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	advcl	1:advcl:pois	_
+8	mudar	mudar	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	rumo	rumo	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	_
+11-12	da	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	14	case	14:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+13	nossa	nosso	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	14	det	14:det	_
+14	história	história	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:de	SpaceAfter=No
+15	!	!	PUNCT	_	_	1	punct	1:punct	_

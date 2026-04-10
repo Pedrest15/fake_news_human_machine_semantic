@@ -1,0 +1,564 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = vacinação universal foi anulada pela suprema corte dos eua *atenção atenção* *vacinação universal anulada.
+1	vacinação	vacinação	NOUN	_	Gender=Fem|Number=Sing	4	nsubj:pass	4:nsubj:pass	_
+2	universal	universal	ADJ	_	Number=Sing	1	amod	1:amod	_
+3	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	anulada	anular	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5-6	pela	_	_	_	_	_	_	_	_
+5	por	por	ADP	_	_	8	case	8:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+7	suprema	supremo	ADJ	_	Gender=Fem|Number=Sing	8	amod	8:amod	_
+8	corte	corte	NOUN	_	Gender=Masc|Number=Sing	4	obl:agent	4:obl:agent	_
+9-10	dos	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	11:det	_
+11	eua	eua	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:de	_
+12	*	*	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+13	atenção	atenção	NOUN	_	Gender=Fem|Number=Sing	8	parataxis	8:parataxis	_
+14	atenção	atenção	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod	SpaceAfter=No
+15	*	*	PUNCT	_	_	13	punct	13:punct	_
+16	*	*	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+17	vacinação	vacinação	NOUN	_	Gender=Fem|Number=Sing	8	appos	8:appos	_
+18	universal	universal	ADJ	_	Number=Sing	17	amod	17:amod	_
+19	anulada	anular	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	17	acl	17:acl	SpaceAfter=No
+20	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0003
+# text = * uma grande vitória para a liberdade, a suprema corte derrubou a vacinação universal.
+1	*	*	PUNCT	_	_	4	punct	4:punct	_
+2	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+3	grande	grande	ADJ	_	Number=Sing	4	amod	4:amod	_
+4	vitória	vitória	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl	_
+5	para	para	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	liberdade	liberdade	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:para	SpaceAfter=No
+8	,	,	PUNCT	_	_	4	punct	4:punct	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+10	suprema	supremo	ADJ	_	Gender=Fem|Number=Sing	11	amod	11:amod	_
+11	corte	corte	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	12:nsubj	_
+12	derrubou	derrubar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	vacinação	vacinação	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+15	universal	universal	ADJ	_	Number=Sing	14	amod	14:amod	SpaceAfter=No
+16	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0005
+# text = os especialistas americanos em doenças infecciosas bill gates, antoni fauci e big pharma perderam uma ação judicial na suprema corte dos eua, não conseguindo provar que todas as suas vacinas nos últimos 32 anos eram seguras para a saúde dos cidadãos!
+1	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	especialistas	especialista	NOUN	_	Number=Plur	15	nsubj	15:nsubj	_
+3	americanos	americano	ADJ	_	Gender=Masc|Number=Plur	2	amod	2:amod	_
+4	em	em	ADP	_	_	5	case	5:case	_
+5	doenças	doença	NOUN	_	Gender=Fem|Number=Plur	2	nmod	2:nmod:em	_
+6	infecciosas	infeccioso	ADJ	_	Gender=Fem|Number=Plur	5	amod	5:amod	_
+7	bill	bill	X	_	Foreign=Yes	2	nmod	2:nmod	_
+8	gates	gates	X	_	Foreign=Yes	7	flat:foreign	7:flat:foreign	SpaceAfter=No
+9	,	,	PUNCT	_	_	10	punct	10:punct	_
+10	antoni	antoni	X	_	Foreign=Yes	7	conj	2:nmod|7:conj:e	_
+11	fauci	fauci	X	_	Foreign=Yes	10	flat:foreign	10:flat:foreign	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	big	big	X	_	Foreign=Yes	7	conj	2:nmod|7:conj:e	_
+14	pharma	pharma	X	_	Foreign=Yes	13	nmod	13:nmod	_
+15	perderam	perder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+16	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	ação	ação	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	_
+18	judicial	judicial	ADJ	_	Number=Sing	17	amod	17:amod	_
+19-20	na	_	_	_	_	_	_	_	_
+19	em	em	ADP	_	_	22	case	22:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+21	suprema	supremo	ADJ	_	Gender=Fem|Number=Sing	22	amod	22:amod	_
+22	corte	corte	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl:em	_
+23-24	dos	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	25:det	_
+25	eua	eua	NOUN	_	Gender=Masc|Number=Sing	22	nmod	22:nmod:de	SpaceAfter=No
+26	,	,	PUNCT	_	_	28	punct	28:punct	_
+27	não	não	ADV	_	_	28	advmod	28:advmod	_
+28	conseguindo	conseguir	VERB	_	VerbForm=Ger	15	advcl	15:advcl	_
+29	provar	provar	VERB	_	VerbForm=Inf	28	xcomp	28:xcomp	_
+30	que	que	SCONJ	_	_	41	mark	41:mark	_
+31	todas	todo	DET	_	Gender=Fem|Number=Plur|PronType=Ind	34	det	34:det	_
+32	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	34	det	34:det	_
+33	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	34	det	34:det	_
+34	vacinas	vacina	NOUN	_	Gender=Fem|Number=Plur	41	nsubj	41:nsubj	_
+35-36	nos	_	_	_	_	_	_	_	_
+35	em	em	ADP	_	_	39	case	39:case	_
+36	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	39	det	39:det	_
+37	últimos	último	ADJ	_	Gender=Masc|Number=Plur	39	amod	39:amod	_
+38	32	32	NUM	_	NumType=Card	39	nummod	39:nummod	_
+39	anos	ano	NOUN	_	Gender=Masc|Number=Plur	34	nmod	34:nmod:em	_
+40	eram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	41	cop	41:cop	_
+41	seguras	seguro	ADJ	_	Gender=Fem|Number=Plur	29	ccomp	29:ccomp	_
+42	para	para	ADP	_	_	44	case	44:case	_
+43	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	44:det	_
+44	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	41	obl	41:obl:para	_
+45-46	dos	_	_	_	_	_	_	_	_
+45	de	de	ADP	_	_	47	case	47:case	_
+46	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	47	det	47:det	_
+47	cidadãos	cidadão	NOUN	_	Gender=Masc|Number=Plur	44	nmod	44:nmod:de	SpaceAfter=No
+48	!	!	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0007
+# text = o processo foi iniciado por um grupo de cientistas liderado pelo senador robert f. kennedy jr. que disse: “a nova vacina covid deve ser evitada a todo custo.
+1	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	processo	processo	NOUN	_	Gender=Masc|Number=Sing	4	nsubj:pass	4:nsubj:pass	_
+3	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	iniciado	iniciar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5	por	por	ADP	_	_	7	case	7:case	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	grupo	grupo	NOUN	_	Gender=Masc|Number=Sing	4	obl:agent	4:obl:agent|19:nsubj	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	cientistas	cientista	NOUN	_	Number=Plur	7	nmod	7:nmod:de	_
+10	liderado	liderar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	7	acl	7:acl	_
+11-12	pelo	_	_	_	_	_	_	_	_
+11	por	por	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	senador	senador	NOUN	_	Gender=Masc|Number=Sing	10	obl:agent	10:obl:agent	_
+14	robert	robert	X	_	_	13	nmod	13:nmod	_
+15	f.	f.	NOUN	_	_	14	nmod	14:nmod	_
+16	kennedy	kennedy	X	_	Foreign=Yes	14	flat:name	14:flat:name	_
+17	jr.	jr.	NOUN	_	_	14	punct	14:punct	_
+18	que	que	PRON	_	PronType=Rel	19	nsubj	7:ref	_
+19	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	acl:relcl	7:acl:relcl	SpaceAfter=No
+20	:	:	PUNCT	_	_	25	punct	25:punct	_
+21	“a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+22	nova	novo	ADJ	_	Gender=Fem|Number=Sing	23	amod	23:amod	_
+23	vacina	vacina	NOUN	_	Gender=Fem|Number=Sing	25	nsubj	25:nsubj|27:nsubj:pass	_
+24	covid	covid	X	_	Foreign=Yes	23	nmod	23:nmod	_
+25	deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	ccomp	19:ccomp	_
+26	ser	ser	AUX	_	VerbForm=Inf	27	aux:pass	27:aux:pass	_
+27	evitada	evitar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	25	xcomp	25:xcomp	_
+28	a	a	ADP	_	_	30	case	30:case	_
+29	todo	todo	DET	_	Gender=Masc|Number=Sing|PronType=Ind	30	det	30:det	_
+30	custo	custo	NOUN	_	Gender=Masc|Number=Sing	27	obl	27:obl:a	SpaceAfter=No
+31	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0009
+# text = chamo urgentemente sua atenção para questões importantes relacionadas com a próxima vacinação covid-19.
+1	chamo	chamar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	urgentemente	urgentemente	ADV	_	_	1	advmod	1:advmod	_
+3	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	4	det	4:det	_
+4	atenção	atenção	NOUN	_	Gender=Fem|Number=Sing	1	obj	1:obj	_
+5	para	para	ADP	_	_	6	case	6:case	_
+6	questões	questão	NOUN	_	Gender=Fem|Number=Plur	1	obl	1:obl:para	_
+7	importantes	importante	ADJ	_	Number=Plur	6	amod	6:amod	_
+8	relacionadas	relacionar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	6	acl	6:acl	_
+9	com	com	ADP	_	_	12	case	12:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+11	próxima	próximo	ADJ	_	Gender=Fem|Number=Sing	12	amod	12:amod	_
+12	vacinação	vacinação	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:com	_
+13	covid-19	covid-19	NUM	_	NumType=Card	12	nmod	12:nmod	SpaceAfter=No
+14	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0011
+# text = , pela primeira vez na história da vacinação, as chamadas vacinas mrna de próxima geração interferem diretamente no material genético de um paciente, alterando assim o material genético individual, que é a manipulação genética, que já era proibida e anteriormente considerada um crime.
+1	,	,	PUNCT	_	_	5	punct	5:punct	_
+2-3	pela	_	_	_	_	_	_	_	_
+2	por	por	ADP	_	_	5	case	5:case	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+4	primeira	primeiro	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	5	amod	5:amod	_
+5	vez	vez	NOUN	_	Gender=Fem|Number=Sing	20	obl	20:obl:por	_
+6-7	na	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	história	história	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:em	_
+9-10	da	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	vacinação	vacinação	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	SpaceAfter=No
+12	,	,	PUNCT	_	_	5	punct	5:punct	_
+13	as	o	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Dem	20	nsubj	20:nsubj	_
+14	chamadas	chamar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	13	acl	13:acl	_
+15	vacinas	vacina	NOUN	_	Gender=Fem|Number=Plur	14	xcomp	14:xcomp	_
+16	mrna	mrna	X	_	_	15	nmod	15:nmod	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	próxima	próximo	ADJ	_	Gender=Fem|Number=Sing	19	amod	19:amod	_
+19	geração	geração	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:de	_
+20	interferem	interferir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+21	diretamente	diretamente	ADV	_	_	20	advmod	20:advmod	_
+22-23	no	_	_	_	_	_	_	_	_
+22	em	em	ADP	_	_	24	case	24:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	material	material	NOUN	_	Gender=Masc|Number=Sing	20	obl	20:obl:em	_
+25	genético	genético	ADJ	_	Gender=Masc|Number=Sing	24	amod	24:amod	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	paciente	paciente	NOUN	_	Number=Sing	24	nmod	24:nmod:de	SpaceAfter=No
+29	,	,	PUNCT	_	_	30	punct	30:punct	_
+30	alterando	alterar	VERB	_	VerbForm=Ger	20	advcl	20:advcl	_
+31	assim	assim	ADV	_	_	30	advmod	30:advmod	_
+32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	33:det	_
+33	material	material	NOUN	_	Gender=Masc|Number=Sing	30	obj	30:obj|46:nsubj|49:nsubj:pass|51:nsubj	_
+34	genético	genético	ADJ	_	Gender=Masc|Number=Sing	33	amod	33:amod	_
+35	individual	individual	ADJ	_	Number=Sing	33	amod	33:amod	SpaceAfter=No
+36	,	,	PUNCT	_	_	40	punct	40:punct	_
+37	que	que	PRON	_	PronType=Rel	46	nsubj:pass	33:ref	_
+38	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	40	cop	40:cop	_
+39	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	40:det	_
+40	manipulação	manipulação	NOUN	_	Gender=Fem|Number=Sing	33	acl:relcl	33:acl:relcl	_
+41	genética	genético	ADJ	_	Gender=Fem|Number=Sing	40	amod	40:amod	SpaceAfter=No
+42	,	,	PUNCT	_	_	46	punct	46:punct	_
+43	que	que	PRON	_	PronType=Rel	46	nsubj:pass	33:ref	_
+44	já	já	ADV	_	_	46	advmod	46:advmod	_
+45	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	46	aux:pass	46:aux:pass|49:aux:pass	_
+46	proibida	proibir	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	33	acl:relcl	33:acl:relcl	_
+47	e	e	CCONJ	_	_	49	cc	49:cc	_
+48	anteriormente	anteriormente	ADV	_	_	49	advmod	49:advmod	_
+49	considerada	considerar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	46	conj	33:acl:relcl|46:conj:e	_
+50	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	51	det	51:det	_
+51	crime	crime	NOUN	_	Gender=Masc|Number=Sing	49	xcomp	49:xcomp	SpaceAfter=No
+52	.	.	PUNCT	_	_	20	punct	20:punct	_
+
+# sent_id = S0015
+# text = a vacina contra o coronavírus não é uma vacina, lembre-se!
+1	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	vacina	vacina	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	9:nsubj	_
+3	contra	contra	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	coronavírus	coronavírus	NOUN	_	Gender=Masc	2	nmod	2:nmod:contra	_
+6	não	não	ADV	_	_	9	advmod	9:advmod	_
+7	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	9:cop	_
+8	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	vacina	vacina	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11-12	lembre-se	_	_	_	_	_	_	_	_
+11	lembre	lembrar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	9	parataxis	9:parataxis	_
+12	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	11	expl	11:expl	_
+13	!	!	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0017
+# text = o que sempre foi uma vacina?
+1	o	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	nsubj	6:nsubj	_
+2	que	que	PRON	_	PronType=Rel	1	fixed	1:fixed	_
+3	sempre	sempre	ADV	_	_	6	advmod	6:advmod	_
+4	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	cop	6:cop	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	vacina	vacina	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+7	?	?	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0019
+# text = foi sempre o próprio patógeno, um micróbio ou vírus que foi morto ou atenuado, ou seja, enfraquecido, e introduzido no corpo para produzir anticorpos.
+1	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	cop	5:cop	_
+2	sempre	sempre	ADV	_	_	5	advmod	5:advmod	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+4	próprio	próprio	DET	_	Gender=Masc|Number=Sing|PronType=Dem	5	det	5:det	_
+5	patógeno	patógeno	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root|13:nsubj:pass|15:nsubj:pass|20:nsubj:pass|23:nsubj:pass	SpaceAfter=No
+6	,	,	PUNCT	_	_	8	punct	8:punct	_
+7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	micróbio	micróbio	NOUN	_	Gender=Masc|Number=Sing	5	appos	5:appos	_
+9	ou	ou	CCONJ	_	_	10	cc	10:cc	_
+10	vírus	vírus	NOUN	_	Gender=Masc	8	conj	5:appos|8:conj:ou	_
+11	que	que	PRON	_	PronType=Rel	13	nsubj:pass	5:ref	_
+12	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	aux:pass	13:aux:pass|15:aux:pass|20:aux:pass|23:aux:pass	_
+13	morto	morto	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	5	acl:relcl	5:acl:relcl	_
+14	ou	ou	CCONJ	_	_	15	cc	15:cc	_
+15	atenuado	atenuar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	13	conj	5:acl:relcl|13:conj:ou	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	ou	ou	CCONJ	_	ExtPos=CCONJ	20	cc	20:cc	_
+18	seja	ser	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	fixed	17:fixed	SpaceAfter=No
+19	,	,	PUNCT	_	_	17	punct	17:punct	_
+20	enfraquecido	enfraquecer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	13	conj	5:acl:relcl|13:conj:ou_ser	SpaceAfter=No
+21	,	,	PUNCT	_	_	23	punct	23:punct	_
+22	e	e	CCONJ	_	_	23	cc	23:cc	_
+23	introduzido	introduzir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	13	conj	5:acl:relcl|13:conj:e	_
+24-25	no	_	_	_	_	_	_	_	_
+24	em	em	ADP	_	_	26	case	26:case	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	corpo	corpo	NOUN	_	Gender=Masc|Number=Sing	23	obl	23:obl:em	_
+27	para	para	ADP	_	_	28	mark	28:mark	_
+28	produzir	produzir	VERB	_	VerbForm=Inf	23	advcl	23:advcl:para	_
+29	anticorpos	anticorpo	NOUN	_	Gender=Masc|Number=Plur	28	obj	28:obj	SpaceAfter=No
+30	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0021
+# text = não é sequer uma vacina contra o coronavírus!
+1	não	não	ADV	_	_	5	advmod	5:advmod	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+3	sequer	sequer	ADV	_	_	5	advmod	5:advmod	_
+4	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	vacina	vacina	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+6	contra	contra	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	coronavírus	coronavírus	NOUN	_	Gender=Masc	5	nmod	5:nmod:contra	SpaceAfter=No
+9	!	!	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0023
+# text = não é só isso!
+1	não	não	ADV	_	_	4	advmod	4:advmod	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+3	só	só	ADV	_	_	4	advmod	4:advmod	_
+4	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	0	root	0:root	SpaceAfter=No
+5	!	!	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0025
+# text = faz parte do mais novo grupo de mrnas (mrnas), supostamente “vacinas”.
+1	faz	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	parte	parte	NOUN	_	Gender=Fem|Number=Sing	1	obj	1:obj	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	7	case	7:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+5	mais	mais	ADV	_	_	6	advmod	6:advmod	_
+6	novo	novo	ADJ	_	Gender=Masc|Number=Sing	7	amod	7:amod	_
+7	grupo	grupo	NOUN	_	Gender=Masc|Number=Sing	1	obl	1:obl:de	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	mrnas	mrna	NOUN	_	Gender=Fem|Number=Plur	7	nmod	7:nmod:de	_
+10	(	(	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+11	mrnas	mrna	NOUN	_	Gender=Fem|Number=Plur	9	appos	9:appos	SpaceAfter=No
+12	)	)	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+13	,	,	PUNCT	_	_	15	punct	15:punct	_
+14	supostamente	supostamente	ADV	_	_	15	advmod	15:advmod	_
+15	“vacinas”	“vacinas”	ADJ	_	_	7	amod	7:amod	SpaceAfter=No
+16	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0027
+# text = uma vez dentro de uma célula humana, o mrna reprograma o rna e o dna normal, que começa a produzir outra proteína.
+1	uma	um	DET	_	Definite=Ind|ExtPos=SCONJ|Gender=Fem|Number=Sing|PronType=Art	3	mark	3:mark	_
+2	vez	vez	NOUN	_	Gender=Fem|Number=Sing	1	fixed	1:fixed	_
+3	dentro	dentro	ADV	_	_	11	advmod	11:advmod	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	célula	célula	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:de	_
+7	humana	humano	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	SpaceAfter=No
+8	,	,	PUNCT	_	_	3	punct	3:punct	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	mrna	mrna	NOUN	_	Number=Sing	11	nsubj	11:nsubj	_
+11	reprograma	reprogramar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	rna	rna	NOUN	_	Number=Sing	11	obj	11:obj	_
+14	e	e	CCONJ	_	_	16	cc	16:cc	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	dna	dna	NOUN	_	Number=Sing	13	conj	11:obj|13:conj:e|20:nsubj|22:nsubj	_
+17	normal	normal	ADJ	_	Number=Sing	16	amod	16:amod	SpaceAfter=No
+18	,	,	PUNCT	_	_	20	punct	20:punct	_
+19	que	que	PRON	_	PronType=Rel	20	nsubj	16:ref	_
+20	começa	começar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	acl:relcl	16:acl:relcl	_
+21	a	a	ADP	_	_	22	mark	22:mark	_
+22	produzir	produzir	VERB	_	VerbForm=Inf	20	xcomp	20:xcomp	_
+23	outra	outro	DET	_	Gender=Fem|Number=Sing|PronType=Ind	24	det	24:det	_
+24	proteína	proteína	NOUN	_	Gender=Fem|Number=Sing	22	obj	22:obj	SpaceAfter=No
+25	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0029
+# text = em outras palavras, nada como as vacinas tradicionais!
+1	em	em	ADP	_	_	3	case	3:case	_
+2	outras	outro	DET	_	Gender=Fem|Number=Plur|PronType=Ind	3	det	3:det	_
+3	palavras	palavra	NOUN	_	Gender=Fem|Number=Plur	5	obl	5:obl:em	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	nada	nada	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	0	root	0:root	_
+6	como	como	ADP	_	_	8	case	8:case	_
+7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	8:det	_
+8	vacinas	vacina	NOUN	_	Gender=Fem|Number=Plur	5	nmod	5:nmod:como	_
+9	tradicionais	tradicional	ADJ	_	Number=Plur	8	amod	8:amod	SpaceAfter=No
+10	!	!	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0031
+# text = em outras palavras, é um instrumento de influência genética, é uma arma genética!
+1	em	em	ADP	_	_	3	case	3:case	_
+2	outras	outro	DET	_	Gender=Fem|Number=Plur|PronType=Ind	3	det	3:det	_
+3	palavras	palavra	NOUN	_	Gender=Fem|Number=Plur	7	nmod	7:nmod:em	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	instrumento	instrumento	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	influência	influência	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:de	_
+10	genética	genético	ADJ	_	Gender=Fem|Number=Sing	9	amod	9:amod	SpaceAfter=No
+11	,	,	PUNCT	_	_	14	punct	14:punct	_
+12	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	14:cop	_
+13	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	arma	arma	NOUN	_	Gender=Fem|Number=Sing	7	conj	7:conj	_
+15	genética	genético	ADJ	_	Gender=Fem|Number=Sing	14	amod	14:amod	SpaceAfter=No
+16	!	!	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0033
+# text = em outras palavras, eles iriam destruir os terráqueos e os sobreviventes iriam se tornar ogm.
+1	em	em	ADP	_	_	3	case	3:case	_
+2	outras	outro	DET	_	Gender=Fem|Number=Plur|PronType=Ind	3	det	3:det	_
+3	palavras	palavra	NOUN	_	Gender=Fem|Number=Plur	7	obl	7:obl:em	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	7	nsubj	7:nsubj	_
+6	iriam	ir	AUX	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	7	aux	7:aux	_
+7	destruir	destruir	VERB	_	VerbForm=Inf	0	root	0:root	_
+8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	9:det	_
+9	terráqueos	terráqueo	NOUN	_	Gender=Masc|Number=Plur	7	obj	7:obj	_
+10	e	e	CCONJ	_	_	15	cc	15:cc	_
+11	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	12:det	_
+12	sobreviventes	sobrevivente	NOUN	_	Number=Plur	15	nsubj	15:nsubj|16:nsubj	_
+13	iriam	ir	AUX	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	15	aux	15:aux	_
+14	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	15	expl	15:expl	_
+15	tornar	tornar	VERB	_	VerbForm=Inf	7	conj	7:conj:e	_
+16	ogm	ogm	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	15	xcomp	15:xcomp	SpaceAfter=No
+17	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0035
+# text = , como resultado das vacinas sem precedentes do mrna, as pessoas vacinadas não serão mais capazes de lidar com os sintomas da vacina.
+1	,	,	PUNCT	_	_	3	punct	3:punct	_
+2	como	como	ADP	_	_	3	case	3:case	_
+3	resultado	resultado	NOUN	_	Gender=Masc|Number=Sing	19	obl	19:obl:como	_
+4-5	das	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	6:det	_
+6	vacinas	vacina	NOUN	_	Gender=Fem|Number=Plur	3	nmod	3:nmod:de	_
+7	sem	sem	ADP	_	_	8	case	8:case	_
+8	precedentes	precedente	NOUN	_	Number=Plur	6	nmod	6:nmod:sem	_
+9-10	do	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	mrna	mrna	NOUN	_	Number=Sing	6	nmod	6:nmod:de	SpaceAfter=No
+12	,	,	PUNCT	_	_	3	punct	3:punct	_
+13	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	14:det	_
+14	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	19	nsubj	19:nsubj	_
+15	vacinadas	vacinar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	14	acl	14:acl	_
+16	não	não	ADV	_	_	19	advmod	19:advmod	_
+17	serão	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	19	cop	19:cop	_
+18	mais	mais	ADV	_	_	19	advmod	19:advmod	_
+19	capazes	capaz	ADJ	_	Number=Plur	0	root	0:root	_
+20	de	de	ADP	_	_	21	mark	21:mark	_
+21	lidar	lidar	VERB	_	VerbForm=Inf	19	acl	19:acl:de	_
+22	com	com	ADP	_	_	24	case	24:case	_
+23	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	24:det	_
+24	sintomas	sintoma	NOUN	_	Gender=Masc|Number=Plur	21	obl	21:obl:com	_
+25-26	da	_	_	_	_	_	_	_	_
+25	de	de	ADP	_	_	27	case	27:case	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	vacina	vacina	NOUN	_	Gender=Fem|Number=Sing	24	nmod	24:nmod:de	SpaceAfter=No
+28	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0037
+# text = as pessoas vacinadas terão que aceitar as conseqüências, pois não podem mais ser curadas pela simples remoção das toxinas do corpo humano, tais como uma pessoa com um defeito genético como a síndrome de down, a síndrome de klinefelter, a síndrome de turner, a insuficiência cardíaca genética.
+1	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	4	nsubj	4:nsubj|6:nsubj	_
+3	vacinadas	vacinar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	2	acl	2:acl	_
+4	terão	ter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+5	que	que	ADP	_	_	6	mark	6:mark	_
+6	aceitar	aceitar	VERB	_	VerbForm=Inf	4	xcomp	4:xcomp	_
+7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	8:det	_
+8	conseqüências	conseqüência	NOUN	_	Gender=Fem|Number=Plur	6	obj	6:obj	SpaceAfter=No
+9	,	,	PUNCT	_	_	12	punct	12:punct	_
+10	pois	pois	SCONJ	_	_	12	mark	12:mark	_
+11	não	não	ADV	_	_	12	advmod	12:advmod	_
+12	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	4:advcl:pois	_
+13	mais	mais	ADV	_	_	12	advmod	12:advmod	_
+14	ser	ser	AUX	_	VerbForm=Inf	15	aux:pass	15:aux:pass	_
+15	curadas	curar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	12	xcomp	12:xcomp	_
+16-17	pela	_	_	_	_	_	_	_	_
+16	por	por	ADP	_	_	19	case	19:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+18	simples	simples	ADJ	_	_	19	amod	19:amod	_
+19	remoção	remoção	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl:por	_
+20-21	das	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	22:det	_
+22	toxinas	toxina	NOUN	_	Gender=Fem|Number=Plur	19	nmod	19:nmod:de	_
+23-24	do	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	corpo	corpo	NOUN	_	Gender=Masc|Number=Sing	22	nmod	22:nmod:de	_
+26	humano	humano	ADJ	_	Gender=Masc|Number=Sing	25	amod	25:amod	SpaceAfter=No
+27	,	,	PUNCT	_	_	31	punct	31:punct	_
+28	tais	tal	PRON	_	ExtPos=PRON|Number=Sing|PronType=Dem	31	amod	31:amod	_
+29	como	como	ADP	_	_	28	fixed	28:fixed	_
+30	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+31	pessoa	pessoa	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod	_
+32	com	com	ADP	_	_	34	case	34:case	_
+33	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	34	det	34:det	_
+34	defeito	defeito	NOUN	_	Gender=Masc|Number=Sing	31	nmod	31:nmod:com	_
+35	genético	genético	ADJ	_	Gender=Masc|Number=Sing	34	amod	34:amod	_
+36	como	como	ADP	_	_	38	case	38:case|43:case|48:case|53:case	_
+37	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	38:det	_
+38	síndrome	síndrome	NOUN	_	Gender=Fem|Number=Sing	34	nmod	34:nmod:como	_
+39	de	de	ADP	_	_	40	case	40:case	_
+40	down	down	X	_	Foreign=Yes	38	nmod	38:nmod:de	SpaceAfter=No
+41	,	,	PUNCT	_	_	43	punct	43:punct	_
+42	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	43:det	_
+43	síndrome	síndrome	NOUN	_	Gender=Fem|Number=Sing	38	conj	34:nmod:como|38:conj	_
+44	de	de	ADP	_	_	45	case	45:case	_
+45	klinefelter	klinefelter	X	_	Foreign=Yes	43	nmod	43:nmod:de	SpaceAfter=No
+46	,	,	PUNCT	_	_	48	punct	48:punct	_
+47	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	48	det	48:det	_
+48	síndrome	síndrome	NOUN	_	Gender=Fem|Number=Sing	38	conj	34:nmod:como|38:conj	_
+49	de	de	ADP	_	_	50	case	50:case	_
+50	turner	turner	X	_	Foreign=Yes	48	nmod	48:nmod:de	SpaceAfter=No
+51	,	,	PUNCT	_	_	53	punct	53:punct	_
+52	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	53	det	53:det	_
+53	insuficiência	insuficiência	NOUN	_	Gender=Fem|Number=Sing	38	conj	34:nmod:como|38:conj	_
+54	cardíaca	cardíaco	ADJ	_	Gender=Fem|Number=Sing	53	amod	53:amod	_
+55	genética	genético	ADJ	_	Gender=Fem|Number=Sing	53	amod	53:amod	SpaceAfter=No
+56	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0039
+# text = por exemplo, hemofilia, fibrose cística, síndrome de rett, etc.
+1	por	por	ADP	_	_	2	case	2:case	_
+2	exemplo	exemplo	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:por	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	hemofilia	hemofilia	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	fibrose	fibrose	NOUN	_	Gender=Fem|Number=Sing	4	conj	4:conj	_
+7	cística	cístico	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	síndrome	síndrome	NOUN	_	Gender=Fem|Number=Sing	4	conj	4:conj	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	rett	rett	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	9	nmod	9:nmod:de	SpaceAfter=No
+12	,	,	PUNCT	_	_	4	punct	4:punct	_
+13	etc.	etc.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0041
+# text = , porque o defeito genético é eterno!
+1	,	,	PUNCT	_	_	7	punct	7:punct	_
+2	porque	porque	SCONJ	_	_	7	mark	7:mark	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	defeito	defeito	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+5	genético	genético	ADJ	_	Gender=Masc|Number=Sing	4	amod	4:amod	_
+6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+7	eterno	eterno	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+8	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0043
+# text = isto significa claramente: se um sintoma de vacinação se desenvolver após a vacina do mrna, nem eu nem qualquer outro terapeuta poderemos ajudar, pois os danos causados por este tipo de vacinação serão geneticamente irreversíveis.
+1	isto	isto	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	2	nsubj	2:nsubj	_
+2	significa	significar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	claramente	claramente	ADV	_	_	2	advmod	2:advmod	SpaceAfter=No
+4	:	:	PUNCT	_	_	25	punct	25:punct	_
+5	se	se	SCONJ	_	_	11	mark	11:mark	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	sintoma	sintoma	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	11:nsubj	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	vacinação	vacinação	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:de	_
+10	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	11	expl	11:expl	_
+11	desenvolver	desenvolver	VERB	_	Number=Sing|Person=3|VerbForm=Inf	25	advcl	25:advcl:se	_
+12	após	após	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	vacina	vacina	NOUN	_	Gender=Fem|Number=Sing	11	obl	11:obl:após	_
+15-16	do	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	mrna	mrna	NOUN	_	Number=Sing	14	nmod	14:nmod:de	SpaceAfter=No
+18	,	,	PUNCT	_	_	11	punct	11:punct	_
+19	nem	nem	CCONJ	_	_	20	advmod	20:advmod	_
+20	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	25	nsubj	25:nsubj|26:nsubj	_
+21	nem	nem	CCONJ	_	_	24	cc	24:cc	_
+22	qualquer	qualquer	DET	_	Number=Sing|PronType=Ind	24	det	24:det	_
+23	outro	outro	DET	_	Gender=Masc|Number=Sing|PronType=Ind	24	det	24:det	_
+24	terapeuta	terapeuta	NOUN	_	Number=Sing	20	conj	20:conj:nem|25:nsubj|26:nsubj	_
+25	poderemos	poder	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	2	conj	2:conj	_
+26	ajudar	ajudar	VERB	_	VerbForm=Inf	25	xcomp	25:xcomp	SpaceAfter=No
+27	,	,	PUNCT	_	_	39	punct	39:punct	_
+28	pois	pois	SCONJ	_	_	39	mark	39:mark	_
+29	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	30:det	_
+30	danos	dano	NOUN	_	Gender=Masc|Number=Plur	39	nsubj	39:nsubj	_
+31	causados	causar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	30	acl	30:acl	_
+32	por	por	ADP	_	_	34	case	34:case	_
+33	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	34	det	34:det	_
+34	tipo	tipo	NOUN	_	Gender=Masc|Number=Sing	31	obl:agent	31:obl:agent	_
+35	de	de	ADP	_	_	36	case	36:case	_
+36	vacinação	vacinação	NOUN	_	Gender=Fem|Number=Sing	34	nmod	34:nmod:de	_
+37	serão	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	39	cop	39:cop	_
+38	geneticamente	geneticamente	ADV	_	_	39	advmod	39:advmod	_
+39	irreversíveis	irreversível	ADJ	_	Number=Plur	26	advcl	26:advcl:pois	SpaceAfter=No
+40	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0045
+# text = grande daems.
+1	grande	grande	ADJ	_	Number=Sing	2	amod	2:amod	_
+2	daems	daems	X	_	Foreign=Yes	0	root	0:root	SpaceAfter=No
+3	.	.	PUNCT	_	_	2	punct	2:punct	_

@@ -1,0 +1,150 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Lula: "Eles não dão destaque ao apartamento do Geddel como deram ao MEU TRIPLEX".
+1	Lula	Lula	PROPN	_	_	6	nsubj	6:nsubj	SpaceAfter=No
+2	:	:	PUNCT	_	_	6	punct	6:punct	_
+3	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+4	Eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	6	nsubj	6:nsubj	_
+5	não	não	ADV	_	_	6	advmod	6:advmod	_
+6	dão	dar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	destaque	destaque	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+8-9	ao	_	_	_	_	_	_	_	_
+8	a	a	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	apartamento	apartamento	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:a	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	Geddel	Geddel	PROPN	_	_	10	nmod	10:nmod:de	_
+14	como	como	SCONJ	_	_	15	mark	15:mark	_
+15	deram	dar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	6	advcl	6:advcl:como	_
+16-17	ao	_	_	_	_	_	_	_	_
+16	a	a	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	MEU	MEU	PROPN	_	_	15	obl	15:obl:a	_
+19	TRIPLEX	TRIPLEX	PROPN	_	_	18	flat:name	18:flat:name	SpaceAfter=No
+20	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+21	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0003
+# text = Quem fala demais dá bom dia a cavalo.
+1	Quem	quem	PRON	_	PronType=Ind	4	nsubj	4:nsubj	_
+2	fala	falar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+3	demais	demais	ADV	_	_	2	advmod	2:advmod	_
+4	dá	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	bom	bom	ADJ	_	Gender=Masc|Number=Sing	6	amod	6:amod	_
+6	dia	dia	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7	a	a	ADP	_	_	8	case	8:case	_
+8	cavalo	cavalo	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:a	SpaceAfter=No
+9	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0005
+# text = Lula fala tanto, mas tanto... que às vezes escapa uma coisinha ou outra.
+1	Lula	Lula	PROPN	_	_	2	nsubj	2:nsubj	_
+2	fala	falar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	tanto	tanto	ADV	_	_	2	advmod	2:advmod	SpaceAfter=No
+4	,	,	PUNCT	_	_	6	punct	6:punct	_
+5	mas	mas	CCONJ	_	_	6	cc	6:cc	_
+6	tanto	tanto	ADV	_	_	3	conj	2:advmod|3:conj:mas	SpaceAfter=No
+7	...	...	PUNCT	_	_	12	punct	12:punct	_
+8	que	que	SCONJ	_	_	12	mark	12:mark	_
+9-10	às	_	_	_	_	_	_	_	_
+9	a	a	ADP	_	ExtPos=ADV	12	advmod	12:advmod	_
+10	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	fixed	9:fixed	_
+11	vezes	vez	NOUN	_	Gender=Fem|Number=Plur	9	fixed	9:fixed	_
+12	escapa	escapar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	advcl	2:advcl:que	_
+13	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	coisinha	coisinha	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	12:nsubj	_
+15	ou	ou	CCONJ	_	_	16	cc	16:cc	_
+16	outra	outro	PRON	_	Gender=Fem|Number=Sing|PronType=Ind	14	conj	12:nsubj|14:conj:ou	SpaceAfter=No
+17	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0007
+# text = Dessa vez, a coisinha que escapou foi séria.
+1-2	Dessa	_	_	_	_	_	_	_	_
+1	De	de	ADP	_	_	3	case	3:case	_
+2	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	3:det	_
+3	vez	vez	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:de	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	coisinha	coisinha	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	8:nsubj|10:nsubj	_
+7	que	que	PRON	_	PronType=Rel	8	nsubj	6:ref	_
+8	escapou	escapar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	acl:relcl	6:acl:relcl	_
+9	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	cop	10:cop	_
+10	séria	sério	ADJ	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+11	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0009
+# text = Assistam o trecho de um discurso feito em novembro de 2016: "Eles não dão destaque ao apartamento do Geddel como deram ao MEU triplex" É claro que o ex-presidente vai negar que disse isso... ou vai dizer que foi uma frase irônica.
+1	Assistam	assistir	VERB	_	Mood=Imp|Number=Plur|Person=3|VerbForm=Fin	0	root	0:root	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	trecho	trecho	NOUN	_	Gender=Masc|Number=Sing	1	obj	1:obj	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	discurso	discurso	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	_
+7	feito	fazer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	6	acl	6:acl	_
+8	em	em	ADP	_	_	9	case	9:case	_
+9	novembro	novembro	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:em	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	2016	2016	NUM	_	NumType=Card	9	nmod	9:nmod:de	SpaceAfter=No
+12	:	:	PUNCT	_	_	16	punct	16:punct	_
+13	"	"	PUNCT	_	_	16	punct	16:punct	SpaceAfter=No
+14	Eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	16	nsubj	16:nsubj	_
+15	não	não	ADV	_	_	16	advmod	16:advmod	_
+16	dão	dar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	32	csubj	32:csubj	_
+17	destaque	destaque	NOUN	_	Gender=Masc|Number=Sing	16	obj	16:obj	_
+18-19	ao	_	_	_	_	_	_	_	_
+18	a	a	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	apartamento	apartamento	NOUN	_	Gender=Masc|Number=Sing	16	obl	16:obl:a	_
+21-22	do	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	Geddel	Geddel	PROPN	_	_	20	nmod	20:nmod:de	_
+24	como	como	SCONJ	_	_	25	mark	25:mark	_
+25	deram	dar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	16	advcl	16:advcl:como	_
+26-27	ao	_	_	_	_	_	_	_	_
+26	a	a	ADP	_	_	29	case	29:case	_
+27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	29:det	_
+28	MEU	MEU	PROPN	_	_	29	det	29:det	_
+29	triplex	triplex	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	25	obl	25:obl:a	SpaceAfter=No
+30	"	"	PUNCT	_	_	16	punct	16:punct	_
+31	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	32	cop	32:cop	_
+32	claro	claro	ADJ	_	Gender=Masc|Number=Sing	1	dep	1:dep	_
+33	que	que	SCONJ	_	_	37	mark	37:mark	_
+34	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	35:det	_
+35	ex-presidente	ex-presidente	NOUN	_	Number=Sing	37	nsubj	37:nsubj	_
+36	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	37	aux	37:aux	_
+37	negar	negar	VERB	_	VerbForm=Inf	32	csubj	32:csubj	_
+38	que	que	SCONJ	_	_	39	mark	39:mark	_
+39	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	37	ccomp	37:ccomp	_
+40	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	39	obj	39:obj	SpaceAfter=No
+41	...	...	PUNCT	_	_	44	punct	44:punct	_
+42	ou	ou	CCONJ	_	_	44	cc	44:cc	_
+43	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	44	aux	44:aux	_
+44	dizer	dizer	VERB	_	VerbForm=Inf	16	conj	16:conj:ou	_
+45	que	que	SCONJ	_	_	48	mark	48:mark	_
+46	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	48	cop	48:cop	_
+47	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	48	det	48:det	_
+48	frase	frase	NOUN	_	Gender=Fem|Number=Sing	44	ccomp	44:ccomp	_
+49	irônica	irônico	ADJ	_	Gender=Fem|Number=Sing	48	amod	48:amod	SpaceAfter=No
+50	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0011
+# text = Como dizia o CHAVES do seriado: "É que me escapuliu".
+1	Como	como	SCONJ	_	_	2	mark	2:mark	_
+2	dizia	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	13	advcl	13:advcl:como	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	CHAVES	CHAVES	PROPN	_	_	2	nsubj	2:nsubj	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	seriado	seriado	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:de	SpaceAfter=No
+8	:	:	PUNCT	_	_	13	punct	13:punct	_
+9	"	"	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+10	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	discourse	13:discourse	_
+11	que	que	SCONJ	_	_	13	discourse	13:discourse	_
+12	me	me	PRON	_	Case=Dat|Number=Sing|Person=1|PronType=Prs	13	obj	13:obj	_
+13	escapuliu	escapulir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+14	"	"	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+15	.	.	PUNCT	_	_	13	punct	13:punct	_

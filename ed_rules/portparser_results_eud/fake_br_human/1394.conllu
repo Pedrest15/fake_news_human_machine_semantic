@@ -1,0 +1,184 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Senado aprova a IDENTIFICAÇÃO NACIONAL, documento que substituirá RG, CNH e título de eleitor.
+1	Senado	Senado	PROPN	_	_	2	nsubj	2:nsubj	_
+2	aprova	aprovar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	IDENTIFICAÇÃO	IDENTIFICAÇÃO	PROPN	_	_	2	obj	2:obj	_
+5	NACIONAL	NACIONAL	PROPN	_	_	4	amod	4:amod	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	documento	documento	NOUN	_	Gender=Masc|Number=Sing	4	appos	4:appos|9:nsubj	_
+8	que	que	PRON	_	PronType=Rel	9	nsubj	7:ref	_
+9	substituirá	substituir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	7	acl:relcl	7:acl:relcl	_
+10	RG	RG	PROPN	_	_	9	obj	9:obj	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	CNH	CNH	PROPN	_	_	10	conj	9:obj|10:conj:e	_
+13	e	e	CCONJ	_	_	14	cc	14:cc	_
+14	título	título	NOUN	_	Gender=Masc|Number=Sing	10	conj	9:obj|10:conj:e	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	eleitor	eleitor	NOUN	_	Gender=Masc|Number=Sing	14	nmod	14:nmod:de	SpaceAfter=No
+17	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = RG, CNH (habilitação) e título de eleitor serão reunidos em um único documento, que também armazenará dados biométricos (digitais) do cidadão.
+1	RG	RG	PROPN	_	_	12	nsubj:pass	12:nsubj:pass	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	CNH	CNH	PROPN	_	_	1	conj	1:conj:e|12:nsubj:pass	_
+4	(	(	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+5	habilitação	habilitação	NOUN	_	Gender=Fem|Number=Sing	3	parataxis	3:parataxis	SpaceAfter=No
+6	)	)	PUNCT	_	_	5	punct	5:punct	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	título	título	NOUN	_	Gender=Masc|Number=Sing	1	conj	1:conj:e|12:nsubj:pass	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	eleitor	eleitor	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:de	_
+11	serão	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	12	aux:pass	12:aux:pass	_
+12	reunidos	reunir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	_
+13	em	em	ADP	_	_	16	case	16:case	_
+14	um	um	NUM	_	Gender=Masc|NumType=Card	16	nummod	16:nummod	_
+15	único	único	ADJ	_	Gender=Masc|Number=Sing	16	amod	16:amod	_
+16	documento	documento	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:em|20:nsubj	SpaceAfter=No
+17	,	,	PUNCT	_	_	20	punct	20:punct	_
+18	que	que	PRON	_	PronType=Rel	20	nsubj	16:ref	_
+19	também	também	ADV	_	_	20	advmod	20:advmod	_
+20	armazenará	armazenar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	16	acl:relcl	16:acl:relcl	_
+21	dados	dado	NOUN	_	Gender=Masc|Number=Plur	20	obj	20:obj	_
+22	biométricos	biométrico	ADJ	_	Gender=Masc|Number=Plur	21	amod	21:amod	_
+23	(	(	PUNCT	_	_	24	punct	24:punct	SpaceAfter=No
+24	digitais	digital	ADJ	_	Number=Plur	21	amod	21:amod	SpaceAfter=No
+25	)	)	PUNCT	_	_	24	punct	24:punct	_
+26-27	do	_	_	_	_	_	_	_	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	cidadão	cidadão	NOUN	_	Gender=Masc|Number=Sing	21	nmod	21:nmod:de	SpaceAfter=No
+29	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0005
+# text = O plenário da casa (81 senadores) ainda terá que aprovar o projeto de lei.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	plenário	plenário	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	11:nsubj|13:nsubj	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	casa	casa	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+6	(	(	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+7	81	81	NUM	_	NumType=Card	8	nummod	8:nummod	_
+8	senadores	senador	NOUN	_	Gender=Masc|Number=Plur	2	appos	2:appos	SpaceAfter=No
+9	)	)	PUNCT	_	_	8	punct	8:punct	_
+10	ainda	ainda	ADV	_	_	11	advmod	11:advmod	_
+11	terá	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+12	que	que	ADP	_	_	13	mark	13:mark	_
+13	aprovar	aprovar	VERB	_	VerbForm=Inf	11	xcomp	11:xcomp	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	13	obj	13:obj	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	lei	lei	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:de	SpaceAfter=No
+18	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0007
+# text = A "Identificação Nacional" (nome do novo documento) será impresso pela Casa da Moeda.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+2	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+3	Identificação	Identificação	PROPN	_	_	14	nsubj:pass	14:nsubj:pass	_
+4	Nacional	Nacional	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+5	"	"	PUNCT	_	_	3	punct	3:punct	_
+6	(	(	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+7	nome	nome	NOUN	_	Gender=Masc|Number=Sing	3	appos	3:appos	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	11	case	11:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+10	novo	novo	ADJ	_	Gender=Masc|Number=Sing	11	amod	11:amod	_
+11	documento	documento	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	SpaceAfter=No
+12	)	)	PUNCT	_	_	7	punct	7:punct	_
+13	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	14	aux:pass	14:aux:pass	_
+14	impresso	imprimir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+15-16	pela	_	_	_	_	_	_	_	_
+15	por	por	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	Casa	Casa	PROPN	_	_	14	obl:agent	14:obl:agent	_
+18-19	da	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	Moeda	Moeda	PROPN	_	_	17	flat:name	17:flat:name	SpaceAfter=No
+21	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0009
+# text = Antonio Anastasia (relator do projeto) informou que há tempos se planeja um novo modelo de documentação civil que possa unificar todos os dados e facilitar a vida do cidadão.
+1	Antonio	Antonio	PROPN	_	_	9	nsubj	9:nsubj	_
+2	Anastasia	Anastasia	PROPN	_	_	1	flat:name	1:flat:name	_
+3	(	(	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+4	relator	relator	NOUN	_	Gender=Masc|Number=Sing	1	appos	1:appos	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:de	SpaceAfter=No
+8	)	)	PUNCT	_	_	4	punct	4:punct	_
+9	informou	informar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	que	que	SCONJ	_	_	14	mark	14:mark	_
+11	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	advcl	14:advcl	_
+12	tempos	tempo	NOUN	_	Gender=Masc|Number=Plur	11	obj	11:obj	_
+13	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	14	expl:impers	14:expl:impers	_
+14	planeja	planejar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	ccomp	9:ccomp	_
+15	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+16	novo	novo	ADJ	_	Gender=Masc|Number=Sing	17	amod	17:amod	_
+17	modelo	modelo	NOUN	_	Number=Sing	14	obj	14:obj|22:nsubj|23:nsubj|28:nsubj	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	documentação	documentação	NOUN	_	Gender=Fem|Number=Sing	17	nmod	17:nmod:de	_
+20	civil	civil	ADJ	_	Number=Sing	19	amod	19:amod	_
+21	que	que	PRON	_	PronType=Rel	22	nsubj	17:ref	_
+22	possa	poder	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	acl:relcl	17:acl:relcl	_
+23	unificar	unificar	VERB	_	VerbForm=Inf	22	xcomp	22:xcomp	_
+24	todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Ind	26	det	26:det	_
+25	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	26:det	_
+26	dados	dado	NOUN	_	Gender=Masc|Number=Plur	23	obj	23:obj	_
+27	e	e	CCONJ	_	_	28	cc	28:cc	_
+28	facilitar	facilitar	VERB	_	VerbForm=Inf	23	conj	22:xcomp|23:conj:e	_
+29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	vida	vida	NOUN	_	Gender=Fem|Number=Sing	28	obj	28:obj	_
+31-32	do	_	_	_	_	_	_	_	_
+31	de	de	ADP	_	_	33	case	33:case	_
+32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	33:det	_
+33	cidadão	cidadão	NOUN	_	Gender=Masc|Number=Sing	30	nmod	30:nmod:de	SpaceAfter=No
+34	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0011
+# text = "... o documento servirá para diversas situações do dia a dia, nas quais se exige a comprovação de dados pessoais perante órgãos e entidades públicos e privados", disse o relator.
+1	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+2	.	.	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+3	..	..	PUNCT	_	_	2	punct	2:punct	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	documento	documento	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+6	servirá	servir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	35	ccomp:speech	35:ccomp:speech	_
+7	para	para	ADP	_	_	9	case	9:case	_
+8	diversas	diversos	DET	_	Gender=Fem|Number=Plur|PronType=Dem	9	det	9:det	_
+9	situações	situação	NOUN	_	Gender=Fem|Number=Plur	6	obl	6:obl:para|20:obl:em	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	dia	dia	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:de	_
+13	a	a	ADP	_	_	14	case	14:case	_
+14	dia	dia	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:a	SpaceAfter=No
+15	,	,	PUNCT	_	_	20	punct	20:punct	_
+16-17	nas	_	_	_	_	_	_	_	_
+16	em	em	ADP	_	_	17	case	17:case	_
+17	as	o	PRON	_	ExtPos=PRON|Gender=Fem|Number=Plur|Person=3|PronType=Dem	20	obl	9:ref|20:obl	_
+18	quais	qual	PRON	_	Number=Plur|PronType=Rel	17	fixed	17:fixed	_
+19	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	20	expl:impers	20:expl:impers	_
+20	exige	exigir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	acl:relcl	9:acl:relcl	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	comprovação	comprovação	NOUN	_	Gender=Fem|Number=Sing	20	obj	20:obj	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	dados	dado	NOUN	_	Gender=Masc|Number=Plur	22	nmod	22:nmod:de	_
+25	pessoais	pessoal	ADJ	_	Number=Plur	24	amod	24:amod	_
+26	perante	perante	ADP	_	_	27	case	27:case|29:case	_
+27	órgãos	órgão	NOUN	_	Gender=Masc|Number=Plur	22	nmod	22:nmod:perante	_
+28	e	e	CCONJ	_	_	29	cc	29:cc	_
+29	entidades	entidade	NOUN	_	Gender=Fem|Number=Plur	27	conj	22:nmod:perante|27:conj:e	_
+30	públicos	público	ADJ	_	Gender=Masc|Number=Plur	27	amod	27:amod|29:amod	_
+31	e	e	CCONJ	_	_	32	cc	32:cc	_
+32	privados	privado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	30	conj	27:amod|29:amod|30:conj:e	SpaceAfter=No
+33	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+34	,	,	PUNCT	_	_	6	punct	6:punct	_
+35	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+36	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	37:det	_
+37	relator	relator	NOUN	_	Gender=Masc|Number=Sing	35	nsubj	35:nsubj	SpaceAfter=No
+38	.	.	PUNCT	_	_	35	punct	35:punct	_

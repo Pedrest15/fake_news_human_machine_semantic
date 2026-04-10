@@ -1,0 +1,581 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Número de mortos após tremor na fronteira entre Iraque e Irã supera 1.200.
+1	Número	número	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	13:nsubj	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	mortos	morto	NOUN	_	Gender=Masc|Number=Plur	1	nmod	1:nmod:de	_
+4	após	após	ADP	_	_	5	case	5:case	_
+5	tremor	tremor	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:após	_
+6-7	na	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	fronteira	fronteira	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:em	_
+9	entre	entre	ADP	_	_	10	case	10:case	_
+10	Iraque	Iraque	PROPN	_	_	8	nmod	8:nmod:entre	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	Irã	Irã	PROPN	_	_	10	conj	8:nmod:entre|10:conj:e	_
+13	supera	superar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+14	1.200	1.200	NUM	_	NumType=Card	13	obj	13:obj	SpaceAfter=No
+15	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0003
+# text = Terremoto de 8,2 de magnitude atingiu a região no domingo (12).
+1	Terremoto	terremoto	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	8,2	8,2	NUM	_	NumType=Card	1	nmod	1:nmod:de	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	magnitude	magnitude	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:de	_
+6	atingiu	atingir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	região	região	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+9-10	no	_	_	_	_	_	_	_	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	domingo	domingo	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:em	_
+12	(	(	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+13	12	12	NUM	_	NumType=Card	11	appos	11:appos	SpaceAfter=No
+14	)	)	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+15	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0005
+# text = Mais de 12 mil pessoas ficaram feridas.
+1	Mais	mais	ADV	_	ExtPos=ADV	3	advmod	3:advmod	_
+2	de	de	ADP	_	_	1	fixed	1:fixed	_
+3	12	12	NUM	_	NumType=Card	5	nummod	5:nummod	_
+4	mil	mil	NUM	_	NumType=Card	3	flat	3:flat	_
+5	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	6	nsubj	6:nsubj|7:nsubj	_
+6	ficaram	ficar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	feridas	ferido	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	6	xcomp	6:xcomp	SpaceAfter=No
+8	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0007
+# text = O tremor devastador que atingiu a fronteira entre Irã e Iraque no domingo (12) já deixou mais de 1.200 mortos, sendo uma das maiores tragédias sísmicas dos últimos anos.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	tremor	tremor	NOUN	_	Gender=Masc|Number=Sing	19	nsubj	5:nsubj|19:nsubj	_
+3	devastador	devastador	ADJ	_	Gender=Masc|Number=Sing	2	amod	2:amod	_
+4	que	que	PRON	_	PronType=Rel	5	nsubj	2:ref	_
+5	atingiu	atingir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	fronteira	fronteira	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+8	entre	entre	ADP	_	_	9	case	9:case	_
+9	Irã	Irã	PROPN	_	_	7	nmod	7:nmod:entre	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	Iraque	Iraque	PROPN	_	_	9	conj	7:nmod:entre|9:conj:e	_
+12-13	no	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	domingo	domingo	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:em	_
+15	(	(	PUNCT	_	_	16	punct	16:punct	SpaceAfter=No
+16	12	12	NUM	_	NumType=Card	14	appos	14:appos	SpaceAfter=No
+17	)	)	PUNCT	_	_	16	punct	16:punct	_
+18	já	já	ADV	_	_	19	advmod	19:advmod	_
+19	deixou	deixar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+20	mais	mais	ADV	_	ExtPos=ADV	22	advmod	22:advmod	_
+21	de	de	ADP	_	_	20	fixed	20:fixed	_
+22	1.200	1.200	NUM	_	NumType=Card	23	nummod	23:nummod	_
+23	mortos	morto	NOUN	_	Gender=Masc|Number=Plur	19	obj	19:obj	SpaceAfter=No
+24	,	,	PUNCT	_	_	26	punct	26:punct	_
+25	sendo	ser	AUX	_	VerbForm=Ger	26	cop	26:cop	_
+26	uma	um	NUM	_	Gender=Fem|NumType=Card	19	parataxis	19:parataxis	_
+27-28	das	_	_	_	_	_	_	_	_
+27	de	de	ADP	_	_	30	case	30:case	_
+28	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	30	det	30:det	_
+29	maiores	maior	ADJ	_	Number=Plur	30	amod	30:amod	_
+30	tragédias	tragédia	NOUN	_	Gender=Fem|Number=Plur	26	nmod	26:nmod:de	_
+31	sísmicas	sísmico	ADJ	_	Gender=Fem|Number=Plur	30	amod	30:amod	_
+32-33	dos	_	_	_	_	_	_	_	_
+32	de	de	ADP	_	_	35	case	35:case	_
+33	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	35	det	35:det	_
+34	últimos	último	ADJ	_	Gender=Masc|Number=Plur	35	amod	35:amod	_
+35	anos	ano	NOUN	_	Gender=Masc|Number=Plur	30	nmod	30:nmod:de	SpaceAfter=No
+36	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0009
+# text = O terremoto, com uma magnitude impressionante de 8,2, teve seu epicentro registrado a 22,4 km de Derbendîxan, no Iraque.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	terremoto	terremoto	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	11:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
+4	com	com	ADP	_	_	6	case	6:case	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	magnitude	magnitude	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:com	_
+7	impressionante	impressionante	ADJ	_	Number=Sing	6	amod	6:amod	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	8,2	8,2	NUM	_	NumType=Card	6	nmod	6:nmod:de	SpaceAfter=No
+10	,	,	PUNCT	_	_	6	punct	6:punct	_
+11	teve	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	13	det	13:det	_
+13	epicentro	epicentro	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj|14:nsubj:pass	_
+14	registrado	registrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	11	xcomp	11:xcomp	_
+15	a	a	ADP	_	_	17	case	17:case	_
+16	22,4	22,4	NUM	_	NumType=Card	17	nummod	17:nummod	_
+17	km	quilômetro	NOUN	_	Abbr=Yes|Gender=Masc	14	obl	14:obl:a	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	Derbendîxan	Derbendîxan	PROPN	_	_	17	nmod	17:nmod:de	SpaceAfter=No
+20	,	,	PUNCT	_	_	23	punct	23:punct	_
+21-22	no	_	_	_	_	_	_	_	_
+21	em	em	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	Iraque	Iraque	PROPN	_	_	14	obl	14:obl:em	SpaceAfter=No
+24	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0011
+# text = Na manhã desta segunda-feira (13), os trabalhos de resgate continuam, mas especialistas alertam que o número de vítimas pode aumentar drasticamente.
+1-2	Na	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	manhã	manhã	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl:em	_
+4-5	desta	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	6	det	6:det	_
+6	segunda-feira	segunda-feira	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:de	_
+7	(	(	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	13	13	NUM	_	NumType=Card	6	appos	6:appos	SpaceAfter=No
+9	)	)	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+10	,	,	PUNCT	_	_	3	punct	3:punct	_
+11	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	12:det	_
+12	trabalhos	trabalho	NOUN	_	Gender=Masc|Number=Plur	15	nsubj	15:nsubj	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	resgate	resgate	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:de	_
+15	continuam	continuar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+16	,	,	PUNCT	_	_	19	punct	19:punct	_
+17	mas	mas	CCONJ	_	_	19	cc	19:cc	_
+18	especialistas	especialista	NOUN	_	Number=Plur	19	nsubj	19:nsubj	_
+19	alertam	alertar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	conj	15:conj:mas	_
+20	que	que	SCONJ	_	_	25	mark	25:mark	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	número	número	NOUN	_	Gender=Masc|Number=Sing	25	nsubj	25:nsubj|26:nsubj	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	vítimas	vítima	NOUN	_	Gender=Fem|Number=Plur	22	nmod	22:nmod:de	_
+25	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	ccomp	19:ccomp	_
+26	aumentar	aumentar	VERB	_	VerbForm=Inf	25	xcomp	25:xcomp	_
+27	drasticamente	drasticamente	ADV	_	_	26	advmod	26:advmod	SpaceAfter=No
+28	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0013
+# text = No Irã, a contagem oficial ultrapassa 1.100 mortes, com mais de 10 mil feridos, conforme relatos da agência de notícias Associated Press.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	Irã	Irã	PROPN	_	_	8	obl	8:obl:em	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	contagem	contagem	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	8:nsubj	_
+7	oficial	oficial	ADJ	_	Number=Sing	6	amod	6:amod	_
+8	ultrapassa	ultrapassar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+9	1.100	1.100	NUM	_	NumType=Card	10	nummod	10:nummod	_
+10	mortes	morte	NOUN	_	Gender=Fem|Number=Plur	8	obj	8:obj	SpaceAfter=No
+11	,	,	PUNCT	_	_	17	punct	17:punct	_
+12	com	com	ADP	_	_	17	case	17:case	_
+13	mais	mais	ADV	_	ExtPos=ADV	15	advmod	15:advmod	_
+14	de	de	ADP	_	_	13	fixed	13:fixed	_
+15	10	10	NUM	_	NumType=Card	17	nummod	17:nummod	_
+16	mil	mil	NUM	_	NumType=Card	15	flat	15:flat	_
+17	feridos	ferido	NOUN	_	Gender=Masc|Number=Plur	10	nmod	10:nmod:com	SpaceAfter=No
+18	,	,	PUNCT	_	_	20	punct	20:punct	_
+19	conforme	conforme	ADP	_	_	20	case	20:case	_
+20	relatos	relato	NOUN	_	Gender=Masc|Number=Plur	8	obl	8:obl:conforme	_
+21-22	da	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	agência	agência	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:de	_
+24	de	de	ADP	_	_	25	case	25:case	_
+25	notícias	notícia	NOUN	_	Gender=Fem|Number=Plur	23	nmod	23:nmod:de	_
+26	Associated	Associated	PROPN	_	_	25	nmod	25:nmod	_
+27	Press	Press	PROPN	_	_	26	flat:name	26:flat:name	SpaceAfter=No
+28	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0015
+# text = A situação é particularmente grave na província de Kermanshah, onde a infraestrutura foi severamente danificada.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	situação	situação	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+4	particularmente	particularmente	ADV	_	_	5	advmod	5:advmod	_
+5	grave	grave	ADJ	_	Number=Sing	0	root	0:root	_
+6-7	na	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	província	província	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:em|17:obl	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	Kermanshah	Kermanshah	PROPN	_	_	8	nmod	8:nmod:de	SpaceAfter=No
+11	,	,	PUNCT	_	_	17	punct	17:punct	_
+12	onde	onde	ADV	_	_	17	advmod	8:ref	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	infraestrutura	infraestrutura	NOUN	_	Gender=Fem|Number=Sing	17	nsubj:pass	17:nsubj:pass	_
+15	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	aux:pass	17:aux:pass	_
+16	severamente	severamente	ADV	_	_	17	advmod	17:advmod	_
+17	danificada	danificar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	8	acl:relcl	8:acl:relcl	SpaceAfter=No
+18	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0017
+# text = A cidade de Sarpol-e Zahab, próxima à fronteira, sofreu danos catastróficos, incluindo o colapso total do principal hospital.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	cidade	cidade	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	12:nsubj	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	Sarpol-e	sarpol-e	CCONJ	_	_	5	cc	5:cc	_
+5	Zahab	Zahab	PROPN	_	_	2	nmod	2:nmod:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	próxima	próximo	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	_
+8-9	à	_	_	_	_	_	_	_	_
+8	a	a	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	fronteira	fronteira	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:a	SpaceAfter=No
+11	,	,	PUNCT	_	_	7	punct	7:punct	_
+12	sofreu	sofrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+13	danos	dano	NOUN	_	Gender=Masc|Number=Plur	12	obj	12:obj	_
+14	catastróficos	catastrófico	ADJ	_	Gender=Masc|Number=Plur	13	amod	13:amod	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	incluindo	incluir	VERB	_	VerbForm=Ger	13	acl	13:acl	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	colapso	colapso	NOUN	_	Gender=Masc|Number=Sing	16	obj	16:obj	_
+19	total	total	ADJ	_	Number=Sing	18	amod	18:amod	_
+20-21	do	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	23	case	23:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+22	principal	principal	ADJ	_	Number=Sing	23	amod	23:amod	_
+23	hospital	hospital	NOUN	_	Gender=Masc|Number=Sing	18	nmod	18:nmod:de	SpaceAfter=No
+24	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0019
+# text = No Iraque, o tremor causou pelo menos 100 mortes e mais de 2 mil feridos na região do Curdistão iraquiano, de acordo com a CNN e o ministro da Saúde local, Rekawt Hama Rasheed.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	Iraque	Iraque	PROPN	_	_	7	obl	7:obl:em	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	tremor	tremor	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+7	causou	causar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8-9	pelo	_	_	_	_	_	_	_	_
+8	por	por	ADP	_	ExtPos=ADV	11	advmod	11:advmod	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	fixed	8:fixed	_
+10	menos	menos	NOUN	_	Gender=Masc|Number=Sing	8	fixed	8:fixed	_
+11	100	100	NUM	_	NumType=Card	12	nummod	12:nummod	_
+12	mortes	morte	NOUN	_	Gender=Fem|Number=Plur	7	obj	7:obj	_
+13	e	e	CCONJ	_	_	18	cc	18:cc	_
+14	mais	mais	ADV	_	ExtPos=ADV	16	advmod	16:advmod	_
+15	de	de	ADP	_	_	14	fixed	14:fixed	_
+16	2	2	NUM	_	NumType=Card	18	nummod	18:nummod	_
+17	mil	mil	NUM	_	NumType=Card	16	flat	16:flat	_
+18	feridos	ferido	NOUN	_	Gender=Masc|Number=Plur	12	conj	7:obj|12:conj:e	_
+19-20	na	_	_	_	_	_	_	_	_
+19	em	em	ADP	_	_	21	case	21:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	região	região	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:em	_
+22-23	do	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	Curdistão	Curdistão	PROPN	_	_	21	nmod	21:nmod:de	_
+25	iraquiano	iraquiano	ADJ	_	Gender=Masc|Number=Sing	24	amod	24:amod	SpaceAfter=No
+26	,	,	PUNCT	_	_	28	punct	28:punct	_
+27	de	de	ADP	_	_	28	case	28:case|34:case	_
+28	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:de	_
+29	com	com	ADP	_	_	31	case	31:case	_
+30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+31	CNN	CNN	PROPN	_	_	28	nmod	28:nmod:com	_
+32	e	e	CCONJ	_	_	34	cc	34:cc	_
+33	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	34:det	_
+34	ministro	ministro	NOUN	_	Gender=Masc|Number=Sing	28	conj	7:obl:de|28:conj:e	_
+35-36	da	_	_	_	_	_	_	_	_
+35	de	de	ADP	_	_	37	case	37:case	_
+36	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	37:det	_
+37	Saúde	Saúde	PROPN	_	_	34	nmod	34:nmod:de	_
+38	local	local	ADJ	_	Number=Sing	37	amod	37:amod	SpaceAfter=No
+39	,	,	PUNCT	_	_	40	punct	40:punct	_
+40	Rekawt	Rekawt	PROPN	_	_	34	appos	34:appos	_
+41	Hama	Hama	PROPN	_	_	40	flat:name	40:flat:name	_
+42	Rasheed	Rasheed	PROPN	_	_	40	flat:name	40:flat:name	SpaceAfter=No
+43	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0021
+# text = A província de Sulaimaniyah foi a mais afetada, e a barragem de Darbandijan apresenta danos estruturais severos, gerando temores de rompimento.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	província	província	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Sulaimaniyah	Sulaimaniyah	PROPN	_	_	2	nmod	2:nmod:de	_
+5	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	cop	6:cop	_
+6	a	o	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Dem	0	root	0:root	_
+7	mais	mais	ADV	_	_	8	advmod	8:advmod	_
+8	afetada	afetar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	6	acl	6:acl	SpaceAfter=No
+9	,	,	PUNCT	_	_	15	punct	15:punct	_
+10	e	e	CCONJ	_	_	15	cc	15:cc	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	barragem	barragem	NOUN	_	Gender=Fem|Number=Sing	15	nsubj	15:nsubj	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	Darbandijan	Darbandijan	PROPN	_	_	12	nmod	12:nmod:de	_
+15	apresenta	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	6:conj:e	_
+16	danos	dano	NOUN	_	Gender=Masc|Number=Plur	15	obj	15:obj	_
+17	estruturais	estrutural	ADJ	_	Number=Plur	16	amod	16:amod	_
+18	severos	severo	ADJ	_	Gender=Masc|Number=Plur	16	amod	16:amod	SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	20:punct	_
+20	gerando	gerar	VERB	_	VerbForm=Ger	15	advcl	15:advcl	_
+21	temores	temor	NOUN	_	Gender=Masc|Number=Plur	20	obj	20:obj	_
+22	de	de	ADP	_	_	23	case	23:case	_
+23	rompimento	rompimento	NOUN	_	Gender=Masc|Number=Sing	21	nmod	21:nmod:de	SpaceAfter=No
+24	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0023
+# text = O diretor da barragem, Rahman Hani, relatou "danos extensos e preocupantes", colocando a população ribeirinha em alerta máximo.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	diretor	diretor	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	10:nsubj	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	barragem	barragem	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	Rahman	Rahman	PROPN	_	_	2	appos	2:appos	_
+8	Hani	Hani	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+9	,	,	PUNCT	_	_	7	punct	7:punct	_
+10	relatou	relatar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+11	"	"	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+12	danos	dano	NOUN	_	Gender=Masc|Number=Plur	10	obj	10:obj	_
+13	extensos	extenso	ADJ	_	Gender=Masc|Number=Plur	12	amod	12:amod	_
+14	e	e	CCONJ	_	_	15	cc	15:cc	_
+15	preocupantes	preocupante	ADJ	_	Number=Plur	13	conj	12:amod|13:conj:e	SpaceAfter=No
+16	"	"	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+17	,	,	PUNCT	_	_	18	punct	18:punct	_
+18	colocando	colocar	VERB	_	VerbForm=Ger	10	advcl	10:advcl	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	população	população	NOUN	_	Gender=Fem|Number=Sing	18	obj	18:obj	_
+21	ribeirinha	ribeirinho	ADJ	_	Gender=Fem|Number=Sing	20	amod	20:amod	_
+22	em	em	ADP	_	_	23	case	23:case	_
+23	alerta	alerta	NOUN	_	Number=Sing	18	obl	18:obl:em	_
+24	máximo	máximo	ADJ	_	Gender=Masc|Number=Sing	23	amod	23:amod	SpaceAfter=No
+25	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0025
+# text = Especialistas afirmam que esse terremoto é o mais mortal desde o que atingiu o Haiti em 2010.
+1	Especialistas	especialista	NOUN	_	Number=Plur	2	nsubj	2:nsubj	_
+2	afirmam	afirmar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	7	mark	7:mark	_
+4	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	5	det	5:det	_
+5	terremoto	terremoto	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+7	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	2	ccomp	2:ccomp	_
+8	mais	mais	ADV	_	_	9	advmod	9:advmod	_
+9	mortal	mortal	ADJ	_	Number=Sing	7	amod	7:amod	_
+10	desde	desde	ADP	_	_	11	case	11:case	_
+11	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	nmod	7:nmod:desde|13:nsubj	_
+12	que	que	PRON	_	PronType=Rel	13	nsubj	11:ref	_
+13	atingiu	atingir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	acl:relcl	11:acl:relcl	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	Haiti	Haiti	PROPN	_	_	13	obj	13:obj	_
+16	em	em	ADP	_	_	17	case	17:case	_
+17	2010	2010	NUM	_	NumType=Card	13	obl	13:obl:em	SpaceAfter=No
+18	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0027
+# text = O evento foi sentido em várias partes do Iraque, incluindo Bagdá, onde a terra tremeu por mais de um minuto.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	evento	evento	NOUN	_	Gender=Masc|Number=Sing	4	nsubj:pass	4:nsubj:pass	_
+3	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	sentido	sentir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	várias	vários	DET	_	Gender=Fem|Number=Plur|PronType=Ind	7	det	7:det	_
+7	partes	parte	NOUN	_	Gender=Fem|Number=Plur	4	obl	4:obl:em	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	Iraque	Iraque	PROPN	_	_	7	nmod	7:nmod:de	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	incluindo	incluir	VERB	_	VerbForm=Ger	7	acl	7:acl	_
+13	Bagdá	Bagdá	PROPN	_	_	12	obj	12:obj|18:obl	SpaceAfter=No
+14	,	,	PUNCT	_	_	18	punct	18:punct	_
+15	onde	onde	ADV	_	_	18	advmod	13:ref	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	terra	terra	NOUN	_	Gender=Fem|Number=Sing	18	nsubj	18:nsubj	_
+18	tremeu	tremer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	acl:relcl	13:acl:relcl	_
+19	por	por	ADP	_	_	23	case	23:case	_
+20	mais	mais	ADV	_	ExtPos=ADV	22	advmod	22:advmod	_
+21	de	de	ADP	_	_	20	fixed	20:fixed	_
+22	um	um	NUM	_	Gender=Masc|NumType=Card	23	nummod	23:nummod	_
+23	minuto	minuto	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:por	SpaceAfter=No
+24	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0029
+# text = Cortes de energia elétrica e bloqueios de estradas devido a deslizamentos de terra complicam ainda mais os esforços de ajuda.
+1	Cortes	corte	NOUN	_	Gender=Masc|Number=Plur	14	nsubj	14:nsubj	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	energia	energia	NOUN	_	Gender=Fem|Number=Sing	1	nmod	1:nmod:de	_
+4	elétrica	elétrico	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	bloqueios	bloqueio	NOUN	_	Gender=Masc|Number=Plur	1	conj	1:conj:e|14:nsubj	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	estradas	estrada	NOUN	_	Gender=Fem|Number=Plur	6	nmod	6:nmod:de	_
+9	devido	dever	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	6	acl	6:acl	_
+10	a	a	ADP	_	_	11	case	11:case	_
+11	deslizamentos	deslizamento	NOUN	_	Gender=Masc|Number=Plur	9	obl	9:obl:a	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	terra	terra	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:de	_
+14	complicam	complicar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+15	ainda	ainda	ADV	_	_	16	advmod	16:advmod	_
+16	mais	mais	ADV	_	_	14	advmod	14:advmod	_
+17	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	18:det	_
+18	esforços	esforço	NOUN	_	Gender=Masc|Number=Plur	14	obj	14:obj	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	ajuda	ajuda	NOUN	_	Gender=Fem|Number=Sing	18	nmod	18:nmod:de	SpaceAfter=No
+21	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0031
+# text = No sudeste da Turquia, perto da fronteira, a cidade de Diyarbakir também relatou tremores fortes, embora sem vítimas até o momento.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	sudeste	sudeste	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:em	_
+4-5	da	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	Turquia	Turquia	PROPN	_	_	3	nmod	3:nmod:de	SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	8:punct	_
+8	perto	perto	ADV	_	_	18	advmod	18:advmod	_
+9-10	da	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	fronteira	fronteira	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:de	SpaceAfter=No
+12	,	,	PUNCT	_	_	8	punct	8:punct	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	cidade	cidade	NOUN	_	Gender=Fem|Number=Sing	18	nsubj	18:nsubj	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	Diyarbakir	Diyarbakir	PROPN	_	_	14	nmod	14:nmod:de	_
+17	também	também	ADV	_	_	18	advmod	18:advmod	_
+18	relatou	relatar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+19	tremores	tremor	NOUN	_	Gender=Masc|Number=Plur	18	obj	18:obj	_
+20	fortes	forte	ADJ	_	Number=Plur	19	amod	19:amod	SpaceAfter=No
+21	,	,	PUNCT	_	_	24	punct	24:punct	_
+22	embora	embora	SCONJ	_	_	24	mark	24:mark	_
+23	sem	sem	ADP	_	_	24	case	24:case	_
+24	vítimas	vítima	NOUN	_	Gender=Fem|Number=Plur	18	advcl	18:advcl:embora_sem	_
+25	até	até	ADP	_	_	27	case	27:case	_
+26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	momento	momento	NOUN	_	Gender=Masc|Number=Sing	24	nmod	24:nmod:até	SpaceAfter=No
+28	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0033
+# text = O presidente do Brasil, Michel Temer, expressou solidariedade às famílias das vítimas via Twitter.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	presidente	presidente	NOUN	_	Number=Sing	10	nsubj	10:nsubj	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	Brasil	Brasil	PROPN	_	_	2	nmod	2:nmod:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	Michel	Michel	PROPN	_	_	2	appos	2:appos	_
+8	Temer	Temer	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+9	,	,	PUNCT	_	_	7	punct	7:punct	_
+10	expressou	expressar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+11	solidariedade	solidariedade	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+12-13	às	_	_	_	_	_	_	_	_
+12	a	a	ADP	_	_	14	case	14:case	_
+13	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	14:det	_
+14	famílias	família	NOUN	_	Gender=Fem|Number=Plur	11	nmod	11:nmod:a	_
+15-16	das	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	17:det	_
+17	vítimas	vítima	NOUN	_	Gender=Fem|Number=Plur	14	nmod	14:nmod:de	_
+18	via	via	ADP	_	_	19	case	19:case	_
+19	Twitter	Twitter	PROPN	_	_	10	obl	10:obl:via	SpaceAfter=No
+20	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0035
+# text = O Papa Francisco, em mensagem divulgada pelo secretário de Estado do Vaticano, Pietro Parolin, manifestou profunda tristeza e prometeu orações e apoio espiritual aos afetados.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Papa	Papa	PROPN	_	_	20	nsubj	20:nsubj|24:nsubj	_
+3	Francisco	Francisco	PROPN	_	_	2	flat:name	2:flat:name	SpaceAfter=No
+4	,	,	PUNCT	_	_	6	punct	6:punct	_
+5	em	em	ADP	_	_	6	case	6:case	_
+6	mensagem	mensagem	NOUN	_	Gender=Fem|Number=Sing	20	obl	20:obl:em	_
+7	divulgada	divulgar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	6	acl	6:acl	_
+8-9	pelo	_	_	_	_	_	_	_	_
+8	por	por	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	secretário	secretário	NOUN	_	Gender=Masc|Number=Sing	7	obl:agent	7:obl:agent	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	Estado	Estado	PROPN	_	_	10	nmod	10:nmod:de	_
+13-14	do	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	Vaticano	Vaticano	PROPN	_	_	12	flat:name	12:flat:name	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	Pietro	Pietro	PROPN	_	_	10	appos	10:appos	_
+18	Parolin	Parolin	PROPN	_	_	17	flat:name	17:flat:name	SpaceAfter=No
+19	,	,	PUNCT	_	_	17	punct	17:punct	_
+20	manifestou	manifestar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+21	profunda	profundo	ADJ	_	Gender=Fem|Number=Sing	22	amod	22:amod	_
+22	tristeza	tristeza	NOUN	_	Gender=Fem|Number=Sing	20	obj	20:obj	_
+23	e	e	CCONJ	_	_	24	cc	24:cc	_
+24	prometeu	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	conj	20:conj:e	_
+25	orações	oraçõe	NOUN	_	Gender=Fem|Number=Plur	24	obj	24:obj	_
+26	e	e	CCONJ	_	_	27	cc	27:cc	_
+27	apoio	apoio	NOUN	_	Gender=Masc|Number=Sing	25	conj	24:obj|25:conj:e	_
+28	espiritual	espiritual	ADJ	_	Number=Sing	27	amod	27:amod	_
+29-30	aos	_	_	_	_	_	_	_	_
+29	a	a	ADP	_	_	31	case	31:case	_
+30	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	31	det	31:det	_
+31	afetados	afetado	NOUN	_	Gender=Masc|Number=Plur	24	obl	24:obl:a	SpaceAfter=No
+32	.	.	PUNCT	_	_	20	punct	20:punct	_
+
+# sent_id = S0037
+# text = O Irã, um dos países mais atingidos por terremotos no mundo, enfrentou anteriormente tremores devastadores, como o de 2003 em Bam, que matou 31 mil pessoas.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Irã	Irã	PROPN	_	_	16	nsubj	16:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	um	um	NUM	_	Gender=Masc|NumType=Card	2	appos	2:appos	_
+5-6	dos	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	7:det	_
+7	países	país	NOUN	_	Gender=Masc|Number=Plur	4	nmod	4:nmod:de	_
+8	mais	mais	ADV	_	_	9	advmod	9:advmod	_
+9	atingidos	atingir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	7	acl	7:acl	_
+10	por	por	ADP	_	_	11	case	11:case	_
+11	terremotos	terremoto	NOUN	_	Gender=Masc|Number=Plur	9	obl:agent	9:obl:agent	_
+12-13	no	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:em	SpaceAfter=No
+15	,	,	PUNCT	_	_	4	punct	4:punct	_
+16	enfrentou	enfrentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+17	anteriormente	anteriormente	ADV	_	_	16	advmod	16:advmod	_
+18	tremores	tremor	NOUN	_	Gender=Masc|Number=Plur	16	obj	16:obj	_
+19	devastadores	devastador	ADJ	_	Gender=Masc|Number=Plur	18	amod	18:amod	SpaceAfter=No
+20	,	,	PUNCT	_	_	22	punct	22:punct	_
+21	como	como	ADP	_	_	22	case	22:case	_
+22	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	18	nmod	18:nmod:como|29:nsubj	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	2003	2003	NUM	_	NumType=Card	22	nmod	22:nmod:de	_
+25	em	em	ADP	_	_	26	case	26:case	_
+26	Bam	Bam	PROPN	_	_	22	nmod	22:nmod:em	SpaceAfter=No
+27	,	,	PUNCT	_	_	29	punct	29:punct	_
+28	que	que	PRON	_	PronType=Rel	29	nsubj	22:ref	_
+29	matou	matar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	acl:relcl	22:acl:relcl	_
+30	31	31	NUM	_	NumType=Card	32	nummod	32:nummod	_
+31	mil	mil	NUM	_	NumType=Card	30	flat	30:flat	_
+32	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	29	obj	29:obj	SpaceAfter=No
+33	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0039
+# text = A comunidade internacional se mobiliza para oferecer ajuda, mas a escassez de recursos e a extensão dos danos representam um enorme desafio.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	comunidade	comunidade	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+3	internacional	internacional	ADJ	_	Number=Sing	2	amod	2:amod	_
+4	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	5	expl	5:expl	_
+5	mobiliza	mobilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	para	para	ADP	_	_	7	mark	7:mark	_
+7	oferecer	oferecer	VERB	_	VerbForm=Inf	5	advcl	5:advcl:para	_
+8	ajuda	ajuda	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	SpaceAfter=No
+9	,	,	PUNCT	_	_	21	punct	21:punct	_
+10	mas	mas	CCONJ	_	_	21	cc	21:cc	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	escassez	escassez	NOUN	_	Gender=Fem|Number=Sing	21	nsubj	21:nsubj	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	recursos	recurso	NOUN	_	Gender=Masc|Number=Plur	12	nmod	12:nmod:de	_
+15	e	e	CCONJ	_	_	17	cc	17:cc	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	extensão	extensão	NOUN	_	Gender=Fem|Number=Sing	12	conj	12:conj:e|21:nsubj	_
+18-19	dos	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	20:det	_
+20	danos	dano	NOUN	_	Gender=Masc|Number=Plur	17	nmod	17:nmod:de	_
+21	representam	representar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	conj	5:conj:mas	_
+22	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+23	enorme	enorme	ADJ	_	Number=Sing	24	amod	24:amod	_
+24	desafio	desafio	NOUN	_	Gender=Masc|Number=Sing	21	obj	21:obj	SpaceAfter=No
+25	.	.	PUNCT	_	_	5	punct	5:punct	_

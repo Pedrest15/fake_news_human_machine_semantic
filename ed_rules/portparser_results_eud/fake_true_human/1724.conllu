@@ -1,0 +1,469 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = vacina nao da imunidade, nao elimina virus, nao impede morte e nao serve para nada ah e as gravidas podem tomar?
+1	vacina	vacina	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+2	nao	nao	ADV	_	_	1	advmod	1:advmod	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	imunidade	imunidade	NOUN	_	Gender=Fem|Number=Sing	1	nmod	1:nmod:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	8	punct	8:punct	_
+7	nao	nao	ADV	_	_	8	advmod	8:advmod	_
+8	elimina	eliminar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	3:conj:e	_
+9	virus	virus	NOUN	_	Gender=Masc	8	obj	8:obj	SpaceAfter=No
+10	,	,	PUNCT	_	_	12	punct	12:punct	_
+11	nao	nao	ADV	_	_	12	advmod	12:advmod	_
+12	impede	impedir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	conj	8:conj:e	_
+13	morte	morte	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+14	e	e	CCONJ	_	_	16	cc	16:cc	_
+15	nao	nao	ADV	_	_	16	advmod	16:advmod	_
+16	serve	servir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	conj	8:conj:e	_
+17	para	para	ADP	_	_	18	case	18:case	_
+18	nada	nada	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	16	obl	16:obl:para	_
+19	ah	ah	PUNCT	_	_	23	punct	23:punct	_
+20	e	e	CCONJ	_	_	23	cc	23:cc	_
+21	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	22:det	_
+22	gravidas	gravido	NOUN	_	Gender=Fem|Number=Plur	23	nsubj	23:nsubj|24:nsubj	_
+23	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	conj	3:conj:e	_
+24	tomar	tomar	VERB	_	VerbForm=Inf	23	xcomp	23:xcomp	SpaceAfter=No
+25	?	?	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = nao!
+1	nao	nao	ADV	_	_	0	root	0:root	SpaceAfter=No
+2	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0005
+# text = criancas?
+1	criancas	crianca	NOUN	_	Gender=Fem|Number=Plur	0	root	0:root	SpaceAfter=No
+2	?	?	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0007
+# text = nao!
+1	nao	nao	ADV	_	_	0	root	0:root	SpaceAfter=No
+2	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0009
+# text = se eu for vacinado: 1.- posso deixar de usar a mascara?
+1	se	se	SCONJ	_	_	4	mark	4:mark	_
+2	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	4:nsubj	_
+3	for	for	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	vacinado	vacinar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	9	advcl	9:advcl:se	SpaceAfter=No
+5	:	:	PUNCT	_	_	4	punct	4:punct	_
+6	1	1	NUM	_	NumType=Card	9	parataxis	9:parataxis	SpaceAfter=No
+7	.	.	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+8	-	-	PUNCT	_	_	9	punct	9:punct	_
+9	posso	poder	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+10	deixar	deixar	VERB	_	VerbForm=Inf	9	xcomp	9:xcomp	_
+11	de	de	ADP	_	_	12	mark	12:mark	_
+12	usar	usar	VERB	_	VerbForm=Inf	10	xcomp	10:xcomp	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	mascara	mascara	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	SpaceAfter=No
+15	?	?	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0011
+# text = nao 2.- podem reabrir restaurantes, etc.?
+1	nao	nao	ADV	_	_	2	advmod	2:advmod	_
+2	2	2	NUM	_	NumType=Card	0	root	0:root	SpaceAfter=No
+3	.	.	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+4	-	-	PUNCT	_	_	5	punct	5:punct	_
+5	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	2:parataxis	_
+6	reabrir	reabrir	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	_
+7	restaurantes	restaurante	NOUN	_	Number=Plur	6	obj	6:obj	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	etc.	etc.	PUNCT	_	_	7	conj	6:obj|7:conj	SpaceAfter=No
+10	?	?	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0013
+# text = e todo mundo trabalhar normalmente?
+1	e	e	CCONJ	_	_	4	cc	4:cc	_
+2	todo	todo	DET	_	Gender=Masc|Number=Sing|PronType=Ind	3	det	3:det	_
+3	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+4	trabalhar	trabalhar	VERB	_	Number=Sing|Person=3|VerbForm=Inf	0	root	0:root	_
+5	normalmente	normalmente	ADV	_	_	4	advmod	4:advmod	SpaceAfter=No
+6	?	?	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0015
+# text = nao 3.- serei resistente ao covid-19?
+1	nao	nao	ADV	_	_	2	advmod	2:advmod	_
+2	3	3	NUM	_	NumType=Card	0	root	0:root	SpaceAfter=No
+3	.	.	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+4	-	-	PUNCT	_	_	6	punct	6:punct	_
+5	serei	ser	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin	6	cop	6:cop	_
+6	resistente	resistente	ADJ	_	Number=Sing	2	parataxis	2:parataxis	_
+7-8	ao	_	_	_	_	_	_	_	_
+7	a	a	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	covid-19	covid-19	NUM	_	NumType=Card	6	obl	6:obl:a	SpaceAfter=No
+10	?	?	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0017
+# text = pode ser, mas nao sabemos exatamente, provavelmente nao te impedira de ser contagiado 4.- pelo menos deixarei de ser contagioso para os outros?
+1	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	ser	ser	AUX	_	VerbForm=Inf	1	xcomp	1:xcomp	SpaceAfter=No
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
+4	mas	mas	CCONJ	_	_	6	cc	6:cc	_
+5	nao	nao	ADV	_	_	6	advmod	6:advmod	_
+6	sabemos	saber	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	1	conj	1:conj:mas	_
+7	exatamente	exatamente	ADV	_	_	6	advmod	6:advmod	SpaceAfter=No
+8	,	,	PUNCT	_	_	12	punct	12:punct	_
+9	provavelmente	provavelmente	ADV	_	_	12	advmod	12:advmod	_
+10	nao	nao	ADV	_	_	12	advmod	12:advmod	_
+11	te	te	PRON	_	Case=Acc|Number=Sing|Person=2|PronType=Prs	12	obj	12:obj|15:nsubj:pass	_
+12	impedira	impedir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	1	parataxis	1:parataxis	_
+13	de	de	ADP	_	_	15	mark	15:mark	_
+14	ser	ser	AUX	_	VerbForm=Inf	15	aux:pass	15:aux:pass	_
+15	contagiado	contagiar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	12	xcomp	12:xcomp	_
+16	4	4	NUM	_	NumType=Card	12	punct	12:punct	SpaceAfter=No
+17	.	.	PUNCT	_	_	22	punct	22:punct	SpaceAfter=No
+18	-	-	PUNCT	_	_	22	punct	22:punct	_
+19-20	pelo	_	_	_	_	_	_	_	_
+19	por	por	ADP	_	ExtPos=ADV	22	advmod	22:advmod	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	fixed	19:fixed	_
+21	menos	menos	NOUN	_	Gender=Masc|Number=Sing	19	fixed	19:fixed	_
+22	deixarei	deixar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin	1	parataxis	1:parataxis	_
+23	de	de	ADP	_	_	25	mark	25:mark	_
+24	ser	ser	AUX	_	VerbForm=Inf	25	cop	25:cop	_
+25	contagioso	contagioso	ADJ	_	Gender=Masc|Number=Sing	22	xcomp	22:xcomp	_
+26	para	para	ADP	_	_	28	case	28:case	_
+27	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	28:det	_
+28	outros	outro	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	25	obl	25:obl:para	SpaceAfter=No
+29	?	?	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0019
+# text = nao, voce ainda pode transmitir, possivelmente, ninguem sabe.
+1	nao	nao	ADV	_	_	5	advmod	5:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	voce	voce	PRON	_	PronType=Dem	5	nsubj	5:nsubj|6:nsubj	_
+4	ainda	ainda	ADV	_	_	5	advmod	5:advmod	_
+5	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	transmitir	transmitir	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	SpaceAfter=No
+7	,	,	PUNCT	_	_	11	punct	11:punct	_
+8	possivelmente	possivelmente	ADV	_	_	11	advmod	11:advmod	SpaceAfter=No
+9	,	,	PUNCT	_	_	8	punct	8:punct	_
+10	ninguem	ninguem	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	11	nsubj	11:nsubj	_
+11	sabe	saber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	parataxis	5:parataxis	SpaceAfter=No
+12	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0021
+# text = 5.- se vacinarmos todas as criancas, a escola voltara normalmente?
+1	5	5	NUM	_	NumType=Card	12	parataxis	12:parataxis	SpaceAfter=No
+2	.	.	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+3	-	-	PUNCT	_	_	5	punct	5:punct	_
+4	se	se	SCONJ	_	_	5	mark	5:mark	_
+5	vacinarmos	vacinar	VERB	_	Mood=Sub|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	12	advcl	12:advcl:se	_
+6	todas	todo	DET	_	Gender=Fem|Number=Plur|PronType=Ind	8	det	8:det	_
+7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	8:det	_
+8	criancas	crianca	NOUN	_	Gender=Fem|Number=Plur	5	obj	5:obj	SpaceAfter=No
+9	,	,	PUNCT	_	_	5	punct	5:punct	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	escola	escola	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	12:nsubj	_
+12	voltara	voltar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pqp|VerbForm=Fin	0	root	0:root	_
+13	normalmente	normalmente	ADV	_	_	12	advmod	12:advmod	SpaceAfter=No
+14	?	?	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0023
+# text = nao 6.- se eu for vacinado, posso parar com o distanciamento social?
+1	nao	nao	ADV	_	_	2	advmod	2:advmod	_
+2	6	6	NUM	_	NumType=Card	0	root	0:root	SpaceAfter=No
+3	.	.	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+4	-	-	PUNCT	_	_	10	punct	10:punct	_
+5	se	se	SCONJ	_	_	8	mark	8:mark	_
+6	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	8	nsubj	8:nsubj	_
+7	for	for	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	8	aux:pass	8:aux:pass	_
+8	vacinado	vacinar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	10	advcl	10:advcl:se	SpaceAfter=No
+9	,	,	PUNCT	_	_	8	punct	8:punct	_
+10	posso	poder	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	parataxis	2:parataxis	_
+11	parar	parar	VERB	_	VerbForm=Inf	10	xcomp	10:xcomp	_
+12	com	com	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	distanciamento	distanciamento	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:com	_
+15	social	social	ADJ	_	Number=Sing	14	amod	14:amod	SpaceAfter=No
+16	?	?	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0025
+# text = nao 7.- se eu for vacinado, posso parar de desinfetar minhas maos?
+1	nao	nao	ADV	_	_	2	advmod	2:advmod	_
+2	7	7	NUM	_	NumType=Card	0	root	0:root	SpaceAfter=No
+3	.	.	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+4	-	-	PUNCT	_	_	10	punct	10:punct	_
+5	se	se	SCONJ	_	_	8	mark	8:mark	_
+6	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	8	nsubj	8:nsubj	_
+7	for	for	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	8	aux:pass	8:aux:pass	_
+8	vacinado	vacinar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	10	advcl	10:advcl:se	SpaceAfter=No
+9	,	,	PUNCT	_	_	8	punct	8:punct	_
+10	posso	poder	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	parataxis	2:parataxis	_
+11	parar	parar	VERB	_	VerbForm=Inf	10	xcomp	10:xcomp	_
+12	de	de	ADP	_	_	13	mark	13:mark	_
+13	desinfetar	desinfetar	VERB	_	VerbForm=Inf	11	xcomp	11:xcomp	_
+14	minhas	meu	DET	_	Gender=Fem|Number=Plur|Person=1|Poss=Yes|PronType=Prs	15	det	15:det	_
+15	maos	mao	NOUN	_	Gender=Fem|Number=Plur	13	obj	13:obj	SpaceAfter=No
+16	?	?	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0027
+# text = nao 8.- se eu e meu avo formos vacinados, podemos nos abracar?
+1	nao	nao	ADV	_	_	2	advmod	2:advmod	_
+2	8	8	NUM	_	NumType=Card	0	root	0:root	SpaceAfter=No
+3	.	.	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+4	-	-	PUNCT	_	_	13	punct	13:punct	_
+5	se	se	SCONJ	_	_	11	mark	11:mark	_
+6	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	11	nsubj	11:nsubj	_
+7	e	e	CCONJ	_	_	9	cc	9:cc	_
+8	meu	meu	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	9	det	9:det	_
+9	avo	avo	NOUN	_	Gender=Masc|Number=Sing	6	conj	6:conj:e|11:nsubj	_
+10	formos	formos	AUX	_	Mood=Sub|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	11	aux:pass	11:aux:pass	_
+11	vacinados	vacinar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	13	advcl	13:advcl:se	SpaceAfter=No
+12	,	,	PUNCT	_	_	11	punct	11:punct	_
+13	podemos	poder	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	parataxis	2:parataxis	_
+14	nos	nos	PRON	_	Case=Acc|Number=Plur|Person=1|PronType=Prs	15	obj	15:obj	_
+15	abracar	abracar	VERB	_	VerbForm=Inf	13	xcomp	13:xcomp	SpaceAfter=No
+16	?	?	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0029
+# text = nao 9.- cinemas, teatros e estadios serao reabertos gracas as vacinas?
+1	nao	nao	ADV	_	_	2	advmod	2:advmod	_
+2	9	9	NUM	_	NumType=Card	0	root	0:root	SpaceAfter=No
+3	.	.	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+4	-	-	PUNCT	_	_	5	punct	5:punct	_
+5	cinemas	cinema	NOUN	_	Gender=Masc|Number=Plur	11	nsubj:pass	11:nsubj:pass	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	teatros	teatro	NOUN	_	Gender=Masc|Number=Plur	5	conj	5:conj:e|11:nsubj:pass	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	estadios	estadio	NOUN	_	Gender=Masc|Number=Plur	5	conj	5:conj:e|11:nsubj:pass	_
+10	serao	ser	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	11	aux:pass	11:aux:pass	_
+11	reabertos	reabrir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	2	xcomp	2:xcomp	_
+12	gracas	graco	ADJ	_	Gender=Fem|Number=Plur	11	advcl	11:advcl	_
+13	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	14:det	_
+14	vacinas	vacina	NOUN	_	Gender=Fem|Number=Plur	11	obl	11:obl	SpaceAfter=No
+15	?	?	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0031
+# text = nao 10.- os vacinados poderao ser recoletados?
+1	nao	nao	ADV	_	_	2	advmod	2:advmod	_
+2	10	10	NUM	_	NumType=Card	0	root	0:root	SpaceAfter=No
+3	.	.	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+4	-	-	PUNCT	_	_	7	punct	7:punct	_
+5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	6:det	_
+6	vacinados	vacinar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	7	nsubj	7:nsubj|9:nsubj:pass	_
+7	poderao	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	2	parataxis	2:parataxis	_
+8	ser	ser	AUX	_	VerbForm=Inf	9	aux:pass	9:aux:pass	_
+9	recoletados	recoletar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	7	xcomp	7:xcomp	SpaceAfter=No
+10	?	?	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0033
+# text = nao 11.- qual e o real beneficio da vacinacao?
+1	nao	nao	ADV	_	_	2	advmod	2:advmod	_
+2	11	11	NUM	_	NumType=Card	0	root	0:root	SpaceAfter=No
+3	.	.	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+4	-	-	PUNCT	_	_	9	punct	9:punct	_
+5	qual	qual	PRON	_	Number=Sing|PronType=Int	9	nsubj	9:nsubj	_
+6	e	e	CCONJ	_	_	9	cc	9:cc	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+8	real	real	ADJ	_	Number=Sing	9	amod	9:amod	_
+9	beneficio	beneficio	NOUN	_	Gender=Masc|Number=Sing	2	parataxis	2:parataxis	_
+10-11	da	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	vacinacao	vacinacao	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:de	SpaceAfter=No
+13	?	?	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0035
+# text = o virus nao vai te matar.
+1	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	virus	virus	NOUN	_	Gender=Masc	6	nsubj	6:nsubj	_
+3	nao	nao	ADV	_	_	6	advmod	6:advmod	_
+4	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	6:aux	_
+5	te	te	PRON	_	Case=Acc|Number=Sing|Person=2|PronType=Prs	6	obj	6:obj	_
+6	matar	matar	VERB	_	VerbForm=Inf	0	root	0:root	SpaceAfter=No
+7	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0037
+# text = 12.- tem certeza que ele nao vai me matar?
+1	12	12	NUM	_	NumType=Card	4	parataxis	4:parataxis	SpaceAfter=No
+2	.	.	PUNCT	_	_	1	punct	1:punct	SpaceAfter=No
+3	-	-	PUNCT	_	_	4	punct	4:punct	_
+4	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	certeza	certeza	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+6	que	que	SCONJ	_	_	11	mark	11:mark	_
+7	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	nsubj	11:nsubj	_
+8	nao	nao	ADV	_	_	11	advmod	11:advmod	_
+9	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux	11:aux	_
+10	me	me	PRON	_	Case=Acc|Number=Sing|Person=1|PronType=Prs	11	obj	11:obj	_
+11	matar	matar	VERB	_	VerbForm=Inf	5	acl	5:acl:que	SpaceAfter=No
+12	?	?	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0039
+# text = nao 13.- se estatisticamente o virus nao me matou mesmo por que eu seria vacinado?
+1	nao	nao	ADV	_	_	2	advmod	2:advmod	_
+2	13	13	NUM	_	NumType=Card	0	root	0:root	SpaceAfter=No
+3	.	.	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+4	-	-	PUNCT	_	_	11	punct	11:punct	_
+5	se	se	SCONJ	_	_	11	mark	11:mark	_
+6	estatisticamente	estatisticamente	ADV	_	_	11	advmod	11:advmod	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	virus	virus	NOUN	_	Gender=Masc	11	nsubj	11:nsubj	_
+9	nao	nao	ADV	_	_	11	advmod	11:advmod	_
+10	me	me	PRON	_	Case=Acc|Number=Sing|Person=1|PronType=Prs	11	obj	11:obj	_
+11	matou	matar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	parataxis	2:parataxis	_
+12	mesmo	mesmo	ADV	_	_	11	advmod	11:advmod	_
+13	por	por	ADP	_	_	14	case	14:case	_
+14	que	que	PRON	_	PronType=Rel	17	obl	17:obl:por	_
+15	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	17	nsubj:pass	17:nsubj:pass	_
+16	seria	ser	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	17	aux:pass	17:aux:pass	_
+17	vacinado	vacinar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	11	ccomp	11:ccomp	SpaceAfter=No
+18	?	?	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0041
+# text = para proteger os outros.
+1	para	para	ADP	_	_	2	mark	2:mark	_
+2	proteger	proteger	VERB	_	VerbForm=Inf	0	root	0:root	_
+3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	4:det	_
+4	outros	outro	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	2	obj	2:obj	SpaceAfter=No
+5	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0043
+# text = 14.- entao, se eu for vacinado, os outros tem 100% de certeza de que nao os estou infectando?
+1	14	14	NUM	_	NumType=Card	13	dep	13:dep	SpaceAfter=No
+2	.	.	PUNCT	_	_	1	punct	1:punct	SpaceAfter=No
+3	-	-	PUNCT	_	_	4	punct	4:punct	_
+4	entao	entao	ADV	_	_	13	advmod	13:advmod	SpaceAfter=No
+5	,	,	PUNCT	_	_	9	punct	9:punct	_
+6	se	se	SCONJ	_	_	9	mark	9:mark	_
+7	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	9	nsubj	9:nsubj	_
+8	for	for	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	9	aux:pass	9:aux:pass	_
+9	vacinado	vacinar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	13	advcl	13:advcl:se	SpaceAfter=No
+10	,	,	PUNCT	_	_	9	punct	9:punct	_
+11	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	12:det	_
+12	outros	outro	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	13	nsubj	13:nsubj	_
+13	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+14	100	100	NUM	_	NumType=Card	15	nummod	15:nummod	SpaceAfter=No
+15	%	%	SYM	_	_	13	obj	13:obj	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	certeza	certeza	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:de	_
+18	de	de	ADP	_	ExtPos=SCONJ	23	mark	23:mark	_
+19	que	que	SCONJ	_	_	18	fixed	18:fixed	_
+20	nao	nao	ADV	_	_	23	nsubj	23:nsubj	_
+21	os	o	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	23	obj	23:obj	_
+22	estou	estar	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	23	aux	23:aux	_
+23	infectando	infectar	VERB	_	VerbForm=Ger	17	acl	17:acl:de_que	SpaceAfter=No
+24	?	?	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0045
+# text = nao portanto, a injecao nao da imunidade.
+1	nao	nao	ADV	_	_	9	advmod	9:advmod	_
+2	portanto	portanto	CCONJ	_	_	1	cc	1:cc	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	injecao	injecao	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+6	nao	nao	ADV	_	_	5	advmod	5:advmod	_
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	imunidade	imunidade	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	SpaceAfter=No
+10	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0047
+# text = nao elimina o virus.
+1	nao	nao	ADV	_	_	2	advmod	2:advmod	_
+2	elimina	eliminar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	virus	virus	NOUN	_	Gender=Masc	2	obj	2:obj	SpaceAfter=No
+5	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0049
+# text = nao impede a morte.
+1	nao	nao	ADV	_	_	2	advmod	2:advmod	_
+2	impede	impedir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	morte	morte	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	SpaceAfter=No
+5	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0051
+# text = isso nao garante que voce nao sera contaminado.
+1	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	3	nsubj	3:nsubj	_
+2	nao	nao	ADV	_	_	3	advmod	3:advmod	_
+3	garante	garantir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	8	mark	8:mark	_
+5	voce	voce	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	8	nsubj:pass	8:nsubj:pass	_
+6	nao	nao	ADV	_	_	8	advmod	8:advmod	_
+7	sera	ser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	8	aux:pass	8:aux:pass	_
+8	contaminado	contaminar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	ccomp	3:ccomp	SpaceAfter=No
+9	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0053
+# text = isso nao o impede de pegar covid-19.
+1	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	4	nsubj	4:nsubj	_
+2	nao	nao	ADV	_	_	4	advmod	4:advmod	_
+3	o	o	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	obj	4:obj|6:nsubj	_
+4	impede	impedir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	de	de	ADP	_	_	6	mark	6:mark	_
+6	pegar	pegar	VERB	_	VerbForm=Inf	4	xcomp	4:xcomp	_
+7	covid-19	covid-19	NUM	_	NumType=Card	6	obj	6:obj	SpaceAfter=No
+8	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0055
+# text = isso nao impede voce de ter covid-19 isso nao elimina a necessidade de proibicoes de viagens.
+1	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	3	nsubj	3:nsubj	_
+2	nao	nao	ADV	_	_	3	advmod	3:advmod	_
+3	impede	impedir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	voce	voce	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	3	obj	3:obj|6:nsubj	_
+5	de	de	ADP	_	_	6	mark	6:mark	_
+6	ter	ter	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+7	covid-19	covid-19	NUM	_	NumType=Card	6	obj	6:obj	_
+8	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	10	nsubj	10:nsubj	_
+9	nao	nao	ADV	_	_	10	advmod	10:advmod	_
+10	elimina	eliminar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	parataxis	3:parataxis	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	necessidade	necessidade	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	proibicoes	proibicoe	NOUN	_	Gender=Fem|Number=Plur	12	nmod	12:nmod:de	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	viagens	viagem	NOUN	_	Gender=Fem|Number=Plur	14	nmod	14:nmod:de	SpaceAfter=No
+17	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0057
+# text = nao elimina a necessidade de fechar negocios.
+1	nao	nao	ADV	_	_	2	advmod	2:advmod	_
+2	elimina	eliminar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	necessidade	necessidade	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+5	de	de	ADP	_	_	6	mark	6:mark	_
+6	fechar	fechar	VERB	_	VerbForm=Inf	4	acl	4:acl:de	_
+7	negocios	negocio	NOUN	_	Gender=Masc|Number=Plur	6	obj	6:obj	SpaceAfter=No
+8	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0059
+# text = nao elimina a necessidade de fechamentos em geral.
+1	nao	nao	ADV	_	_	2	advmod	2:advmod	_
+2	elimina	eliminar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	necessidade	necessidade	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	fechamentos	fechamento	NOUN	_	Gender=Masc|Number=Plur	4	nmod	4:nmod:de	_
+7	em	em	ADP	_	_	8	case	8:case	_
+8	geral	geral	NOUN	_	Number=Sing	6	nmod	6:nmod:em	SpaceAfter=No
+9	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0061
+# text = nao elimina a necessidade de uso de mascaras.
+1	nao	nao	ADV	_	_	2	advmod	2:advmod	_
+2	elimina	eliminar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	necessidade	necessidade	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	uso	uso	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:de	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	mascaras	mascara	NOUN	_	Gender=Fem|Number=Plur	6	nmod	6:nmod:de	SpaceAfter=No
+9	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0063
+# text = entao que diabos esta vacina esta realmente fazendo?
+1	entao	entao	ADV	_	_	8	advmod	8:advmod	_
+2	que	que	DET	_	PronType=Ind	3	det	3:det	_
+3	diabos	diabo	NOUN	_	Gender=Masc|Number=Plur	8	obj	8:obj	_
+4	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	5	det	5:det	_
+5	vacina	vacina	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	8:nsubj	_
+6	esta	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	8:aux	_
+7	realmente	realmente	ADV	_	_	8	advmod	8:advmod	_
+8	fazendo	fazer	VERB	_	VerbForm=Ger	0	root	0:root	SpaceAfter=No
+9	?	?	PUNCT	_	_	8	punct	8:punct	_

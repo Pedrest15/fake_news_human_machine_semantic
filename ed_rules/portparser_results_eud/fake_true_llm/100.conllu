@@ -1,0 +1,440 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Atenção Urgente! Governo assina Decreto 11.
+1	Atenção	atenção	NOUN	_	Gender=Fem|Number=Sing	5	parataxis	5:parataxis	_
+2	Urgente	Urgente	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	!	!	PUNCT	_	_	1	punct	1:punct	_
+4	Governo	Governo	PROPN	_	_	5	nsubj	5:nsubj	_
+5	assina	assinar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	Decreto	Decreto	PROPN	_	_	5	obj	5:obj	_
+7	11	11	NUM	_	NumType=Card	6	nmod	6:nmod	SpaceAfter=No
+8	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0003
+# text = 47 para Confiscar Propriedades!
+1	47	47	NUM	_	NumType=Card	0	root	0:root	_
+2	para	para	ADP	_	_	3	mark	3:mark	_
+3	Confiscar	Confiscar	PROPN	_	_	1	acl	1:acl:para	_
+4	Propriedades	Propriedades	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+5	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0005
+# text = Hoje, um decreto alarmante foi publicado no Diário Oficial: o Decreto 11.
+1	Hoje	hoje	ADV	_	_	7	advmod	7:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	decreto	decreto	NOUN	_	Gender=Masc|Number=Sing	7	nsubj:pass	7:nsubj:pass	_
+5	alarmante	alarmante	ADJ	_	Number=Sing	4	amod	4:amod	_
+6	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	aux:pass	7:aux:pass	_
+7	publicado	publicar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+8-9	no	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	Diário	Diário	PROPN	_	_	7	obl	7:obl:em	_
+11	Oficial	Oficial	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+12	:	:	PUNCT	_	_	14	punct	14:punct	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	Decreto	Decreto	PROPN	_	_	10	appos	10:appos	_
+15	11	11	NUM	_	NumType=Card	14	nmod	14:nmod	SpaceAfter=No
+16	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0007
+# text = 47, intitulado "Sistema de Participação Social", que supostamente permite ao governo decidir quem será o novo dono de suas propriedades.
+1	47	47	NUM	_	NumType=Card	0	root	0:root|13:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	intitulado	intitular	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	1	acl	1:acl	_
+4	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+5	Sistema	Sistema	PROPN	_	_	3	xcomp	3:xcomp	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	Participação	Participação	PROPN	_	_	5	flat:name	5:flat:name	_
+8	Social	Social	PROPN	_	_	5	flat:name	5:flat:name	SpaceAfter=No
+9	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+10	,	,	PUNCT	_	_	13	punct	13:punct	_
+11	que	que	PRON	_	PronType=Rel	13	nsubj	1:ref	_
+12	supostamente	supostamente	ADV	_	_	13	advmod	13:advmod	_
+13	permite	permitir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+14-15	ao	_	_	_	_	_	_	_	_
+14	a	a	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	governo	governo	NOUN	_	Gender=Masc|Number=Sing	13	obl	13:obl:a|17:nsubj	_
+17	decidir	decidir	VERB	_	VerbForm=Inf	13	xcomp	13:xcomp	_
+18	quem	quem	PRON	_	PronType=Ind	17	obj	17:obj	_
+19	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	22	cop	22:cop	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+21	novo	novo	ADJ	_	Gender=Masc|Number=Sing	22	amod	22:amod	_
+22	dono	dono	NOUN	_	Gender=Masc|Number=Sing	18	acl:relcl	18:acl:relcl	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	25	det	25:det	_
+25	propriedades	propriedade	NOUN	_	Gender=Fem|Number=Plur	22	nmod	22:nmod:de	SpaceAfter=No
+26	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0009
+# text = Esse decreto é o primeiro passo para uma possível expropriação em massa, semelhante ao que ocorreu na Venezuela.
+1	Esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	2:det	_
+2	decreto	decreto	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+5	primeiro	primeiro	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	6	amod	6:amod	_
+6	passo	passo	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+7	para	para	ADP	_	_	10	case	10:case	_
+8	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+9	possível	possível	ADJ	_	Number=Sing	10	amod	10:amod	_
+10	expropriação	expropriação	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:para	_
+11	em	em	ADP	_	_	12	case	12:case	_
+12	massa	massa	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:em	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	semelhante	semelhante	ADJ	_	Number=Sing	10	amod	10:amod	_
+15-16	ao	_	_	_	_	_	_	_	_
+15	a	a	ADP	_	_	16	case	16:case	_
+16	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	14	obl	14:obl:a|18:nsubj	_
+17	que	que	PRON	_	PronType=Rel	18	nsubj	16:ref	_
+18	ocorreu	ocorrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	acl:relcl	16:acl:relcl	_
+19-20	na	_	_	_	_	_	_	_	_
+19	em	em	ADP	_	_	21	case	21:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	Venezuela	Venezuela	PROPN	_	_	18	obl	18:obl:em	SpaceAfter=No
+22	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0011
+# text = Lá, tudo começou com censura e rapidamente evoluiu para o confisco de bens.
+1	Lá	lá	ADV	_	_	4	advmod	4:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	tudo	tudo	PRON	_	PronType=Ind	4	nsubj	4:nsubj|9:nsubj	_
+4	começou	começar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	com	com	ADP	_	_	6	case	6:case	_
+6	censura	censura	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:com	_
+7	e	e	CCONJ	_	_	9	cc	9:cc	_
+8	rapidamente	rapidamente	ADV	_	_	9	advmod	9:advmod	_
+9	evoluiu	evoluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	conj	4:conj:e	_
+10	para	para	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	confisco	confisco	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:para	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	bens	bem	NOUN	_	Gender=Masc|Number=Plur	12	nmod	12:nmod:de	SpaceAfter=No
+15	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0013
+# text = O risco é real e iminente! Esse decreto abre brechas perigosas e, embora ainda precise passar pelo Congresso, a situação no Brasil está fora de controle.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	risco	risco	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj|6:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop|6:cop	_
+4	real	real	ADJ	_	Number=Sing	0	root	0:root	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	iminente	iminente	ADJ	_	Number=Sing	4	conj	4:conj:e	SpaceAfter=No
+7	!	!	PUNCT	_	_	10	punct	10:punct	_
+8	Esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	9	det	9:det	_
+9	decreto	decreto	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	10:nsubj	_
+10	abre	abrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	parataxis	4:parataxis	_
+11	brechas	brecha	NOUN	_	Gender=Fem|Number=Plur	10	obj	10:obj	_
+12	perigosas	perigoso	ADJ	_	Gender=Fem|Number=Plur	11	amod	11:amod	_
+13	e	e	CCONJ	_	_	29	cc	29:cc	SpaceAfter=No
+14	,	,	PUNCT	_	_	17	punct	17:punct	_
+15	embora	embora	SCONJ	_	_	17	mark	17:mark	_
+16	ainda	ainda	ADV	_	_	17	advmod	17:advmod	_
+17	precise	precisar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	advcl	29:advcl:embora	_
+18	passar	passar	VERB	_	VerbForm=Inf	17	xcomp	17:xcomp	_
+19-20	pelo	_	_	_	_	_	_	_	_
+19	por	por	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	Congresso	Congresso	PROPN	_	_	18	obl	18:obl:por	SpaceAfter=No
+22	,	,	PUNCT	_	_	17	punct	17:punct	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	situação	situação	NOUN	_	Gender=Fem|Number=Sing	29	nsubj	29:nsubj	_
+25-26	no	_	_	_	_	_	_	_	_
+25	em	em	ADP	_	_	27	case	27:case	_
+26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	Brasil	Brasil	PROPN	_	_	24	nmod	24:nmod:em	_
+28	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	cop	29:cop	_
+29	fora	fora	ADV	_	_	10	conj	4:parataxis|10:conj:e	_
+30	de	de	ADP	_	_	31	case	31:case	_
+31	controle	controle	NOUN	_	Gender=Masc|Number=Sing	29	obl	29:obl:de	SpaceAfter=No
+32	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0015
+# text = Precisamos agir agora! Compartilhe essa informação ao máximo para que todos fiquem cientes e pressionem senadores e deputados para barrar essa ameaça antes que seja tarde demais.
+1	Precisamos	precisar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	agir	agir	VERB	_	VerbForm=Inf	1	xcomp	1:xcomp	_
+3	agora	agora	ADV	_	_	2	advmod	2:advmod	SpaceAfter=No
+4	!	!	PUNCT	_	_	1	punct	1:punct	_
+5	Compartilhe	compartilhar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	1	dep	1:dep	_
+6	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	7	det	7:det	_
+7	informação	informação	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+8-9	ao	_	_	_	_	_	_	_	_
+8	a	a	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	máximo	máximo	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:a	_
+11	para	para	ADP	_	ExtPos=SCONJ	14	mark	14:mark|17:mark	_
+12	que	que	SCONJ	_	_	11	fixed	11:fixed	_
+13	todos	todo	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	14	nsubj	14:nsubj|15:nsubj|17:nsubj	_
+14	fiquem	ficar	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	advcl	5:advcl:para_que	_
+15	cientes	ciente	ADJ	_	Number=Plur	14	xcomp	14:xcomp	_
+16	e	e	CCONJ	_	_	17	cc	17:cc	_
+17	pressionem	pressionar	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	conj	5:advcl:para_que|14:conj:e	_
+18	senadores	senador	NOUN	_	Gender=Masc|Number=Plur	17	obj	17:obj	_
+19	e	e	CCONJ	_	_	20	cc	20:cc	_
+20	deputados	deputado	NOUN	_	Gender=Masc|Number=Plur	18	conj	17:obj|18:conj:e	_
+21	para	para	ADP	_	_	22	mark	22:mark	_
+22	barrar	barrar	VERB	_	VerbForm=Inf	17	advcl	17:advcl:para	_
+23	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	24	det	24:det	_
+24	ameaça	ameaça	NOUN	_	Gender=Fem|Number=Sing	22	obj	22:obj	_
+25	antes	antes	ADV	_	ExtPos=SCONJ	28	mark	28:mark	_
+26	que	que	SCONJ	_	_	25	fixed	25:fixed	_
+27	seja	ser	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	cop	28:cop	_
+28	tarde	tarde	ADV	_	_	17	advcl	17:advcl:antes_que	_
+29	demais	demais	ADV	_	_	28	advmod	28:advmod	SpaceAfter=No
+30	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0017
+# text = Dr.
+1	Dr.	Dr.	PUNCT	_	_	0	root	0:root	_
+
+# sent_id = S0019
+# text = Felipe Penteado Balera, especialista em Direito Constitucional pela PUC-SP, alerta: Esse decreto é uma farsa apresentada como algo positivo, mas na verdade, coloca em risco o direito à propriedade garantido pela Constituição.
+1	Felipe	Felipe	PROPN	_	_	13	nsubj	13:nsubj	_
+2	Penteado	Penteado	PROPN	_	_	1	flat:name	1:flat:name	_
+3	Balera	Balera	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	especialista	especialista	NOUN	_	Number=Sing	1	appos	1:appos	_
+6	em	em	ADP	_	_	7	case	7:case	_
+7	Direito	Direito	PROPN	_	_	5	nmod	5:nmod:em	_
+8	Constitucional	Constitucional	PROPN	_	_	7	flat:name	7:flat:name	_
+9-10	pela	_	_	_	_	_	_	_	_
+9	por	por	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	PUC-SP	PUC-SP	PROPN	_	_	5	nmod	5:nmod:por	SpaceAfter=No
+12	,	,	PUNCT	_	_	5	punct	5:punct	_
+13	alerta	alertar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+14	:	:	PUNCT	_	_	19	punct	19:punct	_
+15	Esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	16	det	16:det	_
+16	decreto	decreto	NOUN	_	Gender=Masc|Number=Sing	19	nsubj	19:nsubj	_
+17	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	cop	19:cop	_
+18	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	farsa	farsa	NOUN	_	Gender=Fem|Number=Sing	13	ccomp:speech	13:ccomp:speech	_
+20	apresentada	apresentar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	19	acl	19:acl	_
+21	como	como	ADP	_	_	22	case	22:case	_
+22	algo	algo	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	20	obl	20:obl:como	_
+23	positivo	positivo	ADJ	_	Gender=Masc|Number=Sing	22	amod	22:amod	SpaceAfter=No
+24	,	,	PUNCT	_	_	28	punct	28:punct	_
+25	mas	mas	CCONJ	_	_	30	cc	30:cc	_
+26-27	na	_	_	_	_	_	_	_	_
+26	em	em	ADP	_	_	28	case	28:case	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	verdade	verdade	NOUN	_	Gender=Fem|Number=Sing	30	obl	30:obl:em	SpaceAfter=No
+29	,	,	PUNCT	_	_	28	punct	28:punct	_
+30	coloca	colocar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	conj	19:acl|20:conj:mas	_
+31	em	em	ADP	_	_	32	case	32:case	_
+32	risco	risco	NOUN	_	Gender=Masc|Number=Sing	30	obl	30:obl:em	_
+33	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	34:det	_
+34	direito	direito	NOUN	_	Gender=Masc|Number=Sing	30	obj	30:obj	_
+35-36	à	_	_	_	_	_	_	_	_
+35	a	a	ADP	_	_	37	case	37:case	_
+36	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	37:det	_
+37	propriedade	propriedade	NOUN	_	Gender=Fem|Number=Sing	34	nmod	34:nmod:a	_
+38	garantido	garantir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	34	acl	34:acl	_
+39-40	pela	_	_	_	_	_	_	_	_
+39	por	por	ADP	_	_	41	case	41:case	_
+40	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	41:det	_
+41	Constituição	Constituição	PROPN	_	_	38	obl:agent	38:obl:agent	SpaceAfter=No
+42	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0021
+# text = Movimentos sociais como o MST e MTST estão sendo favorecidos, enquanto o direito dos cidadãos comuns é ignorado.
+1	Movimentos	movimento	NOUN	_	Gender=Masc|Number=Plur	10	nsubj:pass	10:nsubj:pass	_
+2	sociais	social	ADJ	_	Number=Plur	1	amod	1:amod	_
+3	como	como	ADP	_	_	5	case	5:case|7:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	MST	MST	PROPN	_	_	1	nmod	1:nmod:como	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	MTST	MTST	PROPN	_	_	5	conj	1:nmod:como|5:conj:e	_
+8	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	aux	10:aux	_
+9	sendo	ser	AUX	_	VerbForm=Ger	10	aux:pass	10:aux:pass	_
+10	favorecidos	favorecer	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	SpaceAfter=No
+11	,	,	PUNCT	_	_	20	punct	20:punct	_
+12	enquanto	enquanto	SCONJ	_	_	20	mark	20:mark	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	direito	direito	NOUN	_	Gender=Masc|Number=Sing	20	nsubj:pass	20:nsubj:pass	_
+15-16	dos	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	17:det	_
+17	cidadãos	cidadão	NOUN	_	Gender=Masc|Number=Plur	14	nmod	14:nmod:de	_
+18	comuns	comum	ADJ	_	Number=Plur	17	amod	17:amod	_
+19	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	aux:pass	20:aux:pass	_
+20	ignorado	ignorar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	10	advcl	10:advcl:enquanto	SpaceAfter=No
+21	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0025
+# text = Balera enfatiza que a Constituição Federal assegura o direito à propriedade, mas com a nova interpretação trazida pelo decreto, qualquer propriedade que não cumprir uma "função social" vagamente definida poderá ser expropriada.
+1	Balera	Balera	PROPN	_	_	2	nsubj	2:nsubj	_
+2	enfatiza	enfatizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	7	mark	7:mark	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	Constituição	Constituição	PROPN	_	_	7	nsubj	7:nsubj	_
+6	Federal	Federal	PROPN	_	_	5	flat:name	5:flat:name	_
+7	assegura	assegurar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	2:ccomp	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	direito	direito	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+10-11	à	_	_	_	_	_	_	_	_
+10	a	a	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	propriedade	propriedade	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:a	SpaceAfter=No
+13	,	,	PUNCT	_	_	36	punct	36:punct	_
+14	mas	mas	CCONJ	_	_	36	cc	36:cc	_
+15	com	com	ADP	_	_	18	case	18:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+17	nova	novo	ADJ	_	Gender=Fem|Number=Sing	18	amod	18:amod	_
+18	interpretação	interpretação	NOUN	_	Gender=Fem|Number=Sing	36	obl	36:obl:com	_
+19	trazida	trazer	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	18	acl	18:acl	_
+20-21	pelo	_	_	_	_	_	_	_	_
+20	por	por	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	decreto	decreto	NOUN	_	Gender=Masc|Number=Sing	19	obl:agent	19:obl:agent	SpaceAfter=No
+23	,	,	PUNCT	_	_	18	punct	18:punct	_
+24	qualquer	qualquer	DET	_	Number=Sing|PronType=Ind	25	det	25:det	_
+25	propriedade	propriedade	NOUN	_	Gender=Fem|Number=Sing	36	nsubj	28:nsubj|36:nsubj|38:nsubj:pass	_
+26	que	que	PRON	_	PronType=Rel	28	nsubj	25:ref	_
+27	não	não	ADV	_	_	28	advmod	28:advmod	_
+28	cumprir	cumprir	VERB	_	VerbForm=Inf	25	acl:relcl	25:acl:relcl	_
+29	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+30	"	"	PUNCT	_	_	31	punct	31:punct	SpaceAfter=No
+31	função	função	NOUN	_	Gender=Fem|Number=Sing	28	obj	28:obj	_
+32	social	social	ADJ	_	Number=Sing	31	amod	31:amod	SpaceAfter=No
+33	"	"	PUNCT	_	_	31	punct	31:punct	_
+34	vagamente	vagamente	ADV	_	_	35	advmod	35:advmod	_
+35	definida	definir	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	31	acl	31:acl	_
+36	poderá	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	2	ccomp	2:ccomp	_
+37	ser	ser	AUX	_	VerbForm=Inf	38	aux:pass	38:aux:pass	_
+38	expropriada	expropriar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	36	xcomp	36:xcomp	SpaceAfter=No
+39	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0027
+# text = Não se enganem, essa é uma cláusula pétrea, e não pode ser alterada por decreto.
+1	Não	não	ADV	_	_	3	advmod	3:advmod	_
+2	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	3	expl	3:expl	_
+3	enganem	enganar	VERB	_	Mood=Imp|Number=Plur|Person=3|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+4	,	,	PUNCT	_	_	8	punct	8:punct	_
+5	essa	esse	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	8	nsubj	8:nsubj|13:nsubj|15:nsubj:pass	_
+6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop	_
+7	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	cláusula	cláusula	NOUN	_	Gender=Fem|Number=Sing	3	parataxis	3:parataxis	_
+9	pétrea	pétreo	ADJ	_	Gender=Fem|Number=Sing	8	amod	8:amod	SpaceAfter=No
+10	,	,	PUNCT	_	_	13	punct	13:punct	_
+11	e	e	CCONJ	_	_	13	cc	13:cc	_
+12	não	não	ADV	_	_	13	advmod	13:advmod	_
+13	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	conj	3:parataxis|8:conj:e	_
+14	ser	ser	AUX	_	VerbForm=Inf	15	aux:pass	15:aux:pass	_
+15	alterada	alterar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	13	xcomp	13:xcomp	_
+16	por	por	ADP	_	_	17	case	17:case	_
+17	decreto	decreto	NOUN	_	Gender=Masc|Number=Sing	15	obl	15:obl:por	SpaceAfter=No
+18	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0029
+# text = É um ataque direto às nossas liberdades!
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+2	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	ataque	ataque	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+4	direto	direto	ADJ	_	Gender=Masc|Number=Sing	3	amod	3:amod	_
+5-6	às	_	_	_	_	_	_	_	_
+5	a	a	ADP	_	_	8	case	8:case	_
+6	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	8:det	_
+7	nossas	nosso	DET	_	Gender=Fem|Number=Plur|Person=1|Poss=Yes|PronType=Prs	8	det	8:det	_
+8	liberdades	liberdade	NOUN	_	Gender=Fem|Number=Plur	3	nmod	3:nmod:a	SpaceAfter=No
+9	!	!	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0031
+# text = A propriedade privada urbana e rural só será garantida se atender a critérios extremamente rigorosos, como o aproveitamento racional da terra e a preservação ambiental.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	propriedade	propriedade	NOUN	_	Gender=Fem|Number=Sing	9	nsubj:pass	9:nsubj:pass	_
+3	privada	privado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	2	amod	2:amod	_
+4	urbana	urbano	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	rural	rural	ADJ	_	Number=Sing	4	conj	2:amod|4:conj:e	_
+7	só	só	ADV	_	_	9	advmod	9:advmod	_
+8	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	9	aux:pass	9:aux:pass	_
+9	garantida	garantir	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+10	se	se	SCONJ	_	_	11	mark	11:mark	_
+11	atender	atender	VERB	_	VerbForm=Inf	9	advcl	9:advcl:se	_
+12	a	a	ADP	_	_	13	case	13:case	_
+13	critérios	critério	NOUN	_	Gender=Masc|Number=Plur	11	obl	11:obl:a	_
+14	extremamente	extremamente	ADV	_	_	15	advmod	15:advmod	_
+15	rigorosos	rigoroso	ADJ	_	Gender=Masc|Number=Plur	13	amod	13:amod	SpaceAfter=No
+16	,	,	PUNCT	_	_	19	punct	19:punct	_
+17	como	como	ADP	_	_	19	case	19:case|26:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	aproveitamento	aproveitamento	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod:como	_
+20	racional	racional	ADJ	_	Number=Sing	19	amod	19:amod	_
+21-22	da	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	terra	terra	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:de	_
+24	e	e	CCONJ	_	_	26	cc	26:cc	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	preservação	preservação	NOUN	_	Gender=Fem|Number=Sing	19	conj	13:nmod:como|19:conj:e	_
+27	ambiental	ambiental	ADJ	_	Number=Sing	26	amod	26:amod	SpaceAfter=No
+28	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0033
+# text = Caso contrário, adeus à sua casa, sua fazenda, seus bens!
+1	Caso	caso	NOUN	_	ExtPos=CCONJ|Gender=Masc|Number=Sing	4	cc	4:cc	_
+2	contrário	contrário	ADJ	_	Gender=Masc|Number=Sing	1	fixed	1:fixed	SpaceAfter=No
+3	,	,	PUNCT	_	_	1	punct	1:punct	_
+4	adeus	adeus	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+5-6	à	_	_	_	_	_	_	_	_
+5	a	a	ADP	_	_	8	case	8:case|11:case|14:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+7	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	8	det	8:det	_
+8	casa	casa	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:a	SpaceAfter=No
+9	,	,	PUNCT	_	_	11	punct	11:punct	_
+10	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	11	det	11:det	_
+11	fazenda	fazenda	NOUN	_	Gender=Fem|Number=Sing	8	conj	4:nmod:a|8:conj	SpaceAfter=No
+12	,	,	PUNCT	_	_	14	punct	14:punct	_
+13	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	14	det	14:det	_
+14	bens	bem	NOUN	_	Gender=Masc|Number=Plur	8	conj	4:nmod:a|8:conj	SpaceAfter=No
+15	!	!	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0035
+# text = Não deixe isso acontecer! Informe-se e compartilhe este alerta.
+1	Não	não	ADV	_	_	2	advmod	2:advmod	_
+2	deixe	deixar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+3	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	2	obj	2:obj|4:nsubj	_
+4	acontecer	acontecer	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	SpaceAfter=No
+5	!	!	PUNCT	_	_	6	punct	6:punct	_
+6-7	Informe-se	_	_	_	_	_	_	_	_
+6	Informe	informar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	2	parataxis	2:parataxis	_
+7	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	6	expl	6:expl	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	compartilhe	compartilhar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	2	conj	2:conj:e	_
+10	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	11	det	11:det	_
+11	alerta	alerta	NOUN	_	Number=Sing	9	obj	9:obj	SpaceAfter=No
+12	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0037
+# text = Assista ao vídeo para aprender a identificar mensagens falsas, mas não ignore o risco real que o Decreto 11.
+1	Assista	assistir	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2-3	ao	_	_	_	_	_	_	_	_
+2	a	a	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	1	obl	1:obl:a	_
+5	para	para	ADP	_	_	6	mark	6:mark	_
+6	aprender	aprender	VERB	_	VerbForm=Inf	1	advcl	1:advcl:para	_
+7	a	a	ADP	_	_	8	mark	8:mark	_
+8	identificar	identificar	VERB	_	VerbForm=Inf	6	xcomp	6:xcomp	_
+9	mensagens	mensagem	NOUN	_	Gender=Fem|Number=Plur	8	obj	8:obj	_
+10	falsas	falso	ADJ	_	Gender=Fem|Number=Plur	9	amod	9:amod	SpaceAfter=No
+11	,	,	PUNCT	_	_	14	punct	14:punct	_
+12	mas	mas	CCONJ	_	_	14	cc	14:cc	_
+13	não	não	ADV	_	_	14	advmod	14:advmod	_
+14	ignore	ignorar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	1	conj	1:conj:mas	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	risco	risco	NOUN	_	Gender=Masc|Number=Sing	14	obj	14:obj	_
+17	real	real	ADJ	_	Number=Sing	16	amod	16:amod	_
+18	que	que	PRON	_	PronType=Rel	20	obj	20:obj	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	Decreto	Decreto	PROPN	_	_	16	nmod	16:nmod	_
+21	11	11	NUM	_	NumType=Card	20	nmod	20:nmod	SpaceAfter=No
+22	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0039
+# text = 47 representa.
+1	47	47	NUM	_	NumType=Card	2	nsubj	2:nsubj	_
+2	representa	representar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+3	.	.	PUNCT	_	_	2	punct	2:punct	_

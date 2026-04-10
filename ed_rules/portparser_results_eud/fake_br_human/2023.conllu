@@ -1,0 +1,460 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Trabalhar pra quê?
+1	Trabalhar	trabalhar	VERB	_	VerbForm=Inf	0	root	0:root	_
+2	pra	para	ADP	_	_	3	case	3:case	_
+3	quê	quê	PRON	_	PronType=Int	1	obl	1:obl:para	SpaceAfter=No
+4	?	?	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Geração NEM-NEM (que nem trabalha nem estuda) cresce assustadoramente no Brasil.
+1	Geração	geração	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	6:nsubj|8:nsubj|10:nsubj	_
+2	NEM-NEM	NEM-NEM	PROPN	_	_	1	nmod	1:nmod	_
+3	(	(	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+4	que	que	PRON	_	PronType=Rel	6	nsubj	1:ref	_
+5	nem	nem	ADV	_	_	6	advmod	6:advmod	_
+6	trabalha	trabalhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+7	nem	nem	CCONJ	_	_	8	cc	8:cc	_
+8	estuda	estudar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	1:acl:relcl|6:conj:nem	SpaceAfter=No
+9	)	)	PUNCT	_	_	6	punct	6:punct	_
+10	cresce	crescer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+11	assustadoramente	assustadoramente	ADV	_	_	10	advmod	10:advmod	_
+12-13	no	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	Brasil	Brasil	PROPN	_	_	10	obl	10:obl:em	SpaceAfter=No
+15	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0005
+# text = Ah, trabalhar pra quê??
+1	Ah	ah	INTJ	_	_	3	discourse	3:discourse	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	trabalhar	trabalhar	VERB	_	VerbForm=Inf	0	root	0:root	_
+4	pra	para	ADP	_	_	5	case	5:case	_
+5	quê	quê	PRON	_	PronType=Int	3	obl	3:obl:para	SpaceAfter=No
+6	?	?	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+7	?	?	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = Prefiro me "inscrever" pra receber bolsa família, bolsa escola, bolsa gás, bolsa cesta-básica, bolsa celular, enfim, esse negócio de trabalhar não tá com nada!
+1	Prefiro	preferir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	me	me	PRON	_	Case=Acc|Number=Sing|Person=1|PronType=Prs	4	obj	4:obj	_
+3	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+4	inscrever	inscrever	VERB	_	VerbForm=Inf	1	xcomp	1:xcomp	SpaceAfter=No
+5	"	"	PUNCT	_	_	4	punct	4:punct	_
+6	pra	para	ADP	_	_	7	mark	7:mark	_
+7	receber	receber	VERB	_	VerbForm=Inf	32	advcl	32:advcl:para	_
+8	bolsa	bolsa	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	_
+9	família	família	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	bolsa	bolsa	NOUN	_	Gender=Fem|Number=Sing	8	conj	7:obj|8:conj	_
+12	escola	escola	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	bolsa	bolsa	NOUN	_	Gender=Fem|Number=Sing	8	conj	7:obj|8:conj	_
+15	gás	gás	NOUN	_	Gender=Masc|Number=Sing	14	nmod	14:nmod	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	bolsa	bolsa	NOUN	_	Gender=Fem|Number=Sing	8	conj	7:obj|8:conj	_
+18	cesta-básica	cesta-básica	NOUN	_	Gender=Fem|Number=Sing	17	amod	17:amod	SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	20:punct	_
+20	bolsa	bolsa	NOUN	_	Gender=Fem|Number=Sing	8	conj	7:obj|8:conj	_
+21	celular	celular	NOUN	_	Gender=Masc|Number=Sing	20	nmod	20:nmod	SpaceAfter=No
+22	,	,	PUNCT	_	_	23	punct	23:punct	_
+23	enfim	enfim	ADV	_	_	32	advmod	32:advmod	SpaceAfter=No
+24	,	,	PUNCT	_	_	23	punct	23:punct	_
+25	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	26	det	26:det	_
+26	negócio	negócio	NOUN	_	Gender=Masc|Number=Sing	32	nsubj	32:nsubj	_
+27	de	de	ADP	_	_	28	mark	28:mark	_
+28	trabalhar	trabalhar	VERB	_	VerbForm=Inf	26	acl	26:acl:de	_
+29	não	não	ADV	_	_	32	advmod	32:advmod	_
+30	tá	estar	AUX	_	Abbr=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	32	cop	32:cop	_
+31	com	com	ADP	_	_	32	case	32:case	_
+32	nada	nada	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	1	dep	1:dep	SpaceAfter=No
+33	!	!	PUNCT	_	_	32	punct	32:punct	_
+
+# sent_id = S0009
+# text = Quem foi que inventou isso?
+1	Quem	quem	PRON	_	PronType=Int	4	nsubj	4:nsubj	_
+2	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	discourse	4:discourse	_
+3	que	que	SCONJ	_	_	4	discourse	4:discourse	_
+4	inventou	inventar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	4	obj	4:obj	SpaceAfter=No
+6	?	?	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0011
+# text = (Cristiane Azevedo para o Diário do Brasil) Vamos protestar!
+1	(	(	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+2	Cristiane	Cristiane	PROPN	_	_	12	parataxis	12:parataxis	_
+3	Azevedo	Azevedo	PROPN	_	_	2	flat:name	2:flat:name	_
+4	para	para	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	Diário	Diário	PROPN	_	_	2	nmod	2:nmod:para	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	Brasil	Brasil	PROPN	_	_	6	flat:name	6:flat:name	SpaceAfter=No
+10	)	)	PUNCT	_	_	2	punct	2:punct	_
+11	Vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	12	aux	12:aux	_
+12	protestar	protestar	VERB	_	VerbForm=Inf	0	root	0:root	SpaceAfter=No
+13	!	!	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0013
+# text = Vamos tocar fogo nas ruas, vamos invadir as escolas, vamos pintar o cabelo de azul, vamos usar as redes sociais para inflamar os jovens [...] afinal de contas somos parte da geração que não tem compromissos com nada.
+1	Vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	aux	2:aux	_
+2	tocar	tocar	VERB	_	VerbForm=Inf	0	root	0:root	_
+3	fogo	fogo	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+4-5	nas	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	6:det	_
+6	ruas	rua	NOUN	_	Gender=Fem|Number=Plur	2	obl	2:obl:em	SpaceAfter=No
+7	,	,	PUNCT	_	_	9	punct	9:punct	_
+8	vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	9	aux	9:aux	_
+9	invadir	invadir	VERB	_	VerbForm=Inf	2	conj	2:conj	_
+10	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	11:det	_
+11	escolas	escola	NOUN	_	Gender=Fem|Number=Plur	9	obj	9:obj	SpaceAfter=No
+12	,	,	PUNCT	_	_	14	punct	14:punct	_
+13	vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	14	aux	14:aux	_
+14	pintar	pintar	VERB	_	VerbForm=Inf	2	conj	2:conj	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	cabelo	cabelo	NOUN	_	Gender=Masc|Number=Sing	14	obj	14:obj	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	azul	azul	NOUN	_	Number=Sing	14	obl	14:obl:de	SpaceAfter=No
+19	,	,	PUNCT	_	_	21	punct	21:punct	_
+20	vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	21	aux	21:aux	_
+21	usar	usar	VERB	_	VerbForm=Inf	2	conj	2:conj	_
+22	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	23:det	_
+23	redes	rede	NOUN	_	Gender=Fem|Number=Plur	21	obj	21:obj	_
+24	sociais	social	ADJ	_	Number=Plur	23	amod	23:amod	_
+25	para	para	ADP	_	_	26	mark	26:mark	_
+26	inflamar	inflamar	VERB	_	VerbForm=Inf	21	advcl	21:advcl:para	_
+27	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	28:det	_
+28	jovens	jovem	NOUN	_	Number=Plur	26	obj	26:obj	_
+29	[	[	PUNCT	_	_	30	punct	30:punct	SpaceAfter=No
+30	.	.	PUNCT	_	_	37	parataxis	37:parataxis	SpaceAfter=No
+31	..	..	PUNCT	_	_	33	punct	33:punct	SpaceAfter=No
+32	]	]	PUNCT	_	_	33	punct	33:punct	_
+33	afinal	afinal	ADV	_	_	37	advmod	37:advmod	_
+34	de	de	ADP	_	_	35	case	35:case	_
+35	contas	conta	NOUN	_	Gender=Fem|Number=Plur	33	obl	33:obl:de	_
+36	somos	ser	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	37	cop	37:cop	_
+37	parte	parte	NOUN	_	Gender=Fem|Number=Sing	2	parataxis	2:parataxis	_
+38-39	da	_	_	_	_	_	_	_	_
+38	de	de	ADP	_	_	40	case	40:case	_
+39	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	40:det	_
+40	geração	geração	NOUN	_	Gender=Fem|Number=Sing	37	nmod	37:nmod:de|43:nsubj	_
+41	que	que	PRON	_	PronType=Rel	43	nsubj	40:ref	_
+42	não	não	ADV	_	_	43	advmod	43:advmod	_
+43	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	40	acl:relcl	40:acl:relcl	_
+44	compromissos	compromisso	NOUN	_	Gender=Masc|Number=Plur	43	obj	43:obj	_
+45	com	com	ADP	_	_	46	case	46:case	_
+46	nada	nada	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	44	nmod	44:nmod:com	SpaceAfter=No
+47	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0015
+# text = A geração "nem-nem", que nem estuda nem trabalha, está crescendo a taxas assustadoras.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	geração	geração	NOUN	_	Gender=Fem|Number=Sing	14	nsubj	9:nsubj|11:nsubj|14:nsubj	_
+3	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+4	nem-nem	nem-nem	ADV	_	_	2	nmod	2:nmod	SpaceAfter=No
+5	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+6	,	,	PUNCT	_	_	9	punct	9:punct	_
+7	que	que	PRON	_	PronType=Rel	9	nsubj	2:ref	_
+8	nem	nem	ADV	_	_	9	advmod	9:advmod	_
+9	estuda	estudar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+10	nem	nem	CCONJ	_	_	11	cc	11:cc	_
+11	trabalha	trabalhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	conj	2:acl:relcl|9:conj:nem	SpaceAfter=No
+12	,	,	PUNCT	_	_	9	punct	9:punct	_
+13	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux	14:aux	_
+14	crescendo	crescer	VERB	_	VerbForm=Ger	0	root	0:root	_
+15	a	a	ADP	_	_	16	case	16:case	_
+16	taxas	taxa	NOUN	_	Gender=Fem|Number=Plur	14	obl	14:obl:a	_
+17	assustadoras	assustador	ADJ	_	Gender=Fem|Number=Plur	16	amod	16:amod	SpaceAfter=No
+18	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0017
+# text = No Brasil, mais de 25% dos jovens em idade ativa não estudam nem trabalham.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	Brasil	Brasil	PROPN	_	_	16	obl	16:obl:em	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	mais	mais	ADV	_	ExtPos=ADV	7	advmod	7:advmod	_
+6	de	de	ADP	_	_	5	fixed	5:fixed	_
+7	25	25	NUM	_	NumType=Card	8	nummod	8:nummod	SpaceAfter=No
+8	%	%	SYM	_	_	16	nsubj	16:nsubj|18:nsubj	_
+9-10	dos	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	11:det	_
+11	jovens	jovem	NOUN	_	Number=Plur	8	nmod	8:nmod:de	_
+12	em	em	ADP	_	_	13	case	13:case	_
+13	idade	idade	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:em	_
+14	ativa	ativo	ADJ	_	Gender=Fem|Number=Sing	13	amod	13:amod	_
+15	não	não	ADV	_	_	16	advmod	16:advmod	_
+16	estudam	estudar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+17	nem	nem	CCONJ	_	_	18	cc	18:cc	_
+18	trabalham	trabalhar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	conj	16:conj:nem	SpaceAfter=No
+19	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0019
+# text = Voltando ao assunto, trabalhar pra quê?
+1	Voltando	voltar	VERB	_	VerbForm=Ger	6	advcl	6:advcl	_
+2-3	ao	_	_	_	_	_	_	_	_
+2	a	a	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	assunto	assunto	NOUN	_	Gender=Masc|Number=Sing	1	obl	1:obl:a	SpaceAfter=No
+5	,	,	PUNCT	_	_	1	punct	1:punct	_
+6	trabalhar	trabalhar	VERB	_	VerbForm=Inf	0	root	0:root	_
+7	pra	para	ADP	_	_	8	case	8:case	_
+8	quê	quê	PRON	_	PronType=Int	6	obl	6:obl:para	SpaceAfter=No
+9	?	?	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0021
+# text = Não queremos constituir família.
+1	Não	não	ADV	_	_	2	advmod	2:advmod	_
+2	queremos	querer	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	constituir	constituir	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	_
+4	família	família	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	SpaceAfter=No
+5	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0023
+# text = Família?
+1	Família	família	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+2	?	?	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0025
+# text = Isso é coisa do passado.
+1	Isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	3	nsubj	3:nsubj	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+3	coisa	coisa	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	passado	passado	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	SpaceAfter=No
+7	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0027
+# text = Não precisamos mais disso.
+1	Não	não	ADV	_	_	2	advmod	2:advmod	_
+2	precisamos	precisar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	mais	mais	ADV	_	_	2	advmod	2:advmod	_
+4-5	disso	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	2	obl	2:obl:de	_
+6	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0029
+# text = Um dia a gente "pega" um garoto, no outro a gente "pega" uma garota [...] Filhos?
+1	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	dia	dia	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	gente	gente	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj	_
+5	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+6	pega	pegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+7	"	"	PUNCT	_	_	6	punct	6:punct	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	garoto	garoto	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	SpaceAfter=No
+10	,	,	PUNCT	_	_	17	punct	17:punct	_
+11-12	no	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	outro	outro	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	17	obl	17:obl:em	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	gente	gente	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	17:nsubj	_
+16	"	"	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+17	pega	pegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	6:conj	SpaceAfter=No
+18	"	"	PUNCT	_	_	17	punct	17:punct	_
+19	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	garota	garoto	NOUN	_	Gender=Fem|Number=Sing	17	obj	17:obj	_
+21	[	[	PUNCT	_	_	22	punct	22:punct	SpaceAfter=No
+22	.	.	PUNCT	_	_	25	parataxis	25:parataxis	SpaceAfter=No
+23	..	..	PUNCT	_	_	22	punct	22:punct	SpaceAfter=No
+24	]	]	PUNCT	_	_	22	punct	22:punct	_
+25	Filhos	filho	NOUN	_	Gender=Masc|Number=Plur	17	parataxis	17:parataxis	SpaceAfter=No
+26	?	?	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0031
+# text = Nem pensar!
+1	Nem	nem	ADV	_	_	2	advmod	2:advmod	_
+2	pensar	pensar	VERB	_	VerbForm=Inf	0	root	0:root	SpaceAfter=No
+3	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0033
+# text = Imagine só ter que trabalhar pra sustentar um pirralho!
+1	Imagine	imaginar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	só	só	ADV	_	_	1	advmod	1:advmod	_
+3	ter	ter	VERB	_	VerbForm=Inf	1	xcomp	1:xcomp	_
+4	que	que	ADP	_	_	5	mark	5:mark	_
+5	trabalhar	trabalhar	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+6	pra	para	ADP	_	_	7	mark	7:mark	_
+7	sustentar	sustentar	VERB	_	VerbForm=Inf	5	advcl	5:advcl:para	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	pirralho	pirralho	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	SpaceAfter=No
+10	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0035
+# text = Melhor comprar um pit bull!
+1	Melhor	melhor	ADJ	_	Number=Sing	0	root	0:root	_
+2	comprar	comprar	VERB	_	VerbForm=Inf	1	csubj	1:csubj	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	pit	pit	X	_	Foreign=Yes	2	obj	2:obj	_
+5	bull	bull	X	_	Foreign=Yes	4	flat:foreign	4:flat:foreign	SpaceAfter=No
+6	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0037
+# text = Vamos pegar a mesada do papai ou da mamãe e sair para as ruas.
+1	Vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	aux	2:aux|13:aux	_
+2	pegar	pegar	VERB	_	VerbForm=Inf	0	root	0:root	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	mesada	mesada	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	papai	papai	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:de	_
+8	ou	ou	CCONJ	_	_	11	cc	11:cc	_
+9-10	da	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	mamãe	mamãe	NOUN	_	Gender=Fem|Number=Sing	7	conj	4:nmod:de|7:conj:ou	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	sair	sair	VERB	_	VerbForm=Inf	2	conj	2:conj:e	_
+14	para	para	ADP	_	_	16	case	16:case	_
+15	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	16:det	_
+16	ruas	rua	NOUN	_	Gender=Fem|Number=Plur	13	obl	13:obl:para	SpaceAfter=No
+17	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0039
+# text = Vamos comer um lanche no McDonalds. Vamos tomar todas.
+1	Vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	aux	2:aux	_
+2	comer	comer	VERB	_	VerbForm=Inf	0	root	0:root	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	lanche	lanche	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+5-6	no	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	McDonalds	McDonalds	PROPN	_	_	2	obl	2:obl:em	SpaceAfter=No
+8	.	.	PUNCT	_	_	10	punct	10:punct	_
+9	Vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	10	aux	10:aux	_
+10	tomar	tomar	VERB	_	VerbForm=Inf	2	parataxis	2:parataxis	_
+11	todas	todo	PRON	_	Gender=Fem|Number=Plur|PronType=Ind	10	obj	10:obj	SpaceAfter=No
+12	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0041
+# text = Vamos nos embriagar.
+1	Vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	aux	3:aux	_
+2	nos	nos	PRON	_	Case=Acc|Number=Plur|Person=1|PronType=Prs	3	obj	3:obj	_
+3	embriagar	embriagar	VERB	_	VerbForm=Inf	0	root	0:root	SpaceAfter=No
+4	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0043
+# text = Depois a gente volta pra casa morrendo de dor de barriga, vai ao banheiro e usa o papel higiênico.
+1	Depois	depois	ADV	_	_	4	advmod	4:advmod	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	gente	gente	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj|14:nsubj|19:nsubj	_
+4	volta	voltar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5-6	pra	_	_	_	_	_	_	_	_
+5	para	para	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	casa	casa	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:para	_
+8	morrendo	morrer	VERB	_	VerbForm=Ger	4	advcl	4:advcl	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	dor	dor	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:de	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	barriga	barriga	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:de	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	vai	ir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	4:conj:e	_
+15-16	ao	_	_	_	_	_	_	_	_
+15	a	a	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	banheiro	banheiro	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:a	_
+18	e	e	CCONJ	_	_	19	cc	19:cc	_
+19	usa	usar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	4:conj:e	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	papel	papel	NOUN	_	Gender=Masc|Number=Sing	19	obj	19:obj	_
+22	higiênico	higiênico	ADJ	_	Gender=Masc|Number=Sing	21	amod	21:amod	SpaceAfter=No
+23	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0045
+# text = É tudo de graça!
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	2:cop	_
+2	tudo	tudo	PRON	_	PronType=Ind	0	root	0:root	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	graça	graça	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	SpaceAfter=No
+5	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0047
+# text = Até o papel higiênico!
+1	Até	até	ADV	_	_	3	advmod	3:advmod	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	papel	papel	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+4	higiênico	higiênico	ADJ	_	Gender=Masc|Number=Sing	3	amod	3:amod	SpaceAfter=No
+5	!	!	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0049
+# text = Ahhh.... o Iphone 7 que a gente usa pra filmar os protestos também foi o papai que comprou!
+1	Ahhh	ahhh	INTJ	_	_	18	discourse	18:discourse	SpaceAfter=No
+2	...	...	PUNCT	_	_	1	punct	1:punct	SpaceAfter=No
+3	.	.	PUNCT	_	_	18	punct	18:punct	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	Iphone	Iphone	PROPN	_	_	18	nsubj	10:obj|18:nsubj	_
+6	7	7	NUM	_	NumType=Card	5	flat:name	5:flat:name	_
+7	que	que	PRON	_	PronType=Rel	10	obj	5:ref	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	gente	gente	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	10:nsubj	_
+10	usa	usar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_
+11	pra	para	ADP	_	_	12	mark	12:mark	_
+12	filmar	filmar	VERB	_	VerbForm=Inf	10	advcl	10:advcl:para	_
+13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	14:det	_
+14	protestos	protesto	NOUN	_	Gender=Masc|Number=Plur	12	obj	12:obj	_
+15	também	também	ADV	_	_	18	advmod	18:advmod	_
+16	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	cop	18:cop	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	papai	papai	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root|20:nsubj	_
+19	que	que	PRON	_	PronType=Rel	20	nsubj	18:ref	_
+20	comprou	comprar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	acl:relcl	18:acl:relcl	SpaceAfter=No
+21	!	!	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0051
+# text = Pobre geração!
+1	Pobre	pobre	ADJ	_	Number=Sing	2	amod	2:amod	_
+2	geração	geração	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+3	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0053
+# text = Pobre nada!
+1	Pobre	pobre	NOUN	_	Number=Sing	0	root	0:root	_
+2	nada	nada	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	1	nmod	1:nmod	SpaceAfter=No
+3	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0055
+# text = Quem sabe o futuro lhes reserva um cargo de Presidente da República do Brasil?!?!
+1	Quem	quem	PRON	_	PronType=Ind	6	nsubj	6:nsubj	_
+2	sabe	saber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	dep	1:dep	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	futuro	futuro	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+5	lhes	lhe	PRON	_	Case=Dat|Number=Plur|Person=3|PronType=Prs	6	iobj	6:iobj	_
+6	reserva	reservar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	cargo	cargo	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	Presidente	Presidente	PROPN	_	_	8	nmod	8:nmod:de	_
+11-12	da	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	República	República	PROPN	_	_	10	nmod	10:nmod:de	_
+14-15	do	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	Brasil	Brasil	PROPN	_	_	13	flat:name	13:flat:name	SpaceAfter=No
+17	?	?	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+18	!	!	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+19	?	?	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+20	!	!	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0057
+# text = A luta continua "cumpanheros"!
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	luta	luta	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj|5:nsubj	_
+3	continua	continuar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+5	cumpanheros	cumpanhero	NOUN	_	Gender=Masc|Number=Plur	3	xcomp	3:xcomp	SpaceAfter=No
+6	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+7	!	!	PUNCT	_	_	3	punct	3:punct	_

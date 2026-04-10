@@ -1,0 +1,63 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Loira opressora desmascara Dilma e Cunha e fala tudo aquilo que está engasgado na garganta do povo.
+1	Loira	loiro	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj|8:nsubj	_
+2	opressora	opressor	ADJ	_	Gender=Fem|Number=Sing	1	amod	1:amod	_
+3	desmascara	desmascarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	Dilma	Dilma	PROPN	_	_	3	obj	3:obj	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	Cunha	Cunha	PROPN	_	_	4	conj	3:obj|4:conj:e	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	fala	falar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	3:conj:e	_
+9	tudo	tudo	PRON	_	ExtPos=PRON|PronType=Ind	8	obj	8:obj|13:nsubj	_
+10	aquilo	aquilo	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	9	fixed	9:fixed	_
+11	que	que	PRON	_	PronType=Rel	13	nsubj	9:ref	_
+12	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	13:cop	_
+13	engasgado	engasgado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	9	acl:relcl	9:acl:relcl	_
+14-15	na	_	_	_	_	_	_	_	_
+14	em	em	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	garganta	garganta	NOUN	_	Gender=Fem|Number=Sing	13	obl	13:obl:em	_
+17-18	do	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	povo	povo	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod:de	SpaceAfter=No
+20	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = Aplausos para a "LOIRA OPRESSORA"!
+1	Aplausos	aplauso	NOUN	_	Gender=Masc|Number=Plur	0	root	0:root	_
+2	para	para	ADP	_	_	5	case	5:case	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+4	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+5	LOIRA	LOIRA	PROPN	_	_	1	nmod	1:nmod:para	_
+6	OPRESSORA	OPRESSORA	PROPN	_	_	5	flat:name	5:flat:name	SpaceAfter=No
+7	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+8	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0005
+# text = Falou muita coisa que está engasgada na garganta dos Brasileiros.
+1	Falou	falar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	muita	muito	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+3	coisa	coisa	NOUN	_	Gender=Fem|Number=Sing	1	obj	1:obj|6:nsubj	_
+4	que	que	PRON	_	PronType=Rel	6	nsubj	3:ref	_
+5	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+6	engasgada	engasgado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	3	acl:relcl	3:acl:relcl	_
+7-8	na	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	garganta	garganta	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:em	_
+10-11	dos	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	12:det	_
+12	Brasileiros	Brasileiros	PROPN	_	_	9	nmod	9:nmod:de	SpaceAfter=No
+13	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0006
+# text = confira no vídeo:
+1	confira	conferir	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2-3	no	_	_	_	_	_	_	_	_
+2	em	em	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	1	obl	1:obl:em	SpaceAfter=No
+5	:	:	PUNCT	_	_	1	punct	1:punct	_

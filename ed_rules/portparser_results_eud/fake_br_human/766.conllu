@@ -1,0 +1,204 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = "PROFISSA"!
+1	"	"	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+2	PROFISSA	profissa	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+3	"	"	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+4	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Palocci diz que Lula desviava dinheiro até do próprio Instituto.
+1	Palocci	Palocci	PROPN	_	_	2	nsubj	2:nsubj	_
+2	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	5	mark	5:mark	_
+4	Lula	Lula	PROPN	_	_	5	nsubj	5:nsubj	_
+5	desviava	desviar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	2	ccomp	2:ccomp	_
+6	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+7	até	até	ADV	_	_	11	advmod	11:advmod	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	11	case	11:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+10	próprio	próprio	DET	_	Gender=Masc|Number=Sing|PronType=Dem	11	det	11:det	_
+11	Instituto	Instituto	PROPN	_	_	5	obl	5:obl:de	SpaceAfter=No
+12	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = Palocci aparenta estar muito magoado....
+1	Palocci	Palocci	PROPN	_	_	2	nsubj	2:nsubj|5:nsubj	_
+2	aparenta	aparentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	estar	estar	AUX	_	VerbForm=Inf	5	cop	5:cop	_
+4	muito	muito	ADV	_	_	5	advmod	5:advmod	_
+5	magoado	magoado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	2	xcomp	2:xcomp	SpaceAfter=No
+6	...	...	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+7	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0007
+# text = O ex-ministro disse em sua proposta de delação que está em vias de negociação com a força-tarefa da Lava-Jato que seu ex-companheiro e parceiro de fundação do PT, o senhor Luiz Inácio Lula da Silva, desviava dinheiro até do próprio Instituto.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	ex-ministro	ex-ministro	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	6	det	6:det	_
+6	proposta	proposta	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:em	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	delação	delação	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de	_
+9	que	que	SCONJ	_	_	12	mark	12:mark	_
+10	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	12:cop	_
+11	em	em	ADP	_	_	12	case	12:case	_
+12	vias	via	NOUN	_	Gender=Fem|Number=Plur	3	ccomp	3:ccomp	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	negociação	negociação	NOUN	_	Gender=Fem|Number=Sing	12	nmod	12:nmod:de	_
+15	com	com	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	força-tarefa	força-tarefa	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:com	_
+18-19	da	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	Lava-Jato	Lava-Jato	PROPN	_	_	17	nmod	17:nmod:de	_
+21	que	que	SCONJ	_	_	41	mark	41:mark	_
+22	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	23	det	23:det	_
+23	ex-companheiro	ex-companheiro	NOUN	_	Gender=Masc|Number=Sing	41	nsubj	41:nsubj	_
+24	e	e	CCONJ	_	_	25	cc	25:cc	_
+25	parceiro	parceiro	NOUN	_	Gender=Masc|Number=Sing	23	conj	23:conj:e|41:nsubj	_
+26	de	de	ADP	_	_	27	case	27:case	_
+27	fundação	fundação	NOUN	_	Gender=Fem|Number=Sing	25	nmod	25:nmod:de	_
+28-29	do	_	_	_	_	_	_	_	_
+28	de	de	ADP	_	_	30	case	30:case	_
+29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	30:det	_
+30	PT	PT	PROPN	_	_	27	nmod	27:nmod:de	SpaceAfter=No
+31	,	,	PUNCT	_	_	33	punct	33:punct	_
+32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	33:det	_
+33	senhor	senhor	NOUN	_	Gender=Masc|Number=Sing	23	appos	23:appos|25:appos	_
+34	Luiz	Luiz	PROPN	_	_	33	nmod	33:nmod	_
+35	Inácio	Inácio	PROPN	_	_	34	flat:name	34:flat:name	_
+36	Lula	Lula	PROPN	_	_	34	flat:name	34:flat:name	_
+37-38	da	_	_	_	_	_	_	_	_
+37	de	de	ADP	_	_	39	case	39:case	_
+38	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	39:det	_
+39	Silva	Silva	PROPN	_	_	34	flat:name	34:flat:name	SpaceAfter=No
+40	,	,	PUNCT	_	_	33	punct	33:punct	_
+41	desviava	desviar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	ccomp	3:ccomp	_
+42	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	41	obj	41:obj	_
+43	até	até	ADV	_	_	47	advmod	47:advmod	_
+44-45	do	_	_	_	_	_	_	_	_
+44	de	de	ADP	_	_	47	case	47:case	_
+45	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	det	47:det	_
+46	próprio	próprio	DET	_	Gender=Masc|Number=Sing|PronType=Dem	47	det	47:det	_
+47	Instituto	Instituto	PROPN	_	_	41	obl	41:obl:de	SpaceAfter=No
+48	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0009
+# text = De acordo com Palocci, parte do dinheiro que entrava como doação à entidade, era usado por Lula para bancar despesas pessoais e também de sua família.
+1	De	de	ADP	_	_	2	case	2:case	_
+2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	19	obl	19:obl:de	_
+3	com	com	ADP	_	_	4	case	4:case	_
+4	Palocci	Palocci	PROPN	_	_	2	nmod	2:nmod:com	SpaceAfter=No
+5	,	,	PUNCT	_	_	2	punct	2:punct	_
+6	parte	parte	NOUN	_	Gender=Fem|Number=Sing	19	nsubj:pass	19:nsubj:pass	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de|11:nsubj	_
+10	que	que	PRON	_	PronType=Rel	11	nsubj	9:ref	_
+11	entrava	entrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	acl:relcl	9:acl:relcl	_
+12	como	como	ADP	_	_	13	case	13:case	_
+13	doação	doação	NOUN	_	Gender=Fem|Number=Sing	11	obl	11:obl:como	_
+14-15	à	_	_	_	_	_	_	_	_
+14	a	a	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	entidade	entidade	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:a	SpaceAfter=No
+17	,	,	PUNCT	_	_	2	punct	2:punct	_
+18	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	19	aux:pass	19:aux:pass	_
+19	usado	usar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+20	por	por	ADP	_	_	21	case	21:case	_
+21	Lula	Lula	PROPN	_	_	19	obl:agent	19:obl:agent	_
+22	para	para	ADP	_	_	23	mark	23:mark	_
+23	bancar	bancar	VERB	_	VerbForm=Inf	19	advcl	19:advcl:para	_
+24	despesas	despesa	NOUN	_	Gender=Fem|Number=Plur	23	obj	23:obj	_
+25	pessoais	pessoal	ADJ	_	Number=Plur	24	amod	24:amod	_
+26	e	e	CCONJ	_	_	30	cc	30:cc	_
+27	também	também	ADV	_	_	30	advmod	30:advmod	_
+28	de	de	ADP	_	_	30	case	30:case	_
+29	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	30	det	30:det	_
+30	família	família	NOUN	_	Gender=Fem|Number=Sing	24	conj	23:obj|24:conj:e	SpaceAfter=No
+31	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0011
+# text = O ex-"cumpanhero" afirmou que o Instituto tinha uma espécie de "caixa 2" para acobertar as operações de desvio das doações.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	ex-"cumpanhero	ex-"cumpanhero	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	SpaceAfter=No
+3	"	"	PUNCT	_	_	2	punct	2:punct	_
+4	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	que	que	SCONJ	_	_	8	mark	8:mark	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Instituto	Instituto	PROPN	_	_	8	nsubj	8:nsubj	_
+8	tinha	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	ccomp	4:ccomp	_
+9	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	espécie	espécie	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	"	"	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+13	caixa	caixa	NOUN	_	Number=Sing	10	nmod	10:nmod:de	_
+14	2	2	NUM	_	NumType=Card	13	nmod	13:nmod	SpaceAfter=No
+15	"	"	PUNCT	_	_	13	punct	13:punct	_
+16	para	para	ADP	_	_	17	mark	17:mark	_
+17	acobertar	acobertar	VERB	_	VerbForm=Inf	8	advcl	8:advcl:para	_
+18	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	19:det	_
+19	operações	operação	NOUN	_	Gender=Fem|Number=Plur	17	obj	17:obj	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	desvio	desvio	NOUN	_	Gender=Masc|Number=Sing	19	nmod	19:nmod:de	_
+22-23	das	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	24:det	_
+24	doações	doação	NOUN	_	Gender=Fem|Number=Plur	21	nmod	21:nmod:de	SpaceAfter=No
+25	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0013
+# text = Paulo Okamotto, o presidente do Instituto, era quem cuidava da tal conta clandestina e mascarava todas as operações, segundo o delator.
+1	Paulo	Paulo	PROPN	_	_	12	nsubj	12:nsubj|19:nsubj	_
+2	Okamotto	Okamotto	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	5	punct	5:punct	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	presidente	presidente	NOUN	_	Number=Sing	1	appos	1:appos	_
+6-7	do	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	Instituto	Instituto	PROPN	_	_	5	nmod	5:nmod:de	SpaceAfter=No
+9	,	,	PUNCT	_	_	5	punct	5:punct	_
+10	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	12	cop	12:cop	_
+11	quem	quem	PRON	_	PronType=Rel	12	nsubj	12:nsubj|19:nsubj	_
+12	cuidava	cuidar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+13-14	da	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	16	case	16:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+15	tal	tal	DET	_	Number=Sing|PronType=Dem	16	det	16:det	_
+16	conta	conta	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl:de	_
+17	clandestina	clandestino	ADJ	_	Gender=Fem|Number=Sing	16	amod	16:amod	_
+18	e	e	CCONJ	_	_	19	cc	19:cc	_
+19	mascarava	mascarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	12	conj	12:conj:e	_
+20	todas	todo	DET	_	Gender=Fem|Number=Plur|PronType=Ind	22	det	22:det	_
+21	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	22:det	_
+22	operações	operação	NOUN	_	Gender=Fem|Number=Plur	19	obj	19:obj	SpaceAfter=No
+23	,	,	PUNCT	_	_	26	punct	26:punct	_
+24	segundo	segundo	ADP	_	_	26	case	26:case	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	delator	delator	NOUN	_	Gender=Masc|Number=Sing	19	obl	19:obl:segundo	SpaceAfter=No
+27	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0015
+# text = Tanto Lula quanto Okamotto sempre negaram qualquer tipo de ilícito dentro do Instituto.
+1	Tanto	tanto	CCONJ	_	_	2	cc	2:cc	_
+2	Lula	Lula	PROPN	_	_	6	nsubj	6:nsubj	_
+3	quanto	quanto	CCONJ	_	_	4	cc	4:cc	_
+4	Okamotto	Okamotto	PROPN	_	_	2	conj	2:conj:quanto|6:nsubj	_
+5	sempre	sempre	ADV	_	_	6	advmod	6:advmod	_
+6	negaram	negar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	qualquer	qualquer	DET	_	Number=Sing|PronType=Ind	8	det	8:det	_
+8	tipo	tipo	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	ilícito	ilícito	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:de	_
+11	dentro	dentro	ADV	_	_	6	advmod	6:advmod	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	Instituto	Instituto	PROPN	_	_	11	obl	11:obl:de	SpaceAfter=No
+15	.	.	PUNCT	_	_	6	punct	6:punct	_

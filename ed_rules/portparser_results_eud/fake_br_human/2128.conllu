@@ -1,0 +1,156 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = "Meu cliente não pode ser preso porque ele é médico".
+1	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+2	Meu	meu	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	det	3:det	_
+3	cliente	cliente	NOUN	_	Number=Sing	5	nsubj	5:nsubj|7:nsubj:pass	_
+4	não	não	ADV	_	_	5	advmod	5:advmod	_
+5	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	ser	ser	AUX	_	VerbForm=Inf	7	aux:pass	7:aux:pass	_
+7	preso	prender	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	5	xcomp	5:xcomp	_
+8	porque	porque	SCONJ	_	_	11	mark	11:mark	_
+9	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	nsubj	11:nsubj	_
+10	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	11:cop	_
+11	médico	médico	NOUN	_	Gender=Masc|Number=Sing	5	advcl	5:advcl:porque	SpaceAfter=No
+12	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+13	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0003
+# text = O advogado Palocci disse que estamos voltando aos tempos da "repressão".
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	advogado	advogado	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+3	Palocci	Palocci	PROPN	_	_	2	nmod	2:nmod	_
+4	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	que	que	SCONJ	_	_	7	mark	7:mark	_
+6	estamos	estar	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	7	aux	7:aux	_
+7	voltando	voltar	VERB	_	VerbForm=Ger	4	ccomp	4:ccomp	_
+8-9	aos	_	_	_	_	_	_	_	_
+8	a	a	ADP	_	_	10	case	10:case	_
+9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	10:det	_
+10	tempos	tempo	NOUN	_	Gender=Masc|Number=Plur	7	obl	7:obl:a	_
+11-12	da	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	14	case	14:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+13	"	"	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+14	repressão	repressão	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:de	SpaceAfter=No
+15	"	"	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+16	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0005
+# text = Após a prisão do ex-ministro Antônio Palocci, o advogado José Roberto Batochio criticou a Polícia Federal e alegou que seu cliente tem residência fixa, foi ex-ministro e ainda por cima " é médico".
+1	Após	após	ADP	_	_	3	case	3:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	prisão	prisão	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl:após	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	ex-ministro	ex-ministro	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	_
+7	Antônio	Antônio	PROPN	_	_	6	nmod	6:nmod	_
+8	Palocci	Palocci	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+9	,	,	PUNCT	_	_	3	punct	3:punct	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	advogado	advogado	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	15:nsubj|20:nsubj	_
+12	José	José	PROPN	_	_	11	nmod	11:nmod	_
+13	Roberto	Roberto	PROPN	_	_	12	flat:name	12:flat:name	_
+14	Batochio	Batochio	PROPN	_	_	12	flat:name	12:flat:name	_
+15	criticou	criticar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	Polícia	Polícia	PROPN	_	_	15	obj	15:obj	_
+18	Federal	Federal	PROPN	_	_	17	flat:name	17:flat:name	_
+19	e	e	CCONJ	_	_	20	cc	20:cc	_
+20	alegou	alegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	conj	15:conj:e	_
+21	que	que	SCONJ	_	_	24	mark	24:mark|36:mark	_
+22	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	23	det	23:det	_
+23	cliente	cliente	NOUN	_	Number=Sing	24	nsubj	24:nsubj|36:nsubj	_
+24	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	ccomp	20:ccomp	_
+25	residência	residência	NOUN	_	Gender=Fem|Number=Sing	24	obj	24:obj	_
+26	fixa	fixo	ADJ	_	Gender=Fem|Number=Sing	25	amod	25:amod	SpaceAfter=No
+27	,	,	PUNCT	_	_	29	punct	29:punct	_
+28	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	29	cop	29:cop	_
+29	ex-ministro	ex-ministro	NOUN	_	Gender=Masc|Number=Sing	25	conj	24:obj|25:conj	_
+30	e	e	CCONJ	_	_	36	cc	36:cc	_
+31	ainda	ainda	ADV	_	ExtPos=ADV	36	advmod	36:advmod	_
+32	por	por	ADP	_	_	33	case	33:case	_
+33	cima	cima	NOUN	_	Gender=Fem|Number=Sing	31	fixed	31:fixed	_
+34	"	"	PUNCT	_	_	36	punct	36:punct	_
+35	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	36	cop	36:cop	_
+36	médico	médico	NOUN	_	Gender=Masc|Number=Sing	24	conj	20:ccomp|24:conj:e	SpaceAfter=No
+37	"	"	PUNCT	_	_	36	punct	36:punct	SpaceAfter=No
+38	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0007
+# text = O Diário do Brasil não entende o dr. Batochio!
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Diário	Diário	PROPN	_	_	7	nsubj	7:nsubj	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	Brasil	Brasil	PROPN	_	_	2	flat:name	2:flat:name	_
+6	não	não	ADV	_	_	7	advmod	7:advmod	_
+7	entende	entender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	dr.	dr.	NOUN	_	_	7	obj	7:obj	_
+10	Batochio	Batochio	PROPN	_	_	9	nmod	9:nmod	SpaceAfter=No
+11	!	!	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0009
+# text = Palocci não pode ser preso porque é médico?
+1	Palocci	Palocci	PROPN	_	_	3	nsubj	3:nsubj|5:nsubj:pass	_
+2	não	não	ADV	_	_	3	advmod	3:advmod	_
+3	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	ser	ser	AUX	_	VerbForm=Inf	5	aux:pass	5:aux:pass	_
+5	preso	prender	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	xcomp	3:xcomp	_
+6	porque	porque	SCONJ	_	_	8	mark	8:mark	_
+7	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop	_
+8	médico	médico	NOUN	_	Gender=Masc|Number=Sing	3	advcl	3:advcl:porque	SpaceAfter=No
+9	?	?	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0011
+# text = É um novo tipo de "foro privilegiado"?!?!
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+2	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+3	novo	novo	ADJ	_	Gender=Masc|Number=Sing	4	amod	4:amod	_
+4	tipo	tipo	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	"	"	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+7	foro	foro	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:de	_
+8	privilegiado	privilegiado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	7	amod	7:amod	SpaceAfter=No
+9	"	"	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+10	?	?	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+11	!	!	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+12	?	?	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+13	!	!	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0013
+# text = Com relação a Palocci ter residência fixa, o advogado tem razão.
+1	Com	com	ADP	_	_	2	case	2:case	_
+2	relação	relação	NOUN	_	Gender=Fem|Number=Sing	11	obl	11:obl:com	_
+3	a	a	ADP	_	_	5	mark	5:mark	_
+4	Palocci	Palocci	PROPN	_	_	5	nsubj	5:nsubj	_
+5	ter	ter	VERB	_	Number=Sing|Person=3|VerbForm=Inf	2	acl	2:acl:a	_
+6	residência	residência	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+7	fixa	fixo	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	SpaceAfter=No
+8	,	,	PUNCT	_	_	2	punct	2:punct	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	advogado	advogado	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	11:nsubj	_
+11	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+12	razão	razão	NOUN	_	Number=Sing	11	obj	11:obj	SpaceAfter=No
+13	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0015
+# text = O ex-ministro tem residência fixa [...] comprada com dinheiro de propina!
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	ex-ministro	ex-ministro	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	residência	residência	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+5	fixa	fixo	ADJ	_	Gender=Fem|Number=Sing	4	amod	4:amod	_
+6	[	[	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+7	.	.	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+8	..	..	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+9	]	]	PUNCT	_	_	7	punct	7:punct	_
+10	comprada	comprar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	4	acl	4:acl	_
+11	com	com	ADP	_	_	12	case	12:case	_
+12	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:com	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	propina	propina	NOUN	_	Gender=Fem|Number=Sing	12	nmod	12:nmod:de	SpaceAfter=No
+15	!	!	PUNCT	_	_	3	punct	3:punct	_

@@ -1,0 +1,588 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Uma gravação bombástica está circulando nas redes sociais, alegando revelar um grande engodo na vacinação contra a COVID-19.
+1	Uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	gravação	gravação	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+3	bombástica	bombástico	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	_
+4	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	5:aux	_
+5	circulando	circular	VERB	_	VerbForm=Ger	0	root	0:root	_
+6-7	nas	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	8:det	_
+8	redes	rede	NOUN	_	Gender=Fem|Number=Plur	5	obl	5:obl:em	_
+9	sociais	social	ADJ	_	Number=Plur	8	amod	8:amod	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	alegando	alegar	VERB	_	VerbForm=Ger	5	advcl	5:advcl	_
+12	revelar	revelar	VERB	_	VerbForm=Inf	11	xcomp	11:xcomp	_
+13	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+14	grande	grande	ADJ	_	Number=Sing	15	amod	15:amod	_
+15	engodo	engodo	NOUN	_	Gender=Masc|Number=Sing	12	obj	12:obj	_
+16-17	na	_	_	_	_	_	_	_	_
+16	em	em	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	vacinação	vacinação	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:em	_
+19	contra	contra	ADP	_	_	21	case	21:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	COVID-19	COVID-19	PROPN	_	_	18	nmod	18:nmod:contra	SpaceAfter=No
+22	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0003
+# text = O vídeo mostra cenas suspeitas onde supostamente agulhas não existem ou são dobráveis, sugerindo uma conspiração global para enganar a população.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	mostra	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	cenas	cena	NOUN	_	Gender=Fem|Number=Plur	3	obj	3:obj|10:obl	_
+5	suspeitas	suspeito	ADJ	_	Gender=Fem|Number=Plur	4	amod	4:amod	_
+6	onde	onde	ADV	_	_	10	advmod	4:ref	_
+7	supostamente	supostamente	ADV	_	_	10	advmod	10:advmod	_
+8	agulhas	agulha	NOUN	_	Gender=Fem|Number=Plur	10	nsubj	10:nsubj|13:nsubj	_
+9	não	não	ADV	_	_	10	advmod	10:advmod	_
+10	existem	existir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	4:acl:relcl	_
+11	ou	ou	CCONJ	_	_	13	cc	13:cc	_
+12	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	cop	13:cop	_
+13	dobráveis	dobrável	ADJ	_	Number=Plur	10	conj	4:acl:relcl|10:conj:ou	SpaceAfter=No
+14	,	,	PUNCT	_	_	15	punct	15:punct	_
+15	sugerindo	sugerir	VERB	_	VerbForm=Ger	3	advcl	3:advcl	_
+16	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	conspiração	conspiração	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	_
+18	global	global	ADJ	_	Number=Sing	17	amod	17:amod	_
+19	para	para	ADP	_	_	20	mark	20:mark	_
+20	enganar	enganar	VERB	_	VerbForm=Inf	17	acl	17:acl:para	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	população	população	NOUN	_	Gender=Fem|Number=Sing	20	obj	20:obj	SpaceAfter=No
+23	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0005
+# text = A enfermeira Mayra Moura, diretora da Sociedade Brasileira de Imunizações (SBIM), é citada, mas de forma distorcida: Há imagens que realmente parecem estranhas, como aquelas em que a vacinação parece ocorrer sobre a roupa.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	enfermeira	enfermeiro	NOUN	_	Gender=Fem|Number=Sing	18	nsubj:pass	18:nsubj:pass	_
+3	Mayra	Mayra	PROPN	_	_	2	nmod	2:nmod	_
+4	Moura	Moura	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	diretora	diretor	NOUN	_	Gender=Fem|Number=Sing	2	appos	2:appos	_
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	Sociedade	Sociedade	PROPN	_	_	6	nmod	6:nmod:de	_
+10	Brasileira	Brasileira	PROPN	_	_	9	flat:name	9:flat:name	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	Imunizações	Imunizações	PROPN	_	_	9	flat:name	9:flat:name	_
+13	(	(	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+14	SBIM	SBIM	PROPN	_	_	9	appos	9:appos	SpaceAfter=No
+15	)	)	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+16	,	,	PUNCT	_	_	6	punct	6:punct	_
+17	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux:pass	18:aux:pass	_
+18	citada	citar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	SpaceAfter=No
+19	,	,	PUNCT	_	_	22	punct	22:punct	_
+20	mas	mas	CCONJ	_	_	22	cc	22:cc	_
+21	de	de	ADP	_	_	22	case	22:case	_
+22	forma	forma	NOUN	_	Gender=Fem|Number=Sing	18	conj	18:conj:mas	_
+23	distorcida	distorcido	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	22	amod	22:amod	SpaceAfter=No
+24	:	:	PUNCT	_	_	25	punct	25:punct	_
+25	Há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	parataxis	18:parataxis	_
+26	imagens	imagem	NOUN	_	Gender=Fem|Number=Plur	25	obj	25:obj|29:nsubj|30:nsubj	_
+27	que	que	PRON	_	PronType=Rel	29	nsubj	26:ref	_
+28	realmente	realmente	ADV	_	_	29	advmod	29:advmod	_
+29	parecem	parecer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	26	acl:relcl	26:acl:relcl	_
+30	estranhas	estranho	ADJ	_	Gender=Fem|Number=Plur	29	xcomp	29:xcomp	SpaceAfter=No
+31	,	,	PUNCT	_	_	33	punct	33:punct	_
+32	como	como	ADP	_	_	33	case	33:case	_
+33	aquelas	aquele	PRON	_	Gender=Fem|Number=Plur|PronType=Dem	26	nmod	26:nmod:como|38:obl:em	_
+34	em	em	ADP	_	_	35	case	35:case	_
+35	que	que	PRON	_	PronType=Rel	38	obl	33:ref	_
+36	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	37:det	_
+37	vacinação	vacinação	NOUN	_	Gender=Fem|Number=Sing	38	nsubj	38:nsubj|39:nsubj	_
+38	parece	parecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	33	acl:relcl	33:acl:relcl	_
+39	ocorrer	ocorrer	VERB	_	VerbForm=Inf	38	xcomp	38:xcomp	_
+40	sobre	sobre	ADP	_	_	42	case	42:case	_
+41	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	42:det	_
+42	roupa	roupa	NOUN	_	Gender=Fem|Number=Sing	39	obl	39:obl:sobre	SpaceAfter=No
+43	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0007
+# text = Isso levanta dúvidas sérias sobre a autenticidade do processo.
+1	Isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	2	nsubj	2:nsubj	_
+2	levanta	levantar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	dúvidas	dúvida	NOUN	_	Gender=Fem|Number=Plur	2	obj	2:obj	_
+4	sérias	sério	ADJ	_	Gender=Fem|Number=Plur	3	amod	3:amod	_
+5	sobre	sobre	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	autenticidade	autenticidade	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:sobre	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	processo	processo	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	SpaceAfter=No
+11	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0009
+# text = Mayra, no entanto, argumenta que essas imagens podem ser enganosas devido a cortes de edição e truques de câmera.
+1	Mayra	Mayra	PROPN	_	_	7	nsubj	7:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3-4	no	_	_	_	_	_	_	_	_
+3	em	em	ADP	_	ExtPos=CCONJ	7	cc	7:cc	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	fixed	3:fixed	_
+5	entanto	entanto	NOUN	_	Gender=Masc|Number=Sing	3	fixed	3:fixed	SpaceAfter=No
+6	,	,	PUNCT	_	_	3	punct	3:punct	_
+7	argumenta	argumentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	que	que	SCONJ	_	_	11	mark	11:mark	_
+9	essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	10	det	10:det	_
+10	imagens	imagem	NOUN	_	Gender=Fem|Number=Plur	11	nsubj	11:nsubj|13:nsubj	_
+11	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	ccomp	7:ccomp	_
+12	ser	ser	AUX	_	VerbForm=Inf	13	cop	13:cop	_
+13	enganosas	enganoso	ADJ	_	Gender=Fem|Number=Plur	11	xcomp	11:xcomp	_
+14	devido	dever	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	11	advcl	11:advcl	_
+15	a	a	ADP	_	_	16	case	16:case|20:case	_
+16	cortes	corte	NOUN	_	Gender=Masc|Number=Plur	14	obl	14:obl:a	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	edição	edição	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:de	_
+19	e	e	CCONJ	_	_	20	cc	20:cc	_
+20	truques	truque	NOUN	_	Gender=Masc|Number=Plur	16	conj	14:obl:a|16:conj:e	_
+21	de	de	ADP	_	_	22	case	22:case	_
+22	câmera	câmera	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:de	SpaceAfter=No
+23	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0011
+# text = "Na cena em que parece que a vacina é aplicada apenas com o polegar, na verdade, a técnica utilizada envolve a remoção da seringa após a aplicação, algo que é padrão", explica ela de forma sutil, tentando acalmar os ânimos.
+1	"	"	PUNCT	_	_	25	punct	25:punct	SpaceAfter=No
+2-3	Na	_	_	_	_	_	_	_	_
+2	Em	em	ADP	_	_	4	case	4:case	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	cena	cena	NOUN	_	Gender=Fem|Number=Sing	25	obl	7:obl:em|25:obl:em	_
+5	em	em	ADP	_	_	6	case	6:case	_
+6	que	que	PRON	_	PronType=Rel	7	obl	4:ref	_
+7	parece	parecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	4:acl:relcl	_
+8	que	que	SCONJ	_	_	12	mark	12:mark	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	vacina	vacina	NOUN	_	Gender=Fem|Number=Sing	12	nsubj:pass	12:nsubj:pass	_
+11	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:pass	12:aux:pass	_
+12	aplicada	aplicar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	7	ccomp	7:ccomp	_
+13	apenas	apenas	ADV	_	_	16	advmod	16:advmod	_
+14	com	com	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	polegar	polegar	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:com	SpaceAfter=No
+17	,	,	PUNCT	_	_	20	punct	20:punct	_
+18-19	na	_	_	_	_	_	_	_	_
+18	em	em	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	verdade	verdade	NOUN	_	Gender=Fem|Number=Sing	25	obl	25:obl:em	SpaceAfter=No
+21	,	,	PUNCT	_	_	20	punct	20:punct	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	técnica	técnica	NOUN	_	Gender=Fem|Number=Sing	25	nsubj	25:nsubj	_
+24	utilizada	utilizar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	23	acl	23:acl	_
+25	envolve	envolver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	41	ccomp:speech	41:ccomp:speech	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	remoção	remoção	NOUN	_	Gender=Fem|Number=Sing	25	obj	25:obj	_
+28-29	da	_	_	_	_	_	_	_	_
+28	de	de	ADP	_	_	30	case	30:case	_
+29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	seringa	seringa	NOUN	_	Gender=Fem|Number=Sing	27	nmod	27:nmod:de	_
+31	após	após	ADP	_	_	33	case	33:case	_
+32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	33:det	_
+33	aplicação	aplicação	NOUN	_	Gender=Fem|Number=Sing	30	nmod	30:nmod:após	SpaceAfter=No
+34	,	,	PUNCT	_	_	35	punct	35:punct	_
+35	algo	algo	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	27	appos	27:appos|38:nsubj	_
+36	que	que	PRON	_	PronType=Rel	38	nsubj	35:ref	_
+37	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	38	cop	38:cop	_
+38	padrão	padrão	NOUN	_	Gender=Masc|Number=Sing	35	acl:relcl	35:acl:relcl	SpaceAfter=No
+39	"	"	PUNCT	_	_	25	punct	25:punct	SpaceAfter=No
+40	,	,	PUNCT	_	_	25	punct	25:punct	_
+41	explica	explicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+42	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	41	nsubj	41:nsubj	_
+43	de	de	ADP	_	_	44	case	44:case	_
+44	forma	forma	NOUN	_	Gender=Fem|Number=Sing	41	obl	41:obl:de	_
+45	sutil	sutil	ADJ	_	Number=Sing	44	amod	44:amod	SpaceAfter=No
+46	,	,	PUNCT	_	_	47	punct	47:punct	_
+47	tentando	tentar	VERB	_	VerbForm=Ger	25	advcl	25:advcl	_
+48	acalmar	acalmar	VERB	_	VerbForm=Inf	47	xcomp	47:xcomp	_
+49	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	50	det	50:det	_
+50	ânimos	ânimo	NOUN	_	Gender=Masc|Number=Plur	48	obj	48:obj	SpaceAfter=No
+51	.	.	PUNCT	_	_	41	punct	41:punct	_
+
+# sent_id = S0013
+# text = O farmacêutico Leandro Medeiros, da Universidade Católica de Pernambuco (UNICAP), também aborda o vídeo polêmico.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	farmacêutico	farmacêutico	NOUN	_	Gender=Masc|Number=Sing	17	nsubj	17:nsubj	_
+3	Leandro	Leandro	PROPN	_	_	2	nmod	2:nmod	_
+4	Medeiros	Medeiros	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	8	punct	8:punct	_
+6-7	da	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	Universidade	Universidade	PROPN	_	_	2	nmod	2:nmod:de	_
+9	Católica	Católica	PROPN	_	_	8	flat:name	8:flat:name	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	Pernambuco	Pernambuco	PROPN	_	_	8	flat:name	8:flat:name	_
+12	(	(	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+13	UNICAP	UNICAP	PROPN	_	_	8	appos	8:appos	SpaceAfter=No
+14	)	)	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+15	,	,	PUNCT	_	_	8	punct	8:punct	_
+16	também	também	ADV	_	_	17	advmod	17:advmod	_
+17	aborda	abordar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	17	obj	17:obj	_
+20	polêmico	polêmico	ADJ	_	Gender=Masc|Number=Sing	19	amod	19:amod	SpaceAfter=No
+21	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0015
+# text = As imagens mostram claramente manipulações para confundir a população.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	imagens	imagem	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	3:nsubj	_
+3	mostram	mostrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	claramente	claramente	ADV	_	_	3	advmod	3:advmod	_
+5	manipulações	manipulação	NOUN	_	Gender=Fem|Number=Plur	3	obj	3:obj	_
+6	para	para	ADP	_	_	7	mark	7:mark	_
+7	confundir	confundir	VERB	_	VerbForm=Inf	5	acl	5:acl:para	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	população	população	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	SpaceAfter=No
+10	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0017
+# text = Seringas retráteis, que possuem dispositivos de segurança, são usadas para esconder a verdadeira aplicação, afirma Medeiros, apesar de evidências contrárias.
+1	Seringas	seringa	NOUN	_	Gender=Fem|Number=Plur	11	nsubj:pass	5:nsubj|11:nsubj:pass	_
+2	retráteis	retrátil	ADJ	_	Number=Plur	1	amod	1:amod	SpaceAfter=No
+3	,	,	PUNCT	_	_	5	punct	5:punct	_
+4	que	que	PRON	_	PronType=Rel	5	nsubj	1:ref	_
+5	possuem	possuir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+6	dispositivos	dispositivo	NOUN	_	Gender=Masc|Number=Plur	5	obj	5:obj	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	segurança	segurança	NOUN	_	Number=Sing	6	nmod	6:nmod:de	SpaceAfter=No
+9	,	,	PUNCT	_	_	5	punct	5:punct	_
+10	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	aux:pass	11:aux:pass	_
+11	usadas	usar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	18	ccomp:speech	18:ccomp:speech	_
+12	para	para	ADP	_	_	13	mark	13:mark	_
+13	esconder	esconder	VERB	_	VerbForm=Inf	11	advcl	11:advcl:para	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+15	verdadeira	verdadeiro	ADJ	_	Gender=Fem|Number=Sing	16	amod	16:amod	_
+16	aplicação	aplicação	NOUN	_	Gender=Fem|Number=Sing	13	obj	13:obj	SpaceAfter=No
+17	,	,	PUNCT	_	_	11	punct	11:punct	_
+18	afirma	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+19	Medeiros	Medeiros	PROPN	_	_	18	nsubj	18:nsubj	SpaceAfter=No
+20	,	,	PUNCT	_	_	21	punct	21:punct	_
+21	apesar	apesar	ADV	_	_	18	advmod	18:advmod	_
+22	de	de	ADP	_	_	23	case	23:case	_
+23	evidências	evidência	NOUN	_	Gender=Fem|Number=Plur	21	obl	21:obl:de	_
+24	contrárias	contrário	ADJ	_	Gender=Fem|Number=Plur	23	amod	23:amod	SpaceAfter=No
+25	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0019
+# text = Entre as cenas mais compartilhadas, destaca-se a vacinação de Benny Ben-Mubhar em Israel.
+1	Entre	entre	ADP	_	_	3	case	3:case	_
+2	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	3:det	_
+3	cenas	cena	NOUN	_	Gender=Fem|Number=Plur	7	obl	7:obl:entre	_
+4	mais	mais	ADV	_	_	5	advmod	5:advmod	_
+5	compartilhadas	compartilhar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	3	acl	3:acl	SpaceAfter=No
+6	,	,	PUNCT	_	_	3	punct	3:punct	_
+7-8	destaca-se	_	_	_	_	_	_	_	_
+7	destaca	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	7	expl:impers	7:expl:impers	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	vacinação	vacinação	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	Benny	Benny	PROPN	_	_	10	nmod	10:nmod:de	_
+13	Ben-Mubhar	Ben-Mubhar	PROPN	_	_	12	flat:name	12:flat:name	_
+14	em	em	ADP	_	_	15	case	15:case	_
+15	Israel	Israel	PROPN	_	_	10	nmod	10:nmod:em	SpaceAfter=No
+16	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0021
+# text = O vídeo sugere que ele foi apenas simulado, omitindo a vacinação real.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	sugere	sugerir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	8	mark	8:mark	_
+5	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nsubj:pass	8:nsubj:pass	_
+6	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	aux:pass	8:aux:pass	_
+7	apenas	apenas	ADV	_	_	8	advmod	8:advmod	_
+8	simulado	simular	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	ccomp	3:ccomp	SpaceAfter=No
+9	,	,	PUNCT	_	_	10	punct	10:punct	_
+10	omitindo	omitir	VERB	_	VerbForm=Ger	8	advcl	8:advcl	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	vacinação	vacinação	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+13	real	real	ADJ	_	Number=Sing	12	amod	12:amod	SpaceAfter=No
+14	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0023
+# text = Ben-Mubhar, após a polêmica, tentou esclarecer: "Fiz uma homenagem à equipe e acabei virando um viral, mas não mostrem apenas a parte simulada".
+1	Ben-Mubhar	Ben-Mubhar	PROPN	_	_	7	nsubj	7:nsubj|8:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	5	punct	5:punct	_
+3	após	após	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	polêmica	polêmica	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:após	SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	5:punct	_
+7	tentou	tentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	esclarecer	esclarecer	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	SpaceAfter=No
+9	:	:	PUNCT	_	_	11	punct	11:punct	_
+10	"	"	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+11	Fiz	fazer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	7	parataxis	7:parataxis	_
+12	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	homenagem	homenagem	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	_
+14-15	à	_	_	_	_	_	_	_	_
+14	a	a	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	equipe	equipe	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:a	_
+17	e	e	CCONJ	_	_	18	cc	18:cc	_
+18	acabei	acabar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	11	conj	7:parataxis|11:conj:e	_
+19	virando	virar	VERB	_	VerbForm=Ger	18	xcomp	18:xcomp	_
+20	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	viral	viral	NOUN	_	Gender=Masc|Number=Sing	19	obj	19:obj	SpaceAfter=No
+22	,	,	PUNCT	_	_	25	punct	25:punct	_
+23	mas	mas	CCONJ	_	_	25	cc	25:cc	_
+24	não	não	ADV	_	_	25	advmod	25:advmod	_
+25	mostrem	mostrar	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	conj	7:parataxis|11:conj:mas	_
+26	apenas	apenas	ADV	_	_	28	advmod	28:advmod	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	parte	parte	NOUN	_	Gender=Fem|Number=Sing	25	obj	25:obj	_
+29	simulada	simulado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	28	amod	28:amod	SpaceAfter=No
+30	"	"	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+31	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0025
+# text = Outra cena controversa envolve a vice-presidente dos Estados Unidos, Kamala Harris.
+1	Outra	outro	DET	_	Gender=Fem|Number=Sing|PronType=Ind	2	det	2:det	_
+2	cena	cena	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+3	controversa	controverso	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	_
+4	envolve	envolver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	vice-presidente	vice-presidente	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7-8	dos	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	9:det	_
+9	Estados	Estados	PROPN	_	_	6	nmod	6:nmod:de	_
+10	Unidos	Unidos	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	Kamala	Kamala	PROPN	_	_	6	appos	6:appos	_
+13	Harris	Harris	PROPN	_	_	12	flat:name	12:flat:name	SpaceAfter=No
+14	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0027
+# text = O vídeo sugere que a agulha usada em sua vacinação é dobrável e, portanto, falsa.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	sugere	sugerir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	12	mark	12:mark|17:mark	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	agulha	agulha	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	12:nsubj|17:nsubj	_
+7	usada	usar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	6	acl	6:acl	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	10	det	10:det	_
+10	vacinação	vacinação	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:em	_
+11	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	12:cop|17:cop	_
+12	dobrável	dobrável	ADJ	_	Number=Sing	3	ccomp	3:ccomp	_
+13	e	e	CCONJ	_	_	17	cc	17:cc	SpaceAfter=No
+14	,	,	PUNCT	_	_	15	punct	15:punct	_
+15	portanto	portanto	CCONJ	_	_	17	cc	17:cc	SpaceAfter=No
+16	,	,	PUNCT	_	_	15	punct	15:punct	_
+17	falsa	falso	ADJ	_	Gender=Fem|Number=Sing	12	conj	3:ccomp|12:conj:e	SpaceAfter=No
+18	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0029
+# text = "O que se dobra é apenas uma cobertura plástica", garante Mayra, embora muitos espectadores permaneçam céticos.
+1	"	"	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+2	O	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	9	nsubj	5:nsubj|9:nsubj	_
+3	que	que	PRON	_	PronType=Rel	5	nsubj	2:ref	_
+4	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	5	expl	5:expl	_
+5	dobra	dobrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	9:cop	_
+7	apenas	apenas	ADV	_	_	9	advmod	9:advmod	_
+8	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	cobertura	cobertura	NOUN	_	Gender=Fem|Number=Sing	13	ccomp:speech	13:ccomp:speech	_
+10	plástica	plástico	ADJ	_	Gender=Fem|Number=Sing	9	amod	9:amod	SpaceAfter=No
+11	"	"	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+12	,	,	PUNCT	_	_	9	punct	9:punct	_
+13	garante	garantir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+14	Mayra	Mayra	PROPN	_	_	13	nsubj	13:nsubj	SpaceAfter=No
+15	,	,	PUNCT	_	_	19	punct	19:punct	_
+16	embora	embora	SCONJ	_	_	19	mark	19:mark	_
+17	muitos	muito	ADJ	_	Gender=Masc|Number=Plur	18	amod	18:amod	_
+18	espectadores	espectador	NOUN	_	Gender=Masc|Number=Plur	19	nsubj	19:nsubj|20:nsubj	_
+19	permaneçam	permanecer	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	advcl	13:advcl:embora	_
+20	céticos	cético	ADJ	_	Gender=Masc|Number=Plur	19	xcomp	19:xcomp	SpaceAfter=No
+21	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0031
+# text = O vídeo também menciona a vice-presidente da Argentina, Cristina Kirchner, afirmando que ela se vacinou sem máscara e sem agulha, o que é um engano, pois na verdade era uma vacinação contra a gripe e ela estava sem máscara por breves instantes, conforme protocolos.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+3	também	também	ADV	_	_	4	advmod	4:advmod	_
+4	menciona	mencionar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	vice-presidente	vice-presidente	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	Argentina	Argentina	PROPN	_	_	6	nmod	6:nmod:de	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	Cristina	Cristina	PROPN	_	_	6	appos	6:appos	_
+12	Kirchner	Kirchner	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+13	,	,	PUNCT	_	_	11	punct	11:punct	_
+14	afirmando	afirmar	VERB	_	VerbForm=Ger	4	advcl	4:advcl	_
+15	que	que	SCONJ	_	_	18	mark	18:mark	_
+16	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	18	nsubj	18:nsubj	_
+17	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	18	expl	18:expl	_
+18	vacinou	vacinar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	ccomp	14:ccomp	_
+19	sem	sem	ADP	_	_	20	case	20:case	_
+20	máscara	máscara	NOUN	_	Gender=Fem|Number=Sing	18	obl	18:obl:sem	_
+21	e	e	CCONJ	_	_	23	cc	23:cc	_
+22	sem	sem	ADP	_	_	23	case	23:case	_
+23	agulha	agulha	NOUN	_	Gender=Fem|Number=Sing	20	conj	18:obl:sem|20:conj:e	SpaceAfter=No
+24	,	,	PUNCT	_	_	29	punct	29:punct	_
+25	o	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	29	nsubj	29:nsubj	_
+26	que	que	PRON	_	PronType=Rel	25	fixed	25:fixed	_
+27	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	cop	29:cop	_
+28	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	29	det	29:det	_
+29	engano	engano	NOUN	_	Gender=Masc|Number=Sing	14	parataxis	14:parataxis	SpaceAfter=No
+30	,	,	PUNCT	_	_	37	punct	37:punct	_
+31	pois	pois	SCONJ	_	_	37	mark	37:mark|45:mark	_
+32-33	na	_	_	_	_	_	_	_	_
+32	em	em	ADP	_	_	34	case	34:case	_
+33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	34:det	_
+34	verdade	verdade	NOUN	_	Gender=Fem|Number=Sing	37	nmod	37:nmod:em	_
+35	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	37	cop	37:cop	_
+36	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	37	det	37:det	_
+37	vacinação	vacinação	NOUN	_	Gender=Fem|Number=Sing	29	advcl	29:advcl:pois	_
+38	contra	contra	ADP	_	_	40	case	40:case	_
+39	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	40:det	_
+40	gripe	gripe	NOUN	_	Gender=Fem|Number=Sing	37	nmod	37:nmod:contra	_
+41	e	e	CCONJ	_	_	45	cc	45:cc	_
+42	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	45	nsubj	45:nsubj	_
+43	estava	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	45	cop	45:cop	_
+44	sem	sem	ADP	_	_	45	case	45:case	_
+45	máscara	máscara	NOUN	_	Gender=Fem|Number=Sing	37	conj	29:advcl:pois|37:conj:e	_
+46	por	por	ADP	_	_	48	case	48:case	_
+47	breves	breve	ADJ	_	Number=Plur	48	amod	48:amod	_
+48	instantes	instante	NOUN	_	Number=Plur	45	nmod	45:nmod:por	SpaceAfter=No
+49	,	,	PUNCT	_	_	51	punct	51:punct	_
+50	conforme	conforme	ADP	_	_	51	case	51:case	_
+51	protocolos	protocolo	NOUN	_	Gender=Masc|Number=Plur	45	nmod	45:nmod:conforme	SpaceAfter=No
+52	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0033
+# text = Por fim, uma das alegações mais chocantes é sobre o CEO da Pfizer, Albert Bourla, que teria dito não tomar a própria vacina.
+1	Por	por	ADP	_	_	2	case	2:case	_
+2	fim	fim	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod:por	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	uma	um	NUM	_	Gender=Fem|NumType=Card	13	nsubj	13:nsubj	_
+5-6	das	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	7:det	_
+7	alegações	alegação	NOUN	_	Gender=Fem|Number=Plur	4	nmod	4:nmod:de	_
+8	mais	mais	ADV	_	_	9	advmod	9:advmod	_
+9	chocantes	chocante	ADJ	_	Number=Plur	7	amod	7:amod	_
+10	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	13:cop	_
+11	sobre	sobre	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	CEO	CEO	PROPN	_	_	0	root	0:root|23:nsubj|25:nsubj	_
+14-15	da	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	Pfizer	Pfizer	PROPN	_	_	13	nmod	13:nmod:de	SpaceAfter=No
+17	,	,	PUNCT	_	_	18	punct	18:punct	_
+18	Albert	Albert	PROPN	_	_	13	appos	13:appos	_
+19	Bourla	Bourla	PROPN	_	_	18	flat:name	18:flat:name	SpaceAfter=No
+20	,	,	PUNCT	_	_	18	punct	18:punct	_
+21	que	que	PRON	_	PronType=Rel	23	nsubj	13:ref	_
+22	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	23	aux	23:aux	_
+23	dito	dizer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	13	acl:relcl	13:acl:relcl	_
+24	não	não	ADV	_	_	25	advmod	25:advmod	_
+25	tomar	tomar	VERB	_	VerbForm=Inf	23	xcomp	23:xcomp	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+27	própria	próprio	DET	_	Gender=Fem|Number=Sing|PronType=Dem	28	det	28:det	_
+28	vacina	vacina	NOUN	_	Gender=Fem|Number=Sing	25	obj	25:obj	SpaceAfter=No
+29	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0035
+# text = A fala foi distorcida, pois ele apenas afirmou que seguiria as orientações do Centro de Controle de Doenças e não furaria a fila.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	fala	fala	NOUN	_	Gender=Fem|Number=Sing	4	nsubj:pass	4:nsubj:pass	_
+3	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	distorcida	distorcer	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	SpaceAfter=No
+5	,	,	PUNCT	_	_	9	punct	9:punct	_
+6	pois	pois	SCONJ	_	_	9	mark	9:mark	_
+7	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nsubj	9:nsubj	_
+8	apenas	apenas	ADV	_	_	9	advmod	9:advmod	_
+9	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	advcl	4:advcl:pois	_
+10	que	que	SCONJ	_	_	11	mark	11:mark|23:mark	_
+11	seguiria	seguir	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	9	ccomp	9:ccomp	_
+12	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	13:det	_
+13	orientações	orientação	NOUN	_	Gender=Fem|Number=Plur	11	obj	11:obj	_
+14-15	do	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	Centro	Centro	PROPN	_	_	13	nmod	13:nmod:de	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	Controle	Controle	PROPN	_	_	16	flat:name	16:flat:name	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	Doenças	Doenças	PROPN	_	_	16	flat:name	16:flat:name	_
+21	e	e	CCONJ	_	_	23	cc	23:cc	_
+22	não	não	ADV	_	_	23	advmod	23:advmod	_
+23	furaria	furar	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	11	conj	9:ccomp|11:conj:e	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	fila	fila	NOUN	_	Number=Sing	23	obj	23:obj	SpaceAfter=No
+26	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0037
+# text = "Antes de espalhar qualquer vídeo sensacionalista, é crucial consultar profissionais de saúde", alerta Medeiros, embora sua própria declaração pareça minimizar as preocupações levantadas pelo vídeo.
+1	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+2	Antes	antes	ADV	_	_	10	advmod	10:advmod	_
+3	de	de	ADP	_	_	4	mark	4:mark	_
+4	espalhar	espalhar	VERB	_	VerbForm=Inf	2	acl	2:acl:de	_
+5	qualquer	qualquer	DET	_	Number=Sing|PronType=Ind	6	det	6:det	_
+6	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7	sensacionalista	sensacionalista	ADJ	_	Number=Sing	6	amod	6:amod	SpaceAfter=No
+8	,	,	PUNCT	_	_	2	punct	2:punct	_
+9	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_
+10	crucial	crucial	ADJ	_	Number=Sing	17	ccomp:speech	17:ccomp:speech	_
+11	consultar	consultar	VERB	_	VerbForm=Inf	10	csubj	10:csubj	_
+12	profissionais	profissional	NOUN	_	Number=Plur	11	obj	11:obj	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	12	nmod	12:nmod:de	SpaceAfter=No
+15	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+16	,	,	PUNCT	_	_	10	punct	10:punct	_
+17	alerta	alertar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+18	Medeiros	Medeiros	PROPN	_	_	17	nsubj	17:nsubj	SpaceAfter=No
+19	,	,	PUNCT	_	_	24	punct	24:punct	_
+20	embora	embora	SCONJ	_	_	24	mark	24:mark	_
+21	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	23	det	23:det	_
+22	própria	próprio	DET	_	Gender=Fem|Number=Sing|PronType=Dem	23	det	23:det	_
+23	declaração	declaração	NOUN	_	Gender=Fem|Number=Sing	24	nsubj	24:nsubj|25:nsubj	_
+24	pareça	parecer	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	advcl	10:advcl:embora	_
+25	minimizar	minimizar	VERB	_	VerbForm=Inf	24	xcomp	24:xcomp	_
+26	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	27	det	27:det	_
+27	preocupações	preocupação	NOUN	_	Gender=Fem|Number=Plur	25	obj	25:obj	_
+28	levantadas	levantar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	27	acl	27:acl	_
+29-30	pelo	_	_	_	_	_	_	_	_
+29	por	por	ADP	_	_	31	case	31:case	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	28	obl:agent	28:obl:agent	SpaceAfter=No
+32	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0039
+# text = "A vacinação é nossa única esperança para sair dessa crise pandêmica", conclui ele, tentando reforçar a importância das vacinas.
+1	"	"	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+2	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	vacinação	vacinação	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj	_
+4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+5	nossa	nosso	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	7	det	7:det	_
+6	única	único	ADJ	_	Gender=Fem|Number=Sing	7	amod	7:amod	_
+7	esperança	esperança	NOUN	_	Gender=Fem|Number=Sing	16	ccomp:speech	16:ccomp:speech	_
+8	para	para	ADP	_	_	9	mark	9:mark	_
+9	sair	sair	VERB	_	VerbForm=Inf	7	acl	7:acl:para	_
+10-11	dessa	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	12	det	12:det	_
+12	crise	crise	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:de	_
+13	pandêmica	pandêmico	ADJ	_	Gender=Fem|Number=Sing	12	amod	12:amod	SpaceAfter=No
+14	"	"	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+15	,	,	PUNCT	_	_	7	punct	7:punct	_
+16	conclui	concluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+17	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	nsubj	16:nsubj	SpaceAfter=No
+18	,	,	PUNCT	_	_	19	punct	19:punct	_
+19	tentando	tentar	VERB	_	VerbForm=Ger	16	advcl	16:advcl	_
+20	reforçar	reforçar	VERB	_	VerbForm=Inf	19	xcomp	19:xcomp	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	importância	importância	NOUN	_	Gender=Fem|Number=Sing	20	obj	20:obj	_
+23-24	das	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	25:det	_
+25	vacinas	vacina	NOUN	_	Gender=Fem|Number=Plur	22	nmod	22:nmod:de	SpaceAfter=No
+26	.	.	PUNCT	_	_	16	punct	16:punct	_

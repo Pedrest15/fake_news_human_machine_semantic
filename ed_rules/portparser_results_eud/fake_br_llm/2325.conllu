@@ -1,0 +1,584 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Ex-senador Gim Argello revela plano secreto para distribuir "pílula do câncer" gratuitamente!
+1	Ex-senador	ex-senador	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+2	Gim	Gim	PROPN	_	_	1	nmod	1:nmod	_
+3	Argello	Argello	PROPN	_	_	2	flat:name	2:flat:name	_
+4	revela	revelar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	plano	plano	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+6	secreto	secreto	ADJ	_	Gender=Masc|Number=Sing	5	amod	5:amod	_
+7	para	para	ADP	_	_	8	mark	8:mark	_
+8	distribuir	distribuir	VERB	_	VerbForm=Inf	5	acl	5:acl:para	_
+9	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+10	pílula	pílula	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	câncer	câncer	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:de	SpaceAfter=No
+14	"	"	PUNCT	_	_	10	punct	10:punct	_
+15	gratuitamente	gratuitamente	ADV	_	_	8	advmod	8:advmod	SpaceAfter=No
+16	!	!	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0003
+# text = Em uma reviravolta surpreendente, o ex-senador Gim Argello (PTB-DF), que acompanha as movimentações do Congresso desde que deixou o cargo em 2015, teria proposto um plano visionário para a distribuição gratuita da fosfoetanolamina sintética, conhecida como a "pílula do câncer".
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	reviravolta	reviravolta	NOUN	_	Gender=Fem|Number=Sing	30	obl	30:obl:em	_
+4	surpreendente	surpreendente	ADJ	_	Number=Sing	3	amod	3:amod	SpaceAfter=No
+5	,	,	PUNCT	_	_	3	punct	3:punct	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	ex-senador	ex-senador	NOUN	_	Gender=Masc|Number=Sing	30	nsubj	15:nsubj|30:nsubj	_
+8	Gim	Gim	PROPN	_	_	7	nmod	7:nmod	_
+9	Argello	Argello	PROPN	_	_	8	flat:name	8:flat:name	_
+10	(	(	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+11	PTB-DF	PTB-DF	PROPN	_	_	7	parataxis	7:parataxis	SpaceAfter=No
+12	)	)	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+13	,	,	PUNCT	_	_	15	punct	15:punct	_
+14	que	que	PRON	_	PronType=Rel	15	nsubj	7:ref	_
+15	acompanha	acompanhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	7:acl:relcl	_
+16	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	17:det	_
+17	movimentações	movimentação	NOUN	_	Gender=Fem|Number=Plur	15	obj	15:obj	_
+18-19	do	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	Congresso	Congresso	PROPN	_	_	17	nmod	17:nmod:de	_
+21	desde	desde	ADP	_	ExtPos=SCONJ	23	mark	23:mark	_
+22	que	que	SCONJ	_	_	21	fixed	21:fixed	_
+23	deixou	deixar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	advcl	15:advcl:desde_que	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	cargo	cargo	NOUN	_	Gender=Masc|Number=Sing	23	obj	23:obj	_
+26	em	em	ADP	_	_	27	case	27:case	_
+27	2015	2015	NUM	_	NumType=Card	23	obl	23:obl:em	SpaceAfter=No
+28	,	,	PUNCT	_	_	15	punct	15:punct	_
+29	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	30	aux	30:aux	_
+30	proposto	propor	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+31	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+32	plano	plano	NOUN	_	Gender=Masc|Number=Sing	30	obj	30:obj	_
+33	visionário	visionário	ADJ	_	Gender=Masc|Number=Sing	32	amod	32:amod	_
+34	para	para	ADP	_	_	36	case	36:case	_
+35	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	36:det	_
+36	distribuição	distribuição	NOUN	_	Gender=Fem|Number=Sing	32	nmod	32:nmod:para	_
+37	gratuita	gratuito	ADJ	_	Gender=Fem|Number=Sing	36	amod	36:amod	_
+38-39	da	_	_	_	_	_	_	_	_
+38	de	de	ADP	_	_	40	case	40:case	_
+39	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	40:det	_
+40	fosfoetanolamina	fosfoetanolamina	NOUN	_	Gender=Fem|Number=Sing	36	nmod	36:nmod:de	_
+41	sintética	sintético	ADJ	_	Gender=Fem|Number=Sing	40	amod	40:amod	SpaceAfter=No
+42	,	,	PUNCT	_	_	43	punct	43:punct	_
+43	conhecida	conhecer	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	40	acl	40:acl	_
+44	como	como	ADP	_	_	47	case	47:case	_
+45	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	47	det	47:det	_
+46	"	"	PUNCT	_	_	47	punct	47:punct	SpaceAfter=No
+47	pílula	pílula	NOUN	_	Gender=Fem|Number=Sing	43	obl	43:obl:como	_
+48-49	do	_	_	_	_	_	_	_	_
+48	de	de	ADP	_	_	50	case	50:case	_
+49	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	50	det	50:det	_
+50	câncer	câncer	NOUN	_	Gender=Masc|Number=Sing	47	nmod	47:nmod:de	SpaceAfter=No
+51	"	"	PUNCT	_	_	47	punct	47:punct	SpaceAfter=No
+52	.	.	PUNCT	_	_	30	punct	30:punct	_
+
+# sent_id = S0005
+# text = Durante uma audiência pública no Senado, que discutia a liberação da substância, Argello teria se encontrado com o químico Gilberto Chierice, desenvolvedor da pílula, propondo uma sociedade que não visava lucro, mas sim o bem-estar da população.
+1	Durante	durante	ADP	_	_	3	case	3:case	_
+2	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	audiência	audiência	NOUN	_	Gender=Fem|Number=Sing	20	obl	10:nsubj|20:obl:durante	_
+4	pública	público	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+5-6	no	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Senado	Senado	PROPN	_	_	3	nmod	3:nmod:em	SpaceAfter=No
+8	,	,	PUNCT	_	_	10	punct	10:punct	_
+9	que	que	PRON	_	PronType=Rel	10	nsubj	3:ref	_
+10	discutia	discutir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	liberação	liberação	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+13-14	da	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	substância	substância	NOUN	_	Gender=Fem|Number=Sing	12	nmod	12:nmod:de	SpaceAfter=No
+16	,	,	PUNCT	_	_	10	punct	10:punct	_
+17	Argello	Argello	PROPN	_	_	20	nsubj	20:nsubj	_
+18	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	20	aux	20:aux	_
+19	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	20	expl	20:expl	_
+20	encontrado	encontrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+21	com	com	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	químico	químico	NOUN	_	Gender=Masc|Number=Sing	20	obl	20:obl:com	_
+24	Gilberto	Gilberto	PROPN	_	_	23	nmod	23:nmod	_
+25	Chierice	Chierice	PROPN	_	_	24	flat:name	24:flat:name	SpaceAfter=No
+26	,	,	PUNCT	_	_	27	punct	27:punct	_
+27	desenvolvedor	desenvolvedor	NOUN	_	Gender=Masc|Number=Sing	23	appos	23:appos	_
+28-29	da	_	_	_	_	_	_	_	_
+28	de	de	ADP	_	_	30	case	30:case	_
+29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	pílula	pílula	NOUN	_	Gender=Fem|Number=Sing	27	nmod	27:nmod:de	SpaceAfter=No
+31	,	,	PUNCT	_	_	32	punct	32:punct	_
+32	propondo	propor	VERB	_	VerbForm=Ger	20	advcl	20:advcl	_
+33	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	34	det	34:det	_
+34	sociedade	sociedade	NOUN	_	Gender=Fem|Number=Sing	32	obj	32:obj|37:nsubj	_
+35	que	que	PRON	_	PronType=Rel	37	nsubj	34:ref	_
+36	não	não	ADV	_	_	37	advmod	37:advmod	_
+37	visava	visar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	34	acl:relcl	34:acl:relcl	_
+38	lucro	lucro	NOUN	_	Gender=Masc|Number=Sing	37	obj	37:obj	SpaceAfter=No
+39	,	,	PUNCT	_	_	43	punct	43:punct	_
+40	mas	mas	CCONJ	_	_	43	cc	43:cc	_
+41	sim	sim	ADV	_	_	43	advmod	43:advmod	_
+42	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	43	det	43:det	_
+43	bem-estar	bem-estar	NOUN	_	Gender=Masc	38	conj	37:obj|38:conj:mas	_
+44-45	da	_	_	_	_	_	_	_	_
+44	de	de	ADP	_	_	46	case	46:case	_
+45	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	46:det	_
+46	população	população	NOUN	_	Gender=Fem|Number=Sing	43	nmod	43:nmod:de	SpaceAfter=No
+47	.	.	PUNCT	_	_	20	punct	20:punct	_
+
+# sent_id = S0007
+# text = O encontro ocorreu no escritório político de Argello em Brasília, onde também estavam presentes seu filho e um empresário farmacêutico.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	encontro	encontro	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	ocorreu	ocorrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4-5	no	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	escritório	escritório	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:em|16:obl	_
+7	político	político	ADJ	_	Gender=Masc|Number=Sing	6	amod	6:amod	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	Argello	Argello	PROPN	_	_	6	nmod	6:nmod:de	_
+10	em	em	ADP	_	_	11	case	11:case	_
+11	Brasília	Brasília	PROPN	_	_	6	nmod	6:nmod:em	SpaceAfter=No
+12	,	,	PUNCT	_	_	16	punct	16:punct	_
+13	onde	onde	ADV	_	_	16	advmod	6:ref	_
+14	também	também	ADV	_	_	16	advmod	16:advmod	_
+15	estavam	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	16	cop	16:cop	_
+16	presentes	presente	ADJ	_	Number=Plur	6	acl:relcl	6:acl:relcl	_
+17	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	18	det	18:det	_
+18	filho	filho	NOUN	_	Gender=Masc|Number=Sing	16	nsubj	16:nsubj	_
+19	e	e	CCONJ	_	_	21	cc	21:cc	_
+20	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	empresário	empresário	NOUN	_	Gender=Masc|Number=Sing	18	conj	16:nsubj|18:conj:e	_
+22	farmacêutico	farmacêutico	ADJ	_	Gender=Masc|Number=Sing	21	amod	21:amod	SpaceAfter=No
+23	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0009
+# text = Chierice, inicialmente cético, teria ficado impressionado com a proposta altruísta.
+1	Chierice	Chierice	PROPN	_	_	7	nsubj	7:nsubj|8:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	4	punct	4:punct	_
+3	inicialmente	inicialmente	ADV	_	_	4	advmod	4:advmod	_
+4	cético	cético	ADJ	_	Gender=Masc|Number=Sing	1	amod	1:amod	SpaceAfter=No
+5	,	,	PUNCT	_	_	4	punct	4:punct	_
+6	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	7	aux	7:aux	_
+7	ficado	ficar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+8	impressionado	impressionado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	7	xcomp	7:xcomp	_
+9	com	com	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	proposta	proposta	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:com	_
+12	altruísta	altruísta	ADJ	_	Number=Sing	11	amod	11:amod	SpaceAfter=No
+13	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0011
+# text = Segundo ele, Argello sugeriu uma divisão equitativa da responsabilidade: 1/3 para Chierice, 1/3 para o próprio ex-senador e 1/3 para o empresário, com os 10% restantes destinados a "futuras iniciativas sociais".
+1	Segundo	segundo	ADP	_	_	2	case	2:case	_
+2	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	obl	5:obl:segundo	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	Argello	Argello	PROPN	_	_	5	nsubj	5:nsubj	_
+5	sugeriu	sugerir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	divisão	divisão	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+8	equitativa	equitativo	ADJ	_	Gender=Fem|Number=Sing	7	amod	7:amod	_
+9-10	da	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	responsabilidade	responsabilidade	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:de	SpaceAfter=No
+12	:	:	PUNCT	_	_	13	punct	13:punct	_
+13	1/3	1/3	NUM	_	NumType=Card	7	appos	7:appos	_
+14	para	para	ADP	_	_	15	case	15:case	_
+15	Chierice	Chierice	PROPN	_	_	13	nmod	13:nmod:para	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	1/3	1/3	NUM	_	NumType=Card	13	conj	7:appos|13:conj:e	_
+18	para	para	ADP	_	_	21	case	21:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+20	próprio	próprio	DET	_	Gender=Masc|Number=Sing|PronType=Dem	21	det	21:det	_
+21	ex-senador	ex-senador	NOUN	_	Gender=Masc|Number=Sing	17	nmod	17:nmod:para	_
+22	e	e	CCONJ	_	_	23	cc	23:cc	_
+23	1/3	1/3	NUM	_	NumType=Card	13	conj	7:appos|13:conj:e	_
+24	para	para	ADP	_	_	26	case	26:case	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	empresário	empresário	NOUN	_	Gender=Masc|Number=Sing	23	nmod	23:nmod:para	SpaceAfter=No
+27	,	,	PUNCT	_	_	31	punct	31:punct	_
+28	com	com	ADP	_	_	31	case	31:case	_
+29	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	31	det	31:det	_
+30	10	10	NUM	_	NumType=Card	31	nummod	31:nummod	SpaceAfter=No
+31	%	%	SYM	_	_	13	nmod	13:nmod:com|17:nmod:com|23:nmod:com	_
+32	restantes	restante	ADJ	_	Number=Plur	31	amod	31:amod	_
+33	destinados	destinar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	31	acl	31:acl	_
+34	a	a	ADP	_	_	37	case	37:case	_
+35	"	"	PUNCT	_	_	37	punct	37:punct	SpaceAfter=No
+36	futuras	futuro	ADJ	_	Gender=Fem|Number=Plur	37	amod	37:amod	_
+37	iniciativas	iniciativa	NOUN	_	Gender=Fem|Number=Plur	33	obl	33:obl:a	_
+38	sociais	social	ADJ	_	Number=Plur	37	amod	37:amod	SpaceAfter=No
+39	"	"	PUNCT	_	_	37	punct	37:punct	SpaceAfter=No
+40	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0013
+# text = "Eu fiquei surpreso", relatou Chierice à Polícia Federal.
+1	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	Eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	3:nsubj|4:nsubj	_
+3	fiquei	ficar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	7	ccomp:speech	7:ccomp:speech	_
+4	surpreso	surpreso	ADJ	_	Gender=Masc|Number=Sing	3	xcomp	3:xcomp	SpaceAfter=No
+5	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+6	,	,	PUNCT	_	_	3	punct	3:punct	_
+7	relatou	relatar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	Chierice	Chierice	PROPN	_	_	7	nsubj	7:nsubj	_
+9-10	à	_	_	_	_	_	_	_	_
+9	a	a	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	Polícia	Polícia	PROPN	_	_	7	obl	7:obl:a	_
+12	Federal	Federal	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+13	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0015
+# text = Ele disse que acreditava no potencial da pílula para salvar vidas e que queria fazer algo sem fins lucrativos.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj	_
+2	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	4	mark	4:mark	_
+4	acreditava	acreditar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	2	ccomp	2:ccomp	_
+5-6	no	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	potencial	potencial	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:em	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	pílula	pílula	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:de	_
+11	para	para	ADP	_	_	12	mark	12:mark	_
+12	salvar	salvar	VERB	_	VerbForm=Inf	10	acl	10:acl:para	_
+13	vidas	vida	NOUN	_	Gender=Fem|Number=Plur	12	obj	12:obj	_
+14	e	e	CCONJ	_	_	16	cc	16:cc	_
+15	que	que	SCONJ	_	_	16	mark	16:mark	_
+16	queria	querer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	conj	2:ccomp|4:conj:e	_
+17	fazer	fazer	VERB	_	VerbForm=Inf	16	xcomp	16:xcomp	_
+18	algo	algo	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	17	obj	17:obj	_
+19	sem	sem	ADP	_	_	20	case	20:case	_
+20	fins	fim	NOUN	_	Gender=Masc|Number=Plur	18	nmod	18:nmod:sem	_
+21	lucrativos	lucrativo	ADJ	_	Gender=Masc|Number=Plur	20	amod	20:amod	SpaceAfter=No
+22	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0017
+# text = No dia seguinte à reunião, durante a audiência no Congresso, um advogado apareceu para que Chierice assinasse documentos referentes ao plano de distribuição.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	dia	dia	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:em	_
+4	seguinte	seguinte	ADJ	_	Number=Sing	3	amod	3:amod	_
+5-6	à	_	_	_	_	_	_	_	_
+5	a	a	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	reunião	reunião	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:a	SpaceAfter=No
+8	,	,	PUNCT	_	_	11	punct	11:punct	_
+9	durante	durante	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	audiência	audiência	NOUN	_	Gender=Fem|Number=Sing	18	obl	18:obl:durante	_
+12-13	no	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	Congresso	Congresso	PROPN	_	_	11	nmod	11:nmod:em	SpaceAfter=No
+15	,	,	PUNCT	_	_	11	punct	11:punct	_
+16	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	advogado	advogado	NOUN	_	Gender=Masc|Number=Sing	18	nsubj	18:nsubj	_
+18	apareceu	aparecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+19	para	para	ADP	_	ExtPos=SCONJ	22	mark	22:mark	_
+20	que	que	SCONJ	_	_	19	fixed	19:fixed	_
+21	Chierice	Chierice	PROPN	_	_	22	nsubj	22:nsubj	_
+22	assinasse	assinar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	advcl	18:advcl:para_que	_
+23	documentos	documento	NOUN	_	Gender=Masc|Number=Plur	22	obj	22:obj	_
+24	referentes	referente	ADJ	_	Number=Plur	23	amod	23:amod	_
+25-26	ao	_	_	_	_	_	_	_	_
+25	a	a	ADP	_	_	27	case	27:case	_
+26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	plano	plano	NOUN	_	Gender=Masc|Number=Sing	24	obl	24:obl:a	_
+28	de	de	ADP	_	_	29	case	29:case	_
+29	distribuição	distribuição	NOUN	_	Gender=Fem|Number=Sing	27	nmod	27:nmod:de	SpaceAfter=No
+30	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0019
+# text = Contudo, o pesquisador recusou, afirmando que sua intenção sempre foi manter a descoberta acessível e gratuita.
+1	Contudo	contudo	CCONJ	_	_	5	cc	5:cc	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	pesquisador	pesquisador	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+5	recusou	recusar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	afirmando	afirmar	VERB	_	VerbForm=Ger	5	advcl	5:advcl	_
+8	que	que	SCONJ	_	_	13	mark	13:mark	_
+9	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	10	det	10:det	_
+10	intenção	intenção	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	13:nsubj	_
+11	sempre	sempre	ADV	_	_	13	advmod	13:advmod	_
+12	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	cop	13:cop	_
+13	manter	manter	VERB	_	VerbForm=Inf	7	ccomp	7:ccomp	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	descoberta	descoberto	NOUN	_	Gender=Fem|Number=Sing	13	obj	13:obj|16:nsubj|18:nsubj	_
+16	acessível	acessível	ADJ	_	Number=Sing	13	xcomp	13:xcomp	_
+17	e	e	CCONJ	_	_	18	cc	18:cc	_
+18	gratuita	gratuito	ADJ	_	Gender=Fem|Number=Sing	16	conj	13:xcomp|16:conj:e	SpaceAfter=No
+19	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0021
+# text = Eu disse que não tinha interesse em lucrar com isso.
+1	Eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	2:nsubj	_
+2	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	5	mark	5:mark	_
+4	não	não	ADV	_	_	5	advmod	5:advmod	_
+5	tinha	ter	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	2	ccomp	2:ccomp	_
+6	interesse	interesse	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+7	em	em	ADP	_	_	8	mark	8:mark	_
+8	lucrar	lucrar	VERB	_	VerbForm=Inf	6	acl	6:acl:em	_
+9	com	com	ADP	_	_	10	case	10:case	_
+10	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	8	obl	8:obl:com	SpaceAfter=No
+11	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0023
+# text = É uma descoberta que deve beneficiar todos, declarou Chierice.
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+2	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	descoberta	descoberto	NOUN	_	Gender=Fem|Number=Sing	9	ccomp:speech	5:nsubj|6:nsubj|9:ccomp:speech	_
+4	que	que	PRON	_	PronType=Rel	5	nsubj	3:ref	_
+5	deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_
+6	beneficiar	beneficiar	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	_
+7	todos	todo	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	6	obj	6:obj	SpaceAfter=No
+8	,	,	PUNCT	_	_	3	punct	3:punct	_
+9	declarou	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	Chierice	Chierice	PROPN	_	_	9	nsubj	9:nsubj	SpaceAfter=No
+11	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0025
+# text = O delegado Nelson Edilberto Cerqueira mencionou um e-mail com um contrato anexado, que supostamente incluía Chierice e outros pesquisadores, mas o documento nunca chegou às mãos do cientista.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	delegado	delegado	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+3	Nelson	Nelson	PROPN	_	_	2	nmod	2:nmod	_
+4	Edilberto	Edilberto	PROPN	_	_	3	flat:name	3:flat:name	_
+5	Cerqueira	Cerqueira	PROPN	_	_	3	flat:name	3:flat:name	_
+6	mencionou	mencionar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	e-mail	e-mail	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	6	obj	6:obj|16:nsubj	_
+9	com	com	ADP	_	_	11	case	11:case	_
+10	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	contrato	contrato	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:com	_
+12	anexado	anexar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	11	amod	11:amod	SpaceAfter=No
+13	,	,	PUNCT	_	_	16	punct	16:punct	_
+14	que	que	PRON	_	PronType=Rel	16	nsubj	8:ref	_
+15	supostamente	supostamente	ADV	_	_	16	advmod	16:advmod	_
+16	incluía	incluer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	8	acl:relcl	8:acl:relcl	_
+17	Chierice	Chierice	PROPN	_	_	16	obj	16:obj	_
+18	e	e	CCONJ	_	_	20	cc	20:cc	_
+19	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	20	det	20:det	_
+20	pesquisadores	pesquisador	NOUN	_	Gender=Masc|Number=Plur	17	conj	16:obj|17:conj:e	SpaceAfter=No
+21	,	,	PUNCT	_	_	26	punct	26:punct	_
+22	mas	mas	CCONJ	_	_	26	cc	26:cc	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	documento	documento	NOUN	_	Gender=Masc|Number=Sing	26	nsubj	26:nsubj	_
+25	nunca	nunca	ADV	_	_	26	advmod	26:advmod	_
+26	chegou	chegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	conj	6:conj:mas	_
+27-28	às	_	_	_	_	_	_	_	_
+27	a	a	ADP	_	_	29	case	29:case	_
+28	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	29	det	29:det	_
+29	mãos	mão	NOUN	_	Gender=Fem|Number=Plur	26	obl	26:obl:a	_
+30-31	do	_	_	_	_	_	_	_	_
+30	de	de	ADP	_	_	32	case	32:case	_
+31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+32	cientista	cientista	NOUN	_	Number=Sing	29	nmod	29:nmod:de	SpaceAfter=No
+33	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0027
+# text = "Isso tudo é um mal-entendido", afirmou Chierice, rindo da situação.
+1	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+2	Isso	isso	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|PronType=Dem	6	nsubj	6:nsubj	_
+3	tudo	tudo	PRON	_	PronType=Ind	2	fixed	2:fixed	_
+4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	mal-entendido	mal-entendido	NOUN	_	Gender=Masc|Number=Sing	9	ccomp:speech	9:ccomp:speech	SpaceAfter=No
+7	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+8	,	,	PUNCT	_	_	6	punct	6:punct	_
+9	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	Chierice	Chierice	PROPN	_	_	9	nsubj	9:nsubj	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	rindo	rir	VERB	_	VerbForm=Ger	9	advcl	9:advcl	_
+13-14	da	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	situação	situação	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl:de	SpaceAfter=No
+16	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0029
+# text = Nunca houve intenção de negócio.
+1	Nunca	nunca	ADV	_	_	2	advmod	2:advmod	_
+2	houve	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	intenção	intenção	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	negócio	negócio	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	SpaceAfter=No
+6	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0031
+# text = A proposta de Argello, que contrasta com sua prisão na Operação Vitória de Pirro, parte da Lava Jato, gerou especulações sobre suas verdadeiras intenções.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	proposta	proposta	NOUN	_	Gender=Fem|Number=Sing	24	nsubj	7:nsubj|24:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Argello	Argello	PROPN	_	_	2	nmod	2:nmod:de	SpaceAfter=No
+5	,	,	PUNCT	_	_	7	punct	7:punct	_
+6	que	que	PRON	_	PronType=Rel	7	nsubj	2:ref	_
+7	contrasta	contrastar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+8	com	com	ADP	_	_	10	case	10:case	_
+9	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	10	det	10:det	_
+10	prisão	prisão	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:com	_
+11-12	na	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	Operação	Operação	PROPN	_	_	10	nmod	10:nmod:em	_
+14	Vitória	Vitória	PROPN	_	_	13	flat:name	13:flat:name	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	Pirro	Pirro	PROPN	_	_	13	flat:name	13:flat:name	SpaceAfter=No
+17	,	,	PUNCT	_	_	18	punct	18:punct	_
+18	parte	parte	NOUN	_	Gender=Fem|Number=Sing	13	appos	13:appos	_
+19-20	da	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	Lava	Lava	PROPN	_	_	18	nmod	18:nmod:de	_
+22	Jato	Jato	PROPN	_	_	21	flat:name	21:flat:name	SpaceAfter=No
+23	,	,	PUNCT	_	_	18	punct	18:punct	_
+24	gerou	gerar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+25	especulações	especulação	NOUN	_	Gender=Fem|Number=Plur	24	obj	24:obj	_
+26	sobre	sobre	ADP	_	_	29	case	29:case	_
+27	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	29	det	29:det	_
+28	verdadeiras	verdadeiro	ADJ	_	Gender=Fem|Number=Plur	29	amod	29:amod	_
+29	intenções	intenção	NOUN	_	Gender=Fem|Number=Plur	25	nmod	25:nmod:sobre	SpaceAfter=No
+30	.	.	PUNCT	_	_	24	punct	24:punct	_
+
+# sent_id = S0033
+# text = Contudo, a defesa de Argello, representada pelo advogado Marcelo Bessa, optou por não se manifestar sobre o caso.
+1	Contudo	contudo	CCONJ	_	_	15	cc	15:cc	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	defesa	defesa	NOUN	_	Gender=Fem|Number=Sing	15	nsubj	15:nsubj|19:nsubj	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	Argello	Argello	PROPN	_	_	4	nmod	4:nmod:de	SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	8:punct	_
+8	representada	representar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	4	acl	4:acl	_
+9-10	pelo	_	_	_	_	_	_	_	_
+9	por	por	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	advogado	advogado	NOUN	_	Gender=Masc|Number=Sing	8	obl:agent	8:obl:agent	_
+12	Marcelo	Marcelo	PROPN	_	_	11	nmod	11:nmod	_
+13	Bessa	Bessa	PROPN	_	_	12	flat:name	12:flat:name	SpaceAfter=No
+14	,	,	PUNCT	_	_	8	punct	8:punct	_
+15	optou	optar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+16	por	por	ADP	_	_	19	mark	19:mark	_
+17	não	não	ADV	_	_	19	advmod	19:advmod	_
+18	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	19	expl	19:expl	_
+19	manifestar	manifestar	VERB	_	VerbForm=Inf	15	xcomp	15:xcomp	_
+20	sobre	sobre	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	caso	caso	NOUN	_	Gender=Masc|Number=Sing	19	obl	19:obl:sobre	SpaceAfter=No
+23	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0035
+# text = A presidente Dilma Rousseff sancionou a lei que permite o uso da fosfoetanolamina sintética por pacientes com câncer, reforçando a discussão sobre a importância da substância.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	presidente	presidente	NOUN	_	Number=Sing	5	nsubj	5:nsubj	_
+3	Dilma	Dilma	PROPN	_	_	2	nmod	2:nmod	_
+4	Rousseff	Rousseff	PROPN	_	_	3	flat:name	3:flat:name	_
+5	sancionou	sancionar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	lei	lei	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj|9:nsubj	_
+8	que	que	PRON	_	PronType=Rel	9	nsubj	7:ref	_
+9	permite	permitir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	7:acl:relcl	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	uso	uso	NOUN	_	Gender=Masc|Number=Sing	9	obj	9:obj	_
+12-13	da	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	fosfoetanolamina	fosfoetanolamina	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:de	_
+15	sintética	sintético	ADJ	_	Gender=Fem|Number=Sing	14	amod	14:amod	_
+16	por	por	ADP	_	_	17	case	17:case	_
+17	pacientes	paciente	NOUN	_	Number=Plur	11	nmod	11:nmod:por	_
+18	com	com	ADP	_	_	19	case	19:case	_
+19	câncer	câncer	NOUN	_	Gender=Masc|Number=Sing	17	nmod	17:nmod:com	SpaceAfter=No
+20	,	,	PUNCT	_	_	21	punct	21:punct	_
+21	reforçando	reforçar	VERB	_	VerbForm=Ger	5	advcl	5:advcl	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	discussão	discussão	NOUN	_	Gender=Fem|Number=Sing	21	obj	21:obj	_
+24	sobre	sobre	ADP	_	_	26	case	26:case	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	importância	importância	NOUN	_	Gender=Fem|Number=Sing	23	nmod	23:nmod:sobre	_
+27-28	da	_	_	_	_	_	_	_	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	substância	substância	NOUN	_	Gender=Fem|Number=Sing	26	nmod	26:nmod:de	SpaceAfter=No
+30	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0037
+# text = A reunião entre Argello e Chierice colocou em evidência a possibilidade de uma distribuição sem custos, algo que pode impactar positivamente milhares de pacientes.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	reunião	reunião	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj	_
+3	entre	entre	ADP	_	_	4	case	4:case	_
+4	Argello	Argello	PROPN	_	_	2	nmod	2:nmod:entre	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	Chierice	Chierice	PROPN	_	_	4	conj	2:nmod:entre|4:conj:e	_
+7	colocou	colocar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	em	em	ADP	_	_	9	case	9:case	_
+9	evidência	evidência	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:em	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	possibilidade	possibilidade	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	distribuição	distribuição	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:de	_
+15	sem	sem	ADP	_	_	16	case	16:case	_
+16	custos	custo	NOUN	_	Gender=Masc|Number=Plur	14	nmod	14:nmod:sem	SpaceAfter=No
+17	,	,	PUNCT	_	_	18	punct	18:punct	_
+18	algo	algo	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	14	appos	14:appos|20:nsubj|21:nsubj	_
+19	que	que	PRON	_	PronType=Rel	20	nsubj	18:ref	_
+20	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	acl:relcl	18:acl:relcl	_
+21	impactar	impactar	VERB	_	VerbForm=Inf	20	xcomp	20:xcomp	_
+22	positivamente	positivamente	ADV	_	_	21	advmod	21:advmod	_
+23	milhares	milhar	NOUN	_	Gender=Masc|Number=Plur	21	obj	21:obj	_
+24	de	de	ADP	_	_	25	case	25:case	_
+25	pacientes	paciente	NOUN	_	Number=Plur	23	nmod	23:nmod:de	SpaceAfter=No
+26	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0039
+# text = A história continua nebulosa, mas uma coisa é certa: a "pílula do câncer" se tornou um símbolo de esperança e de debates éticos no cenário político e científico brasileiro.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	história	história	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj|4:nsubj	_
+3	continua	continuar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	nebulosa	nebuloso	ADJ	_	Gender=Fem|Number=Sing	3	xcomp	3:xcomp	SpaceAfter=No
+5	,	,	PUNCT	_	_	10	punct	10:punct	_
+6	mas	mas	CCONJ	_	_	10	cc	10:cc	_
+7	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	coisa	coisa	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	10:nsubj	_
+9	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_
+10	certa	certo	ADJ	_	Gender=Fem|Number=Sing	3	conj	3:conj:mas	SpaceAfter=No
+11	:	:	PUNCT	_	_	20	punct	20:punct	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+13	"	"	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+14	pílula	pílula	NOUN	_	Gender=Fem|Number=Sing	20	nsubj	20:nsubj|22:nsubj	_
+15-16	do	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	câncer	câncer	NOUN	_	Gender=Masc|Number=Sing	14	nmod	14:nmod:de	SpaceAfter=No
+18	"	"	PUNCT	_	_	14	punct	14:punct	_
+19	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	20	expl	20:expl	_
+20	tornou	tornar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	3:conj	_
+21	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	símbolo	símbolo	NOUN	_	Gender=Masc|Number=Sing	20	xcomp	20:xcomp	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	esperança	esperança	NOUN	_	Gender=Fem|Number=Sing	22	nmod	22:nmod:de	_
+25	e	e	CCONJ	_	_	27	cc	27:cc	_
+26	de	de	ADP	_	_	27	case	27:case	_
+27	debates	debate	NOUN	_	Gender=Masc|Number=Plur	24	conj	22:nmod:de|24:conj:e	_
+28	éticos	ético	ADJ	_	Gender=Masc|Number=Plur	27	amod	27:amod	_
+29-30	no	_	_	_	_	_	_	_	_
+29	em	em	ADP	_	_	31	case	31:case	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	cenário	cenário	NOUN	_	Gender=Masc|Number=Sing	22	nmod	22:nmod:em	_
+32	político	político	ADJ	_	Gender=Masc|Number=Sing	31	amod	31:amod	_
+33	e	e	CCONJ	_	_	34	cc	34:cc	_
+34	científico	científico	ADJ	_	Gender=Masc|Number=Sing	32	conj	31:amod|32:conj:e	_
+35	brasileiro	brasileiro	ADJ	_	Gender=Masc|Number=Sing	31	amod	31:amod	SpaceAfter=No
+36	.	.	PUNCT	_	_	3	punct	3:punct	_

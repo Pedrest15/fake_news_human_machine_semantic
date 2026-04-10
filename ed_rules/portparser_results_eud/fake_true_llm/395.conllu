@@ -1,0 +1,841 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Chilenos lotam as urnas em eleição presidencial histórica: milagre econômico em jogo!
+1	Chilenos	chileno	NOUN	_	Gender=Masc|Number=Plur	2	nsubj	2:nsubj	_
+2	lotam	lotar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	4:det	_
+4	urnas	urna	NOUN	_	Gender=Fem|Number=Plur	2	obj	2:obj	_
+5	em	em	ADP	_	_	6	case	6:case	_
+6	eleição	eleição	NOUN	_	Gender=Fem|Number=Sing	2	obl	2:obl:em	_
+7	presidencial	presidencial	ADJ	_	Number=Sing	6	amod	6:amod	_
+8	histórica	histórico	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	SpaceAfter=No
+9	:	:	PUNCT	_	_	10	punct	10:punct	_
+10	milagre	milagre	NOUN	_	Gender=Masc|Number=Sing	2	parataxis	2:parataxis	_
+11	econômico	econômico	ADJ	_	Gender=Masc|Number=Sing	10	amod	10:amod	_
+12	em	em	ADP	_	_	13	case	13:case	_
+13	jogo	jogo	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:em	SpaceAfter=No
+14	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Neste domingo (21), os chilenos participam de uma eleição presidencial que promete ser uma das mais disputadas da história recente do país.
+1-2	Neste	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	3	det	3:det	_
+3	domingo	domingo	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:em	_
+4	(	(	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+5	21	21	NUM	_	NumType=Card	3	appos	3:appos	SpaceAfter=No
+6	)	)	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+7	,	,	PUNCT	_	_	3	punct	3:punct	_
+8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	9:det	_
+9	chilenos	chileno	NOUN	_	Gender=Masc|Number=Plur	10	nsubj	10:nsubj	_
+10	participam	participar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	eleição	eleição	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:de|16:nsubj|18:nsubj	_
+14	presidencial	presidencial	ADJ	_	Number=Sing	13	amod	13:amod	_
+15	que	que	PRON	_	PronType=Rel	16	nsubj	13:ref	_
+16	promete	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	acl:relcl	13:acl:relcl	_
+17	ser	ser	AUX	_	VerbForm=Inf	18	cop	18:cop	_
+18	uma	um	NUM	_	Gender=Fem|NumType=Card	16	xcomp	16:xcomp	_
+19-20	das	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	as	o	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Dem	18	nmod	18:nmod:de	_
+21	mais	mais	ADV	_	_	22	advmod	22:advmod	_
+22	disputadas	disputado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	20	amod	20:amod	_
+23-24	da	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	história	história	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:de	_
+26	recente	recente	ADJ	_	Number=Sing	25	amod	25:amod	_
+27-28	do	_	_	_	_	_	_	_	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	29:det	_
+29	país	país	NOUN	_	Gender=Masc|Number=Sing	25	nmod	25:nmod:de	SpaceAfter=No
+30	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0005
+# text = Com mais de 5.
+1	Com	com	ADP	_	_	4	case	4:case	_
+2	mais	mais	ADV	_	ExtPos=ADV	4	advmod	4:advmod	_
+3	de	de	ADP	_	_	2	fixed	2:fixed	_
+4	5	5	NUM	_	NumType=Card	0	root	0:root	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0007
+# text = 5 milhões de candidatos para 500 cargos eletivos, a tensão é palpável entre os eleitores.
+1	5	5	NUM	_	NumType=Card	2	nummod	2:nummod	_
+2	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	13	nsubj	13:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	candidatos	candidato	NOUN	_	Gender=Masc|Number=Plur	2	nmod	2:nmod:de	_
+5	para	para	ADP	_	_	7	case	7:case	_
+6	500	500	NUM	_	NumType=Card	7	nummod	7:nummod	_
+7	cargos	cargo	NOUN	_	Gender=Masc|Number=Plur	4	nmod	4:nmod:para	_
+8	eletivos	eletivo	ADJ	_	Gender=Masc|Number=Plur	7	amod	7:amod	SpaceAfter=No
+9	,	,	PUNCT	_	_	2	punct	2:punct	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	tensão	tensão	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	13:nsubj	_
+12	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	13:cop	_
+13	palpável	palpável	ADJ	_	Number=Sing	0	root	0:root	_
+14	entre	entre	ADP	_	_	16	case	16:case	_
+15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	16:det	_
+16	eleitores	eleitor	NOUN	_	Gender=Masc|Number=Plur	13	obl	13:obl:entre	SpaceAfter=No
+17	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0009
+# text = A votação teve início às 6h e deve encerrar às 18h.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	votação	votação	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj|9:nsubj|10:nsubj	_
+3	teve	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	início	início	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	_
+5-6	às	_	_	_	_	_	_	_	_
+5	a	a	ADP	_	_	7	case	7:case	_
+6	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	7:det	_
+7	6h	6h	NOUN	_	_	3	obl	3:obl:a	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	3:conj:e	_
+10	encerrar	encerrar	VERB	_	VerbForm=Inf	9	xcomp	9:xcomp	_
+11-12	às	_	_	_	_	_	_	_	_
+11	a	a	ADP	_	_	13	case	13:case	_
+12	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	13:det	_
+13	18h	18h	NOUN	_	_	10	obl	10:obl:a	SpaceAfter=No
+14	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0011
+# text = A eleição presidencial deve seguir para o segundo turno, com os candidatos José Antonio Kast, da extrema direita, e Gabriel Boric, da esquerda, liderando as pesquisas.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	eleição	eleição	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj|5:nsubj	_
+3	presidencial	presidencial	ADJ	_	Number=Sing	2	amod	2:amod	_
+4	deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	seguir	seguir	VERB	_	VerbForm=Inf	4	xcomp	4:xcomp	_
+6	para	para	ADP	_	_	9	case	9:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+8	segundo	segundo	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	9	amod	9:amod	_
+9	turno	turno	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:para	SpaceAfter=No
+10	,	,	PUNCT	_	_	13	punct	13:punct	_
+11	com	com	ADP	_	_	13	case	13:case	_
+12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	13:det	_
+13	candidatos	candidato	NOUN	_	Gender=Masc|Number=Plur	5	obl	5:obl:com	_
+14	José	José	PROPN	_	_	13	nmod	13:nmod	_
+15	Antonio	Antonio	PROPN	_	_	14	flat:name	14:flat:name	_
+16	Kast	Kast	PROPN	_	_	14	flat:name	14:flat:name	SpaceAfter=No
+17	,	,	PUNCT	_	_	21	punct	21:punct	_
+18-19	da	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	21	case	21:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+20	extrema	extremo	ADJ	_	Gender=Fem|Number=Sing	21	amod	21:amod	_
+21	direita	direita	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:de	SpaceAfter=No
+22	,	,	PUNCT	_	_	21	punct	21:punct	_
+23	e	e	CCONJ	_	_	24	cc	24:cc	_
+24	Gabriel	Gabriel	PROPN	_	_	14	conj	13:nmod|14:conj:e	_
+25	Boric	Boric	PROPN	_	_	24	flat:name	24:flat:name	SpaceAfter=No
+26	,	,	PUNCT	_	_	29	punct	29:punct	_
+27-28	da	_	_	_	_	_	_	_	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	esquerda	esquerda	NOUN	_	Gender=Fem|Number=Sing	24	nmod	24:nmod:de	SpaceAfter=No
+30	,	,	PUNCT	_	_	29	punct	29:punct	_
+31	liderando	liderar	VERB	_	VerbForm=Ger	13	acl	13:acl	_
+32	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	33	det	33:det	_
+33	pesquisas	pesquisa	NOUN	_	Gender=Fem|Number=Plur	31	obj	31:obj	SpaceAfter=No
+34	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0013
+# text = Esta é a primeira vez em duas décadas que Sebastián Piñera e Michelle Bachelet não figuram entre os candidatos presidenciais, marcando uma nova era na política chilena.
+1	Esta	este	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	5	nsubj	5:nsubj	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+4	primeira	primeiro	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	5	amod	5:amod	_
+5	vez	vez	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root|16:obl	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	duas	dois	NUM	_	Gender=Fem|NumType=Card	8	nummod	8:nummod	_
+8	décadas	década	NOUN	_	Gender=Fem|Number=Plur	5	nmod	5:nmod:em	_
+9	que	que	PRON	_	PronType=Rel	16	obl	5:ref	_
+10	Sebastián	Sebastián	PROPN	_	_	16	nsubj	16:nsubj	_
+11	Piñera	Piñera	PROPN	_	_	10	flat:name	10:flat:name	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	Michelle	Michelle	PROPN	_	_	10	conj	10:conj:e|16:nsubj	_
+14	Bachelet	Bachelet	PROPN	_	_	13	flat:name	13:flat:name	_
+15	não	não	ADV	_	_	16	advmod	16:advmod	_
+16	figuram	figurar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_
+17	entre	entre	ADP	_	_	19	case	19:case	_
+18	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	19:det	_
+19	candidatos	candidato	NOUN	_	Gender=Masc|Number=Plur	16	obl	16:obl:entre	_
+20	presidenciais	presidencial	ADJ	_	Number=Plur	19	amod	19:amod	SpaceAfter=No
+21	,	,	PUNCT	_	_	22	punct	22:punct	_
+22	marcando	marcar	VERB	_	VerbForm=Ger	16	advcl	16:advcl	_
+23	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+24	nova	novo	ADJ	_	Gender=Fem|Number=Sing	25	amod	25:amod	_
+25	era	era	NOUN	_	Gender=Fem|Number=Sing	22	obj	22:obj	_
+26-27	na	_	_	_	_	_	_	_	_
+26	em	em	ADP	_	_	28	case	28:case	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	política	política	NOUN	_	Gender=Fem|Number=Sing	22	obl	22:obl:em	_
+29	chilena	chileno	ADJ	_	Gender=Fem|Number=Sing	28	amod	28:amod	SpaceAfter=No
+30	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0015
+# text = Piñera, atual presidente, conseguiu evitar um impeachment por pouco e enfrenta uma rejeição recorde.
+1	Piñera	Piñera	PROPN	_	_	6	nsubj	6:nsubj|7:nsubj|13:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	4	punct	4:punct	_
+3	atual	atual	ADJ	_	Number=Sing	4	amod	4:amod	_
+4	presidente	presidente	NOUN	_	Number=Sing	1	appos	1:appos	SpaceAfter=No
+5	,	,	PUNCT	_	_	4	punct	4:punct	_
+6	conseguiu	conseguir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	evitar	evitar	VERB	_	VerbForm=Inf	6	xcomp	6:xcomp	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	impeachment	impeachment	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+10	por	por	ADP	_	_	11	case	11:case	_
+11	pouco	pouco	ADV	_	_	7	advmod	7:advmod	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	enfrenta	enfrentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	6:conj:e	_
+14	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	rejeição	rejeição	NOUN	_	Gender=Fem|Number=Sing	13	obj	13:obj	_
+16	recorde	recorde	ADJ	_	Number=Sing	15	amod	15:amod	SpaceAfter=No
+17	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0017
+# text = Bachelet, por sua vez, continua a influenciar a política global como alta comissária da ONU para os Direitos Humanos.
+1	Bachelet	Bachelet	PROPN	_	_	7	nsubj	7:nsubj|9:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	5	punct	5:punct	_
+3	por	por	ADP	_	_	5	case	5:case	_
+4	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	det	5:det	_
+5	vez	vez	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:por	SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	5:punct	_
+7	continua	continuar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	a	a	ADP	_	_	9	mark	9:mark	_
+9	influenciar	influenciar	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	política	política	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+12	global	global	ADJ	_	Number=Sing	11	amod	11:amod	_
+13	como	como	ADP	_	_	15	case	15:case	_
+14	alta	alta	NOUN	_	Gender=Fem|Number=Sing	15	amod	15:amod	_
+15	comissária	comissário	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:como	_
+16-17	da	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	ONU	ONU	PROPN	_	_	15	nmod	15:nmod:de	_
+19	para	para	ADP	_	_	21	case	21:case	_
+20	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	21:det	_
+21	Direitos	Direitos	PROPN	_	_	15	nmod	15:nmod:para	_
+22	Humanos	Humanos	PROPN	_	_	21	flat:name	21:flat:name	SpaceAfter=No
+23	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0019
+# text = **Candidatos e suas propostas polêmicas:**.
+1	*	*	PUNCT	_	_	3	advmod	3:advmod	SpaceAfter=No
+2	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+3	Candidatos	candidato	NOUN	_	Gender=Masc|Number=Plur	0	root	0:root	_
+4	e	e	CCONJ	_	_	6	cc	6:cc	_
+5	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	6	det	6:det	_
+6	propostas	proposta	NOUN	_	Gender=Fem|Number=Plur	3	conj	3:conj:e	_
+7	polêmicas	polêmico	ADJ	_	Gender=Fem|Number=Plur	6	amod	6:amod	SpaceAfter=No
+8	:	:	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+9	*	*	PUNCT	_	_	3	parataxis	3:parataxis	SpaceAfter=No
+10	*	*	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+11	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0021
+# text = - **José Antonio Kast**, o advogado conservador, promete um retorno ao "milagre econômico" dos anos de Pinochet, com redução drástica de impostos e privatizações em massa.
+1	-	-	PUNCT	_	_	14	punct	14:punct	_
+2	*	*	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+3	*	*	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+4	José	José	PROPN	_	_	14	nsubj	14:nsubj	_
+5	Antonio	Antonio	PROPN	_	_	4	flat:name	4:flat:name	_
+6	Kast	Kast	PROPN	_	_	4	flat:name	4:flat:name	SpaceAfter=No
+7	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+8	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+9	,	,	PUNCT	_	_	11	punct	11:punct	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	advogado	advogado	NOUN	_	Gender=Masc|Number=Sing	4	appos	4:appos	_
+12	conservador	conservador	ADJ	_	Gender=Masc|Number=Sing	11	amod	11:amod	SpaceAfter=No
+13	,	,	PUNCT	_	_	11	punct	11:punct	_
+14	promete	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+15	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	retorno	retorno	NOUN	_	Gender=Masc|Number=Sing	14	obj	14:obj	_
+17-18	ao	_	_	_	_	_	_	_	_
+17	a	a	ADP	_	_	20	case	20:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+19	"	"	PUNCT	_	_	20	punct	20:punct	SpaceAfter=No
+20	milagre	milagre	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod:a	_
+21	econômico	econômico	ADJ	_	Gender=Masc|Number=Sing	20	amod	20:amod	SpaceAfter=No
+22	"	"	PUNCT	_	_	20	punct	20:punct	_
+23-24	dos	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	25:det	_
+25	anos	ano	NOUN	_	Gender=Masc|Number=Plur	20	nmod	20:nmod:de	_
+26	de	de	ADP	_	_	27	case	27:case	_
+27	Pinochet	Pinochet	PROPN	_	_	25	nmod	25:nmod:de	SpaceAfter=No
+28	,	,	PUNCT	_	_	30	punct	30:punct	_
+29	com	com	ADP	_	_	30	case	30:case|35:case	_
+30	redução	redução	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:com	_
+31	drástica	drástico	ADJ	_	Gender=Fem|Number=Sing	30	amod	30:amod	_
+32	de	de	ADP	_	_	33	case	33:case	_
+33	impostos	imposto	NOUN	_	Gender=Masc|Number=Plur	30	nmod	30:nmod:de	_
+34	e	e	CCONJ	_	_	35	cc	35:cc	_
+35	privatizações	privatização	NOUN	_	Gender=Fem|Number=Plur	30	conj	16:nmod:com|30:conj:e	_
+36	em	em	ADP	_	_	37	case	37:case	_
+37	massa	massa	NOUN	_	Gender=Fem|Number=Sing	35	nmod	35:nmod:em	SpaceAfter=No
+38	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0023
+# text = Kast, conhecido por suas declarações controversas, inclusive sobre o aborto, onde espalhou informações falsas, é filho de imigrantes alemães que prosperaram no Chile com negócios lucrativos.
+1	Kast	Kast	PROPN	_	_	20	nsubj	20:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	conhecido	conhecido	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	1	amod	1:amod	_
+4	por	por	ADP	_	_	6	case	6:case	_
+5	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	6	det	6:det	_
+6	declarações	declaração	NOUN	_	Gender=Fem|Number=Plur	3	obl	3:obl:por	_
+7	controversas	controverso	ADJ	_	Gender=Fem|Number=Plur	6	amod	6:amod	SpaceAfter=No
+8	,	,	PUNCT	_	_	12	punct	12:punct	_
+9	inclusive	inclusive	ADV	_	_	12	advmod	12:advmod	_
+10	sobre	sobre	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	aborto	aborto	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:sobre|15:obl	SpaceAfter=No
+13	,	,	PUNCT	_	_	15	punct	15:punct	_
+14	onde	onde	ADV	_	_	15	advmod	12:ref	_
+15	espalhou	espalhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	acl:relcl	12:acl:relcl	_
+16	informações	informação	NOUN	_	Gender=Fem|Number=Plur	15	obj	15:obj	_
+17	falsas	falso	ADJ	_	Gender=Fem|Number=Plur	16	amod	16:amod	SpaceAfter=No
+18	,	,	PUNCT	_	_	12	punct	12:punct	_
+19	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	cop	20:cop	_
+20	filho	filho	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+21	de	de	ADP	_	_	22	case	22:case	_
+22	imigrantes	imigrante	NOUN	_	Number=Plur	20	nmod	20:nmod:de|25:nsubj	_
+23	alemães	alemão	ADJ	_	Gender=Masc|Number=Plur	22	amod	22:amod	_
+24	que	que	PRON	_	PronType=Rel	25	nsubj	22:ref	_
+25	prosperaram	prosperar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	22	acl:relcl	22:acl:relcl	_
+26-27	no	_	_	_	_	_	_	_	_
+26	em	em	ADP	_	_	28	case	28:case	_
+27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	Chile	Chile	PROPN	_	_	25	obl	25:obl:em	_
+29	com	com	ADP	_	_	30	case	30:case	_
+30	negócios	negócio	NOUN	_	Gender=Masc|Number=Plur	25	obl	25:obl:com	_
+31	lucrativos	lucrativo	ADJ	_	Gender=Masc|Number=Plur	30	amod	30:amod	SpaceAfter=No
+32	.	.	PUNCT	_	_	20	punct	20:punct	_
+
+# sent_id = S0025
+# text = Após ficar em quarto lugar na eleição de 2017, Kast fortaleceu sua base com o novo partido republicano, fundado em 2019.
+1	Após	após	ADP	_	_	2	mark	2:mark	_
+2	ficar	ficar	VERB	_	VerbForm=Inf	13	advcl	13:advcl:após	_
+3	em	em	ADP	_	_	5	case	5:case	_
+4	quarto	quarto	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	5	amod	5:amod	_
+5	lugar	lugar	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:em	_
+6-7	na	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	eleição	eleição	NOUN	_	Gender=Fem|Number=Sing	2	obl	2:obl:em	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	2017	2017	NUM	_	NumType=Card	8	nmod	8:nmod:de	SpaceAfter=No
+11	,	,	PUNCT	_	_	2	punct	2:punct	_
+12	Kast	Kast	PROPN	_	_	13	nsubj	13:nsubj	_
+13	fortaleceu	fortalecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	15	det	15:det	_
+15	base	base	NOUN	_	Gender=Fem|Number=Sing	13	obj	13:obj	_
+16	com	com	ADP	_	_	19	case	19:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+18	novo	novo	ADJ	_	Gender=Masc|Number=Sing	19	amod	19:amod	_
+19	partido	partido	NOUN	_	Gender=Masc|Number=Sing	13	obl	13:obl:com	_
+20	republicano	republicano	ADJ	_	Gender=Masc|Number=Sing	19	amod	19:amod	SpaceAfter=No
+21	,	,	PUNCT	_	_	22	punct	22:punct	_
+22	fundado	fundar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	19	acl	19:acl	_
+23	em	em	ADP	_	_	24	case	24:case	_
+24	2019	2019	NUM	_	NumType=Card	22	obl	22:obl:em	SpaceAfter=No
+25	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0027
+# text = - **Gabriel Boric**, o candidato de 35 anos da aliança de esquerda, defende um estado de bem-estar social estilo europeu.
+1	-	-	PUNCT	_	_	20	punct	20:punct	_
+2	*	*	PUNCT	_	_	20	punct	20:punct	SpaceAfter=No
+3	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+4	Gabriel	Gabriel	PROPN	_	_	20	nsubj	20:nsubj	_
+5	Boric	Boric	PROPN	_	_	4	flat:name	4:flat:name	SpaceAfter=No
+6	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+7	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+8	,	,	PUNCT	_	_	10	punct	10:punct	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	candidato	candidato	NOUN	_	Gender=Masc|Number=Sing	4	appos	4:appos	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	35	35	NUM	_	NumType=Card	13	nummod	13:nummod	_
+13	anos	ano	NOUN	_	Gender=Masc|Number=Plur	10	nmod	10:nmod:de	_
+14-15	da	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	aliança	aliança	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:de	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	esquerda	esquerda	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:de	SpaceAfter=No
+19	,	,	PUNCT	_	_	10	punct	10:punct	_
+20	defende	defender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+21	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	estado	estado	NOUN	_	Gender=Masc|Number=Sing	20	obj	20:obj	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	bem-estar	bem-estar	NOUN	_	Gender=Masc	22	nmod	22:nmod:de	_
+25	social	social	ADJ	_	Number=Sing	24	amod	24:amod	_
+26	estilo	estilo	NOUN	_	Gender=Masc|Number=Sing	22	nmod	22:nmod	_
+27	europeu	europeu	ADJ	_	Gender=Masc|Number=Sing	26	amod	26:amod	SpaceAfter=No
+28	.	.	PUNCT	_	_	20	punct	20:punct	_
+
+# sent_id = S0029
+# text = Sua proposta mais audaciosa é a criação de uma aposentadoria mínima de 50 mil pesos (cerca de R$ 3,4 mil), financiada por uma contribuição trabalhista que pode subir até 25%, com parte paga pelos empregadores.
+1	Sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	det	2:det	_
+2	proposta	proposta	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj	_
+3	mais	mais	ADV	_	_	4	advmod	4:advmod	_
+4	audaciosa	audacioso	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	_
+5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	criação	criação	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	aposentadoria	aposentadoria	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:de	_
+11	mínima	mínimo	ADJ	_	Gender=Fem|Number=Sing	10	amod	10:amod	_
+12	de	de	ADP	_	_	15	case	15:case	_
+13	50	50	NUM	_	NumType=Card	15	nummod	15:nummod	_
+14	mil	mil	NUM	_	NumType=Card	13	flat	13:flat	_
+15	pesos	peso	NOUN	_	Gender=Masc|Number=Plur	10	nmod	10:nmod:de	_
+16	(	(	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+17	cerca	cerca	ADV	_	ExtPos=ADV	19	advmod	19:advmod	_
+18	de	de	ADP	_	_	17	fixed	17:fixed	_
+19	R$	R$	SYM	_	_	10	nmod	10:nmod	_
+20	3,4	3,4	NUM	_	NumType=Card	19	nummod	19:nummod	_
+21	mil	mil	NUM	_	NumType=Card	20	flat	20:flat	SpaceAfter=No
+22	)	)	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+23	,	,	PUNCT	_	_	24	punct	24:punct	_
+24	financiada	financiar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	10	acl	10:acl	_
+25	por	por	ADP	_	_	27	case	27:case	_
+26	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	contribuição	contribuição	NOUN	_	Gender=Fem|Number=Sing	24	obl:agent	24:obl:agent|30:nsubj|31:nsubj	_
+28	trabalhista	trabalhista	ADJ	_	Number=Sing	27	amod	27:amod	_
+29	que	que	PRON	_	PronType=Rel	30	nsubj	27:ref	_
+30	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	acl:relcl	27:acl:relcl	_
+31	subir	subir	VERB	_	VerbForm=Inf	30	xcomp	30:xcomp	_
+32	até	até	ADP	_	_	34	case	34:case	_
+33	25	25	NUM	_	NumType=Card	34	nummod	34:nummod	SpaceAfter=No
+34	%	%	SYM	_	_	31	obl	31:obl:até	SpaceAfter=No
+35	,	,	PUNCT	_	_	37	punct	37:punct	_
+36	com	com	ADP	_	_	37	case	37:case	_
+37	parte	parte	NOUN	_	Gender=Fem|Number=Sing	31	obl	31:obl:com	_
+38	paga	pagar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	37	acl	37:acl	_
+39-40	pelos	_	_	_	_	_	_	_	_
+39	por	por	ADP	_	_	41	case	41:case	_
+40	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	41	det	41:det	_
+41	empregadores	empregador	NOUN	_	Gender=Masc|Number=Plur	38	obl:agent	38:obl:agent	SpaceAfter=No
+42	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0031
+# text = Boric tem o apoio do Partido Comunista, o que gera controvérsias e pode influenciar decisivamente o segundo turno.
+1	Boric	Boric	PROPN	_	_	2	nsubj	2:nsubj	_
+2	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	apoio	apoio	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Partido	Partido	PROPN	_	_	4	nmod	4:nmod:de	_
+8	Comunista	Comunista	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+9	,	,	PUNCT	_	_	12	punct	12:punct	_
+10	o	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	12	nsubj	12:nsubj|15:nsubj|16:nsubj	_
+11	que	que	PRON	_	PronType=Rel	10	fixed	10:fixed	_
+12	gera	gerar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	2:parataxis	_
+13	controvérsias	controvérsão	NOUN	_	Gender=Fem|Number=Plur	12	obj	12:obj	_
+14	e	e	CCONJ	_	_	15	cc	15:cc	_
+15	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	conj	2:parataxis|12:conj:e	_
+16	influenciar	influenciar	VERB	_	VerbForm=Inf	15	xcomp	15:xcomp	_
+17	decisivamente	decisivamente	ADV	_	_	16	advmod	16:advmod	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+19	segundo	segundo	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	20	amod	20:amod	_
+20	turno	turno	NOUN	_	Gender=Masc|Number=Sing	16	obj	16:obj	SpaceAfter=No
+21	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0033
+# text = - **Sebastián Sichel**, candidato do governo Piñera, busca um modelo econômico que combine mercado livre com um estado intervencionista.
+1	-	-	PUNCT	_	_	15	punct	15:punct	_
+2	*	*	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+3	*	*	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+4	Sebastián	Sebastián	PROPN	_	_	15	nsubj	15:nsubj	_
+5	Sichel	Sichel	PROPN	_	_	4	flat:name	4:flat:name	SpaceAfter=No
+6	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+7	*	*	PUNCT	_	_	4	flat:name	4:flat:name	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	candidato	candidato	NOUN	_	Gender=Masc|Number=Sing	4	appos	4:appos	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	governo	governo	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:de	_
+13	Piñera	Piñera	PROPN	_	_	12	nmod	12:nmod	SpaceAfter=No
+14	,	,	PUNCT	_	_	9	punct	9:punct	_
+15	busca	buscar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+16	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	modelo	modelo	NOUN	_	Number=Sing	15	obj	15:obj|20:nsubj	_
+18	econômico	econômico	ADJ	_	Gender=Masc|Number=Sing	17	amod	17:amod	_
+19	que	que	PRON	_	PronType=Rel	20	nsubj	17:ref	_
+20	combine	combinar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	acl:relcl	17:acl:relcl	_
+21	mercado	mercado	NOUN	_	Gender=Masc|Number=Sing	20	obj	20:obj	_
+22	livre	livre	ADJ	_	Number=Sing	21	amod	21:amod	_
+23	com	com	ADP	_	_	25	case	25:case	_
+24	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	estado	estado	NOUN	_	Gender=Masc|Number=Sing	20	obl	20:obl:com	_
+26	intervencionista	intervencionista	ADJ	_	Number=Sing	25	amod	25:amod	SpaceAfter=No
+27	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0035
+# text = Sichel propõe um novo sistema previdenciário inspirado na Austrália, que promete acabar com o oligopólio atual.
+1	Sichel	Sichel	PROPN	_	_	2	nsubj	2:nsubj	_
+2	propõe	propor	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+4	novo	novo	ADJ	_	Gender=Masc|Number=Sing	5	amod	5:amod	_
+5	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj|13:nsubj|14:nsubj	_
+6	previdenciário	previdenciário	ADJ	_	Gender=Masc|Number=Sing	5	amod	5:amod	_
+7	inspirado	inspirar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	5	acl	5:acl	_
+8-9	na	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	Austrália	Austrália	PROPN	_	_	7	obl	7:obl:em	SpaceAfter=No
+11	,	,	PUNCT	_	_	13	punct	13:punct	_
+12	que	que	PRON	_	PronType=Rel	13	nsubj	5:ref	_
+13	promete	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_
+14	acabar	acabar	VERB	_	VerbForm=Inf	13	xcomp	13:xcomp	_
+15	com	com	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	oligopólio	oligopólio	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:com	_
+18	atual	atual	ADJ	_	Number=Sing	17	amod	17:amod	SpaceAfter=No
+19	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0037
+# text = Entretanto, sua popularidade é afetada pela crise econômica e pelos protestos sociais.
+1	Entretanto	entretanto	CCONJ	_	_	6	cc	6:cc	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	4	det	4:det	_
+4	popularidade	popularidade	NOUN	_	Gender=Fem|Number=Sing	6	nsubj:pass	6:nsubj:pass	_
+5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:pass	6:aux:pass	_
+6	afetada	afetar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+7-8	pela	_	_	_	_	_	_	_	_
+7	por	por	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	crise	crise	NOUN	_	Gender=Fem|Number=Sing	6	obl:agent	6:obl:agent	_
+10	econômica	econômico	ADJ	_	Gender=Fem|Number=Sing	9	amod	9:amod	_
+11	e	e	CCONJ	_	_	14	cc	14:cc	_
+12-13	pelos	_	_	_	_	_	_	_	_
+12	por	por	ADP	_	_	14	case	14:case	_
+13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	14:det	_
+14	protestos	protesto	NOUN	_	Gender=Masc|Number=Plur	9	conj	6:obl:agent|9:conj:e	_
+15	sociais	social	ADJ	_	Number=Plur	14	amod	14:amod	SpaceAfter=No
+16	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0039
+# text = - **Yasna Provoste**, a candidata dos democratas-cristãos, foca em promessas como o aumento substancial do salário dos professores.
+1	-	-	PUNCT	_	_	15	punct	15:punct	_
+2	*	*	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+3	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+4	Yasna	Yasna	PROPN	_	_	15	nsubj	15:nsubj	_
+5	Provoste	Provoste	PROPN	_	_	4	flat:name	4:flat:name	SpaceAfter=No
+6	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+7	*	*	PUNCT	_	_	4	flat:name	4:flat:name	SpaceAfter=No
+8	,	,	PUNCT	_	_	10	punct	10:punct	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	candidata	candidato	NOUN	_	Gender=Fem|Number=Sing	4	appos	4:appos	_
+11-12	dos	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	13:det	_
+13	democratas-cristãos	democratas-cristão	ADJ	_	Gender=Masc|Number=Plur	10	nmod	10:nmod:de	SpaceAfter=No
+14	,	,	PUNCT	_	_	10	punct	10:punct	_
+15	foca	focar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+16	em	em	ADP	_	_	17	case	17:case	_
+17	promessas	promessa	NOUN	_	Gender=Fem|Number=Plur	15	obl	15:obl:em	_
+18	como	como	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	aumento	aumento	NOUN	_	Gender=Masc|Number=Sing	17	nmod	17:nmod:como	_
+21	substancial	substancial	ADJ	_	Number=Sing	20	amod	20:amod	_
+22-23	do	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	salário	salário	NOUN	_	Gender=Masc|Number=Sing	20	nmod	20:nmod:de	_
+25-26	dos	_	_	_	_	_	_	_	_
+25	de	de	ADP	_	_	27	case	27:case	_
+26	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	27:det	_
+27	professores	professor	NOUN	_	Gender=Masc|Number=Plur	24	nmod	24:nmod:de	SpaceAfter=No
+28	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0041
+# text = Provoste, senadora e ex-ministra, defende a criação de mais empresas públicas e um plano de transição pós-COVID-19.
+1	Provoste	Provoste	PROPN	_	_	7	nsubj	7:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	senadora	senador	NOUN	_	Gender=Fem|Number=Sing	1	appos	1:appos	_
+4	e	e	CCONJ	_	_	5	cc	5:cc	_
+5	ex-ministra	ex-ministra	NOUN	_	Gender=Fem|Number=Sing	3	conj	1:appos|3:conj:e	SpaceAfter=No
+6	,	,	PUNCT	_	_	3	punct	3:punct	_
+7	defende	defender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	criação	criação	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	mais	mais	DET	_	PronType=Ind	12	det	12:det	_
+12	empresas	empresa	NOUN	_	Gender=Fem|Number=Plur	9	nmod	9:nmod:de	_
+13	públicas	público	ADJ	_	Gender=Fem|Number=Plur	12	amod	12:amod	_
+14	e	e	CCONJ	_	_	16	cc	16:cc	_
+15	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	plano	plano	NOUN	_	Gender=Masc|Number=Sing	9	conj	7:obj|9:conj:e	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	transição	transição	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:de	_
+19	pós-COVID-19	pós-covid-19	NUM	_	_	18	nmod	18:nmod	SpaceAfter=No
+20	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0043
+# text = Sua campanha ganhou força recentemente com o apoio de ex-presidentes.
+1	Sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	det	2:det	_
+2	campanha	campanha	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_
+3	ganhou	ganhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	força	força	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+5	recentemente	recentemente	ADV	_	_	3	advmod	3:advmod	_
+6	com	com	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	apoio	apoio	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:com	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	ex-presidentes	ex-presidente	NOUN	_	Number=Plur	8	nmod	8:nmod:de	SpaceAfter=No
+11	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0045
+# text = - **Franco Parisi**, candidato de direita, apesar de morar nos EUA e não ter pisado no Chile durante a campanha, ainda assim angaria votos.
+1	-	-	PUNCT	_	_	4	punct	4:punct	_
+2	*	*	PUNCT	_	_	32	nsubj	32:nsubj	SpaceAfter=No
+3	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+4	Franco	Franco	PROPN	_	_	32	nsubj	32:nsubj	_
+5	Parisi	Parisi	PROPN	_	_	4	flat:name	4:flat:name	SpaceAfter=No
+6	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+7	*	*	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	candidato	candidato	NOUN	_	Gender=Masc|Number=Sing	4	appos	4:appos	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	direita	direita	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:de	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	apesar	apesar	ADV	_	_	32	advmod	32:advmod	_
+14	de	de	ADP	_	_	15	mark	15:mark|22:mark	_
+15	morar	morar	VERB	_	VerbForm=Inf	13	acl	13:acl:de	_
+16-17	nos	_	_	_	_	_	_	_	_
+16	em	em	ADP	_	_	18	case	18:case	_
+17	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	18:det	_
+18	EUA	EUA	PROPN	_	_	15	obl	15:obl:em	_
+19	e	e	CCONJ	_	_	22	cc	22:cc	_
+20	não	não	ADV	_	_	22	advmod	22:advmod	_
+21	ter	ter	AUX	_	VerbForm=Inf	22	aux	22:aux	_
+22	pisado	pisar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	15	conj	13:acl:de|15:conj:e	_
+23-24	no	_	_	_	_	_	_	_	_
+23	em	em	ADP	_	_	25	case	25:case	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	Chile	Chile	PROPN	_	_	22	obl	22:obl:em	_
+26	durante	durante	ADP	_	_	28	case	28:case	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	campanha	campanha	NOUN	_	Gender=Fem|Number=Sing	22	obl	22:obl:durante	SpaceAfter=No
+29	,	,	PUNCT	_	_	13	punct	13:punct	_
+30	ainda	ainda	ADV	_	_	32	advmod	32:advmod	_
+31	assim	assim	ADV	_	_	32	advmod	32:advmod	_
+32	angaria	angariar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+33	votos	voto	NOUN	_	Gender=Masc|Number=Plur	32	obj	32:obj	SpaceAfter=No
+34	.	.	PUNCT	_	_	32	punct	32:punct	_
+
+# sent_id = S0047
+# text = Sua dívida de pensão alimentícia de 30 milhões de pesos chilenos (aproximadamente R$ 1,5 milhão) tornou-se um escândalo nacional, mas ele alega que isso é uma perseguição política.
+1	Sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	det	2:det	_
+2	dívida	dívida	NOUN	_	Gender=Fem|Number=Sing	18	nsubj	18:nsubj|21:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	pensão	pensão	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+5	alimentícia	alimentício	ADJ	_	Gender=Fem|Number=Sing	4	amod	4:amod	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	30	30	NUM	_	NumType=Card	8	nummod	8:nummod	_
+8	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	2	nmod	2:nmod:de	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	pesos	peso	NOUN	_	Gender=Masc|Number=Plur	8	nmod	8:nmod:de	_
+11	chilenos	chileno	ADJ	_	Gender=Masc|Number=Plur	10	amod	10:amod	_
+12	(	(	PUNCT	_	_	16	punct	16:punct	SpaceAfter=No
+13	aproximadamente	aproximadamente	ADV	_	_	16	advmod	16:advmod	_
+14	R$	R$	SYM	_	_	16	nmod	16:nmod	_
+15	1,5	1,5	NUM	_	NumType=Card	16	nummod	16:nummod	_
+16	milhão	milhão	NOUN	_	Gender=Masc|Number=Sing	8	appos	8:appos	SpaceAfter=No
+17	)	)	PUNCT	_	_	16	punct	16:punct	_
+18-19	tornou-se	_	_	_	_	_	_	_	_
+18	tornou	tornar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+19	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	18	expl	18:expl	_
+20	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	escândalo	escândalo	NOUN	_	Gender=Masc|Number=Sing	18	xcomp	18:xcomp	_
+22	nacional	nacional	ADJ	_	Number=Sing	21	amod	21:amod	SpaceAfter=No
+23	,	,	PUNCT	_	_	26	punct	26:punct	_
+24	mas	mas	CCONJ	_	_	26	cc	26:cc	_
+25	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	26	nsubj	26:nsubj	_
+26	alega	alegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	conj	18:conj:mas	_
+27	que	que	SCONJ	_	_	31	mark	31:mark	_
+28	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	31	nsubj	31:nsubj	_
+29	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	cop	31:cop	_
+30	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+31	perseguição	perseguição	NOUN	_	Gender=Fem|Number=Sing	26	ccomp	26:ccomp	_
+32	política	político	ADJ	_	Gender=Fem|Number=Sing	31	amod	31:amod	SpaceAfter=No
+33	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0049
+# text = Segundo o cientista político Javier Sajuria, Kast e Boric devem ir para o segundo turno, onde o vencedor será aquele com menor rejeição.
+1	Segundo	segundo	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	cientista	cientista	NOUN	_	Number=Sing	11	obl	11:obl:segundo	_
+4	político	político	ADJ	_	Gender=Masc|Number=Sing	3	amod	3:amod	_
+5	Javier	Javier	PROPN	_	_	3	nmod	3:nmod	_
+6	Sajuria	Sajuria	PROPN	_	_	5	flat:name	5:flat:name	SpaceAfter=No
+7	,	,	PUNCT	_	_	3	punct	3:punct	_
+8	Kast	Kast	PROPN	_	_	11	nsubj	11:nsubj|12:nsubj	_
+9	e	e	CCONJ	_	_	10	cc	10:cc	_
+10	Boric	Boric	PROPN	_	_	8	conj	8:conj:e|11:nsubj|12:nsubj	_
+11	devem	dever	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+12	ir	ir	VERB	_	VerbForm=Inf	11	xcomp	11:xcomp	_
+13	para	para	ADP	_	_	16	case	16:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+15	segundo	segundo	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	16	amod	16:amod	_
+16	turno	turno	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:para|22:obl	SpaceAfter=No
+17	,	,	PUNCT	_	_	22	punct	22:punct	_
+18	onde	onde	ADV	_	_	22	advmod	16:ref	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	vencedor	vencedor	NOUN	_	Gender=Masc|Number=Sing	22	nsubj	22:nsubj	_
+21	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	22	cop	22:cop	_
+22	aquele	aquele	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	16	acl:relcl	16:acl:relcl	_
+23	com	com	ADP	_	_	25	case	25:case	_
+24	menor	menor	ADJ	_	Number=Sing	25	amod	25:amod	_
+25	rejeição	rejeição	NOUN	_	Gender=Fem|Number=Sing	22	nmod	22:nmod:com	SpaceAfter=No
+26	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0051
+# text = O voto contra Kast é provável, mas Boric também enfrenta resistência devido ao apoio do Partido Comunista.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	voto	voto	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+3	contra	contra	ADP	_	_	4	case	4:case	_
+4	Kast	Kast	PROPN	_	_	2	nmod	2:nmod:contra	_
+5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+6	provável	provável	ADJ	_	Number=Sing	0	root	0:root	SpaceAfter=No
+7	,	,	PUNCT	_	_	11	punct	11:punct	_
+8	mas	mas	CCONJ	_	_	11	cc	11:cc	_
+9	Boric	Boric	PROPN	_	_	11	nsubj	11:nsubj	_
+10	também	também	ADV	_	_	11	advmod	11:advmod	_
+11	enfrenta	enfrentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	6:conj:mas	_
+12	resistência	resistência	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	_
+13	devido	dever	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	11	advcl	11:advcl	_
+14-15	ao	_	_	_	_	_	_	_	_
+14	a	a	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	apoio	apoio	NOUN	_	Gender=Masc|Number=Sing	13	obl	13:obl:a	_
+17-18	do	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	Partido	Partido	PROPN	_	_	16	nmod	16:nmod:de	_
+20	Comunista	Comunista	PROPN	_	_	19	flat:name	19:flat:name	SpaceAfter=No
+21	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0053
+# text = A direita pode se aproveitar disso, afirma Sajuria.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	direita	direita	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj|5:nsubj	_
+3	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	ccomp:speech	9:ccomp:speech	_
+4	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	5	expl	5:expl	_
+5	aproveitar	aproveitar	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+6-7	disso	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	5	obl	5:obl:de	_
+8	,	,	PUNCT	_	_	3	punct	3:punct	_
+9	afirma	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+10	Sajuria	Sajuria	PROPN	_	_	9	nsubj	9:nsubj	SpaceAfter=No
+11	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0055
+# text = A democracia chilena, após a ditadura de Augusto Pinochet, teve governos moderados que agora enfrentam um cenário polarizado.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	democracia	democracia	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	12:nsubj	_
+3	chilena	chileno	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	SpaceAfter=No
+4	,	,	PUNCT	_	_	7	punct	7:punct	_
+5	após	após	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	ditadura	ditadura	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl:após	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	Augusto	Augusto	PROPN	_	_	7	nmod	7:nmod:de	_
+10	Pinochet	Pinochet	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+11	,	,	PUNCT	_	_	7	punct	7:punct	_
+12	teve	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+13	governos	governo	NOUN	_	Gender=Masc|Number=Plur	12	obj	12:obj|17:nsubj	_
+14	moderados	moderado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	13	amod	13:amod	_
+15	que	que	PRON	_	PronType=Rel	17	nsubj	13:ref	_
+16	agora	agora	ADV	_	_	17	advmod	17:advmod	_
+17	enfrentam	enfrentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	acl:relcl	13:acl:relcl	_
+18	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	cenário	cenário	NOUN	_	Gender=Masc|Number=Sing	17	obj	17:obj	_
+20	polarizado	polarizado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	19	amod	19:amod	SpaceAfter=No
+21	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0057
+# text = "Anos de governos da Concertación trouxeram desgaste e questionamentos ao modelo econômico liberal", diz Sajuria.
+1	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+2	Anos	ano	NOUN	_	Gender=Masc|Number=Plur	8	nsubj	8:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	governos	governo	NOUN	_	Gender=Masc|Number=Plur	2	nmod	2:nmod:de	_
+5-6	da	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	Concertación	Concertación	PROPN	_	_	4	nmod	4:nmod:de	_
+8	trouxeram	trazer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	19	ccomp:speech	19:ccomp:speech	_
+9	desgaste	desgaste	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	questionamentos	questionamento	NOUN	_	Gender=Masc|Number=Plur	9	conj	8:obj|9:conj:e	_
+12-13	ao	_	_	_	_	_	_	_	_
+12	a	a	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	modelo	modelo	NOUN	_	Number=Sing	8	obl	8:obl:a	_
+15	econômico	econômico	ADJ	_	Gender=Masc|Number=Sing	14	amod	14:amod	_
+16	liberal	liberal	ADJ	_	Number=Sing	14	amod	14:amod	SpaceAfter=No
+17	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+18	,	,	PUNCT	_	_	8	punct	8:punct	_
+19	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+20	Sajuria	Sajuria	PROPN	_	_	19	nsubj	19:nsubj	SpaceAfter=No
+21	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0059
+# text = Por fim, embora o próximo presidente não participe diretamente da elaboração da nova constituição, ele poderá influenciar significativamente a votação e implementação das reformas necessárias.
+1	Por	por	ADP	_	_	2	case	2:case	_
+2	fim	fim	NOUN	_	Gender=Masc|Number=Sing	20	obl	20:obl:por	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	embora	embora	SCONJ	_	_	9	mark	9:mark	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+6	próximo	próximo	ADJ	_	Gender=Masc|Number=Sing	7	amod	7:amod	_
+7	presidente	presidente	NOUN	_	Number=Sing	9	nsubj	9:nsubj	_
+8	não	não	ADV	_	_	9	advmod	9:advmod	_
+9	participe	participar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	advcl	20:advcl:embora	_
+10	diretamente	diretamente	ADV	_	_	9	advmod	9:advmod	_
+11-12	da	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	elaboração	elaboração	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:de	_
+14-15	da	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	17	case	17:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+16	nova	novo	ADJ	_	Gender=Fem|Number=Sing	17	amod	17:amod	_
+17	constituição	constituição	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:de	SpaceAfter=No
+18	,	,	PUNCT	_	_	9	punct	9:punct	_
+19	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	20	nsubj	20:nsubj|21:nsubj	_
+20	poderá	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+21	influenciar	influenciar	VERB	_	VerbForm=Inf	20	xcomp	20:xcomp	_
+22	significativamente	significativamente	ADV	_	_	21	advmod	21:advmod	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	votação	votação	NOUN	_	Gender=Fem|Number=Sing	21	obj	21:obj	_
+25	e	e	CCONJ	_	_	26	cc	26:cc	_
+26	implementação	implementação	NOUN	_	Gender=Fem|Number=Sing	24	conj	21:obj|24:conj:e	_
+27-28	das	_	_	_	_	_	_	_	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	29	det	29:det	_
+29	reformas	reforma	NOUN	_	Gender=Fem|Number=Plur	24	nmod	24:nmod:de|26:nmod:de	_
+30	necessárias	necessário	ADJ	_	Gender=Fem|Number=Plur	29	amod	29:amod	SpaceAfter=No
+31	.	.	PUNCT	_	_	20	punct	20:punct	_
+
+# sent_id = S0061
+# text = Kast já declarou que, se desagradado, não hesitará em agir.
+1	Kast	Kast	PROPN	_	_	3	nsubj	3:nsubj	_
+2	já	já	ADV	_	_	3	advmod	3:advmod	_
+3	declarou	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	10	mark	10:mark	SpaceAfter=No
+5	,	,	PUNCT	_	_	7	punct	7:punct	_
+6	se	se	SCONJ	_	_	7	mark	7:mark	_
+7	desagradado	desagradado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	10	advcl	10:advcl:se	SpaceAfter=No
+8	,	,	PUNCT	_	_	7	punct	7:punct	_
+9	não	não	ADV	_	_	10	advmod	10:advmod	_
+10	hesitará	hesitar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	ccomp	3:ccomp	_
+11	em	em	ADP	_	_	12	mark	12:mark	_
+12	agir	agir	VERB	_	VerbForm=Inf	10	xcomp	10:xcomp	SpaceAfter=No
+13	.	.	PUNCT	_	_	3	punct	3:punct	_

@@ -1,0 +1,100 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Faustão detona governo Michel Temer: "Essa por#$ de governo mal começou e não entende nada".
+1	Faustão	Faustão	PROPN	_	_	2	nsubj	2:nsubj	_
+2	detona	detonar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	governo	governo	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+4	Michel	Michel	PROPN	_	_	3	nmod	3:nmod	_
+5	Temer	Temer	PROPN	_	_	4	flat:name	4:flat:name	SpaceAfter=No
+6	:	:	PUNCT	_	_	13	punct	13:punct	_
+7	"	"	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+8	Essa	esse	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	13	nsubj	13:nsubj|16:nsubj	_
+9	por#$	por#$	SYM	_	_	8	nmod	8:nmod	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	governo	governo	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:de	_
+12	mal	mal	ADV	_	_	13	advmod	13:advmod	_
+13	começou	começar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	ccomp:speech	2:ccomp:speech	_
+14	e	e	CCONJ	_	_	16	cc	16:cc	_
+15	não	não	ADV	_	_	16	advmod	16:advmod	_
+16	entende	entender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	conj	2:ccomp:speech|13:conj:e	_
+17	nada	nada	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	16	obj	16:obj	SpaceAfter=No
+18	"	"	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+19	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Essa por#$ de governo mal começou e não sabe se comunicar.
+1	Essa	esse	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	6	nsubj	6:nsubj|9:nsubj|11:nsubj	_
+2	por#$	por#$	SYM	_	_	1	nmod	1:nmod	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	governo	governo	NOUN	_	Gender=Masc|Number=Sing	1	nmod	1:nmod:de	_
+5	mal	mal	ADV	_	_	6	advmod	6:advmod	_
+6	começou	começar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	e	e	CCONJ	_	_	9	cc	9:cc	_
+8	não	não	ADV	_	_	9	advmod	9:advmod	_
+9	sabe	saber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	6:conj:e	_
+10	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	11	expl	11:expl	_
+11	comunicar	comunicar	VERB	_	VerbForm=Inf	9	xcomp	9:xcomp	SpaceAfter=No
+12	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0005
+# text = O apresentador Fausto Silva deu sua opinião sobre a reforma do ensino médio, que está sendo planejada pelo governo Michel Temer: "O país que mais precisa de educação faz uma reforma com cinco gatos pingados [...] que não entendem por#@ nenhuma [...] não consultam ninguém".
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	apresentador	apresentador	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+3	Fausto	Fausto	PROPN	_	_	2	nmod	2:nmod	_
+4	Silva	Silva	PROPN	_	_	3	flat:name	3:flat:name	_
+5	deu	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	7	det	7:det	_
+7	opinião	opinião	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+8	sobre	sobre	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	reforma	reforma	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:sobre|19:nsubj:pass	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	ensino	ensino	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:de	_
+14	médio	médio	ADJ	_	Gender=Masc|Number=Sing	13	amod	13:amod	SpaceAfter=No
+15	,	,	PUNCT	_	_	19	punct	19:punct	_
+16	que	que	PRON	_	PronType=Rel	19	nsubj:pass	10:ref	_
+17	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux	19:aux	_
+18	sendo	ser	AUX	_	VerbForm=Ger	19	aux:pass	19:aux:pass	_
+19	planejada	planejar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	10	acl:relcl	10:acl:relcl	_
+20-21	pelo	_	_	_	_	_	_	_	_
+20	por	por	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	governo	governo	NOUN	_	Gender=Masc|Number=Sing	19	obl:agent	19:obl:agent	_
+23	Michel	Michel	PROPN	_	_	22	nmod	22:nmod	_
+24	Temer	Temer	PROPN	_	_	23	flat:name	23:flat:name	SpaceAfter=No
+25	:	:	PUNCT	_	_	34	punct	34:punct	_
+26	"	"	PUNCT	_	_	34	punct	34:punct	SpaceAfter=No
+27	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	país	país	NOUN	_	Gender=Masc|Number=Sing	34	nsubj	31:nsubj|34:nsubj	_
+29	que	que	PRON	_	PronType=Rel	31	nsubj	28:ref	_
+30	mais	mais	ADV	_	_	31	advmod	31:advmod	_
+31	precisa	precisar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	acl:relcl	28:acl:relcl	_
+32	de	de	ADP	_	_	33	case	33:case	_
+33	educação	educação	NOUN	_	Gender=Fem|Number=Sing	31	obl	31:obl:de	_
+34	faz	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	ccomp	5:ccomp	_
+35	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	36	det	36:det	_
+36	reforma	reforma	NOUN	_	Gender=Fem|Number=Sing	34	obj	34:obj	_
+37	com	com	ADP	_	_	39	case	39:case	_
+38	cinco	cinco	NUM	_	NumType=Card	39	nummod	39:nummod	_
+39	gatos	gato	NOUN	_	Gender=Masc|Number=Plur	34	obl	34:obl:com|47:nsubj	_
+40	pingados	pingado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	39	amod	39:amod	_
+41	[	[	PUNCT	_	_	42	punct	42:punct	SpaceAfter=No
+42	.	.	PUNCT	_	_	47	appos	47:appos	SpaceAfter=No
+43	..	..	PUNCT	_	_	42	punct	42:punct	SpaceAfter=No
+44	]	]	PUNCT	_	_	42	punct	42:punct	_
+45	que	que	PRON	_	PronType=Rel	47	nsubj	39:ref	_
+46	não	não	ADV	_	_	47	advmod	47:advmod	_
+47	entendem	entender	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	39	acl:relcl	39:acl:relcl	_
+48	por#@	por#@	SYM	_	_	47	obj	47:obj	_
+49	nenhuma	nenhum	DET	_	Gender=Fem|Number=Sing|PronType=Ind	48	det	48:det	_
+50	[	[	PUNCT	_	_	55	punct	55:punct	SpaceAfter=No
+51	.	.	PUNCT	_	_	55	parataxis	55:parataxis	SpaceAfter=No
+52	..	..	PUNCT	_	_	51	punct	51:punct	SpaceAfter=No
+53	]	]	PUNCT	_	_	51	punct	51:punct	_
+54	não	não	ADV	_	_	55	advmod	55:advmod	_
+55	consultam	consultar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	39	conj	34:advcl:com|39:conj	_
+56	ninguém	ninguém	PRON	_	Number=Sing|PronType=Ind	55	obj	55:obj	SpaceAfter=No
+57	"	"	PUNCT	_	_	34	punct	34:punct	SpaceAfter=No
+58	.	.	PUNCT	_	_	5	punct	5:punct	_

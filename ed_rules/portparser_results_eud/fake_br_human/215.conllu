@@ -1,0 +1,118 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Governo vai aumentar salário de servidores públicos!
+1	Governo	Governo	PROPN	_	_	3	nsubj	3:nsubj	_
+2	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux	3:aux	_
+3	aumentar	aumentar	VERB	_	VerbForm=Inf	0	root	0:root	_
+4	salário	salário	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	servidores	servidor	NOUN	_	Gender=Masc|Number=Plur	4	nmod	4:nmod:de	_
+7	públicos	público	ADJ	_	Gender=Masc|Number=Plur	6	amod	6:amod	SpaceAfter=No
+8	!	!	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = Reajuste.
+1	Reajuste	reajuste	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+2	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0005
+# text = Michel Temer aprovou a medida provisória que são as leis que trazem reajuste aos servidores públicos, a remuneração dos servidores acontecera em escalas entre esse ano 2017, até 2019.
+1	Michel	Michel	PROPN	_	_	3	nsubj	3:nsubj	_
+2	Temer	Temer	PROPN	_	_	1	flat:name	1:flat:name	_
+3	aprovou	aprovar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	medida	medida	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj|10:nsubj	_
+6	provisória	provisório	ADJ	_	Gender=Fem|Number=Sing	5	amod	5:amod	_
+7	que	que	PRON	_	PronType=Rel	10	nsubj	5:ref	_
+8	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_
+9	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	10:det	_
+10	leis	lei	NOUN	_	Gender=Fem|Number=Plur	5	acl:relcl	5:acl:relcl|12:nsubj	_
+11	que	que	PRON	_	PronType=Rel	12	nsubj	10:ref	_
+12	trazem	trazer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	acl:relcl	10:acl:relcl	_
+13	reajuste	reajuste	NOUN	_	Gender=Masc|Number=Sing	12	obj	12:obj	_
+14-15	aos	_	_	_	_	_	_	_	_
+14	a	a	ADP	_	_	16	case	16:case	_
+15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	16:det	_
+16	servidores	servidor	NOUN	_	Gender=Masc|Number=Plur	12	obl	12:obl:a	_
+17	públicos	público	ADJ	_	Gender=Masc|Number=Plur	16	amod	16:amod	SpaceAfter=No
+18	,	,	PUNCT	_	_	24	punct	24:punct	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	remuneração	remuneração	NOUN	_	Gender=Fem|Number=Sing	24	nsubj	24:nsubj	_
+21-22	dos	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	23:det	_
+23	servidores	servidor	NOUN	_	Gender=Masc|Number=Plur	20	nmod	20:nmod:de	_
+24	acontecera	acontecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pqp|VerbForm=Fin	10	parataxis	10:parataxis	_
+25	em	em	ADP	_	_	26	case	26:case	_
+26	escalas	escala	NOUN	_	Gender=Fem|Number=Plur	24	obl	24:obl:em	_
+27	entre	entre	ADP	_	_	29	case	29:case	_
+28	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	29	det	29:det	_
+29	ano	ano	NOUN	_	Gender=Masc|Number=Sing	26	nmod	26:nmod:entre	_
+30	2017	2017	NUM	_	NumType=Card	29	nmod	29:nmod	SpaceAfter=No
+31	,	,	PUNCT	_	_	33	punct	33:punct	_
+32	até	até	ADP	_	_	33	case	33:case	_
+33	2019	2019	NUM	_	NumType=Card	30	conj	29:nmod:até|30:conj	SpaceAfter=No
+34	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = Abrange todos os servidores públicos.
+1	Abrange	abranger	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Ind	4	det	4:det	_
+3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	4:det	_
+4	servidores	servidor	NOUN	_	Gender=Masc|Number=Plur	1	obj	1:obj	_
+5	públicos	público	ADJ	_	Gender=Masc|Number=Plur	4	amod	4:amod	SpaceAfter=No
+6	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0009
+# text = No caso de servidores da educação e da saúde o reajuste será concedido entre 20 a 25% até 2019, sendo assim abrangendo cargos comissionados e efetivos.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	caso	caso	NOUN	_	Gender=Masc|Number=Sing	16	obl	16:obl:em	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	servidores	servidor	NOUN	_	Gender=Masc|Number=Plur	3	nmod	3:nmod:de	_
+6-7	da	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	educação	educação	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	_
+9	e	e	CCONJ	_	_	12	cc	12:cc	_
+10-11	da	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	8	conj	5:nmod:de|8:conj:e	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	reajuste	reajuste	NOUN	_	Gender=Masc|Number=Sing	16	nsubj:pass	16:nsubj:pass	_
+15	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	16	aux:pass	16:aux:pass	_
+16	concedido	conceder	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+17	entre	entre	ADP	_	_	18	case	18:case	_
+18	20	20	NUM	_	NumType=Card	16	obl	16:obl:entre	_
+19	a	a	ADP	_	_	20	case	20:case	_
+20	25	25	NUM	_	NumType=Card	21	nummod	21:nummod	SpaceAfter=No
+21	%	%	SYM	_	_	18	nmod	18:nmod	_
+22	até	até	ADP	_	_	23	case	23:case	_
+23	2019	2019	NUM	_	NumType=Card	16	obl	16:obl:até	SpaceAfter=No
+24	,	,	PUNCT	_	_	27	punct	27:punct	_
+25	sendo	ser	AUX	_	VerbForm=Ger	27	cop	27:cop	_
+26	assim	assim	ADV	_	_	27	advmod	27:advmod	_
+27	abrangendo	abranger	VERB	_	VerbForm=Ger	16	advcl	16:advcl	_
+28	cargos	cargo	NOUN	_	Gender=Masc|Number=Plur	27	obj	27:obj	_
+29	comissionados	comissionado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	28	amod	28:amod	_
+30	e	e	CCONJ	_	_	31	cc	31:cc	_
+31	efetivos	efetivo	ADJ	_	Gender=Masc|Number=Plur	29	conj	28:amod|29:conj:e	SpaceAfter=No
+32	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0011
+# text = O aumento implicara 3,8bilhões nos cofres públicos entre esse periodo.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	aumento	aumento	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	implicara	implicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pqp|VerbForm=Fin	0	root	0:root	_
+4	3,8bilhões	3,8bilhões	NOUN	_	_	3	obj	3:obj	_
+5-6	nos	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	7:det	_
+7	cofres	cofre	NOUN	_	Gender=Masc|Number=Plur	3	obl	3:obl:em	_
+8	públicos	público	ADJ	_	Gender=Masc|Number=Plur	7	amod	7:amod	_
+9	entre	entre	ADP	_	_	11	case	11:case	_
+10	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	11	det	11:det	_
+11	periodo	periodo	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:entre	SpaceAfter=No
+12	.	.	PUNCT	_	_	3	punct	3:punct	_

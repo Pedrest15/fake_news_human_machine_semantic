@@ -1,0 +1,540 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = MAIS ESTELIONATO?
+1	MAIS	mais	DET	_	PronType=Ind	2	det	2:det	_
+2	ESTELIONATO	estelionato	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+3	?	?	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Dilma publica vídeo e usa "falsa pobre" para fazer publicidade.
+1	Dilma	Dilma	PROPN	_	_	2	nsubj	2:nsubj|5:nsubj	_
+2	publica	publicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+4	e	e	CCONJ	_	_	5	cc	5:cc	_
+5	usa	usar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:e	_
+6	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+7	falsa	falso	ADJ	_	Gender=Fem|Number=Sing	8	amod	8:amod	_
+8	pobre	pobre	NOUN	_	Number=Sing	5	obj	5:obj	SpaceAfter=No
+9	"	"	PUNCT	_	_	8	punct	8:punct	_
+10	para	para	ADP	_	_	11	mark	11:mark	_
+11	fazer	fazer	VERB	_	VerbForm=Inf	5	advcl	5:advcl:para	_
+12	publicidade	publicidade	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	SpaceAfter=No
+13	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = Depois que o marqueteiro do PT foi enjaulado pelo juiz Sérgio Moro, a presidente afastada Dilma Rousseff perdeu o rumo.
+1	Depois	depois	ADV	_	ExtPos=SCONJ	9	mark	9:mark	_
+2	que	que	SCONJ	_	_	1	fixed	1:fixed	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	marqueteiro	marqueteiro	NOUN	_	Gender=Masc|Number=Sing	9	nsubj:pass	9:nsubj:pass	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	PT	PT	PROPN	_	_	4	nmod	4:nmod:de	_
+8	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	aux:pass	9:aux:pass	_
+9	enjaulado	enjaular	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	21	advcl	21:advcl:depois_que	_
+10-11	pelo	_	_	_	_	_	_	_	_
+10	por	por	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	juiz	juiz	NOUN	_	Gender=Masc|Number=Sing	9	obl:agent	9:obl:agent	_
+13	Sérgio	Sérgio	PROPN	_	_	12	nmod	12:nmod	_
+14	Moro	Moro	PROPN	_	_	13	flat:name	13:flat:name	SpaceAfter=No
+15	,	,	PUNCT	_	_	9	punct	9:punct	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	presidente	presidente	NOUN	_	Number=Sing	21	nsubj	21:nsubj	_
+18	afastada	afastado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	17	amod	17:amod	_
+19	Dilma	Dilma	PROPN	_	_	17	nmod	17:nmod	_
+20	Rousseff	Rousseff	PROPN	_	_	19	flat:name	19:flat:name	_
+21	perdeu	perder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	rumo	rumo	NOUN	_	Gender=Masc|Number=Sing	21	obj	21:obj	SpaceAfter=No
+24	.	.	PUNCT	_	_	21	punct	21:punct	_
+
+# sent_id = S0007
+# text = Aliás, não foi só o rumo que Dilma perdeu.
+1	Aliás	aliás	ADV	_	_	7	advmod	7:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	não	não	ADV	_	_	7	advmod	7:advmod	_
+4	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	cop	7:cop	_
+5	só	só	ADV	_	_	7	advmod	7:advmod	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	rumo	rumo	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root|10:obj	_
+8	que	que	PRON	_	PronType=Rel	10	obj	7:ref	_
+9	Dilma	Dilma	PROPN	_	_	10	nsubj	10:nsubj	_
+10	perdeu	perder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	acl:relcl	7:acl:relcl	SpaceAfter=No
+11	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0009
+# text = A petista também perdeu o bom senso e a vergonha.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	petista	petista	NOUN	_	Number=Sing	4	nsubj	4:nsubj	_
+3	também	também	ADV	_	_	4	advmod	4:advmod	_
+4	perdeu	perder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+6	bom	bom	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7	senso	senso	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+8	e	e	CCONJ	_	_	10	cc	10:cc	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	vergonha	vergonha	NOUN	_	Gender=Fem|Number=Sing	7	conj	4:obj|7:conj:e	SpaceAfter=No
+11	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0011
+# text = Continua enganando os brasileiros.
+1	Continua	continuar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	enganando	enganar	VERB	_	VerbForm=Ger	1	xcomp	1:xcomp	_
+3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	4:det	_
+4	brasileiros	brasileiro	NOUN	_	Gender=Masc|Number=Plur	2	obj	2:obj	SpaceAfter=No
+5	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0013
+# text = Uma farsa foi descoberta durante essa semana.
+1	Uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	farsa	farsa	NOUN	_	Gender=Fem|Number=Sing	4	nsubj:pass	4:nsubj:pass	_
+3	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	descoberta	descobrir	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5	durante	durante	ADP	_	_	7	case	7:case	_
+6	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	7	det	7:det	_
+7	semana	semana	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:durante	SpaceAfter=No
+8	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0015
+# text = A nova equipe de marketing e publicidade de Dilma Rousseff "pisou no tomate" ao tentar melhorar a imagem da petista.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+2	nova	novo	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+3	equipe	equipe	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	12:nsubj	_
+4	de	de	ADP	_	_	5	case	5:case|7:case	_
+5	marketing	marketing	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	publicidade	publicidade	NOUN	_	Gender=Fem|Number=Sing	5	conj	3:nmod:de|5:conj:e	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	Dilma	Dilma	PROPN	_	_	5	nmod	5:nmod:de|7:nmod:de	_
+10	Rousseff	Rousseff	PROPN	_	_	9	flat:name	9:flat:name	_
+11	"	"	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+12	pisou	pisar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+13-14	no	_	_	_	_	_	_	_	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	tomate	tomate	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:em	SpaceAfter=No
+16	"	"	PUNCT	_	_	12	punct	12:punct	_
+17-18	ao	_	_	_	_	_	_	_	_
+17	a	a	ADP	_	ExtPos=SCONJ	19	mark	19:mark	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	fixed	17:fixed	_
+19	tentar	tentar	VERB	_	VerbForm=Inf	12	advcl	12:advcl:a_o	_
+20	melhorar	melhorar	VERB	_	VerbForm=Inf	19	xcomp	19:xcomp	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	imagem	imagem	NOUN	_	Gender=Fem|Number=Sing	20	obj	20:obj	_
+23-24	da	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	petista	petista	NOUN	_	Number=Sing	22	nmod	22:nmod:de	SpaceAfter=No
+26	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0017
+# text = Em sua página oficial no Facebook, a equipe de Dilma postou um vídeo dizendo: "Uma família viajou mais de 10 horas de barco para se encontrar com a presidenta Dilma, em Santarém (PA), e agradecer todas as melhorias que o governo dela possibilitou em sua comunidade" *** assista rápido antes que os publicitários de Dilma excluam o vídeo *** O vídeo chega a ser comovente.
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	3	det	3:det	_
+3	página	página	NOUN	_	Gender=Fem|Number=Sing	13	obl	13:obl:em	_
+4	oficial	oficial	ADJ	_	Number=Sing	3	amod	3:amod	_
+5-6	no	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Facebook	Facebook	PROPN	_	_	3	nmod	3:nmod:em	SpaceAfter=No
+8	,	,	PUNCT	_	_	3	punct	3:punct	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	equipe	equipe	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	13:nsubj	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	Dilma	Dilma	PROPN	_	_	10	nmod	10:nmod:de	_
+13	postou	postar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	13	obj	13:obj	_
+16	dizendo	dizer	VERB	_	VerbForm=Ger	15	acl	15:acl	SpaceAfter=No
+17	:	:	PUNCT	_	_	21	punct	21:punct	_
+18	"	"	PUNCT	_	_	21	punct	21:punct	SpaceAfter=No
+19	Uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	família	família	NOUN	_	Gender=Fem|Number=Sing	21	nsubj	21:nsubj	_
+21	viajou	viajar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	ccomp:speech	13:ccomp:speech	_
+22	mais	mais	ADV	_	ExtPos=ADV	24	advmod	24:advmod	_
+23	de	de	ADP	_	_	22	fixed	22:fixed	_
+24	10	10	NUM	_	NumType=Card	25	nummod	25:nummod	_
+25	horas	hora	NOUN	_	Gender=Fem|Number=Plur	21	obj	21:obj	_
+26	de	de	ADP	_	_	27	case	27:case	_
+27	barco	barco	NOUN	_	Gender=Masc|Number=Sing	25	nmod	25:nmod:de	_
+28	para	para	ADP	_	_	30	mark	30:mark|43:mark	_
+29	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	30	expl	30:expl	_
+30	encontrar	encontrar	VERB	_	VerbForm=Inf	21	advcl	21:advcl:para	_
+31	com	com	ADP	_	_	33	case	33:case	_
+32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	33:det	_
+33	presidenta	presidenta	NOUN	_	Gender=Fem|Number=Sing	30	obl	30:obl:com	_
+34	Dilma	Dilma	PROPN	_	_	33	nmod	33:nmod	SpaceAfter=No
+35	,	,	PUNCT	_	_	37	punct	37:punct	_
+36	em	em	ADP	_	_	37	case	37:case	_
+37	Santarém	Santarém	PROPN	_	_	30	obl	30:obl:em	_
+38	(	(	PUNCT	_	_	39	punct	39:punct	SpaceAfter=No
+39	PA	PA	PROPN	_	_	37	parataxis	37:parataxis	SpaceAfter=No
+40	)	)	PUNCT	_	_	39	punct	39:punct	SpaceAfter=No
+41	,	,	PUNCT	_	_	43	punct	43:punct	_
+42	e	e	CCONJ	_	_	43	cc	43:cc	_
+43	agradecer	agradecer	VERB	_	VerbForm=Inf	30	conj	21:advcl:para|30:conj:e	_
+44	todas	todo	DET	_	Gender=Fem|Number=Plur|PronType=Ind	46	det	46:det	_
+45	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	46	det	46:det	_
+46	melhorias	melhoria	NOUN	_	Gender=Fem|Number=Plur	43	obj	43:obj|52:obj	_
+47	que	que	PRON	_	PronType=Rel	52	obj	46:ref	_
+48	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	49	det	49:det	_
+49	governo	governo	NOUN	_	Gender=Masc|Number=Sing	52	nsubj	52:nsubj	_
+50-51	dela	_	_	_	_	_	_	_	_
+50	de	de	ADP	_	_	51	case	51:case	_
+51	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	49	nmod	49:nmod:de	_
+52	possibilitou	possibilitar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	46	acl:relcl	46:acl:relcl	_
+53	em	em	ADP	_	_	55	case	55:case	_
+54	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	55	det	55:det	_
+55	comunidade	comunidade	NOUN	_	Gender=Fem|Number=Sing	52	obl	52:obl:em	SpaceAfter=No
+56	"	"	PUNCT	_	_	21	punct	21:punct	_
+57	*	*	PUNCT	_	_	60	punct	60:punct	SpaceAfter=No
+58	*	*	PUNCT	_	_	60	punct	60:punct	SpaceAfter=No
+59	*	*	PUNCT	_	_	60	punct	60:punct	_
+60	assista	assistir	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	13	parataxis	13:parataxis	_
+61	rápido	rápido	ADV	_	_	60	advmod	60:advmod	_
+62	antes	antes	ADV	_	ExtPos=SCONJ	68	mark	68:mark	_
+63	que	que	SCONJ	_	_	62	fixed	62:fixed	_
+64	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	65	det	65:det	_
+65	publicitários	publicitário	NOUN	_	Gender=Masc|Number=Plur	68	nsubj	68:nsubj	_
+66	de	de	ADP	_	_	67	case	67:case	_
+67	Dilma	Dilma	PROPN	_	_	65	nmod	65:nmod:de	_
+68	excluam	excluir	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	60	advcl	60:advcl:antes_que	_
+69	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	70	det	70:det	_
+70	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	68	obj	68:obj	_
+71	*	*	PUNCT	_	_	60	punct	60:punct	SpaceAfter=No
+72	*	*	PUNCT	_	_	60	punct	60:punct	SpaceAfter=No
+73	*	*	PUNCT	_	_	60	punct	60:punct	_
+74	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	75	det	75:det	_
+75	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	76	nsubj	76:nsubj|79:nsubj	_
+76	chega	chegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	dep	13:dep	_
+77	a	a	ADP	_	_	79	mark	79:mark	_
+78	ser	ser	AUX	_	VerbForm=Inf	79	cop	79:cop	_
+79	comovente	comovente	ADJ	_	Number=Sing	76	xcomp	76:xcomp	SpaceAfter=No
+80	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0019
+# text = Uma mulher extremamente emocionada agrade Dilma por tudo que ela fez, lhe entrega um buquê de rosas e diz: Eu vim porque eu tenho necessidade de agradecer as mil e quinhentas casas que você mandou para a gente, as escolas técnicas (choro), a UPA, as duas creches, o dinheiro para ampliação da nossa rede de água, o nosso terminal hidroviário que você tá concluindo (sic), e que ninguém, nenhum presidente fez por Oriximiná em tão pouco tempo que você fez.
+1	Uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	mulher	mulher	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj|14:nsubj|20:nsubj	_
+3	extremamente	extremamente	ADV	_	_	4	advmod	4:advmod	_
+4	emocionada	emocionado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	2	amod	2:amod	_
+5	agrade	agradar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	Dilma	Dilma	PROPN	_	_	5	obj	5:obj	_
+7	por	por	ADP	_	_	8	case	8:case|69:case	_
+8	tudo	tudo	PRON	_	PronType=Ind	5	obl	5:obl:por|11:obj	_
+9	que	que	PRON	_	PronType=Rel	11	obj	8:ref	_
+10	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	11	nsubj	11:nsubj	_
+11	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	acl:relcl	8:acl:relcl	SpaceAfter=No
+12	,	,	PUNCT	_	_	14	punct	14:punct	_
+13	lhe	lhe	PRON	_	Case=Dat|Number=Sing|Person=3|PronType=Prs	14	iobj	14:iobj	_
+14	entrega	entregar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	5:conj:e	_
+15	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	buquê	buquê	NOUN	_	Gender=Masc|Number=Sing	14	obj	14:obj	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	rosas	rosa	NOUN	_	Gender=Fem|Number=Plur	16	nmod	16:nmod:de	_
+19	e	e	CCONJ	_	_	20	cc	20:cc	_
+20	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	5:conj:e	SpaceAfter=No
+21	:	:	PUNCT	_	_	23	punct	23:punct	_
+22	Eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	23	nsubj	23:nsubj	_
+23	vim	vir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	5	parataxis	5:parataxis	_
+24	porque	porque	SCONJ	_	_	26	mark	26:mark	_
+25	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	26	nsubj	26:nsubj	_
+26	tenho	ter	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	23	advcl	23:advcl:porque	_
+27	necessidade	necessidade	NOUN	_	Gender=Fem|Number=Sing	26	obj	26:obj	_
+28	de	de	ADP	_	_	29	mark	29:mark	_
+29	agradecer	agradecer	VERB	_	VerbForm=Inf	27	acl	27:acl:de	_
+30	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	34	det	34:det	_
+31	mil	mil	NUM	_	NumType=Card	34	nummod	34:nummod	_
+32	e	e	CCONJ	_	_	33	cc	33:cc	_
+33	quinhentas	quinhentos	NUM	_	Gender=Fem|NumType=Card	31	conj	31:conj:e|34:nummod	_
+34	casas	casa	NOUN	_	Gender=Fem|Number=Plur	29	obj	29:obj|37:obj	_
+35	que	que	PRON	_	PronType=Rel	37	obj	34:ref	_
+36	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	37	nsubj	37:nsubj	_
+37	mandou	mandar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	34	acl:relcl	34:acl:relcl	_
+38	para	para	ADP	_	_	40	case	40:case	_
+39	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	40:det	_
+40	gente	gente	NOUN	_	Gender=Fem|Number=Sing	37	obl	37:obl:para	SpaceAfter=No
+41	,	,	PUNCT	_	_	43	punct	43:punct	_
+42	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	43	det	43:det	_
+43	escolas	escola	NOUN	_	Gender=Fem|Number=Plur	34	conj	29:obj|34:conj	_
+44	técnicas	técnico	ADJ	_	Gender=Fem|Number=Plur	43	amod	43:amod	_
+45	(	(	PUNCT	_	_	46	punct	46:punct	SpaceAfter=No
+46	choro	choro	NOUN	_	Gender=Masc|Number=Sing	43	parataxis	43:parataxis	SpaceAfter=No
+47	)	)	PUNCT	_	_	46	punct	46:punct	SpaceAfter=No
+48	,	,	PUNCT	_	_	50	punct	50:punct	_
+49	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	50	det	50:det	_
+50	UPA	UPA	PROPN	_	_	43	conj	29:obj|43:conj:e	SpaceAfter=No
+51	,	,	PUNCT	_	_	54	punct	54:punct	_
+52	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	54	det	54:det	_
+53	duas	dois	NUM	_	Gender=Fem|NumType=Card	54	nummod	54:nummod	_
+54	creches	creche	NOUN	_	Gender=Fem|Number=Plur	43	conj	29:obj|43:conj:e	SpaceAfter=No
+55	,	,	PUNCT	_	_	57	punct	57:punct	_
+56	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	57	det	57:det	_
+57	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	34	conj	29:obj|34:conj	_
+58	para	para	ADP	_	_	59	case	59:case	_
+59	ampliação	ampliação	NOUN	_	Gender=Fem|Number=Sing	57	nmod	57:nmod:para	_
+60-61	da	_	_	_	_	_	_	_	_
+60	de	de	ADP	_	_	63	case	63:case	_
+61	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	63	det	63:det	_
+62	nossa	nosso	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	63	det	63:det	_
+63	rede	rede	NOUN	_	Gender=Fem|Number=Sing	59	nmod	59:nmod:de	_
+64	de	de	ADP	_	_	65	case	65:case	_
+65	água	água	NOUN	_	Gender=Fem|Number=Sing	63	nmod	63:nmod:de	SpaceAfter=No
+66	,	,	PUNCT	_	_	69	punct	69:punct	_
+67	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	69	det	69:det	_
+68	nosso	nosso	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	69	det	69:det	_
+69	terminal	terminal	NOUN	_	Gender=Masc|Number=Sing	8	conj	5:obl:por|8:conj|14:obl:por|20:obl:por|74:obj	_
+70	hidroviário	hidroviário	ADJ	_	Gender=Masc|Number=Sing	69	amod	69:amod	_
+71	que	que	PRON	_	PronType=Rel	74	obj	69:ref	_
+72	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	74	nsubj	74:nsubj	_
+73	tá	estar	AUX	_	Abbr=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	74	aux	74:aux	_
+74	concluindo	concluir	VERB	_	VerbForm=Ger	69	acl:relcl	69:acl:relcl	_
+75	(	(	PUNCT	_	_	76	punct	76:punct	SpaceAfter=No
+76	sic	sic	INTJ	_	_	46	parataxis	46:parataxis	SpaceAfter=No
+77	)	)	PUNCT	_	_	76	punct	76:punct	SpaceAfter=No
+78	,	,	PUNCT	_	_	85	punct	85:punct	_
+79	e	e	CCONJ	_	_	85	cc	85:cc	_
+80	que	que	PRON	_	PronType=Rel	85	obj	85:obj	_
+81	ninguém	ninguém	PRON	_	Number=Sing|PronType=Ind	85	nsubj	85:nsubj	SpaceAfter=No
+82	,	,	PUNCT	_	_	84	punct	84:punct	_
+83	nenhum	nenhum	DET	_	Gender=Masc|Number=Sing|PronType=Ind	84	det	84:det	_
+84	presidente	presidente	NOUN	_	Number=Sing	85	nsubj	85:nsubj	_
+85	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	43	conj	29:obj|43:conj:e	_
+86	por	por	ADP	_	_	87	case	87:case	_
+87	Oriximiná	Oriximiná	PROPN	_	_	85	obl	85:obl:por	_
+88	em	em	ADP	_	_	91	case	91:case	_
+89	tão	tão	ADV	_	_	90	advmod	90:advmod	_
+90	pouco	pouco	ADJ	_	Gender=Masc|Number=Sing	91	amod	91:amod	_
+91	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	85	obl	85:obl:em|94:obj	_
+92	que	que	PRON	_	PronType=Rel	94	obj	91:ref	_
+93	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	94	nsubj	94:nsubj	_
+94	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	91	acl:relcl	91:acl:relcl	SpaceAfter=No
+95	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0021
+# text = Muito obrigado (choro forte), muito obrigado!
+1	Muito	muito	ADV	_	_	2	advmod	2:advmod	_
+2	obrigado	obrigado	INTJ	_	Gender=Masc|Number=Sing	0	root	0:root	_
+3	(	(	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+4	choro	choro	NOUN	_	Gender=Masc|Number=Sing	2	parataxis	2:parataxis	_
+5	forte	forte	ADJ	_	Number=Sing	4	amod	4:amod	SpaceAfter=No
+6	)	)	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+7	,	,	PUNCT	_	_	9	punct	9:punct	_
+8	muito	muito	ADV	_	_	9	advmod	9:advmod	_
+9	obrigado	obrigado	INTJ	_	Gender=Masc|Number=Sing	2	conj	2:conj	SpaceAfter=No
+10	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0023
+# text = Eu te amo!
+1	Eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	3:nsubj	_
+2	te	te	PRON	_	Case=Acc|Number=Sing|Person=2|PronType=Prs	3	obj	3:obj	_
+3	amo	amar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+4	!	!	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0025
+# text = Resista por nós!
+1	Resista	resistir	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	por	por	ADP	_	_	3	case	3:case	_
+3	nós	nós	PRON	_	Case=Nom|Number=Plur|Person=1|PronType=Prs	1	obl	1:obl:por	SpaceAfter=No
+4	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0027
+# text = Resista por nós!
+1	Resista	resistir	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	por	por	ADP	_	_	3	case	3:case	_
+3	nós	nós	PRON	_	Case=Nom|Number=Plur|Person=1|PronType=Prs	1	obl	1:obl:por	SpaceAfter=No
+4	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0029
+# text = A gente vai conseguir!
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	gente	gente	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+3	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	4:aux	_
+4	conseguir	conseguir	VERB	_	VerbForm=Inf	0	root	0:root	SpaceAfter=No
+5	!	!	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0031
+# text = *** detalhe: o buquê viajou de barco por 10 horas e ainda ficou novinho [...] como se tivesse saído da floricultura na mesma hora*** Bom, vamos adiante...o buquê é um mero detalhe.
+1	*	*	PUNCT	_	_	44	punct	44:punct	SpaceAfter=No
+2	*	*	PUNCT	_	_	44	nmod	44:nmod	SpaceAfter=No
+3	*	*	PUNCT	_	_	4	punct	4:punct	_
+4	detalhe	detalhe	NOUN	_	Gender=Masc|Number=Sing	44	parataxis	44:parataxis	SpaceAfter=No
+5	:	:	PUNCT	_	_	4	punct	4:punct	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	buquê	buquê	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	8:nsubj|16:nsubj|17:nsubj	_
+8	viajou	viajar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	44	parataxis	44:parataxis	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	barco	barco	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:de	_
+11	por	por	ADP	_	_	13	case	13:case	_
+12	10	10	NUM	_	NumType=Card	13	nummod	13:nummod	_
+13	horas	hora	NOUN	_	Gender=Fem|Number=Plur	8	obl	8:obl:por	_
+14	e	e	CCONJ	_	_	16	cc	16:cc	_
+15	ainda	ainda	ADV	_	_	16	advmod	16:advmod	_
+16	ficou	ficar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	conj	8:conj:e|44:parataxis	_
+17	novinho	novinho	ADJ	_	Gender=Masc|Number=Sing	16	xcomp	16:xcomp	_
+18	[	[	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+19	.	.	PUNCT	_	_	16	punct	16:punct	SpaceAfter=No
+20	..	..	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+21	]	]	PUNCT	_	_	19	punct	19:punct	_
+22	como	como	SCONJ	_	ExtPos=SCONJ	25	mark	25:mark	_
+23	se	se	SCONJ	_	_	22	fixed	22:fixed	_
+24	tivesse	ter	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	25	aux	25:aux	_
+25	saído	sair	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	16	advcl	16:advcl:como_se	_
+26-27	da	_	_	_	_	_	_	_	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	floricultura	floricultura	NOUN	_	Gender=Fem|Number=Sing	25	obl	25:obl:de	_
+29-30	na	_	_	_	_	_	_	_	_
+29	em	em	ADP	_	_	32	case	32:case	_
+30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	32:det	_
+31	mesma	mesmo	DET	_	Gender=Fem|Number=Sing|PronType=Dem	32	det	32:det	_
+32	hora	hora	NOUN	_	Gender=Fem|Number=Sing	25	obl	25:obl:em	SpaceAfter=No
+33	*	*	PUNCT	_	_	44	punct	44:punct	SpaceAfter=No
+34	*	*	PUNCT	_	_	44	punct	44:punct	SpaceAfter=No
+35	*	*	PUNCT	_	_	38	punct	38:punct	_
+36	Bom	bom	INTJ	_	_	44	discourse	44:discourse	SpaceAfter=No
+37	,	,	PUNCT	_	_	36	punct	36:punct	_
+38	vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	44	parataxis	44:parataxis	_
+39	adiante...o	adiante...o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	40:det	_
+40	buquê	buquê	NOUN	_	Gender=Masc|Number=Sing	44	nsubj	44:nsubj	_
+41	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	44	cop	44:cop	_
+42	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	44	det	44:det	_
+43	mero	mero	ADJ	_	Gender=Masc|Number=Sing	44	amod	44:amod	_
+44	detalhe	detalhe	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+45	.	.	PUNCT	_	_	44	punct	44:punct	_
+
+# sent_id = S0033
+# text = A sra. humilde do vídeo foi descoberta e se trata de Marjorie Calderaro, esposa de um vereador da cidade de Oriximiná, no Pará.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	sra.	senhora	NOUN	_	Abbr=Yes|Gender=Fem|Number=Sing	8	nsubj:pass	8:nsubj:pass|11:nsubj	_
+3	humilde	humilde	ADJ	_	Number=Sing	2	amod	2:amod	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	_
+7	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	aux:pass	8:aux:pass	_
+8	descoberta	descobrir	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+9	e	e	CCONJ	_	_	11	cc	11:cc	_
+10	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	11	expl:impers	11:expl:impers	_
+11	trata	tratar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	conj	8:conj:e	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	Marjorie	Marjorie	PROPN	_	_	11	obl	11:obl:de	_
+14	Calderaro	Calderaro	PROPN	_	_	13	flat:name	13:flat:name	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	esposa	esposo	NOUN	_	Gender=Fem|Number=Sing	13	appos	13:appos	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	vereador	vereador	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod:de	_
+20-21	da	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	cidade	cidade	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:de	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	Oriximiná	Oriximiná	PROPN	_	_	22	nmod	22:nmod:de	SpaceAfter=No
+25	,	,	PUNCT	_	_	28	punct	28:punct	_
+26-27	no	_	_	_	_	_	_	_	_
+26	em	em	ADP	_	_	28	case	28:case	_
+27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	Pará	Pará	PROPN	_	_	22	nmod	22:nmod:em	SpaceAfter=No
+29	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0035
+# text = A "pobre fake" não se atentou aos detalhes e ostenta, em sua página no facebook, fotos de viagens feitas mundo afora: alguns álbuns mostram fotos dela em viagens pelo mundo: Paris, Roma, Suíça.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+2	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+3	pobre	pobre	ADJ	_	Number=Sing	4	amod	4:amod	_
+4	fake	fake	X	_	Foreign=Yes	8	nsubj	8:nsubj|13:nsubj	SpaceAfter=No
+5	"	"	PUNCT	_	_	4	punct	4:punct	_
+6	não	não	ADV	_	_	8	advmod	8:advmod	_
+7	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	8	expl	8:expl	_
+8	atentou	atentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9-10	aos	_	_	_	_	_	_	_	_
+9	a	a	ADP	_	_	11	case	11:case	_
+10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	11:det	_
+11	detalhes	detalhe	NOUN	_	Gender=Masc|Number=Plur	8	obl	8:obl:a	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	ostenta	ostentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	conj	8:conj:e	SpaceAfter=No
+14	,	,	PUNCT	_	_	17	punct	17:punct	_
+15	em	em	ADP	_	_	17	case	17:case	_
+16	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	17	det	17:det	_
+17	página	página	NOUN	_	Gender=Fem|Number=Sing	13	obl	13:obl:em	_
+18-19	no	_	_	_	_	_	_	_	_
+18	em	em	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	facebook	facebook	X	_	Foreign=Yes	17	nmod	17:nmod:em	SpaceAfter=No
+21	,	,	PUNCT	_	_	17	punct	17:punct	_
+22	fotos	foto	NOUN	_	Number=Plur	13	obj	13:obj	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	viagens	viagem	NOUN	_	Gender=Fem|Number=Plur	22	nmod	22:nmod:de	_
+25	feitas	fazer	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	24	acl	24:acl	_
+26	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	25	obl	25:obl	_
+27	afora	afora	ADV	_	_	25	advmod	25:advmod	SpaceAfter=No
+28	:	:	PUNCT	_	_	31	punct	31:punct	_
+29	alguns	algum	DET	_	Gender=Masc|Number=Plur|PronType=Ind	30	det	30:det	_
+30	álbuns	álbum	NOUN	_	Gender=Masc|Number=Plur	31	nsubj	31:nsubj	_
+31	mostram	mostrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	parataxis	8:parataxis	_
+32	fotos	foto	NOUN	_	Number=Plur	31	obj	31:obj	_
+33-34	dela	_	_	_	_	_	_	_	_
+33	de	de	ADP	_	_	34	case	34:case	_
+34	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	32	nmod	32:nmod:de	_
+35	em	em	ADP	_	_	36	case	36:case	_
+36	viagens	viagem	NOUN	_	Gender=Fem|Number=Plur	32	nmod	32:nmod:em	_
+37-38	pelo	_	_	_	_	_	_	_	_
+37	por	por	ADP	_	_	39	case	39:case	_
+38	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	39:det	_
+39	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	36	nmod	36:nmod:por	SpaceAfter=No
+40	:	:	PUNCT	_	_	41	punct	41:punct	_
+41	Paris	Paris	PROPN	_	_	32	parataxis	32:parataxis	SpaceAfter=No
+42	,	,	PUNCT	_	_	43	punct	43:punct	_
+43	Roma	Roma	PROPN	_	_	41	conj	32:parataxis|41:conj	SpaceAfter=No
+44	,	,	PUNCT	_	_	45	punct	45:punct	_
+45	Suíça	Suíça	PROPN	_	_	41	conj	32:parataxis|41:conj	SpaceAfter=No
+46	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0037
+# text = Pô moça!
+1	Pô	pô	INTJ	_	_	2	discourse	2:discourse	_
+2	moça	moço	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+3	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0039
+# text = Comunista se esbaldando em viagens internacionais?
+1	Comunista	comunista	NOUN	_	Number=Sing	0	root	0:root	_
+2	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	3	expl	3:expl	_
+3	esbaldando	esbaldar	VERB	_	VerbForm=Ger	1	acl	1:acl	_
+4	em	em	ADP	_	_	5	case	5:case	_
+5	viagens	viagem	NOUN	_	Gender=Fem|Number=Plur	3	obl	3:obl:em	_
+6	internacionais	internacional	ADJ	_	Number=Plur	5	amod	5:amod	SpaceAfter=No
+7	?	?	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0041
+# text = Isso não combina com os petistas.
+1	Isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	3	nsubj	3:nsubj	_
+2	não	não	ADV	_	_	3	advmod	3:advmod	_
+3	combina	combinar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	com	com	ADP	_	_	6	case	6:case	_
+5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	6:det	_
+6	petistas	petista	NOUN	_	Number=Plur	3	obl	3:obl:com	SpaceAfter=No
+7	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0043
+# text = Petistas são humildes [sic...] não viajam para Paris!
+1	Petistas	petista	NOUN	_	Number=Plur	3	nsubj	3:nsubj	_
+2	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+3	humildes	humilde	ADJ	_	Number=Plur	0	root	0:root	_
+4	[	[	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+5	sic	sic	INTJ	_	_	3	parataxis	3:parataxis	SpaceAfter=No
+6	...	...	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+7	]	]	PUNCT	_	_	5	punct	5:punct	_
+8	não	não	ADV	_	_	9	advmod	9:advmod	_
+9	viajam	viajar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	parataxis	3:parataxis	_
+10	para	para	ADP	_	_	11	case	11:case	_
+11	Paris	Paris	PROPN	_	_	9	obl	9:obl:para	SpaceAfter=No
+12	!	!	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0045
+# text = sic...
+1	sic	sic	INTJ	_	_	0	root	0:root	SpaceAfter=No
+2	...	...	PUNCT	_	_	1	punct	1:punct	_

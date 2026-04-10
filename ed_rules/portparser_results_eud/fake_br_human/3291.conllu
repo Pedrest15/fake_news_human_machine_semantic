@@ -1,0 +1,164 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Morreu no exercício da profissão.
+1	Morreu	morrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2-3	no	_	_	_	_	_	_	_	_
+2	em	em	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	exercício	exercício	NOUN	_	Gender=Masc|Number=Sing	1	obl	1:obl:em	_
+5-6	da	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	profissão	profissão	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:de	SpaceAfter=No
+8	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Em SP, ladrão tenta roubar farmácia, passa mal e morre.
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	SP	SP	PROPN	_	_	5	obl	5:obl:em	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	ladrão	ladrão	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj|6:nsubj|9:nsubj|12:nsubj	_
+5	tenta	tentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	roubar	roubar	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	_
+7	farmácia	farmácia	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	passa	passar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	5:xcomp|6:conj	_
+10	mal	mal	ADV	_	_	9	advmod	9:advmod	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	morre	morrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	5:conj:e	SpaceAfter=No
+13	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0005
+# text = No ultimo domingo (17), um assaltante que tentava tenta roubar uma farmácia, bateu as botas.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	4	case	4:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+3	ultimo	ultimo	ADJ	_	Gender=Masc|Number=Sing	4	amod	4:amod	_
+4	domingo	domingo	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:em	_
+5	(	(	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+6	17	17	NUM	_	NumType=Card	4	appos	4:appos	SpaceAfter=No
+7	)	)	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+8	,	,	PUNCT	_	_	4	punct	4:punct	_
+9	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	assaltante	assaltante	NOUN	_	Number=Sing	18	nsubj	12:nsubj|13:nsubj|14:nsubj|18:nsubj	_
+11	que	que	PRON	_	PronType=Rel	12	nsubj	10:ref	_
+12	tentava	tentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	10	acl:relcl	10:acl:relcl	_
+13	tenta	tentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	xcomp	12:xcomp	_
+14	roubar	roubar	VERB	_	VerbForm=Inf	12	xcomp	12:xcomp	_
+15	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	farmácia	farmácia	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	SpaceAfter=No
+17	,	,	PUNCT	_	_	4	punct	4:punct	_
+18	bateu	bater	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+19	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	20:det	_
+20	botas	bota	NOUN	_	Gender=Fem|Number=Plur	18	obj	18:obj	SpaceAfter=No
+21	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0007
+# text = O meliante foi flagrado pelo circuito interno de tv.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	meliante	meliante	NOUN	_	Number=Sing	4	nsubj:pass	4:nsubj:pass	_
+3	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	flagrado	flagrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5-6	pelo	_	_	_	_	_	_	_	_
+5	por	por	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	circuito	circuito	NOUN	_	Gender=Masc|Number=Sing	4	obl:agent	4:obl:agent	_
+8	interno	interno	ADJ	_	Gender=Masc|Number=Sing	7	amod	7:amod	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	tv	televisão	NOUN	_	Abbr=Yes|Gender=Fem|Number=Sing	7	nmod	7:nmod:de	SpaceAfter=No
+11	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0009
+# text = Ele fingiu estar armado, anunciou o assalto e se dirigiu para o lado interno do balcão.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj|4:nsubj|6:nsubj|11:nsubj	_
+2	fingiu	fingir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	estar	estar	AUX	_	VerbForm=Inf	4	cop	4:cop	_
+4	armado	armado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	2	xcomp	2:xcomp	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	anunciou	anunciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	2:conj:e	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	assalto	assalto	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+9	e	e	CCONJ	_	_	11	cc	11:cc	_
+10	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	11	expl	11:expl	_
+11	dirigiu	dirigir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	2:conj:e	_
+12	para	para	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	lado	lado	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:para	_
+15	interno	interno	ADJ	_	Gender=Masc|Number=Sing	14	amod	14:amod	_
+16-17	do	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	balcão	balcão	NOUN	_	Gender=Masc|Number=Sing	14	nmod	14:nmod:de	SpaceAfter=No
+19	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0011
+# text = Quando chegou próximo da funcionária que estava no caixa, ele passou mal e caiu no chão.
+1	Quando	quando	SCONJ	_	_	2	mark	2:mark	_
+2	chegou	chegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	advcl	14:advcl:quando|17:advcl:quando	_
+3	próximo	próximo	ADV	_	_	2	advmod	2:advmod	_
+4-5	da	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	funcionária	funcionário	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:de|11:nsubj	_
+7	que	que	PRON	_	PronType=Rel	11	nsubj	6:ref	_
+8	estava	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	11	cop	11:cop	_
+9-10	no	_	_	_	_	_	_	_	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	caixa	caixa	NOUN	_	Number=Sing	6	acl:relcl	6:acl:relcl	SpaceAfter=No
+12	,	,	PUNCT	_	_	2	punct	2:punct	_
+13	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	nsubj	14:nsubj|17:nsubj	_
+14	passou	passar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+15	mal	mal	ADV	_	_	14	advmod	14:advmod	_
+16	e	e	CCONJ	_	_	17	cc	17:cc	_
+17	caiu	cair	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	conj	14:conj:e	_
+18-19	no	_	_	_	_	_	_	_	_
+18	em	em	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	chão	chão	NOUN	_	Gender=Masc|Number=Sing	17	obl	17:obl:em	SpaceAfter=No
+21	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0013
+# text = O bandido morreu no local.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	bandido	bandido	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	morreu	morrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4-5	no	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	local	local	NOUN	_	Number=Sing	3	obl	3:obl:em	SpaceAfter=No
+7	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0015
+# text = O caso aconteceu na Zona Leste de São Paulo.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	caso	caso	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	aconteceu	acontecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4-5	na	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	Zona	Zona	PROPN	_	_	3	obl	3:obl:em	_
+7	Leste	Leste	PROPN	_	_	6	flat:name	6:flat:name	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	São	São	PROPN	_	_	6	nmod	6:nmod:de	_
+10	Paulo	Paulo	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+11	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0016
+# text = assista o vídeo (*** momento exato aos 1:45 min ).
+1	assista	assistir	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	1	obj	1:obj	_
+4	(	(	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+5	*	*	PUNCT	_	_	8	parataxis	8:parataxis	SpaceAfter=No
+6	*	*	SYM	_	_	8	parataxis	8:parataxis	SpaceAfter=No
+7	*	*	PUNCT	_	_	8	punct	8:punct	_
+8	momento	momento	NOUN	_	Gender=Masc|Number=Sing	1	parataxis	1:parataxis	_
+9	exato	exato	ADJ	_	Gender=Masc|Number=Sing	8	amod	8:amod	_
+10-11	aos	_	_	_	_	_	_	_	_
+10	a	a	ADP	_	_	13	case	13:case	_
+11	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	13:det	_
+12	1:45	1:45	NUM	_	NumType=Card	13	nummod	13:nummod	_
+13	min	min	NOUN	_	Gender=Masc	8	nmod	8:nmod:a	_
+14	)	)	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+15	.	.	PUNCT	_	_	1	punct	1:punct	_

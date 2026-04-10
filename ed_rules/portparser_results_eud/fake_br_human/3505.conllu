@@ -1,0 +1,205 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Discurso do ex-presidente assumindo que gostava de enchentes para não ter que trabalhar.
+1	Discurso	discurso	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+2-3	do	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	ex-presidente	ex-presidente	NOUN	_	Number=Sing	1	nmod	1:nmod:de	_
+5	assumindo	assumir	VERB	_	VerbForm=Ger	4	acl	4:acl	_
+6	que	que	SCONJ	_	_	7	mark	7:mark	_
+7	gostava	gostar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	ccomp	5:ccomp	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	enchentes	enchente	NOUN	_	Gender=Fem|Number=Plur	7	obl	7:obl:de	_
+10	para	para	ADP	_	_	12	mark	12:mark	_
+11	não	não	ADV	_	_	12	advmod	12:advmod	_
+12	ter	ter	VERB	_	VerbForm=Inf	7	advcl	7:advcl:para	_
+13	que	que	ADP	_	_	14	mark	14:mark	_
+14	trabalhar	trabalhar	VERB	_	VerbForm=Inf	12	xcomp	12:xcomp	SpaceAfter=No
+15	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = A afirmação de Lula (em 2010) para a tristeza de uma nação.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	afirmação	afirmação	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Lula	Lula	PROPN	_	_	2	nmod	2:nmod:de	_
+5	(	(	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+6	em	em	ADP	_	_	7	case	7:case	_
+7	2010	2010	NUM	_	NumType=Card	2	nmod	2:nmod:em	SpaceAfter=No
+8	)	)	PUNCT	_	_	7	punct	7:punct	_
+9	para	para	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	tristeza	tristeza	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:para	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	nação	nação	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:de	SpaceAfter=No
+15	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = Como vocês podem confirmar, Lula discursou na cerimônia em São Paulo, onde foi agraciado com a Medalha 25 de Janeiro.
+1	Como	como	SCONJ	_	_	3	mark	3:mark	_
+2	vocês	você	PRON	_	Case=Nom|Number=Plur|Person=2|PronType=Prs	3	nsubj	3:nsubj|4:nsubj	_
+3	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	advcl	7:advcl:como	_
+4	confirmar	confirmar	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	SpaceAfter=No
+5	,	,	PUNCT	_	_	3	punct	3:punct	_
+6	Lula	Lula	PROPN	_	_	7	nsubj	7:nsubj	_
+7	discursou	discursar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8-9	na	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	cerimônia	cerimônia	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:em	_
+11	em	em	ADP	_	_	12	case	12:case	_
+12	São	São	PROPN	_	_	7	obl	7:obl:em|17:obl	_
+13	Paulo	Paulo	PROPN	_	_	12	flat:name	12:flat:name	SpaceAfter=No
+14	,	,	PUNCT	_	_	17	punct	17:punct	_
+15	onde	onde	ADV	_	_	17	advmod	12:ref	_
+16	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	aux:pass	17:aux:pass	_
+17	agraciado	agraciar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	12	acl:relcl	12:acl:relcl	_
+18	com	com	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	Medalha	Medalha	PROPN	_	_	17	obl	17:obl:com	_
+21	25	25	PROPN	_	_	20	flat:name	20:flat:name	_
+22	de	de	ADP	_	_	23	case	23:case	_
+23	Janeiro	Janeiro	PROPN	_	_	20	flat:name	20:flat:name	SpaceAfter=No
+24	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0007
+# text = Num dado momento de seu improviso, ele mandou ver: ... eu fui morar na Vila Carioca, que dava enchente todo final de ano.
+1-2	Num	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	4	case	4:case	_
+2	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+3	dado	dado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	4	amod	4:amod	_
+4	momento	momento	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:em	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	7	det	7:det	_
+7	improviso	improviso	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:de	SpaceAfter=No
+8	,	,	PUNCT	_	_	4	punct	4:punct	_
+9	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	nsubj	10:nsubj	_
+10	mandou	mandar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+11	ver	ver	VERB	_	VerbForm=Inf	10	xcomp	10:xcomp	SpaceAfter=No
+12	:	:	PUNCT	_	_	17	punct	17:punct	_
+13	.	.	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+14	..	..	PUNCT	_	_	17	punct	17:punct	_
+15	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	17	nsubj	17:nsubj	_
+16	fui	ir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	17	aux	17:aux	_
+17	morar	morar	VERB	_	VerbForm=Inf	10	ccomp:speech	10:ccomp:speech	_
+18-19	na	_	_	_	_	_	_	_	_
+18	em	em	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	Vila	Vila	PROPN	_	_	17	obl	17:obl:em|24:nsubj	_
+21	Carioca	Carioca	PROPN	_	_	20	flat:name	20:flat:name	SpaceAfter=No
+22	,	,	PUNCT	_	_	24	punct	24:punct	_
+23	que	que	PRON	_	PronType=Rel	24	nsubj	20:ref	_
+24	dava	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	20	acl:relcl	20:acl:relcl	_
+25	enchente	enchente	NOUN	_	Gender=Fem|Number=Sing	24	obj	24:obj	_
+26	todo	todo	DET	_	Gender=Masc|Number=Sing|PronType=Ind	27	det	27:det	_
+27	final	final	NOUN	_	Number=Sing	24	obl	24:obl	_
+28	de	de	ADP	_	_	29	case	29:case	_
+29	ano	ano	NOUN	_	Gender=Masc|Number=Sing	27	nmod	27:nmod:de	SpaceAfter=No
+30	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0009
+# text = Não é de hoje que dá enchente.
+1	Não	não	ADV	_	_	6	advmod	6:advmod	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	discourse	6:discourse	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	hoje	hoje	ADV	_	_	6	advmod	6:advmod	_
+5	que	que	SCONJ	_	_	6	discourse	6:discourse	_
+6	dá	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	enchente	enchente	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	SpaceAfter=No
+8	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0011
+# text = Naquele tempo, eu trabalhava nos Armazéns Gerais Colúmbia...
+1-2	Naquele	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	aquele	aquele	DET	_	Gender=Masc|Number=Sing|PronType=Dem	3	det	3:det	_
+3	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:em	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj	6:nsubj	_
+6	trabalhava	trabalhar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+7-8	nos	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	9:det	_
+9	Armazéns	Armazéns	PROPN	_	_	6	obl	6:obl:em	_
+10	Gerais	Gerais	PROPN	_	_	9	flat:name	9:flat:name	_
+11	Colúmbia	Colúmbia	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+12	...	...	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0013
+# text = A gente, muitas vezes, NÃO IA TRABALHAR porque a [avenida] Presidente Wilson enchia e, OBVIAMENTE EU GOSTAVA [...] PORQUE EU NÃO TINHA DE TRABALHAR.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	gente	gente	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	9:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	5	punct	5:punct	_
+4	muitas	muito	ADJ	_	Gender=Fem|Number=Plur	5	amod	5:amod	_
+5	vezes	vez	NOUN	_	Gender=Fem|Number=Plur	9	obl	9:obl	SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	5:punct	_
+7	NÃO	não	ADV	_	_	9	advmod	9:advmod	_
+8	IA	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	dep	9:dep	_
+9	TRABALHAR	trabalhar	VERB	_	VerbForm=Inf	0	root	0:root	_
+10	porque	porque	SCONJ	_	_	17	mark	17:mark|22:mark	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+12	[	[	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+13	avenida	avenida	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	17:nsubj	SpaceAfter=No
+14	]	]	PUNCT	_	_	15	punct	15:punct	_
+15	Presidente	Presidente	PROPN	_	_	13	nmod	13:nmod	_
+16	Wilson	Wilson	PROPN	_	_	15	flat:name	15:flat:name	_
+17	enchia	encher	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	advcl	9:advcl:porque	_
+18	e	e	CCONJ	_	_	22	cc	22:cc	SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	20:punct	_
+20	OBVIAMENTE	obviamente	ADV	_	_	22	advmod	22:advmod	_
+21	EU	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	22	nsubj	22:nsubj	_
+22	GOSTAVA	gostar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	17	conj	9:advcl:porque|17:conj:e	_
+23	[	[	PUNCT	_	_	24	punct	24:punct	SpaceAfter=No
+24	.	.	PUNCT	_	_	22	parataxis	22:parataxis	SpaceAfter=No
+25	..	..	PUNCT	_	_	24	punct	24:punct	SpaceAfter=No
+26	]	]	PUNCT	_	_	24	punct	24:punct	_
+27	PORQUE	porque	CCONJ	_	_	22	punct	22:punct	_
+28	EU	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	30	nsubj	30:nsubj|32:nsubj	_
+29	NÃO	não	ADV	_	_	30	advmod	30:advmod	_
+30	TINHA	ter	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	9	ccomp:speech	9:ccomp:speech	_
+31	DE	de	ADP	_	_	32	mark	32:mark	_
+32	TRABALHAR	trabalhar	VERB	_	VerbForm=Inf	30	xcomp	30:xcomp	SpaceAfter=No
+33	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0015
+# text = ** preste atenção na época, a folha/SP derrapou na transcrição do áudio e a Rádio CBN corrigiu (em tempo) a fala lastimável de Lula ***.
+1	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	*	*	PUNCT	_	_	3	punct	3:punct	_
+3	preste	prestar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	atenção	atenção	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+5-6	na	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	época	época	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:em	SpaceAfter=No
+8	,	,	PUNCT	_	_	11	punct	11:punct	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	folha/SP	folha/SP	PROPN	_	_	11	nsubj	11:nsubj	_
+11	derrapou	derrapar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	parataxis	3:parataxis	_
+12-13	na	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	transcrição	transcrição	NOUN	_	Gender=Fem|Number=Sing	11	obl	11:obl:em	_
+15-16	do	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	áudio	áudio	NOUN	_	Gender=Masc|Number=Sing	14	nmod	14:nmod:de	_
+18	e	e	CCONJ	_	_	22	cc	22:cc	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	Rádio	Rádio	PROPN	_	_	22	nsubj	22:nsubj	_
+21	CBN	CBN	PROPN	_	_	20	flat:name	20:flat:name	_
+22	corrigiu	corrigir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	conj	3:parataxis|11:conj:e	_
+23	(	(	PUNCT	_	_	25	punct	25:punct	SpaceAfter=No
+24	em	em	ADP	_	_	25	case	25:case	_
+25	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	22	obl	22:obl:em	SpaceAfter=No
+26	)	)	PUNCT	_	_	25	punct	25:punct	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	fala	fala	NOUN	_	Gender=Fem|Number=Sing	22	obj	22:obj	_
+29	lastimável	lastimável	ADJ	_	Number=Sing	28	amod	28:amod	_
+30	de	de	ADP	_	_	31	case	31:case	_
+31	Lula	Lula	PROPN	_	_	28	nmod	28:nmod:de	_
+32	*	*	PUNCT	_	_	31	punct	31:punct	SpaceAfter=No
+33	*	*	PUNCT	_	_	28	punct	28:punct	SpaceAfter=No
+34	*	*	PUNCT	_	_	33	punct	33:punct	SpaceAfter=No
+35	.	.	PUNCT	_	_	3	punct	3:punct	_

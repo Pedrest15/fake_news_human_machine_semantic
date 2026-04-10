@@ -1,0 +1,151 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Problema cardíaco tira William Waack do Jornal da Globo.
+1	Problema	problema	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+2	cardíaco	cardíaco	ADJ	_	Gender=Masc|Number=Sing	1	amod	1:amod	_
+3	tira	tirar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	William	William	PROPN	_	_	3	obj	3:obj	_
+5	Waack	Waack	PROPN	_	_	4	flat:name	4:flat:name	_
+6-7	do	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	Jornal	Jornal	PROPN	_	_	3	obl	3:obl:de	_
+9-10	da	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	Globo	Globo	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+12	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = Apresentador será operado amanhã.
+1	Apresentador	apresentador	NOUN	_	Gender=Masc|Number=Sing	3	nsubj:pass	3:nsubj:pass	_
+2	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	aux:pass	3:aux:pass	_
+3	operado	operar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+4	amanhã	amanhã	ADV	_	_	3	advmod	3:advmod	SpaceAfter=No
+5	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0005
+# text = Waack ficará afastado temporariamente do Jornal da Globo.
+1	Waack	Waack	PROPN	_	_	2	nsubj	2:nsubj|3:nsubj	_
+2	ficará	ficar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+3	afastado	afastado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	2	xcomp	2:xcomp	_
+4	temporariamente	temporariamente	ADV	_	_	3	advmod	3:advmod	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Jornal	Jornal	PROPN	_	_	3	obl	3:obl:de	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	Globo	Globo	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+11	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0007
+# text = Após de submeter a exames de rotina, os médicos determinaram que o jornalista passe por um cateterismo [...] procedimento utilizado para diagnosticar ou tratar doenças cardíacas.
+1	Após	após	ADP	_	_	3	mark	3:mark	_
+2	de	de	ADP	_	_	3	mark	3:mark	_
+3	submeter	submeter	VERB	_	VerbForm=Inf	11	advcl	11:advcl:após_de	_
+4	a	a	ADP	_	_	5	case	5:case	_
+5	exames	exame	NOUN	_	Gender=Masc|Number=Plur	3	obl	3:obl:a	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	rotina	rotina	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	SpaceAfter=No
+8	,	,	PUNCT	_	_	3	punct	3:punct	_
+9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	10:det	_
+10	médicos	médico	NOUN	_	Gender=Masc|Number=Plur	11	nsubj	11:nsubj	_
+11	determinaram	determinar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	que	que	SCONJ	_	_	15	mark	15:mark	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	jornalista	jornalista	NOUN	_	Number=Sing	15	nsubj	15:nsubj	_
+15	passe	passar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	ccomp	11:ccomp	_
+16	por	por	ADP	_	_	18	case	18:case	_
+17	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	cateterismo	cateterismo	NOUN	_	Gender=Masc|Number=Sing	15	obl	15:obl:por	_
+19	[	[	PUNCT	_	_	23	punct	23:punct	SpaceAfter=No
+20	.	.	PUNCT	_	_	23	parataxis	23:parataxis	SpaceAfter=No
+21	..	..	PUNCT	_	_	20	punct	20:punct	SpaceAfter=No
+22	]	]	PUNCT	_	_	20	punct	20:punct	_
+23	procedimento	procedimento	NOUN	_	Gender=Masc|Number=Sing	18	appos	18:appos	_
+24	utilizado	utilizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	23	acl	23:acl	_
+25	para	para	ADP	_	_	26	mark	26:mark|28:mark	_
+26	diagnosticar	diagnosticar	VERB	_	VerbForm=Inf	24	advcl	24:advcl:para	_
+27	ou	ou	CCONJ	_	_	28	cc	28:cc	_
+28	tratar	tratar	VERB	_	VerbForm=Inf	26	conj	24:advcl:para|26:conj:ou	_
+29	doenças	doença	NOUN	_	Gender=Fem|Number=Plur	26	obj	26:obj|28:obj	_
+30	cardíacas	cardíaco	ADJ	_	Gender=Fem|Number=Plur	29	amod	29:amod	SpaceAfter=No
+31	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0009
+# text = Waack já está internado no hospital Sírio Libanês, onde fará a cirurgia na manhã dessa sexta-feira (20).
+1	Waack	Waack	PROPN	_	_	4	nsubj	4:nsubj	_
+2	já	já	ADV	_	_	4	advmod	4:advmod	_
+3	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+4	internado	internado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+5-6	no	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	hospital	hospital	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:em|12:obl	_
+8	Sírio	Sírio	PROPN	_	_	7	nmod	7:nmod	_
+9	Libanês	Libanês	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+10	,	,	PUNCT	_	_	12	punct	12:punct	_
+11	onde	onde	ADV	_	_	12	advmod	7:ref	_
+12	fará	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	7	acl:relcl	7:acl:relcl	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	cirurgia	cirurgia	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+15-16	na	_	_	_	_	_	_	_	_
+15	em	em	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	manhã	manhã	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl:em	_
+18-19	dessa	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	20	det	20:det	_
+20	sexta-feira	sexta-feira	NOUN	_	Gender=Fem|Number=Sing	17	nmod	17:nmod:de	_
+21	(	(	PUNCT	_	_	22	punct	22:punct	SpaceAfter=No
+22	20	20	NUM	_	NumType=Card	20	appos	20:appos	SpaceAfter=No
+23	)	)	PUNCT	_	_	22	punct	22:punct	SpaceAfter=No
+24	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0011
+# text = Carlos Tramontina precisou ser convocado de última hora e comandará o Jornal da Globo nos próximos dias.
+1	Carlos	Carlos	PROPN	_	_	3	nsubj	3:nsubj|5:nsubj:pass|10:nsubj	_
+2	Tramontina	Tramontina	PROPN	_	_	1	flat:name	1:flat:name	_
+3	precisou	precisar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	ser	ser	AUX	_	VerbForm=Inf	5	aux:pass	5:aux:pass	_
+5	convocado	convocar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	xcomp	3:xcomp	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	última	último	ADJ	_	Gender=Fem|Number=Sing	8	amod	8:amod	_
+8	hora	hora	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:de	_
+9	e	e	CCONJ	_	_	10	cc	10:cc	_
+10	comandará	comandar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	conj	3:conj:e	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	Jornal	Jornal	PROPN	_	_	10	obj	10:obj	_
+13-14	da	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	Globo	Globo	PROPN	_	_	12	flat:name	12:flat:name	_
+16-17	nos	_	_	_	_	_	_	_	_
+16	em	em	ADP	_	_	19	case	19:case	_
+17	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	19:det	_
+18	próximos	próximo	ADJ	_	Gender=Masc|Number=Plur	19	amod	19:amod	_
+19	dias	dia	NOUN	_	Gender=Masc|Number=Plur	10	obl	10:obl:em	SpaceAfter=No
+20	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0013
+# text = O Sírio ainda não emitiu nenhuma nota sobre o estado de saúde do âncora global.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Sírio	Sírio	PROPN	_	_	5	nsubj	5:nsubj	_
+3	ainda	ainda	ADV	_	_	5	advmod	5:advmod	_
+4	não	não	ADV	_	_	5	advmod	5:advmod	_
+5	emitiu	emitir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	nenhuma	nenhum	DET	_	Gender=Fem|Number=Sing|PronType=Ind	7	det	7:det	_
+7	nota	nota	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+8	sobre	sobre	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	estado	estado	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:sobre	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:de	_
+13-14	do	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	âncora	âncora	NOUN	_	Number=Sing	10	nmod	10:nmod:de	_
+16	global	global	ADJ	_	Number=Sing	15	amod	15:amod	SpaceAfter=No
+17	.	.	PUNCT	_	_	5	punct	5:punct	_

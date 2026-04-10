@@ -1,0 +1,92 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = (vídeo) Dilma está obstruindo a justiça.
+1	(	(	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+2	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	6	parataxis	6:parataxis	SpaceAfter=No
+3	)	)	PUNCT	_	_	2	punct	2:punct	_
+4	Dilma	Dilma	PROPN	_	_	6	nsubj	6:nsubj	_
+5	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	6:aux	_
+6	obstruindo	obstruir	VERB	_	VerbForm=Ger	0	root	0:root	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	justiça	justiça	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	SpaceAfter=No
+9	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0003
+# text = Ela deve ser presa!
+1	Ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj|4:nsubj:pass	_
+2	deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	ser	ser	AUX	_	VerbForm=Inf	4	aux:pass	4:aux:pass	_
+4	presa	prender	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	2	xcomp	2:xcomp	SpaceAfter=No
+5	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = Por muito menos, Delcídio foi para a cadeia.
+1	Por	por	ADP	_	_	3	case	3:case	_
+2	muito	muito	ADV	_	_	3	advmod	3:advmod	_
+3	menos	menos	ADV	_	_	6	advmod	6:advmod	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	Delcídio	Delcídio	PROPN	_	_	6	nsubj	6:nsubj	_
+6	foi	ir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	para	para	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	cadeia	cadeia	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:para	SpaceAfter=No
+10	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0007
+# text = Dilma deve ser presa imediatamente, assim como aconteceu com o senador Delcídio do Amaral.
+1	Dilma	Dilma	PROPN	_	_	2	nsubj	2:nsubj|4:nsubj:pass	_
+2	deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	ser	ser	AUX	_	VerbForm=Inf	4	aux:pass	4:aux:pass	_
+4	presa	prender	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	2	xcomp	2:xcomp	_
+5	imediatamente	imediatamente	ADV	_	_	4	advmod	4:advmod	SpaceAfter=No
+6	,	,	PUNCT	_	_	9	punct	9:punct	_
+7	assim	assim	ADV	_	ExtPos=SCONJ	9	mark	9:mark	_
+8	como	como	SCONJ	_	_	7	fixed	7:fixed	_
+9	aconteceu	acontecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	advcl	2:advcl:assim_como	_
+10	com	com	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	senador	senador	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:com	_
+13	Delcídio	Delcídio	PROPN	_	_	12	nmod	12:nmod	_
+14-15	do	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	Amaral	Amaral	PROPN	_	_	13	flat:name	13:flat:name	SpaceAfter=No
+17	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0009
+# text = Ela foi flagrada pela PF tentando obstruir a justiça.
+1	Ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nsubj:pass	3:nsubj:pass	_
+2	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	aux:pass	3:aux:pass	_
+3	flagrada	flagrar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+4-5	pela	_	_	_	_	_	_	_	_
+4	por	por	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	PF	PF	PROPN	_	_	3	obl:agent	3:obl:agent	_
+7	tentando	tentar	VERB	_	VerbForm=Ger	3	advcl	3:advcl	_
+8	obstruir	obstruir	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	justiça	justiça	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	SpaceAfter=No
+11	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0011
+# text = (leia mais) Um internauta disponibilizou um vídeo da Globo News.
+1	(	(	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+2	leia	ler	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	parataxis	7:parataxis	_
+3	mais	mais	ADV	_	_	2	advmod	2:advmod	SpaceAfter=No
+4	)	)	PUNCT	_	_	2	punct	2:punct	_
+5	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	internauta	internauta	NOUN	_	Number=Sing	7	nsubj	7:nsubj	_
+7	disponibilizou	disponibilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+10-11	da	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	Globo	Globo	PROPN	_	_	9	nmod	9:nmod:de	_
+13	News	News	PROPN	_	_	12	flat:name	12:flat:name	SpaceAfter=No
+14	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0012
+# text = confira:
+1	confira	conferir	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+2	:	:	PUNCT	_	_	1	punct	1:punct	_

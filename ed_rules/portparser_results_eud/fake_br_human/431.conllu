@@ -1,0 +1,355 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Coincidência?
+1	Coincidência	coincidência	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+2	?	?	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = 3 ganhadores da "Mega Sena da Virada" fizeram apostas na mesma lotérica.
+1	3	3	NUM	_	NumType=Card	2	nummod	2:nummod	_
+2	ganhadores	ganhador	NOUN	_	Gender=Masc|Number=Plur	12	nsubj	12:nsubj	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	6	case	6:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+5	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+6	Mega	Mega	PROPN	_	_	2	nmod	2:nmod:de	_
+7	Sena	Sena	PROPN	_	_	6	flat:name	6:flat:name	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	Virada	Virada	PROPN	_	_	6	flat:name	6:flat:name	SpaceAfter=No
+11	"	"	PUNCT	_	_	6	punct	6:punct	_
+12	fizeram	fazer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+13	apostas	aposta	NOUN	_	Gender=Fem|Number=Plur	12	obj	12:obj	_
+14-15	na	_	_	_	_	_	_	_	_
+14	em	em	ADP	_	_	17	case	17:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+16	mesma	mesmo	DET	_	Gender=Fem|Number=Sing|PronType=Dem	17	det	17:det	_
+17	lotérica	lotérica	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:em	SpaceAfter=No
+18	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0005
+# text = A probabilidade de um apostador acertar na Mega Sena é de 1 em 50.000.000, segundo dados informados pela Caixa Econômica Federal.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	probabilidade	probabilidade	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	13:nsubj	_
+3	de	de	ADP	_	_	6	mark	6:mark	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	apostador	apostador	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+6	acertar	acertar	VERB	_	Number=Sing|Person=3|VerbForm=Inf	2	acl	2:acl:de	_
+7-8	na	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	Mega	Mega	PROPN	_	_	6	obl	6:obl:em	_
+10	Sena	Sena	PROPN	_	_	9	flat:name	9:flat:name	_
+11	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	13:cop	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	1	1	NUM	_	NumType=Card	0	root	0:root	_
+14	em	em	ADP	_	_	15	case	15:case	_
+15	50.000.000	50.000.000	NUM	_	NumType=Card	13	nmod	13:nmod:em	SpaceAfter=No
+16	,	,	PUNCT	_	_	18	punct	18:punct	_
+17	segundo	segundo	ADP	_	_	18	case	18:case	_
+18	dados	dado	NOUN	_	Gender=Masc|Number=Plur	13	nmod	13:nmod:segundo	_
+19	informados	informar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	18	acl	18:acl	_
+20-21	pela	_	_	_	_	_	_	_	_
+20	por	por	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	Caixa	Caixa	PROPN	_	_	19	obl:agent	19:obl:agent	_
+23	Econômica	Econômica	PROPN	_	_	22	flat:name	22:flat:name	_
+24	Federal	Federal	PROPN	_	_	22	flat:name	22:flat:name	SpaceAfter=No
+25	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0007
+# text = Levando-se em conta de que a probabilidade de um raio atingir uma pessoa é de 1 em 1.000.000, é 50 vezes mais fácil um raio cair na sua cabeça do que você ganhar o sorteio da Mega-Sena fazendo uma aposta mínima.
+1-2	Levando-se	_	_	_	_	_	_	_	_
+1	Levando	levar	VERB	_	VerbForm=Ger	25	advcl	25:advcl	_
+2	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	1	expl:impers	1:expl:impers	_
+3	em	em	ADP	_	_	4	case	4:case	_
+4	conta	conta	NOUN	_	Gender=Fem|Number=Sing	1	obl	1:obl:em	_
+5	de	de	ADP	_	ExtPos=SCONJ	17	mark	17:mark	_
+6	que	que	SCONJ	_	_	5	fixed	5:fixed	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	probabilidade	probabilidade	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	17:nsubj	_
+9	de	de	ADP	_	_	12	mark	12:mark	_
+10	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	raio	raio	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	12:nsubj	_
+12	atingir	atingir	VERB	_	Number=Sing|Person=3|VerbForm=Inf	8	acl	8:acl:de	_
+13	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	pessoa	pessoa	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+15	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	17:cop	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	1	1	NUM	_	NumType=Card	4	acl	4:acl:de_que	_
+18	em	em	ADP	_	_	19	case	19:case	_
+19	1.000.000	1.000.000	NUM	_	NumType=Card	17	nmod	17:nmod:em	SpaceAfter=No
+20	,	,	PUNCT	_	_	1	punct	1:punct	_
+21	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	cop	25:cop	_
+22	50	50	NUM	_	NumType=Card	23	nummod	23:nummod	_
+23	vezes	vez	NOUN	_	Gender=Fem|Number=Plur	25	obl	25:obl	_
+24	mais	mais	ADV	_	_	25	advmod	25:advmod	_
+25	fácil	fácil	ADJ	_	Number=Sing	0	root	0:root	_
+26	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	raio	raio	NOUN	_	Gender=Masc|Number=Sing	28	nsubj	28:nsubj	_
+28	cair	cair	VERB	_	Number=Sing|Person=3|VerbForm=Inf	25	csubj	25:csubj	_
+29-30	na	_	_	_	_	_	_	_	_
+29	em	em	ADP	_	_	32	case	32:case	_
+30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	32:det	_
+31	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	32	det	32:det	_
+32	cabeça	cabeça	NOUN	_	Gender=Fem|Number=Sing	28	obl	28:obl:em	_
+33-34	do	_	_	_	_	_	_	_	_
+33	de	de	ADP	_	ExtPos=SCONJ	37	mark	37:mark	_
+34	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	33	fixed	33:fixed	_
+35	que	que	PRON	_	PronType=Rel	33	fixed	33:fixed	_
+36	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	37	nsubj	37:nsubj	_
+37	ganhar	ganhar	VERB	_	VerbForm=Inf	28	advcl	28:advcl:de_o_que	_
+38	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	39:det	_
+39	sorteio	sorteio	NOUN	_	Gender=Masc|Number=Sing	37	obj	37:obj	_
+40-41	da	_	_	_	_	_	_	_	_
+40	de	de	ADP	_	_	42	case	42:case	_
+41	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	42:det	_
+42	Mega-Sena	Mega-Sena	PROPN	_	_	39	nmod	39:nmod:de	_
+43	fazendo	fazer	VERB	_	VerbForm=Ger	37	advcl	37:advcl	_
+44	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	45	det	45:det	_
+45	aposta	aposta	NOUN	_	Gender=Fem|Number=Sing	43	obj	43:obj	_
+46	mínima	mínimo	ADJ	_	Gender=Fem|Number=Sing	45	amod	45:amod	SpaceAfter=No
+47	.	.	PUNCT	_	_	25	punct	25:punct	_
+
+# sent_id = S0009
+# text = Pois bem... Em São Paulo (capital) aconteceu uma façanha que desafia até os mais brilhantes alunos de Harvard.
+1	Pois	pois	CCONJ	_	_	2	cc	2:cc	_
+2	bem	bem	ADV	_	_	10	discourse	10:discourse	SpaceAfter=No
+3	...	...	PUNCT	_	_	2	punct	2:punct	_
+4	Em	em	ADP	_	_	5	case	5:case	_
+5	São	São	PROPN	_	_	10	obl	10:obl:em	_
+6	Paulo	Paulo	PROPN	_	_	5	flat:name	5:flat:name	_
+7	(	(	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	capital	capital	NOUN	_	Number=Sing	5	parataxis	5:parataxis	SpaceAfter=No
+9	)	)	PUNCT	_	_	8	punct	8:punct	_
+10	aconteceu	acontecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+11	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	façanha	façanha	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	10:nsubj|14:nsubj	_
+13	que	que	PRON	_	PronType=Rel	14	nsubj	12:ref	_
+14	desafia	desafiar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	acl:relcl	12:acl:relcl	_
+15	até	até	ADV	_	_	18	advmod	18:advmod	_
+16	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	19:det	_
+17	mais	mais	ADV	_	_	18	advmod	18:advmod	_
+18	brilhantes	brilhante	ADJ	_	Number=Plur	19	amod	19:amod	_
+19	alunos	aluno	NOUN	_	Gender=Masc|Number=Plur	14	obj	14:obj	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	Harvard	Harvard	PROPN	_	_	19	nmod	19:nmod:de	SpaceAfter=No
+22	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0011
+# text = Segundo informação da CEF, a Mega da Virada, sorteada no último dia do ano, saiu para 17 apostadores.
+1	Segundo	segundo	ADP	_	_	2	case	2:case	_
+2	informação	informação	NOUN	_	Gender=Fem|Number=Sing	22	obl	22:obl:segundo	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	CEF	CEF	PROPN	_	_	2	nmod	2:nmod:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	2	punct	2:punct	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	Mega	Mega	PROPN	_	_	22	nsubj	22:nsubj	_
+9-10	da	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	Virada	Virada	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	sorteada	sortear	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	8	acl	8:acl	_
+14-15	no	_	_	_	_	_	_	_	_
+14	em	em	ADP	_	_	17	case	17:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+16	último	último	ADJ	_	Gender=Masc|Number=Sing	17	amod	17:amod	_
+17	dia	dia	NOUN	_	Gender=Masc|Number=Sing	13	obl	13:obl:em	_
+18-19	do	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	ano	ano	NOUN	_	Gender=Masc|Number=Sing	17	nmod	17:nmod:de	SpaceAfter=No
+21	,	,	PUNCT	_	_	13	punct	13:punct	_
+22	saiu	sair	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+23	para	para	ADP	_	_	25	case	25:case	_
+24	17	17	NUM	_	NumType=Card	25	nummod	25:nummod	_
+25	apostadores	apostador	NOUN	_	Gender=Masc|Number=Plur	22	obl	22:obl:para	SpaceAfter=No
+26	.	.	PUNCT	_	_	22	punct	22:punct	_
+
+# sent_id = S0013
+# text = Os donos das apostas que acertaram os seis números sorteados (03 06 10 17 34 37) vão levar, cada um, pouco mais de R$ 18 milhões.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	donos	dono	NOUN	_	Gender=Masc|Number=Plur	21	nsubj	21:nsubj	_
+3-4	das	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	5:det	_
+5	apostas	aposta	NOUN	_	Gender=Fem|Number=Plur	2	nmod	2:nmod:de|7:nsubj	_
+6	que	que	PRON	_	PronType=Rel	7	nsubj	5:ref	_
+7	acertaram	acertar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_
+8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	10:det	_
+9	seis	seis	NUM	_	NumType=Card	10	nummod	10:nummod	_
+10	números	número	NOUN	_	Gender=Masc|Number=Plur	7	obj	7:obj	_
+11	sorteados	sortear	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	10	acl	10:acl	_
+12	(	(	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+13	03	03	NUM	_	NumType=Card	10	appos	10:appos	_
+14	06	06	NUM	_	NumType=Card	13	nummod	13:nummod	_
+15	10	10	NUM	_	NumType=Card	13	nummod	13:nummod	_
+16	17	17	NUM	_	NumType=Card	15	nummod	15:nummod	_
+17	34	34	NUM	_	NumType=Card	18	nummod	18:nummod	_
+18	37	37	NUM	_	NumType=Card	15	nmod	15:nmod	SpaceAfter=No
+19	)	)	PUNCT	_	_	13	punct	13:punct	_
+20	vão	ir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	21	aux	21:aux	_
+21	levar	levar	VERB	_	VerbForm=Inf	0	root	0:root	SpaceAfter=No
+22	,	,	PUNCT	_	_	24	punct	24:punct	_
+23	cada	cada	DET	_	Number=Sing|PronType=Ind	24	det	24:det	_
+24	um	um	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	21	obl	21:obl	SpaceAfter=No
+25	,	,	PUNCT	_	_	24	punct	24:punct	_
+26	pouco	pouco	ADV	_	_	27	advmod	27:advmod	_
+27	mais	mais	ADV	_	ExtPos=ADV	31	advmod	31:advmod	_
+28	de	de	ADP	_	_	27	fixed	27:fixed	_
+29	R$	R$	SYM	_	_	31	nmod	31:nmod	_
+30	18	18	NUM	_	NumType=Card	31	nummod	31:nummod	_
+31	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	21	obj	21:obj	SpaceAfter=No
+32	.	.	PUNCT	_	_	21	punct	21:punct	_
+
+# sent_id = S0015
+# text = Até aí, nada de mais (para quem acredita nesse tipo de jogo).
+1	Até	até	ADP	_	_	2	case	2:case	_
+2	aí	aí	ADV	_	_	4	advmod	4:advmod	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	nada	nada	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	0	root	0:root	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	mais	mais	ADV	_	_	4	advmod	4:advmod	_
+7	(	(	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+8	para	para	ADP	_	_	9	case	9:case	_
+9	quem	quem	PRON	_	PronType=Ind	4	nmod	4:nmod:para	_
+10	acredita	acreditar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	acl:relcl	9:acl:relcl	_
+11-12	nesse	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	13	det	13:det	_
+13	tipo	tipo	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:em	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	jogo	jogo	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod:de	SpaceAfter=No
+16	)	)	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+17	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0017
+# text = Agora vem o mais incrível... Dos 17 bilhetes premiados, 3 foram feitos na mesma lotérica.
+1	Agora	agora	ADV	_	_	2	advmod	2:advmod	_
+2	vem	vir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	2	nsubj	2:nsubj	_
+4	mais	mais	ADV	_	_	5	advmod	5:advmod	_
+5	incrível	incrível	ADJ	_	Number=Sing	3	amod	3:amod	SpaceAfter=No
+6	...	...	PUNCT	_	_	10	punct	10:punct	_
+7-8	Dos	_	_	_	_	_	_	_	_
+7	De	de	ADP	_	_	10	case	10:case	_
+8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	10:det	_
+9	17	17	NUM	_	NumType=Card	10	nummod	10:nummod	_
+10	bilhetes	bilhete	NOUN	_	Gender=Masc|Number=Plur	3	nmod	3:nmod:de	_
+11	premiados	premiar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	10	acl	10:acl	SpaceAfter=No
+12	,	,	PUNCT	_	_	10	punct	10:punct	_
+13	3	3	NUM	_	NumType=Card	15	nsubj:pass	15:nsubj:pass	_
+14	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	15	aux:pass	15:aux:pass	_
+15	feitos	fazer	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	2	dep	2:dep	_
+16-17	na	_	_	_	_	_	_	_	_
+16	em	em	ADP	_	_	19	case	19:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+18	mesma	mesmo	DET	_	Gender=Fem|Number=Sing|PronType=Dem	19	det	19:det	_
+19	lotérica	lotérica	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl:em	SpaceAfter=No
+20	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0019
+# text = SIM, é isto mesmo que você leu!
+1	SIM	sim	INTJ	_	_	8	discourse	8:discourse	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+4	isto	isto	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	8	parataxis	8:parataxis	_
+5	mesmo	mesmo	ADV	_	_	4	advmod	4:advmod	_
+6	que	que	SCONJ	_	_	8	discourse	8:discourse	_
+7	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	8	nsubj	8:nsubj	_
+8	leu	ler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+9	!	!	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0021
+# text = Três jogos vencedores do prêmio de R$ 18 milhões foram feitos no mesmo local de aposta [...] uma Lotérica situada na zona sul de São Paulo (bairro Parelheiros), de acordo com informações divulgadas hoje (2) pela Caixa.
+1	Três	três	NUM	_	NumType=Card	2	nummod	2:nummod	_
+2	jogos	jogo	NOUN	_	Gender=Masc|Number=Plur	12	nsubj:pass	12:nsubj:pass	_
+3	vencedores	vencedor	ADJ	_	Gender=Masc|Number=Plur	2	amod	2:amod	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	prêmio	prêmio	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	_
+7	de	de	ADP	_	_	10	case	10:case	_
+8	R$	R$	SYM	_	_	10	nmod	10:nmod	_
+9	18	18	NUM	_	NumType=Card	10	nummod	10:nummod	_
+10	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	6	nmod	6:nmod:de	_
+11	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	12	aux:pass	12:aux:pass	_
+12	feitos	fazer	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	_
+13-14	no	_	_	_	_	_	_	_	_
+13	em	em	ADP	_	_	16	case	16:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+15	mesmo	mesmo	DET	_	Gender=Masc|Number=Sing|PronType=Dem	16	det	16:det	_
+16	local	local	NOUN	_	Number=Sing	12	obl	12:obl:em	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	aposta	aposta	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:de	_
+19	[	[	PUNCT	_	_	20	punct	20:punct	SpaceAfter=No
+20	.	.	PUNCT	_	_	24	appos	24:appos	SpaceAfter=No
+21	..	..	PUNCT	_	_	20	punct	20:punct	SpaceAfter=No
+22	]	]	PUNCT	_	_	20	punct	20:punct	_
+23	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	Lotérica	Lotérica	PROPN	_	_	16	appos	16:appos	_
+25	situada	situar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	24	acl	24:acl	_
+26-27	na	_	_	_	_	_	_	_	_
+26	em	em	ADP	_	_	28	case	28:case	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	zona	zona	NOUN	_	Gender=Fem|Number=Sing	25	obl	25:obl:em	_
+29	sul	sul	ADJ	_	Number=Sing	28	amod	28:amod	_
+30	de	de	ADP	_	_	31	case	31:case	_
+31	São	São	PROPN	_	_	28	nmod	28:nmod:de	_
+32	Paulo	Paulo	PROPN	_	_	31	flat:name	31:flat:name	_
+33	(	(	PUNCT	_	_	34	punct	34:punct	SpaceAfter=No
+34	bairro	bairro	NOUN	_	Gender=Masc|Number=Sing	28	appos	28:appos	_
+35	Parelheiros	Parelheiros	PROPN	_	_	34	nmod	34:nmod	SpaceAfter=No
+36	)	)	PUNCT	_	_	34	punct	34:punct	SpaceAfter=No
+37	,	,	PUNCT	_	_	39	punct	39:punct	_
+38	de	de	ADP	_	_	39	case	39:case	_
+39	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:de	_
+40	com	com	ADP	_	_	41	case	41:case	_
+41	informações	informação	NOUN	_	Gender=Fem|Number=Plur	39	nmod	39:nmod:com	_
+42	divulgadas	divulgar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	41	acl	41:acl	_
+43	hoje	hoje	ADV	_	_	42	advmod	42:advmod	_
+44	(	(	PUNCT	_	_	45	punct	45:punct	SpaceAfter=No
+45	2	2	NUM	_	NumType=Card	43	appos	43:appos	SpaceAfter=No
+46	)	)	PUNCT	_	_	45	punct	45:punct	_
+47-48	pela	_	_	_	_	_	_	_	_
+47	por	por	ADP	_	_	49	case	49:case	_
+48	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	49	det	49:det	_
+49	Caixa	Caixa	PROPN	_	_	42	obl:agent	42:obl:agent	SpaceAfter=No
+50	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0023
+# text = E pelo jeito não foi um "bolão", porque o banco não divulgou essa informação.
+1	E	e	CCONJ	_	_	9	cc	9:cc	_
+2-3	pelo	_	_	_	_	_	_	_	_
+2	por	por	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	jeito	jeito	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:por	_
+5	não	não	ADV	_	_	9	advmod	9:advmod	_
+6	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	cop	9:cop	_
+7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+8	"	"	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+9	bolão	bolão	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+10	"	"	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+11	,	,	PUNCT	_	_	16	punct	16:punct	_
+12	porque	porque	SCONJ	_	_	16	mark	16:mark	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	banco	banco	NOUN	_	Gender=Masc|Number=Sing	16	nsubj	16:nsubj	_
+15	não	não	ADV	_	_	16	advmod	16:advmod	_
+16	divulgou	divulgar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	advcl	9:advcl:porque	_
+17	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	18	det	18:det	_
+18	informação	informação	NOUN	_	Gender=Fem|Number=Sing	16	obj	16:obj	SpaceAfter=No
+19	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0025
+# text = É ou não é muita coincidência?
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+2	ou	ou	CCONJ	_	_	3	cc	3:cc	_
+3	não	não	ADV	_	_	6	advmod	6:advmod	_
+4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+5	muita	muito	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	_
+6	coincidência	coincidência	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+7	?	?	PUNCT	_	_	6	punct	6:punct	_

@@ -1,0 +1,92 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Como alguém que ostenta a ignorância conseguiu se tornar presidente?
+1	Como	como	ADV	_	_	7	advmod	7:advmod	_
+2	alguém	alguém	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	7	nsubj	4:nsubj|7:nsubj|9:nsubj|10:nsubj	_
+3	que	que	PRON	_	PronType=Rel	4	nsubj	2:ref	_
+4	ostenta	ostentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	ignorância	ignorância	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+7	conseguiu	conseguir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	9	expl	9:expl	_
+9	tornar	tornar	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+10	presidente	presidente	NOUN	_	Number=Sing	9	xcomp	9:xcomp	SpaceAfter=No
+11	?	?	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0003
+# text = (vídeo).
+1	(	(	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+2	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+3	)	)	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+4	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = Trecho de uma entrevista concedida para o Canal Livre, da TV Bandeirantes, em outubro de 1981.
+1	Trecho	trecho	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	entrevista	entrevista	NOUN	_	Gender=Fem|Number=Sing	1	nmod	1:nmod:de	_
+5	concedida	conceder	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	4	acl	4:acl	_
+6	para	para	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	Canal	Canal	PROPN	_	_	5	obl	5:obl:para	_
+9	Livre	Livre	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+10	,	,	PUNCT	_	_	13	punct	13:punct	_
+11-12	da	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	TV	TV	PROPN	_	_	8	nmod	8:nmod:de	_
+14	Bandeirantes	Bandeirantes	PROPN	_	_	13	flat:name	13:flat:name	SpaceAfter=No
+15	,	,	PUNCT	_	_	13	punct	13:punct	_
+16	em	em	ADP	_	_	17	case	17:case	_
+17	outubro	outubro	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:em	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	1981	1981	NUM	_	NumType=Card	17	nmod	17:nmod:de	SpaceAfter=No
+20	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0007
+# text = O programa tem a participação de Roberto DÁvila, Flávio Rangel, Hélio Pellegrino, Eduardo Suplicy, Hélio Silva e outros.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	programa	programa	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	participação	participação	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+6	de	de	ADP	_	_	7	case	7:case|10:case|13:case|16:case|19:case|22:case	_
+7	Roberto	Roberto	PROPN	_	_	5	nmod	5:nmod:de	_
+8	DÁvila	DÁvila	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+9	,	,	PUNCT	_	_	10	punct	10:punct	_
+10	Flávio	Flávio	PROPN	_	_	7	conj	5:nmod:de|7:conj:e	_
+11	Rangel	Rangel	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	Hélio	Hélio	PROPN	_	_	7	conj	5:nmod:de|7:conj:e	_
+14	Pellegrino	Pellegrino	PROPN	_	_	13	flat:name	13:flat:name	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	Eduardo	Eduardo	PROPN	_	_	7	conj	5:nmod:de|7:conj:e	_
+17	Suplicy	Suplicy	PROPN	_	_	16	flat:name	16:flat:name	SpaceAfter=No
+18	,	,	PUNCT	_	_	19	punct	19:punct	_
+19	Hélio	Hélio	PROPN	_	_	7	conj	5:nmod:de|7:conj:e	_
+20	Silva	Silva	PROPN	_	_	19	flat:name	19:flat:name	_
+21	e	e	CCONJ	_	_	22	cc	22:cc	_
+22	outros	outro	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	7	conj	5:nmod:de|7:conj:e	SpaceAfter=No
+23	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0009
+# text = Como é que um "trem" desses conseguiu virar presidente da república?
+1	Como	como	ADV	_	_	10	advmod	10:advmod	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	discourse	10:discourse	_
+3	que	que	SCONJ	_	_	10	discourse	10:discourse	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+5	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+6	trem	trem	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	10:nsubj|11:nsubj|12:nsubj	SpaceAfter=No
+7	"	"	PUNCT	_	_	6	punct	6:punct	_
+8-9	desses	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	esses	esse	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	6	nmod	6:nmod:de	_
+10	conseguiu	conseguir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+11	virar	virar	VERB	_	VerbForm=Inf	10	xcomp	10:xcomp	_
+12	presidente	presidente	NOUN	_	Number=Sing	11	xcomp	11:xcomp	_
+13-14	da	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	república	república	NOUN	_	Gender=Fem|Number=Sing	12	nmod	12:nmod:de	SpaceAfter=No
+16	?	?	PUNCT	_	_	10	punct	10:punct	_

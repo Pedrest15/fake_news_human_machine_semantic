@@ -1,0 +1,520 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = CHEGA!
+1	CHEGA	chegar	VERB	_	_	0	root	0:root	SpaceAfter=No
+2	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Vitória de Trump serve de aviso para a esquerda baderneira que não gosta de trabalhar.
+1	Vitória	vitória	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	Trump	Trump	PROPN	_	_	1	nmod	1:nmod:de	_
+4	serve	servir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	aviso	aviso	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:de	_
+7	para	para	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	esquerda	esquerda	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:para|13:nsubj|15:nsubj	_
+10	baderneira	baderneiro	ADJ	_	Gender=Fem|Number=Sing	9	amod	9:amod	_
+11	que	que	PRON	_	PronType=Rel	13	nsubj	9:ref	_
+12	não	não	ADV	_	_	13	advmod	13:advmod	_
+13	gosta	gostar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	acl:relcl	9:acl:relcl	_
+14	de	de	ADP	_	_	15	mark	15:mark	_
+15	trabalhar	trabalhar	VERB	_	VerbForm=Inf	13	xcomp	13:xcomp	SpaceAfter=No
+16	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0005
+# text = A esquerda (paz e amor) só defende a democracia quando eles saem vencedores!.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	esquerda	esquerda	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	9:nsubj	_
+3	(	(	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+4	paz	paz	NOUN	_	Gender=Fem|Number=Sing	2	appos	2:appos	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	amor	amor	NOUN	_	Gender=Masc|Number=Sing	4	conj	2:appos|4:conj:e	SpaceAfter=No
+7	)	)	PUNCT	_	_	4	punct	4:punct	_
+8	só	só	ADV	_	_	9	advmod	9:advmod	_
+9	defende	defender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	democracia	democracia	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+12	quando	quando	SCONJ	_	_	14	mark	14:mark	_
+13	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	14	nsubj	14:nsubj|15:nsubj	_
+14	saem	sair	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	advcl	9:advcl:quando	_
+15	vencedores	vencedor	NOUN	_	Gender=Masc|Number=Plur	14	xcomp	14:xcomp	SpaceAfter=No
+16	!	!	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+17	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0007
+# text = (Hugo Yoshida para o Diário do Brasil) A vitória de Trump é um balde de água fria nos movimentos esquerdistas!
+1	(	(	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+2	Hugo	Hugo	PROPN	_	_	17	nsubj	17:nsubj	_
+3	Yoshida	Yoshida	PROPN	_	_	2	flat:name	2:flat:name	_
+4	para	para	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	Diário	Diário	PROPN	_	_	2	nmod	2:nmod:para	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	Brasil	Brasil	PROPN	_	_	6	flat:name	6:flat:name	SpaceAfter=No
+10	)	)	PUNCT	_	_	2	punct	2:punct	_
+11	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	vitória	vitória	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	17:nsubj	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	Trump	Trump	PROPN	_	_	12	nmod	12:nmod:de	_
+15	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	17:cop	_
+16	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	balde	balde	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	água	água	NOUN	_	Gender=Fem|Number=Sing	17	nmod	17:nmod:de	_
+20	fria	frio	ADJ	_	Gender=Fem|Number=Sing	19	amod	19:amod	_
+21-22	nos	_	_	_	_	_	_	_	_
+21	em	em	ADP	_	_	23	case	23:case	_
+22	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	23:det	_
+23	movimentos	movimento	NOUN	_	Gender=Masc|Number=Plur	17	nmod	17:nmod:em	_
+24	esquerdistas	esquerdista	ADJ	_	Number=Plur	23	amod	23:amod	SpaceAfter=No
+25	!	!	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0009
+# text = O novo presidente americano não vai "expulsar" os imigrantes legais [...] vamos repetir, não vai "expulsar" imigrantes legais!
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+2	novo	novo	ADJ	_	Gender=Masc|Number=Sing	3	amod	3:amod	_
+3	presidente	presidente	NOUN	_	Number=Sing	8	nsubj	8:nsubj	_
+4	americano	americano	ADJ	_	Gender=Masc|Number=Sing	3	amod	3:amod	_
+5	não	não	ADV	_	_	8	advmod	8:advmod	_
+6	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	8:aux	_
+7	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	expulsar	expulsar	VERB	_	VerbForm=Inf	0	root	0:root	SpaceAfter=No
+9	"	"	PUNCT	_	_	8	punct	8:punct	_
+10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	11:det	_
+11	imigrantes	imigrante	NOUN	_	Number=Plur	8	obj	8:obj	_
+12	legais	legal	ADJ	_	Number=Plur	11	amod	11:amod	_
+13	[	[	PUNCT	_	_	18	punct	18:punct	SpaceAfter=No
+14	.	.	PUNCT	_	_	18	parataxis	18:parataxis	SpaceAfter=No
+15	..	..	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+16	]	]	PUNCT	_	_	14	punct	14:punct	_
+17	vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	18	aux	18:aux	_
+18	repetir	repetir	VERB	_	VerbForm=Inf	8	parataxis	8:parataxis	SpaceAfter=No
+19	,	,	PUNCT	_	_	23	punct	23:punct	_
+20	não	não	ADV	_	_	23	advmod	23:advmod	_
+21	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	aux	23:aux	_
+22	"	"	PUNCT	_	_	23	punct	23:punct	SpaceAfter=No
+23	expulsar	expulsar	VERB	_	VerbForm=Inf	18	ccomp:speech	18:ccomp:speech	SpaceAfter=No
+24	"	"	PUNCT	_	_	23	punct	23:punct	_
+25	imigrantes	imigrante	NOUN	_	Number=Plur	23	obj	23:obj	_
+26	legais	legal	ADJ	_	Number=Plur	25	amod	25:amod	SpaceAfter=No
+27	!	!	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0011
+# text = É simples, basta seguir a LEI e se legalizar!
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	2:cop	_
+2	simples	simples	ADJ	_	_	0	root	0:root	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	basta	bastar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	2:parataxis	_
+5	seguir	seguir	VERB	_	VerbForm=Inf	4	csubj	4:csubj	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	LEI	LEI	PROPN	_	_	5	obj	5:obj	_
+8	e	e	CCONJ	_	_	10	cc	10:cc	_
+9	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	10	expl	10:expl	_
+10	legalizar	legalizar	VERB	_	Number=Sing|Person=3|VerbForm=Inf	5	conj	4:csubj|5:conj:e	SpaceAfter=No
+11	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0013
+# text = Isso vale tanto para a questão da imigração quanto para outras questões.
+1	Isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	2	nsubj	2:nsubj	_
+2	vale	valer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	tanto	tanto	CCONJ	_	_	6	cc	6:cc	_
+4	para	para	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	questão	questão	NOUN	_	Gender=Fem|Number=Sing	2	obl	2:obl:para	_
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	imigração	imigração	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de	_
+10	quanto	quanto	CCONJ	_	_	13	cc	13:cc	_
+11	para	para	ADP	_	_	13	case	13:case	_
+12	outras	outro	DET	_	Gender=Fem|Number=Plur|PronType=Ind	13	det	13:det	_
+13	questões	questão	NOUN	_	Gender=Fem|Number=Plur	6	conj	2:obl:para|6:conj:quanto	SpaceAfter=No
+14	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0015
+# text = Simpatizantes da esquerda (inclusive no Brasil) estão revoltados com a escolha do novo presidente norte-americano.
+1	Simpatizantes	simpatizante	NOUN	_	Number=Plur	12	nsubj	12:nsubj	_
+2-3	da	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	esquerda	esquerda	NOUN	_	Gender=Fem|Number=Sing	1	nmod	1:nmod:de	_
+5	(	(	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+6	inclusive	inclusive	ADV	_	_	9	advmod	9:advmod	_
+7-8	no	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	Brasil	Brasil	PROPN	_	_	1	nmod	1:nmod:em	SpaceAfter=No
+10	)	)	PUNCT	_	_	9	punct	9:punct	_
+11	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	cop	12:cop	_
+12	revoltados	revoltado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	0	root	0:root	_
+13	com	com	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	escolha	escolha	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl:com	_
+16-17	do	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	19	case	19:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+18	novo	novo	ADJ	_	Gender=Masc|Number=Sing	19	amod	19:amod	_
+19	presidente	presidente	NOUN	_	Number=Sing	15	nmod	15:nmod:de	_
+20	norte-americano	norte-americano	ADJ	_	Gender=Masc|Number=Sing	19	amod	19:amod	SpaceAfter=No
+21	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0017
+# text = Porque é que o comunista tem tantas dificuldades em seguir as regras?
+1	Porque	porque	CCONJ	_	_	6	cc	6:cc	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	discourse	6:discourse	_
+3	que	que	SCONJ	_	_	6	discourse	6:discourse	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	comunista	comunista	NOUN	_	Number=Sing	6	nsubj	6:nsubj	_
+6	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	tantas	tanto	DET	_	Gender=Fem|Number=Plur|PronType=Ind	8	det	8:det	_
+8	dificuldades	dificuldade	NOUN	_	Gender=Fem|Number=Plur	6	obj	6:obj	_
+9	em	em	ADP	_	_	10	mark	10:mark	_
+10	seguir	seguir	VERB	_	VerbForm=Inf	8	acl	8:acl:em	_
+11	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	12:det	_
+12	regras	regra	NOUN	_	Gender=Fem|Number=Plur	10	obj	10:obj	SpaceAfter=No
+13	?	?	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0019
+# text = Aquele mi-mi-mi de ficar o ano inteiro protestando, invadindo e depredando locais públicos não cola mais!
+1	Aquele	aquele	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	2:det	_
+2	mi-mi-mi	mi-mi-mi	NOUN	_	Gender=Masc|Number=Sing	16	nsubj	16:nsubj	_
+3	de	de	ADP	_	_	4	mark	4:mark	_
+4	ficar	ficar	VERB	_	VerbForm=Inf	2	acl	2:acl:de	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	ano	ano	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj|8:nsubj|10:nsubj|12:nsubj	_
+7	inteiro	inteiro	ADJ	_	Gender=Masc|Number=Sing	6	amod	6:amod	_
+8	protestando	protestar	VERB	_	VerbForm=Ger	4	xcomp	4:xcomp	SpaceAfter=No
+9	,	,	PUNCT	_	_	10	punct	10:punct	_
+10	invadindo	invadir	VERB	_	VerbForm=Ger	8	conj	4:xcomp|8:conj:e	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	depredando	depredar	VERB	_	VerbForm=Ger	8	conj	4:xcomp|8:conj:e	_
+13	locais	local	NOUN	_	Number=Plur	10	obj	10:obj	_
+14	públicos	público	ADJ	_	Gender=Masc|Number=Plur	13	amod	13:amod	_
+15	não	não	ADV	_	_	16	advmod	16:advmod	_
+16	cola	colar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+17	mais	mais	ADV	_	_	16	advmod	16:advmod	SpaceAfter=No
+18	!	!	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0021
+# text = A nova direita está tomando conta do Brasil [...] e do mundo.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+2	nova	novo	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+3	direita	direita	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+4	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	5:aux	_
+5	tomando	tomar	VERB	_	VerbForm=Ger	0	root	0:root	_
+6	conta	conta	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	Brasil	Brasil	PROPN	_	_	5	obl	5:obl:de	_
+10	[	[	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+11	.	.	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+12	..	..	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+13	]	]	PUNCT	_	_	11	punct	11:punct	_
+14	e	e	CCONJ	_	_	17	cc	17:cc	_
+15-16	do	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	9	conj	5:obl:de|9:conj:e	SpaceAfter=No
+18	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0023
+# text = Chega de grupos como o Femen, que viaja o mundo fazendo protestos sem roupas!
+1	Chega	chegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	grupos	grupo	NOUN	_	Gender=Masc|Number=Plur	1	obl	1:obl:de	_
+4	como	como	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	Femen	Femen	PROPN	_	_	3	nmod	3:nmod:como|9:nsubj	SpaceAfter=No
+7	,	,	PUNCT	_	_	9	punct	9:punct	_
+8	que	que	PRON	_	PronType=Rel	9	nsubj	6:ref	_
+9	viaja	viajar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl:relcl	6:acl:relcl	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	9	obj	9:obj	_
+12	fazendo	fazer	VERB	_	VerbForm=Ger	9	advcl	9:advcl	_
+13	protestos	protesto	NOUN	_	Gender=Masc|Number=Plur	12	obj	12:obj	_
+14	sem	sem	ADP	_	_	15	case	15:case	_
+15	roupas	roupa	NOUN	_	Gender=Fem|Number=Plur	13	nmod	13:nmod:sem	SpaceAfter=No
+16	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0025
+# text = Chega de anarquistas tacando fogo nas ruas e venerando bandeiras vermelhas!
+1	Chega	chegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	anarquistas	anarquista	NOUN	_	Number=Plur	1	obl	1:obl:de	_
+4	tacando	tacar	VERB	_	VerbForm=Ger	3	acl	3:acl	_
+5	fogo	fogo	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+6-7	nas	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	8:det	_
+8	ruas	rua	NOUN	_	Gender=Fem|Number=Plur	4	obl	4:obl:em	_
+9	e	e	CCONJ	_	_	10	cc	10:cc	_
+10	venerando	venerar	VERB	_	VerbForm=Ger	4	conj	3:acl|4:conj:e	_
+11	bandeiras	bandeira	NOUN	_	Number=Plur	10	obj	10:obj	_
+12	vermelhas	vermelho	ADJ	_	Gender=Fem|Number=Plur	11	amod	11:amod	SpaceAfter=No
+13	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0027
+# text = Chega de presidentes corruptos enriquecendo às custas de quem trabalha e fazendo doações de "bolsa-esmola" para angariar popularidade.
+1	Chega	chegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	presidentes	presidente	NOUN	_	Number=Plur	1	obl	1:obl:de	_
+4	corruptos	corrupto	ADJ	_	Gender=Masc|Number=Plur	3	amod	3:amod	_
+5	enriquecendo	enriquecer	VERB	_	VerbForm=Ger	3	acl	3:acl	_
+6-7	às	_	_	_	_	_	_	_	_
+6	a	a	ADP	_	_	8	case	8:case	_
+7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	8:det	_
+8	custas	custa	NOUN	_	Gender=Fem|Number=Plur	5	obl	5:obl:a	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	quem	quem	PRON	_	PronType=Ind	8	nmod	8:nmod:de	_
+11	trabalha	trabalhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	acl:relcl	10:acl:relcl	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	fazendo	fazer	VERB	_	VerbForm=Ger	5	conj	3:acl|5:conj:e	_
+14	doações	doação	NOUN	_	Gender=Fem|Number=Plur	13	obj	13:obj	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	"	"	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+17	bolsa-esmola	bolsa-esmola	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:de	SpaceAfter=No
+18	"	"	PUNCT	_	_	17	punct	17:punct	_
+19	para	para	ADP	_	_	20	mark	20:mark	_
+20	angariar	angariar	VERB	_	VerbForm=Inf	13	advcl	13:advcl:para	_
+21	popularidade	popularidade	NOUN	_	Gender=Fem|Number=Sing	20	obj	20:obj	SpaceAfter=No
+22	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0029
+# text = Chega de Hillary Clinton, que está entupida de corrupção até o pescoço!
+1	Chega	chegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	Hillary	Hillary	PROPN	_	_	1	obl	1:obl:de|8:nsubj	_
+4	Clinton	Clinton	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	8	punct	8:punct	_
+6	que	que	PRON	_	PronType=Rel	8	nsubj	3:ref	_
+7	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop	_
+8	entupida	entupido	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	3	acl:relcl	3:acl:relcl	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	corrupção	corrupção	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:de	_
+11	até	até	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	pescoço	pescoço	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:até	SpaceAfter=No
+14	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0031
+# text = Chega de Lula!
+1	Chega	chegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	Lula	Lula	PROPN	_	_	1	obl	1:obl:de	SpaceAfter=No
+4	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0033
+# text = Chega de Dilma!
+1	Chega	chegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	Dilma	Dilma	PROPN	_	_	1	obl	1:obl:de	SpaceAfter=No
+4	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0035
+# text = Chega de Michel Temer!
+1	Chega	chegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	Michel	Michel	PROPN	_	_	1	obl	1:obl:de	_
+4	Temer	Temer	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+5	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0037
+# text = Chega de venerar assassinos ditadores e tratá-los como heróis!
+1	Chega	chegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	de	de	ADP	_	_	3	mark	3:mark|7:mark	_
+3	venerar	venerar	VERB	_	VerbForm=Inf	1	acl	1:acl:de	_
+4	assassinos	assassino	NOUN	_	Gender=Masc|Number=Plur	3	obj	3:obj	_
+5	ditadores	ditador	ADJ	_	Gender=Masc|Number=Plur	4	amod	4:amod	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7-8	tratá-los	_	_	_	_	_	_	_	_
+7	tratar	tratar	VERB	_	VerbForm=Inf	3	conj	1:acl:de|3:conj:e	_
+8	los	lo	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	7	obj	7:obj	_
+9	como	como	ADP	_	_	10	case	10:case	_
+10	heróis	herói	NOUN	_	Gender=Masc|Number=Plur	7	obl	7:obl:como	SpaceAfter=No
+11	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0039
+# text = Chega de esperar que o governo te sustente!
+1	Chega	chegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	de	de	ADP	_	_	3	mark	3:mark	_
+3	esperar	esperar	VERB	_	VerbForm=Inf	1	acl	1:acl:de	_
+4	que	que	SCONJ	_	_	8	mark	8:mark	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	governo	governo	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	8:nsubj	_
+7	te	te	PRON	_	Case=Acc|Number=Sing|Person=2|PronType=Prs	8	obj	8:obj	_
+8	sustente	sustentar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	3:ccomp	SpaceAfter=No
+9	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0041
+# text = Chega de ser manipulado pela mídia!
+1	Chega	chegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	de	de	ADP	_	_	4	mark	4:mark	_
+3	ser	ser	AUX	_	VerbForm=Inf	4	aux:pass	4:aux:pass	_
+4	manipulado	manipular	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	1	acl	1:acl:de	_
+5-6	pela	_	_	_	_	_	_	_	_
+5	por	por	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	mídia	mídia	NOUN	_	Gender=Fem|Number=Sing	4	obl:agent	4:obl:agent	SpaceAfter=No
+8	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0043
+# text = Chega de acreditar em pesquisas fraudulentas que induzem os eleitores ao erro!
+1	Chega	chegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	de	de	ADP	_	_	3	mark	3:mark	_
+3	acreditar	acreditar	VERB	_	VerbForm=Inf	1	xcomp	1:xcomp	_
+4	em	em	ADP	_	_	5	case	5:case	_
+5	pesquisas	pesquisa	NOUN	_	Gender=Fem|Number=Plur	3	obl	3:obl:em|8:nsubj	_
+6	fraudulentas	fraudulento	ADJ	_	Gender=Fem|Number=Plur	5	amod	5:amod	_
+7	que	que	PRON	_	PronType=Rel	8	nsubj	5:ref	_
+8	induzem	induzir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_
+9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	10:det	_
+10	eleitores	eleitor	NOUN	_	Gender=Masc|Number=Plur	8	obj	8:obj	_
+11-12	ao	_	_	_	_	_	_	_	_
+11	a	a	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	erro	erro	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:a	SpaceAfter=No
+14	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0045
+# text = Uma nova era está chegando no mundo!
+1	Uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+2	nova	novo	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+3	era	era	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+4	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	5:aux	_
+5	chegando	chegar	VERB	_	VerbForm=Ger	0	root	0:root	_
+6-7	no	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:em	SpaceAfter=No
+9	!	!	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0047
+# text = Não há o que temer!
+1	Não	não	ADV	_	_	2	advmod	2:advmod	_
+2	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	o	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	obj	5:obj	_
+4	que	que	PRON	_	PronType=Int	3	fixed	3:fixed	_
+5	temer	temer	VERB	_	VerbForm=Inf	2	ccomp	2:ccomp	SpaceAfter=No
+6	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0049
+# text = Que a vitória de Donald Trump sirva de exemplo para algum empresário bem sucedido no Brasil!
+1	Que	que	SCONJ	_	_	7	mark	7:mark	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	vitória	vitória	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	Donald	Donald	PROPN	_	_	3	nmod	3:nmod:de	_
+6	Trump	Trump	PROPN	_	_	5	flat:name	5:flat:name	_
+7	sirva	servir	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	exemplo	exemplo	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:de	_
+10	para	para	ADP	_	_	12	case	12:case	_
+11	algum	algum	DET	_	Gender=Masc|Number=Sing|PronType=Ind	12	det	12:det	_
+12	empresário	empresário	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:para	_
+13	bem	bem	ADV	_	_	14	advmod	14:advmod	_
+14	sucedido	sucedido	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	12	amod	12:amod	_
+15-16	no	_	_	_	_	_	_	_	_
+15	em	em	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	Brasil	Brasil	PROPN	_	_	14	obl	14:obl:em	SpaceAfter=No
+18	!	!	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0051
+# text = Que venha um novo presidente!
+1	Que	que	SCONJ	_	_	2	mark	2:mark	_
+2	venha	vir	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+4	novo	novo	ADJ	_	Gender=Masc|Number=Sing	5	amod	5:amod	_
+5	presidente	presidente	NOUN	_	Number=Sing	2	nsubj	2:nsubj	SpaceAfter=No
+6	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0053
+# text = Que venha um novo estilo de administrar nosso país!
+1	Que	que	SCONJ	_	_	2	mark	2:mark	_
+2	venha	vir	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+4	novo	novo	ADJ	_	Gender=Masc|Number=Sing	5	amod	5:amod	_
+5	estilo	estilo	NOUN	_	Gender=Masc|Number=Sing	2	nsubj	2:nsubj	_
+6	de	de	ADP	_	_	7	mark	7:mark	_
+7	administrar	administrar	VERB	_	VerbForm=Inf	5	acl	5:acl:de	_
+8	nosso	nosso	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	9	det	9:det	_
+9	país	país	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	SpaceAfter=No
+10	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0055
+# text = Que venha João Dória, Sílvio Santos, a Luíza do Magazine, Abílio Diniz [...] enfim, que em 2018 apareça no Brasil um candidato que não seja político de profissão!
+1	Que	que	SCONJ	_	_	2	mark	2:mark	_
+2	venha	vir	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	João	João	PROPN	_	_	2	nsubj	2:nsubj	_
+4	Dória	Dória	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	Sílvio	Sílvio	PROPN	_	_	3	conj	2:nsubj|3:conj	_
+7	Santos	Santos	PROPN	_	_	6	flat:name	6:flat:name	SpaceAfter=No
+8	,	,	PUNCT	_	_	10	punct	10:punct	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	Luíza	Luíza	PROPN	_	_	3	conj	2:nsubj|3:conj	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	Magazine	Magazine	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+14	,	,	PUNCT	_	_	15	punct	15:punct	_
+15	Abílio	Abílio	PROPN	_	_	3	conj	2:nsubj|3:conj	_
+16	Diniz	Diniz	PROPN	_	_	15	flat:name	15:flat:name	_
+17	[	[	PUNCT	_	_	18	punct	18:punct	SpaceAfter=No
+18	.	.	PUNCT	_	_	15	parataxis	15:parataxis	SpaceAfter=No
+19	..	..	PUNCT	_	_	21	punct	21:punct	SpaceAfter=No
+20	]	]	PUNCT	_	_	21	punct	21:punct	_
+21	enfim	enfim	ADV	_	_	26	advmod	26:advmod	SpaceAfter=No
+22	,	,	PUNCT	_	_	21	punct	21:punct	_
+23	que	que	SCONJ	_	_	26	mark	26:mark	_
+24	em	em	ADP	_	_	25	case	25:case	_
+25	2018	2018	NUM	_	NumType=Card	26	obl	26:obl:em	_
+26	apareça	aparecer	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	advcl	2:advcl:que	_
+27-28	no	_	_	_	_	_	_	_	_
+27	em	em	ADP	_	_	29	case	29:case	_
+28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	29:det	_
+29	Brasil	Brasil	PROPN	_	_	26	obl	26:obl:em	_
+30	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	candidato	candidato	NOUN	_	Gender=Masc|Number=Sing	26	nsubj	26:nsubj|35:nsubj	_
+32	que	que	PRON	_	PronType=Rel	35	nsubj	31:ref	_
+33	não	não	ADV	_	_	35	advmod	35:advmod	_
+34	seja	ser	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	35	cop	35:cop	_
+35	político	político	NOUN	_	Gender=Masc|Number=Sing	31	acl:relcl	31:acl:relcl	_
+36	de	de	ADP	_	_	37	case	37:case	_
+37	profissão	profissão	NOUN	_	Gender=Fem|Number=Sing	35	nmod	35:nmod:de	SpaceAfter=No
+38	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0057
+# text = Como dizia o escritor português Eça de Queiroz: "Políticos e fraldas devem ser trocados de tempos em tempos pelo mesmo motivo".
+1	Como	como	SCONJ	_	_	2	mark	2:mark	_
+2	dizia	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	14	advcl	14:advcl:como	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	escritor	escritor	NOUN	_	Gender=Masc|Number=Sing	2	nsubj	2:nsubj	_
+5	português	português	ADJ	_	Gender=Masc|Number=Sing	4	amod	4:amod	_
+6	Eça	Eça	PROPN	_	_	4	nmod	4:nmod	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	Queiroz	Queiroz	PROPN	_	_	6	flat:name	6:flat:name	SpaceAfter=No
+9	:	:	PUNCT	_	_	2	punct	2:punct	_
+10	"	"	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+11	Políticos	político	NOUN	_	Gender=Masc|Number=Plur	14	nsubj	14:nsubj|16:nsubj:pass	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	fraldas	fralda	NOUN	_	Gender=Fem|Number=Plur	11	conj	11:conj:e|14:nsubj|16:nsubj:pass	_
+14	devem	dever	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+15	ser	ser	AUX	_	VerbForm=Inf	16	aux:pass	16:aux:pass	_
+16	trocados	trocar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	14	xcomp	14:xcomp	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	tempos	tempo	NOUN	_	Gender=Masc|Number=Plur	16	obl	16:obl:de	_
+19	em	em	ADP	_	_	20	case	20:case	_
+20	tempos	tempo	NOUN	_	Gender=Masc|Number=Plur	18	nmod	18:nmod:em	_
+21-22	pelo	_	_	_	_	_	_	_	_
+21	por	por	ADP	_	_	24	case	24:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+23	mesmo	mesmo	DET	_	Gender=Masc|Number=Sing|PronType=Dem	24	det	24:det	_
+24	motivo	motivo	NOUN	_	Gender=Masc|Number=Sing	16	obl	16:obl:por	SpaceAfter=No
+25	"	"	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+26	.	.	PUNCT	_	_	14	punct	14:punct	_

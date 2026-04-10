@@ -1,0 +1,130 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Temer suspende bilhões que iria para Cuba e vai investir na saúde do BRASIL.
+1	Temer	Temer	PROPN	_	_	2	nsubj	2:nsubj|10:nsubj	_
+2	suspende	suspender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	bilhões	bilhão	NOUN	_	Gender=Masc|Number=Plur	2	obj	2:obj|5:nsubj	_
+4	que	que	PRON	_	PronType=Rel	5	nsubj	3:ref	_
+5	iria	ir	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_
+6	para	para	ADP	_	_	7	case	7:case	_
+7	Cuba	Cuba	PROPN	_	_	5	obl	5:obl:para	_
+8	e	e	CCONJ	_	_	10	cc	10:cc	_
+9	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux	10:aux	_
+10	investir	investir	VERB	_	VerbForm=Inf	2	conj	2:conj:e	_
+11-12	na	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:em	_
+14-15	do	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	BRASIL	BRASIL	PROPN	_	_	13	nmod	13:nmod:de	SpaceAfter=No
+17	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = A interrupção de envio do dinheiro para Cuba foi anunciada pelo Presidente Michel Temer.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	interrupção	interrupção	NOUN	_	Gender=Fem|Number=Sing	11	nsubj:pass	11:nsubj:pass	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	envio	envio	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:de	_
+8	para	para	ADP	_	_	9	case	9:case	_
+9	Cuba	Cuba	PROPN	_	_	4	nmod	4:nmod:para	_
+10	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	aux:pass	11:aux:pass	_
+11	anunciada	anunciar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+12-13	pelo	_	_	_	_	_	_	_	_
+12	por	por	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	Presidente	Presidente	PROPN	_	_	11	obl:agent	11:obl:agent	_
+15	Michel	Michel	PROPN	_	_	14	flat:name	14:flat:name	_
+16	Temer	Temer	PROPN	_	_	15	flat:name	15:flat:name	SpaceAfter=No
+17	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0005
+# text = Temer disse: "vamos investir em nossa saúde, nossos médicos, nosso brasil, não podemos mais acobertar a intenção de favorecer a ditadura cubana por meio do Programa Mais Médicos" O futuro governo deverá rever os contratos com os médicos cubanos, visando assegurar-lhes os direitos profissionais a remuneração adequada em seu Pais.
+1	Temer	Temer	PROPN	_	_	2	nsubj	2:nsubj	_
+2	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+3	:	:	PUNCT	_	_	6	punct	6:punct	_
+4	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+5	vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	6	aux	6:aux	_
+6	investir	investir	VERB	_	VerbForm=Inf	2	ccomp:speech	2:ccomp:speech	_
+7	em	em	ADP	_	_	9	case	9:case|12:case|15:case	_
+8	nossa	nosso	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	9	det	9:det	_
+9	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:em	SpaceAfter=No
+10	,	,	PUNCT	_	_	12	punct	12:punct	_
+11	nossos	nosso	DET	_	Gender=Masc|Number=Plur|Person=1|Poss=Yes|PronType=Prs	12	det	12:det	_
+12	médicos	médico	NOUN	_	Gender=Masc|Number=Plur	9	conj	6:obl:em|9:conj	SpaceAfter=No
+13	,	,	PUNCT	_	_	15	punct	15:punct	_
+14	nosso	nosso	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	15	det	15:det	_
+15	brasil	brasil	NOUN	_	Gender=Masc|Number=Sing	9	conj	6:obl:em|9:conj	SpaceAfter=No
+16	,	,	PUNCT	_	_	18	punct	18:punct	_
+17	não	não	ADV	_	_	18	advmod	18:advmod	_
+18	podemos	poder	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	6	conj	2:ccomp:speech|6:conj	_
+19	mais	mais	ADV	_	_	18	advmod	18:advmod	_
+20	acobertar	acobertar	VERB	_	VerbForm=Inf	18	xcomp	18:xcomp	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	intenção	intenção	NOUN	_	Gender=Fem|Number=Sing	20	obj	20:obj	_
+23	de	de	ADP	_	_	24	mark	24:mark	_
+24	favorecer	favorecer	VERB	_	VerbForm=Inf	22	acl	22:acl:de	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	ditadura	ditadura	NOUN	_	Gender=Fem|Number=Sing	24	obj	24:obj	_
+27	cubana	cubano	ADJ	_	Gender=Fem|Number=Sing	26	amod	26:amod	_
+28	por	por	ADP	_	_	29	case	29:case	_
+29	meio	meio	NOUN	_	Gender=Masc|Number=Sing	24	obl	24:obl:por	_
+30-31	do	_	_	_	_	_	_	_	_
+30	de	de	ADP	_	_	32	case	32:case	_
+31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+32	Programa	Programa	PROPN	_	_	29	nmod	29:nmod:de	_
+33	Mais	Mais	PROPN	_	_	32	flat:name	32:flat:name	_
+34	Médicos	Médicos	PROPN	_	_	32	flat:name	32:flat:name	SpaceAfter=No
+35	"	"	PUNCT	_	_	6	punct	6:punct	_
+36	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	38:det	_
+37	futuro	futuro	ADJ	_	Gender=Masc|Number=Sing	38	amod	38:amod	_
+38	governo	governo	NOUN	_	Gender=Masc|Number=Sing	39	nsubj	39:nsubj|40:nsubj	_
+39	deverá	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	2	dep	2:dep	_
+40	rever	rever	VERB	_	VerbForm=Inf	39	xcomp	39:xcomp	_
+41	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	42	det	42:det	_
+42	contratos	contrato	NOUN	_	Gender=Masc|Number=Plur	40	obj	40:obj	_
+43	com	com	ADP	_	_	45	case	45:case	_
+44	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	45	det	45:det	_
+45	médicos	médico	NOUN	_	Gender=Masc|Number=Plur	42	nmod	42:nmod:com	_
+46	cubanos	cubano	ADJ	_	Gender=Masc|Number=Plur	45	amod	45:amod	SpaceAfter=No
+47	,	,	PUNCT	_	_	48	punct	48:punct	_
+48	visando	visar	VERB	_	VerbForm=Ger	6	advcl	6:advcl|18:advcl	_
+49-50	assegurar-lhes	_	_	_	_	_	_	_	_
+49	assegurar	assegurar	VERB	_	VerbForm=Inf	48	xcomp	48:xcomp	_
+50	lhes	lhe	PRON	_	Case=Dat|Number=Plur|Person=3|PronType=Prs	49	iobj	49:iobj	_
+51	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	52	det	52:det	_
+52	direitos	direito	NOUN	_	Gender=Masc|Number=Plur	49	obj	49:obj	_
+53	profissionais	profissional	ADJ	_	Number=Plur	52	amod	52:amod	_
+54	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	55	det	55:det	_
+55	remuneração	remuneração	NOUN	_	Gender=Fem|Number=Sing	49	obj	49:obj	_
+56	adequada	adequado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	55	amod	55:amod	_
+57	em	em	ADP	_	_	59	case	59:case	_
+58	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	59	det	59:det	_
+59	Pais	Pais	PROPN	_	_	55	nmod	55:nmod:em	SpaceAfter=No
+60	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0007
+# text = Cerca de 50 espiões cubanos enviados ao Brasil para fiscalizar os profissionais deverão ser extraditados.
+1	Cerca	cerca	ADV	_	ExtPos=ADV	3	advmod	3:advmod	_
+2	de	de	ADP	_	_	1	fixed	1:fixed	_
+3	50	50	NUM	_	NumType=Card	4	nummod	4:nummod	_
+4	espiões	espião	NOUN	_	Gender=Masc|Number=Plur	14	nsubj	14:nsubj|16:nsubj:pass	_
+5	cubanos	cubano	ADJ	_	Gender=Masc|Number=Plur	4	amod	4:amod	_
+6	enviados	enviar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	4	acl	4:acl	_
+7-8	ao	_	_	_	_	_	_	_	_
+7	a	a	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	Brasil	Brasil	PROPN	_	_	6	obl	6:obl:a	_
+10	para	para	ADP	_	_	11	mark	11:mark	_
+11	fiscalizar	fiscalizar	VERB	_	VerbForm=Inf	6	advcl	6:advcl:para	_
+12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	13:det	_
+13	profissionais	profissional	NOUN	_	Number=Plur	11	obj	11:obj	_
+14	deverão	dever	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+15	ser	ser	AUX	_	VerbForm=Inf	16	aux:pass	16:aux:pass	_
+16	extraditados	extraditar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	14	xcomp	14:xcomp	SpaceAfter=No
+17	.	.	PUNCT	_	_	14	punct	14:punct	_

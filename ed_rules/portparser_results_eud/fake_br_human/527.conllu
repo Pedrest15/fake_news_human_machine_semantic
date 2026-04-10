@@ -1,0 +1,214 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = "Anus dourados" Artista cria vaso sanitário de ouro com acabamento Louis Vuitton.
+1	"	"	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+2	Anus	anu	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	6:nsubj	_
+3	dourados	dourado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	2	amod	2:amod	SpaceAfter=No
+4	"	"	PUNCT	_	_	2	punct	2:punct	_
+5	Artista	artista	NOUN	_	Number=Sing	6	nsubj	6:nsubj	_
+6	cria	criar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	vaso	vaso	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+8	sanitário	sanitário	ADJ	_	Gender=Masc|Number=Sing	7	amod	7:amod	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	ouro	ouro	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	_
+11	com	com	ADP	_	_	12	case	12:case	_
+12	acabamento	acabamento	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:com	_
+13	Louis	Louis	PROPN	_	_	12	nmod	12:nmod	_
+14	Vuitton	Vuitton	PROPN	_	_	13	flat:name	13:flat:name	SpaceAfter=No
+15	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0003
+# text = Cerca de 1 bilhão de pessoas passam fome diariamente no mundo... enquanto uns passam fome, outros preferem rasgar dinheiro.
+1	Cerca	cerca	ADV	_	ExtPos=ADV	3	advmod	3:advmod	_
+2	de	de	ADP	_	_	1	fixed	1:fixed	_
+3	1	1	NUM	_	NumType=Card	4	nummod	4:nummod	_
+4	bilhão	bilhão	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	4	nmod	4:nmod:de	_
+7	passam	passar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	fome	fome	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	_
+9	diariamente	diariamente	ADV	_	_	7	advmod	7:advmod	_
+10-11	no	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:em	SpaceAfter=No
+13	...	...	PUNCT	_	_	20	punct	20:punct	_
+14	enquanto	enquanto	SCONJ	_	_	16	mark	16:mark	_
+15	uns	um	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	16	nsubj	16:nsubj	_
+16	passam	passar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	advcl	20:advcl:enquanto	_
+17	fome	fome	NOUN	_	Gender=Fem|Number=Sing	16	obj	16:obj	SpaceAfter=No
+18	,	,	PUNCT	_	_	16	punct	16:punct	_
+19	outros	outro	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	20	nsubj	20:nsubj|21:nsubj	_
+20	preferem	preferir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	conj	7:conj	_
+21	rasgar	rasgar	VERB	_	VerbForm=Inf	20	xcomp	20:xcomp	_
+22	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	21	obj	21:obj	SpaceAfter=No
+23	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0005
+# text = Foi o que aconteceu na cidade de Santa Mônica, Califórnia.
+1	Foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	cop	2:cop	_
+2	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	0	root	0:root|4:nsubj	_
+3	que	que	PRON	_	PronType=Rel	4	nsubj	2:ref	_
+4	aconteceu	acontecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+5-6	na	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	cidade	cidade	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:em	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	Santa	Santa	PROPN	_	_	7	nmod	7:nmod:de	_
+10	Mônica	Mônica	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	Califórnia	Califórnia	PROPN	_	_	9	parataxis	9:parataxis	SpaceAfter=No
+13	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0007
+# text = A artista Illma Gore, conhecida por pintar quadros em que Donald Trump aparece pelado, decidiu inovar e criou uma privada banhada a ouro avaliada em 100 mil dólares.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	artista	artista	NOUN	_	Number=Sing	17	nsubj	17:nsubj|18:nsubj|20:nsubj	_
+3	Illma	Illma	PROPN	_	_	2	nmod	2:nmod	_
+4	Gore	Gore	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	conhecida	conhecido	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	2	amod	2:amod	_
+7	por	por	ADP	_	_	8	mark	8:mark	_
+8	pintar	pintar	VERB	_	VerbForm=Inf	6	acl	6:acl:por	_
+9	quadros	quadro	NOUN	_	Gender=Masc|Number=Plur	8	obj	8:obj|14:obl:em	_
+10	em	em	ADP	_	_	11	case	11:case	_
+11	que	que	PRON	_	PronType=Rel	14	obl	9:ref	_
+12	Donald	Donald	PROPN	_	_	14	nsubj	14:nsubj|15:nsubj	_
+13	Trump	Trump	PROPN	_	_	12	flat:name	12:flat:name	_
+14	aparece	aparecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	acl:relcl	9:acl:relcl	_
+15	pelado	pelado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	14	xcomp	14:xcomp	SpaceAfter=No
+16	,	,	PUNCT	_	_	6	punct	6:punct	_
+17	decidiu	decidir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+18	inovar	inovar	VERB	_	VerbForm=Inf	17	xcomp	17:xcomp	_
+19	e	e	CCONJ	_	_	20	cc	20:cc	_
+20	criou	criar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	conj	17:conj:e	_
+21	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	privada	privado	NOUN	_	Gender=Fem|Number=Sing	20	obj	20:obj	_
+23	banhada	banhado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	22	acl	22:acl	_
+24	a	a	ADP	_	_	25	case	25:case	_
+25	ouro	ouro	NOUN	_	Gender=Masc|Number=Sing	23	obl	23:obl:a	_
+26	avaliada	avaliar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	22	acl	22:acl	_
+27	em	em	ADP	_	_	30	case	30:case	_
+28	100	100	NUM	_	NumType=Card	30	nummod	30:nummod	_
+29	mil	mil	NUM	_	NumType=Card	28	flat	28:flat	_
+30	dólares	dólare	NOUN	_	Gender=Masc|Number=Plur	26	obl	26:obl:em	SpaceAfter=No
+31	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0009
+# text = No acabamento, ela conta que usou vinte e quatro bolsas da grife Louis Vuitton.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	acabamento	acabamento	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:em	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	6	nsubj	6:nsubj	_
+6	conta	contar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	que	que	SCONJ	_	_	8	mark	8:mark	_
+8	usou	usar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	ccomp	6:ccomp	_
+9	vinte	vinte	NUM	_	NumType=Card	12	nummod	12:nummod	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	quatro	quatro	NUM	_	NumType=Card	9	conj	9:conj:e|12:nummod	_
+12	bolsas	bolsa	NOUN	_	Gender=Fem|Number=Plur	8	obj	8:obj	_
+13-14	da	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	grife	grife	NOUN	_	Gender=Fem|Number=Sing	12	nmod	12:nmod:de	_
+16	Louis	Louis	PROPN	_	_	15	nmod	15:nmod	_
+17	Vuitton	Vuitton	PROPN	_	_	16	flat:name	16:flat:name	SpaceAfter=No
+18	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0011
+# text = "Adorei o sentimento de cortar várias bolsas de US$ 2 mil (cada)", disse Gore, que fez questão de ressaltar que a privada não tem nada de especial.
+1	"	"	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+2	Adorei	adorar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	18	ccomp:speech	18:ccomp:speech	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	sentimento	sentimento	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+5	de	de	ADP	_	_	6	mark	6:mark	_
+6	cortar	cortar	VERB	_	VerbForm=Inf	4	acl	4:acl:de	_
+7	várias	vários	DET	_	Gender=Fem|Number=Plur|PronType=Ind	8	det	8:det	_
+8	bolsas	bolsa	NOUN	_	Gender=Fem|Number=Plur	6	obj	6:obj	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	US$	US$	SYM	_	_	8	nmod	8:nmod:de	_
+11	2	2	NUM	_	NumType=Card	10	nummod	10:nummod	_
+12	mil	mil	NUM	_	NumType=Card	11	flat	11:flat	_
+13	(	(	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+14	cada	cada	DET	_	Number=Sing|PronType=Ind	10	parataxis	10:parataxis	SpaceAfter=No
+15	)	)	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+16	"	"	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+17	,	,	PUNCT	_	_	2	punct	2:punct	_
+18	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+19	Gore	Gore	PROPN	_	_	18	nsubj	18:nsubj|22:nsubj	SpaceAfter=No
+20	,	,	PUNCT	_	_	22	punct	22:punct	_
+21	que	que	PRON	_	PronType=Rel	22	nsubj	19:ref	_
+22	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	acl:relcl	19:acl:relcl	_
+23	questão	questão	NOUN	_	Gender=Fem|Number=Sing	22	obj	22:obj	_
+24	de	de	ADP	_	_	25	mark	25:mark	_
+25	ressaltar	ressaltar	VERB	_	VerbForm=Inf	23	acl	23:acl:de	_
+26	que	que	SCONJ	_	_	30	mark	30:mark	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	privada	privado	NOUN	_	Gender=Fem|Number=Sing	30	nsubj	30:nsubj	_
+29	não	não	ADV	_	_	30	advmod	30:advmod	_
+30	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	ccomp	25:ccomp	_
+31	nada	nada	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	30	obj	30:obj	_
+32	de	de	ADP	_	_	33	case	33:case	_
+33	especial	especial	ADJ	_	Number=Sing	31	nmod	31:nmod:de	SpaceAfter=No
+34	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0013
+# text = Realmente, isso é um avanço para a humanidade!
+1	Realmente	realmente	ADV	_	_	6	advmod	6:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	6	nsubj	6:nsubj	_
+4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	avanço	avanço	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+7	para	para	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	humanidade	humanidade	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:para	SpaceAfter=No
+10	!	!	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0015
+# text = Parabéns para a artista.
+1	Parabéns	parabén	NOUN	_	Gender=Masc|Number=Plur	0	root	0:root	_
+2	para	para	ADP	_	_	4	case	4:case	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	artista	artista	NOUN	_	Number=Sing	1	nmod	1:nmod:para	SpaceAfter=No
+5	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0017
+# text = Parafraseando Albert Einstein: Duas coisas são infinitas: o universo e a estupidez humana.
+1	Parafraseando	parafrasear	VERB	_	VerbForm=Ger	8	parataxis	8:parataxis	_
+2	Albert	Albert	PROPN	_	_	1	obj	1:obj	_
+3	Einstein	Einstein	PROPN	_	_	2	flat:name	2:flat:name	SpaceAfter=No
+4	:	:	PUNCT	_	_	1	punct	1:punct	_
+5	Duas	dois	NUM	_	Gender=Fem|NumType=Card	6	nummod	6:nummod	_
+6	coisas	coisa	NOUN	_	Gender=Fem|Number=Plur	8	nsubj	8:nsubj	_
+7	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop	_
+8	infinitas	infinito	ADJ	_	Gender=Fem|Number=Plur	0	root	0:root	SpaceAfter=No
+9	:	:	PUNCT	_	_	11	punct	11:punct	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	universo	universo	NOUN	_	Gender=Masc|Number=Sing	8	appos	8:appos	_
+12	e	e	CCONJ	_	_	14	cc	14:cc	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	estupidez	estupidez	NOUN	_	Gender=Fem|Number=Sing	11	conj	8:appos|11:conj:e	_
+15	humana	humano	ADJ	_	Gender=Fem|Number=Sing	14	amod	14:amod	SpaceAfter=No
+16	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0019
+# text = Mas, em relação ao universo, ainda não tenho certeza absoluta.
+1	Mas	mas	CCONJ	_	_	11	cc	11:cc	SpaceAfter=No
+2	,	,	PUNCT	_	_	4	punct	4:punct	_
+3	em	em	ADP	_	_	4	case	4:case	_
+4	relação	relação	NOUN	_	Gender=Fem|Number=Sing	11	obl	11:obl:em	_
+5-6	ao	_	_	_	_	_	_	_	_
+5	a	a	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	universo	universo	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:a	SpaceAfter=No
+8	,	,	PUNCT	_	_	4	punct	4:punct	_
+9	ainda	ainda	ADV	_	_	11	advmod	11:advmod	_
+10	não	não	ADV	_	_	11	advmod	11:advmod	_
+11	tenho	ter	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+12	certeza	certeza	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	_
+13	absoluta	absoluto	ADJ	_	Gender=Fem|Number=Sing	12	amod	12:amod	SpaceAfter=No
+14	.	.	PUNCT	_	_	11	punct	11:punct	_

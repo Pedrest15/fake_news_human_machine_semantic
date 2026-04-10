@@ -1,0 +1,497 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Prefeito Rafael Greca anuncia revolução nos serviços de Curitiba após 100 dias de gestão.
+1	Prefeito	prefeito	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+2	Rafael	Rafael	PROPN	_	_	1	nmod	1:nmod	_
+3	Greca	Greca	PROPN	_	_	2	flat:name	2:flat:name	_
+4	anuncia	anunciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	revolução	revolução	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+6-7	nos	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	8:det	_
+8	serviços	serviço	NOUN	_	Gender=Masc|Number=Plur	5	nmod	5:nmod:em	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	Curitiba	Curitiba	PROPN	_	_	8	nmod	8:nmod:de	_
+11	após	após	ADP	_	_	13	case	13:case	_
+12	100	100	NUM	_	NumType=Card	13	nummod	13:nummod	_
+13	dias	dia	NOUN	_	Gender=Masc|Number=Plur	4	obl	4:obl:após	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	gestão	gestão	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:de	SpaceAfter=No
+16	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0003
+# text = Em entrevista bombástica, o prefeito afirmou ter encontrado a cidade em estado de calamidade pública, com dívidas astronômicas e serviços essenciais à beira do colapso.
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	entrevista	entrevista	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:em	_
+3	bombástica	bombástico	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	SpaceAfter=No
+4	,	,	PUNCT	_	_	2	punct	2:punct	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	prefeito	prefeito	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj|9:nsubj	_
+7	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	ter	ter	AUX	_	VerbForm=Inf	9	aux	9:aux	_
+9	encontrado	encontrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	7	xcomp	7:xcomp	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	cidade	cidade	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+12	em	em	ADP	_	_	13	case	13:case	_
+13	estado	estado	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:em	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	calamidade	calamidade	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:de	_
+16	pública	público	ADJ	_	Gender=Fem|Number=Sing	15	amod	15:amod	SpaceAfter=No
+17	,	,	PUNCT	_	_	19	punct	19:punct	_
+18	com	com	ADP	_	_	19	case	19:case|22:case	_
+19	dívidas	dívida	NOUN	_	Gender=Fem|Number=Plur	9	obl	9:obl:com	_
+20	astronômicas	astronômico	ADJ	_	Gender=Fem|Number=Plur	19	amod	19:amod	_
+21	e	e	CCONJ	_	_	22	cc	22:cc	_
+22	serviços	serviço	NOUN	_	Gender=Masc|Number=Plur	19	conj	9:obl:com|19:conj:e	_
+23	essenciais	essencial	ADJ	_	Number=Plur	22	amod	22:amod	_
+24-25	à	_	_	_	_	_	_	_	_
+24	a	a	ADP	_	_	26	case	26:case	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	beira	beira	NOUN	_	Gender=Fem|Number=Sing	22	nmod	22:nmod:a	_
+27-28	do	_	_	_	_	_	_	_	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	29:det	_
+29	colapso	colapso	NOUN	_	Gender=Masc|Number=Sing	26	nmod	26:nmod:de	SpaceAfter=No
+30	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0005
+# text = "Curitiba estava à beira do abismo, mas já estamos transformando tudo", declarou Greca.
+1	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+2	Curitiba	Curitiba	PROPN	_	_	6	nsubj	6:nsubj	_
+3	estava	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	cop	6:cop	_
+4-5	à	_	_	_	_	_	_	_	_
+4	a	a	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	beira	beira	NOUN	_	Gender=Fem|Number=Sing	18	ccomp:speech	18:ccomp:speech	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	abismo	abismo	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de	SpaceAfter=No
+10	,	,	PUNCT	_	_	14	punct	14:punct	_
+11	mas	mas	CCONJ	_	_	14	cc	14:cc	_
+12	já	já	ADV	_	_	14	advmod	14:advmod	_
+13	estamos	estar	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	14	aux	14:aux	_
+14	transformando	transformar	VERB	_	VerbForm=Ger	6	conj	6:conj:mas|18:ccomp:speech	_
+15	tudo	tudo	PRON	_	PronType=Ind	14	obj	14:obj	SpaceAfter=No
+16	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+17	,	,	PUNCT	_	_	6	punct	6:punct	_
+18	declarou	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+19	Greca	Greca	PROPN	_	_	18	nsubj	18:nsubj	SpaceAfter=No
+20	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0007
+# text = Ele destacou a criação de um "superapp" de saúde que promete atendimento instantâneo e gratuidade em exames, algo inédito no país.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj	_
+2	destacou	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	criação	criação	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+5	de	de	ADP	_	_	8	case	8:case	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+7	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	superapp	superapp	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	4	nmod	4:nmod:de|13:nsubj	SpaceAfter=No
+9	"	"	PUNCT	_	_	8	punct	8:punct	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	_
+12	que	que	PRON	_	PronType=Rel	13	nsubj	8:ref	_
+13	promete	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	8:acl:relcl	_
+14	atendimento	atendimento	NOUN	_	Gender=Masc|Number=Sing	13	obj	13:obj	_
+15	instantâneo	instantâneo	ADJ	_	Gender=Masc|Number=Sing	14	amod	14:amod	_
+16	e	e	CCONJ	_	_	17	cc	17:cc	_
+17	gratuidade	gratuidade	NOUN	_	Gender=Fem|Number=Sing	14	conj	13:obj|14:conj:e	_
+18	em	em	ADP	_	_	19	case	19:case	_
+19	exames	exame	NOUN	_	Gender=Masc|Number=Plur	17	nmod	17:nmod:em	SpaceAfter=No
+20	,	,	PUNCT	_	_	21	punct	21:punct	_
+21	algo	algo	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	14	appos	14:appos|17:appos	_
+22	inédito	inédito	ADJ	_	Gender=Masc|Number=Sing	21	amod	21:amod	_
+23-24	no	_	_	_	_	_	_	_	_
+23	em	em	ADP	_	_	25	case	25:case	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	país	país	NOUN	_	Gender=Masc|Number=Sing	22	obl	22:obl:em	SpaceAfter=No
+26	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0009
+# text = Greca também prometeu uma frota de ônibus sustentável e com tarifas reduzidas em horários alternativos, afirmando que os empresários do setor estão bloqueando as mudanças.
+1	Greca	Greca	PROPN	_	_	3	nsubj	3:nsubj	_
+2	também	também	ADV	_	_	3	advmod	3:advmod	_
+3	prometeu	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	frota	frota	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	ônibus	ônibus	NOUN	_	Gender=Masc	5	nmod	5:nmod:de	_
+8	sustentável	sustentável	ADJ	_	Number=Sing	7	amod	7:amod	_
+9	e	e	CCONJ	_	_	11	cc	11:cc	_
+10	com	com	ADP	_	_	11	case	11:case	_
+11	tarifas	tarifa	NOUN	_	Gender=Fem|Number=Plur	8	conj	7:nmod:com|8:conj:e	_
+12	reduzidas	reduzir	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	11	amod	11:amod	_
+13	em	em	ADP	_	_	14	case	14:case	_
+14	horários	horário	NOUN	_	Gender=Masc|Number=Plur	8	obl	8:obl:em|11:obl:em	_
+15	alternativos	alternativo	ADJ	_	Gender=Masc|Number=Plur	14	amod	14:amod	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	afirmando	afirmar	VERB	_	VerbForm=Ger	3	advcl	3:advcl	_
+18	que	que	SCONJ	_	_	25	mark	25:mark	_
+19	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	20:det	_
+20	empresários	empresário	NOUN	_	Gender=Masc|Number=Plur	25	nsubj	25:nsubj	_
+21-22	do	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	setor	setor	NOUN	_	Gender=Masc|Number=Sing	20	nmod	20:nmod:de	_
+24	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	25	aux	25:aux	_
+25	bloqueando	bloquear	VERB	_	VerbForm=Ger	17	ccomp	17:ccomp	_
+26	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	27	det	27:det	_
+27	mudanças	mudança	NOUN	_	Gender=Fem|Number=Plur	25	obj	25:obj	SpaceAfter=No
+28	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0011
+# text = "Eles não querem perder seus lucros, mas eu garanto: Curitiba terá o transporte mais moderno e justo do Brasil", enfatizou.
+1	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+2	Eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	4	nsubj	4:nsubj|5:nsubj	_
+3	não	não	ADV	_	_	4	advmod	4:advmod	_
+4	querem	querer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	26	ccomp:speech	26:ccomp:speech	_
+5	perder	perder	VERB	_	VerbForm=Inf	4	xcomp	4:xcomp	_
+6	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	7	det	7:det	_
+7	lucros	lucro	NOUN	_	Gender=Masc|Number=Plur	5	obj	5:obj	SpaceAfter=No
+8	,	,	PUNCT	_	_	11	punct	11:punct	_
+9	mas	mas	CCONJ	_	_	11	cc	11:cc	_
+10	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	11	nsubj	11:nsubj	_
+11	garanto	garantir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	conj	4:conj:mas|26:ccomp:speech	SpaceAfter=No
+12	:	:	PUNCT	_	_	14	punct	14:punct	_
+13	Curitiba	Curitiba	PROPN	_	_	14	nsubj	14:nsubj	_
+14	terá	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	11	ccomp:speech	11:ccomp:speech	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	transporte	transporte	NOUN	_	Gender=Masc|Number=Sing	14	obj	14:obj	_
+17	mais	mais	ADV	_	_	18	advmod	18:advmod	_
+18	moderno	moderno	ADJ	_	Gender=Masc|Number=Sing	16	amod	16:amod	_
+19	e	e	CCONJ	_	_	20	cc	20:cc	_
+20	justo	justo	ADJ	_	Gender=Masc|Number=Sing	18	conj	16:amod|18:conj:e	_
+21-22	do	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	Brasil	Brasil	PROPN	_	_	16	nmod	16:nmod:de	SpaceAfter=No
+24	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+25	,	,	PUNCT	_	_	4	punct	4:punct	_
+26	enfatizou	enfatizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+27	.	.	PUNCT	_	_	26	punct	26:punct	_
+
+# sent_id = S0013
+# text = Sobre a saúde, o prefeito garantiu a abertura de novos leitos de UTI e a revitalização completa de hospitais municipais, como o São Vicente e a Santa Casa, prometendo que tudo estará operacional em semanas.
+1	Sobre	sobre	ADP	_	_	3	case	3:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:sobre	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	prefeito	prefeito	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+7	garantiu	garantir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	abertura	abertura	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	novos	novo	ADJ	_	Gender=Masc|Number=Plur	12	amod	12:amod	_
+12	leitos	leito	NOUN	_	Gender=Masc|Number=Plur	9	nmod	9:nmod:de	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	UTI	UTI	PROPN	_	_	12	nmod	12:nmod:de	_
+15	e	e	CCONJ	_	_	17	cc	17:cc	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	revitalização	revitalização	NOUN	_	Gender=Fem|Number=Sing	9	conj	7:obj|9:conj:e	_
+18	completa	completo	ADJ	_	Gender=Fem|Number=Sing	17	amod	17:amod	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	hospitais	hospital	NOUN	_	Gender=Masc|Number=Plur	17	nmod	17:nmod:de	_
+21	municipais	municipal	ADJ	_	Number=Plur	20	amod	20:amod	SpaceAfter=No
+22	,	,	PUNCT	_	_	25	punct	25:punct	_
+23	como	como	ADP	_	_	25	case	25:case|29:case	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	São	São	PROPN	_	_	20	nmod	20:nmod:como	_
+26	Vicente	Vicente	PROPN	_	_	25	flat:name	25:flat:name	_
+27	e	e	CCONJ	_	_	29	cc	29:cc	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	Santa	Santa	PROPN	_	_	25	conj	20:nmod:como|25:conj:e	_
+30	Casa	Casa	PROPN	_	_	29	flat:name	29:flat:name	SpaceAfter=No
+31	,	,	PUNCT	_	_	32	punct	32:punct	_
+32	prometendo	prometer	VERB	_	VerbForm=Ger	7	advcl	7:advcl	_
+33	que	que	SCONJ	_	_	36	mark	36:mark	_
+34	tudo	tudo	PRON	_	PronType=Ind	36	nsubj	36:nsubj	_
+35	estará	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	36	cop	36:cop	_
+36	operacional	operacional	ADJ	_	Number=Sing	32	ccomp	32:ccomp	_
+37	em	em	ADP	_	_	38	case	38:case	_
+38	semanas	semana	NOUN	_	Gender=Fem|Number=Plur	36	obl	36:obl:em	SpaceAfter=No
+39	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0015
+# text = "Não vamos descansar até que cada curitibano tenha o atendimento que merece", disse.
+1	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+2	Não	não	ADV	_	_	4	advmod	4:advmod	_
+3	vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	4	aux	4:aux	_
+4	descansar	descansar	VERB	_	VerbForm=Inf	16	ccomp:speech	16:ccomp:speech	_
+5	até	até	ADP	_	ExtPos=SCONJ	9	mark	9:mark	_
+6	que	que	SCONJ	_	_	5	fixed	5:fixed	_
+7	cada	cada	DET	_	Number=Sing|PronType=Ind	8	det	8:det	_
+8	curitibano	curitibano	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	9:nsubj	_
+9	tenha	ter	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	4:advcl:até_que	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	atendimento	atendimento	NOUN	_	Gender=Masc|Number=Sing	9	obj	9:obj|13:nsubj	_
+12	que	que	PRON	_	PronType=Rel	13	nsubj	11:ref	_
+13	merece	merecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	11:acl:relcl	SpaceAfter=No
+14	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+15	,	,	PUNCT	_	_	4	punct	4:punct	_
+16	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+17	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0017
+# text = Na área de educação, Greca prometeu a abertura de 50 novos CMEIs e a contratação de 1.500 professores, alegando que o provisionamento necessário já está sendo aprovado pela Câmara.
+1-2	Na	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	área	área	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:em	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	educação	educação	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	3	punct	3:punct	_
+7	Greca	Greca	PROPN	_	_	8	nsubj	8:nsubj	_
+8	prometeu	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	abertura	abertura	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	_
+11	de	de	ADP	_	_	14	case	14:case	_
+12	50	50	NUM	_	NumType=Card	14	nummod	14:nummod	_
+13	novos	novo	ADJ	_	Gender=Masc|Number=Plur	14	amod	14:amod	_
+14	CMEIs	CMEIs	PROPN	_	_	10	nmod	10:nmod:de	_
+15	e	e	CCONJ	_	_	17	cc	17:cc	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	contratação	contratação	NOUN	_	Gender=Fem|Number=Sing	10	conj	8:obj|10:conj:e	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	1.500	1.500	NUM	_	NumType=Card	20	nummod	20:nummod	_
+20	professores	professor	NOUN	_	Gender=Masc|Number=Plur	17	nmod	17:nmod:de	SpaceAfter=No
+21	,	,	PUNCT	_	_	22	punct	22:punct	_
+22	alegando	alegar	VERB	_	VerbForm=Ger	8	advcl	8:advcl	_
+23	que	que	SCONJ	_	_	30	mark	30:mark	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	provisionamento	provisionamento	NOUN	_	Gender=Masc|Number=Sing	30	nsubj:pass	30:nsubj:pass	_
+26	necessário	necessário	ADJ	_	Gender=Masc|Number=Sing	25	amod	25:amod	_
+27	já	já	ADV	_	_	30	advmod	30:advmod	_
+28	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	aux	30:aux	_
+29	sendo	ser	AUX	_	VerbForm=Ger	30	aux:pass	30:aux:pass	_
+30	aprovado	aprovar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	22	ccomp	22:ccomp	_
+31-32	pela	_	_	_	_	_	_	_	_
+31	por	por	ADP	_	_	33	case	33:case	_
+32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	33:det	_
+33	Câmara	Câmara	PROPN	_	_	30	obl:agent	30:obl:agent	SpaceAfter=No
+34	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0019
+# text = "Vamos acabar com as filas de espera e dar dignidade às nossas crianças", afirmou.
+1	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	Vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	aux	3:aux|10:aux	_
+3	acabar	acabar	VERB	_	VerbForm=Inf	18	ccomp:speech	18:ccomp:speech	_
+4	com	com	ADP	_	_	6	case	6:case	_
+5	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	6:det	_
+6	filas	fila	NOUN	_	Number=Plur	3	obl	3:obl:com	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	espera	espera	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de	_
+9	e	e	CCONJ	_	_	10	cc	10:cc	_
+10	dar	dar	VERB	_	VerbForm=Inf	3	conj	3:conj:e|18:ccomp:speech	_
+11	dignidade	dignidade	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+12-13	às	_	_	_	_	_	_	_	_
+12	a	a	ADP	_	_	15	case	15:case	_
+13	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	15:det	_
+14	nossas	nosso	DET	_	Gender=Fem|Number=Plur|Person=1|Poss=Yes|PronType=Prs	15	det	15:det	_
+15	crianças	criança	NOUN	_	Gender=Fem|Number=Plur	10	obl	10:obl:a	SpaceAfter=No
+16	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+17	,	,	PUNCT	_	_	3	punct	3:punct	_
+18	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+19	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0021
+# text = Para o turismo, o prefeito revelou um ambicioso projeto de um "Circuito Cultural e Cervejeiro", com investimentos massivos no Vale do Pinhão e na Rua da Cerveja, garantindo que isso trará um boom econômico para a cidade.
+1	Para	para	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	turismo	turismo	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:para	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	prefeito	prefeito	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+7	revelou	revelar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+9	ambicioso	ambicioso	ADJ	_	Gender=Masc|Number=Sing	10	amod	10:amod	_
+10	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+11	de	de	ADP	_	_	14	case	14:case	_
+12	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+13	"	"	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+14	Circuito	Circuito	PROPN	_	_	10	nmod	10:nmod:de	_
+15	Cultural	Cultural	PROPN	_	_	14	flat:name	14:flat:name	_
+16	e	e	CCONJ	_	_	17	cc	17:cc	_
+17	Cervejeiro	Cervejeiro	PROPN	_	_	14	flat:name	14:flat:name	SpaceAfter=No
+18	"	"	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+19	,	,	PUNCT	_	_	21	punct	21:punct	_
+20	com	com	ADP	_	_	21	case	21:case	_
+21	investimentos	investimento	NOUN	_	Gender=Masc|Number=Plur	10	nmod	10:nmod:com	_
+22	massivos	massivo	ADJ	_	Gender=Masc|Number=Plur	21	amod	21:amod	_
+23-24	no	_	_	_	_	_	_	_	_
+23	em	em	ADP	_	_	25	case	25:case	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	Vale	Vale	PROPN	_	_	21	nmod	21:nmod:em	_
+26-27	do	_	_	_	_	_	_	_	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	Pinhão	Pinhão	PROPN	_	_	25	flat:name	25:flat:name	_
+29	e	e	CCONJ	_	_	32	cc	32:cc	_
+30-31	na	_	_	_	_	_	_	_	_
+30	em	em	ADP	_	_	32	case	32:case	_
+31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	32:det	_
+32	Rua	Rua	PROPN	_	_	25	conj	21:nmod:em|25:conj:e	_
+33-34	da	_	_	_	_	_	_	_	_
+33	de	de	ADP	_	_	35	case	35:case	_
+34	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	35:det	_
+35	Cerveja	Cerveja	PROPN	_	_	32	flat:name	32:flat:name	SpaceAfter=No
+36	,	,	PUNCT	_	_	37	punct	37:punct	_
+37	garantindo	garantir	VERB	_	VerbForm=Ger	7	advcl	7:advcl	_
+38	que	que	SCONJ	_	_	40	mark	40:mark	_
+39	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	40	nsubj	40:nsubj	_
+40	trará	trar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	37	ccomp	37:ccomp	_
+41	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	42	det	42:det	_
+42	boom	boom	NOUN	_	Gender=Masc|Number=Sing	40	obj	40:obj	_
+43	econômico	econômico	ADJ	_	Gender=Masc|Number=Sing	42	amod	42:amod	_
+44	para	para	ADP	_	_	46	case	46:case	_
+45	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	46:det	_
+46	cidade	cidade	NOUN	_	Gender=Fem|Number=Sing	40	obl	40:obl:para	SpaceAfter=No
+47	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0023
+# text = "Curitiba será o novo polo de atração turística, impulsionando negócios e empregos", projetou.
+1	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+2	Curitiba	Curitiba	PROPN	_	_	6	nsubj	6:nsubj	_
+3	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	6	cop	6:cop	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+5	novo	novo	ADJ	_	Gender=Masc|Number=Sing	6	amod	6:amod	_
+6	polo	polo	NOUN	_	Gender=Masc|Number=Sing	17	ccomp:speech	17:ccomp:speech	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	atração	atração	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de	_
+9	turística	turístico	ADJ	_	Gender=Fem|Number=Sing	8	amod	8:amod	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	impulsionando	impulsionar	VERB	_	VerbForm=Ger	6	advcl	6:advcl	_
+12	negócios	negócio	NOUN	_	Gender=Masc|Number=Plur	11	obj	11:obj	_
+13	e	e	CCONJ	_	_	14	cc	14:cc	_
+14	empregos	emprego	NOUN	_	Gender=Masc|Number=Plur	12	conj	11:obj|12:conj:e	SpaceAfter=No
+15	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+16	,	,	PUNCT	_	_	6	punct	6:punct	_
+17	projetou	projetar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+18	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0025
+# text = Ainda, Greca rebateu críticas sobre a suspensão da Oficina da Música, garantindo que a cultura está sendo revalorizada com concertos e eventos gratuitos por toda a cidade.
+1	Ainda	ainda	ADV	_	_	4	advmod	4:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	Greca	Greca	PROPN	_	_	4	nsubj	4:nsubj	_
+4	rebateu	rebater	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	críticas	crítico	NOUN	_	Gender=Fem|Number=Plur	4	obj	4:obj	_
+6	sobre	sobre	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	suspensão	suspensão	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:sobre	_
+9-10	da	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	Oficina	Oficina	PROPN	_	_	8	nmod	8:nmod:de	_
+12-13	da	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	Música	Música	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	garantindo	garantir	VERB	_	VerbForm=Ger	4	advcl	4:advcl	_
+17	que	que	SCONJ	_	_	22	mark	22:mark	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	cultura	cultura	NOUN	_	Gender=Fem|Number=Sing	22	nsubj:pass	22:nsubj:pass	_
+20	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	aux	22:aux	_
+21	sendo	ser	AUX	_	VerbForm=Ger	22	aux:pass	22:aux:pass	_
+22	revalorizada	revalorizar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	16	ccomp	16:ccomp	_
+23	com	com	ADP	_	_	24	case	24:case|26:case	_
+24	concertos	concerto	NOUN	_	Gender=Masc|Number=Plur	22	obl	22:obl:com	_
+25	e	e	CCONJ	_	_	26	cc	26:cc	_
+26	eventos	evento	NOUN	_	Gender=Masc|Number=Plur	24	conj	22:obl:com|24:conj:e	_
+27	gratuitos	gratuito	ADJ	_	Gender=Masc|Number=Plur	26	amod	26:amod	_
+28	por	por	ADP	_	_	31	case	31:case	_
+29	toda	todo	DET	_	Gender=Fem|Number=Sing|PronType=Ind	31	det	31:det	_
+30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+31	cidade	cidade	NOUN	_	Gender=Fem|Number=Sing	22	obl	22:obl:por	SpaceAfter=No
+32	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0027
+# text = "A música e a cultura estão no topo das nossas prioridades", assegurou.
+1	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+2	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	música	música	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	10:nsubj	_
+4	e	e	CCONJ	_	_	6	cc	6:cc	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	cultura	cultura	NOUN	_	Gender=Fem|Number=Sing	3	conj	3:conj:e|10:nsubj	_
+7	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_
+8-9	no	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	topo	topo	NOUN	_	Gender=Masc|Number=Sing	17	ccomp:speech	17:ccomp:speech	_
+11-12	das	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	14	case	14:case	_
+12	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	14:det	_
+13	nossas	nosso	DET	_	Gender=Fem|Number=Plur|Person=1|Poss=Yes|PronType=Prs	14	det	14:det	_
+14	prioridades	prioridade	NOUN	_	Gender=Fem|Number=Plur	10	nmod	10:nmod:de	SpaceAfter=No
+15	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+16	,	,	PUNCT	_	_	10	punct	10:punct	_
+17	assegurou	assegurar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+18	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0029
+# text = Por fim, o prefeito atribuiu todas as dificuldades encontradas ao seu antecessor, Gustavo Fruet, afirmando que herdou uma gestão "irresponsável e desastrosa".
+1	Por	por	ADP	_	_	2	case	2:case	_
+2	fim	fim	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:por	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	prefeito	prefeito	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+6	atribuiu	atribuir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	todas	todo	DET	_	Gender=Fem|Number=Plur|PronType=Ind	9	det	9:det	_
+8	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	9:det	_
+9	dificuldades	dificuldade	NOUN	_	Gender=Fem|Number=Plur	6	obj	6:obj	_
+10	encontradas	encontrar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	9	acl	9:acl	_
+11-12	ao	_	_	_	_	_	_	_	_
+11	a	a	ADP	_	_	14	case	14:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+13	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	14	det	14:det	_
+14	antecessor	antecessor	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:a	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	Gustavo	Gustavo	PROPN	_	_	14	appos	14:appos	_
+17	Fruet	Fruet	PROPN	_	_	16	flat:name	16:flat:name	SpaceAfter=No
+18	,	,	PUNCT	_	_	16	punct	16:punct	_
+19	afirmando	afirmar	VERB	_	VerbForm=Ger	6	advcl	6:advcl	_
+20	que	que	SCONJ	_	_	21	mark	21:mark	_
+21	herdou	herdar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	ccomp	19:ccomp	_
+22	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	gestão	gestão	NOUN	_	Gender=Fem|Number=Sing	21	obj	21:obj	_
+24	"	"	PUNCT	_	_	25	punct	25:punct	SpaceAfter=No
+25	irresponsável	irresponsável	ADJ	_	Number=Sing	23	amod	23:amod	_
+26	e	e	CCONJ	_	_	27	cc	27:cc	_
+27	desastrosa	desastroso	ADJ	_	Gender=Fem|Number=Sing	25	conj	23:amod|25:conj:e	SpaceAfter=No
+28	"	"	PUNCT	_	_	25	punct	25:punct	SpaceAfter=No
+29	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0031
+# text = Fruet deixou uma herança maldita, mas estamos corrigindo cada erro.
+1	Fruet	Fruet	PROPN	_	_	2	nsubj	2:nsubj	_
+2	deixou	deixar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	herança	herança	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+5	maldita	maldito	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	4	amod	4:amod	SpaceAfter=No
+6	,	,	PUNCT	_	_	9	punct	9:punct	_
+7	mas	mas	CCONJ	_	_	9	cc	9:cc	_
+8	estamos	estar	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	9	aux	9:aux	_
+9	corrigindo	corrigir	VERB	_	VerbForm=Ger	2	conj	2:conj:mas	_
+10	cada	cada	DET	_	Number=Sing|PronType=Ind	11	det	11:det	_
+11	erro	erro	NOUN	_	Gender=Masc|Number=Sing	9	obj	9:obj	SpaceAfter=No
+12	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0033
+# text = Curitiba renascerá das cinzas!
+1	Curitiba	Curitiba	PROPN	_	_	2	nsubj	2:nsubj	_
+2	renascerá	renascer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+3-4	das	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	5:det	_
+5	cinzas	cinza	NOUN	_	Gender=Fem|Number=Plur	2	obl	2:obl:de	SpaceAfter=No
+6	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0035
+# text = , concluiu Greca.
+1	,	,	PUNCT	_	_	2	punct	2:punct	_
+2	concluiu	concluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	Greca	Greca	PROPN	_	_	2	nsubj	2:nsubj	SpaceAfter=No
+4	.	.	PUNCT	_	_	2	punct	2:punct	_

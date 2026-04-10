@@ -1,0 +1,359 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Áudio detalha desespero do piloto para pousar: "Estamos em falha total, elétrica e de combustível".
+1	Áudio	áudio	NOUN	_	Gender=Masc|Number=Sing	2	nsubj	2:nsubj	_
+2	detalha	detalhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	desespero	desespero	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	piloto	piloto	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	_
+7	para	para	ADP	_	_	8	mark	8:mark	_
+8	pousar	pousar	VERB	_	VerbForm=Inf	3	acl	3:acl:para	SpaceAfter=No
+9	:	:	PUNCT	_	_	13	punct	13:punct	_
+10	"	"	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+11	Estamos	estar	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	13	cop	13:cop	_
+12	em	em	ADP	_	_	13	case	13:case	_
+13	falha	falha	NOUN	_	Gender=Fem|Number=Sing	2	parataxis	2:parataxis	_
+14	total	total	ADJ	_	Number=Sing	13	amod	13:amod	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	elétrica	elétrico	ADJ	_	Gender=Fem|Number=Sing	14	conj	13:amod|14:conj:e	_
+17	e	e	CCONJ	_	_	19	cc	19:cc	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	combustível	combustível	NOUN	_	Number=Sing	14	conj	13:nmod:de|14:conj:e	SpaceAfter=No
+20	"	"	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+21	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Está circulando nas redes sociais e nos jornais da Colômbia um áudio em que um "suposto" piloto de avião relata o que teria ocorrido com o voo da empresa LAMIA, que transpostava a equipe da Chapecoense.
+1	Está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	aux	2:aux	_
+2	circulando	circular	VERB	_	VerbForm=Ger	0	root	0:root	_
+3-4	nas	_	_	_	_	_	_	_	_
+3	em	em	ADP	_	_	5	case	5:case	_
+4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	5:det	_
+5	redes	rede	NOUN	_	Gender=Fem|Number=Plur	2	obl	2:obl:em	_
+6	sociais	social	ADJ	_	Number=Plur	5	amod	5:amod	_
+7	e	e	CCONJ	_	_	10	cc	10:cc	_
+8-9	nos	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	10:det	_
+10	jornais	jornal	NOUN	_	Gender=Masc|Number=Plur	5	conj	2:obl:em|5:conj:e	_
+11-12	da	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	Colômbia	Colômbia	PROPN	_	_	10	nmod	10:nmod:de	_
+14	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	áudio	áudio	NOUN	_	Gender=Masc|Number=Sing	2	nsubj	2:nsubj|25:obl:em	_
+16	em	em	ADP	_	_	17	case	17:case	_
+17	que	que	PRON	_	PronType=Rel	25	obl	15:ref	_
+18	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+19	"	"	PUNCT	_	_	22	punct	22:punct	SpaceAfter=No
+20	suposto	suposto	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	22	amod	22:amod	SpaceAfter=No
+21	"	"	PUNCT	_	_	22	punct	22:punct	_
+22	piloto	piloto	NOUN	_	Gender=Masc|Number=Sing	25	nsubj	25:nsubj	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	avião	avião	NOUN	_	Gender=Masc|Number=Sing	22	nmod	22:nmod:de	_
+25	relata	relatar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	acl:relcl	15:acl:relcl	_
+26	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	25	obj	25:obj|29:nsubj	_
+27	que	que	PRON	_	PronType=Rel	29	nsubj	26:ref	_
+28	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	29	aux	29:aux	_
+29	ocorrido	ocorrer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	26	acl:relcl	26:acl:relcl	_
+30	com	com	ADP	_	_	32	case	32:case	_
+31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+32	voo	voo	NOUN	_	Gender=Masc|Number=Sing	29	obl	29:obl:com	_
+33-34	da	_	_	_	_	_	_	_	_
+33	de	de	ADP	_	_	35	case	35:case	_
+34	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	35:det	_
+35	empresa	empresa	NOUN	_	Gender=Fem|Number=Sing	32	nmod	32:nmod:de|39:nsubj	_
+36	LAMIA	LAMIA	PROPN	_	_	35	nmod	35:nmod	SpaceAfter=No
+37	,	,	PUNCT	_	_	39	punct	39:punct	_
+38	que	que	PRON	_	PronType=Rel	39	nsubj	35:ref	_
+39	transpostava	transpostar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	35	acl:relcl	35:acl:relcl	_
+40	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	41:det	_
+41	equipe	equipe	NOUN	_	Gender=Fem|Number=Sing	39	obj	39:obj	_
+42-43	da	_	_	_	_	_	_	_	_
+42	de	de	ADP	_	_	44	case	44:case	_
+43	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	44:det	_
+44	Chapecoense	Chapecoense	PROPN	_	_	41	nmod	41:nmod:de	SpaceAfter=No
+45	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = Nas gravações, a torre de comando avisa o piloto da LAMIA (ao se aproximar para aterrissagem em Medellín) que um outro voo da empresa VivaColômbia teria declarado "mayday" por vazamento de combustível [...] o pedido de socorro dava prioridade de pouso para esse voo.
+1-2	Nas	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	3:det	_
+3	gravações	gravação	NOUN	_	Gender=Fem|Number=Plur	9	obl	9:obl:em	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	torre	torre	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	9:nsubj	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	comando	comando	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de	_
+9	avisa	avisar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	piloto	piloto	NOUN	_	Gender=Masc|Number=Sing	9	obj	9:obj	_
+12-13	da	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	LAMIA	LAMIA	PROPN	_	_	11	nmod	11:nmod:de	_
+15	(	(	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+16-17	ao	_	_	_	_	_	_	_	_
+16	a	a	ADP	_	ExtPos=SCONJ	19	mark	19:mark	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	fixed	16:fixed	_
+18	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	19	expl	19:expl	_
+19	aproximar	aproximar	VERB	_	Number=Sing|Person=3|VerbForm=Inf	9	advcl	9:advcl:a_o	_
+20	para	para	ADP	_	_	21	case	21:case	_
+21	aterrissagem	aterrissagem	NOUN	_	Gender=Fem|Number=Sing	19	obl	19:obl:para	_
+22	em	em	ADP	_	_	23	case	23:case	_
+23	Medellín	Medellín	PROPN	_	_	21	nmod	21:nmod:em	SpaceAfter=No
+24	)	)	PUNCT	_	_	19	punct	19:punct	_
+25	que	que	SCONJ	_	_	34	mark	34:mark	_
+26	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+27	outro	outro	DET	_	Gender=Masc|Number=Sing|PronType=Ind	28	det	28:det	_
+28	voo	voo	NOUN	_	Gender=Masc|Number=Sing	34	nsubj	34:nsubj	_
+29-30	da	_	_	_	_	_	_	_	_
+29	de	de	ADP	_	_	31	case	31:case	_
+30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+31	empresa	empresa	NOUN	_	Gender=Fem|Number=Sing	28	nmod	28:nmod:de	_
+32	VivaColômbia	VivaColômbia	PROPN	_	_	31	nmod	31:nmod	_
+33	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	34	aux	34:aux	_
+34	declarado	declarar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	9	ccomp	9:ccomp	_
+35	"	"	PUNCT	_	_	36	punct	36:punct	SpaceAfter=No
+36	mayday	mayday	X	_	Foreign=Yes	34	obj	34:obj	SpaceAfter=No
+37	"	"	PUNCT	_	_	36	punct	36:punct	_
+38	por	por	ADP	_	_	39	case	39:case	_
+39	vazamento	vazamento	NOUN	_	Gender=Masc|Number=Sing	34	obl	34:obl:por	_
+40	de	de	ADP	_	_	41	case	41:case	_
+41	combustível	combustível	NOUN	_	Number=Sing	39	nmod	39:nmod:de	_
+42	[	[	PUNCT	_	_	50	punct	50:punct	SpaceAfter=No
+43	.	.	PUNCT	_	_	50	parataxis	50:parataxis	SpaceAfter=No
+44	..	..	PUNCT	_	_	43	punct	43:punct	SpaceAfter=No
+45	]	]	PUNCT	_	_	43	punct	43:punct	_
+46	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	det	47:det	_
+47	pedido	pedido	NOUN	_	Gender=Masc|Number=Sing	50	nsubj	50:nsubj	_
+48	de	de	ADP	_	_	49	case	49:case	_
+49	socorro	socorro	NOUN	_	Gender=Masc|Number=Sing	47	nmod	47:nmod:de	_
+50	dava	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	parataxis	9:parataxis	_
+51	prioridade	prioridade	NOUN	_	Gender=Fem|Number=Sing	50	obj	50:obj	_
+52	de	de	ADP	_	_	53	case	53:case	_
+53	pouso	pouso	NOUN	_	Gender=Masc|Number=Sing	51	nmod	51:nmod:de	_
+54	para	para	ADP	_	_	56	case	56:case	_
+55	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	56	det	56:det	_
+56	voo	voo	NOUN	_	Gender=Masc|Number=Sing	50	obl	50:obl:para	SpaceAfter=No
+57	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0007
+# text = A torre então entrou em contato com o avião da Chapecoense e perguntou para Miguel Quiroga (o piloto) se poderia atrasar seu pouso.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	torre	torre	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj|14:nsubj	_
+3	então	então	ADV	_	_	4	advmod	4:advmod	_
+4	entrou	entrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	em	em	ADP	_	_	6	case	6:case	_
+6	contato	contato	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:em	_
+7	com	com	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	avião	avião	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:com	_
+10-11	da	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	Chapecoense	Chapecoense	PROPN	_	_	9	nmod	9:nmod:de	_
+13	e	e	CCONJ	_	_	14	cc	14:cc	_
+14	perguntou	perguntar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	conj	4:conj:e	_
+15	para	para	ADP	_	_	16	case	16:case	_
+16	Miguel	Miguel	PROPN	_	_	14	obl	14:obl:para	_
+17	Quiroga	Quiroga	PROPN	_	_	16	flat:name	16:flat:name	_
+18	(	(	PUNCT	_	_	20	punct	20:punct	SpaceAfter=No
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	piloto	piloto	NOUN	_	Gender=Masc|Number=Sing	16	appos	16:appos	SpaceAfter=No
+21	)	)	PUNCT	_	_	20	punct	20:punct	_
+22	se	se	SCONJ	_	_	23	mark	23:mark	_
+23	poderia	poder	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	14	ccomp	14:ccomp	_
+24	atrasar	atrasar	VERB	_	VerbForm=Inf	23	xcomp	23:xcomp	_
+25	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	26	det	26:det	_
+26	pouso	pouso	NOUN	_	Gender=Masc|Number=Sing	24	obj	24:obj	SpaceAfter=No
+27	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0009
+# text = O piloto da LAMIA teria sinalizado positivamente.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	piloto	piloto	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	LAMIA	LAMIA	PROPN	_	_	2	nmod	2:nmod:de	_
+6	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	7	aux	7:aux	_
+7	sinalizado	sinalizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+8	positivamente	positivamente	ADV	_	_	7	advmod	7:advmod	SpaceAfter=No
+9	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0011
+# text = Após executar 2 voltas, o piloto retoma contato com a torre e é informado que ainda é o 3o.
+1	Após	após	ADP	_	_	2	mark	2:mark	_
+2	executar	executar	VERB	_	VerbForm=Inf	8	advcl	8:advcl:após|15:advcl:após	_
+3	2	2	NUM	_	NumType=Card	4	nummod	4:nummod	_
+4	voltas	volta	NOUN	_	Gender=Fem|Number=Plur	2	obj	2:obj	SpaceAfter=No
+5	,	,	PUNCT	_	_	2	punct	2:punct	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	piloto	piloto	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	8:nsubj|15:nsubj:pass	_
+8	retoma	retomar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+9	contato	contato	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	_
+10	com	com	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	torre	torre	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:com	_
+13	e	e	CCONJ	_	_	15	cc	15:cc	_
+14	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux:pass	15:aux:pass	_
+15	informado	informar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	8	conj	8:conj:e	_
+16	que	que	SCONJ	_	_	20	mark	20:mark	_
+17	ainda	ainda	ADV	_	_	20	advmod	20:advmod	_
+18	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	cop	20:cop	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	3o	3o	ADJ	_	Gender=Masc|NumType=Ord	15	ccomp	15:ccomp	SpaceAfter=No
+21	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0012
+# text = da fila.
+1-2	da	_	_	_	_	_	_	_	_
+1	de	de	ADP	_	_	3	case	3:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	fila	fila	NOUN	_	Number=Sing	0	root	0:root	SpaceAfter=No
+4	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0014
+# text = Três minutos depois (já sem combustível na aeronave), o piloto da LAMIA faz outro contato com a torre e declara que tem uma pane elétrica.
+1	Três	três	NUM	_	NumType=Card	2	nummod	2:nummod	_
+2	minutos	minuto	NOUN	_	Gender=Masc|Number=Plur	3	obl	3:obl	_
+3	depois	depois	ADV	_	_	18	advmod	18:advmod	_
+4	(	(	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+5	já	já	ADV	_	_	7	advmod	7:advmod	_
+6	sem	sem	ADP	_	_	7	case	7:case	_
+7	combustível	combustível	NOUN	_	Number=Sing	3	obl	3:obl:sem	_
+8-9	na	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	aeronave	aeronave	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:em	SpaceAfter=No
+11	)	)	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+12	,	,	PUNCT	_	_	3	punct	3:punct	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	piloto	piloto	NOUN	_	Gender=Masc|Number=Sing	18	nsubj	18:nsubj|25:nsubj	_
+15-16	da	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	LAMIA	LAMIA	PROPN	_	_	14	nmod	14:nmod:de	_
+18	faz	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+19	outro	outro	DET	_	Gender=Masc|Number=Sing|PronType=Ind	20	det	20:det	_
+20	contato	contato	NOUN	_	Gender=Masc|Number=Sing	18	obj	18:obj	_
+21	com	com	ADP	_	_	23	case	23:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	torre	torre	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:com	_
+24	e	e	CCONJ	_	_	25	cc	25:cc	_
+25	declara	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	conj	18:conj:e	_
+26	que	que	SCONJ	_	_	27	mark	27:mark	_
+27	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	ccomp	25:ccomp	_
+28	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	pane	pane	NOUN	_	Gender=Fem|Number=Sing	27	obj	27:obj	_
+30	elétrica	elétrico	ADJ	_	Gender=Fem|Number=Sing	29	amod	29:amod	SpaceAfter=No
+31	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0016
+# text = Ele não menciona o fato de estar sem combustível, o que poderia gerar multas astronômicas para sua empresa aérea.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	3:nsubj	_
+2	não	não	ADV	_	_	3	advmod	3:advmod	_
+3	menciona	mencionar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	fato	fato	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	_
+6	de	de	ADP	_	_	9	mark	9:mark	_
+7	estar	estar	AUX	_	VerbForm=Inf	9	cop	9:cop	_
+8	sem	sem	ADP	_	_	9	case	9:case	_
+9	combustível	combustível	NOUN	_	Number=Sing	5	acl	5:acl:de	SpaceAfter=No
+10	,	,	PUNCT	_	_	13	punct	13:punct	_
+11	o	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	13	nsubj	13:nsubj|14:nsubj	_
+12	que	que	PRON	_	PronType=Rel	11	fixed	11:fixed	_
+13	poderia	poder	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	9	parataxis	9:parataxis	_
+14	gerar	gerar	VERB	_	VerbForm=Inf	13	xcomp	13:xcomp	_
+15	multas	multa	NOUN	_	Gender=Fem|Number=Plur	14	obj	14:obj	_
+16	astronômicas	astronômico	ADJ	_	Gender=Fem|Number=Plur	15	amod	15:amod	_
+17	para	para	ADP	_	_	19	case	19:case	_
+18	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	19	det	19:det	_
+19	empresa	empresa	NOUN	_	Gender=Fem|Number=Sing	14	obl	14:obl:para	_
+20	aérea	aéreo	ADJ	_	Gender=Fem|Number=Sing	19	amod	19:amod	SpaceAfter=No
+21	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0017
+# text = diz a gravação.
+1	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	gravação	gravação	NOUN	_	Gender=Fem|Number=Sing	1	nsubj	1:nsubj	SpaceAfter=No
+4	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0019
+# text = "Sem conseguir chegar até a pista (por falta de combustível), o avião se choca contro o morro" encerra.
+1	"	"	PUNCT	_	_	18	punct	18:punct	SpaceAfter=No
+2	Sem	sem	ADP	_	_	3	mark	3:mark	_
+3	conseguir	conseguir	VERB	_	VerbForm=Inf	18	advcl	18:advcl:sem	_
+4	chegar	chegar	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+5	até	até	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	pista	pista	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:até	_
+8	(	(	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+9	por	por	ADP	_	_	10	case	10:case	_
+10	falta	falta	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:por	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	combustível	combustível	NOUN	_	Number=Sing	10	nmod	10:nmod:de	SpaceAfter=No
+13	)	)	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+14	,	,	PUNCT	_	_	3	punct	3:punct	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	avião	avião	NOUN	_	Gender=Masc|Number=Sing	18	nsubj	18:nsubj	_
+17	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	18	expl	18:expl	_
+18	choca	chocar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	ccomp:speech	23:ccomp:speech	_
+19	contro	contro	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	morro	morro	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:contro	SpaceAfter=No
+22	"	"	PUNCT	_	_	18	punct	18:punct	_
+23	encerra	encerrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+24	.	.	PUNCT	_	_	23	punct	23:punct	_
+
+# sent_id = S0021
+# text = Um especialista da aeronáutica colombiana fez o seguinte comentário: Não é possível que uma aeronave com autonomia de voo de 3.000 km faça um trajeto de quase 3.000 km.
+1	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	especialista	especialista	NOUN	_	Number=Sing	7	nsubj	7:nsubj	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	aeronáutica	aeronáutica	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+6	colombiana	colombiano	ADJ	_	Gender=Fem|Number=Sing	5	amod	5:amod	_
+7	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+9	seguinte	seguinte	ADJ	_	Number=Sing	10	amod	10:amod	_
+10	comentário	comentário	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	SpaceAfter=No
+11	:	:	PUNCT	_	_	14	punct	14:punct	_
+12	Não	não	ADV	_	_	14	advmod	14:advmod	_
+13	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	14:cop	_
+14	possível	possível	ADJ	_	Number=Sing	7	parataxis	7:parataxis	_
+15	que	que	SCONJ	_	_	25	mark	25:mark	_
+16	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	aeronave	aeronave	NOUN	_	Gender=Fem|Number=Sing	25	nsubj	25:nsubj	_
+18	com	com	ADP	_	_	19	case	19:case	_
+19	autonomia	autonomia	NOUN	_	Gender=Fem|Number=Sing	17	nmod	17:nmod:com	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	voo	voo	NOUN	_	Gender=Masc|Number=Sing	19	nmod	19:nmod:de	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	3.000	3.000	NUM	_	NumType=Card	24	nummod	24:nummod	_
+24	km	quilômetro	NOUN	_	Abbr=Yes|Gender=Masc	19	nmod	19:nmod:de	_
+25	faça	fazer	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	csubj	14:csubj	_
+26	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	trajeto	trajeto	NOUN	_	Gender=Masc|Number=Sing	25	obj	25:obj	_
+28	de	de	ADP	_	_	30	case	30:case	_
+29	quase	quase	ADV	_	_	30	advmod	30:advmod	_
+30	3.000	3.000	NUM	_	NumType=Card	27	nmod	27:nmod:de	_
+31	km.	km.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0023
+# text = Isso é uma espécie de tragédia anunciada comentou.
+1	Isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	4	nsubj	4:nsubj	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+3	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	espécie	espécie	NOUN	_	Gender=Fem|Number=Sing	8	ccomp:speech	8:ccomp:speech	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	tragédia	tragédia	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:de	_
+7	anunciada	anunciado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	6	amod	6:amod	_
+8	comentou	comentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+9	.	.	PUNCT	_	_	8	punct	8:punct	_

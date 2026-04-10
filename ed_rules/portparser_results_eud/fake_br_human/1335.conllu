@@ -1,0 +1,159 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Francisco: Estão ensinando para nossas crianças que elas podem escolher o gênero.
+1	Francisco	Francisco	PROPN	_	_	4	nsubj	4:nsubj	SpaceAfter=No
+2	:	:	PUNCT	_	_	1	punct	1:punct	_
+3	Estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	aux	4:aux	_
+4	ensinando	ensinar	VERB	_	VerbForm=Ger	0	root	0:root	_
+5	para	para	ADP	_	_	7	case	7:case	_
+6	nossas	nosso	DET	_	Gender=Fem|Number=Plur|Person=1|Poss=Yes|PronType=Prs	7	det	7:det	_
+7	crianças	criança	NOUN	_	Gender=Fem|Number=Plur	4	obl	4:obl:para	_
+8	que	que	SCONJ	_	_	10	mark	10:mark	_
+9	elas	ele	PRON	_	Case=Nom|Gender=Fem|Number=Plur|Person=3|PronType=Prs	10	nsubj	10:nsubj|11:nsubj	_
+10	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	ccomp	4:ccomp	_
+11	escolher	escolher	VERB	_	VerbForm=Inf	10	xcomp	10:xcomp	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	gênero	gênero	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj	SpaceAfter=No
+14	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0003
+# text = Isso é terrível.
+1	Isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	3	nsubj	3:nsubj	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+3	terrível	terrível	ADJ	_	Number=Sing	0	root	0:root	SpaceAfter=No
+4	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0005
+# text = O Papa disse lamentou que crianças sejam doutrinadas em escolas que ensinam que elas podem escolher o gênero.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Papa	Papa	PROPN	_	_	3	nsubj	3:nsubj	_
+3	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	lamentou	lamentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	ccomp	3:ccomp	_
+5	que	que	SCONJ	_	_	8	mark	8:mark	_
+6	crianças	criança	NOUN	_	Gender=Fem|Number=Plur	8	nsubj:pass	8:nsubj:pass	_
+7	sejam	ser	AUX	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	aux:pass	8:aux:pass	_
+8	doutrinadas	doutrinar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	4	ccomp	4:ccomp	_
+9	em	em	ADP	_	_	10	case	10:case	_
+10	escolas	escola	NOUN	_	Gender=Fem|Number=Plur	8	obl	8:obl:em|12:nsubj	_
+11	que	que	PRON	_	PronType=Rel	12	nsubj	10:ref	_
+12	ensinam	ensinar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	acl:relcl	10:acl:relcl	_
+13	que	que	SCONJ	_	_	15	mark	15:mark	_
+14	elas	ele	PRON	_	Case=Nom|Gender=Fem|Number=Plur|Person=3|PronType=Prs	15	nsubj	15:nsubj|16:nsubj	_
+15	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	ccomp	12:ccomp	_
+16	escolher	escolher	VERB	_	VerbForm=Inf	15	xcomp	15:xcomp	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	gênero	gênero	NOUN	_	Gender=Masc|Number=Sing	16	obj	16:obj	SpaceAfter=No
+19	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = Sem dar "nome aos bois", Francisco disse que livros didáticos fornecidos por pessoas e instituições capitalistas estão destruindo as crianças.
+1	Sem	sem	ADP	_	_	2	mark	2:mark	_
+2	dar	dar	VERB	_	VerbForm=Inf	11	advcl	11:advcl:sem	_
+3	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+4	nome	nome	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+5-6	aos	_	_	_	_	_	_	_	_
+5	a	a	ADP	_	_	7	case	7:case	_
+6	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	7:det	_
+7	bois	boi	NOUN	_	Gender=Masc|Number=Plur	4	nmod	4:nmod:a	SpaceAfter=No
+8	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+9	,	,	PUNCT	_	_	2	punct	2:punct	_
+10	Francisco	Francisco	PROPN	_	_	11	nsubj	11:nsubj	_
+11	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	que	que	SCONJ	_	_	22	mark	22:mark	_
+13	livros	livro	NOUN	_	Gender=Masc|Number=Plur	22	nsubj	22:nsubj	_
+14	didáticos	didático	ADJ	_	Gender=Masc|Number=Plur	13	amod	13:amod	_
+15	fornecidos	fornecer	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	13	acl	13:acl	_
+16	por	por	ADP	_	_	17	case	17:case|19:case	_
+17	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	15	obl:agent	15:obl:agent	_
+18	e	e	CCONJ	_	_	19	cc	19:cc	_
+19	instituições	instituição	NOUN	_	Gender=Fem|Number=Plur	17	conj	15:obl:agent|17:conj:e	_
+20	capitalistas	capitalista	ADJ	_	Number=Plur	19	amod	19:amod	_
+21	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	aux	22:aux	_
+22	destruindo	destruir	VERB	_	VerbForm=Ger	11	ccomp	11:ccomp	_
+23	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	24:det	_
+24	crianças	criança	NOUN	_	Gender=Fem|Number=Plur	22	obj	22:obj	SpaceAfter=No
+25	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0009
+# text = Eles estão ensinando isso para as crianças nas escolas.
+1	Eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	nsubj	3:nsubj	_
+2	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	aux	3:aux	_
+3	ensinando	ensinar	VERB	_	VerbForm=Ger	0	root	0:root	_
+4	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	3	obj	3:obj	_
+5	para	para	ADP	_	_	7	case	7:case	_
+6	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	7:det	_
+7	crianças	criança	NOUN	_	Gender=Fem|Number=Plur	3	obl	3:obl:para	_
+8-9	nas	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	10:det	_
+10	escolas	escola	NOUN	_	Gender=Fem|Number=Plur	3	obl	3:obl:em	SpaceAfter=No
+11	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0011
+# text = Que todos podem escolher seu gênero.
+1	Que	que	SCONJ	_	_	3	mark	3:mark	_
+2	todos	todo	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	3	nsubj	3:nsubj|4:nsubj	_
+3	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	escolher	escolher	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+5	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	6	det	6:det	_
+6	gênero	gênero	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	SpaceAfter=No
+7	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0013
+# text = Isso é terrível, lamentou o papa.
+1	Isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	3	nsubj	3:nsubj	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+3	terrível	terrível	ADJ	_	Number=Sing	5	ccomp:speech	5:ccomp:speech	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	lamentou	lamentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	papa	papa	NOUN	_	Number=Sing	5	nsubj	5:nsubj	SpaceAfter=No
+8	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0015
+# text = A declaração de Francisco foi dada durante uma reunião com bispos da Polônia durante sua peregrinação.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	declaração	declaração	NOUN	_	Gender=Fem|Number=Sing	6	nsubj:pass	6:nsubj:pass	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Francisco	Francisco	PROPN	_	_	2	nmod	2:nmod:de	_
+5	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	aux:pass	6:aux:pass	_
+6	dada	dar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+7	durante	durante	ADP	_	_	9	case	9:case	_
+8	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	reunião	reunião	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:durante	_
+10	com	com	ADP	_	_	11	case	11:case	_
+11	bispos	bispo	NOUN	_	Gender=Masc|Number=Plur	9	nmod	9:nmod:com	_
+12-13	da	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	Polônia	Polônia	PROPN	_	_	11	nmod	11:nmod:de	_
+15	durante	durante	ADP	_	_	17	case	17:case	_
+16	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	17	det	17:det	_
+17	peregrinação	peregrinação	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:durante	SpaceAfter=No
+18	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0017
+# text = O Vaticano informou que o Papa culpou o que ele denomina como "colonização ideológica" apoiada por "países influentes".
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Vaticano	Vaticano	PROPN	_	_	3	nsubj	3:nsubj	_
+3	informou	informar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	7	mark	7:mark	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	Papa	Papa	PROPN	_	_	7	nsubj	7:nsubj	_
+7	culpou	culpar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	ccomp	3:ccomp	_
+8	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	obj	7:obj|11:obj	_
+9	que	que	PRON	_	PronType=Rel	11	obj	8:ref	_
+10	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	nsubj	11:nsubj	_
+11	denomina	denominar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	8:acl:relcl	_
+12	como	como	ADP	_	_	14	case	14:case	_
+13	"	"	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+14	colonização	colonização	NOUN	_	Gender=Fem|Number=Sing	11	obl	11:obl:como	_
+15	ideológica	ideológico	ADJ	_	Gender=Fem|Number=Sing	14	amod	14:amod	SpaceAfter=No
+16	"	"	PUNCT	_	_	14	punct	14:punct	_
+17	apoiada	apoiar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	14	acl	14:acl	_
+18	por	por	ADP	_	_	20	case	20:case	_
+19	"	"	PUNCT	_	_	20	punct	20:punct	SpaceAfter=No
+20	países	país	NOUN	_	Gender=Masc|Number=Plur	17	obl:agent	17:obl:agent	_
+21	influentes	influente	ADJ	_	Number=Plur	20	amod	20:amod	SpaceAfter=No
+22	"	"	PUNCT	_	_	20	punct	20:punct	SpaceAfter=No
+23	.	.	PUNCT	_	_	3	punct	3:punct	_

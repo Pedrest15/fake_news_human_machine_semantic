@@ -1,0 +1,107 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Quebra-pau na Câmara dos Deputados.
+1	Quebra-pau	quebra-pau	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+2-3	na	_	_	_	_	_	_	_	_
+2	em	em	ADP	_	_	4	case	4:case	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	Câmara	Câmara	PROPN	_	_	1	nmod	1:nmod:em	_
+5-6	dos	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	7:det	_
+7	Deputados	Deputados	PROPN	_	_	4	nmod	4:nmod:de	SpaceAfter=No
+8	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Brasília está fervendo!.
+1	Brasília	Brasília	PROPN	_	_	3	nsubj	3:nsubj	_
+2	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux	3:aux	_
+3	fervendo	ferver	VERB	_	VerbForm=Ger	0	root	0:root	SpaceAfter=No
+4	!	!	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+5	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0005
+# text = Rodrigo "investigado" Maia pede calma aos parlamentares.
+1	Rodrigo	Rodrigo	PROPN	_	_	6	nsubj	6:nsubj	_
+2	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+3	investigado	investigar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	1	acl	1:acl	SpaceAfter=No
+4	"	"	PUNCT	_	_	3	punct	3:punct	_
+5	Maia	Maia	PROPN	_	_	1	nmod	1:nmod	_
+6	pede	pedir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	calma	calma	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+8-9	aos	_	_	_	_	_	_	_	_
+8	a	a	ADP	_	_	10	case	10:case	_
+9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	10:det	_
+10	parlamentares	parlamentar	NOUN	_	Gender=Masc|Number=Plur	6	obl	6:obl:a	SpaceAfter=No
+11	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0007
+# text = Os deputados estão em pânico e temem que os manifestantes possam invadir o Congresso.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	deputados	deputado	NOUN	_	Gender=Masc|Number=Plur	5	nsubj	5:nsubj|7:nsubj	_
+3	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+4	em	em	ADP	_	_	5	case	5:case	_
+5	pânico	pânico	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	temem	temer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	conj	5:conj:e	_
+8	que	que	SCONJ	_	_	11	mark	11:mark	_
+9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	10:det	_
+10	manifestantes	manifestante	NOUN	_	Number=Plur	11	nsubj	11:nsubj|12:nsubj	_
+11	possam	possam	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	ccomp	7:ccomp	_
+12	invadir	invadir	VERB	_	VerbForm=Inf	11	xcomp	11:xcomp	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	Congresso	Congresso	PROPN	_	_	12	obj	12:obj	SpaceAfter=No
+15	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0009
+# text = A sessão foi cancelada pelo presidente e o som do plenário foi cortado.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	sessão	sessão	NOUN	_	Gender=Fem|Number=Sing	4	nsubj:pass	4:nsubj:pass	_
+3	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	cancelada	cancelar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5-6	pelo	_	_	_	_	_	_	_	_
+5	por	por	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	presidente	presidente	NOUN	_	Number=Sing	4	obl:agent	4:obl:agent	_
+8	e	e	CCONJ	_	_	15	cc	15:cc	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	som	som	NOUN	_	Gender=Masc|Number=Sing	15	nsubj:pass	15:nsubj:pass	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	plenário	plenário	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:de	_
+14	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	aux:pass	15:aux:pass	_
+15	cortado	cortar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	4	conj	4:conj:e	SpaceAfter=No
+16	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0011
+# text = O locutor oficial da Câmara não para de falar, o que acaba impedindo os internautas de ouvirem os insultos proferidos pelos nobres parlamentares!
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	locutor	locutor	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	8:nsubj|10:nsubj	_
+3	oficial	oficial	ADJ	_	Number=Sing	2	amod	2:amod	_
+4-5	da	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	Câmara	Câmara	PROPN	_	_	2	nmod	2:nmod:de	_
+7	não	não	ADV	_	_	8	advmod	8:advmod	_
+8	para	parar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+9	de	de	ADP	_	_	10	mark	10:mark	_
+10	falar	falar	VERB	_	VerbForm=Inf	8	xcomp	8:xcomp	SpaceAfter=No
+11	,	,	PUNCT	_	_	14	punct	14:punct	_
+12	o	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	14	nsubj	14:nsubj|15:nsubj	_
+13	que	que	PRON	_	PronType=Rel	12	fixed	12:fixed	_
+14	acaba	acabar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	parataxis	8:parataxis	_
+15	impedindo	impedir	VERB	_	VerbForm=Ger	14	xcomp	14:xcomp	_
+16	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	17:det	_
+17	internautas	internauta	NOUN	_	Number=Plur	15	obj	15:obj|19:nsubj	_
+18	de	de	ADP	_	_	19	mark	19:mark	_
+19	ouvirem	ouvir	VERB	_	Number=Plur|Person=3|VerbForm=Inf	15	xcomp	15:xcomp	_
+20	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	21:det	_
+21	insultos	insulto	NOUN	_	Gender=Masc|Number=Plur	19	obj	19:obj	_
+22	proferidos	proferir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	21	acl	21:acl	_
+23-24	pelos	_	_	_	_	_	_	_	_
+23	por	por	ADP	_	_	26	case	26:case	_
+24	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	26:det	_
+25	nobres	nobre	ADJ	_	Number=Plur	26	amod	26:amod	_
+26	parlamentares	parlamentar	NOUN	_	Gender=Masc|Number=Plur	22	obl:agent	22:obl:agent	SpaceAfter=No
+27	!	!	PUNCT	_	_	8	punct	8:punct	_

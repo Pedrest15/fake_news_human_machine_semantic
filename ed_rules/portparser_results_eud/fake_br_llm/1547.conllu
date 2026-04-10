@@ -1,0 +1,226 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Ex-presidente Michel Temer revela plano secreto para nomear Carlos Velloso, ex-ministro do STF, como novo Ministro da Justiça.
+1	Ex-presidente	ex-presidente	NOUN	_	Number=Sing	4	nsubj	4:nsubj	_
+2	Michel	Michel	PROPN	_	_	1	nmod	1:nmod	_
+3	Temer	Temer	PROPN	_	_	2	flat:name	2:flat:name	_
+4	revela	revelar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	plano	plano	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+6	secreto	secreto	ADJ	_	Gender=Masc|Number=Sing	5	amod	5:amod	_
+7	para	para	ADP	_	_	8	mark	8:mark	_
+8	nomear	nomear	VERB	_	VerbForm=Inf	5	acl	5:acl:para	_
+9	Carlos	Carlos	PROPN	_	_	8	obj	8:obj	_
+10	Velloso	Velloso	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	ex-ministro	ex-ministro	NOUN	_	Gender=Masc|Number=Sing	9	appos	9:appos	_
+13-14	do	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	STF	STF	PROPN	_	_	12	nmod	12:nmod:de	SpaceAfter=No
+16	,	,	PUNCT	_	_	12	punct	12:punct	_
+17	como	como	ADP	_	_	19	case	19:case	_
+18	novo	novo	ADJ	_	Gender=Masc|Number=Sing	19	amod	19:amod	_
+19	Ministro	Ministro	PROPN	_	_	8	obl	8:obl:como	_
+20-21	da	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	Justiça	Justiça	PROPN	_	_	19	nmod	19:nmod:de	SpaceAfter=No
+23	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0003
+# text = Em uma mensagem bombástica no Twitter, Temer afirmou ter conversado por mais de duas horas com Velloso, destacando uma amizade de quatro décadas.
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	mensagem	mensagem	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:em	_
+4	bombástica	bombástico	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+5-6	no	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Twitter	Twitter	PROPN	_	_	3	nmod	3:nmod:em	SpaceAfter=No
+8	,	,	PUNCT	_	_	3	punct	3:punct	_
+9	Temer	Temer	PROPN	_	_	10	nsubj	10:nsubj|12:nsubj	_
+10	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+11	ter	ter	AUX	_	VerbForm=Inf	12	aux	12:aux	_
+12	conversado	conversar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	10	xcomp	10:xcomp	_
+13	por	por	ADP	_	_	17	case	17:case	_
+14	mais	mais	ADV	_	ExtPos=ADV	16	advmod	16:advmod	_
+15	de	de	ADP	_	_	14	fixed	14:fixed	_
+16	duas	dois	NUM	_	Gender=Fem|NumType=Card	17	nummod	17:nummod	_
+17	horas	hora	NOUN	_	Gender=Fem|Number=Plur	12	obl	12:obl:por	_
+18	com	com	ADP	_	_	19	case	19:case	_
+19	Velloso	Velloso	PROPN	_	_	12	obl	12:obl:com	SpaceAfter=No
+20	,	,	PUNCT	_	_	21	punct	21:punct	_
+21	destacando	destacar	VERB	_	VerbForm=Ger	12	advcl	12:advcl	_
+22	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	amizade	amizade	NOUN	_	Gender=Fem|Number=Sing	21	obj	21:obj	_
+24	de	de	ADP	_	_	26	case	26:case	_
+25	quatro	quatro	NUM	_	NumType=Card	26	nummod	26:nummod	_
+26	décadas	década	NOUN	_	Gender=Fem|Number=Plur	23	nmod	23:nmod:de	SpaceAfter=No
+27	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0005
+# text = Segundo fontes exclusivas, a decisão de Temer seria influenciada por uma promessa feita durante a campanha presidencial.
+1	Segundo	segundo	ADP	_	_	2	case	2:case	_
+2	fontes	fonte	NOUN	_	Gender=Fem|Number=Plur	10	obl	10:obl:segundo	_
+3	exclusivas	exclusivo	ADJ	_	Gender=Fem|Number=Plur	2	amod	2:amod	SpaceAfter=No
+4	,	,	PUNCT	_	_	2	punct	2:punct	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	decisão	decisão	NOUN	_	Gender=Fem|Number=Sing	10	nsubj:pass	10:nsubj:pass	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	Temer	Temer	PROPN	_	_	6	nmod	6:nmod:de	_
+9	seria	ser	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	10	aux:pass	10:aux:pass	_
+10	influenciada	influenciar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+11	por	por	ADP	_	_	13	case	13:case	_
+12	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	promessa	promessa	NOUN	_	Gender=Fem|Number=Sing	10	obl:agent	10:obl:agent	_
+14	feita	fazer	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	13	acl	13:acl	_
+15	durante	durante	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	campanha	campanha	NOUN	_	Gender=Fem|Number=Sing	14	obl	14:obl:durante	_
+18	presidencial	presidencial	ADJ	_	Number=Sing	17	amod	17:amod	SpaceAfter=No
+19	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0007
+# text = A vaga está aberta desde a indicação de Alexandre de Moraes ao STF.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	vaga	vaga	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+3	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+4	aberta	aberto	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	0	root	0:root	_
+5	desde	desde	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	indicação	indicação	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:desde	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	Alexandre	Alexandre	PROPN	_	_	7	nmod	7:nmod:de	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	Moraes	Moraes	PROPN	_	_	9	flat:name	9:flat:name	_
+12-13	ao	_	_	_	_	_	_	_	_
+12	a	a	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	STF	STF	PROPN	_	_	7	nmod	7:nmod:a	SpaceAfter=No
+15	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0009
+# text = O encontro teria sido arranjado por intermediários influentes, e Velloso, apesar de negar um convite formal em entrevista à rádio Gaúcha, teria demonstrado interesse na posição.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	encontro	encontro	NOUN	_	Gender=Masc|Number=Sing	5	nsubj:pass	5:nsubj:pass	_
+3	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	5	aux	5:aux	_
+4	sido	ser	AUX	_	Gender=Masc|Number=Sing|VerbForm=Part	5	aux:pass	5:aux:pass	_
+5	arranjado	arranjar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+6	por	por	ADP	_	_	7	case	7:case	_
+7	intermediários	intermediário	NOUN	_	Gender=Masc|Number=Plur	5	obl:agent	5:obl:agent	_
+8	influentes	influente	ADJ	_	Number=Plur	7	amod	7:amod	SpaceAfter=No
+9	,	,	PUNCT	_	_	27	punct	27:punct	_
+10	e	e	CCONJ	_	_	27	cc	27:cc	_
+11	Velloso	Velloso	PROPN	_	_	27	nsubj	27:nsubj	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	apesar	apesar	ADV	_	_	27	advmod	27:advmod	_
+14	de	de	ADP	_	_	15	mark	15:mark	_
+15	negar	negar	VERB	_	VerbForm=Inf	13	acl	13:acl:de	_
+16	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	convite	convite	NOUN	_	Gender=Masc|Number=Sing	15	obj	15:obj	_
+18	formal	formal	ADJ	_	Number=Sing	17	amod	17:amod	_
+19	em	em	ADP	_	_	20	case	20:case	_
+20	entrevista	entrevista	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl:em	_
+21-22	à	_	_	_	_	_	_	_	_
+21	a	a	ADP	_	_	23	case	23:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	rádio	rádio	NOUN	_	Number=Sing	20	nmod	20:nmod:a	_
+24	Gaúcha	Gaúcha	PROPN	_	_	23	nmod	23:nmod	SpaceAfter=No
+25	,	,	PUNCT	_	_	13	punct	13:punct	_
+26	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	27	aux	27:aux	_
+27	demonstrado	demonstrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	5	conj	5:conj:e	_
+28	interesse	interesse	NOUN	_	Gender=Masc|Number=Sing	27	obj	27:obj	_
+29-30	na	_	_	_	_	_	_	_	_
+29	em	em	ADP	_	_	31	case	31:case	_
+30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+31	posição	posição	NOUN	_	Gender=Fem|Number=Sing	28	nmod	28:nmod:em	SpaceAfter=No
+32	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0011
+# text = Temer garantiu que a escolha será pessoal e livre de conotações partidárias, mas analistas políticos acreditam que a nomeação pode fortalecer alianças dentro do PMDB e atrair apoio do PSDB.
+1	Temer	Temer	PROPN	_	_	2	nsubj	2:nsubj	_
+2	garantiu	garantir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	7	mark	7:mark|9:mark	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	escolha	escolha	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj|9:nsubj	_
+6	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	7	cop	7:cop|9:cop	_
+7	pessoal	pessoal	ADJ	_	Number=Sing	2	ccomp	2:ccomp	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	livre	livre	ADJ	_	Number=Sing	7	conj	2:ccomp|7:conj:e	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	conotações	conotação	NOUN	_	Gender=Fem|Number=Plur	9	obl	9:obl:de	_
+12	partidárias	partidário	ADJ	_	Gender=Fem|Number=Plur	11	amod	11:amod	SpaceAfter=No
+13	,	,	PUNCT	_	_	17	punct	17:punct	_
+14	mas	mas	CCONJ	_	_	17	cc	17:cc	_
+15	analistas	analista	NOUN	_	Number=Plur	17	nsubj	17:nsubj	_
+16	políticos	político	ADJ	_	Gender=Masc|Number=Plur	15	amod	15:amod	_
+17	acreditam	acreditar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:mas	_
+18	que	que	SCONJ	_	_	21	mark	21:mark	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	nomeação	nomeação	NOUN	_	Gender=Fem|Number=Sing	21	nsubj	21:nsubj|22:nsubj|29:nsubj	_
+21	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	ccomp	17:ccomp	_
+22	fortalecer	fortalecer	VERB	_	VerbForm=Inf	21	xcomp	21:xcomp	_
+23	alianças	aliança	NOUN	_	Gender=Fem|Number=Plur	22	obj	22:obj	_
+24	dentro	dentro	ADV	_	_	22	advmod	22:advmod	_
+25-26	do	_	_	_	_	_	_	_	_
+25	de	de	ADP	_	_	27	case	27:case	_
+26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	PMDB	PMDB	PROPN	_	_	24	obl	24:obl:de	_
+28	e	e	CCONJ	_	_	29	cc	29:cc	_
+29	atrair	atrair	VERB	_	VerbForm=Inf	22	conj	21:xcomp|22:conj:e	_
+30	apoio	apoio	NOUN	_	Gender=Masc|Number=Sing	29	obj	29:obj	_
+31-32	do	_	_	_	_	_	_	_	_
+31	de	de	ADP	_	_	33	case	33:case	_
+32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	33:det	_
+33	PSDB	PSDB	PROPN	_	_	30	nmod	30:nmod:de	SpaceAfter=No
+34	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0013
+# text = A busca por um nome técnico e fora das malhas da Operação Lava Jato continua sendo um desafio crucial para o presidente.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	busca	busca	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	17:nsubj|20:nsubj	_
+3	por	por	ADP	_	_	5	case	5:case	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	nome	nome	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:por	_
+6	técnico	técnico	ADJ	_	Gender=Masc|Number=Sing	5	amod	5:amod	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	fora	fora	ADV	_	_	6	conj	5:advmod|6:conj:e	_
+9-10	das	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	11:det	_
+11	malhas	malha	NOUN	_	Gender=Fem|Number=Plur	8	obl	8:obl:de	_
+12-13	da	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	Operação	Operação	PROPN	_	_	11	nmod	11:nmod:de	_
+15	Lava	Lava	PROPN	_	_	14	flat:name	14:flat:name	_
+16	Jato	Jato	PROPN	_	_	14	flat:name	14:flat:name	_
+17	continua	continuar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+18	sendo	ser	AUX	_	VerbForm=Ger	20	cop	20:cop	_
+19	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	desafio	desafio	NOUN	_	Gender=Masc|Number=Sing	17	xcomp	17:xcomp	_
+21	crucial	crucial	ADJ	_	Number=Sing	20	amod	20:amod	_
+22	para	para	ADP	_	_	24	case	24:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	presidente	presidente	NOUN	_	Number=Sing	20	nmod	20:nmod:para	SpaceAfter=No
+25	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0015
+# text = Enquanto isso, José Levi, ministro interino, mantém a gestão da pasta.
+1	Enquanto	enquanto	ADV	_	ExtPos=ADV	10	advmod	10:advmod	_
+2	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	fixed	1:fixed	SpaceAfter=No
+3	,	,	PUNCT	_	_	1	punct	1:punct	_
+4	José	José	PROPN	_	_	10	nsubj	10:nsubj	_
+5	Levi	Levi	PROPN	_	_	4	flat:name	4:flat:name	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	ministro	ministro	NOUN	_	Gender=Masc|Number=Sing	4	appos	4:appos	_
+8	interino	interino	ADJ	_	Gender=Masc|Number=Sing	7	amod	7:amod	SpaceAfter=No
+9	,	,	PUNCT	_	_	7	punct	7:punct	_
+10	mantém	manter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	gestão	gestão	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+13-14	da	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	pasta	pasta	NOUN	_	Gender=Fem|Number=Sing	12	nmod	12:nmod:de	SpaceAfter=No
+16	.	.	PUNCT	_	_	10	punct	10:punct	_

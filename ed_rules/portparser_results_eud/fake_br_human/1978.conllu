@@ -1,0 +1,310 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Qual o problema em quebrar uma estátua em Portugal?
+1	Qual	qual	PRON	_	Number=Sing|PronType=Int	3	nsubj	3:nsubj	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	problema	problema	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+4	em	em	ADP	_	_	5	mark	5:mark	_
+5	quebrar	quebrar	VERB	_	VerbForm=Inf	3	acl	3:acl:em	_
+6	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	estátua	estátua	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+8	em	em	ADP	_	_	9	case	9:case	_
+9	Portugal	Portugal	PROPN	_	_	5	obl	5:obl:em	SpaceAfter=No
+10	?	?	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = Os portugueses mataram nossos índios e roubaram nossas riquezas.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	portugueses	portuguÃªs	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	3:nsubj|7:nsubj	_
+3	mataram	matar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	nossos	nosso	DET	_	Gender=Masc|Number=Plur|Person=1|Poss=Yes|PronType=Prs	5	det	5:det	_
+5	índios	índio	NOUN	_	Gender=Masc|Number=Plur	3	obj	3:obj	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	roubaram	roubar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	3	conj	3:conj:e	_
+8	nossas	nosso	DET	_	Gender=Fem|Number=Plur|Person=1|Poss=Yes|PronType=Prs	9	det	9:det	_
+9	riquezas	riqueza	NOUN	_	Gender=Fem|Number=Plur	7	obj	7:obj	SpaceAfter=No
+10	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0005
+# text = Uma notícia que está rodando o mundo hoje (07) fala sobre um brasileiro que destruiu uma estátua de 300 anos em Portugal.
+1	Uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	notícia	notícia	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	5:nsubj|12:nsubj	_
+3	que	que	PRON	_	PronType=Rel	5	nsubj	2:ref	_
+4	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	5:aux	_
+5	rodando	rodar	VERB	_	VerbForm=Ger	2	acl:relcl	2:acl:relcl	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+8	hoje	hoje	ADV	_	_	5	advmod	5:advmod	_
+9	(	(	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+10	07	07	NUM	_	NumType=Card	2	appos	2:appos	SpaceAfter=No
+11	)	)	PUNCT	_	_	10	punct	10:punct	_
+12	fala	falar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+13	sobre	sobre	ADP	_	_	15	case	15:case	_
+14	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	brasileiro	brasileiro	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:sobre|17:nsubj	_
+16	que	que	PRON	_	PronType=Rel	17	nsubj	15:ref	_
+17	destruiu	destruir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	acl:relcl	15:acl:relcl	_
+18	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	estátua	estátua	NOUN	_	Gender=Fem|Number=Sing	17	obj	17:obj	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	300	300	NUM	_	NumType=Card	22	nummod	22:nummod	_
+22	anos	ano	NOUN	_	Gender=Masc|Number=Plur	19	nmod	19:nmod:de	_
+23	em	em	ADP	_	_	24	case	24:case	_
+24	Portugal	Portugal	PROPN	_	_	17	obl	17:obl:em	SpaceAfter=No
+25	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0007
+# text = (Paulo Agostinho para o Diário do Brasil) A mídia está massacrando o rapaz que tentou tirar uma selfie com o objeto barroco e acabou se estabacando no chão junto com a estátua.
+1	(	(	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+2	Paulo	Paulo	PROPN	_	_	14	nsubj	14:nsubj	_
+3	Agostinho	Agostinho	PROPN	_	_	2	flat:name	2:flat:name	_
+4	para	para	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	Diário	Diário	PROPN	_	_	2	nmod	2:nmod:para	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	Brasil	Brasil	PROPN	_	_	6	flat:name	6:flat:name	SpaceAfter=No
+10	)	)	PUNCT	_	_	2	punct	2:punct	_
+11	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	mídia	mídia	NOUN	_	Gender=Fem|Number=Sing	14	nsubj	14:nsubj	_
+13	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux	14:aux	_
+14	massacrando	massacrar	VERB	_	VerbForm=Ger	0	root	0:root	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	rapaz	rapaz	NOUN	_	Gender=Masc|Number=Sing	14	obj	14:obj|18:nsubj|19:nsubj|27:nsubj|29:nsubj	_
+17	que	que	PRON	_	PronType=Rel	18	nsubj	16:ref	_
+18	tentou	tentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	acl:relcl	16:acl:relcl	_
+19	tirar	tirar	VERB	_	VerbForm=Inf	18	xcomp	18:xcomp	_
+20	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	selfie	selfie	NOUN	_	Foreign=Yes|Gender=Fem|Number=Sing	19	obj	19:obj	_
+22	com	com	ADP	_	_	24	case	24:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	objeto	objeto	NOUN	_	Gender=Masc|Number=Sing	19	obl	19:obl:com	_
+25	barroco	barroco	ADJ	_	Gender=Masc|Number=Sing	24	amod	24:amod	_
+26	e	e	CCONJ	_	_	27	cc	27:cc	_
+27	acabou	acabar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	conj	16:acl:relcl|18:conj:e	_
+28	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	29	expl	29:expl	_
+29	estabacando	estabacar	VERB	_	VerbForm=Ger	27	xcomp	27:xcomp	_
+30-31	no	_	_	_	_	_	_	_	_
+30	em	em	ADP	_	_	32	case	32:case	_
+31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+32	chão	chão	NOUN	_	Gender=Masc|Number=Sing	29	obl	29:obl:em	_
+33	junto	junto	ADV	_	_	29	advmod	29:advmod	_
+34	com	com	ADP	_	_	36	case	36:case	_
+35	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	36:det	_
+36	estátua	estátua	NOUN	_	Gender=Fem|Number=Sing	33	obl	33:obl:com	SpaceAfter=No
+37	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0009
+# text = É óbvio que esse rapaz não tinha a menor intenção de provocar esse tipo de acidente.
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	2:cop	_
+2	óbvio	óbvio	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	_
+3	que	que	SCONJ	_	_	7	mark	7:mark	_
+4	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	5	det	5:det	_
+5	rapaz	rapaz	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+6	não	não	ADV	_	_	7	advmod	7:advmod	_
+7	tinha	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	2	csubj	2:csubj	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+9	menor	menor	ADJ	_	Number=Sing	10	amod	10:amod	_
+10	intenção	intenção	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	_
+11	de	de	ADP	_	_	12	mark	12:mark	_
+12	provocar	provocar	VERB	_	VerbForm=Inf	10	acl	10:acl:de	_
+13	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	14	det	14:det	_
+14	tipo	tipo	NOUN	_	Gender=Masc|Number=Sing	12	obj	12:obj	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	acidente	acidente	NOUN	_	Gender=Masc|Number=Sing	14	nmod	14:nmod:de	SpaceAfter=No
+17	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0011
+# text = Além do mais, temos um "crédito extra" com Portugal.
+1	Além	além	ADV	_	_	6	advmod	6:advmod	_
+2-3	do	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	o	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	1	obl	1:obl:de	_
+4	mais	mais	NOUN	_	Gender=Masc|Number=Sing	3	fixed	3:fixed	SpaceAfter=No
+5	,	,	PUNCT	_	_	1	punct	1:punct	_
+6	temos	ter	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+8	"	"	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+9	crédito	crédito	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+10	extra	extra	ADJ	_	Number=Sing	9	amod	9:amod	SpaceAfter=No
+11	"	"	PUNCT	_	_	9	punct	9:punct	_
+12	com	com	ADP	_	_	13	case	13:case	_
+13	Portugal	Portugal	PROPN	_	_	9	nmod	9:nmod:com	SpaceAfter=No
+14	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0013
+# text = Vamos voltar um pouco no tempo [...] A colonização portuguesa teve como características a submissão e o extermínio de milhões de indígenas em terras brasileiras.
+1	Vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	aux	2:aux	_
+2	voltar	voltar	VERB	_	VerbForm=Inf	0	root	0:root	_
+3	um	um	DET	_	Definite=Ind|ExtPos=ADV|Gender=Masc|Number=Sing|PronType=Art	2	advmod	2:advmod	_
+4	pouco	pouco	NOUN	_	Gender=Masc|Number=Sing	3	fixed	3:fixed	_
+5-6	no	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:em	_
+8	[	[	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+9	.	.	PUNCT	_	_	2	parataxis	2:parataxis	SpaceAfter=No
+10	..	..	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+11	]	]	PUNCT	_	_	9	punct	9:punct	_
+12	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	colonização	colonização	NOUN	_	Gender=Fem|Number=Sing	15	nsubj	15:nsubj	_
+14	portuguesa	portuguÃªs	ADJ	_	Gender=Fem|Number=Sing	13	amod	13:amod	_
+15	teve	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	parataxis	2:parataxis	_
+16	como	como	ADP	_	_	17	case	17:case	_
+17	características	característica	NOUN	_	Gender=Fem|Number=Plur	15	obl	15:obl:como	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	submissão	submissão	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	_
+20	e	e	CCONJ	_	_	22	cc	22:cc	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	extermínio	extermínio	NOUN	_	Gender=Masc|Number=Sing	19	conj	15:obj|19:conj:e	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	22	nmod	22:nmod:de	_
+25	de	de	ADP	_	_	26	case	26:case	_
+26	indígenas	indígena	NOUN	_	Number=Plur	24	nmod	24:nmod:de	_
+27	em	em	ADP	_	_	28	case	28:case	_
+28	terras	terra	NOUN	_	Gender=Fem|Number=Plur	19	nmod	19:nmod:em|22:nmod:em	_
+29	brasileiras	brasileiro	ADJ	_	Gender=Fem|Number=Plur	28	amod	28:amod	SpaceAfter=No
+30	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0015
+# text = A Coroa portuguesa tinha como principais objetivos a expansão comercial e a busca de produtos para comercializar na Europa, ou seja, roubar nossas riquezas.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Coroa	Coroa	PROPN	_	_	4	nsubj	4:nsubj	_
+3	portuguesa	portuguÃªs	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	_
+4	tinha	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+5	como	como	ADP	_	_	7	case	7:case	_
+6	principais	principal	ADJ	_	Number=Plur	7	amod	7:amod	_
+7	objetivos	objetivo	NOUN	_	Gender=Masc|Number=Plur	4	obl	4:obl:como	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	expansão	expansão	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+10	comercial	comercial	ADJ	_	Number=Sing	9	amod	9:amod	_
+11	e	e	CCONJ	_	_	13	cc	13:cc	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	busca	busca	NOUN	_	Gender=Fem|Number=Sing	9	conj	4:obj|9:conj:e	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	produtos	produto	NOUN	_	Gender=Masc|Number=Plur	13	nmod	13:nmod:de	_
+16	para	para	ADP	_	_	17	mark	17:mark|25:mark	_
+17	comercializar	comercializar	VERB	_	VerbForm=Inf	15	acl	15:acl:para	_
+18-19	na	_	_	_	_	_	_	_	_
+18	em	em	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	Europa	Europa	PROPN	_	_	17	obl	17:obl:em	SpaceAfter=No
+21	,	,	PUNCT	_	_	22	punct	22:punct	_
+22	ou	ou	CCONJ	_	ExtPos=CCONJ	25	cc	25:cc	_
+23	seja	ser	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	fixed	22:fixed	SpaceAfter=No
+24	,	,	PUNCT	_	_	22	punct	22:punct	_
+25	roubar	roubar	VERB	_	VerbForm=Inf	17	conj	15:acl:para|17:conj:ou	_
+26	nossas	nosso	DET	_	Gender=Fem|Number=Plur|Person=1|Poss=Yes|PronType=Prs	27	det	27:det	_
+27	riquezas	riqueza	NOUN	_	Gender=Fem|Number=Plur	25	obj	25:obj	SpaceAfter=No
+28	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0017
+# text = Em 1500, os primeiros portugueses que desembarcaram na América tomaram posse das terras.
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	1500	1500	NUM	_	NumType=Card	12	obl	12:obl:em	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	6:det	_
+5	primeiros	primeiro	ADJ	_	Gender=Masc|Number=Plur|NumType=Ord	6	amod	6:amod	_
+6	portugueses	portuguÃªs	NOUN	_	Gender=Masc|Number=Plur	12	nsubj	8:nsubj|12:nsubj	_
+7	que	que	PRON	_	PronType=Rel	8	nsubj	6:ref	_
+8	desembarcaram	desembarcar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	6	acl:relcl	6:acl:relcl	_
+9-10	na	_	_	_	_	_	_	_	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	América	América	PROPN	_	_	8	obl	8:obl:em	_
+12	tomaram	tomar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+13	posse	posse	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+14-15	das	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	16:det	_
+16	terras	terra	NOUN	_	Gender=Fem|Number=Plur	13	nmod	13:nmod:de	SpaceAfter=No
+17	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0019
+# text = Em seguida, tiveram os primeiros contatos com os indígenas, que eles chamavam de "selvagens".
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	seguida	seguida	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:em	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	tiveram	ter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	7:det	_
+6	primeiros	primeiro	ADJ	_	Gender=Masc|Number=Plur|NumType=Ord	7	amod	7:amod	_
+7	contatos	contato	NOUN	_	Gender=Masc|Number=Plur	4	obj	4:obj	_
+8	com	com	ADP	_	_	10	case	10:case	_
+9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	10:det	_
+10	indígenas	indígena	NOUN	_	Number=Plur	7	nmod	7:nmod:com|14:obj	SpaceAfter=No
+11	,	,	PUNCT	_	_	14	punct	14:punct	_
+12	que	que	PRON	_	PronType=Rel	14	obj	10:ref	_
+13	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	14	nsubj	14:nsubj	_
+14	chamavam	chamar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	10	acl:relcl	10:acl:relcl	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	"	"	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+17	selvagens	selvagem	NOUN	_	Number=Plur	14	obl	14:obl:de	SpaceAfter=No
+18	"	"	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+19	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0021
+# text = Resumindo, o processo de colonização portuguesa foi um processo de extermínio e submissão dos indígenas tanto por meio dos conflitos com os portugueses quanto pelas doenças trazidas por eles ( gripe, a tuberculose e a sífilis).
+1	Resumindo	resumir	VERB	_	VerbForm=Ger	10	parataxis	10:parataxis	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	processo	processo	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	10:nsubj	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	colonização	colonização	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:de	_
+7	portuguesa	portuguÃªs	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	_
+8	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	cop	10:cop	_
+9	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	processo	processo	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+11	de	de	ADP	_	_	12	case	12:case|14:case	_
+12	extermínio	extermínio	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:de	_
+13	e	e	CCONJ	_	_	14	cc	14:cc	_
+14	submissão	submissão	NOUN	_	Gender=Fem|Number=Sing	12	conj	10:nmod:de|12:conj:e	_
+15-16	dos	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	17:det	_
+17	indígenas	indígena	NOUN	_	Number=Plur	12	nmod	12:nmod:de|14:nmod:de	_
+18	tanto	tanto	CCONJ	_	_	20	cc	20:cc	_
+19	por	por	ADP	_	_	20	case	20:case	_
+20	meio	meio	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:por|14:nmod:por	_
+21-22	dos	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	23:det	_
+23	conflitos	conflito	NOUN	_	Gender=Masc|Number=Plur	20	nmod	20:nmod:de	_
+24	com	com	ADP	_	_	26	case	26:case	_
+25	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	26:det	_
+26	portugueses	portuguÃªs	NOUN	_	Gender=Masc|Number=Plur	23	nmod	23:nmod:com	_
+27	quanto	quanto	CCONJ	_	_	30	cc	30:cc	_
+28-29	pelas	_	_	_	_	_	_	_	_
+28	por	por	ADP	_	_	30	case	30:case	_
+29	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	30	det	30:det	_
+30	doenças	doença	NOUN	_	Gender=Fem|Number=Plur	20	conj	12:nmod:por|14:nmod:por|20:conj:quanto	_
+31	trazidas	trazer	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	30	acl	30:acl	_
+32	por	por	ADP	_	_	33	case	33:case	_
+33	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	31	obl:agent	31:obl:agent	_
+34	(	(	PUNCT	_	_	35	punct	35:punct	_
+35	gripe	gripe	NOUN	_	Gender=Fem|Number=Sing	30	appos	30:appos	SpaceAfter=No
+36	,	,	PUNCT	_	_	38	punct	38:punct	_
+37	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	38:det	_
+38	tuberculose	tuberculose	NOUN	_	Gender=Fem|Number=Sing	35	conj	30:appos|35:conj:e	_
+39	e	e	CCONJ	_	_	41	cc	41:cc	_
+40	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	41:det	_
+41	sífilis	sífilis	NOUN	_	Gender=Fem|Number=Sing	35	conj	30:appos|35:conj:e	SpaceAfter=No
+42	)	)	PUNCT	_	_	35	punct	35:punct	SpaceAfter=No
+43	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0023
+# text = O Brasileiro tem que parar de ser frouxo e defender seu próprio povo!
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Brasileiro	Brasileiro	PROPN	_	_	3	nsubj	3:nsubj|5:nsubj|8:nsubj|10:nsubj	_
+3	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	ADP	_	_	5	mark	5:mark|10:mark	_
+5	parar	parar	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+6	de	de	ADP	_	_	8	mark	8:mark	_
+7	ser	ser	AUX	_	VerbForm=Inf	8	cop	8:cop	_
+8	frouxo	frouxo	ADJ	_	Gender=Masc|Number=Sing	5	xcomp	5:xcomp	_
+9	e	e	CCONJ	_	_	10	cc	10:cc	_
+10	defender	defender	VERB	_	VerbForm=Inf	5	conj	3:xcomp|5:conj:e	_
+11	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	13	det	13:det	_
+12	próprio	próprio	DET	_	Gender=Masc|Number=Sing|PronType=Dem	13	amod	13:amod	_
+13	povo	povo	NOUN	_	Gender=Masc|Number=Sing	10	obj	10:obj	SpaceAfter=No
+14	!	!	PUNCT	_	_	3	punct	3:punct	_

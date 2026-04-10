@@ -1,0 +1,334 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Urgente! Fraude Eleitoral Exposta em Curitiba: Boletins de Urna Jogados na Rua Revelam Manipulação!
+1	Urgente	urgente	ADJ	_	Number=Sing	0	root	0:root	SpaceAfter=No
+2	!	!	PUNCT	_	_	1	punct	1:punct	_
+3	Fraude	Fraude	PROPN	_	_	1	nsubj	1:nsubj	_
+4	Eleitoral	Eleitoral	PROPN	_	_	3	flat:name	3:flat:name	_
+5	Exposta	expor	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	3	acl	3:acl	_
+6	em	em	ADP	_	_	7	case	7:case	_
+7	Curitiba	Curitiba	PROPN	_	_	5	obl	5:obl:em	SpaceAfter=No
+8	:	:	PUNCT	_	_	9	punct	9:punct	_
+9	Boletins	Boletins	PROPN	_	_	16	nsubj	16:nsubj	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	Urna	Urna	PROPN	_	_	9	flat:name	9:flat:name	_
+12	Jogados	jogar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	9	acl	9:acl	_
+13-14	na	_	_	_	_	_	_	_	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	Rua	Rua	PROPN	_	_	12	obl	12:obl:em	_
+16	Revelam	revelar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	1:parataxis	_
+17	Manipulação	Manipulação	PROPN	_	_	16	obj	16:obj	SpaceAfter=No
+18	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Um vídeo chocante está circulando nas redes sociais, mostrando uma mulher que encontrou boletins de urna supostamente descartados na rua em Curitiba, Paraná.
+1	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+3	chocante	chocante	ADJ	_	Number=Sing	2	amod	2:amod	_
+4	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	5:aux	_
+5	circulando	circular	VERB	_	VerbForm=Ger	0	root	0:root	_
+6-7	nas	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	8:det	_
+8	redes	rede	NOUN	_	Gender=Fem|Number=Plur	5	obl	5:obl:em	_
+9	sociais	social	ADJ	_	Number=Plur	8	amod	8:amod	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	mostrando	mostrar	VERB	_	VerbForm=Ger	5	advcl	5:advcl	_
+12	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	mulher	mulher	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj|15:nsubj	_
+14	que	que	PRON	_	PronType=Rel	15	nsubj	13:ref	_
+15	encontrou	encontrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	acl:relcl	13:acl:relcl	_
+16	boletins	boletim	NOUN	_	Gender=Masc|Number=Plur	15	obj	15:obj	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	urna	urna	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:de	_
+19	supostamente	supostamente	ADV	_	_	20	advmod	20:advmod	_
+20	descartados	descartar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	16	acl	16:acl	_
+21-22	na	_	_	_	_	_	_	_	_
+21	em	em	ADP	_	_	23	case	23:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	rua	rua	NOUN	_	Gender=Fem|Number=Sing	20	obl	20:obl:em	_
+24	em	em	ADP	_	_	25	case	25:case	_
+25	Curitiba	Curitiba	PROPN	_	_	20	obl	20:obl:em	SpaceAfter=No
+26	,	,	PUNCT	_	_	27	punct	27:punct	_
+27	Paraná	Paraná	PROPN	_	_	25	appos	25:appos	SpaceAfter=No
+28	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0005
+# text = A mulher, visivelmente abalada, alega que isso é prova cabal de que os votos do primeiro turno não foram devidamente computados.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	mulher	mulher	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	5	punct	5:punct	_
+4	visivelmente	visivelmente	ADV	_	_	5	advmod	5:advmod	_
+5	abalada	abalado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	2	acl	2:acl	SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	5:punct	_
+7	alega	alegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	que	que	SCONJ	_	_	11	mark	11:mark	_
+9	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	11	nsubj	11:nsubj	_
+10	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	11:cop	_
+11	prova	prova	NOUN	_	Gender=Fem|Number=Sing	7	ccomp	7:ccomp	_
+12	cabal	cabal	ADJ	_	Number=Sing	11	amod	11:amod	_
+13	de	de	ADP	_	ExtPos=SCONJ	24	mark	24:mark	_
+14	que	que	SCONJ	_	_	13	fixed	13:fixed	_
+15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	16:det	_
+16	votos	voto	NOUN	_	Gender=Masc|Number=Plur	24	nsubj:pass	24:nsubj:pass	_
+17-18	do	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	20	case	20:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+19	primeiro	primeiro	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	20	amod	20:amod	_
+20	turno	turno	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod:de	_
+21	não	não	ADV	_	_	24	advmod	24:advmod	_
+22	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	24	aux:pass	24:aux:pass	_
+23	devidamente	devidamente	ADV	_	_	24	advmod	24:advmod	_
+24	computados	computar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	11	acl	11:acl:de_que	SpaceAfter=No
+25	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0007
+# text = Oi pessoal, boa noite! Hoje, dia 2 de outubro de 2023, vejam só o que encontramos às oito horas da noite! Documentos cruciais, simplesmente abandonados.
+1	Oi	oi	INTJ	_	_	5	det	5:det	_
+2	pessoal	pessoal	NOUN	_	Number=Sing	16	discourse	16:discourse	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	boa	bom	ADJ	_	Gender=Fem|Number=Sing	5	amod	5:amod	_
+5	noite	noite	NOUN	_	Gender=Fem|Number=Sing	16	parataxis	16:parataxis	SpaceAfter=No
+6	!	!	PUNCT	_	_	5	punct	5:punct	_
+7	Hoje	hoje	ADV	_	_	16	advmod	16:advmod	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	dia	dia	NOUN	_	Gender=Masc|Number=Sing	16	obl	16:obl	_
+10	2	2	NUM	_	NumType=Card	9	nmod	9:nmod	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	outubro	outubro	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:de	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	2023	2023	NUM	_	NumType=Card	12	nmod	12:nmod:de	SpaceAfter=No
+15	,	,	PUNCT	_	_	9	punct	9:punct	_
+16	vejam	ver	VERB	_	Mood=Imp|Number=Plur|Person=3|VerbForm=Fin	0	root	0:root	_
+17	só	só	ADV	_	_	16	advmod	16:advmod	_
+18	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	16	obj	16:obj|20:obj	_
+19	que	que	PRON	_	PronType=Rel	20	obj	18:ref	_
+20	encontramos	encontrar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	18	acl:relcl	18:acl:relcl	_
+21-22	às	_	_	_	_	_	_	_	_
+21	a	a	ADP	_	_	24	case	24:case	_
+22	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	24:det	_
+23	oito	oito	NUM	_	NumType=Card	24	nummod	24:nummod	_
+24	horas	hora	NOUN	_	Gender=Fem|Number=Plur	20	obl	20:obl:a	_
+25-26	da	_	_	_	_	_	_	_	_
+25	de	de	ADP	_	_	27	case	27:case	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	noite	noite	NOUN	_	Gender=Fem|Number=Sing	24	nmod	24:nmod:de	SpaceAfter=No
+28	!	!	PUNCT	_	_	29	punct	29:punct	_
+29	Documentos	documento	NOUN	_	Gender=Masc|Number=Plur	16	parataxis	16:parataxis	_
+30	cruciais	crucial	ADJ	_	Number=Plur	29	amod	29:amod	SpaceAfter=No
+31	,	,	PUNCT	_	_	33	punct	33:punct	_
+32	simplesmente	simplesmente	ADV	_	_	33	advmod	33:advmod	_
+33	abandonados	abandonar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	29	conj	16:parataxis|29:conj	SpaceAfter=No
+34	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0009
+# text = Isso aqui prova a falta de seriedade nas eleições brasileiras, declara ela.
+1	Isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	3	nsubj	3:nsubj	_
+2	aqui	aqui	ADV	_	_	3	advmod	3:advmod	_
+3	prova	provar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	ccomp:speech	13:ccomp:speech	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	falta	falta	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	seriedade	seriedade	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	_
+8-9	nas	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	10:det	_
+10	eleições	eleição	NOUN	_	Gender=Fem|Number=Plur	5	nmod	5:nmod:em	_
+11	brasileiras	brasileiro	ADJ	_	Gender=Fem|Number=Plur	10	amod	10:amod	SpaceAfter=No
+12	,	,	PUNCT	_	_	3	punct	3:punct	_
+13	declara	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+14	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	13	nsubj	13:nsubj	SpaceAfter=No
+15	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0011
+# text = Os boletins encontrados mostram resultados consistentes em que Jair Bolsonaro aparece como vencedor em todas as sessões exibidas.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	boletins	boletim	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	4:nsubj	_
+3	encontrados	encontrar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	2	acl	2:acl	_
+4	mostram	mostrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	resultados	resultado	NOUN	_	Gender=Masc|Number=Plur	4	obj	4:obj|11:obl:em	_
+6	consistentes	consistente	ADJ	_	Number=Plur	5	amod	5:amod	_
+7	em	em	ADP	_	_	8	case	8:case	_
+8	que	que	PRON	_	PronType=Rel	11	obl	5:ref	_
+9	Jair	Jair	PROPN	_	_	11	nsubj	11:nsubj	_
+10	Bolsonaro	Bolsonaro	PROPN	_	_	9	flat:name	9:flat:name	_
+11	aparece	aparecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_
+12	como	como	ADP	_	_	13	case	13:case	_
+13	vencedor	vencedor	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:como	_
+14	em	em	ADP	_	_	17	case	17:case	_
+15	todas	todo	DET	_	Gender=Fem|Number=Plur|PronType=Ind	17	det	17:det	_
+16	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	17:det	_
+17	sessões	sessão	NOUN	_	Gender=Fem|Number=Plur	11	obl	11:obl:em	_
+18	exibidas	exibir	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	17	acl	17:acl	SpaceAfter=No
+19	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0013
+# text = Olha só, Bolsonaro com 152 votos e o outro candidato com apenas 115.
+1	Olha	olhar	VERB	_	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	0:root	_
+2	só	só	ADV	_	_	1	advmod	1:advmod	SpaceAfter=No
+3	,	,	PUNCT	_	_	1	punct	1:punct	_
+4	Bolsonaro	Bolsonaro	PROPN	_	_	1	obj	1:obj	_
+5	com	com	ADP	_	_	7	case	7:case|11:case	_
+6	152	152	NUM	_	NumType=Card	7	nummod	7:nummod	_
+7	votos	voto	NOUN	_	Gender=Masc|Number=Plur	4	nmod	4:nmod:com	_
+8	e	e	CCONJ	_	_	11	cc	11:cc	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+10	outro	outro	DET	_	Gender=Masc|Number=Sing|PronType=Ind	11	det	11:det	_
+11	candidato	candidato	NOUN	_	Gender=Masc|Number=Sing	7	conj	4:nmod:com|7:conj:e	_
+12	com	com	ADP	_	_	14	case	14:case	_
+13	apenas	apenas	ADV	_	_	14	advmod	14:advmod	_
+14	115	115	NUM	_	NumType=Card	11	nmod	11:nmod:com	SpaceAfter=No
+15	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0015
+# text = E isso se repete em todos os boletins aqui!, exclama, exibindo as folhas para a câmera.
+1	E	e	CCONJ	_	_	4	cc	4:cc	_
+2	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	4	nsubj	4:nsubj	_
+3	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	4	expl	4:expl	_
+4	repete	repetir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	ccomp:speech	12:ccomp:speech	_
+5	em	em	ADP	_	_	8	case	8:case	_
+6	todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Ind	8	det	8:det	_
+7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	8:det	_
+8	boletins	boletim	NOUN	_	Gender=Masc|Number=Plur	4	obl	4:obl:em	_
+9	aqui	aqui	ADV	_	_	4	advmod	4:advmod	SpaceAfter=No
+10	!	!	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+11	,	,	PUNCT	_	_	4	punct	4:punct	_
+12	exclama	exclamar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	exibindo	exibir	VERB	_	VerbForm=Ger	12	advcl	12:advcl	_
+15	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	16:det	_
+16	folhas	folha	NOUN	_	Gender=Fem|Number=Plur	14	obj	14:obj	_
+17	para	para	ADP	_	_	19	case	19:case	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	câmera	câmera	NOUN	_	Gender=Fem|Number=Sing	14	obl	14:obl:para	SpaceAfter=No
+20	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0017
+# text = A denunciante afirma que irá ao procurador eleitoral do Paraná e que também compartilhará as evidências com candidatos que possam ajudar a esclarecer a situação.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	denunciante	denunciante	NOUN	_	Number=Sing	3	nsubj	3:nsubj	_
+3	afirma	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	5	mark	5:mark	_
+5	irá	ir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	ccomp	3:ccomp	_
+6-7	ao	_	_	_	_	_	_	_	_
+6	a	a	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	procurador	procurador	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:a	_
+9	eleitoral	eleitoral	ADJ	_	Number=Sing	8	amod	8:amod	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	Paraná	Paraná	PROPN	_	_	8	nmod	8:nmod:de	_
+13	e	e	CCONJ	_	_	16	cc	16:cc	_
+14	que	que	SCONJ	_	_	16	mark	16:mark	_
+15	também	também	ADV	_	_	16	advmod	16:advmod	_
+16	compartilhará	compartilhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	5	conj	3:ccomp|5:conj:e	_
+17	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	18:det	_
+18	evidências	evidência	NOUN	_	Gender=Fem|Number=Plur	16	obj	16:obj	_
+19	com	com	ADP	_	_	20	case	20:case	_
+20	candidatos	candidato	NOUN	_	Gender=Masc|Number=Plur	16	obl	16:obl:com|22:nsubj|23:nsubj|25:nsubj	_
+21	que	que	PRON	_	PronType=Rel	22	nsubj	20:ref	_
+22	possam	possam	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	acl:relcl	20:acl:relcl	_
+23	ajudar	ajudar	VERB	_	VerbForm=Inf	22	xcomp	22:xcomp	_
+24	a	a	ADP	_	_	25	mark	25:mark	_
+25	esclarecer	esclarecer	VERB	_	VerbForm=Inf	23	xcomp	23:xcomp	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	situação	situação	NOUN	_	Gender=Fem|Number=Sing	25	obj	25:obj	SpaceAfter=No
+28	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0019
+# text = Vou registrar um boletim de ocorrência e espero que tomem alguma atitude.
+1	Vou	ir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	aux	2:aux	_
+2	registrar	registrar	VERB	_	VerbForm=Inf	0	root	0:root	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	boletim	boletim	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	ocorrência	ocorrência	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:de	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	espero	esperar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	conj	2:conj:e	_
+9	que	que	SCONJ	_	_	10	mark	10:mark	_
+10	tomem	tomar	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	ccomp	8:ccomp	_
+11	alguma	algum	DET	_	Gender=Fem|Number=Sing|PronType=Ind	12	det	12:det	_
+12	atitude	atitude	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	SpaceAfter=No
+13	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0021
+# text = Isso aqui é um escândalo!
+1	Isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	5	nsubj	5:nsubj	_
+2	aqui	aqui	ADV	_	_	5	advmod	5:advmod	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	escândalo	escândalo	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+6	!	!	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0023
+# text = A gravação rapidamente viralizou, gerando ondas de indignação entre os internautas.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	gravação	gravação	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+3	rapidamente	rapidamente	ADV	_	_	4	advmod	4:advmod	_
+4	viralizou	viralizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	gerando	gerar	VERB	_	VerbForm=Ger	4	advcl	4:advcl	_
+7	ondas	onda	NOUN	_	Gender=Fem|Number=Plur	6	obj	6:obj	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	indignação	indignação	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:de	_
+10	entre	entre	ADP	_	_	12	case	12:case	_
+11	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	12:det	_
+12	internautas	internauta	NOUN	_	Number=Plur	6	obl	6:obl:entre	SpaceAfter=No
+13	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0025
+# text = Muitos estão questionando a integridade do processo eleitoral e exigindo explicações oficiais.
+1	Muitos	muito	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	3	nsubj	3:nsubj|11:nsubj	_
+2	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	aux	3:aux|11:aux	_
+3	questionando	questionar	VERB	_	VerbForm=Ger	0	root	0:root	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	integridade	integridade	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+6-7	do	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	processo	processo	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:de	_
+9	eleitoral	eleitoral	ADJ	_	Number=Sing	8	amod	8:amod	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	exigindo	exigir	VERB	_	VerbForm=Ger	3	conj	3:conj:e	_
+12	explicações	explicação	NOUN	_	Gender=Fem|Number=Plur	11	obj	11:obj	_
+13	oficiais	oficial	ADJ	_	Number=Plur	12	amod	12:amod	SpaceAfter=No
+14	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0027
+# text = **Atualização**: O Tribunal Regional Eleitoral do Paraná ainda não se pronunciou sobre o caso, aumentando as suspeitas de uma possível tentativa de encobrir a fraude.
+1	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+3	Atualização	atualização	NOUN	_	Gender=Fem|Number=Sing	17	parataxis	17:parataxis	SpaceAfter=No
+4	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+5	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+6	:	:	PUNCT	_	_	3	punct	3:punct	_
+7	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	Tribunal	Tribunal	PROPN	_	_	17	nsubj	17:nsubj	_
+9	Regional	Regional	PROPN	_	_	8	flat:name	8:flat:name	_
+10	Eleitoral	Eleitoral	PROPN	_	_	8	flat:name	8:flat:name	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	Paraná	Paraná	PROPN	_	_	8	flat:name	8:flat:name	_
+14	ainda	ainda	ADV	_	_	17	advmod	17:advmod	_
+15	não	não	ADV	_	_	17	advmod	17:advmod	_
+16	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	17	expl	17:expl	_
+17	pronunciou	pronunciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+18	sobre	sobre	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	caso	caso	NOUN	_	Gender=Masc|Number=Sing	17	obl	17:obl:sobre	SpaceAfter=No
+21	,	,	PUNCT	_	_	22	punct	22:punct	_
+22	aumentando	aumentar	VERB	_	VerbForm=Ger	17	advcl	17:advcl	_
+23	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	24:det	_
+24	suspeitas	suspeito	NOUN	_	Gender=Fem|Number=Plur	22	obj	22:obj	_
+25	de	de	ADP	_	_	28	case	28:case	_
+26	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+27	possível	possível	ADJ	_	Number=Sing	28	amod	28:amod	_
+28	tentativa	tentativa	NOUN	_	Gender=Fem|Number=Sing	24	nmod	24:nmod:de	_
+29	de	de	ADP	_	_	30	mark	30:mark	_
+30	encobrir	encobrir	VERB	_	VerbForm=Inf	28	acl	28:acl:de	_
+31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	32:det	_
+32	fraude	fraude	NOUN	_	Gender=Fem|Number=Sing	30	obj	30:obj	SpaceAfter=No
+33	.	.	PUNCT	_	_	17	punct	17:punct	_

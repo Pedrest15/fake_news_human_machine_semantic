@@ -1,0 +1,136 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Caiado faz pergunta e Dilma responde com um "embromation".
+1	Caiado	Caiado	PROPN	_	_	2	nsubj	2:nsubj	_
+2	faz	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	pergunta	pergunta	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+4	e	e	CCONJ	_	_	6	cc	6:cc	_
+5	Dilma	Dilma	PROPN	_	_	6	nsubj	6:nsubj	_
+6	responde	responder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:e	_
+7	com	com	ADP	_	_	10	case	10:case	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+9	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+10	embromation	embromation	X	_	Foreign=Yes	6	obl	6:obl:com	SpaceAfter=No
+11	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+12	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = O senador Ronaldo Caiado fez uma pergunta e Dilma perdeu o rumo.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	senador	senador	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+3	Ronaldo	Ronaldo	PROPN	_	_	2	nmod	2:nmod	_
+4	Caiado	Caiado	PROPN	_	_	3	flat:name	3:flat:name	_
+5	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	pergunta	pergunta	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+8	e	e	CCONJ	_	_	10	cc	10:cc	_
+9	Dilma	Dilma	PROPN	_	_	10	nsubj	10:nsubj	_
+10	perdeu	perder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	conj	5:conj:e	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	rumo	rumo	NOUN	_	Gender=Masc|Number=Sing	10	obj	10:obj	SpaceAfter=No
+13	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0005
+# text = Não seria um estelionato eleitoral se dirigir aos eleitores e prometer aquilo que não poderia cumprir?
+1	Não	não	ADV	_	_	4	advmod	4:advmod	_
+2	seria	ser	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	4	cop	4:cop	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	estelionato	estelionato	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+5	eleitoral	eleitoral	ADJ	_	Number=Sing	4	amod	4:amod	_
+6	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	7	expl	7:expl	_
+7	dirigir	dirigir	VERB	_	Number=Sing|Person=3|VerbForm=Inf	4	csubj	4:csubj	_
+8-9	aos	_	_	_	_	_	_	_	_
+8	a	a	ADP	_	_	10	case	10:case	_
+9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	10:det	_
+10	eleitores	eleitor	NOUN	_	Gender=Masc|Number=Plur	7	obl	7:obl:a	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	prometer	prometer	VERB	_	VerbForm=Inf	7	conj	4:csubj|7:conj:e	_
+13	aquilo	aquilo	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	12	obj	12:obj|17:obj	_
+14	que	que	PRON	_	PronType=Rel	16	obj	13:ref	_
+15	não	não	ADV	_	_	16	advmod	16:advmod	_
+16	poderia	poder	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	13	acl:relcl	13:acl:relcl	_
+17	cumprir	cumprir	VERB	_	VerbForm=Inf	16	xcomp	16:xcomp	SpaceAfter=No
+18	?	?	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0007
+# text = Dilma enrolou, enrolou e pediu ajuda para o advogado José Eduardo Cardoso: "Me dá a instituição que eu vou ler aqui... me dá aqui a instituição... quer dizer, me dá a Constituição" esbravejou Dilma.
+1	Dilma	Dilma	PROPN	_	_	2	nsubj	2:nsubj|4:nsubj|6:nsubj	_
+2	enrolou	enrolar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	40	ccomp:speech	40:ccomp:speech	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	enrolou	enrolar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	2:conj:e|40:ccomp:speech	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	pediu	pedir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	2:conj:e|40:ccomp:speech	_
+7	ajuda	ajuda	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+8	para	para	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	advogado	advogado	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:para	_
+11	José	José	PROPN	_	_	10	nmod	10:nmod	_
+12	Eduardo	Eduardo	PROPN	_	_	11	flat:name	11:flat:name	_
+13	Cardoso	Cardoso	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+14	:	:	PUNCT	_	_	17	punct	17:punct	_
+15	"	"	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+16	Me	me	PRON	_	Case=Dat|Number=Sing|Person=1|PronType=Prs	17	iobj	17:iobj	_
+17	dá	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	2:parataxis	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	instituição	instituição	NOUN	_	Gender=Fem|Number=Sing	17	obj	17:obj|23:obj	_
+20	que	que	PRON	_	PronType=Rel	23	obj	19:ref	_
+21	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	23	nsubj	23:nsubj	_
+22	vou	ir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	23	aux	23:aux	_
+23	ler	ler	VERB	_	VerbForm=Inf	19	acl:relcl	19:acl:relcl	_
+24	aqui	aqui	ADV	_	_	23	advmod	23:advmod	SpaceAfter=No
+25	...	...	PUNCT	_	_	27	punct	27:punct	_
+26	me	me	PRON	_	Case=Dat|Number=Sing|Person=1|PronType=Prs	27	iobj	27:iobj	_
+27	dá	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	parataxis	17:parataxis	_
+28	aqui	aqui	ADV	_	_	27	advmod	27:advmod	_
+29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	instituição	instituição	NOUN	_	Gender=Fem|Number=Sing	27	obj	27:obj	SpaceAfter=No
+31	...	...	PUNCT	_	_	32	punct	32:punct	_
+32	quer	querer	VERB	_	ExtPos=VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	36	parataxis	36:parataxis	_
+33	dizer	dizer	VERB	_	VerbForm=Inf	32	fixed	32:fixed	SpaceAfter=No
+34	,	,	PUNCT	_	_	32	punct	32:punct	_
+35	me	me	PRON	_	Case=Dat|Number=Sing|Person=1|PronType=Prs	36	iobj	36:iobj	_
+36	dá	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	parataxis	17:parataxis	_
+37	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	38:det	_
+38	Constituição	Constituição	PROPN	_	_	36	obj	36:obj	SpaceAfter=No
+39	"	"	PUNCT	_	_	17	punct	17:punct	_
+40	esbravejou	esbravejar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+41	Dilma	Dilma	PROPN	_	_	40	nsubj	40:nsubj	SpaceAfter=No
+42	.	.	PUNCT	_	_	40	punct	40:punct	_
+
+# sent_id = S0009
+# text = Cardoso, com as mãos trêmulas, entregou a Constituição para a presidenta.
+1	Cardoso	Cardoso	PROPN	_	_	8	nsubj	8:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	5	punct	5:punct	_
+3	com	com	ADP	_	_	5	case	5:case	_
+4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	5:det	_
+5	mãos	mão	NOUN	_	Gender=Fem|Number=Plur	8	obl	8:obl:com	_
+6	trêmulas	trêmulo	ADJ	_	Gender=Fem|Number=Plur	5	amod	5:amod	SpaceAfter=No
+7	,	,	PUNCT	_	_	5	punct	5:punct	_
+8	entregou	entregar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	Constituição	Constituição	PROPN	_	_	8	obj	8:obj	_
+11	para	para	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	presidenta	presidenta	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:para	SpaceAfter=No
+14	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0011
+# text = Pobre Cardoso [...] necessita urgentemente de um auxílio do jurista Tomáz Turbando!
+1	Pobre	pobre	NOUN	_	Number=Sing	7	nsubj	7:nsubj	_
+2	Cardoso	Cardoso	PROPN	_	_	1	nmod	1:nmod	_
+3	[	[	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+4	.	.	PUNCT	_	_	1	punct	1:punct	SpaceAfter=No
+5	..	..	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+6	]	]	PUNCT	_	_	4	punct	4:punct	_
+7	necessita	necessitar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	urgentemente	urgentemente	ADV	_	_	7	advmod	7:advmod	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	auxílio	auxílio	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:de	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	jurista	jurista	NOUN	_	Number=Sing	11	nmod	11:nmod:de	_
+15	Tomáz	Tomáz	PROPN	_	_	14	nmod	14:nmod	_
+16	Turbando	Turbando	PROPN	_	_	15	flat:name	15:flat:name	SpaceAfter=No
+17	!	!	PUNCT	_	_	7	punct	7:punct	_

@@ -1,0 +1,837 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Negros e negras brasileiros que deveriam ser mais celebrados nas escolas.
+1	Negros	negro	NOUN	_	Gender=Masc|Number=Plur	0	root	0:root|6:nsubj|9:nsubj:pass	_
+2	e	e	CCONJ	_	_	3	cc	3:cc	_
+3	negras	negro	NOUN	_	Gender=Fem|Number=Plur	1	conj	1:conj:e|6:nsubj|9:nsubj:pass	_
+4	brasileiros	brasileiro	ADJ	_	Gender=Masc|Number=Plur	1	amod	1:amod|3:amod	_
+5	que	que	PRON	_	PronType=Rel	6	nsubj	1:ref|3:ref	_
+6	deveriam	dever	VERB	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	1	acl:relcl	1:acl:relcl|3:acl:relcl	_
+7	ser	ser	AUX	_	VerbForm=Inf	9	aux:pass	9:aux:pass	_
+8	mais	mais	ADV	_	_	9	advmod	9:advmod	_
+9	celebrados	celebrar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	6	xcomp	6:xcomp	_
+10-11	nas	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	12:det	_
+12	escolas	escola	NOUN	_	Gender=Fem|Number=Plur	9	obl	9:obl:em	SpaceAfter=No
+13	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Estrelas culturais e líderes de resistência ainda são ignorados nos currículos.
+1	Estrelas	estrela	NOUN	_	Gender=Fem|Number=Plur	9	nsubj:pass	9:nsubj:pass	_
+2	culturais	cultural	ADJ	_	Number=Plur	1	amod	1:amod	_
+3	e	e	CCONJ	_	_	4	cc	4:cc	_
+4	líderes	líder	NOUN	_	Gender=Masc|Number=Plur	1	conj	1:conj:e|9:nsubj:pass	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	resistência	resistência	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:de	_
+7	ainda	ainda	ADV	_	_	9	advmod	9:advmod	_
+8	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	aux:pass	9:aux:pass	_
+9	ignorados	ignorar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	_
+10-11	nos	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	12:det	_
+12	currículos	currículo	NOUN	_	Gender=Masc|Number=Plur	9	obl	9:obl:em	SpaceAfter=No
+13	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0005
+# text = "A história negra do Brasil é rica e vibrante, mas intencionalmente esquecida", afirma o antropólogo Kabengele Munanga, da USP.
+1	"	"	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+2	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	história	história	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	9:nsubj|11:nsubj|15:nsubj:pass	_
+4	negra	negro	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Brasil	Brasil	PROPN	_	_	3	nmod	3:nmod:de	_
+8	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	9:cop|11:cop|15:cop	_
+9	rica	rico	ADJ	_	Gender=Fem|Number=Sing	18	ccomp:speech	18:ccomp:speech	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	vibrante	vibrante	ADJ	_	Number=Sing	9	conj	9:conj:e|18:ccomp:speech	SpaceAfter=No
+12	,	,	PUNCT	_	_	15	punct	15:punct	_
+13	mas	mas	CCONJ	_	_	15	cc	15:cc	_
+14	intencionalmente	intencionalmente	ADV	_	_	15	advmod	15:advmod	_
+15	esquecida	esquecer	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	9	conj	9:conj:mas|18:ccomp:speech	SpaceAfter=No
+16	"	"	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+17	,	,	PUNCT	_	_	9	punct	9:punct	_
+18	afirma	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	antropólogo	antropólogo	NOUN	_	Gender=Masc|Number=Sing	18	nsubj	18:nsubj	_
+21	Kabengele	Kabengele	PROPN	_	_	20	nmod	20:nmod	_
+22	Munanga	Munanga	PROPN	_	_	21	flat:name	21:flat:name	SpaceAfter=No
+23	,	,	PUNCT	_	_	26	punct	26:punct	_
+24-25	da	_	_	_	_	_	_	_	_
+24	de	de	ADP	_	_	26	case	26:case	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	USP	USP	PROPN	_	_	20	nmod	20:nmod:de	SpaceAfter=No
+27	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0007
+# text = O Dia Nacional da Consciência Negra, 20 de novembro, celebra Zumbi dos Palmares, cuja bravura é cercada por mistérios e lendas.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Dia	Dia	PROPN	_	_	13	nsubj	13:nsubj	_
+3	Nacional	Nacional	PROPN	_	_	2	flat:name	2:flat:name	_
+4-5	da	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	Consciência	Consciência	PROPN	_	_	2	flat:name	2:flat:name	_
+7	Negra	Negra	PROPN	_	_	2	flat:name	2:flat:name	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	20	20	NUM	_	NumType=Card	2	appos	2:appos	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	novembro	novembro	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:de	SpaceAfter=No
+12	,	,	PUNCT	_	_	9	punct	9:punct	_
+13	celebra	celebrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+14	Zumbi	Zumbi	PROPN	_	_	13	obj	13:obj|20:nmod	_
+15-16	dos	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	17:det	_
+17	Palmares	Palmares	PROPN	_	_	14	flat:name	14:flat:name	SpaceAfter=No
+18	,	,	PUNCT	_	_	22	punct	22:punct	_
+19	cuja	cujo	DET	_	Gender=Fem|Number=Sing|PronType=Rel	20	det	14:ref	_
+20	bravura	bravura	NOUN	_	Gender=Fem|Number=Sing	22	nsubj:pass	22:nsubj:pass	_
+21	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	aux:pass	22:aux:pass	_
+22	cercada	cercar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	14	acl:relcl	14:acl:relcl	_
+23	por	por	ADP	_	_	24	case	24:case|26:case	_
+24	mistérios	mistério	NOUN	_	Gender=Masc|Number=Plur	22	obl:agent	22:obl:agent	_
+25	e	e	CCONJ	_	_	26	cc	26:cc	_
+26	lendas	lenda	NOUN	_	Gender=Fem|Number=Plur	24	conj	22:obl:agent|24:conj:e	SpaceAfter=No
+27	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0009
+# text = Zumbi, capturado por bandeirantes ainda bebê e entregue a um padre, teria escapado aos 15 anos para liderar o Quilombo dos Palmares, um símbolo de resistência com 20 mil habitantes.
+1	Zumbi	Zumbi	PROPN	_	_	15	nsubj	15:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	capturado	capturar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	1	acl	1:acl	_
+4	por	por	ADP	_	_	5	case	5:case	_
+5	bandeirantes	bandeirante	NOUN	_	Number=Plur	3	obl:agent	3:obl:agent	_
+6	ainda	ainda	ADV	_	_	7	advmod	7:advmod	_
+7	bebê	bebê	ADJ	_	Gender=Masc|Number=Sing	3	amod	3:amod	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	entregue	entregar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	conj	1:acl|3:conj:e	_
+10	a	a	ADP	_	_	12	case	12:case	_
+11	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	padre	padre	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:a	SpaceAfter=No
+13	,	,	PUNCT	_	_	3	punct	3:punct	_
+14	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	15	aux	15:aux	_
+15	escapado	escapar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+16-17	aos	_	_	_	_	_	_	_	_
+16	a	a	ADP	_	_	19	case	19:case	_
+17	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	19:det	_
+18	15	15	NUM	_	NumType=Card	19	nummod	19:nummod	_
+19	anos	ano	NOUN	_	Gender=Masc|Number=Plur	15	obl	15:obl:a	_
+20	para	para	ADP	_	_	21	mark	21:mark	_
+21	liderar	liderar	VERB	_	VerbForm=Inf	15	advcl	15:advcl:para	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	Quilombo	Quilombo	PROPN	_	_	21	obj	21:obj	_
+24-25	dos	_	_	_	_	_	_	_	_
+24	de	de	ADP	_	_	26	case	26:case	_
+25	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	26:det	_
+26	Palmares	Palmares	PROPN	_	_	23	flat:name	23:flat:name	SpaceAfter=No
+27	,	,	PUNCT	_	_	29	punct	29:punct	_
+28	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	29	det	29:det	_
+29	símbolo	símbolo	NOUN	_	Gender=Masc|Number=Sing	23	appos	23:appos	_
+30	de	de	ADP	_	_	31	case	31:case	_
+31	resistência	resistência	NOUN	_	Gender=Fem|Number=Sing	29	nmod	29:nmod:de	_
+32	com	com	ADP	_	_	35	case	35:case	_
+33	20	20	NUM	_	NumType=Card	35	nummod	35:nummod	_
+34	mil	mil	NUM	_	NumType=Card	33	flat	33:flat	_
+35	habitantes	habitante	NOUN	_	Number=Plur	29	nmod	29:nmod:com	SpaceAfter=No
+36	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0011
+# text = Sua morte em 1695, após resistir a 16 expedições militares, é um marco.
+1	Sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	det	2:det	_
+2	morte	morte	NOUN	_	Gender=Fem|Number=Sing	15	nsubj	15:nsubj	_
+3	em	em	ADP	_	_	4	case	4:case	_
+4	1695	1695	NUM	_	NumType=Card	2	nmod	2:nmod:em	SpaceAfter=No
+5	,	,	PUNCT	_	_	7	punct	7:punct	_
+6	após	após	ADP	_	_	7	mark	7:mark	_
+7	resistir	resistir	VERB	_	VerbForm=Inf	2	acl	2:acl:após	_
+8	a	a	ADP	_	_	10	case	10:case	_
+9	16	16	NUM	_	NumType=Card	10	nummod	10:nummod	_
+10	expedições	expedição	NOUN	_	Gender=Fem|Number=Plur	7	obl	7:obl:a	_
+11	militares	militar	ADJ	_	Number=Plur	10	amod	10:amod	SpaceAfter=No
+12	,	,	PUNCT	_	_	7	punct	7:punct	_
+13	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	15:cop	_
+14	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	marco	marco	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+16	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0013
+# text = A heroína Dandara, mulher de Zumbi, teria preferido tirar a própria vida a retornar à opressão após a queda do quilombo.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	heroína	heroína	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	10:nsubj|11:nsubj	_
+3	Dandara	Dandara	PROPN	_	_	2	nmod	2:nmod	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	mulher	mulher	NOUN	_	Gender=Fem|Number=Sing	2	appos	2:appos	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	Zumbi	Zumbi	PROPN	_	_	5	nmod	5:nmod:de	SpaceAfter=No
+8	,	,	PUNCT	_	_	5	punct	5:punct	_
+9	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	10	aux	10:aux	_
+10	preferido	preferir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+11	tirar	tirar	VERB	_	VerbForm=Inf	10	xcomp	10:xcomp	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+13	própria	próprio	DET	_	Gender=Fem|Number=Sing|PronType=Dem	14	det	14:det	_
+14	vida	vida	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	_
+15	a	a	ADP	_	_	16	mark	16:mark	_
+16	retornar	retornar	VERB	_	VerbForm=Inf	11	advcl	11:advcl:a	_
+17-18	à	_	_	_	_	_	_	_	_
+17	a	a	ADP	_	_	19	case	19:case	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	opressão	opressão	NOUN	_	Gender=Fem|Number=Sing	16	obl	16:obl:a	_
+20	após	após	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	queda	queda	NOUN	_	Gender=Fem|Number=Sing	16	obl	16:obl:após	_
+23-24	do	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	quilombo	quilombo	NOUN	_	Gender=Masc|Number=Sing	22	nmod	22:nmod:de	SpaceAfter=No
+26	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0015
+# text = O geógrafo Milton Santos, nascido na Bahia em 1926, foi um intelectual aclamado mundialmente.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	geógrafo	geógrafo	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	15:nsubj	_
+3	Milton	Milton	PROPN	_	_	2	nmod	2:nmod	_
+4	Santos	Santos	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	nascido	nascer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	2	acl	2:acl	_
+7-8	na	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	Bahia	Bahia	PROPN	_	_	6	obl	6:obl:em	_
+10	em	em	ADP	_	_	11	case	11:case	_
+11	1926	1926	NUM	_	NumType=Card	6	obl	6:obl:em	SpaceAfter=No
+12	,	,	PUNCT	_	_	6	punct	6:punct	_
+13	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	cop	15:cop	_
+14	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	intelectual	intelectual	NOUN	_	Number=Sing	0	root	0:root	_
+16	aclamado	aclamar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	15	acl	15:acl	_
+17	mundialmente	mundialmente	ADV	_	_	16	advmod	16:advmod	SpaceAfter=No
+18	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0017
+# text = Preso após o golpe de 1964, Santos encontrou asilo na França, onde brilhou como acadêmico.
+1	Preso	prer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	9	advcl	9:advcl	_
+2	após	após	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	golpe	golpe	NOUN	_	Gender=Masc|Number=Sing	1	obl	1:obl:após	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	1964	1964	NUM	_	NumType=Card	4	nmod	4:nmod:de	SpaceAfter=No
+7	,	,	PUNCT	_	_	1	punct	1:punct	_
+8	Santos	Santos	PROPN	_	_	9	nsubj	9:nsubj	_
+9	encontrou	encontrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	asilo	asilo	NOUN	_	Gender=Masc|Number=Sing	9	obj	9:obj	_
+11-12	na	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	França	França	PROPN	_	_	9	obl	9:obl:em|16:obl	SpaceAfter=No
+14	,	,	PUNCT	_	_	16	punct	16:punct	_
+15	onde	onde	ADV	_	_	16	advmod	13:ref	_
+16	brilhou	brilhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	acl:relcl	13:acl:relcl	_
+17	como	como	ADP	_	_	18	case	18:case	_
+18	acadêmico	acadêmico	NOUN	_	Gender=Masc|Number=Sing	16	obl	16:obl:como	SpaceAfter=No
+19	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0019
+# text = Ao retornar ao Brasil nos anos 80, ele foi reverenciado com mais de 20 títulos de Doutor Honoris Causa e ganhou o Prêmio Vautrin Lud, o Nobel de Geografia, além do Jabuti por "A Natureza do Espaço".
+1-2	Ao	_	_	_	_	_	_	_	_
+1	A	a	ADP	_	ExtPos=SCONJ	3	mark	3:mark	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	1:fixed	_
+3	retornar	retornar	VERB	_	VerbForm=Inf	14	advcl	14:advcl:a_o|25:advcl:a_o	_
+4-5	ao	_	_	_	_	_	_	_	_
+4	a	a	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	Brasil	Brasil	PROPN	_	_	3	obl	3:obl:a	_
+7-8	nos	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	9:det	_
+9	anos	ano	NOUN	_	Gender=Masc|Number=Plur	3	obl	3:obl:em	_
+10	80	80	NUM	_	NumType=Card	9	nmod	9:nmod	SpaceAfter=No
+11	,	,	PUNCT	_	_	3	punct	3:punct	_
+12	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	nsubj:pass	14:nsubj:pass|25:nsubj	_
+13	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	aux:pass	14:aux:pass	_
+14	reverenciado	reverenciar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+15	com	com	ADP	_	_	19	case	19:case	_
+16	mais	mais	ADV	_	ExtPos=ADV	18	advmod	18:advmod	_
+17	de	de	ADP	_	_	16	fixed	16:fixed	_
+18	20	20	NUM	_	NumType=Card	19	nummod	19:nummod	_
+19	títulos	título	NOUN	_	Gender=Masc|Number=Plur	14	obl	14:obl:com	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	Doutor	Doutor	PROPN	_	_	19	nmod	19:nmod:de	_
+22	Honoris	Honoris	PROPN	_	_	21	flat:name	21:flat:name	_
+23	Causa	Causa	PROPN	_	_	21	flat:name	21:flat:name	_
+24	e	e	CCONJ	_	_	25	cc	25:cc	_
+25	ganhou	ganhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	conj	14:conj:e	_
+26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	Prêmio	Prêmio	PROPN	_	_	25	obj	25:obj	_
+28	Vautrin	Vautrin	PROPN	_	_	27	flat:name	27:flat:name	_
+29	Lud	Lud	PROPN	_	_	27	flat:name	27:flat:name	SpaceAfter=No
+30	,	,	PUNCT	_	_	32	punct	32:punct	_
+31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+32	Nobel	Nobel	PROPN	_	_	27	appos	27:appos	_
+33	de	de	ADP	_	_	34	case	34:case	_
+34	Geografia	Geografia	PROPN	_	_	32	nmod	32:nmod:de	SpaceAfter=No
+35	,	,	PUNCT	_	_	36	punct	36:punct	_
+36	além	além	ADV	_	_	25	advmod	25:advmod	_
+37-38	do	_	_	_	_	_	_	_	_
+37	de	de	ADP	_	_	39	case	39:case	_
+38	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	39:det	_
+39	Jabuti	Jabuti	PROPN	_	_	36	obl	36:obl:de	_
+40	por	por	ADP	_	_	42	case	42:case	_
+41	"	"	PUNCT	_	_	42	punct	42:punct	SpaceAfter=No
+42	A	A	PROPN	_	_	39	nmod	39:nmod:por	_
+43	Natureza	Natureza	PROPN	_	_	42	flat:name	42:flat:name	_
+44-45	do	_	_	_	_	_	_	_	_
+44	de	de	ADP	_	_	46	case	46:case	_
+45	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	46	det	46:det	_
+46	Espaço	Espaço	PROPN	_	_	42	flat:name	42:flat:name	SpaceAfter=No
+47	"	"	PUNCT	_	_	42	punct	42:punct	SpaceAfter=No
+48	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0021
+# text = Joaquim Maria Machado de Assis, nascido no Rio de Janeiro em 1839, superou o preconceito racial para se tornar um dos maiores nomes da literatura nacional.
+1	Joaquim	Joaquim	PROPN	_	_	16	nsubj	16:nsubj	_
+2	Maria	Maria	PROPN	_	_	1	flat:name	1:flat:name	_
+3	Machado	Machado	PROPN	_	_	1	flat:name	1:flat:name	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	Assis	Assis	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	nascido	nascer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	1	acl	1:acl	_
+8-9	no	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	Rio	Rio	PROPN	_	_	7	obl	7:obl:em	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	Janeiro	Janeiro	PROPN	_	_	10	flat:name	10:flat:name	_
+13	em	em	ADP	_	_	14	case	14:case	_
+14	1839	1839	NUM	_	NumType=Card	7	obl	7:obl:em	SpaceAfter=No
+15	,	,	PUNCT	_	_	7	punct	7:punct	_
+16	superou	superar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	preconceito	preconceito	NOUN	_	Gender=Masc|Number=Sing	16	obj	16:obj	_
+19	racial	racial	ADJ	_	Number=Sing	18	amod	18:amod	_
+20	para	para	ADP	_	_	22	mark	22:mark	_
+21	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	22	expl	22:expl	_
+22	tornar	tornar	VERB	_	VerbForm=Inf	16	advcl	16:advcl:para	_
+23	um	um	NUM	_	Gender=Masc|NumType=Card	22	xcomp	22:xcomp	_
+24-25	dos	_	_	_	_	_	_	_	_
+24	de	de	ADP	_	_	27	case	27:case	_
+25	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	27:det	_
+26	maiores	maior	ADJ	_	Number=Plur	27	amod	27:amod	_
+27	nomes	nome	NOUN	_	Gender=Masc|Number=Plur	23	nmod	23:nmod:de	_
+28-29	da	_	_	_	_	_	_	_	_
+28	de	de	ADP	_	_	30	case	30:case	_
+29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	literatura	literatura	NOUN	_	Gender=Fem|Number=Sing	27	nmod	27:nmod:de	_
+31	nacional	nacional	ADJ	_	Number=Sing	30	amod	30:amod	SpaceAfter=No
+32	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0023
+# text = Autodidata, ele aprendeu francês em uma padaria e se tornou tipógrafo na Imprensa Nacional.
+1	Autodidata	autodidata	ADJ	_	Number=Sing	4	advcl	4:advcl|11:advcl	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	4:nsubj|11:nsubj|12:nsubj	_
+4	aprendeu	aprender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	francês	francês	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	padaria	padaria	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:em	_
+9	e	e	CCONJ	_	_	11	cc	11:cc	_
+10	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	11	expl	11:expl	_
+11	tornou	tornar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	conj	4:conj:e	_
+12	tipógrafo	tipógrafo	NOUN	_	Gender=Masc|Number=Sing	11	xcomp	11:xcomp	_
+13-14	na	_	_	_	_	_	_	_	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	Imprensa	Imprensa	PROPN	_	_	11	obl	11:obl:em	_
+16	Nacional	Nacional	PROPN	_	_	15	flat:name	15:flat:name	SpaceAfter=No
+17	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0025
+# text = Seu romance "Memórias Póstumas de Brás Cubas", de 1881, é um clássico atemporal, mas sua vida como presidente da Academia Brasileira de Letras ainda é pouco destacada nas salas de aula.
+1	Seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	det	2:det	_
+2	romance	romance	NOUN	_	Number=Sing	16	nsubj	16:nsubj	_
+3	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+4	Memórias	Memórias	PROPN	_	_	2	nmod	2:nmod	_
+5	Póstumas	Póstumas	PROPN	_	_	4	flat:name	4:flat:name	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	Brás	Brás	PROPN	_	_	4	flat:name	4:flat:name	_
+8	Cubas	Cubas	PROPN	_	_	4	flat:name	4:flat:name	SpaceAfter=No
+9	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+10	,	,	PUNCT	_	_	12	punct	12:punct	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	1881	1881	NUM	_	NumType=Card	2	nmod	2:nmod:de	SpaceAfter=No
+13	,	,	PUNCT	_	_	12	punct	12:punct	_
+14	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	16:cop	_
+15	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	clássico	clássico	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+17	atemporal	atemporal	ADJ	_	Number=Sing	16	amod	16:amod	SpaceAfter=No
+18	,	,	PUNCT	_	_	33	punct	33:punct	_
+19	mas	mas	CCONJ	_	_	33	cc	33:cc	_
+20	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	21	det	21:det	_
+21	vida	vida	NOUN	_	Gender=Fem|Number=Sing	33	nsubj	33:nsubj	_
+22	como	como	ADP	_	_	23	case	23:case	_
+23	presidente	presidente	NOUN	_	Number=Sing	21	nmod	21:nmod:como	_
+24-25	da	_	_	_	_	_	_	_	_
+24	de	de	ADP	_	_	26	case	26:case	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	Academia	Academia	PROPN	_	_	23	nmod	23:nmod:de	_
+27	Brasileira	Brasileira	PROPN	_	_	26	flat:name	26:flat:name	_
+28	de	de	ADP	_	_	29	case	29:case	_
+29	Letras	Letras	PROPN	_	_	26	flat:name	26:flat:name	_
+30	ainda	ainda	ADV	_	_	33	advmod	33:advmod	_
+31	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	33	cop	33:cop	_
+32	pouco	pouco	ADV	_	_	33	advmod	33:advmod	_
+33	destacada	destacado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	16	conj	16:conj:mas	_
+34-35	nas	_	_	_	_	_	_	_	_
+34	em	em	ADP	_	_	36	case	36:case	_
+35	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	36	det	36:det	_
+36	salas	sala	NOUN	_	Gender=Fem|Number=Plur	33	obl	33:obl:em	_
+37	de	de	ADP	_	_	38	case	38:case	_
+38	aula	aula	NOUN	_	Gender=Fem|Number=Sing	36	nmod	36:nmod:de	SpaceAfter=No
+39	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0027
+# text = Afonso Henriques de Lima Barreto, nascido no Rio de Janeiro em 1881, enfrentou dificuldades como funcionário público e escritor.
+1	Afonso	Afonso	PROPN	_	_	16	nsubj	16:nsubj	_
+2	Henriques	Henriques	PROPN	_	_	1	flat:name	1:flat:name	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Lima	Lima	PROPN	_	_	1	flat:name	1:flat:name	_
+5	Barreto	Barreto	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	nascido	nascer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	1	acl	1:acl	_
+8-9	no	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	Rio	Rio	PROPN	_	_	7	obl	7:obl:em	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	Janeiro	Janeiro	PROPN	_	_	10	flat:name	10:flat:name	_
+13	em	em	ADP	_	_	14	case	14:case	_
+14	1881	1881	NUM	_	NumType=Card	7	obl	7:obl:em	SpaceAfter=No
+15	,	,	PUNCT	_	_	7	punct	7:punct	_
+16	enfrentou	enfrentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+17	dificuldades	dificuldade	NOUN	_	Gender=Fem|Number=Plur	16	obj	16:obj	_
+18	como	como	ADP	_	_	19	case	19:case|22:case	_
+19	funcionário	funcionário	NOUN	_	Gender=Masc|Number=Sing	16	obl	16:obl:como	_
+20	público	público	ADJ	_	Gender=Masc|Number=Sing	19	amod	19:amod	_
+21	e	e	CCONJ	_	_	22	cc	22:cc	_
+22	escritor	escritor	NOUN	_	Gender=Masc|Number=Sing	19	conj	16:obl:como|19:conj:e	SpaceAfter=No
+23	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0029
+# text = Único negro na sala da escola de Engenharia, ele abandonou os estudos para cuidar do pai doente.
+1	Único	único	ADJ	_	Gender=Masc|Number=Sing	2	amod	2:amod	_
+2	negro	negro	NOUN	_	Gender=Masc|Number=Sing	13	dislocated	13:dislocated	_
+3-4	na	_	_	_	_	_	_	_	_
+3	em	em	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	sala	sala	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:em	_
+6-7	da	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	escola	escola	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	Engenharia	Engenharia	PROPN	_	_	8	nmod	8:nmod:de	SpaceAfter=No
+11	,	,	PUNCT	_	_	2	punct	2:punct	_
+12	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	nsubj	13:nsubj	_
+13	abandonou	abandonar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	15:det	_
+15	estudos	estudo	NOUN	_	Gender=Masc|Number=Plur	13	obj	13:obj	_
+16	para	para	ADP	_	_	17	mark	17:mark	_
+17	cuidar	cuidar	VERB	_	VerbForm=Inf	13	advcl	13:advcl:para	_
+18-19	do	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	pai	pai	NOUN	_	Gender=Masc|Number=Sing	17	obl	17:obl:de	_
+21	doente	doente	ADJ	_	Number=Sing	20	amod	20:amod	SpaceAfter=No
+22	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0031
+# text = Seu livro "O Triste Fim de Policarpo Quaresma" denuncia as mazelas sociais e raciais, mas o reconhecimento só veio após sua morte em 1922.
+1	Seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	det	2:det	_
+2	livro	livro	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	11:nsubj	_
+3	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+4	O	O	PROPN	_	_	2	nmod	2:nmod	_
+5	Triste	Triste	PROPN	_	_	4	flat:name	4:flat:name	_
+6	Fim	Fim	PROPN	_	_	4	flat:name	4:flat:name	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	Policarpo	Policarpo	PROPN	_	_	4	flat:name	4:flat:name	_
+9	Quaresma	Quaresma	PROPN	_	_	4	flat:name	4:flat:name	SpaceAfter=No
+10	"	"	PUNCT	_	_	4	punct	4:punct	_
+11	denuncia	denunciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+12	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	13:det	_
+13	mazelas	mazela	NOUN	_	Gender=Fem|Number=Plur	11	obj	11:obj	_
+14	sociais	social	ADJ	_	Number=Plur	13	amod	13:amod	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	raciais	racial	ADJ	_	Number=Plur	14	conj	13:amod|14:conj:e	SpaceAfter=No
+17	,	,	PUNCT	_	_	22	punct	22:punct	_
+18	mas	mas	CCONJ	_	_	22	cc	22:cc	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	reconhecimento	reconhecimento	NOUN	_	Gender=Masc|Number=Sing	22	nsubj	22:nsubj	_
+21	só	só	ADV	_	_	22	advmod	22:advmod	_
+22	veio	vir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	conj	11:conj:mas	_
+23	após	após	ADP	_	_	25	case	25:case	_
+24	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	25	det	25:det	_
+25	morte	morte	NOUN	_	Gender=Fem|Number=Sing	22	obl	22:obl:após	_
+26	em	em	ADP	_	_	27	case	27:case	_
+27	1922	1922	NUM	_	NumType=Card	25	nmod	25:nmod:em	SpaceAfter=No
+28	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0033
+# text = Carolina Maria de Jesus, nascida em 1914 em Minas Gerais, transformou sua vida de sofrimento em São Paulo em literatura.
+1	Carolina	Carolina	PROPN	_	_	13	nsubj	13:nsubj	_
+2	Maria	Maria	PROPN	_	_	1	flat:name	1:flat:name	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Jesus	Jesus	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	nascida	nascer	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	1	acl	1:acl	_
+7	em	em	ADP	_	_	8	case	8:case	_
+8	1914	1914	NUM	_	NumType=Card	6	obl	6:obl:em	_
+9	em	em	ADP	_	_	10	case	10:case	_
+10	Minas	Minas	PROPN	_	_	6	obl	6:obl:em	_
+11	Gerais	Gerais	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+12	,	,	PUNCT	_	_	6	punct	6:punct	_
+13	transformou	transformar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	15	det	15:det	_
+15	vida	vida	NOUN	_	Gender=Fem|Number=Sing	13	obj	13:obj	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	sofrimento	sofrimento	NOUN	_	Gender=Masc|Number=Sing	15	nmod	15:nmod:de	_
+18	em	em	ADP	_	_	19	case	19:case	_
+19	São	São	PROPN	_	_	17	nmod	17:nmod:em	_
+20	Paulo	Paulo	PROPN	_	_	19	flat:name	19:flat:name	_
+21	em	em	ADP	_	_	22	case	22:case	_
+22	literatura	literatura	NOUN	_	Gender=Fem|Number=Sing	13	obl	13:obl:em	SpaceAfter=No
+23	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0035
+# text = Seus diários, descobertos pelo jornalista Audálio Dantas, resultaram em "Quarto de Despejo", um best-seller internacional.
+1	Seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	2	det	2:det	_
+2	diários	diário	NOUN	_	Gender=Masc|Number=Plur	11	nsubj	11:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	descobertos	descobrir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	2	acl	2:acl	_
+5-6	pelo	_	_	_	_	_	_	_	_
+5	por	por	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	jornalista	jornalista	NOUN	_	Number=Sing	4	obl:agent	4:obl:agent	_
+8	Audálio	Audálio	PROPN	_	_	7	nmod	7:nmod	_
+9	Dantas	Dantas	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+10	,	,	PUNCT	_	_	4	punct	4:punct	_
+11	resultaram	resultar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	"	"	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+14	Quarto	Quarto	PROPN	_	_	11	obl	11:obl:em	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	Despejo	Despejo	PROPN	_	_	14	flat:name	14:flat:name	SpaceAfter=No
+17	"	"	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+18	,	,	PUNCT	_	_	20	punct	20:punct	_
+19	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	best-seller	best-seller	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	14	appos	14:appos	_
+21	internacional	internacional	ADJ	_	Number=Sing	20	amod	20:amod	SpaceAfter=No
+22	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0037
+# text = Apesar do sucesso, ela morreu na pobreza em 1977.
+1	Apesar	apesar	ADV	_	_	7	advmod	7:advmod	_
+2-3	do	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	sucesso	sucesso	NOUN	_	Gender=Masc|Number=Sing	1	obl	1:obl:de	SpaceAfter=No
+5	,	,	PUNCT	_	_	1	punct	1:punct	_
+6	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	7	nsubj	7:nsubj	_
+7	morreu	morrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8-9	na	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	pobreza	pobreza	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:em	_
+11	em	em	ADP	_	_	12	case	12:case	_
+12	1977	1977	NUM	_	NumType=Card	7	obl	7:obl:em	SpaceAfter=No
+13	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0039
+# text = Abdias do Nascimento, ativista e artista, nasceu em 1914 em São Paulo.
+1	Abdias	Abdias	PROPN	_	_	10	nsubj	10:nsubj	_
+2-3	do	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	Nascimento	Nascimento	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	ativista	ativista	NOUN	_	Number=Sing	1	appos	1:appos	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	artista	artista	NOUN	_	Number=Sing	6	conj	1:appos|6:conj:e	SpaceAfter=No
+9	,	,	PUNCT	_	_	6	punct	6:punct	_
+10	nasceu	nascer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+11	em	em	ADP	_	_	12	case	12:case	_
+12	1914	1914	NUM	_	NumType=Card	10	obl	10:obl:em	_
+13	em	em	ADP	_	_	14	case	14:case	_
+14	São	São	PROPN	_	_	10	obl	10:obl:em	_
+15	Paulo	Paulo	PROPN	_	_	14	flat:name	14:flat:name	SpaceAfter=No
+16	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0041
+# text = Ele criou o Teatro Experimental do Negro em 1944, um marco na luta antirracista.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj	_
+2	criou	criar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	Teatro	Teatro	PROPN	_	_	2	obj	2:obj	_
+5	Experimental	Experimental	PROPN	_	_	4	flat:name	4:flat:name	_
+6-7	do	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	Negro	Negro	PROPN	_	_	4	flat:name	4:flat:name	_
+9	em	em	ADP	_	_	10	case	10:case	_
+10	1944	1944	NUM	_	NumType=Card	2	obl	2:obl:em	SpaceAfter=No
+11	,	,	PUNCT	_	_	13	punct	13:punct	_
+12	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	marco	marco	NOUN	_	Gender=Masc|Number=Sing	2	parataxis	2:parataxis	_
+14-15	na	_	_	_	_	_	_	_	_
+14	em	em	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	luta	luta	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:em	_
+17	antirracista	antirracista	ADJ	_	Number=Sing	16	amod	16:amod	SpaceAfter=No
+18	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0043
+# text = Preso e exilado durante a ditadura, retornou ao Brasil em 1981 e se destacou como parlamentar combatendo o racismo até sua morte em 2011.
+1	Preso	preso	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	8	advcl	8:advcl|16:advcl	_
+2	e	e	CCONJ	_	_	3	cc	3:cc	_
+3	exilado	exilado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	1	conj	1:conj:e|8:advcl|16:advcl	_
+4	durante	durante	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	ditadura	ditadura	NOUN	_	Gender=Fem|Number=Sing	1	obl	1:obl:durante|3:obl:durante	SpaceAfter=No
+7	,	,	PUNCT	_	_	1	punct	1:punct	_
+8	retornou	retornar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9-10	ao	_	_	_	_	_	_	_	_
+9	a	a	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	Brasil	Brasil	PROPN	_	_	8	obl	8:obl:a	_
+12	em	em	ADP	_	_	13	case	13:case	_
+13	1981	1981	NUM	_	NumType=Card	8	obl	8:obl:em	_
+14	e	e	CCONJ	_	_	16	cc	16:cc	_
+15	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	16	expl	16:expl	_
+16	destacou	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	conj	8:conj:e	_
+17	como	como	ADP	_	_	18	case	18:case	_
+18	parlamentar	parlamentar	NOUN	_	Gender=Masc|Number=Sing	16	obl	16:obl:como	_
+19	combatendo	combater	VERB	_	VerbForm=Ger	18	acl	18:acl	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	racismo	racismo	NOUN	_	Gender=Masc|Number=Sing	19	obj	19:obj	_
+22	até	até	ADP	_	_	24	case	24:case	_
+23	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	24	det	24:det	_
+24	morte	morte	NOUN	_	Gender=Fem|Number=Sing	19	obl	19:obl:até	_
+25	em	em	ADP	_	_	26	case	26:case	_
+26	2011	2011	NUM	_	NumType=Card	24	nmod	24:nmod:em	SpaceAfter=No
+27	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0045
+# text = Teodoro Sampaio, nome de uma importante rua de São Paulo, nasceu em 1855 na Bahia.
+1	Teodoro	Teodoro	PROPN	_	_	13	nsubj	13:nsubj	_
+2	Sampaio	Sampaio	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	nome	nome	NOUN	_	Gender=Masc|Number=Sing	1	appos	1:appos	_
+5	de	de	ADP	_	_	8	case	8:case	_
+6	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+7	importante	importante	ADJ	_	Number=Sing	8	amod	8:amod	_
+8	rua	rua	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:de	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	São	São	PROPN	_	_	8	nmod	8:nmod:de	_
+11	Paulo	Paulo	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+12	,	,	PUNCT	_	_	4	punct	4:punct	_
+13	nasceu	nascer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	em	em	ADP	_	_	15	case	15:case	_
+15	1855	1855	NUM	_	NumType=Card	13	obl	13:obl:em	_
+16-17	na	_	_	_	_	_	_	_	_
+16	em	em	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	Bahia	Bahia	PROPN	_	_	13	obl	13:obl:em	SpaceAfter=No
+19	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0047
+# text = Filho de uma escrava e um padre, ele se formou engenheiro e trabalhou para libertar sua família.
+1	Filho	filho	NOUN	_	Gender=Masc|Number=Sing	11	dislocated	11:dislocated	_
+2	de	de	ADP	_	_	4	case	4:case|7:case	_
+3	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	escrava	escravo	NOUN	_	Gender=Fem|Number=Sing	1	nmod	1:nmod:de	_
+5	e	e	CCONJ	_	_	7	cc	7:cc	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	padre	padre	NOUN	_	Gender=Masc|Number=Sing	4	conj	1:nmod:de|4:conj:e	SpaceAfter=No
+8	,	,	PUNCT	_	_	1	punct	1:punct	_
+9	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	nsubj	11:nsubj|14:nsubj	_
+10	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	11	expl	11:expl	_
+11	formou	formar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	engenheiro	engenheiro	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj	_
+13	e	e	CCONJ	_	_	14	cc	14:cc	_
+14	trabalhou	trabalhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	conj	11:conj:e	_
+15	para	para	ADP	_	_	16	mark	16:mark	_
+16	libertar	libertar	VERB	_	VerbForm=Inf	14	advcl	14:advcl:para	_
+17	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	18	det	18:det	_
+18	família	família	NOUN	_	Gender=Fem|Number=Sing	16	obj	16:obj	SpaceAfter=No
+19	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0049
+# text = Sampaio contribuiu para o desenvolvimento científico e cultural de São Paulo antes de falecer no Rio em 1937.
+1	Sampaio	Sampaio	PROPN	_	_	2	nsubj	2:nsubj	_
+2	contribuiu	contribuir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	para	para	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	desenvolvimento	desenvolvimento	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:para	_
+6	científico	científico	ADJ	_	Gender=Masc|Number=Sing	5	amod	5:amod	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	cultural	cultural	ADJ	_	Number=Sing	6	conj	5:amod|6:conj:e	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	São	São	PROPN	_	_	5	nmod	5:nmod:de	_
+11	Paulo	Paulo	PROPN	_	_	10	flat:name	10:flat:name	_
+12	antes	antes	ADV	_	_	2	advmod	2:advmod	_
+13	de	de	ADP	_	_	14	mark	14:mark	_
+14	falecer	falecer	VERB	_	VerbForm=Inf	12	acl	12:acl:de	_
+15-16	no	_	_	_	_	_	_	_	_
+15	em	em	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	Rio	Rio	PROPN	_	_	14	obl	14:obl:em	_
+18	em	em	ADP	_	_	19	case	19:case	_
+19	1937	1937	NUM	_	NumType=Card	14	obl	14:obl:em	SpaceAfter=No
+20	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0051
+# text = Aparecida Sueli Carneiro Jacoel, nascida em São Paulo em 1950, é uma pioneira no feminismo negro.
+1	Aparecida	Aparecida	PROPN	_	_	15	nsubj	15:nsubj	_
+2	Sueli	Sueli	PROPN	_	_	1	flat:name	1:flat:name	_
+3	Carneiro	Carneiro	PROPN	_	_	1	flat:name	1:flat:name	_
+4	Jacoel	Jacoel	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	nascida	nascer	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	1	acl	1:acl	_
+7	em	em	ADP	_	_	8	case	8:case	_
+8	São	São	PROPN	_	_	6	obl	6:obl:em	_
+9	Paulo	Paulo	PROPN	_	_	8	flat:name	8:flat:name	_
+10	em	em	ADP	_	_	11	case	11:case	_
+11	1950	1950	NUM	_	NumType=Card	6	obl	6:obl:em	SpaceAfter=No
+12	,	,	PUNCT	_	_	6	punct	6:punct	_
+13	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	15:cop	_
+14	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	pioneira	pioneiro	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+16-17	no	_	_	_	_	_	_	_	_
+16	em	em	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	feminismo	feminismo	NOUN	_	Gender=Masc|Number=Sing	15	nmod	15:nmod:em	_
+19	negro	negro	ADJ	_	Gender=Masc|Number=Sing	18	amod	18:amod	SpaceAfter=No
+20	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0053
+# text = Doutora em filosofia pela USP, única negra na turma, fundou o Geledés em 1988.
+1	Doutora	doutor	NOUN	_	Gender=Fem|Number=Sing	14	dislocated	14:dislocated	_
+2	em	em	ADP	_	_	3	case	3:case	_
+3	filosofia	filosofia	NOUN	_	Gender=Fem|Number=Sing	1	nmod	1:nmod:em	_
+4-5	pela	_	_	_	_	_	_	_	_
+4	por	por	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	USP	USP	PROPN	_	_	1	nmod	1:nmod:por	SpaceAfter=No
+7	,	,	PUNCT	_	_	9	punct	9:punct	_
+8	única	único	ADJ	_	Gender=Fem|Number=Sing	9	amod	9:amod	_
+9	negra	negro	NOUN	_	Gender=Fem|Number=Sing	1	conj	1:conj|14:dislocated	_
+10-11	na	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	turma	turma	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:em	SpaceAfter=No
+13	,	,	PUNCT	_	_	9	punct	9:punct	_
+14	fundou	fundar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	Geledés	Geledés	PROPN	_	_	14	obj	14:obj	_
+17	em	em	ADP	_	_	18	case	18:case	_
+18	1988	1988	NUM	_	NumType=Card	14	obl	14:obl:em	SpaceAfter=No
+19	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0055
+# text = O instituto oferece assistência jurídica gratuita a vítimas de racismo e violência, e Sueli foi premiada internacionalmente por seu ativismo.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	instituto	instituto	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	oferece	oferecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	assistência	assistência	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+5	jurídica	jurídico	ADJ	_	Gender=Fem|Number=Sing	4	amod	4:amod	_
+6	gratuita	gratuito	ADJ	_	Gender=Fem|Number=Sing	4	amod	4:amod	_
+7	a	a	ADP	_	_	8	case	8:case	_
+8	vítimas	vítima	NOUN	_	Gender=Fem|Number=Plur	3	obl	3:obl:a	_
+9	de	de	ADP	_	_	10	case	10:case|12:case	_
+10	racismo	racismo	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:de	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	violência	violência	NOUN	_	Gender=Fem|Number=Sing	10	conj	8:nmod:de|10:conj:e	SpaceAfter=No
+13	,	,	PUNCT	_	_	17	punct	17:punct	_
+14	e	e	CCONJ	_	_	17	cc	17:cc	_
+15	Sueli	Sueli	PROPN	_	_	17	nsubj:pass	17:nsubj:pass	_
+16	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	aux:pass	17:aux:pass	_
+17	premiada	premiar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	3	conj	3:conj:e	_
+18	internacionalmente	internacionalmente	ADV	_	_	17	advmod	17:advmod	_
+19	por	por	ADP	_	_	21	case	21:case	_
+20	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	21	det	21:det	_
+21	ativismo	ativismo	NOUN	_	Gender=Masc|Number=Sing	17	obl	17:obl:por	SpaceAfter=No
+22	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0057
+# text = André Rebouças, nascido em 1838 na Bahia, foi um engenheiro e abolicionista de destaque.
+1	André	André	PROPN	_	_	13	nsubj	13:nsubj|15:nsubj	_
+2	Rebouças	Rebouças	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	nascido	nascer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	1	acl	1:acl	_
+5	em	em	ADP	_	_	6	case	6:case	_
+6	1838	1838	NUM	_	NumType=Card	4	obl	4:obl:em	_
+7-8	na	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	Bahia	Bahia	PROPN	_	_	4	obl	4:obl:em	SpaceAfter=No
+10	,	,	PUNCT	_	_	4	punct	4:punct	_
+11	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	cop	13:cop|15:cop	_
+12	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	engenheiro	engenheiro	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+14	e	e	CCONJ	_	_	15	cc	15:cc	_
+15	abolicionista	abolicionista	NOUN	_	Number=Sing	13	conj	13:conj:e	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	destaque	destaque	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod:de|15:nmod:de	SpaceAfter=No
+18	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0059
+# text = Após criar a estrada de ferro Curitiba-Paranaguá e lutar pela abolição, a proclamação da República o levou ao exílio.
+1	Após	após	ADP	_	_	2	mark	2:mark|9:mark	_
+2	criar	criar	VERB	_	VerbForm=Inf	20	advcl	20:advcl:após	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	estrada	estrada	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	ferro	ferro	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:de	_
+7	Curitiba-Paranaguá	Curitiba-Paranaguá	PROPN	_	_	4	nmod	4:nmod	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	lutar	lutar	VERB	_	VerbForm=Inf	2	conj	2:conj:e|20:advcl:após	_
+10-11	pela	_	_	_	_	_	_	_	_
+10	por	por	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	abolição	abolição	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:por	SpaceAfter=No
+13	,	,	PUNCT	_	_	2	punct	2:punct	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	proclamação	proclamação	NOUN	_	Gender=Fem|Number=Sing	20	nsubj	20:nsubj	_
+16-17	da	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	República	República	PROPN	_	_	15	nmod	15:nmod:de	_
+19	o	o	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	20	obj	20:obj	_
+20	levou	levar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+21-22	ao	_	_	_	_	_	_	_	_
+21	a	a	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	exílio	exílio	NOUN	_	Gender=Masc|Number=Sing	20	obl	20:obl:a	SpaceAfter=No
+24	.	.	PUNCT	_	_	20	punct	20:punct	_
+
+# sent_id = S0061
+# text = Rebouças, desolado, cometeu suicídio em 1898 na Ilha da Madeira.
+1	Rebouças	Rebouças	PROPN	_	_	5	nsubj	5:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	desolado	desolado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	5	advcl	5:advcl	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	cometeu	cometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	suicídio	suicídio	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+7	em	em	ADP	_	_	8	case	8:case	_
+8	1898	1898	NUM	_	NumType=Card	5	obl	5:obl:em	_
+9-10	na	_	_	_	_	_	_	_	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	Ilha	Ilha	PROPN	_	_	5	obl	5:obl:em	_
+12-13	da	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	Madeira	Madeira	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+15	.	.	PUNCT	_	_	5	punct	5:punct	_

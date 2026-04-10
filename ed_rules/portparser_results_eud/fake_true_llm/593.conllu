@@ -1,0 +1,146 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = URGENTE: Denúncia grave de fraude eleitoral em Itacoatiara, Amazonas! Um médico local afirma ter votado duas vezes em Bolsonaro na seção 13 da zona 3, mas os resultados oficiais indicam que Bolsonaro não recebeu nenhum voto nessa seção.
+1	URGENTE	URGENTE	PROPN	_	_	16	dep	16:dep	SpaceAfter=No
+2	:	:	PUNCT	_	_	3	punct	3:punct	_
+3	Denúncia	denúncia	NOUN	_	Gender=Fem|Number=Sing	16	dep	16:dep	_
+4	grave	grave	ADJ	_	Number=Sing	3	amod	3:amod	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	fraude	fraude	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:de	_
+7	eleitoral	eleitoral	ADJ	_	Number=Sing	6	amod	6:amod	_
+8	em	em	ADP	_	_	9	case	9:case	_
+9	Itacoatiara	Itacoatiara	PROPN	_	_	3	nmod	3:nmod:em	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	Amazonas	Amazonas	PROPN	_	_	9	parataxis	9:parataxis	SpaceAfter=No
+12	!	!	PUNCT	_	_	3	punct	3:punct	_
+13	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	médico	médico	NOUN	_	Gender=Masc|Number=Sing	16	nsubj	16:nsubj|18:nsubj	_
+15	local	local	ADJ	_	Number=Sing	14	amod	14:amod	_
+16	afirma	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+17	ter	ter	AUX	_	VerbForm=Inf	18	aux	18:aux	_
+18	votado	votar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	16	xcomp	16:xcomp	_
+19	duas	dois	NUM	_	Gender=Fem|NumType=Card	20	nummod	20:nummod	_
+20	vezes	vez	NOUN	_	Gender=Fem|Number=Plur	18	obl	18:obl	_
+21	em	em	ADP	_	_	22	case	22:case	_
+22	Bolsonaro	Bolsonaro	PROPN	_	_	18	obl	18:obl:em	_
+23-24	na	_	_	_	_	_	_	_	_
+23	em	em	ADP	_	_	25	case	25:case	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	seção	seção	NOUN	_	Gender=Fem|Number=Sing	18	obl	18:obl:em	_
+26	13	13	NUM	_	NumType=Card	25	nmod	25:nmod	_
+27-28	da	_	_	_	_	_	_	_	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	zona	zona	NOUN	_	Gender=Fem|Number=Sing	25	nmod	25:nmod:de	_
+30	3	3	NUM	_	NumType=Card	29	nmod	29:nmod	SpaceAfter=No
+31	,	,	PUNCT	_	_	36	punct	36:punct	_
+32	mas	mas	CCONJ	_	_	36	cc	36:cc	_
+33	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	34	det	34:det	_
+34	resultados	resultado	NOUN	_	Gender=Masc|Number=Plur	36	nsubj	36:nsubj	_
+35	oficiais	oficial	ADJ	_	Number=Plur	34	amod	34:amod	_
+36	indicam	indicar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	conj	16:conj:mas	_
+37	que	que	SCONJ	_	_	40	mark	40:mark	_
+38	Bolsonaro	Bolsonaro	PROPN	_	_	40	nsubj	40:nsubj	_
+39	não	não	ADV	_	_	40	advmod	40:advmod	_
+40	recebeu	receber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	36	ccomp	36:ccomp	_
+41	nenhum	nenhum	DET	_	Gender=Masc|Number=Sing|PronType=Ind	42	det	42:det	_
+42	voto	voto	NOUN	_	Gender=Masc|Number=Sing	40	obj	40:obj	_
+43-44	nessa	_	_	_	_	_	_	_	_
+43	em	em	ADP	_	_	45	case	45:case	_
+44	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	45	det	45:det	_
+45	seção	seção	NOUN	_	Gender=Fem|Number=Sing	40	obl	40:obl:em	SpaceAfter=No
+46	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0003
+# text = Como médico e cidadão de Itacoatiara, estou indignado.
+1	Como	como	ADP	_	_	2	case	2:case|4:case	_
+2	médico	médico	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:como	_
+3	e	e	CCONJ	_	_	4	cc	4:cc	_
+4	cidadão	cidadão	NOUN	_	Gender=Masc|Number=Sing	2	conj	2:conj:e|9:obl:como	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	Itacoatiara	Itacoatiara	PROPN	_	_	4	nmod	4:nmod:de	SpaceAfter=No
+7	,	,	PUNCT	_	_	2	punct	2:punct	_
+8	estou	estar	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	9	cop	9:cop	_
+9	indignado	indignado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	SpaceAfter=No
+10	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0005
+# text = Vi com meus próprios olhos a manipulação, declarou ele em um vídeo viral nas redes sociais.
+1	Vi	ver	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	9	ccomp:speech	9:ccomp:speech	_
+2	com	com	ADP	_	_	5	case	5:case	_
+3	meus	meu	DET	_	Gender=Masc|Number=Plur|Person=1|Poss=Yes|PronType=Prs	5	det	5:det	_
+4	próprios	próprio	DET	_	Gender=Masc|Number=Plur|PronType=Dem	5	det	5:det	_
+5	olhos	olho	NOUN	_	Gender=Masc|Number=Plur	1	obl	1:obl:com	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	manipulação	manipulação	NOUN	_	Gender=Fem|Number=Sing	1	obj	1:obj	SpaceAfter=No
+8	,	,	PUNCT	_	_	1	punct	1:punct	_
+9	declarou	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nsubj	9:nsubj	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:em	_
+14	viral	viral	ADJ	_	Number=Sing	13	amod	13:amod	_
+15-16	nas	_	_	_	_	_	_	_	_
+15	em	em	ADP	_	_	17	case	17:case	_
+16	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	17:det	_
+17	redes	rede	NOUN	_	Gender=Fem|Number=Plur	13	nmod	13:nmod:em	_
+18	sociais	social	ADJ	_	Number=Plur	17	amod	17:amod	SpaceAfter=No
+19	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0007
+# text = Segundo a denúncia, a lista oficial mostra uma votação de 143 para Lula e zero para Bolsonaro, levantando suspeitas de uma fraude monumental.
+1	Segundo	segundo	ADP	_	_	3	case	3:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	denúncia	denúncia	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:segundo	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	lista	lista	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	8:nsubj	_
+7	oficial	oficial	ADJ	_	Number=Sing	6	amod	6:amod	_
+8	mostra	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+9	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	votação	votação	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	143	143	NUM	_	NumType=Card	10	nmod	10:nmod:de	_
+13	para	para	ADP	_	_	14	case	14:case|16:case	_
+14	Lula	Lula	PROPN	_	_	12	nmod	12:nmod:para	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	zero	zero	NUM	_	NumType=Card	14	conj	12:nmod:para|14:conj:e	_
+17	para	para	ADP	_	_	18	case	18:case	_
+18	Bolsonaro	Bolsonaro	PROPN	_	_	16	nmod	16:nmod:para	SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	20:punct	_
+20	levantando	levantar	VERB	_	VerbForm=Ger	8	advcl	8:advcl	_
+21	suspeitas	suspeito	NOUN	_	Gender=Fem|Number=Plur	20	obj	20:obj	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	fraude	fraude	NOUN	_	Gender=Fem|Number=Sing	21	nmod	21:nmod:de	_
+25	monumental	monumental	ADJ	_	Number=Sing	24	amod	24:amod	SpaceAfter=No
+26	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0009
+# text = O Tribunal Superior Eleitoral (TSE) ainda não se pronunciou oficialmente sobre esta nova alegação, enquanto a cidade permanece em estado de choque.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Tribunal	Tribunal	PROPN	_	_	11	nsubj	11:nsubj	_
+3	Superior	Superior	PROPN	_	_	2	flat:name	2:flat:name	_
+4	Eleitoral	Eleitoral	PROPN	_	_	2	flat:name	2:flat:name	_
+5	(	(	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+6	TSE	TSE	PROPN	_	_	2	appos	2:appos	SpaceAfter=No
+7	)	)	PUNCT	_	_	6	punct	6:punct	_
+8	ainda	ainda	ADV	_	_	11	advmod	11:advmod	_
+9	não	não	ADV	_	_	11	advmod	11:advmod	_
+10	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	11	expl	11:expl	_
+11	pronunciou	pronunciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	oficialmente	oficialmente	ADV	_	_	11	advmod	11:advmod	_
+13	sobre	sobre	ADP	_	_	16	case	16:case	_
+14	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	16	det	16:det	_
+15	nova	novo	ADJ	_	Gender=Fem|Number=Sing	16	amod	16:amod	_
+16	alegação	alegação	NOUN	_	Gender=Fem|Number=Sing	11	obl	11:obl:sobre	SpaceAfter=No
+17	,	,	PUNCT	_	_	21	punct	21:punct	_
+18	enquanto	enquanto	SCONJ	_	_	21	mark	21:mark	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	cidade	cidade	NOUN	_	Gender=Fem|Number=Sing	21	nsubj	21:nsubj	_
+21	permanece	permanecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	advcl	11:advcl:enquanto	_
+22	em	em	ADP	_	_	23	case	23:case	_
+23	estado	estado	NOUN	_	Gender=Masc|Number=Sing	21	obl	21:obl:em	_
+24	de	de	ADP	_	_	25	case	25:case	_
+25	choque	choque	NOUN	_	Gender=Masc|Number=Sing	23	nmod	23:nmod:de	SpaceAfter=No
+26	.	.	PUNCT	_	_	11	punct	11:punct	_

@@ -1,0 +1,96 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = will smith morre durante assalto em sua mansão will smith morreu num assalto em sua mansão, tentando proteger sua família.
+1	will	will	PROPN	_	_	3	nsubj	3:nsubj	_
+2	smith	smith	X	_	Foreign=Yes	1	flat:name	1:flat:name	_
+3	morre	morrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	durante	durante	ADP	_	_	5	case	5:case	_
+5	assalto	assalto	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:durante	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	8	det	8:det	_
+8	mansão	mansão	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:em	_
+9	will	will	PROPN	_	_	8	nmod	8:nmod	_
+10	smith	smith	X	_	Foreign=Yes	9	flat:name	9:flat:name	_
+11	morreu	morrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	dep	3:dep	_
+12-13	num	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	assalto	assalto	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:em	_
+15	em	em	ADP	_	_	17	case	17:case	_
+16	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	17	det	17:det	_
+17	mansão	mansão	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:em	SpaceAfter=No
+18	,	,	PUNCT	_	_	19	punct	19:punct	_
+19	tentando	tentar	VERB	_	VerbForm=Ger	11	advcl	11:advcl	_
+20	proteger	proteger	VERB	_	VerbForm=Inf	19	xcomp	19:xcomp	_
+21	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	22	det	22:det	_
+22	família	família	NOUN	_	Gender=Fem|Number=Sing	20	obj	20:obj	SpaceAfter=No
+23	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = Triste notícia, o mundo do cinema está de luto, o ator will smith conhecido em muitos papéis que interpretou no cinema, foi assassinado em sua casa em nova ork por assaltantes que invadiram sua mansão.
+1	Triste	triste	ADJ	_	Number=Sing	2	amod	2:amod	_
+2	notícia	notícia	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	11:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	11:nsubj	_
+6-7	do	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	cinema	cinema	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:de	_
+9	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	11:cop	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	luto	luto	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+12	,	,	PUNCT	_	_	28	punct	28:punct	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	ator	ator	NOUN	_	Gender=Masc|Number=Sing	28	nsubj:pass	28:nsubj:pass	_
+15	will	will	X	_	Foreign=Yes	14	nmod	14:nmod	_
+16	smith	smith	X	_	Foreign=Yes	15	flat:foreign	15:flat:foreign	_
+17	conhecido	conhecido	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	14	amod	14:amod	_
+18	em	em	ADP	_	_	20	case	20:case	_
+19	muitos	muito	ADJ	_	Gender=Masc|Number=Plur	20	amod	20:amod	_
+20	papéis	papel	NOUN	_	Gender=Masc|Number=Plur	17	obl	17:obl:em|22:obj	_
+21	que	que	PRON	_	PronType=Rel	22	obj	20:ref	_
+22	interpretou	interpretar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	acl:relcl	20:acl:relcl	_
+23-24	no	_	_	_	_	_	_	_	_
+23	em	em	ADP	_	_	25	case	25:case	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	cinema	cinema	NOUN	_	Gender=Masc|Number=Sing	22	obl	22:obl:em	SpaceAfter=No
+26	,	,	PUNCT	_	_	17	punct	17:punct	_
+27	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	28	aux:pass	28:aux:pass	_
+28	assassinado	assassinar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	11	parataxis	11:parataxis	_
+29	em	em	ADP	_	_	31	case	31:case	_
+30	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	31	det	31:det	_
+31	casa	casa	NOUN	_	Gender=Fem|Number=Sing	28	obl	28:obl:em	_
+32	em	em	ADP	_	_	34	case	34:case	_
+33	nova	novo	ADJ	_	Gender=Fem|Number=Sing	34	amod	34:amod	_
+34	ork	ork	NOUN	_	Gender=Fem|Number=Sing	28	obl	28:obl:em	_
+35	por	por	ADP	_	_	36	case	36:case	_
+36	assaltantes	assaltante	NOUN	_	Number=Plur	28	obl:agent	28:obl:agent|38:nsubj	_
+37	que	que	PRON	_	PronType=Rel	38	nsubj	36:ref	_
+38	invadiram	invadir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	36	acl:relcl	36:acl:relcl	_
+39	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	40	det	40:det	_
+40	mansão	mansão	NOUN	_	Gender=Fem|Number=Sing	38	obj	38:obj	SpaceAfter=No
+41	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0005
+# text = ele queria se opor para proteger sua família, mas os criminosos perceberam isso e atiraram nele.
+1	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj|4:nsubj	_
+2	queria	querer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+3	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	4	expl	4:expl	_
+4	opor	opor	VERB	_	Number=Sing|Person=3|VerbForm=Inf	2	xcomp	2:xcomp	_
+5	para	para	ADP	_	_	6	mark	6:mark	_
+6	proteger	proteger	VERB	_	VerbForm=Inf	4	advcl	4:advcl:para	_
+7	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	8	det	8:det	_
+8	família	família	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	SpaceAfter=No
+9	,	,	PUNCT	_	_	13	punct	13:punct	_
+10	mas	mas	CCONJ	_	_	13	cc	13:cc	_
+11	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	12:det	_
+12	criminosos	criminoso	NOUN	_	Gender=Masc|Number=Plur	13	nsubj	13:nsubj|16:nsubj	_
+13	perceberam	perceber	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	2	conj	2:conj:mas	_
+14	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	13	obj	13:obj	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	atiraram	atirar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	13	conj	13:conj:e	_
+17-18	nele	_	_	_	_	_	_	_	_
+17	em	em	ADP	_	_	18	case	18:case	_
+18	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	obl	16:obl:em	_
+19	.	.	PUNCT	_	_	2	punct	2:punct	_

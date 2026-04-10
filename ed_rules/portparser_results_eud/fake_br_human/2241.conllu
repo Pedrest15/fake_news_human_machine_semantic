@@ -1,0 +1,149 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Defesa horrenda!
+1	Defesa	defesa	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+2	horrenda	horrendo	ADJ	_	Gender=Fem|Number=Sing	1	amod	1:amod	SpaceAfter=No
+3	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Dilma conseguiu reverter alguns votos.
+1	Dilma	Dilma	PROPN	_	_	2	nsubj	2:nsubj|3:nsubj	_
+2	conseguiu	conseguir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	reverter	reverter	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	_
+4	alguns	algum	DET	_	Gender=Masc|Number=Plur|PronType=Ind	5	det	5:det	_
+5	votos	voto	NOUN	_	Gender=Masc|Number=Plur	3	obj	3:obj	SpaceAfter=No
+6	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = Ao invés de ganhar, ela está perdendo aliados.
+1-2	Ao	_	_	_	_	_	_	_	_
+1	A	a	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	invés	invés	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:a	_
+4	de	de	ADP	_	_	5	mark	5:mark	_
+5	ganhar	ganhar	VERB	_	VerbForm=Inf	3	acl	3:acl:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	3	punct	3:punct	_
+7	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	9	nsubj	9:nsubj	_
+8	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux	9:aux	_
+9	perdendo	perder	VERB	_	VerbForm=Ger	0	root	0:root	_
+10	aliados	aliado	NOUN	_	Gender=Masc|Number=Plur	9	obj	9:obj	SpaceAfter=No
+11	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0007
+# text = Dilma Rousseff acaba de conseguir um feito inédito.
+1	Dilma	Dilma	PROPN	_	_	3	nsubj	3:nsubj|5:nsubj	_
+2	Rousseff	Rousseff	PROPN	_	_	1	flat:name	1:flat:name	_
+3	acaba	acabar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	de	de	ADP	_	_	5	mark	5:mark	_
+5	conseguir	conseguir	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	feito	feito	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+8	inédito	inédito	ADJ	_	Gender=Masc|Number=Sing	7	amod	7:amod	SpaceAfter=No
+9	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0009
+# text = Conversas de bastidores dão conta de que ela conseguiu reverter aproximadamente 10 votos que estavam a favor de sua continuidade no governo.
+1	Conversas	conversa	NOUN	_	Gender=Fem|Number=Plur	4	nsubj	4:nsubj	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	bastidores	bastidor	NOUN	_	Gender=Masc|Number=Plur	1	nmod	1:nmod:de	_
+4	dão	dar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	conta	conta	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+6	de	de	ADP	_	ExtPos=SCONJ	9	mark	9:mark	_
+7	que	que	SCONJ	_	_	6	fixed	6:fixed	_
+8	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	9	nsubj	9:nsubj|10:nsubj	_
+9	conseguiu	conseguir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	acl	5:acl:de_que	_
+10	reverter	reverter	VERB	_	VerbForm=Inf	9	xcomp	9:xcomp	_
+11	aproximadamente	aproximadamente	ADV	_	_	12	advmod	12:advmod	_
+12	10	10	NUM	_	NumType=Card	13	nummod	13:nummod	_
+13	votos	voto	NOUN	_	Gender=Masc|Number=Plur	10	obj	10:obj|17:nsubj	_
+14	que	que	PRON	_	PronType=Rel	17	nsubj	13:ref	_
+15	estavam	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	17	cop	17:cop	_
+16	a	a	ADP	_	_	17	case	17:case	_
+17	favor	favor	NOUN	_	Gender=Masc|Number=Sing	13	acl:relcl	13:acl:relcl	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	20	det	20:det	_
+20	continuidade	continuidade	NOUN	_	Gender=Fem|Number=Sing	17	nmod	17:nmod:de	_
+21-22	no	_	_	_	_	_	_	_	_
+21	em	em	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	governo	governo	NOUN	_	Gender=Masc|Number=Sing	20	nmod	20:nmod:em	SpaceAfter=No
+24	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0011
+# text = Nem os próprios aliados do PT estão acreditando no que poderá acontecer!
+1	Nem	nem	ADV	_	_	4	advmod	4:advmod	_
+2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	4:det	_
+3	próprios	próprio	DET	_	Gender=Masc|Number=Plur|PronType=Dem	4	det	4:det	_
+4	aliados	aliado	NOUN	_	Gender=Masc|Number=Plur	9	nsubj	9:nsubj	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	PT	PT	PROPN	_	_	4	nmod	4:nmod:de	_
+8	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	aux	9:aux	_
+9	acreditando	acreditar	VERB	_	VerbForm=Ger	0	root	0:root	_
+10-11	no	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	11	case	11:case	_
+11	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	9	obl	9:obl:em|13:nsubj|14:nsubj	_
+12	que	que	PRON	_	PronType=Rel	13	nsubj	11:ref	_
+13	poderá	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	11	acl:relcl	11:acl:relcl	_
+14	acontecer	acontecer	VERB	_	VerbForm=Inf	13	xcomp	13:xcomp	SpaceAfter=No
+15	!	!	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0013
+# text = A presidenta não deveria ter ido ao senado.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	presidenta	presidenta	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj|6:nsubj	_
+3	não	não	ADV	_	_	4	advmod	4:advmod	_
+4	deveria	dever	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+5	ter	ter	AUX	_	VerbForm=Inf	6	aux	6:aux	_
+6	ido	ir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	4	xcomp	4:xcomp	_
+7-8	ao	_	_	_	_	_	_	_	_
+7	a	a	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	senado	senado	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:a	SpaceAfter=No
+10	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0015
+# text = É o trabalho de José Eduardo Cardoso indo por água abaixo.
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	José	José	PROPN	_	_	3	nmod	3:nmod:de	_
+6	Eduardo	Eduardo	PROPN	_	_	5	flat:name	5:flat:name	_
+7	Cardoso	Cardoso	PROPN	_	_	5	flat:name	5:flat:name	_
+8	indo	ir	VERB	_	VerbForm=Ger	3	acl	3:acl	_
+9	por	por	ADP	_	_	10	case	10:case	_
+10	água	água	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:por	_
+11	abaixo	abaixo	ADV	_	_	10	advmod	10:advmod	SpaceAfter=No
+12	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0017
+# text = Essa mulher é um fenômeno!
+1	Essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	2	det	2:det	_
+2	mulher	mulher	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	fenômeno	fenômeno	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+6	!	!	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0019
+# text = Quando a gente pensa que não as coisas não podem piorar, eis que surge Dilma Rousseff!
+1	Quando	quando	SCONJ	_	_	4	mark	4:mark	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	gente	gente	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+4	pensa	pensar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	advcl	15:advcl:quando	_
+5	que	que	SCONJ	_	_	10	mark	10:mark	_
+6	não	não	ADV	_	_	10	advmod	10:advmod	_
+7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	8:det	_
+8	coisas	coisa	NOUN	_	Gender=Fem|Number=Plur	10	nsubj	10:nsubj|11:nsubj	_
+9	não	não	ADV	_	_	10	advmod	10:advmod	_
+10	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	ccomp	4:ccomp	_
+11	piorar	piorar	VERB	_	VerbForm=Inf	10	xcomp	10:xcomp	SpaceAfter=No
+12	,	,	PUNCT	_	_	4	punct	4:punct	_
+13	eis	eis	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	dep	15:dep	_
+14	que	que	SCONJ	_	_	15	mark	15:mark	_
+15	surge	surgir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+16	Dilma	Dilma	PROPN	_	_	15	nsubj	15:nsubj	_
+17	Rousseff	Rousseff	PROPN	_	_	16	flat:name	16:flat:name	SpaceAfter=No
+18	!	!	PUNCT	_	_	15	punct	15:punct	_

@@ -1,0 +1,103 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Alexandre Garcia quase é atropelado no DF.
+1	Alexandre	Alexandre	PROPN	_	_	5	nsubj:pass	5:nsubj:pass	_
+2	Garcia	Garcia	PROPN	_	_	1	flat:name	1:flat:name	_
+3	quase	quase	ADV	_	_	5	advmod	5:advmod	_
+4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:pass	5:aux:pass	_
+5	atropelado	atropelar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+6-7	no	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	DF	DF	PROPN	_	_	5	obl	5:obl:em	SpaceAfter=No
+9	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0003
+# text = Ele fazia uma matéria sobre educação no trânsito.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj	_
+2	fazia	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+3	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	matéria	matéria	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+5	sobre	sobre	ADP	_	_	6	case	6:case	_
+6	educação	educação	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:sobre	_
+7-8	no	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	trânsito	trânsito	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:em	SpaceAfter=No
+10	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = Garcia falava ao microfone e citava o respeito que os motoristas do DF tem com os pedestres.
+1	Garcia	Garcia	PROPN	_	_	2	nsubj	2:nsubj|7:nsubj	_
+2	falava	falar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+3-4	ao	_	_	_	_	_	_	_	_
+3	a	a	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	microfone	microfone	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:a	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	citava	citar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	2	conj	2:conj:e	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	respeito	respeito	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj|16:obj	_
+10	que	que	PRON	_	PronType=Rel	16	obj	9:ref	_
+11	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	12:det	_
+12	motoristas	motorista	NOUN	_	Number=Plur	16	nsubj	16:nsubj	_
+13-14	do	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	DF	DF	PROPN	_	_	12	nmod	12:nmod:de	_
+16	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	acl:relcl	9:acl:relcl	_
+17	com	com	ADP	_	_	19	case	19:case	_
+18	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	19:det	_
+19	pedestres	pedestre	NOUN	_	Number=Plur	16	obl	16:obl:com	SpaceAfter=No
+20	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0007
+# text = O repórter Alexandre Garcia foi fazer na uma reportagem sobre a faixa de pedestre em Brasília confiando que o motorista ia parar e quase foi atropelado.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	repórter	repórter	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj|27:nsubj:pass	_
+3	Alexandre	Alexandre	PROPN	_	_	2	nmod	2:nmod	_
+4	Garcia	Garcia	PROPN	_	_	3	flat:name	3:flat:name	_
+5	foi	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	aux	6:aux	_
+6	fazer	fazer	VERB	_	VerbForm=Inf	0	root	0:root	_
+7-8	na	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	10	case	10:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+9	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	reportagem	reportagem	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:em	_
+11	sobre	sobre	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	faixa	faixa	NOUN	_	Number=Sing	10	nmod	10:nmod:sobre	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	pedestre	pedestre	NOUN	_	Number=Sing	13	nmod	13:nmod:de	_
+16	em	em	ADP	_	_	17	case	17:case	_
+17	Brasília	Brasília	PROPN	_	_	13	nmod	13:nmod:em	_
+18	confiando	confiar	VERB	_	VerbForm=Ger	6	advcl	6:advcl	_
+19	que	que	SCONJ	_	_	23	mark	23:mark	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	motorista	motorista	NOUN	_	Number=Sing	23	nsubj	23:nsubj	_
+22	ia	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	23	aux	23:aux	_
+23	parar	parar	VERB	_	VerbForm=Inf	18	ccomp	18:ccomp	_
+24	e	e	CCONJ	_	_	27	cc	27:cc	_
+25	quase	quase	ADV	_	_	27	advmod	27:advmod	_
+26	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	27	aux:pass	27:aux:pass	_
+27	atropelado	atropelar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	6	conj	6:conj:e	SpaceAfter=No
+28	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0009
+# text = Quase que o global partiu dessa para melhor!
+1	Quase	quase	ADV	_	ExtPos=ADV	5	advmod	5:advmod	_
+2	que	que	SCONJ	_	_	1	fixed	1:fixed	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	global	global	NOUN	_	Number=Sing	5	nsubj	5:nsubj	_
+5	partiu	partir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6-7	dessa	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	essa	esse	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	5	obl	5:obl:de	_
+8	para	para	ADP	_	_	9	case	9:case	_
+9	melhor	melhor	ADJ	_	Number=Sing	5	obl	5:obl:para	SpaceAfter=No
+10	!	!	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0010
+# text = confira:
+1	confira	conferir	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+2	:	:	PUNCT	_	_	1	punct	1:punct	_

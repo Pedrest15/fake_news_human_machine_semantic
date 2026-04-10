@@ -1,0 +1,177 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = dr. charles lieber foi preso nos eua por fabricar e vender o coronavírus para a china eua acabou de descobrir o homem que fabricou e vendeu o virus de corona à china.
+1	dr.	dr.	NOUN	_	_	5	nsubj:pass	5:nsubj:pass	_
+2	charles	charles	PROPN	_	_	1	nmod	1:nmod	_
+3	lieber	lieber	PROPN	_	_	2	flat:name	2:flat:name	_
+4	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	aux:pass	5:aux:pass	_
+5	preso	prender	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+6-7	nos	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	8:det	_
+8	eua	eua	NOUN	_	Number=Sing	5	obl	5:obl:em	_
+9	por	por	ADP	_	_	10	mark	10:mark|12:mark	_
+10	fabricar	fabricar	VERB	_	VerbForm=Inf	5	advcl	5:advcl:por	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	vender	vender	VERB	_	VerbForm=Inf	10	conj	5:advcl:por|10:conj:e	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	coronavírus	coronavírus	NOUN	_	Gender=Masc	10	obj	10:obj|12:obj	_
+15	para	para	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	china	china	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:para|12:obl:para	_
+18	eua	eua	NOUN	_	_	19	nsubj	19:nsubj|21:nsubj	_
+19	acabou	acabar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	conj	5:conj	_
+20	de	de	ADP	_	_	21	mark	21:mark	_
+21	descobrir	descobrir	VERB	_	VerbForm=Inf	19	xcomp	19:xcomp	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	homem	homem	NOUN	_	Gender=Masc|Number=Sing	21	obj	21:obj|25:nsubj|27:nsubj	_
+24	que	que	PRON	_	PronType=Rel	25	nsubj	23:ref	_
+25	fabricou	fabricar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	acl:relcl	23:acl:relcl	_
+26	e	e	CCONJ	_	_	27	cc	27:cc	_
+27	vendeu	vender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	25	conj	23:acl:relcl|25:conj:e	_
+28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	29:det	_
+29	virus	virus	NOUN	_	Gender=Masc	27	obj	27:obj	_
+30	de	de	ADP	_	_	31	case	31:case	_
+31	corona	corona	NOUN	_	Gender=Fem|Number=Sing	29	nmod	29:nmod:de	_
+32-33	à	_	_	_	_	_	_	_	_
+32	a	a	ADP	_	_	34	case	34:case	_
+33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	34:det	_
+34	china	china	NOUN	_	Gender=Fem|Number=Sing	21	obl	21:obl:a	SpaceAfter=No
+35	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0003
+# text = chama-se dr charles lieber chefe do departamento de quimica e biologia na universidade de havard, eua.
+1-2	chama-se	_	_	_	_	_	_	_	_
+1	chama	chamar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	1	expl:impers	1:expl:impers	_
+3	dr	dr	NOUN	_	Gender=Masc|Number=Sing	1	obj	1:obj	_
+4	charles	charles	X	_	Foreign=Yes	3	nmod	3:nmod	_
+5	lieber	lieber	X	_	Foreign=Yes	4	flat:foreign	4:flat:foreign	_
+6	chefe	chefe	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	departamento	departamento	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de	_
+10	de	de	ADP	_	_	11	case	11:case|13:case	_
+11	quimica	quimica	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:de	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	biologia	biologia	NOUN	_	Gender=Fem|Number=Sing	11	conj	9:nmod:de|11:conj:e	_
+14-15	na	_	_	_	_	_	_	_	_
+14	em	em	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	universidade	universidade	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:em	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	havard	havard	NOUN	_	Foreign=Yes	16	nmod	16:nmod:de	SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	20:punct	_
+20	eua	eua	NOUN	_	_	16	appos	16:appos	SpaceAfter=No
+21	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0005
+# text = acabou de ser preso hoje segundo fontes do departamento americano.., homem que vendeu o corona virus na china, preso.
+1	acabou	acabar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	de	de	ADP	_	_	4	mark	4:mark	_
+3	ser	ser	AUX	_	VerbForm=Inf	4	aux:pass	4:aux:pass	_
+4	preso	prender	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	1	xcomp	1:xcomp	_
+5	hoje	hoje	ADV	_	_	4	advmod	4:advmod	_
+6	segundo	segundo	ADP	_	_	7	case	7:case	_
+7	fontes	fonte	NOUN	_	Gender=Fem|Number=Plur	4	obl	4:obl:segundo	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	departamento	departamento	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	_
+11	americano	americano	ADJ	_	Gender=Masc|Number=Sing	10	amod	10:amod	SpaceAfter=No
+12	..	..	PUNCT	_	_	10	nmod	10:nmod	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	homem	homem	NOUN	_	Gender=Masc|Number=Sing	7	appos	7:appos|16:nsubj	_
+15	que	que	PRON	_	PronType=Rel	16	nsubj	14:ref	_
+16	vendeu	vender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	acl:relcl	14:acl:relcl	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	corona	corona	NOUN	_	Gender=Fem|Number=Sing	16	obj	16:obj	_
+19	virus	virus	NOUN	_	Gender=Masc	18	nmod	18:nmod	_
+20-21	na	_	_	_	_	_	_	_	_
+20	em	em	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	china	china	NOUN	_	Gender=Fem|Number=Sing	16	obl	16:obl:em	SpaceAfter=No
+23	,	,	PUNCT	_	_	14	punct	14:punct	_
+24	preso	prender	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	1	xcomp	1:xcomp	SpaceAfter=No
+25	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0007
+# text = os eua acabou de descobrir o homem que fabricou e vendeu o virus de corona à china.
+1	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	eua	eua	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj|5:nsubj	_
+3	acabou	acabar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	de	de	ADP	_	_	5	mark	5:mark	_
+5	descobrir	descobrir	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	homem	homem	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj|9:nsubj|11:nsubj	_
+8	que	que	PRON	_	PronType=Rel	9	nsubj	7:ref	_
+9	fabricou	fabricar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	acl:relcl	7:acl:relcl	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	vendeu	vender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	conj	7:acl:relcl|9:conj:e	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	virus	virus	NOUN	_	Gender=Masc	11	obj	11:obj	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	corona	corona	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:de	_
+16-17	à	_	_	_	_	_	_	_	_
+16	a	a	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	china	china	NOUN	_	Gender=Fem|Number=Sing	11	obl	11:obl:a	SpaceAfter=No
+19	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0009
+# text = chama-se dr charles lieber chefe do departamento de quimica e biologia na universidade de havard, eua.
+1-2	chama-se	_	_	_	_	_	_	_	_
+1	chama	chamar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	1	expl:impers	1:expl:impers	_
+3	dr	dr	NOUN	_	Gender=Masc|Number=Sing	1	obj	1:obj	_
+4	charles	charles	X	_	Foreign=Yes	3	nmod	3:nmod	_
+5	lieber	lieber	X	_	Foreign=Yes	4	flat:foreign	4:flat:foreign	_
+6	chefe	chefe	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	departamento	departamento	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de	_
+10	de	de	ADP	_	_	11	case	11:case|13:case	_
+11	quimica	quimica	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:de	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	biologia	biologia	NOUN	_	Gender=Fem|Number=Sing	11	conj	9:nmod:de|11:conj:e	_
+14-15	na	_	_	_	_	_	_	_	_
+14	em	em	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	universidade	universidade	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:em	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	havard	havard	NOUN	_	Foreign=Yes	16	nmod	16:nmod:de	SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	20:punct	_
+20	eua	eua	NOUN	_	_	16	appos	16:appos	SpaceAfter=No
+21	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0011
+# text = acabou de ser preso hoje segundo fontes do departamento americano.. deus é grande e é pai essa notícia deu na bbc.
+1	acabou	acabar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	de	de	ADP	_	_	4	mark	4:mark	_
+3	ser	ser	AUX	_	VerbForm=Inf	4	aux:pass	4:aux:pass	_
+4	preso	prender	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	1	xcomp	1:xcomp	_
+5	hoje	hoje	ADV	_	_	4	advmod	4:advmod	_
+6	segundo	segundo	ADP	_	_	7	case	7:case	_
+7	fontes	fonte	NOUN	_	Gender=Fem|Number=Plur	4	obl	4:obl:segundo	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	departamento	departamento	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	_
+11	americano	americano	ADJ	_	Gender=Masc|Number=Sing	10	amod	10:amod	SpaceAfter=No
+12	..	..	PUNCT	_	_	15	punct	15:punct	_
+13	deus	deus	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	15:nsubj|18:nsubj	_
+14	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	15:cop	_
+15	grande	grande	ADJ	_	Number=Sing	1	parataxis	1:parataxis	_
+16	e	e	CCONJ	_	_	18	cc	18:cc	_
+17	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	cop	18:cop	_
+18	pai	pai	NOUN	_	Gender=Masc|Number=Sing	15	conj	1:parataxis|15:conj:e	_
+19	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	20	det	20:det	_
+20	notícia	notícia	NOUN	_	Gender=Fem|Number=Sing	21	nsubj	21:nsubj	_
+21	deu	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	conj	1:parataxis|15:conj	_
+22-23	na	_	_	_	_	_	_	_	_
+22	em	em	ADP	_	_	24	case	24:case	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	bbc	bbc	NOUN	_	_	21	obl	21:obl:em	SpaceAfter=No
+25	.	.	PUNCT	_	_	1	punct	1:punct	_

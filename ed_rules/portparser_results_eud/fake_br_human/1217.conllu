@@ -1,0 +1,266 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Bispo da Universal pede carros para fiéis: Voltem para casa a pé ou de ônibus.
+1	Bispo	bispo	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+2-3	da	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	Universal	Universal	PROPN	_	_	1	nmod	1:nmod:de	_
+5	pede	pedir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	carros	carro	NOUN	_	Gender=Masc|Number=Plur	5	obj	5:obj	_
+7	para	para	ADP	_	_	8	case	8:case	_
+8	fiéis	fiéi	NOUN	_	Number=Plur	6	nmod	6:nmod:para	SpaceAfter=No
+9	:	:	PUNCT	_	_	10	punct	10:punct	_
+10	Voltem	voltar	VERB	_	Mood=Imp|Number=Plur|Person=3|VerbForm=Fin	5	parataxis	5:parataxis	_
+11	para	para	ADP	_	_	12	case	12:case	_
+12	casa	casa	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:para	_
+13	a	a	ADP	_	_	14	case	14:case	_
+14	pé	pé	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:a	_
+15	ou	ou	CCONJ	_	_	17	cc	17:cc	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	ônibus	ônibus	NOUN	_	Gender=Masc	14	conj	10:obl:de|14:conj:ou	SpaceAfter=No
+18	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0003
+# text = Amém?.
+1	Amém	amém	ADV	_	_	0	root	0:root	SpaceAfter=No
+2	?	?	PUNCT	_	_	1	punct	1:punct	SpaceAfter=No
+3	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0005
+# text = "Além desse carro, desse caminhão, do salário e de tudo que Deus te deu [...] pega tudo isso e coloca no altar".
+1	"	"	PUNCT	_	_	25	punct	25:punct	SpaceAfter=No
+2	Além	além	ADV	_	_	25	advmod	25:advmod	_
+3-4	desse	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	5	det	5:det	_
+5	carro	carro	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	9	punct	9:punct	_
+7-8	desse	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	9	det	9:det	_
+9	caminhão	caminhão	NOUN	_	Gender=Masc|Number=Sing	5	conj	2:obl:de|5:conj:e	SpaceAfter=No
+10	,	,	PUNCT	_	_	13	punct	13:punct	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	salário	salário	NOUN	_	Gender=Masc|Number=Sing	5	conj	2:obl:de|5:conj:e	_
+14	e	e	CCONJ	_	_	16	cc	16:cc	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	tudo	tudo	PRON	_	PronType=Ind	5	conj	2:obl:de|5:conj:e|20:obj	_
+17	que	que	PRON	_	PronType=Rel	20	obj	16:ref	_
+18	Deus	Deus	PROPN	_	_	20	nsubj	20:nsubj	_
+19	te	te	PRON	_	Case=Acc|Number=Sing|Person=2|PronType=Prs	20	iobj	20:iobj	_
+20	deu	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	acl:relcl	16:acl:relcl	_
+21	[	[	PUNCT	_	_	22	punct	22:punct	SpaceAfter=No
+22	.	.	PUNCT	_	_	20	parataxis	20:parataxis	SpaceAfter=No
+23	..	..	PUNCT	_	_	22	punct	22:punct	SpaceAfter=No
+24	]	]	PUNCT	_	_	22	punct	22:punct	_
+25	pega	pegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+26	tudo	tudo	PRON	_	ExtPos=PRON|PronType=Ind	25	obj	25:obj	_
+27	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	26	fixed	26:fixed	_
+28	e	e	CCONJ	_	_	29	cc	29:cc	_
+29	coloca	colocar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	conj	25:conj:e	_
+30-31	no	_	_	_	_	_	_	_	_
+30	em	em	ADP	_	_	32	case	32:case	_
+31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+32	altar	altar	NOUN	_	Gender=Masc|Number=Sing	29	obl	29:obl:em	SpaceAfter=No
+33	"	"	PUNCT	_	_	25	punct	25:punct	SpaceAfter=No
+34	.	.	PUNCT	_	_	25	punct	25:punct	_
+
+# sent_id = S0007
+# text = Em um culto realizado no luxuoso Templo Salomão, em São Paulo, o pastor (ou Bispo, ou sei lá o que) Rogério Formigoni desafiou os fiéis a doarem seus carros para Deus " Votem para casa de táxi, ônibus ou a pé" disse.
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	culto	culto	NOUN	_	Gender=Masc|Number=Sing	29	obl	29:obl:em	_
+4	realizado	realizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	acl	3:acl	_
+5-6	no	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	8	case	8:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+7	luxuoso	luxuoso	ADJ	_	Gender=Masc|Number=Sing	8	amod	8:amod	_
+8	Templo	Templo	PROPN	_	_	4	obl	4:obl:em	_
+9	Salomão	Salomão	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+10	,	,	PUNCT	_	_	12	punct	12:punct	_
+11	em	em	ADP	_	_	12	case	12:case	_
+12	São	São	PROPN	_	_	8	nmod	8:nmod:em	_
+13	Paulo	Paulo	PROPN	_	_	12	flat:name	12:flat:name	SpaceAfter=No
+14	,	,	PUNCT	_	_	3	punct	3:punct	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	pastor	pastor	NOUN	_	Gender=Masc|Number=Sing	29	nsubj	29:nsubj	_
+17	(	(	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+18	ou	ou	CCONJ	_	_	19	cc	19:cc	_
+19	Bispo	Bispo	PROPN	_	_	16	conj	16:conj:ou|29:nsubj	SpaceAfter=No
+20	,	,	PUNCT	_	_	22	punct	22:punct	_
+21	ou	ou	CCONJ	_	_	22	cc	22:cc	_
+22	sei	saber	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	19	conj	19:conj:ou|29:nsubj	_
+23	lá	lá	ADV	_	_	22	advmod	22:advmod	_
+24	o	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	22	obj	22:obj	_
+25	que	que	PRON	_	PronType=Int	24	fixed	24:fixed	SpaceAfter=No
+26	)	)	PUNCT	_	_	19	punct	19:punct	_
+27	Rogério	Rogério	PROPN	_	_	16	nsubj	16:nsubj|19:nsubj|22:nsubj	_
+28	Formigoni	Formigoni	PROPN	_	_	27	flat:name	27:flat:name	_
+29	desafiou	desafiar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	50	dep	50:dep	_
+30	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	31	det	31:det	_
+31	fiéis	fiéi	NOUN	_	Number=Plur	29	obj	29:obj|33:nsubj	_
+32	a	a	ADP	_	_	33	mark	33:mark	_
+33	doarem	doar	VERB	_	Number=Plur|Person=3|VerbForm=Inf	29	xcomp	29:xcomp	_
+34	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	35	det	35:det	_
+35	carros	carro	NOUN	_	Gender=Masc|Number=Plur	33	obj	33:obj	_
+36	para	para	ADP	_	_	37	case	37:case	_
+37	Deus	Deus	PROPN	_	_	33	obl	33:obl:para	_
+38	"	"	PUNCT	_	_	39	punct	39:punct	_
+39	Votem	votar	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	29	parataxis	29:parataxis	_
+40	para	para	ADP	_	_	41	case	41:case	_
+41	casa	casa	NOUN	_	Gender=Fem|Number=Sing	39	obl	39:obl:para	_
+42	de	de	ADP	_	_	43	case	43:case|45:case	_
+43	táxi	táxi	NOUN	_	Gender=Masc|Number=Sing	39	obl	39:obl:de	SpaceAfter=No
+44	,	,	PUNCT	_	_	45	punct	45:punct	_
+45	ônibus	ônibus	NOUN	_	Gender=Masc	43	conj	39:obl:de|43:conj:ou	_
+46	ou	ou	CCONJ	_	_	48	cc	48:cc	_
+47	a	a	ADP	_	_	48	case	48:case	_
+48	pé	pé	NOUN	_	Gender=Masc|Number=Sing	43	conj	39:obl:a|43:conj:ou	SpaceAfter=No
+49	"	"	PUNCT	_	_	39	punct	39:punct	_
+50	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+51	.	.	PUNCT	_	_	50	punct	50:punct	_
+
+# sent_id = S0009
+# text = E continuou: Se seu carro está novinho, é isso mesmo que Deus quer.
+1	E	e	CCONJ	_	_	2	cc	2:cc	_
+2	continuou	continuar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+3	:	:	PUNCT	_	_	11	punct	11:punct	_
+4	Se	se	SCONJ	_	_	8	mark	8:mark	_
+5	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	6	det	6:det	_
+6	carro	carro	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	8:nsubj	_
+7	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop	_
+8	novinho	novinho	ADJ	_	Gender=Masc|Number=Sing	11	advcl	11:advcl:se	SpaceAfter=No
+9	,	,	PUNCT	_	_	8	punct	8:punct	_
+10	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	11:cop	_
+11	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	2	ccomp:speech	2:ccomp:speech	_
+12	mesmo	mesmo	ADV	_	_	11	advmod	11:advmod	_
+13	que	que	PRON	_	PronType=Rel	15	discourse	15:discourse	_
+14	Deus	Deus	PROPN	_	_	15	nsubj	15:nsubj	_
+15	quer	querer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	2:ccomp	SpaceAfter=No
+16	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0011
+# text = Ele te deu e agora está te pedindo O bispo não explicou por que Deus precisa tanto de carros.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	3:nsubj|8:nsubj	_
+2	te	te	PRON	_	Case=Acc|Number=Sing|Person=2|PronType=Prs	3	obj	3:obj	_
+3	deu	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	e	e	CCONJ	_	_	8	cc	8:cc	_
+5	agora	agora	ADV	_	_	8	advmod	8:advmod	_
+6	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	8:aux	_
+7	te	te	PRON	_	Case=Acc|Number=Sing|Person=2|PronType=Prs	8	obj	8:obj	_
+8	pedindo	pedir	VERB	_	VerbForm=Ger	3	conj	3:conj:e	_
+9	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	bispo	bispo	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	12:nsubj	_
+11	não	não	ADV	_	_	12	advmod	12:advmod	_
+12	explicou	explicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	dep	3:dep|8:dep	_
+13	por	por	ADP	_	_	14	case	14:case	_
+14	que	que	PRON	_	PronType=Rel	16	obl	16:obl:por	_
+15	Deus	Deus	PROPN	_	_	16	nsubj	16:nsubj	_
+16	precisa	precisar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	ccomp	12:ccomp	_
+17	tanto	tanto	ADV	_	_	16	advmod	16:advmod	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	carros	carro	NOUN	_	Gender=Masc|Number=Plur	16	obl	16:obl:de	SpaceAfter=No
+20	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0013
+# text = O religioso chamou os carros dos fiéis de "latas velhas" e acrescentou que "quem fizesse a doação teria o luxuoso carro italiano Lamborghini ou bastante dinheiro, como recompensa de Deus".
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	religioso	religioso	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj|15:nsubj	_
+3	chamou	chamar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	5:det	_
+5	carros	carro	NOUN	_	Gender=Masc|Number=Plur	3	obj	3:obj	_
+6-7	dos	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	8:det	_
+8	fiéis	fiél	NOUN	_	Number=Plur	5	nmod	5:nmod:de	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	"	"	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+11	latas	lata	NOUN	_	Gender=Fem|Number=Plur	3	obl	3:obl:de	_
+12	velhas	velho	ADJ	_	Gender=Fem|Number=Plur	11	amod	11:amod	SpaceAfter=No
+13	"	"	PUNCT	_	_	11	punct	11:punct	_
+14	e	e	CCONJ	_	_	15	cc	15:cc	_
+15	acrescentou	acrescentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	3:conj:e	_
+16	que	que	SCONJ	_	_	22	mark	22:mark	_
+17	"	"	PUNCT	_	_	22	punct	22:punct	SpaceAfter=No
+18	quem	quem	PRON	_	PronType=Ind	22	nsubj	22:nsubj	_
+19	fizesse	fazer	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	acl:relcl	18:acl:relcl	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	doação	doação	NOUN	_	Gender=Fem|Number=Sing	19	obj	19:obj	_
+22	teria	ter	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	15	ccomp	15:ccomp	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+24	luxuoso	luxuoso	ADJ	_	Gender=Masc|Number=Sing	25	amod	25:amod	_
+25	carro	carro	NOUN	_	Gender=Masc|Number=Sing	22	obj	22:obj	_
+26	italiano	italiano	ADJ	_	Gender=Masc|Number=Sing	25	amod	25:amod	_
+27	Lamborghini	Lamborghini	PROPN	_	_	25	nmod	25:nmod	_
+28	ou	ou	CCONJ	_	_	30	cc	30:cc	_
+29	bastante	bastante	ADJ	_	Number=Sing	30	amod	30:amod	_
+30	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	25	conj	22:obj|25:conj:ou	SpaceAfter=No
+31	,	,	PUNCT	_	_	33	punct	33:punct	_
+32	como	como	ADP	_	_	33	case	33:case	_
+33	recompensa	recompensa	NOUN	_	Gender=Fem|Number=Sing	22	obl	22:obl:como	_
+34	de	de	ADP	_	_	35	case	35:case	_
+35	Deus	Deus	PROPN	_	_	33	nmod	33:nmod:de	SpaceAfter=No
+36	"	"	PUNCT	_	_	22	punct	22:punct	SpaceAfter=No
+37	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0015
+# text = Esse cidadão deveria ser enquadrado por crime de estelionato!
+1	Esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	2:det	_
+2	cidadão	cidadão	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj|5:nsubj:pass	_
+3	deveria	dever	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+4	ser	ser	AUX	_	VerbForm=Inf	5	aux:pass	5:aux:pass	_
+5	enquadrado	enquadrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	xcomp	3:xcomp	_
+6	por	por	ADP	_	_	7	case	7:case	_
+7	crime	crime	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:por	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	estelionato	estelionato	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	SpaceAfter=No
+10	!	!	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0017
+# text = O youtube bloqueou os vídeos que foram divulgados.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	youtube	youtube	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	bloqueou	bloquear	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	5:det	_
+5	vídeos	vídeo	NOUN	_	Gender=Masc|Number=Plur	3	obj	3:obj|8:nsubj:pass	_
+6	que	que	PRON	_	PronType=Rel	8	nsubj:pass	5:ref	_
+7	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	8	aux:pass	8:aux:pass	_
+8	divulgados	divulgar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	5	acl:relcl	5:acl:relcl	SpaceAfter=No
+9	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0019
+# text = A Universal alegou possuir direitos autorais dos mesmos.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Universal	Universal	PROPN	_	_	3	nsubj	3:nsubj|4:nsubj	_
+3	alegou	alegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	possuir	possuir	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+5	direitos	direito	NOUN	_	Gender=Masc|Number=Plur	4	obj	4:obj	_
+6	autorais	autoral	ADJ	_	Number=Plur	5	amod	5:amod	_
+7-8	dos	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	9:det	_
+9	mesmos	mesmo	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	5	nmod	5:nmod:de	SpaceAfter=No
+10	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0021
+# text = Um internauta conseguiu gravar um desses vídeos e o divulgou no Facebook.
+1	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	internauta	internauta	NOUN	_	Number=Sing	3	nsubj	3:nsubj|4:nsubj|11:nsubj	_
+3	conseguiu	conseguir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	gravar	gravar	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+5	um	um	NUM	_	Gender=Masc|NumType=Card	4	obj	4:obj	_
+6-7	desses	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	8	det	8:det	_
+8	vídeos	vídeo	NOUN	_	Gender=Masc|Number=Plur	5	nmod	5:nmod:de	_
+9	e	e	CCONJ	_	_	11	cc	11:cc	_
+10	o	o	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	obj	11:obj	_
+11	divulgou	divulgar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	3:conj:e	_
+12-13	no	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	Facebook	Facebook	PROPN	_	_	11	obl	11:obl:em	SpaceAfter=No
+15	.	.	PUNCT	_	_	3	punct	3:punct	_

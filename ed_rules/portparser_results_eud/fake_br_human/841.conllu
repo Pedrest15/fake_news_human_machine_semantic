@@ -1,0 +1,154 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Monstro!
+1	Monstro	monstro	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+2	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Em Manaus, médico foi flagrado (no motel) abusando da filha de 7 meses.
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	Manaus	Manaus	PROPN	_	_	6	obl	6:obl:em	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	médico	médico	NOUN	_	Gender=Masc|Number=Sing	6	nsubj:pass	6:nsubj:pass	_
+5	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	aux:pass	6:aux:pass	_
+6	flagrado	flagrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+7	(	(	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+8-9	no	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	motel	motel	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:em	SpaceAfter=No
+11	)	)	PUNCT	_	_	10	punct	10:punct	_
+12	abusando	abusar	VERB	_	VerbForm=Ger	6	advcl	6:advcl	_
+13-14	da	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	filha	filho	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl:de	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	7	7	NUM	_	NumType=Card	18	nummod	18:nummod	_
+18	meses	mÃªs	NOUN	_	Gender=Masc|Number=Plur	15	nmod	15:nmod:de	SpaceAfter=No
+19	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0005
+# text = Ambos foram presos em flagrante e encaminhados para a Delegacia Especializada na Proteção da Criança e do Adolescente (Depca).
+1	Ambos	ambos	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	3	nsubj:pass	3:nsubj:pass|7:nsubj:pass	_
+2	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	3	aux:pass	3:aux:pass|7:aux:pass	_
+3	presos	prender	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	_
+4	em	em	ADP	_	_	5	case	5:case	_
+5	flagrante	flagrante	NOUN	_	Number=Sing	3	obl	3:obl:em	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	encaminhados	encaminhar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	3	conj	3:conj:e	_
+8	para	para	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	Delegacia	Delegacia	PROPN	_	_	7	obl	7:obl:para	_
+11	Especializada	Especializada	PROPN	_	_	10	flat:name	10:flat:name	_
+12-13	na	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	Proteção	Proteção	PROPN	_	_	10	flat:name	10:flat:name	_
+15-16	da	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	Criança	Criança	PROPN	_	_	10	flat:name	10:flat:name	_
+18	e	e	CCONJ	_	_	21	cc	21:cc	_
+19-20	do	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	Adolescente	Adolescente	PROPN	_	_	10	flat:name	10:flat:name	_
+22	(	(	PUNCT	_	_	23	punct	23:punct	SpaceAfter=No
+23	Depca	Depca	PROPN	_	_	10	appos	10:appos	SpaceAfter=No
+24	)	)	PUNCT	_	_	23	punct	23:punct	SpaceAfter=No
+25	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = A bebê passou por exames no IML e o abuso foi constatado.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	bebê	bebê	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	passou	passar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	por	por	ADP	_	_	5	case	5:case	_
+5	exames	exame	NOUN	_	Gender=Masc|Number=Plur	3	obl	3:obl:por	_
+6-7	no	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	IML	IML	PROPN	_	_	3	obl	3:obl:em	_
+9	e	e	CCONJ	_	_	13	cc	13:cc	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	abuso	abuso	NOUN	_	Gender=Masc|Number=Sing	13	nsubj:pass	13:nsubj:pass	_
+12	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	aux:pass	13:aux:pass	_
+13	constatado	constatar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	conj	3:conj:e	SpaceAfter=No
+14	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0009
+# text = Na delegacia, a mãe disse que o médico não demonstrava amor paternal pela criança e que já havia presenciado outras atitudes suspeitas do criminoso contra a vítima.
+1-2	Na	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	delegacia	delegacia	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:em	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	mãe	mãe	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj	_
+7	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	que	que	SCONJ	_	_	12	mark	12:mark	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	médico	médico	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	12:nsubj|22:nsubj	_
+11	não	não	ADV	_	_	12	advmod	12:advmod	_
+12	demonstrava	demonstrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	ccomp	7:ccomp	_
+13	amor	amor	NOUN	_	Gender=Masc|Number=Sing	12	obj	12:obj	_
+14	paternal	paternal	ADJ	_	Number=Sing	13	amod	13:amod	_
+15-16	pela	_	_	_	_	_	_	_	_
+15	por	por	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	criança	criança	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:por	_
+18	e	e	CCONJ	_	_	22	cc	22:cc	_
+19	que	que	SCONJ	_	_	22	mark	22:mark	_
+20	já	já	ADV	_	_	22	advmod	22:advmod	_
+21	havia	haver	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	22	aux	22:aux	_
+22	presenciado	presenciar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	12	conj	7:ccomp|12:conj:e	_
+23	outras	outro	DET	_	Gender=Fem|Number=Plur|PronType=Ind	24	det	24:det	_
+24	atitudes	atitude	NOUN	_	Gender=Fem|Number=Plur	22	obj	22:obj	_
+25	suspeitas	suspeito	ADJ	_	Gender=Fem|Number=Plur	24	amod	24:amod	_
+26-27	do	_	_	_	_	_	_	_	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	criminoso	criminoso	NOUN	_	Gender=Masc|Number=Sing	24	nmod	24:nmod:de	_
+29	contra	contra	ADP	_	_	31	case	31:case	_
+30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+31	vítima	vítima	NOUN	_	Gender=Fem|Number=Sing	24	nmod	24:nmod:contra	SpaceAfter=No
+32	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0011
+# text = Por mais incrível que pareça, a identidade dos dois monstros foi preservada pela polícia.
+1	Por	por	ADP	_	_	3	mark	3:mark	_
+2	mais	mais	ADV	_	_	3	advmod	3:advmod	_
+3	incrível	incrível	ADJ	_	Number=Sing	14	advcl	5:nsubj|14:advcl:por	_
+4	que	que	PRON	_	PronType=Rel	5	nsubj	3:ref	_
+5	pareça	parecer	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	3:acl:relcl	SpaceAfter=No
+6	,	,	PUNCT	_	_	3	punct	3:punct	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	identidade	identidade	NOUN	_	Gender=Fem|Number=Sing	14	nsubj:pass	14:nsubj:pass	_
+9-10	dos	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	12	case	12:case	_
+10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	12:det	_
+11	dois	dois	NUM	_	Gender=Masc|NumType=Card	12	nummod	12:nummod	_
+12	monstros	monstro	NOUN	_	Gender=Masc|Number=Plur	8	nmod	8:nmod:de	_
+13	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	aux:pass	14:aux:pass	_
+14	preservada	preservar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+15-16	pela	_	_	_	_	_	_	_	_
+15	por	por	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	polícia	polícia	NOUN	_	Number=Sing	14	obl:agent	14:obl:agent	SpaceAfter=No
+18	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0013
+# text = informações do G1 / Manaus e Jornal Em Tempo.
+1	informações	informação	NOUN	_	Gender=Fem|Number=Plur	0	root	0:root	_
+2-3	do	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case|8:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	G1	G1	PROPN	_	_	1	nmod	1:nmod:de	_
+5	/	/	PUNCT	_	_	6	punct	6:punct	_
+6	Manaus	Manaus	PROPN	_	_	4	nmod	4:nmod	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	Jornal	Jornal	PROPN	_	_	4	conj	1:nmod:de|4:conj:e	_
+9	Em	Em	PROPN	_	_	8	flat:name	8:flat:name	_
+10	Tempo	Tempo	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+11	.	.	PUNCT	_	_	1	punct	1:punct	_

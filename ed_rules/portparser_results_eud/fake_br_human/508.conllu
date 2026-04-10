@@ -1,0 +1,812 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = "Em 2045, a vida como conhecemos irá acabar" diz chefe de engenharia do Google.
+1	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+2	Em	em	ADP	_	_	3	case	3:case	_
+3	2045	2045	NUM	_	NumType=Card	10	obl	10:obl:em	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	vida	vida	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	8:obl|10:nsubj	_
+7	como	como	ADV	_	_	8	advmod	6:ref	_
+8	conhecemos	conhecer	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	6	acl:relcl	6:acl:relcl	_
+9	irá	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	10	aux	10:aux	_
+10	acabar	acabar	VERB	_	VerbForm=Inf	12	ccomp:speech	12:ccomp:speech	SpaceAfter=No
+11	"	"	PUNCT	_	_	10	punct	10:punct	_
+12	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+13	chefe	chefe	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	12:nsubj	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	engenharia	engenharia	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:de	_
+16-17	do	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	Google	Google	PROPN	_	_	13	nmod	13:nmod:de	SpaceAfter=No
+19	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0003
+# text = A inteligência artificial irá se equiparar à inteligência humana em 2029.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	inteligência	inteligência	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj	_
+3	artificial	artificial	ADJ	_	Number=Sing	2	amod	2:amod	_
+4	irá	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	6	aux	6:aux	_
+5	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	6	expl	6:expl	_
+6	equiparar	equiparar	VERB	_	VerbForm=Inf	0	root	0:root	_
+7-8	à	_	_	_	_	_	_	_	_
+7	a	a	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	inteligência	inteligência	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:a	_
+10	humana	humano	ADJ	_	Gender=Fem|Number=Sing	9	amod	9:amod	_
+11	em	em	ADP	_	_	12	case	12:case	_
+12	2029	2029	NUM	_	NumType=Card	6	obl	6:obl:em	SpaceAfter=No
+13	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0005
+# text = "A vida como conhecemos irá acabar em 2045" A frase acima foi dita por Ray Kurzweil, chefe de engenharia do Google, e não se trata de uma teoria conspiratória.
+1	"	"	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+2	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	vida	vida	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	5:obl|7:nsubj	_
+4	como	como	ADV	_	_	5	advmod	3:ref	_
+5	conhecemos	conhecer	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_
+6	irá	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	7	aux	7:aux	_
+7	acabar	acabar	VERB	_	VerbForm=Inf	15	dep	15:dep	_
+8	em	em	ADP	_	_	9	case	9:case	_
+9	2045	2045	NUM	_	NumType=Card	7	obl	7:obl:em	SpaceAfter=No
+10	"	"	PUNCT	_	_	7	punct	7:punct	_
+11	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	frase	frase	NOUN	_	Gender=Fem|Number=Sing	15	nsubj:pass	15:nsubj:pass|30:nsubj	_
+13	acima	acima	ADV	_	_	12	advmod	12:advmod	_
+14	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	aux:pass	15:aux:pass	_
+15	dita	dizer	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+16	por	por	ADP	_	_	17	case	17:case	_
+17	Ray	Ray	PROPN	_	_	15	obl:agent	15:obl:agent	_
+18	Kurzweil	Kurzweil	PROPN	_	_	17	flat:name	17:flat:name	SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	20:punct	_
+20	chefe	chefe	NOUN	_	Gender=Masc|Number=Sing	17	appos	17:appos	_
+21	de	de	ADP	_	_	22	case	22:case	_
+22	engenharia	engenharia	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:de	_
+23-24	do	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	Google	Google	PROPN	_	_	20	nmod	20:nmod:de	SpaceAfter=No
+26	,	,	PUNCT	_	_	20	punct	20:punct	_
+27	e	e	CCONJ	_	_	30	cc	30:cc	_
+28	não	não	ADV	_	_	30	advmod	30:advmod	_
+29	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	30	expl:impers	30:expl:impers	_
+30	trata	tratar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	conj	15:conj:e	_
+31	de	de	ADP	_	_	33	case	33:case	_
+32	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	33	det	33:det	_
+33	teoria	teoria	NOUN	_	Gender=Fem|Number=Sing	30	obl	30:obl:de	_
+34	conspiratória	conspiratório	ADJ	_	Gender=Fem|Number=Sing	33	amod	33:amod	SpaceAfter=No
+35	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0007
+# text = Segundo Ray, o trabalho que está sendo executado neste momento irá "mudar a natureza da humanidade".
+1	Segundo	segundo	ADP	_	_	2	case	2:case	_
+2	Ray	Ray	PROPN	_	_	15	obl	15:obl:segundo	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	9:nsubj:pass|15:nsubj	_
+6	que	que	PRON	_	PronType=Rel	9	nsubj:pass	5:ref	_
+7	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux	9:aux	_
+8	sendo	ser	AUX	_	VerbForm=Ger	9	aux:pass	9:aux:pass	_
+9	executado	executar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	5	acl:relcl	5:acl:relcl	_
+10-11	neste	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	12	det	12:det	_
+12	momento	momento	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:em	_
+13	irá	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	15	aux	15:aux	_
+14	"	"	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+15	mudar	mudar	VERB	_	VerbForm=Inf	0	root	0:root	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	natureza	natureza	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	_
+18-19	da	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	humanidade	humanidade	NOUN	_	Gender=Fem|Number=Sing	17	nmod	17:nmod:de	SpaceAfter=No
+21	"	"	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+22	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0009
+# text = Nos tempos atuais, a Inteligência Artificial está limitada apenas a assistentes de voz, que aprendem com os humanos.
+1-2	Nos	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	3:det	_
+3	tempos	tempo	NOUN	_	Gender=Masc|Number=Plur	10	obl	10:obl:em	_
+4	atuais	atual	ADJ	_	Number=Plur	3	amod	3:amod	SpaceAfter=No
+5	,	,	PUNCT	_	_	3	punct	3:punct	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	Inteligência	Inteligência	PROPN	_	_	10	nsubj	10:nsubj	_
+8	Artificial	Artificial	PROPN	_	_	7	flat:name	7:flat:name	_
+9	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_
+10	limitada	limitado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	0	root	0:root	_
+11	apenas	apenas	ADV	_	_	13	advmod	13:advmod	_
+12	a	a	ADP	_	_	13	case	13:case	_
+13	assistentes	assistente	NOUN	_	Number=Plur	10	obl	10:obl:a|18:nsubj	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	voz	voz	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:de	SpaceAfter=No
+16	,	,	PUNCT	_	_	18	punct	18:punct	_
+17	que	que	PRON	_	PronType=Rel	18	nsubj	13:ref	_
+18	aprendem	aprender	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	acl:relcl	13:acl:relcl	_
+19	com	com	ADP	_	_	21	case	21:case	_
+20	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	21:det	_
+21	humanos	humano	NOUN	_	Gender=Masc|Number=Plur	18	obl	18:obl:com	SpaceAfter=No
+22	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0011
+# text = Um futuro próximo prevê que a IA Geral (na qual robôs e humanos serão iguais) as máquinas serão mais inteligentes e mais fortes que os seres humanos [...] o que antes era roteiro de filme de ficção se transformará em realidade.
+1	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	futuro	futuro	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+3	próximo	próximo	ADJ	_	Gender=Masc|Number=Sing	2	amod	2:amod	_
+4	prevê	prever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	que	que	SCONJ	_	_	23	mark	23:mark|26:mark	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	IA	IA	PROPN	_	_	23	nsubj	17:obl:em|23:nsubj|26:nsubj	_
+8	Geral	Geral	PROPN	_	_	7	flat:name	7:flat:name	_
+9	(	(	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+10-11	na	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	11	case	11:case	_
+11	a	o	PRON	_	ExtPos=PRON|Gender=Fem|Number=Sing|Person=3|PronType=Dem	17	obl	7:ref|17:obl	_
+12	qual	qual	PRON	_	Number=Sing|PronType=Rel	11	fixed	11:fixed	_
+13	robôs	robô	NOUN	_	Gender=Masc|Number=Plur	17	nsubj	17:nsubj	_
+14	e	e	CCONJ	_	_	15	cc	15:cc	_
+15	humanos	humano	NOUN	_	Gender=Masc|Number=Plur	13	conj	13:conj:e|17:nsubj	_
+16	serão	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	17	cop	17:cop	_
+17	iguais	igual	ADJ	_	Number=Plur	7	acl:relcl	7:acl:relcl	SpaceAfter=No
+18	)	)	PUNCT	_	_	17	punct	17:punct	_
+19	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	20:det	_
+20	máquinas	máquina	NOUN	_	Gender=Fem|Number=Plur	23	nsubj	23:nsubj|26:nsubj	_
+21	serão	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	23	cop	23:cop|26:cop	_
+22	mais	mais	ADV	_	_	23	advmod	23:advmod	_
+23	inteligentes	inteligente	ADJ	_	Number=Plur	4	ccomp	4:ccomp	_
+24	e	e	CCONJ	_	_	26	cc	26:cc	_
+25	mais	mais	ADV	_	_	26	advmod	26:advmod	_
+26	fortes	forte	ADJ	_	Number=Plur	23	conj	4:ccomp|23:conj:e	_
+27	que	que	SCONJ	_	_	29	mark	29:mark	_
+28	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	29:det	_
+29	seres	ser	NOUN	_	Gender=Masc|Number=Plur	26	advcl	26:advcl:que	_
+30	humanos	humano	ADJ	_	Gender=Masc|Number=Plur	29	amod	29:amod	_
+31	[	[	PUNCT	_	_	32	punct	32:punct	SpaceAfter=No
+32	.	.	PUNCT	_	_	23	parataxis	23:parataxis	SpaceAfter=No
+33	..	..	PUNCT	_	_	32	punct	32:punct	SpaceAfter=No
+34	]	]	PUNCT	_	_	32	punct	32:punct	_
+35	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	45	nsubj	39:nsubj|45:nsubj	_
+36	que	que	PRON	_	PronType=Rel	39	nsubj	35:ref	_
+37	antes	antes	ADV	_	_	39	advmod	39:advmod	_
+38	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	39	cop	39:cop	_
+39	roteiro	roteiro	NOUN	_	Gender=Masc|Number=Sing	35	acl:relcl	35:acl:relcl	_
+40	de	de	ADP	_	_	41	case	41:case	_
+41	filme	filme	NOUN	_	Gender=Masc|Number=Sing	39	nmod	39:nmod:de	_
+42	de	de	ADP	_	_	43	case	43:case	_
+43	ficção	ficção	NOUN	_	Gender=Fem|Number=Sing	41	nmod	41:nmod:de	_
+44	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	45	expl	45:expl	_
+45	transformará	transformar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	ccomp	4:ccomp	_
+46	em	em	ADP	_	_	47	case	47:case	_
+47	realidade	realidade	NOUN	_	Gender=Fem|Number=Sing	45	obl	45:obl:em	SpaceAfter=No
+48	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0013
+# text = Usuários de sistemas operacionais poderão fazer o "upload de sua própria consciência" até o ano de 2029.
+1	Usuários	usuário	NOUN	_	Gender=Masc|Number=Plur	5	nsubj	5:nsubj|6:nsubj	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	1	nmod	1:nmod:de	_
+4	operacionais	operacional	ADJ	_	Number=Plur	3	amod	3:amod	_
+5	poderão	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+6	fazer	fazer	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+8	"	"	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+9	upload	upload	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+10	de	de	ADP	_	_	13	case	13:case	_
+11	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	13	det	13:det	_
+12	própria	próprio	DET	_	Gender=Fem|Number=Sing|PronType=Dem	13	amod	13:amod	_
+13	consciência	consciência	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:de	SpaceAfter=No
+14	"	"	PUNCT	_	_	9	punct	9:punct	_
+15	até	até	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	ano	ano	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:até	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	2029	2029	NUM	_	NumType=Card	17	nmod	17:nmod:de	SpaceAfter=No
+20	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0015
+# text = Máquinas serão tão poderosas (ou mais) quanto o cérebro humano e a evolução continuará em um ritmo frenético.
+1	Máquinas	máquina	NOUN	_	Gender=Fem|Number=Plur	4	nsubj	4:nsubj|7:nsubj	_
+2	serão	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	4	cop	4:cop|7:cop	_
+3	tão	tão	ADV	_	_	4	advmod	4:advmod	_
+4	poderosas	poderoso	ADJ	_	Gender=Fem|Number=Plur	0	root	0:root	_
+5	(	(	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+6	ou	ou	CCONJ	_	_	7	cc	7:cc	_
+7	mais	mais	ADV	_	_	4	conj	4:conj:ou	SpaceAfter=No
+8	)	)	PUNCT	_	_	11	punct	11:punct	_
+9	quanto	quanto	SCONJ	_	_	11	mark	11:mark	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	cérebro	cérebro	NOUN	_	Gender=Masc|Number=Sing	4	advcl	4:advcl:quanto|7:advcl:quanto	_
+12	humano	humano	ADJ	_	Gender=Masc|Number=Sing	11	amod	11:amod	_
+13	e	e	CCONJ	_	_	16	cc	16:cc	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	evolução	evolução	NOUN	_	Gender=Fem|Number=Sing	16	nsubj	16:nsubj	_
+16	continuará	continuar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	conj	4:conj:e	_
+17	em	em	ADP	_	_	19	case	19:case	_
+18	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	ritmo	ritmo	NOUN	_	Gender=Masc|Number=Sing	16	obl	16:obl:em	_
+20	frenético	frenético	ADJ	_	Gender=Masc|Number=Sing	19	amod	19:amod	SpaceAfter=No
+21	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0017
+# text = De acordo com o Google, a SIA (Super Inteligência Artificial) deverá surgir a partir de 2045.
+1	De	de	ADP	_	_	2	case	2:case	_
+2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:de	_
+3	com	com	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	Google	Google	PROPN	_	_	2	nmod	2:nmod:com	SpaceAfter=No
+6	,	,	PUNCT	_	_	2	punct	2:punct	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	SIA	SIA	PROPN	_	_	14	nsubj	14:nsubj|15:nsubj	_
+9	(	(	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+10	Super	Super	PROPN	_	_	8	appos	8:appos	_
+11	Inteligência	Inteligência	PROPN	_	_	10	flat:name	10:flat:name	_
+12	Artificial	Artificial	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+13	)	)	PUNCT	_	_	10	punct	10:punct	_
+14	deverá	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+15	surgir	surgir	VERB	_	VerbForm=Inf	14	xcomp	14:xcomp	_
+16	a	a	ADP	_	_	17	mark	17:mark	_
+17	partir	partir	VERB	_	VerbForm=Inf	15	advcl	15:advcl:a	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	2045	2045	NUM	_	NumType=Card	17	obl	17:obl:de	SpaceAfter=No
+20	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0019
+# text = Diversas teorias sobre o que isso poderá significar já foram divulgadas e algumas são assustadoras.
+1	Diversas	diversos	DET	_	Gender=Fem|Number=Plur|PronType=Dem	2	det	2:det	_
+2	teorias	teoria	NOUN	_	Gender=Fem|Number=Plur	11	nsubj:pass	11:nsubj:pass	_
+3	sobre	sobre	ADP	_	_	7	mark	7:mark	_
+4	o	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	2	nmod	2:nmod	_
+5	que	que	PRON	_	PronType=Int	4	fixed	4:fixed	_
+6	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	7	nsubj	7:nsubj|8:nsubj	_
+7	poderá	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+8	significar	significar	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+9	já	já	ADV	_	_	11	advmod	11:advmod	_
+10	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	11	aux:pass	11:aux:pass	_
+11	divulgadas	divulgar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	_
+12	e	e	CCONJ	_	_	15	cc	15:cc	_
+13	algumas	algum	PRON	_	Gender=Fem|Number=Plur|PronType=Ind	15	nsubj	15:nsubj	_
+14	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	cop	15:cop	_
+15	assustadoras	assustador	ADJ	_	Gender=Fem|Number=Plur	11	conj	11:conj:e	SpaceAfter=No
+16	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0021
+# text = "Estamos projetando nossa própria desilusão [...] quando a inteligência artificial atingir a maturidade, estaremos decretando o fim da vida", disse o filósofo Slavoj Zizek.
+1	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	Estamos	estar	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	aux	3:aux	_
+3	projetando	projetar	VERB	_	VerbForm=Ger	28	ccomp:speech	28:ccomp:speech	_
+4	nossa	nosso	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	6	det	6:det	_
+5	própria	próprio	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	_
+6	desilusão	desilusão	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+7	[	[	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	.	.	PUNCT	_	_	20	parataxis	20:parataxis	SpaceAfter=No
+9	..	..	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+10	]	]	PUNCT	_	_	8	punct	8:punct	_
+11	quando	quando	SCONJ	_	_	15	mark	15:mark	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	inteligência	inteligência	NOUN	_	Gender=Fem|Number=Sing	15	nsubj	15:nsubj	_
+14	artificial	artificial	ADJ	_	Number=Sing	13	amod	13:amod	_
+15	atingir	atingir	VERB	_	Number=Sing|Person=3|VerbForm=Inf	20	advcl	20:advcl:quando	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	maturidade	maturidade	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	SpaceAfter=No
+18	,	,	PUNCT	_	_	15	punct	15:punct	_
+19	estaremos	estar	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	20	aux	20:aux	_
+20	decretando	decretar	VERB	_	VerbForm=Ger	3	parataxis	3:parataxis	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	fim	fim	NOUN	_	Gender=Masc|Number=Sing	20	obj	20:obj	_
+23-24	da	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	vida	vida	NOUN	_	Gender=Fem|Number=Sing	22	nmod	22:nmod:de	SpaceAfter=No
+26	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+27	,	,	PUNCT	_	_	3	punct	3:punct	_
+28	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	30:det	_
+30	filósofo	filósofo	NOUN	_	Gender=Masc|Number=Sing	28	nsubj	28:nsubj	_
+31	Slavoj	Slavoj	PROPN	_	_	30	nmod	30:nmod	_
+32	Zizek	Zizek	PROPN	_	_	31	flat:name	31:flat:name	SpaceAfter=No
+33	.	.	PUNCT	_	_	28	punct	28:punct	_
+
+# sent_id = S0023
+# text = O conceito de ser humano irá mudar.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	conceito	conceito	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	ser	ser	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	_
+5	humano	humano	ADJ	_	Gender=Masc|Number=Sing	4	amod	4:amod	_
+6	irá	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	7	aux	7:aux	_
+7	mudar	mudar	VERB	_	VerbForm=Inf	0	root	0:root	SpaceAfter=No
+8	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0025
+# text = Sabemos que a tecnologia não se sustenta sozinha, mas ela destruirá a definição de relacionamentos e família.
+1	Sabemos	saber	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	que	que	SCONJ	_	_	7	mark	7:mark	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	tecnologia	tecnologia	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj	_
+5	não	não	ADV	_	_	7	advmod	7:advmod	_
+6	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	7	expl	7:expl	_
+7	sustenta	sustentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	1:ccomp	_
+8	sozinha	sozinho	ADJ	_	Gender=Fem|Number=Sing	7	advcl	7:advcl	SpaceAfter=No
+9	,	,	PUNCT	_	_	12	punct	12:punct	_
+10	mas	mas	CCONJ	_	_	12	cc	12:cc	_
+11	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	12	nsubj	12:nsubj	_
+12	destruirá	destruir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	1	conj	1:conj:mas	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	definição	definição	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+15	de	de	ADP	_	_	16	case	16:case|18:case	_
+16	relacionamentos	relacionamento	NOUN	_	Gender=Masc|Number=Plur	14	nmod	14:nmod:de	_
+17	e	e	CCONJ	_	_	18	cc	18:cc	_
+18	família	família	NOUN	_	Gender=Fem|Number=Sing	16	conj	14:nmod:de|16:conj:e	SpaceAfter=No
+19	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0027
+# text = O conceito de certo e errado não mais existirá.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	conceito	conceito	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	9:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	certo	certo	ADJ	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	errado	errado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	4	conj	2:amod|4:conj:e	_
+7	não	não	ADV	_	_	9	advmod	9:advmod	_
+8	mais	mais	ADV	_	_	9	advmod	9:advmod	_
+9	existirá	existir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+10	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0029
+# text = O mundo se tornará uma bagunça generalizada comandada por máquinas.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj|6:nsubj	_
+3	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	4	expl	4:expl	_
+4	tornará	tornar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	bagunça	bagunça	NOUN	_	Gender=Fem|Number=Sing	4	xcomp	4:xcomp	_
+7	generalizada	generalizado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	6	amod	6:amod	_
+8	comandada	comandar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	6	acl	6:acl	_
+9	por	por	ADP	_	_	10	case	10:case	_
+10	máquinas	máquina	NOUN	_	Gender=Fem|Number=Plur	8	obl:agent	8:obl:agent	SpaceAfter=No
+11	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0031
+# text = Os seres humanos trairão uns aos outros e se odiarão mutuamente [...] basta ver o que as redes sociais já estão promovendo nos dias de hoje., complementou.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	seres	ser	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	4:nsubj|11:nsubj	_
+3	humanos	humano	ADJ	_	Gender=Masc|Number=Plur	2	amod	2:amod	_
+4	trairão	trair	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	34	ccomp:speech	34:ccomp:speech	_
+5	uns	um	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	4	obj	4:obj	_
+6-7	aos	_	_	_	_	_	_	_	_
+6	a	a	ADP	_	_	8	case	8:case	_
+7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	8:det	_
+8	outros	outro	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	5	nmod	5:nmod:a	_
+9	e	e	CCONJ	_	_	11	cc	11:cc	_
+10	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	11	expl	11:expl	_
+11	odiarão	odiar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	4	conj	4:conj:e|34:ccomp:speech	_
+12	mutuamente	mutuamente	ADV	_	_	11	advmod	11:advmod	_
+13	[	[	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+14	.	.	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+15	..	..	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+16	]	]	PUNCT	_	_	14	punct	14:punct	_
+17	basta	bastar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	parataxis	4:parataxis	_
+18	ver	ver	VERB	_	VerbForm=Inf	17	csubj	17:csubj	_
+19	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	18	obj	18:obj|26:obj	_
+20	que	que	PRON	_	PronType=Rel	26	obj	19:ref	_
+21	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	22:det	_
+22	redes	rede	NOUN	_	Gender=Fem|Number=Plur	26	nsubj	26:nsubj	_
+23	sociais	social	ADJ	_	Number=Plur	22	amod	22:amod	_
+24	já	já	ADV	_	_	26	advmod	26:advmod	_
+25	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	26	aux	26:aux	_
+26	promovendo	promover	VERB	_	VerbForm=Ger	19	acl:relcl	19:acl:relcl	_
+27-28	nos	_	_	_	_	_	_	_	_
+27	em	em	ADP	_	_	29	case	29:case	_
+28	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	29:det	_
+29	dias	dia	NOUN	_	Gender=Masc|Number=Plur	26	obl	26:obl:em	_
+30	de	de	ADP	_	_	31	case	31:case	_
+31	hoje	hoje	ADV	_	_	29	nmod	29:nmod:de	SpaceAfter=No
+32	.	.	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+33	,	,	PUNCT	_	_	4	punct	4:punct	_
+34	complementou	complementar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+35	.	.	PUNCT	_	_	34	punct	34:punct	_
+
+# sent_id = S0033
+# text = A sociedade precisará se equiparar à tecnologia [...] caso isso não aconteça, nos tornaremos uma sociedade humana irrelevante e inútil.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	sociedade	sociedade	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj|5:nsubj	_
+3	precisará	precisar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+4	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	5	expl	5:expl	_
+5	equiparar	equiparar	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+6-7	à	_	_	_	_	_	_	_	_
+6	a	a	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	tecnologia	tecnologia	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:a	_
+9	[	[	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+10	.	.	PUNCT	_	_	19	parataxis	19:parataxis	SpaceAfter=No
+11	..	..	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+12	]	]	PUNCT	_	_	16	punct	16:punct	_
+13	caso	caso	SCONJ	_	_	16	mark	16:mark	_
+14	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	16	nsubj	16:nsubj	_
+15	não	não	ADV	_	_	16	advmod	16:advmod	_
+16	aconteça	acontecer	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	advcl	19:advcl:caso	SpaceAfter=No
+17	,	,	PUNCT	_	_	16	punct	16:punct	_
+18	nos	nos	PRON	_	Case=Acc|Number=Plur|Person=1|PronType=Prs	19	expl	19:expl	_
+19	tornaremos	tornar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	3	conj	3:conj	_
+20	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	sociedade	sociedade	NOUN	_	Gender=Fem|Number=Sing	19	xcomp	19:xcomp	_
+22	humana	humano	ADJ	_	Gender=Fem|Number=Sing	21	amod	21:amod	_
+23	irrelevante	irrelevante	ADJ	_	Number=Sing	21	amod	21:amod	_
+24	e	e	CCONJ	_	_	25	cc	25:cc	_
+25	inútil	inútil	ADJ	_	Number=Sing	23	conj	21:amod|23:conj:e	SpaceAfter=No
+26	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0035
+# text = Stephen Hawking, um dos cientistas mais brilhantes de todos os tempos, diz que não é otimista em relação ao futuro da humanidade: A inteligência artificial que temos até agora é relativamente inofensiva [...] como um computador que vence um humano num jogo de xadrez, por exemplo.
+1	Stephen	Stephen	PROPN	_	_	15	nsubj	15:nsubj	_
+2	Hawking	Hawking	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	um	um	NUM	_	Gender=Masc|NumType=Card	1	appos	1:appos	_
+5-6	dos	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	7:det	_
+7	cientistas	cientista	NOUN	_	Number=Plur	4	nmod	4:nmod:de	_
+8	mais	mais	ADV	_	_	9	advmod	9:advmod	_
+9	brilhantes	brilhante	ADJ	_	Number=Plur	7	amod	7:amod	_
+10	de	de	ADP	_	_	13	case	13:case	_
+11	todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Ind	13	det	13:det	_
+12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	13:det	_
+13	tempos	tempo	NOUN	_	Gender=Masc|Number=Plur	7	nmod	7:nmod:de	SpaceAfter=No
+14	,	,	PUNCT	_	_	4	punct	4:punct	_
+15	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+16	que	que	SCONJ	_	_	19	mark	19:mark	_
+17	não	não	ADV	_	_	19	advmod	19:advmod	_
+18	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	cop	19:cop	_
+19	otimista	otimista	ADJ	_	Number=Sing	15	ccomp	15:ccomp	_
+20	em	em	ADP	_	_	21	case	21:case	_
+21	relação	relação	NOUN	_	Gender=Fem|Number=Sing	19	obl	19:obl:em	_
+22-23	ao	_	_	_	_	_	_	_	_
+22	a	a	ADP	_	_	24	case	24:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	futuro	futuro	NOUN	_	Gender=Masc|Number=Sing	21	nmod	21:nmod:a	_
+25-26	da	_	_	_	_	_	_	_	_
+25	de	de	ADP	_	_	27	case	27:case	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	humanidade	humanidade	NOUN	_	Gender=Fem|Number=Sing	24	nmod	24:nmod:de	SpaceAfter=No
+28	:	:	PUNCT	_	_	38	punct	38:punct	_
+29	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	inteligência	inteligência	NOUN	_	Gender=Fem|Number=Sing	38	nsubj	33:obj|38:nsubj	_
+31	artificial	artificial	ADJ	_	Number=Sing	30	amod	30:amod	_
+32	que	que	PRON	_	PronType=Rel	33	obj	30:ref	_
+33	temos	ter	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	30	acl:relcl	30:acl:relcl	_
+34	até	até	ADP	_	_	35	case	35:case	_
+35	agora	agora	ADV	_	_	33	advmod	33:advmod	_
+36	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	38	cop	38:cop	_
+37	relativamente	relativamente	ADV	_	_	38	advmod	38:advmod	_
+38	inofensiva	inofensivo	ADJ	_	Gender=Fem|Number=Sing	15	ccomp	15:ccomp	_
+39	[	[	PUNCT	_	_	40	punct	40:punct	SpaceAfter=No
+40	.	.	PUNCT	_	_	38	parataxis	38:parataxis	SpaceAfter=No
+41	..	..	PUNCT	_	_	40	punct	40:punct	SpaceAfter=No
+42	]	]	PUNCT	_	_	40	punct	40:punct	_
+43	como	como	ADP	_	_	45	case	45:case	_
+44	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	45	det	45:det	_
+45	computador	computador	NOUN	_	Gender=Masc|Number=Sing	38	obl	38:obl:como|47:nsubj	_
+46	que	que	PRON	_	PronType=Rel	47	nsubj	45:ref	_
+47	vence	vencer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	45	acl:relcl	45:acl:relcl	_
+48	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	49	det	49:det	_
+49	humano	humano	NOUN	_	Gender=Masc|Number=Sing	47	obj	47:obj	_
+50-51	num	_	_	_	_	_	_	_	_
+50	em	em	ADP	_	_	52	case	52:case	_
+51	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	52	det	52:det	_
+52	jogo	jogo	NOUN	_	Gender=Masc|Number=Sing	47	obl	47:obl:em	_
+53	de	de	ADP	_	_	54	case	54:case	_
+54	xadrez	xadrez	NOUN	_	_	52	nmod	52:nmod:de	SpaceAfter=No
+55	,	,	PUNCT	_	_	57	punct	57:punct	_
+56	por	por	ADP	_	_	57	case	57:case	_
+57	exemplo	exemplo	NOUN	_	Gender=Masc|Number=Sing	47	obl	47:obl:por	SpaceAfter=No
+58	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0037
+# text = Com o desenvolvimento da A.I., não há como prever como ela irá se organizar.
+1	Com	com	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	desenvolvimento	desenvolvimento	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:com	_
+4-5	da	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	A.I	A.I	PROPN	_	_	3	nmod	3:nmod:de	SpaceAfter=No
+7	.	.	PROPN	_	_	6	flat:name	6:flat:name	SpaceAfter=No
+8	,	,	PUNCT	_	_	3	punct	3:punct	_
+9	não	não	ADV	_	_	10	advmod	10:advmod	_
+10	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+11	como	como	ADV	_	_	12	advmod	12:advmod	_
+12	prever	prever	VERB	_	VerbForm=Inf	10	ccomp	10:ccomp	_
+13	como	como	ADV	_	_	17	advmod	17:advmod	_
+14	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	17	nsubj	17:nsubj	_
+15	irá	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	17	aux	17:aux	_
+16	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	17	expl	17:expl	_
+17	organizar	organizar	VERB	_	VerbForm=Inf	12	ccomp	12:ccomp	SpaceAfter=No
+18	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0039
+# text = A tecnologia poderá ser mais inteligente que os mercados financeiros e inventará mais que os pesquisadores humanos, manipulará líderes e criará armas de destruição em massa que sequer entenderemos.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	tecnologia	tecnologia	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj|6:nsubj|12:nsubj|19:nsubj|22:nsubj	_
+3	poderá	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+4	ser	ser	AUX	_	VerbForm=Inf	6	cop	6:cop	_
+5	mais	mais	ADV	_	_	6	advmod	6:advmod	_
+6	inteligente	inteligente	ADJ	_	Number=Sing	3	xcomp	3:xcomp	_
+7	que	que	SCONJ	_	_	9	mark	9:mark	_
+8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	9:det	_
+9	mercados	mercado	NOUN	_	Gender=Masc|Number=Plur	6	advcl	6:advcl:que	_
+10	financeiros	financeiro	ADJ	_	Gender=Masc|Number=Plur	9	amod	9:amod	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	inventará	inventar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	conj	3:conj:e	_
+13	mais	mais	ADV	_	_	12	advmod	12:advmod	_
+14	que	que	SCONJ	_	_	16	mark	16:mark	_
+15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	16:det	_
+16	pesquisadores	pesquisador	NOUN	_	Gender=Masc|Number=Plur	12	advcl	12:advcl:que	_
+17	humanos	humano	ADJ	_	Gender=Masc|Number=Plur	16	amod	16:amod	SpaceAfter=No
+18	,	,	PUNCT	_	_	19	punct	19:punct	_
+19	manipulará	manipular	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	12	conj	12:conj:e	_
+20	líderes	líder	NOUN	_	Gender=Masc|Number=Plur	19	obj	19:obj	_
+21	e	e	CCONJ	_	_	22	cc	22:cc	_
+22	criará	criar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	12	conj	12:conj:e	_
+23	armas	arma	NOUN	_	Gender=Fem|Number=Plur	22	obj	22:obj|30:obj	_
+24	de	de	ADP	_	_	25	case	25:case	_
+25	destruição	destruição	NOUN	_	Gender=Fem|Number=Sing	23	nmod	23:nmod:de	_
+26	em	em	ADP	_	_	27	case	27:case	_
+27	massa	massa	NOUN	_	Gender=Fem|Number=Sing	25	nmod	25:nmod:em	_
+28	que	que	PRON	_	PronType=Rel	30	obj	23:ref	_
+29	sequer	sequer	ADV	_	_	30	advmod	30:advmod	_
+30	entenderemos	entender	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	23	acl:relcl	23:acl:relcl	SpaceAfter=No
+31	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0041
+# text = Uma outra teoria garante que, se conseguirmos fazer o upload de nossa consciência, não será mais necessário possuir um corpo físico [...] máquinas terão consciência e os seres humanos serão meros coadjuvantes.
+1	Uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+2	outra	outro	DET	_	Gender=Fem|Number=Sing|PronType=Ind	3	det	3:det	_
+3	teoria	teoria	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+4	garante	garantir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	que	que	SCONJ	_	_	19	mark	19:mark	SpaceAfter=No
+6	,	,	PUNCT	_	_	8	punct	8:punct	_
+7	se	se	SCONJ	_	_	8	mark	8:mark	_
+8	conseguirmos	conseguir	VERB	_	Mood=Sub|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	19	advcl	19:advcl:se	_
+9	fazer	fazer	VERB	_	VerbForm=Inf	8	xcomp	8:xcomp	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	upload	upload	NOUN	_	Gender=Masc|Number=Sing	9	obj	9:obj	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	nossa	nosso	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	14	det	14:det	_
+14	consciência	consciência	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:de	SpaceAfter=No
+15	,	,	PUNCT	_	_	8	punct	8:punct	_
+16	não	não	ADV	_	_	19	advmod	19:advmod	_
+17	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	19	cop	19:cop	_
+18	mais	mais	ADV	_	_	19	advmod	19:advmod	_
+19	necessário	necessário	ADJ	_	Gender=Masc|Number=Sing	4	ccomp	4:ccomp	_
+20	possuir	possuir	VERB	_	VerbForm=Inf	19	csubj	19:csubj	_
+21	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	corpo	corpo	NOUN	_	Gender=Masc|Number=Sing	20	obj	20:obj	_
+23	físico	físico	ADJ	_	Gender=Masc|Number=Sing	22	amod	22:amod	_
+24	[	[	PUNCT	_	_	25	punct	25:punct	SpaceAfter=No
+25	.	.	PUNCT	_	_	29	parataxis	29:parataxis|37:parataxis	SpaceAfter=No
+26	..	..	PUNCT	_	_	25	punct	25:punct	SpaceAfter=No
+27	]	]	PUNCT	_	_	25	punct	25:punct	_
+28	máquinas	máquina	NOUN	_	Gender=Fem|Number=Plur	29	nsubj	29:nsubj	_
+29	terão	ter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	4	ccomp	4:ccomp	_
+30	consciência	consciência	NOUN	_	Gender=Fem|Number=Sing	29	obj	29:obj	_
+31	e	e	CCONJ	_	_	37	cc	37:cc	_
+32	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	33	det	33:det	_
+33	seres	ser	NOUN	_	Gender=Masc|Number=Plur	37	nsubj	37:nsubj	_
+34	humanos	humano	ADJ	_	Gender=Masc|Number=Plur	33	amod	33:amod	_
+35	serão	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	37	cop	37:cop	_
+36	meros	mero	ADJ	_	Gender=Masc|Number=Plur	37	amod	37:amod	_
+37	coadjuvantes	coadjuvante	NOUN	_	Number=Plur	29	conj	4:ccomp|29:conj:e	SpaceAfter=No
+38	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0043
+# text = A humanidade ficará para trás enquanto e a IA infinita irá explorar a Terra e o Universo sem que haja a necessidade da intervenção humana.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	humanidade	humanidade	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_
+3	ficará	ficar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+4	para	para	ADP	_	_	5	case	5:case	_
+5	trás	trás	ADV	_	_	3	advmod	3:advmod	_
+6	enquanto	enquanto	SCONJ	_	_	12	advmod	12:advmod	_
+7	e	e	CCONJ	_	_	12	cc	12:cc	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	IA	IA	PROPN	_	_	12	nsubj	12:nsubj	_
+10	infinita	infinito	ADJ	_	Gender=Fem|Number=Sing	9	amod	9:amod	_
+11	irá	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	12	aux	12:aux	_
+12	explorar	explorar	VERB	_	VerbForm=Inf	3	conj	3:conj:e	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	Terra	Terra	PROPN	_	_	12	obj	12:obj	_
+15	e	e	CCONJ	_	_	17	cc	17:cc	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	Universo	Universo	PROPN	_	_	14	conj	12:obj|14:conj:e	_
+18	sem	sem	ADP	_	ExtPos=SCONJ	20	mark	20:mark	_
+19	que	que	SCONJ	_	_	18	fixed	18:fixed	_
+20	haja	haver	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	advcl	12:advcl:sem_que	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	necessidade	necessidade	NOUN	_	Gender=Fem|Number=Sing	20	obj	20:obj	_
+23-24	da	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	intervenção	intervenção	NOUN	_	Gender=Fem|Number=Sing	22	nmod	22:nmod:de	_
+26	humana	humano	ADJ	_	Gender=Fem|Number=Sing	25	amod	25:amod	SpaceAfter=No
+27	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0045
+# text = Uma teoria alternativa (e mais assustadora) prevê que as máquinas perceberão a natureza destrutiva dos seres humanos e farão de tudo para garantir sua sobrevivência.
+1	Uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	teoria	teoria	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	9:nsubj	_
+3	alternativa	alternativo	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	_
+4	(	(	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+5	e	e	CCONJ	_	_	7	cc	7:cc	_
+6	mais	mais	ADV	_	_	7	advmod	7:advmod	_
+7	assustadora	assustador	ADJ	_	Gender=Fem|Number=Sing	2	conj	2:conj:e|9:nsubj	SpaceAfter=No
+8	)	)	PUNCT	_	_	7	punct	7:punct	_
+9	prevê	prever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+10	que	que	SCONJ	_	_	13	mark	13:mark|22:mark	_
+11	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	12:det	_
+12	máquinas	máquina	NOUN	_	Gender=Fem|Number=Plur	13	nsubj	13:nsubj|22:nsubj	_
+13	perceberão	perceber	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	9	ccomp	9:ccomp	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	natureza	natureza	NOUN	_	Gender=Fem|Number=Sing	13	obj	13:obj	_
+16	destrutiva	destrutivo	ADJ	_	Gender=Fem|Number=Sing	15	amod	15:amod	_
+17-18	dos	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	19:det	_
+19	seres	ser	NOUN	_	Gender=Masc|Number=Plur	15	nmod	15:nmod:de	_
+20	humanos	humano	ADJ	_	Gender=Masc|Number=Plur	19	amod	19:amod	_
+21	e	e	CCONJ	_	_	22	cc	22:cc	_
+22	farão	far	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	13	conj	9:ccomp|13:conj:e	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	tudo	tudo	PRON	_	PronType=Ind	22	obl	22:obl:de	_
+25	para	para	ADP	_	_	26	mark	26:mark	_
+26	garantir	garantir	VERB	_	VerbForm=Inf	22	advcl	22:advcl:para	_
+27	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	28	det	28:det	_
+28	sobrevivência	sobrevivência	NOUN	_	Gender=Fem|Number=Sing	26	obj	26:obj	SpaceAfter=No
+29	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0047
+# text = O resultado?
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	resultado	resultado	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+3	?	?	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0049
+# text = Haverá um "extermínio em massa" da vida humana [...] isso poderá acontecer porque nós (seres humanos) temos um DNA de destruição que as máquinas não têm.
+1	Haverá	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+2	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+3	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+4	extermínio	extermínio	NOUN	_	Gender=Masc|Number=Sing	1	obj	1:obj	_
+5	em	em	ADP	_	_	6	case	6:case	_
+6	massa	massa	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:em	SpaceAfter=No
+7	"	"	PUNCT	_	_	4	punct	4:punct	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	vida	vida	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:de	_
+11	humana	humano	ADJ	_	Gender=Fem|Number=Sing	10	amod	10:amod	_
+12	[	[	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+13	.	.	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+14	..	..	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+15	]	]	PUNCT	_	_	22	punct	22:punct	_
+16	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	17	nsubj	17:nsubj|18:nsubj	_
+17	poderá	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	1	parataxis	1:parataxis	_
+18	acontecer	acontecer	VERB	_	VerbForm=Inf	17	xcomp	17:xcomp	_
+19	porque	porque	SCONJ	_	_	25	mark	25:mark	_
+20	nós	nós	PRON	_	Case=Nom|Number=Plur|Person=1|PronType=Prs	25	nsubj	25:nsubj	_
+21	(	(	PUNCT	_	_	22	punct	22:punct	SpaceAfter=No
+22	seres	ser	NOUN	_	Gender=Masc|Number=Plur	20	appos	20:appos	_
+23	humanos	humano	ADJ	_	Gender=Masc|Number=Plur	22	amod	22:amod	SpaceAfter=No
+24	)	)	PUNCT	_	_	22	punct	22:punct	_
+25	temos	ter	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	18	advcl	18:advcl:porque	_
+26	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	DNA	dna	NOUN	_	Gender=Masc|Number=Sing	25	obj	25:obj|34:obj	_
+28	de	de	ADP	_	_	29	case	29:case	_
+29	destruição	destruição	NOUN	_	Gender=Fem|Number=Sing	27	nmod	27:nmod:de	_
+30	que	que	PRON	_	PronType=Rel	34	obj	27:ref	_
+31	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	32	det	32:det	_
+32	máquinas	máquina	NOUN	_	Gender=Fem|Number=Plur	34	nsubj	34:nsubj	_
+33	não	não	ADV	_	_	34	advmod	34:advmod	_
+34	têm	ter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	27	acl:relcl	27:acl:relcl	SpaceAfter=No
+35	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0051
+# text = O ritmo de inovação e seu impacto na população está crescendo a passos largos.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	ritmo	ritmo	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	12:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	inovação	inovação	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+5	e	e	CCONJ	_	_	7	cc	7:cc	_
+6	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	7	det	7:det	_
+7	impacto	impacto	NOUN	_	Gender=Masc|Number=Sing	2	conj	2:conj:e|12:nsubj	_
+8-9	na	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	população	população	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:em	_
+11	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux	12:aux	_
+12	crescendo	crescer	VERB	_	VerbForm=Ger	0	root	0:root	_
+13	a	a	ADP	_	_	14	case	14:case	_
+14	passos	passo	NOUN	_	Gender=Masc|Number=Plur	12	obl	12:obl:a	_
+15	largos	largo	ADJ	_	Gender=Masc|Number=Plur	14	amod	14:amod	SpaceAfter=No
+16	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0053
+# text = Basta observar o efeito que o Facebook conseguiu em poucos anos de sua existência.
+1	Basta	bastar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	observar	observar	VERB	_	VerbForm=Inf	1	csubj	1:csubj	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	efeito	efeito	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj|8:obj	_
+5	que	que	PRON	_	PronType=Rel	8	obj	4:ref	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Facebook	Facebook	PROPN	_	_	8	nsubj	8:nsubj	_
+8	conseguiu	conseguir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	acl:relcl	4:acl:relcl	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	poucos	pouco	ADJ	_	Gender=Masc|Number=Plur	11	amod	11:amod	_
+11	anos	ano	NOUN	_	Gender=Masc|Number=Plur	8	obl	8:obl:em	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	14	det	14:det	_
+14	existência	existência	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:de	SpaceAfter=No
+15	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0055
+# text = Se uma simples rede social conseguiu mudar nossos hábitos, imagine o que poderá fazer uma máquina que pensa e age por si própria, disse a chefe global da empresa Accenture.
+1	Se	se	SCONJ	_	_	6	mark	6:mark	_
+2	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+3	simples	simples	ADJ	_	_	4	amod	4:amod	_
+4	rede	rede	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj|7:nsubj	_
+5	social	social	ADJ	_	Number=Sing	4	amod	4:amod	_
+6	conseguiu	conseguir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	advcl	11:advcl:se	_
+7	mudar	mudar	VERB	_	VerbForm=Inf	6	xcomp	6:xcomp	_
+8	nossos	nosso	DET	_	Gender=Masc|Number=Plur|Person=1|Poss=Yes|PronType=Prs	9	det	9:det	_
+9	hábitos	hábito	NOUN	_	Gender=Masc|Number=Plur	7	obj	7:obj	SpaceAfter=No
+10	,	,	PUNCT	_	_	6	punct	6:punct	_
+11	imagine	imaginar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	ccomp:speech	26:ccomp:speech	_
+12	o	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	14	obj	15:nsubj|15:obj	_
+13	que	que	PRON	_	PronType=Int	12	fixed	12:fixed	_
+14	poderá	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	11	ccomp	11:ccomp	_
+15	fazer	fazer	VERB	_	VerbForm=Inf	14	xcomp	14:xcomp	_
+16	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	máquina	máquina	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj|19:nsubj|21:nsubj	_
+18	que	que	PRON	_	PronType=Rel	19	nsubj	17:ref	_
+19	pensa	pensar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	acl:relcl	17:acl:relcl	_
+20	e	e	CCONJ	_	_	21	cc	21:cc	_
+21	age	agir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	conj	17:acl:relcl|19:conj:e	_
+22	por	por	ADP	_	_	23	case	23:case	_
+23	si	si	PRON	_	Case=Dat|Number=Sing|Person=3|PronType=Prs	19	obl	19:obl:por|21:obl:por	_
+24	própria	próprio	DET	_	Gender=Fem|Number=Sing|PronType=Dem	23	det	23:det	SpaceAfter=No
+25	,	,	PUNCT	_	_	11	punct	11:punct	_
+26	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	chefe	chefe	NOUN	_	Gender=Masc|Number=Sing	26	nsubj	26:nsubj	_
+29	global	global	ADJ	_	Number=Sing	28	amod	28:amod	_
+30-31	da	_	_	_	_	_	_	_	_
+30	de	de	ADP	_	_	32	case	32:case	_
+31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	32:det	_
+32	empresa	empresa	NOUN	_	Gender=Fem|Number=Sing	28	nmod	28:nmod:de	_
+33	Accenture	Accenture	PROPN	_	_	32	nmod	32:nmod	SpaceAfter=No
+34	.	.	PUNCT	_	_	26	punct	26:punct	_
+
+# sent_id = S0057
+# text = *** A palavra neo vem do grego, e quer dizer novo, atualizado ***.
+1	*	*	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+2	*	*	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+3	*	*	PUNCT	_	_	7	punct	7:punct	_
+4	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	palavra	palavra	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj|13:nsubj|14:nsubj	_
+6	neo	neo	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod	_
+7	vem	vir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	grego	grego	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:de	SpaceAfter=No
+11	,	,	PUNCT	_	_	13	punct	13:punct	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	quer	querer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	7:conj:e	_
+14	dizer	dizer	VERB	_	VerbForm=Inf	13	xcomp	13:xcomp	_
+15	novo	novo	ADJ	_	Gender=Masc|Number=Sing	14	obj	14:obj	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	atualizado	atualizado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	15	conj	14:obj|15:conj	_
+18	*	*	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+19	*	*	PUNCT	_	_	14	obl	14:obl	SpaceAfter=No
+20	*	*	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+21	.	.	PUNCT	_	_	7	punct	7:punct	_

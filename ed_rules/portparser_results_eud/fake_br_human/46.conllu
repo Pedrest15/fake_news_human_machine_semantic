@@ -1,0 +1,365 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Dilma e Jean Willys viraram professores em universidade federal.
+1	Dilma	Dilma	PROPN	_	_	5	nsubj	5:nsubj|6:nsubj	_
+2	e	e	CCONJ	_	_	3	cc	3:cc	_
+3	Jean	Jean	PROPN	_	_	1	conj	1:conj:e|5:nsubj|6:nsubj	_
+4	Willys	Willys	PROPN	_	_	3	flat:name	3:flat:name	_
+5	viraram	virar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	professores	professor	NOUN	_	Gender=Masc|Number=Plur	5	xcomp	5:xcomp	_
+7	em	em	ADP	_	_	8	case	8:case	_
+8	universidade	universidade	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:em	_
+9	federal	federal	ADJ	_	Number=Sing	8	amod	8:amod	SpaceAfter=No
+10	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0003
+# text = Você pagaria R$ 2.700,00 para fazer uma pós-graduação sobre a Esquerda no Brasil?
+1	Você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	2	nsubj	2:nsubj	_
+2	pagaria	pagar	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+3	R$	R$	SYM	_	_	2	obj	2:obj	_
+4	2.700,00	2.700,00	NUM	_	NumType=Card	3	nummod	3:nummod	_
+5	para	para	ADP	_	_	6	mark	6:mark	_
+6	fazer	fazer	VERB	_	VerbForm=Inf	2	advcl	2:advcl:para	_
+7	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	pós-graduação	pós-graduação	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+9	sobre	sobre	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	Esquerda	Esquerda	PROPN	_	_	8	nmod	8:nmod:sobre	_
+12-13	no	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	Brasil	Brasil	PROPN	_	_	8	nmod	8:nmod:em	SpaceAfter=No
+15	?	?	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = E se os professores fossem Dilma Rousseff, Jean Wyllys, Jandira Feghali e Leonardo Boff?
+1	E	e	CCONJ	_	_	6	cc	6:cc	_
+2	se	se	SCONJ	_	_	6	mark	6:mark|9:mark|12:mark|15:mark	_
+3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	4:det	_
+4	professores	professor	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	6:nsubj|9:nsubj|12:nsubj|15:nsubj	_
+5	fossem	fossem	AUX	_	Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	6	cop	6:cop|9:cop|12:cop|15:cop	_
+6	Dilma	Dilma	PROPN	_	_	0	root	0:root	_
+7	Rousseff	Rousseff	PROPN	_	_	6	flat:name	6:flat:name	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	Jean	Jean	PROPN	_	_	6	conj	6:conj:e	_
+10	Wyllys	Wyllys	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	Jandira	Jandira	PROPN	_	_	6	conj	6:conj:e	_
+13	Feghali	Feghali	PROPN	_	_	12	flat:name	12:flat:name	_
+14	e	e	CCONJ	_	_	15	cc	15:cc	_
+15	Leonardo	Leonardo	PROPN	_	_	6	conj	6:conj:e	_
+16	Boff	Boff	PROPN	_	_	15	flat:name	15:flat:name	SpaceAfter=No
+17	?	?	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0007
+# text = Saiba que este curso já está com fila de espera.
+1	Saiba	saber	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	que	que	SCONJ	_	_	8	mark	8:mark	_
+3	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	4	det	4:det	_
+4	curso	curso	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	8:nsubj	_
+5	já	já	ADV	_	_	8	advmod	8:advmod	_
+6	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop	_
+7	com	com	ADP	_	_	8	case	8:case	_
+8	fila	fila	NOUN	_	Number=Sing	1	ccomp	1:ccomp	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	espera	espera	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	SpaceAfter=No
+11	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0009
+# text = O deputado federal Pedro Uczai (PT-SC) anunciou o curso de pós-graduação A Esquerda no Século XXI, que pode ter Dilma Rousseff, Jean Wyllys e outras figuras políticas como professores de algumas disciplinas.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	9:nsubj	_
+3	federal	federal	ADJ	_	Number=Sing	2	amod	2:amod	_
+4	Pedro	Pedro	PROPN	_	_	2	nmod	2:nmod	_
+5	Uczai	Uczai	PROPN	_	_	4	flat:name	4:flat:name	_
+6	(	(	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+7	PT-SC	PT-SC	PROPN	_	_	2	parataxis	2:parataxis	SpaceAfter=No
+8	)	)	PUNCT	_	_	7	punct	7:punct	_
+9	anunciou	anunciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	curso	curso	NOUN	_	Gender=Masc|Number=Sing	9	obj	9:obj|22:nsubj|23:nsubj	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	pós-graduação	pós-graduação	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:de	_
+14	A	A	PROPN	_	_	13	nmod	13:nmod	_
+15	Esquerda	Esquerda	PROPN	_	_	14	flat:name	14:flat:name	_
+16-17	no	_	_	_	_	_	_	_	_
+16	em	em	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	Século	Século	PROPN	_	_	14	flat:name	14:flat:name	_
+19	XXI	XXI	PROPN	_	_	18	flat:name	18:flat:name	SpaceAfter=No
+20	,	,	PUNCT	_	_	22	punct	22:punct	_
+21	que	que	PRON	_	PronType=Rel	22	nsubj	11:ref	_
+22	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	11:acl:relcl	_
+23	ter	ter	VERB	_	VerbForm=Inf	22	xcomp	22:xcomp	_
+24	Dilma	Dilma	PROPN	_	_	23	obj	23:obj	_
+25	Rousseff	Rousseff	PROPN	_	_	24	flat:name	24:flat:name	SpaceAfter=No
+26	,	,	PUNCT	_	_	27	punct	27:punct	_
+27	Jean	Jean	PROPN	_	_	24	conj	23:obj|24:conj:e	_
+28	Wyllys	Wyllys	PROPN	_	_	27	flat:name	27:flat:name	_
+29	e	e	CCONJ	_	_	31	cc	31:cc	_
+30	outras	outro	DET	_	Gender=Fem|Number=Plur|PronType=Ind	31	det	31:det	_
+31	figuras	figura	NOUN	_	Gender=Fem|Number=Plur	24	conj	23:obj|24:conj:e	_
+32	políticas	político	ADJ	_	Gender=Fem|Number=Plur	31	amod	31:amod	_
+33	como	como	ADP	_	_	34	case	34:case	_
+34	professores	professor	NOUN	_	Gender=Masc|Number=Plur	23	obl	23:obl:como	_
+35	de	de	ADP	_	_	37	case	37:case	_
+36	algumas	algum	DET	_	Gender=Fem|Number=Plur|PronType=Ind	37	det	37:det	_
+37	disciplinas	disciplina	NOUN	_	Gender=Fem|Number=Plur	34	nmod	34:nmod:de	SpaceAfter=No
+38	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0011
+# text = Em períodos de crise, nós temos que parar para refletir, sistematizar, elaborar e compreender o momento histórico para nos instrumentalizar, projetar e construir o futuro, diz o deputado em um vídeo no qual divulga o curso.
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	períodos	período	NOUN	_	Gender=Masc|Number=Plur	7	obl	7:obl:em	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	crise	crise	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	SpaceAfter=No
+5	,	,	PUNCT	_	_	2	punct	2:punct	_
+6	nós	nós	PRON	_	Case=Nom|Number=Plur|Person=1|PronType=Prs	7	nsubj	7:nsubj|9:nsubj	_
+7	temos	ter	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	32	ccomp:speech	32:ccomp:speech	_
+8	que	que	ADP	_	_	9	mark	9:mark	_
+9	parar	parar	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+10	para	para	ADP	_	_	11	mark	11:mark|13:mark|15:mark|17:mark	_
+11	refletir	refletir	VERB	_	VerbForm=Inf	9	advcl	9:advcl:para	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	sistematizar	sistematizar	VERB	_	VerbForm=Inf	11	conj	9:advcl:para|11:conj:e	SpaceAfter=No
+14	,	,	PUNCT	_	_	15	punct	15:punct	_
+15	elaborar	elaborar	VERB	_	VerbForm=Inf	11	conj	9:advcl:para|11:conj:e	_
+16	e	e	CCONJ	_	_	17	cc	17:cc	_
+17	compreender	compreender	VERB	_	VerbForm=Inf	11	conj	9:advcl:para|11:conj:e	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	momento	momento	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj|13:obj|15:obj|17:obj	_
+20	histórico	histórico	ADJ	_	Gender=Masc|Number=Sing	19	amod	19:amod	_
+21	para	para	ADP	_	_	24	mark	24:mark|26:mark|28:mark	_
+22-23	nos	_	_	_	_	_	_	_	_
+22	em	em	ADP	_	_	23	case	23:case	_
+23	os	o	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	24	obl	24:obl:em	_
+24	instrumentalizar	instrumentalizar	VERB	_	VerbForm=Inf	9	advcl	9:advcl:para	SpaceAfter=No
+25	,	,	PUNCT	_	_	26	punct	26:punct	_
+26	projetar	projetar	VERB	_	VerbForm=Inf	24	conj	9:advcl:para|24:conj:e	_
+27	e	e	CCONJ	_	_	28	cc	28:cc	_
+28	construir	construir	VERB	_	VerbForm=Inf	24	conj	9:advcl:para|24:conj:e	_
+29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	30:det	_
+30	futuro	futuro	NOUN	_	Gender=Masc|Number=Sing	28	obj	28:obj	SpaceAfter=No
+31	,	,	PUNCT	_	_	7	punct	7:punct	_
+32	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+33	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	34:det	_
+34	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	32	nsubj	32:nsubj	_
+35	em	em	ADP	_	_	37	case	37:case	_
+36	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	37	det	37:det	_
+37	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	32	obl	32:obl:em|41:obl:em	_
+38-39	no	_	_	_	_	_	_	_	_
+38	em	em	ADP	_	_	39	case	39:case	_
+39	o	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	41	obl	37:ref|41:obl	_
+40	qual	qual	PRON	_	Number=Sing|PronType=Rel	39	fixed	39:fixed	_
+41	divulga	divulgar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	37	acl:relcl	37:acl:relcl	_
+42	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	43	det	43:det	_
+43	curso	curso	NOUN	_	Gender=Masc|Number=Sing	41	obj	41:obj	SpaceAfter=No
+44	.	.	PUNCT	_	_	32	punct	32:punct	_
+
+# sent_id = S0013
+# text = Segundo Uczai, o objetivo da pós-graduação é mobilizar grandes referências teóricas e lideranças políticas de esquerda do Brasil e da América Latina para compartilhar conhecimento e aprofundar a reflexão sobre o futuro da esquerda no século XXI.
+1	Segundo	segundo	ADP	_	_	2	case	2:case	_
+2	Uczai	Uczai	PROPN	_	_	10	obl	10:obl:segundo	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	objetivo	objetivo	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	10:nsubj	_
+6-7	da	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	pós-graduação	pós-graduação	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	_
+9	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_
+10	mobilizar	mobilizar	VERB	_	VerbForm=Inf	0	root	0:root	_
+11	grandes	grande	ADJ	_	Number=Plur	12	amod	12:amod	_
+12	referências	referência	NOUN	_	Gender=Fem|Number=Plur	10	obj	10:obj	_
+13	teóricas	teórico	ADJ	_	Gender=Fem|Number=Plur	12	amod	12:amod	_
+14	e	e	CCONJ	_	_	15	cc	15:cc	_
+15	lideranças	liderança	NOUN	_	Gender=Fem|Number=Plur	12	conj	10:obj|12:conj:e	_
+16	políticas	político	ADJ	_	Gender=Fem|Number=Plur	15	amod	15:amod	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	esquerda	esquerda	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:de	_
+19-20	do	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	Brasil	Brasil	PROPN	_	_	15	nmod	15:nmod:de	_
+22	e	e	CCONJ	_	_	25	cc	25:cc	_
+23-24	da	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	América	América	PROPN	_	_	21	conj	15:nmod:de|21:conj:e	_
+26	Latina	Latina	PROPN	_	_	25	flat:name	25:flat:name	_
+27	para	para	ADP	_	_	28	mark	28:mark|31:mark	_
+28	compartilhar	compartilhar	VERB	_	VerbForm=Inf	10	advcl	10:advcl:para	_
+29	conhecimento	conhecimento	NOUN	_	Gender=Masc|Number=Sing	28	obj	28:obj	_
+30	e	e	CCONJ	_	_	31	cc	31:cc	_
+31	aprofundar	aprofundar	VERB	_	VerbForm=Inf	28	conj	10:advcl:para|28:conj:e	_
+32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	33:det	_
+33	reflexão	reflexão	NOUN	_	Gender=Fem|Number=Sing	31	obj	31:obj	_
+34	sobre	sobre	ADP	_	_	36	case	36:case	_
+35	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	36:det	_
+36	futuro	futuro	NOUN	_	Gender=Masc|Number=Sing	33	nmod	33:nmod:sobre	_
+37-38	da	_	_	_	_	_	_	_	_
+37	de	de	ADP	_	_	39	case	39:case	_
+38	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	39:det	_
+39	esquerda	esquerda	NOUN	_	Gender=Fem|Number=Sing	36	nmod	36:nmod:de	_
+40-41	no	_	_	_	_	_	_	_	_
+40	em	em	ADP	_	_	42	case	42:case	_
+41	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	42	det	42:det	_
+42	século	século	NOUN	_	Gender=Masc|Number=Sing	36	nmod	36:nmod:em	_
+43	XXI	xxi	NUM	_	NumType=Card	42	nmod	42:nmod	SpaceAfter=No
+44	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0015
+# text = EXAME.com não conseguiu confirmar a participação da ex-presidente Dilma Rousseff.
+1	EXAME.com	EXAME.com	SYM	_	_	3	nsubj	3:nsubj|4:nsubj	_
+2	não	não	ADV	_	_	3	advmod	3:advmod	_
+3	conseguiu	conseguir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	confirmar	confirmar	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	participação	participação	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	ex-presidente	ex-presidente	NOUN	_	Number=Sing	6	nmod	6:nmod:de	_
+10	Dilma	Dilma	PROPN	_	_	9	nmod	9:nmod	_
+11	Rousseff	Rousseff	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+12	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0017
+# text = O gabinete de Jean Wyllys confirmou a presença do deputado.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	gabinete	gabinete	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Jean	Jean	PROPN	_	_	2	nmod	2:nmod:de	_
+5	Wyllys	Wyllys	PROPN	_	_	4	flat:name	4:flat:name	_
+6	confirmou	confirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	presença	presença	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+9-10	do	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:de	SpaceAfter=No
+12	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0019
+# text = O curso, que está com as pré-inscrições abertas, será lançado oficialmente nesta sexta-feira, dia 14, às 19h, no Lang Palace Hotel em Chapecó (SC).
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	curso	curso	NOUN	_	Gender=Masc|Number=Sing	12	nsubj:pass	8:nsubj|12:nsubj:pass	SpaceAfter=No
+3	,	,	PUNCT	_	_	8	punct	8:punct	_
+4	que	que	PRON	_	PronType=Rel	8	nsubj	2:ref	_
+5	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop	_
+6	com	com	ADP	_	_	8	case	8:case	_
+7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	8:det	_
+8	pré-inscrições	pré-inscrição	NOUN	_	Gender=Fem|Number=Plur	2	acl:relcl	2:acl:relcl	_
+9	abertas	aberto	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	8	amod	8:amod	SpaceAfter=No
+10	,	,	PUNCT	_	_	8	punct	8:punct	_
+11	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	12	aux:pass	12:aux:pass	_
+12	lançado	lançar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+13	oficialmente	oficialmente	ADV	_	_	12	advmod	12:advmod	_
+14-15	nesta	_	_	_	_	_	_	_	_
+14	em	em	ADP	_	_	16	case	16:case	_
+15	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	16	det	16:det	_
+16	sexta-feira	sexta-feira	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl:em	SpaceAfter=No
+17	,	,	PUNCT	_	_	18	punct	18:punct	_
+18	dia	dia	NOUN	_	Gender=Masc|Number=Sing	16	appos	16:appos	_
+19	14	14	NUM	_	NumType=Card	18	nmod	18:nmod	SpaceAfter=No
+20	,	,	PUNCT	_	_	18	punct	18:punct	_
+21-22	às	_	_	_	_	_	_	_	_
+21	a	a	ADP	_	_	23	case	23:case	_
+22	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	23:det	_
+23	19h	19h	NOUN	_	_	12	obl	12:obl:a	SpaceAfter=No
+24	,	,	PUNCT	_	_	27	punct	27:punct	_
+25-26	no	_	_	_	_	_	_	_	_
+25	em	em	ADP	_	_	27	case	27:case	_
+26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	Lang	Lang	PROPN	_	_	12	obl	12:obl:em	_
+28	Palace	Palace	PROPN	_	_	27	flat:name	27:flat:name	_
+29	Hotel	Hotel	PROPN	_	_	27	flat:name	27:flat:name	_
+30	em	em	ADP	_	_	31	case	31:case	_
+31	Chapecó	Chapecó	PROPN	_	_	12	obl	12:obl:em	_
+32	(	(	PUNCT	_	_	33	punct	33:punct	SpaceAfter=No
+33	SC	SC	PROPN	_	_	31	parataxis	31:parataxis	SpaceAfter=No
+34	)	)	PUNCT	_	_	33	punct	33:punct	SpaceAfter=No
+35	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0021
+# text = O projeto foi desenvolvido pelo Instituto Dom José Gomes e tem parceria com a Universidade Federal da Fronteira Sul (UFFS) e a Fundação Perseu Abramo (FPA).
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	4	nsubj:pass	4:nsubj:pass|12:nsubj	_
+3	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	desenvolvido	desenvolver	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5-6	pelo	_	_	_	_	_	_	_	_
+5	por	por	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Instituto	Instituto	PROPN	_	_	4	obl:agent	4:obl:agent	_
+8	Dom	Dom	PROPN	_	_	7	flat:name	7:flat:name	_
+9	José	José	PROPN	_	_	7	flat:name	7:flat:name	_
+10	Gomes	Gomes	PROPN	_	_	7	flat:name	7:flat:name	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	4:conj:e	_
+13	parceria	parceria	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+14	com	com	ADP	_	_	16	case	16:case|27:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	Universidade	Universidade	PROPN	_	_	13	nmod	13:nmod:com	_
+17	Federal	Federal	PROPN	_	_	16	flat:name	16:flat:name	_
+18-19	da	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	Fronteira	Fronteira	PROPN	_	_	16	flat:name	16:flat:name	_
+21	Sul	Sul	PROPN	_	_	16	flat:name	16:flat:name	_
+22	(	(	PUNCT	_	_	23	punct	23:punct	SpaceAfter=No
+23	UFFS	UFFS	PROPN	_	_	16	appos	16:appos	SpaceAfter=No
+24	)	)	PUNCT	_	_	23	punct	23:punct	_
+25	e	e	CCONJ	_	_	27	cc	27:cc	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	Fundação	Fundação	PROPN	_	_	16	conj	13:nmod:com|16:conj:e	_
+28	Perseu	Perseu	PROPN	_	_	27	flat:name	27:flat:name	_
+29	Abramo	Abramo	PROPN	_	_	27	flat:name	27:flat:name	_
+30	(	(	PUNCT	_	_	31	punct	31:punct	SpaceAfter=No
+31	FPA	FPA	PROPN	_	_	27	parataxis	27:parataxis	SpaceAfter=No
+32	)	)	PUNCT	_	_	31	punct	31:punct	SpaceAfter=No
+33	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0023
+# text = O investimento para a pós-graduação, que terá 24 meses de duração, é de 7,2 mil reais parcelados em até 24 vezes.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	investimento	investimento	NOUN	_	Gender=Masc|Number=Sing	18	nsubj	8:nsubj|18:nsubj	_
+3	para	para	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	pós-graduação	pós-graduação	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:para	SpaceAfter=No
+6	,	,	PUNCT	_	_	8	punct	8:punct	_
+7	que	que	PRON	_	PronType=Rel	8	nsubj	2:ref	_
+8	terá	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+9	24	24	NUM	_	NumType=Card	10	nummod	10:nummod	_
+10	meses	mÃªs	NOUN	_	Gender=Masc|Number=Plur	8	obj	8:obj	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	duração	duração	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:de	SpaceAfter=No
+13	,	,	PUNCT	_	_	8	punct	8:punct	_
+14	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	cop	18:cop	_
+15	de	de	ADP	_	_	18	case	18:case	_
+16	7,2	7,2	NUM	_	NumType=Card	18	nummod	18:nummod	_
+17	mil	mil	NUM	_	NumType=Card	16	flat	16:flat	_
+18	reais	real	NOUN	_	Gender=Masc|Number=Plur	0	root	0:root	_
+19	parcelados	parcelar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	18	acl	18:acl	_
+20	em	em	ADP	_	_	23	case	23:case	_
+21	até	até	ADP	_	_	22	case	22:case	_
+22	24	24	NUM	_	NumType=Card	23	nummod	23:nummod	_
+23	vezes	vez	NOUN	_	Gender=Fem|Number=Plur	19	obl	19:obl:em	SpaceAfter=No
+24	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0025
+# text = Veja a estrutura do curso divulgada pelo deputado Pedro Uczai.
+1	Veja	ver	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	estrutura	estrutura	NOUN	_	Gender=Fem|Number=Sing	1	obj	1:obj	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	curso	curso	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	_
+7	divulgada	divulgar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	3	acl	3:acl	_
+8-9	pelo	_	_	_	_	_	_	_	_
+8	por	por	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	7	obl:agent	7:obl:agent	_
+11	Pedro	Pedro	PROPN	_	_	10	nmod	10:nmod	_
+12	Uczai	Uczai	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+13	.	.	PUNCT	_	_	1	punct	1:punct	_

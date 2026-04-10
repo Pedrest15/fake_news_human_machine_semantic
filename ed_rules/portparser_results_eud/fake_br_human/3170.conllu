@@ -1,0 +1,517 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Cantora Rita Lee sugere um "BBB de políticos" nas próximas eleições e internautas apóiam a idéia.
+1	Cantora	cantor	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+2	Rita	Rita	PROPN	_	_	1	nmod	1:nmod	_
+3	Lee	Lee	PROPN	_	_	2	flat:name	2:flat:name	_
+4	sugere	sugerir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+6	"	"	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+7	BBB	BBB	PROPN	_	_	4	obj	4:obj	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	políticos	político	NOUN	_	Gender=Masc|Number=Plur	7	nmod	7:nmod:de	SpaceAfter=No
+10	"	"	PUNCT	_	_	7	punct	7:punct	_
+11-12	nas	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	14	case	14:case	_
+12	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	14:det	_
+13	próximas	próximo	ADJ	_	Gender=Fem|Number=Plur	14	amod	14:amod	_
+14	eleições	eleição	NOUN	_	Gender=Fem|Number=Plur	4	obl	4:obl:em	_
+15	e	e	CCONJ	_	_	17	cc	17:cc	_
+16	internautas	internauta	NOUN	_	Number=Plur	17	nsubj	17:nsubj	_
+17	apóiam	apóiar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	conj	4:conj:e	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	idéia	idéia	NOUN	_	Gender=Fem|Number=Sing	17	obj	17:obj	SpaceAfter=No
+20	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0003
+# text = Um texto divulgado na Fan Page da cantora Rita Lee sugeriu a criação do Big Brother dos Políticos, que confinaria todos os candidatos à presidência e o finalista seria nosso presidente.
+1	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	texto	texto	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	13:nsubj	_
+3	divulgado	divulgar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	2:acl	_
+4-5	na	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	Fan	Fan	PROPN	_	_	3	obl	3:obl:em	_
+7	Page	Page	PROPN	_	_	6	flat:name	6:flat:name	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	cantora	cantor	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de	_
+11	Rita	Rita	PROPN	_	_	10	nmod	10:nmod	_
+12	Lee	Lee	PROPN	_	_	11	flat:name	11:flat:name	_
+13	sugeriu	sugerir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	criação	criação	NOUN	_	Gender=Fem|Number=Sing	13	obj	13:obj	_
+16-17	do	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	Big	Big	PROPN	_	_	15	nmod	15:nmod:de|25:nsubj	_
+19	Brother	Brother	PROPN	_	_	18	flat:name	18:flat:name	_
+20-21	dos	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	22:det	_
+22	Políticos	Políticos	PROPN	_	_	18	flat:name	18:flat:name	SpaceAfter=No
+23	,	,	PUNCT	_	_	25	punct	25:punct	_
+24	que	que	PRON	_	PronType=Rel	25	nsubj	18:ref	_
+25	confinaria	confinar	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	18	acl:relcl	18:acl:relcl	_
+26	todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Ind	28	det	28:det	_
+27	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	28:det	_
+28	candidatos	candidato	NOUN	_	Gender=Masc|Number=Plur	25	obj	25:obj	_
+29-30	à	_	_	_	_	_	_	_	_
+29	a	a	ADP	_	_	31	case	31:case	_
+30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+31	presidência	presidência	NOUN	_	Gender=Fem|Number=Sing	28	nmod	28:nmod:a	_
+32	e	e	CCONJ	_	_	37	cc	37:cc	_
+33	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	34:det	_
+34	finalista	finalista	NOUN	_	Number=Sing	37	nsubj	37:nsubj	_
+35	seria	ser	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	37	cop	37:cop	_
+36	nosso	nosso	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	37	det	37:det	_
+37	presidente	presidente	NOUN	_	Number=Sing	25	conj	18:acl:relcl|25:conj:e	SpaceAfter=No
+38	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0005
+# text = Mas será que essa história é real?.
+1	Mas	mas	CCONJ	_	_	7	cc	7:cc	_
+2	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	7	discourse	7:discourse	_
+3	que	que	SCONJ	_	_	7	discourse	7:discourse	_
+4	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	5	det	5:det	_
+5	história	história	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj	_
+6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+7	real	real	ADJ	_	Number=Sing	0	root	0:root	SpaceAfter=No
+8	?	?	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+9	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0007
+# text = A idéia do BBB dos políticos é atribuída à Rita Lee e surgiu no Facebook há poucos dias.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	idéia	idéia	NOUN	_	Gender=Fem|Number=Sing	10	nsubj:pass	10:nsubj:pass|16:nsubj	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	BBB	BBB	PROPN	_	_	2	nmod	2:nmod:de	_
+6-7	dos	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	8:det	_
+8	políticos	político	NOUN	_	Gender=Masc|Number=Plur	5	nmod	5:nmod:de	_
+9	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:pass	10:aux:pass	_
+10	atribuída	atribuír	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+11-12	à	_	_	_	_	_	_	_	_
+11	a	a	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	Rita	Rita	PROPN	_	_	10	obl	10:obl:a	_
+14	Lee	Lee	PROPN	_	_	13	flat:name	13:flat:name	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	surgiu	surgir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	conj	10:conj:e	_
+17-18	no	_	_	_	_	_	_	_	_
+17	em	em	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	Facebook	Facebook	PROPN	_	_	16	obl	16:obl:em	_
+20	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	advcl	16:advcl	_
+21	poucos	pouco	ADJ	_	Gender=Masc|Number=Plur	22	amod	22:amod	_
+22	dias	dia	NOUN	_	Gender=Masc|Number=Plur	20	obj	20:obj	SpaceAfter=No
+23	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0009
+# text = O texto afirma que a cantora, que não aprecia programas ao estilo "Reality Show", como o BBB, teve um estalo genial.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	texto	texto	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	afirma	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	24	mark	24:mark	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	cantora	cantor	NOUN	_	Gender=Fem|Number=Sing	24	nsubj	10:nsubj|24:nsubj	SpaceAfter=No
+7	,	,	PUNCT	_	_	10	punct	10:punct	_
+8	que	que	PRON	_	PronType=Rel	10	nsubj	6:ref	_
+9	não	não	ADV	_	_	10	advmod	10:advmod	_
+10	aprecia	apreciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl:relcl	6:acl:relcl	_
+11	programas	programa	NOUN	_	Gender=Masc|Number=Plur	10	obj	10:obj	_
+12-13	ao	_	_	_	_	_	_	_	_
+12	a	a	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	estilo	estilo	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:a	_
+15	"	"	PUNCT	_	_	16	punct	16:punct	SpaceAfter=No
+16	Reality	Reality	PROPN	_	_	14	nmod	14:nmod	_
+17	Show	Show	PROPN	_	_	16	flat:name	16:flat:name	SpaceAfter=No
+18	"	"	PUNCT	_	_	16	punct	16:punct	SpaceAfter=No
+19	,	,	PUNCT	_	_	22	punct	22:punct	_
+20	como	como	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	BBB	BBB	PROPN	_	_	14	nmod	14:nmod:como	SpaceAfter=No
+23	,	,	PUNCT	_	_	22	punct	22:punct	_
+24	teve	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	ccomp	3:ccomp	_
+25	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	estalo	estalo	NOUN	_	Gender=Masc|Number=Sing	24	obj	24:obj	_
+27	genial	genial	ADJ	_	Number=Sing	26	amod	26:amod	SpaceAfter=No
+28	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0011
+# text = Colocar todos os candidatos à presidência da República (nas próximas eleições) trancados em uma casa, debatendo seus programas de governo.
+1	Colocar	colocar	VERB	_	VerbForm=Inf	0	root	0:root	_
+2	todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Ind	4	det	4:det	_
+3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	4:det	_
+4	candidatos	candidato	NOUN	_	Gender=Masc|Number=Plur	1	obj	1:obj|17:nsubj	_
+5-6	à	_	_	_	_	_	_	_	_
+5	a	a	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	presidência	presidência	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:a	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	República	República	PROPN	_	_	7	nmod	7:nmod:de	_
+11	(	(	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+12-13	nas	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	15	case	15:case	_
+13	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	15:det	_
+14	próximas	próximo	ADJ	_	Gender=Fem|Number=Plur	15	amod	15:amod	_
+15	eleições	eleição	NOUN	_	Gender=Fem|Number=Plur	4	nmod	4:nmod:em	SpaceAfter=No
+16	)	)	PUNCT	_	_	15	punct	15:punct	_
+17	trancados	trancado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	1	xcomp	1:xcomp	_
+18	em	em	ADP	_	_	20	case	20:case	_
+19	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	casa	casa	NOUN	_	Gender=Fem|Number=Sing	17	obl	17:obl:em	SpaceAfter=No
+21	,	,	PUNCT	_	_	22	punct	22:punct	_
+22	debatendo	debater	VERB	_	VerbForm=Ger	17	advcl	17:advcl	_
+23	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	24	det	24:det	_
+24	programas	programa	NOUN	_	Gender=Masc|Number=Plur	22	obj	22:obj	_
+25	de	de	ADP	_	_	26	case	26:case	_
+26	governo	governo	NOUN	_	Gender=Masc|Number=Sing	24	nmod	24:nmod:de	SpaceAfter=No
+27	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0013
+# text = A cada semana um candidato seria eliminado.
+1	A	a	ADP	_	_	3	case	3:case	_
+2	cada	cada	DET	_	Number=Sing|PronType=Ind	3	det	3:det	_
+3	semana	semana	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:a	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	candidato	candidato	NOUN	_	Gender=Masc|Number=Sing	7	nsubj:pass	7:nsubj:pass	_
+6	seria	ser	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	7	aux:pass	7:aux:pass	_
+7	eliminado	eliminar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	SpaceAfter=No
+8	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0015
+# text = O finalista dessa disputa seria eleito nosso presidente.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	finalista	finalista	NOUN	_	Number=Sing	7	nsubj:pass	7:nsubj:pass|9:nsubj	_
+3-4	dessa	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	5	det	5:det	_
+5	disputa	disputa	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+6	seria	ser	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	7	aux:pass	7:aux:pass	_
+7	eleito	eleger	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+8	nosso	nosso	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	9	det	9:det	_
+9	presidente	presidente	NOUN	_	Number=Sing	7	xcomp	7:xcomp	SpaceAfter=No
+10	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0017
+# text = Algumas montagens do tal texto juntamente com fotos da cantora são postadas no Facebook e se espalham pela rede: Mas será que Rita Lee disse isso?
+1	Algumas	algum	DET	_	Gender=Fem|Number=Plur|PronType=Ind	2	det	2:det	_
+2	montagens	montagem	NOUN	_	Gender=Fem|Number=Plur	14	nsubj:pass	14:nsubj:pass|20:nsubj	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	6	case	6:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+5	tal	tal	DET	_	Number=Sing|PronType=Dem	6	det	6:det	_
+6	texto	texto	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	_
+7	juntamente	juntamente	ADV	_	_	2	advmod	2:advmod	_
+8	com	com	ADP	_	_	9	case	9:case	_
+9	fotos	foto	NOUN	_	Number=Plur	7	obl	7:obl:com	_
+10-11	da	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	cantora	cantor	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:de	_
+13	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	aux:pass	14:aux:pass	_
+14	postadas	postar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	_
+15-16	no	_	_	_	_	_	_	_	_
+15	em	em	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	Facebook	Facebook	PROPN	_	_	14	obl	14:obl:em	_
+18	e	e	CCONJ	_	_	20	cc	20:cc	_
+19	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	20	expl	20:expl	_
+20	espalham	espalhar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	conj	14:conj:e	_
+21-22	pela	_	_	_	_	_	_	_	_
+21	por	por	ADP	_	_	23	case	23:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	rede	rede	NOUN	_	Gender=Fem|Number=Sing	20	obl	20:obl:por	SpaceAfter=No
+24	:	:	PUNCT	_	_	30	punct	30:punct	_
+25	Mas	mas	CCONJ	_	_	30	cc	30:cc	_
+26	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	30	discourse	30:discourse	_
+27	que	que	SCONJ	_	_	30	discourse	30:discourse	_
+28	Rita	Rita	PROPN	_	_	30	nsubj	30:nsubj	_
+29	Lee	Lee	PROPN	_	_	28	flat:name	28:flat:name	_
+30	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	parataxis	14:parataxis	_
+31	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	30	obj	30:obj	SpaceAfter=No
+32	?	?	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0019
+# text = É verdade!
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	2:cop	_
+2	verdade	verdade	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+3	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0021
+# text = As frases foram ditas pela cantora.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	frases	frase	NOUN	_	Gender=Fem|Number=Plur	4	nsubj:pass	4:nsubj:pass	_
+3	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	ditas	dir	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5-6	pela	_	_	_	_	_	_	_	_
+5	por	por	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	cantora	cantor	NOUN	_	Gender=Fem|Number=Sing	4	obl:agent	4:obl:agent	SpaceAfter=No
+8	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0023
+# text = E quem nos garante isso é a sua assessoria de imprensa.
+1	E	e	CCONJ	_	_	9	cc	9:cc	_
+2	quem	quem	PRON	_	PronType=Rel	9	nsubj	9:nsubj	_
+3	nos	nos	PRON	_	Case=Dat|Number=Plur|Person=1|PronType=Prs	4	iobj	4:iobj	_
+4	garante	garantir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+5	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	4	obj	4:obj	_
+6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	9:cop	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+8	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	9	det	9:det	_
+9	assessoria	assessoria	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	imprensa	imprensa	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:de	SpaceAfter=No
+12	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0025
+# text = ABAIXO O TEXTO COMPLETO A cantora e ativista Rita Lee teve uma daquelas ideias brilhantes, dignas do seu gênio criativo.
+1	ABAIXO	abaixo	ADJ	_	_	11	dep	11:dep	_
+2	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	TEXTO	TEXTO	PROPN	_	_	1	nsubj	1:nsubj	_
+4	COMPLETO	COMPLETO	PUNCT	_	_	3	punct	3:punct	_
+5	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	cantora	cantor	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	11:nsubj	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	ativista	ativista	NOUN	_	Number=Sing	6	conj	6:conj:e|11:nsubj	_
+9	Rita	Rita	PROPN	_	_	6	nmod	6:nmod|8:nmod	_
+10	Lee	Lee	PROPN	_	_	9	flat:name	9:flat:name	_
+11	teve	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	uma	um	NUM	_	Gender=Fem|NumType=Card	11	obj	11:obj	_
+13-14	daquelas	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	aquelas	aquele	DET	_	Gender=Fem|Number=Plur|PronType=Dem	15	det	15:det	_
+15	ideias	ideia	NOUN	_	Gender=Fem|Number=Plur	12	nmod	12:nmod:de	_
+16	brilhantes	brilhante	ADJ	_	Number=Plur	15	amod	15:amod	SpaceAfter=No
+17	,	,	PUNCT	_	_	18	punct	18:punct	_
+18	dignas	digno	ADJ	_	Gender=Fem|Number=Plur	16	conj	15:amod|16:conj	_
+19-20	do	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	22	case	22:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+21	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	22	det	22:det	_
+22	gênio	gênio	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:de	_
+23	criativo	criativo	ADJ	_	Gender=Masc|Number=Sing	22	amod	22:amod	SpaceAfter=No
+24	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0027
+# text = Reclamando da inutilidade de programas como o Big Brother, ela deu a seguinte sugestão: Colocar todos os pré-candidatos à presidência da República trancados em uma casa, debatendo e discutindo seus respectivos programas de governo.
+1	Reclamando	reclamar	VERB	_	VerbForm=Ger	13	advcl	13:advcl	_
+2-3	da	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	inutilidade	inutilidade	NOUN	_	Gender=Fem|Number=Sing	1	obl	1:obl:de	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	programas	programa	NOUN	_	Gender=Masc|Number=Plur	4	nmod	4:nmod:de	_
+7	como	como	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	Big	Big	PROPN	_	_	6	nmod	6:nmod:como	_
+10	Brother	Brother	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+11	,	,	PUNCT	_	_	1	punct	1:punct	_
+12	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	13	nsubj	13:nsubj	_
+13	deu	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+15	seguinte	seguinte	ADJ	_	Number=Sing	16	amod	16:amod	_
+16	sugestão	sugestão	NOUN	_	Gender=Fem|Number=Sing	13	obj	13:obj	SpaceAfter=No
+17	:	:	PUNCT	_	_	18	punct	18:punct	_
+18	Colocar	colocar	VERB	_	VerbForm=Inf	16	parataxis	16:parataxis	_
+19	todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Ind	21	det	21:det	_
+20	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	21:det	_
+21	pré-candidatos	pré-candidato	NOUN	_	Gender=Masc|Number=Plur	18	obj	18:obj|28:nsubj	_
+22-23	à	_	_	_	_	_	_	_	_
+22	a	a	ADP	_	_	24	case	24:case	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	presidência	presidência	NOUN	_	Gender=Fem|Number=Sing	21	nmod	21:nmod:a	_
+25-26	da	_	_	_	_	_	_	_	_
+25	de	de	ADP	_	_	27	case	27:case	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	República	República	PROPN	_	_	24	nmod	24:nmod:de	_
+28	trancados	trancado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	18	xcomp	18:xcomp	_
+29	em	em	ADP	_	_	31	case	31:case	_
+30	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+31	casa	casa	NOUN	_	Gender=Fem|Number=Sing	28	obl	28:obl:em	SpaceAfter=No
+32	,	,	PUNCT	_	_	33	punct	33:punct	_
+33	debatendo	debater	VERB	_	VerbForm=Ger	18	advcl	18:advcl	_
+34	e	e	CCONJ	_	_	35	cc	35:cc	_
+35	discutindo	discutir	VERB	_	VerbForm=Ger	33	conj	18:advcl|33:conj:e	_
+36	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	38	det	38:det	_
+37	respectivos	respectivo	ADJ	_	Gender=Masc|Number=Plur	38	amod	38:amod	_
+38	programas	programa	NOUN	_	Gender=Masc|Number=Plur	33	obj	33:obj|35:obj	_
+39	de	de	ADP	_	_	40	case	40:case	_
+40	governo	governo	NOUN	_	Gender=Masc|Number=Sing	38	nmod	38:nmod:de	SpaceAfter=No
+41	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0029
+# text = Sem marqueteiros, sem assessores, sem máscaras e sem discursos ensaiados.
+1	Sem	sem	ADP	_	_	2	case	2:case	_
+2	marqueteiros	marqueteiro	NOUN	_	Gender=Masc|Number=Plur	0	root	0:root	SpaceAfter=No
+3	,	,	PUNCT	_	_	5	punct	5:punct	_
+4	sem	sem	ADP	_	_	5	case	5:case	_
+5	assessores	assessor	NOUN	_	Gender=Masc|Number=Plur	2	conj	2:conj:e	SpaceAfter=No
+6	,	,	PUNCT	_	_	8	punct	8:punct	_
+7	sem	sem	ADP	_	_	8	case	8:case	_
+8	máscaras	máscara	NOUN	_	Gender=Fem|Number=Plur	2	conj	2:conj:e	_
+9	e	e	CCONJ	_	_	11	cc	11:cc	_
+10	sem	sem	ADP	_	_	11	case	11:case	_
+11	discursos	discurso	NOUN	_	Gender=Masc|Number=Plur	2	conj	2:conj:e	_
+12	ensaiados	ensaiar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	11	acl	11:acl	SpaceAfter=No
+13	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0031
+# text = Toda semana o público vota e elimina um.
+1	Toda	todo	DET	_	Gender=Fem|Number=Sing|PronType=Ind	2	det	2:det	_
+2	semana	semana	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	público	público	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj|7:nsubj	_
+5	vota	votar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	elimina	eliminar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	5:conj:e	_
+8	um	um	NUM	_	Gender=Masc|NumType=Card	7	obj	7:obj	SpaceAfter=No
+9	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0033
+# text = No final do programa, o vencedor ganharia o cargo público máximo do país.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	final	final	NOUN	_	Number=Sing	10	obl	10:obl:em	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	programa	programa	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	SpaceAfter=No
+7	,	,	PUNCT	_	_	3	punct	3:punct	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	vencedor	vencedor	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	10:nsubj	_
+10	ganharia	ganhar	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	cargo	cargo	NOUN	_	Gender=Masc|Number=Sing	10	obj	10:obj	_
+13	público	público	ADJ	_	Gender=Masc|Number=Sing	12	amod	12:amod	_
+14	máximo	máximo	ADJ	_	Gender=Masc|Number=Sing	12	amod	12:amod	_
+15-16	do	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	país	país	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:de	SpaceAfter=No
+18	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0035
+# text = Além de acabar com o enfadonho e repetitivo horário político, a população conheceria o verdadeiro caráter dos candidatos.
+1	Além	além	ADV	_	_	14	advmod	14:advmod	_
+2	de	de	ADP	_	_	3	mark	3:mark	_
+3	acabar	acabar	VERB	_	VerbForm=Inf	1	acl	1:acl:de	_
+4	com	com	ADP	_	_	9	case	9:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+6	enfadonho	enfadonho	ADJ	_	Gender=Masc|Number=Sing	9	amod	9:amod	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	repetitivo	repetitivo	ADJ	_	Gender=Masc|Number=Sing	6	conj	6:conj:e|9:amod	_
+9	horário	horário	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:com	_
+10	político	político	ADJ	_	Gender=Masc|Number=Sing	9	amod	9:amod	SpaceAfter=No
+11	,	,	PUNCT	_	_	1	punct	1:punct	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	população	população	NOUN	_	Gender=Fem|Number=Sing	14	nsubj	14:nsubj	_
+14	conheceria	conhecer	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+16	verdadeiro	verdadeiro	ADJ	_	Gender=Masc|Number=Sing	17	amod	17:amod	_
+17	caráter	caráter	NOUN	_	Gender=Masc|Number=Sing	14	obj	14:obj	_
+18-19	dos	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	20:det	_
+20	candidatos	candidato	NOUN	_	Gender=Masc|Number=Plur	17	nmod	17:nmod:de	SpaceAfter=No
+21	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0037
+# text = Assim, quem financiaria essa casa seria o repasse de parte do valor dos telefonemas que a casa receberia e ninguém mais precisará corromper empreiteiras ou empresas de lixo sob a alegação de cobrir o "fundo de campanha".
+1	Assim	assim	ADV	_	_	9	advmod	9:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	quem	quem	PRON	_	PronType=Ind	9	nsubj	9:nsubj	_
+4	financiaria	financiar	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_
+5	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	6	det	6:det	_
+6	casa	casa	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+7	seria	ser	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	9	cop	9:cop	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	repasse	repasse	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	parte	parte	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:de	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	valor	valor	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:de	_
+15-16	dos	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	17:det	_
+17	telefonemas	telefonema	NOUN	_	Gender=Masc|Number=Plur	14	nmod	14:nmod:de|21:obj	_
+18	que	que	PRON	_	PronType=Rel	21	obj	17:ref	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	casa	casa	NOUN	_	Gender=Fem|Number=Sing	21	nsubj	21:nsubj	_
+21	receberia	receber	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	17	acl:relcl	17:acl:relcl	_
+22	e	e	CCONJ	_	_	25	cc	25:cc	_
+23	ninguém	ninguém	PRON	_	Number=Sing|PronType=Ind	25	nsubj	25:nsubj|26:nsubj	_
+24	mais	mais	ADV	_	_	23	advmod	23:advmod	_
+25	precisará	precisar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	21	conj	17:acl:relcl|21:conj:e	_
+26	corromper	corromper	VERB	_	VerbForm=Inf	25	xcomp	25:xcomp	_
+27	empreiteiras	empreiteiro	NOUN	_	Gender=Fem|Number=Plur	26	obj	26:obj	_
+28	ou	ou	CCONJ	_	_	29	cc	29:cc	_
+29	empresas	empresa	NOUN	_	Gender=Fem|Number=Plur	27	conj	26:obj|27:conj:ou	_
+30	de	de	ADP	_	_	31	case	31:case	_
+31	lixo	lixo	NOUN	_	Gender=Masc|Number=Sing	29	nmod	29:nmod:de	_
+32	sob	sob	ADP	_	_	34	case	34:case	_
+33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	34:det	_
+34	alegação	alegação	NOUN	_	Gender=Fem|Number=Sing	26	obl	26:obl:sob	_
+35	de	de	ADP	_	_	36	mark	36:mark	_
+36	cobrir	cobrir	VERB	_	VerbForm=Inf	34	acl	34:acl:de	_
+37	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	39:det	_
+38	"	"	PUNCT	_	_	39	punct	39:punct	SpaceAfter=No
+39	fundo	fundo	NOUN	_	Gender=Masc|Number=Sing	36	obj	36:obj	_
+40	de	de	ADP	_	_	41	case	41:case	_
+41	campanha	campanha	NOUN	_	Gender=Fem|Number=Sing	39	nmod	39:nmod:de	SpaceAfter=No
+42	"	"	PUNCT	_	_	39	punct	39:punct	SpaceAfter=No
+43	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0039
+# text = A idéia não é incrivelmente boa?
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	idéia	idéia	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj	_
+3	não	não	ADV	_	_	6	advmod	6:advmod	_
+4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+5	incrivelmente	incrivelmente	ADV	_	_	6	advmod	6:advmod	_
+6	boa	bom	ADJ	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+7	?	?	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0041
+# text = Se você também gostou, mande essa mensagem para os amigos e faça coro pela campanha: Casa dos Políticos, já!!!
+1	Se	se	SCONJ	_	_	4	mark	4:mark	_
+2	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	4	nsubj	4:nsubj	_
+3	também	também	ADV	_	_	4	advmod	4:advmod	_
+4	gostou	gostar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	advcl	6:advcl:se|13:advcl:se	SpaceAfter=No
+5	,	,	PUNCT	_	_	4	punct	4:punct	_
+6	mande	mandar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	8	det	8:det	_
+8	mensagem	mensagem	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+9	para	para	ADP	_	_	11	case	11:case	_
+10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	11:det	_
+11	amigos	amigo	NOUN	_	Gender=Masc|Number=Plur	6	obl	6:obl:para	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	faça	fazer	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	6:conj:e	_
+14	coro	coro	NOUN	_	Gender=Masc|Number=Sing	13	obj	13:obj	_
+15-16	pela	_	_	_	_	_	_	_	_
+15	por	por	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	campanha	campanha	NOUN	_	Gender=Fem|Number=Sing	13	obl	13:obl:por	SpaceAfter=No
+18	:	:	PUNCT	_	_	19	punct	19:punct	_
+19	Casa	Casa	PROPN	_	_	17	appos	17:appos	_
+20-21	dos	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	22:det	_
+22	Políticos	Políticos	PROPN	_	_	19	flat:name	19:flat:name	SpaceAfter=No
+23	,	,	PUNCT	_	_	24	punct	24:punct	_
+24	já	já	ADV	_	_	19	advmod	19:advmod	SpaceAfter=No
+25	!	!	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+26	!	!	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+27	!	!	PUNCT	_	_	6	punct	6:punct	_

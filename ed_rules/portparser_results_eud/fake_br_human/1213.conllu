@@ -1,0 +1,224 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = A solução mais prudente para o Brasil: Cármen na Presidência e Meirelles na Fazenda.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	solução	solução	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+3	mais	mais	ADV	_	_	4	advmod	4:advmod	_
+4	prudente	prudente	ADJ	_	Number=Sing	2	amod	2:amod	_
+5	para	para	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Brasil	Brasil	PROPN	_	_	2	nmod	2:nmod:para	SpaceAfter=No
+8	:	:	PUNCT	_	_	9	punct	9:punct	_
+9	Cármen	Cármen	PROPN	_	_	2	appos	2:appos	_
+10-11	na	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	Presidência	Presidência	PROPN	_	_	9	nmod	9:nmod:em	_
+13	e	e	CCONJ	_	_	14	cc	14:cc	_
+14	Meirelles	Meirelles	PROPN	_	_	9	conj	2:appos|9:conj:e	_
+15-16	na	_	_	_	_	_	_	_	_
+15	em	em	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	Fazenda	Fazenda	PROPN	_	_	14	nmod	14:nmod:em	SpaceAfter=No
+18	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = O país precisa de duas coisas fundamentais neste momento: acalmar a população e acalmar o mercado.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	país	país	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	precisa	precisar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	duas	dois	NUM	_	Gender=Fem|NumType=Card	6	nummod	6:nummod	_
+6	coisas	coisa	NOUN	_	Gender=Fem|Number=Plur	3	obl	3:obl:de	_
+7	fundamentais	fundamental	ADJ	_	Number=Plur	6	amod	6:amod	_
+8-9	neste	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	10	det	10:det	_
+10	momento	momento	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:em	SpaceAfter=No
+11	:	:	PUNCT	_	_	12	punct	12:punct	_
+12	acalmar	acalmar	VERB	_	VerbForm=Inf	6	parataxis	6:parataxis	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	população	população	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	acalmar	acalmar	VERB	_	VerbForm=Inf	12	conj	6:parataxis|12:conj:e	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	mercado	mercado	NOUN	_	Gender=Masc|Number=Sing	16	obj	16:obj	SpaceAfter=No
+19	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0005
+# text = (Amanda Nunes Brückner para o Diário do Brasil) Temer, Dilma e Lula são iguais: Não pedem "arrego" nem quando estão no fundo do poço.
+1	(	(	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+2	Amanda	Amanda	PROPN	_	_	18	nsubj	18:nsubj	_
+3	Nunes	Nunes	PROPN	_	_	2	flat:name	2:flat:name	_
+4	Brückner	Brückner	PROPN	_	_	2	flat:name	2:flat:name	_
+5	para	para	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Diário	Diário	PROPN	_	_	2	nmod	2:nmod:para	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	Brasil	Brasil	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+11	)	)	PUNCT	_	_	2	punct	2:punct	_
+12	Temer	Temer	PROPN	_	_	18	nsubj	18:nsubj	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	Dilma	Dilma	PROPN	_	_	12	conj	12:conj:e|18:nsubj	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	Lula	Lula	PROPN	_	_	12	conj	12:conj:e|18:nsubj	_
+17	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	cop	18:cop	_
+18	iguais	igual	ADJ	_	Number=Plur	0	root	0:root	SpaceAfter=No
+19	:	:	PUNCT	_	_	21	punct	21:punct	_
+20	Não	não	ADV	_	_	21	advmod	21:advmod	_
+21	pedem	pedir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	parataxis	18:parataxis	_
+22	"	"	PUNCT	_	_	23	punct	23:punct	SpaceAfter=No
+23	arrego	arrego	NOUN	_	Gender=Masc|Number=Sing	21	obj	21:obj	SpaceAfter=No
+24	"	"	PUNCT	_	_	23	punct	23:punct	_
+25	nem	nem	CCONJ	_	_	30	cc	30:cc	_
+26	quando	quando	SCONJ	_	_	30	mark	30:mark	_
+27	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	30	cop	30:cop	_
+28-29	no	_	_	_	_	_	_	_	_
+28	em	em	ADP	_	_	30	case	30:case	_
+29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	30:det	_
+30	fundo	fundo	NOUN	_	Gender=Masc|Number=Sing	21	advcl	21:advcl:quando	_
+31-32	do	_	_	_	_	_	_	_	_
+31	de	de	ADP	_	_	33	case	33:case	_
+32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	33:det	_
+33	poço	poço	NOUN	_	Gender=Masc|Number=Sing	30	nmod	30:nmod:de	SpaceAfter=No
+34	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0007
+# text = O Presidente sabe que sua situação é insustentável e só não renuncia para não perder o foro privilegiado [...] ele tem plena consciência de que corre o risco de ser preso.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Presidente	Presidente	PROPN	_	_	3	nsubj	3:nsubj	_
+3	sabe	saber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	8	mark	8:mark|12:mark	_
+5	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	6	det	6:det	_
+6	situação	situação	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	8:nsubj|12:nsubj	_
+7	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop	_
+8	insustentável	insustentável	ADJ	_	Number=Sing	3	ccomp	3:ccomp	_
+9	e	e	CCONJ	_	_	12	cc	12:cc	_
+10	só	só	ADV	_	_	12	advmod	12:advmod	_
+11	não	não	ADV	_	_	12	advmod	12:advmod	_
+12	renuncia	renunciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	conj	3:ccomp|8:conj:e	_
+13	para	para	ADP	_	_	15	mark	15:mark	_
+14	não	não	ADV	_	_	15	advmod	15:advmod	_
+15	perder	perder	VERB	_	VerbForm=Inf	12	advcl	12:advcl:para	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	foro	foro	NOUN	_	Gender=Masc|Number=Sing	15	obj	15:obj	_
+18	privilegiado	privilegiado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	17	amod	17:amod	_
+19	[	[	PUNCT	_	_	20	punct	20:punct	SpaceAfter=No
+20	.	.	PUNCT	_	_	24	parataxis	24:parataxis	SpaceAfter=No
+21	..	..	PUNCT	_	_	20	punct	20:punct	SpaceAfter=No
+22	]	]	PUNCT	_	_	20	punct	20:punct	_
+23	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	24	nsubj	24:nsubj	_
+24	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	parataxis	3:parataxis	_
+25	plena	pleno	ADJ	_	Gender=Fem|Number=Sing	26	amod	26:amod	_
+26	consciência	consciência	NOUN	_	Gender=Fem|Number=Sing	24	obj	24:obj	_
+27	de	de	ADP	_	ExtPos=SCONJ	29	mark	29:mark	_
+28	que	que	SCONJ	_	_	27	fixed	27:fixed	_
+29	corre	correr	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	acl	26:acl:de_que	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	risco	risco	NOUN	_	Gender=Masc|Number=Sing	29	obj	29:obj	_
+32	de	de	ADP	_	_	34	mark	34:mark	_
+33	ser	ser	AUX	_	VerbForm=Inf	34	aux:pass	34:aux:pass	_
+34	preso	prender	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	31	acl	31:acl:de	SpaceAfter=No
+35	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0009
+# text = Qual seria a melhor solução para conter as crises política e institucional?
+1	Qual	qual	PRON	_	Number=Sing|PronType=Int	5	nsubj	5:nsubj	_
+2	seria	ser	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	5	cop	5:cop	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+4	melhor	melhor	ADJ	_	Number=Sing	5	amod	5:amod	_
+5	solução	solução	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+6	para	para	ADP	_	_	7	mark	7:mark	_
+7	conter	conter	VERB	_	VerbForm=Inf	5	acl	5:acl:para	_
+8	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	9:det	_
+9	crises	crise	NOUN	_	Gender=Fem|Number=Plur	7	obj	7:obj	_
+10	política	político	ADJ	_	Gender=Fem|Number=Sing	9	amod	9:amod	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	institucional	institucional	ADJ	_	Number=Sing	10	conj	9:amod|10:conj:e	SpaceAfter=No
+13	?	?	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0011
+# text = Simples: Cármen Lúcia como Presidente [...] via eleições indiretas, como manda o "livrinho das leis".
+1	Simples	simples	ADJ	_	_	0	root	0:root	SpaceAfter=No
+2	:	:	PUNCT	_	_	1	punct	1:punct	_
+3	Cármen	Cármen	PROPN	_	_	11	nsubj	11:nsubj	_
+4	Lúcia	Lúcia	PROPN	_	_	3	flat:name	3:flat:name	_
+5	como	como	ADP	_	_	6	case	6:case	_
+6	Presidente	Presidente	PROPN	_	_	3	nmod	3:nmod:como	_
+7	[	[	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	.	.	PUNCT	_	_	6	parataxis	6:parataxis	SpaceAfter=No
+9	..	..	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+10	]	]	PUNCT	_	_	8	punct	8:punct	_
+11	via	ver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	1:parataxis	_
+12	eleições	eleição	NOUN	_	Gender=Fem|Number=Plur	11	obj	11:obj	_
+13	indiretas	indireto	ADJ	_	Gender=Fem|Number=Plur	12	amod	12:amod	SpaceAfter=No
+14	,	,	PUNCT	_	_	16	punct	16:punct	_
+15	como	como	SCONJ	_	_	16	mark	16:mark	_
+16	manda	mandar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	advcl	11:advcl:como	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+18	"	"	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+19	livrinho	livrinho	NOUN	_	Gender=Masc|Number=Sing	16	nsubj	16:nsubj	_
+20-21	das	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	22:det	_
+22	leis	lei	NOUN	_	Gender=Fem|Number=Plur	19	nmod	19:nmod:de	SpaceAfter=No
+23	"	"	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+24	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0013
+# text = A ministra, com sua conduta insuspeitável, deixaria as ruas mais tranquilas.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	ministra	ministro	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	9:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
+4	com	com	ADP	_	_	6	case	6:case	_
+5	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	6	det	6:det	_
+6	conduta	conduta	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:com	_
+7	insuspeitável	insuspeitável	ADJ	_	Number=Sing	6	amod	6:amod	SpaceAfter=No
+8	,	,	PUNCT	_	_	6	punct	6:punct	_
+9	deixaria	deixar	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+10	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	11:det	_
+11	ruas	rua	NOUN	_	Gender=Fem|Number=Plur	9	obj	9:obj|13:nsubj	_
+12	mais	mais	ADV	_	_	13	advmod	13:advmod	_
+13	tranquilas	tranquilo	ADJ	_	Gender=Fem|Number=Plur	9	xcomp	9:xcomp	SpaceAfter=No
+14	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0015
+# text = Já Meirelles (como ministro da Fazenda) conduziria o mercado de maneira prudente até as próximas eleições diretas, em 2018.
+1	Já	já	CCONJ	_	_	10	cc	10:cc	_
+2	Meirelles	Meirelles	PROPN	_	_	10	nsubj	10:nsubj	_
+3	(	(	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+4	como	como	ADP	_	_	5	case	5:case	_
+5	ministro	ministro	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:como	_
+6-7	da	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	Fazenda	Fazenda	PROPN	_	_	5	nmod	5:nmod:de	SpaceAfter=No
+9	)	)	PUNCT	_	_	5	punct	5:punct	_
+10	conduziria	conduzir	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	mercado	mercado	NOUN	_	Gender=Masc|Number=Sing	10	obj	10:obj	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	maneira	maneira	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:de	_
+15	prudente	prudente	ADJ	_	Number=Sing	14	amod	14:amod	_
+16	até	até	ADP	_	_	19	case	19:case	_
+17	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	19:det	_
+18	próximas	próximo	ADJ	_	Gender=Fem|Number=Plur	19	amod	19:amod	_
+19	eleições	eleição	NOUN	_	Gender=Fem|Number=Plur	10	obl	10:obl:até	_
+20	diretas	direto	ADJ	_	Gender=Fem|Number=Plur	19	amod	19:amod	SpaceAfter=No
+21	,	,	PUNCT	_	_	23	punct	23:punct	_
+22	em	em	ADP	_	_	23	case	23:case	_
+23	2018	2018	NUM	_	NumType=Card	19	nmod	19:nmod:em	SpaceAfter=No
+24	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0017
+# text = Precisa ser um especialista pra perceber isso?
+1	Precisa	precisar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	ser	ser	AUX	_	VerbForm=Inf	4	cop	4:cop	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	especialista	especialista	NOUN	_	Number=Sing	1	xcomp	1:xcomp	_
+5	pra	para	ADP	_	_	6	mark	6:mark	_
+6	perceber	perceber	VERB	_	VerbForm=Inf	1	advcl	1:advcl:para	_
+7	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	6	obj	6:obj	SpaceAfter=No
+8	?	?	PUNCT	_	_	1	punct	1:punct	_

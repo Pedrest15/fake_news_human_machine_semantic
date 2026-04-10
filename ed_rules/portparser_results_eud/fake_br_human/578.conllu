@@ -1,0 +1,281 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Carro "fantasma" aparece "do nada" e causa acidente em esquina.
+1	Carro	carro	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj|12:nsubj	_
+2	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+3	fantasma	fantasma	ADJ	_	Gender=Masc|Number=Sing	1	amod	1:amod	SpaceAfter=No
+4	"	"	PUNCT	_	_	3	punct	3:punct	_
+5	aparece	aparecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	"	"	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	nada	nada	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:de	SpaceAfter=No
+10	"	"	PUNCT	_	_	9	punct	9:punct	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	causa	causar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	5:conj:e	_
+13	acidente	acidente	NOUN	_	Gender=Masc|Number=Sing	12	obj	12:obj	_
+14	em	em	ADP	_	_	15	case	15:case	_
+15	esquina	esquina	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl:em	SpaceAfter=No
+16	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0003
+# text = Câmeras captaram tudo.
+1	Câmeras	câmera	NOUN	_	Gender=Fem|Number=Plur	2	nsubj	2:nsubj	_
+2	captaram	captar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	tudo	tudo	PRON	_	PronType=Ind	2	obj	2:obj	SpaceAfter=No
+4	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = (Cingapura 18/10/2017) As filmagens da estranha colisão deixaram o motorista do carro que foi atingido, alguns pedestres e até mesmo a polícia de "cabelos em pé".
+1	(	(	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+2	Cingapura	Cingapura	PROPN	_	_	11	parataxis	11:parataxis	_
+3	18/10/2017	18/10/2017	NUM	_	NumType=Card	2	nmod	2:nmod	SpaceAfter=No
+4	)	)	PUNCT	_	_	2	punct	2:punct	_
+5	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	6:det	_
+6	filmagens	filmagem	NOUN	_	Gender=Fem|Number=Plur	11	nsubj	11:nsubj	_
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	10	case	10:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+9	estranha	estranho	ADJ	_	Gender=Fem|Number=Sing	10	amod	10:amod	_
+10	colisão	colisão	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de	_
+11	deixaram	deixar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	motorista	motorista	NOUN	_	Number=Sing	11	obj	11:obj	_
+14-15	do	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	carro	carro	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod:de|19:nsubj:pass	_
+17	que	que	PRON	_	PronType=Rel	19	nsubj:pass	16:ref	_
+18	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	aux:pass	19:aux:pass	_
+19	atingido	atingir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	16	acl:relcl	16:acl:relcl	SpaceAfter=No
+20	,	,	PUNCT	_	_	22	punct	22:punct	_
+21	alguns	algum	DET	_	Gender=Masc|Number=Plur|PronType=Ind	22	det	22:det	_
+22	pedestres	pedestre	NOUN	_	Number=Plur	13	conj	11:obj|13:conj:e	_
+23	e	e	CCONJ	_	_	27	cc	27:cc	_
+24	até	até	ADV	_	_	27	advmod	27:advmod	_
+25	mesmo	mesmo	ADV	_	_	24	advmod	24:advmod	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	polícia	polícia	NOUN	_	Number=Sing	13	conj	11:obj|13:conj:e	_
+28	de	de	ADP	_	_	30	case	30:case	_
+29	"	"	PUNCT	_	_	30	punct	30:punct	SpaceAfter=No
+30	cabelos	cabelo	NOUN	_	Gender=Masc|Number=Plur	27	nmod	27:nmod:de	_
+31	em	em	ADP	_	_	32	case	32:case	_
+32	pé	pé	NOUN	_	Gender=Masc|Number=Sing	30	nmod	30:nmod:em	SpaceAfter=No
+33	"	"	PUNCT	_	_	30	punct	30:punct	SpaceAfter=No
+34	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0007
+# text = O veículo que provocou a batida não pôde ser visto até o momento exato da colisão.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	veículo	veículo	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	4:nsubj|8:nsubj|10:nsubj:pass	_
+3	que	que	PRON	_	PronType=Rel	4	nsubj	2:ref	_
+4	provocou	provocar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	batida	batida	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+7	não	não	ADV	_	_	8	advmod	8:advmod	_
+8	pôde	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	ser	ser	AUX	_	VerbForm=Inf	10	aux:pass	10:aux:pass	_
+10	visto	ver	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	8	xcomp	8:xcomp	_
+11	até	até	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	momento	momento	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:até	_
+14	exato	exato	ADJ	_	Gender=Masc|Number=Sing	13	amod	13:amod	_
+15-16	da	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	colisão	colisão	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:de	SpaceAfter=No
+18	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0009
+# text = Repare que carro branco aguarda (em um entroncamento) sua vez de fazer uma conversão para a direita.
+1	Repare	reparar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	que	que	SCONJ	_	_	5	mark	5:mark	_
+3	carro	carro	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+4	branco	branco	ADJ	_	Gender=Masc|Number=Sing	3	amod	3:amod	_
+5	aguarda	aguardar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	1:ccomp	_
+6	(	(	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+7	em	em	ADP	_	_	9	case	9:case	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	entroncamento	entroncamento	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:em	SpaceAfter=No
+10	)	)	PUNCT	_	_	9	punct	9:punct	_
+11	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	12	det	12:det	_
+12	vez	vez	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+13	de	de	ADP	_	_	14	mark	14:mark	_
+14	fazer	fazer	VERB	_	VerbForm=Inf	12	acl	12:acl:de	_
+15	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	conversão	conversão	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	_
+17	para	para	ADP	_	_	19	case	19:case	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	direita	direita	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:para	SpaceAfter=No
+20	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0011
+# text = Tudo parece estar indo bem até que outro carro aparece repentinamente no meio da pista.
+1	Tudo	tudo	PRON	_	PronType=Ind	2	nsubj	2:nsubj|4:nsubj	_
+2	parece	parecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	estar	estar	AUX	_	VerbForm=Inf	4	aux	4:aux	_
+4	indo	ir	VERB	_	VerbForm=Ger	2	xcomp	2:xcomp	_
+5	bem	bem	ADV	_	_	4	advmod	4:advmod	_
+6	até	até	ADP	_	ExtPos=SCONJ	10	mark	10:mark	_
+7	que	que	SCONJ	_	_	6	fixed	6:fixed	_
+8	outro	outro	DET	_	Gender=Masc|Number=Sing|PronType=Ind	9	det	9:det	_
+9	carro	carro	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	10:nsubj	_
+10	aparece	aparecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	advcl	2:advcl:até_que	_
+11	repentinamente	repentinamente	ADV	_	_	10	advmod	10:advmod	_
+12-13	no	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	meio	meio	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:em	_
+15-16	da	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	pista	pista	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:de	SpaceAfter=No
+18	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0013
+# text = O carro prateado (que provocou a colisão) só apareceu na frente do outro motorista quando não era mais possível evitar o acidente.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	carro	carro	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	6:nsubj|11:nsubj	_
+3	prateado	prateado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	2	amod	2:amod	_
+4	(	(	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+5	que	que	PRON	_	PronType=Rel	6	nsubj	2:ref	_
+6	provocou	provocar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	colisão	colisão	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	SpaceAfter=No
+9	)	)	PUNCT	_	_	6	punct	6:punct	_
+10	só	só	ADV	_	_	11	advmod	11:advmod	_
+11	apareceu	aparecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12-13	na	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	frente	frente	NOUN	_	Gender=Fem|Number=Sing	11	obl	11:obl:em	_
+15-16	do	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	18	case	18:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+17	outro	outro	DET	_	Gender=Masc|Number=Sing|PronType=Ind	18	det	18:det	_
+18	motorista	motorista	NOUN	_	Number=Sing	14	nmod	14:nmod:de	_
+19	quando	quando	SCONJ	_	_	23	mark	23:mark	_
+20	não	não	ADV	_	_	23	advmod	23:advmod	_
+21	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	23	cop	23:cop	_
+22	mais	mais	ADV	_	_	23	advmod	23:advmod	_
+23	possível	possível	ADJ	_	Number=Sing	11	advcl	11:advcl:quando	_
+24	evitar	evitar	VERB	_	VerbForm=Inf	23	csubj	23:csubj	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	acidente	acidente	NOUN	_	Gender=Masc|Number=Sing	24	obj	24:obj	SpaceAfter=No
+27	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0015
+# text = Internautas de todo o mundo estão confusos, pois não há sinal do carro prateado antes do acidente.
+1	Internautas	internauta	NOUN	_	Number=Plur	7	nsubj	7:nsubj	_
+2	de	de	ADP	_	_	5	case	5:case	_
+3	todo	todo	DET	_	Gender=Masc|Number=Sing|PronType=Ind	5	det	5:det	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	1	nmod	1:nmod:de	_
+6	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+7	confusos	confuso	ADJ	_	Gender=Masc|Number=Plur	0	root	0:root	SpaceAfter=No
+8	,	,	PUNCT	_	_	11	punct	11:punct	_
+9	pois	pois	SCONJ	_	_	11	mark	11:mark	_
+10	não	não	ADV	_	_	11	advmod	11:advmod	_
+11	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	advcl	7:advcl:pois	_
+12	sinal	sinal	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj	_
+13-14	do	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	carro	carro	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:de	_
+16	prateado	prateado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	15	amod	15:amod	_
+17	antes	antes	ADV	_	_	11	advmod	11:advmod	_
+18-19	do	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	acidente	acidente	NOUN	_	Gender=Masc|Number=Sing	17	obl	17:obl:de	SpaceAfter=No
+21	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0017
+# text = Especialistas em imagens digitais analisaram o vídeo e não conseguiram chegar a uma conclusão racional.
+1	Especialistas	especialista	NOUN	_	Number=Plur	5	nsubj	5:nsubj|10:nsubj|11:nsubj	_
+2	em	em	ADP	_	_	3	case	3:case	_
+3	imagens	imagem	NOUN	_	Gender=Fem|Number=Plur	1	nmod	1:nmod:em	_
+4	digitais	digital	ADJ	_	Number=Plur	3	amod	3:amod	_
+5	analisaram	analisar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+8	e	e	CCONJ	_	_	10	cc	10:cc	_
+9	não	não	ADV	_	_	10	advmod	10:advmod	_
+10	conseguiram	conseguir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	5	conj	5:conj:e	_
+11	chegar	chegar	VERB	_	VerbForm=Inf	10	xcomp	10:xcomp	_
+12	a	a	ADP	_	_	14	case	14:case	_
+13	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	conclusão	conclusão	NOUN	_	Gender=Fem|Number=Sing	11	obl	11:obl:a	_
+15	racional	racional	ADJ	_	Number=Sing	14	amod	14:amod	SpaceAfter=No
+16	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0019
+# text = O vídeo misterioso fez com que alguns teóricos da conspiração especulassem que o acidente poderia ter sido causado por um "carro fantasma" que atravessou um "portal" de outra dimensão.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+3	misterioso	misterioso	ADJ	_	Gender=Masc|Number=Sing	2	amod	2:amod	_
+4	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	com	com	ADP	_	ExtPos=SCONJ	12	mark	12:mark	_
+6	que	que	SCONJ	_	_	5	fixed	5:fixed	_
+7	alguns	algum	DET	_	Gender=Masc|Number=Plur|PronType=Ind	8	det	8:det	_
+8	teóricos	teórico	NOUN	_	Gender=Masc|Number=Plur	12	nsubj	12:nsubj	_
+9-10	da	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	conspiração	conspiração	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	_
+12	especulassem	especular	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	4	ccomp	4:ccomp	_
+13	que	que	SCONJ	_	_	16	mark	16:mark	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	acidente	acidente	NOUN	_	Gender=Masc|Number=Sing	16	nsubj	16:nsubj|19:nsubj:pass	_
+16	poderia	poder	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	12	ccomp	12:ccomp	_
+17	ter	ter	AUX	_	VerbForm=Inf	19	aux	19:aux	_
+18	sido	ser	AUX	_	Gender=Masc|Number=Sing|VerbForm=Part	19	aux:pass	19:aux:pass	_
+19	causado	causar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	16	xcomp	16:xcomp	_
+20	por	por	ADP	_	_	23	case	23:case	_
+21	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+22	"	"	PUNCT	_	_	23	punct	23:punct	SpaceAfter=No
+23	carro	carro	NOUN	_	Gender=Masc|Number=Sing	19	obl:agent	19:obl:agent|27:nsubj	_
+24	fantasma	fantasma	ADJ	_	Gender=Masc|Number=Sing	23	amod	23:amod	SpaceAfter=No
+25	"	"	PUNCT	_	_	23	punct	23:punct	_
+26	que	que	PRON	_	PronType=Rel	27	nsubj	23:ref	_
+27	atravessou	atravessar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	acl:relcl	23:acl:relcl	_
+28	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	30	det	30:det	_
+29	"	"	PUNCT	_	_	30	punct	30:punct	SpaceAfter=No
+30	portal	portal	NOUN	_	Gender=Masc|Number=Sing	27	obj	27:obj	SpaceAfter=No
+31	"	"	PUNCT	_	_	30	punct	30:punct	_
+32	de	de	ADP	_	_	34	case	34:case	_
+33	outra	outro	DET	_	Gender=Fem|Number=Sing|PronType=Ind	34	det	34:det	_
+34	dimensão	dimensão	NOUN	_	Gender=Fem|Number=Sing	30	nmod	30:nmod:de	SpaceAfter=No
+35	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0021
+# text = Outros sugeriram que a posição do carro branco pode ter bloqueado a câmera e a impediu de capturar a abordagem do outro motorista.
+1	Outros	outro	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	2	nsubj	2:nsubj	_
+2	sugeriram	sugerir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	10	mark	10:mark|17:mark	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	posição	posição	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	10:nsubj|12:nsubj|17:nsubj	_
+6-7	do	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	carro	carro	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:de	_
+9	branco	branco	ADJ	_	Gender=Masc|Number=Sing	8	amod	8:amod	_
+10	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	2:ccomp	_
+11	ter	ter	AUX	_	VerbForm=Inf	12	aux	12:aux	_
+12	bloqueado	bloquear	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	10	xcomp	10:xcomp	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	câmera	câmera	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+15	e	e	CCONJ	_	_	17	cc	17:cc	_
+16	a	o	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	17	obj	17:obj|19:nsubj	_
+17	impediu	impedir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	conj	2:ccomp|10:conj:e	_
+18	de	de	ADP	_	_	19	mark	19:mark	_
+19	capturar	capturar	VERB	_	VerbForm=Inf	17	xcomp	17:xcomp	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	abordagem	abordagem	NOUN	_	Gender=Fem|Number=Sing	19	obj	19:obj	_
+22-23	do	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	25	case	25:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+24	outro	outro	DET	_	Gender=Masc|Number=Sing|PronType=Ind	25	det	25:det	_
+25	motorista	motorista	NOUN	_	Number=Sing	21	nmod	21:nmod:de	SpaceAfter=No
+26	.	.	PUNCT	_	_	2	punct	2:punct	_

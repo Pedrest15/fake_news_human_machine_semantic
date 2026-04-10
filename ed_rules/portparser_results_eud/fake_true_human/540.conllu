@@ -1,0 +1,77 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = filhotes de labrador com 2 dias: mãe abandonou e dono está doando gente ajuda aí!
+1	filhotes	filhote	NOUN	_	Gender=Masc|Number=Plur	0	root	0:root	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	labrador	labrador	NOUN	_	Gender=Masc|Number=Sing	1	nmod	1:nmod:de	_
+4	com	com	ADP	_	_	6	case	6:case	_
+5	2	2	NUM	_	NumType=Card	6	nummod	6:nummod	_
+6	dias	dia	NOUN	_	Gender=Masc|Number=Plur	3	nmod	3:nmod:com	SpaceAfter=No
+7	:	:	PUNCT	_	_	9	punct	9:punct	_
+8	mãe	mãe	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	9:nsubj	_
+9	abandonou	abandonar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	parataxis	1:parataxis	_
+10	e	e	CCONJ	_	_	13	cc	13:cc	_
+11	dono	dono	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	13:nsubj	_
+12	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux	13:aux	_
+13	doando	doar	VERB	_	VerbForm=Ger	9	conj	1:parataxis|9:conj:e	_
+14	gente	gente	NOUN	_	Gender=Fem|Number=Sing	13	obj	13:obj	_
+15	ajuda	ajudar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	parataxis	9:parataxis	_
+16	aí	aí	ADV	_	_	15	advmod	15:advmod	SpaceAfter=No
+17	!	!	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0003
+# text = filhotes de labrador com 2 dias.
+1	filhotes	filhote	NOUN	_	Gender=Masc|Number=Plur	0	root	0:root	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	labrador	labrador	NOUN	_	Gender=Masc|Number=Sing	1	nmod	1:nmod:de	_
+4	com	com	ADP	_	_	6	case	6:case	_
+5	2	2	NUM	_	NumType=Card	6	nummod	6:nummod	_
+6	dias	dia	NOUN	_	Gender=Masc|Number=Plur	1	nmod	1:nmod:com	SpaceAfter=No
+7	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0005
+# text = a mãe abandonou não está cuidando , o dono está doando os filhotes antes que morram.
+1	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	mãe	mãe	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj	_
+3	abandonou	abandonar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	amod	2:amod	_
+4	não	não	ADV	_	_	6	advmod	6:advmod	_
+5	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	6:aux	_
+6	cuidando	cuidar	VERB	_	VerbForm=Ger	0	root	0:root	_
+7	,	,	PUNCT	_	_	11	punct	11:punct	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	dono	dono	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	11:nsubj	_
+10	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux	11:aux	_
+11	doando	doar	VERB	_	VerbForm=Ger	6	parataxis	6:parataxis	_
+12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	13:det	_
+13	filhotes	filhote	NOUN	_	Gender=Masc|Number=Plur	11	obj	11:obj	_
+14	antes	antes	ADV	_	ExtPos=SCONJ	16	mark	16:mark	_
+15	que	que	SCONJ	_	_	14	fixed	14:fixed	_
+16	morram	morrer	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	advcl	11:advcl:antes_que	SpaceAfter=No
+17	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0007
+# text = quem se interessar e só ligar para o número telefone, falar com nome da pessoa divulguem em outros grupos .obrigada.
+1	quem	quem	PRON	_	PronType=Ind	18	nsubj	18:nsubj	_
+2	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	3	expl	3:expl	_
+3	interessar	interessar	VERB	_	Number=Sing|Person=3|VerbForm=Inf	1	acl:relcl	1:acl:relcl	_
+4	e	e	CCONJ	_	_	6	cc	6:cc	_
+5	só	só	ADV	_	_	6	advmod	6:advmod	_
+6	ligar	ligar	VERB	_	VerbForm=Inf	1	conj	1:conj:e|18:nsubj	_
+7	para	para	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	número	número	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:para	_
+10	telefone	telefone	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	falar	falar	VERB	_	VerbForm=Inf	6	conj	6:conj|18:nsubj	_
+13	com	com	ADP	_	_	14	case	14:case	_
+14	nome	nome	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:com	_
+15-16	da	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	pessoa	pessoa	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:de	_
+18	divulguem	divulgar	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+19	em	em	ADP	_	_	21	case	21:case	_
+20	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	21	det	21:det	_
+21	grupos	grupo	NOUN	_	Gender=Masc|Number=Plur	18	obl	18:obl:em	_
+22	.obrigada	.obrigado	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	18	punct	18:punct	SpaceAfter=No
+23	.	.	PUNCT	_	_	18	punct	18:punct	_

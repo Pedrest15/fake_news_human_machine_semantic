@@ -1,0 +1,473 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Senador acusa Gleisi Hoffmann e Lindbergh Farias de planejarem caos nas ruas.
+1	Senador	senador	NOUN	_	Gender=Masc|Number=Sing	2	nsubj	2:nsubj	_
+2	acusa	acusar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	Gleisi	Gleisi	PROPN	_	_	2	obj	2:obj|9:nsubj	_
+4	Hoffmann	Hoffmann	PROPN	_	_	3	flat:name	3:flat:name	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	Lindbergh	Lindbergh	PROPN	_	_	3	conj	2:obj|3:conj:e|9:nsubj	_
+7	Farias	Farias	PROPN	_	_	6	flat:name	6:flat:name	_
+8	de	de	ADP	_	_	9	mark	9:mark	_
+9	planejarem	planejar	VERB	_	Number=Plur|Person=3|VerbForm=Inf	2	xcomp	2:xcomp	_
+10	caos	caos	NOUN	_	Gender=Masc|Number=Sing	9	obj	9:obj	_
+11-12	nas	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	13:det	_
+13	ruas	rua	NOUN	_	Gender=Fem|Number=Plur	10	nmod	10:nmod:em	SpaceAfter=No
+14	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = José Medeiros (Pode) apresentou denúncia por suposta incitação à violência.
+1	José	José	PROPN	_	_	6	nsubj	6:nsubj	_
+2	Medeiros	Medeiros	PROPN	_	_	1	flat:name	1:flat:name	_
+3	(	(	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+4	Pode	Pode	PROPN	_	_	1	parataxis	1:parataxis	SpaceAfter=No
+5	)	)	PUNCT	_	_	4	punct	4:punct	_
+6	apresentou	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	denúncia	denúncia	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+8	por	por	ADP	_	_	10	case	10:case	_
+9	suposta	suposto	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	10	amod	10:amod	_
+10	incitação	incitação	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:por	_
+11-12	à	_	_	_	_	_	_	_	_
+11	a	a	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	violência	violência	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:a	SpaceAfter=No
+14	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0005
+# text = O PT reage, chamando a ação de "cruzada antidemocrática".
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	PT	PT	PROPN	_	_	3	nsubj	3:nsubj	_
+3	reage	reagir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	chamando	chamar	VERB	_	VerbForm=Ger	3	advcl	3:advcl	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	ação	ação	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+10	cruzada	cruzada	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:de	_
+11	antidemocrática	antidemocrático	ADJ	_	Gender=Fem|Number=Sing	10	amod	10:amod	SpaceAfter=No
+12	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+13	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = Nesta quinta-feira (8), o senador José Medeiros (Pode-MT) protocolou denúncias no Conselho de Ética do Senado contra a senadora Gleisi Hoffmann (PR), presidente nacional do PT, e contra o líder do PT na Casa, Lindbergh Farias (RJ).
+1-2	Nesta	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	3:det	_
+3	quinta-feira	quinta-feira	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl:em	_
+4	(	(	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+5	8	8	NUM	_	NumType=Card	3	appos	3:appos	SpaceAfter=No
+6	)	)	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+7	,	,	PUNCT	_	_	3	punct	3:punct	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	senador	senador	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	15:nsubj	_
+10	José	José	PROPN	_	_	9	nmod	9:nmod	_
+11	Medeiros	Medeiros	PROPN	_	_	10	flat:name	10:flat:name	_
+12	(	(	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+13	Pode-MT	Pode-MT	PROPN	_	_	9	parataxis	9:parataxis	SpaceAfter=No
+14	)	)	PUNCT	_	_	13	punct	13:punct	_
+15	protocolou	protocolar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+16	denúncias	denúncia	NOUN	_	Gender=Fem|Number=Plur	15	obj	15:obj	_
+17-18	no	_	_	_	_	_	_	_	_
+17	em	em	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	Conselho	Conselho	PROPN	_	_	15	obl	15:obl:em	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	Ética	Ética	PROPN	_	_	19	flat:name	19:flat:name	_
+22-23	do	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	Senado	Senado	PROPN	_	_	19	flat:name	19:flat:name	_
+25	contra	contra	ADP	_	_	27	case	27:case	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	senadora	senador	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl:contra	_
+28	Gleisi	Gleisi	PROPN	_	_	27	nmod	27:nmod	_
+29	Hoffmann	Hoffmann	PROPN	_	_	28	flat:name	28:flat:name	_
+30	(	(	PUNCT	_	_	31	punct	31:punct	SpaceAfter=No
+31	PR	PR	PROPN	_	_	28	parataxis	28:parataxis	SpaceAfter=No
+32	)	)	PUNCT	_	_	31	punct	31:punct	SpaceAfter=No
+33	,	,	PUNCT	_	_	34	punct	34:punct	_
+34	presidente	presidente	NOUN	_	Number=Sing	27	appos	27:appos	_
+35	nacional	nacional	ADJ	_	Number=Sing	34	amod	34:amod	_
+36-37	do	_	_	_	_	_	_	_	_
+36	de	de	ADP	_	_	38	case	38:case	_
+37	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	38:det	_
+38	PT	PT	PROPN	_	_	34	nmod	34:nmod:de	SpaceAfter=No
+39	,	,	PUNCT	_	_	43	punct	43:punct	_
+40	e	e	CCONJ	_	_	43	cc	43:cc	_
+41	contra	contra	ADP	_	_	43	case	43:case	_
+42	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	43	det	43:det	_
+43	líder	líder	NOUN	_	Gender=Masc|Number=Sing	27	conj	15:obl:contra|27:conj:e	_
+44-45	do	_	_	_	_	_	_	_	_
+44	de	de	ADP	_	_	46	case	46:case	_
+45	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	46	det	46:det	_
+46	PT	PT	PROPN	_	_	43	nmod	43:nmod:de	_
+47-48	na	_	_	_	_	_	_	_	_
+47	em	em	ADP	_	_	49	case	49:case	_
+48	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	49	det	49:det	_
+49	Casa	Casa	PROPN	_	_	43	nmod	43:nmod:em	SpaceAfter=No
+50	,	,	PUNCT	_	_	51	punct	51:punct	_
+51	Lindbergh	Lindbergh	PROPN	_	_	43	appos	43:appos	_
+52	Farias	Farias	PROPN	_	_	51	flat:name	51:flat:name	_
+53	(	(	PUNCT	_	_	54	punct	54:punct	SpaceAfter=No
+54	RJ	RJ	PROPN	_	_	51	parataxis	51:parataxis	SpaceAfter=No
+55	)	)	PUNCT	_	_	54	punct	54:punct	SpaceAfter=No
+56	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0009
+# text = As denúncias alegam que ambos estariam planejando incitar caos e tumultos nas ruas como forma de reação à condenação do ex-presidente Luiz Inácio Lula da Silva.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	denúncias	denúncia	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	3:nsubj	_
+3	alegam	alegar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	7	mark	7:mark	_
+5	ambos	ambos	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	7	nsubj	7:nsubj|8:nsubj	_
+6	estariam	estar	AUX	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	7	aux	7:aux	_
+7	planejando	planejar	VERB	_	VerbForm=Ger	3	ccomp	3:ccomp	_
+8	incitar	incitar	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+9	caos	caos	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	tumultos	tumulto	NOUN	_	Gender=Masc|Number=Plur	9	conj	8:obj|9:conj:e	_
+12-13	nas	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	14:det	_
+14	ruas	rua	NOUN	_	Gender=Fem|Number=Plur	8	obl	8:obl:em	_
+15	como	como	ADP	_	_	16	case	16:case	_
+16	forma	forma	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:como	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	reação	reação	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:de	_
+19-20	à	_	_	_	_	_	_	_	_
+19	a	a	ADP	_	_	21	case	21:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	condenação	condenação	NOUN	_	Gender=Fem|Number=Sing	18	nmod	18:nmod:a	_
+22-23	do	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	ex-presidente	ex-presidente	NOUN	_	Number=Sing	21	nmod	21:nmod:de	_
+25	Luiz	Luiz	PROPN	_	_	24	nmod	24:nmod	_
+26	Inácio	Inácio	PROPN	_	_	25	flat:name	25:flat:name	_
+27	Lula	Lula	PROPN	_	_	25	flat:name	25:flat:name	_
+28-29	da	_	_	_	_	_	_	_	_
+28	de	de	ADP	_	_	30	case	30:case	_
+29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	Silva	Silva	PROPN	_	_	25	flat:name	25:flat:name	SpaceAfter=No
+31	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0011
+# text = Medeiros destacou uma entrevista de Gleisi Hoffmann ao site Poder 360, onde ela teria afirmado: "Para prender o Lula, vão precisar enfrentar uma resistência histórica, e isso pode acabar em confronto violento".
+1	Medeiros	Medeiros	PROPN	_	_	2	nsubj	2:nsubj	_
+2	destacou	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	entrevista	entrevista	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj|17:obl	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	Gleisi	Gleisi	PROPN	_	_	4	nmod	4:nmod:de	_
+7	Hoffmann	Hoffmann	PROPN	_	_	6	flat:name	6:flat:name	_
+8-9	ao	_	_	_	_	_	_	_	_
+8	a	a	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	site	site	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:a	_
+11	Poder	Poder	PROPN	_	_	10	nmod	10:nmod	_
+12	360	360	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+13	,	,	PUNCT	_	_	17	punct	17:punct	_
+14	onde	onde	ADV	_	_	17	advmod	4:ref	_
+15	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	17	nsubj	17:nsubj	_
+16	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	17	aux	17:aux	_
+17	afirmado	afirmar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	4	acl:relcl	4:acl:relcl	SpaceAfter=No
+18	:	:	PUNCT	_	_	26	punct	26:punct	_
+19	"	"	PUNCT	_	_	26	punct	26:punct	SpaceAfter=No
+20	Para	para	ADP	_	_	21	mark	21:mark	_
+21	prender	prender	VERB	_	VerbForm=Inf	26	advcl	26:advcl:para|34:advcl:para	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	Lula	Lula	PROPN	_	_	21	obj	21:obj	SpaceAfter=No
+24	,	,	PUNCT	_	_	21	punct	21:punct	_
+25	vão	ir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	26	aux	26:aux	_
+26	precisar	precisar	VERB	_	VerbForm=Inf	17	ccomp:speech	17:ccomp:speech	_
+27	enfrentar	enfrentar	VERB	_	VerbForm=Inf	26	xcomp	26:xcomp	_
+28	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	resistência	resistência	NOUN	_	Gender=Fem|Number=Sing	27	obj	27:obj	_
+30	histórica	histórico	ADJ	_	Gender=Fem|Number=Sing	29	amod	29:amod	SpaceAfter=No
+31	,	,	PUNCT	_	_	34	punct	34:punct	_
+32	e	e	CCONJ	_	_	34	cc	34:cc	_
+33	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	34	nsubj	34:nsubj|35:nsubj	_
+34	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	conj	17:ccomp:speech|26:conj:e	_
+35	acabar	acabar	VERB	_	VerbForm=Inf	34	xcomp	34:xcomp	_
+36	em	em	ADP	_	_	37	case	37:case	_
+37	confronto	confronto	NOUN	_	Gender=Masc|Number=Sing	35	obl	35:obl:em	_
+38	violento	violento	ADJ	_	Gender=Masc|Number=Sing	37	amod	37:amod	SpaceAfter=No
+39	"	"	PUNCT	_	_	26	punct	26:punct	SpaceAfter=No
+40	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0013
+# text = O senador argumenta que tais declarações são uma clara apologia à desordem e à violência.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	senador	senador	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	argumenta	argumentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	10	mark	10:mark	_
+5	tais	tal	DET	_	Number=Sing|PronType=Dem	6	det	6:det	_
+6	declarações	declaração	NOUN	_	Gender=Fem|Number=Plur	10	nsubj	10:nsubj	_
+7	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_
+8	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+9	clara	claro	ADJ	_	Gender=Fem|Number=Sing	10	amod	10:amod	_
+10	apologia	apologia	NOUN	_	Gender=Fem|Number=Sing	3	ccomp	3:ccomp	_
+11-12	à	_	_	_	_	_	_	_	_
+11	a	a	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	desordem	desordem	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:a	_
+14	e	e	CCONJ	_	_	17	cc	17:cc	_
+15-16	à	_	_	_	_	_	_	_	_
+15	a	a	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	violência	violência	NOUN	_	Gender=Fem|Number=Sing	13	conj	10:nmod:a|13:conj:e	SpaceAfter=No
+18	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0015
+# text = Em relação a Lindbergh Farias, Medeiros apontou postagens nas redes sociais onde o líder petista incentivaria a militância a "lutar com todas as forças" contra a decisão judicial, sugerindo a possibilidade de "ações diretas" nas ruas.
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	relação	relação	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:em	_
+3	a	a	ADP	_	_	4	case	4:case	_
+4	Lindbergh	Lindbergh	PROPN	_	_	2	nmod	2:nmod:a	_
+5	Farias	Farias	PROPN	_	_	4	flat:name	4:flat:name	SpaceAfter=No
+6	,	,	PUNCT	_	_	2	punct	2:punct	_
+7	Medeiros	Medeiros	PROPN	_	_	8	nsubj	8:nsubj	_
+8	apontou	apontar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	postagens	postagem	NOUN	_	Gender=Fem|Number=Plur	8	obj	8:obj|18:obl	_
+10-11	nas	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	12:det	_
+12	redes	rede	NOUN	_	Gender=Fem|Number=Plur	9	nmod	9:nmod:em	_
+13	sociais	social	ADJ	_	Number=Plur	12	amod	12:amod	_
+14	onde	onde	ADV	_	_	18	advmod	9:ref	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	líder	líder	NOUN	_	Gender=Masc|Number=Sing	18	nsubj	18:nsubj	_
+17	petista	petista	ADJ	_	Number=Sing	16	amod	16:amod	_
+18	incentivaria	incentivar	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	9	acl:relcl	9:acl:relcl	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	militância	militância	NOUN	_	Gender=Fem|Number=Sing	18	obj	18:obj|23:nsubj	_
+21	a	a	ADP	_	_	23	mark	23:mark	_
+22	"	"	PUNCT	_	_	23	punct	23:punct	SpaceAfter=No
+23	lutar	lutar	VERB	_	VerbForm=Inf	18	xcomp	18:xcomp	_
+24	com	com	ADP	_	_	27	case	27:case	_
+25	todas	todo	DET	_	Gender=Fem|Number=Plur|PronType=Ind	27	det	27:det	_
+26	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	27	det	27:det	_
+27	forças	força	NOUN	_	Gender=Fem|Number=Plur	23	obl	23:obl:com	SpaceAfter=No
+28	"	"	PUNCT	_	_	23	punct	23:punct	_
+29	contra	contra	ADP	_	_	31	case	31:case	_
+30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+31	decisão	decisão	NOUN	_	Gender=Fem|Number=Sing	23	obl	23:obl:contra	_
+32	judicial	judicial	ADJ	_	Number=Sing	31	amod	31:amod	SpaceAfter=No
+33	,	,	PUNCT	_	_	34	punct	34:punct	_
+34	sugerindo	sugerir	VERB	_	VerbForm=Ger	18	advcl	18:advcl	_
+35	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	36:det	_
+36	possibilidade	possibilidade	NOUN	_	Gender=Fem|Number=Sing	34	obj	34:obj	_
+37	de	de	ADP	_	_	39	case	39:case	_
+38	"	"	PUNCT	_	_	39	punct	39:punct	SpaceAfter=No
+39	ações	ação	NOUN	_	Gender=Fem|Number=Plur	36	nmod	36:nmod:de	_
+40	diretas	direto	ADJ	_	Gender=Fem|Number=Plur	39	amod	39:amod	SpaceAfter=No
+41	"	"	PUNCT	_	_	39	punct	39:punct	_
+42-43	nas	_	_	_	_	_	_	_	_
+42	em	em	ADP	_	_	44	case	44:case	_
+43	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	44	det	44:det	_
+44	ruas	rua	NOUN	_	Gender=Fem|Number=Plur	39	nmod	39:nmod:em	SpaceAfter=No
+45	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0017
+# text = "Isso é um abuso inaceitável da imunidade parlamentar", afirmou Medeiros, pedindo a abertura de processo disciplinar que pode levar à perda de mandato dos senadores.
+1	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+2	Isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	5	nsubj	5:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	abuso	abuso	NOUN	_	Gender=Masc|Number=Sing	13	ccomp:speech	13:ccomp:speech	_
+6	inaceitável	inaceitável	ADJ	_	Number=Sing	5	amod	5:amod	_
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	imunidade	imunidade	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	_
+10	parlamentar	parlamentar	ADJ	_	Number=Sing	9	amod	9:amod	SpaceAfter=No
+11	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+12	,	,	PUNCT	_	_	5	punct	5:punct	_
+13	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	Medeiros	Medeiros	PROPN	_	_	13	nsubj	13:nsubj	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	pedindo	pedir	VERB	_	VerbForm=Ger	13	advcl	13:advcl	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	abertura	abertura	NOUN	_	Gender=Fem|Number=Sing	16	obj	16:obj	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	processo	processo	NOUN	_	Gender=Masc|Number=Sing	18	nmod	18:nmod:de|23:nsubj|24:nsubj	_
+21	disciplinar	disciplinar	ADJ	_	Number=Sing	20	amod	20:amod	_
+22	que	que	PRON	_	PronType=Rel	23	nsubj	20:ref	_
+23	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	acl:relcl	20:acl:relcl	_
+24	levar	levar	VERB	_	VerbForm=Inf	23	xcomp	23:xcomp	_
+25-26	à	_	_	_	_	_	_	_	_
+25	a	a	ADP	_	_	27	case	27:case	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	perda	perda	NOUN	_	Gender=Fem|Number=Sing	24	obl	24:obl:a	_
+28	de	de	ADP	_	_	29	case	29:case	_
+29	mandato	mandato	NOUN	_	Gender=Masc|Number=Sing	27	nmod	27:nmod:de	_
+30-31	dos	_	_	_	_	_	_	_	_
+30	de	de	ADP	_	_	32	case	32:case	_
+31	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	det	32:det	_
+32	senadores	senador	NOUN	_	Gender=Masc|Number=Plur	29	nmod	29:nmod:de	SpaceAfter=No
+33	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0019
+# text = O PT respondeu com uma nota enfática, denunciando a ação de Medeiros como uma "cruzada antidemocrática" destinada a silenciar a oposição.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	PT	PT	PROPN	_	_	3	nsubj	3:nsubj	_
+3	respondeu	responder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	com	com	ADP	_	_	6	case	6:case	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	nota	nota	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:com	_
+7	enfática	enfático	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	denunciando	denunciar	VERB	_	VerbForm=Ger	3	advcl	3:advcl	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	ação	ação	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	Medeiros	Medeiros	PROPN	_	_	11	nmod	11:nmod:de	_
+14	como	como	ADP	_	_	17	case	17:case	_
+15	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+16	"	"	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+17	cruzada	cruzada	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:como	_
+18	antidemocrática	antidemocrático	ADJ	_	Gender=Fem|Number=Sing	17	amod	17:amod	SpaceAfter=No
+19	"	"	PUNCT	_	_	17	punct	17:punct	_
+20	destinada	destinar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	17	acl	17:acl	_
+21	a	a	ADP	_	_	22	mark	22:mark	_
+22	silenciar	silenciar	VERB	_	VerbForm=Inf	20	xcomp	20:xcomp	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	oposição	oposição	NOUN	_	Gender=Fem|Number=Sing	22	obj	22:obj	SpaceAfter=No
+25	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0021
+# text = A verdade é que os defensores do golpe não suportam a nossa voz.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	verdade	verdade	NOUN	_	Gender=Fem|Number=Sing	11	nsubj:outer	11:nsubj:outer	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	11:cop	_
+4	que	que	SCONJ	_	_	11	mark	11:mark	_
+5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	6:det	_
+6	defensores	defensor	NOUN	_	Gender=Masc|Number=Plur	11	nsubj	11:nsubj	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	golpe	golpe	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de	_
+10	não	não	ADV	_	_	11	advmod	11:advmod	_
+11	suportam	suportar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+13	nossa	nosso	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	14	det	14:det	_
+14	voz	voz	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	SpaceAfter=No
+15	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0023
+# text = Tentam nos acusar de incitar violência, mas nosso compromisso é com a democracia e a paz social, declarou o partido.
+1	Tentam	tentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	ccomp:speech	20:ccomp:speech	_
+2	nos	nos	PRON	_	Case=Acc|Number=Plur|Person=1|PronType=Prs	3	obj	3:obj|5:nsubj	_
+3	acusar	acusar	VERB	_	VerbForm=Inf	1	xcomp	1:xcomp	_
+4	de	de	ADP	_	_	5	mark	5:mark	_
+5	incitar	incitar	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+6	violência	violência	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	SpaceAfter=No
+7	,	,	PUNCT	_	_	14	punct	14:punct	_
+8	mas	mas	CCONJ	_	_	14	cc	14:cc	_
+9	nosso	nosso	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	10	det	10:det	_
+10	compromisso	compromisso	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	14:nsubj|17:nsubj	_
+11	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	14:cop|17:cop	_
+12	com	com	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	democracia	democracia	NOUN	_	Gender=Fem|Number=Sing	1	conj	1:conj:mas|20:ccomp:speech	_
+15	e	e	CCONJ	_	_	17	cc	17:cc	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	paz	paz	NOUN	_	Gender=Fem|Number=Sing	14	conj	14:conj:e|20:ccomp:speech	_
+18	social	social	ADJ	_	Number=Sing	17	amod	17:amod	SpaceAfter=No
+19	,	,	PUNCT	_	_	1	punct	1:punct	_
+20	declarou	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	partido	partido	NOUN	_	Gender=Masc|Number=Sing	20	nsubj	20:nsubj	SpaceAfter=No
+23	.	.	PUNCT	_	_	20	punct	20:punct	_
+
+# sent_id = S0025
+# text = Enquanto isso, Lindbergh Farias reagiu às acusações: É uma distorção criminosa das nossas palavras.
+1	Enquanto	enquanto	ADV	_	ExtPos=ADV	6	advmod	6:advmod	_
+2	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	fixed	1:fixed	SpaceAfter=No
+3	,	,	PUNCT	_	_	1	punct	1:punct	_
+4	Lindbergh	Lindbergh	PROPN	_	_	6	nsubj	6:nsubj	_
+5	Farias	Farias	PROPN	_	_	4	flat:name	4:flat:name	_
+6	reagiu	reagir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7-8	às	_	_	_	_	_	_	_	_
+7	a	a	ADP	_	_	9	case	9:case	_
+8	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	9:det	_
+9	acusações	acusação	NOUN	_	Gender=Fem|Number=Plur	6	obl	6:obl:a	SpaceAfter=No
+10	:	:	PUNCT	_	_	13	punct	13:punct	_
+11	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	13:cop	_
+12	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	distorção	distorção	NOUN	_	Gender=Fem|Number=Sing	6	parataxis	6:parataxis	_
+14	criminosa	criminoso	ADJ	_	Gender=Fem|Number=Sing	13	amod	13:amod	_
+15-16	das	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	18	case	18:case	_
+16	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	18:det	_
+17	nossas	nosso	DET	_	Gender=Fem|Number=Plur|Person=1|Poss=Yes|PronType=Prs	18	det	18:det	_
+18	palavras	palavra	NOUN	_	Gender=Fem|Number=Plur	13	nmod	13:nmod:de	SpaceAfter=No
+19	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0027
+# text = Sempre defendemos a desobediência civil de forma pacífica, jamais a violência.
+1	Sempre	sempre	ADV	_	_	2	advmod	2:advmod	_
+2	defendemos	defender	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	desobediência	desobediência	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+5	civil	civil	ADJ	_	Number=Sing	4	amod	4:amod	_
+6	de	de	ADP	_	_	7	case	7:case|12:case	_
+7	forma	forma	NOUN	_	Gender=Fem|Number=Sing	2	obl	2:obl:de	_
+8	pacífica	pacífico	ADJ	_	Gender=Fem|Number=Sing	7	amod	7:amod	SpaceAfter=No
+9	,	,	PUNCT	_	_	12	punct	12:punct	_
+10	jamais	jamais	ADV	_	_	12	advmod	12:advmod	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	violência	violência	NOUN	_	Gender=Fem|Number=Sing	7	conj	2:obl:de|7:conj	SpaceAfter=No
+13	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0029
+# text = Medeiros prefere manipular fatos para criar um clima de tensão.
+1	Medeiros	Medeiros	PROPN	_	_	2	nsubj	2:nsubj|3:nsubj	_
+2	prefere	preferir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	manipular	manipular	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	_
+4	fatos	fato	NOUN	_	Gender=Masc|Number=Plur	3	obj	3:obj	_
+5	para	para	ADP	_	_	6	mark	6:mark	_
+6	criar	criar	VERB	_	VerbForm=Inf	3	advcl	3:advcl:para	_
+7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	clima	clima	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	tensão	tensão	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	SpaceAfter=No
+11	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0031
+# text = As denúncias, se aceitas, poderiam resultar em censura ou advertência, mas há a possibilidade de serem convertidas em representações que poderiam levar à perda de mandato.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	denúncias	denúncia	NOUN	_	Gender=Fem|Number=Plur	7	nsubj	7:nsubj|8:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	5	punct	5:punct	_
+4	se	se	SCONJ	_	_	5	mark	5:mark	_
+5	aceitas	aceitar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	7	advcl	7:advcl:se|15:advcl:se	SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	5:punct	_
+7	poderiam	poder	VERB	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	0	root	0:root	_
+8	resultar	resultar	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+9	em	em	ADP	_	_	10	case	10:case|12:case	_
+10	censura	censura	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:em	_
+11	ou	ou	CCONJ	_	_	12	cc	12:cc	_
+12	advertência	advertência	NOUN	_	Gender=Fem|Number=Sing	10	conj	8:obl:em|10:conj:ou	SpaceAfter=No
+13	,	,	PUNCT	_	_	15	punct	15:punct	_
+14	mas	mas	CCONJ	_	_	15	cc	15:cc	_
+15	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	7:conj:mas	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	possibilidade	possibilidade	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	_
+18	de	de	ADP	_	_	20	mark	20:mark	_
+19	serem	ser	AUX	_	Number=Plur|Person=3|VerbForm=Inf	20	aux:pass	20:aux:pass	_
+20	convertidas	converter	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	17	acl	17:acl:de	_
+21	em	em	ADP	_	_	22	case	22:case	_
+22	representações	representação	NOUN	_	Gender=Fem|Number=Plur	20	obl	20:obl:em|24:nsubj|25:nsubj	_
+23	que	que	PRON	_	PronType=Rel	24	nsubj	22:ref	_
+24	poderiam	poder	VERB	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	22	acl:relcl	22:acl:relcl	_
+25	levar	levar	VERB	_	VerbForm=Inf	24	xcomp	24:xcomp	_
+26-27	à	_	_	_	_	_	_	_	_
+26	a	a	ADP	_	_	28	case	28:case	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	perda	perda	NOUN	_	Gender=Fem|Number=Sing	25	obl	25:obl:a	_
+29	de	de	ADP	_	_	30	case	30:case	_
+30	mandato	mandato	NOUN	_	Gender=Masc|Number=Sing	28	nmod	28:nmod:de	SpaceAfter=No
+31	.	.	PUNCT	_	_	7	punct	7:punct	_

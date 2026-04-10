@@ -1,0 +1,683 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Quinta-feira, 16 de novembro de 2017.
+1	Quinta-feira	quinta-feira	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	16	16	NUM	_	NumType=Card	1	appos	1:appos	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	novembro	novembro	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	2017	2017	NUM	_	NumType=Card	5	nmod	5:nmod:de	SpaceAfter=No
+8	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Boa noite!
+1	Boa	bom	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	_
+2	noite	noite	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+3	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = Aqui estão as principais notícias bombásticas para você ficar por dentro de tudo.
+1	Aqui	aqui	ADV	_	_	5	advmod	5:advmod	_
+2	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+3	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	5:det	_
+4	principais	principal	ADJ	_	Number=Plur	5	amod	5:amod	_
+5	notícias	notícia	NOUN	_	Gender=Fem|Number=Plur	0	root	0:root	_
+6	bombásticas	bombástico	ADJ	_	Gender=Fem|Number=Plur	5	amod	5:amod	_
+7	para	para	ADP	_	_	9	mark	9:mark	_
+8	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	9	nsubj	9:nsubj	_
+9	ficar	ficar	VERB	_	Number=Sing|Person=3|VerbForm=Inf	5	advcl	5:advcl:para	_
+10	por	por	ADP	_	_	11	case	11:case	_
+11	dentro	dentro	ADV	_	_	9	advmod	9:advmod	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	tudo	tudo	PRON	_	PronType=Ind	11	obl	11:obl:de	SpaceAfter=No
+14	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0007
+# text = A cúpula do PMDB na Assembleia Legislativa do Rio foi presa após denúncias de um esquema de corrupção que teria desviado milhões em recursos públicos.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	cúpula	cúpula	NOUN	_	Gender=Fem|Number=Sing	14	nsubj:pass	14:nsubj:pass	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	PMDB	PMDB	PROPN	_	_	2	nmod	2:nmod:de	_
+6-7	na	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	Assembleia	Assembleia	PROPN	_	_	2	nmod	2:nmod:em	_
+9	Legislativa	Legislativa	PROPN	_	_	8	flat:name	8:flat:name	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	Rio	Rio	PROPN	_	_	8	flat:name	8:flat:name	_
+13	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	aux:pass	14:aux:pass	_
+14	presa	prender	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+15	após	após	ADP	_	_	16	case	16:case	_
+16	denúncias	denúncia	NOUN	_	Gender=Fem|Number=Plur	14	obl	14:obl:após	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	esquema	esquema	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod:de|24:nsubj	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	corrupção	corrupção	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:de	_
+22	que	que	PRON	_	PronType=Rel	24	nsubj	19:ref	_
+23	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	24	aux	24:aux	_
+24	desviado	desviar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	19	acl:relcl	19:acl:relcl	_
+25	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	24	obj	24:obj	_
+26	em	em	ADP	_	_	27	case	27:case	_
+27	recursos	recurso	NOUN	_	Gender=Masc|Number=Plur	24	obl	24:obl:em	_
+28	públicos	público	ADJ	_	Gender=Masc|Number=Plur	27	amod	27:amod	SpaceAfter=No
+29	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0009
+# text = O presidente da Alerj, Jorge Picciani, acompanhado de Paulo Melo e Edson Albertassi, entregou-se à PF e foi transferida para a Cadeia Pública de Benfica.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	presidente	presidente	NOUN	_	Number=Sing	18	nsubj	18:nsubj|25:nsubj:pass	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	Alerj	Alerj	PROPN	_	_	2	nmod	2:nmod:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	Jorge	Jorge	PROPN	_	_	2	appos	2:appos	_
+8	Picciani	Picciani	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+9	,	,	PUNCT	_	_	7	punct	7:punct	_
+10	acompanhado	acompanhar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	2	acl	2:acl	_
+11	de	de	ADP	_	_	12	case	12:case|15:case	_
+12	Paulo	Paulo	PROPN	_	_	10	obl	10:obl:de	_
+13	Melo	Melo	PROPN	_	_	12	flat:name	12:flat:name	_
+14	e	e	CCONJ	_	_	15	cc	15:cc	_
+15	Edson	Edson	PROPN	_	_	12	conj	10:obl:de|12:conj:e	_
+16	Albertassi	Albertassi	PROPN	_	_	15	flat:name	15:flat:name	SpaceAfter=No
+17	,	,	PUNCT	_	_	7	punct	7:punct	_
+18-19	entregou-se	_	_	_	_	_	_	_	_
+18	entregou	entregar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+19	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	18	expl	18:expl	_
+20-21	à	_	_	_	_	_	_	_	_
+20	a	a	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	PF	PF	PROPN	_	_	18	obl	18:obl:a	_
+23	e	e	CCONJ	_	_	25	cc	25:cc	_
+24	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	25	aux:pass	25:aux:pass	_
+25	transferida	transferir	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	18	conj	18:conj:e	_
+26	para	para	ADP	_	_	28	case	28:case	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	Cadeia	Cadeia	PROPN	_	_	25	obl	25:obl:para	_
+29	Pública	Pública	PROPN	_	_	28	flat:name	28:flat:name	_
+30	de	de	ADP	_	_	31	case	31:case	_
+31	Benfica	Benfica	PROPN	_	_	28	flat:name	28:flat:name	SpaceAfter=No
+32	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0011
+# text = A operação, batizada de "Cadeia Dourada", revelou que os deputados teriam recebido propinas de até 10% em contratos governamentais.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	operação	operação	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	11:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	batizada	batizar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	2:acl	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	"	"	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+7	Cadeia	Cadeia	PROPN	_	_	4	obl	4:obl:de	_
+8	Dourada	Dourada	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+9	"	"	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+10	,	,	PUNCT	_	_	4	punct	4:punct	_
+11	revelou	revelar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	que	que	SCONJ	_	_	16	mark	16:mark	_
+13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	14:det	_
+14	deputados	deputado	NOUN	_	Gender=Masc|Number=Plur	16	nsubj	16:nsubj	_
+15	teriam	ter	AUX	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	16	aux	16:aux	_
+16	recebido	receber	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	11	ccomp	11:ccomp	_
+17	propinas	propina	NOUN	_	Gender=Fem|Number=Plur	16	obj	16:obj	_
+18	de	de	ADP	_	_	21	case	21:case	_
+19	até	até	ADP	_	_	20	case	20:case	_
+20	10	10	NUM	_	NumType=Card	21	nummod	21:nummod	SpaceAfter=No
+21	%	%	SYM	_	_	17	nmod	17:nmod:de	_
+22	em	em	ADP	_	_	23	case	23:case	_
+23	contratos	contrato	NOUN	_	Gender=Masc|Number=Plur	16	obl	16:obl:em	_
+24	governamentais	governamental	ADJ	_	Number=Plur	23	amod	23:amod	SpaceAfter=No
+25	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0013
+# text = A Alerj está em polvorosa, com chances de reverter a decisão em uma votação dramática nesta sexta-feira (17).
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Alerj	Alerj	PROPN	_	_	5	nsubj	5:nsubj	_
+3	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+4	em	em	ADP	_	_	5	case	5:case	_
+5	polvorosa	polvoroso	ADJ	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+6	,	,	PUNCT	_	_	8	punct	8:punct	_
+7	com	com	ADP	_	_	8	case	8:case	_
+8	chances	chance	NOUN	_	Gender=Fem|Number=Plur	5	nmod	5:nmod:com	_
+9	de	de	ADP	_	_	10	mark	10:mark	_
+10	reverter	reverter	VERB	_	VerbForm=Inf	8	acl	8:acl:de	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	decisão	decisão	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	votação	votação	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:em	_
+16	dramática	dramático	ADJ	_	Gender=Fem|Number=Sing	15	amod	15:amod	_
+17-18	nesta	_	_	_	_	_	_	_	_
+17	em	em	ADP	_	_	19	case	19:case	_
+18	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	19	det	19:det	_
+19	sexta-feira	sexta-feira	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:em	_
+20	(	(	PUNCT	_	_	21	punct	21:punct	SpaceAfter=No
+21	17	17	NUM	_	NumType=Card	19	appos	19:appos	SpaceAfter=No
+22	)	)	PUNCT	_	_	21	punct	21:punct	SpaceAfter=No
+23	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0015
+# text = Enquanto isso, em Brasília, o Ministério Público Federal pediu o bloqueio de R$ 50 milhões dos bens do ex-presidente Lula e de seu filho, Luís Cláudio, alegando um esquema de corrupção ainda mais amplo na Operação Zelotes.
+1	Enquanto	enquanto	ADV	_	ExtPos=ADV	11	advmod	11:advmod	_
+2	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	fixed	1:fixed	SpaceAfter=No
+3	,	,	PUNCT	_	_	1	punct	1:punct	_
+4	em	em	ADP	_	_	5	case	5:case	_
+5	Brasília	Brasília	PROPN	_	_	11	obl	11:obl:em	SpaceAfter=No
+6	,	,	PUNCT	_	_	1	punct	1:punct	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	Ministério	Ministério	PROPN	_	_	11	nsubj	11:nsubj	_
+9	Público	Público	PROPN	_	_	8	flat:name	8:flat:name	_
+10	Federal	Federal	PROPN	_	_	8	flat:name	8:flat:name	_
+11	pediu	pedir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	bloqueio	bloqueio	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj	_
+14	de	de	ADP	_	_	17	case	17:case	_
+15	R$	R$	SYM	_	_	17	nmod	17:nmod	_
+16	50	50	NUM	_	NumType=Card	17	nummod	17:nummod	_
+17	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	13	nmod	13:nmod:de	_
+18-19	dos	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	20:det	_
+20	bens	bem	NOUN	_	Gender=Masc|Number=Plur	13	nmod	13:nmod:de	_
+21-22	do	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	ex-presidente	ex-presidente	NOUN	_	Number=Sing	20	nmod	20:nmod:de	_
+24	Lula	Lula	PROPN	_	_	23	nmod	23:nmod	_
+25	e	e	CCONJ	_	_	28	cc	28:cc	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	28	det	28:det	_
+28	filho	filho	NOUN	_	Gender=Masc|Number=Sing	23	conj	20:nmod:de|23:conj:e	SpaceAfter=No
+29	,	,	PUNCT	_	_	30	punct	30:punct	_
+30	Luís	Luís	PROPN	_	_	28	appos	28:appos	_
+31	Cláudio	Cláudio	PROPN	_	_	30	flat:name	30:flat:name	SpaceAfter=No
+32	,	,	PUNCT	_	_	30	punct	30:punct	_
+33	alegando	alegar	VERB	_	VerbForm=Ger	11	advcl	11:advcl	_
+34	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	35	det	35:det	_
+35	esquema	esquema	NOUN	_	Gender=Masc|Number=Sing	33	obj	33:obj	_
+36	de	de	ADP	_	_	37	case	37:case	_
+37	corrupção	corrupção	NOUN	_	Gender=Fem|Number=Sing	35	nmod	35:nmod:de	_
+38	ainda	ainda	ADV	_	_	40	advmod	40:advmod	_
+39	mais	mais	ADV	_	_	40	advmod	40:advmod	_
+40	amplo	amplo	ADJ	_	Gender=Masc|Number=Sing	35	amod	35:amod	_
+41-42	na	_	_	_	_	_	_	_	_
+41	em	em	ADP	_	_	43	case	43:case	_
+42	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	43:det	_
+43	Operação	Operação	PROPN	_	_	33	obl	33:obl:em	_
+44	Zelotes	Zelotes	PROPN	_	_	43	flat:name	43:flat:name	SpaceAfter=No
+45	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0017
+# text = Lula teria recebido propina para beneficiar montadoras de automóveis e até mesmo influenciar decisões judiciais.
+1	Lula	Lula	PROPN	_	_	3	nsubj	3:nsubj	_
+2	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	3	aux	3:aux	_
+3	recebido	receber	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+4	propina	propina	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+5	para	para	ADP	_	_	6	mark	6:mark|13:mark	_
+6	beneficiar	beneficiar	VERB	_	VerbForm=Inf	3	advcl	3:advcl:para	_
+7	montadoras	montador	NOUN	_	Gender=Fem|Number=Plur	6	obj	6:obj	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	automóveis	automóvel	NOUN	_	Gender=Masc|Number=Plur	7	nmod	7:nmod:de	_
+10	e	e	CCONJ	_	_	13	cc	13:cc	_
+11	até	até	ADV	_	_	13	advmod	13:advmod	_
+12	mesmo	mesmo	ADV	_	_	13	advmod	13:advmod	_
+13	influenciar	influenciar	VERB	_	VerbForm=Inf	6	conj	3:advcl:para|6:conj:e	_
+14	decisões	decisão	NOUN	_	Gender=Fem|Number=Plur	13	obj	13:obj	_
+15	judiciais	judicial	ADJ	_	Number=Plur	14	amod	14:amod	SpaceAfter=No
+16	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0019
+# text = A defesa de Lula classificou a acusação como "absurda" e afirmou que é mais uma tentativa de perseguição política sem provas concretas.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	defesa	defesa	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj|13:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Lula	Lula	PROPN	_	_	2	nmod	2:nmod:de	_
+5	classificou	classificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	acusação	acusação	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+8	como	como	ADP	_	_	10	case	10:case	_
+9	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+10	absurda	absurdo	ADJ	_	Gender=Fem|Number=Sing	5	obl	5:obl:como	SpaceAfter=No
+11	"	"	PUNCT	_	_	10	punct	10:punct	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	conj	5:conj:e	_
+14	que	que	SCONJ	_	_	18	mark	18:mark	_
+15	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	cop	18:cop	_
+16	mais	mais	ADV	_	_	17	advmod	17:advmod	_
+17	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	18	nummod	18:nummod	_
+18	tentativa	tentativa	NOUN	_	Gender=Fem|Number=Sing	13	ccomp	13:ccomp	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	perseguição	perseguição	NOUN	_	Gender=Fem|Number=Sing	18	nmod	18:nmod:de	_
+21	política	político	ADJ	_	Gender=Fem|Number=Sing	20	amod	20:amod	_
+22	sem	sem	ADP	_	_	23	case	23:case	_
+23	provas	prova	NOUN	_	Gender=Fem|Number=Plur	20	nmod	20:nmod:sem	_
+24	concretas	concreto	ADJ	_	Gender=Fem|Number=Plur	23	amod	23:amod	SpaceAfter=No
+25	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0021
+# text = Nos EUA, um escândalo envolvendo o ator Sylvester Stallone chocou Hollywood.
+1-2	Nos	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	3:det	_
+3	EUA	EUA	PROPN	_	_	12	obl	12:obl:em	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	escândalo	escândalo	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	12:nsubj	_
+7	envolvendo	envolver	VERB	_	VerbForm=Ger	6	acl	6:acl	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	ator	ator	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+10	Sylvester	Sylvester	PROPN	_	_	9	nmod	9:nmod	_
+11	Stallone	Stallone	PROPN	_	_	10	flat:name	10:flat:name	_
+12	chocou	chocar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+13	Hollywood	Hollywood	PROPN	_	_	12	obj	12:obj	SpaceAfter=No
+14	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0023
+# text = Ele teria abusado sexualmente de uma fã de 16 anos durante a produção do filme "Falcão - O campeão dos campeões", e o caso, mantido em sigilo por décadas, veio à tona com detalhes chocantes revelados por um documento policial antigo.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	3:nsubj	_
+2	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	3	aux	3:aux	_
+3	abusado	abusar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+4	sexualmente	sexualmente	ADV	_	_	3	advmod	3:advmod	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	fã	fã	NOUN	_	Number=Sing	3	obl	3:obl:de	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	16	16	NUM	_	NumType=Card	10	nummod	10:nummod	_
+10	anos	ano	NOUN	_	Gender=Masc|Number=Plur	7	nmod	7:nmod:de	_
+11	durante	durante	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	produção	produção	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:durante	_
+14-15	do	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	filme	filme	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod:de	_
+17	"	"	PUNCT	_	_	18	punct	18:punct	SpaceAfter=No
+18	Falcão	Falcão	PROPN	_	_	16	nmod	16:nmod	_
+19	-	-	PUNCT	_	_	21	punct	21:punct	_
+20	O	O	PROPN	_	_	21	det	21:det	_
+21	campeão	campeão	NOUN	_	Gender=Masc|Number=Sing	18	appos	18:appos	_
+22-23	dos	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	24:det	_
+24	campeões	campeõe	NOUN	_	Gender=Masc|Number=Plur	21	nmod	21:nmod:de	SpaceAfter=No
+25	"	"	PUNCT	_	_	18	punct	18:punct	SpaceAfter=No
+26	,	,	PUNCT	_	_	37	punct	37:punct	_
+27	e	e	CCONJ	_	_	37	cc	37:cc	_
+28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	29:det	_
+29	caso	caso	NOUN	_	Gender=Masc|Number=Sing	37	nsubj	37:nsubj	SpaceAfter=No
+30	,	,	PUNCT	_	_	31	punct	31:punct	_
+31	mantido	manter	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	29	acl	29:acl	_
+32	em	em	ADP	_	_	33	case	33:case	_
+33	sigilo	sigilo	NOUN	_	Gender=Masc|Number=Sing	31	obl	31:obl:em	_
+34	por	por	ADP	_	_	35	case	35:case	_
+35	décadas	década	NOUN	_	Gender=Fem|Number=Plur	31	obl	31:obl:por	SpaceAfter=No
+36	,	,	PUNCT	_	_	31	punct	31:punct	_
+37	veio	vir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	3:conj:e	_
+38-39	à	_	_	_	_	_	_	_	_
+38	a	a	ADP	_	_	40	case	40:case	_
+39	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	40:det	_
+40	tona	tona	NOUN	_	Gender=Fem|Number=Sing	37	obl	37:obl:a	_
+41	com	com	ADP	_	_	42	case	42:case	_
+42	detalhes	detalhe	NOUN	_	Gender=Masc|Number=Plur	37	obl	37:obl:com	_
+43	chocantes	chocante	ADJ	_	Number=Plur	42	amod	42:amod	_
+44	revelados	revelar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	42	acl	42:acl	_
+45	por	por	ADP	_	_	47	case	47:case	_
+46	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	47	det	47:det	_
+47	documento	documento	NOUN	_	Gender=Masc|Number=Sing	44	obl:agent	44:obl:agent	_
+48	policial	policial	ADJ	_	Number=Sing	47	amod	47:amod	_
+49	antigo	antigo	ADJ	_	Gender=Masc|Number=Sing	47	amod	47:amod	SpaceAfter=No
+50	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0025
+# text = Stallone nega as acusações, mas a história está causando um terremoto na indústria cinematográfica.
+1	Stallone	Stallone	PROPN	_	_	2	nsubj	2:nsubj	_
+2	nega	negar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	4:det	_
+4	acusações	acusação	NOUN	_	Gender=Fem|Number=Plur	2	obj	2:obj	SpaceAfter=No
+5	,	,	PUNCT	_	_	10	punct	10:punct	_
+6	mas	mas	CCONJ	_	_	10	cc	10:cc	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	história	história	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	10:nsubj	_
+9	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux	10:aux	_
+10	causando	causar	VERB	_	VerbForm=Ger	2	conj	2:conj:mas	_
+11	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	terremoto	terremoto	NOUN	_	Gender=Masc|Number=Sing	10	obj	10:obj	_
+13-14	na	_	_	_	_	_	_	_	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	indústria	indústria	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:em	_
+16	cinematográfica	cinematográfico	ADJ	_	Gender=Fem|Number=Sing	15	amod	15:amod	SpaceAfter=No
+17	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0027
+# text = A ciência também trouxe uma revelação assustadora: fumantes habituais têm 95% de chance de desenvolver a Doença Pulmonar Obstrutiva Crônica (DPOC), de acordo com um novo estudo da Organização Mundial da Saúde (OMS).
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	ciência	ciência	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+3	também	também	ADV	_	_	4	advmod	4:advmod	_
+4	trouxe	trazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	revelação	revelação	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+7	assustadora	assustador	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	SpaceAfter=No
+8	:	:	PUNCT	_	_	11	punct	11:punct	_
+9	fumantes	fumante	NOUN	_	Number=Plur	11	nsubj	11:nsubj	_
+10	habituais	habitual	ADJ	_	Number=Plur	9	amod	9:amod	_
+11	têm	ter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	parataxis	4:parataxis	_
+12	95	95	NUM	_	NumType=Card	13	nummod	13:nummod	SpaceAfter=No
+13	%	%	SYM	_	_	11	obj	11:obj	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	chance	chance	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:de	_
+16	de	de	ADP	_	_	17	mark	17:mark	_
+17	desenvolver	desenvolver	VERB	_	VerbForm=Inf	15	acl	15:acl:de	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	Doença	Doença	PROPN	_	_	17	obj	17:obj	_
+20	Pulmonar	Pulmonar	PROPN	_	_	19	flat:name	19:flat:name	_
+21	Obstrutiva	Obstrutiva	PROPN	_	_	19	flat:name	19:flat:name	_
+22	Crônica	Crônica	PROPN	_	_	19	flat:name	19:flat:name	_
+23	(	(	PUNCT	_	_	24	punct	24:punct	SpaceAfter=No
+24	DPOC	DPOC	PROPN	_	_	19	appos	19:appos	SpaceAfter=No
+25	)	)	PUNCT	_	_	24	punct	24:punct	SpaceAfter=No
+26	,	,	PUNCT	_	_	28	punct	28:punct	_
+27	de	de	ADP	_	_	28	case	28:case	_
+28	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:de	_
+29	com	com	ADP	_	_	32	case	32:case	_
+30	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+31	novo	novo	ADJ	_	Gender=Masc|Number=Sing	32	amod	32:amod	_
+32	estudo	estudo	NOUN	_	Gender=Masc|Number=Sing	28	nmod	28:nmod:com	_
+33-34	da	_	_	_	_	_	_	_	_
+33	de	de	ADP	_	_	35	case	35:case	_
+34	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	35:det	_
+35	Organização	Organização	PROPN	_	_	32	nmod	32:nmod:de	_
+36	Mundial	Mundial	PROPN	_	_	35	flat:name	35:flat:name	_
+37-38	da	_	_	_	_	_	_	_	_
+37	de	de	ADP	_	_	39	case	39:case	_
+38	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	39:det	_
+39	Saúde	Saúde	PROPN	_	_	35	flat:name	35:flat:name	_
+40	(	(	PUNCT	_	_	41	punct	41:punct	SpaceAfter=No
+41	OMS	OMS	PROPN	_	_	35	appos	35:appos	SpaceAfter=No
+42	)	)	PUNCT	_	_	41	punct	41:punct	SpaceAfter=No
+43	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0029
+# text = A doença, sem cura, avança silenciosamente e pode ser fatal.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	doença	doença	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj|10:nsubj|12:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	5	punct	5:punct	_
+4	sem	sem	ADP	_	_	5	case	5:case	_
+5	cura	cura	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:sem	SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	5:punct	_
+7	avança	avançar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	silenciosamente	silenciosamente	ADV	_	_	7	advmod	7:advmod	_
+9	e	e	CCONJ	_	_	10	cc	10:cc	_
+10	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	7:conj:e	_
+11	ser	ser	AUX	_	VerbForm=Inf	12	cop	12:cop	_
+12	fatal	fatal	ADJ	_	Number=Sing	10	xcomp	10:xcomp	SpaceAfter=No
+13	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0031
+# text = Especialistas alertam para a necessidade urgente de cessação do tabagismo.
+1	Especialistas	especialista	NOUN	_	Number=Plur	2	nsubj	2:nsubj	_
+2	alertam	alertar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	para	para	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	necessidade	necessidade	NOUN	_	Gender=Fem|Number=Sing	2	obl	2:obl:para	_
+6	urgente	urgente	ADJ	_	Number=Sing	5	amod	5:amod	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	cessação	cessação	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	_
+9-10	do	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	tabagismo	tabagismo	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:de	SpaceAfter=No
+12	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0033
+# text = E no mundo da arte, uma surpresa: o quadro "Salvator Mundi", de Leonardo da Vinci, foi vendido por 500 milhões de dólares na Christies, superando expectativas e se tornando a obra de arte mais cara já leiloada.
+1	E	e	CCONJ	_	_	10	cc	10:cc	_
+2-3	no	_	_	_	_	_	_	_	_
+2	em	em	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:em	_
+5-6	da	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	arte	arte	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:de	SpaceAfter=No
+8	,	,	PUNCT	_	_	4	punct	4:punct	_
+9	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	surpresa	surpresa	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+11	:	:	PUNCT	_	_	26	punct	26:punct	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	quadro	quadro	NOUN	_	Gender=Masc|Number=Sing	26	nsubj:pass	26:nsubj:pass	_
+14	"	"	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+15	Salvator	Salvator	PROPN	_	_	13	nmod	13:nmod	_
+16	Mundi	Mundi	PROPN	_	_	15	flat:name	15:flat:name	SpaceAfter=No
+17	"	"	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+18	,	,	PUNCT	_	_	20	punct	20:punct	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	Leonardo	Leonardo	PROPN	_	_	13	nmod	13:nmod:de	_
+21-22	da	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	Vinci	Vinci	PROPN	_	_	20	flat:name	20:flat:name	SpaceAfter=No
+24	,	,	PUNCT	_	_	20	punct	20:punct	_
+25	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	26	aux:pass	26:aux:pass	_
+26	vendido	vender	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	10	acl:relcl	10:acl:relcl	_
+27	por	por	ADP	_	_	29	case	29:case	_
+28	500	500	NUM	_	NumType=Card	29	nummod	29:nummod	_
+29	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	26	obl	26:obl:por	_
+30	de	de	ADP	_	_	31	case	31:case	_
+31	dólares	dólar	NOUN	_	Gender=Masc|Number=Plur	29	nmod	29:nmod:de	_
+32-33	na	_	_	_	_	_	_	_	_
+32	em	em	ADP	_	_	34	case	34:case	_
+33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	34:det	_
+34	Christies	Christies	PROPN	_	_	26	obl	26:obl:em	SpaceAfter=No
+35	,	,	PUNCT	_	_	36	punct	36:punct	_
+36	superando	superar	VERB	_	VerbForm=Ger	26	advcl	26:advcl	_
+37	expectativas	expectativa	NOUN	_	Gender=Fem|Number=Plur	36	obj	36:obj	_
+38	e	e	CCONJ	_	_	40	cc	40:cc	_
+39	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	40	expl	40:expl	_
+40	tornando	tornar	VERB	_	VerbForm=Ger	36	conj	26:advcl|36:conj:e	_
+41	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	42:det	_
+42	obra	obra	NOUN	_	Gender=Fem|Number=Sing	40	obj	40:obj	_
+43	de	de	ADP	_	_	44	case	44:case	_
+44	arte	arte	NOUN	_	Gender=Fem|Number=Sing	42	nmod	42:nmod:de	_
+45	mais	mais	ADV	_	_	46	advmod	46:advmod	_
+46	cara	caro	ADJ	_	Gender=Fem|Number=Sing	42	amod	42:amod	_
+47	já	já	ADV	_	_	48	advmod	48:advmod	_
+48	leiloada	leiloar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	42	acl	42:acl	SpaceAfter=No
+49	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0035
+# text = Especialistas afirmam que a peça poderia redefinir o mercado de arte mundial.
+1	Especialistas	especialista	NOUN	_	Number=Plur	2	nsubj	2:nsubj	_
+2	afirmam	afirmar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	6	mark	6:mark	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	peça	peça	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj|7:nsubj	_
+6	poderia	poder	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	2	ccomp	2:ccomp	_
+7	redefinir	redefinir	VERB	_	VerbForm=Inf	6	xcomp	6:xcomp	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	mercado	mercado	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	arte	arte	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:de	_
+12	mundial	mundial	ADJ	_	Number=Sing	11	amod	11:amod	SpaceAfter=No
+13	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0037
+# text = No cenário internacional, a crise no Zimbábue se intensifica.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	cenário	cenário	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:em	_
+4	internacional	internacional	ADJ	_	Number=Sing	3	amod	3:amod	SpaceAfter=No
+5	,	,	PUNCT	_	_	3	punct	3:punct	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	crise	crise	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	12:nsubj	_
+8-9	no	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	Zimbábue	Zimbábue	PROPN	_	_	7	nmod	7:nmod:em	_
+11	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	12	expl	12:expl	_
+12	intensifica	intensificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+13	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0039
+# text = O presidente Robert Mugabe, em um encontro tenso com os militares, recusou-se a renunciar, apesar de os generais controlarem os principais centros de poder.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	presidente	presidente	NOUN	_	Number=Sing	14	nsubj	14:nsubj|17:nsubj	_
+3	Robert	Robert	PROPN	_	_	2	nmod	2:nmod	_
+4	Mugabe	Mugabe	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	8	punct	8:punct	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	encontro	encontro	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:em	_
+9	tenso	tenso	ADJ	_	Gender=Masc|Number=Sing	8	amod	8:amod	_
+10	com	com	ADP	_	_	12	case	12:case	_
+11	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	12:det	_
+12	militares	militar	NOUN	_	Number=Plur	8	nmod	8:nmod:com	SpaceAfter=No
+13	,	,	PUNCT	_	_	8	punct	8:punct	_
+14-15	recusou-se	_	_	_	_	_	_	_	_
+14	recusou	recusar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+15	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	14	expl	14:expl	_
+16	a	a	ADP	_	_	17	mark	17:mark	_
+17	renunciar	renunciar	VERB	_	VerbForm=Inf	14	xcomp	14:xcomp	SpaceAfter=No
+18	,	,	PUNCT	_	_	19	punct	19:punct	_
+19	apesar	apesar	ADV	_	_	14	advmod	14:advmod	_
+20	de	de	ADP	_	_	23	mark	23:mark	_
+21	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	22:det	_
+22	generais	general	NOUN	_	Number=Plur	23	nsubj	23:nsubj	_
+23	controlarem	controlar	VERB	_	Number=Plur|Person=3|VerbForm=Inf	19	acl	19:acl:de	_
+24	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	26:det	_
+25	principais	principal	ADJ	_	Number=Plur	26	amod	26:amod	_
+26	centros	centro	NOUN	_	Gender=Masc|Number=Plur	23	obj	23:obj	_
+27	de	de	ADP	_	_	28	case	28:case	_
+28	poder	poder	NOUN	_	Gender=Masc|Number=Sing	26	nmod	26:nmod:de	SpaceAfter=No
+29	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0041
+# text = Fontes confidenciais indicam que Mugabe foi informado de que sua esposa, Grace Mugabe, está sendo investigada por crimes financeiros, o que poderia precipitar uma queda ainda mais dramática.
+1	Fontes	fonte	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	3:nsubj	_
+2	confidenciais	confidencial	ADJ	_	Number=Plur	1	amod	1:amod	_
+3	indicam	indicar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	7	mark	7:mark	_
+5	Mugabe	Mugabe	PROPN	_	_	7	nsubj:pass	7:nsubj:pass	_
+6	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	aux:pass	7:aux:pass	_
+7	informado	informar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	ccomp	3:ccomp	_
+8	de	de	ADP	_	ExtPos=SCONJ	18	mark	18:mark	_
+9	que	que	SCONJ	_	_	8	fixed	8:fixed	_
+10	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	11	det	11:det	_
+11	esposa	esposo	NOUN	_	Gender=Fem|Number=Sing	18	nsubj:pass	18:nsubj:pass	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	Grace	Grace	PROPN	_	_	11	appos	11:appos	_
+14	Mugabe	Mugabe	PROPN	_	_	13	flat:name	13:flat:name	SpaceAfter=No
+15	,	,	PUNCT	_	_	13	punct	13:punct	_
+16	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux	18:aux	_
+17	sendo	ser	AUX	_	VerbForm=Ger	18	aux:pass	18:aux:pass	_
+18	investigada	investigar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	7	ccomp	7:ccomp	_
+19	por	por	ADP	_	_	20	case	20:case	_
+20	crimes	crime	NOUN	_	Gender=Masc|Number=Plur	18	obl	18:obl:por	_
+21	financeiros	financeiro	ADJ	_	Gender=Masc|Number=Plur	20	amod	20:amod	SpaceAfter=No
+22	,	,	PUNCT	_	_	25	punct	25:punct	_
+23	o	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	25	nsubj	25:nsubj|26:nsubj	_
+24	que	que	PRON	_	PronType=Rel	23	fixed	23:fixed	_
+25	poderia	poder	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	18	parataxis	18:parataxis	_
+26	precipitar	precipitar	VERB	_	VerbForm=Inf	25	xcomp	25:xcomp	_
+27	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	queda	queda	NOUN	_	Gender=Fem|Number=Sing	26	obj	26:obj	_
+29	ainda	ainda	ADV	_	_	31	advmod	31:advmod	_
+30	mais	mais	ADV	_	_	31	advmod	31:advmod	_
+31	dramática	dramático	ADJ	_	Gender=Fem|Number=Sing	28	amod	28:amod	SpaceAfter=No
+32	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0043
+# text = Por fim, astrônomos anunciaram a descoberta de um planeta "gêmeo" da Terra, que não só está a 11 anos-luz de distância, mas também está em rota de aproximação rápida.
+1	Por	por	ADP	_	_	2	case	2:case	_
+2	fim	fim	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:por	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	astrônomos	astrônomo	NOUN	_	Gender=Masc|Number=Plur	5	nsubj	5:nsubj	_
+5	anunciaram	anunciar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	descoberta	descoberto	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	planeta	planeta	NOUN	_	Number=Sing	7	nmod	7:nmod:de|24:nsubj|32:nsubj	_
+11	"	"	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+12	gêmeo	gêmeo	ADJ	_	Gender=Masc|Number=Sing	10	amod	10:amod	SpaceAfter=No
+13	"	"	PUNCT	_	_	12	punct	12:punct	_
+14-15	da	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	Terra	Terra	PROPN	_	_	12	nmod	12:nmod:de	SpaceAfter=No
+17	,	,	PUNCT	_	_	24	punct	24:punct	_
+18	que	que	PRON	_	PronType=Rel	24	nsubj	10:ref	_
+19	não	não	ADV	_	_	20	advmod	20:advmod	_
+20	só	só	ADV	_	_	24	advmod	24:advmod	_
+21	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	cop	24:cop	_
+22	a	a	ADP	_	_	24	case	24:case	_
+23	11	11	NUM	_	NumType=Card	24	nummod	24:nummod	_
+24	anos-luz	anos-luz	NOUN	_	Gender=Masc|Number=Plur	10	acl:relcl	10:acl:relcl	_
+25	de	de	ADP	_	_	26	case	26:case	_
+26	distância	distância	NOUN	_	Gender=Fem|Number=Sing	24	nmod	24:nmod:de	SpaceAfter=No
+27	,	,	PUNCT	_	_	32	punct	32:punct	_
+28	mas	mas	CCONJ	_	_	32	cc	32:cc	_
+29	também	também	ADV	_	_	32	advmod	32:advmod	_
+30	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	32	cop	32:cop	_
+31	em	em	ADP	_	_	32	case	32:case	_
+32	rota	rota	NOUN	_	Gender=Fem|Number=Sing	24	conj	10:acl:relcl|24:conj:mas	_
+33	de	de	ADP	_	_	34	case	34:case	_
+34	aproximação	aproximação	NOUN	_	Gender=Fem|Number=Sing	32	nmod	32:nmod:de	_
+35	rápida	rápido	ADJ	_	Gender=Fem|Number=Sing	34	amod	34:amod	SpaceAfter=No
+36	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0045
+# text = Previsto para ultrapassar Próxima Centauri em 79 mil anos, o planeta traz esperanças de vida extraterrestre e tem gerado especulações sobre futuras missões espaciais.
+1	Previsto	prever	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	13	advcl	13:advcl|20:advcl	_
+2	para	para	ADP	_	_	3	mark	3:mark	_
+3	ultrapassar	ultrapassar	VERB	_	VerbForm=Inf	1	acl	1:acl:para	_
+4	Próxima	Próxima	PROPN	_	_	3	obj	3:obj	_
+5	Centauri	Centauri	PROPN	_	_	3	flat:name	3:flat:name	_
+6	em	em	ADP	_	_	9	case	9:case	_
+7	79	79	NUM	_	NumType=Card	9	nummod	9:nummod	_
+8	mil	mil	NUM	_	NumType=Card	7	flat	7:flat	_
+9	anos	ano	NOUN	_	Gender=Masc|Number=Plur	3	obl	3:obl:em	SpaceAfter=No
+10	,	,	PUNCT	_	_	1	punct	1:punct	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	planeta	planeta	NOUN	_	Number=Sing	13	nsubj	13:nsubj|20:nsubj	_
+13	traz	trazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+14	esperanças	esperança	NOUN	_	Gender=Fem|Number=Plur	13	obj	13:obj	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	vida	vida	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:de	_
+17	extraterrestre	extraterrestre	ADJ	_	Number=Sing	16	amod	16:amod	_
+18	e	e	CCONJ	_	_	20	cc	20:cc	_
+19	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	aux	20:aux	_
+20	gerado	gerar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	13	conj	13:conj:e	_
+21	especulações	especulação	NOUN	_	Gender=Fem|Number=Plur	20	obj	20:obj	_
+22	sobre	sobre	ADP	_	_	24	case	24:case	_
+23	futuras	futuro	ADJ	_	Gender=Fem|Number=Plur	24	amod	24:amod	_
+24	missões	missão	NOUN	_	Gender=Fem|Number=Plur	21	nmod	21:nmod:sobre	_
+25	espaciais	espacial	ADJ	_	Number=Plur	24	amod	24:amod	SpaceAfter=No
+26	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0047
+# text = Fique atento, pois essas são as notícias que podem mudar o rumo dos acontecimentos!
+1	Fique	ficar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	atento	atento	ADJ	_	Gender=Masc|Number=Sing	1	xcomp	1:xcomp	SpaceAfter=No
+3	,	,	PUNCT	_	_	8	punct	8:punct	_
+4	pois	pois	SCONJ	_	_	8	mark	8:mark	_
+5	essas	esse	PRON	_	Gender=Fem|Number=Plur|PronType=Dem	8	nsubj	8:nsubj	_
+6	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop	_
+7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	8:det	_
+8	notícias	notícia	NOUN	_	Gender=Fem|Number=Plur	1	advcl	1:advcl:pois|10:nsubj|11:nsubj	_
+9	que	que	PRON	_	PronType=Rel	10	nsubj	8:ref	_
+10	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	8:acl:relcl	_
+11	mudar	mudar	VERB	_	VerbForm=Inf	10	xcomp	10:xcomp	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	rumo	rumo	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj	_
+14-15	dos	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	16:det	_
+16	acontecimentos	acontecimento	NOUN	_	Gender=Masc|Number=Plur	13	nmod	13:nmod:de	SpaceAfter=No
+17	!	!	PUNCT	_	_	1	punct	1:punct	_

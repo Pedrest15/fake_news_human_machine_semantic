@@ -1,0 +1,488 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Hostes do vazio.
+1	Hostes	hoste	NOUN	_	Number=Plur	0	root	0:root	_
+2-3	do	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	vazio	vazio	NOUN	_	Gender=Masc|Number=Sing	1	nmod	1:nmod:de	SpaceAfter=No
+5	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Assassinos em massa têm mais frustrações e desequilíbrio do que projetos políticos.
+1	Assassinos	assassino	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	4:nsubj	_
+2	em	em	ADP	_	_	3	case	3:case	_
+3	massa	massa	NOUN	_	Gender=Fem|Number=Sing	1	nmod	1:nmod:em	_
+4	têm	ter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	mais	mais	DET	_	PronType=Ind	6	det	6:det	_
+6	frustrações	frustração	NOUN	_	Gender=Fem|Number=Plur	4	obj	4:obj	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	desequilíbrio	desequilíbrio	NOUN	_	Gender=Masc|Number=Sing	6	conj	4:obj|6:conj:e	_
+9-10	do	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	ExtPos=SCONJ	12	mark	12:mark	_
+10	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	9	fixed	9:fixed	_
+11	que	que	PRON	_	PronType=Rel	9	fixed	9:fixed	_
+12	projetos	projeto	NOUN	_	Gender=Masc|Number=Plur	4	advcl	4:advcl:de_o_que	_
+13	políticos	político	ADJ	_	Gender=Masc|Number=Plur	12	amod	12:amod	SpaceAfter=No
+14	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0005
+# text = Nos últimos 20 anos, os EUA foram palco de mais de 20 ataques mortais, com dezenas de vidas perdidas e comunidades traumatizadas.
+1-2	Nos	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	5	case	5:case	_
+2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	5:det	_
+3	últimos	último	ADJ	_	Gender=Masc|Number=Plur	5	amod	5:amod	_
+4	20	20	NUM	_	NumType=Card	5	nummod	5:nummod	_
+5	anos	ano	NOUN	_	Gender=Masc|Number=Plur	10	nmod	10:nmod:em	SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	5:punct	_
+7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	8:det	_
+8	EUA	EUA	PROPN	_	_	10	nsubj	10:nsubj	_
+9	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	10	cop	10:cop	_
+10	palco	palco	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+11	de	de	ADP	_	_	15	case	15:case	_
+12	mais	mais	ADV	_	ExtPos=ADV	14	advmod	14:advmod	_
+13	de	de	ADP	_	_	12	fixed	12:fixed	_
+14	20	20	NUM	_	NumType=Card	15	nummod	15:nummod	_
+15	ataques	ataque	NOUN	_	Gender=Masc|Number=Plur	10	nmod	10:nmod:de	_
+16	mortais	mortal	ADJ	_	Number=Plur	15	amod	15:amod	SpaceAfter=No
+17	,	,	PUNCT	_	_	19	punct	19:punct	_
+18	com	com	ADP	_	_	19	case	19:case|24:case	_
+19	dezenas	dezena	NOUN	_	Gender=Fem|Number=Plur	15	nmod	15:nmod:com	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	vidas	vida	NOUN	_	Gender=Fem|Number=Plur	19	nmod	19:nmod:de	_
+22	perdidas	perdido	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	21	amod	21:amod	_
+23	e	e	CCONJ	_	_	24	cc	24:cc	_
+24	comunidades	comunidade	NOUN	_	Gender=Fem|Number=Plur	19	conj	15:nmod:com|19:conj:e	_
+25	traumatizadas	traumatizado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	24	amod	24:amod	SpaceAfter=No
+26	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0007
+# text = Recentemente, um evento chocante: um estudante universitário, aparentemente influenciado por uma conspiração global de controle mental, matou 12 pessoas em um cinema do Colorado.
+1	Recentemente	recentemente	ADV	_	_	21	advmod	21:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	evento	evento	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+5	chocante	chocante	ADJ	_	Number=Sing	4	amod	4:amod	SpaceAfter=No
+6	:	:	PUNCT	_	_	8	punct	8:punct	_
+7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	estudante	estudante	NOUN	_	Number=Sing	21	nsubj	21:nsubj	_
+9	universitário	universitário	ADJ	_	Gender=Masc|Number=Sing	8	amod	8:amod	SpaceAfter=No
+10	,	,	PUNCT	_	_	12	punct	12:punct	_
+11	aparentemente	aparentemente	ADV	_	_	12	advmod	12:advmod	_
+12	influenciado	influenciar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	8	acl	8:acl	_
+13	por	por	ADP	_	_	15	case	15:case	_
+14	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	conspiração	conspiração	NOUN	_	Gender=Fem|Number=Sing	12	obl:agent	12:obl:agent	_
+16	global	global	ADJ	_	Number=Sing	15	amod	15:amod	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	controle	controle	NOUN	_	Gender=Masc|Number=Sing	15	nmod	15:nmod:de	_
+19	mental	mental	ADJ	_	Number=Sing	18	amod	18:amod	SpaceAfter=No
+20	,	,	PUNCT	_	_	12	punct	12:punct	_
+21	matou	matar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	dep	4:dep	_
+22	12	12	NUM	_	NumType=Card	23	nummod	23:nummod	_
+23	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	21	obj	21:obj	_
+24	em	em	ADP	_	_	26	case	26:case	_
+25	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	cinema	cinema	NOUN	_	Gender=Masc|Number=Sing	21	obl	21:obl:em	_
+27-28	do	_	_	_	_	_	_	_	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	29:det	_
+29	Colorado	Colorado	PROPN	_	_	26	nmod	26:nmod:de	SpaceAfter=No
+30	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0009
+# text = Pouco depois, outro indivíduo, supostamente membro de uma milícia secreta, confessou a tentativa de assassinato da deputada Gabrielle Giffords.
+1	Pouco	pouco	ADV	_	_	2	advmod	2:advmod	_
+2	depois	depois	ADV	_	_	14	advmod	14:advmod	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	outro	outro	DET	_	Gender=Masc|Number=Sing|PronType=Ind	5	det	5:det	_
+5	indivíduo	indivíduo	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	14:nsubj	SpaceAfter=No
+6	,	,	PUNCT	_	_	8	punct	8:punct	_
+7	supostamente	supostamente	ADV	_	_	8	advmod	8:advmod	_
+8	membro	membro	NOUN	_	Gender=Masc|Number=Sing	5	appos	5:appos	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	milícia	milícia	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	_
+12	secreta	secreto	ADJ	_	Gender=Fem|Number=Sing	11	amod	11:amod	SpaceAfter=No
+13	,	,	PUNCT	_	_	8	punct	8:punct	_
+14	confessou	confessar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	tentativa	tentativa	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	assassinato	assassinato	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod:de	_
+19-20	da	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	deputada	deputado	NOUN	_	Gender=Fem|Number=Sing	18	nmod	18:nmod:de	_
+22	Gabrielle	Gabrielle	PROPN	_	_	21	nmod	21:nmod	_
+23	Giffords	Giffords	PROPN	_	_	22	flat:name	22:flat:name	SpaceAfter=No
+24	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0011
+# text = E agora, um veterano ligado a uma misteriosa seita neonazista, eliminou sete pessoas em um templo sikh em Wisconsin.
+1	E	e	CCONJ	_	_	13	cc	13:cc	_
+2	agora	agora	ADV	_	_	13	advmod	13:advmod	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	veterano	veterano	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	13:nsubj	_
+6	ligado	ligado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	5	acl	5:acl	_
+7	a	a	ADP	_	_	10	case	10:case	_
+8	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+9	misteriosa	misterioso	ADJ	_	Gender=Fem|Number=Sing	10	amod	10:amod	_
+10	seita	seita	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:a	_
+11	neonazista	neonazista	ADJ	_	Number=Sing	10	amod	10:amod	SpaceAfter=No
+12	,	,	PUNCT	_	_	5	punct	5:punct	_
+13	eliminou	eliminar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	sete	sete	NUM	_	NumType=Card	15	nummod	15:nummod	_
+15	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	13	obj	13:obj	_
+16	em	em	ADP	_	_	18	case	18:case	_
+17	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	templo	templo	NOUN	_	Gender=Masc|Number=Sing	13	obl	13:obl:em	_
+19	sikh	sikh	ADJ	_	Number=Sing	18	amod	18:amod	_
+20	em	em	ADP	_	_	21	case	21:case	_
+21	Wisconsin	Wisconsin	PROPN	_	_	18	nmod	18:nmod:em	SpaceAfter=No
+22	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0013
+# text = Especialistas apontam que o acesso irrestrito a armas de fogo, garantido pela Constituição, facilita esses atos extremos.
+1	Especialistas	especialista	NOUN	_	Number=Plur	2	nsubj	2:nsubj	_
+2	apontam	apontar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	17	mark	17:mark	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	acesso	acesso	NOUN	_	Gender=Masc|Number=Sing	17	nsubj	17:nsubj	_
+6	irrestrito	irrestrito	ADJ	_	Gender=Masc|Number=Sing	5	amod	5:amod	_
+7	a	a	ADP	_	_	8	case	8:case	_
+8	armas	arma	NOUN	_	Gender=Fem|Number=Plur	5	nmod	5:nmod:a	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	fogo	fogo	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:de	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	garantido	garantir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	5	acl	5:acl	_
+13-14	pela	_	_	_	_	_	_	_	_
+13	por	por	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	Constituição	Constituição	PROPN	_	_	12	obl:agent	12:obl:agent	SpaceAfter=No
+16	,	,	PUNCT	_	_	12	punct	12:punct	_
+17	facilita	facilitar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	2:ccomp	_
+18	esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	19	det	19:det	_
+19	atos	ato	NOUN	_	Gender=Masc|Number=Plur	17	obj	17:obj	_
+20	extremos	extremo	ADJ	_	Gender=Masc|Number=Plur	19	amod	19:amod	SpaceAfter=No
+21	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0015
+# text = Além disso, uma onda de teorias da conspiração está ganhando terreno, alimentada por líderes carismáticos que distorcem a história do país.
+1	Além	além	ADV	_	_	13	advmod	13:advmod	_
+2-3	disso	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	obl	1:obl:de	_
+4	,	,	PUNCT	_	_	1	punct	1:punct	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	onda	onda	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	13:nsubj	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	teorias	teoria	NOUN	_	Gender=Fem|Number=Plur	6	nmod	6:nmod:de	_
+9-10	da	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	conspiração	conspiração	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	_
+12	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux	13:aux	_
+13	ganhando	ganhar	VERB	_	VerbForm=Ger	0	root	0:root	_
+14	terreno	terreno	NOUN	_	Gender=Masc|Number=Sing	13	obj	13:obj	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	alimentada	alimentar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	13	advcl	13:advcl	_
+17	por	por	ADP	_	_	18	case	18:case	_
+18	líderes	líder	NOUN	_	Gender=Masc|Number=Plur	16	obl:agent	16:obl:agent|21:nsubj	_
+19	carismáticos	carismático	ADJ	_	Gender=Masc|Number=Plur	18	amod	18:amod	_
+20	que	que	PRON	_	PronType=Rel	21	nsubj	18:ref	_
+21	distorcem	distorcer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	acl:relcl	18:acl:relcl	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	história	história	NOUN	_	Gender=Fem|Number=Sing	21	obj	21:obj	_
+24-25	do	_	_	_	_	_	_	_	_
+24	de	de	ADP	_	_	26	case	26:case	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	país	país	NOUN	_	Gender=Masc|Number=Sing	23	nmod	23:nmod:de	SpaceAfter=No
+27	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0017
+# text = David Barton, um influente orador evangélico, defende que os EUA deveriam retornar a uma teocracia cristã, manipulando fatos históricos para ganhar adeptos.
+1	David	David	PROPN	_	_	9	nsubj	9:nsubj	_
+2	Barton	Barton	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+5	influente	influente	ADJ	_	Number=Sing	6	amod	6:amod	_
+6	orador	orador	NOUN	_	Gender=Masc|Number=Sing	1	appos	1:appos	_
+7	evangélico	evangélico	ADJ	_	Gender=Masc|Number=Sing	6	amod	6:amod	SpaceAfter=No
+8	,	,	PUNCT	_	_	6	punct	6:punct	_
+9	defende	defender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+10	que	que	SCONJ	_	_	13	mark	13:mark	_
+11	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	12:det	_
+12	EUA	EUA	PROPN	_	_	13	nsubj	13:nsubj|14:nsubj	_
+13	deveriam	dever	VERB	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	9	ccomp	9:ccomp	_
+14	retornar	retornar	VERB	_	VerbForm=Inf	13	xcomp	13:xcomp	_
+15	a	a	ADP	_	_	17	case	17:case	_
+16	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	teocracia	teocracia	NOUN	_	Gender=Fem|Number=Sing	14	obl	14:obl:a	_
+18	cristã	cristo	ADJ	_	Gender=Fem|Number=Sing	17	amod	17:amod	SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	20:punct	_
+20	manipulando	manipular	VERB	_	VerbForm=Ger	14	advcl	14:advcl	_
+21	fatos	fato	NOUN	_	Gender=Masc|Number=Plur	20	obj	20:obj	_
+22	históricos	histórico	ADJ	_	Gender=Masc|Number=Plur	21	amod	21:amod	_
+23	para	para	ADP	_	_	24	mark	24:mark	_
+24	ganhar	ganhar	VERB	_	VerbForm=Inf	20	advcl	20:advcl:para	_
+25	adeptos	adepto	NOUN	_	Gender=Masc|Number=Plur	24	obj	24:obj	SpaceAfter=No
+26	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0019
+# text = A National Public Radio (NPR) inclusive deu voz a Barton, aumentando a sua influência.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	National	National	PROPN	_	_	9	nsubj	9:nsubj	_
+3	Public	Public	PROPN	_	_	2	flat:name	2:flat:name	_
+4	Radio	Radio	PROPN	_	_	2	flat:name	2:flat:name	_
+5	(	(	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+6	NPR	NPR	PROPN	_	_	2	appos	2:appos	SpaceAfter=No
+7	)	)	PUNCT	_	_	6	punct	6:punct	_
+8	inclusive	inclusive	ADV	_	_	9	advmod	9:advmod	_
+9	deu	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	voz	voz	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+11	a	a	ADP	_	_	12	case	12:case	_
+12	Barton	Barton	PROPN	_	_	9	obl	9:obl:a	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	aumentando	aumentar	VERB	_	VerbForm=Ger	9	advcl	9:advcl	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+16	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	17	det	17:det	_
+17	influência	influência	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	SpaceAfter=No
+18	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0021
+# text = A Suprema Corte, ao defender o direito de neonazistas de marchar em Skokie, Illinois, na década de 1970, teria inadvertidamente semeado o terreno para o crescimento desses grupos marginais.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Suprema	Suprema	PROPN	_	_	27	nsubj	27:nsubj	_
+3	Corte	Corte	PROPN	_	_	2	flat:name	2:flat:name	SpaceAfter=No
+4	,	,	PUNCT	_	_	7	punct	7:punct	_
+5-6	ao	_	_	_	_	_	_	_	_
+5	a	a	ADP	_	ExtPos=SCONJ	7	mark	7:mark	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	fixed	5:fixed	_
+7	defender	defender	VERB	_	VerbForm=Inf	27	advcl	27:advcl:a_o	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	direito	direito	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	neonazistas	neonazista	NOUN	_	Number=Plur	9	nmod	9:nmod:de	_
+12	de	de	ADP	_	_	13	mark	13:mark	_
+13	marchar	marchar	VERB	_	VerbForm=Inf	9	acl	9:acl:de	_
+14	em	em	ADP	_	_	15	case	15:case	_
+15	Skokie	Skokie	PROPN	_	_	13	obl	13:obl:em	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	Illinois	Illinois	PROPN	_	_	15	parataxis	15:parataxis	SpaceAfter=No
+18	,	,	PUNCT	_	_	17	punct	17:punct	_
+19-20	na	_	_	_	_	_	_	_	_
+19	em	em	ADP	_	_	21	case	21:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	década	década	NOUN	_	Gender=Fem|Number=Sing	13	obl	13:obl:em	_
+22	de	de	ADP	_	_	23	case	23:case	_
+23	1970	1970	NUM	_	NumType=Card	21	nmod	21:nmod:de	SpaceAfter=No
+24	,	,	PUNCT	_	_	7	punct	7:punct	_
+25	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	27	aux	27:aux	_
+26	inadvertidamente	inadvertidamente	ADV	_	_	27	advmod	27:advmod	_
+27	semeado	semear	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	29:det	_
+29	terreno	terreno	NOUN	_	Gender=Masc|Number=Sing	27	obj	27:obj	_
+30	para	para	ADP	_	_	32	case	32:case	_
+31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+32	crescimento	crescimento	NOUN	_	Gender=Masc|Number=Sing	29	nmod	29:nmod:para	_
+33-34	desses	_	_	_	_	_	_	_	_
+33	de	de	ADP	_	_	35	case	35:case	_
+34	esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	35	det	35:det	_
+35	grupos	grupo	NOUN	_	Gender=Masc|Number=Plur	32	nmod	32:nmod:de	_
+36	marginais	marginal	ADJ	_	Number=Plur	35	amod	35:amod	SpaceAfter=No
+37	.	.	PUNCT	_	_	27	punct	27:punct	_
+
+# sent_id = S0023
+# text = Embora os dados mostrem um aumento nas milícias de ultradireita desde a eleição de Barack Obama, esses grupos operam de forma descentralizada e seus membros agem frequentemente por conta própria, movidos mais por crises pessoais do que por uma ideologia coesa.
+1	Embora	embora	SCONJ	_	_	4	mark	4:mark	_
+2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	3:det	_
+3	dados	dado	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	4:nsubj	_
+4	mostrem	mostrar	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	21	advcl	21:advcl:embora|28:advcl:embora	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	aumento	aumento	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7-8	nas	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	9:det	_
+9	milícias	milícia	NOUN	_	Gender=Fem|Number=Plur	6	nmod	6:nmod:em	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	ultradireita	ultradireita	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:de	_
+12	desde	desde	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	eleição	eleição	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:desde	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	Barack	Barack	PROPN	_	_	14	nmod	14:nmod:de	_
+17	Obama	Obama	PROPN	_	_	16	flat:name	16:flat:name	SpaceAfter=No
+18	,	,	PUNCT	_	_	4	punct	4:punct	_
+19	esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	20	det	20:det	_
+20	grupos	grupo	NOUN	_	Gender=Masc|Number=Plur	21	nsubj	21:nsubj	_
+21	operam	operar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+22	de	de	ADP	_	_	23	case	23:case	_
+23	forma	forma	NOUN	_	Gender=Fem|Number=Sing	21	obl	21:obl:de	_
+24	descentralizada	descentralizado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	23	amod	23:amod	_
+25	e	e	CCONJ	_	_	28	cc	28:cc	_
+26	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	27	det	27:det	_
+27	membros	membro	NOUN	_	Gender=Masc|Number=Plur	28	nsubj	28:nsubj	_
+28	agem	agir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	21	conj	21:conj:e	_
+29	frequentemente	frequentemente	ADV	_	_	28	advmod	28:advmod	_
+30	por	por	ADP	_	_	31	case	31:case	_
+31	conta	conta	NOUN	_	Gender=Fem|Number=Sing	28	obl	28:obl:por	_
+32	própria	próprio	ADJ	_	Gender=Fem|Number=Sing	31	amod	31:amod	SpaceAfter=No
+33	,	,	PUNCT	_	_	34	punct	34:punct	_
+34	movidos	mover	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	28	advcl	28:advcl	_
+35	mais	mais	ADV	_	_	34	advmod	34:advmod	_
+36	por	por	ADP	_	_	37	case	37:case	_
+37	crises	crise	NOUN	_	Gender=Fem|Number=Plur	34	obl	34:obl:por	_
+38	pessoais	pessoal	ADJ	_	Number=Plur	37	amod	37:amod	_
+39-40	do	_	_	_	_	_	_	_	_
+39	de	de	ADP	_	ExtPos=SCONJ	44	mark	44:mark	_
+40	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	39	fixed	39:fixed	_
+41	que	que	PRON	_	PronType=Rel	39	fixed	39:fixed	_
+42	por	por	ADP	_	_	44	case	44:case	_
+43	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	44	det	44:det	_
+44	ideologia	ideologia	NOUN	_	Gender=Fem|Number=Sing	34	advcl	34:advcl:de_o_que	_
+45	coesa	coeso	ADJ	_	Gender=Fem|Number=Sing	44	amod	44:amod	SpaceAfter=No
+46	.	.	PUNCT	_	_	21	punct	21:punct	_
+
+# sent_id = S0025
+# text = O problema, segundo analistas, é a combinação letal de acesso a armas, falta de formação crítica da população e uma cultura que valoriza o sucesso a qualquer custo.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	problema	problema	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	9:nsubj|25:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	5	punct	5:punct	_
+4	segundo	segundo	ADP	_	_	5	case	5:case	_
+5	analistas	analista	NOUN	_	Number=Plur	9	nmod	9:nmod:segundo	SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	5:punct	_
+7	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	9:cop|25:cop	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	combinação	combinação	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+10	letal	letal	ADJ	_	Number=Sing	9	amod	9:amod	_
+11	de	de	ADP	_	_	12	case	12:case|16:case	_
+12	acesso	acesso	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:de	_
+13	a	a	ADP	_	_	14	case	14:case	_
+14	armas	arma	NOUN	_	Gender=Fem|Number=Plur	12	nmod	12:nmod:a	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	falta	falta	NOUN	_	Gender=Fem|Number=Sing	12	conj	9:nmod:de|12:conj	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	formação	formação	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:de	_
+19	crítica	crítico	ADJ	_	Gender=Fem|Number=Sing	18	amod	18:amod	_
+20-21	da	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	população	população	NOUN	_	Gender=Fem|Number=Sing	18	nmod	18:nmod:de	_
+23	e	e	CCONJ	_	_	25	cc	25:cc	_
+24	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	cultura	cultura	NOUN	_	Gender=Fem|Number=Sing	9	conj	9:conj:e|27:nsubj	_
+26	que	que	PRON	_	PronType=Rel	27	nsubj	25:ref	_
+27	valoriza	valorizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	acl:relcl	25:acl:relcl	_
+28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	29:det	_
+29	sucesso	sucesso	NOUN	_	Gender=Masc|Number=Sing	27	obj	27:obj	_
+30	a	a	ADP	_	_	32	case	32:case	_
+31	qualquer	qualquer	DET	_	Number=Sing|PronType=Ind	32	det	32:det	_
+32	custo	custo	NOUN	_	Gender=Masc|Number=Sing	27	obl	27:obl:a	SpaceAfter=No
+33	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0027
+# text = Esses elementos criam um ambiente onde o ódio e a desinformação prosperam.
+1	Esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	2	det	2:det	_
+2	elementos	elemento	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	3:nsubj	_
+3	criam	criar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	ambiente	ambiente	NOUN	_	Number=Sing	3	obj	3:obj|12:obl	_
+6	onde	onde	ADV	_	_	12	advmod	5:ref	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	ódio	ódio	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	12:nsubj	_
+9	e	e	CCONJ	_	_	11	cc	11:cc	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	desinformação	desinformação	NOUN	_	Gender=Fem|Number=Sing	8	conj	8:conj:e|12:nsubj	_
+12	prosperam	prosperar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	5:acl:relcl	SpaceAfter=No
+13	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0029
+# text = Gore Vidal, famoso por suas visões controversas, uma vez afirmou que os EUA "preferem viver em um mercado selvagem do que numa civilização verdadeira", sugerindo que essa mentalidade consumista está corroendo os fundamentos da sociedade americana.
+1	Gore	Gore	PROPN	_	_	12	nsubj	12:nsubj	_
+2	Vidal	Vidal	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	famoso	famoso	ADJ	_	Gender=Masc|Number=Sing	1	amod	1:amod	_
+5	por	por	ADP	_	_	7	case	7:case	_
+6	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	7	det	7:det	_
+7	visões	visão	NOUN	_	Gender=Fem|Number=Plur	4	obl	4:obl:por	_
+8	controversas	controverso	ADJ	_	Gender=Fem|Number=Plur	7	amod	7:amod	SpaceAfter=No
+9	,	,	PUNCT	_	_	4	punct	4:punct	_
+10	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	vez	vez	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl	_
+12	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+13	que	que	SCONJ	_	_	17	mark	17:mark	_
+14	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	15:det	_
+15	EUA	EUA	PROPN	_	_	17	nsubj	17:nsubj|18:nsubj	_
+16	"	"	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+17	preferem	preferir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	ccomp	12:ccomp	_
+18	viver	viver	VERB	_	VerbForm=Inf	17	xcomp	17:xcomp	_
+19	em	em	ADP	_	_	21	case	21:case	_
+20	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	mercado	mercado	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:em	_
+22	selvagem	selvagem	ADJ	_	Number=Sing	21	amod	21:amod	_
+23-24	do	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	ExtPos=SCONJ	28	mark	28:mark	_
+24	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	23	fixed	23:fixed	_
+25	que	que	PRON	_	PronType=Rel	23	fixed	23:fixed	_
+26-27	numa	_	_	_	_	_	_	_	_
+26	em	em	ADP	_	_	28	case	28:case	_
+27	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	civilização	civilização	NOUN	_	Gender=Fem|Number=Sing	18	advcl	18:advcl:de_o_que	_
+29	verdadeira	verdadeiro	ADJ	_	Gender=Fem|Number=Sing	28	amod	28:amod	SpaceAfter=No
+30	"	"	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+31	,	,	PUNCT	_	_	32	punct	32:punct	_
+32	sugerindo	sugerir	VERB	_	VerbForm=Ger	12	advcl	12:advcl	_
+33	que	que	SCONJ	_	_	38	mark	38:mark	_
+34	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	35	det	35:det	_
+35	mentalidade	mentalidade	NOUN	_	Gender=Fem|Number=Sing	38	nsubj	38:nsubj	_
+36	consumista	consumista	ADJ	_	Number=Sing	35	amod	35:amod	_
+37	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	38	aux	38:aux	_
+38	corroendo	corroer	VERB	_	VerbForm=Ger	32	ccomp	32:ccomp	_
+39	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	40	det	40:det	_
+40	fundamentos	fundamento	NOUN	_	Gender=Masc|Number=Plur	38	obj	38:obj	_
+41-42	da	_	_	_	_	_	_	_	_
+41	de	de	ADP	_	_	43	case	43:case	_
+42	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	43:det	_
+43	sociedade	sociedade	NOUN	_	Gender=Fem|Number=Sing	40	nmod	40:nmod:de	_
+44	americana	americano	ADJ	_	Gender=Fem|Number=Sing	43	amod	43:amod	SpaceAfter=No
+45	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0031
+# text = Será que a busca por preencher um vazio existencial leva a esses atos de violência?
+1	Será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	10	discourse	10:discourse	_
+2	que	que	SCONJ	_	_	10	discourse	10:discourse	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	busca	busca	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	10:nsubj	_
+5	por	por	ADP	_	_	6	mark	6:mark	_
+6	preencher	preencher	VERB	_	VerbForm=Inf	4	acl	4:acl:por	_
+7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	vazio	vazio	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+9	existencial	existencial	ADJ	_	Number=Sing	8	amod	8:amod	_
+10	leva	levar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+11	a	a	ADP	_	_	13	case	13:case	_
+12	esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	13	det	13:det	_
+13	atos	ato	NOUN	_	Gender=Masc|Number=Plur	10	obl	10:obl:a	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	violência	violência	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:de	SpaceAfter=No
+16	?	?	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0033
+# text = A nação se debate com essas questões enquanto tenta equilibrar liberdade individual e segurança coletiva.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	nação	nação	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+3	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	4	expl	4:expl	_
+4	debate	debater	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	com	com	ADP	_	_	7	case	7:case	_
+6	essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	7	det	7:det	_
+7	questões	questão	NOUN	_	Gender=Fem|Number=Plur	4	obl	4:obl:com	_
+8	enquanto	enquanto	SCONJ	_	_	9	mark	9:mark	_
+9	tenta	tentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	4:advcl:enquanto	_
+10	equilibrar	equilibrar	VERB	_	VerbForm=Inf	9	xcomp	9:xcomp	_
+11	liberdade	liberdade	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+12	individual	individual	ADJ	_	Number=Sing	11	amod	11:amod	_
+13	e	e	CCONJ	_	_	14	cc	14:cc	_
+14	segurança	segurança	NOUN	_	Number=Sing	11	conj	10:obj|11:conj:e	_
+15	coletiva	coletivo	ADJ	_	Gender=Fem|Number=Sing	14	amod	14:amod	SpaceAfter=No
+16	.	.	PUNCT	_	_	4	punct	4:punct	_

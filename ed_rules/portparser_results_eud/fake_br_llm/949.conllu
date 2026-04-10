@@ -1,0 +1,687 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Xi Jinping: da humilhação pública a governante absoluto da China.
+1	Xi	Xi	PROPN	_	_	0	root	0:root	_
+2	Jinping	Jinping	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	:	:	PUNCT	_	_	6	punct	6:punct	_
+4-5	da	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	humilhação	humilhação	NOUN	_	Gender=Fem|Number=Sing	1	nmod	1:nmod:de	_
+7	pública	público	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	_
+8	a	a	ADP	_	_	9	case	9:case	_
+9	governante	governante	NOUN	_	Number=Sing	6	nmod	6:nmod:a	_
+10	absoluto	absoluto	ADJ	_	Gender=Masc|Number=Sing	9	amod	9:amod	_
+11-12	da	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	China	China	PROPN	_	_	9	nmod	9:nmod:de	SpaceAfter=No
+14	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Nascido em Pequim, o presidente da China enfrentou uma juventude conturbada durante a Revolução Cultural, o que moldou sua visão de mundo e sua implacável ascensão ao poder.
+1	Nascido	nascer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	10	advcl	10:advcl	_
+2	em	em	ADP	_	_	3	case	3:case	_
+3	Pequim	Pequim	PROPN	_	_	1	obl	1:obl:em	SpaceAfter=No
+4	,	,	PUNCT	_	_	1	punct	1:punct	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	presidente	presidente	NOUN	_	Number=Sing	10	nsubj	10:nsubj	_
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	China	China	PROPN	_	_	6	nmod	6:nmod:de	_
+10	enfrentou	enfrentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+11	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	juventude	juventude	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+13	conturbada	conturbado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	12	amod	12:amod	_
+14	durante	durante	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	Revolução	Revolução	PROPN	_	_	10	obl	10:obl:durante	_
+17	Cultural	Cultural	PROPN	_	_	16	flat:name	16:flat:name	SpaceAfter=No
+18	,	,	PUNCT	_	_	21	punct	21:punct	_
+19	o	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	21	nsubj	21:nsubj	_
+20	que	que	PRON	_	PronType=Rel	19	fixed	19:fixed	_
+21	moldou	moldar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	parataxis	10:parataxis	_
+22	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	23	det	23:det	_
+23	visão	visão	NOUN	_	Gender=Fem|Number=Sing	21	obj	21:obj	_
+24	de	de	ADP	_	_	25	case	25:case	_
+25	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	23	nmod	23:nmod:de	_
+26	e	e	CCONJ	_	_	29	cc	29:cc	_
+27	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	29	det	29:det	_
+28	implacável	implacável	ADJ	_	Number=Sing	29	amod	29:amod	_
+29	ascensão	ascensão	NOUN	_	Gender=Fem|Number=Sing	23	conj	21:obj|23:conj:e	_
+30-31	ao	_	_	_	_	_	_	_	_
+30	a	a	ADP	_	_	32	case	32:case	_
+31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+32	poder	poder	NOUN	_	Gender=Masc|Number=Sing	29	nmod	29:nmod:a	SpaceAfter=No
+33	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0005
+# text = Há 50 anos, com apenas 15 anos, Xi Jinping foi arrancado de sua vida confortável na capital e forçado a viver entre camponeses em uma caverna remota.
+1	Há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	advcl	13:advcl|22:advcl	_
+2	50	50	NUM	_	NumType=Card	3	nummod	3:nummod	_
+3	anos	ano	NOUN	_	Gender=Masc|Number=Plur	1	obj	1:obj	SpaceAfter=No
+4	,	,	PUNCT	_	_	8	punct	8:punct	_
+5	com	com	ADP	_	_	8	case	8:case	_
+6	apenas	apenas	ADV	_	_	7	advmod	7:advmod	_
+7	15	15	NUM	_	NumType=Card	8	nummod	8:nummod	_
+8	anos	ano	NOUN	_	Gender=Masc|Number=Plur	13	obl	13:obl:com	SpaceAfter=No
+9	,	,	PUNCT	_	_	8	punct	8:punct	_
+10	Xi	Xi	PROPN	_	_	13	nsubj:pass	13:nsubj:pass|22:nsubj:pass|24:nsubj	_
+11	Jinping	Jinping	PROPN	_	_	10	flat:name	10:flat:name	_
+12	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	aux:pass	13:aux:pass|22:aux:pass	_
+13	arrancado	arrancar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	16	det	16:det	_
+16	vida	vida	NOUN	_	Gender=Fem|Number=Sing	13	obl	13:obl:de	_
+17	confortável	confortável	ADJ	_	Number=Sing	16	amod	16:amod	_
+18-19	na	_	_	_	_	_	_	_	_
+18	em	em	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	capital	capital	NOUN	_	Number=Sing	16	nmod	16:nmod:em	_
+21	e	e	CCONJ	_	_	22	cc	22:cc	_
+22	forçado	forçar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	13	conj	13:conj:e	_
+23	a	a	ADP	_	_	24	mark	24:mark	_
+24	viver	viver	VERB	_	VerbForm=Inf	22	xcomp	22:xcomp	_
+25	entre	entre	ADP	_	_	26	case	26:case	_
+26	camponeses	camponÃªs	NOUN	_	Gender=Masc|Number=Plur	24	obl	24:obl:entre	_
+27	em	em	ADP	_	_	29	case	29:case	_
+28	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	caverna	caverna	NOUN	_	Gender=Fem|Number=Sing	24	obl	24:obl:em	_
+30	remota	remoto	ADJ	_	Gender=Fem|Number=Sing	29	amod	29:amod	SpaceAfter=No
+31	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0007
+# text = Filho do revolucionário Xi Zhongxun, Xi viu sua família despedaçada quando seu pai foi expurgado e preso.
+1	Filho	filho	NOUN	_	Gender=Masc|Number=Sing	9	dislocated	9:dislocated	_
+2-3	do	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	revolucionário	revolucionário	NOUN	_	Gender=Masc|Number=Sing	1	nmod	1:nmod:de	_
+5	Xi	Xi	PROPN	_	_	4	nmod	4:nmod	_
+6	Zhongxun	Zhongxun	PROPN	_	_	5	flat:name	5:flat:name	SpaceAfter=No
+7	,	,	PUNCT	_	_	1	punct	1:punct	_
+8	Xi	Xi	PROPN	_	_	9	nsubj	9:nsubj	_
+9	viu	ver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	11	det	11:det	_
+11	família	família	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj|12:nsubj	_
+12	despedaçada	despedaçar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	9	xcomp	9:xcomp	_
+13	quando	quando	SCONJ	_	_	17	mark	17:mark|19:mark	_
+14	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	15	det	15:det	_
+15	pai	pai	NOUN	_	Gender=Masc|Number=Sing	17	nsubj:pass	17:nsubj:pass|19:nsubj:pass	_
+16	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	aux:pass	17:aux:pass|19:aux:pass	_
+17	expurgado	expurgar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	9	advcl	9:advcl:quando	_
+18	e	e	CCONJ	_	_	19	cc	19:cc	_
+19	preso	prender	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	17	conj	9:advcl:quando|17:conj:e	SpaceAfter=No
+20	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0009
+# text = Essa experiência transformou-o em um defensor fervoroso do Partido Comunista, promovendo uma narrativa de superação e dedicação ao povo chinês.
+1	Essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	2	det	2:det	_
+2	experiência	experiência	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_
+3-4	transformou-o	_	_	_	_	_	_	_	_
+3	transformou	transformar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	o	o	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	obj	3:obj	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	defensor	defensor	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:em	_
+8	fervoroso	fervoroso	ADJ	_	Gender=Masc|Number=Sing	7	amod	7:amod	_
+9-10	do	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	Partido	Partido	PROPN	_	_	7	nmod	7:nmod:de	_
+12	Comunista	Comunista	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	promovendo	promover	VERB	_	VerbForm=Ger	3	advcl	3:advcl	_
+15	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	narrativa	narrativa	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	_
+17	de	de	ADP	_	_	18	case	18:case|20:case	_
+18	superação	superação	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:de	_
+19	e	e	CCONJ	_	_	20	cc	20:cc	_
+20	dedicação	dedicação	NOUN	_	Gender=Fem|Number=Sing	18	conj	16:nmod:de|18:conj:e	_
+21-22	ao	_	_	_	_	_	_	_	_
+21	a	a	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	povo	povo	NOUN	_	Gender=Masc|Number=Sing	20	nmod	20:nmod:a	_
+24	chinês	chinês	ADJ	_	Gender=Masc|Number=Sing	23	amod	23:amod	SpaceAfter=No
+25	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0011
+# text = Ao se tornar presidente em 2012, Xi inaugurou uma era de autoritarismo e controle sem precedentes.
+1-2	Ao	_	_	_	_	_	_	_	_
+1	A	a	ADP	_	ExtPos=SCONJ	4	mark	4:mark	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	1:fixed	_
+3	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	4	expl	4:expl	_
+4	tornar	tornar	VERB	_	Number=Sing|Person=3|VerbForm=Inf	10	advcl	10:advcl:a_o	_
+5	presidente	presidente	NOUN	_	Number=Sing	4	xcomp	4:xcomp	_
+6	em	em	ADP	_	_	7	case	7:case	_
+7	2012	2012	NUM	_	NumType=Card	4	obl	4:obl:em	SpaceAfter=No
+8	,	,	PUNCT	_	_	4	punct	4:punct	_
+9	Xi	Xi	PROPN	_	_	10	nsubj	10:nsubj	_
+10	inaugurou	inaugurar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+11	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	era	era	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+13	de	de	ADP	_	_	14	case	14:case|16:case	_
+14	autoritarismo	autoritarismo	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:de	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	controle	controle	NOUN	_	Gender=Masc|Number=Sing	14	conj	12:nmod:de|14:conj:e	_
+17	sem	sem	ADP	_	_	18	case	18:case	_
+18	precedentes	precedente	NOUN	_	Number=Plur	14	nmod	14:nmod:sem|16:nmod:sem	SpaceAfter=No
+19	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0013
+# text = Prometeu combater a corrupção e, de fato, muitos altos funcionários foram presos.
+1	Prometeu	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	combater	combater	VERB	_	VerbForm=Inf	1	xcomp	1:xcomp	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	corrupção	corrupção	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+5	e	e	CCONJ	_	_	14	cc	14:cc	SpaceAfter=No
+6	,	,	PUNCT	_	_	8	punct	8:punct	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	fato	fato	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:de	SpaceAfter=No
+9	,	,	PUNCT	_	_	8	punct	8:punct	_
+10	muitos	muito	ADJ	_	Gender=Masc|Number=Plur	12	amod	12:amod	_
+11	altos	alto	ADJ	_	Gender=Masc|Number=Plur	12	amod	12:amod	_
+12	funcionários	funcionário	NOUN	_	Gender=Masc|Number=Plur	14	nsubj:pass	14:nsubj:pass	_
+13	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	14	aux:pass	14:aux:pass	_
+14	presos	prender	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	1	conj	1:conj:e	SpaceAfter=No
+15	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0015
+# text = No entanto, rumores indicam que essas ações foram mais uma estratégia para eliminar rivais políticos do que uma verdadeira limpeza moral.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	ExtPos=CCONJ	6	cc	6:cc	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	1:fixed	_
+3	entanto	entanto	NOUN	_	Gender=Masc|Number=Sing	1	fixed	1:fixed	SpaceAfter=No
+4	,	,	PUNCT	_	_	1	punct	1:punct	_
+5	rumores	rumor	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	6:nsubj	_
+6	indicam	indicar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	que	que	SCONJ	_	_	13	mark	13:mark	_
+8	essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	9	det	9:det	_
+9	ações	ação	NOUN	_	Gender=Fem|Number=Plur	13	nsubj	13:nsubj	_
+10	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	13	cop	13:cop	_
+11	mais	mais	ADV	_	_	13	advmod	13:advmod	_
+12	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	estratégia	estratégia	NOUN	_	Gender=Fem|Number=Sing	6	ccomp	6:ccomp	_
+14	para	para	ADP	_	_	15	mark	15:mark	_
+15	eliminar	eliminar	VERB	_	VerbForm=Inf	13	acl	13:acl:para	_
+16	rivais	rival	NOUN	_	Number=Plur	15	obj	15:obj	_
+17	políticos	político	ADJ	_	Gender=Masc|Number=Plur	16	amod	16:amod	_
+18-19	do	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	ExtPos=SCONJ	23	mark	23:mark	_
+19	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	18	fixed	18:fixed	_
+20	que	que	PRON	_	PronType=Rel	18	fixed	18:fixed	_
+21	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+22	verdadeira	verdadeiro	ADJ	_	Gender=Fem|Number=Sing	23	amod	23:amod	_
+23	limpeza	limpeza	NOUN	_	Gender=Fem|Number=Sing	13	advcl	13:advcl:de_o_que	_
+24	moral	moral	ADJ	_	Number=Sing	23	amod	23:amod	SpaceAfter=No
+25	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0017
+# text = Recentemente, durante o 19o Congresso Nacional do Partido Comunista, Xi reforçou seu compromisso de "construir um país de sociedade moderna", mas a realidade é que seu governo tem se aprofundado em táticas de censura e propaganda.
+1	Recentemente	recentemente	ADV	_	_	14	advmod	14:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	durante	durante	ADP	_	_	6	case	6:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+5	19o	19o	ADJ	_	Gender=Masc|NumType=Ord	6	amod	6:amod	_
+6	Congresso	Congresso	PROPN	_	_	14	obl	14:obl:durante	_
+7	Nacional	Nacional	PROPN	_	_	6	flat:name	6:flat:name	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	Partido	Partido	PROPN	_	_	6	flat:name	6:flat:name	_
+11	Comunista	Comunista	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+12	,	,	PUNCT	_	_	6	punct	6:punct	_
+13	Xi	Xi	PROPN	_	_	14	nsubj	14:nsubj	_
+14	reforçou	reforçar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+15	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	16	det	16:det	_
+16	compromisso	compromisso	NOUN	_	Gender=Masc|Number=Sing	14	obj	14:obj	_
+17	de	de	ADP	_	_	19	mark	19:mark	_
+18	"	"	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+19	construir	construir	VERB	_	VerbForm=Inf	16	acl	16:acl:de	_
+20	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	país	país	NOUN	_	Gender=Masc|Number=Sing	19	obj	19:obj	_
+22	de	de	ADP	_	_	23	case	23:case	_
+23	sociedade	sociedade	NOUN	_	Gender=Fem|Number=Sing	21	nmod	21:nmod:de	_
+24	moderna	moderno	ADJ	_	Gender=Fem|Number=Sing	23	amod	23:amod	SpaceAfter=No
+25	"	"	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+26	,	,	PUNCT	_	_	36	punct	36:punct	_
+27	mas	mas	CCONJ	_	_	36	cc	36:cc	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	realidade	realidade	NOUN	_	Gender=Fem|Number=Sing	36	nsubj:outer	36:nsubj:outer	_
+30	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	36	cop	36:cop	_
+31	que	que	SCONJ	_	_	36	mark	36:mark	_
+32	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	33	det	33:det	_
+33	governo	governo	NOUN	_	Gender=Masc|Number=Sing	36	nsubj	36:nsubj	_
+34	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	36	aux	36:aux	_
+35	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	36	expl	36:expl	_
+36	aprofundado	aprofundar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	14	conj	14:conj:mas	_
+37	em	em	ADP	_	_	38	case	38:case	_
+38	táticas	tática	NOUN	_	Gender=Fem|Number=Plur	36	obl	36:obl:em	_
+39	de	de	ADP	_	_	40	case	40:case|42:case	_
+40	censura	censura	NOUN	_	Gender=Fem|Number=Sing	38	nmod	38:nmod:de	_
+41	e	e	CCONJ	_	_	42	cc	42:cc	_
+42	propaganda	propaganda	NOUN	_	Gender=Fem|Number=Sing	40	conj	38:nmod:de|40:conj:e	SpaceAfter=No
+43	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0019
+# text = A vila de Liangjiahe, onde ele passou seus anos de exílio, foi transformada em um santuário turístico glorificando seu passado, enquanto a verdade sobre sua vida lá é cuidadosamente ocultada.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	vila	vila	NOUN	_	Gender=Fem|Number=Sing	15	nsubj:pass	8:obl|15:nsubj:pass	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Liangjiahe	Liangjiahe	PROPN	_	_	2	nmod	2:nmod:de	SpaceAfter=No
+5	,	,	PUNCT	_	_	8	punct	8:punct	_
+6	onde	onde	ADV	_	_	8	advmod	2:ref	_
+7	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nsubj	8:nsubj	_
+8	passou	passar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+9	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	10	det	10:det	_
+10	anos	ano	NOUN	_	Gender=Masc|Number=Plur	8	obj	8:obj	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	exílio	exílio	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:de	SpaceAfter=No
+13	,	,	PUNCT	_	_	8	punct	8:punct	_
+14	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	aux:pass	15:aux:pass	_
+15	transformada	transformar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+16	em	em	ADP	_	_	18	case	18:case	_
+17	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	santuário	santuário	NOUN	_	Gender=Masc|Number=Sing	15	obl	15:obl:em	_
+19	turístico	turístico	ADJ	_	Gender=Masc|Number=Sing	18	amod	18:amod	_
+20	glorificando	glorificar	VERB	_	VerbForm=Ger	15	advcl	15:advcl	_
+21	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	22	det	22:det	_
+22	passado	passado	NOUN	_	Gender=Masc|Number=Sing	20	obj	20:obj	SpaceAfter=No
+23	,	,	PUNCT	_	_	33	punct	33:punct	_
+24	enquanto	enquanto	SCONJ	_	_	33	mark	33:mark	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	verdade	verdade	NOUN	_	Gender=Fem|Number=Sing	33	nsubj:pass	33:nsubj:pass	_
+27	sobre	sobre	ADP	_	_	29	case	29:case	_
+28	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	29	det	29:det	_
+29	vida	vida	NOUN	_	Gender=Fem|Number=Sing	26	nmod	26:nmod:sobre	_
+30	lá	lá	ADV	_	_	33	advmod	33:advmod	_
+31	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	33	aux:pass	33:aux:pass	_
+32	cuidadosamente	cuidadosamente	ADV	_	_	33	advmod	33:advmod	_
+33	ocultada	ocultar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	15	advcl	15:advcl:enquanto	SpaceAfter=No
+34	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0021
+# text = Xi Jinping é descrito como um "homem do povo", mas documentos vazados revelam uma infância marcada por privilégios até a queda de seu pai.
+1	Xi	Xi	PROPN	_	_	4	nsubj:pass	4:nsubj:pass	_
+2	Jinping	Jinping	PROPN	_	_	1	flat:name	1:flat:name	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	descrito	descrever	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5	como	como	ADP	_	_	8	case	8:case	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+7	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	homem	homem	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:como	_
+9-10	do	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	povo	povo	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:de	SpaceAfter=No
+12	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+13	,	,	PUNCT	_	_	17	punct	17:punct	_
+14	mas	mas	CCONJ	_	_	17	cc	17:cc	_
+15	documentos	documento	NOUN	_	Gender=Masc|Number=Plur	17	nsubj	17:nsubj	_
+16	vazados	vazar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	15	acl	15:acl	_
+17	revelam	revelar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	conj	4:conj:mas	_
+18	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	infância	infância	NOUN	_	Gender=Fem|Number=Sing	17	obj	17:obj	_
+20	marcada	marcar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	19	acl	19:acl	_
+21	por	por	ADP	_	_	22	case	22:case	_
+22	privilégios	privilégio	NOUN	_	Gender=Masc|Number=Plur	20	obl:agent	20:obl:agent	_
+23	até	até	ADP	_	_	25	case	25:case	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	queda	queda	NOUN	_	Gender=Fem|Number=Sing	20	obl	20:obl:até	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	28	det	28:det	_
+28	pai	pai	NOUN	_	Gender=Masc|Number=Sing	25	nmod	25:nmod:de	SpaceAfter=No
+29	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0023
+# text = Aos 13 anos, já enfrentava ameaças de morte e teve que aprender a sobreviver nas ruas de Pequim.
+1-2	Aos	_	_	_	_	_	_	_	_
+1	A	a	ADP	_	_	4	case	4:case	_
+2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	4:det	_
+3	13	13	NUM	_	NumType=Card	4	nummod	4:nummod	_
+4	anos	ano	NOUN	_	Gender=Masc|Number=Plur	7	obl	7:obl:a	SpaceAfter=No
+5	,	,	PUNCT	_	_	4	punct	4:punct	_
+6	já	já	ADV	_	_	7	advmod	7:advmod	_
+7	enfrentava	enfrentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+8	ameaças	ameaça	NOUN	_	Gender=Fem|Number=Plur	7	obj	7:obj	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	morte	morte	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	teve	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	conj	7:conj:e	_
+13	que	que	ADP	_	_	14	mark	14:mark	_
+14	aprender	aprender	VERB	_	VerbForm=Inf	12	xcomp	12:xcomp	_
+15	a	a	ADP	_	_	16	mark	16:mark	_
+16	sobreviver	sobreviver	VERB	_	VerbForm=Inf	14	xcomp	14:xcomp	_
+17-18	nas	_	_	_	_	_	_	_	_
+17	em	em	ADP	_	_	19	case	19:case	_
+18	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	19:det	_
+19	ruas	rua	NOUN	_	Gender=Fem|Number=Plur	16	obl	16:obl:em	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	Pequim	Pequim	PROPN	_	_	19	nmod	19:nmod:de	SpaceAfter=No
+22	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0025
+# text = Ao ser enviado para o campo, adaptou-se rapidamente, carregando esterco e construindo barragens, mas sempre com um olho na carreira política.
+1-2	Ao	_	_	_	_	_	_	_	_
+1	A	a	ADP	_	ExtPos=SCONJ	4	mark	4:mark	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	1:fixed	_
+3	ser	ser	AUX	_	VerbForm=Inf	4	aux:pass	4:aux:pass	_
+4	enviado	enviar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	9	advcl	9:advcl:a_o	_
+5	para	para	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	campo	campo	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:para	SpaceAfter=No
+8	,	,	PUNCT	_	_	4	punct	4:punct	_
+9-10	adaptou-se	_	_	_	_	_	_	_	_
+9	adaptou	adaptar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	9	expl	9:expl	_
+11	rapidamente	rapidamente	ADV	_	_	9	advmod	9:advmod	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	carregando	carregar	VERB	_	VerbForm=Ger	9	advcl	9:advcl	_
+14	esterco	esterco	NOUN	_	Gender=Masc|Number=Sing	13	obj	13:obj	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	construindo	construir	VERB	_	VerbForm=Ger	13	conj	9:advcl|13:conj:e	_
+17	barragens	barragem	NOUN	_	Gender=Fem|Number=Plur	16	obj	16:obj	SpaceAfter=No
+18	,	,	PUNCT	_	_	23	punct	23:punct	_
+19	mas	mas	CCONJ	_	_	23	cc	23:cc	_
+20	sempre	sempre	ADV	_	_	23	advmod	23:advmod	_
+21	com	com	ADP	_	_	23	case	23:case	_
+22	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	olho	olho	NOUN	_	Gender=Masc|Number=Sing	13	conj	9:obl:com|13:conj:mas	_
+24-25	na	_	_	_	_	_	_	_	_
+24	em	em	ADP	_	_	26	case	26:case	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	carreira	carreira	NOUN	_	Gender=Fem|Number=Sing	23	nmod	23:nmod:em	_
+27	política	político	ADJ	_	Gender=Fem|Number=Sing	26	amod	26:amod	SpaceAfter=No
+28	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0027
+# text = Seu culto de personalidade é evidente, com cartazes gigantes exaltando seus "pensamentos" e um museu em sua honra.
+1	Seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	det	2:det	_
+2	culto	culto	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	personalidade	personalidade	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+6	evidente	evidente	ADJ	_	Number=Sing	0	root	0:root	SpaceAfter=No
+7	,	,	PUNCT	_	_	9	punct	9:punct	_
+8	com	com	ADP	_	_	9	case	9:case|18:case	_
+9	cartazes	cartaz	NOUN	_	Gender=Masc|Number=Plur	6	obl	6:obl:com	_
+10	gigantes	gigante	ADJ	_	Number=Plur	9	amod	9:amod	_
+11	exaltando	exaltar	VERB	_	VerbForm=Ger	9	acl	9:acl	_
+12	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	14	det	14:det	_
+13	"	"	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+14	pensamentos	pensamento	NOUN	_	Gender=Masc|Number=Plur	11	obj	11:obj	SpaceAfter=No
+15	"	"	PUNCT	_	_	14	punct	14:punct	_
+16	e	e	CCONJ	_	_	18	cc	18:cc	_
+17	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	museu	museu	NOUN	_	Gender=Masc|Number=Sing	9	conj	6:obl:com|9:conj:e	_
+19	em	em	ADP	_	_	21	case	21:case	_
+20	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	21	det	21:det	_
+21	honra	honra	NOUN	_	Gender=Fem|Number=Sing	18	nmod	18:nmod:em	SpaceAfter=No
+22	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0029
+# text = Contudo, amigos de longa data afirmam que a verdadeira influência em sua vida foram os primeiros anos de luxo e poder em Pequim, não os difíceis tempos no campo.
+1	Contudo	contudo	CCONJ	_	_	7	cc	7:cc	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	amigos	amigo	NOUN	_	Gender=Masc|Number=Plur	7	nsubj	7:nsubj	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	longa	longo	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	_
+6	data	data	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:de	_
+7	afirmam	afirmar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	que	que	SCONJ	_	_	18	mark	18:mark|29:mark	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+10	verdadeira	verdadeiro	ADJ	_	Gender=Fem|Number=Sing	11	amod	11:amod	_
+11	influência	influência	NOUN	_	Gender=Fem|Number=Sing	18	nsubj	18:nsubj|29:nsubj	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	14	det	14:det	_
+14	vida	vida	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:em	_
+15	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	18	cop	18:cop|29:cop	_
+16	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	18:det	_
+17	primeiros	primeiro	ADJ	_	Gender=Masc|Number=Plur|NumType=Ord	18	amod	18:amod	_
+18	anos	ano	NOUN	_	Gender=Masc|Number=Plur	7	ccomp	7:ccomp	_
+19	de	de	ADP	_	_	20	case	20:case|22:case	_
+20	luxo	luxo	NOUN	_	Gender=Masc|Number=Sing	18	nmod	18:nmod:de	_
+21	e	e	CCONJ	_	_	22	cc	22:cc	_
+22	poder	poder	NOUN	_	Gender=Masc|Number=Sing	20	conj	18:nmod:de|20:conj:e	_
+23	em	em	ADP	_	_	24	case	24:case	_
+24	Pequim	Pequim	PROPN	_	_	20	nmod	20:nmod:em|22:nmod:em	SpaceAfter=No
+25	,	,	PUNCT	_	_	29	punct	29:punct	_
+26	não	não	ADV	_	_	29	advmod	29:advmod	_
+27	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	29:det	_
+28	difíceis	difícil	ADJ	_	Number=Plur	29	amod	29:amod	_
+29	tempos	tempo	NOUN	_	Gender=Masc|Number=Plur	18	conj	7:ccomp|18:conj	_
+30-31	no	_	_	_	_	_	_	_	_
+30	em	em	ADP	_	_	32	case	32:case	_
+31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+32	campo	campo	NOUN	_	Gender=Masc|Number=Sing	29	nmod	29:nmod:em	SpaceAfter=No
+33	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0031
+# text = A censura atingiu níveis extremos, com memes do ursinho Pooh sendo banidos por comparações com o presidente.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	censura	censura	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_
+3	atingiu	atingir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	níveis	nível	NOUN	_	Gender=Masc|Number=Plur	3	obj	3:obj	_
+5	extremos	extremo	ADJ	_	Gender=Masc|Number=Plur	4	amod	4:amod	SpaceAfter=No
+6	,	,	PUNCT	_	_	8	punct	8:punct	_
+7	com	com	ADP	_	_	8	case	8:case	_
+8	memes	mem	NOUN	_	Gender=Masc|Number=Plur	3	obl	3:obl:com	_
+9-10	do	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	ursinho	ursinho	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:de	_
+12	Pooh	Pooh	PROPN	_	_	11	nmod	11:nmod	_
+13	sendo	ser	AUX	_	VerbForm=Ger	14	aux:pass	14:aux:pass	_
+14	banidos	banir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	8	acl	8:acl	_
+15	por	por	ADP	_	_	16	case	16:case	_
+16	comparações	comparação	NOUN	_	Gender=Fem|Number=Plur	14	obl	14:obl:por	_
+17	com	com	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	presidente	presidente	NOUN	_	Number=Sing	16	nmod	16:nmod:com	SpaceAfter=No
+20	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0033
+# text = Xi também tem combatido duramente qualquer crítica online, com punições severas para apelidos pejorativos como "Steamed Bun Xi".
+1	Xi	Xi	PROPN	_	_	4	nsubj	4:nsubj	_
+2	também	também	ADV	_	_	4	advmod	4:advmod	_
+3	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	4:aux	_
+4	combatido	combater	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+5	duramente	duramente	ADV	_	_	4	advmod	4:advmod	_
+6	qualquer	qualquer	DET	_	Number=Sing|PronType=Ind	7	det	7:det	_
+7	crítica	crítica	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+8	online	online	ADJ	_	Number=Sing	7	amod	7:amod	SpaceAfter=No
+9	,	,	PUNCT	_	_	11	punct	11:punct	_
+10	com	com	ADP	_	_	11	case	11:case	_
+11	punições	punição	NOUN	_	Gender=Fem|Number=Plur	4	obl	4:obl:com	_
+12	severas	severo	ADJ	_	Gender=Fem|Number=Plur	11	amod	11:amod	_
+13	para	para	ADP	_	_	14	case	14:case	_
+14	apelidos	apelido	NOUN	_	Gender=Masc|Number=Plur	11	nmod	11:nmod:para	_
+15	pejorativos	pejorativo	ADJ	_	Gender=Masc|Number=Plur	14	amod	14:amod	_
+16	como	como	ADP	_	_	18	case	18:case	_
+17	"	"	PUNCT	_	_	18	punct	18:punct	SpaceAfter=No
+18	Steamed	Steamed	PROPN	_	_	14	nmod	14:nmod:como	_
+19	Bun	Bun	PROPN	_	_	18	flat:name	18:flat:name	_
+20	Xi	Xi	PROPN	_	_	18	flat:name	18:flat:name	SpaceAfter=No
+21	"	"	PUNCT	_	_	18	punct	18:punct	SpaceAfter=No
+22	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0035
+# text = Seu objetivo é claro: controlar a narrativa enquanto transforma a China em uma superpotência cibernética, mas sem liberdade na internet.
+1	Seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	det	2:det	_
+2	objetivo	objetivo	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+4	claro	claro	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+5	:	:	PUNCT	_	_	6	punct	6:punct	_
+6	controlar	controlar	VERB	_	VerbForm=Inf	4	parataxis	4:parataxis	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	narrativa	narrativa	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+9	enquanto	enquanto	SCONJ	_	_	10	mark	10:mark	_
+10	transforma	transformar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	advcl	6:advcl:enquanto	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	China	China	PROPN	_	_	10	obj	10:obj	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	superpotência	superpotência	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:em	_
+16	cibernética	cibernético	ADJ	_	Gender=Fem|Number=Sing	15	amod	15:amod	SpaceAfter=No
+17	,	,	PUNCT	_	_	20	punct	20:punct	_
+18	mas	mas	CCONJ	_	_	20	cc	20:cc	_
+19	sem	sem	ADP	_	_	20	case	20:case	_
+20	liberdade	liberdade	NOUN	_	Gender=Fem|Number=Sing	10	conj	6:obl:enquanto|10:conj:mas	_
+21-22	na	_	_	_	_	_	_	_	_
+21	em	em	ADP	_	_	23	case	23:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	internet	internet	NOUN	_	Foreign=Yes|Gender=Fem|Number=Sing	20	nmod	20:nmod:em	SpaceAfter=No
+24	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0037
+# text = A campanha anticorrupção de Xi esconde uma guerra interna contra facções rivais.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	campanha	campanha	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj	_
+3	anticorrupção	anticorrupção	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	Xi	Xi	PROPN	_	_	2	nmod	2:nmod:de	_
+6	esconde	esconder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	guerra	guerra	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+9	interna	interno	ADJ	_	Gender=Fem|Number=Sing	8	amod	8:amod	_
+10	contra	contra	ADP	_	_	11	case	11:case	_
+11	facções	facção	NOUN	_	Gender=Fem|Number=Plur	8	nmod	8:nmod:contra	_
+12	rivais	rival	ADJ	_	Number=Plur	11	amod	11:amod	SpaceAfter=No
+13	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0039
+# text = Críticos como o bilionário Guo Wengui acusam o presidente e seu braço direito de corrupção, pintando um quadro de hipocrisia e moralidade falida dentro do Partido Comunista.
+1	Críticos	crítico	NOUN	_	Gender=Masc|Number=Plur	7	nsubj	7:nsubj	_
+2	como	como	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	bilionário	bilionário	NOUN	_	Gender=Masc|Number=Sing	1	nmod	1:nmod:como	_
+5	Guo	Guo	PROPN	_	_	4	nmod	4:nmod	_
+6	Wengui	Wengui	PROPN	_	_	5	flat:name	5:flat:name	_
+7	acusam	acusar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	presidente	presidente	NOUN	_	Number=Sing	7	obj	7:obj	_
+10	e	e	CCONJ	_	_	12	cc	12:cc	_
+11	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	12	det	12:det	_
+12	braço	braço	NOUN	_	Gender=Masc|Number=Sing	9	conj	7:obj|9:conj:e	_
+13	direito	direito	ADJ	_	Gender=Masc|Number=Sing	12	amod	12:amod	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	corrupção	corrupção	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:de	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	pintando	pintar	VERB	_	VerbForm=Ger	7	advcl	7:advcl	_
+18	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	quadro	quadro	NOUN	_	Gender=Masc|Number=Sing	17	obj	17:obj	_
+20	de	de	ADP	_	_	21	case	21:case|23:case	_
+21	hipocrisia	hipocrisia	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:de	_
+22	e	e	CCONJ	_	_	23	cc	23:cc	_
+23	moralidade	moralidade	NOUN	_	Gender=Fem|Number=Sing	21	conj	19:nmod:de|21:conj:e	_
+24	falida	falido	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	23	amod	23:amod	_
+25	dentro	dentro	ADV	_	_	17	advmod	17:advmod	_
+26-27	do	_	_	_	_	_	_	_	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	Partido	Partido	PROPN	_	_	25	obl	25:obl:de	_
+29	Comunista	Comunista	PROPN	_	_	28	flat:name	28:flat:name	SpaceAfter=No
+30	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0041
+# text = As acusações recaem em um sistema onde a transparência é nula e a censura, absoluta.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	acusações	acusação	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	3:nsubj	_
+3	recaem	recair	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:em|11:obl	_
+7	onde	onde	ADV	_	_	11	advmod	6:ref	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	transparência	transparência	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	11:nsubj|14:nsubj|16:nsubj	_
+10	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	11:cop|14:cop|16:cop	_
+11	nula	nulo	ADJ	_	Gender=Fem|Number=Sing	6	acl:relcl	6:acl:relcl	_
+12	e	e	CCONJ	_	_	14	cc	14:cc	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	censura	censura	NOUN	_	Gender=Fem|Number=Sing	11	conj	6:acl:relcl|11:conj:e	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	absoluta	absoluto	ADJ	_	Gender=Fem|Number=Sing	11	conj	6:acl:relcl|11:conj	SpaceAfter=No
+17	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0043
+# text = Empresas privadas estão sendo obrigadas a aderir a células do partido, e a educação nas universidades é estritamente controlada para exaltar a liderança do partido, eliminando qualquer influência ocidental.
+1	Empresas	empresa	NOUN	_	Gender=Fem|Number=Plur	5	nsubj:pass	5:nsubj:pass|7:nsubj	_
+2	privadas	privado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	1	amod	1:amod	_
+3	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux	5:aux	_
+4	sendo	ser	AUX	_	VerbForm=Ger	5	aux:pass	5:aux:pass	_
+5	obrigadas	obrigar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	_
+6	a	a	ADP	_	_	7	mark	7:mark	_
+7	aderir	aderir	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	_
+8	a	a	ADP	_	_	9	case	9:case	_
+9	células	célula	NOUN	_	Gender=Fem|Number=Plur	7	obl	7:obl:a	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	partido	partido	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:de	SpaceAfter=No
+13	,	,	PUNCT	_	_	22	punct	22:punct	_
+14	e	e	CCONJ	_	_	22	cc	22:cc	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	educação	educação	NOUN	_	Gender=Fem|Number=Sing	22	nsubj:pass	22:nsubj:pass	_
+17-18	nas	_	_	_	_	_	_	_	_
+17	em	em	ADP	_	_	19	case	19:case	_
+18	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	19:det	_
+19	universidades	universidade	NOUN	_	Gender=Fem|Number=Plur	16	nmod	16:nmod:em	_
+20	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	aux:pass	22:aux:pass	_
+21	estritamente	estritamente	ADV	_	_	22	advmod	22:advmod	_
+22	controlada	controlar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	5	conj	5:conj:e	_
+23	para	para	ADP	_	_	24	mark	24:mark	_
+24	exaltar	exaltar	VERB	_	VerbForm=Inf	22	advcl	22:advcl:para	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	liderança	liderança	NOUN	_	Gender=Fem|Number=Sing	24	obj	24:obj	_
+27-28	do	_	_	_	_	_	_	_	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	29:det	_
+29	partido	partido	NOUN	_	Gender=Masc|Number=Sing	26	nmod	26:nmod:de	SpaceAfter=No
+30	,	,	PUNCT	_	_	31	punct	31:punct	_
+31	eliminando	eliminar	VERB	_	VerbForm=Ger	22	advcl	22:advcl	_
+32	qualquer	qualquer	DET	_	Number=Sing|PronType=Ind	33	det	33:det	_
+33	influência	influência	NOUN	_	Gender=Fem|Number=Sing	31	obj	31:obj	_
+34	ocidental	ocidental	ADJ	_	Number=Sing	33	amod	33:amod	SpaceAfter=No
+35	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0045
+# text = Xi Jinping, o "príncipe" que se tornou "plebeu" e depois presidente, parece determinado a consolidar seu poder a qualquer custo, mesmo que isso signifique sacrificar a verdade e a liberdade.
+1	Xi	Xi	PROPN	_	_	18	nsubj	18:nsubj|19:nsubj	_
+2	Jinping	Jinping	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+5	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+6	príncipe	príncipe	NOUN	_	Gender=Masc|Number=Sing	1	appos	1:appos|10:nsubj|12:nsubj|16:nsubj	SpaceAfter=No
+7	"	"	PUNCT	_	_	6	punct	6:punct	_
+8	que	que	PRON	_	PronType=Rel	10	nsubj	6:ref	_
+9	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	10	expl	10:expl	_
+10	tornou	tornar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	acl:relcl	6:acl:relcl	_
+11	"	"	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+12	plebeu	plebeu	NOUN	_	Gender=Masc|Number=Sing	10	xcomp	10:xcomp	SpaceAfter=No
+13	"	"	PUNCT	_	_	12	punct	12:punct	_
+14	e	e	CCONJ	_	_	16	cc	16:cc	_
+15	depois	depois	ADV	_	_	16	advmod	16:advmod	_
+16	presidente	presidente	NOUN	_	Number=Sing	12	conj	10:xcomp|12:conj:e	SpaceAfter=No
+17	,	,	PUNCT	_	_	6	punct	6:punct	_
+18	parece	parecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+19	determinado	determinado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	18	xcomp	18:xcomp	_
+20	a	a	ADP	_	_	21	mark	21:mark	_
+21	consolidar	consolidar	VERB	_	VerbForm=Inf	19	acl	19:acl:a	_
+22	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	23	det	23:det	_
+23	poder	poder	NOUN	_	Gender=Masc|Number=Sing	21	obj	21:obj	_
+24	a	a	ADP	_	_	26	case	26:case	_
+25	qualquer	qualquer	DET	_	Number=Sing|PronType=Ind	26	det	26:det	_
+26	custo	custo	NOUN	_	Gender=Masc|Number=Sing	21	obl	21:obl:a	SpaceAfter=No
+27	,	,	PUNCT	_	_	31	punct	31:punct	_
+28	mesmo	mesmo	ADV	_	ExtPos=SCONJ	31	mark	31:mark	_
+29	que	que	SCONJ	_	_	28	fixed	28:fixed	_
+30	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	31	nsubj	31:nsubj|32:nsubj	_
+31	signifique	significar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	advcl	21:advcl:mesmo_que	_
+32	sacrificar	sacrificar	VERB	_	VerbForm=Inf	31	xcomp	31:xcomp	_
+33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	34:det	_
+34	verdade	verdade	NOUN	_	Gender=Fem|Number=Sing	32	obj	32:obj	_
+35	e	e	CCONJ	_	_	37	cc	37:cc	_
+36	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	37:det	_
+37	liberdade	liberdade	NOUN	_	Gender=Fem|Number=Sing	34	conj	32:obj|34:conj:e	SpaceAfter=No
+38	.	.	PUNCT	_	_	18	punct	18:punct	_

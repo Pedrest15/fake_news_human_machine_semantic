@@ -1,0 +1,161 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Quadro de saúde de Marisa é estável.
+1	Quadro	quadro	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	1	nmod	1:nmod:de	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	Marisa	Marisa	PROPN	_	_	1	nmod	1:nmod:de	_
+6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+7	estável	estável	ADJ	_	Number=Sing	0	root	0:root	SpaceAfter=No
+8	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0003
+# text = Ela ficará na UTI para observação.
+1	Ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj	_
+2	ficará	ficar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+3-4	na	_	_	_	_	_	_	_	_
+3	em	em	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	UTI	UTI	PROPN	_	_	2	obl	2:obl:em	_
+6	para	para	ADP	_	_	7	case	7:case	_
+7	observação	observação	NOUN	_	Gender=Fem|Number=Sing	2	obl	2:obl:para	SpaceAfter=No
+8	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = Lula disse que está esperançoso.
+1	Lula	Lula	PROPN	_	_	2	nsubj	2:nsubj	_
+2	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	5	mark	5:mark	_
+4	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+5	esperançoso	esperançoso	ADJ	_	Gender=Masc|Number=Sing	2	ccomp	2:ccomp	SpaceAfter=No
+6	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0007
+# text = O Sírio Libanês informou que Dona Marisa Letícia foi imediatamente submetida a um atendimento de emergência, seguido de cirurgia endovascular (embolização) e oclusão do aneurisma.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Sírio	Sírio	PROPN	_	_	4	nsubj	4:nsubj	_
+3	Libanês	Libanês	PROPN	_	_	2	flat:name	2:flat:name	_
+4	informou	informar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	que	que	SCONJ	_	_	11	mark	11:mark	_
+6	Dona	Dona	PROPN	_	_	11	nsubj:pass	11:nsubj:pass	_
+7	Marisa	Marisa	PROPN	_	_	6	flat:name	6:flat:name	_
+8	Letícia	Letícia	PROPN	_	_	6	flat:name	6:flat:name	_
+9	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	aux:pass	11:aux:pass	_
+10	imediatamente	imediatamente	ADV	_	_	11	advmod	11:advmod	_
+11	submetida	submeter	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	4	ccomp	4:ccomp	_
+12	a	a	ADP	_	_	14	case	14:case	_
+13	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	atendimento	atendimento	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:a	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	emergência	emergência	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:de	SpaceAfter=No
+17	,	,	PUNCT	_	_	18	punct	18:punct	_
+18	seguido	seguir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	11	advcl	11:advcl	_
+19	de	de	ADP	_	_	20	case	20:case|26:case	_
+20	cirurgia	cirurgia	NOUN	_	Gender=Fem|Number=Sing	18	obl	18:obl:de	_
+21	endovascular	endovascular	ADJ	_	Number=Sing	20	amod	20:amod	_
+22	(	(	PUNCT	_	_	23	punct	23:punct	SpaceAfter=No
+23	embolização	embolização	NOUN	_	Gender=Fem|Number=Sing	20	appos	20:appos	SpaceAfter=No
+24	)	)	PUNCT	_	_	23	punct	23:punct	_
+25	e	e	CCONJ	_	_	26	cc	26:cc	_
+26	oclusão	oclusão	NOUN	_	Gender=Fem|Number=Sing	20	conj	18:obl:de|20:conj:e	_
+27-28	do	_	_	_	_	_	_	_	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	29:det	_
+29	aneurisma	aneurisma	NOUN	_	Gender=Masc|Number=Sing	26	nmod	26:nmod:de	SpaceAfter=No
+30	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0009
+# text = Ela deverá ficar na UTI por tempo indeterminado.
+1	Ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj|3:nsubj	_
+2	deverá	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+3	ficar	ficar	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	_
+4-5	na	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	UTI	UTI	PROPN	_	_	3	obl	3:obl:em	_
+7	por	por	ADP	_	_	8	case	8:case	_
+8	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:por	_
+9	indeterminado	indeterminado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	8	amod	8:amod	SpaceAfter=No
+10	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0011
+# text = O médico da família, dr. Kalil Roberto Filho, disse que o quadro de saúde de dona Marisa é estável, mas que ela ainda corre risco de morte.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	médico	médico	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	12:nsubj	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	família	família	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	dr.	dr.	NOUN	_	_	2	appos	2:appos	_
+8	Kalil	Kalil	PROPN	_	_	7	nmod	7:nmod	_
+9	Roberto	Roberto	PROPN	_	_	8	flat:name	8:flat:name	_
+10	Filho	Filho	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+11	,	,	PUNCT	_	_	7	punct	7:punct	_
+12	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+13	que	que	SCONJ	_	_	22	mark	22:mark	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	quadro	quadro	NOUN	_	Gender=Masc|Number=Sing	22	nsubj	22:nsubj	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:de	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	dona	dona	NOUN	_	Gender=Fem|Number=Sing	17	nmod	17:nmod:de	_
+20	Marisa	Marisa	PROPN	_	_	19	nmod	19:nmod	_
+21	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	cop	22:cop	_
+22	estável	estável	ADJ	_	Number=Sing	12	ccomp	12:ccomp	SpaceAfter=No
+23	,	,	PUNCT	_	_	28	punct	28:punct	_
+24	mas	mas	CCONJ	_	_	28	cc	28:cc	_
+25	que	que	SCONJ	_	_	28	mark	28:mark	_
+26	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	28	nsubj	28:nsubj	_
+27	ainda	ainda	ADV	_	_	28	advmod	28:advmod	_
+28	corre	correr	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	conj	12:ccomp|22:conj:mas	_
+29	risco	risco	NOUN	_	Gender=Masc|Number=Sing	28	obj	28:obj	_
+30	de	de	ADP	_	_	31	case	31:case	_
+31	morte	morte	NOUN	_	Gender=Fem|Number=Sing	29	nmod	29:nmod:de	SpaceAfter=No
+32	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0013
+# text = O presidente do Instituto Lula informou que tudo correu bem durante a cirurgia.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	presidente	presidente	NOUN	_	Number=Sing	7	nsubj	7:nsubj	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	Instituto	Instituto	PROPN	_	_	2	nmod	2:nmod:de	_
+6	Lula	Lula	PROPN	_	_	5	flat:name	5:flat:name	_
+7	informou	informar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	que	que	SCONJ	_	_	10	mark	10:mark	_
+9	tudo	tudo	PRON	_	PronType=Ind	10	nsubj	10:nsubj	_
+10	correu	correr	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	ccomp	7:ccomp	_
+11	bem	bem	ADV	_	_	10	advmod	10:advmod	_
+12	durante	durante	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	cirurgia	cirurgia	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:durante	SpaceAfter=No
+15	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0015
+# text = Okamoto informou que Lula está "preocupado e muito esperançoso".
+1	Okamoto	Okamoto	PROPN	_	_	2	nsubj	2:nsubj	_
+2	informou	informar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	7	mark	7:mark|10:mark	_
+4	Lula	Lula	PROPN	_	_	7	nsubj	7:nsubj|10:nsubj	_
+5	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop|10:cop	_
+6	"	"	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+7	preocupado	preocupado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	2	ccomp	2:ccomp	_
+8	e	e	CCONJ	_	_	10	cc	10:cc	_
+9	muito	muito	ADV	_	_	10	advmod	10:advmod	_
+10	esperançoso	esperançoso	ADJ	_	Gender=Masc|Number=Sing	7	conj	2:ccomp|7:conj:e	SpaceAfter=No
+11	"	"	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+12	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0017
+# text = Lula ainda não falou com a imprensa.
+1	Lula	Lula	PROPN	_	_	4	nsubj	4:nsubj	_
+2	ainda	ainda	ADV	_	_	4	advmod	4:advmod	_
+3	não	não	ADV	_	_	4	advmod	4:advmod	_
+4	falou	falar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	com	com	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	imprensa	imprensa	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:com	SpaceAfter=No
+8	.	.	PUNCT	_	_	4	punct	4:punct	_

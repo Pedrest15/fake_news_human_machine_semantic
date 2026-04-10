@@ -1,0 +1,490 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = URGENTE: Argentina em Caos! Movimentos Comunistas e Socialistas Tomam Controle de Propriedades na Região Turística.
+1	URGENTE	URGENTE	PROPN	_	_	11	dep	11:dep	SpaceAfter=No
+2	:	:	PUNCT	_	_	3	punct	3:punct	_
+3	Argentina	Argentina	PROPN	_	_	11	parataxis	11:parataxis	_
+4	em	em	ADP	_	_	5	case	5:case	_
+5	Caos	Caos	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+6	!	!	PUNCT	_	_	3	punct	3:punct	_
+7	Movimentos	movimento	NOUN	_	Gender=Masc|Number=Plur	11	nsubj	11:nsubj	_
+8	Comunistas	Comunistas	PROPN	_	_	7	flat:name	7:flat:name	_
+9	e	e	CCONJ	_	_	10	cc	10:cc	_
+10	Socialistas	Socialistas	PROPN	_	_	7	conj	7:conj:e|11:nsubj	_
+11	Tomam	tomar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+12	Controle	Controle	PROPN	_	_	11	obj	11:obj	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	Propriedades	Propriedades	PROPN	_	_	12	flat:name	12:flat:name	_
+15-16	na	_	_	_	_	_	_	_	_
+15	em	em	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	Região	Região	PROPN	_	_	11	obl	11:obl:em	_
+18	Turística	Turística	PROPN	_	_	17	flat:name	17:flat:name	SpaceAfter=No
+19	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0003
+# text = Um vídeo alarmante está circulando nas redes sociais, onde um homem identificado como Juan Pérez, morador da Argentina, denuncia uma onda de invasões a propriedades privadas em áreas nobres do país.
+1	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+3	alarmante	alarmante	ADJ	_	Number=Sing	2	amod	2:amod	_
+4	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	5:aux	_
+5	circulando	circular	VERB	_	VerbForm=Ger	0	root	0:root	_
+6-7	nas	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	8:det	_
+8	redes	rede	NOUN	_	Gender=Fem|Number=Plur	5	obl	5:obl:em|24:obl	_
+9	sociais	social	ADJ	_	Number=Plur	8	amod	8:amod	SpaceAfter=No
+10	,	,	PUNCT	_	_	24	punct	24:punct	_
+11	onde	onde	ADV	_	_	24	advmod	8:ref	_
+12	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	homem	homem	NOUN	_	Gender=Masc|Number=Sing	24	nsubj	24:nsubj	_
+14	identificado	identificar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	13	acl	13:acl	_
+15	como	como	ADP	_	_	16	case	16:case	_
+16	Juan	Juan	PROPN	_	_	14	obl	14:obl:como	_
+17	Pérez	Pérez	PROPN	_	_	16	flat:name	16:flat:name	SpaceAfter=No
+18	,	,	PUNCT	_	_	19	punct	19:punct	_
+19	morador	morador	NOUN	_	Gender=Masc|Number=Sing	16	appos	16:appos	_
+20-21	da	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	Argentina	Argentina	PROPN	_	_	19	nmod	19:nmod:de	SpaceAfter=No
+23	,	,	PUNCT	_	_	19	punct	19:punct	_
+24	denuncia	denunciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	8:acl:relcl	_
+25	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	onda	onda	NOUN	_	Gender=Fem|Number=Sing	24	obj	24:obj	_
+27	de	de	ADP	_	_	28	case	28:case	_
+28	invasões	invasão	NOUN	_	Gender=Fem|Number=Plur	26	nmod	26:nmod:de	_
+29	a	a	ADP	_	_	30	case	30:case	_
+30	propriedades	propriedade	NOUN	_	Gender=Fem|Number=Plur	28	nmod	28:nmod:a	_
+31	privadas	privado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	30	amod	30:amod	_
+32	em	em	ADP	_	_	33	case	33:case	_
+33	áreas	área	NOUN	_	Gender=Fem|Number=Plur	28	nmod	28:nmod:em	_
+34	nobres	nobre	ADJ	_	Number=Plur	33	amod	33:amod	_
+35-36	do	_	_	_	_	_	_	_	_
+35	de	de	ADP	_	_	37	case	37:case	_
+36	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	37:det	_
+37	país	país	NOUN	_	Gender=Masc|Number=Sing	33	nmod	33:nmod:de	SpaceAfter=No
+38	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0005
+# text = De acordo com ele, essas invasões são apoiadas pelo governo do presidente Alberto Fernández, que estaria incentivando movimentos comunistas e socialistas durante a pandemia de COVID-19.
+1	De	de	ADP	_	_	2	case	2:case	_
+2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:de	_
+3	com	com	ADP	_	_	4	case	4:case	_
+4	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nmod	2:nmod:com	SpaceAfter=No
+5	,	,	PUNCT	_	_	2	punct	2:punct	_
+6	essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	7	det	7:det	_
+7	invasões	invasão	NOUN	_	Gender=Fem|Number=Plur	9	nsubj:pass	9:nsubj:pass	_
+8	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	aux:pass	9:aux:pass	_
+9	apoiadas	apoiar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	_
+10-11	pelo	_	_	_	_	_	_	_	_
+10	por	por	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	governo	governo	NOUN	_	Gender=Masc|Number=Sing	9	obl:agent	9:obl:agent	_
+13-14	do	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	presidente	presidente	NOUN	_	Number=Sing	12	nmod	12:nmod:de|21:nsubj	_
+16	Alberto	Alberto	PROPN	_	_	15	nmod	15:nmod	_
+17	Fernández	Fernández	PROPN	_	_	16	flat:name	16:flat:name	SpaceAfter=No
+18	,	,	PUNCT	_	_	21	punct	21:punct	_
+19	que	que	PRON	_	PronType=Rel	21	nsubj	15:ref	_
+20	estaria	estar	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	21	aux	21:aux	_
+21	incentivando	incentivar	VERB	_	VerbForm=Ger	15	acl:relcl	15:acl:relcl	_
+22	movimentos	movimento	NOUN	_	Gender=Masc|Number=Plur	21	obj	21:obj	_
+23	comunistas	comunista	ADJ	_	Number=Plur	22	amod	22:amod	_
+24	e	e	CCONJ	_	_	25	cc	25:cc	_
+25	socialistas	socialista	ADJ	_	Number=Plur	23	conj	22:amod|23:conj:e	_
+26	durante	durante	ADP	_	_	28	case	28:case	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	pandemia	pandemia	NOUN	_	Gender=Fem|Number=Sing	21	obl	21:obl:durante	_
+29	de	de	ADP	_	_	30	case	30:case	_
+30	COVID-19	COVID-19	PROPN	_	_	28	nmod	28:nmod:de	SpaceAfter=No
+31	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0007
+# text = Juan Pérez afirma que a situação chegou a um ponto crítico, com a perda total da propriedade privada em regiões turísticas e prósperas.
+1	Juan	Juan	PROPN	_	_	3	nsubj	3:nsubj	_
+2	Pérez	Pérez	PROPN	_	_	1	flat:name	1:flat:name	_
+3	afirma	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	7	mark	7:mark	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	situação	situação	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj	_
+7	chegou	chegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	ccomp	3:ccomp	_
+8	a	a	ADP	_	_	10	case	10:case	_
+9	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	ponto	ponto	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:a	_
+11	crítico	crítico	ADJ	_	Gender=Masc|Number=Sing	10	amod	10:amod	SpaceAfter=No
+12	,	,	PUNCT	_	_	15	punct	15:punct	_
+13	com	com	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	perda	perda	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:com	_
+16	total	total	ADJ	_	Number=Sing	15	amod	15:amod	_
+17-18	da	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	propriedade	propriedade	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:de	_
+20	privada	privado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	19	amod	19:amod	_
+21	em	em	ADP	_	_	22	case	22:case	_
+22	regiões	região	NOUN	_	Gender=Fem|Number=Plur	19	nmod	19:nmod:em	_
+23	turísticas	turístico	ADJ	_	Gender=Fem|Number=Plur	22	amod	22:amod	_
+24	e	e	CCONJ	_	_	25	cc	25:cc	_
+25	prósperas	próspero	ADJ	_	Gender=Fem|Number=Plur	23	conj	22:amod|23:conj:e	SpaceAfter=No
+26	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0009
+# text = "Não temos mais segurança em nossas casas, o governo simplesmente nos abandonou", declara emocionado.
+1	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	Não	não	ADV	_	_	3	advmod	3:advmod	_
+3	temos	ter	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	17	ccomp:speech	17:ccomp:speech	_
+4	mais	mais	DET	_	PronType=Ind	5	det	5:det	_
+5	segurança	segurança	NOUN	_	Number=Sing	3	obj	3:obj	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	nossas	nosso	DET	_	Gender=Fem|Number=Plur|Person=1|Poss=Yes|PronType=Prs	8	det	8:det	_
+8	casas	casa	NOUN	_	Gender=Fem|Number=Plur	3	obl	3:obl:em	SpaceAfter=No
+9	,	,	PUNCT	_	_	14	punct	14:punct	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	governo	governo	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	14:nsubj	_
+12	simplesmente	simplesmente	ADV	_	_	14	advmod	14:advmod	_
+13	nos	nos	PRON	_	Case=Acc|Number=Plur|Person=1|PronType=Prs	14	obj	14:obj	_
+14	abandonou	abandonar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	3:conj|17:ccomp:speech	SpaceAfter=No
+15	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+16	,	,	PUNCT	_	_	3	punct	3:punct	_
+17	declara	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+18	emocionado	emocionado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	17	nsubj	17:nsubj	SpaceAfter=No
+19	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0011
+# text = A crise econômica agravada pela pandemia teria sido o catalisador para mais de 1.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	crise	crise	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	11:nsubj	_
+3	econômica	econômico	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	_
+4	agravada	agravar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	2:acl	_
+5-6	pela	_	_	_	_	_	_	_	_
+5	por	por	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	pandemia	pandemia	NOUN	_	Gender=Fem|Number=Sing	4	obl:agent	4:obl:agent	_
+8	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	11	aux	11:aux	_
+9	sido	ser	AUX	_	Gender=Masc|Number=Sing|VerbForm=Part	11	cop	11:cop	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	catalisador	catalisador	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+12	para	para	ADP	_	_	15	case	15:case	_
+13	mais	mais	ADV	_	ExtPos=ADV	15	advmod	15:advmod	_
+14	de	de	ADP	_	_	13	fixed	13:fixed	_
+15	1	1	NUM	_	NumType=Card	11	nmod	11:nmod:para	SpaceAfter=No
+16	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0013
+# text = 800 tentativas de ocupação só em Buenos Aires.
+1	800	800	NUM	_	NumType=Card	2	nummod	2:nummod	_
+2	tentativas	tentativa	NOUN	_	Gender=Fem|Number=Plur	0	root	0:root	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	ocupação	ocupação	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+5	só	só	ADV	_	_	7	advmod	7:advmod	_
+6	em	em	ADP	_	_	7	case	7:case	_
+7	Buenos	Buenos	PROPN	_	_	2	nmod	2:nmod:em	_
+8	Aires	Aires	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+9	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0015
+# text = Destaque para a ocupação em Guernica, que resultou na maior ação de desalojamento do ano, com a polícia prendendo 4 lideranças e retirando centenas de famílias, expondo um suposto apoio governamental às ocupações.
+1	Destaque	destaque	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+2	para	para	ADP	_	_	4	case	4:case	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	ocupação	ocupação	NOUN	_	Gender=Fem|Number=Sing	1	nmod	1:nmod:para|9:nsubj	_
+5	em	em	ADP	_	_	6	case	6:case	_
+6	Guernica	Guernica	PROPN	_	_	4	nmod	4:nmod:em	SpaceAfter=No
+7	,	,	PUNCT	_	_	9	punct	9:punct	_
+8	que	que	PRON	_	PronType=Rel	9	nsubj	4:ref	_
+9	resultou	resultar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	acl:relcl	4:acl:relcl	_
+10-11	na	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	13	case	13:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+12	maior	maior	ADJ	_	Number=Sing	13	amod	13:amod	_
+13	ação	ação	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:em	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	desalojamento	desalojamento	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod:de	_
+16-17	do	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	ano	ano	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod:de	SpaceAfter=No
+19	,	,	PUNCT	_	_	23	punct	23:punct	_
+20	com	com	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	polícia	polícia	NOUN	_	Number=Sing	9	obl	9:obl:com	_
+23	prendendo	prender	VERB	_	VerbForm=Ger	9	advcl	9:advcl	_
+24	4	4	NUM	_	NumType=Card	25	nummod	25:nummod	_
+25	lideranças	liderança	NOUN	_	Gender=Fem|Number=Plur	23	obj	23:obj	_
+26	e	e	CCONJ	_	_	27	cc	27:cc	_
+27	retirando	retirar	VERB	_	VerbForm=Ger	23	conj	9:advcl|23:conj:e	_
+28	centenas	centena	NOUN	_	Gender=Fem|Number=Plur	27	obj	27:obj	_
+29	de	de	ADP	_	_	30	case	30:case	_
+30	famílias	família	NOUN	_	Gender=Fem|Number=Plur	28	nmod	28:nmod:de	SpaceAfter=No
+31	,	,	PUNCT	_	_	32	punct	32:punct	_
+32	expondo	expor	VERB	_	VerbForm=Ger	23	advcl	23:advcl|27:advcl	_
+33	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	35	det	35:det	_
+34	suposto	suposto	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	35	amod	35:amod	_
+35	apoio	apoio	NOUN	_	Gender=Masc|Number=Sing	32	obj	32:obj	_
+36	governamental	governamental	ADJ	_	Number=Sing	35	amod	35:amod	_
+37-38	às	_	_	_	_	_	_	_	_
+37	a	a	ADP	_	_	39	case	39:case	_
+38	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	39	det	39:det	_
+39	ocupações	ocupação	NOUN	_	Gender=Fem|Number=Plur	35	nmod	35:nmod:a	SpaceAfter=No
+40	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0017
+# text = O caso de Guernica, onde mais de 3.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	caso	caso	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Guernica	Guernica	PROPN	_	_	2	nmod	2:nmod:de|9:obl	SpaceAfter=No
+5	,	,	PUNCT	_	_	9	punct	9:punct	_
+6	onde	onde	ADV	_	_	9	advmod	4:ref	_
+7	mais	mais	ADV	_	ExtPos=ADV	9	advmod	9:advmod	_
+8	de	de	ADP	_	_	7	fixed	7:fixed	_
+9	3	3	NUM	_	NumType=Card	4	acl:relcl	4:acl:relcl	SpaceAfter=No
+10	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0019
+# text = 000 pessoas estavam ocupando um prédio, chamou atenção internacional e é visto como um exemplo da política anti-propriedade privada do governo.
+1	000	000	NUM	_	NumType=Card	2	nummod	2:nummod	_
+2	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	4	nsubj	4:nsubj|13:nsubj:pass	_
+3	estavam	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	4	aux	4:aux	_
+4	ocupando	ocupar	VERB	_	VerbForm=Ger	0	root	0:root	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	prédio	prédio	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	8:punct	_
+8	chamou	chamar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	conj	4:conj:e	_
+9	atenção	atenção	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	_
+10	internacional	internacional	ADJ	_	Number=Sing	9	amod	9:amod	_
+11	e	e	CCONJ	_	_	13	cc	13:cc	_
+12	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux:pass	13:aux:pass	_
+13	visto	ver	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	4	conj	4:conj:e	_
+14	como	como	ADP	_	_	16	case	16:case	_
+15	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	exemplo	exemplo	NOUN	_	Gender=Masc|Number=Sing	13	obl	13:obl:como	_
+17-18	da	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	política	política	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:de	_
+20	anti-propriedade	anti-propriedade	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod	_
+21	privada	privado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	19	amod	19:amod	_
+22-23	do	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	governo	governo	NOUN	_	Gender=Masc|Number=Sing	19	nmod	19:nmod:de	SpaceAfter=No
+25	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0021
+# text = Outras desocupações, como em Tigre e Entre Ríos, foram noticiadas, mas sem a mesma intensidade ou violência.
+1	Outras	outro	DET	_	Gender=Fem|Number=Plur|PronType=Ind	2	det	2:det	_
+2	desocupações	desocupação	NOUN	_	Gender=Fem|Number=Plur	12	nsubj:pass	12:nsubj:pass	SpaceAfter=No
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
+4	como	como	ADP	_	_	6	mark	6:mark	_
+5	em	em	ADP	_	_	6	case	6:case|8:case	_
+6	Tigre	Tigre	PROPN	_	_	2	nmod	2:nmod:como_em	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	Entre	Entre	PROPN	_	_	6	conj	2:nmod:como_em|6:conj:e	_
+9	Ríos	Ríos	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+10	,	,	PUNCT	_	_	6	punct	6:punct	_
+11	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	12	aux:pass	12:aux:pass	_
+12	noticiadas	noticiar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	SpaceAfter=No
+13	,	,	PUNCT	_	_	18	punct	18:punct	_
+14	mas	mas	CCONJ	_	_	18	cc	18:cc	_
+15	sem	sem	ADP	_	_	18	case	18:case|20:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+17	mesma	mesmo	DET	_	Gender=Fem|Number=Sing|PronType=Dem	18	det	18:det	_
+18	intensidade	intensidade	NOUN	_	Gender=Fem|Number=Sing	12	conj	12:conj:mas	_
+19	ou	ou	CCONJ	_	_	20	cc	20:cc	_
+20	violência	violência	NOUN	_	Gender=Fem|Number=Sing	18	conj	18:conj:ou	SpaceAfter=No
+21	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0023
+# text = A situação se torna ainda mais tensa com a economia argentina encolhendo 9,9% em 2022, o desemprego atingindo 11% e um déficit habitacional de 3,6 milhões de casas.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	situação	situação	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj|7:nsubj	_
+3	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	4	expl	4:expl	_
+4	torna	tornar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	ainda	ainda	ADV	_	_	7	advmod	7:advmod	_
+6	mais	mais	ADV	_	_	7	advmod	7:advmod	_
+7	tensa	tenso	ADJ	_	Gender=Fem|Number=Sing	4	xcomp	4:xcomp	_
+8	com	com	ADP	_	_	10	case	10:case|25:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	economia	economia	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:com	_
+11	argentina	argentino	ADJ	_	Gender=Fem|Number=Sing	10	amod	10:amod	_
+12	encolhendo	encolher	VERB	_	VerbForm=Ger	10	acl	10:acl	_
+13	9,9	9,9	NUM	_	NumType=Card	14	nummod	14:nummod	SpaceAfter=No
+14	%	%	SYM	_	_	12	obj	12:obj	_
+15	em	em	ADP	_	_	16	case	16:case	_
+16	2022	2022	NUM	_	NumType=Card	12	obl	12:obl:em	SpaceAfter=No
+17	,	,	PUNCT	_	_	20	punct	20:punct	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	desemprego	desemprego	NOUN	_	Gender=Masc|Number=Sing	20	nsubj	20:nsubj	_
+20	atingindo	atingir	VERB	_	VerbForm=Ger	12	conj	10:acl|12:conj	_
+21	11	11	NUM	_	NumType=Card	22	nummod	22:nummod	SpaceAfter=No
+22	%	%	SYM	_	_	20	obj	20:obj	_
+23	e	e	CCONJ	_	_	25	cc	25:cc	_
+24	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	déficit	déficit	NOUN	_	Gender=Masc|Number=Sing	10	conj	4:obl:com|10:conj:e	_
+26	habitacional	habitacional	ADJ	_	Number=Sing	25	amod	25:amod	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	3,6	3,6	NUM	_	NumType=Card	29	nummod	29:nummod	_
+29	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	25	nmod	25:nmod:de	_
+30	de	de	ADP	_	_	31	case	31:case	_
+31	casas	casa	NOUN	_	Gender=Fem|Number=Plur	29	nmod	29:nmod:de	SpaceAfter=No
+32	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0025
+# text = Esses números alimentam os temores de que o presidente Fernández, associado aos Kirchners, esteja implementando uma agenda intervencionista.
+1	Esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	2	det	2:det	_
+2	números	número	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	3:nsubj	_
+3	alimentam	alimentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	5:det	_
+5	temores	temor	NOUN	_	Gender=Masc|Number=Plur	3	obj	3:obj	_
+6	de	de	ADP	_	ExtPos=SCONJ	18	mark	18:mark	_
+7	que	que	SCONJ	_	_	6	fixed	6:fixed	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	presidente	presidente	NOUN	_	Number=Sing	18	nsubj	18:nsubj	_
+10	Fernández	Fernández	PROPN	_	_	9	nmod	9:nmod	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	associado	associar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	9	acl	9:acl	_
+13-14	aos	_	_	_	_	_	_	_	_
+13	a	a	ADP	_	_	15	case	15:case	_
+14	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	15:det	_
+15	Kirchners	Kirchners	PROPN	_	_	12	obl	12:obl:a	SpaceAfter=No
+16	,	,	PUNCT	_	_	12	punct	12:punct	_
+17	esteja	estar	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux	18:aux	_
+18	implementando	implementar	VERB	_	VerbForm=Ger	5	acl	5:acl:de_que	_
+19	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	agenda	agenda	NOUN	_	Gender=Fem|Number=Sing	18	obj	18:obj	_
+21	intervencionista	intervencionista	ADJ	_	Number=Sing	20	amod	20:amod	SpaceAfter=No
+22	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0027
+# text = A tentativa de intervenção na empresa de grãos Vicentin, em junho, foi citada como prova dessa política.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	tentativa	tentativa	NOUN	_	Gender=Fem|Number=Sing	16	nsubj:pass	16:nsubj:pass	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	intervenção	intervenção	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+5-6	na	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	empresa	empresa	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:em	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	grãos	grão	NOUN	_	Gender=Masc|Number=Plur	7	nmod	7:nmod:de	_
+10	Vicentin	Vicentin	PROPN	_	_	7	nmod	7:nmod	SpaceAfter=No
+11	,	,	PUNCT	_	_	13	punct	13:punct	_
+12	em	em	ADP	_	_	13	case	13:case	_
+13	junho	junho	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:em	SpaceAfter=No
+14	,	,	PUNCT	_	_	13	punct	13:punct	_
+15	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	aux:pass	16:aux:pass	_
+16	citada	citar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+17	como	como	ADP	_	_	18	case	18:case	_
+18	prova	prova	NOUN	_	Gender=Fem|Number=Sing	16	obl	16:obl:como	_
+19-20	dessa	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	21	det	21:det	_
+21	política	política	NOUN	_	Gender=Fem|Number=Sing	18	nmod	18:nmod:de	SpaceAfter=No
+22	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0029
+# text = Embora Fernández tenha esclarecido que não pretendia atacar a propriedade privada, a mensagem foi recebida com ceticismo por muitos cidadãos.
+1	Embora	embora	SCONJ	_	_	4	mark	4:mark	_
+2	Fernández	Fernández	PROPN	_	_	4	nsubj	4:nsubj	_
+3	tenha	ter	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	4:aux	_
+4	esclarecido	esclarecer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	16	advcl	16:advcl:embora	_
+5	que	que	SCONJ	_	_	7	mark	7:mark	_
+6	não	não	ADV	_	_	7	advmod	7:advmod	_
+7	pretendia	pretender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	ccomp	4:ccomp	_
+8	atacar	atacar	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	propriedade	propriedade	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	_
+11	privada	privado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	10	amod	10:amod	SpaceAfter=No
+12	,	,	PUNCT	_	_	4	punct	4:punct	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	mensagem	mensagem	NOUN	_	Gender=Fem|Number=Sing	16	nsubj:pass	16:nsubj:pass	_
+15	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	aux:pass	16:aux:pass	_
+16	recebida	receber	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+17	com	com	ADP	_	_	18	case	18:case	_
+18	ceticismo	ceticismo	NOUN	_	Gender=Masc|Number=Sing	16	obl	16:obl:com	_
+19	por	por	ADP	_	_	21	case	21:case	_
+20	muitos	muito	ADJ	_	Gender=Masc|Number=Plur	21	amod	21:amod	_
+21	cidadãos	cidadão	NOUN	_	Gender=Masc|Number=Plur	16	obl:agent	16:obl:agent	SpaceAfter=No
+22	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0031
+# text = A Constituição Argentina, que garante o direito à propriedade nos artigos 14 e 17, parece estar sendo ignorada, enquanto o artigo 181 do Código Penal, que classifica a usurpação de propriedade como delito, não está sendo aplicado, segundo relatos.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Constituição	Constituição	PROPN	_	_	19	nsubj	6:nsubj|19:nsubj|22:nsubj:pass	_
+3	Argentina	Argentina	PROPN	_	_	2	flat:name	2:flat:name	SpaceAfter=No
+4	,	,	PUNCT	_	_	6	punct	6:punct	_
+5	que	que	PRON	_	PronType=Rel	6	nsubj	2:ref	_
+6	garante	garantir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	direito	direito	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+9-10	à	_	_	_	_	_	_	_	_
+9	a	a	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	propriedade	propriedade	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:a	_
+12-13	nos	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	14:det	_
+14	artigos	artigo	NOUN	_	Gender=Masc|Number=Plur	6	obl	6:obl:em	_
+15	14	14	NUM	_	NumType=Card	14	nmod	14:nmod	_
+16	e	e	CCONJ	_	_	17	cc	17:cc	_
+17	17	17	NUM	_	NumType=Card	15	conj	14:nmod|15:conj:e	SpaceAfter=No
+18	,	,	PUNCT	_	_	6	punct	6:punct	_
+19	parece	parecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+20	estar	estar	AUX	_	VerbForm=Inf	22	aux	22:aux	_
+21	sendo	ser	AUX	_	VerbForm=Ger	22	aux:pass	22:aux:pass	_
+22	ignorada	ignorar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	19	xcomp	19:xcomp	SpaceAfter=No
+23	,	,	PUNCT	_	_	45	punct	45:punct	_
+24	enquanto	enquanto	SCONJ	_	_	45	mark	45:mark	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	artigo	artigo	NOUN	_	Gender=Masc|Number=Sing	45	nsubj	34:nsubj|45:nsubj:pass	_
+27	181	181	NUM	_	NumType=Card	26	nmod	26:nmod	_
+28-29	do	_	_	_	_	_	_	_	_
+28	de	de	ADP	_	_	30	case	30:case	_
+29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	30:det	_
+30	Código	Código	PROPN	_	_	26	nmod	26:nmod:de	_
+31	Penal	Penal	PROPN	_	_	30	flat:name	30:flat:name	SpaceAfter=No
+32	,	,	PUNCT	_	_	34	punct	34:punct	_
+33	que	que	PRON	_	PronType=Rel	34	nsubj	26:ref	_
+34	classifica	classificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	acl:relcl	26:acl:relcl	_
+35	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	36:det	_
+36	usurpação	usurpação	NOUN	_	Gender=Fem|Number=Sing	34	obj	34:obj	_
+37	de	de	ADP	_	_	38	case	38:case	_
+38	propriedade	propriedade	NOUN	_	Gender=Fem|Number=Sing	36	nmod	36:nmod:de	_
+39	como	como	ADP	_	_	40	case	40:case	_
+40	delito	delito	NOUN	_	Gender=Masc|Number=Sing	34	obl	34:obl:como	SpaceAfter=No
+41	,	,	PUNCT	_	_	34	punct	34:punct	_
+42	não	não	ADV	_	_	45	advmod	45:advmod	_
+43	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	45	aux	45:aux	_
+44	sendo	ser	AUX	_	VerbForm=Ger	45	aux:pass	45:aux:pass	_
+45	aplicado	aplicar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	19	xcomp	19:xcomp	SpaceAfter=No
+46	,	,	PUNCT	_	_	48	punct	48:punct	_
+47	segundo	segundo	ADP	_	_	48	case	48:case	_
+48	relatos	relato	NOUN	_	Gender=Masc|Number=Plur	45	obl	45:obl:segundo	SpaceAfter=No
+49	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0033
+# text = Atenção: Este conteúdo é uma simulação para fins de estudo acadêmico e não deve ser considerado factual.
+1	Atenção	atenção	NOUN	_	Gender=Fem|Number=Sing	7	parataxis	7:parataxis|15:parataxis	SpaceAfter=No
+2	:	:	PUNCT	_	_	1	punct	1:punct	_
+3	Este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	4	det	4:det	_
+4	conteúdo	conteúdo	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj|15:nsubj|17:nsubj:pass|18:nsubj	_
+5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+6	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	simulação	simulação	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+8	para	para	ADP	_	_	9	case	9:case	_
+9	fins	fim	NOUN	_	Gender=Masc|Number=Plur	7	nmod	7:nmod:para	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	estudo	estudo	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:de	_
+12	acadêmico	acadêmico	ADJ	_	Gender=Masc|Number=Sing	11	amod	11:amod	_
+13	e	e	CCONJ	_	_	15	cc	15:cc	_
+14	não	não	ADV	_	_	15	advmod	15:advmod	_
+15	deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	7:conj:e	_
+16	ser	ser	AUX	_	VerbForm=Inf	17	aux:pass	17:aux:pass	_
+17	considerado	considerar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	15	xcomp	15:xcomp	_
+18	factual	factual	ADJ	_	Number=Sing	17	xcomp	17:xcomp	SpaceAfter=No
+19	.	.	PUNCT	_	_	7	punct	7:punct	_

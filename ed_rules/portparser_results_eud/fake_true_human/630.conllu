@@ -1,0 +1,144 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = votar em bolsonaro (22) nas eleições 222 é requisito para prova de vida no inss aposentados e pensionistas conservadores.
+1	votar	votar	VERB	_	VerbForm=Inf	12	csubj	12:csubj	_
+2	em	em	ADP	_	_	3	case	3:case	_
+3	bolsonaro	bolsonaro	NOUN	_	Gender=Masc|Number=Sing	1	obl	1:obl:em	_
+4	(	(	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+5	22	22	NUM	_	NumType=Card	3	parataxis	3:parataxis	SpaceAfter=No
+6	)	)	PUNCT	_	_	5	punct	5:punct	_
+7-8	nas	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	9:det	_
+9	eleições	eleição	NOUN	_	Gender=Fem|Number=Plur	1	obl	1:obl:em	_
+10	222	222	NUM	_	NumType=Card	9	nmod	9:nmod	_
+11	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	12:cop	_
+12	requisito	requisito	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+13	para	para	ADP	_	_	14	case	14:case	_
+14	prova	prova	NOUN	_	Gender=Fem|Number=Sing	12	nmod	12:nmod:para	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	vida	vida	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:de	_
+17-18	no	_	_	_	_	_	_	_	_
+17	em	em	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	inss	inss	NOUN	_	Gender=Masc|Number=Sing	14	nmod	14:nmod:em	_
+20	aposentados	aposentado	NOUN	_	Gender=Masc|Number=Plur	19	nmod	19:nmod	_
+21	e	e	CCONJ	_	_	22	cc	22:cc	_
+22	pensionistas	pensionista	NOUN	_	Number=Plur	20	conj	19:nmod|20:conj:e	_
+23	conservadores	conservador	ADJ	_	Gender=Masc|Number=Plur	22	amod	22:amod	SpaceAfter=No
+24	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0003
+# text = faça sua prova de vida na urna.
+1	faça	fazer	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	3	det	3:det	_
+3	prova	prova	NOUN	_	Gender=Fem|Number=Sing	1	obj	1:obj	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	vida	vida	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:de	_
+6-7	na	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	urna	urna	NOUN	_	Gender=Fem|Number=Sing	1	obl	1:obl:em	SpaceAfter=No
+9	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0005
+# text = vote 22 , agora é lei.
+1	vote	votar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	22	22	NUM	_	NumType=Card	1	obj	1:obj	_
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
+4	agora	agora	ADV	_	_	6	advmod	6:advmod	_
+5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+6	lei	lei	NOUN	_	Gender=Fem|Number=Sing	1	parataxis	1:parataxis	SpaceAfter=No
+7	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0007
+# text = nessas eleições, você que é aposentado ou pensionista pode fazer sua prova de vida direto das urnas.
+1-2	nessas	_	_	_	_	_	_	_	_
+1	em	em	ADP	_	_	3	case	3:case	_
+2	essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	3	det	3:det	_
+3	eleições	eleição	NOUN	_	Gender=Fem|Number=Plur	11	obl	11:obl:em	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	11	nsubj	8:nsubj|10:nsubj|11:nsubj|12:nsubj	_
+6	que	que	PRON	_	PronType=Rel	8	nsubj	5:ref	_
+7	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop|10:cop	_
+8	aposentado	aposentado	NOUN	_	Gender=Masc|Number=Sing	5	acl:relcl	5:acl:relcl	_
+9	ou	ou	CCONJ	_	_	10	cc	10:cc	_
+10	pensionista	pensionista	NOUN	_	Number=Sing	8	conj	5:acl:relcl|8:conj:ou	_
+11	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+12	fazer	fazer	VERB	_	VerbForm=Inf	11	xcomp	11:xcomp	_
+13	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	14	det	14:det	_
+14	prova	prova	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	vida	vida	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:de	_
+17	direto	direto	ADV	_	_	12	advmod	12:advmod	_
+18-19	das	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	20:det	_
+20	urnas	urna	NOUN	_	Gender=Fem|Number=Plur	17	obl	17:obl:de	SpaceAfter=No
+21	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0009
+# text = o governo federal acabou com o deslocamento desnecessário e tornou a sua vida mais fácil.
+1	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	governo	governo	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj|10:nsubj	_
+3	federal	federal	ADJ	_	Number=Sing	2	amod	2:amod	_
+4	acabou	acabar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	com	com	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	deslocamento	deslocamento	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:com	_
+8	desnecessário	desnecessário	ADJ	_	Gender=Masc|Number=Sing	7	amod	7:amod	_
+9	e	e	CCONJ	_	_	10	cc	10:cc	_
+10	tornou	tornar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	conj	4:conj:e	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+12	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	13	det	13:det	_
+13	vida	vida	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj|15:nsubj	_
+14	mais	mais	ADV	_	_	15	advmod	15:advmod	_
+15	fácil	fácil	ADJ	_	Number=Sing	10	xcomp	10:xcomp	SpaceAfter=No
+16	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0011
+# text = apenas o seu voto já é suficiente para garantir os benefícios do inss, para você exercer seu direito à cidadania com menos burocracia.
+1	apenas	apenas	ADV	_	_	4	advmod	4:advmod	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+3	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	4	det	4:det	_
+4	voto	voto	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+5	já	já	ADV	_	_	7	advmod	7:advmod	_
+6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+7	suficiente	suficiente	ADJ	_	Number=Sing	0	root	0:root	_
+8	para	para	ADP	_	_	9	mark	9:mark	_
+9	garantir	garantir	VERB	_	VerbForm=Inf	7	acl	7:acl:para	_
+10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	11:det	_
+11	benefícios	benefício	NOUN	_	Gender=Masc|Number=Plur	9	obj	9:obj	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	inss	inss	NOUN	_	Foreign=Yes	11	nmod	11:nmod:de	SpaceAfter=No
+15	,	,	PUNCT	_	_	18	punct	18:punct	_
+16	para	para	ADP	_	_	18	mark	18:mark	_
+17	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	18	nsubj	18:nsubj	_
+18	exercer	exercer	VERB	_	VerbForm=Inf	7	advcl	7:advcl:para	_
+19	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	20	det	20:det	_
+20	direito	direito	NOUN	_	Gender=Masc|Number=Sing	18	obj	18:obj	_
+21-22	à	_	_	_	_	_	_	_	_
+21	a	a	ADP	_	_	23	case	23:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	cidadania	cidadania	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:a	_
+24	com	com	ADP	_	_	26	case	26:case	_
+25	menos	menos	DET	_	PronType=Ind	26	det	26:det	_
+26	burocracia	burocracia	NOUN	_	Gender=Fem|Number=Sing	18	obl	18:obl:com	SpaceAfter=No
+27	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0013
+# text = pelo bem do brasil, vote 22.
+1-2	pelo	_	_	_	_	_	_	_	_
+1	por	por	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	bem	bem	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:por	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	brasil	brasil	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	SpaceAfter=No
+7	,	,	PUNCT	_	_	3	punct	3:punct	_
+8	vote	votar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+9	22	22	NUM	_	NumType=Card	8	obj	8:obj	SpaceAfter=No
+10	.	.	PUNCT	_	_	8	punct	8:punct	_

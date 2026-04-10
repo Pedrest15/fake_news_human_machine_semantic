@@ -1,0 +1,726 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = "Lucro do Facebook é baseado em falsos engajamentos" diz especialista.
+1	"	"	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+2	Lucro	lucro	NOUN	_	Gender=Masc|Number=Sing	7	nsubj:pass	7:nsubj:pass	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	Facebook	Facebook	PROPN	_	_	2	nmod	2:nmod:de	_
+6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:pass	7:aux:pass	_
+7	baseado	basear	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	12	ccomp:speech	12:ccomp:speech	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	falsos	falso	ADJ	_	Gender=Masc|Number=Plur	10	amod	10:amod	_
+10	engajamentos	engajamento	NOUN	_	Gender=Masc|Number=Plur	7	obl	7:obl:em	SpaceAfter=No
+11	"	"	PUNCT	_	_	7	punct	7:punct	_
+12	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+13	especialista	especialista	NOUN	_	Number=Sing	12	nsubj	12:nsubj	SpaceAfter=No
+14	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0003
+# text = O blog de ciências Veritasium resolveu averiguar a "compra de curtidas" oficiais e não oficiais em páginas do Facebook.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	blog	blog	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	6	nsubj	6:nsubj|7:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	ciências	ciência	NOUN	_	Gender=Fem|Number=Plur	2	nmod	2:nmod:de	_
+5	Veritasium	Veritasium	PROPN	_	_	2	nmod	2:nmod	_
+6	resolveu	resolver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	averiguar	averiguar	VERB	_	VerbForm=Inf	6	xcomp	6:xcomp	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+9	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+10	compra	compra	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	curtidas	curtida	NOUN	_	Gender=Fem|Number=Plur	10	nmod	10:nmod:de	SpaceAfter=No
+13	"	"	PUNCT	_	_	14	punct	14:punct	_
+14	oficiais	oficial	ADJ	_	Number=Plur	10	amod	10:amod	_
+15	e	e	CCONJ	_	_	17	cc	17:cc	_
+16	não	não	ADV	_	_	17	advmod	17:advmod	_
+17	oficiais	oficial	ADJ	_	Number=Plur	14	conj	10:amod|14:conj:e	_
+18	em	em	ADP	_	_	19	case	19:case	_
+19	páginas	página	NOUN	_	Gender=Fem|Number=Plur	10	nmod	10:nmod:em	_
+20-21	do	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	Facebook	Facebook	PROPN	_	_	19	nmod	19:nmod:de	SpaceAfter=No
+23	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0005
+# text = O Veritasium é um canal de vídeos (com mais de 4 milhões de seguidores) de ciência e engenharia com experiências, entrevistas expertas, demonstrações e discussões com o público... tudo sobre ciência e tecnologia.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Veritasium	Veritasium	PROPN	_	_	5	nsubj	5:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	canal	canal	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	vídeos	vídeo	NOUN	_	Gender=Masc|Number=Plur	5	nmod	5:nmod:de	_
+8	(	(	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+9	com	com	ADP	_	_	13	case	13:case	_
+10	mais	mais	ADV	_	ExtPos=ADV	12	advmod	12:advmod	_
+11	de	de	ADP	_	_	10	fixed	10:fixed	_
+12	4	4	NUM	_	NumType=Card	13	nummod	13:nummod	_
+13	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	7	nmod	7:nmod:com	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	seguidores	seguidor	NOUN	_	Gender=Masc|Number=Plur	13	nmod	13:nmod:de	SpaceAfter=No
+16	)	)	PUNCT	_	_	13	punct	13:punct	_
+17	de	de	ADP	_	_	18	case	18:case|20:case	_
+18	ciência	ciência	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:de	_
+19	e	e	CCONJ	_	_	20	cc	20:cc	_
+20	engenharia	engenharia	NOUN	_	Gender=Fem|Number=Sing	18	conj	7:nmod:de|18:conj:e	_
+21	com	com	ADP	_	_	22	case	22:case|24:case|27:case|29:case	_
+22	experiências	experiência	NOUN	_	Gender=Fem|Number=Plur	7	nmod	7:nmod:com	SpaceAfter=No
+23	,	,	PUNCT	_	_	24	punct	24:punct	_
+24	entrevistas	entrevista	NOUN	_	Gender=Fem|Number=Plur	22	conj	7:nmod:com|22:conj:e	_
+25	expertas	experto	ADJ	_	Gender=Fem|Number=Plur	24	amod	24:amod	SpaceAfter=No
+26	,	,	PUNCT	_	_	27	punct	27:punct	_
+27	demonstrações	demonstração	NOUN	_	Gender=Fem|Number=Plur	22	conj	7:nmod:com|22:conj:e	_
+28	e	e	CCONJ	_	_	29	cc	29:cc	_
+29	discussões	discussão	NOUN	_	Gender=Fem|Number=Plur	22	conj	7:nmod:com|22:conj:e	_
+30	com	com	ADP	_	_	32	case	32:case	_
+31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+32	público	público	NOUN	_	Gender=Masc|Number=Sing	29	nmod	29:nmod:com	SpaceAfter=No
+33	...	...	PUNCT	_	_	34	punct	34:punct	_
+34	tudo	tudo	PRON	_	PronType=Ind	5	parataxis	5:parataxis	_
+35	sobre	sobre	ADP	_	_	36	case	36:case|38:case	_
+36	ciência	ciência	NOUN	_	Gender=Fem|Number=Sing	34	nmod	34:nmod:sobre	_
+37	e	e	CCONJ	_	_	38	cc	38:cc	_
+38	tecnologia	tecnologia	NOUN	_	Gender=Fem|Number=Sing	36	conj	34:nmod:sobre|36:conj:e	SpaceAfter=No
+39	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0007
+# text = Se você tem uma Fan Page e gastou tempo, dinheiro, milhares de dias de trabalho, enfim, se dedicou nos últimos anos a esse empreendimento, saiba que você trocou 6 por meia dúzia.
+1	Se	se	SCONJ	_	_	3	mark	3:mark|8:mark	_
+2	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	3	nsubj	3:nsubj|8:nsubj|22:nsubj	_
+3	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	advcl	31:advcl:se	_
+4	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	Fan	Fan	PROPN	_	_	3	obj	3:obj	_
+6	Page	Page	PROPN	_	_	5	flat:name	5:flat:name	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	gastou	gastar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	3:conj:e|31:advcl:se	_
+9	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	9	conj	8:obj|9:conj	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	milhares	milhar	NOUN	_	Gender=Masc|Number=Plur	9	conj	8:obj|9:conj	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	dias	dia	NOUN	_	Gender=Masc|Number=Plur	13	nmod	13:nmod:de	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	15	nmod	15:nmod:de	SpaceAfter=No
+18	,	,	PUNCT	_	_	22	punct	22:punct	_
+19	enfim	enfim	ADV	_	_	22	advmod	22:advmod	SpaceAfter=No
+20	,	,	PUNCT	_	_	19	punct	19:punct	_
+21	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	22	expl	22:expl	_
+22	dedicou	dedicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	conj	8:conj	_
+23-24	nos	_	_	_	_	_	_	_	_
+23	em	em	ADP	_	_	26	case	26:case	_
+24	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	26:det	_
+25	últimos	último	ADJ	_	Gender=Masc|Number=Plur	26	amod	26:amod	_
+26	anos	ano	NOUN	_	Gender=Masc|Number=Plur	22	obl	22:obl:em	_
+27	a	a	ADP	_	_	29	case	29:case	_
+28	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	29	det	29:det	_
+29	empreendimento	empreendimento	NOUN	_	Gender=Masc|Number=Sing	22	obl	22:obl:a	SpaceAfter=No
+30	,	,	PUNCT	_	_	3	punct	3:punct	_
+31	saiba	saber	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+32	que	que	SCONJ	_	_	34	mark	34:mark	_
+33	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	34	nsubj	34:nsubj	_
+34	trocou	trocar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	31	ccomp	31:ccomp	_
+35	6	6	NUM	_	NumType=Card	34	obj	34:obj	_
+36	por	por	ADP	_	_	38	case	38:case	_
+37	meia	meio	NUM	_	Gender=Fem|NumType=Frac	38	nummod	38:nummod	_
+38	dúzia	dúzia	NOUN	_	Gender=Fem|Number=Sing	34	obl	34:obl:por	SpaceAfter=No
+39	.	.	PUNCT	_	_	31	punct	31:punct	_
+
+# sent_id = S0009
+# text = Todo o trabalho com seus seguidores, suas postagens, o aumento de seus "supostos" fãs, foi por água abaixo.
+1	Todo	todo	DET	_	Gender=Masc|Number=Sing|PronType=Ind	3	det	3:det	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	22	nsubj	22:nsubj	_
+4	com	com	ADP	_	_	6	case	6:case|9:case	_
+5	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	6	det	6:det	_
+6	seguidores	seguidor	NOUN	_	Gender=Masc|Number=Plur	3	nmod	3:nmod:com	SpaceAfter=No
+7	,	,	PUNCT	_	_	9	punct	9:punct	_
+8	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	9	det	9:det	_
+9	postagens	postagem	NOUN	_	Gender=Fem|Number=Plur	6	conj	3:nmod:com|6:conj	SpaceAfter=No
+10	,	,	PUNCT	_	_	12	punct	12:punct	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	aumento	aumento	NOUN	_	Gender=Masc|Number=Sing	3	conj	3:conj|22:nsubj	_
+13	de	de	ADP	_	_	18	case	18:case	_
+14	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	18	det	18:det	_
+15	"	"	PUNCT	_	_	18	punct	18:punct	SpaceAfter=No
+16	supostos	suposto	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	18	amod	18:amod	SpaceAfter=No
+17	"	"	PUNCT	_	_	18	punct	18:punct	_
+18	fãs	fã	NOUN	_	Number=Plur	12	nmod	12:nmod:de	SpaceAfter=No
+19	,	,	PUNCT	_	_	12	punct	12:punct	_
+20	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+21	por	por	ADP	_	_	22	case	22:case	_
+22	água	água	NOUN	_	Gender=Fem|Number=Sing	20	dep	20:dep	_
+23	abaixo	abaixo	ADV	_	_	22	advmod	22:advmod	SpaceAfter=No
+24	.	.	PUNCT	_	_	22	punct	22:punct	_
+
+# sent_id = S0011
+# text = Nós, que investimos nas fan pages, simplesmente trabalhamos (e investimos muito dinheiro) por nada [...] a rede social simplesmente decidiu que o engajamento a partir de agora está na casa dos 0% a 0,05%.
+1	Nós	nós	PRON	_	Case=Nom|Number=Plur|Person=1|PronType=Prs	11	nsubj	4:nsubj|11:nsubj|14:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	4	punct	4:punct	_
+3	que	que	PRON	_	PronType=Rel	4	nsubj	1:ref	_
+4	investimos	investir	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+5-6	nas	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	7:det	_
+7	fan	fan	X	_	Foreign=Yes	4	obl	4:obl:em	_
+8	pages	pages	X	_	Foreign=Yes	7	flat:foreign	7:flat:foreign	SpaceAfter=No
+9	,	,	PUNCT	_	_	4	punct	4:punct	_
+10	simplesmente	simplesmente	ADV	_	_	11	advmod	11:advmod	_
+11	trabalhamos	trabalhar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+12	(	(	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+13	e	e	CCONJ	_	_	14	cc	14:cc	_
+14	investimos	investir	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	11	conj	11:conj:e	_
+15	muito	muito	ADJ	_	Gender=Masc|Number=Sing	16	amod	16:amod	_
+16	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	14	obj	14:obj	SpaceAfter=No
+17	)	)	PUNCT	_	_	14	punct	14:punct	_
+18	por	por	ADP	_	_	19	case	19:case	_
+19	nada	nada	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	11	obl	11:obl:por|14:obl:por	_
+20	[	[	PUNCT	_	_	28	punct	28:punct	SpaceAfter=No
+21	.	.	PUNCT	_	_	28	punct	28:punct	SpaceAfter=No
+22	..	..	PUNCT	_	_	21	punct	21:punct	SpaceAfter=No
+23	]	]	PUNCT	_	_	21	punct	21:punct	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	rede	rede	NOUN	_	Gender=Fem|Number=Sing	28	nsubj	28:nsubj	_
+26	social	social	ADJ	_	Number=Sing	25	amod	25:amod	_
+27	simplesmente	simplesmente	ADV	_	_	28	advmod	28:advmod	_
+28	decidiu	decidir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	conj	11:conj	_
+29	que	que	SCONJ	_	_	39	mark	39:mark	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	engajamento	engajamento	NOUN	_	Gender=Masc|Number=Sing	39	nsubj	39:nsubj	_
+32	a	a	ADP	_	_	33	mark	33:mark	_
+33	partir	partir	VERB	_	VerbForm=Inf	31	acl	31:acl:a	_
+34	de	de	ADP	_	_	35	case	35:case	_
+35	agora	agora	ADV	_	_	33	advmod	33:advmod	_
+36	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	39	cop	39:cop	_
+37-38	na	_	_	_	_	_	_	_	_
+37	em	em	ADP	_	_	39	case	39:case	_
+38	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	39:det	_
+39	casa	casa	NOUN	_	Gender=Fem|Number=Sing	28	ccomp	28:ccomp	_
+40-41	dos	_	_	_	_	_	_	_	_
+40	de	de	ADP	_	_	43	case	43:case	_
+41	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	43	det	43:det	_
+42	0	0	NUM	_	NumType=Card	43	nummod	43:nummod	SpaceAfter=No
+43	%	%	SYM	_	_	39	nmod	39:nmod:de	_
+44	a	a	ADP	_	_	46	case	46:case	_
+45	0,05	0,05	NUM	_	NumType=Card	46	nummod	46:nummod	SpaceAfter=No
+46	%	%	SYM	_	_	43	nmod	43:nmod:a	SpaceAfter=No
+47	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0013
+# text = O que significa isso?
+1	O	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nsubj	3:nsubj	_
+2	que	que	PRON	_	PronType=Int	1	fixed	1:fixed	_
+3	significa	significar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	3	obj	3:obj	SpaceAfter=No
+5	?	?	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0015
+# text = Se você tem uma página com 1 milhão de seguidores, suas postagens não chegaram a 500 desses seguidores.
+1	Se	se	SCONJ	_	_	3	mark	3:mark	_
+2	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	3	nsubj	3:nsubj	_
+3	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	advcl	15:advcl:se	_
+4	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	página	página	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+6	com	com	ADP	_	_	8	case	8:case	_
+7	1	1	NUM	_	NumType=Card	8	nummod	8:nummod	_
+8	milhão	milhão	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:com	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	seguidores	seguidor	NOUN	_	Gender=Masc|Number=Plur	8	nmod	8:nmod:de	SpaceAfter=No
+11	,	,	PUNCT	_	_	3	punct	3:punct	_
+12	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	13	det	13:det	_
+13	postagens	postagem	NOUN	_	Gender=Fem|Number=Plur	15	nsubj	15:nsubj	_
+14	não	não	ADV	_	_	15	advmod	15:advmod	_
+15	chegaram	chegar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+16	a	a	ADP	_	_	17	case	17:case	_
+17	500	500	NUM	_	NumType=Card	15	obl	15:obl:a	_
+18-19	desses	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	20	det	20:det	_
+20	seguidores	seguidor	NOUN	_	Gender=Masc|Number=Plur	17	nmod	17:nmod:de	SpaceAfter=No
+21	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0017
+# text = Você pensou que esses seguidores eram seus, mas na verdade fomos usados para trabalhar para o Tio Mark.
+1	Você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	2	nsubj	2:nsubj	_
+2	pensou	pensar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	7	mark	7:mark	_
+4	esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	5	det	5:det	_
+5	seguidores	seguidor	NOUN	_	Gender=Masc|Number=Plur	7	nsubj	7:nsubj	_
+6	eram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	7	cop	7:cop	_
+7	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	2	ccomp	2:ccomp	SpaceAfter=No
+8	,	,	PUNCT	_	_	14	punct	14:punct	_
+9	mas	mas	CCONJ	_	_	14	cc	14:cc	_
+10-11	na	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	verdade	verdade	NOUN	_	Gender=Fem|Number=Sing	14	obl	14:obl:em	_
+13	fomos	fer	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	14	aux:pass	14:aux:pass	_
+14	usados	usar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	2	conj	2:conj:mas	_
+15	para	para	ADP	_	_	16	mark	16:mark	_
+16	trabalhar	trabalhar	VERB	_	VerbForm=Inf	14	advcl	14:advcl:para	_
+17	para	para	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	Tio	Tio	PROPN	_	_	16	obl	16:obl:para	_
+20	Mark	Mark	PROPN	_	_	19	flat:name	19:flat:name	SpaceAfter=No
+21	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0019
+# text = Assista o vídeo abaixo para entender melhor a fantástica análise que eles fizeram sobre o engajamento e as curtidas do facebook.
+1	Assista	assistir	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	1	obj	1:obj	_
+4	abaixo	abaixo	ADV	_	_	3	advmod	3:advmod	_
+5	para	para	ADP	_	_	6	mark	6:mark	_
+6	entender	entender	VERB	_	VerbForm=Inf	1	advcl	1:advcl:para	_
+7	melhor	melhor	ADV	_	_	6	advmod	6:advmod	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+9	fantástica	fantástico	ADJ	_	Gender=Fem|Number=Sing	10	amod	10:amod	_
+10	análise	análise	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj|13:obj	_
+11	que	que	PRON	_	PronType=Rel	13	obj	10:ref	_
+12	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	13	nsubj	13:nsubj	_
+13	fizeram	fazer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	10	acl:relcl	10:acl:relcl	_
+14	sobre	sobre	ADP	_	_	16	case	16:case|19:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	engajamento	engajamento	NOUN	_	Gender=Masc|Number=Sing	13	obl	13:obl:sobre	_
+17	e	e	CCONJ	_	_	19	cc	19:cc	_
+18	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	19:det	_
+19	curtidas	curtida	NOUN	_	Gender=Fem|Number=Plur	16	conj	13:obl:sobre|16:conj:e	_
+20-21	do	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	facebook	facebook	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	19	nmod	19:nmod:de	SpaceAfter=No
+23	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0021
+# text = Eles chegaram a uma conclusão bizarra: "Pagar por likes no facebook (seja por meio de terceiros, o que é ilegal, ou pelo próprio site do Tio Mark) é uma enganação".
+1	Eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	2	nsubj	2:nsubj	_
+2	chegaram	chegar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	a	a	ADP	_	_	5	case	5:case	_
+4	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	conclusão	conclusão	NOUN	_	Gender=Fem|Number=Sing	2	obl	2:obl:a	_
+6	bizarra	bizarro	ADJ	_	Gender=Fem|Number=Sing	5	amod	5:amod	SpaceAfter=No
+7	:	:	PUNCT	_	_	39	punct	39:punct	_
+8	"	"	PUNCT	_	_	39	punct	39:punct	SpaceAfter=No
+9	Pagar	pagar	VERB	_	VerbForm=Inf	39	csubj	39:csubj	_
+10	por	por	ADP	_	_	11	case	11:case	_
+11	likes	like	NOUN	_	Foreign=Yes|Gender=Masc|Number=Plur	9	obl	9:obl:por	_
+12-13	no	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	facebook	facebook	X	_	Foreign=Yes	11	nmod	11:nmod:em	_
+15	(	(	PUNCT	_	_	18	punct	18:punct	SpaceAfter=No
+16	seja	ser	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	cop	18:cop|31:cop	_
+17	por	por	ADP	_	_	18	case	18:case	_
+18	meio	meio	NOUN	_	Gender=Masc|Number=Sing	9	parataxis	9:parataxis|25:nsubj	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	terceiros	terceiro	NOUN	_	Gender=Masc|Number=Plur	18	nmod	18:nmod:de	SpaceAfter=No
+21	,	,	PUNCT	_	_	22	punct	22:punct	_
+22	o	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	25	nsubj	18:ref|25:nsubj	_
+23	que	que	PRON	_	PronType=Rel	22	fixed	22:fixed	_
+24	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	cop	25:cop	_
+25	ilegal	ilegal	ADJ	_	Number=Sing	18	acl:relcl	18:acl:relcl	SpaceAfter=No
+26	,	,	PUNCT	_	_	31	punct	31:punct	_
+27	ou	ou	CCONJ	_	_	31	cc	31:cc	_
+28-29	pelo	_	_	_	_	_	_	_	_
+28	por	por	ADP	_	_	31	case	31:case	_
+29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+30	próprio	próprio	DET	_	Gender=Masc|Number=Sing|PronType=Dem	31	det	31:det	_
+31	site	site	NOUN	_	Gender=Masc|Number=Sing	18	conj	9:parataxis|18:conj:ou	_
+32-33	do	_	_	_	_	_	_	_	_
+32	de	de	ADP	_	_	34	case	34:case	_
+33	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	34:det	_
+34	Tio	Tio	PROPN	_	_	31	nmod	31:nmod:de	_
+35	Mark	Mark	PROPN	_	_	34	flat:name	34:flat:name	SpaceAfter=No
+36	)	)	PUNCT	_	_	18	punct	18:punct	_
+37	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	39	cop	39:cop	_
+38	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	39	det	39:det	_
+39	enganação	enganação	NOUN	_	Gender=Fem|Number=Sing	2	parataxis	2:parataxis	SpaceAfter=No
+40	"	"	PUNCT	_	_	39	punct	39:punct	SpaceAfter=No
+41	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0023
+# text = O canal descobriu que você paga para adquirir apenas "números"... (o vídeo está em inglês, mas as legendas são em português) "A receita do Facebook é baseada em falsos engajamentos" diz o apresentador.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	canal	canal	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	descobriu	descobrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	40	ccomp:speech	40:ccomp:speech	_
+4	que	que	SCONJ	_	_	6	mark	6:mark	_
+5	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	6	nsubj	6:nsubj	_
+6	paga	pagar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	3:ccomp	_
+7	para	para	ADP	_	_	8	mark	8:mark	_
+8	adquirir	adquirir	VERB	_	VerbForm=Inf	6	advcl	6:advcl:para	_
+9	apenas	apenas	ADV	_	_	11	advmod	11:advmod	_
+10	"	"	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+11	números	número	NOUN	_	Gender=Masc|Number=Plur	8	obj	8:obj	SpaceAfter=No
+12	"	"	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+13	...	...	PUNCT	_	_	19	punct	19:punct	_
+14	(	(	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	19	nsubj	19:nsubj	_
+17	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	cop	19:cop	_
+18	em	em	ADP	_	_	19	case	19:case	_
+19	inglês	inglês	NOUN	_	Gender=Masc|Number=Sing	3	parataxis	3:parataxis	SpaceAfter=No
+20	,	,	PUNCT	_	_	26	punct	26:punct	_
+21	mas	mas	CCONJ	_	_	26	cc	26:cc	_
+22	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	23:det	_
+23	legendas	legenda	NOUN	_	Gender=Fem|Number=Plur	26	nsubj	26:nsubj	_
+24	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	26	cop	26:cop	_
+25	em	em	ADP	_	_	26	case	26:case	_
+26	português	português	NOUN	_	Gender=Masc|Number=Sing	19	conj	3:parataxis|19:conj:mas	SpaceAfter=No
+27	)	)	PUNCT	_	_	19	punct	19:punct	_
+28	"	"	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+29	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	receita	receita	NOUN	_	Gender=Fem|Number=Sing	35	nsubj:pass	35:nsubj	_
+31-32	do	_	_	_	_	_	_	_	_
+31	de	de	ADP	_	_	33	case	33:case	_
+32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	33:det	_
+33	Facebook	Facebook	PROPN	_	_	30	nmod	30:nmod:de	_
+34	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	35	aux:pass	35:aux:pass	_
+35	baseada	basear	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	3	ccomp	3:ccomp	_
+36	em	em	ADP	_	_	38	case	38:case	_
+37	falsos	falso	ADJ	_	Gender=Masc|Number=Plur	38	amod	38:amod	_
+38	engajamentos	engajamento	NOUN	_	Gender=Masc|Number=Plur	35	obl	35:obl:em	SpaceAfter=No
+39	"	"	PUNCT	_	_	19	punct	19:punct	_
+40	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+41	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	42	det	42:det	_
+42	apresentador	apresentador	NOUN	_	Gender=Masc|Number=Sing	40	nsubj	40:nsubj	SpaceAfter=No
+43	.	.	PUNCT	_	_	40	punct	40:punct	_
+
+# sent_id = S0024
+# text = e continua: Eu sei de primeira mão que o modelo de publicidade do Facebook está profundamente falho.
+1	e	e	CCONJ	_	_	2	cc	2:cc	_
+2	continua	continuar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+3	:	:	PUNCT	_	_	5	punct	5:punct	_
+4	Eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	5:nsubj	_
+5	sei	saber	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	ccomp:speech	2:ccomp:speech	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	primeira	primeiro	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	8	amod	8:amod	_
+8	mão	mão	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:de	_
+9	que	que	SCONJ	_	_	19	mark	19:mark	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	modelo	modelo	NOUN	_	Number=Sing	19	nsubj	19:nsubj	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	publicidade	publicidade	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:de	_
+14-15	do	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	Facebook	Facebook	PROPN	_	_	13	nmod	13:nmod:de	_
+17	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	cop	19:cop	_
+18	profundamente	profundamente	ADV	_	_	19	advmod	19:advmod	_
+19	falho	falho	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	5	ccomp	5:ccomp	SpaceAfter=No
+20	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0026
+# text = Quando paguei para promover minha página, ganhei 80 mil seguidores em países subdesenvolvidos que sequer tinham uma ligação com o nosso canal (mas eu não sabia disso no momento).
+1	Quando	quando	SCONJ	_	_	2	mark	2:mark	_
+2	paguei	pagar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	8	advcl	8:advcl:quando	_
+3	para	para	ADP	_	_	4	mark	4:mark	_
+4	promover	promover	VERB	_	VerbForm=Inf	2	advcl	2:advcl:para	_
+5	minha	meu	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	6	det	6:det	_
+6	página	página	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	SpaceAfter=No
+7	,	,	PUNCT	_	_	2	punct	2:punct	_
+8	ganhei	ganhar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	80	80	NUM	_	NumType=Card	11	nummod	11:nummod	_
+10	mil	mil	NUM	_	NumType=Card	9	flat	9:flat	_
+11	seguidores	seguidor	NOUN	_	Gender=Masc|Number=Plur	8	obj	8:obj	_
+12	em	em	ADP	_	_	13	case	13:case	_
+13	países	país	NOUN	_	Gender=Masc|Number=Plur	8	obl	8:obl:em|17:nsubj	_
+14	subdesenvolvidos	subdesenvolvido	ADJ	_	Gender=Masc|Number=Plur	13	amod	13:amod	_
+15	que	que	PRON	_	PronType=Rel	17	nsubj	13:ref	_
+16	sequer	sequer	ADV	_	_	17	advmod	17:advmod	_
+17	tinham	ter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	13	acl:relcl	13:acl:relcl	_
+18	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	ligação	ligação	NOUN	_	Gender=Fem|Number=Sing	17	obj	17:obj	_
+20	com	com	ADP	_	_	23	case	23:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+22	nosso	nosso	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	23	det	23:det	_
+23	canal	canal	NOUN	_	Gender=Masc|Number=Sing	19	nmod	19:nmod:com	_
+24	(	(	PUNCT	_	_	28	punct	28:punct	SpaceAfter=No
+25	mas	mas	CCONJ	_	_	28	cc	28:cc	_
+26	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	28	nsubj	28:nsubj	_
+27	não	não	ADV	_	_	28	advmod	28:advmod	_
+28	sabia	saber	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	17	conj	13:acl:relcl|17:conj:mas	_
+29-30	disso	_	_	_	_	_	_	_	_
+29	de	de	ADP	_	_	30	case	30:case	_
+30	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	28	obl	28:obl:de	_
+31-32	no	_	_	_	_	_	_	_	_
+31	em	em	ADP	_	_	33	case	33:case	_
+32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	33:det	_
+33	momento	momento	NOUN	_	Gender=Masc|Number=Sing	28	obl	28:obl:em	SpaceAfter=No
+34	)	)	PUNCT	_	_	28	punct	28:punct	SpaceAfter=No
+35	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0028
+# text = Eles mantiveram meu alcance e números de engajamento baixos, basicamente tornando minha página inútil.
+1	Eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	2	nsubj	2:nsubj	_
+2	mantiveram	manter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	meu	meu	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	det	4:det	_
+4	alcance	alcance	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	números	número	NOUN	_	Gender=Masc|Number=Plur	4	conj	2:obj|4:conj:e	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	engajamento	engajamento	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de	_
+9	baixos	baixo	ADJ	_	Gender=Masc|Number=Plur	2	amod	2:amod	SpaceAfter=No
+10	,	,	PUNCT	_	_	12	punct	12:punct	_
+11	basicamente	basicamente	ADV	_	_	12	advmod	12:advmod	_
+12	tornando	tornar	VERB	_	VerbForm=Ger	2	advcl	2:advcl	_
+13	minha	meu	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	14	det	14:det	_
+14	página	página	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj|15:nsubj	_
+15	inútil	inútil	ADJ	_	Number=Sing	12	xcomp	12:xcomp	SpaceAfter=No
+16	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0030
+# text = Eu não sou o único que experimentou isso.
+1	Eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	5:nsubj	_
+2	não	não	ADV	_	_	5	advmod	5:advmod	_
+3	sou	ser	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	único	único	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root|7:nsubj	_
+6	que	que	PRON	_	PronType=Rel	7	nsubj	5:ref	_
+7	experimentou	experimentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_
+8	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	7	obj	7:obj	SpaceAfter=No
+9	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0032
+# text = Rory Cellan-Jones teve a mesma experiência com a página Virtual Bagel: http: //www.bbc.co.uk/news/technology -... "O Departamento de Estado dos EUA gastou US $ 630.000 para adquirir 2 milhões de curtidas e então verificou que apenas 2% de seus seguidores acompanhavam suas postagens".
+1	Rory	Rory	PROPN	_	_	3	nsubj	3:nsubj|41:nsubj	_
+2	Cellan-Jones	Cellan-Jones	PROPN	_	_	1	flat:name	1:flat:name	_
+3	teve	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+5	mesma	mesmo	DET	_	Gender=Fem|Number=Sing|PronType=Dem	6	det	6:det	_
+6	experiência	experiência	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+7	com	com	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	página	página	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:com	_
+10	Virtual	Virtual	PROPN	_	_	9	nmod	9:nmod	_
+11	Bagel	Bagel	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+12	:	:	PUNCT	_	_	13	punct	13:punct	_
+13	http	http	PUNCT	_	_	29	parataxis	29:parataxis	SpaceAfter=No
+14	:	:	PUNCT	_	_	17	punct	17:punct	_
+15	/	/	SYM	_	_	13	parataxis	13:parataxis	SpaceAfter=No
+16	/	/	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+17	www.bbc.co.uk/news/technology	www.bbc.co.uk/news/technology	X	_	Foreign=Yes	13	nmod	13:nmod	_
+18	-	-	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+19	.	.	PUNCT	_	_	29	punct	29:punct	SpaceAfter=No
+20	..	..	PUNCT	_	_	29	punct	29:punct	_
+21	"	"	PUNCT	_	_	29	punct	29:punct	SpaceAfter=No
+22	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	Departamento	Departamento	PROPN	_	_	29	nsubj	29:nsubj	_
+24	de	de	ADP	_	_	25	case	25:case	_
+25	Estado	Estado	PROPN	_	_	23	flat:name	23:flat:name	_
+26-27	dos	_	_	_	_	_	_	_	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	28:det	_
+28	EUA	EUA	PROPN	_	_	23	flat:name	23:flat:name	_
+29	gastou	gastar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	dep	3:dep	_
+30	US	US	PROPN	_	_	29	obj	29:obj	_
+31	$	$	SYM	_	_	30	obj	30:obj	_
+32	630.000	630.000	NUM	_	NumType=Card	30	nummod	30:nummod	_
+33	para	para	ADP	_	_	34	mark	34:mark	_
+34	adquirir	adquirir	VERB	_	VerbForm=Inf	29	advcl	29:advcl:para	_
+35	2	2	NUM	_	NumType=Card	36	nummod	36:nummod	_
+36	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	34	obj	34:obj	_
+37	de	de	ADP	_	_	38	case	38:case	_
+38	curtidas	curtida	NOUN	_	Gender=Fem|Number=Plur	36	nmod	36:nmod:de	_
+39	e	e	CCONJ	_	_	41	cc	41:cc	_
+40	então	então	ADV	_	_	41	advmod	41:advmod	_
+41	verificou	verificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	3:conj:e	_
+42	que	que	SCONJ	_	_	49	mark	49:mark	_
+43	apenas	apenas	ADV	_	_	44	advmod	44:advmod	_
+44	2	2	NUM	_	NumType=Card	45	nummod	45:nummod	SpaceAfter=No
+45	%	%	SYM	_	_	49	nsubj	49:nsubj	_
+46	de	de	ADP	_	_	48	case	48:case	_
+47	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	48	det	48:det	_
+48	seguidores	seguidor	NOUN	_	Gender=Masc|Number=Plur	45	nmod	45:nmod:de	_
+49	acompanhavam	acompanhar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	41	ccomp	41:ccomp	_
+50	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	51	det	51:det	_
+51	postagens	postagem	NOUN	_	Gender=Fem|Number=Plur	49	obj	49:obj	SpaceAfter=No
+52	"	"	PUNCT	_	_	29	punct	29:punct	SpaceAfter=No
+53	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0034
+# text = Fiquei surpreso ao descobrir algo pior Os supostos seguidores vêm de todos os lugares, incluindo Canadá, EUA, Reino Unido e Austrália.
+1	Fiquei	ficar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	surpreso	surpreso	ADJ	_	Gender=Masc|Number=Sing	1	xcomp	1:xcomp	_
+3-4	ao	_	_	_	_	_	_	_	_
+3	a	a	ADP	_	ExtPos=SCONJ	5	mark	5:mark	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	fixed	3:fixed	_
+5	descobrir	descobrir	VERB	_	VerbForm=Inf	11	advcl	11:advcl:a_o	_
+6	algo	algo	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	5	obj	5:obj	_
+7	pior	pior	ADJ	_	Number=Sing	6	amod	6:amod	_
+8	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	10:det	_
+9	supostos	suposto	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	10	amod	10:amod	_
+10	seguidores	seguidor	NOUN	_	Gender=Masc|Number=Plur	11	nsubj	11:nsubj	_
+11	vêm	vir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	dep	1:dep	_
+12	de	de	ADP	_	_	15	case	15:case	_
+13	todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Ind	15	det	15:det	_
+14	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	15:det	_
+15	lugares	lugar	NOUN	_	Gender=Masc|Number=Plur	11	obl	11:obl:de	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	incluindo	incluir	VERB	_	VerbForm=Ger	15	acl	15:acl	_
+18	Canadá	Canadá	PROPN	_	_	17	obj	17:obj	SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	20:punct	_
+20	EUA	EUA	PROPN	_	_	18	conj	17:obj|18:conj:e	SpaceAfter=No
+21	,	,	PUNCT	_	_	22	punct	22:punct	_
+22	Reino	Reino	PROPN	_	_	18	conj	17:obj|18:conj:e	_
+23	Unido	Unido	PROPN	_	_	22	flat:name	22:flat:name	_
+24	e	e	CCONJ	_	_	25	cc	25:cc	_
+25	Austrália	Austrália	PROPN	_	_	18	conj	17:obj|18:conj:e	SpaceAfter=No
+26	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0036
+# text = Portanto, mesmo aqueles que promovem cuidadosamente suas campanhas provavelmente são enganados para gastar dinheiro real em falsos seguidores.
+1	Portanto	portanto	CCONJ	_	_	12	cc	12:cc	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	mesmo	mesmo	ADV	_	_	4	advmod	4:advmod	_
+4	aqueles	aquele	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	12	nsubj:pass	6:nsubj|12:nsubj:pass	_
+5	que	que	PRON	_	PronType=Rel	6	nsubj	4:ref	_
+6	promovem	promover	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	4:acl:relcl	_
+7	cuidadosamente	cuidadosamente	ADV	_	_	6	advmod	6:advmod	_
+8	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	9	det	9:det	_
+9	campanhas	campanha	NOUN	_	Gender=Fem|Number=Plur	6	obj	6:obj	_
+10	provavelmente	provavelmente	ADV	_	_	12	advmod	12:advmod	_
+11	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	aux:pass	12:aux:pass	_
+12	enganados	enganar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	_
+13	para	para	ADP	_	_	14	mark	14:mark	_
+14	gastar	gastar	VERB	_	VerbForm=Inf	12	advcl	12:advcl:para	_
+15	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	14	obj	14:obj	_
+16	real	real	ADJ	_	Number=Sing	15	amod	15:amod	_
+17	em	em	ADP	_	_	19	case	19:case	_
+18	falsos	falso	ADJ	_	Gender=Masc|Number=Plur	19	amod	19:amod	_
+19	seguidores	seguidor	NOUN	_	Gender=Masc|Number=Plur	14	obl	14:obl:em	SpaceAfter=No
+20	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0038
+# text = Então, quando eles tentam alcançar (interagir com) seus seguidores, eles precisam pagar novamente.
+1	Então	então	ADV	_	_	15	advmod	15:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	quando	quando	SCONJ	_	_	5	mark	5:mark	_
+4	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	5	nsubj	5:nsubj|6:nsubj|8:nsubj	_
+5	tentam	tentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	advcl	15:advcl:quando	_
+6	alcançar	alcançar	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	_
+7	(	(	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	interagir	interagir	VERB	_	VerbForm=Inf	6	conj	5:xcomp|6:conj	_
+9	com	com	ADP	_	_	12	case	12:case	SpaceAfter=No
+10	)	)	PUNCT	_	_	8	punct	8:punct	_
+11	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	12	det	12:det	_
+12	seguidores	seguidor	NOUN	_	Gender=Masc|Number=Plur	6	obj	6:obj|8:obj	SpaceAfter=No
+13	,	,	PUNCT	_	_	5	punct	5:punct	_
+14	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	15	nsubj	15:nsubj|16:nsubj	_
+15	precisam	precisar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+16	pagar	pagar	VERB	_	VerbForm=Inf	15	xcomp	15:xcomp	_
+17	novamente	novamente	ADV	_	_	16	advmod	16:advmod	SpaceAfter=No
+18	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0040
+# text = É possível sermos vítimas de falsas curtidas.As páginas que acabam na sessão de Páginas Sugeridas do Facebook também são alvos fáceis para fazendas de clique que buscam diversificar seus gostos.
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	2:cop	_
+2	possível	possível	ADJ	_	Number=Sing	0	root	0:root	_
+3	sermos	ser	AUX	_	Number=Plur|Person=1|VerbForm=Inf	4	cop	4:cop	_
+4	vítimas	vítima	NOUN	_	Gender=Fem|Number=Plur	2	csubj	2:csubj	_
+5	de	de	ADP	_	_	8	case	8:case	_
+6	falsas	falso	ADJ	_	Gender=Fem|Number=Plur	8	amod	8:amod	_
+7	curtidas.As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	8:det	_
+8	páginas	página	NOUN	_	Gender=Fem|Number=Plur	4	nmod	4:nmod:de|10:nsubj	_
+9	que	que	PRON	_	PronType=Rel	10	nsubj	8:ref	_
+10	acabam	acabar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	8:acl:relcl	_
+11-12	na	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	sessão	sessão	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:em	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	Páginas	Páginas	PROPN	_	_	13	nmod	13:nmod:de	_
+16	Sugeridas	Sugeridas	PROPN	_	_	15	flat:name	15:flat:name	_
+17-18	do	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	Facebook	Facebook	PROPN	_	_	13	nmod	13:nmod:de	_
+20	também	também	ADV	_	_	22	advmod	22:advmod	_
+21	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	cop	22:cop	_
+22	alvos	alvo	NOUN	_	Gender=Masc|Number=Plur	2	dep	2:dep	_
+23	fáceis	fácil	ADJ	_	Number=Plur	22	amod	22:amod	_
+24	para	para	ADP	_	_	25	case	25:case	_
+25	fazendas	fazenda	NOUN	_	Gender=Fem|Number=Plur	22	nmod	22:nmod:para|29:nsubj|30:nsubj	_
+26	de	de	ADP	_	_	27	case	27:case	_
+27	clique	clique	NOUN	_	Gender=Masc|Number=Sing	25	nmod	25:nmod:de	_
+28	que	que	PRON	_	PronType=Rel	29	nsubj	25:ref	_
+29	buscam	buscar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	25	acl:relcl	25:acl:relcl	_
+30	diversificar	diversificar	VERB	_	VerbForm=Inf	29	xcomp	29:xcomp	_
+31	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	32	det	32:det	_
+32	gostos	gosto	NOUN	_	Gender=Masc|Number=Plur	30	obj	30:obj	SpaceAfter=No
+33	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0042
+# text = Entenda no vídeo abaixo como funciona as famosas "click farms" detalhe: existem centenas espalhadas pelo mundo, principalmente em países de terceiro mundo.
+1	Entenda	entender	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2-3	no	_	_	_	_	_	_	_	_
+2	em	em	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	1	obl	1:obl:em	_
+5	abaixo	abaixo	ADV	_	_	4	advmod	4:advmod	_
+6	como	como	ADV	_	_	7	advmod	7:advmod	_
+7	funciona	funcionar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	1:ccomp	_
+8	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	11:det	_
+9	famosas	famoso	ADJ	_	Gender=Fem|Number=Plur	11	amod	11:amod	_
+10	"	"	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+11	click	click	X	_	Foreign=Yes	7	nsubj	7:nsubj	_
+12	farms	farms	X	_	Foreign=Yes	11	flat:foreign	11:flat:foreign	SpaceAfter=No
+13	"	"	PUNCT	_	_	11	punct	11:punct	_
+14	detalhe	detalhe	NOUN	_	Gender=Masc|Number=Sing	7	parataxis	7:parataxis	SpaceAfter=No
+15	:	:	PUNCT	_	_	16	punct	16:punct	_
+16	existem	existir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	parataxis	7:parataxis	_
+17	centenas	centena	NOUN	_	Gender=Fem|Number=Plur	16	nsubj	16:nsubj	_
+18	espalhadas	espalhar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	17	acl	17:acl	_
+19-20	pelo	_	_	_	_	_	_	_	_
+19	por	por	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:por	SpaceAfter=No
+22	,	,	PUNCT	_	_	25	punct	25:punct	_
+23	principalmente	principalmente	ADV	_	_	25	advmod	25:advmod	_
+24	em	em	ADP	_	_	25	case	25:case	_
+25	países	país	NOUN	_	Gender=Masc|Number=Plur	18	obl	18:obl:em	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	terceiro	terceiro	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	28	amod	28:amod	_
+28	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	25	nmod	25:nmod:de	SpaceAfter=No
+29	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0044
+# text = Quem paga esses funcionários que produzem "likes" em massa?
+1	Quem	quem	PRON	_	PronType=Int	2	nsubj	2:nsubj	_
+2	paga	pagar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	4	det	4:det	_
+4	funcionários	funcionário	NOUN	_	Gender=Masc|Number=Plur	2	obj	2:obj|6:nsubj	_
+5	que	que	PRON	_	PronType=Rel	6	nsubj	4:ref	_
+6	produzem	produzir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	4:acl:relcl	_
+7	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	likes	like	NOUN	_	Foreign=Yes|Gender=Masc|Number=Plur	6	obj	6:obj	SpaceAfter=No
+9	"	"	PUNCT	_	_	8	punct	8:punct	_
+10	em	em	ADP	_	_	11	case	11:case	_
+11	massa	massa	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:em	SpaceAfter=No
+12	?	?	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0046
+# text = Adivinhem?
+1	Adivinhem	adivinhar	VERB	_	Mood=Imp|Number=Plur|Person=3|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+2	?	?	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0048
+# text = Veja a análise sensata feita por Marcos Lemos, do site Ferramentas Blog:
+1	Veja	ver	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	análise	análise	NOUN	_	Gender=Fem|Number=Sing	1	obj	1:obj	_
+4	sensata	sensato	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+5	feita	fazer	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	3	acl	3:acl	_
+6	por	por	ADP	_	_	7	case	7:case	_
+7	Marcos	Marcos	PROPN	_	_	5	obl:agent	5:obl:agent	_
+8	Lemos	Lemos	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+9	,	,	PUNCT	_	_	12	punct	12:punct	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	site	site	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	_
+13	Ferramentas	Ferramentas	PROPN	_	_	12	nmod	12:nmod	_
+14	Blog	Blog	PROPN	_	_	13	flat:name	13:flat:name	SpaceAfter=No
+15	:	:	PUNCT	_	_	1	punct	1:punct	_

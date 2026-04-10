@@ -1,0 +1,501 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = bolsonaro fez pronunciamento enigmático sobre dias difíceis hoje importantíssimo !
+1	bolsonaro	bolsonaro	NOUN	_	_	2	nsubj	2:nsubj	_
+2	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	pronunciamento	pronunciamento	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+4	enigmático	enigmático	ADJ	_	Gender=Masc|Number=Sing	3	amod	3:amod	_
+5	sobre	sobre	ADP	_	_	6	case	6:case	_
+6	dias	dia	NOUN	_	Gender=Masc|Number=Plur	3	nmod	3:nmod:sobre	_
+7	difíceis	difícil	ADJ	_	Number=Plur	6	amod	6:amod	_
+8	hoje	hoje	ADV	_	_	9	advmod	9:advmod	_
+9	importantíssimo	importantíssimo	ADJ	_	Gender=Masc|Number=Sing	6	amod	6:amod	_
+10	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = não deixem de ler !
+1	não	não	ADV	_	_	2	advmod	2:advmod	_
+2	deixem	deixar	VERB	_	Mood=Imp|Number=Plur|Person=3|VerbForm=Fin	0	root	0:root	_
+3	de	de	ADP	_	_	4	mark	4:mark	_
+4	ler	ler	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	_
+5	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = hoje, dia 21 de outubro, bolsonaro fez um pronunciamento enigmático, dizendo que está passando pela pior fase de seu governo e que dias difíceis estão por vir.
+1	hoje	hoje	ADV	_	_	9	advmod	9:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	dia	dia	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl	_
+4	21	21	NUM	_	NumType=Card	3	nmod	3:nmod	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	outubro	outubro	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:de	SpaceAfter=No
+7	,	,	PUNCT	_	_	3	punct	3:punct	_
+8	bolsonaro	bolsonaro	PROPN	_	_	9	nsubj	9:nsubj	_
+9	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	pronunciamento	pronunciamento	NOUN	_	Gender=Masc|Number=Sing	9	obj	9:obj	_
+12	enigmático	enigmático	ADJ	_	Gender=Masc|Number=Sing	11	amod	11:amod	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	dizendo	dizer	VERB	_	VerbForm=Ger	9	advcl	9:advcl	_
+15	que	que	SCONJ	_	_	17	mark	17:mark	_
+16	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux	17:aux	_
+17	passando	passar	VERB	_	VerbForm=Ger	14	ccomp	14:ccomp	_
+18-19	pela	_	_	_	_	_	_	_	_
+18	por	por	ADP	_	_	21	case	21:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+20	pior	pior	ADJ	_	Number=Sing	21	amod	21:amod	_
+21	fase	fase	NOUN	_	Gender=Fem|Number=Sing	17	obl	17:obl:por	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	24	det	24:det	_
+24	governo	governo	NOUN	_	Gender=Masc|Number=Sing	21	nmod	21:nmod:de	_
+25	e	e	CCONJ	_	_	31	cc	31:cc	_
+26	que	que	SCONJ	_	_	31	mark	31:mark	_
+27	dias	dia	NOUN	_	Gender=Masc|Number=Plur	31	nsubj	31:nsubj	_
+28	difíceis	difícil	ADJ	_	Number=Plur	27	amod	27:amod	_
+29	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	31	cop	31:cop	_
+30	por	por	ADP	_	_	31	mark	31:mark	_
+31	vir	vir	VERB	_	VerbForm=Inf	14	conj	14:conj:e	SpaceAfter=No
+32	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0007
+# text = disse ainda que ele tomará as decisões necessárias de um soldado, pois a pior atitude é a indecisão.
+1	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	ainda	ainda	ADV	_	_	1	advmod	1:advmod	_
+3	que	que	SCONJ	_	_	5	mark	5:mark	_
+4	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	5:nsubj	_
+5	tomará	tomar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	1	ccomp	1:ccomp	_
+6	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	7:det	_
+7	decisões	decisão	NOUN	_	Gender=Fem|Number=Plur	5	obj	5:obj	_
+8	necessárias	necessário	ADJ	_	Gender=Fem|Number=Plur	7	amod	7:amod	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	soldado	soldado	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	SpaceAfter=No
+12	,	,	PUNCT	_	_	19	punct	19:punct	_
+13	pois	pois	SCONJ	_	_	19	mark	19:mark	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+15	pior	pior	ADJ	_	Number=Sing	16	amod	16:amod	_
+16	atitude	atitude	NOUN	_	Gender=Fem|Number=Sing	19	nsubj	19:nsubj	_
+17	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	cop	19:cop	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	indecisão	indecisão	NOUN	_	Gender=Fem|Number=Sing	5	advcl	5:advcl:pois	SpaceAfter=No
+20	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0009
+# text = faz sentido agora o texto abaixo que acabo de receber.
+1	faz	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	sentido	sentido	NOUN	_	Gender=Masc|Number=Sing	1	obj	1:obj	_
+3	agora	agora	ADV	_	_	1	advmod	1:advmod	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	texto	texto	NOUN	_	Gender=Masc|Number=Sing	1	nsubj	1:nsubj|10:obj	_
+6	abaixo	abaixo	ADV	_	_	5	advmod	5:advmod	_
+7	que	que	PRON	_	PronType=Rel	8	obj	5:ref	_
+8	acabo	acabar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_
+9	de	de	ADP	_	_	10	mark	10:mark	_
+10	receber	receber	VERB	_	VerbForm=Inf	8	xcomp	8:xcomp	SpaceAfter=No
+11	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0011
+# text = , sabem pq tudo está subindo??
+1	,	,	PUNCT	_	_	2	punct	2:punct	_
+2	sabem	saber	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	pq	pq	PRON	_	PronType=Rel	6	mark	6:mark	_
+4	tudo	tudo	PRON	_	PronType=Ind	6	nsubj	6:nsubj	_
+5	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	6:aux	_
+6	subindo	subir	VERB	_	VerbForm=Ger	2	ccomp	2:ccomp	SpaceAfter=No
+7	?	?	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+8	?	?	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0013
+# text = não tem mais resina plástica, polietileno matéria prima básica para indústria de plástico no mercado.
+1	não	não	ADV	_	_	2	advmod	2:advmod	_
+2	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	mais	mais	DET	_	PronType=Ind	4	det	4:det	_
+4	resina	resina	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+5	plástica	plástico	ADJ	_	Gender=Fem|Number=Sing	4	amod	4:amod	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	polietileno	polietileno	NOUN	_	Gender=Masc|Number=Sing	4	conj	2:obj|4:conj	_
+8	matéria	matéria	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod	_
+9	prima	primo	ADJ	_	Gender=Fem|Number=Sing	8	amod	8:amod	_
+10	básica	básico	ADJ	_	Gender=Fem|Number=Sing	8	amod	8:amod	_
+11	para	para	ADP	_	_	12	case	12:case	_
+12	indústria	indústria	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:para	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	plástico	plástico	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:de	_
+15-16	no	_	_	_	_	_	_	_	_
+15	em	em	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	mercado	mercado	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:em|7:nmod:em	SpaceAfter=No
+18	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0015
+# text = está tudo na mão dos chineses.
+1	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+2	tudo	tudo	PRON	_	PronType=Ind	5	nsubj	5:nsubj	_
+3-4	na	_	_	_	_	_	_	_	_
+3	em	em	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	mão	mão	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+6-7	dos	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	8:det	_
+8	chineses	chinÃªs	NOUN	_	Gender=Masc|Number=Plur	5	nmod	5:nmod:de	SpaceAfter=No
+9	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0017
+# text = a china têm o monopólio da resina.
+1	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	china	china	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_
+3	têm	ter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	monopólio	monopólio	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	_
+6-7	da	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	resina	resina	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	SpaceAfter=No
+9	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0019
+# text = tudo que foi importado é dominado pela braskem da odebrecht.
+1	tudo	tudo	PRON	_	PronType=Ind	6	nsubj:pass	4:nsubj:pass|6:nsubj:pass	_
+2	que	que	PRON	_	PronType=Rel	4	nsubj:pass	1:ref	_
+3	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	importado	importar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	1	acl:relcl	1:acl:relcl	_
+5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:pass	6:aux:pass	_
+6	dominado	dominar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+7	pela	o	ADP	_	_	8	det	8:det	_
+8	braskem	braskem	X	_	Foreign=Yes	6	obl:agent	6:obl:agent	_
+9-10	da	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	odebrecht	odebrecht	X	_	Foreign=Yes	8	nmod	8:nmod:de	SpaceAfter=No
+12	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0021
+# text = em pouco tempo, uns 4 dias a indústria vai parar .
+1	em	em	ADP	_	_	3	case	3:case	_
+2	pouco	pouco	ADJ	_	Gender=Masc|Number=Sing	3	amod	3:amod	_
+3	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:em	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	uns	um	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	7	det	7:det	_
+6	4	4	NUM	_	NumType=Card	7	nummod	7:nummod	_
+7	dias	dia	NOUN	_	Gender=Masc|Number=Plur	11	nsubj	11:nsubj	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	indústria	indústria	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	11:nsubj	_
+10	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux	11:aux	_
+11	parar	parar	VERB	_	VerbForm=Inf	0	root	0:root	_
+12	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0023
+# text = só a coca mar tem óleo de soja para vender.
+1	só	só	ADV	_	_	3	advmod	3:advmod	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	coca	coca	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+4	mar	mar	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod	_
+5	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	soja	soja	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de	_
+9	para	para	ADP	_	_	10	mark	10:mark	_
+10	vender	vender	VERB	_	VerbForm=Inf	5	advcl	5:advcl:para	SpaceAfter=No
+11	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0025
+# text = a produção inteira de soja do brasil está comprada pela china até 222. ou seja, quem tem o profuto é que vai decidir o preço que vai vender.
+1	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	produção	produção	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	10:nsubj	_
+3	inteira	inteiro	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	soja	soja	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+6-7	do	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	brasil	brasil	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:de	_
+9	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_
+10	comprada	comprado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	0	root	0:root	_
+11-12	pela	_	_	_	_	_	_	_	_
+11	por	por	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	china	china	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:por	_
+14	até	até	ADP	_	_	15	case	15:case	_
+15	222	222	NUM	_	NumType=Card	10	obl	10:obl:até	SpaceAfter=No
+16	.	.	PUNCT	_	_	27	punct	27:punct	_
+17	ou	ou	CCONJ	_	ExtPos=CCONJ	27	cc	27:cc	_
+18	seja	ser	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	fixed	17:fixed	SpaceAfter=No
+19	,	,	PUNCT	_	_	17	punct	17:punct	_
+20	quem	quem	PRON	_	PronType=Ind	27	nsubj	27:nsubj	_
+21	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	acl:relcl	20:acl:relcl	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	profuto	profuto	NOUN	_	Gender=Masc|Number=Sing	21	obj	21:obj	_
+24	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	discourse	27:discourse	_
+25	que	que	SCONJ	_	_	27	discourse	27:discourse	_
+26	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	aux	27:aux	_
+27	decidir	decidir	VERB	_	VerbForm=Inf	10	dep	10:dep	_
+28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	29:det	_
+29	preço	preço	NOUN	_	Gender=Masc|Number=Sing	27	obj	27:obj|32:obj	_
+30	que	que	PRON	_	PronType=Rel	32	obj	29:ref	_
+31	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	32	aux	32:aux	_
+32	vender	vender	VERB	_	VerbForm=Inf	29	acl:relcl	29:acl:relcl	SpaceAfter=No
+33	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0027
+# text = entre 6 e 9 dias não haverá mais carga para carregar.
+1	entre	entre	ADP	_	_	2	case	2:case	_
+2	6	6	NUM	_	NumType=Card	5	nummod	5:nummod	_
+3	e	e	CCONJ	_	_	4	cc	4:cc	_
+4	9	9	NUM	_	NumType=Card	2	conj	2:conj:e|5:nummod	_
+5	dias	dia	NOUN	_	Gender=Masc|Number=Plur	7	obl	7:obl	_
+6	não	não	ADV	_	_	7	advmod	7:advmod	_
+7	haverá	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+8	mais	mais	DET	_	PronType=Ind	9	det	9:det	_
+9	carga	carga	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	_
+10	para	para	ADP	_	_	11	mark	11:mark	_
+11	carregar	carregar	VERB	_	VerbForm=Inf	7	advcl	7:advcl:para	SpaceAfter=No
+12	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0029
+# text = a china vai derrubar o brasil pela escassez de alimentos.
+1	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	china	china	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+3	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	4:aux	_
+4	derrubar	derrubar	VERB	_	VerbForm=Inf	0	root	0:root	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	brasil	brasil	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7-8	pela	_	_	_	_	_	_	_	_
+7	por	por	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	escassez	escassez	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:por	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	alimentos	alimento	NOUN	_	Gender=Masc|Number=Plur	9	nmod	9:nmod:de	SpaceAfter=No
+12	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0031
+# text = não é atoa que aumentaram a quarentena.
+1	não	não	ADV	_	_	3	advmod	3:advmod	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+3	atoa	atoa	ADV	_	_	0	root	0:root	_
+4	que	que	SCONJ	_	_	5	mark	5:mark	_
+5	aumentaram	aumentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	3	csubj	3:csubj	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	quarentena	quarentena	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	SpaceAfter=No
+8	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0033
+# text = a técnica é vencer pelo cansaço e pela falta de fôlego econômico.
+1	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	técnica	técnica	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+4	vencer	vencer	VERB	_	VerbForm=Inf	0	root	0:root	_
+5-6	pelo	_	_	_	_	_	_	_	_
+5	por	por	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	cansaço	cansaço	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:por	_
+8	e	e	CCONJ	_	_	11	cc	11:cc	_
+9-10	pela	_	_	_	_	_	_	_	_
+9	por	por	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	falta	falta	NOUN	_	Gender=Fem|Number=Sing	7	conj	4:obl:por|7:conj:e	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	fôlego	fôlego	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:de	_
+14	econômico	econômico	ADJ	_	Gender=Masc|Number=Sing	13	amod	13:amod	SpaceAfter=No
+15	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0035
+# text = arroz, açúcar, óleo… estão subindo absurdamente.
+1	arroz	arroz	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	açúcar	açúcar	NOUN	_	Gender=Masc|Number=Sing	1	conj	1:conj|7:nsubj	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	óleo…	óleo…	PUNCT	_	_	1	conj	1:conj|7:nsubj	_
+6	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux	7:aux	_
+7	subindo	subir	VERB	_	VerbForm=Ger	0	root	0:root	_
+8	absurdamente	absurdamente	ADV	_	_	7	advmod	7:advmod	SpaceAfter=No
+9	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0037
+# text = então: auxílio acabando e comida aumentando vai acabar com o fôlego econômico do brasil.
+1	então	então	ADV	_	_	9	advmod	9:advmod	SpaceAfter=No
+2	:	:	PUNCT	_	_	1	punct	1:punct	_
+3	auxílio	auxílio	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	9:nsubj	_
+4	acabando	acabar	VERB	_	VerbForm=Ger	3	acl	3:acl	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	comida	comida	NOUN	_	Gender=Fem|Number=Sing	3	conj	3:conj:e|9:nsubj	_
+7	aumentando	aumentar	VERB	_	VerbForm=Ger	6	acl	6:acl	_
+8	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux	9:aux	_
+9	acabar	acabar	VERB	_	VerbForm=Inf	0	root	0:root	_
+10	com	com	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	fôlego	fôlego	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:com	_
+13	econômico	econômico	ADJ	_	Gender=Masc|Number=Sing	12	amod	12:amod	_
+14-15	do	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	brasil	brasil	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:de	SpaceAfter=No
+17	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0039
+# text = , está é a estratégia de governadores, china, stf, congresso… um protege o outro e todos agem contra o brasil e contra os brasileiros.
+1	,	,	PUNCT	_	_	5	punct	5:punct	_
+2	está	este	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	5	nsubj	5:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	estratégia	estratégia	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+6	de	de	ADP	_	_	7	case	7:case|9:case|11:case	_
+7	governadores	governador	NOUN	_	Gender=Masc|Number=Plur	5	nmod	5:nmod:de	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	china	china	NOUN	_	Gender=Fem|Number=Sing	7	conj	5:nmod:de|7:conj	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	stf	stf	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	7	conj	5:nmod:de|7:conj	SpaceAfter=No
+12	,	,	PUNCT	_	_	15	punct	15:punct	_
+13	congresso…	congresso…	PUNCT	_	_	15	punct	15:punct	_
+14	um	um	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	15	nsubj	15:nsubj	_
+15	protege	proteger	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	5:conj	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	outro	outro	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	15	obj	15:obj	_
+18	e	e	CCONJ	_	_	20	cc	20:cc	_
+19	todos	todo	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	20	nsubj	20:nsubj	_
+20	agem	agir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	conj	15:conj:e	_
+21	contra	contra	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	brasil	brasil	NOUN	_	Gender=Masc|Number=Sing	20	obl	20:obl:contra	_
+24	e	e	CCONJ	_	_	27	cc	27:cc	_
+25	contra	contra	ADP	_	_	27	case	27:case	_
+26	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	27:det	_
+27	brasileiros	brasileiro	NOUN	_	Gender=Masc|Number=Plur	23	conj	20:obl:contra|23:conj:e	SpaceAfter=No
+28	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0041
+# text = todos estão postando na ruína econômica.
+1	todos	todo	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	3	nsubj	3:nsubj	_
+2	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	aux	3:aux	_
+3	postando	postar	VERB	_	VerbForm=Ger	0	root	0:root	_
+4-5	na	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	ruína	ruína	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:em	_
+7	econômica	econômico	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	SpaceAfter=No
+8	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0043
+# text = faltando emprego e comida, o povo tende a se revoltar contra o governo.
+1	faltando	faltar	VERB	_	VerbForm=Ger	8	advcl	8:advcl	_
+2	emprego	emprego	NOUN	_	Gender=Masc|Number=Sing	1	obj	1:obj	_
+3	e	e	CCONJ	_	_	4	cc	4:cc	_
+4	comida	comida	NOUN	_	Gender=Fem|Number=Sing	2	conj	1:obj|2:conj:e	SpaceAfter=No
+5	,	,	PUNCT	_	_	1	punct	1:punct	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	povo	povo	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	8:nsubj|11:nsubj	_
+8	tende	tender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+9	a	a	ADP	_	_	11	mark	11:mark	_
+10	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	11	expl	11:expl	_
+11	revoltar	revoltar	VERB	_	VerbForm=Inf	8	xcomp	8:xcomp	_
+12	contra	contra	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	governo	governo	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:contra	SpaceAfter=No
+15	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0045
+# text = aí eles conseguem derrubar o presidente com impeachment.
+1	aí	aí	ADV	_	_	3	advmod	3:advmod	_
+2	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	nsubj	3:nsubj|4:nsubj	_
+3	conseguem	conseguir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	derrubar	derrubar	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	presidente	presidente	NOUN	_	Number=Sing	4	obj	4:obj	_
+7	com	com	ADP	_	_	8	case	8:case	_
+8	impeachment	impeachment	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:com	SpaceAfter=No
+9	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0047
+# text = aí cai bolsonaro e morão e fica o maia.
+1	aí	aí	ADV	_	_	2	advmod	2:advmod	_
+2	cai	cair	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	bolsonaro	bolsonaro	NOUN	_	Gender=Masc|Number=Sing	2	nsubj	2:nsubj	_
+4	e	e	CCONJ	_	_	5	cc	5:cc	_
+5	morão	morão	NOUN	_	Gender=Masc|Number=Sing	3	conj	2:nsubj|3:conj:e	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	fica	ficar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:e	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	maia	maia	NOUN	_	Number=Sing	7	nsubj	7:nsubj	SpaceAfter=No
+10	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0049
+# text = limpam a ficha do larápio e ele voltaria como salvador da pátria.
+1	limpam	limpar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	ficha	ficha	NOUN	_	Gender=Fem|Number=Sing	1	obj	1:obj	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	larápio	larápio	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	_
+7	e	e	CCONJ	_	_	9	cc	9:cc	_
+8	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nsubj	9:nsubj	_
+9	voltaria	voltar	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	1	conj	1:conj:e	_
+10	como	como	ADP	_	_	11	case	11:case	_
+11	salvador	salvador	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:como	_
+12-13	da	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	pátria	pátria	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:de	SpaceAfter=No
+15	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0051
+# text = se, cruzarmos os braços vamos virar uma venezuela.
+1	se	se	SCONJ	_	_	3	mark	3:mark	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	cruzarmos	cruzar	VERB	_	Mood=Sub|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	7	advcl	7:advcl:se	_
+4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	5:det	_
+5	braços	braço	NOUN	_	Gender=Masc|Number=Plur	3	obj	3:obj	_
+6	vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	7	aux	7:aux	_
+7	virar	virar	VERB	_	VerbForm=Inf	0	root	0:root	_
+8	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	venezuela	venezuela	NOUN	_	Number=Sing	7	xcomp	7:xcomp	SpaceAfter=No
+10	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0053
+# text = por isto dória disse que a popularidade de bolsonaro vai só até novembro.
+1	por	por	ADP	_	_	2	case	2:case	_
+2	isto	isto	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	4	obl	4:obl:por	_
+3	dória	dória	PROPN	_	_	4	nsubj	4:nsubj	_
+4	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	que	que	SCONJ	_	_	10	mark	10:mark	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	popularidade	popularidade	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	10:nsubj	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	bolsonaro	bolsonaro	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	_
+10	vai	ir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	ccomp	4:ccomp	_
+11	só	só	ADV	_	_	13	advmod	13:advmod	_
+12	até	até	ADP	_	_	13	case	13:case	_
+13	novembro	novembro	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:até	SpaceAfter=No
+14	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0055
+# text = atenção!
+1	atenção	atenção	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+2	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0057
+# text = repassem pelo amor de deus.
+1	repassem	repassar	VERB	_	Mood=Imp|Number=Plur|Person=3|VerbForm=Fin	0	root	0:root	_
+2-3	pelo	_	_	_	_	_	_	_	_
+2	por	por	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	amor	amor	NOUN	_	Gender=Masc|Number=Sing	1	obl	1:obl:por	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	deus	deus	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:de	SpaceAfter=No
+7	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0059
+# text = atenção: copie e cole para poder repassar de 5 em 5 pessoas.
+1	atenção	atenção	NOUN	_	Gender=Fem|Number=Sing	3	parataxis	3:parataxis|5:parataxis	SpaceAfter=No
+2	:	:	PUNCT	_	_	1	punct	1:punct	_
+3	copie	copiar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+4	e	e	CCONJ	_	_	5	cc	5:cc	_
+5	cole	colar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	3:conj:e	_
+6	para	para	ADP	_	_	7	mark	7:mark	_
+7	poder	poder	VERB	_	VerbForm=Inf	3	advcl	3:advcl:para|5:advcl:para	_
+8	repassar	repassar	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	5	5	NUM	_	NumType=Card	8	obl	8:obl:de	_
+11	em	em	ADP	_	_	12	case	12:case	_
+12	5	5	NUM	_	NumType=Card	13	nummod	13:nummod	_
+13	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	8	obl	8:obl	SpaceAfter=No
+14	.	.	PUNCT	_	_	3	punct	3:punct	_

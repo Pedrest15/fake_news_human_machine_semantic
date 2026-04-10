@@ -1,0 +1,338 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = É legal mas não é moral!
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	2:cop	_
+2	legal	legal	ADJ	_	Number=Sing	0	root	0:root	_
+3	mas	mas	CCONJ	_	_	6	cc	6:cc	_
+4	não	não	ADV	_	_	6	advmod	6:advmod	_
+5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+6	moral	moral	ADJ	_	Number=Sing	2	conj	2:conj:mas	SpaceAfter=No
+7	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Governador se pronuncia e diz que usou helicóptero para buscar o filho que passou mal.
+1	Governador	governador	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj|5:nsubj	_
+2	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	3	expl	3:expl	_
+3	pronuncia	pronunciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	e	e	CCONJ	_	_	5	cc	5:cc	_
+5	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	3:conj:e	_
+6	que	que	SCONJ	_	_	7	mark	7:mark	_
+7	usou	usar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	ccomp	5:ccomp	_
+8	helicóptero	helicóptero	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+9	para	para	ADP	_	_	10	mark	10:mark	_
+10	buscar	buscar	VERB	_	VerbForm=Inf	7	advcl	7:advcl:para	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	filho	filho	NOUN	_	Gender=Masc|Number=Sing	10	obj	10:obj|14:nsubj	_
+13	que	que	PRON	_	PronType=Rel	14	nsubj	12:ref	_
+14	passou	passar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	acl:relcl	12:acl:relcl	_
+15	mal	mal	ADV	_	_	14	advmod	14:advmod	SpaceAfter=No
+16	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0005
+# text = Fernando Pimentel (PT), governador de Minas Gerais, afirmou que irá processar o deputado Sargento Rodrigues (PDT) por calúnia, difamação e falsa acusação de crime.
+1	Fernando	Fernando	PROPN	_	_	12	nsubj	12:nsubj	_
+2	Pimentel	Pimentel	PROPN	_	_	1	flat:name	1:flat:name	_
+3	(	(	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+4	PT	PT	PROPN	_	_	1	parataxis	1:parataxis	SpaceAfter=No
+5	)	)	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	governador	governador	NOUN	_	Gender=Masc|Number=Sing	1	appos	1:appos	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	Minas	Minas	PROPN	_	_	7	nmod	7:nmod:de	_
+10	Gerais	Gerais	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+11	,	,	PUNCT	_	_	7	punct	7:punct	_
+12	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+13	que	que	SCONJ	_	_	15	mark	15:mark	_
+14	irá	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	15	aux	15:aux	_
+15	processar	processar	VERB	_	VerbForm=Inf	12	ccomp	12:ccomp	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	15	obj	15:obj	_
+18	Sargento	Sargento	PROPN	_	_	17	nmod	17:nmod	_
+19	Rodrigues	Rodrigues	PROPN	_	_	18	flat:name	18:flat:name	_
+20	(	(	PUNCT	_	_	21	punct	21:punct	SpaceAfter=No
+21	PDT	PDT	PROPN	_	_	17	parataxis	17:parataxis	SpaceAfter=No
+22	)	)	PUNCT	_	_	21	punct	21:punct	_
+23	por	por	ADP	_	_	24	case	24:case|26:case|29:case	_
+24	calúnia	calúnia	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl:por	SpaceAfter=No
+25	,	,	PUNCT	_	_	26	punct	26:punct	_
+26	difamação	difamação	NOUN	_	Gender=Fem|Number=Sing	24	conj	15:obl:por|24:conj:e	_
+27	e	e	CCONJ	_	_	29	cc	29:cc	_
+28	falsa	falso	ADJ	_	Gender=Fem|Number=Sing	29	amod	29:amod	_
+29	acusação	acusação	NOUN	_	Gender=Fem|Number=Sing	24	conj	15:obl:por|24:conj:e	_
+30	de	de	ADP	_	_	31	case	31:case	_
+31	crime	crime	NOUN	_	Gender=Masc|Number=Sing	29	nmod	29:nmod:de	SpaceAfter=No
+32	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0007
+# text = O petista aparece em um vídeo desembarcando de um helicóptero do governo do Estado para buscar o filho em um condomínio de luxo na cidade de Capitólio/MG.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	petista	petista	NOUN	_	Number=Sing	3	nsubj	3:nsubj	_
+3	aparece	aparecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:em	_
+7	desembarcando	desembarcar	VERB	_	VerbForm=Ger	3	advcl	3:advcl	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	helicóptero	helicóptero	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:de	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	governo	governo	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:de	_
+14-15	do	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	Estado	Estado	PROPN	_	_	13	nmod	13:nmod:de	_
+17	para	para	ADP	_	_	18	mark	18:mark	_
+18	buscar	buscar	VERB	_	VerbForm=Inf	7	advcl	7:advcl:para	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	filho	filho	NOUN	_	Gender=Masc|Number=Sing	18	obj	18:obj	_
+21	em	em	ADP	_	_	23	case	23:case	_
+22	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	condomínio	condomínio	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:em	_
+24	de	de	ADP	_	_	25	case	25:case	_
+25	luxo	luxo	NOUN	_	Gender=Masc|Number=Sing	23	nmod	23:nmod:de	_
+26-27	na	_	_	_	_	_	_	_	_
+26	em	em	ADP	_	_	28	case	28:case	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	cidade	cidade	NOUN	_	Gender=Fem|Number=Sing	23	nmod	23:nmod:em	_
+29	de	de	ADP	_	_	30	case	30:case	_
+30	Capitólio/MG	Capitólio/MG	PROPN	_	_	28	nmod	28:nmod:de	SpaceAfter=No
+31	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0009
+# text = Pimentel esclareceu que foi até o condomínio com o objetivo de passar o dia com o filho e teve que retornar porque o jovem passou mal. .
+1	Pimentel	Pimentel	PROPN	_	_	2	nsubj	2:nsubj	_
+2	esclareceu	esclarecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	4	mark	4:mark|19:mark	_
+4	foi	ir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	ccomp	2:ccomp	_
+5	até	até	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	condomínio	condomínio	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:até	_
+8	com	com	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	objetivo	objetivo	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:com	_
+11	de	de	ADP	_	_	12	mark	12:mark	_
+12	passar	passar	VERB	_	VerbForm=Inf	10	acl	10:acl:de	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	dia	dia	NOUN	_	Gender=Masc|Number=Sing	12	obj	12:obj	_
+15	com	com	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	filho	filho	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:com	_
+18	e	e	CCONJ	_	_	19	cc	19:cc	_
+19	teve	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	conj	2:ccomp|4:conj:e	_
+20	que	que	ADP	_	_	21	mark	21:mark	_
+21	retornar	retornar	VERB	_	VerbForm=Inf	19	xcomp	19:xcomp	_
+22	porque	porque	SCONJ	_	_	25	mark	25:mark	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	jovem	jovem	NOUN	_	Number=Sing	25	nsubj	25:nsubj	_
+25	passou	passar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	21	advcl	21:advcl:porque	_
+26	mal	mal	ADV	_	_	25	advmod	25:advmod	SpaceAfter=No
+27	.	.	PUNCT	_	_	2	punct	2:punct	_
+28	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0011
+# text = Neste domingo, dia 1o, fui a Escarpas do Lago, pela manhã, de helicóptero, com a intenção de ficar o dia lá, com meu filho, que passara o Réveillon na casa de amigos.
+1-2	Neste	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	3	det	3:det	_
+3	domingo	domingo	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:em	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	dia	dia	NOUN	_	Gender=Masc|Number=Sing	3	appos	3:appos	_
+6	1o	1o	ADJ	_	Gender=Masc|NumType=Ord	5	nmod	5:nmod	SpaceAfter=No
+7	,	,	PUNCT	_	_	5	punct	5:punct	_
+8	fui	ir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	a	a	ADP	_	_	10	case	10:case	_
+10	Escarpas	Escarpas	PROPN	_	_	8	obl	8:obl:a	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	Lago	Lago	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+14	,	,	PUNCT	_	_	17	punct	17:punct	_
+15-16	pela	_	_	_	_	_	_	_	_
+15	por	por	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	manhã	manhã	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:por	SpaceAfter=No
+18	,	,	PUNCT	_	_	20	punct	20:punct	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	helicóptero	helicóptero	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:de	SpaceAfter=No
+21	,	,	PUNCT	_	_	24	punct	24:punct	_
+22	com	com	ADP	_	_	24	case	24:case	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	intenção	intenção	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:com	_
+25	de	de	ADP	_	_	26	mark	26:mark	_
+26	ficar	ficar	VERB	_	VerbForm=Inf	24	acl	24:acl:de	_
+27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	dia	dia	NOUN	_	Gender=Masc|Number=Sing	26	obj	26:obj	_
+29	lá	lá	ADV	_	_	26	advmod	26:advmod	SpaceAfter=No
+30	,	,	PUNCT	_	_	33	punct	33:punct	_
+31	com	com	ADP	_	_	33	case	33:case	_
+32	meu	meu	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	33	det	33:det	_
+33	filho	filho	NOUN	_	Gender=Masc|Number=Sing	26	obl	26:obl:com|36:nsubj	SpaceAfter=No
+34	,	,	PUNCT	_	_	36	punct	36:punct	_
+35	que	que	PRON	_	PronType=Rel	36	nsubj	33:ref	_
+36	passara	passar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pqp|VerbForm=Fin	33	acl:relcl	33:acl:relcl	_
+37	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	38:det	_
+38	Réveillon	Réveillon	PROPN	_	_	36	obj	36:obj	_
+39-40	na	_	_	_	_	_	_	_	_
+39	em	em	ADP	_	_	41	case	41:case	_
+40	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	41:det	_
+41	casa	casa	NOUN	_	Gender=Fem|Number=Sing	36	obl	36:obl:em	_
+42	de	de	ADP	_	_	43	case	43:case	_
+43	amigos	amigo	NOUN	_	Gender=Masc|Number=Plur	41	nmod	41:nmod:de	SpaceAfter=No
+44	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0013
+# text = Ainda no voo de ida, ele comunicou-se comigo, dizendo que não se sentia bem, e perguntava se não me incomodaria voltar mais cedo com ele para BH, em vez de almoçar lá.
+1	Ainda	ainda	ADV	_	_	4	advmod	4:advmod	_
+2-3	no	_	_	_	_	_	_	_	_
+2	em	em	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	voo	voo	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:em	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	ida	ida	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:de	SpaceAfter=No
+7	,	,	PUNCT	_	_	4	punct	4:punct	_
+8	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nsubj	9:nsubj|22:nsubj	_
+9-10	comunicou-se	_	_	_	_	_	_	_	_
+9	comunicou	comunicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	9	expl	9:expl	_
+11-12	comigo	_	_	_	_	_	_	_	_
+11	com	com	ADP	_	_	12	case	12:case	_
+12	mim	mim	PRON	_	Case=Dat|Number=Sing|Person=1|PronType=Prs	9	obl	9:obl:com	_
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	dizendo	dizer	VERB	_	VerbForm=Ger	9	advcl	9:advcl	_
+15	que	que	SCONJ	_	_	18	mark	18:mark	_
+16	não	não	ADV	_	_	18	advmod	18:advmod	_
+17	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	18	expl	18:expl	_
+18	sentia	sentir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	14	ccomp	14:ccomp	_
+19	bem	bem	ADV	_	_	18	advmod	18:advmod	SpaceAfter=No
+20	,	,	PUNCT	_	_	22	punct	22:punct	_
+21	e	e	CCONJ	_	_	22	cc	22:cc	_
+22	perguntava	perguntar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	conj	9:conj:e	_
+23	se	se	SCONJ	_	_	26	mark	26:mark	_
+24	não	não	ADV	_	_	26	advmod	26:advmod	_
+25	me	me	PRON	_	Case=Dat|Number=Sing|Person=1|PronType=Prs	26	iobj	26:iobj|27:nsubj	_
+26	incomodaria	incomodar	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	22	ccomp	22:ccomp	_
+27	voltar	voltar	VERB	_	VerbForm=Inf	26	xcomp	26:xcomp	_
+28	mais	mais	ADV	_	_	29	advmod	29:advmod	_
+29	cedo	cedo	ADV	_	_	27	advmod	27:advmod	_
+30	com	com	ADP	_	_	31	case	31:case	_
+31	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	27	obl	27:obl:com	_
+32	para	para	ADP	_	_	33	case	33:case	_
+33	BH	BH	PROPN	_	_	27	obl	27:obl:para	SpaceAfter=No
+34	,	,	PUNCT	_	_	36	punct	36:punct	_
+35	em	em	ADP	_	_	36	case	36:case	_
+36	vez	vez	NOUN	_	Gender=Fem|Number=Sing	27	obl	27:obl:em	_
+37	de	de	ADP	_	_	38	mark	38:mark	_
+38	almoçar	almoçar	VERB	_	VerbForm=Inf	36	acl	36:acl:de	_
+39	lá	lá	ADV	_	_	38	advmod	38:advmod	SpaceAfter=No
+40	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0015
+# text = Obviamente, eu concordei e voltamos juntos, logo após o pouso, ainda pela manhã, diz a nota.
+1	Obviamente	obviamente	ADV	_	_	4	advmod	4:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	4:nsubj	_
+4	concordei	concordar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	19	ccomp:speech	19:ccomp:speech	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	voltamos	voltar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	4	conj	4:conj:e|19:ccomp:speech	_
+7	juntos	junto	ADJ	_	Gender=Masc|Number=Plur	6	advcl	6:advcl	SpaceAfter=No
+8	,	,	PUNCT	_	_	12	punct	12:punct	_
+9	logo	logo	ADV	_	_	12	advmod	12:advmod	_
+10	após	após	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	pouso	pouso	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:após	SpaceAfter=No
+13	,	,	PUNCT	_	_	17	punct	17:punct	_
+14	ainda	ainda	ADV	_	_	17	advmod	17:advmod	_
+15-16	pela	_	_	_	_	_	_	_	_
+15	por	por	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	manhã	manhã	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:por	SpaceAfter=No
+18	,	,	PUNCT	_	_	4	punct	4:punct	_
+19	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	nota	nota	NOUN	_	Gender=Fem|Number=Sing	19	nsubj	19:nsubj	SpaceAfter=No
+22	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0017
+# text = O governador argumentou ainda que o uso do helicóptero é legal e foi regulamentado através de um decreto de 2005, assinado pelo ex-governador Aécio Neves (PSDB).
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	governador	governador	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	argumentou	argumentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	ainda	ainda	ADV	_	_	3	advmod	3:advmod	_
+5	que	que	SCONJ	_	_	12	mark	12:mark|15:mark	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	uso	uso	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	12:nsubj|15:nsubj:pass	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	helicóptero	helicóptero	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	_
+11	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	12:cop	_
+12	legal	legal	ADJ	_	Number=Sing	3	ccomp	3:ccomp	_
+13	e	e	CCONJ	_	_	15	cc	15:cc	_
+14	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	aux:pass	15:aux:pass	_
+15	regulamentado	regulamentar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	12	conj	3:ccomp|12:conj:e	_
+16	através	através	ADV	_	_	15	advmod	15:advmod	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	decreto	decreto	NOUN	_	Gender=Masc|Number=Sing	16	obl	16:obl:de	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	2005	2005	NUM	_	NumType=Card	19	nmod	19:nmod:de	SpaceAfter=No
+22	,	,	PUNCT	_	_	23	punct	23:punct	_
+23	assinado	assinar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	19	acl	19:acl	_
+24-25	pelo	_	_	_	_	_	_	_	_
+24	por	por	ADP	_	_	26	case	26:case	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	ex-governador	ex-governador	NOUN	_	Gender=Masc|Number=Sing	23	obl:agent	23:obl:agent	_
+27	Aécio	Aécio	PROPN	_	_	26	nmod	26:nmod	_
+28	Neves	Neves	PROPN	_	_	27	flat:name	27:flat:name	_
+29	(	(	PUNCT	_	_	30	punct	30:punct	SpaceAfter=No
+30	PSDB	PSDB	PROPN	_	_	26	parataxis	26:parataxis	SpaceAfter=No
+31	)	)	PUNCT	_	_	30	punct	30:punct	SpaceAfter=No
+32	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0019
+# text = Pois é governador.
+1	Pois	pois	CCONJ	_	_	3	cc	3:cc	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+3	governador	governador	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+4	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0021
+# text = É legal mas não é ético nem moral!
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	2:cop	_
+2	legal	legal	ADJ	_	Number=Sing	0	root	0:root	_
+3	mas	mas	CCONJ	_	_	6	cc	6:cc	_
+4	não	não	ADV	_	_	6	advmod	6:advmod	_
+5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop|8:cop	_
+6	ético	ético	ADJ	_	Gender=Masc|Number=Sing	2	conj	2:conj:mas	_
+7	nem	nem	CCONJ	_	_	8	cc	8:cc	_
+8	moral	moral	ADJ	_	Number=Sing	6	conj	6:conj:nem	SpaceAfter=No
+9	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0023
+# text = Cadê o exemplo?
+1	Cadê	cadê	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	exemplo	exemplo	NOUN	_	Gender=Masc|Number=Sing	1	nsubj	1:nsubj	SpaceAfter=No
+4	?	?	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0025
+# text = Minas Gerais é uma piada quando o assunto envolve aviões, helicópteros, aeroportos, etc...
+1	Minas	Minas	PROPN	_	_	5	nsubj	5:nsubj	_
+2	Gerais	Gerais	PROPN	_	_	1	flat:name	1:flat:name	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+4	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	piada	piada	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+6	quando	quando	SCONJ	_	_	9	mark	9:mark	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	assunto	assunto	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	9:nsubj	_
+9	envolve	envolver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	advcl	5:advcl:quando	_
+10	aviões	avião	NOUN	_	Gender=Masc|Number=Plur	9	obj	9:obj	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	helicópteros	helicóptero	NOUN	_	Gender=Masc|Number=Plur	10	conj	9:obj|10:conj	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	aeroportos	aeroporto	NOUN	_	Gender=Masc|Number=Plur	10	conj	9:obj|10:conj	SpaceAfter=No
+15	,	,	PUNCT	_	_	14	punct	14:punct	_
+16	etc.	etc.	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+17	..	..	PUNCT	_	_	5	punct	5:punct	_

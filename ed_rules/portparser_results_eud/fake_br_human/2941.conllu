@@ -1,0 +1,130 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Deputado Carlos Sampaio trucida Dilma e o PT em discurso no plenário da Câmara.
+1	Deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+2	Carlos	Carlos	PROPN	_	_	1	nmod	1:nmod	_
+3	Sampaio	Sampaio	PROPN	_	_	2	flat:name	2:flat:name	_
+4	trucida	trucidar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	Dilma	Dilma	PROPN	_	_	4	obj	4:obj	_
+6	e	e	CCONJ	_	_	8	cc	8:cc	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	PT	PT	PROPN	_	_	5	conj	4:obj|5:conj:e	_
+9	em	em	ADP	_	_	10	case	10:case	_
+10	discurso	discurso	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:em	_
+11-12	no	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	plenário	plenário	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:em	_
+14-15	da	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	Câmara	Câmara	PROPN	_	_	13	nmod	13:nmod:de	SpaceAfter=No
+17	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0003
+# text = Dima colocou o país em um caos.
+1	Dima	Dima	PROPN	_	_	2	nsubj	2:nsubj	_
+2	colocou	colocar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	país	país	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	caos	caos	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:em	SpaceAfter=No
+8	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = São 10 milhões de desempregados.
+1	São	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+2	10	10	NUM	_	NumType=Card	3	nummod	3:nummod	_
+3	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	0	root	0:root	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	desempregados	desempregado	NOUN	_	Gender=Masc|Number=Plur	3	nmod	3:nmod:de	SpaceAfter=No
+6	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = A decência haverá de se sobrepor a um governo moralmente desonesto.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	decência	decência	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj|6:nsubj	_
+3	haverá	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+4	de	de	ADP	_	_	6	mark	6:mark	_
+5	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	6	expl	6:expl	_
+6	sobrepor	sobrepor	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+7	a	a	ADP	_	_	9	case	9:case	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	governo	governo	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:a	_
+10	moralmente	moralmente	ADV	_	_	11	advmod	11:advmod	_
+11	desonesto	desonesto	ADJ	_	Gender=Masc|Number=Sing	9	amod	9:amod	SpaceAfter=No
+12	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0009
+# text = Isso é safadeza.
+1	Isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	3	nsubj	3:nsubj	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+3	safadeza	safadeza	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+4	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0011
+# text = Não tem nada de presidencialismo de coalizão.
+1	Não	não	ADV	_	_	2	advmod	2:advmod	_
+2	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	nada	nada	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	2	obj	2:obj	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	presidencialismo	presidencialismo	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	coalizão	coalizão	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	SpaceAfter=No
+8	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0013
+# text = Vossa Excelência locupletou-se da esperança dos brasileiros, do sonho dos jovens e é com muito orgulho que voto pelo impeachment, afirmou Sampaio.
+1	Vossa	vosso	DET	_	Gender=Fem|Number=Sing|Person=2|Poss=Yes|PronType=Prs	2	det	2:det	_
+2	Excelência	Excelência	PROPN	_	_	3	nsubj	3:nsubj	_
+3-4	locupletou-se	_	_	_	_	_	_	_	_
+3	locupletou	locupletar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	29	ccomp:speech	29:ccomp:speech	_
+4	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	3	expl	3:expl	_
+5-6	da	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	esperança	esperança	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:de	_
+8-9	dos	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	10:det	_
+10	brasileiros	brasileiro	NOUN	_	Gender=Masc|Number=Plur	7	nmod	7:nmod:de	SpaceAfter=No
+11	,	,	PUNCT	_	_	14	punct	14:punct	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	sonho	sonho	NOUN	_	Gender=Masc|Number=Sing	7	conj	3:obl:de|7:conj	_
+15-16	dos	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	17:det	_
+17	jovens	jovem	NOUN	_	Number=Plur	14	nmod	14:nmod:de	_
+18	e	e	CCONJ	_	_	24	cc	24:cc	_
+19	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	discourse	24:discourse	_
+20	com	com	ADP	_	_	22	case	22:case	_
+21	muito	muito	ADJ	_	Gender=Masc|Number=Sing	22	amod	22:amod	_
+22	orgulho	orgulho	NOUN	_	Gender=Masc|Number=Sing	24	obl	24:obl:com	_
+23	que	que	SCONJ	_	_	24	discourse	24:discourse	_
+24	voto	votar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	conj	3:conj:e|29:ccomp:speech	_
+25-26	pelo	_	_	_	_	_	_	_	_
+25	por	por	ADP	_	_	27	case	27:case	_
+26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	impeachment	impeachment	NOUN	_	Gender=Masc|Number=Sing	24	obl	24:obl:por	SpaceAfter=No
+28	,	,	PUNCT	_	_	3	punct	3:punct	_
+29	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+30	Sampaio	Sampaio	PROPN	_	_	29	nsubj	29:nsubj	SpaceAfter=No
+31	.	.	PUNCT	_	_	29	punct	29:punct	_
+
+# sent_id = S0015
+# text = Veja o discurso histórico do deputado federal Carlos Sampaio:
+1	Veja	ver	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	discurso	discurso	NOUN	_	Gender=Masc|Number=Sing	1	obj	1:obj	_
+4	histórico	histórico	ADJ	_	Gender=Masc|Number=Sing	3	amod	3:amod	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	_
+8	federal	federal	ADJ	_	Number=Sing	7	amod	7:amod	_
+9	Carlos	Carlos	PROPN	_	_	7	nmod	7:nmod	_
+10	Sampaio	Sampaio	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+11	:	:	PUNCT	_	_	1	punct	1:punct	_

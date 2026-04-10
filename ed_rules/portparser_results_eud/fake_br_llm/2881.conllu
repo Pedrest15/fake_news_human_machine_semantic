@@ -1,0 +1,643 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Exclusivo: Drone misterioso não identificado por radares fecha Congonhas e causa caos!
+1	Exclusivo	exclusivo	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+2	:	:	PUNCT	_	_	1	punct	1:punct	_
+3	Drone	drone	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	9:nsubj|12:nsubj	_
+4	misterioso	misterioso	ADJ	_	Gender=Masc|Number=Sing	3	amod	3:amod	_
+5	não	não	ADV	_	_	6	advmod	6:advmod	_
+6	identificado	identificar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	acl	3:acl	_
+7	por	por	ADP	_	_	8	case	8:case	_
+8	radares	radar	NOUN	_	Gender=Masc|Number=Plur	6	obl:agent	6:obl:agent	_
+9	fecha	fechar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	dep	1:dep	_
+10	Congonhas	Congonhas	PROPN	_	_	9	obj	9:obj	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	causa	causar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	conj	1:dep|9:conj:e	_
+13	caos	caos	NOUN	_	Gender=Masc|Number=Sing	12	obj	12:obj	SpaceAfter=No
+14	!	!	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0003
+# text = Passageiros desesperados e voos cancelados.
+1	Passageiros	passageiro	NOUN	_	Gender=Masc|Number=Plur	0	root	0:root	_
+2	desesperados	desesperado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	1	amod	1:amod	_
+3	e	e	CCONJ	_	_	4	cc	4:cc	_
+4	voos	voo	NOUN	_	Gender=Masc|Number=Plur	1	conj	1:conj:e	_
+5	cancelados	cancelar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	4	acl	4:acl	SpaceAfter=No
+6	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0005
+# text = Tecnologia avançada de drone invisível a radar teria sido usada para espionagem.
+1	Tecnologia	tecnologia	NOUN	_	Gender=Fem|Number=Sing	10	nsubj:pass	10:nsubj:pass	_
+2	avançada	avançado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	1	amod	1:amod	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	drone	drone	NOUN	_	Gender=Masc|Number=Sing	1	nmod	1:nmod:de	_
+5	invisível	invisível	ADJ	_	Number=Sing	4	amod	4:amod	_
+6	a	a	ADP	_	_	7	case	7:case	_
+7	radar	radar	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:a	_
+8	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	10	aux	10:aux	_
+9	sido	ser	AUX	_	Gender=Masc|Number=Sing|VerbForm=Part	10	aux:pass	10:aux:pass	_
+10	usada	usar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+11	para	para	ADP	_	_	12	case	12:case	_
+12	espionagem	espionagem	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:para	SpaceAfter=No
+13	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0007
+# text = SÃO PAULO - Um drone de tecnologia avançada, capaz de permanecer invisível aos radares, fechou o Aeroporto de Congonhas por mais de três horas na noite de domingo, gerando um verdadeiro caos para passageiros e companhias aéreas.
+1	SÃO	SÃO	PROPN	_	_	18	nsubj	18:nsubj	_
+2	PAULO	PAULO	PROPN	_	_	1	flat:name	1:flat:name	_
+3	-	-	PUNCT	_	_	1	punct	1:punct	_
+4	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	drone	drone	NOUN	_	Gender=Masc|Number=Sing	18	nsubj	18:nsubj	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	tecnologia	tecnologia	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	_
+8	avançada	avançado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	7	amod	7:amod	SpaceAfter=No
+9	,	,	PUNCT	_	_	10	punct	10:punct	_
+10	capaz	capaz	ADJ	_	Number=Sing	5	amod	5:amod	_
+11	de	de	ADP	_	_	12	mark	12:mark	_
+12	permanecer	permanecer	VERB	_	VerbForm=Inf	10	acl	10:acl:de	_
+13	invisível	invisível	ADJ	_	Number=Sing	12	xcomp	12:xcomp	_
+14-15	aos	_	_	_	_	_	_	_	_
+14	a	a	ADP	_	_	16	case	16:case	_
+15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	16:det	_
+16	radares	radar	NOUN	_	Gender=Masc|Number=Plur	13	obl	13:obl:a	SpaceAfter=No
+17	,	,	PUNCT	_	_	10	punct	10:punct	_
+18	fechou	fechar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	Aeroporto	Aeroporto	PROPN	_	_	18	obj	18:obj	_
+21	de	de	ADP	_	_	22	case	22:case	_
+22	Congonhas	Congonhas	PROPN	_	_	20	flat:name	20:flat:name	_
+23	por	por	ADP	_	_	27	case	27:case	_
+24	mais	mais	ADV	_	ExtPos=ADV	26	advmod	26:advmod	_
+25	de	de	ADP	_	_	24	fixed	24:fixed	_
+26	três	três	NUM	_	NumType=Card	27	nummod	27:nummod	_
+27	horas	hora	NOUN	_	Gender=Fem|Number=Plur	18	obl	18:obl:por	_
+28-29	na	_	_	_	_	_	_	_	_
+28	em	em	ADP	_	_	30	case	30:case	_
+29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	noite	noite	NOUN	_	Gender=Fem|Number=Sing	18	obl	18:obl:em	_
+31	de	de	ADP	_	_	32	case	32:case	_
+32	domingo	domingo	NOUN	_	Gender=Masc|Number=Sing	30	nmod	30:nmod:de	SpaceAfter=No
+33	,	,	PUNCT	_	_	34	punct	34:punct	_
+34	gerando	gerar	VERB	_	VerbForm=Ger	18	advcl	18:advcl	_
+35	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	37	det	37:det	_
+36	verdadeiro	verdadeiro	ADJ	_	Gender=Masc|Number=Sing	37	amod	37:amod	_
+37	caos	caos	NOUN	_	Gender=Masc|Number=Sing	34	obj	34:obj	_
+38	para	para	ADP	_	_	39	case	39:case|41:case	_
+39	passageiros	passageiro	NOUN	_	Gender=Masc|Number=Plur	34	obl	34:obl:para	_
+40	e	e	CCONJ	_	_	41	cc	41:cc	_
+41	companhias	companhia	NOUN	_	Gender=Fem|Number=Plur	39	conj	34:obl:para|39:conj:e	_
+42	aéreas	aéreo	ADJ	_	Gender=Fem|Number=Plur	41	amod	41:amod	SpaceAfter=No
+43	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0009
+# text = A presença do equipamento não identificado alterou o horário de pelo menos 50 voos e resultou em cancelamentos, deixando o saguão abarrotado de viajantes ansiosos e frustrados.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	presença	presença	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	8:nsubj|18:nsubj	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	equipamento	equipamento	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	_
+6	não	não	ADV	_	_	7	advmod	7:advmod	_
+7	identificado	identificar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	5	acl	5:acl	_
+8	alterou	alterar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	horário	horário	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	_
+11	de	de	ADP	_	_	16	case	16:case	_
+12-13	pelo	_	_	_	_	_	_	_	_
+12	por	por	ADP	_	ExtPos=ADV	15	advmod	15:advmod	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	fixed	12:fixed	_
+14	menos	menos	NOUN	_	Gender=Masc|Number=Sing	12	fixed	12:fixed	_
+15	50	50	NUM	_	NumType=Card	16	nummod	16:nummod	_
+16	voos	voo	NOUN	_	Gender=Masc|Number=Plur	10	nmod	10:nmod:de	_
+17	e	e	CCONJ	_	_	18	cc	18:cc	_
+18	resultou	resultar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	conj	8:conj:e	_
+19	em	em	ADP	_	_	20	case	20:case	_
+20	cancelamentos	cancelamento	NOUN	_	Gender=Masc|Number=Plur	18	obl	18:obl:em	SpaceAfter=No
+21	,	,	PUNCT	_	_	22	punct	22:punct	_
+22	deixando	deixar	VERB	_	VerbForm=Ger	8	advcl	8:advcl|18:advcl	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	saguão	saguão	NOUN	_	Gender=Masc|Number=Sing	22	obj	22:obj|25:nsubj	_
+25	abarrotado	abarrotado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	22	xcomp	22:xcomp	_
+26	de	de	ADP	_	_	27	case	27:case	_
+27	viajantes	viajante	NOUN	_	Number=Plur	25	obl	25:obl:de	_
+28	ansiosos	ansioso	ADJ	_	Gender=Masc|Number=Plur	27	amod	27:amod	_
+29	e	e	CCONJ	_	_	30	cc	30:cc	_
+30	frustrados	frustrado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	28	conj	27:amod|28:conj:e	SpaceAfter=No
+31	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0011
+# text = A Polícia Federal (PF) iniciou uma investigação sigilosa para descobrir não apenas quem pilotava o drone, mas também a origem e o propósito da tecnologia usada.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Polícia	Polícia	PROPN	_	_	7	nsubj	7:nsubj	_
+3	Federal	Federal	PROPN	_	_	2	flat:name	2:flat:name	_
+4	(	(	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+5	PF	PF	PROPN	_	_	2	appos	2:appos	SpaceAfter=No
+6	)	)	PUNCT	_	_	5	punct	5:punct	_
+7	iniciou	iniciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	investigação	investigação	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	_
+10	sigilosa	sigiloso	ADJ	_	Gender=Fem|Number=Sing	9	amod	9:amod	_
+11	para	para	ADP	_	_	12	mark	12:mark	_
+12	descobrir	descobrir	VERB	_	VerbForm=Inf	7	advcl	7:advcl:para	_
+13	não	não	ADV	_	_	14	advmod	14:advmod	_
+14	apenas	apenas	ADV	_	_	15	advmod	15:advmod	_
+15	quem	quem	PRON	_	PronType=Ind	12	obj	12:obj	_
+16	pilotava	pilotar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	15	acl:relcl	15:acl:relcl	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	drone	drone	NOUN	_	Gender=Masc|Number=Sing	16	obj	16:obj	SpaceAfter=No
+19	,	,	PUNCT	_	_	23	punct	23:punct	_
+20	mas	mas	CCONJ	_	_	23	cc	23:cc	_
+21	também	também	ADV	_	_	23	advmod	23:advmod	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	origem	origem	NOUN	_	Gender=Fem|Number=Sing	15	conj	12:obj|15:conj:mas	_
+24	e	e	CCONJ	_	_	26	cc	26:cc	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	propósito	propósito	NOUN	_	Gender=Masc|Number=Sing	23	conj	12:obj|23:conj:e	_
+27-28	da	_	_	_	_	_	_	_	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	tecnologia	tecnologia	NOUN	_	Gender=Fem|Number=Sing	23	nmod	23:nmod:de|26:nmod:de	_
+30	usada	usar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	29	acl	29:acl	SpaceAfter=No
+31	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0013
+# text = Especialistas em segurança aérea estão alarmados com a capacidade do drone de evitar detecção.
+1	Especialistas	especialista	NOUN	_	Number=Plur	6	nsubj	6:nsubj	_
+2	em	em	ADP	_	_	3	case	3:case	_
+3	segurança	segurança	NOUN	_	Number=Sing	1	nmod	1:nmod:em	_
+4	aérea	aéreo	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+5	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+6	alarmados	alarmado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	0	root	0:root	_
+7	com	com	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	capacidade	capacidade	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:com	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	drone	drone	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:de	_
+13	de	de	ADP	_	_	14	mark	14:mark	_
+14	evitar	evitar	VERB	_	VerbForm=Inf	9	acl	9:acl:de	_
+15	detecção	detecção	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	SpaceAfter=No
+16	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0015
+# text = Isso é inédito no Brasil.
+1	Isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	3	nsubj	3:nsubj	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+3	inédito	inédito	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	_
+4-5	no	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	Brasil	Brasil	PROPN	_	_	3	obl	3:obl:em	SpaceAfter=No
+7	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0017
+# text = Um drone com essa tecnologia pode ser usado para espionagem ou até mesmo para ataques terroristas, alertou o Dr. Marcos Almeida, especialista em drones e segurança.
+1	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	drone	drone	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj|8:nsubj:pass	_
+3	com	com	ADP	_	_	5	case	5:case	_
+4	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	5	det	5:det	_
+5	tecnologia	tecnologia	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:com	_
+6	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	ccomp:speech	18:ccomp:speech	_
+7	ser	ser	AUX	_	VerbForm=Inf	8	aux:pass	8:aux:pass	_
+8	usado	usar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	6	xcomp	6:xcomp	_
+9	para	para	ADP	_	_	10	case	10:case	_
+10	espionagem	espionagem	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:para	_
+11	ou	ou	CCONJ	_	_	15	cc	15:cc	_
+12	até	até	ADV	_	_	15	advmod	15:advmod	_
+13	mesmo	mesmo	ADV	_	_	15	advmod	15:advmod	_
+14	para	para	ADP	_	_	15	case	15:case	_
+15	ataques	ataque	NOUN	_	Gender=Masc|Number=Plur	10	conj	8:obl:para|10:conj:ou	_
+16	terroristas	terrorista	ADJ	_	Number=Plur	15	amod	15:amod	SpaceAfter=No
+17	,	,	PUNCT	_	_	6	punct	6:punct	_
+18	alertou	alertar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	Dr.	Dr.	NOUN	_	_	18	nsubj	18:nsubj	_
+21	Marcos	Marcos	PROPN	_	_	20	nmod	20:nmod	_
+22	Almeida	Almeida	PROPN	_	_	21	flat:name	21:flat:name	SpaceAfter=No
+23	,	,	PUNCT	_	_	24	punct	24:punct	_
+24	especialista	especialista	NOUN	_	Number=Sing	20	appos	20:appos	_
+25	em	em	ADP	_	_	26	case	26:case|28:case	_
+26	drones	drone	NOUN	_	Gender=Masc|Number=Plur	24	nmod	24:nmod:em	_
+27	e	e	CCONJ	_	_	28	cc	28:cc	_
+28	segurança	segurança	NOUN	_	Number=Sing	26	conj	24:nmod:em|26:conj:e	SpaceAfter=No
+29	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0019
+# text = O avistamento ocorreu por volta das 19h45, quando dois pilotos reportaram a presença do drone próximo à cabeceira da pista, do lado da Avenida Pedro Bueno.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	avistamento	avistamento	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	ocorreu	ocorrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	por	por	ADP	_	ExtPos=ADP	8	case	8:case	_
+5	volta	volta	NOUN	_	Gender=Fem|Number=Sing	4	fixed	4:fixed	_
+6-7	das	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	4	fixed	4:fixed	_
+7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	8:det	_
+8	19h45	19h45	NOUN	_	_	3	obl	3:obl:por_volta_de	SpaceAfter=No
+9	,	,	PUNCT	_	_	13	punct	13:punct	_
+10	quando	quando	SCONJ	_	_	13	advmod	13:advmod	_
+11	dois	dois	NUM	_	Gender=Masc|NumType=Card	12	nummod	12:nummod	_
+12	pilotos	piloto	NOUN	_	Gender=Masc|Number=Plur	13	nsubj	13:nsubj	_
+13	reportaram	reportar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	3	advcl	3:advcl	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	presença	presença	NOUN	_	Gender=Fem|Number=Sing	13	obj	13:obj	_
+16-17	do	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	drone	drone	NOUN	_	Gender=Masc|Number=Sing	15	nmod	15:nmod:de	_
+19	próximo	próximo	ADV	_	_	15	amod	15:amod	_
+20-21	à	_	_	_	_	_	_	_	_
+20	a	a	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	cabeceira	cabeceira	NOUN	_	Number=Sing	19	obl	19:obl:a	_
+23-24	da	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	pista	pista	NOUN	_	Gender=Fem|Number=Sing	22	nmod	22:nmod:de	SpaceAfter=No
+26	,	,	PUNCT	_	_	29	punct	29:punct	_
+27-28	do	_	_	_	_	_	_	_	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	29:det	_
+29	lado	lado	NOUN	_	Gender=Masc|Number=Sing	19	obl	19:obl:de	_
+30-31	da	_	_	_	_	_	_	_	_
+30	de	de	ADP	_	_	32	case	32:case	_
+31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	32:det	_
+32	Avenida	Avenida	PROPN	_	_	29	nmod	29:nmod:de	_
+33	Pedro	Pedro	PROPN	_	_	32	flat:name	32:flat:name	_
+34	Bueno	Bueno	PROPN	_	_	32	flat:name	32:flat:name	SpaceAfter=No
+35	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0021
+# text = A suspensão dos pousos e decolagens foi imediata, estendendo-se por três horas e 20 minutos.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	suspensão	suspensão	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	9:nsubj	_
+3-4	dos	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case|7:case	_
+4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	5:det	_
+5	pousos	pouso	NOUN	_	Gender=Masc|Number=Plur	2	nmod	2:nmod:de	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	decolagens	decolagem	NOUN	_	Gender=Fem|Number=Plur	5	conj	2:nmod:de|5:conj:e	_
+8	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	cop	9:cop	_
+9	imediata	imediato	ADJ	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11-12	estendendo-se	_	_	_	_	_	_	_	_
+11	estendendo	estender	VERB	_	VerbForm=Ger	9	advcl	9:advcl	_
+12	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	11	expl	11:expl	_
+13	por	por	ADP	_	_	15	case	15:case|18:case	_
+14	três	três	NUM	_	NumType=Card	15	nummod	15:nummod	_
+15	horas	hora	NOUN	_	Gender=Fem|Number=Plur	11	obl	11:obl:por	_
+16	e	e	CCONJ	_	_	18	cc	18:cc	_
+17	20	20	NUM	_	NumType=Card	18	nummod	18:nummod	_
+18	minutos	minuto	NOUN	_	Gender=Masc|Number=Plur	15	conj	11:obl:por|15:conj:e	SpaceAfter=No
+19	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0023
+# text = A Aeronáutica informou que 38 voos foram desviados para aeroportos como Guarulhos, Campinas e até mesmo para outros estados, enquanto 12 voos foram cancelados.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Aeronáutica	Aeronáutica	PROPN	_	_	3	nsubj	3:nsubj	_
+3	informou	informar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	8	mark	8:mark	_
+5	38	38	NUM	_	NumType=Card	6	nummod	6:nummod	_
+6	voos	voo	NOUN	_	Gender=Masc|Number=Plur	8	nsubj:pass	8:nsubj:pass	_
+7	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	8	aux:pass	8:aux:pass	_
+8	desviados	desviar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	3	ccomp	3:ccomp	_
+9	para	para	ADP	_	_	10	case	10:case	_
+10	aeroportos	aeroporto	NOUN	_	Gender=Masc|Number=Plur	8	obl	8:obl:para	_
+11	como	como	ADP	_	_	12	case	12:case|14:case	_
+12	Guarulhos	Guarulhos	PROPN	_	_	10	nmod	10:nmod:como	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	Campinas	Campinas	PROPN	_	_	12	conj	10:nmod:como|12:conj	_
+15	e	e	CCONJ	_	_	20	cc	20:cc	_
+16	até	até	ADV	_	_	20	advmod	20:advmod	_
+17	mesmo	mesmo	ADV	_	_	20	advmod	20:advmod	_
+18	para	para	ADP	_	_	20	case	20:case	_
+19	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	20	det	20:det	_
+20	estados	estado	NOUN	_	Gender=Masc|Number=Plur	10	conj	8:obl:para|10:conj:e	SpaceAfter=No
+21	,	,	PUNCT	_	_	26	punct	26:punct	_
+22	enquanto	enquanto	SCONJ	_	_	26	mark	26:mark	_
+23	12	12	NUM	_	NumType=Card	24	nummod	24:nummod	_
+24	voos	voo	NOUN	_	Gender=Masc|Number=Plur	26	nsubj:pass	26:nsubj:pass	_
+25	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	26	aux:pass	26:aux:pass	_
+26	cancelados	cancelar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	8	advcl	8:advcl:enquanto	SpaceAfter=No
+27	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0025
+# text = A tentativa de localizar o drone e seu operador utilizando um helicóptero da Polícia Militar foi infrutífera.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	tentativa	tentativa	NOUN	_	Gender=Fem|Number=Sing	18	nsubj	18:nsubj	_
+3	de	de	ADP	_	_	4	mark	4:mark	_
+4	localizar	localizar	VERB	_	VerbForm=Inf	2	acl	2:acl:de	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	drone	drone	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7	e	e	CCONJ	_	_	9	cc	9:cc	_
+8	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	9	det	9:det	_
+9	operador	operador	NOUN	_	Gender=Masc|Number=Sing	6	conj	4:obj|6:conj:e	_
+10	utilizando	utilizar	VERB	_	VerbForm=Ger	4	advcl	4:advcl	_
+11	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	helicóptero	helicóptero	NOUN	_	Gender=Masc|Number=Sing	10	obj	10:obj	_
+13-14	da	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	Polícia	Polícia	PROPN	_	_	12	nmod	12:nmod:de	_
+16	Militar	Militar	PROPN	_	_	15	flat:name	15:flat:name	_
+17	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	cop	18:cop	_
+18	infrutífera	infrutífero	ADJ	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+19	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0027
+# text = O sistema antidrone, recentemente chegado ao Brasil, ainda não estava operacional no momento do incidente.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	14:nsubj	_
+3	antidrone	antidrone	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod	SpaceAfter=No
+4	,	,	PUNCT	_	_	6	punct	6:punct	_
+5	recentemente	recentemente	ADV	_	_	6	advmod	6:advmod	_
+6	chegado	chegar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	2	acl	2:acl	_
+7-8	ao	_	_	_	_	_	_	_	_
+7	a	a	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	Brasil	Brasil	PROPN	_	_	6	obl	6:obl:a	SpaceAfter=No
+10	,	,	PUNCT	_	_	6	punct	6:punct	_
+11	ainda	ainda	ADV	_	_	14	advmod	14:advmod	_
+12	não	não	ADV	_	_	14	advmod	14:advmod	_
+13	estava	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	14	cop	14:cop	_
+14	operacional	operacional	ADJ	_	Number=Sing	0	root	0:root	_
+15-16	no	_	_	_	_	_	_	_	_
+15	em	em	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	momento	momento	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:em	_
+18-19	do	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	incidente	incidente	NOUN	_	Number=Sing	17	nmod	17:nmod:de	SpaceAfter=No
+21	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0029
+# text = O gerente de soluções da empresa Axis Communications, Paulo Santos, destacou que "o sistema poderia ter identificado o drone e seu operador rapidamente, evitando o transtorno e garantindo a segurança".
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	gerente	gerente	NOUN	_	Number=Sing	14	nsubj	14:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	soluções	solução	NOUN	_	Gender=Fem|Number=Plur	2	nmod	2:nmod:de	_
+5-6	da	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	empresa	empresa	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+8	Axis	Axis	PROPN	_	_	7	nmod	7:nmod	_
+9	Communications	Communications	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	Paulo	Paulo	PROPN	_	_	2	appos	2:appos	_
+12	Santos	Santos	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+13	,	,	PUNCT	_	_	11	punct	11:punct	_
+14	destacou	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+15	que	que	SCONJ	_	_	19	mark	19:mark	_
+16	"	"	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	19	nsubj	19:nsubj|21:nsubj	_
+19	poderia	poder	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	14	ccomp	14:ccomp	_
+20	ter	ter	AUX	_	VerbForm=Inf	21	aux	21:aux	_
+21	identificado	identificar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	19	xcomp	19:xcomp	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	drone	drone	NOUN	_	Gender=Masc|Number=Sing	21	obj	21:obj	_
+24	e	e	CCONJ	_	_	26	cc	26:cc	_
+25	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	26	det	26:det	_
+26	operador	operador	NOUN	_	Gender=Masc|Number=Sing	23	conj	21:obj|23:conj:e	_
+27	rapidamente	rapidamente	ADV	_	_	21	advmod	21:advmod	SpaceAfter=No
+28	,	,	PUNCT	_	_	29	punct	29:punct	_
+29	evitando	evitar	VERB	_	VerbForm=Ger	21	advcl	21:advcl	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	transtorno	transtorno	NOUN	_	Gender=Masc|Number=Sing	29	obj	29:obj	_
+32	e	e	CCONJ	_	_	33	cc	33:cc	_
+33	garantindo	garantir	VERB	_	VerbForm=Ger	29	conj	21:advcl|29:conj:e	_
+34	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	35:det	_
+35	segurança	segurança	NOUN	_	Number=Sing	33	obj	33:obj	SpaceAfter=No
+36	"	"	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+37	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0031
+# text = O impacto financeiro para as companhias aéreas foi estimado em R$ 2 milhões pela Associação Brasileira das Empresas Aéreas (Abear), considerando hospedagens e reacomodações de passageiros.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	impacto	impacto	NOUN	_	Gender=Masc|Number=Sing	9	nsubj:pass	9:nsubj:pass	_
+3	financeiro	financeiro	ADJ	_	Gender=Masc|Number=Sing	2	amod	2:amod	_
+4	para	para	ADP	_	_	6	case	6:case	_
+5	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	6:det	_
+6	companhias	companhia	NOUN	_	Gender=Fem|Number=Plur	2	nmod	2:nmod:para	_
+7	aéreas	aéreo	ADJ	_	Gender=Fem|Number=Plur	6	amod	6:amod	_
+8	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	aux:pass	9:aux:pass	_
+9	estimado	estimar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+10	em	em	ADP	_	_	13	case	13:case	_
+11	R$	R$	SYM	_	_	13	nmod	13:nmod	_
+12	2	2	NUM	_	NumType=Card	13	nummod	13:nummod	_
+13	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	9	obl	9:obl:em	_
+14-15	pela	_	_	_	_	_	_	_	_
+14	por	por	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	Associação	Associação	PROPN	_	_	9	obl:agent	9:obl:agent	_
+17	Brasileira	Brasileira	PROPN	_	_	16	flat:name	16:flat:name	_
+18-19	das	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	20:det	_
+20	Empresas	Empresas	PROPN	_	_	16	flat:name	16:flat:name	_
+21	Aéreas	Aéreas	PROPN	_	_	16	flat:name	16:flat:name	_
+22	(	(	PUNCT	_	_	23	punct	23:punct	SpaceAfter=No
+23	Abear	Abear	PROPN	_	_	16	appos	16:appos	SpaceAfter=No
+24	)	)	PUNCT	_	_	23	punct	23:punct	SpaceAfter=No
+25	,	,	PUNCT	_	_	26	punct	26:punct	_
+26	considerando	considerar	VERB	_	VerbForm=Ger	9	advcl	9:advcl	_
+27	hospedagens	hospedagem	NOUN	_	Gender=Fem|Number=Plur	26	obj	26:obj	_
+28	e	e	CCONJ	_	_	29	cc	29:cc	_
+29	reacomodações	reacomodação	NOUN	_	Gender=Fem|Number=Plur	27	conj	26:obj|27:conj:e	_
+30	de	de	ADP	_	_	31	case	31:case	_
+31	passageiros	passageiro	NOUN	_	Gender=Masc|Number=Plur	27	nmod	27:nmod:de|29:nmod:de	SpaceAfter=No
+32	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0033
+# text = O passageiro Vinícius Nascimento, que viajaria do Rio para São Paulo, relatou: O voo atrasou mais de duas horas e a falta de informações só piorou a situação.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	passageiro	passageiro	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	7:nsubj|15:nsubj	_
+3	Vinícius	Vinícius	PROPN	_	_	2	nmod	2:nmod	_
+4	Nascimento	Nascimento	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	7	punct	7:punct	_
+6	que	que	PRON	_	PronType=Rel	7	nsubj	2:ref	_
+7	viajaria	viajar	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	Rio	Rio	PROPN	_	_	7	obl	7:obl:de	_
+11	para	para	ADP	_	_	12	case	12:case	_
+12	São	São	PROPN	_	_	7	obl	7:obl:para	_
+13	Paulo	Paulo	PROPN	_	_	12	flat:name	12:flat:name	SpaceAfter=No
+14	,	,	PUNCT	_	_	7	punct	7:punct	_
+15	relatou	relatar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+16	:	:	PUNCT	_	_	19	punct	19:punct	_
+17	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	voo	voo	NOUN	_	Gender=Masc|Number=Sing	19	nsubj	19:nsubj	_
+19	atrasou	atrasar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	ccomp:speech	15:ccomp:speech	_
+20	mais	mais	ADV	_	ExtPos=ADV	22	advmod	22:advmod	_
+21	de	de	ADP	_	_	20	fixed	20:fixed	_
+22	duas	dois	NUM	_	Gender=Fem|NumType=Card	23	nummod	23:nummod	_
+23	horas	hora	NOUN	_	Gender=Fem|Number=Plur	19	obj	19:obj	_
+24	e	e	CCONJ	_	_	30	cc	30:cc	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	falta	falta	NOUN	_	Gender=Fem|Number=Sing	30	nsubj	30:nsubj	_
+27	de	de	ADP	_	_	28	case	28:case	_
+28	informações	informação	NOUN	_	Gender=Fem|Number=Plur	26	nmod	26:nmod:de	_
+29	só	só	ADV	_	_	30	advmod	30:advmod	_
+30	piorou	piorar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	conj	15:ccomp:speech|19:conj:e	_
+31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	32:det	_
+32	situação	situação	NOUN	_	Gender=Fem|Number=Sing	30	obj	30:obj	SpaceAfter=No
+33	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0035
+# text = Quando finalmente decolamos, ainda sobrevoamos a região por mais de uma hora antes de pousar.
+1	Quando	quando	SCONJ	_	_	3	mark	3:mark	_
+2	finalmente	finalmente	ADV	_	_	3	advmod	3:advmod	_
+3	decolamos	decolar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	6	advcl	6:advcl:quando	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	ainda	ainda	ADV	_	_	6	advmod	6:advmod	_
+6	sobrevoamos	sobrevoar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	região	região	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+9	por	por	ADP	_	_	13	case	13:case	_
+10	mais	mais	ADV	_	ExtPos=ADV	12	advmod	12:advmod	_
+11	de	de	ADP	_	_	10	fixed	10:fixed	_
+12	uma	um	NUM	_	Gender=Fem|NumType=Card	13	nummod	13:nummod	_
+13	hora	hora	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:por	_
+14	antes	antes	ADV	_	_	6	advmod	6:advmod	_
+15	de	de	ADP	_	_	16	mark	16:mark	_
+16	pousar	pousar	VERB	_	VerbForm=Inf	14	acl	14:acl:de	SpaceAfter=No
+17	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0037
+# text = Giovana Feix, de 23 anos, passou por uma experiência ainda mais dramática.
+1	Giovana	Giovana	PROPN	_	_	8	nsubj	8:nsubj	_
+2	Feix	Feix	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	23	23	NUM	_	NumType=Card	6	nummod	6:nummod	_
+6	anos	ano	NOUN	_	Gender=Masc|Number=Plur	1	nmod	1:nmod:de	SpaceAfter=No
+7	,	,	PUNCT	_	_	6	punct	6:punct	_
+8	passou	passar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	por	por	ADP	_	_	11	case	11:case	_
+10	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	experiência	experiência	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:por	_
+12	ainda	ainda	ADV	_	_	14	advmod	14:advmod	_
+13	mais	mais	ADV	_	_	14	advmod	14:advmod	_
+14	dramática	dramático	ADJ	_	Gender=Fem|Number=Sing	11	amod	11:amod	SpaceAfter=No
+15	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0039
+# text = Sua viagem de Curitiba para São Paulo incluiu um retorno inesperado ao Paraná após a aeronave não receber autorização para pousar.
+1	Sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	det	2:det	_
+2	viagem	viagem	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	8:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Curitiba	Curitiba	PROPN	_	_	2	nmod	2:nmod:de	_
+5	para	para	ADP	_	_	6	case	6:case	_
+6	São	São	PROPN	_	_	2	nmod	2:nmod:para	_
+7	Paulo	Paulo	PROPN	_	_	6	flat:name	6:flat:name	_
+8	incluiu	incluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	retorno	retorno	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	_
+11	inesperado	inesperado	ADJ	_	Gender=Masc|Number=Sing	10	amod	10:amod	_
+12-13	ao	_	_	_	_	_	_	_	_
+12	a	a	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	Paraná	Paraná	PROPN	_	_	10	nmod	10:nmod:a	_
+15	após	após	ADP	_	_	19	mark	19:mark	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	aeronave	aeronave	NOUN	_	Gender=Fem|Number=Sing	19	nsubj	19:nsubj	_
+18	não	não	ADV	_	_	19	advmod	19:advmod	_
+19	receber	receber	VERB	_	VerbForm=Inf	8	advcl	8:advcl:após	_
+20	autorização	autorização	NOUN	_	Gender=Fem|Number=Sing	19	obj	19:obj	_
+21	para	para	ADP	_	_	22	mark	22:mark	_
+22	pousar	pousar	VERB	_	VerbForm=Inf	20	acl	20:acl:para	SpaceAfter=No
+23	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0041
+# text = Ficamos sem saber o que estava acontecendo, presos no avião.
+1	Ficamos	ficar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	sem	sem	ADP	_	_	3	mark	3:mark	_
+3	saber	saber	VERB	_	VerbForm=Inf	1	xcomp	1:xcomp	_
+4	o	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	nsubj	7:nsubj	_
+5	que	que	PRON	_	PronType=Int	4	fixed	4:fixed	_
+6	estava	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	aux	7:aux	_
+7	acontecendo	acontecer	VERB	_	VerbForm=Ger	3	ccomp	3:ccomp	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	presos	preso	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	1	advcl	1:advcl	_
+10-11	no	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	avião	avião	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:em	SpaceAfter=No
+13	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0043
+# text = Depois de voltar, esperamos mais de uma hora para decolar novamente.
+1	Depois	depois	ADV	_	_	5	advmod	5:advmod	_
+2	de	de	ADP	_	_	3	mark	3:mark	_
+3	voltar	voltar	VERB	_	VerbForm=Inf	1	acl	1:acl:de	SpaceAfter=No
+4	,	,	PUNCT	_	_	1	punct	1:punct	_
+5	esperamos	esperar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	mais	mais	ADV	_	ExtPos=ADV	8	advmod	8:advmod	_
+7	de	de	ADP	_	_	6	fixed	6:fixed	_
+8	uma	um	NUM	_	Gender=Fem|NumType=Card	9	nummod	9:nummod	_
+9	hora	hora	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+10	para	para	ADP	_	_	11	mark	11:mark	_
+11	decolar	decolar	VERB	_	VerbForm=Inf	5	advcl	5:advcl:para	_
+12	novamente	novamente	ADV	_	_	11	advmod	11:advmod	SpaceAfter=No
+13	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0045
+# text = Foi um pesadelo.
+1	Foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	cop	3:cop	_
+2	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	pesadelo	pesadelo	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+4	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0047
+# text = A PF prometeu esclarecer o caso e identificar os responsáveis, mas especialistas questionam a eficácia das atuais regulamentações da Anac e pedem medidas mais rigorosas para controlar o uso de drones, especialmente aqueles com tecnologia capaz de evadir sistemas de radar.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	PF	PF	PROPN	_	_	3	nsubj	3:nsubj|4:nsubj|8:nsubj	_
+3	prometeu	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	esclarecer	esclarecer	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	caso	caso	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	identificar	identificar	VERB	_	VerbForm=Inf	4	conj	3:xcomp|4:conj:e	_
+9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	10:det	_
+10	responsáveis	responsávei	NOUN	_	Number=Plur	8	obj	8:obj	SpaceAfter=No
+11	,	,	PUNCT	_	_	14	punct	14:punct	_
+12	mas	mas	CCONJ	_	_	25	cc	25:cc	_
+13	especialistas	especialista	NOUN	_	Number=Plur	14	nsubj	14:nsubj	_
+14	questionam	questionar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	conj	3:conj:e	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	eficácia	eficácia	NOUN	_	Gender=Fem|Number=Sing	25	obj	25:obj	_
+17-18	das	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	20	case	20:case	_
+18	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	20:det	_
+19	atuais	atual	ADJ	_	Number=Plur	20	amod	20:amod	_
+20	regulamentações	regulamentação	NOUN	_	Gender=Fem|Number=Plur	16	nmod	16:nmod:de	_
+21-22	da	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	Anac	Anac	PROPN	_	_	20	nmod	20:nmod:de	_
+24	e	e	CCONJ	_	_	25	cc	25:cc	_
+25	pedem	pedir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	conj	3:conj:mas	_
+26	medidas	medida	NOUN	_	Gender=Fem|Number=Plur	25	obj	25:obj	_
+27	mais	mais	ADV	_	_	28	advmod	28:advmod	_
+28	rigorosas	rigoroso	ADJ	_	Gender=Fem|Number=Plur	26	amod	26:amod	_
+29	para	para	ADP	_	_	30	mark	30:mark	_
+30	controlar	controlar	VERB	_	VerbForm=Inf	26	acl	26:acl:para	_
+31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+32	uso	uso	NOUN	_	Gender=Masc|Number=Sing	30	obj	30:obj	_
+33	de	de	ADP	_	_	34	case	34:case	_
+34	drones	drone	NOUN	_	Gender=Masc|Number=Plur	32	nmod	32:nmod:de	SpaceAfter=No
+35	,	,	PUNCT	_	_	37	punct	37:punct	_
+36	especialmente	especialmente	ADV	_	_	37	advmod	37:advmod	_
+37	aqueles	aquele	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	32	appos	32:appos	_
+38	com	com	ADP	_	_	39	case	39:case	_
+39	tecnologia	tecnologia	NOUN	_	Gender=Fem|Number=Sing	37	nmod	37:nmod:com	_
+40	capaz	capaz	ADJ	_	Number=Sing	39	amod	39:amod	_
+41	de	de	ADP	_	_	42	mark	42:mark	_
+42	evadir	evadir	VERB	_	VerbForm=Inf	40	acl	40:acl:de	_
+43	sistemas	sistema	NOUN	_	Gender=Masc|Number=Plur	42	obj	42:obj	_
+44	de	de	ADP	_	_	45	case	45:case	_
+45	radar	radar	NOUN	_	Gender=Masc|Number=Sing	43	nmod	43:nmod:de	SpaceAfter=No
+46	.	.	PUNCT	_	_	3	punct	3:punct	_

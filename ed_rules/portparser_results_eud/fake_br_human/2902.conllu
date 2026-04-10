@@ -1,0 +1,264 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Sem governo, sem ministério e sem foro privilegiado.
+1	Sem	sem	ADP	_	_	2	case	2:case	_
+2	governo	governo	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+3	,	,	PUNCT	_	_	5	punct	5:punct	_
+4	sem	sem	ADP	_	_	5	case	5:case	_
+5	ministério	ministério	NOUN	_	Gender=Masc|Number=Sing	2	conj	2:conj:e	_
+6	e	e	CCONJ	_	_	8	cc	8:cc	_
+7	sem	sem	ADP	_	_	8	case	8:case	_
+8	foro	foro	NOUN	_	Gender=Masc|Number=Sing	2	conj	2:conj:e	_
+9	privilegiado	privilegiado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	8	amod	8:amod	SpaceAfter=No
+10	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Ele está a um passo da cadeia!.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	5:nsubj	_
+2	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+3	a	a	ADP	_	_	5	case	5:case	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	passo	passo	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+6-7	da	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	cadeia	cadeia	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	SpaceAfter=No
+9	!	!	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+10	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0005
+# text = Lula praticamente levou a ZERO suas chances de se tornar ministro e obter foro privilegiado.
+1	Lula	Lula	PROPN	_	_	3	nsubj	3:nsubj	_
+2	praticamente	praticamente	ADV	_	_	3	advmod	3:advmod	_
+3	levou	levar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	a	a	ADP	_	_	5	case	5:case	_
+5	ZERO	ZERO	PROPN	_	_	3	obl	3:obl:a	_
+6	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	7	det	7:det	_
+7	chances	chance	NOUN	_	Gender=Fem|Number=Plur	3	obj	3:obj	_
+8	de	de	ADP	_	_	10	mark	10:mark|13:mark	_
+9	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	10	expl	10:expl	_
+10	tornar	tornar	VERB	_	VerbForm=Inf	7	acl	7:acl:de	_
+11	ministro	ministro	NOUN	_	Gender=Masc|Number=Sing	10	xcomp	10:xcomp	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	obter	obter	VERB	_	VerbForm=Inf	10	conj	7:acl:de|10:conj:e	_
+14	foro	foro	NOUN	_	Gender=Masc|Number=Sing	13	obj	13:obj	_
+15	privilegiado	privilegiado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	14	amod	14:amod	SpaceAfter=No
+16	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = A derrota da presidente Dilma Rousseff na votação do impeachment na Câmara [ontem na Câmara] representa muito mais que uma derrota política para Lula.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	derrota	derrota	NOUN	_	Gender=Fem|Number=Sing	23	nsubj	23:nsubj	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	presidente	presidente	NOUN	_	Number=Sing	2	nmod	2:nmod:de	_
+6	Dilma	Dilma	PROPN	_	_	5	nmod	5:nmod	_
+7	Rousseff	Rousseff	PROPN	_	_	6	flat:name	6:flat:name	_
+8-9	na	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	votação	votação	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:em	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	impeachment	impeachment	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:de	_
+14-15	na	_	_	_	_	_	_	_	_
+14	em	em	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	Câmara	Câmara	PROPN	_	_	10	nmod	10:nmod:em	_
+17	[	[	PUNCT	_	_	18	punct	18:punct	SpaceAfter=No
+18	ontem	ontem	ADV	_	_	21	advmod	21:advmod	_
+19-20	na	_	_	_	_	_	_	_	_
+19	em	em	ADP	_	_	21	case	21:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	Câmara	Câmara	PROPN	_	_	10	nmod	10:nmod:em	SpaceAfter=No
+22	]	]	PUNCT	_	_	21	punct	21:punct	_
+23	representa	representar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+24	muito	muito	ADV	_	_	25	advmod	25:advmod	_
+25	mais	mais	ADV	_	ExtPos=ADV	23	advmod	23:advmod	_
+26	que	que	ADP	_	_	25	fixed	25:fixed	_
+27	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	derrota	derrota	NOUN	_	Gender=Fem|Number=Sing	23	advcl	23:advcl	_
+29	política	político	ADJ	_	Gender=Fem|Number=Sing	28	amod	28:amod	_
+30	para	para	ADP	_	_	31	case	31:case	_
+31	Lula	Lula	PROPN	_	_	28	nmod	28:nmod:para	SpaceAfter=No
+32	.	.	PUNCT	_	_	23	punct	23:punct	_
+
+# sent_id = S0009
+# text = Dilma será afastada por 180 dias e o ex-presidente Luiz Inácio Lula da Silva passa a ser um cidadão comum e poderá responder pelos crimes cometidos lá na " República de Curitiba".
+1	Dilma	Dilma	PROPN	_	_	3	nsubj:pass	3:nsubj:pass|23:nsubj|24:nsubj	_
+2	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	aux:pass	3:aux:pass	_
+3	afastada	afastar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+4	por	por	ADP	_	_	6	case	6:case	_
+5	180	180	NUM	_	NumType=Card	6	nummod	6:nummod	_
+6	dias	dia	NOUN	_	Gender=Masc|Number=Plur	3	obl	3:obl:por	_
+7	e	e	CCONJ	_	_	16	cc	16:cc	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	ex-presidente	ex-presidente	NOUN	_	Number=Sing	16	nsubj	16:nsubj|20:nsubj	_
+10	Luiz	Luiz	PROPN	_	_	9	nmod	9:nmod	_
+11	Inácio	Inácio	PROPN	_	_	10	flat:name	10:flat:name	_
+12	Lula	Lula	PROPN	_	_	10	flat:name	10:flat:name	_
+13-14	da	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	Silva	Silva	PROPN	_	_	10	flat:name	10:flat:name	_
+16	passa	passar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	3:conj:e	_
+17	a	a	ADP	_	_	20	mark	20:mark	_
+18	ser	ser	AUX	_	VerbForm=Inf	20	cop	20:cop	_
+19	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	cidadão	cidadão	NOUN	_	Gender=Masc|Number=Sing	16	xcomp	16:xcomp	_
+21	comum	comum	ADJ	_	Number=Sing	20	amod	20:amod	_
+22	e	e	CCONJ	_	_	23	cc	23:cc	_
+23	poderá	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	conj	3:conj:e	_
+24	responder	responder	VERB	_	VerbForm=Inf	23	xcomp	23:xcomp	_
+25-26	pelos	_	_	_	_	_	_	_	_
+25	por	por	ADP	_	_	27	case	27:case	_
+26	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	27:det	_
+27	crimes	crime	NOUN	_	Gender=Masc|Number=Plur	24	obl	24:obl:por	_
+28	cometidos	cometer	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	27	acl	27:acl	_
+29	lá	lá	ADV	_	_	28	advmod	28:advmod	_
+30-31	na	_	_	_	_	_	_	_	_
+30	em	em	ADP	_	_	33	case	33:case	_
+31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	33:det	_
+32	"	"	PUNCT	_	_	33	punct	33:punct	_
+33	República	República	PROPN	_	_	28	obl	28:obl:em	_
+34	de	de	ADP	_	_	35	case	35:case	_
+35	Curitiba	Curitiba	PROPN	_	_	33	flat:name	33:flat:name	SpaceAfter=No
+36	"	"	PUNCT	_	_	33	punct	33:punct	SpaceAfter=No
+37	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0011
+# text = Sérgio Moro poderá mandar prendê-lo a qualquer momento.
+1	Sérgio	Sérgio	PROPN	_	_	3	nsubj	3:nsubj|4:nsubj	_
+2	Moro	Moro	PROPN	_	_	1	flat:name	1:flat:name	_
+3	poderá	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+4	mandar	mandar	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+5-6	prendê-lo	_	_	_	_	_	_	_	_
+5	prender	prender	VERB	_	VerbForm=Inf	4	xcomp	4:xcomp	_
+6	lo	lo	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	obj	5:obj	_
+7	a	a	ADP	_	_	9	case	9:case	_
+8	qualquer	qualquer	DET	_	Number=Sing|PronType=Ind	9	det	9:det	_
+9	momento	momento	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:a	SpaceAfter=No
+10	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0013
+# text = E, pelo jeito, sobram motivos.
+1	E	e	CCONJ	_	_	7	cc	7:cc	SpaceAfter=No
+2	,	,	PUNCT	_	_	5	punct	5:punct	_
+3-4	pelo	_	_	_	_	_	_	_	_
+3	por	por	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	jeito	jeito	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:por	SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	5:punct	_
+7	sobram	sobrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	motivos	motivo	NOUN	_	Gender=Masc|Number=Plur	7	nsubj	7:nsubj	SpaceAfter=No
+9	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0015
+# text = Em delação recente, o ex-presidente da Andrade Gutierrez, Otávio Marques de Azevedo, disse que Lula intercedeu a favor da empresa em uma disputa de contrato na Venezuela.
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	delação	delação	NOUN	_	Gender=Fem|Number=Sing	17	obl	17:obl:em	_
+3	recente	recente	ADJ	_	Number=Sing	2	amod	2:amod	SpaceAfter=No
+4	,	,	PUNCT	_	_	2	punct	2:punct	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	ex-presidente	ex-presidente	NOUN	_	Number=Sing	17	nsubj	17:nsubj	_
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	Andrade	Andrade	PROPN	_	_	6	nmod	6:nmod:de	_
+10	Gutierrez	Gutierrez	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	Otávio	Otávio	PROPN	_	_	6	appos	6:appos	_
+13	Marques	Marques	PROPN	_	_	12	flat:name	12:flat:name	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	Azevedo	Azevedo	PROPN	_	_	12	flat:name	12:flat:name	SpaceAfter=No
+16	,	,	PUNCT	_	_	12	punct	12:punct	_
+17	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+18	que	que	SCONJ	_	_	20	mark	20:mark	_
+19	Lula	Lula	PROPN	_	_	20	nsubj	20:nsubj	_
+20	intercedeu	interceder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	ccomp	17:ccomp	_
+21	a	a	ADP	_	_	22	case	22:case	_
+22	favor	favor	NOUN	_	Gender=Masc|Number=Sing	20	obl	20:obl:a	_
+23-24	da	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	empresa	empresa	NOUN	_	Gender=Fem|Number=Sing	22	nmod	22:nmod:de	_
+26	em	em	ADP	_	_	28	case	28:case	_
+27	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	disputa	disputa	NOUN	_	Gender=Fem|Number=Sing	20	obl	20:obl:em	_
+29	de	de	ADP	_	_	30	case	30:case	_
+30	contrato	contrato	NOUN	_	Gender=Masc|Number=Sing	28	nmod	28:nmod:de	_
+31-32	na	_	_	_	_	_	_	_	_
+31	em	em	ADP	_	_	33	case	33:case	_
+32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	33:det	_
+33	Venezuela	Venezuela	PROPN	_	_	30	nmod	30:nmod:em	SpaceAfter=No
+34	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0017
+# text = De acordo com o executivo, Lula não recebeu propinas diretamente, porém, logo após sua intervenção, a Andrade Gutierrez acabou vencendo um concorrente italiano em uma disputa.
+1	De	de	ADP	_	_	2	case	2:case	_
+2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:de	_
+3	com	com	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	executivo	executivo	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:com	SpaceAfter=No
+6	,	,	PUNCT	_	_	2	punct	2:punct	_
+7	Lula	Lula	PROPN	_	_	9	nsubj	9:nsubj	_
+8	não	não	ADV	_	_	9	advmod	9:advmod	_
+9	recebeu	receber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	propinas	propina	NOUN	_	Gender=Fem|Number=Plur	9	obj	9:obj	_
+11	diretamente	diretamente	ADV	_	_	9	advmod	9:advmod	SpaceAfter=No
+12	,	,	PUNCT	_	_	23	punct	23:punct	_
+13	porém	porém	CCONJ	_	_	23	cc	23:cc	SpaceAfter=No
+14	,	,	PUNCT	_	_	18	punct	18:punct	_
+15	logo	logo	ADV	_	_	18	advmod	18:advmod	_
+16	após	após	ADP	_	_	18	case	18:case	_
+17	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	18	det	18:det	_
+18	intervenção	intervenção	NOUN	_	Gender=Fem|Number=Sing	23	obl	23:obl:após	SpaceAfter=No
+19	,	,	PUNCT	_	_	18	punct	18:punct	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	Andrade	Andrade	PROPN	_	_	23	nsubj	23:nsubj|24:nsubj	_
+22	Gutierrez	Gutierrez	PROPN	_	_	21	flat:name	21:flat:name	_
+23	acabou	acabar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	conj	9:conj:porém	_
+24	vencendo	vencer	VERB	_	VerbForm=Ger	23	xcomp	23:xcomp	_
+25	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	concorrente	concorrente	NOUN	_	Number=Sing	24	obj	24:obj	_
+27	italiano	italiano	ADJ	_	Gender=Masc|Number=Sing	26	amod	26:amod	_
+28	em	em	ADP	_	_	30	case	30:case	_
+29	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	disputa	disputa	NOUN	_	Gender=Fem|Number=Sing	24	obl	24:obl:em	SpaceAfter=No
+31	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0019
+# text = Ainda de acordo com a delação, o ex-tesoureiro do PT, João Vaccari Neto, exigiu 1% do valor total do contrato.
+1	Ainda	ainda	ADV	_	_	3	advmod	3:advmod	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:de	_
+4	com	com	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	delação	delação	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:com	SpaceAfter=No
+7	,	,	PUNCT	_	_	3	punct	3:punct	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	ex-tesoureiro	ex-tesoureiro	NOUN	_	Gender=Masc|Number=Sing	18	nsubj	18:nsubj	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	PT	PT	PROPN	_	_	9	nmod	9:nmod:de	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	João	João	PROPN	_	_	9	appos	9:appos	_
+15	Vaccari	Vaccari	PROPN	_	_	14	flat:name	14:flat:name	_
+16	Neto	Neto	PROPN	_	_	14	flat:name	14:flat:name	SpaceAfter=No
+17	,	,	PUNCT	_	_	14	punct	14:punct	_
+18	exigiu	exigir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+19	1	1	NUM	_	NumType=Card	20	nummod	20:nummod	SpaceAfter=No
+20	%	%	SYM	_	_	18	obj	18:obj	_
+21-22	do	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	valor	valor	NOUN	_	Gender=Masc|Number=Sing	20	nmod	20:nmod:de	_
+24	total	total	ADJ	_	Number=Sing	23	amod	23:amod	_
+25-26	do	_	_	_	_	_	_	_	_
+25	de	de	ADP	_	_	27	case	27:case	_
+26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	contrato	contrato	NOUN	_	Gender=Masc|Number=Sing	23	nmod	23:nmod:de	SpaceAfter=No
+28	.	.	PUNCT	_	_	18	punct	18:punct	_

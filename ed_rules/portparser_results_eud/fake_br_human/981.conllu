@@ -1,0 +1,163 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Ex-companheiro de David Beckham no Manchester United "torra" todo patrimônio e vira padre.
+1	Ex-companheiro	ex-companheiro	NOUN	_	Gender=Masc|Number=Sing	10	dislocated	10:dislocated	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	David	David	PROPN	_	_	1	nmod	1:nmod:de	_
+4	Beckham	Beckham	PROPN	_	_	3	flat:name	3:flat:name	_
+5-6	no	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Manchester	Manchester	PROPN	_	_	1	nmod	1:nmod:em	_
+8	United	United	PROPN	_	_	7	flat:name	7:flat:name	_
+9	"	"	PUNCT	_	_	1	punct	1:punct	SpaceAfter=No
+10	torra	torrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+11	"	"	PUNCT	_	_	10	punct	10:punct	_
+12	todo	todo	DET	_	Gender=Masc|Number=Sing|PronType=Ind	13	det	13:det	_
+13	patrimônio	patrimônio	NOUN	_	Gender=Masc|Number=Sing	10	obj	10:obj	_
+14	e	e	CCONJ	_	_	15	cc	15:cc	_
+15	vira	virar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	conj	10:conj:e	_
+16	padre	padre	NOUN	_	Gender=Masc|Number=Sing	15	xcomp	15:xcomp	SpaceAfter=No
+17	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0003
+# text = No último sábado Philip foi ordenado diácono pela Igreja Católica.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	4	case	4:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+3	último	último	ADJ	_	Gender=Masc|Number=Sing	4	amod	4:amod	_
+4	sábado	sábado	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:em	_
+5	Philip	Philip	PROPN	_	_	7	nsubj:pass	7:nsubj:pass|8:nsubj	_
+6	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	aux:pass	7:aux:pass	_
+7	ordenado	ordenar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+8	diácono	diácono	NOUN	_	Gender=Masc|Number=Sing	7	xcomp	7:xcomp	_
+9-10	pela	_	_	_	_	_	_	_	_
+9	por	por	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	Igreja	Igreja	PROPN	_	_	7	obl:agent	7:obl:agent	_
+12	Católica	Católica	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+13	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0005
+# text = Enquanto a maioria dos ex-jogadores se tornam técnicos ou comentaristas de TV e rádio, ele abandonou a carreira esportiva e resolveu investir na carreira espiritual.
+1	Enquanto	enquanto	SCONJ	_	_	8	mark	8:mark	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	maioria	maioria	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	8:nsubj|9:nsubj|11:nsubj	_
+4-5	dos	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	6:det	_
+6	ex-jogadores	ex-jogador	NOUN	_	Gender=Masc|Number=Plur	3	nmod	3:nmod:de	_
+7	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	8	expl	8:expl	_
+8	tornam	tornar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	advcl	18:advcl:enquanto|23:advcl:enquanto	_
+9	técnicos	técnico	NOUN	_	Gender=Masc|Number=Plur	8	xcomp	8:xcomp	_
+10	ou	ou	CCONJ	_	_	11	cc	11:cc	_
+11	comentaristas	comentarista	NOUN	_	Number=Plur	9	conj	8:xcomp|9:conj:ou	_
+12	de	de	ADP	_	_	13	case	13:case|15:case	_
+13	TV	televisão	NOUN	_	Abbr=Yes|Gender=Fem|Number=Sing	11	nmod	11:nmod:de	_
+14	e	e	CCONJ	_	_	15	cc	15:cc	_
+15	rádio	rádio	NOUN	_	Number=Sing	13	conj	11:nmod:de|13:conj:e	SpaceAfter=No
+16	,	,	PUNCT	_	_	8	punct	8:punct	_
+17	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	18	nsubj	18:nsubj|23:nsubj|24:nsubj	_
+18	abandonou	abandonar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	carreira	carreira	NOUN	_	Gender=Fem|Number=Sing	18	obj	18:obj	_
+21	esportiva	esportivo	ADJ	_	Gender=Fem|Number=Sing	20	amod	20:amod	_
+22	e	e	CCONJ	_	_	23	cc	23:cc	_
+23	resolveu	resolver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	conj	18:conj:e	_
+24	investir	investir	VERB	_	VerbForm=Inf	23	xcomp	23:xcomp	_
+25-26	na	_	_	_	_	_	_	_	_
+25	em	em	ADP	_	_	27	case	27:case	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	carreira	carreira	NOUN	_	Gender=Fem|Number=Sing	24	obl	24:obl:em	_
+28	espiritual	espiritual	ADJ	_	Number=Sing	27	amod	27:amod	SpaceAfter=No
+29	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0007
+# text = Aos 38 anos de idade, Philip foi ordenado pelo arcebispo de Dublin e agora faz parte da Ordem Dominicana.
+1-2	Aos	_	_	_	_	_	_	_	_
+1	A	a	ADP	_	_	4	case	4:case	_
+2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	4:det	_
+3	38	38	NUM	_	NumType=Card	4	nummod	4:nummod	_
+4	anos	ano	NOUN	_	Gender=Masc|Number=Plur	10	obl	10:obl:a	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	idade	idade	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:de	SpaceAfter=No
+7	,	,	PUNCT	_	_	4	punct	4:punct	_
+8	Philip	Philip	PROPN	_	_	10	nsubj:pass	10:nsubj:pass|18:nsubj	_
+9	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	aux:pass	10:aux:pass	_
+10	ordenado	ordenar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+11-12	pelo	_	_	_	_	_	_	_	_
+11	por	por	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	arcebispo	arcebispo	NOUN	_	Gender=Masc|Number=Sing	10	obl:agent	10:obl:agent	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	Dublin	Dublin	PROPN	_	_	13	nmod	13:nmod:de	_
+16	e	e	CCONJ	_	_	18	cc	18:cc	_
+17	agora	agora	ADV	_	_	18	advmod	18:advmod	_
+18	faz	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	conj	10:conj:e	_
+19	parte	parte	NOUN	_	Gender=Fem|Number=Sing	18	obj	18:obj	_
+20-21	da	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	Ordem	Ordem	PROPN	_	_	18	obl	18:obl:de	_
+23	Dominicana	Dominicana	PROPN	_	_	22	flat:name	22:flat:name	SpaceAfter=No
+24	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0009
+# text = Ex-companheiro de equipe de David Beckham e Ryan Giggs, ele chegou a ganhar cerca de R$ 2 milhões por ano, porém seus excessos o levaram a falência.
+1	Ex-companheiro	ex-companheiro	NOUN	_	Gender=Masc|Number=Sing	12	dislocated	12:dislocated	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	equipe	equipe	NOUN	_	Gender=Fem|Number=Sing	1	nmod	1:nmod:de	_
+4	de	de	ADP	_	_	5	case	5:case|8:case	_
+5	David	David	PROPN	_	_	1	nmod	1:nmod:de	_
+6	Beckham	Beckham	PROPN	_	_	5	flat:name	5:flat:name	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	Ryan	Ryan	PROPN	_	_	5	conj	1:nmod:de|5:conj:e	_
+9	Giggs	Giggs	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+10	,	,	PUNCT	_	_	1	punct	1:punct	_
+11	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	nsubj	12:nsubj|14:nsubj	_
+12	chegou	chegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+13	a	a	ADP	_	_	14	mark	14:mark	_
+14	ganhar	ganhar	VERB	_	VerbForm=Inf	12	xcomp	12:xcomp	_
+15	cerca	cerca	ADV	_	ExtPos=ADV	18	advmod	18:advmod	_
+16	de	de	ADP	_	_	15	fixed	15:fixed	_
+17	R$	R$	SYM	_	_	19	nmod	19:nmod	_
+18	2	2	NUM	_	NumType=Card	19	nummod	19:nummod	_
+19	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	14	obj	14:obj	_
+20	por	por	ADP	_	_	21	case	21:case	_
+21	ano	ano	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:por	SpaceAfter=No
+22	,	,	PUNCT	_	_	27	punct	27:punct	_
+23	porém	porém	CCONJ	_	_	27	cc	27:cc	_
+24	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	25	det	25:det	_
+25	excessos	excesso	NOUN	_	Gender=Masc|Number=Plur	27	nsubj	27:nsubj	_
+26	o	o	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	27	obj	27:obj	_
+27	levaram	levar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	12	conj	12:conj:porém	_
+28	a	a	ADP	_	_	29	case	29:case	_
+29	falência	falência	NOUN	_	Gender=Fem|Number=Sing	27	obl	27:obl:a	SpaceAfter=No
+30	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0011
+# text = Mulryne passou dois anos estudando filosofia na Itália, antes de fazer um curso de teologia de quatro anos em Belfast.
+1	Mulryne	Mulryne	PROPN	_	_	2	nsubj	2:nsubj	_
+2	passou	passar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	dois	dois	NUM	_	Gender=Masc|NumType=Card	4	nummod	4:nummod	_
+4	anos	ano	NOUN	_	Gender=Masc|Number=Plur	2	obj	2:obj	_
+5	estudando	estudar	VERB	_	VerbForm=Ger	2	advcl	2:advcl	_
+6	filosofia	filosofia	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+7-8	na	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	Itália	Itália	PROPN	_	_	5	obl	5:obl:em	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	antes	antes	ADV	_	_	2	advmod	2:advmod	_
+12	de	de	ADP	_	_	13	mark	13:mark	_
+13	fazer	fazer	VERB	_	VerbForm=Inf	11	acl	11:acl:de	_
+14	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	curso	curso	NOUN	_	Gender=Masc|Number=Sing	13	obj	13:obj	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	teologia	teologia	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:de	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	quatro	quatro	NUM	_	NumType=Card	20	nummod	20:nummod	_
+20	anos	ano	NOUN	_	Gender=Masc|Number=Plur	15	nmod	15:nmod:de	_
+21	em	em	ADP	_	_	22	case	22:case	_
+22	Belfast	Belfast	PROPN	_	_	13	obl	13:obl:em	SpaceAfter=No
+23	.	.	PUNCT	_	_	2	punct	2:punct	_

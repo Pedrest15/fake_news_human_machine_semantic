@@ -1,0 +1,334 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = URGENTE: Revelação bombástica sobre vacinas COVID-19! Uma mulher, que se identifica como Dra.
+1	URGENTE	URGENTE	PROPN	_	_	0	root	0:root	SpaceAfter=No
+2	:	:	PUNCT	_	_	3	punct	3:punct	_
+3	Revelação	revelação	NOUN	_	Gender=Fem|Number=Sing	1	dep	1:dep	_
+4	bombástica	bombástico	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+5	sobre	sobre	ADP	_	_	6	case	6:case	_
+6	vacinas	vacina	NOUN	_	Gender=Fem|Number=Plur	3	nmod	3:nmod:sobre	_
+7	COVID-19	covid-19	NUM	_	NumType=Card	6	nmod	6:nmod	SpaceAfter=No
+8	!	!	PUNCT	_	_	10	punct	10:punct	_
+9	Uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	mulher	mulher	NOUN	_	Gender=Fem|Number=Sing	3	appos	3:appos|14:nsubj	SpaceAfter=No
+11	,	,	PUNCT	_	_	14	punct	14:punct	_
+12	que	que	PRON	_	PronType=Rel	14	nsubj	10:ref	_
+13	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	14	expl	14:expl	_
+14	identifica	identificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	acl:relcl	10:acl:relcl	_
+15	como	como	ADP	_	_	16	case	16:case	_
+16	Dra.	Dra.	PUNCT	_	_	14	obl	14:obl:como	_
+
+# sent_id = S0003
+# text = Marina Lopes, afirma ter encontrado fibrinas anômalas em seu sangue após a vacinação, alegando riscos graves e irreversíveis.
+1	Marina	Marina	PROPN	_	_	4	nsubj	4:nsubj|6:nsubj	_
+2	Lopes	Lopes	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	1	punct	1:punct	_
+4	afirma	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	ter	ter	AUX	_	VerbForm=Inf	6	aux	6:aux	_
+6	encontrado	encontrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	4	xcomp	4:xcomp	_
+7	fibrinas	fibrina	NOUN	_	Gender=Fem|Number=Plur	6	obj	6:obj	_
+8	anômalas	anômalo	ADJ	_	Gender=Fem|Number=Plur	7	amod	7:amod	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	11	det	11:det	_
+11	sangue	sangue	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:em	_
+12	após	após	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	vacinação	vacinação	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:após	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	alegando	alegar	VERB	_	VerbForm=Ger	6	advcl	6:advcl	_
+17	riscos	risco	NOUN	_	Gender=Masc|Number=Plur	16	obj	16:obj	_
+18	graves	grave	ADJ	_	Number=Plur	17	amod	17:amod	_
+19	e	e	CCONJ	_	_	20	cc	20:cc	_
+20	irreversíveis	irreversível	ADJ	_	Number=Plur	18	conj	17:amod|18:conj:e	SpaceAfter=No
+21	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0005
+# text = Ela alerta os pais para não vacinarem seus filhos, afirmando que crianças possuem imunidade natural superior.
+1	Ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj	_
+2	alerta	alertar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	4:det	_
+4	pais	pai	NOUN	_	Gender=Masc|Number=Plur	2	obj	2:obj	_
+5	para	para	ADP	_	_	7	mark	7:mark	_
+6	não	não	ADV	_	_	7	advmod	7:advmod	_
+7	vacinarem	vacinar	VERB	_	Number=Plur|Person=3|VerbForm=Inf	2	advcl	2:advcl:para	_
+8	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	9	det	9:det	_
+9	filhos	filho	NOUN	_	Gender=Masc|Number=Plur	7	obj	7:obj	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	afirmando	afirmar	VERB	_	VerbForm=Ger	2	advcl	2:advcl	_
+12	que	que	SCONJ	_	_	14	mark	14:mark	_
+13	crianças	criança	NOUN	_	Gender=Fem|Number=Plur	14	nsubj	14:nsubj	_
+14	possuem	possuir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	ccomp	11:ccomp	_
+15	imunidade	imunidade	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	_
+16	natural	natural	ADJ	_	Number=Sing	15	amod	15:amod	_
+17	superior	superior	ADJ	_	Number=Sing	15	amod	15:amod	SpaceAfter=No
+18	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0007
+# text = O vídeo, cheio de detalhes alarmantes, tem se espalhado rapidamente pelo WhatsApp.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	11:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	cheio	cheio	ADJ	_	Gender=Masc|Number=Sing	2	amod	2:amod	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	detalhes	detalhe	NOUN	_	Gender=Masc|Number=Plur	4	obl	4:obl:de	_
+7	alarmantes	alarmante	ADJ	_	Number=Plur	6	amod	6:amod	SpaceAfter=No
+8	,	,	PUNCT	_	_	4	punct	4:punct	_
+9	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux	11:aux	_
+10	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	11	expl	11:expl	_
+11	espalhado	espalhar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+12	rapidamente	rapidamente	ADV	_	_	11	advmod	11:advmod	_
+13-14	pelo	_	_	_	_	_	_	_	_
+13	por	por	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	WhatsApp	WhatsApp	PROPN	_	_	11	obl	11:obl:por	SpaceAfter=No
+16	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0009
+# text = A Dra.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Dra.	Dra.	PUNCT	_	_	0	root	0:root	_
+
+# sent_id = S0011
+# text = Marina Lopes diz ter utilizado um microscópio de última geração para identificar essas fibrinas, que seriam resultado direto da proteína spiker presente na vacina.
+1	Marina	Marina	PROPN	_	_	3	nsubj	3:nsubj|5:nsubj	_
+2	Lopes	Lopes	PROPN	_	_	1	flat:name	1:flat:name	_
+3	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	ter	ter	AUX	_	VerbForm=Inf	5	aux	5:aux	_
+5	utilizado	utilizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	3	xcomp	3:xcomp	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	microscópio	microscópio	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	última	último	ADJ	_	Gender=Fem|Number=Sing	10	amod	10:amod	_
+10	geração	geração	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:de	_
+11	para	para	ADP	_	_	12	mark	12:mark	_
+12	identificar	identificar	VERB	_	VerbForm=Inf	5	advcl	5:advcl:para	_
+13	essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	14	det	14:det	_
+14	fibrinas	fibrina	NOUN	_	Gender=Fem|Number=Plur	12	obj	12:obj|18:nsubj	SpaceAfter=No
+15	,	,	PUNCT	_	_	18	punct	18:punct	_
+16	que	que	PRON	_	PronType=Rel	18	nsubj	14:ref	_
+17	seriam	ser	AUX	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	18	cop	18:cop	_
+18	resultado	resultado	NOUN	_	Gender=Masc|Number=Sing	14	acl:relcl	14:acl:relcl	_
+19	direto	direto	ADJ	_	Gender=Masc|Number=Sing	18	amod	18:amod	_
+20-21	da	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	proteína	proteína	NOUN	_	Gender=Fem|Number=Sing	18	nmod	18:nmod:de	_
+23	spiker	spiker	X	_	Foreign=Yes	22	nmod	22:nmod	_
+24	presente	presente	ADJ	_	Number=Sing	22	amod	22:amod	_
+25-26	na	_	_	_	_	_	_	_	_
+25	em	em	ADP	_	_	27	case	27:case	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	vacina	vacina	NOUN	_	Gender=Fem|Number=Sing	24	obl	24:obl:em	SpaceAfter=No
+28	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0013
+# text = Segundo ela, essas fibrinas podem provocar coágulos sanguíneos perigosos, afetando a saúde a longo prazo.
+1	Segundo	segundo	ADP	_	_	2	case	2:case	_
+2	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	6	obl	6:obl:segundo	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	5	det	5:det	_
+5	fibrinas	fibrina	NOUN	_	Gender=Fem|Number=Plur	6	nsubj	6:nsubj|7:nsubj	_
+6	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	provocar	provocar	VERB	_	VerbForm=Inf	6	xcomp	6:xcomp	_
+8	coágulos	coágulo	NOUN	_	Gender=Masc|Number=Plur	7	obj	7:obj	_
+9	sanguíneos	sanguíneo	ADJ	_	Gender=Masc|Number=Plur	8	amod	8:amod	_
+10	perigosos	perigoso	ADJ	_	Gender=Masc|Number=Plur	8	amod	8:amod	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	afetando	afetar	VERB	_	VerbForm=Ger	7	advcl	7:advcl	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+15	a	a	ADP	_	_	17	case	17:case	_
+16	longo	longo	ADJ	_	Gender=Masc|Number=Sing	17	amod	17:amod	_
+17	prazo	prazo	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:a	SpaceAfter=No
+18	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0015
+# text = Em resposta, o Dr.
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	resposta	resposta	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+5	Dr.	Dr.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0017
+# text = Walter Moisés Tobias Braga, hematologista renomado do Hospital Emílio Ribas, refuta as alegações, mas o público permanece preocupado.
+1	Walter	Walter	PROPN	_	_	14	nsubj	14:nsubj	_
+2	Moisés	Moisés	PROPN	_	_	1	flat:name	1:flat:name	_
+3	Tobias	Tobias	PROPN	_	_	1	flat:name	1:flat:name	_
+4	Braga	Braga	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	hematologista	hematologista	NOUN	_	Number=Sing	1	appos	1:appos	_
+7	renomado	renomado	ADJ	_	Gender=Masc|Number=Sing	6	amod	6:amod	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	Hospital	Hospital	PROPN	_	_	6	nmod	6:nmod:de	_
+11	Emílio	Emílio	PROPN	_	_	10	flat:name	10:flat:name	_
+12	Ribas	Ribas	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+13	,	,	PUNCT	_	_	6	punct	6:punct	_
+14	refuta	refutar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+15	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	16:det	_
+16	alegações	alegação	NOUN	_	Gender=Fem|Number=Plur	14	obj	14:obj	SpaceAfter=No
+17	,	,	PUNCT	_	_	21	punct	21:punct	_
+18	mas	mas	CCONJ	_	_	21	cc	21:cc	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	público	público	NOUN	_	Gender=Masc|Number=Sing	21	nsubj	21:nsubj|22:nsubj	_
+21	permanece	permanecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	conj	14:conj:mas	_
+22	preocupado	preocupado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	21	xcomp	21:xcomp	SpaceAfter=No
+23	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0019
+# text = A ANVISA emitiu uma nota afirmando que a observação de fibrinas requer equipamentos especializados e que as vacinas passaram por testes rigorosos, não apresentando riscos relacionados a eventos trombóticos.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	ANVISA	ANVISA	PROPN	_	_	3	nsubj	3:nsubj	_
+3	emitiu	emitir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	nota	nota	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+6	afirmando	afirmar	VERB	_	VerbForm=Ger	3	advcl	3:advcl	_
+7	que	que	SCONJ	_	_	12	mark	12:mark	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	observação	observação	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	12:nsubj	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	fibrinas	fibrina	NOUN	_	Gender=Fem|Number=Plur	9	nmod	9:nmod:de	_
+12	requer	requerer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	ccomp	6:ccomp	_
+13	equipamentos	equipamento	NOUN	_	Gender=Masc|Number=Plur	12	obj	12:obj	_
+14	especializados	especializado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	13	amod	13:amod	_
+15	e	e	CCONJ	_	_	19	cc	19:cc	_
+16	que	que	SCONJ	_	_	19	mark	19:mark	_
+17	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	18:det	_
+18	vacinas	vacina	NOUN	_	Gender=Fem|Number=Plur	19	nsubj	19:nsubj	_
+19	passaram	passar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	12	conj	6:ccomp|12:conj:e	_
+20	por	por	ADP	_	_	21	case	21:case	_
+21	testes	teste	NOUN	_	Gender=Masc|Number=Plur	19	obl	19:obl:por	_
+22	rigorosos	rigoroso	ADJ	_	Gender=Masc|Number=Plur	21	amod	21:amod	SpaceAfter=No
+23	,	,	PUNCT	_	_	25	punct	25:punct	_
+24	não	não	ADV	_	_	25	advmod	25:advmod	_
+25	apresentando	apresentar	VERB	_	VerbForm=Ger	19	advcl	19:advcl	_
+26	riscos	risco	NOUN	_	Gender=Masc|Number=Plur	25	obj	25:obj	_
+27	relacionados	relacionar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	26	acl	26:acl	_
+28	a	a	ADP	_	_	29	case	29:case	_
+29	eventos	evento	NOUN	_	Gender=Masc|Number=Plur	27	obl	27:obl:a	_
+30	trombóticos	trombótico	ADJ	_	Gender=Masc|Number=Plur	29	amod	29:amod	SpaceAfter=No
+31	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0021
+# text = A Pfizer Brasil, em um comunicado oficial, reafirma a segurança da vacina em crianças de 5 a 11 anos, destacando resultados positivos de seus estudos clínicos fase 1/2/3 conduzidos em quatro países.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Pfizer	Pfizer	PROPN	_	_	10	nsubj	10:nsubj	_
+3	Brasil	Brasil	PROPN	_	_	2	flat:name	2:flat:name	SpaceAfter=No
+4	,	,	PUNCT	_	_	7	punct	7:punct	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	comunicado	comunicado	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:em	_
+8	oficial	oficial	ADJ	_	Number=Sing	7	amod	7:amod	SpaceAfter=No
+9	,	,	PUNCT	_	_	7	punct	7:punct	_
+10	reafirma	reafirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	segurança	segurança	NOUN	_	Number=Sing	10	obj	10:obj	_
+13-14	da	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	vacina	vacina	NOUN	_	Gender=Fem|Number=Sing	12	nmod	12:nmod:de	_
+16	em	em	ADP	_	_	17	case	17:case	_
+17	crianças	criança	NOUN	_	Gender=Fem|Number=Plur	12	nmod	12:nmod:em	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	5	5	NUM	_	NumType=Card	17	nummod	17:nummod	_
+20	a	a	ADP	_	_	21	case	21:case	_
+21	11	11	NUM	_	NumType=Card	19	nummod	19:nummod	_
+22	anos	ano	NOUN	_	Gender=Masc|Number=Plur	17	nmod	17:nmod	SpaceAfter=No
+23	,	,	PUNCT	_	_	24	punct	24:punct	_
+24	destacando	destacar	VERB	_	VerbForm=Ger	10	advcl	10:advcl	_
+25	resultados	resultado	NOUN	_	Gender=Masc|Number=Plur	24	obj	24:obj	_
+26	positivos	positivo	ADJ	_	Gender=Masc|Number=Plur	25	amod	25:amod	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	29	det	29:det	_
+29	estudos	estudo	NOUN	_	Gender=Masc|Number=Plur	25	nmod	25:nmod:de	_
+30	clínicos	clínico	ADJ	_	Gender=Masc|Number=Plur	29	amod	29:amod	_
+31	fase	fase	NOUN	_	Gender=Fem|Number=Sing	29	nmod	29:nmod	_
+32	1/2/3	1/2/3	NUM	_	NumType=Card	31	nmod	31:nmod	_
+33	conduzidos	conduzir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	29	acl	29:acl	_
+34	em	em	ADP	_	_	36	case	36:case	_
+35	quatro	quatro	NUM	_	NumType=Card	36	nummod	36:nummod	_
+36	países	país	NOUN	_	Gender=Masc|Number=Plur	33	obl	33:obl:em	SpaceAfter=No
+37	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0023
+# text = No entanto, a tensão cresce à medida que teorias contrárias se proliferam nas redes sociais.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	ExtPos=CCONJ	7	cc	7:cc	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	1:fixed	_
+3	entanto	entanto	NOUN	_	Gender=Masc|Number=Sing	1	fixed	1:fixed	SpaceAfter=No
+4	,	,	PUNCT	_	_	1	punct	1:punct	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	tensão	tensão	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj	_
+7	cresce	crescer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8-9	à	_	_	_	_	_	_	_	_
+8	a	a	ADP	_	ExtPos=SCONJ	15	mark	15:mark	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	fixed	8:fixed	_
+10	medida	medida	NOUN	_	Gender=Fem|Number=Sing	8	fixed	8:fixed	_
+11	que	que	SCONJ	_	_	8	fixed	8:fixed	_
+12	teorias	teoria	NOUN	_	Gender=Fem|Number=Plur	15	nsubj	15:nsubj	_
+13	contrárias	contrário	ADJ	_	Gender=Fem|Number=Plur	12	amod	12:amod	_
+14	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	15	expl	15:expl	_
+15	proliferam	proliferar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	advcl	7:advcl:a_a_medida_que	_
+16-17	nas	_	_	_	_	_	_	_	_
+16	em	em	ADP	_	_	18	case	18:case	_
+17	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	18:det	_
+18	redes	rede	NOUN	_	Gender=Fem|Number=Plur	15	obl	15:obl:em	_
+19	sociais	social	ADJ	_	Number=Plur	18	amod	18:amod	SpaceAfter=No
+20	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0025
+# text = Pais e especialistas divergem sobre a necessidade da vacinação infantil, com muitos se apoiando nas declarações da Dra.
+1	Pais	pai	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	4:nsubj	_
+2	e	e	CCONJ	_	_	3	cc	3:cc	_
+3	especialistas	especialista	NOUN	_	Number=Plur	1	conj	1:conj:e|4:nsubj	_
+4	divergem	divergir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	sobre	sobre	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	necessidade	necessidade	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:sobre	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	vacinação	vacinação	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:de	_
+11	infantil	infantil	ADJ	_	Number=Sing	10	amod	10:amod	SpaceAfter=No
+12	,	,	PUNCT	_	_	16	punct	16:punct	_
+13	com	com	ADP	_	_	14	case	14:case	_
+14	muitos	muito	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	16	obl	16:obl:com	_
+15	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	16	expl	16:expl	_
+16	apoiando	apoiar	VERB	_	VerbForm=Ger	4	advcl	4:advcl	_
+17-18	nas	_	_	_	_	_	_	_	_
+17	em	em	ADP	_	_	19	case	19:case	_
+18	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	19:det	_
+19	declarações	declaração	NOUN	_	Gender=Fem|Number=Plur	16	obl	16:obl:em	_
+20-21	da	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	Dra.	Dra.	PUNCT	_	_	19	nmod	19:nmod:de	_
+
+# sent_id = S0027
+# text = Marina Lopes.
+1	Marina	Marina	PROPN	_	_	0	root	0:root	_
+2	Lopes	Lopes	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0029
+# text = A batalha pela verdade se intensifica, enquanto a comunidade médica busca tranquilizar a população.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	batalha	batalha	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj	_
+3-4	pela	_	_	_	_	_	_	_	_
+3	por	por	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	verdade	verdade	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:por	_
+6	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	7	expl	7:expl	_
+7	intensifica	intensificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+8	,	,	PUNCT	_	_	13	punct	13:punct	_
+9	enquanto	enquanto	SCONJ	_	_	13	mark	13:mark	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	comunidade	comunidade	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	13:nsubj|14:nsubj	_
+12	médica	médico	ADJ	_	Gender=Fem|Number=Sing	11	amod	11:amod	_
+13	busca	buscar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	advcl	7:advcl:enquanto	_
+14	tranquilizar	tranquilizar	VERB	_	VerbForm=Inf	13	xcomp	13:xcomp	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	população	população	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	SpaceAfter=No
+17	.	.	PUNCT	_	_	7	punct	7:punct	_

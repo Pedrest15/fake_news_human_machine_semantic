@@ -1,0 +1,126 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Temer e Cunha Vídeo mostra uma linda amizade que vem de longa data.
+1	Temer	Temer	PROPN	_	_	5	nsubj	5:nsubj	_
+2	e	e	CCONJ	_	_	3	cc	3:cc	_
+3	Cunha	Cunha	PROPN	_	_	1	conj	1:conj:e|5:nsubj	_
+4	Vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	1	nsubj	1:nsubj|3:nsubj	_
+5	mostra	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+7	linda	lindo	ADJ	_	Gender=Fem|Number=Sing	8	amod	8:amod	_
+8	amizade	amizade	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj|10:nsubj	_
+9	que	que	PRON	_	PronType=Rel	10	nsubj	8:ref	_
+10	vem	vir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	8:acl:relcl	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	longa	longo	ADJ	_	Gender=Fem|Number=Sing	13	amod	13:amod	_
+13	data	data	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:de	SpaceAfter=No
+14	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0003
+# text = Um vídeo que está circulando nas redes sociais mostra o Presidente Michel Temer rasgando elogios para Eduardo Cunha.
+1	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	5:nsubj|10:nsubj	_
+3	que	que	PRON	_	PronType=Rel	5	nsubj	2:ref	_
+4	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	5:aux	_
+5	circulando	circular	VERB	_	VerbForm=Ger	2	acl:relcl	2:acl:relcl	_
+6-7	nas	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	8:det	_
+8	redes	rede	NOUN	_	Gender=Fem|Number=Plur	5	obl	5:obl:em	_
+9	sociais	social	ADJ	_	Number=Plur	8	amod	8:amod	_
+10	mostra	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	Presidente	Presidente	PROPN	_	_	10	obj	10:obj|15:nsubj	_
+13	Michel	Michel	PROPN	_	_	12	nmod	12:nmod	_
+14	Temer	Temer	PROPN	_	_	12	flat:name	12:flat:name	_
+15	rasgando	rasgar	VERB	_	VerbForm=Ger	10	xcomp	10:xcomp	_
+16	elogios	elogio	NOUN	_	Gender=Masc|Number=Plur	15	obj	15:obj	_
+17	para	para	ADP	_	_	18	case	18:case	_
+18	Eduardo	Eduardo	PROPN	_	_	16	nmod	16:nmod:para	_
+19	Cunha	Cunha	PROPN	_	_	18	flat:name	18:flat:name	SpaceAfter=No
+20	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0005
+# text = Ninguém desconhece as qualidades do Eduardo.
+1	Ninguém	ninguém	PRON	_	Number=Sing|PronType=Ind	2	nsubj	2:nsubj	_
+2	desconhece	desconhecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	4:det	_
+4	qualidades	qualidade	NOUN	_	Gender=Fem|Number=Plur	2	obj	2:obj	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Eduardo	Eduardo	PROPN	_	_	4	nmod	4:nmod:de	SpaceAfter=No
+8	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0007
+# text = Se você quiser dar uma tarefa das mais complicadas para o deputado, ele as simplifica [...] Cunha se manifesta através da fé.
+1	Se	se	SCONJ	_	_	3	mark	3:mark	_
+2	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	3	nsubj	3:nsubj|4:nsubj	_
+3	quiser	querer	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	17	advcl	17:advcl:se	_
+4	dar	dar	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	tarefa	tarefa	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+7-8	das	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	as	o	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Dem	6	nmod	6:nmod:de	_
+9	mais	mais	ADV	_	_	10	advmod	10:advmod	_
+10	complicadas	complicado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	8	amod	8:amod	_
+11	para	para	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:para	SpaceAfter=No
+14	,	,	PUNCT	_	_	3	punct	3:punct	_
+15	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	nsubj	17:nsubj	_
+16	as	o	PRON	_	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	17	obj	17:obj	_
+17	simplifica	simplificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+18	[	[	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+19	.	.	PUNCT	_	_	24	parataxis	24:parataxis	SpaceAfter=No
+20	..	..	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+21	]	]	PUNCT	_	_	19	punct	19:punct	_
+22	Cunha	Cunha	PROPN	_	_	24	nsubj	24:nsubj	_
+23	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	24	expl	24:expl	_
+24	manifesta	manifestar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	parataxis	17:parataxis	_
+25	através	através	ADV	_	_	24	advmod	24:advmod	_
+26-27	da	_	_	_	_	_	_	_	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	fé	fé	NOUN	_	Gender=Fem|Number=Sing	25	obl	25:obl:de	SpaceAfter=No
+29	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0009
+# text = As tarefas difíceis eu entrego à fé do Eduardo Cunha diz Temer.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	tarefas	tarefa	NOUN	_	Gender=Fem|Number=Plur	5	obj	5:obj	_
+3	difíceis	difícil	ADJ	_	Number=Plur	2	amod	2:amod	_
+4	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	5:nsubj	_
+5	entrego	entregar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	13	ccomp:speech	13:ccomp:speech	_
+6-7	à	_	_	_	_	_	_	_	_
+6	a	a	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	fé	fé	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:a	_
+9-10	do	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	Eduardo	Eduardo	PROPN	_	_	8	nmod	8:nmod:de	_
+12	Cunha	Cunha	PROPN	_	_	11	flat:name	11:flat:name	_
+13	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+14	Temer	Temer	PROPN	_	_	13	nsubj	13:nsubj	SpaceAfter=No
+15	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0011
+# text = Pelo jeito, a cumplicidade desses dois vem de longa data!
+1-2	Pelo	_	_	_	_	_	_	_	_
+1	Por	por	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	jeito	jeito	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:por	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	cumplicidade	cumplicidade	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	10:nsubj	_
+7-8	desses	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	9	det	9:det	_
+9	dois	dois	NUM	_	Gender=Masc|NumType=Card	6	nmod	6:nmod:de	_
+10	vem	vir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	longa	longo	ADJ	_	Gender=Fem|Number=Sing	13	amod	13:amod	_
+13	data	data	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:de	SpaceAfter=No
+14	!	!	PUNCT	_	_	10	punct	10:punct	_

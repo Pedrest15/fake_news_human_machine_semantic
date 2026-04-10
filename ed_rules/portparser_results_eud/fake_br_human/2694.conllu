@@ -1,0 +1,161 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Dilma diz que quer voltar e consultar a população sobre novas eleições presidenciais.
+1	Dilma	Dilma	PROPN	_	_	2	nsubj	2:nsubj	_
+2	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	4	mark	4:mark	_
+4	quer	querer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	2:ccomp	_
+5	voltar	voltar	VERB	_	VerbForm=Inf	4	xcomp	4:xcomp	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	consultar	consultar	VERB	_	VerbForm=Inf	5	conj	4:xcomp|5:conj:e	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	população	população	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	_
+10	sobre	sobre	ADP	_	_	12	case	12:case	_
+11	novas	novo	ADJ	_	Gender=Fem|Number=Plur	12	amod	12:amod	_
+12	eleições	eleição	NOUN	_	Gender=Fem|Number=Plur	7	obl	7:obl:sobre	_
+13	presidenciais	presidencial	ADJ	_	Number=Plur	12	amod	12:amod	SpaceAfter=No
+14	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = "Será necessário consultar a população para remontar um "pacto" que vinha desde a Constituição de 1988 e foi rompido com o processo de impeachment", disse Dilma em entrevista exibida pela TV Brasil.
+1	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	Será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	cop	3:cop	_
+3	necessário	necessário	ADJ	_	Gender=Masc|Number=Sing	30	ccomp:speech	30:ccomp:speech	_
+4	consultar	consultar	VERB	_	VerbForm=Inf	3	csubj	3:csubj	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	população	população	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+7	para	para	ADP	_	_	8	mark	8:mark	_
+8	remontar	remontar	VERB	_	VerbForm=Inf	4	advcl	4:advcl:para	_
+9	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+10	"	"	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+11	pacto	pacto	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj|14:nsubj|22:nsubj:pass	SpaceAfter=No
+12	"	"	PUNCT	_	_	11	punct	11:punct	_
+13	que	que	PRON	_	PronType=Rel	14	nsubj	11:ref	_
+14	vinha	vir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	11	acl:relcl	11:acl:relcl	_
+15	desde	desde	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	Constituição	Constituição	PROPN	_	_	14	obl	14:obl:desde	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	1988	1988	NUM	_	NumType=Card	17	nmod	17:nmod:de	_
+20	e	e	CCONJ	_	_	22	cc	22:cc	_
+21	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	aux:pass	22:aux:pass	_
+22	rompido	romper	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	14	conj	11:acl:relcl|14:conj:e	_
+23	com	com	ADP	_	_	25	case	25:case	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	processo	processo	NOUN	_	Gender=Masc|Number=Sing	22	obl	22:obl:com	_
+26	de	de	ADP	_	_	27	case	27:case	_
+27	impeachment	impeachment	NOUN	_	Gender=Masc|Number=Sing	25	nmod	25:nmod:de	SpaceAfter=No
+28	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+29	,	,	PUNCT	_	_	3	punct	3:punct	_
+30	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+31	Dilma	Dilma	PROPN	_	_	30	nsubj	30:nsubj	_
+32	em	em	ADP	_	_	33	case	33:case	_
+33	entrevista	entrevista	NOUN	_	Gender=Fem|Number=Sing	30	obl	30:obl:em	_
+34	exibida	exibir	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	33	acl	33:acl	_
+35-36	pela	_	_	_	_	_	_	_	_
+35	por	por	ADP	_	_	37	case	37:case	_
+36	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	37:det	_
+37	TV	TV	PROPN	_	_	34	obl:agent	34:obl:agent	_
+38	Brasil	Brasil	PROPN	_	_	37	flat:name	37:flat:name	SpaceAfter=No
+39	.	.	PUNCT	_	_	30	punct	30:punct	_
+
+# sent_id = S0005
+# text = A consulta deverá ser feita para "lavar e enxaguar essa lambança, que está sendo o governo Temer".
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	consulta	consulta	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj|5:nsubj:pass	_
+3	deverá	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+4	ser	ser	AUX	_	VerbForm=Inf	5	aux:pass	5:aux:pass	_
+5	feita	fazer	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	3	xcomp	3:xcomp	_
+6	para	para	ADP	_	_	8	mark	8:mark|10:mark	_
+7	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	lavar	lavar	VERB	_	VerbForm=Inf	5	advcl	5:advcl:para	_
+9	e	e	CCONJ	_	_	10	cc	10:cc	_
+10	enxaguar	enxaguar	VERB	_	VerbForm=Inf	8	conj	5:advcl:para|8:conj:e	_
+11	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	12	det	12:det	_
+12	lambança	lambança	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj|10:obj|18:nsubj	SpaceAfter=No
+13	,	,	PUNCT	_	_	18	punct	18:punct	_
+14	que	que	PRON	_	PronType=Rel	18	nsubj	12:ref	_
+15	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux	18:aux	_
+16	sendo	ser	AUX	_	VerbForm=Ger	18	cop	18:cop	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	governo	governo	NOUN	_	Gender=Masc|Number=Sing	12	acl:relcl	12:acl:relcl	_
+19	Temer	Temer	PROPN	_	_	18	nmod	18:nmod	SpaceAfter=No
+20	"	"	PUNCT	_	_	18	punct	18:punct	SpaceAfter=No
+21	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = A petista não disse como e quando seria feita esta consulta popular.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	petista	petista	NOUN	_	Number=Sing	4	nsubj	4:nsubj	_
+3	não	não	ADV	_	_	4	advmod	4:advmod	_
+4	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	como	como	ADV	_	_	9	advmod	9:advmod	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	quando	quando	ADV	_	_	5	conj	5:conj:e|9:advmod	_
+8	seria	ser	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	9	aux:pass	9:aux:pass	_
+9	feita	fazer	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	4	ccomp	4:ccomp	_
+10	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	11	det	11:det	_
+11	consulta	consulta	NOUN	_	Gender=Fem|Number=Sing	9	nsubj:pass	9:nsubj:pass	_
+12	popular	popular	ADJ	_	Number=Sing	11	amod	11:amod	SpaceAfter=No
+13	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0009
+# text = Durante a última campanha nas eleições de 2014, Dilma também prometeu mundos e fundos!
+1	Durante	durante	ADP	_	_	4	case	4:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+3	última	último	ADJ	_	Gender=Fem|Number=Sing	4	amod	4:amod	_
+4	campanha	campanha	NOUN	_	Gender=Fem|Number=Sing	13	obl	13:obl:durante	_
+5-6	nas	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	7:det	_
+7	eleições	eleição	NOUN	_	Gender=Fem|Number=Plur	4	nmod	4:nmod:em	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	2014	2014	NUM	_	NumType=Card	7	nmod	7:nmod:de	SpaceAfter=No
+10	,	,	PUNCT	_	_	4	punct	4:punct	_
+11	Dilma	Dilma	PROPN	_	_	13	nsubj	13:nsubj	_
+12	também	também	ADV	_	_	13	advmod	13:advmod	_
+13	prometeu	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	mundos	mundo	NOUN	_	Gender=Masc|Number=Plur	13	obj	13:obj	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	fundos	fundo	NOUN	_	Gender=Masc|Number=Plur	14	conj	13:obj|14:conj:e	SpaceAfter=No
+17	!	!	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0011
+# text = Depois que venceu e tomou posse do cargo, ela se esqueceu de tudo que havia prometido.
+1	Depois	depois	ADV	_	ExtPos=SCONJ	3	mark	3:mark|5:mark	_
+2	que	que	SCONJ	_	_	1	fixed	1:fixed	_
+3	venceu	vencer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	advcl	13:advcl:depois_que	_
+4	e	e	CCONJ	_	_	5	cc	5:cc	_
+5	tomou	tomar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	3:conj:e|13:advcl:depois_que	_
+6	posse	posse	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	cargo	cargo	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de	SpaceAfter=No
+10	,	,	PUNCT	_	_	3	punct	3:punct	_
+11	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	13	nsubj	13:nsubj	_
+12	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	13	expl	13:expl	_
+13	esqueceu	esquecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	tudo	tudo	PRON	_	PronType=Ind	13	obl	13:obl:de|18:obj	_
+16	que	que	PRON	_	PronType=Rel	18	obj	15:ref	_
+17	havia	haver	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	18	aux	18:aux	_
+18	prometido	prometer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	15	acl:relcl	15:acl:relcl	SpaceAfter=No
+19	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0013
+# text = Será que dá pra acreditar nessa senhora dessa vez?
+1	Será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	discourse	3:discourse	_
+2	que	que	SCONJ	_	_	3	discourse	3:discourse	_
+3	dá	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	pra	para	ADP	_	_	5	mark	5:mark	_
+5	acreditar	acreditar	VERB	_	VerbForm=Inf	3	csubj	3:csubj	_
+6-7	nessa	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	8	det	8:det	_
+8	senhora	senhor	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:em	_
+9-10	dessa	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	11	det	11:det	_
+11	vez	vez	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	SpaceAfter=No
+12	?	?	PUNCT	_	_	3	punct	3:punct	_

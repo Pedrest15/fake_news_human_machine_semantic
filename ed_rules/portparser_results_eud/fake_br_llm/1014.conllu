@@ -1,0 +1,607 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Nova York, a cidade que nunca dorme, está repleta de novidades que desafiam a realidade.
+1	Nova	Nova	PROPN	_	_	11	nsubj	11:nsubj	_
+2	York	York	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	5	punct	5:punct	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	cidade	cidade	NOUN	_	Gender=Fem|Number=Sing	1	appos	1:appos|8:nsubj	_
+6	que	que	PRON	_	PronType=Rel	8	nsubj	5:ref	_
+7	nunca	nunca	ADV	_	_	8	advmod	8:advmod	_
+8	dorme	dormir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	5:acl:relcl	SpaceAfter=No
+9	,	,	PUNCT	_	_	5	punct	5:punct	_
+10	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	11:cop	_
+11	repleta	repleto	ADJ	_	Gender=Fem|Number=Sing	0	root	0:root	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	novidades	novidade	NOUN	_	Gender=Fem|Number=Plur	11	obl	11:obl:de|15:nsubj	_
+14	que	que	PRON	_	PronType=Rel	15	nsubj	13:ref	_
+15	desafiam	desafiar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	acl:relcl	13:acl:relcl	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	realidade	realidade	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	SpaceAfter=No
+18	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0003
+# text = Turistas brasileiros invadiram a Big Apple como nunca antes: em 2015, mais de 2 milhões de brasileiros visitaram a cidade, um recorde impressionante que triplicou em comparação com 2008.
+1	Turistas	turista	NOUN	_	Number=Plur	3	nsubj	3:nsubj	_
+2	brasileiros	brasileiro	ADJ	_	Gender=Masc|Number=Plur	1	amod	1:amod	_
+3	invadiram	invadir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	Big	Big	PROPN	_	_	3	obj	3:obj	_
+6	Apple	Apple	PROPN	_	_	5	flat:name	5:flat:name	_
+7	como	como	ADP	_	_	9	case	9:case	_
+8	nunca	nunca	ADV	_	_	9	advmod	9:advmod	_
+9	antes	antes	ADV	_	_	3	advmod	3:advmod	SpaceAfter=No
+10	:	:	PUNCT	_	_	20	punct	20:punct	_
+11	em	em	ADP	_	_	12	case	12:case	_
+12	2015	2015	NUM	_	NumType=Card	20	obl	20:obl:em	SpaceAfter=No
+13	,	,	PUNCT	_	_	12	punct	12:punct	_
+14	mais	mais	ADV	_	ExtPos=ADV	16	advmod	16:advmod	_
+15	de	de	ADP	_	_	14	fixed	14:fixed	_
+16	2	2	NUM	_	NumType=Card	17	nummod	17:nummod	_
+17	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	20	nsubj	20:nsubj	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	brasileiros	brasileiro	NOUN	_	Gender=Masc|Number=Plur	17	nmod	17:nmod:de	_
+20	visitaram	visitar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	3	conj	3:conj	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	cidade	cidade	NOUN	_	Gender=Fem|Number=Sing	20	obj	20:obj	SpaceAfter=No
+23	,	,	PUNCT	_	_	25	punct	25:punct	_
+24	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	recorde	recorde	NOUN	_	Number=Sing	20	parataxis	20:parataxis|28:nsubj	_
+26	impressionante	impressionante	ADJ	_	Number=Sing	25	amod	25:amod	_
+27	que	que	PRON	_	PronType=Rel	28	nsubj	25:ref	_
+28	triplicou	triplicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	25	acl:relcl	25:acl:relcl	_
+29	em	em	ADP	_	_	30	case	30:case	_
+30	comparação	comparação	NOUN	_	Gender=Fem|Number=Sing	28	obl	28:obl:em	_
+31	com	com	ADP	_	_	32	case	32:case	_
+32	2008	2008	NUM	_	NumType=Card	30	nmod	30:nmod:com	SpaceAfter=No
+33	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0005
+# text = Mas o que atrai tantos visitantes?
+1	Mas	mas	CCONJ	_	_	4	cc	4:cc	_
+2	o	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	nsubj	4:nsubj	_
+3	que	que	PRON	_	PronType=Int	2	fixed	2:fixed	_
+4	atrai	atrair	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	tantos	tanto	DET	_	Gender=Masc|Number=Plur|PronType=Ind	6	det	6:det	_
+6	visitantes	visitante	NOUN	_	Number=Plur	4	obj	4:obj	SpaceAfter=No
+7	?	?	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0007
+# text = Além das atrações tradicionais, Nova York agora oferece experiências únicas que beiram o inacreditável.
+1	Além	além	ADV	_	_	10	advmod	10:advmod	_
+2-3	das	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	4:det	_
+4	atrações	atração	NOUN	_	Gender=Fem|Number=Plur	1	obl	1:obl:de	_
+5	tradicionais	tradicional	ADJ	_	Number=Plur	4	amod	4:amod	SpaceAfter=No
+6	,	,	PUNCT	_	_	1	punct	1:punct	_
+7	Nova	Nova	PROPN	_	_	10	nsubj	10:nsubj	_
+8	York	York	PROPN	_	_	7	flat:name	7:flat:name	_
+9	agora	agora	ADV	_	_	10	advmod	10:advmod	_
+10	oferece	oferecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+11	experiências	experiência	NOUN	_	Gender=Fem|Number=Plur	10	obj	10:obj|14:nsubj	_
+12	únicas	único	ADJ	_	Gender=Fem|Number=Plur	11	amod	11:amod	_
+13	que	que	PRON	_	PronType=Rel	14	nsubj	11:ref	_
+14	beiram	beirar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	11:acl:relcl	_
+15	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	14	obj	14:obj	_
+16	inacreditável	inacreditável	ADJ	_	Number=Sing	15	amod	15:amod	SpaceAfter=No
+17	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0009
+# text = A Estátua da Liberdade não é mais apenas um monumento histórico.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Estátua	Estátua	PROPN	_	_	11	nsubj	11:nsubj	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	Liberdade	Liberdade	PROPN	_	_	2	flat:name	2:flat:name	_
+6	não	não	ADV	_	_	11	advmod	11:advmod	_
+7	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	11:cop	_
+8	mais	mais	ADV	_	_	11	advmod	11:advmod	_
+9	apenas	apenas	ADV	_	_	11	advmod	11:advmod	_
+10	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	monumento	monumento	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+12	histórico	histórico	ADJ	_	Gender=Masc|Number=Sing	11	amod	11:amod	SpaceAfter=No
+13	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0011
+# text = Recentemente, foi descoberto um compartimento secreto no pedestal, que supostamente guarda tesouros deixados por imigrantes famosos como Charles Chaplin e Sigmund Freud.
+1	Recentemente	recentemente	ADV	_	_	4	advmod	4:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	descoberto	descobrir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	compartimento	compartimento	NOUN	_	Gender=Masc|Number=Sing	4	nsubj:pass	4:nsubj:pass|14:nsubj	_
+7	secreto	secreto	ADJ	_	Gender=Masc|Number=Sing	6	amod	6:amod	_
+8-9	no	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	pedestal	pedestal	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:em	SpaceAfter=No
+11	,	,	PUNCT	_	_	14	punct	14:punct	_
+12	que	que	PRON	_	PronType=Rel	14	nsubj	6:ref	_
+13	supostamente	supostamente	ADV	_	_	14	advmod	14:advmod	_
+14	guarda	guardar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl:relcl	6:acl:relcl	_
+15	tesouros	tesouro	NOUN	_	Gender=Masc|Number=Plur	14	obj	14:obj	_
+16	deixados	deixar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	15	acl	15:acl	_
+17	por	por	ADP	_	_	18	case	18:case	_
+18	imigrantes	imigrante	NOUN	_	Number=Plur	16	obl:agent	16:obl:agent	_
+19	famosos	famoso	ADJ	_	Gender=Masc|Number=Plur	18	amod	18:amod	_
+20	como	como	ADP	_	_	21	case	21:case|24:case	_
+21	Charles	Charles	PROPN	_	_	18	nmod	18:nmod:como	_
+22	Chaplin	Chaplin	PROPN	_	_	21	flat:name	21:flat:name	_
+23	e	e	CCONJ	_	_	24	cc	24:cc	_
+24	Sigmund	Sigmund	PROPN	_	_	21	conj	18:nmod:como|21:conj:e	_
+25	Freud	Freud	PROPN	_	_	24	flat:name	24:flat:name	SpaceAfter=No
+26	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0013
+# text = Por apenas US$ 25, turistas podem ter acesso exclusivo a essa nova área misteriosa.
+1	Por	por	ADP	_	_	3	case	3:case	_
+2	apenas	apenas	ADV	_	_	3	advmod	3:advmod	_
+3	US$	US$	SYM	_	_	7	obl	7:obl:por	_
+4	25	25	NUM	_	NumType=Card	3	nummod	3:nummod	SpaceAfter=No
+5	,	,	PUNCT	_	_	3	punct	3:punct	_
+6	turistas	turista	NOUN	_	Number=Plur	7	nsubj	7:nsubj|8:nsubj	_
+7	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	ter	ter	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+9	acesso	acesso	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	_
+10	exclusivo	exclusivo	ADJ	_	Gender=Masc|Number=Sing	9	amod	9:amod	_
+11	a	a	ADP	_	_	14	case	14:case	_
+12	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	14	det	14:det	_
+13	nova	novo	ADJ	_	Gender=Fem|Number=Sing	14	amod	14:amod	_
+14	área	área	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:a	_
+15	misteriosa	misterioso	ADJ	_	Gender=Fem|Number=Sing	14	amod	14:amod	SpaceAfter=No
+16	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0015
+# text = No Harlem, o Apollo Theater não só revelou lendas como Ella Fitzgerald e Jimi Hendrix, mas agora é palco de um evento semanal ainda mais surpreendente: a "Noite dos Talentos Alienígenas".
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	Harlem	Harlem	PROPN	_	_	10	obl	10:obl:em	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	Apollo	Apollo	PROPN	_	_	10	nsubj	10:nsubj|22:nsubj	_
+7	Theater	Theater	PROPN	_	_	6	flat:name	6:flat:name	_
+8	não	não	ADV	_	_	9	advmod	9:advmod	_
+9	só	só	ADV	_	_	10	advmod	10:advmod	_
+10	revelou	revelar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+11	lendas	lenda	NOUN	_	Gender=Fem|Number=Plur	10	obj	10:obj	_
+12	como	como	ADP	_	_	13	case	13:case|16:case	_
+13	Ella	Ella	PROPN	_	_	11	nmod	11:nmod:como	_
+14	Fitzgerald	Fitzgerald	PROPN	_	_	13	flat:name	13:flat:name	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	Jimi	Jimi	PROPN	_	_	13	conj	11:nmod:como|13:conj:e	_
+17	Hendrix	Hendrix	PROPN	_	_	16	flat:name	16:flat:name	SpaceAfter=No
+18	,	,	PUNCT	_	_	22	punct	22:punct	_
+19	mas	mas	CCONJ	_	_	22	cc	22:cc	_
+20	agora	agora	ADV	_	_	22	advmod	22:advmod	_
+21	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	cop	22:cop	_
+22	palco	palco	NOUN	_	Gender=Masc|Number=Sing	10	conj	10:conj:mas	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	evento	evento	NOUN	_	Gender=Masc|Number=Sing	22	nmod	22:nmod:de	_
+26	semanal	semanal	ADJ	_	Number=Sing	25	amod	25:amod	_
+27	ainda	ainda	ADV	_	_	29	advmod	29:advmod	_
+28	mais	mais	ADV	_	_	29	advmod	29:advmod	_
+29	surpreendente	surpreendente	ADJ	_	Number=Sing	25	amod	25:amod	SpaceAfter=No
+30	:	:	PUNCT	_	_	33	punct	33:punct	_
+31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	33:det	_
+32	"	"	PUNCT	_	_	33	punct	33:punct	SpaceAfter=No
+33	Noite	Noite	PROPN	_	_	25	appos	25:appos	_
+34-35	dos	_	_	_	_	_	_	_	_
+34	de	de	ADP	_	_	36	case	36:case	_
+35	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	36	det	36:det	_
+36	Talentos	Talentos	PROPN	_	_	33	flat:name	33:flat:name	_
+37	Alienígenas	Alienígenas	PROPN	_	_	33	flat:name	33:flat:name	SpaceAfter=No
+38	"	"	PUNCT	_	_	33	punct	33:punct	SpaceAfter=No
+39	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0017
+# text = Sim, você leu certo.
+1	Sim	sim	ADV	_	_	4	discourse	4:discourse	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	4	nsubj	4:nsubj	_
+4	leu	ler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	certo	certo	ADJ	_	Gender=Masc|Number=Sing	4	advcl	4:advcl	SpaceAfter=No
+6	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0019
+# text = O teatro afirma ter recebido visitantes extraterrestres que impressionam a plateia com habilidades fora deste mundo.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	teatro	teatro	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj|5:nsubj	_
+3	afirma	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	ter	ter	AUX	_	VerbForm=Inf	5	aux	5:aux	_
+5	recebido	receber	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	3	xcomp	3:xcomp	_
+6	visitantes	visitante	NOUN	_	Number=Plur	5	obj	5:obj|9:nsubj	_
+7	extraterrestres	extraterrestre	ADJ	_	Number=Plur	6	amod	6:amod	_
+8	que	que	PRON	_	PronType=Rel	9	nsubj	6:ref	_
+9	impressionam	impressionar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	acl:relcl	6:acl:relcl	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	plateia	plateia	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+12	com	com	ADP	_	_	13	case	13:case	_
+13	habilidades	habilidade	NOUN	_	Gender=Fem|Number=Plur	9	obl	9:obl:com	_
+14	fora	fora	ADV	_	_	13	advmod	13:advmod	_
+15-16	deste	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	17	det	17:det	_
+17	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:de	SpaceAfter=No
+18	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0021
+# text = Ingressos esgotam rapidamente, mas há chances de conseguir entradas por US$ 25.
+1	Ingressos	ingresso	NOUN	_	Gender=Masc|Number=Plur	2	nsubj	2:nsubj	_
+2	esgotam	esgotar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	rapidamente	rapidamente	ADV	_	_	2	advmod	2:advmod	SpaceAfter=No
+4	,	,	PUNCT	_	_	6	punct	6:punct	_
+5	mas	mas	CCONJ	_	_	6	cc	6:cc	_
+6	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:mas	_
+7	chances	chance	NOUN	_	Gender=Fem|Number=Plur	6	obj	6:obj	_
+8	de	de	ADP	_	_	9	mark	9:mark	_
+9	conseguir	conseguir	VERB	_	VerbForm=Inf	7	acl	7:acl:de	_
+10	entradas	entrada	NOUN	_	Gender=Fem|Number=Plur	9	obj	9:obj	_
+11	por	por	ADP	_	_	12	case	12:case	_
+12	US$	US$	SYM	_	_	9	obl	9:obl:por	_
+13	25	25	NUM	_	NumType=Card	12	nummod	12:nummod	SpaceAfter=No
+14	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0023
+# text = Para os amantes de arte, o Metropolitan Museum fez uma aquisição bombástica: uma nova ala dedicada inteiramente a obras de arte perdidas, incluindo pinturas que teriam sido roubadas durante a Segunda Guerra Mundial e recentemente recuperadas.
+1	Para	para	ADP	_	_	3	case	3:case	_
+2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	3:det	_
+3	amantes	amante	NOUN	_	Number=Plur	10	obl	10:obl:para	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	arte	arte	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	3	punct	3:punct	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	Metropolitan	Metropolitan	PROPN	_	_	10	nsubj	10:nsubj	_
+9	Museum	Museum	PROPN	_	_	8	flat:name	8:flat:name	_
+10	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+11	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	aquisição	aquisição	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+13	bombástica	bombástico	ADJ	_	Gender=Fem|Number=Sing	12	amod	12:amod	SpaceAfter=No
+14	:	:	PUNCT	_	_	17	punct	17:punct	_
+15	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+16	nova	novo	ADJ	_	Gender=Fem|Number=Sing	17	amod	17:amod	_
+17	ala	ala	NOUN	_	Number=Sing	12	appos	12:appos	_
+18	dedicada	dedicar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	17	acl	17:acl	_
+19	inteiramente	inteiramente	ADV	_	_	18	advmod	18:advmod	_
+20	a	a	ADP	_	_	21	case	21:case	_
+21	obras	obra	NOUN	_	Gender=Fem|Number=Plur	18	obl	18:obl:a	_
+22	de	de	ADP	_	_	23	case	23:case	_
+23	arte	arte	NOUN	_	Gender=Fem|Number=Sing	21	nmod	21:nmod:de	_
+24	perdidas	perdido	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	21	amod	21:amod	SpaceAfter=No
+25	,	,	PUNCT	_	_	26	punct	26:punct	_
+26	incluindo	incluir	VERB	_	VerbForm=Ger	17	acl	17:acl	_
+27	pinturas	pintura	NOUN	_	Gender=Fem|Number=Plur	26	obj	26:obj|31:nsubj:pass|39:nsubj:pass	_
+28	que	que	PRON	_	PronType=Rel	31	nsubj:pass	27:ref	_
+29	teriam	ter	AUX	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	31	aux	31:aux	_
+30	sido	ser	AUX	_	Gender=Masc|Number=Sing|VerbForm=Part	31	aux:pass	31:aux:pass|39:aux:pass	_
+31	roubadas	roubar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	27	acl:relcl	27:acl:relcl	_
+32	durante	durante	ADP	_	_	34	case	34:case	_
+33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	34:det	_
+34	Segunda	Segunda	PROPN	_	_	31	obl	31:obl:durante	_
+35	Guerra	Guerra	PROPN	_	_	34	flat:name	34:flat:name	_
+36	Mundial	Mundial	PROPN	_	_	34	flat:name	34:flat:name	_
+37	e	e	CCONJ	_	_	39	cc	39:cc	_
+38	recentemente	recentemente	ADV	_	_	39	advmod	39:advmod	_
+39	recuperadas	recuperar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	31	conj	27:acl:relcl|31:conj:e	SpaceAfter=No
+40	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0025
+# text = Prepare-se para ver quadros de Picasso e Van Gogh que estavam "desaparecidos" por décadas, tudo por um ingresso de US$ 30.
+1-2	Prepare-se	_	_	_	_	_	_	_	_
+1	Prepare	preparar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	1	expl	1:expl	_
+3	para	para	ADP	_	_	4	mark	4:mark	_
+4	ver	ver	VERB	_	VerbForm=Inf	1	advcl	1:advcl:para	_
+5	quadros	quadro	NOUN	_	Gender=Masc|Number=Plur	4	obj	4:obj|14:nsubj	_
+6	de	de	ADP	_	_	7	case	7:case|9:case	_
+7	Picasso	Picasso	PROPN	_	_	5	nmod	5:nmod:de	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	Van	Van	PROPN	_	_	7	conj	5:nmod:de|7:conj:e	_
+10	Gogh	Gogh	PROPN	_	_	9	flat:name	9:flat:name	_
+11	que	que	PRON	_	PronType=Rel	14	nsubj	5:ref	_
+12	estavam	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	14	cop	14:cop	_
+13	"	"	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+14	desaparecidos	desaparecido	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	5	acl:relcl	5:acl:relcl	SpaceAfter=No
+15	"	"	PUNCT	_	_	14	punct	14:punct	_
+16	por	por	ADP	_	_	17	case	17:case	_
+17	décadas	década	NOUN	_	Gender=Fem|Number=Plur	14	obl	14:obl:por	SpaceAfter=No
+18	,	,	PUNCT	_	_	19	punct	19:punct	_
+19	tudo	tudo	PRON	_	PronType=Ind	1	parataxis	1:parataxis	_
+20	por	por	ADP	_	_	22	case	22:case	_
+21	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	ingresso	ingresso	NOUN	_	Gender=Masc|Number=Sing	19	nmod	19:nmod:por	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	US$	US$	SYM	_	_	22	nmod	22:nmod:de	_
+25	30	30	NUM	_	NumType=Card	24	nummod	24:nummod	SpaceAfter=No
+26	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0027
+# text = E que tal um passeio pelo Meatpacking District?
+1	E	e	CCONJ	_	_	3	cc	3:cc	_
+2	que	que	PRON	_	PronType=Dem	3	fixed	3:fixed	_
+3	tal	tal	VERB	_	ExtPos=VERB|Number=Sing|VerbForm=Fin	0	root	0:root	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	passeio	passeio	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	_
+6-7	pelo	_	_	_	_	_	_	_	_
+6	por	por	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	Meatpacking	Meatpacking	PROPN	_	_	5	nmod	5:nmod:por	_
+9	District	District	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+10	?	?	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0029
+# text = O bairro ganhou um toque ainda mais exótico com o surgimento de um restaurante subterrâneo que promete servir pratos preparados com ingredientes cultivados em fazendas verticais dentro da própria cidade.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	bairro	bairro	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	ganhou	ganhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	toque	toque	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	_
+6	ainda	ainda	ADV	_	_	8	advmod	8:advmod	_
+7	mais	mais	ADV	_	_	8	advmod	8:advmod	_
+8	exótico	exótico	ADJ	_	Gender=Masc|Number=Sing	5	amod	5:amod	_
+9	com	com	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	surgimento	surgimento	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:com	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	restaurante	restaurante	NOUN	_	Number=Sing	11	nmod	11:nmod:de|17:nsubj|18:nsubj	_
+15	subterrâneo	subterrâneo	ADJ	_	Gender=Masc|Number=Sing	14	amod	14:amod	_
+16	que	que	PRON	_	PronType=Rel	17	nsubj	14:ref	_
+17	promete	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	acl:relcl	14:acl:relcl	_
+18	servir	servir	VERB	_	VerbForm=Inf	17	xcomp	17:xcomp	_
+19	pratos	prato	NOUN	_	Gender=Masc|Number=Plur	18	obj	18:obj	_
+20	preparados	preparar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	19	acl	19:acl	_
+21	com	com	ADP	_	_	22	case	22:case	_
+22	ingredientes	ingrediente	NOUN	_	Gender=Masc|Number=Plur	20	obl	20:obl:com	_
+23	cultivados	cultivar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	22	acl	22:acl	_
+24	em	em	ADP	_	_	25	case	25:case	_
+25	fazendas	fazenda	NOUN	_	Gender=Fem|Number=Plur	23	obl	23:obl:em	_
+26	verticais	vertical	ADJ	_	Number=Plur	25	amod	25:amod	_
+27	dentro	dentro	ADV	_	_	18	advmod	18:advmod	_
+28-29	da	_	_	_	_	_	_	_	_
+28	de	de	ADP	_	_	31	case	31:case	_
+29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+30	própria	próprio	DET	_	Gender=Fem|Number=Sing|PronType=Dem	31	det	31:det	_
+31	cidade	cidade	NOUN	_	Gender=Fem|Number=Sing	27	obl	27:obl:de	SpaceAfter=No
+32	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0031
+# text = O Spice Market, agora renomeado "Spice Underground", oferece uma experiência gastronômica única e futurista por menos de US$ 50.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Spice	Spice	PROPN	_	_	12	nsubj	12:nsubj	_
+3	Market	Market	PROPN	_	_	2	flat:name	2:flat:name	SpaceAfter=No
+4	,	,	PUNCT	_	_	6	punct	6:punct	_
+5	agora	agora	ADV	_	_	6	advmod	6:advmod	_
+6	renomeado	renomear	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	2:acl	_
+7	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	Spice	Spice	PROPN	_	_	6	xcomp	6:xcomp	_
+9	Underground	Underground	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+10	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+11	,	,	PUNCT	_	_	6	punct	6:punct	_
+12	oferece	oferecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+13	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	experiência	experiência	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+15	gastronômica	gastronômico	ADJ	_	Gender=Fem|Number=Sing	14	amod	14:amod	_
+16	única	único	ADJ	_	Gender=Fem|Number=Sing	14	amod	14:amod	_
+17	e	e	CCONJ	_	_	18	cc	18:cc	_
+18	futurista	futurista	ADJ	_	Number=Sing	16	conj	14:amod|16:conj:e	_
+19	por	por	ADP	_	_	22	case	22:case	_
+20	menos	menos	ADV	_	ExtPos=ADV	22	advmod	22:advmod	_
+21	de	de	ADP	_	_	20	fixed	20:fixed	_
+22	US$	US$	SYM	_	_	12	obl	12:obl:por	_
+23	50	50	NUM	_	NumType=Card	22	nummod	22:nummod	SpaceAfter=No
+24	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0033
+# text = Para os que adoram uma pechincha, o Outlet Woodburry Common agora oferece descontos de até 70% para turistas estrangeiros, com um bônus: um novo ônibus direto do aeroporto JFK, gratuito para os primeiros 50 passageiros diários.
+1	Para	para	ADP	_	_	2	case	2:case	_
+2	os	o	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Dem	13	obl	4:nsubj|13:obl:para	_
+3	que	que	PRON	_	PronType=Rel	4	nsubj	2:ref	_
+4	adoram	adorar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	pechincha	pechincha	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	SpaceAfter=No
+7	,	,	PUNCT	_	_	2	punct	2:punct	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	Outlet	Outlet	PROPN	_	_	13	nsubj	13:nsubj	_
+10	Woodburry	Woodburry	PROPN	_	_	9	flat:name	9:flat:name	_
+11	Common	Common	PROPN	_	_	9	flat:name	9:flat:name	_
+12	agora	agora	ADV	_	_	13	advmod	13:advmod	_
+13	oferece	oferecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+14	descontos	desconto	NOUN	_	Gender=Masc|Number=Plur	13	obj	13:obj	_
+15	de	de	ADP	_	_	18	case	18:case	_
+16	até	até	ADP	_	_	17	case	17:case	_
+17	70	70	NUM	_	NumType=Card	18	nummod	18:nummod	SpaceAfter=No
+18	%	%	SYM	_	_	14	nmod	14:nmod:de	_
+19	para	para	ADP	_	_	20	case	20:case	_
+20	turistas	turista	NOUN	_	Number=Plur	14	nmod	14:nmod:para	_
+21	estrangeiros	estrangeiro	ADJ	_	Gender=Masc|Number=Plur	20	amod	20:amod	SpaceAfter=No
+22	,	,	PUNCT	_	_	25	punct	25:punct	_
+23	com	com	ADP	_	_	25	case	25:case	_
+24	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	bônus	bônus	NOUN	_	Gender=Masc	13	obl	13:obl:com	SpaceAfter=No
+26	:	:	PUNCT	_	_	29	punct	29:punct	_
+27	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	29	det	29:det	_
+28	novo	novo	ADJ	_	Gender=Masc|Number=Sing	29	amod	29:amod	_
+29	ônibus	ônibus	NOUN	_	Gender=Masc	25	appos	25:appos	_
+30	direto	direto	ADV	_	_	29	advmod	29:advmod	_
+31-32	do	_	_	_	_	_	_	_	_
+31	de	de	ADP	_	_	33	case	33:case	_
+32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	33:det	_
+33	aeroporto	aeroporto	NOUN	_	Gender=Masc|Number=Sing	30	obl	30:obl:de	_
+34	JFK	JFK	PROPN	_	_	33	nmod	33:nmod	SpaceAfter=No
+35	,	,	PUNCT	_	_	36	punct	36:punct	_
+36	gratuito	gratuito	ADJ	_	Gender=Masc|Number=Sing	29	amod	29:amod	_
+37	para	para	ADP	_	_	41	case	41:case	_
+38	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	41	det	41:det	_
+39	primeiros	primeiro	ADJ	_	Gender=Masc|Number=Plur|NumType=Ord	41	amod	41:amod	_
+40	50	50	NUM	_	NumType=Card	41	nummod	41:nummod	_
+41	passageiros	passageiro	NOUN	_	Gender=Masc|Number=Plur	36	obl	36:obl:para	_
+42	diários	diário	ADJ	_	Gender=Masc|Number=Plur	41	amod	41:amod	SpaceAfter=No
+43	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0035
+# text = Aproveite para garantir grifes a preços irrisórios.
+1	Aproveite	aproveitar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	para	para	ADP	_	_	3	mark	3:mark	_
+3	garantir	garantir	VERB	_	VerbForm=Inf	1	xcomp	1:xcomp	_
+4	grifes	grife	NOUN	_	Gender=Fem|Number=Plur	3	obj	3:obj	_
+5	a	a	ADP	_	_	6	case	6:case	_
+6	preços	preço	NOUN	_	Gender=Masc|Number=Plur	3	obl	3:obl:a	_
+7	irrisórios	irrisório	ADJ	_	Gender=Masc|Number=Plur	6	amod	6:amod	SpaceAfter=No
+8	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0037
+# text = No quesito hospedagem, o Hotel Aloft Harlem está revolucionando o check-in com uma tecnologia de reconhecimento facial que dispensa o uso de celulares ou chaves – apenas sorria para a câmera!
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	quesito	quesito	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:em	_
+4	hospedagem	hospedagem	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod	SpaceAfter=No
+5	,	,	PUNCT	_	_	3	punct	3:punct	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Hotel	Hotel	PROPN	_	_	11	nsubj	11:nsubj	_
+8	Aloft	Aloft	PROPN	_	_	7	flat:name	7:flat:name	_
+9	Harlem	Harlem	PROPN	_	_	7	flat:name	7:flat:name	_
+10	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux	11:aux	_
+11	revolucionando	revolucionar	VERB	_	VerbForm=Ger	0	root	0:root	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	check-in	check-in	NOUN	_	Foreign=Yes	11	obj	11:obj	_
+14	com	com	ADP	_	_	16	case	16:case	_
+15	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	tecnologia	tecnologia	NOUN	_	Gender=Fem|Number=Sing	11	obl	11:obl:com|21:nsubj	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	reconhecimento	reconhecimento	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod:de	_
+19	facial	facial	ADJ	_	Number=Sing	18	amod	18:amod	_
+20	que	que	PRON	_	PronType=Rel	21	nsubj	16:ref	_
+21	dispensa	dispensar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	acl:relcl	16:acl:relcl	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	uso	uso	NOUN	_	Gender=Masc|Number=Sing	21	obj	21:obj	_
+24	de	de	ADP	_	_	25	case	25:case|27:case	_
+25	celulares	celular	NOUN	_	Gender=Masc|Number=Plur	23	nmod	23:nmod:de	_
+26	ou	ou	CCONJ	_	_	27	cc	27:cc	_
+27	chaves	chave	NOUN	_	Gender=Fem|Number=Plur	25	conj	23:nmod:de|25:conj:ou	_
+28	–	–	PUNCT	_	_	30	punct	30:punct	_
+29	apenas	apenas	ADV	_	_	30	advmod	30:advmod	_
+30	sorria	sorrir	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	11	parataxis	11:parataxis	_
+31	para	para	ADP	_	_	33	case	33:case	_
+32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	33:det	_
+33	câmera	câmera	NOUN	_	Gender=Fem|Number=Sing	30	obl	30:obl:para	SpaceAfter=No
+34	!	!	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0039
+# text = E para os que buscam luxo, o St.
+1	E	e	CCONJ	_	_	3	cc	3:cc	_
+2	para	para	ADP	_	_	3	case	3:case	_
+3	os	o	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Dem	9	nmod	5:nsubj|9:nmod:para	_
+4	que	que	PRON	_	PronType=Rel	5	nsubj	3:ref	_
+5	buscam	buscar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_
+6	luxo	luxo	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	SpaceAfter=No
+7	,	,	PUNCT	_	_	3	punct	3:punct	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	St.	St.	PUNCT	_	_	0	root	0:root	_
+
+# sent_id = S0041
+# text = Regis não só remodelou seus quartos com a ajuda de grifes famosas, mas também agora oferece um serviço de mordomo robô, capaz de atender a todos os seus caprichos com a mais avançada inteligência artificial.
+1	Regis	Regis	PROPN	_	_	4	nsubj	4:nsubj|17:nsubj	_
+2	não	não	ADV	_	_	3	advmod	3:advmod	_
+3	só	só	ADV	_	_	4	advmod	4:advmod	_
+4	remodelou	remodelar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	6	det	6:det	_
+6	quartos	quarto	NOUN	_	Gender=Masc|Number=Plur	4	obj	4:obj	_
+7	com	com	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	ajuda	ajuda	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:com	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	grifes	grife	NOUN	_	Gender=Fem|Number=Plur	9	nmod	9:nmod:de	_
+12	famosas	famoso	ADJ	_	Gender=Fem|Number=Plur	11	amod	11:amod	SpaceAfter=No
+13	,	,	PUNCT	_	_	17	punct	17:punct	_
+14	mas	mas	CCONJ	_	_	17	cc	17:cc	_
+15	também	também	ADV	_	_	17	advmod	17:advmod	_
+16	agora	agora	ADV	_	_	17	advmod	17:advmod	_
+17	oferece	oferecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	4:conj:mas	_
+18	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	serviço	serviço	NOUN	_	Gender=Masc|Number=Sing	17	obj	17:obj	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	mordomo	mordomo	NOUN	_	Gender=Masc|Number=Sing	19	nmod	19:nmod:de	_
+22	robô	robô	NOUN	_	Gender=Masc|Number=Sing	21	nmod	21:nmod	SpaceAfter=No
+23	,	,	PUNCT	_	_	24	punct	24:punct	_
+24	capaz	capaz	ADJ	_	Number=Sing	19	amod	19:amod	_
+25	de	de	ADP	_	_	26	mark	26:mark	_
+26	atender	atender	VERB	_	VerbForm=Inf	24	acl	24:acl:de	_
+27	a	a	ADP	_	_	31	case	31:case	_
+28	todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Ind	31	det	31:det	_
+29	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	31	det	31:det	_
+30	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	31	det	31:det	_
+31	caprichos	capricho	NOUN	_	Gender=Masc|Number=Plur	26	obl	26:obl:a	_
+32	com	com	ADP	_	_	36	case	36:case	_
+33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	36:det	_
+34	mais	mais	ADV	_	_	35	advmod	35:advmod	_
+35	avançada	avançado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	36	amod	36:amod	_
+36	inteligência	inteligência	NOUN	_	Gender=Fem|Number=Sing	26	obl	26:obl:com	_
+37	artificial	artificial	ADJ	_	Number=Sing	36	amod	36:amod	SpaceAfter=No
+38	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0043
+# text = Prepare-se para uma Nova York que mistura o clássico com o inusitado, onde cada esquina pode revelar uma história surpreendente ou uma oportunidade única.
+1-2	Prepare-se	_	_	_	_	_	_	_	_
+1	Prepare	preparar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	1	expl	1:expl	_
+3	para	para	ADP	_	_	5	case	5:case	_
+4	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	Nova	Nova	PROPN	_	_	1	obl	1:obl:para|8:nsubj	_
+6	York	York	PROPN	_	_	5	flat:name	5:flat:name	_
+7	que	que	PRON	_	PronType=Rel	8	nsubj	5:ref	_
+8	mistura	misturar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	clássico	clássico	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	_
+11	com	com	ADP	_	_	12	case	12:case	_
+12	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	8	obl	8:obl:com	_
+13	inusitado	inusitado	ADJ	_	Gender=Masc|Number=Sing	12	amod	12:amod	SpaceAfter=No
+14	,	,	PUNCT	_	_	18	punct	18:punct	_
+15	onde	onde	ADV	_	_	18	advmod	18:advmod	_
+16	cada	cada	DET	_	Number=Sing|PronType=Ind	17	det	17:det	_
+17	esquina	esquina	NOUN	_	Gender=Fem|Number=Sing	18	nsubj	18:nsubj|19:nsubj	_
+18	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_
+19	revelar	revelar	VERB	_	VerbForm=Inf	18	xcomp	18:xcomp	_
+20	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	história	história	NOUN	_	Gender=Fem|Number=Sing	19	obj	19:obj	_
+22	surpreendente	surpreendente	ADJ	_	Number=Sing	21	amod	21:amod	_
+23	ou	ou	CCONJ	_	_	25	cc	25:cc	_
+24	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	oportunidade	oportunidade	NOUN	_	Gender=Fem|Number=Sing	21	conj	19:obj|21:conj:ou	_
+26	única	único	ADJ	_	Gender=Fem|Number=Sing	25	amod	25:amod	SpaceAfter=No
+27	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0045
+# text = A cidade não para de inovar, e as fake news ajudam a criar um cenário ainda mais fascinante para os olhos curiosos dos turistas.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	cidade	cidade	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj|6:nsubj	_
+3	não	não	ADV	_	_	4	advmod	4:advmod	_
+4	para	parar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	de	de	ADP	_	_	6	mark	6:mark	_
+6	inovar	inovar	VERB	_	VerbForm=Inf	4	xcomp	4:xcomp	SpaceAfter=No
+7	,	,	PUNCT	_	_	12	punct	12:punct	_
+8	e	e	CCONJ	_	_	12	cc	12:cc	_
+9	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	10:det	_
+10	fake	fake	X	_	Foreign=Yes	12	nsubj	12:nsubj|14:nsubj	_
+11	news	news	X	_	Foreign=Yes	10	flat:foreign	10:flat:foreign	_
+12	ajudam	ajudar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	conj	4:conj:e	_
+13	a	a	ADP	_	_	14	mark	14:mark	_
+14	criar	criar	VERB	_	VerbForm=Inf	12	xcomp	12:xcomp	_
+15	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	cenário	cenário	NOUN	_	Gender=Masc|Number=Sing	14	obj	14:obj	_
+17	ainda	ainda	ADV	_	_	19	advmod	19:advmod	_
+18	mais	mais	ADV	_	_	19	advmod	19:advmod	_
+19	fascinante	fascinante	ADJ	_	Number=Sing	16	amod	16:amod	_
+20	para	para	ADP	_	_	22	case	22:case	_
+21	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	22:det	_
+22	olhos	olho	NOUN	_	Gender=Masc|Number=Plur	14	obl	14:obl:para	_
+23	curiosos	curioso	ADJ	_	Gender=Masc|Number=Plur	22	amod	22:amod	_
+24-25	dos	_	_	_	_	_	_	_	_
+24	de	de	ADP	_	_	26	case	26:case	_
+25	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	26:det	_
+26	turistas	turista	NOUN	_	Number=Plur	22	nmod	22:nmod:de	SpaceAfter=No
+27	.	.	PUNCT	_	_	4	punct	4:punct	_

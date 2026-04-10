@@ -1,0 +1,362 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Mr. Catra conta que teve AVC e ficou cego: Foi gravíssimo.
+1	Mr	Mr	PROPN	_	_	4	nsubj	4:nsubj	SpaceAfter=No
+2	.	.	PROPN	_	_	1	flat:name	1:flat:name	_
+3	Catra	Catra	PROPN	_	_	1	flat:name	1:flat:name	_
+4	conta	contar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	que	que	SCONJ	_	_	6	mark	6:mark|9:mark	_
+6	teve	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	ccomp	4:ccomp	_
+7	AVC	AVC	PROPN	_	_	6	obj	6:obj	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	ficou	ficar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	conj	4:ccomp|6:conj:e	_
+10	cego	cego	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	9	xcomp	9:xcomp	SpaceAfter=No
+11	:	:	PUNCT	_	_	13	punct	13:punct	_
+12	Foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	cop	13:cop	_
+13	gravíssimo	gravíssimo	ADJ	_	Gender=Masc|Number=Sing	4	parataxis	4:parataxis	SpaceAfter=No
+14	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0003
+# text = Deus me salvou.
+1	Deus	Deus	PROPN	_	_	3	nsubj	3:nsubj	_
+2	me	me	PRON	_	Case=Acc|Number=Sing|Person=1|PronType=Prs	3	obj	3:obj	_
+3	salvou	salvar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+4	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0005
+# text = Pai de 32 filhos e 4 netos, o cantor e compositor Wagner Domingues Costa (conhecido como Mister Catra) está passando por uma fase difícil.
+1	Pai	pai	NOUN	_	Gender=Masc|Number=Sing	23	dislocated	23:dislocated	_
+2	de	de	ADP	_	_	4	case	4:case|7:case	_
+3	32	32	NUM	_	NumType=Card	4	nummod	4:nummod	_
+4	filhos	filho	NOUN	_	Gender=Masc|Number=Plur	1	nmod	1:nmod:de	_
+5	e	e	CCONJ	_	_	7	cc	7:cc	_
+6	4	4	NUM	_	NumType=Card	7	nummod	7:nummod	_
+7	netos	neto	NOUN	_	Gender=Masc|Number=Plur	4	conj	1:nmod:de|4:conj:e	SpaceAfter=No
+8	,	,	PUNCT	_	_	1	punct	1:punct	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	cantor	cantor	NOUN	_	Gender=Masc|Number=Sing	23	nsubj	23:nsubj	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	compositor	compositor	NOUN	_	Gender=Masc|Number=Sing	10	conj	10:conj:e|23:nsubj	_
+13	Wagner	Wagner	PROPN	_	_	10	nmod	10:nmod|12:nmod	_
+14	Domingues	Domingues	PROPN	_	_	13	flat:name	13:flat:name	_
+15	Costa	Costa	PROPN	_	_	13	flat:name	13:flat:name	_
+16	(	(	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+17	conhecido	conhecer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	10	acl	10:acl|12:acl	_
+18	como	como	ADP	_	_	19	case	19:case	_
+19	Mister	Mister	PROPN	_	_	17	obl	17:obl:como	_
+20	Catra	Catra	PROPN	_	_	19	flat:name	19:flat:name	SpaceAfter=No
+21	)	)	PUNCT	_	_	17	punct	17:punct	_
+22	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	aux	23:aux	_
+23	passando	passar	VERB	_	VerbForm=Ger	0	root	0:root	_
+24	por	por	ADP	_	_	26	case	26:case	_
+25	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	fase	fase	NOUN	_	Gender=Fem|Number=Sing	23	obl	23:obl:por	_
+27	difícil	difícil	ADJ	_	Number=Sing	26	amod	26:amod	SpaceAfter=No
+28	.	.	PUNCT	_	_	23	punct	23:punct	_
+
+# sent_id = S0007
+# text = Catra está fazendo quimioterapia há alguns meses para tratar de um câncer no estômago, doença que ele descobriu no início deste ano.
+1	Catra	Catra	PROPN	_	_	3	nsubj	3:nsubj	_
+2	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux	3:aux	_
+3	fazendo	fazer	VERB	_	VerbForm=Ger	0	root	0:root	_
+4	quimioterapia	quimioterapia	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+5	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	advcl	3:advcl	_
+6	alguns	algum	DET	_	Gender=Masc|Number=Plur|PronType=Ind	7	det	7:det	_
+7	meses	mÃªs	NOUN	_	Gender=Masc|Number=Plur	5	obj	5:obj	_
+8	para	para	ADP	_	_	9	mark	9:mark	_
+9	tratar	tratar	VERB	_	VerbForm=Inf	3	advcl	3:advcl:para	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	câncer	câncer	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:de	_
+13-14	no	_	_	_	_	_	_	_	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	estômago	estômago	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:em	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	doença	doença	NOUN	_	Gender=Fem|Number=Sing	12	appos	12:appos|20:obj	_
+18	que	que	PRON	_	PronType=Rel	20	obj	17:ref	_
+19	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	20	nsubj	20:nsubj	_
+20	descobriu	descobrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	acl:relcl	17:acl:relcl	_
+21-22	no	_	_	_	_	_	_	_	_
+21	em	em	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	início	início	NOUN	_	Gender=Masc|Number=Sing	20	obl	20:obl:em	_
+24-25	deste	_	_	_	_	_	_	_	_
+24	de	de	ADP	_	_	26	case	26:case	_
+25	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	26	det	26:det	_
+26	ano	ano	NOUN	_	Gender=Masc|Number=Sing	23	nmod	23:nmod:de	SpaceAfter=No
+27	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0009
+# text = "Descobri um nódulo no estômago... graças a Deus estava no início e foi mais fácil de curar" disse o funkeiro ao programa Fofocalizando, do SBT.
+1	"	"	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+2	Descobri	descobrir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	23	ccomp:speech	23:ccomp:speech	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	nódulo	nódulo	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+5-6	no	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	estômago	estômago	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:em	SpaceAfter=No
+8	...	...	PUNCT	_	_	15	punct	15:punct	_
+9	graças	graça	NOUN	_	Gender=Fem|Number=Plur	15	nsubj	15:nsubj|19:nsubj	_
+10	a	a	ADP	_	_	11	case	11:case	_
+11	Deus	Deus	PROPN	_	_	9	nmod	9:nmod:a	_
+12	estava	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	15	cop	15:cop	_
+13-14	no	_	_	_	_	_	_	_	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	início	início	NOUN	_	Gender=Masc|Number=Sing	2	parataxis	2:parataxis	_
+16	e	e	CCONJ	_	_	19	cc	19:cc	_
+17	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	cop	19:cop	_
+18	mais	mais	ADV	_	_	19	advmod	19:advmod	_
+19	fácil	fácil	ADJ	_	Number=Sing	15	conj	2:parataxis|15:conj:e	_
+20	de	de	ADP	_	_	21	mark	21:mark	_
+21	curar	curar	VERB	_	VerbForm=Inf	19	acl	19:acl:de	SpaceAfter=No
+22	"	"	PUNCT	_	_	2	punct	2:punct	_
+23	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	funkeiro	funkeiro	NOUN	_	Gender=Masc|Number=Sing	23	nsubj	23:nsubj	_
+26-27	ao	_	_	_	_	_	_	_	_
+26	a	a	ADP	_	_	28	case	28:case	_
+27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	programa	programa	NOUN	_	Gender=Masc|Number=Sing	23	obl	23:obl:a	_
+29	Fofocalizando	Fofocalizando	PROPN	_	_	28	nmod	28:nmod	SpaceAfter=No
+30	,	,	PUNCT	_	_	33	punct	33:punct	_
+31-32	do	_	_	_	_	_	_	_	_
+31	de	de	ADP	_	_	33	case	33:case	_
+32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	33:det	_
+33	SBT	SBT	PROPN	_	_	28	nmod	28:nmod:de	SpaceAfter=No
+34	.	.	PUNCT	_	_	23	punct	23:punct	_
+
+# sent_id = S0011
+# text = "É um baque descobrir que você está doente... fiquei debilitado, bastante ofegante", disse Catra sobre o início do tratamento.
+1	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+2	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	baque	baque	NOUN	_	Gender=Masc|Number=Sing	18	ccomp:speech	18:ccomp:speech	_
+5	descobrir	descobrir	VERB	_	VerbForm=Inf	4	csubj	4:csubj	_
+6	que	que	SCONJ	_	_	9	mark	9:mark	_
+7	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	9	nsubj	9:nsubj	_
+8	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	9:cop	_
+9	doente	doente	ADJ	_	Number=Sing	5	ccomp	5:ccomp	SpaceAfter=No
+10	...	...	PUNCT	_	_	11	punct	11:punct	_
+11	fiquei	ficar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	4	parataxis	4:parataxis	_
+12	debilitado	debilitado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	11	xcomp	11:xcomp	SpaceAfter=No
+13	,	,	PUNCT	_	_	15	punct	15:punct	_
+14	bastante	bastante	ADV	_	_	15	advmod	15:advmod	_
+15	ofegante	ofegante	ADJ	_	Number=Sing	12	conj	11:xcomp|12:conj	SpaceAfter=No
+16	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+17	,	,	PUNCT	_	_	4	punct	4:punct	_
+18	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+19	Catra	Catra	PROPN	_	_	18	nsubj	18:nsubj	_
+20	sobre	sobre	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	início	início	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:sobre	_
+23-24	do	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	tratamento	tratamento	NOUN	_	Gender=Masc|Number=Sing	22	nmod	22:nmod:de	SpaceAfter=No
+26	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0013
+# text = Ele conta que no dia 5 de dezembro deu uma "vacilada": "Vacilei com o tratamento... comecei a passar mal e pensei que era sintoma da quimioterapia... cheguei no hospital em estado gravíssimo, a ponto de ficar cego e ter um AVC... Foi Deus que me salvou irmão, não tem outra explicação" O músico contou que não bebe mais álcool e diminuiu os cigarros: "Eu fumava 3 maços por dia, hoje fumo 3 cigarros".
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj	_
+2	conta	contar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	10	mark	10:mark	_
+4-5	no	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	dia	dia	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:em	_
+7	5	5	NUM	_	NumType=Card	6	nmod	6:nmod	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	dezembro	dezembro	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	_
+10	deu	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	ccomp	2:ccomp	_
+11	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+12	"	"	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+13	vacilada	vacilada	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	SpaceAfter=No
+14	"	"	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+15	:	:	PUNCT	_	_	17	punct	17:punct	_
+16	"	"	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+17	Vacilei	vacilar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	2	parataxis	2:parataxis	_
+18	com	com	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	tratamento	tratamento	NOUN	_	Gender=Masc|Number=Sing	17	obl	17:obl:com	SpaceAfter=No
+21	...	...	PUNCT	_	_	22	punct	22:punct	_
+22	comecei	comeÃ§ar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	17	parataxis	17:parataxis	_
+23	a	a	ADP	_	_	24	mark	24:mark	_
+24	passar	passar	VERB	_	VerbForm=Inf	22	xcomp	22:xcomp	_
+25	mal	mal	ADV	_	_	24	advmod	24:advmod	_
+26	e	e	CCONJ	_	_	27	cc	27:cc	_
+27	pensei	pensar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	70	conj	67:ccomp|70:conj:e	_
+28	que	que	SCONJ	_	_	30	mark	30:mark	_
+29	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	30	cop	30:cop	_
+30	sintoma	sintoma	NOUN	_	Gender=Masc|Number=Sing	27	ccomp	27:ccomp	_
+31-32	da	_	_	_	_	_	_	_	_
+31	de	de	ADP	_	_	33	case	33:case	_
+32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	33:det	_
+33	quimioterapia	quimioterapia	NOUN	_	Gender=Fem|Number=Sing	30	nmod	30:nmod:de	SpaceAfter=No
+34	...	...	PUNCT	_	_	35	punct	35:punct	_
+35	cheguei	chegar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	70	parataxis	27:parataxis|70:parataxis|74:parataxis	_
+36-37	no	_	_	_	_	_	_	_	_
+36	em	em	ADP	_	_	38	case	38:case	_
+37	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	38:det	_
+38	hospital	hospital	NOUN	_	Gender=Masc|Number=Sing	35	obl	35:obl:em	_
+39	em	em	ADP	_	_	40	case	40:case	_
+40	estado	estado	NOUN	_	Gender=Masc|Number=Sing	35	obl	35:obl:em	_
+41	gravíssimo	gravíssimo	ADJ	_	Gender=Masc|Number=Sing	40	amod	40:amod	SpaceAfter=No
+42	,	,	PUNCT	_	_	44	punct	44:punct	_
+43	a	a	ADP	_	_	44	case	44:case	_
+44	ponto	ponto	NOUN	_	Gender=Masc|Number=Sing	35	obl	35:obl:a	_
+45	de	de	ADP	_	_	46	mark	46:mark|49:mark	_
+46	ficar	ficar	VERB	_	VerbForm=Inf	44	acl	44:acl:de	_
+47	cego	cego	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	46	xcomp	46:xcomp	_
+48	e	e	CCONJ	_	_	49	cc	49:cc	_
+49	ter	ter	VERB	_	VerbForm=Inf	46	conj	44:acl:de|46:conj:e	_
+50	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	51	det	51:det	_
+51	AVC	AVC	PROPN	_	_	49	obj	49:obj	SpaceAfter=No
+52	...	...	PUNCT	_	_	2	punct	2:punct	_
+53	Foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	57	discourse	57:discourse	_
+54	Deus	Deus	PROPN	_	_	10	nsubj	10:nsubj	_
+55	que	que	PRON	_	PronType=Rel	57	discourse	57:discourse	_
+56	me	me	PRON	_	Case=Acc|Number=Sing|Person=1|PronType=Prs	57	obj	57:obj	_
+57	salvou	salvar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	ccomp:speech	2:ccomp:speech	_
+58	irmão	irmão	NOUN	_	Gender=Masc|Number=Sing	57	obj	57:obj	SpaceAfter=No
+59	,	,	PUNCT	_	_	61	punct	61:punct	_
+60	não	não	ADV	_	_	61	advmod	61:advmod	_
+61	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	57	parataxis	57:parataxis	_
+62	outra	outro	DET	_	Gender=Fem|Number=Sing|PronType=Ind	63	det	63:det	_
+63	explicação	explicação	NOUN	_	Gender=Fem|Number=Sing	61	obj	61:obj	SpaceAfter=No
+64	"	"	PUNCT	_	_	2	punct	2:punct	_
+65	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	66	det	66:det	_
+66	músico	músico	NOUN	_	Gender=Masc|Number=Sing	67	nsubj	67:nsubj	_
+67	contou	contar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	dep	1:dep	_
+68	que	que	SCONJ	_	_	70	mark	27:mark|70:mark|74:mark	_
+69	não	não	ADV	_	_	70	advmod	27:advmod|70:advmod	_
+70	bebe	beber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	67	ccomp	67:ccomp	_
+71	mais	mais	ADV	_	_	72	det	72:det	_
+72	álcool	álcool	NOUN	_	Gender=Masc|Number=Sing	70	obj	27:obj|70:obj	_
+73	e	e	CCONJ	_	_	27	cc	27:cc	_
+74	diminuiu	diminuir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	70	conj	67:ccomp|70:conj	_
+75	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	76	det	76:det	_
+76	cigarros	cigarro	NOUN	_	Gender=Masc|Number=Plur	74	obj	74:obj	SpaceAfter=No
+77	:	:	PUNCT	_	_	80	punct	80:punct	_
+78	"	"	PUNCT	_	_	80	punct	80:punct	SpaceAfter=No
+79	Eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	80	nsubj	80:nsubj|87:nsubj	_
+80	fumava	fumar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	67	ccomp:speech	67:ccomp:speech	_
+81	3	3	NUM	_	NumType=Card	82	nummod	82:nummod	_
+82	maços	maço	NOUN	_	Gender=Masc|Number=Plur	80	obj	80:obj	_
+83	por	por	ADP	_	_	84	case	84:case	_
+84	dia	dia	NOUN	_	Gender=Masc|Number=Sing	82	nmod	82:nmod:por	SpaceAfter=No
+85	,	,	PUNCT	_	_	87	punct	87:punct	_
+86	hoje	hoje	ADV	_	_	87	advmod	87:advmod	_
+87	fumo	fumar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	80	conj	67:ccomp:speech|80:conj	_
+88	3	3	NUM	_	NumType=Card	89	nummod	89:nummod	_
+89	cigarros	cigarro	NOUN	_	Gender=Masc|Number=Plur	87	obj	87:obj	SpaceAfter=No
+90	"	"	PUNCT	_	_	80	punct	80:punct	SpaceAfter=No
+91	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0015
+# text = Questionado se tem medo de morrer, ele respondeu: Não.
+1	Questionado	questionar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	9	advcl	9:advcl	_
+2	se	se	SCONJ	_	_	3	mark	3:mark	_
+3	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	1:ccomp	_
+4	medo	medo	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	_
+5	de	de	ADP	_	_	6	mark	6:mark	_
+6	morrer	morrer	VERB	_	VerbForm=Inf	4	acl	4:acl:de	SpaceAfter=No
+7	,	,	PUNCT	_	_	1	punct	1:punct	_
+8	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nsubj	9:nsubj	_
+9	respondeu	responder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+10	:	:	PUNCT	_	_	11	punct	11:punct	_
+11	Não	não	ADV	_	_	9	ccomp:speech	9:ccomp:speech	SpaceAfter=No
+12	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0017
+# text = Tenho medo de perder a fé.
+1	Tenho	ter	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	medo	medo	NOUN	_	Gender=Masc|Number=Sing	1	obj	1:obj	_
+3	de	de	ADP	_	_	4	mark	4:mark	_
+4	perder	perder	VERB	_	VerbForm=Inf	2	acl	2:acl:de	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	fé	fé	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	SpaceAfter=No
+7	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0019
+# text = Ele é formado em direito e fala outros 4 idiomas além do português: inglês, francês, hebraico e alemão.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj:pass	3:nsubj:pass|7:nsubj	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:pass	3:aux:pass	_
+3	formado	formar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+4	em	em	ADP	_	_	5	case	5:case	_
+5	direito	direito	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:em	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	fala	falar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	3:conj:e	_
+8	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	10	det	10:det	_
+9	4	4	NUM	_	NumType=Card	10	nummod	10:nummod	_
+10	idiomas	idioma	NOUN	_	Gender=Masc|Number=Plur	7	obj	7:obj	_
+11	além	além	ADV	_	_	7	advmod	7:advmod	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	português	português	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:de	SpaceAfter=No
+15	:	:	PUNCT	_	_	16	punct	16:punct	_
+16	inglês	inglês	NOUN	_	Gender=Masc|Number=Sing	10	appos	10:appos	SpaceAfter=No
+17	,	,	PUNCT	_	_	18	punct	18:punct	_
+18	francês	francês	NOUN	_	Gender=Masc|Number=Sing	16	conj	10:appos|16:conj:e	SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	20:punct	_
+20	hebraico	hebraico	NOUN	_	Gender=Masc|Number=Sing	16	conj	10:appos|16:conj:e	_
+21	e	e	CCONJ	_	_	22	cc	22:cc	_
+22	alemão	alemão	NOUN	_	Gender=Masc|Number=Sing	16	conj	10:appos|16:conj:e	SpaceAfter=No
+23	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0021
+# text = De família rica, ao contrário da maioria dos funkeiros, ele conta que enfrentou dificuldades durante a infância e era discriminado pelos colegas mais pobres: "Eu era chamado de negão playboy".
+1	De	de	ADP	_	_	2	case	2:case	_
+2	família	família	NOUN	_	Gender=Fem|Number=Sing	16	obl	16:obl:de	_
+3	rica	rico	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	SpaceAfter=No
+4	,	,	PUNCT	_	_	7	punct	7:punct	_
+5-6	ao	_	_	_	_	_	_	_	_
+5	a	a	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	contrário	contrário	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:a	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	maioria	maioria	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:de	_
+11-12	dos	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	13:det	_
+13	funkeiros	funkeiro	NOUN	_	Gender=Masc|Number=Plur	10	nmod	10:nmod:de	SpaceAfter=No
+14	,	,	PUNCT	_	_	7	punct	7:punct	_
+15	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	nsubj	16:nsubj	_
+16	conta	contar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+17	que	que	SCONJ	_	_	18	mark	18:mark|25:mark	_
+18	enfrentou	enfrentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	ccomp	16:ccomp	_
+19	dificuldades	dificuldade	NOUN	_	Gender=Fem|Number=Plur	18	obj	18:obj	_
+20	durante	durante	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	infância	infância	NOUN	_	Gender=Fem|Number=Sing	18	obl	18:obl:durante	_
+23	e	e	CCONJ	_	_	25	cc	25:cc	_
+24	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	25	aux:pass	25:aux:pass	_
+25	discriminado	discriminar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	18	conj	16:ccomp|18:conj:e	_
+26-27	pelos	_	_	_	_	_	_	_	_
+26	por	por	ADP	_	_	28	case	28:case	_
+27	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	28:det	_
+28	colegas	colega	NOUN	_	Gender=Masc|Number=Plur	25	obl:agent	25:obl:agent	_
+29	mais	mais	ADV	_	_	30	advmod	30:advmod	_
+30	pobres	pobre	ADJ	_	Number=Plur	28	amod	28:amod	SpaceAfter=No
+31	:	:	PUNCT	_	_	35	punct	35:punct	_
+32	"	"	PUNCT	_	_	35	punct	35:punct	SpaceAfter=No
+33	Eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	35	nsubj:pass	35:nsubj:pass	_
+34	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	35	aux:pass	35:aux:pass	_
+35	chamado	chamar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	16	parataxis	16:parataxis	_
+36	de	de	ADP	_	_	37	case	37:case	_
+37	negão	negão	NOUN	_	Gender=Masc|Number=Sing	35	obl	35:obl:de	_
+38	playboy	playboy	X	_	Foreign=Yes	37	nmod	37:nmod	SpaceAfter=No
+39	"	"	PUNCT	_	_	35	punct	35:punct	SpaceAfter=No
+40	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0023
+# text = Assista a entrevista:
+1	Assista	assistir	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	entrevista	entrevista	NOUN	_	Gender=Fem|Number=Sing	1	obj	1:obj	SpaceAfter=No
+4	:	:	PUNCT	_	_	1	punct	1:punct	_

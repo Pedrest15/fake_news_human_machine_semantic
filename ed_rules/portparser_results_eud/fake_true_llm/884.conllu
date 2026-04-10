@@ -1,0 +1,474 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Empresário goiano Gustavo Gayer afirma ter descoberto fraude em protesto de enfermeiros no Distrito Federal.
+1	Empresário	empresário	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj|7:nsubj	_
+2	goiano	goiano	ADJ	_	Gender=Masc|Number=Sing	1	amod	1:amod	_
+3	Gustavo	Gustavo	PROPN	_	_	1	nmod	1:nmod	_
+4	Gayer	Gayer	PROPN	_	_	3	flat:name	3:flat:name	_
+5	afirma	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	ter	ter	AUX	_	VerbForm=Inf	7	aux	7:aux	_
+7	descoberto	descobrir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	5	xcomp	5:xcomp	_
+8	fraude	fraude	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	_
+9	em	em	ADP	_	_	10	case	10:case	_
+10	protesto	protesto	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:em	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	enfermeiros	enfermeiro	NOUN	_	Gender=Masc|Number=Plur	10	nmod	10:nmod:de	_
+13-14	no	_	_	_	_	_	_	_	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	Distrito	Distrito	PROPN	_	_	10	nmod	10:nmod:em	_
+16	Federal	Federal	PROPN	_	_	15	flat:name	15:flat:name	SpaceAfter=No
+17	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0003
+# text = Em um vídeo viral, ele expõe uma moradora de rua usando um jaleco médico e alega que ela foi paga para participar da manifestação.
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:em	_
+4	viral	viral	ADJ	_	Number=Sing	3	amod	3:amod	SpaceAfter=No
+5	,	,	PUNCT	_	_	3	punct	3:punct	_
+6	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	nsubj	7:nsubj|17:nsubj	_
+7	expõe	expor	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	moradora	morador	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	rua	rua	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:de	_
+12	usando	usar	VERB	_	VerbForm=Ger	7	advcl	7:advcl	_
+13	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	jaleco	jaleco	NOUN	_	Gender=Masc|Number=Sing	12	obj	12:obj	_
+15	médico	médico	ADJ	_	Gender=Masc|Number=Sing	14	amod	14:amod	_
+16	e	e	CCONJ	_	_	17	cc	17:cc	_
+17	alega	alegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	7:conj:e	_
+18	que	que	SCONJ	_	_	21	mark	21:mark	_
+19	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	21	nsubj:pass	21:nsubj:pass	_
+20	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	21	aux:pass	21:aux:pass	_
+21	paga	pagar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	17	ccomp	17:ccomp	_
+22	para	para	ADP	_	_	23	mark	23:mark	_
+23	participar	participar	VERB	_	VerbForm=Inf	21	advcl	21:advcl:para	_
+24-25	da	_	_	_	_	_	_	_	_
+24	de	de	ADP	_	_	26	case	26:case	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	manifestação	manifestação	NOUN	_	Gender=Fem|Number=Sing	23	obl	23:obl:de	SpaceAfter=No
+27	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0005
+# text = O Conselho Federal de Enfermagem reagiu com indignação, mas surgiram dúvidas sobre a veracidade das acusações.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Conselho	Conselho	PROPN	_	_	6	nsubj	6:nsubj	_
+3	Federal	Federal	PROPN	_	_	2	flat:name	2:flat:name	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	Enfermagem	Enfermagem	PROPN	_	_	2	flat:name	2:flat:name	_
+6	reagiu	reagir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	com	com	ADP	_	_	8	case	8:case	_
+8	indignação	indignação	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:com	SpaceAfter=No
+9	,	,	PUNCT	_	_	11	punct	11:punct	_
+10	mas	mas	CCONJ	_	_	11	cc	11:cc	_
+11	surgiram	surgir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	6	conj	6:conj:mas	_
+12	dúvidas	dúvida	NOUN	_	Gender=Fem|Number=Plur	11	nsubj	11:nsubj	_
+13	sobre	sobre	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	veracidade	veracidade	NOUN	_	Gender=Fem|Number=Sing	12	nmod	12:nmod:sobre	_
+16-17	das	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	18:det	_
+18	acusações	acusação	NOUN	_	Gender=Fem|Number=Plur	15	nmod	15:nmod:de	SpaceAfter=No
+19	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0007
+# text = Gustavo Gayer, conhecido por suas posições polêmicas nas redes sociais, gravou um vídeo que rapidamente se espalhou.
+1	Gustavo	Gustavo	PROPN	_	_	14	nsubj	14:nsubj	_
+2	Gayer	Gayer	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	conhecido	conhecido	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	1	amod	1:amod	_
+5	por	por	ADP	_	_	7	case	7:case	_
+6	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	7	det	7:det	_
+7	posições	posição	NOUN	_	Gender=Fem|Number=Plur	4	obl	4:obl:por	_
+8	polêmicas	polêmico	ADJ	_	Gender=Fem|Number=Plur	7	amod	7:amod	_
+9-10	nas	_	_	_	_	_	_	_	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	11:det	_
+11	redes	rede	NOUN	_	Gender=Fem|Number=Plur	7	nmod	7:nmod:em	_
+12	sociais	social	ADJ	_	Number=Plur	11	amod	11:amod	SpaceAfter=No
+13	,	,	PUNCT	_	_	4	punct	4:punct	_
+14	gravou	gravar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+15	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	14	obj	14:obj|20:nsubj	_
+17	que	que	PRON	_	PronType=Rel	20	nsubj	16:ref	_
+18	rapidamente	rapidamente	ADV	_	_	20	advmod	20:advmod	_
+19	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	20	expl	20:expl	_
+20	espalhou	espalhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	acl:relcl	16:acl:relcl	SpaceAfter=No
+21	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0009
+# text = Nele, uma mulher, identificada como moradora de rua, aparece vestida com um jaleco branco e afirma ter sido contratada para se passar por enfermeira durante a manifestação.
+1-2	Nele	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	obl	13:obl:em	_
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	mulher	mulher	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	13:nsubj|20:nsubj|23:nsubj:pass	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	identificada	identificar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	5	acl	5:acl	_
+8	como	como	ADP	_	_	9	case	9:case	_
+9	moradora	morador	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:como	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	rua	rua	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:de	SpaceAfter=No
+12	,	,	PUNCT	_	_	7	punct	7:punct	_
+13	aparece	aparecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+14	vestida	vestir	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	13	advcl	13:advcl	_
+15	com	com	ADP	_	_	17	case	17:case	_
+16	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	jaleco	jaleco	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:com	_
+18	branco	branco	ADJ	_	Gender=Masc|Number=Sing	17	amod	17:amod	_
+19	e	e	CCONJ	_	_	20	cc	20:cc	_
+20	afirma	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	conj	13:conj:e	_
+21	ter	ter	AUX	_	VerbForm=Inf	23	aux	23:aux	_
+22	sido	ser	AUX	_	Gender=Masc|Number=Sing|VerbForm=Part	23	aux:pass	23:aux:pass	_
+23	contratada	contratar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	20	xcomp	20:xcomp	_
+24	para	para	ADP	_	_	26	mark	26:mark	_
+25	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	26	expl	26:expl	_
+26	passar	passar	VERB	_	Number=Sing|Person=3|VerbForm=Inf	23	advcl	23:advcl:para	_
+27	por	por	ADP	_	_	28	case	28:case	_
+28	enfermeira	enfermeiro	NOUN	_	Gender=Fem|Number=Sing	26	obl	26:obl:por	_
+29	durante	durante	ADP	_	_	31	case	31:case	_
+30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+31	manifestação	manifestação	NOUN	_	Gender=Fem|Number=Sing	26	obl	26:obl:durante	SpaceAfter=No
+32	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0011
+# text = Eles me deram esse jaleco e me pagaram para fingir que estava protestando.
+1	Eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	nsubj	3:nsubj|8:nsubj	_
+2	me	me	PRON	_	Case=Dat|Number=Sing|Person=1|PronType=Prs	3	iobj	3:iobj	_
+3	deram	dar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	5	det	5:det	_
+5	jaleco	jaleco	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	_
+6	e	e	CCONJ	_	_	8	cc	8:cc	_
+7	me	me	PRON	_	Case=Acc|Number=Sing|Person=1|PronType=Prs	8	obj	8:obj	_
+8	pagaram	pagar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	3	conj	3:conj:e	_
+9	para	para	ADP	_	_	10	mark	10:mark	_
+10	fingir	fingir	VERB	_	VerbForm=Inf	8	advcl	8:advcl:para	_
+11	que	que	SCONJ	_	_	13	mark	13:mark	_
+12	estava	estar	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	13	aux	13:aux	_
+13	protestando	protestar	VERB	_	VerbForm=Ger	10	ccomp	10:ccomp	SpaceAfter=No
+14	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0013
+# text = Isso é uma farsa!, declarou a mulher.
+1	Isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	4	nsubj	4:nsubj	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+3	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	farsa	farsa	NOUN	_	Gender=Fem|Number=Sing	7	ccomp:speech	7:ccomp:speech	SpaceAfter=No
+5	!	!	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+6	,	,	PUNCT	_	_	4	punct	4:punct	_
+7	declarou	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	mulher	mulher	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj	SpaceAfter=No
+10	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0015
+# text = O protesto, realizado no dia 1o de maio, Dia do Trabalhador, tinha como objetivo homenagear profissionais de saúde vítimas da COVID-19 e alertar sobre o isolamento social.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	protesto	protesto	NOUN	_	Gender=Masc|Number=Sing	17	nsubj	17:nsubj|20:nsubj|29:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	realizado	realizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	2:acl	_
+5-6	no	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	dia	dia	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:em	_
+8	1o	1o	ADJ	_	Gender=Masc|NumType=Ord	7	nmod	7:nmod	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	maio	maio	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	Dia	Dia	PROPN	_	_	7	appos	7:appos	_
+13-14	do	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	Trabalhador	Trabalhador	PROPN	_	_	12	flat:name	12:flat:name	SpaceAfter=No
+16	,	,	PUNCT	_	_	12	punct	12:punct	_
+17	tinha	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+18	como	como	ADP	_	_	19	case	19:case	_
+19	objetivo	objetivo	NOUN	_	Gender=Masc|Number=Sing	17	obl	17:obl:como	_
+20	homenagear	homenagear	VERB	_	VerbForm=Inf	17	xcomp	17:xcomp	_
+21	profissionais	profissional	NOUN	_	Number=Plur	20	obj	20:obj	_
+22	de	de	ADP	_	_	23	case	23:case	_
+23	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	21	nmod	21:nmod:de	_
+24	vítimas	vítima	NOUN	_	Gender=Fem|Number=Plur	21	nmod	21:nmod	_
+25-26	da	_	_	_	_	_	_	_	_
+25	de	de	ADP	_	_	27	case	27:case	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	COVID-19	COVID-19	PROPN	_	_	24	nmod	24:nmod:de	_
+28	e	e	CCONJ	_	_	29	cc	29:cc	_
+29	alertar	alertar	VERB	_	VerbForm=Inf	20	conj	17:xcomp|20:conj:e	_
+30	sobre	sobre	ADP	_	_	32	case	32:case	_
+31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+32	isolamento	isolamento	NOUN	_	Gender=Masc|Number=Sing	29	obl	29:obl:sobre	_
+33	social	social	ADJ	_	Number=Sing	32	amod	32:amod	SpaceAfter=No
+34	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0017
+# text = No entanto, as alegações de Gayer lançaram uma sombra sobre a legitimidade do evento.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	ExtPos=CCONJ	9	cc	9:cc	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	1:fixed	_
+3	entanto	entanto	NOUN	_	Gender=Masc|Number=Sing	1	fixed	1:fixed	SpaceAfter=No
+4	,	,	PUNCT	_	_	1	punct	1:punct	_
+5	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	6:det	_
+6	alegações	alegação	NOUN	_	Gender=Fem|Number=Plur	9	nsubj	9:nsubj	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	Gayer	Gayer	PROPN	_	_	6	nmod	6:nmod:de	_
+9	lançaram	lançar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	sombra	sombra	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+12	sobre	sobre	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	legitimidade	legitimidade	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:sobre	_
+15-16	do	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	evento	evento	NOUN	_	Gender=Masc|Number=Sing	14	nmod	14:nmod:de	SpaceAfter=No
+18	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0019
+# text = Gayer nega ter ofendido ou agredido manifestantes, mas internautas afirmam que ele estava associado a dois indivíduos que aparecem em outras gravações atacando os participantes.
+1	Gayer	Gayer	PROPN	_	_	2	nsubj	2:nsubj|4:nsubj|6:nsubj	_
+2	nega	negar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	ter	ter	AUX	_	VerbForm=Inf	4	aux	4:aux|6:aux	_
+4	ofendido	ofender	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	2	xcomp	2:xcomp	_
+5	ou	ou	CCONJ	_	_	6	cc	6:cc	_
+6	agredido	agredir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	4	conj	2:xcomp|4:conj:ou	_
+7	manifestantes	manifestante	NOUN	_	Number=Plur	4	obj	4:obj|6:obj	SpaceAfter=No
+8	,	,	PUNCT	_	_	11	punct	11:punct	_
+9	mas	mas	CCONJ	_	_	11	cc	11:cc	_
+10	internautas	internauta	NOUN	_	Number=Plur	11	nsubj	11:nsubj	_
+11	afirmam	afirmar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:mas	_
+12	que	que	SCONJ	_	_	15	mark	15:mark	_
+13	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	nsubj	15:nsubj	_
+14	estava	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	15	cop	15:cop	_
+15	associado	associado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	11	ccomp	11:ccomp	_
+16	a	a	ADP	_	_	18	case	18:case	_
+17	dois	dois	NUM	_	Gender=Masc|NumType=Card	18	nummod	18:nummod	_
+18	indivíduos	indivíduo	NOUN	_	Gender=Masc|Number=Plur	15	obl	15:obl:a|20:nsubj	_
+19	que	que	PRON	_	PronType=Rel	20	nsubj	18:ref	_
+20	aparecem	aparecer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	acl:relcl	18:acl:relcl	_
+21	em	em	ADP	_	_	23	case	23:case	_
+22	outras	outro	DET	_	Gender=Fem|Number=Plur|PronType=Ind	23	det	23:det	_
+23	gravações	gravação	NOUN	_	Gender=Fem|Number=Plur	20	obl	20:obl:em	_
+24	atacando	atacar	VERB	_	VerbForm=Ger	20	advcl	20:advcl	_
+25	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	26:det	_
+26	participantes	participante	NOUN	_	Number=Plur	24	obj	24:obj	SpaceAfter=No
+27	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0021
+# text = O empresário alega que seu vídeo foi manipulado e que está recebendo ameaças após a repercussão do caso.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	empresário	empresário	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	alega	alegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	8	mark	8:mark	_
+5	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	6	det	6:det	_
+6	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	8	nsubj:pass	8:nsubj:pass|12:nsubj	_
+7	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	aux:pass	8:aux:pass	_
+8	manipulado	manipular	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	ccomp	3:ccomp	_
+9	e	e	CCONJ	_	_	12	cc	12:cc	_
+10	que	que	SCONJ	_	_	12	mark	12:mark	_
+11	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux	12:aux	_
+12	recebendo	receber	VERB	_	VerbForm=Ger	8	conj	3:ccomp|8:conj:e	_
+13	ameaças	ameaça	NOUN	_	Gender=Fem|Number=Plur	12	obj	12:obj	_
+14	após	após	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	repercussão	repercussão	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl:após	_
+17-18	do	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	caso	caso	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod:de	SpaceAfter=No
+20	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0023
+# text = A Procuradora do Conselho Federal de Enfermagem, Tycianna Goes da Silva Monte Alegre, condenou as declarações de Gayer, afirmando que elas buscam desvalorizar a profissão.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Procuradora	Procuradora	PROPN	_	_	18	nsubj	18:nsubj	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	Conselho	Conselho	PROPN	_	_	2	nmod	2:nmod:de	_
+6	Federal	Federal	PROPN	_	_	5	flat:name	5:flat:name	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	Enfermagem	Enfermagem	PROPN	_	_	5	flat:name	5:flat:name	SpaceAfter=No
+9	,	,	PUNCT	_	_	10	punct	10:punct	_
+10	Tycianna	Tycianna	PROPN	_	_	2	appos	2:appos	_
+11	Goes	Goes	PROPN	_	_	10	flat:name	10:flat:name	_
+12-13	da	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	Silva	Silva	PROPN	_	_	10	flat:name	10:flat:name	_
+15	Monte	Monte	PROPN	_	_	10	flat:name	10:flat:name	_
+16	Alegre	Alegre	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+17	,	,	PUNCT	_	_	10	punct	10:punct	_
+18	condenou	condenar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+19	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	20:det	_
+20	declarações	declaração	NOUN	_	Gender=Fem|Number=Plur	18	obj	18:obj	_
+21	de	de	ADP	_	_	22	case	22:case	_
+22	Gayer	Gayer	PROPN	_	_	20	nmod	20:nmod:de	SpaceAfter=No
+23	,	,	PUNCT	_	_	24	punct	24:punct	_
+24	afirmando	afirmar	VERB	_	VerbForm=Ger	18	advcl	18:advcl	_
+25	que	que	SCONJ	_	_	27	mark	27:mark	_
+26	elas	ele	PRON	_	Case=Nom|Gender=Fem|Number=Plur|Person=3|PronType=Prs	27	nsubj	27:nsubj|28:nsubj	_
+27	buscam	buscar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	24	ccomp	24:ccomp	_
+28	desvalorizar	desvalorizar	VERB	_	VerbForm=Inf	27	xcomp	27:xcomp	_
+29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	profissão	profissão	NOUN	_	Gender=Fem|Number=Sing	28	obj	28:obj	SpaceAfter=No
+31	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0025
+# text = "É revoltante ver alguém tentando desacreditar nossos heróis da saúde dessa forma", declarou.
+1	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+3	revoltante	revoltante	ADJ	_	Number=Sing	18	ccomp:speech	18:ccomp:speech	_
+4	ver	ver	VERB	_	VerbForm=Inf	3	csubj	3:csubj	_
+5	alguém	alguém	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	4	obj	4:obj	_
+6	tentando	tentar	VERB	_	VerbForm=Ger	5	acl	5:acl	_
+7	desacreditar	desacreditar	VERB	_	VerbForm=Inf	6	xcomp	6:xcomp	_
+8	nossos	nosso	DET	_	Gender=Masc|Number=Plur|Person=1|Poss=Yes|PronType=Prs	9	det	9:det	_
+9	heróis	herói	NOUN	_	Gender=Masc|Number=Plur	7	obj	7:obj	_
+10-11	da	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:de	_
+13-14	dessa	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	15	det	15:det	_
+15	forma	forma	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:de	SpaceAfter=No
+16	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+17	,	,	PUNCT	_	_	3	punct	3:punct	_
+18	declarou	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+19	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0027
+# text = Enquanto isso, Renan Sena, ex-servidor terceirizado do Ministério da Mulher, da Família e dos Direitos Humanos, também filmou os manifestantes e foi acusado de xingar uma mulher de "medíocre".
+1	Enquanto	enquanto	ADV	_	ExtPos=ADV	26	advmod	26:advmod	_
+2	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	fixed	1:fixed	SpaceAfter=No
+3	,	,	PUNCT	_	_	1	punct	1:punct	_
+4	Renan	Renan	PROPN	_	_	26	nsubj	26:nsubj|31:nsubj:pass|33:nsubj	_
+5	Sena	Sena	PROPN	_	_	4	flat:name	4:flat:name	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	ex-servidor	ex-servidor	NOUN	_	Gender=Masc|Number=Sing	4	appos	4:appos	_
+8	terceirizado	terceirizado	ADJ	_	Gender=Masc|Number=Sing	7	amod	7:amod	_
+9-10	do	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	Ministério	Ministério	PROPN	_	_	7	nmod	7:nmod:de	_
+12-13	da	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	Mulher	Mulher	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+15	,	,	PUNCT	_	_	18	punct	18:punct	_
+16-17	da	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	Família	Família	PROPN	_	_	11	flat:name	11:flat:name	_
+19	e	e	CCONJ	_	_	22	cc	22:cc	_
+20-21	dos	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	22:det	_
+22	Direitos	Direitos	PROPN	_	_	11	conj	7:nmod:de|11:conj:e	_
+23	Humanos	Humanos	PROPN	_	_	22	flat:name	22:flat:name	SpaceAfter=No
+24	,	,	PUNCT	_	_	7	punct	7:punct	_
+25	também	também	ADV	_	_	26	advmod	26:advmod	_
+26	filmou	filmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+27	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	28:det	_
+28	manifestantes	manifestante	NOUN	_	Number=Plur	26	obj	26:obj	_
+29	e	e	CCONJ	_	_	31	cc	31:cc	_
+30	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	31	aux:pass	31:aux:pass	_
+31	acusado	acusar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	26	conj	26:conj:e	_
+32	de	de	ADP	_	_	33	mark	33:mark	_
+33	xingar	xingar	VERB	_	VerbForm=Inf	31	xcomp	31:xcomp	_
+34	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	35	det	35:det	_
+35	mulher	mulher	NOUN	_	Gender=Fem|Number=Sing	33	obj	33:obj	_
+36	de	de	ADP	_	_	38	case	38:case	_
+37	"	"	PUNCT	_	_	38	punct	38:punct	SpaceAfter=No
+38	medíocre	medíocre	ADJ	_	Number=Sing	33	obl	33:obl:de	SpaceAfter=No
+39	"	"	PUNCT	_	_	38	punct	38:punct	SpaceAfter=No
+40	.	.	PUNCT	_	_	26	punct	26:punct	_
+
+# sent_id = S0029
+# text = O G1 tentou contato com Sena, mas sem sucesso até o momento.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	G1	G1	PROPN	_	_	3	nsubj	3:nsubj	_
+3	tentou	tentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	contato	contato	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	_
+5	com	com	ADP	_	_	6	case	6:case	_
+6	Sena	Sena	PROPN	_	_	4	nmod	4:nmod:com	SpaceAfter=No
+7	,	,	PUNCT	_	_	10	punct	10:punct	_
+8	mas	mas	CCONJ	_	_	10	cc	10:cc	_
+9	sem	sem	ADP	_	_	10	case	10:case	_
+10	sucesso	sucesso	NOUN	_	Gender=Masc|Number=Sing	3	conj	3:conj:mas	_
+11	até	até	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	momento	momento	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:até	SpaceAfter=No
+14	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0031
+# text = O Ministério Público do Distrito Federal (MPDFT) e a Polícia Civil iniciaram uma investigação para apurar as supostas agressões sofridas por enfermeiros e jornalistas durante as manifestações em Brasília, com um prazo de 3 dias para conclusão do inquérito.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Ministério	Ministério	PROPN	_	_	15	nsubj	15:nsubj	_
+3	Público	Público	PROPN	_	_	2	flat:name	2:flat:name	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	Distrito	Distrito	PROPN	_	_	2	flat:name	2:flat:name	_
+7	Federal	Federal	PROPN	_	_	2	flat:name	2:flat:name	_
+8	(	(	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+9	MPDFT	MPDFT	PROPN	_	_	2	appos	2:appos	SpaceAfter=No
+10	)	)	PUNCT	_	_	9	punct	9:punct	_
+11	e	e	CCONJ	_	_	13	cc	13:cc	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	Polícia	Polícia	PROPN	_	_	2	conj	2:conj:e|15:nsubj	_
+14	Civil	Civil	PROPN	_	_	13	flat:name	13:flat:name	_
+15	iniciaram	iniciar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+16	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	investigação	investigação	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	_
+18	para	para	ADP	_	_	19	mark	19:mark	_
+19	apurar	apurar	VERB	_	VerbForm=Inf	17	advcl	17:advcl:para	_
+20	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	22:det	_
+21	supostas	suposto	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	22	amod	22:amod	_
+22	agressões	agressão	NOUN	_	Gender=Fem|Number=Plur	19	obj	19:obj	_
+23	sofridas	sofrer	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	22	acl	22:acl	_
+24	por	por	ADP	_	_	25	case	25:case|27:case	_
+25	enfermeiros	enfermeiro	NOUN	_	Gender=Masc|Number=Plur	23	obl:agent	23:obl:agent	_
+26	e	e	CCONJ	_	_	27	cc	27:cc	_
+27	jornalistas	jornalista	NOUN	_	Number=Plur	25	conj	23:obl:agent|25:conj:e	_
+28	durante	durante	ADP	_	_	30	case	30:case	_
+29	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	30	det	30:det	_
+30	manifestações	manifestação	NOUN	_	Gender=Fem|Number=Plur	23	obl	23:obl:durante	_
+31	em	em	ADP	_	_	32	case	32:case	_
+32	Brasília	Brasília	PROPN	_	_	30	nmod	30:nmod:em	SpaceAfter=No
+33	,	,	PUNCT	_	_	36	punct	36:punct	_
+34	com	com	ADP	_	_	36	case	36:case	_
+35	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	36	det	36:det	_
+36	prazo	prazo	NOUN	_	Gender=Masc|Number=Sing	15	obl	15:obl:com	_
+37	de	de	ADP	_	_	39	case	39:case	_
+38	3	3	NUM	_	NumType=Card	39	nummod	39:nummod	_
+39	dias	dia	NOUN	_	Gender=Masc|Number=Plur	36	nmod	36:nmod:de	_
+40	para	para	ADP	_	_	41	case	41:case	_
+41	conclusão	conclusão	NOUN	_	Gender=Fem|Number=Sing	36	nmod	36:nmod:para	_
+42-43	do	_	_	_	_	_	_	_	_
+42	de	de	ADP	_	_	44	case	44:case	_
+43	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	44:det	_
+44	inquérito	inquérito	NOUN	_	Gender=Masc|Number=Sing	41	nmod	41:nmod:de	SpaceAfter=No
+45	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0033
+# text = Acompanhe mais detalhes e a evolução deste caso em G1 Goiás.
+1	Acompanhe	acompanhar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	mais	mais	DET	_	PronType=Ind	3	det	3:det	_
+3	detalhes	detalhe	NOUN	_	Gender=Masc|Number=Plur	1	obj	1:obj	_
+4	e	e	CCONJ	_	_	6	cc	6:cc	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	evolução	evolução	NOUN	_	Gender=Fem|Number=Sing	3	conj	1:obj|3:conj:e	_
+7-8	deste	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	9	det	9:det	_
+9	caso	caso	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de	_
+10	em	em	ADP	_	_	11	case	11:case	_
+11	G1	G1	PROPN	_	_	1	obl	1:obl:em	_
+12	Goiás	Goiás	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+13	.	.	PUNCT	_	_	1	punct	1:punct	_

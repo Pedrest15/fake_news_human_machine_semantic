@@ -1,0 +1,88 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = médico elsimar coutinho morreu em decorrência da covid-19 morre o médico elsimar coutinho morreu agora há pouco elsimar coutinho.
+1	médico	médico	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+2	elsimar	elsimar	NOUN	_	_	1	nmod	1:nmod	_
+3	coutinho	coutinho	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod	_
+4	morreu	morrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	em	em	ADP	_	_	6	case	6:case	_
+6	decorrência	decorrência	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:em	_
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	covid-19	covid-19	NUM	_	NumType=Card	6	nmod	6:nmod:de	_
+10	morre	morrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	nmod	6:nmod	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	médico	médico	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	15:nsubj	_
+13	elsimar	elsimar	ADJ	_	_	12	nmod	12:nmod	_
+14	coutinho	coutinho	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod	_
+15	morreu	morrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	conj	4:conj	_
+16	agora	agora	ADV	_	_	15	advmod	15:advmod	_
+17	há	haver	VERB	_	ExtPos=VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	advcl	15:advcl	_
+18	pouco	pouco	ADV	_	_	17	fixed	17:fixed	_
+19	elsimar	elsimar	NOUN	_	Number=Sing	15	obj	15:obj	_
+20	coutinho	coutinho	NOUN	_	Gender=Masc|Number=Sing	19	nmod	19:nmod	SpaceAfter=No
+21	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0003
+# text = o médico, de 9 anos, estava internado na uti do hospital aliança desde segunda-feira (2).
+1	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	médico	médico	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	9:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	9	9	NUM	_	NumType=Card	6	nummod	6:nummod	_
+6	anos	ano	NOUN	_	Gender=Masc|Number=Plur	2	nmod	2:nmod:de	SpaceAfter=No
+7	,	,	PUNCT	_	_	6	punct	6:punct	_
+8	estava	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	cop	9:cop	_
+9	internado	internado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+10-11	na	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	uti	uti	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:em	_
+13-14	do	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	hospital	hospital	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:de	_
+16	aliança	aliança	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod	_
+17	desde	desde	ADP	_	_	18	case	18:case	_
+18	segunda-feira	segunda-feira	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:desde	_
+19	(	(	PUNCT	_	_	20	punct	20:punct	SpaceAfter=No
+20	2	2	NUM	_	NumType=Card	18	appos	18:appos	SpaceAfter=No
+21	)	)	PUNCT	_	_	20	punct	20:punct	SpaceAfter=No
+22	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0005
+# text = ele foi levado para a unidade de saúde após apresentar dificuldade para respirar.
+1	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj:pass	3:nsubj:pass	_
+2	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	aux:pass	3:aux:pass	_
+3	levado	levar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+4	para	para	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	unidade	unidade	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:para	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de	_
+9	após	após	ADP	_	_	10	mark	10:mark	_
+10	apresentar	apresentar	VERB	_	VerbForm=Inf	3	advcl	3:advcl:após	_
+11	dificuldade	dificuldade	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+12	para	para	ADP	_	_	13	mark	13:mark	_
+13	respirar	respirar	VERB	_	VerbForm=Inf	11	acl	11:acl:para	SpaceAfter=No
+14	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = lá, ele então foi submetido a teste, que deu positivo para a covid-19.
+1	lá	lá	ADV	_	_	6	advmod	6:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj:pass	6:nsubj:pass	_
+4	então	então	ADV	_	_	6	advmod	6:advmod	_
+5	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	aux:pass	6:aux:pass	_
+6	submetido	submeter	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+7	a	a	ADP	_	_	8	case	8:case	_
+8	teste	teste	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:a|11:nsubj	SpaceAfter=No
+9	,	,	PUNCT	_	_	11	punct	11:punct	_
+10	que	que	PRON	_	PronType=Rel	11	nsubj	8:ref	_
+11	deu	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	acl:relcl	8:acl:relcl	_
+12	positivo	positivo	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj	_
+13	para	para	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	covid-19	covid-19	NUM	_	NumType=Card	12	nmod	12:nmod:para	SpaceAfter=No
+16	.	.	PUNCT	_	_	6	punct	6:punct	_

@@ -1,0 +1,481 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Cássia: O PT agora é uma partido doente, bandido.
+1	Cássia	Cássia	PROPN	_	_	8	nsubj	8:nsubj|11:nsubj	SpaceAfter=No
+2	:	:	PUNCT	_	_	1	punct	1:punct	_
+3	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	PT	PT	PROPN	_	_	8	nsubj	8:nsubj|11:nsubj	_
+5	agora	agora	ADV	_	_	8	advmod	8:advmod	_
+6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop|11:cop	_
+7	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	partido	partido	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+9	doente	doente	ADJ	_	Number=Sing	8	amod	8:amod	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	bandido	bandido	NOUN	_	Gender=Masc|Number=Sing	8	conj	8:conj	SpaceAfter=No
+12	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0003
+# text = Não podemos virar uma Venezuela.
+1	Não	não	ADV	_	_	2	advmod	2:advmod	_
+2	podemos	poder	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	virar	virar	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	_
+4	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	Venezuela	Venezuela	PROPN	_	_	3	obj	3:obj	SpaceAfter=No
+6	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = Em evento realizado no Recife, a atriz Cássia Kis Magro fez duras críticas à crise política e econômica que o país vivencia hoje.
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	evento	evento	NOUN	_	Gender=Masc|Number=Sing	13	obl	13:obl:em	_
+3	realizado	realizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	2:acl	_
+4-5	no	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	Recife	Recife	PROPN	_	_	3	obl	3:obl:em	SpaceAfter=No
+7	,	,	PUNCT	_	_	2	punct	2:punct	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	atriz	atriz	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	13:nsubj	_
+10	Cássia	Cássia	PROPN	_	_	9	nmod	9:nmod	_
+11	Kis	Kis	PROPN	_	_	10	flat:name	10:flat:name	_
+12	Magro	Magro	PROPN	_	_	10	flat:name	10:flat:name	_
+13	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	duras	duro	ADJ	_	Gender=Fem|Number=Plur	15	amod	15:amod	_
+15	críticas	crítico	NOUN	_	Gender=Fem|Number=Plur	13	obj	13:obj	_
+16-17	à	_	_	_	_	_	_	_	_
+16	a	a	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	crise	crise	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:a|25:obj	_
+19	política	político	ADJ	_	Gender=Fem|Number=Sing	18	amod	18:amod	_
+20	e	e	CCONJ	_	_	21	cc	21:cc	_
+21	econômica	econômico	ADJ	_	Gender=Fem|Number=Sing	19	conj	18:amod|19:conj:e	_
+22	que	que	PRON	_	PronType=Rel	25	obj	18:ref	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	país	país	NOUN	_	Gender=Masc|Number=Sing	25	nsubj	25:nsubj	_
+25	vivencia	vivenciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	acl:relcl	18:acl:relcl	_
+26	hoje	hoje	ADV	_	_	25	advmod	25:advmod	SpaceAfter=No
+27	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0007
+# text = Estamos vivendo um pesadelo.
+1	Estamos	estar	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	aux	2:aux	_
+2	vivendo	viver	VERB	_	VerbForm=Ger	0	root	0:root	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	pesadelo	pesadelo	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	SpaceAfter=No
+5	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0009
+# text = O triste é que não é um pesadelo.
+1	O	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	8	nsubj:outer	8:nsubj:outer	_
+2	triste	triste	ADJ	_	Number=Sing	1	amod	1:amod	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop	_
+4	que	que	SCONJ	_	_	8	mark	8:mark	_
+5	não	não	ADV	_	_	8	advmod	8:advmod	_
+6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop	_
+7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	pesadelo	pesadelo	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+9	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0011
+# text = É uma realidade que começou há dez anos.
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+2	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	realidade	realidade	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root|5:nsubj	_
+4	que	que	PRON	_	PronType=Rel	5	nsubj	3:ref	_
+5	começou	começar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_
+6	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	advcl	5:advcl	_
+7	dez	dez	NUM	_	NumType=Card	8	nummod	8:nummod	_
+8	anos	ano	NOUN	_	Gender=Masc|Number=Plur	6	obj	6:obj	SpaceAfter=No
+9	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0013
+# text = O país foi destruído.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	país	país	NOUN	_	Gender=Masc|Number=Sing	4	nsubj:pass	4:nsubj:pass	_
+3	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	destruído	destruír	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0015
+# text = Há cinco anos o Brasil está descendo ladeira.
+1	Há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	advcl	7:advcl	_
+2	cinco	cinco	NUM	_	NumType=Card	3	nummod	3:nummod	_
+3	anos	ano	NOUN	_	Gender=Masc|Number=Plur	1	obj	1:obj	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	Brasil	Brasil	PROPN	_	_	7	nsubj	7:nsubj	_
+6	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	7:aux	_
+7	descendo	descer	VERB	_	VerbForm=Ger	0	root	0:root	_
+8	ladeira	ladeira	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	SpaceAfter=No
+9	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0017
+# text = Só desce, não sobe mais.
+1	Só	só	ADV	_	_	2	advmod	2:advmod	_
+2	desce	descer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+3	,	,	PUNCT	_	_	5	punct	5:punct	_
+4	não	não	ADV	_	_	5	advmod	5:advmod	_
+5	sobe	subir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj	_
+6	mais	mais	ADV	_	_	5	advmod	5:advmod	SpaceAfter=No
+7	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0019
+# text = Eu leio dois jornais por dia e me sinto muito corajosa por isso.
+1	Eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	2:nsubj|9:nsubj|11:nsubj	_
+2	leio	ler	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	dois	dois	NUM	_	Gender=Masc|NumType=Card	4	nummod	4:nummod	_
+4	jornais	jornal	NOUN	_	Gender=Masc|Number=Plur	2	obj	2:obj	_
+5	por	por	ADP	_	_	6	case	6:case	_
+6	dia	dia	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:por	_
+7	e	e	CCONJ	_	_	9	cc	9:cc	_
+8	me	me	PRON	_	Case=Dat|Number=Sing|Person=1|PronType=Prs	9	expl	9:expl	_
+9	sinto	sentir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	conj	2:conj:e	_
+10	muito	muito	ADV	_	_	11	advmod	11:advmod	_
+11	corajosa	corajoso	ADJ	_	Gender=Fem|Number=Sing	9	xcomp	9:xcomp	_
+12	por	por	ADP	_	_	13	case	13:case	_
+13	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	9	obl	9:obl:por	SpaceAfter=No
+14	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0021
+# text = Meu marido me manda parar e eu digo que não consigo.
+1	Meu	meu	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	det	2:det	_
+2	marido	marido	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+3	me	me	PRON	_	Case=Acc|Number=Sing|Person=1|PronType=Prs	4	obj	4:obj|5:nsubj	_
+4	manda	mandar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	parar	parar	VERB	_	VerbForm=Inf	4	xcomp	4:xcomp	_
+6	e	e	CCONJ	_	_	8	cc	8:cc	_
+7	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	8	nsubj	8:nsubj	_
+8	digo	dizer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	conj	4:conj:e	_
+9	que	que	SCONJ	_	_	11	mark	11:mark	_
+10	não	não	ADV	_	_	11	advmod	11:advmod	_
+11	consigo	conseguir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	8	ccomp	8:ccomp	SpaceAfter=No
+12	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0023
+# text = Parece que não vai parar de aparecer "m".
+1	Parece	parecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	que	que	SCONJ	_	_	5	mark	5:mark	_
+3	não	não	ADV	_	_	5	advmod	5:advmod	_
+4	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	5:aux	_
+5	parar	parar	VERB	_	VerbForm=Inf	1	ccomp	1:ccomp	_
+6	de	de	ADP	_	_	7	mark	7:mark	_
+7	aparecer	aparecer	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	_
+8	"	"	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+9	m	metro	NOUN	_	Abbr=Yes|Gender=Masc	7	obj	7:obj	SpaceAfter=No
+10	"	"	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+11	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0025
+# text = Com um "M" bem grande.
+1	Com	com	ADP	_	_	4	case	4:case	_
+2	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+3	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+4	M	M	PROPN	_	_	0	root	0:root	SpaceAfter=No
+5	"	"	PUNCT	_	_	4	punct	4:punct	_
+6	bem	bem	ADV	_	_	7	advmod	7:advmod	_
+7	grande	grande	ADJ	_	Number=Sing	4	amod	4:amod	SpaceAfter=No
+8	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0027
+# text = Vai dando desespero ver tanto absurdo, disse Cássia, aos 57 anos.
+1	Vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	aux	2:aux	_
+2	dando	dar	VERB	_	VerbForm=Ger	8	ccomp:speech	8:ccomp:speech	_
+3	desespero	desespero	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+4	ver	ver	VERB	_	VerbForm=Inf	2	csubj	2:csubj	_
+5	tanto	tanto	DET	_	Gender=Masc|Number=Sing|PronType=Ind	6	det	6:det	_
+6	absurdo	absurdo	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	SpaceAfter=No
+7	,	,	PUNCT	_	_	2	punct	2:punct	_
+8	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	Cássia	Cássia	PROPN	_	_	8	nsubj	8:nsubj	SpaceAfter=No
+10	,	,	PUNCT	_	_	14	punct	14:punct	_
+11-12	aos	_	_	_	_	_	_	_	_
+11	a	a	ADP	_	_	14	case	14:case	_
+12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	14:det	_
+13	57	57	NUM	_	NumType=Card	14	nummod	14:nummod	_
+14	anos	ano	NOUN	_	Gender=Masc|Number=Plur	8	obl	8:obl:a	SpaceAfter=No
+15	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0029
+# text = O que me salva é a meditação.
+1	O	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	nsubj	4:nsubj|7:nsubj	_
+2	que	que	PRON	_	PronType=Rel	4	nsubj	1:ref	_
+3	me	me	PRON	_	Case=Acc|Number=Sing|Person=1|PronType=Prs	4	obj	4:obj	_
+4	salva	salvar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	meditação	meditação	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+8	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0031
+# text = Tenho referências de lugares onde há respeito, onde a cultura é valorizada, onde a corrupção é "controlada" completou a atriz.
+1	Tenho	ter	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	22	ccomp:speech	22:ccomp:speech	_
+2	referências	referêncão	NOUN	_	Gender=Fem|Number=Plur	1	obj	1:obj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	lugares	lugar	NOUN	_	Gender=Masc|Number=Plur	2	nmod	2:nmod:de|6:obl	_
+5	onde	onde	ADV	_	_	6	advmod	4:ref	_
+6	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	4:acl:relcl	_
+7	respeito	respeito	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	SpaceAfter=No
+8	,	,	PUNCT	_	_	13	punct	13:punct	_
+9	onde	onde	ADV	_	_	13	advmod	13:advmod	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	cultura	cultura	NOUN	_	Gender=Fem|Number=Sing	13	nsubj:pass	13:nsubj:pass	_
+12	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux:pass	13:aux:pass	_
+13	valorizada	valorizar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	6	conj	4:acl:relcl|6:conj	SpaceAfter=No
+14	,	,	PUNCT	_	_	20	punct	20:punct	_
+15	onde	onde	ADV	_	_	20	advmod	20:advmod	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	corrupção	corrupção	NOUN	_	Gender=Fem|Number=Sing	20	nsubj:pass	20:nsubj:pass	_
+18	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	aux:pass	20:aux:pass	_
+19	"	"	PUNCT	_	_	20	punct	20:punct	SpaceAfter=No
+20	controlada	controlar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	13	conj	4:acl|13:conj	SpaceAfter=No
+21	"	"	PUNCT	_	_	20	punct	20:punct	_
+22	completou	completar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	atriz	atriz	NOUN	_	Gender=Fem|Number=Sing	22	nsubj	22:nsubj	SpaceAfter=No
+25	.	.	PUNCT	_	_	22	punct	22:punct	_
+
+# sent_id = S0033
+# text = Já fiquei deprimida por isso.
+1	Já	já	ADV	_	_	2	advmod	2:advmod	_
+2	fiquei	ficar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	deprimida	deprimido	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	2	xcomp	2:xcomp	_
+4	por	por	ADP	_	_	5	case	5:case	_
+5	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	2	obl	2:obl:por	SpaceAfter=No
+6	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0035
+# text = Um dia de cama.
+1	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	dia	dia	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	cama	cama	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	SpaceAfter=No
+5	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0037
+# text = Fui vendo tanta mentira, tanta injustiça que aquilo me abateu de verdade.
+1	Fui	ir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	2	aux	2:aux	_
+2	vendo	ver	VERB	_	VerbForm=Ger	0	root	0:root	_
+3	tanta	tanto	DET	_	Gender=Fem|Number=Sing|PronType=Ind	4	det	4:det	_
+4	mentira	mentira	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	SpaceAfter=No
+5	,	,	PUNCT	_	_	7	punct	7:punct	_
+6	tanta	tanto	DET	_	Gender=Fem|Number=Sing|PronType=Ind	7	det	7:det	_
+7	injustiça	injustiça	NOUN	_	Gender=Fem|Number=Sing	4	conj	2:obj|4:conj	_
+8	que	que	SCONJ	_	_	11	mark	11:mark	_
+9	aquilo	aquilo	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	11	nsubj	11:nsubj	_
+10	me	me	PRON	_	Case=Acc|Number=Sing|Person=1|PronType=Prs	11	obj	11:obj	_
+11	abateu	abater	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	advcl	2:advcl:que	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	verdade	verdade	NOUN	_	Gender=Fem|Number=Sing	11	obl	11:obl:de	SpaceAfter=No
+14	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0039
+# text = Minha casa tem piscina.
+1	Minha	meu	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	det	2:det	_
+2	casa	casa	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_
+3	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	piscina	piscina	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	SpaceAfter=No
+5	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0041
+# text = Eu tenho carro na garagem, ganho salário de uma boa empresa e frequento ótimos restaurantes.
+1	Eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	2:nsubj|8:nsubj|15:nsubj	_
+2	tenho	ter	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	carro	carro	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+4-5	na	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	garagem	garagem	NOUN	_	Gender=Fem|Number=Sing	2	obl	2:obl:em	SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	8:punct	_
+8	ganho	ganhar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	conj	2:conj:e	_
+9	salário	salário	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	_
+10	de	de	ADP	_	_	13	case	13:case	_
+11	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+12	boa	bom	ADJ	_	Gender=Fem|Number=Sing	13	amod	13:amod	_
+13	empresa	empresa	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:de	_
+14	e	e	CCONJ	_	_	15	cc	15:cc	_
+15	frequento	frequentar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	conj	2:conj:e	_
+16	ótimos	ótimo	ADJ	_	Gender=Masc|Number=Plur	17	amod	17:amod	_
+17	restaurantes	restaurante	NOUN	_	Number=Plur	15	obj	15:obj	SpaceAfter=No
+18	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0043
+# text = Mas minha preocupação não é só comigo.
+1	Mas	mas	CCONJ	_	_	8	cc	8:cc	_
+2	minha	meu	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	det	3:det	_
+3	preocupação	preocupação	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	8:nsubj	_
+4	não	não	ADV	_	_	8	advmod	8:advmod	_
+5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop	_
+6	só	só	ADV	_	_	8	advmod	8:advmod	_
+7-8	comigo	_	_	_	_	_	_	_	_
+7	com	com	ADP	_	_	8	case	8:case	_
+8	mim	mim	PRON	_	Case=Dat|Number=Sing|Person=1|PronType=Prs	0	root	0:root	_
+9	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0045
+# text = Não é só com dinheiro.
+1	Não	não	ADV	_	_	5	advmod	5:advmod	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+3	só	só	ADV	_	_	5	advmod	5:advmod	_
+4	com	com	ADP	_	_	5	case	5:case	_
+5	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+6	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0047
+# text = É com tudo.
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+2	com	com	ADP	_	_	3	case	3:case	_
+3	tudo	tudo	PRON	_	PronType=Ind	0	root	0:root	SpaceAfter=No
+4	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0049
+# text = Com a cultura, com arte que não estão cuidando.
+1	Com	com	ADP	_	_	3	case	3:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	cultura	cultura	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+4	,	,	PUNCT	_	_	6	punct	6:punct	_
+5	com	com	ADP	_	_	6	case	6:case	_
+6	arte	arte	NOUN	_	Gender=Fem|Number=Sing	3	conj	3:conj|10:obj	_
+7	que	que	PRON	_	PronType=Rel	10	obj	6:ref	_
+8	não	não	ADV	_	_	10	advmod	10:advmod	_
+9	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	aux	10:aux	_
+10	cuidando	cuidar	VERB	_	VerbForm=Ger	6	acl:relcl	6:acl:relcl	SpaceAfter=No
+11	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0051
+# text = Com os mais pobres.
+1	Com	com	ADP	_	_	2	case	2:case	_
+2	os	o	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Dem	0	root	0:root	_
+3	mais	mais	ADV	_	_	4	advmod	4:advmod	_
+4	pobres	pobre	ADJ	_	Number=Plur	2	amod	2:amod	SpaceAfter=No
+5	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0053
+# text = Com a falta de verdade.
+1	Com	com	ADP	_	_	3	case	3:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	falta	falta	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	verdade	verdade	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:de	SpaceAfter=No
+6	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0055
+# text = Todos os artistas deveriam compartilhar dessa mesma opinião.
+1	Todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Ind	3	det	3:det	_
+2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	3:det	_
+3	artistas	artista	NOUN	_	Number=Plur	4	nsubj	4:nsubj|5:nsubj	_
+4	deveriam	dever	VERB	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	0	root	0:root	_
+5	compartilhar	compartilhar	VERB	_	VerbForm=Inf	4	xcomp	4:xcomp	_
+6-7	dessa	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	9	case	9:case	_
+7	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	9	det	9:det	_
+8	mesma	mesmo	DET	_	Gender=Fem|Number=Sing|PronType=Dem	9	det	9:det	_
+9	opinião	opinião	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:de	SpaceAfter=No
+10	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0057
+# text = Eu não entendo quando é de outra forma.
+1	Eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	3:nsubj	_
+2	não	não	ADV	_	_	3	advmod	3:advmod	_
+3	entendo	entender	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	quando	quando	SCONJ	_	_	8	mark	8:mark	_
+5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	outra	outro	DET	_	Gender=Fem|Number=Sing|PronType=Ind	8	det	8:det	_
+8	forma	forma	NOUN	_	Gender=Fem|Number=Sing	3	ccomp	3:ccomp	SpaceAfter=No
+9	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0059
+# text = Como atriz eu preciso fortalecer o poder transformador do ator.
+1	Como	como	ADP	_	_	2	case	2:case	_
+2	atriz	atriz	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:como	_
+3	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	4:nsubj|5:nsubj	_
+4	preciso	precisar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	fortalecer	fortalecer	VERB	_	VerbForm=Inf	4	xcomp	4:xcomp	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	poder	poder	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+8	transformador	transformador	ADJ	_	Gender=Masc|Number=Sing	7	amod	7:amod	_
+9-10	do	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	ator	ator	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	SpaceAfter=No
+12	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0061
+# text = Eu fui petista.
+1	Eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	3:nsubj	_
+2	fui	ser	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	3	cop	3:cop	_
+3	petista	petista	NOUN	_	Number=Sing	0	root	0:root	SpaceAfter=No
+4	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0063
+# text = Eu fui a jantares com Lula, e o vi se apresentar pra meia dúzia de gatos pingados.
+1	Eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	2:nsubj|10:nsubj	_
+2	fui	ir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	a	a	ADP	_	_	4	case	4:case	_
+4	jantares	jantar	NOUN	_	Gender=Masc|Number=Plur	2	obl	2:obl:a	_
+5	com	com	ADP	_	_	6	case	6:case	_
+6	Lula	Lula	PROPN	_	_	4	nmod	4:nmod:com	SpaceAfter=No
+7	,	,	PUNCT	_	_	10	punct	10:punct	_
+8	e	e	CCONJ	_	_	10	cc	10:cc	_
+9	o	o	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	obj	10:obj|12:nsubj	_
+10	vi	ver	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	2	conj	2:conj:e	_
+11	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	12	expl	12:expl	_
+12	apresentar	apresentar	VERB	_	Number=Sing|Person=3|VerbForm=Inf	10	xcomp	10:xcomp	_
+13-14	pra	_	_	_	_	_	_	_	_
+13	para	para	ADP	_	_	16	case	16:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+15	meia	meio	NUM	_	Gender=Fem|NumType=Frac	16	amod	16:amod	_
+16	dúzia	dúzia	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl:para	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	gatos	gato	NOUN	_	Gender=Masc|Number=Plur	16	nmod	16:nmod:de	_
+19	pingados	pingado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	18	amod	18:amod	SpaceAfter=No
+20	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0065
+# text = O PT não era isso.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	PT	PT	PROPN	_	_	5	nsubj	5:nsubj	_
+3	não	não	ADV	_	_	5	advmod	5:advmod	_
+4	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	cop	5:cop	_
+5	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	0	root	0:root	SpaceAfter=No
+6	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0067
+# text = É agora um partido doente, bandido.
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+2	agora	agora	ADV	_	_	4	advmod	4:advmod	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	partido	partido	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+5	doente	doente	ADJ	_	Number=Sing	4	amod	4:amod	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	bandido	bandido	ADJ	_	Gender=Masc|Number=Sing	5	conj	4:amod|5:conj	SpaceAfter=No
+8	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0069
+# text = Nós temos que reagir.
+1	Nós	nós	PRON	_	Case=Nom|Number=Plur|Person=1|PronType=Prs	2	nsubj	2:nsubj|4:nsubj	_
+2	temos	ter	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	ADP	_	_	4	mark	4:mark	_
+4	reagir	reagir	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	SpaceAfter=No
+5	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0071
+# text = Nós não vamos virar uma Venezuela.
+1	Nós	nós	PRON	_	Case=Nom|Number=Plur|Person=1|PronType=Prs	4	nsubj	4:nsubj	_
+2	não	não	ADV	_	_	4	advmod	4:advmod	_
+3	vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	4	aux	4:aux	_
+4	virar	virar	VERB	_	VerbForm=Inf	0	root	0:root	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	Venezuela	Venezuela	PROPN	_	_	4	obj	4:obj	SpaceAfter=No
+7	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0073
+# text = A entrevista completa está no portal Ego.Globo.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	entrevista	entrevista	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj	_
+3	completa	completo	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	_
+4	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+5-6	no	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	portal	portal	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+8	Ego.Globo	Ego.Globo	PROPN	_	_	7	nmod	7:nmod	SpaceAfter=No
+9	.	.	PUNCT	_	_	7	punct	7:punct	_

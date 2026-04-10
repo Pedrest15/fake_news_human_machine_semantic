@@ -1,0 +1,310 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = EUA colocam bombardeiros B-52 em "alerta 24 horas".
+1	EUA	EUA	PROPN	_	_	2	nsubj	2:nsubj	_
+2	colocam	colocar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	bombardeiros	bombardeiro	NOUN	_	Gender=Masc|Number=Plur	2	obj	2:obj	_
+4	B-52	B-52	PROPN	_	_	3	nmod	3:nmod	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	"	"	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+7	alerta	alerta	NOUN	_	Number=Sing	2	obl	2:obl:em	_
+8	24	24	NUM	_	NumType=Card	9	nummod	9:nummod	_
+9	horas	hora	NOUN	_	Gender=Fem|Number=Plur	7	nmod	7:nmod	SpaceAfter=No
+10	"	"	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+11	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = A Força Aérea dos Estados Unidos ordenou que seus bombardeiros nucleares estejam em ESTADO DE ALERTA 24 HORAS.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Força	Força	PROPN	_	_	8	nsubj	8:nsubj	_
+3	Aérea	Aérea	PROPN	_	_	2	flat:name	2:flat:name	_
+4-5	dos	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	6:det	_
+6	Estados	Estados	PROPN	_	_	2	nmod	2:nmod:de	_
+7	Unidos	Unidos	PROPN	_	_	6	flat:name	6:flat:name	_
+8	ordenou	ordenar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	que	que	SCONJ	_	_	15	mark	15:mark	_
+10	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	11	det	11:det	_
+11	bombardeiros	bombardeiro	NOUN	_	Gender=Masc|Number=Plur	15	nsubj	15:nsubj	_
+12	nucleares	nuclear	ADJ	_	Number=Plur	11	amod	11:amod	_
+13	estejam	estar	AUX	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	cop	15:cop	_
+14	em	em	ADP	_	_	15	case	15:case	_
+15	ESTADO	ESTADO	PROPN	_	_	8	ccomp	8:ccomp	_
+16	DE	de	ADP	_	_	17	case	17:case	_
+17	ALERTA	ALERTA	PROPN	_	_	15	nmod	15:nmod:de	_
+18	24	24	NUM	_	NumType=Card	19	nummod	19:nummod	_
+19	HORAS	HORAS	PROPN	_	_	15	nmod	15:nmod	SpaceAfter=No
+20	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0005
+# text = Donald Trump e Kim Jong-un estão colocando o mundo à beira de uma Terceira Guerra Mundial após numerosas ameaças de mísseis nucleares, de ambos os lados.
+1	Donald	Donald	PROPN	_	_	7	nsubj	7:nsubj	_
+2	Trump	Trump	PROPN	_	_	1	flat:name	1:flat:name	_
+3	e	e	CCONJ	_	_	4	cc	4:cc	_
+4	Kim	Kim	PROPN	_	_	1	conj	1:conj:e|7:nsubj	_
+5	Jong-un	Jong-un	PROPN	_	_	4	flat:name	4:flat:name	_
+6	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux	7:aux	_
+7	colocando	colocar	VERB	_	VerbForm=Ger	0	root	0:root	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+10-11	à	_	_	_	_	_	_	_	_
+10	a	a	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	beira	beira	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:a	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	Terceira	Terceira	PROPN	_	_	12	nmod	12:nmod:de	_
+16	Guerra	Guerra	PROPN	_	_	15	flat:name	15:flat:name	_
+17	Mundial	Mundial	PROPN	_	_	15	flat:name	15:flat:name	_
+18	após	após	ADP	_	_	20	case	20:case	_
+19	numerosas	numeroso	ADJ	_	Gender=Fem|Number=Plur	20	amod	20:amod	_
+20	ameaças	ameaça	NOUN	_	Gender=Fem|Number=Plur	7	obl	7:obl:após	_
+21	de	de	ADP	_	_	22	case	22:case	_
+22	mísseis	míssil	NOUN	_	Number=Plur	20	nmod	20:nmod:de	_
+23	nucleares	nuclear	ADJ	_	Number=Plur	22	amod	22:amod	SpaceAfter=No
+24	,	,	PUNCT	_	_	28	punct	28:punct	_
+25	de	de	ADP	_	_	28	case	28:case	_
+26	ambos	ambos	DET	_	Gender=Masc|Number=Plur|PronType=Ind	28	det	28:det	_
+27	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	28:det	_
+28	lados	lado	NOUN	_	Gender=Masc|Number=Plur	20	nmod	20:nmod:de	SpaceAfter=No
+29	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0007
+# text = Trump advertiu que o comando do Reino Eremita enfrentaria a destruição caso não abandonasse seu programa de armas nucleares.
+1	Trump	Trump	PROPN	_	_	2	nsubj	2:nsubj	_
+2	advertiu	advertir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	10	mark	10:mark	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	comando	comando	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	10:nsubj	_
+6-7	do	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	Reino	Reino	PROPN	_	_	5	nmod	5:nmod:de	_
+9	Eremita	Eremita	PROPN	_	_	8	flat:name	8:flat:name	_
+10	enfrentaria	enfrentar	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	2	ccomp	2:ccomp	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	destruição	destruição	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+13	caso	caso	SCONJ	_	_	15	mark	15:mark	_
+14	não	não	ADV	_	_	15	advmod	15:advmod	_
+15	abandonasse	abandonar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	advcl	10:advcl:caso	_
+16	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	17	det	17:det	_
+17	programa	programa	NOUN	_	Gender=Masc|Number=Sing	15	obj	15:obj	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	armas	arma	NOUN	_	Gender=Fem|Number=Plur	17	nmod	17:nmod:de	_
+20	nucleares	nuclear	ADJ	_	Number=Plur	19	amod	19:amod	SpaceAfter=No
+21	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0009
+# text = O tirano Kim Jong-un disse que continuará desenvolvendo seus mísseis até que um tenha alcance suficiente para atingir Nova York.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	tirano	tirano	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+3	Kim	Kim	PROPN	_	_	2	nmod	2:nmod	_
+4	Jong-un	Jong-un	PROPN	_	_	3	flat:name	3:flat:name	_
+5	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	que	que	SCONJ	_	_	7	mark	7:mark	_
+7	continuará	continuar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	5	ccomp	5:ccomp	_
+8	desenvolvendo	desenvolver	VERB	_	VerbForm=Ger	7	xcomp	7:xcomp	_
+9	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	10	det	10:det	_
+10	mísseis	míssil	NOUN	_	Number=Plur	8	obj	8:obj	_
+11	até	até	ADP	_	ExtPos=SCONJ	14	mark	14:mark	_
+12	que	que	SCONJ	_	_	11	fixed	11:fixed	_
+13	um	um	NUM	_	Gender=Masc|NumType=Card	14	nsubj	14:nsubj	_
+14	tenha	ter	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	advcl	7:advcl:até_que	_
+15	alcance	alcance	NOUN	_	Gender=Masc|Number=Sing	14	obj	14:obj	_
+16	suficiente	suficiente	ADJ	_	Number=Sing	15	amod	15:amod	_
+17	para	para	ADP	_	_	18	mark	18:mark	_
+18	atingir	atingir	VERB	_	VerbForm=Inf	16	acl	16:acl:para	_
+19	Nova	Nova	PROPN	_	_	18	obj	18:obj	_
+20	York	York	PROPN	_	_	19	flat:name	19:flat:name	SpaceAfter=No
+21	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0011
+# text = Em resposta, Trump colocou seus aviões bombardeiros B-52 no estado de alerta de 24 horas, um movimento não visto desde que a Guerra Fria, terminada 1991.
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	resposta	resposta	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:em	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	Trump	Trump	PROPN	_	_	5	nsubj	5:nsubj	_
+5	colocou	colocar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	7	det	7:det	_
+7	aviões	avião	NOUN	_	Gender=Masc|Number=Plur	5	obj	5:obj	_
+8	bombardeiros	bombardeiro	NOUN	_	Gender=Masc|Number=Plur	7	nmod	7:nmod	_
+9	B-52	B-52	PROPN	_	_	7	nmod	7:nmod	_
+10-11	no	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	estado	estado	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:em	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	alerta	alerta	NOUN	_	Number=Sing	12	nmod	12:nmod:de	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	24	24	NUM	_	NumType=Card	17	nummod	17:nummod	_
+17	horas	hora	NOUN	_	Gender=Fem|Number=Plur	12	nmod	12:nmod:de	SpaceAfter=No
+18	,	,	PUNCT	_	_	20	punct	20:punct	_
+19	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	movimento	movimento	NOUN	_	Gender=Masc|Number=Sing	5	parataxis	5:parataxis	_
+21	não	não	ADV	_	_	22	advmod	22:advmod	_
+22	visto	ver	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	20	acl	20:acl	_
+23	desde	desde	ADP	_	ExtPos=SCONJ	26	mark	26:mark	_
+24	que	que	SCONJ	_	_	23	fixed	23:fixed	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	Guerra	Guerra	PROPN	_	_	22	advcl	22:advcl:desde_que	_
+27	Fria	Fria	PROPN	_	_	26	flat:name	26:flat:name	SpaceAfter=No
+28	,	,	PUNCT	_	_	29	punct	29:punct	_
+29	terminada	terminar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	26	acl	26:acl	_
+30	1991	1991	NUM	_	NumType=Card	29	obj	29:obj	SpaceAfter=No
+31	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0013
+# text = O chefe de gabinete do Força Aérea, David L. Goldfein, declarou: Este é mais um passo importante para garantir que estejamos preparados para qualquer situação que venha a ocorrer O general Goldfein acrescentou que os preparativos para a ordem de alerta estão todos em andamento: A Força Aérea está sendo encarregada de encontrar formas de usar armas nucleares como dissuasão ou até mesmo em combate.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	chefe	chefe	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	14:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	gabinete	gabinete	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Força	Força	PROPN	_	_	4	nmod	4:nmod:de	_
+8	Aérea	Aérea	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+9	,	,	PUNCT	_	_	10	punct	10:punct	_
+10	David	David	PROPN	_	_	2	appos	2:appos	_
+11	L.	L.	PROPN	_	_	10	flat:name	10:flat:name	_
+12	Goldfein	Goldfein	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+13	,	,	PUNCT	_	_	10	punct	10:punct	_
+14	declarou	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+15	:	:	PUNCT	_	_	20	punct	20:punct	_
+16	Este	este	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	20	nsubj	20:nsubj	_
+17	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	cop	20:cop	_
+18	mais	mais	ADV	_	_	19	advmod	19:advmod	_
+19	um	um	NUM	_	Gender=Masc|NumType=Card	20	nummod	20:nummod	_
+20	passo	passo	NOUN	_	Gender=Masc|Number=Sing	14	ccomp:speech	14:ccomp:speech	_
+21	importante	importante	ADJ	_	Number=Sing	20	amod	20:amod	_
+22	para	para	ADP	_	_	23	mark	23:mark	_
+23	garantir	garantir	VERB	_	VerbForm=Inf	20	acl	20:acl:para	_
+24	que	que	SCONJ	_	_	26	mark	26:mark	_
+25	estejamos	estar	AUX	_	Mood=Sub|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	26	cop	26:cop	_
+26	preparados	preparado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	23	ccomp	23:ccomp	_
+27	para	para	ADP	_	_	29	case	29:case	_
+28	qualquer	qualquer	DET	_	Number=Sing|PronType=Ind	29	det	29:det	_
+29	situação	situação	NOUN	_	Gender=Fem|Number=Sing	26	obl	26:obl:para|33:nsubj	_
+30	que	que	PRON	_	PronType=Rel	33	nsubj	29:ref	_
+31	venha	vir	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	33	aux	33:aux	_
+32	a	a	ADP	_	_	33	mark	33:mark	_
+33	ocorrer	ocorrer	VERB	_	VerbForm=Inf	29	acl:relcl	29:acl:relcl	_
+34	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	35:det	_
+35	general	general	NOUN	_	Number=Sing	14	nsubj	14:nsubj	_
+36	Goldfein	Goldfein	PROPN	_	_	35	nmod	35:nmod	_
+37	acrescentou	acrescentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	33	dep	33:dep	_
+38	que	que	SCONJ	_	_	49	mark	49:mark	_
+39	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	40	det	40:det	_
+40	preparativos	preparativo	NOUN	_	Gender=Masc|Number=Plur	49	nsubj	49:nsubj	_
+41	para	para	ADP	_	_	43	case	43:case	_
+42	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	43:det	_
+43	ordem	ordem	NOUN	_	Gender=Fem|Number=Sing	40	nmod	40:nmod:para	_
+44	de	de	ADP	_	_	45	case	45:case	_
+45	alerta	alerta	NOUN	_	Number=Sing	43	nmod	43:nmod:de	_
+46	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	49	cop	49:cop	_
+47	todos	todo	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	20	nsubj	20:nsubj	_
+48	em	em	ADP	_	_	49	case	49:case	_
+49	andamento	andamento	NOUN	_	Gender=Masc|Number=Sing	23	ccomp	23:ccomp	SpaceAfter=No
+50	:	:	PUNCT	_	_	56	punct	56:punct	_
+51	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	52	det	52:det	_
+52	Força	Força	PROPN	_	_	56	nsubj	56:nsubj:pass	_
+53	Aérea	Aérea	PROPN	_	_	52	flat:name	52:flat:name	_
+54	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	56	aux	56:aux	_
+55	sendo	ser	AUX	_	VerbForm=Ger	56	aux:pass	56:aux:pass	_
+56	encarregada	encarregar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	14	parataxis	14:parataxis	_
+57	de	de	ADP	_	_	58	mark	58:mark	_
+58	encontrar	encontrar	VERB	_	VerbForm=Inf	56	acl	56:acl:de	_
+59	formas	forma	NOUN	_	Gender=Fem|Number=Plur	58	obj	58:obj	_
+60	de	de	ADP	_	_	61	mark	61:mark	_
+61	usar	usar	VERB	_	VerbForm=Inf	59	acl	59:acl:de	_
+62	armas	arma	NOUN	_	Gender=Fem|Number=Plur	61	obj	61:obj	_
+63	nucleares	nuclear	ADJ	_	Number=Plur	62	amod	62:amod	_
+64	como	como	ADP	_	_	65	case	65:case	_
+65	dissuasão	dissuasão	NOUN	_	Gender=Fem|Number=Sing	61	obl	61:obl:como	_
+66	ou	ou	CCONJ	_	_	70	cc	70:cc	_
+67	até	até	ADV	_	_	70	advmod	70:advmod	_
+68	mesmo	mesmo	ADV	_	_	70	advmod	70:advmod	_
+69	em	em	ADP	_	_	70	case	70:case	_
+70	combate	combate	NOUN	_	Gender=Masc|Number=Sing	61	conj	59:nmod:de|61:conj:ou	SpaceAfter=No
+71	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0015
+# text = O mundo é um lugar perigoso e temos pessoas que falam abertamente sobre o uso de armas nucleares.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	lugar	lugar	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+6	perigoso	perigoso	ADJ	_	Gender=Masc|Number=Sing	5	amod	5:amod	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	temos	ter	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	5	conj	5:conj:e	_
+9	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	8	obj	8:obj|11:nsubj	_
+10	que	que	PRON	_	PronType=Rel	11	nsubj	9:ref	_
+11	falam	falar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	acl:relcl	9:acl:relcl	_
+12	abertamente	abertamente	ADV	_	_	11	advmod	11:advmod	_
+13	sobre	sobre	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	uso	uso	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:sobre	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	armas	arma	NOUN	_	Gender=Fem|Number=Plur	15	nmod	15:nmod:de	_
+18	nucleares	nuclear	ADJ	_	Number=Plur	17	amod	17:amod	SpaceAfter=No
+19	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0017
+# text = Goldfein destacou que outras unidades da aviação norte-americana também possuem alta capacidade nuclear e estão aptas para garantir a segurança dos EUA e seus aliados.
+1	Goldfein	Goldfein	PROPN	_	_	2	nsubj	2:nsubj	_
+2	destacou	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	11	mark	11:mark|17:mark	_
+4	outras	outro	DET	_	Gender=Fem|Number=Plur|PronType=Ind	5	det	5:det	_
+5	unidades	unidade	NOUN	_	Gender=Fem|Number=Plur	11	nsubj	11:nsubj|17:nsubj	_
+6-7	da	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	aviação	aviação	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	_
+9	norte-americana	norte-americano	ADJ	_	Gender=Fem|Number=Sing	8	amod	8:amod	_
+10	também	também	ADV	_	_	11	advmod	11:advmod	_
+11	possuem	possuir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	2:ccomp	_
+12	alta	alto	ADJ	_	Gender=Fem|Number=Sing	13	amod	13:amod	_
+13	capacidade	capacidade	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	_
+14	nuclear	nuclear	ADJ	_	Number=Sing	13	amod	13:amod	_
+15	e	e	CCONJ	_	_	17	cc	17:cc	_
+16	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	cop	17:cop	_
+17	aptas	apto	ADJ	_	Gender=Fem|Number=Plur	11	conj	2:ccomp|11:conj:e	_
+18	para	para	ADP	_	_	19	mark	19:mark	_
+19	garantir	garantir	VERB	_	VerbForm=Inf	17	acl	17:acl:para	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	segurança	segurança	NOUN	_	Number=Sing	19	obj	19:obj	_
+22-23	dos	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	24	case	24:case|27:case	_
+23	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	24:det	_
+24	EUA	EUA	PROPN	_	_	21	nmod	21:nmod:de	_
+25	e	e	CCONJ	_	_	27	cc	27:cc	_
+26	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	27	det	27:det	_
+27	aliados	aliado	NOUN	_	Gender=Masc|Number=Plur	24	conj	21:nmod:de|24:conj:e	SpaceAfter=No
+28	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0019
+# text = Os B-52 foram colocados em alerta durante décadas quando os EUA enfrentavam diversas ameaças vindas da extinta União Soviética.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	B-52	B-52	PROPN	_	_	4	nsubj:pass	4:nsubj:pass	_
+3	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	colocados	colocar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5	em	em	ADP	_	_	6	case	6:case	_
+6	alerta	alerta	NOUN	_	Number=Sing	4	obl	4:obl:em	_
+7	durante	durante	ADP	_	_	8	case	8:case	_
+8	décadas	década	NOUN	_	Gender=Fem|Number=Plur	4	obl	4:obl:durante	_
+9	quando	quando	SCONJ	_	_	12	mark	12:mark	_
+10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	11:det	_
+11	EUA	EUA	PROPN	_	_	12	nsubj	12:nsubj	_
+12	enfrentavam	enfrentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	4	advcl	4:advcl:quando	_
+13	diversas	diversos	DET	_	Gender=Fem|Number=Plur|PronType=Dem	14	det	14:det	_
+14	ameaças	ameaça	NOUN	_	Gender=Fem|Number=Plur	12	obj	12:obj	_
+15	vindas	vir	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	14	acl	14:acl	_
+16-17	da	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	19	case	19:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+18	extinta	extinto	ADJ	_	Gender=Fem|Number=Sing	19	amod	19:amod	_
+19	União	União	PROPN	_	_	15	obl	15:obl:de	_
+20	Soviética	Soviética	PROPN	_	_	19	flat:name	19:flat:name	SpaceAfter=No
+21	.	.	PUNCT	_	_	4	punct	4:punct	_

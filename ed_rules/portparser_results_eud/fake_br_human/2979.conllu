@@ -1,0 +1,121 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Governo Dilma é tão desonesto, mas tão desonesto que até Paulo Maluf deu o grito.
+1	Governo	governo	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj|9:nsubj	_
+2	Dilma	Dilma	PROPN	_	_	1	nmod	1:nmod	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop|9:cop	_
+4	tão	tão	ADV	_	_	5	advmod	5:advmod	_
+5	desonesto	desonesto	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+6	,	,	PUNCT	_	_	9	punct	9:punct	_
+7	mas	mas	CCONJ	_	_	9	cc	9:cc	_
+8	tão	tão	ADV	_	_	9	advmod	9:advmod	_
+9	desonesto	desonesto	ADJ	_	Gender=Masc|Number=Sing	5	conj	5:conj:mas	_
+10	que	que	SCONJ	_	_	14	mark	14:mark	_
+11	até	até	ADV	_	_	12	advmod	12:advmod	_
+12	Paulo	Paulo	PROPN	_	_	14	nsubj	14:nsubj	_
+13	Maluf	Maluf	PROPN	_	_	12	flat:name	12:flat:name	_
+14	deu	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	advcl	5:advcl:que|9:advcl:que	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	grito	grito	NOUN	_	Gender=Masc|Number=Sing	14	obj	14:obj	SpaceAfter=No
+17	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0003
+# text = Paulo Maluf acusou o Planalto [leia-se Dilma e Lula] de oferecer cargos para comprar o apoio de deputados contra o impeachment.
+1	Paulo	Paulo	PROPN	_	_	3	nsubj	3:nsubj	_
+2	Maluf	Maluf	PROPN	_	_	1	flat:name	1:flat:name	_
+3	acusou	acusar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	Planalto	Planalto	PROPN	_	_	3	obj	3:obj|14:nsubj	_
+6	[	[	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+7-8	leia-se	_	_	_	_	_	_	_	_
+7	leia	ler	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	parataxis	3:parataxis	_
+8	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	7	expl:impers	7:expl:impers	_
+9	Dilma	Dilma	PROPN	_	_	7	obj	7:obj	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	Lula	Lula	PROPN	_	_	9	conj	7:obj|9:conj:e	SpaceAfter=No
+12	]	]	PUNCT	_	_	7	punct	7:punct	_
+13	de	de	ADP	_	_	14	mark	14:mark	_
+14	oferecer	oferecer	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+15	cargos	cargo	NOUN	_	Gender=Masc|Number=Plur	14	obj	14:obj	_
+16	para	para	ADP	_	_	17	mark	17:mark	_
+17	comprar	comprar	VERB	_	VerbForm=Inf	14	advcl	14:advcl:para	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	apoio	apoio	NOUN	_	Gender=Masc|Number=Sing	17	obj	17:obj	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	deputados	deputado	NOUN	_	Gender=Masc|Number=Plur	19	nmod	19:nmod:de	_
+22	contra	contra	ADP	_	_	24	case	24:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	impeachment	impeachment	NOUN	_	Gender=Masc|Number=Sing	21	nmod	21:nmod:contra	SpaceAfter=No
+25	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0005
+# text = O governo está se metendo num processo de compra e venda que é detestável.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	governo	governo	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+3	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	5:aux	_
+4	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	5	expl	5:expl	_
+5	metendo	meter	VERB	_	VerbForm=Ger	0	root	0:root	_
+6-7	num	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	processo	processo	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:em|15:nsubj	_
+9	de	de	ADP	_	_	10	case	10:case|12:case	_
+10	compra	compra	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	venda	venda	NOUN	_	Gender=Fem|Number=Sing	10	conj	8:nmod:de|10:conj:e	_
+13	que	que	PRON	_	PronType=Rel	15	nsubj	8:ref	_
+14	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	15:cop	_
+15	detestável	detestável	ADJ	_	Number=Sing	8	acl:relcl	8:acl:relcl	SpaceAfter=No
+16	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0007
+# text = Querem construir maioria no Legislativo dividindo o Executivo.
+1	Querem	querer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	construir	construir	VERB	_	VerbForm=Inf	1	xcomp	1:xcomp	_
+3	maioria	maioria	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+4-5	no	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	Legislativo	Legislativo	PROPN	_	_	2	obl	2:obl:em	_
+7	dividindo	dividir	VERB	_	VerbForm=Ger	2	advcl	2:advcl	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	Executivo	Executivo	PROPN	_	_	7	obj	7:obj	SpaceAfter=No
+10	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0009
+# text = Não é assim, em entrevista ao jornal Folha/SP.
+1	Não	não	ADV	_	_	3	advmod	3:advmod	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+3	assim	assim	ADV	_	_	0	root	0:root	SpaceAfter=No
+4	,	,	PUNCT	_	_	6	punct	6:punct	_
+5	em	em	ADP	_	_	6	case	6:case	_
+6	entrevista	entrevista	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:em	_
+7-8	ao	_	_	_	_	_	_	_	_
+7	a	a	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	jornal	jornal	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:a	_
+10	Folha/SP	Folha/SP	PROPN	_	_	9	nmod	9:nmod	SpaceAfter=No
+11	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0011
+# text = Imagine só alguém ser denunciado por Paulo Maluf.
+1	Imagine	imaginar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	só	só	ADV	_	_	1	advmod	1:advmod	_
+3	alguém	alguém	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	1	obj	1:obj	_
+4	ser	ser	AUX	_	Number=Sing|Person=3|VerbForm=Inf	5	aux:pass	5:aux:pass	_
+5	denunciado	denunciar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	1	ccomp	1:ccomp	_
+6	por	por	ADP	_	_	7	case	7:case	_
+7	Paulo	Paulo	PROPN	_	_	5	obl:agent	5:obl:agent	_
+8	Maluf	Maluf	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+9	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0013
+# text = É o fundo do poço!
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	fundo	fundo	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	poço	poço	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	SpaceAfter=No
+7	!	!	PUNCT	_	_	3	punct	3:punct	_

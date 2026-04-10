@@ -1,0 +1,117 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = URGENTE: ALERTA RJ! Enviado pelo Conselho Estadual de Saúde.
+1	URGENTE	URGENTE	PROPN	_	_	0	root	0:root	SpaceAfter=No
+2	:	:	PUNCT	_	_	3	punct	3:punct	_
+3	ALERTA	ALERTA	PROPN	_	_	1	parataxis	1:parataxis	_
+4	RJ	RJ	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+5	!	!	PUNCT	_	_	3	punct	3:punct	_
+6	Enviado	enviar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	1	parataxis	1:parataxis	_
+7-8	pelo	_	_	_	_	_	_	_	_
+7	por	por	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	Conselho	Conselho	PROPN	_	_	6	obl:agent	6:obl:agent	_
+10	Estadual	Estadual	PROPN	_	_	9	flat:name	9:flat:name	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	Saúde	Saúde	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+13	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = A Cedae detectou uma contaminação grave na rede de abastecimento.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Cedae	Cedae	PROPN	_	_	3	nsubj	3:nsubj	_
+3	detectou	detectar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	contaminação	contaminação	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+6	grave	grave	ADJ	_	Number=Sing	5	amod	5:amod	_
+7-8	na	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	rede	rede	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:em	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	abastecimento	abastecimento	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:de	SpaceAfter=No
+12	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0005
+# text = NINGUÉM deve consumir água da torneira ou do filtro, apenas água fervida ou mineral de marcas renomadas como Crystal e Bonafont.
+1	NINGUÉM	ninguém	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	2	nsubj	2:nsubj|3:nsubj|14:nsubj	_
+2	deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	consumir	consumir	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	_
+4	água	água	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+5-6	da	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	torneira	torneira	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:de	_
+8	ou	ou	CCONJ	_	_	11	cc	11:cc	_
+9-10	do	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	filtro	filtro	NOUN	_	Gender=Masc|Number=Sing	7	conj	4:nmod:de|7:conj:ou	SpaceAfter=No
+12	,	,	PUNCT	_	_	14	punct	14:punct	_
+13	apenas	apenas	ADV	_	_	14	advmod	14:advmod	_
+14	água	água	NOUN	_	Gender=Fem|Number=Sing	3	conj	2:xcomp|3:conj	_
+15	fervida	fervido	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	14	amod	14:amod	_
+16	ou	ou	CCONJ	_	_	17	cc	17:cc	_
+17	mineral	mineral	ADJ	_	Number=Sing	15	conj	14:amod|15:conj:ou	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	marcas	marca	NOUN	_	Gender=Fem|Number=Plur	14	nmod	14:nmod:de	_
+20	renomadas	renomado	ADJ	_	Gender=Fem|Number=Plur	19	amod	19:amod	_
+21	como	como	ADP	_	_	22	case	22:case|24:case	_
+22	Crystal	Crystal	PROPN	_	_	19	nmod	19:nmod:como	_
+23	e	e	CCONJ	_	_	24	cc	24:cc	_
+24	Bonafont	Bonafont	PROPN	_	_	22	conj	19:nmod:como|22:conj:e	SpaceAfter=No
+25	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0007
+# text = Evite galões de 20 litros sem origem comprovada.
+1	Evite	evitar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	galões	galão	NOUN	_	Gender=Masc|Number=Plur	1	obj	1:obj	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	20	20	NUM	_	NumType=Card	5	nummod	5:nummod	_
+5	litros	litro	NOUN	_	Gender=Masc|Number=Plur	2	nmod	2:nmod:de	_
+6	sem	sem	ADP	_	_	7	case	7:case	_
+7	origem	origem	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:sem	_
+8	comprovada	comprovar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	7	acl	7:acl	SpaceAfter=No
+9	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0009
+# text = Hospitais da região estão superlotados com pacientes apresentando graves problemas gastrointestinais.
+1	Hospitais	hospital	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	6:nsubj	_
+2-3	da	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	região	região	NOUN	_	Gender=Fem|Number=Sing	1	nmod	1:nmod:de	_
+5	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+6	superlotados	superlotado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	0	root	0:root	_
+7	com	com	ADP	_	_	8	case	8:case	_
+8	pacientes	paciente	NOUN	_	Number=Plur	6	obl	6:obl:com	_
+9	apresentando	apresentar	VERB	_	VerbForm=Ger	8	acl	8:acl	_
+10	graves	grave	ADJ	_	Number=Plur	11	amod	11:amod	_
+11	problemas	problema	NOUN	_	Gender=Masc|Number=Plur	9	obj	9:obj	_
+12	gastrointestinais	gastrointestinal	ADJ	_	Number=Plur	11	amod	11:amod	SpaceAfter=No
+13	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0011
+# text = Muitos relatam água com cheiro e sabor de esgoto.
+1	Muitos	muito	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	2	nsubj	2:nsubj	_
+2	relatam	relatar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	água	água	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+4	com	com	ADP	_	_	5	case	5:case|7:case	_
+5	cheiro	cheiro	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:com	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	sabor	sabor	NOUN	_	Gender=Masc|Number=Sing	5	conj	3:nmod:com|5:conj:e	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	esgoto	esgoto	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	SpaceAfter=No
+10	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0013
+# text = A situação é crítica e exige ação imediata.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	situação	situação	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj|6:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+4	crítica	crítico	ADJ	_	Gender=Fem|Number=Sing	0	root	0:root	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	exige	exigir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	4:conj:e	_
+7	ação	ação	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+8	imediata	imediato	ADJ	_	Gender=Fem|Number=Sing	7	amod	7:amod	SpaceAfter=No
+9	.	.	PUNCT	_	_	4	punct	4:punct	_

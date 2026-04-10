@@ -1,0 +1,80 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Lula debocha, chama procuradora de "querida" e leva um "fumo" histórico.
+1	Lula	Lula	PROPN	_	_	2	nsubj	2:nsubj|4:nsubj|11:nsubj	_
+2	debocha	debochar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	chama	chamar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:e	_
+5	procuradora	procurador	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	querida	querido	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:de	SpaceAfter=No
+9	"	"	PUNCT	_	_	8	punct	8:punct	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	leva	levar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:e	_
+12	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+13	"	"	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+14	fumo	fumo	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj	SpaceAfter=No
+15	"	"	PUNCT	_	_	14	punct	14:punct	_
+16	histórico	histórico	ADJ	_	Gender=Masc|Number=Sing	14	amod	14:amod	SpaceAfter=No
+17	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Em primeiro lugar, gostaríamos de destacar a educação e o comportamento da procuradora, que se refere a Lula como senhor ex-presidente.
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	primeiro	primeiro	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	3	amod	3:amod	_
+3	lugar	lugar	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:em	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	gostaríamos	gostar	VERB	_	Mood=Cnd|Number=Plur|Person=1|VerbForm=Fin	0	root	0:root	_
+6	de	de	ADP	_	_	7	mark	7:mark	_
+7	destacar	destacar	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	educação	educação	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	_
+10	e	e	CCONJ	_	_	12	cc	12:cc	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	comportamento	comportamento	NOUN	_	Gender=Masc|Number=Sing	9	conj	7:obj|9:conj:e	_
+13-14	da	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	procuradora	procurador	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:de|12:nmod:de|19:nsubj	SpaceAfter=No
+16	,	,	PUNCT	_	_	19	punct	19:punct	_
+17	que	que	PRON	_	PronType=Rel	19	nsubj	15:ref	_
+18	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	19	expl	19:expl	_
+19	refere	referir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	acl:relcl	15:acl:relcl	_
+20	a	a	ADP	_	_	21	case	21:case	_
+21	Lula	Lula	PROPN	_	_	19	obl	19:obl:a	_
+22	como	como	ADP	_	_	24	case	24:case	_
+23	senhor	senhor	NOUN	_	Gender=Masc|Number=Sing	24	amod	24:amod	_
+24	ex-presidente	ex-presidente	NOUN	_	Number=Sing	21	nmod	21:nmod:como	SpaceAfter=No
+25	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0005
+# text = Já Lula, com aquela educação de berço e sarcasmo que lhe é peculiar, faz deboche quando se refere a terceiros.
+1	Já	já	CCONJ	_	_	16	cc	16:cc	_
+2	Lula	Lula	PROPN	_	_	16	nsubj	16:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
+4	com	com	ADP	_	_	6	case	6:case|10:case	_
+5	aquela	aquele	DET	_	Gender=Fem|Number=Sing|PronType=Dem	6	det	6:det	_
+6	educação	educação	NOUN	_	Gender=Fem|Number=Sing	16	obl	16:obl:com	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	berço	berço	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de	_
+9	e	e	CCONJ	_	_	10	cc	10:cc	_
+10	sarcasmo	sarcasmo	NOUN	_	Gender=Masc|Number=Sing	6	conj	6:conj:e|14:nsubj|16:obl:com	_
+11	que	que	PRON	_	PronType=Rel	14	nsubj	10:ref	_
+12	lhe	lhe	PRON	_	Case=Dat|Number=Sing|Person=3|PronType=Prs	14	iobj	14:iobj	_
+13	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	14:cop	_
+14	peculiar	peculiar	ADJ	_	Number=Sing	10	acl:relcl	10:acl:relcl	SpaceAfter=No
+15	,	,	PUNCT	_	_	6	punct	6:punct	_
+16	faz	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+17	deboche	deboche	NOUN	_	Gender=Masc|Number=Sing	16	obj	16:obj	_
+18	quando	quando	SCONJ	_	_	20	mark	20:mark	_
+19	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	20	expl	20:expl	_
+20	refere	referir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	advcl	16:advcl:quando	_
+21	a	a	ADP	_	_	22	case	22:case	_
+22	terceiros	terceiro	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	20	obl	20:obl:a	SpaceAfter=No
+23	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0006
+# text = confira:
+1	confira	conferir	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+2	:	:	PUNCT	_	_	1	punct	1:punct	_

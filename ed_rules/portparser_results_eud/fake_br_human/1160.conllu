@@ -1,0 +1,146 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Explosão e fogo no Vaticano deixa Europa em estado de alerta.
+1	Explosão	explosão	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj	_
+2	e	e	CCONJ	_	_	3	cc	3:cc	_
+3	fogo	fogo	NOUN	_	Gender=Masc|Number=Sing	1	conj	1:conj:e|7:nsubj	_
+4-5	no	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	Vaticano	Vaticano	PROPN	_	_	1	nmod	1:nmod:em|3:nmod:em	_
+7	deixa	deixar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	Europa	Europa	PROPN	_	_	7	obj	7:obj	_
+9	em	em	ADP	_	_	10	case	10:case	_
+10	estado	estado	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:em	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	alerta	alerta	NOUN	_	Number=Sing	10	nmod	10:nmod:de	SpaceAfter=No
+13	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0003
+# text = A imprensa ainda busca maiores informações sobre a cortina de fumaça que foi filmada saindo de um prédio nos arredores da sede da Igreja Católica Romana.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	imprensa	imprensa	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+3	ainda	ainda	ADV	_	_	4	advmod	4:advmod	_
+4	busca	buscar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	maiores	maior	ADJ	_	Number=Plur	6	amod	6:amod	_
+6	informações	informação	NOUN	_	Gender=Fem|Number=Plur	4	obj	4:obj	_
+7	sobre	sobre	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	cortina	cortina	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:sobre|14:nsubj:pass	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	fumaça	fumaça	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:de	_
+12	que	que	PRON	_	PronType=Rel	14	nsubj:pass	9:ref	_
+13	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	aux:pass	14:aux:pass	_
+14	filmada	filmar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	9	acl:relcl	9:acl:relcl	_
+15	saindo	sair	VERB	_	VerbForm=Ger	14	advcl	14:advcl	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	prédio	prédio	NOUN	_	Gender=Masc|Number=Sing	15	obl	15:obl:de	_
+19-20	nos	_	_	_	_	_	_	_	_
+19	em	em	ADP	_	_	21	case	21:case	_
+20	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	21:det	_
+21	arredores	arredor	NOUN	_	Gender=Masc|Number=Plur	15	obl	15:obl:em	_
+22-23	da	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	sede	sede	NOUN	_	Gender=Fem|Number=Sing	21	nmod	21:nmod:de	_
+25-26	da	_	_	_	_	_	_	_	_
+25	de	de	ADP	_	_	27	case	27:case	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	Igreja	Igreja	PROPN	_	_	24	nmod	24:nmod:de	_
+28	Católica	Católica	PROPN	_	_	27	flat:name	27:flat:name	_
+29	Romana	Romana	PROPN	_	_	27	flat:name	27:flat:name	SpaceAfter=No
+30	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0005
+# text = Um jornal de Roma relatou que o foco do incêndio partiu de um estacionamento localizado no pátio da igreja.
+1	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	jornal	jornal	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Roma	Roma	PROPN	_	_	2	nmod	2:nmod:de	_
+5	relatou	relatar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	que	que	SCONJ	_	_	12	mark	12:mark	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	foco	foco	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	12:nsubj	_
+9-10	do	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	incêndio	incêndio	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:de	_
+12	partiu	partir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	ccomp	5:ccomp	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	estacionamento	estacionamento	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:de	_
+16	localizado	localizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	15	acl	15:acl	_
+17-18	no	_	_	_	_	_	_	_	_
+17	em	em	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	pátio	pátio	NOUN	_	Gender=Masc|Number=Sing	16	obl	16:obl:em	_
+20-21	da	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	igreja	igreja	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:de	SpaceAfter=No
+23	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0007
+# text = Diversos vídeos e fotos foram publicados nas redes sociais.
+1	Diversos	diversos	DET	_	Gender=Masc|Number=Plur|PronType=Dem	2	det	2:det	_
+2	vídeos	vídeo	NOUN	_	Gender=Masc|Number=Plur	6	nsubj:pass	6:nsubj:pass	_
+3	e	e	CCONJ	_	_	4	cc	4:cc	_
+4	fotos	foto	NOUN	_	Number=Plur	2	conj	2:conj:e|6:nsubj:pass	_
+5	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	6	aux:pass	6:aux:pass	_
+6	publicados	publicar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	_
+7-8	nas	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	9:det	_
+9	redes	rede	NOUN	_	Gender=Fem|Number=Plur	6	obl	6:obl:em	_
+10	sociais	social	ADJ	_	Number=Plur	9	amod	9:amod	SpaceAfter=No
+11	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0009
+# text = O italiano Corriere della Sera confirmou que o fogo estaria localizado em uma área chamada Battistini-Cornelia, que fica dentro do Vaticano.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	italiano	italiano	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+3	Corriere	Corriere	PROPN	_	_	2	nmod	2:nmod	_
+4	della	della	PROPN	_	_	3	flat:name	3:flat:name	_
+5	Sera	Sera	PROPN	_	_	3	flat:name	3:flat:name	_
+6	confirmou	confirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	que	que	SCONJ	_	_	11	mark	11:mark	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	fogo	fogo	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	11:nsubj	_
+10	estaria	estar	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	11	cop	11:cop	_
+11	localizado	localizado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	6	ccomp	6:ccomp	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	área	área	NOUN	_	Gender=Fem|Number=Sing	11	obl	11:obl:em|19:nsubj	_
+15	chamada	chamar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	14	acl	14:acl	_
+16	Battistini-Cornelia	Battistini-Cornelia	PROPN	_	_	15	xcomp	15:xcomp	SpaceAfter=No
+17	,	,	PUNCT	_	_	19	punct	19:punct	_
+18	que	que	PRON	_	PronType=Rel	19	nsubj	14:ref	_
+19	fica	ficar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	acl:relcl	14:acl:relcl	_
+20	dentro	dentro	ADV	_	_	19	advmod	19:advmod	_
+21-22	do	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	Vaticano	Vaticano	PROPN	_	_	20	obl	20:obl:de	SpaceAfter=No
+24	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0011
+# text = A polícia local ainda está investigando o caso.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	polícia	polícia	NOUN	_	Number=Sing	6	nsubj	6:nsubj	_
+3	local	local	ADJ	_	Number=Sing	2	amod	2:amod	_
+4	ainda	ainda	ADV	_	_	6	advmod	6:advmod	_
+5	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	6:aux	_
+6	investigando	investigar	VERB	_	VerbForm=Ger	0	root	0:root	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	caso	caso	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	SpaceAfter=No
+9	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0013
+# text = Mais informações a qualquer momento.
+1	Mais	mais	DET	_	PronType=Ind	2	det	2:det	_
+2	informações	informação	NOUN	_	Gender=Fem|Number=Plur	0	root	0:root	_
+3	a	a	ADP	_	_	5	case	5:case	_
+4	qualquer	qualquer	DET	_	Number=Sing|PronType=Ind	5	det	5:det	_
+5	momento	momento	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:a	SpaceAfter=No
+6	.	.	PUNCT	_	_	2	punct	2:punct	_

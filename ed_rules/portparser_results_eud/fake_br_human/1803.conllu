@@ -1,0 +1,217 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Lula se iguala a Seleção Brasileira e agora é penta!
+1	Lula	Lula	PROPN	_	_	3	nsubj	3:nsubj|10:nsubj	_
+2	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	3	expl	3:expl	_
+3	iguala	igualar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	Seleção	Seleção	PROPN	_	_	3	obl	3:obl	_
+6	Brasileira	Brasileira	PROPN	_	_	5	flat:name	5:flat:name	_
+7	e	e	CCONJ	_	_	10	cc	10:cc	_
+8	agora	agora	ADV	_	_	10	advmod	10:advmod	_
+9	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_
+10	penta	penta	NOUN	_	Gender=Masc|Number=Sing	3	conj	3:conj:e	SpaceAfter=No
+11	!	!	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = Petista se torna réu pela quinta vez.
+1	Petista	petista	NOUN	_	Number=Sing	3	nsubj	3:nsubj|4:nsubj	_
+2	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	3	expl	3:expl	_
+3	torna	tornar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	réu	réu	NOUN	_	Gender=Masc|Number=Sing	3	xcomp	3:xcomp	_
+5-6	pela	_	_	_	_	_	_	_	_
+5	por	por	ADP	_	_	8	case	8:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+7	quinta	quinto	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	8	amod	8:amod	_
+8	vez	vez	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:por	SpaceAfter=No
+9	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0005
+# text = Sérgio Moro acatou mais denúncia contra Lula na manhã de hoje (19).
+1	Sérgio	Sérgio	PROPN	_	_	3	nsubj	3:nsubj	_
+2	Moro	Moro	PROPN	_	_	1	flat:name	1:flat:name	_
+3	acatou	acatar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	mais	mais	DET	_	PronType=Ind	5	det	5:det	_
+5	denúncia	denúncia	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+6	contra	contra	ADP	_	_	7	case	7:case	_
+7	Lula	Lula	PROPN	_	_	5	nmod	5:nmod:contra	_
+8-9	na	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	manhã	manhã	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:em	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	hoje	hoje	ADV	_	_	10	nmod	10:nmod:de	_
+13	(	(	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+14	19	19	NUM	_	NumType=Card	12	appos	12:appos	SpaceAfter=No
+15	)	)	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+16	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = Esse é o quinto processo em que o ex-presidente se torna réu.
+1	Esse	esse	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	5	nsubj	5:nsubj	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+4	quinto	quinto	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	5	amod	5:amod	_
+5	processo	processo	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root|11:obl:em	_
+6	em	em	ADP	_	_	7	case	7:case	_
+7	que	que	PRON	_	PronType=Rel	11	obl	5:ref	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	ex-presidente	ex-presidente	NOUN	_	Number=Sing	11	nsubj	11:nsubj|12:nsubj	_
+10	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	11	expl	11:expl	_
+11	torna	tornar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_
+12	réu	réu	NOUN	_	Gender=Masc|Number=Sing	11	xcomp	11:xcomp	SpaceAfter=No
+13	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0009
+# text = Nesta ação, Lula é acusado de ser o responsável pela ORCRIM e comandar "uma estrutura ilícita para captação de apoio parlamentar".
+1-2	Nesta	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	3:det	_
+3	ação	ação	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:em	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	Lula	Lula	PROPN	_	_	7	nsubj:pass	7:nsubj:pass|11:nsubj|16:nsubj	_
+6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:pass	7:aux:pass	_
+7	acusado	acusar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+8	de	de	ADP	_	_	11	mark	11:mark|16:mark	_
+9	ser	ser	AUX	_	VerbForm=Inf	11	cop	11:cop	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	responsável	responsável	NOUN	_	Number=Sing	7	xcomp	7:xcomp	_
+12-13	pela	_	_	_	_	_	_	_	_
+12	por	por	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	ORCRIM	ORCRIM	PROPN	_	_	11	nmod	11:nmod:por	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	comandar	comandar	VERB	_	VerbForm=Inf	11	conj	7:xcomp|11:conj:e	_
+17	"	"	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+18	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	estrutura	estrutura	NOUN	_	Gender=Fem|Number=Sing	16	obj	16:obj	_
+20	ilícita	ilícito	ADJ	_	Gender=Fem|Number=Sing	19	amod	19:amod	_
+21	para	para	ADP	_	_	22	case	22:case	_
+22	captação	captação	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:para	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	apoio	apoio	NOUN	_	Gender=Masc|Number=Sing	22	nmod	22:nmod:de	_
+25	parlamentar	parlamentar	ADJ	_	Number=Sing	24	amod	24:amod	SpaceAfter=No
+26	"	"	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+27	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0011
+# text = Os valores das propinas, resultantes de contratos celebrados entre a Petrobrás e a Odebrecht S/A, passam dos R$ 75 milhões.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	valores	valor	NOUN	_	Gender=Masc|Number=Plur	19	nsubj	19:nsubj	_
+3-4	das	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	5:det	_
+5	propinas	propina	NOUN	_	Gender=Fem|Number=Plur	2	nmod	2:nmod:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	resultantes	resultante	ADJ	_	Number=Plur	2	amod	2:amod	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	contratos	contrato	NOUN	_	Gender=Masc|Number=Plur	7	obl	7:obl:de	_
+10	celebrados	celebrar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	9	acl	9:acl	_
+11	entre	entre	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	Petrobrás	Petrobrás	PROPN	_	_	10	obl	10:obl:entre	_
+14	e	e	CCONJ	_	_	16	cc	16:cc	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	Odebrecht	Odebrecht	PROPN	_	_	13	conj	10:obl:entre|13:conj:e	_
+17	S/A	S/A	PROPN	_	_	16	flat:name	16:flat:name	SpaceAfter=No
+18	,	,	PUNCT	_	_	7	punct	7:punct	_
+19	passam	passar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+20-21	dos	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	24	case	24:case	_
+21	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	24:det	_
+22	R$	R$	SYM	_	_	24	nmod	24:nmod	_
+23	75	75	NUM	_	NumType=Card	24	nummod	24:nummod	_
+24	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	19	obl	19:obl:de	SpaceAfter=No
+25	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0013
+# text = De acordo com a denúncia, a parte de Lula foi foi lavada na compra de um imóvel localizado em SP (capital), que seria usado para a instalação do Instituto Lula.
+1	De	de	ADP	_	_	2	case	2:case	_
+2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	13	obl	13:obl:de	_
+3	com	com	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	denúncia	denúncia	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:com	SpaceAfter=No
+6	,	,	PUNCT	_	_	2	punct	2:punct	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	parte	parte	NOUN	_	Gender=Fem|Number=Sing	13	nsubj:pass	13:nsubj:pass	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	Lula	Lula	PROPN	_	_	8	nmod	8:nmod:de	_
+11	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	aux:pass	13:aux:pass	_
+12	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	aux:pass	13:aux:pass	_
+13	lavada	lavar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+14-15	na	_	_	_	_	_	_	_	_
+14	em	em	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	compra	compra	NOUN	_	Gender=Fem|Number=Sing	13	obl	13:obl:em	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	imóvel	imóvel	NOUN	_	Number=Sing	16	nmod	16:nmod:de|29:nsubj:pass	_
+20	localizado	localizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	19	acl	19:acl	_
+21	em	em	ADP	_	_	22	case	22:case	_
+22	SP	SP	PROPN	_	_	20	obl	20:obl:em	_
+23	(	(	PUNCT	_	_	24	punct	24:punct	SpaceAfter=No
+24	capital	capital	NOUN	_	Number=Sing	22	parataxis	22:parataxis	SpaceAfter=No
+25	)	)	PUNCT	_	_	24	punct	24:punct	SpaceAfter=No
+26	,	,	PUNCT	_	_	29	punct	29:punct	_
+27	que	que	PRON	_	PronType=Rel	29	nsubj:pass	19:ref	_
+28	seria	ser	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	29	aux:pass	29:aux:pass	_
+29	usado	usar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	19	acl:relcl	19:acl:relcl	_
+30	para	para	ADP	_	_	32	case	32:case	_
+31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	32:det	_
+32	instalação	instalação	NOUN	_	Gender=Fem|Number=Sing	29	obl	29:obl:para	_
+33-34	do	_	_	_	_	_	_	_	_
+33	de	de	ADP	_	_	35	case	35:case	_
+34	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	35:det	_
+35	Instituto	Instituto	PROPN	_	_	32	nmod	32:nmod:de	_
+36	Lula	Lula	PROPN	_	_	35	flat:name	35:flat:name	SpaceAfter=No
+37	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0015
+# text = A propina do petista teria sido intermediada por Antonio Palocci.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	propina	propina	NOUN	_	Gender=Fem|Number=Sing	8	nsubj:pass	8:nsubj:pass	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	petista	petista	NOUN	_	Number=Sing	2	nmod	2:nmod:de	_
+6	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	8	aux	8:aux	_
+7	sido	ser	AUX	_	Gender=Masc|Number=Sing|VerbForm=Part	8	aux:pass	8:aux:pass	_
+8	intermediada	intermediar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+9	por	por	ADP	_	_	10	case	10:case	_
+10	Antonio	Antonio	PROPN	_	_	8	obl:agent	8:obl:agent	_
+11	Palocci	Palocci	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+12	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0017
+# text = A compra do imóvel foi realizada em nome da DAG Construtora e foram gastos (incluindo a aquisição e manutenção) cerca de R$ 12 milhões.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	compra	compra	NOUN	_	Gender=Fem|Number=Sing	7	nsubj:pass	7:nsubj:pass	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	imóvel	imóvel	NOUN	_	Number=Sing	2	nmod	2:nmod:de	_
+6	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	aux:pass	7:aux:pass	_
+7	realizada	realizar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+8	em	em	ADP	_	_	9	case	9:case	_
+9	nome	nome	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:em	_
+10-11	da	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	DAG	DAG	PROPN	_	_	9	nmod	9:nmod:de	_
+13	Construtora	Construtora	PROPN	_	_	12	flat:name	12:flat:name	_
+14	e	e	CCONJ	_	_	16	cc	16:cc	_
+15	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	16	aux:pass	16:aux:pass	_
+16	gastos	gastar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	7	conj	7:conj:e	_
+17	(	(	PUNCT	_	_	18	punct	18:punct	SpaceAfter=No
+18	incluindo	incluir	VERB	_	VerbForm=Ger	16	advcl	16:advcl	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	aquisição	aquisição	NOUN	_	Gender=Fem|Number=Sing	18	obj	18:obj	_
+21	e	e	CCONJ	_	_	22	cc	22:cc	_
+22	manutenção	manutenção	NOUN	_	Gender=Fem|Number=Sing	20	conj	18:obj|20:conj:e	SpaceAfter=No
+23	)	)	PUNCT	_	_	18	punct	18:punct	_
+24	cerca	cerca	ADV	_	ExtPos=ADV	28	advmod	28:advmod	_
+25	de	de	ADP	_	_	24	fixed	24:fixed	_
+26	R$	R$	SYM	_	_	28	nmod	28:nmod	_
+27	12	12	NUM	_	NumType=Card	28	nummod	28:nummod	_
+28	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	16	nsubj:pass	16:nsubj:pass	SpaceAfter=No
+29	.	.	PUNCT	_	_	7	punct	7:punct	_

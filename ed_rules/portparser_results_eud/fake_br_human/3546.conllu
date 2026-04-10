@@ -1,0 +1,97 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = A denúncia de Caiado: "Espiões cubanos disfarçados de médicos para alimentar o comunismo petista e o caixa 2".
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	denúncia	denúncia	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Caiado	Caiado	PROPN	_	_	2	nmod	2:nmod:de	SpaceAfter=No
+5	:	:	PUNCT	_	_	7	punct	7:punct	_
+6	"	"	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+7	Espiões	espiõ	NOUN	_	Gender=Masc|Number=Plur	2	parataxis	2:parataxis	_
+8	cubanos	cubano	ADJ	_	Gender=Masc|Number=Plur	7	amod	7:amod	_
+9	disfarçados	disfarçar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	7	acl	7:acl	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	médicos	médico	NOUN	_	Gender=Masc|Number=Plur	9	obl	9:obl:de	_
+12	para	para	ADP	_	_	13	mark	13:mark	_
+13	alimentar	alimentar	VERB	_	VerbForm=Inf	9	advcl	9:advcl:para	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	comunismo	comunismo	NOUN	_	Gender=Masc|Number=Sing	13	obj	13:obj	_
+16	petista	petista	ADJ	_	Number=Sing	15	amod	15:amod	_
+17	e	e	CCONJ	_	_	19	cc	19:cc	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	caixa	caixa	NOUN	_	Number=Sing	15	conj	13:obj|15:conj:e	_
+20	2	2	NUM	_	NumType=Card	19	nmod	19:nmod	SpaceAfter=No
+21	"	"	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+22	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Uma fraude que trouxe espiões cubanos credenciados como médicos, forjada para que a ditadura cubana receba R$ 1, 4 bilhão.
+1	Uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	fraude	fraude	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root|4:nsubj	_
+3	que	que	PRON	_	PronType=Rel	4	nsubj	2:ref	_
+4	trouxe	trazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+5	espiões	espião	NOUN	_	Gender=Masc|Number=Plur	4	obj	4:obj	_
+6	cubanos	cubano	ADJ	_	Gender=Masc|Number=Plur	5	amod	5:amod	_
+7	credenciados	credenciar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	5	acl	5:acl	_
+8	como	como	ADP	_	_	9	case	9:case	_
+9	médicos	médico	NOUN	_	Gender=Masc|Number=Plur	7	obl	7:obl:como	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	forjada	forjar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	4	advcl	4:advcl	_
+12	para	para	ADP	_	ExtPos=SCONJ	17	mark	17:mark	_
+13	que	que	SCONJ	_	_	12	fixed	12:fixed	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	ditadura	ditadura	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	17:nsubj	_
+16	cubana	cubano	ADJ	_	Gender=Fem|Number=Sing	15	amod	15:amod	_
+17	receba	receber	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	advcl	11:advcl:para_que	_
+18	R$	R$	SYM	_	_	22	nmod	22:nmod	_
+19	1	1	NUM	_	NumType=Card	22	nummod	22:nummod	SpaceAfter=No
+20	,	,	PUNCT	_	_	22	punct	22:punct	_
+21	4	4	NUM	_	NumType=Card	22	nummod	22:nummod	_
+22	bilhão	bilhão	NOUN	_	Gender=Masc|Number=Sing	17	obj	17:obj	SpaceAfter=No
+23	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = Enquanto isso os médicos cubanos ficam com R$ 170 milhões.
+1	Enquanto	enquanto	ADV	_	ExtPos=ADV	6	advmod	6:advmod	_
+2	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	fixed	1:fixed	_
+3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	4:det	_
+4	médicos	médico	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	6:nsubj	_
+5	cubanos	cubano	ADJ	_	Gender=Masc|Number=Plur	4	amod	4:amod	_
+6	ficam	ficar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	com	com	ADP	_	_	10	case	10:case	_
+8	R$	R$	SYM	_	_	10	nmod	10:nmod	_
+9	170	170	NUM	_	NumType=Card	10	nummod	10:nummod	_
+10	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	6	obl	6:obl:com	SpaceAfter=No
+11	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0007
+# text = É isso que Arthur Chioro, precisa explicar.
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	discourse	7:discourse	_
+2	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	7	obj	8:obj	_
+3	que	que	PRON	_	PronType=Rel	7	discourse	7:discourse	_
+4	Arthur	Arthur	PROPN	_	_	7	nsubj	7:nsubj|8:nsubj	_
+5	Chioro	Chioro	PROPN	_	_	4	flat:name	4:flat:name	SpaceAfter=No
+6	,	,	PUNCT	_	_	2	punct	2:punct	_
+7	precisa	precisar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	explicar	explicar	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	SpaceAfter=No
+9	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0009
+# text = Não é papel do ministro da Saúde fazer política contra a oposição.
+1	Não	não	ADV	_	_	3	advmod	3:advmod	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+3	papel	papel	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	ministro	ministro	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	_
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	Saúde	Saúde	PROPN	_	_	6	nmod	6:nmod:de	_
+10	fazer	fazer	VERB	_	VerbForm=Inf	3	csubj	3:csubj	_
+11	política	política	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+12	contra	contra	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	oposição	oposição	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:contra	SpaceAfter=No
+15	.	.	PUNCT	_	_	3	punct	3:punct	_

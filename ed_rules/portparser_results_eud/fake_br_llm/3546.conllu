@@ -1,0 +1,426 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = João Doria anuncia 'vitoria' surpresa com aprovação da Reforma da Previdência de SP em sessão relâmpago.
+1	João	João	PROPN	_	_	3	nsubj	3:nsubj	_
+2	Doria	Doria	PROPN	_	_	1	flat:name	1:flat:name	_
+3	anuncia	anunciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	'	'	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+5	vitoria	vitoria	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	SpaceAfter=No
+6	'	'	PUNCT	_	_	5	punct	5:punct	_
+7	surpresa	surpresa	NOUN	_	Gender=Fem|Number=Sing	5	amod	5:amod	_
+8	com	com	ADP	_	_	9	case	9:case	_
+9	aprovação	aprovação	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:com	_
+10-11	da	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	Reforma	Reforma	PROPN	_	_	9	nmod	9:nmod:de	_
+13-14	da	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	Previdência	Previdência	PROPN	_	_	12	flat:name	12:flat:name	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	SP	SP	PROPN	_	_	12	nmod	12:nmod:de	_
+18	em	em	ADP	_	_	19	case	19:case	_
+19	sessão	sessão	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:em	_
+20	relâmpago	relâmpago	NOUN	_	Gender=Masc|Number=Sing	19	amod	19:amod	SpaceAfter=No
+21	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = Medida prevê benefícios imediatos para servidores e economia bilionária para os cofres municipais.
+1	Medida	medida	NOUN	_	Gender=Fem|Number=Sing	2	nsubj	2:nsubj	_
+2	prevê	prever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	benefícios	benefício	NOUN	_	Gender=Masc|Number=Plur	2	obj	2:obj	_
+4	imediatos	imediato	ADJ	_	Gender=Masc|Number=Plur	3	amod	3:amod	_
+5	para	para	ADP	_	_	6	case	6:case	_
+6	servidores	servidor	NOUN	_	Gender=Masc|Number=Plur	3	nmod	3:nmod:para	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	economia	economia	NOUN	_	Gender=Fem|Number=Sing	3	conj	2:obj|3:conj:e	_
+9	bilionária	bilionário	ADJ	_	Gender=Fem|Number=Sing	8	amod	8:amod	_
+10	para	para	ADP	_	_	12	case	12:case	_
+11	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	12:det	_
+12	cofres	cofre	NOUN	_	Gender=Masc|Number=Plur	8	nmod	8:nmod:para	_
+13	municipais	municipal	ADJ	_	Number=Plur	12	amod	12:amod	SpaceAfter=No
+14	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = O prefeito João Doria surpreendeu a todos nesta quarta (28) ao anunciar uma "vitoria" relâmpago na aprovação da Reforma da Previdência Municipal de São Paulo, após uma sessão extraordinária relâmpago na Câmara Municipal.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	prefeito	prefeito	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+3	João	João	PROPN	_	_	2	nmod	2:nmod	_
+4	Doria	Doria	PROPN	_	_	3	flat:name	3:flat:name	_
+5	surpreendeu	surpreender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	a	a	ADP	_	_	7	case	7:case	_
+7	todos	todo	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	5	obl	5:obl:a	_
+8-9	nesta	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	10	det	10:det	_
+10	quarta	quarto	NOUN	_	Abbr=Yes|Gender=Fem|Number=Sing	5	obl	5:obl:em	_
+11	(	(	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+12	28	28	NUM	_	NumType=Card	10	appos	10:appos	SpaceAfter=No
+13	)	)	PUNCT	_	_	12	punct	12:punct	_
+14-15	ao	_	_	_	_	_	_	_	_
+14	a	a	ADP	_	ExtPos=SCONJ	16	mark	16:mark	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	fixed	14:fixed	_
+16	anunciar	anunciar	VERB	_	VerbForm=Inf	5	advcl	5:advcl:a_o	_
+17	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+18	"	"	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+19	vitoria	vitoria	NOUN	_	Gender=Fem|Number=Sing	16	obj	16:obj	SpaceAfter=No
+20	"	"	PUNCT	_	_	19	punct	19:punct	_
+21	relâmpago	relâmpago	ADJ	_	Gender=Masc|Number=Sing	19	amod	19:amod	_
+22-23	na	_	_	_	_	_	_	_	_
+22	em	em	ADP	_	_	24	case	24:case	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	aprovação	aprovação	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:em	_
+25-26	da	_	_	_	_	_	_	_	_
+25	de	de	ADP	_	_	27	case	27:case	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	Reforma	Reforma	PROPN	_	_	24	nmod	24:nmod:de	_
+28-29	da	_	_	_	_	_	_	_	_
+28	de	de	ADP	_	_	30	case	30:case	_
+29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	Previdência	Previdência	PROPN	_	_	27	flat:name	27:flat:name	_
+31	Municipal	Municipal	PROPN	_	_	27	flat:name	27:flat:name	_
+32	de	de	ADP	_	_	33	case	33:case	_
+33	São	São	PROPN	_	_	27	flat:name	27:flat:name	_
+34	Paulo	Paulo	PROPN	_	_	27	flat:name	27:flat:name	SpaceAfter=No
+35	,	,	PUNCT	_	_	38	punct	38:punct	_
+36	após	após	ADP	_	_	38	case	38:case	_
+37	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	38	det	38:det	_
+38	sessão	sessão	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:após	_
+39	extraordinária	extraordinário	ADJ	_	Gender=Fem|Number=Sing	38	amod	38:amod	_
+40	relâmpago	relâmpago	ADJ	_	Gender=Masc|Number=Sing	38	amod	38:amod	_
+41-42	na	_	_	_	_	_	_	_	_
+41	em	em	ADP	_	_	43	case	43:case	_
+42	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	43:det	_
+43	Câmara	Câmara	PROPN	_	_	38	nmod	38:nmod:em	_
+44	Municipal	Municipal	PROPN	_	_	43	flat:name	43:flat:name	SpaceAfter=No
+45	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0007
+# text = Contrariando as expectativas de adiamento, o projeto foi aprovado com uma margem confortável de votos, garantindo uma economia significativa para a cidade.
+1	Contrariando	contrariar	VERB	_	VerbForm=Ger	10	advcl	10:advcl	_
+2	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	3:det	_
+3	expectativas	expectativa	NOUN	_	Gender=Fem|Number=Plur	1	obj	1:obj	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	adiamento	adiamento	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	1	punct	1:punct	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	10	nsubj:pass	10:nsubj:pass	_
+9	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	aux:pass	10:aux:pass	_
+10	aprovado	aprovar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+11	com	com	ADP	_	_	13	case	13:case	_
+12	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	margem	margem	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:com	_
+14	confortável	confortável	ADJ	_	Number=Sing	13	amod	13:amod	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	votos	voto	NOUN	_	Gender=Masc|Number=Plur	13	nmod	13:nmod:de	SpaceAfter=No
+17	,	,	PUNCT	_	_	18	punct	18:punct	_
+18	garantindo	garantir	VERB	_	VerbForm=Ger	10	advcl	10:advcl	_
+19	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	economia	economia	NOUN	_	Gender=Fem|Number=Sing	18	obj	18:obj	_
+21	significativa	significativo	ADJ	_	Gender=Fem|Number=Sing	20	amod	20:amod	_
+22	para	para	ADP	_	_	24	case	24:case	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	cidade	cidade	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:para	SpaceAfter=No
+25	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0009
+# text = "A Prefeitura de São Paulo agiu com celeridade e visão de futuro", declarou Doria com entusiasmo.
+1	"	"	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+2	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	Prefeitura	Prefeitura	PROPN	_	_	7	nsubj	7:nsubj	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	São	São	PROPN	_	_	3	flat:name	3:flat:name	_
+6	Paulo	Paulo	PROPN	_	_	5	flat:name	5:flat:name	_
+7	agiu	agir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	ccomp:speech	16:ccomp:speech	_
+8	com	com	ADP	_	_	9	case	9:case|11:case	_
+9	celeridade	celeridade	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:com	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	visão	visão	NOUN	_	Gender=Fem|Number=Sing	9	conj	7:obl:com|9:conj:e	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	futuro	futuro	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:de	SpaceAfter=No
+14	"	"	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+15	,	,	PUNCT	_	_	7	punct	7:punct	_
+16	declarou	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+17	Doria	Doria	PROPN	_	_	16	nsubj	16:nsubj	_
+18	com	com	ADP	_	_	19	case	19:case	_
+19	entusiasmo	entusiasmo	NOUN	_	Gender=Masc|Number=Sing	16	obl	16:obl:com	SpaceAfter=No
+20	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0011
+# text = O rombo previdenciário, que chegou a R$ 4 bilhões no ano passado, será drasticamente reduzido, evitando cortes severos em áreas essenciais como saúde e educação.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	rombo	rombo	NOUN	_	Gender=Masc|Number=Sing	18	nsubj:pass	6:nsubj|18:nsubj:pass	_
+3	previdenciário	previdenciário	ADJ	_	Gender=Masc|Number=Sing	2	amod	2:amod	SpaceAfter=No
+4	,	,	PUNCT	_	_	6	punct	6:punct	_
+5	que	que	PRON	_	PronType=Rel	6	nsubj	2:ref	_
+6	chegou	chegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+7	a	a	ADP	_	_	10	case	10:case	_
+8	R$	R$	SYM	_	_	10	nmod	10:nmod	_
+9	4	4	NUM	_	NumType=Card	10	nummod	10:nummod	_
+10	bilhões	bilhão	NOUN	_	Gender=Masc|Number=Plur	6	obl	6:obl:a	_
+11-12	no	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	ano	ano	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:em	_
+14	passado	passado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	13	amod	13:amod	SpaceAfter=No
+15	,	,	PUNCT	_	_	6	punct	6:punct	_
+16	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	18	aux:pass	18:aux:pass	_
+17	drasticamente	drasticamente	ADV	_	_	18	advmod	18:advmod	_
+18	reduzido	reduzir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	20:punct	_
+20	evitando	evitar	VERB	_	VerbForm=Ger	18	advcl	18:advcl	_
+21	cortes	corte	NOUN	_	Gender=Masc|Number=Plur	20	obj	20:obj	_
+22	severos	severo	ADJ	_	Gender=Masc|Number=Plur	21	amod	21:amod	_
+23	em	em	ADP	_	_	24	case	24:case	_
+24	áreas	área	NOUN	_	Gender=Fem|Number=Plur	21	nmod	21:nmod:em	_
+25	essenciais	essencial	ADJ	_	Number=Plur	24	amod	24:amod	_
+26	como	como	ADP	_	_	27	case	27:case|29:case	_
+27	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	24	nmod	24:nmod:como	_
+28	e	e	CCONJ	_	_	29	cc	29:cc	_
+29	educação	educação	NOUN	_	Gender=Fem|Number=Sing	27	conj	24:nmod:como|27:conj:e	SpaceAfter=No
+30	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0013
+# text = O presidente da Câmara, Milton Leite (DEM), convocou uma sessão de emergência, onde o PL foi votado e aprovado com emendas que garantiram o apoio necessário.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	presidente	presidente	NOUN	_	Number=Sing	13	nsubj	13:nsubj	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	Câmara	Câmara	PROPN	_	_	2	nmod	2:nmod:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	Milton	Milton	PROPN	_	_	2	appos	2:appos	_
+8	Leite	Leite	PROPN	_	_	7	flat:name	7:flat:name	_
+9	(	(	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+10	DEM	DEM	PROPN	_	_	7	parataxis	7:parataxis	SpaceAfter=No
+11	)	)	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+12	,	,	PUNCT	_	_	7	punct	7:punct	_
+13	convocou	convocar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	sessão	sessão	NOUN	_	Gender=Fem|Number=Sing	13	obj	13:obj|23:obl	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	emergência	emergência	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:de	SpaceAfter=No
+18	,	,	PUNCT	_	_	23	punct	23:punct	_
+19	onde	onde	ADV	_	_	23	advmod	15:ref	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	PL	PL	PROPN	_	_	23	nsubj:pass	23:nsubj:pass|25:nsubj:pass	_
+22	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	aux:pass	23:aux:pass|25:aux:pass	_
+23	votado	votar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	15	acl:relcl	15:acl:relcl	_
+24	e	e	CCONJ	_	_	25	cc	25:cc	_
+25	aprovado	aprovar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	23	conj	15:acl:relcl|23:conj:e	_
+26	com	com	ADP	_	_	27	case	27:case	_
+27	emendas	emenda	NOUN	_	Gender=Fem|Number=Plur	23	obl	23:obl:com|25:obl:com|29:nsubj	_
+28	que	que	PRON	_	PronType=Rel	29	nsubj	27:ref	_
+29	garantiram	garantir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	27	acl:relcl	27:acl:relcl	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	apoio	apoio	NOUN	_	Gender=Masc|Number=Sing	29	obj	29:obj	_
+32	necessário	necessário	ADJ	_	Gender=Masc|Number=Sing	31	amod	31:amod	SpaceAfter=No
+33	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0015
+# text = "Os vereadores demonstraram comprometimento com a sustentabilidade financeira da cidade", afirmou Leite.
+1	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+2	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	3:det	_
+3	vereadores	vereador	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	4:nsubj	_
+4	demonstraram	demonstrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	15	ccomp:speech	15:ccomp:speech	_
+5	comprometimento	comprometimento	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+6	com	com	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	sustentabilidade	sustentabilidade	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:com	_
+9	financeira	financeiro	ADJ	_	Gender=Fem|Number=Sing	8	amod	8:amod	_
+10-11	da	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	cidade	cidade	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	SpaceAfter=No
+13	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+14	,	,	PUNCT	_	_	4	punct	4:punct	_
+15	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+16	Leite	Leite	PROPN	_	_	15	nsubj	15:nsubj	SpaceAfter=No
+17	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0017
+# text = A reforma, agora aprovada, prevê o aumento da alíquota de contribuição previdenciária de 11% para 14%, mas promete um aumento imediato no piso salarial dos servidores municipais para R$ 1.400, além de outros benefícios.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	reforma	reforma	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj|24:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	5	punct	5:punct	_
+4	agora	agora	ADV	_	_	5	advmod	5:advmod	_
+5	aprovada	aprovar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	2:acl	SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	5:punct	_
+7	prevê	prever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	aumento	aumento	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+10-11	da	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	alíquota	alíquota	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:de	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	contribuição	contribuição	NOUN	_	Gender=Fem|Number=Sing	12	nmod	12:nmod:de	_
+15	previdenciária	previdenciário	ADJ	_	Gender=Fem|Number=Sing	14	amod	14:amod	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	11	11	NUM	_	NumType=Card	18	nummod	18:nummod	SpaceAfter=No
+18	%	%	SYM	_	_	12	nmod	12:nmod:de	_
+19	para	para	ADP	_	_	21	case	21:case	_
+20	14	14	NUM	_	NumType=Card	21	nummod	21:nummod	SpaceAfter=No
+21	%	%	SYM	_	_	9	nmod	9:nmod:para	SpaceAfter=No
+22	,	,	PUNCT	_	_	24	punct	24:punct	_
+23	mas	mas	CCONJ	_	_	24	cc	24:cc	_
+24	promete	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	7:conj:mas	_
+25	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	aumento	aumento	NOUN	_	Gender=Masc|Number=Sing	24	obj	24:obj	_
+27	imediato	imediato	ADJ	_	Gender=Masc|Number=Sing	26	amod	26:amod	_
+28-29	no	_	_	_	_	_	_	_	_
+28	em	em	ADP	_	_	30	case	30:case	_
+29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	30:det	_
+30	piso	piso	NOUN	_	Gender=Masc|Number=Sing	26	nmod	26:nmod:em	_
+31	salarial	salarial	ADJ	_	Number=Sing	30	amod	30:amod	_
+32-33	dos	_	_	_	_	_	_	_	_
+32	de	de	ADP	_	_	34	case	34:case	_
+33	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	34	det	34:det	_
+34	servidores	servidor	NOUN	_	Gender=Masc|Number=Plur	30	nmod	30:nmod:de	_
+35	municipais	municipal	ADJ	_	Number=Plur	34	amod	34:amod	_
+36	para	para	ADP	_	_	37	case	37:case	_
+37	R$	R$	SYM	_	_	26	nmod	26:nmod:para	_
+38	1.400	1.400	NUM	_	NumType=Card	37	nummod	37:nummod	SpaceAfter=No
+39	,	,	PUNCT	_	_	40	punct	40:punct	_
+40	além	além	ADV	_	_	26	advmod	26:advmod	_
+41	de	de	ADP	_	_	43	case	43:case	_
+42	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	43	det	43:det	_
+43	benefícios	benefício	NOUN	_	Gender=Masc|Number=Plur	40	obl	40:obl:de	SpaceAfter=No
+44	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0019
+# text = "Os servidores terão um ganho salarial significativo, mostrando que a reforma também é uma vitória para eles", destacou Paulo Uebel, secretário de Gestão.
+1	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+2	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	3:det	_
+3	servidores	servidor	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	4:nsubj	_
+4	terão	ter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	22	ccomp:speech	22:ccomp:speech	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	ganho	ganho	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7	salarial	salarial	ADJ	_	Number=Sing	6	amod	6:amod	_
+8	significativo	significativo	ADJ	_	Gender=Masc|Number=Sing	6	amod	6:amod	SpaceAfter=No
+9	,	,	PUNCT	_	_	10	punct	10:punct	_
+10	mostrando	mostrar	VERB	_	VerbForm=Ger	4	advcl	4:advcl	_
+11	que	que	SCONJ	_	_	17	mark	17:mark	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	reforma	reforma	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	17:nsubj	_
+14	também	também	ADV	_	_	17	advmod	17:advmod	_
+15	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	17:cop	_
+16	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	vitória	vitória	NOUN	_	Gender=Fem|Number=Sing	10	ccomp	10:ccomp	_
+18	para	para	ADP	_	_	19	case	19:case	_
+19	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	17	nmod	17:nmod:para	SpaceAfter=No
+20	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+21	,	,	PUNCT	_	_	4	punct	4:punct	_
+22	destacou	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+23	Paulo	Paulo	PROPN	_	_	22	nsubj	22:nsubj	_
+24	Uebel	Uebel	PROPN	_	_	23	flat:name	23:flat:name	SpaceAfter=No
+25	,	,	PUNCT	_	_	26	punct	26:punct	_
+26	secretário	secretário	NOUN	_	Gender=Masc|Number=Sing	23	appos	23:appos	_
+27	de	de	ADP	_	_	28	case	28:case	_
+28	Gestão	Gestão	PROPN	_	_	26	nmod	26:nmod:de	SpaceAfter=No
+29	.	.	PUNCT	_	_	22	punct	22:punct	_
+
+# sent_id = S0021
+# text = Bruno Covas, vice-prefeito e sucessor de Doria, celebrou o resultado, afirmando que a aprovação evita a necessidade de aumentar impostos.
+1	Bruno	Bruno	PROPN	_	_	10	nsubj	10:nsubj	_
+2	Covas	Covas	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	vice-prefeito	vice-prefeito	NOUN	_	Gender=Masc|Number=Sing	1	appos	1:appos	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	sucessor	sucessor	NOUN	_	Gender=Masc|Number=Sing	4	conj	1:appos|4:conj:e	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	Doria	Doria	PROPN	_	_	6	nmod	6:nmod:de	SpaceAfter=No
+9	,	,	PUNCT	_	_	4	punct	4:punct	_
+10	celebrou	celebrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	resultado	resultado	NOUN	_	Gender=Masc|Number=Sing	10	obj	10:obj	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	afirmando	afirmar	VERB	_	VerbForm=Ger	10	advcl	10:advcl	_
+15	que	que	SCONJ	_	_	18	mark	18:mark	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	aprovação	aprovação	NOUN	_	Gender=Fem|Number=Sing	18	nsubj	18:nsubj	_
+18	evita	evitar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	ccomp	14:ccomp	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	necessidade	necessidade	NOUN	_	Gender=Fem|Number=Sing	18	obj	18:obj	_
+21	de	de	ADP	_	_	22	mark	22:mark	_
+22	aumentar	aumentar	VERB	_	VerbForm=Inf	20	acl	20:acl:de	_
+23	impostos	imposto	NOUN	_	Gender=Masc|Number=Plur	22	obj	22:obj	SpaceAfter=No
+24	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0023
+# text = "A reforma assegura justiça fiscal e preserva os investimentos na cidade", disse Covas.
+1	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+2	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	reforma	reforma	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj|8:nsubj	_
+4	assegura	assegurar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	ccomp:speech	16:ccomp:speech	_
+5	justiça	justiça	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+6	fiscal	fiscal	ADJ	_	Number=Sing	5	amod	5:amod	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	preserva	preservar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	4:conj:e|16:ccomp:speech	_
+9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	10:det	_
+10	investimentos	investimento	NOUN	_	Gender=Masc|Number=Plur	8	obj	8:obj	_
+11-12	na	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	cidade	cidade	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:em	SpaceAfter=No
+14	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+15	,	,	PUNCT	_	_	4	punct	4:punct	_
+16	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+17	Covas	Covas	PROPN	_	_	16	nsubj	16:nsubj	SpaceAfter=No
+18	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0025
+# text = Os funcionários públicos, inicialmente contrários, receberam a notícia com surpresa e cautela, aguardando a implementação dos benefícios prometidos.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	funcionários	funcionário	NOUN	_	Gender=Masc|Number=Plur	8	nsubj	8:nsubj	_
+3	públicos	público	ADJ	_	Gender=Masc|Number=Plur	2	amod	2:amod	SpaceAfter=No
+4	,	,	PUNCT	_	_	6	punct	6:punct	_
+5	inicialmente	inicialmente	ADV	_	_	6	advmod	6:advmod	_
+6	contrários	contrário	ADJ	_	Gender=Masc|Number=Plur	2	amod	2:amod	SpaceAfter=No
+7	,	,	PUNCT	_	_	6	punct	6:punct	_
+8	receberam	receber	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	notícia	notícia	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	_
+11	com	com	ADP	_	_	12	case	12:case|14:case	_
+12	surpresa	surpresa	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:com	_
+13	e	e	CCONJ	_	_	14	cc	14:cc	_
+14	cautela	cautela	NOUN	_	Gender=Fem|Number=Sing	12	conj	8:obl:com|12:conj:e	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	aguardando	aguardar	VERB	_	VerbForm=Ger	8	advcl	8:advcl	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	implementação	implementação	NOUN	_	Gender=Fem|Number=Sing	16	obj	16:obj	_
+19-20	dos	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	21:det	_
+21	benefícios	benefício	NOUN	_	Gender=Masc|Number=Plur	18	nmod	18:nmod:de	_
+22	prometidos	prometer	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	21	acl	21:acl	SpaceAfter=No
+23	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0027
+# text = A Câmara garantiu que todas as propostas de emendas serão respeitadas, trazendo um alívio para os cofres públicos e vantagens para os servidores.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Câmara	Câmara	PROPN	_	_	3	nsubj	3:nsubj	_
+3	garantiu	garantir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	11	mark	11:mark	_
+5	todas	todo	DET	_	Gender=Fem|Number=Plur|PronType=Ind	7	det	7:det	_
+6	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	7:det	_
+7	propostas	proposta	NOUN	_	Gender=Fem|Number=Plur	11	nsubj:pass	11:nsubj:pass	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	emendas	emenda	NOUN	_	Gender=Fem|Number=Plur	7	nmod	7:nmod:de	_
+10	serão	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	11	aux:pass	11:aux:pass	_
+11	respeitadas	respeitar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	3	ccomp	3:ccomp	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	trazendo	trazer	VERB	_	VerbForm=Ger	11	advcl	11:advcl	_
+14	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	alívio	alívio	NOUN	_	Gender=Masc|Number=Sing	13	obj	13:obj	_
+16	para	para	ADP	_	_	18	case	18:case	_
+17	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	18:det	_
+18	cofres	cofre	NOUN	_	Gender=Masc|Number=Plur	15	nmod	15:nmod:para	_
+19	públicos	público	ADJ	_	Gender=Masc|Number=Plur	18	amod	18:amod	_
+20	e	e	CCONJ	_	_	21	cc	21:cc	_
+21	vantagens	vantagem	NOUN	_	Gender=Fem|Number=Plur	15	conj	13:obj|15:conj:e	_
+22	para	para	ADP	_	_	24	case	24:case	_
+23	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	24:det	_
+24	servidores	servidor	NOUN	_	Gender=Masc|Number=Plur	21	nmod	21:nmod:para	SpaceAfter=No
+25	.	.	PUNCT	_	_	3	punct	3:punct	_

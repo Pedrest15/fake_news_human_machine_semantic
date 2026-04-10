@@ -1,0 +1,64 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = lula é proibido de deixar o brasil em novembro de 222 preste atenção nesse vídeo.
+1	lula	lula	PROPN	_	_	3	nsubj:pass	3:nsubj:pass|5:nsubj	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:pass	3:aux:pass	_
+3	proibido	proibir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+4	de	de	ADP	_	_	5	mark	5:mark	_
+5	deixar	deixar	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	brasil	brasil	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+8	em	em	ADP	_	_	9	case	9:case	_
+9	novembro	novembro	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:em	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	222	222	NUM	_	NumType=Card	9	nmod	9:nmod:de	_
+12	preste	prestar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	3	parataxis	3:parataxis	_
+13	atenção	atenção	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+14-15	nesse	_	_	_	_	_	_	_	_
+14	em	em	ADP	_	_	16	case	16:case	_
+15	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	16	det	16:det	_
+16	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:em	SpaceAfter=No
+17	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = olha o que aconteceu com lula curta é comenta.
+1	olha	olhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	1	obj	1:obj|4:nsubj	_
+3	que	que	PRON	_	PronType=Rel	4	nsubj	2:ref	_
+4	aconteceu	acontecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+5	com	com	ADP	_	_	6	case	6:case	_
+6	lula	lula	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:com	_
+7	curta	curto	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	_
+8	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cc	9:cc	_
+9	comenta	comentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	1:conj:ser	SpaceAfter=No
+10	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0005
+# text = lula proibido de deixar o país.
+1	lula	lula	PROPN	_	_	2	nsubj	2:nsubj|4:nsubj	_
+2	proibido	proibir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+3	de	de	ADP	_	_	4	mark	4:mark	_
+4	deixar	deixar	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	país	país	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	SpaceAfter=No
+7	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0007
+# text = bia kicis.
+1	bia	bia	X	_	Foreign=Yes	0	root	0:root	_
+2	kicis	kicis	X	_	Foreign=Yes	1	nmod	1:nmod	SpaceAfter=No
+3	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0009
+# text = juiz do df determina apreensão de seu passaporte.
+1	juiz	juiz	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+2-3	do	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	df	df	NOUN	_	Gender=Masc|Number=Sing	1	nmod	1:nmod:de	_
+5	determina	determinar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	apreensão	apreensão	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	9	det	9:det	_
+9	passaporte	passaporte	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de	SpaceAfter=No
+10	.	.	PUNCT	_	_	5	punct	5:punct	_

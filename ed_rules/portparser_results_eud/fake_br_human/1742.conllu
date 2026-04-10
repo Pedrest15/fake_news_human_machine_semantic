@@ -1,0 +1,146 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = O recadinho básico de João Dória para Lula: "Você é covarde, sem-vergonha e cara de pau".
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	recadinho	recadinho	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+3	básico	básico	ADJ	_	Gender=Masc|Number=Sing	2	amod	2:amod	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	João	João	PROPN	_	_	2	nmod	2:nmod:de	_
+6	Dória	Dória	PROPN	_	_	5	flat:name	5:flat:name	_
+7	para	para	ADP	_	_	8	case	8:case	_
+8	Lula	Lula	PROPN	_	_	2	nmod	2:nmod:para	SpaceAfter=No
+9	:	:	PUNCT	_	_	13	punct	13:punct	_
+10	"	"	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+11	Você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	13	nsubj	13:nsubj|15:nsubj|17:nsubj	_
+12	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	13:cop|15:cop|17:cop	_
+13	covarde	covarde	ADJ	_	Number=Sing	2	parataxis	2:parataxis	SpaceAfter=No
+14	,	,	PUNCT	_	_	15	punct	15:punct	_
+15	sem-vergonha	sem-vergonha	NOUN	_	Gender=Fem|Number=Sing	13	conj	2:parataxis|13:conj:e	_
+16	e	e	CCONJ	_	_	17	cc	17:cc	_
+17	cara	cara	NOUN	_	Number=Sing	13	conj	2:parataxis|13:conj:e	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	pau	pau	NOUN	_	Gender=Masc|Number=Sing	17	nmod	17:nmod:de	SpaceAfter=No
+20	"	"	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+21	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = A mensagem é de março de 2016 e foi postada logo após a ex-presidente Dilma oferecer um ministério para que o petista pudesse obter o foro privilegiado.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	mensagem	mensagem	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj|10:nsubj:pass	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	março	março	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	2016	2016	NUM	_	NumType=Card	5	nmod	5:nmod:de	_
+8	e	e	CCONJ	_	_	10	cc	10:cc	_
+9	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	aux:pass	10:aux:pass	_
+10	postada	postar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	5	conj	5:conj:e	_
+11	logo	logo	ADV	_	_	16	advmod	16:advmod	_
+12	após	após	ADP	_	_	16	mark	16:mark	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	ex-presidente	ex-presidente	NOUN	_	Number=Sing	16	nsubj	16:nsubj	_
+15	Dilma	Dilma	PROPN	_	_	14	nmod	14:nmod	_
+16	oferecer	oferecer	VERB	_	VerbForm=Inf	10	advcl	10:advcl:após	_
+17	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	ministério	ministério	NOUN	_	Gender=Masc|Number=Sing	16	obj	16:obj	_
+19	para	para	ADP	_	ExtPos=SCONJ	23	mark	23:mark	_
+20	que	que	SCONJ	_	_	19	fixed	19:fixed	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	petista	petista	NOUN	_	Number=Sing	23	nsubj	23:nsubj|24:nsubj	_
+23	pudesse	poder	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	advcl	16:advcl:para_que	_
+24	obter	obter	VERB	_	VerbForm=Inf	23	xcomp	23:xcomp	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	foro	foro	NOUN	_	Gender=Masc|Number=Sing	24	obj	24:obj	_
+27	privilegiado	privilegiado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	26	amod	26:amod	SpaceAfter=No
+28	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0005
+# text = A minha mensagem vai para você Luiz Inácio Lula da Silva, você que é um sem vergonha e cara de pau.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+2	minha	meu	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	det	3:det	_
+3	mensagem	mensagem	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+4	vai	ir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	para	para	ADP	_	_	6	case	6:case	_
+6	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	4	obl	4:obl:para	_
+7	Luiz	Luiz	PROPN	_	_	4	obl	4:obl	_
+8	Inácio	Inácio	PROPN	_	_	7	flat:name	7:flat:name	_
+9	Lula	Lula	PROPN	_	_	7	flat:name	7:flat:name	_
+10-11	da	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	Silva	Silva	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	7	appos	7:appos|19:nsubj|21:nsubj	_
+15	que	que	PRON	_	PronType=Rel	19	nsubj	14:ref	_
+16	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	cop	19:cop|21:cop	_
+17	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+18	sem	sem	ADP	_	_	19	case	19:case	_
+19	vergonha	vergonha	NOUN	_	Gender=Fem|Number=Sing	14	acl:relcl	14:acl:relcl	_
+20	e	e	CCONJ	_	_	21	cc	21:cc	_
+21	cara	cara	NOUN	_	Number=Sing	19	conj	14:acl:relcl|19:conj:e	_
+22	de	de	ADP	_	_	23	case	23:case	_
+23	pau	pau	NOUN	_	Gender=Masc|Number=Sing	21	nmod	21:nmod:de	SpaceAfter=No
+24	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0007
+# text = Agora eu descobri que você também é um covarde, covarde com C maiúsculo.
+1	Agora	agora	ADV	_	_	3	advmod	3:advmod	_
+2	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	3:nsubj	_
+3	descobri	descobrir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	9	mark	9:mark|11:mark	_
+5	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	9	nsubj	9:nsubj|11:nsubj	_
+6	também	também	ADV	_	_	9	advmod	9:advmod	_
+7	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	9:cop|11:cop	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	covarde	covarde	NOUN	_	Number=Sing	3	ccomp	3:ccomp	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	covarde	covarde	NOUN	_	Number=Sing	9	conj	3:ccomp|9:conj	_
+12	com	com	ADP	_	_	13	case	13:case	_
+13	C	c	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:com	_
+14	maiúsculo	maiúsculo	ADJ	_	Gender=Masc|Number=Sing	13	amod	13:amod	SpaceAfter=No
+15	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0009
+# text = Porque você vai se esconder atrás de um ministério para inibir a ação do juíz Sérgio Moro, para se esconder embaixo de um cargo público, isso é falta de coragem, afirmou Dória no vídeo.
+1	Porque	porque	CCONJ	_	_	5	cc	5:cc	_
+2	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	5	nsubj	5:nsubj|22:nsubj	_
+3	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	5:aux|22:aux	_
+4	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	5	expl	5:expl	_
+5	esconder	esconder	VERB	_	VerbForm=Inf	35	ccomp:speech	35:ccomp:speech	_
+6	atrás	atrás	ADV	_	_	5	advmod	5:advmod	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	ministério	ministério	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:de	_
+10	para	para	ADP	_	_	11	mark	11:mark	_
+11	inibir	inibir	VERB	_	VerbForm=Inf	5	advcl	5:advcl:para	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	ação	ação	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	_
+14-15	do	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	juíz	juíz	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod:de	_
+17	Sérgio	Sérgio	PROPN	_	_	16	nmod	16:nmod	_
+18	Moro	Moro	PROPN	_	_	17	flat:name	17:flat:name	SpaceAfter=No
+19	,	,	PUNCT	_	_	22	punct	22:punct	_
+20	para	para	ADP	_	_	22	mark	22:mark	_
+21	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	22	expl	22:expl	_
+22	esconder	esconder	VERB	_	VerbForm=Inf	5	conj	5:conj|35:ccomp:speech	_
+23	embaixo	embaixo	ADV	_	_	22	advmod	22:advmod	_
+24	de	de	ADP	_	_	26	case	26:case	_
+25	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	cargo	cargo	NOUN	_	Gender=Masc|Number=Sing	23	obl	23:obl:de	_
+27	público	público	ADJ	_	Gender=Masc|Number=Sing	26	amod	26:amod	SpaceAfter=No
+28	,	,	PUNCT	_	_	22	punct	22:punct	_
+29	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	31	nsubj	31:nsubj	_
+30	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	cop	31:cop	_
+31	falta	falta	NOUN	_	Gender=Fem|Number=Sing	35	ccomp:speech	35:ccomp:speech	_
+32	de	de	ADP	_	_	33	case	33:case	_
+33	coragem	coragem	NOUN	_	Gender=Fem|Number=Sing	31	nmod	31:nmod:de	SpaceAfter=No
+34	,	,	PUNCT	_	_	5	punct	5:punct	_
+35	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+36	Dória	Dória	PROPN	_	_	35	nsubj	35:nsubj	_
+37-38	no	_	_	_	_	_	_	_	_
+37	em	em	ADP	_	_	39	case	39:case	_
+38	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	39:det	_
+39	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	35	obl	35:obl:em	SpaceAfter=No
+40	.	.	PUNCT	_	_	35	punct	35:punct	_

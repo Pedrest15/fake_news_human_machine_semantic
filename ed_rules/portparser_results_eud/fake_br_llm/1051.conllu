@@ -1,0 +1,196 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = URGENTE: Mãe de Itapetininga acusada de matar filha de 5 anos após "ritual satânico" em casa.
+1	URGENTE	URGENTE	PROPN	_	_	0	root	0:root	SpaceAfter=No
+2	:	:	PUNCT	_	_	3	punct	3:punct	_
+3	Mãe	mãe	NOUN	_	Gender=Fem|Number=Sing	1	dep	1:dep	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	Itapetininga	Itapetininga	PROPN	_	_	3	nmod	3:nmod:de	_
+6	acusada	acusar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	3	acl	3:acl	_
+7	de	de	ADP	_	_	8	mark	8:mark	_
+8	matar	matar	VERB	_	VerbForm=Inf	6	xcomp	6:xcomp	_
+9	filha	filho	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	5	5	NUM	_	NumType=Card	12	nummod	12:nummod	_
+12	anos	ano	NOUN	_	Gender=Masc|Number=Plur	9	nmod	9:nmod:de	_
+13	após	após	ADP	_	_	15	case	15:case	_
+14	"	"	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+15	ritual	ritual	NOUN	_	Number=Sing	8	obl	8:obl:após	_
+16	satânico	satânico	ADJ	_	Gender=Masc|Number=Sing	15	amod	15:amod	SpaceAfter=No
+17	"	"	PUNCT	_	_	15	punct	15:punct	_
+18	em	em	ADP	_	_	19	case	19:case	_
+19	casa	casa	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:em	SpaceAfter=No
+20	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = A mulher, que já havia perdido a guarda da criança em 2012 por negligência, foi flagrada em 2016 em reportagem da TV TEM, onde negava as acusações.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	mulher	mulher	NOUN	_	Gender=Fem|Number=Sing	19	nsubj:pass	7:nsubj|19:nsubj:pass	SpaceAfter=No
+3	,	,	PUNCT	_	_	7	punct	7:punct	_
+4	que	que	PRON	_	PronType=Rel	7	nsubj	2:ref	_
+5	já	já	ADV	_	_	7	advmod	7:advmod	_
+6	havia	haver	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	aux	7:aux	_
+7	perdido	perder	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	2	acl:relcl	2:acl:relcl	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	guarda	guarda	NOUN	_	Number=Sing	7	obj	7:obj	_
+10-11	da	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	criança	criança	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:de	_
+13	em	em	ADP	_	_	14	case	14:case	_
+14	2012	2012	NUM	_	NumType=Card	7	obl	7:obl:em	_
+15	por	por	ADP	_	_	16	case	16:case	_
+16	negligência	negligência	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:por	SpaceAfter=No
+17	,	,	PUNCT	_	_	7	punct	7:punct	_
+18	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	aux:pass	19:aux:pass	_
+19	flagrada	flagrar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+20	em	em	ADP	_	_	21	case	21:case	_
+21	2016	2016	NUM	_	NumType=Card	19	obl	19:obl:em	_
+22	em	em	ADP	_	_	23	case	23:case	_
+23	reportagem	reportagem	NOUN	_	Gender=Fem|Number=Sing	19	obl	19:obl:em	_
+24-25	da	_	_	_	_	_	_	_	_
+24	de	de	ADP	_	_	26	case	26:case	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	TV	TV	PROPN	_	_	23	nmod	23:nmod:de|30:obl	_
+27	TEM	TEM	PROPN	_	_	26	flat:name	26:flat:name	SpaceAfter=No
+28	,	,	PUNCT	_	_	30	punct	30:punct	_
+29	onde	onde	ADV	_	_	30	advmod	26:ref	_
+30	negava	negar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	26	acl:relcl	26:acl:relcl	_
+31	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	32	det	32:det	_
+32	acusações	acusação	NOUN	_	Gender=Fem|Number=Plur	30	obj	30:obj	SpaceAfter=No
+33	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0005
+# text = Débora Rolim da Silva e Phelipe Douglas Alves, presos no sábado (3), têm histórico de violência e uso de drogas.
+1	Débora	Débora	PROPN	_	_	19	nsubj	19:nsubj	_
+2	Rolim	Rolim	PROPN	_	_	1	flat:name	1:flat:name	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	Silva	Silva	PROPN	_	_	1	flat:name	1:flat:name	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	Phelipe	Phelipe	PROPN	_	_	1	conj	1:conj:e|19:nsubj	_
+8	Douglas	Douglas	PROPN	_	_	7	flat:name	7:flat:name	_
+9	Alves	Alves	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	presos	prender	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	1	acl	1:acl|7:acl	_
+12-13	no	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	sábado	sábado	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:em	_
+15	(	(	PUNCT	_	_	16	punct	16:punct	SpaceAfter=No
+16	3	3	NUM	_	NumType=Card	14	appos	14:appos	SpaceAfter=No
+17	)	)	PUNCT	_	_	16	punct	16:punct	SpaceAfter=No
+18	,	,	PUNCT	_	_	11	punct	11:punct	_
+19	têm	ter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+20	histórico	histórico	NOUN	_	Gender=Masc|Number=Sing	19	obj	19:obj	_
+21	de	de	ADP	_	_	22	case	22:case|24:case	_
+22	violência	violência	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:de	_
+23	e	e	CCONJ	_	_	24	cc	24:cc	_
+24	uso	uso	NOUN	_	Gender=Masc|Number=Sing	22	conj	20:nmod:de|22:conj:e	_
+25	de	de	ADP	_	_	26	case	26:case	_
+26	drogas	droga	NOUN	_	Gender=Fem|Number=Plur	24	nmod	24:nmod:de	SpaceAfter=No
+27	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0007
+# text = Testemunhas, incluindo a avó materna e uma babá, relatam cenas de terror: agressões com cinto e objetos estranhos usados para silenciar a criança.
+1	Testemunhas	testemunha	NOUN	_	Gender=Fem|Number=Plur	11	nsubj	11:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	incluindo	incluir	VERB	_	VerbForm=Ger	1	acl	1:acl	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	avó	avó	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+6	materna	materno	ADJ	_	Gender=Fem|Number=Sing	5	amod	5:amod	_
+7	e	e	CCONJ	_	_	9	cc	9:cc	_
+8	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	babá	babá	NOUN	_	Number=Sing	5	conj	3:obj|5:conj:e	SpaceAfter=No
+10	,	,	PUNCT	_	_	3	punct	3:punct	_
+11	relatam	relatar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+12	cenas	cena	NOUN	_	Gender=Fem|Number=Plur	11	obj	11:obj	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	terror	terror	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:de	SpaceAfter=No
+15	:	:	PUNCT	_	_	16	punct	16:punct	_
+16	agressões	agressão	NOUN	_	Gender=Fem|Number=Plur	12	appos	12:appos	_
+17	com	com	ADP	_	_	18	case	18:case	_
+18	cinto	cinto	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod:com	_
+19	e	e	CCONJ	_	_	20	cc	20:cc	_
+20	objetos	objeto	NOUN	_	Gender=Masc|Number=Plur	16	conj	12:appos|16:conj:e	_
+21	estranhos	estranho	ADJ	_	Gender=Masc|Number=Plur	20	amod	20:amod	_
+22	usados	usar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	20	acl	20:acl	_
+23	para	para	ADP	_	_	24	mark	24:mark	_
+24	silenciar	silenciar	VERB	_	VerbForm=Inf	22	advcl	22:advcl:para	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	criança	criança	NOUN	_	Gender=Fem|Number=Sing	24	obj	24:obj	SpaceAfter=No
+27	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0009
+# text = O Conselho Tutelar, que antes elogiava a recuperação da guarda, agora enfrenta críticas por não ter agido a tempo de salvar a menina.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Conselho	Conselho	PROPN	_	_	15	nsubj	7:nsubj|15:nsubj	_
+3	Tutelar	Tutelar	PROPN	_	_	2	flat:name	2:flat:name	SpaceAfter=No
+4	,	,	PUNCT	_	_	7	punct	7:punct	_
+5	que	que	PRON	_	PronType=Rel	7	nsubj	2:ref	_
+6	antes	antes	ADV	_	_	7	advmod	7:advmod	_
+7	elogiava	elogiar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	recuperação	recuperação	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	_
+10-11	da	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	guarda	guarda	NOUN	_	Number=Sing	9	nmod	9:nmod:de	SpaceAfter=No
+13	,	,	PUNCT	_	_	7	punct	7:punct	_
+14	agora	agora	ADV	_	_	15	advmod	15:advmod	_
+15	enfrenta	enfrentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+16	críticas	crítico	NOUN	_	Gender=Fem|Number=Plur	15	obj	15:obj	_
+17	por	por	ADP	_	_	20	mark	20:mark	_
+18	não	não	ADV	_	_	20	advmod	20:advmod	_
+19	ter	ter	AUX	_	VerbForm=Inf	20	aux	20:aux	_
+20	agido	agir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	15	advcl	15:advcl:por	_
+21	a	a	ADP	_	_	22	case	22:case	_
+22	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	20	obl	20:obl:a	_
+23	de	de	ADP	_	_	24	mark	24:mark	_
+24	salvar	salvar	VERB	_	VerbForm=Inf	22	acl	22:acl:de	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	menina	menino	NOUN	_	Gender=Fem|Number=Sing	24	obj	24:obj	SpaceAfter=No
+27	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0011
+# text = O juiz Alessandro Viana Vieira de Paula prometeu "medidas severas" para proteger os outros filhos do casal.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	juiz	juiz	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	8:nsubj	_
+3	Alessandro	Alessandro	PROPN	_	_	2	nmod	2:nmod	_
+4	Viana	Viana	PROPN	_	_	3	flat:name	3:flat:name	_
+5	Vieira	Vieira	PROPN	_	_	3	flat:name	3:flat:name	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	Paula	Paula	PROPN	_	_	3	flat:name	3:flat:name	_
+8	prometeu	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+10	medidas	medida	NOUN	_	Gender=Fem|Number=Plur	8	obj	8:obj	_
+11	severas	severo	ADJ	_	Gender=Fem|Number=Plur	10	amod	10:amod	SpaceAfter=No
+12	"	"	PUNCT	_	_	10	punct	10:punct	_
+13	para	para	ADP	_	_	14	mark	14:mark	_
+14	proteger	proteger	VERB	_	VerbForm=Inf	10	acl	10:acl:para	_
+15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	17:det	_
+16	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	17	det	17:det	_
+17	filhos	filho	NOUN	_	Gender=Masc|Number=Plur	14	obj	14:obj	_
+18-19	do	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	casal	casal	NOUN	_	Gender=Masc|Number=Sing	17	nmod	17:nmod:de	SpaceAfter=No
+21	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0013
+# text = As investigações revelam detalhes chocantes, enquanto a população local clama por justiça.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	investigações	investigação	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	3:nsubj	_
+3	revelam	revelar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	detalhes	detalhe	NOUN	_	Gender=Masc|Number=Plur	3	obj	3:obj	_
+5	chocantes	chocante	ADJ	_	Number=Plur	4	amod	4:amod	SpaceAfter=No
+6	,	,	PUNCT	_	_	11	punct	11:punct	_
+7	enquanto	enquanto	SCONJ	_	_	11	mark	11:mark	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	população	população	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	11:nsubj	_
+10	local	local	ADJ	_	Number=Sing	9	amod	9:amod	_
+11	clama	clamar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	advcl	3:advcl:enquanto	_
+12	por	por	ADP	_	_	13	case	13:case	_
+13	justiça	justiça	NOUN	_	Gender=Fem|Number=Sing	11	obl	11:obl:por	SpaceAfter=No
+14	.	.	PUNCT	_	_	3	punct	3:punct	_

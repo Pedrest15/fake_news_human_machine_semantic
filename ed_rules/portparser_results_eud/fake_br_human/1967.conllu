@@ -1,0 +1,543 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Fátima e o filho de 18 anos estariam deprimidos.
+1	Fátima	Fátima	PROPN	_	_	9	nsubj	9:nsubj	_
+2	e	e	CCONJ	_	_	4	cc	4:cc	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	filho	filho	NOUN	_	Gender=Masc|Number=Sing	1	conj	1:conj:e|9:nsubj	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	18	18	NUM	_	NumType=Card	7	nummod	7:nummod	_
+7	anos	ano	NOUN	_	Gender=Masc|Number=Plur	4	nmod	4:nmod:de	_
+8	estariam	estar	AUX	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	9	cop	9:cop	_
+9	deprimidos	deprimido	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	0	root	0:root	SpaceAfter=No
+10	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0003
+# text = Médica que operou a vesícula de Bonner é a causa da separação.
+1	Médica	médico	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	3:nsubj|10:nsubj	_
+2	que	que	PRON	_	PronType=Rel	3	nsubj	1:ref	_
+3	operou	operar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	vesícula	vesícula	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	Bonner	Bonner	PROPN	_	_	5	nmod	5:nmod:de	_
+8	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	causa	causa	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+11-12	da	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	separação	separação	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:de	SpaceAfter=No
+14	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0005
+# text = Fátima e William dizem que continuam amigos, mas ao que tudo indica, a separação está sendo traumática.
+1	Fátima	Fátima	PROPN	_	_	4	nsubj	4:nsubj	_
+2	e	e	CCONJ	_	_	3	cc	3:cc	_
+3	William	William	PROPN	_	_	1	conj	1:conj:e|4:nsubj	_
+4	dizem	dizer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	que	que	SCONJ	_	_	6	mark	6:mark	_
+6	continuam	continuar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	ccomp	4:ccomp	_
+7	amigos	amigo	NOUN	_	Gender=Masc|Number=Plur	6	xcomp	6:xcomp	SpaceAfter=No
+8	,	,	PUNCT	_	_	20	punct	20:punct	_
+9	mas	mas	CCONJ	_	_	20	cc	20:cc	_
+10-11	ao	_	_	_	_	_	_	_	_
+10	a	a	ADP	_	_	11	case	11:case	_
+11	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	20	obl	14:obj|20:obl:a	_
+12	que	que	PRON	_	PronType=Rel	14	obj	11:ref	_
+13	tudo	tudo	PRON	_	PronType=Ind	14	nsubj	14:nsubj	_
+14	indica	indicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	11:acl:relcl	SpaceAfter=No
+15	,	,	PUNCT	_	_	14	punct	14:punct	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	separação	separação	NOUN	_	Gender=Fem|Number=Sing	20	nsubj	20:nsubj	_
+18	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	aux	20:aux	_
+19	sendo	ser	AUX	_	VerbForm=Ger	20	cop	20:cop	_
+20	traumática	traumático	ADJ	_	Gender=Fem|Number=Sing	4	conj	4:conj:mas	SpaceAfter=No
+21	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0007
+# text = Neste fim de semana, A VEJA e a CONTIGO publicaram detalhes de como teria ocorrido o divórcio de uma relação que durou 26 anos.
+1-2	Neste	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	3	det	3:det	_
+3	fim	fim	NOUN	_	Gender=Masc|Number=Sing	13	obl	13:obl:em	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	semana	semana	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	3	punct	3:punct	_
+7	A	A	PROPN	_	_	13	nsubj	13:nsubj	_
+8	VEJA	VEJA	PROPN	_	_	7	flat:name	7:flat:name	_
+9	e	e	CCONJ	_	_	11	cc	11:cc	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11-12	CONTIGO	_	_	_	_	_	_	_	_
+11	COM	COM	PROPN	_	_	7	conj	7:conj:e|13:nsubj	_
+12	TI	TI	PROPN	_	_	11	flat:name	11:flat:name	_
+13	publicaram	publicar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	detalhes	detalhe	NOUN	_	Gender=Masc|Number=Plur	13	obj	13:obj	_
+15	de	de	ADP	_	_	18	mark	18:mark	_
+16	como	como	ADV	_	_	18	advmod	18:advmod	_
+17	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	18	aux	18:aux	_
+18	ocorrido	ocorrer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	14	acl	14:acl:de	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	divórcio	divórcio	NOUN	_	Gender=Masc|Number=Sing	18	nsubj	18:nsubj	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	relação	relação	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:de|25:nsubj	_
+24	que	que	PRON	_	PronType=Rel	25	nsubj	23:ref	_
+25	durou	durar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	acl:relcl	23:acl:relcl	_
+26	26	26	NUM	_	NumType=Card	27	nummod	27:nummod	_
+27	anos	ano	NOUN	_	Gender=Masc|Number=Plur	25	obj	25:obj	SpaceAfter=No
+28	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0009
+# text = De acordo com as publicações, o casal já não estaria bem há mais de um ano.
+1	De	de	ADP	_	_	2	case	2:case	_
+2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:de	_
+3	com	com	ADP	_	_	5	case	5:case	_
+4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	5:det	_
+5	publicações	publicação	NOUN	_	Gender=Fem|Number=Plur	2	nmod	2:nmod:com	SpaceAfter=No
+6	,	,	PUNCT	_	_	2	punct	2:punct	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	casal	casal	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	12:nsubj	_
+9	já	já	ADV	_	_	12	advmod	12:advmod	_
+10	não	não	ADV	_	_	12	advmod	12:advmod	_
+11	estaria	estar	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	12	cop	12:cop	_
+12	bem	bem	ADV	_	_	0	root	0:root	_
+13	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	advcl	12:advcl	_
+14	mais	mais	ADV	_	ExtPos=ADV	16	advmod	16:advmod	_
+15	de	de	ADP	_	_	14	fixed	14:fixed	_
+16	um	um	NUM	_	Gender=Masc|NumType=Card	17	nummod	17:nummod	_
+17	ano	ano	NOUN	_	Gender=Masc|Number=Sing	13	obj	13:obj	SpaceAfter=No
+18	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0011
+# text = Em junho deste ano, Bonner saiu de casa e foi para um apartamento na Zona Sul do Rio de Janeiro, que ele estava reformando há meses.
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	junho	junho	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:em	_
+3-4	deste	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	5	det	5:det	_
+5	ano	ano	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	2	punct	2:punct	_
+7	Bonner	Bonner	PROPN	_	_	8	nsubj	8:nsubj|12:nsubj	_
+8	saiu	sair	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	casa	casa	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:de	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	foi	ir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	conj	8:conj:e	_
+13	para	para	ADP	_	_	15	case	15:case	_
+14	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	apartamento	apartamento	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:para	_
+16-17	na	_	_	_	_	_	_	_	_
+16	em	em	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	Zona	Zona	PROPN	_	_	15	nmod	15:nmod:em|29:obj	_
+19	Sul	Sul	PROPN	_	_	18	flat:name	18:flat:name	_
+20-21	do	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	Rio	Rio	PROPN	_	_	18	nmod	18:nmod:de	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	Janeiro	Janeiro	PROPN	_	_	22	flat:name	22:flat:name	SpaceAfter=No
+25	,	,	PUNCT	_	_	29	punct	29:punct	_
+26	que	que	PRON	_	PronType=Rel	29	obj	18:ref	_
+27	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	29	nsubj	29:nsubj	_
+28	estava	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	29	aux	29:aux	_
+29	reformando	reformar	VERB	_	VerbForm=Ger	18	acl:relcl	18:acl:relcl	_
+30	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	advcl	29:advcl	_
+31	meses	mÃªs	NOUN	_	Gender=Masc|Number=Plur	30	obj	30:obj	SpaceAfter=No
+32	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0013
+# text = A ex-mulher e os três filhos, trigêmeos ficaram na antiga residência do casal.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	ex-mulher	ex-mulher	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	9:nsubj	_
+3	e	e	CCONJ	_	_	6	cc	6:cc	_
+4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	6:det	_
+5	três	três	NUM	_	NumType=Card	6	nummod	6:nummod	_
+6	filhos	filho	NOUN	_	Gender=Masc|Number=Plur	2	conj	2:conj:e|9:nsubj	SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	8:punct	_
+8	trigêmeos	trigêmeo	ADJ	_	Gender=Masc|Number=Plur	6	amod	6:amod	_
+9	ficaram	ficar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10-11	na	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	13	case	13:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+12	antiga	antigo	ADJ	_	Gender=Fem|Number=Sing	13	amod	13:amod	_
+13	residência	residência	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:em	_
+14-15	do	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	casal	casal	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod:de	SpaceAfter=No
+17	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0015
+# text = O filho Vinícius de 18 anos (que trabalha na Rede Globo) era o mais abalado com a separação.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	filho	filho	NOUN	_	Gender=Masc|Number=Sing	16	nsubj	9:nsubj|16:nsubj	_
+3	Vinícius	Vinícius	PROPN	_	_	2	nmod	2:nmod	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	18	18	NUM	_	NumType=Card	6	nummod	6:nummod	_
+6	anos	ano	NOUN	_	Gender=Masc|Number=Plur	2	nmod	2:nmod:de	_
+7	(	(	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+8	que	que	PRON	_	PronType=Rel	9	nsubj	2:ref	_
+9	trabalha	trabalhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+10-11	na	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	Rede	Rede	PROPN	_	_	9	obl	9:obl:em	_
+13	Globo	Globo	PROPN	_	_	12	flat:name	12:flat:name	SpaceAfter=No
+14	)	)	PUNCT	_	_	9	punct	9:punct	_
+15	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	16	cop	16:cop	_
+16	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	0	root	0:root	_
+17	mais	mais	ADV	_	_	18	advmod	18:advmod	_
+18	abalado	abalado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	16	amod	16:amod	_
+19	com	com	ADP	_	_	21	case	21:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	separação	separação	NOUN	_	Gender=Fem|Number=Sing	18	obl	18:obl:com	SpaceAfter=No
+22	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0017
+# text = Amigos próximos relatam que não foi uma traição que acabou com o casamento, porém Bonner já teria uma outra mulher, que só foi descoberta depois que ele saiu de casa.
+1	Amigos	amigo	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	3:nsubj	_
+2	próximos	próximo	ADJ	_	Gender=Masc|Number=Plur	1	amod	1:amod	_
+3	relatam	relatar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	8	mark	8:mark	_
+5	não	não	ADV	_	_	8	advmod	8:advmod	_
+6	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	cop	8:cop	_
+7	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	traição	traição	NOUN	_	Gender=Fem|Number=Sing	3	ccomp	3:ccomp|10:nsubj	_
+9	que	que	PRON	_	PronType=Rel	10	nsubj	8:ref	_
+10	acabou	acabar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	acl:relcl	8:acl:relcl	_
+11	com	com	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	casamento	casamento	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:com	SpaceAfter=No
+14	,	,	PUNCT	_	_	18	punct	18:punct	_
+15	porém	porém	CCONJ	_	_	18	cc	18:cc	_
+16	Bonner	Bonner	PROPN	_	_	18	nsubj	18:nsubj	_
+17	já	já	ADV	_	_	18	advmod	18:advmod	_
+18	teria	ter	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	3	conj	3:conj:porém	_
+19	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+20	outra	outro	DET	_	Gender=Fem|Number=Sing|PronType=Ind	21	det	21:det	_
+21	mulher	mulher	NOUN	_	Gender=Fem|Number=Sing	18	obj	18:obj|26:nsubj:pass	SpaceAfter=No
+22	,	,	PUNCT	_	_	26	punct	26:punct	_
+23	que	que	PRON	_	PronType=Rel	26	nsubj:pass	21:ref	_
+24	só	só	ADV	_	_	26	advmod	26:advmod	_
+25	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	26	aux:pass	26:aux:pass	_
+26	descoberta	descobrir	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	21	acl:relcl	21:acl:relcl	_
+27	depois	depois	ADV	_	ExtPos=SCONJ	30	mark	30:mark	_
+28	que	que	SCONJ	_	_	27	fixed	27:fixed	_
+29	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	30	nsubj	30:nsubj	_
+30	saiu	sair	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	26	advcl	26:advcl:depois_que	_
+31	de	de	ADP	_	_	32	case	32:case	_
+32	casa	casa	NOUN	_	Gender=Fem|Number=Sing	30	obl	30:obl:de	SpaceAfter=No
+33	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0019
+# text = A moça (de acordo com as Revistas Veja e Contigo) é uma médica, 10 anos mais nova que Willian Bonner, e que cuidou do jornalista em novembro de 2015, quando ele fez uma cirurgia para retirar a vesícula.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	moça	moço	NOUN	_	Gender=Fem|Number=Sing	16	nsubj	16:nsubj	_
+3	(	(	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+4	de	de	ADP	_	_	5	case	5:case	_
+5	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod:de	_
+6	com	com	ADP	_	_	8	case	8:case	_
+7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	8:det	_
+8	Revistas	Revistas	PROPN	_	_	5	nmod	5:nmod:com	_
+9	Veja	Veja	PROPN	_	_	8	flat:name	8:flat:name	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11-12	Contigo	_	_	_	_	_	_	_	_
+11	Com	Com	PROPN	_	_	9	conj	8:flat:name|9:conj:e	_
+12	ti	ti	PROPN	_	_	11	flat:name	11:flat:name	_
+13	)	)	PUNCT	_	_	5	punct	5:punct	_
+14	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	16:cop	_
+15	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	médica	médico	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+17	,	,	PUNCT	_	_	21	punct	21:punct	_
+18	10	10	NUM	_	NumType=Card	19	nummod	19:nummod	_
+19	anos	ano	NOUN	_	Gender=Masc|Number=Plur	21	obl	21:obl	_
+20	mais	mais	ADV	_	_	21	advmod	21:advmod	_
+21	nova	novo	ADJ	_	Gender=Fem|Number=Sing	16	amod	16:amod	_
+22	que	que	SCONJ	_	_	23	mark	23:mark	_
+23	Willian	Willian	PROPN	_	_	21	advcl	21:advcl:que	_
+24	Bonner	Bonner	PROPN	_	_	23	flat:name	23:flat:name	SpaceAfter=No
+25	,	,	PUNCT	_	_	28	punct	28:punct	_
+26	e	e	CCONJ	_	_	28	cc	28:cc	_
+27	que	que	PRON	_	PronType=Rel	28	nsubj	28:nsubj	_
+28	cuidou	cuidar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	conj	16:conj:e	_
+29-30	do	_	_	_	_	_	_	_	_
+29	de	de	ADP	_	_	31	case	31:case	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	jornalista	jornalista	NOUN	_	Number=Sing	28	obl	28:obl:de	_
+32	em	em	ADP	_	_	33	case	33:case	_
+33	novembro	novembro	NOUN	_	Gender=Masc|Number=Sing	28	obl	28:obl:em|39:obl	_
+34	de	de	ADP	_	_	35	case	35:case	_
+35	2015	2015	NUM	_	NumType=Card	33	nmod	33:nmod:de	SpaceAfter=No
+36	,	,	PUNCT	_	_	39	punct	39:punct	_
+37	quando	quando	ADV	_	_	39	advmod	33:ref	_
+38	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	39	nsubj	39:nsubj	_
+39	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	33	acl:relcl	33:acl:relcl	_
+40	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	41	det	41:det	_
+41	cirurgia	cirurgia	NOUN	_	Gender=Fem|Number=Sing	39	obj	39:obj	_
+42	para	para	ADP	_	_	43	mark	43:mark	_
+43	retirar	retirar	VERB	_	VerbForm=Inf	39	advcl	39:advcl:para	_
+44	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	45	det	45:det	_
+45	vesícula	vesícula	NOUN	_	Gender=Fem|Number=Sing	43	obj	43:obj	SpaceAfter=No
+46	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0021
+# text = Na Globo, Fátima foi às lágrimas e não conseguiu esconder o peso e a tristeza que carregava nas costas.
+1-2	Na	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	Globo	Globo	PROPN	_	_	6	obl	6:obl:em	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	Fátima	Fátima	PROPN	_	_	6	nsubj	6:nsubj|12:nsubj|13:nsubj	_
+6	foi	ir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7-8	às	_	_	_	_	_	_	_	_
+7	a	a	ADP	_	_	9	case	9:case	_
+8	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	9:det	_
+9	lágrimas	lágrima	NOUN	_	Gender=Fem|Number=Plur	6	obl	6:obl:a	_
+10	e	e	CCONJ	_	_	12	cc	12:cc	_
+11	não	não	ADV	_	_	12	advmod	12:advmod	_
+12	conseguiu	conseguir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	conj	6:conj:e	_
+13	esconder	esconder	VERB	_	VerbForm=Inf	12	xcomp	12:xcomp	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	peso	peso	NOUN	_	Gender=Masc|Number=Sing	13	obj	13:obj|20:obj	_
+16	e	e	CCONJ	_	_	18	cc	18:cc	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	tristeza	tristeza	NOUN	_	Gender=Fem|Number=Sing	15	conj	13:obj|15:conj:e|20:obj	_
+19	que	que	PRON	_	PronType=Rel	20	obj	15:ref|18:ref	_
+20	carregava	carregar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	15	acl:relcl	15:acl:relcl|18:acl:relcl	_
+21-22	nas	_	_	_	_	_	_	_	_
+21	em	em	ADP	_	_	23	case	23:case	_
+22	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	23:det	_
+23	costas	costa	NOUN	_	Gender=Fem|Number=Plur	20	obl	20:obl:em	SpaceAfter=No
+24	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0023
+# text = Oficialmente, os dois dizem apenas que não falarão mais nada sobre o assunto e que continuam sendo amigos.
+1	Oficialmente	oficialmente	ADV	_	_	5	advmod	5:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	4:det	_
+4	dois	dois	NUM	_	Gender=Masc|NumType=Card	5	nsubj	5:nsubj	_
+5	dizem	dizer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	apenas	apenas	ADV	_	_	5	advmod	5:advmod	_
+7	que	que	SCONJ	_	_	9	mark	9:mark	_
+8	não	não	ADV	_	_	9	advmod	9:advmod	_
+9	falarão	falar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	5	ccomp	5:ccomp	_
+10	mais	mais	ADV	_	_	11	det	11:det	_
+11	nada	nada	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	9	obj	9:obj	_
+12	sobre	sobre	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	assunto	assunto	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:sobre	_
+15	e	e	CCONJ	_	_	17	cc	17:cc	_
+16	que	que	SCONJ	_	_	17	mark	17:mark	_
+17	continuam	continuar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	conj	5:ccomp|9:conj:e	_
+18	sendo	ser	AUX	_	VerbForm=Ger	19	cop	19:cop	_
+19	amigos	amigo	NOUN	_	Gender=Masc|Number=Plur	17	xcomp	17:xcomp	SpaceAfter=No
+20	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0025
+# text = O colunista Leo Dias (jornal O Dia) revelou a identidade da moça.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	colunista	colunista	NOUN	_	Number=Sing	10	nsubj	10:nsubj	_
+3	Leo	Leo	PROPN	_	_	2	nmod	2:nmod	_
+4	Dias	Dias	PROPN	_	_	3	flat:name	3:flat:name	_
+5	(	(	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+6	jornal	jornal	NOUN	_	Gender=Masc|Number=Sing	2	parataxis	2:parataxis	_
+7	O	O	PROPN	_	_	6	nmod	6:nmod	_
+8	Dia	Dia	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+9	)	)	PUNCT	_	_	6	punct	6:punct	_
+10	revelou	revelar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	identidade	identidade	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+13-14	da	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	moça	moço	NOUN	_	Gender=Fem|Number=Sing	12	nmod	12:nmod:de	SpaceAfter=No
+16	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0027
+# text = O site MSN também confirmou a informação.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	site	site	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+3	MSN	MSN	PROPN	_	_	2	nmod	2:nmod	_
+4	também	também	ADV	_	_	5	advmod	5:advmod	_
+5	confirmou	confirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	informação	informação	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	SpaceAfter=No
+8	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0029
+# text = Trata-se da médica Natasha Dantas, especialista em RPG (Reeducação Postural Global).
+1-2	Trata-se	_	_	_	_	_	_	_	_
+1	Trata	tratar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	1	expl:impers	1:expl:impers	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	médica	médico	NOUN	_	Gender=Fem|Number=Sing	1	obl	1:obl:de	_
+6	Natasha	Natasha	PROPN	_	_	5	nmod	5:nmod	_
+7	Dantas	Dantas	PROPN	_	_	6	flat:name	6:flat:name	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	especialista	especialista	NOUN	_	Number=Sing	5	appos	5:appos	_
+10	em	em	ADP	_	_	11	case	11:case	_
+11	RPG	RPG	PROPN	_	_	9	nmod	9:nmod:em	_
+12	(	(	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+13	Reeducação	Reeducação	PROPN	_	_	11	appos	11:appos	_
+14	Postural	Postural	PROPN	_	_	13	flat:name	13:flat:name	_
+15	Global	Global	PROPN	_	_	13	flat:name	13:flat:name	SpaceAfter=No
+16	)	)	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+17	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0031
+# text = Ela teria sido o pivô da separação do Bonner e Fátima Bernardes.
+1	Ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	nsubj	5:nsubj	_
+2	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	5	aux	5:aux	_
+3	sido	ser	AUX	_	Gender=Masc|Number=Sing|VerbForm=Part	5	cop	5:cop	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	pivô	pivô	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+6-7	da	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	separação	separação	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	_
+9-10	do	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case|13:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	Bonner	Bonner	PROPN	_	_	8	nmod	8:nmod:de	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	Fátima	Fátima	PROPN	_	_	11	conj	8:nmod:de|11:conj:e	_
+14	Bernardes	Bernardes	PROPN	_	_	13	flat:name	13:flat:name	SpaceAfter=No
+15	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0033
+# text = A moça é uma fisioterapeuta e fez questão de publicar uma "piadinha maldosa" quando o divórcio dos jornalistas foi anunciado publicamente.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	moça	moço	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj|7:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+4	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	fisioterapeuta	fisioterapeuta	NOUN	_	Number=Sing	0	root	0:root	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	conj	5:conj:e	_
+8	questão	questão	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	_
+9	de	de	ADP	_	_	10	mark	10:mark	_
+10	publicar	publicar	VERB	_	VerbForm=Inf	8	acl	8:acl:de	_
+11	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+12	"	"	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+13	piadinha	piadinho	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+14	maldosa	maldoso	ADJ	_	Gender=Fem|Number=Sing	13	amod	13:amod	SpaceAfter=No
+15	"	"	PUNCT	_	_	13	punct	13:punct	_
+16	quando	quando	SCONJ	_	_	23	mark	23:mark	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	divórcio	divórcio	NOUN	_	Gender=Masc|Number=Sing	23	nsubj:pass	23:nsubj:pass	_
+19-20	dos	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	21:det	_
+21	jornalistas	jornalista	NOUN	_	Number=Plur	18	nmod	18:nmod:de	_
+22	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	aux:pass	23:aux:pass	_
+23	anunciado	anunciar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	10	advcl	10:advcl:quando	_
+24	publicamente	publicamente	ADV	_	_	23	advmod	23:advmod	SpaceAfter=No
+25	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0035
+# text = Léo também informou que Willian Bonner seguia a "dra".
+1	Léo	Léo	PROPN	_	_	3	nsubj	3:nsubj	_
+2	também	também	ADV	_	_	3	advmod	3:advmod	_
+3	informou	informar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	7	mark	7:mark	_
+5	Willian	Willian	PROPN	_	_	7	nsubj	7:nsubj	_
+6	Bonner	Bonner	PROPN	_	_	5	flat:name	5:flat:name	_
+7	seguia	seguir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	ccomp	3:ccomp	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+9	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+10	dra	dro	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	SpaceAfter=No
+11	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+12	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0036
+# text = em sua conta pessoal no Twitter.
+1	em	em	ADP	_	_	3	case	3:case	_
+2	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	3	det	3:det	_
+3	conta	conta	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+4	pessoal	pessoal	ADJ	_	Number=Sing	3	amod	3:amod	_
+5-6	no	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Twitter	Twitter	PROPN	_	_	3	nmod	3:nmod:em	SpaceAfter=No
+8	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0038
+# text = Natasha seria a campeã de "likes" na maioria das fotos publicadas pelo jornalista desde que ele abriu a conta na rede social.
+1	Natasha	Natasha	PROPN	_	_	4	nsubj	4:nsubj	_
+2	seria	ser	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	4	cop	4:cop	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	campeã	campeã	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	"	"	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+7	likes	like	NOUN	_	Foreign=Yes|Gender=Masc|Number=Plur	4	nmod	4:nmod:de	SpaceAfter=No
+8	"	"	PUNCT	_	_	7	punct	7:punct	_
+9-10	na	_	_	_	_	_	_	_	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	maioria	maioria	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:em	_
+12-13	das	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	14:det	_
+14	fotos	foto	NOUN	_	Number=Plur	11	nmod	11:nmod:de	_
+15	publicadas	publicar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	14	acl	14:acl	_
+16-17	pelo	_	_	_	_	_	_	_	_
+16	por	por	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	jornalista	jornalista	NOUN	_	Number=Sing	15	obl:agent	15:obl:agent	_
+19	desde	desde	ADP	_	ExtPos=SCONJ	22	mark	22:mark	_
+20	que	que	SCONJ	_	_	19	fixed	19:fixed	_
+21	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	22	nsubj	22:nsubj	_
+22	abriu	abrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	advcl	15:advcl:desde_que	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	conta	conta	NOUN	_	Gender=Fem|Number=Sing	22	obj	22:obj	_
+25-26	na	_	_	_	_	_	_	_	_
+25	em	em	ADP	_	_	27	case	27:case	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	rede	rede	NOUN	_	Gender=Fem|Number=Sing	22	obl	22:obl:em	_
+28	social	social	ADJ	_	Number=Sing	27	amod	27:amod	SpaceAfter=No
+29	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0040
+# text = O colunista informou também que a médica foi filmada chegando no apartamento onde William Bonner está morando na última sexta e passou o fim de semana inteiro com o âncora do JN.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	colunista	colunista	NOUN	_	Number=Sing	3	nsubj	3:nsubj	_
+3	informou	informar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	também	também	ADV	_	_	3	advmod	3:advmod	_
+5	que	que	SCONJ	_	_	9	mark	9:mark	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	médica	médico	NOUN	_	Gender=Fem|Number=Sing	9	nsubj:pass	9:nsubj:pass	_
+8	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	aux:pass	9:aux:pass	_
+9	filmada	filmar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	3	ccomp	3:ccomp	_
+10	chegando	chegar	VERB	_	VerbForm=Ger	9	advcl	9:advcl	_
+11-12	no	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	apartamento	apartamento	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:em|18:obl	_
+14	onde	onde	ADV	_	_	18	advmod	13:ref	_
+15	William	William	PROPN	_	_	18	nsubj	18:nsubj|24:nsubj	_
+16	Bonner	Bonner	PROPN	_	_	15	flat:name	15:flat:name	_
+17	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux	18:aux	_
+18	morando	morar	VERB	_	VerbForm=Ger	13	acl:relcl	13:acl:relcl	_
+19-20	na	_	_	_	_	_	_	_	_
+19	em	em	ADP	_	_	22	case	22:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+21	última	último	ADJ	_	Gender=Fem|Number=Sing	22	amod	22:amod	_
+22	sexta	sexto	NOUN	_	Abbr=Yes|Gender=Fem|Number=Sing	18	obl	18:obl:em	_
+23	e	e	CCONJ	_	_	24	cc	24:cc	_
+24	passou	passar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	conj	13:acl:relcl|18:conj:e	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	fim	fim	NOUN	_	Gender=Masc|Number=Sing	24	obj	24:obj	_
+27	de	de	ADP	_	_	28	case	28:case	_
+28	semana	semana	NOUN	_	Gender=Fem|Number=Sing	26	nmod	26:nmod:de	_
+29	inteiro	inteiro	ADJ	_	Gender=Masc|Number=Sing	26	amod	26:amod	_
+30	com	com	ADP	_	_	32	case	32:case	_
+31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+32	âncora	âncora	NOUN	_	Number=Sing	24	obl	24:obl:com	_
+33-34	do	_	_	_	_	_	_	_	_
+33	de	de	ADP	_	_	35	case	35:case	_
+34	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	35:det	_
+35	JN	JN	PROPN	_	_	32	nmod	32:nmod:de	SpaceAfter=No
+36	.	.	PUNCT	_	_	3	punct	3:punct	_

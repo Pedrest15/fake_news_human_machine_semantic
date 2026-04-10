@@ -1,0 +1,162 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Sônia Abrão posta vídeo polêmico e assustador.
+1	Sônia	Sônia	PROPN	_	_	3	nsubj	3:nsubj	_
+2	Abrão	Abrão	PROPN	_	_	1	flat:name	1:flat:name	_
+3	posta	postar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	_
+5	polêmico	polêmico	ADJ	_	Gender=Masc|Number=Sing	4	amod	4:amod	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	assustador	assustador	ADJ	_	Gender=Masc|Number=Sing	5	conj	4:amod|5:conj:e	SpaceAfter=No
+8	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = Em março/2016, um vidente previu: "Um time inteiro vai morrer".
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	março/2016	março/2016	NUM	_	NumType=Card	6	obl	6:obl:em	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	vidente	vidente	NOUN	_	Number=Sing	6	nsubj	6:nsubj	_
+6	previu	prever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+7	:	:	PUNCT	_	_	13	punct	13:punct	_
+8	"	"	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+9	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	time	time	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	13:nsubj	_
+11	inteiro	inteiro	ADJ	_	Gender=Masc|Number=Sing	10	amod	10:amod	_
+12	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux	13:aux	_
+13	morrer	morrer	VERB	_	VerbForm=Inf	6	ccomp:speech	6:ccomp:speech	SpaceAfter=No
+14	"	"	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+15	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0005
+# text = Vidente que supostamente previu queda de avião alerta: Vem mais por aí.
+1	Vidente	vidente	NOUN	_	Number=Sing	8	nsubj	4:nsubj|8:nsubj	_
+2	que	que	PRON	_	PronType=Rel	4	nsubj	1:ref	_
+3	supostamente	supostamente	ADV	_	_	4	advmod	4:advmod	_
+4	previu	prever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+5	queda	queda	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	avião	avião	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:de	_
+8	alerta	alertar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+9	:	:	PUNCT	_	_	10	punct	10:punct	_
+10	Vem	vir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	ccomp:speech	8:ccomp:speech	_
+11	mais	mais	ADV	_	_	10	advmod	10:advmod	_
+12	por	por	ADP	_	_	13	case	13:case	_
+13	aí	aí	ADV	_	_	10	advmod	10:advmod	SpaceAfter=No
+14	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0007
+# text = O Brasil ficará de luto por 10 dias.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Brasil	Brasil	PROPN	_	_	3	nsubj	3:nsubj	_
+3	ficará	ficar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	luto	luto	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:de	_
+6	por	por	ADP	_	_	8	case	8:case	_
+7	10	10	NUM	_	NumType=Card	8	nummod	8:nummod	_
+8	dias	dia	NOUN	_	Gender=Masc|Number=Plur	3	obl	3:obl:por	SpaceAfter=No
+9	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0009
+# text = A apresentadora e jornalista Sonia Abrão, postou em sua rede social um vídeo do vidente Carlinhos fazendo uma previsão sobre uma tragédia envolvendo uma equipe de futebol.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	apresentadora	apresentador	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	8:nsubj	_
+3	e	e	CCONJ	_	_	4	cc	4:cc	_
+4	jornalista	jornalista	NOUN	_	Number=Sing	2	conj	2:conj:e|8:nsubj	_
+5	Sonia	Sonia	PROPN	_	_	2	nmod	2:nmod|4:nmod	_
+6	Abrão	Abrão	PROPN	_	_	5	flat:name	5:flat:name	SpaceAfter=No
+7	,	,	PUNCT	_	_	2	punct	2:punct	_
+8	postou	postar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	11	det	11:det	_
+11	rede	rede	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:em	_
+12	social	social	ADJ	_	Number=Sing	11	amod	11:amod	_
+13	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	_
+15-16	do	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	vidente	vidente	NOUN	_	Number=Sing	14	nmod	14:nmod:de	_
+18	Carlinhos	Carlinhos	PROPN	_	_	17	nmod	17:nmod	_
+19	fazendo	fazer	VERB	_	VerbForm=Ger	17	acl	17:acl	_
+20	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	previsão	previsão	NOUN	_	Gender=Fem|Number=Sing	19	obj	19:obj	_
+22	sobre	sobre	ADP	_	_	24	case	24:case	_
+23	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	tragédia	tragédia	NOUN	_	Gender=Fem|Number=Sing	21	nmod	21:nmod:sobre	_
+25	envolvendo	envolver	VERB	_	VerbForm=Ger	24	acl	24:acl	_
+26	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	equipe	equipe	NOUN	_	Gender=Fem|Number=Sing	25	obj	25:obj	_
+28	de	de	ADP	_	_	29	case	29:case	_
+29	futebol	futebol	NOUN	_	Gender=Masc|Number=Sing	27	nmod	27:nmod:de	SpaceAfter=No
+30	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0011
+# text = O acidente que abalou o mundo hoje, de acordo com a apresentadora, foi previsto durante uma participação de Carlinhos no programa de Olga Bongiovanni.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	acidente	acidente	NOUN	_	Gender=Masc|Number=Sing	16	nsubj:pass	4:nsubj|16:nsubj:pass	_
+3	que	que	PRON	_	PronType=Rel	4	nsubj	2:ref	_
+4	abalou	abalar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7	hoje	hoje	ADV	_	_	4	advmod	4:advmod	SpaceAfter=No
+8	,	,	PUNCT	_	_	10	punct	10:punct	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	16	obl	16:obl:de	_
+11	com	com	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	apresentadora	apresentador	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:com	SpaceAfter=No
+14	,	,	PUNCT	_	_	10	punct	10:punct	_
+15	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	aux:pass	16:aux:pass	_
+16	previsto	prever	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+17	durante	durante	ADP	_	_	19	case	19:case	_
+18	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	participação	participação	NOUN	_	Gender=Fem|Number=Sing	16	obl	16:obl:durante	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	Carlinhos	Carlinhos	PROPN	_	_	19	nmod	19:nmod:de	_
+22-23	no	_	_	_	_	_	_	_	_
+22	em	em	ADP	_	_	24	case	24:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	programa	programa	NOUN	_	Gender=Masc|Number=Sing	19	nmod	19:nmod:em	_
+25	de	de	ADP	_	_	26	case	26:case	_
+26	Olga	Olga	PROPN	_	_	24	nmod	24:nmod:de	_
+27	Bongiovanni	Bongiovanni	PROPN	_	_	26	flat:name	26:flat:name	SpaceAfter=No
+28	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0013
+# text = "Só não tenho certeza se é um time brasileiro ou de fora do Brasil" disse Carlinhos.
+1	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+2	Só	só	ADV	_	_	4	advmod	4:advmod	_
+3	não	não	ADV	_	_	4	advmod	4:advmod	_
+4	tenho	ter	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	18	ccomp:speech	18:ccomp:speech	_
+5	certeza	certeza	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+6	se	se	SCONJ	_	_	9	mark	9:mark	_
+7	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	9:cop	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	time	time	NOUN	_	Gender=Masc|Number=Sing	5	acl	5:acl:se	_
+10	brasileiro	brasileiro	ADJ	_	Gender=Masc|Number=Sing	9	amod	9:amod	_
+11	ou	ou	CCONJ	_	_	13	cc	13:cc	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	fora	fora	ADV	_	_	10	conj	9:advmod|10:conj:ou	_
+14-15	do	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	Brasil	Brasil	PROPN	_	_	13	obl	13:obl:de	SpaceAfter=No
+17	"	"	PUNCT	_	_	4	punct	4:punct	_
+18	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+19	Carlinhos	Carlinhos	PROPN	_	_	18	nsubj	18:nsubj	SpaceAfter=No
+20	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0014
+# text = assista (vídeo via Massa News): leia também:
+1	assista	assistir	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	(	(	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+3	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	1	parataxis	1:parataxis	_
+4	via	via	ADP	_	_	5	case	5:case	_
+5	Massa	Massa	PROPN	_	_	3	nmod	3:nmod:via	_
+6	News	News	PROPN	_	_	5	flat:name	5:flat:name	SpaceAfter=No
+7	)	)	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+8	:	:	PUNCT	_	_	9	punct	9:punct	_
+9	leia	ler	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	1:parataxis	_
+10	também	também	ADV	_	_	9	advmod	9:advmod	SpaceAfter=No
+11	:	:	PUNCT	_	_	1	punct	1:punct	_

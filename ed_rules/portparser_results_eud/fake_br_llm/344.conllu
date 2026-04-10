@@ -1,0 +1,251 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = 5G: A revolução que vai transformar o mundo e salvar vidas!
+1	5G	5G	PROPN	_	_	0	root	0:root	SpaceAfter=No
+2	:	:	PUNCT	_	_	4	punct	4:punct	_
+3	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	revolução	revolução	NOUN	_	Gender=Fem|Number=Sing	1	appos	1:appos|7:nsubj|11:nsubj	_
+5	que	que	PRON	_	PronType=Rel	7	nsubj	4:ref	_
+6	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	7:aux|11:aux	_
+7	transformar	transformar	VERB	_	VerbForm=Inf	4	acl:relcl	4:acl:relcl	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	salvar	salvar	VERB	_	VerbForm=Inf	7	conj	4:acl:relcl|7:conj:e	_
+12	vidas	vida	NOUN	_	Gender=Fem|Number=Plur	11	obj	11:obj	SpaceAfter=No
+13	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Prevista para 2019, a nova rede de celular promete velocidades de 1 Gbps e comunicação direta entre drones e carros autônomos.
+1	Prevista	prever	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	10	advcl	10:advcl	_
+2	para	para	ADP	_	_	3	case	3:case	_
+3	2019	2019	NUM	_	NumType=Card	1	obl	1:obl:para	SpaceAfter=No
+4	,	,	PUNCT	_	_	1	punct	1:punct	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+6	nova	novo	ADJ	_	Gender=Fem|Number=Sing	7	amod	7:amod	_
+7	rede	rede	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	10:nsubj	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	celular	celular	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	_
+10	promete	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+11	velocidades	velocidade	NOUN	_	Gender=Fem|Number=Plur	10	obj	10:obj	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	1	1	NUM	_	NumType=Card	14	nummod	14:nummod	_
+14	Gbps	gbp	NOUN	_	Foreign=Yes|Gender=Masc|Number=Plur	11	nmod	11:nmod:de	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	comunicação	comunicação	NOUN	_	Gender=Fem|Number=Sing	11	conj	10:obj|11:conj:e	_
+17	direta	direto	ADJ	_	Gender=Fem|Number=Sing	16	amod	16:amod	_
+18	entre	entre	ADP	_	_	19	case	19:case	_
+19	drones	drone	NOUN	_	Gender=Masc|Number=Plur	16	nmod	16:nmod:entre	_
+20	e	e	CCONJ	_	_	21	cc	21:cc	_
+21	carros	carro	NOUN	_	Gender=Masc|Number=Plur	19	conj	16:nmod:entre|19:conj:e	_
+22	autônomos	autônomo	ADJ	_	Gender=Masc|Number=Plur	21	amod	21:amod	SpaceAfter=No
+23	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0005
+# text = Um especialista da Verizon, Ronan Dunne, revelou que o 5G não só vai impulsionar a economia global com um investimento de US$ 12,3 trilhões, mas também pode reduzir drasticamente os acidentes de trânsito ao permitir que veículos se comuniquem instantaneamente.
+1	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	especialista	especialista	NOUN	_	Number=Sing	10	nsubj	10:nsubj	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	Verizon	Verizon	PROPN	_	_	2	nmod	2:nmod:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	Ronan	Ronan	PROPN	_	_	2	appos	2:appos	_
+8	Dunne	Dunne	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+9	,	,	PUNCT	_	_	7	punct	7:punct	_
+10	revelou	revelar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+11	que	que	SCONJ	_	_	17	mark	17:mark|31:mark	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	5G	5G	PROPN	_	_	17	nsubj	17:nsubj|31:nsubj|32:nsubj	_
+14	não	não	ADV	_	_	15	advmod	15:advmod	_
+15	só	só	ADV	_	_	17	advmod	17:advmod	_
+16	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux	17:aux	_
+17	impulsionar	impulsionar	VERB	_	VerbForm=Inf	10	ccomp	10:ccomp	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	economia	economia	NOUN	_	Gender=Fem|Number=Sing	17	obj	17:obj	_
+20	global	global	ADJ	_	Number=Sing	19	amod	19:amod	_
+21	com	com	ADP	_	_	23	case	23:case	_
+22	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	investimento	investimento	NOUN	_	Gender=Masc|Number=Sing	17	obl	17:obl:com	_
+24	de	de	ADP	_	_	27	case	27:case	_
+25	US$	US$	SYM	_	_	27	nmod	27:nmod	_
+26	12,3	12,3	NUM	_	NumType=Card	27	nummod	27:nummod	_
+27	trilhões	trilhão	NOUN	_	Gender=Masc|Number=Plur	23	nmod	23:nmod:de	SpaceAfter=No
+28	,	,	PUNCT	_	_	31	punct	31:punct	_
+29	mas	mas	CCONJ	_	_	31	cc	31:cc	_
+30	também	também	ADV	_	_	31	advmod	31:advmod	_
+31	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	conj	10:ccomp|17:conj:mas	_
+32	reduzir	reduzir	VERB	_	VerbForm=Inf	31	xcomp	31:xcomp	_
+33	drasticamente	drasticamente	ADV	_	_	32	advmod	32:advmod	_
+34	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	35	det	35:det	_
+35	acidentes	acidente	NOUN	_	Gender=Masc|Number=Plur	32	obj	32:obj	_
+36	de	de	ADP	_	_	37	case	37:case	_
+37	trânsito	trânsito	NOUN	_	Gender=Masc|Number=Sing	35	nmod	35:nmod:de	_
+38-39	ao	_	_	_	_	_	_	_	_
+38	a	a	ADP	_	ExtPos=SCONJ	40	mark	40:mark	_
+39	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	fixed	38:fixed	_
+40	permitir	permitir	VERB	_	VerbForm=Inf	32	advcl	32:advcl:a_o	_
+41	que	que	SCONJ	_	_	44	mark	44:mark	_
+42	veículos	veículo	NOUN	_	Gender=Masc|Number=Plur	44	nsubj	44:nsubj	_
+43	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	44	expl	44:expl	_
+44	comuniquem	comunicar	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	40	ccomp	40:ccomp	_
+45	instantaneamente	instantaneamente	ADV	_	_	44	advmod	44:advmod	SpaceAfter=No
+46	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0007
+# text = Testes recentes mostraram que a tecnologia pode ser até 140 vezes mais rápida que a internet atual.
+1	Testes	teste	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	3:nsubj	_
+2	recentes	recente	ADJ	_	Number=Plur	1	amod	1:amod	_
+3	mostraram	mostrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	7	mark	7:mark	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	tecnologia	tecnologia	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj|13:nsubj	_
+7	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	3:ccomp	_
+8	ser	ser	AUX	_	VerbForm=Inf	13	cop	13:cop	_
+9	até	até	ADP	_	_	10	case	10:case	_
+10	140	140	NUM	_	NumType=Card	11	nummod	11:nummod	_
+11	vezes	vez	NOUN	_	Gender=Fem|Number=Plur	13	obl	13:obl	_
+12	mais	mais	ADV	_	_	13	advmod	13:advmod	_
+13	rápida	rápido	ADJ	_	Gender=Fem|Number=Sing	7	xcomp	7:xcomp	_
+14	que	que	SCONJ	_	_	16	mark	16:mark	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	internet	internet	NOUN	_	Foreign=Yes|Gender=Fem|Number=Sing	13	advcl	13:advcl:que	_
+17	atual	atual	ADJ	_	Number=Sing	16	amod	16:amod	SpaceAfter=No
+18	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0009
+# text = O Brasil está na vanguarda, com testes bem-sucedidos realizados pela Inatel, e promete liderar a implementação da tecnologia na América Latina.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Brasil	Brasil	PROPN	_	_	6	nsubj	6:nsubj|17:nsubj|18:nsubj	_
+3	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+4-5	na	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	vanguarda	vanguarda	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+7	,	,	PUNCT	_	_	9	punct	9:punct	_
+8	com	com	ADP	_	_	9	case	9:case	_
+9	testes	teste	NOUN	_	Gender=Masc|Number=Plur	6	nmod	6:nmod:com	_
+10	bem-sucedidos	bem-sucedido	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	9	amod	9:amod	_
+11	realizados	realizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	9	acl	9:acl	_
+12-13	pela	_	_	_	_	_	_	_	_
+12	por	por	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	Inatel	Inatel	PROPN	_	_	11	obl:agent	11:obl:agent	SpaceAfter=No
+15	,	,	PUNCT	_	_	17	punct	17:punct	_
+16	e	e	CCONJ	_	_	17	cc	17:cc	_
+17	promete	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	6:conj:e	_
+18	liderar	liderar	VERB	_	VerbForm=Inf	17	xcomp	17:xcomp	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	implementação	implementação	NOUN	_	Gender=Fem|Number=Sing	18	obj	18:obj	_
+21-22	da	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	tecnologia	tecnologia	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:de	_
+24-25	na	_	_	_	_	_	_	_	_
+24	em	em	ADP	_	_	26	case	26:case	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	América	América	PROPN	_	_	18	obl	18:obl:em	_
+27	Latina	Latina	PROPN	_	_	26	flat:name	26:flat:name	SpaceAfter=No
+28	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0011
+# text = O 5G também será crucial para a medicina, possibilitando cirurgias remotas com alta confiabilidade de rede, algo que pode revolucionar o acesso a tratamentos de saúde em áreas remotas.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	5G	5G	PROPN	_	_	5	nsubj	5:nsubj	_
+3	também	também	ADV	_	_	5	advmod	5:advmod	_
+4	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	5	cop	5:cop	_
+5	crucial	crucial	ADJ	_	Number=Sing	0	root	0:root	_
+6	para	para	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	medicina	medicina	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:para	SpaceAfter=No
+9	,	,	PUNCT	_	_	10	punct	10:punct	_
+10	possibilitando	possibilitar	VERB	_	VerbForm=Ger	5	advcl	5:advcl	_
+11	cirurgias	cirurgia	NOUN	_	Gender=Fem|Number=Plur	10	obj	10:obj	_
+12	remotas	remoto	ADJ	_	Gender=Fem|Number=Plur	11	amod	11:amod	_
+13	com	com	ADP	_	_	15	case	15:case	_
+14	alta	alto	ADJ	_	Gender=Fem|Number=Sing	15	amod	15:amod	_
+15	confiabilidade	confiabilidade	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:com	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	rede	rede	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:de	SpaceAfter=No
+18	,	,	PUNCT	_	_	19	punct	19:punct	_
+19	algo	algo	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	11	appos	11:appos|21:nsubj|22:nsubj	_
+20	que	que	PRON	_	PronType=Rel	21	nsubj	19:ref	_
+21	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	acl:relcl	19:acl:relcl	_
+22	revolucionar	revolucionar	VERB	_	VerbForm=Inf	21	xcomp	21:xcomp	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	acesso	acesso	NOUN	_	Gender=Masc|Number=Sing	22	obj	22:obj	_
+25	a	a	ADP	_	_	26	case	26:case	_
+26	tratamentos	tratamento	NOUN	_	Gender=Masc|Number=Plur	24	nmod	24:nmod:a	_
+27	de	de	ADP	_	_	28	case	28:case	_
+28	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	26	nmod	26:nmod:de	_
+29	em	em	ADP	_	_	30	case	30:case	_
+30	áreas	área	NOUN	_	Gender=Fem|Number=Plur	26	nmod	26:nmod:em	_
+31	remotas	remoto	ADJ	_	Gender=Fem|Number=Plur	30	amod	30:amod	SpaceAfter=No
+32	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0013
+# text = O governo brasileiro planeja adotar as faixas de 3.5 Ghz, 26 Ghz e 40 Ghz, apesar de algumas preocupações com interferências em antenas parabólicas, um problema que especialistas garantem ser facilmente solucionável.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	governo	governo	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj|5:nsubj	_
+3	brasileiro	brasileiro	ADJ	_	Gender=Masc|Number=Sing	2	amod	2:amod	_
+4	planeja	planejar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	adotar	adotar	VERB	_	VerbForm=Inf	4	xcomp	4:xcomp	_
+6	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	7:det	_
+7	faixas	faixa	NOUN	_	Number=Plur	5	obj	5:obj	_
+8	de	de	ADP	_	_	10	case	10:case|13:case|16:case	_
+9	3.5	3.5	NUM	_	NumType=Card	10	nummod	10:nummod	_
+10	Ghz	Ghz	PROPN	_	_	7	nmod	7:nmod:de	SpaceAfter=No
+11	,	,	PUNCT	_	_	13	punct	13:punct	_
+12	26	26	NUM	_	NumType=Card	13	nummod	13:nummod	_
+13	Ghz	Ghz	PROPN	_	_	10	conj	7:nmod:de|10:conj:e	_
+14	e	e	CCONJ	_	_	16	cc	16:cc	_
+15	40	40	NUM	_	NumType=Card	16	nummod	16:nummod	_
+16	Ghz	Ghz	PROPN	_	_	10	conj	7:nmod:de|10:conj:e	SpaceAfter=No
+17	,	,	PUNCT	_	_	18	punct	18:punct	_
+18	apesar	apesar	ADV	_	_	4	advmod	4:advmod	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	algumas	algum	DET	_	Gender=Fem|Number=Plur|PronType=Ind	21	det	21:det	_
+21	preocupações	preocupação	NOUN	_	Gender=Fem|Number=Plur	18	obl	18:obl:de	_
+22	com	com	ADP	_	_	23	case	23:case	_
+23	interferências	interferência	NOUN	_	Gender=Fem|Number=Plur	21	nmod	21:nmod:com	_
+24	em	em	ADP	_	_	25	case	25:case	_
+25	antenas	antena	NOUN	_	Gender=Fem|Number=Plur	23	nmod	23:nmod:em	_
+26	parabólicas	parabólico	ADJ	_	Gender=Fem|Number=Plur	25	amod	25:amod	SpaceAfter=No
+27	,	,	PUNCT	_	_	29	punct	29:punct	_
+28	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	29	det	29:det	_
+29	problema	problema	NOUN	_	Gender=Masc|Number=Sing	23	appos	23:appos|32:obj|35:nsubj	_
+30	que	que	PRON	_	PronType=Rel	32	obj	29:ref	_
+31	especialistas	especialista	NOUN	_	Number=Plur	32	nsubj	32:nsubj	_
+32	garantem	garantir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	29	acl:relcl	29:acl:relcl	_
+33	ser	ser	AUX	_	VerbForm=Inf	35	cop	35:cop	_
+34	facilmente	facilmente	ADV	_	_	35	advmod	35:advmod	_
+35	solucionável	solucionável	ADJ	_	Number=Sing	32	xcomp	32:xcomp	SpaceAfter=No
+36	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0015
+# text = Prepare-se para um futuro conectado e seguro, onde o 5G será a espinha dorsal de inovações tecnológicas e sociais sem precedentes.
+1-2	Prepare-se	_	_	_	_	_	_	_	_
+1	Prepare	preparar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	1	expl	1:expl	_
+3	para	para	ADP	_	_	5	case	5:case	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	futuro	futuro	NOUN	_	Gender=Masc|Number=Sing	1	obl	1:obl:para|15:obl	_
+6	conectado	conectado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	5	amod	5:amod	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	seguro	seguro	ADJ	_	Gender=Masc|Number=Sing	6	conj	5:amod|6:conj:e	SpaceAfter=No
+9	,	,	PUNCT	_	_	15	punct	15:punct	_
+10	onde	onde	ADV	_	_	15	advmod	5:ref	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	5G	5G	PROPN	_	_	15	nsubj	15:nsubj	_
+13	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	15	cop	15:cop	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	espinha	espinha	NOUN	_	Gender=Fem|Number=Sing	5	acl:relcl	5:acl:relcl	_
+16	dorsal	dorsal	ADJ	_	Number=Sing	15	amod	15:amod	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	inovações	inovação	NOUN	_	Gender=Fem|Number=Plur	15	nmod	15:nmod:de	_
+19	tecnológicas	tecnológico	ADJ	_	Gender=Fem|Number=Plur	18	amod	18:amod	_
+20	e	e	CCONJ	_	_	21	cc	21:cc	_
+21	sociais	social	ADJ	_	Number=Plur	19	conj	18:amod|19:conj:e	_
+22	sem	sem	ADP	_	_	23	case	23:case	_
+23	precedentes	precedente	NOUN	_	Number=Plur	18	nmod	18:nmod:sem	SpaceAfter=No
+24	.	.	PUNCT	_	_	1	punct	1:punct	_

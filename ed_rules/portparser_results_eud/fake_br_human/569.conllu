@@ -1,0 +1,302 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Mestre em psicologia sobre adolescente que atirou em colegas: Falta de preparo emocional e educacional.
+1	Mestre	mestre	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+2	em	em	ADP	_	_	3	case	3:case	_
+3	psicologia	psicologia	NOUN	_	Gender=Fem|Number=Sing	1	nmod	1:nmod:em	_
+4	sobre	sobre	ADP	_	_	5	case	5:case	_
+5	adolescente	adolescente	NOUN	_	Number=Sing	1	nmod	1:nmod:sobre|7:nsubj	_
+6	que	que	PRON	_	PronType=Rel	7	nsubj	5:ref	_
+7	atirou	atirar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_
+8	em	em	ADP	_	_	9	case	9:case	_
+9	colegas	colega	NOUN	_	Gender=Masc|Number=Plur	7	obl	7:obl:em	SpaceAfter=No
+10	:	:	PUNCT	_	_	11	punct	11:punct	_
+11	Falta	falta	NOUN	_	Gender=Fem|Number=Sing	1	parataxis	1:parataxis	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	preparo	preparo	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:de	_
+14	emocional	emocional	ADJ	_	Number=Sing	13	amod	13:amod	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	educacional	educacional	ADJ	_	Number=Sing	14	conj	13:amod|14:conj:e	SpaceAfter=No
+17	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Não foi bullying.
+1	Não	não	ADV	_	_	3	advmod	3:advmod	_
+2	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	cop	3:cop	_
+3	bullying	bullying	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+4	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0005
+# text = Em primeiro lugar, gostaríamos de esclarecer que o texto abaixo foi escrito por um profissional da área de psicopedagogia e não significa que seja a opinião desse blog.
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	primeiro	primeiro	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	3	amod	3:amod	_
+3	lugar	lugar	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:em	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	gostaríamos	gostar	VERB	_	Mood=Cnd|Number=Plur|Person=1|VerbForm=Fin	0	root	0:root	_
+6	de	de	ADP	_	_	7	mark	7:mark	_
+7	esclarecer	esclarecer	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	_
+8	que	que	SCONJ	_	_	13	mark	13:mark|24:mark	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	texto	texto	NOUN	_	Gender=Masc|Number=Sing	13	nsubj:pass	13:nsubj:pass|24:nsubj	_
+11	abaixo	abaixo	ADV	_	_	13	advmod	13:advmod	_
+12	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	aux:pass	13:aux:pass	_
+13	escrito	escrever	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	7	ccomp	7:ccomp	_
+14	por	por	ADP	_	_	16	case	16:case	_
+15	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	profissional	profissional	NOUN	_	Number=Sing	13	obl:agent	13:obl:agent	_
+17-18	da	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	área	área	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:de	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	psicopedagogia	psicopedagogia	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:de	_
+22	e	e	CCONJ	_	_	24	cc	24:cc	_
+23	não	não	ADV	_	_	24	advmod	24:advmod	_
+24	significa	significar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	conj	7:ccomp|13:conj:e	_
+25	que	que	SCONJ	_	_	28	mark	28:mark	_
+26	seja	ser	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	cop	28:cop	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	opinião	opinião	NOUN	_	Gender=Fem|Number=Sing	24	ccomp	24:ccomp	_
+29-30	desse	_	_	_	_	_	_	_	_
+29	de	de	ADP	_	_	31	case	31:case	_
+30	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	31	det	31:det	_
+31	blog	blog	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	28	nmod	28:nmod:de	SpaceAfter=No
+32	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0007
+# text = Nosso intuito nesta matéria é divulgar a informação.
+1	Nosso	nosso	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	det	2:det	_
+2	intuito	intuito	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+3-4	nesta	_	_	_	_	_	_	_	_
+3	em	em	ADP	_	_	5	case	5:case	_
+4	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	5	det	5:det	_
+5	matéria	matéria	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:em	_
+6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+7	divulgar	divulgar	VERB	_	VerbForm=Inf	0	root	0:root	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	informação	informação	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	SpaceAfter=No
+10	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0009
+# text = Há cerca de 22 horas, Jordan Campos, Filósofo Pós Graduado em Psicoterapia, Mestrando em Psicologia e Dr.h.c em Psicoterapia Transpessoal, escritor e palestrante postou uma análise sobre o caso do adolescente de 14 anos que matou dois alunos e feriu outros 6 em uma escola em Goiânia, GO.
+1	Há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	advcl	28:advcl	_
+2	cerca	cerca	ADV	_	ExtPos=ADV	4	advmod	4:advmod	_
+3	de	de	ADP	_	_	2	fixed	2:fixed	_
+4	22	22	NUM	_	NumType=Card	5	nummod	5:nummod	_
+5	horas	hora	NOUN	_	Gender=Fem|Number=Plur	1	obj	1:obj	SpaceAfter=No
+6	,	,	PUNCT	_	_	1	punct	1:punct	_
+7	Jordan	Jordan	PROPN	_	_	28	nsubj	28:nsubj	_
+8	Campos	Campos	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+9	,	,	PUNCT	_	_	10	punct	10:punct	_
+10	Filósofo	Filósofo	PROPN	_	_	7	appos	7:appos	_
+11	Pós	Pós	PROPN	_	_	12	advmod	12:advmod	_
+12	Graduado	Graduado	PROPN	_	_	10	acl	10:acl	_
+13	em	em	ADP	_	_	14	case	14:case	_
+14	Psicoterapia	Psicoterapia	PROPN	_	_	16	flat:name	16:flat:name	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	Mestrando	Mestrando	PROPN	_	_	10	conj	7:appos|10:conj:e	_
+17	em	em	ADP	_	_	18	case	18:case	_
+18	Psicologia	Psicologia	PROPN	_	_	16	flat:name	16:flat:name	_
+19	e	e	CCONJ	_	_	20	cc	20:cc	_
+20	Dr.h.c	Dr.h.c	PROPN	_	_	10	conj	7:appos|10:conj:e	_
+21	em	em	ADP	_	_	22	case	22:case|27:case	_
+22	Psicoterapia	Psicoterapia	PROPN	_	_	20	nmod	20:nmod:em	_
+23	Transpessoal	Transpessoal	PROPN	_	_	22	flat:name	22:flat:name	SpaceAfter=No
+24	,	,	PUNCT	_	_	25	punct	25:punct	_
+25	escritor	escritor	NOUN	_	Gender=Masc|Number=Sing	7	conj	7:conj|28:nsubj	_
+26	e	e	CCONJ	_	_	27	cc	27:cc	_
+27	palestrante	palestrante	NOUN	_	Number=Sing	22	conj	20:nmod:em|22:conj:e	_
+28	postou	postar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+29	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	análise	análise	NOUN	_	Gender=Fem|Number=Sing	28	obj	28:obj	_
+31	sobre	sobre	ADP	_	_	33	case	33:case	_
+32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	33:det	_
+33	caso	caso	NOUN	_	Gender=Masc|Number=Sing	30	nmod	30:nmod:sobre	_
+34-35	do	_	_	_	_	_	_	_	_
+34	de	de	ADP	_	_	36	case	36:case	_
+35	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	36:det	_
+36	adolescente	adolescente	NOUN	_	Number=Sing	33	nmod	33:nmod:de|41:nsubj|45:nsubj	_
+37	de	de	ADP	_	_	39	case	39:case	_
+38	14	14	NUM	_	NumType=Card	39	nummod	39:nummod	_
+39	anos	ano	NOUN	_	Gender=Masc|Number=Plur	36	nmod	36:nmod:de	_
+40	que	que	PRON	_	PronType=Rel	41	nsubj	36:ref	_
+41	matou	matar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	36	acl:relcl	36:acl:relcl	_
+42	dois	dois	NUM	_	Gender=Masc|NumType=Card	43	nummod	43:nummod	_
+43	alunos	aluno	NOUN	_	Gender=Masc|Number=Plur	41	obj	41:obj	_
+44	e	e	CCONJ	_	_	45	cc	45:cc	_
+45	feriu	ferir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	41	conj	36:acl:relcl|41:conj:e	_
+46	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	47	det	47:det	_
+47	6	6	NUM	_	NumType=Card	45	obj	45:obj	_
+48	em	em	ADP	_	_	50	case	50:case	_
+49	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	50	det	50:det	_
+50	escola	escola	NOUN	_	Gender=Fem|Number=Sing	45	obl	45:obl:em	_
+51	em	em	ADP	_	_	52	case	52:case	_
+52	Goiânia	Goiânia	PROPN	_	_	45	obl	45:obl:em	SpaceAfter=No
+53	,	,	PUNCT	_	_	54	punct	54:punct	_
+54	GO	GO	PROPN	_	_	52	parataxis	52:parataxis	SpaceAfter=No
+55	.	.	PUNCT	_	_	28	punct	28:punct	_
+
+# sent_id = S0011
+# text = De acordo com Campos, o temperamento e a personalidade do atirador (assim como seu histórico de vida, família, comportamento na escola, etc...) devem ser analisados a fundo antes de chegarmos a conclusão de que o ataque foi motivado simplesmente por bullying.
+1	De	de	ADP	_	_	2	case	2:case	_
+2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	32	obl	32:obl:de	_
+3	com	com	ADP	_	_	4	case	4:case	_
+4	Campos	Campos	PROPN	_	_	2	nmod	2:nmod:com	SpaceAfter=No
+5	,	,	PUNCT	_	_	2	punct	2:punct	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	temperamento	temperamento	NOUN	_	Gender=Masc|Number=Sing	32	nsubj	32:nsubj|34:nsubj:pass	_
+8	e	e	CCONJ	_	_	10	cc	10:cc	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	personalidade	personalidade	NOUN	_	Gender=Fem|Number=Sing	7	conj	7:conj:e|32:nsubj|34:nsubj:pass	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	atirador	atirador	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:de	_
+14	(	(	PUNCT	_	_	18	punct	18:punct	SpaceAfter=No
+15	assim	assim	ADV	_	ExtPos=SCONJ	18	mark	18:mark	_
+16	como	como	SCONJ	_	_	15	fixed	15:fixed	_
+17	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	18	det	18:det	_
+18	histórico	histórico	NOUN	_	Gender=Masc|Number=Sing	32	advcl	32:advcl:assim_como	_
+19	de	de	ADP	_	_	20	case	20:case|22:case	_
+20	vida	vida	NOUN	_	Gender=Fem|Number=Sing	18	nmod	18:nmod:de	SpaceAfter=No
+21	,	,	PUNCT	_	_	22	punct	22:punct	_
+22	família	família	NOUN	_	Gender=Fem|Number=Sing	20	conj	18:nmod:de|20:conj	SpaceAfter=No
+23	,	,	PUNCT	_	_	24	punct	24:punct	_
+24	comportamento	comportamento	NOUN	_	Gender=Masc|Number=Sing	18	conj	18:conj|32:obl:assim_como	_
+25-26	na	_	_	_	_	_	_	_	_
+25	em	em	ADP	_	_	27	case	27:case	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	escola	escola	NOUN	_	Gender=Fem|Number=Sing	24	nmod	24:nmod:em	SpaceAfter=No
+28	,	,	PUNCT	_	_	29	punct	29:punct	_
+29	etc.	etc.	PUNCT	_	_	18	conj	18:conj|32:advcl:assim_como	SpaceAfter=No
+30	..	..	PUNCT	_	_	29	punct	29:punct	SpaceAfter=No
+31	)	)	PUNCT	_	_	18	punct	18:punct	_
+32	devem	dever	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+33	ser	ser	AUX	_	VerbForm=Inf	34	aux:pass	34:aux:pass	_
+34	analisados	analisar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	32	xcomp	32:xcomp	_
+35	a	a	ADP	_	_	36	case	36:case	_
+36	fundo	fundo	ADV	_	_	34	obl	34:obl:a	_
+37	antes	antes	ADV	_	_	34	advmod	34:advmod	_
+38	de	de	ADP	_	_	39	mark	39:mark	_
+39	chegarmos	chegar	VERB	_	Mood=Sub|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	37	acl	37:acl:de	_
+40	a	a	ADP	_	_	41	case	41:case	_
+41	conclusão	conclusão	NOUN	_	Gender=Fem|Number=Sing	39	obl	39:obl:a	_
+42	de	de	ADP	_	ExtPos=SCONJ	47	mark	47:mark	_
+43	que	que	SCONJ	_	_	42	fixed	42:fixed	_
+44	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	45:det	_
+45	ataque	ataque	NOUN	_	Gender=Masc|Number=Sing	47	nsubj:pass	47:nsubj:pass	_
+46	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	47	aux:pass	47:aux:pass	_
+47	motivado	motivar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	41	acl	41:acl:de_que	_
+48	simplesmente	simplesmente	ADV	_	_	50	advmod	50:advmod	_
+49	por	por	ADP	_	_	50	case	50:case	_
+50	bullying	bullying	NOUN	_	Gender=Masc|Number=Sing	47	obl	47:obl:por	SpaceAfter=No
+51	.	.	PUNCT	_	_	32	punct	32:punct	_
+
+# sent_id = S0013
+# text = Jordan fez questão de destacar (no final do texto) que sua opinião "não é um exame, avaliação ou diagnóstico psicoterapeutico ", e sim uma análise geral com base nas informações que ele obtivera até aquele momento (via imprensa).
+1	Jordan	Jordan	PROPN	_	_	2	nsubj	2:nsubj	_
+2	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	questão	questão	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+4	de	de	ADP	_	_	5	mark	5:mark	_
+5	destacar	destacar	VERB	_	VerbForm=Inf	3	acl	3:acl:de	_
+6	(	(	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+7-8	no	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	final	final	NOUN	_	Number=Sing	5	obl	5:obl:em	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	texto	texto	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:de	SpaceAfter=No
+13	)	)	PUNCT	_	_	9	punct	9:punct	_
+14	que	que	SCONJ	_	_	21	mark	21:mark|23:mark|25:mark|32:mark	_
+15	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	16	det	16:det	_
+16	opinião	opinião	NOUN	_	Gender=Fem|Number=Sing	21	nsubj	21:nsubj|23:nsubj|25:nsubj|32:nsubj	_
+17	"	"	PUNCT	_	_	21	punct	21:punct	SpaceAfter=No
+18	não	não	ADV	_	_	21	advmod	21:advmod	_
+19	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	cop	21:cop|23:cop|25:cop|32:cop	_
+20	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	exame	exame	NOUN	_	Gender=Masc|Number=Sing	5	ccomp	5:ccomp	SpaceAfter=No
+22	,	,	PUNCT	_	_	23	punct	23:punct	_
+23	avaliação	avaliação	NOUN	_	Gender=Fem|Number=Sing	21	conj	5:ccomp|21:conj:ou	_
+24	ou	ou	CCONJ	_	_	25	cc	25:cc	_
+25	diagnóstico	diagnóstico	NOUN	_	Gender=Masc|Number=Sing	21	conj	5:ccomp|21:conj:ou	_
+26	psicoterapeutico	psicoterapeutico	ADJ	_	Gender=Masc|Number=Sing	25	amod	25:amod	_
+27	"	"	PUNCT	_	_	21	punct	21:punct	SpaceAfter=No
+28	,	,	PUNCT	_	_	32	punct	32:punct	_
+29	e	e	CCONJ	_	_	32	cc	32:cc	_
+30	sim	sim	ADV	_	_	32	advmod	32:advmod	_
+31	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	32	det	32:det	_
+32	análise	análise	NOUN	_	Gender=Fem|Number=Sing	21	conj	5:ccomp|21:conj:e	_
+33	geral	geral	ADJ	_	Number=Sing	32	amod	32:amod	_
+34	com	com	ADP	_	_	35	case	35:case	_
+35	base	base	NOUN	_	Gender=Fem|Number=Sing	32	nmod	32:nmod:com	_
+36-37	nas	_	_	_	_	_	_	_	_
+36	em	em	ADP	_	_	38	case	38:case	_
+37	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	38	det	38:det	_
+38	informações	informação	NOUN	_	Gender=Fem|Number=Plur	35	nmod	35:nmod:em|41:obj	_
+39	que	que	PRON	_	PronType=Rel	41	obj	38:ref	_
+40	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	41	nsubj	41:nsubj	_
+41	obtivera	obter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pqp|VerbForm=Fin	38	acl:relcl	38:acl:relcl	_
+42	até	até	ADP	_	_	44	case	44:case	_
+43	aquele	aquele	DET	_	Gender=Masc|Number=Sing|PronType=Dem	44	det	44:det	_
+44	momento	momento	NOUN	_	Gender=Masc|Number=Sing	41	obl	41:obl:até	_
+45	(	(	PUNCT	_	_	47	punct	47:punct	SpaceAfter=No
+46	via	via	ADP	_	_	47	case	47:case	_
+47	imprensa	imprensa	NOUN	_	Gender=Fem|Number=Sing	41	obl	41:obl:via	SpaceAfter=No
+48	)	)	PUNCT	_	_	47	punct	47:punct	SpaceAfter=No
+49	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0015
+# text = O texto viralizou rapidamente e as opiniões estão causando vários debates nas redes sociais.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	texto	texto	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	viralizou	viralizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	rapidamente	rapidamente	ADV	_	_	3	advmod	3:advmod	_
+5	e	e	CCONJ	_	_	9	cc	9:cc	_
+6	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	7:det	_
+7	opiniões	opinião	NOUN	_	Gender=Fem|Number=Plur	9	nsubj	9:nsubj	_
+8	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	aux	9:aux	_
+9	causando	causar	VERB	_	VerbForm=Ger	3	conj	3:conj:e	_
+10	vários	vários	DET	_	Gender=Masc|Number=Plur|PronType=Ind	11	det	11:det	_
+11	debates	debate	NOUN	_	Gender=Masc|Number=Plur	9	obj	9:obj	_
+12-13	nas	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	14:det	_
+14	redes	rede	NOUN	_	Gender=Fem|Number=Plur	9	obl	9:obl:em	_
+15	sociais	social	ADJ	_	Number=Plur	14	amod	14:amod	SpaceAfter=No
+16	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0017
+# text = Milhares de pessoas concordam com ele [...] e outras milhares não compartilham do mesmo pensamento.
+1	Milhares	milhar	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	4:nsubj	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	1	nmod	1:nmod:de	_
+4	concordam	concordar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	com	com	ADP	_	_	6	case	6:case	_
+6	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	obl	4:obl:com	_
+7	[	[	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	.	.	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+9	..	..	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+10	]	]	PUNCT	_	_	8	punct	8:punct	_
+11	e	e	CCONJ	_	_	15	cc	15:cc	_
+12	outras	outro	DET	_	Gender=Fem|Number=Plur|PronType=Ind	13	det	13:det	_
+13	milhares	milhar	NOUN	_	Gender=Masc|Number=Plur	15	nsubj	15:nsubj	_
+14	não	não	ADV	_	_	15	advmod	15:advmod	_
+15	compartilham	compartilhar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	conj	4:conj:e	_
+16-17	do	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	19	case	19:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+18	mesmo	mesmo	DET	_	Gender=Masc|Number=Sing|PronType=Dem	19	det	19:det	_
+19	pensamento	pensamento	NOUN	_	Gender=Masc|Number=Sing	15	obl	15:obl:de	SpaceAfter=No
+20	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0019
+# text = Vale a pena dar uma lida:
+1	Vale	valer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	pena	pena	NOUN	_	Gender=Fem|Number=Sing	1	obj	1:obj	_
+4	dar	dar	VERB	_	VerbForm=Inf	1	csubj	1:csubj	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	lida	lido	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	SpaceAfter=No
+7	:	:	PUNCT	_	_	1	punct	1:punct	_

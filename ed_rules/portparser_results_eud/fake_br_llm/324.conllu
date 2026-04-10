@@ -1,0 +1,288 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Exército Brasileiro em Choque: Soldado Herói Preso por Estupro de Vulnerável em SP.
+1	Exército	Exército	PROPN	_	_	0	root	0:root	_
+2	Brasileiro	Brasileiro	PROPN	_	_	1	flat:name	1:flat:name	_
+3	em	em	ADP	_	_	4	case	4:case	_
+4	Choque	Choque	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+5	:	:	PUNCT	_	_	6	punct	6:punct	_
+6	Soldado	Soldado	PROPN	_	_	1	appos	1:appos	_
+7	Herói	Herói	PROPN	_	_	6	flat:name	6:flat:name	_
+8	Preso	preso	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	6	flat:name	6:flat:name	_
+9	por	por	ADP	_	_	10	case	10:case	_
+10	Estupro	Estupro	PROPN	_	_	8	obl	8:obl:por	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	Vulnerável	Vulnerável	PROPN	_	_	10	flat:name	10:flat:name	_
+13	em	em	ADP	_	_	14	case	14:case	_
+14	SP	SP	PROPN	_	_	8	obl	8:obl:em	SpaceAfter=No
+15	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Soldado condecorado, de 19 anos, é acusado de estuprar um menino de 11 anos em Peruíbe, litoral de São Paulo.
+1	Soldado	soldado	NOUN	_	Gender=Masc|Number=Sing	9	nsubj:pass	9:nsubj:pass|11:nsubj	_
+2	condecorado	condecorado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	1	amod	1:amod	SpaceAfter=No
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	19	19	NUM	_	NumType=Card	6	nummod	6:nummod	_
+6	anos	ano	NOUN	_	Gender=Masc|Number=Plur	1	nmod	1:nmod:de	SpaceAfter=No
+7	,	,	PUNCT	_	_	6	punct	6:punct	_
+8	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:pass	9:aux:pass	_
+9	acusado	acusar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+10	de	de	ADP	_	_	11	mark	11:mark	_
+11	estuprar	estuprar	VERB	_	VerbForm=Inf	9	xcomp	9:xcomp	_
+12	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	menino	menino	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	11	11	NUM	_	NumType=Card	16	nummod	16:nummod	_
+16	anos	ano	NOUN	_	Gender=Masc|Number=Plur	13	nmod	13:nmod:de	_
+17	em	em	ADP	_	_	18	case	18:case	_
+18	Peruíbe	Peruíbe	PROPN	_	_	11	obl	11:obl:em	SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	20:punct	_
+20	litoral	litoral	NOUN	_	Number=Sing	18	appos	18:appos	_
+21	de	de	ADP	_	_	22	case	22:case	_
+22	São	São	PROPN	_	_	20	nmod	20:nmod:de	_
+23	Paulo	Paulo	PROPN	_	_	22	flat:name	22:flat:name	SpaceAfter=No
+24	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0005
+# text = A prisão foi um duro golpe para a imagem do Exército, que recentemente premiou o militar por bravura em missões de paz.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	prisão	prisão	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj	_
+3	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	cop	6:cop	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+5	duro	duro	ADJ	_	Gender=Masc|Number=Sing	6	amod	6:amod	_
+6	golpe	golpe	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+7	para	para	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	imagem	imagem	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:para	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	Exército	Exército	PROPN	_	_	9	nmod	9:nmod:de|16:nsubj	SpaceAfter=No
+13	,	,	PUNCT	_	_	16	punct	16:punct	_
+14	que	que	PRON	_	PronType=Rel	16	nsubj	12:ref	_
+15	recentemente	recentemente	ADV	_	_	16	advmod	16:advmod	_
+16	premiou	premiar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	acl:relcl	12:acl:relcl	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	militar	militar	NOUN	_	Number=Sing	16	obj	16:obj	_
+19	por	por	ADP	_	_	20	case	20:case	_
+20	bravura	bravura	NOUN	_	Gender=Fem|Number=Sing	16	obl	16:obl:por	_
+21	em	em	ADP	_	_	22	case	22:case	_
+22	missões	missão	NOUN	_	Gender=Fem|Number=Plur	16	obl	16:obl:em	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	paz	paz	NOUN	_	Gender=Fem|Number=Sing	22	nmod	22:nmod:de	SpaceAfter=No
+25	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0007
+# text = O abuso teria ocorrido enquanto o menino voltava do ginásio, sendo arrastado para um matagal.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	abuso	abuso	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+3	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	4	aux	4:aux	_
+4	ocorrido	ocorrer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+5	enquanto	enquanto	SCONJ	_	_	8	mark	8:mark	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	menino	menino	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	8:nsubj	_
+8	voltava	voltar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	advcl	4:advcl:enquanto	_
+9-10	do	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	ginásio	ginásio	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:de	SpaceAfter=No
+12	,	,	PUNCT	_	_	14	punct	14:punct	_
+13	sendo	ser	AUX	_	VerbForm=Ger	14	aux:pass	14:aux:pass	_
+14	arrastado	arrastar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	4	advcl	4:advcl	_
+15	para	para	ADP	_	_	17	case	17:case	_
+16	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	matagal	matagal	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:para	SpaceAfter=No
+18	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0009
+# text = Testemunhas afirmam que o soldado foi visto com uma mochila temática do "Homem de Ferro", que teria sido deixada no local do crime.
+1	Testemunhas	testemunha	NOUN	_	Gender=Fem|Number=Plur	2	nsubj	2:nsubj	_
+2	afirmam	afirmar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	7	mark	7:mark	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	soldado	soldado	NOUN	_	Gender=Masc|Number=Sing	7	nsubj:pass	7:nsubj:pass	_
+6	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	aux:pass	7:aux:pass	_
+7	visto	ver	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	ccomp	2:ccomp	_
+8	com	com	ADP	_	_	10	case	10:case	_
+9	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	mochila	mochila	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:com|23:nsubj:pass	_
+11	temática	temático	ADJ	_	Gender=Fem|Number=Sing	10	amod	10:amod	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	15	case	15:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+14	"	"	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+15	Homem	Homem	PROPN	_	_	10	nmod	10:nmod:de	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	Ferro	Ferro	PROPN	_	_	15	flat:name	15:flat:name	SpaceAfter=No
+18	"	"	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+19	,	,	PUNCT	_	_	23	punct	23:punct	_
+20	que	que	PRON	_	PronType=Rel	23	nsubj:pass	10:ref	_
+21	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	23	aux	23:aux	_
+22	sido	ser	AUX	_	Gender=Masc|Number=Sing|VerbForm=Part	23	aux:pass	23:aux:pass	_
+23	deixada	deixar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	10	acl:relcl	10:acl:relcl	_
+24-25	no	_	_	_	_	_	_	_	_
+24	em	em	ADP	_	_	26	case	26:case	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	local	local	NOUN	_	Number=Sing	23	obl	23:obl:em	_
+27-28	do	_	_	_	_	_	_	_	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	29:det	_
+29	crime	crime	NOUN	_	Gender=Masc|Number=Sing	26	nmod	26:nmod:de	SpaceAfter=No
+30	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0011
+# text = O objeto foi apreendido e pode ser a chave para desvendar este terrível caso.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	objeto	objeto	NOUN	_	Gender=Masc|Number=Sing	4	nsubj:pass	4:nsubj:pass|6:nsubj|9:nsubj	_
+3	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	apreendido	apreender	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	4:conj:e	_
+7	ser	ser	AUX	_	VerbForm=Inf	9	cop	9:cop	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	chave	chave	NOUN	_	Gender=Fem|Number=Sing	6	xcomp	6:xcomp	_
+10	para	para	ADP	_	_	11	mark	11:mark	_
+11	desvendar	desvendar	VERB	_	VerbForm=Inf	9	acl	9:acl:para	_
+12	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	14	det	14:det	_
+13	terrível	terrível	ADJ	_	Number=Sing	14	amod	14:amod	_
+14	caso	caso	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj	SpaceAfter=No
+15	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0013
+# text = Apesar das evidências, o soldado nega veementemente a acusação, alegando que a mochila foi encontrada e que ele é vítima de uma conspiração.
+1	Apesar	apesar	ADV	_	_	8	advmod	8:advmod	_
+2-3	das	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	4:det	_
+4	evidências	evidência	NOUN	_	Gender=Fem|Number=Plur	1	obl	1:obl:de	SpaceAfter=No
+5	,	,	PUNCT	_	_	1	punct	1:punct	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	soldado	soldado	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	8:nsubj	_
+8	nega	negar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+9	veementemente	veementemente	ADV	_	_	8	advmod	8:advmod	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	acusação	acusação	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	alegando	alegar	VERB	_	VerbForm=Ger	8	advcl	8:advcl	_
+14	que	que	SCONJ	_	_	18	mark	18:mark	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	mochila	mochila	NOUN	_	Gender=Fem|Number=Sing	18	nsubj:pass	18:nsubj:pass	_
+17	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	aux:pass	18:aux:pass	_
+18	encontrada	encontrar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	13	ccomp	13:ccomp	_
+19	e	e	CCONJ	_	_	23	cc	23:cc	_
+20	que	que	SCONJ	_	_	23	mark	23:mark	_
+21	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	23	nsubj	23:nsubj	_
+22	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	cop	23:cop	_
+23	vítima	vítima	NOUN	_	Gender=Fem|Number=Sing	18	conj	13:ccomp|18:conj:e	_
+24	de	de	ADP	_	_	26	case	26:case	_
+25	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	conspiração	conspiração	NOUN	_	Gender=Fem|Number=Sing	23	nmod	23:nmod:de	SpaceAfter=No
+27	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0015
+# text = A Delegacia de Defesa da Mulher de Peruíbe está à frente das investigações, com o suspeito sob custódia em São Vicente.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Delegacia	Delegacia	PROPN	_	_	13	nsubj	13:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Defesa	Defesa	PROPN	_	_	2	flat:name	2:flat:name	_
+5-6	da	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	Mulher	Mulher	PROPN	_	_	2	flat:name	2:flat:name	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	Peruíbe	Peruíbe	PROPN	_	_	2	nmod	2:nmod:de	_
+10	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	13:cop	_
+11-12	à	_	_	_	_	_	_	_	_
+11	a	a	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	frente	frente	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+14-15	das	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	16:det	_
+16	investigações	investigação	NOUN	_	Gender=Fem|Number=Plur	13	nmod	13:nmod:de	SpaceAfter=No
+17	,	,	PUNCT	_	_	20	punct	20:punct	_
+18	com	com	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	suspeito	suspeito	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod:com	_
+21	sob	sob	ADP	_	_	22	case	22:case	_
+22	custódia	custódia	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:sob	_
+23	em	em	ADP	_	_	24	case	24:case	_
+24	São	São	PROPN	_	_	22	nmod	22:nmod:em	_
+25	Vicente	Vicente	PROPN	_	_	24	flat:name	24:flat:name	SpaceAfter=No
+26	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0017
+# text = O Exército, em comunicado oficial, expressou "profunda preocupação" e prometeu total cooperação com as autoridades civis.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Exército	Exército	PROPN	_	_	8	nsubj	8:nsubj|14:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	5	punct	5:punct	_
+4	em	em	ADP	_	_	5	case	5:case	_
+5	comunicado	comunicado	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:em	_
+6	oficial	oficial	ADJ	_	Number=Sing	5	amod	5:amod	SpaceAfter=No
+7	,	,	PUNCT	_	_	5	punct	5:punct	_
+8	expressou	expressar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	"	"	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+10	profunda	profundo	ADJ	_	Gender=Fem|Number=Sing	11	amod	11:amod	_
+11	preocupação	preocupação	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	SpaceAfter=No
+12	"	"	PUNCT	_	_	11	punct	11:punct	_
+13	e	e	CCONJ	_	_	14	cc	14:cc	_
+14	prometeu	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	conj	8:conj:e	_
+15	total	total	ADJ	_	Number=Sing	16	amod	16:amod	_
+16	cooperação	cooperação	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	_
+17	com	com	ADP	_	_	19	case	19:case	_
+18	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	19:det	_
+19	autoridades	autoridade	NOUN	_	Gender=Fem|Number=Plur	16	nmod	16:nmod:com	_
+20	civis	civil	ADJ	_	Number=Plur	19	amod	19:amod	SpaceAfter=No
+21	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0019
+# text = Enquanto isso, a comunidade local está em estado de alerta, questionando a segurança e a conduta dos militares na região.
+1	Enquanto	enquanto	ADV	_	ExtPos=ADV	9	advmod	9:advmod	_
+2	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	fixed	1:fixed	SpaceAfter=No
+3	,	,	PUNCT	_	_	1	punct	1:punct	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	comunidade	comunidade	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	9:nsubj	_
+6	local	local	ADJ	_	Number=Sing	5	amod	5:amod	_
+7	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	9:cop	_
+8	em	em	ADP	_	_	9	case	9:case	_
+9	estado	estado	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	alerta	alerta	NOUN	_	Number=Sing	9	nmod	9:nmod:de	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	questionando	questionar	VERB	_	VerbForm=Ger	9	advcl	9:advcl	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	segurança	segurança	NOUN	_	Number=Sing	13	obj	13:obj	_
+16	e	e	CCONJ	_	_	18	cc	18:cc	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	conduta	conduta	NOUN	_	Gender=Fem|Number=Sing	15	conj	13:obj|15:conj:e	_
+19-20	dos	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	21:det	_
+21	militares	militar	NOUN	_	Number=Plur	18	nmod	18:nmod:de	_
+22-23	na	_	_	_	_	_	_	_	_
+22	em	em	ADP	_	_	24	case	24:case	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	região	região	NOUN	_	Gender=Fem|Number=Sing	18	nmod	18:nmod:em	SpaceAfter=No
+25	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0021
+# text = Os pais do menino clamam por justiça e a mídia acompanha de perto cada desenvolvimento.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	pais	pai	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	6:nsubj	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	menino	menino	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	_
+6	clamam	clamar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	por	por	ADP	_	_	8	case	8:case	_
+8	justiça	justiça	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:por	_
+9	e	e	CCONJ	_	_	12	cc	12:cc	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	mídia	mídia	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	12:nsubj	_
+12	acompanha	acompanhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	6:conj:e	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	perto	perto	ADV	_	_	12	advmod	12:advmod	_
+15	cada	cada	DET	_	Number=Sing|PronType=Ind	16	det	16:det	_
+16	desenvolvimento	desenvolvimento	NOUN	_	Gender=Masc|Number=Sing	12	obj	12:obj	SpaceAfter=No
+17	.	.	PUNCT	_	_	6	punct	6:punct	_

@@ -1,0 +1,169 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Alemanha volta a fazer alerta e pede para população estocar água, comida e remédios.
+1	Alemanha	Alemanha	PROPN	_	_	2	nsubj	2:nsubj|4:nsubj|7:nsubj	_
+2	volta	voltar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	a	a	ADP	_	_	4	mark	4:mark	_
+4	fazer	fazer	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	_
+5	alerta	alerta	NOUN	_	Number=Sing	4	obj	4:obj	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	pede	pedir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:e	_
+8	para	para	ADP	_	_	10	mark	10:mark	_
+9	população	população	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	10:nsubj	_
+10	estocar	estocar	VERB	_	VerbForm=Inf	7	ccomp	7:ccomp	_
+11	água	água	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	comida	comida	NOUN	_	Gender=Fem|Number=Sing	11	conj	10:obj|11:conj:e	_
+14	e	e	CCONJ	_	_	15	cc	15:cc	_
+15	remédios	remédio	NOUN	_	Gender=Masc|Number=Plur	11	conj	10:obj|11:conj:e	SpaceAfter=No
+16	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Um relatório da emissora alemã DW Deutsche Welle diz que este tipo de " movimento" não acontece desde o fim da Guerra Fria (1945/1989).
+1	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	relatório	relatório	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	10:nsubj	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	emissora	emissor	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+6	alemã	alemão	ADJ	_	Gender=Fem|Number=Sing	5	amod	5:amod	_
+7	DW	DW	PROPN	_	_	5	nmod	5:nmod	_
+8	Deutsche	Deutsche	PROPN	_	_	7	flat:name	7:flat:name	_
+9	Welle	Welle	PROPN	_	_	7	flat:name	7:flat:name	_
+10	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+11	que	que	SCONJ	_	_	19	mark	19:mark	_
+12	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	13	det	13:det	_
+13	tipo	tipo	NOUN	_	Gender=Masc|Number=Sing	19	nsubj	19:nsubj	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	"	"	PUNCT	_	_	16	punct	16:punct	_
+16	movimento	movimento	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod:de	SpaceAfter=No
+17	"	"	PUNCT	_	_	16	punct	16:punct	_
+18	não	não	ADV	_	_	19	advmod	19:advmod	_
+19	acontece	acontecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	ccomp	10:ccomp	_
+20	desde	desde	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	fim	fim	NOUN	_	Gender=Masc|Number=Sing	19	obl	19:obl:desde	_
+23-24	da	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	Guerra	Guerra	PROPN	_	_	22	nmod	22:nmod:de	_
+26	Fria	Fria	PROPN	_	_	25	flat:name	25:flat:name	_
+27	(	(	PUNCT	_	_	28	punct	28:punct	SpaceAfter=No
+28	1945/1989	1945/1989	NUM	_	NumType=Card	25	parataxis	25:parataxis	SpaceAfter=No
+29	)	)	PUNCT	_	_	28	punct	28:punct	SpaceAfter=No
+30	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0005
+# text = O anúncio foi feito há alguns meses e está sendo reforçado novamente.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	anúncio	anúncio	NOUN	_	Gender=Masc|Number=Sing	4	nsubj:pass	4:nsubj:pass|11:nsubj:pass	_
+3	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	feito	fazer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	4:advcl	_
+6	alguns	algum	DET	_	Gender=Masc|Number=Plur|PronType=Ind	7	det	7:det	_
+7	meses	mÃªs	NOUN	_	Gender=Masc|Number=Plur	5	obj	5:obj	_
+8	e	e	CCONJ	_	_	11	cc	11:cc	_
+9	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux	11:aux	_
+10	sendo	ser	AUX	_	VerbForm=Ger	11	aux:pass	11:aux:pass	_
+11	reforçado	reforçar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	4	conj	4:conj:e	_
+12	novamente	novamente	ADV	_	_	11	advmod	11:advmod	SpaceAfter=No
+13	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0007
+# text = Angela Merkel, chanceler do governo alemão, emitiu um documento oficial orientando seus cidadãos a estocarem alimentos, água e outros suprimentos para um provável caso de catástrofe ou ataque nuclear.
+1	Angela	Angela	PROPN	_	_	10	nsubj	10:nsubj	_
+2	Merkel	Merkel	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	chanceler	chanceler	NOUN	_	Gender=Masc|Number=Sing	1	appos	1:appos	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	governo	governo	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:de	_
+8	alemão	alemão	ADJ	_	Gender=Masc|Number=Sing	7	amod	7:amod	SpaceAfter=No
+9	,	,	PUNCT	_	_	4	punct	4:punct	_
+10	emitiu	emitir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+11	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	documento	documento	NOUN	_	Gender=Masc|Number=Sing	10	obj	10:obj	_
+13	oficial	oficial	ADJ	_	Number=Sing	12	amod	12:amod	_
+14	orientando	orientar	VERB	_	VerbForm=Ger	12	acl	12:acl	_
+15	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	16	det	16:det	_
+16	cidadãos	cidadão	NOUN	_	Gender=Masc|Number=Plur	14	obj	14:obj|18:nsubj	_
+17	a	a	ADP	_	_	18	mark	18:mark	_
+18	estocarem	estocar	VERB	_	Number=Plur|Person=3|VerbForm=Inf	14	xcomp	14:xcomp	_
+19	alimentos	alimento	NOUN	_	Gender=Masc|Number=Plur	18	obj	18:obj	SpaceAfter=No
+20	,	,	PUNCT	_	_	21	punct	21:punct	_
+21	água	água	NOUN	_	Gender=Fem|Number=Sing	19	conj	18:obj|19:conj:e	_
+22	e	e	CCONJ	_	_	24	cc	24:cc	_
+23	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	24	det	24:det	_
+24	suprimentos	suprimento	NOUN	_	Gender=Masc|Number=Plur	19	conj	18:obj|19:conj:e	_
+25	para	para	ADP	_	_	28	case	28:case	_
+26	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+27	provável	provável	ADJ	_	Number=Sing	28	amod	28:amod	_
+28	caso	caso	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:para	_
+29	de	de	ADP	_	_	30	case	30:case|32:case	_
+30	catástrofe	catástrofe	NOUN	_	Gender=Fem|Number=Sing	28	nmod	28:nmod:de	_
+31	ou	ou	CCONJ	_	_	32	cc	32:cc	_
+32	ataque	ataque	NOUN	_	Gender=Masc|Number=Sing	30	conj	28:nmod:de|30:conj:ou	_
+33	nuclear	nuclear	ADJ	_	Number=Sing	32	amod	32:amod	SpaceAfter=No
+34	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0009
+# text = A diretriz está contida em um documento-estratégia da defesa civil do governo.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	diretriz	diretriz	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+3	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+4	contida	contido	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	0	root	0:root	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	documento-estratégia	documento-estratégia	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:em	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	defesa	defesa	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:de	_
+11	civil	civil	ADJ	_	Number=Sing	10	amod	10:amod	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	governo	governo	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:de	SpaceAfter=No
+15	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0011
+# text = O texto diz que cidadãos residentes no país devem providenciar um estoque de dez dias de comida, água, dinheiro e medicamentos para que fiquem alojados enquanto o governo possa controlar situações de emergência.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	texto	texto	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	10	mark	10:mark	_
+5	cidadãos	cidadão	NOUN	_	Gender=Masc|Number=Plur	10	nsubj	10:nsubj|11:nsubj	_
+6	residentes	residente	ADJ	_	Number=Plur	5	amod	5:amod	_
+7-8	no	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	país	país	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:em	_
+10	devem	dever	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	3:ccomp	_
+11	providenciar	providenciar	VERB	_	VerbForm=Inf	10	xcomp	10:xcomp	_
+12	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	estoque	estoque	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	dez	dez	NUM	_	NumType=Card	16	nummod	16:nummod	_
+16	dias	dia	NOUN	_	Gender=Masc|Number=Plur	13	nmod	13:nmod:de	_
+17	de	de	ADP	_	_	18	case	18:case|20:case|22:case|24:case	_
+18	comida	comida	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:de	SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	20:punct	_
+20	água	água	NOUN	_	Gender=Fem|Number=Sing	18	conj	16:nmod:de|18:conj:e	SpaceAfter=No
+21	,	,	PUNCT	_	_	22	punct	22:punct	_
+22	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	18	conj	16:nmod:de|18:conj:e	_
+23	e	e	CCONJ	_	_	24	cc	24:cc	_
+24	medicamentos	medicamento	NOUN	_	Gender=Masc|Number=Plur	18	conj	16:nmod:de|18:conj:e	_
+25	para	para	ADP	_	ExtPos=SCONJ	27	mark	27:mark	_
+26	que	que	SCONJ	_	_	25	fixed	25:fixed	_
+27	fiquem	ficar	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	advcl	11:advcl:para_que	_
+28	alojados	alojado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	27	xcomp	27:xcomp	_
+29	enquanto	enquanto	SCONJ	_	_	32	mark	32:mark	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	governo	governo	NOUN	_	Gender=Masc|Number=Sing	32	nsubj	32:nsubj|33:nsubj	_
+32	possa	poder	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	advcl	27:advcl:enquanto	_
+33	controlar	controlar	VERB	_	VerbForm=Inf	32	xcomp	32:xcomp	_
+34	situações	situação	NOUN	_	Gender=Fem|Number=Plur	33	obj	33:obj	_
+35	de	de	ADP	_	_	36	case	36:case	_
+36	emergência	emergência	NOUN	_	Gender=Fem|Number=Sing	34	nmod	34:nmod:de	SpaceAfter=No
+37	.	.	PUNCT	_	_	3	punct	3:punct	_

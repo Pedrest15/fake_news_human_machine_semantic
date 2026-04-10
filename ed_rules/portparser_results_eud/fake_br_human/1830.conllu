@@ -1,0 +1,188 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Moro pede remanejamento de presos.
+1	Moro	Moro	PROPN	_	_	2	nsubj	2:nsubj	_
+2	pede	pedir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	remanejamento	remanejamento	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	presos	preso	NOUN	_	Gender=Masc|Number=Plur	3	nmod	3:nmod:de	SpaceAfter=No
+6	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Novos corruptos poderão ser presos até o fim de semana.
+1	Novos	novo	ADJ	_	Gender=Masc|Number=Plur	2	amod	2:amod	_
+2	corruptos	corrupto	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	3:nsubj|5:nsubj:pass	_
+3	poderão	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+4	ser	ser	AUX	_	VerbForm=Inf	5	aux:pass	5:aux:pass	_
+5	presos	prender	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	3	xcomp	3:xcomp	_
+6	até	até	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	fim	fim	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:até	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	semana	semana	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	SpaceAfter=No
+11	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0005
+# text = A PF estará providenciando a transferência de três presos que estão no "hotel da PF" em Curitiba para o Complexo Médico Penal, em Pinhais, região metropolitana da capital.. Eduardo Cunha (PMDB-RJ), Léo Pinheiro (OAS) e João Claudio Genu (ex-tesoureiro do PP) serão transferidos.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	PF	PF	PROPN	_	_	4	nsubj	4:nsubj	_
+3	estará	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	aux	4:aux	_
+4	providenciando	providenciar	VERB	_	VerbForm=Ger	0	root	0:root	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	transferência	transferência	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	três	três	NUM	_	NumType=Card	9	nummod	9:nummod	_
+9	presos	preso	NOUN	_	Gender=Masc|Number=Plur	6	nmod	6:nmod:de|15:nsubj	_
+10	que	que	PRON	_	PronType=Rel	15	nsubj	9:ref	_
+11	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	cop	15:cop	_
+12-13	no	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	15	case	15:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+14	"	"	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+15	hotel	hotel	NOUN	_	Gender=Masc|Number=Sing	9	acl:relcl	9:acl:relcl	_
+16-17	da	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	PF	PF	PROPN	_	_	15	nmod	15:nmod:de	SpaceAfter=No
+19	"	"	PUNCT	_	_	15	punct	15:punct	_
+20	em	em	ADP	_	_	21	case	21:case	_
+21	Curitiba	Curitiba	PROPN	_	_	9	nmod	9:nmod:em	_
+22	para	para	ADP	_	_	24	case	24:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	Complexo	Complexo	PROPN	_	_	6	nmod	6:nmod:para	_
+25	Médico	Médico	PROPN	_	_	24	flat:name	24:flat:name	_
+26	Penal	Penal	PROPN	_	_	24	flat:name	24:flat:name	SpaceAfter=No
+27	,	,	PUNCT	_	_	29	punct	29:punct	_
+28	em	em	ADP	_	_	29	case	29:case	_
+29	Pinhais	Pinhais	PROPN	_	_	9	nmod	9:nmod:em	SpaceAfter=No
+30	,	,	PUNCT	_	_	31	punct	31:punct	_
+31	região	região	NOUN	_	Gender=Fem|Number=Sing	29	appos	29:appos	_
+32	metropolitana	metropolitano	ADJ	_	Gender=Fem|Number=Sing	31	amod	31:amod	_
+33-34	da	_	_	_	_	_	_	_	_
+33	de	de	ADP	_	_	35	case	35:case	_
+34	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	35:det	_
+35	capital	capital	NOUN	_	Number=Sing	53	nmod	53:nmod:de	SpaceAfter=No
+36	..	..	PUNCT	_	_	4	punct	4:punct	_
+37	Eduardo	Eduardo	PROPN	_	_	59	nsubj:pass	59:nsubj:pass	_
+38	Cunha	Cunha	PROPN	_	_	37	flat:name	37:flat:name	_
+39	(	(	PUNCT	_	_	40	punct	40:punct	SpaceAfter=No
+40	PMDB-RJ	PMDB-RJ	PROPN	_	_	37	parataxis	37:parataxis	SpaceAfter=No
+41	)	)	PUNCT	_	_	40	punct	40:punct	SpaceAfter=No
+42	,	,	PUNCT	_	_	43	punct	43:punct	_
+43	Léo	Léo	PROPN	_	_	37	conj	37:conj:e|59:nsubj:pass	_
+44	Pinheiro	Pinheiro	PROPN	_	_	43	flat:name	43:flat:name	_
+45	(	(	PUNCT	_	_	46	punct	46:punct	SpaceAfter=No
+46	OAS	OAS	PROPN	_	_	43	parataxis	43:parataxis	SpaceAfter=No
+47	)	)	PUNCT	_	_	46	punct	46:punct	_
+48	e	e	CCONJ	_	_	49	cc	49:cc	_
+49	João	João	PROPN	_	_	37	conj	37:conj:e|59:nsubj:pass	_
+50	Claudio	Claudio	PROPN	_	_	49	flat:name	49:flat:name	_
+51	Genu	Genu	PROPN	_	_	49	flat:name	49:flat:name	_
+52	(	(	PUNCT	_	_	53	punct	53:punct	SpaceAfter=No
+53	ex-tesoureiro	ex-tesoureiro	NOUN	_	Gender=Masc|Number=Sing	49	appos	49:appos	_
+54-55	do	_	_	_	_	_	_	_	_
+54	de	de	ADP	_	_	56	case	56:case	_
+55	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	56	det	56:det	_
+56	PP	PP	PROPN	_	_	53	nmod	53:nmod:de	SpaceAfter=No
+57	)	)	PUNCT	_	_	53	punct	53:punct	_
+58	serão	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	59	aux:pass	59:aux:pass	_
+59	transferidos	transferir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	36	dep	36:dep	SpaceAfter=No
+60	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0007
+# text = O G1 informou que a quantidade de vagas na carceragem da PF está próxima do "limite tolerável" e o remanejamento é necessário para não haver "risco à segurança" dos presos.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	G1	G1	PROPN	_	_	3	nsubj	3:nsubj	_
+3	informou	informar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	16	mark	16:mark|27:mark	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	quantidade	quantidade	NOUN	_	Gender=Fem|Number=Sing	16	nsubj	16:nsubj	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	vagas	vaga	NOUN	_	Gender=Fem|Number=Plur	6	nmod	6:nmod:de	_
+9-10	na	_	_	_	_	_	_	_	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	carceragem	carceragem	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:em	_
+12-13	da	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	PF	PF	PROPN	_	_	11	nmod	11:nmod:de	_
+15	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	16:cop	_
+16	próxima	próximo	ADJ	_	Gender=Fem|Number=Sing	3	ccomp	3:ccomp	_
+17-18	do	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	20	case	20:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+19	"	"	PUNCT	_	_	20	punct	20:punct	SpaceAfter=No
+20	limite	limite	NOUN	_	Gender=Masc|Number=Sing	16	obl	16:obl:de	_
+21	tolerável	tolerável	ADJ	_	Number=Sing	20	amod	20:amod	SpaceAfter=No
+22	"	"	PUNCT	_	_	20	punct	20:punct	_
+23	e	e	CCONJ	_	_	27	cc	27:cc	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	remanejamento	remanejamento	NOUN	_	Gender=Masc|Number=Sing	27	nsubj	27:nsubj	_
+26	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	cop	27:cop	_
+27	necessário	necessário	ADJ	_	Gender=Masc|Number=Sing	16	conj	3:ccomp|16:conj:e	_
+28	para	para	ADP	_	_	30	mark	30:mark	_
+29	não	não	ADV	_	_	30	advmod	30:advmod	_
+30	haver	haver	VERB	_	VerbForm=Inf	27	advcl	27:advcl:para	_
+31	"	"	PUNCT	_	_	32	punct	32:punct	SpaceAfter=No
+32	risco	risco	NOUN	_	Gender=Masc|Number=Sing	30	obj	30:obj	_
+33-34	à	_	_	_	_	_	_	_	_
+33	a	a	ADP	_	_	35	case	35:case	_
+34	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	35:det	_
+35	segurança	segurança	NOUN	_	Number=Sing	32	nmod	32:nmod:a	SpaceAfter=No
+36	"	"	PUNCT	_	_	32	punct	32:punct	_
+37-38	dos	_	_	_	_	_	_	_	_
+37	de	de	ADP	_	_	39	case	39:case	_
+38	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	39	det	39:det	_
+39	presos	preso	NOUN	_	Gender=Masc|Number=Plur	32	nmod	32:nmod:de	SpaceAfter=No
+40	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0009
+# text = Ao que tudo indica, Curitiba terá novos ladrões comemorando o Natal atrás das grades.
+1-2	Ao	_	_	_	_	_	_	_	_
+1	A	a	ADP	_	_	2	case	2:case	_
+2	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	8	obl	5:obj|8:obl:a	_
+3	que	que	PRON	_	PronType=Rel	5	obj	2:ref	_
+4	tudo	tudo	PRON	_	PronType=Ind	5	nsubj	5:nsubj	_
+5	indica	indicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	2:acl:relcl	SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	5:punct	_
+7	Curitiba	Curitiba	PROPN	_	_	8	nsubj	8:nsubj	_
+8	terá	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+9	novos	novo	ADJ	_	Gender=Masc|Number=Plur	10	amod	10:amod	_
+10	ladrões	ladrão	NOUN	_	Gender=Masc|Number=Plur	8	obj	8:obj	_
+11	comemorando	comemorar	VERB	_	VerbForm=Ger	10	acl	10:acl	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	Natal	Natal	PROPN	_	_	11	obj	11:obj	_
+14	atrás	atrás	ADV	_	_	11	advmod	11:advmod	_
+15-16	das	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	17:det	_
+17	grades	grade	NOUN	_	Gender=Fem|Number=Plur	14	obl	14:obl:de	SpaceAfter=No
+18	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0011
+# text = Sérgio Moro quer os presentear os brasileiros.
+1	Sérgio	Sérgio	PROPN	_	_	3	nsubj	3:nsubj|5:nsubj	_
+2	Moro	Moro	PROPN	_	_	1	flat:name	1:flat:name	_
+3	quer	querer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	os	o	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	5	obj	5:obj	_
+5	presentear	presentear	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+6	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	7:det	_
+7	brasileiros	brasileiro	NOUN	_	Gender=Masc|Number=Plur	5	obj	5:obj	SpaceAfter=No
+8	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0013
+# text = Será que é quem eu estou pensando?
+1	Será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	discourse	4:discourse	_
+2	que	que	SCONJ	_	_	4	discourse	4:discourse	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+4	quem	quem	PRON	_	PronType=Rel	0	root	0:root	_
+5	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	7	nsubj	7:nsubj	_
+6	estou	estar	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	7	aux	7:aux	_
+7	pensando	pensar	VERB	_	VerbForm=Ger	4	acl:relcl	4:acl:relcl	SpaceAfter=No
+8	?	?	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0015
+# text = Hã?
+1	Hã	hã	INTJ	_	_	0	root	0:root	SpaceAfter=No
+2	?	?	PUNCT	_	_	1	punct	1:punct	_

@@ -1,0 +1,250 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Escritório de Deputado é alvo de atentado em Porto Alegre.
+1	Escritório	escritório	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	Deputado	Deputado	PROPN	_	_	1	nmod	1:nmod:de	_
+4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+5	alvo	alvo	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	atentado	atentado	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:de	_
+8	em	em	ADP	_	_	9	case	9:case	_
+9	Porto	Porto	PROPN	_	_	7	nmod	7:nmod:em	_
+10	Alegre	Alegre	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+11	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0003
+# text = Vídeo flagrou petistas incendiários.
+1	Vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	2	nsubj	2:nsubj	_
+2	flagrou	flagrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	petistas	petista	NOUN	_	Number=Plur	2	obj	2:obj	_
+4	incendiários	incendiário	ADJ	_	Gender=Masc|Number=Plur	3	amod	3:amod	SpaceAfter=No
+5	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = O alvo foi a sede do partido DEM (Democratas) em Porto Alegre, onde também funciona o escritório político do deputado federal Onyx Lorenzoni.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	alvo	alvo	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+3	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	cop	5:cop	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	sede	sede	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+6-7	do	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	partido	partido	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:de	_
+9	DEM	DEM	PROPN	_	_	8	nmod	8:nmod	_
+10	(	(	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+11	Democratas	Democratas	PROPN	_	_	9	appos	9:appos	SpaceAfter=No
+12	)	)	PUNCT	_	_	11	punct	11:punct	_
+13	em	em	ADP	_	_	14	case	14:case	_
+14	Porto	Porto	PROPN	_	_	5	nmod	5:nmod:em|19:obl	_
+15	Alegre	Alegre	PROPN	_	_	14	flat:name	14:flat:name	SpaceAfter=No
+16	,	,	PUNCT	_	_	19	punct	19:punct	_
+17	onde	onde	ADV	_	_	19	advmod	14:ref	_
+18	também	também	ADV	_	_	19	advmod	19:advmod	_
+19	funciona	funcionar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	acl:relcl	14:acl:relcl	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	escritório	escritório	NOUN	_	Gender=Masc|Number=Sing	19	nsubj	19:nsubj	_
+22	político	político	ADJ	_	Gender=Masc|Number=Sing	21	amod	21:amod	_
+23-24	do	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	21	nmod	21:nmod:de	_
+26	federal	federal	ADJ	_	Number=Sing	25	amod	25:amod	_
+27	Onyx	Onyx	PROPN	_	_	25	nmod	25:nmod	_
+28	Lorenzoni	Lorenzoni	PROPN	_	_	27	flat:name	27:flat:name	SpaceAfter=No
+29	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0007
+# text = Coquetéis molotov foram lançados contra o imóvel, porém o fogo não se alastrou.
+1	Coquetéis	coquetéi	NOUN	_	Gender=Masc|Number=Plur	4	nsubj:pass	4:nsubj:pass	_
+2	molotov	moloto	NOUN	_	Gender=Masc|Number=Plur	1	amod	1:amod	_
+3	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	lançados	lançar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5	contra	contra	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	imóvel	imóvel	NOUN	_	Number=Sing	4	obl	4:obl:contra	SpaceAfter=No
+8	,	,	PUNCT	_	_	14	punct	14:punct	_
+9	porém	porém	CCONJ	_	_	14	cc	14:cc	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	fogo	fogo	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	14:nsubj	_
+12	não	não	ADV	_	_	14	advmod	14:advmod	_
+13	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	14	expl	14:expl	_
+14	alastrou	alastrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	conj	4:conj:porém	SpaceAfter=No
+15	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0009
+# text = Uma denúncia anônima foi feita à Rádio Guaíba.
+1	Uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	denúncia	denúncia	NOUN	_	Gender=Fem|Number=Sing	5	nsubj:pass	5:nsubj:pass	_
+3	anônima	anônimo	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	_
+4	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	aux:pass	5:aux:pass	_
+5	feita	fazer	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+6-7	à	_	_	_	_	_	_	_	_
+6	a	a	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	Rádio	Rádio	PROPN	_	_	5	obl	5:obl:a	_
+9	Guaíba	Guaíba	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+10	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0011
+# text = O deputado Lorenzoni disse que a agressão política, por qualquer lado que seja, é um ato de extremismo.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+3	Lorenzoni	Lorenzoni	PROPN	_	_	2	nmod	2:nmod	_
+4	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	que	que	SCONJ	_	_	18	mark	18:mark	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	agressão	agressão	NOUN	_	Gender=Fem|Number=Sing	18	nsubj	18:nsubj	_
+8	política	político	ADJ	_	Gender=Fem|Number=Sing	7	amod	7:amod	SpaceAfter=No
+9	,	,	PUNCT	_	_	12	punct	12:punct	_
+10	por	por	ADP	_	_	12	case	12:case	_
+11	qualquer	qualquer	DET	_	Number=Sing|PronType=Ind	12	det	12:det	_
+12	lado	lado	NOUN	_	Gender=Masc|Number=Sing	18	nmod	18:nmod:por	_
+13	que	que	PRON	_	PronType=Rel	12	nsubj	12:nsubj	_
+14	seja	ser	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	12:cop	SpaceAfter=No
+15	,	,	PUNCT	_	_	12	punct	12:punct	_
+16	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	cop	18:cop	_
+17	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	ato	ato	NOUN	_	Gender=Masc|Number=Sing	4	ccomp	4:ccomp	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	extremismo	extremismo	NOUN	_	Gender=Masc|Number=Sing	18	nmod	18:nmod:de	SpaceAfter=No
+21	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0013
+# text = Isto é um desespero de quem esta há 14 anos acomodado e vai perder o poder, alegou.
+1	Isto	isto	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	4	nsubj	4:nsubj	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	desespero	desespero	NOUN	_	Gender=Masc|Number=Sing	18	ccomp:speech	18:ccomp:speech	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	quem	quem	PRON	_	PronType=Ind	4	nmod	4:nmod:de	_
+7	esta	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop	_
+8	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl:relcl	6:acl:relcl	_
+9	14	14	NUM	_	NumType=Card	10	nummod	10:nummod	_
+10	anos	ano	NOUN	_	Gender=Masc|Number=Plur	8	obj	8:obj	_
+11	acomodado	acomodado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	6	xcomp	6:xcomp	_
+12	e	e	CCONJ	_	_	14	cc	14:cc	_
+13	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux	14:aux	_
+14	perder	perder	VERB	_	VerbForm=Inf	11	conj	6:xcomp|11:conj:e	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	poder	poder	NOUN	_	Gender=Masc|Number=Sing	14	obj	14:obj	SpaceAfter=No
+17	,	,	PUNCT	_	_	4	punct	4:punct	_
+18	alegou	alegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+19	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0015
+# text = Onix declarou ter total convicção de sua postura política e garantiu não se intimidar com esta ação.
+1	Onix	Onix	PROPN	_	_	2	nsubj	2:nsubj|3:nsubj|11:nsubj|14:nsubj	_
+2	declarou	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	ter	ter	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	_
+4	total	total	ADJ	_	Number=Sing	5	amod	5:amod	_
+5	convicção	convicção	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	8	det	8:det	_
+8	postura	postura	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	_
+9	política	político	ADJ	_	Gender=Fem|Number=Sing	8	amod	8:amod	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	garantiu	garantir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	2:conj:e	_
+12	não	não	ADV	_	_	14	advmod	14:advmod	_
+13	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	14	expl	14:expl	_
+14	intimidar	intimidar	VERB	_	VerbForm=Inf	11	xcomp	11:xcomp	_
+15	com	com	ADP	_	_	17	case	17:case	_
+16	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	17	det	17:det	_
+17	ação	ação	NOUN	_	Gender=Fem|Number=Sing	14	obl	14:obl:com	SpaceAfter=No
+18	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0017
+# text = Os autores do ataque já estão sendo identificados pelas imagens do circuito interno e serão encaminhadas para investigação da Polícia Federal.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	autores	autor	NOUN	_	Gender=Masc|Number=Plur	9	nsubj:pass	9:nsubj:pass|19:nsubj:pass	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	ataque	ataque	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	_
+6	já	já	ADV	_	_	9	advmod	9:advmod	_
+7	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	aux	9:aux	_
+8	sendo	ser	AUX	_	VerbForm=Ger	9	aux:pass	9:aux:pass	_
+9	identificados	identificar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	_
+10-11	pelas	_	_	_	_	_	_	_	_
+10	por	por	ADP	_	_	12	case	12:case	_
+11	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	12:det	_
+12	imagens	imagem	NOUN	_	Gender=Fem|Number=Plur	9	obl:agent	9:obl:agent	_
+13-14	do	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	circuito	circuito	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:de	_
+16	interno	interno	ADJ	_	Gender=Masc|Number=Sing	15	amod	15:amod	_
+17	e	e	CCONJ	_	_	19	cc	19:cc	_
+18	serão	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	19	aux:pass	19:aux:pass	_
+19	encaminhadas	encaminhar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	9	conj	9:conj:e	_
+20	para	para	ADP	_	_	21	case	21:case	_
+21	investigação	investigação	NOUN	_	Gender=Fem|Number=Sing	19	obl	19:obl:para	_
+22-23	da	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	Polícia	Polícia	PROPN	_	_	21	nmod	21:nmod:de	_
+25	Federal	Federal	PROPN	_	_	24	flat:name	24:flat:name	SpaceAfter=No
+26	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0019
+# text = Repare que aos 40 segundos do vídeo, um dos simpatizantes de "Dilma" se abaixa no meio da rua para preparar o artefato.
+1	Repare	reparar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	que	que	SCONJ	_	_	20	mark	20:mark	_
+3-4	aos	_	_	_	_	_	_	_	_
+3	a	a	ADP	_	_	6	case	6:case	_
+4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	6:det	_
+5	40	40	NUM	_	NumType=Card	6	nummod	6:nummod	_
+6	segundos	segundo	NOUN	_	Gender=Masc|Number=Plur	20	obl	20:obl:a	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de	SpaceAfter=No
+10	,	,	PUNCT	_	_	6	punct	6:punct	_
+11	um	um	NUM	_	Gender=Masc|NumType=Card	20	nsubj	20:nsubj	_
+12-13	dos	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	14:det	_
+14	simpatizantes	simpatizante	NOUN	_	Number=Plur	11	nmod	11:nmod:de	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	"	"	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+17	Dilma	Dilma	PROPN	_	_	14	nmod	14:nmod:de	SpaceAfter=No
+18	"	"	PUNCT	_	_	17	punct	17:punct	_
+19	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	20	expl	20:expl	_
+20	abaixa	abaixar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	1:ccomp	_
+21-22	no	_	_	_	_	_	_	_	_
+21	em	em	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	meio	meio	NOUN	_	Gender=Masc|Number=Sing	20	obl	20:obl:em	_
+24-25	da	_	_	_	_	_	_	_	_
+24	de	de	ADP	_	_	26	case	26:case	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	rua	rua	NOUN	_	Gender=Fem|Number=Sing	23	nmod	23:nmod:de	_
+27	para	para	ADP	_	_	28	mark	28:mark	_
+28	preparar	preparar	VERB	_	VerbForm=Inf	20	advcl	20:advcl:para	_
+29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	30:det	_
+30	artefato	artefato	NOUN	_	Gender=Masc|Number=Sing	28	obj	28:obj	SpaceAfter=No
+31	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0021
+# text = Nos exatos 48 segundos, os meliantes lançam o coquetel contra a sede do partido.
+1-2	Nos	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	5	case	5:case	_
+2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	5:det	_
+3	exatos	exato	ADJ	_	Gender=Masc|Number=Plur	5	amod	5:amod	_
+4	48	48	NUM	_	NumType=Card	5	nummod	5:nummod	_
+5	segundos	segundo	NOUN	_	Gender=Masc|Number=Plur	9	obl	9:obl:em	SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	5:punct	_
+7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	8:det	_
+8	meliantes	meliante	NOUN	_	Number=Plur	9	nsubj	9:nsubj	_
+9	lançam	lançar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	coquetel	coquetel	NOUN	_	Gender=Masc|Number=Sing	9	obj	9:obj	_
+12	contra	contra	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	sede	sede	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:contra	_
+15-16	do	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	partido	partido	NOUN	_	Gender=Masc|Number=Sing	14	nmod	14:nmod:de	SpaceAfter=No
+18	.	.	PUNCT	_	_	9	punct	9:punct	_

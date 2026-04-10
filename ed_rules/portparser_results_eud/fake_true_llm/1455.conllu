@@ -1,0 +1,402 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = O renomado médico pediatra e toxicologista Dr.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+2	renomado	renomado	ADJ	_	Gender=Masc|Number=Sing	3	amod	3:amod	_
+3	médico	médico	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+4	pediatra	pediatra	NOUN	_	Number=Sing	3	nmod	3:nmod	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	toxicologista	toxicologista	NOUN	_	Number=Sing	4	conj	3:nmod|4:conj:e	_
+7	Dr.	Dr.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = Anthony Wong faleceu nesta sexta-feira (15) devido a complicações após uma suposta infecção por coronavírus, no Hospital Sancta Maggiore, em São Paulo.
+1	Anthony	Anthony	PROPN	_	_	3	nsubj	3:nsubj	_
+2	Wong	Wong	PROPN	_	_	1	flat:name	1:flat:name	_
+3	faleceu	falecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4-5	nesta	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	6	det	6:det	_
+6	sexta-feira	sexta-feira	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:em	_
+7	(	(	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	15	15	NUM	_	NumType=Card	6	appos	6:appos	SpaceAfter=No
+9	)	)	PUNCT	_	_	8	punct	8:punct	_
+10	devido	dever	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	3	advcl	3:advcl	_
+11	a	a	ADP	_	_	12	case	12:case	_
+12	complicações	complicação	NOUN	_	Gender=Fem|Number=Plur	10	obl	10:obl:a	_
+13	após	após	ADP	_	_	16	case	16:case	_
+14	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+15	suposta	suposto	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	16	amod	16:amod	_
+16	infecção	infecção	NOUN	_	Gender=Fem|Number=Sing	12	nmod	12:nmod:após	_
+17	por	por	ADP	_	_	18	case	18:case	_
+18	coronavírus	coronavírus	NOUN	_	Gender=Masc	16	nmod	16:nmod:por	SpaceAfter=No
+19	,	,	PUNCT	_	_	22	punct	22:punct	_
+20-21	no	_	_	_	_	_	_	_	_
+20	em	em	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	Hospital	Hospital	PROPN	_	_	3	obl	3:obl:em	_
+23	Sancta	Sancta	PROPN	_	_	22	flat:name	22:flat:name	_
+24	Maggiore	Maggiore	PROPN	_	_	22	flat:name	22:flat:name	SpaceAfter=No
+25	,	,	PUNCT	_	_	27	punct	27:punct	_
+26	em	em	ADP	_	_	27	case	27:case	_
+27	São	São	PROPN	_	_	22	nmod	22:nmod:em	_
+28	Paulo	Paulo	PROPN	_	_	27	flat:name	27:flat:name	SpaceAfter=No
+29	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0005
+# text = Conhecido por sua firme oposição às medidas de prevenção adotadas pelo governo e por ser um defensor fervoroso do uso de hidroxicloroquina no tratamento da COVID-19, a notícia de sua morte chocou a comunidade médica e seus seguidores.
+1	Conhecido	conhecer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	38	advcl	38:advcl	_
+2	por	por	ADP	_	_	5	case	5:case	_
+3	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	det	5:det	_
+4	firme	firme	ADJ	_	Number=Sing	5	amod	5:amod	_
+5	oposição	oposição	NOUN	_	Gender=Fem|Number=Sing	1	obl	1:obl:por	_
+6-7	às	_	_	_	_	_	_	_	_
+6	a	a	ADP	_	_	8	case	8:case	_
+7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	8:det	_
+8	medidas	medida	NOUN	_	Gender=Fem|Number=Plur	5	nmod	5:nmod:a	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	prevenção	prevenção	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	_
+11	adotadas	adotar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	8	acl	8:acl	_
+12-13	pelo	_	_	_	_	_	_	_	_
+12	por	por	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	governo	governo	NOUN	_	Gender=Masc|Number=Sing	11	obl:agent	11:obl:agent	_
+15	e	e	CCONJ	_	_	19	cc	19:cc	_
+16	por	por	ADP	_	_	19	mark	19:mark	_
+17	ser	ser	AUX	_	VerbForm=Inf	19	cop	19:cop	_
+18	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	defensor	defensor	NOUN	_	Gender=Masc|Number=Sing	1	conj	1:conj:e	_
+20	fervoroso	fervoroso	ADJ	_	Gender=Masc|Number=Sing	19	amod	19:amod	_
+21-22	do	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	uso	uso	NOUN	_	Gender=Masc|Number=Sing	19	nmod	19:nmod:de	_
+24	de	de	ADP	_	_	25	case	25:case	_
+25	hidroxicloroquina	hidroxicloroquina	NOUN	_	Gender=Fem|Number=Sing	23	nmod	23:nmod:de	_
+26-27	no	_	_	_	_	_	_	_	_
+26	em	em	ADP	_	_	28	case	28:case	_
+27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	tratamento	tratamento	NOUN	_	Gender=Masc|Number=Sing	23	nmod	23:nmod:em	_
+29-30	da	_	_	_	_	_	_	_	_
+29	de	de	ADP	_	_	31	case	31:case	_
+30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+31	COVID-19	covid-19	NUM	_	NumType=Card	28	nmod	28:nmod:de	SpaceAfter=No
+32	,	,	PUNCT	_	_	1	punct	1:punct	_
+33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	34:det	_
+34	notícia	notícia	NOUN	_	Gender=Fem|Number=Sing	38	nsubj	38:nsubj	_
+35	de	de	ADP	_	_	37	case	37:case	_
+36	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	37	det	37:det	_
+37	morte	morte	NOUN	_	Gender=Fem|Number=Sing	34	nmod	34:nmod:de	_
+38	chocou	chocar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+39	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	40:det	_
+40	comunidade	comunidade	NOUN	_	Gender=Fem|Number=Sing	38	obj	38:obj	_
+41	médica	médico	ADJ	_	Gender=Fem|Number=Sing	40	amod	40:amod	_
+42	e	e	CCONJ	_	_	44	cc	44:cc	_
+43	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	44	det	44:det	_
+44	seguidores	seguidor	NOUN	_	Gender=Masc|Number=Plur	40	conj	38:obj|40:conj:e	SpaceAfter=No
+45	.	.	PUNCT	_	_	38	punct	38:punct	_
+
+# sent_id = S0007
+# text = Em uma reviravolta surpreendente, documentos vazados indicam que o Dr.
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	reviravolta	reviravolta	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:em	_
+4	surpreendente	surpreendente	ADJ	_	Number=Sing	3	amod	3:amod	SpaceAfter=No
+5	,	,	PUNCT	_	_	3	punct	3:punct	_
+6	documentos	documento	NOUN	_	Gender=Masc|Number=Plur	8	nsubj	8:nsubj	_
+7	vazados	vazar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	6	acl	6:acl	_
+8	indicam	indicar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+9	que	que	SCONJ	_	_	11	mark	11:mark	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	Dr.	Dr.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0009
+# text = Wong teria contraído a doença após participar de uma conferência médica onde alegadamente foi negado o acesso a equipamentos de proteção adequados.
+1	Wong	Wong	PROPN	_	_	3	nsubj	3:nsubj	_
+2	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	3	aux	3:aux	_
+3	contraído	contraer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	doença	doença	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+6	após	após	ADP	_	_	7	mark	7:mark	_
+7	participar	participar	VERB	_	VerbForm=Inf	3	advcl	3:advcl:após	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	conferência	conferência	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:de|15:obl	_
+11	médica	médico	ADJ	_	Gender=Fem|Number=Sing	10	amod	10:amod	_
+12	onde	onde	ADV	_	_	15	advmod	10:ref	_
+13	alegadamente	alegadamente	ADV	_	_	15	advmod	15:advmod	_
+14	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	aux:pass	15:aux:pass	_
+15	negado	negar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	10	acl:relcl	10:acl:relcl	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	acesso	acesso	NOUN	_	Gender=Masc|Number=Sing	15	nsubj:pass	15:nsubj:pass	_
+18	a	a	ADP	_	_	19	case	19:case	_
+19	equipamentos	equipamento	NOUN	_	Gender=Masc|Number=Plur	17	nmod	17:nmod:a	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	proteção	proteção	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:de	_
+22	adequados	adequado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	19	amod	19:amod	SpaceAfter=No
+23	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0011
+# text = Ele continuou a defender a hidroxicloroquina até seus últimos dias, afirmando ter provas inéditas de sua eficácia, que supostamente seriam divulgadas em um estudo póstumo.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj|4:nsubj	_
+2	continuou	continuar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	a	a	ADP	_	_	4	mark	4:mark	_
+4	defender	defender	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	hidroxicloroquina	hidroxicloroquina	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+7	até	até	ADP	_	_	10	case	10:case	_
+8	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	10	det	10:det	_
+9	últimos	último	ADJ	_	Gender=Masc|Number=Plur	10	amod	10:amod	_
+10	dias	dia	NOUN	_	Gender=Masc|Number=Plur	4	obl	4:obl:até	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	afirmando	afirmar	VERB	_	VerbForm=Ger	2	advcl	2:advcl	_
+13	ter	ter	VERB	_	VerbForm=Inf	12	xcomp	12:xcomp	_
+14	provas	prova	NOUN	_	Gender=Fem|Number=Plur	13	obj	13:obj|23:nsubj:pass	_
+15	inéditas	inédito	ADJ	_	Gender=Fem|Number=Plur	14	amod	14:amod	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	18	det	18:det	_
+18	eficácia	eficácia	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:de	SpaceAfter=No
+19	,	,	PUNCT	_	_	23	punct	23:punct	_
+20	que	que	PRON	_	PronType=Rel	23	nsubj:pass	14:ref	_
+21	supostamente	supostamente	ADV	_	_	23	advmod	23:advmod	_
+22	seriam	ser	AUX	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	23	aux:pass	23:aux:pass	_
+23	divulgadas	divulgar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	14	acl:relcl	14:acl:relcl	_
+24	em	em	ADP	_	_	26	case	26:case	_
+25	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	estudo	estudo	NOUN	_	Gender=Masc|Number=Sing	23	obl	23:obl:em	_
+27	póstumo	póstumo	ADJ	_	Gender=Masc|Number=Sing	26	amod	26:amod	SpaceAfter=No
+28	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0013
+# text = O Hospital das Clínicas da Faculdade de Medicina da Universidade de São Paulo (USP) emitiu uma nota oficial: Lamentamos profundamente o falecimento do Prof.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Hospital	Hospital	PROPN	_	_	20	nsubj	20:nsubj	_
+3-4	das	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	5:det	_
+5	Clínicas	Clínicas	PROPN	_	_	2	flat:name	2:flat:name	_
+6-7	da	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	Faculdade	Faculdade	PROPN	_	_	2	nmod	2:nmod:de	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	Medicina	Medicina	PROPN	_	_	8	flat:name	8:flat:name	_
+11-12	da	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	Universidade	Universidade	PROPN	_	_	8	flat:name	8:flat:name	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	São	São	PROPN	_	_	13	flat:name	13:flat:name	_
+16	Paulo	Paulo	PROPN	_	_	13	flat:name	13:flat:name	_
+17	(	(	PUNCT	_	_	18	punct	18:punct	SpaceAfter=No
+18	USP	USP	PROPN	_	_	13	parataxis	13:parataxis	SpaceAfter=No
+19	)	)	PUNCT	_	_	18	punct	18:punct	_
+20	emitiu	emitir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+21	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	nota	nota	NOUN	_	Gender=Fem|Number=Sing	20	obj	20:obj	_
+23	oficial	oficial	ADJ	_	Number=Sing	22	amod	22:amod	SpaceAfter=No
+24	:	:	PUNCT	_	_	25	punct	25:punct	_
+25	Lamentamos	lamentar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	20	parataxis	20:parataxis	_
+26	profundamente	profundamente	ADV	_	_	25	advmod	25:advmod	_
+27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	falecimento	falecimento	NOUN	_	Gender=Masc|Number=Sing	25	obj	25:obj	_
+29-30	do	_	_	_	_	_	_	_	_
+29	de	de	ADP	_	_	31	case	31:case	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+31	Prof.	Prof.	PUNCT	_	_	20	punct	20:punct	_
+
+# sent_id = S0015
+# text = Dr.
+1	Dr.	Dr.	PUNCT	_	_	0	root	0:root	_
+
+# sent_id = S0017
+# text = Anthony Wong, um brilhante médico e pesquisador que dedicou sua vida ao Instituto da Criança e Adolescente, onde liderava o Centro de Assistência Toxicológica (CEATOX).
+1	Anthony	Anthony	PROPN	_	_	0	root	0:root	_
+2	Wong	Wong	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+5	brilhante	brilhante	ADJ	_	Number=Sing	6	amod	6:amod	_
+6	médico	médico	NOUN	_	Gender=Masc|Number=Sing	1	appos	1:appos|10:nsubj	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	pesquisador	pesquisador	NOUN	_	Gender=Masc|Number=Sing	6	conj	1:appos|6:conj:e|10:nsubj	_
+9	que	que	PRON	_	PronType=Rel	10	nsubj	6:ref|8:ref	_
+10	dedicou	dedicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	acl:relcl	6:acl:relcl|8:acl:relcl	_
+11	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	12	det	12:det	_
+12	vida	vida	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+13-14	ao	_	_	_	_	_	_	_	_
+13	a	a	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	Instituto	Instituto	PROPN	_	_	10	obl	10:obl:a|23:obl	_
+16-17	da	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	Criança	Criança	PROPN	_	_	15	flat:name	15:flat:name	_
+19	e	e	CCONJ	_	_	20	cc	20:cc	_
+20	Adolescente	Adolescente	PROPN	_	_	15	flat:name	15:flat:name	SpaceAfter=No
+21	,	,	PUNCT	_	_	23	punct	23:punct	_
+22	onde	onde	ADV	_	_	23	advmod	15:ref	_
+23	liderava	liderar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	15	acl:relcl	15:acl:relcl	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	Centro	Centro	PROPN	_	_	23	obj	23:obj	_
+26	de	de	ADP	_	_	27	case	27:case	_
+27	Assistência	Assistência	PROPN	_	_	25	flat:name	25:flat:name	_
+28	Toxicológica	Toxicológica	PROPN	_	_	25	flat:name	25:flat:name	_
+29	(	(	PUNCT	_	_	30	punct	30:punct	SpaceAfter=No
+30	CEATOX	CEATOX	PROPN	_	_	25	appos	25:appos	SpaceAfter=No
+31	)	)	PUNCT	_	_	30	punct	30:punct	SpaceAfter=No
+32	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0019
+# text = Seu legado e contribuições à saúde pública serão sempre lembrados.
+1	Seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	det	2:det	_
+2	legado	legado	NOUN	_	Gender=Masc|Number=Sing	11	nsubj:pass	11:nsubj:pass	_
+3	e	e	CCONJ	_	_	4	cc	4:cc	_
+4	contribuições	contribuição	NOUN	_	Gender=Fem|Number=Plur	2	conj	2:conj:e|11:nsubj:pass	_
+5-6	à	_	_	_	_	_	_	_	_
+5	a	a	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:a	_
+8	pública	público	ADJ	_	Gender=Fem|Number=Sing	7	amod	7:amod	_
+9	serão	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	11	aux:pass	11:aux:pass	_
+10	sempre	sempre	ADV	_	_	11	advmod	11:advmod	_
+11	lembrados	lembrar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	SpaceAfter=No
+12	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0023
+# text = Amigos e colegas de Wong afirmam que ele estava prestes a receber um prêmio internacional pelo seu trabalho em toxicologia e que sua pesquisa sobre hidroxicloroquina poderia mudar o rumo da pandemia.
+1	Amigos	amigo	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	6:nsubj	_
+2	e	e	CCONJ	_	_	3	cc	3:cc	_
+3	colegas	colega	NOUN	_	Gender=Masc|Number=Plur	1	conj	1:conj:e|6:nsubj	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	Wong	Wong	PROPN	_	_	1	nmod	1:nmod:de|3:nmod:de	_
+6	afirmam	afirmar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	que	que	SCONJ	_	_	10	mark	10:mark	_
+8	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	nsubj	10:nsubj	_
+9	estava	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	10	cop	10:cop	_
+10	prestes	preste	ADJ	_	Number=Plur	6	ccomp	6:ccomp	_
+11	a	a	ADP	_	_	12	mark	12:mark	_
+12	receber	receber	VERB	_	VerbForm=Inf	10	acl	10:acl:a	_
+13	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	prêmio	prêmio	NOUN	_	Gender=Masc|Number=Sing	12	obj	12:obj	_
+15	internacional	internacional	ADJ	_	Number=Sing	14	amod	14:amod	_
+16-17	pelo	_	_	_	_	_	_	_	_
+16	por	por	ADP	_	_	19	case	19:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+18	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	19	det	19:det	_
+19	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:por	_
+20	em	em	ADP	_	_	21	case	21:case	_
+21	toxicologia	toxicologia	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:em	_
+22	e	e	CCONJ	_	_	28	cc	28:cc	_
+23	que	que	SCONJ	_	_	28	mark	28:mark	_
+24	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	25	det	25:det	_
+25	pesquisa	pesquisa	NOUN	_	Gender=Fem|Number=Sing	28	nsubj	28:nsubj|29:nsubj	_
+26	sobre	sobre	ADP	_	_	27	case	27:case	_
+27	hidroxicloroquina	hidroxicloroquina	NOUN	_	Gender=Fem|Number=Sing	25	nmod	25:nmod:sobre	_
+28	poderia	poder	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	10	conj	6:ccomp|10:conj:e	_
+29	mudar	mudar	VERB	_	VerbForm=Inf	28	xcomp	28:xcomp	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	rumo	rumo	NOUN	_	Gender=Masc|Number=Sing	29	obj	29:obj	_
+32-33	da	_	_	_	_	_	_	_	_
+32	de	de	ADP	_	_	34	case	34:case	_
+33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	34:det	_
+34	pandemia	pandemia	NOUN	_	Gender=Fem|Number=Sing	31	nmod	31:nmod:de	SpaceAfter=No
+35	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0025
+# text = O Instituto Trata Brasil, do qual Wong era embaixador, destacou seu compromisso com a saúde e o bem-estar da população.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Instituto	Instituto	PROPN	_	_	13	nsubj	11:nmod:de|13:nsubj	_
+3	Trata	Trata	PROPN	_	_	2	flat:name	2:flat:name	_
+4	Brasil	Brasil	PROPN	_	_	2	flat:name	2:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	11	punct	11:punct	_
+6-7	do	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	o	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	11	nmod	2:ref|11:nmod	_
+8	qual	qual	PRON	_	Number=Sing|PronType=Rel	7	fixed	7:fixed	_
+9	Wong	Wong	PROPN	_	_	11	nsubj	11:nsubj	_
+10	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	11	cop	11:cop	_
+11	embaixador	embaixador	NOUN	_	Gender=Masc|Number=Sing	2	acl:relcl	2:acl:relcl	SpaceAfter=No
+12	,	,	PUNCT	_	_	11	punct	11:punct	_
+13	destacou	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	15	det	15:det	_
+15	compromisso	compromisso	NOUN	_	Gender=Masc|Number=Sing	13	obj	13:obj	_
+16	com	com	ADP	_	_	18	case	18:case|21:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:com	_
+19	e	e	CCONJ	_	_	21	cc	21:cc	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	bem-estar	bem-estar	NOUN	_	Gender=Masc|Number=Sing	18	conj	15:nmod:com|18:conj:e	_
+22-23	da	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	população	população	NOUN	_	Gender=Fem|Number=Sing	21	nmod	21:nmod:de	SpaceAfter=No
+25	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0027
+# text = A família do Dr.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	família	família	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	Dr.	Dr.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0029
+# text = Wong pediu privacidade neste momento difícil e prometeu continuar seu trabalho, especialmente em divulgar as alegadas evidências sobre a hidroxicloroquina.
+1	Wong	Wong	PROPN	_	_	2	nsubj	2:nsubj|9:nsubj|10:nsubj	_
+2	pediu	pedir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	privacidade	privacidade	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+4-5	neste	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	6	det	6:det	_
+6	momento	momento	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:em	_
+7	difícil	difícil	ADJ	_	Number=Sing	6	amod	6:amod	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	prometeu	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	2:conj:e	_
+10	continuar	continuar	VERB	_	VerbForm=Inf	9	xcomp	9:xcomp	_
+11	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	12	det	12:det	_
+12	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	10	obj	10:obj	SpaceAfter=No
+13	,	,	PUNCT	_	_	16	punct	16:punct	_
+14	especialmente	especialmente	ADV	_	_	16	advmod	16:advmod	_
+15	em	em	ADP	_	_	16	mark	16:mark	_
+16	divulgar	divulgar	VERB	_	VerbForm=Inf	10	advcl	10:advcl:em	_
+17	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	19:det	_
+18	alegadas	alegado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	19	amod	19:amod	_
+19	evidências	evidência	NOUN	_	Gender=Fem|Number=Plur	16	obj	16:obj	_
+20	sobre	sobre	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	hidroxicloroquina	hidroxicloroquina	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:sobre	SpaceAfter=No
+23	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0031
+# text = A morte de Wong já está gerando debates acalorados nas redes sociais sobre as políticas de saúde e a eficácia das drogas contra a COVID-19.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	morte	morte	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Wong	Wong	PROPN	_	_	2	nmod	2:nmod:de	_
+5	já	já	ADV	_	_	7	advmod	7:advmod	_
+6	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	7:aux	_
+7	gerando	gerar	VERB	_	VerbForm=Ger	0	root	0:root	_
+8	debates	debate	NOUN	_	Gender=Masc|Number=Plur	7	obj	7:obj	_
+9	acalorados	acalorado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	8	amod	8:amod	_
+10-11	nas	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	12:det	_
+12	redes	rede	NOUN	_	Gender=Fem|Number=Plur	9	obl	9:obl:em	_
+13	sociais	social	ADJ	_	Number=Plur	12	amod	12:amod	_
+14	sobre	sobre	ADP	_	_	16	case	16:case|21:case	_
+15	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	16:det	_
+16	políticas	política	NOUN	_	Gender=Fem|Number=Plur	8	nmod	8:nmod:sobre	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:de	_
+19	e	e	CCONJ	_	_	21	cc	21:cc	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	eficácia	eficácia	NOUN	_	Gender=Fem|Number=Sing	16	conj	8:nmod:sobre|16:conj:e	_
+22-23	das	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	24:det	_
+24	drogas	droga	NOUN	_	Gender=Fem|Number=Plur	21	nmod	21:nmod:de	_
+25	contra	contra	ADP	_	_	27	case	27:case	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	COVID-19	COVID-19	PROPN	_	_	21	nmod	21:nmod:contra	SpaceAfter=No
+28	.	.	PUNCT	_	_	7	punct	7:punct	_

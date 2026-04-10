@@ -1,0 +1,212 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = cacique serere morreu após ter parada cardíaca na prisão morreu o cacique tsererê xavante, alguém vai ter problema.
+1	cacique	cacique	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+2	serere	serere	X	_	Foreign=Yes	1	nmod	1:nmod	_
+3	morreu	morrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	após	após	ADP	_	_	5	mark	5:mark	_
+5	ter	ter	VERB	_	VerbForm=Inf	3	advcl	3:advcl:após	_
+6	parada	parada	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+7	cardíaca	cardíaco	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	_
+8-9	na	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	prisão	prisão	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:em	_
+11	morreu	morrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	advcl	3:advcl	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	cacique	cacique	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	11:nsubj	_
+14	tsererê	tsererê	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod	_
+15	xavante	xavante	ADJ	_	Number=Sing	14	amod	14:amod	SpaceAfter=No
+16	,	,	PUNCT	_	_	19	punct	19:punct	_
+17	alguém	alguém	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	19	nsubj	19:nsubj	_
+18	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux	19:aux	_
+19	ter	ter	VERB	_	VerbForm=Inf	3	parataxis	3:parataxis	_
+20	problema	problema	NOUN	_	Gender=Masc|Number=Sing	19	obj	19:obj	SpaceAfter=No
+21	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = , cacique tsererê xavante pode estar morto.
+1	,	,	PUNCT	_	_	2	punct	2:punct	_
+2	cacique	cacique	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj|7:nsubj	_
+3	tsererê	tsererê	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod	_
+4	xavante	xavante	ADJ	_	Number=Sing	2	amod	2:amod	_
+5	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	estar	estar	AUX	_	VerbForm=Inf	7	cop	7:cop	_
+7	morto	morto	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	5	xcomp	5:xcomp	SpaceAfter=No
+8	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0005
+# text = guerreiro e gozando de plena saúde foi preso e agora teve um pcr.
+1	guerreiro	guerreiro	ADJ	_	Gender=Masc|Number=Sing	8	nsubj:pass	8:nsubj:pass|11:nsubj	_
+2	e	e	CCONJ	_	_	3	cc	3:cc	_
+3	gozando	gozar	VERB	_	VerbForm=Ger	1	conj	1:conj:e|8:nsubj:pass|11:nsubj	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	plena	pleno	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	_
+6	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:de	_
+7	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	aux:pass	8:aux:pass	_
+8	preso	prender	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+9	e	e	CCONJ	_	_	11	cc	11:cc	_
+10	agora	agora	ADV	_	_	11	advmod	11:advmod	_
+11	teve	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	conj	8:conj:e	_
+12	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	pcr	pcr	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj	SpaceAfter=No
+14	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0007
+# text = suspeita de que pode ter sido envenenado ou espancado deve ser averiguada imediatamente.
+1	suspeita	suspeita	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	10:nsubj|12:nsubj:pass	_
+2	de	de	ADP	_	ExtPos=SCONJ	4	mark	4:mark	_
+3	que	que	SCONJ	_	_	2	fixed	2:fixed	_
+4	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl	1:acl:de_que	_
+5	ter	ter	AUX	_	VerbForm=Inf	7	aux	7:aux	_
+6	sido	ser	AUX	_	Gender=Masc|Number=Sing|VerbForm=Part	7	aux:pass	7:aux:pass|9:aux:pass	_
+7	envenenado	envenenar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	4	xcomp	4:xcomp	_
+8	ou	ou	CCONJ	_	_	9	cc	9:cc	_
+9	espancado	espancar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	7	conj	4:xcomp|7:conj:ou	_
+10	deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+11	ser	ser	AUX	_	VerbForm=Inf	12	aux:pass	12:aux:pass	_
+12	averiguada	averiguar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	10	xcomp	10:xcomp	_
+13	imediatamente	imediatamente	ADV	_	_	12	advmod	12:advmod	SpaceAfter=No
+14	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0009
+# text = onde vamos parar ?
+1	onde	onde	ADV	_	_	3	advmod	3:advmod	_
+2	vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	aux	3:aux	_
+3	parar	parar	VERB	_	VerbForm=Inf	0	root	0:root	_
+4	?	?	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0011
+# text = dificuldade dos advogados verem ele alimenta especulação., está circulando que o cacique tsereré, preso a pedido de alexandre de moraes, teve uma parada cardíaca.cade o ministério dos povos indígenas e as milhares de ongs que dizem defender os indígenas?
+1	dificuldade	dificuldade	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	12:nsubj	_
+2-3	dos	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	5	mark	5:mark	_
+3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	4:det	_
+4	advogados	advogado	NOUN	_	Gender=Masc|Number=Plur	5	nsubj	5:nsubj	_
+5	verem	ver	VERB	_	Number=Plur|Person=3|VerbForm=Inf	1	acl	1:acl:de	_
+6	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	obj	5:obj|7:nsubj	_
+7	alimenta	alimentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	xcomp	5:xcomp	_
+8	especulação	especulação	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	SpaceAfter=No
+9	.	.	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+10	,	,	PUNCT	_	_	1	punct	1:punct	_
+11	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux	12:aux	_
+12	circulando	circular	VERB	_	VerbForm=Ger	0	root	0:root	_
+13	que	que	SCONJ	_	_	26	mark	26:mark	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	cacique	cacique	NOUN	_	Gender=Masc|Number=Sing	26	nsubj	26:nsubj|42:nsubj|43:nsubj	_
+16	tsereré	tsereré	NOUN	_	_	15	nmod	15:nmod	SpaceAfter=No
+17	,	,	PUNCT	_	_	18	punct	18:punct	_
+18	preso	prender	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	15	acl	15:acl	_
+19	a	a	ADP	_	_	20	case	20:case	_
+20	pedido	pedido	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:a	_
+21	de	de	ADP	_	_	22	case	22:case	_
+22	alexandre	alexandre	NOUN	_	Number=Sing	20	nmod	20:nmod:de	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	moraes	moraes	NOUN	_	Gender=Fem|Number=Sing	22	nmod	22:nmod:de	SpaceAfter=No
+25	,	,	PUNCT	_	_	18	punct	18:punct	_
+26	teve	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	ccomp	12:ccomp	_
+27	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	parada	parada	NOUN	_	Gender=Fem|Number=Sing	26	obj	26:obj	_
+29	cardíaca.cade	cardíaca.cade	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	nmod	31:nmod	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	ministério	ministério	NOUN	_	Gender=Masc|Number=Sing	26	nsubj	26:nsubj|42:nsubj|43:nsubj	_
+32-33	dos	_	_	_	_	_	_	_	_
+32	de	de	ADP	_	_	34	case	34:case	_
+33	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	34	det	34:det	_
+34	povos	povo	NOUN	_	Gender=Masc|Number=Plur	31	nmod	31:nmod:de	_
+35	indígenas	indígena	ADJ	_	Number=Plur	34	amod	34:amod	_
+36	e	e	CCONJ	_	_	38	cc	38:cc	_
+37	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	38	det	38:det	_
+38	milhares	milhar	NOUN	_	Gender=Masc|Number=Plur	31	conj	26:nsubj|31:conj:e|42:nsubj|43:nsubj	_
+39	de	de	ADP	_	_	40	case	40:case	_
+40	ongs	ong	NOUN	_	Foreign=Yes|Gender=Fem|Number=Plur	38	nmod	38:nmod:de	_
+41	que	que	PRON	_	PronType=Rel	42	nsubj	38:ref	_
+42	dizem	dizer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	38	acl:relcl	38:acl:relcl	_
+43	defender	defender	VERB	_	VerbForm=Inf	42	xcomp	42:xcomp	_
+44	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	45	det	45:det	_
+45	indígenas	indígena	NOUN	_	Number=Plur	43	obj	43:obj	SpaceAfter=No
+46	?	?	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0013
+# text = , socorro deus salve o brasil.
+1	,	,	PUNCT	_	_	2	punct	2:punct	_
+2	socorro	socorro	NOUN	_	Gender=Masc|Number=Sing	4	parataxis	4:parataxis	_
+3	deus	deus	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod	_
+4	salve	salvar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	brasil	brasil	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	SpaceAfter=No
+7	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0015
+# text = o cacique pastor tserere foi morto injustamente.
+1	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	cacique	cacique	NOUN	_	Gender=Masc|Number=Sing	6	nsubj:pass	6:nsubj:pass	_
+3	pastor	pastor	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod	_
+4	tserere	tserere	X	_	Foreign=Yes	3	nmod	3:nmod	_
+5	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	aux:pass	6:aux:pass	_
+6	morto	morto	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+7	injustamente	injustamente	ADV	_	_	6	advmod	6:advmod	SpaceAfter=No
+8	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0017
+# text = morreu índio , ainda nao esta confirmado, mas acho que é verdade.
+1	morreu	morrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	índio	índio	NOUN	_	Gender=Masc|Number=Sing	1	nsubj	1:nsubj	_
+3	,	,	PUNCT	_	_	7	punct	7:punct	_
+4	ainda	ainda	ADV	_	_	7	advmod	7:advmod	_
+5	nao	nao	ADV	_	_	7	advmod	7:advmod	_
+6	esta	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+7	confirmado	confirmado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	1	parataxis	1:parataxis	SpaceAfter=No
+8	,	,	PUNCT	_	_	10	punct	10:punct	_
+9	mas	mas	CCONJ	_	_	10	cc	10:cc	_
+10	acho	achar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	conj	1:conj:mas	_
+11	que	que	SCONJ	_	_	13	mark	13:mark	_
+12	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	13:cop	_
+13	verdade	verdade	NOUN	_	Gender=Fem|Number=Sing	10	ccomp	10:ccomp	SpaceAfter=No
+14	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0019
+# text = morreu o cacique serere.
+1	morreu	morrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	cacique	cacique	NOUN	_	Gender=Masc|Number=Sing	1	nsubj	1:nsubj	_
+4	serere	serere	X	_	Foreign=Yes	3	nmod	3:nmod	SpaceAfter=No
+5	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0021
+# text = se for mesmo vdd, mostra que só a censura não está sendo suficiente.
+1	se	se	SCONJ	_	_	4	mark	4:mark	_
+2	for	for	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	cop	4:cop	_
+3	mesmo	mesmo	ADV	_	_	4	advmod	4:advmod	_
+4	vdd	vdd	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	6	advcl	6:advcl:se	SpaceAfter=No
+5	,	,	PUNCT	_	_	4	punct	4:punct	_
+6	mostra	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	que	que	SCONJ	_	_	14	mark	14:mark	_
+8	só	só	ADV	_	_	10	advmod	10:advmod	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	censura	censura	NOUN	_	Gender=Fem|Number=Sing	14	nsubj	14:nsubj	_
+11	não	não	ADV	_	_	14	advmod	14:advmod	_
+12	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux	14:aux	_
+13	sendo	ser	AUX	_	VerbForm=Ger	14	cop	14:cop	_
+14	suficiente	suficiente	ADJ	_	Number=Sing	6	ccomp	6:ccomp	SpaceAfter=No
+15	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0023
+# text = um reporter de direita já ficou paraplegico, agora outro que morre em circunstancias muito estranhas.
+1	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	reporter	reporter	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj|7:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	direita	direita	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+5	já	já	ADV	_	_	6	advmod	6:advmod	_
+6	ficou	ficar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	paraplegico	paraplegico	ADJ	_	Gender=Masc|Number=Sing	6	xcomp	6:xcomp	SpaceAfter=No
+8	,	,	PUNCT	_	_	10	punct	10:punct	_
+9	agora	agora	ADV	_	_	10	advmod	10:advmod	_
+10	outro	outro	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	6	conj	6:conj|12:nsubj	_
+11	que	que	PRON	_	PronType=Rel	12	nsubj	10:ref	_
+12	morre	morrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	acl:relcl	10:acl:relcl	_
+13	em	em	ADP	_	_	14	case	14:case	_
+14	circunstancias	circunstancia	NOUN	_	Gender=Fem|Number=Plur	12	obl	12:obl:em	_
+15	muito	muito	ADV	_	_	16	advmod	16:advmod	_
+16	estranhas	estranho	ADJ	_	Gender=Fem|Number=Plur	14	amod	14:amod	SpaceAfter=No
+17	.	.	PUNCT	_	_	6	punct	6:punct	_

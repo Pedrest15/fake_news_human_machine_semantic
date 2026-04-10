@@ -1,0 +1,340 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Quebra de sigilo bancário de Lula revela transações milionárias com empreiteiras.
+1	Quebra	quebra	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	sigilo	sigilo	NOUN	_	Gender=Masc|Number=Sing	1	nmod	1:nmod:de	_
+4	bancário	bancário	ADJ	_	Gender=Masc|Number=Sing	3	amod	3:amod	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	Lula	Lula	PROPN	_	_	3	nmod	3:nmod:de	_
+7	revela	revelar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	transações	transação	NOUN	_	Gender=Fem|Number=Plur	7	obj	7:obj	_
+9	milionárias	milionário	ADJ	_	Gender=Fem|Number=Plur	8	amod	8:amod	_
+10	com	com	ADP	_	_	11	case	11:case	_
+11	empreiteiras	empreiteiro	NOUN	_	Gender=Fem|Number=Plur	8	nmod	8:nmod:com	SpaceAfter=No
+12	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0003
+# text = Lula faturou [apenas através da LILS] mais de R$ 27 milhões desde que ele deixou a presidência da República.
+1	Lula	Lula	PROPN	_	_	2	nsubj	2:nsubj	_
+2	faturou	faturar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	[	[	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+4	apenas	apenas	ADV	_	_	5	advmod	5:advmod	_
+5	através	através	ADV	_	_	2	advmod	2:advmod	_
+6-7	da	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	LILS	LILS	PROPN	_	_	5	obl	5:obl:de	SpaceAfter=No
+9	]	]	PUNCT	_	_	5	punct	5:punct	_
+10	mais	mais	ADV	_	ExtPos=ADV	13	advmod	13:advmod	_
+11	de	de	ADP	_	_	10	fixed	10:fixed	_
+12	R$	R$	SYM	_	_	14	nmod	14:nmod	_
+13	27	27	NUM	_	NumType=Card	14	nummod	14:nummod	_
+14	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	2	obj	2:obj	_
+15	desde	desde	ADP	_	ExtPos=SCONJ	18	mark	18:mark	_
+16	que	que	SCONJ	_	_	15	fixed	15:fixed	_
+17	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	18	nsubj	18:nsubj	_
+18	deixou	deixar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	advcl	2:advcl:desde_que	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	presidência	presidência	NOUN	_	Gender=Fem|Number=Sing	18	obj	18:obj	_
+21-22	da	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	República	República	PROPN	_	_	20	nmod	20:nmod:de	SpaceAfter=No
+24	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = Boa parte do dinheiro veio de empreiteiras investigadas na Lava Jato, como Odebrecht (R$ 2, 8 milhões), Andrade Gutierrez (R$ 1, 5 milhão) e OAS (R$ 1, 4 milhão).
+1	Boa	bom	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	_
+2	parte	parte	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	_
+6	veio	vir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	empreiteiras	empreiteiro	NOUN	_	Gender=Fem|Number=Plur	6	obl	6:obl:de	_
+9	investigadas	investigar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	8	acl	8:acl	_
+10-11	na	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	Lava	Lava	PROPN	_	_	9	obl	9:obl:em	_
+13	Jato	Jato	PROPN	_	_	12	flat:name	12:flat:name	SpaceAfter=No
+14	,	,	PUNCT	_	_	16	punct	16:punct	_
+15	como	como	ADP	_	_	16	case	16:case|25:case|35:case	_
+16	Odebrecht	Odebrecht	PROPN	_	_	8	nmod	8:nmod:como	_
+17	(	(	PUNCT	_	_	18	punct	18:punct	SpaceAfter=No
+18	R$	R$	SYM	_	_	22	nmod	22:nmod	_
+19	2	2	NUM	_	NumType=Card	22	nummod	22:nummod	SpaceAfter=No
+20	,	,	PUNCT	_	_	22	punct	22:punct	_
+21	8	8	NUM	_	NumType=Card	22	nummod	22:nummod	_
+22	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	16	appos	16:appos	SpaceAfter=No
+23	)	)	PUNCT	_	_	22	punct	22:punct	SpaceAfter=No
+24	,	,	PUNCT	_	_	25	punct	25:punct	_
+25	Andrade	Andrade	PROPN	_	_	16	conj	8:nmod:como|16:conj:e	_
+26	Gutierrez	Gutierrez	PROPN	_	_	25	flat:name	25:flat:name	_
+27	(	(	PUNCT	_	_	28	punct	28:punct	SpaceAfter=No
+28	R$	R$	SYM	_	_	22	nmod	22:nmod	_
+29	1	1	NUM	_	NumType=Card	32	nummod	32:nummod	SpaceAfter=No
+30	,	,	PUNCT	_	_	32	punct	32:punct	_
+31	5	5	NUM	_	NumType=Card	32	nummod	32:nummod	_
+32	milhão	milhão	NOUN	_	Gender=Masc|Number=Sing	25	parataxis	25:parataxis	SpaceAfter=No
+33	)	)	PUNCT	_	_	32	punct	32:punct	_
+34	e	e	CCONJ	_	_	35	cc	35:cc	_
+35	OAS	OAS	PROPN	_	_	16	conj	8:nmod:como|16:conj:e	_
+36	(	(	PUNCT	_	_	37	punct	37:punct	SpaceAfter=No
+37	R$	R$	SYM	_	_	35	parataxis	35:parataxis	_
+38	1	1	NUM	_	NumType=Card	41	nummod	41:nummod	SpaceAfter=No
+39	,	,	PUNCT	_	_	41	punct	41:punct	_
+40	4	4	NUM	_	NumType=Card	41	nummod	41:nummod	_
+41	milhão	milhão	NOUN	_	Gender=Masc|Number=Sing	35	parataxis	35:parataxis	SpaceAfter=No
+42	)	)	PUNCT	_	_	41	punct	41:punct	SpaceAfter=No
+43	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0007
+# text = Essa é apenas uma pequena amostra da movimentação financeira do ex-presidente.
+1	Essa	esse	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	6	nsubj	6:nsubj	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+3	apenas	apenas	ADV	_	_	6	advmod	6:advmod	_
+4	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+5	pequena	pequeno	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	_
+6	amostra	amostra	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	movimentação	movimentação	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de	_
+10	financeira	financeiro	ADJ	_	Gender=Fem|Number=Sing	9	amod	9:amod	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	ex-presidente	ex-presidente	NOUN	_	Number=Sing	9	nmod	9:nmod:de	SpaceAfter=No
+14	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0009
+# text = Os dados são referentes apenas a conta bancária da LILS e apontam a a destinação de parte dos recursos.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	dados	dado	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	4:nsubj|13:nsubj	_
+3	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+4	referentes	referente	ADJ	_	Number=Plur	0	root	0:root	_
+5	apenas	apenas	ADV	_	_	7	advmod	7:advmod	_
+6	a	a	ADP	_	_	7	case	7:case	_
+7	conta	conta	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:a	_
+8	bancária	bancário	ADJ	_	Gender=Fem|Number=Sing	7	amod	7:amod	_
+9-10	da	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	LILS	LILS	PROPN	_	_	7	nmod	7:nmod:de	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	apontam	apontar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	conj	4:conj:e	_
+14	a	a	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	destinação	destinação	NOUN	_	Gender=Fem|Number=Sing	13	obl	13:obl:a	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	parte	parte	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:de	_
+19-20	dos	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	21:det	_
+21	recursos	recurso	NOUN	_	Gender=Masc|Number=Plur	18	nmod	18:nmod:de	SpaceAfter=No
+22	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0011
+# text = O relatório aponta que a LILS (empresa de palestras do ex-presidente) aplicou R$ 12, 9 milhões, fez um plano de previdência privada no valor de R$ 5 milhões, recolheu R$ 3 milhões em impostos e fez transferências de R$ 4, 3 milhões.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	relatório	relatório	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	aponta	apontar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	15	mark	15:mark|22:mark|36:mark|43:mark	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	LILS	LILS	PROPN	_	_	15	nsubj	15:nsubj|22:nsubj|36:nsubj|43:nsubj	_
+7	(	(	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	empresa	empresa	NOUN	_	Gender=Fem|Number=Sing	6	appos	6:appos	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	palestras	palestra	NOUN	_	Gender=Fem|Number=Plur	8	nmod	8:nmod:de	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	ex-presidente	ex-presidente	NOUN	_	Number=Sing	10	nmod	10:nmod:de	SpaceAfter=No
+14	)	)	PUNCT	_	_	8	punct	8:punct	_
+15	aplicou	aplicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	ccomp	3:ccomp	_
+16	R$	R$	SYM	_	_	20	nmod	20:nmod	_
+17	12	12	NUM	_	NumType=Card	20	nummod	20:nummod	SpaceAfter=No
+18	,	,	PUNCT	_	_	20	punct	20:punct	_
+19	9	9	NUM	_	NumType=Card	20	nummod	20:nummod	_
+20	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	15	obj	15:obj	SpaceAfter=No
+21	,	,	PUNCT	_	_	22	punct	22:punct	_
+22	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	conj	3:ccomp|15:conj:e	_
+23	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	plano	plano	NOUN	_	Gender=Masc|Number=Sing	22	obj	22:obj	_
+25	de	de	ADP	_	_	26	case	26:case	_
+26	previdência	previdência	NOUN	_	Gender=Fem|Number=Sing	24	nmod	24:nmod:de	_
+27	privada	privado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	26	amod	26:amod	_
+28-29	no	_	_	_	_	_	_	_	_
+28	em	em	ADP	_	_	30	case	30:case	_
+29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	30:det	_
+30	valor	valor	NOUN	_	Gender=Masc|Number=Sing	24	nmod	24:nmod:em	_
+31	de	de	ADP	_	_	34	case	34:case	_
+32	R$	R$	SYM	_	_	34	nmod	34:nmod	_
+33	5	5	NUM	_	NumType=Card	34	nummod	34:nummod	_
+34	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	30	nmod	30:nmod:de	SpaceAfter=No
+35	,	,	PUNCT	_	_	36	punct	36:punct	_
+36	recolheu	recolher	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	conj	3:ccomp|15:conj:e	_
+37	R$	R$	SYM	_	_	39	nmod	39:nmod	_
+38	3	3	NUM	_	NumType=Card	39	nummod	39:nummod	_
+39	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	36	obj	36:obj	_
+40	em	em	ADP	_	_	41	case	41:case	_
+41	impostos	imposto	NOUN	_	Gender=Masc|Number=Plur	36	obl	36:obl:em	_
+42	e	e	CCONJ	_	_	43	cc	43:cc	_
+43	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	conj	3:ccomp|15:conj:e	_
+44	transferências	transferência	NOUN	_	Gender=Fem|Number=Plur	43	obj	43:obj	_
+45	de	de	ADP	_	_	46	case	46:case	_
+46	R$	R$	SYM	_	_	50	nmod	50:nmod:de	_
+47	4	4	NUM	_	NumType=Card	50	nummod	50:nummod	SpaceAfter=No
+48	,	,	PUNCT	_	_	50	punct	50:punct	_
+49	3	3	NUM	_	NumType=Card	50	nummod	50:nummod	_
+50	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	44	nmod	44:nmod	SpaceAfter=No
+51	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0013
+# text = Os dados sobre a movimentação milionária foram enviados pelo Coaf (Conselho de Controle de Atividades Financeiras) à Polícia Federal e aos integrantes da força-tarefa da Lava-Jato.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	dados	dado	NOUN	_	Gender=Masc|Number=Plur	8	nsubj:pass	8:nsubj:pass	_
+3	sobre	sobre	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	movimentação	movimentação	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:sobre	_
+6	milionária	milionário	ADJ	_	Gender=Fem|Number=Sing	5	amod	5:amod	_
+7	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	8	aux:pass	8:aux:pass	_
+8	enviados	enviar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	_
+9-10	pelo	_	_	_	_	_	_	_	_
+9	por	por	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	Coaf	Coaf	PROPN	_	_	8	obl:agent	8:obl:agent	_
+12	(	(	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+13	Conselho	Conselho	PROPN	_	_	11	appos	11:appos	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	Controle	Controle	PROPN	_	_	13	flat:name	13:flat:name	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	Atividades	Atividades	PROPN	_	_	13	flat:name	13:flat:name	_
+18	Financeiras	Financeiras	PROPN	_	_	13	flat:name	13:flat:name	SpaceAfter=No
+19	)	)	PUNCT	_	_	13	punct	13:punct	_
+20-21	à	_	_	_	_	_	_	_	_
+20	a	a	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	Polícia	Polícia	PROPN	_	_	8	obl	8:obl:a	_
+23	Federal	Federal	PROPN	_	_	22	flat:name	22:flat:name	_
+24	e	e	CCONJ	_	_	27	cc	27:cc	_
+25-26	aos	_	_	_	_	_	_	_	_
+25	a	a	ADP	_	_	27	case	27:case	_
+26	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	27:det	_
+27	integrantes	integrante	NOUN	_	Number=Plur	22	conj	8:obl:a|22:conj:e	_
+28-29	da	_	_	_	_	_	_	_	_
+28	de	de	ADP	_	_	30	case	30:case	_
+29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	força-tarefa	força-tarefa	NOUN	_	Gender=Fem|Number=Sing	27	nmod	27:nmod:de	_
+31-32	da	_	_	_	_	_	_	_	_
+31	de	de	ADP	_	_	33	case	33:case	_
+32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	33:det	_
+33	Lava-Jato	Lava-Jato	PROPN	_	_	30	nmod	30:nmod:de	SpaceAfter=No
+34	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0015
+# text = Após as revelações de sua conta milionária, Lula entrou em pânico e passou toda a noite em claro.
+1	Após	após	ADP	_	_	3	case	3:case	_
+2	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	3:det	_
+3	revelações	revelação	NOUN	_	Gender=Fem|Number=Plur	10	obl	10:obl:após	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	6	det	6:det	_
+6	conta	conta	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:de	_
+7	milionária	milionário	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	SpaceAfter=No
+8	,	,	PUNCT	_	_	3	punct	3:punct	_
+9	Lula	Lula	PROPN	_	_	10	nsubj	10:nsubj|14:nsubj	_
+10	entrou	entrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+11	em	em	ADP	_	_	12	case	12:case	_
+12	pânico	pânico	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:em	_
+13	e	e	CCONJ	_	_	14	cc	14:cc	_
+14	passou	passar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	conj	10:conj:e	_
+15	toda	todo	DET	_	Gender=Fem|Number=Sing|PronType=Ind	17	det	17:det	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	noite	noite	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	_
+18	em	em	ADP	_	_	19	case	19:case	_
+19	claro	claro	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:em	SpaceAfter=No
+20	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0017
+# text = Fez dezenas de ligações durante a madrugada e conseguiu marcar uma reunião de emergência com a presidente Dilma Rousseff na manhã deste sábado.
+1	Fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	dezenas	dezena	NOUN	_	Gender=Fem|Number=Plur	1	obj	1:obj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	ligações	ligação	NOUN	_	Gender=Fem|Number=Plur	2	nmod	2:nmod:de	_
+5	durante	durante	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	madrugada	madrugada	NOUN	_	Gender=Fem|Number=Sing	1	obl	1:obl:durante	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	conseguiu	conseguir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	conj	1:conj:e	_
+10	marcar	marcar	VERB	_	VerbForm=Inf	9	xcomp	9:xcomp	_
+11	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	reunião	reunião	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	emergência	emergência	NOUN	_	Gender=Fem|Number=Sing	12	nmod	12:nmod:de	_
+15	com	com	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	presidente	presidente	NOUN	_	Number=Sing	12	nmod	12:nmod:com	_
+18	Dilma	Dilma	PROPN	_	_	17	nmod	17:nmod	_
+19	Rousseff	Rousseff	PROPN	_	_	18	flat:name	18:flat:name	_
+20-21	na	_	_	_	_	_	_	_	_
+20	em	em	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	manhã	manhã	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:em	_
+23-24	deste	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	25	det	25:det	_
+25	sábado	sábado	NOUN	_	Gender=Masc|Number=Sing	22	nmod	22:nmod:de	SpaceAfter=No
+26	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0019
+# text = Os dois se encontraram a sós, sem a presença de assessores ou testemunhas.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	dois	dois	NUM	_	Gender=Masc|NumType=Card	4	nsubj	4:nsubj	_
+3	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	4	expl	4:expl	_
+4	encontraram	encontrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	a	a	ADP	_	_	6	case	6:case	_
+6	sós	só	NOUN	_	Gender=Masc|Number=Plur	4	obl	4:obl:a	SpaceAfter=No
+7	,	,	PUNCT	_	_	10	punct	10:punct	_
+8	sem	sem	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	presença	presença	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:sem	_
+11	de	de	ADP	_	_	12	case	12:case|14:case	_
+12	assessores	assessor	NOUN	_	Gender=Masc|Number=Plur	10	nmod	10:nmod:de	_
+13	ou	ou	CCONJ	_	_	14	cc	14:cc	_
+14	testemunhas	testemunha	NOUN	_	Gender=Fem|Number=Plur	12	conj	10:nmod:de|12:conj:ou	SpaceAfter=No
+15	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0021
+# text = A assessoria de imprensa do Planalto, assim como a do ex-presidente Lula não repassaram informações sobre o conteúdo da conversa reservada.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	assessoria	assessoria	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	17:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	imprensa	imprensa	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Planalto	Planalto	PROPN	_	_	2	nmod	2:nmod:de	SpaceAfter=No
+8	,	,	PUNCT	_	_	11	punct	11:punct	_
+9	assim	assim	ADV	_	ExtPos=SCONJ	11	mark	11:mark	_
+10	como	como	SCONJ	_	_	9	fixed	9:fixed	_
+11	a	o	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Dem	17	advcl	17:advcl:assim_como	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	ex-presidente	ex-presidente	NOUN	_	Number=Sing	11	nmod	11:nmod:de	_
+15	Lula	Lula	PROPN	_	_	14	nmod	14:nmod	_
+16	não	não	ADV	_	_	17	advmod	17:advmod	_
+17	repassaram	repassar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+18	informações	informação	NOUN	_	Gender=Fem|Number=Plur	17	obj	17:obj	_
+19	sobre	sobre	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	conteúdo	conteúdo	NOUN	_	Gender=Masc|Number=Sing	18	nmod	18:nmod:sobre	_
+22-23	da	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	conversa	conversa	NOUN	_	Gender=Fem|Number=Sing	21	nmod	21:nmod:de	_
+25	reservada	reservado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	24	amod	24:amod	SpaceAfter=No
+26	.	.	PUNCT	_	_	17	punct	17:punct	_

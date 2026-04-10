@@ -1,0 +1,101 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Passaporte alemão não era novidade para ninguém!
+1	Passaporte	passaporte	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+2	alemão	alemão	ADJ	_	Gender=Masc|Number=Sing	1	amod	1:amod	_
+3	não	não	ADV	_	_	5	advmod	5:advmod	_
+4	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	cop	5:cop	_
+5	novidade	novidade	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+6	para	para	ADP	_	_	7	case	7:case	_
+7	ninguém	ninguém	PRON	_	Number=Sing|PronType=Ind	5	nmod	5:nmod:para	SpaceAfter=No
+8	!	!	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0003
+# text = Até o cachorro de Eike possui um.
+1	Até	até	ADV	_	_	3	advmod	3:advmod	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	cachorro	cachorro	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	Eike	Eike	PROPN	_	_	3	nmod	3:nmod:de	_
+6	possui	possuir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	um	um	NUM	_	Gender=Masc|NumType=Card	6	obj	6:obj	SpaceAfter=No
+8	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0005
+# text = O companheiro fiel e parceiro de viagens aéreas do empresário possui passaporte.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	companheiro	companheiro	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	12:nsubj	_
+3	fiel	fiel	ADJ	_	Number=Sing	2	amod	2:amod	_
+4	e	e	CCONJ	_	_	5	cc	5:cc	_
+5	parceiro	parceiro	NOUN	_	Gender=Masc|Number=Sing	2	conj	2:conj:e|12:nsubj	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	viagens	viagem	NOUN	_	Gender=Fem|Number=Plur	5	nmod	5:nmod:de	_
+8	aéreas	aéreo	ADJ	_	Gender=Fem|Number=Plur	7	amod	7:amod	_
+9-10	do	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	empresário	empresário	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de|5:nmod:de	_
+12	possui	possuir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+13	passaporte	passaporte	NOUN	_	Gender=Masc|Number=Sing	12	obj	12:obj	SpaceAfter=No
+14	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0007
+# text = Eric é um pastor alemão que possui passaporte alemão (desculpem a redundância).
+1	Eric	Eric	PROPN	_	_	4	nsubj	4:nsubj	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	pastor	pastor	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root|7:nsubj	_
+5	alemão	alemão	ADJ	_	Gender=Masc|Number=Sing	4	amod	4:amod	_
+6	que	que	PRON	_	PronType=Rel	7	nsubj	4:ref	_
+7	possui	possuir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	4:acl:relcl	_
+8	passaporte	passaporte	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+9	alemão	alemão	ADJ	_	Gender=Masc|Number=Sing	8	amod	8:amod	_
+10	(	(	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+11	desculpem	desculpar	VERB	_	Mood=Imp|Number=Plur|Person=3|VerbForm=Fin	7	parataxis	7:parataxis	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	redundância	redundância	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	SpaceAfter=No
+14	)	)	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+15	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0009
+# text = De acordo com o portal Terra, duas pessoas foram responsáveis pelo adestramento do cão.
+1	De	de	ADP	_	_	2	case	2:case	_
+2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:de	_
+3	com	com	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	portal	portal	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:com	_
+6	Terra	Terra	PROPN	_	_	5	nmod	5:nmod	SpaceAfter=No
+7	,	,	PUNCT	_	_	2	punct	2:punct	_
+8	duas	dois	NUM	_	Gender=Fem|NumType=Card	9	nummod	9:nummod	_
+9	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	11	nsubj	11:nsubj	_
+10	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	11	cop	11:cop	_
+11	responsáveis	responsável	ADJ	_	Number=Plur	0	root	0:root	_
+12-13	pelo	_	_	_	_	_	_	_	_
+12	por	por	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	adestramento	adestramento	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:por	_
+15-16	do	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	cão	cão	NOUN	_	Gender=Masc|Number=Sing	14	nmod	14:nmod:de	SpaceAfter=No
+18	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0011
+# text = E o mais curioso: Eles treinaram o cachorro na língua oficial de Hitler.
+1	E	e	CCONJ	_	_	2	cc	2:cc	_
+2	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	0	root	0:root	_
+3	mais	mais	ADV	_	_	4	advmod	4:advmod	_
+4	curioso	curioso	ADJ	_	Gender=Masc|Number=Sing	2	amod	2:amod	SpaceAfter=No
+5	:	:	PUNCT	_	_	7	punct	7:punct	_
+6	Eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	7	nsubj	7:nsubj	_
+7	treinaram	treinar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	2	parataxis	2:parataxis	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	cachorro	cachorro	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+10-11	na	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	língua	língua	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:em	_
+13	oficial	oficial	ADJ	_	Number=Sing	12	amod	12:amod	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	Hitler	Hitler	PROPN	_	_	12	nmod	12:nmod:de	SpaceAfter=No
+16	.	.	PUNCT	_	_	2	punct	2:punct	_

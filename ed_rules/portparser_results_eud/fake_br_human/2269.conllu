@@ -1,0 +1,179 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Ninguém que ficar perto de Lula!
+1	Ninguém	ninguém	PRON	_	Number=Sing|PronType=Ind	0	root	0:root|3:nsubj	_
+2	que	que	PRON	_	PronType=Rel	3	nsubj	1:ref	_
+3	ficar	ficar	VERB	_	VerbForm=Inf	1	acl:relcl	1:acl:relcl	_
+4	perto	perto	ADV	_	_	3	advmod	3:advmod	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	Lula	Lula	PROPN	_	_	4	obl	4:obl:de	SpaceAfter=No
+7	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Políticos e empresários tentam manter distância do ex-presidente.
+1	Políticos	político	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	4:nsubj|5:nsubj	_
+2	e	e	CCONJ	_	_	3	cc	3:cc	_
+3	empresários	empresário	NOUN	_	Gender=Masc|Number=Plur	1	conj	1:conj:e|4:nsubj|5:nsubj	_
+4	tentam	tentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	manter	manter	VERB	_	VerbForm=Inf	4	xcomp	4:xcomp	_
+6	distância	distância	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	ex-presidente	ex-presidente	NOUN	_	Number=Sing	6	nmod	6:nmod:de	SpaceAfter=No
+10	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0005
+# text = O fundador do PT está se sentindo isolado.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	fundador	fundador	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	8:nsubj|9:nsubj	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	PT	PT	PROPN	_	_	2	nmod	2:nmod:de	_
+6	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	8:aux	_
+7	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	8	expl	8:expl	_
+8	sentindo	sentir	VERB	_	VerbForm=Ger	0	root	0:root	_
+9	isolado	isolado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	8	xcomp	8:xcomp	SpaceAfter=No
+10	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0007
+# text = Ninguém quer ficar perto dele.
+1	Ninguém	ninguém	PRON	_	Number=Sing|PronType=Ind	2	nsubj	2:nsubj|3:nsubj	_
+2	quer	querer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	ficar	ficar	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	_
+4	perto	perto	ADV	_	_	3	advmod	3:advmod	_
+5-6	dele	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	obl	4:obl:de	_
+7	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0009
+# text = Ele não é procurado por políticos e muito menos por empresários.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj:pass	4:nsubj:pass	_
+2	não	não	ADV	_	_	4	advmod	4:advmod	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	procurado	procurar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5	por	por	ADP	_	_	6	case	6:case	_
+6	políticos	político	NOUN	_	Gender=Masc|Number=Plur	4	obl:agent	4:obl:agent	_
+7	e	e	CCONJ	_	_	11	cc	11:cc	_
+8	muito	muito	ADV	_	_	9	advmod	9:advmod	_
+9	menos	menos	ADV	_	_	11	advmod	11:advmod	_
+10	por	por	ADP	_	_	11	case	11:case	_
+11	empresários	empresário	NOUN	_	Gender=Masc|Number=Plur	6	conj	4:obl:agent|6:conj:e	SpaceAfter=No
+12	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0011
+# text = A Folha informou que Lula estaria de "saco cheio" da presidente Dilma [...] porém tentará se esforçar ao máximo para ser solidário durante o processo de impeachment.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Folha	Folha	PROPN	_	_	3	nsubj	3:nsubj	_
+3	informou	informar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	9	mark	9:mark|21:mark	_
+5	Lula	Lula	PROPN	_	_	9	nsubj	9:nsubj|21:nsubj|23:nsubj	_
+6	estaria	estar	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	9	cop	9:cop	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	"	"	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+9	saco	saco	NOUN	_	Gender=Masc|Number=Sing	3	ccomp	3:ccomp	_
+10	cheio	cheio	ADJ	_	Gender=Masc|Number=Sing	9	amod	9:amod	SpaceAfter=No
+11	"	"	PUNCT	_	_	9	punct	9:punct	_
+12-13	da	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	presidente	presidente	NOUN	_	Number=Sing	9	nmod	9:nmod:de	_
+15	Dilma	Dilma	PROPN	_	_	14	nmod	14:nmod	_
+16	[	[	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+17	.	.	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+18	..	..	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+19	]	]	PUNCT	_	_	17	punct	17:punct	_
+20	porém	porém	CCONJ	_	_	21	cc	21:cc	_
+21	tentará	tentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	9	conj	3:ccomp|9:conj:porém	_
+22	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	23	expl	23:expl	_
+23	esforçar	esforçar	VERB	_	VerbForm=Inf	21	xcomp	21:xcomp	_
+24-25	ao	_	_	_	_	_	_	_	_
+24	a	a	ADP	_	_	26	case	26:case	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	máximo	máximo	NOUN	_	Gender=Masc|Number=Sing	23	obl	23:obl:a	_
+27	para	para	ADP	_	_	29	mark	29:mark	_
+28	ser	ser	AUX	_	VerbForm=Inf	29	cop	29:cop	_
+29	solidário	solidário	ADJ	_	Gender=Masc|Number=Sing	23	advcl	23:advcl:para	_
+30	durante	durante	ADP	_	_	32	case	32:case	_
+31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+32	processo	processo	NOUN	_	Gender=Masc|Number=Sing	29	obl	29:obl:durante	_
+33	de	de	ADP	_	_	34	case	34:case	_
+34	impeachment	impeachment	NOUN	_	Gender=Masc|Number=Sing	32	nmod	32:nmod:de	SpaceAfter=No
+35	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0013
+# text = Pessoas próximas do petista e que convivem com ele no Instituto Lula garantem que ele não suporta mais o clima delações premiadas, condenações e prisões.
+1	Pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	15	nsubj	15:nsubj	_
+2	próximas	próximo	ADJ	_	Gender=Fem|Number=Plur	1	amod	1:amod	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	petista	petista	NOUN	_	Number=Sing	2	obl	2:obl:de	_
+6	e	e	CCONJ	_	_	8	cc	8:cc	_
+7	que	que	PRON	_	PronType=Rel	8	nsubj	8:nsubj	_
+8	convivem	conviver	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	conj	1:conj:e|15:nsubj	_
+9	com	com	ADP	_	_	10	case	10:case	_
+10	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	obl	8:obl:com	_
+11-12	no	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	Instituto	Instituto	PROPN	_	_	8	obl	8:obl:em	_
+14	Lula	Lula	PROPN	_	_	13	flat:name	13:flat:name	_
+15	garantem	garantir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+16	que	que	SCONJ	_	_	19	mark	19:mark	_
+17	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	19	nsubj	19:nsubj	_
+18	não	não	ADV	_	_	19	advmod	19:advmod	_
+19	suporta	suportar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	ccomp	15:ccomp	_
+20	mais	mais	ADV	_	_	19	advmod	19:advmod	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	clima	clima	NOUN	_	Gender=Masc|Number=Sing	19	obj	19:obj	_
+23	delações	delação	NOUN	_	Gender=Fem|Number=Plur	19	obj	19:obj	_
+24	premiadas	premiado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	23	amod	23:amod	SpaceAfter=No
+25	,	,	PUNCT	_	_	26	punct	26:punct	_
+26	condenações	condenação	NOUN	_	Gender=Fem|Number=Plur	23	conj	19:obj|23:conj:e	_
+27	e	e	CCONJ	_	_	28	cc	28:cc	_
+28	prisões	prisão	NOUN	_	Gender=Fem|Number=Plur	23	conj	19:obj|23:conj:e	SpaceAfter=No
+29	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0015
+# text = Lula não está aceitando o golpe que o destino está lhe aplicando.
+1	Lula	Lula	PROPN	_	_	4	nsubj	4:nsubj	_
+2	não	não	ADV	_	_	4	advmod	4:advmod	_
+3	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	4:aux	_
+4	aceitando	aceitar	VERB	_	VerbForm=Ger	0	root	0:root	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	golpe	golpe	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj|12:obj	_
+7	que	que	PRON	_	PronType=Rel	12	obj	6:ref	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	destino	destino	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	12:nsubj	_
+10	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux	12:aux	_
+11	lhe	lhe	PRON	_	Case=Dat|Number=Sing|Person=3|PronType=Prs	12	iobj	12:iobj	_
+12	aplicando	aplicar	VERB	_	VerbForm=Ger	6	acl:relcl	6:acl:relcl	SpaceAfter=No
+13	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0017
+# text = Durante reuniões no Instituto, ele se mostra quase formal, não ri e não faz as rotineiras piadas.
+1	Durante	durante	ADP	_	_	2	case	2:case	_
+2	reuniões	reunião	NOUN	_	Gender=Fem|Number=Plur	9	obl	9:obl:durante	_
+3-4	no	_	_	_	_	_	_	_	_
+3	em	em	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	Instituto	Instituto	PROPN	_	_	2	nmod	2:nmod:em	SpaceAfter=No
+6	,	,	PUNCT	_	_	2	punct	2:punct	_
+7	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nsubj	9:nsubj|11:nsubj|14:nsubj|17:nsubj	_
+8	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	9	expl	9:expl	_
+9	mostra	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+10	quase	quase	ADV	_	_	11	advmod	11:advmod	_
+11	formal	formal	ADJ	_	Number=Sing	9	xcomp	9:xcomp	SpaceAfter=No
+12	,	,	PUNCT	_	_	14	punct	14:punct	_
+13	não	não	ADV	_	_	14	advmod	14:advmod	_
+14	ri	rir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	conj	9:conj:e	_
+15	e	e	CCONJ	_	_	17	cc	17:cc	_
+16	não	não	ADV	_	_	17	advmod	17:advmod	_
+17	faz	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	conj	9:conj:e	_
+18	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	20:det	_
+19	rotineiras	rotineiro	ADJ	_	Gender=Fem|Number=Plur	20	amod	20:amod	_
+20	piadas	piada	NOUN	_	Gender=Fem|Number=Plur	17	obj	17:obj	SpaceAfter=No
+21	.	.	PUNCT	_	_	9	punct	9:punct	_

@@ -1,0 +1,62 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Petista doente que ameaçou Sérgio Moro no twitter continua a provocar.
+1	Petista	petista	NOUN	_	Number=Sing	10	nsubj	4:nsubj|10:nsubj|12:nsubj	_
+2	doente	doente	ADJ	_	Number=Sing	1	amod	1:amod	_
+3	que	que	PRON	_	PronType=Rel	4	nsubj	1:ref	_
+4	ameaçou	ameaçar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+5	Sérgio	Sérgio	PROPN	_	_	4	obj	4:obj	_
+6	Moro	Moro	PROPN	_	_	5	flat:name	5:flat:name	_
+7-8	no	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	twitter	twitter	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	4	obl	4:obl:em	_
+10	continua	continuar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+11	a	a	ADP	_	_	12	mark	12:mark	_
+12	provocar	provocar	VERB	_	VerbForm=Inf	10	xcomp	10:xcomp	SpaceAfter=No
+13	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0003
+# text = Alvo agora é a Polícia Federal.
+1	Alvo	alvo	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+2	agora	agora	ADV	_	_	5	advmod	5:advmod	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	Polícia	Polícia	PROPN	_	_	0	root	0:root	_
+6	Federal	Federal	PROPN	_	_	5	flat:name	5:flat:name	SpaceAfter=No
+7	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0005
+# text = O militante do PT que ameaçou o juiz Sérgio Moro em uma postagem no twitter, tentou explicar a publicação absurda e acabou se complicando ainda mais.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	militante	militante	NOUN	_	Number=Sing	19	nsubj	7:nsubj|19:nsubj|20:nsubj|25:nsubj|27:nsubj	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	PT	PT	PROPN	_	_	2	nmod	2:nmod:de	_
+6	que	que	PRON	_	PronType=Rel	7	nsubj	2:ref	_
+7	ameaçou	ameaçar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	juiz	juiz	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+10	Sérgio	Sérgio	PROPN	_	_	9	nmod	9:nmod	_
+11	Moro	Moro	PROPN	_	_	10	flat:name	10:flat:name	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	postagem	postagem	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:em	_
+15-16	no	_	_	_	_	_	_	_	_
+15	em	em	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	twitter	twitter	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	14	nmod	14:nmod:em	SpaceAfter=No
+18	,	,	PUNCT	_	_	7	punct	7:punct	_
+19	tentou	tentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+20	explicar	explicar	VERB	_	VerbForm=Inf	19	xcomp	19:xcomp	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	publicação	publicação	NOUN	_	Gender=Fem|Number=Sing	20	obj	20:obj	_
+23	absurda	absurdo	ADJ	_	Gender=Fem|Number=Sing	22	amod	22:amod	_
+24	e	e	CCONJ	_	_	25	cc	25:cc	_
+25	acabou	acabar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	conj	19:conj:e	_
+26	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	27	expl	27:expl	_
+27	complicando	complicar	VERB	_	VerbForm=Ger	25	xcomp	25:xcomp	_
+28	ainda	ainda	ADV	_	_	29	advmod	29:advmod	_
+29	mais	mais	ADV	_	_	27	advmod	27:advmod	SpaceAfter=No
+30	.	.	PUNCT	_	_	19	punct	19:punct	_

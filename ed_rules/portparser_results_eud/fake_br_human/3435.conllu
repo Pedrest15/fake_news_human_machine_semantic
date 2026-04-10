@@ -1,0 +1,57 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Mais um registro do fascismo petista: Deputados "black- blocs" do PT quebram dez urnas no congresso.
+1	Mais	mais	ADV	_	_	2	advmod	2:advmod	_
+2	um	um	NUM	_	Gender=Masc|NumType=Card	3	nummod	3:nummod	_
+3	registro	registro	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	fascismo	fascismo	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	_
+7	petista	petista	ADJ	_	Number=Sing	6	amod	6:amod	SpaceAfter=No
+8	:	:	PUNCT	_	_	18	punct	18:punct	_
+9	Deputados	deputado	NOUN	_	Gender=Masc|Number=Plur	18	nsubj	18:nsubj	_
+10	"	"	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+11	black	black	X	_	Foreign=Yes	9	nmod	9:nmod	SpaceAfter=No
+12	-	-	X	_	Foreign=Yes	11	flat:foreign	11:flat:foreign	_
+13	blocs	blocs	X	_	Foreign=Yes	11	flat:foreign	11:flat:foreign	SpaceAfter=No
+14	"	"	PUNCT	_	_	11	punct	11:punct	_
+15-16	do	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	PT	PT	PROPN	_	_	11	nmod	11:nmod:de	_
+18	quebram	quebrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	parataxis	3:parataxis	_
+19	dez	dez	NUM	_	NumType=Card	20	nummod	20:nummod	_
+20	urnas	urna	NOUN	_	Gender=Fem|Number=Plur	18	obj	18:obj	_
+21-22	no	_	_	_	_	_	_	_	_
+21	em	em	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	congresso	congresso	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:em	SpaceAfter=No
+24	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = O jornal Estadão denunciou um total de dez urnas eletrônicas quebradas por deputados do PT e aliados na Câmara.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	jornal	jornal	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+3	Estadão	Estadão	PROPN	_	_	2	nmod	2:nmod	_
+4	denunciou	denunciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	total	total	NOUN	_	Number=Sing	4	obj	4:obj	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	dez	dez	NUM	_	NumType=Card	9	nummod	9:nummod	_
+9	urnas	urna	NOUN	_	Gender=Fem|Number=Plur	6	nmod	6:nmod:de	_
+10	eletrônicas	eletrônico	ADJ	_	Gender=Fem|Number=Plur	9	amod	9:amod	_
+11	quebradas	quebrar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	9	acl	9:acl	_
+12	por	por	ADP	_	_	13	case	13:case	_
+13	deputados	deputado	NOUN	_	Gender=Masc|Number=Plur	11	obl:agent	11:obl:agent	_
+14-15	do	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case|18:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	PT	PT	PROPN	_	_	13	nmod	13:nmod:de	_
+17	e	e	CCONJ	_	_	18	cc	18:cc	_
+18	aliados	aliado	NOUN	_	Gender=Masc|Number=Plur	16	conj	13:nmod:de|16:conj:e	_
+19-20	na	_	_	_	_	_	_	_	_
+19	em	em	ADP	_	_	21	case	21:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	Câmara	Câmara	PROPN	_	_	18	nmod	18:nmod:em	SpaceAfter=No
+22	.	.	PUNCT	_	_	4	punct	4:punct	_

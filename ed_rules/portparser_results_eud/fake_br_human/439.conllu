@@ -1,0 +1,418 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Ex-Deputado Federal causa grave acidente e apanha de populares.
+1	Ex-Deputado	Ex-Deputado	PROPN	_	_	3	nsubj	3:nsubj|7:nsubj	_
+2	Federal	Federal	PROPN	_	_	1	flat:name	1:flat:name	_
+3	causa	causar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	grave	grave	ADJ	_	Number=Sing	5	amod	5:amod	_
+5	acidente	acidente	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	apanha	apanhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	3:conj:e	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	populares	popular	NOUN	_	Gender=Masc|Number=Plur	7	obl	7:obl:de	SpaceAfter=No
+10	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = Vídeo mostra embriaguez.
+1	Vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	2	nsubj	2:nsubj	_
+2	mostra	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	embriaguez	embriaguez	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	SpaceAfter=No
+4	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = O ex-deputado federal João Pizzolatti (PP) causou um acidente na rodovia Werner Duwe, que liga Blumenau a Pomerode (Santa Catarina) na manhã de hoje.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	ex-deputado	ex-deputado	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	9:nsubj	_
+3	federal	federal	ADJ	_	Number=Sing	2	amod	2:amod	_
+4	João	João	PROPN	_	_	2	nmod	2:nmod	_
+5	Pizzolatti	Pizzolatti	PROPN	_	_	4	flat:name	4:flat:name	_
+6	(	(	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+7	PP	PP	PROPN	_	_	2	parataxis	2:parataxis	SpaceAfter=No
+8	)	)	PUNCT	_	_	7	punct	7:punct	_
+9	causou	causar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	acidente	acidente	NOUN	_	Gender=Masc|Number=Sing	9	obj	9:obj	_
+12-13	na	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	rodovia	rodovia	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:em|19:nsubj	_
+15	Werner	Werner	PROPN	_	_	14	nmod	14:nmod	_
+16	Duwe	Duwe	PROPN	_	_	15	flat:name	15:flat:name	SpaceAfter=No
+17	,	,	PUNCT	_	_	19	punct	19:punct	_
+18	que	que	PRON	_	PronType=Rel	19	nsubj	14:ref	_
+19	liga	ligar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	acl:relcl	14:acl:relcl	_
+20	Blumenau	Blumenau	PROPN	_	_	19	obj	19:obj	_
+21	a	a	ADP	_	_	22	case	22:case	_
+22	Pomerode	Pomerode	PROPN	_	_	19	obl	19:obl:a	_
+23	(	(	PUNCT	_	_	24	punct	24:punct	SpaceAfter=No
+24	Santa	Santa	PROPN	_	_	22	parataxis	22:parataxis	_
+25	Catarina	Catarina	PROPN	_	_	24	flat:name	24:flat:name	SpaceAfter=No
+26	)	)	PUNCT	_	_	24	punct	24:punct	_
+27-28	na	_	_	_	_	_	_	_	_
+27	em	em	ADP	_	_	29	case	29:case	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	manhã	manhã	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:em	_
+30	de	de	ADP	_	_	31	case	31:case	_
+31	hoje	hoje	ADV	_	_	29	advmod	29:advmod	SpaceAfter=No
+32	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0007
+# text = A caminhonete Volvo que ele dirigia bateu de frente com um Fiat Mobi, que pegou fogo e deixou o condutor preso às ferragens.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	caminhonete	caminhonete	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	6:obj|7:nsubj	_
+3	Volvo	Volvo	PROPN	_	_	2	nmod	2:nmod	_
+4	que	que	PRON	_	PronType=Rel	6	obj	2:ref	_
+5	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj	6:nsubj	_
+6	dirigia	dirigir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+7	bateu	bater	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	frente	frente	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:de	_
+10	com	com	ADP	_	_	12	case	12:case	_
+11	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	Fiat	Fiat	PROPN	_	_	7	obl	7:obl:com|16:nsubj|19:nsubj	_
+13	Mobi	Mobi	PROPN	_	_	12	flat:name	12:flat:name	SpaceAfter=No
+14	,	,	PUNCT	_	_	16	punct	16:punct	_
+15	que	que	PRON	_	PronType=Rel	16	nsubj	12:ref	_
+16	pegou	pegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	acl:relcl	12:acl:relcl	_
+17	fogo	fogo	NOUN	_	Gender=Masc|Number=Sing	16	obj	16:obj	_
+18	e	e	CCONJ	_	_	19	cc	19:cc	_
+19	deixou	deixar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	conj	12:acl:relcl|16:conj:e	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	condutor	condutor	NOUN	_	Gender=Masc|Number=Sing	19	obj	19:obj|22:nsubj	_
+22	preso	preso	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	19	xcomp	19:xcomp	_
+23-24	às	_	_	_	_	_	_	_	_
+23	a	a	ADP	_	_	25	case	25:case	_
+24	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	25:det	_
+25	ferragens	ferragem	NOUN	_	Gender=Fem|Number=Plur	22	obl	22:obl:a	SpaceAfter=No
+26	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0009
+# text = Motoristas que passavam pelo local usaram extintores para apagar as chamas.
+1	Motoristas	motorista	NOUN	_	Number=Plur	7	nsubj	3:nsubj|7:nsubj	_
+2	que	que	PRON	_	PronType=Rel	3	nsubj	1:ref	_
+3	passavam	passar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+4-5	pelo	_	_	_	_	_	_	_	_
+4	por	por	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	local	local	NOUN	_	Number=Sing	3	obl	3:obl:por	_
+7	usaram	usar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	extintores	extintor	NOUN	_	Gender=Masc|Number=Plur	7	obj	7:obj	_
+9	para	para	ADP	_	_	10	mark	10:mark	_
+10	apagar	apagar	VERB	_	VerbForm=Inf	7	advcl	7:advcl:para	_
+11	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	12:det	_
+12	chamas	chama	NOUN	_	Gender=Fem|Number=Plur	10	obj	10:obj	SpaceAfter=No
+13	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0011
+# text = Paulo Marcelo Santos (que estava no Fiat Mobi), 23 anos, sofreu lesões e queimaduras nas pernas e foi atendido pelo helicóptero Arcanjo-3, do Corpo de Bombeiros.
+1	Paulo	Paulo	PROPN	_	_	16	nsubj	9:nsubj|16:nsubj|25:nsubj:pass	_
+2	Marcelo	Marcelo	PROPN	_	_	1	flat:name	1:flat:name	_
+3	Santos	Santos	PROPN	_	_	1	flat:name	1:flat:name	_
+4	(	(	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+5	que	que	PRON	_	PronType=Rel	9	nsubj	1:ref	_
+6	estava	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	cop	9:cop	_
+7-8	no	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	Fiat	Fiat	PROPN	_	_	1	acl:relcl	1:acl:relcl	_
+10	Mobi	Mobi	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+11	)	)	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+12	,	,	PUNCT	_	_	14	punct	14:punct	_
+13	23	23	NUM	_	NumType=Card	14	nummod	14:nummod	_
+14	anos	ano	NOUN	_	Gender=Masc|Number=Plur	1	parataxis	1:parataxis	SpaceAfter=No
+15	,	,	PUNCT	_	_	14	punct	14:punct	_
+16	sofreu	sofrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+17	lesões	lesão	NOUN	_	Gender=Fem|Number=Plur	16	obj	16:obj	_
+18	e	e	CCONJ	_	_	19	cc	19:cc	_
+19	queimaduras	queimadura	NOUN	_	Gender=Fem|Number=Plur	17	conj	16:obj|17:conj:e	_
+20-21	nas	_	_	_	_	_	_	_	_
+20	em	em	ADP	_	_	22	case	22:case	_
+21	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	22:det	_
+22	pernas	perna	NOUN	_	Gender=Fem|Number=Plur	17	nmod	17:nmod:em|19:nmod:em	_
+23	e	e	CCONJ	_	_	25	cc	25:cc	_
+24	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	25	aux:pass	25:aux:pass	_
+25	atendido	atender	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	16	conj	16:conj:e	_
+26-27	pelo	_	_	_	_	_	_	_	_
+26	por	por	ADP	_	_	28	case	28:case	_
+27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	helicóptero	helicóptero	NOUN	_	Gender=Masc|Number=Sing	25	obl:agent	25:obl:agent	_
+29	Arcanjo-3	Arcanjo-3	PROPN	_	_	28	nmod	28:nmod	SpaceAfter=No
+30	,	,	PUNCT	_	_	33	punct	33:punct	_
+31-32	do	_	_	_	_	_	_	_	_
+31	de	de	ADP	_	_	33	case	33:case	_
+32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	33:det	_
+33	Corpo	Corpo	PROPN	_	_	28	nmod	28:nmod:de	_
+34	de	de	ADP	_	_	35	case	35:case	_
+35	Bombeiros	Bombeiros	PROPN	_	_	33	flat:name	33:flat:name	SpaceAfter=No
+36	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0013
+# text = O ex-deputado, ao sair do carro, levou um murro na cara e vários chutes de populares que estavam no local do acidente.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	ex-deputado	ex-deputado	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	11:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
+4-5	ao	_	_	_	_	_	_	_	_
+4	a	a	ADP	_	ExtPos=SCONJ	6	mark	6:mark	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	fixed	4:fixed	_
+6	sair	sair	VERB	_	VerbForm=Inf	11	advcl	11:advcl:a_o	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	carro	carro	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:de	SpaceAfter=No
+10	,	,	PUNCT	_	_	6	punct	6:punct	_
+11	levou	levar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	murro	murro	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj	_
+14-15	na	_	_	_	_	_	_	_	_
+14	em	em	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	cara	cara	NOUN	_	Number=Sing	13	nmod	13:nmod:em	_
+17	e	e	CCONJ	_	_	19	cc	19:cc	_
+18	vários	vários	DET	_	Gender=Masc|Number=Plur|PronType=Ind	19	det	19:det	_
+19	chutes	chute	NOUN	_	Gender=Masc|Number=Plur	13	conj	11:obj|13:conj:e	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	populares	popular	NOUN	_	Gender=Masc|Number=Plur	19	nmod	19:nmod:de|26:nsubj	_
+22	que	que	PRON	_	PronType=Rel	26	nsubj	21:ref	_
+23	estavam	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	26	cop	26:cop	_
+24-25	no	_	_	_	_	_	_	_	_
+24	em	em	ADP	_	_	26	case	26:case	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	local	local	NOUN	_	Number=Sing	21	acl:relcl	21:acl:relcl	_
+27-28	do	_	_	_	_	_	_	_	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	29:det	_
+29	acidente	acidente	NOUN	_	Gender=Masc|Number=Sing	26	nmod	26:nmod:de	SpaceAfter=No
+30	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0015
+# text = Aparentemente embriagado, ele foi filmado e confessou que havia ingerido bebida alcoólica: "Não vem com discurso não" disse Pizzolatti a um morador.
+1	Aparentemente	aparentemente	ADV	_	_	2	advmod	2:advmod	_
+2	embriagado	embriagado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	6	advcl	6:advcl|8:advcl	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj:pass	6:nsubj:pass|8:nsubj	_
+5	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	aux:pass	6:aux:pass	_
+6	filmado	filmar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	22	dep	22:dep	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	confessou	confessar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	conj	6:conj:e|22:dep	_
+9	que	que	SCONJ	_	_	11	mark	11:mark	_
+10	havia	haver	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	11	aux	11:aux	_
+11	ingerido	ingerir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	8	ccomp	8:ccomp	_
+12	bebida	bebida	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	_
+13	alcoólica	alcoólico	ADJ	_	Gender=Fem|Number=Sing	12	amod	12:amod	SpaceAfter=No
+14	:	:	PUNCT	_	_	17	punct	17:punct	_
+15	"	"	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+16	Não	não	ADV	_	_	17	advmod	17:advmod	_
+17	vem	vir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	parataxis	6:parataxis	_
+18	com	com	ADP	_	_	19	case	19:case	_
+19	discurso	discurso	NOUN	_	Gender=Masc|Number=Sing	17	obl	17:obl:com	_
+20	não	não	ADV	_	_	17	advmod	17:advmod	SpaceAfter=No
+21	"	"	PUNCT	_	_	17	punct	17:punct	_
+22	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+23	Pizzolatti	Pizzolatti	PROPN	_	_	22	nsubj	22:nsubj	_
+24	a	a	ADP	_	_	26	case	26:case	_
+25	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	morador	morador	NOUN	_	Gender=Masc|Number=Sing	22	obl	22:obl:a	SpaceAfter=No
+27	.	.	PUNCT	_	_	22	punct	22:punct	_
+
+# sent_id = S0017
+# text = Sem problema nenhum, eu assumo toda a responsabilidade completou.
+1	Sem	sem	ADP	_	_	2	case	2:case	_
+2	problema	problema	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:sem	_
+3	nenhum	nenhum	DET	_	Gender=Masc|Number=Sing|PronType=Ind	2	det	2:det	SpaceAfter=No
+4	,	,	PUNCT	_	_	2	punct	2:punct	_
+5	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj	6:nsubj	_
+6	assumo	assumir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	10	ccomp:speech	10:ccomp:speech	_
+7	toda	todo	DET	_	Gender=Fem|Number=Sing|PronType=Ind	9	det	9:det	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	responsabilidade	responsabilidade	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+10	completou	completar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+11	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0019
+# text = A Polícia Rodoviária autuou o ex-deputado por " conduzir veículo com sinais de alteração de capacidade psicomotora".
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Polícia	Polícia	PROPN	_	_	4	nsubj	4:nsubj	_
+3	Rodoviária	Rodoviária	PROPN	_	_	2	flat:name	2:flat:name	_
+4	autuou	autuar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	ex-deputado	ex-deputado	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7	por	por	ADP	_	_	9	mark	9:mark	_
+8	"	"	PUNCT	_	_	9	punct	9:punct	_
+9	conduzir	conduzir	VERB	_	VerbForm=Inf	4	advcl	4:advcl:por	_
+10	veículo	veículo	NOUN	_	Gender=Masc|Number=Sing	9	obj	9:obj	_
+11	com	com	ADP	_	_	12	case	12:case	_
+12	sinais	sinal	NOUN	_	Gender=Masc|Number=Plur	10	nmod	10:nmod:com	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	alteração	alteração	NOUN	_	Gender=Fem|Number=Sing	12	nmod	12:nmod:de	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	capacidade	capacidade	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:de	_
+17	psicomotora	psicomotor	ADJ	_	Gender=Fem|Number=Sing	16	amod	16:amod	SpaceAfter=No
+18	"	"	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+19	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0021
+# text = De acordo com o sargento Edson Waltrick, ele se recusou a fazer o teste do bafômetro no local.
+1	De	de	ADP	_	_	2	case	2:case	_
+2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:de	_
+3	com	com	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	sargento	sargento	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:com	_
+6	Edson	Edson	PROPN	_	_	5	nmod	5:nmod	_
+7	Waltrick	Waltrick	PROPN	_	_	6	flat:name	6:flat:name	SpaceAfter=No
+8	,	,	PUNCT	_	_	2	punct	2:punct	_
+9	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	nsubj	11:nsubj|13:nsubj	_
+10	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	11	expl	11:expl	_
+11	recusou	recusar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	a	a	ADP	_	_	13	mark	13:mark	_
+13	fazer	fazer	VERB	_	VerbForm=Inf	11	xcomp	11:xcomp	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	teste	teste	NOUN	_	Gender=Masc|Number=Sing	13	obj	13:obj	_
+16-17	do	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	bafômetro	bafômetro	NOUN	_	Gender=Masc|Number=Sing	15	nmod	15:nmod:de	_
+19-20	no	_	_	_	_	_	_	_	_
+19	em	em	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	local	local	NOUN	_	Number=Sing	13	obl	13:obl:em	SpaceAfter=No
+22	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0023
+# text = Dois populares que estavam no local serviram de testemunhas e assinaram o boletim de ocorrência, que descreveu olhos vermelhos, dificuldade na fala e sinais de desequilíbrio ao caminhar de Pizolatti.
+1	Dois	dois	NUM	_	Gender=Masc|NumType=Card	2	nummod	2:nummod	_
+2	populares	popular	NOUN	_	Gender=Masc|Number=Plur	8	nsubj	7:nsubj|8:nsubj|12:nsubj	_
+3	que	que	PRON	_	PronType=Rel	7	nsubj	2:ref	_
+4	estavam	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	7	cop	7:cop	_
+5-6	no	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	local	local	NOUN	_	Number=Sing	2	acl:relcl	2:acl:relcl	_
+8	serviram	servir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	testemunhas	testemunha	NOUN	_	Gender=Fem|Number=Plur	8	obl	8:obl:de	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	assinaram	assinar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	8	conj	8:conj:e	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	boletim	boletim	NOUN	_	Gender=Masc|Number=Sing	12	obj	12:obj|19:nsubj	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	ocorrência	ocorrência	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:de	SpaceAfter=No
+17	,	,	PUNCT	_	_	19	punct	19:punct	_
+18	que	que	PRON	_	PronType=Rel	19	nsubj	14:ref	_
+19	descreveu	descrever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	acl:relcl	14:acl:relcl	_
+20	olhos	olho	NOUN	_	Gender=Masc|Number=Plur	19	obj	19:obj	_
+21	vermelhos	vermelho	ADJ	_	Gender=Masc|Number=Plur	20	amod	20:amod	SpaceAfter=No
+22	,	,	PUNCT	_	_	23	punct	23:punct	_
+23	dificuldade	dificuldade	NOUN	_	Gender=Fem|Number=Sing	20	conj	19:obj|20:conj:e	_
+24-25	na	_	_	_	_	_	_	_	_
+24	em	em	ADP	_	_	26	case	26:case	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	fala	fala	NOUN	_	Gender=Fem|Number=Sing	23	nmod	23:nmod:em	_
+27	e	e	CCONJ	_	_	28	cc	28:cc	_
+28	sinais	sinal	NOUN	_	Gender=Masc|Number=Plur	20	conj	19:obj|20:conj:e	_
+29	de	de	ADP	_	_	30	case	30:case	_
+30	desequilíbrio	desequilíbrio	NOUN	_	Gender=Masc|Number=Sing	28	nmod	28:nmod:de	_
+31-32	ao	_	_	_	_	_	_	_	_
+31	a	a	ADP	_	_	33	case	33:case	_
+32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	33:det	_
+33	caminhar	caminhar	NOUN	_	Gender=Masc|Number=Sing	30	nmod	30:nmod:a	_
+34	de	de	ADP	_	_	35	case	35:case	_
+35	Pizolatti	Pizolatti	PROPN	_	_	33	nmod	33:nmod:de	SpaceAfter=No
+36	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0025
+# text = O político não foi detido em flagrante porque o médico do Samu decidiu encaminhá-lo ao hospital, pois ele aparentava sinais de que havia batido a cabeça no acidente.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	político	político	NOUN	_	Gender=Masc|Number=Sing	5	nsubj:pass	5:nsubj:pass	_
+3	não	não	ADV	_	_	5	advmod	5:advmod	_
+4	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	aux:pass	5:aux:pass	_
+5	detido	deter	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+6	em	em	ADP	_	_	7	case	7:case	_
+7	flagrante	flagrante	NOUN	_	Number=Sing	5	obl	5:obl:em	_
+8	porque	porque	SCONJ	_	_	14	mark	14:mark	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	médico	médico	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	14:nsubj|15:nsubj	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	Samu	Samu	PROPN	_	_	10	nmod	10:nmod:de	_
+14	decidiu	decidir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	advcl	5:advcl:porque	_
+15-16	encaminhá-lo	_	_	_	_	_	_	_	_
+15	encaminhar	encaminhar	VERB	_	VerbForm=Inf	14	xcomp	14:xcomp	_
+16	lo	lo	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	obj	15:obj	_
+17-18	ao	_	_	_	_	_	_	_	_
+17	a	a	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	hospital	hospital	NOUN	_	Gender=Masc|Number=Sing	15	obl	15:obl:a	SpaceAfter=No
+20	,	,	PUNCT	_	_	23	punct	23:punct	_
+21	pois	pois	SCONJ	_	_	23	mark	23:mark	_
+22	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	23	nsubj	23:nsubj	_
+23	aparentava	aparentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	advcl	5:advcl:pois	_
+24	sinais	sinal	NOUN	_	Gender=Masc|Number=Plur	23	obj	23:obj	_
+25	de	de	ADP	_	ExtPos=SCONJ	28	mark	28:mark	_
+26	que	que	SCONJ	_	_	25	fixed	25:fixed	_
+27	havia	haver	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	28	aux	28:aux	_
+28	batido	bater	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	24	acl	24:acl:de_que	_
+29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	cabeça	cabeça	NOUN	_	Gender=Fem|Number=Sing	28	obj	28:obj	_
+31-32	no	_	_	_	_	_	_	_	_
+31	em	em	ADP	_	_	33	case	33:case	_
+32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	33:det	_
+33	acidente	acidente	NOUN	_	Gender=Masc|Number=Sing	28	obl	28:obl:em	SpaceAfter=No
+34	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0027
+# text = O que diz o ex-deputado Paulo Pizzolatti, irmão de João, alegou que o ex-deputado faz uso de antidepressivos e tem hipertensão e os sinais descritos pela polícia rodoviária podem ter relação com o uso dos medicamentos.
+1	O	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	13	nsubj	13:nsubj	_
+2	que	que	PRON	_	PronType=Int	1	fixed	1:fixed	_
+3	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	ex-deputado	ex-deputado	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+6	Paulo	Paulo	PROPN	_	_	5	nmod	5:nmod	_
+7	Pizzolatti	Pizzolatti	PROPN	_	_	6	flat:name	6:flat:name	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	irmão	irmão	NOUN	_	Gender=Masc|Number=Sing	5	appos	5:appos	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	João	João	PROPN	_	_	9	nmod	9:nmod:de	SpaceAfter=No
+12	,	,	PUNCT	_	_	9	punct	9:punct	_
+13	alegou	alegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	que	que	SCONJ	_	_	17	mark	17:mark|22:mark	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	ex-deputado	ex-deputado	NOUN	_	Gender=Masc|Number=Sing	17	nsubj	17:nsubj|22:nsubj	_
+17	faz	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	ccomp	13:ccomp	_
+18	uso	uso	NOUN	_	Gender=Masc|Number=Sing	17	obj	17:obj	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	antidepressivos	antidepressivo	NOUN	_	Gender=Masc|Number=Plur	18	nmod	18:nmod:de	_
+21	e	e	CCONJ	_	_	22	cc	22:cc	_
+22	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	conj	13:ccomp|17:conj:e	_
+23	hipertensão	hipertensão	NOUN	_	Gender=Fem|Number=Sing	22	obj	22:obj	_
+24	e	e	CCONJ	_	_	32	cc	32:cc	_
+25	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	26:det	_
+26	sinais	sinal	NOUN	_	Gender=Masc|Number=Plur	32	nsubj	32:nsubj|33:nsubj	_
+27	descritos	descrever	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	26	acl	26:acl	_
+28-29	pela	_	_	_	_	_	_	_	_
+28	por	por	ADP	_	_	30	case	30:case	_
+29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	polícia	polícia	NOUN	_	Number=Sing	27	obl:agent	27:obl:agent	_
+31	rodoviária	rodoviário	ADJ	_	Gender=Fem|Number=Sing	30	amod	30:amod	_
+32	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	conj	13:conj:e	_
+33	ter	ter	VERB	_	VerbForm=Inf	32	xcomp	32:xcomp	_
+34	relação	relação	NOUN	_	Gender=Fem|Number=Sing	33	obj	33:obj	_
+35	com	com	ADP	_	_	37	case	37:case	_
+36	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	37:det	_
+37	uso	uso	NOUN	_	Gender=Masc|Number=Sing	34	nmod	34:nmod:com	_
+38-39	dos	_	_	_	_	_	_	_	_
+38	de	de	ADP	_	_	40	case	40:case	_
+39	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	40	det	40:det	_
+40	medicamentos	medicamento	NOUN	_	Gender=Masc|Number=Plur	37	nmod	37:nmod:de	SpaceAfter=No
+41	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0029
+# text = fonte: Jornal O Município de Blumenau.
+1	fonte	fonte	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+2	:	:	PUNCT	_	_	3	punct	3:punct	_
+3	Jornal	Jornal	PROPN	_	_	1	nmod	1:nmod	_
+4	O	O	PROPN	_	_	3	flat:name	3:flat:name	_
+5	Município	Município	PROPN	_	_	3	flat:name	3:flat:name	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	Blumenau	Blumenau	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+8	.	.	PUNCT	_	_	1	punct	1:punct	_

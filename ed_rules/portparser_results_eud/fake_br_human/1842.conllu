@@ -1,0 +1,116 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Cuecas de luxo?
+1	Cuecas	cueca	NOUN	_	Gender=Fem|Number=Plur	0	root	0:root	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	luxo	luxo	NOUN	_	Gender=Masc|Number=Sing	1	nmod	1:nmod:de	SpaceAfter=No
+4	?	?	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Governador de MG é flagrado por internauta em shopping de SP: "Faliu Minas e vem gastar dinheiro aqui?".
+1	Governador	governador	NOUN	_	Gender=Masc|Number=Sing	5	nsubj:pass	5:nsubj:pass	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	MG	MG	PROPN	_	_	1	nmod	1:nmod:de	_
+4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:pass	5:aux:pass	_
+5	flagrado	flagrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+6	por	por	ADP	_	_	7	case	7:case	_
+7	internauta	internauta	NOUN	_	Number=Sing	5	obl:agent	5:obl:agent	_
+8	em	em	ADP	_	_	9	case	9:case	_
+9	shopping	shopping	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:em	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	SP	SP	PROPN	_	_	9	nmod	9:nmod:de	SpaceAfter=No
+12	:	:	PUNCT	_	_	14	punct	14:punct	_
+13	"	"	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+14	Faliu	falir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	parataxis	5:parataxis	_
+15	Minas	Minas	PROPN	_	_	14	obj	14:obj	_
+16	e	e	CCONJ	_	_	17	cc	17:cc	_
+17	vem	vir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	conj	5:parataxis|14:conj:e	_
+18	gastar	gastar	VERB	_	VerbForm=Inf	17	xcomp	17:xcomp	_
+19	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	18	obj	18:obj	_
+20	aqui	aqui	ADV	_	_	18	advmod	18:advmod	SpaceAfter=No
+21	?	?	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+22	"	"	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+23	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0005
+# text = Ele decretou estado de calamidade pública financeira em um estado e foi fazer compras em outro.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj|13:nsubj	_
+2	decretou	decretar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	estado	estado	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	calamidade	calamidade	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:de	_
+6	pública	público	ADJ	_	Gender=Fem|Number=Sing	5	amod	5:amod	_
+7	financeira	financeiro	ADJ	_	Gender=Fem|Number=Sing	5	amod	5:amod	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	estado	estado	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:em	_
+11	e	e	CCONJ	_	_	13	cc	13:cc	_
+12	foi	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	aux	13:aux	_
+13	fazer	fazer	VERB	_	VerbForm=Inf	2	conj	2:conj:e	_
+14	compras	compra	NOUN	_	Gender=Fem|Number=Plur	13	obj	13:obj	_
+15	em	em	ADP	_	_	16	case	16:case	_
+16	outro	outro	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	13	obl	13:obl:em	SpaceAfter=No
+17	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0007
+# text = Bem, parece que o povo não gostou muito!
+1	Bem	bem	ADV	_	_	3	discourse	3:discourse	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	parece	parecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	8	mark	8:mark	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	povo	povo	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	8:nsubj	_
+7	não	não	ADV	_	_	8	advmod	8:advmod	_
+8	gostou	gostar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	ccomp	3:ccomp	_
+9	muito	muito	ADV	_	_	8	advmod	8:advmod	SpaceAfter=No
+10	!	!	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0009
+# text = Você faliu Minas e vem gastar o dinheiro aqui em São Paulo?
+1	Você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	2	nsubj	2:nsubj|5:nsubj|6:nsubj	_
+2	faliu	falir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	Minas	Minas	PROPN	_	_	2	obj	2:obj	_
+4	e	e	CCONJ	_	_	5	cc	5:cc	_
+5	vem	vir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:e	_
+6	gastar	gastar	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+9	aqui	aqui	ADV	_	_	6	advmod	6:advmod	_
+10	em	em	ADP	_	_	11	case	11:case	_
+11	São	São	PROPN	_	_	9	obl	9:obl:em	_
+12	Paulo	Paulo	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+13	?	?	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0011
+# text = Acabou com Minas e agora veio gastar nosso dinheiro?
+1	Acabou	acabar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	com	com	ADP	_	_	3	case	3:case	_
+3	Minas	Minas	PROPN	_	_	1	obl	1:obl:com	_
+4	e	e	CCONJ	_	_	6	cc	6:cc	_
+5	agora	agora	ADV	_	_	6	advmod	6:advmod	_
+6	veio	vir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	conj	1:conj:e	_
+7	gastar	gastar	VERB	_	VerbForm=Inf	6	xcomp	6:xcomp	_
+8	nosso	nosso	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	9	det	9:det	_
+9	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	SpaceAfter=No
+10	?	?	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0013
+# text = Vagabundo.
+1	Vagabundo	vagabundo	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+2	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0015
+# text = Vocês vão pra cadeia (vídeo de Cláudio Dantas).
+1	Vocês	você	PRON	_	Case=Nom|Number=Plur|Person=2|PronType=Prs	2	nsubj	2:nsubj	_
+2	vão	ir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3-4	pra	_	_	_	_	_	_	_	_
+3	para	para	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	cadeia	cadeia	NOUN	_	Gender=Fem|Number=Sing	2	obl	2:obl:para	_
+6	(	(	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+7	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	2	parataxis	2:parataxis	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	Cláudio	Cláudio	PROPN	_	_	7	nmod	7:nmod:de	_
+10	Dantas	Dantas	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+11	)	)	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+12	.	.	PUNCT	_	_	2	punct	2:punct	_

@@ -1,0 +1,735 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = As crianças que morrem de fome nos arredores da maior mina de ouro do mundo.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	crianças	criança	NOUN	_	Gender=Fem|Number=Plur	0	root	0:root|4:nsubj	_
+3	que	que	PRON	_	PronType=Rel	4	nsubj	2:ref	_
+4	morrem	morrer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	fome	fome	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:de	_
+7-8	nos	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	9:det	_
+9	arredores	arredor	NOUN	_	Gender=Masc|Number=Plur	4	obl	4:obl:em	_
+10-11	da	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	13	case	13:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+12	maior	maior	ADJ	_	Number=Sing	13	amod	13:amod	_
+13	mina	mina	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:de	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	ouro	ouro	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod:de	_
+16-17	do	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod:de	SpaceAfter=No
+19	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Na remota província indonésia de Papua, a mineração e a indústria madeireira trouxeram riqueza, mas não para os nativos; uma crise de sarampo e desnutrição matou recentemente pelo menos 72 pessoas, principalmente crianças.
+1-2	Na	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	4	case	4:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+3	remota	remoto	ADJ	_	Gender=Fem|Number=Sing	4	amod	4:amod	_
+4	província	província	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl:em	_
+5	indonésia	indonésio	ADJ	_	Gender=Fem|Number=Sing	4	amod	4:amod	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	Papua	Papua	PROPN	_	_	4	nmod	4:nmod:de	SpaceAfter=No
+8	,	,	PUNCT	_	_	4	punct	4:punct	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	mineração	mineração	NOUN	_	Gender=Fem|Number=Sing	15	nsubj	15:nsubj	_
+11	e	e	CCONJ	_	_	13	cc	13:cc	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	indústria	indústria	NOUN	_	Gender=Fem|Number=Sing	10	conj	10:conj:e|15:nsubj	_
+14	madeireira	madeireiro	ADJ	_	Gender=Fem|Number=Sing	13	amod	13:amod	_
+15	trouxeram	trazer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+16	riqueza	riqueza	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	SpaceAfter=No
+17	,	,	PUNCT	_	_	22	punct	22:punct	_
+18	mas	mas	CCONJ	_	_	22	cc	22:cc	_
+19	não	não	ADV	_	_	22	advmod	22:advmod	_
+20	para	para	ADP	_	_	22	case	22:case	_
+21	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	22:det	_
+22	nativos	nativo	NOUN	_	Gender=Masc|Number=Plur	15	conj	15:conj:mas	SpaceAfter=No
+23	;	;	PUNCT	_	_	30	punct	30:punct	_
+24	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	crise	crise	NOUN	_	Gender=Fem|Number=Sing	30	nsubj	30:nsubj	_
+26	de	de	ADP	_	_	27	case	27:case|29:case	_
+27	sarampo	sarampo	NOUN	_	Gender=Masc|Number=Sing	25	nmod	25:nmod:de	_
+28	e	e	CCONJ	_	_	29	cc	29:cc	_
+29	desnutrição	desnutrição	NOUN	_	Gender=Fem|Number=Sing	27	conj	25:nmod:de|27:conj:e	_
+30	matou	matar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	conj	15:conj	_
+31	recentemente	recentemente	ADV	_	_	30	advmod	30:advmod	_
+32-33	pelo	_	_	_	_	_	_	_	_
+32	por	por	ADP	_	ExtPos=ADV	35	advmod	35:advmod	_
+33	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	fixed	32:fixed	_
+34	menos	menos	NOUN	_	Gender=Masc|Number=Sing	32	fixed	32:fixed	_
+35	72	72	NUM	_	NumType=Card	36	nummod	36:nummod	_
+36	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	30	obj	30:obj	SpaceAfter=No
+37	,	,	PUNCT	_	_	39	punct	39:punct	_
+38	principalmente	principalmente	ADV	_	_	39	advmod	39:advmod	_
+39	crianças	criança	NOUN	_	Gender=Fem|Number=Plur	36	appos	36:appos	SpaceAfter=No
+40	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0005
+# text = Esta calamidade expôs uma região onde jornalistas são proibidos há décadas e revelou graves negligências governamentais.
+1	Esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	2	det	2:det	_
+2	calamidade	calamidade	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj|13:nsubj	_
+3	expôs	expar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	região	região	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj|9:obl	_
+6	onde	onde	ADV	_	_	9	advmod	5:ref	_
+7	jornalistas	jornalista	NOUN	_	Number=Plur	9	nsubj:pass	9:nsubj:pass	_
+8	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	aux:pass	9:aux:pass	_
+9	proibidos	proibir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	5	acl:relcl	5:acl:relcl	_
+10	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	advcl	9:advcl	_
+11	décadas	década	NOUN	_	Gender=Fem|Number=Plur	10	obj	10:obj	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	revelou	revelar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	3:conj:e	_
+14	graves	grave	ADJ	_	Number=Plur	15	amod	15:amod	_
+15	negligências	negligência	NOUN	_	Gender=Fem|Number=Plur	13	obj	13:obj	_
+16	governamentais	governamental	ADJ	_	Number=Plur	15	amod	15:amod	SpaceAfter=No
+17	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = A vida de Yulita Atap, de apenas dois meses, é um retrato desolador.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	vida	vida	NOUN	_	Gender=Fem|Number=Sing	14	nsubj	14:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Yulita	Yulita	PROPN	_	_	2	nmod	2:nmod:de	_
+5	Atap	Atap	PROPN	_	_	4	flat:name	4:flat:name	SpaceAfter=No
+6	,	,	PUNCT	_	_	10	punct	10:punct	_
+7	de	de	ADP	_	_	10	case	10:case	_
+8	apenas	apenas	ADV	_	_	9	advmod	9:advmod	_
+9	dois	dois	NUM	_	Gender=Masc|NumType=Card	10	nummod	10:nummod	_
+10	meses	mÃªs	NOUN	_	Gender=Masc|Number=Plur	2	nmod	2:nmod:de	SpaceAfter=No
+11	,	,	PUNCT	_	_	10	punct	10:punct	_
+12	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	14:cop	_
+13	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	retrato	retrato	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+15	desolador	desolador	ADJ	_	Gender=Masc|Number=Sing	14	amod	14:amod	SpaceAfter=No
+16	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0009
+# text = Sua mãe faleceu no parto, e seu pai, desesperado, considerou enterrá-la viva com a mãe.
+1	Sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	det	2:det	_
+2	mãe	mãe	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_
+3	faleceu	falecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4-5	no	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	parto	parto	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:em	SpaceAfter=No
+7	,	,	PUNCT	_	_	14	punct	14:punct	_
+8	e	e	CCONJ	_	_	14	cc	14:cc	_
+9	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	10	det	10:det	_
+10	pai	pai	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	14:nsubj|15:nsubj	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	desesperado	desesperado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	14	advcl	14:advcl	SpaceAfter=No
+13	,	,	PUNCT	_	_	12	punct	12:punct	_
+14	considerou	considerar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	3:conj:e	_
+15-16	enterrá-la	_	_	_	_	_	_	_	_
+15	enterrar	enterrar	VERB	_	VerbForm=Inf	14	xcomp	14:xcomp	_
+16	la	lo	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	15	obj	15:obj	_
+17	viva	vivo	ADJ	_	Gender=Fem|Number=Sing	15	amod	15:amod	_
+18	com	com	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	mãe	mãe	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl:com	SpaceAfter=No
+21	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0011
+# text = "Ele estava fora de si, mas convenci-o de que isso desagradaria a Deus", relatou o tio de Yulita, Ruben Atap.
+1	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+2	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	4:nsubj	_
+3	estava	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	cop	4:cop	_
+4	fora	fora	ADV	_	_	19	ccomp:speech	19:ccomp:speech	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	si	si	PRON	_	Case=Dat|Number=Sing|Person=3|PronType=Prs	4	obl	4:obl:de	SpaceAfter=No
+7	,	,	PUNCT	_	_	9	punct	9:punct	_
+8	mas	mas	CCONJ	_	_	9	cc	9:cc	_
+9-10	convenci-o	_	_	_	_	_	_	_	_
+9	convenci	convencer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	4	conj	4:conj:mas|19:ccomp:speech	_
+10	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	9	obj	9:obj	_
+11	de	de	ADP	_	ExtPos=SCONJ	14	mark	14:mark	_
+12	que	que	SCONJ	_	_	11	fixed	11:fixed	_
+13	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	14	nsubj	14:nsubj	_
+14	desagradaria	desagradar	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	9	ccomp	9:ccomp	_
+15	a	a	ADP	_	_	16	case	16:case	_
+16	Deus	Deus	PROPN	_	_	14	obl	14:obl:a	SpaceAfter=No
+17	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+18	,	,	PUNCT	_	_	4	punct	4:punct	_
+19	relatou	relatar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	tio	tio	NOUN	_	Gender=Masc|Number=Sing	19	nsubj	19:nsubj	_
+22	de	de	ADP	_	_	23	case	23:case	_
+23	Yulita	Yulita	PROPN	_	_	21	nmod	21:nmod:de	SpaceAfter=No
+24	,	,	PUNCT	_	_	25	punct	25:punct	_
+25	Ruben	Ruben	PROPN	_	_	21	appos	21:appos	_
+26	Atap	Atap	PROPN	_	_	25	flat:name	25:flat:name	SpaceAfter=No
+27	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0013
+# text = Agora lutamos para mantê-la viva.
+1	Agora	agora	ADV	_	_	2	advmod	2:advmod	_
+2	lutamos	lutar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	para	para	ADP	_	_	4	mark	4:mark	_
+4-5	mantê-la	_	_	_	_	_	_	_	_
+4	manter	manter	VERB	_	VerbForm=Inf	2	advcl	2:advcl:para	_
+5	la	lo	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	4	obj	4:obj|6:nsubj	_
+6	viva	vivo	ADJ	_	Gender=Fem|Number=Sing	4	xcomp	4:xcomp	SpaceAfter=No
+7	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0015
+# text = Yulita está internada em um hospital precário na região de Asmat, uma vasta área de selva.
+1	Yulita	Yulita	PROPN	_	_	3	nsubj	3:nsubj	_
+2	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+3	internada	internado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	0	root	0:root	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	hospital	hospital	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:em	_
+7	precário	precário	ADJ	_	Gender=Masc|Number=Sing	6	amod	6:amod	_
+8-9	na	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	região	região	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:em	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	Asmat	Asmat	PROPN	_	_	10	nmod	10:nmod:de	SpaceAfter=No
+13	,	,	PUNCT	_	_	16	punct	16:punct	_
+14	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+15	vasta	vasto	ADJ	_	Gender=Fem|Number=Sing	16	amod	16:amod	_
+16	área	área	NOUN	_	Gender=Fem|Number=Sing	10	appos	10:appos	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	selva	selva	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:de	SpaceAfter=No
+19	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0017
+# text = Seu estado de saúde é crítico, com costelas salientes e um olhar vazio que denota a severidade da desnutrição.
+1	Seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	det	2:det	_
+2	estado	estado	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+6	crítico	crítico	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+7	,	,	PUNCT	_	_	9	punct	9:punct	_
+8	com	com	ADP	_	_	9	case	9:case|13:case	_
+9	costelas	costela	NOUN	_	Gender=Fem|Number=Plur	6	obl	6:obl:com	_
+10	salientes	saliente	ADJ	_	Number=Plur	9	amod	9:amod	_
+11	e	e	CCONJ	_	_	13	cc	13:cc	_
+12	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	olhar	olhar	NOUN	_	Gender=Masc|Number=Sing	9	conj	6:obl:com|9:conj:e|16:nsubj	_
+14	vazio	vazio	ADJ	_	Gender=Masc|Number=Sing	13	amod	13:amod	_
+15	que	que	PRON	_	PronType=Rel	16	nsubj	13:ref	_
+16	denota	denotar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	acl:relcl	13:acl:relcl	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	severidade	severidade	NOUN	_	Gender=Fem|Number=Sing	16	obj	16:obj	_
+19-20	da	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	desnutrição	desnutrição	NOUN	_	Gender=Fem|Number=Sing	18	nmod	18:nmod:de	SpaceAfter=No
+22	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0019
+# text = Ofnea Yohanna, mãe de três crianças igualmente desnutridas, revela a dura realidade: Comemos quando há comida, e passamos fome quando não há.
+1	Ofnea	Ofnea	PROPN	_	_	11	nsubj	11:nsubj	_
+2	Yohanna	Yohanna	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	mãe	mãe	NOUN	_	Gender=Fem|Number=Sing	1	appos	1:appos	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	três	três	NUM	_	NumType=Card	7	nummod	7:nummod	_
+7	crianças	criança	NOUN	_	Gender=Fem|Number=Plur	4	nmod	4:nmod:de	_
+8	igualmente	igualmente	ADV	_	_	9	advmod	9:advmod	_
+9	desnutridas	desnutrido	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	7	amod	7:amod	SpaceAfter=No
+10	,	,	PUNCT	_	_	4	punct	4:punct	_
+11	revela	revelar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+13	dura	duro	ADJ	_	Gender=Fem|Number=Sing	14	amod	14:amod	_
+14	realidade	realidade	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	SpaceAfter=No
+15	:	:	PUNCT	_	_	16	punct	16:punct	_
+16	Comemos	comer	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	11	parataxis	11:parataxis	_
+17	quando	quando	SCONJ	_	_	18	mark	18:mark	_
+18	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	advcl	16:advcl:quando	_
+19	comida	comida	NOUN	_	Gender=Fem|Number=Sing	18	obj	18:obj	SpaceAfter=No
+20	,	,	PUNCT	_	_	22	punct	22:punct	_
+21	e	e	CCONJ	_	_	22	cc	22:cc	_
+22	passamos	passar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	16	conj	11:parataxis|16:conj:e	_
+23	fome	fome	NOUN	_	Gender=Fem|Number=Sing	22	obj	22:obj	_
+24	quando	quando	SCONJ	_	_	26	mark	26:mark	_
+25	não	não	ADV	_	_	26	advmod	26:advmod	_
+26	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	advcl	22:advcl:quando	SpaceAfter=No
+27	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0021
+# text = Perdemos nosso barco de pesca, e sem ele, estamos perdidos.
+1	Perdemos	perder	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	nosso	nosso	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	det	3:det	_
+3	barco	barco	NOUN	_	Gender=Masc|Number=Sing	1	obj	1:obj	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	pesca	pesca	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	12	punct	12:punct	_
+7	e	e	CCONJ	_	_	12	cc	12:cc	_
+8	sem	sem	ADP	_	_	9	case	9:case	_
+9	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	obl	12:obl:sem	SpaceAfter=No
+10	,	,	PUNCT	_	_	9	punct	9:punct	_
+11	estamos	estar	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	12	cop	12:cop	_
+12	perdidos	perdido	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	1	conj	1:conj:e	SpaceAfter=No
+13	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0023
+# text = A tribo Asmat, antes autossuficiente com sua dieta tradicional baseada em sagu e pesca, agora enfrenta a escassez de alimentos naturais devido à degradação ambiental causada pela exploração madeireira e pela mineração.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	tribo	tribo	NOUN	_	Gender=Fem|Number=Sing	18	nsubj	18:nsubj	_
+3	Asmat	Asmat	PROPN	_	_	2	nmod	2:nmod	SpaceAfter=No
+4	,	,	PUNCT	_	_	6	punct	6:punct	_
+5	antes	antes	ADV	_	_	6	advmod	6:advmod	_
+6	autossuficiente	autossuficiente	ADJ	_	Number=Sing	2	amod	2:amod	_
+7	com	com	ADP	_	_	9	case	9:case	_
+8	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	9	det	9:det	_
+9	dieta	dieta	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:com	_
+10	tradicional	tradicional	ADJ	_	Number=Sing	9	amod	9:amod	_
+11	baseada	basear	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	9	acl	9:acl	_
+12	em	em	ADP	_	_	13	case	13:case|15:case	_
+13	sagu	sagu	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:em	_
+14	e	e	CCONJ	_	_	15	cc	15:cc	_
+15	pesca	pesca	NOUN	_	Gender=Fem|Number=Sing	13	conj	11:obl:em|13:conj:e	SpaceAfter=No
+16	,	,	PUNCT	_	_	6	punct	6:punct	_
+17	agora	agora	ADV	_	_	18	advmod	18:advmod	_
+18	enfrenta	enfrentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	escassez	escassez	NOUN	_	Gender=Fem|Number=Sing	18	obj	18:obj	_
+21	de	de	ADP	_	_	22	case	22:case	_
+22	alimentos	alimento	NOUN	_	Gender=Masc|Number=Plur	20	nmod	20:nmod:de	_
+23	naturais	natural	ADJ	_	Number=Plur	22	amod	22:amod	_
+24	devido	dever	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	18	advcl	18:advcl	_
+25-26	à	_	_	_	_	_	_	_	_
+25	a	a	ADP	_	_	27	case	27:case	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	degradação	degradação	NOUN	_	Gender=Fem|Number=Sing	24	obl	24:obl:a	_
+28	ambiental	ambiental	ADJ	_	Number=Sing	27	amod	27:amod	_
+29	causada	causar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	27	acl	27:acl	_
+30-31	pela	_	_	_	_	_	_	_	_
+30	por	por	ADP	_	_	32	case	32:case	_
+31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	32:det	_
+32	exploração	exploração	NOUN	_	Gender=Fem|Number=Sing	29	obl:agent	29:obl:agent	_
+33	madeireira	madeireiro	ADJ	_	Gender=Fem|Number=Sing	32	amod	32:amod	_
+34	e	e	CCONJ	_	_	37	cc	37:cc	_
+35-36	pela	_	_	_	_	_	_	_	_
+35	por	por	ADP	_	_	37	case	37:case	_
+36	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	37:det	_
+37	mineração	mineração	NOUN	_	Gender=Fem|Number=Sing	32	conj	29:obl:agent|32:conj:e	SpaceAfter=No
+38	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0025
+# text = A mina Freeport, operada por uma empresa dos Estados Unidos, é a maior de ouro no mundo e está no centro de Timika, uma cidade que cresce vertiginosamente.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	mina	mina	NOUN	_	Gender=Fem|Number=Sing	15	nsubj	15:nsubj|26:nsubj	_
+3	Freeport	Freeport	PROPN	_	_	2	nmod	2:nmod	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	operada	operar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	2:acl	_
+6	por	por	ADP	_	_	8	case	8:case	_
+7	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	empresa	empresa	NOUN	_	Gender=Fem|Number=Sing	5	obl:agent	5:obl:agent	_
+9-10	dos	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	11:det	_
+11	Estados	Estados	PROPN	_	_	8	nmod	8:nmod:de	_
+12	Unidos	Unidos	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+13	,	,	PUNCT	_	_	5	punct	5:punct	_
+14	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	15:cop	_
+15	a	o	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Dem	0	root	0:root	_
+16	maior	maior	ADJ	_	Number=Sing	15	amod	15:amod	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	ouro	ouro	NOUN	_	Gender=Masc|Number=Sing	15	nmod	15:nmod:de	_
+19-20	no	_	_	_	_	_	_	_	_
+19	em	em	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	15	nmod	15:nmod:em	_
+22	e	e	CCONJ	_	_	26	cc	26:cc	_
+23	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	cop	26:cop	_
+24-25	no	_	_	_	_	_	_	_	_
+24	em	em	ADP	_	_	26	case	26:case	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	centro	centro	NOUN	_	Gender=Masc|Number=Sing	15	conj	15:conj:e	_
+27	de	de	ADP	_	_	28	case	28:case	_
+28	Timika	Timika	PROPN	_	_	26	nmod	26:nmod:de	SpaceAfter=No
+29	,	,	PUNCT	_	_	31	punct	31:punct	_
+30	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+31	cidade	cidade	NOUN	_	Gender=Fem|Number=Sing	28	appos	28:appos|33:nsubj	_
+32	que	que	PRON	_	PronType=Rel	33	nsubj	31:ref	_
+33	cresce	crescer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	acl:relcl	31:acl:relcl	_
+34	vertiginosamente	vertiginosamente	ADV	_	_	33	advmod	33:advmod	SpaceAfter=No
+35	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0027
+# text = No entanto, essa riqueza não se traduz em bem-estar para os Asmat.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	ExtPos=CCONJ	9	cc	9:cc	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	1:fixed	_
+3	entanto	entanto	NOUN	_	Gender=Masc|Number=Sing	1	fixed	1:fixed	SpaceAfter=No
+4	,	,	PUNCT	_	_	1	punct	1:punct	_
+5	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	6	det	6:det	_
+6	riqueza	riqueza	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	9:nsubj	_
+7	não	não	ADV	_	_	9	advmod	9:advmod	_
+8	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	9	expl	9:expl	_
+9	traduz	traduzir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+10	em	em	ADP	_	_	11	case	11:case	_
+11	bem-estar	bem-estar	NOUN	_	Gender=Masc	9	obl	9:obl:em	_
+12	para	para	ADP	_	_	14	case	14:case	_
+13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	14:det	_
+14	Asmat	Asmat	PROPN	_	_	9	obl	9:obl:para	SpaceAfter=No
+15	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0029
+# text = Willem Bobi, um pesquisador local, destacou a ironia em seu livro "The Asmat Medicine Man": "Enquanto comida processada e dinheiro do governo chegam, os nativos se tornam dependentes, e a saúde piora".
+1	Willem	Willem	PROPN	_	_	8	nsubj	8:nsubj	_
+2	Bobi	Bobi	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	5	punct	5:punct	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	pesquisador	pesquisador	NOUN	_	Gender=Masc|Number=Sing	1	appos	1:appos	_
+6	local	local	ADJ	_	Number=Sing	5	amod	5:amod	SpaceAfter=No
+7	,	,	PUNCT	_	_	5	punct	5:punct	_
+8	destacou	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	ironia	ironia	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	13	det	13:det	_
+13	livro	livro	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:em	_
+14	"	"	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+15	The	The	PROPN	_	_	13	nmod	13:nmod	_
+16	Asmat	Asmat	PROPN	_	_	15	flat:name	15:flat:name	_
+17	Medicine	Medicine	PROPN	_	_	15	flat:name	15:flat:name	_
+18	Man	Man	PROPN	_	_	15	flat:name	15:flat:name	SpaceAfter=No
+19	"	"	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+20	:	:	PUNCT	_	_	35	punct	35:punct	_
+21	"	"	PUNCT	_	_	35	punct	35:punct	SpaceAfter=No
+22	Enquanto	enquanto	SCONJ	_	_	30	mark	30:mark	_
+23	comida	comida	NOUN	_	Gender=Fem|Number=Sing	30	nsubj	30:nsubj	_
+24	processada	processado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	23	amod	23:amod	_
+25	e	e	CCONJ	_	_	26	cc	26:cc	_
+26	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	23	conj	23:conj:e|30:nsubj	_
+27-28	do	_	_	_	_	_	_	_	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	29:det	_
+29	governo	governo	NOUN	_	Gender=Masc|Number=Sing	26	nmod	26:nmod:de	_
+30	chegam	chegar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	35	advcl	35:advcl:enquanto|41:advcl:enquanto	SpaceAfter=No
+31	,	,	PUNCT	_	_	30	punct	30:punct	_
+32	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	33	det	33:det	_
+33	nativos	nativo	NOUN	_	Gender=Masc|Number=Plur	35	nsubj	35:nsubj|36:nsubj	_
+34	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	35	expl	35:expl	_
+35	tornam	tornar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	conj	8:conj	_
+36	dependentes	dependente	NOUN	_	Number=Plur	35	xcomp	35:xcomp	SpaceAfter=No
+37	,	,	PUNCT	_	_	41	punct	41:punct	_
+38	e	e	CCONJ	_	_	41	cc	41:cc	_
+39	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	40:det	_
+40	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	41	nsubj	41:nsubj	_
+41	piora	piorar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	35	conj	35:conj:e	SpaceAfter=No
+42	"	"	PUNCT	_	_	35	punct	35:punct	SpaceAfter=No
+43	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0031
+# text = O presidente Joko Widodo, após uma resposta inicial lenta, enviou tropas militares e equipes médicas para conter a epidemia de sarampo.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	presidente	presidente	NOUN	_	Number=Sing	12	nsubj	12:nsubj	_
+3	Joko	Joko	PROPN	_	_	2	nmod	2:nmod	_
+4	Widodo	Widodo	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	8	punct	8:punct	_
+6	após	após	ADP	_	_	8	case	8:case	_
+7	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	resposta	resposta	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl:após	_
+9	inicial	inicial	ADJ	_	Number=Sing	8	amod	8:amod	_
+10	lenta	lento	ADJ	_	Gender=Fem|Number=Sing	8	amod	8:amod	SpaceAfter=No
+11	,	,	PUNCT	_	_	8	punct	8:punct	_
+12	enviou	enviar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+13	tropas	tropa	NOUN	_	Gender=Fem|Number=Plur	12	obj	12:obj	_
+14	militares	militar	ADJ	_	Number=Plur	13	amod	13:amod	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	equipes	equipe	NOUN	_	Gender=Fem|Number=Plur	13	conj	12:obj|13:conj:e	_
+17	médicas	médico	ADJ	_	Gender=Fem|Number=Plur	16	amod	16:amod	_
+18	para	para	ADP	_	_	19	mark	19:mark	_
+19	conter	conter	VERB	_	VerbForm=Inf	12	advcl	12:advcl:para	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	epidemia	epidemia	NOUN	_	Gender=Fem|Number=Sing	19	obj	19:obj	_
+22	de	de	ADP	_	_	23	case	23:case	_
+23	sarampo	sarampo	NOUN	_	Gender=Masc|Number=Sing	21	nmod	21:nmod:de	SpaceAfter=No
+24	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0033
+# text = A vacinação emergencial abrangeu mais de 17,3 mil crianças, e as autoridades afirmam ter a situação sob controle.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	vacinação	vacinação	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+3	emergencial	emergencial	ADJ	_	Number=Sing	2	amod	2:amod	_
+4	abrangeu	abranger	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	mais	mais	ADV	_	ExtPos=ADV	7	advmod	7:advmod	_
+6	de	de	ADP	_	_	5	fixed	5:fixed	_
+7	17,3	17,3	NUM	_	NumType=Card	9	nummod	9:nummod	_
+8	mil	mil	NUM	_	NumType=Card	7	flat	7:flat	_
+9	crianças	criança	NOUN	_	Gender=Fem|Number=Plur	4	obj	4:obj	SpaceAfter=No
+10	,	,	PUNCT	_	_	14	punct	14:punct	_
+11	e	e	CCONJ	_	_	14	cc	14:cc	_
+12	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	13:det	_
+13	autoridades	autoridade	NOUN	_	Gender=Fem|Number=Plur	14	nsubj	14:nsubj|15:nsubj	_
+14	afirmam	afirmar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	conj	4:conj:e	_
+15	ter	ter	VERB	_	VerbForm=Inf	14	xcomp	14:xcomp	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	situação	situação	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	_
+18	sob	sob	ADP	_	_	19	case	19:case	_
+19	controle	controle	NOUN	_	Gender=Masc|Number=Sing	15	obl	15:obl:sob	SpaceAfter=No
+20	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0035
+# text = Mas o problema vai além da saúde: a região é um barril de pólvora, com tensões separatistas e acusações de abusos militares.
+1	Mas	mas	CCONJ	_	_	4	cc	4:cc	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	problema	problema	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+4	vai	ir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	além	além	ADV	_	_	4	advmod	4:advmod	_
+6-7	da	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:de	SpaceAfter=No
+9	:	:	PUNCT	_	_	14	punct	14:punct	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	região	região	NOUN	_	Gender=Fem|Number=Sing	14	nsubj	14:nsubj	_
+12	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	14:cop	_
+13	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	barril	barril	NOUN	_	Gender=Masc|Number=Sing	4	parataxis	4:parataxis	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	pólvora	pólvora	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:de	SpaceAfter=No
+17	,	,	PUNCT	_	_	19	punct	19:punct	_
+18	com	com	ADP	_	_	19	case	19:case|22:case	_
+19	tensões	tensão	NOUN	_	Gender=Fem|Number=Plur	14	nmod	14:nmod:com	_
+20	separatistas	separatista	ADJ	_	Number=Plur	19	amod	19:amod	_
+21	e	e	CCONJ	_	_	22	cc	22:cc	_
+22	acusações	acusação	NOUN	_	Gender=Fem|Number=Plur	19	conj	14:nmod:com|19:conj:e	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	abusos	abuso	NOUN	_	Gender=Masc|Number=Plur	22	nmod	22:nmod:de	_
+25	militares	militar	ADJ	_	Number=Plur	24	amod	24:amod	SpaceAfter=No
+26	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0037
+# text = Recentemente, uma mulher foi morta a tiros sob circunstâncias controversas, enquanto a polícia alega que ela participava de uma tentativa de fuga de um preso acusado de contrabando de minério da Freeport-McMoRan.
+1	Recentemente	recentemente	ADV	_	_	6	advmod	6:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	mulher	mulher	NOUN	_	Gender=Fem|Number=Sing	6	nsubj:pass	6:nsubj:pass	_
+5	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	aux:pass	6:aux:pass	_
+6	morta	morta	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+7	a	a	ADP	_	_	8	case	8:case	_
+8	tiros	tiro	NOUN	_	Gender=Masc|Number=Plur	6	obl	6:obl:a	_
+9	sob	sob	ADP	_	_	10	case	10:case	_
+10	circunstâncias	circunstância	NOUN	_	Gender=Fem|Number=Plur	6	obl	6:obl:sob	_
+11	controversas	controverso	ADJ	_	Gender=Fem|Number=Plur	10	amod	10:amod	SpaceAfter=No
+12	,	,	PUNCT	_	_	16	punct	16:punct	_
+13	enquanto	enquanto	SCONJ	_	_	16	mark	16:mark	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	polícia	polícia	NOUN	_	Number=Sing	16	nsubj	16:nsubj	_
+16	alega	alegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	advcl	6:advcl:enquanto	_
+17	que	que	SCONJ	_	_	19	mark	19:mark	_
+18	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	19	nsubj	19:nsubj	_
+19	participava	participar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	16	ccomp	16:ccomp	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	tentativa	tentativa	NOUN	_	Gender=Fem|Number=Sing	19	obl	19:obl:de	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	fuga	fuga	NOUN	_	Gender=Fem|Number=Sing	22	nmod	22:nmod:de	_
+25	de	de	ADP	_	_	27	case	27:case	_
+26	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	preso	preso	NOUN	_	Gender=Masc|Number=Sing	22	nmod	22:nmod:de	_
+28	acusado	acusar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	27	acl	27:acl	_
+29	de	de	ADP	_	_	30	case	30:case	_
+30	contrabando	contrabando	NOUN	_	Gender=Masc|Number=Sing	28	obl	28:obl:de	_
+31	de	de	ADP	_	_	32	case	32:case	_
+32	minério	minério	NOUN	_	Gender=Masc|Number=Sing	30	nmod	30:nmod:de	_
+33-34	da	_	_	_	_	_	_	_	_
+33	de	de	ADP	_	_	35	case	35:case	_
+34	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	35:det	_
+35	Freeport-McMoRan	Freeport-McMoRan	PROPN	_	_	32	nmod	32:nmod:de	SpaceAfter=No
+36	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0039
+# text = A família insiste que ela era inocente.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	família	família	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_
+3	insiste	insistir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	7	mark	7:mark	_
+5	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	7	nsubj	7:nsubj	_
+6	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	cop	7:cop	_
+7	inocente	inocente	ADJ	_	Number=Sing	3	ccomp	3:ccomp	SpaceAfter=No
+8	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0041
+# text = Esses eventos aumentaram a pressão internacional, com a ONU expressando preocupação e prometendo uma missão de investigação.
+1	Esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	2	det	2:det	_
+2	eventos	evento	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	3:nsubj	_
+3	aumentaram	aumentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	pressão	pressão	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+6	internacional	internacional	ADJ	_	Number=Sing	5	amod	5:amod	SpaceAfter=No
+7	,	,	PUNCT	_	_	11	punct	11:punct	_
+8	com	com	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	ONU	ONU	PROPN	_	_	3	obl	3:obl:com	_
+11	expressando	expressar	VERB	_	VerbForm=Ger	3	advcl	3:advcl	_
+12	preocupação	preocupação	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	_
+13	e	e	CCONJ	_	_	14	cc	14:cc	_
+14	prometendo	prometer	VERB	_	VerbForm=Ger	11	conj	3:advcl|11:conj:e	_
+15	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	missão	missão	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	investigação	investigação	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:de	SpaceAfter=No
+19	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0043
+# text = Líderes locais, como Elisa Kambu, criticam a abordagem do governo: "Falam de dinheiro, mas ignoram nossa cultura, costumes e conexão com a terra".
+1	Líderes	líder	NOUN	_	Gender=Masc|Number=Plur	8	nsubj	8:nsubj	_
+2	locais	local	ADJ	_	Number=Plur	1	amod	1:amod	SpaceAfter=No
+3	,	,	PUNCT	_	_	5	punct	5:punct	_
+4	como	como	ADP	_	_	5	case	5:case	_
+5	Elisa	Elisa	PROPN	_	_	1	nmod	1:nmod:como	_
+6	Kambu	Kambu	PROPN	_	_	5	flat:name	5:flat:name	SpaceAfter=No
+7	,	,	PUNCT	_	_	5	punct	5:punct	_
+8	criticam	criticar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	abordagem	abordagem	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	governo	governo	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:de	SpaceAfter=No
+14	:	:	PUNCT	_	_	16	punct	16:punct	_
+15	"	"	PUNCT	_	_	16	punct	16:punct	SpaceAfter=No
+16	Falam	falar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	parataxis	8:parataxis	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	16	obl	16:obl:de	SpaceAfter=No
+19	,	,	PUNCT	_	_	21	punct	21:punct	_
+20	mas	mas	CCONJ	_	_	21	cc	21:cc	_
+21	ignoram	ignorar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	conj	8:parataxis|16:conj:mas	_
+22	nossa	nosso	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	23	det	23:det	_
+23	cultura	cultura	NOUN	_	Gender=Fem|Number=Sing	21	obj	21:obj	SpaceAfter=No
+24	,	,	PUNCT	_	_	25	punct	25:punct	_
+25	costumes	costume	NOUN	_	Gender=Masc|Number=Plur	23	conj	21:obj|23:conj:e	_
+26	e	e	CCONJ	_	_	27	cc	27:cc	_
+27	conexão	conexão	NOUN	_	Gender=Fem|Number=Sing	23	conj	21:obj|23:conj:e	_
+28	com	com	ADP	_	_	30	case	30:case	_
+29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	terra	terra	NOUN	_	Gender=Fem|Number=Sing	27	nmod	27:nmod:com	SpaceAfter=No
+31	"	"	PUNCT	_	_	16	punct	16:punct	SpaceAfter=No
+32	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0045
+# text = O presidente Widodo, que já visitou Papua diversas vezes, prometeu mais investimentos em infraestrutura, escolas e saúde.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	presidente	presidente	NOUN	_	Number=Sing	12	nsubj	7:nsubj|12:nsubj	_
+3	Widodo	Widodo	PROPN	_	_	2	nmod	2:nmod	SpaceAfter=No
+4	,	,	PUNCT	_	_	7	punct	7:punct	_
+5	que	que	PRON	_	PronType=Rel	7	nsubj	2:ref	_
+6	já	já	ADV	_	_	7	advmod	7:advmod	_
+7	visitou	visitar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+8	Papua	Papua	PROPN	_	_	7	obj	7:obj	_
+9	diversas	diversos	DET	_	Gender=Fem|Number=Plur|PronType=Dem	10	det	10:det	_
+10	vezes	vez	NOUN	_	Gender=Fem|Number=Plur	7	obl	7:obl	SpaceAfter=No
+11	,	,	PUNCT	_	_	7	punct	7:punct	_
+12	prometeu	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+13	mais	mais	DET	_	PronType=Ind	14	det	14:det	_
+14	investimentos	investimento	NOUN	_	Gender=Masc|Number=Plur	12	obj	12:obj	_
+15	em	em	ADP	_	_	16	case	16:case|18:case|20:case	_
+16	infraestrutura	infraestrutura	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:em	SpaceAfter=No
+17	,	,	PUNCT	_	_	18	punct	18:punct	_
+18	escolas	escola	NOUN	_	Gender=Fem|Number=Plur	16	conj	14:nmod:em|16:conj:e	_
+19	e	e	CCONJ	_	_	20	cc	20:cc	_
+20	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	16	conj	14:nmod:em|16:conj:e	SpaceAfter=No
+21	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0047
+# text = Mas a realocação das tribos para cidades foi rejeitada por líderes como Kambu: "Nosso povo não é apenas números, temos uma ligação vital com nossa terra".
+1	Mas	mas	CCONJ	_	_	10	cc	10:cc	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	realocação	realocação	NOUN	_	Gender=Fem|Number=Sing	10	nsubj:pass	10:nsubj:pass	_
+4-5	das	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	6:det	_
+6	tribos	tribo	NOUN	_	Gender=Fem|Number=Plur	3	nmod	3:nmod:de	_
+7	para	para	ADP	_	_	8	case	8:case	_
+8	cidades	cidade	NOUN	_	Gender=Fem|Number=Plur	3	nmod	3:nmod:para	_
+9	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	aux:pass	10:aux:pass	_
+10	rejeitada	rejeitar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+11	por	por	ADP	_	_	12	case	12:case	_
+12	líderes	líder	NOUN	_	Gender=Masc|Number=Plur	10	obl:agent	10:obl:agent	_
+13	como	como	ADP	_	_	14	case	14:case	_
+14	Kambu	Kambu	PROPN	_	_	12	nmod	12:nmod:como	SpaceAfter=No
+15	:	:	PUNCT	_	_	22	punct	22:punct	_
+16	"	"	PUNCT	_	_	22	punct	22:punct	SpaceAfter=No
+17	Nosso	nosso	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	18	det	18:det	_
+18	povo	povo	NOUN	_	Gender=Masc|Number=Sing	22	nsubj	22:nsubj	_
+19	não	não	ADV	_	_	22	advmod	22:advmod	_
+20	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	cop	22:cop	_
+21	apenas	apenas	ADV	_	_	22	advmod	22:advmod	_
+22	números	número	NOUN	_	Gender=Masc|Number=Plur	10	parataxis	10:parataxis	SpaceAfter=No
+23	,	,	PUNCT	_	_	24	punct	24:punct	_
+24	temos	ter	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	22	parataxis	22:parataxis	_
+25	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	ligação	ligação	NOUN	_	Gender=Fem|Number=Sing	24	obj	24:obj	_
+27	vital	vital	ADJ	_	Number=Sing	26	amod	26:amod	_
+28	com	com	ADP	_	_	30	case	30:case	_
+29	nossa	nosso	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	30	det	30:det	_
+30	terra	terra	NOUN	_	Gender=Fem|Number=Sing	26	nmod	26:nmod:com	SpaceAfter=No
+31	"	"	PUNCT	_	_	22	punct	22:punct	SpaceAfter=No
+32	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0049
+# text = Ruben Atap ainda sonha com um futuro melhor para Yulita: "Espero que ela possa ir à escola e ter uma vida diferente da que temos hoje".
+1	Ruben	Ruben	PROPN	_	_	4	nsubj	4:nsubj	_
+2	Atap	Atap	PROPN	_	_	1	flat:name	1:flat:name	_
+3	ainda	ainda	ADV	_	_	4	advmod	4:advmod	_
+4	sonha	sonhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	com	com	ADP	_	_	7	case	7:case	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	futuro	futuro	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:com	_
+8	melhor	melhor	ADJ	_	Number=Sing	7	amod	7:amod	_
+9	para	para	ADP	_	_	10	case	10:case	_
+10	Yulita	Yulita	PROPN	_	_	7	nmod	7:nmod:para	SpaceAfter=No
+11	:	:	PUNCT	_	_	13	punct	13:punct	_
+12	"	"	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+13	Espero	esperar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	parataxis	4:parataxis	_
+14	que	que	SCONJ	_	_	16	mark	16:mark	_
+15	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	16	nsubj	16:nsubj|17:nsubj|22:nsubj	_
+16	possa	poder	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	ccomp	13:ccomp	_
+17	ir	ir	VERB	_	VerbForm=Inf	16	xcomp	16:xcomp	_
+18-19	à	_	_	_	_	_	_	_	_
+18	a	a	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	escola	escola	NOUN	_	Gender=Fem|Number=Sing	17	obl	17:obl:a	_
+21	e	e	CCONJ	_	_	22	cc	22:cc	_
+22	ter	ter	VERB	_	VerbForm=Inf	17	conj	16:xcomp|17:conj:e	_
+23	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	vida	vida	NOUN	_	Gender=Fem|Number=Sing	22	obj	22:obj	_
+25	diferente	diferente	ADJ	_	Number=Sing	24	amod	24:amod	_
+26-27	da	_	_	_	_	_	_	_	_
+26	de	de	ADP	_	_	27	case	27:case	_
+27	a	o	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Dem	25	obl	25:obl:de|29:obj	_
+28	que	que	PRON	_	PronType=Rel	29	obj	27:ref	_
+29	temos	ter	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	27	acl:relcl	27:acl:relcl	_
+30	hoje	hoje	ADV	_	_	29	advmod	29:advmod	SpaceAfter=No
+31	"	"	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+32	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0051
+# text = Contudo, sem mudanças reais e respeito pela cultura local, a esperança de Ruben pode permanecer um mero sonho.
+1	Contudo	contudo	CCONJ	_	_	17	cc	17:cc	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	sem	sem	ADP	_	_	4	case	4:case|7:case	_
+4	mudanças	mudança	NOUN	_	Gender=Fem|Number=Plur	17	obl	17:obl:sem	_
+5	reais	real	ADJ	_	Number=Plur	4	amod	4:amod	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	respeito	respeito	NOUN	_	Gender=Masc|Number=Sing	4	conj	4:conj:e|17:obl:sem	_
+8-9	pela	_	_	_	_	_	_	_	_
+8	por	por	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	cultura	cultura	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:por	_
+11	local	local	ADJ	_	Number=Sing	10	amod	10:amod	SpaceAfter=No
+12	,	,	PUNCT	_	_	4	punct	4:punct	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	esperança	esperança	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	17:nsubj|18:nsubj|21:nsubj	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	Ruben	Ruben	PROPN	_	_	14	nmod	14:nmod:de	_
+17	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+18	permanecer	permanecer	VERB	_	VerbForm=Inf	17	xcomp	17:xcomp	_
+19	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+20	mero	mero	ADJ	_	Gender=Masc|Number=Sing	21	amod	21:amod	_
+21	sonho	sonho	NOUN	_	Gender=Masc|Number=Sing	18	xcomp	18:xcomp	SpaceAfter=No
+22	.	.	PUNCT	_	_	17	punct	17:punct	_

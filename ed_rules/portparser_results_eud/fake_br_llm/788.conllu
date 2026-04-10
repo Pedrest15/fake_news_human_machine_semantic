@@ -1,0 +1,99 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = URGENTE: Furacão Irma causa caos e mortes; FOTOS chocantes revelam verdade oculta!
+1	URGENTE	urgente	ADJ	_	Number=Sing	5	dep	5:dep	SpaceAfter=No
+2	:	:	PUNCT	_	_	1	punct	1:punct	_
+3	Furacão	furacão	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+4	Irma	Irma	PROPN	_	_	3	flat:name	3:flat:name	_
+5	causa	causar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	caos	caos	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	mortes	morte	NOUN	_	Gender=Fem|Number=Plur	6	conj	5:obj|6:conj:e	SpaceAfter=No
+9	;	;	PUNCT	_	_	12	punct	12:punct	_
+10	FOTOS	FOTOS	PROPN	_	_	12	nsubj	12:nsubj	_
+11	chocantes	chocante	ADJ	_	Number=Plur	10	amod	10:amod	_
+12	revelam	revelar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	parataxis	5:parataxis	_
+13	verdade	verdade	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+14	oculta	oculto	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	13	amod	13:amod	SpaceAfter=No
+15	!	!	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0003
+# text = O furacão, agora considerado o mais devastador da história, deixou mais de 100 mortos no Caribe e nos EUA.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	furacão	furacão	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	13:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	5	punct	5:punct	_
+4	agora	agora	ADV	_	_	5	advmod	5:advmod	_
+5	considerado	considerar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	2:acl	_
+6	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	xcomp	5:xcomp	_
+7	mais	mais	ADV	_	_	8	advmod	8:advmod	_
+8	devastador	devastador	ADJ	_	Gender=Masc|Number=Sing	6	amod	6:amod	_
+9-10	da	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	história	história	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de	SpaceAfter=No
+12	,	,	PUNCT	_	_	5	punct	5:punct	_
+13	deixou	deixar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	mais	mais	ADV	_	ExtPos=ADV	16	advmod	16:advmod	_
+15	de	de	ADP	_	_	14	fixed	14:fixed	_
+16	100	100	NUM	_	NumType=Card	17	nummod	17:nummod	_
+17	mortos	morto	NOUN	_	Gender=Masc|Number=Plur	13	obj	13:obj	_
+18-19	no	_	_	_	_	_	_	_	_
+18	em	em	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	Caribe	Caribe	PROPN	_	_	13	obl	13:obl:em	_
+21	e	e	CCONJ	_	_	24	cc	24:cc	_
+22-23	nos	_	_	_	_	_	_	_	_
+22	em	em	ADP	_	_	24	case	24:case	_
+23	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	24:det	_
+24	EUA	EUA	PROPN	_	_	20	conj	13:obl:em|20:conj:e	SpaceAfter=No
+25	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0005
+# text = Cidades inteiras foram submersas, e especialistas afirmam que a reconstrução pode levar décadas.
+1	Cidades	cidade	NOUN	_	Gender=Fem|Number=Plur	4	nsubj:pass	4:nsubj:pass	_
+2	inteiras	inteiro	ADJ	_	Gender=Fem|Number=Plur	1	amod	1:amod	_
+3	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	submersas	submergir	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	SpaceAfter=No
+5	,	,	PUNCT	_	_	8	punct	8:punct	_
+6	e	e	CCONJ	_	_	8	cc	8:cc	_
+7	especialistas	especialista	NOUN	_	Number=Plur	8	nsubj	8:nsubj	_
+8	afirmam	afirmar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	conj	4:conj:e	_
+9	que	que	SCONJ	_	_	12	mark	12:mark	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	reconstrução	reconstrução	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	12:nsubj|13:nsubj	_
+12	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	ccomp	8:ccomp	_
+13	levar	levar	VERB	_	VerbForm=Inf	12	xcomp	12:xcomp	_
+14	décadas	década	NOUN	_	Gender=Fem|Number=Plur	13	obj	13:obj	SpaceAfter=No
+15	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0007
+# text = Autoridades locais estão sendo acusadas de ocultar a real dimensão da tragédia.
+1	Autoridades	autoridade	NOUN	_	Gender=Fem|Number=Plur	5	nsubj:pass	5:nsubj:pass|7:nsubj	_
+2	locais	local	ADJ	_	Number=Plur	1	amod	1:amod	_
+3	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux	5:aux	_
+4	sendo	ser	AUX	_	VerbForm=Ger	5	aux:pass	5:aux:pass	_
+5	acusadas	acusar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	_
+6	de	de	ADP	_	_	7	mark	7:mark	_
+7	ocultar	ocultar	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+9	real	real	ADJ	_	Number=Sing	10	amod	10:amod	_
+10	dimensão	dimensão	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	_
+11-12	da	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	tragédia	tragédia	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:de	SpaceAfter=No
+14	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0009
+# text = Veja detalhes exclusivos e siga a cobertura em tempo real!
+1	Veja	ver	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	detalhes	detalhe	NOUN	_	Gender=Masc|Number=Plur	1	obj	1:obj	_
+3	exclusivos	exclusivo	ADJ	_	Gender=Masc|Number=Plur	2	amod	2:amod	_
+4	e	e	CCONJ	_	_	5	cc	5:cc	_
+5	siga	seguir	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	1	conj	1:conj:e	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	cobertura	cobertura	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+8	em	em	ADP	_	_	9	case	9:case	_
+9	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:em	_
+10	real	real	ADJ	_	Number=Sing	9	amod	9:amod	SpaceAfter=No
+11	!	!	PUNCT	_	_	1	punct	1:punct	_

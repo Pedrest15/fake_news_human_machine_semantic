@@ -1,0 +1,179 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = zíbia gasparetto, escritora espiritualista, morreu aos 91 anos em são paulo hoje nos deixou zíbia gasparetto, na quinta passada tinha ido seu filho luiz.
+1	zíbia	zíbia	PROPN	_	_	7	nsubj	7:nsubj|17:nsubj	_
+2	gasparetto	gasparetto	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	escritora	escritor	NOUN	_	Gender=Fem|Number=Sing	1	appos	1:appos	_
+5	espiritualista	espiritualista	ADJ	_	Number=Sing	4	amod	4:amod	SpaceAfter=No
+6	,	,	PUNCT	_	_	4	punct	4:punct	_
+7	morreu	morrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8-9	aos	_	_	_	_	_	_	_	_
+8	a	a	ADP	_	_	11	case	11:case	_
+9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	11:det	_
+10	91	91	NUM	_	NumType=Card	11	nummod	11:nummod	_
+11	anos	ano	NOUN	_	Gender=Masc|Number=Plur	7	obl	7:obl:a	_
+12	em	em	ADP	_	_	13	case	13:case	_
+13	são	são	NOUN	_	_	7	obl	7:obl:em	_
+14	paulo	paulo	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod	_
+15	hoje	hoje	ADV	_	_	17	advmod	17:advmod	_
+16	nos	nos	PRON	_	Case=Dat|Number=Plur|Person=1|PronType=Prs	17	iobj	17:iobj	_
+17	deixou	deixar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	conj	7:conj	_
+18	zíbia	zíbia	NOUN	_	Gender=Fem|Number=Sing	17	obj	17:obj	_
+19	gasparetto	gasparetto	PROPN	_	_	18	flat:name	18:flat:name	SpaceAfter=No
+20	,	,	PUNCT	_	_	26	punct	26:punct	_
+21-22	na	_	_	_	_	_	_	_	_
+21	em	em	ADP	_	_	23	case	23:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	quinta	quinto	NOUN	_	Abbr=Yes|Gender=Fem|Number=Sing	26	obl	26:obl:em	_
+24	passada	passado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	23	amod	23:amod	_
+25	tinha	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	26	aux	26:aux	_
+26	ido	ir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	7	parataxis	7:parataxis	_
+27	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	28	det	28:det	_
+28	filho	filho	NOUN	_	Gender=Masc|Number=Sing	26	nsubj	26:nsubj	_
+29	luiz	luiz	NOUN	_	_	28	nmod	28:nmod	SpaceAfter=No
+30	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0003
+# text = ambos escritores, espiritas que nos deixaram diversas obras.
+1	ambos	ambos	DET	_	Gender=Masc|Number=Plur|PronType=Ind	2	det	2:det	_
+2	escritores	escritor	NOUN	_	Gender=Masc|Number=Plur	0	root	0:root	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	espiritas	espirita	NOUN	_	Number=Plur	2	appos	2:appos|7:nsubj	_
+5	que	que	PRON	_	PronType=Rel	7	nsubj	4:ref	_
+6	nos	nos	PRON	_	Case=Dat|Number=Plur|Person=1|PronType=Prs	7	iobj	7:iobj	_
+7	deixaram	deixar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	4	acl:relcl	4:acl:relcl	_
+8	diversas	diversos	DET	_	Gender=Fem|Number=Plur|PronType=Dem	9	det	9:det	_
+9	obras	obra	NOUN	_	Gender=Fem|Number=Plur	7	obj	7:obj	SpaceAfter=No
+10	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = os romances que eu amo ler eram o forte dos dois que através deles nos aconselhavam sobre a vida e nos preparavam para o nosso além dela.
+1	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	romances	romance	NOUN	_	Number=Plur	9	nsubj	6:obj|9:nsubj	_
+3	que	que	PRON	_	PronType=Rel	5	obj	2:ref	_
+4	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	5:nsubj|6:nsubj	_
+5	amo	amar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+6	ler	ler	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	_
+7	eram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	9	cop	9:cop	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	forte	forte	NOUN	_	Number=Sing	0	root	0:root	_
+10-11	dos	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	12:det	_
+12	dois	dois	NUM	_	Gender=Masc|NumType=Card	9	nmod	9:nmod:de|18:nsubj|24:nsubj	_
+13	que	que	PRON	_	PronType=Rel	18	nsubj	12:ref	_
+14	através	através	ADV	_	_	18	advmod	18:advmod	_
+15-16	deles	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	14	obl	14:obl:de	_
+17	nos	nos	PRON	_	Case=Acc|Number=Plur|Person=1|PronType=Prs	18	obj	18:obj	_
+18	aconselhavam	aconselhar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	12	acl:relcl	12:acl:relcl	_
+19	sobre	sobre	ADP	_	_	21	case	21:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	vida	vida	NOUN	_	Gender=Fem|Number=Sing	18	obl	18:obl:sobre	_
+22	e	e	CCONJ	_	_	24	cc	24:cc	_
+23	nos	nos	PRON	_	Case=Acc|Number=Plur|Person=1|PronType=Prs	24	obj	24:obj	_
+24	preparavam	preparar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	18	conj	12:acl:relcl|18:conj:e	_
+25	para	para	ADP	_	_	28	case	28:case	_
+26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+27	nosso	nosso	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	28	det	28:det	_
+28	além	além	ADV	_	_	24	obl	24:obl:para	_
+29-30	dela	_	_	_	_	_	_	_	_
+29	de	de	ADP	_	_	30	case	30:case	_
+30	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	28	nmod	28:nmod:de	_
+31	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0007
+# text = o câncer levou os dois tempo contado, missão cumprida!!
+1	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	câncer	câncer	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	levou	levar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	6:det	_
+5	dois	dois	NUM	_	Gender=Masc|NumType=Card	6	nummod	6:nummod	_
+6	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	_
+7	contado	contar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	6	acl	6:acl	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	missão	missão	NOUN	_	Gender=Fem|Number=Sing	3	parataxis	3:parataxis	_
+10	cumprida	cumprir	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	9	acl	9:acl	SpaceAfter=No
+11	!	!	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+12	!	!	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0009
+# text = que deus a receba neste novo recomeço.
+1	que	que	SCONJ	_	_	4	mark	4:mark	_
+2	deus	deus	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+3	a	o	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	4	obj	4:obj	_
+4	receba	receber	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5-6	neste	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	8	case	8:case	_
+6	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	8	det	8:det	_
+7	novo	novo	ADJ	_	Gender=Masc|Number=Sing	8	amod	8:amod	_
+8	recomeço	recomeço	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:em	SpaceAfter=No
+9	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0011
+# text = descanse em paz zíbia.
+1	descanse	descansar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	em	em	ADP	_	_	3	case	3:case	_
+3	paz	paz	NOUN	_	Gender=Fem|Number=Sing	1	obl	1:obl:em	_
+4	zíbia	zíbia	NOUN	_	Gender=Fem|Number=Sing	1	obl	1:obl	SpaceAfter=No
+5	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0013
+# text = vou sentir falta dos seus romances que tanto me ensinou.span, mãe e filho zibia e luiz gaspareto cumpriram suas missões!
+1	vou	ir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	aux	2:aux	_
+2	sentir	sentir	VERB	_	VerbForm=Inf	0	root	0:root	_
+3	falta	falta	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+4-5	dos	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	7	case	7:case	_
+5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	7:det	_
+6	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	7	det	7:det	_
+7	romances	romance	NOUN	_	Number=Plur	3	nmod	3:nmod:de|11:obj	_
+8	que	que	PRON	_	PronType=Rel	11	obj	7:ref	_
+9	tanto	tanto	ADV	_	_	11	advmod	11:advmod	_
+10	me	me	PRON	_	Case=Dat|Number=Sing|Person=1|PronType=Prs	11	iobj	11:iobj	_
+11	ensinou.span	ensinou.span	NOUN	_	_	7	acl:relcl	7:acl:relcl	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	mãe	mãe	NOUN	_	Gender=Fem|Number=Sing	11	conj	7:acl:relcl|11:conj:e	_
+14	e	e	CCONJ	_	_	15	cc	15:cc	_
+15	filho	filho	NOUN	_	Gender=Masc|Number=Sing	11	conj	7:acl:relcl|11:conj:e	_
+16	zibia	zibia	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod	_
+17	e	e	CCONJ	_	_	18	cc	18:cc	_
+18	luiz	luiz	NOUN	_	Gender=Masc|Number=Sing	16	conj	13:nmod|16:conj:e	_
+19	gaspareto	gaspareto	NOUN	_	Gender=Masc|Number=Sing	18	nmod	18:nmod	_
+20	cumpriram	cumprir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	2	conj	2:conj	_
+21	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	22	det	22:det	_
+22	missões	missão	NOUN	_	Gender=Fem|Number=Plur	20	obj	20:obj	SpaceAfter=No
+23	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0015
+# text = que deus derrame uma chuva de bênçãos sobre eles neste momento que contribui muito para doutrina espírita!
+1	que	que	SCONJ	_	_	3	mark	3:mark	_
+2	deus	deus	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	derrame	derramar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	chuva	chuva	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	bênçãos	bênção	NOUN	_	Gender=Fem|Number=Plur	5	nmod	5:nmod:de	_
+8	sobre	sobre	ADP	_	_	9	case	9:case	_
+9	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	obl	3:obl:sobre	_
+10-11	neste	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	12	det	12:det	_
+12	momento	momento	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:em|14:nsubj	_
+13	que	que	PRON	_	PronType=Rel	14	nsubj	12:ref	_
+14	contribui	contribuir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	acl:relcl	12:acl:relcl	_
+15	muito	muito	ADV	_	_	14	advmod	14:advmod	_
+16	para	para	ADP	_	_	17	case	17:case	_
+17	doutrina	doutrina	NOUN	_	Gender=Fem|Number=Sing	14	obl	14:obl:para	_
+18	espírita	espírita	ADJ	_	Number=Sing	17	amod	17:amod	SpaceAfter=No
+19	!	!	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0017
+# text = vão com os anjos!span.
+1	vão	ir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	com	com	ADP	_	_	4	case	4:case	_
+3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	4:det	_
+4	anjos!span	anjos!span	NOUN	_	_	1	obl	1:obl:com	SpaceAfter=No
+5	.	.	PUNCT	_	_	1	punct	1:punct	_

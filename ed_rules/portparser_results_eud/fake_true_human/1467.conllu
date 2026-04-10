@@ -1,0 +1,370 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = laboratorio de wuhan e da glaxo, pfizer e ligado a soros e gates o laboratorio biologico chines em wuhan e propriedade da glaxo!
+1	laboratorio	laboratorio	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	wuhan	wuhan	NOUN	_	_	1	nmod	1:nmod:de	_
+4	e	e	CCONJ	_	_	7	cc	7:cc	_
+5-6	da	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	glaxo	glaxo	NOUN	_	Gender=Masc|Number=Sing	3	conj	1:nmod:de|3:conj:e	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	pfizer	pfizer	NOUN	_	_	1	nsubj	1:nsubj	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	ligado	ligar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	1	conj	1:conj:e	_
+12	a	a	ADP	_	_	13	case	13:case|15:case	_
+13	soros	soro	NOUN	_	Gender=Masc|Number=Plur	11	obl	11:obl:a	_
+14	e	e	CCONJ	_	_	15	cc	15:cc	_
+15	gates	gate	NOUN	_	Gender=Fem|Number=Plur	13	conj	11:obl:a|13:conj:e	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	laboratorio	laboratorio	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj	_
+18	biologico	biologico	ADJ	_	Gender=Masc|Number=Sing	17	amod	17:amod	_
+19	chines	chines	X	_	_	17	nmod	17:nmod	_
+20	em	em	ADP	_	_	21	case	21:case	_
+21	wuhan	wuhan	NOUN	_	_	17	nmod	17:nmod:em	_
+22	e	e	CCONJ	_	_	23	cc	23:cc	_
+23	propriedade	propriedade	NOUN	_	Gender=Fem|Number=Sing	17	conj	11:obj|17:conj:e	_
+24-25	da	_	_	_	_	_	_	_	_
+24	de	de	ADP	_	_	26	case	26:case	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	glaxo	glaxo	NOUN	_	Gender=Fem|Number=Sing	23	nmod	23:nmod:de	SpaceAfter=No
+27	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = que, por acaso, e dono da pfizer!
+1	que	que	PRON	_	PronType=Rel	7	nsubj	7:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	4	punct	4:punct	_
+3	por	por	ADP	_	_	4	case	4:case	_
+4	acaso	acaso	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:por	SpaceAfter=No
+5	,	,	PUNCT	_	_	4	punct	4:punct	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	dono	dono	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	pfizer	pfizer	NOUN	_	Foreign=Yes	7	nmod	7:nmod:de	SpaceAfter=No
+11	!	!	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0005
+# text = aquele que produz a vacina!
+1	aquele	aquele	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	0	root	0:root|3:nsubj	_
+2	que	que	PRON	_	PronType=Rel	3	nsubj	1:ref	_
+3	produz	produzir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	vacina	vacina	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	SpaceAfter=No
+6	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0007
+# text = que, por acaso, e administrado pelas financas do black rock.
+1	que	que	PRON	_	PronType=Rel	7	nsubj:pass	7:nsubj:pass	SpaceAfter=No
+2	,	,	PUNCT	_	_	4	punct	4:punct	_
+3	por	por	ADP	_	_	4	case	4:case	_
+4	acaso	acaso	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:por	SpaceAfter=No
+5	,	,	PUNCT	_	_	4	punct	4:punct	_
+6	e	e	CCONJ	_	_	7	aux:pass	7:aux:pass	_
+7	administrado	administrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+8	pelas	o	ADP	_	_	9	det	9:det	_
+9	financas	financa	NOUN	_	Number=Plur	7	obl:agent	7:obl:agent	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	black	black	X	_	Foreign=Yes	9	nmod	9:nmod:de	_
+13	rock	rock	X	_	Foreign=Yes	12	flat:foreign	12:flat:foreign	SpaceAfter=No
+14	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0009
+# text = que, por acaso, administra as financas da open foundation company (soros foundation) que, por acaso, atende a francesa axa!
+1	que	que	PRON	_	PronType=Rel	6	nsubj	6:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	4	punct	4:punct	_
+3	por	por	ADP	_	_	4	case	4:case	_
+4	acaso	acaso	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:por	SpaceAfter=No
+5	,	,	PUNCT	_	_	4	punct	4:punct	_
+6	administra	administrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	8:det	_
+8	financas	financas	X	_	Foreign=Yes	6	obj	6:obj	_
+9-10	da	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	open	open	X	_	Foreign=Yes	8	nmod	8:nmod:de|23:nsubj	_
+12	foundation	foundation	X	_	Foreign=Yes	11	flat:foreign	11:flat:foreign	_
+13	company	company	X	_	Foreign=Yes	11	flat:foreign	11:flat:foreign	_
+14	(	(	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+15	soros	soro	NOUN	_	Gender=Masc|Number=Plur	11	appos	11:appos	_
+16	foundation	foundation	X	_	Foreign=Yes	15	flat:foreign	15:flat:foreign	SpaceAfter=No
+17	)	)	PUNCT	_	_	15	punct	15:punct	_
+18	que	que	PRON	_	PronType=Rel	23	nsubj	11:ref	SpaceAfter=No
+19	,	,	PUNCT	_	_	21	punct	21:punct	_
+20	por	por	ADP	_	_	21	case	21:case	_
+21	acaso	acaso	NOUN	_	Gender=Masc|Number=Sing	23	obl	23:obl:por	SpaceAfter=No
+22	,	,	PUNCT	_	_	21	punct	21:punct	_
+23	atende	atender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	11:acl:relcl	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	francesa	francÃªs	NOUN	_	Gender=Fem|Number=Sing	23	obj	23:obj	_
+26	axa	axa	X	_	_	25	nmod	25:nmod	SpaceAfter=No
+27	!	!	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0011
+# text = coincidentemente, ele e dono da empresa alema winterthur.
+1	coincidentemente	coincidentemente	ADV	_	_	5	advmod	5:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	5:nsubj	_
+4	e	e	CCONJ	_	_	5	cc	5:cc	_
+5	dono	dono	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+6-7	da	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	empresa	empresa	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	_
+9	alema	alema	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod	_
+10	winterthur	winterthur	X	_	Foreign=Yes	9	nmod	9:nmod	SpaceAfter=No
+11	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0013
+# text = que, por acaso, construiu o laboratorio chines em wuhan!
+1	que	que	PRON	_	PronType=Rel	6	nsubj	6:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	4	punct	4:punct	_
+3	por	por	ADP	_	_	4	case	4:case	_
+4	acaso	acaso	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:por	SpaceAfter=No
+5	,	,	PUNCT	_	_	4	punct	4:punct	_
+6	construiu	construir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	laboratorio	laboratorio	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+9	chines	chines	X	_	Foreign=Yes	8	nmod	8:nmod	_
+10	em	em	ADP	_	_	11	case	11:case	_
+11	wuhan	wuhan	NOUN	_	Foreign=Yes	6	obl	6:obl:em	SpaceAfter=No
+12	!	!	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0015
+# text = comprado acidentalmente pelo alemao allianz.
+1	comprado	comprar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+2	acidentalmente	acidentalmente	ADV	_	_	1	advmod	1:advmod	_
+3-4	pelo	_	_	_	_	_	_	_	_
+3	por	por	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	alemao	alemao	NOUN	_	Gender=Masc|Number=Sing	1	obl:agent	1:obl:agent	_
+6	allianz	allianz	NOUN	_	_	5	nmod	5:nmod	SpaceAfter=No
+7	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0017
+# text = que, alias, tem a vanguard como acionista.
+1	que	que	PRON	_	PronType=Rel	5	nsubj	5:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	alias	alias	ADV	_	_	5	advmod	5:advmod	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	vanguard	vanguard	X	_	Foreign=Yes	5	obj	5:obj	_
+8	como	como	ADP	_	_	9	case	9:case	_
+9	acionista	acionista	NOUN	_	Number=Sing	5	obl	5:obl:como	SpaceAfter=No
+10	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0019
+# text = que e acionista da black rock.
+1	que	que	PRON	_	PronType=Rel	3	nsubj	3:nsubj	_
+2	e	e	CCONJ	_	_	3	cc	3:cc	_
+3	acionista	acionista	NOUN	_	Number=Sing	0	root	0:root	_
+4-5	da	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	black	black	X	_	Foreign=Yes	3	nmod	3:nmod:de	_
+7	rock	rock	X	_	Foreign=Yes	6	flat:foreign	6:flat:foreign	SpaceAfter=No
+8	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0021
+# text = que controla os bancos centrais e administra cerca de um terco do capital de investimento global.que, alias, e um dos principais acionistas da microsoft propriedade de bill gates, que por acaso e acionista da pfizer (que vende o milagre vaccine) e atualmente e o primeiro patrocinador da oms !
+1	que	que	PRON	_	PronType=Rel	2	nsubj	2:nsubj|7:nsubj	_
+2	controla	controlar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	4:det	_
+4	bancos	banco	NOUN	_	Gender=Masc|Number=Plur	2	obj	2:obj	_
+5	centrais	central	ADJ	_	Number=Plur	4	amod	4:amod	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	administra	administrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:e	_
+8	cerca	cerca	ADV	_	ExtPos=ADV	10	advmod	10:advmod	_
+9	de	de	ADP	_	_	8	fixed	8:fixed	_
+10	um	um	NUM	_	Gender=Masc|NumType=Card	11	nummod	11:nummod	_
+11	terco	terco	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	capital	capital	NOUN	_	Number=Sing	11	nmod	11:nmod:de	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	investimento	investimento	NOUN	_	Gender=Masc|Number=Sing	14	nmod	14:nmod:de	_
+17	global.que	global.que	PRON	_	PronType=Rel	22	nsubj	22:nsubj	SpaceAfter=No
+18	,	,	PUNCT	_	_	19	punct	19:punct	_
+19	alias	alias	ADV	_	_	22	advmod	22:advmod	SpaceAfter=No
+20	,	,	PUNCT	_	_	19	punct	19:punct	_
+21	e	e	CCONJ	_	_	22	cc	22:cc	_
+22	um	um	NUM	_	Gender=Masc|NumType=Card	2	conj	2:conj:e	_
+23-24	dos	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	26	case	26:case	_
+24	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	26:det	_
+25	principais	principal	ADJ	_	Number=Plur	26	amod	26:amod	_
+26	acionistas	acionista	NOUN	_	Number=Plur	22	nmod	22:nmod:de	_
+27-28	da	_	_	_	_	_	_	_	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	microsoft	microsoft	X	_	Foreign=Yes	26	nmod	26:nmod:de	_
+30	propriedade	propriedade	NOUN	_	Gender=Fem|Number=Sing	29	nmod	29:nmod	_
+31	de	de	ADP	_	_	32	case	32:case	_
+32	bill	bill	X	_	Foreign=Yes	30	nmod	30:nmod:de	_
+33	gates	gates	X	_	Foreign=Yes	32	flat:foreign	32:flat:foreign	SpaceAfter=No
+34	,	,	PUNCT	_	_	39	punct	39:punct	_
+35	que	que	PRON	_	PronType=Rel	39	nsubj	39:nsubj	_
+36	por	por	ADP	_	_	37	case	37:case	_
+37	acaso	acaso	NOUN	_	Gender=Masc|Number=Sing	39	nmod	39:nmod:por	_
+38	e	e	CCONJ	_	_	39	cc	39:cc	_
+39	acionista	acionista	NOUN	_	Number=Sing	22	conj	22:conj:e	_
+40-41	da	_	_	_	_	_	_	_	_
+40	de	de	ADP	_	_	42	case	42:case|55:case	_
+41	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	42:det	_
+42	pfizer	pfizer	X	_	Foreign=Yes	39	nmod	39:nmod:de|45:nsubj	_
+43	(	(	PUNCT	_	_	45	punct	45:punct	SpaceAfter=No
+44	que	que	PRON	_	PronType=Rel	45	nsubj	42:ref	_
+45	vende	vender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	42	acl:relcl	42:acl:relcl	_
+46	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	det	47:det	_
+47	milagre	milagre	NOUN	_	Gender=Masc|Number=Sing	45	obj	45:obj	_
+48	vaccine	vaccine	X	_	Foreign=Yes	47	nmod	47:nmod	SpaceAfter=No
+49	)	)	PUNCT	_	_	45	punct	45:punct	_
+50	e	e	CCONJ	_	_	55	cc	55:cc	_
+51	atualmente	atualmente	ADV	_	_	55	advmod	55:advmod	_
+52	e	e	CCONJ	_	_	55	cc	55:cc	_
+53	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	55	det	55:det	_
+54	primeiro	primeiro	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	55	amod	55:amod	_
+55	patrocinador	patrocinador	NOUN	_	Gender=Masc|Number=Sing	42	conj	39:nmod:de|42:conj:e	_
+56-57	da	_	_	_	_	_	_	_	_
+56	de	de	ADP	_	_	58	case	58:case	_
+57	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	58	det	58:det	_
+58	oms	oms	NOUN	_	Foreign=Yes	55	nmod	55:nmod:de	_
+59	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0025
+# text = se nao estiver suficientemente claro por que um morcego entrou e agarrou a serpente e todo o planeta infectou-se, posso continuar!
+1	se	se	SCONJ	_	_	5	mark	5:mark	_
+2	nao	nao	ADV	_	_	5	advmod	5:advmod	_
+3	estiver	estar	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	5	cop	5:cop	_
+4	suficientemente	suficientemente	ADV	_	_	5	advmod	5:advmod	_
+5	claro	claro	ADJ	_	Gender=Masc|Number=Sing	22	advcl	22:advcl:se	_
+6	por	por	ADP	_	_	7	case	7:case	_
+7	que	que	PRON	_	PronType=Rel	10	obl	10:obl:por	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	morcego	morcego	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	10:nsubj|12:nsubj	_
+10	entrou	entrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	csubj	5:csubj	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	agarrou	agarrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	conj	5:csubj|10:conj:e	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	serpente	serpente	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+15	e	e	CCONJ	_	_	19	cc	19:cc	_
+16	todo	todo	DET	_	Gender=Masc|Number=Sing|PronType=Ind	18	det	18:det	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	planeta	planeta	NOUN	_	Number=Sing	19	nsubj	19:nsubj	_
+19-20	infectou-se	_	_	_	_	_	_	_	_
+19	infectou	infectar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	conj	5:csubj|10:conj:e	_
+20	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	19	advmod	19:advmod	_
+21	,	,	PUNCT	_	_	5	punct	5:punct	_
+22	posso	poder	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+23	continuar	continuar	VERB	_	VerbForm=Inf	22	xcomp	22:xcomp	SpaceAfter=No
+24	!	!	PUNCT	_	_	22	punct	22:punct	_
+
+# sent_id = S0027
+# text = mas, por favor, nao distribua massivamente minha postagem!
+1	mas	mas	CCONJ	_	_	7	cc	7:cc	SpaceAfter=No
+2	,	,	PUNCT	_	_	4	punct	4:punct	_
+3	por	por	ADP	_	_	4	case	4:case	_
+4	favor	favor	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:por	SpaceAfter=No
+5	,	,	PUNCT	_	_	4	punct	4:punct	_
+6	nao	nao	ADV	_	_	7	advmod	7:advmod	_
+7	distribua	distribuir	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	massivamente	massivamente	ADV	_	_	7	advmod	7:advmod	_
+9	minha	meu	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	10	det	10:det	_
+10	postagem	postagem	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	SpaceAfter=No
+11	!	!	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0029
+# text = e nem me deixe continuar!
+1	e	e	CCONJ	_	_	4	cc	4:cc	_
+2	nem	nem	ADV	_	_	4	advmod	4:advmod	_
+3	me	me	PRON	_	Case=Acc|Number=Sing|Person=1|PronType=Prs	4	obj	4:obj|5:nsubj	_
+4	deixe	deixar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	continuar	continuar	VERB	_	VerbForm=Inf	4	xcomp	4:xcomp	SpaceAfter=No
+6	!	!	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0031
+# text = porque eu sou apenas um conspirador espalhando noticias falsas!
+1	porque	porque	SCONJ	_	_	6	cc	6:cc	_
+2	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj	6:nsubj	_
+3	sou	ser	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+4	apenas	apenas	ADV	_	_	6	advmod	6:advmod	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	conspirador	conspirador	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+7	espalhando	espalhar	VERB	_	VerbForm=Ger	6	acl	6:acl	_
+8	noticias	noticia	NOUN	_	Gender=Fem|Number=Plur	7	obj	7:obj	_
+9	falsas	falso	ADJ	_	Gender=Fem|Number=Plur	8	amod	8:amod	SpaceAfter=No
+10	!	!	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0033
+# text = vamos acordar mocada!!!
+1	vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	aux	2:aux	_
+2	acordar	acordar	VERB	_	VerbForm=Inf	0	root	0:root	_
+3	mocada	mocado	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	SpaceAfter=No
+4	!	!	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+5	!	!	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+6	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0035
+# text = a treta e grande!!!!ps.
+1	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	treta	treta	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+3	e	e	CCONJ	_	_	4	cc	4:cc	_
+4	grande!!!!ps	grande!!!!ps	NOUN	_	_	0	root	0:root	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0037
+# text = : esse artigo e uma sugestao de leitores do boatos.org.
+1	:	:	PUNCT	_	_	6	punct	6:punct	_
+2	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	3	det	3:det	_
+3	artigo	artigo	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+4	e	e	CCONJ	_	_	6	cc	6:cc	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	sugestao	sugestao	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	leitores	leitor	NOUN	_	Gender=Masc|Number=Plur	6	nmod	6:nmod:de	_
+9-10	do	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	boatos.org	boatos.org	SYM	_	_	8	nmod	8:nmod:de	SpaceAfter=No
+12	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0039
+# text = se voce quiser sugerir um tema ao boatos.org, entre em contato com a gente pelo site, facebook e whatsapp no telefone (61)99458-8494.
+1	se	se	SCONJ	_	_	3	mark	3:mark	_
+2	voce	voce	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	3	nsubj	3:nsubj|4:nsubj	_
+3	quiser	querer	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	11	advcl	11:advcl:se	_
+4	sugerir	sugerir	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	tema	tema	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7-8	ao	_	_	_	_	_	_	_	_
+7	a	a	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	boatos.org	boatos.org	SYM	_	_	4	obl	4:obl:a	SpaceAfter=No
+10	,	,	PUNCT	_	_	3	punct	3:punct	_
+11	entre	entrar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+12	em	em	ADP	_	_	13	case	13:case	_
+13	contato	contato	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:em	_
+14	com	com	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	gente	gente	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:com	_
+17-18	pelo	_	_	_	_	_	_	_	_
+17	por	por	ADP	_	_	19	case	19:case|21:case|23:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	site	site	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:por	SpaceAfter=No
+20	,	,	PUNCT	_	_	21	punct	21:punct	_
+21	facebook	facebook	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	19	conj	11:obl:por|19:conj:e	_
+22	e	e	CCONJ	_	_	23	cc	23:cc	_
+23	whatsapp	whatsapp	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	19	conj	11:obl:por|19:conj:e	_
+24-25	no	_	_	_	_	_	_	_	_
+24	em	em	ADP	_	_	26	case	26:case	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	telefone	telefone	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:em	_
+27	(	(	PUNCT	_	_	28	punct	28:punct	SpaceAfter=No
+28	61)99458-8494	61)99458-8494	NUM	_	NumType=Card	26	appos	26:appos	SpaceAfter=No
+29	.	.	PUNCT	_	_	11	punct	11:punct	_

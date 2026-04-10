@@ -1,0 +1,498 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = A Revelação Surpreendente: Harvard Abandonada por Bilionários!
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Revelação	Revelação	PROPN	_	_	0	root	0:root	_
+3	Surpreendente	Surpreendente	PROPN	_	_	2	flat:name	2:flat:name	SpaceAfter=No
+4	:	:	PUNCT	_	_	5	punct	5:punct	_
+5	Harvard	Harvard	PROPN	_	_	2	appos	2:appos	_
+6	Abandonada	abandonar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	5	acl	5:acl	_
+7	por	por	ADP	_	_	8	case	8:case	_
+8	Bilionários	Bilionários	PROPN	_	_	6	obl:agent	6:obl:agent	SpaceAfter=No
+9	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = O sociólogo Zygmunt Bauman expõe uma nova tendência alarmante: os bilionários estão deixando a educação superior para trás.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	sociólogo	sociólogo	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+3	Zygmunt	Zygmunt	PROPN	_	_	2	nmod	2:nmod	_
+4	Bauman	Bauman	PROPN	_	_	3	flat:name	3:flat:name	_
+5	expõe	expor	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+7	nova	novo	ADJ	_	Gender=Fem|Number=Sing	8	amod	8:amod	_
+8	tendência	tendência	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+9	alarmante	alarmante	ADJ	_	Number=Sing	8	amod	8:amod	SpaceAfter=No
+10	:	:	PUNCT	_	_	14	punct	14:punct	_
+11	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	12:det	_
+12	bilionários	bilionário	NOUN	_	Gender=Masc|Number=Plur	14	nsubj	14:nsubj	_
+13	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	aux	14:aux	_
+14	deixando	deixar	VERB	_	VerbForm=Ger	5	parataxis	5:parataxis	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	educação	educação	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	_
+17	superior	superior	ADJ	_	Number=Sing	16	amod	16:amod	_
+18	para	para	ADP	_	_	19	case	19:case	_
+19	trás	trás	ADV	_	_	14	advmod	14:advmod	SpaceAfter=No
+20	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0005
+# text = Em uma entrevista exclusiva, Bauman destaca que figuras como Steve Jobs e Jack Dorsey, criadores de impérios tecnológicos, são exemplos de um fenômeno emergente - o desprezo pela educação formal como caminho para o sucesso.
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	entrevista	entrevista	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:em	_
+4	exclusiva	exclusivo	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	SpaceAfter=No
+5	,	,	PUNCT	_	_	3	punct	3:punct	_
+6	Bauman	Bauman	PROPN	_	_	7	nsubj	7:nsubj	_
+7	destaca	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	que	que	SCONJ	_	_	23	mark	23:mark	_
+9	figuras	figura	NOUN	_	Gender=Fem|Number=Plur	23	nsubj	23:nsubj	_
+10	como	como	ADP	_	_	11	case	11:case|14:case	_
+11	Steve	Steve	PROPN	_	_	9	nmod	9:nmod:como	_
+12	Jobs	Jobs	PROPN	_	_	11	flat:name	11:flat:name	_
+13	e	e	CCONJ	_	_	14	cc	14:cc	_
+14	Jack	Jack	PROPN	_	_	11	conj	9:nmod:como|11:conj:e	_
+15	Dorsey	Dorsey	PROPN	_	_	14	flat:name	14:flat:name	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	criadores	criador	NOUN	_	Gender=Masc|Number=Plur	11	appos	11:appos|14:appos	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	impérios	império	NOUN	_	Gender=Masc|Number=Plur	17	nmod	17:nmod:de	_
+20	tecnológicos	tecnológico	ADJ	_	Gender=Masc|Number=Plur	19	amod	19:amod	SpaceAfter=No
+21	,	,	PUNCT	_	_	17	punct	17:punct	_
+22	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	23	cop	23:cop	_
+23	exemplos	exemplo	NOUN	_	Gender=Masc|Number=Plur	7	ccomp	7:ccomp	_
+24	de	de	ADP	_	_	26	case	26:case	_
+25	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	fenômeno	fenômeno	NOUN	_	Gender=Masc|Number=Sing	23	nmod	23:nmod:de	_
+27	emergente	emergente	ADJ	_	Number=Sing	26	amod	26:amod	_
+28	-	-	PUNCT	_	_	30	punct	30:punct	_
+29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	30:det	_
+30	desprezo	desprezo	NOUN	_	Gender=Masc|Number=Sing	26	appos	26:appos	_
+31-32	pela	_	_	_	_	_	_	_	_
+31	por	por	ADP	_	_	33	case	33:case	_
+32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	33:det	_
+33	educação	educação	NOUN	_	Gender=Fem|Number=Sing	30	nmod	30:nmod:por	_
+34	formal	formal	ADJ	_	Number=Sing	33	amod	33:amod	_
+35	como	como	ADP	_	_	36	case	36:case	_
+36	caminho	caminho	NOUN	_	Gender=Masc|Number=Sing	30	nmod	30:nmod:como	_
+37	para	para	ADP	_	_	39	case	39:case	_
+38	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	39:det	_
+39	sucesso	sucesso	NOUN	_	Gender=Masc|Number=Sing	36	nmod	36:nmod:para	SpaceAfter=No
+40	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0007
+# text = De sua casa na Inglaterra, o renomado pensador polonês reflete sobre a sociedade moderna e a desvalorização dos diplomas de elite.
+1	De	de	ADP	_	_	3	case	3:case	_
+2	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	3	det	3:det	_
+3	casa	casa	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl:de	_
+4-5	na	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	Inglaterra	Inglaterra	PROPN	_	_	3	nmod	3:nmod:em	SpaceAfter=No
+7	,	,	PUNCT	_	_	3	punct	3:punct	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+9	renomado	renomado	ADJ	_	Gender=Masc|Number=Sing	10	amod	10:amod	_
+10	pensador	pensador	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	12:nsubj	_
+11	polonês	polonês	ADJ	_	Gender=Masc|Number=Sing	10	amod	10:amod	_
+12	reflete	refletir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+13	sobre	sobre	ADP	_	_	15	case	15:case|19:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	sociedade	sociedade	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl:sobre	_
+16	moderna	moderno	ADJ	_	Gender=Fem|Number=Sing	15	amod	15:amod	_
+17	e	e	CCONJ	_	_	19	cc	19:cc	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	desvalorização	desvalorização	NOUN	_	Gender=Fem|Number=Sing	15	conj	12:obl:sobre|15:conj:e	_
+20-21	dos	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	22:det	_
+22	diplomas	diploma	NOUN	_	Gender=Masc|Number=Plur	19	nmod	19:nmod:de	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	elite	elite	NOUN	_	Gender=Fem|Number=Sing	22	nmod	22:nmod:de	SpaceAfter=No
+25	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0009
+# text = "Os novos bilionários estão redefinindo o que significa ter sucesso", afirma Bauman.
+1	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+2	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	4:det	_
+3	novos	novo	ADJ	_	Gender=Masc|Number=Plur	4	amod	4:amod	_
+4	bilionários	bilionário	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	6:nsubj	_
+5	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	aux	6:aux	_
+6	redefinindo	redefinir	VERB	_	VerbForm=Ger	14	ccomp:speech	14:ccomp:speech	_
+7	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	obj	6:obj|9:nsubj|10:nsubj	_
+8	que	que	PRON	_	PronType=Rel	9	nsubj	7:ref	_
+9	significa	significar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	7:acl:relcl	_
+10	ter	ter	VERB	_	VerbForm=Inf	9	xcomp	9:xcomp	_
+11	sucesso	sucesso	NOUN	_	Gender=Masc|Number=Sing	10	obj	10:obj	SpaceAfter=No
+12	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+13	,	,	PUNCT	_	_	6	punct	6:punct	_
+14	afirma	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+15	Bauman	Bauman	PROPN	_	_	14	nsubj	14:nsubj	SpaceAfter=No
+16	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0011
+# text = Eles abandonam as universidades mais prestigiosas e ainda assim alcançam fortunas inimagináveis.
+1	Eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	2	nsubj	2:nsubj|10:nsubj	_
+2	abandonam	abandonar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	4:det	_
+4	universidades	universidade	NOUN	_	Gender=Fem|Number=Plur	2	obj	2:obj	_
+5	mais	mais	ADV	_	_	6	advmod	6:advmod	_
+6	prestigiosas	prestigioso	ADJ	_	Gender=Fem|Number=Plur	4	amod	4:amod	_
+7	e	e	CCONJ	_	_	10	cc	10:cc	_
+8	ainda	ainda	ADV	_	ExtPos=ADV	10	advmod	10:advmod	_
+9	assim	assim	ADV	_	_	8	fixed	8:fixed	_
+10	alcançam	alcançar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:e	_
+11	fortunas	fortuna	NOUN	_	Gender=Fem|Number=Plur	10	obj	10:obj	_
+12	inimagináveis	inimaginável	ADJ	_	Number=Plur	11	amod	11:amod	SpaceAfter=No
+13	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0013
+# text = Enquanto Harvard e outras instituições de elite aumentam suas taxas anuais a níveis estratosféricos, Bauman argumenta que o conhecimento necessário para prosperar na modernidade líquida não está mais confinado às salas de aula.
+1	Enquanto	enquanto	SCONJ	_	_	8	mark	8:mark	_
+2	Harvard	Harvard	PROPN	_	_	8	nsubj	8:nsubj	_
+3	e	e	CCONJ	_	_	5	cc	5:cc	_
+4	outras	outro	DET	_	Gender=Fem|Number=Plur|PronType=Ind	5	det	5:det	_
+5	instituições	instituição	NOUN	_	Gender=Fem|Number=Plur	2	conj	2:conj:e|8:nsubj	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	elite	elite	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	_
+8	aumentam	aumentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	advcl	17:advcl:enquanto	_
+9	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	10	det	10:det	_
+10	taxas	taxa	NOUN	_	Gender=Fem|Number=Plur	8	obj	8:obj	_
+11	anuais	anual	ADJ	_	Number=Plur	10	amod	10:amod	_
+12	a	a	ADP	_	_	13	case	13:case	_
+13	níveis	nível	NOUN	_	Gender=Masc|Number=Plur	8	obl	8:obl:a	_
+14	estratosféricos	estratosférico	ADJ	_	Gender=Masc|Number=Plur	13	amod	13:amod	SpaceAfter=No
+15	,	,	PUNCT	_	_	8	punct	8:punct	_
+16	Bauman	Bauman	PROPN	_	_	17	nsubj	17:nsubj	_
+17	argumenta	argumentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+18	que	que	SCONJ	_	_	31	mark	31:mark	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	conhecimento	conhecimento	NOUN	_	Gender=Masc|Number=Sing	31	nsubj	31:nsubj	_
+21	necessário	necessário	ADJ	_	Gender=Masc|Number=Sing	20	amod	20:amod	_
+22	para	para	ADP	_	_	23	mark	23:mark	_
+23	prosperar	prosperar	VERB	_	VerbForm=Inf	21	acl	21:acl:para	_
+24-25	na	_	_	_	_	_	_	_	_
+24	em	em	ADP	_	_	26	case	26:case	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	modernidade	modernidade	NOUN	_	Gender=Fem|Number=Sing	23	obl	23:obl:em	_
+27	líquida	líquido	ADJ	_	Gender=Fem|Number=Sing	26	amod	26:amod	_
+28	não	não	ADV	_	_	31	advmod	31:advmod	_
+29	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	cop	31:cop	_
+30	mais	mais	ADV	_	_	31	advmod	31:advmod	_
+31	confinado	confinado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	17	ccomp	17:ccomp	_
+32-33	às	_	_	_	_	_	_	_	_
+32	a	a	ADP	_	_	34	case	34:case	_
+33	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	34	det	34:det	_
+34	salas	sala	NOUN	_	Gender=Fem|Number=Plur	31	obl	31:obl:a	_
+35	de	de	ADP	_	_	36	case	36:case	_
+36	aula	aula	NOUN	_	Gender=Fem|Number=Sing	34	nmod	34:nmod:de	SpaceAfter=No
+37	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0015
+# text = "O mercado de trabalho global está mudando rapidamente", diz ele.
+1	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+2	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	mercado	mercado	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	8:nsubj	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	_
+6	global	global	ADJ	_	Number=Sing	5	amod	5:amod	_
+7	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	8:aux	_
+8	mudando	mudar	VERB	_	VerbForm=Ger	12	ccomp:speech	12:ccomp:speech	_
+9	rapidamente	rapidamente	ADV	_	_	8	advmod	8:advmod	SpaceAfter=No
+10	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+11	,	,	PUNCT	_	_	8	punct	8:punct	_
+12	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+13	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	nsubj	12:nsubj	SpaceAfter=No
+14	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0017
+# text = Os jovens precisam de habilidades práticas e inovação, não de credenciais.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	jovens	jovem	NOUN	_	Number=Plur	3	nsubj	3:nsubj	_
+3	precisam	precisar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	de	de	ADP	_	_	5	case	5:case|8:case	_
+5	habilidades	habilidade	NOUN	_	Gender=Fem|Number=Plur	3	obl	3:obl:de	_
+6	práticas	prático	ADJ	_	Gender=Fem|Number=Plur	5	amod	5:amod	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	inovação	inovação	NOUN	_	Gender=Fem|Number=Sing	5	conj	3:obl:de|5:conj:e	SpaceAfter=No
+9	,	,	PUNCT	_	_	12	punct	12:punct	_
+10	não	não	ADV	_	_	12	advmod	12:advmod	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	credenciais	credenciai	NOUN	_	Number=Plur	5	conj	3:obl:de|5:conj	SpaceAfter=No
+13	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0019
+# text = Bauman também aborda a crise econômica global e a distribuição desigual de recursos.
+1	Bauman	Bauman	PROPN	_	_	3	nsubj	3:nsubj	_
+2	também	também	ADV	_	_	3	advmod	3:advmod	_
+3	aborda	abordar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	crise	crise	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+6	econômica	econômico	ADJ	_	Gender=Fem|Number=Sing	5	amod	5:amod	_
+7	global	global	ADJ	_	Number=Sing	5	amod	5:amod	_
+8	e	e	CCONJ	_	_	10	cc	10:cc	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	distribuição	distribuição	NOUN	_	Gender=Fem|Number=Sing	5	conj	3:obj|5:conj:e	_
+11	desigual	desigual	ADJ	_	Number=Sing	10	amod	10:amod	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	recursos	recurso	NOUN	_	Gender=Masc|Number=Plur	10	nmod	10:nmod:de	SpaceAfter=No
+14	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0021
+# text = "A crise de 2008 mostrou que a elite econômica está isolada da realidade das massas", ele critica.
+1	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+2	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	crise	crise	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	2008	2008	NUM	_	NumType=Card	3	nmod	3:nmod:de	_
+6	mostrou	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	ccomp:speech	22:ccomp:speech	_
+7	que	que	SCONJ	_	_	12	mark	12:mark	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	elite	elite	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	12:nsubj	_
+10	econômica	econômico	ADJ	_	Gender=Fem|Number=Sing	9	amod	9:amod	_
+11	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	12:cop	_
+12	isolada	isolado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	6	ccomp	6:ccomp	_
+13-14	da	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	realidade	realidade	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl:de	_
+16-17	das	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	18:det	_
+18	massas	massa	NOUN	_	Gender=Fem|Number=Plur	15	nmod	15:nmod:de	SpaceAfter=No
+19	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+20	,	,	PUNCT	_	_	6	punct	6:punct	_
+21	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	22	nsubj	22:nsubj	_
+22	critica	criticar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+23	.	.	PUNCT	_	_	22	punct	22:punct	_
+
+# sent_id = S0023
+# text = Amartya Sen, Prêmio Nobel de Economia, sugere que a verdadeira medida da crise deve ser vista através do sofrimento das pessoas menos privilegiadas.
+1	Amartya	Amartya	PROPN	_	_	9	nsubj	9:nsubj	_
+2	Sen	Sen	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	Prêmio	Prêmio	PROPN	_	_	1	appos	1:appos	_
+5	Nobel	Nobel	PROPN	_	_	4	flat:name	4:flat:name	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	Economia	Economia	PROPN	_	_	4	nmod	4:nmod:de	SpaceAfter=No
+8	,	,	PUNCT	_	_	4	punct	4:punct	_
+9	sugere	sugerir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+10	que	que	SCONJ	_	_	17	mark	17:mark	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+12	verdadeira	verdadeiro	ADJ	_	Gender=Fem|Number=Sing	13	amod	13:amod	_
+13	medida	medida	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	17:nsubj|19:nsubj:pass	_
+14-15	da	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	crise	crise	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:de	_
+17	deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	ccomp	9:ccomp	_
+18	ser	ser	AUX	_	VerbForm=Inf	19	aux:pass	19:aux:pass	_
+19	vista	ver	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	17	xcomp	17:xcomp	_
+20	através	através	ADV	_	_	19	advmod	19:advmod	_
+21-22	do	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	sofrimento	sofrimento	NOUN	_	Gender=Masc|Number=Sing	20	obl	20:obl:de	_
+24-25	das	_	_	_	_	_	_	_	_
+24	de	de	ADP	_	_	26	case	26:case	_
+25	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	26	det	26:det	_
+26	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	23	nmod	23:nmod:de	_
+27	menos	menos	ADV	_	_	28	advmod	28:advmod	_
+28	privilegiadas	privilegiado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	26	amod	26:amod	SpaceAfter=No
+29	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0025
+# text = A nova dinâmica social é ainda mais evidente com a ascensão de potências emergentes, como o Brasil.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+2	nova	novo	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+3	dinâmica	dinâmica	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	8:nsubj	_
+4	social	social	ADJ	_	Number=Sing	3	amod	3:amod	_
+5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop	_
+6	ainda	ainda	ADV	_	_	8	advmod	8:advmod	_
+7	mais	mais	ADV	_	_	8	advmod	8:advmod	_
+8	evidente	evidente	ADJ	_	Number=Sing	0	root	0:root	_
+9	com	com	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	ascensão	ascensão	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:com	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	potências	potência	NOUN	_	Gender=Fem|Number=Plur	11	nmod	11:nmod:de	_
+14	emergentes	emergente	ADJ	_	Number=Plur	13	amod	13:amod	SpaceAfter=No
+15	,	,	PUNCT	_	_	18	punct	18:punct	_
+16	como	como	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	Brasil	Brasil	PROPN	_	_	13	nmod	13:nmod:como	SpaceAfter=No
+19	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0027
+# text = "Chineses dominam o mercado de luxo, enquanto brasileiros buscam alternativas para a educação tradicional", aponta Bauman.
+1	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	Chineses	chinÃªs	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	3:nsubj	_
+3	dominam	dominar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	19	ccomp:speech	19:ccomp:speech	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	mercado	mercado	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	luxo	luxo	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:de	SpaceAfter=No
+8	,	,	PUNCT	_	_	11	punct	11:punct	_
+9	enquanto	enquanto	SCONJ	_	_	11	mark	11:mark	_
+10	brasileiros	brasileiro	NOUN	_	Gender=Masc|Number=Plur	11	nsubj	11:nsubj	_
+11	buscam	buscar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	advcl	3:advcl:enquanto	_
+12	alternativas	alternativa	NOUN	_	Gender=Fem|Number=Plur	11	obj	11:obj	_
+13	para	para	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	educação	educação	NOUN	_	Gender=Fem|Number=Sing	12	nmod	12:nmod:para	_
+16	tradicional	tradicional	ADJ	_	Number=Sing	15	amod	15:amod	SpaceAfter=No
+17	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+18	,	,	PUNCT	_	_	3	punct	3:punct	_
+19	aponta	apontar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+20	Bauman	Bauman	PROPN	_	_	19	nsubj	19:nsubj	SpaceAfter=No
+21	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0029
+# text = Os jovens estão percebendo que o sucesso não está apenas em diplomas, mas em empreendedorismo e adaptabilidade.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	jovens	jovem	NOUN	_	Number=Plur	4	nsubj	4:nsubj	_
+3	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	aux	4:aux	_
+4	percebendo	perceber	VERB	_	VerbForm=Ger	0	root	0:root	_
+5	que	que	SCONJ	_	_	12	mark	12:mark|16:mark	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	sucesso	sucesso	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	12:nsubj|16:nsubj|18:nsubj	_
+8	não	não	ADV	_	_	12	advmod	12:advmod	_
+9	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	12:cop|16:cop	_
+10	apenas	apenas	ADV	_	_	12	advmod	12:advmod	_
+11	em	em	ADP	_	_	12	case	12:case	_
+12	diplomas	diploma	NOUN	_	Gender=Masc|Number=Plur	4	ccomp	4:ccomp	SpaceAfter=No
+13	,	,	PUNCT	_	_	16	punct	16:punct	_
+14	mas	mas	CCONJ	_	_	16	cc	16:cc	_
+15	em	em	ADP	_	_	16	case	16:case	_
+16	empreendedorismo	empreendedorismo	NOUN	_	Gender=Masc|Number=Sing	12	conj	4:ccomp|12:conj:mas	_
+17	e	e	CCONJ	_	_	18	cc	18:cc	_
+18	adaptabilidade	adaptabilidade	NOUN	_	Gender=Fem|Number=Sing	16	conj	4:ccomp|16:conj:e	SpaceAfter=No
+19	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0031
+# text = Bauman faz um alerta sobre a conscientização ambiental e econômica necessária para reequilibrar as dinâmicas globais.
+1	Bauman	Bauman	PROPN	_	_	2	nsubj	2:nsubj	_
+2	faz	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	alerta	alerta	NOUN	_	Number=Sing	2	obj	2:obj	_
+5	sobre	sobre	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	conscientização	conscientização	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:sobre	_
+8	ambiental	ambiental	ADJ	_	Number=Sing	7	amod	7:amod	_
+9	e	e	CCONJ	_	_	10	cc	10:cc	_
+10	econômica	econômico	ADJ	_	Gender=Fem|Number=Sing	8	conj	7:amod|8:conj:e	_
+11	necessária	necessário	ADJ	_	Gender=Fem|Number=Sing	7	amod	7:amod	_
+12	para	para	ADP	_	_	13	mark	13:mark	_
+13	reequilibrar	reequilibrar	VERB	_	VerbForm=Inf	11	advcl	11:advcl:para	_
+14	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	15:det	_
+15	dinâmicas	dinâmica	NOUN	_	Gender=Fem|Number=Plur	13	obj	13:obj	_
+16	globais	global	ADJ	_	Number=Plur	15	amod	15:amod	SpaceAfter=No
+17	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0033
+# text = "A ganância desmedida e o 'apetite pela novidade' estão esgotando nossos recursos", declara.
+1	"	"	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+2	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	ganância	ganância	NOUN	_	Gender=Fem|Number=Sing	14	nsubj	14:nsubj	_
+4	desmedida	desmedido	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	3	amod	3:amod	_
+5	e	e	CCONJ	_	_	8	cc	8:cc	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+7	'	'	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	apetite	apetite	NOUN	_	Gender=Masc|Number=Sing	3	conj	3:conj:e|14:nsubj	_
+9-10	pela	_	_	_	_	_	_	_	_
+9	por	por	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	novidade	novidade	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:por	SpaceAfter=No
+12	'	'	PUNCT	_	_	8	punct	8:punct	_
+13	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	aux	14:aux	_
+14	esgotando	esgotar	VERB	_	VerbForm=Ger	19	ccomp:speech	19:ccomp:speech	_
+15	nossos	nosso	DET	_	Gender=Masc|Number=Plur|Person=1|Poss=Yes|PronType=Prs	16	det	16:det	_
+16	recursos	recurso	NOUN	_	Gender=Masc|Number=Plur	14	obj	14:obj	SpaceAfter=No
+17	"	"	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+18	,	,	PUNCT	_	_	14	punct	14:punct	_
+19	declara	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+20	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0035
+# text = Precisamos de uma nova lógica social que valorize benefícios ambientais e sociais, além do crescimento econômico.
+1	Precisamos	precisar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	de	de	ADP	_	_	5	case	5:case	_
+3	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+4	nova	novo	ADJ	_	Gender=Fem|Number=Sing	5	amod	5:amod	_
+5	lógica	lógica	NOUN	_	Gender=Fem|Number=Sing	1	obl	1:obl:de|8:nsubj	_
+6	social	social	ADJ	_	Number=Sing	5	amod	5:amod	_
+7	que	que	PRON	_	PronType=Rel	8	nsubj	5:ref	_
+8	valorize	valorizar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_
+9	benefícios	benefício	NOUN	_	Gender=Masc|Number=Plur	8	obj	8:obj	_
+10	ambientais	ambiental	ADJ	_	Number=Plur	9	amod	9:amod	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	sociais	social	ADJ	_	Number=Plur	10	conj	9:amod|10:conj:e	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	além	além	ADV	_	_	8	advmod	8:advmod	_
+15-16	do	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	crescimento	crescimento	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:de	_
+18	econômico	econômico	ADJ	_	Gender=Masc|Number=Sing	17	amod	17:amod	SpaceAfter=No
+19	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0037
+# text = Em um mundo onde a desigualdade se aprofunda e as antigas certezas desaparecem, Bauman sugere que a justiça social só pode ser alcançada através de acordos, não consensos.
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	16	obl	8:obl|16:obl:em	_
+4	onde	onde	ADV	_	_	8	advmod	3:ref	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	desigualdade	desigualdade	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	8:nsubj	_
+7	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	8	expl	8:expl	_
+8	aprofunda	aprofundar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_
+9	e	e	CCONJ	_	_	13	cc	13:cc	_
+10	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	12:det	_
+11	antigas	antigo	ADJ	_	Gender=Fem|Number=Plur	12	amod	12:amod	_
+12	certezas	certeza	NOUN	_	Gender=Fem|Number=Plur	13	nsubj	13:nsubj	_
+13	desaparecem	desaparecer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	conj	3:acl:relcl|8:conj:e	SpaceAfter=No
+14	,	,	PUNCT	_	_	3	punct	3:punct	_
+15	Bauman	Bauman	PROPN	_	_	16	nsubj	16:nsubj	_
+16	sugere	sugerir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+17	que	que	SCONJ	_	_	22	mark	22:mark	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	justiça	justiça	NOUN	_	Gender=Fem|Number=Sing	22	nsubj	22:nsubj|24:nsubj:pass	_
+20	social	social	ADJ	_	Number=Sing	19	amod	19:amod	_
+21	só	só	ADV	_	_	22	advmod	22:advmod	_
+22	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	ccomp	16:ccomp	_
+23	ser	ser	AUX	_	VerbForm=Inf	24	aux:pass	24:aux:pass	_
+24	alcançada	alcançar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	22	xcomp	22:xcomp	_
+25	através	através	ADV	_	_	24	advmod	24:advmod	_
+26	de	de	ADP	_	_	27	case	27:case|30:case	_
+27	acordos	acordo	NOUN	_	Gender=Masc|Number=Plur	25	obl	25:obl:de	SpaceAfter=No
+28	,	,	PUNCT	_	_	30	punct	30:punct	_
+29	não	não	ADV	_	_	30	advmod	30:advmod	_
+30	consensos	consenso	NOUN	_	Gender=Masc|Number=Plur	27	conj	25:obl:de|27:conj	SpaceAfter=No
+31	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0039
+# text = "É hora de repensar valores e estratégias para um futuro sustentável", conclui.
+1	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+3	hora	hora	NOUN	_	Gender=Fem|Number=Sing	15	ccomp:speech	15:ccomp:speech	_
+4	de	de	ADP	_	_	5	mark	5:mark	_
+5	repensar	repensar	VERB	_	VerbForm=Inf	3	acl	3:acl:de	_
+6	valores	valor	NOUN	_	Gender=Masc|Number=Plur	5	obj	5:obj	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	estratégias	estratégia	NOUN	_	Gender=Fem|Number=Plur	6	conj	5:obj|6:conj:e	_
+9	para	para	ADP	_	_	11	case	11:case	_
+10	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	futuro	futuro	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:para|8:nmod:para	_
+12	sustentável	sustentável	ADJ	_	Number=Sing	11	amod	11:amod	SpaceAfter=No
+13	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+14	,	,	PUNCT	_	_	3	punct	3:punct	_
+15	conclui	concluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+16	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0041
+# text = Colaboração: Anna Capovilla e Celso Paciornik.
+1	Colaboração	colaboração	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+2	:	:	PUNCT	_	_	3	punct	3:punct	_
+3	Anna	Anna	PROPN	_	_	1	nmod	1:nmod	_
+4	Capovilla	Capovilla	PROPN	_	_	3	flat:name	3:flat:name	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	Celso	Celso	PROPN	_	_	3	conj	1:nmod|3:conj:e	_
+7	Paciornik	Paciornik	PROPN	_	_	6	flat:name	6:flat:name	SpaceAfter=No
+8	.	.	PUNCT	_	_	1	punct	1:punct	_

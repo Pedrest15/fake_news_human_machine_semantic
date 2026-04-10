@@ -1,0 +1,82 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Eles destruíram um país em menos de 20 anos.
+1	Eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	2	nsubj	2:nsubj	_
+2	destruíram	destruír	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	país	país	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+5	em	em	ADP	_	_	9	case	9:case	_
+6	menos	menos	ADV	_	ExtPos=ADV	8	advmod	8:advmod	_
+7	de	de	ADP	_	_	6	fixed	6:fixed	_
+8	20	20	NUM	_	NumType=Card	9	nummod	9:nummod	_
+9	anos	ano	NOUN	_	Gender=Masc|Number=Plur	2	obl	2:obl:em	SpaceAfter=No
+10	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = O governo do PT sem maquiagens.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	governo	governo	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	PT	PT	PROPN	_	_	2	nmod	2:nmod:de	_
+6	sem	sem	ADP	_	_	7	case	7:case	_
+7	maquiagens	maquiagem	NOUN	_	Gender=Fem|Number=Plur	2	nmod	2:nmod:sem	SpaceAfter=No
+8	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = APOIO DO CONGRESSO ELES *** (Lula, Dilma e sua cria Michel Temer) *** estiveram à frente de um governo que comprava (e ainda compra, no caso de Temer) votos no Congresso com dinheiro público desviado.
+1	APOIO	apoio	NOUN	_	Gender=Masc|Number=Sing	25	nsubj	25:nsubj	_
+2-3	DO	_	_	_	_	_	_	_	_
+2	DE	de	ADP	_	_	4	case	4:case	_
+3	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	CONGRESSO	congresso	NOUN	_	Gender=Masc|Number=Sing	1	nmod	1:nmod:de	_
+5	ELES	ELES	PROPN	_	_	1	punct	1:punct	_
+6	*	*	PUNCT	_	_	25	punct	25:punct	SpaceAfter=No
+7	*	*	PUNCT	_	_	25	nmod	25:nmod	SpaceAfter=No
+8	*	*	PUNCT	_	_	25	punct	25:punct	_
+9	(	(	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+10	Lula	Lula	PROPN	_	_	25	parataxis	25:parataxis	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	Dilma	Dilma	PROPN	_	_	10	conj	10:conj:e|25:parataxis	_
+13	e	e	CCONJ	_	_	15	cc	15:cc	_
+14	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	15	det	15:det	_
+15	cria	cria	NOUN	_	Gender=Fem|Number=Sing	10	conj	10:conj:e|25:parataxis	_
+16	Michel	Michel	PROPN	_	_	15	nmod	15:nmod	_
+17	Temer	Temer	PROPN	_	_	16	flat:name	16:flat:name	SpaceAfter=No
+18	)	)	PUNCT	_	_	10	punct	10:punct	_
+19	*	*	PUNCT	_	_	25	punct	25:punct	SpaceAfter=No
+20	*	*	PUNCT	_	_	25	punct	25:punct	SpaceAfter=No
+21	*	*	PUNCT	_	_	25	punct	25:punct	_
+22	estiveram	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	25	cop	25:cop	_
+23-24	à	_	_	_	_	_	_	_	_
+23	a	a	ADP	_	_	25	case	25:case	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	frente	frente	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	governo	governo	NOUN	_	Gender=Masc|Number=Sing	25	nmod	25:nmod:de|30:nsubj|34:nsubj	_
+29	que	que	PRON	_	PronType=Rel	30	nsubj	28:ref	_
+30	comprava	comprar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	28	acl:relcl	28:acl:relcl	_
+31	(	(	PUNCT	_	_	34	punct	34:punct	SpaceAfter=No
+32	e	e	CCONJ	_	_	34	cc	34:cc	_
+33	ainda	ainda	ADV	_	_	34	advmod	34:advmod	_
+34	compra	comprar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	conj	28:acl:relcl|30:conj:e	SpaceAfter=No
+35	,	,	PUNCT	_	_	38	punct	38:punct	_
+36-37	no	_	_	_	_	_	_	_	_
+36	em	em	ADP	_	_	38	case	38:case	_
+37	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	38:det	_
+38	caso	caso	NOUN	_	Gender=Masc|Number=Sing	34	obl	34:obl:em	_
+39	de	de	ADP	_	_	40	case	40:case	_
+40	Temer	Temer	PROPN	_	_	38	nmod	38:nmod:de	SpaceAfter=No
+41	)	)	PUNCT	_	_	38	punct	38:punct	_
+42	votos	voto	NOUN	_	Gender=Masc|Number=Plur	30	obj	30:obj|34:obj	_
+43-44	no	_	_	_	_	_	_	_	_
+43	em	em	ADP	_	_	45	case	45:case	_
+44	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	45:det	_
+45	Congresso	Congresso	PROPN	_	_	42	nmod	42:nmod:em	_
+46	com	com	ADP	_	_	47	case	47:case	_
+47	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	42	nmod	42:nmod:com	_
+48	público	público	ADJ	_	Gender=Masc|Number=Sing	47	amod	47:amod	_
+49	desviado	desviar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	47	acl	47:acl	SpaceAfter=No
+50	.	.	PUNCT	_	_	25	punct	25:punct	_

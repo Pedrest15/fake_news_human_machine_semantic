@@ -1,0 +1,255 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Uma imagem chocante está circulando nas redes sociais, mostrando uma pessoa vestindo saia preta e camisa vermelha com o logo da Coca-Cola.
+1	Uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	imagem	imagem	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+3	chocante	chocante	ADJ	_	Number=Sing	2	amod	2:amod	_
+4	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	5:aux	_
+5	circulando	circular	VERB	_	VerbForm=Ger	0	root	0:root	_
+6-7	nas	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	8:det	_
+8	redes	rede	NOUN	_	Gender=Fem|Number=Plur	5	obl	5:obl:em	_
+9	sociais	social	ADJ	_	Number=Plur	8	amod	8:amod	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	mostrando	mostrar	VERB	_	VerbForm=Ger	5	advcl	5:advcl	_
+12	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	pessoa	pessoa	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	_
+14	vestindo	vestir	VERB	_	VerbForm=Ger	13	acl	13:acl	_
+15	saia	saia	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	_
+16	preta	preto	ADJ	_	Gender=Fem|Number=Sing	15	amod	15:amod	_
+17	e	e	CCONJ	_	_	18	cc	18:cc	_
+18	camisa	camisa	NOUN	_	Gender=Fem|Number=Sing	15	conj	14:obj|15:conj:e	_
+19	vermelha	vermelho	ADJ	_	Gender=Fem|Number=Sing	18	amod	18:amod	_
+20	com	com	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	logo	logo	NOUN	_	Gender=Masc|Number=Sing	15	nmod	15:nmod:com|18:nmod:com	_
+23-24	da	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	Coca-Cola	Coca-Cola	PROPN	_	_	22	nmod	22:nmod:de	SpaceAfter=No
+26	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0003
+# text = A legenda alarmante afirma: Foto do atirador que matou 25 crianças e 4 adultos em Uvalde, no Texas, ontem.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	legenda	legenda	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+3	alarmante	alarmante	ADJ	_	Number=Sing	2	amod	2:amod	_
+4	afirma	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+5	:	:	PUNCT	_	_	6	punct	6:punct	_
+6	Foto	foto	NOUN	_	Number=Sing	4	parataxis	4:parataxis	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	atirador	atirador	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de|11:nsubj	_
+10	que	que	PRON	_	PronType=Rel	11	nsubj	9:ref	_
+11	matou	matar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	acl:relcl	9:acl:relcl	_
+12	25	25	NUM	_	NumType=Card	13	nummod	13:nummod	_
+13	crianças	criança	NOUN	_	Gender=Fem|Number=Plur	11	obj	11:obj	_
+14	e	e	CCONJ	_	_	16	cc	16:cc	_
+15	4	4	NUM	_	NumType=Card	16	nummod	16:nummod	_
+16	adultos	adulto	NOUN	_	Gender=Masc|Number=Plur	13	conj	11:obj|13:conj:e	_
+17	em	em	ADP	_	_	18	case	18:case	_
+18	Uvalde	Uvalde	PROPN	_	_	11	obl	11:obl:em	SpaceAfter=No
+19	,	,	PUNCT	_	_	22	punct	22:punct	_
+20-21	no	_	_	_	_	_	_	_	_
+20	em	em	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	Texas	Texas	PROPN	_	_	18	nmod	18:nmod:em	SpaceAfter=No
+23	,	,	PUNCT	_	_	22	punct	22:punct	_
+24	ontem	ontem	ADV	_	_	11	advmod	11:advmod	SpaceAfter=No
+25	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0005
+# text = A polícia descobriu que ele planejava mais ataques! Especialistas alertam que a foto não retrata o verdadeiro atirador, mas está sendo usada para disseminar pânico e desinformação.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	polícia	polícia	NOUN	_	Number=Sing	3	nsubj	3:nsubj	_
+3	descobriu	descobrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	6	mark	6:mark	_
+5	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj	6:nsubj	_
+6	planejava	planejar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	ccomp	3:ccomp	_
+7	mais	mais	DET	_	PronType=Ind	8	det	8:det	_
+8	ataques	ataque	NOUN	_	Gender=Masc|Number=Plur	6	obj	6:obj	SpaceAfter=No
+9	!	!	PUNCT	_	_	3	punct	3:punct	_
+10	Especialistas	especialista	NOUN	_	Number=Plur	11	nsubj	11:nsubj	_
+11	alertam	alertar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	dep	3:dep	_
+12	que	que	SCONJ	_	_	16	mark	16:mark|24:mark	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	foto	foto	NOUN	_	Number=Sing	16	nsubj	16:nsubj|24:nsubj:pass	_
+15	não	não	ADV	_	_	16	advmod	16:advmod	_
+16	retrata	retratar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	ccomp	11:ccomp	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+18	verdadeiro	verdadeiro	ADJ	_	Gender=Masc|Number=Sing	19	amod	19:amod	_
+19	atirador	atirador	NOUN	_	Gender=Masc|Number=Sing	16	obj	16:obj	SpaceAfter=No
+20	,	,	PUNCT	_	_	24	punct	24:punct	_
+21	mas	mas	CCONJ	_	_	24	cc	24:cc	_
+22	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	aux	24:aux	_
+23	sendo	ser	AUX	_	VerbForm=Ger	24	aux:pass	24:aux:pass	_
+24	usada	usar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	16	conj	11:ccomp|16:conj:mas	_
+25	para	para	ADP	_	_	26	mark	26:mark	_
+26	disseminar	disseminar	VERB	_	VerbForm=Inf	24	advcl	24:advcl:para	_
+27	pânico	pânico	NOUN	_	Gender=Masc|Number=Sing	26	obj	26:obj	_
+28	e	e	CCONJ	_	_	29	cc	29:cc	_
+29	desinformação	desinformação	NOUN	_	Gender=Fem|Number=Sing	27	conj	26:obj|27:conj:e	SpaceAfter=No
+30	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = A imagem original pertence a uma artista conhecida como nsfw_transgirlart no Instagram, que já se manifestou para desmentir qualquer ligação com o trágico evento.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	imagem	imagem	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+3	original	original	ADJ	_	Number=Sing	2	amod	2:amod	_
+4	pertence	pertencer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	a	a	ADP	_	_	7	case	7:case	_
+6	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	artista	artista	NOUN	_	Number=Sing	4	obl	4:obl:a|18:nsubj	_
+8	conhecida	conhecer	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	7	acl	7:acl	_
+9	como	como	ADP	_	_	10	case	10:case	_
+10	nsfw_transgirlart	nsfw_transgirlart	X	_	Foreign=Yes	8	obl	8:obl:como	_
+11-12	no	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	Instagram	Instagram	PROPN	_	_	8	obl	8:obl:em	SpaceAfter=No
+14	,	,	PUNCT	_	_	18	punct	18:punct	_
+15	que	que	PRON	_	PronType=Rel	18	nsubj	7:ref	_
+16	já	já	ADV	_	_	18	advmod	18:advmod	_
+17	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	18	expl	18:expl	_
+18	manifestou	manifestar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	acl:relcl	7:acl:relcl	_
+19	para	para	ADP	_	_	20	mark	20:mark	_
+20	desmentir	desmentir	VERB	_	VerbForm=Inf	18	advcl	18:advcl:para	_
+21	qualquer	qualquer	DET	_	Number=Sing|PronType=Ind	22	det	22:det	_
+22	ligação	ligação	NOUN	_	Gender=Fem|Number=Sing	20	obj	20:obj	_
+23	com	com	ADP	_	_	26	case	26:case	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+25	trágico	trágico	ADJ	_	Gender=Masc|Number=Sing	26	amod	26:amod	_
+26	evento	evento	NOUN	_	Gender=Masc|Number=Sing	22	nmod	22:nmod:com	SpaceAfter=No
+27	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0009
+# text = No entanto, a mentira ganhou força em fóruns online e foi amplamente compartilhada por políticos conservadores, que aproveitaram para promover agendas transfóbicas.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	ExtPos=CCONJ	7	cc	7:cc	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	1:fixed	_
+3	entanto	entanto	NOUN	_	Gender=Masc|Number=Sing	1	fixed	1:fixed	SpaceAfter=No
+4	,	,	PUNCT	_	_	1	punct	1:punct	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	mentira	mentira	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj|15:nsubj:pass	_
+7	ganhou	ganhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	força	força	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	_
+9	em	em	ADP	_	_	10	case	10:case	_
+10	fóruns	fórun	NOUN	_	Gender=Masc|Number=Plur	7	obl	7:obl:em	_
+11	online	online	ADJ	_	Number=Sing	10	amod	10:amod	_
+12	e	e	CCONJ	_	_	15	cc	15:cc	_
+13	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	aux:pass	15:aux:pass	_
+14	amplamente	amplamente	ADV	_	_	15	advmod	15:advmod	_
+15	compartilhada	compartilhar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	7	conj	7:conj:e	_
+16	por	por	ADP	_	_	17	case	17:case	_
+17	políticos	político	NOUN	_	Gender=Masc|Number=Plur	15	obl:agent	15:obl:agent|21:nsubj|23:nsubj	_
+18	conservadores	conservador	ADJ	_	Gender=Masc|Number=Plur	17	amod	17:amod	SpaceAfter=No
+19	,	,	PUNCT	_	_	21	punct	21:punct	_
+20	que	que	PRON	_	PronType=Rel	21	nsubj	17:ref	_
+21	aproveitaram	aproveitar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	17	acl:relcl	17:acl:relcl	_
+22	para	para	ADP	_	_	23	mark	23:mark	_
+23	promover	promover	VERB	_	VerbForm=Inf	21	xcomp	21:xcomp	_
+24	agendas	agenda	NOUN	_	Gender=Fem|Number=Plur	23	obj	23:obj	_
+25	transfóbicas	transfóbico	ADJ	_	Gender=Fem|Number=Plur	24	amod	24:amod	SpaceAfter=No
+26	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0011
+# text = O verdadeiro autor do massacre, identificado como Salvador Ramos, de 18 anos, foi morto no local após um confronto com as forças policiais.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+2	verdadeiro	verdadeiro	ADJ	_	Gender=Masc|Number=Sing	3	amod	3:amod	_
+3	autor	autor	NOUN	_	Gender=Masc|Number=Sing	18	nsubj:pass	18:nsubj:pass	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	massacre	massacre	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	8:punct	_
+8	identificado	identificar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	acl	3:acl	_
+9	como	como	ADP	_	_	10	case	10:case	_
+10	Salvador	Salvador	PROPN	_	_	8	obl	8:obl:como	_
+11	Ramos	Ramos	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+12	,	,	PUNCT	_	_	15	punct	15:punct	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	18	18	NUM	_	NumType=Card	15	nummod	15:nummod	_
+15	anos	ano	NOUN	_	Gender=Masc|Number=Plur	10	nmod	10:nmod:de	SpaceAfter=No
+16	,	,	PUNCT	_	_	8	punct	8:punct	_
+17	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	aux:pass	18:aux:pass	_
+18	morto	morto	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+19-20	no	_	_	_	_	_	_	_	_
+19	em	em	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	local	local	NOUN	_	Number=Sing	18	obl	18:obl:em	_
+22	após	após	ADP	_	_	24	case	24:case	_
+23	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	confronto	confronto	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:após	_
+25	com	com	ADP	_	_	27	case	27:case	_
+26	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	27	det	27:det	_
+27	forças	força	NOUN	_	Gender=Fem|Number=Plur	24	nmod	24:nmod:com	_
+28	policiais	policial	ADJ	_	Number=Plur	27	amod	27:amod	SpaceAfter=No
+29	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0013
+# text = Ramos, segundo ex-colegas e familiares, enfrentava bullying por ser gago e por suas escolhas de vestuário, o que teria motivado o ataque.
+1	Ramos	Ramos	PROPN	_	_	8	nsubj	8:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	4	punct	4:punct	_
+3	segundo	segundo	ADP	_	_	4	case	4:case|6:case	_
+4	ex-colegas	ex-colegas	NOUN	_	Gender=Masc|Number=Plur	8	obl	8:obl:segundo	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	familiares	familiar	NOUN	_	Number=Plur	4	conj	4:conj:e|8:obl:segundo	SpaceAfter=No
+7	,	,	PUNCT	_	_	4	punct	4:punct	_
+8	enfrentava	enfrentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+9	bullying	bullying	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	_
+10	por	por	ADP	_	_	12	mark	12:mark|16:mark	_
+11	ser	ser	AUX	_	VerbForm=Inf	12	cop	12:cop|16:cop	_
+12	gago	gago	ADJ	_	Gender=Masc|Number=Sing	8	advcl	8:advcl:por	_
+13	e	e	CCONJ	_	_	16	cc	16:cc	_
+14	por	por	ADP	_	_	16	case	16:case	_
+15	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	16	det	16:det	_
+16	escolhas	escolha	NOUN	_	Gender=Fem|Number=Plur	12	conj	8:obl:por|12:conj:e	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	vestuário	vestuário	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod:de	SpaceAfter=No
+19	,	,	PUNCT	_	_	23	punct	23:punct	_
+20	o	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	23	nsubj	23:nsubj	_
+21	que	que	PRON	_	PronType=Rel	20	fixed	20:fixed	_
+22	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	23	aux	23:aux	_
+23	motivado	motivar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	8	parataxis	8:parataxis	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	ataque	ataque	NOUN	_	Gender=Masc|Number=Sing	23	obj	23:obj	SpaceAfter=No
+26	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0015
+# text = A notícia falsa foi desmentida por agências de checagem como Aos Fatos, Politifact e India Today, mas continua a se espalhar, criando uma onda de medo e desinformação.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	notícia	notícia	NOUN	_	Gender=Fem|Number=Sing	5	nsubj:pass	5:nsubj:pass|21:nsubj|24:nsubj	_
+3	falsa	falso	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	_
+4	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	aux:pass	5:aux:pass	_
+5	desmentida	desmentir	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+6	por	por	ADP	_	_	7	case	7:case	_
+7	agências	agência	NOUN	_	Gender=Fem|Number=Plur	5	obl:agent	5:obl:agent	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	checagem	checagem	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:de	_
+10	como	como	ADP	_	_	11	case	11:case|15:case|17:case	_
+11-12	Aos	_	_	_	_	_	_	_	_
+11	A	A	PROPN	_	_	7	nmod	7:nmod:como	_
+12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	13:det	_
+13	Fatos	Fatos	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+14	,	,	PUNCT	_	_	15	punct	15:punct	_
+15	Politifact	Politifact	PROPN	_	_	11	conj	7:nmod:como|11:conj:e	_
+16	e	e	CCONJ	_	_	17	cc	17:cc	_
+17	India	India	PROPN	_	_	11	conj	7:nmod:como|11:conj:e	_
+18	Today	Today	PROPN	_	_	17	flat:name	17:flat:name	SpaceAfter=No
+19	,	,	PUNCT	_	_	21	punct	21:punct	_
+20	mas	mas	CCONJ	_	_	21	cc	21:cc	_
+21	continua	continuar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	5:conj:mas	_
+22	a	a	ADP	_	_	24	mark	24:mark	_
+23	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	24	expl	24:expl	_
+24	espalhar	espalhar	VERB	_	VerbForm=Inf	21	xcomp	21:xcomp	SpaceAfter=No
+25	,	,	PUNCT	_	_	26	punct	26:punct	_
+26	criando	criar	VERB	_	VerbForm=Ger	21	advcl	21:advcl	_
+27	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	onda	onda	NOUN	_	Gender=Fem|Number=Sing	26	obj	26:obj	_
+29	de	de	ADP	_	_	30	case	30:case|32:case	_
+30	medo	medo	NOUN	_	Gender=Masc|Number=Sing	28	nmod	28:nmod:de	_
+31	e	e	CCONJ	_	_	32	cc	32:cc	_
+32	desinformação	desinformação	NOUN	_	Gender=Fem|Number=Sing	30	conj	28:nmod:de|30:conj:e	SpaceAfter=No
+33	.	.	PUNCT	_	_	5	punct	5:punct	_

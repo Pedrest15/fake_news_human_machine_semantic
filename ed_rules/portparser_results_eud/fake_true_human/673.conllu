@@ -1,0 +1,163 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = médico giovanni quintella bezerra é apoiador de bolsonaro, mostram perfis no instagram e facebook eis a evidência de que o anestesista tarado é bolsonarista.
+1	médico	médico	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+2	giovanni	giovanni	NOUN	_	Foreign=Yes	1	nmod	1:nmod	_
+3	quintella	quintella	X	_	_	2	nmod	2:nmod	_
+4	bezerra	bezerro	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod	_
+5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+6	apoiador	apoiador	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	bolsonaro	bolsonaro	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de	SpaceAfter=No
+9	,	,	PUNCT	_	_	10	punct	10:punct	_
+10	mostram	mostrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	parataxis	6:parataxis	_
+11	perfis	perfil	NOUN	_	Gender=Masc|Number=Plur	10	nsubj	10:nsubj	_
+12-13	no	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case|16:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	instagram	instagram	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	11	nmod	11:nmod:em	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	facebook	facebook	X	_	Foreign=Yes	14	conj	11:nmod:em|14:conj:e	_
+17	eis	eis	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	cop	19:cop	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	evidência	evidência	NOUN	_	Gender=Fem|Number=Sing	6	parataxis	6:parataxis	_
+20	de	de	ADP	_	ExtPos=SCONJ	26	mark	26:mark	_
+21	que	que	SCONJ	_	_	20	fixed	20:fixed	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	anestesista	anestesista	NOUN	_	Number=Sing	26	nsubj	26:nsubj	_
+24	tarado	tarado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	23	amod	23:amod	_
+25	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	cop	26:cop	_
+26	bolsonarista	bolsonarista	NOUN	_	Number=Sing	19	acl	19:acl:de_que	SpaceAfter=No
+27	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0003
+# text = só podia ser “cristão de bem”, acostumado a fazer “uso da vara” em quem não pode se defender.
+1	só	só	ADV	_	_	2	advmod	2:advmod	_
+2	podia	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+3	ser	ser	AUX	_	VerbForm=Inf	4	cop	4:cop	_
+4	“cristão	“cristão	NOUN	_	_	2	xcomp	2:xcomp	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	bem”	bem”	ADJ	_	_	4	nmod	4:nmod:de	SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	8:punct	_
+8	acostumado	acostumado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	4	amod	4:amod	_
+9	a	a	ADP	_	_	10	mark	10:mark	_
+10	fazer	fazer	VERB	_	VerbForm=Inf	8	acl	8:acl:a	_
+11	“uso	“uso	NOUN	_	_	10	obj	10:obj	_
+12-13	da	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	vara”	vara”	ADJ	_	_	11	nmod	11:nmod:de	_
+15	em	em	ADP	_	_	16	case	16:case	_
+16	quem	quem	PRON	_	PronType=Rel	10	obl	10:obl:em	_
+17	não	não	ADV	_	_	18	advmod	18:advmod	_
+18	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	acl:relcl	16:acl:relcl	_
+19	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	20	expl	20:expl	_
+20	defender	defender	VERB	_	VerbForm=Inf	18	xcomp	18:xcomp	SpaceAfter=No
+21	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = um necrófilo que odeia a maternidade, odeia mães.
+1	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	necrófilo	necrófilo	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root|4:nsubj|8:nsubj	_
+3	que	que	PRON	_	PronType=Rel	4	nsubj	2:ref	_
+4	odeia	odiar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	maternidade	maternidade	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	8:punct	_
+8	odeia	odiar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	2:acl:relcl|4:conj	_
+9	mães	mãe	NOUN	_	Gender=Fem|Number=Plur	8	obj	8:obj	SpaceAfter=No
+10	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0007
+# text = infelizmente, terapia não cura problemas de caráter.
+1	infelizmente	infelizmente	ADV	_	_	5	advmod	5:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	terapia	terapia	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+4	não	não	ADV	_	_	5	advmod	5:advmod	_
+5	cura	curar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	problemas	problema	NOUN	_	Gender=Masc|Number=Plur	5	obj	5:obj	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	caráter	caráter	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de	SpaceAfter=No
+9	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0009
+# text = , médico anestesista que abusou de mulher durante cesariana.
+1	,	,	PUNCT	_	_	2	punct	2:punct	_
+2	médico	médico	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root|5:nsubj	_
+3	anestesista	anestesista	NOUN	_	Number=Sing	2	nmod	2:nmod	_
+4	que	que	PRON	_	PronType=Rel	5	nsubj	2:ref	_
+5	abusou	abusar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	mulher	mulher	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:de	_
+8	durante	durante	ADP	_	_	9	case	9:case	_
+9	cesariana	cesariano	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:durante	SpaceAfter=No
+10	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0011
+# text = claro que é bolsonarista, o médico anestesista q estuprou a mulher grávida.
+1	claro	claro	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	_
+2	que	que	SCONJ	_	_	4	mark	4:mark	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+4	bolsonarista	bolsonarista	NOUN	_	Number=Sing	1	ccomp	1:ccomp	SpaceAfter=No
+5	,	,	PUNCT	_	_	10	punct	10:punct	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	médico	médico	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	10:nsubj	_
+8	anestesista	anestesista	NOUN	_	Number=Sing	7	nmod	7:nmod	_
+9	q	q	ADJ	_	Gender=Masc|NumType=Ord	7	amod	7:amod	_
+10	estuprou	estuprar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	parataxis	1:parataxis	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	mulher	mulher	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+13	grávida	grávido	ADJ	_	Gender=Fem|Number=Sing	12	amod	12:amod	SpaceAfter=No
+14	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0013
+# text = bolsonarista.
+1	bolsonarista	bolsonarista	NOUN	_	Number=Sing	0	root	0:root	SpaceAfter=No
+2	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0015
+# text = é muita coincidência estes canalhas apoiar o escroto do genocida , não falha um.
+1	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+2	muita	muito	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+3	coincidência	coincidência	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+4	estes	este	DET	_	Gender=Masc|Number=Plur|PronType=Dem	5	det	5:det	_
+5	canalhas	canalha	NOUN	_	Number=Plur	6	nsubj	6:nsubj	_
+6	apoiar	apoiar	VERB	_	VerbForm=Inf	3	csubj	3:csubj	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	escroto	escroto	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+9-10	do	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	genocida	genocida	NOUN	_	Number=Sing	8	nmod	8:nmod:de	_
+12	,	,	PUNCT	_	_	14	punct	14:punct	_
+13	não	não	ADV	_	_	14	advmod	14:advmod	_
+14	falha	falhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	parataxis	3:parataxis	_
+15	um	um	NUM	_	Gender=Masc|NumType=Card	14	nsubj	14:nsubj	SpaceAfter=No
+16	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0017
+# text = este é o anestesista estuprador.
+1	este	este	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	4	nsubj	4:nsubj	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	anestesista	anestesista	NOUN	_	Number=Sing	0	root	0:root	_
+5	estuprador	estuprador	ADJ	_	Gender=Masc|Number=Sing	4	amod	4:amod	SpaceAfter=No
+6	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0019
+# text = nem todos os equivocados bolsonaristas são canalhas, mas todos os canalhas são bolsonaristas.
+1	nem	nem	ADV	_	_	5	advmod	5:advmod	_
+2	todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Ind	5	det	5:det	_
+3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	5:det	_
+4	equivocados	equivocado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	5	amod	5:amod	_
+5	bolsonaristas	bolsonarista	NOUN	_	Number=Plur	7	nsubj	7:nsubj	_
+6	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+7	canalhas	canalha	NOUN	_	Number=Plur	0	root	0:root	SpaceAfter=No
+8	,	,	PUNCT	_	_	14	punct	14:punct	_
+9	mas	mas	CCONJ	_	_	14	cc	14:cc	_
+10	todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Ind	12	det	12:det	_
+11	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	12:det	_
+12	canalhas	canalha	NOUN	_	Number=Plur	14	nsubj	14:nsubj	_
+13	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	cop	14:cop	_
+14	bolsonaristas	bolsonarista	NOUN	_	Number=Plur	7	conj	7:conj:mas	SpaceAfter=No
+15	.	.	PUNCT	_	_	7	punct	7:punct	_

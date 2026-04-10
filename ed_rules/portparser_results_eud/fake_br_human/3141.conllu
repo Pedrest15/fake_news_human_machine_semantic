@@ -1,0 +1,137 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Plenário hoje Bolsonaro manda recado para Dilma e Lula: " Vade retro, satanás ".
+1	Plenário	plenário	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+2	hoje	hoje	ADV	_	_	4	advmod	4:advmod	_
+3	Bolsonaro	Bolsonaro	PROPN	_	_	4	nsubj	4:nsubj	_
+4	manda	mandar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	recado	recado	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+6	para	para	ADP	_	_	7	case	7:case|9:case	_
+7	Dilma	Dilma	PROPN	_	_	5	nmod	5:nmod:para	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	Lula	Lula	PROPN	_	_	7	conj	5:nmod:para|7:conj:e	SpaceAfter=No
+10	:	:	PUNCT	_	_	12	punct	12:punct	_
+11	"	"	PUNCT	_	_	12	punct	12:punct	_
+12	Vade	vade	VERB	_	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	4	parataxis	4:parataxis	_
+13	retro	retro	X	_	_	12	discourse	12:discourse	SpaceAfter=No
+14	,	,	PUNCT	_	_	15	punct	15:punct	_
+15	satanás	satanás	NOUN	_	Gender=Masc|Number=Sing	12	vocative	12:vocative	_
+16	"	"	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+17	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0003
+# text = O mito Jair Bolsonaro mandou um recadinho direto para "o poderoso chefão".
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	mito	mito	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+3	Jair	Jair	PROPN	_	_	2	nmod	2:nmod	_
+4	Bolsonaro	Bolsonaro	PROPN	_	_	3	flat:name	3:flat:name	_
+5	mandou	mandar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	recadinho	recadinho	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+8	direto	direto	ADV	_	_	5	advmod	5:advmod	_
+9	para	para	ADP	_	_	13	case	13:case	_
+10	"	"	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+12	poderoso	poderoso	ADJ	_	Gender=Masc|Number=Sing	13	amod	13:amod	_
+13	chefão	chefão	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:para	SpaceAfter=No
+14	"	"	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+15	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0005
+# text = Bolsonaro é homem para enfrentar a máfia petista como poucos na política nacional.
+1	Bolsonaro	Bolsonaro	PROPN	_	_	3	nsubj	3:nsubj	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+3	homem	homem	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+4	para	para	ADP	_	_	5	mark	5:mark	_
+5	enfrentar	enfrentar	VERB	_	VerbForm=Inf	3	acl	3:acl:para	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	máfia	máfia	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+8	petista	petista	ADJ	_	Number=Sing	7	amod	7:amod	_
+9	como	como	ADP	_	_	10	case	10:case	_
+10	poucos	pouco	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	5	obl	5:obl:como	_
+11-12	na	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	política	política	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:em	_
+14	nacional	nacional	ADJ	_	Number=Sing	13	amod	13:amod	SpaceAfter=No
+15	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = Como ninguém mais, eu diria. .
+1	Como	como	ADP	_	_	2	case	2:case	_
+2	ninguém	ninguém	PRON	_	Number=Sing|PronType=Ind	6	obl	6:obl:como	_
+3	mais	mais	ADV	_	_	2	det	2:det	SpaceAfter=No
+4	,	,	PUNCT	_	_	2	punct	2:punct	_
+5	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj	6:nsubj	_
+6	diria	dizer	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+7	.	.	PUNCT	_	_	6	punct	6:punct	_
+8	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0009
+# text = O PT NÃO ROUBA APENAS POR ROUBAR.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	PT	PT	PROPN	_	_	4	nsubj	4:nsubj	_
+3	NÃO	não	ADV	_	_	4	advmod	4:advmod	_
+4	ROUBA	roubar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	APENAS	apenas	ADV	_	_	7	advmod	7:advmod	_
+6	POR	por	ADP	_	_	7	mark	7:mark	_
+7	ROUBAR	roubar	VERB	_	VerbForm=Inf	4	advcl	4:advcl:por	SpaceAfter=No
+8	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0011
+# text = ELES ROUBAM PELO PROJETO DE PODER.
+1	ELES	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	2	nsubj	2:nsubj	_
+2	ROUBAM	roubar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3-4	PELO	_	_	_	_	_	_	_	_
+3	POR	por	ADP	_	_	5	case	5:case	_
+4	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	PROJETO	PROJETO	PROPN	_	_	2	obl	2:obl:por	_
+6	DE	de	ADP	_	_	7	case	7:case	_
+7	PODER	PODER	PROPN	_	_	5	nmod	5:nmod:de	SpaceAfter=No
+8	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0013
+# text = É UMA FACÇÃO.
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+2	UMA	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	FACÇÃO	facção	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+4	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0015
+# text = ESSA FACÇÃO CRIMINOSA NUNCA TEVE AMOR POR DEMOCRACIA.
+1	ESSA	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	2	det	2:det	_
+2	FACÇÃO	facção	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+3	CRIMINOSA	criminoso	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	_
+4	NUNCA	nunca	ADV	_	_	5	advmod	5:advmod	_
+5	TEVE	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	AMOR	amor	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+7	POR	por	ADP	_	_	8	case	8:case	_
+8	DEMOCRACIA	DEMOCRACIA	PROPN	_	_	6	nmod	6:nmod:por	SpaceAfter=No
+9	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0017
+# text = O PONTO DE DESTRUIR ESSA QUADRILHA É AGORA OU ELES IRÃO SE REORGANIZAR E PASSA A AMEAÇAR TODOS NÓS (Jair Bolsonaro).
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	PONTO	ponto	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	8:nsubj	_
+3	DE	de	ADP	_	_	4	mark	4:mark	_
+4	DESTRUIR	destruir	VERB	_	VerbForm=Inf	2	acl	2:acl:de	_
+5	ESSA	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	6	det	6:det	_
+6	QUADRILHA	quadrilha	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+7	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop	_
+8	AGORA	agora	ADV	_	_	0	root	0:root	_
+9	OU	ou	CCONJ	_	_	13	cc	13:cc	_
+10	ELES	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	13	nsubj	13:nsubj	_
+11	IRÃO	ir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	8	conj	8:conj:ou	_
+12	SE	se	PRON	_	Case=Nom|Person=3|PronType=Prs	13	expl	13:expl	_
+13	REORGANIZAR	reorganizar	VERB	_	VerbForm=Inf	8	conj	8:conj:ou	_
+14	E	e	CCONJ	_	_	15	cc	15:cc	_
+15	PASSA	passar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	conj	13:conj:e	_
+16	A	a	ADP	_	_	17	mark	17:mark	_
+17	AMEAÇAR	ameaçar	VERB	_	VerbForm=Inf	15	xcomp	15:xcomp	_
+18	TODOS	todo	DET	_	Gender=Masc|Number=Plur|PronType=Ind	19	det	19:det	_
+19	NÓS	nós	PRON	_	PronType=Dem	17	obj	17:obj	_
+20	(	(	PUNCT	_	_	21	punct	21:punct	SpaceAfter=No
+21	Jair	Jair	PROPN	_	_	19	appos	19:appos	_
+22	Bolsonaro	Bolsonaro	PROPN	_	_	21	flat:name	21:flat:name	SpaceAfter=No
+23	)	)	PUNCT	_	_	21	punct	21:punct	SpaceAfter=No
+24	.	.	PUNCT	_	_	8	punct	8:punct	_

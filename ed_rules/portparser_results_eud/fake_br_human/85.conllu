@@ -1,0 +1,309 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Presidente Temer teme ser assassinado.
+1	Presidente	presidente	NOUN	_	Number=Sing	3	nsubj	3:nsubj|5:nsubj:pass	_
+2	Temer	Temer	PROPN	_	_	1	nmod	1:nmod	_
+3	teme	temer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	ser	ser	AUX	_	VerbForm=Inf	5	aux:pass	5:aux:pass	_
+5	assassinado	assassinar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	xcomp	3:xcomp	SpaceAfter=No
+6	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = Depois de mais uma morte envolvendo pessoas ligadas a Operação Lava Jato o presidente Michel Temer começa a demonstrar temor sobre um assassinato para queima de arquivo.
+1	Depois	depois	ADV	_	_	17	advmod	17:advmod	_
+2	de	de	ADP	_	_	5	case	5:case	_
+3	mais	mais	ADV	_	_	4	advmod	4:advmod	_
+4	uma	um	NUM	_	Gender=Fem|NumType=Card	5	nummod	5:nummod	_
+5	morte	morte	NOUN	_	Gender=Fem|Number=Sing	1	obl	1:obl:de	_
+6	envolvendo	envolver	VERB	_	VerbForm=Ger	5	acl	5:acl	_
+7	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	6	obj	6:obj	_
+8	ligadas	ligar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	7	acl	7:acl	_
+9	a	a	ADP	_	_	10	case	10:case	_
+10	Operação	Operação	PROPN	_	_	8	obl	8:obl:a	_
+11	Lava	Lava	PROPN	_	_	10	flat:name	10:flat:name	_
+12	Jato	Jato	PROPN	_	_	10	flat:name	10:flat:name	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	presidente	presidente	NOUN	_	Number=Sing	17	nsubj	17:nsubj|19:nsubj	_
+15	Michel	Michel	PROPN	_	_	14	nmod	14:nmod	_
+16	Temer	Temer	PROPN	_	_	15	flat:name	15:flat:name	_
+17	começa	começar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+18	a	a	ADP	_	_	19	mark	19:mark	_
+19	demonstrar	demonstrar	VERB	_	VerbForm=Inf	17	xcomp	17:xcomp	_
+20	temor	temor	NOUN	_	Gender=Masc|Number=Sing	19	obj	19:obj	_
+21	sobre	sobre	ADP	_	_	23	case	23:case	_
+22	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	assassinato	assassinato	NOUN	_	Gender=Masc|Number=Sing	20	nmod	20:nmod:sobre	_
+24	para	para	ADP	_	_	25	case	25:case	_
+25	queima	queima	NOUN	_	Number=Sing	23	nmod	23:nmod:para	_
+26	de	de	ADP	_	_	27	case	27:case	_
+27	arquivo	arquivo	NOUN	_	Gender=Masc|Number=Sing	25	nmod	25:nmod:de	SpaceAfter=No
+28	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0005
+# text = O assassinato do delegado que investigava o acidente aéreo que deu fim à vida do ministro do STF Teori Zavascki acendeu o alerta vermelho no Palácio do Planalto.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	assassinato	assassinato	NOUN	_	Gender=Masc|Number=Sing	25	nsubj	25:nsubj	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	delegado	delegado	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de|7:nsubj|12:nsubj	_
+6	que	que	PRON	_	PronType=Rel	7	nsubj	5:ref	_
+7	investigava	investigar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	acidente	acidente	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+10	aéreo	aéreo	ADJ	_	Gender=Masc|Number=Sing	9	amod	9:amod	_
+11	que	que	PRON	_	PronType=Rel	12	nsubj	5:ref	_
+12	deu	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_
+13	fim	fim	NOUN	_	Gender=Masc|Number=Sing	12	obj	12:obj	_
+14-15	à	_	_	_	_	_	_	_	_
+14	a	a	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	vida	vida	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl:a	_
+17-18	do	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	ministro	ministro	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod:de	_
+20-21	do	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	STF	STF	PROPN	_	_	19	nmod	19:nmod:de	_
+23	Teori	Teori	PROPN	_	_	19	nmod	19:nmod	_
+24	Zavascki	Zavascki	PROPN	_	_	23	flat:name	23:flat:name	_
+25	acendeu	acender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	alerta	alerta	NOUN	_	Number=Sing	25	obj	25:obj	_
+28	vermelho	vermelho	ADJ	_	Gender=Masc|Number=Sing	27	amod	27:amod	_
+29-30	no	_	_	_	_	_	_	_	_
+29	em	em	ADP	_	_	31	case	31:case	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	Palácio	Palácio	PROPN	_	_	25	obl	25:obl:em	_
+32-33	do	_	_	_	_	_	_	_	_
+32	de	de	ADP	_	_	34	case	34:case	_
+33	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	34:det	_
+34	Planalto	Planalto	PROPN	_	_	31	flat:name	31:flat:name	SpaceAfter=No
+35	.	.	PUNCT	_	_	25	punct	25:punct	_
+
+# sent_id = S0007
+# text = Em reuniões reservadas o presidente comenta com os ministros mais próximos sobre o seu temor de ser o próximo alvo dos assassinos.
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	reuniões	reunião	NOUN	_	Gender=Fem|Number=Plur	6	obl	6:obl:em	_
+3	reservadas	reservado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	2	amod	2:amod	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	presidente	presidente	NOUN	_	Number=Sing	6	nsubj	6:nsubj	_
+6	comenta	comentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	com	com	ADP	_	_	9	case	9:case	_
+8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	9:det	_
+9	ministros	ministro	NOUN	_	Gender=Masc|Number=Plur	6	obl	6:obl:com	_
+10	mais	mais	ADV	_	_	11	advmod	11:advmod	_
+11	próximos	próximo	ADJ	_	Gender=Masc|Number=Plur	9	amod	9:amod	_
+12	sobre	sobre	ADP	_	_	15	case	15:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+14	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	15	det	15:det	_
+15	temor	temor	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:sobre	_
+16	de	de	ADP	_	_	20	mark	20:mark	_
+17	ser	ser	AUX	_	VerbForm=Inf	20	cop	20:cop	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+19	próximo	próximo	ADJ	_	Gender=Masc|Number=Sing	20	amod	20:amod	_
+20	alvo	alvo	NOUN	_	Gender=Masc|Number=Sing	15	acl	15:acl:de	_
+21-22	dos	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	23:det	_
+23	assassinos	assassino	NOUN	_	Gender=Masc|Number=Plur	20	nmod	20:nmod:de	SpaceAfter=No
+24	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0009
+# text = O presidente do Senado, Eunício Oliveira teve, na quarta-feira à noite, uma conversa com Temer e abordou, com jeito, a possibilidade de o presidente deixar o cargo.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	presidente	presidente	NOUN	_	Number=Sing	9	nsubj	9:nsubj|23:nsubj	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	Senado	Senado	PROPN	_	_	2	nmod	2:nmod:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	Eunício	Eunício	PROPN	_	_	2	appos	2:appos	_
+8	Oliveira	Oliveira	PROPN	_	_	7	flat:name	7:flat:name	_
+9	teve	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+10	,	,	PUNCT	_	_	13	punct	13:punct	_
+11-12	na	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	quarta-feira	quarta-feira	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:em	_
+14-15	à	_	_	_	_	_	_	_	_
+14	a	a	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	noite	noite	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:a	SpaceAfter=No
+17	,	,	PUNCT	_	_	13	punct	13:punct	_
+18	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	conversa	conversa	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+20	com	com	ADP	_	_	21	case	21:case	_
+21	Temer	Temer	PROPN	_	_	19	nmod	19:nmod:com	_
+22	e	e	CCONJ	_	_	23	cc	23:cc	_
+23	abordou	abordar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	conj	9:conj:e	SpaceAfter=No
+24	,	,	PUNCT	_	_	26	punct	26:punct	_
+25	com	com	ADP	_	_	26	case	26:case	_
+26	jeito	jeito	NOUN	_	Gender=Masc|Number=Sing	23	obl	23:obl:com	SpaceAfter=No
+27	,	,	PUNCT	_	_	26	punct	26:punct	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	possibilidade	possibilidade	NOUN	_	Gender=Fem|Number=Sing	23	obj	23:obj	_
+30	de	de	ADP	_	_	33	mark	33:mark	_
+31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+32	presidente	presidente	NOUN	_	Number=Sing	33	nsubj	33:nsubj	_
+33	deixar	deixar	VERB	_	VerbForm=Inf	29	acl	29:acl:de	_
+34	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	35:det	_
+35	cargo	cargo	NOUN	_	Gender=Masc|Number=Sing	33	obj	33:obj	SpaceAfter=No
+36	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0011
+# text = Michel Temer de maneira enigmática respondeu a todos os presentes na reunião: Não vou renunciar, não vou sair.
+1	Michel	Michel	PROPN	_	_	6	nsubj	6:nsubj	_
+2	Temer	Temer	PROPN	_	_	1	flat:name	1:flat:name	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	maneira	maneira	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:de	_
+5	enigmática	enigmático	ADJ	_	Gender=Fem|Number=Sing	4	amod	4:amod	_
+6	respondeu	responder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	a	a	ADP	_	_	10	case	10:case	_
+8	todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Ind	10	det	10:det	_
+9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	10:det	_
+10	presentes	presente	NOUN	_	Gender=Masc|Number=Plur	6	obl	6:obl:a	_
+11-12	na	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	reunião	reunião	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:em	SpaceAfter=No
+14	:	:	PUNCT	_	_	17	punct	17:punct	_
+15	Não	não	ADV	_	_	17	advmod	17:advmod	_
+16	vou	ir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	17	aux	17:aux	_
+17	renunciar	renunciar	VERB	_	VerbForm=Inf	6	ccomp:speech	6:ccomp:speech	SpaceAfter=No
+18	,	,	PUNCT	_	_	21	punct	21:punct	_
+19	não	não	ADV	_	_	21	advmod	21:advmod	_
+20	vou	ir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	21	aux	21:aux	_
+21	sair	sair	VERB	_	VerbForm=Inf	17	conj	6:ccomp:speech|17:conj	SpaceAfter=No
+22	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0013
+# text = Vou recorrer na Justiça até o fim.
+1	Vou	ir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	aux	2:aux	_
+2	recorrer	recorrer	VERB	_	VerbForm=Inf	0	root	0:root	_
+3-4	na	_	_	_	_	_	_	_	_
+3	em	em	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	Justiça	Justiça	PROPN	_	_	2	obl	2:obl:em	_
+6	até	até	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	fim	fim	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:até	SpaceAfter=No
+9	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0015
+# text = Se quiserem que eu saia, têm que me matar.
+1	Se	se	SCONJ	_	_	2	mark	2:mark	_
+2	quiserem	querer	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	7	advcl	7:advcl:se	_
+3	que	que	SCONJ	_	_	5	mark	5:mark	_
+4	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	5:nsubj	_
+5	saia	sair	VERB	_	Mood=Sub|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	ccomp	2:ccomp	SpaceAfter=No
+6	,	,	PUNCT	_	_	2	punct	2:punct	_
+7	têm	ter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	que	que	ADP	_	_	10	mark	10:mark	_
+9	me	me	PRON	_	Case=Acc|Number=Sing|Person=1|PronType=Prs	10	obj	10:obj	_
+10	matar	matar	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	SpaceAfter=No
+11	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0017
+# text = Vão ter que me matar.
+1	Vão	ir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	aux	2:aux	_
+2	ter	ter	VERB	_	VerbForm=Inf	0	root	0:root	_
+3	que	que	ADP	_	_	5	mark	5:mark	_
+4	me	me	PRON	_	Case=Acc|Number=Sing|Person=1|PronType=Prs	5	obj	5:obj	_
+5	matar	matar	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	SpaceAfter=No
+6	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0019
+# text = Interlocutores próximos ao presidente Michel Temer o aconselharam a ter o máximo de cuidado com os aviões.
+1	Interlocutores	interlocutor	NOUN	_	Gender=Masc|Number=Plur	9	nsubj	9:nsubj	_
+2	próximos	próximo	ADJ	_	Gender=Masc|Number=Plur	1	amod	1:amod	_
+3-4	ao	_	_	_	_	_	_	_	_
+3	a	a	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	presidente	presidente	NOUN	_	Number=Sing	2	obl	2:obl:a	_
+6	Michel	Michel	PROPN	_	_	5	nmod	5:nmod	_
+7	Temer	Temer	PROPN	_	_	6	flat:name	6:flat:name	_
+8	o	o	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	obj	9:obj|11:nsubj	_
+9	aconselharam	aconselhar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	a	a	ADP	_	_	11	mark	11:mark	_
+11	ter	ter	VERB	_	VerbForm=Inf	9	xcomp	9:xcomp	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	máximo	máximo	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	cuidado	cuidado	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod:de	_
+16	com	com	ADP	_	_	18	case	18:case	_
+17	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	18:det	_
+18	aviões	avião	NOUN	_	Gender=Masc|Number=Plur	15	nmod	15:nmod:com	SpaceAfter=No
+19	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0021
+# text = A história recente do Brasil prova que acidente aéreo é uma conveniente coincidência para queima de arquivos.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	história	história	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj	_
+3	recente	recente	ADJ	_	Number=Sing	2	amod	2:amod	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	Brasil	Brasil	PROPN	_	_	2	nmod	2:nmod:de	_
+7	prova	provar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	que	que	SCONJ	_	_	14	mark	14:mark	_
+9	acidente	acidente	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	14:nsubj	_
+10	aéreo	aéreo	ADJ	_	Gender=Masc|Number=Sing	9	amod	9:amod	_
+11	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	14:cop	_
+12	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+13	conveniente	conveniente	ADJ	_	Number=Sing	14	amod	14:amod	_
+14	coincidência	coincidência	NOUN	_	Gender=Fem|Number=Sing	7	ccomp	7:ccomp	_
+15	para	para	ADP	_	_	16	case	16:case	_
+16	queima	queima	NOUN	_	Number=Sing	14	nmod	14:nmod:para	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	arquivos	arquivo	NOUN	_	Gender=Masc|Number=Plur	16	nmod	16:nmod:de	SpaceAfter=No
+19	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0023
+# text = Para se certificar disso basta lembrar das circunstâncias que levaram a morte Eduardo Campos, Ulisses Guimarães, Castelo Branco, Salgado Filho e Teori Zavascki.
+1	Para	para	ADP	_	_	3	mark	3:mark	_
+2	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	3	expl	3:expl	_
+3	certificar	certificar	VERB	_	VerbForm=Inf	6	advcl	6:advcl:para	_
+4-5	disso	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	3	obl	3:obl:de	_
+6	basta	bastar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	lembrar	lembrar	VERB	_	VerbForm=Inf	6	csubj	6:csubj	_
+8-9	das	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	10:det	_
+10	circunstâncias	circunstância	NOUN	_	Gender=Fem|Number=Plur	7	obl	7:obl:de|12:nsubj	_
+11	que	que	PRON	_	PronType=Rel	12	nsubj	10:ref	_
+12	levaram	levar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	10	acl:relcl	10:acl:relcl	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	morte	morte	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+15	Eduardo	Eduardo	PROPN	_	_	12	obj	12:obj	_
+16	Campos	Campos	PROPN	_	_	15	flat:name	15:flat:name	SpaceAfter=No
+17	,	,	PUNCT	_	_	18	punct	18:punct	_
+18	Ulisses	Ulisses	PROPN	_	_	15	conj	12:obj|15:conj:e	_
+19	Guimarães	Guimarães	PROPN	_	_	18	flat:name	18:flat:name	SpaceAfter=No
+20	,	,	PUNCT	_	_	21	punct	21:punct	_
+21	Castelo	Castelo	PROPN	_	_	15	conj	12:obj|15:conj:e	_
+22	Branco	Branco	PROPN	_	_	21	flat:name	21:flat:name	SpaceAfter=No
+23	,	,	PUNCT	_	_	24	punct	24:punct	_
+24	Salgado	Salgado	PROPN	_	_	15	conj	12:obj|15:conj:e	_
+25	Filho	Filho	PROPN	_	_	24	flat:name	24:flat:name	_
+26	e	e	CCONJ	_	_	27	cc	27:cc	_
+27	Teori	Teori	PROPN	_	_	15	conj	12:obj|15:conj:e	_
+28	Zavascki	Zavascki	PROPN	_	_	27	flat:name	27:flat:name	SpaceAfter=No
+29	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0025
+# text = Todos morreram em acidentes aéreos com circunstâncias muito suspeitas.
+1	Todos	todo	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	2	nsubj	2:nsubj	_
+2	morreram	morrer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	em	em	ADP	_	_	4	case	4:case	_
+4	acidentes	acidente	NOUN	_	Gender=Masc|Number=Plur	2	obl	2:obl:em	_
+5	aéreos	aéreo	ADJ	_	Gender=Masc|Number=Plur	4	amod	4:amod	_
+6	com	com	ADP	_	_	7	case	7:case	_
+7	circunstâncias	circunstância	NOUN	_	Gender=Fem|Number=Plur	4	nmod	4:nmod:com	_
+8	muito	muito	ADV	_	_	9	advmod	9:advmod	_
+9	suspeitas	suspeito	ADJ	_	Gender=Fem|Number=Plur	7	amod	7:amod	SpaceAfter=No
+10	.	.	PUNCT	_	_	2	punct	2:punct	_

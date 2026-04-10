@@ -1,0 +1,268 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Simples e objetivo: "Aquele que matar um policial será condenado à pena de morte".
+1	Simples	simples	ADJ	_	_	0	root	0:root	_
+2	e	e	CCONJ	_	_	3	cc	3:cc	_
+3	objetivo	objetivo	ADJ	_	Gender=Masc|Number=Sing	1	conj	1:conj:e	SpaceAfter=No
+4	:	:	PUNCT	_	_	12	punct	12:punct	_
+5	"	"	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+6	Aquele	aquele	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	12	nsubj:pass	8:nsubj|12:nsubj:pass	_
+7	que	que	PRON	_	PronType=Rel	8	nsubj	6:ref	_
+8	matar	matar	VERB	_	VerbForm=Inf	6	acl:relcl	6:acl:relcl	_
+9	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	policial	policial	NOUN	_	Number=Sing	8	obj	8:obj	_
+11	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	12	aux:pass	12:aux:pass	_
+12	condenado	condenar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	1	parataxis	1:parataxis	_
+13-14	à	_	_	_	_	_	_	_	_
+13	a	a	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	pena	pena	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl:a	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	morte	morte	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:de	SpaceAfter=No
+18	"	"	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+19	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = As declarações que foram dadas no final de 2016, voltaram a circular entre os internautas americanos na noite de hoje.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	declarações	declaração	NOUN	_	Gender=Fem|Number=Plur	12	nsubj	5:nsubj:pass|12:nsubj|14:nsubj	_
+3	que	que	PRON	_	PronType=Rel	5	nsubj:pass	2:ref	_
+4	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	5	aux:pass	5:aux:pass	_
+5	dadas	dar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	2	acl:relcl	2:acl:relcl	_
+6-7	no	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	final	final	NOUN	_	Number=Sing	5	obl	5:obl:em	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	2016	2016	NUM	_	NumType=Card	8	nmod	8:nmod:de	SpaceAfter=No
+11	,	,	PUNCT	_	_	5	punct	5:punct	_
+12	voltaram	voltar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+13	a	a	ADP	_	_	14	mark	14:mark	_
+14	circular	circular	VERB	_	VerbForm=Inf	12	xcomp	12:xcomp	_
+15	entre	entre	ADP	_	_	17	case	17:case	_
+16	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	17:det	_
+17	internautas	internauta	NOUN	_	Number=Plur	14	obl	14:obl:entre	_
+18	americanos	americano	ADJ	_	Gender=Masc|Number=Plur	17	amod	17:amod	_
+19-20	na	_	_	_	_	_	_	_	_
+19	em	em	ADP	_	_	21	case	21:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	noite	noite	NOUN	_	Gender=Fem|Number=Sing	14	obl	14:obl:em	_
+22	de	de	ADP	_	_	23	case	23:case	_
+23	hoje	hoje	ADV	_	_	21	nmod	21:nmod:de	SpaceAfter=No
+24	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0005
+# text = Um ataque contra nossas forças policiais é um ataque contra nosso país e contra nossas famílias.
+1	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	ataque	ataque	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	9:nsubj	_
+3	contra	contra	ADP	_	_	5	case	5:case	_
+4	nossas	nosso	DET	_	Gender=Fem|Number=Plur|Person=1|Poss=Yes|PronType=Prs	5	det	5:det	_
+5	forças	força	NOUN	_	Gender=Fem|Number=Plur	2	nmod	2:nmod:contra	_
+6	policiais	policial	ADJ	_	Number=Plur	5	amod	5:amod	_
+7	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	9:cop	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	ataque	ataque	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+10	contra	contra	ADP	_	_	12	case	12:case	_
+11	nosso	nosso	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	12	det	12:det	_
+12	país	país	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:contra	_
+13	e	e	CCONJ	_	_	16	cc	16:cc	_
+14	contra	contra	ADP	_	_	16	case	16:case	_
+15	nossas	nosso	DET	_	Gender=Fem|Number=Plur|Person=1|Poss=Yes|PronType=Prs	16	det	16:det	_
+16	famílias	família	NOUN	_	Gender=Fem|Number=Plur	12	conj	9:nmod:contra|12:conj:e	SpaceAfter=No
+17	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0007
+# text = Vamos continuar solidários às forças policiais.
+1	Vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	aux	2:aux	_
+2	continuar	continuar	VERB	_	VerbForm=Inf	0	root	0:root	_
+3	solidários	solidário	ADJ	_	Gender=Masc|Number=Plur	2	xcomp	2:xcomp	_
+4-5	às	_	_	_	_	_	_	_	_
+4	a	a	ADP	_	_	6	case	6:case	_
+5	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	6:det	_
+6	forças	força	NOUN	_	Gender=Fem|Number=Plur	3	obl	3:obl:a	_
+7	policiais	policial	ADJ	_	Number=Plur	6	amod	6:amod	SpaceAfter=No
+8	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0009
+# text = São elas que separam a civilização do caos.
+1	São	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	discourse	4:discourse	_
+2	elas	ele	PRON	_	Case=Nom|Gender=Fem|Number=Plur|Person=3|PronType=Prs	4	nsubj	4:nsubj	_
+3	que	que	PRON	_	PronType=Rel	4	discourse	4:discourse	_
+4	separam	separar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	civilização	civilização	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	caos	caos	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:de	SpaceAfter=No
+10	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0011
+# text = (...) Aquele que assassinar um policial será submetido à pena de morte, disse.
+1	(	(	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+2	.	.	PUNCT	_	_	5	parataxis	5:parataxis	SpaceAfter=No
+3	..	..	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+4	)	)	PUNCT	_	_	2	punct	2:punct	_
+5	Aquele	aquele	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	11	nsubj:pass	7:nsubj|11:nsubj:pass	_
+6	que	que	PRON	_	PronType=Rel	7	nsubj	5:ref	_
+7	assassinar	assassinar	VERB	_	VerbForm=Inf	5	acl:relcl	5:acl:relcl	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	policial	policial	NOUN	_	Number=Sing	7	obj	7:obj	_
+10	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	11	aux:pass	11:aux:pass	_
+11	submetido	submeter	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	18	ccomp:speech	18:ccomp:speech	_
+12-13	à	_	_	_	_	_	_	_	_
+12	a	a	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	pena	pena	NOUN	_	Gender=Fem|Number=Sing	11	obl	11:obl:a	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	morte	morte	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:de	SpaceAfter=No
+17	,	,	PUNCT	_	_	11	punct	11:punct	_
+18	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+19	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0013
+# text = O presidente norte-americano disse que irá resgatar a importância da autoridade policial.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	presidente	presidente	NOUN	_	Number=Sing	4	nsubj	4:nsubj	_
+3	norte-americano	norte-americano	ADJ	_	Gender=Masc|Number=Sing	2	amod	2:amod	_
+4	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	que	que	SCONJ	_	_	7	mark	7:mark	_
+6	irá	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	7	aux	7:aux	_
+7	resgatar	resgatar	VERB	_	VerbForm=Inf	4	ccomp	4:ccomp	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	importância	importância	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	_
+10-11	da	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	autoridade	autoridade	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:de	_
+13	policial	policial	ADJ	_	Number=Sing	12	amod	12:amod	SpaceAfter=No
+14	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0015
+# text = Devemos ser mais gratos à nossa polícia.
+1	Devemos	dever	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	ser	ser	AUX	_	VerbForm=Inf	4	cop	4:cop	_
+3	mais	mais	ADV	_	_	4	advmod	4:advmod	_
+4	gratos	grato	ADJ	_	Gender=Masc|Number=Plur	1	xcomp	1:xcomp	_
+5-6	à	_	_	_	_	_	_	_	_
+5	a	a	ADP	_	_	8	case	8:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+7	nossa	nosso	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	8	det	8:det	_
+8	polícia	polícia	NOUN	_	Number=Sing	4	obl	4:obl:a	SpaceAfter=No
+9	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0017
+# text = Não damos a eles o verdadeiro respeito que merecem.
+1	Não	não	ADV	_	_	2	advmod	2:advmod	_
+2	damos	dar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	a	a	ADP	_	_	4	case	4:case	_
+4	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	2	obl	2:obl:a	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+6	verdadeiro	verdadeiro	ADJ	_	Gender=Masc|Number=Sing	7	amod	7:amod	_
+7	respeito	respeito	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj|9:obj	_
+8	que	que	PRON	_	PronType=Rel	9	obj	7:ref	_
+9	merecem	merecer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	7:acl:relcl	SpaceAfter=No
+10	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0019
+# text = Sabemos também que coisas ruins acontecem na corporação e existem maus policiais, porém esses serão punidos com o rigor da lei.
+1	Sabemos	saber	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	também	também	ADV	_	_	1	advmod	1:advmod	_
+3	que	que	SCONJ	_	_	6	mark	6:mark|11:mark|18:mark	_
+4	coisas	coisa	NOUN	_	Gender=Fem|Number=Plur	6	nsubj	6:nsubj	_
+5	ruins	ruim	ADJ	_	Number=Plur	4	amod	4:amod	_
+6	acontecem	acontecer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	1:ccomp	_
+7-8	na	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	corporação	corporação	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:em	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	existem	existir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	conj	1:ccomp|6:conj:e	_
+12	maus	mau	ADJ	_	Gender=Masc|Number=Plur	13	amod	13:amod	_
+13	policiais	policial	NOUN	_	Number=Plur	11	nsubj	11:nsubj	SpaceAfter=No
+14	,	,	PUNCT	_	_	18	punct	18:punct	_
+15	porém	porém	CCONJ	_	_	18	cc	18:cc	_
+16	esses	esse	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	18	nsubj:pass	18:nsubj:pass	_
+17	serão	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	18	aux:pass	18:aux:pass	_
+18	punidos	punir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	6	conj	1:ccomp|6:conj:porém	_
+19	com	com	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	rigor	rigor	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:com	_
+22-23	da	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	lei	lei	NOUN	_	Gender=Fem|Number=Sing	21	nmod	21:nmod:de	SpaceAfter=No
+25	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0021
+# text = A verdade é que eles fazem um trabalho incrível e vamos dar a eles mais autoridade e respeito.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	verdade	verdade	NOUN	_	Gender=Fem|Number=Sing	6	nsubj:outer	6:nsubj:outer	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+4	que	que	SCONJ	_	_	6	mark	6:mark|12:mark	_
+5	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	6	nsubj	6:nsubj	_
+6	fazem	fazer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+9	incrível	incrível	ADJ	_	Number=Sing	8	amod	8:amod	_
+10	e	e	CCONJ	_	_	12	cc	12:cc	_
+11	vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	12	aux	12:aux	_
+12	dar	dar	VERB	_	VerbForm=Inf	6	conj	6:conj:e	_
+13	a	a	ADP	_	_	14	case	14:case	_
+14	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	12	obl	12:obl:a	_
+15	mais	mais	DET	_	PronType=Ind	16	det	16:det	_
+16	autoridade	autoridade	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+17	e	e	CCONJ	_	_	18	cc	18:cc	_
+18	respeito	respeito	NOUN	_	Gender=Masc|Number=Sing	16	conj	12:obj|16:conj:e	SpaceAfter=No
+19	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0022
+# text = encerrou Trump.
+1	encerrou	encerrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	Trump	Trump	PROPN	_	_	1	obj	1:obj	SpaceAfter=No
+3	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0024
+# text = O presidente eleito tem o apoio de Rudolph "Rudy" Giuliani, ex-prefeito de Nova York e ex-promotor que lutou contra a máfia.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	presidente	presidente	NOUN	_	Number=Sing	4	nsubj	4:nsubj	_
+3	eleito	eleger	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	2	amod	2:amod	_
+4	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	apoio	apoio	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7	de	de	ADP	_	_	8	case	8:case|19:case	_
+8	Rudolph	Rudolph	PROPN	_	_	6	nmod	6:nmod:de	_
+9	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+10	Rudy	Rudy	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+11	"	"	PUNCT	_	_	10	punct	10:punct	_
+12	Giuliani	Giuliani	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	ex-prefeito	ex-prefeito	NOUN	_	Gender=Masc|Number=Sing	8	appos	8:appos	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	Nova	Nova	PROPN	_	_	14	nmod	14:nmod:de	_
+17	York	York	PROPN	_	_	16	flat:name	16:flat:name	_
+18	e	e	CCONJ	_	_	19	cc	19:cc	_
+19	ex-promotor	ex-promotor	NOUN	_	Gender=Masc|Number=Sing	8	conj	6:nmod:de|8:conj:e|21:nsubj	_
+20	que	que	PRON	_	PronType=Rel	21	nsubj	19:ref	_
+21	lutou	lutar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	acl:relcl	19:acl:relcl	_
+22	contra	contra	ADP	_	_	24	case	24:case	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	máfia	máfia	NOUN	_	Gender=Fem|Number=Sing	21	obl	21:obl:contra	SpaceAfter=No
+25	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0026
+# text = Rudy é reconhecido por reduzir a quase zero a criminalidade em Nova York.
+1	Rudy	Rudy	PROPN	_	_	3	nsubj:pass	3:nsubj:pass	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:pass	3:aux:pass	_
+3	reconhecido	reconhecer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+4	por	por	ADP	_	_	5	mark	5:mark	_
+5	reduzir	reduzir	VERB	_	VerbForm=Inf	3	advcl	3:advcl:por	_
+6	a	a	ADP	_	_	8	case	8:case	_
+7	quase	quase	ADV	_	_	8	advmod	8:advmod	_
+8	zero	zero	NUM	_	NumType=Card	5	obl	5:obl:a	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	criminalidade	criminalidade	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+11	em	em	ADP	_	_	12	case	12:case	_
+12	Nova	Nova	PROPN	_	_	10	nmod	10:nmod:em	_
+13	York	York	PROPN	_	_	12	flat:name	12:flat:name	SpaceAfter=No
+14	.	.	PUNCT	_	_	3	punct	3:punct	_

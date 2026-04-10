@@ -1,0 +1,98 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = dilma vai ser presidente da petrobras no novo governo lula dilma pode ser anunciada para o comando da petrobras.
+1	dilma	dilma	PROPN	_	_	4	nsubj	4:nsubj	_
+2	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	4:aux	_
+3	ser	ser	AUX	_	VerbForm=Inf	4	cop	4:cop	_
+4	presidente	presidente	NOUN	_	Number=Sing	14	dep	14:dep	_
+5-6	da	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	petrobras	petrobras	NOUN	_	_	4	nmod	4:nmod:de	_
+8-9	no	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	11	case	11:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+10	novo	novo	ADJ	_	Gender=Masc|Number=Sing	11	amod	11:amod	_
+11	governo	governo	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:em	_
+12	lula	lula	PROPN	_	_	11	nmod	11:nmod	_
+13	dilma	dilma	PROPN	_	_	14	nsubj	14:nsubj|16:nsubj:pass	_
+14	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+15	ser	ser	AUX	_	VerbForm=Inf	16	aux:pass	16:aux:pass	_
+16	anunciada	anunciar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	14	xcomp	14:xcomp	_
+17	para	para	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	comando	comando	NOUN	_	Gender=Masc|Number=Sing	16	obl	16:obl:para	_
+20-21	da	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	petrobras	petrobras	NOUN	_	_	19	nmod	19:nmod:de	SpaceAfter=No
+23	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0003
+# text = das táticas que o bolsonaro usou pra colocar só gente inteligente, o mesmo esta sendo feito, só que dessa vez pra destruir de vez o brasil , achou que não podia piorar dilma rousseff tá cotada pra presidir a petrobras!
+1-2	das	_	_	_	_	_	_	_	_
+1	de	de	ADP	_	_	3	case	3:case	_
+2	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	3:det	_
+3	táticas	tática	NOUN	_	Gender=Fem|Number=Plur	18	obl	7:obj|18:obl:de	_
+4	que	que	PRON	_	PronType=Rel	7	obj	3:ref	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	bolsonaro	bolsonaro	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+7	usou	usar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_
+8	pra	para	ADP	_	_	9	mark	9:mark	_
+9	colocar	colocar	VERB	_	VerbForm=Inf	7	advcl	7:advcl:para	_
+10	só	só	ADV	_	_	11	advmod	11:advmod	_
+11	gente	gente	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+12	inteligente	inteligente	ADJ	_	Number=Sing	11	amod	11:amod	SpaceAfter=No
+13	,	,	PUNCT	_	_	3	punct	3:punct	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	mesmo	mesmo	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	18	nsubj:pass	18:nsubj:pass|32:nsubj	_
+16	esta	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux	18:aux	_
+17	sendo	ser	AUX	_	VerbForm=Ger	18	aux:pass	18:aux:pass	_
+18	feito	fazer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	SpaceAfter=No
+19	,	,	PUNCT	_	_	32	punct	32:punct	_
+20	só	só	ADV	_	ExtPos=CCONJ	32	cc	32:cc	_
+21	que	que	CCONJ	_	_	20	fixed	20:fixed	_
+22-23	dessa	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	24	det	24:det	_
+24	vez	vez	NOUN	_	Gender=Fem|Number=Sing	32	obl	32:obl:de	_
+25	pra	para	ADP	_	_	26	mark	26:mark	_
+26	destruir	destruir	VERB	_	VerbForm=Inf	32	advcl	32:advcl:para	_
+27	de	de	ADP	_	_	28	case	28:case	_
+28	vez	vez	NOUN	_	Gender=Fem|Number=Sing	26	obl	26:obl:de	_
+29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	30:det	_
+30	brasil	brasil	NOUN	_	Gender=Masc|Number=Sing	26	obj	26:obj	_
+31	,	,	PUNCT	_	_	32	punct	32:punct	_
+32	achou	achar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	conj	18:conj:só_que	_
+33	que	que	SCONJ	_	_	35	mark	35:mark	_
+34	não	não	ADV	_	_	35	advmod	35:advmod	_
+35	podia	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	32	ccomp	32:ccomp	_
+36	piorar	piorar	VERB	_	VerbForm=Inf	35	xcomp	35:xcomp	_
+37	dilma	dilma	NOUN	_	Gender=Fem|Number=Sing	36	obj	36:obj	_
+38	rousseff	rousseff	PROPN	_	_	37	nmod	37:nmod	_
+39	tá	estar	AUX	_	Abbr=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	40	cop	40:cop	_
+40	cotada	cotado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	18	parataxis	18:parataxis	_
+41	pra	para	ADP	_	_	42	mark	42:mark	_
+42	presidir	presidir	VERB	_	VerbForm=Inf	40	advcl	40:advcl:para	_
+43	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	44:det	_
+44	petrobras	petrobras	NOUN	_	Gender=Fem|Number=Sing	42	obj	42:obj	SpaceAfter=No
+45	!	!	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0005
+# text = , não é piada lula escolheu dilma pra presidente da petrobrás.
+1	,	,	PUNCT	_	_	4	punct	4:punct	_
+2	não	não	ADV	_	_	4	advmod	4:advmod	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+4	piada	piada	NOUN	_	Gender=Fem|Number=Sing	6	dep	6:dep	_
+5	lula	lula	PROPN	_	_	6	nsubj	6:nsubj	_
+6	escolheu	escolher	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	dilma	dilma	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+8-9	pra	_	_	_	_	_	_	_	_
+8	para	para	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	presidente	presidente	NOUN	_	Number=Sing	6	obl	6:obl:para	_
+11-12	da	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	petrobrás	petrobrás	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:de	SpaceAfter=No
+14	.	.	PUNCT	_	_	6	punct	6:punct	_

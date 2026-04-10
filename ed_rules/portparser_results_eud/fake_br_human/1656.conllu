@@ -1,0 +1,390 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Ivan Lins sobre a morte do ministro Teori: Acidente?
+1	Ivan	Ivan	PROPN	_	_	0	root	0:root	_
+2	Lins	Lins	PROPN	_	_	1	flat:name	1:flat:name	_
+3	sobre	sobre	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	morte	morte	NOUN	_	Gender=Fem|Number=Sing	1	nmod	1:nmod:sobre	_
+6-7	do	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	ministro	ministro	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:de	_
+9	Teori	Teori	PROPN	_	_	8	nmod	8:nmod	SpaceAfter=No
+10	:	:	PUNCT	_	_	11	punct	11:punct	_
+11	Acidente	acidente	NOUN	_	Gender=Masc|Number=Sing	1	parataxis	1:parataxis	SpaceAfter=No
+12	?	?	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Aqui ó!
+1	Aqui	aqui	ADV	_	_	0	root	0:root	_
+2	ó	ó	INTJ	_	_	1	discourse	1:discourse	SpaceAfter=No
+3	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0005
+# text = Foi assassinado de maneira cirúrgica.
+1	Foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	aux:pass	2:aux:pass	_
+2	assassinado	assassinar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	maneira	maneira	NOUN	_	Gender=Fem|Number=Sing	2	obl	2:obl:de	_
+5	cirúrgica	cirúrgico	ADJ	_	Gender=Fem|Number=Sing	4	amod	4:amod	SpaceAfter=No
+6	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0007
+# text = Assim como milhões de brasileiros, o cantor e compositor Ivan Lins também não consegue "engolir" o fato de que Teori Zavascki morreu de "acidente".
+1	Assim	assim	ADV	_	ExtPos=SCONJ	3	mark	3:mark	_
+2	como	como	SCONJ	_	_	1	fixed	1:fixed	_
+3	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	15	advcl	15:advcl:assim_como	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	brasileiros	brasileiro	NOUN	_	Gender=Masc|Number=Plur	3	nmod	3:nmod:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	3	punct	3:punct	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	cantor	cantor	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	15:nsubj|17:nsubj	_
+9	e	e	CCONJ	_	_	10	cc	10:cc	_
+10	compositor	compositor	NOUN	_	Gender=Masc|Number=Sing	8	conj	8:conj:e|15:nsubj|17:nsubj	_
+11	Ivan	Ivan	PROPN	_	_	8	nmod	8:nmod|10:nmod	_
+12	Lins	Lins	PROPN	_	_	11	flat:name	11:flat:name	_
+13	também	também	ADV	_	_	15	advmod	15:advmod	_
+14	não	não	ADV	_	_	15	advmod	15:advmod	_
+15	consegue	conseguir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+16	"	"	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+17	engolir	engolir	VERB	_	VerbForm=Inf	15	xcomp	15:xcomp	SpaceAfter=No
+18	"	"	PUNCT	_	_	17	punct	17:punct	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	fato	fato	NOUN	_	Gender=Masc|Number=Sing	17	obj	17:obj	_
+21	de	de	ADP	_	ExtPos=SCONJ	25	mark	25:mark	_
+22	que	que	SCONJ	_	_	21	fixed	21:fixed	_
+23	Teori	Teori	PROPN	_	_	25	nsubj	25:nsubj	_
+24	Zavascki	Zavascki	PROPN	_	_	23	flat:name	23:flat:name	_
+25	morreu	morrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	acl	20:acl:de_que	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	"	"	PUNCT	_	_	28	punct	28:punct	SpaceAfter=No
+28	acidente	acidente	NOUN	_	Gender=Masc|Number=Sing	25	obl	25:obl:de	SpaceAfter=No
+29	"	"	PUNCT	_	_	28	punct	28:punct	SpaceAfter=No
+30	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0009
+# text = Em seu perfil na rede social facebook, o cantor traçou um paralelo entre algumas mortes "estranhas" que aconteceram nos últimos tempos.
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	3	det	3:det	_
+3	perfil	perfil	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:em	_
+4-5	na	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	rede	rede	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:em	_
+7	social	social	ADJ	_	Number=Sing	6	amod	6:amod	_
+8	facebook	facebook	X	_	Foreign=Yes	6	nmod	6:nmod	SpaceAfter=No
+9	,	,	PUNCT	_	_	3	punct	3:punct	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	cantor	cantor	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	12:nsubj	_
+12	traçou	traçar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+13	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	paralelo	paralelo	NOUN	_	Gender=Masc|Number=Sing	12	obj	12:obj	_
+15	entre	entre	ADP	_	_	17	case	17:case	_
+16	algumas	algum	DET	_	Gender=Fem|Number=Plur|PronType=Ind	17	det	17:det	_
+17	mortes	morte	NOUN	_	Gender=Fem|Number=Plur	14	nmod	14:nmod:entre|22:nsubj	_
+18	"	"	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+19	estranhas	estranho	ADJ	_	Gender=Fem|Number=Plur	17	amod	17:amod	SpaceAfter=No
+20	"	"	PUNCT	_	_	19	punct	19:punct	_
+21	que	que	PRON	_	PronType=Rel	22	nsubj	17:ref	_
+22	aconteceram	acontecer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	17	acl:relcl	17:acl:relcl	_
+23-24	nos	_	_	_	_	_	_	_	_
+23	em	em	ADP	_	_	26	case	26:case	_
+24	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	26:det	_
+25	últimos	último	ADJ	_	Gender=Masc|Number=Plur	26	amod	26:amod	_
+26	tempos	tempo	NOUN	_	Gender=Masc|Number=Plur	22	obl	22:obl:em	SpaceAfter=No
+27	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0011
+# text = FATALIDADE CIRÚRGICA (Ivan Lins) Vocês acreditam em fatalidades cirúrgicas?
+1	FATALIDADE	FATALIDADE	PROPN	_	_	8	nsubj	8:nsubj	_
+2	CIRÚRGICA	CIRÚRGICA	PROPN	_	_	1	flat:name	1:flat:name	_
+3	(	(	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+4	Ivan	Ivan	PROPN	_	_	1	parataxis	1:parataxis	_
+5	Lins	Lins	PROPN	_	_	4	flat:name	4:flat:name	SpaceAfter=No
+6	)	)	PUNCT	_	_	4	punct	4:punct	_
+7	Vocês	você	PRON	_	Case=Nom|Number=Plur|Person=2|PronType=Prs	8	nsubj	8:nsubj	_
+8	acreditam	acreditar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+9	em	em	ADP	_	_	10	case	10:case	_
+10	fatalidades	fatalidade	NOUN	_	Gender=Fem|Number=Plur	8	obl	8:obl:em	_
+11	cirúrgicas	cirúrgico	ADJ	_	Gender=Fem|Number=Plur	10	amod	10:amod	SpaceAfter=No
+12	?	?	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0013
+# text = O avião do ministro Teori Zavascki caiu, ou seja, morreu um personagem VITAL na operação lava-jato.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	avião	avião	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	8:nsubj	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	ministro	ministro	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	_
+6	Teori	Teori	PROPN	_	_	5	nmod	5:nmod	_
+7	Zavascki	Zavascki	PROPN	_	_	6	flat:name	6:flat:name	_
+8	caiu	cair	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+9	,	,	PUNCT	_	_	10	punct	10:punct	_
+10	ou	ou	CCONJ	_	ExtPos=CCONJ	13	cc	13:cc	_
+11	seja	ser	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	fixed	10:fixed	SpaceAfter=No
+12	,	,	PUNCT	_	_	10	punct	10:punct	_
+13	morreu	morrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	conj	8:conj:ou_ser	_
+14	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	personagem	personagem	NOUN	_	Number=Sing	13	nsubj	13:nsubj	_
+16	VITAL	VITAL	PROPN	_	_	15	nmod	15:nmod	_
+17-18	na	_	_	_	_	_	_	_	_
+17	em	em	ADP	_	_	19	case	19:case	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	operação	operação	NOUN	_	Gender=Fem|Number=Sing	13	obl	13:obl:em	_
+20	lava-jato	lava-jato	NOUN	_	Gender=Masc|Number=Sing	19	nmod	19:nmod	SpaceAfter=No
+21	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0015
+# text = Avião pequeno.
+1	Avião	avião	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+2	pequeno	pequeno	ADJ	_	Gender=Masc|Number=Sing	1	amod	1:amod	SpaceAfter=No
+3	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0017
+# text = Fácil de derrubar e esconder provas.
+1	Fácil	fácil	ADJ	_	Number=Sing	0	root	0:root	_
+2	de	de	ADP	_	_	3	mark	3:mark|5:mark	_
+3	derrubar	derrubar	VERB	_	VerbForm=Inf	1	acl	1:acl:de	_
+4	e	e	CCONJ	_	_	5	cc	5:cc	_
+5	esconder	esconder	VERB	_	VerbForm=Inf	3	conj	1:acl:de|3:conj:e	_
+6	provas	prova	NOUN	_	Gender=Fem|Number=Plur	3	obj	3:obj|5:obj	SpaceAfter=No
+7	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0019
+# text = Ex-governador Eduardo Campos.
+1	Ex-governador	ex-governador	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+2	Eduardo	Eduardo	PROPN	_	_	1	nmod	1:nmod	_
+3	Campos	Campos	PROPN	_	_	2	flat:name	2:flat:name	SpaceAfter=No
+4	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0021
+# text = Avião pequeno.
+1	Avião	avião	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+2	pequeno	pequeno	ADJ	_	Gender=Masc|Number=Sing	1	amod	1:amod	SpaceAfter=No
+3	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0023
+# text = Cirúrgico.
+1	Cirúrgico	cirúrgico	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+2	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0025
+# text = Na hora certinha.
+1-2	Na	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	hora	hora	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+4	certinha	certinho	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	SpaceAfter=No
+5	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0027
+# text = Ulisses Guimarães e outros.
+1	Ulisses	Ulisses	PROPN	_	_	0	root	0:root	_
+2	Guimarães	Guimarães	PROPN	_	_	1	flat:name	1:flat:name	_
+3	e	e	CCONJ	_	_	4	cc	4:cc	_
+4	outros	outro	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	1	conj	1:conj:e	SpaceAfter=No
+5	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0029
+# text = Tudo aeronaves pequenas.
+1	Tudo	tudo	PRON	_	PronType=Ind	0	root	0:root	_
+2	aeronaves	aeronave	NOUN	_	Gender=Fem|Number=Plur	1	dep	1:dep	_
+3	pequenas	pequeno	ADJ	_	Gender=Fem|Number=Plur	2	amod	2:amod	SpaceAfter=No
+4	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0031
+# text = Pessoas pontuais.
+1	Pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	0	root	0:root	_
+2	pontuais	pontual	ADJ	_	Number=Plur	1	amod	1:amod	SpaceAfter=No
+3	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0033
+# text = Pessoas que estão atrapalhando alguma coisa má.
+1	Pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	0	root	0:root|4:nsubj	_
+2	que	que	PRON	_	PronType=Rel	4	nsubj	1:ref	_
+3	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	aux	4:aux	_
+4	atrapalhando	atrapalhar	VERB	_	VerbForm=Ger	1	acl:relcl	1:acl:relcl	_
+5	alguma	algum	DET	_	Gender=Fem|Number=Sing|PronType=Ind	6	det	6:det	_
+6	coisa	coisa	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+7	má	má	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	SpaceAfter=No
+8	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0035
+# text = Má mesmo.
+1	Má	mo	ADJ	_	Gender=Fem|Number=Sing	0	root	0:root	_
+2	mesmo	mesmo	ADV	_	_	1	advmod	1:advmod	SpaceAfter=No
+3	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0037
+# text = Só fatalidade?
+1	Só	só	ADV	_	_	2	advmod	2:advmod	_
+2	fatalidade	fatalidade	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+3	?	?	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0039
+# text = Estão, mais uma vez, me chamando de otário, de babaca.
+1	Estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	aux	8:aux	SpaceAfter=No
+2	,	,	PUNCT	_	_	5	punct	5:punct	_
+3	mais	mais	ADV	_	_	4	advmod	4:advmod	_
+4	uma	um	NUM	_	Gender=Fem|NumType=Card	5	nummod	5:nummod	_
+5	vez	vez	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl	SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	5:punct	_
+7	me	me	PRON	_	Case=Acc|Number=Sing|Person=1|PronType=Prs	8	obj	8:obj	_
+8	chamando	chamar	VERB	_	VerbForm=Ger	0	root	0:root	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	otário	otário	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:de	SpaceAfter=No
+11	,	,	PUNCT	_	_	13	punct	13:punct	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	babaca	babaca	NOUN	_	Number=Sing	10	conj	8:obl:de|10:conj	SpaceAfter=No
+14	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0041
+# text = Até me lembro do PC Farias.
+1	Até	até	ADV	_	_	3	advmod	3:advmod	_
+2	me	me	PRON	_	Case=Dat|Number=Sing|Person=1|PronType=Prs	3	expl	3:expl	_
+3	lembro	lembrar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	PC	PC	PROPN	_	_	3	obl	3:obl:de	_
+7	Farias	Farias	PROPN	_	_	6	flat:name	6:flat:name	SpaceAfter=No
+8	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0043
+# text = Que fatalidade cirúrgica!!!
+1	Que	que	DET	_	PronType=Ind	2	det	2:det	_
+2	fatalidade	fatalidade	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+3	cirúrgica	cirúrgico	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	SpaceAfter=No
+4	!	!	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+5	!	!	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+6	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0045
+# text = Tem gente ligada a ele mandando no país, ainda dando as cartas.
+1	Tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	gente	gente	NOUN	_	Gender=Fem|Number=Sing	1	obj	1:obj	_
+3	ligada	ligado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	2	amod	2:amod	_
+4	a	a	ADP	_	_	5	case	5:case	_
+5	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	obl	3:obl:a	_
+6	mandando	mandar	VERB	_	VerbForm=Ger	1	advcl	1:advcl	_
+7-8	no	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	país	país	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:em	SpaceAfter=No
+10	,	,	PUNCT	_	_	12	punct	12:punct	_
+11	ainda	ainda	ADV	_	_	12	advmod	12:advmod	_
+12	dando	dar	VERB	_	VerbForm=Ger	6	conj	1:advcl|6:conj	_
+13	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	14:det	_
+14	cartas	carta	NOUN	_	Gender=Fem|Number=Plur	12	obj	12:obj	SpaceAfter=No
+15	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0047
+# text = Teori Zavascki: fatalidade?
+1	Teori	Teori	PROPN	_	_	0	root	0:root	_
+2	Zavascki	Zavascki	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	:	:	PUNCT	_	_	4	punct	4:punct	_
+4	fatalidade	fatalidade	NOUN	_	Gender=Fem|Number=Sing	1	parataxis	1:parataxis	SpaceAfter=No
+5	?	?	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0049
+# text = Aqui ó!
+1	Aqui	aqui	ADV	_	_	0	root	0:root	_
+2	ó	ó	INTJ	_	_	1	discourse	1:discourse	SpaceAfter=No
+3	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0051
+# text = Foi assassinado, assim como os outros que atrapalhavam.
+1	Foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	aux:pass	2:aux:pass	_
+2	assassinado	assassinar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	SpaceAfter=No
+3	,	,	PUNCT	_	_	7	punct	7:punct	_
+4	assim	assim	ADV	_	ExtPos=SCONJ	7	mark	7:mark	_
+5	como	como	SCONJ	_	_	4	fixed	4:fixed	_
+6	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	7:det	_
+7	outros	outro	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	2	advcl	2:advcl:assim_como|9:nsubj	_
+8	que	que	PRON	_	PronType=Rel	9	nsubj	7:ref	_
+9	atrapalhavam	atrapalhar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	7	acl:relcl	7:acl:relcl	SpaceAfter=No
+10	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0053
+# text = Como sempre, "cirúrgico".
+1	Como	como	ADP	_	_	2	case	2:case	_
+2	sempre	sempre	ADV	_	_	5	advmod	5:advmod	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+5	cirúrgico	cirúrgico	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+6	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+7	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0055
+# text = Profissional.
+1	Profissional	profissional	ADJ	_	Number=Sing	0	root	0:root	SpaceAfter=No
+2	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0057
+# text = Limpo.
+1	Limpo	limpo	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	SpaceAfter=No
+2	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0059
+# text = E não vai parar por aí.
+1	E	e	CCONJ	_	_	4	cc	4:cc	_
+2	não	não	ADV	_	_	4	advmod	4:advmod	_
+3	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	4:aux	_
+4	parar	parar	VERB	_	VerbForm=Inf	0	root	0:root	_
+5	por	por	ADP	_	_	6	case	6:case	_
+6	aí	aí	ADV	_	_	4	advmod	4:advmod	SpaceAfter=No
+7	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0061
+# text = Aguardem...
+1	Aguardem	aguardar	VERB	_	Mood=Imp|Number=Plur|Person=3|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+2	...	...	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0063
+# text = A última declaração da Aeronáutica (feita ontem 24/01) alegava que houve uma "desorientação espacial do piloto Osmar Rodrigues" em razão do mau tempo na região.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+2	última	último	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+3	declaração	declaração	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	12:nsubj	_
+4-5	da	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	Aeronáutica	Aeronáutica	PROPN	_	_	3	nmod	3:nmod:de	_
+7	(	(	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	feita	fazer	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	3	acl	3:acl	_
+9	ontem	ontem	ADV	_	_	8	advmod	8:advmod	_
+10	24/01	24/01	NUM	_	NumType=Card	8	obj	8:obj	SpaceAfter=No
+11	)	)	PUNCT	_	_	8	punct	8:punct	_
+12	alegava	alegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+13	que	que	SCONJ	_	_	14	mark	14:mark	_
+14	houve	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	ccomp	12:ccomp	_
+15	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+16	"	"	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+17	desorientação	desorientação	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	_
+18	espacial	espacial	ADJ	_	Number=Sing	17	amod	17:amod	_
+19-20	do	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	piloto	piloto	NOUN	_	Gender=Masc|Number=Sing	17	nmod	17:nmod:de	_
+22	Osmar	Osmar	PROPN	_	_	21	nmod	21:nmod	_
+23	Rodrigues	Rodrigues	PROPN	_	_	22	flat:name	22:flat:name	SpaceAfter=No
+24	"	"	PUNCT	_	_	17	punct	17:punct	_
+25	em	em	ADP	_	_	26	case	26:case	_
+26	razão	razão	NOUN	_	Number=Sing	14	obl	14:obl:em	_
+27-28	do	_	_	_	_	_	_	_	_
+27	de	de	ADP	_	_	30	case	30:case	_
+28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	30:det	_
+29	mau	mau	ADJ	_	Gender=Masc|Number=Sing	30	amod	30:amod	_
+30	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	26	nmod	26:nmod:de	_
+31-32	na	_	_	_	_	_	_	_	_
+31	em	em	ADP	_	_	33	case	33:case	_
+32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	33:det	_
+33	região	região	NOUN	_	Gender=Fem|Number=Sing	30	nmod	30:nmod:em	SpaceAfter=No
+34	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0064
+# text = leia também:
+1	leia	ler	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	também	também	ADV	_	_	1	advmod	1:advmod	SpaceAfter=No
+3	:	:	PUNCT	_	_	1	punct	1:punct	_

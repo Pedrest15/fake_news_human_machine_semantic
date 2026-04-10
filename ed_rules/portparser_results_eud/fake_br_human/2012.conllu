@@ -1,0 +1,204 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Candidato que "vomita quando vê pobres" vence eleição para prefeito em Curitiba.
+1	Candidato	candidato	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	4:nsubj|9:nsubj	_
+2	que	que	PRON	_	PronType=Rel	4	nsubj	1:ref	_
+3	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+4	vomita	vomitar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+5	quando	quando	SCONJ	_	_	6	mark	6:mark	_
+6	vê	ver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	4:advcl:quando	_
+7	pobres	pobre	NOUN	_	Number=Plur	6	obj	6:obj	SpaceAfter=No
+8	"	"	PUNCT	_	_	4	punct	4:punct	_
+9	vence	vencer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+10	eleição	eleição	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+11	para	para	ADP	_	_	12	case	12:case	_
+12	prefeito	prefeito	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:para	_
+13	em	em	ADP	_	_	14	case	14:case	_
+14	Curitiba	Curitiba	PROPN	_	_	12	nmod	12:nmod:em	SpaceAfter=No
+15	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0003
+# text = O candidato do PMN Rafael Greca foi eleito prefeito de Curitiba hoje (30).
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	candidato	candidato	NOUN	_	Gender=Masc|Number=Sing	9	nsubj:pass	9:nsubj:pass|10:nsubj	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	PMN	PMN	PROPN	_	_	2	nmod	2:nmod:de	_
+6	Rafael	Rafael	PROPN	_	_	2	nmod	2:nmod	_
+7	Greca	Greca	PROPN	_	_	6	flat:name	6:flat:name	_
+8	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	aux:pass	9:aux:pass	_
+9	eleito	eleger	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+10	prefeito	prefeito	NOUN	_	Gender=Masc|Number=Sing	9	xcomp	9:xcomp	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	Curitiba	Curitiba	PROPN	_	_	10	nmod	10:nmod:de	_
+13	hoje	hoje	ADV	_	_	9	advmod	9:advmod	_
+14	(	(	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+15	30	30	NUM	_	NumType=Card	10	parataxis	10:parataxis	SpaceAfter=No
+16	)	)	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+17	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0005
+# text = Ao final da apuração, Greca tinha 53, 25% dos votos válidos.
+1-2	Ao	_	_	_	_	_	_	_	_
+1	A	a	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	final	final	NOUN	_	Number=Sing	9	obl	9:obl:a	_
+4-5	da	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	apuração	apuração	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:de	SpaceAfter=No
+7	,	,	PUNCT	_	_	3	punct	3:punct	_
+8	Greca	Greca	PROPN	_	_	9	nsubj	9:nsubj	_
+9	tinha	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+10	53	53	NUM	_	NumType=Card	13	nummod	13:nummod	SpaceAfter=No
+11	,	,	PUNCT	_	_	13	punct	13:punct	_
+12	25	25	NUM	_	NumType=Card	13	nummod	13:nummod	SpaceAfter=No
+13	%	%	SYM	_	_	9	obj	9:obj	_
+14-15	dos	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	16:det	_
+16	votos	voto	NOUN	_	Gender=Masc|Number=Plur	13	nmod	13:nmod:de	_
+17	válidos	válido	ADJ	_	Gender=Masc|Number=Plur	16	amod	16:amod	SpaceAfter=No
+18	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0007
+# text = Ele venceu Ney Leprevost (PSD) e deve assumir o cargo em janeiro de 2017.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj|9:nsubj|10:nsubj	_
+2	venceu	vencer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	Ney	Ney	PROPN	_	_	2	obj	2:obj	_
+4	Leprevost	Leprevost	PROPN	_	_	3	flat:name	3:flat:name	_
+5	(	(	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+6	PSD	PSD	PROPN	_	_	3	parataxis	3:parataxis	SpaceAfter=No
+7	)	)	PUNCT	_	_	6	punct	6:punct	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:e	_
+10	assumir	assumir	VERB	_	VerbForm=Inf	9	xcomp	9:xcomp	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	cargo	cargo	NOUN	_	Gender=Masc|Number=Sing	10	obj	10:obj	_
+13	em	em	ADP	_	_	14	case	14:case	_
+14	janeiro	janeiro	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:em	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	2017	2017	NUM	_	NumType=Card	14	nmod	14:nmod:de	SpaceAfter=No
+17	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0009
+# text = Questionado sobre o que fará em relação ao crescente número de moradores de rua na cidade, ele disse: Nunca cuidei dos pobres, não sou São Francisco de Assis.
+1	Questionado	questionar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	21	advcl	21:advcl	_
+2	sobre	sobre	ADP	_	_	3	case	3:case	_
+3	o	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	1	obl	1:obl:sobre	_
+4	que	que	PRON	_	PronType=Int	3	fixed	3:fixed	_
+5	fará	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_
+6	em	em	ADP	_	_	7	case	7:case	_
+7	relação	relação	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:em	_
+8-9	ao	_	_	_	_	_	_	_	_
+8	a	a	ADP	_	_	11	case	11:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+10	crescente	crescente	ADJ	_	Number=Sing	11	amod	11:amod	_
+11	número	número	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:a	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	moradores	morador	NOUN	_	Gender=Masc|Number=Plur	11	nmod	11:nmod:de	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	rua	rua	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:de	_
+16-17	na	_	_	_	_	_	_	_	_
+16	em	em	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	cidade	cidade	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:em	SpaceAfter=No
+19	,	,	PUNCT	_	_	1	punct	1:punct	_
+20	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	21	nsubj	21:nsubj	_
+21	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+22	:	:	PUNCT	_	_	24	punct	24:punct	_
+23	Nunca	nunca	ADV	_	_	24	advmod	24:advmod	_
+24	cuidei	cuidar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	21	ccomp:speech	21:ccomp:speech	_
+25-26	dos	_	_	_	_	_	_	_	_
+25	de	de	ADP	_	_	27	case	27:case	_
+26	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	27:det	_
+27	pobres	pobre	NOUN	_	Number=Plur	24	obl	24:obl:de	SpaceAfter=No
+28	,	,	PUNCT	_	_	31	punct	31:punct	_
+29	não	não	ADV	_	_	31	advmod	31:advmod	_
+30	sou	ser	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	31	cop	31:cop	_
+31	São	São	PROPN	_	_	24	parataxis	24:parataxis	_
+32	Francisco	Francisco	PROPN	_	_	31	flat:name	31:flat:name	_
+33	de	de	ADP	_	_	34	case	34:case	_
+34	Assis	Assis	PROPN	_	_	31	flat:name	31:flat:name	SpaceAfter=No
+35	.	.	PUNCT	_	_	21	punct	21:punct	_
+
+# sent_id = S0011
+# text = A primeira vez que tentei carregar um pobre dentro do meu carro eu vomitei por causa do cheiro, disse Greca durante um evento promovido pelo curso de Jornalismo da Escola de Comunicação e Artes.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+2	primeira	primeiro	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	3	amod	3:amod	_
+3	vez	vez	NOUN	_	Gender=Fem|Number=Sing	15	obl	5:obl|15:obl	_
+4	que	que	PRON	_	PronType=Rel	5	obl	3:ref	_
+5	tentei	tentar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_
+6	carregar	carregar	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	_
+7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	pobre	pobre	NOUN	_	Number=Sing	6	obj	6:obj	_
+9	dentro	dentro	ADV	_	_	6	advmod	6:advmod	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	13	case	13:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+12	meu	meu	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	13	det	13:det	_
+13	carro	carro	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:de	_
+14	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	15	nsubj	15:nsubj	_
+15	vomitei	vomitar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	22	ccomp:speech	22:ccomp:speech	_
+16	por	por	ADP	_	_	17	case	17:case	_
+17	causa	causa	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl:por	_
+18-19	do	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	cheiro	cheiro	NOUN	_	Gender=Masc|Number=Sing	17	nmod	17:nmod:de	SpaceAfter=No
+21	,	,	PUNCT	_	_	15	punct	15:punct	_
+22	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+23	Greca	Greca	PROPN	_	_	22	nsubj	22:nsubj	_
+24	durante	durante	ADP	_	_	26	case	26:case	_
+25	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	evento	evento	NOUN	_	Gender=Masc|Number=Sing	22	obl	22:obl:durante	_
+27	promovido	promover	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	26	acl	26:acl	_
+28-29	pelo	_	_	_	_	_	_	_	_
+28	por	por	ADP	_	_	30	case	30:case	_
+29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	30:det	_
+30	curso	curso	NOUN	_	Gender=Masc|Number=Sing	27	obl:agent	27:obl:agent	_
+31	de	de	ADP	_	_	32	case	32:case	_
+32	Jornalismo	Jornalismo	PROPN	_	_	30	nmod	30:nmod:de	_
+33-34	da	_	_	_	_	_	_	_	_
+33	de	de	ADP	_	_	35	case	35:case	_
+34	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	35:det	_
+35	Escola	Escola	PROPN	_	_	30	nmod	30:nmod:de	_
+36	de	de	ADP	_	_	37	case	37:case	_
+37	Comunicação	Comunicação	PROPN	_	_	35	flat:name	35:flat:name	_
+38	e	e	CCONJ	_	_	39	cc	39:cc	_
+39	Artes	Artes	PROPN	_	_	35	flat:name	35:flat:name	SpaceAfter=No
+40	.	.	PUNCT	_	_	22	punct	22:punct	_
+
+# sent_id = S0013
+# text = A última pesquisa Ibope aponta Greca com 45% das intenções de voto, seguido de Gustavo Fruet (PDT), que aparece com 19%.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+2	última	último	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+3	pesquisa	pesquisa	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+4	Ibope	Ibope	PROPN	_	_	3	nmod	3:nmod	_
+5	aponta	apontar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	Greca	Greca	PROPN	_	_	5	obj	5:obj	_
+7	com	com	ADP	_	_	9	case	9:case	_
+8	45	45	NUM	_	NumType=Card	9	nummod	9:nummod	SpaceAfter=No
+9	%	%	SYM	_	_	5	obl	5:obl:com	_
+10-11	das	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	12:det	_
+12	intenções	intenção	NOUN	_	Gender=Fem|Number=Plur	9	nmod	9:nmod:de	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	voto	voto	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:de	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	seguido	seguir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	5	advcl	5:advcl	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	Gustavo	Gustavo	PROPN	_	_	16	obl	16:obl:de|25:nsubj	_
+19	Fruet	Fruet	PROPN	_	_	18	flat:name	18:flat:name	_
+20	(	(	PUNCT	_	_	21	punct	21:punct	SpaceAfter=No
+21	PDT	PDT	PROPN	_	_	18	parataxis	18:parataxis	SpaceAfter=No
+22	)	)	PUNCT	_	_	21	punct	21:punct	SpaceAfter=No
+23	,	,	PUNCT	_	_	25	punct	25:punct	_
+24	que	que	PRON	_	PronType=Rel	25	nsubj	18:ref	_
+25	aparece	aparecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	acl:relcl	18:acl:relcl	_
+26	com	com	ADP	_	_	28	case	28:case	_
+27	19	19	NUM	_	NumType=Card	28	nummod	28:nummod	SpaceAfter=No
+28	%	%	SYM	_	_	25	obl	25:obl:com	SpaceAfter=No
+29	.	.	PUNCT	_	_	5	punct	5:punct	_

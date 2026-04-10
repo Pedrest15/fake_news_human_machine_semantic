@@ -1,0 +1,675 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = alexandre kalil anuncia fechamento do comércio em belo horizonte a partir de sábado (janeiro de 222).
+1	alexandre	alexandre	NOUN	_	_	3	nsubj	3:nsubj	_
+2	kalil	kalil	NOUN	_	_	1	nmod	1:nmod	_
+3	anuncia	anunciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	fechamento	fechamento	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	comércio	comércio	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:de	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	belo	belo	ADJ	_	Gender=Masc|Number=Sing	10	amod	10:amod	_
+10	horizonte	horizonte	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:em	_
+11	a	a	ADP	_	_	12	mark	12:mark	_
+12	partir	partir	VERB	_	VerbForm=Inf	3	advcl	3:advcl:a	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	sábado	sábado	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:de	_
+15	(	(	PUNCT	_	_	16	punct	16:punct	SpaceAfter=No
+16	janeiro	janeiro	NOUN	_	Gender=Masc|Number=Sing	14	appos	14:appos	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	222	222	NUM	_	NumType=Card	16	nmod	16:nmod:de	SpaceAfter=No
+19	)	)	PUNCT	_	_	16	punct	16:punct	SpaceAfter=No
+20	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = belo horizonte e são números absolutamente assustadores.
+1	belo	belo	ADJ	_	Gender=Masc|Number=Sing	2	amod	2:amod	_
+2	horizonte	horizonte	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+3	e	e	CCONJ	_	_	5	cc	5:cc	_
+4	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+5	números	número	NOUN	_	Gender=Masc|Number=Plur	2	conj	2:conj:e	_
+6	absolutamente	absolutamente	ADV	_	_	7	advmod	7:advmod	_
+7	assustadores	assustador	ADJ	_	Gender=Masc|Number=Plur	5	amod	5:amod	SpaceAfter=No
+8	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = como nós não fechamos a cidade e no dia seguinte o número caiu um por cento.
+1	como	como	SCONJ	_	_	4	mark	4:mark|14:mark	_
+2	nós	nós	PRON	_	Case=Nom|Number=Plur|Person=1|PronType=Prs	4	nsubj	4:nsubj	_
+3	não	não	ADV	_	_	4	advmod	4:advmod	_
+4	fechamos	fechar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	cidade	cidade	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+7	e	e	CCONJ	_	_	14	cc	14:cc	_
+8-9	no	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	dia	dia	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:em	_
+11	seguinte	seguinte	ADJ	_	Number=Sing	10	amod	10:amod	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	número	número	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	14:nsubj	_
+14	caiu	cair	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	conj	4:conj:e	_
+15	um	um	NUM	_	Gender=Masc|NumType=Card	14	obj	14:obj	_
+16	por	por	ADP	_	_	17	case	17:case	_
+17	cento	cento	NOUN	_	Gender=Masc|Number=Sing	15	nmod	15:nmod:por	SpaceAfter=No
+18	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0007
+# text = eu pessoalmente fui tomado por um otimismo enganoso o e perigoso.
+1	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj:pass	4:nsubj:pass	_
+2	pessoalmente	pessoalmente	ADV	_	_	4	advmod	4:advmod	_
+3	fui	ser	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	tomado	tomar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5	por	por	ADP	_	_	7	case	7:case	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	otimismo	otimismo	NOUN	_	Gender=Masc|Number=Sing	4	obl:agent	4:obl:agent	_
+8	enganoso	enganoso	ADJ	_	Gender=Masc|Number=Sing	7	amod	7:amod	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	cc	11:cc	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	perigoso	perigoso	ADJ	_	Gender=Masc|Number=Sing	8	conj	7:amod|8:conj:o_e	SpaceAfter=No
+12	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0009
+# text = mas hoje e nós detectamos uma alta de sete porcento nos nossos números.
+1	mas	mas	CCONJ	_	_	5	cc	5:cc	_
+2	hoje	hoje	ADV	_	_	5	advmod	5:advmod	_
+3	e	e	CCONJ	_	_	4	cc	4:cc	_
+4	nós	nós	PRON	_	Case=Nom|Number=Plur|Person=1|PronType=Prs	5	nsubj	5:nsubj	_
+5	detectamos	detectar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	alta	alta	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	sete	sete	NUM	_	NumType=Card	10	nummod	10:nummod	_
+10	porcento	porcento	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	_
+11-12	nos	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	14	case	14:case	_
+12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	14:det	_
+13	nossos	nosso	DET	_	Gender=Masc|Number=Plur|Person=1|Poss=Yes|PronType=Prs	14	det	14:det	_
+14	números	número	NOUN	_	Gender=Masc|Number=Plur	5	obl	5:obl:em	SpaceAfter=No
+15	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0011
+# text = e isso nos põe e em sinal de alerta máximo.
+1	e	e	CCONJ	_	_	4	cc	4:cc	_
+2	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	4	nsubj	4:nsubj	_
+3	nos	nos	PRON	_	Case=Acc|Number=Plur|Person=1|PronType=Prs	4	obj	4:obj	_
+4	põe	por	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	e	e	CCONJ	_	_	7	cc	7:cc	_
+6	em	em	ADP	_	_	7	case	7:case	_
+7	sinal	sinal	NOUN	_	Gender=Masc|Number=Sing	4	conj	4:conj:e	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	alerta	alerta	NOUN	_	Number=Sing	7	nmod	7:nmod:de	_
+10	máximo	máximo	ADJ	_	Gender=Masc|Number=Sing	9	amod	9:amod	SpaceAfter=No
+11	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0013
+# text = e nós vamos aqui diz é o seguinte e sem muita expectativa voltamos à estaca zero zero.
+1	e	e	CCONJ	_	_	5	cc	5:cc	_
+2	nós	nós	PRON	_	Case=Nom|Number=Plur|Person=1|PronType=Prs	5	nsubj	5:nsubj|13:nsubj	_
+3	vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	5	aux	5:aux	_
+4	aqui	aqui	ADV	_	_	5	advmod	5:advmod	_
+5	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+7	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	obj	5:obj	_
+8	seguinte	seguinte	ADJ	_	Number=Sing	7	amod	7:amod	_
+9	e	e	CCONJ	_	_	13	cc	13:cc	_
+10	sem	sem	ADP	_	_	12	case	12:case	_
+11	muita	muito	ADJ	_	Gender=Fem|Number=Sing	12	amod	12:amod	_
+12	expectativa	expectativa	NOUN	_	Gender=Fem|Number=Sing	13	obl	13:obl:sem	_
+13	voltamos	voltar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	5	conj	5:conj:e	_
+14-15	à	_	_	_	_	_	_	_	_
+14	a	a	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	estaca	estaca	NOUN	_	Gender=Fem|Number=Sing	13	obl	13:obl:a	_
+17	zero	zero	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod	_
+18	zero	zero	NUM	_	NumType=Card	16	nmod	16:nmod	SpaceAfter=No
+19	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0015
+# text = não sei que cor que é não.
+1	não	não	ADV	_	_	2	advmod	2:advmod	_
+2	sei	saber	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	DET	_	PronType=Ind	4	det	4:det	_
+4	cor	cor	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+5	que	que	SCONJ	_	_	7	discourse	7:discourse	_
+6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+7	não	não	ADV	_	_	2	ccomp	2:ccomp	SpaceAfter=No
+8	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0017
+# text = mas só abre serviços essenciais a partir de sábado amanhã e as 14 horas.
+1	mas	mas	CCONJ	_	_	3	cc	3:cc	_
+2	só	só	ADV	_	_	3	advmod	3:advmod	_
+3	abre	abrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	serviços	serviço	NOUN	_	Gender=Masc|Number=Plur	3	obj	3:obj	_
+5	essenciais	essencial	ADJ	_	Number=Plur	4	amod	4:amod	_
+6	a	a	ADP	_	_	7	mark	7:mark	_
+7	partir	partir	VERB	_	VerbForm=Inf	3	advcl	3:advcl:a	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	sábado	sábado	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:de	_
+10	amanhã	amanhã	ADV	_	_	7	advmod	7:advmod	_
+11	e	e	CCONJ	_	_	14	cc	14:cc	_
+12	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	14:det	_
+13	14	14	NUM	_	NumType=Card	14	nummod	14:nummod	_
+14	horas	hora	NOUN	_	Gender=Fem|Number=Plur	10	conj	7:obl|10:conj:e	SpaceAfter=No
+15	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0019
+# text = bom então nós vamo trancar cidade novamente porque nós não sabemos a há tradições até dos próprios médicos.
+1	bom	bom	CCONJ	_	_	5	cc	5:cc	_
+2	então	então	ADV	_	_	5	advmod	5:advmod	_
+3	nós	nós	PRON	_	Case=Nom|Number=Plur|Person=1|PronType=Prs	5	nsubj	5:nsubj	_
+4	vamo	ir	AUX	_	Abbr=Yes|Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	5	aux	5:aux	_
+5	trancar	trancar	VERB	_	VerbForm=Inf	0	root	0:root	_
+6	cidade	cidade	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+7	novamente	novamente	ADV	_	_	5	advmod	5:advmod	_
+8	porque	porque	SCONJ	_	_	11	mark	11:mark	_
+9	nós	nós	PRON	_	Case=Nom|Number=Plur|Person=1|PronType=Prs	11	nsubj	11:nsubj	_
+10	não	não	ADV	_	_	11	advmod	11:advmod	_
+11	sabemos	saber	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	5	advcl	5:advcl:porque	_
+12	a	a	ADP	_	_	13	mark	13:mark	_
+13	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	ccomp	11:ccomp	_
+14	tradições	tradiçõe	NOUN	_	Gender=Fem|Number=Plur	13	obj	13:obj	_
+15	até	até	ADV	_	_	19	advmod	19:advmod	_
+16-17	dos	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	19	case	19:case	_
+17	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	19:det	_
+18	próprios	próprio	DET	_	Gender=Masc|Number=Plur|PronType=Dem	19	det	19:det	_
+19	médicos	médico	NOUN	_	Gender=Masc|Number=Plur	14	nmod	14:nmod:de	SpaceAfter=No
+20	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0021
+# text = o que há uma conversa que dois terços da infecção de belo horizonte são da nova cepa.
+1	o	o	PRON	_	ExtPos=CCONJ|Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	cc	3:cc	_
+2	que	que	PRON	_	PronType=Rel	1	fixed	1:fixed	_
+3	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	conversa	conversa	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+6	que	que	SCONJ	_	_	19	mark	19:mark	_
+7	dois	dois	NUM	_	Gender=Masc|NumType=Card	8	nummod	8:nummod	_
+8	terços	terço	NOUN	_	Gender=Masc|Number=Plur	19	nsubj	19:nsubj	_
+9-10	da	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	infecção	infecção	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	belo	belo	ADJ	_	Gender=Masc|Number=Sing	14	amod	14:amod	_
+14	horizonte	horizonte	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:de	_
+15	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	19	cop	19:cop	_
+16-17	da	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	19	case	19:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+18	nova	novo	ADJ	_	Gender=Fem|Number=Sing	19	amod	19:amod	_
+19	cepa	cepa	NOUN	_	Gender=Fem|Number=Sing	5	acl	5:acl:que	SpaceAfter=No
+20	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0023
+# text = e o mais grave hoje nós temos quatro crianças crianças internadas com covid.
+1	e	e	CCONJ	_	_	7	cc	7:cc	_
+2	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	nsubj	7:nsubj	_
+3	mais	mais	ADV	_	_	4	advmod	4:advmod	_
+4	grave	grave	ADJ	_	Number=Sing	2	amod	2:amod	_
+5	hoje	hoje	ADV	_	_	7	advmod	7:advmod	_
+6	nós	nós	PRON	_	Case=Nom|Number=Plur|Person=1|PronType=Prs	7	nsubj	7:nsubj	_
+7	temos	ter	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	quatro	quatro	NUM	_	NumType=Card	9	nummod	9:nummod	_
+9	crianças	criança	NOUN	_	Gender=Fem|Number=Plur	7	obj	7:obj	_
+10	crianças	criança	NOUN	_	Gender=Fem|Number=Plur	9	nmod	9:nmod	_
+11	internadas	internar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	9	acl	9:acl	_
+12	com	com	ADP	_	_	13	case	13:case	_
+13	covid	covid	NOUN	_	Foreign=Yes	11	obl	11:obl:com	SpaceAfter=No
+14	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0025
+# text = eu não tô falando mais de jovens de 4 3 35 não.
+1	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	4:nsubj	_
+2	não	não	ADV	_	_	4	advmod	4:advmod	_
+3	tô	estar	AUX	_	Abbr=Yes|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	aux	4:aux	_
+4	falando	falar	VERB	_	VerbForm=Ger	0	root	0:root	_
+5	mais	mais	ADV	_	_	4	advmod	4:advmod	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	jovens	jovem	NOUN	_	Number=Plur	4	obl	4:obl:de	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	4	4	NUM	_	NumType=Card	7	nmod	7:nmod:de	_
+10	3	3	NUM	_	NumType=Card	11	nummod	11:nummod	_
+11	35	35	NUM	_	NumType=Card	9	nmod	9:nmod	_
+12	não	não	ADV	_	_	4	advmod	4:advmod	SpaceAfter=No
+13	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0027
+# text = crianças e internados.
+1	crianças	criança	NOUN	_	Gender=Fem|Number=Plur	0	root	0:root	_
+2	e	e	CCONJ	_	_	3	cc	3:cc	_
+3	internados	internado	NOUN	_	Gender=Masc|Number=Plur	1	conj	1:conj:e	SpaceAfter=No
+4	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0029
+# text = então nós mudamos de patamar porque a morte de 95 98 99 por mais que doa na família e não é a morte de 4 de 34 de três ou de dois anos né.
+1	então	então	ADV	_	_	3	cc	3:cc	_
+2	nós	nós	PRON	_	Case=Nom|Number=Plur|Person=1|PronType=Prs	3	nsubj	3:nsubj	_
+3	mudamos	mudar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	patamar	patamar	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:de	_
+6	porque	porque	SCONJ	_	_	16	mark	16:mark	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	morte	morte	NOUN	_	Gender=Fem|Number=Sing	16	nsubj	16:nsubj|24:nsubj	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	95	95	NUM	_	NumType=Card	8	nmod	8:nmod:de	_
+11	98	98	NUM	_	NumType=Card	10	nmod	10:nmod	_
+12	99	99	NUM	_	NumType=Card	8	nmod	8:nmod	_
+13	por	por	ADP	_	ExtPos=SCONJ	16	mark	16:mark|24:mark	_
+14	mais	mais	ADV	_	_	13	fixed	13:fixed	_
+15	que	que	SCONJ	_	_	13	fixed	13:fixed	_
+16	doa	doar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	advcl	3:advcl:porque	_
+17-18	na	_	_	_	_	_	_	_	_
+17	em	em	ADP	_	_	19	case	19:case	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	família	família	NOUN	_	Gender=Fem|Number=Sing	16	obl	16:obl:em	_
+20	e	e	CCONJ	_	_	24	cc	24:cc	_
+21	não	não	ADV	_	_	24	advmod	24:advmod	_
+22	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	cop	24:cop	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	morte	morte	NOUN	_	Gender=Fem|Number=Sing	16	conj	3:advcl:por_mais_que|16:conj:e	_
+25	de	de	ADP	_	_	26	case	26:case	_
+26	4	4	NUM	_	NumType=Card	24	nmod	24:nmod:de	_
+27	de	de	ADP	_	_	28	case	28:case	_
+28	34	34	NUM	_	NumType=Card	26	nmod	26:nmod:de	_
+29	de	de	ADP	_	_	30	case	30:case	_
+30	três	três	NUM	_	NumType=Card	34	nummod	34:nummod	_
+31	ou	ou	CCONJ	_	_	33	cc	33:cc	_
+32	de	de	ADP	_	_	34	case	34:case	_
+33	dois	dois	NUM	_	Gender=Masc|NumType=Card	34	nummod	34:nummod	_
+34	anos	ano	NOUN	_	Gender=Masc|Number=Plur	26	nmod	26:nmod:de	_
+35	né	né	INTJ	_	_	24	discourse	24:discourse	SpaceAfter=No
+36	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0031
+# text = então provar questão de responsabilidade por uma questão de números números seguindo a mesma metodologia da prefeitura não mudou em nada.
+1	então	então	ADV	_	_	20	advmod	20:advmod	_
+2	provar	provar	VERB	_	VerbForm=Inf	20	csubj	20:csubj	_
+3	questão	questão	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	responsabilidade	responsabilidade	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:de	_
+6	por	por	ADP	_	_	8	case	8:case	_
+7	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	questão	questão	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:por	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	números	número	NOUN	_	Gender=Masc|Number=Plur	8	nmod	8:nmod:de	_
+11	números	número	NOUN	_	Gender=Masc|Number=Plur	10	nmod	10:nmod	_
+12	seguindo	seguir	VERB	_	VerbForm=Ger	2	advcl	2:advcl	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+14	mesma	mesmo	DET	_	Gender=Fem|Number=Sing|PronType=Dem	15	det	15:det	_
+15	metodologia	metodologia	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+16-17	da	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	prefeitura	prefeitura	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:de	_
+19	não	não	ADV	_	_	20	advmod	20:advmod	_
+20	mudou	mudar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+21	em	em	ADP	_	_	22	case	22:case	_
+22	nada	nada	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	20	obl	20:obl:em	SpaceAfter=No
+23	.	.	PUNCT	_	_	20	punct	20:punct	_
+
+# sent_id = S0033
+# text = e caindo em dois vermelhos e não vamos esperar perder o controle da cidade e para poder tomar qualquer atitude.
+1	e	e	CCONJ	_	_	2	cc	2:cc	_
+2	caindo	cair	VERB	_	VerbForm=Ger	0	root	0:root	_
+3	em	em	ADP	_	_	5	case	5:case	_
+4	dois	dois	NUM	_	Gender=Masc|NumType=Card	5	nummod	5:nummod	_
+5	vermelhos	vermelho	NOUN	_	Gender=Masc|Number=Plur	2	obl	2:obl:em	_
+6	e	e	CCONJ	_	_	9	cc	9:cc	_
+7	não	não	ADV	_	_	9	advmod	9:advmod	_
+8	vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	9	aux	9:aux	_
+9	esperar	esperar	VERB	_	VerbForm=Inf	2	conj	2:conj:e	_
+10	perder	perder	VERB	_	VerbForm=Inf	9	xcomp	9:xcomp	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	controle	controle	NOUN	_	Gender=Masc|Number=Sing	10	obj	10:obj	_
+13-14	da	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	cidade	cidade	NOUN	_	Gender=Fem|Number=Sing	12	nmod	12:nmod:de	_
+16	e	e	CCONJ	_	_	18	cc	18:cc	_
+17	para	para	ADP	_	_	18	mark	18:mark	_
+18	poder	poder	VERB	_	VerbForm=Inf	10	conj	9:xcomp|10:conj:e	_
+19	tomar	tomar	VERB	_	VerbForm=Inf	18	xcomp	18:xcomp	_
+20	qualquer	qualquer	DET	_	Number=Sing|PronType=Ind	21	det	21:det	_
+21	atitude	atitude	NOUN	_	Gender=Fem|Number=Sing	19	obj	19:obj	SpaceAfter=No
+22	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0035
+# text = temos a colaboração da polícia militar de minas gerais da guarda municipal da fiscalização tanto sanitária quanto da política urbana.
+1	temos	ter	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	colaboração	colaboração	NOUN	_	Gender=Fem|Number=Sing	1	obj	1:obj	_
+4-5	da	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	polícia	polícia	NOUN	_	Number=Sing	3	nmod	3:nmod:de	_
+7	militar	militar	ADJ	_	Number=Sing	6	amod	6:amod	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	minas	mina	NOUN	_	Gender=Fem|Number=Plur	6	nmod	6:nmod:de	_
+10	gerais	geral	ADJ	_	Number=Plur	9	amod	9:amod	_
+11-12	da	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	guarda	guarda	NOUN	_	Number=Sing	3	nmod	3:nmod:de	_
+14	municipal	municipal	ADJ	_	Number=Sing	13	amod	13:amod	_
+15-16	da	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	fiscalização	fiscalização	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:de	_
+18	tanto	tanto	CCONJ	_	_	19	cc	19:cc	_
+19	sanitária	sanitário	ADJ	_	Gender=Fem|Number=Sing	17	amod	17:amod	_
+20	quanto	quanto	CCONJ	_	_	23	cc	23:cc	_
+21-22	da	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	política	política	NOUN	_	Gender=Fem|Number=Sing	17	conj	13:nmod:de|17:conj:quanto	_
+24	urbana	urbano	ADJ	_	Gender=Fem|Number=Sing	23	amod	23:amod	SpaceAfter=No
+25	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0037
+# text = e vamos atuar seriamente em tudo isso.
+1	e	e	CCONJ	_	_	3	cc	3:cc	_
+2	vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	aux	3:aux	_
+3	atuar	atuar	VERB	_	VerbForm=Inf	0	root	0:root	_
+4	seriamente	seriamente	ADV	_	_	3	advmod	3:advmod	_
+5	em	em	ADP	_	_	6	case	6:case	_
+6	tudo	tudo	PRON	_	ExtPos=PRON|PronType=Ind	3	obl	3:obl:em	_
+7	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	6	fixed	6:fixed	SpaceAfter=No
+8	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0039
+# text = antes de terminar eu gostaria de dizer o seguinte.
+1	antes	antes	ADV	_	_	5	advmod	5:advmod	_
+2	de	de	ADP	_	_	3	mark	3:mark	_
+3	terminar	terminar	VERB	_	VerbForm=Inf	1	acl	1:acl:de	_
+4	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	5:nsubj|7:nsubj	_
+5	gostaria	gostar	VERB	_	Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin	0	root	0:root	_
+6	de	de	ADP	_	_	7	mark	7:mark	_
+7	dizer	dizer	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	_
+8	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	obj	7:obj	_
+9	seguinte	seguinte	ADJ	_	Number=Sing	8	amod	8:amod	SpaceAfter=No
+10	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0041
+# text = é preciso da colaboração das cidades que rodeiam belo horizonte.
+1	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	2:cop	_
+2	preciso	preciso	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	colaboração	colaboração	NOUN	_	Gender=Fem|Number=Sing	2	obl	2:obl:de	_
+6-7	das	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	8:det	_
+8	cidades	cidade	NOUN	_	Gender=Fem|Number=Plur	5	nmod	5:nmod:de|10:nsubj	_
+9	que	que	PRON	_	PronType=Rel	10	nsubj	8:ref	_
+10	rodeiam	rodear	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	8:acl:relcl	_
+11	belo	belo	ADJ	_	Gender=Masc|Number=Sing	12	amod	12:amod	_
+12	horizonte	horizonte	NOUN	_	Gender=Masc|Number=Sing	10	obj	10:obj	SpaceAfter=No
+13	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0043
+# text = precisamos eu peço aos prefeitos.
+1	precisamos	precisar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	parataxis	3:parataxis	_
+2	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	3:nsubj	_
+3	peço	pedir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4-5	aos	_	_	_	_	_	_	_	_
+4	a	a	ADP	_	_	6	case	6:case	_
+5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	6:det	_
+6	prefeitos	prefeito	NOUN	_	Gender=Masc|Number=Plur	3	obl	3:obl:a	SpaceAfter=No
+7	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0045
+# text = eu só não consegui ligar para ele porque a notícia foi agora tá certo.
+1	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	4:nsubj|5:nsubj	_
+2	só	só	ADV	_	_	4	advmod	4:advmod	_
+3	não	não	ADV	_	_	4	advmod	4:advmod	_
+4	consegui	conseguir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	ligar	ligar	VERB	_	VerbForm=Inf	4	xcomp	4:xcomp	_
+6	para	para	ADP	_	_	7	case	7:case	_
+7	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	obl	5:obl:para	_
+8	porque	porque	SCONJ	_	_	14	mark	14:mark	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	notícia	notícia	NOUN	_	Gender=Fem|Number=Sing	14	nsubj	14:nsubj	_
+11	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	cop	14:cop	_
+12	agora	agora	ADV	_	_	14	advmod	14:advmod	_
+13	tá	estar	AUX	_	Abbr=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	14:cop	_
+14	certo	certo	ADJ	_	Gender=Masc|Number=Sing	4	advcl	4:advcl:porque	SpaceAfter=No
+15	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0047
+# text = e essa doença parece que ela não é contada em dia contada em hora.
+1	e	e	CCONJ	_	_	4	cc	4:cc	_
+2	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	3:det	_
+3	doença	doença	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+4	parece	parecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	que	que	SCONJ	_	_	9	mark	9:mark	_
+6	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	9	nsubj:pass	9:nsubj:pass	_
+7	não	não	ADV	_	_	9	advmod	9:advmod	_
+8	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:pass	9:aux:pass	_
+9	contada	contar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	4	ccomp	4:ccomp	_
+10	em	em	ADP	_	_	11	case	11:case	_
+11	dia	dia	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:em	_
+12	contada	contar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	9	advcl	9:advcl	_
+13	em	em	ADP	_	_	14	case	14:case	_
+14	hora	hora	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl:em	SpaceAfter=No
+15	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0049
+# text = e eu ainda não conseguia comunicar com todos.
+1	e	e	CCONJ	_	_	5	cc	5:cc	_
+2	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	5:nsubj|6:nsubj	_
+3	ainda	ainda	ADV	_	_	5	advmod	5:advmod	_
+4	não	não	ADV	_	_	5	advmod	5:advmod	_
+5	conseguia	conseguir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+6	comunicar	comunicar	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	_
+7	com	com	ADP	_	_	8	case	8:case	_
+8	todos	todo	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	6	obl	6:obl:com	SpaceAfter=No
+9	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0051
+# text = faço isso através de vocês.
+1	faço	fazer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	obj	1:obj	_
+3	através	através	ADV	_	_	1	advmod	1:advmod	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	vocês	você	PRON	_	Case=Nom|Number=Plur|Person=2|PronType=Prs	3	obl	3:obl:de	SpaceAfter=No
+6	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0053
+# text = nós precisamos de tomar atitudes.
+1	nós	nós	PRON	_	Case=Nom|Number=Plur|Person=1|PronType=Prs	2	nsubj	2:nsubj|4:nsubj	_
+2	precisamos	precisar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	de	de	ADP	_	_	4	mark	4:mark	_
+4	tomar	tomar	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	_
+5	atitudes	atitude	NOUN	_	Gender=Fem|Number=Plur	4	obj	4:obj	SpaceAfter=No
+6	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0055
+# text = nós precisamos aos prefeitos do interior como da capital.
+1	nós	nós	PRON	_	Case=Nom|Number=Plur|Person=1|PronType=Prs	2	nsubj	2:nsubj	_
+2	precisamos	precisar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3-4	aos	_	_	_	_	_	_	_	_
+3	a	a	ADP	_	_	5	case	5:case	_
+4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	5:det	_
+5	prefeitos	prefeito	NOUN	_	Gender=Masc|Number=Plur	2	obl	2:obl:a	_
+6-7	do	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	interior	interior	NOUN	_	Number=Sing	5	nmod	5:nmod:de	_
+9	como	como	CCONJ	_	_	12	cc	12:cc	_
+10-11	da	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	capital	capital	NOUN	_	Number=Sing	8	conj	5:nmod:de|8:conj:como	SpaceAfter=No
+13	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0057
+# text = e o dico a população entende a população compreende a população inteligente ela quer viver.
+1	e	e	CCONJ	_	_	6	cc	6:cc	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	dico	dico	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	população	população	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj	_
+6	entende	entender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	população	população	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+9	compreende	compreender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	parataxis	6:parataxis	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	população	população	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+12	inteligente	inteligente	ADJ	_	Number=Sing	11	amod	11:amod	_
+13	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	14	nsubj	14:nsubj|15:nsubj	_
+14	quer	querer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	parataxis	6:parataxis	_
+15	viver	viver	VERB	_	VerbForm=Inf	14	xcomp	14:xcomp	SpaceAfter=No
+16	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0059
+# text = e eu tenho um dado matemático para isso.
+1	e	e	CCONJ	_	_	3	cc	3:cc	_
+2	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	3:nsubj	_
+3	tenho	ter	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	dado	dado	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	_
+6	matemático	matemático	ADJ	_	Gender=Masc|Number=Sing	5	amod	5:amod	_
+7	para	para	ADP	_	_	8	case	8:case	_
+8	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	5	nmod	5:nmod:para	SpaceAfter=No
+9	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0061
+# text = foi eleito em plena pandemia no primeiro turno tendo uma das medidas mais duras contra a morte que esse país já viu.
+1	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	aux:pass	2:aux:pass	_
+2	eleito	eleger	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+3	em	em	ADP	_	_	5	case	5:case	_
+4	plena	pleno	ADJ	_	Gender=Fem|Number=Sing	5	amod	5:amod	_
+5	pandemia	pandemia	NOUN	_	Gender=Fem|Number=Sing	2	obl	2:obl:em	_
+6-7	no	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	9	case	9:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+8	primeiro	primeiro	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	9	amod	9:amod	_
+9	turno	turno	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:em	_
+10	tendo	ter	VERB	_	VerbForm=Ger	2	advcl	2:advcl	_
+11	uma	um	NUM	_	Gender=Fem|NumType=Card	10	obj	10:obj	_
+12-13	das	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	14:det	_
+14	medidas	medida	NOUN	_	Gender=Fem|Number=Plur	11	nmod	11:nmod:de|24:obj	_
+15	mais	mais	ADV	_	_	16	advmod	16:advmod	_
+16	duras	duro	ADJ	_	Gender=Fem|Number=Plur	14	amod	14:amod	_
+17	contra	contra	ADP	_	_	19	case	19:case	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	morte	morte	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:contra	_
+20	que	que	PRON	_	PronType=Rel	24	obj	14:ref	_
+21	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	22	det	22:det	_
+22	país	país	NOUN	_	Gender=Masc|Number=Sing	24	nsubj	24:nsubj	_
+23	já	já	ADV	_	_	24	advmod	24:advmod	_
+24	viu	ver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	acl:relcl	14:acl:relcl	SpaceAfter=No
+25	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0063
+# text = bom então a população entende.
+1	bom	bom	ADJ	_	Gender=Masc|Number=Sing	5	cc	5:cc	_
+2	então	então	ADV	_	_	5	cc	5:cc	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	população	população	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+5	entende	entender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+6	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0065
+# text = a respeito de escolas eu quero dizer o seguinte.
+1	a	a	ADP	_	_	2	case	2:case	_
+2	respeito	respeito	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:a	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	escolas	escola	NOUN	_	Gender=Fem|Number=Plur	2	nmod	2:nmod:de	_
+5	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj	6:nsubj|7:nsubj	_
+6	quero	querer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	dizer	dizer	VERB	_	VerbForm=Inf	6	xcomp	6:xcomp	_
+8	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	obj	7:obj	_
+9	seguinte	seguinte	ADJ	_	Number=Sing	8	amod	8:amod	SpaceAfter=No
+10	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0067
+# text = eu faço questão de mandar tirar aquela placa que tem na porta da prefeitura um ano sem escola.
+1	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	2:nsubj	_
+2	faço	fazer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	questão	questão	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+4	de	de	ADP	_	_	5	mark	5:mark	_
+5	mandar	mandar	VERB	_	VerbForm=Inf	3	acl	3:acl:de	_
+6	tirar	tirar	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	_
+7	aquela	aquele	DET	_	Gender=Fem|Number=Sing|PronType=Dem	8	det	8:det	_
+8	placa	placa	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj|10:nsubj	_
+9	que	que	PRON	_	PronType=Rel	10	nsubj	8:ref	_
+10	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	8:acl:relcl	_
+11-12	na	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	porta	porta	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:em	_
+14-15	da	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	prefeitura	prefeitura	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:de	_
+17	um	um	NUM	_	Gender=Masc|NumType=Card	18	nummod	18:nummod	_
+18	ano	ano	NOUN	_	Gender=Masc|Number=Sing	10	obj	10:obj	_
+19	sem	sem	ADP	_	_	20	case	20:case	_
+20	escola	escola	NOUN	_	Gender=Fem|Number=Sing	18	nmod	18:nmod:sem	SpaceAfter=No
+21	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0069
+# text = recebi a notícia hoje 2 professoras infectadas em são paulo 29 mortas.
+1	recebi	receber	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	notícia	notícia	NOUN	_	Gender=Fem|Number=Sing	1	obj	1:obj	_
+4	hoje	hoje	ADV	_	_	1	advmod	1:advmod	_
+5	2	2	NUM	_	NumType=Card	6	nummod	6:nummod	_
+6	professoras	professor	NOUN	_	Gender=Fem|Number=Plur	1	obj	1:obj|12:nsubj:pass	_
+7	infectadas	infectar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	6	acl	6:acl	_
+8	em	em	ADP	_	_	9	case	9:case	_
+9	são	são	NOUN	_	_	7	obl	7:obl:em	_
+10	paulo	paulo	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod	_
+11	29	29	NUM	_	NumType=Card	12	nummod	12:nummod	_
+12	mortas	mortas	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	1	xcomp	1:xcomp	SpaceAfter=No
+13	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0071
+# text = bom então gente vamos ligar a população tem que pegar a rádio televisão jornal e internet e saber o que que tá acontecendo no brasil.
+1	bom	bom	ADJ	_	Gender=Masc|Number=Sing	5	cc	5:cc	_
+2	então	então	ADV	_	_	5	cc	5:cc	_
+3	gente	gente	NOUN	_	Gender=Fem|Number=Sing	5	discourse	5:discourse	_
+4	vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	5	aux	5:aux	_
+5	ligar	ligar	VERB	_	VerbForm=Inf	0	root	0:root	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	população	população	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+8	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	dep	5:dep	_
+9	que	que	ADP	_	_	10	mark	10:mark|18:mark	_
+10	pegar	pegar	VERB	_	VerbForm=Inf	8	xcomp	8:xcomp	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	rádio	rádio	NOUN	_	Number=Sing	10	obj	10:obj	_
+13	televisão	televisão	NOUN	_	Gender=Fem|Number=Sing	12	nmod	12:nmod	_
+14	jornal	jornal	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	internet	internet	NOUN	_	Foreign=Yes|Gender=Fem|Number=Sing	14	conj	13:nmod|14:conj:e	_
+17	e	e	CCONJ	_	_	18	cc	18:cc	_
+18	saber	saber	VERB	_	VerbForm=Inf	10	conj	8:xcomp|10:conj:e	_
+19	o	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	23	nsubj	23:nsubj	_
+20	que	que	PRON	_	PronType=Int	19	fixed	19:fixed	_
+21	que	que	PRON	_	PronType=Rel	19	fixed	19:fixed	_
+22	tá	estar	AUX	_	Abbr=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	aux	23:aux	_
+23	acontecendo	acontecer	VERB	_	VerbForm=Ger	18	ccomp	18:ccomp	_
+24-25	no	_	_	_	_	_	_	_	_
+24	em	em	ADP	_	_	26	case	26:case	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	brasil	brasil	NOUN	_	Gender=Masc|Number=Sing	23	obl	23:obl:em	SpaceAfter=No
+27	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0073
+# text = alguma pergunta joão felipe loja itatiaia.
+1	alguma	algum	DET	_	Gender=Fem|Number=Sing|PronType=Ind	2	det	2:det	_
+2	pergunta	pergunta	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+3	joão	joão	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod	_
+4	felipe	felipe	PROPN	_	_	3	nmod	3:nmod	_
+5	loja	loja	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod	_
+6	itatiaia	itatiaia	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod	SpaceAfter=No
+7	.	.	PUNCT	_	_	2	punct	2:punct	_

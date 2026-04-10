@@ -1,0 +1,163 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Deputado confessa: Não estamos preocupados com reeleição.
+1	Deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	2	nsubj	2:nsubj	_
+2	confessa	confessar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+3	:	:	PUNCT	_	_	6	punct	6:punct	_
+4	Não	não	ADV	_	_	6	advmod	6:advmod	_
+5	estamos	estar	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+6	preocupados	preocupado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	2	ccomp:speech	2:ccomp:speech	_
+7	com	com	ADP	_	_	8	case	8:case	_
+8	reeleição	reeleição	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:com	SpaceAfter=No
+9	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Estamos preocupados em não sermos presos.
+1	Estamos	estar	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	cop	2:cop	_
+2	preocupados	preocupado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	0	root	0:root	_
+3	em	em	ADP	_	_	6	mark	6:mark	_
+4	não	não	ADV	_	_	6	advmod	6:advmod	_
+5	sermos	ser	AUX	_	Number=Plur|Person=1|VerbForm=Inf	6	aux:pass	6:aux:pass	_
+6	presos	prender	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	2	acl	2:acl:em	SpaceAfter=No
+7	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = O Globo resumiu bem o que está acontecendo em Brasília.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Globo	Globo	PROPN	_	_	3	nsubj	3:nsubj	_
+3	resumiu	resumir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	bem	bem	ADV	_	_	3	advmod	3:advmod	_
+5	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	obj	3:obj|8:nsubj	_
+6	que	que	PRON	_	PronType=Rel	8	nsubj	5:ref	_
+7	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	8:aux	_
+8	acontecendo	acontecer	VERB	_	VerbForm=Ger	5	acl:relcl	5:acl:relcl	_
+9	em	em	ADP	_	_	10	case	10:case	_
+10	Brasília	Brasília	PROPN	_	_	8	obl	8:obl:em	SpaceAfter=No
+11	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = Questionado sobre o projeto que anistia crimes de políticos corruptos, um parlamentar de oposição (ao governo Temer) descreveu exatamente o que aconteceu naquela votação que ocorreu na calada da noite: Todos ficaram doidos.
+1	Questionado	questionar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	22	advcl	22:advcl	_
+2	sobre	sobre	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	1	obl	1:obl:sobre|6:nsubj	_
+5	que	que	PRON	_	PronType=Rel	6	nsubj	4:ref	_
+6	anistia	anistiar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	4:acl:relcl	_
+7	crimes	crime	NOUN	_	Gender=Masc|Number=Plur	6	obj	6:obj	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	políticos	político	NOUN	_	Gender=Masc|Number=Plur	7	nmod	7:nmod:de	_
+10	corruptos	corrupto	ADJ	_	Gender=Masc|Number=Plur	9	amod	9:amod	SpaceAfter=No
+11	,	,	PUNCT	_	_	1	punct	1:punct	_
+12	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	parlamentar	parlamentar	NOUN	_	Gender=Masc|Number=Sing	22	nsubj	22:nsubj	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	oposição	oposição	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:de	_
+16	(	(	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+17-18	ao	_	_	_	_	_	_	_	_
+17	a	a	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	governo	governo	NOUN	_	Gender=Masc|Number=Sing	15	nmod	15:nmod:a	_
+20	Temer	Temer	PROPN	_	_	19	nmod	19:nmod	SpaceAfter=No
+21	)	)	PUNCT	_	_	19	punct	19:punct	_
+22	descreveu	descrever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+23	exatamente	exatamente	ADV	_	_	22	advmod	22:advmod	_
+24	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	22	obj	22:obj|26:nsubj	_
+25	que	que	PRON	_	PronType=Rel	26	nsubj	24:ref	_
+26	aconteceu	acontecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	24	acl:relcl	24:acl:relcl	_
+27-28	naquela	_	_	_	_	_	_	_	_
+27	em	em	ADP	_	_	29	case	29:case	_
+28	aquela	aquele	DET	_	Gender=Fem|Number=Sing|PronType=Dem	29	det	29:det	_
+29	votação	votação	NOUN	_	Gender=Fem|Number=Sing	26	obl	26:obl:em|31:nsubj	_
+30	que	que	PRON	_	PronType=Rel	31	nsubj	29:ref	_
+31	ocorreu	ocorrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	29	acl:relcl	29:acl:relcl	_
+32-33	na	_	_	_	_	_	_	_	_
+32	em	em	ADP	_	_	34	case	34:case	_
+33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	34:det	_
+34	calada	calada	NOUN	_	Gender=Fem|Number=Sing	31	obl	31:obl:em	_
+35-36	da	_	_	_	_	_	_	_	_
+35	de	de	ADP	_	_	37	case	37:case	_
+36	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	37:det	_
+37	noite	noite	NOUN	_	Gender=Fem|Number=Sing	34	nmod	34:nmod:de	SpaceAfter=No
+38	:	:	PUNCT	_	_	40	punct	40:punct	_
+39	Todos	todo	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	40	nsubj	40:nsubj|41:nsubj	_
+40	ficaram	ficar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	22	parataxis	22:parataxis	_
+41	doidos	doido	ADJ	_	Gender=Masc|Number=Plur	40	xcomp	40:xcomp	SpaceAfter=No
+42	.	.	PUNCT	_	_	22	punct	22:punct	_
+
+# sent_id = S0009
+# text = Na hora de discutir a anistia, a gente perguntava (para outros parlamentares) se eles não temiam perder voto e eles respondiam: Não estamos preocupados em ser reeleitos [...] estamos preocupados em em não ser preso.
+1-2	Na	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	hora	hora	NOUN	_	Gender=Fem|Number=Sing	11	obl	11:obl:em	_
+4	de	de	ADP	_	_	5	mark	5:mark	_
+5	discutir	discutir	VERB	_	VerbForm=Inf	3	acl	3:acl:de	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	anistia	anistia	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	SpaceAfter=No
+8	,	,	PUNCT	_	_	3	punct	3:punct	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	gente	gente	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	11:nsubj	_
+11	perguntava	perguntar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+12	(	(	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+13	para	para	ADP	_	_	15	case	15:case	_
+14	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	15	det	15:det	_
+15	parlamentares	parlamentar	NOUN	_	Gender=Masc|Number=Plur	11	obl	11:obl:para	SpaceAfter=No
+16	)	)	PUNCT	_	_	15	punct	15:punct	_
+17	se	se	SCONJ	_	_	20	mark	20:mark	_
+18	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	20	nsubj	20:nsubj|21:nsubj	_
+19	não	não	ADV	_	_	20	advmod	20:advmod	_
+20	temiam	temer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	11	ccomp	11:ccomp	_
+21	perder	perder	VERB	_	VerbForm=Inf	20	xcomp	20:xcomp	_
+22	voto	voto	NOUN	_	Gender=Masc|Number=Sing	21	obj	21:obj	_
+23	e	e	CCONJ	_	_	25	cc	25:cc	_
+24	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	25	nsubj	25:nsubj	_
+25	respondiam	responder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	11	conj	11:conj:e	SpaceAfter=No
+26	:	:	PUNCT	_	_	29	punct	29:punct	_
+27	Não	não	ADV	_	_	29	advmod	29:advmod	_
+28	estamos	estar	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	29	cop	29:cop	_
+29	preocupados	preocupado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	25	ccomp:speech	25:ccomp:speech	_
+30	em	em	ADP	_	_	32	mark	32:mark	_
+31	ser	ser	AUX	_	VerbForm=Inf	32	aux:pass	32:aux:pass	_
+32	reeleitos	reeleger	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	29	acl	29:acl:em	_
+33	[	[	PUNCT	_	_	34	punct	34:punct	SpaceAfter=No
+34	.	.	PUNCT	_	_	38	parataxis	38:parataxis	SpaceAfter=No
+35	..	..	PUNCT	_	_	34	punct	34:punct	SpaceAfter=No
+36	]	]	PUNCT	_	_	34	punct	34:punct	_
+37	estamos	estar	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	38	cop	38:cop	_
+38	preocupados	preocupado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	11	ccomp:speech	11:ccomp:speech|25:ccomp:speech	_
+39	em	em	ADP	_	_	43	mark	43:mark	_
+40	em	em	ADP	_	_	43	mark	43:mark	_
+41	não	não	ADV	_	_	43	advmod	43:advmod	_
+42	ser	ser	AUX	_	VerbForm=Inf	43	aux:pass	43:aux:pass	_
+43	preso	prender	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	38	acl	38:acl:em_em	SpaceAfter=No
+44	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0011
+# text = Perderam de vez a vergonha na cara [...] se é que algum dia eles tiveram!
+1	Perderam	perder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	vez	vez	NOUN	_	Gender=Fem|Number=Sing	1	obl	1:obl:de	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	vergonha	vergonha	NOUN	_	Gender=Fem|Number=Sing	1	obj	1:obj	_
+6-7	na	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	cara	cara	NOUN	_	Number=Sing	5	nmod	5:nmod:em	_
+9	[	[	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+10	.	.	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+11	..	..	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+12	]	]	PUNCT	_	_	10	punct	10:punct	_
+13	se	se	SCONJ	_	_	19	mark	19:mark	_
+14	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	discourse	19:discourse	_
+15	que	que	SCONJ	_	_	19	discourse	19:discourse	_
+16	algum	algum	DET	_	Gender=Masc|Number=Sing|PronType=Ind	17	det	17:det	_
+17	dia	dia	NOUN	_	Gender=Masc|Number=Sing	19	obl	19:obl	_
+18	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	19	nsubj	19:nsubj	_
+19	tiveram	ter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	1	parataxis	1:parataxis	SpaceAfter=No
+20	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0012
+# text = leia também:
+1	leia	ler	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	também	também	ADV	_	_	1	advmod	1:advmod	SpaceAfter=No
+3	:	:	PUNCT	_	_	1	punct	1:punct	_

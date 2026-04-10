@@ -1,0 +1,382 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Promotor pede pena severa para cunhado de Ana Hickmann; defesa alega legítima defesa.
+1	Promotor	promotor	NOUN	_	Gender=Masc|Number=Sing	2	nsubj	2:nsubj	_
+2	pede	pedir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	pena	pena	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+4	severa	severo	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+5	para	para	ADP	_	_	6	case	6:case	_
+6	cunhado	cunhado	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:para	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	Ana	Ana	PROPN	_	_	6	nmod	6:nmod:de	_
+9	Hickmann	Hickmann	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+10	;	;	PUNCT	_	_	12	punct	12:punct	_
+11	defesa	defesa	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	12:nsubj	_
+12	alega	alegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	2:parataxis	_
+13	legítima	legítimo	ADJ	_	Gender=Fem|Number=Sing	14	amod	14:amod	_
+14	defesa	defesa	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	SpaceAfter=No
+15	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Em audiência bombástica nesta segunda-feira (18), o promotor Francisco Santiago exigiu pena de 15 a 25 anos para Gustavo Corrêa, acusado de matar Rodrigo de Pádua, um admirador da apresentadora Ana Hickmann.
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	audiência	audiência	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl:em	_
+3	bombástica	bombástico	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	_
+4-5	nesta	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	6	det	6:det	_
+6	segunda-feira	segunda-feira	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:em	_
+7	(	(	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	18	18	NUM	_	NumType=Card	6	appos	6:appos	SpaceAfter=No
+9	)	)	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+10	,	,	PUNCT	_	_	2	punct	2:punct	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	promotor	promotor	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	15:nsubj	_
+13	Francisco	Francisco	PROPN	_	_	12	nmod	12:nmod	_
+14	Santiago	Santiago	PROPN	_	_	13	flat:name	13:flat:name	_
+15	exigiu	exigir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+16	pena	pena	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	15	15	NUM	_	NumType=Card	21	nummod	21:nummod	_
+19	a	a	ADP	_	_	20	case	20:case	_
+20	25	25	NUM	_	NumType=Card	21	nummod	21:nummod	_
+21	anos	ano	NOUN	_	Gender=Masc|Number=Plur	16	nmod	16:nmod	_
+22	para	para	ADP	_	_	23	case	23:case	_
+23	Gustavo	Gustavo	PROPN	_	_	15	obl	15:obl:para	_
+24	Corrêa	Corrêa	PROPN	_	_	23	flat:name	23:flat:name	SpaceAfter=No
+25	,	,	PUNCT	_	_	26	punct	26:punct	_
+26	acusado	acusar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	23	acl	23:acl	_
+27	de	de	ADP	_	_	28	mark	28:mark	_
+28	matar	matar	VERB	_	VerbForm=Inf	26	xcomp	26:xcomp	_
+29	Rodrigo	Rodrigo	PROPN	_	_	28	obj	28:obj	_
+30	de	de	ADP	_	_	31	case	31:case	_
+31	Pádua	Pádua	PROPN	_	_	29	flat:name	29:flat:name	SpaceAfter=No
+32	,	,	PUNCT	_	_	34	punct	34:punct	_
+33	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	34	det	34:det	_
+34	admirador	admirador	NOUN	_	Gender=Masc|Number=Sing	29	appos	29:appos	_
+35-36	da	_	_	_	_	_	_	_	_
+35	de	de	ADP	_	_	37	case	37:case	_
+36	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	37:det	_
+37	apresentadora	apresentador	NOUN	_	Gender=Fem|Number=Sing	34	nmod	34:nmod:de	_
+38	Ana	Ana	PROPN	_	_	37	nmod	37:nmod	_
+39	Hickmann	Hickmann	PROPN	_	_	38	flat:name	38:flat:name	SpaceAfter=No
+40	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0005
+# text = O caso, ocorrido em maio de 2016 em um hotel de luxo em Belo Horizonte, chocou o país.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	caso	caso	NOUN	_	Gender=Masc|Number=Sing	18	nsubj	18:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	ocorrido	ocorrer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	2	acl	2:acl	_
+5	em	em	ADP	_	_	6	case	6:case	_
+6	maio	maio	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:em	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	2016	2016	NUM	_	NumType=Card	6	nmod	6:nmod:de	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	hotel	hotel	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:em	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	luxo	luxo	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:de	_
+14	em	em	ADP	_	_	15	case	15:case	_
+15	Belo	Belo	PROPN	_	_	11	nmod	11:nmod:em	_
+16	Horizonte	Horizonte	PROPN	_	_	15	flat:name	15:flat:name	SpaceAfter=No
+17	,	,	PUNCT	_	_	4	punct	4:punct	_
+18	chocou	chocar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	país	país	NOUN	_	Gender=Masc|Number=Sing	18	obj	18:obj	SpaceAfter=No
+21	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0007
+# text = Gustavo, em uma declaração emocionada, afirmou que agiu para salvar sua família e que faria tudo de novo.
+1	Gustavo	Gustavo	PROPN	_	_	8	nsubj	8:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	5	punct	5:punct	_
+3	em	em	ADP	_	_	5	case	5:case	_
+4	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	declaração	declaração	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:em	_
+6	emocionada	emocionado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	5	amod	5:amod	SpaceAfter=No
+7	,	,	PUNCT	_	_	5	punct	5:punct	_
+8	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	que	que	SCONJ	_	_	10	mark	10:mark	_
+10	agiu	agir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	ccomp	8:ccomp	_
+11	para	para	ADP	_	_	12	mark	12:mark	_
+12	salvar	salvar	VERB	_	VerbForm=Inf	10	advcl	10:advcl:para	_
+13	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	14	det	14:det	_
+14	família	família	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+15	e	e	CCONJ	_	_	17	cc	17:cc	_
+16	que	que	SCONJ	_	_	17	mark	17:mark	_
+17	faria	fazer	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	10	conj	8:ccomp|10:conj:e	_
+18	tudo	tudo	PRON	_	PronType=Ind	17	obj	17:obj	_
+19	de	de	ADP	_	ExtPos=ADV	17	advmod	17:advmod	_
+20	novo	novo	ADJ	_	Gender=Masc|Number=Sing	19	fixed	19:fixed	SpaceAfter=No
+21	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0009
+# text = O promotor argumentou que os três tiros na nuca de Rodrigo indicam excesso de legítima defesa.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	promotor	promotor	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	argumentou	argumentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	13	mark	13:mark	_
+5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	7:det	_
+6	três	três	NUM	_	NumType=Card	7	nummod	7:nummod	_
+7	tiros	tiro	NOUN	_	Gender=Masc|Number=Plur	13	nsubj	13:nsubj	_
+8-9	na	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	nuca	nuca	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:em	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	Rodrigo	Rodrigo	PROPN	_	_	10	nmod	10:nmod:de	_
+13	indicam	indicar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	3:ccomp	_
+14	excesso	excesso	NOUN	_	Gender=Masc|Number=Sing	13	obj	13:obj	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	legítima	legítimo	ADJ	_	Gender=Fem|Number=Sing	17	amod	17:amod	_
+17	defesa	defesa	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:de	SpaceAfter=No
+18	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0011
+# text = "Não podemos aceitar que a defesa pessoal justifique execução", declarou Santiago.
+1	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	Não	não	ADV	_	_	3	advmod	3:advmod	_
+3	podemos	poder	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	13	ccomp:speech	13:ccomp:speech	_
+4	aceitar	aceitar	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+5	que	que	SCONJ	_	_	9	mark	9:mark	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	defesa	defesa	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	9:nsubj	_
+8	pessoal	pessoal	ADJ	_	Number=Sing	7	amod	7:amod	_
+9	justifique	justificar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	ccomp	4:ccomp	_
+10	execução	execução	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	SpaceAfter=No
+11	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+12	,	,	PUNCT	_	_	3	punct	3:punct	_
+13	declarou	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	Santiago	Santiago	PROPN	_	_	13	nsubj	13:nsubj	SpaceAfter=No
+15	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0013
+# text = A defesa de Gustavo, liderada pelo advogado Fernando José da Costa, contestou, afirmando que os disparos foram sequenciais e necessários durante a luta corporal.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	defesa	defesa	NOUN	_	Gender=Fem|Number=Sing	16	nsubj	16:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Gustavo	Gustavo	PROPN	_	_	2	nmod	2:nmod:de	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	liderada	liderar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	2:acl	_
+7-8	pelo	_	_	_	_	_	_	_	_
+7	por	por	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	advogado	advogado	NOUN	_	Gender=Masc|Number=Sing	6	obl:agent	6:obl:agent	_
+10	Fernando	Fernando	PROPN	_	_	9	nmod	9:nmod	_
+11	José	José	PROPN	_	_	10	flat:name	10:flat:name	_
+12-13	da	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	Costa	Costa	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+15	,	,	PUNCT	_	_	6	punct	6:punct	_
+16	contestou	contestar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+17	,	,	PUNCT	_	_	18	punct	18:punct	_
+18	afirmando	afirmar	VERB	_	VerbForm=Ger	16	advcl	16:advcl	_
+19	que	que	SCONJ	_	_	23	mark	23:mark|25:mark	_
+20	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	21:det	_
+21	disparos	disparo	NOUN	_	Gender=Masc|Number=Plur	23	nsubj	23:nsubj|25:nsubj	_
+22	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	23	cop	23:cop|25:cop	_
+23	sequenciais	sequencial	ADJ	_	Number=Plur	18	ccomp	18:ccomp	_
+24	e	e	CCONJ	_	_	25	cc	25:cc	_
+25	necessários	necessário	ADJ	_	Gender=Masc|Number=Plur	23	conj	18:ccomp|23:conj:e	_
+26	durante	durante	ADP	_	_	28	case	28:case	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	luta	luta	NOUN	_	Gender=Fem|Number=Sing	23	obl	23:obl:durante|25:obl:durante	_
+29	corporal	corporal	ADJ	_	Number=Sing	28	amod	28:amod	SpaceAfter=No
+30	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0015
+# text = Helison Augusto de Pádua, irmão da vítima, fez revelações surpreendentes ao afirmar que Rodrigo era um jovem pacífico e amoroso, sem intenção de matar.
+1	Helison	Helison	PROPN	_	_	11	nsubj	11:nsubj	_
+2	Augusto	Augusto	PROPN	_	_	1	flat:name	1:flat:name	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Pádua	Pádua	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	irmão	irmão	NOUN	_	Gender=Masc|Number=Sing	1	appos	1:appos	_
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	vítima	vítima	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de	SpaceAfter=No
+10	,	,	PUNCT	_	_	6	punct	6:punct	_
+11	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	revelações	revelação	NOUN	_	Gender=Fem|Number=Plur	11	obj	11:obj	_
+13	surpreendentes	surpreendente	ADJ	_	Number=Plur	12	amod	12:amod	_
+14-15	ao	_	_	_	_	_	_	_	_
+14	a	a	ADP	_	ExtPos=SCONJ	16	mark	16:mark	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	fixed	14:fixed	_
+16	afirmar	afirmar	VERB	_	VerbForm=Inf	11	advcl	11:advcl:a_o	_
+17	que	que	SCONJ	_	_	21	mark	21:mark	_
+18	Rodrigo	Rodrigo	PROPN	_	_	21	nsubj	21:nsubj	_
+19	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	21	cop	21:cop	_
+20	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	jovem	jovem	NOUN	_	Number=Sing	16	ccomp	16:ccomp	_
+22	pacífico	pacífico	ADJ	_	Gender=Masc|Number=Sing	21	amod	21:amod	_
+23	e	e	CCONJ	_	_	24	cc	24:cc	_
+24	amoroso	amoroso	ADJ	_	Gender=Masc|Number=Sing	22	conj	21:amod|22:conj:e	SpaceAfter=No
+25	,	,	PUNCT	_	_	27	punct	27:punct	_
+26	sem	sem	ADP	_	_	27	case	27:case	_
+27	intenção	intenção	NOUN	_	Gender=Fem|Number=Sing	21	nmod	21:nmod:sem	_
+28	de	de	ADP	_	_	29	mark	29:mark	_
+29	matar	matar	VERB	_	VerbForm=Inf	27	acl	27:acl:de	SpaceAfter=No
+30	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0017
+# text = Meu irmão disse claramente: 'eu não sou assassino'.
+1	Meu	meu	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	det	2:det	_
+2	irmão	irmão	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	claramente	claramente	ADV	_	_	3	advmod	3:advmod	SpaceAfter=No
+5	:	:	PUNCT	_	_	10	punct	10:punct	_
+6	'	'	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+7	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	10	nsubj	10:nsubj	_
+8	não	não	ADV	_	_	10	advmod	10:advmod	_
+9	sou	ser	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_
+10	assassino	assassino	NOUN	_	Gender=Masc|Number=Sing	3	ccomp:speech	3:ccomp:speech	SpaceAfter=No
+11	'	'	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+12	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0019
+# text = Há contradições nos depoimentos, inclusive sobre quem realmente disparou a arma, afirmou Helison.
+1	Há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	ccomp:speech	15:ccomp:speech	_
+2	contradições	contradição	NOUN	_	Gender=Fem|Number=Plur	1	obj	1:obj	_
+3-4	nos	_	_	_	_	_	_	_	_
+3	em	em	ADP	_	_	5	case	5:case	_
+4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	5:det	_
+5	depoimentos	depoimento	NOUN	_	Gender=Masc|Number=Plur	1	obl	1:obl:em	SpaceAfter=No
+6	,	,	PUNCT	_	_	9	punct	9:punct	_
+7	inclusive	inclusive	ADV	_	_	9	advmod	9:advmod	_
+8	sobre	sobre	ADP	_	_	9	case	9:case	_
+9	quem	quem	PRON	_	PronType=Ind	5	nmod	5:nmod:sobre	_
+10	realmente	realmente	ADV	_	_	11	advmod	11:advmod	_
+11	disparou	disparar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	acl:relcl	9:acl:relcl	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	arma	arma	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	SpaceAfter=No
+14	,	,	PUNCT	_	_	1	punct	1:punct	_
+15	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+16	Helison	Helison	PROPN	_	_	15	nsubj	15:nsubj	SpaceAfter=No
+17	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0021
+# text = A perita contratada pela defesa, Rosângela Monteiro, reforçou que não há evidências de que Rodrigo estava imobilizado.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	perita	perito	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	11:nsubj	_
+3	contratada	contratar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	2:acl	_
+4-5	pela	_	_	_	_	_	_	_	_
+4	por	por	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	defesa	defesa	NOUN	_	Gender=Fem|Number=Sing	3	obl:agent	3:obl:agent	SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	8:punct	_
+8	Rosângela	Rosângela	PROPN	_	_	2	appos	2:appos	_
+9	Monteiro	Monteiro	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+10	,	,	PUNCT	_	_	8	punct	8:punct	_
+11	reforçou	reforçar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	que	que	SCONJ	_	_	14	mark	14:mark	_
+13	não	não	ADV	_	_	14	advmod	14:advmod	_
+14	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	ccomp	11:ccomp	_
+15	evidências	evidência	NOUN	_	Gender=Fem|Number=Plur	14	obj	14:obj	_
+16	de	de	ADP	_	ExtPos=SCONJ	20	mark	20:mark	_
+17	que	que	SCONJ	_	_	16	fixed	16:fixed	_
+18	Rodrigo	Rodrigo	PROPN	_	_	20	nsubj	20:nsubj	_
+19	estava	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	20	cop	20:cop	_
+20	imobilizado	imobilizado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	15	acl	15:acl:de_que	SpaceAfter=No
+21	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0023
+# text = "Eles estavam em uma luta desesperada, não houve imobilização", destacou.
+1	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+2	Eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	6	nsubj	6:nsubj	_
+3	estavam	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	6	cop	6:cop	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	luta	luta	NOUN	_	Gender=Fem|Number=Sing	14	ccomp:speech	14:ccomp:speech	_
+7	desesperada	desesperado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	6	amod	6:amod	SpaceAfter=No
+8	,	,	PUNCT	_	_	10	punct	10:punct	_
+9	não	não	ADV	_	_	10	advmod	10:advmod	_
+10	houve	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	parataxis	6:parataxis	_
+11	imobilização	imobilização	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	SpaceAfter=No
+12	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+13	,	,	PUNCT	_	_	6	punct	6:punct	_
+14	destacou	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+15	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0025
+# text = Ana Hickmann, que sofreu um atentado na ocasião, declarou que o processo é uma "injustiça tremenda" contra seu cunhado.
+1	Ana	Ana	PROPN	_	_	12	nsubj	5:nsubj|12:nsubj	_
+2	Hickmann	Hickmann	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	5	punct	5:punct	_
+4	que	que	PRON	_	PronType=Rel	5	nsubj	1:ref	_
+5	sofreu	sofrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	atentado	atentado	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+8-9	na	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	ocasião	ocasião	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:em	SpaceAfter=No
+11	,	,	PUNCT	_	_	5	punct	5:punct	_
+12	declarou	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+13	que	que	SCONJ	_	_	19	mark	19:mark	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	processo	processo	NOUN	_	Gender=Masc|Number=Sing	19	nsubj	19:nsubj	_
+16	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	cop	19:cop	_
+17	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+18	"	"	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+19	injustiça	injustiça	NOUN	_	Gender=Fem|Number=Sing	12	ccomp	12:ccomp	_
+20	tremenda	tremendo	ADJ	_	Gender=Fem|Number=Sing	19	amod	19:amod	SpaceAfter=No
+21	"	"	PUNCT	_	_	19	punct	19:punct	_
+22	contra	contra	ADP	_	_	24	case	24:case	_
+23	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	24	det	24:det	_
+24	cunhado	cunhado	NOUN	_	Gender=Masc|Number=Sing	19	nmod	19:nmod:contra	SpaceAfter=No
+25	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0027
+# text = O caso aguarda decisão da juíza Ámalin Aziz Santana, que pode levar Gustavo a júri popular ou julgamento comum.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	caso	caso	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	aguarda	aguardar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	decisão	decisão	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+5-6	da	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	juíza	juíz	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:de|13:nsubj|14:nsubj	_
+8	Ámalin	Ámalin	PROPN	_	_	7	nmod	7:nmod	_
+9	Aziz	Aziz	PROPN	_	_	8	flat:name	8:flat:name	_
+10	Santana	Santana	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+11	,	,	PUNCT	_	_	13	punct	13:punct	_
+12	que	que	PRON	_	PronType=Rel	13	nsubj	7:ref	_
+13	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	7:acl:relcl	_
+14	levar	levar	VERB	_	VerbForm=Inf	13	xcomp	13:xcomp	_
+15	Gustavo	Gustavo	PROPN	_	_	14	obj	14:obj	_
+16	a	a	ADP	_	_	17	case	17:case|20:case	_
+17	júri	júri	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:a	_
+18	popular	popular	ADJ	_	Number=Sing	17	amod	17:amod	_
+19	ou	ou	CCONJ	_	_	20	cc	20:cc	_
+20	julgamento	julgamento	NOUN	_	Gender=Masc|Number=Sing	17	conj	14:obl:a|17:conj:ou	_
+21	comum	comum	ADJ	_	Number=Sing	20	amod	20:amod	SpaceAfter=No
+22	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0029
+# text = Enquanto isso, o mistério sobre as verdadeiras intenções de Rodrigo e a necessidade dos disparos mantém a opinião pública dividida.
+1	Enquanto	enquanto	ADV	_	ExtPos=ADV	18	advmod	18:advmod	_
+2	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	fixed	1:fixed	SpaceAfter=No
+3	,	,	PUNCT	_	_	1	punct	1:punct	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	mistério	mistério	NOUN	_	Gender=Masc|Number=Sing	18	nsubj	18:nsubj	_
+6	sobre	sobre	ADP	_	_	9	case	9:case|14:case	_
+7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	9:det	_
+8	verdadeiras	verdadeiro	ADJ	_	Gender=Fem|Number=Plur	9	amod	9:amod	_
+9	intenções	intenção	NOUN	_	Gender=Fem|Number=Plur	5	nmod	5:nmod:sobre	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	Rodrigo	Rodrigo	PROPN	_	_	9	nmod	9:nmod:de	_
+12	e	e	CCONJ	_	_	14	cc	14:cc	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	necessidade	necessidade	NOUN	_	Gender=Fem|Number=Sing	9	conj	5:nmod:sobre|9:conj:e	_
+15-16	dos	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	17:det	_
+17	disparos	disparo	NOUN	_	Gender=Masc|Number=Plur	14	nmod	14:nmod:de	_
+18	mantém	manter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	opinião	opinião	NOUN	_	Gender=Fem|Number=Sing	18	obj	18:obj	_
+21	pública	público	ADJ	_	Gender=Fem|Number=Sing	20	amod	20:amod	_
+22	dividida	dividido	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	20	amod	20:amod	SpaceAfter=No
+23	.	.	PUNCT	_	_	18	punct	18:punct	_

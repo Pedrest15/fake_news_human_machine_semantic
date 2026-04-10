@@ -1,0 +1,462 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Atenção: Novo Golpe Alerta! Amigo Recebe Ligação Sobre Vacina e Tem Conta Limpa!
+1	Atenção	atenção	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+2	:	:	PUNCT	_	_	1	punct	1:punct	_
+3	Novo	novo	ADJ	_	Gender=Masc|Number=Sing	1	amod	1:amod	_
+4	Golpe	Golpe	PROPN	_	_	1	flat:name	1:flat:name	_
+5	Alerta	Alerta	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+6	!	!	PUNCT	_	_	8	punct	8:punct	_
+7	Amigo	Amigo	PROPN	_	_	8	nsubj	8:nsubj|13:nsubj	_
+8	Recebe	receber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	1:parataxis	_
+9	Ligação	Ligação	PROPN	_	_	8	obj	8:obj	_
+10	Sobre	Sobre	PROPN	_	_	11	case	11:case	_
+11	Vacina	Vacina	PROPN	_	_	9	flat:name	9:flat:name	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	Tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	conj	1:parataxis|8:conj:e	_
+14	Conta	Conta	PROPN	_	_	13	obj	13:obj	_
+15	Limpa	Limpa	PROPN	_	_	14	flat:name	14:flat:name	SpaceAfter=No
+16	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Recentemente, uma história chocante tem se espalhado pelas redes sociais, alertando a população sobre um golpe sofisticado relacionado à vacinação.
+1	Recentemente	recentemente	ADV	_	_	8	advmod	8:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	história	história	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	8:nsubj	_
+5	chocante	chocante	ADJ	_	Number=Sing	4	amod	4:amod	_
+6	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	8:aux	_
+7	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	8	expl	8:expl	_
+8	espalhado	espalhar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+9-10	pelas	_	_	_	_	_	_	_	_
+9	por	por	ADP	_	_	11	case	11:case	_
+10	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	11:det	_
+11	redes	rede	NOUN	_	Gender=Fem|Number=Plur	8	obl	8:obl:por	_
+12	sociais	social	ADJ	_	Number=Plur	11	amod	11:amod	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	alertando	alertar	VERB	_	VerbForm=Ger	8	advcl	8:advcl	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	população	população	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	_
+17	sobre	sobre	ADP	_	_	19	case	19:case	_
+18	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	golpe	golpe	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:sobre	_
+20	sofisticado	sofisticado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	19	amod	19:amod	_
+21	relacionado	relacionar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	19	acl	19:acl	_
+22-23	à	_	_	_	_	_	_	_	_
+22	a	a	ADP	_	_	24	case	24:case	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	vacinação	vacinação	NOUN	_	Gender=Fem|Number=Sing	21	obl	21:obl:a	SpaceAfter=No
+25	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0005
+# text = Um homem identificado como João Silva recebeu uma ligação suspeita que pedia para pressionar 2 se ele estivesse vacinado.
+1	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	homem	homem	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+3	identificado	identificar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	2:acl	_
+4	como	como	ADP	_	_	5	case	5:case	_
+5	João	João	PROPN	_	_	3	obl	3:obl:como	_
+6	Silva	Silva	PROPN	_	_	5	flat:name	5:flat:name	_
+7	recebeu	receber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	ligação	ligação	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj|12:nsubj	_
+10	suspeita	suspeito	ADJ	_	Gender=Fem|Number=Sing	9	amod	9:amod	_
+11	que	que	PRON	_	PronType=Rel	12	nsubj	9:ref	_
+12	pedia	pedir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	acl:relcl	9:acl:relcl	_
+13	para	para	ADP	_	_	14	mark	14:mark	_
+14	pressionar	pressionar	VERB	_	VerbForm=Inf	12	ccomp	12:ccomp	_
+15	2	2	NUM	_	NumType=Card	14	obj	14:obj	_
+16	se	se	SCONJ	_	_	19	mark	19:mark	_
+17	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	19	nsubj	19:nsubj	_
+18	estivesse	estar	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	cop	19:cop	_
+19	vacinado	vacinado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	12	advcl	12:advcl:se	SpaceAfter=No
+20	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0007
+# text = Sem desconfiar, João seguiu as instruções e, instantaneamente, teve seu telefone bloqueado.
+1	Sem	sem	ADP	_	_	2	mark	2:mark	_
+2	desconfiar	desconfiar	VERB	_	VerbForm=Inf	5	advcl	5:advcl:sem|12:advcl:sem	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	João	João	PROPN	_	_	5	nsubj	5:nsubj|12:nsubj	_
+5	seguiu	seguir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	7:det	_
+7	instruções	instrução	NOUN	_	Gender=Fem|Number=Plur	5	obj	5:obj	_
+8	e	e	CCONJ	_	_	12	cc	12:cc	SpaceAfter=No
+9	,	,	PUNCT	_	_	10	punct	10:punct	_
+10	instantaneamente	instantaneamente	ADV	_	_	12	advmod	12:advmod	SpaceAfter=No
+11	,	,	PUNCT	_	_	10	punct	10:punct	_
+12	teve	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	conj	5:conj:e	_
+13	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	14	det	14:det	_
+14	telefone	telefone	NOUN	_	Gender=Masc|Number=Sing	12	obj	12:obj|15:nsubj:pass	_
+15	bloqueado	bloquear	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	12	xcomp	12:xcomp	SpaceAfter=No
+16	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0009
+# text = Segundos depois, percebeu que sua conta bancária havia sido esvaziada por transações via PIX.
+1	Segundos	segundo	NOUN	_	Gender=Masc|Number=Plur	2	obl	2:obl	_
+2	depois	depois	ADV	_	_	4	advmod	4:advmod	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	percebeu	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	que	que	SCONJ	_	_	11	mark	11:mark	_
+6	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	7	det	7:det	_
+7	conta	conta	NOUN	_	Gender=Fem|Number=Sing	11	nsubj:pass	11:nsubj:pass	_
+8	bancária	bancário	ADJ	_	Gender=Fem|Number=Sing	7	amod	7:amod	_
+9	havia	haver	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	11	aux	11:aux	_
+10	sido	ser	AUX	_	Gender=Masc|Number=Sing|VerbForm=Part	11	aux:pass	11:aux:pass	_
+11	esvaziada	esvaziar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	4	ccomp	4:ccomp	_
+12	por	por	ADP	_	_	13	case	13:case	_
+13	transações	transação	NOUN	_	Gender=Fem|Number=Plur	11	obl:agent	11:obl:agent	_
+14	via	via	ADP	_	_	15	case	15:case	_
+15	PIX	PIX	PROPN	_	_	13	nmod	13:nmod:via	SpaceAfter=No
+16	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0011
+# text = A mensagem viraliza com um alerta: Fiquem atentos, pessoal! Acabei de receber uma ligação do número 9541117.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	mensagem	mensagem	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_
+3	viraliza	viralizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	com	com	ADP	_	_	6	case	6:case	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	alerta	alerta	NOUN	_	Number=Sing	3	obl	3:obl:com	SpaceAfter=No
+7	:	:	PUNCT	_	_	8	punct	8:punct	_
+8	Fiquem	ficar	VERB	_	Mood=Imp|Number=Plur|Person=3|VerbForm=Fin	6	parataxis	6:parataxis	_
+9	atentos	atento	ADJ	_	Gender=Masc|Number=Plur	8	xcomp	8:xcomp	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	pessoal	pessoal	NOUN	_	Number=Sing	8	vocative	8:vocative	SpaceAfter=No
+12	!	!	PUNCT	_	_	8	punct	8:punct	_
+13	Acabei	acabar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	3	parataxis	3:parataxis	_
+14	de	de	ADP	_	_	15	mark	15:mark	_
+15	receber	receber	VERB	_	VerbForm=Inf	13	xcomp	13:xcomp	_
+16	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	ligação	ligação	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	_
+18-19	do	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	número	número	NOUN	_	Gender=Masc|Number=Sing	17	nmod	17:nmod:de	_
+21	9541117	9541117	NUM	_	NumType=Card	20	nmod	20:nmod	SpaceAfter=No
+22	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0013
+# text = Pediram para pressionar 2 caso eu estivesse vacinado.
+1	Pediram	pedir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	para	para	ADP	_	_	3	mark	3:mark	_
+3	pressionar	pressionar	VERB	_	VerbForm=Inf	1	ccomp	1:ccomp	_
+4	2	2	NUM	_	NumType=Card	3	obj	3:obj	_
+5	caso	caso	SCONJ	_	_	8	mark	8:mark	_
+6	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	8	nsubj	8:nsubj	_
+7	estivesse	estar	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	cop	8:cop	_
+8	vacinado	vacinado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	3	advcl	3:advcl:caso	SpaceAfter=No
+9	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0015
+# text = Assim que fiz isso, meu celular foi hackeado e todas as minhas economias foram roubadas.
+1	Assim	assim	ADV	_	ExtPos=SCONJ	3	mark	3:mark	_
+2	que	que	SCONJ	_	_	1	fixed	1:fixed	_
+3	fiz	fazer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	9	advcl	9:advcl:assim_que|16:advcl:assim_que	_
+4	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	3	obj	3:obj	SpaceAfter=No
+5	,	,	PUNCT	_	_	3	punct	3:punct	_
+6	meu	meu	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	7	det	7:det	_
+7	celular	celular	NOUN	_	Gender=Masc|Number=Sing	9	nsubj:pass	9:nsubj:pass	_
+8	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	aux:pass	9:aux:pass	_
+9	hackeado	hackear	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+10	e	e	CCONJ	_	_	16	cc	16:cc	_
+11	todas	todo	DET	_	Gender=Fem|Number=Plur|PronType=Ind	14	det	14:det	_
+12	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	14:det	_
+13	minhas	meu	DET	_	Gender=Fem|Number=Plur|Person=1|Poss=Yes|PronType=Prs	14	det	14:det	_
+14	economias	economia	NOUN	_	Gender=Fem|Number=Plur	16	nsubj:pass	16:nsubj:pass	_
+15	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	16	aux:pass	16:aux:pass	_
+16	roubadas	roubar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	9	conj	9:conj:e	SpaceAfter=No
+17	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0017
+# text = Compartilhem essa informação com seus grupos e avisem seus familiares!
+1	Compartilhem	compartilhar	VERB	_	Mood=Imp|Number=Plur|Person=3|VerbForm=Fin	0	root	0:root	_
+2	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	3:det	_
+3	informação	informação	NOUN	_	Gender=Fem|Number=Sing	1	obj	1:obj	_
+4	com	com	ADP	_	_	6	case	6:case	_
+5	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	6	det	6:det	_
+6	grupos	grupo	NOUN	_	Gender=Masc|Number=Plur	1	obl	1:obl:com	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	avisem	avisar	VERB	_	Mood=Imp|Number=Plur|Person=3|VerbForm=Fin	1	conj	1:conj:e	_
+9	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	10	det	10:det	_
+10	familiares	familiar	NOUN	_	Number=Plur	8	obj	8:obj	SpaceAfter=No
+11	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0019
+# text = Entretanto, especialistas em segurança digital, como Sandro Süffert, CEO da CBER Intelligence, afirmam que essa história é falsa.
+1	Entretanto	entretanto	CCONJ	_	_	18	cc	18:cc	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	especialistas	especialista	NOUN	_	Number=Plur	18	nsubj	18:nsubj	_
+4	em	em	ADP	_	_	5	case	5:case	_
+5	segurança	segurança	NOUN	_	Number=Sing	3	nmod	3:nmod:em	_
+6	digital	digital	ADJ	_	Number=Sing	5	amod	5:amod	SpaceAfter=No
+7	,	,	PUNCT	_	_	9	punct	9:punct	_
+8	como	como	ADP	_	_	9	case	9:case	_
+9	Sandro	Sandro	PROPN	_	_	3	nmod	3:nmod:como	_
+10	Süffert	Süffert	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	CEO	CEO	PROPN	_	_	9	appos	9:appos	_
+13-14	da	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	CBER	CBER	PROPN	_	_	12	nmod	12:nmod:de	_
+16	Intelligence	Intelligence	PROPN	_	_	15	flat:name	15:flat:name	SpaceAfter=No
+17	,	,	PUNCT	_	_	12	punct	12:punct	_
+18	afirmam	afirmar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+19	que	que	SCONJ	_	_	23	mark	23:mark	_
+20	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	21	det	21:det	_
+21	história	história	NOUN	_	Gender=Fem|Number=Sing	23	nsubj	23:nsubj	_
+22	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	cop	23:cop	_
+23	falsa	falso	ADJ	_	Gender=Fem|Number=Sing	18	ccomp	18:ccomp	SpaceAfter=No
+24	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0021
+# text = "Tecnicamente, não é possível clonar ou bloquear um telefone simplesmente ao pressionar um número durante uma chamada", esclarece Süffert.
+1	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+2	Tecnicamente	tecnicamente	ADV	_	_	6	advmod	6:advmod	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	não	não	ADV	_	_	6	advmod	6:advmod	_
+5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+6	possível	possível	ADJ	_	Number=Sing	23	ccomp:speech	23:ccomp:speech	_
+7	clonar	clonar	VERB	_	VerbForm=Inf	6	csubj	6:csubj	_
+8	ou	ou	CCONJ	_	_	9	cc	9:cc	_
+9	bloquear	bloquear	VERB	_	VerbForm=Inf	7	conj	6:csubj|7:conj:ou	_
+10	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	telefone	telefone	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj|9:obj	_
+12	simplesmente	simplesmente	ADV	_	_	15	advmod	15:advmod	_
+13-14	ao	_	_	_	_	_	_	_	_
+13	a	a	ADP	_	ExtPos=SCONJ	15	mark	15:mark	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	fixed	13:fixed	_
+15	pressionar	pressionar	VERB	_	VerbForm=Inf	7	advcl	7:advcl:a_o|9:advcl:a_o	_
+16	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	número	número	NOUN	_	Gender=Masc|Number=Sing	15	obj	15:obj	_
+18	durante	durante	ADP	_	_	20	case	20:case	_
+19	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	chamada	chamado	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl:durante	SpaceAfter=No
+21	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+22	,	,	PUNCT	_	_	6	punct	6:punct	_
+23	esclarece	esclarecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+24	Süffert	Süffert	PROPN	_	_	23	nsubj	23:nsubj	SpaceAfter=No
+25	.	.	PUNCT	_	_	23	punct	23:punct	_
+
+# sent_id = S0023
+# text = Por outro lado, Fabio Assolini, diretor da equipe global de pesquisa e análise da Kaspersky para a América Latina, alerta sobre técnicas reais que golpistas podem usar, como o redirecionamento de chamadas via códigos MMI.
+1	Por	por	ADP	_	_	3	case	3:case	_
+2	outro	outro	DET	_	Gender=Masc|Number=Sing|PronType=Ind	3	det	3:det	_
+3	lado	lado	NOUN	_	Gender=Masc|Number=Sing	25	obl	25:obl:por	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	Fabio	Fabio	PROPN	_	_	25	nsubj	25:nsubj	_
+6	Assolini	Assolini	PROPN	_	_	5	flat:name	5:flat:name	SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	8:punct	_
+8	diretor	diretor	NOUN	_	Gender=Masc|Number=Sing	5	appos	5:appos	_
+9-10	da	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	equipe	equipe	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	_
+12	global	global	ADJ	_	Number=Sing	11	amod	11:amod	_
+13	de	de	ADP	_	_	14	case	14:case|16:case	_
+14	pesquisa	pesquisa	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:de	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	análise	análise	NOUN	_	Gender=Fem|Number=Sing	14	conj	11:nmod:de|14:conj:e	_
+17-18	da	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	Kaspersky	Kaspersky	PROPN	_	_	14	nmod	14:nmod:de|16:nmod:de	_
+20	para	para	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	América	América	PROPN	_	_	11	nmod	11:nmod:para	_
+23	Latina	Latina	PROPN	_	_	22	flat:name	22:flat:name	SpaceAfter=No
+24	,	,	PUNCT	_	_	8	punct	8:punct	_
+25	alerta	alertar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+26	sobre	sobre	ADP	_	_	27	case	27:case	_
+27	técnicas	técnica	NOUN	_	Gender=Fem|Number=Plur	25	obl	25:obl:sobre|32:obj	_
+28	reais	real	ADJ	_	Number=Plur	27	amod	27:amod	_
+29	que	que	PRON	_	PronType=Rel	31	obj	27:ref	_
+30	golpistas	golpista	NOUN	_	Number=Plur	31	nsubj	31:nsubj|32:nsubj	_
+31	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	27	acl:relcl	27:acl:relcl	_
+32	usar	usar	VERB	_	VerbForm=Inf	31	xcomp	31:xcomp	SpaceAfter=No
+33	,	,	PUNCT	_	_	36	punct	36:punct	_
+34	como	como	ADP	_	_	36	case	36:case	_
+35	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	36:det	_
+36	redirecionamento	redirecionamento	NOUN	_	Gender=Masc|Number=Sing	27	nmod	27:nmod:como	_
+37	de	de	ADP	_	_	38	case	38:case	_
+38	chamadas	chamado	NOUN	_	Gender=Fem|Number=Plur	36	nmod	36:nmod:de	_
+39	via	via	ADP	_	_	40	case	40:case	_
+40	códigos	código	NOUN	_	Gender=Masc|Number=Plur	36	nmod	36:nmod:via	_
+41	MMI	MMI	PROPN	_	_	40	nmod	40:nmod	SpaceAfter=No
+42	.	.	PUNCT	_	_	25	punct	25:punct	_
+
+# sent_id = S0025
+# text = "Embora a história pareça exagerada, criminosos podem usar esses códigos para encaminhar chamadas da vítima para outro número, capturando tokens e OTPs, e assim assumindo o controle de contas, incluindo o WhatsApp", explica Assolini.
+1	"	"	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+2	Embora	embora	SCONJ	_	_	5	mark	5:mark	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	história	história	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj|6:nsubj	_
+5	pareça	parecer	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	advcl	9:advcl:embora	_
+6	exagerada	exagerado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	5	xcomp	5:xcomp	SpaceAfter=No
+7	,	,	PUNCT	_	_	5	punct	5:punct	_
+8	criminosos	criminoso	NOUN	_	Gender=Masc|Number=Plur	9	nsubj	9:nsubj|10:nsubj	_
+9	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	41	ccomp:speech	41:ccomp:speech	_
+10	usar	usar	VERB	_	VerbForm=Inf	9	xcomp	9:xcomp	_
+11	esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	12	det	12:det	_
+12	códigos	código	NOUN	_	Gender=Masc|Number=Plur	10	obj	10:obj	_
+13	para	para	ADP	_	_	14	mark	14:mark	_
+14	encaminhar	encaminhar	VERB	_	VerbForm=Inf	10	advcl	10:advcl:para	_
+15	chamadas	chamado	NOUN	_	Gender=Fem|Number=Plur	14	obj	14:obj	_
+16-17	da	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	vítima	vítima	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:de	_
+19	para	para	ADP	_	_	21	case	21:case	_
+20	outro	outro	DET	_	Gender=Masc|Number=Sing|PronType=Ind	21	det	21:det	_
+21	número	número	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:para	SpaceAfter=No
+22	,	,	PUNCT	_	_	23	punct	23:punct	_
+23	capturando	capturar	VERB	_	VerbForm=Ger	10	advcl	10:advcl	_
+24	tokens	token	NOUN	_	Foreign=Yes|Gender=Masc|Number=Plur	23	obj	23:obj	_
+25	e	e	CCONJ	_	_	26	cc	26:cc	_
+26	OTPs	OTPs	PROPN	_	_	24	conj	23:obj|24:conj:e	SpaceAfter=No
+27	,	,	PUNCT	_	_	30	punct	30:punct	_
+28	e	e	CCONJ	_	_	30	cc	30:cc	_
+29	assim	assim	ADV	_	_	30	advmod	30:advmod	_
+30	assumindo	assumir	VERB	_	VerbForm=Ger	23	conj	10:advcl|23:conj:e	_
+31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+32	controle	controle	NOUN	_	Gender=Masc|Number=Sing	30	obj	30:obj	_
+33	de	de	ADP	_	_	34	case	34:case	_
+34	contas	conta	NOUN	_	Gender=Fem|Number=Plur	32	nmod	32:nmod:de	SpaceAfter=No
+35	,	,	PUNCT	_	_	36	punct	36:punct	_
+36	incluindo	incluir	VERB	_	VerbForm=Ger	34	acl	34:acl	_
+37	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	38:det	_
+38	WhatsApp	WhatsApp	PROPN	_	_	36	obj	36:obj	SpaceAfter=No
+39	"	"	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+40	,	,	PUNCT	_	_	9	punct	9:punct	_
+41	explica	explicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+42	Assolini	Assolini	PROPN	_	_	41	nsubj	41:nsubj	SpaceAfter=No
+43	.	.	PUNCT	_	_	41	punct	41:punct	_
+
+# sent_id = S0027
+# text = Assolini ressalta ainda que, para evitar golpes como o SIM swap, é crucial manter a vigilância, especialmente à noite, quando os golpistas agem e a vítima demora a perceber o ocorrido.
+1	Assolini	Assolini	PROPN	_	_	2	nsubj	2:nsubj	_
+2	ressalta	ressaltar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	ainda	ainda	ADV	_	_	2	advmod	2:advmod	_
+4	que	que	SCONJ	_	_	15	mark	15:mark	SpaceAfter=No
+5	,	,	PUNCT	_	_	7	punct	7:punct	_
+6	para	para	ADP	_	_	7	mark	7:mark	_
+7	evitar	evitar	VERB	_	VerbForm=Inf	15	advcl	15:advcl:para	_
+8	golpes	golpe	NOUN	_	Gender=Masc|Number=Plur	7	obj	7:obj	_
+9	como	como	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	SIM	SIM	PROPN	_	_	8	nmod	8:nmod:como	_
+12	swap	swap	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod	SpaceAfter=No
+13	,	,	PUNCT	_	_	7	punct	7:punct	_
+14	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	15:cop	_
+15	crucial	crucial	ADJ	_	Number=Sing	2	ccomp	2:ccomp	_
+16	manter	manter	VERB	_	VerbForm=Inf	15	csubj	15:csubj	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	vigilância	vigilância	NOUN	_	Gender=Fem|Number=Sing	16	obj	16:obj	SpaceAfter=No
+19	,	,	PUNCT	_	_	23	punct	23:punct	_
+20	especialmente	especialmente	ADV	_	_	23	advmod	23:advmod	_
+21-22	à	_	_	_	_	_	_	_	_
+21	a	a	ADP	_	_	23	case	23:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	noite	noite	NOUN	_	Gender=Fem|Number=Sing	16	obl	16:obl:a|28:obl	SpaceAfter=No
+24	,	,	PUNCT	_	_	28	punct	28:punct	_
+25	quando	quando	ADV	_	_	28	advmod	23:ref	_
+26	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	27:det	_
+27	golpistas	golpista	NOUN	_	Number=Plur	28	nsubj	28:nsubj	_
+28	agem	agir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	23	acl:relcl	23:acl:relcl	_
+29	e	e	CCONJ	_	_	32	cc	32:cc	_
+30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+31	vítima	vítima	NOUN	_	Gender=Fem|Number=Sing	32	nsubj	32:nsubj|34:nsubj	_
+32	demora	demorar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	conj	23:acl:relcl|28:conj:e	_
+33	a	a	ADP	_	_	34	mark	34:mark	_
+34	perceber	perceber	VERB	_	VerbForm=Inf	32	xcomp	32:xcomp	_
+35	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	36:det	_
+36	ocorrido	ocorrido	NOUN	_	Gender=Masc|Number=Sing	34	obj	34:obj	SpaceAfter=No
+37	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0029
+# text = "O roubo do WhatsApp é especialmente preocupante, pois pode levar dias até que a conta seja recuperada", diz ele.
+1	"	"	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+2	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	roubo	roubo	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	9:nsubj	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	WhatsApp	WhatsApp	PROPN	_	_	3	nmod	3:nmod:de	_
+7	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	9:cop	_
+8	especialmente	especialmente	ADV	_	_	9	advmod	9:advmod	_
+9	preocupante	preocupante	ADJ	_	Number=Sing	23	ccomp:speech	23:ccomp:speech	SpaceAfter=No
+10	,	,	PUNCT	_	_	12	punct	12:punct	_
+11	pois	pois	SCONJ	_	_	12	mark	12:mark	_
+12	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	advcl	9:advcl:pois	_
+13	levar	levar	VERB	_	VerbForm=Inf	12	xcomp	12:xcomp	_
+14	dias	dia	NOUN	_	Gender=Masc|Number=Plur	13	obj	13:obj	_
+15	até	até	ADP	_	ExtPos=SCONJ	20	mark	20:mark	_
+16	que	que	SCONJ	_	_	15	fixed	15:fixed	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	conta	conta	NOUN	_	Gender=Fem|Number=Sing	20	nsubj:pass	20:nsubj:pass	_
+19	seja	ser	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	aux:pass	20:aux:pass	_
+20	recuperada	recuperar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	13	advcl	13:advcl:até_que	SpaceAfter=No
+21	"	"	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+22	,	,	PUNCT	_	_	9	punct	9:punct	_
+23	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+24	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	23	nsubj	23:nsubj	SpaceAfter=No
+25	.	.	PUNCT	_	_	23	punct	23:punct	_
+
+# sent_id = S0031
+# text = Portanto, mesmo que a história específica da mensagem viral seja considerada fake news, a realidade apresenta riscos sérios.
+1	Portanto	portanto	CCONJ	_	_	19	cc	19:cc	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	mesmo	mesmo	ADV	_	ExtPos=SCONJ	13	mark	13:mark	_
+4	que	que	SCONJ	_	_	3	fixed	3:fixed	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	história	história	NOUN	_	Gender=Fem|Number=Sing	13	nsubj:pass	13:nsubj:pass|14:nsubj	_
+7	específica	específico	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	mensagem	mensagem	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de	_
+11	viral	viral	ADJ	_	Number=Sing	10	amod	10:amod	_
+12	seja	ser	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux:pass	13:aux:pass	_
+13	considerada	considerar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	19	advcl	19:advcl:mesmo_que	_
+14	fake	fake	X	_	Foreign=Yes	13	xcomp	13:xcomp	_
+15	news	news	X	_	Foreign=Yes	14	flat:foreign	14:flat:foreign	SpaceAfter=No
+16	,	,	PUNCT	_	_	13	punct	13:punct	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	realidade	realidade	NOUN	_	Gender=Fem|Number=Sing	19	nsubj	19:nsubj	_
+19	apresenta	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+20	riscos	risco	NOUN	_	Gender=Masc|Number=Plur	19	obj	19:obj	_
+21	sérios	sério	ADJ	_	Gender=Masc|Number=Plur	20	amod	20:amod	SpaceAfter=No
+22	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0033
+# text = É essencial manter-se informado e cauteloso, especialmente em tempos de pandemia, quando golpes relacionados à vacinação estão se tornando cada vez mais comuns.
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	2:cop	_
+2	essencial	essencial	ADJ	_	Number=Sing	0	root	0:root	_
+3-4	manter-se	_	_	_	_	_	_	_	_
+3	manter	manter	VERB	_	VerbForm=Inf	2	csubj	2:csubj	_
+4	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	3	expl	3:expl	_
+5	informado	informado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	3	xcomp	3:xcomp	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	cauteloso	cauteloso	ADJ	_	Gender=Masc|Number=Sing	5	conj	3:xcomp|5:conj:e	SpaceAfter=No
+8	,	,	PUNCT	_	_	11	punct	11:punct	_
+9	especialmente	especialmente	ADV	_	_	11	advmod	11:advmod	_
+10	em	em	ADP	_	_	11	case	11:case	_
+11	tempos	tempo	NOUN	_	Gender=Masc|Number=Plur	3	obl	3:obl:em|23:obl	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	pandemia	pandemia	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:de	SpaceAfter=No
+14	,	,	PUNCT	_	_	23	punct	23:punct	_
+15	quando	quando	ADV	_	_	23	advmod	11:ref	_
+16	golpes	golpe	NOUN	_	Gender=Masc|Number=Plur	23	nsubj	23:nsubj|27:nsubj	_
+17	relacionados	relacionar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	16	acl	16:acl	_
+18-19	à	_	_	_	_	_	_	_	_
+18	a	a	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	vacinação	vacinação	NOUN	_	Gender=Fem|Number=Sing	17	obl	17:obl:a	_
+21	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	23	aux	23:aux	_
+22	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	23	expl	23:expl	_
+23	tornando	tornar	VERB	_	VerbForm=Ger	11	acl:relcl	11:acl:relcl	_
+24	cada	cada	DET	_	ExtPos=ADV|Number=Sing|PronType=Ind	27	advmod	27:advmod	_
+25	vez	vez	NOUN	_	Gender=Fem|Number=Sing	24	fixed	24:fixed	_
+26	mais	mais	ADV	_	_	24	fixed	24:fixed	_
+27	comuns	comum	ADJ	_	Number=Plur	23	xcomp	23:xcomp	SpaceAfter=No
+28	.	.	PUNCT	_	_	2	punct	2:punct	_

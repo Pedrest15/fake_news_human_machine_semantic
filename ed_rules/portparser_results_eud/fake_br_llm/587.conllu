@@ -1,0 +1,595 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Noruega: O Segredo das Jovens Estrelas Bilionárias Revelado!
+1	Noruega	Noruega	PROPN	_	_	0	root	0:root	SpaceAfter=No
+2	:	:	PUNCT	_	_	3	punct	3:punct	_
+3	O	O	PROPN	_	_	1	det	1:det	_
+4	Segredo	Segredo	PROPN	_	_	1	flat:name	1:flat:name	_
+5-6	das	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	7:det	_
+7	Jovens	Jovens	PROPN	_	_	3	flat:name	3:flat:name	_
+8	Estrelas	Estrelas	PROPN	_	_	3	flat:name	3:flat:name	_
+9	Bilionárias	Bilionárias	PROPN	_	_	3	flat:name	3:flat:name	_
+10	Revelado	revelar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	1	dep	1:dep	SpaceAfter=No
+11	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = A Noruega continua a surpreender o mundo ao ostentar os três bilionários mais jovens do planeta.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Noruega	Noruega	PROPN	_	_	3	nsubj	3:nsubj|5:nsubj	_
+3	continua	continuar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	a	a	ADP	_	_	5	mark	5:mark	_
+5	surpreender	surpreender	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+8-9	ao	_	_	_	_	_	_	_	_
+8	a	a	ADP	_	ExtPos=SCONJ	10	mark	10:mark	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	fixed	8:fixed	_
+10	ostentar	ostentar	VERB	_	VerbForm=Inf	3	advcl	3:advcl:a_o	_
+11	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	13:det	_
+12	três	três	NUM	_	NumType=Card	13	nummod	13:nummod	_
+13	bilionários	bilionário	NOUN	_	Gender=Masc|Number=Plur	10	obj	10:obj	_
+14	mais	mais	ADV	_	_	15	advmod	15:advmod	_
+15	jovens	jovem	ADJ	_	Number=Plur	13	amod	13:amod	_
+16-17	do	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	planeta	planeta	NOUN	_	Number=Sing	13	nmod	13:nmod:de	SpaceAfter=No
+19	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0005
+# text = O que há por trás desse fenômeno?
+1	O	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	obj	3:obj	_
+2	que	que	PRON	_	PronType=Int	1	fixed	1:fixed	_
+3	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	por	por	ADP	_	_	5	case	5:case	_
+5	trás	trás	ADV	_	_	3	advmod	3:advmod	_
+6-7	desse	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	8	det	8:det	_
+8	fenômeno	fenômeno	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:de	SpaceAfter=No
+9	?	?	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = Uma combinação de astúcia familiar, sistema educacional inovador e estratégias fiscais inteligentes.
+1	Uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	combinação	combinação	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+3	de	de	ADP	_	_	4	case	4:case|7:case|11:case	_
+4	astúcia	astúcia	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+5	familiar	familiar	ADJ	_	Number=Sing	4	amod	4:amod	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	4	conj	2:nmod:de|4:conj:e	_
+8	educacional	educacional	ADJ	_	Number=Sing	7	amod	7:amod	_
+9	inovador	inovador	ADJ	_	Gender=Masc|Number=Sing	7	amod	7:amod	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	estratégias	estratégia	NOUN	_	Gender=Fem|Number=Plur	4	conj	2:nmod:de|4:conj:e	_
+12	fiscais	fiscal	ADJ	_	Number=Plur	11	amod	11:amod	_
+13	inteligentes	inteligente	ADJ	_	Number=Plur	11	amod	11:amod	SpaceAfter=No
+14	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0009
+# text = As irmãs Alexandra Andresen, de apenas 21 anos, e Katharina Andresen, de 22, lideram a lista da Forbes com fortunas de US$ 1,2 bilhões cada, herdadas de seu pai, o magnata da Ferd.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	irmãs	irmão	NOUN	_	Gender=Fem|Number=Plur	18	nsubj	18:nsubj	_
+3	Alexandra	Alexandra	PROPN	_	_	2	nmod	2:nmod	_
+4	Andresen	Andresen	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	9	punct	9:punct	_
+6	de	de	ADP	_	_	9	case	9:case	_
+7	apenas	apenas	ADV	_	_	8	advmod	8:advmod	_
+8	21	21	NUM	_	NumType=Card	9	nummod	9:nummod	_
+9	anos	ano	NOUN	_	Gender=Masc|Number=Plur	2	nmod	2:nmod:de	SpaceAfter=No
+10	,	,	PUNCT	_	_	9	punct	9:punct	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	Katharina	Katharina	PROPN	_	_	2	conj	2:conj:e|18:nsubj	_
+13	Andresen	Andresen	PROPN	_	_	12	flat:name	12:flat:name	SpaceAfter=No
+14	,	,	PUNCT	_	_	16	punct	16:punct	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	22	22	NUM	_	NumType=Card	12	nmod	12:nmod:de	SpaceAfter=No
+17	,	,	PUNCT	_	_	16	punct	16:punct	_
+18	lideram	liderar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	lista	lista	NOUN	_	Gender=Fem|Number=Sing	18	obj	18:obj	_
+21-22	da	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	Forbes	Forbes	PROPN	_	_	20	nmod	20:nmod:de	_
+24	com	com	ADP	_	_	25	case	25:case	_
+25	fortunas	fortuna	NOUN	_	Gender=Fem|Number=Plur	20	nmod	20:nmod:com	_
+26	de	de	ADP	_	_	29	case	29:case	_
+27	US$	US$	SYM	_	_	29	nmod	29:nmod	_
+28	1,2	1,2	NUM	_	NumType=Card	29	nummod	29:nummod	_
+29	bilhões	bilhão	NOUN	_	Gender=Masc|Number=Plur	25	nmod	25:nmod:de	_
+30	cada	cada	DET	_	Number=Sing|PronType=Ind	29	amod	29:amod	SpaceAfter=No
+31	,	,	PUNCT	_	_	32	punct	32:punct	_
+32	herdadas	herdar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	25	acl	25:acl	_
+33	de	de	ADP	_	_	35	case	35:case	_
+34	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	35	det	35:det	_
+35	pai	pai	NOUN	_	Gender=Masc|Number=Sing	32	obl	32:obl:de	SpaceAfter=No
+36	,	,	PUNCT	_	_	38	punct	38:punct	_
+37	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	38:det	_
+38	magnata	magnata	NOUN	_	Gender=Masc|Number=Sing	35	appos	35:appos	_
+39-40	da	_	_	_	_	_	_	_	_
+39	de	de	ADP	_	_	41	case	41:case	_
+40	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	41:det	_
+41	Ferd	Ferd	PROPN	_	_	38	nmod	38:nmod:de	SpaceAfter=No
+42	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0011
+# text = Mas a história não para por aí.
+1	Mas	mas	CCONJ	_	_	5	cc	5:cc	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	história	história	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+4	não	não	ADV	_	_	5	advmod	5:advmod	_
+5	para	parar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	por	por	ADP	_	_	7	case	7:case	_
+7	aí	aí	ADV	_	_	5	advmod	5:advmod	SpaceAfter=No
+8	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0013
+# text = Gustav Magnar Witzoe, de 24 anos, completa o trio com uma fortuna ainda mais impressionante: US$ 1,6 bilhões, também recebida como herança do patriarca da família, dono da SalMar, gigante do salmão.
+1	Gustav	Gustav	PROPN	_	_	9	nsubj	9:nsubj	_
+2	Magnar	Magnar	PROPN	_	_	1	flat:name	1:flat:name	_
+3	Witzoe	Witzoe	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+4	,	,	PUNCT	_	_	7	punct	7:punct	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	24	24	NUM	_	NumType=Card	7	nummod	7:nummod	_
+7	anos	ano	NOUN	_	Gender=Masc|Number=Plur	1	nmod	1:nmod:de	SpaceAfter=No
+8	,	,	PUNCT	_	_	7	punct	7:punct	_
+9	completa	completar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	trio	trio	NOUN	_	Gender=Masc|Number=Sing	9	obj	9:obj	_
+12	com	com	ADP	_	_	14	case	14:case	_
+13	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	fortuna	fortuna	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:com	_
+15	ainda	ainda	ADV	_	_	17	advmod	17:advmod	_
+16	mais	mais	ADV	_	_	17	advmod	17:advmod	_
+17	impressionante	impressionante	ADJ	_	Number=Sing	14	amod	14:amod	SpaceAfter=No
+18	:	:	PUNCT	_	_	21	punct	21:punct	_
+19	US$	US$	SYM	_	_	21	nmod	21:nmod	_
+20	1,6	1,6	NUM	_	NumType=Card	21	nummod	21:nummod	_
+21	bilhões	bilhão	NOUN	_	Gender=Masc|Number=Plur	14	appos	14:appos	SpaceAfter=No
+22	,	,	PUNCT	_	_	24	punct	24:punct	_
+23	também	também	ADV	_	_	24	advmod	24:advmod	_
+24	recebida	receber	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	14	acl	14:acl	_
+25	como	como	ADP	_	_	26	case	26:case	_
+26	herança	herança	NOUN	_	Gender=Fem|Number=Sing	24	obl	24:obl:como	_
+27-28	do	_	_	_	_	_	_	_	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	29:det	_
+29	patriarca	patriarca	NOUN	_	Gender=Masc|Number=Sing	26	nmod	26:nmod:de	_
+30-31	da	_	_	_	_	_	_	_	_
+30	de	de	ADP	_	_	32	case	32:case	_
+31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	32:det	_
+32	família	família	NOUN	_	Gender=Fem|Number=Sing	29	nmod	29:nmod:de	SpaceAfter=No
+33	,	,	PUNCT	_	_	34	punct	34:punct	_
+34	dono	dono	NOUN	_	Gender=Masc|Number=Sing	29	appos	29:appos	_
+35-36	da	_	_	_	_	_	_	_	_
+35	de	de	ADP	_	_	37	case	37:case	_
+36	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	37:det	_
+37	SalMar	SalMar	PROPN	_	_	34	nmod	34:nmod:de	SpaceAfter=No
+38	,	,	PUNCT	_	_	39	punct	39:punct	_
+39	gigante	gigante	NOUN	_	Number=Sing	37	appos	37:appos	_
+40-41	do	_	_	_	_	_	_	_	_
+40	de	de	ADP	_	_	42	case	42:case	_
+41	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	42	det	42:det	_
+42	salmão	salmão	NOUN	_	Gender=Masc|Number=Sing	39	nmod	39:nmod:de	SpaceAfter=No
+43	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0015
+# text = Mas por que a Noruega se destaca tanto?
+1	Mas	mas	CCONJ	_	_	7	cc	7:cc	_
+2	por	por	ADP	_	_	3	case	3:case	_
+3	que	que	PRON	_	PronType=Rel	7	obl	7:obl:por	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	Noruega	Noruega	PROPN	_	_	7	nsubj	7:nsubj	_
+6	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	7	expl	7:expl	_
+7	destaca	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	tanto	tanto	ADV	_	_	7	advmod	7:advmod	SpaceAfter=No
+9	?	?	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0017
+# text = Especialistas apontam que além da herança generosa, fatores como a riqueza do país proveniente de reservas de petróleo e um fundo soberano colossal — o maior do mundo — criam um ambiente fértil para jovens bilionários.
+1	Especialistas	especialista	NOUN	_	Number=Plur	2	nsubj	2:nsubj	_
+2	apontam	apontar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	34	mark	34:mark	_
+4	além	além	ADV	_	_	34	advmod	34:advmod	_
+5-6	da	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	herança	herança	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:de	_
+8	generosa	generoso	ADJ	_	Gender=Fem|Number=Sing	7	amod	7:amod	SpaceAfter=No
+9	,	,	PUNCT	_	_	4	punct	4:punct	_
+10	fatores	fator	NOUN	_	Gender=Masc|Number=Plur	34	nsubj	34:nsubj	_
+11	como	como	ADP	_	_	13	case	13:case|24:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	riqueza	riqueza	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:como	_
+14-15	do	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	país	país	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod:de	_
+17	proveniente	proveniente	ADJ	_	Number=Sing	13	acl	13:acl	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	reservas	reserva	NOUN	_	Gender=Fem|Number=Plur	17	obl	17:obl:de	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	petróleo	petróleo	NOUN	_	Gender=Masc|Number=Sing	19	nmod	19:nmod:de	_
+22	e	e	CCONJ	_	_	24	cc	24:cc	_
+23	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	fundo	fundo	NOUN	_	Gender=Masc|Number=Sing	13	conj	10:nmod:como|13:conj:e	_
+25	soberano	soberano	ADJ	_	Gender=Masc|Number=Sing	24	amod	24:amod	_
+26	colossal	colossal	ADJ	_	Number=Sing	24	amod	24:amod	_
+27	—	—	PUNCT	_	_	28	punct	28:punct	_
+28	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	24	appos	24:appos	_
+29	maior	maior	ADJ	_	Number=Sing	28	amod	28:amod	_
+30-31	do	_	_	_	_	_	_	_	_
+30	de	de	ADP	_	_	32	case	32:case	_
+31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+32	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	28	nmod	28:nmod:de	_
+33	—	—	PUNCT	_	_	28	punct	28:punct	_
+34	criam	criar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	2:ccomp	_
+35	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	36	det	36:det	_
+36	ambiente	ambiente	NOUN	_	Number=Sing	34	obj	34:obj	_
+37	fértil	fértil	ADJ	_	Number=Sing	36	amod	36:amod	_
+38	para	para	ADP	_	_	39	case	39:case	_
+39	jovens	jovem	NOUN	_	Number=Plur	37	obl	37:obl:para	_
+40	bilionários	bilionário	ADJ	_	Gender=Masc|Number=Plur	39	amod	39:amod	SpaceAfter=No
+41	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0019
+# text = O segredo, segundo Oyvind Bohren, professor de Finanças da Escola de Negócios da Noruega, está na cultura de reinvenção dos negócios familiares.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	segredo	segredo	NOUN	_	Gender=Masc|Number=Sing	23	nsubj	23:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	5	punct	5:punct	_
+4	segundo	segundo	ADP	_	_	5	case	5:case	_
+5	Oyvind	Oyvind	PROPN	_	_	23	nmod	23:nmod:segundo	_
+6	Bohren	Bohren	PROPN	_	_	5	flat:name	5:flat:name	SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	8:punct	_
+8	professor	professor	NOUN	_	Gender=Masc|Number=Sing	5	appos	5:appos	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	Finanças	Finanças	PROPN	_	_	8	nmod	8:nmod:de	_
+11-12	da	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	Escola	Escola	PROPN	_	_	8	nmod	8:nmod:de	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	Negócios	Negócios	PROPN	_	_	13	flat:name	13:flat:name	_
+16-17	da	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	Noruega	Noruega	PROPN	_	_	13	flat:name	13:flat:name	SpaceAfter=No
+19	,	,	PUNCT	_	_	8	punct	8:punct	_
+20	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	cop	23:cop	_
+21-22	na	_	_	_	_	_	_	_	_
+21	em	em	ADP	_	_	23	case	23:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	cultura	cultura	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+24	de	de	ADP	_	_	25	case	25:case	_
+25	reinvenção	reinvenção	NOUN	_	Gender=Fem|Number=Sing	23	nmod	23:nmod:de	_
+26-27	dos	_	_	_	_	_	_	_	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	28:det	_
+28	negócios	negócio	NOUN	_	Gender=Masc|Number=Plur	25	nmod	25:nmod:de	_
+29	familiares	familiar	ADJ	_	Number=Plur	28	amod	28:amod	SpaceAfter=No
+30	.	.	PUNCT	_	_	23	punct	23:punct	_
+
+# sent_id = S0021
+# text = As famílias norueguesas não se contentam com o status quo.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	famílias	família	NOUN	_	Gender=Fem|Number=Plur	6	nsubj	6:nsubj	_
+3	norueguesas	norueguÃªs	ADJ	_	Gender=Fem|Number=Plur	2	amod	2:amod	_
+4	não	não	ADV	_	_	6	advmod	6:advmod	_
+5	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	6	expl	6:expl	_
+6	contentam	contentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	com	com	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	status	status	X	_	Foreign=Yes	6	obl	6:obl:com	_
+10	quo	quo	X	_	Foreign=Yes	9	flat:foreign	9:flat:foreign	SpaceAfter=No
+11	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0023
+# text = A Ferd, por exemplo, começou como uma fábrica de tabaco e hoje é um império de investimentos, comenta Bohren.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Ferd	Ferd	PROPN	_	_	7	nsubj	7:nsubj|17:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	5	punct	5:punct	_
+4	por	por	ADP	_	_	5	case	5:case	_
+5	exemplo	exemplo	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:por	SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	5:punct	_
+7	começou	começar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	21	ccomp:speech	21:ccomp:speech	_
+8	como	como	ADP	_	_	10	case	10:case	_
+9	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	fábrica	fábrica	NOUN	_	Number=Sing	7	obl	7:obl:como	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	tabaco	tabaco	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:de	_
+13	e	e	CCONJ	_	_	17	cc	17:cc	_
+14	hoje	hoje	ADV	_	_	17	advmod	17:advmod	_
+15	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	17:cop	_
+16	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	império	império	NOUN	_	Gender=Masc|Number=Sing	7	conj	7:conj:e|21:ccomp:speech	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	investimentos	investimento	NOUN	_	Gender=Masc|Number=Plur	17	nmod	17:nmod:de	SpaceAfter=No
+20	,	,	PUNCT	_	_	7	punct	7:punct	_
+21	comenta	comentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+22	Bohren	Bohren	PROPN	_	_	21	nsubj	21:nsubj	SpaceAfter=No
+23	.	.	PUNCT	_	_	21	punct	21:punct	_
+
+# sent_id = S0025
+# text = A educação norueguesa também desempenha um papel crucial.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	educação	educação	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+3	norueguesa	norueguÃªs	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	_
+4	também	também	ADV	_	_	5	advmod	5:advmod	_
+5	desempenha	desempenhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	papel	papel	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+8	crucial	crucial	ADJ	_	Number=Sing	7	amod	7:amod	SpaceAfter=No
+9	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0027
+# text = Com um sistema que valoriza a criatividade e o trabalho em equipe — ao invés de apenas notas altas —, os jovens estão preparados para inovar e gerir negócios de sucesso.
+1	Com	com	ADP	_	_	3	case	3:case	_
+2	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	26	obl	5:nsubj|26:obl:com	_
+4	que	que	PRON	_	PronType=Rel	5	nsubj	3:ref	_
+5	valoriza	valorizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	criatividade	criatividade	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+8	e	e	CCONJ	_	_	10	cc	10:cc	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	7	conj	5:obj|7:conj:e	_
+11	em	em	ADP	_	_	12	case	12:case	_
+12	equipe	equipe	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:em	_
+13	—	—	PUNCT	_	_	16	punct	16:punct	_
+14-15	ao	_	_	_	_	_	_	_	_
+14	a	a	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	invés	invés	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:a	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	apenas	apenas	ADV	_	_	19	advmod	19:advmod	_
+19	notas	nota	NOUN	_	Gender=Fem|Number=Plur	16	nmod	16:nmod:de	_
+20	altas	alto	ADJ	_	Gender=Fem|Number=Plur	19	amod	19:amod	_
+21	—	—	PUNCT	_	_	16	punct	16:punct	SpaceAfter=No
+22	,	,	PUNCT	_	_	3	punct	3:punct	_
+23	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	24:det	_
+24	jovens	jovem	NOUN	_	Number=Plur	26	nsubj	26:nsubj	_
+25	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	26	cop	26:cop	_
+26	preparados	preparado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	0	root	0:root	_
+27	para	para	ADP	_	_	28	mark	28:mark|30:mark	_
+28	inovar	inovar	VERB	_	VerbForm=Inf	26	advcl	26:advcl:para	_
+29	e	e	CCONJ	_	_	30	cc	30:cc	_
+30	gerir	gerir	VERB	_	VerbForm=Inf	28	conj	26:advcl:para|28:conj:e	_
+31	negócios	negócio	NOUN	_	Gender=Masc|Number=Plur	30	obj	30:obj	_
+32	de	de	ADP	_	_	33	case	33:case	_
+33	sucesso	sucesso	NOUN	_	Gender=Masc|Number=Sing	31	nmod	31:nmod:de	SpaceAfter=No
+34	.	.	PUNCT	_	_	26	punct	26:punct	_
+
+# sent_id = S0029
+# text = Segundo Marina Mattera, professora da Universidade Europeia de Madri, "na Noruega, há três professores para cada 30 alunos, garantindo um ensino de qualidade e personalizado".
+1	Segundo	segundo	ADP	_	_	2	case	2:case	_
+2	Marina	Marina	PROPN	_	_	18	obl	18:obl:segundo	_
+3	Mattera	Mattera	PROPN	_	_	2	flat:name	2:flat:name	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	professora	professor	NOUN	_	Gender=Fem|Number=Sing	2	appos	2:appos	_
+6-7	da	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	Universidade	Universidade	PROPN	_	_	5	nmod	5:nmod:de	_
+9	Europeia	Europeia	PROPN	_	_	8	flat:name	8:flat:name	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	Madri	Madri	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+12	,	,	PUNCT	_	_	5	punct	5:punct	_
+13	"	"	PUNCT	_	_	18	punct	18:punct	SpaceAfter=No
+14-15	na	_	_	_	_	_	_	_	_
+14	em	em	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	Noruega	Noruega	PROPN	_	_	18	obl	18:obl:em	SpaceAfter=No
+17	,	,	PUNCT	_	_	16	punct	16:punct	_
+18	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+19	três	três	NUM	_	NumType=Card	20	nummod	20:nummod	_
+20	professores	professor	NOUN	_	Gender=Masc|Number=Plur	18	obj	18:obj	_
+21	para	para	ADP	_	_	24	case	24:case	_
+22	cada	cada	DET	_	Number=Sing|PronType=Ind	24	det	24:det	_
+23	30	30	NUM	_	NumType=Card	24	nummod	24:nummod	_
+24	alunos	aluno	NOUN	_	Gender=Masc|Number=Plur	18	obl	18:obl:para	SpaceAfter=No
+25	,	,	PUNCT	_	_	26	punct	26:punct	_
+26	garantindo	garantir	VERB	_	VerbForm=Ger	18	advcl	18:advcl	_
+27	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	ensino	ensino	NOUN	_	Gender=Masc|Number=Sing	26	obj	26:obj	_
+29	de	de	ADP	_	_	30	case	30:case	_
+30	qualidade	qualidade	NOUN	_	Gender=Fem|Number=Sing	28	nmod	28:nmod:de	_
+31	e	e	CCONJ	_	_	32	cc	32:cc	_
+32	personalizado	personalizado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	30	conj	28:amod|30:conj:e	SpaceAfter=No
+33	"	"	PUNCT	_	_	18	punct	18:punct	SpaceAfter=No
+34	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0031
+# text = Outro ponto intrigante: a transferência antecipada de fortunas.
+1	Outro	outro	DET	_	Gender=Masc|Number=Sing|PronType=Ind	2	det	2:det	_
+2	ponto	ponto	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+3	intrigante	intrigante	ADJ	_	Number=Sing	2	amod	2:amod	SpaceAfter=No
+4	:	:	PUNCT	_	_	6	punct	6:punct	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	transferência	transferência	NOUN	_	Gender=Fem|Number=Sing	2	appos	2:appos	_
+7	antecipada	antecipado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	6	amod	6:amod	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	fortunas	fortuna	NOUN	_	Gender=Fem|Number=Plur	6	nmod	6:nmod:de	SpaceAfter=No
+10	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0033
+# text = José Luis Álvarez, professor de Economia da Universidade de Navarra, explica que essa prática é muitas vezes motivada por razões fiscais.
+1	José	José	PROPN	_	_	14	nsubj	14:nsubj	_
+2	Luis	Luis	PROPN	_	_	1	flat:name	1:flat:name	_
+3	Álvarez	Álvarez	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	professor	professor	NOUN	_	Gender=Masc|Number=Sing	1	appos	1:appos	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	Economia	Economia	PROPN	_	_	5	nmod	5:nmod:de	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	Universidade	Universidade	PROPN	_	_	5	nmod	5:nmod:de	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	Navarra	Navarra	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+13	,	,	PUNCT	_	_	5	punct	5:punct	_
+14	explica	explicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+15	que	que	SCONJ	_	_	21	mark	21:mark	_
+16	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	17	det	17:det	_
+17	prática	prática	NOUN	_	Gender=Fem|Number=Sing	21	nsubj:pass	21:nsubj:pass	_
+18	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	aux:pass	21:aux:pass	_
+19	muitas	muito	ADJ	_	Gender=Fem|Number=Plur	20	amod	20:amod	_
+20	vezes	vez	NOUN	_	Gender=Fem|Number=Plur	21	obl	21:obl	_
+21	motivada	motivar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	14	ccomp	14:ccomp	_
+22	por	por	ADP	_	_	23	case	23:case	_
+23	razões	razão	NOUN	_	Number=Plur	21	obl	21:obl:por	_
+24	fiscais	fiscal	ADJ	_	Number=Plur	23	amod	23:amod	SpaceAfter=No
+25	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0035
+# text = "Com impostos sobre a riqueza que incidem a partir dos 17 anos e a eliminação recente do imposto sobre heranças, faz sentido transferir fortunas cedo para otimizar a carga tributária", afirma Álvarez.
+1	"	"	PUNCT	_	_	25	punct	25:punct	SpaceAfter=No
+2	Com	com	ADP	_	_	3	case	3:case|17:case	_
+3	impostos	imposto	NOUN	_	Gender=Masc|Number=Plur	25	obl	8:nsubj|25:obl:com	_
+4	sobre	sobre	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	riqueza	riqueza	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:sobre	_
+7	que	que	PRON	_	PronType=Rel	8	nsubj	3:ref	_
+8	incidem	incidir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_
+9	a	a	ADP	_	_	10	mark	10:mark	_
+10	partir	partir	VERB	_	VerbForm=Inf	8	advcl	8:advcl:a	_
+11-12	dos	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	14	case	14:case	_
+12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	14:det	_
+13	17	17	NUM	_	NumType=Card	14	nummod	14:nummod	_
+14	anos	ano	NOUN	_	Gender=Masc|Number=Plur	10	obl	10:obl:de	_
+15	e	e	CCONJ	_	_	17	cc	17:cc	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	eliminação	eliminação	NOUN	_	Gender=Fem|Number=Sing	3	conj	3:conj:e|25:obl:com	_
+18	recente	recente	ADJ	_	Number=Sing	17	amod	17:amod	_
+19-20	do	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	imposto	imposto	NOUN	_	Gender=Masc|Number=Sing	17	nmod	17:nmod:de	_
+22	sobre	sobre	ADP	_	_	23	case	23:case	_
+23	heranças	herança	NOUN	_	Gender=Fem|Number=Plur	21	nmod	21:nmod:sobre	SpaceAfter=No
+24	,	,	PUNCT	_	_	3	punct	3:punct	_
+25	faz	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	37	ccomp:speech	37:ccomp:speech	_
+26	sentido	sentido	NOUN	_	Gender=Masc|Number=Sing	25	obj	25:obj	_
+27	transferir	transferir	VERB	_	VerbForm=Inf	25	csubj	25:csubj	_
+28	fortunas	fortuna	NOUN	_	Gender=Fem|Number=Plur	27	obj	27:obj	_
+29	cedo	cedo	ADV	_	_	27	advmod	27:advmod	_
+30	para	para	ADP	_	_	31	mark	31:mark	_
+31	otimizar	otimizar	VERB	_	VerbForm=Inf	27	advcl	27:advcl:para	_
+32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	33:det	_
+33	carga	carga	NOUN	_	Gender=Fem|Number=Sing	31	obj	31:obj	_
+34	tributária	tributário	ADJ	_	Gender=Fem|Number=Sing	33	amod	33:amod	SpaceAfter=No
+35	"	"	PUNCT	_	_	25	punct	25:punct	SpaceAfter=No
+36	,	,	PUNCT	_	_	25	punct	25:punct	_
+37	afirma	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+38	Álvarez	Álvarez	PROPN	_	_	37	nsubj	37:nsubj	SpaceAfter=No
+39	.	.	PUNCT	_	_	37	punct	37:punct	_
+
+# sent_id = S0037
+# text = As irmãs Andresen, ainda distantes do comando da Ferd, seguem seus interesses pessoais: Katharina estuda na Holanda, enquanto Alexandra se dedica ao hipismo.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	irmãs	irmo	NOUN	_	Gender=Fem|Number=Plur	14	nsubj	14:nsubj	_
+3	Andresen	Andresen	PROPN	_	_	2	nmod	2:nmod	SpaceAfter=No
+4	,	,	PUNCT	_	_	6	punct	6:punct	_
+5	ainda	ainda	ADV	_	_	6	advmod	6:advmod	_
+6	distantes	distante	ADJ	_	Number=Plur	2	amod	2:amod	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	comando	comando	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:de	_
+10-11	da	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	Ferd	Ferd	PROPN	_	_	9	nmod	9:nmod:de	SpaceAfter=No
+13	,	,	PUNCT	_	_	6	punct	6:punct	_
+14	seguem	seguir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+15	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	16	det	16:det	_
+16	interesses	interesse	NOUN	_	Gender=Masc|Number=Plur	14	obj	14:obj	_
+17	pessoais	pessoal	ADJ	_	Number=Plur	16	amod	16:amod	SpaceAfter=No
+18	:	:	PUNCT	_	_	20	punct	20:punct	_
+19	Katharina	Katharina	PROPN	_	_	20	nsubj	20:nsubj	_
+20	estuda	estudar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	parataxis	14:parataxis	_
+21-22	na	_	_	_	_	_	_	_	_
+21	em	em	ADP	_	_	23	case	23:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	Holanda	Holanda	PROPN	_	_	20	obl	20:obl:em	SpaceAfter=No
+24	,	,	PUNCT	_	_	28	punct	28:punct	_
+25	enquanto	enquanto	SCONJ	_	_	28	mark	28:mark	_
+26	Alexandra	Alexandra	PROPN	_	_	28	nsubj	28:nsubj	_
+27	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	28	expl	28:expl	_
+28	dedica	dedicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	advcl	20:advcl:enquanto	_
+29-30	ao	_	_	_	_	_	_	_	_
+29	a	a	ADP	_	_	31	case	31:case	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	hipismo	hipismo	NOUN	_	Gender=Masc|Number=Sing	28	obl	28:obl:a	SpaceAfter=No
+32	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0039
+# text = Contudo, sua igualdade acionária promete um futuro de decisões consensuais e sucesso compartilhado.
+1	Contudo	contudo	CCONJ	_	_	6	cc	6:cc	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	4	det	4:det	_
+4	igualdade	igualdade	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj	_
+5	acionária	acionário	ADJ	_	Gender=Fem|Number=Sing	4	amod	4:amod	_
+6	promete	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	futuro	futuro	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+9	de	de	ADP	_	_	10	case	10:case|13:case	_
+10	decisões	decisão	NOUN	_	Gender=Fem|Number=Plur	8	nmod	8:nmod:de	_
+11	consensuais	consensual	ADJ	_	Number=Plur	10	amod	10:amod	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	sucesso	sucesso	NOUN	_	Gender=Masc|Number=Sing	10	conj	8:nmod:de|10:conj:e	_
+14	compartilhado	compartilhado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	13	amod	13:amod	SpaceAfter=No
+15	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0041
+# text = A Noruega, líder no Índice de Desenvolvimento Humano e lar das pessoas mais felizes do mundo, mostra que seu modelo econômico e social não é apenas uma questão de sorte, mas de planejamento e valores bem estruturados.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Noruega	Noruega	PROPN	_	_	22	nsubj	22:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	líder	líder	NOUN	_	Gender=Masc|Number=Sing	2	appos	2:appos	_
+5-6	no	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Índice	Índice	PROPN	_	_	4	nmod	4:nmod:em	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	Desenvolvimento	Desenvolvimento	PROPN	_	_	7	flat:name	7:flat:name	_
+10	Humano	Humano	PROPN	_	_	7	flat:name	7:flat:name	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	lar	lar	NOUN	_	Gender=Masc|Number=Sing	4	conj	2:appos|4:conj:e	_
+13-14	das	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	15:det	_
+15	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	12	nmod	12:nmod:de	_
+16	mais	mais	ADV	_	_	17	advmod	17:advmod	_
+17	felizes	feliz	ADJ	_	Number=Plur	15	amod	15:amod	_
+18-19	do	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	17	obl	17:obl:de	SpaceAfter=No
+21	,	,	PUNCT	_	_	4	punct	4:punct	_
+22	mostra	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+23	que	que	SCONJ	_	_	33	mark	33:mark|39:mark	_
+24	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	25	det	25:det	_
+25	modelo	modelo	NOUN	_	Number=Sing	33	nsubj	33:nsubj|39:nsubj	_
+26	econômico	econômico	ADJ	_	Gender=Masc|Number=Sing	25	amod	25:amod	_
+27	e	e	CCONJ	_	_	28	cc	28:cc	_
+28	social	social	ADJ	_	Number=Sing	26	conj	25:amod|26:conj:e	_
+29	não	não	ADV	_	_	33	advmod	33:advmod	_
+30	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	33	cop	33:cop|39:cop	_
+31	apenas	apenas	ADV	_	_	33	advmod	33:advmod	_
+32	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	33	det	33:det	_
+33	questão	questão	NOUN	_	Gender=Fem|Number=Sing	22	ccomp	22:ccomp	_
+34	de	de	ADP	_	_	35	case	35:case	_
+35	sorte	sorte	NOUN	_	Gender=Fem|Number=Sing	33	nmod	33:nmod:de	SpaceAfter=No
+36	,	,	PUNCT	_	_	39	punct	39:punct	_
+37	mas	mas	CCONJ	_	_	39	cc	39:cc	_
+38	de	de	ADP	_	_	39	case	39:case	_
+39	planejamento	planejamento	NOUN	_	Gender=Masc|Number=Sing	33	conj	22:ccomp|33:conj:mas	_
+40	e	e	CCONJ	_	_	41	cc	41:cc	_
+41	valores	valor	NOUN	_	Gender=Masc|Number=Plur	39	conj	22:ccomp|39:conj:e	_
+42	bem	bem	ADV	_	_	43	advmod	43:advmod	_
+43	estruturados	estruturado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	41	amod	41:amod	SpaceAfter=No
+44	.	.	PUNCT	_	_	22	punct	22:punct	_

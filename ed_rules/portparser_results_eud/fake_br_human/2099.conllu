@@ -1,0 +1,67 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Terceira Guerra?
+1	Terceira	Terceira	PROPN	_	_	2	amod	2:amod	_
+2	Guerra	Guerra	PROPN	_	_	0	root	0:root	SpaceAfter=No
+3	?	?	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Rússia assusta o mundo e faz simulação de guerra com 40 milhões de civis.
+1	Rússia	Rússia	PROPN	_	_	2	nsubj	2:nsubj|6:nsubj	_
+2	assusta	assustar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	faz	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:e	_
+7	simulação	simulação	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	guerra	guerra	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:de	_
+10	com	com	ADP	_	_	12	case	12:case	_
+11	40	40	NUM	_	NumType=Card	12	nummod	12:nummod	_
+12	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	6	obl	6:obl:com	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	civis	civil	NOUN	_	Number=Plur	12	nmod	12:nmod:de	SpaceAfter=No
+15	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = É uma oportunidade de preparar e coordenar as forças ofensivas e defensivas de nosso país.
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+2	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	oportunidade	oportunidade	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+4	de	de	ADP	_	_	5	mark	5:mark|7:mark	_
+5	preparar	preparar	VERB	_	VerbForm=Inf	3	acl	3:acl:de	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	coordenar	coordenar	VERB	_	VerbForm=Inf	5	conj	3:acl:de|5:conj:e	_
+8	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	9:det	_
+9	forças	força	NOUN	_	Gender=Fem|Number=Plur	5	obj	5:obj|7:obj	_
+10	ofensivas	ofensivo	ADJ	_	Gender=Fem|Number=Plur	9	amod	9:amod	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	defensivas	defensivo	ADJ	_	Gender=Fem|Number=Plur	10	conj	9:amod|10:conj:e	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	nosso	nosso	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	15	det	15:det	_
+15	país	país	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:de	SpaceAfter=No
+16	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = No mundo segue havendo muitas ameaças e desafios, disse um porta-voz do presidente Wladmir Putin.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:em	_
+4	segue	seguir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	ccomp:speech	11:ccomp:speech	_
+5	havendo	haver	VERB	_	VerbForm=Ger	4	xcomp	4:xcomp	_
+6	muitas	muito	ADJ	_	Gender=Fem|Number=Plur	7	amod	7:amod	_
+7	ameaças	ameaça	NOUN	_	Gender=Fem|Number=Plur	5	obj	5:obj	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	desafios	desafio	NOUN	_	Gender=Masc|Number=Plur	7	conj	5:obj|7:conj:e	SpaceAfter=No
+10	,	,	PUNCT	_	_	4	punct	4:punct	_
+11	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	porta-voz	porta-voz	NOUN	_	Number=Sing	11	nsubj	11:nsubj	_
+14-15	do	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	presidente	presidente	NOUN	_	Number=Sing	13	nmod	13:nmod:de	_
+17	Wladmir	Wladmir	PROPN	_	_	16	nmod	16:nmod	_
+18	Putin	Putin	PROPN	_	_	17	flat:name	17:flat:name	SpaceAfter=No
+19	.	.	PUNCT	_	_	11	punct	11:punct	_

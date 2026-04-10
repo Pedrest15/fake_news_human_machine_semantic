@@ -1,0 +1,360 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = A casa caiu [ops...] A cueca caiu!
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	casa	casa	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_
+3	caiu	cair	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	[	[	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+5	ops	ops	INTJ	_	_	10	discourse	10:discourse	SpaceAfter=No
+6	...	...	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+7	]	]	PUNCT	_	_	5	punct	5:punct	_
+8	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	cueca	cueca	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	10:nsubj	_
+10	caiu	cair	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	ccomp:speech	3:ccomp:speech	SpaceAfter=No
+11	!	!	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = PGR denuncia deputado José Guimarães, aquele dos dólares na cueca.
+1	PGR	PGR	PROPN	_	_	2	nsubj	2:nsubj	_
+2	denuncia	denunciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+4	José	José	PROPN	_	_	3	nmod	3:nmod	_
+5	Guimarães	Guimarães	PROPN	_	_	4	flat:name	4:flat:name	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	aquele	aquele	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	3	appos	3:appos	_
+8-9	dos	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	10:det	_
+10	dólares	dólar	NOUN	_	Gender=Masc|Number=Plur	7	nmod	7:nmod:de	_
+11-12	na	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	cueca	cueca	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:em	SpaceAfter=No
+14	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = O Procurador Geral da República denunciou o deputado petista José Guimarães.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Procurador	Procurador	PROPN	_	_	7	nsubj	7:nsubj	_
+3	Geral	Geral	PROPN	_	_	2	flat:name	2:flat:name	_
+4-5	da	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	República	República	PROPN	_	_	2	flat:name	2:flat:name	_
+7	denunciou	denunciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+10	petista	petista	ADJ	_	Number=Sing	9	amod	9:amod	_
+11	José	José	PROPN	_	_	9	nmod	9:nmod	_
+12	Guimarães	Guimarães	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+13	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0007
+# text = De acordo com o PGR, o deputado da cueca poderá responder pelos crimes de corrupção passiva e lavagem de dinheiro.
+1	De	de	ADP	_	_	2	case	2:case	_
+2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:de	_
+3	com	com	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	PGR	PGR	PROPN	_	_	2	nmod	2:nmod:com	SpaceAfter=No
+6	,	,	PUNCT	_	_	2	punct	2:punct	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	12:nsubj|13:nsubj	_
+9-10	da	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	cueca	cueca	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	_
+12	poderá	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+13	responder	responder	VERB	_	VerbForm=Inf	12	xcomp	12:xcomp	_
+14-15	pelos	_	_	_	_	_	_	_	_
+14	por	por	ADP	_	_	16	case	16:case	_
+15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	16:det	_
+16	crimes	crime	NOUN	_	Gender=Masc|Number=Plur	13	obl	13:obl:por	_
+17	de	de	ADP	_	_	18	case	18:case|21:case	_
+18	corrupção	corrupção	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:de	_
+19	passiva	passivo	ADJ	_	Gender=Fem|Number=Sing	18	amod	18:amod	_
+20	e	e	CCONJ	_	_	21	cc	21:cc	_
+21	lavagem	lavagem	NOUN	_	Gender=Fem|Number=Sing	18	conj	16:nmod:de|18:conj:e	_
+22	de	de	ADP	_	_	23	case	23:case	_
+23	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	21	nmod	21:nmod:de	SpaceAfter=No
+24	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0009
+# text = Janot pediu a suspensão do mandato e o pagamento de R$ 1 milhão a título de multa.
+1	Janot	Janot	PROPN	_	_	2	nsubj	2:nsubj	_
+2	pediu	pedir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	suspensão	suspensão	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	mandato	mandato	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:de	_
+8	e	e	CCONJ	_	_	10	cc	10:cc	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	pagamento	pagamento	NOUN	_	Gender=Masc|Number=Sing	4	conj	2:obj|4:conj:e	_
+11	de	de	ADP	_	_	14	case	14:case	_
+12	R$	R$	SYM	_	_	14	nmod	14:nmod	_
+13	1	1	NUM	_	NumType=Card	14	nummod	14:nummod	_
+14	milhão	milhão	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:de	_
+15	a	a	ADP	_	_	16	case	16:case	_
+16	título	título	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:a	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	multa	multa	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:de	SpaceAfter=No
+19	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0011
+# text = O inquérito surgiu a partir da delação do ex-vereador petista Alexandre Romano, o Chambinho.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	inquérito	inquérito	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	surgiu	surgir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	a	a	ADP	_	_	5	mark	5:mark	_
+5	partir	partir	VERB	_	VerbForm=Inf	3	advcl	3:advcl:a	_
+6-7	da	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	delação	delação	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:de	_
+9-10	do	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	ex-vereador	ex-vereador	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:de	_
+12	petista	petista	ADJ	_	Number=Sing	11	amod	11:amod	_
+13	Alexandre	Alexandre	PROPN	_	_	11	nmod	11:nmod	_
+14	Romano	Romano	PROPN	_	_	13	flat:name	13:flat:name	SpaceAfter=No
+15	,	,	PUNCT	_	_	17	punct	17:punct	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	Chambinho	Chambinho	PROPN	_	_	11	appos	11:appos	SpaceAfter=No
+18	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0013
+# text = Guimarães é acusado de ter recebido propina para a liberação de empréstimos do Banco do Nordeste.
+1	Guimarães	Guimarães	PROPN	_	_	3	nsubj:pass	3:nsubj:pass|6:nsubj	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:pass	3:aux:pass	_
+3	acusado	acusar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+4	de	de	ADP	_	_	6	mark	6:mark	_
+5	ter	ter	AUX	_	VerbForm=Inf	6	aux	6:aux	_
+6	recebido	receber	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	3	xcomp	3:xcomp	_
+7	propina	propina	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+8	para	para	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	liberação	liberação	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:para	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	empréstimos	empréstimo	NOUN	_	Gender=Masc|Number=Plur	10	nmod	10:nmod:de	_
+13-14	do	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	Banco	Banco	PROPN	_	_	12	nmod	12:nmod:de	_
+16-17	do	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	Nordeste	Nordeste	PROPN	_	_	15	flat:name	15:flat:name	SpaceAfter=No
+19	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0015
+# text = Em 2005, o Assessor do deputado petista José Guimarães, José Adalberto Vieira, foi preso no aeroporto de Congonhas, em São Paulo, com 100.000 dólares na cueca, além de outros 209.000 reais guardados em uma maleta.
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	2005	2005	NUM	_	NumType=Card	18	obl	18:obl:em	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	Assessor	Assessor	PROPN	_	_	18	nsubj:pass	18:nsubj:pass	_
+6-7	do	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:de	_
+9	petista	petista	ADJ	_	Number=Sing	8	amod	8:amod	_
+10	José	José	PROPN	_	_	8	nmod	8:nmod	_
+11	Guimarães	Guimarães	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	José	José	PROPN	_	_	5	appos	5:appos	_
+14	Adalberto	Adalberto	PROPN	_	_	13	flat:name	13:flat:name	_
+15	Vieira	Vieira	PROPN	_	_	13	flat:name	13:flat:name	SpaceAfter=No
+16	,	,	PUNCT	_	_	13	punct	13:punct	_
+17	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	aux:pass	18:aux:pass	_
+18	preso	prender	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+19-20	no	_	_	_	_	_	_	_	_
+19	em	em	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	aeroporto	aeroporto	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:em	_
+22	de	de	ADP	_	_	23	case	23:case	_
+23	Congonhas	Congonhas	PROPN	_	_	21	nmod	21:nmod:de	SpaceAfter=No
+24	,	,	PUNCT	_	_	26	punct	26:punct	_
+25	em	em	ADP	_	_	26	case	26:case	_
+26	São	São	PROPN	_	_	21	nmod	21:nmod:em	_
+27	Paulo	Paulo	PROPN	_	_	26	flat:name	26:flat:name	SpaceAfter=No
+28	,	,	PUNCT	_	_	31	punct	31:punct	_
+29	com	com	ADP	_	_	31	case	31:case	_
+30	100.000	100.000	NUM	_	NumType=Card	31	nummod	31:nummod	_
+31	dólares	dólar	NOUN	_	Gender=Masc|Number=Plur	18	obl	18:obl:com	_
+32-33	na	_	_	_	_	_	_	_	_
+32	em	em	ADP	_	_	34	case	34:case	_
+33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	34:det	_
+34	cueca	cueca	NOUN	_	Gender=Fem|Number=Sing	31	nmod	31:nmod:em	SpaceAfter=No
+35	,	,	PUNCT	_	_	36	punct	36:punct	_
+36	além	além	ADV	_	_	31	advmod	31:advmod	_
+37	de	de	ADP	_	_	40	case	40:case	_
+38	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	40	det	40:det	_
+39	209.000	209.000	NUM	_	NumType=Card	40	nummod	40:nummod	_
+40	reais	real	NOUN	_	Gender=Masc|Number=Plur	36	obl	36:obl:de	_
+41	guardados	guardar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	40	acl	40:acl	_
+42	em	em	ADP	_	_	44	case	44:case	_
+43	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	44	det	44:det	_
+44	maleta	maleta	NOUN	_	Gender=Fem|Number=Sing	41	obl	41:obl:em	SpaceAfter=No
+45	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0017
+# text = O funcionário viajaria para Fortaleza, berço eleitoral do petista.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	funcionário	funcionário	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	viajaria	viajar	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+4	para	para	ADP	_	_	5	case	5:case	_
+5	Fortaleza	Fortaleza	PROPN	_	_	3	obl	3:obl:para	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	berço	berço	NOUN	_	Gender=Masc|Number=Sing	5	appos	5:appos	_
+8	eleitoral	eleitoral	ADJ	_	Number=Sing	7	amod	7:amod	_
+9-10	do	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	petista	petista	NOUN	_	Number=Sing	7	nmod	7:nmod:de	SpaceAfter=No
+12	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0019
+# text = De acordo com o MP, os dólares eram uma propina que Guimarães iria receber por intermediar um financiamento entre um consórcio de energia e o Banco do Nordeste do Brasil.
+1	De	de	ADP	_	_	2	case	2:case	_
+2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:de	_
+3	com	com	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	MP	MP	PROPN	_	_	2	nmod	2:nmod:com	SpaceAfter=No
+6	,	,	PUNCT	_	_	2	punct	2:punct	_
+7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	8:det	_
+8	dólares	dólar	NOUN	_	Gender=Masc|Number=Plur	11	nsubj	11:nsubj	_
+9	eram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	11	cop	11:cop	_
+10	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	propina	propina	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root|15:obj	_
+12	que	que	PRON	_	PronType=Rel	15	obj	11:ref	_
+13	Guimarães	Guimarães	PROPN	_	_	15	nsubj	15:nsubj	_
+14	iria	ir	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	15	aux	15:aux	_
+15	receber	receber	VERB	_	VerbForm=Inf	11	acl:relcl	11:acl:relcl	_
+16	por	por	ADP	_	_	17	mark	17:mark	_
+17	intermediar	intermediar	VERB	_	VerbForm=Inf	15	advcl	15:advcl:por	_
+18	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	financiamento	financiamento	NOUN	_	Gender=Masc|Number=Sing	17	obj	17:obj	_
+20	entre	entre	ADP	_	_	22	case	22:case	_
+21	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	consórcio	consórcio	NOUN	_	Gender=Masc|Number=Sing	19	nmod	19:nmod:entre	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	energia	energia	NOUN	_	Gender=Fem|Number=Sing	22	nmod	22:nmod:de	_
+25	e	e	CCONJ	_	_	27	cc	27:cc	_
+26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	Banco	Banco	PROPN	_	_	22	conj	19:nmod:entre|22:conj:e	_
+28-29	do	_	_	_	_	_	_	_	_
+28	de	de	ADP	_	_	30	case	30:case	_
+29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	30:det	_
+30	Nordeste	Nordeste	PROPN	_	_	27	flat:name	27:flat:name	_
+31-32	do	_	_	_	_	_	_	_	_
+31	de	de	ADP	_	_	33	case	33:case	_
+32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	33:det	_
+33	Brasil	Brasil	PROPN	_	_	27	flat:name	27:flat:name	SpaceAfter=No
+34	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0021
+# text = A Justiça, porém, livrou o líder do governo do processo em 2012, sob o argumento de que não havia elementos que ligassem o deputado ao dinheiro apreendido com o assessor.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Justiça	Justiça	PROPN	_	_	6	nsubj	6:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	porém	porém	CCONJ	_	_	6	cc	6:cc	SpaceAfter=No
+5	,	,	PUNCT	_	_	4	punct	4:punct	_
+6	livrou	livrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	líder	líder	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+9-10	do	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	governo	governo	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:de	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	processo	processo	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:de	_
+15	em	em	ADP	_	_	16	case	16:case	_
+16	2012	2012	NUM	_	NumType=Card	14	nmod	14:nmod:em	SpaceAfter=No
+17	,	,	PUNCT	_	_	20	punct	20:punct	_
+18	sob	sob	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	argumento	argumento	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:sob	_
+21	de	de	ADP	_	ExtPos=SCONJ	24	mark	24:mark	_
+22	que	que	SCONJ	_	_	21	fixed	21:fixed	_
+23	não	não	ADV	_	_	24	advmod	24:advmod	_
+24	havia	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	20	acl	20:acl:de_que	_
+25	elementos	elemento	NOUN	_	Gender=Masc|Number=Plur	24	obj	24:obj|27:nsubj	_
+26	que	que	PRON	_	PronType=Rel	27	nsubj	25:ref	_
+27	ligassem	ligar	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	25	acl:relcl	25:acl:relcl	_
+28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	29:det	_
+29	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	27	obj	27:obj	_
+30-31	ao	_	_	_	_	_	_	_	_
+30	a	a	ADP	_	_	32	case	32:case	_
+31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+32	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	27	obl	27:obl:a	_
+33	apreendido	apreender	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	32	acl	32:acl	_
+34	com	com	ADP	_	_	36	case	36:case	_
+35	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	36:det	_
+36	assessor	assessor	NOUN	_	Gender=Masc|Number=Sing	33	obl	33:obl:com	SpaceAfter=No
+37	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0023
+# text = DETALHE: José Guimarães, orgulho do PT do Ceará, também é líder do governo na Câmara e, como se não bastasse, irmão do ex-presidente do PT, José Genoíno, condenado por corrupção ativa no processo do mensalão.
+1	DETALHE	DETALHE	PROPN	_	_	16	nsubj	16:nsubj|30:nsubj	SpaceAfter=No
+2	:	:	PUNCT	_	_	1	punct	1:punct	_
+3	José	José	PROPN	_	_	16	nsubj	16:nsubj|30:nsubj	_
+4	Guimarães	Guimarães	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	orgulho	orgulho	NOUN	_	Gender=Masc|Number=Sing	3	appos	3:appos	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	PT	PT	PROPN	_	_	6	nmod	6:nmod:de	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	Ceará	Ceará	PROPN	_	_	9	nmod	9:nmod:de	SpaceAfter=No
+13	,	,	PUNCT	_	_	6	punct	6:punct	_
+14	também	também	ADV	_	_	16	advmod	16:advmod	_
+15	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	16:cop|30:cop	_
+16	líder	líder	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+17-18	do	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	governo	governo	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod:de	_
+20-21	na	_	_	_	_	_	_	_	_
+20	em	em	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	Câmara	Câmara	PROPN	_	_	16	nmod	16:nmod:em	_
+23	e	e	CCONJ	_	_	30	cc	30:cc	SpaceAfter=No
+24	,	,	PUNCT	_	_	28	punct	28:punct	_
+25	como	como	SCONJ	_	ExtPos=SCONJ	28	mark	28:mark	_
+26	se	se	SCONJ	_	_	25	fixed	25:fixed	_
+27	não	não	ADV	_	_	28	advmod	28:advmod	_
+28	bastasse	bastar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	30	advcl	30:advcl:como_se	SpaceAfter=No
+29	,	,	PUNCT	_	_	28	punct	28:punct	_
+30	irmão	irmão	NOUN	_	Gender=Masc|Number=Sing	16	conj	16:conj:e	_
+31-32	do	_	_	_	_	_	_	_	_
+31	de	de	ADP	_	_	33	case	33:case	_
+32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	33:det	_
+33	ex-presidente	ex-presidente	NOUN	_	Number=Sing	30	nmod	30:nmod:de	_
+34-35	do	_	_	_	_	_	_	_	_
+34	de	de	ADP	_	_	36	case	36:case	_
+35	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	36:det	_
+36	PT	PT	PROPN	_	_	33	nmod	33:nmod:de	SpaceAfter=No
+37	,	,	PUNCT	_	_	38	punct	38:punct	_
+38	José	José	PROPN	_	_	33	appos	33:appos	_
+39	Genoíno	Genoíno	PROPN	_	_	38	flat:name	38:flat:name	SpaceAfter=No
+40	,	,	PUNCT	_	_	38	punct	38:punct	_
+41	condenado	condenar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	33	acl	33:acl	_
+42	por	por	ADP	_	_	43	case	43:case	_
+43	corrupção	corrupção	NOUN	_	Gender=Fem|Number=Sing	41	obl	41:obl:por	_
+44	ativa	ativo	ADJ	_	Gender=Fem|Number=Sing	43	amod	43:amod	_
+45-46	no	_	_	_	_	_	_	_	_
+45	em	em	ADP	_	_	47	case	47:case	_
+46	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	det	47:det	_
+47	processo	processo	NOUN	_	Gender=Masc|Number=Sing	41	obl	41:obl:em	_
+48-49	do	_	_	_	_	_	_	_	_
+48	de	de	ADP	_	_	50	case	50:case	_
+49	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	50	det	50:det	_
+50	mensalão	mensalão	NOUN	_	Gender=Masc|Number=Sing	47	nmod	47:nmod:de	SpaceAfter=No
+51	.	.	PUNCT	_	_	16	punct	16:punct	_

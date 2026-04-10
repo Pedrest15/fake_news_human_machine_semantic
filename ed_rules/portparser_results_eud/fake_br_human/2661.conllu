@@ -1,0 +1,128 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Cardozo coloca as manguinhas de fora no senado e Magno Malta solta o verbo.
+1	Cardozo	Cardozo	PROPN	_	_	2	nsubj	2:nsubj	_
+2	coloca	colocar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	4:det	_
+4	manguinhas	manguinho	NOUN	_	Gender=Fem|Number=Plur	2	obj	2:obj	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	fora	fora	ADV	_	_	4	advmod	4:advmod	_
+7-8	no	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	senado	senado	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:em	_
+10	e	e	CCONJ	_	_	13	cc	13:cc	_
+11	Magno	Magno	PROPN	_	_	13	nsubj	13:nsubj	_
+12	Malta	Malta	PROPN	_	_	11	flat:name	11:flat:name	_
+13	solta	soltar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:e	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	verbo	verbo	NOUN	_	Gender=Masc|Number=Sing	13	obj	13:obj	SpaceAfter=No
+16	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Cardozão se acostumou tanto com o senado, que já se acha no direito de dar ordens.
+1	Cardozão	Cardozão	PROPN	_	_	3	nsubj	3:nsubj	_
+2	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	3	expl	3:expl	_
+3	acostumou	acostumar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	tanto	tanto	ADV	_	_	3	advmod	3:advmod	_
+5	com	com	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	senado	senado	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:com	SpaceAfter=No
+8	,	,	PUNCT	_	_	12	punct	12:punct	_
+9	que	que	SCONJ	_	_	12	mark	12:mark	_
+10	já	já	ADV	_	_	12	advmod	12:advmod	_
+11	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	12	expl	12:expl	_
+12	acha	achar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	advcl	3:advcl:que	_
+13-14	no	_	_	_	_	_	_	_	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	direito	direito	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:em	_
+16	de	de	ADP	_	_	17	mark	17:mark	_
+17	dar	dar	VERB	_	VerbForm=Inf	15	acl	15:acl:de	_
+18	ordens	ordem	NOUN	_	Gender=Fem|Number=Plur	17	obj	17:obj	SpaceAfter=No
+19	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0005
+# text = É uma piada pronta!
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+2	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	piada	piada	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+4	pronta	pronto	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	SpaceAfter=No
+5	!	!	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = O advogado que dizer pra mim que eu não posso contraditar?
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	advogado	advogado	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root|4:nsubj	_
+3	que	que	PRON	_	PronType=Rel	4	nsubj	2:ref	_
+4	dizer	dizer	VERB	_	VerbForm=Inf	2	acl:relcl	2:acl:relcl	_
+5	pra	para	ADP	_	_	6	case	6:case	_
+6	mim	mim	PRON	_	Case=Dat|Number=Sing|Person=1|PronType=Prs	4	obl	4:obl:para	_
+7	que	que	SCONJ	_	_	10	mark	10:mark	_
+8	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	10	nsubj	10:nsubj|11:nsubj	_
+9	não	não	ADV	_	_	10	advmod	10:advmod	_
+10	posso	poder	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	ccomp	4:ccomp	_
+11	contraditar	contraditar	VERB	_	VerbForm=Inf	10	xcomp	10:xcomp	SpaceAfter=No
+12	?	?	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0009
+# text = Aí virou brincadeira" disse Magno Malta se referindo ao advogado José Cardoso "Eles podem tudo!
+1	Aí	aí	ADV	_	_	2	advmod	2:advmod	_
+2	virou	virar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	ccomp:speech	5:ccomp:speech	_
+3	brincadeira	brincadeira	NOUN	_	Gender=Fem|Number=Sing	2	xcomp	2:xcomp	SpaceAfter=No
+4	"	"	PUNCT	_	_	2	punct	2:punct	_
+5	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	Magno	Magno	PROPN	_	_	5	nsubj	5:nsubj	_
+7	Malta	Malta	PROPN	_	_	6	flat:name	6:flat:name	_
+8	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	9	expl	9:expl	_
+9	referindo	referir	VERB	_	VerbForm=Ger	5	advcl	5:advcl	_
+10-11	ao	_	_	_	_	_	_	_	_
+10	a	a	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	advogado	advogado	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:a	_
+13	José	José	PROPN	_	_	12	nmod	12:nmod	_
+14	Cardoso	Cardoso	PROPN	_	_	13	flat:name	13:flat:name	_
+15	"	"	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+16	Eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	17	nsubj	17:nsubj	_
+17	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	ccomp:speech	5:ccomp:speech	_
+18	tudo	tudo	PRON	_	PronType=Ind	17	obj	17:obj	SpaceAfter=No
+19	!	!	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0011
+# text = Ninguém pode nada!
+1	Ninguém	ninguém	PRON	_	Number=Sing|PronType=Ind	2	nsubj	2:nsubj	_
+2	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	nada	nada	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	2	obj	2:obj	SpaceAfter=No
+4	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0013
+# text = É um absurdo!
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+2	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	absurdo	absurdo	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+4	!	!	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0015
+# text = "Eu sou senador e estou aqui com o voto do povo" assista no vídeo abaixo:
+1	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+2	Eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	4:nsubj|7:nsubj	_
+3	sou	ser	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+4	senador	senador	NOUN	_	Gender=Masc|Number=Sing	15	ccomp:speech	15:ccomp:speech	_
+5	e	e	CCONJ	_	_	7	cc	7:cc	_
+6	estou	estar	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+7	aqui	aqui	ADV	_	_	4	conj	4:conj:e|15:ccomp:speech	_
+8	com	com	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	voto	voto	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:com	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	povo	povo	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:de	SpaceAfter=No
+14	"	"	PUNCT	_	_	4	punct	4:punct	_
+15	assista	assistir	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+16-17	no	_	_	_	_	_	_	_	_
+16	em	em	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	15	obl	15:obl:em	_
+19	abaixo	abaixo	ADV	_	_	18	advmod	18:advmod	SpaceAfter=No
+20	:	:	PUNCT	_	_	15	punct	15:punct	_

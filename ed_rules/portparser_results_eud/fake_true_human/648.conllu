@@ -1,0 +1,89 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = flávio bolsonaro comprou mansão de r$ 1 milhões em ilha comprida (rj) depois de uma mansão em brasília de 6 milhões, que valer o dobro.
+1	flávio	flávio	PROPN	_	_	3	nsubj	3:nsubj	_
+2	bolsonaro	bolsonaro	NOUN	_	_	1	nmod	1:nmod	_
+3	comprou	comprar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	mansão	mansão	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+5	de	de	ADP	_	_	8	case	8:case	_
+6	r$	r$	SYM	_	_	8	nmod	8:nmod	_
+7	1	1	NUM	_	NumType=Card	8	nummod	8:nummod	_
+8	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	4	nmod	4:nmod:de	_
+9	em	em	ADP	_	_	10	case	10:case	_
+10	ilha	ilha	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:em	_
+11	comprida	comprido	ADJ	_	Gender=Fem|Number=Sing	10	amod	10:amod	_
+12	(	(	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+13	rj	rj	NOUN	_	_	10	parataxis	10:parataxis	SpaceAfter=No
+14	)	)	PUNCT	_	_	13	punct	13:punct	_
+15	depois	depois	ADV	_	_	3	advmod	3:advmod	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	mansão	mansão	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl:de|26:nsubj	_
+19	em	em	ADP	_	_	20	case	20:case	_
+20	brasília	brasília	NOUN	_	Gender=Fem|Number=Sing	18	nmod	18:nmod:em	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	6	6	NUM	_	NumType=Card	23	nummod	23:nummod	_
+23	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	18	nmod	18:nmod:de	SpaceAfter=No
+24	,	,	PUNCT	_	_	26	punct	26:punct	_
+25	que	que	PRON	_	PronType=Rel	26	nsubj	18:ref	_
+26	valer	valer	VERB	_	VerbForm=Inf	18	acl:relcl	18:acl:relcl	_
+27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	dobro	dobro	NOUN	_	Gender=Masc|Number=Sing	26	obj	26:obj	SpaceAfter=No
+29	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = comprou mais uma mansãozinha de 1 milhões.
+1	comprou	comprar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	mais	mais	ADV	_	_	3	advmod	3:advmod	_
+3	uma	um	NUM	_	Gender=Fem|NumType=Card	4	nummod	4:nummod	_
+4	mansãozinha	mansãozinha	NOUN	_	Gender=Fem|Number=Sing	1	obj	1:obj	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	1	1	NUM	_	NumType=Card	7	nummod	7:nummod	_
+7	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	4	nmod	4:nmod:de	SpaceAfter=No
+8	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0005
+# text = flávio bolsonaro foi arrolado como testemunha numa disputa judicial pela posse de uma mansão de r$ 1 milhões na paradisíaca ilha comprida, em angra dos reis, no rio de janeiro.
+1	flávio	flávio	NOUN	_	_	4	nsubj:pass	4:nsubj:pass	_
+2	bolsonaro	bolsonaro	NOUN	_	_	1	nmod	1:nmod	_
+3	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	arrolado	arrolar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5	como	como	ADP	_	_	6	case	6:case	_
+6	testemunha	testemunha	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:como	_
+7-8	numa	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	disputa	disputa	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:em	_
+10	judicial	judicial	ADJ	_	Number=Sing	9	amod	9:amod	_
+11-12	pela	_	_	_	_	_	_	_	_
+11	por	por	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	posse	posse	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:por	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	mansão	mansão	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:de	_
+17	de	de	ADP	_	_	20	case	20:case	_
+18	r$	r$	SYM	_	_	20	nmod	20:nmod	_
+19	1	1	NUM	_	NumType=Card	20	nummod	20:nummod	_
+20	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	16	nmod	16:nmod:de	_
+21-22	na	_	_	_	_	_	_	_	_
+21	em	em	ADP	_	_	24	case	24:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+23	paradisíaca	paradisíaco	ADJ	_	Gender=Fem|Number=Sing	24	amod	24:amod	_
+24	ilha	ilha	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:em	_
+25	comprida	comprido	ADJ	_	Gender=Fem|Number=Sing	24	amod	24:amod	SpaceAfter=No
+26	,	,	PUNCT	_	_	28	punct	28:punct	_
+27	em	em	ADP	_	_	28	case	28:case	_
+28	angra	angra	NOUN	_	Gender=Fem|Number=Sing	24	nmod	24:nmod:em	_
+29-30	dos	_	_	_	_	_	_	_	_
+29	de	de	ADP	_	_	31	case	31:case	_
+30	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	31	det	31:det	_
+31	reis	rei	NOUN	_	Gender=Masc|Number=Plur	28	nmod	28:nmod:de	SpaceAfter=No
+32	,	,	PUNCT	_	_	35	punct	35:punct	_
+33-34	no	_	_	_	_	_	_	_	_
+33	em	em	ADP	_	_	35	case	35:case	_
+34	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	35:det	_
+35	rio	rio	NOUN	_	Gender=Masc|Number=Sing	24	nmod	24:nmod:em	_
+36	de	de	ADP	_	_	37	case	37:case	_
+37	janeiro	janeiro	NOUN	_	Gender=Masc|Number=Sing	35	nmod	35:nmod:de	SpaceAfter=No
+38	.	.	PUNCT	_	_	4	punct	4:punct	_

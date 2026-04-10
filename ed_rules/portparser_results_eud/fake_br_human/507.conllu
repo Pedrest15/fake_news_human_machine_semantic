@@ -1,0 +1,187 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = PEC do Diploma: Projeto poderá barrar candidatos que não tiverem curso superior.
+1	PEC	PEC	PROPN	_	_	7	nsubj	7:nsubj|8:nsubj	_
+2-3	do	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	Diploma	Diploma	PROPN	_	_	1	nmod	1:nmod:de	SpaceAfter=No
+5	:	:	PUNCT	_	_	1	punct	1:punct	_
+6	Projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj|8:nsubj	_
+7	poderá	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+8	barrar	barrar	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+9	candidatos	candidato	NOUN	_	Gender=Masc|Number=Plur	8	obj	8:obj|12:nsubj	_
+10	que	que	PRON	_	PronType=Rel	12	nsubj	9:ref	_
+11	não	não	ADV	_	_	12	advmod	12:advmod	_
+12	tiverem	ter	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	9	acl:relcl	9:acl:relcl	_
+13	curso	curso	NOUN	_	Gender=Masc|Number=Sing	12	obj	12:obj	_
+14	superior	superior	ADJ	_	Number=Sing	13	amod	13:amod	SpaceAfter=No
+15	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0003
+# text = Uma proposta de emenda à Constituição poderá acabar de vez com o oportunismo dos candidatos que não possuem estudo "adequado".
+1	Uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	proposta	proposta	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	8:nsubj|9:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	emenda	emenda	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+5-6	à	_	_	_	_	_	_	_	_
+5	a	a	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	Constituição	Constituição	PROPN	_	_	4	nmod	4:nmod:a	_
+8	poderá	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+9	acabar	acabar	VERB	_	VerbForm=Inf	8	xcomp	8:xcomp	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	vez	vez	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:de	_
+12	com	com	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	oportunismo	oportunismo	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:com	_
+15-16	dos	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	17:det	_
+17	candidatos	candidato	NOUN	_	Gender=Masc|Number=Plur	14	nmod	14:nmod:de|20:nsubj	_
+18	que	que	PRON	_	PronType=Rel	20	nsubj	17:ref	_
+19	não	não	ADV	_	_	20	advmod	20:advmod	_
+20	possuem	possuir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	acl:relcl	17:acl:relcl	_
+21	estudo	estudo	NOUN	_	Gender=Masc|Number=Sing	20	obj	20:obj	_
+22	"	"	PUNCT	_	_	23	punct	23:punct	SpaceAfter=No
+23	adequado	adequado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	21	amod	21:amod	SpaceAfter=No
+24	"	"	PUNCT	_	_	23	punct	23:punct	SpaceAfter=No
+25	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0005
+# text = A proposta foi apresentada pelo deputado Irajá Abreu (PSD-TO) e foi assinada por 190 deputados.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	proposta	proposta	NOUN	_	Gender=Fem|Number=Sing	4	nsubj:pass	4:nsubj:pass|15:nsubj:pass	_
+3	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	apresentada	apresentar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5-6	pelo	_	_	_	_	_	_	_	_
+5	por	por	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	4	obl:agent	4:obl:agent	_
+8	Irajá	Irajá	PROPN	_	_	7	nmod	7:nmod	_
+9	Abreu	Abreu	PROPN	_	_	8	flat:name	8:flat:name	_
+10	(	(	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+11	PSD-TO	PSD-TO	PROPN	_	_	7	parataxis	7:parataxis	SpaceAfter=No
+12	)	)	PUNCT	_	_	11	punct	11:punct	_
+13	e	e	CCONJ	_	_	15	cc	15:cc	_
+14	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	aux:pass	15:aux:pass	_
+15	assinada	assinar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	4	conj	4:conj:e	_
+16	por	por	ADP	_	_	18	case	18:case	_
+17	190	190	NUM	_	NumType=Card	18	nummod	18:nummod	_
+18	deputados	deputado	NOUN	_	Gender=Masc|Number=Plur	15	obl:agent	15:obl:agent	SpaceAfter=No
+19	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0007
+# text = Nove petistas também assinaram o texto.
+1	Nove	nove	NUM	_	NumType=Card	2	nummod	2:nummod	_
+2	petistas	petista	NOUN	_	Number=Plur	4	nsubj	4:nsubj	_
+3	também	também	ADV	_	_	4	advmod	4:advmod	_
+4	assinaram	assinar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	texto	texto	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	SpaceAfter=No
+7	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0009
+# text = Irajá [que é filho da ex-ministra da Agricultura, Kátia Abreu] pretende estabelecer um patamar superior para os representantes do povo.
+1	Irajá	Irajá	PROPN	_	_	16	nsubj	5:nsubj|16:nsubj|17:nsubj	_
+2	[	[	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+3	que	que	PRON	_	PronType=Rel	5	nsubj	1:ref	_
+4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+5	filho	filho	NOUN	_	Gender=Masc|Number=Sing	1	acl:relcl	1:acl:relcl	_
+6-7	da	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	ex-ministra	ex-ministra	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	_
+9-10	da	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	Agricultura	Agricultura	PROPN	_	_	8	nmod	8:nmod:de	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	Kátia	Kátia	PROPN	_	_	8	appos	8:appos	_
+14	Abreu	Abreu	PROPN	_	_	13	flat:name	13:flat:name	SpaceAfter=No
+15	]	]	PUNCT	_	_	5	punct	5:punct	_
+16	pretende	pretender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+17	estabelecer	estabelecer	VERB	_	VerbForm=Inf	16	xcomp	16:xcomp	_
+18	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	patamar	patamar	NOUN	_	Gender=Masc|Number=Sing	17	obj	17:obj	_
+20	superior	superior	ADJ	_	Number=Sing	19	amod	19:amod	_
+21	para	para	ADP	_	_	23	case	23:case	_
+22	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	23:det	_
+23	representantes	representante	NOUN	_	Number=Plur	17	obl	17:obl:para	_
+24-25	do	_	_	_	_	_	_	_	_
+24	de	de	ADP	_	_	26	case	26:case	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	povo	povo	NOUN	_	Gender=Masc|Number=Sing	23	nmod	23:nmod:de	SpaceAfter=No
+27	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0011
+# text = O projeto abre uma exceção para políticos sem graduação: Quem já é senador, vereador ou deputado federal, estadual ou distrital e não possui ensino superior poderia se candidatar novamente ao mesmo cargo.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	abre	abrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	exceção	exceção	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+6	para	para	ADP	_	_	7	case	7:case	_
+7	políticos	político	NOUN	_	Gender=Masc|Number=Plur	3	obl	3:obl:para	_
+8	sem	sem	ADP	_	_	9	case	9:case	_
+9	graduação	graduação	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:sem	SpaceAfter=No
+10	:	:	PUNCT	_	_	29	punct	29:punct	_
+11	Quem	quem	PRON	_	PronType=Ind	29	nsubj	29:nsubj|31:nsubj	_
+12	já	já	ADV	_	_	14	advmod	14:advmod	_
+13	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	14:cop|16:cop|18:cop|21:cop|23:cop	_
+14	senador	senador	NOUN	_	Gender=Masc|Number=Sing	11	acl:relcl	11:acl:relcl	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	vereador	vereador	NOUN	_	Gender=Masc|Number=Sing	14	conj	11:acl:relcl|14:conj:ou	_
+17	ou	ou	CCONJ	_	_	18	cc	18:cc	_
+18	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	14	conj	11:acl:relcl|14:conj:ou	_
+19	federal	federal	ADJ	_	Number=Sing	18	amod	18:amod	SpaceAfter=No
+20	,	,	PUNCT	_	_	21	punct	21:punct	_
+21	estadual	estadual	ADJ	_	Number=Sing	14	conj	11:acl:relcl|14:conj:ou	_
+22	ou	ou	CCONJ	_	_	23	cc	23:cc	_
+23	distrital	distrital	ADJ	_	Number=Sing	14	conj	11:acl:relcl|14:conj:ou	_
+24	e	e	CCONJ	_	_	26	cc	26:cc	_
+25	não	não	ADV	_	_	26	advmod	26:advmod	_
+26	possui	possuir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	conj	11:acl:relcl|14:conj:e	_
+27	ensino	ensino	NOUN	_	Gender=Masc|Number=Sing	26	obj	26:obj	_
+28	superior	superior	ADJ	_	Number=Sing	27	amod	27:amod	_
+29	poderia	poder	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	3	conj	3:conj	_
+30	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	31	expl	31:expl	_
+31	candidatar	candidatar	VERB	_	VerbForm=Inf	29	xcomp	29:xcomp	_
+32	novamente	novamente	ADV	_	_	31	advmod	31:advmod	_
+33-34	ao	_	_	_	_	_	_	_	_
+33	a	a	ADP	_	_	36	case	36:case	_
+34	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	36:det	_
+35	mesmo	mesmo	DET	_	Gender=Masc|Number=Sing|PronType=Dem	36	det	36:det	_
+36	cargo	cargo	NOUN	_	Gender=Masc|Number=Sing	31	obl	31:obl:a	SpaceAfter=No
+37	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0013
+# text = Caso seja aprovada, a PEC poderá impedir que o sr. Luiz Inácio da Silva concorra novamente ao Palácio do Planalto.
+1	Caso	caso	SCONJ	_	_	3	mark	3:mark	_
+2	seja	ser	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:pass	3:aux:pass	_
+3	aprovada	aprovar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	7	advcl	7:advcl:caso	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	PEC	PEC	PROPN	_	_	7	nsubj	7:nsubj|8:nsubj	_
+7	poderá	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+8	impedir	impedir	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+9	que	que	SCONJ	_	_	17	mark	17:mark	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	sr.	senhor	NOUN	_	Abbr=Yes|Gender=Masc|Number=Sing	17	nsubj	17:nsubj	_
+12	Luiz	Luiz	PROPN	_	_	11	nmod	11:nmod	_
+13	Inácio	Inácio	PROPN	_	_	12	flat:name	12:flat:name	_
+14-15	da	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	Silva	Silva	PROPN	_	_	12	flat:name	12:flat:name	_
+17	concorra	concorrer	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	ccomp	8:ccomp	_
+18	novamente	novamente	ADV	_	_	17	advmod	17:advmod	_
+19-20	ao	_	_	_	_	_	_	_	_
+19	a	a	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	Palácio	Palácio	PROPN	_	_	17	obl	17:obl:a	_
+22-23	do	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	Planalto	Planalto	PROPN	_	_	21	flat:name	21:flat:name	SpaceAfter=No
+25	.	.	PUNCT	_	_	7	punct	7:punct	_

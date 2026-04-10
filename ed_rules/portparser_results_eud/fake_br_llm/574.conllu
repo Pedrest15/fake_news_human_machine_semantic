@@ -1,0 +1,663 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Venezuela em Fúria: Chávez decreta lei que permite prisão de opositores!
+1	Venezuela	Venezuela	PROPN	_	_	6	nsubj	6:nsubj	_
+2	em	em	ADP	_	_	3	case	3:case	_
+3	Fúria	Fúria	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+4	:	:	PUNCT	_	_	1	punct	1:punct	_
+5	Chávez	Chávez	PROPN	_	_	6	nsubj	6:nsubj	_
+6	decreta	decretar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	lei	lei	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj|9:nsubj	_
+8	que	que	PRON	_	PronType=Rel	9	nsubj	7:ref	_
+9	permite	permitir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	7:acl:relcl	_
+10	prisão	prisão	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	opositores	opositor	NOUN	_	Gender=Masc|Number=Plur	10	nmod	10:nmod:de	SpaceAfter=No
+13	!	!	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0003
+# text = Com a economia em colapso e a democracia à beira do abismo, Hugo Chávez não hesita em radicalizar sua revolução socialista.
+1	Com	com	ADP	_	_	3	case	3:case|8:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	economia	economia	NOUN	_	Gender=Fem|Number=Sing	19	obl	19:obl:com	_
+4	em	em	ADP	_	_	5	case	5:case	_
+5	colapso	colapso	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:em	_
+6	e	e	CCONJ	_	_	8	cc	8:cc	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	democracia	democracia	NOUN	_	Gender=Fem|Number=Sing	3	conj	3:conj:e|19:obl:com	_
+9-10	à	_	_	_	_	_	_	_	_
+9	a	a	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	beira	beira	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:a	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	abismo	abismo	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:de	SpaceAfter=No
+15	,	,	PUNCT	_	_	3	punct	3:punct	_
+16	Hugo	Hugo	PROPN	_	_	19	nsubj	19:nsubj|21:nsubj	_
+17	Chávez	Chávez	PROPN	_	_	16	flat:name	16:flat:name	_
+18	não	não	ADV	_	_	19	advmod	19:advmod	_
+19	hesita	hesitar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+20	em	em	ADP	_	_	21	mark	21:mark	_
+21	radicalizar	radicalizar	VERB	_	VerbForm=Inf	19	xcomp	19:xcomp	_
+22	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	23	det	23:det	_
+23	revolução	revolução	NOUN	_	Gender=Fem|Number=Sing	21	obj	21:obj	_
+24	socialista	socialista	ADJ	_	Number=Sing	23	amod	23:amod	SpaceAfter=No
+25	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0005
+# text = Em um movimento surpreendente, a Lei Habilitante foi expandida para permitir a prisão de qualquer cidadão acusado de "traição à pátria", sem necessidade de julgamento.
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	movimento	movimento	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:em	_
+4	surpreendente	surpreendente	ADJ	_	Number=Sing	3	amod	3:amod	SpaceAfter=No
+5	,	,	PUNCT	_	_	3	punct	3:punct	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	Lei	Lei	PROPN	_	_	10	nsubj:pass	10:nsubj:pass	_
+8	Habilitante	Habilitante	PROPN	_	_	7	flat:name	7:flat:name	_
+9	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	aux:pass	10:aux:pass	_
+10	expandida	expandir	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+11	para	para	ADP	_	_	12	mark	12:mark	_
+12	permitir	permitir	VERB	_	VerbForm=Inf	10	advcl	10:advcl:para	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	prisão	prisão	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	qualquer	qualquer	DET	_	Number=Sing|PronType=Ind	17	det	17:det	_
+17	cidadão	cidadão	NOUN	_	Gender=Masc|Number=Sing	14	nmod	14:nmod:de	_
+18	acusado	acusar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	17	acl	17:acl	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	"	"	PUNCT	_	_	21	punct	21:punct	SpaceAfter=No
+21	traição	traição	NOUN	_	Gender=Fem|Number=Sing	18	obl	18:obl:de	_
+22-23	à	_	_	_	_	_	_	_	_
+22	a	a	ADP	_	_	24	case	24:case	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	pátria	pátria	NOUN	_	Gender=Fem|Number=Sing	21	nmod	21:nmod:a	SpaceAfter=No
+25	"	"	PUNCT	_	_	21	punct	21:punct	SpaceAfter=No
+26	,	,	PUNCT	_	_	28	punct	28:punct	_
+27	sem	sem	ADP	_	_	28	case	28:case	_
+28	necessidade	necessidade	NOUN	_	Gender=Fem|Number=Sing	18	obl	18:obl:sem	_
+29	de	de	ADP	_	_	30	case	30:case	_
+30	julgamento	julgamento	NOUN	_	Gender=Masc|Number=Sing	28	nmod	28:nmod:de	SpaceAfter=No
+31	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0007
+# text = A medida foi imediatamente denunciada pela ONU e pela Anistia Internacional como uma grave violação dos direitos humanos.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	medida	medida	NOUN	_	Gender=Fem|Number=Sing	5	nsubj:pass	5:nsubj:pass	_
+3	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	aux:pass	5:aux:pass	_
+4	imediatamente	imediatamente	ADV	_	_	5	advmod	5:advmod	_
+5	denunciada	denunciar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+6-7	pela	_	_	_	_	_	_	_	_
+6	por	por	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	ONU	ONU	PROPN	_	_	5	obl:agent	5:obl:agent	_
+9	e	e	CCONJ	_	_	12	cc	12:cc	_
+10-11	pela	_	_	_	_	_	_	_	_
+10	por	por	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	Anistia	Anistia	PROPN	_	_	8	conj	5:obl:agent|8:conj:e	_
+13	Internacional	Internacional	PROPN	_	_	12	flat:name	12:flat:name	_
+14	como	como	ADP	_	_	17	case	17:case	_
+15	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+16	grave	grave	ADJ	_	Number=Sing	17	amod	17:amod	_
+17	violação	violação	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:como	_
+18-19	dos	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	20:det	_
+20	direitos	direito	NOUN	_	Gender=Masc|Number=Plur	17	nmod	17:nmod:de	_
+21	humanos	humano	ADJ	_	Gender=Masc|Number=Plur	20	amod	20:amod	SpaceAfter=No
+22	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0009
+# text = A oposição, agora em estado de alerta máximo, enfrenta uma realidade sombria.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	oposição	oposição	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	11:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
+4	agora	agora	ADV	_	_	6	advmod	6:advmod	_
+5	em	em	ADP	_	_	6	case	6:case	_
+6	estado	estado	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:em	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	alerta	alerta	NOUN	_	Number=Sing	6	nmod	6:nmod:de	_
+9	máximo	máximo	ADJ	_	Gender=Masc|Number=Sing	8	amod	8:amod	SpaceAfter=No
+10	,	,	PUNCT	_	_	6	punct	6:punct	_
+11	enfrenta	enfrentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+12	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	realidade	realidade	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	_
+14	sombria	sombrio	ADJ	_	Gender=Fem|Number=Sing	13	amod	13:amod	SpaceAfter=No
+15	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0011
+# text = Com a maioria dos votos, mas minoria na Assembleia, os opositores temem uma perseguição implacável.
+1	Com	com	ADP	_	_	3	case	3:case|9:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	maioria	maioria	NOUN	_	Gender=Fem|Number=Sing	16	obl	16:obl:com	_
+4-5	dos	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	6:det	_
+6	votos	voto	NOUN	_	Gender=Masc|Number=Plur	3	nmod	3:nmod:de	SpaceAfter=No
+7	,	,	PUNCT	_	_	9	punct	9:punct	_
+8	mas	mas	CCONJ	_	_	9	cc	9:cc	_
+9	minoria	minoria	NOUN	_	Gender=Fem|Number=Sing	3	conj	3:conj:mas|16:obl:com	_
+10-11	na	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	Assembleia	Assembleia	PROPN	_	_	9	nmod	9:nmod:em	SpaceAfter=No
+13	,	,	PUNCT	_	_	3	punct	3:punct	_
+14	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	15:det	_
+15	opositores	opositor	NOUN	_	Gender=Masc|Number=Plur	16	nsubj	16:nsubj	_
+16	temem	temer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+17	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	perseguição	perseguição	NOUN	_	Gender=Fem|Number=Sing	16	obj	16:obj	_
+19	implacável	implacável	ADJ	_	Number=Sing	18	amod	18:amod	SpaceAfter=No
+20	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0013
+# text = Antonio Ledezma, prefeito de Caracas e possível candidato à presidência em 2012, declarou: "Não vamos nos calar diante dessa ditadura disfarçada"!
+1	Antonio	Antonio	PROPN	_	_	16	nsubj	16:nsubj	_
+2	Ledezma	Ledezma	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	prefeito	prefeito	NOUN	_	Gender=Masc|Number=Sing	1	appos	1:appos	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	Caracas	Caracas	PROPN	_	_	4	nmod	4:nmod:de	_
+7	e	e	CCONJ	_	_	9	cc	9:cc	_
+8	possível	possível	ADJ	_	Number=Sing	9	amod	9:amod	_
+9	candidato	candidato	NOUN	_	Gender=Masc|Number=Sing	4	conj	1:appos|4:conj:e	_
+10-11	à	_	_	_	_	_	_	_	_
+10	a	a	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	presidência	presidência	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:a	_
+13	em	em	ADP	_	_	14	case	14:case	_
+14	2012	2012	NUM	_	NumType=Card	9	nmod	9:nmod:em	SpaceAfter=No
+15	,	,	PUNCT	_	_	4	punct	4:punct	_
+16	declarou	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+17	:	:	PUNCT	_	_	22	punct	22:punct	_
+18	"	"	PUNCT	_	_	22	punct	22:punct	SpaceAfter=No
+19	Não	não	ADV	_	_	22	advmod	22:advmod	_
+20	vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	22	aux	22:aux	_
+21	nos	nos	PRON	_	Case=Acc|Number=Plur|Person=1|PronType=Prs	22	expl	22:expl	_
+22	calar	calar	VERB	_	VerbForm=Inf	16	ccomp:speech	16:ccomp:speech	_
+23	diante	diante	ADV	_	_	22	advmod	22:advmod	_
+24-25	dessa	_	_	_	_	_	_	_	_
+24	de	de	ADP	_	_	26	case	26:case	_
+25	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	26	det	26:det	_
+26	ditadura	ditadura	NOUN	_	Gender=Fem|Number=Sing	23	obl	23:obl:de	_
+27	disfarçada	disfarçado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	26	amod	26:amod	SpaceAfter=No
+28	"	"	PUNCT	_	_	22	punct	22:punct	SpaceAfter=No
+29	!	!	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0015
+# text = Enquanto isso, a economia do país está em frangalhos.
+1	Enquanto	enquanto	ADV	_	ExtPos=ADV	11	advmod	11:advmod	_
+2	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	fixed	1:fixed	SpaceAfter=No
+3	,	,	PUNCT	_	_	1	punct	1:punct	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	economia	economia	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	11:nsubj	_
+6-7	do	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	país	país	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:de	_
+9	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	11:cop	_
+10	em	em	ADP	_	_	11	case	11:case	_
+11	frangalhos	frangalho	NOUN	_	Gender=Masc|Number=Plur	0	root	0:root	SpaceAfter=No
+12	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0017
+# text = A inflação disparou para 50%, e a Venezuela agora ocupa o último lugar em perspectiva de crescimento na América do Sul e Caribe.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	inflação	inflação	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_
+3	disparou	disparar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	para	para	ADP	_	_	6	case	6:case	_
+5	50	50	NUM	_	NumType=Card	6	nummod	6:nummod	SpaceAfter=No
+6	%	%	SYM	_	_	3	obl	3:obl:para	SpaceAfter=No
+7	,	,	PUNCT	_	_	12	punct	12:punct	_
+8	e	e	CCONJ	_	_	12	cc	12:cc	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	Venezuela	Venezuela	PROPN	_	_	12	nsubj	12:nsubj	_
+11	agora	agora	ADV	_	_	12	advmod	12:advmod	_
+12	ocupa	ocupar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	3:conj:e	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+14	último	último	ADJ	_	Gender=Masc|Number=Sing	15	amod	15:amod	_
+15	lugar	lugar	NOUN	_	Gender=Masc|Number=Sing	12	obj	12:obj	_
+16	em	em	ADP	_	_	17	case	17:case	_
+17	perspectiva	perspectiva	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:em	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	crescimento	crescimento	NOUN	_	Gender=Masc|Number=Sing	17	nmod	17:nmod:de	_
+20-21	na	_	_	_	_	_	_	_	_
+20	em	em	ADP	_	_	22	case	22:case|27:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	América	América	PROPN	_	_	17	nmod	17:nmod:em	_
+23-24	do	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	Sul	Sul	PROPN	_	_	22	flat:name	22:flat:name	_
+26	e	e	CCONJ	_	_	27	cc	27:cc	_
+27	Caribe	Caribe	PROPN	_	_	22	conj	17:nmod:em|22:conj:e	SpaceAfter=No
+28	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0019
+# text = A crise de abastecimento se agrava: falta de alimentos básicos como farinha, açúcar e carne, importados principalmente do Brasil, criam cenas de desespero nas filas dos mercados.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	crise	crise	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	abastecimento	abastecimento	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	_
+5	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	6	expl	6:expl	_
+6	agrava	agravar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+7	:	:	PUNCT	_	_	25	punct	25:punct	_
+8	falta	falta	NOUN	_	Gender=Fem|Number=Sing	25	nsubj	25:nsubj	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	alimentos	alimento	NOUN	_	Gender=Masc|Number=Plur	8	nmod	8:nmod:de	_
+11	básicos	básico	ADJ	_	Gender=Masc|Number=Plur	10	amod	10:amod	_
+12	como	como	ADP	_	_	13	case	13:case|15:case|17:case	_
+13	farinha	farinha	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:como	SpaceAfter=No
+14	,	,	PUNCT	_	_	15	punct	15:punct	_
+15	açúcar	açúcar	NOUN	_	Gender=Masc|Number=Sing	13	conj	10:nmod:como|13:conj:e	_
+16	e	e	CCONJ	_	_	17	cc	17:cc	_
+17	carne	carne	NOUN	_	Gender=Fem|Number=Sing	13	conj	10:nmod:como|13:conj:e	SpaceAfter=No
+18	,	,	PUNCT	_	_	19	punct	19:punct	_
+19	importados	importar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	10	acl	10:acl	_
+20	principalmente	principalmente	ADV	_	_	23	advmod	23:advmod	_
+21-22	do	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	Brasil	Brasil	PROPN	_	_	19	obl	19:obl:de	SpaceAfter=No
+24	,	,	PUNCT	_	_	19	punct	19:punct	_
+25	criam	criar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	conj	6:conj	_
+26	cenas	cena	NOUN	_	Gender=Fem|Number=Plur	25	obj	25:obj	_
+27	de	de	ADP	_	_	28	case	28:case	_
+28	desespero	desespero	NOUN	_	Gender=Masc|Number=Sing	26	nmod	26:nmod:de	_
+29-30	nas	_	_	_	_	_	_	_	_
+29	em	em	ADP	_	_	31	case	31:case	_
+30	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	31	det	31:det	_
+31	filas	fila	NOUN	_	Number=Plur	25	obl	25:obl:em	_
+32-33	dos	_	_	_	_	_	_	_	_
+32	de	de	ADP	_	_	34	case	34:case	_
+33	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	34	det	34:det	_
+34	mercados	mercado	NOUN	_	Gender=Masc|Number=Plur	31	nmod	31:nmod:de	SpaceAfter=No
+35	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0021
+# text = Chávez, entretanto, culpa o "imperialismo americano" pela situação e promete redistribuir a riqueza do petróleo para "erradicar a fome e a pobreza".
+1	Chávez	Chávez	PROPN	_	_	5	nsubj	5:nsubj|15:nsubj|16:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	entretanto	entretanto	CCONJ	_	_	5	cc	5:cc	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	culpa	culpar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+7	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	imperialismo	imperialismo	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+9	americano	americano	ADJ	_	Gender=Masc|Number=Sing	8	amod	8:amod	SpaceAfter=No
+10	"	"	PUNCT	_	_	8	punct	8:punct	_
+11-12	pela	_	_	_	_	_	_	_	_
+11	por	por	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	situação	situação	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:por	_
+14	e	e	CCONJ	_	_	15	cc	15:cc	_
+15	promete	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	5:conj:e	_
+16	redistribuir	redistribuir	VERB	_	VerbForm=Inf	15	xcomp	15:xcomp	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	riqueza	riqueza	NOUN	_	Gender=Fem|Number=Sing	16	obj	16:obj	_
+19-20	do	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	petróleo	petróleo	NOUN	_	Gender=Masc|Number=Sing	18	nmod	18:nmod:de	_
+22	para	para	ADP	_	_	24	mark	24:mark	_
+23	"	"	PUNCT	_	_	24	punct	24:punct	SpaceAfter=No
+24	erradicar	erradicar	VERB	_	VerbForm=Inf	16	advcl	16:advcl:para	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	fome	fome	NOUN	_	Gender=Fem|Number=Sing	24	obj	24:obj	_
+27	e	e	CCONJ	_	_	29	cc	29:cc	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	pobreza	pobreza	NOUN	_	Gender=Fem|Number=Sing	26	conj	24:obj|26:conj:e	SpaceAfter=No
+30	"	"	PUNCT	_	_	24	punct	24:punct	SpaceAfter=No
+31	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0023
+# text = No cenário internacional, as tensões aumentam.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	cenário	cenário	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:em	_
+4	internacional	internacional	ADJ	_	Number=Sing	3	amod	3:amod	SpaceAfter=No
+5	,	,	PUNCT	_	_	3	punct	3:punct	_
+6	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	7:det	_
+7	tensões	tensão	NOUN	_	Gender=Fem|Number=Plur	8	nsubj	8:nsubj	_
+8	aumentam	aumentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+9	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0025
+# text = Chávez rejeitou as credenciais do embaixador americano Larry Palmer e sugeriu que os EUA enviem celebridades como Oliver Stone para o cargo.
+1	Chávez	Chávez	PROPN	_	_	2	nsubj	2:nsubj|12:nsubj	_
+2	rejeitou	rejeitar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	4:det	_
+4	credenciais	credenciai	NOUN	_	Number=Plur	2	obj	2:obj	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	embaixador	embaixador	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:de	_
+8	americano	americano	ADJ	_	Gender=Masc|Number=Sing	7	amod	7:amod	_
+9	Larry	Larry	PROPN	_	_	7	nmod	7:nmod	_
+10	Palmer	Palmer	PROPN	_	_	9	flat:name	9:flat:name	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	sugeriu	sugerir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	2:conj:e	_
+13	que	que	SCONJ	_	_	16	mark	16:mark	_
+14	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	15:det	_
+15	EUA	EUA	PROPN	_	_	16	nsubj	16:nsubj	_
+16	enviem	enviar	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	ccomp	12:ccomp	_
+17	celebridades	celebridade	NOUN	_	Gender=Fem|Number=Plur	16	obj	16:obj	_
+18	como	como	ADP	_	_	19	case	19:case	_
+19	Oliver	Oliver	PROPN	_	_	17	nmod	17:nmod:como	_
+20	Stone	Stone	PROPN	_	_	19	flat:name	19:flat:name	_
+21	para	para	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	cargo	cargo	NOUN	_	Gender=Masc|Number=Sing	16	obl	16:obl:para	SpaceAfter=No
+24	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0027
+# text = Em retaliação, os EUA não só negaram o visto ao embaixador venezuelano, mas também impuseram sanções econômicas ao país, alegando riscos à estabilidade regional.
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	retaliação	retaliação	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:em	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	5:det	_
+5	EUA	EUA	PROPN	_	_	8	nsubj	8:nsubj|18:nsubj	_
+6	não	não	ADV	_	_	7	advmod	7:advmod	_
+7	só	só	ADV	_	_	8	advmod	8:advmod	_
+8	negaram	negar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	visto	visto	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	_
+11-12	ao	_	_	_	_	_	_	_	_
+11	a	a	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	embaixador	embaixador	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:a	_
+14	venezuelano	venezuelano	ADJ	_	Gender=Masc|Number=Sing	13	amod	13:amod	SpaceAfter=No
+15	,	,	PUNCT	_	_	18	punct	18:punct	_
+16	mas	mas	CCONJ	_	_	18	cc	18:cc	_
+17	também	também	ADV	_	_	18	advmod	18:advmod	_
+18	impuseram	impor	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	8	conj	8:conj:mas	_
+19	sanções	sanção	NOUN	_	Gender=Fem|Number=Plur	18	obj	18:obj	_
+20	econômicas	econômico	ADJ	_	Gender=Fem|Number=Plur	19	amod	19:amod	_
+21-22	ao	_	_	_	_	_	_	_	_
+21	a	a	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	país	país	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:a	SpaceAfter=No
+24	,	,	PUNCT	_	_	25	punct	25:punct	_
+25	alegando	alegar	VERB	_	VerbForm=Ger	8	advcl	8:advcl|18:advcl	_
+26	riscos	risco	NOUN	_	Gender=Masc|Number=Plur	25	obj	25:obj	_
+27-28	à	_	_	_	_	_	_	_	_
+27	a	a	ADP	_	_	29	case	29:case	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	estabilidade	estabilidade	NOUN	_	Gender=Fem|Number=Sing	26	nmod	26:nmod:a	_
+30	regional	regional	ADJ	_	Number=Sing	29	amod	29:amod	SpaceAfter=No
+31	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0029
+# text = A simpatia de Chávez entre os mais pobres permanece, em parte devido aos médicos cubanos nas favelas e à gasolina ultra barata, que mantém uma frota de carros antigos circulando por Caracas.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	simpatia	simpatia	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	9:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Chávez	Chávez	PROPN	_	_	2	nmod	2:nmod:de	_
+5	entre	entre	ADP	_	_	6	case	6:case	_
+6	os	o	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Dem	2	nmod	2:nmod:entre	_
+7	mais	mais	ADV	_	_	8	advmod	8:advmod	_
+8	pobres	pobre	ADJ	_	Number=Plur	6	amod	6:amod	_
+9	permanece	permanecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+10	,	,	PUNCT	_	_	13	punct	13:punct	_
+11	em	em	ADP	_	_	12	case	12:case	_
+12	parte	parte	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:em	_
+13	devido	dever	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	9	advcl	9:advcl	_
+14-15	aos	_	_	_	_	_	_	_	_
+14	a	a	ADP	_	_	16	case	16:case	_
+15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	16:det	_
+16	médicos	médico	NOUN	_	Gender=Masc|Number=Plur	13	obl	13:obl:a	_
+17	cubanos	cubano	ADJ	_	Gender=Masc|Number=Plur	16	amod	16:amod	_
+18-19	nas	_	_	_	_	_	_	_	_
+18	em	em	ADP	_	_	20	case	20:case	_
+19	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	20:det	_
+20	favelas	favela	NOUN	_	Gender=Fem|Number=Plur	16	nmod	16:nmod:em	_
+21	e	e	CCONJ	_	_	24	cc	24:cc	_
+22-23	à	_	_	_	_	_	_	_	_
+22	a	a	ADP	_	_	24	case	24:case	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	gasolina	gasolina	NOUN	_	Gender=Fem|Number=Sing	16	conj	13:obl:a|16:conj:e|29:nsubj	_
+25	ultra	ultra	ADV	_	_	26	advmod	26:advmod	_
+26	barata	barato	ADJ	_	Gender=Fem|Number=Sing	24	amod	24:amod	SpaceAfter=No
+27	,	,	PUNCT	_	_	29	punct	29:punct	_
+28	que	que	PRON	_	PronType=Rel	29	nsubj	24:ref	_
+29	mantém	manter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	acl:relcl	24:acl:relcl	_
+30	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+31	frota	frota	NOUN	_	Gender=Fem|Number=Sing	29	obj	29:obj	_
+32	de	de	ADP	_	_	33	case	33:case	_
+33	carros	carro	NOUN	_	Gender=Masc|Number=Plur	31	nmod	31:nmod:de	_
+34	antigos	antigo	ADJ	_	Gender=Masc|Number=Plur	33	amod	33:amod	_
+35	circulando	circular	VERB	_	VerbForm=Ger	31	acl	31:acl	_
+36	por	por	ADP	_	_	37	case	37:case	_
+37	Caracas	Caracas	PROPN	_	_	35	obl	35:obl:por	SpaceAfter=No
+38	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0031
+# text = Contudo, a insegurança pública, com uma taxa de homicídios de 18 mil por ano e apenas 3% de resolução, alimenta o descontentamento crescente.
+1	Contudo	contudo	CCONJ	_	_	24	cc	24:cc	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	insegurança	insegurança	NOUN	_	Gender=Fem|Number=Sing	24	nsubj	24:nsubj	_
+5	pública	público	ADJ	_	Gender=Fem|Number=Sing	4	amod	4:amod	SpaceAfter=No
+6	,	,	PUNCT	_	_	9	punct	9:punct	_
+7	com	com	ADP	_	_	9	case	9:case	_
+8	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	taxa	taxa	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:com	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	homicídios	homicídio	NOUN	_	Gender=Masc|Number=Plur	9	nmod	9:nmod:de	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	18	18	NUM	_	NumType=Card	11	nummod	11:nummod	_
+14	mil	mil	NUM	_	NumType=Card	13	flat	13:flat	_
+15	por	por	ADP	_	_	16	case	16:case	_
+16	ano	ano	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:por	_
+17	e	e	CCONJ	_	_	20	cc	20:cc	_
+18	apenas	apenas	ADV	_	_	20	advmod	20:advmod	_
+19	3	3	NUM	_	NumType=Card	20	nummod	20:nummod	SpaceAfter=No
+20	%	%	SYM	_	_	9	conj	4:nmod:com|9:conj:e	_
+21	de	de	ADP	_	_	22	case	22:case	_
+22	resolução	resolução	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:de	SpaceAfter=No
+23	,	,	PUNCT	_	_	9	punct	9:punct	_
+24	alimenta	alimentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	descontentamento	descontentamento	NOUN	_	Gender=Masc|Number=Sing	24	obj	24:obj	_
+27	crescente	crescente	ADJ	_	Number=Sing	26	amod	26:amod	SpaceAfter=No
+28	.	.	PUNCT	_	_	24	punct	24:punct	_
+
+# sent_id = S0033
+# text = Líderes chavistas elevam o tom, com declarações que defendem o fim do capitalismo e até mesmo a possibilidade de luta armada.
+1	Líderes	líder	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	3:nsubj	_
+2	chavistas	chavista	ADJ	_	Number=Plur	1	amod	1:amod	_
+3	elevam	elevar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	tom	tom	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	SpaceAfter=No
+6	,	,	PUNCT	_	_	8	punct	8:punct	_
+7	com	com	ADP	_	_	8	case	8:case	_
+8	declarações	declaração	NOUN	_	Gender=Fem|Number=Plur	3	obl	3:obl:com|10:nsubj	_
+9	que	que	PRON	_	PronType=Rel	10	nsubj	8:ref	_
+10	defendem	defender	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	8:acl:relcl	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	fim	fim	NOUN	_	Gender=Masc|Number=Sing	10	obj	10:obj	_
+13-14	do	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	capitalismo	capitalismo	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:de	_
+16	e	e	CCONJ	_	_	20	cc	20:cc	_
+17	até	até	ADV	_	_	20	advmod	20:advmod	_
+18	mesmo	mesmo	ADV	_	_	20	advmod	20:advmod	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	possibilidade	possibilidade	NOUN	_	Gender=Fem|Number=Sing	12	conj	10:obj|12:conj:e	_
+21	de	de	ADP	_	_	22	case	22:case	_
+22	luta	luta	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:de	_
+23	armada	armado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	22	amod	22:amod	SpaceAfter=No
+24	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0035
+# text = O presidente da Assembleia, Fernando Soto Rojas, chegou a homenagear o falecido líder das Farc, Manuel Marulanda, causando indignação entre setores mais conservadores.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	presidente	presidente	NOUN	_	Number=Sing	11	nsubj	11:nsubj|13:nsubj	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	Assembleia	Assembleia	PROPN	_	_	2	nmod	2:nmod:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	Fernando	Fernando	PROPN	_	_	2	appos	2:appos	_
+8	Soto	Soto	PROPN	_	_	7	flat:name	7:flat:name	_
+9	Rojas	Rojas	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+10	,	,	PUNCT	_	_	7	punct	7:punct	_
+11	chegou	chegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	a	a	ADP	_	_	13	mark	13:mark	_
+13	homenagear	homenagear	VERB	_	VerbForm=Inf	11	xcomp	11:xcomp	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+15	falecido	falecido	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	16	amod	16:amod	_
+16	líder	líder	NOUN	_	Gender=Masc|Number=Sing	13	obj	13:obj	_
+17-18	das	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	19:det	_
+19	Farc	Farc	PROPN	_	_	16	nmod	16:nmod:de	SpaceAfter=No
+20	,	,	PUNCT	_	_	21	punct	21:punct	_
+21	Manuel	Manuel	PROPN	_	_	16	appos	16:appos	_
+22	Marulanda	Marulanda	PROPN	_	_	21	flat:name	21:flat:name	SpaceAfter=No
+23	,	,	PUNCT	_	_	21	punct	21:punct	_
+24	causando	causar	VERB	_	VerbForm=Ger	13	advcl	13:advcl	_
+25	indignação	indignação	NOUN	_	Gender=Fem|Number=Sing	24	obj	24:obj	_
+26	entre	entre	ADP	_	_	27	case	27:case	_
+27	setores	setor	NOUN	_	Gender=Masc|Number=Plur	24	obl	24:obl:entre	_
+28	mais	mais	ADV	_	_	29	advmod	29:advmod	_
+29	conservadores	conservador	ADJ	_	Gender=Masc|Number=Plur	27	amod	27:amod	SpaceAfter=No
+30	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0037
+# text = O Brasil, parceiro comercial em ascensão, observa com preocupação.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Brasil	Brasil	PROPN	_	_	9	nsubj	9:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	parceiro	parceiro	NOUN	_	Gender=Masc|Number=Sing	2	appos	2:appos	_
+5	comercial	comercial	ADJ	_	Number=Sing	4	amod	4:amod	_
+6	em	em	ADP	_	_	7	case	7:case	_
+7	ascensão	ascensão	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:em	SpaceAfter=No
+8	,	,	PUNCT	_	_	4	punct	4:punct	_
+9	observa	observar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+10	com	com	ADP	_	_	11	case	11:case	_
+11	preocupação	preocupação	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:com	SpaceAfter=No
+12	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0039
+# text = Transações comerciais cresceram 500% nos últimos cinco anos, mas empresários brasileiros questionam a viabilidade de manter investimentos em um cenário tão instável.
+1	Transações	transação	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	3:nsubj	_
+2	comerciais	comercial	ADJ	_	Number=Plur	1	amod	1:amod	_
+3	cresceram	crescer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	500	500	NUM	_	NumType=Card	5	nummod	5:nummod	SpaceAfter=No
+5	%	%	SYM	_	_	3	obj	3:obj	_
+6-7	nos	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	10	case	10:case	_
+7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	10:det	_
+8	últimos	último	ADJ	_	Gender=Masc|Number=Plur	10	amod	10:amod	_
+9	cinco	cinco	NUM	_	NumType=Card	10	nummod	10:nummod	_
+10	anos	ano	NOUN	_	Gender=Masc|Number=Plur	3	obl	3:obl:em	SpaceAfter=No
+11	,	,	PUNCT	_	_	15	punct	15:punct	_
+12	mas	mas	CCONJ	_	_	15	cc	15:cc	_
+13	empresários	empresário	NOUN	_	Gender=Masc|Number=Plur	15	nsubj	15:nsubj	_
+14	brasileiros	brasileiro	ADJ	_	Gender=Masc|Number=Plur	13	amod	13:amod	_
+15	questionam	questionar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	conj	3:conj:mas	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	viabilidade	viabilidade	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	_
+18	de	de	ADP	_	_	19	mark	19:mark	_
+19	manter	manter	VERB	_	VerbForm=Inf	17	acl	17:acl:de	_
+20	investimentos	investimento	NOUN	_	Gender=Masc|Number=Plur	19	obj	19:obj	_
+21	em	em	ADP	_	_	23	case	23:case	_
+22	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	cenário	cenário	NOUN	_	Gender=Masc|Number=Sing	19	obl	19:obl:em	_
+24	tão	tão	ADV	_	_	25	advmod	25:advmod	_
+25	instável	instável	ADJ	_	Number=Sing	23	amod	23:amod	SpaceAfter=No
+26	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0041
+# text = A cooperação energética e as obras de infraestrutura, como a ponte sobre o Rio Orinoco, estão em risco diante da crescente instabilidade política e econômica.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	cooperação	cooperação	NOUN	_	Gender=Fem|Number=Sing	20	nsubj	20:nsubj	_
+3	energética	energético	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	_
+4	e	e	CCONJ	_	_	6	cc	6:cc	_
+5	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	6:det	_
+6	obras	obra	NOUN	_	Gender=Fem|Number=Plur	2	conj	2:conj:e|20:nsubj	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	infraestrutura	infraestrutura	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de	SpaceAfter=No
+9	,	,	PUNCT	_	_	12	punct	12:punct	_
+10	como	como	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	ponte	ponte	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:como|6:nmod:como	_
+13	sobre	sobre	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	Rio	Rio	PROPN	_	_	12	nmod	12:nmod:sobre	_
+16	Orinoco	Orinoco	PROPN	_	_	15	flat:name	15:flat:name	SpaceAfter=No
+17	,	,	PUNCT	_	_	12	punct	12:punct	_
+18	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	cop	20:cop	_
+19	em	em	ADP	_	_	20	case	20:case	_
+20	risco	risco	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+21	diante	diante	ADV	_	_	20	advmod	20:advmod	_
+22-23	da	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	25	case	25:case	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+24	crescente	crescente	ADJ	_	Number=Sing	25	amod	25:amod	_
+25	instabilidade	instabilidade	NOUN	_	Gender=Fem|Number=Sing	21	obl	21:obl:de	_
+26	política	político	ADJ	_	Gender=Fem|Number=Sing	25	amod	25:amod	_
+27	e	e	CCONJ	_	_	28	cc	28:cc	_
+28	econômica	econômico	ADJ	_	Gender=Fem|Number=Sing	26	conj	25:amod|26:conj:e	SpaceAfter=No
+29	.	.	PUNCT	_	_	20	punct	20:punct	_
+
+# sent_id = S0043
+# text = A Venezuela se prepara para um futuro incerto, com Chávez cada vez mais messiânico e a oposição determinada a resistir.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Venezuela	Venezuela	PROPN	_	_	4	nsubj	4:nsubj	_
+3	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	4	expl	4:expl	_
+4	prepara	preparar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	para	para	ADP	_	_	7	case	7:case	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	futuro	futuro	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:para	_
+8	incerto	incerto	ADJ	_	Gender=Masc|Number=Sing	7	amod	7:amod	SpaceAfter=No
+9	,	,	PUNCT	_	_	11	punct	11:punct	_
+10	com	com	ADP	_	_	11	case	11:case|18:case	_
+11	Chávez	Chávez	PROPN	_	_	4	obl	4:obl:com	_
+12	cada	cada	DET	_	ExtPos=ADV|Number=Sing|PronType=Ind	15	advmod	15:advmod	_
+13	vez	vez	NOUN	_	Gender=Fem|Number=Sing	12	fixed	12:fixed	_
+14	mais	mais	ADV	_	_	12	fixed	12:fixed	_
+15	messiânico	messiânico	ADJ	_	Gender=Masc|Number=Sing	11	amod	11:amod	_
+16	e	e	CCONJ	_	_	18	cc	18:cc	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	oposição	oposição	NOUN	_	Gender=Fem|Number=Sing	11	conj	4:obl:com|11:conj:e	_
+19	determinada	determinado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	18	amod	18:amod	_
+20	a	a	ADP	_	_	21	mark	21:mark	_
+21	resistir	resistir	VERB	_	VerbForm=Inf	19	acl	19:acl:a	SpaceAfter=No
+22	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0045
+# text = O clima é de uma panela de pressão prestes a explodir, e a comunidade internacional assiste, apreensiva, ao desenrolar dos eventos.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	clima	clima	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	panela	panela	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	pressão	pressão	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de	_
+9	prestes	preste	ADJ	_	Number=Plur	6	amod	6:amod	_
+10	a	a	ADP	_	_	11	mark	11:mark	_
+11	explodir	explodir	VERB	_	VerbForm=Inf	9	acl	9:acl:a	SpaceAfter=No
+12	,	,	PUNCT	_	_	17	punct	17:punct	_
+13	e	e	CCONJ	_	_	17	cc	17:cc	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	comunidade	comunidade	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	17:nsubj	_
+16	internacional	internacional	ADJ	_	Number=Sing	15	amod	15:amod	_
+17	assiste	assistir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	6:conj:e	SpaceAfter=No
+18	,	,	PUNCT	_	_	19	punct	19:punct	_
+19	apreensiva	apreensivo	ADJ	_	Gender=Fem|Number=Sing	17	advcl	17:advcl	SpaceAfter=No
+20	,	,	PUNCT	_	_	19	punct	19:punct	_
+21-22	ao	_	_	_	_	_	_	_	_
+21	a	a	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	desenrolar	desenrolar	NOUN	_	Gender=Masc|Number=Sing	17	obl	17:obl:a	_
+24-25	dos	_	_	_	_	_	_	_	_
+24	de	de	ADP	_	_	26	case	26:case	_
+25	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	26:det	_
+26	eventos	evento	NOUN	_	Gender=Masc|Number=Plur	23	nmod	23:nmod:de	SpaceAfter=No
+27	.	.	PUNCT	_	_	6	punct	6:punct	_

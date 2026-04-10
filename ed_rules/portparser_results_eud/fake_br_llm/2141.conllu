@@ -1,0 +1,416 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Exclusivo: Joaquim Barbosa aceita liderar chapa presidencial em 2018 com apoio surpresa de Lula!
+1	Exclusivo	exclusivo	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+2	:	:	PUNCT	_	_	1	punct	1:punct	_
+3	Joaquim	Joaquim	PROPN	_	_	5	nsubj	5:nsubj|6:nsubj	_
+4	Barbosa	Barbosa	PROPN	_	_	3	flat:name	3:flat:name	_
+5	aceita	aceitar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	dep	1:dep	_
+6	liderar	liderar	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	_
+7	chapa	chapa	NOUN	_	Number=Sing	6	obj	6:obj	_
+8	presidencial	presidencial	ADJ	_	Number=Sing	7	amod	7:amod	_
+9	em	em	ADP	_	_	10	case	10:case	_
+10	2018	2018	NUM	_	NumType=Card	7	nmod	7:nmod:em	_
+11	com	com	ADP	_	_	12	case	12:case	_
+12	apoio	apoio	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:com	_
+13	surpresa	surpreso	ADJ	_	Gender=Fem|Number=Sing	12	amod	12:amod	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	Lula	Lula	PROPN	_	_	12	nmod	12:nmod:de	SpaceAfter=No
+16	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = O cenário político brasileiro foi abalado nesta quarta-feira com a surpreendente revelação de que o ex-ministro do STF Joaquim Barbosa aceitou compor uma chapa presidencial, contrariando declarações anteriores.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	cenário	cenário	NOUN	_	Gender=Masc|Number=Sing	6	nsubj:pass	6:nsubj:pass	_
+3	político	político	ADJ	_	Gender=Masc|Number=Sing	2	amod	2:amod	_
+4	brasileiro	brasileiro	ADJ	_	Gender=Masc|Number=Sing	2	amod	2:amod	_
+5	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	aux:pass	6:aux:pass	_
+6	abalado	abalar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+7-8	nesta	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	9	det	9:det	_
+9	quarta-feira	quarta-feira	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:em	_
+10	com	com	ADP	_	_	13	case	13:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+12	surpreendente	surpreendente	ADJ	_	Number=Sing	13	amod	13:amod	_
+13	revelação	revelação	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:com	_
+14	de	de	ADP	_	ExtPos=SCONJ	23	mark	23:mark	_
+15	que	que	SCONJ	_	_	14	fixed	14:fixed	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	ex-ministro	ex-ministro	NOUN	_	Gender=Masc|Number=Sing	23	nsubj	23:nsubj|24:nsubj	_
+18-19	do	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	STF	STF	PROPN	_	_	17	nmod	17:nmod:de	_
+21	Joaquim	Joaquim	PROPN	_	_	17	nmod	17:nmod	_
+22	Barbosa	Barbosa	PROPN	_	_	21	flat:name	21:flat:name	_
+23	aceitou	aceitar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	acl	13:acl:de_que	_
+24	compor	compor	VERB	_	VerbForm=Inf	23	xcomp	23:xcomp	_
+25	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	chapa	chapa	NOUN	_	Number=Sing	24	obj	24:obj	_
+27	presidencial	presidencial	ADJ	_	Number=Sing	26	amod	26:amod	SpaceAfter=No
+28	,	,	PUNCT	_	_	29	punct	29:punct	_
+29	contrariando	contrariar	VERB	_	VerbForm=Ger	23	advcl	23:advcl	_
+30	declarações	declaração	NOUN	_	Gender=Fem|Number=Plur	29	obj	29:obj	_
+31	anteriores	anterior	ADJ	_	Number=Plur	30	amod	30:amod	SpaceAfter=No
+32	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0005
+# text = Fontes anônimas próximas ao político afirmam que ele receberá o apoio inesperado de Luiz Inácio Lula da Silva, que, mesmo enfrentando a possibilidade de inelegibilidade, decidiu focar em uma estratégia de união nacional.
+1	Fontes	fonte	NOUN	_	Gender=Fem|Number=Plur	7	nsubj	7:nsubj	_
+2	anônimas	anônimo	ADJ	_	Gender=Fem|Number=Plur	1	amod	1:amod	_
+3	próximas	próximo	ADJ	_	Gender=Fem|Number=Plur	1	amod	1:amod	_
+4-5	ao	_	_	_	_	_	_	_	_
+4	a	a	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	político	político	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:a	_
+7	afirmam	afirmar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	que	que	SCONJ	_	_	10	mark	10:mark	_
+9	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	nsubj	10:nsubj	_
+10	receberá	receber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	7	ccomp	7:ccomp	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	apoio	apoio	NOUN	_	Gender=Masc|Number=Sing	10	obj	10:obj	_
+13	inesperado	inesperado	ADJ	_	Gender=Masc|Number=Sing	12	amod	12:amod	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	Luiz	Luiz	PROPN	_	_	12	nmod	12:nmod:de|31:nsubj|32:nsubj	_
+16	Inácio	Inácio	PROPN	_	_	15	flat:name	15:flat:name	_
+17	Lula	Lula	PROPN	_	_	15	flat:name	15:flat:name	_
+18-19	da	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	Silva	Silva	PROPN	_	_	15	flat:name	15:flat:name	SpaceAfter=No
+21	,	,	PUNCT	_	_	25	punct	25:punct	_
+22	que	que	PRON	_	PronType=Rel	31	nsubj	15:ref	SpaceAfter=No
+23	,	,	PUNCT	_	_	25	punct	25:punct	_
+24	mesmo	mesmo	ADV	_	_	25	advmod	25:advmod	_
+25	enfrentando	enfrentar	VERB	_	VerbForm=Ger	31	advcl	31:advcl	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	possibilidade	possibilidade	NOUN	_	Gender=Fem|Number=Sing	25	obj	25:obj	_
+28	de	de	ADP	_	_	29	case	29:case	_
+29	inelegibilidade	inelegibilidade	NOUN	_	Gender=Fem|Number=Sing	27	nmod	27:nmod:de	SpaceAfter=No
+30	,	,	PUNCT	_	_	25	punct	25:punct	_
+31	decidiu	decidir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	acl:relcl	15:acl:relcl	_
+32	focar	focar	VERB	_	VerbForm=Inf	31	xcomp	31:xcomp	_
+33	em	em	ADP	_	_	35	case	35:case	_
+34	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	35	det	35:det	_
+35	estratégia	estratégia	NOUN	_	Gender=Fem|Number=Sing	32	obl	32:obl:em	_
+36	de	de	ADP	_	_	37	case	37:case	_
+37	união	união	NOUN	_	Gender=Fem|Number=Sing	35	nmod	35:nmod:de	_
+38	nacional	nacional	ADJ	_	Number=Sing	37	amod	37:amod	SpaceAfter=No
+39	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0007
+# text = Cientistas políticos ouvidos pelo Estado destacam que essa aliança pode redefinir completamente o tabuleiro eleitoral.
+1	Cientistas	cientista	NOUN	_	Number=Plur	7	nsubj	7:nsubj	_
+2	políticos	político	ADJ	_	Gender=Masc|Number=Plur	1	amod	1:amod	_
+3	ouvidos	ouvir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	1	acl	1:acl	_
+4-5	pelo	_	_	_	_	_	_	_	_
+4	por	por	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	Estado	Estado	PROPN	_	_	3	obl:agent	3:obl:agent	_
+7	destacam	destacar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	que	que	SCONJ	_	_	11	mark	11:mark	_
+9	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	10	det	10:det	_
+10	aliança	aliança	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	11:nsubj|12:nsubj	_
+11	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	ccomp	7:ccomp	_
+12	redefinir	redefinir	VERB	_	VerbForm=Inf	11	xcomp	11:xcomp	_
+13	completamente	completamente	ADV	_	_	12	advmod	12:advmod	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	tabuleiro	tabuleiro	NOUN	_	Gender=Masc|Number=Sing	12	obj	12:obj	_
+16	eleitoral	eleitoral	ADJ	_	Number=Sing	15	amod	15:amod	SpaceAfter=No
+17	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0009
+# text = Isso é um terremoto na política brasileira.
+1	Isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	4	nsubj	4:nsubj	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	terremoto	terremoto	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+5-6	na	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	política	política	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:em	_
+8	brasileira	brasileiro	ADJ	_	Gender=Fem|Number=Sing	7	amod	7:amod	SpaceAfter=No
+9	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0011
+# text = Barbosa traz uma imagem de integridade e Lula, a força popular.
+1	Barbosa	Barbosa	PROPN	_	_	2	nsubj	2:nsubj	_
+2	traz	trazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	imagem	imagem	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	integridade	integridade	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:de	_
+7	e	e	CCONJ	_	_	8	cc	9.1:cc	_
+8	Lula	Lula	PROPN	_	_	2	conj	9.1:nsubj	SpaceAfter=No
+9	,	,	PUNCT	_	_	11	punct	11:punct	_
+9.1	__NOFORM__	trazer	VERB	_	_	_	_	2:conj	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	força	força	NOUN	_	Gender=Fem|Number=Sing	8	orphan	9.1:obj	_
+12	popular	popular	ADJ	_	Number=Sing	11	amod	11:amod	SpaceAfter=No
+13	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0013
+# text = Juntos, podem atrair um espectro muito amplo de eleitores, comentou Carlos Melo, professor do Insper.
+1	Juntos	junto	ADJ	_	Gender=Masc|Number=Plur	3	advcl	3:advcl	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	ccomp:speech	12:ccomp:speech	_
+4	atrair	atrair	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	espectro	espectro	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7	muito	muito	ADV	_	_	8	advmod	8:advmod	_
+8	amplo	amplo	ADJ	_	Gender=Masc|Number=Sing	6	amod	6:amod	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	eleitores	eleitor	NOUN	_	Gender=Masc|Number=Plur	6	nmod	6:nmod:de	SpaceAfter=No
+11	,	,	PUNCT	_	_	3	punct	3:punct	_
+12	comentou	comentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+13	Carlos	Carlos	PROPN	_	_	12	nsubj	12:nsubj	_
+14	Melo	Melo	PROPN	_	_	13	flat:name	13:flat:name	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	professor	professor	NOUN	_	Gender=Masc|Number=Sing	13	appos	13:appos	_
+17-18	do	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	Insper	Insper	PROPN	_	_	16	nmod	16:nmod:de	SpaceAfter=No
+20	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0015
+# text = Enquanto isso, Ciro Gomes e Marina Silva, que já estavam em campo, veem suas chances diminuírem com essa nova dinâmica.
+1	Enquanto	enquanto	ADV	_	ExtPos=ADV	16	advmod	16:advmod	_
+2	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	fixed	1:fixed	SpaceAfter=No
+3	,	,	PUNCT	_	_	1	punct	1:punct	_
+4	Ciro	Ciro	PROPN	_	_	16	nsubj	14:nsubj|16:nsubj	_
+5	Gomes	Gomes	PROPN	_	_	4	flat:name	4:flat:name	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	Marina	Marina	PROPN	_	_	4	conj	4:conj:e|14:nsubj|16:nsubj	_
+8	Silva	Silva	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+9	,	,	PUNCT	_	_	14	punct	14:punct	_
+10	que	que	PRON	_	PronType=Rel	14	nsubj	4:ref|7:ref	_
+11	já	já	ADV	_	_	14	advmod	14:advmod	_
+12	estavam	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	14	cop	14:cop	_
+13	em	em	ADP	_	_	14	case	14:case	_
+14	campo	campo	NOUN	_	Gender=Masc|Number=Sing	4	acl:relcl	4:acl:relcl|7:acl:relcl	SpaceAfter=No
+15	,	,	PUNCT	_	_	14	punct	14:punct	_
+16	veem	ver	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+17	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	18	det	18:det	_
+18	chances	chance	NOUN	_	Gender=Fem|Number=Plur	16	obj	16:obj|19:nsubj	_
+19	diminuírem	diir	VERB	_	Number=Plur|Person=3|VerbForm=Inf	16	xcomp	16:xcomp	_
+20	com	com	ADP	_	_	23	case	23:case	_
+21	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	23	det	23:det	_
+22	nova	novo	ADJ	_	Gender=Fem|Number=Sing	23	amod	23:amod	_
+23	dinâmica	dinâmica	NOUN	_	Gender=Fem|Number=Sing	19	obl	19:obl:com	SpaceAfter=No
+24	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0017
+# text = Ciro, que sonhava com uma chapa "dream team" com Haddad, agora enfrenta uma possível aliança muito mais robusta.
+1	Ciro	Ciro	PROPN	_	_	16	nsubj	4:nsubj|16:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	4	punct	4:punct	_
+3	que	que	PRON	_	PronType=Rel	4	nsubj	1:ref	_
+4	sonhava	sonhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+5	com	com	ADP	_	_	7	case	7:case	_
+6	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	chapa	chapa	NOUN	_	Number=Sing	4	obl	4:obl:com	_
+8	"	"	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+9	dream	dream	X	_	Foreign=Yes	7	nmod	7:nmod	_
+10	team	team	X	_	Foreign=Yes	9	flat:foreign	9:flat:foreign	SpaceAfter=No
+11	"	"	PUNCT	_	_	9	punct	9:punct	_
+12	com	com	ADP	_	_	13	case	13:case	_
+13	Haddad	Haddad	PROPN	_	_	7	nmod	7:nmod:com	SpaceAfter=No
+14	,	,	PUNCT	_	_	4	punct	4:punct	_
+15	agora	agora	ADV	_	_	16	advmod	16:advmod	_
+16	enfrenta	enfrentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+17	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+18	possível	possível	ADJ	_	Number=Sing	19	amod	19:amod	_
+19	aliança	aliança	NOUN	_	Gender=Fem|Number=Sing	16	obj	16:obj	_
+20	muito	muito	ADV	_	_	22	advmod	22:advmod	_
+21	mais	mais	ADV	_	_	22	advmod	22:advmod	_
+22	robusta	robusto	ADJ	_	Gender=Fem|Number=Sing	19	amod	19:amod	SpaceAfter=No
+23	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0019
+# text = Marina, por sua vez, tenta reverter a imagem de ausência no debate político, mas essa novidade pode complicar ainda mais sua inserção.
+1	Marina	Marina	PROPN	_	_	7	nsubj	7:nsubj|8:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	5	punct	5:punct	_
+3	por	por	ADP	_	_	5	case	5:case	_
+4	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	det	5:det	_
+5	vez	vez	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:por	SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	5:punct	_
+7	tenta	tentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	reverter	reverter	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	imagem	imagem	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	ausência	ausência	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:de	_
+13-14	no	_	_	_	_	_	_	_	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	debate	debate	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:em	_
+16	político	político	ADJ	_	Gender=Masc|Number=Sing	15	amod	15:amod	SpaceAfter=No
+17	,	,	PUNCT	_	_	21	punct	21:punct	_
+18	mas	mas	CCONJ	_	_	21	cc	21:cc	_
+19	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	20	det	20:det	_
+20	novidade	novidade	NOUN	_	Gender=Fem|Number=Sing	21	nsubj	21:nsubj|22:nsubj	_
+21	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	7:conj:mas	_
+22	complicar	complicar	VERB	_	VerbForm=Inf	21	xcomp	21:xcomp	_
+23	ainda	ainda	ADV	_	_	24	advmod	24:advmod	_
+24	mais	mais	ADV	_	_	22	advmod	22:advmod	_
+25	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	26	det	26:det	_
+26	inserção	inserção	NOUN	_	Gender=Fem|Number=Sing	22	obj	22:obj	SpaceAfter=No
+27	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0021
+# text = No campo dos tucanos, João Doria e Geraldo Alckmin se veem em um dilema.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	campo	campo	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:em	_
+4-5	dos	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	6:det	_
+6	tucanos	tucano	NOUN	_	Gender=Masc|Number=Plur	3	nmod	3:nmod:de	SpaceAfter=No
+7	,	,	PUNCT	_	_	3	punct	3:punct	_
+8	João	João	PROPN	_	_	14	nsubj	14:nsubj	_
+9	Doria	Doria	PROPN	_	_	8	flat:name	8:flat:name	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	Geraldo	Geraldo	PROPN	_	_	8	conj	8:conj:e|14:nsubj	_
+12	Alckmin	Alckmin	PROPN	_	_	11	flat:name	11:flat:name	_
+13	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	14	expl	14:expl	_
+14	veem	ver	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+15	em	em	ADP	_	_	17	case	17:case	_
+16	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	dilema	dilema	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:em	SpaceAfter=No
+18	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0023
+# text = A estratégia antilulista de Doria pode perder relevância, enquanto Alckmin tenta se reposicionar.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	estratégia	estratégia	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj|7:nsubj	_
+3	antilulista	antilulista	ADJ	_	Number=Sing	2	amod	2:amod	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	Doria	Doria	PROPN	_	_	2	nmod	2:nmod:de	_
+6	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	perder	perder	VERB	_	VerbForm=Inf	6	xcomp	6:xcomp	_
+8	relevância	relevância	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	SpaceAfter=No
+9	,	,	PUNCT	_	_	12	punct	12:punct	_
+10	enquanto	enquanto	SCONJ	_	_	12	mark	12:mark	_
+11	Alckmin	Alckmin	PROPN	_	_	12	nsubj	12:nsubj|14:nsubj	_
+12	tenta	tentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	advcl	6:advcl:enquanto	_
+13	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	14	expl	14:expl	_
+14	reposicionar	reposicionar	VERB	_	VerbForm=Inf	12	xcomp	12:xcomp	SpaceAfter=No
+15	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0025
+# text = "Se Lula apoiar Barbosa, Alckmin precisará de um novo discurso que ressoe com os anseios da população", afirmou Rodrigo Stumpf, da Universidade Federal do Rio Grande do Sul.
+1	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+2	Se	se	SCONJ	_	_	4	mark	4:mark	_
+3	Lula	Lula	PROPN	_	_	4	nsubj	4:nsubj	_
+4	apoiar	apoiar	VERB	_	Number=Sing|Person=3|VerbForm=Inf	8	advcl	8:advcl:se	_
+5	Barbosa	Barbosa	PROPN	_	_	4	obj	4:obj	SpaceAfter=No
+6	,	,	PUNCT	_	_	4	punct	4:punct	_
+7	Alckmin	Alckmin	PROPN	_	_	8	nsubj	8:nsubj	_
+8	precisará	precisar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	23	ccomp:speech	23:ccomp:speech	_
+9	de	de	ADP	_	_	12	case	12:case	_
+10	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+11	novo	novo	ADJ	_	Gender=Masc|Number=Sing	12	amod	12:amod	_
+12	discurso	discurso	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:de|14:nsubj	_
+13	que	que	PRON	_	PronType=Rel	14	nsubj	12:ref	_
+14	ressoe	ressoar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	acl:relcl	12:acl:relcl	_
+15	com	com	ADP	_	_	17	case	17:case	_
+16	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	17:det	_
+17	anseios	anseio	NOUN	_	Gender=Masc|Number=Plur	14	obl	14:obl:com	_
+18-19	da	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	população	população	NOUN	_	Gender=Fem|Number=Sing	17	nmod	17:nmod:de	SpaceAfter=No
+21	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+22	,	,	PUNCT	_	_	8	punct	8:punct	_
+23	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+24	Rodrigo	Rodrigo	PROPN	_	_	23	nsubj	23:nsubj	_
+25	Stumpf	Stumpf	PROPN	_	_	24	flat:name	24:flat:name	SpaceAfter=No
+26	,	,	PUNCT	_	_	29	punct	29:punct	_
+27-28	da	_	_	_	_	_	_	_	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	Universidade	Universidade	PROPN	_	_	24	nmod	24:nmod:de	_
+30	Federal	Federal	PROPN	_	_	29	flat:name	29:flat:name	_
+31-32	do	_	_	_	_	_	_	_	_
+31	de	de	ADP	_	_	33	case	33:case	_
+32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	33:det	_
+33	Rio	Rio	PROPN	_	_	29	flat:name	29:flat:name	_
+34	Grande	Grande	PROPN	_	_	29	flat:name	29:flat:name	_
+35-36	do	_	_	_	_	_	_	_	_
+35	de	de	ADP	_	_	37	case	37:case	_
+36	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	37:det	_
+37	Sul	Sul	PROPN	_	_	29	flat:name	29:flat:name	SpaceAfter=No
+38	.	.	PUNCT	_	_	23	punct	23:punct	_
+
+# sent_id = S0027
+# text = Jair Bolsonaro, o candidato que surpreendeu com sua ascensão nas pesquisas, continua firme, mas analistas apontam que essa aliança pode desviar parte de seu eleitorado, especialmente aqueles que valorizam a integridade e a luta contra a corrupção.
+1	Jair	Jair	PROPN	_	_	15	nsubj	15:nsubj|16:nsubj	_
+2	Bolsonaro	Bolsonaro	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	5	punct	5:punct	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	candidato	candidato	NOUN	_	Gender=Masc|Number=Sing	1	appos	1:appos|7:nsubj	_
+6	que	que	PRON	_	PronType=Rel	7	nsubj	5:ref	_
+7	surpreendeu	surpreender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_
+8	com	com	ADP	_	_	10	case	10:case	_
+9	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	10	det	10:det	_
+10	ascensão	ascensão	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:com	_
+11-12	nas	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	13:det	_
+13	pesquisas	pesquisa	NOUN	_	Gender=Fem|Number=Plur	10	nmod	10:nmod:em	SpaceAfter=No
+14	,	,	PUNCT	_	_	5	punct	5:punct	_
+15	continua	continuar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+16	firme	firme	ADJ	_	Number=Sing	15	xcomp	15:xcomp	SpaceAfter=No
+17	,	,	PUNCT	_	_	20	punct	20:punct	_
+18	mas	mas	CCONJ	_	_	20	cc	20:cc	_
+19	analistas	analista	NOUN	_	Number=Plur	20	nsubj	20:nsubj	_
+20	apontam	apontar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	conj	15:conj:mas	_
+21	que	que	SCONJ	_	_	24	mark	24:mark	_
+22	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	23	det	23:det	_
+23	aliança	aliança	NOUN	_	Gender=Fem|Number=Sing	24	nsubj	24:nsubj|25:nsubj	_
+24	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	ccomp	20:ccomp	_
+25	desviar	desviar	VERB	_	VerbForm=Inf	24	xcomp	24:xcomp	_
+26	parte	parte	NOUN	_	Gender=Fem|Number=Sing	25	obj	25:obj	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	29	det	29:det	_
+29	eleitorado	eleitorado	NOUN	_	Gender=Masc|Number=Sing	26	nmod	26:nmod:de	SpaceAfter=No
+30	,	,	PUNCT	_	_	32	punct	32:punct	_
+31	especialmente	especialmente	ADV	_	_	32	advmod	32:advmod	_
+32	aqueles	aquele	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	26	conj	25:obj|26:conj|34:nsubj	_
+33	que	que	PRON	_	PronType=Rel	34	nsubj	32:ref	_
+34	valorizam	valorizar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	32	acl:relcl	32:acl:relcl	_
+35	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	36:det	_
+36	integridade	integridade	NOUN	_	Gender=Fem|Number=Sing	34	obj	34:obj	_
+37	e	e	CCONJ	_	_	39	cc	39:cc	_
+38	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	39:det	_
+39	luta	luta	NOUN	_	Gender=Fem|Number=Sing	36	conj	34:obj|36:conj:e	_
+40	contra	contra	ADP	_	_	42	case	42:case	_
+41	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	42:det	_
+42	corrupção	corrupção	NOUN	_	Gender=Fem|Number=Sing	39	nmod	39:nmod:contra	SpaceAfter=No
+43	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0029
+# text = Acompanhe os desdobramentos dessa bomba política e fique atento aos próximos passos dos candidatos!
+1	Acompanhe	acompanhar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	3:det	_
+3	desdobramentos	desdobramento	NOUN	_	Gender=Masc|Number=Plur	1	obj	1:obj	_
+4-5	dessa	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	6	det	6:det	_
+6	bomba	bomba	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:de	_
+7	política	político	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	fique	ficar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	1	conj	1:conj:e	_
+10	atento	atento	ADJ	_	Gender=Masc|Number=Sing	9	xcomp	9:xcomp	_
+11-12	aos	_	_	_	_	_	_	_	_
+11	a	a	ADP	_	_	14	case	14:case	_
+12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	14:det	_
+13	próximos	próximo	ADJ	_	Gender=Masc|Number=Plur	14	amod	14:amod	_
+14	passos	passo	NOUN	_	Gender=Masc|Number=Plur	10	obl	10:obl:a	_
+15-16	dos	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	17:det	_
+17	candidatos	candidato	NOUN	_	Gender=Masc|Number=Plur	14	nmod	14:nmod:de	SpaceAfter=No
+18	!	!	PUNCT	_	_	1	punct	1:punct	_

@@ -1,0 +1,165 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = O PT é uma piada pronta!
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	PT	PT	PROPN	_	_	5	nsubj	5:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+4	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	piada	piada	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+6	pronta	pronto	ADJ	_	Gender=Fem|Number=Sing	5	amod	5:amod	SpaceAfter=No
+7	!	!	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0003
+# text = Senador tenta defender Dilma das "pedaladas" e acaba complicando Lula.
+1	Senador	senador	NOUN	_	Gender=Masc|Number=Sing	2	nsubj	2:nsubj|3:nsubj|11:nsubj|12:nsubj	_
+2	tenta	tentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	defender	defender	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	_
+4	Dilma	Dilma	PROPN	_	_	3	obj	3:obj	_
+5-6	das	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	8	case	8:case	_
+6	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	8:det	_
+7	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	pedaladas	pedalada	NOUN	_	Gender=Fem|Number=Plur	3	obl	3:obl:de	SpaceAfter=No
+9	"	"	PUNCT	_	_	8	punct	8:punct	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	acaba	acabar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:e	_
+12	complicando	complicar	VERB	_	VerbForm=Ger	11	xcomp	11:xcomp	_
+13	Lula	Lula	PROPN	_	_	12	obj	12:obj	SpaceAfter=No
+14	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = Lindbergh Farias, o "lindinho" tentou defender Dilma [das pedaladas fiscais] usando um argumento que até uma criança de 6 anos usaria.
+1	Lindbergh	Lindbergh	PROPN	_	_	8	nsubj	8:nsubj|9:nsubj	_
+2	Farias	Farias	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+5	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+6	lindinho	lindinho	NOUN	_	Gender=Masc|Number=Sing	1	appos	1:appos	SpaceAfter=No
+7	"	"	PUNCT	_	_	6	punct	6:punct	_
+8	tentou	tentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	defender	defender	VERB	_	VerbForm=Inf	8	xcomp	8:xcomp	_
+10	Dilma	Dilma	PROPN	_	_	9	obj	9:obj	_
+11	[	[	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+12-13	das	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	14:det	_
+14	pedaladas	pedalada	NOUN	_	Gender=Fem|Number=Plur	10	nmod	10:nmod:de	_
+15	fiscais	fiscal	ADJ	_	Number=Plur	14	amod	14:amod	SpaceAfter=No
+16	]	]	PUNCT	_	_	14	punct	14:punct	_
+17	usando	usar	VERB	_	VerbForm=Ger	9	advcl	9:advcl	_
+18	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	argumento	argumento	NOUN	_	Gender=Masc|Number=Sing	17	obj	17:obj|27:obj	_
+20	que	que	PRON	_	PronType=Rel	27	obj	19:ref	_
+21	até	até	ADV	_	_	23	advmod	23:advmod	_
+22	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	criança	criança	NOUN	_	Gender=Fem|Number=Sing	27	nsubj	27:nsubj	_
+24	de	de	ADP	_	_	26	case	26:case	_
+25	6	6	NUM	_	NumType=Card	26	nummod	26:nummod	_
+26	anos	ano	NOUN	_	Gender=Masc|Number=Plur	23	nmod	23:nmod:de	_
+27	usaria	usar	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	19	acl:relcl	19:acl:relcl	SpaceAfter=No
+28	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0007
+# text = O argumento do nobre petista [agora a noite no senado] foi o seguinte: Dilma não está errada.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	argumento	argumento	NOUN	_	Gender=Masc|Number=Sing	16	nsubj	16:nsubj	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	6	case	6:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+5	nobre	nobre	ADJ	_	Number=Sing	6	amod	6:amod	_
+6	petista	petista	NOUN	_	Number=Sing	2	nmod	2:nmod:de	_
+7	[	[	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+8	agora	agora	ADV	_	_	10	advmod	10:advmod	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	noite	noite	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod	_
+11-12	no	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	senado	senado	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:em	SpaceAfter=No
+14	]	]	PUNCT	_	_	10	punct	10:punct	_
+15	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	cop	16:cop	_
+16	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	0	root	0:root	_
+17	seguinte	seguinte	ADJ	_	Number=Sing	16	amod	16:amod	SpaceAfter=No
+18	:	:	PUNCT	_	_	22	punct	22:punct	_
+19	Dilma	Dilma	PROPN	_	_	22	nsubj	22:nsubj	_
+20	não	não	ADV	_	_	22	advmod	22:advmod	_
+21	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	cop	22:cop	_
+22	errada	errado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	16	parataxis	16:parataxis	SpaceAfter=No
+23	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0009
+# text = Quer uma prova disso?
+1	Quer	querer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	prova	prova	NOUN	_	Gender=Fem|Number=Sing	1	obj	1:obj	_
+4-5	disso	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	3	nmod	3:nmod:de	_
+6	?	?	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0011
+# text = Lula também assinou decretos suplementares em 2009 Durante sua fala, o senador Lindbergh desfez do conceituado jurista, sorriu com sarcasmo e ainda tentou defender o indefensável.
+1	Lula	Lula	PROPN	_	_	3	nsubj	3:nsubj	_
+2	também	também	ADV	_	_	3	advmod	3:advmod	_
+3	assinou	assinar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	decretos	decreto	NOUN	_	Gender=Masc|Number=Plur	3	obj	3:obj	_
+5	suplementares	suplementar	ADJ	_	Number=Plur	4	amod	4:amod	_
+6	em	em	ADP	_	_	7	case	7:case	_
+7	2009	2009	NUM	_	NumType=Card	3	obl	3:obl:em	_
+8	Durante	durante	ADP	_	_	10	case	10:case	_
+9	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	10	det	10:det	_
+10	fala	fala	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl:durante	SpaceAfter=No
+11	,	,	PUNCT	_	_	10	punct	10:punct	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	senador	senador	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	15:nsubj|21:nsubj|26:nsubj|27:nsubj	_
+14	Lindbergh	Lindbergh	PROPN	_	_	13	nmod	13:nmod	_
+15	desfez	desfazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	dep	3:dep	_
+16-17	do	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	19	case	19:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+18	conceituado	conceituado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	19	amod	19:amod	_
+19	jurista	jurista	NOUN	_	Number=Sing	15	obl	15:obl:de	SpaceAfter=No
+20	,	,	PUNCT	_	_	21	punct	21:punct	_
+21	sorriu	sorrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	conj	3:dep|15:conj:e	_
+22	com	com	ADP	_	_	23	case	23:case	_
+23	sarcasmo	sarcasmo	NOUN	_	Gender=Masc|Number=Sing	21	obl	21:obl:com	_
+24	e	e	CCONJ	_	_	26	cc	26:cc	_
+25	ainda	ainda	ADV	_	_	26	advmod	26:advmod	_
+26	tentou	tentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	conj	3:dep|15:conj:e	_
+27	defender	defender	VERB	_	VerbForm=Inf	26	xcomp	26:xcomp	_
+28	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	27	obj	27:obj	_
+29	indefensável	indefensável	ADJ	_	Number=Sing	28	amod	28:amod	SpaceAfter=No
+30	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0013
+# text = E o pior, acabou colocando Lula no mesmo saco!
+1	E	e	CCONJ	_	_	5	cc	5:cc	_
+2	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	nsubj:outer	5:nsubj:outer	_
+3	pior	pior	ADJ	_	Number=Sing	2	amod	2:amod	SpaceAfter=No
+4	,	,	PUNCT	_	_	2	punct	2:punct	_
+5	acabou	acabar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	colocando	colocar	VERB	_	VerbForm=Ger	5	xcomp	5:xcomp	_
+7	Lula	Lula	PROPN	_	_	6	obj	6:obj	_
+8-9	no	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	11	case	11:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+10	mesmo	mesmo	DET	_	Gender=Masc|Number=Sing|PronType=Dem	11	det	11:det	_
+11	saco	saco	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:em	SpaceAfter=No
+12	!	!	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0015
+# text = Ou seja, Dilma cometeu crimes [...] e Lula também!
+1	Ou	ou	CCONJ	_	ExtPos=CCONJ	5	cc	5:cc	_
+2	seja	ser	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	fixed	1:fixed	SpaceAfter=No
+3	,	,	PUNCT	_	_	1	punct	1:punct	_
+4	Dilma	Dilma	PROPN	_	_	5	nsubj	5:nsubj	_
+5	cometeu	cometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	crimes	crime	NOUN	_	Gender=Masc|Number=Plur	5	obj	5:obj	_
+7	[	[	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	.	.	PUNCT	_	_	6	parataxis	6:parataxis	SpaceAfter=No
+9	..	..	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+10	]	]	PUNCT	_	_	8	punct	8:punct	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	Lula	Lula	PROPN	_	_	5	conj	5:conj:e	_
+13	também	também	ADV	_	_	5	conj	5:conj	SpaceAfter=No
+14	!	!	PUNCT	_	_	5	punct	5:punct	_

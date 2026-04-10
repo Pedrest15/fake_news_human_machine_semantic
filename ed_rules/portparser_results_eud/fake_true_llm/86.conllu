@@ -1,0 +1,335 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Atenção: A nova subvariante BQ.
+1	Atenção	atenção	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+2	:	:	PUNCT	_	_	5	punct	5:punct	_
+3	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+4	nova	novo	ADJ	_	Gender=Fem|Number=Sing	5	amod	5:amod	_
+5	subvariante	subvariante	NOUN	_	Gender=Fem|Number=Sing	1	parataxis	1:parataxis	_
+6	BQ	BQ	PROPN	_	_	5	nmod	5:nmod	SpaceAfter=No
+7	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = 1 da COVID-19, que já causou uma morte em São Paulo, está se espalhando rapidamente pelo Brasil! Especialistas estão em alerta máximo, temendo uma nova onda devastadora.
+1	1	1	NUM	_	NumType=Card	17	nsubj	8:nsubj|17:nsubj	_
+2-3	da	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	COVID-19	covid-19	NUM	_	NumType=Card	1	nmod	1:nmod:de	SpaceAfter=No
+5	,	,	PUNCT	_	_	8	punct	8:punct	_
+6	que	que	PRON	_	PronType=Rel	8	nsubj	1:ref	_
+7	já	já	ADV	_	_	8	advmod	8:advmod	_
+8	causou	causar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+9	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	morte	morte	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	_
+11	em	em	ADP	_	_	12	case	12:case	_
+12	São	São	PROPN	_	_	8	obl	8:obl:em	_
+13	Paulo	Paulo	PROPN	_	_	12	flat:name	12:flat:name	SpaceAfter=No
+14	,	,	PUNCT	_	_	8	punct	8:punct	_
+15	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux	17:aux	_
+16	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	17	expl	17:expl	_
+17	espalhando	espalhar	VERB	_	VerbForm=Ger	0	root	0:root	_
+18	rapidamente	rapidamente	ADV	_	_	17	advmod	17:advmod	_
+19-20	pelo	_	_	_	_	_	_	_	_
+19	por	por	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	Brasil	Brasil	PROPN	_	_	17	obl	17:obl:por	SpaceAfter=No
+22	!	!	PUNCT	_	_	26	punct	26:punct	_
+23	Especialistas	especialista	NOUN	_	Number=Plur	26	nsubj	26:nsubj	_
+24	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	26	cop	26:cop	_
+25	em	em	ADP	_	_	26	case	26:case	_
+26	alerta	alerta	NOUN	_	Number=Sing	17	parataxis	17:parataxis	_
+27	máximo	máximo	ADJ	_	Gender=Masc|Number=Sing	26	amod	26:amod	SpaceAfter=No
+28	,	,	PUNCT	_	_	29	punct	29:punct	_
+29	temendo	temer	VERB	_	VerbForm=Ger	26	advcl	26:advcl	_
+30	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	32	det	32:det	_
+31	nova	novo	ADJ	_	Gender=Fem|Number=Sing	32	amod	32:amod	_
+32	onda	onda	NOUN	_	Gender=Fem|Number=Sing	29	obj	29:obj	_
+33	devastadora	devastador	ADJ	_	Gender=Fem|Number=Sing	32	amod	32:amod	SpaceAfter=No
+34	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0005
+# text = A paciente falecida, de 72 anos, tinha múltiplas comorbidades e não resistiu após sete dias de contaminação.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	paciente	paciente	NOUN	_	Number=Sing	9	nsubj	9:nsubj|14:nsubj	_
+3	falecida	falecido	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	2	amod	2:amod	SpaceAfter=No
+4	,	,	PUNCT	_	_	7	punct	7:punct	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	72	72	NUM	_	NumType=Card	7	nummod	7:nummod	_
+7	anos	ano	NOUN	_	Gender=Masc|Number=Plur	2	nmod	2:nmod:de	SpaceAfter=No
+8	,	,	PUNCT	_	_	7	punct	7:punct	_
+9	tinha	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+10	múltiplas	múltiplo	ADJ	_	Gender=Fem|Number=Plur	11	amod	11:amod	_
+11	comorbidades	comorbidade	NOUN	_	Gender=Fem|Number=Plur	9	obj	9:obj	_
+12	e	e	CCONJ	_	_	14	cc	14:cc	_
+13	não	não	ADV	_	_	14	advmod	14:advmod	_
+14	resistiu	resistir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	conj	9:conj:e	_
+15	após	após	ADP	_	_	17	case	17:case	_
+16	sete	sete	NUM	_	NumType=Card	17	nummod	17:nummod	_
+17	dias	dia	NOUN	_	Gender=Masc|Number=Plur	14	obl	14:obl:após	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	contaminação	contaminação	NOUN	_	Gender=Fem|Number=Sing	17	nmod	17:nmod:de	SpaceAfter=No
+20	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0007
+# text = A BQ.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	BQ	BQ	PROPN	_	_	0	root	0:root	SpaceAfter=No
+3	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0009
+# text = 1, a mesma cepa que sobrecarregou hospitais na Europa, apresenta uma alta transmissibilidade e pode estar por trás do recente aumento nos testes positivos de COVID-19 em farmácias.
+1	1	1	NUM	_	NumType=Card	13	nsubj	13:nsubj|18:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	5	punct	5:punct	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+4	mesma	mesmo	DET	_	Gender=Fem|Number=Sing|PronType=Dem	5	det	5:det	_
+5	cepa	cepa	NOUN	_	Gender=Fem|Number=Sing	1	appos	1:appos|7:nsubj	_
+6	que	que	PRON	_	PronType=Rel	7	nsubj	5:ref	_
+7	sobrecarregou	sobrecarregar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_
+8	hospitais	hospital	NOUN	_	Gender=Masc|Number=Plur	7	obj	7:obj	_
+9-10	na	_	_	_	_	_	_	_	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	Europa	Europa	PROPN	_	_	7	obl	7:obl:em	SpaceAfter=No
+12	,	,	PUNCT	_	_	5	punct	5:punct	_
+13	apresenta	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+14	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+15	alta	alto	ADJ	_	Gender=Fem|Number=Sing	16	amod	16:amod	_
+16	transmissibilidade	transmissibilidade	NOUN	_	Gender=Fem|Number=Sing	13	obj	13:obj	_
+17	e	e	CCONJ	_	_	18	cc	18:cc	_
+18	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	conj	13:conj:e	_
+19	estar	estar	AUX	_	VerbForm=Inf	21	cop	21:cop	_
+20	por	por	ADP	_	_	21	case	21:case	_
+21	trás	trás	ADV	_	_	18	advmod	18:advmod	_
+22-23	do	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	25	case	25:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+24	recente	recente	ADJ	_	Number=Sing	25	amod	25:amod	_
+25	aumento	aumento	NOUN	_	Gender=Masc|Number=Sing	21	obl	21:obl:de	_
+26-27	nos	_	_	_	_	_	_	_	_
+26	em	em	ADP	_	_	28	case	28:case	_
+27	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	28:det	_
+28	testes	teste	NOUN	_	Gender=Masc|Number=Plur	25	nmod	25:nmod:em	_
+29	positivos	positivo	ADJ	_	Gender=Masc|Number=Plur	28	amod	28:amod	_
+30	de	de	ADP	_	_	31	case	31:case	_
+31	COVID-19	covid-19	NUM	_	NumType=Card	28	nmod	28:nmod:de	_
+32	em	em	ADP	_	_	33	case	33:case	_
+33	farmácias	farmácia	NOUN	_	Gender=Fem|Number=Plur	28	nmod	28:nmod:em	SpaceAfter=No
+34	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0011
+# text = Dados alarmantes da ABRAFARMA indicam que na terceira semana de outubro, 15,5% dos testes realizados tiveram resultados positivos, um salto significativo em comparação com setembro.
+1	Dados	dado	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	6:nsubj	_
+2	alarmantes	alarmante	ADJ	_	Number=Plur	1	amod	1:amod	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	ABRAFARMA	ABRAFARMA	PROPN	_	_	1	nmod	1:nmod:de	_
+6	indicam	indicar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	que	que	SCONJ	_	_	21	mark	21:mark	_
+8-9	na	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	11	case	11:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+10	terceira	terceiro	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	11	amod	11:amod	_
+11	semana	semana	NOUN	_	Gender=Fem|Number=Sing	21	obl	21:obl:em	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	outubro	outubro	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:de	SpaceAfter=No
+14	,	,	PUNCT	_	_	11	punct	11:punct	_
+15	15,5	15,5	NUM	_	NumType=Card	16	nummod	16:nummod	SpaceAfter=No
+16	%	%	SYM	_	_	21	nsubj	21:nsubj	_
+17-18	dos	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	19:det	_
+19	testes	teste	NOUN	_	Gender=Masc|Number=Plur	16	nmod	16:nmod:de	_
+20	realizados	realizar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	19	acl	19:acl	_
+21	tiveram	ter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	6	ccomp	6:ccomp	_
+22	resultados	resultado	NOUN	_	Gender=Masc|Number=Plur	21	obj	21:obj	_
+23	positivos	positivo	ADJ	_	Gender=Masc|Number=Plur	22	amod	22:amod	SpaceAfter=No
+24	,	,	PUNCT	_	_	26	punct	26:punct	_
+25	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	salto	salto	NOUN	_	Gender=Masc|Number=Sing	22	appos	22:appos	_
+27	significativo	significativo	ADJ	_	Gender=Masc|Number=Sing	26	amod	26:amod	_
+28	em	em	ADP	_	_	29	case	29:case	_
+29	comparação	comparação	NOUN	_	Gender=Fem|Number=Sing	26	nmod	26:nmod:em	_
+30	com	com	ADP	_	_	31	case	31:case	_
+31	setembro	setembro	NOUN	_	Gender=Masc|Number=Sing	29	nmod	29:nmod:com	SpaceAfter=No
+32	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0013
+# text = E mais: o Instituto Todos pela Saúde (ITPS) revelou um aumento vertiginoso de 566% na taxa de exames positivos em laboratórios particulares, passando de 3% para 17% em menos de um mês.
+1	E	e	CCONJ	_	_	13	cc	13:cc	_
+2	mais	mais	ADV	_	_	13	advmod	13:advmod	SpaceAfter=No
+3	:	:	PUNCT	_	_	2	punct	2:punct	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	Instituto	Instituto	PROPN	_	_	13	nsubj	13:nsubj	_
+6	Todos	Todos	PROPN	_	_	5	flat:name	5:flat:name	_
+7-8	pela	_	_	_	_	_	_	_	_
+7	por	por	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	Saúde	Saúde	PROPN	_	_	5	flat:name	5:flat:name	_
+10	(	(	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+11	ITPS	ITPS	PROPN	_	_	5	appos	5:appos	SpaceAfter=No
+12	)	)	PUNCT	_	_	11	punct	11:punct	_
+13	revelou	revelar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	aumento	aumento	NOUN	_	Gender=Masc|Number=Sing	13	obj	13:obj	_
+16	vertiginoso	vertiginoso	ADJ	_	Gender=Masc|Number=Sing	15	amod	15:amod	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	566	566	NUM	_	NumType=Card	19	nummod	19:nummod	SpaceAfter=No
+19	%	%	SYM	_	_	15	nmod	15:nmod:de	_
+20-21	na	_	_	_	_	_	_	_	_
+20	em	em	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	taxa	taxa	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:em	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	exames	exame	NOUN	_	Gender=Masc|Number=Plur	22	nmod	22:nmod:de	_
+25	positivos	positivo	ADJ	_	Gender=Masc|Number=Plur	24	amod	24:amod	_
+26	em	em	ADP	_	_	27	case	27:case	_
+27	laboratórios	laboratório	NOUN	_	Gender=Masc|Number=Plur	24	nmod	24:nmod:em	_
+28	particulares	particular	ADJ	_	Number=Plur	27	amod	27:amod	SpaceAfter=No
+29	,	,	PUNCT	_	_	30	punct	30:punct	_
+30	passando	passar	VERB	_	VerbForm=Ger	13	advcl	13:advcl	_
+31	de	de	ADP	_	_	33	case	33:case	_
+32	3	3	NUM	_	NumType=Card	33	nummod	33:nummod	SpaceAfter=No
+33	%	%	SYM	_	_	30	obl	30:obl:de	_
+34	para	para	ADP	_	_	36	case	36:case	_
+35	17	17	NUM	_	NumType=Card	36	nummod	36:nummod	SpaceAfter=No
+36	%	%	SYM	_	_	30	obl	30:obl:para	_
+37	em	em	ADP	_	_	41	case	41:case	_
+38	menos	menos	ADV	_	ExtPos=ADV	40	advmod	40:advmod	_
+39	de	de	ADP	_	_	38	fixed	38:fixed	_
+40	um	um	NUM	_	Gender=Masc|NumType=Card	41	nummod	41:nummod	_
+41	mês	mês	NOUN	_	Gender=Masc|Number=Sing	30	obl	30:obl:em	SpaceAfter=No
+42	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0015
+# text = Especialistas como a epidemiologista Ethel Maciel alertam que, apesar de não haver indicação de maior letalidade, a falta de antivirais no SUS pode agravar o quadro no país.
+1	Especialistas	especialista	NOUN	_	Number=Plur	7	nsubj	7:nsubj	_
+2	como	como	ADP	_	_	4	case	4:case	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	epidemiologista	epidemiologista	NOUN	_	Number=Sing	1	nmod	1:nmod:como	_
+5	Ethel	Ethel	PROPN	_	_	4	nmod	4:nmod	_
+6	Maciel	Maciel	PROPN	_	_	5	flat:name	5:flat:name	_
+7	alertam	alertar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	que	que	SCONJ	_	_	26	mark	26:mark	SpaceAfter=No
+9	,	,	PUNCT	_	_	10	punct	10:punct	_
+10	apesar	apesar	ADV	_	_	26	advmod	26:advmod	_
+11	de	de	ADP	_	_	13	mark	13:mark	_
+12	não	não	ADV	_	_	13	advmod	13:advmod	_
+13	haver	haver	VERB	_	VerbForm=Inf	10	acl	10:acl:de	_
+14	indicação	indicação	NOUN	_	Gender=Fem|Number=Sing	13	obj	13:obj	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	maior	maior	ADJ	_	Number=Sing	17	amod	17:amod	_
+17	letalidade	letalidade	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:de	SpaceAfter=No
+18	,	,	PUNCT	_	_	10	punct	10:punct	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	falta	falta	NOUN	_	Gender=Fem|Number=Sing	26	nsubj	26:nsubj|27:nsubj	_
+21	de	de	ADP	_	_	22	case	22:case	_
+22	antivirais	antiviral	NOUN	_	Number=Plur	20	nmod	20:nmod:de	_
+23-24	no	_	_	_	_	_	_	_	_
+23	em	em	ADP	_	_	25	case	25:case	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	SUS	SUS	PROPN	_	_	20	nmod	20:nmod:em	_
+26	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	ccomp	7:ccomp	_
+27	agravar	agravar	VERB	_	VerbForm=Inf	26	xcomp	26:xcomp	_
+28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	29:det	_
+29	quadro	quadro	NOUN	_	Gender=Masc|Number=Sing	27	obj	27:obj	_
+30-31	no	_	_	_	_	_	_	_	_
+30	em	em	ADP	_	_	32	case	32:case	_
+31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+32	país	país	NOUN	_	Gender=Masc|Number=Sing	27	obl	27:obl:em	SpaceAfter=No
+33	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0017
+# text = A variante já foi detectada no Amazonas e em outros estados, sugerindo uma disseminação nacional.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	variante	variante	NOUN	_	Number=Sing	5	nsubj:pass	5:nsubj:pass	_
+3	já	já	ADV	_	_	5	advmod	5:advmod	_
+4	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	aux:pass	5:aux:pass	_
+5	detectada	detectar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+6-7	no	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	Amazonas	Amazonas	PROPN	_	_	5	obl	5:obl:em	_
+9	e	e	CCONJ	_	_	12	cc	12:cc	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	12	det	12:det	_
+12	estados	estado	NOUN	_	Gender=Masc|Number=Plur	8	conj	5:obl:em|8:conj:e	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	sugerindo	sugerir	VERB	_	VerbForm=Ger	5	advcl	5:advcl	_
+15	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	disseminação	disseminação	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	_
+17	nacional	nacional	ADJ	_	Number=Sing	16	amod	16:amod	SpaceAfter=No
+18	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0019
+# text = O infectologista Marco Aurélio Sáfadi reforça que vacinas continuam eficazes, mas o relaxamento das medidas de proteção como uso de máscaras e distanciamento social pode estar facilitando a propagação.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	infectologista	infectologista	NOUN	_	Number=Sing	6	nsubj	6:nsubj	_
+3	Marco	Marco	PROPN	_	_	2	nmod	2:nmod	_
+4	Aurélio	Aurélio	PROPN	_	_	3	flat:name	3:flat:name	_
+5	Sáfadi	Sáfadi	PROPN	_	_	3	flat:name	3:flat:name	_
+6	reforça	reforçar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	que	que	SCONJ	_	_	9	mark	9:mark	_
+8	vacinas	vacina	NOUN	_	Gender=Fem|Number=Plur	9	nsubj	9:nsubj|10:nsubj	_
+9	continuam	continuar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	ccomp	6:ccomp	_
+10	eficazes	eficaz	ADJ	_	Number=Plur	9	xcomp	9:xcomp	SpaceAfter=No
+11	,	,	PUNCT	_	_	27	punct	27:punct	_
+12	mas	mas	CCONJ	_	_	27	cc	27:cc	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	relaxamento	relaxamento	NOUN	_	Gender=Masc|Number=Sing	27	nsubj	27:nsubj|29:nsubj	_
+15-16	das	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	17:det	_
+17	medidas	medida	NOUN	_	Gender=Fem|Number=Plur	14	nmod	14:nmod:de	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	proteção	proteção	NOUN	_	Gender=Fem|Number=Sing	17	nmod	17:nmod:de	_
+20	como	como	ADP	_	_	21	case	21:case|25:case	_
+21	uso	uso	NOUN	_	Gender=Masc|Number=Sing	17	nmod	17:nmod:como	_
+22	de	de	ADP	_	_	23	case	23:case	_
+23	máscaras	máscara	NOUN	_	Gender=Fem|Number=Plur	21	nmod	21:nmod:de	_
+24	e	e	CCONJ	_	_	25	cc	25:cc	_
+25	distanciamento	distanciamento	NOUN	_	Gender=Masc|Number=Sing	21	conj	17:nmod:como|21:conj:e	_
+26	social	social	ADJ	_	Number=Sing	25	amod	25:amod	_
+27	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	6:conj:mas	_
+28	estar	estar	AUX	_	VerbForm=Inf	29	aux	29:aux	_
+29	facilitando	facilitar	VERB	_	VerbForm=Ger	27	xcomp	27:xcomp	_
+30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+31	propagação	propagação	NOUN	_	Gender=Fem|Number=Sing	29	obj	29:obj	SpaceAfter=No
+32	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0021
+# text = Jamal Suleiman, infectologista do Hospital Emílio Ribas, enfatiza a necessidade de manter o calendário vacinal, especialmente para as crianças, que ainda apresentam baixas taxas de imunização.
+1	Jamal	Jamal	PROPN	_	_	11	nsubj	11:nsubj	_
+2	Suleiman	Suleiman	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	infectologista	infectologista	NOUN	_	Number=Sing	1	appos	1:appos	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Hospital	Hospital	PROPN	_	_	4	nmod	4:nmod:de	_
+8	Emílio	Emílio	PROPN	_	_	7	flat:name	7:flat:name	_
+9	Ribas	Ribas	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+10	,	,	PUNCT	_	_	4	punct	4:punct	_
+11	enfatiza	enfatizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	necessidade	necessidade	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	_
+14	de	de	ADP	_	_	15	mark	15:mark	_
+15	manter	manter	VERB	_	VerbForm=Inf	13	acl	13:acl:de	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	calendário	calendário	NOUN	_	Gender=Masc|Number=Sing	15	obj	15:obj	_
+18	vacinal	vacinal	ADJ	_	Number=Sing	17	amod	17:amod	SpaceAfter=No
+19	,	,	PUNCT	_	_	23	punct	23:punct	_
+20	especialmente	especialmente	ADV	_	_	23	advmod	23:advmod	_
+21	para	para	ADP	_	_	23	case	23:case	_
+22	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	23:det	_
+23	crianças	criança	NOUN	_	Gender=Fem|Number=Plur	15	obl	15:obl:para|27:nsubj	SpaceAfter=No
+24	,	,	PUNCT	_	_	27	punct	27:punct	_
+25	que	que	PRON	_	PronType=Rel	27	nsubj	23:ref	_
+26	ainda	ainda	ADV	_	_	27	advmod	27:advmod	_
+27	apresentam	apresentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	23	acl:relcl	23:acl:relcl	_
+28	baixas	baixo	ADJ	_	Gender=Fem|Number=Plur	29	amod	29:amod	_
+29	taxas	taxa	NOUN	_	Gender=Fem|Number=Plur	27	obj	27:obj	_
+30	de	de	ADP	_	_	31	case	31:case	_
+31	imunização	imunização	NOUN	_	Gender=Fem|Number=Sing	29	nmod	29:nmod:de	SpaceAfter=No
+32	.	.	PUNCT	_	_	11	punct	11:punct	_

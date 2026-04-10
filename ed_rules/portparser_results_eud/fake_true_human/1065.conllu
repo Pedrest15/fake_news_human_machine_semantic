@@ -1,0 +1,104 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = anvisa proíbe venda de “kinder ovo” (todos) no brasil por causa de salmonela a anvisa proibiu a comercialização e o uso de produtos da “kinder” no brasil.
+1	anvisa	anvisa	NOUN	_	Gender=Fem|Number=Sing	2	nsubj	2:nsubj	_
+2	proíbe	proíbe	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	venda	venda	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	“kinder	“kinder	X	_	Foreign=Yes	3	nmod	3:nmod:de	_
+6	ovo”	ovo”	X	_	Foreign=Yes	5	flat:foreign	5:flat:foreign	_
+7	(	(	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	todos	todo	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	5	parataxis	5:parataxis	SpaceAfter=No
+9	)	)	PUNCT	_	_	8	punct	8:punct	_
+10-11	no	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	brasil	brasil	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:em	_
+13	por	por	ADP	_	_	14	case	14:case	_
+14	causa	causa	NOUN	_	Gender=Fem|Number=Sing	2	obl	2:obl:por	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	salmonela	salmonela	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:de	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	anvisa	anvisa	NOUN	_	Gender=Fem|Number=Sing	19	nsubj	19:nsubj	_
+19	proibiu	proibir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	parataxis	2:parataxis	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	comercialização	comercialização	NOUN	_	Gender=Fem|Number=Sing	19	obj	19:obj	_
+22	e	e	CCONJ	_	_	24	cc	24:cc	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	uso	uso	NOUN	_	Gender=Masc|Number=Sing	21	conj	19:obj|21:conj:e	_
+25	de	de	ADP	_	_	26	case	26:case	_
+26	produtos	produto	NOUN	_	Gender=Masc|Number=Plur	21	nmod	21:nmod:de|24:nmod:de	_
+27-28	da	_	_	_	_	_	_	_	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	“kinder”	“kinder”	X	_	Foreign=Yes	26	nmod	26:nmod:de	_
+30-31	no	_	_	_	_	_	_	_	_
+30	em	em	ADP	_	_	32	case	32:case	_
+31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+32	brasil	brasil	NOUN	_	Gender=Masc|Number=Sing	19	obl	19:obl:em	SpaceAfter=No
+33	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = a medida foi tomada a partir de um comunicado emitido pela rede internacional de autoridade de segurança alimentar (infosan) informando sobre um surto de salmonella encontrado em produtos da marca.
+1	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	medida	medida	NOUN	_	Gender=Fem|Number=Sing	4	nsubj:pass	4:nsubj:pass	_
+3	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	tomada	tomar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5	a	a	ADP	_	_	6	mark	6:mark	_
+6	partir	partir	VERB	_	VerbForm=Inf	4	advcl	4:advcl:a	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	comunicado	comunicado	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:de	_
+10	emitido	emitir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	9	acl	9:acl	_
+11-12	pela	_	_	_	_	_	_	_	_
+11	por	por	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	rede	rede	NOUN	_	Gender=Fem|Number=Sing	10	obl:agent	10:obl:agent	_
+14	internacional	internacional	ADJ	_	Number=Sing	13	amod	13:amod	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	autoridade	autoridade	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:de	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	segurança	segurança	NOUN	_	Number=Sing	16	nmod	16:nmod:de	_
+19	alimentar	alimentar	ADJ	_	Number=Sing	18	amod	18:amod	_
+20	(	(	PUNCT	_	_	21	punct	21:punct	SpaceAfter=No
+21	infosan	infosan	X	_	Foreign=Yes	13	appos	13:appos	SpaceAfter=No
+22	)	)	PUNCT	_	_	21	punct	21:punct	_
+23	informando	informar	VERB	_	VerbForm=Ger	9	acl	9:acl	_
+24	sobre	sobre	ADP	_	_	26	case	26:case	_
+25	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	surto	surto	NOUN	_	Gender=Masc|Number=Sing	23	obl	23:obl:sobre	_
+27	de	de	ADP	_	_	28	case	28:case	_
+28	salmonella	salmonella	NOUN	_	Gender=Fem|Number=Sing	26	nmod	26:nmod:de	_
+29	encontrado	encontrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	26	acl	26:acl	_
+30	em	em	ADP	_	_	31	case	31:case	_
+31	produtos	produto	NOUN	_	Gender=Masc|Number=Plur	29	obl	29:obl:em	_
+32-33	da	_	_	_	_	_	_	_	_
+32	de	de	ADP	_	_	34	case	34:case	_
+33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	34:det	_
+34	marca	marca	NOUN	_	Gender=Fem|Number=Sing	31	nmod	31:nmod:de	SpaceAfter=No
+35	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0005
+# text = , atenção consumidor!
+1	,	,	PUNCT	_	_	2	punct	2:punct	_
+2	atenção	atenção	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+3	consumidor	consumidor	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod	SpaceAfter=No
+4	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0007
+# text = anvisa acaba de proibir comercialização e uso de produtos kinder no brasil.
+1	anvisa	anvisa	NOUN	_	Gender=Fem|Number=Sing	2	nsubj	2:nsubj|4:nsubj	_
+2	acaba	acabar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	de	de	ADP	_	_	4	mark	4:mark	_
+4	proibir	proibir	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	_
+5	comercialização	comercialização	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	uso	uso	NOUN	_	Gender=Masc|Number=Sing	5	conj	4:obj|5:conj:e	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	produtos	produto	NOUN	_	Gender=Masc|Number=Plur	5	nmod	5:nmod:de|7:nmod:de	_
+10	kinder	kinder	X	_	Foreign=Yes	9	nmod	9:nmod	_
+11-12	no	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	brasil	brasil	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:em	SpaceAfter=No
+14	.	.	PUNCT	_	_	2	punct	2:punct	_

@@ -1,0 +1,599 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Pastor que destruiu a vida de Bianca Toledo está solto.
+1	Pastor	pastor	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	3:nsubj|10:nsubj	_
+2	que	que	PRON	_	PronType=Rel	3	nsubj	1:ref	_
+3	destruiu	destruir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	vida	vida	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	Bianca	Bianca	PROPN	_	_	5	nmod	5:nmod:de	_
+8	Toledo	Toledo	PROPN	_	_	7	flat:name	7:flat:name	_
+9	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_
+10	solto	solto	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	SpaceAfter=No
+11	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0003
+# text = Religiosa lamenta: "Minha família está arrasada".
+1	Religiosa	religioso	NOUN	_	Gender=Fem|Number=Sing	2	nsubj	2:nsubj	_
+2	lamenta	lamentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+3	:	:	PUNCT	_	_	8	punct	8:punct	_
+4	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+5	Minha	meu	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	6	det	6:det	_
+6	família	família	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	8:nsubj	_
+7	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop	_
+8	arrasada	arrasado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	2	ccomp:speech	2:ccomp:speech	SpaceAfter=No
+9	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+10	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = Ninguém pode imaginar o que meu filho está passando, tomei as providências necessárias, a partir do momento que eu soube.
+1	Ninguém	ninguém	PRON	_	Number=Sing|PronType=Ind	2	nsubj	2:nsubj|3:nsubj	_
+2	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	imaginar	imaginar	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	_
+4	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	obj	3:obj	_
+5	que	que	PRON	_	PronType=Rel	9	obj	9:obj	_
+6	meu	meu	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	7	det	7:det	_
+7	filho	filho	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	9:nsubj	_
+8	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux	9:aux	_
+9	passando	passar	VERB	_	VerbForm=Ger	3	ccomp	3:ccomp	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	tomei	tomar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	2	parataxis	2:parataxis	_
+12	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	13:det	_
+13	providências	providência	NOUN	_	Gender=Fem|Number=Plur	11	obj	11:obj	_
+14	necessárias	necessário	ADJ	_	Gender=Fem|Number=Plur	13	amod	13:amod	SpaceAfter=No
+15	,	,	PUNCT	_	_	17	punct	17:punct	_
+16	a	a	ADP	_	_	17	mark	17:mark	_
+17	partir	partir	VERB	_	VerbForm=Inf	11	advcl	11:advcl:a	_
+18-19	do	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	momento	momento	NOUN	_	Gender=Masc|Number=Sing	17	obl	17:obl:de|23:obj	_
+21	que	que	PRON	_	PronType=Rel	23	obj	20:ref	_
+22	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	23	nsubj	23:nsubj	_
+23	soube	saber	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	20	acl:relcl	20:acl:relcl	SpaceAfter=No
+24	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0007
+# text = Estou tão perplexa quanto vocês, desabafou Bianca em um vídeo postado no Facebook.
+1	Estou	estar	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+2	tão	tão	ADV	_	_	3	advmod	3:advmod	_
+3	perplexa	perplexo	ADJ	_	Gender=Fem|Number=Sing	7	ccomp:speech	7:ccomp:speech	_
+4	quanto	quanto	SCONJ	_	_	5	mark	5:mark	_
+5	vocês	você	PRON	_	Case=Nom|Number=Plur|Person=2|PronType=Prs	3	advcl	3:advcl:quanto	SpaceAfter=No
+6	,	,	PUNCT	_	_	3	punct	3:punct	_
+7	desabafou	desabafar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	Bianca	Bianca	PROPN	_	_	7	nsubj	7:nsubj	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:em	_
+12	postado	postar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	11	acl	11:acl	_
+13-14	no	_	_	_	_	_	_	_	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	Facebook	Facebook	PROPN	_	_	12	obl	12:obl:em	SpaceAfter=No
+16	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0009
+# text = A religiosa disse ainda que está começando um mês "sabático", onde se dedicará exclusivamente ao filho para ajudá-lo a superar o ocorrido.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	religiosa	religioso	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_
+3	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	ainda	ainda	ADV	_	_	3	advmod	3:advmod	_
+5	que	que	SCONJ	_	_	7	mark	7:mark	_
+6	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	7:aux	_
+7	começando	começar	VERB	_	VerbForm=Ger	3	ccomp	3:ccomp	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	mês	mês	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj|16:obl	_
+10	"	"	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+11	sabático	sabático	ADJ	_	Gender=Masc|Number=Sing	9	amod	9:amod	SpaceAfter=No
+12	"	"	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+13	,	,	PUNCT	_	_	16	punct	16:punct	_
+14	onde	onde	ADV	_	_	16	advmod	9:ref	_
+15	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	16	expl	16:expl	_
+16	dedicará	dedicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	9	acl:relcl	9:acl:relcl	_
+17	exclusivamente	exclusivamente	ADV	_	_	16	advmod	16:advmod	_
+18-19	ao	_	_	_	_	_	_	_	_
+18	a	a	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	filho	filho	NOUN	_	Gender=Masc|Number=Sing	16	obl	16:obl:a	_
+21	para	para	ADP	_	_	22	mark	22:mark	_
+22-23	ajudá-lo	_	_	_	_	_	_	_	_
+22	ajudar	ajudar	VERB	_	VerbForm=Inf	16	advcl	16:advcl:para	_
+23	lo	lo	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	22	obj	22:obj|25:nsubj	_
+24	a	a	ADP	_	_	25	mark	25:mark	_
+25	superar	superar	VERB	_	VerbForm=Inf	22	xcomp	22:xcomp	_
+26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	ocorrido	ocorrido	NOUN	_	Gender=Masc|Number=Sing	25	obj	25:obj	SpaceAfter=No
+28	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0011
+# text = Nunca citei o nome do meu filho, nunca dei entrevistas, a informação vazou.
+1	Nunca	nunca	ADV	_	_	2	advmod	2:advmod	_
+2	citei	citar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	nome	nome	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	8	case	8:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+7	meu	meu	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	8	det	8:det	_
+8	filho	filho	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:de	SpaceAfter=No
+9	,	,	PUNCT	_	_	11	punct	11:punct	_
+10	nunca	nunca	ADV	_	_	11	advmod	11:advmod	_
+11	dei	dar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	2	conj	2:conj	_
+12	entrevistas	entrevista	NOUN	_	Gender=Fem|Number=Plur	11	obj	11:obj	SpaceAfter=No
+13	,	,	PUNCT	_	_	16	punct	16:punct	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	informação	informação	NOUN	_	Gender=Fem|Number=Sing	16	nsubj	16:nsubj	_
+16	vazou	vazar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	parataxis	2:parataxis	SpaceAfter=No
+17	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0012
+# text = desabafou Bianca, extremamente abatida.
+1	desabafou	desabafar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	Bianca	Bianca	PROPN	_	_	1	nsubj	1:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	5	punct	5:punct	_
+4	extremamente	extremamente	ADV	_	_	5	advmod	5:advmod	_
+5	abatida	abatido	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	2	amod	2:amod	SpaceAfter=No
+6	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0014
+# text = Eu descobri que um dos jornalista que ligou pra mim começou a me fazer perguntas por telefone.
+1	Eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	2:nsubj	_
+2	descobri	descobrir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	12	mark	12:mark	_
+4	um	um	NUM	_	Gender=Masc|NumType=Card	12	nsubj	12:nsubj|15:nsubj	_
+5-6	dos	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	7:det	_
+7	jornalista	jornalista	NOUN	_	Number=Sing	4	nmod	4:nmod:de|9:nsubj	_
+8	que	que	PRON	_	PronType=Rel	9	nsubj	7:ref	_
+9	ligou	ligar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	acl:relcl	7:acl:relcl	_
+10	pra	para	ADP	_	_	11	case	11:case	_
+11	mim	mim	PRON	_	Case=Dat|Number=Sing|Person=1|PronType=Prs	9	obl	9:obl:para	_
+12	começou	começar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	ccomp	2:ccomp	_
+13	a	a	ADP	_	_	15	mark	15:mark	_
+14	me	me	PRON	_	Case=Dat|Number=Sing|Person=1|PronType=Prs	15	iobj	15:iobj	_
+15	fazer	fazer	VERB	_	VerbForm=Inf	12	xcomp	12:xcomp	_
+16	perguntas	pergunta	NOUN	_	Gender=Fem|Number=Plur	15	obj	15:obj	_
+17	por	por	ADP	_	_	18	case	18:case	_
+18	telefone	telefone	NOUN	_	Gender=Masc|Number=Sing	15	obl	15:obl:por	SpaceAfter=No
+19	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0016
+# text = Eu achei que ele estava preocupado comigo.
+1	Eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	2:nsubj	_
+2	achei	achar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	6	mark	6:mark	_
+4	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj	6:nsubj	_
+5	estava	estar	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	6	cop	6:cop	_
+6	preocupado	preocupado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	2	ccomp	2:ccomp	_
+7-8	comigo	_	_	_	_	_	_	_	_
+7	com	com	ADP	_	_	8	case	8:case	_
+8	mim	mim	PRON	_	Case=Dat|Number=Sing|Person=1|PronType=Prs	6	obl	6:obl:com	_
+9	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0018
+# text = Enquanto eu conversava com ele, o mesmo estava digitando.
+1	Enquanto	enquanto	SCONJ	_	_	3	mark	3:mark	_
+2	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	3:nsubj	_
+3	conversava	conversar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	10	advcl	10:advcl:enquanto	_
+4	com	com	ADP	_	_	5	case	5:case	_
+5	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	obl	3:obl:com	SpaceAfter=No
+6	,	,	PUNCT	_	_	3	punct	3:punct	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	mesmo	mesmo	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	10	nsubj	10:nsubj	_
+9	estava	estar	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	10	aux	10:aux	_
+10	digitando	digitar	VERB	_	VerbForm=Ger	0	root	0:root	SpaceAfter=No
+11	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0020
+# text = Quando a notícia saiu na internet, o texto estava todo distorcido, como se eu soubesse do caso há muito tempo.
+1	Quando	quando	SCONJ	_	_	4	mark	4:mark	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	notícia	notícia	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+4	saiu	sair	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	advcl	13:advcl:quando	_
+5-6	na	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	internet	internet	NOUN	_	Foreign=Yes|Gender=Fem|Number=Sing	4	obl	4:obl:em	SpaceAfter=No
+8	,	,	PUNCT	_	_	4	punct	4:punct	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	texto	texto	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	13:nsubj	_
+11	estava	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	13	cop	13:cop	_
+12	todo	todo	DET	_	Gender=Masc|Number=Sing|PronType=Ind	13	advmod	13:advmod	_
+13	distorcido	distorcido	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	SpaceAfter=No
+14	,	,	PUNCT	_	_	18	punct	18:punct	_
+15	como	como	SCONJ	_	ExtPos=SCONJ	18	mark	18:mark	_
+16	se	se	SCONJ	_	_	15	fixed	15:fixed	_
+17	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	18	nsubj	18:nsubj	_
+18	soubesse	saber	VERB	_	Mood=Sub|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	13	advcl	13:advcl:como_se	_
+19-20	do	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	caso	caso	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:de	_
+22	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	advcl	18:advcl	_
+23	muito	muito	ADJ	_	Gender=Masc|Number=Sing	24	amod	24:amod	_
+24	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	22	obj	22:obj	SpaceAfter=No
+25	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0022
+# text = Nada disso é verdade.
+1	Nada	nada	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	5	nsubj	5:nsubj	_
+2-3	disso	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	nmod	1:nmod:de	_
+4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+5	verdade	verdade	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+6	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0024
+# text = Estou sabendo desse fato há 20 dias e fico tão perplexa quanto vocês narrou a seus seguidores.
+1	Estou	estar	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	aux	2:aux	_
+2	sabendo	saber	VERB	_	VerbForm=Ger	0	root	0:root	_
+3-4	desse	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	5	det	5:det	_
+5	fato	fato	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:de	_
+6	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	advcl	2:advcl	_
+7	20	20	NUM	_	NumType=Card	8	nummod	8:nummod	_
+8	dias	dia	NOUN	_	Gender=Masc|Number=Plur	6	obj	6:obj	_
+9	e	e	CCONJ	_	_	10	cc	10:cc	_
+10	fico	ficar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	conj	2:conj:e	_
+11	tão	tão	ADV	_	_	12	advmod	12:advmod	_
+12	perplexa	perplexo	ADJ	_	Gender=Fem|Number=Sing	10	xcomp	10:xcomp	_
+13	quanto	quanto	SCONJ	_	_	15	mark	15:mark	_
+14	vocês	você	PRON	_	Case=Nom|Number=Plur|Person=2|PronType=Prs	15	nsubj	15:nsubj	_
+15	narrou	narrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	advcl	10:advcl:quanto	_
+16	a	a	ADP	_	_	18	case	18:case	_
+17	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	18	det	18:det	_
+18	seguidores	seguidor	NOUN	_	Gender=Masc|Number=Plur	15	obl	15:obl:a	SpaceAfter=No
+19	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0026
+# text = A cantora disse que o caso arrasou sua família: Tudo que descobriram teve um impacto devastador em mim como esposa.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	cantora	cantor	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_
+3	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	7	mark	7:mark	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	caso	caso	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+7	arrasou	arrasar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	ccomp	3:ccomp	_
+8	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	9	det	9:det	_
+9	família	família	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	SpaceAfter=No
+10	:	:	PUNCT	_	_	14	punct	14:punct	_
+11	Tudo	tudo	PRON	_	PronType=Ind	14	nsubj	13:obj|14:nsubj	_
+12	que	que	PRON	_	PronType=Rel	13	obj	11:ref	_
+13	descobriram	descobrir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	11	acl:relcl	11:acl:relcl	_
+14	teve	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	ccomp	3:ccomp	_
+15	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	impacto	impacto	NOUN	_	Gender=Masc|Number=Sing	14	obj	14:obj	_
+17	devastador	devastador	ADJ	_	Gender=Masc|Number=Sing	16	amod	16:amod	_
+18	em	em	ADP	_	_	19	case	19:case	_
+19	mim	mim	PRON	_	Case=Dat|Number=Sing|Person=1|PronType=Prs	14	obl	14:obl:em	_
+20	como	como	ADP	_	_	21	case	21:case	_
+21	esposa	esposo	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:como	SpaceAfter=No
+22	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0028
+# text = Eu era apaixonada pelo meu marido!
+1	Eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	3:nsubj	_
+2	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	3	cop	3:cop	_
+3	apaixonada	apaixonado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	0	root	0:root	_
+4-5	pelo	_	_	_	_	_	_	_	_
+4	por	por	ADP	_	_	7	case	7:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+6	meu	meu	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	7	det	7:det	_
+7	marido	marido	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:por	SpaceAfter=No
+8	!	!	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0030
+# text = Mas jamais aceitaria uma atrocidade dessas.
+1	Mas	mas	CCONJ	_	_	3	cc	3:cc	_
+2	jamais	jamais	ADV	_	_	3	advmod	3:advmod	_
+3	aceitaria	aceitar	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+4	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	atrocidade	atrocidade	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+6-7	dessas	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	essas	esse	PRON	_	Gender=Fem|Number=Plur|PronType=Dem	5	nmod	5:nmod:de	_
+8	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0032
+# text = Hoje eu sei que não o conhecia O pastor e ex-marido de Bianca foi detido na última segunda (4) por agentes da Delegacia da Criança e do Adolescente Vítima.
+1	Hoje	hoje	ADV	_	_	3	advmod	3:advmod	_
+2	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	3:nsubj	_
+3	sei	saber	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	7	mark	7:mark	_
+5	não	não	ADV	_	_	7	advmod	7:advmod	_
+6	o	o	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	obj	7:obj	_
+7	conhecia	conhecer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	3	ccomp	3:ccomp	_
+8	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	pastor	pastor	NOUN	_	Gender=Masc|Number=Sing	15	nsubj:pass	15:nsubj:pass	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	ex-marido	ex-marido	NOUN	_	Gender=Masc|Number=Sing	9	conj	9:conj:e|15:nsubj:pass	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	Bianca	Bianca	PROPN	_	_	9	nmod	9:nmod:de|11:nmod:de	_
+14	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	aux:pass	15:aux:pass	_
+15	detido	deter	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	dep	3:dep	_
+16-17	na	_	_	_	_	_	_	_	_
+16	em	em	ADP	_	_	19	case	19:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+18	última	último	ADJ	_	Gender=Fem|Number=Sing	19	amod	19:amod	_
+19	segunda	segundo	NOUN	_	Abbr=Yes|Gender=Fem|Number=Sing	15	obl	15:obl:em	_
+20	(	(	PUNCT	_	_	21	punct	21:punct	SpaceAfter=No
+21	4	4	NUM	_	NumType=Card	19	appos	19:appos	SpaceAfter=No
+22	)	)	PUNCT	_	_	21	punct	21:punct	_
+23	por	por	ADP	_	_	24	case	24:case	_
+24	agentes	agente	NOUN	_	Number=Plur	15	obl:agent	15:obl:agent	_
+25-26	da	_	_	_	_	_	_	_	_
+25	de	de	ADP	_	_	27	case	27:case	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	Delegacia	Delegacia	PROPN	_	_	24	nmod	24:nmod:de	_
+28-29	da	_	_	_	_	_	_	_	_
+28	de	de	ADP	_	_	30	case	30:case	_
+29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	Criança	Criança	PROPN	_	_	27	flat:name	27:flat:name	_
+31	e	e	CCONJ	_	_	34	cc	34:cc	_
+32-33	do	_	_	_	_	_	_	_	_
+32	de	de	ADP	_	_	34	case	34:case	_
+33	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	34:det	_
+34	Adolescente	Adolescente	PROPN	_	_	27	flat:name	27:flat:name	_
+35	Vítima	Vítima	PROPN	_	_	34	flat:name	34:flat:name	SpaceAfter=No
+36	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0034
+# text = Felipe Heiderich é acusado de abusar do próprio enteado de 5 anos.
+1	Felipe	Felipe	PROPN	_	_	4	nsubj:pass	4:nsubj:pass|6:nsubj	_
+2	Heiderich	Heiderich	PROPN	_	_	1	flat:name	1:flat:name	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	acusado	acusar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5	de	de	ADP	_	_	6	mark	6:mark	_
+6	abusar	abusar	VERB	_	VerbForm=Inf	4	xcomp	4:xcomp	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	10	case	10:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+9	próprio	próprio	DET	_	Gender=Masc|Number=Sing|PronType=Dem	10	det	10:det	_
+10	enteado	enteado	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:de	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	5	5	NUM	_	NumType=Card	13	nummod	13:nummod	_
+13	anos	ano	NOUN	_	Gender=Masc|Number=Plur	10	nmod	10:nmod:de	SpaceAfter=No
+14	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0036
+# text = A prisão preventiva foi decretada pela Justiça e Felipe foi preso.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	prisão	prisão	NOUN	_	Gender=Fem|Number=Sing	5	nsubj:pass	5:nsubj:pass	_
+3	preventiva	preventivo	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	_
+4	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	aux:pass	5:aux:pass	_
+5	decretada	decretar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+6-7	pela	_	_	_	_	_	_	_	_
+6	por	por	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	Justiça	Justiça	PROPN	_	_	5	obl:agent	5:obl:agent	_
+9	e	e	CCONJ	_	_	12	cc	12:cc	_
+10	Felipe	Felipe	PROPN	_	_	12	nsubj:pass	12:nsubj:pass	_
+11	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	aux:pass	12:aux:pass	_
+12	preso	prender	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	5	conj	5:conj:e	SpaceAfter=No
+13	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0038
+# text = Bianca procurou a delegacia no dia 22 de junho, quando foi aberto um inquérito.
+1	Bianca	Bianca	PROPN	_	_	2	nsubj	2:nsubj	_
+2	procurou	procurar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	delegacia	delegacia	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+5-6	no	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	dia	dia	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:em|14:obl	_
+8	22	22	NUM	_	NumType=Card	7	nmod	7:nmod	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	junho	junho	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:de	SpaceAfter=No
+11	,	,	PUNCT	_	_	14	punct	14:punct	_
+12	quando	quando	ADV	_	_	14	advmod	7:ref	_
+13	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	aux:pass	14:aux:pass	_
+14	aberto	abrir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	7	acl:relcl	7:acl:relcl	_
+15	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	inquérito	inquérito	NOUN	_	Gender=Masc|Number=Sing	14	nsubj:pass	14:nsubj:pass	SpaceAfter=No
+17	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0040
+# text = O abuso teria ocorrido dentro da residência do casal.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	abuso	abuso	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+3	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	4	aux	4:aux	_
+4	ocorrido	ocorrer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+5	dentro	dentro	ADV	_	_	4	advmod	4:advmod	_
+6-7	da	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	residência	residência	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:de	_
+9-10	do	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	casal	casal	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:de	SpaceAfter=No
+12	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0042
+# text = Felipe Heiderich, pastor que foi acusado de crime de pedofilia contra o próprio enteado de 5 anos, foi solto na quarta-feira (09).
+1	Felipe	Felipe	PROPN	_	_	21	nsubj:pass	21:nsubj:pass	_
+2	Heiderich	Heiderich	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	pastor	pastor	NOUN	_	Gender=Masc|Number=Sing	1	appos	1:appos|7:nsubj:pass	_
+5	que	que	PRON	_	PronType=Rel	7	nsubj:pass	4:ref	_
+6	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	aux:pass	7:aux:pass	_
+7	acusado	acusar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	4	acl:relcl	4:acl:relcl	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	crime	crime	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:de	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	pedofilia	pedofilia	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:de	_
+12	contra	contra	ADP	_	_	15	case	15:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+14	próprio	próprio	DET	_	Gender=Masc|Number=Sing|PronType=Dem	15	det	15:det	_
+15	enteado	enteado	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:contra	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	5	5	NUM	_	NumType=Card	18	nummod	18:nummod	_
+18	anos	ano	NOUN	_	Gender=Masc|Number=Plur	15	nmod	15:nmod:de	SpaceAfter=No
+19	,	,	PUNCT	_	_	4	punct	4:punct	_
+20	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	21	aux:pass	21:aux:pass	_
+21	solto	soltar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+22-23	na	_	_	_	_	_	_	_	_
+22	em	em	ADP	_	_	24	case	24:case	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	quarta-feira	quarta-feira	NOUN	_	Gender=Fem|Number=Sing	21	obl	21:obl:em	_
+25	(	(	PUNCT	_	_	26	punct	26:punct	SpaceAfter=No
+26	09	09	NUM	_	NumType=Card	24	appos	24:appos	SpaceAfter=No
+27	)	)	PUNCT	_	_	26	punct	26:punct	SpaceAfter=No
+28	.	.	PUNCT	_	_	21	punct	21:punct	_
+
+# sent_id = S0044
+# text = Heiderich vai responder em liberdade.
+1	Heiderich	Heiderich	PROPN	_	_	3	nsubj	3:nsubj	_
+2	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux	3:aux	_
+3	responder	responder	VERB	_	VerbForm=Inf	0	root	0:root	_
+4	em	em	ADP	_	_	5	case	5:case	_
+5	liberdade	liberdade	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:em	SpaceAfter=No
+6	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0046
+# text = Ele ficou preso em Bangu durante dois dias.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj|3:nsubj	_
+2	ficou	ficar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	preso	preso	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	2	xcomp	2:xcomp	_
+4	em	em	ADP	_	_	5	case	5:case	_
+5	Bangu	Bangu	PROPN	_	_	2	obl	2:obl:em	_
+6	durante	durante	ADP	_	_	8	case	8:case	_
+7	dois	dois	NUM	_	Gender=Masc|NumType=Card	8	nummod	8:nummod	_
+8	dias	dia	NOUN	_	Gender=Masc|Number=Plur	2	obl	2:obl:durante	SpaceAfter=No
+9	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0048
+# text = O Ministério Público do Rio de Janeiro (MPRJ) não pediu a conversão em prisão preventiva e o acusado foi liberado.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Ministério	Ministério	PROPN	_	_	13	nsubj	13:nsubj	_
+3	Público	Público	PROPN	_	_	2	flat:name	2:flat:name	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	Rio	Rio	PROPN	_	_	2	flat:name	2:flat:name	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	Janeiro	Janeiro	PROPN	_	_	2	flat:name	2:flat:name	_
+9	(	(	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+10	MPRJ	MPRJ	PROPN	_	_	2	appos	2:appos	SpaceAfter=No
+11	)	)	PUNCT	_	_	10	punct	10:punct	_
+12	não	não	ADV	_	_	13	advmod	13:advmod	_
+13	pediu	pedir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	conversão	conversão	NOUN	_	Gender=Fem|Number=Sing	13	obj	13:obj	_
+16	em	em	ADP	_	_	17	case	17:case	_
+17	prisão	prisão	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:em	_
+18	preventiva	preventivo	ADJ	_	Gender=Fem|Number=Sing	17	amod	17:amod	_
+19	e	e	CCONJ	_	_	23	cc	23:cc	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	acusado	acusado	NOUN	_	Gender=Masc|Number=Sing	23	nsubj:pass	23:nsubj:pass	_
+22	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	aux:pass	23:aux:pass	_
+23	liberado	liberar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	13	conj	13:conj:e	SpaceAfter=No
+24	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0050
+# text = "Ressalto que o MPRJ não pediu a prisão preventiva, mas somente medidas cautelares", disse o juiz Paulo Cézar Vieira de Carvalho Filho, titular da 17a Vara Criminal da Capital.
+1	"	"	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+2	Ressalto	ressaltar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	18	ccomp:speech	18:ccomp:speech	_
+3	que	que	SCONJ	_	_	7	mark	7:mark	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	MPRJ	MPRJ	PROPN	_	_	7	nsubj	7:nsubj	_
+6	não	não	ADV	_	_	7	advmod	7:advmod	_
+7	pediu	pedir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	ccomp	2:ccomp	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	prisão	prisão	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	_
+10	preventiva	preventivo	ADJ	_	Gender=Fem|Number=Sing	9	amod	9:amod	SpaceAfter=No
+11	,	,	PUNCT	_	_	14	punct	14:punct	_
+12	mas	mas	CCONJ	_	_	14	cc	14:cc	_
+13	somente	somente	ADV	_	_	14	advmod	14:advmod	_
+14	medidas	medida	NOUN	_	Gender=Fem|Number=Plur	9	conj	7:obj|9:conj:mas	_
+15	cautelares	cautelar	ADJ	_	Number=Plur	14	amod	14:amod	SpaceAfter=No
+16	"	"	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+17	,	,	PUNCT	_	_	2	punct	2:punct	_
+18	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	juiz	juiz	NOUN	_	Gender=Masc|Number=Sing	18	nsubj	18:nsubj	_
+21	Paulo	Paulo	PROPN	_	_	20	nmod	20:nmod	_
+22	Cézar	Cézar	PROPN	_	_	21	flat:name	21:flat:name	_
+23	Vieira	Vieira	PROPN	_	_	21	flat:name	21:flat:name	_
+24	de	de	ADP	_	_	25	case	25:case	_
+25	Carvalho	Carvalho	PROPN	_	_	21	flat:name	21:flat:name	_
+26	Filho	Filho	PROPN	_	_	21	flat:name	21:flat:name	SpaceAfter=No
+27	,	,	PUNCT	_	_	28	punct	28:punct	_
+28	titular	titular	NOUN	_	Number=Sing	20	appos	20:appos	_
+29-30	da	_	_	_	_	_	_	_	_
+29	de	de	ADP	_	_	32	case	32:case	_
+30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	32:det	_
+31	17a	17a	ADJ	_	Gender=Fem|NumType=Ord	32	amod	32:amod	_
+32	Vara	Vara	PROPN	_	_	28	nmod	28:nmod:de	_
+33	Criminal	Criminal	PROPN	_	_	32	flat:name	32:flat:name	_
+34-35	da	_	_	_	_	_	_	_	_
+34	de	de	ADP	_	_	36	case	36:case	_
+35	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	36:det	_
+36	Capital	Capital	PROPN	_	_	32	nmod	32:nmod:de	SpaceAfter=No
+37	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0052
+# text = O pastor está proibido de se aproximar da mulher Bianca Toledo e do filho dela de 5 anos.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	pastor	pastor	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj|7:nsubj	_
+3	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+4	proibido	proibido	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+5	de	de	ADP	_	_	7	mark	7:mark	_
+6	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	7	expl	7:expl	_
+7	aproximar	aproximar	VERB	_	VerbForm=Inf	4	xcomp	4:xcomp	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	mulher	mulher	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:de	_
+11	Bianca	Bianca	PROPN	_	_	10	nmod	10:nmod	_
+12	Toledo	Toledo	PROPN	_	_	11	flat:name	11:flat:name	_
+13	e	e	CCONJ	_	_	16	cc	16:cc	_
+14-15	do	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	filho	filho	NOUN	_	Gender=Masc|Number=Sing	10	conj	7:obl:de|10:conj:e	_
+17-18	dela	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	16	nmod	16:nmod:de	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	5	5	NUM	_	NumType=Card	21	nummod	21:nummod	_
+21	anos	ano	NOUN	_	Gender=Masc|Number=Plur	16	nmod	16:nmod:de	SpaceAfter=No
+22	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0054
+# text = "Determinei o monitoramento eletrônico e que o réu fique proibido de se aproximar da criança e da mãe", determinou o magistrado.
+1	"	"	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+2	Determinei	determinar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	24	ccomp:speech	24:ccomp:speech	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	monitoramento	monitoramento	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+5	eletrônico	eletrônico	ADJ	_	Gender=Masc|Number=Sing	4	amod	4:amod	_
+6	e	e	CCONJ	_	_	10	cc	10:cc	_
+7	que	que	SCONJ	_	_	10	mark	10:mark	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	réu	réu	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	10:nsubj|11:nsubj|14:nsubj	_
+10	fique	ficar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:e|24:ccomp:speech	_
+11	proibido	proibido	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	10	xcomp	10:xcomp	_
+12	de	de	ADP	_	_	14	mark	14:mark	_
+13	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	14	expl	14:expl	_
+14	aproximar	aproximar	VERB	_	VerbForm=Inf	11	xcomp	11:xcomp	_
+15-16	da	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	criança	criança	NOUN	_	Gender=Fem|Number=Sing	14	obl	14:obl:de	_
+18	e	e	CCONJ	_	_	21	cc	21:cc	_
+19-20	da	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	mãe	mãe	NOUN	_	Gender=Fem|Number=Sing	17	conj	14:obl:de|17:conj:e	SpaceAfter=No
+22	"	"	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+23	,	,	PUNCT	_	_	2	punct	2:punct	_
+24	determinou	determinar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	magistrado	magistrado	NOUN	_	Gender=Masc|Number=Sing	24	nsubj	24:nsubj	SpaceAfter=No
+27	.	.	PUNCT	_	_	24	punct	24:punct	_

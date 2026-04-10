@@ -1,0 +1,106 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = lula vai ao são joão de caruaru e ouve gritos de ladrão alerta brasil !
+1	lula	lula	PROPN	_	_	2	nsubj	2:nsubj|10:nsubj	_
+2	vai	ir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3-4	ao	_	_	_	_	_	_	_	_
+3	a	a	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	são	são	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:a	_
+6	joão	joão	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	caruaru	caruaru	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:de	_
+9	e	e	CCONJ	_	_	10	cc	10:cc	_
+10	ouve	ouvir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:e	_
+11	gritos	grito	NOUN	_	Gender=Masc|Number=Plur	10	obj	10:obj	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	ladrão	ladrão	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:de	_
+14	alerta	alerta	NOUN	_	Number=Sing	13	nmod	13:nmod	_
+15	brasil	brasil	NOUN	_	Gender=Masc|Number=Sing	14	nmod	14:nmod	_
+16	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = lula tenta ir à uma festa pública de s joão de caruaru e é vaiado e chingado de ladrão em público.
+1	lula	lula	PROPN	_	_	2	nsubj	2:nsubj|3:nsubj|16:nsubj:pass|18:nsubj:pass	_
+2	tenta	tentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	ir	ir	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	_
+4-5	à	_	_	_	_	_	_	_	_
+4	a	a	ADP	_	_	7	case	7:case	_
+5	a	a	ADP	_	_	7	case	7:case	_
+6	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	festa	festa	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:a_a	_
+8	pública	público	ADJ	_	Gender=Fem|Number=Sing	7	amod	7:amod	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	s	s	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	_
+11	joão	joão	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	caruaru	caruaru	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:de	_
+14	e	e	CCONJ	_	_	16	cc	16:cc	_
+15	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux:pass	16:aux:pass|18:aux:pass	_
+16	vaiado	vaiar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	conj	2:conj:e	_
+17	e	e	CCONJ	_	_	18	cc	18:cc	_
+18	chingado	chingar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	16	conj	16:conj:e	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	ladrão	ladrão	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:de	_
+21	em	em	ADP	_	_	22	case	22:case	_
+22	público	público	NOUN	_	Gender=Masc|Number=Sing	16	obl	16:obl:em|18:obl:em	SpaceAfter=No
+23	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = acorda, esquerda, já era !
+1	acorda	acorda	INTJ	_	_	6	discourse	6:discourse	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	esquerda	esquerda	NOUN	_	Gender=Fem|Number=Sing	1	vocative	1:vocative	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	já	já	ADV	_	_	6	advmod	6:advmod	_
+6	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+7	!	!	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0007
+# text = vamos com pré candidato: , em caruaru , pernambuco.
+1	vamos	ir	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	com	com	ADP	_	_	4	case	4:case	_
+3	pré	pré	NOUN	_	Gender=Masc|Number=Sing	4	amod	4:amod	_
+4	candidato	candidato	NOUN	_	Gender=Masc|Number=Sing	1	obl	1:obl:com	SpaceAfter=No
+5	:	:	PUNCT	_	_	8	punct	8:punct	_
+6	,	,	PUNCT	_	_	8	punct	8:punct	_
+7	em	em	ADP	_	_	8	case	8:case	_
+8	caruaru	caruaru	NOUN	_	Gender=Masc|Number=Sing	1	parataxis	1:parataxis	_
+9	,	,	PUNCT	_	_	10	punct	10:punct	_
+10	pernambuco	pernambuco	NOUN	_	Gender=Masc|Number=Sing	8	parataxis	8:parataxis	SpaceAfter=No
+11	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0009
+# text = o povo gritando : lula ladrão.
+1	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	povo	povo	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+3	gritando	gritar	VERB	_	VerbForm=Ger	2	acl	2:acl	_
+4	:	:	PUNCT	_	_	5	punct	5:punct	_
+5	lula	lula	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+6	ladrão	ladrão	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod	SpaceAfter=No
+7	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0011
+# text = , festa em caruaru onde lula tentou dar uma de bolsonaro, vejam o resultado primeiro colocado segundo as pesquisas viu ?
+1	,	,	PUNCT	_	_	2	punct	2:punct	_
+2	festa	festa	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root|7:obl	_
+3	em	em	ADP	_	_	4	case	4:case	_
+4	caruaru	caruaru	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:em	_
+5	onde	onde	ADV	_	_	7	advmod	2:ref	_
+6	lula	lula	PROPN	_	_	7	nsubj	7:nsubj|8:nsubj	_
+7	tentou	tentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+8	dar	dar	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+9	uma	um	PRON	_	Gender=Fem|Number=Sing|PronType=Ind	8	obj	8:obj	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	bolsonaro	bolsonaro	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:de	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	vejam	ver	VERB	_	Mood=Imp|Number=Plur|Person=3|VerbForm=Fin	2	parataxis	2:parataxis	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	resultado	resultado	NOUN	_	Gender=Masc|Number=Sing	13	obj	13:obj	_
+16	primeiro	primeiro	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	17	amod	17:amod	_
+17	colocado	colocado	NOUN	_	Gender=Masc|Number=Sing	15	nmod	15:nmod	_
+18	segundo	segundo	ADP	_	_	20	case	20:case	_
+19	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	20:det	_
+20	pesquisas	pesquisa	NOUN	_	Gender=Fem|Number=Plur	17	nmod	17:nmod:segundo	_
+21	viu	ver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	parataxis	13:parataxis	_
+22	?	?	PUNCT	_	_	2	punct	2:punct	_

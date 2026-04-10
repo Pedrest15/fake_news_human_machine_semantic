@@ -1,0 +1,275 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Roberto Justus e Dr. Robert Rey: Milionários poderão disputar a presidência em 2018.
+1	Roberto	Roberto	PROPN	_	_	9	nsubj	9:nsubj|10:nsubj	_
+2	Justus	Justus	PROPN	_	_	1	flat:name	1:flat:name	_
+3	e	e	CCONJ	_	_	4	cc	4:cc	_
+4	Dr.	Dr.	PROPN	_	_	1	conj	1:conj:e|9:nsubj|10:nsubj	_
+5	Robert	Robert	PROPN	_	_	4	flat:name	4:flat:name	_
+6	Rey	Rey	PROPN	_	_	4	flat:name	4:flat:name	SpaceAfter=No
+7	:	:	PUNCT	_	_	1	punct	1:punct	_
+8	Milionários	milionário	NOUN	_	Gender=Masc|Number=Plur	9	nsubj	9:nsubj|10:nsubj	_
+9	poderão	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+10	disputar	disputar	VERB	_	VerbForm=Inf	9	xcomp	9:xcomp	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	presidência	presidência	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+13	em	em	ADP	_	_	14	case	14:case	_
+14	2018	2018	NUM	_	NumType=Card	10	obl	10:obl:em	SpaceAfter=No
+15	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0003
+# text = De um lado, um dos empresários mais ricos do país.
+1	De	de	ADP	_	_	3	case	3:case	_
+2	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	lado	lado	NOUN	_	Gender=Masc|Number=Sing	5	dep	5:dep	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	um	um	NUM	_	Gender=Masc|NumType=Card	0	root	0:root	_
+6-7	dos	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	8:det	_
+8	empresários	empresário	NOUN	_	Gender=Masc|Number=Plur	5	nmod	5:nmod:de	_
+9	mais	mais	ADV	_	_	10	advmod	10:advmod	_
+10	ricos	rico	ADJ	_	Gender=Masc|Number=Plur	8	amod	8:amod	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	país	país	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:de	SpaceAfter=No
+14	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0005
+# text = Do outro, o sétimo médico mais rico do mundo.. Ao que tudo indica, assim será a próxima eleição presidencial.
+1-2	Do	_	_	_	_	_	_	_	_
+1	De	de	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	outro	outro	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	24	nmod	24:nmod:de	SpaceAfter=No
+4	,	,	PUNCT	_	_	7	punct	7:punct	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+6	sétimo	sétimo	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	7	amod	7:amod	_
+7	médico	médico	NOUN	_	Gender=Masc|Number=Sing	3	appos	3:appos	_
+8	mais	mais	ADV	_	_	9	advmod	9:advmod	_
+9	rico	rico	ADJ	_	Gender=Masc|Number=Sing	7	amod	7:amod	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	SpaceAfter=No
+13	..	..	PUNCT	_	_	7	punct	7:punct	_
+14-15	Ao	_	_	_	_	_	_	_	_
+14	A	a	ADP	_	_	15	case	15:case	_
+15	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	20	obl	18:obj|20:obl:a	_
+16	que	que	PRON	_	PronType=Rel	18	obj	15:ref	_
+17	tudo	tudo	PRON	_	PronType=Ind	18	nsubj	18:nsubj	_
+18	indica	indicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	acl:relcl	15:acl:relcl	SpaceAfter=No
+19	,	,	PUNCT	_	_	18	punct	18:punct	_
+20	assim	assim	ADV	_	_	24	dep	24:dep	_
+21	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	24	cop	24:cop	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+23	próxima	próximo	ADJ	_	Gender=Fem|Number=Sing	24	amod	24:amod	_
+24	eleição	eleição	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+25	presidencial	presidencial	ADJ	_	Number=Sing	24	amod	24:amod	SpaceAfter=No
+26	.	.	PUNCT	_	_	20	punct	20:punct	_
+
+# sent_id = S0007
+# text = Uma mistura de políticos de carreira versus empresários bem sucedidos.
+1	Uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	mistura	mistura	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	políticos	político	NOUN	_	Gender=Masc|Number=Plur	2	nmod	2:nmod:de	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	carreira	carreira	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:de	_
+7	versus	versus	ADP	_	_	8	case	8:case	_
+8	empresários	empresário	NOUN	_	Gender=Masc|Number=Plur	4	nmod	4:nmod:versus	_
+9	bem	bem	ADV	_	_	10	advmod	10:advmod	_
+10	sucedidos	sucedido	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	8	amod	8:amod	SpaceAfter=No
+11	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0009
+# text = Os "políticos profissionais" já demonstraram total incompetência para gerir o país.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	3:det	_
+2	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+3	políticos	político	NOUN	_	Gender=Masc|Number=Plur	7	nsubj	7:nsubj	_
+4	profissionais	profissional	ADJ	_	Number=Plur	3	amod	3:amod	SpaceAfter=No
+5	"	"	PUNCT	_	_	3	punct	3:punct	_
+6	já	já	ADV	_	_	7	advmod	7:advmod	_
+7	demonstraram	demonstrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	total	total	ADJ	_	Number=Sing	9	amod	9:amod	_
+9	incompetência	incompetência	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	_
+10	para	para	ADP	_	_	11	mark	11:mark	_
+11	gerir	gerir	VERB	_	VerbForm=Inf	9	acl	9:acl:para	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	país	país	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj	SpaceAfter=No
+14	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0011
+# text = A cultura da corrupção já corroeu o cérebro desses larápios eleitos pelo povo.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	cultura	cultura	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	corrupção	corrupção	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+6	já	já	ADV	_	_	7	advmod	7:advmod	_
+7	corroeu	corroer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	cérebro	cérebro	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+10-11	desses	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	12	det	12:det	_
+12	larápios	larápio	NOUN	_	Gender=Masc|Number=Plur	9	nmod	9:nmod:de	_
+13	eleitos	eleger	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	12	acl	12:acl	_
+14-15	pelo	_	_	_	_	_	_	_	_
+14	por	por	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	povo	povo	NOUN	_	Gender=Masc|Number=Sing	13	obl:agent	13:obl:agent	SpaceAfter=No
+17	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0013
+# text = O Brasil já atingiu o fundo do poço.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Brasil	Brasil	PROPN	_	_	4	nsubj	4:nsubj	_
+3	já	já	ADV	_	_	4	advmod	4:advmod	_
+4	atingiu	atingir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	fundo	fundo	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	poço	poço	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de	SpaceAfter=No
+10	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0015
+# text = Nem Marina, nem Aécio, nem Alckmin, nem Lula (principalmente esse) poderão mudar o cenário econômico e restaurar a confiança do povo brasileiro nas instituições.
+1	Nem	nem	CCONJ	_	_	2	cc	2:cc	_
+2	Marina	Marina	PROPN	_	_	16	nsubj	16:nsubj|17:nsubj|22:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	5	punct	5:punct	_
+4	nem	nem	CCONJ	_	_	5	cc	5:cc	_
+5	Aécio	Aécio	PROPN	_	_	2	conj	2:conj:nem|16:nsubj|17:nsubj|22:nsubj	SpaceAfter=No
+6	,	,	PUNCT	_	_	8	punct	8:punct	_
+7	nem	nem	CCONJ	_	_	8	cc	8:cc	_
+8	Alckmin	Alckmin	PROPN	_	_	2	conj	2:conj:nem|16:nsubj|17:nsubj|22:nsubj	SpaceAfter=No
+9	,	,	PUNCT	_	_	11	punct	11:punct	_
+10	nem	nem	CCONJ	_	_	11	cc	11:cc	_
+11	Lula	Lula	PROPN	_	_	2	conj	2:conj:nem|16:nsubj|17:nsubj|22:nsubj	_
+12	(	(	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+13	principalmente	principalmente	ADV	_	_	14	advmod	14:advmod	_
+14	esse	esse	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	2	conj	2:conj|16:nsubj|17:nsubj|22:nsubj	SpaceAfter=No
+15	)	)	PUNCT	_	_	14	punct	14:punct	_
+16	poderão	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+17	mudar	mudar	VERB	_	VerbForm=Inf	16	xcomp	16:xcomp	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	cenário	cenário	NOUN	_	Gender=Masc|Number=Sing	17	obj	17:obj	_
+20	econômico	econômico	ADJ	_	Gender=Masc|Number=Sing	19	amod	19:amod	_
+21	e	e	CCONJ	_	_	22	cc	22:cc	_
+22	restaurar	restaurar	VERB	_	VerbForm=Inf	17	conj	16:xcomp|17:conj:e	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	confiança	confiança	NOUN	_	Number=Sing	22	obj	22:obj	_
+25-26	do	_	_	_	_	_	_	_	_
+25	de	de	ADP	_	_	27	case	27:case	_
+26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	povo	povo	NOUN	_	Gender=Masc|Number=Sing	24	nmod	24:nmod:de	_
+28	brasileiro	brasileiro	ADJ	_	Gender=Masc|Number=Sing	27	amod	27:amod	_
+29-30	nas	_	_	_	_	_	_	_	_
+29	em	em	ADP	_	_	31	case	31:case	_
+30	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	31	det	31:det	_
+31	instituições	instituição	NOUN	_	Gender=Fem|Number=Plur	24	nmod	24:nmod:em	SpaceAfter=No
+32	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0017
+# text = O país tem que se dar uma chance!
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	país	país	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj|6:nsubj	_
+3	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	ADP	_	_	6	mark	6:mark	_
+5	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	6	expl	6:expl	_
+6	dar	dar	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+7	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	chance	chance	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	SpaceAfter=No
+9	!	!	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0019
+# text = Então, qual é o problema se tivermos (em 2018) dois milionários disputando a cadeira de Presidente da República?
+1	Então	então	ADV	_	_	6	advmod	6:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	qual	qual	PRON	_	Number=Sing|PronType=Int	6	nsubj	6:nsubj	_
+4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	problema	problema	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+7	se	se	SCONJ	_	_	8	mark	8:mark	_
+8	tivermos	ter	VERB	_	Mood=Sub|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	6	advcl	6:advcl:se	_
+9	(	(	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+10	em	em	ADP	_	_	11	case	11:case	_
+11	2018	2018	NUM	_	NumType=Card	8	obl	8:obl:em	SpaceAfter=No
+12	)	)	PUNCT	_	_	11	punct	11:punct	_
+13	dois	dois	NUM	_	Gender=Masc|NumType=Card	14	nummod	14:nummod	_
+14	milionários	milionário	NOUN	_	Gender=Masc|Number=Plur	8	obj	8:obj	_
+15	disputando	disputar	VERB	_	VerbForm=Ger	14	acl	14:acl	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	cadeira	cadeira	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	Presidente	Presidente	PROPN	_	_	17	nmod	17:nmod:de	_
+20-21	da	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	República	República	PROPN	_	_	19	nmod	19:nmod:de	SpaceAfter=No
+23	?	?	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0021
+# text = É claro que teremos que trocar também parte do parlamento (Câmara e Senado), onde menos de 20% dos eleitos trabalham efetivamente em prol do povo.
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	2:cop	_
+2	claro	claro	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	_
+3	que	que	SCONJ	_	_	4	mark	4:mark	_
+4	teremos	ter	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	2	csubj	2:csubj	_
+5	que	que	ADP	_	_	6	mark	6:mark	_
+6	trocar	trocar	VERB	_	VerbForm=Inf	4	xcomp	4:xcomp	_
+7	também	também	ADV	_	_	6	advmod	6:advmod	_
+8	parte	parte	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+9-10	do	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	parlamento	parlamento	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:de|26:obl	_
+12	(	(	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+13	Câmara	Câmara	PROPN	_	_	11	appos	11:appos	_
+14	e	e	CCONJ	_	_	15	cc	15:cc	_
+15	Senado	Senado	PROPN	_	_	13	conj	11:appos|13:conj:e	SpaceAfter=No
+16	)	)	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+17	,	,	PUNCT	_	_	26	punct	26:punct	_
+18	onde	onde	ADV	_	_	26	advmod	11:ref	_
+19	menos	menos	ADV	_	ExtPos=ADV	21	advmod	21:advmod	_
+20	de	de	ADP	_	_	19	fixed	19:fixed	_
+21	20	20	NUM	_	NumType=Card	22	nummod	22:nummod	SpaceAfter=No
+22	%	%	SYM	_	_	26	nsubj	26:nsubj	_
+23-24	dos	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	25:det	_
+25	eleitos	eleito	NOUN	_	Gender=Masc|Number=Plur	22	nmod	22:nmod:de	_
+26	trabalham	trabalhar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	11:acl:relcl	_
+27	efetivamente	efetivamente	ADV	_	_	26	advmod	26:advmod	_
+28	em	em	ADP	_	_	29	case	29:case	_
+29	prol	prol	NOUN	_	Gender=Masc|Number=Sing	26	obl	26:obl:em	_
+30-31	do	_	_	_	_	_	_	_	_
+30	de	de	ADP	_	_	32	case	32:case	_
+31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+32	povo	povo	NOUN	_	Gender=Masc|Number=Sing	29	nmod	29:nmod:de	SpaceAfter=No
+33	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0023
+# text = Quem será o adversário de Jair Bolsonaro no segundo turno?
+1	Quem	quem	PRON	_	PronType=Int	4	nsubj	4:nsubj	_
+2	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	cop	4:cop	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	adversário	adversário	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	Jair	Jair	PROPN	_	_	4	nmod	4:nmod:de	_
+7	Bolsonaro	Bolsonaro	PROPN	_	_	6	flat:name	6:flat:name	_
+8-9	no	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	11	case	11:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+10	segundo	segundo	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	11	amod	11:amod	_
+11	turno	turno	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:em	SpaceAfter=No
+12	?	?	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0025
+# text = Façam suas apostas!
+1	Façam	façar	VERB	_	Mood=Imp|Number=Plur|Person=3|VerbForm=Fin	0	root	0:root	_
+2	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	3	det	3:det	_
+3	apostas	aposta	NOUN	_	Gender=Fem|Number=Plur	1	obj	1:obj	SpaceAfter=No
+4	!	!	PUNCT	_	_	1	punct	1:punct	_

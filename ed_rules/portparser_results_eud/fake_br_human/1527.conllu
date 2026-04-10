@@ -1,0 +1,103 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Jornais de grande circulação apontam Vladimir Putin como "imortal" e "anticristo".
+1	Jornais	jornal	NOUN	_	Gender=Masc|Number=Plur	5	nsubj	5:nsubj	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	grande	grande	ADJ	_	Number=Sing	4	amod	4:amod	_
+4	circulação	circulação	NOUN	_	Gender=Fem|Number=Sing	1	nmod	1:nmod:de	_
+5	apontam	apontar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	Vladimir	Vladimir	PROPN	_	_	5	obj	5:obj	_
+7	Putin	Putin	PROPN	_	_	6	flat:name	6:flat:name	_
+8	como	como	ADP	_	_	10	case	10:case|14:case	_
+9	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+10	imortal	imortal	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:como	SpaceAfter=No
+11	"	"	PUNCT	_	_	10	punct	10:punct	_
+12	e	e	CCONJ	_	_	14	cc	14:cc	_
+13	"	"	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+14	anticristo	anticristo	NOUN	_	Gender=Masc|Number=Sing	10	conj	5:obl:como|10:conj:e	SpaceAfter=No
+15	"	"	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+16	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0003
+# text = Teorias da Conspiração sempre fizeram parte da história da humanidade.
+1	Teorias	teoria	NOUN	_	Gender=Fem|Number=Plur	6	nsubj	6:nsubj	_
+2-3	da	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	Conspiração	Conspiração	PROPN	_	_	1	nmod	1:nmod:de	_
+5	sempre	sempre	ADV	_	_	6	advmod	6:advmod	_
+6	fizeram	fazer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	parte	parte	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	história	história	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:de	_
+11-12	da	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	humanidade	humanidade	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:de	SpaceAfter=No
+14	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0005
+# text = Com a disseminação da internet após meados dos anos 90, o que antes só aparecia em livros passou a se tornar público a todos os tipos de pessoas, desde que tenham um simples acesso à internet.
+1	Com	com	ADP	_	_	3	case	3:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	disseminação	disseminação	NOUN	_	Gender=Fem|Number=Sing	21	obl	21:obl:com	_
+4-5	da	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	internet	internet	NOUN	_	Foreign=Yes|Gender=Fem|Number=Sing	3	nmod	3:nmod:de	_
+7	após	após	ADP	_	_	8	case	8:case	_
+8	meados	meado	NOUN	_	Gender=Masc|Number=Plur	3	nmod	3:nmod:após	_
+9-10	dos	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	11:det	_
+11	anos	ano	NOUN	_	Gender=Masc|Number=Plur	8	nmod	8:nmod:de	_
+12	90	90	NUM	_	NumType=Card	11	nmod	11:nmod	SpaceAfter=No
+13	,	,	PUNCT	_	_	3	punct	3:punct	_
+14	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	21	nsubj	18:nsubj|21:nsubj|24:nsubj|25:nsubj	_
+15	que	que	PRON	_	PronType=Rel	18	nsubj	14:ref	_
+16	antes	antes	ADV	_	_	18	advmod	18:advmod	_
+17	só	só	ADV	_	_	18	advmod	18:advmod	_
+18	aparecia	aparecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	14	acl:relcl	14:acl:relcl	_
+19	em	em	ADP	_	_	20	case	20:case	_
+20	livros	livro	NOUN	_	Gender=Masc|Number=Plur	18	obl	18:obl:em	_
+21	passou	passar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+22	a	a	ADP	_	_	24	mark	24:mark	_
+23	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	24	expl	24:expl	_
+24	tornar	tornar	VERB	_	VerbForm=Inf	21	xcomp	21:xcomp	_
+25	público	público	NOUN	_	Gender=Masc|Number=Sing	24	xcomp	24:xcomp	_
+26	a	a	ADP	_	_	29	case	29:case	_
+27	todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Ind	29	det	29:det	_
+28	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	29:det	_
+29	tipos	tipo	NOUN	_	Gender=Masc|Number=Plur	25	obl	25:obl:a	_
+30	de	de	ADP	_	_	31	case	31:case	_
+31	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	29	nmod	29:nmod:de	SpaceAfter=No
+32	,	,	PUNCT	_	_	35	punct	35:punct	_
+33	desde	desde	ADP	_	ExtPos=SCONJ	35	mark	35:mark	_
+34	que	que	SCONJ	_	_	33	fixed	33:fixed	_
+35	tenham	ter	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	24	advcl	24:advcl:desde_que	_
+36	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	38	det	38:det	_
+37	simples	simples	ADJ	_	_	38	amod	38:amod	_
+38	acesso	acesso	NOUN	_	Gender=Masc|Number=Sing	35	obj	35:obj	_
+39-40	à	_	_	_	_	_	_	_	_
+39	a	a	ADP	_	_	41	case	41:case	_
+40	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	41:det	_
+41	internet	internet	NOUN	_	Foreign=Yes|Gender=Fem|Number=Sing	38	nmod	38:nmod:a	SpaceAfter=No
+42	.	.	PUNCT	_	_	21	punct	21:punct	_
+
+# sent_id = S0007
+# text = Teorias sobre o presidente da Rússia estão invadindo as redes.
+1	Teorias	teoria	NOUN	_	Gender=Fem|Number=Plur	9	nsubj	9:nsubj	_
+2	sobre	sobre	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	presidente	presidente	NOUN	_	Number=Sing	1	nmod	1:nmod:sobre	_
+5-6	da	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	Rússia	Rússia	PROPN	_	_	4	nmod	4:nmod:de	_
+8	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	aux	9:aux	_
+9	invadindo	invadir	VERB	_	VerbForm=Ger	0	root	0:root	_
+10	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	11:det	_
+11	redes	rede	NOUN	_	Gender=Fem|Number=Plur	9	obj	9:obj	SpaceAfter=No
+12	.	.	PUNCT	_	_	9	punct	9:punct	_

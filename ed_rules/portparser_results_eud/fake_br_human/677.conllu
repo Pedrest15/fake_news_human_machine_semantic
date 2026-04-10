@@ -1,0 +1,258 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = O sujo falando do mal lavado?
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	sujo	sujo	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+3	falando	falar	VERB	_	VerbForm=Ger	2	acl	2:acl	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	obl	3:obl:de	_
+6	mal	mal	ADV	_	_	7	advmod	7:advmod	_
+7	lavado	lavar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	5	acl	5:acl	SpaceAfter=No
+8	?	?	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Igreja Católica anuncia que fará discurso sobre fake news.
+1	Igreja	Igreja	PROPN	_	_	3	nsubj	3:nsubj	_
+2	Católica	Católica	PROPN	_	_	1	flat:name	1:flat:name	_
+3	anuncia	anunciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	5	mark	5:mark	_
+5	fará	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	ccomp	3:ccomp	_
+6	discurso	discurso	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+7	sobre	sobre	ADP	_	_	8	case	8:case	_
+8	fake	fake	X	_	Foreign=Yes	6	nmod	6:nmod:sobre	_
+9	news	news	X	_	Foreign=Yes	8	flat:foreign	8:flat:foreign	SpaceAfter=No
+10	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0005
+# text = O papa Francisco anunciou que fará um discurso sobre "fake news" em janeiro de 2018.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	papa	papa	NOUN	_	Number=Sing	4	nsubj	4:nsubj	_
+3	Francisco	Francisco	PROPN	_	_	2	nmod	2:nmod	_
+4	anunciou	anunciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	que	que	SCONJ	_	_	6	mark	6:mark	_
+6	fará	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	ccomp	4:ccomp	_
+7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	discurso	discurso	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+9	sobre	sobre	ADP	_	_	11	case	11:case	_
+10	"	"	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+11	fake	fake	X	_	Foreign=Yes	8	nmod	8:nmod:sobre	_
+12	news	news	X	_	Foreign=Yes	11	flat:foreign	11:flat:foreign	SpaceAfter=No
+13	"	"	PUNCT	_	_	11	punct	11:punct	_
+14	em	em	ADP	_	_	15	case	15:case	_
+15	janeiro	janeiro	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:em	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	2018	2018	NUM	_	NumType=Card	15	nmod	15:nmod:de	SpaceAfter=No
+18	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0007
+# text = Para comemorar o Dia Mundial das Comunicações Sociais, a Igreja Católica (nada contra a religião) irá meter o bedelho onde não foi chamada.
+1	Para	para	ADP	_	_	2	mark	2:mark	_
+2	comemorar	comemorar	VERB	_	VerbForm=Inf	21	advcl	21:advcl:para	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	Dia	Dia	PROPN	_	_	2	obj	2:obj	_
+5	Mundial	Mundial	PROPN	_	_	4	flat:name	4:flat:name	_
+6-7	das	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	8:det	_
+8	Comunicações	Comunicações	PROPN	_	_	4	flat:name	4:flat:name	_
+9	Sociais	Sociais	PROPN	_	_	4	flat:name	4:flat:name	SpaceAfter=No
+10	,	,	PUNCT	_	_	2	punct	2:punct	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	Igreja	Igreja	PROPN	_	_	21	nsubj	21:nsubj	_
+13	Católica	Católica	PROPN	_	_	12	flat:name	12:flat:name	_
+14	(	(	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+15	nada	nada	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	12	appos	12:appos	_
+16	contra	contra	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	religião	religião	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:contra	SpaceAfter=No
+19	)	)	PUNCT	_	_	15	punct	15:punct	_
+20	irá	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	21	aux	21:aux	_
+21	meter	meter	VERB	_	VerbForm=Inf	0	root	0:root|27:obl	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	bedelho	bedelho	NOUN	_	Gender=Masc|Number=Sing	21	obj	21:obj	_
+24	onde	onde	ADV	_	_	27	advmod	21:ref	_
+25	não	não	ADV	_	_	27	advmod	27:advmod	_
+26	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	27	aux:pass	27:aux:pass	_
+27	chamada	chamar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	21	acl:relcl	21:acl:relcl	SpaceAfter=No
+28	.	.	PUNCT	_	_	21	punct	21:punct	_
+
+# sent_id = S0009
+# text = Vamos ser sinceros!
+1	Vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	aux	3:aux	_
+2	ser	ser	AUX	_	VerbForm=Inf	3	cop	3:cop	_
+3	sinceros	sincero	ADJ	_	Gender=Masc|Number=Plur	0	root	0:root	SpaceAfter=No
+4	!	!	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0011
+# text = Igreja falando de "Fake News"... eles fazem isso há mais de 2000 anos, porém de uma maneira um pouco diferente.
+1	Igreja	Igreja	PROPN	_	_	10	nsubj	10:nsubj	_
+2	falando	falar	VERB	_	VerbForm=Ger	0	root	0:root	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+5	Fake	Fake	PROPN	_	_	2	obl	2:obl:de	_
+6	News	News	PROPN	_	_	5	flat:name	5:flat:name	SpaceAfter=No
+7	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+8	...	...	PUNCT	_	_	10	punct	10:punct	_
+9	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	10	nsubj	10:nsubj	_
+10	fazem	fazer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	2:parataxis	_
+11	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	10	obj	10:obj	_
+12	há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	advcl	10:advcl	_
+13	mais	mais	ADV	_	ExtPos=ADV	15	advmod	15:advmod	_
+14	de	de	ADP	_	_	13	fixed	13:fixed	_
+15	2000	2000	NUM	_	NumType=Card	16	nummod	16:nummod	_
+16	anos	ano	NOUN	_	Gender=Masc|Number=Plur	12	obj	12:obj	SpaceAfter=No
+17	,	,	PUNCT	_	_	21	punct	21:punct	_
+18	porém	porém	CCONJ	_	_	21	cc	21:cc	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	maneira	maneira	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:de	_
+22	um	um	DET	_	Definite=Ind|ExtPos=ADV|Gender=Masc|Number=Sing|PronType=Art	24	advmod	24:advmod	_
+23	pouco	pouco	NOUN	_	Gender=Masc|Number=Sing	22	fixed	22:fixed	_
+24	diferente	diferente	ADJ	_	Number=Sing	21	amod	21:amod	SpaceAfter=No
+25	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0013
+# text = Uma das religiões mais poderosas e capitalistas do mundo, a Igreja Católica possui um patrimônio estimado em cerca de 3 trilhões de dólares em bens imóveis.
+1	Uma	um	NUM	_	Gender=Fem|NumType=Card	16	dislocated	16:dislocated	_
+2-3	das	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	4:det	_
+4	religiões	religiõe	NOUN	_	Gender=Fem|Number=Plur	1	nmod	1:nmod:de	_
+5	mais	mais	ADV	_	_	6	advmod	6:advmod	_
+6	poderosas	poderoso	ADJ	_	Gender=Fem|Number=Plur	4	amod	4:amod	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	capitalistas	capitalista	ADJ	_	Number=Plur	6	conj	4:amod|6:conj:e	_
+9-10	do	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	1	nmod	1:nmod:de	SpaceAfter=No
+12	,	,	PUNCT	_	_	1	punct	1:punct	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	Igreja	Igreja	PROPN	_	_	16	nsubj	16:nsubj	_
+15	Católica	Católica	PROPN	_	_	14	flat:name	14:flat:name	_
+16	possui	possuir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+17	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	patrimônio	patrimônio	NOUN	_	Gender=Masc|Number=Sing	16	obj	16:obj	_
+19	estimado	estimar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	18	acl	18:acl	_
+20	em	em	ADP	_	_	24	case	24:case	_
+21	cerca	cerca	ADV	_	ExtPos=ADV	23	advmod	23:advmod	_
+22	de	de	ADP	_	_	21	fixed	21:fixed	_
+23	3	3	NUM	_	NumType=Card	24	nummod	24:nummod	_
+24	trilhões	trilhão	NOUN	_	Gender=Masc|Number=Plur	19	obl	19:obl:em	_
+25	de	de	ADP	_	_	26	case	26:case	_
+26	dólares	dólar	NOUN	_	Gender=Masc|Number=Plur	24	nmod	24:nmod:de	_
+27	em	em	ADP	_	_	28	case	28:case	_
+28	bens	bem	NOUN	_	Gender=Masc|Number=Plur	19	obl	19:obl:em	_
+29	imóveis	imóvel	ADJ	_	Number=Plur	28	amod	28:amod	SpaceAfter=No
+30	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0015
+# text = Pergunta: Adivinha como eles fizeram essa fortuna?
+1	Pergunta	perguntar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+2	:	:	PUNCT	_	_	3	punct	3:punct	_
+3	Adivinha	adivinhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	1:parataxis	_
+4	como	como	ADV	_	_	6	advmod	6:advmod	_
+5	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	6	nsubj	6:nsubj	_
+6	fizeram	fazer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	3	ccomp	3:ccomp	_
+7	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	8	det	8:det	_
+8	fortuna	fortuna	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	SpaceAfter=No
+9	?	?	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0017
+# text = R: espalhando "fake news" nas missas.
+1	R	R	PROPN	_	_	3	dep	3:dep	SpaceAfter=No
+2	:	:	PUNCT	_	_	1	punct	1:punct	_
+3	espalhando	espalhar	VERB	_	VerbForm=Ger	0	root	0:root	_
+4	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+5	fake	fake	X	_	Foreign=Yes	3	obj	3:obj	_
+6	news	news	X	_	Foreign=Yes	5	flat:foreign	5:flat:foreign	SpaceAfter=No
+7	"	"	PUNCT	_	_	5	punct	5:punct	_
+8-9	nas	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	10:det	_
+10	missas	missa	NOUN	_	Number=Plur	3	obl	3:obl:em	SpaceAfter=No
+11	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0019
+# text = O Vaticano informou que o tema da mensagem (que será divulgada em janeiro/2018) será "A verdade vos tornará livres Notícias falsas e jornalismo para a paz".
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Vaticano	Vaticano	PROPN	_	_	3	nsubj	3:nsubj	_
+3	informou	informar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	22	mark	22:mark	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	tema	tema	NOUN	_	Gender=Masc|Number=Sing	22	nsubj	22:nsubj	_
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	mensagem	mensagem	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de|13:nsubj:pass	_
+10	(	(	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+11	que	que	PRON	_	PronType=Rel	13	nsubj:pass	9:ref	_
+12	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	13	aux:pass	13:aux:pass	_
+13	divulgada	divulgar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	9	acl:relcl	9:acl:relcl	_
+14	em	em	ADP	_	_	15	case	15:case	_
+15	janeiro/2018	janeiro/2018	NUM	_	NumType=Card	13	obl	13:obl:em	SpaceAfter=No
+16	)	)	PUNCT	_	_	13	punct	13:punct	_
+17	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	22	cop	22:cop	_
+18	"	"	PUNCT	_	_	22	punct	22:punct	SpaceAfter=No
+19	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	verdade	verdade	NOUN	_	Gender=Fem|Number=Sing	22	nsubj	22:nsubj	_
+21	vos	vos	PRON	_	Case=Nom|Number=Plur|Person=2|PronType=Prs	22	obj	22:obj	_
+22	tornará	tornar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	ccomp	3:ccomp	_
+23	livres	livre	ADJ	_	Number=Plur	22	xcomp	22:xcomp	_
+24	Notícias	Notícias	PROPN	_	_	22	obj	22:obj|23:nsubj	_
+25	falsas	falso	ADJ	_	Gender=Fem|Number=Plur	24	amod	24:amod	_
+26	e	e	CCONJ	_	_	27	cc	27:cc	_
+27	jornalismo	jornalismo	NOUN	_	Gender=Masc|Number=Sing	24	conj	22:obj|24:conj:e	_
+28	para	para	ADP	_	_	30	case	30:case	_
+29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	paz	paz	NOUN	_	Gender=Fem|Number=Sing	27	nmod	27:nmod:para	SpaceAfter=No
+31	"	"	PUNCT	_	_	22	punct	22:punct	SpaceAfter=No
+32	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0021
+# text = Abaixo o Tweet do papa: PS: Não me venham com mi mi mi falando que estamos desrespeitando Deus!
+1	Abaixo	abaixo	ADV	_	_	3	advmod	3:advmod	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	Tweet	Tweet	PROPN	_	_	0	root	0:root	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	papa	papa	NOUN	_	Number=Sing	3	nmod	3:nmod:de	SpaceAfter=No
+7	:	:	PUNCT	_	_	3	punct	3:punct	_
+8	PS	PS	PROPN	_	_	3	parataxis	3:parataxis	SpaceAfter=No
+9	:	:	PUNCT	_	_	8	punct	8:punct	_
+10	Não	não	ADV	_	_	12	advmod	12:advmod	_
+11	me	me	PRON	_	Case=Dat|Number=Sing|Person=1|PronType=Prs	12	iobj	12:iobj	_
+12	venham	vir	VERB	_	Mood=Imp|Number=Plur|Person=3|VerbForm=Fin	3	parataxis	3:parataxis	_
+13	com	com	ADP	_	_	14	case	14:case	_
+14	mi	mi	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:com	_
+15	mi	mi	DET	_	Foreign=Yes|PronType=Art	14	nmod	14:nmod	_
+16	mi	mi	NOUN	_	Gender=Masc|Number=Sing	14	nmod	14:nmod	_
+17	falando	falar	VERB	_	VerbForm=Ger	12	advcl	12:advcl	_
+18	que	que	SCONJ	_	_	20	mark	20:mark	_
+19	estamos	estar	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	20	aux	20:aux	_
+20	desrespeitando	desrespeitar	VERB	_	VerbForm=Ger	17	ccomp	17:ccomp	_
+21	Deus	Deus	PROPN	_	_	20	obj	20:obj	SpaceAfter=No
+22	!	!	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0023
+# text = Deus é uma coisa... religião é outra totalmente diferente!
+1	Deus	Deus	PROPN	_	_	4	nsubj	4:nsubj	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+3	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	coisa	coisa	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+5	...	...	PUNCT	_	_	8	punct	8:punct	_
+6	religião	religião	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	8:nsubj	_
+7	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop	_
+8	outra	outro	PRON	_	Gender=Fem|Number=Sing|PronType=Ind	4	parataxis	4:parataxis	_
+9	totalmente	totalmente	ADV	_	_	10	advmod	10:advmod	_
+10	diferente	diferente	ADJ	_	Number=Sing	8	amod	8:amod	SpaceAfter=No
+11	!	!	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0024
+# text = att Patrícia Carvalho.
+1	att	att	NOUN	_	_	0	root	0:root	_
+2	Patrícia	Patrícia	PROPN	_	_	1	nmod	1:nmod	_
+3	Carvalho	Carvalho	PROPN	_	_	2	flat:name	2:flat:name	SpaceAfter=No
+4	.	.	PUNCT	_	_	1	punct	1:punct	_

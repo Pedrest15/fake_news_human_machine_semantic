@@ -1,0 +1,451 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = PROPINA 247: PF chega até blogueiro que mamava nas tetas públicas.
+1	PROPINA	PROPINA	PROPN	_	_	5	nsubj	5:nsubj	_
+2	247	247	NUM	_	NumType=Card	1	nmod	1:nmod	SpaceAfter=No
+3	:	:	PUNCT	_	_	1	punct	1:punct	_
+4	PF	PF	PROPN	_	_	5	nsubj	5:nsubj	_
+5	chega	chegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	até	até	ADP	_	_	7	case	7:case	_
+7	blogueiro	blogueiro	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:até|9:nsubj	_
+8	que	que	PRON	_	PronType=Rel	9	nsubj	7:ref	_
+9	mamava	mamar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	acl:relcl	7:acl:relcl	_
+10-11	nas	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	12:det	_
+12	tetas	teta	NOUN	_	Number=Plur	9	obl	9:obl:em	_
+13	públicas	público	ADJ	_	Gender=Fem|Number=Plur	12	amod	12:amod	SpaceAfter=No
+14	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0003
+# text = Site recebia dinheiro de propina.
+1	Site	site	NOUN	_	Gender=Masc|Number=Sing	2	nsubj	2:nsubj	_
+2	recebia	receber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+3	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	propina	propina	NOUN	_	Gender=Fem|Number=Sing	2	obl	2:obl:de	SpaceAfter=No
+6	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = A Polícia Federal, através da Operação Custo Brasil, conseguiu informações extremamente importantes sobre desvios milionários no Ministério do Planejamento.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Polícia	Polícia	PROPN	_	_	12	nsubj	12:nsubj	_
+3	Federal	Federal	PROPN	_	_	2	flat:name	2:flat:name	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	através	através	ADV	_	_	12	advmod	12:advmod	_
+6-7	da	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	Operação	Operação	PROPN	_	_	5	obl	5:obl:de	_
+9	Custo	Custo	PROPN	_	_	8	flat:name	8:flat:name	_
+10	Brasil	Brasil	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+11	,	,	PUNCT	_	_	5	punct	5:punct	_
+12	conseguiu	conseguir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+13	informações	informação	NOUN	_	Gender=Fem|Number=Plur	12	obj	12:obj	_
+14	extremamente	extremamente	ADV	_	_	15	advmod	15:advmod	_
+15	importantes	importante	ADJ	_	Number=Plur	13	amod	13:amod	_
+16	sobre	sobre	ADP	_	_	17	case	17:case	_
+17	desvios	desvio	NOUN	_	Gender=Masc|Number=Plur	13	nmod	13:nmod:sobre	_
+18	milionários	milionário	ADJ	_	Gender=Masc|Number=Plur	17	amod	17:amod	_
+19-20	no	_	_	_	_	_	_	_	_
+19	em	em	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	Ministério	Ministério	PROPN	_	_	17	nmod	17:nmod:em	_
+22-23	do	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	Planejamento	Planejamento	PROPN	_	_	21	flat:name	21:flat:name	SpaceAfter=No
+25	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0007
+# text = (informações de Leandro Cari, do blasting News ) Segundo delação de Milton Pascowitch, tesoureiro do PT mandou repassar 180 mil reais referentes à publicações O desenrolar das investigações apontaram um novo personagem petista que e envolveu nos recentes escândalos de corrupção.
+1	(	(	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+2	informações	informação	NOUN	_	Gender=Fem|Number=Plur	22	parataxis	22:parataxis	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Leandro	Leandro	PROPN	_	_	2	nmod	2:nmod:de	_
+5	Cari	Cari	PROPN	_	_	4	flat:name	4:flat:name	SpaceAfter=No
+6	,	,	PUNCT	_	_	9	punct	9:punct	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	blasting	blasting	NOUN	_	Foreign=Yes	2	nmod	2:nmod:de	_
+10	News	News	PROPN	_	_	9	nmod	9:nmod	_
+11	)	)	PUNCT	_	_	2	punct	2:punct	_
+12	Segundo	segundo	ADP	_	_	13	case	13:case	_
+13	delação	delação	NOUN	_	Gender=Fem|Number=Sing	22	obl	22:obl:segundo	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	Milton	Milton	PROPN	_	_	13	nmod	13:nmod:de	_
+16	Pascowitch	Pascowitch	PROPN	_	_	15	flat:name	15:flat:name	SpaceAfter=No
+17	,	,	PUNCT	_	_	2	punct	2:punct	_
+18	tesoureiro	tesoureiro	NOUN	_	Gender=Masc|Number=Sing	22	nsubj	22:nsubj	_
+19-20	do	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	PT	PT	PROPN	_	_	18	nmod	18:nmod:de	_
+22	mandou	mandar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+23	repassar	repassar	VERB	_	VerbForm=Inf	22	xcomp	22:xcomp	_
+24	180	180	NUM	_	NumType=Card	26	nummod	26:nummod	_
+25	mil	mil	NUM	_	NumType=Card	24	flat	24:flat	_
+26	reais	real	NOUN	_	Gender=Masc|Number=Plur	23	obj	23:obj	_
+27	referentes	referente	ADJ	_	Number=Plur	26	amod	26:amod	_
+28-29	à	_	_	_	_	_	_	_	_
+28	a	a	ADP	_	_	30	case	30:case	_
+29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	publicações	publicação	NOUN	_	Gender=Fem|Number=Plur	27	obl	27:obl:a	_
+31	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+32	desenrolar	desenrolar	NOUN	_	Gender=Masc|Number=Sing	36	nsubj	36:nsubj	_
+33-34	das	_	_	_	_	_	_	_	_
+33	de	de	ADP	_	_	35	case	35:case	_
+34	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	35	det	35:det	_
+35	investigações	investigação	NOUN	_	Gender=Fem|Number=Plur	32	nmod	32:nmod:de	_
+36	apontaram	apontar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	16	dep	16:dep	_
+37	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	39	det	39:det	_
+38	novo	novo	ADJ	_	Gender=Masc|Number=Sing	39	amod	39:amod	_
+39	personagem	personagem	NOUN	_	Number=Sing	36	obj	36:obj|43:nsubj	_
+40	petista	petista	ADJ	_	Number=Sing	39	amod	39:amod	_
+41	que	que	PRON	_	PronType=Rel	43	nsubj	39:ref	_
+42	e	e	CCONJ	_	_	43	cc	43:cc	_
+43	envolveu	envolver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	39	acl:relcl	39:acl:relcl	_
+44-45	nos	_	_	_	_	_	_	_	_
+44	em	em	ADP	_	_	47	case	47:case	_
+45	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	47	det	47:det	_
+46	recentes	recente	ADJ	_	Number=Plur	47	amod	47:amod	_
+47	escândalos	escândalo	NOUN	_	Gender=Masc|Number=Plur	43	obl	43:obl:em	_
+48	de	de	ADP	_	_	49	case	49:case	_
+49	corrupção	corrupção	NOUN	_	Gender=Fem|Number=Sing	47	nmod	47:nmod:de	SpaceAfter=No
+50	.	.	PUNCT	_	_	22	punct	22:punct	_
+
+# sent_id = S0009
+# text = Trata-se do blogueiro Leonardo Attuch, do site Brasil247.
+1-2	Trata-se	_	_	_	_	_	_	_	_
+1	Trata	tratar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	1	expl:impers	1:expl:impers	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	blogueiro	blogueiro	NOUN	_	Gender=Masc|Number=Sing	1	obl	1:obl:de	_
+6	Leonardo	Leonardo	PROPN	_	_	5	nmod	5:nmod	_
+7	Attuch	Attuch	PROPN	_	_	6	flat:name	6:flat:name	SpaceAfter=No
+8	,	,	PUNCT	_	_	11	punct	11:punct	_
+9-10	do	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	site	site	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:de	_
+12	Brasil247	Brasil247	PROPN	_	_	11	nmod	11:nmod	SpaceAfter=No
+13	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0011
+# text = Investigadores verificaram que ele se utilizou de parcerias comerciais milionárias com os governos Lula e Dilma.
+1	Investigadores	investigador	NOUN	_	Gender=Masc|Number=Plur	2	nsubj	2:nsubj	_
+2	verificaram	verificar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	6	mark	6:mark	_
+4	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj	6:nsubj	_
+5	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	6	expl	6:expl	_
+6	utilizou	utilizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	ccomp	2:ccomp	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	parcerias	parceria	NOUN	_	Gender=Fem|Number=Plur	6	obl	6:obl:de	_
+9	comerciais	comercial	ADJ	_	Number=Plur	8	amod	8:amod	_
+10	milionárias	milionário	ADJ	_	Gender=Fem|Number=Plur	8	amod	8:amod	_
+11	com	com	ADP	_	_	13	case	13:case	_
+12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	13:det	_
+13	governos	governo	NOUN	_	Gender=Masc|Number=Plur	8	nmod	8:nmod:com	_
+14	Lula	Lula	PROPN	_	_	13	nmod	13:nmod	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	Dilma	Dilma	PROPN	_	_	14	conj	13:nmod|14:conj:e	SpaceAfter=No
+17	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0013
+# text = O blogueiro é considerado um "porta-voz da quadrilha", de acordo com a PF.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	blogueiro	blogueiro	NOUN	_	Gender=Masc|Number=Sing	4	nsubj:pass	4:nsubj:pass|7:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	considerado	considerar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+6	"	"	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+7	porta-voz	porta-voz	NOUN	_	Number=Sing	4	xcomp	4:xcomp	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	quadrilha	quadrilha	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:de	SpaceAfter=No
+11	"	"	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+12	,	,	PUNCT	_	_	14	punct	14:punct	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:de	_
+15	com	com	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	PF	PF	PROPN	_	_	14	nmod	14:nmod:com	SpaceAfter=No
+18	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0015
+# text = O blog Brasil 247 era movido a verba pública [até a chegada de Michel Temer, que cortou a mamata] com o intuito de difamar adversários do PT.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	blog	blog	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	6	nsubj:pass	6:nsubj:pass	_
+3	Brasil	Brasil	PROPN	_	_	2	nmod	2:nmod	_
+4	247	247	PROPN	_	_	3	flat:name	3:flat:name	_
+5	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	aux:pass	6:aux:pass	_
+6	movido	mover	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+7	a	a	ADP	_	_	8	case	8:case	_
+8	verba	verba	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:a	_
+9	pública	público	ADJ	_	Gender=Fem|Number=Sing	8	amod	8:amod	_
+10	[	[	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+11	até	até	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	chegada	chegada	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:até	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	Michel	Michel	PROPN	_	_	13	nmod	13:nmod:de|19:nsubj	_
+16	Temer	Temer	PROPN	_	_	15	flat:name	15:flat:name	SpaceAfter=No
+17	,	,	PUNCT	_	_	19	punct	19:punct	_
+18	que	que	PRON	_	PronType=Rel	19	nsubj	15:ref	_
+19	cortou	cortar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	acl:relcl	15:acl:relcl	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	mamata	mamata	NOUN	_	Gender=Fem|Number=Sing	19	obj	19:obj	SpaceAfter=No
+22	]	]	PUNCT	_	_	13	punct	13:punct	_
+23	com	com	ADP	_	_	25	case	25:case	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	intuito	intuito	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:com	_
+26	de	de	ADP	_	_	27	mark	27:mark	_
+27	difamar	difamar	VERB	_	VerbForm=Inf	25	acl	25:acl:de	_
+28	adversários	adversário	NOUN	_	Gender=Masc|Number=Plur	27	obj	27:obj	_
+29-30	do	_	_	_	_	_	_	_	_
+29	de	de	ADP	_	_	31	case	31:case	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	PT	PT	PROPN	_	_	28	nmod	28:nmod:de	SpaceAfter=No
+32	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0017
+# text = Além da difamação, o portal continha textos com conteúdo patrocinado por contratantes, alguns desses já estavam condenados e presos.
+1	Além	além	ADV	_	_	8	advmod	8:advmod	_
+2-3	da	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	difamação	difamação	NOUN	_	Gender=Fem|Number=Sing	1	obl	1:obl:de	SpaceAfter=No
+5	,	,	PUNCT	_	_	1	punct	1:punct	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	portal	portal	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	8:nsubj	_
+8	continha	conter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+9	textos	texto	NOUN	_	Gender=Masc|Number=Plur	8	obj	8:obj	_
+10	com	com	ADP	_	_	11	case	11:case	_
+11	conteúdo	conteúdo	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:com	_
+12	patrocinado	patrocinar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	11	acl	11:acl	_
+13	por	por	ADP	_	_	14	case	14:case	_
+14	contratantes	contratante	NOUN	_	Number=Plur	12	obl:agent	12:obl:agent	SpaceAfter=No
+15	,	,	PUNCT	_	_	21	punct	21:punct	_
+16	alguns	algum	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	21	nsubj	21:nsubj|23:nsubj	_
+17-18	desses	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	esses	esse	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	16	nmod	16:nmod:de	_
+19	já	já	ADV	_	_	21	advmod	21:advmod	_
+20	estavam	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	21	cop	21:cop|23:cop	_
+21	condenados	condenado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	8	parataxis	8:parataxis	_
+22	e	e	CCONJ	_	_	23	cc	23:cc	_
+23	presos	preso	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	21	conj	8:parataxis|21:conj:e	SpaceAfter=No
+24	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0019
+# text = Os procuradores apuraram que em 2015, Attuch recebia dinheiro de envolvidos nos escândalos de corrupção da Petrobras.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	procuradores	procurador	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	3:nsubj	_
+3	apuraram	apurar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	9	mark	9:mark	_
+5	em	em	ADP	_	_	6	case	6:case	_
+6	2015	2015	NUM	_	NumType=Card	9	obl	9:obl:em	SpaceAfter=No
+7	,	,	PUNCT	_	_	6	punct	6:punct	_
+8	Attuch	Attuch	PROPN	_	_	9	nsubj	9:nsubj	_
+9	recebia	receber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	ccomp	3:ccomp	_
+10	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	9	obj	9:obj	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	envolvidos	envolvido	NOUN	_	Gender=Masc|Number=Plur	9	obl	9:obl:de	_
+13-14	nos	_	_	_	_	_	_	_	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	15:det	_
+15	escândalos	escândalo	NOUN	_	Gender=Masc|Number=Plur	12	nmod	12:nmod:em	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	corrupção	corrupção	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:de	_
+18-19	da	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	Petrobras	Petrobras	PROPN	_	_	17	nmod	17:nmod:de	SpaceAfter=No
+21	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0021
+# text = Um desses acusados envolvidos chegou a dizer que fez um repasse de R$ 180 mil ao blogueiro.
+1	Um	um	NUM	_	Gender=Masc|NumType=Card	6	nsubj	6:nsubj|8:nsubj	_
+2-3	desses	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	4	det	4:det	_
+4	acusados	acusado	NOUN	_	Gender=Masc|Number=Plur	1	nmod	1:nmod:de	_
+5	envolvidos	envolvido	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	4	amod	4:amod	_
+6	chegou	chegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	a	a	ADP	_	_	8	mark	8:mark	_
+8	dizer	dizer	VERB	_	VerbForm=Inf	6	xcomp	6:xcomp	_
+9	que	que	SCONJ	_	_	10	mark	10:mark	_
+10	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	ccomp	8:ccomp	_
+11	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	repasse	repasse	NOUN	_	Gender=Masc|Number=Sing	10	obj	10:obj	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	R$	R$	SYM	_	_	12	nmod	12:nmod:de	_
+15	180	180	NUM	_	NumType=Card	14	nummod	14:nummod	_
+16	mil	mil	NUM	_	NumType=Card	15	flat	15:flat	_
+17-18	ao	_	_	_	_	_	_	_	_
+17	a	a	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	blogueiro	blogueiro	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:a	SpaceAfter=No
+20	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0023
+# text = A prisão de Attuch chegou a ser solicitada, porém o juiz federal Sérgio Moro preferiu prudentemente que as investigações se aprofundassem em relação ao caso, antes que fosse efetivada a prisão do "blogueiro".
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	prisão	prisão	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj|8:nsubj:pass	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Attuch	Attuch	PROPN	_	_	2	nmod	2:nmod:de	_
+5	chegou	chegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	a	a	ADP	_	_	8	mark	8:mark	_
+7	ser	ser	AUX	_	VerbForm=Inf	8	aux:pass	8:aux:pass	_
+8	solicitada	solicitar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	5	xcomp	5:xcomp	SpaceAfter=No
+9	,	,	PUNCT	_	_	16	punct	16:punct	_
+10	porém	porém	CCONJ	_	_	16	cc	16:cc	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	juiz	juiz	NOUN	_	Gender=Masc|Number=Sing	16	nsubj	16:nsubj	_
+13	federal	federal	ADJ	_	Number=Sing	12	amod	12:amod	_
+14	Sérgio	Sérgio	PROPN	_	_	12	nmod	12:nmod	_
+15	Moro	Moro	PROPN	_	_	14	flat:name	14:flat:name	_
+16	preferiu	preferir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	conj	5:conj:porém	_
+17	prudentemente	prudentemente	ADV	_	_	16	advmod	16:advmod	_
+18	que	que	SCONJ	_	_	22	mark	22:mark	_
+19	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	20:det	_
+20	investigações	investigação	NOUN	_	Gender=Fem|Number=Plur	22	nsubj	22:nsubj	_
+21	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	22	expl	22:expl	_
+22	aprofundassem	aprofundar	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	16	ccomp	16:ccomp	_
+23	em	em	ADP	_	_	24	case	24:case	_
+24	relação	relação	NOUN	_	Gender=Fem|Number=Sing	22	obl	22:obl:em	_
+25-26	ao	_	_	_	_	_	_	_	_
+25	a	a	ADP	_	_	27	case	27:case	_
+26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	caso	caso	NOUN	_	Gender=Masc|Number=Sing	24	nmod	24:nmod:a	SpaceAfter=No
+28	,	,	PUNCT	_	_	32	punct	32:punct	_
+29	antes	antes	ADV	_	ExtPos=SCONJ	32	mark	32:mark	_
+30	que	que	SCONJ	_	_	29	fixed	29:fixed	_
+31	fosse	fosse	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	32	aux:pass	32:aux:pass	_
+32	efetivada	efetivar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	22	advcl	22:advcl:antes_que	_
+33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	34:det	_
+34	prisão	prisão	NOUN	_	Gender=Fem|Number=Sing	32	nsubj:pass	32:nsubj:pass	_
+35-36	do	_	_	_	_	_	_	_	_
+35	de	de	ADP	_	_	38	case	38:case	_
+36	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	38:det	_
+37	"	"	PUNCT	_	_	38	punct	38:punct	SpaceAfter=No
+38	blogueiro	blogueiro	NOUN	_	Gender=Masc|Number=Sing	34	nmod	34:nmod:de	SpaceAfter=No
+39	"	"	PUNCT	_	_	38	punct	38:punct	SpaceAfter=No
+40	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0025
+# text = Leonardo se defendeu e afirmou que aquele o montante de dinheiro recebido era fruto de seu trabalho, através de um pagamento relativo à produção de "conteúdo jornalístico".
+1	Leonardo	Leonardo	PROPN	_	_	3	nsubj	3:nsubj|5:nsubj	_
+2	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	3	expl	3:expl	_
+3	defendeu	defender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	e	e	CCONJ	_	_	5	cc	5:cc	_
+5	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	3:conj:e	_
+6	que	que	SCONJ	_	_	14	mark	14:mark	_
+7	aquele	aquele	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	9	det	9:det	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	montante	montante	NOUN	_	Number=Sing	14	nsubj	14:nsubj	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:de	_
+12	recebido	receber	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	11	acl	11:acl	_
+13	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	14	cop	14:cop	_
+14	fruto	fruto	NOUN	_	Gender=Masc|Number=Sing	5	ccomp	5:ccomp	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	17	det	17:det	_
+17	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	14	nmod	14:nmod:de	SpaceAfter=No
+18	,	,	PUNCT	_	_	19	punct	19:punct	_
+19	através	através	ADV	_	_	14	advmod	14:advmod	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	pagamento	pagamento	NOUN	_	Gender=Masc|Number=Sing	19	obl	19:obl:de	_
+23	relativo	relativo	ADJ	_	Gender=Masc|Number=Sing	22	amod	22:amod	_
+24-25	à	_	_	_	_	_	_	_	_
+24	a	a	ADP	_	_	26	case	26:case	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	produção	produção	NOUN	_	Gender=Fem|Number=Sing	23	obl	23:obl:a	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	"	"	PUNCT	_	_	29	punct	29:punct	SpaceAfter=No
+29	conteúdo	conteúdo	NOUN	_	Gender=Masc|Number=Sing	26	nmod	26:nmod:de	_
+30	jornalístico	jornalístico	ADJ	_	Gender=Masc|Number=Sing	29	amod	29:amod	SpaceAfter=No
+31	"	"	PUNCT	_	_	29	punct	29:punct	SpaceAfter=No
+32	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0027
+# text = Na última semana, Attuch foi levado para depoimento pelos agentes federais da Operação Custo Brasil.
+1-2	Na	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	4	case	4:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+3	última	último	ADJ	_	Gender=Fem|Number=Sing	4	amod	4:amod	_
+4	semana	semana	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:em	SpaceAfter=No
+5	,	,	PUNCT	_	_	4	punct	4:punct	_
+6	Attuch	Attuch	PROPN	_	_	8	nsubj:pass	8:nsubj:pass	_
+7	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	aux:pass	8:aux:pass	_
+8	levado	levar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+9	para	para	ADP	_	_	10	case	10:case	_
+10	depoimento	depoimento	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:para	_
+11-12	pelos	_	_	_	_	_	_	_	_
+11	por	por	ADP	_	_	13	case	13:case	_
+12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	13:det	_
+13	agentes	agente	NOUN	_	Number=Plur	8	obl:agent	8:obl:agent	_
+14	federais	federal	ADJ	_	Number=Plur	13	amod	13:amod	_
+15-16	da	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	Operação	Operação	PROPN	_	_	13	nmod	13:nmod:de	_
+18	Custo	Custo	PROPN	_	_	17	flat:name	17:flat:name	_
+19	Brasil	Brasil	PROPN	_	_	17	flat:name	17:flat:name	SpaceAfter=No
+20	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0029
+# text = A PF descobriu que alguns pagamentos foram efetuados por ordem do ex-tesoureiro do PT, João Vaccari Neto.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	PF	PF	PROPN	_	_	3	nsubj	3:nsubj	_
+3	descobriu	descobrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	8	mark	8:mark	_
+5	alguns	algum	DET	_	Gender=Masc|Number=Plur|PronType=Ind	6	det	6:det	_
+6	pagamentos	pagamento	NOUN	_	Gender=Masc|Number=Plur	8	nsubj:pass	8:nsubj:pass	_
+7	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	8	aux:pass	8:aux:pass	_
+8	efetuados	efetuar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	3	ccomp	3:ccomp	_
+9	por	por	ADP	_	_	10	case	10:case	_
+10	ordem	ordem	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:por	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	ex-tesoureiro	ex-tesoureiro	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:de	_
+14-15	do	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	PT	PT	PROPN	_	_	13	nmod	13:nmod:de	SpaceAfter=No
+17	,	,	PUNCT	_	_	18	punct	18:punct	_
+18	João	João	PROPN	_	_	13	appos	13:appos	_
+19	Vaccari	Vaccari	PROPN	_	_	18	flat:name	18:flat:name	_
+20	Neto	Neto	PROPN	_	_	18	flat:name	18:flat:name	SpaceAfter=No
+21	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0031
+# text = O dinheiro seria proveniente de recursos financeiros desviados de aposentados e funcionários públicos altamente endividados.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+3	seria	ser	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	4	cop	4:cop	_
+4	proveniente	proveniente	ADJ	_	Number=Sing	0	root	0:root	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	recursos	recurso	NOUN	_	Gender=Masc|Number=Plur	4	obl	4:obl:de	_
+7	financeiros	financeiro	ADJ	_	Gender=Masc|Number=Plur	6	amod	6:amod	_
+8	desviados	desviar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	6	acl	6:acl	_
+9	de	de	ADP	_	_	10	case	10:case|12:case	_
+10	aposentados	aposentado	NOUN	_	Gender=Masc|Number=Plur	8	obl	8:obl:de	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	funcionários	funcionário	NOUN	_	Gender=Masc|Number=Plur	10	conj	8:obl:de|10:conj:e	_
+13	públicos	público	ADJ	_	Gender=Masc|Number=Plur	12	amod	12:amod	_
+14	altamente	altamente	ADV	_	_	15	advmod	15:advmod	_
+15	endividados	endividado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	12	amod	12:amod	SpaceAfter=No
+16	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0032
+# text = leia mais:
+1	leia	ler	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	mais	mais	ADV	_	_	1	advmod	1:advmod	SpaceAfter=No
+3	:	:	PUNCT	_	_	1	punct	1:punct	_

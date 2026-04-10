@@ -1,0 +1,220 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Ex-ministro José Dirceu receberá aposentadoria de R$ 96 mil como ex-deputado.
+1	Ex-ministro	ex-ministro	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+2	José	José	PROPN	_	_	1	nmod	1:nmod	_
+3	Dirceu	Dirceu	PROPN	_	_	2	flat:name	2:flat:name	_
+4	receberá	receber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+5	aposentadoria	aposentadoria	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	R$	R$	SYM	_	_	5	nmod	5:nmod:de	_
+8	96	96	NUM	_	NumType=Card	7	nummod	7:nummod	_
+9	mil	mil	NUM	_	NumType=Card	8	flat	8:flat	_
+10	como	como	ADP	_	_	11	case	11:case	_
+11	ex-deputado	ex-deputado	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:como	SpaceAfter=No
+12	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0003
+# text = Decisão surpreendente da Câmara dos Deputados foi publicada no Diário Oficial da União nesta quinta-feira (21).
+1	Decisão	decisão	NOUN	_	Gender=Fem|Number=Sing	10	nsubj:pass	10:nsubj:pass	_
+2	surpreendente	surpreendente	ADJ	_	Number=Sing	1	amod	1:amod	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	Câmara	Câmara	PROPN	_	_	1	nmod	1:nmod:de	_
+6-7	dos	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	8:det	_
+8	Deputados	Deputados	PROPN	_	_	5	flat:name	5:flat:name	_
+9	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	aux:pass	10:aux:pass	_
+10	publicada	publicar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+11-12	no	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	Diário	Diário	PROPN	_	_	10	obl	10:obl:em	_
+14	Oficial	Oficial	PROPN	_	_	13	flat:name	13:flat:name	_
+15-16	da	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	União	União	PROPN	_	_	13	flat:name	13:flat:name	_
+18-19	nesta	_	_	_	_	_	_	_	_
+18	em	em	ADP	_	_	20	case	20:case	_
+19	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	20	det	20:det	_
+20	quinta-feira	quinta-feira	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:em	_
+21	(	(	PUNCT	_	_	22	punct	22:punct	SpaceAfter=No
+22	21	21	NUM	_	NumType=Card	20	appos	20:appos	SpaceAfter=No
+23	)	)	PUNCT	_	_	22	punct	22:punct	SpaceAfter=No
+24	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0005
+# text = O petista, que foi cassado em 2005 e condenado a mais de 30 anos de prisão na Operação Lava Jato, agora tem direito a uma aposentadoria astronômica.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	petista	petista	NOUN	_	Number=Sing	25	nsubj	6:nsubj:pass|10:nsubj:pass|25:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
+4	que	que	PRON	_	PronType=Rel	6	nsubj:pass	2:ref	_
+5	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	aux:pass	6:aux:pass|10:aux:pass	_
+6	cassado	cassar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	acl:relcl	2:acl:relcl	_
+7	em	em	ADP	_	_	8	case	8:case	_
+8	2005	2005	NUM	_	NumType=Card	6	obl	6:obl:em	_
+9	e	e	CCONJ	_	_	10	cc	10:cc	_
+10	condenado	condenar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	6	conj	2:acl:relcl|6:conj:e	_
+11	a	a	ADP	_	_	15	case	15:case	_
+12	mais	mais	ADV	_	ExtPos=ADV	14	advmod	14:advmod	_
+13	de	de	ADP	_	_	12	fixed	12:fixed	_
+14	30	30	NUM	_	NumType=Card	15	nummod	15:nummod	_
+15	anos	ano	NOUN	_	Gender=Masc|Number=Plur	10	obl	10:obl:a	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	prisão	prisão	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:de	_
+18-19	na	_	_	_	_	_	_	_	_
+18	em	em	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	Operação	Operação	PROPN	_	_	10	obl	10:obl:em	_
+21	Lava	Lava	PROPN	_	_	20	flat:name	20:flat:name	_
+22	Jato	Jato	PROPN	_	_	20	flat:name	20:flat:name	SpaceAfter=No
+23	,	,	PUNCT	_	_	6	punct	6:punct	_
+24	agora	agora	ADV	_	_	25	advmod	25:advmod	_
+25	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+26	direito	direito	NOUN	_	Gender=Masc|Number=Sing	25	obj	25:obj	_
+27	a	a	ADP	_	_	29	case	29:case	_
+28	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	aposentadoria	aposentadoria	NOUN	_	Gender=Fem|Number=Sing	26	nmod	26:nmod:a	_
+30	astronômica	astronômico	ADJ	_	Gender=Fem|Number=Sing	29	amod	29:amod	SpaceAfter=No
+31	.	.	PUNCT	_	_	25	punct	25:punct	_
+
+# sent_id = S0007
+# text = Segundo a decisão do presidente da Câmara, Rodrigo Maia, baseada em parecer da Coordenação de Registro e Seguridade Parlamentar, o valor será pago retroativamente desde sua primeira eleição em 1990.
+1	Segundo	segundo	ADP	_	_	3	case	3:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	decisão	decisão	NOUN	_	Gender=Fem|Number=Sing	29	obl	29:obl:segundo	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	presidente	presidente	NOUN	_	Number=Sing	3	nmod	3:nmod:de	_
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	Câmara	Câmara	PROPN	_	_	6	nmod	6:nmod:de	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	Rodrigo	Rodrigo	PROPN	_	_	6	appos	6:appos	_
+12	Maia	Maia	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+13	,	,	PUNCT	_	_	11	punct	11:punct	_
+14	baseada	basear	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	3	acl	3:acl	_
+15	em	em	ADP	_	_	16	case	16:case	_
+16	parecer	parecer	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:em	_
+17-18	da	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	Coordenação	Coordenação	PROPN	_	_	16	nmod	16:nmod:de	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	Registro	Registro	PROPN	_	_	19	flat:name	19:flat:name	_
+22	e	e	CCONJ	_	_	23	cc	23:cc	_
+23	Seguridade	Seguridade	PROPN	_	_	19	flat:name	19:flat:name	_
+24	Parlamentar	Parlamentar	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+25	,	,	PUNCT	_	_	3	punct	3:punct	_
+26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	valor	valor	NOUN	_	Gender=Masc|Number=Sing	29	nsubj:pass	29:nsubj:pass	_
+28	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	29	aux:pass	29:aux:pass	_
+29	pago	pagar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+30	retroativamente	retroativamente	ADV	_	_	29	advmod	29:advmod	_
+31	desde	desde	ADP	_	_	34	case	34:case	_
+32	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	34	det	34:det	_
+33	primeira	primeiro	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	34	amod	34:amod	_
+34	eleição	eleição	NOUN	_	Gender=Fem|Number=Sing	29	obl	29:obl:desde	_
+35	em	em	ADP	_	_	36	case	36:case	_
+36	1990	1990	NUM	_	NumType=Card	34	nmod	34:nmod:em	SpaceAfter=No
+37	.	.	PUNCT	_	_	29	punct	29:punct	_
+
+# sent_id = S0009
+# text = "É um direito adquirido", afirmou Maia, ignorando as condenações judiciais anteriores.
+1	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+2	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	direito	direito	NOUN	_	Gender=Masc|Number=Sing	8	ccomp:speech	8:ccomp:speech	_
+5	adquirido	adquirido	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	4	amod	4:amod	SpaceAfter=No
+6	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+7	,	,	PUNCT	_	_	4	punct	4:punct	_
+8	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	Maia	Maia	PROPN	_	_	8	nsubj	8:nsubj	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	ignorando	ignorar	VERB	_	VerbForm=Ger	8	advcl	8:advcl	_
+12	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	13:det	_
+13	condenações	condenação	NOUN	_	Gender=Fem|Number=Plur	11	obj	11:obj	_
+14	judiciais	judicial	ADJ	_	Number=Plur	13	amod	13:amod	_
+15	anteriores	anterior	ADJ	_	Number=Plur	13	amod	13:amod	SpaceAfter=No
+16	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0011
+# text = José Dirceu, que atualmente aguarda decisão da segunda instância em liberdade, poderá usufruir dessa aposentadoria mesmo com as restrições impostas, como o uso de tornozeleira eletrônica.
+1	José	José	PROPN	_	_	15	nsubj	6:nsubj|15:nsubj|16:nsubj	_
+2	Dirceu	Dirceu	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
+4	que	que	PRON	_	PronType=Rel	6	nsubj	1:ref	_
+5	atualmente	atualmente	ADV	_	_	6	advmod	6:advmod	_
+6	aguarda	aguardar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+7	decisão	decisão	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	11	case	11:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+10	segunda	segundo	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	11	amod	11:amod	_
+11	instância	instância	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:de	_
+12	em	em	ADP	_	_	13	case	13:case	_
+13	liberdade	liberdade	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:em	SpaceAfter=No
+14	,	,	PUNCT	_	_	6	punct	6:punct	_
+15	poderá	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+16	usufruir	usufruir	VERB	_	VerbForm=Inf	15	xcomp	15:xcomp	_
+17-18	dessa	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	19	det	19:det	_
+19	aposentadoria	aposentadoria	NOUN	_	Gender=Fem|Number=Sing	16	obl	16:obl:de	_
+20	mesmo	mesmo	ADV	_	_	23	advmod	23:advmod	_
+21	com	com	ADP	_	_	23	case	23:case	_
+22	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	23:det	_
+23	restrições	restrição	NOUN	_	Gender=Fem|Number=Plur	16	obl	16:obl:com	_
+24	impostas	imposr	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	23	acl	23:acl	SpaceAfter=No
+25	,	,	PUNCT	_	_	28	punct	28:punct	_
+26	como	como	ADP	_	_	28	case	28:case	_
+27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	uso	uso	NOUN	_	Gender=Masc|Number=Sing	23	nmod	23:nmod:como	_
+29	de	de	ADP	_	_	30	case	30:case	_
+30	tornozeleira	tornozeleira	NOUN	_	Gender=Fem|Number=Sing	28	nmod	28:nmod:de	_
+31	eletrônica	eletrônico	ADJ	_	Gender=Fem|Number=Sing	30	amod	30:amod	SpaceAfter=No
+32	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0013
+# text = Especialistas em direito público criticam a decisão, alegando que ela estabelece um perigoso precedente para políticos condenados.
+1	Especialistas	especialista	NOUN	_	Number=Plur	5	nsubj	5:nsubj	_
+2	em	em	ADP	_	_	3	case	3:case	_
+3	direito	direito	NOUN	_	Gender=Masc|Number=Sing	1	nmod	1:nmod:em	_
+4	público	público	ADJ	_	Gender=Masc|Number=Sing	3	amod	3:amod	_
+5	criticam	criticar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	decisão	decisão	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	alegando	alegar	VERB	_	VerbForm=Ger	5	advcl	5:advcl	_
+10	que	que	SCONJ	_	_	12	mark	12:mark	_
+11	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	12	nsubj	12:nsubj	_
+12	estabelece	estabelecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	ccomp	9:ccomp	_
+13	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+14	perigoso	perigoso	ADJ	_	Gender=Masc|Number=Sing	15	amod	15:amod	_
+15	precedente	precedente	NOUN	_	Number=Sing	12	obj	12:obj	_
+16	para	para	ADP	_	_	17	case	17:case	_
+17	políticos	político	NOUN	_	Gender=Masc|Number=Plur	15	nmod	15:nmod:para	_
+18	condenados	condenar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	17	acl	17:acl	SpaceAfter=No
+19	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0015
+# text = ENTENDA COMO A DECISÃO PODE MUDAR O FUTURO DAS APOSENTADORIAS PARLAMENTARES.
+1	ENTENDA	entender	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	COMO	como	ADV	_	_	5	advmod	5:advmod	_
+3	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	DECISÃO	decisão	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj|6:nsubj	_
+5	PODE	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	1:ccomp	_
+6	MUDAR	mudar	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	_
+7	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	FUTURO	futuro	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+9-10	DAS	_	_	_	_	_	_	_	_
+9	DE	de	ADP	_	_	11	case	11:case	_
+10	AS	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	11:det	_
+11	APOSENTADORIAS	aposentadoria	NOUN	_	Gender=Fem|Number=Plur	8	nmod	8:nmod:de	_
+12	PARLAMENTARES	parlamentar	ADJ	_	Number=Plur	11	amod	11:amod	SpaceAfter=No
+13	.	.	PUNCT	_	_	1	punct	1:punct	_

@@ -1,0 +1,105 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = R7: Vídeo completo do Ultimate Fighter Brasília.
+1	R7	R7	PROPN	_	_	0	root	0:root	SpaceAfter=No
+2	:	:	PUNCT	_	_	3	punct	3:punct	_
+3	Vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	1	dep	1:dep	_
+4	completo	completo	ADJ	_	Gender=Masc|Number=Sing	3	amod	3:amod	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Ultimate	Ultimate	PROPN	_	_	3	nmod	3:nmod:de	_
+8	Fighter	Fighter	PROPN	_	_	7	flat:name	7:flat:name	_
+9	Brasília	Brasília	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+10	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = A vergonha que está percorrendo o mundo.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	vergonha	vergonha	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root|5:nsubj	_
+3	que	que	PRON	_	PronType=Rel	5	nsubj	2:ref	_
+4	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	5:aux	_
+5	percorrendo	percorrer	VERB	_	VerbForm=Ger	2	acl:relcl	2:acl:relcl	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	SpaceAfter=No
+8	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = Uma briga de tapas entre os deputados Ze Geraldo (PT-PA) e Wellington Roberto (PR-PB).
+1	Uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	briga	briga	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	tapas	tapa	NOUN	_	Gender=Fem|Number=Plur	2	nmod	2:nmod:de	_
+5	entre	entre	ADP	_	_	7	case	7:case	_
+6	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	7:det	_
+7	deputados	deputado	NOUN	_	Gender=Masc|Number=Plur	2	nmod	2:nmod:entre	_
+8	Ze	Ze	PROPN	_	_	7	nmod	7:nmod	_
+9	Geraldo	Geraldo	PROPN	_	_	8	flat:name	8:flat:name	_
+10	(	(	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+11	PT-PA	PT-PA	PROPN	_	_	8	parataxis	8:parataxis	SpaceAfter=No
+12	)	)	PUNCT	_	_	11	punct	11:punct	_
+13	e	e	CCONJ	_	_	14	cc	14:cc	_
+14	Wellington	Wellington	PROPN	_	_	8	conj	7:nmod|8:conj:e	_
+15	Roberto	Roberto	PROPN	_	_	14	flat:name	14:flat:name	_
+16	(	(	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+17	PR-PB	PR-PB	PROPN	_	_	14	parataxis	14:parataxis	SpaceAfter=No
+18	)	)	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+19	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0007
+# text = O presidente do Conselho de Ética, deputado José Carlos Araujo (PSD-BA), suspendeu a sessão por 5 minutos, e depois retomou o debate sobre o processo contra Cunha.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	presidente	presidente	NOUN	_	Number=Sing	17	nsubj	17:nsubj|26:nsubj	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	Conselho	Conselho	PROPN	_	_	2	nmod	2:nmod:de	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	Ética	Ética	PROPN	_	_	5	flat:name	5:flat:name	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	2	appos	2:appos	_
+10	José	José	PROPN	_	_	9	nmod	9:nmod	_
+11	Carlos	Carlos	PROPN	_	_	10	flat:name	10:flat:name	_
+12	Araujo	Araujo	PROPN	_	_	10	flat:name	10:flat:name	_
+13	(	(	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+14	PSD-BA	PSD-BA	PROPN	_	_	9	parataxis	9:parataxis	SpaceAfter=No
+15	)	)	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+16	,	,	PUNCT	_	_	9	punct	9:punct	_
+17	suspendeu	suspender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	sessão	sessão	NOUN	_	Gender=Fem|Number=Sing	17	obj	17:obj	_
+20	por	por	ADP	_	_	22	case	22:case	_
+21	5	5	NUM	_	NumType=Card	22	nummod	22:nummod	_
+22	minutos	minuto	NOUN	_	Gender=Masc|Number=Plur	17	obl	17:obl:por	SpaceAfter=No
+23	,	,	PUNCT	_	_	26	punct	26:punct	_
+24	e	e	CCONJ	_	_	26	cc	26:cc	_
+25	depois	depois	ADV	_	_	26	advmod	26:advmod	_
+26	retomou	retomar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	conj	17:conj:e	_
+27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	debate	debate	NOUN	_	Gender=Masc|Number=Sing	26	obj	26:obj	_
+29	sobre	sobre	ADP	_	_	31	case	31:case	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	processo	processo	NOUN	_	Gender=Masc|Number=Sing	28	nmod	28:nmod:sobre	_
+32	contra	contra	ADP	_	_	33	case	33:case	_
+33	Cunha	Cunha	PROPN	_	_	31	nmod	31:nmod:contra	SpaceAfter=No
+34	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0009
+# text = Ele repreendeu os dois deputados, e disse que o colegiado não é local para briga.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj|8:nsubj	_
+2	repreendeu	repreender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	5:det	_
+4	dois	dois	NUM	_	Gender=Masc|NumType=Card	5	nummod	5:nummod	_
+5	deputados	deputado	NOUN	_	Gender=Masc|Number=Plur	2	obj	2:obj	SpaceAfter=No
+6	,	,	PUNCT	_	_	8	punct	8:punct	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	2:conj:e	_
+9	que	que	SCONJ	_	_	14	mark	14:mark	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	colegiado	colegiado	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	14:nsubj	_
+12	não	não	ADV	_	_	14	advmod	14:advmod	_
+13	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	14:cop	_
+14	local	local	NOUN	_	Number=Sing	8	ccomp	8:ccomp	_
+15	para	para	ADP	_	_	16	case	16:case	_
+16	briga	briga	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:para	SpaceAfter=No
+17	.	.	PUNCT	_	_	2	punct	2:punct	_

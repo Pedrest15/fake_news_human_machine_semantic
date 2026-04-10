@@ -1,0 +1,192 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = O prefeito mais humilde do Brasil Exemplo pro Brasil.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	prefeito	prefeito	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+3	mais	mais	ADV	_	_	4	advmod	4:advmod	_
+4	humilde	humilde	ADJ	_	Number=Sing	2	amod	2:amod	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Brasil	Brasil	PROPN	_	_	2	nmod	2:nmod:de	_
+8	Exemplo	exemplo	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod	_
+9-10	pro	_	_	_	_	_	_	_	_
+9	para	para	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	Brasil	Brasil	PROPN	_	_	8	nmod	8:nmod:para	SpaceAfter=No
+12	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Flagrante do prefeito de uma das cidades mais ricas do Espírito Santo em pleno sábado a tarde (dia de folga) fazendo uma coisa que você nunca viu político nenhum do mundo fazer.
+1	Flagrante	flagrante	ADJ	_	Number=Sing	0	root	0:root	_
+2-3	do	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	prefeito	prefeito	NOUN	_	Gender=Masc|Number=Sing	1	nmod	1:nmod:de	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	uma	um	NUM	_	Gender=Fem|NumType=Card	4	nmod	4:nmod:de	_
+7-8	das	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	9:det	_
+9	cidades	cidade	NOUN	_	Gender=Fem|Number=Plur	6	nmod	6:nmod:de	_
+10	mais	mais	ADV	_	_	11	advmod	11:advmod	_
+11	ricas	rico	ADJ	_	Gender=Fem|Number=Plur	9	amod	9:amod	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	Espírito	Espírito	PROPN	_	_	9	nmod	9:nmod:de	_
+15	Santo	Santo	PROPN	_	_	14	flat:name	14:flat:name	_
+16	em	em	ADP	_	_	18	case	18:case	_
+17	pleno	pleno	ADJ	_	Gender=Masc|Number=Sing	18	amod	18:amod	_
+18	sábado	sábado	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:em	_
+19	a	a	ADP	_	_	20	case	20:case	_
+20	tarde	tarde	NOUN	_	Gender=Fem|Number=Sing	18	nmod	18:nmod:a	_
+21	(	(	PUNCT	_	_	22	punct	22:punct	SpaceAfter=No
+22	dia	dia	NOUN	_	Gender=Masc|Number=Sing	18	appos	18:appos	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	folga	folga	NOUN	_	Gender=Fem|Number=Sing	22	nmod	22:nmod:de	SpaceAfter=No
+25	)	)	PUNCT	_	_	22	punct	22:punct	_
+26	fazendo	fazer	VERB	_	VerbForm=Ger	1	acl	1:acl	_
+27	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	coisa	coisa	NOUN	_	Gender=Fem|Number=Sing	26	obj	26:obj|32:obj	_
+29	que	que	PRON	_	PronType=Rel	32	obj	28:ref	_
+30	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	32	nsubj	32:nsubj	_
+31	nunca	nunca	ADV	_	_	32	advmod	32:advmod	_
+32	viu	ver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	28	acl:relcl	28:acl:relcl	_
+33	político	político	NOUN	_	Gender=Masc|Number=Sing	32	obj	32:obj|38:nsubj	_
+34	nenhum	nenhum	DET	_	Gender=Masc|Number=Sing|PronType=Ind	33	det	33:det	_
+35-36	do	_	_	_	_	_	_	_	_
+35	de	de	ADP	_	_	37	case	37:case	_
+36	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	37:det	_
+37	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	33	nmod	33:nmod:de	_
+38	fazer	fazer	VERB	_	VerbForm=Inf	32	xcomp	32:xcomp	SpaceAfter=No
+39	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0005
+# text = Serginho Meneguelli é um político estreante que está levando humanidade para a administração pública.
+1	Serginho	Serginho	PROPN	_	_	5	nsubj	5:nsubj	_
+2	Meneguelli	Meneguelli	PROPN	_	_	1	flat:name	1:flat:name	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	político	político	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root|9:nsubj	_
+6	estreante	estreante	ADJ	_	Number=Sing	5	amod	5:amod	_
+7	que	que	PRON	_	PronType=Rel	9	nsubj	5:ref	_
+8	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux	9:aux	_
+9	levando	levar	VERB	_	VerbForm=Ger	5	acl:relcl	5:acl:relcl	_
+10	humanidade	humanidade	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+11	para	para	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	administração	administração	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:para	_
+14	pública	público	ADJ	_	Gender=Fem|Number=Sing	13	amod	13:amod	SpaceAfter=No
+15	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0007
+# text = No dia de sua posse ele foi para a cerimônia de bicicleta por morar próximo a prefeitura e acreditar que a mobilidade urbana por veículos individuais além de elevar a poluição ainda aumenta os congestionamentos.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	dia	dia	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:em	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	6	det	6:det	_
+6	posse	posse	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:de	_
+7	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nsubj	8:nsubj	_
+8	foi	ir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	para	para	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	cerimônia	cerimônia	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:para	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	bicicleta	bicicleta	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:de	_
+14	por	por	ADP	_	_	15	mark	15:mark|20:mark	_
+15	morar	morar	VERB	_	VerbForm=Inf	8	advcl	8:advcl:por	_
+16	próximo	próximo	ADV	_	_	15	advmod	15:advmod	_
+17	a	a	ADP	_	_	18	case	18:case	_
+18	prefeitura	prefeitura	NOUN	_	Gender=Fem|Number=Sing	16	obl	16:obl:a	_
+19	e	e	CCONJ	_	_	20	cc	20:cc	_
+20	acreditar	acreditar	VERB	_	VerbForm=Inf	15	conj	8:advcl:por|15:conj:e	_
+21	que	que	SCONJ	_	_	34	mark	34:mark	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	mobilidade	mobilidade	NOUN	_	Gender=Fem|Number=Sing	34	nsubj	34:nsubj	_
+24	urbana	urbano	ADJ	_	Gender=Fem|Number=Sing	23	amod	23:amod	_
+25	por	por	ADP	_	_	26	case	26:case	_
+26	veículos	veículo	NOUN	_	Gender=Masc|Number=Plur	23	nmod	23:nmod:por	_
+27	individuais	individual	ADJ	_	Number=Plur	26	amod	26:amod	_
+28	além	além	ADV	_	_	20	advmod	20:advmod	_
+29	de	de	ADP	_	_	30	mark	30:mark	_
+30	elevar	elevar	VERB	_	VerbForm=Inf	28	acl	28:acl:de	_
+31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	32:det	_
+32	poluição	poluição	NOUN	_	Gender=Fem|Number=Sing	30	obj	30:obj	_
+33	ainda	ainda	ADV	_	_	34	advmod	34:advmod	_
+34	aumenta	aumentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	ccomp	20:ccomp	_
+35	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	36	det	36:det	_
+36	congestionamentos	congestionamento	NOUN	_	Gender=Masc|Number=Plur	34	obj	34:obj	SpaceAfter=No
+37	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0009
+# text = No vídeo percebemos o prefeito em pleno sabadão, que para outros prefeitos seria um dia de folga, fazendo um jardim com as próprias mãos para economizar dinheiro público e elevar o nível de amor e zelo da população para com os logradouros públicos.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:em	_
+4	percebemos	perceber	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	prefeito	prefeito	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	pleno	pleno	ADJ	_	Gender=Masc|Number=Sing	9	amod	9:amod	_
+9	sabadão	sabadão	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:em|17:nsubj	SpaceAfter=No
+10	,	,	PUNCT	_	_	17	punct	17:punct	_
+11	que	que	PRON	_	PronType=Rel	17	nsubj	9:ref	_
+12	para	para	ADP	_	_	14	case	14:case	_
+13	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	14	det	14:det	_
+14	prefeitos	prefeito	NOUN	_	Gender=Masc|Number=Plur	17	nmod	17:nmod:para	_
+15	seria	ser	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	17	cop	17:cop	_
+16	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	dia	dia	NOUN	_	Gender=Masc|Number=Sing	9	acl:relcl	9:acl:relcl	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	folga	folga	NOUN	_	Gender=Fem|Number=Sing	17	nmod	17:nmod:de	SpaceAfter=No
+20	,	,	PUNCT	_	_	21	punct	21:punct	_
+21	fazendo	fazer	VERB	_	VerbForm=Ger	4	advcl	4:advcl	_
+22	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	jardim	jardim	NOUN	_	Gender=Masc|Number=Sing	21	obj	21:obj	_
+24	com	com	ADP	_	_	27	case	27:case	_
+25	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	27	det	27:det	_
+26	próprias	próprio	ADJ	_	Gender=Fem|Number=Plur	27	amod	27:amod	_
+27	mãos	mão	NOUN	_	Gender=Fem|Number=Plur	21	obl	21:obl:com	_
+28	para	para	ADP	_	_	29	mark	29:mark	_
+29	economizar	economizar	VERB	_	VerbForm=Inf	21	advcl	21:advcl:para	_
+30	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	29	obj	29:obj	_
+31	público	público	ADJ	_	Gender=Masc|Number=Sing	30	amod	30:amod	_
+32	e	e	CCONJ	_	_	33	cc	33:cc	_
+33	elevar	elevar	VERB	_	VerbForm=Inf	21	conj	21:conj:e	_
+34	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	35:det	_
+35	nível	nível	NOUN	_	Gender=Masc|Number=Sing	33	obj	33:obj	_
+36	de	de	ADP	_	_	37	case	37:case|39:case	_
+37	amor	amor	NOUN	_	Gender=Masc|Number=Sing	35	nmod	35:nmod:de	_
+38	e	e	CCONJ	_	_	39	cc	39:cc	_
+39	zelo	zelo	NOUN	_	Gender=Masc|Number=Sing	37	conj	35:nmod:de|37:conj:e	_
+40-41	da	_	_	_	_	_	_	_	_
+40	de	de	ADP	_	_	42	case	42:case	_
+41	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	42:det	_
+42	população	população	NOUN	_	Gender=Fem|Number=Sing	37	nmod	37:nmod:de|39:nmod:de	_
+43	para	para	ADP	_	_	46	case	46:case	_
+44	com	com	ADP	_	_	46	case	46:case	_
+45	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	46	det	46:det	_
+46	logradouros	logradouro	NOUN	_	Gender=Masc|Number=Plur	37	nmod	37:nmod:para_com|39:nmod:para_com	_
+47	públicos	público	ADJ	_	Gender=Masc|Number=Plur	46	amod	46:amod	SpaceAfter=No
+48	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0011
+# text = Ajude a compartilhar este exemplo para inspirar outros prefeitos do Brasil.
+1	Ajude	ajudar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	a	a	ADP	_	_	3	mark	3:mark	_
+3	compartilhar	compartilhar	VERB	_	VerbForm=Inf	1	xcomp	1:xcomp	_
+4	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	5	det	5:det	_
+5	exemplo	exemplo	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	_
+6	para	para	ADP	_	_	7	mark	7:mark	_
+7	inspirar	inspirar	VERB	_	VerbForm=Inf	3	advcl	3:advcl:para	_
+8	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	9	det	9:det	_
+9	prefeitos	prefeito	NOUN	_	Gender=Masc|Number=Plur	7	obj	7:obj	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	Brasil	Brasil	PROPN	_	_	9	nmod	9:nmod:de	SpaceAfter=No
+13	.	.	PUNCT	_	_	1	punct	1:punct	_

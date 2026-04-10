@@ -1,0 +1,55 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Delcídio dá entrevista e confirma quem são os chefões: "Agi a mando de Lula e Dilma".
+1	Delcídio	Delcídio	PROPN	_	_	2	nsubj	2:nsubj|5:nsubj	_
+2	dá	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	entrevista	entrevista	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+4	e	e	CCONJ	_	_	5	cc	5:cc	_
+5	confirma	confirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:e	_
+6	quem	quem	PRON	_	PronType=Ind	9	nsubj	9:nsubj	_
+7	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	cop	9:cop	_
+8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	9:det	_
+9	chefões	chefão	NOUN	_	Gender=Masc|Number=Plur	5	ccomp	5:ccomp	SpaceAfter=No
+10	:	:	PUNCT	_	_	12	punct	12:punct	_
+11	"	"	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+12	Agi	agir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	2	parataxis	2:parataxis	_
+13	a	a	ADP	_	_	14	case	14:case	_
+14	mando	mando	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:a	_
+15	de	de	ADP	_	_	16	case	16:case|18:case	_
+16	Lula	Lula	PROPN	_	_	14	nmod	14:nmod:de	_
+17	e	e	CCONJ	_	_	18	cc	18:cc	_
+18	Dilma	Dilma	PROPN	_	_	16	conj	14:nmod:de|16:conj:e	SpaceAfter=No
+19	"	"	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+20	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Fui chamado de mentiroso.
+1	Fui	ser	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	2	aux:pass	2:aux:pass	_
+2	chamado	chamar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	mentiroso	mentiroso	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:de	SpaceAfter=No
+5	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = Pô, um líder de governo chamado de mentiroso?
+1	Pô	pô	INTJ	_	_	4	discourse	4:discourse	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	líder	líder	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	governo	governo	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:de	_
+7	chamado	chamar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	4	acl	4:acl	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	mentiroso	mentiroso	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:de	SpaceAfter=No
+10	?	?	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0007
+# text = Eu fui líder dela!.
+1	Eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	3:nsubj	_
+2	fui	ser	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	3	cop	3:cop	_
+3	líder	líder	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+4-5	dela	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nmod	3:nmod:de	_
+6	!	!	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+7	.	.	PUNCT	_	_	3	punct	3:punct	_

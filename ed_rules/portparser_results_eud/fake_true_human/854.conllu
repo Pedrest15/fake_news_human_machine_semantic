@@ -1,0 +1,135 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = prefeito de curitiba diz que não mandou fechar nada e, mesmo assim, cidade tem zero mortes curitiba tem 2 milhões de habitantes e prefeito rafael greca não fechou o comércio!
+1	prefeito	prefeito	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	curitiba	curitiba	NOUN	_	_	1	nmod	1:nmod:de	_
+4	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	que	que	SCONJ	_	_	7	mark	7:mark|16:mark	_
+6	não	não	ADV	_	_	7	advmod	7:advmod	_
+7	mandou	mandar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	ccomp	4:ccomp	_
+8	fechar	fechar	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+9	nada	nada	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	8	obj	8:obj	_
+10	e	e	CCONJ	_	_	16	cc	16:cc	SpaceAfter=No
+11	,	,	PUNCT	_	_	13	punct	13:punct	_
+12	mesmo	mesmo	ADV	_	_	13	advmod	13:advmod	_
+13	assim	assim	ADV	_	_	16	advmod	16:advmod	SpaceAfter=No
+14	,	,	PUNCT	_	_	13	punct	13:punct	_
+15	cidade	cidade	NOUN	_	Gender=Fem|Number=Sing	16	nsubj	16:nsubj	_
+16	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	4:ccomp|7:conj:e	_
+17	zero	zero	NUM	_	NumType=Card	18	nummod	18:nummod	_
+18	mortes	morte	NOUN	_	Gender=Fem|Number=Plur	16	obj	16:obj	_
+19	curitiba	curitiba	NOUN	_	Gender=Fem|Number=Sing	16	nsubj	16:nsubj	_
+20	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	ccomp	4:ccomp	_
+21	2	2	NUM	_	NumType=Card	22	nummod	22:nummod	_
+22	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	20	obj	20:obj	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	habitantes	habitante	NOUN	_	Number=Plur	22	nmod	22:nmod:de	_
+25	e	e	CCONJ	_	_	30	cc	30:cc	_
+26	prefeito	prefeito	NOUN	_	Gender=Masc|Number=Sing	30	nsubj	30:nsubj	_
+27	rafael	rafael	NOUN	_	_	26	nmod	26:nmod	_
+28	greca	greca	NOUN	_	Number=Sing	27	flat:name	27:flat:name	_
+29	não	não	ADV	_	_	30	advmod	30:advmod	_
+30	fechou	fechar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	conj	4:ccomp|20:conj:e	_
+31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+32	comércio	comércio	NOUN	_	Gender=Masc|Number=Sing	30	obj	30:obj	SpaceAfter=No
+33	!	!	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0003
+# text = zero mortes!, rafael greca, prefeito de curitiba, não mandou fechar nada!
+1	zero	zero	NUM	_	NumType=Card	2	nummod	2:nummod	_
+2	mortes	morte	NOUN	_	Gender=Fem|Number=Plur	13	parataxis	13:parataxis	SpaceAfter=No
+3	!	!	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	rafael	rafael	NOUN	_	Gender=Masc|Number=Sing	13	parataxis	13:parataxis	_
+6	greca	greca	NOUN	_	Number=Sing	5	flat:name	5:flat:name	SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	8:punct	_
+8	prefeito	prefeito	NOUN	_	Gender=Masc|Number=Sing	5	appos	5:appos	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	curitiba	curitiba	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	SpaceAfter=No
+11	,	,	PUNCT	_	_	8	punct	8:punct	_
+12	não	não	ADV	_	_	13	advmod	13:advmod	_
+13	mandou	mandar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	fechar	fechar	VERB	_	VerbForm=Inf	13	xcomp	13:xcomp	_
+15	nada	nada	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	14	obj	14:obj	SpaceAfter=No
+16	!	!	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0005
+# text = por incrível que pareça os que fecharam foi por causa da cultura de massa de medo implantado pelas grandes mídias, até descobrirem que em curitiba ninguém mandou fechar!
+1	por	por	ADP	_	_	2	case	2:case	_
+2	incrível	incrível	ADJ	_	Number=Sing	10	nmod	10:nmod:por	_
+3	que	que	SCONJ	_	_	4	obl	4:obl	_
+4	pareça	parecer	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+5	os	o	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Dem	4	nsubj	4:nsubj|7:nsubj	_
+6	que	que	PRON	_	PronType=Rel	7	nsubj	5:ref	_
+7	fecharam	fechar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_
+8	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	cop	10:cop	_
+9	por	por	ADP	_	_	10	case	10:case	_
+10	causa	causa	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+11-12	da	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	cultura	cultura	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:de	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	massa	massa	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:de	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	medo	medo	NOUN	_	Gender=Masc|Number=Sing	15	nmod	15:nmod:de	_
+18	implantado	implantar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	13	acl	13:acl	_
+19-20	pelas	_	_	_	_	_	_	_	_
+19	por	por	ADP	_	_	22	case	22:case	_
+20	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	22:det	_
+21	grandes	grande	ADJ	_	Number=Plur	22	amod	22:amod	_
+22	mídias	mídia	NOUN	_	Gender=Fem|Number=Plur	18	obl:agent	18:obl:agent	SpaceAfter=No
+23	,	,	PUNCT	_	_	25	punct	25:punct	_
+24	até	até	ADP	_	_	25	mark	25:mark	_
+25	descobrirem	descobrir	VERB	_	Number=Plur|Person=3|VerbForm=Inf	10	advcl	10:advcl:até	_
+26	que	que	SCONJ	_	_	30	mark	30:mark	_
+27	em	em	ADP	_	_	28	case	28:case	_
+28	curitiba	curitiba	PROPN	_	_	30	obl	30:obl:em	_
+29	ninguém	ninguém	PRON	_	Number=Sing|PronType=Ind	30	nsubj	30:nsubj	_
+30	mandou	mandar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	25	ccomp	25:ccomp	_
+31	fechar	fechar	VERB	_	VerbForm=Inf	30	xcomp	30:xcomp	SpaceAfter=No
+32	!	!	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0007
+# text = … mas isso a globo não mostra!
+1	…	…	ADJ	_	_	7	cc	7:cc	_
+2	mas	mas	CCONJ	_	_	7	cc	7:cc	_
+3	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	7	obj	7:obj	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	globo	globo	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+6	não	não	ADV	_	_	7	advmod	7:advmod	_
+7	mostra	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+8	!	!	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0009
+# text = 2 milhões de habitantes zero mortes e não fechei nada diz prefeito curitiba.
+1	2	2	NUM	_	NumType=Card	2	nummod	2:nummod	_
+2	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	11	nsubj	11:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	habitantes	habitante	NOUN	_	Number=Plur	2	nmod	2:nmod:de	_
+5	zero	zero	NUM	_	NumType=Card	6	nummod	6:nummod	_
+6	mortes	morte	NOUN	_	Gender=Fem|Number=Plur	2	nmod	2:nmod	_
+7	e	e	CCONJ	_	_	9	cc	9:cc	_
+8	não	não	ADV	_	_	9	advmod	9:advmod	_
+9	fechei	fechar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	2	conj	2:conj:e|11:nsubj	_
+10	nada	nada	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	9	obj	9:obj	_
+11	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+12	prefeito	prefeito	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	11:nsubj	_
+13	curitiba	curitiba	ADJ	_	_	12	nmod	12:nmod	SpaceAfter=No
+14	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0011
+# text = que os cientistas que coordenam esse fecha geral que expliquem isso….
+1	que	que	SCONJ	_	_	10	mark	10:mark	_
+2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	3:det	_
+3	cientistas	cientista	NOUN	_	Number=Plur	10	nsubj	5:nsubj|10:nsubj	_
+4	que	que	PRON	_	PronType=Rel	5	nsubj	3:ref	_
+5	coordenam	coordenar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_
+6	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	7	det	7:det	_
+7	fecha	fecha	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+8	geral	geral	ADJ	_	Number=Sing	7	amod	7:amod	_
+9	que	que	SCONJ	_	_	10	mark	10:mark	_
+10	expliquem	explicar	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+11	isso…	isso…	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+12	.	.	PUNCT	_	_	10	punct	10:punct	_

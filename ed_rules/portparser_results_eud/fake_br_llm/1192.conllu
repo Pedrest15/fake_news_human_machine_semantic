@@ -1,0 +1,525 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Manifestantes contra Temer causam caos em Brasília; Forças Armadas são acionadas.
+1	Manifestantes	manifestante	NOUN	_	Number=Plur	4	nsubj	4:nsubj	_
+2	contra	contra	ADP	_	_	3	case	3:case	_
+3	Temer	Temer	PROPN	_	_	1	nmod	1:nmod:contra	_
+4	causam	causar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	caos	caos	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+6	em	em	ADP	_	_	7	case	7:case	_
+7	Brasília	Brasília	PROPN	_	_	4	obl	4:obl:em	SpaceAfter=No
+8	;	;	PUNCT	_	_	12	punct	12:punct	_
+9	Forças	Forças	PROPN	_	_	12	nsubj:pass	12:nsubj:pass	_
+10	Armadas	Armadas	PROPN	_	_	9	flat:name	9:flat:name	_
+11	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	aux:pass	12:aux:pass	_
+12	acionadas	acionar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	4	conj	4:conj	SpaceAfter=No
+13	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0003
+# text = Prédios históricos da Esplanada dos Ministérios foram gravemente danificados durante protestos violentos na quarta-feira (24).
+1	Prédios	prédio	NOUN	_	Gender=Masc|Number=Plur	11	nsubj:pass	11:nsubj:pass	_
+2	históricos	histórico	ADJ	_	Gender=Masc|Number=Plur	1	amod	1:amod	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	Esplanada	Esplanada	PROPN	_	_	1	nmod	1:nmod:de	_
+6-7	dos	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	8:det	_
+8	Ministérios	Ministérios	PROPN	_	_	5	flat:name	5:flat:name	_
+9	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	11	aux:pass	11:aux:pass	_
+10	gravemente	gravemente	ADV	_	_	11	advmod	11:advmod	_
+11	danificados	danificar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	_
+12	durante	durante	ADP	_	_	13	case	13:case	_
+13	protestos	protesto	NOUN	_	Gender=Masc|Number=Plur	11	obl	11:obl:durante	_
+14	violentos	violento	ADJ	_	Gender=Masc|Number=Plur	13	amod	13:amod	_
+15-16	na	_	_	_	_	_	_	_	_
+15	em	em	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	quarta-feira	quarta-feira	NOUN	_	Gender=Fem|Number=Sing	11	obl	11:obl:em	_
+18	(	(	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+19	24	24	NUM	_	NumType=Card	17	appos	17:appos	SpaceAfter=No
+20	)	)	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+21	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0005
+# text = O confronto entre policiais e manifestantes resultou em cenas chocantes, com destruição generalizada e uma estimativa de 500 mil pessoas, de acordo com os organizadores.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	confronto	confronto	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+3	entre	entre	ADP	_	_	4	case	4:case	_
+4	policiais	policial	NOUN	_	Number=Plur	2	nmod	2:nmod:entre	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	manifestantes	manifestante	NOUN	_	Number=Plur	4	conj	2:nmod:entre|4:conj:e	_
+7	resultou	resultar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	em	em	ADP	_	_	9	case	9:case|17:case	_
+9	cenas	cena	NOUN	_	Gender=Fem|Number=Plur	7	obl	7:obl:em	_
+10	chocantes	chocante	ADJ	_	Number=Plur	9	amod	9:amod	SpaceAfter=No
+11	,	,	PUNCT	_	_	13	punct	13:punct	_
+12	com	com	ADP	_	_	13	case	13:case	_
+13	destruição	destruição	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:com	_
+14	generalizada	generalizado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	13	amod	13:amod	_
+15	e	e	CCONJ	_	_	17	cc	17:cc	_
+16	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	estimativa	estimativa	NOUN	_	Gender=Fem|Number=Sing	9	conj	7:obl:em|9:conj:e	_
+18	de	de	ADP	_	_	21	case	21:case	_
+19	500	500	NUM	_	NumType=Card	21	nummod	21:nummod	_
+20	mil	mil	NUM	_	NumType=Card	19	flat	19:flat	_
+21	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	17	nmod	17:nmod:de	SpaceAfter=No
+22	,	,	PUNCT	_	_	24	punct	24:punct	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:de	_
+25	com	com	ADP	_	_	27	case	27:case	_
+26	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	27:det	_
+27	organizadores	organizador	NOUN	_	Gender=Masc|Number=Plur	24	nmod	24:nmod:com	SpaceAfter=No
+28	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0007
+# text = A Polícia Militar, que inicialmente calculou 35 mil participantes, revisou o número para 100 mil após a chegada de reforços.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Polícia	Polícia	PROPN	_	_	12	nsubj	7:nsubj|12:nsubj	_
+3	Militar	Militar	PROPN	_	_	2	flat:name	2:flat:name	SpaceAfter=No
+4	,	,	PUNCT	_	_	7	punct	7:punct	_
+5	que	que	PRON	_	PronType=Rel	7	nsubj	2:ref	_
+6	inicialmente	inicialmente	ADV	_	_	7	advmod	7:advmod	_
+7	calculou	calcular	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+8	35	35	NUM	_	NumType=Card	10	nummod	10:nummod	_
+9	mil	mil	NUM	_	NumType=Card	8	flat	8:flat	_
+10	participantes	participante	NOUN	_	Number=Plur	7	obj	7:obj	SpaceAfter=No
+11	,	,	PUNCT	_	_	7	punct	7:punct	_
+12	revisou	revisar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	número	número	NOUN	_	Gender=Masc|Number=Sing	12	obj	12:obj	_
+15	para	para	ADP	_	_	16	case	16:case	_
+16	100	100	NUM	_	NumType=Card	12	obl	12:obl:para	_
+17	mil	mil	NUM	_	NumType=Card	16	flat	16:flat	_
+18	após	após	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	chegada	chegada	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl:após	_
+21	de	de	ADP	_	_	22	case	22:case	_
+22	reforços	reforço	NOUN	_	Gender=Masc|Number=Plur	20	nmod	20:nmod:de	SpaceAfter=No
+23	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0009
+# text = Grupos extremistas atearam fogo nos ministérios da Agricultura, Planejamento e Cultura, além de terem vandalizado prédios importantes como a Catedral Metropolitana e o Museu da República.
+1	Grupos	grupo	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	3:nsubj	_
+2	extremistas	extremista	ADJ	_	Number=Plur	1	amod	1:amod	_
+3	atearam	atear	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	fogo	fogo	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	_
+5-6	nos	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	7:det	_
+7	ministérios	ministério	NOUN	_	Gender=Masc|Number=Plur	3	obl	3:obl:em	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case|12:case|14:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	Agricultura	Agricultura	PROPN	_	_	7	nmod	7:nmod:de	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	Planejamento	Planejamento	PROPN	_	_	10	conj	7:nmod:de|10:conj:e	_
+13	e	e	CCONJ	_	_	14	cc	14:cc	_
+14	Cultura	Cultura	PROPN	_	_	10	conj	7:nmod:de|10:conj:e	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	além	além	ADV	_	_	3	advmod	3:advmod	_
+17	de	de	ADP	_	_	19	mark	19:mark	_
+18	terem	ter	AUX	_	Number=Plur|Person=3|VerbForm=Inf	19	aux	19:aux	_
+19	vandalizado	vandalizar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	16	acl	16:acl:de	_
+20	prédios	prédio	NOUN	_	Gender=Masc|Number=Plur	19	obj	19:obj	_
+21	importantes	importante	ADJ	_	Number=Plur	20	amod	20:amod	_
+22	como	como	ADP	_	_	24	case	24:case|28:case	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	Catedral	Catedral	PROPN	_	_	20	nmod	20:nmod:como	_
+25	Metropolitana	Metropolitana	PROPN	_	_	24	flat:name	24:flat:name	_
+26	e	e	CCONJ	_	_	28	cc	28:cc	_
+27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	Museu	Museu	PROPN	_	_	24	conj	20:nmod:como|24:conj:e	_
+29-30	da	_	_	_	_	_	_	_	_
+29	de	de	ADP	_	_	31	case	31:case	_
+30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+31	República	República	PROPN	_	_	28	flat:name	28:flat:name	SpaceAfter=No
+32	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0011
+# text = A situação ficou ainda mais tensa quando manifestantes, usando estilingues e coquetéis molotov, tentaram invadir o Congresso Nacional.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	situação	situação	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj|6:nsubj	_
+3	ficou	ficar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	ainda	ainda	ADV	_	_	6	advmod	6:advmod	_
+5	mais	mais	ADV	_	_	6	advmod	6:advmod	_
+6	tensa	tenso	ADJ	_	Gender=Fem|Number=Sing	3	xcomp	3:xcomp	_
+7	quando	quando	SCONJ	_	_	16	mark	16:mark	_
+8	manifestantes	manifestante	NOUN	_	Number=Plur	16	nsubj	16:nsubj|17:nsubj	SpaceAfter=No
+9	,	,	PUNCT	_	_	10	punct	10:punct	_
+10	usando	usar	VERB	_	VerbForm=Ger	16	advcl	16:advcl	_
+11	estilingues	estilingue	NOUN	_	Gender=Masc|Number=Plur	10	obj	10:obj	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	coquetéis	coquetéi	NOUN	_	Gender=Masc|Number=Plur	11	conj	10:obj|11:conj:e	_
+14	molotov	moloto	NOUN	_	Gender=Masc|Number=Plur	13	amod	13:amod	SpaceAfter=No
+15	,	,	PUNCT	_	_	10	punct	10:punct	_
+16	tentaram	tentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	3	advcl	3:advcl:quando	_
+17	invadir	invadir	VERB	_	VerbForm=Inf	16	xcomp	16:xcomp	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	Congresso	Congresso	PROPN	_	_	17	obj	17:obj	_
+20	Nacional	Nacional	PROPN	_	_	19	flat:name	19:flat:name	SpaceAfter=No
+21	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0013
+# text = A Secretaria de Segurança Pública do Distrito Federal confirmou 20 detenções, incluindo um professor do Espírito Santo e sua filha menor de idade, acusados de incitar a violência.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Secretaria	Secretaria	PROPN	_	_	10	nsubj	10:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Segurança	Segurança	PROPN	_	_	2	flat:name	2:flat:name	_
+5	Pública	Pública	PROPN	_	_	2	flat:name	2:flat:name	_
+6-7	do	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	Distrito	Distrito	PROPN	_	_	2	nmod	2:nmod:de	_
+9	Federal	Federal	PROPN	_	_	8	flat:name	8:flat:name	_
+10	confirmou	confirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+11	20	20	NUM	_	NumType=Card	12	nummod	12:nummod	_
+12	detenções	detenção	NOUN	_	Gender=Fem|Number=Plur	10	obj	10:obj	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	incluindo	incluir	VERB	_	VerbForm=Ger	12	acl	12:acl	_
+15	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	professor	professor	NOUN	_	Gender=Masc|Number=Sing	14	obj	14:obj	_
+17-18	do	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	Espírito	Espírito	PROPN	_	_	16	nmod	16:nmod:de	_
+20	Santo	Santo	PROPN	_	_	19	flat:name	19:flat:name	_
+21	e	e	CCONJ	_	_	23	cc	23:cc	_
+22	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	23	det	23:det	_
+23	filha	filho	NOUN	_	Gender=Fem|Number=Sing	16	conj	14:obj|16:conj:e	_
+24	menor	menor	NOUN	_	Number=Sing	23	amod	23:amod	_
+25	de	de	ADP	_	_	26	case	26:case	_
+26	idade	idade	NOUN	_	Gender=Fem|Number=Sing	24	nmod	24:nmod:de	SpaceAfter=No
+27	,	,	PUNCT	_	_	28	punct	28:punct	_
+28	acusados	acusar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	16	acl	16:acl|23:acl	_
+29	de	de	ADP	_	_	30	mark	30:mark	_
+30	incitar	incitar	VERB	_	VerbForm=Inf	28	xcomp	28:xcomp	_
+31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	32:det	_
+32	violência	violência	NOUN	_	Gender=Fem|Number=Sing	30	obj	30:obj	SpaceAfter=No
+33	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0015
+# text = Além disso, três manifestantes foram presos por porte de drogas e armas brancas.
+1	Além	além	ADV	_	_	8	advmod	8:advmod	_
+2-3	disso	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	obl	1:obl:de	_
+4	,	,	PUNCT	_	_	1	punct	1:punct	_
+5	três	três	NUM	_	NumType=Card	6	nummod	6:nummod	_
+6	manifestantes	manifestante	NOUN	_	Number=Plur	8	nsubj:pass	8:nsubj:pass	_
+7	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	8	aux:pass	8:aux:pass	_
+8	presos	prender	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	_
+9	por	por	ADP	_	_	10	case	10:case|14:case	_
+10	porte	porte	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:por	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	drogas	droga	NOUN	_	Gender=Fem|Number=Plur	10	nmod	10:nmod:de	_
+13	e	e	CCONJ	_	_	14	cc	14:cc	_
+14	armas	arma	NOUN	_	Gender=Fem|Number=Plur	10	conj	8:obl:por|10:conj:e	_
+15	brancas	branco	ADJ	_	Gender=Fem|Number=Plur	14	amod	14:amod	SpaceAfter=No
+16	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0017
+# text = O ministro da Defesa, Raul Jungmann, anunciou que o presidente Temer decretou estado de emergência, convocando as Forças Armadas para restabelecer a ordem.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	ministro	ministro	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	10:nsubj	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	Defesa	Defesa	PROPN	_	_	2	nmod	2:nmod:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	Raul	Raul	PROPN	_	_	2	appos	2:appos	_
+8	Jungmann	Jungmann	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+9	,	,	PUNCT	_	_	7	punct	7:punct	_
+10	anunciou	anunciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+11	que	que	SCONJ	_	_	15	mark	15:mark	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	presidente	presidente	NOUN	_	Number=Sing	15	nsubj	15:nsubj	_
+14	Temer	Temer	PROPN	_	_	13	nmod	13:nmod	_
+15	decretou	decretar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	ccomp	10:ccomp	_
+16	estado	estado	NOUN	_	Gender=Masc|Number=Sing	15	obj	15:obj	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	emergência	emergência	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:de	SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	20:punct	_
+20	convocando	convocar	VERB	_	VerbForm=Ger	15	advcl	15:advcl	_
+21	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	22:det	_
+22	Forças	Forças	PROPN	_	_	20	obj	20:obj	_
+23	Armadas	Armadas	PROPN	_	_	22	flat:name	22:flat:name	_
+24	para	para	ADP	_	_	25	mark	25:mark	_
+25	restabelecer	restabelecer	VERB	_	VerbForm=Inf	20	advcl	20:advcl:para	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	ordem	ordem	NOUN	_	Gender=Fem|Number=Sing	25	obj	25:obj	SpaceAfter=No
+28	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0019
+# text = Imagens divulgadas nas redes sociais mostram pessoas sendo agredidas e arrastadas pelos policiais, gerando uma onda de indignação.
+1	Imagens	imagem	NOUN	_	Gender=Fem|Number=Plur	7	nsubj	7:nsubj	_
+2	divulgadas	divulgar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	1	acl	1:acl	_
+3-4	nas	_	_	_	_	_	_	_	_
+3	em	em	ADP	_	_	5	case	5:case	_
+4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	5:det	_
+5	redes	rede	NOUN	_	Gender=Fem|Number=Plur	2	obl	2:obl:em	_
+6	sociais	social	ADJ	_	Number=Plur	5	amod	5:amod	_
+7	mostram	mostrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	7	obj	7:obj	_
+9	sendo	ser	AUX	_	VerbForm=Ger	10	aux:pass	10:aux:pass|12:aux:pass	_
+10	agredidas	agredir	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	8	acl	8:acl	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	arrastadas	arrastar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	10	conj	8:acl|10:conj:e	_
+13-14	pelos	_	_	_	_	_	_	_	_
+13	por	por	ADP	_	_	15	case	15:case	_
+14	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	15:det	_
+15	policiais	policial	NOUN	_	Number=Plur	10	obl:agent	10:obl:agent|12:obl:agent	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	gerando	gerar	VERB	_	VerbForm=Ger	7	advcl	7:advcl	_
+18	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	onda	onda	NOUN	_	Gender=Fem|Number=Sing	17	obj	17:obj	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	indignação	indignação	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:de	SpaceAfter=No
+22	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0021
+# text = Ônibus de diversas regiões do país chegaram em massa, com estimativas de mais de 500 veículos, trazendo manifestantes principalmente de Minas Gerais, São Paulo e Goiás.
+1	Ônibus	ônibus	NOUN	_	Gender=Masc	8	nsubj	8:nsubj	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	diversas	diversos	DET	_	Gender=Fem|Number=Plur|PronType=Dem	4	det	4:det	_
+4	regiões	região	NOUN	_	Gender=Fem|Number=Plur	1	nmod	1:nmod:de	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	país	país	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:de	_
+8	chegaram	chegar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	em	em	ADP	_	_	10	case	10:case	_
+10	massa	massa	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:em	SpaceAfter=No
+11	,	,	PUNCT	_	_	13	punct	13:punct	_
+12	com	com	ADP	_	_	13	case	13:case	_
+13	estimativas	estimativa	NOUN	_	Gender=Fem|Number=Plur	8	obl	8:obl:com	_
+14	de	de	ADP	_	_	18	case	18:case	_
+15	mais	mais	ADV	_	ExtPos=ADV	17	advmod	17:advmod	_
+16	de	de	ADP	_	_	15	fixed	15:fixed	_
+17	500	500	NUM	_	NumType=Card	18	nummod	18:nummod	_
+18	veículos	veículo	NOUN	_	Gender=Masc|Number=Plur	13	nmod	13:nmod:de	SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	20:punct	_
+20	trazendo	trazer	VERB	_	VerbForm=Ger	8	advcl	8:advcl	_
+21	manifestantes	manifestante	NOUN	_	Number=Plur	20	obj	20:obj	_
+22	principalmente	principalmente	ADV	_	_	24	advmod	24:advmod	_
+23	de	de	ADP	_	_	24	case	24:case|27:case|30:case	_
+24	Minas	Minas	PROPN	_	_	21	nmod	21:nmod:de	_
+25	Gerais	Gerais	PROPN	_	_	24	flat:name	24:flat:name	SpaceAfter=No
+26	,	,	PUNCT	_	_	27	punct	27:punct	_
+27	São	São	PROPN	_	_	24	conj	21:nmod:de|24:conj:e	_
+28	Paulo	Paulo	PROPN	_	_	27	flat:name	27:flat:name	_
+29	e	e	CCONJ	_	_	30	cc	30:cc	_
+30	Goiás	Goiás	PROPN	_	_	24	conj	21:nmod:de|24:conj:e	SpaceAfter=No
+31	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0023
+# text = Os líderes sindicais, como Paulo Cayres, presidente da Confederação Nacional dos Metalúrgicos, afirmaram que a presença massiva na capital federal demonstra a insatisfação nacional com as reformas propostas por Temer.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	líderes	líder	NOUN	_	Gender=Masc|Number=Plur	18	nsubj	18:nsubj	_
+3	sindicais	sindical	ADJ	_	Number=Plur	2	amod	2:amod	SpaceAfter=No
+4	,	,	PUNCT	_	_	6	punct	6:punct	_
+5	como	como	ADP	_	_	6	case	6:case	_
+6	Paulo	Paulo	PROPN	_	_	2	nmod	2:nmod:como	_
+7	Cayres	Cayres	PROPN	_	_	6	flat:name	6:flat:name	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	presidente	presidente	NOUN	_	Number=Sing	6	appos	6:appos	_
+10-11	da	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	Confederação	Confederação	PROPN	_	_	9	nmod	9:nmod:de	_
+13	Nacional	Nacional	PROPN	_	_	12	flat:name	12:flat:name	_
+14-15	dos	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	16:det	_
+16	Metalúrgicos	Metalúrgicos	PROPN	_	_	12	flat:name	12:flat:name	SpaceAfter=No
+17	,	,	PUNCT	_	_	9	punct	9:punct	_
+18	afirmaram	afirmar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+19	que	que	SCONJ	_	_	27	mark	27:mark	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	presença	presença	NOUN	_	Gender=Fem|Number=Sing	27	nsubj	27:nsubj	_
+22	massiva	massivo	ADJ	_	Gender=Fem|Number=Sing	21	amod	21:amod	_
+23-24	na	_	_	_	_	_	_	_	_
+23	em	em	ADP	_	_	25	case	25:case	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	capital	capital	NOUN	_	Number=Sing	21	nmod	21:nmod:em	_
+26	federal	federal	ADJ	_	Number=Sing	25	amod	25:amod	_
+27	demonstra	demonstrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	ccomp	18:ccomp	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	insatisfação	insatisfação	NOUN	_	Gender=Fem|Number=Sing	27	obj	27:obj	_
+30	nacional	nacional	ADJ	_	Number=Sing	29	amod	29:amod	_
+31	com	com	ADP	_	_	33	case	33:case	_
+32	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	33	det	33:det	_
+33	reformas	reforma	NOUN	_	Gender=Fem|Number=Plur	29	nmod	29:nmod:com	_
+34	propostas	propor	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	33	acl	33:acl	_
+35	por	por	ADP	_	_	36	case	36:case	_
+36	Temer	Temer	PROPN	_	_	34	obl:agent	34:obl:agent	SpaceAfter=No
+37	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0025
+# text = A Força Sindical relatou que 2 mil sindicatos estão representados no ato, com 6 mil pessoas em Brasília até às 10h da manhã.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Força	Força	PROPN	_	_	4	nsubj	4:nsubj	_
+3	Sindical	Sindical	PROPN	_	_	2	flat:name	2:flat:name	_
+4	relatou	relatar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	que	que	SCONJ	_	_	10	mark	10:mark	_
+6	2	2	NUM	_	NumType=Card	8	nummod	8:nummod	_
+7	mil	mil	NUM	_	NumType=Card	6	flat	6:flat	_
+8	sindicatos	sindicato	NOUN	_	Gender=Masc|Number=Plur	10	nsubj	10:nsubj	_
+9	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_
+10	representados	representado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	4	ccomp	4:ccomp	_
+11-12	no	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	ato	ato	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:em	SpaceAfter=No
+14	,	,	PUNCT	_	_	18	punct	18:punct	_
+15	com	com	ADP	_	_	18	case	18:case	_
+16	6	6	NUM	_	NumType=Card	18	nummod	18:nummod	_
+17	mil	mil	NUM	_	NumType=Card	16	flat	16:flat	_
+18	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	10	obl	10:obl:com	_
+19	em	em	ADP	_	_	20	case	20:case	_
+20	Brasília	Brasília	PROPN	_	_	18	nmod	18:nmod:em	_
+21	até	até	ADP	_	_	24	case	24:case	_
+22-23	às	_	_	_	_	_	_	_	_
+22	a	a	ADP	_	_	24	case	24:case	_
+23	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	24:det	_
+24	10h	10h	NOUN	_	_	10	obl	10:obl:até_a	_
+25-26	da	_	_	_	_	_	_	_	_
+25	de	de	ADP	_	_	27	case	27:case	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	manhã	manhã	NOUN	_	Gender=Fem|Number=Sing	24	nmod	24:nmod:de	SpaceAfter=No
+28	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0027
+# text = Manifestantes carregaram caixões simbolizando a morte dos direitos trabalhistas e gritavam palavras de ordem como "Fora Temer" e "Nenhum direito a menos".
+1	Manifestantes	manifestante	NOUN	_	Number=Plur	2	nsubj	2:nsubj|12:nsubj	_
+2	carregaram	carregar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	caixões	caixão	NOUN	_	Gender=Masc|Number=Plur	2	obj	2:obj	_
+4	simbolizando	simbolizar	VERB	_	VerbForm=Ger	3	acl	3:acl	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	morte	morte	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+7-8	dos	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	9:det	_
+9	direitos	direito	NOUN	_	Gender=Masc|Number=Plur	6	nmod	6:nmod:de	_
+10	trabalhistas	trabalhista	ADJ	_	Number=Plur	9	amod	9:amod	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	gritavam	gritar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	2	conj	2:conj:e	_
+13	palavras	palavra	NOUN	_	Gender=Fem|Number=Plur	12	obj	12:obj	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	ordem	ordem	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:de	_
+16	como	como	ADP	_	_	18	case	18:case|24:case	_
+17	"	"	PUNCT	_	_	18	punct	18:punct	SpaceAfter=No
+18	Fora	Fora	PROPN	_	_	13	acl	13:acl:como	_
+19	Temer	Temer	PROPN	_	_	18	flat:name	18:flat:name	SpaceAfter=No
+20	"	"	PUNCT	_	_	18	punct	18:punct	_
+21	e	e	CCONJ	_	_	24	cc	24:cc	_
+22	"	"	PUNCT	_	_	24	punct	24:punct	SpaceAfter=No
+23	Nenhum	nenhum	DET	_	Gender=Masc|Number=Sing|PronType=Ind	24	det	24:det	_
+24	direito	direito	NOUN	_	Gender=Masc|Number=Sing	18	conj	13:nmod:como|18:conj:e	_
+25	a	a	ADP	_	_	26	case	26:case	_
+26	menos	menos	ADV	_	_	24	nmod	24:nmod:a	SpaceAfter=No
+27	"	"	PUNCT	_	_	18	punct	18:punct	SpaceAfter=No
+28	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0029
+# text = O protesto também contou com a participação de agentes penitenciários e motociclistas, reforçando a diversidade de grupos contrários às reformas.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	protesto	protesto	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+3	também	também	ADV	_	_	4	advmod	4:advmod	_
+4	contou	contar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	com	com	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	participação	participação	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:com	_
+8	de	de	ADP	_	_	9	case	9:case|12:case	_
+9	agentes	agente	NOUN	_	Number=Plur	7	nmod	7:nmod:de	_
+10	penitenciários	penitenciário	ADJ	_	Gender=Masc|Number=Plur	9	amod	9:amod	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	motociclistas	motociclista	NOUN	_	Number=Plur	9	conj	7:nmod:de|9:conj:e	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	reforçando	reforçar	VERB	_	VerbForm=Ger	4	advcl	4:advcl	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	diversidade	diversidade	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	grupos	grupo	NOUN	_	Gender=Masc|Number=Plur	16	nmod	16:nmod:de	_
+19	contrários	contrário	ADJ	_	Gender=Masc|Number=Plur	18	amod	18:amod	_
+20-21	às	_	_	_	_	_	_	_	_
+20	a	a	ADP	_	_	22	case	22:case	_
+21	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	22:det	_
+22	reformas	reforma	NOUN	_	Gender=Fem|Number=Plur	19	obl	19:obl:a	SpaceAfter=No
+23	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0031
+# text = Bernardo Piloto, representante do Sindicato dos Trabalhadores das Universidades Federais do Paraná, destacou a importância das eleições diretas, criticando duramente a legitimidade do governo atual.
+1	Bernardo	Bernardo	PROPN	_	_	19	nsubj	19:nsubj	_
+2	Piloto	Piloto	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	representante	representante	NOUN	_	Number=Sing	1	appos	1:appos	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Sindicato	Sindicato	PROPN	_	_	4	nmod	4:nmod:de	_
+8-9	dos	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	10:det	_
+10	Trabalhadores	Trabalhadores	PROPN	_	_	7	flat:name	7:flat:name	_
+11-12	das	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	13:det	_
+13	Universidades	Universidades	PROPN	_	_	7	flat:name	7:flat:name	_
+14	Federais	Federais	PROPN	_	_	13	flat:name	13:flat:name	_
+15-16	do	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	Paraná	Paraná	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+18	,	,	PUNCT	_	_	4	punct	4:punct	_
+19	destacou	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	importância	importância	NOUN	_	Gender=Fem|Number=Sing	19	obj	19:obj	_
+22-23	das	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	24:det	_
+24	eleições	eleição	NOUN	_	Gender=Fem|Number=Plur	21	nmod	21:nmod:de	_
+25	diretas	direto	ADJ	_	Gender=Fem|Number=Plur	24	amod	24:amod	SpaceAfter=No
+26	,	,	PUNCT	_	_	27	punct	27:punct	_
+27	criticando	criticar	VERB	_	VerbForm=Ger	19	advcl	19:advcl	_
+28	duramente	duramente	ADV	_	_	27	advmod	27:advmod	_
+29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	legitimidade	legitimidade	NOUN	_	Gender=Fem|Number=Sing	27	obj	27:obj	_
+31-32	do	_	_	_	_	_	_	_	_
+31	de	de	ADP	_	_	33	case	33:case	_
+32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	33:det	_
+33	governo	governo	NOUN	_	Gender=Masc|Number=Sing	30	nmod	30:nmod:de	_
+34	atual	atual	ADJ	_	Number=Sing	33	amod	33:amod	SpaceAfter=No
+35	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0033
+# text = "É inadmissível termos um governo que não foi escolhido pelo povo", afirmou ele, enquanto a multidão ecoava seus gritos de protesto.
+1	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+3	inadmissível	inadmissível	ADJ	_	Number=Sing	16	ccomp:speech	16:ccomp:speech	_
+4	termos	ter	VERB	_	Number=Plur|Person=1|VerbForm=Inf	3	csubj	3:csubj	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	governo	governo	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj|10:nsubj:pass	_
+7	que	que	PRON	_	PronType=Rel	10	nsubj:pass	6:ref	_
+8	não	não	ADV	_	_	10	advmod	10:advmod	_
+9	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	aux:pass	10:aux:pass	_
+10	escolhido	escolher	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	6	acl:relcl	6:acl:relcl	_
+11-12	pelo	_	_	_	_	_	_	_	_
+11	por	por	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	povo	povo	NOUN	_	Gender=Masc|Number=Sing	10	obl:agent	10:obl:agent	SpaceAfter=No
+14	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+15	,	,	PUNCT	_	_	3	punct	3:punct	_
+16	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+17	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	nsubj	16:nsubj	SpaceAfter=No
+18	,	,	PUNCT	_	_	22	punct	22:punct	_
+19	enquanto	enquanto	SCONJ	_	_	22	mark	22:mark	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	multidão	multidão	NOUN	_	Gender=Fem|Number=Sing	22	nsubj	22:nsubj	_
+22	ecoava	ecoar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	16	advcl	16:advcl:enquanto	_
+23	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	24	det	24:det	_
+24	gritos	grito	NOUN	_	Gender=Masc|Number=Plur	22	obj	22:obj	_
+25	de	de	ADP	_	_	26	case	26:case	_
+26	protesto	protesto	NOUN	_	Gender=Masc|Number=Sing	24	nmod	24:nmod:de	SpaceAfter=No
+27	.	.	PUNCT	_	_	16	punct	16:punct	_

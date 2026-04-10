@@ -1,0 +1,520 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Zuckerberg chamou brasileiros de bandidos: "O Brasil é o país das ilegalidades".
+1	Zuckerberg	Zuckerberg	PROPN	_	_	2	nsubj	2:nsubj	_
+2	chamou	chamar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	brasileiros	brasileiro	NOUN	_	Gender=Masc|Number=Plur	2	obj	2:obj	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	bandidos	bandido	NOUN	_	Gender=Masc|Number=Plur	2	obl	2:obl:de	SpaceAfter=No
+6	:	:	PUNCT	_	_	12	punct	12:punct	_
+7	"	"	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+8	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	Brasil	Brasil	PROPN	_	_	12	nsubj	12:nsubj	_
+10	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	12:cop	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	país	país	NOUN	_	Gender=Masc|Number=Sing	2	parataxis	2:parataxis	_
+13-14	das	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	15:det	_
+15	ilegalidades	ilegalidade	NOUN	_	Gender=Fem|Number=Plur	12	nmod	12:nmod:de	SpaceAfter=No
+16	"	"	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+17	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Quem assistiu o filme A Rede Social sabe muito bem o que aconteceu entre o CEO Mark Zuckerberg e o brasileiro Eduardo Saverin, cofundador da rede.
+1	Quem	quem	PRON	_	PronType=Ind	8	nsubj	8:nsubj	_
+2	assistiu	assistir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	filme	filme	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+5	A	A	PROPN	_	_	4	nmod	4:nmod	_
+6	Rede	Rede	PROPN	_	_	5	flat:name	5:flat:name	_
+7	Social	Social	PROPN	_	_	5	flat:name	5:flat:name	_
+8	sabe	saber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+9	muito	muito	ADV	_	_	10	advmod	10:advmod	_
+10	bem	bem	ADV	_	_	8	advmod	8:advmod	_
+11	o	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	13	nsubj	13:nsubj	_
+12	que	que	PRON	_	PronType=Int	11	fixed	11:fixed	_
+13	aconteceu	acontecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	ccomp	8:ccomp	_
+14	entre	entre	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	CEO	CEO	PROPN	_	_	13	obl	13:obl:entre	_
+17	Mark	Mark	PROPN	_	_	16	nmod	16:nmod	_
+18	Zuckerberg	Zuckerberg	PROPN	_	_	17	flat:name	17:flat:name	_
+19	e	e	CCONJ	_	_	21	cc	21:cc	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	brasileiro	brasileiro	NOUN	_	Gender=Masc|Number=Sing	16	conj	13:obl:entre|16:conj:e	_
+22	Eduardo	Eduardo	PROPN	_	_	21	nmod	21:nmod	_
+23	Saverin	Saverin	PROPN	_	_	22	flat:name	22:flat:name	SpaceAfter=No
+24	,	,	PUNCT	_	_	25	punct	25:punct	_
+25	cofundador	cofundador	NOUN	_	Gender=Masc|Number=Sing	21	appos	21:appos	_
+26-27	da	_	_	_	_	_	_	_	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	rede	rede	NOUN	_	Gender=Fem|Number=Sing	25	nmod	25:nmod:de	SpaceAfter=No
+29	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0005
+# text = (Amanda Nunes Brückner para o Diário do Brasil) Ambos ficaram famosos (além de outros 5 personagens) pelas batalhas judiciais envolvendo milhões de dólares provenientes da maior rede social do mundo.
+1	(	(	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+2	Amanda	Amanda	PROPN	_	_	13	nsubj	13:nsubj|14:nsubj	_
+3	Nunes	Nunes	PROPN	_	_	2	flat:name	2:flat:name	_
+4	Brückner	Brückner	PROPN	_	_	2	flat:name	2:flat:name	_
+5	para	para	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Diário	Diário	PROPN	_	_	2	nmod	2:nmod:para	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	Brasil	Brasil	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+11	)	)	PUNCT	_	_	2	punct	2:punct	_
+12	Ambos	ambos	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	13	nsubj	13:nsubj|14:nsubj	_
+13	ficaram	ficar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	famosos	famoso	ADJ	_	Gender=Masc|Number=Plur	13	xcomp	13:xcomp	_
+15	(	(	PUNCT	_	_	16	punct	16:punct	SpaceAfter=No
+16	além	além	ADV	_	_	13	advmod	13:advmod	_
+17	de	de	ADP	_	_	20	case	20:case	_
+18	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	20	det	20:det	_
+19	5	5	NUM	_	NumType=Card	20	nummod	20:nummod	_
+20	personagens	personagem	NOUN	_	Number=Plur	16	obl	16:obl:de	SpaceAfter=No
+21	)	)	PUNCT	_	_	16	punct	16:punct	_
+22-23	pelas	_	_	_	_	_	_	_	_
+22	por	por	ADP	_	_	24	case	24:case	_
+23	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	24:det	_
+24	batalhas	batalha	NOUN	_	Gender=Fem|Number=Plur	13	obl	13:obl:por	_
+25	judiciais	judicial	ADJ	_	Number=Plur	24	amod	24:amod	_
+26	envolvendo	envolver	VERB	_	VerbForm=Ger	24	acl	24:acl	_
+27	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	26	obj	26:obj	_
+28	de	de	ADP	_	_	29	case	29:case	_
+29	dólares	dólar	NOUN	_	Gender=Masc|Number=Plur	27	nmod	27:nmod:de	_
+30	provenientes	provenient	VERB	_	Number=Plur|VerbForm=Fin	27	acl	27:acl	_
+31-32	da	_	_	_	_	_	_	_	_
+31	de	de	ADP	_	_	34	case	34:case	_
+32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	34:det	_
+33	maior	maior	ADJ	_	Number=Sing	34	amod	34:amod	_
+34	rede	rede	NOUN	_	Gender=Fem|Number=Sing	30	obl	30:obl:de	_
+35	social	social	ADJ	_	Number=Sing	34	amod	34:amod	_
+36-37	do	_	_	_	_	_	_	_	_
+36	de	de	ADP	_	_	38	case	38:case	_
+37	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	38:det	_
+38	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	34	nmod	34:nmod:de	SpaceAfter=No
+39	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0007
+# text = Correspondências inéditas, que foram divulgadas pelo site americano Business Insider, mostram a fundo os bastidores do desenvolvimento do site e detalha como ocorreu a saída do brasileiro Eduardo Saverin do comando da empresa.
+1	Correspondências	correspondência	NOUN	_	Gender=Fem|Number=Plur	14	nsubj	6:nsubj:pass|14:nsubj	_
+2	inéditas	inédito	ADJ	_	Gender=Fem|Number=Plur	1	amod	1:amod	SpaceAfter=No
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
+4	que	que	PRON	_	PronType=Rel	6	nsubj:pass	1:ref	_
+5	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	6	aux:pass	6:aux:pass	_
+6	divulgadas	divulgar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	1	acl:relcl	1:acl:relcl	_
+7-8	pelo	_	_	_	_	_	_	_	_
+7	por	por	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	site	site	NOUN	_	Gender=Masc|Number=Sing	6	obl:agent	6:obl:agent	_
+10	americano	americano	ADJ	_	Gender=Masc|Number=Sing	9	amod	9:amod	_
+11	Business	Business	PROPN	_	_	9	nmod	9:nmod	_
+12	Insider	Insider	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+13	,	,	PUNCT	_	_	6	punct	6:punct	_
+14	mostram	mostrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+15	a	a	ADP	_	_	16	case	16:case	_
+16	fundo	fundo	ADV	_	_	14	obl	14:obl:a	_
+17	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	18:det	_
+18	bastidores	bastidor	NOUN	_	Gender=Masc|Number=Plur	14	obj	14:obj	_
+19-20	do	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	desenvolvimento	desenvolvimento	NOUN	_	Gender=Masc|Number=Sing	18	nmod	18:nmod:de	_
+22-23	do	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	site	site	NOUN	_	Gender=Masc|Number=Sing	21	nmod	21:nmod:de	_
+25	e	e	CCONJ	_	_	26	cc	26:cc	_
+26	detalha	detalhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	conj	14:conj:e	_
+27	como	como	ADV	_	_	28	advmod	28:advmod	_
+28	ocorreu	ocorrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	26	ccomp	26:ccomp	_
+29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	saída	saída	NOUN	_	Gender=Fem|Number=Sing	28	nsubj	28:nsubj	_
+31-32	do	_	_	_	_	_	_	_	_
+31	de	de	ADP	_	_	33	case	33:case	_
+32	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	33:det	_
+33	brasileiro	brasileiro	NOUN	_	Gender=Masc|Number=Sing	30	nmod	30:nmod:de	_
+34	Eduardo	Eduardo	PROPN	_	_	33	nmod	33:nmod	_
+35	Saverin	Saverin	PROPN	_	_	34	flat:name	34:flat:name	_
+36-37	do	_	_	_	_	_	_	_	_
+36	de	de	ADP	_	_	38	case	38:case	_
+37	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	38:det	_
+38	comando	comando	NOUN	_	Gender=Masc|Number=Sing	30	nmod	30:nmod:de	_
+39-40	da	_	_	_	_	_	_	_	_
+39	de	de	ADP	_	_	41	case	41:case	_
+40	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	41:det	_
+41	empresa	empresa	NOUN	_	Gender=Fem|Number=Sing	38	nmod	38:nmod:de	SpaceAfter=No
+42	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0009
+# text = Em uma dessas correspondências, Zuckerberg se refere a Saverin e outros colegas de faculdade (brasileiros) como "bandidos brasileiros".
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	uma	um	NUM	_	Gender=Fem|NumType=Card	9	obl	9:obl:em	_
+3-4	dessas	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	5	det	5:det	_
+5	correspondências	correspondência	NOUN	_	Gender=Fem|Number=Plur	2	nmod	2:nmod:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	2	punct	2:punct	_
+7	Zuckerberg	Zuckerberg	PROPN	_	_	9	nsubj	9:nsubj	_
+8	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	9	expl	9:expl	_
+9	refere	referir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+10	a	a	ADP	_	_	11	case	11:case|14:case	_
+11	Saverin	Saverin	PROPN	_	_	9	obl	9:obl:a	_
+12	e	e	CCONJ	_	_	14	cc	14:cc	_
+13	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	14	det	14:det	_
+14	colegas	colega	NOUN	_	Gender=Masc|Number=Plur	11	conj	9:obl:a|11:conj:e	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	faculdade	faculdade	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:de	_
+17	(	(	PUNCT	_	_	18	punct	18:punct	SpaceAfter=No
+18	brasileiros	brasileiro	ADJ	_	Gender=Masc|Number=Plur	14	appos	14:appos	SpaceAfter=No
+19	)	)	PUNCT	_	_	18	punct	18:punct	_
+20	como	como	ADP	_	_	22	case	22:case	_
+21	"	"	PUNCT	_	_	22	punct	22:punct	SpaceAfter=No
+22	bandidos	bandido	NOUN	_	Gender=Masc|Number=Plur	9	obl	9:obl:como	_
+23	brasileiros	brasileiro	ADJ	_	Gender=Masc|Number=Plur	22	amod	22:amod	SpaceAfter=No
+24	"	"	PUNCT	_	_	22	punct	22:punct	SpaceAfter=No
+25	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0011
+# text = No ano de 2012, quando o facebook se preparava para lançar as IPOs (Oferta Pública Inicial), o site Business Insider publicou alguns trechos de emails (imagem abaixo) de Zuckerberg se preparando para retirar Saverin do negócio: Agora que não vou voltar para Harvard, não preciso me preocupar em ser espancado por bandidos brasileiros, escreveu.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	ano	ano	NOUN	_	Gender=Masc|Number=Sing	26	obl	26:obl:em	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	2012	2012	NUM	_	NumType=Card	3	nmod	3:nmod:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	11	punct	11:punct	_
+7	quando	quando	ADV	_	_	11	advmod	11:advmod	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	facebook	facebook	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	11	nsubj	11:nsubj	_
+10	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	11	expl	11:expl	_
+11	preparava	preparar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	26	advcl	26:advcl	_
+12	para	para	ADP	_	_	13	mark	13:mark	_
+13	lançar	lançar	VERB	_	VerbForm=Inf	11	advcl	11:advcl:para	_
+14	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	15:det	_
+15	IPOs	IPOs	PROPN	_	_	13	obj	13:obj	_
+16	(	(	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+17	Oferta	Oferta	PROPN	_	_	15	appos	15:appos	_
+18	Pública	Pública	PROPN	_	_	17	flat:name	17:flat:name	_
+19	Inicial	Inicial	PROPN	_	_	17	flat:name	17:flat:name	SpaceAfter=No
+20	)	)	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+21	,	,	PUNCT	_	_	11	punct	11:punct	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	site	site	NOUN	_	Gender=Masc|Number=Sing	26	nsubj	26:nsubj	_
+24	Business	Business	PROPN	_	_	23	nmod	23:nmod	_
+25	Insider	Insider	PROPN	_	_	24	flat:name	24:flat:name	_
+26	publicou	publicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	65	ccomp:speech	65:ccomp:speech	_
+27	alguns	algum	DET	_	Gender=Masc|Number=Plur|PronType=Ind	28	det	28:det	_
+28	trechos	trecho	NOUN	_	Gender=Masc|Number=Plur	26	obj	26:obj	_
+29	de	de	ADP	_	_	30	case	30:case	_
+30	emails	email	NOUN	_	Foreign=Yes|Gender=Masc|Number=Plur	28	nmod	28:nmod:de	_
+31	(	(	PUNCT	_	_	32	punct	32:punct	SpaceAfter=No
+32	imagem	imagem	NOUN	_	Gender=Fem|Number=Sing	15	appos	15:appos	_
+33	abaixo	abaixo	ADV	_	_	32	advmod	32:advmod	SpaceAfter=No
+34	)	)	PUNCT	_	_	32	punct	32:punct	_
+35	de	de	ADP	_	_	36	case	36:case	_
+36	Zuckerberg	Zuckerberg	PROPN	_	_	28	nmod	28:nmod:de	_
+37	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	38	expl	38:expl	_
+38	preparando	preparar	VERB	_	VerbForm=Ger	28	acl	28:acl	_
+39	para	para	ADP	_	_	40	mark	40:mark	_
+40	retirar	retirar	VERB	_	VerbForm=Inf	38	advcl	38:advcl:para	_
+41	Saverin	Saverin	PROPN	_	_	40	obj	40:obj	_
+42-43	do	_	_	_	_	_	_	_	_
+42	de	de	ADP	_	_	44	case	44:case	_
+43	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	44:det	_
+44	negócio	negócio	NOUN	_	Gender=Masc|Number=Sing	40	obl	40:obl:de	SpaceAfter=No
+45	:	:	PUNCT	_	_	55	punct	55:punct	_
+46	Agora	agora	ADV	_	ExtPos=SCONJ	50	mark	50:mark	_
+47	que	que	SCONJ	_	_	46	fixed	46:fixed	_
+48	não	não	ADV	_	_	50	advmod	50:advmod	_
+49	vou	ir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	50	aux	50:aux	_
+50	voltar	voltar	VERB	_	VerbForm=Inf	55	advcl	55:advcl:agora_que	_
+51	para	para	ADP	_	_	52	case	52:case	_
+52	Harvard	Harvard	PROPN	_	_	50	obl	50:obl:para	SpaceAfter=No
+53	,	,	PUNCT	_	_	11	punct	11:punct	_
+54	não	não	ADV	_	_	55	advmod	55:advmod	_
+55	preciso	precisar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	26	ccomp:speech	26:ccomp:speech	_
+56	me	me	PRON	_	Case=Dat|Number=Sing|Person=1|PronType=Prs	57	expl	57:expl	_
+57	preocupar	preocupar	VERB	_	VerbForm=Inf	55	xcomp	55:xcomp	_
+58	em	em	ADP	_	_	60	mark	60:mark	_
+59	ser	ser	AUX	_	VerbForm=Inf	60	aux:pass	60:aux:pass	_
+60	espancado	espancar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	57	xcomp	57:xcomp	_
+61	por	por	ADP	_	_	62	case	62:case	_
+62	bandidos	bandido	NOUN	_	Gender=Masc|Number=Plur	60	obl:agent	60:obl:agent	_
+63	brasileiros	brasileiro	ADJ	_	Gender=Masc|Number=Plur	62	amod	62:amod	SpaceAfter=No
+64	,	,	PUNCT	_	_	55	punct	55:punct	_
+65	escreveu	escrever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+66	.	.	PUNCT	_	_	65	punct	65:punct	_
+
+# sent_id = S0013
+# text = Mark afirmava que Eduardo seria rico já que o Brasil é um país de ilegalidades (imagem abaixo).
+1	Mark	Mark	PROPN	_	_	2	nsubj	2:nsubj	_
+2	afirmava	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	6	mark	6:mark	_
+4	Eduardo	Eduardo	PROPN	_	_	6	nsubj	6:nsubj	_
+5	seria	ser	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	6	cop	6:cop	_
+6	rico	rico	ADJ	_	Gender=Masc|Number=Sing	2	ccomp	2:ccomp	_
+7	já	já	ADV	_	ExtPos=SCONJ	13	mark	13:mark	_
+8	que	que	SCONJ	_	_	7	fixed	7:fixed	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	Brasil	Brasil	PROPN	_	_	13	nsubj	13:nsubj	_
+11	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	13:cop	_
+12	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	país	país	NOUN	_	Gender=Masc|Number=Sing	6	advcl	6:advcl:já_que	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	ilegalidades	ilegalidade	NOUN	_	Gender=Fem|Number=Plur	13	nmod	13:nmod:de	_
+16	(	(	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+17	imagem	imagem	NOUN	_	Gender=Fem|Number=Sing	13	parataxis	13:parataxis	_
+18	abaixo	abaixo	ADV	_	_	17	advmod	17:advmod	SpaceAfter=No
+19	)	)	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+20	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0015
+# text = Ele também teria dito que sua intenção era tomar conta de todo o negócio sozinho: Comprarei toda a companhia que criamos e darei uma quantidade pequena de ações para Saverin.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	4:nsubj	_
+2	também	também	ADV	_	_	4	advmod	4:advmod	_
+3	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	4	aux	4:aux	_
+4	dito	dizer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+5	que	que	SCONJ	_	_	9	mark	9:mark	_
+6	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	7	det	7:det	_
+7	intenção	intenção	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	9:nsubj	_
+8	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	cop	9:cop	_
+9	tomar	tomar	VERB	_	VerbForm=Inf	4	ccomp	4:ccomp	_
+10	conta	conta	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+11	de	de	ADP	_	_	14	case	14:case	_
+12	todo	todo	DET	_	Gender=Masc|Number=Sing|PronType=Ind	14	det	14:det	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	negócio	negócio	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:de	_
+15	sozinho	sozinho	ADJ	_	Gender=Masc|Number=Sing	9	advcl	9:advcl	SpaceAfter=No
+16	:	:	PUNCT	_	_	17	punct	17:punct	_
+17	Comprarei	comprar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin	4	parataxis	4:parataxis	_
+18	toda	todo	DET	_	Gender=Fem|Number=Sing|PronType=Ind	20	det	20:det	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	companhia	companhia	NOUN	_	Gender=Fem|Number=Sing	17	obj	17:obj|22:obj	_
+21	que	que	PRON	_	PronType=Rel	22	obj	20:ref	_
+22	criamos	criar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	20	acl:relcl	20:acl:relcl	_
+23	e	e	CCONJ	_	_	24	cc	24:cc	_
+24	darei	dar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin	17	conj	4:parataxis|17:conj:e	_
+25	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	quantidade	quantidade	NOUN	_	Gender=Fem|Number=Sing	24	obj	24:obj	_
+27	pequena	pequeno	ADJ	_	Gender=Fem|Number=Sing	26	amod	26:amod	_
+28	de	de	ADP	_	_	29	case	29:case	_
+29	ações	ação	NOUN	_	Gender=Fem|Number=Plur	26	nmod	26:nmod:de	_
+30	para	para	ADP	_	_	31	case	31:case	_
+31	Saverin	Saverin	PROPN	_	_	24	obl	24:obl:para	SpaceAfter=No
+32	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0017
+# text = Terei todo controle do novo negócio, disse Mark a Parker.
+1	Terei	ter	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin	9	ccomp:speech	9:ccomp:speech	_
+2	todo	todo	DET	_	Gender=Masc|Number=Sing|PronType=Ind	3	det	3:det	_
+3	controle	controle	NOUN	_	Gender=Masc|Number=Sing	1	obj	1:obj	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	7	case	7:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+6	novo	novo	ADJ	_	Gender=Masc|Number=Sing	7	amod	7:amod	_
+7	negócio	negócio	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	SpaceAfter=No
+8	,	,	PUNCT	_	_	1	punct	1:punct	_
+9	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	Mark	Mark	PROPN	_	_	9	nsubj	9:nsubj	_
+11	a	a	ADP	_	_	12	case	12:case	_
+12	Parker	Parker	PROPN	_	_	9	obl	9:obl:a	SpaceAfter=No
+13	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0019
+# text = Depois de uma extensa briga na justiça, Eduardo conseguiu ficar com 4% do Facebook.
+1	Depois	depois	ADV	_	_	11	advmod	11:advmod	_
+2	de	de	ADP	_	_	5	case	5:case	_
+3	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+4	extensa	extenso	ADJ	_	Gender=Fem|Number=Sing	5	amod	5:amod	_
+5	briga	briga	NOUN	_	Gender=Fem|Number=Sing	1	obl	1:obl:de	_
+6-7	na	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	justiça	justiça	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:em	SpaceAfter=No
+9	,	,	PUNCT	_	_	1	punct	1:punct	_
+10	Eduardo	Eduardo	PROPN	_	_	11	nsubj	11:nsubj|12:nsubj	_
+11	conseguiu	conseguir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	ficar	ficar	VERB	_	VerbForm=Inf	11	xcomp	11:xcomp	_
+13	com	com	ADP	_	_	15	case	15:case	_
+14	4	4	NUM	_	NumType=Card	15	nummod	15:nummod	SpaceAfter=No
+15	%	%	SYM	_	_	12	obl	12:obl:com	_
+16-17	do	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	Facebook	Facebook	PROPN	_	_	15	nmod	15:nmod:de	SpaceAfter=No
+19	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0021
+# text = Em novembro de 2016, ele possuía um patrimônio total de US$ 7,2 bilhões (R$ 22,3 bilhões), segundo publicação da revista inglesa "The Global Recruiter".
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	novembro	novembro	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:em	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	2016	2016	NUM	_	NumType=Card	2	nmod	2:nmod:de	SpaceAfter=No
+5	,	,	PUNCT	_	_	2	punct	2:punct	_
+6	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	nsubj	7:nsubj	_
+7	possuía	possuir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	patrimônio	patrimônio	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+10	total	total	ADJ	_	Number=Sing	9	amod	9:amod	_
+11	de	de	ADP	_	_	14	case	14:case	_
+12	US$	US$	SYM	_	_	14	nmod	14:nmod	_
+13	7,2	7,2	NUM	_	NumType=Card	14	nummod	14:nummod	_
+14	bilhões	bilhão	NOUN	_	Gender=Masc|Number=Plur	9	nmod	9:nmod:de	_
+15	(	(	PUNCT	_	_	18	punct	18:punct	SpaceAfter=No
+16	R$	R$	SYM	_	_	18	nmod	18:nmod	_
+17	22,3	22,3	NUM	_	NumType=Card	18	nummod	18:nummod	_
+18	bilhões	bilhão	NOUN	_	Gender=Masc|Number=Plur	14	appos	14:appos	SpaceAfter=No
+19	)	)	PUNCT	_	_	18	punct	18:punct	SpaceAfter=No
+20	,	,	PUNCT	_	_	22	punct	22:punct	_
+21	segundo	segundo	ADP	_	_	22	case	22:case	_
+22	publicação	publicação	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:segundo	_
+23-24	da	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	revista	revista	NOUN	_	Gender=Fem|Number=Sing	22	nmod	22:nmod:de	_
+26	inglesa	inglÃªs	ADJ	_	Gender=Fem|Number=Sing	25	amod	25:amod	_
+27	"	"	PUNCT	_	_	28	punct	28:punct	SpaceAfter=No
+28	The	The	PROPN	_	_	25	nmod	25:nmod	_
+29	Global	Global	PROPN	_	_	28	flat:name	28:flat:name	_
+30	Recruiter	Recruiter	PROPN	_	_	28	flat:name	28:flat:name	SpaceAfter=No
+31	"	"	PUNCT	_	_	28	punct	28:punct	SpaceAfter=No
+32	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0023
+# text = O brasileiro abriu mão de sua cidadania norte-americana e se tornou um cidadão de Cingapura, onde vive atualmente.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	brasileiro	brasileiro	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj|11:nsubj|13:nsubj	_
+3	abriu	abrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	mão	mão	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	7	det	7:det	_
+7	cidadania	cidadania	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:de	_
+8	norte-americana	norte-americano	ADJ	_	Gender=Fem|Number=Sing	7	amod	7:amod	_
+9	e	e	CCONJ	_	_	11	cc	11:cc	_
+10	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	11	expl	11:expl	_
+11	tornou	tornar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	3:conj:e	_
+12	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	cidadão	cidadão	NOUN	_	Gender=Masc|Number=Sing	11	xcomp	11:xcomp	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	Cingapura	Cingapura	PROPN	_	_	13	nmod	13:nmod:de|18:obl	SpaceAfter=No
+16	,	,	PUNCT	_	_	18	punct	18:punct	_
+17	onde	onde	ADV	_	_	18	advmod	15:ref	_
+18	vive	viver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	acl:relcl	15:acl:relcl	_
+19	atualmente	atualmente	ADV	_	_	18	advmod	18:advmod	SpaceAfter=No
+20	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0025
+# text = Vale ressaltar que os brasileiros correspondem a 139 milhões de usuários da rede social, ficando atrás da Índia e dos Estados Unidos.
+1	Vale	valer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	ressaltar	ressaltar	VERB	_	VerbForm=Inf	1	xcomp	1:xcomp	_
+3	que	que	SCONJ	_	_	6	mark	6:mark	_
+4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	5:det	_
+5	brasileiros	brasileiro	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	6:nsubj	_
+6	correspondem	corresponder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	2:ccomp	_
+7	a	a	ADP	_	_	9	case	9:case	_
+8	139	139	NUM	_	NumType=Card	9	nummod	9:nummod	_
+9	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	6	obl	6:obl:a	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	usuários	usuário	NOUN	_	Gender=Masc|Number=Plur	9	nmod	9:nmod:de	_
+12-13	da	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	rede	rede	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:de	_
+15	social	social	ADJ	_	Number=Sing	14	amod	14:amod	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	ficando	ficar	VERB	_	VerbForm=Ger	6	advcl	6:advcl	_
+18	atrás	atrás	ADV	_	_	17	advmod	17:advmod	_
+19-20	da	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	Índia	Índia	PROPN	_	_	18	obl	18:obl:de	_
+22	e	e	CCONJ	_	_	25	cc	25:cc	_
+23-24	dos	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	25:det	_
+25	Estados	Estados	PROPN	_	_	21	conj	18:obl:de|21:conj:e	_
+26	Unidos	Unidos	PROPN	_	_	25	flat:name	25:flat:name	SpaceAfter=No
+27	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0027
+# text = Pois é sr. Zuckerberg, são quase 140 milhões de "bandidos" enchendo suas burras de dinheiro.
+1	Pois	pois	CCONJ	_	_	3	cc	3:cc	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	discourse	3:discourse	_
+3	sr.	senhor	NOUN	_	Abbr=Yes|Gender=Masc|Number=Sing	9	nsubj	9:nsubj	_
+4	Zuckerberg	Zuckerberg	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	9	punct	9:punct	_
+6	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	cop	9:cop	_
+7	quase	quase	ADV	_	_	8	advmod	8:advmod	_
+8	140	140	NUM	_	NumType=Card	9	nummod	9:nummod	_
+9	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	0	root	0:root	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	"	"	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+12	bandidos	bandido	NOUN	_	Gender=Masc|Number=Plur	9	nmod	9:nmod:de	SpaceAfter=No
+13	"	"	PUNCT	_	_	12	punct	12:punct	_
+14	enchendo	encher	VERB	_	VerbForm=Ger	12	acl	12:acl	_
+15	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	16	det	16:det	_
+16	burras	burro	NOUN	_	Gender=Fem|Number=Plur	14	obj	14:obj	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:de	SpaceAfter=No
+19	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0029
+# text = Quem tem o direito de falar mal de nosso país somos nós (brasileiros) que pagamos altíssimos impostos e não temos retorno algum.
+1	Quem	quem	PRON	_	PronType=Rel	12	nsubj	12:nsubj	_
+2	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	direito	direito	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+5	de	de	ADP	_	_	6	mark	6:mark	_
+6	falar	falar	VERB	_	VerbForm=Inf	4	acl	4:acl:de	_
+7	mal	mal	ADV	_	_	6	advmod	6:advmod	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	nosso	nosso	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	10	det	10:det	_
+10	país	país	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:de	_
+11	somos	ser	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	12	cop	12:cop	_
+12	nós	nós	PRON	_	Case=Nom|Number=Plur|Person=1|PronType=Prs	0	root	0:root|17:nsubj|22:nsubj	_
+13	(	(	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+14	brasileiros	brasileiro	NOUN	_	Gender=Masc|Number=Plur	12	appos	12:appos	SpaceAfter=No
+15	)	)	PUNCT	_	_	14	punct	14:punct	_
+16	que	que	PRON	_	PronType=Rel	17	nsubj	12:ref	_
+17	pagamos	pagar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	12	acl:relcl	12:acl:relcl	_
+18	altíssimos	altíssimo	ADJ	_	Gender=Masc|Number=Plur	19	amod	19:amod	_
+19	impostos	imposto	NOUN	_	Gender=Masc|Number=Plur	17	obj	17:obj	_
+20	e	e	CCONJ	_	_	22	cc	22:cc	_
+21	não	não	ADV	_	_	22	advmod	22:advmod	_
+22	temos	ter	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	17	conj	12:acl:relcl|17:conj:e	_
+23	retorno	retorno	NOUN	_	Gender=Masc|Number=Sing	22	obj	22:obj	_
+24	algum	algum	DET	_	Gender=Masc|Number=Sing|PronType=Ind	23	det	23:det	SpaceAfter=No
+25	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0031
+# text = Estrangeiros que usam nossa nação para fazer fortuna têm mais é que se ajoelhar perante nosso povo.
+1	Estrangeiros	estrangeiro	NOUN	_	Gender=Masc|Number=Plur	9	nsubj	3:nsubj|9:nsubj	_
+2	que	que	PRON	_	PronType=Rel	3	nsubj	1:ref	_
+3	usam	usar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+4	nossa	nosso	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	5	det	5:det	_
+5	nação	nação	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+6	para	para	ADP	_	_	7	mark	7:mark	_
+7	fazer	fazer	VERB	_	VerbForm=Inf	3	advcl	3:advcl:para	_
+8	fortuna	fortuna	NOUN	_	Gender=Fem|Number=Sing	7	obj	7:obj	_
+9	têm	ter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+10	mais	mais	ADV	_	_	9	advmod	9:advmod	_
+11	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	14:cop	_
+12	que	que	ADP	_	_	14	mark	14:mark	_
+13	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	14	expl	14:expl	_
+14	ajoelhar	ajoelhar	VERB	_	VerbForm=Inf	9	csubj	9:csubj	_
+15	perante	perante	ADP	_	_	17	case	17:case	_
+16	nosso	nosso	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	17	det	17:det	_
+17	povo	povo	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:perante	SpaceAfter=No
+18	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0033
+# text = Vai pastar Zuckerberg!
+1	Vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	aux	2:aux	_
+2	pastar	pastar	VERB	_	VerbForm=Inf	0	root	0:root	_
+3	Zuckerberg	Zuckerberg	PROPN	_	_	2	obj	2:obj	SpaceAfter=No
+4	!	!	PUNCT	_	_	2	punct	2:punct	_

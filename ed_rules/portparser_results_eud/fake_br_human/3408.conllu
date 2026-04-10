@@ -1,0 +1,93 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Ciro Gomes apoiando Dilma?
+1	Ciro	Ciro	PROPN	_	_	3	dep	3:dep	_
+2	Gomes	Gomes	PROPN	_	_	1	flat:name	1:flat:name	_
+3	apoiando	apoiar	VERB	_	VerbForm=Ger	0	root	0:root	_
+4	Dilma	Dilma	PROPN	_	_	3	obj	3:obj	SpaceAfter=No
+5	?	?	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = Nada disso.
+1	Nada	nada	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	0	root	0:root	_
+2-3	disso	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	nmod	1:nmod:de	_
+4	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0005
+# text = Vejam o que ele fala sobre Lula, Dilma e o PT.
+1	Vejam	ver	VERB	_	Mood=Imp|Number=Plur|Person=3|VerbForm=Fin	0	root	0:root	_
+2	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	1	obj	1:obj|5:obj	_
+3	que	que	PRON	_	PronType=Rel	5	obj	2:ref	_
+4	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	5:nsubj	_
+5	fala	falar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+6	sobre	sobre	ADP	_	_	7	case	7:case|9:case|12:case	_
+7	Lula	Lula	PROPN	_	_	5	obl	5:obl:sobre	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	Dilma	Dilma	PROPN	_	_	7	conj	5:obl:sobre|7:conj:e	_
+10	e	e	CCONJ	_	_	12	cc	12:cc	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	PT	PT	PROPN	_	_	7	conj	5:obl:sobre|7:conj:e	SpaceAfter=No
+13	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0007
+# text = Lula fez uma campanha golpista chamada "FORA FHC", disse o ex-ministro Ciro Gomes.
+1	Lula	Lula	PROPN	_	_	2	nsubj	2:nsubj	_
+2	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	ccomp:speech	12:ccomp:speech	_
+3	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	campanha	campanha	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+5	golpista	golpista	ADJ	_	Number=Sing	4	amod	4:amod	_
+6	chamada	chamar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	4	acl	4:acl	_
+7	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	FORA	FORA	PROPN	_	_	6	xcomp	6:xcomp	_
+9	FHC	FHC	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+10	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+11	,	,	PUNCT	_	_	2	punct	2:punct	_
+12	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	ex-ministro	ex-ministro	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	12:nsubj	_
+15	Ciro	Ciro	PROPN	_	_	14	nmod	14:nmod	_
+16	Gomes	Gomes	PROPN	_	_	15	flat:name	15:flat:name	SpaceAfter=No
+17	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0009
+# text = Em entrevista para o jornalista Kennedy Alencar, Ciro Gomes detona o PT, chama o vice-presidente Michel Temer de chefe de quadrilha e diz que José Serra é o candidato ideal para assumir o país confira:
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	entrevista	entrevista	NOUN	_	Gender=Fem|Number=Sing	11	obl	11:obl:em	_
+3	para	para	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	jornalista	jornalista	NOUN	_	Number=Sing	2	nmod	2:nmod:para	_
+6	Kennedy	Kennedy	PROPN	_	_	5	nmod	5:nmod	_
+7	Alencar	Alencar	PROPN	_	_	6	flat:name	6:flat:name	SpaceAfter=No
+8	,	,	PUNCT	_	_	2	punct	2:punct	_
+9	Ciro	Ciro	PROPN	_	_	11	nsubj	11:nsubj|15:nsubj|25:nsubj	_
+10	Gomes	Gomes	PROPN	_	_	9	flat:name	9:flat:name	_
+11	detona	detonar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	PT	PT	PROPN	_	_	11	obj	11:obj	SpaceAfter=No
+14	,	,	PUNCT	_	_	15	punct	15:punct	_
+15	chama	chamar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	conj	11:conj:e	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	vice-presidente	vice-presidente	NOUN	_	Gender=Masc|Number=Sing	15	obj	15:obj	_
+18	Michel	Michel	PROPN	_	_	17	nmod	17:nmod	_
+19	Temer	Temer	PROPN	_	_	18	flat:name	18:flat:name	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	chefe	chefe	NOUN	_	Gender=Masc|Number=Sing	15	obl	15:obl:de	_
+22	de	de	ADP	_	_	23	case	23:case	_
+23	quadrilha	quadrilha	NOUN	_	Gender=Fem|Number=Sing	21	nmod	21:nmod:de	_
+24	e	e	CCONJ	_	_	25	cc	25:cc	_
+25	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	conj	11:conj:e	_
+26	que	que	SCONJ	_	_	31	mark	31:mark	_
+27	José	José	PROPN	_	_	31	nsubj	31:nsubj	_
+28	Serra	Serra	PROPN	_	_	27	flat:name	27:flat:name	_
+29	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	cop	31:cop	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	candidato	candidato	NOUN	_	Gender=Masc|Number=Sing	25	ccomp	25:ccomp	_
+32	ideal	ideal	ADJ	_	Number=Sing	31	amod	31:amod	_
+33	para	para	ADP	_	_	34	mark	34:mark	_
+34	assumir	assumir	VERB	_	VerbForm=Inf	31	acl	31:acl:para	_
+35	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	36:det	_
+36	país	país	NOUN	_	Gender=Masc|Number=Sing	34	obj	34:obj	_
+37	confira	conferir	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	31	parataxis	31:parataxis	SpaceAfter=No
+38	:	:	PUNCT	_	_	11	punct	11:punct	_

@@ -1,0 +1,281 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = 10% é para os fracos!
+1	10	10	NUM	_	NumType=Card	2	nummod	2:nummod	SpaceAfter=No
+2	%	%	SYM	_	_	6	nsubj	6:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+4	para	para	ADP	_	_	6	case	6:case	_
+5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	6:det	_
+6	fracos	fraco	NOUN	_	Gender=Masc|Number=Plur	0	root	0:root	SpaceAfter=No
+7	!	!	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0003
+# text = Valdemiro lança "desafio" para os fiéis e pede 30% de dízimo.
+1	Valdemiro	Valdemiro	PROPN	_	_	2	nsubj	2:nsubj|10:nsubj	_
+2	lança	lançar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+4	desafio	desafio	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	SpaceAfter=No
+5	"	"	PUNCT	_	_	4	punct	4:punct	_
+6	para	para	ADP	_	_	8	case	8:case	_
+7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	8:det	_
+8	fiéis	fiéi	NOUN	_	Number=Plur	2	obl	2:obl:para	_
+9	e	e	CCONJ	_	_	10	cc	10:cc	_
+10	pede	pedir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:e	_
+11	30	30	NUM	_	NumType=Card	12	nummod	12:nummod	SpaceAfter=No
+12	%	%	SYM	_	_	10	obj	10:obj	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	dízimo	dízimo	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:de	SpaceAfter=No
+15	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = Quando o assunto é arrecadar fundos e "limpar" os fiéis, Valdemiro se transforma no "Bill Gates da religião".
+1	Quando	quando	SCONJ	_	_	5	mark	5:mark|9:mark	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	assunto	assunto	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj|9:nsubj	_
+4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+5	arrecadar	arrecadar	VERB	_	VerbForm=Inf	16	advcl	16:advcl:quando	_
+6	fundos	fundo	NOUN	_	Gender=Masc|Number=Plur	5	obj	5:obj	_
+7	e	e	CCONJ	_	_	9	cc	9:cc	_
+8	"	"	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+9	limpar	limpar	VERB	_	VerbForm=Inf	5	conj	5:conj:e|16:advcl:quando	SpaceAfter=No
+10	"	"	PUNCT	_	_	9	punct	9:punct	_
+11	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	12:det	_
+12	fiéis	fiéi	NOUN	_	Number=Plur	9	obj	9:obj	SpaceAfter=No
+13	,	,	PUNCT	_	_	5	punct	5:punct	_
+14	Valdemiro	Valdemiro	PROPN	_	_	16	nsubj	16:nsubj	_
+15	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	16	expl	16:expl	_
+16	transforma	transformar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+17-18	no	_	_	_	_	_	_	_	_
+17	em	em	ADP	_	_	20	case	20:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+19	"	"	PUNCT	_	_	20	punct	20:punct	SpaceAfter=No
+20	Bill	Bill	PROPN	_	_	16	obl	16:obl:em	_
+21	Gates	Gates	PROPN	_	_	20	flat:name	20:flat:name	_
+22-23	da	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	religião	religião	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:de	SpaceAfter=No
+25	"	"	PUNCT	_	_	20	punct	20:punct	SpaceAfter=No
+26	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0007
+# text = O fundador da Igreja Mundial do Reino de Deus parece não conhecer a palavra "limite" e lançou uma nova extorsão...ops...campanha focada para o mês de dezembro.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	fundador	fundador	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	12:nsubj|14:nsubj|21:nsubj	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	Igreja	Igreja	PROPN	_	_	2	nmod	2:nmod:de	_
+6	Mundial	Mundial	PROPN	_	_	5	flat:name	5:flat:name	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	Reino	Reino	PROPN	_	_	5	flat:name	5:flat:name	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	Deus	Deus	PROPN	_	_	5	flat:name	5:flat:name	_
+12	parece	parecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+13	não	não	ADV	_	_	14	advmod	14:advmod	_
+14	conhecer	conhecer	VERB	_	VerbForm=Inf	12	xcomp	12:xcomp	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	palavra	palavra	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	_
+17	"	"	PUNCT	_	_	18	punct	18:punct	SpaceAfter=No
+18	limite	limite	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod	SpaceAfter=No
+19	"	"	PUNCT	_	_	18	punct	18:punct	_
+20	e	e	CCONJ	_	_	21	cc	21:cc	_
+21	lançou	lançar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	conj	12:conj:e	_
+22	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+23	nova	novo	ADJ	_	Gender=Fem|Number=Sing	24	amod	24:amod	_
+24	extorsão...ops...campanha	extorsão...ops...campanha	NOUN	_	_	21	obj	21:obj	_
+25	focada	focado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	24	amod	24:amod	_
+26	para	para	ADP	_	_	28	case	28:case	_
+27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	mês	mês	NOUN	_	Gender=Masc|Number=Sing	25	obl	25:obl:para	_
+29	de	de	ADP	_	_	30	case	30:case	_
+30	dezembro	dezembro	NOUN	_	Gender=Masc|Number=Sing	28	nmod	28:nmod:de	SpaceAfter=No
+31	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0009
+# text = Chamada de "Projeto de vida", a peça teatral convida os fiéis a pagarem um triplo dízimo... isso mesmo que você leu... 30% do salário.
+1	Chamada	chamar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	12	advcl	12:advcl	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+4	Projeto	Projeto	PROPN	_	_	1	obl	1:obl:de	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	vida	vida	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:de	SpaceAfter=No
+7	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+8	,	,	PUNCT	_	_	1	punct	1:punct	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	peça	peça	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	12:nsubj	_
+11	teatral	teatral	ADJ	_	Number=Sing	10	amod	10:amod	_
+12	convida	convidar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	14:det	_
+14	fiéis	fiéi	NOUN	_	Number=Plur	12	obj	12:obj|16:nsubj	_
+15	a	a	ADP	_	_	16	mark	16:mark	_
+16	pagarem	pagar	VERB	_	Number=Plur|Person=3|VerbForm=Inf	12	xcomp	12:xcomp	_
+17	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+18	triplo	triplo	ADJ	_	Gender=Masc|Number=Sing	19	amod	19:amod	_
+19	dízimo	dízimo	NOUN	_	Gender=Masc|Number=Sing	16	obj	16:obj	SpaceAfter=No
+20	...	...	PUNCT	_	_	21	punct	21:punct	_
+21	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	19	parataxis	19:parataxis	_
+22	mesmo	mesmo	ADV	_	_	21	advmod	21:advmod	_
+23	que	que	SCONJ	_	_	25	discourse	25:discourse	_
+24	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	25	nsubj	25:nsubj	_
+25	leu	ler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	21	parataxis	21:parataxis	SpaceAfter=No
+26	...	...	PUNCT	_	_	28	punct	28:punct	_
+27	30	30	NUM	_	NumType=Card	28	nummod	28:nummod	SpaceAfter=No
+28	%	%	SYM	_	_	19	parataxis	19:parataxis	_
+29-30	do	_	_	_	_	_	_	_	_
+29	de	de	ADP	_	_	31	case	31:case	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	salário	salário	NOUN	_	Gender=Masc|Number=Sing	28	nmod	28:nmod:de	SpaceAfter=No
+32	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0011
+# text = O autointitulado apóstolo justifica os "30%" e diz que aqueles que participarem da campanha receberão "a unção com óleo da tripla honra no altar": "Você vai dizer pra Deus... 70% de tudo que eu ganhar é meu e 30% é para tua obra" Na verdade esses 30% são para as obras do próprio pastor que incluem mansões, fazendas, aviões, helicópteros, etc... Entenderam?
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+2	autointitulado	autointitulado	ADJ	_	Gender=Masc|Number=Sing	3	amod	3:amod	_
+3	apóstolo	apóstolo	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj|11:nsubj	_
+4	justifica	justificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	8:det	_
+6	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+7	30	30	NUM	_	NumType=Card	8	nummod	8:nummod	SpaceAfter=No
+8	%	%	SYM	_	_	4	obj	4:obj	SpaceAfter=No
+9	"	"	PUNCT	_	_	8	punct	8:punct	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	4:conj:e	_
+12	que	que	SCONJ	_	_	19	mark	19:mark	_
+13	aqueles	aquele	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	19	nsubj	15:nsubj|19:nsubj	_
+14	que	que	PRON	_	PronType=Rel	15	nsubj	13:ref	_
+15	participarem	participar	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	13	acl:relcl	13:acl:relcl	_
+16-17	da	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	campanha	campanha	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl:de	_
+19	receberão	receber	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	11	ccomp	11:ccomp	_
+20	"	"	PUNCT	_	_	67	punct	67:punct	SpaceAfter=No
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	unção	unção	NOUN	_	Gender=Fem|Number=Sing	19	obj	19:obj	_
+23	com	com	ADP	_	_	24	case	24:case	_
+24	óleo	óleo	NOUN	_	Gender=Masc|Number=Sing	22	nmod	22:nmod:com	_
+25-26	da	_	_	_	_	_	_	_	_
+25	de	de	ADP	_	_	28	case	28:case	_
+26	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+27	tripla	triplo	ADJ	_	Gender=Fem|Number=Sing	28	amod	28:amod	_
+28	honra	honra	NOUN	_	Gender=Fem|Number=Sing	24	nmod	24:nmod:de	_
+29-30	no	_	_	_	_	_	_	_	_
+29	em	em	ADP	_	_	31	case	31:case	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	altar	altar	NOUN	_	Gender=Masc|Number=Sing	15	obl	15:obl:em	SpaceAfter=No
+32	"	"	PUNCT	_	_	37	punct	37:punct	SpaceAfter=No
+33	:	:	PUNCT	_	_	67	punct	67:punct	_
+34	"	"	PUNCT	_	_	37	punct	37:punct	SpaceAfter=No
+35	Você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	37	nsubj	37:nsubj	_
+36	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	37	aux	37:aux	_
+37	dizer	dizer	VERB	_	VerbForm=Inf	67	parataxis	67:parataxis|82:parataxis	_
+38	pra	para	ADP	_	_	39	case	39:case	_
+39	Deus	Deus	PROPN	_	_	37	obl	37:obl:para	SpaceAfter=No
+40	...	...	PUNCT	_	_	73	punct	73:punct	_
+41	70	70	NUM	_	NumType=Card	42	nummod	42:nummod	SpaceAfter=No
+42	%	%	SYM	_	_	49	nsubj	49:nsubj	_
+43	de	de	ADP	_	_	44	case	44:case	_
+44	tudo	tudo	PRON	_	PronType=Ind	42	nmod	42:nmod:de|47:obj	_
+45	que	que	PRON	_	PronType=Rel	47	obj	44:ref	_
+46	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	47	nsubj	47:nsubj	_
+47	ganhar	ganhar	VERB	_	VerbForm=Inf	44	acl:relcl	44:acl:relcl	_
+48	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	49	cop	49:cop	_
+49	meu	meu	PRON	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	37	ccomp	37:ccomp	_
+50	e	e	CCONJ	_	_	56	cc	56:cc	_
+51	30	30	NUM	_	NumType=Card	52	nummod	52:nummod	SpaceAfter=No
+52	%	%	SYM	_	_	56	nsubj	56:nsubj	_
+53	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	56	cop	56:cop	_
+54	para	para	ADP	_	_	56	case	56:case	_
+55	tua	teu	DET	_	Gender=Fem|Number=Sing|Person=2|Poss=Yes|PronType=Prs	56	det	56:det	_
+56	obra	obra	NOUN	_	Gender=Fem|Number=Sing	49	conj	37:ccomp|49:conj:e	SpaceAfter=No
+57	"	"	PUNCT	_	_	67	punct	67:punct	_
+58-59	Na	_	_	_	_	_	_	_	_
+58	Em	em	ADP	_	_	60	case	60:case	_
+59	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	60	det	60:det	_
+60	verdade	verdade	NOUN	_	Gender=Fem|Number=Sing	37	obl	37:obl:em	_
+61	esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	63	det	63:det	_
+62	30	30	NUM	_	NumType=Card	63	nummod	63:nummod	SpaceAfter=No
+63	%	%	SYM	_	_	67	nsubj	67:nsubj|82:nsubj	_
+64	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	67	cop	67:cop|82:cop	_
+65	para	para	ADP	_	_	67	case	67:case	_
+66	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	67	det	67:det	_
+67	obras	obra	NOUN	_	Gender=Fem|Number=Plur	4	parataxis	4:parataxis|73:nsubj	_
+68-69	do	_	_	_	_	_	_	_	_
+68	de	de	ADP	_	_	71	case	71:case	_
+69	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	71	det	71:det	_
+70	próprio	próprio	DET	_	Gender=Masc|Number=Sing|PronType=Dem	71	det	71:det	_
+71	pastor	pastor	NOUN	_	Gender=Masc|Number=Sing	22	nmod	22:nmod:de	_
+72	que	que	PRON	_	PronType=Rel	73	nsubj	67:ref	_
+73	incluem	incluir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	67	acl:relcl	67:acl:relcl	_
+74	mansões	mansão	NOUN	_	Gender=Fem|Number=Plur	73	obj	73:obj	SpaceAfter=No
+75	,	,	PUNCT	_	_	76	punct	76:punct	_
+76	fazendas	fazenda	NOUN	_	Gender=Fem|Number=Plur	74	conj	73:obj|74:conj	SpaceAfter=No
+77	,	,	PUNCT	_	_	78	punct	78:punct	_
+78	aviões	avião	NOUN	_	Gender=Masc|Number=Plur	74	conj	73:obj|74:conj	SpaceAfter=No
+79	,	,	PUNCT	_	_	80	punct	80:punct	_
+80	helicópteros	helicóptero	NOUN	_	Gender=Masc|Number=Plur	74	conj	73:obj|74:conj	SpaceAfter=No
+81	,	,	PUNCT	_	_	82	punct	82:punct	_
+82	etc.	etc.	PUNCT	_	_	67	conj	4:parataxis|67:conj	SpaceAfter=No
+83	..	..	PUNCT	_	_	84	punct	84:punct	_
+84	Entenderam	entender	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	4	parataxis	4:parataxis	SpaceAfter=No
+85	?	?	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0013
+# text = Pagou 10%, recebe somente uma unção [...] pagou 20%, recebe unção dupla [...] pagou 30%, recebe unção tripla e fica ainda mais pobre.
+1	Pagou	pagar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	10	10	NUM	_	NumType=Card	3	nummod	3:nummod	SpaceAfter=No
+3	%	%	SYM	_	_	1	obj	1:obj	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	recebe	receber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	1:conj	_
+6	somente	somente	ADV	_	_	8	advmod	8:advmod	_
+7	uma	um	NUM	_	Gender=Fem|NumType=Card	8	nummod	8:nummod	_
+8	unção	unção	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+9	[	[	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+10	.	.	PUNCT	_	_	13	parataxis	13:parataxis|17:parataxis|28:parataxis|32:parataxis	SpaceAfter=No
+11	..	..	PUNCT	_	_	10	parataxis	10:parataxis	SpaceAfter=No
+12	]	]	PUNCT	_	_	10	punct	10:punct	_
+13	pagou	pagar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	parataxis	1:parataxis	_
+14	20	20	NUM	_	NumType=Card	15	nummod	15:nummod	SpaceAfter=No
+15	%	%	SYM	_	_	13	obj	13:obj	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	recebe	receber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	conj	1:parataxis|13:conj:e	_
+18	unção	unção	NOUN	_	Gender=Fem|Number=Sing	17	obj	17:obj	_
+19	dupla	duplo	ADJ	_	Gender=Fem|Number=Sing	18	amod	18:amod	_
+20	[	[	PUNCT	_	_	21	punct	21:punct	SpaceAfter=No
+21	.	.	PUNCT	_	_	24	punct	24:punct	SpaceAfter=No
+22	..	..	PUNCT	_	_	21	parataxis	21:parataxis	SpaceAfter=No
+23	]	]	PUNCT	_	_	22	punct	22:punct	_
+24	pagou	pagar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	parataxis	1:parataxis	_
+25	30	30	NUM	_	NumType=Card	26	nummod	26:nummod	SpaceAfter=No
+26	%	%	SYM	_	_	24	obj	24:obj	SpaceAfter=No
+27	,	,	PUNCT	_	_	28	punct	28:punct	_
+28	recebe	receber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	conj	1:parataxis|13:conj:e	_
+29	unção	unção	NOUN	_	Gender=Fem|Number=Sing	28	obj	28:obj	_
+30	tripla	triplo	ADJ	_	Gender=Fem|Number=Sing	29	amod	29:amod	_
+31	e	e	CCONJ	_	_	32	cc	32:cc	_
+32	fica	ficar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	conj	1:parataxis|13:conj:e	_
+33	ainda	ainda	ADV	_	_	35	advmod	35:advmod	_
+34	mais	mais	ADV	_	_	35	advmod	35:advmod	_
+35	pobre	pobre	ADJ	_	Number=Sing	32	xcomp	32:xcomp	SpaceAfter=No
+36	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0015
+# text = Um dia o Ministério Público te pega Valdemiro!
+1	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	dia	dia	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	Ministério	Ministério	PROPN	_	_	7	nsubj	7:nsubj	_
+5	Público	Público	PROPN	_	_	4	flat:name	4:flat:name	_
+6	te	te	PRON	_	Case=Acc|Number=Sing|Person=2|PronType=Prs	7	obj	7:obj	_
+7	pega	pegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	Valdemiro	Valdemiro	PROPN	_	_	7	obj	7:obj	SpaceAfter=No
+9	!	!	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0016
+# text = leia também:
+1	leia	ler	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	também	também	ADV	_	_	1	advmod	1:advmod	SpaceAfter=No
+3	:	:	PUNCT	_	_	1	punct	1:punct	_

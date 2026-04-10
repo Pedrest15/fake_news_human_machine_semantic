@@ -1,0 +1,145 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Dinheiro Público: Quebrou Minas Gerais e foi buscar o filho com helicóptero do Estado após a festa de Reveillon.
+1	Dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	4	dep	4:dep	_
+2	Público	Público	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	:	:	PUNCT	_	_	1	punct	1:punct	_
+4	Quebrou	quebrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	Minas	Minas	PROPN	_	_	4	obj	4:obj	_
+6	Gerais	Gerais	PROPN	_	_	5	flat:name	5:flat:name	_
+7	e	e	CCONJ	_	_	9	cc	9:cc	_
+8	foi	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	aux	9:aux	_
+9	buscar	buscar	VERB	_	VerbForm=Inf	4	conj	4:conj:e	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	filho	filho	NOUN	_	Gender=Masc|Number=Sing	9	obj	9:obj	_
+12	com	com	ADP	_	_	13	case	13:case	_
+13	helicóptero	helicóptero	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:com	_
+14-15	do	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	Estado	Estado	PROPN	_	_	13	nmod	13:nmod:de	_
+17	após	após	ADP	_	_	19	case	19:case	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	festa	festa	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:após	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	Reveillon	Reveillon	PROPN	_	_	19	nmod	19:nmod:de	SpaceAfter=No
+22	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0003
+# text = Um internauta flagrou o momento em que Fernando Pimentel foi buscar o filho na estância turística de Escarpas do Lago (MG).
+1	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	internauta	internauta	NOUN	_	Number=Sing	3	nsubj	3:nsubj	_
+3	flagrou	flagrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	momento	momento	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj|11:obl:em	_
+6	em	em	ADP	_	_	7	case	7:case	_
+7	que	que	PRON	_	PronType=Rel	11	obl	5:ref	_
+8	Fernando	Fernando	PROPN	_	_	11	nsubj	11:nsubj	_
+9	Pimentel	Pimentel	PROPN	_	_	8	flat:name	8:flat:name	_
+10	foi	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	aux	11:aux	_
+11	buscar	buscar	VERB	_	VerbForm=Inf	5	acl:relcl	5:acl:relcl	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	filho	filho	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj	_
+14-15	na	_	_	_	_	_	_	_	_
+14	em	em	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	estância	estância	NOUN	_	Gender=Fem|Number=Sing	11	obl	11:obl:em	_
+17	turística	turístico	ADJ	_	Gender=Fem|Number=Sing	16	amod	16:amod	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	Escarpas	Escarpas	PROPN	_	_	16	nmod	16:nmod:de	_
+20-21	do	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	Lago	Lago	PROPN	_	_	19	flat:name	19:flat:name	_
+23	(	(	PUNCT	_	_	24	punct	24:punct	SpaceAfter=No
+24	MG	MG	PROPN	_	_	19	parataxis	19:parataxis	SpaceAfter=No
+25	)	)	PUNCT	_	_	24	punct	24:punct	SpaceAfter=No
+26	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0005
+# text = De acordo com o denunciante, a aeronave usada como "UBER" pelo governador de MG pertence ao governo estadual.
+1	De	de	ADP	_	_	2	case	2:case	_
+2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	19	obl	19:obl:de	_
+3	com	com	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	denunciante	denunciante	NOUN	_	Number=Sing	2	nmod	2:nmod:com	SpaceAfter=No
+6	,	,	PUNCT	_	_	2	punct	2:punct	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	aeronave	aeronave	NOUN	_	Gender=Fem|Number=Sing	19	nsubj	19:nsubj	_
+9	usada	usar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	8	acl	8:acl	_
+10	como	como	ADP	_	_	12	case	12:case	_
+11	"	"	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+12	UBER	UBER	PROPN	_	_	9	obl	9:obl:como	SpaceAfter=No
+13	"	"	PUNCT	_	_	12	punct	12:punct	_
+14-15	pelo	_	_	_	_	_	_	_	_
+14	por	por	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	governador	governador	NOUN	_	Gender=Masc|Number=Sing	9	obl:agent	9:obl:agent	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	MG	MG	PROPN	_	_	16	nmod	16:nmod:de	_
+19	pertence	pertencer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+20-21	ao	_	_	_	_	_	_	_	_
+20	a	a	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	governo	governo	NOUN	_	Gender=Masc|Number=Sing	19	obl	19:obl:a	_
+23	estadual	estadual	ADJ	_	Number=Sing	22	amod	22:amod	SpaceAfter=No
+24	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0007
+# text = O deputado mineiro Sargento Rodrigues conversou com o site Antagonista.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+3	mineiro	mineiro	ADJ	_	Gender=Masc|Number=Sing	2	amod	2:amod	_
+4	Sargento	Sargento	PROPN	_	_	2	nmod	2:nmod	_
+5	Rodrigues	Rodrigues	PROPN	_	_	4	flat:name	4:flat:name	_
+6	conversou	conversar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	com	com	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	site	site	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:com	_
+10	Antagonista	Antagonista	PROPN	_	_	9	nmod	9:nmod	SpaceAfter=No
+11	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0009
+# text = De acordo com o parlamentar, Fernando Pimentel será denunciado na Procuradoria Geral de Justiça de Minas Gerais pelo crime de improbidade administrativa.
+1	De	de	ADP	_	_	2	case	2:case	_
+2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:de	_
+3	com	com	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	parlamentar	parlamentar	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:com	SpaceAfter=No
+6	,	,	PUNCT	_	_	2	punct	2:punct	_
+7	Fernando	Fernando	PROPN	_	_	10	nsubj:pass	10:nsubj:pass	_
+8	Pimentel	Pimentel	PROPN	_	_	7	flat:name	7:flat:name	_
+9	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	10	aux:pass	10:aux:pass	_
+10	denunciado	denunciar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+11-12	na	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	Procuradoria	Procuradoria	PROPN	_	_	10	obl	10:obl:em	_
+14	Geral	Geral	PROPN	_	_	13	flat:name	13:flat:name	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	Justiça	Justiça	PROPN	_	_	13	flat:name	13:flat:name	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	Minas	Minas	PROPN	_	_	13	flat:name	13:flat:name	_
+19	Gerais	Gerais	PROPN	_	_	13	flat:name	13:flat:name	_
+20-21	pelo	_	_	_	_	_	_	_	_
+20	por	por	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	crime	crime	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:por	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	improbidade	improbidade	NOUN	_	Gender=Fem|Number=Sing	22	nmod	22:nmod:de	_
+25	administrativa	administrativo	ADJ	_	Gender=Fem|Number=Sing	24	amod	24:amod	SpaceAfter=No
+26	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0011
+# text = Isso tem que acabar!
+1	Isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	2	nsubj	2:nsubj|4:nsubj	_
+2	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	ADP	_	_	4	mark	4:mark	_
+4	acabar	acabar	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	SpaceAfter=No
+5	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0012
+# text = leia também:
+1	leia	ler	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	também	também	ADV	_	_	1	advmod	1:advmod	SpaceAfter=No
+3	:	:	PUNCT	_	_	1	punct	1:punct	_

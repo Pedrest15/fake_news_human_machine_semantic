@@ -1,0 +1,383 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Justiça decreta prisão do cantor Latino.
+1	Justiça	Justiça	PROPN	_	_	2	nsubj	2:nsubj	_
+2	decreta	decretar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	prisão	prisão	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	cantor	cantor	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	_
+7	Latino	Latino	PROPN	_	_	6	nmod	6:nmod	SpaceAfter=No
+8	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Pensão do MACACO está em dia.
+1	Pensão	pensão	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj	_
+2-3	do	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	MACACO	MACACO	PROPN	_	_	1	nmod	1:nmod:de	_
+5	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+6	em	em	ADP	_	_	7	case	7:case	_
+7	dia	dia	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+8	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0005
+# text = O cantor e compositor Roberto de Souza Rocha, o "Latino", teve sua prisão decretada na última semana pela juíza Cristiane de Sá Berbat.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	cantor	cantor	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	15:nsubj	_
+3	e	e	CCONJ	_	_	4	cc	4:cc	_
+4	compositor	compositor	NOUN	_	Gender=Masc|Number=Sing	2	conj	2:conj:e|15:nsubj	_
+5	Roberto	Roberto	PROPN	_	_	2	nmod	2:nmod|4:nmod	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	Souza	Souza	PROPN	_	_	5	flat:name	5:flat:name	_
+8	Rocha	Rocha	PROPN	_	_	5	flat:name	5:flat:name	SpaceAfter=No
+9	,	,	PUNCT	_	_	12	punct	12:punct	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+11	"	"	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+12	Latino	Latino	PROPN	_	_	2	appos	2:appos|4:appos	SpaceAfter=No
+13	"	"	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+14	,	,	PUNCT	_	_	12	punct	12:punct	_
+15	teve	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+16	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	17	det	17:det	_
+17	prisão	prisão	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj|18:nsubj:pass	_
+18	decretada	decretar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	15	xcomp	15:xcomp	_
+19-20	na	_	_	_	_	_	_	_	_
+19	em	em	ADP	_	_	22	case	22:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+21	última	último	ADJ	_	Gender=Fem|Number=Sing	22	amod	22:amod	_
+22	semana	semana	NOUN	_	Gender=Fem|Number=Sing	18	obl	18:obl:em	_
+23-24	pela	_	_	_	_	_	_	_	_
+23	por	por	ADP	_	_	25	case	25:case	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	juíza	juíz	NOUN	_	Gender=Fem|Number=Sing	18	obl:agent	18:obl:agent	_
+26	Cristiane	Cristiane	PROPN	_	_	25	nmod	25:nmod	_
+27	de	de	ADP	_	_	28	case	28:case	_
+28	Sá	Sá	PROPN	_	_	26	flat:name	26:flat:name	_
+29	Berbat	Berbat	PROPN	_	_	26	flat:name	26:flat:name	SpaceAfter=No
+30	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0007
+# text = Segundo o jornal Extra, o artista pode ser preso a qualquer momento por não pagar pensão alimentícia.
+1	Segundo	segundo	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	jornal	jornal	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:segundo	_
+4	Extra	Extra	PROPN	_	_	3	nmod	3:nmod	SpaceAfter=No
+5	,	,	PUNCT	_	_	3	punct	3:punct	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	artista	artista	NOUN	_	Number=Sing	8	nsubj	8:nsubj|10:nsubj:pass	_
+8	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+9	ser	ser	AUX	_	VerbForm=Inf	10	aux:pass	10:aux:pass	_
+10	preso	prender	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	8	xcomp	8:xcomp	_
+11	a	a	ADP	_	_	13	case	13:case	_
+12	qualquer	qualquer	DET	_	Number=Sing|PronType=Ind	13	det	13:det	_
+13	momento	momento	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:a	_
+14	por	por	ADP	_	_	16	mark	16:mark	_
+15	não	não	ADV	_	_	16	advmod	16:advmod	_
+16	pagar	pagar	VERB	_	VerbForm=Inf	8	advcl	8:advcl:por	_
+17	pensão	pensão	NOUN	_	Gender=Fem|Number=Sing	16	obj	16:obj	_
+18	alimentícia	alimentício	ADJ	_	Gender=Fem|Number=Sing	17	amod	17:amod	SpaceAfter=No
+19	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0009
+# text = Latino é pai de nove filhos e a ação em questão se refere ao não cumprimento de compromissos assumidos com o filho Matheus, de 5 anos.
+1	Latino	Latino	PROPN	_	_	3	nsubj	3:nsubj	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+3	pai	pai	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	nove	nove	NUM	_	NumType=Card	6	nummod	6:nummod	_
+6	filhos	filho	NOUN	_	Gender=Masc|Number=Plur	3	nmod	3:nmod:de	_
+7	e	e	CCONJ	_	_	13	cc	13:cc	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	ação	ação	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	13:nsubj	_
+10	em	em	ADP	_	_	11	case	11:case	_
+11	questão	questão	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:em	_
+12	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	13	expl	13:expl	_
+13	refere	referir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	3:conj:e	_
+14-15	ao	_	_	_	_	_	_	_	_
+14	a	a	ADP	_	_	17	case	17:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+16	não	não	ADV	_	_	17	amod	17:amod	_
+17	cumprimento	cumprimento	NOUN	_	Gender=Masc|Number=Sing	13	obl	13:obl:a	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	compromissos	compromisso	NOUN	_	Gender=Masc|Number=Plur	17	nmod	17:nmod:de	_
+20	assumidos	assumir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	19	acl	19:acl	_
+21	com	com	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	filho	filho	NOUN	_	Gender=Masc|Number=Sing	20	obl	20:obl:com	_
+24	Matheus	Matheus	PROPN	_	_	23	nmod	23:nmod	SpaceAfter=No
+25	,	,	PUNCT	_	_	28	punct	28:punct	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	5	5	NUM	_	NumType=Card	28	nummod	28:nummod	_
+28	anos	ano	NOUN	_	Gender=Masc|Number=Plur	23	nmod	23:nmod:de	SpaceAfter=No
+29	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0011
+# text = Ainda de acordo com a matéria, o total de pensões acumuladas já chegam a 12 meses.
+1	Ainda	ainda	ADV	_	_	3	advmod	3:advmod	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:de	_
+4	com	com	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	matéria	matéria	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:com	SpaceAfter=No
+7	,	,	PUNCT	_	_	3	punct	3:punct	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	total	total	NOUN	_	Number=Sing	14	nsubj	14:nsubj	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	pensões	pensão	NOUN	_	Gender=Fem|Number=Plur	9	nmod	9:nmod:de	_
+12	acumuladas	acumulado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	11	amod	11:amod	_
+13	já	já	ADV	_	_	14	advmod	14:advmod	_
+14	chegam	chegar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+15	a	a	ADP	_	_	17	case	17:case	_
+16	12	12	NUM	_	NumType=Card	17	nummod	17:nummod	_
+17	meses	mÃªs	NOUN	_	Gender=Masc|Number=Plur	14	obl	14:obl:a	SpaceAfter=No
+18	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0013
+# text = A Justiça não divulgou o valor do débito.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Justiça	Justiça	PROPN	_	_	4	nsubj	4:nsubj	_
+3	não	não	ADV	_	_	4	advmod	4:advmod	_
+4	divulgou	divulgar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	valor	valor	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	débito	débito	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de	SpaceAfter=No
+10	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0015
+# text = Latino possui um macaco-prego (o Twelves) que é tratado a pão-de-ló.
+1	Latino	Latino	PROPN	_	_	2	nsubj	2:nsubj	_
+2	possui	possuir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	macaco-prego	macaco-prego	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj|11:nsubj:pass	_
+5	(	(	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Twelves	Twelves	PROPN	_	_	4	appos	4:appos	SpaceAfter=No
+8	)	)	PUNCT	_	_	7	punct	7:punct	_
+9	que	que	PRON	_	PronType=Rel	11	nsubj:pass	4:ref	_
+10	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:pass	11:aux:pass	_
+11	tratado	tratar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	4	acl:relcl	4:acl:relcl	_
+12	a	a	ADP	_	_	13	case	13:case	_
+13	pão-de-ló	pão-de-ló	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:a	SpaceAfter=No
+14	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0017
+# text = Um bichinho de estimação como esse pode custar até R$ 60.000,00.
+1	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	bichinho	bichinho	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj|8:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	estimação	estimação	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+5	como	como	ADP	_	_	6	case	6:case	_
+6	esse	esse	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	2	nmod	2:nmod:como	_
+7	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	custar	custar	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+9	até	até	ADP	_	_	10	case	10:case	_
+10	R$	R$	SYM	_	_	8	obl	8:obl:até	_
+11	60.000,00	60.000,00	NUM	_	NumType=Card	10	nummod	10:nummod	SpaceAfter=No
+12	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0019
+# text = Para mantê-lo, o bolso tem estar bem preparado.
+1	Para	para	ADP	_	_	2	mark	2:mark	_
+2-3	mantê-lo	_	_	_	_	_	_	_	_
+2	manter	manter	VERB	_	VerbForm=Inf	7	advcl	7:advcl:para	_
+3	lo	lo	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	obj	2:obj	_
+4	,	,	PUNCT	_	_	2	punct	2:punct	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	bolso	bolso	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj|10:nsubj	_
+7	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	estar	estar	AUX	_	VerbForm=Inf	10	cop	10:cop	_
+9	bem	bem	ADV	_	_	10	advmod	10:advmod	_
+10	preparado	preparado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	7	xcomp	7:xcomp	SpaceAfter=No
+11	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0021
+# text = Segundo o site Extra, biólogos estimam um custo fixo mensal de R$ 500,00 [...] esse valor inclui cuidados com higiene (fraldas), saúde e alimentação.
+1	Segundo	segundo	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	site	site	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:segundo	_
+4	Extra	Extra	PROPN	_	_	3	nmod	3:nmod	SpaceAfter=No
+5	,	,	PUNCT	_	_	3	punct	3:punct	_
+6	biólogos	biólogo	NOUN	_	Gender=Masc|Number=Plur	7	nsubj	7:nsubj	_
+7	estimam	estimar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	custo	custo	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+10	fixo	fixo	ADJ	_	Gender=Masc|Number=Sing	9	amod	9:amod	_
+11	mensal	mensal	ADJ	_	Number=Sing	9	amod	9:amod	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	R$	R$	SYM	_	_	9	nmod	9:nmod:de	_
+14	500,00	500,00	NUM	_	NumType=Card	13	nummod	13:nummod	_
+15	[	[	PUNCT	_	_	16	punct	16:punct	SpaceAfter=No
+16	.	.	PUNCT	_	_	21	parataxis	21:parataxis	SpaceAfter=No
+17	..	..	PUNCT	_	_	16	punct	16:punct	SpaceAfter=No
+18	]	]	PUNCT	_	_	16	punct	16:punct	_
+19	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	20	det	20:det	_
+20	valor	valor	NOUN	_	Gender=Masc|Number=Sing	21	nsubj	21:nsubj	_
+21	inclui	incluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	parataxis	7:parataxis	_
+22	cuidados	cuidado	NOUN	_	Gender=Masc|Number=Plur	21	obj	21:obj	_
+23	com	com	ADP	_	_	24	case	24:case|29:case|31:case	_
+24	higiene	higiene	NOUN	_	Gender=Fem|Number=Sing	22	nmod	22:nmod:com	_
+25	(	(	PUNCT	_	_	26	punct	26:punct	SpaceAfter=No
+26	fraldas	fralda	NOUN	_	Gender=Fem|Number=Plur	24	appos	24:appos	SpaceAfter=No
+27	)	)	PUNCT	_	_	26	punct	26:punct	SpaceAfter=No
+28	,	,	PUNCT	_	_	29	punct	29:punct	_
+29	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	24	conj	22:nmod:com|24:conj:e	_
+30	e	e	CCONJ	_	_	31	cc	31:cc	_
+31	alimentação	alimentação	NOUN	_	Gender=Fem|Number=Sing	24	conj	22:nmod:com|24:conj:e	SpaceAfter=No
+32	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0023
+# text = O macaquinho charmoso de Latino, que usa até roupas de grife ( revista EGO ), ainda tem um custo adicional com atestados de viagem (que tem validade de 3 dias).
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	macaquinho	macaquinho	NOUN	_	Gender=Masc|Number=Sing	19	nsubj	8:nsubj|19:nsubj	_
+3	charmoso	charmoso	ADJ	_	Gender=Masc|Number=Sing	2	amod	2:amod	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	Latino	Latino	PROPN	_	_	2	nmod	2:nmod:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	8	punct	8:punct	_
+7	que	que	PRON	_	PronType=Rel	8	nsubj	2:ref	_
+8	usa	usar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+9	até	até	ADV	_	_	10	advmod	10:advmod	_
+10	roupas	roupa	NOUN	_	Gender=Fem|Number=Plur	8	obj	8:obj	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	grife	grife	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:de	_
+13	(	(	PUNCT	_	_	14	punct	14:punct	_
+14	revista	revista	NOUN	_	Gender=Fem|Number=Sing	10	appos	10:appos	_
+15	EGO	EGO	PROPN	_	_	14	nmod	14:nmod	_
+16	)	)	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+17	,	,	PUNCT	_	_	8	punct	8:punct	_
+18	ainda	ainda	ADV	_	_	19	advmod	19:advmod	_
+19	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+20	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	custo	custo	NOUN	_	Gender=Masc|Number=Sing	19	obj	19:obj	_
+22	adicional	adicional	ADJ	_	Number=Sing	21	amod	21:amod	_
+23	com	com	ADP	_	_	24	case	24:case	_
+24	atestados	atestado	NOUN	_	Gender=Masc|Number=Plur	21	nmod	21:nmod:com|29:nsubj	_
+25	de	de	ADP	_	_	26	case	26:case	_
+26	viagem	viagem	NOUN	_	Gender=Fem|Number=Sing	24	nmod	24:nmod:de	_
+27	(	(	PUNCT	_	_	29	punct	29:punct	SpaceAfter=No
+28	que	que	PRON	_	PronType=Rel	29	nsubj	24:ref	_
+29	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	acl:relcl	24:acl:relcl	_
+30	validade	validade	NOUN	_	Gender=Fem|Number=Sing	29	obj	29:obj	_
+31	de	de	ADP	_	_	33	case	33:case	_
+32	3	3	NUM	_	NumType=Card	33	nummod	33:nummod	_
+33	dias	dia	NOUN	_	Gender=Masc|Number=Plur	30	nmod	30:nmod:de	SpaceAfter=No
+34	)	)	PUNCT	_	_	29	punct	29:punct	SpaceAfter=No
+35	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0025
+# text = O próprio cantor já declarou que viaja com Twelves pelos quatro cantos do país quando tem shows agendados, ou seja, a cada semana é necessário uma nova ida ao veterinário (consulta entre R$ 100,00 a R$ 150,00) para conseguir um novo atestado.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+2	próprio	próprio	DET	_	Gender=Masc|Number=Sing|PronType=Dem	3	det	3:det	_
+3	cantor	cantor	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+4	já	já	ADV	_	_	5	advmod	5:advmod	_
+5	declarou	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	que	que	SCONJ	_	_	7	mark	7:mark|29:mark	_
+7	viaja	viajar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	ccomp	5:ccomp	_
+8	com	com	ADP	_	_	9	case	9:case	_
+9	Twelves	Twelves	PROPN	_	_	7	obl	7:obl:com	_
+10-11	pelos	_	_	_	_	_	_	_	_
+10	por	por	ADP	_	_	13	case	13:case	_
+11	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	13:det	_
+12	quatro	quatro	NUM	_	NumType=Card	13	nummod	13:nummod	_
+13	cantos	canto	NOUN	_	Gender=Masc|Number=Plur	7	obl	7:obl:por	_
+14-15	do	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	país	país	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod:de	_
+17	quando	quando	SCONJ	_	_	18	mark	18:mark	_
+18	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	advcl	7:advcl:quando	_
+19	shows	show	NOUN	_	Gender=Masc|Number=Plur	18	obj	18:obj	_
+20	agendados	agendar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	19	acl	19:acl	SpaceAfter=No
+21	,	,	PUNCT	_	_	22	punct	22:punct	_
+22	ou	ou	CCONJ	_	ExtPos=CCONJ	29	cc	29:cc	_
+23	seja	ser	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	fixed	22:fixed	SpaceAfter=No
+24	,	,	PUNCT	_	_	22	punct	22:punct	_
+25	a	a	ADP	_	_	27	case	27:case	_
+26	cada	cada	DET	_	Number=Sing|PronType=Ind	27	det	27:det	_
+27	semana	semana	NOUN	_	Gender=Fem|Number=Sing	29	obl	29:obl:a	_
+28	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	cop	29:cop	_
+29	necessário	necessário	ADJ	_	Gender=Masc|Number=Sing	7	conj	5:ccomp|7:conj:ou	_
+30	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	32	det	32:det	_
+31	nova	novo	ADJ	_	Gender=Fem|Number=Sing	32	amod	32:amod	_
+32	ida	ida	NOUN	_	Gender=Fem|Number=Sing	29	nsubj	29:nsubj	_
+33-34	ao	_	_	_	_	_	_	_	_
+33	a	a	ADP	_	_	35	case	35:case	_
+34	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	35:det	_
+35	veterinário	veterinário	NOUN	_	Gender=Masc|Number=Sing	32	nmod	32:nmod:a	_
+36	(	(	PUNCT	_	_	37	punct	37:punct	SpaceAfter=No
+37	consulta	consulta	NOUN	_	Gender=Fem|Number=Sing	32	appos	32:appos	_
+38	entre	entre	ADP	_	_	39	case	39:case	_
+39	R$	R$	SYM	_	_	37	nmod	37:nmod:entre	_
+40	100,00	100,00	NUM	_	NumType=Card	39	nummod	39:nummod	_
+41	a	a	ADP	_	_	42	case	42:case	_
+42	R$	R$	SYM	_	_	39	nmod	39:nmod:a	_
+43	150,00	150,00	NUM	_	NumType=Card	42	nummod	42:nummod	SpaceAfter=No
+44	)	)	PUNCT	_	_	37	punct	37:punct	_
+45	para	para	ADP	_	_	46	mark	46:mark	_
+46	conseguir	conseguir	VERB	_	VerbForm=Inf	29	advcl	29:advcl:para	_
+47	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	49	det	49:det	_
+48	novo	novo	ADJ	_	Gender=Masc|Number=Sing	49	amod	49:amod	_
+49	atestado	atestado	NOUN	_	Gender=Masc|Number=Sing	46	obj	46:obj	SpaceAfter=No
+50	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0027
+# text = Se Latino fizer (no mínimo) 4 shows por mês, terá gasto de R$ 400 a R$ 600 reais (somente com veterinário) [...] juntando essa despesa ao custo fixo, o desembolso pode chagar na casa dos R$ 1.000,00.
+1	Se	se	SCONJ	_	_	3	mark	3:mark	_
+2	Latino	Latino	PROPN	_	_	3	nsubj	3:nsubj	_
+3	fizer	fazer	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	42	advcl	42:advcl:se	_
+4	(	(	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+5-6	no	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	mínimo	mínimo	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:em	SpaceAfter=No
+8	)	)	PUNCT	_	_	7	punct	7:punct	_
+9	4	4	NUM	_	NumType=Card	10	nummod	10:nummod	_
+10	shows	show	NOUN	_	Gender=Masc|Number=Plur	3	obj	3:obj	_
+11	por	por	ADP	_	_	12	case	12:case	_
+12	mês	mês	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:por	SpaceAfter=No
+13	,	,	PUNCT	_	_	3	punct	3:punct	_
+14	terá	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	42	dep	42:dep	_
+15	gasto	gasto	NOUN	_	Gender=Masc|Number=Sing	14	obj	14:obj	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	R$	R$	SYM	_	_	15	nmod	15:nmod:de	_
+18	400	400	NUM	_	NumType=Card	17	nummod	17:nummod	_
+19	a	a	ADP	_	_	20	case	20:case	_
+20	R$	R$	SYM	_	_	22	nmod	22:nmod:a	_
+21	600	600	NUM	_	NumType=Card	22	nummod	22:nummod	_
+22	reais	real	NOUN	_	Gender=Masc|Number=Plur	17	nmod	17:nmod	_
+23	(	(	PUNCT	_	_	26	punct	26:punct	SpaceAfter=No
+24	somente	somente	ADV	_	_	26	advmod	26:advmod	_
+25	com	com	ADP	_	_	26	case	26:case	_
+26	veterinário	veterinário	NOUN	_	Gender=Masc|Number=Sing	17	nmod	17:nmod:com	SpaceAfter=No
+27	)	)	PUNCT	_	_	26	punct	26:punct	_
+28	[	[	PUNCT	_	_	42	punct	42:punct	SpaceAfter=No
+29	.	.	PUNCT	_	_	42	punct	42:punct	SpaceAfter=No
+30	..	..	PUNCT	_	_	29	punct	29:punct	SpaceAfter=No
+31	]	]	PUNCT	_	_	29	punct	29:punct	_
+32	juntando	juntar	VERB	_	VerbForm=Ger	14	parataxis	14:parataxis	_
+33	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	34	det	34:det	_
+34	despesa	despesa	NOUN	_	Gender=Fem|Number=Sing	32	obj	32:obj	_
+35-36	ao	_	_	_	_	_	_	_	_
+35	a	a	ADP	_	_	37	case	37:case	_
+36	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	37:det	_
+37	custo	custo	NOUN	_	Gender=Masc|Number=Sing	32	obl	32:obl:a	_
+38	fixo	fixo	ADJ	_	Gender=Masc|Number=Sing	37	amod	37:amod	SpaceAfter=No
+39	,	,	PUNCT	_	_	3	punct	3:punct	_
+40	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	41:det	_
+41	desembolso	desembolso	NOUN	_	Gender=Masc|Number=Sing	42	nsubj	42:nsubj|43:nsubj	_
+42	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+43	chagar	chagar	VERB	_	VerbForm=Inf	42	xcomp	42:xcomp	_
+44-45	na	_	_	_	_	_	_	_	_
+44	em	em	ADP	_	_	46	case	46:case	_
+45	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	46:det	_
+46	casa	casa	NOUN	_	Gender=Fem|Number=Sing	43	obl	43:obl:em	_
+47-48	dos	_	_	_	_	_	_	_	_
+47	de	de	ADP	_	_	49	case	49:case	_
+48	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	49	det	49:det	_
+49	R$	R$	SYM	_	_	46	nmod	46:nmod:de	_
+50	1.000,00	1.000,00	NUM	_	NumType=Card	49	nummod	49:nummod	SpaceAfter=No
+51	.	.	PUNCT	_	_	42	punct	42:punct	_

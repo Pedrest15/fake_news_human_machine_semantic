@@ -1,0 +1,168 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Internautas flagram Eike Batista nos EUA embarcando rumo ao Brasil.
+1	Internautas	internauta	NOUN	_	Number=Plur	2	nsubj	2:nsubj	_
+2	flagram	flagrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	Eike	Eike	PROPN	_	_	2	obj	2:obj	_
+4	Batista	Batista	PROPN	_	_	3	flat:name	3:flat:name	_
+5-6	nos	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	7:det	_
+7	EUA	EUA	PROPN	_	_	2	obl	2:obl:em	_
+8	embarcando	embarcar	VERB	_	VerbForm=Ger	2	advcl	2:advcl	_
+9	rumo	rumo	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	_
+10-11	ao	_	_	_	_	_	_	_	_
+10	a	a	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	Brasil	Brasil	PROPN	_	_	9	nmod	9:nmod:a	SpaceAfter=No
+13	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Ele estava "tranquilo e favorável".
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	4:nsubj|6:nsubj	_
+2	estava	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	cop	4:cop|6:cop	_
+3	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+4	tranquilo	tranquilo	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	favorável	favorável	ADJ	_	Number=Sing	4	conj	4:conj:e	SpaceAfter=No
+7	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+8	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0005
+# text = O empresário chegou ao aeroporto JKF (NY) pouco depois das 21:30 (horário de Brasília).
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	empresário	empresário	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	chegou	chegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4-5	ao	_	_	_	_	_	_	_	_
+4	a	a	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	aeroporto	aeroporto	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:a	_
+7	JKF	JKF	PROPN	_	_	6	nmod	6:nmod	_
+8	(	(	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+9	NY	NY	PROPN	_	_	6	parataxis	6:parataxis	SpaceAfter=No
+10	)	)	PUNCT	_	_	9	punct	9:punct	_
+11	pouco	pouco	ADV	_	_	12	advmod	12:advmod	_
+12	depois	depois	ADV	_	_	3	advmod	3:advmod	_
+13-14	das	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	15:det	_
+15	21:30	21:30	NUM	_	NumType=Card	12	obl	12:obl:de	_
+16	(	(	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+17	horário	horário	NOUN	_	Gender=Masc|Number=Sing	15	appos	15:appos	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	Brasília	Brasília	PROPN	_	_	17	nmod	17:nmod:de	SpaceAfter=No
+20	)	)	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+21	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = Sozinho, tranquilo e carregando apenas uma maleta, Eike passou pela checagem de passaporte e seguiu em direção à sala de embarque.
+1	Sozinho	sozinho	ADJ	_	Gender=Masc|Number=Sing	11	advcl	11:advcl|18:advcl	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	tranquilo	tranquilo	ADJ	_	Gender=Masc|Number=Sing	1	conj	1:conj:e|11:advcl|18:advcl	_
+4	e	e	CCONJ	_	_	5	cc	5:cc	_
+5	carregando	carregar	VERB	_	VerbForm=Ger	1	conj	1:conj:e|11:advcl|18:advcl	_
+6	apenas	apenas	ADV	_	_	8	advmod	8:advmod	_
+7	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	maleta	maleta	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	SpaceAfter=No
+9	,	,	PUNCT	_	_	1	punct	1:punct	_
+10	Eike	Eike	PROPN	_	_	11	nsubj	11:nsubj|18:nsubj	_
+11	passou	passar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12-13	pela	_	_	_	_	_	_	_	_
+12	por	por	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	checagem	checagem	NOUN	_	Gender=Fem|Number=Sing	11	obl	11:obl:por	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	passaporte	passaporte	NOUN	_	Gender=Masc|Number=Sing	14	nmod	14:nmod:de	_
+17	e	e	CCONJ	_	_	18	cc	18:cc	_
+18	seguiu	seguir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	conj	11:conj:e	_
+19	em	em	ADP	_	_	20	case	20:case	_
+20	direção	direção	NOUN	_	Gender=Fem|Number=Sing	18	obl	18:obl:em	_
+21-22	à	_	_	_	_	_	_	_	_
+21	a	a	ADP	_	_	23	case	23:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	sala	sala	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:a	_
+24	de	de	ADP	_	_	25	case	25:case	_
+25	embarque	embarque	NOUN	_	Gender=Masc|Number=Sing	23	nmod	23:nmod:de	SpaceAfter=No
+26	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0009
+# text = Assim que desembarcar no Brasil, ele será recepcionado pela Polícia Federal e encaminhado para a sede da PF na cidade.
+1	Assim	assim	ADV	_	ExtPos=SCONJ	3	mark	3:mark	_
+2	que	que	SCONJ	_	_	1	fixed	1:fixed	_
+3	desembarcar	desembarcar	VERB	_	VerbForm=Inf	10	advcl	10:advcl:assim_que|16:advcl:assim_que	_
+4-5	no	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	Brasil	Brasil	PROPN	_	_	3	obl	3:obl:em	SpaceAfter=No
+7	,	,	PUNCT	_	_	3	punct	3:punct	_
+8	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	nsubj:pass	10:nsubj:pass|16:nsubj:pass	_
+9	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	10	aux:pass	10:aux:pass|16:aux:pass	_
+10	recepcionado	recepcionar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+11-12	pela	_	_	_	_	_	_	_	_
+11	por	por	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	Polícia	Polícia	PROPN	_	_	10	obl:agent	10:obl:agent	_
+14	Federal	Federal	PROPN	_	_	13	flat:name	13:flat:name	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	encaminhado	encaminhar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	10	conj	10:conj:e	_
+17	para	para	ADP	_	_	19	case	19:case	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	sede	sede	NOUN	_	Gender=Fem|Number=Sing	16	obl	16:obl:para	_
+20-21	da	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	PF	PF	PROPN	_	_	19	nmod	19:nmod:de	_
+23-24	na	_	_	_	_	_	_	_	_
+23	em	em	ADP	_	_	25	case	25:case	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	cidade	cidade	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:em	SpaceAfter=No
+26	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0011
+# text = Um internauta que estava no aeroporto perguntou se ele se considerava culpado ou inocente.
+1	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	internauta	internauta	NOUN	_	Number=Sing	8	nsubj	7:nsubj|8:nsubj	_
+3	que	que	PRON	_	PronType=Rel	7	nsubj	2:ref	_
+4	estava	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	cop	7:cop	_
+5-6	no	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	aeroporto	aeroporto	NOUN	_	Gender=Masc|Number=Sing	2	acl:relcl	2:acl:relcl	_
+8	perguntou	perguntar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	se	se	SCONJ	_	_	12	mark	12:mark	_
+10	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	nsubj	12:nsubj|13:nsubj|15:nsubj	_
+11	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	12	expl	12:expl	_
+12	considerava	considerar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	8	ccomp	8:ccomp	_
+13	culpado	culpado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	12	xcomp	12:xcomp	_
+14	ou	ou	CCONJ	_	_	15	cc	15:cc	_
+15	inocente	inocente	ADJ	_	Number=Sing	13	conj	12:xcomp|13:conj:ou	SpaceAfter=No
+16	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0013
+# text = Eike preferiu não responder.
+1	Eike	Eike	PROPN	_	_	2	nsubj	2:nsubj|4:nsubj	_
+2	preferiu	preferir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	não	não	ADV	_	_	4	advmod	4:advmod	_
+4	responder	responder	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	SpaceAfter=No
+5	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0015
+# text = A previsão de chegada no Rio é amanhã às 10:30. vídeo abaixo:
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	previsão	previsão	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	9:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	chegada	chegada	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+5-6	no	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Rio	Rio	PROPN	_	_	4	nmod	4:nmod:em	_
+8	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	9:cop	_
+9	amanhã	amanhã	ADV	_	_	0	root	0:root	_
+10-11	às	_	_	_	_	_	_	_	_
+10	a	a	ADP	_	_	12	case	12:case	_
+11	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	12:det	_
+12	10:30	10:30	NUM	_	NumType=Card	9	obl	9:obl:a	SpaceAfter=No
+13	.	.	PUNCT	_	_	14	punct	14:punct	_
+14	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	9	parataxis	9:parataxis	_
+15	abaixo	abaixo	ADV	_	_	14	advmod	14:advmod	SpaceAfter=No
+16	:	:	PUNCT	_	_	9	punct	9:punct	_

@@ -1,0 +1,508 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Ex-funcionária revela segredos obscuros e nojentos das companhias aéreas.
+1	Ex-funcionária	ex-funcionário	NOUN	_	Gender=Fem|Number=Sing	2	nsubj	2:nsubj	_
+2	revela	revelar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	segredos	segredo	NOUN	_	Gender=Masc|Number=Plur	2	obj	2:obj	_
+4	obscuros	obscuro	ADJ	_	Gender=Masc|Number=Plur	3	amod	3:amod	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	nojentos	nojento	ADJ	_	Gender=Masc|Number=Plur	4	conj	3:amod|4:conj:e	_
+7-8	das	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	9:det	_
+9	companhias	companhia	NOUN	_	Gender=Fem|Number=Plur	3	nmod	3:nmod:de	_
+10	aéreas	aéreo	ADJ	_	Gender=Fem|Number=Plur	9	amod	9:amod	SpaceAfter=No
+11	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Cuidado com as refeições!.
+1	Cuidado	cuidar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+2	com	com	ADP	_	_	4	case	4:case	_
+3	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	4:det	_
+4	refeições	refeição	NOUN	_	Gender=Fem|Number=Plur	1	obl	1:obl:com	SpaceAfter=No
+5	!	!	PUNCT	_	_	1	punct	1:punct	SpaceAfter=No
+6	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0005
+# text = Alison Hope, ex-funcionária de uma empresa aérea, escreveu um artigo revelando alguns segredos obscuros das companhias.
+1	Alison	Alison	PROPN	_	_	10	nsubj	10:nsubj	_
+2	Hope	Hope	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	ex-funcionária	ex-funcionária	NOUN	_	Gender=Fem|Number=Sing	1	appos	1:appos	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	empresa	empresa	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:de	_
+8	aérea	aéreo	ADJ	_	Gender=Fem|Number=Sing	7	amod	7:amod	SpaceAfter=No
+9	,	,	PUNCT	_	_	4	punct	4:punct	_
+10	escreveu	escrever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+11	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	artigo	artigo	NOUN	_	Gender=Masc|Number=Sing	10	obj	10:obj	_
+13	revelando	revelar	VERB	_	VerbForm=Ger	10	advcl	10:advcl	_
+14	alguns	algum	DET	_	Gender=Masc|Number=Plur|PronType=Ind	15	det	15:det	_
+15	segredos	segredo	NOUN	_	Gender=Masc|Number=Plur	13	obj	13:obj	_
+16	obscuros	obscuro	ADJ	_	Gender=Masc|Number=Plur	15	amod	15:amod	_
+17-18	das	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	19:det	_
+19	companhias	companhia	NOUN	_	Gender=Fem|Number=Plur	15	nmod	15:nmod:de	SpaceAfter=No
+20	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0007
+# text = Coisas que talvez você não sabia.
+1	Coisas	coisa	NOUN	_	Gender=Fem|Number=Plur	0	root	0:root|6:obj	_
+2	que	que	PRON	_	PronType=Rel	6	obj	1:ref	_
+3	talvez	talvez	ADV	_	_	6	advmod	6:advmod	_
+4	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	6	nsubj	6:nsubj	_
+5	não	não	ADV	_	_	6	advmod	6:advmod	_
+6	sabia	saber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	1	acl:relcl	1:acl:relcl	SpaceAfter=No
+7	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0009
+# text = Até hoje!
+1	Até	até	ADP	_	_	2	case	2:case	_
+2	hoje	hoje	ADV	_	_	0	root	0:root	SpaceAfter=No
+3	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0011
+# text = ( The Mirror / Tradução Diário do Brasil) Um passageiro se acomoda em suas cadeira e espera ansioso por uma refeição.
+1	(	(	PUNCT	_	_	2	punct	2:punct	_
+2	The	The	PROPN	_	_	14	parataxis	14:parataxis|19:parataxis	_
+3	Mirror	Mirror	PROPN	_	_	2	flat:name	2:flat:name	_
+4	/	/	PUNCT	_	_	5	punct	5:punct	_
+5	Tradução	tradução	NOUN	_	Gender=Fem|Number=Sing	2	parataxis	2:parataxis	_
+6	Diário	Diário	PROPN	_	_	5	flat:name	5:flat:name	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	Brasil	Brasil	PROPN	_	_	5	flat:name	5:flat:name	SpaceAfter=No
+10	)	)	PUNCT	_	_	2	punct	2:punct	_
+11	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	passageiro	passageiro	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	14:nsubj|19:nsubj	_
+13	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	14	expl	14:expl	_
+14	acomoda	acomodar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+15	em	em	ADP	_	_	17	case	17:case	_
+16	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	17	det	17:det	_
+17	cadeira	cadeira	NOUN	_	Gender=Fem|Number=Sing	14	obl	14:obl:em	_
+18	e	e	CCONJ	_	_	19	cc	19:cc	_
+19	espera	esperar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	conj	14:conj:e	_
+20	ansioso	ansioso	ADJ	_	Gender=Masc|Number=Sing	19	advcl	19:advcl	_
+21	por	por	ADP	_	_	23	case	23:case	_
+22	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	refeição	refeição	NOUN	_	Gender=Fem|Number=Sing	20	obl	20:obl:por	SpaceAfter=No
+24	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0013
+# text = Na poltrona ao lado um acompanhante toma apenas uma xícara de café fresco.
+1-2	Na	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	poltrona	poltrÃ£o	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:em	_
+4-5	ao	_	_	_	_	_	_	_	_
+4	a	a	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	lado	lado	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:a	_
+7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	acompanhante	acompanhante	NOUN	_	Number=Sing	9	nsubj	9:nsubj	_
+9	toma	tomar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+10	apenas	apenas	ADV	_	_	12	advmod	12:advmod	_
+11	uma	um	NUM	_	Gender=Fem|NumType=Card	12	nummod	12:nummod	_
+12	xícara	xícara	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	café	café	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:de	_
+15	fresco	fresco	ADJ	_	Gender=Masc|Number=Sing	14	amod	14:amod	SpaceAfter=No
+16	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0015
+# text = O que ambos não sabem é que as refeições servidas durante os voos violam os padrões de higiene.
+1	O	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	14	nsubj:outer	5:obj|14:nsubj:outer	_
+2	que	que	PRON	_	PronType=Rel	5	obj	1:ref	_
+3	ambos	ambos	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	5	nsubj	5:nsubj	_
+4	não	não	ADV	_	_	5	advmod	5:advmod	_
+5	sabem	saber	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	14:cop	_
+7	que	que	SCONJ	_	_	14	mark	14:mark	_
+8	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	9:det	_
+9	refeições	refeição	NOUN	_	Gender=Fem|Number=Plur	14	nsubj	14:nsubj	_
+10	servidas	servir	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	9	acl	9:acl	_
+11	durante	durante	ADP	_	_	13	case	13:case	_
+12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	13:det	_
+13	voos	voo	NOUN	_	Gender=Masc|Number=Plur	10	obl	10:obl:durante	_
+14	violam	violar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	16:det	_
+16	padrões	padrão	NOUN	_	Gender=Masc|Number=Plur	14	obj	14:obj	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	higiene	higiene	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:de	SpaceAfter=No
+19	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0017
+# text = A água usada para fazer o cafezinho da pessoa ao lado pode estar tão suja que poderia matar alguém [...] ela é armazenada em tanques que são difíceis de limpar e assim podem conter quantidades elevadas de bactérias.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	água	água	NOUN	_	Gender=Fem|Number=Sing	14	nsubj	14:nsubj|17:nsubj	_
+3	usada	usar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	2:acl	_
+4	para	para	ADP	_	_	5	mark	5:mark	_
+5	fazer	fazer	VERB	_	VerbForm=Inf	3	advcl	3:advcl:para	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	cafezinho	cafezinho	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	pessoa	pessoa	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:de	_
+11-12	ao	_	_	_	_	_	_	_	_
+11	a	a	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	lado	lado	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:a	_
+14	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+15	estar	estar	AUX	_	VerbForm=Inf	17	cop	17:cop	_
+16	tão	tão	ADV	_	_	17	advmod	17:advmod	_
+17	suja	sujo	ADJ	_	Gender=Fem|Number=Sing	14	xcomp	14:xcomp	_
+18	que	que	SCONJ	_	_	19	mark	19:mark	_
+19	poderia	poder	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	17	advcl	17:advcl:que	_
+20	matar	matar	VERB	_	VerbForm=Inf	19	xcomp	19:xcomp	_
+21	alguém	alguém	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	20	obj	20:obj	_
+22	[	[	PUNCT	_	_	28	punct	28:punct	SpaceAfter=No
+23	.	.	PUNCT	_	_	28	punct	28:punct	SpaceAfter=No
+24	..	..	PUNCT	_	_	23	punct	23:punct	SpaceAfter=No
+25	]	]	PUNCT	_	_	23	punct	23:punct	_
+26	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	28	nsubj:pass	28:nsubj:pass	_
+27	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	aux:pass	28:aux:pass	_
+28	armazenada	armazenar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	14	dep	14:dep	_
+29	em	em	ADP	_	_	30	case	30:case	_
+30	tanques	tanque	NOUN	_	Gender=Masc|Number=Plur	28	obl	28:obl:em|33:nsubj|38:nsubj|39:nsubj	_
+31	que	que	PRON	_	PronType=Rel	33	nsubj	30:ref	_
+32	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	33	cop	33:cop	_
+33	difíceis	difícil	ADJ	_	Number=Plur	30	acl:relcl	30:acl:relcl	_
+34	de	de	ADP	_	_	35	mark	35:mark	_
+35	limpar	limpar	VERB	_	VerbForm=Inf	33	acl	33:acl:de	_
+36	e	e	CCONJ	_	_	38	cc	38:cc	_
+37	assim	assim	ADV	_	_	38	advmod	38:advmod	_
+38	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	33	conj	30:acl:relcl|33:conj:e	_
+39	conter	conter	VERB	_	VerbForm=Inf	38	xcomp	38:xcomp	_
+40	quantidades	quantidade	NOUN	_	Gender=Fem|Number=Plur	39	obj	39:obj	_
+41	elevadas	elevado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	40	amod	40:amod	_
+42	de	de	ADP	_	_	43	case	43:case	_
+43	bactérias	bactéria	NOUN	_	Gender=Fem|Number=Plur	40	nmod	40:nmod:de	SpaceAfter=No
+44	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0019
+# text = Alison explica que os passageiros devem evitar os chás e cafés servidos durante os voos.
+1	Alison	Alison	PROPN	_	_	2	nsubj	2:nsubj	_
+2	explica	explicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	6	mark	6:mark	_
+4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	5:det	_
+5	passageiros	passageiro	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	6:nsubj|7:nsubj	_
+6	devem	dever	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	2:ccomp	_
+7	evitar	evitar	VERB	_	VerbForm=Inf	6	xcomp	6:xcomp	_
+8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	9:det	_
+9	chás	chá	NOUN	_	Gender=Masc|Number=Plur	7	obj	7:obj	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	cafés	café	NOUN	_	Gender=Masc|Number=Plur	9	conj	7:obj|9:conj:e	_
+12	servidos	servir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	9	acl	9:acl|11:acl	_
+13	durante	durante	ADP	_	_	15	case	15:case	_
+14	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	15:det	_
+15	voos	voo	NOUN	_	Gender=Masc|Number=Plur	12	obl	12:obl:durante	SpaceAfter=No
+16	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0021
+# text = Ela também aconselha passageiros a comerem alimentos adequadamente embalados e que venham de uma companhia aérea com boa reputação, a menos que sejam as companhias Emirates ou a Singapore Airlines, que são as melhores do mundo.
+1	Ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nsubj	3:nsubj	_
+2	também	também	ADV	_	_	3	advmod	3:advmod	_
+3	aconselha	aconselhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	passageiros	passageiro	NOUN	_	Gender=Masc|Number=Plur	3	obj	3:obj|6:nsubj	_
+5	a	a	ADP	_	_	6	mark	6:mark|12:mark	_
+6	comerem	comer	VERB	_	Number=Plur|Person=3|VerbForm=Inf	3	xcomp	3:xcomp	_
+7	alimentos	alimento	NOUN	_	Gender=Masc|Number=Plur	6	obj	6:obj	_
+8	adequadamente	adequadamente	ADV	_	_	9	advmod	9:advmod	_
+9	embalados	embalar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	7	acl	7:acl	_
+10	e	e	CCONJ	_	_	12	cc	12:cc	_
+11	que	que	PRON	_	PronType=Rel	12	nsubj	12:nsubj	_
+12	venham	vir	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	conj	3:xcomp|6:conj:e	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	companhia	companhia	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl:de	_
+16	aérea	aéreo	ADJ	_	Gender=Fem|Number=Sing	15	amod	15:amod	_
+17	com	com	ADP	_	_	19	case	19:case	_
+18	boa	bom	ADJ	_	Gender=Fem|Number=Sing	19	amod	19:amod	_
+19	reputação	reputação	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:com	SpaceAfter=No
+20	,	,	PUNCT	_	_	26	punct	26:punct	_
+21	a	a	ADP	_	ExtPos=SCONJ	26	mark	26:mark	_
+22	menos	menos	ADV	_	_	21	fixed	21:fixed	_
+23	que	que	SCONJ	_	_	21	fixed	21:fixed	_
+24	sejam	ser	AUX	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	26	cop	26:cop	_
+25	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	26	det	26:det	_
+26	companhias	companhia	NOUN	_	Gender=Fem|Number=Plur	6	advcl	6:advcl:a_menos_que|12:advcl:a_menos_que|35:nsubj	_
+27	Emirates	Emirates	PROPN	_	_	26	nmod	26:nmod	_
+28	ou	ou	CCONJ	_	_	30	cc	30:cc	_
+29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	Singapore	Singapore	PROPN	_	_	27	conj	26:nmod|27:conj:ou	_
+31	Airlines	Airlines	PROPN	_	_	30	flat:name	30:flat:name	SpaceAfter=No
+32	,	,	PUNCT	_	_	35	punct	35:punct	_
+33	que	que	PRON	_	PronType=Rel	35	nsubj	26:ref	_
+34	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	35	cop	35:cop	_
+35	as	o	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Dem	26	acl:relcl	26:acl:relcl	_
+36	melhores	melhor	ADJ	_	Number=Plur	35	amod	35:amod	_
+37-38	do	_	_	_	_	_	_	_	_
+37	de	de	ADP	_	_	39	case	39:case	_
+38	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	39:det	_
+39	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	35	nmod	35:nmod:de	SpaceAfter=No
+40	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0023
+# text = Ela destacou: "As empresas terceirizadas fornecedoras de refeições para as companhias aéreas muitas vezes violam as regras de saúde e higiene no preparo dos alimentos".
+1	Ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj	_
+2	destacou	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+3	:	:	PUNCT	_	_	17	punct	17:punct	_
+4	"	"	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+5	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	6:det	_
+6	empresas	empresa	NOUN	_	Gender=Fem|Number=Plur	17	nsubj	17:nsubj	_
+7	terceirizadas	terceirizado	ADJ	_	Gender=Fem|Number=Plur	6	amod	6:amod	_
+8	fornecedoras	fornecedor	NOUN	_	Gender=Fem|Number=Plur	6	nmod	6:nmod	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	refeições	refeição	NOUN	_	Gender=Fem|Number=Plur	8	nmod	8:nmod:de	_
+11	para	para	ADP	_	_	13	case	13:case	_
+12	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	13:det	_
+13	companhias	companhia	NOUN	_	Gender=Fem|Number=Plur	8	nmod	8:nmod:para	_
+14	aéreas	aéreo	ADJ	_	Gender=Fem|Number=Plur	13	amod	13:amod	_
+15	muitas	muito	ADJ	_	Gender=Fem|Number=Plur	16	amod	16:amod	_
+16	vezes	vez	NOUN	_	Gender=Fem|Number=Plur	17	obl	17:obl	_
+17	violam	violar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	2:ccomp	_
+18	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	19:det	_
+19	regras	regra	NOUN	_	Gender=Fem|Number=Plur	17	obj	17:obj	_
+20	de	de	ADP	_	_	21	case	21:case|23:case	_
+21	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:de	_
+22	e	e	CCONJ	_	_	23	cc	23:cc	_
+23	higiene	higiene	NOUN	_	Gender=Fem|Number=Sing	21	conj	19:nmod:de|21:conj:e	_
+24-25	no	_	_	_	_	_	_	_	_
+24	em	em	ADP	_	_	26	case	26:case	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	preparo	preparo	NOUN	_	Gender=Masc|Number=Sing	17	obl	17:obl:em	_
+27-28	dos	_	_	_	_	_	_	_	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	29:det	_
+29	alimentos	alimento	NOUN	_	Gender=Masc|Number=Plur	26	nmod	26:nmod:de	SpaceAfter=No
+30	"	"	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+31	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0025
+# text = Antes de comer, os passageiros devem limpar sua bandeja com toalhas antibacterianas, pois podem estar cobertas com matéria fecal ou outras coisas desagradáveis.
+1	Antes	antes	ADV	_	_	7	advmod	7:advmod	_
+2	de	de	ADP	_	_	3	mark	3:mark	_
+3	comer	comer	VERB	_	VerbForm=Inf	1	acl	1:acl:de	SpaceAfter=No
+4	,	,	PUNCT	_	_	1	punct	1:punct	_
+5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	6:det	_
+6	passageiros	passageiro	NOUN	_	Gender=Masc|Number=Plur	7	nsubj	7:nsubj|8:nsubj	_
+7	devem	dever	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	limpar	limpar	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+9	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	10	det	10:det	_
+10	bandeja	bandeja	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	_
+11	com	com	ADP	_	_	12	case	12:case	_
+12	toalhas	toalha	NOUN	_	Gender=Fem|Number=Plur	8	obl	8:obl:com	_
+13	antibacterianas	antibacteriano	ADJ	_	Gender=Fem|Number=Plur	12	amod	12:amod	SpaceAfter=No
+14	,	,	PUNCT	_	_	16	punct	16:punct	_
+15	pois	pois	SCONJ	_	_	16	mark	16:mark	_
+16	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	advcl	7:advcl:pois	_
+17	estar	estar	AUX	_	VerbForm=Inf	18	cop	18:cop	_
+18	cobertas	coberto	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	16	xcomp	16:xcomp	_
+19	com	com	ADP	_	_	20	case	20:case|24:case	_
+20	matéria	matéria	NOUN	_	Gender=Fem|Number=Sing	18	obl	18:obl:com	_
+21	fecal	fecal	ADJ	_	Number=Sing	20	amod	20:amod	_
+22	ou	ou	CCONJ	_	_	24	cc	24:cc	_
+23	outras	outro	DET	_	Gender=Fem|Number=Plur|PronType=Ind	24	det	24:det	_
+24	coisas	coisa	NOUN	_	Gender=Fem|Number=Plur	20	conj	18:obl:com|20:conj:ou	_
+25	desagradáveis	desagradável	ADJ	_	Number=Plur	24	amod	24:amod	SpaceAfter=No
+26	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0027
+# text = "Já vi passageiros usarem as bandejas como suporte para troca de fraldas e, infelizmente, elas são limpas com menos frequência do que você gostaria".
+1	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	Já	já	ADV	_	_	3	advmod	3:advmod	_
+3	vi	ver	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	passageiros	passageiro	NOUN	_	Gender=Masc|Number=Plur	3	obj	3:obj|5:nsubj	_
+5	usarem	usar	VERB	_	Number=Plur|Person=3|VerbForm=Inf	3	xcomp	3:xcomp	_
+6	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	7:det	_
+7	bandejas	bandeja	NOUN	_	Gender=Fem|Number=Plur	5	obj	5:obj	_
+8	como	como	ADP	_	_	9	case	9:case	_
+9	suporte	suporte	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:como	_
+10	para	para	ADP	_	_	11	case	11:case	_
+11	troca	troca	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:para	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	fraldas	fralda	NOUN	_	Gender=Fem|Number=Plur	11	nmod	11:nmod:de	_
+14	e	e	CCONJ	_	_	20	cc	20:cc	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	infelizmente	infelizmente	ADV	_	_	20	advmod	20:advmod	SpaceAfter=No
+17	,	,	PUNCT	_	_	16	punct	16:punct	_
+18	elas	ele	PRON	_	Case=Nom|Gender=Fem|Number=Plur|Person=3|PronType=Prs	20	nsubj:pass	20:nsubj:pass	_
+19	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	aux:pass	20:aux:pass	_
+20	limpas	limpar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	3	conj	3:conj:e	_
+21	com	com	ADP	_	_	23	case	23:case	_
+22	menos	menos	DET	_	PronType=Ind	23	det	23:det	_
+23	frequência	frequência	NOUN	_	Gender=Fem|Number=Sing	20	obl	20:obl:com	_
+24-25	do	_	_	_	_	_	_	_	_
+24	de	de	ADP	_	ExtPos=SCONJ	28	mark	28:mark	_
+25	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	24	fixed	24:fixed	_
+26	que	que	PRON	_	PronType=Rel	24	fixed	24:fixed	_
+27	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	28	nsubj	28:nsubj	_
+28	gostaria	gostar	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	20	advcl	20:advcl:de_o_que	SpaceAfter=No
+29	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+30	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0029
+# text = A bandeja também pode estar manchada de vômito ou outros fluidos corporais de passageiros, que quando saem de férias, exageram na bebida e fazem estrepolias dentro do avião.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	bandeja	bandeja	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj|6:nsubj	_
+3	também	também	ADV	_	_	4	advmod	4:advmod	_
+4	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	estar	estar	AUX	_	VerbForm=Inf	6	cop	6:cop	_
+6	manchada	manchado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	4	xcomp	4:xcomp	_
+7	de	de	ADP	_	_	8	case	8:case|11:case	_
+8	vômito	vômito	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:de	_
+9	ou	ou	CCONJ	_	_	11	cc	11:cc	_
+10	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	11	det	11:det	_
+11	fluidos	fluido	NOUN	_	Gender=Masc|Number=Plur	8	conj	6:obl:de|8:conj:ou	_
+12	corporais	corporal	ADJ	_	Number=Plur	11	amod	11:amod	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	passageiros	passageiro	NOUN	_	Gender=Masc|Number=Plur	11	nmod	11:nmod:de|22:nsubj|27:nsubj	SpaceAfter=No
+15	,	,	PUNCT	_	_	22	punct	22:punct	_
+16	que	que	PRON	_	PronType=Rel	22	nsubj	14:ref	_
+17	quando	quando	SCONJ	_	_	18	mark	18:mark	_
+18	saem	sair	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	acl:relcl	22:acl:relcl	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	férias	féria	NOUN	_	Gender=Fem|Number=Plur	18	obl	18:obl:de	SpaceAfter=No
+21	,	,	PUNCT	_	_	18	punct	18:punct	_
+22	exageram	exagerar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	acl:relcl	14:acl:relcl	_
+23-24	na	_	_	_	_	_	_	_	_
+23	em	em	ADP	_	_	25	case	25:case	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	bebida	bebida	NOUN	_	Gender=Fem|Number=Sing	22	obl	22:obl:em	_
+26	e	e	CCONJ	_	_	27	cc	27:cc	_
+27	fazem	fazer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	conj	14:acl:relcl|22:conj:e	_
+28	estrepolias	estrepolia	NOUN	_	Gender=Fem|Number=Plur	27	obj	27:obj	_
+29	dentro	dentro	ADV	_	_	27	advmod	27:advmod	_
+30-31	do	_	_	_	_	_	_	_	_
+30	de	de	ADP	_	_	32	case	32:case	_
+31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+32	avião	avião	NOUN	_	Gender=Masc|Number=Sing	29	obl	29:obl:de	SpaceAfter=No
+33	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0031
+# text = Deu pra enteder, né?
+1	Deu	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	pra	para	ADP	_	_	3	mark	3:mark	_
+3	enteder	enteder	VERB	_	VerbForm=Inf	1	csubj	1:csubj	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	né	né	INTJ	_	_	1	discourse	1:discourse	SpaceAfter=No
+6	?	?	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0033
+# text = Alison também destacou que pessoas morrem com frequência em pleno voo [...] a maioria de doenças cardíacas.
+1	Alison	Alison	PROPN	_	_	3	nsubj	3:nsubj	_
+2	também	também	ADV	_	_	3	advmod	3:advmod	_
+3	destacou	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	6	mark	6:mark	_
+5	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	6	nsubj	6:nsubj	_
+6	morrem	morrer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	3:ccomp	_
+7	com	com	ADP	_	_	8	case	8:case	_
+8	frequência	frequência	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:com	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	pleno	pleno	ADJ	_	Gender=Masc|Number=Sing	11	amod	11:amod	_
+11	voo	voo	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:em	_
+12	[	[	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+13	.	.	PUNCT	_	_	17	parataxis	17:parataxis	SpaceAfter=No
+14	..	..	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+15	]	]	PUNCT	_	_	13	punct	13:punct	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	maioria	maioria	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	doenças	doença	NOUN	_	Gender=Fem|Number=Plur	17	nmod	17:nmod:de	_
+20	cardíacas	cardíaco	ADJ	_	Gender=Fem|Number=Plur	19	amod	19:amod	SpaceAfter=No
+21	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0035
+# text = "Quando alguém morre durante o voo, o avião vai pousar na cidade mais próxima... algumas vezes, as pessoas morrem de uma maneira tão "quieta" que ninguém percebe [...] até que ela não se levanta do seu assento".
+1	"	"	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+2	Quando	quando	SCONJ	_	_	4	mark	4:mark	_
+3	alguém	alguém	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	4	nsubj	4:nsubj	_
+4	morre	morrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	advcl	12:advcl:quando|24:advcl:quando	_
+5	durante	durante	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	voo	voo	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:durante	SpaceAfter=No
+8	,	,	PUNCT	_	_	4	punct	4:punct	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	avião	avião	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	12:nsubj	_
+11	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux	12:aux	_
+12	pousar	pousar	VERB	_	VerbForm=Inf	0	root	0:root	_
+13-14	na	_	_	_	_	_	_	_	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	cidade	cidade	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl:em	_
+16	mais	mais	ADV	_	_	17	advmod	17:advmod	_
+17	próxima	próximo	ADJ	_	Gender=Fem|Number=Sing	15	amod	15:amod	SpaceAfter=No
+18	...	...	PUNCT	_	_	24	punct	24:punct	_
+19	algumas	algum	DET	_	Gender=Fem|Number=Plur|PronType=Ind	20	det	20:det	_
+20	vezes	vez	NOUN	_	Gender=Fem|Number=Plur	24	obl	24:obl	SpaceAfter=No
+21	,	,	PUNCT	_	_	20	punct	20:punct	_
+22	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	23:det	_
+23	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	24	nsubj	24:nsubj	_
+24	morrem	morrer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	conj	12:conj	_
+25	de	de	ADP	_	_	27	case	27:case	_
+26	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	maneira	maneira	NOUN	_	Gender=Fem|Number=Sing	24	obl	24:obl:de	_
+28	tão	tão	ADV	_	_	30	advmod	30:advmod	_
+29	"	"	PUNCT	_	_	30	punct	30:punct	SpaceAfter=No
+30	quieta	quieto	ADJ	_	Gender=Fem|Number=Sing	27	amod	27:amod	SpaceAfter=No
+31	"	"	PUNCT	_	_	30	punct	30:punct	_
+32	que	que	SCONJ	_	_	34	mark	34:mark	_
+33	ninguém	ninguém	PRON	_	Number=Sing|PronType=Ind	34	nsubj	34:nsubj	_
+34	percebe	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	advcl	24:advcl:que	_
+35	[	[	PUNCT	_	_	36	punct	36:punct	SpaceAfter=No
+36	.	.	PUNCT	_	_	34	punct	34:punct	SpaceAfter=No
+37	..	..	PUNCT	_	_	36	punct	36:punct	SpaceAfter=No
+38	]	]	PUNCT	_	_	36	punct	36:punct	_
+39	até	até	ADP	_	ExtPos=SCONJ	44	mark	44:mark	_
+40	que	que	SCONJ	_	_	39	fixed	39:fixed	_
+41	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	44	nsubj	44:nsubj	_
+42	não	não	ADV	_	_	44	advmod	44:advmod	_
+43	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	44	expl	44:expl	_
+44	levanta	levantar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	advcl	24:advcl:até_que	_
+45-46	do	_	_	_	_	_	_	_	_
+45	de	de	ADP	_	_	48	case	48:case	_
+46	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	48	det	48:det	_
+47	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	48	det	48:det	_
+48	assento	assento	NOUN	_	Gender=Masc|Number=Sing	44	obl	44:obl:de	SpaceAfter=No
+49	"	"	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+50	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0037
+# text = Apesar dos aviões terem manutenções de rotina programadas, alguns problemas podem não ser resolvidos até que eles apresentem algum tipo de risco para os passageiros ou para a tripulação.
+1	Apesar	apesar	ADV	_	_	13	advmod	13:advmod	_
+2-3	dos	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	5	mark	5:mark	_
+3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	4:det	_
+4	aviões	avião	NOUN	_	Gender=Masc|Number=Plur	5	nsubj	5:nsubj	_
+5	terem	ter	VERB	_	Number=Plur|Person=3|VerbForm=Inf	1	acl	1:acl:de	_
+6	manutenções	manutenção	NOUN	_	Gender=Fem|Number=Plur	5	obj	5:obj	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	rotina	rotina	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de	_
+9	programadas	programar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	6	acl	6:acl	SpaceAfter=No
+10	,	,	PUNCT	_	_	1	punct	1:punct	_
+11	alguns	algum	DET	_	Gender=Masc|Number=Plur|PronType=Ind	12	det	12:det	_
+12	problemas	problema	NOUN	_	Gender=Masc|Number=Plur	13	nsubj	13:nsubj|16:nsubj:pass	_
+13	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+14	não	não	ADV	_	_	16	advmod	16:advmod	_
+15	ser	ser	AUX	_	VerbForm=Inf	16	aux:pass	16:aux:pass	_
+16	resolvidos	resolver	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	13	xcomp	13:xcomp	_
+17	até	até	ADP	_	ExtPos=SCONJ	20	mark	20:mark	_
+18	que	que	SCONJ	_	_	17	fixed	17:fixed	_
+19	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	20	nsubj	20:nsubj	_
+20	apresentem	apresentar	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	advcl	16:advcl:até_que	_
+21	algum	algum	DET	_	Gender=Masc|Number=Sing|PronType=Ind	22	det	22:det	_
+22	tipo	tipo	NOUN	_	Gender=Masc|Number=Sing	20	obj	20:obj	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	risco	risco	NOUN	_	Gender=Masc|Number=Sing	22	nmod	22:nmod:de	_
+25	para	para	ADP	_	_	27	case	27:case	_
+26	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	27:det	_
+27	passageiros	passageiro	NOUN	_	Gender=Masc|Number=Plur	22	nmod	22:nmod:para	_
+28	ou	ou	CCONJ	_	_	31	cc	31:cc	_
+29	para	para	ADP	_	_	31	case	31:case	_
+30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+31	tripulação	tripulação	NOUN	_	Gender=Fem|Number=Sing	27	conj	22:nmod:para|27:conj:ou	SpaceAfter=No
+32	.	.	PUNCT	_	_	13	punct	13:punct	_

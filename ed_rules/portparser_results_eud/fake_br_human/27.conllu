@@ -1,0 +1,612 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Temer está articulando a candidatura de Dória para presidente no PMDB.
+1	Temer	Temer	PROPN	_	_	3	nsubj	3:nsubj	_
+2	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux	3:aux	_
+3	articulando	articular	VERB	_	VerbForm=Ger	0	root	0:root	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	candidatura	candidatura	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	Dória	Dória	PROPN	_	_	5	nmod	5:nmod:de	_
+8	para	para	ADP	_	_	9	case	9:case	_
+9	presidente	presidente	NOUN	_	Number=Sing	5	nmod	5:nmod:para	_
+10-11	no	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	PMDB	PMDB	PROPN	_	_	5	nmod	5:nmod:em	SpaceAfter=No
+13	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = O presidente Michel Temer está construindo uma vingança contra os tucanos que votaram pela continuidade das investigações contra ele.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	presidente	presidente	NOUN	_	Number=Sing	6	nsubj	6:nsubj	_
+3	Michel	Michel	PROPN	_	_	2	nmod	2:nmod	_
+4	Temer	Temer	PROPN	_	_	3	flat:name	3:flat:name	_
+5	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	6:aux	_
+6	construindo	construir	VERB	_	VerbForm=Ger	0	root	0:root	_
+7	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	vingança	vingança	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+9	contra	contra	ADP	_	_	11	case	11:case	_
+10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	11:det	_
+11	tucanos	tucano	NOUN	_	Gender=Masc|Number=Plur	8	nmod	8:nmod:contra|13:nsubj	_
+12	que	que	PRON	_	PronType=Rel	13	nsubj	11:ref	_
+13	votaram	votar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	11	acl:relcl	11:acl:relcl	_
+14-15	pela	_	_	_	_	_	_	_	_
+14	por	por	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	continuidade	continuidade	NOUN	_	Gender=Fem|Number=Sing	13	obl	13:obl:por	_
+17-18	das	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	19:det	_
+19	investigações	investigação	NOUN	_	Gender=Fem|Number=Plur	16	nmod	16:nmod:de	_
+20	contra	contra	ADP	_	_	21	case	21:case	_
+21	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	19	nmod	19:nmod:contra	SpaceAfter=No
+22	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0005
+# text = A maldade será tirar o prefeito João Dória do PSDB e levá-lo a concorrer a presidência pelo PMDB.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	maldade	maldade	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj|13:nsubj	_
+3	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	cop	4:cop	_
+4	tirar	tirar	VERB	_	VerbForm=Inf	0	root	0:root	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	prefeito	prefeito	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7	João	João	PROPN	_	_	6	nmod	6:nmod	_
+8	Dória	Dória	PROPN	_	_	7	flat:name	7:flat:name	_
+9-10	do	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	PSDB	PSDB	PROPN	_	_	4	obl	4:obl:de	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13-14	levá-lo	_	_	_	_	_	_	_	_
+13	levar	levar	VERB	_	VerbForm=Inf	4	conj	4:conj:e	_
+14	lo	lo	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	obj	13:obj|16:nsubj	_
+15	a	a	ADP	_	_	16	mark	16:mark	_
+16	concorrer	concorrer	VERB	_	VerbForm=Inf	13	xcomp	13:xcomp	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	presidência	presidência	NOUN	_	Gender=Fem|Number=Sing	16	obl	16:obl	_
+19-20	pelo	_	_	_	_	_	_	_	_
+19	por	por	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	PMDB	PMDB	PROPN	_	_	16	obl	16:obl:por	SpaceAfter=No
+22	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0007
+# text = O presidente Michel Temer (PMDB) e o DEM cresceram os olhos para cima do prefeito de São Paulo, João Doria, e passaram a articular nos bastidores para tirá-lo do PSDB.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	presidente	presidente	NOUN	_	Number=Sing	11	nsubj	11:nsubj|27:nsubj|29:nsubj	_
+3	Michel	Michel	PROPN	_	_	2	nmod	2:nmod	_
+4	Temer	Temer	PROPN	_	_	3	flat:name	3:flat:name	_
+5	(	(	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+6	PMDB	PMDB	PROPN	_	_	2	parataxis	2:parataxis	SpaceAfter=No
+7	)	)	PUNCT	_	_	6	punct	6:punct	_
+8	e	e	CCONJ	_	_	10	cc	10:cc	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	DEM	DEM	PROPN	_	_	2	conj	2:conj:e|11:nsubj|27:nsubj|29:nsubj	_
+11	cresceram	crescer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	13:det	_
+13	olhos	olho	NOUN	_	Gender=Masc|Number=Plur	11	obj	11:obj	_
+14	para	para	ADP	_	ExtPos=ADP	18	case	18:case	_
+15	cima	cima	NOUN	_	Gender=Fem|Number=Sing	14	fixed	14:fixed	_
+16-17	do	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	14	fixed	14:fixed	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	prefeito	prefeito	NOUN	_	Gender=Masc|Number=Sing	29	obl	29:obl:para_cima_de	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	São	São	PROPN	_	_	18	nmod	18:nmod:de	_
+21	Paulo	Paulo	PROPN	_	_	20	flat:name	20:flat:name	SpaceAfter=No
+22	,	,	PUNCT	_	_	23	punct	23:punct	_
+23	João	João	PROPN	_	_	18	appos	18:appos	_
+24	Doria	Doria	PROPN	_	_	23	flat:name	23:flat:name	SpaceAfter=No
+25	,	,	PUNCT	_	_	23	punct	23:punct	_
+26	e	e	CCONJ	_	_	27	cc	27:cc	_
+27	passaram	passar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	11	conj	11:conj:e	_
+28	a	a	ADP	_	_	29	mark	29:mark	_
+29	articular	articular	VERB	_	VerbForm=Inf	27	xcomp	27:xcomp	_
+30-31	nos	_	_	_	_	_	_	_	_
+30	em	em	ADP	_	_	32	case	32:case	_
+31	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	det	32:det	_
+32	bastidores	bastidor	NOUN	_	Gender=Masc|Number=Plur	29	obl	29:obl:em	_
+33	para	para	ADP	_	_	34	mark	34:mark	_
+34-35	tirá-lo	_	_	_	_	_	_	_	_
+34	tirar	tirar	VERB	_	VerbForm=Inf	29	advcl	29:advcl:para	_
+35	lo	lo	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	34	obj	34:obj	_
+36-37	do	_	_	_	_	_	_	_	_
+36	de	de	ADP	_	_	38	case	38:case	_
+37	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	38:det	_
+38	PSDB	PSDB	PROPN	_	_	34	obl	34:obl:de	SpaceAfter=No
+39	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0009
+# text = Ambos tentam seduzir o tucano com a oferta de lançá-lo candidato à Presidência da República nas eleições de 2018.
+1	Ambos	ambos	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	2	nsubj	2:nsubj|3:nsubj	_
+2	tentam	tentar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	seduzir	seduzir	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	tucano	tucano	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	_
+6	com	com	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	oferta	oferta	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:com	_
+9	de	de	ADP	_	_	10	mark	10:mark	_
+10-11	lançá-lo	_	_	_	_	_	_	_	_
+10	lançar	lançar	VERB	_	VerbForm=Inf	8	acl	8:acl:de	_
+11	lo	lo	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	obj	10:obj	_
+12	candidato	candidato	NOUN	_	Gender=Masc|Number=Sing	10	obj	10:obj	_
+13-14	à	_	_	_	_	_	_	_	_
+13	a	a	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	Presidência	Presidência	PROPN	_	_	12	nmod	12:nmod:a	_
+16-17	da	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	República	República	PROPN	_	_	15	flat:name	15:flat:name	_
+19-20	nas	_	_	_	_	_	_	_	_
+19	em	em	ADP	_	_	21	case	21:case	_
+20	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	21	det	21:det	_
+21	eleições	eleição	NOUN	_	Gender=Fem|Number=Plur	10	obl	10:obl:em	_
+22	de	de	ADP	_	_	23	case	23:case	_
+23	2018	2018	NUM	_	NumType=Card	21	nmod	21:nmod:de	SpaceAfter=No
+24	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0011
+# text = Segundo o jornal Estado de S.Paulo, Temer disse ao prefeito que as portas do PMDB estão abertas para que ele dispute o Planalto.
+1	Segundo	segundo	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	jornal	jornal	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:segundo	_
+4	Estado	Estado	PROPN	_	_	3	nmod	3:nmod	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	S.Paulo	S.Paulo	PROPN	_	_	4	flat:name	4:flat:name	SpaceAfter=No
+7	,	,	PUNCT	_	_	3	punct	3:punct	_
+8	Temer	Temer	PROPN	_	_	9	nsubj	9:nsubj	_
+9	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10-11	ao	_	_	_	_	_	_	_	_
+10	a	a	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	prefeito	prefeito	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:a	_
+13	que	que	SCONJ	_	_	20	mark	20:mark	_
+14	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	15:det	_
+15	portas	porta	NOUN	_	Gender=Fem|Number=Plur	20	nsubj	20:nsubj	_
+16-17	do	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	PMDB	PMDB	PROPN	_	_	15	nmod	15:nmod:de	_
+19	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	cop	20:cop	_
+20	abertas	aberto	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	9	ccomp	9:ccomp	_
+21	para	para	ADP	_	ExtPos=SCONJ	24	mark	24:mark	_
+22	que	que	SCONJ	_	_	21	fixed	21:fixed	_
+23	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	24	nsubj	24:nsubj	_
+24	dispute	disputar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	advcl	20:advcl:para_que	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	Planalto	Planalto	PROPN	_	_	24	obj	24:obj	SpaceAfter=No
+27	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0013
+# text = Temer fez o convite durante um encontro com o tucano na Prefeitura de São Paulo, na segunda-feira.
+1	Temer	Temer	PROPN	_	_	2	nsubj	2:nsubj	_
+2	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	convite	convite	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+5	durante	durante	ADP	_	_	7	case	7:case	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	encontro	encontro	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:durante	_
+8	com	com	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	tucano	tucano	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:com	_
+11-12	na	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	Prefeitura	Prefeitura	PROPN	_	_	7	nmod	7:nmod:em	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	São	São	PROPN	_	_	13	flat:name	13:flat:name	_
+16	Paulo	Paulo	PROPN	_	_	13	flat:name	13:flat:name	SpaceAfter=No
+17	,	,	PUNCT	_	_	20	punct	20:punct	_
+18-19	na	_	_	_	_	_	_	_	_
+18	em	em	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	segunda-feira	segunda-feira	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:em	SpaceAfter=No
+21	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0015
+# text = A ideia dos partidos é aproveitar as brigas internas do PSDB para garantir uma candidatura estável a Doria.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	ideia	ideia	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj	_
+3-4	dos	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	5:det	_
+5	partidos	partido	NOUN	_	Gender=Masc|Number=Plur	2	nmod	2:nmod:de	_
+6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+7	aproveitar	aproveitar	VERB	_	VerbForm=Inf	0	root	0:root	_
+8	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	9:det	_
+9	brigas	briga	NOUN	_	Gender=Fem|Number=Plur	7	obj	7:obj	_
+10	internas	interno	ADJ	_	Gender=Fem|Number=Plur	9	amod	9:amod	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	PSDB	PSDB	PROPN	_	_	9	nmod	9:nmod:de	_
+14	para	para	ADP	_	_	15	mark	15:mark	_
+15	garantir	garantir	VERB	_	VerbForm=Inf	7	advcl	7:advcl:para	_
+16	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	candidatura	candidatura	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	_
+18	estável	estável	ADJ	_	Number=Sing	17	amod	17:amod	_
+19	a	a	ADP	_	_	20	case	20:case	_
+20	Doria	Doria	PROPN	_	_	17	nmod	17:nmod:a	SpaceAfter=No
+21	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0017
+# text = No momento, o único político da sigla que admite publicamente a intenção de concorrer à Presidência é o governador paulista, Geraldo Alckmin padrinho político de Doria.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	momento	momento	NOUN	_	Gender=Masc|Number=Sing	23	nmod	23:nmod:em	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+6	único	único	ADJ	_	Gender=Masc|Number=Sing	7	amod	7:amod	_
+7	político	político	NOUN	_	Gender=Masc|Number=Sing	23	nsubj	12:nsubj|23:nsubj	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	sigla	sigla	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:de	_
+11	que	que	PRON	_	PronType=Rel	12	nsubj	7:ref	_
+12	admite	admitir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	7:acl:relcl	_
+13	publicamente	publicamente	ADV	_	_	12	advmod	12:advmod	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	intenção	intenção	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+16	de	de	ADP	_	_	17	mark	17:mark	_
+17	concorrer	concorrer	VERB	_	VerbForm=Inf	15	acl	15:acl:de	_
+18-19	à	_	_	_	_	_	_	_	_
+18	a	a	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	Presidência	Presidência	PROPN	_	_	17	obl	17:obl:a	_
+21	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	cop	23:cop	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	governador	governador	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+24	paulista	paulista	ADJ	_	Number=Sing	23	amod	23:amod	SpaceAfter=No
+25	,	,	PUNCT	_	_	26	punct	26:punct	_
+26	Geraldo	Geraldo	PROPN	_	_	23	appos	23:appos	_
+27	Alckmin	Alckmin	PROPN	_	_	26	flat:name	26:flat:name	_
+28	padrinho	padrinho	NOUN	_	Gender=Masc|Number=Sing	26	appos	26:appos	_
+29	político	político	ADJ	_	Gender=Masc|Number=Sing	28	amod	28:amod	_
+30	de	de	ADP	_	_	31	case	31:case	_
+31	Doria	Doria	PROPN	_	_	28	nmod	28:nmod:de	SpaceAfter=No
+32	.	.	PUNCT	_	_	23	punct	23:punct	_
+
+# sent_id = S0019
+# text = Alckmin está muito decepcionado com a traição de Dória.
+1	Alckmin	Alckmin	PROPN	_	_	4	nsubj	4:nsubj	_
+2	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+3	muito	muito	ADV	_	_	4	advmod	4:advmod	_
+4	decepcionado	decepcionado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+5	com	com	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	traição	traição	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:com	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	Dória	Dória	PROPN	_	_	7	nmod	7:nmod:de	SpaceAfter=No
+10	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0021
+# text = Aécio Neves que é sagaz como uma cobra, já criou uma cilada que será um constrangimento público enorme para João Dória.
+1	Aécio	Aécio	PROPN	_	_	11	nsubj	5:nsubj|11:nsubj	_
+2	Neves	Neves	PROPN	_	_	1	flat:name	1:flat:name	_
+3	que	que	PRON	_	PronType=Rel	5	nsubj	1:ref	_
+4	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+5	sagaz	sagaz	ADJ	_	Number=Sing	1	acl:relcl	1:acl:relcl	_
+6	como	como	ADP	_	_	8	case	8:case	_
+7	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	cobra	cobra	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:como	SpaceAfter=No
+9	,	,	PUNCT	_	_	5	punct	5:punct	_
+10	já	já	ADV	_	_	11	advmod	11:advmod	_
+11	criou	criar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	cilada	cilada	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj|17:nsubj	_
+14	que	que	PRON	_	PronType=Rel	17	nsubj	13:ref	_
+15	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	17	cop	17:cop	_
+16	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	constrangimento	constrangimento	NOUN	_	Gender=Masc|Number=Sing	13	acl:relcl	13:acl:relcl	_
+18	público	público	ADJ	_	Gender=Masc|Number=Sing	17	amod	17:amod	_
+19	enorme	enorme	ADJ	_	Number=Sing	17	amod	17:amod	_
+20	para	para	ADP	_	_	21	case	21:case	_
+21	João	João	PROPN	_	_	17	nmod	17:nmod:para	_
+22	Dória	Dória	PROPN	_	_	21	flat:name	21:flat:name	SpaceAfter=No
+23	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0023
+# text = Ele antecipou o calendário de lançamento da candidatura oficial do candidato do PSDB.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj	_
+2	antecipou	antecipar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	calendário	calendário	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	lançamento	lançamento	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:de	_
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	candidatura	candidatura	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de	_
+10	oficial	oficial	ADJ	_	Number=Sing	9	amod	9:amod	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	candidato	candidato	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:de	_
+14-15	do	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	PSDB	PSDB	PROPN	_	_	13	nmod	13:nmod:de	SpaceAfter=No
+17	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0025
+# text = Será agora em dezembro.
+1	Será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	cop	4:cop	_
+2	agora	agora	ADV	_	_	4	advmod	4:advmod	_
+3	em	em	ADP	_	_	4	case	4:case	_
+4	dezembro	dezembro	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0027
+# text = Desta maneira Dória teria que renunciar com menos de um ano de mandato.
+1-2	Desta	_	_	_	_	_	_	_	_
+1	De	de	ADP	_	_	3	case	3:case	_
+2	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	3:det	_
+3	maneira	maneira	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:de	_
+4	Dória	Dória	PROPN	_	_	3	nsubj	3:nsubj	_
+5	teria	ter	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+6	que	que	ADP	_	_	7	mark	7:mark	_
+7	renunciar	renunciar	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	_
+8	com	com	ADP	_	_	12	case	12:case	_
+9	menos	menos	ADV	_	ExtPos=ADV	11	advmod	11:advmod	_
+10	de	de	ADP	_	_	9	fixed	9:fixed	_
+11	um	um	NUM	_	Gender=Masc|NumType=Card	12	nummod	12:nummod	_
+12	ano	ano	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:com	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	mandato	mandato	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:de	SpaceAfter=No
+15	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0029
+# text = Será uma enorme traição a quem confiou o voto para ele ser prefeito.
+1	Será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	cop	4:cop	_
+2	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+3	enorme	enorme	ADJ	_	Number=Sing	4	amod	4:amod	_
+4	traição	traição	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+5	a	a	ADP	_	_	6	case	6:case	_
+6	quem	quem	PRON	_	PronType=Ind	4	nmod	4:nmod:a	_
+7	confiou	confiar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	acl:relcl	6:acl:relcl	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	voto	voto	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+10	para	para	ADP	_	_	13	mark	13:mark	_
+11	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	nsubj	13:nsubj	_
+12	ser	ser	AUX	_	VerbForm=Inf	13	cop	13:cop	_
+13	prefeito	prefeito	NOUN	_	Gender=Masc|Number=Sing	7	advcl	7:advcl:para	SpaceAfter=No
+14	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0031
+# text = A intenção de Aécio e Alckmin é exatamente fazer João Dória sair do armário.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	intenção	intenção	NOUN	_	Gender=Fem|Number=Sing	9	nsubj:outer	9:nsubj:outer	_
+3	de	de	ADP	_	_	4	case	4:case|6:case	_
+4	Aécio	Aécio	PROPN	_	_	2	nmod	2:nmod:de	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	Alckmin	Alckmin	PROPN	_	_	4	conj	2:nmod:de|4:conj:e	_
+7	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	9:cop	_
+8	exatamente	exatamente	ADV	_	_	9	advmod	9:advmod	_
+9	fazer	fazer	VERB	_	VerbForm=Inf	0	root	0:root	_
+10	João	João	PROPN	_	_	9	obj	9:obj|12:nsubj	_
+11	Dória	Dória	PROPN	_	_	10	flat:name	10:flat:name	_
+12	sair	sair	VERB	_	VerbForm=Inf	9	xcomp	9:xcomp	_
+13-14	do	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	armário	armário	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:de	SpaceAfter=No
+16	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0033
+# text = Ele em entrevistas vive dizendo que não tem interesse em se candidatar a presidente, mas nos bastidores articula com outros partidos e viaja para diversos estados para tornar seu nome visível nacionalmente.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	4:nsubj|20:nsubj|25:nsubj	_
+2	em	em	ADP	_	_	3	case	3:case	_
+3	entrevistas	entrevista	NOUN	_	Gender=Fem|Number=Plur	4	obl	4:obl:em	_
+4	vive	viver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	dizendo	dizer	VERB	_	VerbForm=Ger	4	advcl	4:advcl	_
+6	que	que	SCONJ	_	_	8	mark	8:mark	_
+7	não	não	ADV	_	_	8	advmod	8:advmod	_
+8	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	ccomp	5:ccomp	_
+9	interesse	interesse	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	_
+10	em	em	ADP	_	_	12	mark	12:mark	_
+11	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	12	expl	12:expl	_
+12	candidatar	candidatar	VERB	_	VerbForm=Inf	9	acl	9:acl:em	_
+13	a	a	ADP	_	_	14	case	14:case	_
+14	presidente	presidente	NOUN	_	Number=Sing	12	obl	12:obl:a	SpaceAfter=No
+15	,	,	PUNCT	_	_	20	punct	20:punct	_
+16	mas	mas	CCONJ	_	_	20	cc	20:cc	_
+17-18	nos	_	_	_	_	_	_	_	_
+17	em	em	ADP	_	_	19	case	19:case	_
+18	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	19:det	_
+19	bastidores	bastidor	NOUN	_	Gender=Masc|Number=Plur	20	obl	20:obl:em	_
+20	articula	articular	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	4:conj:mas	_
+21	com	com	ADP	_	_	23	case	23:case	_
+22	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	23	det	23:det	_
+23	partidos	partido	NOUN	_	Gender=Masc|Number=Plur	20	obl	20:obl:com	_
+24	e	e	CCONJ	_	_	25	cc	25:cc	_
+25	viaja	viajar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	conj	20:conj:e	_
+26	para	para	ADP	_	_	28	case	28:case	_
+27	diversos	diversos	DET	_	Gender=Masc|Number=Plur|PronType=Dem	28	det	28:det	_
+28	estados	estado	NOUN	_	Gender=Masc|Number=Plur	25	obl	25:obl:para	_
+29	para	para	ADP	_	_	30	mark	30:mark	_
+30	tornar	tornar	VERB	_	VerbForm=Inf	25	advcl	25:advcl:para	_
+31	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	32	det	32:det	_
+32	nome	nome	NOUN	_	Gender=Masc|Number=Sing	30	obj	30:obj|33:nsubj	_
+33	visível	visível	ADJ	_	Number=Sing	30	xcomp	30:xcomp	_
+34	nacionalmente	nacionalmente	ADV	_	_	30	advmod	30:advmod	SpaceAfter=No
+35	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0035
+# text = Já o governador Geraldo Alckmin, em longa conversa com o senador mineiro, elogiou a iniciativa.
+1	Já	já	CCONJ	_	_	15	cc	15:cc	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	governador	governador	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	15:nsubj	_
+4	Geraldo	Geraldo	PROPN	_	_	3	nmod	3:nmod	_
+5	Alckmin	Alckmin	PROPN	_	_	4	flat:name	4:flat:name	SpaceAfter=No
+6	,	,	PUNCT	_	_	9	punct	9:punct	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	longa	longo	ADJ	_	Gender=Fem|Number=Sing	9	amod	9:amod	_
+9	conversa	conversa	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl:em	_
+10	com	com	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	senador	senador	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:com	_
+13	mineiro	mineiro	ADJ	_	Gender=Masc|Number=Sing	12	amod	12:amod	SpaceAfter=No
+14	,	,	PUNCT	_	_	9	punct	9:punct	_
+15	elogiou	elogiar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	iniciativa	iniciativa	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	SpaceAfter=No
+18	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0037
+# text = Ele esteve na casa de Aécio, na quarta-feira (9), por quase duas horas.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	5:nsubj	_
+2	esteve	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	cop	5:cop	_
+3-4	na	_	_	_	_	_	_	_	_
+3	em	em	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	casa	casa	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	Aécio	Aécio	PROPN	_	_	5	nmod	5:nmod:de	SpaceAfter=No
+8	,	,	PUNCT	_	_	11	punct	11:punct	_
+9-10	na	_	_	_	_	_	_	_	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	quarta-feira	quarta-feira	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:em	_
+12	(	(	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+13	9	9	NUM	_	NumType=Card	11	appos	11:appos	SpaceAfter=No
+14	)	)	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+15	,	,	PUNCT	_	_	11	punct	11:punct	_
+16	por	por	ADP	_	_	19	case	19:case	_
+17	quase	quase	ADV	_	_	18	advmod	18:advmod	_
+18	duas	dois	NUM	_	Gender=Fem|NumType=Card	19	nummod	19:nummod	_
+19	horas	hora	NOUN	_	Gender=Fem|Number=Plur	5	nmod	5:nmod:por	SpaceAfter=No
+20	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0039
+# text = O calendário, como está posto, ajuda a manter sua candidatura como a mais provável no PSDB.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	calendário	calendário	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	8:nsubj|10:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
+4	como	como	SCONJ	_	_	6	mark	6:mark	_
+5	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+6	posto	posto	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	8	advcl	8:advcl:como	SpaceAfter=No
+7	,	,	PUNCT	_	_	6	punct	6:punct	_
+8	ajuda	ajudar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+9	a	a	ADP	_	_	10	mark	10:mark	_
+10	manter	manter	VERB	_	VerbForm=Inf	8	xcomp	8:xcomp	_
+11	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	12	det	12:det	_
+12	candidatura	candidatura	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+13	como	como	ADP	_	_	14	case	14:case	_
+14	a	o	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Dem	10	obl	10:obl:como	_
+15	mais	mais	ADV	_	_	16	advmod	16:advmod	_
+16	provável	provável	ADJ	_	Number=Sing	14	amod	14:amod	_
+17-18	no	_	_	_	_	_	_	_	_
+17	em	em	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	PSDB	PSDB	PROPN	_	_	14	nmod	14:nmod:em	SpaceAfter=No
+20	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0041
+# text = Temer está muito confiante na ida de Dória para o PMDB.
+1	Temer	Temer	PROPN	_	_	4	nsubj	4:nsubj	_
+2	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+3	muito	muito	ADV	_	_	4	advmod	4:advmod	_
+4	confiante	confiante	ADJ	_	Number=Sing	0	root	0:root	_
+5-6	na	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	ida	ida	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:em	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	Dória	Dória	PROPN	_	_	7	nmod	7:nmod:de	_
+10	para	para	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	PMDB	PMDB	PROPN	_	_	7	nmod	7:nmod:para	SpaceAfter=No
+13	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0043
+# text = Os argumentos principais são que o PMDB tem mais tempo de TV e recursos do fundo partidário.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	argumentos	argumento	NOUN	_	Gender=Masc|Number=Plur	8	nsubj:outer	8:nsubj:outer	_
+3	principais	principal	ADJ	_	Number=Plur	2	amod	2:amod	_
+4	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop	_
+5	que	que	SCONJ	_	_	8	mark	8:mark	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	PMDB	PMDB	PROPN	_	_	8	nsubj	8:nsubj	_
+8	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+9	mais	mais	DET	_	PronType=Ind	10	det	10:det	_
+10	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	TV	televisão	NOUN	_	Abbr=Yes|Gender=Fem|Number=Sing	10	nmod	10:nmod:de	_
+13	e	e	CCONJ	_	_	14	cc	14:cc	_
+14	recursos	recurso	NOUN	_	Gender=Masc|Number=Plur	10	conj	8:obj|10:conj:e	_
+15-16	do	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	fundo	fundo	NOUN	_	Gender=Masc|Number=Sing	14	nmod	14:nmod:de	_
+18	partidário	partidário	ADJ	_	Gender=Masc|Number=Sing	17	amod	17:amod	SpaceAfter=No
+19	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0045
+# text = Fora do PSDB João Dória precisa conter as forças de Bolsonaro, Lula e do seu ex-amigo Geraldo Alckmin.
+1	Fora	fora	ADV	_	_	7	advmod	7:advmod	_
+2-3	do	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	PSDB	PSDB	PROPN	_	_	1	obl	1:obl:de	_
+5	João	João	PROPN	_	_	7	nsubj	7:nsubj|8:nsubj	_
+6	Dória	Dória	PROPN	_	_	5	flat:name	5:flat:name	_
+7	precisa	precisar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	conter	conter	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+9	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	10:det	_
+10	forças	força	NOUN	_	Gender=Fem|Number=Plur	8	obj	8:obj	_
+11	de	de	ADP	_	_	12	case	12:case|14:case	_
+12	Bolsonaro	Bolsonaro	PROPN	_	_	10	nmod	10:nmod:de	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	Lula	Lula	PROPN	_	_	12	conj	10:nmod:de|12:conj:e	_
+15	e	e	CCONJ	_	_	19	cc	19:cc	_
+16-17	do	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	19	case	19:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+18	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	19	det	19:det	_
+19	ex-amigo	ex-amigo	NOUN	_	Gender=Masc|Number=Sing	12	conj	10:nmod:de|12:conj:e	_
+20	Geraldo	Geraldo	PROPN	_	_	19	nmod	19:nmod	_
+21	Alckmin	Alckmin	PROPN	_	_	20	flat:name	20:flat:name	SpaceAfter=No
+22	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0047
+# text = Só com uma campanha eleitoral rica de recursos financeiros e tempo será possível desconstruir a imagem de Bolsonaro.
+1	Só	só	ADV	_	_	4	advmod	4:advmod	_
+2	com	com	ADP	_	_	4	case	4:case	_
+3	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	campanha	campanha	NOUN	_	Gender=Fem|Number=Sing	13	obl	13:obl:com	_
+5	eleitoral	eleitoral	ADJ	_	Number=Sing	4	amod	4:amod	_
+6	rica	rico	ADJ	_	Gender=Fem|Number=Sing	4	amod	4:amod	_
+7	de	de	ADP	_	_	8	case	8:case|11:case	_
+8	recursos	recurso	NOUN	_	Gender=Masc|Number=Plur	6	obl	6:obl:de	_
+9	financeiros	financeiro	ADJ	_	Gender=Masc|Number=Plur	8	amod	8:amod	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	8	conj	6:obl:de|8:conj:e	_
+12	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	13	cop	13:cop	_
+13	possível	possível	ADJ	_	Number=Sing	0	root	0:root	_
+14	desconstruir	desconstruir	VERB	_	VerbForm=Inf	13	csubj	13:csubj	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	imagem	imagem	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	Bolsonaro	Bolsonaro	PROPN	_	_	16	nmod	16:nmod:de	SpaceAfter=No
+19	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0049
+# text = Este argumento está levando Dória a ser o mais novo aliado de Temer.
+1	Este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	2:det	_
+2	argumento	argumento	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+3	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	4:aux	_
+4	levando	levar	VERB	_	VerbForm=Ger	0	root	0:root	_
+5	Dória	Dória	PROPN	_	_	4	obj	4:obj|11:nsubj	_
+6	a	a	ADP	_	_	11	mark	11:mark	_
+7	ser	ser	AUX	_	VerbForm=Inf	11	cop	11:cop	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+9	mais	mais	ADV	_	_	10	advmod	10:advmod	_
+10	novo	novo	ADJ	_	Gender=Masc|Number=Sing	11	amod	11:amod	_
+11	aliado	aliado	NOUN	_	Gender=Masc|Number=Sing	4	xcomp	4:xcomp	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	Temer	Temer	PROPN	_	_	11	nmod	11:nmod:de	SpaceAfter=No
+14	.	.	PUNCT	_	_	4	punct	4:punct	_

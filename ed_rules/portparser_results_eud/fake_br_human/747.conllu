@@ -1,0 +1,154 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = O lado de Marcelo Resende que pouca gente conhecia!
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	lado	lado	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root|9:obj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Marcelo	Marcelo	PROPN	_	_	2	nmod	2:nmod:de	_
+5	Resende	Resende	PROPN	_	_	4	flat:name	4:flat:name	_
+6	que	que	PRON	_	PronType=Rel	9	obj	2:ref	_
+7	pouca	pouco	ADJ	_	Gender=Fem|Number=Sing	8	amod	8:amod	_
+8	gente	gente	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	9:nsubj	_
+9	conhecia	conhecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	2	acl:relcl	2:acl:relcl	SpaceAfter=No
+10	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Uma entrevista para derramar lágrimas.
+1	Uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	entrevista	entrevista	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+3	para	para	ADP	_	_	4	mark	4:mark	_
+4	derramar	derramar	VERB	_	VerbForm=Inf	2	acl	2:acl:para	_
+5	lágrimas	lágrima	NOUN	_	Gender=Fem|Number=Plur	4	obj	4:obj	SpaceAfter=No
+6	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = Um dos vídeos mais lindos que já postamos aqui em nosso site.... Costumávamos assistir Marcelo Resende sempre em meio a notícias policiais [...] tiroteios, assaltos, sequestros, enfim, era o lado profissional do jornalista.
+1	Um	um	NUM	_	Gender=Masc|NumType=Card	16	dislocated	16:dislocated	_
+2-3	dos	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	4:det	_
+4	vídeos	vídeo	NOUN	_	Gender=Masc|Number=Plur	1	nmod	1:nmod:de|9:obj	_
+5	mais	mais	ADV	_	_	6	advmod	6:advmod	_
+6	lindos	lindo	ADJ	_	Gender=Masc|Number=Plur	4	amod	4:amod	_
+7	que	que	PRON	_	PronType=Rel	9	obj	4:ref	_
+8	já	já	ADV	_	_	9	advmod	9:advmod	_
+9	postamos	postar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	4	acl:relcl	4:acl:relcl	_
+10	aqui	aqui	ADV	_	_	9	advmod	9:advmod	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	nosso	nosso	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	13	det	13:det	_
+13	site	site	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:em	SpaceAfter=No
+14	...	...	PUNCT	_	_	16	punct	16:punct	SpaceAfter=No
+15	.	.	PUNCT	_	_	1	punct	1:punct	_
+16	Costumávamos	cosar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+17	assistir	assistir	VERB	_	VerbForm=Inf	16	xcomp	16:xcomp	_
+18	Marcelo	Marcelo	PROPN	_	_	17	obj	17:obj	_
+19	Resende	Resende	PROPN	_	_	18	flat:name	18:flat:name	_
+20	sempre	sempre	ADV	_	_	17	advmod	17:advmod	_
+21	em	em	ADP	_	ExtPos=ADP	24	case	24:case	_
+22	meio	meio	NOUN	_	Gender=Masc|Number=Sing	21	fixed	21:fixed	_
+23	a	a	ADP	_	_	21	fixed	21:fixed	_
+24	notícias	notícia	NOUN	_	Gender=Fem|Number=Plur	17	obl	17:obl:em_meio_a	_
+25	policiais	policial	ADJ	_	Number=Plur	24	amod	24:amod	_
+26	[	[	PUNCT	_	_	30	punct	30:punct	SpaceAfter=No
+27	.	.	PUNCT	_	_	30	parataxis	30:parataxis|32:parataxis|34:parataxis	SpaceAfter=No
+28	..	..	PUNCT	_	_	27	parataxis	27:parataxis	SpaceAfter=No
+29	]	]	PUNCT	_	_	27	punct	27:punct	_
+30	tiroteios	tiroteio	NOUN	_	Gender=Masc|Number=Plur	24	parataxis	24:parataxis	SpaceAfter=No
+31	,	,	PUNCT	_	_	32	punct	32:punct	_
+32	assaltos	assalto	NOUN	_	Gender=Masc|Number=Plur	30	conj	24:parataxis|30:conj	SpaceAfter=No
+33	,	,	PUNCT	_	_	34	punct	34:punct	_
+34	sequestros	sequestro	NOUN	_	Gender=Masc|Number=Plur	30	conj	24:parataxis|30:conj	SpaceAfter=No
+35	,	,	PUNCT	_	_	36	punct	36:punct	_
+36	enfim	enfim	ADV	_	_	40	advmod	40:advmod	SpaceAfter=No
+37	,	,	PUNCT	_	_	36	punct	36:punct	_
+38	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	40	cop	40:cop	_
+39	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	40:det	_
+40	lado	lado	NOUN	_	Gender=Masc|Number=Sing	1	dep	1:dep	_
+41	profissional	profissional	ADJ	_	Number=Sing	40	amod	40:amod	_
+42-43	do	_	_	_	_	_	_	_	_
+42	de	de	ADP	_	_	44	case	44:case	_
+43	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	44:det	_
+44	jornalista	jornalista	NOUN	_	Number=Sing	40	nmod	40:nmod:de	SpaceAfter=No
+45	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0007
+# text = Marcelo tinha um outro lado que era pouco conhecido pela mídia e pelos brasileiros em geral.
+1	Marcelo	Marcelo	PROPN	_	_	2	nsubj	2:nsubj	_
+2	tinha	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+4	outro	outro	DET	_	Gender=Masc|Number=Sing|PronType=Ind	5	det	5:det	_
+5	lado	lado	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj|9:nsubj:pass	_
+6	que	que	PRON	_	PronType=Rel	9	nsubj:pass	5:ref	_
+7	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	aux:pass	9:aux:pass	_
+8	pouco	pouco	ADV	_	_	9	advmod	9:advmod	_
+9	conhecido	conhecer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	5	acl:relcl	5:acl:relcl	_
+10-11	pela	_	_	_	_	_	_	_	_
+10	por	por	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	mídia	mídia	NOUN	_	Gender=Fem|Number=Sing	9	obl:agent	9:obl:agent	_
+13	e	e	CCONJ	_	_	16	cc	16:cc	_
+14-15	pelos	_	_	_	_	_	_	_	_
+14	por	por	ADP	_	_	16	case	16:case	_
+15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	16:det	_
+16	brasileiros	brasileiro	NOUN	_	Gender=Masc|Number=Plur	12	conj	9:obl:agent|12:conj:e	_
+17	em	em	ADP	_	_	18	case	18:case	_
+18	geral	geral	NOUN	_	Number=Sing	16	nmod	16:nmod:em	SpaceAfter=No
+19	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0009
+# text = Durante uma entrevista feita na piscina, com o amigo Geraldo Luis, o jornalista fala sobre a rapidez com que a vida passa e descreve tudo aquilo que Deus lhe deu.
+1	Durante	durante	ADP	_	_	3	case	3:case	_
+2	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	entrevista	entrevista	NOUN	_	Gender=Fem|Number=Sing	17	obl	17:obl:durante	_
+4	feita	fazer	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	3	acl	3:acl	_
+5-6	na	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	piscina	piscina	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:em	SpaceAfter=No
+8	,	,	PUNCT	_	_	11	punct	11:punct	_
+9	com	com	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	amigo	amigo	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:com	_
+12	Geraldo	Geraldo	PROPN	_	_	11	nmod	11:nmod	_
+13	Luis	Luis	PROPN	_	_	12	flat:name	12:flat:name	SpaceAfter=No
+14	,	,	PUNCT	_	_	3	punct	3:punct	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	jornalista	jornalista	NOUN	_	Number=Sing	17	nsubj	17:nsubj|27:nsubj	_
+17	fala	falar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+18	sobre	sobre	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	rapidez	rapidez	NOUN	_	Gender=Fem|Number=Sing	17	obl	17:obl:sobre|25:obl:com	_
+21	com	com	ADP	_	_	22	case	22:case	_
+22	que	que	PRON	_	PronType=Rel	25	obl	20:ref	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	vida	vida	NOUN	_	Gender=Fem|Number=Sing	25	nsubj	25:nsubj	_
+25	passa	passar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	acl:relcl	20:acl:relcl	_
+26	e	e	CCONJ	_	_	27	cc	27:cc	_
+27	descreve	descrever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	conj	17:conj:e	_
+28	tudo	tudo	PRON	_	PronType=Ind	27	obj	27:obj|33:obj	_
+29	aquilo	aquilo	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	28	obj	28:obj	_
+30	que	que	PRON	_	PronType=Rel	33	obj	28:ref	_
+31	Deus	Deus	PROPN	_	_	33	nsubj	33:nsubj	_
+32	lhe	lhe	PRON	_	Case=Dat|Number=Sing|Person=3|PronType=Prs	33	iobj	33:iobj	_
+33	deu	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	28	acl:relcl	28:acl:relcl	SpaceAfter=No
+34	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0011
+# text = Uma lição de humildade, de fé, de sabedoria e de gratidão com a vida!
+1	Uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	lição	lição	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	humildade	humildade	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	SpaceAfter=No
+5	,	,	PUNCT	_	_	7	punct	7:punct	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	fé	fé	NOUN	_	Gender=Fem|Number=Sing	4	conj	2:nmod:de|4:conj:e	SpaceAfter=No
+8	,	,	PUNCT	_	_	10	punct	10:punct	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	sabedoria	sabedoria	NOUN	_	Gender=Fem|Number=Sing	4	conj	2:nmod:de|4:conj:e	_
+11	e	e	CCONJ	_	_	13	cc	13:cc	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	gratidão	gratidão	NOUN	_	Gender=Fem|Number=Sing	4	conj	2:nmod:de|4:conj:e	_
+14	com	com	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	vida	vida	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:com	SpaceAfter=No
+17	!	!	PUNCT	_	_	2	punct	2:punct	_

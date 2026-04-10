@@ -1,0 +1,101 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = cesare battisti recebia pensao de r$ 31 mil no brasil brasil o paraiso para os terroristas.
+1	cesare	cesare	PROPN	_	_	3	nsubj	3:nsubj	_
+2	battisti	battisti	PROPN	_	_	1	flat:name	1:flat:name	_
+3	recebia	receber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+4	pensao	pensao	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	r$	r$	SYM	_	_	4	nmod	4:nmod:de	_
+7	31	31	NUM	_	NumType=Card	6	nummod	6:nummod	_
+8	mil	mil	NUM	_	NumType=Card	7	flat	7:flat	_
+9-10	no	_	_	_	_	_	_	_	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	brasil	brasil	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:em	_
+12	brasil	brasil	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	paraiso	paraiso	NOUN	_	Gender=Masc|Number=Sing	11	appos	11:appos	_
+15	para	para	ADP	_	_	17	case	17:case	_
+16	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	17:det	_
+17	terroristas	terrorista	NOUN	_	Number=Plur	14	nmod	14:nmod:para	SpaceAfter=No
+18	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = aos desavisados o sr. cesare batista recebe mensalmente uma pensao de perseguido politico concedido pela comissao da verdade, ou seja, ele, por ser militante de 70 na italia recebeu uma pensao no brasil.
+1-2	aos	_	_	_	_	_	_	_	_
+1	a	a	ADP	_	_	3	case	3:case	_
+2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	3:det	_
+3	desavisados	desavisado	NOUN	_	Gender=Masc|Number=Plur	8	obl	8:obl:a	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	sr.	senhor	NOUN	_	Abbr=Yes|Gender=Masc|Number=Sing	8	nsubj	8:nsubj	_
+6	cesare	cesare	PROPN	_	_	5	nmod	5:nmod	_
+7	batista	batista	NOUN	_	Number=Sing	6	flat:name	6:flat:name	_
+8	recebe	receber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+9	mensalmente	mensalmente	ADV	_	_	8	advmod	8:advmod	_
+10	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	pensao	pensao	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	perseguido	perseguido	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:de	_
+14	politico	politico	ADJ	_	Gender=Masc|Number=Sing	13	amod	13:amod	_
+15	concedido	conceder	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	13	acl	13:acl	_
+16	pela	o	ADP	_	_	17	case	17:case	_
+17	comissao	comissao	NOUN	_	Gender=Fem|Number=Sing	15	obl:agent	15:obl:agent	_
+18-19	da	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	verdade	verdade	NOUN	_	Gender=Fem|Number=Sing	17	nmod	17:nmod:de	SpaceAfter=No
+21	,	,	PUNCT	_	_	22	punct	22:punct	_
+22	ou	ou	CCONJ	_	ExtPos=CCONJ	35	cc	35:cc	_
+23	seja	ser	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	fixed	22:fixed	SpaceAfter=No
+24	,	,	PUNCT	_	_	22	punct	22:punct	_
+25	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	35	nsubj	35:nsubj	SpaceAfter=No
+26	,	,	PUNCT	_	_	29	punct	29:punct	_
+27	por	por	ADP	_	_	29	mark	29:mark	_
+28	ser	ser	AUX	_	VerbForm=Inf	29	cop	29:cop	_
+29	militante	militante	NOUN	_	Number=Sing	35	advcl	35:advcl:por	_
+30	de	de	ADP	_	_	31	case	31:case	_
+31	70	70	NUM	_	NumType=Card	29	nmod	29:nmod:de	_
+32-33	na	_	_	_	_	_	_	_	_
+32	em	em	ADP	_	_	34	case	34:case	_
+33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	34:det	_
+34	italia	italia	NOUN	_	Gender=Fem|Number=Sing	29	nmod	29:nmod:em	_
+35	recebeu	receber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	conj	13:acl|15:conj:ou_ser	_
+36	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	37	det	37:det	_
+37	pensao	pensao	NOUN	_	Gender=Fem|Number=Sing	35	obj	35:obj	_
+38-39	no	_	_	_	_	_	_	_	_
+38	em	em	ADP	_	_	40	case	40:case	_
+39	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	40:det	_
+40	brasil	brasil	NOUN	_	Gender=Masc|Number=Sing	35	obl	35:obl:em	SpaceAfter=No
+41	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0005
+# text = e para acabar !
+1	e	e	CCONJ	_	_	3	cc	3:cc	_
+2	para	para	ADP	_	_	3	mark	3:mark	_
+3	acabar	acabar	VERB	_	VerbForm=Inf	0	root	0:root	_
+4	!	!	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = r$ 31.845,00 trinta e hum mil reais.
+1	r$	r$	SYM	_	_	0	root	0:root	_
+2	31.845,00	31.845,00	NUM	_	NumType=Card	7	nummod	7:nummod	_
+3	trinta	trinta	NUM	_	NumType=Card	7	nummod	7:nummod	_
+4	e	e	CCONJ	_	_	5	cc	5:cc	_
+5	hum	hum	NUM	_	Gender=Masc|NumType=Card	3	conj	3:conj:e|7:nummod	_
+6	mil	mil	NUM	_	NumType=Card	3	flat	3:flat|5:flat	_
+7	reais	real	NOUN	_	Gender=Masc|Number=Plur	1	nsubj	1:nsubj	SpaceAfter=No
+8	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0009
+# text = enquanto isto um soldado de 64 recebe r$ 2.876,00 .
+1	enquanto	enquanto	ADV	_	ExtPos=ADV	7	advmod	7:advmod	_
+2	isto	isto	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	fixed	1:fixed	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	soldado	soldado	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	64	64	NUM	_	NumType=Card	4	nmod	4:nmod:de	_
+7	recebe	receber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	r$	r$	SYM	_	_	7	obj	7:obj	_
+9	2.876,00	2.876,00	NUM	_	NumType=Card	8	nummod	8:nummod	_
+10	.	.	PUNCT	_	_	7	punct	7:punct	_

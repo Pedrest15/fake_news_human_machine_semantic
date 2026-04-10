@@ -1,0 +1,61 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = A jovem jornalista que escreveu sobre Dilma e Cunha e ganhou 100 mil likes no facebook.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+2	jovem	jovem	ADJ	_	Number=Sing	3	amod	3:amod	_
+3	jornalista	jornalista	NOUN	_	Number=Sing	0	root	0:root|5:nsubj|11:nsubj	_
+4	que	que	PRON	_	PronType=Rel	5	nsubj	3:ref	_
+5	escreveu	escrever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_
+6	sobre	sobre	ADP	_	_	7	case	7:case|9:case	_
+7	Dilma	Dilma	PROPN	_	_	5	obl	5:obl:sobre	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	Cunha	Cunha	PROPN	_	_	7	conj	5:obl:sobre|7:conj:e	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	ganhou	ganhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	conj	3:acl:relcl|5:conj:e	_
+12	100	100	NUM	_	NumType=Card	14	nummod	14:nummod	_
+13	mil	mil	NUM	_	NumType=Card	12	flat	12:flat	_
+14	likes	like	NOUN	_	Foreign=Yes|Gender=Masc|Number=Plur	11	obj	11:obj	_
+15-16	no	_	_	_	_	_	_	_	_
+15	em	em	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	facebook	facebook	X	_	Foreign=Yes	11	obl	11:obl:em	SpaceAfter=No
+18	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = Priscila Chammas é uma jornalista que escreveu um desabafo nas redes sociais e calou a "petralhada".
+1	Priscila	Priscila	PROPN	_	_	5	nsubj	5:nsubj	_
+2	Chammas	Chammas	PROPN	_	_	1	flat:name	1:flat:name	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+4	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	jornalista	jornalista	NOUN	_	Number=Sing	0	root	0:root|7:nsubj|15:nsubj	_
+6	que	que	PRON	_	PronType=Rel	7	nsubj	5:ref	_
+7	escreveu	escrever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	desabafo	desabafo	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+10-11	nas	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	12:det	_
+12	redes	rede	NOUN	_	Gender=Fem|Number=Plur	7	obl	7:obl:em	_
+13	sociais	social	ADJ	_	Number=Plur	12	amod	12:amod	_
+14	e	e	CCONJ	_	_	15	cc	15:cc	_
+15	calou	calar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	conj	5:acl:relcl|7:conj:e	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+17	"	"	PUNCT	_	_	18	punct	18:punct	SpaceAfter=No
+18	petralhada	petralhada	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	SpaceAfter=No
+19	"	"	PUNCT	_	_	18	punct	18:punct	SpaceAfter=No
+20	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0005
+# text = Abaixo a postagem que já recebeu mais de 100 mil curtidas:
+1	Abaixo	abaixo	ADV	_	_	3	advmod	3:advmod	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	postagem	postagem	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root|6:nsubj	_
+4	que	que	PRON	_	PronType=Rel	6	nsubj	3:ref	_
+5	já	já	ADV	_	_	6	advmod	6:advmod	_
+6	recebeu	receber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_
+7	mais	mais	ADV	_	ExtPos=ADV	9	advmod	9:advmod	_
+8	de	de	ADP	_	_	7	fixed	7:fixed	_
+9	100	100	NUM	_	NumType=Card	11	nummod	11:nummod	_
+10	mil	mil	NUM	_	NumType=Card	9	flat	9:flat	_
+11	curtidas	curtida	NOUN	_	Gender=Fem|Number=Plur	6	obj	6:obj	SpaceAfter=No
+12	:	:	PUNCT	_	_	3	punct	3:punct	_

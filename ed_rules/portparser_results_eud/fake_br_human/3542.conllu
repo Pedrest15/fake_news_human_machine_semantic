@@ -1,0 +1,264 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Mais um crime!
+1	Mais	mais	ADV	_	_	2	advmod	2:advmod	_
+2	um	um	NUM	_	Gender=Masc|NumType=Card	3	nummod	3:nummod	_
+3	crime	crime	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+4	!	!	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = Vale do Rio Doce entregou água com querosene para consumo da população de Valadares.
+1	Vale	Vale	PROPN	_	_	6	nsubj	6:nsubj	_
+2-3	do	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	Rio	Rio	PROPN	_	_	1	flat:name	1:flat:name	_
+5	Doce	Doce	PROPN	_	_	1	flat:name	1:flat:name	_
+6	entregou	entregar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	água	água	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+8	com	com	ADP	_	_	9	case	9:case	_
+9	querosene	querosene	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:com	_
+10	para	para	ADP	_	_	11	case	11:case	_
+11	consumo	consumo	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:para	_
+12-13	da	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	população	população	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:de	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	Valadares	Valadares	PROPN	_	_	14	nmod	14:nmod:de	SpaceAfter=No
+17	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0005
+# text = A água seria distribuída entre os moradores da cidade, que estão sem abastecimento por causa da enxurrada de lama que atingiu o Rio Doce.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	água	água	NOUN	_	Gender=Fem|Number=Sing	4	nsubj:pass	4:nsubj:pass	_
+3	seria	ser	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	distribuída	distribuír	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5	entre	entre	ADP	_	_	7	case	7:case	_
+6	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	7:det	_
+7	moradores	morador	NOUN	_	Gender=Masc|Number=Plur	4	obl	4:obl:entre|15:nsubj	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	cidade	cidade	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:de	SpaceAfter=No
+11	,	,	PUNCT	_	_	15	punct	15:punct	_
+12	que	que	PRON	_	PronType=Rel	15	nsubj	7:ref	_
+13	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	cop	15:cop	_
+14	sem	sem	ADP	_	_	15	case	15:case	_
+15	abastecimento	abastecimento	NOUN	_	Gender=Masc|Number=Sing	7	acl:relcl	7:acl:relcl	_
+16	por	por	ADP	_	_	17	case	17:case	_
+17	causa	causa	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:por	_
+18-19	da	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	enxurrada	enxurrada	NOUN	_	Gender=Fem|Number=Sing	17	nmod	17:nmod:de|24:nsubj	_
+21	de	de	ADP	_	_	22	case	22:case	_
+22	lama	lama	NOUN	_	Number=Sing	20	nmod	20:nmod:de	_
+23	que	que	PRON	_	PronType=Rel	24	nsubj	20:ref	_
+24	atingiu	atingir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	acl:relcl	20:acl:relcl	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	Rio	Rio	PROPN	_	_	24	obj	24:obj	_
+27	Doce	Doce	PROPN	_	_	26	flat:name	26:flat:name	SpaceAfter=No
+28	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0007
+# text = O responsável pelas Relações Institucionais da Vale afirmou que a empresa tinha entregue 500 mil litros de água mineral para o município.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	responsável	responsável	NOUN	_	Number=Sing	10	nsubj	10:nsubj	_
+3-4	pelas	_	_	_	_	_	_	_	_
+3	por	por	ADP	_	_	5	case	5:case	_
+4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	5:det	_
+5	Relações	Relações	PROPN	_	_	2	nmod	2:nmod:por	_
+6	Institucionais	Institucionais	PROPN	_	_	5	flat:name	5:flat:name	_
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	Vale	Vale	PROPN	_	_	5	nmod	5:nmod:de	_
+10	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+11	que	que	SCONJ	_	_	15	mark	15:mark	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	empresa	empresa	NOUN	_	Gender=Fem|Number=Sing	15	nsubj	15:nsubj	_
+14	tinha	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	15	aux	15:aux	_
+15	entregue	entregar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	10	ccomp	10:ccomp	_
+16	500	500	NUM	_	NumType=Card	18	nummod	18:nummod	_
+17	mil	mil	NUM	_	NumType=Card	16	flat	16:flat	_
+18	litros	litro	NOUN	_	Gender=Masc|Number=Plur	15	obj	15:obj	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	água	água	NOUN	_	Gender=Fem|Number=Sing	18	nmod	18:nmod:de	_
+21	mineral	mineral	ADJ	_	Number=Sing	20	amod	20:amod	_
+22	para	para	ADP	_	_	24	case	24:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	município	município	NOUN	_	Gender=Masc|Number=Sing	15	obl	15:obl:para	SpaceAfter=No
+25	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0009
+# text = Já a assessoria de comunicação da prefeitura informou que apenas quatro vagões com capacidade para 60 mil litros cada um foram entregues totalizando 240 mil litros.
+1	Já	já	CCONJ	_	_	9	cc	9:cc	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	assessoria	assessoria	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	9:nsubj	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	comunicação	comunicação	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:de	_
+6-7	da	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	prefeitura	prefeitura	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	_
+9	informou	informar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	que	que	SCONJ	_	_	23	mark	23:mark	_
+11	apenas	apenas	ADV	_	_	13	advmod	13:advmod	_
+12	quatro	quatro	NUM	_	NumType=Card	13	nummod	13:nummod	_
+13	vagões	vagão	NOUN	_	Gender=Masc|Number=Plur	23	nsubj:pass	23:nsubj:pass	_
+14	com	com	ADP	_	_	15	case	15:case	_
+15	capacidade	capacidade	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:com	_
+16	para	para	ADP	_	_	19	case	19:case	_
+17	60	60	NUM	_	NumType=Card	19	nummod	19:nummod	_
+18	mil	mil	NUM	_	NumType=Card	17	flat	17:flat	_
+19	litros	litro	NOUN	_	Gender=Masc|Number=Plur	15	nmod	15:nmod:para	_
+20	cada	cada	DET	_	Number=Sing|PronType=Ind	21	det	21:det	_
+21	um	um	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	13	nmod	13:nmod	_
+22	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	23	aux:pass	23:aux:pass	_
+23	entregues	entregar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	9	ccomp	9:ccomp	_
+24	totalizando	totalizar	VERB	_	VerbForm=Ger	23	advcl	23:advcl	_
+25	240	240	NUM	_	NumType=Card	27	nummod	27:nummod	_
+26	mil	mil	NUM	_	NumType=Card	25	flat	25:flat	_
+27	litros	litro	NOUN	_	Gender=Masc|Number=Plur	24	obj	24:obj	SpaceAfter=No
+28	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0011
+# text = O Serviço Autônomo de Água e Esgoto (Saae) de Valadares fez a análise do carregamento entregue e constatou o alto teor de querosene.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Serviço	Serviço	PROPN	_	_	13	nsubj	13:nsubj|21:nsubj	_
+3	Autônomo	Autônomo	PROPN	_	_	2	flat:name	2:flat:name	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	Água	Água	PROPN	_	_	2	flat:name	2:flat:name	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	Esgoto	Esgoto	PROPN	_	_	2	flat:name	2:flat:name	_
+8	(	(	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+9	Saae	Saae	PROPN	_	_	2	appos	2:appos	SpaceAfter=No
+10	)	)	PUNCT	_	_	9	punct	9:punct	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	Valadares	Valadares	PROPN	_	_	2	nmod	2:nmod:de	_
+13	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	análise	análise	NOUN	_	Gender=Fem|Number=Sing	13	obj	13:obj	_
+16-17	do	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	carregamento	carregamento	NOUN	_	Gender=Masc|Number=Sing	15	nmod	15:nmod:de	_
+19	entregue	entregar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	18	acl	18:acl	_
+20	e	e	CCONJ	_	_	21	cc	21:cc	_
+21	constatou	constatar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	conj	13:conj:e	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+23	alto	alto	ADJ	_	Gender=Masc|Number=Sing	24	amod	24:amod	_
+24	teor	teor	NOUN	_	Gender=Masc|Number=Sing	21	obj	21:obj	_
+25	de	de	ADP	_	_	26	case	26:case	_
+26	querosene	querosene	NOUN	_	Gender=Masc|Number=Sing	24	nmod	24:nmod:de	SpaceAfter=No
+27	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0013
+# text = Em nota, a prefeitura disse que a própria Vale admitiu que os quatro primeiros vagões foram enviados por equívoco e que novos vagões chegam ainda esta noite.
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	nota	nota	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:em	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	prefeitura	prefeitura	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	6:nsubj	_
+6	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	que	que	SCONJ	_	_	11	mark	11:mark	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+9	própria	próprio	DET	_	Gender=Fem|Number=Sing|PronType=Dem	10	det	10:det	_
+10	Vale	Vale	PROPN	_	_	11	nsubj	11:nsubj	_
+11	admitiu	admitir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	ccomp	6:ccomp	_
+12	que	que	SCONJ	_	_	18	mark	18:mark	_
+13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	16:det	_
+14	quatro	quatro	NUM	_	NumType=Card	16	nummod	16:nummod	_
+15	primeiros	primeiro	ADJ	_	Gender=Masc|Number=Plur|NumType=Ord	16	amod	16:amod	_
+16	vagões	vagão	NOUN	_	Gender=Masc|Number=Plur	18	nsubj:pass	18:nsubj:pass	_
+17	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	18	aux:pass	18:aux:pass	_
+18	enviados	enviar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	11	ccomp	11:ccomp	_
+19	por	por	ADP	_	_	20	case	20:case	_
+20	equívoco	equívoco	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:por	_
+21	e	e	CCONJ	_	_	25	cc	25:cc	_
+22	que	que	SCONJ	_	_	25	mark	25:mark	_
+23	novos	novo	ADJ	_	Gender=Masc|Number=Plur	24	amod	24:amod	_
+24	vagões	vagão	NOUN	_	Gender=Masc|Number=Plur	25	nsubj	25:nsubj	_
+25	chegam	chegar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	conj	11:ccomp|18:conj:e	_
+26	ainda	ainda	ADV	_	_	28	advmod	28:advmod	_
+27	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	28	det	28:det	_
+28	noite	noite	NOUN	_	Gender=Fem|Number=Sing	25	obl	25:obl	SpaceAfter=No
+29	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0015
+# text = O município precisa de 15 milhões de litros de água por dia para que cada família possa usar 50 litros.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	município	município	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	precisa	precisar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	15	15	NUM	_	NumType=Card	6	nummod	6:nummod	_
+6	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	3	obl	3:obl:de	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	litros	litro	NOUN	_	Gender=Masc|Number=Plur	6	nmod	6:nmod:de	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	água	água	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	_
+11	por	por	ADP	_	_	12	case	12:case	_
+12	dia	dia	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:por	_
+13	para	para	ADP	_	ExtPos=SCONJ	17	mark	17:mark	_
+14	que	que	SCONJ	_	_	13	fixed	13:fixed	_
+15	cada	cada	DET	_	Number=Sing|PronType=Ind	16	det	16:det	_
+16	família	família	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	17:nsubj|18:nsubj	_
+17	possa	poder	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	advcl	3:advcl:para_que	_
+18	usar	usar	VERB	_	VerbForm=Inf	17	xcomp	17:xcomp	_
+19	50	50	NUM	_	NumType=Card	20	nummod	20:nummod	_
+20	litros	litro	NOUN	_	Gender=Masc|Number=Plur	18	obj	18:obj	SpaceAfter=No
+21	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0017
+# text = Na página da Vale, a empresa divulgou uma nota na noite de sexta-feira afirmando que coletou a água no local indicado pela Copasa, em Ipatinga, e a transportou em vagões-tanque usados para combates a incêndios florestais.
+1-2	Na	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	página	página	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:em	_
+4-5	da	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	Vale	Vale	PROPN	_	_	3	nmod	3:nmod:de	SpaceAfter=No
+7	,	,	PUNCT	_	_	3	punct	3:punct	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	empresa	empresa	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	10:nsubj	_
+10	divulgou	divulgar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+11	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	nota	nota	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+13-14	na	_	_	_	_	_	_	_	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	noite	noite	NOUN	_	Gender=Fem|Number=Sing	12	nmod	12:nmod:em	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	sexta-feira	sexta-feira	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:de	_
+18	afirmando	afirmar	VERB	_	VerbForm=Ger	15	acl	15:acl	_
+19	que	que	SCONJ	_	_	20	mark	20:mark|36:mark	_
+20	coletou	coletar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	ccomp	18:ccomp	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	água	água	NOUN	_	Gender=Fem|Number=Sing	20	obj	20:obj	_
+23-24	no	_	_	_	_	_	_	_	_
+23	em	em	ADP	_	_	25	case	25:case	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	local	local	NOUN	_	Number=Sing	20	obl	20:obl:em	_
+26	indicado	indicar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	25	acl	25:acl	_
+27-28	pela	_	_	_	_	_	_	_	_
+27	por	por	ADP	_	_	29	case	29:case	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	Copasa	Copasa	PROPN	_	_	26	obl:agent	26:obl:agent	SpaceAfter=No
+30	,	,	PUNCT	_	_	32	punct	32:punct	_
+31	em	em	ADP	_	_	32	case	32:case	_
+32	Ipatinga	Ipatinga	PROPN	_	_	20	obl	20:obl:em	SpaceAfter=No
+33	,	,	PUNCT	_	_	32	punct	32:punct	_
+34	e	e	CCONJ	_	_	36	cc	36:cc	_
+35	a	o	PRON	_	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	36	obj	36:obj	_
+36	transportou	transportar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	conj	18:ccomp|20:conj:e	_
+37	em	em	ADP	_	_	38	case	38:case	_
+38	vagões-tanque	vagões-tanque	NOUN	_	Gender=Masc|Number=Sing	36	obl	36:obl:em	_
+39	usados	usar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	38	acl	38:acl	_
+40	para	para	ADP	_	_	41	case	41:case	_
+41	combates	combate	NOUN	_	Gender=Masc|Number=Plur	39	obl	39:obl:para	_
+42	a	a	ADP	_	_	43	case	43:case	_
+43	incêndios	incêndio	NOUN	_	Gender=Masc|Number=Plur	41	nmod	41:nmod:a	_
+44	florestais	florestal	ADJ	_	Number=Plur	43	amod	43:amod	SpaceAfter=No
+45	.	.	PUNCT	_	_	10	punct	10:punct	_

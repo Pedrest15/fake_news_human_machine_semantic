@@ -1,0 +1,561 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = 5 Seconds of Summer anuncia revolução musical e parceria bombástica com Lady Gaga no Rock in Rio.
+1	5	5	PROPN	_	_	5	nsubj	5:nsubj	_
+2	Seconds	Seconds	PROPN	_	_	1	flat:name	1:flat:name	_
+3	of	of	PROPN	_	_	1	flat:name	1:flat:name	_
+4	Summer	Summer	PROPN	_	_	1	flat:name	1:flat:name	_
+5	anuncia	anunciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	revolução	revolução	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+7	musical	musical	ADJ	_	Number=Sing	6	amod	6:amod	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	parceria	parceria	NOUN	_	Gender=Fem|Number=Sing	6	conj	5:obj|6:conj:e	_
+10	bombástica	bombástico	ADJ	_	Gender=Fem|Number=Sing	9	amod	9:amod	_
+11	com	com	ADP	_	_	12	case	12:case	_
+12	Lady	Lady	PROPN	_	_	9	nmod	9:nmod:com	_
+13	Gaga	Gaga	PROPN	_	_	12	flat:name	12:flat:name	_
+14-15	no	_	_	_	_	_	_	_	_
+14	em	em	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	Rock	Rock	PROPN	_	_	9	nmod	9:nmod:em	_
+17	in	in	PROPN	_	_	16	flat:name	16:flat:name	_
+18	Rio	Rio	PROPN	_	_	16	flat:name	16:flat:name	SpaceAfter=No
+19	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0003
+# text = O quarteto australiano, que sempre fugiu do rótulo de boy band, promete surpreender ao adotar um estilo mais ousado e sombrio, aproximando-se do pop punk com influências góticas.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	quarteto	quarteto	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	7:nsubj|15:nsubj|16:nsubj	_
+3	australiano	australiano	ADJ	_	Gender=Masc|Number=Sing	2	amod	2:amod	SpaceAfter=No
+4	,	,	PUNCT	_	_	7	punct	7:punct	_
+5	que	que	PRON	_	PronType=Rel	7	nsubj	2:ref	_
+6	sempre	sempre	ADV	_	_	7	advmod	7:advmod	_
+7	fugiu	fugir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	rótulo	rótulo	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:de	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	boy	boy	X	_	Foreign=Yes	10	nmod	10:nmod:de	_
+13	band	band	X	_	Foreign=Yes	12	flat:foreign	12:flat:foreign	SpaceAfter=No
+14	,	,	PUNCT	_	_	7	punct	7:punct	_
+15	promete	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+16	surpreender	surpreender	VERB	_	VerbForm=Inf	15	xcomp	15:xcomp	_
+17-18	ao	_	_	_	_	_	_	_	_
+17	a	a	ADP	_	ExtPos=SCONJ	19	mark	19:mark	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	fixed	17:fixed	_
+19	adotar	adotar	VERB	_	VerbForm=Inf	16	advcl	16:advcl:a_o	_
+20	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	estilo	estilo	NOUN	_	Gender=Masc|Number=Sing	19	obj	19:obj	_
+22	mais	mais	ADV	_	_	23	advmod	23:advmod	_
+23	ousado	ousado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	21	amod	21:amod	_
+24	e	e	CCONJ	_	_	25	cc	25:cc	_
+25	sombrio	sombrio	ADJ	_	Gender=Masc|Number=Sing	23	conj	21:amod|23:conj:e	SpaceAfter=No
+26	,	,	PUNCT	_	_	27	punct	27:punct	_
+27-28	aproximando-se	_	_	_	_	_	_	_	_
+27	aproximando	aproximar	VERB	_	VerbForm=Ger	19	advcl	19:advcl	_
+28	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	27	expl	27:expl	_
+29-30	do	_	_	_	_	_	_	_	_
+29	de	de	ADP	_	_	31	case	31:case	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	pop	pop	NOUN	_	_	27	obl	27:obl:de	_
+32	punk	punk	ADJ	_	Number=Sing	31	amod	31:amod	_
+33	com	com	ADP	_	_	34	case	34:case	_
+34	influências	influência	NOUN	_	Gender=Fem|Number=Plur	31	nmod	31:nmod:com	_
+35	góticas	gótico	ADJ	_	Gender=Fem|Number=Plur	34	amod	34:amod	SpaceAfter=No
+36	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0005
+# text = Em uma entrevista exclusiva, Luke Hemmings revelou ao G1 que a banda está preparando um setlist inédito que irá chocar os fãs e contrastar fortemente com os shows de Lady Gaga e Pet Shop Boys.
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	entrevista	entrevista	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:em	_
+4	exclusiva	exclusivo	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	SpaceAfter=No
+5	,	,	PUNCT	_	_	3	punct	3:punct	_
+6	Luke	Luke	PROPN	_	_	8	nsubj	8:nsubj	_
+7	Hemmings	Hemmings	PROPN	_	_	6	flat:name	6:flat:name	_
+8	revelou	revelar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9-10	ao	_	_	_	_	_	_	_	_
+9	a	a	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	G1	G1	PROPN	_	_	8	obl	8:obl:a	_
+12	que	que	SCONJ	_	_	16	mark	16:mark	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	banda	banda	NOUN	_	Gender=Fem|Number=Sing	16	nsubj	16:nsubj	_
+15	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux	16:aux	_
+16	preparando	preparar	VERB	_	VerbForm=Ger	8	ccomp	8:ccomp	_
+17	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	setlist	setlist	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	16	obj	16:obj|22:nsubj|26:nsubj	_
+19	inédito	inédito	ADJ	_	Gender=Masc|Number=Sing	18	amod	18:amod	_
+20	que	que	PRON	_	PronType=Rel	22	nsubj	18:ref	_
+21	irá	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	22	aux	22:aux|26:aux	_
+22	chocar	chocar	VERB	_	VerbForm=Inf	18	acl:relcl	18:acl:relcl	_
+23	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	24:det	_
+24	fãs	fã	NOUN	_	Number=Plur	22	obj	22:obj	_
+25	e	e	CCONJ	_	_	26	cc	26:cc	_
+26	contrastar	contrastar	VERB	_	VerbForm=Inf	22	conj	18:acl:relcl|22:conj:e	_
+27	fortemente	fortemente	ADV	_	_	26	advmod	26:advmod	_
+28	com	com	ADP	_	_	30	case	30:case	_
+29	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	30:det	_
+30	shows	show	NOUN	_	Gender=Masc|Number=Plur	26	obl	26:obl:com	_
+31	de	de	ADP	_	_	32	case	32:case|35:case	_
+32	Lady	Lady	PROPN	_	_	30	nmod	30:nmod:de	_
+33	Gaga	Gaga	PROPN	_	_	32	flat:name	32:flat:name	_
+34	e	e	CCONJ	_	_	35	cc	35:cc	_
+35	Pet	Pet	PROPN	_	_	32	conj	30:nmod:de|32:conj:e	_
+36	Shop	Shop	PROPN	_	_	35	flat:name	35:flat:name	_
+37	Boys	Boys	PROPN	_	_	35	flat:name	35:flat:name	SpaceAfter=No
+38	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0007
+# text = "Estamos trazendo algo que ninguém espera," afirmou Luke, com um sorriso misterioso.
+1	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	Estamos	estar	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	aux	3:aux	_
+3	trazendo	trazer	VERB	_	VerbForm=Ger	10	ccomp:speech	10:ccomp:speech	_
+4	algo	algo	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	3	obj	3:obj|7:obj	_
+5	que	que	PRON	_	PronType=Rel	7	obj	4:ref	_
+6	ninguém	ninguém	PRON	_	Number=Sing|PronType=Ind	7	nsubj	7:nsubj	_
+7	espera	esperar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	4:acl:relcl	SpaceAfter=No
+8	,	,	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+9	"	"	PUNCT	_	_	3	punct	3:punct	_
+10	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+11	Luke	Luke	PROPN	_	_	10	nsubj	10:nsubj	SpaceAfter=No
+12	,	,	PUNCT	_	_	15	punct	15:punct	_
+13	com	com	ADP	_	_	15	case	15:case	_
+14	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	sorriso	sorriso	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:com	_
+16	misterioso	misterioso	ADJ	_	Gender=Masc|Number=Sing	15	amod	15:amod	SpaceAfter=No
+17	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0009
+# text = Achamos que este novo som vai ressoar muito bem com o público do Rock in Rio, especialmente no dia 24, quando teremos Offspring e 30 Seconds to Mars.
+1	Achamos	achar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	que	que	SCONJ	_	_	7	mark	7:mark	_
+3	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	5	det	5:det	_
+4	novo	novo	ADJ	_	Gender=Masc|Number=Sing	5	amod	5:amod	_
+5	som	som	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+6	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	7:aux	_
+7	ressoar	ressoar	VERB	_	VerbForm=Inf	1	ccomp	1:ccomp	_
+8	muito	muito	ADV	_	_	9	advmod	9:advmod	_
+9	bem	bem	ADV	_	_	7	advmod	7:advmod	_
+10	com	com	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	público	público	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:com	_
+13-14	do	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	Rock	Rock	PROPN	_	_	12	nmod	12:nmod:de	_
+16	in	in	PROPN	_	_	15	flat:name	15:flat:name	_
+17	Rio	Rio	PROPN	_	_	15	flat:name	15:flat:name	SpaceAfter=No
+18	,	,	PUNCT	_	_	22	punct	22:punct	_
+19	especialmente	especialmente	ADV	_	_	22	advmod	22:advmod	_
+20-21	no	_	_	_	_	_	_	_	_
+20	em	em	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	dia	dia	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:em|26:obl	_
+23	24	24	NUM	_	NumType=Card	22	nmod	22:nmod	SpaceAfter=No
+24	,	,	PUNCT	_	_	26	punct	26:punct	_
+25	quando	quando	ADV	_	_	26	advmod	22:ref	_
+26	teremos	ter	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	22	acl:relcl	22:acl:relcl	_
+27	Offspring	Offspring	PROPN	_	_	26	obj	26:obj	_
+28	e	e	CCONJ	_	_	30	cc	30:cc	_
+29	30	30	NUM	_	NumType=Card	30	nummod	30:nummod	_
+30	Seconds	Seconds	PROPN	_	_	27	conj	26:obj|27:conj:e	_
+31	to	to	PROPN	_	_	30	flat:name	30:flat:name	_
+32	Mars	Mars	PROPN	_	_	30	flat:name	30:flat:name	SpaceAfter=No
+33	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0011
+# text = Queremos mostrar que podemos dominar qualquer palco.
+1	Queremos	querer	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	mostrar	mostrar	VERB	_	VerbForm=Inf	1	xcomp	1:xcomp	_
+3	que	que	SCONJ	_	_	4	mark	4:mark	_
+4	podemos	poder	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	ccomp	2:ccomp	_
+5	dominar	dominar	VERB	_	VerbForm=Inf	4	xcomp	4:xcomp	_
+6	qualquer	qualquer	DET	_	Number=Sing|PronType=Ind	7	det	7:det	_
+7	palco	palco	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	SpaceAfter=No
+8	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0013
+# text = A banda, que antes era conhecida por seu visual jovial e músicas contagiantes, agora promete uma transformação radical.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	banda	banda	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	7:nsubj|17:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	7	punct	7:punct	_
+4	que	que	PRON	_	PronType=Rel	7	nsubj	2:ref	_
+5	antes	antes	ADV	_	_	7	advmod	7:advmod	_
+6	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	aux:pass	7:aux:pass	_
+7	conhecida	conhecido	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	2	acl:relcl	2:acl:relcl	_
+8	por	por	ADP	_	_	10	case	10:case|13:case	_
+9	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	10	det	10:det	_
+10	visual	visual	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:por	_
+11	jovial	jovial	ADJ	_	Number=Sing	10	amod	10:amod	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	músicas	música	NOUN	_	Gender=Fem|Number=Plur	10	conj	7:obl:por|10:conj:e	_
+14	contagiantes	contagiante	ADJ	_	Number=Plur	13	amod	13:amod	SpaceAfter=No
+15	,	,	PUNCT	_	_	7	punct	7:punct	_
+16	agora	agora	ADV	_	_	17	advmod	17:advmod	_
+17	promete	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+18	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	transformação	transformação	NOUN	_	Gender=Fem|Number=Sing	17	obj	17:obj	_
+20	radical	radical	ADJ	_	Number=Sing	19	amod	19:amod	SpaceAfter=No
+21	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0015
+# text = A transição começou com vídeos virais no YouTube, mas a evolução musical se intensificou após um controverso hiato de dois meses no ano passado.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	transição	transição	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_
+3	começou	começar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	com	com	ADP	_	_	5	case	5:case	_
+5	vídeos	vídeo	NOUN	_	Gender=Masc|Number=Plur	3	obl	3:obl:com	_
+6	virais	viral	ADJ	_	Number=Plur	5	amod	5:amod	_
+7-8	no	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	YouTube	YouTube	PROPN	_	_	5	nmod	5:nmod:em	SpaceAfter=No
+10	,	,	PUNCT	_	_	16	punct	16:punct	_
+11	mas	mas	CCONJ	_	_	16	cc	16:cc	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	evolução	evolução	NOUN	_	Gender=Fem|Number=Sing	16	nsubj	16:nsubj	_
+14	musical	musical	ADJ	_	Number=Sing	13	amod	13:amod	_
+15	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	16	expl	16:expl	_
+16	intensificou	intensificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	3:conj:mas	_
+17	após	após	ADP	_	_	20	case	20:case	_
+18	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+19	controverso	controverso	ADJ	_	Gender=Masc|Number=Sing	20	amod	20:amod	_
+20	hiato	hiato	NOUN	_	Gender=Masc|Number=Sing	16	obl	16:obl:após	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	dois	dois	NUM	_	Gender=Masc|NumType=Card	23	nummod	23:nummod	_
+23	meses	mÃªs	NOUN	_	Gender=Masc|Number=Plur	20	nmod	20:nmod:de	_
+24-25	no	_	_	_	_	_	_	_	_
+24	em	em	ADP	_	_	26	case	26:case	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	ano	ano	NOUN	_	Gender=Masc|Number=Sing	20	nmod	20:nmod:em	_
+27	passado	passado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	26	amod	26:amod	SpaceAfter=No
+28	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0017
+# text = "Foi um período de introspecção e descobertas," disse Luke.
+1	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+2	Foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	cop	4:cop	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	período	período	NOUN	_	Gender=Masc|Number=Sing	11	ccomp:speech	11:ccomp:speech	_
+5	de	de	ADP	_	_	6	case	6:case|8:case	_
+6	introspecção	introspecção	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:de	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	descobertas	descoberto	NOUN	_	Gender=Fem|Number=Plur	6	conj	4:nmod:de|6:conj:e	SpaceAfter=No
+9	,	,	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+10	"	"	PUNCT	_	_	4	punct	4:punct	_
+11	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	Luke	Luke	PROPN	_	_	11	nsubj	11:nsubj	SpaceAfter=No
+13	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0019
+# text = Voltamos com uma nova visão e ambição.
+1	Voltamos	voltar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	com	com	ADP	_	_	5	case	5:case|7:case	_
+3	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+4	nova	novo	ADJ	_	Gender=Fem|Number=Sing	5	amod	5:amod	_
+5	visão	visão	NOUN	_	Gender=Fem|Number=Sing	1	obl	1:obl:com	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	ambição	ambição	NOUN	_	Gender=Fem|Number=Sing	5	conj	1:obl:com|5:conj:e	SpaceAfter=No
+8	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0021
+# text = Além disso, uma bomba foi lançada na cena musical: a colaboração com Lady Gaga.
+1	Além	além	ADV	_	_	8	advmod	8:advmod	_
+2-3	disso	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	obl	1:obl:de	_
+4	,	,	PUNCT	_	_	1	punct	1:punct	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	bomba	bomba	NOUN	_	Gender=Fem|Number=Sing	8	nsubj:pass	8:nsubj:pass	_
+7	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	aux:pass	8:aux:pass	_
+8	lançada	lançar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+9-10	na	_	_	_	_	_	_	_	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	cena	cena	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:em	_
+12	musical	musical	ADJ	_	Number=Sing	11	amod	11:amod	SpaceAfter=No
+13	:	:	PUNCT	_	_	15	punct	15:punct	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	colaboração	colaboração	NOUN	_	Gender=Fem|Number=Sing	11	appos	11:appos	_
+16	com	com	ADP	_	_	17	case	17:case	_
+17	Lady	Lady	PROPN	_	_	15	nmod	15:nmod:com	_
+18	Gaga	Gaga	PROPN	_	_	17	flat:name	17:flat:name	SpaceAfter=No
+19	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0023
+# text = "Ela entrou no estúdio e nos ajudou a redefinir nosso som," revelou Luke.
+1	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	Ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nsubj	3:nsubj|9:nsubj	_
+3	entrou	entrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	ccomp:speech	16:ccomp:speech	_
+4-5	no	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	estúdio	estúdio	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:em	_
+7	e	e	CCONJ	_	_	9	cc	9:cc	_
+8	nos	nos	PRON	_	Case=Acc|Number=Plur|Person=1|PronType=Prs	9	obj	9:obj|11:nsubj	_
+9	ajudou	ajudar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	3:conj:e|16:ccomp:speech	_
+10	a	a	ADP	_	_	11	mark	11:mark	_
+11	redefinir	redefinir	VERB	_	VerbForm=Inf	9	xcomp	9:xcomp	_
+12	nosso	nosso	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	13	det	13:det	_
+13	som	som	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj	SpaceAfter=No
+14	,	,	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+15	"	"	PUNCT	_	_	3	punct	3:punct	_
+16	revelou	revelar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+17	Luke	Luke	PROPN	_	_	16	nsubj	16:nsubj	SpaceAfter=No
+18	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0025
+# text = A Gaga é incrivelmente visionária e nos desafiou a sair da nossa zona de conforto.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Gaga	Gaga	PROPN	_	_	5	nsubj	5:nsubj|8:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+4	incrivelmente	incrivelmente	ADV	_	_	5	advmod	5:advmod	_
+5	visionária	visionário	ADJ	_	Gender=Fem|Number=Sing	0	root	0:root	_
+6	e	e	CCONJ	_	_	8	cc	8:cc	_
+7	nos	nos	PRON	_	Case=Acc|Number=Plur|Person=1|PronType=Prs	8	obj	8:obj|10:nsubj	_
+8	desafiou	desafiar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	conj	5:conj:e	_
+9	a	a	ADP	_	_	10	mark	10:mark	_
+10	sair	sair	VERB	_	VerbForm=Inf	8	xcomp	8:xcomp	_
+11-12	da	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	14	case	14:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+13	nossa	nosso	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	14	det	14:det	_
+14	zona	zona	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:de	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	conforto	conforto	NOUN	_	Gender=Masc|Number=Sing	14	nmod	14:nmod:de	SpaceAfter=No
+17	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0027
+# text = Antigos colaboradores como Benji e Joel do Good Charlotte, e Alex do All Time Low, ficaram surpresos com a nova direção da banda.
+1	Antigos	antigo	ADJ	_	Gender=Masc|Number=Plur	2	amod	2:amod	_
+2	colaboradores	colaborador	NOUN	_	Gender=Masc|Number=Plur	20	nsubj	20:nsubj|21:nsubj	_
+3	como	como	ADP	_	_	4	case	4:case|6:case|13:case	_
+4	Benji	Benji	PROPN	_	_	2	nmod	2:nmod:como	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	Joel	Joel	PROPN	_	_	4	conj	2:nmod:como|4:conj:e	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	Good	Good	PROPN	_	_	4	nmod	4:nmod:de|6:nmod:de	_
+10	Charlotte	Charlotte	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+11	,	,	PUNCT	_	_	13	punct	13:punct	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	Alex	Alex	PROPN	_	_	4	conj	2:nmod:como|4:conj:e	_
+14-15	do	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	All	All	PROPN	_	_	13	nmod	13:nmod:de	_
+17	Time	Time	PROPN	_	_	16	flat:name	16:flat:name	_
+18	Low	Low	PROPN	_	_	16	flat:name	16:flat:name	SpaceAfter=No
+19	,	,	PUNCT	_	_	13	punct	13:punct	_
+20	ficaram	ficar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+21	surpresos	surpreso	ADJ	_	Gender=Masc|Number=Plur	20	xcomp	20:xcomp	_
+22	com	com	ADP	_	_	25	case	25:case	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+24	nova	novo	ADJ	_	Gender=Fem|Number=Sing	25	amod	25:amod	_
+25	direção	direção	NOUN	_	Gender=Fem|Number=Sing	21	obl	21:obl:com	_
+26-27	da	_	_	_	_	_	_	_	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	banda	banda	NOUN	_	Gender=Fem|Number=Sing	25	nmod	25:nmod:de	SpaceAfter=No
+29	.	.	PUNCT	_	_	20	punct	20:punct	_
+
+# sent_id = S0029
+# text = "Eles disseram que nunca nos viram assim," comentou Luke.
+1	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	Eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	nsubj	3:nsubj	_
+3	disseram	dizer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	11	ccomp:speech	11:ccomp:speech	_
+4	que	que	SCONJ	_	_	7	mark	7:mark	_
+5	nunca	nunca	ADV	_	_	7	advmod	7:advmod	_
+6	nos	nos	PRON	_	Case=Acc|Number=Plur|Person=1|PronType=Prs	7	obj	7:obj	_
+7	viram	viram	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	3	ccomp	3:ccomp	_
+8	assim	assim	ADV	_	_	7	advmod	7:advmod	SpaceAfter=No
+9	,	,	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+10	"	"	PUNCT	_	_	3	punct	3:punct	_
+11	comentou	comentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	Luke	Luke	PROPN	_	_	11	nsubj	11:nsubj	SpaceAfter=No
+13	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0031
+# text = Mas acreditamos que este é o momento certo para mudar.
+1	Mas	mas	CCONJ	_	_	2	cc	2:cc	_
+2	acreditamos	acreditar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	7	mark	7:mark	_
+4	este	este	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	7	nsubj	7:nsubj	_
+5	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	momento	momento	NOUN	_	Gender=Masc|Number=Sing	2	ccomp	2:ccomp	_
+8	certo	certo	ADJ	_	Gender=Masc|Number=Sing	7	amod	7:amod	_
+9	para	para	ADP	_	_	10	mark	10:mark	_
+10	mudar	mudar	VERB	_	VerbForm=Inf	7	acl	7:acl:para	SpaceAfter=No
+11	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0033
+# text = Ainda sobre controvérsias, Luke abordou os desentendimentos passados com Justin Bieber.
+1	Ainda	ainda	ADV	_	_	3	advmod	3:advmod	_
+2	sobre	sobre	ADP	_	_	3	case	3:case	_
+3	controvérsias	controvérsão	NOUN	_	Gender=Fem|Number=Plur	6	obl	6:obl:sobre	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	Luke	Luke	PROPN	_	_	6	nsubj	6:nsubj	_
+6	abordou	abordar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	8:det	_
+8	desentendimentos	desentendimento	NOUN	_	Gender=Masc|Number=Plur	6	obj	6:obj	_
+9	passados	passar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	8	acl	8:acl	_
+10	com	com	ADP	_	_	11	case	11:case	_
+11	Justin	Justin	PROPN	_	_	9	obl	9:obl:com	_
+12	Bieber	Bieber	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+13	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0035
+# text = "Aquela situação foi superada," declarou Hemmings.
+1	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+2	Aquela	aquele	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	3:det	_
+3	situação	situação	NOUN	_	Gender=Fem|Number=Sing	5	nsubj:pass	5:nsubj:pass	_
+4	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	aux:pass	5:aux:pass	_
+5	superada	superar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	8	ccomp:speech	8:ccomp:speech	SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+7	"	"	PUNCT	_	_	5	punct	5:punct	_
+8	declarou	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	Hemmings	Hemmings	PROPN	_	_	8	nsubj	8:nsubj	SpaceAfter=No
+10	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0037
+# text = Michael [Clifford] e Bieber já se encontraram e esclareceram tudo.
+1	Michael	Michael	PROPN	_	_	9	nsubj	9:nsubj|11:nsubj	_
+2	[	[	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+3	Clifford	Clifford	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+4	]	]	PUNCT	_	_	3	punct	3:punct	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	Bieber	Bieber	PROPN	_	_	1	conj	1:conj:e|9:nsubj|11:nsubj	_
+7	já	já	ADV	_	_	9	advmod	9:advmod	_
+8	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	9	expl	9:expl	_
+9	encontraram	encontrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	esclareceram	esclarecer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	9	conj	9:conj:e	_
+12	tudo	tudo	PRON	_	PronType=Ind	11	obj	11:obj	SpaceAfter=No
+13	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0039
+# text = Agora, estamos em uma nova era e abertos a colaborações inesperadas.
+1	Agora	agora	ADV	_	_	7	advmod	7:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	estamos	estar	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	7	cop	7:cop|9:cop	_
+4	em	em	ADP	_	_	7	case	7:case	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+6	nova	novo	ADJ	_	Gender=Fem|Number=Sing	7	amod	7:amod	_
+7	era	era	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	abertos	aberto	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	7	conj	7:conj:e	_
+10	a	a	ADP	_	_	11	case	11:case	_
+11	colaborações	colaboração	NOUN	_	Gender=Fem|Number=Plur	9	obl	9:obl:a	_
+12	inesperadas	inesperado	ADJ	_	Gender=Fem|Number=Plur	11	amod	11:amod	SpaceAfter=No
+13	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0041
+# text = A nova fase do 5 Seconds of Summer promete não só uma revolução sonora, mas também visuais impactantes e performances que desafiam os limites.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+2	nova	novo	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+3	fase	fase	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	10:nsubj	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	5	5	PROPN	_	_	3	nmod	3:nmod:de	_
+7	Seconds	Seconds	PROPN	_	_	6	flat:name	6:flat:name	_
+8	of	of	PROPN	_	_	6	flat:name	6:flat:name	_
+9	Summer	Summer	PROPN	_	_	6	flat:name	6:flat:name	_
+10	promete	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+11	não	não	ADV	_	_	12	advmod	12:advmod	_
+12	só	só	ADV	_	_	14	advmod	14:advmod	_
+13	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	revolução	revolução	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+15	sonora	sonoro	ADJ	_	Gender=Fem|Number=Sing	14	amod	14:amod	SpaceAfter=No
+16	,	,	PUNCT	_	_	19	punct	19:punct	_
+17	mas	mas	CCONJ	_	_	19	cc	19:cc	_
+18	também	também	ADV	_	_	19	advmod	19:advmod	_
+19	visuais	visual	NOUN	_	Gender=Masc|Number=Plur	14	conj	10:obj|14:conj:mas	_
+20	impactantes	impactante	ADJ	_	Number=Plur	19	amod	19:amod	_
+21	e	e	CCONJ	_	_	22	cc	22:cc	_
+22	performances	performance	NOUN	_	Gender=Fem|Number=Plur	14	conj	10:obj|14:conj:e|24:nsubj	_
+23	que	que	PRON	_	PronType=Rel	24	nsubj	22:ref	_
+24	desafiam	desafiar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	acl:relcl	22:acl:relcl	_
+25	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	26:det	_
+26	limites	limite	NOUN	_	Gender=Masc|Number=Plur	24	obj	24:obj	SpaceAfter=No
+27	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0043
+# text = Os fãs podem esperar o inesperado.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	fãs	fã	NOUN	_	Number=Plur	3	nsubj	3:nsubj|4:nsubj	_
+3	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	esperar	esperar	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	inesperado	inesperado	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	SpaceAfter=No
+7	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0045
+# text = Vamos misturar elementos de rock, pop e até um toque de eletrônico, finalizou Luke.
+1	Vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	aux	2:aux	_
+2	misturar	misturar	VERB	_	VerbForm=Inf	15	ccomp:speech	15:ccomp:speech	_
+3	elementos	elemento	NOUN	_	Gender=Masc|Number=Plur	2	obj	2:obj	_
+4	de	de	ADP	_	_	5	case	5:case|7:case	_
+5	rock	rock	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	pop	pop	NOUN	_	_	5	conj	3:nmod:de|5:conj	_
+8	e	e	CCONJ	_	_	11	cc	11:cc	_
+9	até	até	ADV	_	_	11	advmod	11:advmod	_
+10	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	toque	toque	NOUN	_	Gender=Masc|Number=Sing	3	conj	2:obj|3:conj:e	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	eletrônico	eletrônico	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:de	SpaceAfter=No
+14	,	,	PUNCT	_	_	2	punct	2:punct	_
+15	finalizou	finalizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+16	Luke	Luke	PROPN	_	_	15	nsubj	15:nsubj	SpaceAfter=No
+17	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0047
+# text = A estreia no Brasil, em São Paulo, no dia 14 de setembro, e o show no Rock in Rio no dia seguinte, serão os primeiros palcos a testemunhar essa transformação.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	estreia	estreia	NOUN	_	Gender=Fem|Number=Sing	34	nsubj	34:nsubj	_
+3-4	no	_	_	_	_	_	_	_	_
+3	em	em	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	Brasil	Brasil	PROPN	_	_	2	nmod	2:nmod:em	SpaceAfter=No
+6	,	,	PUNCT	_	_	8	punct	8:punct	_
+7	em	em	ADP	_	_	8	case	8:case	_
+8	São	São	PROPN	_	_	2	nmod	2:nmod:em	_
+9	Paulo	Paulo	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+10	,	,	PUNCT	_	_	8	punct	8:punct	_
+11-12	no	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	dia	dia	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:em	_
+14	14	14	NUM	_	NumType=Card	13	nmod	13:nmod	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	setembro	setembro	NOUN	_	Gender=Masc|Number=Sing	14	nmod	14:nmod:de	SpaceAfter=No
+17	,	,	PUNCT	_	_	20	punct	20:punct	_
+18	e	e	CCONJ	_	_	20	cc	20:cc	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	show	show	NOUN	_	Gender=Masc|Number=Sing	2	conj	2:conj:e|34:nsubj	_
+21-22	no	_	_	_	_	_	_	_	_
+21	em	em	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	Rock	Rock	PROPN	_	_	20	nmod	20:nmod:em	_
+24	in	in	PROPN	_	_	23	flat:name	23:flat:name	_
+25	Rio	Rio	PROPN	_	_	23	flat:name	23:flat:name	_
+26-27	no	_	_	_	_	_	_	_	_
+26	em	em	ADP	_	_	28	case	28:case	_
+27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	dia	dia	NOUN	_	Gender=Masc|Number=Sing	20	nmod	20:nmod:em	_
+29	seguinte	seguinte	ADJ	_	Number=Sing	28	amod	28:amod	SpaceAfter=No
+30	,	,	PUNCT	_	_	20	punct	20:punct	_
+31	serão	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	34	cop	34:cop	_
+32	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	34	det	34:det	_
+33	primeiros	primeiro	ADJ	_	Gender=Masc|Number=Plur|NumType=Ord	34	amod	34:amod	_
+34	palcos	palco	NOUN	_	Gender=Masc|Number=Plur	0	root	0:root	_
+35	a	a	ADP	_	_	36	mark	36:mark	_
+36	testemunhar	testemunhar	VERB	_	VerbForm=Inf	34	acl	34:acl:a	_
+37	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	38	det	38:det	_
+38	transformação	transformação	NOUN	_	Gender=Fem|Number=Sing	36	obj	36:obj	SpaceAfter=No
+39	.	.	PUNCT	_	_	34	punct	34:punct	_

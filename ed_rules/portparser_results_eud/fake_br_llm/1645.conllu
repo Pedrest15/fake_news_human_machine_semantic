@@ -1,0 +1,607 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Exclusivo: Trump anuncia ataque iminente à Coreia do Norte após novo teste nuclear.
+1	Exclusivo	exclusivo	ADJ	_	Gender=Masc|Number=Sing	4	dep	4:dep	SpaceAfter=No
+2	:	:	PUNCT	_	_	1	punct	1:punct	_
+3	Trump	Trump	PROPN	_	_	4	nsubj	4:nsubj	_
+4	anuncia	anunciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	ataque	ataque	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+6	iminente	iminente	ADJ	_	Number=Sing	5	amod	5:amod	_
+7-8	à	_	_	_	_	_	_	_	_
+7	a	a	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	Coreia	Coreia	PROPN	_	_	5	nmod	5:nmod:a	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	Norte	Norte	PROPN	_	_	9	flat:name	9:flat:name	_
+13	após	após	ADP	_	_	15	case	15:case	_
+14	novo	novo	ADJ	_	Gender=Masc|Number=Sing	15	amod	15:amod	_
+15	teste	teste	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:após	_
+16	nuclear	nuclear	ADJ	_	Number=Sing	15	amod	15:amod	SpaceAfter=No
+17	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0003
+# text = Durante uma entrevista bombástica ao programa "Face The Nation" da CBS, que será transmitida neste domingo (30), o presidente dos EUA, Donald Trump, declarou que não ficará apenas observando se a Coreia do Norte realizar um novo teste nuclear.
+1	Durante	durante	ADP	_	_	3	case	3:case	_
+2	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	entrevista	entrevista	NOUN	_	Gender=Fem|Number=Sing	36	obl	36:obl:durante	_
+4	bombástica	bombástico	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+5-6	ao	_	_	_	_	_	_	_	_
+5	a	a	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	programa	programa	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:a	_
+8	"	"	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+9	Face	Face	PROPN	_	_	7	nmod	7:nmod	_
+10	The	The	PROPN	_	_	9	flat:name	9:flat:name	_
+11	Nation	Nation	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+12	"	"	PUNCT	_	_	9	punct	9:punct	_
+13-14	da	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	CBS	CBS	PROPN	_	_	7	nmod	7:nmod:de	SpaceAfter=No
+16	,	,	PUNCT	_	_	19	punct	19:punct	_
+17	que	que	PRON	_	PronType=Rel	19	nsubj:pass	28:ref	_
+18	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	19	aux:pass	19:aux:pass	_
+19	transmitida	transmitir	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	28	acl:relcl	28:acl:relcl	_
+20-21	neste	_	_	_	_	_	_	_	_
+20	em	em	ADP	_	_	22	case	22:case	_
+21	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	22	det	22:det	_
+22	domingo	domingo	NOUN	_	Gender=Masc|Number=Sing	19	obl	19:obl:em	_
+23	(	(	PUNCT	_	_	24	punct	24:punct	SpaceAfter=No
+24	30	30	NUM	_	NumType=Card	22	appos	22:appos	SpaceAfter=No
+25	)	)	PUNCT	_	_	24	punct	24:punct	SpaceAfter=No
+26	,	,	PUNCT	_	_	3	punct	3:punct	_
+27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	presidente	presidente	NOUN	_	Number=Sing	36	nsubj	19:nsubj:pass|36:nsubj	_
+29-30	dos	_	_	_	_	_	_	_	_
+29	de	de	ADP	_	_	31	case	31:case	_
+30	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	31	det	31:det	_
+31	EUA	EUA	PROPN	_	_	28	nmod	28:nmod:de	SpaceAfter=No
+32	,	,	PUNCT	_	_	33	punct	33:punct	_
+33	Donald	Donald	PROPN	_	_	28	appos	28:appos	_
+34	Trump	Trump	PROPN	_	_	33	flat:name	33:flat:name	SpaceAfter=No
+35	,	,	PUNCT	_	_	33	punct	33:punct	_
+36	declarou	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+37	que	que	SCONJ	_	_	39	mark	39:mark	_
+38	não	não	ADV	_	_	39	advmod	39:advmod	_
+39	ficará	ficar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	36	ccomp	36:ccomp	_
+40	apenas	apenas	ADV	_	_	41	advmod	41:advmod	_
+41	observando	observar	VERB	_	VerbForm=Ger	39	xcomp	39:xcomp	_
+42	se	se	SCONJ	_	_	48	mark	48:mark	_
+43	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	44:det	_
+44	Coreia	Coreia	PROPN	_	_	48	nsubj	48:nsubj	_
+45-46	do	_	_	_	_	_	_	_	_
+45	de	de	ADP	_	_	47	case	47:case	_
+46	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	det	47:det	_
+47	Norte	Norte	PROPN	_	_	44	flat:name	44:flat:name	_
+48	realizar	realizar	VERB	_	Number=Sing|Person=3|VerbForm=Inf	41	advcl	41:advcl:se	_
+49	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	51	det	51:det	_
+50	novo	novo	ADJ	_	Gender=Masc|Number=Sing	51	amod	51:amod	_
+51	teste	teste	NOUN	_	Gender=Masc|Number=Sing	48	obj	48:obj	_
+52	nuclear	nuclear	ADJ	_	Number=Sing	51	amod	51:amod	SpaceAfter=No
+53	.	.	PUNCT	_	_	36	punct	36:punct	_
+
+# sent_id = S0005
+# text = "Se Kim Jong-Un prosseguir com esse teste, ele verá uma resposta que ninguém esperava", afirmou Trump, insinuando uma ação militar definitiva.
+1	"	"	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+2	Se	se	SCONJ	_	_	5	mark	5:mark	_
+3	Kim	Kim	PROPN	_	_	5	nsubj	5:nsubj	_
+4	Jong-Un	Jong-Un	PROPN	_	_	3	flat:name	3:flat:name	_
+5	prosseguir	prosseguir	VERB	_	Number=Sing|Person=3|VerbForm=Inf	11	advcl	11:advcl:se	_
+6	com	com	ADP	_	_	8	case	8:case	_
+7	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	8	det	8:det	_
+8	teste	teste	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:com	SpaceAfter=No
+9	,	,	PUNCT	_	_	5	punct	5:punct	_
+10	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	nsubj	11:nsubj	_
+11	verá	ver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	19	ccomp:speech	19:ccomp:speech	_
+12	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	resposta	resposta	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj|16:obj	_
+14	que	que	PRON	_	PronType=Rel	16	obj	13:ref	_
+15	ninguém	ninguém	PRON	_	Number=Sing|PronType=Ind	16	nsubj	16:nsubj	_
+16	esperava	esperar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	13	acl:relcl	13:acl:relcl	SpaceAfter=No
+17	"	"	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+18	,	,	PUNCT	_	_	11	punct	11:punct	_
+19	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+20	Trump	Trump	PROPN	_	_	19	nsubj	19:nsubj	SpaceAfter=No
+21	,	,	PUNCT	_	_	22	punct	22:punct	_
+22	insinuando	insinuar	VERB	_	VerbForm=Ger	19	advcl	19:advcl	_
+23	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	ação	ação	NOUN	_	Gender=Fem|Number=Sing	22	obj	22:obj	_
+25	militar	militar	ADJ	_	Number=Sing	24	amod	24:amod	_
+26	definitiva	definitivo	ADJ	_	Gender=Fem|Number=Sing	24	amod	24:amod	SpaceAfter=No
+27	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0007
+# text = Trump destacou que o presidente chinês, Xi Jinping, está totalmente ao lado dos Estados Unidos, pronto para uma ação conjunta contra a Coreia do Norte.
+1	Trump	Trump	PROPN	_	_	2	nsubj	2:nsubj	_
+2	destacou	destacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	15	mark	15:mark|21:mark	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	presidente	presidente	NOUN	_	Number=Sing	15	nsubj	15:nsubj|21:nsubj	_
+6	chinês	chinês	ADJ	_	Gender=Masc|Number=Sing	5	amod	5:amod	SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	8:punct	_
+8	Xi	Xi	PROPN	_	_	5	appos	5:appos	_
+9	Jinping	Jinping	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+10	,	,	PUNCT	_	_	8	punct	8:punct	_
+11	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	15:cop|21:cop	_
+12	totalmente	totalmente	ADV	_	_	15	advmod	15:advmod	_
+13-14	ao	_	_	_	_	_	_	_	_
+13	a	a	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	lado	lado	NOUN	_	Gender=Masc|Number=Sing	2	ccomp	2:ccomp	_
+16-17	dos	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	18:det	_
+18	Estados	Estados	PROPN	_	_	15	nmod	15:nmod:de	_
+19	Unidos	Unidos	PROPN	_	_	18	flat:name	18:flat:name	SpaceAfter=No
+20	,	,	PUNCT	_	_	21	punct	21:punct	_
+21	pronto	pronto	ADJ	_	Gender=Masc|Number=Sing	15	conj	2:ccomp|15:conj	_
+22	para	para	ADP	_	_	24	case	24:case	_
+23	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	ação	ação	NOUN	_	Gender=Fem|Number=Sing	21	obl	21:obl:para	_
+25	conjunta	conjunto	ADJ	_	Gender=Fem|Number=Sing	24	amod	24:amod	_
+26	contra	contra	ADP	_	_	28	case	28:case	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	Coreia	Coreia	PROPN	_	_	24	nmod	24:nmod:contra	_
+29-30	do	_	_	_	_	_	_	_	_
+29	de	de	ADP	_	_	31	case	31:case	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	Norte	Norte	PROPN	_	_	28	flat:name	28:flat:name	SpaceAfter=No
+32	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0009
+# text = "Xi está colocando uma pressão incrível e inédita sobre Pyongyang", disse Trump, sugerindo que a China poderia cortar o fornecimento de petróleo à Coreia do Norte, uma medida que considera "extremamente efetiva".
+1	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+2	Xi	Xi	PROPN	_	_	4	nsubj	4:nsubj	_
+3	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	4:aux	_
+4	colocando	colocar	VERB	_	VerbForm=Ger	14	ccomp:speech	14:ccomp:speech	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	pressão	pressão	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+7	incrível	incrível	ADJ	_	Number=Sing	6	amod	6:amod	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	inédita	inédito	ADJ	_	Gender=Fem|Number=Sing	7	conj	6:amod|7:conj:e	_
+10	sobre	sobre	ADP	_	_	11	case	11:case	_
+11	Pyongyang	Pyongyang	PROPN	_	_	4	obl	4:obl:sobre	SpaceAfter=No
+12	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+13	,	,	PUNCT	_	_	4	punct	4:punct	_
+14	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+15	Trump	Trump	PROPN	_	_	14	nsubj	14:nsubj	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	sugerindo	sugerir	VERB	_	VerbForm=Ger	14	advcl	14:advcl	_
+18	que	que	SCONJ	_	_	21	mark	21:mark	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	China	China	PROPN	_	_	21	nsubj	21:nsubj|22:nsubj	_
+21	poderia	poder	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	17	ccomp	17:ccomp	_
+22	cortar	cortar	VERB	_	VerbForm=Inf	21	xcomp	21:xcomp	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	fornecimento	fornecimento	NOUN	_	Gender=Masc|Number=Sing	22	obj	22:obj	_
+25	de	de	ADP	_	_	26	case	26:case	_
+26	petróleo	petróleo	NOUN	_	Gender=Masc|Number=Sing	24	nmod	24:nmod:de	_
+27-28	à	_	_	_	_	_	_	_	_
+27	a	a	ADP	_	_	29	case	29:case	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	Coreia	Coreia	PROPN	_	_	24	nmod	24:nmod:a	_
+30-31	do	_	_	_	_	_	_	_	_
+30	de	de	ADP	_	_	32	case	32:case	_
+31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+32	Norte	Norte	PROPN	_	_	29	flat:name	29:flat:name	SpaceAfter=No
+33	,	,	PUNCT	_	_	35	punct	35:punct	_
+34	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	35	det	35:det	_
+35	medida	medida	NOUN	_	Gender=Fem|Number=Sing	24	appos	24:appos|37:obj|40:nsubj	_
+36	que	que	PRON	_	PronType=Rel	37	obj	35:ref	_
+37	considera	considerar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	35	acl:relcl	35:acl:relcl	_
+38	"	"	PUNCT	_	_	40	punct	40:punct	SpaceAfter=No
+39	extremamente	extremamente	ADV	_	_	40	advmod	40:advmod	_
+40	efetiva	efetivo	ADJ	_	Gender=Fem|Number=Sing	37	xcomp	37:xcomp	SpaceAfter=No
+41	"	"	PUNCT	_	_	40	punct	40:punct	SpaceAfter=No
+42	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0011
+# text = Trump também revelou detalhes surpreendentes sobre o recente teste de míssil fracassado da Coreia do Norte.
+1	Trump	Trump	PROPN	_	_	3	nsubj	3:nsubj	_
+2	também	também	ADV	_	_	3	advmod	3:advmod	_
+3	revelou	revelar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	detalhes	detalhe	NOUN	_	Gender=Masc|Number=Plur	3	obj	3:obj	_
+5	surpreendentes	surpreendente	ADJ	_	Number=Plur	4	amod	4:amod	_
+6	sobre	sobre	ADP	_	_	9	case	9:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+8	recente	recente	ADJ	_	Number=Sing	9	amod	9:amod	_
+9	teste	teste	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:sobre	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	míssil	míssil	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:de	_
+12	fracassado	fracassado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	11	amod	11:amod	_
+13-14	da	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	Coreia	Coreia	PROPN	_	_	9	nmod	9:nmod:de	_
+16-17	do	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	Norte	Norte	PROPN	_	_	15	flat:name	15:flat:name	SpaceAfter=No
+19	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0013
+# text = "Podemos ter tido uma mãozinha nisso", insinuou, enquanto sorria enigmaticamente.
+1	"	"	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+2	Podemos	poder	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	11	ccomp:speech	11:ccomp:speech	_
+3	ter	ter	AUX	_	VerbForm=Inf	4	aux	4:aux	_
+4	tido	ter	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	2	xcomp	2:xcomp	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	mãozinha	mãozinha	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+7-8	nisso	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	8	case	8:case	_
+8	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	4	obl	4:obl:em	_
+9	"	"	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+10	,	,	PUNCT	_	_	2	punct	2:punct	_
+11	insinuou	insinuar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+12	,	,	PUNCT	_	_	14	punct	14:punct	_
+13	enquanto	enquanto	SCONJ	_	_	14	mark	14:mark	_
+14	sorria	sorrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	11	advcl	11:advcl:enquanto	_
+15	enigmaticamente	enigmaticamente	ADV	_	_	14	advmod	14:advmod	SpaceAfter=No
+16	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0015
+# text = Ele não forneceu mais detalhes, mas afirmou que "as consequências para a Coreia do Norte serão severas se eles continuarem desafiando o mundo".
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	3:nsubj|8:nsubj	_
+2	não	não	ADV	_	_	3	advmod	3:advmod	_
+3	forneceu	fornecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	mais	mais	DET	_	PronType=Ind	5	det	5:det	_
+5	detalhes	detalhe	NOUN	_	Gender=Masc|Number=Plur	3	obj	3:obj	SpaceAfter=No
+6	,	,	PUNCT	_	_	8	punct	8:punct	_
+7	mas	mas	CCONJ	_	_	8	cc	8:cc	_
+8	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	3:conj:mas	_
+9	que	que	SCONJ	_	_	20	mark	20:mark	_
+10	"	"	PUNCT	_	_	20	punct	20:punct	SpaceAfter=No
+11	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	12:det	_
+12	consequências	consequência	NOUN	_	Gender=Fem|Number=Plur	20	nsubj	20:nsubj	_
+13	para	para	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	Coreia	Coreia	PROPN	_	_	12	nmod	12:nmod:para	_
+16-17	do	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	Norte	Norte	PROPN	_	_	15	flat:name	15:flat:name	_
+19	serão	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	20	cop	20:cop	_
+20	severas	severo	ADJ	_	Gender=Fem|Number=Plur	8	ccomp	8:ccomp	_
+21	se	se	SCONJ	_	_	23	mark	23:mark	_
+22	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	23	nsubj	23:nsubj	_
+23	continuarem	continuar	VERB	_	Number=Plur|Person=3|VerbForm=Inf	20	advcl	20:advcl:se	_
+24	desafiando	desafiar	VERB	_	VerbForm=Ger	23	advcl	23:advcl	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	24	obj	24:obj	SpaceAfter=No
+27	"	"	PUNCT	_	_	20	punct	20:punct	SpaceAfter=No
+28	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0017
+# text = O presidente americano enfatizou ainda que Kim Jong-Un, a quem ele chamou de "jovem e perigoso líder", está isolado e enfrentará "um destino que ele não deseja" caso persista no desenvolvimento de armas nucleares.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	presidente	presidente	NOUN	_	Number=Sing	4	nsubj	4:nsubj	_
+3	americano	americano	ADJ	_	Gender=Masc|Number=Sing	2	amod	2:amod	_
+4	enfatizou	enfatizar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	ainda	ainda	ADV	_	_	4	advmod	4:advmod	_
+6	que	que	SCONJ	_	_	23	mark	23:mark|25:mark	_
+7	Kim	Kim	PROPN	_	_	23	nsubj	13:obl:a|23:nsubj|25:nsubj	_
+8	Jong-Un	Jong-Un	PROPN	_	_	7	flat:name	7:flat:name	SpaceAfter=No
+9	,	,	PUNCT	_	_	13	punct	13:punct	_
+10	a	a	ADP	_	_	11	case	11:case	_
+11	quem	quem	PRON	_	PronType=Rel	13	obl	7:ref	_
+12	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	nsubj	13:nsubj	_
+13	chamou	chamar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	acl:relcl	7:acl:relcl	_
+14	de	de	ADP	_	_	19	case	19:case	_
+15	"	"	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+16	jovem	jovem	ADJ	_	Number=Sing	19	amod	19:amod	_
+17	e	e	CCONJ	_	_	18	cc	18:cc	_
+18	perigoso	perigoso	ADJ	_	Gender=Masc|Number=Sing	16	conj	16:conj:e|19:amod	_
+19	líder	líder	NOUN	_	Gender=Masc|Number=Sing	13	obl	13:obl:de	SpaceAfter=No
+20	"	"	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+21	,	,	PUNCT	_	_	13	punct	13:punct	_
+22	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	cop	23:cop	_
+23	isolado	isolado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	4	ccomp	4:ccomp	_
+24	e	e	CCONJ	_	_	25	cc	25:cc	_
+25	enfrentará	enfrentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	23	conj	4:ccomp|23:conj:e	_
+26	"	"	PUNCT	_	_	28	punct	28:punct	SpaceAfter=No
+27	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	destino	destino	NOUN	_	Gender=Masc|Number=Sing	25	obj	25:obj|32:obj	_
+29	que	que	PRON	_	PronType=Rel	32	obj	28:ref	_
+30	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	32	nsubj	32:nsubj	_
+31	não	não	ADV	_	_	32	advmod	32:advmod	_
+32	deseja	desejar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	acl:relcl	28:acl:relcl	SpaceAfter=No
+33	"	"	PUNCT	_	_	28	punct	28:punct	_
+34	caso	caso	SCONJ	_	_	35	mark	35:mark	_
+35	persista	persistir	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	advcl	25:advcl:caso	_
+36-37	no	_	_	_	_	_	_	_	_
+36	em	em	ADP	_	_	38	case	38:case	_
+37	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	38:det	_
+38	desenvolvimento	desenvolvimento	NOUN	_	Gender=Masc|Number=Sing	35	obl	35:obl:em	_
+39	de	de	ADP	_	_	40	case	40:case	_
+40	armas	arma	NOUN	_	Gender=Fem|Number=Plur	38	nmod	38:nmod:de	_
+41	nucleares	nuclear	ADJ	_	Number=Plur	40	amod	40:amod	SpaceAfter=No
+42	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0019
+# text = Enquanto isso, Trump aproveitou para anunciar um "novo plano de saúde revolucionário" que promete mudar completamente o cenário dos EUA.
+1	Enquanto	enquanto	ADV	_	ExtPos=ADV	5	advmod	5:advmod	_
+2	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	fixed	1:fixed	SpaceAfter=No
+3	,	,	PUNCT	_	_	1	punct	1:punct	_
+4	Trump	Trump	PROPN	_	_	5	nsubj	5:nsubj	_
+5	aproveitou	aproveitar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	para	para	ADP	_	_	7	mark	7:mark	_
+7	anunciar	anunciar	VERB	_	VerbForm=Inf	5	advcl	5:advcl:para	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+9	"	"	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+10	novo	novo	ADJ	_	Gender=Masc|Number=Sing	11	amod	11:amod	_
+11	plano	plano	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj|17:nsubj|18:nsubj	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:de	_
+14	revolucionário	revolucionário	ADJ	_	Gender=Masc|Number=Sing	11	amod	11:amod	SpaceAfter=No
+15	"	"	PUNCT	_	_	11	punct	11:punct	_
+16	que	que	PRON	_	PronType=Rel	17	nsubj	11:ref	_
+17	promete	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	11:acl:relcl	_
+18	mudar	mudar	VERB	_	VerbForm=Inf	17	xcomp	17:xcomp	_
+19	completamente	completamente	ADV	_	_	18	advmod	18:advmod	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	cenário	cenário	NOUN	_	Gender=Masc|Number=Sing	18	obj	18:obj	_
+22-23	dos	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	24:det	_
+24	EUA	EUA	PROPN	_	_	21	nmod	21:nmod:de	SpaceAfter=No
+25	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0021
+# text = Em uma série de tweets, ele afirmou: Preparem-se, americanos!
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	série	série	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:em	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	tweets	tweet	NOUN	_	Foreign=Yes|Gender=Masc|Number=Plur	3	nmod	3:nmod:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	3	punct	3:punct	_
+7	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nsubj	8:nsubj	_
+8	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+9	:	:	PUNCT	_	_	10	punct	10:punct	_
+10-11	Preparem-se	_	_	_	_	_	_	_	_
+10	Preparem	preparar	VERB	_	Mood=Imp|Number=Plur|Person=3|VerbForm=Fin	8	ccomp:speech	8:ccomp:speech	_
+11	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	10	expl	10:expl	_
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	americanos	americano	NOUN	_	Gender=Masc|Number=Plur	10	discourse	10:discourse	SpaceAfter=No
+14	!	!	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0023
+# text = O novo plano de saúde está chegando e será fantástico.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+2	novo	novo	ADJ	_	Gender=Masc|Number=Sing	3	amod	3:amod	_
+3	plano	plano	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj|10:nsubj	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:de	_
+6	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	7:aux	_
+7	chegando	chegar	VERB	_	VerbForm=Ger	0	root	0:root	_
+8	e	e	CCONJ	_	_	10	cc	10:cc	_
+9	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	10	cop	10:cop	_
+10	fantástico	fantástico	ADJ	_	Gender=Masc|Number=Sing	7	conj	7:conj:e	SpaceAfter=No
+11	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0025
+# text = Prêmios mais baixos, cobertura ampla para condições pré-existentes e uma economia substancial para todos.
+1	Prêmios	prêmio	NOUN	_	Gender=Masc|Number=Plur	0	root	0:root	_
+2	mais	mais	ADV	_	_	3	advmod	3:advmod	_
+3	baixos	baixo	ADJ	_	Gender=Masc|Number=Plur	1	amod	1:amod	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	cobertura	cobertura	NOUN	_	Gender=Fem|Number=Sing	1	conj	1:conj:e	_
+6	ampla	amplo	ADJ	_	Gender=Fem|Number=Sing	5	amod	5:amod	_
+7	para	para	ADP	_	_	8	case	8:case	_
+8	condições	condição	NOUN	_	Gender=Fem|Number=Plur	5	nmod	5:nmod:para	_
+9	pré-existentes	pré-existentes	ADJ	_	Number=Plur	8	amod	8:amod	_
+10	e	e	CCONJ	_	_	12	cc	12:cc	_
+11	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	economia	economia	NOUN	_	Gender=Fem|Number=Sing	1	conj	1:conj:e	_
+13	substancial	substancial	ADJ	_	Number=Sing	12	amod	12:amod	_
+14	para	para	ADP	_	_	15	case	15:case	_
+15	todos	todo	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	12	nmod	12:nmod:para	SpaceAfter=No
+16	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0027
+# text = O Obamacare está morto, e os democratas só querem salvar seus doadores de campanha.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Obamacare	Obamacare	PROPN	_	_	4	nsubj	4:nsubj	_
+3	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+4	morto	morto	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	SpaceAfter=No
+5	,	,	PUNCT	_	_	10	punct	10:punct	_
+6	e	e	CCONJ	_	_	10	cc	10:cc	_
+7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	8:det	_
+8	democratas	democrata	NOUN	_	Number=Plur	10	nsubj	10:nsubj|11:nsubj	_
+9	só	só	ADV	_	_	10	advmod	10:advmod	_
+10	querem	querer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	conj	4:conj:e	_
+11	salvar	salvar	VERB	_	VerbForm=Inf	10	xcomp	10:xcomp	_
+12	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	13	det	13:det	_
+13	doadores	doador	NOUN	_	Gender=Masc|Number=Plur	11	obj	11:obj	_
+14	de	de	ADP	_	_	15	case	15:case	_
+15	campanha	campanha	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:de	SpaceAfter=No
+16	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0029
+# text = Vamos trazer um sistema que realmente funciona!
+1	Vamos	ir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	aux	2:aux	_
+2	trazer	trazer	VERB	_	VerbForm=Inf	0	root	0:root	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	sistema	sistema	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj|7:nsubj	_
+5	que	que	PRON	_	PronType=Rel	7	nsubj	4:ref	_
+6	realmente	realmente	ADV	_	_	7	advmod	7:advmod	_
+7	funciona	funcionar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	4:acl:relcl	SpaceAfter=No
+8	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0031
+# text = Este anúncio vem após a recente derrota na tentativa de substituir o Obamacare em abril de 2017.
+1	Este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	2:det	_
+2	anúncio	anúncio	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	vem	vir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	após	após	ADP	_	_	7	case	7:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+6	recente	recente	ADJ	_	Number=Sing	7	amod	7:amod	_
+7	derrota	derrota	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:após	_
+8-9	na	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	tentativa	tentativa	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:em	_
+11	de	de	ADP	_	_	12	mark	12:mark	_
+12	substituir	substituir	VERB	_	VerbForm=Inf	10	acl	10:acl:de	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	Obamacare	Obamacare	PROPN	_	_	12	obj	12:obj	_
+15	em	em	ADP	_	_	16	case	16:case	_
+16	abril	abril	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:em	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	2017	2017	NUM	_	NumType=Card	16	nmod	16:nmod:de	SpaceAfter=No
+19	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0033
+# text = Trump, no entanto, parece confiante de que agora tem a estratégia certa.
+1	Trump	Trump	PROPN	_	_	7	nsubj	7:nsubj|8:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3-4	no	_	_	_	_	_	_	_	_
+3	em	em	ADP	_	ExtPos=CCONJ	7	cc	7:cc	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	fixed	3:fixed	_
+5	entanto	entanto	NOUN	_	Gender=Masc|Number=Sing	3	fixed	3:fixed	SpaceAfter=No
+6	,	,	PUNCT	_	_	3	punct	3:punct	_
+7	parece	parecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	confiante	confiante	ADJ	_	Number=Sing	7	xcomp	7:xcomp	_
+9	de	de	ADP	_	ExtPos=SCONJ	12	mark	12:mark	_
+10	que	que	SCONJ	_	_	9	fixed	9:fixed	_
+11	agora	agora	ADV	_	_	12	advmod	12:advmod	_
+12	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl	8:acl:de_que	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	estratégia	estratégia	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+15	certa	certo	ADJ	_	Gender=Fem|Number=Sing	14	amod	14:amod	SpaceAfter=No
+16	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0035
+# text = "Esse novo plano vai surpreender a todos, e os democratas vão desejar ter apoiado algo tão benéfico para os americanos", declarou.
+1	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+2	Esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	4	det	4:det	_
+3	novo	novo	ADJ	_	Gender=Masc|Number=Sing	4	amod	4:amod	_
+4	plano	plano	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+5	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	6:aux	_
+6	surpreender	surpreender	VERB	_	VerbForm=Inf	25	ccomp:speech	25:ccomp:speech	_
+7	a	a	ADP	_	_	8	case	8:case	_
+8	todos	todo	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	6	obl	6:obl:a	SpaceAfter=No
+9	,	,	PUNCT	_	_	14	punct	14:punct	_
+10	e	e	CCONJ	_	_	14	cc	14:cc	_
+11	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	12:det	_
+12	democratas	democrata	NOUN	_	Number=Plur	14	nsubj	14:nsubj|16:nsubj	_
+13	vão	ir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	aux	14:aux	_
+14	desejar	desejar	VERB	_	VerbForm=Inf	6	conj	6:conj:e|25:ccomp:speech	_
+15	ter	ter	AUX	_	VerbForm=Inf	16	aux	16:aux	_
+16	apoiado	apoiar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	14	xcomp	14:xcomp	_
+17	algo	algo	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	16	obj	16:obj	_
+18	tão	tão	ADV	_	_	19	advmod	19:advmod	_
+19	benéfico	benéfico	ADJ	_	Gender=Masc|Number=Sing	17	amod	17:amod	_
+20	para	para	ADP	_	_	22	case	22:case	_
+21	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	22:det	_
+22	americanos	americano	NOUN	_	Gender=Masc|Number=Plur	19	obl	19:obl:para	SpaceAfter=No
+23	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+24	,	,	PUNCT	_	_	6	punct	6:punct	_
+25	declarou	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+26	.	.	PUNCT	_	_	25	punct	25:punct	_
+
+# sent_id = S0037
+# text = A tensão na península coreana continua a crescer, com a Coreia do Sul e os EUA finalizando os exercícios militares "Foal Eagle", que envolveram 30 mil soldados e provocaram duras ameaças de Pyongyang, incluindo um possível ataque ao porta-aviões Carl Vinson.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	tensão	tensão	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj|9:nsubj|20:nsubj	_
+3-4	na	_	_	_	_	_	_	_	_
+3	em	em	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	península	península	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:em	_
+6	coreana	coreano	ADJ	_	Gender=Fem|Number=Sing	5	amod	5:amod	_
+7	continua	continuar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	a	a	ADP	_	_	9	mark	9:mark	_
+9	crescer	crescer	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	SpaceAfter=No
+10	,	,	PUNCT	_	_	13	punct	13:punct	_
+11	com	com	ADP	_	_	13	case	13:case|19:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	Coreia	Coreia	PROPN	_	_	7	obl	7:obl:com	_
+14-15	do	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	Sul	Sul	PROPN	_	_	13	flat:name	13:flat:name	_
+17	e	e	CCONJ	_	_	19	cc	19:cc	_
+18	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	19:det	_
+19	EUA	EUA	PROPN	_	_	13	conj	7:obl:com|13:conj:e	_
+20	finalizando	finalizar	VERB	_	VerbForm=Ger	7	xcomp	7:xcomp	_
+21	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	22:det	_
+22	exercícios	exercício	NOUN	_	Gender=Masc|Number=Plur	20	obj	20:obj|30:nsubj|35:nsubj	_
+23	militares	militar	ADJ	_	Number=Plur	22	amod	22:amod	_
+24	"	"	PUNCT	_	_	25	punct	25:punct	SpaceAfter=No
+25	Foal	Foal	PROPN	_	_	22	nmod	22:nmod	_
+26	Eagle	Eagle	PROPN	_	_	25	flat:name	25:flat:name	SpaceAfter=No
+27	"	"	PUNCT	_	_	25	punct	25:punct	SpaceAfter=No
+28	,	,	PUNCT	_	_	30	punct	30:punct	_
+29	que	que	PRON	_	PronType=Rel	30	nsubj	22:ref	_
+30	envolveram	envolver	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	22	acl:relcl	22:acl:relcl	_
+31	30	30	NUM	_	NumType=Card	33	nummod	33:nummod	_
+32	mil	mil	NUM	_	NumType=Card	31	flat	31:flat	_
+33	soldados	soldado	NOUN	_	Gender=Masc|Number=Plur	30	obj	30:obj	_
+34	e	e	CCONJ	_	_	35	cc	35:cc	_
+35	provocaram	provocar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	30	conj	22:acl:relcl|30:conj:e	_
+36	duras	duro	ADJ	_	Gender=Fem|Number=Plur	37	amod	37:amod	_
+37	ameaças	ameaça	NOUN	_	Gender=Fem|Number=Plur	35	obj	35:obj	_
+38	de	de	ADP	_	_	39	case	39:case	_
+39	Pyongyang	Pyongyang	PROPN	_	_	37	nmod	37:nmod:de	SpaceAfter=No
+40	,	,	PUNCT	_	_	41	punct	41:punct	_
+41	incluindo	incluir	VERB	_	VerbForm=Ger	37	acl	37:acl	_
+42	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	44	det	44:det	_
+43	possível	possível	ADJ	_	Number=Sing	44	amod	44:amod	_
+44	ataque	ataque	NOUN	_	Gender=Masc|Number=Sing	41	obj	41:obj	_
+45-46	ao	_	_	_	_	_	_	_	_
+45	a	a	ADP	_	_	47	case	47:case	_
+46	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	det	47:det	_
+47	porta-aviões	porta-aviões	NOUN	_	Gender=Masc|Number=Plur	44	nmod	44:nmod:a	_
+48	Carl	Carl	PROPN	_	_	47	nmod	47:nmod	_
+49	Vinson	Vinson	PROPN	_	_	48	flat:name	48:flat:name	SpaceAfter=No
+50	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0039
+# text = Trump concluiu a entrevista reafirmando que "Kim Jong-Un deve entender que não pode continuar brincando com fogo".
+1	Trump	Trump	PROPN	_	_	2	nsubj	2:nsubj	_
+2	concluiu	concluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	entrevista	entrevista	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+5	reafirmando	reafirmar	VERB	_	VerbForm=Ger	2	advcl	2:advcl	_
+6	que	que	SCONJ	_	_	10	mark	10:mark	_
+7	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+8	Kim	Kim	PROPN	_	_	10	nsubj	10:nsubj|11:nsubj	_
+9	Jong-Un	Jong-Un	PROPN	_	_	8	flat:name	8:flat:name	_
+10	deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	ccomp	5:ccomp	_
+11	entender	entender	VERB	_	VerbForm=Inf	10	xcomp	10:xcomp	_
+12	que	que	SCONJ	_	_	14	mark	14:mark	_
+13	não	não	ADV	_	_	14	advmod	14:advmod	_
+14	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	ccomp	11:ccomp	_
+15	continuar	continuar	VERB	_	VerbForm=Inf	14	xcomp	14:xcomp	_
+16	brincando	brincar	VERB	_	VerbForm=Ger	15	xcomp	15:xcomp	_
+17	com	com	ADP	_	_	18	case	18:case	_
+18	fogo	fogo	NOUN	_	Gender=Masc|Number=Sing	16	obl	16:obl:com	SpaceAfter=No
+19	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+20	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0041
+# text = "Ele é astuto, mas enfrentará um poder que nunca viu antes se insistir nesse caminho", alertou.
+1	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+2	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	4:nsubj|7:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+4	astuto	astuto	ADJ	_	Gender=Masc|Number=Sing	21	ccomp:speech	21:ccomp:speech	SpaceAfter=No
+5	,	,	PUNCT	_	_	7	punct	7:punct	_
+6	mas	mas	CCONJ	_	_	7	cc	7:cc	_
+7	enfrentará	enfrentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	conj	4:conj:mas|21:ccomp:speech	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	poder	poder	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj|12:obj	_
+10	que	que	PRON	_	PronType=Rel	12	obj	9:ref	_
+11	nunca	nunca	ADV	_	_	12	advmod	12:advmod	_
+12	viu	ver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	acl:relcl	9:acl:relcl	_
+13	antes	antes	ADV	_	_	12	advmod	12:advmod	_
+14	se	se	SCONJ	_	_	15	mark	15:mark	_
+15	insistir	insistir	VERB	_	Number=Sing|Person=3|VerbForm=Inf	12	advcl	12:advcl:se	_
+16-17	nesse	_	_	_	_	_	_	_	_
+16	em	em	ADP	_	_	18	case	18:case	_
+17	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	18	det	18:det	_
+18	caminho	caminho	NOUN	_	Gender=Masc|Number=Sing	15	obl	15:obl:em	SpaceAfter=No
+19	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+20	,	,	PUNCT	_	_	4	punct	4:punct	_
+21	alertou	alertar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+22	.	.	PUNCT	_	_	21	punct	21:punct	_

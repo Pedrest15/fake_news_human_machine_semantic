@@ -1,0 +1,127 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Um governo sem controle.
+1	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	governo	governo	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+3	sem	sem	ADP	_	_	4	case	4:case	_
+4	controle	controle	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:sem	SpaceAfter=No
+5	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Na delegacia, ladrões dizem que roubam porque o PT também rouba.
+1-2	Na	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	delegacia	delegacia	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:em	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	ladrões	ladrão	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	6:nsubj	_
+6	dizem	dizer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	que	que	SCONJ	_	_	8	mark	8:mark	_
+8	roubam	roubar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	ccomp	6:ccomp	_
+9	porque	porque	SCONJ	_	_	13	mark	13:mark	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	PT	PT	PROPN	_	_	13	nsubj	13:nsubj	_
+12	também	também	ADV	_	_	13	advmod	13:advmod	_
+13	rouba	roubar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	advcl	8:advcl:porque	SpaceAfter=No
+14	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0005
+# text = É óbvio que não podemos defender os bandidos das atitudes que eles cometem...mas cadê o exemplo que teria que vir de cima?.
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	2:cop	_
+2	óbvio	óbvio	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	_
+3	que	que	SCONJ	_	_	5	mark	5:mark	_
+4	não	não	ADV	_	_	5	advmod	5:advmod	_
+5	podemos	poder	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	csubj	2:csubj	_
+6	defender	defender	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	_
+7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	8:det	_
+8	bandidos	bandido	NOUN	_	Gender=Masc|Number=Plur	6	obj	6:obj	_
+9-10	das	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	11:det	_
+11	atitudes	atitude	NOUN	_	Gender=Fem|Number=Plur	6	obl	6:obl:de|15:obj	_
+12	que	que	PRON	_	PronType=Rel	15	obj	11:ref	_
+13	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	15	nsubj	15:nsubj|19:nsubj|21:nsubj	_
+14	cometem...mas	cometem...mas	CCONJ	_	_	15	cc	15:cc	_
+15	cadê	cadê	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	11:acl:relcl	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	exemplo	exemplo	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	15:nsubj|19:nsubj|21:nsubj	_
+18	que	que	PRON	_	PronType=Rel	19	nsubj	17:ref	_
+19	teria	ter	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	17	acl:relcl	17:acl:relcl	_
+20	que	que	ADP	_	_	21	mark	21:mark	_
+21	vir	vir	VERB	_	VerbForm=Inf	19	xcomp	19:xcomp	_
+22	de	de	ADP	_	_	23	case	23:case	_
+23	cima	cima	NOUN	_	Gender=Fem|Number=Sing	21	obl	21:obl:de	SpaceAfter=No
+24	?	?	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+25	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0007
+# text = Veja nesse vídeo "as desculpas" que alguns ladrões deram após serem pegos pela polícia.
+1	Veja	ver	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2-3	nesse	_	_	_	_	_	_	_	_
+2	em	em	ADP	_	_	4	case	4:case	_
+3	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	4	det	4:det	_
+4	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	1	obl	1:obl:em	_
+5	"	"	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+6	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	7:det	_
+7	desculpas	desculpa	NOUN	_	Gender=Fem|Number=Plur	1	obj	1:obj|12:obj	SpaceAfter=No
+8	"	"	PUNCT	_	_	7	punct	7:punct	_
+9	que	que	PRON	_	PronType=Rel	12	obj	7:ref	_
+10	alguns	algum	DET	_	Gender=Masc|Number=Plur|PronType=Ind	11	det	11:det	_
+11	ladrões	ladrão	NOUN	_	Gender=Masc|Number=Plur	12	nsubj	12:nsubj	_
+12	deram	dar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	7	acl:relcl	7:acl:relcl	_
+13	após	após	ADP	_	_	15	mark	15:mark	_
+14	serem	ser	AUX	_	Number=Plur|Person=3|VerbForm=Inf	15	aux:pass	15:aux:pass	_
+15	pegos	pegar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	12	advcl	12:advcl:após	_
+16-17	pela	_	_	_	_	_	_	_	_
+16	por	por	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	polícia	polícia	NOUN	_	Number=Sing	15	obl:agent	15:obl:agent	SpaceAfter=No
+19	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0009
+# text = Fica nítido que o estado perdeu qualquer controle sobre seus cidadãos.
+1	Fica	ficar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	nítido	nítido	ADJ	_	Gender=Masc|Number=Sing	1	xcomp	1:xcomp	_
+3	que	que	SCONJ	_	_	6	mark	6:mark	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	estado	estado	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+6	perdeu	perder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	csubj	2:csubj	_
+7	qualquer	qualquer	DET	_	Number=Sing|PronType=Ind	8	det	8:det	_
+8	controle	controle	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+9	sobre	sobre	ADP	_	_	11	case	11:case	_
+10	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	11	det	11:det	_
+11	cidadãos	cidadão	NOUN	_	Gender=Masc|Number=Plur	8	nmod	8:nmod:sobre	SpaceAfter=No
+12	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0011
+# text = Um dos assaltantes presos chegou a dizer: " Se eles roubam a Petrobras, porque nós não podemos roubar? ".
+1	Um	um	NUM	_	Gender=Masc|NumType=Card	6	nsubj	6:nsubj|8:nsubj	_
+2-3	dos	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	4:det	_
+4	assaltantes	assaltante	NOUN	_	Number=Plur	1	nmod	1:nmod:de	_
+5	presos	prender	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	4	acl	4:acl	_
+6	chegou	chegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	a	a	ADP	_	_	8	mark	8:mark	_
+8	dizer	dizer	VERB	_	VerbForm=Inf	6	xcomp	6:xcomp	SpaceAfter=No
+9	:	:	PUNCT	_	_	20	punct	20:punct	_
+10	"	"	PUNCT	_	_	20	punct	20:punct	_
+11	Se	se	SCONJ	_	_	13	mark	13:mark	_
+12	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	13	nsubj	13:nsubj	_
+13	roubam	roubar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	advcl	20:advcl:se	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	Petrobras	Petrobras	PROPN	_	_	13	obj	13:obj	SpaceAfter=No
+16	,	,	PUNCT	_	_	13	punct	13:punct	_
+17	porque	porque	SCONJ	_	_	20	mark	20:mark	_
+18	nós	nós	PRON	_	Case=Nom|Number=Plur|Person=1|PronType=Prs	20	nsubj	20:nsubj|21:nsubj	_
+19	não	não	ADV	_	_	20	advmod	20:advmod	_
+20	podemos	poder	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	8	ccomp:speech	8:ccomp:speech	_
+21	roubar	roubar	VERB	_	VerbForm=Inf	20	xcomp	20:xcomp	SpaceAfter=No
+22	?	?	PUNCT	_	_	20	punct	20:punct	_
+23	"	"	PUNCT	_	_	20	punct	20:punct	SpaceAfter=No
+24	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0012
+# text = assista:
+1	assista	assistir	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+2	:	:	PUNCT	_	_	1	punct	1:punct	_

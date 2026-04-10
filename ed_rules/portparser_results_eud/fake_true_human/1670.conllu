@@ -1,0 +1,128 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = quem pagou dpvat entre 2014 e 2019 tem direito a r$ 550 em site no whatsapp *atencao:* quem pagou seguro *dpvat* no periodo de 2014 a 2019 *tem direito de receber ate r$550,00* de restituicao do valor pago a mais.
+1	quem	quem	PRON	_	PronType=Ind	8	nsubj	8:nsubj	_
+2	pagou	pagar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+3	dpvat	dpvat	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	2	obj	2:obj	_
+4	entre	entre	ADP	_	_	5	case	5:case	_
+5	2014	2014	NUM	_	NumType=Card	2	obl	2:obl:entre	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	2019	2019	NUM	_	NumType=Card	5	conj	2:obl:entre|5:conj:e	_
+8	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+9	direito	direito	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	_
+10	a	a	ADP	_	_	11	case	11:case	_
+11	r$	r$	SYM	_	_	9	nmod	9:nmod:a	_
+12	550	550	NUM	_	NumType=Card	11	nummod	11:nummod	_
+13	em	em	ADP	_	_	14	case	14:case	_
+14	site	site	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:em	_
+15-16	no	_	_	_	_	_	_	_	_
+15	em	em	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	whatsapp	whatsapp	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	14	nmod	14:nmod:em	_
+18	*	*	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+19	atencao	atencao	NOUN	_	Gender=Fem|Number=Sing	36	parataxis	36:parataxis	SpaceAfter=No
+20	:	:	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+21	*	*	PUNCT	_	_	23	punct	23:punct	_
+22	quem	quem	PRON	_	PronType=Ind	36	nsubj	36:nsubj	_
+23	pagou	pagar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	acl:relcl	22:acl:relcl	_
+24	seguro	seguro	NOUN	_	Gender=Masc|Number=Sing	23	obj	23:obj	_
+25	*	*	PUNCT	_	_	26	punct	26:punct	SpaceAfter=No
+26	dpvat	dpvat	X	_	Foreign=Yes	24	nmod	24:nmod	SpaceAfter=No
+27	*	*	PUNCT	_	_	26	punct	26:punct	_
+28-29	no	_	_	_	_	_	_	_	_
+28	em	em	ADP	_	_	30	case	30:case	_
+29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	30:det	_
+30	periodo	periodo	NOUN	_	Gender=Masc|Number=Sing	23	obl	23:obl:em	_
+31	de	de	ADP	_	_	32	case	32:case	_
+32	2014	2014	NUM	_	NumType=Card	30	nmod	30:nmod:de	_
+33	a	a	ADP	_	_	34	case	34:case	_
+34	2019	2019	NUM	_	NumType=Card	32	nmod	32:nmod:a	_
+35	*	*	PUNCT	_	_	23	punct	23:punct	SpaceAfter=No
+36	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	dep	8:dep	_
+37	direito	direito	NOUN	_	Gender=Masc|Number=Sing	36	obj	36:obj	_
+38	de	de	ADP	_	_	39	mark	39:mark	_
+39	receber	receber	VERB	_	VerbForm=Inf	37	acl	37:acl:de	_
+40	ate	ate	ADP	_	_	41	case	41:case	_
+41	r$550,00	r$550,00	NUM	_	NumType=Card	39	obl	39:obl:ate	SpaceAfter=No
+42	*	*	PUNCT	_	_	39	punct	39:punct	_
+43	de	de	ADP	_	_	44	case	44:case	_
+44	restituicao	restituicao	NOUN	_	Gender=Fem|Number=Sing	39	obl	39:obl:de	_
+45-46	do	_	_	_	_	_	_	_	_
+45	de	de	ADP	_	_	47	case	47:case	_
+46	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	det	47:det	_
+47	valor	valor	NOUN	_	Gender=Masc|Number=Sing	44	nmod	44:nmod:de	_
+48	pago	pagar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	47	acl	47:acl	_
+49	a	a	ADP	_	_	50	case	50:case	_
+50	mais	mais	ADV	_	_	48	advmod	48:advmod	SpaceAfter=No
+51	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0003
+# text = *confira se voce tem direito a ser restituido acessando:* [site]p.s.
+1	*	*	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+2	confira	conferir	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+3	se	se	SCONJ	_	_	5	mark	5:mark	_
+4	voce	voce	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	5	nsubj	5:nsubj	_
+5	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	2:ccomp	_
+6	direito	direito	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+7	a	a	ADP	_	_	9	mark	9:mark	_
+8	ser	ser	AUX	_	VerbForm=Inf	9	aux:pass	9:aux:pass	_
+9	restituido	restituer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	6	acl	6:acl:a	_
+10	acessando	acessar	VERB	_	VerbForm=Ger	5	advcl	5:advcl	SpaceAfter=No
+11	:	:	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+12	*	*	PUNCT	_	_	10	punct	10:punct	_
+13	[	[	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+14	site]p.s	site]p.s	NOUN	_	_	12	parataxis	12:parataxis	SpaceAfter=No
+15	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = : esse artigo e uma sugestao de leitores do boatos.org.
+1	:	:	PUNCT	_	_	6	punct	6:punct	_
+2	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	3	det	3:det	_
+3	artigo	artigo	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+4	e	e	CCONJ	_	_	6	cc	6:cc	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	sugestao	sugestao	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	leitores	leitor	NOUN	_	Gender=Masc|Number=Plur	6	nmod	6:nmod:de	_
+9-10	do	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	boatos.org	boatos.org	SYM	_	_	8	nmod	8:nmod:de	SpaceAfter=No
+12	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0007
+# text = se voce quiser sugerir um tema ao boatos.org, entre em contato com a gente pelo site, facebook e whatsapp no telefone (61) 99177-9164.
+1	se	se	SCONJ	_	_	3	mark	3:mark	_
+2	voce	voce	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	3	nsubj	3:nsubj|4:nsubj	_
+3	quiser	querer	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	11	advcl	11:advcl:se	_
+4	sugerir	sugerir	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	tema	tema	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7-8	ao	_	_	_	_	_	_	_	_
+7	a	a	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	boatos.org	boatos.org	SYM	_	_	4	obl	4:obl:a	SpaceAfter=No
+10	,	,	PUNCT	_	_	3	punct	3:punct	_
+11	entre	entrar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+12	em	em	ADP	_	_	13	case	13:case	_
+13	contato	contato	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:em	_
+14	com	com	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	gente	gente	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:com	_
+17-18	pelo	_	_	_	_	_	_	_	_
+17	por	por	ADP	_	_	19	case	19:case|21:case|23:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	site	site	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:por	SpaceAfter=No
+20	,	,	PUNCT	_	_	21	punct	21:punct	_
+21	facebook	facebook	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	19	conj	11:obl:por|19:conj:e	_
+22	e	e	CCONJ	_	_	23	cc	23:cc	_
+23	whatsapp	whatsapp	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	19	conj	11:obl:por|19:conj:e	_
+24-25	no	_	_	_	_	_	_	_	_
+24	em	em	ADP	_	_	26	case	26:case	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	telefone	telefone	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:em	_
+27	(	(	PUNCT	_	_	28	punct	28:punct	SpaceAfter=No
+28	61	61	NUM	_	NumType=Card	26	appos	26:appos	SpaceAfter=No
+29	)	)	PUNCT	_	_	28	punct	28:punct	_
+30	99177-9164	99177-9164	NUM	_	NumType=Card	28	nmod	28:nmod	SpaceAfter=No
+31	.	.	PUNCT	_	_	11	punct	11:punct	_

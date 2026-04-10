@@ -1,0 +1,601 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Dr.
+1	Dr.	Dr.	PUNCT	_	_	0	root	0:root	_
+
+# sent_id = S0003
+# text = Rafael Onuki Sato, renomado oncologista, revelou em uma entrevista bombástica que o chá de folhas de graviola é capaz de matar células cancerígenas com uma eficácia mil vezes superior à quimioterapia convencional.
+1	Rafael	Rafael	PROPN	_	_	8	nsubj	8:nsubj	_
+2	Onuki	Onuki	PROPN	_	_	1	flat:name	1:flat:name	_
+3	Sato	Sato	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+4	,	,	PUNCT	_	_	6	punct	6:punct	_
+5	renomado	renomado	ADJ	_	Gender=Masc|Number=Sing	6	amod	6:amod	_
+6	oncologista	oncologista	NOUN	_	Number=Sing	1	appos	1:appos	SpaceAfter=No
+7	,	,	PUNCT	_	_	6	punct	6:punct	_
+8	revelou	revelar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	entrevista	entrevista	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:em	_
+12	bombástica	bombástico	ADJ	_	Gender=Fem|Number=Sing	11	amod	11:amod	_
+13	que	que	SCONJ	_	_	21	mark	21:mark	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	chá	chá	NOUN	_	Gender=Masc|Number=Sing	21	nsubj	21:nsubj	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	folhas	folha	NOUN	_	Gender=Fem|Number=Plur	15	nmod	15:nmod:de	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	graviola	graviola	NOUN	_	Gender=Fem|Number=Sing	17	nmod	17:nmod:de	_
+20	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	cop	21:cop	_
+21	capaz	capaz	ADJ	_	Number=Sing	8	ccomp	8:ccomp	_
+22	de	de	ADP	_	_	23	mark	23:mark	_
+23	matar	matar	VERB	_	VerbForm=Inf	21	acl	21:acl:de	_
+24	células	célula	NOUN	_	Gender=Fem|Number=Plur	23	obj	23:obj	_
+25	cancerígenas	cancerígeno	ADJ	_	Gender=Fem|Number=Plur	24	amod	24:amod	_
+26	com	com	ADP	_	_	28	case	28:case	_
+27	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	eficácia	eficácia	NOUN	_	Gender=Fem|Number=Sing	23	obl	23:obl:com	_
+29	mil	mil	NUM	_	NumType=Card	30	nummod	30:nummod	_
+30	vezes	vez	NOUN	_	Gender=Fem|Number=Plur	31	obl	31:obl	_
+31	superior	superior	ADJ	_	Number=Sing	28	amod	28:amod	_
+32-33	à	_	_	_	_	_	_	_	_
+32	a	a	ADP	_	_	34	case	34:case	_
+33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	34:det	_
+34	quimioterapia	quimioterapia	NOUN	_	Gender=Fem|Number=Sing	31	obl	31:obl:a	_
+35	convencional	convencional	ADJ	_	Number=Sing	34	amod	34:amod	SpaceAfter=No
+36	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0005
+# text = O áudio, que tem circulado amplamente pelo WhatsApp, detalha como a graviola pode ser uma verdadeira revolução no tratamento do câncer.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	áudio	áudio	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	6:nsubj|12:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
+4	que	que	PRON	_	PronType=Rel	6	nsubj	2:ref	_
+5	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	6:aux	_
+6	circulado	circular	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	2	acl:relcl	2:acl:relcl	_
+7	amplamente	amplamente	ADV	_	_	6	advmod	6:advmod	_
+8-9	pelo	_	_	_	_	_	_	_	_
+8	por	por	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	WhatsApp	WhatsApp	PROPN	_	_	6	obl	6:obl:por	SpaceAfter=No
+11	,	,	PUNCT	_	_	6	punct	6:punct	_
+12	detalha	detalhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+13	como	como	ADV	_	_	16	advmod	16:advmod	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	graviola	graviola	NOUN	_	Gender=Fem|Number=Sing	16	nsubj	16:nsubj|20:nsubj	_
+16	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	ccomp	12:ccomp	_
+17	ser	ser	AUX	_	VerbForm=Inf	20	cop	20:cop	_
+18	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+19	verdadeira	verdadeiro	ADJ	_	Gender=Fem|Number=Sing	20	amod	20:amod	_
+20	revolução	revolução	NOUN	_	Gender=Fem|Number=Sing	16	xcomp	16:xcomp	_
+21-22	no	_	_	_	_	_	_	_	_
+21	em	em	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	tratamento	tratamento	NOUN	_	Gender=Masc|Number=Sing	20	nmod	20:nmod:em	_
+24-25	do	_	_	_	_	_	_	_	_
+24	de	de	ADP	_	_	26	case	26:case	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	câncer	câncer	NOUN	_	Gender=Masc|Number=Sing	23	nmod	23:nmod:de	SpaceAfter=No
+27	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0007
+# text = "Os estudos mais recentes, que ainda não foram divulgados pela grande mídia, mostram que as cetogeninas presentes na graviola destroem células cancerosas de maneira impressionante", afirmou o médico.
+1	"	"	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+2	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	3:det	_
+3	estudos	estudo	NOUN	_	Gender=Masc|Number=Plur	17	nsubj	11:nsubj:pass|17:nsubj	_
+4	mais	mais	ADV	_	_	5	advmod	5:advmod	_
+5	recentes	recente	ADJ	_	Number=Plur	3	amod	3:amod	SpaceAfter=No
+6	,	,	PUNCT	_	_	11	punct	11:punct	_
+7	que	que	PRON	_	PronType=Rel	11	nsubj:pass	3:ref	_
+8	ainda	ainda	ADV	_	_	11	advmod	11:advmod	_
+9	não	não	ADV	_	_	11	advmod	11:advmod	_
+10	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	11	aux:pass	11:aux:pass	_
+11	divulgados	divulgar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	3	acl:relcl	3:acl:relcl	_
+12-13	pela	_	_	_	_	_	_	_	_
+12	por	por	ADP	_	_	15	case	15:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+14	grande	grande	ADJ	_	Number=Sing	15	amod	15:amod	_
+15	mídia	mídia	NOUN	_	Gender=Fem|Number=Sing	11	obl:agent	11:obl:agent	SpaceAfter=No
+16	,	,	PUNCT	_	_	11	punct	11:punct	_
+17	mostram	mostrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	33	ccomp:speech	33:ccomp:speech	_
+18	que	que	SCONJ	_	_	25	mark	25:mark	_
+19	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	20:det	_
+20	cetogeninas	cetogenina	NOUN	_	Gender=Fem|Number=Plur	25	nsubj	25:nsubj	_
+21	presentes	presente	ADJ	_	Number=Plur	20	amod	20:amod	_
+22-23	na	_	_	_	_	_	_	_	_
+22	em	em	ADP	_	_	24	case	24:case	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	graviola	graviola	NOUN	_	Gender=Fem|Number=Sing	21	obl	21:obl:em	_
+25	destroem	destruir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	ccomp	17:ccomp	_
+26	células	célula	NOUN	_	Gender=Fem|Number=Plur	25	obj	25:obj	_
+27	cancerosas	canceroso	ADJ	_	Gender=Fem|Number=Plur	26	amod	26:amod	_
+28	de	de	ADP	_	_	29	case	29:case	_
+29	maneira	maneira	NOUN	_	Gender=Fem|Number=Sing	25	obl	25:obl:de	_
+30	impressionante	impressionante	ADJ	_	Number=Sing	29	amod	29:amod	SpaceAfter=No
+31	"	"	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+32	,	,	PUNCT	_	_	17	punct	17:punct	_
+33	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+34	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	35:det	_
+35	médico	médico	NOUN	_	Gender=Masc|Number=Sing	33	nsubj	33:nsubj	SpaceAfter=No
+36	.	.	PUNCT	_	_	33	punct	33:punct	_
+
+# sent_id = S0009
+# text = Além disso, o epigalato catequina galato encontrado nas folhas aumenta a imunidade em até 1000 vezes.
+1	Além	além	ADV	_	_	13	advmod	13:advmod	_
+2-3	disso	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	obl	1:obl:de	_
+4	,	,	PUNCT	_	_	1	punct	1:punct	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	epigalato	epigalato	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	13:nsubj	_
+7	catequina	catequina	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod	_
+8	galato	galato	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod	_
+9	encontrado	encontrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	6	acl	6:acl	_
+10-11	nas	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	12:det	_
+12	folhas	folha	NOUN	_	Gender=Fem|Number=Plur	9	obl	9:obl:em	_
+13	aumenta	aumentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	imunidade	imunidade	NOUN	_	Gender=Fem|Number=Sing	13	obj	13:obj	_
+16	em	em	ADP	_	_	19	case	19:case	_
+17	até	até	ADP	_	_	18	case	18:case	_
+18	1000	1000	NUM	_	NumType=Card	19	nummod	19:nummod	_
+19	vezes	vez	NOUN	_	Gender=Fem|Number=Plur	13	obl	13:obl:em	SpaceAfter=No
+20	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0011
+# text = Isso é um divisor de águas para pacientes que buscam alternativas naturais eficazes.
+1	Isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	4	nsubj	4:nsubj	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	divisor	divisor	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	águas	água	NOUN	_	Gender=Fem|Number=Plur	4	nmod	4:nmod:de	_
+7	para	para	ADP	_	_	8	case	8:case	_
+8	pacientes	paciente	NOUN	_	Number=Plur	4	nmod	4:nmod:para|10:nsubj	_
+9	que	que	PRON	_	PronType=Rel	10	nsubj	8:ref	_
+10	buscam	buscar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	8:acl:relcl	_
+11	alternativas	alternativa	NOUN	_	Gender=Fem|Number=Plur	10	obj	10:obj	_
+12	naturais	natural	ADJ	_	Number=Plur	11	amod	11:amod	_
+13	eficazes	eficaz	ADJ	_	Number=Plur	11	amod	11:amod	SpaceAfter=No
+14	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0015
+# text = A entrevista, que supostamente ocorreu em uma grande emissora de rádio, gerou enorme repercussão, especialmente pela clara e direta oposição do Dr.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	entrevista	entrevista	NOUN	_	Gender=Fem|Number=Sing	14	nsubj	6:nsubj|14:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
+4	que	que	PRON	_	PronType=Rel	6	nsubj	2:ref	_
+5	supostamente	supostamente	ADV	_	_	6	advmod	6:advmod	_
+6	ocorreu	ocorrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+7	em	em	ADP	_	_	10	case	10:case	_
+8	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+9	grande	grande	ADJ	_	Number=Sing	10	amod	10:amod	_
+10	emissora	emissor	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:em	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	rádio	rádio	NOUN	_	Number=Sing	10	nmod	10:nmod:de	SpaceAfter=No
+13	,	,	PUNCT	_	_	6	punct	6:punct	_
+14	gerou	gerar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+15	enorme	enorme	ADJ	_	Number=Sing	16	amod	16:amod	_
+16	repercussão	repercussão	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	SpaceAfter=No
+17	,	,	PUNCT	_	_	24	punct	24:punct	_
+18	especialmente	especialmente	ADV	_	_	24	advmod	24:advmod	_
+19-20	pela	_	_	_	_	_	_	_	_
+19	por	por	ADP	_	_	24	case	24:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+21	clara	claro	ADJ	_	Gender=Fem|Number=Sing	24	amod	24:amod	_
+22	e	e	CCONJ	_	_	23	cc	23:cc	_
+23	direta	direto	ADJ	_	Gender=Fem|Number=Sing	21	conj	21:conj:e|24:amod	_
+24	oposição	oposição	NOUN	_	Gender=Fem|Number=Sing	14	obl	14:obl:por	_
+25-26	do	_	_	_	_	_	_	_	_
+25	de	de	ADP	_	_	27	case	27:case	_
+26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	Dr.	Dr.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0017
+# text = Sato às práticas tradicionais da indústria farmacêutica.
+1	Sato	satar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2-3	às	_	_	_	_	_	_	_	_
+2	a	a	ADP	_	_	4	case	4:case	_
+3	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	4:det	_
+4	práticas	prática	NOUN	_	Gender=Fem|Number=Plur	1	obl	1:obl:a	_
+5	tradicionais	tradicional	ADJ	_	Number=Plur	4	amod	4:amod	_
+6-7	da	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	indústria	indústria	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:de	_
+9	farmacêutica	farmacêutico	ADJ	_	Gender=Fem|Number=Sing	8	amod	8:amod	SpaceAfter=No
+10	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0019
+# text = Ele recomendou que, como medida preventiva, a população deveria consumir regularmente a fruta e o chá de graviola.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj	_
+2	recomendou	recomendar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	11	mark	11:mark	SpaceAfter=No
+4	,	,	PUNCT	_	_	6	punct	6:punct	_
+5	como	como	ADP	_	_	6	case	6:case	_
+6	medida	medida	NOUN	_	Gender=Fem|Number=Sing	11	obl	11:obl:como	_
+7	preventiva	preventivo	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	SpaceAfter=No
+8	,	,	PUNCT	_	_	6	punct	6:punct	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	população	população	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	11:nsubj|12:nsubj	_
+11	deveria	dever	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	2	ccomp	2:ccomp	_
+12	consumir	consumir	VERB	_	VerbForm=Inf	11	xcomp	11:xcomp	_
+13	regularmente	regularmente	ADV	_	_	12	advmod	12:advmod	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	fruta	fruta	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+16	e	e	CCONJ	_	_	18	cc	18:cc	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	chá	chá	NOUN	_	Gender=Masc|Number=Sing	15	conj	12:obj|15:conj:e	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	graviola	graviola	NOUN	_	Gender=Fem|Number=Sing	18	nmod	18:nmod:de	SpaceAfter=No
+21	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0021
+# text = "Não se trata apenas de uma alternativa, mas de um método natural que pode salvar vidas", declarou o oncologista.
+1	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+2	Não	não	ADV	_	_	4	advmod	4:advmod	_
+3	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	4	expl:impers	4:expl:impers	_
+4	trata	tratar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	ccomp:speech	21:ccomp:speech	_
+5	apenas	apenas	ADV	_	_	8	advmod	8:advmod	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	alternativa	alternativa	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:de	SpaceAfter=No
+9	,	,	PUNCT	_	_	13	punct	13:punct	_
+10	mas	mas	CCONJ	_	_	13	cc	13:cc	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	método	método	NOUN	_	Gender=Masc|Number=Sing	4	conj	4:conj:mas|16:nsubj|17:nsubj|21:ccomp:speech	_
+14	natural	natural	ADJ	_	Number=Sing	13	amod	13:amod	_
+15	que	que	PRON	_	PronType=Rel	16	nsubj	13:ref	_
+16	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	acl:relcl	13:acl:relcl	_
+17	salvar	salvar	VERB	_	VerbForm=Inf	16	xcomp	16:xcomp	_
+18	vidas	vida	NOUN	_	Gender=Fem|Number=Plur	17	obj	17:obj	SpaceAfter=No
+19	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+20	,	,	PUNCT	_	_	4	punct	4:punct	_
+21	declarou	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	oncologista	oncologista	NOUN	_	Number=Sing	21	nsubj	21:nsubj	SpaceAfter=No
+24	.	.	PUNCT	_	_	21	punct	21:punct	_
+
+# sent_id = S0023
+# text = Chegou a hora de repensarmos a nossa abordagem à saúde, focando na alimentação e nos remédios da natureza.
+1	Chegou	chegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	hora	hora	NOUN	_	Gender=Fem|Number=Sing	1	nsubj	1:nsubj	_
+4	de	de	ADP	_	_	5	mark	5:mark	_
+5	repensarmos	repensar	VERB	_	Mood=Sub|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	3	acl	3:acl:de	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+7	nossa	nosso	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	8	det	8:det	_
+8	abordagem	abordagem	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+9-10	à	_	_	_	_	_	_	_	_
+9	a	a	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:a	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	focando	focar	VERB	_	VerbForm=Ger	5	advcl	5:advcl	_
+14-15	na	_	_	_	_	_	_	_	_
+14	em	em	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	alimentação	alimentação	NOUN	_	Gender=Fem|Number=Sing	13	obl	13:obl:em	_
+17	e	e	CCONJ	_	_	20	cc	20:cc	_
+18-19	nos	_	_	_	_	_	_	_	_
+18	em	em	ADP	_	_	20	case	20:case	_
+19	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	20:det	_
+20	remédios	remédio	NOUN	_	Gender=Masc|Number=Plur	16	conj	13:obl:em|16:conj:e	_
+21-22	da	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	natureza	natureza	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:de	SpaceAfter=No
+24	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0027
+# text = O delegado Edgard Soriani, do 1o Distrito Policial de Londrina, afirmou que a mensagem original que atribuía falsamente o áudio ao Dr.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	delegado	delegado	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	14:nsubj|20:nsubj	_
+3	Edgard	Edgard	PROPN	_	_	2	nmod	2:nmod	_
+4	Soriani	Soriani	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	9	punct	9:punct	_
+6-7	do	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	9	case	9:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+8	1o	1o	ADJ	_	Gender=Masc|NumType=Ord	9	amod	9:amod	_
+9	Distrito	Distrito	PROPN	_	_	2	nmod	2:nmod:de	_
+10	Policial	Policial	PROPN	_	_	9	flat:name	9:flat:name	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	Londrina	Londrina	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+13	,	,	PUNCT	_	_	9	punct	9:punct	_
+14	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+15	que	que	SCONJ	_	_	17	mark	17:mark	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	mensagem	mensagem	NOUN	_	Gender=Fem|Number=Sing	14	nsubj	14:nsubj|20:nsubj	_
+18	original	original	ADJ	_	Number=Sing	17	amod	17:amod	_
+19	que	que	PRON	_	PronType=Rel	20	nsubj	17:ref	_
+20	atribuía	atribuir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	17	acl:relcl	17:acl:relcl	_
+21	falsamente	falsamente	ADV	_	_	20	advmod	20:advmod	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	áudio	áudio	NOUN	_	Gender=Masc|Number=Sing	20	obj	20:obj	_
+24-25	ao	_	_	_	_	_	_	_	_
+24	a	a	ADP	_	_	26	case	26:case	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	Dr.	Dr.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0029
+# text = Sato poderia ser enquadrada como crime de falsa identidade, com pena de até dois anos de reclusão.
+1	Sato	Sato	PROPN	_	_	2	nsubj	2:nsubj|4:nsubj:pass	_
+2	poderia	poder	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+3	ser	ser	AUX	_	VerbForm=Inf	4	aux:pass	4:aux:pass	_
+4	enquadrada	enquadrar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	2	xcomp	2:xcomp	_
+5	como	como	ADP	_	_	6	case	6:case	_
+6	crime	crime	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:como	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	falsa	falso	ADJ	_	Gender=Fem|Number=Sing	9	amod	9:amod	_
+9	identidade	identidade	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de	SpaceAfter=No
+10	,	,	PUNCT	_	_	12	punct	12:punct	_
+11	com	com	ADP	_	_	12	case	12:case	_
+12	pena	pena	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:com	_
+13	de	de	ADP	_	_	16	case	16:case	_
+14	até	até	ADP	_	_	15	case	15:case	_
+15	dois	dois	NUM	_	Gender=Masc|NumType=Card	16	nummod	16:nummod	_
+16	anos	ano	NOUN	_	Gender=Masc|Number=Plur	12	nmod	12:nmod:de	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	reclusão	reclusão	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:de	SpaceAfter=No
+19	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0031
+# text = Contudo, o conteúdo do áudio, agora amplamente aceito como verdadeiro, está sendo analisado por especialistas em busca de possíveis exageros.
+1	Contudo	contudo	CCONJ	_	_	17	cc	17:cc	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	conteúdo	conteúdo	NOUN	_	Gender=Masc|Number=Sing	17	nsubj:pass	17:nsubj:pass	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	áudio	áudio	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:de	SpaceAfter=No
+8	,	,	PUNCT	_	_	11	punct	11:punct	_
+9	agora	agora	ADV	_	_	11	advmod	11:advmod	_
+10	amplamente	amplamente	ADV	_	_	11	advmod	11:advmod	_
+11	aceito	aceitar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	4	acl	4:acl	_
+12	como	como	ADP	_	_	13	case	13:case	_
+13	verdadeiro	verdadeiro	ADJ	_	Gender=Masc|Number=Sing	11	obl	11:obl:como	SpaceAfter=No
+14	,	,	PUNCT	_	_	11	punct	11:punct	_
+15	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux	17:aux	_
+16	sendo	ser	AUX	_	VerbForm=Ger	17	aux:pass	17:aux:pass	_
+17	analisado	analisar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+18	por	por	ADP	_	_	19	case	19:case	_
+19	especialistas	especialista	NOUN	_	Number=Plur	17	obl:agent	17:obl:agent	_
+20	em	em	ADP	_	_	21	case	21:case	_
+21	busca	busca	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:em	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	possíveis	possível	ADJ	_	Number=Plur	24	amod	24:amod	_
+24	exageros	exagero	NOUN	_	Gender=Masc|Number=Plur	21	nmod	21:nmod:de	SpaceAfter=No
+25	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0033
+# text = Dr.
+1	Dr.	Dr.	PUNCT	_	_	0	root	0:root	_
+
+# sent_id = S0035
+# text = Sato também abordou a questão dos antibióticos nos alimentos de origem animal, sugerindo que a resistência bacteriana é um efeito direto do consumo de carnes tratadas com esses medicamentos.
+1	Sato	Sato	PROPN	_	_	3	nsubj	3:nsubj	_
+2	também	também	ADV	_	_	3	advmod	3:advmod	_
+3	abordou	abordar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	questão	questão	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+6-7	dos	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	8:det	_
+8	antibióticos	antibiótico	NOUN	_	Gender=Masc|Number=Plur	5	nmod	5:nmod:de	_
+9-10	nos	_	_	_	_	_	_	_	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	11:det	_
+11	alimentos	alimento	NOUN	_	Gender=Masc|Number=Plur	5	nmod	5:nmod:em	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	origem	origem	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:de	_
+14	animal	animal	ADJ	_	Number=Sing	13	amod	13:amod	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	sugerindo	sugerir	VERB	_	VerbForm=Ger	3	advcl	3:advcl	_
+17	que	que	SCONJ	_	_	23	mark	23:mark	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	resistência	resistência	NOUN	_	Gender=Fem|Number=Sing	23	nsubj	23:nsubj	_
+20	bacteriana	bacteriano	ADJ	_	Gender=Fem|Number=Sing	19	amod	19:amod	_
+21	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	cop	23:cop	_
+22	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	efeito	efeito	NOUN	_	Gender=Masc|Number=Sing	16	ccomp	16:ccomp	_
+24	direto	direto	ADJ	_	Gender=Masc|Number=Sing	23	amod	23:amod	_
+25-26	do	_	_	_	_	_	_	_	_
+25	de	de	ADP	_	_	27	case	27:case	_
+26	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	27:det	_
+27	consumo	consumo	NOUN	_	Gender=Masc|Number=Sing	23	nmod	23:nmod:de	_
+28	de	de	ADP	_	_	29	case	29:case	_
+29	carnes	carne	NOUN	_	Gender=Fem|Number=Plur	27	nmod	27:nmod:de	_
+30	tratadas	tratar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	29	acl	29:acl	_
+31	com	com	ADP	_	_	33	case	33:case	_
+32	esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	33	det	33:det	_
+33	medicamentos	medicamento	NOUN	_	Gender=Masc|Number=Plur	30	obl	30:obl:com	SpaceAfter=No
+34	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0037
+# text = A solução está em consumir frutos naturais e utilizar técnicas simples, como a descontaminação de alimentos com iodo a 2%, para garantir uma alimentação mais saudável e eficaz na prevenção de doenças.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	solução	solução	NOUN	_	Gender=Fem|Number=Sing	5	nsubj:outer	5:nsubj:outer	_
+3	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+4	em	em	ADP	_	_	5	mark	5:mark|9:mark	_
+5	consumir	consumir	VERB	_	VerbForm=Inf	0	root	0:root	_
+6	frutos	fruto	NOUN	_	Gender=Masc|Number=Plur	5	obj	5:obj	_
+7	naturais	natural	ADJ	_	Number=Plur	6	amod	6:amod	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	utilizar	utilizar	VERB	_	VerbForm=Inf	5	conj	5:conj:e	_
+10	técnicas	técnica	NOUN	_	Gender=Fem|Number=Plur	9	obj	9:obj	_
+11	simples	simples	ADJ	_	_	10	amod	10:amod	SpaceAfter=No
+12	,	,	PUNCT	_	_	15	punct	15:punct	_
+13	como	como	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	descontaminação	descontaminação	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:como	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	alimentos	alimento	NOUN	_	Gender=Masc|Number=Plur	15	nmod	15:nmod:de	_
+18	com	com	ADP	_	_	19	case	19:case	_
+19	iodo	iodo	NOUN	_	Gender=Masc|Number=Sing	17	nmod	17:nmod:com	_
+20	a	a	ADP	_	_	22	case	22:case	_
+21	2	2	NUM	_	NumType=Card	22	nummod	22:nummod	SpaceAfter=No
+22	%	%	SYM	_	_	19	nmod	19:nmod:a	SpaceAfter=No
+23	,	,	PUNCT	_	_	15	punct	15:punct	_
+24	para	para	ADP	_	_	25	mark	25:mark	_
+25	garantir	garantir	VERB	_	VerbForm=Inf	5	advcl	5:advcl:para|9:advcl:para	_
+26	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	alimentação	alimentação	NOUN	_	Gender=Fem|Number=Sing	25	obj	25:obj	_
+28	mais	mais	ADV	_	_	29	advmod	29:advmod	_
+29	saudável	saudável	ADJ	_	Number=Sing	27	amod	27:amod	_
+30	e	e	CCONJ	_	_	31	cc	31:cc	_
+31	eficaz	eficaz	ADJ	_	Number=Sing	29	conj	27:amod|29:conj:e	_
+32-33	na	_	_	_	_	_	_	_	_
+32	em	em	ADP	_	_	34	case	34:case	_
+33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	34:det	_
+34	prevenção	prevenção	NOUN	_	Gender=Fem|Number=Sing	29	obl	29:obl:em|31:obl:em	_
+35	de	de	ADP	_	_	36	case	36:case	_
+36	doenças	doença	NOUN	_	Gender=Fem|Number=Plur	34	nmod	34:nmod:de	SpaceAfter=No
+37	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0041
+# text = A Sociedade Brasileira de Oncologia Clínica ainda não se manifestou oficialmente sobre as novas alegações, mas a população já se mostra entusiasmada com a possibilidade de um tratamento natural tão poderoso.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Sociedade	Sociedade	PROPN	_	_	10	nsubj	10:nsubj	_
+3	Brasileira	Brasileira	PROPN	_	_	2	flat:name	2:flat:name	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	Oncologia	Oncologia	PROPN	_	_	2	flat:name	2:flat:name	_
+6	Clínica	Clínica	PROPN	_	_	2	flat:name	2:flat:name	_
+7	ainda	ainda	ADV	_	_	10	advmod	10:advmod	_
+8	não	não	ADV	_	_	10	advmod	10:advmod	_
+9	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	10	expl	10:expl	_
+10	manifestou	manifestar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+11	oficialmente	oficialmente	ADV	_	_	10	advmod	10:advmod	_
+12	sobre	sobre	ADP	_	_	15	case	15:case	_
+13	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	15:det	_
+14	novas	novo	ADJ	_	Gender=Fem|Number=Plur	15	amod	15:amod	_
+15	alegações	alegação	NOUN	_	Gender=Fem|Number=Plur	10	obl	10:obl:sobre	SpaceAfter=No
+16	,	,	PUNCT	_	_	22	punct	22:punct	_
+17	mas	mas	CCONJ	_	_	22	cc	22:cc	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	população	população	NOUN	_	Gender=Fem|Number=Sing	22	nsubj	22:nsubj|23:nsubj	_
+20	já	já	ADV	_	_	22	advmod	22:advmod	_
+21	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	22	expl	22:expl	_
+22	mostra	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	conj	10:conj:mas	_
+23	entusiasmada	entusiasmado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	22	xcomp	22:xcomp	_
+24	com	com	ADP	_	_	26	case	26:case	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	possibilidade	possibilidade	NOUN	_	Gender=Fem|Number=Sing	23	obl	23:obl:com	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	29	det	29:det	_
+29	tratamento	tratamento	NOUN	_	Gender=Masc|Number=Sing	26	nmod	26:nmod:de	_
+30	natural	natural	ADJ	_	Number=Sing	29	amod	29:amod	_
+31	tão	tão	ADV	_	_	32	advmod	32:advmod	_
+32	poderoso	poderoso	ADJ	_	Gender=Masc|Number=Sing	29	amod	29:amod	SpaceAfter=No
+33	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0043
+# text = Pacientes de todo o país têm procurado o Dr.
+1	Pacientes	paciente	NOUN	_	Number=Plur	7	nsubj	7:nsubj	_
+2	de	de	ADP	_	_	5	case	5:case	_
+3	todo	todo	DET	_	Gender=Masc|Number=Sing|PronType=Ind	5	det	5:det	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	país	país	NOUN	_	Gender=Masc|Number=Sing	1	nmod	1:nmod:de	_
+6	têm	ter	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux	7:aux	_
+7	procurado	procurar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	Dr.	Dr.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0045
+# text = Sato para obter mais informações e orientações sobre como incorporar a graviola em seus regimes de tratamento.
+1	Sato	Sato	PROPN	_	_	0	root	0:root	_
+2	para	para	ADP	_	_	3	mark	3:mark	_
+3	obter	obter	VERB	_	VerbForm=Inf	1	advcl	1:advcl:para	_
+4	mais	mais	DET	_	PronType=Ind	5	det	5:det	_
+5	informações	informação	NOUN	_	Gender=Fem|Number=Plur	3	obj	3:obj	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	orientações	orientação	NOUN	_	Gender=Fem|Number=Plur	5	conj	3:obj|5:conj:e	_
+8	sobre	sobre	ADP	_	_	10	mark	10:mark	_
+9	como	como	ADV	_	_	10	advmod	10:advmod	_
+10	incorporar	incorporar	VERB	_	VerbForm=Inf	5	acl	5:acl:sobre|7:acl:sobre	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	graviola	graviola	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	15	det	15:det	_
+15	regimes	regime	NOUN	_	Gender=Masc|Number=Plur	10	obl	10:obl:em	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	tratamento	tratamento	NOUN	_	Gender=Masc|Number=Sing	15	nmod	15:nmod:de	SpaceAfter=No
+18	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0047
+# text = "É um momento de esperança", disse um paciente em mensagem enviada ao oncologista.
+1	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+2	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+3	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	momento	momento	NOUN	_	Gender=Masc|Number=Sing	9	ccomp:speech	9:ccomp:speech	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	esperança	esperança	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:de	SpaceAfter=No
+7	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+8	,	,	PUNCT	_	_	4	punct	4:punct	_
+9	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	paciente	paciente	NOUN	_	Number=Sing	9	nsubj	9:nsubj	_
+12	em	em	ADP	_	_	13	case	13:case	_
+13	mensagem	mensagem	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:em	_
+14	enviada	enviar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	13	acl	13:acl	_
+15-16	ao	_	_	_	_	_	_	_	_
+15	a	a	ADP	_	_	17	case	17:case	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	oncologista	oncologista	NOUN	_	Number=Sing	14	obl	14:obl:a	SpaceAfter=No
+18	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0049
+# text = Acreditamos que essas revelações podem mudar a vida de muitas pessoas.
+1	Acreditamos	acreditar	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	que	que	SCONJ	_	_	5	mark	5:mark	_
+3	essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	4	det	4:det	_
+4	revelações	revelação	NOUN	_	Gender=Fem|Number=Plur	5	nsubj	5:nsubj|6:nsubj	_
+5	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	1:ccomp	_
+6	mudar	mudar	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	vida	vida	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	muitas	muito	ADJ	_	Gender=Fem|Number=Plur	11	amod	11:amod	_
+11	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	8	nmod	8:nmod:de	SpaceAfter=No
+12	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0053
+# text = A seção "É ou não é?" do G1, dedicada à checagem de fatos, está investigando essas alegações para fornecer um esclarecimento definitivo à população.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	seção	seção	NOUN	_	Gender=Fem|Number=Sing	22	nsubj	22:nsubj	_
+3	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+4	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	nmod	2:nmod	_
+5	ou	ou	CCONJ	_	_	7	cc	7:cc	_
+6	não	não	ADV	_	_	7	advmod	7:advmod	_
+7	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	2:acl|4:conj:ou	SpaceAfter=No
+8	?	?	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+9	"	"	PUNCT	_	_	4	punct	4:punct	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	G1	G1	PROPN	_	_	2	nmod	2:nmod:de	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	dedicada	dedicar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	2	acl	2:acl	_
+15-16	à	_	_	_	_	_	_	_	_
+15	a	a	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	checagem	checagem	NOUN	_	Gender=Fem|Number=Sing	14	obl	14:obl:a	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	fatos	fato	NOUN	_	Gender=Masc|Number=Plur	17	nmod	17:nmod:de	SpaceAfter=No
+20	,	,	PUNCT	_	_	14	punct	14:punct	_
+21	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	aux	22:aux	_
+22	investigando	investigar	VERB	_	VerbForm=Ger	0	root	0:root	_
+23	essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	24	det	24:det	_
+24	alegações	alegação	NOUN	_	Gender=Fem|Number=Plur	22	obj	22:obj	_
+25	para	para	ADP	_	_	26	mark	26:mark	_
+26	fornecer	fornecer	VERB	_	VerbForm=Inf	22	advcl	22:advcl:para	_
+27	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	esclarecimento	esclarecimento	NOUN	_	Gender=Masc|Number=Sing	26	obj	26:obj	_
+29	definitivo	definitivo	ADJ	_	Gender=Masc|Number=Sing	28	amod	28:amod	_
+30-31	à	_	_	_	_	_	_	_	_
+30	a	a	ADP	_	_	32	case	32:case	_
+31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	32:det	_
+32	população	população	NOUN	_	Gender=Fem|Number=Sing	26	obl	26:obl:a	SpaceAfter=No
+33	.	.	PUNCT	_	_	22	punct	22:punct	_

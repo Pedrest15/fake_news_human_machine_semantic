@@ -1,0 +1,130 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = papa francisco vai conceder bencao dos inocentes (benedictionem et innocentum) a lula faz 800 anos que um papa nao concede a benedictionem et innocentum.
+1	papa	papa	NOUN	_	Number=Sing	4	nsubj	4:nsubj	_
+2	francisco	francisco	NOUN	_	_	1	nmod	1:nmod	_
+3	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	4:aux	_
+4	conceder	conceder	VERB	_	VerbForm=Inf	0	root	0:root	_
+5	bencao	bencao	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+6-7	dos	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	8:det	_
+8	inocentes	inocente	NOUN	_	Number=Plur	5	nmod	5:nmod:de	_
+9	(	(	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+10	benedictionem	benedictionem	X	_	Foreign=Yes	5	appos	5:appos	_
+11	et	et	X	_	Foreign=Yes	12	cc	12:cc	_
+12	innocentum	innocentum	X	_	Foreign=Yes	10	flat:foreign	10:flat:foreign	SpaceAfter=No
+13	)	)	PUNCT	_	_	10	punct	10:punct	_
+14	a	a	ADP	_	_	15	case	15:case	_
+15	lula	lula	PROPN	_	_	4	obl	4:obl:a	_
+16	faz	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	4:advcl	_
+17	800	800	NUM	_	NumType=Card	18	nummod	18:nummod	_
+18	anos	ano	NOUN	_	Gender=Masc|Number=Plur	16	obj	16:obj	_
+19	que	que	SCONJ	_	_	23	discourse	23:discourse	_
+20	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	papa	papa	NOUN	_	Number=Sing	23	nsubj	23:nsubj	_
+22	nao	nao	ADV	_	_	23	advmod	23:advmod	_
+23	concede	conceder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	ccomp	4:ccomp	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	benedictionem	benedictionem	X	_	Foreign=Yes	23	obj	23:obj	_
+26	et	et	X	_	Foreign=Yes	27	cc	27:cc	_
+27	innocentum	innocentum	X	_	Foreign=Yes	25	flat:foreign	25:flat:foreign	SpaceAfter=No
+28	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0003
+# text = a benedictionem et innocentum sera concedida pelo papa francisco ao ex presidente lula em encontro no vaticano.
+1	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	benedictionem	benedictionem	X	_	Foreign=Yes	6	nsubj:pass	6:nsubj:pass	_
+3	et	et	X	_	Foreign=Yes	2	cc	2:cc	_
+4	innocentum	innocentum	X	_	Foreign=Yes	2	flat:foreign	2:flat:foreign	_
+5	sera	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	6	aux:pass	6:aux:pass	_
+6	concedida	conceder	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+7-8	pelo	_	_	_	_	_	_	_	_
+7	por	por	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	papa	papa	NOUN	_	Number=Sing	6	obl:agent	6:obl:agent	_
+10	francisco	francisco	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod	_
+11-12	ao	_	_	_	_	_	_	_	_
+11	a	a	ADP	_	_	14	case	14:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+13	ex	ex	NOUN	_	Number=Sing	14	amod	14:amod	_
+14	presidente	presidente	NOUN	_	Number=Sing	6	obl	6:obl:a	_
+15	lula	lula	PROPN	_	_	14	nmod	14:nmod	_
+16	em	em	ADP	_	_	17	case	17:case	_
+17	encontro	encontro	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:em	_
+18-19	no	_	_	_	_	_	_	_	_
+18	em	em	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	vaticano	vaticano	NOUN	_	Gender=Masc|Number=Sing	17	nmod	17:nmod:em	SpaceAfter=No
+21	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0005
+# text = a bencao benedictionem et innocentum e concedida apenas aos inocentes !ps.
+1	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	bencao	bencao	X	_	Foreign=Yes	7	nsubj:pass	7:nsubj:pass	_
+3	benedictionem	benedictionem	X	_	Foreign=Yes	2	nmod	2:nmod	_
+4	et	et	X	_	Foreign=Yes	5	cc	5:cc	_
+5	innocentum	innocentum	X	_	Foreign=Yes	3	flat:foreign	3:flat:foreign	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	concedida	conceder	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+8	apenas	apenas	ADV	_	_	11	advmod	11:advmod	_
+9-10	aos	_	_	_	_	_	_	_	_
+9	a	a	ADP	_	_	11	case	11:case	_
+10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	11:det	_
+11	inocentes	inocente	NOUN	_	Number=Plur	7	obl	7:obl:a	_
+12	!	!	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+13	ps	ps	NOUN	_	_	7	parataxis	7:parataxis	SpaceAfter=No
+14	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0007
+# text = : esse artigo e uma sugestao de leitores do boatos.org.
+1	:	:	PUNCT	_	_	6	punct	6:punct	_
+2	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	3	det	3:det	_
+3	artigo	artigo	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+4	e	e	CCONJ	_	_	6	cc	6:cc	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	sugestao	sugestao	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	leitores	leitor	NOUN	_	Gender=Masc|Number=Plur	6	nmod	6:nmod:de	_
+9-10	do	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	boatos.org	boatos.org	SYM	_	_	8	nmod	8:nmod:de	SpaceAfter=No
+12	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0009
+# text = se voce quiser sugerir um tema ao boatos.org, entre em contato com a gente pelo site, facebook e whatsapp no telefone (61) 99177-9164.
+1	se	se	SCONJ	_	_	3	mark	3:mark	_
+2	voce	voce	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	3	nsubj	3:nsubj|4:nsubj	_
+3	quiser	querer	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	11	advcl	11:advcl:se	_
+4	sugerir	sugerir	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	tema	tema	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7-8	ao	_	_	_	_	_	_	_	_
+7	a	a	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	boatos.org	boatos.org	SYM	_	_	4	obl	4:obl:a	SpaceAfter=No
+10	,	,	PUNCT	_	_	3	punct	3:punct	_
+11	entre	entrar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+12	em	em	ADP	_	_	13	case	13:case	_
+13	contato	contato	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:em	_
+14	com	com	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	gente	gente	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:com	_
+17-18	pelo	_	_	_	_	_	_	_	_
+17	por	por	ADP	_	_	19	case	19:case|21:case|23:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	site	site	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:por	SpaceAfter=No
+20	,	,	PUNCT	_	_	21	punct	21:punct	_
+21	facebook	facebook	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	19	conj	11:obl:por|19:conj:e	_
+22	e	e	CCONJ	_	_	23	cc	23:cc	_
+23	whatsapp	whatsapp	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	19	conj	11:obl:por|19:conj:e	_
+24-25	no	_	_	_	_	_	_	_	_
+24	em	em	ADP	_	_	26	case	26:case	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	telefone	telefone	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:em	_
+27	(	(	PUNCT	_	_	28	punct	28:punct	SpaceAfter=No
+28	61	61	NUM	_	NumType=Card	26	appos	26:appos	SpaceAfter=No
+29	)	)	PUNCT	_	_	28	punct	28:punct	_
+30	99177-9164	99177-9164	NUM	_	NumType=Card	28	nmod	28:nmod	SpaceAfter=No
+31	.	.	PUNCT	_	_	11	punct	11:punct	_

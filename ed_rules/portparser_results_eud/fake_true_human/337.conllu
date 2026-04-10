@@ -1,0 +1,91 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = china está enviando sementes e ervas envenenadas para eua e outros países “brasil alerta urgente.
+1	china	china	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_
+2	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux	3:aux	_
+3	enviando	enviar	VERB	_	VerbForm=Ger	0	root	0:root	_
+4	sementes	semente	NOUN	_	Gender=Fem|Number=Plur	3	obj	3:obj	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	ervas	erva	NOUN	_	Gender=Fem|Number=Plur	4	conj	3:obj|4:conj:e	_
+7	envenenadas	envenenado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	6	amod	6:amod	_
+8	para	para	ADP	_	_	9	case	9:case|12:case	_
+9	eua	eua	NOUN	_	Number=Sing	3	obl	3:obl:para	_
+10	e	e	CCONJ	_	_	12	cc	12:cc	_
+11	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	12	det	12:det	_
+12	países	país	NOUN	_	Gender=Masc|Number=Plur	9	conj	3:obl:para|9:conj:e	_
+13	“brasil	“brasil	NOUN	_	_	12	nmod	12:nmod	_
+14	alerta	alerta	NOUN	_	Number=Sing	3	obj	3:obj	_
+15	urgente	urgente	ADJ	_	Number=Sing	14	amod	14:amod	SpaceAfter=No
+16	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = se liga galera.
+1	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	2	expl	2:expl	_
+2	liga	ligar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	galera	galera	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	SpaceAfter=No
+4	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = a china comunista agora está nos enviando raízes e ervas envenenadas pra terminar de assassinar a população terrestre”., “agora a china enviando pacotes estranhos com sementes envenenadas quer matar de vez o mundo”., “china quer envenenar o mundo; sementes envenenadas vindas da china; está nos jornais aqui dos usa”.
+1	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	china	china	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj	_
+3	comunista	comunista	ADJ	_	Number=Sing	2	amod	2:amod	_
+4	agora	agora	ADV	_	_	7	advmod	7:advmod	_
+5	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	7:aux	_
+6	nos	nos	PRON	_	Case=Dat|Number=Plur|Person=1|PronType=Prs	7	iobj	7:iobj	_
+7	enviando	enviar	VERB	_	VerbForm=Ger	0	root	0:root	_
+8	raízes	raíze	NOUN	_	Gender=Fem|Number=Plur	7	obj	7:obj	_
+9	e	e	CCONJ	_	_	10	cc	10:cc	_
+10	ervas	erva	NOUN	_	Gender=Fem|Number=Plur	8	conj	7:obj|8:conj:e	_
+11	envenenadas	envenenado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	10	amod	10:amod	_
+12	pra	para	ADP	_	_	13	mark	13:mark	_
+13	terminar	terminar	VERB	_	VerbForm=Inf	7	advcl	7:advcl:para	_
+14	de	de	ADP	_	_	15	mark	15:mark	_
+15	assassinar	assassinar	VERB	_	VerbForm=Inf	13	xcomp	13:xcomp	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	população	população	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	_
+18	terrestre”	terrestre”	PUNCT	_	_	17	amod	17:amod	SpaceAfter=No
+19	.	.	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+20	,	,	PUNCT	_	_	39	punct	39:punct	_
+21	“agora	“agora	ADV	_	_	30	advmod	30:advmod	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	china	china	NOUN	_	Gender=Fem|Number=Sing	30	nsubj	30:nsubj|31:nsubj	_
+24	enviando	enviar	VERB	_	VerbForm=Ger	23	acl	23:acl	_
+25	pacotes	pacote	NOUN	_	Gender=Masc|Number=Plur	24	obj	24:obj	_
+26	estranhos	estranho	ADJ	_	Gender=Masc|Number=Plur	25	amod	25:amod	_
+27	com	com	ADP	_	_	28	case	28:case	_
+28	sementes	semente	NOUN	_	Gender=Fem|Number=Plur	25	nmod	25:nmod:com	_
+29	envenenadas	envenenado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	28	amod	28:amod	_
+30	quer	querer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	7:conj	_
+31	matar	matar	VERB	_	VerbForm=Inf	30	xcomp	30:xcomp	_
+32	de	de	ADP	_	_	33	case	33:case	_
+33	vez	vez	NOUN	_	Gender=Fem|Number=Sing	31	obl	31:obl:de	_
+34	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+35	mundo”	mundo”	PUNCT	_	_	31	obj	31:obj	SpaceAfter=No
+36	.	.	PUNCT	_	_	30	punct	30:punct	SpaceAfter=No
+37	,	,	PUNCT	_	_	39	punct	39:punct	_
+38	“china	“china	NOUN	_	_	39	nsubj	39:nsubj|40:nsubj	_
+39	quer	querer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	parataxis	7:parataxis	_
+40	envenenar	envenenar	VERB	_	VerbForm=Inf	39	xcomp	39:xcomp	_
+41	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	42	det	42:det	_
+42	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	40	obj	40:obj	SpaceAfter=No
+43	;	;	PUNCT	_	_	44	punct	44:punct	_
+44	sementes	semente	NOUN	_	Gender=Fem|Number=Plur	40	appos	40:appos	_
+45	envenenadas	envenenado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	44	amod	44:amod	_
+46	vindas	vir	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	44	acl	44:acl	_
+47-48	da	_	_	_	_	_	_	_	_
+47	de	de	ADP	_	_	49	case	49:case	_
+48	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	49	det	49:det	_
+49	china	china	NOUN	_	Gender=Fem|Number=Sing	46	obl	46:obl:de	SpaceAfter=No
+50	;	;	PUNCT	_	_	44	punct	44:punct	_
+51	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	54	cop	54:cop	_
+52-53	nos	_	_	_	_	_	_	_	_
+52	em	em	ADP	_	_	54	case	54:case	_
+53	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	54	det	54:det	_
+54	jornais	jornal	NOUN	_	Gender=Masc|Number=Plur	7	parataxis	7:parataxis	_
+55	aqui	aqui	ADV	_	_	54	advmod	54:advmod	_
+56-57	dos	_	_	_	_	_	_	_	_
+56	de	de	ADP	_	_	58	case	58:case	_
+57	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	58	det	58:det	_
+58	usa”	usa”	NOUN	_	_	54	nmod	54:nmod:de	SpaceAfter=No
+59	.	.	PUNCT	_	_	7	punct	7:punct	_

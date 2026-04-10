@@ -1,0 +1,475 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Terça-feira, 15 de agosto.
+1	Terça-feira	terça-feira	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	15	15	NUM	_	NumType=Card	1	appos	1:appos	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	agosto	agosto	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	SpaceAfter=No
+6	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Exclusivo!
+1	Exclusivo	exclusivo	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+2	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0005
+# text = Revelações chocantes sobre o governo e a crise econômica.
+1	Revelações	revelação	NOUN	_	Gender=Fem|Number=Plur	0	root	0:root	_
+2	chocantes	chocante	ADJ	_	Number=Plur	1	amod	1:amod	_
+3	sobre	sobre	ADP	_	_	5	case	5:case|8:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	governo	governo	NOUN	_	Gender=Masc|Number=Sing	1	nmod	1:nmod:sobre	_
+6	e	e	CCONJ	_	_	8	cc	8:cc	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	crise	crise	NOUN	_	Gender=Fem|Number=Sing	5	conj	1:nmod:sobre|5:conj:e	_
+9	econômica	econômico	ADJ	_	Gender=Fem|Number=Sing	8	amod	8:amod	SpaceAfter=No
+10	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0007
+# text = A equipe econômica do governo Temer está em pânico!
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	equipe	equipe	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	10:nsubj	_
+3	econômica	econômico	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	governo	governo	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	_
+7	Temer	Temer	PROPN	_	_	6	nmod	6:nmod	_
+8	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_
+9	em	em	ADP	_	_	10	case	10:case	_
+10	pânico	pânico	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+11	!	!	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0009
+# text = Fontes internas confirmaram que, além de não ter dinheiro para cumprir a meta fiscal de R$ 139 bilhões, o déficit real pode ser muito maior do que os R$ 159 bilhões previstos.
+1	Fontes	fonte	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	3:nsubj	_
+2	internas	interno	ADJ	_	Gender=Fem|Number=Plur	1	amod	1:amod	_
+3	confirmaram	confirmar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	24	mark	24:mark	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	além	além	ADV	_	_	24	advmod	24:advmod	_
+7	de	de	ADP	_	_	9	mark	9:mark	_
+8	não	não	ADV	_	_	9	advmod	9:advmod	_
+9	ter	ter	VERB	_	VerbForm=Inf	6	acl	6:acl:de	_
+10	dinheiro	dinheiro	NOUN	_	Gender=Masc|Number=Sing	9	obj	9:obj	_
+11	para	para	ADP	_	_	12	mark	12:mark	_
+12	cumprir	cumprir	VERB	_	VerbForm=Inf	9	acl	9:acl:para	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	meta	meta	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+15	fiscal	fiscal	ADJ	_	Number=Sing	14	amod	14:amod	_
+16	de	de	ADP	_	_	19	case	19:case	_
+17	R$	R$	SYM	_	_	19	nmod	19:nmod	_
+18	139	139	NUM	_	NumType=Card	19	nummod	19:nummod	_
+19	bilhões	bilhão	NOUN	_	Gender=Masc|Number=Plur	14	nmod	14:nmod:de	SpaceAfter=No
+20	,	,	PUNCT	_	_	6	punct	6:punct	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	déficit	déficit	NOUN	_	Gender=Masc|Number=Sing	24	nsubj	24:nsubj|27:nsubj	_
+23	real	real	ADJ	_	Number=Sing	22	amod	22:amod	_
+24	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	3:ccomp	_
+25	ser	ser	AUX	_	VerbForm=Inf	27	cop	27:cop	_
+26	muito	muito	ADV	_	_	27	advmod	27:advmod	_
+27	maior	maior	ADJ	_	Number=Sing	24	xcomp	24:xcomp	_
+28-29	do	_	_	_	_	_	_	_	_
+28	de	de	ADP	_	ExtPos=SCONJ	34	mark	34:mark	_
+29	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	28	fixed	28:fixed	_
+30	que	que	PRON	_	PronType=Rel	28	fixed	28:fixed	_
+31	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	34	det	34:det	_
+32	R$	R$	SYM	_	_	34	nmod	34:nmod	_
+33	159	159	NUM	_	NumType=Card	34	nummod	34:nummod	_
+34	bilhões	bilhão	NOUN	_	Gender=Masc|Number=Plur	27	advcl	27:advcl:de_o_que	_
+35	previstos	prever	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	34	acl	34:acl	SpaceAfter=No
+36	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0011
+# text = Rumores indicam que assessores mais próximos já falam em um rombo astronômico de R$ 200 bilhões!
+1	Rumores	rumor	NOUN	_	Gender=Masc|Number=Plur	2	nsubj	2:nsubj	_
+2	indicam	indicar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	8	mark	8:mark	_
+4	assessores	assessor	NOUN	_	Gender=Masc|Number=Plur	8	nsubj	8:nsubj	_
+5	mais	mais	ADV	_	_	6	advmod	6:advmod	_
+6	próximos	próximo	ADJ	_	Gender=Masc|Number=Plur	4	amod	4:amod	_
+7	já	já	ADV	_	_	8	advmod	8:advmod	_
+8	falam	falar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	2:ccomp	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	rombo	rombo	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:em	_
+12	astronômico	astronômico	ADJ	_	Gender=Masc|Number=Sing	11	amod	11:amod	_
+13	de	de	ADP	_	_	16	case	16:case	_
+14	R$	R$	SYM	_	_	16	nmod	16:nmod	_
+15	200	200	NUM	_	NumType=Card	16	nummod	16:nummod	_
+16	bilhões	bilhão	NOUN	_	Gender=Masc|Number=Plur	11	nmod	11:nmod:de	SpaceAfter=No
+17	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0013
+# text = Enquanto isso, medidas drásticas e polêmicas estão sendo consideradas: o congelamento salarial de todos os servidores públicos e o lançamento de um programa de refinanciamento de dívidas que beneficiaria apenas grandes corporações, aumentando ainda mais a insatisfação popular.
+1	Enquanto	enquanto	ADV	_	ExtPos=ADV	10	advmod	10:advmod	_
+2	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	fixed	1:fixed	SpaceAfter=No
+3	,	,	PUNCT	_	_	1	punct	1:punct	_
+4	medidas	medida	NOUN	_	Gender=Fem|Number=Plur	10	nsubj:pass	10:nsubj:pass	_
+5	drásticas	drástico	ADJ	_	Gender=Fem|Number=Plur	4	amod	4:amod	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	polêmicas	polêmico	ADJ	_	Gender=Fem|Number=Plur	5	conj	4:amod|5:conj:e	_
+8	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	aux	10:aux	_
+9	sendo	ser	AUX	_	VerbForm=Ger	10	aux:pass	10:aux:pass	_
+10	consideradas	considerar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	SpaceAfter=No
+11	:	:	PUNCT	_	_	13	punct	13:punct	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	congelamento	congelamento	NOUN	_	Gender=Masc|Number=Sing	10	parataxis	10:parataxis	_
+14	salarial	salarial	ADJ	_	Number=Sing	13	amod	13:amod	_
+15	de	de	ADP	_	_	18	case	18:case	_
+16	todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Ind	18	det	18:det	_
+17	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	18:det	_
+18	servidores	servidor	NOUN	_	Gender=Masc|Number=Plur	13	nmod	13:nmod:de	_
+19	públicos	público	ADJ	_	Gender=Masc|Number=Plur	18	amod	18:amod	_
+20	e	e	CCONJ	_	_	22	cc	22:cc	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	lançamento	lançamento	NOUN	_	Gender=Masc|Number=Sing	13	conj	10:parataxis|13:conj:e	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	programa	programa	NOUN	_	Gender=Masc|Number=Sing	22	nmod	22:nmod:de|31:nsubj	_
+26	de	de	ADP	_	_	27	case	27:case	_
+27	refinanciamento	refinanciamento	NOUN	_	Gender=Masc|Number=Sing	25	nmod	25:nmod:de	_
+28	de	de	ADP	_	_	29	case	29:case	_
+29	dívidas	dívida	NOUN	_	Gender=Fem|Number=Plur	27	nmod	27:nmod:de	_
+30	que	que	PRON	_	PronType=Rel	31	nsubj	25:ref	_
+31	beneficiaria	beneficiar	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	25	acl:relcl	25:acl:relcl	_
+32	apenas	apenas	ADV	_	_	34	advmod	34:advmod	_
+33	grandes	grande	ADJ	_	Number=Plur	34	amod	34:amod	_
+34	corporações	corporação	NOUN	_	Gender=Fem|Number=Plur	31	obj	31:obj	SpaceAfter=No
+35	,	,	PUNCT	_	_	36	punct	36:punct	_
+36	aumentando	aumentar	VERB	_	VerbForm=Ger	31	advcl	31:advcl	_
+37	ainda	ainda	ADV	_	_	38	advmod	38:advmod	_
+38	mais	mais	ADV	_	_	36	advmod	36:advmod	_
+39	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	40:det	_
+40	insatisfação	insatisfação	NOUN	_	Gender=Fem|Number=Sing	36	obj	36:obj	_
+41	popular	popular	ADJ	_	Number=Sing	40	amod	40:amod	SpaceAfter=No
+42	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0015
+# text = No Congresso, a confusão é total!
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	Congresso	Congresso	PROPN	_	_	8	obl	8:obl:em	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	confusão	confusão	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	8:nsubj	_
+7	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop	_
+8	total	total	ADJ	_	Number=Sing	0	root	0:root	SpaceAfter=No
+9	!	!	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0017
+# text = Deputados estão em guerra aberta sobre a reforma política.
+1	Deputados	deputado	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	4:nsubj	_
+2	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+3	em	em	ADP	_	_	4	case	4:case	_
+4	guerra	guerra	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+5	aberta	aberto	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	4	amod	4:amod	_
+6	sobre	sobre	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	reforma	reforma	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:sobre	_
+9	política	político	ADJ	_	Gender=Fem|Number=Sing	8	amod	8:amod	SpaceAfter=No
+10	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0019
+# text = A proposta mais recente sugere um fundo de R$ 5 bilhões para financiar campanhas, quase o dobro do que foi mencionado anteriormente.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	proposta	proposta	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+3	mais	mais	ADV	_	_	4	advmod	4:advmod	_
+4	recente	recente	ADJ	_	Number=Sing	2	amod	2:amod	_
+5	sugere	sugerir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	fundo	fundo	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+8	de	de	ADP	_	_	11	case	11:case	_
+9	R$	R$	SYM	_	_	11	nmod	11:nmod	_
+10	5	5	NUM	_	NumType=Card	11	nummod	11:nummod	_
+11	bilhões	bilhão	NOUN	_	Gender=Masc|Number=Plur	7	nmod	7:nmod:de	_
+12	para	para	ADP	_	_	13	mark	13:mark	_
+13	financiar	financiar	VERB	_	VerbForm=Inf	7	acl	7:acl:para	_
+14	campanhas	campanha	NOUN	_	Gender=Fem|Number=Plur	13	obj	13:obj	SpaceAfter=No
+15	,	,	PUNCT	_	_	18	punct	18:punct	_
+16	quase	quase	ADV	_	_	18	advmod	18:advmod	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	dobro	dobro	NOUN	_	Gender=Masc|Number=Sing	7	parataxis	7:parataxis	_
+19-20	do	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	18	nmod	18:nmod:de|23:nsubj:pass	_
+21	que	que	PRON	_	PronType=Rel	23	nsubj:pass	20:ref	_
+22	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	aux:pass	23:aux:pass	_
+23	mencionado	mencionar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	20	acl:relcl	20:acl:relcl	_
+24	anteriormente	anteriormente	ADV	_	_	23	advmod	23:advmod	SpaceAfter=No
+25	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0021
+# text = E mais: o "distritão" pode ser apenas o começo de uma série de mudanças que favoreceriam partidos com maior poder econômico.
+1	E	e	CCONJ	_	_	8	cc	8:cc	_
+2	mais	mais	ADV	_	_	8	discourse	8:discourse	SpaceAfter=No
+3	:	:	PUNCT	_	_	2	punct	2:punct	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+5	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+6	distritão	distritão	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	8:nsubj|12:nsubj	SpaceAfter=No
+7	"	"	PUNCT	_	_	6	punct	6:punct	_
+8	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+9	ser	ser	AUX	_	VerbForm=Inf	12	cop	12:cop	_
+10	apenas	apenas	ADV	_	_	12	advmod	12:advmod	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	começo	começo	NOUN	_	Gender=Masc|Number=Sing	8	xcomp	8:xcomp	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	série	série	NOUN	_	Gender=Fem|Number=Sing	12	nmod	12:nmod:de|19:nsubj	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	mudanças	mudança	NOUN	_	Gender=Fem|Number=Plur	15	nmod	15:nmod:de	_
+18	que	que	PRON	_	PronType=Rel	19	nsubj	15:ref	_
+19	favoreceriam	favorecer	VERB	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	15	acl:relcl	15:acl:relcl	_
+20	partidos	partido	NOUN	_	Gender=Masc|Number=Plur	19	obj	19:obj	_
+21	com	com	ADP	_	_	23	case	23:case	_
+22	maior	maior	ADJ	_	Number=Sing	23	amod	23:amod	_
+23	poder	poder	NOUN	_	Gender=Masc|Number=Sing	20	nmod	20:nmod:com	_
+24	econômico	econômico	ADJ	_	Gender=Masc|Number=Sing	23	amod	23:amod	SpaceAfter=No
+25	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0023
+# text = Nos Estados Unidos, a tensão racial atinge níveis alarmantes!
+1-2	Nos	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	3:det	_
+3	Estados	Estados	PROPN	_	_	9	obl	9:obl:em	_
+4	Unidos	Unidos	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	3	punct	3:punct	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	tensão	tensão	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	9:nsubj	_
+8	racial	racial	ADJ	_	Number=Sing	7	amod	7:amod	_
+9	atinge	atingir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+10	níveis	nível	NOUN	_	Gender=Masc|Number=Plur	9	obj	9:obj	_
+11	alarmantes	alarmante	ADJ	_	Number=Plur	10	amod	10:amod	SpaceAfter=No
+12	!	!	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0025
+# text = Após os violentos confrontos em Charlottesville, novas manifestações estão se espalhando pelo país.
+1	Após	após	ADP	_	_	4	case	4:case	_
+2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	4:det	_
+3	violentos	violento	ADJ	_	Gender=Masc|Number=Plur	4	amod	4:amod	_
+4	confrontos	confronto	NOUN	_	Gender=Masc|Number=Plur	12	obl	12:obl:após	_
+5	em	em	ADP	_	_	6	case	6:case	_
+6	Charlottesville	Charlottesville	PROPN	_	_	4	nmod	4:nmod:em	SpaceAfter=No
+7	,	,	PUNCT	_	_	4	punct	4:punct	_
+8	novas	novo	ADJ	_	Gender=Fem|Number=Plur	9	amod	9:amod	_
+9	manifestações	manifestação	NOUN	_	Gender=Fem|Number=Plur	12	nsubj	12:nsubj	_
+10	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	aux	12:aux	_
+11	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	12	expl	12:expl	_
+12	espalhando	espalhar	VERB	_	VerbForm=Ger	0	root	0:root	_
+13-14	pelo	_	_	_	_	_	_	_	_
+13	por	por	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	país	país	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:por	SpaceAfter=No
+16	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0027
+# text = Informações exclusivas indicam que o presidente Trump teria planos de implementar políticas ainda mais restritivas para conter os protestos, gerando preocupação entre líderes de direitos civis.
+1	Informações	informação	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	3:nsubj	_
+2	exclusivas	exclusivo	ADJ	_	Gender=Fem|Number=Plur	1	amod	1:amod	_
+3	indicam	indicar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	8	mark	8:mark	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	presidente	presidente	NOUN	_	Number=Sing	8	nsubj	8:nsubj	_
+7	Trump	Trump	PROPN	_	_	6	nmod	6:nmod	_
+8	teria	ter	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	3	ccomp	3:ccomp	_
+9	planos	plano	NOUN	_	Gender=Masc|Number=Plur	8	obj	8:obj	_
+10	de	de	ADP	_	_	11	mark	11:mark	_
+11	implementar	implementar	VERB	_	VerbForm=Inf	9	acl	9:acl:de	_
+12	políticas	política	NOUN	_	Gender=Fem|Number=Plur	11	obj	11:obj	_
+13	ainda	ainda	ADV	_	_	15	advmod	15:advmod	_
+14	mais	mais	ADV	_	_	15	advmod	15:advmod	_
+15	restritivas	restritivo	ADJ	_	Gender=Fem|Number=Plur	12	amod	12:amod	_
+16	para	para	ADP	_	_	17	mark	17:mark	_
+17	conter	conter	VERB	_	VerbForm=Inf	11	advcl	11:advcl:para	_
+18	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	19:det	_
+19	protestos	protesto	NOUN	_	Gender=Masc|Number=Plur	17	obj	17:obj	SpaceAfter=No
+20	,	,	PUNCT	_	_	21	punct	21:punct	_
+21	gerando	gerar	VERB	_	VerbForm=Ger	8	advcl	8:advcl	_
+22	preocupação	preocupação	NOUN	_	Gender=Fem|Number=Sing	21	obj	21:obj	_
+23	entre	entre	ADP	_	_	24	case	24:case	_
+24	líderes	líder	NOUN	_	Gender=Masc|Number=Plur	21	obl	21:obl:entre	_
+25	de	de	ADP	_	_	26	case	26:case	_
+26	direitos	direito	NOUN	_	Gender=Masc|Number=Plur	24	nmod	24:nmod:de	_
+27	civis	civil	ADJ	_	Number=Plur	26	amod	26:amod	SpaceAfter=No
+28	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0029
+# text = Em Brasília, o estado de saúde do ex-senador Roger Pinto Molina, vítima de um acidente aéreo, piorou.
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	Brasília	Brasília	PROPN	_	_	21	obl	21:obl:em	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	estado	estado	NOUN	_	Gender=Masc|Number=Sing	21	nsubj	21:nsubj	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	5	nmod	5:nmod:de	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	ex-senador	ex-senador	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:de	_
+11	Roger	Roger	PROPN	_	_	10	nmod	10:nmod	_
+12	Pinto	Pinto	PROPN	_	_	11	flat:name	11:flat:name	_
+13	Molina	Molina	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+14	,	,	PUNCT	_	_	15	punct	15:punct	_
+15	vítima	vítima	NOUN	_	Gender=Fem|Number=Sing	10	appos	10:appos	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	acidente	acidente	NOUN	_	Gender=Masc|Number=Sing	15	nmod	15:nmod:de	_
+19	aéreo	aéreo	ADJ	_	Gender=Masc|Number=Sing	18	amod	18:amod	SpaceAfter=No
+20	,	,	PUNCT	_	_	15	punct	15:punct	_
+21	piorou	piorar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+22	.	.	PUNCT	_	_	21	punct	21:punct	_
+
+# sent_id = S0031
+# text = Médicos afirmam que ele sofreu lesões cerebrais graves e sua família acusa o governo de negligência no resgate e atendimento médico.
+1	Médicos	médico	NOUN	_	Gender=Masc|Number=Plur	2	nsubj	2:nsubj	_
+2	afirmam	afirmar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	5	mark	5:mark	_
+4	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	5:nsubj	_
+5	sofreu	sofrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	ccomp	2:ccomp	_
+6	lesões	lesão	NOUN	_	Gender=Fem|Number=Plur	5	obj	5:obj	_
+7	cerebrais	cerebral	ADJ	_	Number=Plur	6	amod	6:amod	_
+8	graves	grave	ADJ	_	Number=Plur	6	amod	6:amod	_
+9	e	e	CCONJ	_	_	12	cc	12:cc	_
+10	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	11	det	11:det	_
+11	família	família	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	12:nsubj	_
+12	acusa	acusar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:e	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	governo	governo	NOUN	_	Gender=Masc|Number=Sing	12	obj	12:obj	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	negligência	negligência	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl:de	_
+17-18	no	_	_	_	_	_	_	_	_
+17	em	em	ADP	_	_	19	case	19:case|21:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	resgate	resgate	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod:em	_
+20	e	e	CCONJ	_	_	21	cc	21:cc	_
+21	atendimento	atendimento	NOUN	_	Gender=Masc|Number=Sing	19	conj	16:nmod:em|19:conj:e	_
+22	médico	médico	ADJ	_	Gender=Masc|Number=Sing	21	amod	21:amod	SpaceAfter=No
+23	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0033
+# text = E você não vai acreditar nisso: a profissão de enfermagem está sendo questionada por novos estudos que sugerem que enfermeiros recebem menos treinamento essencial comparados aos médicos, colocando em risco a qualidade do atendimento hospitalar.
+1	E	e	CCONJ	_	_	5	cc	5:cc	_
+2	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	5	nsubj	5:nsubj	_
+3	não	não	ADV	_	_	5	advmod	5:advmod	_
+4	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	5:aux	_
+5	acreditar	acreditar	VERB	_	VerbForm=Inf	0	root	0:root	_
+6-7	nisso	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	7	case	7:case	_
+7	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	5	obl	5:obl:em	_
+8	:	:	PUNCT	_	_	15	punct	15:punct	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	profissão	profissão	NOUN	_	Gender=Fem|Number=Sing	15	nsubj:pass	15:nsubj:pass	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	enfermagem	enfermagem	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:de	_
+13	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux	15:aux	_
+14	sendo	ser	AUX	_	VerbForm=Ger	15	aux:pass	15:aux:pass	_
+15	questionada	questionar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	5	parataxis	5:parataxis	_
+16	por	por	ADP	_	_	18	case	18:case	_
+17	novos	novo	ADJ	_	Gender=Masc|Number=Plur	18	amod	18:amod	_
+18	estudos	estudo	NOUN	_	Gender=Masc|Number=Plur	15	obl:agent	15:obl:agent|20:nsubj	_
+19	que	que	PRON	_	PronType=Rel	20	nsubj	18:ref	_
+20	sugerem	sugerir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	acl:relcl	18:acl:relcl	_
+21	que	que	SCONJ	_	_	23	mark	23:mark	_
+22	enfermeiros	enfermeiro	NOUN	_	Gender=Masc|Number=Plur	23	nsubj	23:nsubj	_
+23	recebem	receber	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	ccomp	20:ccomp	_
+24	menos	menos	DET	_	PronType=Ind	25	det	25:det	_
+25	treinamento	treinamento	NOUN	_	Gender=Masc|Number=Sing	23	obj	23:obj	_
+26	essencial	essencial	ADJ	_	Number=Sing	25	amod	25:amod	_
+27	comparados	comparar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	23	advcl	23:advcl	_
+28-29	aos	_	_	_	_	_	_	_	_
+28	a	a	ADP	_	_	30	case	30:case	_
+29	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	30:det	_
+30	médicos	médico	NOUN	_	Gender=Masc|Number=Plur	27	obl	27:obl:a	SpaceAfter=No
+31	,	,	PUNCT	_	_	32	punct	32:punct	_
+32	colocando	colocar	VERB	_	VerbForm=Ger	23	advcl	23:advcl	_
+33	em	em	ADP	_	_	34	case	34:case	_
+34	risco	risco	NOUN	_	Gender=Masc|Number=Sing	32	obl	32:obl:em	_
+35	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	36:det	_
+36	qualidade	qualidade	NOUN	_	Gender=Fem|Number=Sing	32	obj	32:obj	_
+37-38	do	_	_	_	_	_	_	_	_
+37	de	de	ADP	_	_	39	case	39:case	_
+38	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	39:det	_
+39	atendimento	atendimento	NOUN	_	Gender=Masc|Number=Sing	36	nmod	36:nmod:de	_
+40	hospitalar	hospitalar	ADJ	_	Number=Sing	39	amod	39:amod	SpaceAfter=No
+41	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0035
+# text = No futebol, o jogo de hoje entre Santos e Fluminense às 20h no Pacaembu promete emoções fortes, especialmente após as surpresas de ontem: São Paulo venceu, saindo da zona de rebaixamento, enquanto Vasco e Palmeiras empataram e o Atlético-MG derrotou o Flamengo.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	futebol	futebol	NOUN	_	Gender=Masc|Number=Sing	19	obl	19:obl:em	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	jogo	jogo	NOUN	_	Gender=Masc|Number=Sing	19	nsubj	19:nsubj	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	hoje	hoje	ADV	_	_	6	advmod	6:advmod	_
+9	entre	entre	ADP	_	_	10	case	10:case	_
+10	Santos	Santos	PROPN	_	_	6	nmod	6:nmod:entre	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	Fluminense	Fluminense	PROPN	_	_	10	conj	6:nmod:entre|10:conj:e	_
+13-14	às	_	_	_	_	_	_	_	_
+13	a	a	ADP	_	_	15	case	15:case	_
+14	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	15:det	_
+15	20h	20h	NOUN	_	_	6	nmod	6:nmod:a	_
+16-17	no	_	_	_	_	_	_	_	_
+16	em	em	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	Pacaembu	Pacaembu	PROPN	_	_	26	nmod	26:nmod:em	_
+19	promete	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+20	emoções	emoção	NOUN	_	Gender=Fem|Number=Plur	19	obj	19:obj	_
+21	fortes	forte	ADJ	_	Number=Plur	20	amod	20:amod	SpaceAfter=No
+22	,	,	PUNCT	_	_	26	punct	26:punct	_
+23	especialmente	especialmente	ADV	_	_	26	advmod	26:advmod	_
+24	após	após	ADP	_	_	26	case	26:case	_
+25	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	26	det	26:det	_
+26	surpresas	surpresa	NOUN	_	Gender=Fem|Number=Plur	19	obl	19:obl:após	_
+27	de	de	ADP	_	_	28	case	28:case	_
+28	ontem	ontem	ADV	_	_	26	advmod	26:advmod	SpaceAfter=No
+29	:	:	PUNCT	_	_	32	punct	32:punct	_
+30	São	São	PROPN	_	_	32	nsubj	32:nsubj	_
+31	Paulo	Paulo	PROPN	_	_	30	flat:name	30:flat:name	_
+32	venceu	vencer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	26	parataxis	26:parataxis	SpaceAfter=No
+33	,	,	PUNCT	_	_	34	punct	34:punct	_
+34	saindo	sair	VERB	_	VerbForm=Ger	32	advcl	32:advcl	_
+35-36	da	_	_	_	_	_	_	_	_
+35	de	de	ADP	_	_	37	case	37:case	_
+36	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	37:det	_
+37	zona	zona	NOUN	_	Gender=Fem|Number=Sing	34	obl	34:obl:de	_
+38	de	de	ADP	_	_	39	case	39:case	_
+39	rebaixamento	rebaixamento	NOUN	_	Gender=Masc|Number=Sing	37	nmod	37:nmod:de	SpaceAfter=No
+40	,	,	PUNCT	_	_	34	punct	34:punct	_
+41	enquanto	enquanto	SCONJ	_	_	45	mark	45:mark|49:mark	_
+42	Vasco	Vasco	PROPN	_	_	45	nsubj	45:nsubj	_
+43	e	e	CCONJ	_	_	44	cc	44:cc	_
+44	Palmeiras	Palmeiras	PROPN	_	_	42	conj	42:conj:e|45:nsubj	_
+45	empataram	empatar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	34	conj	32:advcl:enquanto|34:conj	_
+46	e	e	CCONJ	_	_	49	cc	49:cc	_
+47	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	48	det	48:det	_
+48	Atlético-MG	Atlético-MG	PROPN	_	_	49	nsubj	49:nsubj	_
+49	derrotou	derrotar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	45	conj	32:advcl:enquanto|45:conj:e	_
+50	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	51	det	51:det	_
+51	Flamengo	Flamengo	PROPN	_	_	49	obj	49:obj	SpaceAfter=No
+52	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0037
+# text = Confira a classificação atualizada e assista aos incríveis gols do Fantástico!
+1	Confira	conferir	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	classificação	classificação	NOUN	_	Gender=Fem|Number=Sing	1	obj	1:obj	_
+4	atualizada	atualizado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	3	amod	3:amod	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	assista	assistir	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	1	conj	1:conj:e	_
+7-8	aos	_	_	_	_	_	_	_	_
+7	a	a	ADP	_	_	10	case	10:case	_
+8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	10:det	_
+9	incríveis	incrível	ADJ	_	Number=Plur	10	amod	10:amod	_
+10	gols	gol	NOUN	_	Gender=Masc|Number=Plur	6	obl	6:obl:a	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	Fantástico	Fantástico	PROPN	_	_	10	nmod	10:nmod:de	SpaceAfter=No
+14	!	!	PUNCT	_	_	1	punct	1:punct	_

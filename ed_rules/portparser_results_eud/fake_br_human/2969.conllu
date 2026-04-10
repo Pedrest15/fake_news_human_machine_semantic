@@ -1,0 +1,162 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Ary Fontoura detona Dilma no Faustão: "Golpe quem deu foi a senhora".
+1	Ary	Ary	PROPN	_	_	3	nsubj	3:nsubj	_
+2	Fontoura	Fontoura	PROPN	_	_	1	flat:name	1:flat:name	_
+3	detona	detonar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	Dilma	Dilma	PROPN	_	_	3	obj	3:obj	_
+5-6	no	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Faustão	Faustão	PROPN	_	_	3	obl	3:obl:em	SpaceAfter=No
+8	:	:	PUNCT	_	_	15	punct	15:punct	_
+9	"	"	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+10	Golpe	golpe	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	15:nsubj	_
+11	quem	quem	PRON	_	PronType=Rel	15	nsubj	15:nsubj	_
+12	deu	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	acl:relcl	11:acl:relcl	_
+13	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	cop	15:cop	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	senhora	senhor	NOUN	_	Gender=Fem|Number=Sing	3	ccomp:speech	3:ccomp:speech	SpaceAfter=No
+16	"	"	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+17	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = Faustão recebeu hoje (10) em seu programa o ator Ary Fontoura, que em determinado detonou a presidente Dilma Rousseff.
+1	Faustão	Faustão	PROPN	_	_	2	nsubj	2:nsubj	_
+2	recebeu	receber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	hoje	hoje	ADV	_	_	2	advmod	2:advmod	_
+4	(	(	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+5	10	10	NUM	_	NumType=Card	3	appos	3:appos	SpaceAfter=No
+6	)	)	PUNCT	_	_	5	punct	5:punct	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	9	det	9:det	_
+9	programa	programa	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:em	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	ator	ator	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj|18:nsubj	_
+12	Ary	Ary	PROPN	_	_	11	nmod	11:nmod	_
+13	Fontoura	Fontoura	PROPN	_	_	12	flat:name	12:flat:name	SpaceAfter=No
+14	,	,	PUNCT	_	_	18	punct	18:punct	_
+15	que	que	PRON	_	PronType=Rel	18	nsubj	11:ref	_
+16	em	em	ADP	_	_	17	case	17:case	_
+17	determinado	determinado	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:em	_
+18	detonou	detonar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	acl:relcl	11:acl:relcl	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	presidente	presidente	NOUN	_	Number=Sing	18	obj	18:obj	_
+21	Dilma	Dilma	PROPN	_	_	20	nmod	20:nmod	_
+22	Rousseff	Rousseff	PROPN	_	_	21	flat:name	21:flat:name	SpaceAfter=No
+23	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = Fontoura disse que evita falar em política porque isso acaba gerando muitas inimizades.
+1	Fontoura	Fontoura	PROPN	_	_	2	nsubj	2:nsubj	_
+2	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	4	mark	4:mark	_
+4	evita	evitar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	2:ccomp	_
+5	falar	falar	VERB	_	VerbForm=Inf	4	xcomp	4:xcomp	_
+6	em	em	ADP	_	_	7	case	7:case	_
+7	política	política	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:em	_
+8	porque	porque	SCONJ	_	_	10	mark	10:mark	_
+9	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	10	nsubj	10:nsubj|11:nsubj	_
+10	acaba	acabar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	4:advcl:porque	_
+11	gerando	gerar	VERB	_	VerbForm=Ger	10	xcomp	10:xcomp	_
+12	muitas	muito	ADJ	_	Gender=Fem|Number=Plur	13	amod	13:amod	_
+13	inimizades	inimizade	NOUN	_	Gender=Fem|Number=Plur	11	obj	11:obj	SpaceAfter=No
+14	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0007
+# text = A ator disse também que nessa semana acontece a votação do impeachment da presidente da república Dilma Rousseff e espera que haja uma definição sobre o tema.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	ator	ator	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	também	também	ADV	_	_	3	advmod	3:advmod	_
+5	que	que	SCONJ	_	_	9	mark	9:mark|24:mark	_
+6-7	nessa	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	8	det	8:det	_
+8	semana	semana	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:em	_
+9	acontece	acontecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	3:ccomp	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	votação	votação	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	9:nsubj	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	impeachment	impeachment	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:de	_
+15-16	da	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	presidente	presidente	NOUN	_	Number=Sing	14	nmod	14:nmod:de	_
+18-19	da	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	república	república	NOUN	_	Gender=Fem|Number=Sing	17	nmod	17:nmod:de	_
+21	Dilma	Dilma	PROPN	_	_	17	nmod	17:nmod	_
+22	Rousseff	Rousseff	PROPN	_	_	21	flat:name	21:flat:name	_
+23	e	e	CCONJ	_	_	24	cc	24:cc	_
+24	espera	esperar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	conj	3:ccomp|9:conj:e	_
+25	que	que	SCONJ	_	_	26	mark	26:mark	_
+26	haja	haver	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	ccomp	24:ccomp	_
+27	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	definição	definição	NOUN	_	Gender=Fem|Number=Sing	26	obj	26:obj	_
+29	sobre	sobre	ADP	_	_	31	case	31:case	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	tema	tema	NOUN	_	Gender=Masc|Number=Sing	28	nmod	28:nmod:sobre	SpaceAfter=No
+32	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0009
+# text = Em seguida, Ari Fontoura começou o massacre: O mínimo o que eles precisam fazer é agir com correção.
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	seguida	seguida	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:em	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	Ari	Ari	PROPN	_	_	6	nsubj	6:nsubj	_
+5	Fontoura	Fontoura	PROPN	_	_	4	flat:name	4:flat:name	_
+6	começou	começar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	massacre	massacre	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	SpaceAfter=No
+9	:	:	PUNCT	_	_	18	punct	18:punct	_
+10	O	o	DET	_	Definite=Def|ExtPos=DET|Gender=Masc|Number=Sing|PronType=Art	18	nsubj:outer	16:obj|18:nsubj:outer	_
+11	mínimo	mínimo	NOUN	_	Gender=Masc|Number=Sing	10	fixed	10:fixed	_
+12	o	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	15	obj	10:ref|15:obj	_
+13	que	que	PRON	_	PronType=Rel	12	fixed	12:fixed	_
+14	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	15	nsubj	15:nsubj|16:nsubj	_
+15	precisam	precisar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	acl:relcl	10:acl:relcl	_
+16	fazer	fazer	VERB	_	VerbForm=Inf	15	xcomp	15:xcomp	_
+17	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	cop	18:cop	_
+18	agir	agir	VERB	_	VerbForm=Inf	6	parataxis	6:parataxis	_
+19	com	com	ADP	_	_	20	case	20:case	_
+20	correção	correção	NOUN	_	Gender=Fem|Number=Sing	18	obl	18:obl:com	SpaceAfter=No
+21	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0011
+# text = Reclamar e ir as ruas não é golpe, é direito e dever.
+1	Reclamar	reclamar	VERB	_	VerbForm=Inf	8	csubj	8:csubj	_
+2	e	e	CCONJ	_	_	3	cc	3:cc	_
+3	ir	ir	VERB	_	VerbForm=Inf	1	conj	1:conj:e|8:csubj	_
+4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	5:det	_
+5	ruas	rua	NOUN	_	Gender=Fem|Number=Plur	3	obj	3:obj	_
+6	não	não	ADV	_	_	8	advmod	8:advmod	_
+7	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop	_
+8	golpe	golpe	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+9	,	,	PUNCT	_	_	11	punct	11:punct	_
+10	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	11:cop|13:cop	_
+11	direito	direito	NOUN	_	Gender=Masc|Number=Sing	8	conj	8:conj	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	dever	dever	NOUN	_	Gender=Masc|Number=Sing	11	conj	11:conj:e	SpaceAfter=No
+14	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0013
+# text = A gente é que paga o salário desses políticos, disse ele.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	gente	gente	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	discourse	5:discourse	_
+4	que	que	SCONJ	_	_	5	discourse	5:discourse	_
+5	paga	pagar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	ccomp:speech	12:ccomp:speech	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	salário	salário	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+8-9	desses	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	10	det	10:det	_
+10	políticos	político	NOUN	_	Gender=Masc|Number=Plur	7	nmod	7:nmod:de	SpaceAfter=No
+11	,	,	PUNCT	_	_	5	punct	5:punct	_
+12	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+13	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	nsubj	12:nsubj	SpaceAfter=No
+14	.	.	PUNCT	_	_	12	punct	12:punct	_

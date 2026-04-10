@@ -1,0 +1,139 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Estudo mostra que crianças que não tomam vacinas são 5 vezes mais saudáveis.
+1	Estudo	estudo	NOUN	_	Gender=Masc|Number=Sing	2	nsubj	2:nsubj	_
+2	mostra	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	13	mark	13:mark	_
+4	crianças	criança	NOUN	_	Gender=Fem|Number=Plur	13	nsubj	7:nsubj|13:nsubj	_
+5	que	que	PRON	_	PronType=Rel	7	nsubj	4:ref	_
+6	não	não	ADV	_	_	7	advmod	7:advmod	_
+7	tomam	tomar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	4:acl:relcl	_
+8	vacinas	vacina	NOUN	_	Gender=Fem|Number=Plur	7	obj	7:obj	_
+9	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	cop	13:cop	_
+10	5	5	NUM	_	NumType=Card	11	nummod	11:nummod	_
+11	vezes	vez	NOUN	_	Gender=Fem|Number=Plur	13	obl	13:obl	_
+12	mais	mais	ADV	_	_	13	advmod	13:advmod	_
+13	saudáveis	saudável	ADJ	_	Number=Plur	2	ccomp	2:ccomp	SpaceAfter=No
+14	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Além disso, foi identificado que houve um aumento 1000% na incidência de amigdalite nas crianças que receberam vacinas.
+1	Além	além	ADV	_	_	6	advmod	6:advmod	_
+2-3	disso	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	obl	1:obl:de	_
+4	,	,	PUNCT	_	_	1	punct	1:punct	_
+5	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	aux:pass	6:aux:pass	_
+6	identificado	identificar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+7	que	que	SCONJ	_	_	8	mark	8:mark	_
+8	houve	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	ccomp	6:ccomp	_
+9	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	aumento	aumento	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	_
+11	1000	1000	NUM	_	NumType=Card	12	nummod	12:nummod	SpaceAfter=No
+12	%	%	SYM	_	_	10	nmod	10:nmod	_
+13-14	na	_	_	_	_	_	_	_	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	incidência	incidência	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:em	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	amigdalite	amigdalite	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:de	_
+18-19	nas	_	_	_	_	_	_	_	_
+18	em	em	ADP	_	_	20	case	20:case	_
+19	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	20:det	_
+20	crianças	criança	NOUN	_	Gender=Fem|Number=Plur	8	obl	8:obl:em|22:nsubj	_
+21	que	que	PRON	_	PronType=Rel	22	nsubj	20:ref	_
+22	receberam	receber	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	20	acl:relcl	20:acl:relcl	_
+23	vacinas	vacina	NOUN	_	Gender=Fem|Number=Plur	22	obj	22:obj	SpaceAfter=No
+24	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0005
+# text = Os estudos mostraram, sem dúvida, que crianças não vacinadas são mais saudáveis do que as vacinadas e, por esta razão, os dados devem ser cuidadosamente ponderados pelos pais e profissionais da área da medicina.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	estudos	estudo	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	3:nsubj	_
+3	mostraram	mostrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+4	,	,	PUNCT	_	_	6	punct	6:punct	_
+5	sem	sem	ADP	_	_	6	case	6:case	_
+6	dúvida	dúvida	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:sem	SpaceAfter=No
+7	,	,	PUNCT	_	_	6	punct	6:punct	_
+8	que	que	SCONJ	_	_	14	mark	14:mark|28:mark	_
+9	crianças	criança	NOUN	_	Gender=Fem|Number=Plur	14	nsubj	14:nsubj	_
+10	não	não	ADV	_	_	11	advmod	11:advmod	_
+11	vacinadas	vacinar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	9	acl	9:acl	_
+12	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	cop	14:cop	_
+13	mais	mais	ADV	_	_	14	advmod	14:advmod	_
+14	saudáveis	saudável	ADJ	_	Number=Plur	3	ccomp	3:ccomp	_
+15-16	do	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	ExtPos=SCONJ	18	mark	18:mark	_
+16	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	15	fixed	15:fixed	_
+17	que	que	PRON	_	PronType=Rel	15	fixed	15:fixed	_
+18	as	o	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Dem	14	advcl	14:advcl:de_o_que	_
+19	vacinadas	vacinar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	18	advcl	18:advcl	_
+20	e	e	CCONJ	_	_	28	cc	28:cc	SpaceAfter=No
+21	,	,	PUNCT	_	_	24	punct	24:punct	_
+22	por	por	ADP	_	_	24	case	24:case	_
+23	esta	este	DET	_	Gender=Fem|Number=Sing|PronType=Dem	24	det	24:det	_
+24	razão	razão	NOUN	_	Number=Sing	28	obl	28:obl:por	SpaceAfter=No
+25	,	,	PUNCT	_	_	24	punct	24:punct	_
+26	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	27:det	_
+27	dados	dado	NOUN	_	Gender=Masc|Number=Plur	28	nsubj	28:nsubj|31:nsubj:pass	_
+28	devem	dever	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	conj	3:ccomp|14:conj:e	_
+29	ser	ser	AUX	_	VerbForm=Inf	31	aux:pass	31:aux:pass	_
+30	cuidadosamente	cuidadosamente	ADV	_	_	31	advmod	31:advmod	_
+31	ponderados	ponderar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	28	xcomp	28:xcomp	_
+32-33	pelos	_	_	_	_	_	_	_	_
+32	por	por	ADP	_	_	34	case	34:case|36:case	_
+33	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	34	det	34:det	_
+34	pais	pai	NOUN	_	Gender=Masc|Number=Plur	31	obl:agent	31:obl:agent	_
+35	e	e	CCONJ	_	_	36	cc	36:cc	_
+36	profissionais	profissional	NOUN	_	Number=Plur	34	conj	31:obl:agent|34:conj:e	_
+37-38	da	_	_	_	_	_	_	_	_
+37	de	de	ADP	_	_	39	case	39:case	_
+38	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	39:det	_
+39	área	área	NOUN	_	Gender=Fem|Number=Sing	34	nmod	34:nmod:de|36:nmod:de	_
+40-41	da	_	_	_	_	_	_	_	_
+40	de	de	ADP	_	_	42	case	42:case	_
+41	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	42:det	_
+42	medicina	medicina	NOUN	_	Gender=Fem|Number=Sing	39	nmod	39:nmod:de	SpaceAfter=No
+43	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = A intenção da pesquisa era tentar provar que crianças vacinadas eram mais propensas a sofrer de asma, eczema, infecções de ouvido, hiperatividade e outras condições crônicas.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	intenção	intenção	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	7:nsubj|8:nsubj	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	pesquisa	pesquisa	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+6	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	cop	7:cop	_
+7	tentar	tentar	VERB	_	VerbForm=Inf	0	root	0:root	_
+8	provar	provar	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+9	que	que	SCONJ	_	_	14	mark	14:mark	_
+10	crianças	criança	NOUN	_	Gender=Fem|Number=Plur	14	nsubj	14:nsubj	_
+11	vacinadas	vacinar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part	10	acl	10:acl	_
+12	eram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	14	cop	14:cop	_
+13	mais	mais	ADV	_	_	14	advmod	14:advmod	_
+14	propensas	propenso	ADJ	_	Gender=Fem|Number=Plur	8	ccomp	8:ccomp	_
+15	a	a	ADP	_	_	16	mark	16:mark	_
+16	sofrer	sofrer	VERB	_	VerbForm=Inf	14	acl	14:acl:a	_
+17	de	de	ADP	_	_	18	case	18:case|20:case|22:case|26:case|29:case	_
+18	asma	asma	NOUN	_	Gender=Fem|Number=Sing	16	obl	16:obl:de	SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	20:punct	_
+20	eczema	eczema	NOUN	_	Gender=Masc|Number=Sing	18	conj	16:obl:de|18:conj:e	SpaceAfter=No
+21	,	,	PUNCT	_	_	22	punct	22:punct	_
+22	infecções	infecção	NOUN	_	Gender=Fem|Number=Plur	18	conj	16:obl:de|18:conj:e	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	ouvido	ouvido	NOUN	_	Gender=Masc|Number=Sing	22	nmod	22:nmod:de	SpaceAfter=No
+25	,	,	PUNCT	_	_	26	punct	26:punct	_
+26	hiperatividade	hiperatividade	NOUN	_	Gender=Fem|Number=Sing	18	conj	16:obl:de|18:conj:e	_
+27	e	e	CCONJ	_	_	29	cc	29:cc	_
+28	outras	outro	DET	_	Gender=Fem|Number=Plur|PronType=Ind	29	det	29:det	_
+29	condições	condição	NOUN	_	Gender=Fem|Number=Plur	18	conj	16:obl:de|18:conj:e	_
+30	crônicas	crônico	ADJ	_	Gender=Fem|Number=Plur	29	amod	29:amod	SpaceAfter=No
+31	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0008
+# text = fonte: vaccineinjury.info.
+1	fonte	fonte	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+2	:	:	PUNCT	_	_	3	punct	3:punct	_
+3	vaccineinjury.info	vaccineinjury.info	SYM	_	_	1	nmod	1:nmod	SpaceAfter=No
+4	.	.	PUNCT	_	_	1	punct	1:punct	_

@@ -1,0 +1,172 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = amanhã começa a nova regra do facebook e publicações podem ser usadas em julgamentos lembrese, amanhã começa a nova regra do facebook!
+1	amanhã	amanhã	ADV	_	_	2	advmod	2:advmod	_
+2	começa	começar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+4	nova	novo	ADJ	_	Gender=Fem|Number=Sing	5	amod	5:amod	_
+5	regra	regra	NOUN	_	Gender=Fem|Number=Sing	2	nsubj	2:nsubj	_
+6-7	do	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	facebook	facebook	X	_	Foreign=Yes	5	nmod	5:nmod:de	_
+9	e	e	CCONJ	_	_	11	cc	11:cc	_
+10	publicações	publicação	NOUN	_	Gender=Fem|Number=Plur	11	nsubj	11:nsubj|13:nsubj:pass	_
+11	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:e	_
+12	ser	ser	AUX	_	VerbForm=Inf	13	aux:pass	13:aux:pass	_
+13	usadas	usar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	11	xcomp	11:xcomp	_
+14	em	em	ADP	_	_	15	case	15:case	_
+15	julgamentos	julgamento	NOUN	_	Gender=Masc|Number=Plur	13	obl	13:obl:em	_
+16	lembrese	lembrese	X	_	_	15	nmod	15:nmod	SpaceAfter=No
+17	,	,	PUNCT	_	_	19	punct	19:punct	_
+18	amanhã	amanhã	ADV	_	_	19	advmod	19:advmod	_
+19	começa	começar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	2:parataxis	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+21	nova	novo	ADJ	_	Gender=Fem|Number=Sing	22	amod	22:amod	_
+22	regra	regra	NOUN	_	Gender=Fem|Number=Sing	19	nsubj	19:nsubj	_
+23-24	do	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	facebook	facebook	X	_	Foreign=Yes	22	nmod	22:nmod:de	SpaceAfter=No
+26	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = lembrese de que o prazo é hoje!
+1	lembrese	lembresar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	de	de	ADP	_	ExtPos=SCONJ	7	mark	7:mark	_
+3	que	que	SCONJ	_	_	2	fixed	2:fixed	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	prazo	prazo	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_
+6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+7	hoje	hoje	ADV	_	_	1	ccomp	1:ccomp	SpaceAfter=No
+8	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0005
+# text = todas as suas publicações podem ser usadas em julgamentos contra você.
+1	todas	todo	DET	_	Gender=Fem|Number=Plur|PronType=Ind	4	det	4:det	_
+2	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	4:det	_
+3	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	4	det	4:det	_
+4	publicações	publicação	NOUN	_	Gender=Fem|Number=Plur	5	nsubj	5:nsubj|7:nsubj:pass	_
+5	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	ser	ser	AUX	_	VerbForm=Inf	7	aux:pass	7:aux:pass	_
+7	usadas	usar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	5	xcomp	5:xcomp	_
+8	em	em	ADP	_	_	9	case	9:case	_
+9	julgamentos	julgamento	NOUN	_	Gender=Masc|Number=Plur	7	obl	7:obl:em	_
+10	contra	contra	ADP	_	_	11	case	11:case	_
+11	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	9	nmod	9:nmod:contra	SpaceAfter=No
+12	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0007
+# text = tudo o que vc publicou pode ser usado a partir de hoje, e até msgs removidas.
+1	tudo	tudo	PRON	_	PronType=Ind	6	nsubj	5:obj|6:nsubj|8:nsubj:pass|16:nsubj	_
+2	o	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	obj	1:ref|5:obj	_
+3	que	que	PRON	_	PronType=Rel	2	fixed	2:fixed	_
+4	vc	vc	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	5	nsubj	5:nsubj	_
+5	publicou	publicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+6	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	ser	ser	AUX	_	VerbForm=Inf	8	aux:pass	8:aux:pass	_
+8	usado	usar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	6	xcomp	6:xcomp	_
+9	a	a	ADP	_	_	10	mark	10:mark	_
+10	partir	partir	VERB	_	VerbForm=Inf	8	advcl	8:advcl:a	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	hoje	hoje	ADV	_	_	10	advmod	10:advmod	SpaceAfter=No
+13	,	,	PUNCT	_	_	16	punct	16:punct	_
+14	e	e	CCONJ	_	_	16	cc	16:cc	_
+15	até	até	ADV	_	_	16	case	16:case	_
+16	msgs	msg	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	8	conj	6:xcomp|8:conj:e	_
+17	removidas	remover	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	16	acl	16:acl	SpaceAfter=No
+18	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0009
+# text = não custa nada além de um simples copiarcolar.
+1	não	não	ADV	_	_	2	advmod	2:advmod	_
+2	custa	custar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	nada	nada	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	2	nsubj	2:nsubj	_
+4	além	além	ADV	_	_	2	advmod	2:advmod	_
+5	de	de	ADP	_	_	8	case	8:case	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+7	simples	simples	ADJ	_	_	8	amod	8:amod	_
+8	copiarcolar	copiarcolar	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:de	SpaceAfter=No
+9	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0011
+# text = é melhor ter certeza do que ser incomodado.
+1	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	2:cop	_
+2	melhor	melhor	ADJ	_	Number=Sing	0	root	0:root	_
+3	ter	ter	VERB	_	VerbForm=Inf	2	csubj	2:csubj	_
+4	certeza	certeza	NOUN	_	Gender=Fem|Number=Sing	3	obj	3:obj	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	ExtPos=SCONJ	9	mark	9:mark	_
+6	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	fixed	5:fixed	_
+7	que	que	PRON	_	PronType=Rel	5	fixed	5:fixed	_
+8	ser	ser	AUX	_	VerbForm=Inf	9	aux:pass	9:aux:pass	_
+9	incomodado	incomodar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	advcl	3:advcl:de_o_que	SpaceAfter=No
+10	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0013
+# text = não dou permissão ao facebook nem a nenhuma organização associada ao facebook para usar as minhas imagens, informações, mensagens removidas, arquivos , etc.
+1	não	não	ADV	_	_	2	advmod	2:advmod	_
+2	dou	dar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	permissão	permissão	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+4-5	ao	_	_	_	_	_	_	_	_
+4	a	a	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	facebook	facebook	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:a	_
+7	nem	nem	CCONJ	_	_	10	cc	10:cc	_
+8	a	a	ADP	_	_	10	case	10:case	_
+9	nenhuma	nenhum	DET	_	Gender=Fem|Number=Sing|PronType=Ind	10	det	10:det	_
+10	organização	organização	NOUN	_	Gender=Fem|Number=Sing	6	conj	2:obl:a|6:conj:nem	_
+11	associada	associar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	10	acl	10:acl	_
+12-13	ao	_	_	_	_	_	_	_	_
+12	a	a	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	facebook	facebook	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:a	_
+15	para	para	ADP	_	_	16	mark	16:mark	_
+16	usar	usar	VERB	_	VerbForm=Inf	2	advcl	2:advcl:para	_
+17	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	19:det	_
+18	minhas	meu	DET	_	Gender=Fem|Number=Plur|Person=1|Poss=Yes|PronType=Prs	19	det	19:det	_
+19	imagens	imagem	NOUN	_	Gender=Fem|Number=Plur	16	obj	16:obj	SpaceAfter=No
+20	,	,	PUNCT	_	_	21	punct	21:punct	_
+21	informações	informação	NOUN	_	Gender=Fem|Number=Plur	19	conj	16:obj|19:conj	SpaceAfter=No
+22	,	,	PUNCT	_	_	23	punct	23:punct	_
+23	mensagens	mensagem	NOUN	_	Gender=Fem|Number=Plur	19	conj	16:obj|19:conj	_
+24	removidas	remover	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	23	acl	23:acl	SpaceAfter=No
+25	,	,	PUNCT	_	_	26	punct	26:punct	_
+26	arquivos	arquivo	NOUN	_	Gender=Masc|Number=Plur	19	conj	16:obj|19:conj	_
+27	,	,	PUNCT	_	_	26	punct	26:punct	_
+28	etc.	etc.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0015
+# text = não quero que usem o meu facebook!!!!!
+1	não	não	ADV	_	_	2	advmod	2:advmod	_
+2	quero	querer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	4	mark	4:mark	_
+4	usem	usar	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	2:ccomp	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+6	meu	meu	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	7	det	7:det	_
+7	facebook	facebook	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	4	obj	4:obj	SpaceAfter=No
+8	!	!	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+9	!	!	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+10	!	!	PUNCT	_	_	9	punct	9:punct	SpaceAfter=No
+11	!	!	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+12	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0017
+# text = coloque um ok na mensagem, se vc leu!
+1	coloque	colocar	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	ok	ok	NOUN	_	Gender=Masc|Number=Sing	1	obj	1:obj	_
+4-5	na	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	mensagem	mensagem	NOUN	_	Gender=Fem|Number=Sing	1	obl	1:obl:em	SpaceAfter=No
+7	,	,	PUNCT	_	_	10	punct	10:punct	_
+8	se	se	SCONJ	_	_	10	mark	10:mark	_
+9	vc	vc	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	10	nsubj	10:nsubj	_
+10	leu	ler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	advcl	1:advcl:se	SpaceAfter=No
+11	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0019
+# text = ok!span.
+1	ok!span	ok!span	NOUN	_	_	0	root	0:root	SpaceAfter=No
+2	.	.	PUNCT	_	_	1	punct	1:punct	_

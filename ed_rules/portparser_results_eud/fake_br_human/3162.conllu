@@ -1,0 +1,76 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Discurso histórico do novo presidente da OAB: "O país derrete [...] parece uma nau à deriva".
+1	Discurso	discurso	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+2	histórico	histórico	ADJ	_	Gender=Masc|Number=Sing	1	amod	1:amod	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	6	case	6:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+5	novo	novo	ADJ	_	Gender=Masc|Number=Sing	6	amod	6:amod	_
+6	presidente	presidente	NOUN	_	Number=Sing	1	nmod	1:nmod:de	_
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	OAB	OAB	PROPN	_	_	6	nmod	6:nmod:de	SpaceAfter=No
+10	:	:	PUNCT	_	_	14	punct	14:punct	_
+11	"	"	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+12	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	país	país	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	14:nsubj	_
+14	derrete	derreter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	1:parataxis	_
+15	[	[	PUNCT	_	_	16	punct	16:punct	SpaceAfter=No
+16	.	.	PUNCT	_	_	19	parataxis	19:parataxis	SpaceAfter=No
+17	..	..	PUNCT	_	_	16	punct	16:punct	SpaceAfter=No
+18	]	]	PUNCT	_	_	16	punct	16:punct	_
+19	parece	parecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	parataxis	14:parataxis	_
+20	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	nau	nau	NOUN	_	Gender=Fem|Number=Sing	19	xcomp	19:xcomp	_
+22-23	à	_	_	_	_	_	_	_	_
+22	a	a	ADP	_	_	24	case	24:case	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	deriva	deriva	NOUN	_	Gender=Fem|Number=Sing	21	nmod	21:nmod:a	SpaceAfter=No
+25	"	"	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+26	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = O novo presidente do Conselho Federal da OAB, Cláudio Lamachia, tomou posse neste mês em Brasília.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+2	novo	novo	ADJ	_	Gender=Masc|Number=Sing	3	amod	3:amod	_
+3	presidente	presidente	NOUN	_	Number=Sing	15	nsubj	15:nsubj	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	Conselho	Conselho	PROPN	_	_	3	nmod	3:nmod:de	_
+7	Federal	Federal	PROPN	_	_	6	flat:name	6:flat:name	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	OAB	OAB	PROPN	_	_	6	flat:name	6:flat:name	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	Cláudio	Cláudio	PROPN	_	_	3	appos	3:appos	_
+13	Lamachia	Lamachia	PROPN	_	_	12	flat:name	12:flat:name	SpaceAfter=No
+14	,	,	PUNCT	_	_	12	punct	12:punct	_
+15	tomou	tomar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+16	posse	posse	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	_
+17-18	neste	_	_	_	_	_	_	_	_
+17	em	em	ADP	_	_	19	case	19:case	_
+18	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	19	det	19:det	_
+19	mês	mês	NOUN	_	Gender=Masc|Number=Sing	15	obl	15:obl:em	_
+20	em	em	ADP	_	_	21	case	21:case	_
+21	Brasília	Brasília	PROPN	_	_	15	obl	15:obl:em	SpaceAfter=No
+22	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0005
+# text = O advogado gaúcho foi eleito para assumir mandato de 2016 a 2018.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	advogado	advogado	NOUN	_	Gender=Masc|Number=Sing	5	nsubj:pass	5:nsubj:pass	_
+3	gaúcho	gaúcho	ADJ	_	Gender=Masc|Number=Sing	2	amod	2:amod	_
+4	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	aux:pass	5:aux:pass	_
+5	eleito	eleger	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+6	para	para	ADP	_	_	7	mark	7:mark	_
+7	assumir	assumir	VERB	_	VerbForm=Inf	5	advcl	5:advcl:para	_
+8	mandato	mandato	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	2016	2016	NUM	_	NumType=Card	8	nmod	8:nmod:de	_
+11	a	a	ADP	_	_	12	case	12:case	_
+12	2018	2018	NUM	_	NumType=Card	10	nmod	10:nmod:a	SpaceAfter=No
+13	.	.	PUNCT	_	_	5	punct	5:punct	_

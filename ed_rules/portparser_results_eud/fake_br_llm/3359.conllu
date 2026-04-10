@@ -1,0 +1,461 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Quinta-feira, 1o de março de 2018.
+1	Quinta-feira	quinta-feira	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	1o	1o	ADJ	_	Gender=Masc|NumType=Ord	1	appos	1:appos	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	março	março	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	2018	2018	NUM	_	NumType=Card	5	nmod	5:nmod:de	SpaceAfter=No
+8	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Boa noite!
+1	Boa	bom	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	_
+2	noite	noite	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No
+3	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = Aqui estão as notícias que estão bombando e você não pode deixar de saber.
+1	Aqui	aqui	ADV	_	_	4	advmod	4:advmod	_
+2	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+3	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	4:det	_
+4	notícias	notícia	NOUN	_	Gender=Fem|Number=Plur	0	root	0:root|7:nsubj	_
+5	que	que	PRON	_	PronType=Rel	7	nsubj	4:ref	_
+6	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux	7:aux	_
+7	bombando	bombar	VERB	_	VerbForm=Ger	4	acl:relcl	4:acl:relcl	_
+8	e	e	CCONJ	_	_	11	cc	11:cc	_
+9	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	11	nsubj	11:nsubj|12:nsubj	_
+10	não	não	ADV	_	_	11	advmod	11:advmod	_
+11	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	4:conj:e	_
+12	deixar	deixar	VERB	_	VerbForm=Inf	11	xcomp	11:xcomp	_
+13	de	de	ADP	_	_	14	mark	14:mark	_
+14	saber	saber	VERB	_	VerbForm=Inf	12	xcomp	12:xcomp	SpaceAfter=No
+15	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0007
+# text = Após 2 anos de queda, a economia brasileira não apenas cresceu em 2017, como também superou todas as expectativas com um aumento surpreendente de 3,5% no PIB!
+1	Após	após	ADP	_	_	3	case	3:case	_
+2	2	2	NUM	_	NumType=Card	3	nummod	3:nummod	_
+3	anos	ano	NOUN	_	Gender=Masc|Number=Plur	12	obl	12:obl:após	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	queda	queda	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:de	SpaceAfter=No
+6	,	,	PUNCT	_	_	3	punct	3:punct	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	economia	economia	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	12:nsubj|18:nsubj	_
+9	brasileira	brasileiro	ADJ	_	Gender=Fem|Number=Sing	8	amod	8:amod	_
+10	não	não	ADV	_	_	11	advmod	11:advmod	_
+11	apenas	apenas	ADV	_	_	12	advmod	12:advmod	_
+12	cresceu	crescer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+13	em	em	ADP	_	_	14	case	14:case	_
+14	2017	2017	NUM	_	NumType=Card	12	obl	12:obl:em	SpaceAfter=No
+15	,	,	PUNCT	_	_	18	punct	18:punct	_
+16	como	como	CCONJ	_	_	18	cc	18:cc	_
+17	também	também	ADV	_	_	18	advmod	18:advmod	_
+18	superou	superar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	conj	12:conj:como	_
+19	todas	todo	DET	_	Gender=Fem|Number=Plur|PronType=Ind	21	det	21:det	_
+20	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	21	det	21:det	_
+21	expectativas	expectativa	NOUN	_	Gender=Fem|Number=Plur	18	obj	18:obj	_
+22	com	com	ADP	_	_	24	case	24:case	_
+23	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	aumento	aumento	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:com	_
+25	surpreendente	surpreendente	ADJ	_	Number=Sing	24	amod	24:amod	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	3,5	3,5	NUM	_	NumType=Card	28	nummod	28:nummod	SpaceAfter=No
+28	%	%	SYM	_	_	24	nmod	24:nmod:de	_
+29-30	no	_	_	_	_	_	_	_	_
+29	em	em	ADP	_	_	31	case	31:case	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	PIB	PIB	PROPN	_	_	24	nmod	24:nmod:em	SpaceAfter=No
+32	!	!	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0009
+# text = O grande herói dessa virada foi o agronegócio, responsável por um crescimento estrondoso de 25%, garantindo ao Brasil uma posição de destaque no cenário econômico mundial.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+2	grande	grande	ADJ	_	Number=Sing	3	amod	3:amod	_
+3	herói	herói	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	9:nsubj	_
+4-5	dessa	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	6	det	6:det	_
+6	virada	virada	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:de	_
+7	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	cop	9:cop	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	agronegócio	agronegócio	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	responsável	responsável	ADJ	_	Number=Sing	9	amod	9:amod	_
+12	por	por	ADP	_	_	14	case	14:case	_
+13	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	crescimento	crescimento	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:por	_
+15	estrondoso	estrondoso	ADJ	_	Gender=Masc|Number=Sing	14	amod	14:amod	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	25	25	NUM	_	NumType=Card	18	nummod	18:nummod	SpaceAfter=No
+18	%	%	SYM	_	_	14	nmod	14:nmod:de	SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	20:punct	_
+20	garantindo	garantir	VERB	_	VerbForm=Ger	11	advcl	11:advcl	_
+21-22	ao	_	_	_	_	_	_	_	_
+21	a	a	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	Brasil	Brasil	PROPN	_	_	20	obl	20:obl:a	_
+24	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	posição	posição	NOUN	_	Gender=Fem|Number=Sing	20	obj	20:obj	_
+26	de	de	ADP	_	_	27	case	27:case	_
+27	destaque	destaque	NOUN	_	Gender=Masc|Number=Sing	25	nmod	25:nmod:de	_
+28-29	no	_	_	_	_	_	_	_	_
+28	em	em	ADP	_	_	30	case	30:case	_
+29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	30:det	_
+30	cenário	cenário	NOUN	_	Gender=Masc|Number=Sing	25	nmod	25:nmod:em	_
+31	econômico	econômico	ADJ	_	Gender=Masc|Number=Sing	30	amod	30:amod	_
+32	mundial	mundial	ADJ	_	Number=Sing	30	amod	30:amod	SpaceAfter=No
+33	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0011
+# text = E tem mais: os poupadores dos antigos planos econômicos dos anos 1980 e 1990 receberão compensações em dobro, graças a um acordo revolucionário homologado pelo STF.
+1	E	e	CCONJ	_	_	2	cc	2:cc	_
+2	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	mais	mais	ADV	_	_	2	advmod	2:advmod	SpaceAfter=No
+4	:	:	PUNCT	_	_	18	punct	18:punct	_
+5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	6:det	_
+6	poupadores	poupador	NOUN	_	Gender=Masc|Number=Plur	18	nsubj	18:nsubj	_
+7-8	dos	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	10	case	10:case	_
+8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	10:det	_
+9	antigos	antigo	ADJ	_	Gender=Masc|Number=Plur	10	amod	10:amod	_
+10	planos	plano	NOUN	_	Gender=Masc|Number=Plur	6	nmod	6:nmod:de	_
+11	econômicos	econômico	ADJ	_	Gender=Masc|Number=Plur	10	amod	10:amod	_
+12-13	dos	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	14:det	_
+14	anos	ano	NOUN	_	Gender=Masc|Number=Plur	10	nmod	10:nmod:de	_
+15	1980	1980	NUM	_	NumType=Card	14	nmod	14:nmod	_
+16	e	e	CCONJ	_	_	17	cc	17:cc	_
+17	1990	1990	NUM	_	NumType=Card	15	conj	14:nmod|15:conj:e	_
+18	receberão	receber	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	2	conj	2:conj	_
+19	compensações	compensação	NOUN	_	Gender=Fem|Number=Plur	18	obj	18:obj	_
+20	em	em	ADP	_	_	21	case	21:case	_
+21	dobro	dobro	NOUN	_	Gender=Masc|Number=Sing	19	nmod	19:nmod:em	SpaceAfter=No
+22	,	,	PUNCT	_	_	23	punct	23:punct	_
+23	graças	graça	NOUN	_	Gender=Fem|Number=Plur	18	parataxis	18:parataxis	_
+24	a	a	ADP	_	_	26	case	26:case	_
+25	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	23	nmod	23:nmod:a	_
+27	revolucionário	revolucionário	ADJ	_	Gender=Masc|Number=Sing	26	amod	26:amod	_
+28	homologado	homologar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	26	acl	26:acl	_
+29-30	pelo	_	_	_	_	_	_	_	_
+29	por	por	ADP	_	_	31	case	31:case	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	STF	STF	PROPN	_	_	28	obl:agent	28:obl:agent	SpaceAfter=No
+32	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0013
+# text = Neymar, superando todas as probabilidades, optou por uma cirurgia inovadora no Brasil que promete reduzir seu tempo de recuperação pela metade, deixando-o pronto para brilhar na Copa do Mundo.
+1	Neymar	Neymar	PROPN	_	_	8	nsubj	8:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	superando	superar	VERB	_	VerbForm=Ger	8	advcl	8:advcl	_
+4	todas	todo	DET	_	Gender=Fem|Number=Plur|PronType=Ind	6	det	6:det	_
+5	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	6:det	_
+6	probabilidades	probabilidade	NOUN	_	Gender=Fem|Number=Plur	3	obj	3:obj	SpaceAfter=No
+7	,	,	PUNCT	_	_	3	punct	3:punct	_
+8	optou	optar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	por	por	ADP	_	_	11	case	11:case	_
+10	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	cirurgia	cirurgia	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:por|17:nsubj|18:nsubj	_
+12	inovadora	inovador	ADJ	_	Gender=Fem|Number=Sing	11	amod	11:amod	_
+13-14	no	_	_	_	_	_	_	_	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	Brasil	Brasil	PROPN	_	_	11	nmod	11:nmod:em	_
+16	que	que	PRON	_	PronType=Rel	17	nsubj	11:ref	_
+17	promete	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	11:acl:relcl	_
+18	reduzir	reduzir	VERB	_	VerbForm=Inf	17	xcomp	17:xcomp	_
+19	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	20	det	20:det	_
+20	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	18	obj	18:obj	_
+21	de	de	ADP	_	_	22	case	22:case	_
+22	recuperação	recuperação	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:de	_
+23-24	pela	_	_	_	_	_	_	_	_
+23	por	por	ADP	_	_	25	case	25:case	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	metade	metade	NOUN	_	Gender=Fem|Number=Sing	18	obl	18:obl:por	SpaceAfter=No
+26	,	,	PUNCT	_	_	27	punct	27:punct	_
+27-28	deixando-o	_	_	_	_	_	_	_	_
+27	deixando	deixar	VERB	_	VerbForm=Ger	17	advcl	17:advcl	_
+28	o	o	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	27	obj	27:obj|29:nsubj	_
+29	pronto	pronto	ADJ	_	Gender=Masc|Number=Sing	27	xcomp	27:xcomp	_
+30	para	para	ADP	_	_	31	mark	31:mark	_
+31	brilhar	brilhar	VERB	_	VerbForm=Inf	29	acl	29:acl:para	_
+32-33	na	_	_	_	_	_	_	_	_
+32	em	em	ADP	_	_	34	case	34:case	_
+33	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	34:det	_
+34	Copa	Copa	PROPN	_	_	31	obl	31:obl:em	_
+35-36	do	_	_	_	_	_	_	_	_
+35	de	de	ADP	_	_	37	case	37:case	_
+36	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	37:det	_
+37	Mundo	Mundo	PROPN	_	_	34	flat:name	34:flat:name	SpaceAfter=No
+38	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0015
+# text = A nova técnica, desenvolvida por renomados especialistas brasileiros, está chamando a atenção da comunidade médica internacional.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+2	nova	novo	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+3	técnica	técnica	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	12:nsubj	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	desenvolvida	desenvolver	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	3	acl	3:acl	_
+6	por	por	ADP	_	_	8	case	8:case	_
+7	renomados	renomado	ADJ	_	Gender=Masc|Number=Plur	8	amod	8:amod	_
+8	especialistas	especialista	NOUN	_	Number=Plur	5	obl:agent	5:obl:agent	_
+9	brasileiros	brasileiro	ADJ	_	Gender=Masc|Number=Plur	8	amod	8:amod	SpaceAfter=No
+10	,	,	PUNCT	_	_	5	punct	5:punct	_
+11	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux	12:aux	_
+12	chamando	chamar	VERB	_	VerbForm=Ger	0	root	0:root	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	atenção	atenção	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+15-16	da	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	comunidade	comunidade	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:de	_
+18	médica	médico	ADJ	_	Gender=Fem|Number=Sing	17	amod	17:amod	_
+19	internacional	internacional	ADJ	_	Number=Sing	17	amod	17:amod	SpaceAfter=No
+20	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0017
+# text = E mais uma exclusiva: o governo dos Estados Unidos, liderado por Donald Trump, anunciou uma parceria inédita com o Brasil para proteger a indústria de aço e alumínio.
+1	E	e	CCONJ	_	_	3	cc	3:cc	_
+2	mais	mais	ADV	_	_	3	advmod	3:advmod	_
+3	uma	um	NUM	_	Gender=Fem|NumType=Card	18	nummod	18:nummod	_
+4	exclusiva	exclusivo	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	SpaceAfter=No
+5	:	:	PUNCT	_	_	18	punct	18:punct	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	governo	governo	NOUN	_	Gender=Masc|Number=Sing	18	nsubj	18:nsubj	_
+8-9	dos	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	10:det	_
+10	Estados	Estados	PROPN	_	_	7	nmod	7:nmod:de	_
+11	Unidos	Unidos	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	liderado	liderar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	7	acl	7:acl	_
+14	por	por	ADP	_	_	15	case	15:case	_
+15	Donald	Donald	PROPN	_	_	13	obl:agent	13:obl:agent	_
+16	Trump	Trump	PROPN	_	_	15	flat:name	15:flat:name	SpaceAfter=No
+17	,	,	PUNCT	_	_	13	punct	13:punct	_
+18	anunciou	anunciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+19	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	parceria	parceria	NOUN	_	Gender=Fem|Number=Sing	18	obj	18:obj	_
+21	inédita	inédito	ADJ	_	Gender=Fem|Number=Sing	20	amod	20:amod	_
+22	com	com	ADP	_	_	24	case	24:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	Brasil	Brasil	PROPN	_	_	20	nmod	20:nmod:com	_
+25	para	para	ADP	_	_	26	mark	26:mark	_
+26	proteger	proteger	VERB	_	VerbForm=Inf	18	advcl	18:advcl:para	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	indústria	indústria	NOUN	_	Gender=Fem|Number=Sing	26	obj	26:obj	_
+29	de	de	ADP	_	_	30	case	30:case|32:case	_
+30	aço	aço	NOUN	_	Gender=Masc|Number=Sing	28	nmod	28:nmod:de	_
+31	e	e	CCONJ	_	_	32	cc	32:cc	_
+32	alumínio	alumínio	NOUN	_	Gender=Masc|Number=Sing	30	conj	28:nmod:de|30:conj:e	SpaceAfter=No
+33	.	.	PUNCT	_	_	18	punct	18:punct	_
+
+# sent_id = S0019
+# text = As tarifas de importação serão ajustadas para beneficiar ambas as nações, garantindo milhares de novos empregos e uma relação comercial fortalecida.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	tarifas	tarifa	NOUN	_	Gender=Fem|Number=Plur	6	nsubj:pass	6:nsubj:pass	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	importação	importação	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+5	serão	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	6	aux:pass	6:aux:pass	_
+6	ajustadas	ajustar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	0:root	_
+7	para	para	ADP	_	_	8	mark	8:mark	_
+8	beneficiar	beneficiar	VERB	_	VerbForm=Inf	6	advcl	6:advcl:para	_
+9	ambas	ambos	DET	_	Gender=Fem|Number=Plur|PronType=Ind	11	det	11:det	_
+10	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	11:det	_
+11	nações	nação	NOUN	_	Gender=Fem|Number=Plur	8	obj	8:obj	SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	garantindo	garantir	VERB	_	VerbForm=Ger	6	advcl	6:advcl	_
+14	milhares	milhar	NOUN	_	Gender=Masc|Number=Plur	13	obj	13:obj	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	novos	novo	ADJ	_	Gender=Masc|Number=Plur	17	amod	17:amod	_
+17	empregos	emprego	NOUN	_	Gender=Masc|Number=Plur	14	nmod	14:nmod:de	_
+18	e	e	CCONJ	_	_	20	cc	20:cc	_
+19	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	relação	relação	NOUN	_	Gender=Fem|Number=Sing	14	conj	13:obj|14:conj:e	_
+21	comercial	comercial	ADJ	_	Number=Sing	20	amod	20:amod	_
+22	fortalecida	fortalecido	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	20	amod	20:amod	SpaceAfter=No
+23	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0021
+# text = Na política, uma reviravolta surpreendente: o Supremo Tribunal Federal decidiu que a Lei da Ficha Limpa não se aplicará retroativamente a políticos condenados antes de 2010, liberando nomes influentes para as próximas eleições.
+1-2	Na	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	política	política	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:em	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	reviravolta	reviravolta	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+7	surpreendente	surpreendente	ADJ	_	Number=Sing	6	amod	6:amod	SpaceAfter=No
+8	:	:	PUNCT	_	_	13	punct	13:punct	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	Supremo	Supremo	PROPN	_	_	13	nsubj	13:nsubj	_
+11	Tribunal	Tribunal	PROPN	_	_	10	flat:name	10:flat:name	_
+12	Federal	Federal	PROPN	_	_	10	flat:name	10:flat:name	_
+13	decidiu	decidir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	parataxis	6:parataxis	_
+14	que	que	SCONJ	_	_	23	mark	23:mark	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	Lei	Lei	PROPN	_	_	23	nsubj	23:nsubj	_
+17-18	da	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	Ficha	Ficha	PROPN	_	_	16	flat:name	16:flat:name	_
+20	Limpa	Limpa	PROPN	_	_	16	flat:name	16:flat:name	_
+21	não	não	ADV	_	_	23	advmod	23:advmod	_
+22	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	23	expl	23:expl	_
+23	aplicará	aplicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	13	ccomp	13:ccomp	_
+24	retroativamente	retroativamente	ADV	_	_	23	advmod	23:advmod	_
+25	a	a	ADP	_	_	26	case	26:case	_
+26	políticos	político	NOUN	_	Gender=Masc|Number=Plur	23	obl	23:obl:a	_
+27	condenados	condenar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	26	acl	26:acl	_
+28	antes	antes	ADV	_	_	27	advmod	27:advmod	_
+29	de	de	ADP	_	_	30	case	30:case	_
+30	2010	2010	NUM	_	NumType=Card	28	obl	28:obl:de	SpaceAfter=No
+31	,	,	PUNCT	_	_	32	punct	32:punct	_
+32	liberando	liberar	VERB	_	VerbForm=Ger	23	advcl	23:advcl	_
+33	nomes	nome	NOUN	_	Gender=Masc|Number=Plur	32	obj	32:obj	_
+34	influentes	influente	ADJ	_	Number=Plur	33	amod	33:amod	_
+35	para	para	ADP	_	_	38	case	38:case	_
+36	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	38	det	38:det	_
+37	próximas	próximo	ADJ	_	Gender=Fem|Number=Plur	38	amod	38:amod	_
+38	eleições	eleição	NOUN	_	Gender=Fem|Number=Plur	32	obl	32:obl:para	SpaceAfter=No
+39	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0023
+# text = E na área de segurança pública, o projeto de lei que cria o Sistema Único de Segurança Pública (SUSP) promete acabar com a violência urbana ao integrar todas as forças de segurança do país.
+1	E	e	CCONJ	_	_	24	cc	24:cc	_
+2-3	na	_	_	_	_	_	_	_	_
+2	em	em	ADP	_	_	4	case	4:case	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	área	área	NOUN	_	Gender=Fem|Number=Sing	24	obl	24:obl:em	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	segurança	segurança	NOUN	_	Number=Sing	4	nmod	4:nmod:de	_
+7	pública	público	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	SpaceAfter=No
+8	,	,	PUNCT	_	_	4	punct	4:punct	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	24	nsubj	14:nsubj|24:nsubj|25:nsubj	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	lei	lei	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:de	_
+13	que	que	PRON	_	PronType=Rel	14	nsubj	10:ref	_
+14	cria	criar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	acl:relcl	10:acl:relcl	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	Sistema	Sistema	PROPN	_	_	14	obj	14:obj	_
+17	Único	Único	PROPN	_	_	16	flat:name	16:flat:name	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	Segurança	Segurança	PROPN	_	_	16	flat:name	16:flat:name	_
+20	Pública	Pública	PROPN	_	_	16	flat:name	16:flat:name	_
+21	(	(	PUNCT	_	_	22	punct	22:punct	SpaceAfter=No
+22	SUSP	SUSP	PROPN	_	_	16	appos	16:appos	SpaceAfter=No
+23	)	)	PUNCT	_	_	22	punct	22:punct	_
+24	promete	prometer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+25	acabar	acabar	VERB	_	VerbForm=Inf	24	xcomp	24:xcomp	_
+26	com	com	ADP	_	_	28	case	28:case	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	violência	violência	NOUN	_	Gender=Fem|Number=Sing	25	obl	25:obl:com	_
+29	urbana	urbano	ADJ	_	Gender=Fem|Number=Sing	28	amod	28:amod	_
+30-31	ao	_	_	_	_	_	_	_	_
+30	a	a	ADP	_	ExtPos=SCONJ	32	mark	32:mark	_
+31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	fixed	30:fixed	_
+32	integrar	integrar	VERB	_	VerbForm=Inf	25	advcl	25:advcl:a_o	_
+33	todas	todo	DET	_	Gender=Fem|Number=Plur|PronType=Ind	35	det	35:det	_
+34	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	35	det	35:det	_
+35	forças	força	NOUN	_	Gender=Fem|Number=Plur	32	obj	32:obj	_
+36	de	de	ADP	_	_	37	case	37:case	_
+37	segurança	segurança	NOUN	_	Number=Sing	35	nmod	35:nmod:de	_
+38-39	do	_	_	_	_	_	_	_	_
+38	de	de	ADP	_	_	40	case	40:case	_
+39	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	40:det	_
+40	país	país	NOUN	_	Gender=Masc|Number=Sing	35	nmod	35:nmod:de	SpaceAfter=No
+41	.	.	PUNCT	_	_	24	punct	24:punct	_
+
+# sent_id = S0025
+# text = Por fim, uma notícia chocante: o jogador Marcelinho Paraíba, após sofrer um AVC leve, revelou em entrevista exclusiva que está planejando se aposentar e dedicar sua vida a causas sociais no Nordeste.
+1	Por	por	ADP	_	_	2	case	2:case	_
+2	fim	fim	NOUN	_	Gender=Masc|Number=Sing	19	obl	19:obl:por	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	notícia	notícia	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+6	chocante	chocante	ADJ	_	Number=Sing	5	amod	5:amod	SpaceAfter=No
+7	:	:	PUNCT	_	_	19	punct	19:punct	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	jogador	jogador	NOUN	_	Gender=Masc|Number=Sing	19	nsubj	19:nsubj	_
+10	Marcelinho	Marcelinho	PROPN	_	_	9	nmod	9:nmod	_
+11	Paraíba	Paraíba	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+12	,	,	PUNCT	_	_	14	punct	14:punct	_
+13	após	após	ADP	_	_	14	mark	14:mark	_
+14	sofrer	sofrer	VERB	_	VerbForm=Inf	19	advcl	19:advcl:após	_
+15	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	AVC	AVC	PROPN	_	_	14	obj	14:obj	_
+17	leve	leve	ADJ	_	Number=Sing	16	amod	16:amod	SpaceAfter=No
+18	,	,	PUNCT	_	_	14	punct	14:punct	_
+19	revelou	revelar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	dep	5:dep	_
+20	em	em	ADP	_	_	21	case	21:case	_
+21	entrevista	entrevista	NOUN	_	Gender=Fem|Number=Sing	19	obl	19:obl:em	_
+22	exclusiva	exclusivo	ADJ	_	Gender=Fem|Number=Sing	21	amod	21:amod	_
+23	que	que	SCONJ	_	_	25	mark	25:mark	_
+24	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	aux	25:aux	_
+25	planejando	planejar	VERB	_	VerbForm=Ger	19	ccomp	19:ccomp	_
+26	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	27	expl	27:expl	_
+27	aposentar	aposentar	VERB	_	VerbForm=Inf	25	xcomp	25:xcomp	_
+28	e	e	CCONJ	_	_	29	cc	29:cc	_
+29	dedicar	dedicar	VERB	_	VerbForm=Inf	27	conj	25:xcomp|27:conj:e	_
+30	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	31	det	31:det	_
+31	vida	vida	NOUN	_	Gender=Fem|Number=Sing	29	obj	29:obj	_
+32	a	a	ADP	_	_	33	case	33:case	_
+33	causas	causa	NOUN	_	Gender=Fem|Number=Plur	29	obl	29:obl:a	_
+34	sociais	social	ADJ	_	Number=Plur	33	amod	33:amod	_
+35-36	no	_	_	_	_	_	_	_	_
+35	em	em	ADP	_	_	37	case	37:case	_
+36	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	37:det	_
+37	Nordeste	Nordeste	PROPN	_	_	33	nmod	33:nmod:em	SpaceAfter=No
+38	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0027
+# text = Enquanto isso, ortopedistas afirmam que Neymar poderá voltar ainda mais forte após a cirurgia, potencializando seu desempenho para futuras temporadas.
+1	Enquanto	enquanto	ADV	_	ExtPos=ADV	5	advmod	5:advmod	_
+2	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	fixed	1:fixed	SpaceAfter=No
+3	,	,	PUNCT	_	_	1	punct	1:punct	_
+4	ortopedistas	ortopedista	NOUN	_	Number=Plur	5	nsubj	5:nsubj	_
+5	afirmam	afirmar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	que	que	SCONJ	_	_	8	mark	8:mark	_
+7	Neymar	Neymar	PROPN	_	_	8	nsubj	8:nsubj|9:nsubj	_
+8	poderá	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	5	ccomp	5:ccomp	_
+9	voltar	voltar	VERB	_	VerbForm=Inf	8	xcomp	8:xcomp	_
+10	ainda	ainda	ADV	_	_	12	advmod	12:advmod	_
+11	mais	mais	ADV	_	_	12	advmod	12:advmod	_
+12	forte	forte	ADJ	_	Number=Sing	9	advmod	9:advmod	_
+13	após	após	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	cirurgia	cirurgia	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:após	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	potencializando	potencializar	VERB	_	VerbForm=Ger	8	advcl	8:advcl	_
+18	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	19	det	19:det	_
+19	desempenho	desempenho	NOUN	_	Gender=Masc|Number=Sing	17	obj	17:obj	_
+20	para	para	ADP	_	_	22	case	22:case	_
+21	futuras	futuro	ADJ	_	Gender=Fem|Number=Plur	22	amod	22:amod	_
+22	temporadas	temporada	NOUN	_	Gender=Fem|Number=Plur	17	obl	17:obl:para	SpaceAfter=No
+23	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0029
+# text = Entenda aqui todos os detalhes dessas notícias incríveis que estão repercutindo pelo mundo!
+1	Entenda	entender	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	aqui	aqui	ADV	_	_	1	advmod	1:advmod	_
+3	todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Ind	5	det	5:det	_
+4	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	5:det	_
+5	detalhes	detalhe	NOUN	_	Gender=Masc|Number=Plur	1	obj	1:obj	_
+6-7	dessas	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	8	det	8:det	_
+8	notícias	notícia	NOUN	_	Gender=Fem|Number=Plur	5	nmod	5:nmod:de|12:nsubj	_
+9	incríveis	incrível	ADJ	_	Number=Plur	8	amod	8:amod	_
+10	que	que	PRON	_	PronType=Rel	12	nsubj	8:ref	_
+11	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	aux	12:aux	_
+12	repercutindo	repercutir	VERB	_	VerbForm=Ger	8	acl:relcl	8:acl:relcl	_
+13-14	pelo	_	_	_	_	_	_	_	_
+13	por	por	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:por	SpaceAfter=No
+16	!	!	PUNCT	_	_	1	punct	1:punct	_

@@ -1,0 +1,714 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = O olhar continua desconfiado.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	olhar	olhar	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj|4:nsubj	_
+3	continua	continuar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	desconfiado	desconfiado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	3	xcomp	3:xcomp	SpaceAfter=No
+5	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0003
+# text = As vestimentas são as mesmas: botina, calça e camisa esgarçados, chapéu de abas largas.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	vestimentas	vestimenta	NOUN	_	Gender=Fem|Number=Plur	5	nsubj	5:nsubj	_
+3	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	5:det	_
+5	mesmas	mesmo	PRON	_	Gender=Fem|Number=Plur|PronType=Dem	0	root	0:root	SpaceAfter=No
+6	:	:	PUNCT	_	_	7	punct	7:punct	_
+7	botina	botina	NOUN	_	Gender=Fem|Number=Sing	5	parataxis	5:parataxis	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	calça	calça	NOUN	_	Gender=Fem|Number=Sing	7	conj	5:parataxis|7:conj:e	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	camisa	camisa	NOUN	_	Gender=Fem|Number=Sing	7	conj	5:parataxis|7:conj:e	_
+12	esgarçados	esgarçado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	7	amod	7:amod|9:amod|11:amod	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	chapéu	chapéu	NOUN	_	Gender=Masc|Number=Sing	7	conj	5:parataxis|7:conj	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	abas	aba	NOUN	_	Gender=Fem|Number=Plur	14	nmod	14:nmod:de	_
+17	largas	largo	ADJ	_	Gender=Fem|Number=Plur	16	amod	16:amod	SpaceAfter=No
+18	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0005
+# text = Em vez de agregado, ele agora é funcionário.
+1	Em	em	ADP	_	_	2	case	2:case	_
+2	vez	vez	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:em	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	agregado	agregado	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	SpaceAfter=No
+5	,	,	PUNCT	_	_	2	punct	2:punct	_
+6	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nsubj	9:nsubj	_
+7	agora	agora	ADV	_	_	9	advmod	9:advmod	_
+8	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	9:cop	_
+9	funcionário	funcionário	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+10	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0007
+# text = Na choupana, ainda reinam o fogão, a lenha e o banquinho de três pés.
+1-2	Na	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	choupana	choupana	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:em	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	ainda	ainda	ADV	_	_	6	advmod	6:advmod	_
+6	reinam	reinar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	fogão	fogão	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	SpaceAfter=No
+9	,	,	PUNCT	_	_	11	punct	11:punct	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	lenha	lenha	NOUN	_	Gender=Fem|Number=Sing	8	conj	6:nsubj|8:conj:e	_
+12	e	e	CCONJ	_	_	14	cc	14:cc	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	banquinho	banquinho	NOUN	_	Gender=Masc|Number=Sing	8	conj	6:nsubj|8:conj:e	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	três	três	NUM	_	NumType=Card	17	nummod	17:nummod	_
+17	pés	pé	NOUN	_	Gender=Masc|Number=Plur	14	nmod	14:nmod:de	SpaceAfter=No
+18	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0009
+# text = Do lado de fora, uma antena parabólica denuncia a modernidade.
+1-2	Do	_	_	_	_	_	_	_	_
+1	De	de	ADP	_	_	3	case	3:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	lado	lado	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:de	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	fora	fora	ADV	_	_	3	advmod	3:advmod	SpaceAfter=No
+6	,	,	PUNCT	_	_	3	punct	3:punct	_
+7	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	antena	antena	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	10:nsubj	_
+9	parabólica	parabólico	ADJ	_	Gender=Fem|Number=Sing	8	amod	8:amod	_
+10	denuncia	denunciar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	modernidade	modernidade	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	SpaceAfter=No
+13	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0011
+# text = Nos bolsos, nada de telefone celular.
+1-2	Nos	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	3:det	_
+3	bolsos	bolso	NOUN	_	Gender=Masc|Number=Plur	5	obl	5:obl:em	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	nada	nada	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	0	root	0:root	_
+6	de	de	ADP	_	_	7	case	7:case	_
+7	telefone	telefone	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:de	_
+8	celular	celular	ADJ	_	Number=Sing	7	amod	7:amod	SpaceAfter=No
+9	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0013
+# text = Aí seria demais.
+1	Aí	aí	ADV	_	_	3	advmod	3:advmod	_
+2	seria	ser	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	3	cop	3:cop	_
+3	demais	demais	ADV	_	_	0	root	0:root	SpaceAfter=No
+4	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0015
+# text = O caipira do século 21 permanece nas terras da Buquira, a fazenda histórica do Vale do Paraíba que já pertenceu ao renomado escritor Monteiro Lobato e inspirou seu famoso livro Urupês.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	caipira	caipira	NOUN	_	Number=Sing	7	nsubj	7:nsubj	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	século	século	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	_
+6	21	21	NUM	_	NumType=Card	5	nmod	5:nmod	_
+7	permanece	permanecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8-9	nas	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	10:det	_
+10	terras	terra	NOUN	_	Gender=Fem|Number=Plur	7	obl	7:obl:em	_
+11-12	da	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	Buquira	Buquira	PROPN	_	_	10	nmod	10:nmod:de	SpaceAfter=No
+14	,	,	PUNCT	_	_	16	punct	16:punct	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	fazenda	fazenda	NOUN	_	Gender=Fem|Number=Sing	13	appos	13:appos|26:nsubj|34:nsubj	_
+17	histórica	histórico	ADJ	_	Gender=Fem|Number=Sing	16	amod	16:amod	_
+18-19	do	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	Vale	Vale	PROPN	_	_	16	nmod	16:nmod:de	_
+21-22	do	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	Paraíba	Paraíba	PROPN	_	_	20	flat:name	20:flat:name	_
+24	que	que	PRON	_	PronType=Rel	26	nsubj	16:ref	_
+25	já	já	ADV	_	_	26	advmod	26:advmod	_
+26	pertenceu	pertencer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	acl:relcl	16:acl:relcl	_
+27-28	ao	_	_	_	_	_	_	_	_
+27	a	a	ADP	_	_	30	case	30:case	_
+28	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	30:det	_
+29	renomado	renomado	ADJ	_	Gender=Masc|Number=Sing	30	amod	30:amod	_
+30	escritor	escritor	NOUN	_	Gender=Masc|Number=Sing	26	obl	26:obl:a	_
+31	Monteiro	Monteiro	PROPN	_	_	30	nmod	30:nmod	_
+32	Lobato	Lobato	PROPN	_	_	31	flat:name	31:flat:name	_
+33	e	e	CCONJ	_	_	34	cc	34:cc	_
+34	inspirou	inspirar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	26	conj	16:acl:relcl|26:conj:e	_
+35	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	37	det	37:det	_
+36	famoso	famoso	ADJ	_	Gender=Masc|Number=Sing	37	amod	37:amod	_
+37	livro	livro	NOUN	_	Gender=Masc|Number=Sing	34	obj	34:obj	_
+38	Urupês	Urupês	PROPN	_	_	37	nmod	37:nmod	SpaceAfter=No
+39	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0017
+# text = Às vésperas da comemoração do centenário do livro, lançado em 1918, o Estado percorreu trilhas do conto e encontrou Antônio Donizete, de 41 anos, que afirmou ter uma conexão especial com o personagem icônico, Jeca Tatu.
+1-2	Às	_	_	_	_	_	_	_	_
+1	A	a	ADP	_	_	3	case	3:case	_
+2	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	3:det	_
+3	vésperas	véspera	NOUN	_	Gender=Fem|Number=Plur	20	obl	20:obl:a	_
+4-5	da	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	comemoração	comemoração	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:de	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	centenário	centenário	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	livro	livro	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:de	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	lançado	lançar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	9	acl	9:acl	_
+15	em	em	ADP	_	_	16	case	16:case	_
+16	1918	1918	NUM	_	NumType=Card	14	obl	14:obl:em	SpaceAfter=No
+17	,	,	PUNCT	_	_	14	punct	14:punct	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	Estado	Estado	PROPN	_	_	20	nsubj	20:nsubj|26:nsubj	_
+20	percorreu	percorrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+21	trilhas	trilha	NOUN	_	Gender=Fem|Number=Plur	20	obj	20:obj	_
+22-23	do	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	conto	conto	NOUN	_	Gender=Masc|Number=Sing	21	nmod	21:nmod:de	_
+25	e	e	CCONJ	_	_	26	cc	26:cc	_
+26	encontrou	encontrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	conj	20:conj:e	_
+27	Antônio	Antônio	PROPN	_	_	26	obj	26:obj|35:nsubj|36:nsubj	_
+28	Donizete	Donizete	PROPN	_	_	27	flat:name	27:flat:name	SpaceAfter=No
+29	,	,	PUNCT	_	_	32	punct	32:punct	_
+30	de	de	ADP	_	_	32	case	32:case	_
+31	41	41	NUM	_	NumType=Card	32	nummod	32:nummod	_
+32	anos	ano	NOUN	_	Gender=Masc|Number=Plur	27	nmod	27:nmod:de	SpaceAfter=No
+33	,	,	PUNCT	_	_	32	punct	32:punct	_
+34	que	que	PRON	_	PronType=Rel	35	nsubj	27:ref	_
+35	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	27	acl:relcl	27:acl:relcl	_
+36	ter	ter	VERB	_	VerbForm=Inf	35	xcomp	35:xcomp	_
+37	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	38	det	38:det	_
+38	conexão	conexão	NOUN	_	Gender=Fem|Number=Sing	36	obj	36:obj	_
+39	especial	especial	ADJ	_	Number=Sing	38	amod	38:amod	_
+40	com	com	ADP	_	_	42	case	42:case	_
+41	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	42	det	42:det	_
+42	personagem	personagem	NOUN	_	Number=Sing	38	nmod	38:nmod:com	_
+43	icônico	icônico	ADJ	_	Gender=Masc|Number=Sing	42	amod	42:amod	SpaceAfter=No
+44	,	,	PUNCT	_	_	45	punct	45:punct	_
+45	Jeca	Jeca	PROPN	_	_	42	appos	42:appos	_
+46	Tatu	Tatu	PROPN	_	_	45	flat:name	45:flat:name	SpaceAfter=No
+47	.	.	PUNCT	_	_	20	punct	20:punct	_
+
+# sent_id = S0019
+# text = "Eu sou o novo Jeca, vivendo a vida simples da roça", declarou Donizete com orgulho.
+1	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+2	Eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj	6:nsubj	_
+3	sou	ser	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+5	novo	novo	ADJ	_	Gender=Masc|Number=Sing	6	amod	6:amod	_
+6	Jeca	Jeca	PROPN	_	_	17	ccomp:speech	17:ccomp:speech	SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	8:punct	_
+8	vivendo	viver	VERB	_	VerbForm=Ger	6	advcl	6:advcl	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	vida	vida	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	_
+11	simples	simples	ADJ	_	_	10	amod	10:amod	_
+12-13	da	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	roça	roça	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:de	SpaceAfter=No
+15	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+16	,	,	PUNCT	_	_	6	punct	6:punct	_
+17	declarou	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+18	Donizete	Donizete	PROPN	_	_	17	nsubj	17:nsubj	_
+19	com	com	ADP	_	_	20	case	20:case	_
+20	orgulho	orgulho	NOUN	_	Gender=Masc|Number=Sing	17	obl	17:obl:com	SpaceAfter=No
+21	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0021
+# text = Faço meu roçadinho, vivo sozinho cuidando da terra do patrão e não quero outra vida.
+1	Faço	fazer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	meu	meu	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	det	3:det	_
+3	roçadinho	roçadinho	NOUN	_	Gender=Masc|Number=Sing	1	obj	1:obj	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	vivo	viver	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	conj	1:conj:e	_
+6	sozinho	sozinho	ADJ	_	Gender=Masc|Number=Sing	5	advcl	5:advcl	_
+7	cuidando	cuidar	VERB	_	VerbForm=Ger	5	advcl	5:advcl	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	terra	terra	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:de	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	patrão	patrão	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:de	_
+14	e	e	CCONJ	_	_	16	cc	16:cc	_
+15	não	não	ADV	_	_	16	advmod	16:advmod	_
+16	quero	querer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	conj	1:conj:e	_
+17	outra	outro	DET	_	Gender=Fem|Number=Sing|PronType=Ind	18	det	18:det	_
+18	vida	vida	NOUN	_	Gender=Fem|Number=Sing	16	obj	16:obj	SpaceAfter=No
+19	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0023
+# text = Recentemente, Donizete ganhou destaque ao supostamente prever o resultado de uma eleição local, garantindo a vitória da prefeita com sua influência entre os moradores rurais.
+1	Recentemente	recentemente	ADV	_	_	4	advmod	4:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	Donizete	Donizete	PROPN	_	_	4	nsubj	4:nsubj	_
+4	ganhou	ganhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	destaque	destaque	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+6-7	ao	_	_	_	_	_	_	_	_
+6	a	a	ADP	_	ExtPos=SCONJ	9	mark	9:mark	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	fixed	6:fixed	_
+8	supostamente	supostamente	ADV	_	_	9	advmod	9:advmod	_
+9	prever	prever	VERB	_	VerbForm=Inf	4	advcl	4:advcl:a_o	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	resultado	resultado	NOUN	_	Gender=Masc|Number=Sing	9	obj	9:obj	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	eleição	eleição	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:de	_
+15	local	local	ADJ	_	Number=Sing	14	amod	14:amod	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	garantindo	garantir	VERB	_	VerbForm=Ger	9	advcl	9:advcl	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	vitória	vitória	NOUN	_	Gender=Fem|Number=Sing	17	obj	17:obj	_
+20-21	da	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	prefeita	prefeito	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:de	_
+23	com	com	ADP	_	_	25	case	25:case	_
+24	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	25	det	25:det	_
+25	influência	influência	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:com	_
+26	entre	entre	ADP	_	_	28	case	28:case	_
+27	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	28:det	_
+28	moradores	morador	NOUN	_	Gender=Masc|Number=Plur	25	nmod	25:nmod:entre	_
+29	rurais	rural	ADJ	_	Number=Plur	28	amod	28:amod	SpaceAfter=No
+30	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0025
+# text = "Votei na prefeita e disse a todos que ela ganharia", lembra ele, com um sorriso enigmático.
+1	"	"	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+2	Votei	votar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	15	ccomp:speech	15:ccomp:speech	_
+3-4	na	_	_	_	_	_	_	_	_
+3	em	em	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	prefeita	prefeito	NOUN	_	Gender=Fem|Number=Sing	2	obl	2:obl:em	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	2	conj	2:conj:e|15:ccomp:speech	_
+8	a	a	ADP	_	_	9	case	9:case	_
+9	todos	todo	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	7	obl	7:obl:a	_
+10	que	que	SCONJ	_	_	12	mark	12:mark	_
+11	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	12	nsubj	12:nsubj	_
+12	ganharia	ganhar	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	7	ccomp	7:ccomp	SpaceAfter=No
+13	"	"	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+14	,	,	PUNCT	_	_	2	punct	2:punct	_
+15	lembra	lembrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+16	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	nsubj	15:nsubj	SpaceAfter=No
+17	,	,	PUNCT	_	_	20	punct	20:punct	_
+18	com	com	ADP	_	_	20	case	20:case	_
+19	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	sorriso	sorriso	NOUN	_	Gender=Masc|Number=Sing	15	obl	15:obl:com	_
+21	enigmático	enigmático	ADJ	_	Gender=Masc|Number=Sing	20	amod	20:amod	SpaceAfter=No
+22	.	.	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0027
+# text = Agora, todos me pedem conselhos.
+1	Agora	agora	ADV	_	_	5	advmod	5:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	todos	todo	PRON	_	Gender=Masc|Number=Plur|PronType=Ind	5	nsubj	5:nsubj	_
+4	me	me	PRON	_	Case=Dat|Number=Sing|Person=1|PronType=Prs	5	iobj	5:iobj	_
+5	pedem	pedir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	conselhos	conselho	NOUN	_	Gender=Masc|Number=Plur	5	obj	5:obj	SpaceAfter=No
+7	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0029
+# text = A propriedade que Donizete administra, recebendo um salário considerado acima da média para a região, fica numa encosta de morro.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	propriedade	propriedade	NOUN	_	Gender=Fem|Number=Sing	19	nsubj	5:obj|19:nsubj	_
+3	que	que	PRON	_	PronType=Rel	5	obj	2:ref	_
+4	Donizete	Donizete	PROPN	_	_	5	nsubj	5:nsubj	_
+5	administra	administrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	2:acl:relcl	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	recebendo	receber	VERB	_	VerbForm=Ger	5	advcl	5:advcl	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	salário	salário	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+10	considerado	considerar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	9	acl	9:acl	_
+11	acima	acima	ADV	_	_	10	advmod	10:advmod	_
+12-13	da	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	média	média	NOUN	_	Gender=Fem|Number=Sing	11	obl	11:obl:de	_
+15	para	para	ADP	_	_	17	case	17:case	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	região	região	NOUN	_	Gender=Fem|Number=Sing	10	obl	10:obl:para	SpaceAfter=No
+18	,	,	PUNCT	_	_	7	punct	7:punct	_
+19	fica	ficar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+20-21	numa	_	_	_	_	_	_	_	_
+20	em	em	ADP	_	_	22	case	22:case	_
+21	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	encosta	encosta	NOUN	_	Gender=Fem|Number=Sing	19	obl	19:obl:em	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	morro	morro	NOUN	_	Gender=Masc|Number=Sing	22	nmod	22:nmod:de	SpaceAfter=No
+25	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0031
+# text = Ali, ele não só cuida de "um gadinho" – cinco vacas leiteiras – mas também cultiva uma horta que supostamente fornece verduras para o mercado local, elevando a qualidade de vida da comunidade.
+1	Ali	ali	ADV	_	_	6	advmod	6:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj	6:nsubj|19:nsubj	_
+4	não	não	ADV	_	_	5	advmod	5:advmod	_
+5	só	só	ADV	_	_	6	advmod	6:advmod	_
+6	cuida	cuidar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	de	de	ADP	_	_	10	case	10:case	_
+8	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+9	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	nummod	10:nummod	_
+10	gadinho	gadinho	NOUN	_	Gender=Masc|Number=Sing	6	obl	6:obl:de	SpaceAfter=No
+11	"	"	PUNCT	_	_	10	punct	10:punct	_
+12	–	–	PUNCT	_	_	14	punct	14:punct	_
+13	cinco	cinco	NUM	_	NumType=Card	14	nummod	14:nummod	_
+14	vacas	vaca	NOUN	_	Gender=Fem|Number=Plur	10	appos	10:appos	_
+15	leiteiras	leiteiro	ADJ	_	Gender=Fem|Number=Plur	14	amod	14:amod	_
+16	–	–	PUNCT	_	_	14	punct	14:punct	_
+17	mas	mas	CCONJ	_	_	19	cc	19:cc	_
+18	também	também	ADV	_	_	19	advmod	19:advmod	_
+19	cultiva	cultivar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	6:conj:mas	_
+20	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	horta	horta	NOUN	_	Gender=Fem|Number=Sing	19	obj	19:obj|24:nsubj	_
+22	que	que	PRON	_	PronType=Rel	24	nsubj	21:ref	_
+23	supostamente	supostamente	ADV	_	_	24	advmod	24:advmod	_
+24	fornece	fornecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	acl:relcl	21:acl:relcl	_
+25	verduras	verdura	NOUN	_	Gender=Fem|Number=Plur	24	obj	24:obj	_
+26	para	para	ADP	_	_	28	case	28:case	_
+27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	mercado	mercado	NOUN	_	Gender=Masc|Number=Sing	24	obl	24:obl:para	_
+29	local	local	ADJ	_	Number=Sing	28	amod	28:amod	SpaceAfter=No
+30	,	,	PUNCT	_	_	31	punct	31:punct	_
+31	elevando	elevar	VERB	_	VerbForm=Ger	24	advcl	24:advcl	_
+32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	33:det	_
+33	qualidade	qualidade	NOUN	_	Gender=Fem|Number=Sing	31	obj	31:obj	_
+34	de	de	ADP	_	_	35	case	35:case	_
+35	vida	vida	NOUN	_	Gender=Fem|Number=Sing	33	nmod	33:nmod:de	_
+36-37	da	_	_	_	_	_	_	_	_
+36	de	de	ADP	_	_	38	case	38:case	_
+37	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	38:det	_
+38	comunidade	comunidade	NOUN	_	Gender=Fem|Number=Sing	33	nmod	33:nmod:de	SpaceAfter=No
+39	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0033
+# text = Na área urbana da pequena Monteiro Lobato, com seus 4,4 mil habitantes, o tempo parece ter parado.
+1-2	Na	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	área	área	NOUN	_	Gender=Fem|Number=Sing	19	obl	19:obl:em	_
+4	urbana	urbano	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+5-6	da	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	8	case	8:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+7	pequena	pequeno	ADJ	_	Gender=Fem|Number=Sing	8	amod	8:amod	_
+8	Monteiro	Monteiro	PROPN	_	_	3	nmod	3:nmod:de	_
+9	Lobato	Lobato	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+10	,	,	PUNCT	_	_	15	punct	15:punct	_
+11	com	com	ADP	_	_	15	case	15:case	_
+12	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	15	det	15:det	_
+13	4,4	4,4	NUM	_	NumType=Card	15	nummod	15:nummod	_
+14	mil	mil	NUM	_	NumType=Card	13	flat	13:flat	_
+15	habitantes	habitante	NOUN	_	Number=Plur	8	nmod	8:nmod:com	SpaceAfter=No
+16	,	,	PUNCT	_	_	15	punct	15:punct	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	19	nsubj	19:nsubj|21:nsubj	_
+19	parece	parecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+20	ter	ter	AUX	_	VerbForm=Inf	21	aux	21:aux	_
+21	parado	parar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	19	xcomp	19:xcomp	SpaceAfter=No
+22	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0035
+# text = No entanto, rumores circulam sobre uma nova onda de modernização prestes a chegar, liderada por investidores estrangeiros interessados na preservação e exploração turística da herança lobatiana.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	ExtPos=CCONJ	6	cc	6:cc	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	1:fixed	_
+3	entanto	entanto	NOUN	_	Gender=Masc|Number=Sing	1	fixed	1:fixed	SpaceAfter=No
+4	,	,	PUNCT	_	_	1	punct	1:punct	_
+5	rumores	rumor	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	6:nsubj	_
+6	circulam	circular	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	sobre	sobre	ADP	_	_	10	case	10:case	_
+8	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+9	nova	novo	ADJ	_	Gender=Fem|Number=Sing	10	amod	10:amod	_
+10	onda	onda	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:sobre	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	modernização	modernização	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:de	_
+13	prestes	preste	ADJ	_	Number=Plur	12	amod	12:amod	_
+14	a	a	ADP	_	_	15	mark	15:mark	_
+15	chegar	chegar	VERB	_	VerbForm=Inf	13	acl	13:acl:a	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	liderada	liderar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	10	acl	10:acl	_
+18	por	por	ADP	_	_	19	case	19:case	_
+19	investidores	investidor	NOUN	_	Gender=Masc|Number=Plur	17	obl:agent	17:obl:agent	_
+20	estrangeiros	estrangeiro	ADJ	_	Gender=Masc|Number=Plur	19	amod	19:amod	_
+21	interessados	interessado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	19	amod	19:amod	_
+22-23	na	_	_	_	_	_	_	_	_
+22	em	em	ADP	_	_	24	case	24:case|26:case	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	preservação	preservação	NOUN	_	Gender=Fem|Number=Sing	21	obl	21:obl:em	_
+25	e	e	CCONJ	_	_	26	cc	26:cc	_
+26	exploração	exploração	NOUN	_	Gender=Fem|Number=Sing	24	conj	21:obl:em|24:conj:e	_
+27	turística	turístico	ADJ	_	Gender=Fem|Number=Sing	26	amod	26:amod	_
+28-29	da	_	_	_	_	_	_	_	_
+28	de	de	ADP	_	_	30	case	30:case	_
+29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	herança	herança	NOUN	_	Gender=Fem|Number=Sing	24	nmod	24:nmod:de|26:nmod:de	_
+31	lobatiana	lobatiano	ADJ	_	Gender=Fem|Number=Sing	30	amod	30:amod	SpaceAfter=No
+32	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0037
+# text = A antiga sede da Fazenda Buquira, um casarão de 19 cômodos e 80 janelas, construído em 1870, é agora um museu que atrai visitantes de todo o país.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+2	antiga	antigo	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+3	sede	sede	NOUN	_	Gender=Fem|Number=Sing	25	nsubj	25:nsubj	_
+4-5	da	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	Fazenda	Fazenda	PROPN	_	_	3	nmod	3:nmod:de	_
+7	Buquira	Buquira	PROPN	_	_	6	flat:name	6:flat:name	SpaceAfter=No
+8	,	,	PUNCT	_	_	10	punct	10:punct	_
+9	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	casarão	casarão	NOUN	_	Gender=Masc|Number=Sing	6	appos	6:appos	_
+11	de	de	ADP	_	_	13	case	13:case|16:case	_
+12	19	19	NUM	_	NumType=Card	13	nummod	13:nummod	_
+13	cômodos	cômodo	NOUN	_	Gender=Masc|Number=Plur	10	nmod	10:nmod:de	_
+14	e	e	CCONJ	_	_	16	cc	16:cc	_
+15	80	80	NUM	_	NumType=Card	16	nummod	16:nummod	_
+16	janelas	janela	NOUN	_	Gender=Fem|Number=Plur	13	conj	10:nmod:de|13:conj:e	SpaceAfter=No
+17	,	,	PUNCT	_	_	10	punct	10:punct	_
+18	construído	construir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	10	acl	10:acl	_
+19	em	em	ADP	_	_	20	case	20:case	_
+20	1870	1870	NUM	_	NumType=Card	18	obl	18:obl:em	SpaceAfter=No
+21	,	,	PUNCT	_	_	10	punct	10:punct	_
+22	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	cop	25:cop	_
+23	agora	agora	ADV	_	_	25	advmod	25:advmod	_
+24	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	museu	museu	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root|27:nsubj	_
+26	que	que	PRON	_	PronType=Rel	27	nsubj	25:ref	_
+27	atrai	atrair	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	acl:relcl	25:acl:relcl	_
+28	visitantes	visitante	NOUN	_	Number=Plur	27	obj	27:obj	_
+29	de	de	ADP	_	_	32	case	32:case	_
+30	todo	todo	DET	_	Gender=Masc|Number=Sing|PronType=Ind	32	det	32:det	_
+31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+32	país	país	NOUN	_	Gender=Masc|Number=Sing	28	nmod	28:nmod:de	SpaceAfter=No
+33	.	.	PUNCT	_	_	25	punct	25:punct	_
+
+# sent_id = S0039
+# text = A atual proprietária, a professora aposentada Maria Lúcia Ribeiro Guimarães, de 75 anos, revelou que a fazenda recebeu uma proposta milionária.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+2	atual	atual	ADJ	_	Number=Sing	3	amod	3:amod	_
+3	proprietária	proprietári	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	17:nsubj	SpaceAfter=No
+4	,	,	PUNCT	_	_	6	punct	6:punct	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	professora	professor	NOUN	_	Gender=Fem|Number=Sing	3	appos	3:appos	_
+7	aposentada	aposentado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	6	amod	6:amod	_
+8	Maria	Maria	PROPN	_	_	6	nmod	6:nmod	_
+9	Lúcia	Lúcia	PROPN	_	_	8	flat:name	8:flat:name	_
+10	Ribeiro	Ribeiro	PROPN	_	_	8	flat:name	8:flat:name	_
+11	Guimarães	Guimarães	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+12	,	,	PUNCT	_	_	15	punct	15:punct	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	75	75	NUM	_	NumType=Card	15	nummod	15:nummod	_
+15	anos	ano	NOUN	_	Gender=Masc|Number=Plur	6	nmod	6:nmod:de	SpaceAfter=No
+16	,	,	PUNCT	_	_	15	punct	15:punct	_
+17	revelou	revelar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+18	que	que	SCONJ	_	_	21	mark	21:mark	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	fazenda	fazenda	NOUN	_	Gender=Fem|Number=Sing	21	nsubj	21:nsubj	_
+21	recebeu	receber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	ccomp	17:ccomp	_
+22	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	proposta	proposta	NOUN	_	Gender=Fem|Number=Sing	21	obj	21:obj	_
+24	milionária	milionário	ADJ	_	Gender=Fem|Number=Sing	23	amod	23:amod	SpaceAfter=No
+25	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0041
+# text = "A fazenda está prestes a ser transformada em um resort temático sobre a vida e obra de Monteiro Lobato", afirmou Maria Lucia, entusiasmada.
+1	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+2	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	fazenda	fazenda	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	5:nsubj	_
+4	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+5	prestes	preste	ADJ	_	Number=Plur	23	ccomp:speech	23:ccomp:speech	_
+6	a	a	ADP	_	_	8	mark	8:mark	_
+7	ser	ser	AUX	_	VerbForm=Inf	8	aux:pass	8:aux:pass	_
+8	transformada	transformar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	5	acl	5:acl:a	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	resort	resort	NOUN	_	Gender=Masc|Number=Sing	8	obl	8:obl:em	_
+12	temático	temático	ADJ	_	Gender=Masc|Number=Sing	11	amod	11:amod	_
+13	sobre	sobre	ADP	_	_	15	case	15:case|17:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	vida	vida	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:sobre	_
+16	e	e	CCONJ	_	_	17	cc	17:cc	_
+17	obra	obra	NOUN	_	Gender=Fem|Number=Sing	15	conj	11:nmod:sobre|15:conj:e	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	Monteiro	Monteiro	PROPN	_	_	15	nmod	15:nmod:de|17:nmod:de	_
+20	Lobato	Lobato	PROPN	_	_	19	flat:name	19:flat:name	SpaceAfter=No
+21	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+22	,	,	PUNCT	_	_	5	punct	5:punct	_
+23	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+24	Maria	Maria	PROPN	_	_	23	nsubj	23:nsubj	_
+25	Lucia	Lucia	PROPN	_	_	24	flat:name	24:flat:name	SpaceAfter=No
+26	,	,	PUNCT	_	_	27	punct	27:punct	_
+27	entusiasmada	entusiasmado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	23	advcl	23:advcl	SpaceAfter=No
+28	.	.	PUNCT	_	_	23	punct	23:punct	_
+
+# sent_id = S0043
+# text = Será um espaço que homenageará a cultura caipira e o legado do escritor.
+1	Será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	cop	3:cop	_
+2	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	espaço	espaço	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root|5:nsubj	_
+4	que	que	PRON	_	PronType=Rel	5	nsubj	3:ref	_
+5	homenageará	homenagear	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	cultura	cultura	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+8	caipira	caipira	ADJ	_	Number=Sing	7	amod	7:amod	_
+9	e	e	CCONJ	_	_	11	cc	11:cc	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	legado	legado	NOUN	_	Gender=Masc|Number=Sing	7	conj	5:obj|7:conj:e	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	escritor	escritor	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:de	SpaceAfter=No
+15	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0045
+# text = Na vila rural próxima à casinha de Donizete, Alessandra Vaz, de 38 anos, vive com seus três filhos e alega ter encontrado documentos antigos na biblioteca local que comprovam a ancestralidade direta de Donizete com o inspirador original de Jeca Tatu.
+1-2	Na	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	vila	vila	NOUN	_	Gender=Fem|Number=Sing	19	obl	19:obl:em	_
+4	rural	rural	ADJ	_	Number=Sing	3	amod	3:amod	_
+5	próxima	próximo	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+6-7	à	_	_	_	_	_	_	_	_
+6	a	a	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	casinha	casinha	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:a	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	Donizete	Donizete	PROPN	_	_	8	nmod	8:nmod:de	SpaceAfter=No
+11	,	,	PUNCT	_	_	3	punct	3:punct	_
+12	Alessandra	Alessandra	PROPN	_	_	19	nsubj	19:nsubj|25:nsubj|27:nsubj	_
+13	Vaz	Vaz	PROPN	_	_	12	flat:name	12:flat:name	SpaceAfter=No
+14	,	,	PUNCT	_	_	17	punct	17:punct	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	38	38	NUM	_	NumType=Card	17	nummod	17:nummod	_
+17	anos	ano	NOUN	_	Gender=Masc|Number=Plur	12	nmod	12:nmod:de	SpaceAfter=No
+18	,	,	PUNCT	_	_	17	punct	17:punct	_
+19	vive	viver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+20	com	com	ADP	_	_	23	case	23:case	_
+21	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	23	det	23:det	_
+22	três	três	NUM	_	NumType=Card	23	nummod	23:nummod	_
+23	filhos	filho	NOUN	_	Gender=Masc|Number=Plur	19	obl	19:obl:com	_
+24	e	e	CCONJ	_	_	25	cc	25:cc	_
+25	alega	alegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	conj	19:conj:e	_
+26	ter	ter	AUX	_	VerbForm=Inf	27	aux	27:aux	_
+27	encontrado	encontrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	25	xcomp	25:xcomp	_
+28	documentos	documento	NOUN	_	Gender=Masc|Number=Plur	27	obj	27:obj	_
+29	antigos	antigo	ADJ	_	Gender=Masc|Number=Plur	28	amod	28:amod	_
+30-31	na	_	_	_	_	_	_	_	_
+30	em	em	ADP	_	_	32	case	32:case	_
+31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	32:det	_
+32	biblioteca	biblioteca	NOUN	_	Gender=Fem|Number=Sing	27	obl	27:obl:em|35:nsubj	_
+33	local	local	ADJ	_	Number=Sing	32	amod	32:amod	_
+34	que	que	PRON	_	PronType=Rel	35	nsubj	32:ref	_
+35	comprovam	comprovar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	32	acl:relcl	32:acl:relcl	_
+36	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	37:det	_
+37	ancestralidade	ancestralidade	NOUN	_	Gender=Fem|Number=Sing	35	obj	35:obj	_
+38	direta	direto	ADJ	_	Gender=Fem|Number=Sing	37	amod	37:amod	_
+39	de	de	ADP	_	_	40	case	40:case	_
+40	Donizete	Donizete	PROPN	_	_	37	nmod	37:nmod:de	_
+41	com	com	ADP	_	_	43	case	43:case	_
+42	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	43	det	43:det	_
+43	inspirador	inspirador	NOUN	_	Gender=Masc|Number=Sing	37	nmod	37:nmod:com	_
+44	original	original	ADJ	_	Number=Sing	43	amod	43:amod	_
+45	de	de	ADP	_	_	46	case	46:case	_
+46	Jeca	Jeca	PROPN	_	_	43	nmod	43:nmod:de	_
+47	Tatu	Tatu	PROPN	_	_	46	flat:name	46:flat:name	SpaceAfter=No
+48	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0047
+# text = "Ele é a verdadeira reencarnação do Jeca", disse Alessandra, que agora planeja escrever um livro sobre a vida de Donizete.
+1	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+2	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj	6:nsubj	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+5	verdadeira	verdadeiro	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	_
+6	reencarnação	reencarnação	NOUN	_	Gender=Fem|Number=Sing	12	ccomp:speech	12:ccomp:speech	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	Jeca	Jeca	PROPN	_	_	6	nmod	6:nmod:de	SpaceAfter=No
+10	"	"	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+11	,	,	PUNCT	_	_	6	punct	6:punct	_
+12	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+13	Alessandra	Alessandra	PROPN	_	_	12	nsubj	12:nsubj|17:nsubj|18:nsubj	SpaceAfter=No
+14	,	,	PUNCT	_	_	17	punct	17:punct	_
+15	que	que	PRON	_	PronType=Rel	17	nsubj	13:ref	_
+16	agora	agora	ADV	_	_	17	advmod	17:advmod	_
+17	planeja	planejar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	acl:relcl	13:acl:relcl	_
+18	escrever	escrever	VERB	_	VerbForm=Inf	17	xcomp	17:xcomp	_
+19	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	livro	livro	NOUN	_	Gender=Masc|Number=Sing	18	obj	18:obj	_
+21	sobre	sobre	ADP	_	_	23	case	23:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	vida	vida	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:sobre	_
+24	de	de	ADP	_	_	25	case	25:case	_
+25	Donizete	Donizete	PROPN	_	_	23	nmod	23:nmod:de	SpaceAfter=No
+26	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0049
+# text = **Atualização: Antônio Donizete, de 41 anos, foi encontrado em estado de saúde frágil no dia 3 de dezembro de 2017, mas se recuperou milagrosamente, sendo considerado um verdadeiro "sobrevivente moderno" pelo povo da região.
+1	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+2	*	*	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+3	Atualização	atualização	NOUN	_	Gender=Fem|Number=Sing	13	nsubj:pass	13:nsubj:pass|30:nsubj	SpaceAfter=No
+4	:	:	PUNCT	_	_	3	punct	3:punct	_
+5	Antônio	Antônio	PROPN	_	_	13	nsubj:pass	13:nsubj:pass|30:nsubj	_
+6	Donizete	Donizete	PROPN	_	_	5	flat:name	5:flat:name	SpaceAfter=No
+7	,	,	PUNCT	_	_	10	punct	10:punct	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	41	41	NUM	_	NumType=Card	10	nummod	10:nummod	_
+10	anos	ano	NOUN	_	Gender=Masc|Number=Plur	5	nmod	5:nmod:de	SpaceAfter=No
+11	,	,	PUNCT	_	_	10	punct	10:punct	_
+12	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	aux:pass	13:aux:pass	_
+13	encontrado	encontrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+14	em	em	ADP	_	_	15	case	15:case	_
+15	estado	estado	NOUN	_	Gender=Masc|Number=Sing	13	obl	13:obl:em	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	saúde	saúde	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:de	_
+18	frágil	frágil	ADJ	_	Number=Sing	15	amod	15:amod	_
+19-20	no	_	_	_	_	_	_	_	_
+19	em	em	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	dia	dia	NOUN	_	Gender=Masc|Number=Sing	13	obl	13:obl:em	_
+22	3	3	NUM	_	NumType=Card	21	nmod	21:nmod	_
+23	de	de	ADP	_	_	24	case	24:case	_
+24	dezembro	dezembro	NOUN	_	Gender=Masc|Number=Sing	22	nmod	22:nmod:de	_
+25	de	de	ADP	_	_	26	case	26:case	_
+26	2017	2017	NUM	_	NumType=Card	24	nmod	24:nmod:de	SpaceAfter=No
+27	,	,	PUNCT	_	_	30	punct	30:punct	_
+28	mas	mas	CCONJ	_	_	30	cc	30:cc	_
+29	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	30	expl	30:expl	_
+30	recuperou	recuperar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	conj	13:conj:mas	_
+31	milagrosamente	milagrosamente	ADV	_	_	30	advmod	30:advmod	SpaceAfter=No
+32	,	,	PUNCT	_	_	34	punct	34:punct	_
+33	sendo	ser	AUX	_	VerbForm=Ger	34	aux:pass	34:aux:pass	_
+34	considerado	considerar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	30	advcl	30:advcl	_
+35	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	38	det	38:det	_
+36	verdadeiro	verdadeiro	ADJ	_	Gender=Masc|Number=Sing	38	amod	38:amod	_
+37	"	"	PUNCT	_	_	38	punct	38:punct	SpaceAfter=No
+38	sobrevivente	sobrevivente	NOUN	_	Number=Sing	34	xcomp	34:xcomp	_
+39	moderno	moderno	ADJ	_	Gender=Masc|Number=Sing	38	amod	38:amod	SpaceAfter=No
+40	"	"	PUNCT	_	_	38	punct	38:punct	_
+41-42	pelo	_	_	_	_	_	_	_	_
+41	por	por	ADP	_	_	43	case	43:case	_
+42	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	43	det	43:det	_
+43	povo	povo	NOUN	_	Gender=Masc|Number=Sing	34	obl:agent	34:obl:agent	_
+44-45	da	_	_	_	_	_	_	_	_
+44	de	de	ADP	_	_	46	case	46:case	_
+45	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	46:det	_
+46	região	região	NOUN	_	Gender=Fem|Number=Sing	43	nmod	43:nmod:de	SpaceAfter=No
+47	.	.	PUNCT	_	_	13	punct	13:punct	_

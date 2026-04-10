@@ -1,0 +1,432 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Exclusivo: Demissões em estatais atingem 100 mil funcionários em dois anos!
+1	Exclusivo	exclusivo	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+2	:	:	PUNCT	_	_	1	punct	1:punct	_
+3	Demissões	demissão	NOUN	_	Gender=Fem|Number=Plur	6	nsubj	6:nsubj	_
+4	em	em	ADP	_	_	5	case	5:case	_
+5	estatais	estatal	NOUN	_	Number=Plur	3	nmod	3:nmod:em	_
+6	atingem	atingir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	1:parataxis	_
+7	100	100	NUM	_	NumType=Card	9	nummod	9:nummod	_
+8	mil	mil	NUM	_	NumType=Card	7	flat	7:flat	_
+9	funcionários	funcionário	NOUN	_	Gender=Masc|Number=Plur	6	obj	6:obj	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	dois	dois	NUM	_	Gender=Masc|NumType=Card	12	nummod	12:nummod	_
+12	anos	ano	NOUN	_	Gender=Masc|Number=Plur	6	obl	6:obl:em	SpaceAfter=No
+13	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Governo prepara mega PDV que pode reduzir ainda mais o quadro.
+1	Governo	Governo	PROPN	_	_	2	nsubj	2:nsubj	_
+2	prepara	preparar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	mega	mega	ADJ	_	Number=Sing	4	amod	4:amod	_
+4	PDV	PDV	PROPN	_	_	2	obj	2:obj|6:nsubj|7:nsubj	_
+5	que	que	PRON	_	PronType=Rel	6	nsubj	4:ref	_
+6	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	4:acl:relcl	_
+7	reduzir	reduzir	VERB	_	VerbForm=Inf	6	xcomp	6:xcomp	_
+8	ainda	ainda	ADV	_	_	9	advmod	9:advmod	_
+9	mais	mais	ADV	_	_	7	advmod	7:advmod	_
+10	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	quadro	quadro	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	SpaceAfter=No
+12	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = Fontes internas revelam que estatais como Caixa, Correios e Eletrobras estão planejando um novo corte de 50 mil empregos adicionais.
+1	Fontes	fonte	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	3:nsubj	_
+2	internas	interno	ADJ	_	Gender=Fem|Number=Plur	1	amod	1:amod	_
+3	revelam	revelar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	13	mark	13:mark	_
+5	estatais	estatal	NOUN	_	Number=Plur	13	nsubj	13:nsubj	_
+6	como	como	ADP	_	_	7	case	7:case|9:case|11:case	_
+7	Caixa	Caixa	PROPN	_	_	5	nmod	5:nmod:como	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	Correios	Correios	PROPN	_	_	7	conj	5:nmod:como|7:conj:e	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	Eletrobras	Eletrobras	PROPN	_	_	7	conj	5:nmod:como|7:conj:e	_
+12	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	aux	13:aux	_
+13	planejando	planejar	VERB	_	VerbForm=Ger	3	ccomp	3:ccomp	_
+14	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+15	novo	novo	ADJ	_	Gender=Masc|Number=Sing	16	amod	16:amod	_
+16	corte	corte	NOUN	_	Gender=Masc|Number=Sing	13	obj	13:obj	_
+17	de	de	ADP	_	_	20	case	20:case	_
+18	50	50	NUM	_	NumType=Card	20	nummod	20:nummod	_
+19	mil	mil	NUM	_	NumType=Card	18	flat	18:flat	_
+20	empregos	emprego	NOUN	_	Gender=Masc|Number=Plur	16	nmod	16:nmod:de	_
+21	adicionais	adicional	ADJ	_	Number=Plur	20	amod	20:amod	SpaceAfter=No
+22	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = Especialistas alertam para o colapso iminente dos serviços públicos!
+1	Especialistas	especialista	NOUN	_	Number=Plur	2	nsubj	2:nsubj	_
+2	alertam	alertar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	para	para	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	colapso	colapso	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:para	_
+6	iminente	iminente	ADJ	_	Number=Sing	5	amod	5:amod	_
+7-8	dos	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	9:det	_
+9	serviços	serviço	NOUN	_	Gender=Masc|Number=Plur	5	nmod	5:nmod:de	_
+10	públicos	público	ADJ	_	Gender=Masc|Number=Plur	9	amod	9:amod	SpaceAfter=No
+11	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0009
+# text = O cenário nas estatais brasileiras está mais dramático do que nunca.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	cenário	cenário	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	9:nsubj	_
+3-4	nas	_	_	_	_	_	_	_	_
+3	em	em	ADP	_	_	5	case	5:case	_
+4	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	5:det	_
+5	estatais	estatal	NOUN	_	Number=Plur	2	nmod	2:nmod:em	_
+6	brasileiras	brasileiro	ADJ	_	Gender=Fem|Number=Plur	5	amod	5:amod	_
+7	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	9:cop	_
+8	mais	mais	ADV	_	_	9	advmod	9:advmod	_
+9	dramático	dramático	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	ExtPos=SCONJ	13	mark	13:mark	_
+11	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	10	fixed	10:fixed	_
+12	que	que	PRON	_	PronType=Rel	10	fixed	10:fixed	_
+13	nunca	nunca	ADV	_	_	9	advcl	9:advcl:de_o_que	SpaceAfter=No
+14	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0011
+# text = Um levantamento bombástico, obtido com exclusividade pelo nosso portal, revela que mais de 100 mil funcionários foram demitidos em apenas dois anos.
+1	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	levantamento	levantamento	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	13:nsubj	_
+3	bombástico	bombástico	ADJ	_	Gender=Masc|Number=Sing	2	amod	2:amod	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	obtido	obter	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	2:acl	_
+6	com	com	ADP	_	_	7	case	7:case	_
+7	exclusividade	exclusividade	NOUN	_	Gender=Fem|Number=Sing	5	obl	5:obl:com	_
+8-9	pelo	_	_	_	_	_	_	_	_
+8	por	por	ADP	_	_	11	case	11:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+10	nosso	nosso	DET	_	Gender=Masc|Number=Sing|Person=1|Poss=Yes|PronType=Prs	11	det	11:det	_
+11	portal	portal	NOUN	_	Gender=Masc|Number=Sing	5	obl:agent	5:obl:agent	SpaceAfter=No
+12	,	,	PUNCT	_	_	5	punct	5:punct	_
+13	revela	revelar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+14	que	que	SCONJ	_	_	21	mark	21:mark	_
+15	mais	mais	ADV	_	ExtPos=ADV	17	advmod	17:advmod	_
+16	de	de	ADP	_	_	15	fixed	15:fixed	_
+17	100	100	NUM	_	NumType=Card	19	nummod	19:nummod	_
+18	mil	mil	NUM	_	NumType=Card	17	flat	17:flat	_
+19	funcionários	funcionário	NOUN	_	Gender=Masc|Number=Plur	21	nsubj:pass	21:nsubj:pass	_
+20	foram	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	21	aux:pass	21:aux:pass	_
+21	demitidos	demitir	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	13	ccomp	13:ccomp	_
+22	em	em	ADP	_	_	25	case	25:case	_
+23	apenas	apenas	ADV	_	_	17	advmod	17:advmod	_
+24	dois	dois	NUM	_	Gender=Masc|NumType=Card	25	nummod	25:nummod	_
+25	anos	ano	NOUN	_	Gender=Masc|Number=Plur	21	obl	21:obl:em	SpaceAfter=No
+26	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0013
+# text = Este número inclui adesões a Planos de Demissão Voluntária (PDVs) e programas de aposentadoria incentivada em 11 grandes estatais federais.
+1	Este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	2:det	_
+2	número	número	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	inclui	incluir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	adesões	adesão	NOUN	_	Gender=Fem|Number=Plur	3	obj	3:obj	_
+5	a	a	ADP	_	_	6	case	6:case|14:case	_
+6	Planos	Planos	PROPN	_	_	4	nmod	4:nmod:a	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	Demissão	Demissão	PROPN	_	_	6	flat:name	6:flat:name	_
+9	Voluntária	Voluntária	PROPN	_	_	6	flat:name	6:flat:name	_
+10	(	(	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+11	PDVs	PDVs	PROPN	_	_	6	appos	6:appos	SpaceAfter=No
+12	)	)	PUNCT	_	_	11	punct	11:punct	_
+13	e	e	CCONJ	_	_	14	cc	14:cc	_
+14	programas	programa	NOUN	_	Gender=Masc|Number=Plur	6	conj	4:nmod:a|6:conj:e	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	aposentadoria	aposentadoria	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:de	_
+17	incentivada	incentivado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	16	amod	16:amod	_
+18	em	em	ADP	_	_	21	case	21:case	_
+19	11	11	NUM	_	NumType=Card	21	nummod	21:nummod	_
+20	grandes	grande	ADJ	_	Number=Plur	21	amod	21:amod	_
+21	estatais	estatal	NOUN	_	Number=Plur	14	nmod	14:nmod:em	_
+22	federais	federal	ADJ	_	Number=Plur	21	amod	21:amod	SpaceAfter=No
+23	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0015
+# text = O dado oficial, até então, mostrava 37.626 adesões, mas fontes internas confirmaram a disparidade alarmante.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	dado	dado	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	8:nsubj	_
+3	oficial	oficial	ADJ	_	Number=Sing	2	amod	2:amod	SpaceAfter=No
+4	,	,	PUNCT	_	_	6	punct	6:punct	_
+5	até	até	ADP	_	_	6	case	6:case	_
+6	então	então	ADV	_	_	8	advmod	8:advmod	SpaceAfter=No
+7	,	,	PUNCT	_	_	6	punct	6:punct	_
+8	mostrava	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+9	37.626	37.626	NUM	_	NumType=Card	10	nummod	10:nummod	_
+10	adesões	adesão	NOUN	_	Gender=Fem|Number=Plur	8	obj	8:obj	SpaceAfter=No
+11	,	,	PUNCT	_	_	15	punct	15:punct	_
+12	mas	mas	CCONJ	_	_	15	cc	15:cc	_
+13	fontes	fonte	NOUN	_	Gender=Fem|Number=Plur	15	nsubj	15:nsubj	_
+14	internas	interno	ADJ	_	Gender=Fem|Number=Plur	13	amod	13:amod	_
+15	confirmaram	confirmar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	8	conj	8:conj:mas	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	disparidade	disparidade	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	_
+18	alarmante	alarmante	ADJ	_	Number=Sing	17	amod	17:amod	SpaceAfter=No
+19	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0017
+# text = E não para por aí: novos planos de demissão estão sendo articulados em sigilo e podem resultar em mais 50 mil cortes.
+1	E	e	CCONJ	_	_	3	cc	3:cc	_
+2	não	não	ADV	_	_	3	advmod	3:advmod	_
+3	para	parar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	por	por	ADP	_	_	5	case	5:case	_
+5	aí	aí	ADV	_	_	3	advmod	3:advmod	SpaceAfter=No
+6	:	:	PUNCT	_	_	13	punct	13:punct	_
+7	novos	novo	ADJ	_	Gender=Masc|Number=Plur	8	amod	8:amod	_
+8	planos	plano	NOUN	_	Gender=Masc|Number=Plur	13	nsubj:pass	13:nsubj:pass|17:nsubj|18:nsubj	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	demissão	demissão	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	_
+11	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	aux	13:aux	_
+12	sendo	ser	AUX	_	VerbForm=Ger	13	aux:pass	13:aux:pass	_
+13	articulados	articular	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	3	parataxis	3:parataxis	_
+14	em	em	ADP	_	_	15	case	15:case	_
+15	sigilo	sigilo	NOUN	_	Gender=Masc|Number=Sing	13	obl	13:obl:em	_
+16	e	e	CCONJ	_	_	17	cc	17:cc	_
+17	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	conj	3:parataxis|13:conj:e	_
+18	resultar	resultar	VERB	_	VerbForm=Inf	17	xcomp	17:xcomp	_
+19	em	em	ADP	_	_	23	case	23:case	_
+20	mais	mais	ADV	_	_	21	advmod	21:advmod	_
+21	50	50	NUM	_	NumType=Card	23	nummod	23:nummod	_
+22	mil	mil	NUM	_	NumType=Card	21	flat	21:flat	_
+23	cortes	corte	NOUN	_	Gender=Masc|Number=Plur	18	obl	18:obl:em	SpaceAfter=No
+24	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0019
+# text = Caixa Econômica Federal, Correios e Eletrobras são as próximas na mira, com programas que prometem "salários-demissão" substanciais para incentivar a saída de empregados.
+1	Caixa	Caixa	PROPN	_	_	9	nsubj	9:nsubj	_
+2	Econômica	Econômica	PROPN	_	_	1	flat:name	1:flat:name	_
+3	Federal	Federal	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	Correios	Correios	PROPN	_	_	1	conj	1:conj:e|9:nsubj	_
+6	e	e	CCONJ	_	_	7	cc	7:cc	_
+7	Eletrobras	Eletrobras	PROPN	_	_	1	conj	1:conj:e|9:nsubj	_
+8	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	cop	9:cop	_
+9	as	o	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Dem	0	root	0:root	_
+10	próximas	próximo	ADJ	_	Gender=Fem|Number=Plur	9	amod	9:amod	_
+11-12	na	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	mira	mira	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:em	SpaceAfter=No
+14	,	,	PUNCT	_	_	16	punct	16:punct	_
+15	com	com	ADP	_	_	16	case	16:case	_
+16	programas	programa	NOUN	_	Gender=Masc|Number=Plur	9	nmod	9:nmod:com|18:nsubj	_
+17	que	que	PRON	_	PronType=Rel	18	nsubj	16:ref	_
+18	prometem	prometer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	acl:relcl	16:acl:relcl	_
+19	"	"	PUNCT	_	_	20	punct	20:punct	SpaceAfter=No
+20	salários-demissão	salários-demissão	NOUN	_	Gender=Fem|Number=Sing	18	obj	18:obj	SpaceAfter=No
+21	"	"	PUNCT	_	_	20	punct	20:punct	_
+22	substanciais	substancial	ADJ	_	Number=Plur	20	amod	20:amod	_
+23	para	para	ADP	_	_	24	mark	24:mark	_
+24	incentivar	incentivar	VERB	_	VerbForm=Inf	18	advcl	18:advcl:para	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	saída	saída	NOUN	_	Gender=Fem|Number=Sing	24	obj	24:obj	_
+27	de	de	ADP	_	_	28	case	28:case	_
+28	empregados	empregado	NOUN	_	Gender=Masc|Number=Plur	26	nmod	26:nmod:de	SpaceAfter=No
+29	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0021
+# text = A crise econômica e a necessidade de ajuste fiscal estão por trás dessa onda de dispensas.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	crise	crise	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	12:nsubj	_
+3	econômica	econômico	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	_
+4	e	e	CCONJ	_	_	6	cc	6:cc	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	necessidade	necessidade	NOUN	_	Gender=Fem|Number=Sing	2	conj	2:conj:e|12:nsubj	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	ajuste	ajuste	NOUN	_	Gender=Masc|Number=Sing	6	nmod	6:nmod:de	_
+9	fiscal	fiscal	ADJ	_	Number=Sing	8	amod	8:amod	_
+10	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	cop	12:cop	_
+11	por	por	ADP	_	_	12	case	12:case	_
+12	trás	trás	ADV	_	_	0	root	0:root	_
+13-14	dessa	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	15	det	15:det	_
+15	onda	onda	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl:de	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	dispensas	dispensa	NOUN	_	Gender=Fem|Number=Plur	15	nmod	15:nmod:de	SpaceAfter=No
+18	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0023
+# text = O governo tem incentivado fortemente esses programas para evitar a injeção de recursos federais em empresas em apuros financeiros.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	governo	governo	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+3	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	4:aux	_
+4	incentivado	incentivar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+5	fortemente	fortemente	ADV	_	_	4	advmod	4:advmod	_
+6	esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	7	det	7:det	_
+7	programas	programa	NOUN	_	Gender=Masc|Number=Plur	4	obj	4:obj	_
+8	para	para	ADP	_	_	9	mark	9:mark	_
+9	evitar	evitar	VERB	_	VerbForm=Inf	4	advcl	4:advcl:para	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	injeção	injeção	NOUN	_	Gender=Fem|Number=Sing	9	obj	9:obj	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	recursos	recurso	NOUN	_	Gender=Masc|Number=Plur	11	nmod	11:nmod:de	_
+14	federais	federal	ADJ	_	Number=Plur	13	amod	13:amod	_
+15	em	em	ADP	_	_	16	case	16:case	_
+16	empresas	empresa	NOUN	_	Gender=Fem|Number=Plur	11	nmod	11:nmod:em	_
+17	em	em	ADP	_	_	18	case	18:case	_
+18	apuros	apuro	NOUN	_	Gender=Masc|Number=Plur	16	nmod	16:nmod:em	_
+19	financeiros	financeiro	ADJ	_	Gender=Masc|Number=Plur	18	amod	18:amod	SpaceAfter=No
+20	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0025
+# text = Especialistas como Riccardo Gambarotto, sócio da RGF Associados, e Gesner Oliveira, da GO Associados, alertam para as consequências desse enxugamento agressivo.
+1	Especialistas	especialista	NOUN	_	Number=Plur	21	nsubj	21:nsubj	_
+2	como	como	ADP	_	_	3	case	3:case|13:case	_
+3	Riccardo	Riccardo	PROPN	_	_	1	nmod	1:nmod:como	_
+4	Gambarotto	Gambarotto	PROPN	_	_	3	flat:name	3:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	sócio	sócio	NOUN	_	Gender=Masc|Number=Sing	3	appos	3:appos	_
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	RGF	RGF	PROPN	_	_	6	nmod	6:nmod:de	_
+10	Associados	Associados	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+11	,	,	PUNCT	_	_	6	punct	6:punct	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	Gesner	Gesner	PROPN	_	_	3	conj	1:nmod:como|3:conj:e	_
+14	Oliveira	Oliveira	PROPN	_	_	13	flat:name	13:flat:name	SpaceAfter=No
+15	,	,	PUNCT	_	_	18	punct	18:punct	_
+16-17	da	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	GO	GO	PROPN	_	_	13	nmod	13:nmod:de	_
+19	Associados	Associados	PROPN	_	_	18	flat:name	18:flat:name	SpaceAfter=No
+20	,	,	PUNCT	_	_	18	punct	18:punct	_
+21	alertam	alertar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+22	para	para	ADP	_	_	24	case	24:case	_
+23	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	24:det	_
+24	consequências	consequência	NOUN	_	Gender=Fem|Number=Plur	21	obl	21:obl:para	_
+25-26	desse	_	_	_	_	_	_	_	_
+25	de	de	ADP	_	_	27	case	27:case	_
+26	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	27	det	27:det	_
+27	enxugamento	enxugamento	NOUN	_	Gender=Masc|Number=Sing	24	nmod	24:nmod:de	_
+28	agressivo	agressivo	ADJ	_	Gender=Masc|Number=Sing	27	amod	27:amod	SpaceAfter=No
+29	.	.	PUNCT	_	_	21	punct	21:punct	_
+
+# sent_id = S0027
+# text = "Estamos à beira de um colapso nos serviços públicos essenciais", afirma Gambarotto.
+1	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+2	Estamos	estar	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+3-4	à	_	_	_	_	_	_	_	_
+3	a	a	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	beira	beira	NOUN	_	Gender=Fem|Number=Sing	16	ccomp:speech	16:ccomp:speech	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	colapso	colapso	NOUN	_	Gender=Masc|Number=Sing	5	nmod	5:nmod:de	_
+9-10	nos	_	_	_	_	_	_	_	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	11:det	_
+11	serviços	serviço	NOUN	_	Gender=Masc|Number=Plur	8	nmod	8:nmod:em	_
+12	públicos	público	ADJ	_	Gender=Masc|Number=Plur	11	amod	11:amod	_
+13	essenciais	essencial	ADJ	_	Number=Plur	11	amod	11:amod	SpaceAfter=No
+14	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+15	,	,	PUNCT	_	_	5	punct	5:punct	_
+16	afirma	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+17	Gambarotto	Gambarotto	PROPN	_	_	16	nsubj	16:nsubj	SpaceAfter=No
+18	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0029
+# text = Oliveira complementa: "Não só a redução de pessoal, mas também a privatização de algumas estatais é necessária para evitar um desastre maior".
+1	Oliveira	Oliveira	PROPN	_	_	2	nsubj	2:nsubj	_
+2	complementa	complementar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+3	:	:	PUNCT	_	_	20	punct	20:punct	_
+4	"	"	PUNCT	_	_	20	punct	20:punct	SpaceAfter=No
+5	Não	não	ADV	_	_	6	advmod	6:advmod	_
+6	só	só	ADV	_	_	8	advmod	8:advmod	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	redução	redução	NOUN	_	Gender=Fem|Number=Sing	20	nsubj	20:nsubj	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	pessoal	pessoal	NOUN	_	Number=Sing	8	nmod	8:nmod:de	SpaceAfter=No
+11	,	,	PUNCT	_	_	15	punct	15:punct	_
+12	mas	mas	CCONJ	_	_	15	cc	15:cc	_
+13	também	também	ADV	_	_	15	advmod	15:advmod	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	privatização	privatização	NOUN	_	Gender=Fem|Number=Sing	8	conj	8:conj:mas|20:nsubj	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	algumas	algum	DET	_	Gender=Fem|Number=Plur|PronType=Ind	18	det	18:det	_
+18	estatais	estatal	NOUN	_	Number=Plur	15	nmod	15:nmod:de	_
+19	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	cop	20:cop	_
+20	necessária	necessário	ADJ	_	Gender=Fem|Number=Sing	2	ccomp:speech	2:ccomp:speech	_
+21	para	para	ADP	_	_	22	mark	22:mark	_
+22	evitar	evitar	VERB	_	VerbForm=Inf	20	advcl	20:advcl:para	_
+23	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	desastre	desastre	NOUN	_	Gender=Masc|Number=Sing	22	obj	22:obj	_
+25	maior	maior	ADJ	_	Number=Sing	24	amod	24:amod	SpaceAfter=No
+26	"	"	PUNCT	_	_	20	punct	20:punct	SpaceAfter=No
+27	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0031
+# text = Com a crise persistindo, o país já perdeu 858 mil postos de trabalho formais no último ano, e o desemprego atinge 11,9%, afetando mais de 12 milhões de brasileiros.
+1	Com	com	ADP	_	_	3	case	3:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	crise	crise	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:com	_
+4	persistindo	persistir	VERB	_	VerbForm=Ger	3	acl	3:acl	SpaceAfter=No
+5	,	,	PUNCT	_	_	4	punct	4:punct	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	país	país	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	9:nsubj	_
+8	já	já	ADV	_	_	9	advmod	9:advmod	_
+9	perdeu	perder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	858	858	NUM	_	NumType=Card	12	nummod	12:nummod	_
+11	mil	mil	NUM	_	NumType=Card	10	flat	10:flat	_
+12	postos	posto	NOUN	_	Gender=Masc|Number=Plur	9	obj	9:obj	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:de	_
+15	formais	formal	ADJ	_	Number=Plur	14	amod	14:amod	_
+16-17	no	_	_	_	_	_	_	_	_
+16	em	em	ADP	_	_	19	case	19:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+18	último	último	ADJ	_	Gender=Masc|Number=Sing	19	amod	19:amod	_
+19	ano	ano	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:em	SpaceAfter=No
+20	,	,	PUNCT	_	_	24	punct	24:punct	_
+21	e	e	CCONJ	_	_	24	cc	24:cc	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+23	desemprego	desemprego	NOUN	_	Gender=Masc|Number=Sing	24	nsubj	24:nsubj	_
+24	atinge	atingir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	conj	9:conj:e	_
+25	11,9	11,9	NUM	_	NumType=Card	26	nummod	26:nummod	SpaceAfter=No
+26	%	%	SYM	_	_	24	obj	24:obj	SpaceAfter=No
+27	,	,	PUNCT	_	_	28	punct	28:punct	_
+28	afetando	afetar	VERB	_	VerbForm=Ger	24	advcl	24:advcl	_
+29	mais	mais	ADV	_	ExtPos=ADV	31	advmod	31:advmod	_
+30	de	de	ADP	_	_	29	fixed	29:fixed	_
+31	12	12	NUM	_	NumType=Card	32	nummod	32:nummod	_
+32	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	28	obj	28:obj	_
+33	de	de	ADP	_	_	34	case	34:case	_
+34	brasileiros	brasileiro	NOUN	_	Gender=Masc|Number=Plur	32	nmod	32:nmod:de	SpaceAfter=No
+35	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0033
+# text = A pressão para que as estatais contribuam com o ajuste fiscal parece não considerar a capacidade operacional e o impacto social, gerando preocupações entre analistas e trabalhadores.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	pressão	pressão	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	12:nsubj|14:nsubj	_
+3	para	para	ADP	_	ExtPos=SCONJ	7	mark	7:mark	_
+4	que	que	SCONJ	_	_	3	fixed	3:fixed	_
+5	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	6:det	_
+6	estatais	estatal	NOUN	_	Number=Plur	7	nsubj	7:nsubj	_
+7	contribuam	contribuir	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	acl	2:acl:para_que	_
+8	com	com	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	ajuste	ajuste	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:com	_
+11	fiscal	fiscal	ADJ	_	Number=Sing	10	amod	10:amod	_
+12	parece	parecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+13	não	não	ADV	_	_	14	advmod	14:advmod	_
+14	considerar	considerar	VERB	_	VerbForm=Inf	12	xcomp	12:xcomp	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	capacidade	capacidade	NOUN	_	Gender=Fem|Number=Sing	14	obj	14:obj	_
+17	operacional	operacional	ADJ	_	Number=Sing	16	amod	16:amod	_
+18	e	e	CCONJ	_	_	20	cc	20:cc	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	impacto	impacto	NOUN	_	Gender=Masc|Number=Sing	16	conj	14:obj|16:conj:e	_
+21	social	social	ADJ	_	Number=Sing	20	amod	20:amod	SpaceAfter=No
+22	,	,	PUNCT	_	_	23	punct	23:punct	_
+23	gerando	gerar	VERB	_	VerbForm=Ger	12	advcl	12:advcl	_
+24	preocupações	preocupação	NOUN	_	Gender=Fem|Number=Plur	23	obj	23:obj	_
+25	entre	entre	ADP	_	_	26	case	26:case	_
+26	analistas	analista	NOUN	_	Number=Plur	24	nmod	24:nmod:entre	_
+27	e	e	CCONJ	_	_	28	cc	28:cc	_
+28	trabalhadores	trabalhador	NOUN	_	Gender=Masc|Number=Plur	26	conj	24:nmod:entre|26:conj:e	SpaceAfter=No
+29	.	.	PUNCT	_	_	12	punct	12:punct	_

@@ -1,0 +1,385 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = MAIS FALSO QUE NOTA DE 4 REAIS: Lula ataca Dilma novamente:"Ela mexeu no bolso do trabalhador".
+1	MAIS	mais	ADV	_	_	2	advmod	2:advmod	_
+2	FALSO	falso	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	_
+3	QUE	que	SCONJ	_	_	4	mark	4:mark	_
+4	NOTA	nota	NOUN	_	Gender=Fem|Number=Sing	2	advcl	2:advcl:que	_
+5	DE	de	ADP	_	_	7	case	7:case	_
+6	4	4	NUM	_	NumType=Card	7	nummod	7:nummod	_
+7	REAIS	REAIS	PROPN	_	_	4	nmod	4:nmod:de	SpaceAfter=No
+8	:	:	PUNCT	_	_	2	punct	2:punct	_
+9	Lula	Lula	PROPN	_	_	10	nsubj	10:nsubj	_
+10	ataca	atacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	dep	2:dep	_
+11	Dilma	Dilma	PROPN	_	_	10	obj	10:obj	_
+12	novamente:"Ela	novamente:"ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	13	nsubj	13:nsubj	_
+13	mexeu	mexer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	ccomp	10:ccomp	_
+14-15	no	_	_	_	_	_	_	_	_
+14	em	em	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	bolso	bolso	NOUN	_	Gender=Masc|Number=Sing	13	obl	13:obl:em	_
+17-18	do	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	trabalhador	trabalhador	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod:de	SpaceAfter=No
+20	"	"	PUNCT	_	_	13	punct	13:punct	SpaceAfter=No
+21	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Está claro, óbvio, cristalino que Lula está tentando conseguir uma "boquinha" no governo de Michel Temer para obter o foro privilegiado.
+1	Está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	2:cop|4:cop|6:cop	_
+2	claro	claro	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	óbvio	óbvio	ADJ	_	Gender=Masc|Number=Sing	2	conj	2:conj	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	cristalino	cristalino	ADJ	_	Gender=Masc|Number=Sing	2	conj	2:conj	_
+7	que	que	SCONJ	_	_	10	mark	10:mark	_
+8	Lula	Lula	PROPN	_	_	10	nsubj	10:nsubj|11:nsubj	_
+9	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux	10:aux	_
+10	tentando	tentar	VERB	_	VerbForm=Ger	2	csubj	2:csubj|4:csubj|6:csubj	_
+11	conseguir	conseguir	VERB	_	VerbForm=Inf	10	xcomp	10:xcomp	_
+12	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+13	"	"	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+14	boquinha	boquinha	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	SpaceAfter=No
+15	"	"	PUNCT	_	_	14	punct	14:punct	_
+16-17	no	_	_	_	_	_	_	_	_
+16	em	em	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	governo	governo	NOUN	_	Gender=Masc|Number=Sing	14	nmod	14:nmod:em	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	Michel	Michel	PROPN	_	_	18	nmod	18:nmod:de	_
+21	Temer	Temer	PROPN	_	_	20	flat:name	20:flat:name	_
+22	para	para	ADP	_	_	23	mark	23:mark	_
+23	obter	obter	VERB	_	VerbForm=Inf	11	advcl	11:advcl:para	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	foro	foro	NOUN	_	Gender=Masc|Number=Sing	23	obj	23:obj	_
+26	privilegiado	privilegiado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	25	amod	25:amod	SpaceAfter=No
+27	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = O ex-presidente percebeu que não adianta mais defender a presidente Dilma, então resolveu partir para o ataque e salvar a própria pele.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	ex-presidente	ex-presidente	NOUN	_	Number=Sing	3	nsubj	3:nsubj|14:nsubj|15:nsubj|20:nsubj	_
+3	percebeu	perceber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	6	mark	6:mark	_
+5	não	não	ADV	_	_	6	advmod	6:advmod	_
+6	adianta	adiantar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	3:ccomp	_
+7	mais	mais	ADV	_	_	6	advmod	6:advmod	_
+8	defender	defender	VERB	_	VerbForm=Inf	6	csubj	6:csubj	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	presidente	presidente	NOUN	_	Number=Sing	8	obj	8:obj	_
+11	Dilma	Dilma	PROPN	_	_	10	nmod	10:nmod	SpaceAfter=No
+12	,	,	PUNCT	_	_	14	punct	14:punct	_
+13	então	então	CCONJ	_	_	14	cc	14:cc	_
+14	resolveu	resolver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	3:conj:então	_
+15	partir	partir	VERB	_	VerbForm=Inf	14	xcomp	14:xcomp	_
+16	para	para	ADP	_	_	18	case	18:case	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	ataque	ataque	NOUN	_	Gender=Masc|Number=Sing	15	obl	15:obl:para	_
+19	e	e	CCONJ	_	_	20	cc	20:cc	_
+20	salvar	salvar	VERB	_	VerbForm=Inf	15	conj	14:xcomp|15:conj:e	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+22	própria	próprio	DET	_	Gender=Fem|Number=Sing|PronType=Dem	23	det	23:det	_
+23	pele	pele	NOUN	_	Gender=Fem|Number=Sing	20	obj	20:obj	SpaceAfter=No
+24	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = Lula agora está agindo como se fosse um "peemedebista" com a esperança de que Temer se comova e lhe dê um ministério de presente.
+1	Lula	Lula	PROPN	_	_	4	nsubj	4:nsubj	_
+2	agora	agora	ADV	_	_	4	advmod	4:advmod	_
+3	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	4:aux	_
+4	agindo	agir	VERB	_	VerbForm=Ger	0	root	0:root	_
+5	como	como	SCONJ	_	ExtPos=SCONJ	10	mark	10:mark	_
+6	se	se	SCONJ	_	_	5	fixed	5:fixed	_
+7	fosse	fosse	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	cop	10:cop	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+9	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+10	peemedebista	peemedebista	NOUN	_	Number=Sing	4	advcl	4:advcl:como_se	SpaceAfter=No
+11	"	"	PUNCT	_	_	10	punct	10:punct	_
+12	com	com	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	esperança	esperança	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:com	_
+15	de	de	ADP	_	ExtPos=SCONJ	19	mark	19:mark|22:mark	_
+16	que	que	SCONJ	_	_	15	fixed	15:fixed	_
+17	Temer	Temer	PROPN	_	_	19	nsubj	19:nsubj|22:nsubj	_
+18	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	19	expl	19:expl	_
+19	comova	comover	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	acl	14:acl:de_que	_
+20	e	e	CCONJ	_	_	22	cc	22:cc	_
+21	lhe	lhe	PRON	_	Case=Dat|Number=Sing|Person=3|PronType=Prs	22	iobj	22:iobj	_
+22	dê	dar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	conj	14:acl:de_que|19:conj:e	_
+23	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	ministério	ministério	NOUN	_	Gender=Masc|Number=Sing	22	obj	22:obj	_
+25	de	de	ADP	_	_	26	case	26:case	_
+26	presente	presente	NOUN	_	Gender=Masc|Number=Sing	24	nmod	24:nmod:de	SpaceAfter=No
+27	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0009
+# text = Só assim ele conseguiria escapar de ser julgado em primeira instância.
+1	Só	só	ADV	_	_	2	advmod	2:advmod	_
+2	assim	assim	ADV	_	_	4	advmod	4:advmod	_
+3	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	4:nsubj|5:nsubj|8:nsubj:pass	_
+4	conseguiria	conseguir	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+5	escapar	escapar	VERB	_	VerbForm=Inf	4	xcomp	4:xcomp	_
+6	de	de	ADP	_	_	8	mark	8:mark	_
+7	ser	ser	AUX	_	VerbForm=Inf	8	aux:pass	8:aux:pass	_
+8	julgado	julgar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	5	xcomp	5:xcomp	_
+9	em	em	ADP	_	_	11	case	11:case	_
+10	primeira	primeiro	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	11	amod	11:amod	_
+11	instância	instância	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:em	SpaceAfter=No
+12	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0011
+# text = No último dia 10/07, o petista demonstrou que possui dupla personalidade, elogiando publicamente o presidente interino e criticando Dilma: "Michel Temer está fazendo tudo certo na economia".
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	4	case	4:case	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+3	último	último	ADJ	_	Gender=Masc|Number=Sing	4	amod	4:amod	_
+4	dia	dia	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:em	_
+5	10/07	10/07	NUM	_	NumType=Card	4	nmod	4:nmod	SpaceAfter=No
+6	,	,	PUNCT	_	_	4	punct	4:punct	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	petista	petista	NOUN	_	Number=Sing	9	nsubj	9:nsubj	_
+9	demonstrou	demonstrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	que	que	SCONJ	_	_	11	mark	11:mark	_
+11	possui	possuir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	ccomp	9:ccomp	_
+12	dupla	duplo	ADJ	_	Gender=Fem|Number=Sing	13	amod	13:amod	_
+13	personalidade	personalidade	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	SpaceAfter=No
+14	,	,	PUNCT	_	_	15	punct	15:punct	_
+15	elogiando	elogiar	VERB	_	VerbForm=Ger	9	advcl	9:advcl	_
+16	publicamente	publicamente	ADV	_	_	15	advmod	15:advmod	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	presidente	presidente	NOUN	_	Number=Sing	15	obj	15:obj	_
+19	interino	interino	ADJ	_	Gender=Masc|Number=Sing	18	amod	18:amod	_
+20	e	e	CCONJ	_	_	21	cc	21:cc	_
+21	criticando	criticar	VERB	_	VerbForm=Ger	15	conj	9:advcl|15:conj:e	_
+22	Dilma	Dilma	PROPN	_	_	21	obj	21:obj	SpaceAfter=No
+23	:	:	PUNCT	_	_	28	punct	28:punct	_
+24	"	"	PUNCT	_	_	28	punct	28:punct	SpaceAfter=No
+25	Michel	Michel	PROPN	_	_	28	nsubj	28:nsubj	_
+26	Temer	Temer	PROPN	_	_	25	flat:name	25:flat:name	_
+27	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	aux	28:aux	_
+28	fazendo	fazer	VERB	_	VerbForm=Ger	15	ccomp:speech	15:ccomp:speech|21:ccomp:speech	_
+29	tudo	tudo	PRON	_	PronType=Ind	28	obj	28:obj	_
+30	certo	certo	ADJ	_	Gender=Masc|Number=Sing	29	amod	29:amod	_
+31-32	na	_	_	_	_	_	_	_	_
+31	em	em	ADP	_	_	33	case	33:case	_
+32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	33:det	_
+33	economia	economia	NOUN	_	Gender=Fem|Number=Sing	28	obl	28:obl:em	SpaceAfter=No
+34	"	"	PUNCT	_	_	28	punct	28:punct	SpaceAfter=No
+35	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0013
+# text = A informação foi dada pelo colunista Lauro Jardim, do jornal "O Globo".
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	informação	informação	NOUN	_	Gender=Fem|Number=Sing	4	nsubj:pass	4:nsubj:pass	_
+3	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	dada	dar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5-6	pelo	_	_	_	_	_	_	_	_
+5	por	por	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	colunista	colunista	NOUN	_	Number=Sing	4	obl:agent	4:obl:agent	_
+8	Lauro	Lauro	PROPN	_	_	7	nmod	7:nmod	_
+9	Jardim	Jardim	PROPN	_	_	8	flat:name	8:flat:name	SpaceAfter=No
+10	,	,	PUNCT	_	_	13	punct	13:punct	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	jornal	jornal	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	_
+14	"	"	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+15	O	O	PROPN	_	_	13	nmod	13:nmod	_
+16	Globo	Globo	PROPN	_	_	15	flat:name	15:flat:name	SpaceAfter=No
+17	"	"	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+18	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0015
+# text = De acordo com Lauro, o petista não era "muito feliz" com as estratégias governamentais de Dilma.
+1	De	de	ADP	_	_	2	case	2:case	_
+2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:de	_
+3	com	com	ADP	_	_	4	case	4:case	_
+4	Lauro	Lauro	PROPN	_	_	2	nmod	2:nmod:com	SpaceAfter=No
+5	,	,	PUNCT	_	_	2	punct	2:punct	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	petista	petista	NOUN	_	Number=Sing	12	nsubj	12:nsubj	_
+8	não	não	ADV	_	_	12	advmod	12:advmod	_
+9	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	12	cop	12:cop	_
+10	"	"	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+11	muito	muito	ADV	_	_	12	advmod	12:advmod	_
+12	feliz	feliz	ADJ	_	Number=Sing	0	root	0:root	SpaceAfter=No
+13	"	"	PUNCT	_	_	12	punct	12:punct	_
+14	com	com	ADP	_	_	16	case	16:case	_
+15	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	16:det	_
+16	estratégias	estratégia	NOUN	_	Gender=Fem|Number=Plur	12	obl	12:obl:com	_
+17	governamentais	governamental	ADJ	_	Number=Plur	16	amod	16:amod	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	Dilma	Dilma	PROPN	_	_	16	nmod	16:nmod:de	SpaceAfter=No
+20	.	.	PUNCT	_	_	12	punct	12:punct	_
+
+# sent_id = S0017
+# text = Durante passagem por Pernambuco, Luiz Inácio concedeu uma entrevista à Rádio Jornal e atacou Dilma novamente.
+1	Durante	durante	ADP	_	_	2	case	2:case	_
+2	passagem	passagem	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:durante	_
+3	por	por	ADP	_	_	4	case	4:case	_
+4	Pernambuco	Pernambuco	PROPN	_	_	2	nmod	2:nmod:por	SpaceAfter=No
+5	,	,	PUNCT	_	_	2	punct	2:punct	_
+6	Luiz	Luiz	PROPN	_	_	8	nsubj	8:nsubj|16:nsubj	_
+7	Inácio	Inácio	PROPN	_	_	6	flat:name	6:flat:name	_
+8	concedeu	conceder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+9	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	entrevista	entrevista	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	_
+11-12	à	_	_	_	_	_	_	_	_
+11	a	a	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	Rádio	Rádio	PROPN	_	_	8	obl	8:obl:a	_
+14	Jornal	Jornal	PROPN	_	_	13	flat:name	13:flat:name	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	atacou	atacar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	conj	8:conj:e	_
+17	Dilma	Dilma	PROPN	_	_	16	obj	16:obj	_
+18	novamente	novamente	ADV	_	_	16	advmod	16:advmod	SpaceAfter=No
+19	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0019
+# text = Ele afirmou que a presidente afastada mexeu no bolso do trabalhador: Ela sabe disso, o PT sabe, o movimento sindical sabe, a CUT sabe [...] Ninguém se conformou da Dilma ter dito durante a campanha que não ia mexer no bolso e no direito do trabalhador e depois apresentar um processo de reforma que não era aquele que o trabalhador queria.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj	_
+2	afirmou	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	7	mark	7:mark	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	presidente	presidente	NOUN	_	Number=Sing	7	nsubj	7:nsubj	_
+6	afastada	afastado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	5	amod	5:amod	_
+7	mexeu	mexer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	ccomp	2:ccomp	_
+8-9	no	_	_	_	_	_	_	_	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	bolso	bolso	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:em	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	trabalhador	trabalhador	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:de	SpaceAfter=No
+14	:	:	PUNCT	_	_	16	punct	16:punct	_
+15	Ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	16	nsubj	16:nsubj	_
+16	sabe	saber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	2:parataxis	_
+17-18	disso	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	18	case	18:case	_
+18	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	16	obl	16:obl:de	_
+19	,	,	PUNCT	_	_	22	punct	22:punct	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	PT	PT	PROPN	_	_	22	nsubj	22:nsubj	_
+22	sabe	saber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	conj	2:parataxis|16:conj:e	SpaceAfter=No
+23	,	,	PUNCT	_	_	25	punct	25:punct	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	movimento	movimento	NOUN	_	Gender=Masc|Number=Sing	27	nsubj	27:nsubj	_
+26	sindical	sindical	ADJ	_	Number=Sing	25	amod	25:amod	_
+27	sabe	saber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	conj	2:parataxis|16:conj:e	SpaceAfter=No
+28	,	,	PUNCT	_	_	31	punct	31:punct	_
+29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	CUT	CUT	PROPN	_	_	31	nsubj	31:nsubj	_
+31	sabe	saber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	conj	2:parataxis|16:conj:e	_
+32	[	[	PUNCT	_	_	33	punct	33:punct	SpaceAfter=No
+33	.	.	PUNCT	_	_	31	parataxis	31:parataxis	SpaceAfter=No
+34	..	..	PUNCT	_	_	33	punct	33:punct	SpaceAfter=No
+35	]	]	PUNCT	_	_	33	punct	33:punct	_
+36	Ninguém	ninguém	PRON	_	Number=Sing|PronType=Ind	38	nsubj	38:nsubj	_
+37	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	38	expl	38:expl	_
+38	conformou	conformar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	ccomp:speech	2:ccomp:speech	_
+39-40	da	_	_	_	_	_	_	_	_
+39	de	de	ADP	_	_	43	mark	43:mark	_
+40	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	41:det	_
+41	Dilma	Dilma	PROPN	_	_	43	nsubj	43:nsubj	_
+42	ter	ter	AUX	_	VerbForm=Inf	43	aux	43:aux	_
+43	dito	dizer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	38	ccomp	38:ccomp	_
+44	durante	durante	ADP	_	_	46	case	46:case	_
+45	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	46:det	_
+46	campanha	campanha	NOUN	_	Gender=Fem|Number=Sing	43	obl	43:obl:durante	_
+47	que	que	SCONJ	_	_	50	mark	50:mark	_
+48	não	não	ADV	_	_	50	advmod	50:advmod	_
+49	ia	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	50	aux	50:aux	_
+50	mexer	mexer	VERB	_	VerbForm=Inf	43	ccomp	43:ccomp	_
+51-52	no	_	_	_	_	_	_	_	_
+51	em	em	ADP	_	_	53	case	53:case	_
+52	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	53	det	53:det	_
+53	bolso	bolso	NOUN	_	Gender=Masc|Number=Sing	50	obl	50:obl:em	_
+54	e	e	CCONJ	_	_	57	cc	57:cc	_
+55-56	no	_	_	_	_	_	_	_	_
+55	em	em	ADP	_	_	57	case	57:case	_
+56	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	57	det	57:det	_
+57	direito	direito	NOUN	_	Gender=Masc|Number=Sing	53	conj	50:obl:em|53:conj:e	_
+58-59	do	_	_	_	_	_	_	_	_
+58	de	de	ADP	_	_	60	case	60:case	_
+59	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	60	det	60:det	_
+60	trabalhador	trabalhador	NOUN	_	Gender=Masc|Number=Sing	57	nmod	57:nmod:de	_
+61	e	e	CCONJ	_	_	63	cc	63:cc	_
+62	depois	depois	ADV	_	_	63	advmod	63:advmod	_
+63	apresentar	apresentar	VERB	_	VerbForm=Inf	16	conj	2:parataxis|16:conj:e	_
+64	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	65	det	65:det	_
+65	processo	processo	NOUN	_	Gender=Masc|Number=Sing	63	obj	63:obj|71:nsubj	_
+66	de	de	ADP	_	_	67	case	67:case	_
+67	reforma	reforma	NOUN	_	Gender=Fem|Number=Sing	65	nmod	65:nmod:de	_
+68	que	que	PRON	_	PronType=Rel	71	nsubj	65:ref	_
+69	não	não	ADV	_	_	71	advmod	71:advmod	_
+70	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	71	cop	71:cop	_
+71	aquele	aquele	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	65	acl:relcl	65:acl:relcl|75:obj	_
+72	que	que	PRON	_	PronType=Rel	75	obj	71:ref	_
+73	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	74	det	74:det	_
+74	trabalhador	trabalhador	NOUN	_	Gender=Masc|Number=Sing	75	nsubj	75:nsubj	_
+75	queria	querer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	71	acl:relcl	71:acl:relcl	SpaceAfter=No
+76	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0021
+# text = As pessoas estavam indignadas dela ter colocado em prática o programa do adversário, disse Lula.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	4	nsubj	4:nsubj	_
+3	estavam	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	4	cop	4:cop	_
+4	indignadas	indignado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	17	ccomp:speech	17:ccomp:speech	_
+5-6	dela	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	8	mark	8:mark	_
+6	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	8	nsubj	8:nsubj	_
+7	ter	ter	AUX	_	VerbForm=Inf	8	aux	8:aux	_
+8	colocado	colocar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	4	acl	4:acl:de	_
+9	em	em	ADP	_	_	10	case	10:case	_
+10	prática	prática	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:em	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	programa	programa	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	_
+13-14	do	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	adversário	adversário	NOUN	_	Gender=Masc|Number=Sing	12	nmod	12:nmod:de	SpaceAfter=No
+16	,	,	PUNCT	_	_	4	punct	4:punct	_
+17	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+18	Lula	Lula	PROPN	_	_	17	nsubj	17:nsubj	SpaceAfter=No
+19	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0023
+# text = O ex-presidente abandonou José Dirceu e todos os seus amigos que estão presos em Curitiba.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	ex-presidente	ex-presidente	NOUN	_	Number=Sing	3	nsubj	3:nsubj	_
+3	abandonou	abandonar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	José	José	PROPN	_	_	3	obj	3:obj	_
+5	Dirceu	Dirceu	PROPN	_	_	4	flat:name	4:flat:name	_
+6	e	e	CCONJ	_	_	10	cc	10:cc	_
+7	todos	todo	DET	_	Gender=Masc|Number=Plur|PronType=Ind	10	det	10:det	_
+8	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	10:det	_
+9	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	10	det	10:det	_
+10	amigos	amigo	NOUN	_	Gender=Masc|Number=Plur	4	conj	3:obj|4:conj:e|13:nsubj	_
+11	que	que	PRON	_	PronType=Rel	13	nsubj	10:ref	_
+12	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	cop	13:cop	_
+13	presos	preso	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	10	acl:relcl	10:acl:relcl	_
+14	em	em	ADP	_	_	15	case	15:case	_
+15	Curitiba	Curitiba	PROPN	_	_	13	obl	13:obl:em	SpaceAfter=No
+16	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0025
+# text = A "bola da vez" a ser traída é a Dilma!
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+2	"	"	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+3	bola	bola	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	13:nsubj	_
+4-5	da	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	vez	vez	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:de	SpaceAfter=No
+7	"	"	PUNCT	_	_	3	punct	3:punct	_
+8	a	a	ADP	_	_	10	mark	10:mark	_
+9	ser	ser	AUX	_	VerbForm=Inf	10	aux:pass	10:aux:pass	_
+10	traída	traer	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	3	acl	3:acl:a	_
+11	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	13:cop	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	Dilma	Dilma	PROPN	_	_	0	root	0:root	SpaceAfter=No
+14	!	!	PUNCT	_	_	13	punct	13:punct	_

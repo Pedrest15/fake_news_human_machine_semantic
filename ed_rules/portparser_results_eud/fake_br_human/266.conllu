@@ -1,0 +1,536 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Psiquiatra emite diagnóstico de Lula: "Personalidade psicopática e transtorno incurável".
+1	Psiquiatra	psiquiatra	NOUN	_	Number=Sing	2	nsubj	2:nsubj	_
+2	emite	emitir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	diagnóstico	diagnóstico	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	Lula	Lula	PROPN	_	_	3	nmod	3:nmod:de	SpaceAfter=No
+6	:	:	PUNCT	_	_	8	punct	8:punct	_
+7	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+8	Personalidade	personalidade	NOUN	_	Gender=Fem|Number=Sing	3	parataxis	3:parataxis	_
+9	psicopática	psicopático	ADJ	_	Gender=Fem|Number=Sing	8	amod	8:amod	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	transtorno	transtorno	NOUN	_	Gender=Masc|Number=Sing	8	conj	3:parataxis|8:conj:e	_
+12	incurável	incurável	ADJ	_	Number=Sing	11	amod	11:amod	SpaceAfter=No
+13	"	"	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+14	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = O psiquiatra Ednei Freitas fez um diagnóstico da personalidade de Lula.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	psiquiatra	psiquiatra	NOUN	_	Number=Sing	5	nsubj	5:nsubj	_
+3	Ednei	Ednei	PROPN	_	_	2	nmod	2:nmod	_
+4	Freitas	Freitas	PROPN	_	_	3	flat:name	3:flat:name	_
+5	fez	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	diagnóstico	diagnóstico	NOUN	_	Gender=Masc|Number=Sing	5	obj	5:obj	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	personalidade	personalidade	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:de	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	Lula	Lula	PROPN	_	_	10	nmod	10:nmod:de	SpaceAfter=No
+13	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0005
+# text = Os exames informam que o ex-presidente e portador de um tipo de transtorno dificilmente curável.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	exames	exame	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	3:nsubj	_
+3	informam	informar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	8	mark	8:mark	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	ex-presidente	ex-presidente	NOUN	_	Number=Sing	3	nsubj	3:nsubj	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	portador	portador	NOUN	_	Gender=Masc|Number=Sing	6	conj	3:nsubj|6:conj:e	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	11:det	_
+11	tipo	tipo	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:de	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	transtorno	transtorno	NOUN	_	Gender=Masc|Number=Sing	11	nmod	11:nmod:de	_
+14	dificilmente	dificilmente	ADV	_	_	15	advmod	15:advmod	_
+15	curável	curável	ADJ	_	Number=Sing	11	amod	11:amod	SpaceAfter=No
+16	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = Os afetados por essa disfunção não saem da cadeia melhor do que entraram.
+1	Os	o	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Dem	7	nsubj	7:nsubj	_
+2	afetados	afetar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	1	acl	1:acl	_
+3	por	por	ADP	_	_	5	case	5:case	_
+4	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	5	det	5:det	_
+5	disfunção	disfunção	NOUN	_	Gender=Fem|Number=Sing	2	obl:agent	2:obl:agent	_
+6	não	não	ADV	_	_	7	advmod	7:advmod	_
+7	saem	sair	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	cadeia	cadeia	NOUN	_	Gender=Fem|Number=Sing	7	obl	7:obl:de	_
+11	melhor	melhor	ADV	_	_	7	advmod	7:advmod	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	ExtPos=SCONJ	15	mark	15:mark	_
+13	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	12	fixed	12:fixed	_
+14	que	que	PRON	_	PronType=Rel	12	fixed	12:fixed	_
+15	entraram	entrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	7	advcl	7:advcl:de_o_que	SpaceAfter=No
+16	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0009
+# text = O parecer do doutor (via Tribuna da Internet ) Uma prática diagnóstica de um sujeito que não é examinado pessoalmente, nem um ele pediu exame, presente aqui, que seja uma personalidade de Lula por se tratar da figura pública e afetada pelos brasileiros por suas vigarices.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	parecer	parecer	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	14:nsubj	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	doutor	doutor	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	_
+6	(	(	PUNCT	_	_	8	punct	8:punct	SpaceAfter=No
+7	via	via	ADP	_	_	8	case	8:case	_
+8	Tribuna	Tribuna	PROPN	_	_	2	nmod	2:nmod:via	_
+9-10	da	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	Internet	Internet	PROPN	_	_	8	flat:name	8:flat:name	_
+12	)	)	PUNCT	_	_	8	punct	8:punct	_
+13	Uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	prática	prática	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+15	diagnóstica	diagnóstico	ADJ	_	Gender=Fem|Number=Sing	14	amod	14:amod	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	18:det	_
+18	sujeito	sujeito	NOUN	_	Gender=Masc|Number=Sing	14	nmod	14:nmod:de|22:nsubj:pass	_
+19	que	que	PRON	_	PronType=Rel	22	nsubj:pass	18:ref	_
+20	não	não	ADV	_	_	22	advmod	22:advmod	_
+21	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	aux:pass	22:aux:pass	_
+22	examinado	examinar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	18	acl:relcl	18:acl:relcl	_
+23	pessoalmente	pessoalmente	ADV	_	_	22	advmod	22:advmod	SpaceAfter=No
+24	,	,	PUNCT	_	_	28	punct	28:punct	_
+25	nem	nem	ADV	_	_	26	advmod	26:advmod	_
+26	um	um	NUM	_	Gender=Masc|NumType=Card	27	fixed	27:fixed	_
+27	ele	ele	PRON	_	Case=Nom|ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Prs	28	nsubj	28:nsubj	_
+28	pediu	pedir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	conj	18:acl:relcl|22:conj	_
+29	exame	exame	NOUN	_	Gender=Masc|Number=Sing	28	obj	28:obj|37:nsubj	SpaceAfter=No
+30	,	,	PUNCT	_	_	31	punct	31:punct	_
+31	presente	presente	ADJ	_	Number=Sing	29	amod	29:amod	_
+32	aqui	aqui	ADV	_	_	31	advmod	31:advmod	SpaceAfter=No
+33	,	,	PUNCT	_	_	31	punct	31:punct	_
+34	que	que	PRON	_	PronType=Rel	37	nsubj	29:ref	_
+35	seja	ser	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	37	cop	37:cop	_
+36	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	37	det	37:det	_
+37	personalidade	personalidade	NOUN	_	Gender=Fem|Number=Sing	29	acl:relcl	29:acl:relcl	_
+38	de	de	ADP	_	_	39	case	39:case	_
+39	Lula	Lula	PROPN	_	_	37	nmod	37:nmod:de	_
+40	por	por	ADP	_	_	42	mark	42:mark|48:mark	_
+41	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	42	expl:impers	42:expl:impers	_
+42	tratar	tratar	VERB	_	VerbForm=Inf	37	advcl	37:advcl:por	_
+43-44	da	_	_	_	_	_	_	_	_
+43	de	de	ADP	_	_	45	case	45:case	_
+44	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	45	det	45:det	_
+45	figura	figura	NOUN	_	Gender=Fem|Number=Sing	42	obl	42:obl:de	_
+46	pública	público	ADJ	_	Gender=Fem|Number=Sing	45	amod	45:amod	_
+47	e	e	CCONJ	_	_	48	cc	48:cc	_
+48	afetada	afetar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	42	conj	37:advcl:por|42:conj:e	_
+49-50	pelos	_	_	_	_	_	_	_	_
+49	por	por	ADP	_	_	51	case	51:case	_
+50	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	51	det	51:det	_
+51	brasileiros	brasileiro	NOUN	_	Gender=Masc|Number=Plur	48	obl:agent	48:obl:agent	_
+52	por	por	ADP	_	_	54	case	54:case	_
+53	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	54	det	54:det	_
+54	vigarices	vigarice	NOUN	_	Gender=Fem|Number=Plur	48	obl	48:obl:por	SpaceAfter=No
+55	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0011
+# text = A antiga denominação do que tem o ex-presidente era Personalidade Psicopática.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+2	antiga	antigo	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+3	denominação	denominação	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	11:nsubj	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	o	o	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nmod	3:nmod:de|7:nsubj	_
+6	que	que	PRON	_	PronType=Rel	7	nsubj	5:ref	_
+7	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	ex-presidente	ex-presidente	NOUN	_	Number=Sing	7	obj	7:obj	_
+10	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	11	cop	11:cop	_
+11	Personalidade	Personalidade	PROPN	_	_	0	root	0:root	_
+12	Psicopática	Psicopática	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+13	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0013
+# text = Uma classificação diagnóstica mudou.
+1	Uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	classificação	classificação	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_
+3	diagnóstica	diagnóstico	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	_
+4	mudou	mudar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0015
+# text = Hoje, na ONU, um CID-10 é chamado de Transtorno da Personalidade Anti-Social.
+1	Hoje	hoje	ADV	_	_	10	advmod	10:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	5	punct	5:punct	_
+3-4	na	_	_	_	_	_	_	_	_
+3	em	em	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	ONU	ONU	PROPN	_	_	10	obl	10:obl:em	SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	5:punct	_
+7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	CID-10	CID-10	PROPN	_	_	10	nsubj:pass	10:nsubj:pass	_
+9	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:pass	10:aux:pass	_
+10	chamado	chamar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	Transtorno	Transtorno	PROPN	_	_	10	obl	10:obl:de	_
+13-14	da	_	_	_	_	_	_	_	_
+13	de	de	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	Personalidade	Personalidade	PROPN	_	_	12	flat:name	12:flat:name	_
+16	Anti-Social	Anti-Social	PROPN	_	_	12	flat:name	12:flat:name	SpaceAfter=No
+17	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0017
+# text = A Associação Psiquiátrica Americana qualifica o DSM-IV-TR de Transtorno da Personalidade Dissocial.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Associação	Associação	PROPN	_	_	5	nsubj	5:nsubj	_
+3	Psiquiátrica	Psiquiátrica	PROPN	_	_	2	flat:name	2:flat:name	_
+4	Americana	Americana	PROPN	_	_	2	flat:name	2:flat:name	_
+5	qualifica	qualificar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	DSM-IV-TR	DSM-IV-TR	PROPN	_	_	5	obj	5:obj	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	Transtorno	Transtorno	PROPN	_	_	5	obl	5:obl:de	_
+10-11	da	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	Personalidade	Personalidade	PROPN	_	_	9	flat:name	9:flat:name	_
+13	Dissocial	Dissocial	PROPN	_	_	9	flat:name	9:flat:name	SpaceAfter=No
+14	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0019
+# text = O quadro clínico para esse tipo de psicopata é assim descrito: Uma investigação diagnóstica completa deve Descrever um exame neurológico minucioso, uma vez que esses pacientes costumam exibir eletroencefalogramas anormais e leves sinais neurológicos sugestivos de um dano cerebral mínimo na infância.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	quadro	quadro	NOUN	_	Gender=Masc|Number=Sing	11	nsubj:pass	11:nsubj:pass	_
+3	clínico	clínico	ADJ	_	Gender=Masc|Number=Sing	2	amod	2:amod	_
+4	para	para	ADP	_	_	6	case	6:case	_
+5	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	6	det	6:det	_
+6	tipo	tipo	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:para	_
+7	de	de	ADP	_	_	8	case	8:case	_
+8	psicopata	psicopata	NOUN	_	Number=Sing	6	nmod	6:nmod:de	_
+9	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:pass	11:aux:pass	_
+10	assim	assim	ADV	_	_	11	advmod	11:advmod	_
+11	descrito	descrever	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	SpaceAfter=No
+12	:	:	PUNCT	_	_	17	punct	17:punct	_
+13	Uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	investigação	investigação	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	17:nsubj|18:nsubj	_
+15	diagnóstica	diagnóstico	ADJ	_	Gender=Fem|Number=Sing	14	amod	14:amod	_
+16	completa	completo	ADJ	_	Gender=Fem|Number=Sing	14	amod	14:amod	_
+17	deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	parataxis	11:parataxis	_
+18	Descrever	descrever	VERB	_	VerbForm=Inf	17	xcomp	17:xcomp	_
+19	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	exame	exame	NOUN	_	Gender=Masc|Number=Sing	18	obj	18:obj	_
+21	neurológico	neurológico	ADJ	_	Gender=Masc|Number=Sing	20	amod	20:amod	_
+22	minucioso	minucioso	ADJ	_	Gender=Masc|Number=Sing	20	amod	20:amod	SpaceAfter=No
+23	,	,	PUNCT	_	_	29	punct	29:punct	_
+24	uma	um	DET	_	Definite=Ind|ExtPos=SCONJ|Gender=Fem|Number=Sing|PronType=Art	29	mark	29:mark	_
+25	vez	vez	NOUN	_	Gender=Fem|Number=Sing	24	fixed	24:fixed	_
+26	que	que	SCONJ	_	_	24	fixed	24:fixed	_
+27	esses	esse	DET	_	Gender=Masc|Number=Plur|PronType=Dem	28	det	28:det	_
+28	pacientes	paciente	NOUN	_	Number=Plur	29	nsubj	29:nsubj|30:nsubj	_
+29	costumam	costumar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	advcl	11:advcl:um_vez_que	_
+30	exibir	exibir	VERB	_	VerbForm=Inf	29	xcomp	29:xcomp	_
+31	eletroencefalogramas	eletroencefalograma	NOUN	_	Gender=Masc|Number=Plur	30	obj	30:obj	_
+32	anormais	anormal	ADJ	_	Number=Plur	31	amod	31:amod	_
+33	e	e	CCONJ	_	_	35	cc	35:cc	_
+34	leves	leve	ADJ	_	Number=Plur	35	amod	35:amod	_
+35	sinais	sinal	NOUN	_	Gender=Masc|Number=Plur	31	conj	30:obj|31:conj:e	_
+36	neurológicos	neurológico	ADJ	_	Gender=Masc|Number=Plur	35	amod	35:amod	_
+37	sugestivos	sugestivo	ADJ	_	Gender=Masc|Number=Plur	35	amod	35:amod	_
+38	de	de	ADP	_	_	40	case	40:case	_
+39	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	40	det	40:det	_
+40	dano	dano	NOUN	_	Gender=Masc|Number=Sing	37	obl	37:obl:de	_
+41	cerebral	cerebral	ADJ	_	Number=Sing	40	amod	40:amod	_
+42	mínimo	mínimo	ADJ	_	Gender=Masc|Number=Sing	40	amod	40:amod	_
+43-44	na	_	_	_	_	_	_	_	_
+43	em	em	ADP	_	_	45	case	45:case	_
+44	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	45	det	45:det	_
+45	infância	infância	NOUN	_	Gender=Fem|Number=Sing	40	nmod	40:nmod:em	SpaceAfter=No
+46	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0021
+# text = Os portadores da disfunção são bem-vindos.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	portadores	portador	NOUN	_	Gender=Masc|Number=Plur	7	nsubj	7:nsubj	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	disfunção	disfunção	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:de	_
+6	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_
+7	bem-vindos	bem-vindo	ADJ	_	Gender=Masc|Number=Plur	0	root	0:root	SpaceAfter=No
+8	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0023
+# text = Suas histórias, entretanto, revelam muitas áreas de funcionamento vital desordenado.
+1	Suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	2	det	2:det	_
+2	histórias	história	NOUN	_	Gender=Fem|Number=Plur	6	nsubj	6:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	entretanto	entretanto	CCONJ	_	_	6	cc	6:cc	SpaceAfter=No
+5	,	,	PUNCT	_	_	4	punct	4:punct	_
+6	revelam	revelar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	muitas	muito	ADJ	_	Gender=Fem|Number=Plur	8	amod	8:amod	_
+8	áreas	área	NOUN	_	Gender=Fem|Number=Plur	6	obj	6:obj	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	funcionamento	funcionamento	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:de	_
+11	vital	vital	ADJ	_	Number=Sing	10	amod	10:amod	_
+12	desordenado	desordenado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	10	amod	10:amod	SpaceAfter=No
+13	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0025
+# text = Mentiras, faltas à escola, fugas de casa, furtos, brigas, promiscuidade com amantes e atividades ilegais são são originais, relatos dos pacientes, iniciados durante uma infância.
+1	Mentiras	mentira	NOUN	_	Gender=Fem|Number=Plur	24	nsubj	24:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	faltas	falta	NOUN	_	Gender=Fem|Number=Plur	1	conj	1:conj:e|24:nsubj	_
+4-5	à	_	_	_	_	_	_	_	_
+4	a	a	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	escola	escola	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:a	SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	8:punct	_
+8	fugas	fuga	NOUN	_	Gender=Fem|Number=Plur	1	conj	1:conj:e|24:nsubj	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	casa	casa	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	furtos	furto	NOUN	_	Gender=Masc|Number=Plur	1	conj	1:conj:e|24:nsubj	SpaceAfter=No
+13	,	,	PUNCT	_	_	14	punct	14:punct	_
+14	brigas	briga	NOUN	_	Gender=Fem|Number=Plur	1	conj	1:conj:e|24:nsubj	SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	promiscuidade	promiscuidade	NOUN	_	Gender=Fem|Number=Sing	1	conj	1:conj:e|24:nsubj	_
+17	com	com	ADP	_	_	18	case	18:case	_
+18	amantes	amante	NOUN	_	Number=Plur	16	nmod	16:nmod:com	_
+19	e	e	CCONJ	_	_	20	cc	20:cc	_
+20	atividades	atividade	NOUN	_	Gender=Fem|Number=Plur	1	conj	1:conj:e|24:nsubj	_
+21	ilegais	ilegal	ADJ	_	Number=Plur	20	amod	20:amod	_
+22	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	24	cop	24:cop	_
+23	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	24	cop	24:cop	_
+24	originais	original	ADJ	_	Number=Plur	0	root	0:root	SpaceAfter=No
+25	,	,	PUNCT	_	_	26	punct	26:punct	_
+26	relatos	relato	NOUN	_	Gender=Masc|Number=Plur	24	parataxis	24:parataxis	_
+27-28	dos	_	_	_	_	_	_	_	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	29:det	_
+29	pacientes	paciente	NOUN	_	Number=Plur	26	nmod	26:nmod:de	SpaceAfter=No
+30	,	,	PUNCT	_	_	31	punct	31:punct	_
+31	iniciados	iniciar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part	29	acl	29:acl	_
+32	durante	durante	ADP	_	_	34	case	34:case	_
+33	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	34	det	34:det	_
+34	infância	infância	NOUN	_	Gender=Fem|Number=Sing	31	obl	31:obl:durante	SpaceAfter=No
+35	.	.	PUNCT	_	_	24	punct	24:punct	_
+
+# sent_id = S0027
+# text = Como personalidades anti-faciais facturas e clínicas do sexo oposto com suas características exuberantes e sedutoras, mas os clínicos do mesmo sexo podem considerar como manipuladoras e exigentes.
+1	Como	como	ADP	_	_	2	case	2:case	_
+2	personalidades	personalidade	NOUN	_	Gender=Fem|Number=Plur	0	root	0:root	_
+3	anti-faciais	anti-facial	ADJ	_	Number=Plur	2	amod	2:amod	_
+4	facturas	factura	NOUN	_	Gender=Fem|Number=Plur	2	nsubj	2:nsubj	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	clínicas	clínica	NOUN	_	Gender=Fem|Number=Plur	4	conj	2:nsubj|4:conj:e	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	sexo	sexo	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:de|6:nmod:de	_
+10	oposto	oposto	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	9	amod	9:amod	_
+11	com	com	ADP	_	_	13	case	13:case	_
+12	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	13	det	13:det	_
+13	características	característica	NOUN	_	Gender=Fem|Number=Plur	4	nmod	4:nmod:com|6:nmod:com	_
+14	exuberantes	exuberante	ADJ	_	Number=Plur	13	amod	13:amod	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	sedutoras	sedutor	ADJ	_	Gender=Fem|Number=Plur	14	conj	13:amod|14:conj:e	SpaceAfter=No
+17	,	,	PUNCT	_	_	25	punct	25:punct	_
+18	mas	mas	CCONJ	_	_	25	cc	25:cc	_
+19	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	20:det	_
+20	clínicos	clínico	NOUN	_	Gender=Masc|Number=Plur	25	nsubj	25:nsubj|26:nsubj	_
+21-22	do	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	24	case	24:case	_
+22	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+23	mesmo	mesmo	DET	_	Gender=Masc|Number=Sing|PronType=Dem	24	det	24:det	_
+24	sexo	sexo	NOUN	_	Gender=Masc|Number=Sing	20	nmod	20:nmod:de	_
+25	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:mas	_
+26	considerar	considerar	VERB	_	VerbForm=Inf	25	xcomp	25:xcomp	_
+27	como	como	ADP	_	_	28	case	28:case	_
+28	manipuladoras	manipulador	ADJ	_	Gender=Fem|Number=Plur	26	obl	26:obl:como	_
+29	e	e	CCONJ	_	_	30	cc	30:cc	_
+30	exigentes	exigente	ADJ	_	Number=Plur	28	conj	26:obl:como|28:conj:e	SpaceAfter=No
+31	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0029
+# text = Ospect com personalidade anti-social demonstram uma ausência de ansiedade ou depressão, o que pode aparecer incongruente com suas situações, e suas próprias explicações do comportamento anti-social do não parecer algo impensado.
+1	Ospect	ospec	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+2	com	com	ADP	_	_	3	case	3:case	_
+3	personalidade	personalidade	NOUN	_	Gender=Fem|Number=Sing	1	nmod	1:nmod:com	_
+4	anti-social	anti-social	ADJ	_	Number=Sing	3	amod	3:amod	_
+5	demonstram	demonstrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	ausência	ausência	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+8	de	de	ADP	_	_	9	case	9:case|11:case	_
+9	ansiedade	ansiedade	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:de|15:nsubj|16:nsubj|17:nsubj	_
+10	ou	ou	CCONJ	_	_	11	cc	11:cc	_
+11	depressão	depressão	NOUN	_	Gender=Fem|Number=Sing	9	conj	7:nmod:de|9:conj:ou|15:nsubj|16:nsubj|17:nsubj	SpaceAfter=No
+12	,	,	PUNCT	_	_	15	punct	15:punct	_
+13	o	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	15	nsubj	9:ref|11:ref|15:nsubj	_
+14	que	que	PRON	_	PronType=Rel	13	fixed	13:fixed	_
+15	pode	poder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	acl:relcl	9:acl:relcl|11:acl:relcl	_
+16	aparecer	aparecer	VERB	_	VerbForm=Inf	15	xcomp	15:xcomp	_
+17	incongruente	incongruente	ADJ	_	Number=Sing	16	xcomp	16:xcomp	_
+18	com	com	ADP	_	_	20	case	20:case	_
+19	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	20	det	20:det	_
+20	situações	situação	NOUN	_	Gender=Fem|Number=Plur	17	obl	17:obl:com	SpaceAfter=No
+21	,	,	PUNCT	_	_	25	punct	25:punct	_
+22	e	e	CCONJ	_	_	25	cc	25:cc	_
+23	suas	seu	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes|PronType=Prs	25	det	25:det	_
+24	próprias	próprio	ADJ	_	Gender=Fem|Number=Plur	25	amod	25:amod	_
+25	explicações	explicação	NOUN	_	Gender=Fem|Number=Plur	7	conj	5:obj|7:conj:e	_
+26-27	do	_	_	_	_	_	_	_	_
+26	de	de	ADP	_	_	28	case	28:case	_
+27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	comportamento	comportamento	NOUN	_	Gender=Masc|Number=Sing	25	nmod	25:nmod:de	_
+29	anti-social	anti-social	ADJ	_	Number=Sing	28	amod	28:amod	_
+30-31	do	_	_	_	_	_	_	_	_
+30	de	de	ADP	_	_	33	mark	33:mark	_
+31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	fixed	33:fixed	_
+32	não	não	ADV	_	_	33	advmod	33:advmod	_
+33	parecer	parecer	VERB	_	ExtPos=VERB|VerbForm=Inf	28	acl	28:acl:de	_
+34	algo	algo	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	33	xcomp	33:xcomp	_
+35	impensado	impensado	ADJ	_	Gender=Masc|Number=Sing	34	amod	34:amod	SpaceAfter=No
+36	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0031
+# text = Ameaças de suicídio e preocupações somáticas podem ser comuns.
+1	Ameaças	ameaça	NOUN	_	Gender=Fem|Number=Plur	7	nsubj	7:nsubj|9:nsubj	_
+2	de	de	ADP	_	_	3	case	3:case	_
+3	suicídio	suicídio	NOUN	_	Gender=Masc|Number=Sing	1	nmod	1:nmod:de	_
+4	e	e	CCONJ	_	_	5	cc	5:cc	_
+5	preocupações	preocupação	NOUN	_	Gender=Fem|Number=Plur	1	conj	1:conj:e|7:nsubj|9:nsubj	_
+6	somáticas	somático	ADJ	_	Gender=Fem|Number=Plur	5	amod	5:amod	_
+7	podem	poder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	ser	ser	AUX	_	VerbForm=Inf	9	cop	9:cop	_
+9	comuns	comum	ADJ	_	Number=Plur	7	xcomp	7:xcomp	SpaceAfter=No
+10	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0033
+# text = Ainda assim, o conteúdo mental do paciente revela uma completa ausência de delírios e outros sinais de comportamento irracional.
+1	Ainda	ainda	ADV	_	ExtPos=ADV	10	advmod	10:advmod	_
+2	assim	assim	ADV	_	_	1	fixed	1:fixed	SpaceAfter=No
+3	,	,	PUNCT	_	_	1	punct	1:punct	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	conteúdo	conteúdo	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	10:nsubj	_
+6	mental	mental	ADJ	_	Number=Sing	5	amod	5:amod	_
+7-8	do	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	paciente	paciente	NOUN	_	Number=Sing	5	nmod	5:nmod:de	_
+10	revela	revelar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+11	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+12	completa	completo	ADJ	_	Gender=Fem|Number=Sing	13	amod	13:amod	_
+13	ausência	ausência	NOUN	_	Gender=Fem|Number=Sing	10	obj	10:obj	_
+14	de	de	ADP	_	_	15	case	15:case|18:case	_
+15	delírios	delírio	NOUN	_	Gender=Masc|Number=Plur	13	nmod	13:nmod:de	_
+16	e	e	CCONJ	_	_	18	cc	18:cc	_
+17	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	18	det	18:det	_
+18	sinais	sinal	NOUN	_	Gender=Masc|Number=Plur	15	conj	13:nmod:de|15:conj:e	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	comportamento	comportamento	NOUN	_	Gender=Masc|Number=Sing	18	nmod	18:nmod:de	_
+21	irracional	irracional	ADJ	_	Number=Sing	20	amod	20:amod	SpaceAfter=No
+22	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0035
+# text = De fato, eles compram demonstram um senso de teste de realidade aumentado e impressionam os observadores por terem uma boa inteligência verbal.
+1	De	de	ADP	_	_	2	case	2:case	_
+2	fato	fato	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:de	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	5	nsubj	5:nsubj	_
+5	compram	comprar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	demonstram	demonstrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	dep	5:dep	_
+7	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	senso	senso	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	teste	teste	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:de	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	realidade	realidade	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:de	_
+13	aumentado	aumentar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	8	acl	8:acl	_
+14	e	e	CCONJ	_	_	15	cc	15:cc	_
+15	impressionam	impressionar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	conj	5:dep|6:conj:e	_
+16	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	17:det	_
+17	observadores	observador	NOUN	_	Gender=Masc|Number=Plur	15	obj	15:obj	_
+18	por	por	ADP	_	_	19	mark	19:mark	_
+19	terem	ter	VERB	_	Number=Plur|Person=3|VerbForm=Inf	15	advcl	15:advcl:por	_
+20	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+21	boa	bom	ADJ	_	Gender=Fem|Number=Sing	22	amod	22:amod	_
+22	inteligência	inteligência	NOUN	_	Gender=Fem|Number=Sing	19	obj	19:obj	_
+23	verbal	verbal	ADJ	_	Number=Sing	22	amod	22:amod	SpaceAfter=No
+24	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0037
+# text = Não é possível confiar neles para levar adiante qualquer projeto, ou aderir a qualquer padrão convencional de moralidade.
+1	Não	não	ADV	_	_	3	advmod	3:advmod	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+3	possível	possível	ADJ	_	Number=Sing	0	root	0:root	_
+4	confiar	confiar	VERB	_	VerbForm=Inf	3	csubj	3:csubj	_
+5-6	neles	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	6	case	6:case	_
+6	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	4	obl	4:obl:em	_
+7	para	para	ADP	_	_	8	mark	8:mark	_
+8	levar	levar	VERB	_	VerbForm=Inf	4	advcl	4:advcl:para	_
+9	adiante	adiante	ADV	_	_	8	advmod	8:advmod	_
+10	qualquer	qualquer	DET	_	Number=Sing|PronType=Ind	11	det	11:det	_
+11	projeto	projeto	NOUN	_	Gender=Masc|Number=Sing	8	obj	8:obj	SpaceAfter=No
+12	,	,	PUNCT	_	_	14	punct	14:punct	_
+13	ou	ou	CCONJ	_	_	14	cc	14:cc	_
+14	aderir	aderir	VERB	_	VerbForm=Inf	4	conj	3:csubj|4:conj:ou	_
+15	a	a	ADP	_	_	17	case	17:case	_
+16	qualquer	qualquer	DET	_	Number=Sing|PronType=Ind	17	det	17:det	_
+17	padrão	padrão	NOUN	_	Gender=Masc|Number=Sing	14	obl	14:obl:a	_
+18	convencional	convencional	ADJ	_	Number=Sing	17	amod	17:amod	_
+19	de	de	ADP	_	_	20	case	20:case	_
+20	moralidade	moralidade	NOUN	_	Gender=Fem|Number=Sing	17	nmod	17:nmod:de	SpaceAfter=No
+21	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0039
+# text = Promiscuidade, abuso do cônjuge, abuso infantil e condução de veículos sob os efeitos do álcool são eventos comuns.
+1	Promiscuidade	promiscuidade	NOUN	_	Gender=Fem|Number=Sing	21	nsubj	21:nsubj	SpaceAfter=No
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	abuso	abuso	NOUN	_	Gender=Masc|Number=Sing	1	conj	1:conj:e|21:nsubj	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	cônjuge	cônjuge	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:de	SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	8:punct	_
+8	abuso	abuso	NOUN	_	Gender=Masc|Number=Sing	1	conj	1:conj:e|21:nsubj	_
+9	infantil	infantil	ADJ	_	Number=Sing	8	amod	8:amod	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	condução	condução	NOUN	_	Gender=Fem|Number=Sing	1	conj	1:conj:e|21:nsubj	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	veículos	veículo	NOUN	_	Gender=Masc|Number=Plur	11	nmod	11:nmod:de	_
+14	sob	sob	ADP	_	_	16	case	16:case	_
+15	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	16:det	_
+16	efeitos	efeito	NOUN	_	Gender=Masc|Number=Plur	11	nmod	11:nmod:sob	_
+17-18	do	_	_	_	_	_	_	_	_
+17	de	de	ADP	_	_	19	case	19:case	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	álcool	álcool	NOUN	_	Gender=Masc|Number=Sing	16	nmod	16:nmod:de	_
+20	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	21	cop	21:cop	_
+21	eventos	evento	NOUN	_	Gender=Masc|Number=Plur	0	root	0:root	_
+22	comuns	comum	ADJ	_	Number=Plur	21	amod	21:amod	SpaceAfter=No
+23	.	.	PUNCT	_	_	21	punct	21:punct	_
+
+# sent_id = S0041
+# text = Há ausência de remorso por tais ações, ou seja, tais pacientes parecem desprovidos de consciência.
+1	Há	haver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	ausência	ausência	NOUN	_	Gender=Fem|Number=Sing	1	obj	1:obj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	remorso	remorso	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	_
+5	por	por	ADP	_	_	7	case	7:case	_
+6	tais	tal	DET	_	Number=Plur|PronType=Dem	7	det	7:det	_
+7	ações	ação	NOUN	_	Gender=Fem|Number=Plur	4	nmod	4:nmod:por	SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	ou	ou	CCONJ	_	ExtPos=CCONJ	14	cc	14:cc	_
+10	seja	ser	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	fixed	9:fixed	SpaceAfter=No
+11	,	,	PUNCT	_	_	9	punct	9:punct	_
+12	tais	tal	DET	_	Number=Plur|PronType=Dem	13	det	13:det	_
+13	pacientes	paciente	NOUN	_	Number=Plur	14	nsubj	14:nsubj|15:nsubj	_
+14	parecem	parecer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	conj	1:conj:ou_ser	_
+15	desprovidos	desprovido	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	14	xcomp	14:xcomp	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	consciência	consciência	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl:de	SpaceAfter=No
+18	.	.	PUNCT	_	_	1	punct	1:punct	_

@@ -1,0 +1,74 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Roberto Carlos e Jô Soares chorando juntos em uma canção.
+1	Roberto	Roberto	PROPN	_	_	6	nsubj	6:nsubj	_
+2	Carlos	Carlos	PROPN	_	_	1	flat:name	1:flat:name	_
+3	e	e	CCONJ	_	_	4	cc	4:cc	_
+4	Jô	Jô	PROPN	_	_	1	conj	1:conj:e|6:nsubj	_
+5	Soares	Soares	PROPN	_	_	4	flat:name	4:flat:name	_
+6	chorando	chorar	VERB	_	VerbForm=Ger	0	root	0:root	_
+7	juntos	junto	ADJ	_	Gender=Masc|Number=Plur	6	advcl	6:advcl	_
+8	em	em	ADP	_	_	10	case	10:case	_
+9	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	canção	canção	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:em	SpaceAfter=No
+11	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0003
+# text = O Brasil se emocionou com eles!.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	Brasil	Brasil	PROPN	_	_	4	nsubj	4:nsubj	_
+3	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	4	expl	4:expl	_
+4	emocionou	emocionar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	com	com	ADP	_	_	6	case	6:case	_
+6	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	4	obl	4:obl:com	SpaceAfter=No
+7	!	!	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+8	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0005
+# text = Tem certas coisas na vida que dispensam textos e muitos blá blá blá.
+1	Tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	certas	certo	DET	_	Gender=Fem|Number=Plur|PronType=Ind	3	det	3:det	_
+3	coisas	coisa	NOUN	_	Gender=Fem|Number=Plur	1	obj	1:obj|8:nsubj	_
+4-5	na	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	vida	vida	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:em	_
+7	que	que	PRON	_	PronType=Rel	8	nsubj	3:ref	_
+8	dispensam	dispensar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_
+9	textos	texto	NOUN	_	Gender=Masc|Number=Plur	8	obj	8:obj	_
+10	e	e	CCONJ	_	_	12	cc	12:cc	_
+11	muitos	muito	ADJ	_	Gender=Masc|Number=Plur	12	amod	12:amod	_
+12	blá	blá	NOUN	_	Foreign=Yes	9	conj	8:obj|9:conj:e	_
+13	blá	blá	X	_	Foreign=Yes	12	nmod	12:nmod	_
+14	blá	blá	NOUN	_	Foreign=Yes	12	nmod	12:nmod	SpaceAfter=No
+15	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0007
+# text = Veja o clima de emoção que rolou entre o apresentador Jô Soares e o cantor Roberto Carlos.
+1	Veja	ver	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	clima	clima	NOUN	_	Gender=Masc|Number=Sing	1	obj	1:obj|7:nsubj	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	emoção	emoção	NOUN	_	Gender=Fem|Number=Sing	3	nmod	3:nmod:de	_
+6	que	que	PRON	_	PronType=Rel	7	nsubj	3:ref	_
+7	rolou	rolar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_
+8	entre	entre	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	apresentador	apresentador	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:entre	_
+11	Jô	Jô	PROPN	_	_	10	nmod	10:nmod	_
+12	Soares	Soares	PROPN	_	_	11	flat:name	11:flat:name	_
+13	e	e	CCONJ	_	_	15	cc	15:cc	_
+14	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	cantor	cantor	NOUN	_	Gender=Masc|Number=Sing	10	conj	7:obl:entre|10:conj:e	_
+16	Roberto	Roberto	PROPN	_	_	15	nmod	15:nmod	_
+17	Carlos	Carlos	PROPN	_	_	16	flat:name	16:flat:name	SpaceAfter=No
+18	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0009
+# text = É impossível não se emocionar.
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	2:cop	_
+2	impossível	impossível	ADJ	_	Number=Sing	0	root	0:root	_
+3	não	não	ADV	_	_	5	advmod	5:advmod	_
+4	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	5	expl	5:expl	_
+5	emocionar	emocionar	VERB	_	Number=Sing|Person=3|VerbForm=Inf	2	csubj	2:csubj	SpaceAfter=No
+6	.	.	PUNCT	_	_	2	punct	2:punct	_

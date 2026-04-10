@@ -1,0 +1,124 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Me deixem em paz!
+1	Me	me	PRON	_	Case=Acc|Number=Sing|Person=1|PronType=Prs	2	obj	2:obj	_
+2	deixem	deixar	VERB	_	Mood=Imp|Number=Plur|Person=3|VerbForm=Fin	0	root	0:root	_
+3	em	em	ADP	_	_	4	case	4:case	_
+4	paz	paz	NOUN	_	Gender=Fem|Number=Sing	2	obl	2:obl:em	SpaceAfter=No
+5	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Cunha mandou avisar que não admite ser cassado.
+1	Cunha	Cunha	PROPN	_	_	2	nsubj	2:nsubj	_
+2	mandou	mandar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	avisar	avisar	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	_
+4	que	que	SCONJ	_	_	6	mark	6:mark	_
+5	não	não	ADV	_	_	6	advmod	6:advmod	_
+6	admite	admitir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	3:ccomp	_
+7	ser	ser	AUX	_	VerbForm=Inf	8	aux:pass	8:aux:pass	_
+8	cassado	cassar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	6	xcomp	6:xcomp	SpaceAfter=No
+9	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = O deputado afastado não admite ser expulso do Congresso antes do encerramento impeachment da presidente Dilma Rousseff.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj|7:nsubj:pass	_
+3	afastado	afastar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	2	amod	2:amod	_
+4	não	não	ADV	_	_	5	advmod	5:advmod	_
+5	admite	admitir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	ser	ser	AUX	_	VerbForm=Inf	7	aux:pass	7:aux:pass	_
+7	expulso	expulsar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	5	xcomp	5:xcomp	_
+8-9	do	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	Congresso	Congresso	PROPN	_	_	7	obl	7:obl:de	_
+11	antes	antes	ADV	_	_	7	advmod	7:advmod	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	encerramento	encerramento	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:de	_
+15	impeachment	impeachment	NOUN	_	Gender=Masc|Number=Sing	14	nmod	14:nmod	_
+16-17	da	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	presidente	presidente	NOUN	_	Number=Sing	15	nmod	15:nmod:de	_
+19	Dilma	Dilma	PROPN	_	_	18	nmod	18:nmod	_
+20	Rousseff	Rousseff	PROPN	_	_	19	flat:name	19:flat:name	SpaceAfter=No
+21	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0007
+# text = Para interlocutores, Cunha chegou a dizer que o presidente interino Michel Temer lhe deve gratidão por ter iniciado o processo de impeachment.
+1	Para	para	ADP	_	_	2	case	2:case	_
+2	interlocutores	interlocutor	NOUN	_	Gender=Masc|Number=Plur	5	obl	5:obl:para	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	2:punct	_
+4	Cunha	Cunha	PROPN	_	_	5	nsubj	5:nsubj|7:nsubj	_
+5	chegou	chegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	a	a	ADP	_	_	7	mark	7:mark	_
+7	dizer	dizer	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	_
+8	que	que	SCONJ	_	_	15	mark	15:mark	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	presidente	presidente	NOUN	_	Number=Sing	15	nsubj	15:nsubj	_
+11	interino	interino	ADJ	_	Gender=Masc|Number=Sing	10	amod	10:amod	_
+12	Michel	Michel	PROPN	_	_	10	nmod	10:nmod	_
+13	Temer	Temer	PROPN	_	_	12	flat:name	12:flat:name	_
+14	lhe	lhe	PRON	_	Case=Dat|Number=Sing|Person=3|PronType=Prs	15	iobj	15:iobj	_
+15	deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	ccomp	7:ccomp	_
+16	gratidão	gratidão	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	_
+17	por	por	ADP	_	_	19	mark	19:mark	_
+18	ter	ter	AUX	_	VerbForm=Inf	19	aux	19:aux	_
+19	iniciado	iniciar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	16	acl	16:acl:por	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	processo	processo	NOUN	_	Gender=Masc|Number=Sing	19	obj	19:obj	_
+22	de	de	ADP	_	_	23	case	23:case	_
+23	impeachment	impeachment	NOUN	_	Gender=Masc|Number=Sing	21	nmod	21:nmod:de	SpaceAfter=No
+24	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0009
+# text = Cunha disse está "empenhado em evitar confusões desde que não lhe provoquem" Seu destino na política brasileira será definido no dia 12 de setembro, uma segunda-feira, dia de quórum fraco.
+1	Cunha	Cunha	PROPN	_	_	2	nsubj	2:nsubj|5:nsubj	_
+2	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+4	"	"	PUNCT	_	_	5	punct	5:punct	SpaceAfter=No
+5	empenhado	empenhado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	2	xcomp	2:xcomp	_
+6	em	em	ADP	_	_	7	mark	7:mark	_
+7	evitar	evitar	VERB	_	VerbForm=Inf	5	acl	5:acl:em	_
+8	confusões	confusão	NOUN	_	Gender=Fem|Number=Plur	7	obj	7:obj	_
+9	desde	desde	ADP	_	ExtPos=SCONJ	13	mark	13:mark	_
+10	que	que	SCONJ	_	_	9	fixed	9:fixed	_
+11	não	não	ADV	_	_	13	advmod	13:advmod	_
+12	lhe	lhe	PRON	_	Case=Dat|Number=Sing|Person=3|PronType=Prs	13	iobj	13:iobj	_
+13	provoquem	provocar	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	advcl	7:advcl:desde_que	SpaceAfter=No
+14	"	"	PUNCT	_	_	5	punct	5:punct	_
+15	Seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	16	det	16:det	_
+16	destino	destino	NOUN	_	Gender=Masc|Number=Sing	22	nsubj:pass	22:nsubj:pass	_
+17-18	na	_	_	_	_	_	_	_	_
+17	em	em	ADP	_	_	19	case	19:case	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	política	política	NOUN	_	Gender=Fem|Number=Sing	16	nmod	16:nmod:em	_
+20	brasileira	brasileiro	ADJ	_	Gender=Fem|Number=Sing	19	amod	19:amod	_
+21	será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	22	aux:pass	22:aux:pass	_
+22	definido	definir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	ccomp	2:ccomp	_
+23-24	no	_	_	_	_	_	_	_	_
+23	em	em	ADP	_	_	25	case	25:case	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	dia	dia	NOUN	_	Gender=Masc|Number=Sing	22	obl	22:obl:em	_
+26	12	12	NUM	_	NumType=Card	25	nmod	25:nmod	_
+27	de	de	ADP	_	_	28	case	28:case	_
+28	setembro	setembro	NOUN	_	Gender=Masc|Number=Sing	26	nmod	26:nmod:de	SpaceAfter=No
+29	,	,	PUNCT	_	_	31	punct	31:punct	_
+30	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+31	segunda-feira	segunda-feira	NOUN	_	Gender=Fem|Number=Sing	25	appos	25:appos	SpaceAfter=No
+32	,	,	PUNCT	_	_	33	punct	33:punct	_
+33	dia	dia	NOUN	_	Gender=Masc|Number=Sing	31	appos	31:appos	_
+34	de	de	ADP	_	_	35	case	35:case	_
+35	quórum	quórum	NOUN	_	Gender=Masc|Number=Sing	33	nmod	33:nmod:de	_
+36	fraco	fraco	ADJ	_	Gender=Masc|Number=Sing	35	amod	35:amod	SpaceAfter=No
+37	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0011
+# text = Será que ele volta?
+1	Será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	discourse	4:discourse	_
+2	que	que	SCONJ	_	_	4	discourse	4:discourse	_
+3	ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	4:nsubj	_
+4	volta	voltar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+5	?	?	PUNCT	_	_	4	punct	4:punct	_

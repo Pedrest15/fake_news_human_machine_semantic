@@ -1,0 +1,64 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Jovem que mora na Irlanda mostra para os brasileiros o que é qualidade de vida.
+1	Jovem	jovem	NOUN	_	Number=Sing	7	nsubj	3:nsubj|7:nsubj	_
+2	que	que	PRON	_	PronType=Rel	3	nsubj	1:ref	_
+3	mora	morar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	1:acl:relcl	_
+4-5	na	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	Irlanda	Irlanda	PROPN	_	_	3	obl	3:obl:em	_
+7	mostra	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	para	para	ADP	_	_	10	case	10:case	_
+9	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	10:det	_
+10	brasileiros	brasileiro	NOUN	_	Gender=Masc|Number=Plur	7	obl	7:obl:para	_
+11	o	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	obj	7:obj	_
+12	que	que	PRON	_	PronType=Int	11	fixed	11:fixed	_
+13	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	14:cop	_
+14	qualidade	qualidade	NOUN	_	Gender=Fem|Number=Sing	11	ccomp	11:ccomp	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	vida	vida	NOUN	_	Gender=Fem|Number=Sing	14	nmod	14:nmod:de	SpaceAfter=No
+17	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0003
+# text = Gabhy Silva, brasileira que vive na IRLANDA: "Eu não queria ter que fazer essa comparação [...] mas não tem como evitar...".
+1	Gabhy	Gabhy	PROPN	_	_	0	root	0:root	_
+2	Silva	Silva	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	brasileira	brasileiro	NOUN	_	Gender=Fem|Number=Sing	1	appos	1:appos|6:nsubj	_
+5	que	que	PRON	_	PronType=Rel	6	nsubj	4:ref	_
+6	vive	viver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	4:acl:relcl	_
+7-8	na	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	IRLANDA	IRLANDA	PROPN	_	_	6	obl	6:obl:em	SpaceAfter=No
+10	:	:	PUNCT	_	_	14	punct	14:punct	_
+11	"	"	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+12	Eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	14	nsubj	14:nsubj|15:nsubj|17:nsubj	_
+13	não	não	ADV	_	_	14	advmod	14:advmod	_
+14	queria	querer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	1	ccomp:speech	1:ccomp:speech	_
+15	ter	ter	VERB	_	VerbForm=Inf	14	xcomp	14:xcomp	_
+16	que	que	ADP	_	_	17	mark	17:mark	_
+17	fazer	fazer	VERB	_	VerbForm=Inf	15	xcomp	15:xcomp	_
+18	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	19	det	19:det	_
+19	comparação	comparação	NOUN	_	Gender=Fem|Number=Sing	17	obj	17:obj	_
+20	[	[	PUNCT	_	_	21	punct	21:punct	SpaceAfter=No
+21	.	.	PUNCT	_	_	19	parataxis	19:parataxis	SpaceAfter=No
+22	..	..	PUNCT	_	_	21	punct	21:punct	SpaceAfter=No
+23	]	]	PUNCT	_	_	21	punct	21:punct	_
+24	mas	mas	CCONJ	_	_	26	cc	26:cc	_
+25	não	não	ADV	_	_	26	advmod	26:advmod	_
+26	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	conj	1:ccomp:speech|14:conj:mas	_
+27	como	como	ADV	_	_	28	advmod	28:advmod	_
+28	evitar	evitar	VERB	_	VerbForm=Inf	26	xcomp	26:xcomp	SpaceAfter=No
+29	...	...	PUNCT	_	_	26	punct	26:punct	SpaceAfter=No
+30	"	"	PUNCT	_	_	14	punct	14:punct	SpaceAfter=No
+31	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0004
+# text = assista o vídeo abaixo:
+1	assista	assistir	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	1	obj	1:obj	_
+4	abaixo	abaixo	ADV	_	_	1	advmod	1:advmod	SpaceAfter=No
+5	:	:	PUNCT	_	_	1	punct	1:punct	_

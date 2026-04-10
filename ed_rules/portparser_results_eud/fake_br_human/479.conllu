@@ -1,0 +1,117 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Que coisa feia!
+1	Que	que	DET	_	PronType=Ind	2	det	2:det	_
+2	coisa	coisa	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+3	feia	feio	ADJ	_	Gender=Fem|Number=Sing	2	amod	2:amod	SpaceAfter=No
+4	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Vídeo mostra deputados "aos tapas" em sessão na Câmara.
+1	Vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	2	nsubj	2:nsubj	_
+2	mostra	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	deputados	deputado	NOUN	_	Gender=Masc|Number=Plur	2	obj	2:obj	_
+4	"	"	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+5-6	aos	_	_	_	_	_	_	_	_
+5	a	a	ADP	_	_	7	case	7:case	_
+6	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	7:det	_
+7	tapas	tapa	NOUN	_	Gender=Fem|Number=Plur	2	obl	2:obl:a	SpaceAfter=No
+8	"	"	PUNCT	_	_	7	punct	7:punct	_
+9	em	em	ADP	_	_	10	case	10:case	_
+10	sessão	sessão	NOUN	_	Gender=Fem|Number=Sing	2	obl	2:obl:em	_
+11-12	na	_	_	_	_	_	_	_	_
+11	em	em	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	Câmara	Câmara	PROPN	_	_	10	nmod	10:nmod:em	SpaceAfter=No
+14	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = Deputado do PR e do PT se desentenderam e tiveram que ser contidos.
+1	Deputado	deputado	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	10:nsubj|12:nsubj|15:nsubj:pass	_
+2-3	do	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	PR	PR	PROPN	_	_	1	nmod	1:nmod:de	_
+5	e	e	CCONJ	_	_	8	cc	8:cc	_
+6-7	do	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	PT	PT	PROPN	_	_	4	conj	1:nmod:de|4:conj:e	_
+9	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	10	expl	10:expl	_
+10	desentenderam	desentender	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+11	e	e	CCONJ	_	_	12	cc	12:cc	_
+12	tiveram	ter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	10	conj	10:conj:e	_
+13	que	que	ADP	_	_	15	mark	15:mark	_
+14	ser	ser	AUX	_	VerbForm=Inf	15	aux:pass	15:aux:pass	_
+15	contidos	conter	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	12	xcomp	12:xcomp	SpaceAfter=No
+16	.	.	PUNCT	_	_	10	punct	10:punct	_
+
+# sent_id = S0007
+# text = Em uma sessão tensa do Conselho de Ética da Câmara, os deputados Zé Geraldo (PT-PA) e Wellington Roberto (PR-PB) quase partiram para a agressão durante uma discussão sobre o painel de registro de presença.
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	sessão	sessão	NOUN	_	Gender=Fem|Number=Sing	28	obl	28:obl:em	_
+4	tensa	tenso	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	Conselho	Conselho	PROPN	_	_	3	nmod	3:nmod:de	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	Ética	Ética	PROPN	_	_	7	flat:name	7:flat:name	_
+10-11	da	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	Câmara	Câmara	PROPN	_	_	7	nmod	7:nmod:de	SpaceAfter=No
+13	,	,	PUNCT	_	_	3	punct	3:punct	_
+14	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	15:det	_
+15	deputados	deputado	NOUN	_	Gender=Masc|Number=Plur	28	nsubj	28:nsubj	_
+16	Zé	Zé	PROPN	_	_	15	nmod	15:nmod	_
+17	Geraldo	Geraldo	PROPN	_	_	16	flat:name	16:flat:name	_
+18	(	(	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+19	PT-PA	PT-PA	PROPN	_	_	16	parataxis	16:parataxis	SpaceAfter=No
+20	)	)	PUNCT	_	_	19	punct	19:punct	_
+21	e	e	CCONJ	_	_	22	cc	22:cc	_
+22	Wellington	Wellington	PROPN	_	_	16	conj	15:nmod|16:conj:e	_
+23	Roberto	Roberto	PROPN	_	_	22	flat:name	22:flat:name	_
+24	(	(	PUNCT	_	_	25	punct	25:punct	SpaceAfter=No
+25	PR-PB	PR-PB	PROPN	_	_	22	parataxis	22:parataxis	SpaceAfter=No
+26	)	)	PUNCT	_	_	25	punct	25:punct	_
+27	quase	quase	ADV	_	_	28	advmod	28:advmod	_
+28	partiram	partir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+29	para	para	ADP	_	_	31	case	31:case	_
+30	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+31	agressão	agressão	NOUN	_	Gender=Fem|Number=Sing	28	obl	28:obl:para	_
+32	durante	durante	ADP	_	_	34	case	34:case	_
+33	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	34	det	34:det	_
+34	discussão	discussão	NOUN	_	Gender=Fem|Number=Sing	28	obl	28:obl:durante	_
+35	sobre	sobre	ADP	_	_	37	case	37:case	_
+36	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	37:det	_
+37	painel	painel	NOUN	_	Gender=Masc|Number=Sing	34	nmod	34:nmod:sobre	_
+38	de	de	ADP	_	_	39	case	39:case	_
+39	registro	registro	NOUN	_	Gender=Masc|Number=Sing	37	nmod	37:nmod:de	_
+40	de	de	ADP	_	_	41	case	41:case	_
+41	presença	presença	NOUN	_	Gender=Fem|Number=Sing	39	nmod	39:nmod:de	SpaceAfter=No
+42	.	.	PUNCT	_	_	28	punct	28:punct	_
+
+# sent_id = S0009
+# text = Eles tiveram que ser apartados por parlamentares e chegaram a ser separados por seguranças.
+1	Eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	2	nsubj	2:nsubj|5:nsubj:pass|9:nsubj|12:nsubj:pass	_
+2	tiveram	ter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	que	que	ADP	_	_	5	mark	5:mark	_
+4	ser	ser	AUX	_	VerbForm=Inf	5	aux:pass	5:aux:pass	_
+5	apartados	apartar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	2	xcomp	2:xcomp	_
+6	por	por	ADP	_	_	7	case	7:case	_
+7	parlamentares	parlamentar	NOUN	_	Gender=Masc|Number=Plur	5	obl:agent	5:obl:agent	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	chegaram	chegar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	2	conj	2:conj:e	_
+10	a	a	ADP	_	_	12	mark	12:mark	_
+11	ser	ser	AUX	_	VerbForm=Inf	12	aux:pass	12:aux:pass	_
+12	separados	separar	VERB	_	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	9	xcomp	9:xcomp	_
+13	por	por	ADP	_	_	14	case	14:case	_
+14	seguranças	segurança	NOUN	_	Number=Plur	12	obl:agent	12:obl:agent	SpaceAfter=No
+15	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0010
+# text = confira:
+1	confira	conferir	VERB	_	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+2	:	:	PUNCT	_	_	1	punct	1:punct	_

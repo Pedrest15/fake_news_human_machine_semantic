@@ -1,0 +1,94 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Policiais invadem o Congresso Nacional em protesto contra a Reforma da Previdência.
+1	Policiais	policial	NOUN	_	Number=Plur	2	nsubj	2:nsubj	_
+2	invadem	invadir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	Congresso	Congresso	PROPN	_	_	2	obj	2:obj	_
+5	Nacional	Nacional	PROPN	_	_	4	flat:name	4:flat:name	_
+6	em	em	ADP	_	_	7	case	7:case	_
+7	protesto	protesto	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:em	_
+8	contra	contra	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	Reforma	Reforma	PROPN	_	_	7	nmod	7:nmod:contra	_
+11-12	da	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	Previdência	Previdência	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+14	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Polícia x Polícia.
+1	Polícia	Polícia	PROPN	_	_	0	root	0:root	_
+2	x	x	ADP	_	_	3	case	3:case	_
+3	Polícia	Polícia	PROPN	_	_	1	nmod	1:nmod:x	SpaceAfter=No
+4	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0005
+# text = Sindicalistas invadiram a chapelaria, local onde senadores e deputados entram para o Congresso.
+1	Sindicalistas	sindicalista	NOUN	_	Number=Plur	2	nsubj	2:nsubj	_
+2	invadiram	invadir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	chapelaria	chapelaria	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	local	local	NOUN	_	Number=Sing	4	appos	4:appos|11:obl	_
+7	onde	onde	ADV	_	_	11	advmod	6:ref	_
+8	senadores	senador	NOUN	_	Gender=Masc|Number=Plur	11	nsubj	11:nsubj	_
+9	e	e	CCONJ	_	_	10	cc	10:cc	_
+10	deputados	deputado	NOUN	_	Gender=Masc|Number=Plur	8	conj	8:conj:e|11:nsubj	_
+11	entram	entrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	acl:relcl	6:acl:relcl	_
+12	para	para	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	Congresso	Congresso	PROPN	_	_	11	obl	11:obl:para	SpaceAfter=No
+15	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0007
+# text = Vários policiais conseguiram passar pela porta principal e entraram em confronto com a Polícia Legislativa.
+1	Vários	vários	DET	_	Gender=Masc|Number=Plur|PronType=Ind	2	det	2:det	_
+2	policiais	policial	NOUN	_	Number=Plur	3	nsubj	3:nsubj|4:nsubj|10:nsubj	_
+3	conseguiram	conseguir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	passar	passar	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+5-6	pela	_	_	_	_	_	_	_	_
+5	por	por	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	porta	porta	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:por	_
+8	principal	principal	ADJ	_	Number=Sing	7	amod	7:amod	_
+9	e	e	CCONJ	_	_	10	cc	10:cc	_
+10	entraram	entrar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	3	conj	3:conj:e	_
+11	em	em	ADP	_	_	12	case	12:case	_
+12	confronto	confronto	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:em	_
+13	com	com	ADP	_	_	15	case	15:case	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	Polícia	Polícia	PROPN	_	_	12	nmod	12:nmod:com	_
+16	Legislativa	Legislativa	PROPN	_	_	15	flat:name	15:flat:name	SpaceAfter=No
+17	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0009
+# text = Eles protestam contra a reforma da Previdência imposta pelo governo Temer.
+1	Eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	2	nsubj	2:nsubj	_
+2	protestam	protestar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	contra	contra	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	reforma	reforma	NOUN	_	Gender=Fem|Number=Sing	2	obl	2:obl:contra	_
+6-7	da	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	Previdência	Previdência	PROPN	_	_	5	nmod	5:nmod:de	_
+9	imposta	imposr	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	5	acl	5:acl	_
+10-11	pelo	_	_	_	_	_	_	_	_
+10	por	por	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	governo	governo	NOUN	_	Gender=Masc|Number=Sing	9	obl:agent	9:obl:agent	_
+13	Temer	Temer	PROPN	_	_	12	nmod	12:nmod	SpaceAfter=No
+14	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0010
+# text = os vídeos abaixo são de Diego Amorim:
+1	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	vídeos	vídeo	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	6:nsubj	_
+3	abaixo	abaixo	ADV	_	_	2	advmod	2:advmod	_
+4	são	ser	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_
+5	de	de	ADP	_	_	6	case	6:case	_
+6	Diego	Diego	PROPN	_	_	0	root	0:root	_
+7	Amorim	Amorim	PROPN	_	_	6	flat:name	6:flat:name	SpaceAfter=No
+8	:	:	PUNCT	_	_	6	punct	6:punct	_

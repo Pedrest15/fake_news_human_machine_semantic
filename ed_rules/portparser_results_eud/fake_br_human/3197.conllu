@@ -1,0 +1,273 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = O cargo perfeito para Dilma!
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	cargo	cargo	NOUN	_	Gender=Masc|Number=Sing	0	root	0:root	_
+3	perfeito	perfeito	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	2	amod	2:amod	_
+4	para	para	ADP	_	_	5	case	5:case	_
+5	Dilma	Dilma	PROPN	_	_	2	nmod	2:nmod:para	SpaceAfter=No
+6	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = Ela deve renunciar imediatamente e trabalhar como agente de endemias.
+1	Ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj|3:nsubj|6:nsubj	_
+2	deve	dever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	renunciar	renunciar	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	_
+4	imediatamente	imediatamente	ADV	_	_	3	advmod	3:advmod	_
+5	e	e	CCONJ	_	_	6	cc	6:cc	_
+6	trabalhar	trabalhar	VERB	_	VerbForm=Inf	3	conj	2:xcomp|3:conj:e	_
+7	como	como	ADP	_	_	8	case	8:case	_
+8	agente	agente	NOUN	_	Number=Sing	6	obl	6:obl:como	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	endemias	endemia	NOUN	_	Gender=Fem|Number=Plur	8	nmod	8:nmod:de	SpaceAfter=No
+11	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = Quem ela acha que engana com esse tipo de marketing populista?.
+1	Quem	quem	PRON	_	PronType=Int	3	obj	3:obj	_
+2	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nsubj	3:nsubj	_
+3	acha	achar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	5	mark	5:mark	_
+5	engana	enganar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	3:ccomp	_
+6	com	com	ADP	_	_	8	case	8:case	_
+7	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	8	det	8:det	_
+8	tipo	tipo	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:com	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	marketing	marketing	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:de	_
+11	populista	populista	ADJ	_	Number=Sing	10	amod	10:amod	SpaceAfter=No
+12	?	?	PUNCT	_	_	3	punct	3:punct	SpaceAfter=No
+13	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = (Patrícia Carvalho-Brasília) Usando uma camiseta e um boné branco da campanha, cujo lema é "Zika Zero", a presidente percorreu ruas da comunidade Zeppelin, no bairro Santa Cruz, Zona Oeste do Rio de Janeiro, onde participou de ações do Dia Nacional de Mobilização Contra o Aedes Aegypti.
+1	(	(	PUNCT	_	_	2	punct	2:punct	SpaceAfter=No
+2	Patrícia	Patrícia	PROPN	_	_	26	parataxis	26:parataxis	_
+3	Carvalho-Brasília	Carvalho-Brasília	PROPN	_	_	2	flat:name	2:flat:name	SpaceAfter=No
+4	)	)	PUNCT	_	_	2	punct	2:punct	_
+5	Usando	usar	VERB	_	VerbForm=Ger	26	advcl	26:advcl	_
+6	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	camiseta	camiseta	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+8	e	e	CCONJ	_	_	10	cc	10:cc	_
+9	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	boné	boné	NOUN	_	Gender=Masc|Number=Sing	7	conj	5:obj|7:conj:e	_
+11	branco	branco	ADJ	_	Gender=Masc|Number=Sing	10	amod	10:amod	_
+12-13	da	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	campanha	campanha	NOUN	_	Gender=Fem|Number=Sing	7	nmod	7:nmod:de|10:nmod:de|17:nmod	SpaceAfter=No
+15	,	,	PUNCT	_	_	20	punct	20:punct	_
+16	cujo	cujo	DET	_	Gender=Masc|Number=Sing|PronType=Rel	17	det	14:ref	_
+17	lema	lema	NOUN	_	Gender=Masc|Number=Sing	20	nsubj	20:nsubj	_
+18	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	cop	20:cop	_
+19	"	"	PUNCT	_	_	20	punct	20:punct	SpaceAfter=No
+20	Zika	Zika	PROPN	_	_	14	acl:relcl	14:acl:relcl	_
+21	Zero	Zero	PROPN	_	_	20	flat:name	20:flat:name	SpaceAfter=No
+22	"	"	PUNCT	_	_	20	punct	20:punct	SpaceAfter=No
+23	,	,	PUNCT	_	_	5	punct	5:punct	_
+24	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	25:det	_
+25	presidente	presidente	NOUN	_	Number=Sing	26	nsubj	26:nsubj	_
+26	percorreu	percorrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+27	ruas	rua	NOUN	_	Gender=Fem|Number=Plur	26	obj	26:obj	_
+28-29	da	_	_	_	_	_	_	_	_
+28	de	de	ADP	_	_	30	case	30:case	_
+29	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_
+30	comunidade	comunidade	NOUN	_	Gender=Fem|Number=Sing	27	nmod	27:nmod:de	_
+31	Zeppelin	Zeppelin	PROPN	_	_	30	nmod	30:nmod	SpaceAfter=No
+32	,	,	PUNCT	_	_	35	punct	35:punct	_
+33-34	no	_	_	_	_	_	_	_	_
+33	em	em	ADP	_	_	35	case	35:case	_
+34	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	35:det	_
+35	bairro	bairro	NOUN	_	Gender=Masc|Number=Sing	26	obl	26:obl:em|48:obl	_
+36	Santa	Santa	PROPN	_	_	35	nmod	35:nmod	_
+37	Cruz	Cruz	PROPN	_	_	36	flat:name	36:flat:name	SpaceAfter=No
+38	,	,	PUNCT	_	_	39	punct	39:punct	_
+39	Zona	Zona	PROPN	_	_	35	parataxis	35:parataxis	_
+40	Oeste	Oeste	PROPN	_	_	39	flat:name	39:flat:name	_
+41-42	do	_	_	_	_	_	_	_	_
+41	de	de	ADP	_	_	43	case	43:case	_
+42	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	43	det	43:det	_
+43	Rio	Rio	PROPN	_	_	39	nmod	39:nmod:de	_
+44	de	de	ADP	_	_	45	case	45:case	_
+45	Janeiro	Janeiro	PROPN	_	_	43	flat:name	43:flat:name	SpaceAfter=No
+46	,	,	PUNCT	_	_	48	punct	48:punct	_
+47	onde	onde	ADV	_	_	48	advmod	35:ref	_
+48	participou	participar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	35	acl:relcl	35:acl:relcl	_
+49	de	de	ADP	_	_	50	case	50:case	_
+50	ações	ação	NOUN	_	Gender=Fem|Number=Plur	48	obl	48:obl:de	_
+51-52	do	_	_	_	_	_	_	_	_
+51	de	de	ADP	_	_	53	case	53:case	_
+52	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	53	det	53:det	_
+53	Dia	Dia	PROPN	_	_	50	nmod	50:nmod:de	_
+54	Nacional	Nacional	PROPN	_	_	53	flat:name	53:flat:name	_
+55	de	de	ADP	_	_	56	case	56:case	_
+56	Mobilização	Mobilização	PROPN	_	_	53	flat:name	53:flat:name	_
+57	Contra	contra	ADP	_	_	59	case	59:case	_
+58	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	59	det	59:det	_
+59	Aedes	Aedes	PROPN	_	_	53	flat:name	53:flat:name	_
+60	Aegypti	Aegypti	PROPN	_	_	53	flat:name	53:flat:name	SpaceAfter=No
+61	.	.	PUNCT	_	_	26	punct	26:punct	_
+
+# sent_id = S0009
+# text = Dilma chega a ser patética com esse tipo de atitude.
+1	Dilma	Dilma	PROPN	_	_	2	nsubj	2:nsubj|5:nsubj	_
+2	chega	chegar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	a	a	ADP	_	_	5	mark	5:mark	_
+4	ser	ser	AUX	_	VerbForm=Inf	5	cop	5:cop	_
+5	patética	patético	ADJ	_	Gender=Fem|Number=Sing	2	xcomp	2:xcomp	_
+6	com	com	ADP	_	_	8	case	8:case	_
+7	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	8	det	8:det	_
+8	tipo	tipo	NOUN	_	Gender=Masc|Number=Sing	5	obl	5:obl:com	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	atitude	atitude	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	SpaceAfter=No
+11	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0011
+# text = Será que ela foi eleita para caçar mosquitos?
+1	Será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	5	discourse	5:discourse	_
+2	que	que	SCONJ	_	_	5	discourse	5:discourse	_
+3	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	nsubj:pass	5:nsubj:pass	_
+4	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	aux:pass	5:aux:pass	_
+5	eleita	eleger	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+6	para	para	ADP	_	_	7	mark	7:mark	_
+7	caçar	caçar	VERB	_	VerbForm=Inf	5	advcl	5:advcl:para	_
+8	mosquitos	mosquito	NOUN	_	Gender=Masc|Number=Plur	7	obj	7:obj	SpaceAfter=No
+9	?	?	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0013
+# text = De que adianta fazer uma campanha UTÓPICA chamada "ZICA ZERO" e ao mesmo tempo cortar verbas para a pesquisa dessa doença?
+1	De	de	ADP	_	_	2	case	2:case	_
+2	que	que	PRON	_	PronType=Int	3	obl	3:obl:de	_
+3	adianta	adiantar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	fazer	fazer	VERB	_	VerbForm=Inf	3	csubj	3:csubj	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	campanha	campanha	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+7	UTÓPICA	utópica	ADJ	_	_	6	amod	6:amod	_
+8	chamada	chamar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	6	acl	6:acl	_
+9	"	"	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+10	ZICA	ZICA	PROPN	_	_	8	xcomp	8:xcomp	_
+11	ZERO	ZERO	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+12	"	"	PUNCT	_	_	10	punct	10:punct	_
+13	e	e	CCONJ	_	_	18	cc	18:cc	_
+14-15	ao	_	_	_	_	_	_	_	_
+14	a	a	ADP	_	_	17	case	17:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+16	mesmo	mesmo	DET	_	Gender=Masc|Number=Sing|PronType=Dem	17	det	17:det	_
+17	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	18	obl	18:obl:a	_
+18	cortar	cortar	VERB	_	VerbForm=Inf	4	conj	3:csubj|4:conj:e	_
+19	verbas	verba	NOUN	_	Gender=Fem|Number=Plur	18	obj	18:obj	_
+20	para	para	ADP	_	_	22	case	22:case	_
+21	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	22:det	_
+22	pesquisa	pesquisa	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:para	_
+23-24	dessa	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	25	det	25:det	_
+25	doença	doença	NOUN	_	Gender=Fem|Number=Sing	22	nmod	22:nmod:de	SpaceAfter=No
+26	?	?	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0015
+# text = De que adianta combater o mosquito Aedes e não investir em saneamento básico?
+1	De	de	ADP	_	_	2	case	2:case	_
+2	que	que	PRON	_	PronType=Int	3	obl	3:obl:de	_
+3	adianta	adiantar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	combater	combater	VERB	_	VerbForm=Inf	3	csubj	3:csubj	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	mosquito	mosquito	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7	Aedes	Aedes	PROPN	_	_	6	nmod	6:nmod	_
+8	e	e	CCONJ	_	_	10	cc	10:cc	_
+9	não	não	ADV	_	_	10	advmod	10:advmod	_
+10	investir	investir	VERB	_	VerbForm=Inf	4	conj	3:csubj|4:conj:e	_
+11	em	em	ADP	_	_	12	case	12:case	_
+12	saneamento	saneamento	NOUN	_	Gender=Masc|Number=Sing	10	obl	10:obl:em	_
+13	básico	básico	ADJ	_	Gender=Masc|Number=Sing	12	amod	12:amod	SpaceAfter=No
+14	?	?	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0017
+# text = De que adianta perambular pelas ruas com um boné branco e fazer asneiras atrás de asneiras no rumo de nossa economia?
+1	De	de	ADP	_	_	2	case	2:case	_
+2	que	que	PRON	_	PronType=Rel	3	obl	3:obl:de	_
+3	adianta	adiantar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	perambular	perambular	VERB	_	VerbForm=Inf	3	csubj	3:csubj	_
+5-6	pelas	_	_	_	_	_	_	_	_
+5	por	por	ADP	_	_	7	case	7:case	_
+6	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	7:det	_
+7	ruas	rua	NOUN	_	Gender=Fem|Number=Plur	4	obl	4:obl:por	_
+8	com	com	ADP	_	_	10	case	10:case	_
+9	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	boné	boné	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:com	_
+11	branco	branco	ADJ	_	Gender=Masc|Number=Sing	10	amod	10:amod	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	fazer	fazer	VERB	_	VerbForm=Inf	4	conj	3:csubj|4:conj:e	_
+14	asneiras	asneiro	NOUN	_	Gender=Fem|Number=Plur	13	obj	13:obj	_
+15	atrás	atrás	ADV	_	_	13	advmod	13:advmod	_
+16	de	de	ADP	_	_	17	case	17:case	_
+17	asneiras	asneiro	NOUN	_	Gender=Fem|Number=Plur	15	obl	15:obl:de	_
+18-19	no	_	_	_	_	_	_	_	_
+18	em	em	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	rumo	rumo	NOUN	_	Gender=Masc|Number=Sing	13	obl	13:obl:em	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	nossa	nosso	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	23	det	23:det	_
+23	economia	economia	NOUN	_	Gender=Fem|Number=Sing	20	nmod	20:nmod:de	SpaceAfter=No
+24	?	?	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0019
+# text = O povo cansou de ser palhaço dona Dilma.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	povo	povo	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj|6:nsubj	_
+3	cansou	cansar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	de	de	ADP	_	_	6	mark	6:mark	_
+5	ser	ser	AUX	_	VerbForm=Inf	6	cop	6:cop	_
+6	palhaço	palhaço	NOUN	_	Gender=Masc|Number=Sing	3	xcomp	3:xcomp	_
+7	dona	dona	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod	_
+8	Dilma	Dilma	PROPN	_	_	7	nmod	7:nmod	SpaceAfter=No
+9	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0021
+# text = Essas ações de marketing não enganam mais ninguém [...] a não ser que a senhora passe o restante de seu mandato trabalhando como agente de endemias, ninguém mais acredita nesse tipo de populismo "à la" Lula.
+1	Essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	2	det	2:det	_
+2	ações	ação	NOUN	_	Gender=Fem|Number=Plur	6	nsubj	6:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	marketing	marketing	NOUN	_	Gender=Masc|Number=Sing	2	nmod	2:nmod:de	_
+5	não	não	ADV	_	_	6	advmod	6:advmod	_
+6	enganam	enganar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	mais	mais	ADV	_	_	8	advmod	8:advmod	_
+8	ninguém	ninguém	PRON	_	Number=Sing|PronType=Ind	6	obj	6:obj	_
+9	[	[	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+10	.	.	PUNCT	_	_	6	parataxis	6:parataxis	SpaceAfter=No
+11	..	..	PUNCT	_	_	10	punct	10:punct	SpaceAfter=No
+12	]	]	PUNCT	_	_	10	punct	10:punct	_
+13	a	a	ADP	_	ExtPos=SCONJ	19	mark	19:mark	_
+14	não	não	ADV	_	_	13	fixed	13:fixed	_
+15	ser	ser	AUX	_	VerbForm=Inf	13	fixed	13:fixed	_
+16	que	que	SCONJ	_	_	13	fixed	13:fixed	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	senhora	senhor	NOUN	_	Gender=Fem|Number=Sing	19	nsubj	19:nsubj	_
+19	passe	passar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	advcl	6:advcl:a_não_ser_que	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	restante	restante	NOUN	_	Number=Sing	19	obj	19:obj	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	24	det	24:det	_
+24	mandato	mandato	NOUN	_	Gender=Masc|Number=Sing	21	nmod	21:nmod:de	_
+25	trabalhando	trabalhar	VERB	_	VerbForm=Ger	19	advcl	19:advcl	_
+26	como	como	ADP	_	_	27	case	27:case	_
+27	agente	agente	NOUN	_	Number=Sing	25	obl	25:obl:como	_
+28	de	de	ADP	_	_	29	case	29:case	_
+29	endemias	endemia	NOUN	_	Gender=Fem|Number=Plur	27	nmod	27:nmod:de	SpaceAfter=No
+30	,	,	PUNCT	_	_	33	punct	33:punct	_
+31	ninguém	ninguém	PRON	_	Number=Sing|PronType=Ind	33	nsubj	33:nsubj	_
+32	mais	mais	ADV	_	_	33	advmod	33:advmod	_
+33	acredita	acreditar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	parataxis	6:parataxis	_
+34-35	nesse	_	_	_	_	_	_	_	_
+34	em	em	ADP	_	_	36	case	36:case	_
+35	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	36	det	36:det	_
+36	tipo	tipo	NOUN	_	Gender=Masc|Number=Sing	33	obl	33:obl:em	_
+37	de	de	ADP	_	_	38	case	38:case	_
+38	populismo	populismo	NOUN	_	Gender=Masc|Number=Sing	36	nmod	36:nmod:de	_
+39	"	"	PUNCT	_	_	40	punct	40:punct	SpaceAfter=No
+40-41	à	_	_	_	_	_	_	_	_
+40	a	a	X	_	_	38	case	38:case	_
+41	a	a	X	_	_	42	case	42:case	_
+42	la	la	X	_	Foreign=Yes	40	nmod	40:nmod:a	SpaceAfter=No
+43	"	"	PUNCT	_	_	40	punct	40:punct	_
+44	Lula	Lula	PROPN	_	_	40	nmod	40:nmod	SpaceAfter=No
+45	.	.	PUNCT	_	_	6	punct	6:punct	_

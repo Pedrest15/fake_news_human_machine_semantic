@@ -1,0 +1,501 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Britney Spears: Príncipe Willian não é humano.
+1	Britney	Britney	PROPN	_	_	8	nsubj	8:nsubj	_
+2	Spears	Spears	PROPN	_	_	1	flat:name	1:flat:name	SpaceAfter=No
+3	:	:	PUNCT	_	_	1	punct	1:punct	_
+4	Príncipe	Príncipe	PROPN	_	_	8	nsubj	8:nsubj	_
+5	Willian	Willian	PROPN	_	_	4	flat:name	4:flat:name	_
+6	não	não	ADV	_	_	8	advmod	8:advmod	_
+7	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop	_
+8	humano	humano	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+9	.	.	PUNCT	_	_	8	punct	8:punct	_
+
+# sent_id = S0003
+# text = Eu o vi se transformar... .
+1	Eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	3:nsubj	_
+2	o	o	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	obj	3:obj|5:nsubj	_
+3	vi	ver	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	5	expl	5:expl	_
+5	transformar	transformar	VERB	_	Number=Sing|Person=3|VerbForm=Inf	3	xcomp	3:xcomp	SpaceAfter=No
+6	...	...	PUNCT	_	_	3	punct	3:punct	_
+7	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0005
+# text = O ano era 2002 e na época, Britney Spears tinha 20 anos e Prince William tinha 19.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	ano	ano	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+3	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	cop	4:cop	_
+4	2002	2002	NUM	_	NumType=Card	0	root	0:root	_
+5	e	e	CCONJ	_	_	12	cc	12:cc	_
+6-7	na	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	época	época	NOUN	_	Gender=Fem|Number=Sing	12	obl	12:obl:em	SpaceAfter=No
+9	,	,	PUNCT	_	_	8	punct	8:punct	_
+10	Britney	Britney	PROPN	_	_	12	nsubj	12:nsubj	_
+11	Spears	Spears	PROPN	_	_	10	flat:name	10:flat:name	_
+12	tinha	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	conj	4:conj:e	_
+13	20	20	NUM	_	NumType=Card	14	nummod	14:nummod	_
+14	anos	ano	NOUN	_	Gender=Masc|Number=Plur	12	obj	12:obj	_
+15	e	e	CCONJ	_	_	18	cc	18:cc	_
+16	Prince	Prince	PROPN	_	_	18	nsubj	18:nsubj	_
+17	William	William	PROPN	_	_	16	flat:name	16:flat:name	_
+18	tinha	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	12	conj	12:conj:e	_
+19	19	19	NUM	_	NumType=Card	18	obj	18:obj	SpaceAfter=No
+20	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0007
+# text = É uma espécie de mutante que se alterna entre a forma humana e um réptil durante os momentos de maior excitação.
+1	É	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+2	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	espécie	espécie	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+4	de	de	ADP	_	_	5	case	5:case	_
+5	mutante	mutante	NOUN	_	Number=Sing	3	nmod	3:nmod:de|8:nsubj	_
+6	que	que	PRON	_	PronType=Rel	8	nsubj	5:ref	_
+7	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	8	expl	8:expl	_
+8	alterna	alternar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_
+9	entre	entre	ADP	_	_	11	case	11:case	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	forma	forma	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:entre	_
+12	humana	humano	ADJ	_	Gender=Fem|Number=Sing	11	amod	11:amod	_
+13	e	e	CCONJ	_	_	15	cc	15:cc	_
+14	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	réptil	réptil	NOUN	_	Gender=Masc|Number=Sing	11	conj	8:obl:entre|11:conj:e	_
+16	durante	durante	ADP	_	_	18	case	18:case	_
+17	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	18:det	_
+18	momentos	momento	NOUN	_	Gender=Masc|Number=Plur	8	obl	8:obl:durante	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	maior	maior	ADJ	_	Number=Sing	21	amod	21:amod	_
+21	excitação	excitação	NOUN	_	Gender=Fem|Number=Sing	18	nmod	18:nmod:de	SpaceAfter=No
+22	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0008
+# text = disse.
+1	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+2	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0010
+# text = Britney explica que teve um " romance virtual " com o Príncipe William antes de se casar.
+1	Britney	Britney	PROPN	_	_	2	nsubj	2:nsubj	_
+2	explica	explicar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	4	mark	4:mark	_
+4	teve	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	ccomp	2:ccomp	_
+5	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+6	"	"	PUNCT	_	_	7	punct	7:punct	_
+7	romance	romance	NOUN	_	Number=Sing	4	obj	4:obj	_
+8	virtual	virtual	ADJ	_	Number=Sing	7	amod	7:amod	_
+9	"	"	PUNCT	_	_	7	punct	7:punct	_
+10	com	com	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	Príncipe	Príncipe	PROPN	_	_	7	nmod	7:nmod:com	_
+13	William	William	PROPN	_	_	12	flat:name	12:flat:name	_
+14	antes	antes	ADV	_	_	4	advmod	4:advmod	_
+15	de	de	ADP	_	_	17	mark	17:mark	_
+16	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	17	expl	17:expl	_
+17	casar	casar	VERB	_	VerbForm=Inf	14	acl	14:acl:de	SpaceAfter=No
+18	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0012
+# text = Ela passava grande parte do tempo trocando e-mails e conversando através de vídeo-chamadas com William e fazia planos para um "jantar a dois", porém o encontro não ocorreu.
+1	Ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj|18:nsubj	_
+2	passava	passar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	0:root	_
+3	grande	grande	ADJ	_	Number=Sing	4	amod	4:amod	_
+4	parte	parte	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+5-6	do	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	4	nmod	4:nmod:de	_
+8	trocando	trocar	VERB	_	VerbForm=Ger	2	advcl	2:advcl	_
+9	e-mails	e-mails	NOUN	_	Foreign=Yes|Gender=Masc|Number=Sing	8	obj	8:obj	_
+10	e	e	CCONJ	_	_	11	cc	11:cc	_
+11	conversando	conversar	VERB	_	VerbForm=Ger	8	conj	2:advcl|8:conj:e	_
+12	através	através	ADV	_	_	11	advmod	11:advmod	_
+13	de	de	ADP	_	_	14	case	14:case	_
+14	vídeo-chamadas	vídeo-chamado	NOUN	_	Gender=Fem|Number=Plur	12	obl	12:obl:de	_
+15	com	com	ADP	_	_	16	case	16:case	_
+16	William	William	PROPN	_	_	11	obl	11:obl:com	_
+17	e	e	CCONJ	_	_	18	cc	18:cc	_
+18	fazia	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	2	conj	2:conj:e	_
+19	planos	plano	NOUN	_	Gender=Masc|Number=Plur	18	obj	18:obj	_
+20	para	para	ADP	_	_	23	case	23:case	_
+21	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_
+22	"	"	PUNCT	_	_	23	punct	23:punct	SpaceAfter=No
+23	jantar	jantar	NOUN	_	Gender=Masc|Number=Sing	19	nmod	19:nmod:para	_
+24	a	a	ADP	_	_	25	case	25:case	_
+25	dois	dois	NUM	_	Gender=Masc|NumType=Card	23	nmod	23:nmod:a	SpaceAfter=No
+26	"	"	PUNCT	_	_	23	punct	23:punct	SpaceAfter=No
+27	,	,	PUNCT	_	_	32	punct	32:punct	_
+28	porém	porém	CCONJ	_	_	32	cc	32:cc	_
+29	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	30:det	_
+30	encontro	encontro	NOUN	_	Gender=Masc|Number=Sing	32	nsubj	32:nsubj	_
+31	não	não	ADV	_	_	32	advmod	32:advmod	_
+32	ocorreu	ocorrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	2:conj:porém	SpaceAfter=No
+33	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0014
+# text = Britney cancelou o jantar após testemunhar o Príncipe William "se transformar em um reptiliano algumas vezes ".
+1	Britney	Britney	PROPN	_	_	2	nsubj	2:nsubj	_
+2	cancelou	cancelar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	jantar	jantar	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+5	após	após	ADP	_	_	6	mark	6:mark	_
+6	testemunhar	testemunhar	VERB	_	VerbForm=Inf	2	advcl	2:advcl:após	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_
+8	Príncipe	Príncipe	PROPN	_	_	6	obj	6:obj|12:nsubj	_
+9	William	William	PROPN	_	_	8	flat:name	8:flat:name	_
+10	"	"	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+11	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	12	expl	12:expl	_
+12	transformar	transformar	VERB	_	Number=Sing|Person=3|VerbForm=Inf	6	xcomp	6:xcomp	_
+13	em	em	ADP	_	_	15	case	15:case	_
+14	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_
+15	reptiliano	reptiliano	NOUN	_	Gender=Masc|Number=Sing	12	obl	12:obl:em	_
+16	algumas	algum	DET	_	Gender=Fem|Number=Plur|PronType=Ind	17	det	17:det	_
+17	vezes	vez	NOUN	_	Gender=Fem|Number=Plur	12	obl	12:obl	_
+18	"	"	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+19	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0016
+# text = Amigos mais íntimos e funcionários receberam fotos e vídeos que confirmam as afirmações da cantora sobre as mutações do príncipe.
+1	Amigos	amigo	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	6:nsubj	_
+2	mais	mais	ADV	_	_	3	advmod	3:advmod	_
+3	íntimos	íntimo	ADJ	_	Gender=Masc|Number=Plur	1	amod	1:amod	_
+4	e	e	CCONJ	_	_	5	cc	5:cc	_
+5	funcionários	funcionário	NOUN	_	Gender=Masc|Number=Plur	1	conj	1:conj:e|6:nsubj	_
+6	receberam	receber	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+7	fotos	foto	NOUN	_	Number=Plur	6	obj	6:obj|11:nsubj	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	vídeos	vídeo	NOUN	_	Gender=Masc|Number=Plur	7	conj	6:obj|7:conj:e|11:nsubj	_
+10	que	que	PRON	_	PronType=Rel	11	nsubj	7:ref|9:ref	_
+11	confirmam	confirmar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	7:acl:relcl|9:acl:relcl	_
+12	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	13:det	_
+13	afirmações	afirmação	NOUN	_	Gender=Fem|Number=Plur	11	obj	11:obj	_
+14-15	da	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	cantora	cantor	NOUN	_	Gender=Fem|Number=Sing	13	nmod	13:nmod:de	_
+17	sobre	sobre	ADP	_	_	19	case	19:case	_
+18	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	19:det	_
+19	mutações	mutação	NOUN	_	Gender=Fem|Number=Plur	13	nmod	13:nmod:sobre	_
+20-21	do	_	_	_	_	_	_	_	_
+20	de	de	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	príncipe	príncipe	NOUN	_	Gender=Masc|Number=Sing	19	nmod	19:nmod:de	SpaceAfter=No
+23	.	.	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0018
+# text = Não é apenas o William [...] a maioria da família real é assim, declarou Britney dizendo que William fica com uma cor acinzentada quando assume sua forma reptiliana. .
+1	Não	não	ADV	_	_	5	advmod	5:advmod	_
+2	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_
+3	apenas	apenas	ADV	_	_	5	advmod	5:advmod	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	William	William	PROPN	_	_	19	ccomp:speech	19:ccomp:speech	_
+6	[	[	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+7	.	.	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+8	..	..	PUNCT	_	_	7	punct	7:punct	SpaceAfter=No
+9	]	]	PUNCT	_	_	7	punct	7:punct	_
+10	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+11	maioria	maioria	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	17:nsubj	_
+12-13	da	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	família	família	NOUN	_	Gender=Fem|Number=Sing	11	nmod	11:nmod:de	_
+15	real	real	ADJ	_	Number=Sing	14	amod	14:amod	_
+16	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	17:cop	_
+17	assim	assim	ADV	_	_	5	conj	5:conj|19:ccomp:speech	SpaceAfter=No
+18	,	,	PUNCT	_	_	5	punct	5:punct	_
+19	declarou	declarar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+20	Britney	Britney	PROPN	_	_	19	nsubj	19:nsubj	_
+21	dizendo	dizer	VERB	_	VerbForm=Ger	19	advcl	19:advcl	_
+22	que	que	SCONJ	_	_	24	mark	24:mark	_
+23	William	William	PROPN	_	_	24	nsubj	24:nsubj	_
+24	fica	ficar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	ccomp	21:ccomp	_
+25	com	com	ADP	_	_	27	case	27:case	_
+26	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_
+27	cor	cor	NOUN	_	Gender=Fem|Number=Sing	24	obl	24:obl:com	_
+28	acinzentada	acinzentado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	27	amod	27:amod	_
+29	quando	quando	SCONJ	_	_	30	mark	30:mark	_
+30	assume	assumir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	advcl	24:advcl:quando	_
+31	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	32	det	32:det	_
+32	forma	forma	NOUN	_	Gender=Fem|Number=Sing	30	obj	30:obj	_
+33	reptiliana	reptiliano	ADJ	_	Gender=Fem|Number=Sing	32	amod	32:amod	SpaceAfter=No
+34	.	.	PUNCT	_	_	19	punct	19:punct	_
+35	.	.	PUNCT	_	_	19	punct	19:punct	_
+
+# sent_id = S0020
+# text = Os dentes brilham, os olhos ficam negros e aparecem escamas que brilham por todo o corpo.
+1	Os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	2:det	_
+2	dentes	dente	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	3:nsubj	_
+3	brilham	brilhar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+4	,	,	PUNCT	_	_	7	punct	7:punct	_
+5	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	6:det	_
+6	olhos	olho	NOUN	_	Gender=Masc|Number=Plur	7	nsubj	7:nsubj|8:nsubj	_
+7	ficam	ficar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	conj	3:conj:e	_
+8	negros	negro	ADJ	_	Gender=Masc|Number=Plur	7	xcomp	7:xcomp	_
+9	e	e	CCONJ	_	_	10	cc	10:cc	_
+10	aparecem	aparecer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	conj	3:conj:e	_
+11	escamas	escama	NOUN	_	Gender=Fem|Number=Plur	10	nsubj	10:nsubj|13:nsubj	_
+12	que	que	PRON	_	PronType=Rel	13	nsubj	11:ref	_
+13	brilham	brilhar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	11:acl:relcl	_
+14	por	por	ADP	_	_	17	case	17:case	_
+15	todo	todo	DET	_	Gender=Masc|Number=Sing|PronType=Ind	17	det	17:det	_
+16	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_
+17	corpo	corpo	NOUN	_	Gender=Masc|Number=Sing	13	obl	13:obl:por	SpaceAfter=No
+18	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0022
+# text = Estou dizendo que esse homem não é humano. .
+1	Estou	estar	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	aux	2:aux	_
+2	dizendo	dizer	VERB	_	VerbForm=Ger	0	root	0:root	_
+3	que	que	SCONJ	_	_	8	mark	8:mark	_
+4	esse	esse	DET	_	Gender=Masc|Number=Sing|PronType=Dem	5	det	5:det	_
+5	homem	homem	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	8:nsubj	_
+6	não	não	ADV	_	_	8	advmod	8:advmod	_
+7	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop	_
+8	humano	humano	ADJ	_	Gender=Masc|Number=Sing	2	ccomp	2:ccomp	SpaceAfter=No
+9	.	.	PUNCT	_	_	2	punct	2:punct	_
+10	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0024
+# text = Segundo relato publicado no site yournewswire.com, as mutações do príncipe testemunhadas por Britney através de vídeo-chamadas ocorreram duas vezes.
+1	Segundo	segundo	ADP	_	_	2	case	2:case	_
+2	relato	relato	NOUN	_	Gender=Masc|Number=Sing	20	obl	20:obl:segundo	_
+3	publicado	publicar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	2:acl	_
+4-5	no	_	_	_	_	_	_	_	_
+4	em	em	ADP	_	_	6	case	6:case	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	site	site	NOUN	_	Gender=Masc|Number=Sing	3	obl	3:obl:em	_
+7	yournewswire.com	yournewswire.com	SYM	_	_	6	nmod	6:nmod	SpaceAfter=No
+8	,	,	PUNCT	_	_	2	punct	2:punct	_
+9	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	10:det	_
+10	mutações	mutação	NOUN	_	Gender=Fem|Number=Plur	20	nsubj	20:nsubj	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	príncipe	príncipe	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:de	_
+14	testemunhadas	testemunhar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	10	acl	10:acl	_
+15	por	por	ADP	_	_	16	case	16:case	_
+16	Britney	Britney	PROPN	_	_	14	obl:agent	14:obl:agent	_
+17	através	através	ADV	_	_	14	advmod	14:advmod	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	vídeo-chamadas	vídeo-chamadas	NOUN	_	Gender=Fem|Number=Plur	17	obl	17:obl:de	_
+20	ocorreram	ocorrer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+21	duas	dois	NUM	_	Gender=Fem|NumType=Card	22	nummod	22:nummod	_
+22	vezes	vez	NOUN	_	Gender=Fem|Number=Plur	20	obl	20:obl	SpaceAfter=No
+23	.	.	PUNCT	_	_	20	punct	20:punct	_
+
+# sent_id = S0026
+# text = A artista conta duvidou de sua própria sanidade: Achei que eu estava tendo alucinações, mas então aconteceu novamente.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	artista	artista	NOUN	_	Number=Sing	4	nsubj	4:nsubj	_
+3	conta	contar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	dep	2:dep	_
+4	duvidou	duvidar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	de	de	ADP	_	_	8	case	8:case	_
+6	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	8	det	8:det	_
+7	própria	próprio	DET	_	Gender=Fem|Number=Sing|PronType=Dem	8	det	8:det	_
+8	sanidade	sanidade	NOUN	_	Gender=Fem|Number=Sing	4	obl	4:obl:de	SpaceAfter=No
+9	:	:	PUNCT	_	_	10	punct	10:punct	_
+10	Achei	achar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	4	parataxis	4:parataxis	_
+11	que	que	SCONJ	_	_	14	mark	14:mark	_
+12	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	14	nsubj	14:nsubj	_
+13	estava	estar	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	14	aux	14:aux	_
+14	tendo	ter	VERB	_	VerbForm=Ger	10	ccomp	10:ccomp	_
+15	alucinações	alucinação	NOUN	_	Gender=Fem|Number=Plur	14	obj	14:obj	SpaceAfter=No
+16	,	,	PUNCT	_	_	19	punct	19:punct	_
+17	mas	mas	CCONJ	_	_	19	cc	19:cc	_
+18	então	então	ADV	_	_	19	advmod	19:advmod	_
+19	aconteceu	acontecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	conj	4:parataxis|10:conj:mas	_
+20	novamente	novamente	ADV	_	_	19	advmod	19:advmod	SpaceAfter=No
+21	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0028
+# text = Seu rosto mudou da forma humana para a forma de réptil.
+1	Seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	det	2:det	_
+2	rosto	rosto	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_
+3	mudou	mudar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+4-5	da	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	forma	forma	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:de	_
+7	humana	humano	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	_
+8	para	para	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	forma	forma	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:para	_
+11	de	de	ADP	_	_	12	case	12:case	_
+12	réptil	réptil	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:de	SpaceAfter=No
+13	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0030
+# text = Pude ver seus dentes pontudos brilhando na tela do computador. .
+1	Pude	poder	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	ver	ver	VERB	_	VerbForm=Inf	1	xcomp	1:xcomp	_
+3	seus	seu	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes|PronType=Prs	4	det	4:det	_
+4	dentes	dente	NOUN	_	Gender=Masc|Number=Plur	2	obj	2:obj|6:nsubj	_
+5	pontudos	pontudo	ADJ	_	Gender=Masc|Number=Plur	4	amod	4:amod	_
+6	brilhando	brilhar	VERB	_	VerbForm=Ger	2	xcomp	2:xcomp	_
+7-8	na	_	_	_	_	_	_	_	_
+7	em	em	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	tela	tela	NOUN	_	Gender=Fem|Number=Sing	6	obl	6:obl:em	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	computador	computador	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:de	SpaceAfter=No
+13	.	.	PUNCT	_	_	1	punct	1:punct	_
+14	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0032
+# text = Recentemente, Britney deu uma entrevista para o jornal israelense Yediot Ahronot afirmando que sua vida saiu de controle durante o tempo em que conviveu "virtualmente" com o príncipe sugerindo que ela poderia ter sido controlada pelos Illuminati.
+1	Recentemente	recentemente	ADV	_	_	4	advmod	4:advmod	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	1:punct	_
+3	Britney	Britney	PROPN	_	_	4	nsubj	4:nsubj	_
+4	deu	dar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	entrevista	entrevista	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+7	para	para	ADP	_	_	9	case	9:case	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	jornal	jornal	NOUN	_	Gender=Masc|Number=Sing	4	obl	4:obl:para	_
+10	israelense	israelense	ADJ	_	Number=Sing	9	amod	9:amod	_
+11	Yediot	Yediot	PROPN	_	_	9	nmod	9:nmod	_
+12	Ahronot	Ahronot	PROPN	_	_	11	flat:name	11:flat:name	_
+13	afirmando	afirmar	VERB	_	VerbForm=Ger	4	advcl	4:advcl	_
+14	que	que	SCONJ	_	_	17	mark	17:mark	_
+15	sua	seu	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	16	det	16:det	_
+16	vida	vida	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	17:nsubj	_
+17	saiu	sair	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	ccomp	13:ccomp	_
+18	de	de	ADP	_	_	19	case	19:case	_
+19	controle	controle	NOUN	_	Gender=Masc|Number=Sing	17	obl	17:obl:de	_
+20	durante	durante	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	tempo	tempo	NOUN	_	Gender=Masc|Number=Sing	17	obl	17:obl:durante|25:obl:em	_
+23	em	em	ADP	_	_	24	case	24:case	_
+24	que	que	PRON	_	PronType=Rel	25	obl	22:ref	_
+25	conviveu	conviver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	acl:relcl	22:acl:relcl	_
+26	"	"	PUNCT	_	_	27	punct	27:punct	SpaceAfter=No
+27	virtualmente	virtualmente	ADV	_	_	25	advmod	25:advmod	SpaceAfter=No
+28	"	"	PUNCT	_	_	27	punct	27:punct	_
+29	com	com	ADP	_	_	31	case	31:case	_
+30	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_
+31	príncipe	príncipe	NOUN	_	Gender=Masc|Number=Sing	25	obl	25:obl:com	_
+32	sugerindo	sugerir	VERB	_	VerbForm=Ger	25	advcl	25:advcl	_
+33	que	que	SCONJ	_	_	35	mark	35:mark	_
+34	ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	35	nsubj	35:nsubj|38:nsubj:pass	_
+35	poderia	poder	VERB	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	32	ccomp	32:ccomp	_
+36	ter	ter	AUX	_	VerbForm=Inf	38	aux	38:aux	_
+37	sido	ser	AUX	_	Gender=Masc|Number=Sing|VerbForm=Part	38	aux:pass	38:aux:pass	_
+38	controlada	controlar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	35	xcomp	35:xcomp	_
+39-40	pelos	_	_	_	_	_	_	_	_
+39	por	por	ADP	_	_	41	case	41:case	_
+40	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	41	det	41:det	_
+41	Illuminati	Illuminati	PROPN	_	_	38	obl:agent	38:obl:agent	SpaceAfter=No
+42	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0034
+# text = Ele era muito carinhoso, mas isso fazia parte da armadilha.
+1	Ele	ele	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	4:nsubj	_
+2	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	cop	4:cop	_
+3	muito	muito	ADV	_	_	4	advmod	4:advmod	_
+4	carinhoso	carinhoso	ADJ	_	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No
+5	,	,	PUNCT	_	_	8	punct	8:punct	_
+6	mas	mas	CCONJ	_	_	8	cc	8:cc	_
+7	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	8	nsubj	8:nsubj	_
+8	fazia	fazer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	conj	4:conj:mas	_
+9	parte	parte	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	_
+10-11	da	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	armadilha	armadilha	NOUN	_	Gender=Fem|Number=Sing	8	obl	8:obl:de	SpaceAfter=No
+13	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0036
+# text = Eu estava sendo atraída para algo que eu nunca poderia escapar Minha vida passou a ser controlada por muitas pessoas e quando você não está no controle, tudo desaba [...] a carreira, os shows passaram para um segundo plano [...] eu não sabia o que fazer comigo mesma.
+1	Eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj:pass	4:nsubj:pass	_
+2	estava	estar	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	4	aux	4:aux	_
+3	sendo	ser	AUX	_	VerbForm=Ger	4	aux:pass	4:aux:pass	_
+4	atraída	atraír	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	14	dep	14:dep	_
+5	para	para	ADP	_	_	6	case	6:case	_
+6	algo	algo	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	4	obl	4:obl:para|11:obj	_
+7	que	que	PRON	_	PronType=Rel	10	obj	6:ref	_
+8	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	10	nsubj	10:nsubj|11:nsubj	_
+9	nunca	nunca	ADV	_	_	10	advmod	10:advmod	_
+10	poderia	poder	VERB	_	Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin	6	acl:relcl	6:acl:relcl	_
+11	escapar	escapar	VERB	_	VerbForm=Inf	10	xcomp	10:xcomp	_
+12	Minha	meu	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	13	det	13:det	_
+13	vida	vida	NOUN	_	Gender=Fem|Number=Sing	14	nsubj	14:nsubj|17:nsubj:pass	_
+14	passou	passar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+15	a	a	ADP	_	_	17	mark	17:mark	_
+16	ser	ser	AUX	_	VerbForm=Inf	17	aux:pass	17:aux:pass	_
+17	controlada	controlar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	14	xcomp	14:xcomp	_
+18	por	por	ADP	_	_	20	case	20:case	_
+19	muitas	muito	ADJ	_	Gender=Fem|Number=Plur	20	amod	20:amod	_
+20	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	17	obl:agent	17:obl:agent	_
+21	e	e	CCONJ	_	_	31	cc	31:cc	_
+22	quando	quando	SCONJ	_	_	28	mark	28:mark	_
+23	você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	28	nsubj	28:nsubj	_
+24	não	não	ADV	_	_	28	advmod	28:advmod	_
+25	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	cop	28:cop	_
+26-27	no	_	_	_	_	_	_	_	_
+26	em	em	ADP	_	_	28	case	28:case	_
+27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	28:det	_
+28	controle	controle	NOUN	_	Gender=Masc|Number=Sing	31	advcl	31:advcl:quando|41:advcl:quando	SpaceAfter=No
+29	,	,	PUNCT	_	_	28	punct	28:punct	_
+30	tudo	tudo	PRON	_	PronType=Ind	31	nsubj	31:nsubj	_
+31	desaba	desabar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	4:conj:e	_
+32	[	[	PUNCT	_	_	33	punct	33:punct	SpaceAfter=No
+33	.	.	PUNCT	_	_	37	parataxis	37:parataxis	SpaceAfter=No
+34	..	..	PUNCT	_	_	33	punct	33:punct	SpaceAfter=No
+35	]	]	PUNCT	_	_	37	punct	37:punct	_
+36	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	37:det	_
+37	carreira	carreira	NOUN	_	Gender=Fem|Number=Sing	31	obj	31:obj	SpaceAfter=No
+38	,	,	PUNCT	_	_	40	punct	40:punct	_
+39	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	40	det	40:det	_
+40	shows	show	NOUN	_	Gender=Masc|Number=Plur	31	nsubj	31:nsubj	_
+41	passaram	passar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	31	conj	31:conj	_
+42	para	para	ADP	_	_	45	case	45:case	_
+43	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	45	det	45:det	_
+44	segundo	segundo	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	45	amod	45:amod	_
+45	plano	plano	NOUN	_	Gender=Masc|Number=Sing	41	obl	41:obl:para	_
+46	[	[	PUNCT	_	_	47	punct	47:punct	SpaceAfter=No
+47	.	.	PUNCT	_	_	52	parataxis	52:parataxis	SpaceAfter=No
+48	..	..	PUNCT	_	_	47	punct	47:punct	SpaceAfter=No
+49	]	]	PUNCT	_	_	47	punct	47:punct	_
+50	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	52	nsubj	52:nsubj	_
+51	não	não	ADV	_	_	52	advmod	52:advmod	_
+52	sabia	saber	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	4	parataxis	4:parataxis	_
+53	o	o	PRON	_	ExtPos=PRON|Gender=Masc|Number=Sing|Person=3|PronType=Dem	55	obj	55:obj	_
+54	que	que	PRON	_	PronType=Int	53	fixed	53:fixed	_
+55	fazer	fazer	VERB	_	VerbForm=Inf	52	ccomp	52:ccomp	_
+56-57	comigo	_	_	_	_	_	_	_	_
+56	com	com	ADP	_	_	57	case	57:case	_
+57	mim	mim	PRON	_	Case=Dat|Number=Sing|Person=1|PronType=Prs	55	obl	55:obl:com	_
+58	mesma	mesmo	DET	_	Gender=Fem|Number=Sing|PronType=Dem	57	det	57:det	SpaceAfter=No
+59	.	.	PUNCT	_	_	14	punct	14:punct	_
+
+# sent_id = S0038
+# text = Ela conta que olhou para trás e pensou: "Que diabos eu estava fazendo com minha vida"?
+1	Ela	ele	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	2:nsubj	_
+2	conta	contar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	que	que	SCONJ	_	_	4	mark	4:mark|8:mark	_
+4	olhou	olhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	ccomp	2:ccomp	_
+5	para	para	ADP	_	_	6	case	6:case	_
+6	trás	trás	ADV	_	_	4	advmod	4:advmod	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	pensou	pensar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	conj	2:ccomp|4:conj:e	SpaceAfter=No
+9	:	:	PUNCT	_	_	15	punct	15:punct	_
+10	"	"	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+11	Que	que	DET	_	PronType=Ind	12	det	12:det	_
+12	diabos	diabo	NOUN	_	Gender=Masc|Number=Plur	15	discourse	15:discourse	_
+13	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	15	nsubj	15:nsubj	_
+14	estava	estar	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	15	aux	15:aux	_
+15	fazendo	fazer	VERB	_	VerbForm=Ger	8	ccomp:speech	8:ccomp:speech	_
+16	com	com	ADP	_	_	18	case	18:case	_
+17	minha	meu	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	18	det	18:det	_
+18	vida	vida	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl:com	SpaceAfter=No
+19	"	"	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+20	?	?	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0039
+# text = leia também:
+1	leia	ler	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	também	também	ADV	_	_	1	advmod	1:advmod	SpaceAfter=No
+3	:	:	PUNCT	_	_	1	punct	1:punct	_

@@ -1,0 +1,386 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Um vídeo alarmante está circulando nas redes sociais, mostrando um confronto violento entre militares, onde um sargento supostamente dispara contra um coronel.
+1	Um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+3	alarmante	alarmante	ADJ	_	Number=Sing	2	amod	2:amod	_
+4	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	5:aux	_
+5	circulando	circular	VERB	_	VerbForm=Ger	0	root	0:root	_
+6-7	nas	_	_	_	_	_	_	_	_
+6	em	em	ADP	_	_	8	case	8:case	_
+7	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	8:det	_
+8	redes	rede	NOUN	_	Gender=Fem|Number=Plur	5	obl	5:obl:em	_
+9	sociais	social	ADJ	_	Number=Plur	8	amod	8:amod	SpaceAfter=No
+10	,	,	PUNCT	_	_	11	punct	11:punct	_
+11	mostrando	mostrar	VERB	_	VerbForm=Ger	5	advcl	5:advcl	_
+12	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	confronto	confronto	NOUN	_	Gender=Masc|Number=Sing	11	obj	11:obj|22:obl	_
+14	violento	violento	ADJ	_	Gender=Masc|Number=Sing	13	amod	13:amod	_
+15	entre	entre	ADP	_	_	16	case	16:case	_
+16	militares	militar	NOUN	_	Number=Plur	13	nmod	13:nmod:entre	SpaceAfter=No
+17	,	,	PUNCT	_	_	22	punct	22:punct	_
+18	onde	onde	ADV	_	_	22	advmod	13:ref	_
+19	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	sargento	sargento	NOUN	_	Gender=Masc|Number=Sing	22	nsubj	22:nsubj	_
+21	supostamente	supostamente	ADV	_	_	22	advmod	22:advmod	_
+22	dispara	disparar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	acl:relcl	13:acl:relcl	_
+23	contra	contra	ADP	_	_	25	case	25:case	_
+24	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	coronel	coronel	NOUN	_	Gender=Masc|Number=Sing	22	obl	22:obl:contra	SpaceAfter=No
+26	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0003
+# text = A legenda que acompanha o vídeo afirma: Revolução na Venezuela! Militares se recusam a continuar o regime de Maduro e maltratar o povo que está morrendo de fome.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	legenda	legenda	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	4:nsubj|7:nsubj	_
+3	que	que	PRON	_	PronType=Rel	4	nsubj	2:ref	_
+4	acompanha	acompanhar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7	afirma	afirmar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+8	:	:	PUNCT	_	_	9	punct	9:punct	_
+9	Revolução	revolução	NOUN	_	Gender=Fem|Number=Sing	7	parataxis	7:parataxis	_
+10-11	na	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	Venezuela	Venezuela	PROPN	_	_	9	nmod	9:nmod:em	SpaceAfter=No
+13	!	!	PUNCT	_	_	9	punct	9:punct	_
+14	Militares	militar	NOUN	_	Number=Plur	16	nsubj	16:nsubj|18:nsubj|24:nsubj	_
+15	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	16	expl	16:expl	_
+16	recusam	recusar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	parataxis	7:parataxis	_
+17	a	a	ADP	_	_	18	mark	18:mark|24:mark	_
+18	continuar	continuar	VERB	_	VerbForm=Inf	16	xcomp	16:xcomp	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	regime	regime	NOUN	_	Gender=Masc|Number=Sing	18	obj	18:obj	_
+21	de	de	ADP	_	_	22	case	22:case	_
+22	Maduro	Maduro	PROPN	_	_	20	nmod	20:nmod:de	_
+23	e	e	CCONJ	_	_	24	cc	24:cc	_
+24	maltratar	maltratar	VERB	_	VerbForm=Inf	18	conj	16:xcomp|18:conj:e	_
+25	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	26:det	_
+26	povo	povo	NOUN	_	Gender=Masc|Number=Sing	24	obj	24:obj|29:nsubj	_
+27	que	que	PRON	_	PronType=Rel	29	nsubj	26:ref	_
+28	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	aux	29:aux	_
+29	morrendo	morrer	VERB	_	VerbForm=Ger	26	acl:relcl	26:acl:relcl	_
+30	de	de	ADP	_	_	31	case	31:case	_
+31	fome	fome	NOUN	_	Gender=Fem|Number=Sing	29	obl	29:obl:de	SpaceAfter=No
+32	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0005
+# text = O caos se instaurou nas fileiras da Guarda Bolivariana.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	caos	caos	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+3	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	4	expl	4:expl	_
+4	instaurou	instaurar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+5-6	nas	_	_	_	_	_	_	_	_
+5	em	em	ADP	_	_	7	case	7:case	_
+6	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	7:det	_
+7	fileiras	fileira	NOUN	_	Gender=Fem|Number=Plur	4	obl	4:obl:em	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	Guarda	Guarda	PROPN	_	_	7	nmod	7:nmod:de	_
+11	Bolivariana	Bolivariana	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+12	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0007
+# text = Sargento atirou em coronel ao tentar impedir a repressão brutal.
+1	Sargento	sargento	NOUN	_	Gender=Masc|Number=Sing	2	nsubj	2:nsubj	_
+2	atirou	atirar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+3	em	em	ADP	_	_	4	case	4:case	_
+4	coronel	coronel	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:em	_
+5-6	ao	_	_	_	_	_	_	_	_
+5	a	a	ADP	_	ExtPos=SCONJ	7	mark	7:mark	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	fixed	5:fixed	_
+7	tentar	tentar	VERB	_	VerbForm=Inf	2	advcl	2:advcl:a_o	_
+8	impedir	impedir	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	repressão	repressão	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	_
+11	brutal	brutal	ADJ	_	Number=Sing	10	amod	10:amod	SpaceAfter=No
+12	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0009
+# text = A Globo não mostra isso, e o governo venezuelano está desesperado para impedir que essas imagens se espalhem!
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Globo	Globo	PROPN	_	_	4	nsubj	4:nsubj	_
+3	não	não	ADV	_	_	4	advmod	4:advmod	_
+4	mostra	mostrar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+5	isso	isso	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	4	obj	4:obj	SpaceAfter=No
+6	,	,	PUNCT	_	_	12	punct	12:punct	_
+7	e	e	CCONJ	_	_	12	cc	12:cc	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	governo	governo	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	12:nsubj	_
+10	venezuelano	venezuelano	ADJ	_	Gender=Masc|Number=Sing	9	amod	9:amod	_
+11	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	12:cop	_
+12	desesperado	desesperado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	4	conj	4:conj:e	_
+13	para	para	ADP	_	_	14	mark	14:mark	_
+14	impedir	impedir	VERB	_	VerbForm=Inf	12	advcl	12:advcl:para	_
+15	que	que	SCONJ	_	_	19	mark	19:mark	_
+16	essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	17	det	17:det	_
+17	imagens	imagem	NOUN	_	Gender=Fem|Number=Plur	19	nsubj	19:nsubj	_
+18	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	19	expl	19:expl	_
+19	espalhem	espalhar	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	ccomp	14:ccomp	SpaceAfter=No
+20	!	!	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0011
+# text = O vídeo, que parece ser uma gravação recente, apresenta uma discussão acalorada entre dois homens uniformizados, com o disparo ocorrendo em meio à confusão.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	5:nsubj|8:nsubj|11:nsubj	SpaceAfter=No
+3	,	,	PUNCT	_	_	5	punct	5:punct	_
+4	que	que	PRON	_	PronType=Rel	5	nsubj	2:ref	_
+5	parece	parecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_
+6	ser	ser	AUX	_	VerbForm=Inf	8	cop	8:cop	_
+7	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	gravação	gravação	NOUN	_	Gender=Fem|Number=Sing	5	xcomp	5:xcomp	_
+9	recente	recente	ADJ	_	Number=Sing	8	amod	8:amod	SpaceAfter=No
+10	,	,	PUNCT	_	_	5	punct	5:punct	_
+11	apresenta	apresentar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+12	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	discussão	discussão	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	_
+14	acalorada	acalorado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	13	amod	13:amod	_
+15	entre	entre	ADP	_	_	17	case	17:case	_
+16	dois	dois	NUM	_	Gender=Masc|NumType=Card	17	nummod	17:nummod	_
+17	homens	homem	NOUN	_	Gender=Masc|Number=Plur	13	nmod	13:nmod:entre	_
+18	uniformizados	uniformizado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	17	amod	17:amod	SpaceAfter=No
+19	,	,	PUNCT	_	_	23	punct	23:punct	_
+20	com	com	ADP	_	_	22	case	22:case	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	disparo	disparo	NOUN	_	Gender=Masc|Number=Sing	13	nmod	13:nmod:com	_
+23	ocorrendo	ocorrer	VERB	_	VerbForm=Ger	22	acl	22:acl	_
+24	em	em	ADP	_	ExtPos=ADP	28	case	28:case	_
+25	meio	meio	NOUN	_	Gender=Masc|Number=Sing	24	fixed	24:fixed	_
+26-27	à	_	_	_	_	_	_	_	_
+26	a	a	ADP	_	_	24	fixed	24:fixed	_
+27	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+28	confusão	confusão	NOUN	_	Gender=Fem|Number=Sing	23	obl	23:obl:em_meio_a	SpaceAfter=No
+29	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0013
+# text = A mensagem sugere que o incidente é um reflexo da insatisfação crescente dentro das forças armadas da Venezuela, alimentando rumores de uma possível ruptura interna e deserção em massa.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	mensagem	mensagem	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj	_
+3	sugere	sugerir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	que	que	SCONJ	_	_	9	mark	9:mark	_
+5	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_
+6	incidente	incidente	NOUN	_	Number=Sing	9	nsubj	9:nsubj	_
+7	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	9:cop	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	reflexo	reflexo	NOUN	_	Gender=Masc|Number=Sing	3	ccomp	3:ccomp	_
+10-11	da	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_
+12	insatisfação	insatisfação	NOUN	_	Gender=Fem|Number=Sing	9	nmod	9:nmod:de	_
+13	crescente	crescente	ADJ	_	Number=Sing	12	amod	12:amod	_
+14	dentro	dentro	ADV	_	_	12	advmod	12:advmod	_
+15-16	das	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	17:det	_
+17	forças	força	NOUN	_	Gender=Fem|Number=Plur	14	obl	14:obl:de	_
+18	armadas	armado	ADJ	_	Gender=Fem|Number=Plur|VerbForm=Part	17	amod	17:amod	_
+19-20	da	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	21:det	_
+21	Venezuela	Venezuela	PROPN	_	_	17	nmod	17:nmod:de	SpaceAfter=No
+22	,	,	PUNCT	_	_	23	punct	23:punct	_
+23	alimentando	alimentar	VERB	_	VerbForm=Ger	9	advcl	9:advcl	_
+24	rumores	rumor	NOUN	_	Gender=Masc|Number=Plur	23	obj	23:obj	_
+25	de	de	ADP	_	_	28	case	28:case|31:case	_
+26	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	28	det	28:det	_
+27	possível	possível	ADJ	_	Number=Sing	28	amod	28:amod	_
+28	ruptura	ruptura	NOUN	_	Gender=Fem|Number=Sing	24	nmod	24:nmod:de	_
+29	interna	interno	ADJ	_	Gender=Fem|Number=Sing	28	amod	28:amod	_
+30	e	e	CCONJ	_	_	31	cc	31:cc	_
+31	deserção	deserção	NOUN	_	Gender=Fem|Number=Sing	28	conj	24:nmod:de|28:conj:e	_
+32	em	em	ADP	_	_	33	case	33:case	_
+33	massa	massa	NOUN	_	Gender=Fem|Number=Sing	31	nmod	31:nmod:em	SpaceAfter=No
+34	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0015
+# text = No entanto, vale ressaltar que essa narrativa é falsa.
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	ExtPos=CCONJ	5	cc	5:cc	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	1:fixed	_
+3	entanto	entanto	NOUN	_	Gender=Masc|Number=Sing	1	fixed	1:fixed	SpaceAfter=No
+4	,	,	PUNCT	_	_	1	punct	1:punct	_
+5	vale	valer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+6	ressaltar	ressaltar	VERB	_	VerbForm=Inf	5	xcomp	5:xcomp	_
+7	que	que	SCONJ	_	_	11	mark	11:mark	_
+8	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	9	det	9:det	_
+9	narrativa	narrativa	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	11:nsubj	_
+10	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	11:cop	_
+11	falsa	falso	ADJ	_	Gender=Fem|Number=Sing	6	ccomp	6:ccomp	SpaceAfter=No
+12	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0017
+# text = O vídeo original foi gravado em 18 de fevereiro de 219 e pertence a uma campanha interna do Exército da Colômbia chamada "Yo Tengo el Control".
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	5	nsubj:pass	5:nsubj:pass|13:nsubj	_
+3	original	original	ADJ	_	Number=Sing	2	amod	2:amod	_
+4	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	aux:pass	5:aux:pass	_
+5	gravado	gravar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+6	em	em	ADP	_	_	7	case	7:case	_
+7	18	18	NUM	_	NumType=Card	5	obl	5:obl:em	_
+8	de	de	ADP	_	_	9	case	9:case	_
+9	fevereiro	fevereiro	NOUN	_	Gender=Masc|Number=Sing	7	nmod	7:nmod:de	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	219	219	NUM	_	NumType=Card	9	nmod	9:nmod:de	_
+12	e	e	CCONJ	_	_	13	cc	13:cc	_
+13	pertence	pertencer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	5:conj:e	_
+14	a	a	ADP	_	_	16	case	16:case	_
+15	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	campanha	campanha	NOUN	_	Gender=Fem|Number=Sing	13	obl	13:obl:a	_
+17	interna	interno	ADJ	_	Gender=Fem|Number=Sing	16	amod	16:amod	_
+18-19	do	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	Exército	Exército	PROPN	_	_	16	nmod	16:nmod:de	_
+21-22	da	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	Colômbia	Colômbia	PROPN	_	_	20	flat:name	20:flat:name	_
+24	chamada	chamar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	16	acl	16:acl	_
+25	"	"	PUNCT	_	_	26	punct	26:punct	SpaceAfter=No
+26	Yo	Yo	PROPN	_	_	24	obj	24:obj	_
+27	Tengo	Tengo	PROPN	_	_	26	flat:name	26:flat:name	_
+28	el	el	PROPN	_	_	26	flat:name	26:flat:name	_
+29	Control	Control	PROPN	_	_	26	flat:name	26:flat:name	SpaceAfter=No
+30	"	"	PUNCT	_	_	26	punct	26:punct	SpaceAfter=No
+31	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0019
+# text = A iniciativa visa promover a consciência sobre a importância do autocontrole e do autocuidado entre os militares colombianos.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	iniciativa	iniciativa	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj|4:nsubj	_
+3	visa	visar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	promover	promover	VERB	_	VerbForm=Inf	3	xcomp	3:xcomp	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	consciência	consciência	NOUN	_	Gender=Fem|Number=Sing	4	obj	4:obj	_
+7	sobre	sobre	ADP	_	_	9	case	9:case	_
+8	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	importância	importância	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:sobre	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	autocontrole	autocontrole	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:de	_
+13	e	e	CCONJ	_	_	16	cc	16:cc	_
+14-15	do	_	_	_	_	_	_	_	_
+14	de	de	ADP	_	_	16	case	16:case	_
+15	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_
+16	autocuidado	autocuidado	NOUN	_	Gender=Masc|Number=Sing	12	conj	9:nmod:de|12:conj:e	_
+17	entre	entre	ADP	_	_	19	case	19:case	_
+18	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	19:det	_
+19	militares	militar	NOUN	_	Number=Plur	12	nmod	12:nmod:entre|16:nmod:entre	_
+20	colombianos	colombiano	ADJ	_	Gender=Masc|Number=Plur	19	amod	19:amod	SpaceAfter=No
+21	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0021
+# text = As Forças Armadas da Colômbia emitiram um comunicado oficial, rejeitando veementemente a propagação dessa informação manipulada.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	Forças	Forças	PROPN	_	_	7	nsubj	7:nsubj	_
+3	Armadas	Armadas	PROPN	_	_	2	flat:name	2:flat:name	_
+4-5	da	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	Colômbia	Colômbia	PROPN	_	_	2	nmod	2:nmod:de	_
+7	emitiram	emitir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+8	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	comunicado	comunicado	NOUN	_	Gender=Masc|Number=Sing	7	obj	7:obj	_
+10	oficial	oficial	ADJ	_	Number=Sing	9	amod	9:amod	SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	rejeitando	rejeitar	VERB	_	VerbForm=Ger	7	advcl	7:advcl	_
+13	veementemente	veementemente	ADV	_	_	12	advmod	12:advmod	_
+14	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	15:det	_
+15	propagação	propagação	NOUN	_	Gender=Fem|Number=Sing	12	obj	12:obj	_
+16-17	dessa	_	_	_	_	_	_	_	_
+16	de	de	ADP	_	_	18	case	18:case	_
+17	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	18	det	18:det	_
+18	informação	informação	NOUN	_	Gender=Fem|Number=Sing	15	nmod	15:nmod:de	_
+19	manipulada	manipular	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	18	acl	18:acl	SpaceAfter=No
+20	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0023
+# text = "Pessoas inescrupulosas manipularam este conteúdo para manchar a reputação do Exército Nacional e criar instabilidade", declararam.
+1	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+2	Pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	4	nsubj	4:nsubj	_
+3	inescrupulosas	inescrupuloso	ADJ	_	Gender=Fem|Number=Plur	2	amod	2:amod	_
+4	manipularam	manipular	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	20	ccomp:speech	20:ccomp:speech	_
+5	este	este	DET	_	Gender=Masc|Number=Sing|PronType=Dem	6	det	6:det	_
+6	conteúdo	conteúdo	NOUN	_	Gender=Masc|Number=Sing	4	obj	4:obj	_
+7	para	para	ADP	_	_	8	mark	8:mark|16:mark	_
+8	manchar	manchar	VERB	_	VerbForm=Inf	4	advcl	4:advcl:para	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	reputação	reputação	NOUN	_	Gender=Fem|Number=Sing	8	obj	8:obj	_
+11-12	do	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	Exército	Exército	PROPN	_	_	10	nmod	10:nmod:de	_
+14	Nacional	Nacional	PROPN	_	_	13	flat:name	13:flat:name	_
+15	e	e	CCONJ	_	_	16	cc	16:cc	_
+16	criar	criar	VERB	_	VerbForm=Inf	8	conj	4:advcl:para|8:conj:e	_
+17	instabilidade	instabilidade	NOUN	_	Gender=Fem|Number=Sing	16	obj	16:obj	SpaceAfter=No
+18	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+19	,	,	PUNCT	_	_	4	punct	4:punct	_
+20	declararam	declarar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+21	.	.	PUNCT	_	_	20	punct	20:punct	_
+
+# sent_id = S0025
+# text = Pedimos à população que verifique a autenticidade dos conteúdos antes de compartilhá-los para evitar a disseminação de desinformação.
+1	Pedimos	pedir	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2-3	à	_	_	_	_	_	_	_	_
+2	a	a	ADP	_	_	4	case	4:case	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	população	população	NOUN	_	Gender=Fem|Number=Sing	1	obl	1:obl:a	_
+5	que	que	SCONJ	_	_	6	mark	6:mark	_
+6	verifique	verificar	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	1:ccomp	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	autenticidade	autenticidade	NOUN	_	Gender=Fem|Number=Sing	6	obj	6:obj	_
+9-10	dos	_	_	_	_	_	_	_	_
+9	de	de	ADP	_	_	11	case	11:case	_
+10	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	11:det	_
+11	conteúdos	conteúdo	NOUN	_	Gender=Masc|Number=Plur	8	nmod	8:nmod:de	_
+12	antes	antes	ADV	_	_	6	advmod	6:advmod	_
+13	de	de	ADP	_	_	14	mark	14:mark	_
+14-15	compartilhá-los	_	_	_	_	_	_	_	_
+14	compartilhar	compartilhar	VERB	_	VerbForm=Inf	12	acl	12:acl:de	_
+15	los	lo	PRON	_	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	14	obj	14:obj	_
+16	para	para	ADP	_	_	17	mark	17:mark	_
+17	evitar	evitar	VERB	_	VerbForm=Inf	6	advcl	6:advcl:para	_
+18	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+19	disseminação	disseminação	NOUN	_	Gender=Fem|Number=Sing	17	obj	17:obj	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	desinformação	desinformação	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:de	SpaceAfter=No
+22	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0029
+# text = Ainda assim, o vídeo continua a viralizar, impulsionado por uma narrativa política que se aproveita da crise humanitária na Venezuela para gerar ainda mais controvérsia.
+1	Ainda	ainda	ADV	_	ExtPos=ADV	6	advmod	6:advmod	_
+2	assim	assim	ADV	_	_	1	fixed	1:fixed	SpaceAfter=No
+3	,	,	PUNCT	_	_	1	punct	1:punct	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	vídeo	vídeo	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj|8:nsubj	_
+6	continua	continuar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	a	a	ADP	_	_	8	mark	8:mark	_
+8	viralizar	viralizar	VERB	_	VerbForm=Inf	6	xcomp	6:xcomp	SpaceAfter=No
+9	,	,	PUNCT	_	_	10	punct	10:punct	_
+10	impulsionado	impulsionar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	8	advcl	8:advcl	_
+11	por	por	ADP	_	_	13	case	13:case	_
+12	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	narrativa	narrativa	NOUN	_	Gender=Fem|Number=Sing	10	obl:agent	10:obl:agent|17:nsubj	_
+14	política	político	ADJ	_	Gender=Fem|Number=Sing	13	amod	13:amod	_
+15	que	que	PRON	_	PronType=Rel	17	nsubj	13:ref	_
+16	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	17	expl	17:expl	_
+17	aproveita	aproveitar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	acl:relcl	13:acl:relcl	_
+18-19	da	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	crise	crise	NOUN	_	Gender=Fem|Number=Sing	17	obl	17:obl:de	_
+21	humanitária	humanitário	ADJ	_	Gender=Fem|Number=Sing	20	amod	20:amod	_
+22-23	na	_	_	_	_	_	_	_	_
+22	em	em	ADP	_	_	24	case	24:case	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	Venezuela	Venezuela	PROPN	_	_	20	nmod	20:nmod:em	_
+25	para	para	ADP	_	_	26	mark	26:mark	_
+26	gerar	gerar	VERB	_	VerbForm=Inf	17	advcl	17:advcl:para	_
+27	ainda	ainda	ADV	_	_	29	advmod	29:advmod	_
+28	mais	mais	DET	_	PronType=Ind	29	det	29:det	_
+29	controvérsia	controvérsia	NOUN	_	Gender=Fem|Number=Sing	26	obj	26:obj	SpaceAfter=No
+30	.	.	PUNCT	_	_	6	punct	6:punct	_

@@ -1,0 +1,94 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = anvisa diz vacinas contra covid-19 têm mais de mil mortes o número é muito maior, tem pessoas que eu conheço não estão nessa lista.
+1	anvisa	anvisa	PROPN	_	_	2	nsubj	2:nsubj	_
+2	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	vacinas	vacina	NOUN	_	Gender=Fem|Number=Plur	2	obj	2:obj	_
+4	contra	contra	ADP	_	_	5	case	5:case	_
+5	covid-19	covid-19	NUM	_	NumType=Card	3	nmod	3:nmod:contra	_
+6	têm	ter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	2:ccomp	_
+7	mais	mais	ADV	_	ExtPos=ADV	9	advmod	9:advmod	_
+8	de	de	ADP	_	_	7	fixed	7:fixed	_
+9	mil	mil	NUM	_	NumType=Card	10	nummod	10:nummod	_
+10	mortes	morte	NOUN	_	Gender=Fem|Number=Plur	6	obj	6:obj	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	número	número	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	15:nsubj	_
+13	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	15:cop	_
+14	muito	muito	ADV	_	_	15	advmod	15:advmod	_
+15	maior	maior	ADJ	_	Number=Sing	2	parataxis	2:parataxis	SpaceAfter=No
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	parataxis	15:parataxis	_
+18	pessoas	pessoa	NOUN	_	Gender=Fem|Number=Plur	17	obj	17:obj|21:obj	_
+19	que	que	PRON	_	PronType=Rel	21	obj	18:ref	_
+20	eu	eu	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	21	nsubj	21:nsubj	_
+21	conheço	conhecer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	18	acl:relcl	18:acl:relcl	_
+22	não	não	ADV	_	_	26	advmod	26:advmod	_
+23	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	26	cop	26:cop	_
+24-25	nessa	_	_	_	_	_	_	_	_
+24	em	em	ADP	_	_	26	case	26:case	_
+25	essa	esse	DET	_	Gender=Fem|Number=Sing|PronType=Dem	26	det	26:det	_
+26	lista	lista	NOUN	_	Gender=Fem|Number=Sing	17	ccomp	17:ccomp	SpaceAfter=No
+27	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0003
+# text = vacinas para covid já têm 1.144 mortes suspeitos e mais de 15 mil reações adversas, informa anvisa.
+1	vacinas	vacina	NOUN	_	Gender=Fem|Number=Plur	5	nsubj	5:nsubj	_
+2	para	para	ADP	_	_	3	case	3:case	_
+3	covid	covid	NOUN	_	Foreign=Yes	1	nmod	1:nmod:para	_
+4	já	já	ADV	_	_	5	advmod	5:advmod	_
+5	têm	ter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	ccomp:speech	17:ccomp:speech	_
+6	1.144	1.144	NUM	_	NumType=Card	7	nummod	7:nummod	_
+7	mortes	morte	NOUN	_	Gender=Fem|Number=Plur	5	obj	5:obj	_
+8	suspeitos	suspeito	ADJ	_	Gender=Masc|Number=Plur	7	amod	7:amod	_
+9	e	e	CCONJ	_	_	14	cc	14:cc	_
+10	mais	mais	ADV	_	ExtPos=ADV	12	advmod	12:advmod	_
+11	de	de	ADP	_	_	10	fixed	10:fixed	_
+12	15	15	NUM	_	NumType=Card	14	nummod	14:nummod	_
+13	mil	mil	NUM	_	NumType=Card	12	flat	12:flat	_
+14	reações	reação	NOUN	_	Gender=Fem|Number=Plur	7	conj	5:obj|7:conj:e	_
+15	adversas	adverso	ADJ	_	Gender=Fem|Number=Plur	14	amod	14:amod	SpaceAfter=No
+16	,	,	PUNCT	_	_	5	punct	5:punct	_
+17	informa	informar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+18	anvisa	anvisa	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	17:nsubj	SpaceAfter=No
+19	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0005
+# text = a coronavac aparece associada a 911 óbitos suspeitos e 3.625 casos de reações adversas.
+1	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	coronavac	coronavac	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	3:nsubj|4:nsubj	_
+3	aparece	aparecer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	associada	associado	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	3	xcomp	3:xcomp	_
+5	a	a	ADP	_	_	7	case	7:case|11:case	_
+6	911	911	NUM	_	NumType=Card	7	nummod	7:nummod	_
+7	óbitos	óbito	NOUN	_	Gender=Masc|Number=Plur	4	obl	4:obl:a	_
+8	suspeitos	suspeito	ADJ	_	Gender=Masc|Number=Plur	7	amod	7:amod	_
+9	e	e	CCONJ	_	_	11	cc	11:cc	_
+10	3.625	3.625	NUM	_	NumType=Card	11	nummod	11:nummod	_
+11	casos	caso	NOUN	_	Gender=Masc|Number=Plur	7	conj	4:obl:a|7:conj:e	_
+12	de	de	ADP	_	_	13	case	13:case	_
+13	reações	reação	NOUN	_	Gender=Fem|Number=Plur	11	nmod	11:nmod:de	_
+14	adversas	adverso	ADJ	_	Gender=Fem|Number=Plur	13	amod	13:amod	SpaceAfter=No
+15	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = já o “imunizante” da gigante farmacêutica astrazenica é responsável por 211 mortes suspeitas e 1.617 efeitos adversos.
+1	já	já	CCONJ	_	_	10	cc	10:cc	_
+2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	3:det	_
+3	“imunizante”	“imunizante”	ADJ	_	_	10	nsubj	10:nsubj	_
+4-5	da	_	_	_	_	_	_	_	_
+4	de	de	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	gigante	gigante	NOUN	_	Number=Sing	3	nmod	3:nmod:de	_
+7	farmacêutica	farmacêutico	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	_
+8	astrazenica	astrazenico	ADJ	_	Gender=Fem|Number=Sing	6	amod	6:amod	_
+9	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_
+10	responsável	responsável	ADJ	_	Number=Sing	0	root	0:root	_
+11	por	por	ADP	_	_	13	case	13:case|17:case	_
+12	211	211	NUM	_	NumType=Card	13	nummod	13:nummod	_
+13	mortes	morte	NOUN	_	Gender=Fem|Number=Plur	10	obl	10:obl:por	_
+14	suspeitas	suspeito	ADJ	_	Gender=Fem|Number=Plur	13	amod	13:amod	_
+15	e	e	CCONJ	_	_	17	cc	17:cc	_
+16	1.617	1.617	NUM	_	NumType=Card	17	nummod	17:nummod	_
+17	efeitos	efeito	NOUN	_	Gender=Masc|Number=Plur	13	conj	10:obl:por|13:conj:e	_
+18	adversos	adverso	ADJ	_	Gender=Masc|Number=Plur	17	amod	17:amod	SpaceAfter=No
+19	.	.	PUNCT	_	_	10	punct	10:punct	_

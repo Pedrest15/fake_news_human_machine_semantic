@@ -1,0 +1,304 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = "Aécio está angustiado, chora muito e afoga as mágoas no uísque" diz revista.
+1	"	"	PUNCT	_	_	4	punct	4:punct	SpaceAfter=No
+2	Aécio	Aécio	PROPN	_	_	4	nsubj	4:nsubj|6:nsubj|9:nsubj	_
+3	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+4	angustiado	angustiado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	16	ccomp:speech	16:ccomp:speech	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	chora	chorar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	4:conj:e|16:ccomp:speech	_
+7	muito	muito	ADV	_	_	6	advmod	6:advmod	_
+8	e	e	CCONJ	_	_	9	cc	9:cc	_
+9	afoga	afogar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	4:conj:e|16:ccomp:speech	_
+10	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	11:det	_
+11	mágoas	mágoa	NOUN	_	Gender=Fem|Number=Plur	9	obj	9:obj	_
+12-13	no	_	_	_	_	_	_	_	_
+12	em	em	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	uísque	uísque	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:em	SpaceAfter=No
+15	"	"	PUNCT	_	_	4	punct	4:punct	_
+16	diz	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+17	revista	revista	NOUN	_	Gender=Fem|Number=Sing	16	nsubj	16:nsubj	SpaceAfter=No
+18	.	.	PUNCT	_	_	16	punct	16:punct	_
+
+# sent_id = S0003
+# text = Após ser flagrado em negociações ilícitas, o senador afastado perdeu toda a credibilidade política.
+1	Após	após	ADP	_	_	3	mark	3:mark	_
+2	ser	ser	AUX	_	VerbForm=Inf	3	aux:pass	3:aux:pass	_
+3	flagrado	flagrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	11	advcl	11:advcl:após	_
+4	em	em	ADP	_	_	5	case	5:case	_
+5	negociações	negociação	NOUN	_	Gender=Fem|Number=Plur	3	obl	3:obl:em	_
+6	ilícitas	ilícito	ADJ	_	Gender=Fem|Number=Plur	5	amod	5:amod	SpaceAfter=No
+7	,	,	PUNCT	_	_	3	punct	3:punct	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	senador	senador	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	11:nsubj	_
+10	afastado	afastado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	9	amod	9:amod	_
+11	perdeu	perder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	toda	todo	DET	_	Gender=Fem|Number=Sing|PronType=Ind	14	det	14:det	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	credibilidade	credibilidade	NOUN	_	Gender=Fem|Number=Sing	11	obj	11:obj	_
+15	política	político	ADJ	_	Gender=Fem|Number=Sing	14	amod	14:amod	SpaceAfter=No
+16	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0005
+# text = Além do primo, que foi filmado recebendo R$ 2 milhões a mando de Joesley Batista, o tucano também teve que se calar diante da prisão da irmã.
+1	Além	além	ADV	_	_	22	advmod	22:advmod	_
+2-3	do	_	_	_	_	_	_	_	_
+2	de	de	ADP	_	_	4	case	4:case	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	primo	primo	NOUN	_	Gender=Masc|Number=Sing	1	obl	1:obl:de|8:nsubj:pass	SpaceAfter=No
+5	,	,	PUNCT	_	_	8	punct	8:punct	_
+6	que	que	PRON	_	PronType=Rel	8	nsubj:pass	4:ref	_
+7	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	aux:pass	8:aux:pass	_
+8	filmado	filmar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	4	acl:relcl	4:acl:relcl	_
+9	recebendo	receber	VERB	_	VerbForm=Ger	8	advcl	8:advcl	_
+10	R$	R$	SYM	_	_	12	nmod	12:nmod	_
+11	2	2	NUM	_	NumType=Card	12	nummod	12:nummod	_
+12	milhões	milhão	NOUN	_	Gender=Masc|Number=Plur	9	obj	9:obj	_
+13	a	a	ADP	_	_	14	case	14:case	_
+14	mando	mando	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:a	_
+15	de	de	ADP	_	_	16	case	16:case	_
+16	Joesley	Joesley	PROPN	_	_	14	nmod	14:nmod:de	_
+17	Batista	Batista	PROPN	_	_	16	flat:name	16:flat:name	SpaceAfter=No
+18	,	,	PUNCT	_	_	8	punct	8:punct	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	tucano	tucano	NOUN	_	Gender=Masc|Number=Sing	22	nsubj	22:nsubj|25:nsubj	_
+21	também	também	ADV	_	_	22	advmod	22:advmod	_
+22	teve	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+23	que	que	ADP	_	_	25	mark	25:mark	_
+24	se	se	PRON	_	Case=Nom|Person=3|PronType=Prs	25	expl	25:expl	_
+25	calar	calar	VERB	_	VerbForm=Inf	22	xcomp	22:xcomp	_
+26	diante	diante	ADV	_	_	25	advmod	25:advmod	_
+27-28	da	_	_	_	_	_	_	_	_
+27	de	de	ADP	_	_	29	case	29:case	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	prisão	prisão	NOUN	_	Gender=Fem|Number=Sing	26	obl	26:obl:de	_
+30-31	da	_	_	_	_	_	_	_	_
+30	de	de	ADP	_	_	32	case	32:case	_
+31	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	32:det	_
+32	irmã	irmão	NOUN	_	Gender=Fem|Number=Sing	29	nmod	29:nmod:de	SpaceAfter=No
+33	.	.	PUNCT	_	_	22	punct	22:punct	_
+
+# sent_id = S0007
+# text = Andrea Neves é considerada a mentora intelectual da carreira política do tucano e estava pronta para empreender fuga para a Inglaterra quando foi capturada pela Operação Patmos da PF.
+1	Andrea	Andrea	PROPN	_	_	4	nsubj:pass	4:nsubj:pass|6:nsubj|17:nsubj	_
+2	Neves	Neves	PROPN	_	_	1	flat:name	1:flat:name	_
+3	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	4:aux:pass	_
+4	considerada	considerar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	0:root	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	mentora	mentor	NOUN	_	Gender=Fem|Number=Sing	4	xcomp	4:xcomp	_
+7	intelectual	intelectual	ADJ	_	Number=Sing	6	amod	6:amod	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	10:case	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_
+10	carreira	carreira	NOUN	_	Gender=Fem|Number=Sing	6	nmod	6:nmod:de	_
+11	política	político	ADJ	_	Gender=Fem|Number=Sing	10	amod	10:amod	_
+12-13	do	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	14	case	14:case	_
+13	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	tucano	tucano	NOUN	_	Gender=Masc|Number=Sing	10	nmod	10:nmod:de	_
+15	e	e	CCONJ	_	_	17	cc	17:cc	_
+16	estava	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	17	cop	17:cop	_
+17	pronta	pronto	ADJ	_	Gender=Fem|Number=Sing	4	conj	4:conj:e	_
+18	para	para	ADP	_	_	19	mark	19:mark	_
+19	empreender	empreender	VERB	_	VerbForm=Inf	17	acl	17:acl:para	_
+20	fuga	fuga	NOUN	_	Gender=Fem|Number=Sing	19	obj	19:obj	_
+21	para	para	ADP	_	_	23	case	23:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	Inglaterra	Inglaterra	PROPN	_	_	20	nmod	20:nmod:para	_
+24	quando	quando	SCONJ	_	_	26	mark	26:mark	_
+25	foi	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	26	aux:pass	26:aux:pass	_
+26	capturada	capturar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	17	advcl	17:advcl:quando	_
+27-28	pela	_	_	_	_	_	_	_	_
+27	por	por	ADP	_	_	29	case	29:case	_
+28	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	29:det	_
+29	Operação	Operação	PROPN	_	_	26	obl:agent	26:obl:agent	_
+30	Patmos	Patmos	PROPN	_	_	29	flat:name	29:flat:name	_
+31-32	da	_	_	_	_	_	_	_	_
+31	de	de	ADP	_	_	33	case	33:case	_
+32	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	33:det	_
+33	PF	PF	PROPN	_	_	29	nmod	29:nmod:de	SpaceAfter=No
+34	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0009
+# text = O mundo de Aécio desabou literalmente.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	mundo	mundo	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	Aécio	Aécio	PROPN	_	_	2	nmod	2:nmod:de	_
+5	desabou	desabar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	literalmente	literalmente	ADV	_	_	5	advmod	5:advmod	SpaceAfter=No
+7	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0011
+# text = De acordo com a revista Veja, o político não quer falar com ninguém [...] atende pouquíssimas ligações em seu celular (algo óbvio, já que o aparelho está grampeado pela PF) e tem alternado entre crises de choro e várias "talagadas" de uísque.
+1	De	de	ADP	_	_	2	case	2:case	_
+2	acordo	acordo	NOUN	_	Gender=Masc|Number=Sing	11	obl	11:obl:de	_
+3	com	com	ADP	_	_	5	case	5:case	_
+4	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_
+5	revista	revista	NOUN	_	Gender=Fem|Number=Sing	2	nmod	2:nmod:com	_
+6	Veja	Veja	PROPN	_	_	5	nmod	5:nmod	SpaceAfter=No
+7	,	,	PUNCT	_	_	2	punct	2:punct	_
+8	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+9	político	político	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	11:nsubj|12:nsubj|41:nsubj	_
+10	não	não	ADV	_	_	11	advmod	11:advmod	_
+11	quer	querer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+12	falar	falar	VERB	_	VerbForm=Inf	11	xcomp	11:xcomp	_
+13	com	com	ADP	_	_	14	case	14:case	_
+14	ninguém	ninguém	PRON	_	Number=Sing|PronType=Ind	12	obl	12:obl:com	_
+15	[	[	PUNCT	_	_	19	punct	19:punct	SpaceAfter=No
+16	.	.	PUNCT	_	_	19	parataxis	19:parataxis	SpaceAfter=No
+17	..	..	PUNCT	_	_	16	punct	16:punct	SpaceAfter=No
+18	]	]	PUNCT	_	_	16	punct	16:punct	_
+19	atende	atender	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	parataxis	11:parataxis	_
+20	pouquíssimas	pouquíssimo	ADJ	_	Gender=Fem|Number=Plur	21	amod	21:amod	_
+21	ligações	ligação	NOUN	_	Gender=Fem|Number=Plur	19	obj	19:obj	_
+22	em	em	ADP	_	_	24	case	24:case	_
+23	seu	seu	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	24	det	24:det	_
+24	celular	celular	NOUN	_	Gender=Masc|Number=Sing	21	nmod	21:nmod:em	_
+25	(	(	PUNCT	_	_	26	punct	26:punct	SpaceAfter=No
+26	algo	algo	PRON	_	Gender=Masc|Number=Sing|PronType=Ind	19	parataxis	19:parataxis	_
+27	óbvio	óbvio	ADJ	_	Gender=Masc|Number=Sing	26	amod	26:amod	SpaceAfter=No
+28	,	,	PUNCT	_	_	34	punct	34:punct	_
+29	já	já	ADV	_	ExtPos=SCONJ	34	mark	34:mark	_
+30	que	que	SCONJ	_	_	29	fixed	29:fixed	_
+31	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_
+32	aparelho	aparelho	NOUN	_	Gender=Masc|Number=Sing	34	nsubj	34:nsubj	_
+33	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	34	cop	34:cop	_
+34	grampeado	grampeado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	41	advcl	41:advcl:já_que	_
+35-36	pela	_	_	_	_	_	_	_	_
+35	por	por	ADP	_	_	37	case	37:case	_
+36	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	37:det	_
+37	PF	PF	PROPN	_	_	34	obl:agent	34:obl:agent	SpaceAfter=No
+38	)	)	PUNCT	_	_	26	punct	26:punct	_
+39	e	e	CCONJ	_	_	41	cc	41:cc	_
+40	tem	ter	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	41	aux	41:aux	_
+41	alternado	alternar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	11	conj	11:conj:e	_
+42	entre	entre	ADP	_	_	43	case	43:case	_
+43	crises	crise	NOUN	_	Gender=Fem|Number=Plur	41	obl	41:obl:entre	_
+44	de	de	ADP	_	_	45	case	45:case	_
+45	choro	choro	NOUN	_	Gender=Masc|Number=Sing	43	nmod	43:nmod:de	_
+46	e	e	CCONJ	_	_	49	cc	49:cc	_
+47	várias	vários	DET	_	Gender=Fem|Number=Plur|PronType=Ind	49	det	49:det	_
+48	"	"	PUNCT	_	_	49	punct	49:punct	SpaceAfter=No
+49	talagadas	talagada	NOUN	_	Gender=Fem|Number=Plur	43	conj	41:obl:entre|43:conj:e	SpaceAfter=No
+50	"	"	PUNCT	_	_	49	punct	49:punct	_
+51	de	de	ADP	_	_	52	case	52:case	_
+52	uísque	uísque	NOUN	_	Gender=Masc|Number=Sing	49	nmod	49:nmod:de	SpaceAfter=No
+53	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0013
+# text = Aécio está angustiado, movendo céus e terra atrás de algum advogado que possa livrar a irmã da cadeia.
+1	Aécio	Aécio	PROPN	_	_	3	nsubj	3:nsubj	_
+2	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+3	angustiado	angustiado	ADJ	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	movendo	mover	VERB	_	VerbForm=Ger	3	advcl	3:advcl	_
+6	céus	céu	NOUN	_	Gender=Masc|Number=Plur	5	obj	5:obj	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	terra	terra	NOUN	_	Gender=Fem|Number=Sing	6	conj	5:obj|6:conj:e	_
+9	atrás	atrás	ADV	_	_	5	advmod	5:advmod	_
+10	de	de	ADP	_	_	12	case	12:case	_
+11	algum	algum	DET	_	Gender=Masc|Number=Sing|PronType=Ind	12	det	12:det	_
+12	advogado	advogado	NOUN	_	Gender=Masc|Number=Sing	9	obl	9:obl:de|14:nsubj|15:nsubj	_
+13	que	que	PRON	_	PronType=Rel	14	nsubj	12:ref	_
+14	possa	poder	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	acl:relcl	12:acl:relcl	_
+15	livrar	livrar	VERB	_	VerbForm=Inf	14	xcomp	14:xcomp	_
+16	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_
+17	irmã	irmão	NOUN	_	Gender=Fem|Number=Sing	15	obj	15:obj	_
+18-19	da	_	_	_	_	_	_	_	_
+18	de	de	ADP	_	_	20	case	20:case	_
+19	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	20:det	_
+20	cadeia	cadeia	NOUN	_	Gender=Fem|Number=Sing	15	obl	15:obl:de	SpaceAfter=No
+21	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0015
+# text = Na próxima quarta-feira (20), a mesma turma que decidiu manter Andrea presa julgará o pedido de prisão (feito pela PGR) contra Aécio Neves.
+1-2	Na	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	4	case	4:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+3	próxima	próximo	ADJ	_	Gender=Fem|Number=Sing	4	amod	4:amod	_
+4	quarta-feira	quarta-feira	NOUN	_	Gender=Fem|Number=Sing	17	obl	17:obl:em	_
+5	(	(	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+6	20	20	NUM	_	NumType=Card	4	appos	4:appos	SpaceAfter=No
+7	)	)	PUNCT	_	_	6	punct	6:punct	SpaceAfter=No
+8	,	,	PUNCT	_	_	4	punct	4:punct	_
+9	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_
+10	mesma	mesmo	DET	_	Gender=Fem|Number=Sing|PronType=Dem	11	det	11:det	_
+11	turma	turma	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	13:nsubj|14:nsubj|17:nsubj	_
+12	que	que	PRON	_	PronType=Rel	13	nsubj	11:ref	_
+13	decidiu	decidir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	acl:relcl	11:acl:relcl	_
+14	manter	manter	VERB	_	VerbForm=Inf	13	xcomp	13:xcomp	_
+15	Andrea	Andrea	PROPN	_	_	14	obj	14:obj|16:nsubj	_
+16	presa	preso	ADJ	_	Gender=Fem|Number=Sing|VerbForm=Part	14	xcomp	14:xcomp	_
+17	julgará	julgar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+19	pedido	pedido	NOUN	_	Gender=Masc|Number=Sing	17	obj	17:obj	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	prisão	prisão	NOUN	_	Gender=Fem|Number=Sing	19	nmod	19:nmod:de	_
+22	(	(	PUNCT	_	_	23	punct	23:punct	SpaceAfter=No
+23	feito	fazer	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	19	acl	19:acl	_
+24-25	pela	_	_	_	_	_	_	_	_
+24	por	por	ADP	_	_	26	case	26:case	_
+25	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	_
+26	PGR	PGR	PROPN	_	_	23	obl:agent	23:obl:agent	SpaceAfter=No
+27	)	)	PUNCT	_	_	23	punct	23:punct	_
+28	contra	contra	ADP	_	_	29	case	29:case	_
+29	Aécio	Aécio	PROPN	_	_	19	nmod	19:nmod:contra	_
+30	Neves	Neves	PROPN	_	_	29	flat:name	29:flat:name	SpaceAfter=No
+31	.	.	PUNCT	_	_	17	punct	17:punct	_
+
+# sent_id = S0017
+# text = Vale ressaltar que, caso o pedido seja aprovado, o Senado ainda terá que autorizar a prisão do parlamentar.
+1	Vale	valer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	ressaltar	ressaltar	VERB	_	VerbForm=Inf	1	xcomp	1:xcomp	_
+3	que	que	SCONJ	_	_	14	mark	14:mark	SpaceAfter=No
+4	,	,	PUNCT	_	_	9	punct	9:punct	_
+5	caso	caso	SCONJ	_	_	9	mark	9:mark	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	pedido	pedido	NOUN	_	Gender=Masc|Number=Sing	9	nsubj:pass	9:nsubj:pass	_
+8	seja	ser	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:pass	9:aux:pass	_
+9	aprovado	aprovar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	14	advcl	14:advcl:caso	SpaceAfter=No
+10	,	,	PUNCT	_	_	9	punct	9:punct	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	Senado	Senado	PROPN	_	_	14	nsubj	14:nsubj|16:nsubj	_
+13	ainda	ainda	ADV	_	_	14	advmod	14:advmod	_
+14	terá	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	2	ccomp	2:ccomp	_
+15	que	que	ADP	_	_	16	mark	16:mark	_
+16	autorizar	autorizar	VERB	_	VerbForm=Inf	14	xcomp	14:xcomp	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	prisão	prisão	NOUN	_	Gender=Fem|Number=Sing	16	obj	16:obj	_
+19-20	do	_	_	_	_	_	_	_	_
+19	de	de	ADP	_	_	21	case	21:case	_
+20	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_
+21	parlamentar	parlamentar	NOUN	_	Gender=Masc|Number=Sing	18	nmod	18:nmod:de	SpaceAfter=No
+22	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0019
+# text = Será que o mineirinho vai seguir o mesmo caminho de Eduardo Cunha?
+1	Será	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	6	discourse	6:discourse	_
+2	que	que	SCONJ	_	_	6	discourse	6:discourse	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	mineirinho	mineirinho	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	6:nsubj	_
+5	vai	ir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	6:aux	_
+6	seguir	seguir	VERB	_	VerbForm=Inf	0	root	0:root	_
+7	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_
+8	mesmo	mesmo	DET	_	Gender=Masc|Number=Sing|PronType=Dem	9	det	9:det	_
+9	caminho	caminho	NOUN	_	Gender=Masc|Number=Sing	6	obj	6:obj	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	Eduardo	Eduardo	PROPN	_	_	9	nmod	9:nmod:de	_
+12	Cunha	Cunha	PROPN	_	_	11	flat:name	11:flat:name	SpaceAfter=No
+13	?	?	PUNCT	_	_	6	punct	6:punct	_
+
+# sent_id = S0021
+# text = fonte Ana Clara Costa, da Veja.
+1	fonte	fonte	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+2	Ana	Ana	PROPN	_	_	1	nmod	1:nmod	_
+3	Clara	Clara	PROPN	_	_	2	flat:name	2:flat:name	_
+4	Costa	Costa	PROPN	_	_	2	flat:name	2:flat:name	SpaceAfter=No
+5	,	,	PUNCT	_	_	8	punct	8:punct	_
+6-7	da	_	_	_	_	_	_	_	_
+6	de	de	ADP	_	_	8	case	8:case	_
+7	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	Veja	Veja	PROPN	_	_	2	nmod	2:nmod:de	SpaceAfter=No
+9	.	.	PUNCT	_	_	1	punct	1:punct	_

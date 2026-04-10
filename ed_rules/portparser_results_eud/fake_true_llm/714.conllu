@@ -1,0 +1,341 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Urgente: Revelações chocantes sobre o atentado ao Presidente Bolsonaro!
+1	Urgente	urgente	ADJ	_	Number=Sing	0	root	0:root	SpaceAfter=No
+2	:	:	PUNCT	_	_	3	punct	3:punct	_
+3	Revelações	revelação	NOUN	_	Gender=Fem|Number=Plur	1	parataxis	1:parataxis	_
+4	chocantes	chocante	ADJ	_	Number=Plur	3	amod	3:amod	_
+5	sobre	sobre	ADP	_	_	7	case	7:case	_
+6	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_
+7	atentado	atentado	NOUN	_	Gender=Masc|Number=Sing	3	nmod	3:nmod:sobre	_
+8-9	ao	_	_	_	_	_	_	_	_
+8	a	a	ADP	_	_	10	case	10:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	Presidente	Presidente	PROPN	_	_	7	nmod	7:nmod:a	_
+11	Bolsonaro	Bolsonaro	PROPN	_	_	10	flat:name	10:flat:name	SpaceAfter=No
+12	!	!	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0003
+# text = Em uma live bombástica, a renomada jornalista Leda Nagle divulgou mensagens que supostamente teriam sido postadas pelo Diretor-Geral da Polícia Federal, Paulo Maiurino, em uma conta secreta.
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	live	live	NOUN	_	Gender=Fem|Number=Sing	11	obl	11:obl:em	_
+4	bombástica	bombástico	ADJ	_	Gender=Fem|Number=Sing	3	amod	3:amod	SpaceAfter=No
+5	,	,	PUNCT	_	_	3	punct	3:punct	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+7	renomada	renomado	ADJ	_	Gender=Fem|Number=Sing	8	amod	8:amod	_
+8	jornalista	jornalista	NOUN	_	Number=Sing	11	nsubj	11:nsubj	_
+9	Leda	Leda	PROPN	_	_	8	nmod	8:nmod	_
+10	Nagle	Nagle	PROPN	_	_	9	flat:name	9:flat:name	_
+11	divulgou	divulgar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+12	mensagens	mensagem	NOUN	_	Gender=Fem|Number=Plur	11	obj	11:obj|17:nsubj:pass	_
+13	que	que	PRON	_	PronType=Rel	17	nsubj:pass	12:ref	_
+14	supostamente	supostamente	ADV	_	_	17	advmod	17:advmod	_
+15	teriam	ter	AUX	_	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	17	aux	17:aux	_
+16	sido	ser	AUX	_	Gender=Masc|Number=Sing|VerbForm=Part	17	aux:pass	17:aux:pass	_
+17	postadas	postar	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	12	acl:relcl	12:acl:relcl	_
+18-19	pelo	_	_	_	_	_	_	_	_
+18	por	por	ADP	_	_	20	case	20:case	_
+19	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_
+20	Diretor-Geral	Diretor-Geral	PROPN	_	_	17	obl:agent	17:obl:agent	_
+21-22	da	_	_	_	_	_	_	_	_
+21	de	de	ADP	_	_	23	case	23:case	_
+22	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_
+23	Polícia	Polícia	PROPN	_	_	20	flat:name	20:flat:name	_
+24	Federal	Federal	PROPN	_	_	20	flat:name	20:flat:name	SpaceAfter=No
+25	,	,	PUNCT	_	_	26	punct	26:punct	_
+26	Paulo	Paulo	PROPN	_	_	20	appos	20:appos	_
+27	Maiurino	Maiurino	PROPN	_	_	26	flat:name	26:flat:name	SpaceAfter=No
+28	,	,	PUNCT	_	_	26	punct	26:punct	_
+29	em	em	ADP	_	_	31	case	31:case	_
+30	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_
+31	conta	conta	NOUN	_	Gender=Fem|Number=Sing	17	obl	17:obl:em	_
+32	secreta	secreto	ADJ	_	Gender=Fem|Number=Sing	31	amod	31:amod	SpaceAfter=No
+33	.	.	PUNCT	_	_	11	punct	11:punct	_
+
+# sent_id = S0005
+# text = As mensagens apontam um plano sinistro orquestrado pelo STF e o ex-presidente Lula para assassinar o atual presidente Jair Bolsonaro.
+1	As	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	2:det	_
+2	mensagens	mensagem	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	3:nsubj	_
+3	apontam	apontar	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	plano	plano	NOUN	_	Gender=Masc|Number=Sing	3	obj	3:obj	_
+6	sinistro	sinistro	ADJ	_	Gender=Masc|Number=Sing	5	amod	5:amod	_
+7	orquestrado	orquestrar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	5	acl	5:acl	_
+8-9	pelo	_	_	_	_	_	_	_	_
+8	por	por	ADP	_	_	10	case	10:case|13:case	_
+9	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	STF	STF	PROPN	_	_	7	obl:agent	7:obl:agent	_
+11	e	e	CCONJ	_	_	13	cc	13:cc	_
+12	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_
+13	ex-presidente	ex-presidente	NOUN	_	Number=Sing	10	conj	7:obl:agent|10:conj:e	_
+14	Lula	Lula	PROPN	_	_	13	nmod	13:nmod	_
+15	para	para	ADP	_	_	16	mark	16:mark	_
+16	assassinar	assassinar	VERB	_	VerbForm=Inf	7	advcl	7:advcl:para	_
+17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_
+18	atual	atual	ADJ	_	Number=Sing	19	amod	19:amod	_
+19	presidente	presidente	NOUN	_	Number=Sing	16	obj	16:obj	_
+20	Jair	Jair	PROPN	_	_	19	nmod	19:nmod	_
+21	Bolsonaro	Bolsonaro	PROPN	_	_	20	flat:name	20:flat:name	SpaceAfter=No
+22	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0007
+# text = Segundo a mensagem, a conta @d_delegado, agora supostamente autenticada, expõe detalhes alarmantes: A ordem partiu de dentro do STF, em conluio com @lulaoficial e outros influentes políticos.
+1	Segundo	segundo	ADP	_	_	3	case	3:case	_
+2	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_
+3	mensagem	mensagem	NOUN	_	Gender=Fem|Number=Sing	13	obl	13:obl:segundo	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	conta	conta	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	13:nsubj	_
+7	@d_delegado	@d_delegado	NOUN	_	_	6	nmod	6:nmod	SpaceAfter=No
+8	,	,	PUNCT	_	_	11	punct	11:punct	_
+9	agora	agora	ADV	_	_	11	advmod	11:advmod	_
+10	supostamente	supostamente	ADV	_	_	11	advmod	11:advmod	_
+11	autenticada	autenticar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part	6	acl	6:acl	SpaceAfter=No
+12	,	,	PUNCT	_	_	11	punct	11:punct	_
+13	expõe	expor	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+14	detalhes	detalhe	NOUN	_	Gender=Masc|Number=Plur	13	obj	13:obj	_
+15	alarmantes	alarmante	ADJ	_	Number=Plur	14	amod	14:amod	SpaceAfter=No
+16	:	:	PUNCT	_	_	19	punct	19:punct	_
+17	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_
+18	ordem	ordem	NOUN	_	Gender=Fem|Number=Sing	19	nsubj	19:nsubj	_
+19	partiu	partir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	parataxis	13:parataxis	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	dentro	dentro	ADV	_	_	19	advmod	19:advmod	_
+22-23	do	_	_	_	_	_	_	_	_
+22	de	de	ADP	_	_	24	case	24:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	STF	STF	PROPN	_	_	21	obl	21:obl:de	SpaceAfter=No
+25	,	,	PUNCT	_	_	27	punct	27:punct	_
+26	em	em	ADP	_	_	27	case	27:case	_
+27	conluio	conluio	NOUN	_	Gender=Masc|Number=Sing	19	obl	19:obl:em	_
+28	com	com	ADP	_	_	29	case	29:case|33:case	_
+29	@lulaoficial	@lulaoficial	NOUN	_	_	27	nmod	27:nmod:com	_
+30	e	e	CCONJ	_	_	33	cc	33:cc	_
+31	outros	outro	DET	_	Gender=Masc|Number=Plur|PronType=Ind	33	det	33:det	_
+32	influentes	influente	ADJ	_	Number=Plur	33	amod	33:amod	_
+33	políticos	político	NOUN	_	Gender=Masc|Number=Plur	29	conj	27:nmod:com|29:conj:e	SpaceAfter=No
+34	.	.	PUNCT	_	_	13	punct	13:punct	_
+
+# sent_id = S0009
+# text = O objetivo era eliminar Bolsonaro para impedir mudanças profundas no país.
+1	O	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_
+2	objetivo	objetivo	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	4:nsubj	_
+3	era	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	cop	4:cop	_
+4	eliminar	eliminar	VERB	_	VerbForm=Inf	0	root	0:root	_
+5	Bolsonaro	Bolsonaro	PROPN	_	_	4	obj	4:obj	_
+6	para	para	ADP	_	_	7	mark	7:mark	_
+7	impedir	impedir	VERB	_	VerbForm=Inf	4	advcl	4:advcl:para	_
+8	mudanças	mudança	NOUN	_	Gender=Fem|Number=Plur	7	obj	7:obj	_
+9	profundas	profundo	ADJ	_	Gender=Fem|Number=Plur	8	amod	8:amod	_
+10-11	no	_	_	_	_	_	_	_	_
+10	em	em	ADP	_	_	12	case	12:case	_
+11	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_
+12	país	país	NOUN	_	Gender=Masc|Number=Sing	8	nmod	8:nmod:em	SpaceAfter=No
+13	.	.	PUNCT	_	_	4	punct	4:punct	_
+
+# sent_id = S0011
+# text = Por questões de segurança, não posso revelar mais agora, mas aguardem, pois as máscaras vão cair!
+1	Por	por	ADP	_	_	2	case	2:case	_
+2	questões	questão	NOUN	_	Gender=Fem|Number=Plur	7	obl	7:obl:por	_
+3	de	de	ADP	_	_	4	case	4:case	_
+4	segurança	segurança	NOUN	_	Number=Sing	2	nmod	2:nmod:de	SpaceAfter=No
+5	,	,	PUNCT	_	_	2	punct	2:punct	_
+6	não	não	ADV	_	_	7	advmod	7:advmod	_
+7	posso	poder	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+8	revelar	revelar	VERB	_	VerbForm=Inf	7	xcomp	7:xcomp	_
+9	mais	mais	ADV	_	_	8	advmod	8:advmod	_
+10	agora	agora	ADV	_	_	8	advmod	8:advmod	SpaceAfter=No
+11	,	,	PUNCT	_	_	13	punct	13:punct	_
+12	mas	mas	CCONJ	_	_	13	cc	13:cc	_
+13	aguardem	aguardar	VERB	_	Mood=Imp|Number=Plur|Person=3|VerbForm=Fin	7	conj	7:conj:mas	SpaceAfter=No
+14	,	,	PUNCT	_	_	19	punct	19:punct	_
+15	pois	pois	SCONJ	_	_	19	mark	19:mark	_
+16	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	17:det	_
+17	máscaras	máscara	NOUN	_	Gender=Fem|Number=Plur	19	nsubj	19:nsubj	_
+18	vão	ir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	19	aux	19:aux	_
+19	cair	cair	VERB	_	VerbForm=Inf	13	advcl	13:advcl:pois	SpaceAfter=No
+20	!	!	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0013
+# text = Em outro post, Maiurino teria afirmado: Antes que minha voz seja silenciada, preciso alertar: eles não vão parar até destruir @jairbolsonaro.
+1	Em	em	ADP	_	_	3	case	3:case	_
+2	outro	outro	DET	_	Gender=Masc|Number=Sing|PronType=Ind	3	det	3:det	_
+3	post	post	NOUN	_	Gender=Masc|Number=Sing	7	obl	7:obl:em	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	3:punct	_
+5	Maiurino	Maiurino	PROPN	_	_	7	nsubj	7:nsubj	_
+6	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	7	aux	7:aux	_
+7	afirmado	afirmar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	SpaceAfter=No
+8	:	:	PUNCT	_	_	16	punct	16:punct	_
+9	Antes	antes	ADV	_	ExtPos=SCONJ	14	mark	14:mark	_
+10	que	que	SCONJ	_	_	9	fixed	9:fixed	_
+11	minha	meu	DET	_	Gender=Fem|Number=Sing|Person=1|Poss=Yes|PronType=Prs	12	det	12:det	_
+12	voz	voz	NOUN	_	Gender=Fem|Number=Sing	14	nsubj:pass	14:nsubj:pass	_
+13	seja	ser	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux:pass	14:aux:pass	_
+14	silenciada	silenciar	VERB	_	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	16	advcl	16:advcl:antes_que	SpaceAfter=No
+15	,	,	PUNCT	_	_	14	punct	14:punct	_
+16	preciso	precisar	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	7	ccomp:speech	7:ccomp:speech	_
+17	alertar	alertar	VERB	_	VerbForm=Inf	16	xcomp	16:xcomp	SpaceAfter=No
+18	:	:	PUNCT	_	_	22	punct	22:punct	_
+19	eles	ele	PRON	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	22	nsubj	22:nsubj	_
+20	não	não	ADV	_	_	22	advmod	22:advmod	_
+21	vão	ir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	aux	22:aux	_
+22	parar	parar	VERB	_	VerbForm=Inf	17	ccomp:speech	17:ccomp:speech	_
+23	até	até	ADP	_	_	24	mark	24:mark	_
+24	destruir	destruir	VERB	_	VerbForm=Inf	22	advcl	22:advcl:até	_
+25	@jairbolsonaro	@jairbolsonaro	NOUN	_	_	24	obj	24:obj	SpaceAfter=No
+26	.	.	PUNCT	_	_	7	punct	7:punct	_
+
+# sent_id = S0015
+# text = Mas não conseguirão, pois já temos provas de que mais da metade dos juízes envolvidos receberam subornos para encobrir a verdade.
+1	Mas	mas	CCONJ	_	_	3	cc	3:cc	_
+2	não	não	ADV	_	_	3	advmod	3:advmod	_
+3	conseguirão	conseguir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	SpaceAfter=No
+4	,	,	PUNCT	_	_	7	punct	7:punct	_
+5	pois	pois	SCONJ	_	_	7	mark	7:mark	_
+6	já	já	ADV	_	_	7	advmod	7:advmod	_
+7	temos	ter	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	advcl	3:advcl:pois	_
+8	provas	prova	NOUN	_	Gender=Fem|Number=Plur	7	obj	7:obj	_
+9	de	de	ADP	_	ExtPos=SCONJ	19	mark	19:mark	_
+10	que	que	SCONJ	_	_	9	fixed	9:fixed	_
+11	mais	mais	ADV	_	ExtPos=ADV	14	advmod	14:advmod	_
+12-13	da	_	_	_	_	_	_	_	_
+12	de	de	ADP	_	_	11	fixed	11:fixed	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	metade	metade	NOUN	_	Gender=Fem|Number=Sing	19	nsubj	19:nsubj	_
+15-16	dos	_	_	_	_	_	_	_	_
+15	de	de	ADP	_	_	17	case	17:case	_
+16	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	17:det	_
+17	juízes	juíz	NOUN	_	Gender=Masc|Number=Plur	14	nmod	14:nmod:de	_
+18	envolvidos	envolvido	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	17	amod	17:amod	_
+19	receberam	receber	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	8	acl	8:acl:de_que	_
+20	subornos	suborno	NOUN	_	Gender=Masc|Number=Plur	19	obj	19:obj	_
+21	para	para	ADP	_	_	22	mark	22:mark	_
+22	encobrir	encobrir	VERB	_	VerbForm=Inf	19	advcl	19:advcl:para	_
+23	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_
+24	verdade	verdade	NOUN	_	Gender=Fem|Number=Sing	22	obj	22:obj	SpaceAfter=No
+25	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0017
+# text = Nos próximos dias, a população brasileira tomará conhecimento das atrocidades cometidas.
+1-2	Nos	_	_	_	_	_	_	_	_
+1	Em	em	ADP	_	_	4	case	4:case	_
+2	os	o	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	4:det	_
+3	próximos	próximo	ADJ	_	Gender=Masc|Number=Plur	4	amod	4:amod	_
+4	dias	dia	NOUN	_	Gender=Masc|Number=Plur	9	obl	9:obl:em	SpaceAfter=No
+5	,	,	PUNCT	_	_	4	punct	4:punct	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	população	população	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	9:nsubj	_
+8	brasileira	brasileiro	ADJ	_	Gender=Fem|Number=Sing	7	amod	7:amod	_
+9	tomará	tomar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+10	conhecimento	conhecimento	NOUN	_	Gender=Masc|Number=Sing	9	obj	9:obj	_
+11-12	das	_	_	_	_	_	_	_	_
+11	de	de	ADP	_	_	13	case	13:case	_
+12	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	13:det	_
+13	atrocidades	atrocidade	NOUN	_	Gender=Fem|Number=Plur	10	nmod	10:nmod:de	_
+14	cometidas	cometer	VERB	_	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	13	acl	13:acl	SpaceAfter=No
+15	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0021
+# text = Essas alegações vêm à tona em meio a especulações crescentes sobre a decisão judicial que considerou Adélio Bispo, o autor do atentado a faca contra Bolsonaro em 2018, inimputável por transtorno delirante persistente.
+1	Essas	esse	DET	_	Gender=Fem|Number=Plur|PronType=Dem	2	det	2:det	_
+2	alegações	alegação	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	3:nsubj	_
+3	vêm	vir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+4-5	à	_	_	_	_	_	_	_	_
+4	a	a	ADP	_	_	6	case	6:case	_
+5	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_
+6	tona	tona	NOUN	_	Gender=Fem|Number=Sing	3	obl	3:obl:a	_
+7	em	em	ADP	_	ExtPos=ADP	10	case	10:case	_
+8	meio	meio	NOUN	_	Gender=Masc|Number=Sing	7	fixed	7:fixed	_
+9	a	a	ADP	_	_	7	fixed	7:fixed	_
+10	especulações	especulação	NOUN	_	Gender=Fem|Number=Plur	3	obl	3:obl:em_meio_a	_
+11	crescentes	crescente	ADJ	_	Number=Plur	10	amod	10:amod	_
+12	sobre	sobre	ADP	_	_	14	case	14:case	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	decisão	decisão	NOUN	_	Gender=Fem|Number=Sing	10	nmod	10:nmod:sobre|17:nsubj	_
+15	judicial	judicial	ADJ	_	Number=Sing	14	amod	14:amod	_
+16	que	que	PRON	_	PronType=Rel	17	nsubj	14:ref	_
+17	considerou	considerar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	acl:relcl	14:acl:relcl	_
+18	Adélio	Adélio	PROPN	_	_	17	obj	17:obj|33:nsubj	_
+19	Bispo	Bispo	PROPN	_	_	18	flat:name	18:flat:name	SpaceAfter=No
+20	,	,	PUNCT	_	_	22	punct	22:punct	_
+21	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_
+22	autor	autor	NOUN	_	Gender=Masc|Number=Sing	18	appos	18:appos	_
+23-24	do	_	_	_	_	_	_	_	_
+23	de	de	ADP	_	_	25	case	25:case	_
+24	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	25:det	_
+25	atentado	atentado	NOUN	_	Gender=Masc|Number=Sing	22	nmod	22:nmod:de	_
+26	a	a	ADP	_	_	27	case	27:case	_
+27	faca	faca	NOUN	_	Gender=Fem|Number=Sing	25	nmod	25:nmod:a	_
+28	contra	contra	ADP	_	_	29	case	29:case	_
+29	Bolsonaro	Bolsonaro	PROPN	_	_	25	nmod	25:nmod:contra	_
+30	em	em	ADP	_	_	31	case	31:case	_
+31	2018	2018	NUM	_	NumType=Card	25	nmod	25:nmod:em	SpaceAfter=No
+32	,	,	PUNCT	_	_	22	punct	22:punct	_
+33	inimputável	inimputável	ADJ	_	Number=Sing	17	xcomp	17:xcomp	_
+34	por	por	ADP	_	_	35	case	35:case	_
+35	transtorno	transtorno	NOUN	_	Gender=Masc|Number=Sing	33	obl	33:obl:por	_
+36	delirante	delirante	ADJ	_	Number=Sing	35	amod	35:amod	_
+37	persistente	persistente	ADJ	_	Number=Sing	35	amod	35:amod	SpaceAfter=No
+38	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0023
+# text = Maiurino teria sugerido que essa é uma cortina de fumaça para esconder um complô mais amplo.
+1	Maiurino	Maiurino	PROPN	_	_	3	nsubj	3:nsubj	_
+2	teria	ter	AUX	_	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	3	aux	3:aux	_
+3	sugerido	sugerir	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	0:root	_
+4	que	que	SCONJ	_	_	8	mark	8:mark	_
+5	essa	esse	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	8	nsubj	8:nsubj	_
+6	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop	_
+7	uma	um	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_
+8	cortina	cortina	NOUN	_	Gender=Fem|Number=Sing	3	ccomp	3:ccomp	_
+9	de	de	ADP	_	_	10	case	10:case	_
+10	fumaça	fumaça	NOUN	_	Gender=Fem|Number=Sing	8	nmod	8:nmod:de	_
+11	para	para	ADP	_	_	12	mark	12:mark	_
+12	esconder	esconder	VERB	_	VerbForm=Inf	8	advcl	8:advcl:para	_
+13	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_
+14	complô	complô	NOUN	_	Gender=Masc|Number=Sing	12	obj	12:obj	_
+15	mais	mais	ADV	_	_	16	advmod	16:advmod	_
+16	amplo	amplo	ADJ	_	Gender=Masc|Number=Sing	14	amod	14:amod	SpaceAfter=No
+17	.	.	PUNCT	_	_	3	punct	3:punct	_
+
+# sent_id = S0025
+# text = A Polícia Federal, sob intensa pressão, abriu novos inquéritos para reavaliar as evidências e a possível participação de terceiros no atentado.
+1	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	Polícia	Polícia	PROPN	_	_	9	nsubj	9:nsubj	_
+3	Federal	Federal	PROPN	_	_	2	flat:name	2:flat:name	SpaceAfter=No
+4	,	,	PUNCT	_	_	7	punct	7:punct	_
+5	sob	sob	ADP	_	_	7	case	7:case	_
+6	intensa	intenso	ADJ	_	Gender=Fem|Number=Sing	7	amod	7:amod	_
+7	pressão	pressão	NOUN	_	Gender=Fem|Number=Sing	9	obl	9:obl:sob	SpaceAfter=No
+8	,	,	PUNCT	_	_	7	punct	7:punct	_
+9	abriu	abrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+10	novos	novo	ADJ	_	Gender=Masc|Number=Plur	11	amod	11:amod	_
+11	inquéritos	inquérito	NOUN	_	Gender=Masc|Number=Plur	9	obj	9:obj	_
+12	para	para	ADP	_	_	13	mark	13:mark	_
+13	reavaliar	reavaliar	VERB	_	VerbForm=Inf	9	advcl	9:advcl:para	_
+14	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	15:det	_
+15	evidências	evidência	NOUN	_	Gender=Fem|Number=Plur	13	obj	13:obj	_
+16	e	e	CCONJ	_	_	19	cc	19:cc	_
+17	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_
+18	possível	possível	ADJ	_	Number=Sing	19	amod	19:amod	_
+19	participação	participação	NOUN	_	Gender=Fem|Number=Sing	15	conj	13:obj|15:conj:e	_
+20	de	de	ADP	_	_	21	case	21:case	_
+21	terceiros	terceiro	NOUN	_	Gender=Masc|Number=Plur	19	nmod	19:nmod:de	_
+22-23	no	_	_	_	_	_	_	_	_
+22	em	em	ADP	_	_	24	case	24:case	_
+23	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_
+24	atentado	atentado	NOUN	_	Gender=Masc|Number=Sing	19	nmod	19:nmod:em	SpaceAfter=No
+25	.	.	PUNCT	_	_	9	punct	9:punct	_
+
+# sent_id = S0027
+# text = Internautas estão mobilizados, exigindo transparência e justiça.
+1	Internautas	internauta	NOUN	_	Number=Plur	3	nsubj	3:nsubj	_
+2	estão	estar	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_
+3	mobilizados	mobilizado	ADJ	_	Gender=Masc|Number=Plur|VerbForm=Part	0	root	0:root	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	_
+5	exigindo	exigir	VERB	_	VerbForm=Ger	3	advcl	3:advcl	_
+6	transparência	transparência	NOUN	_	Gender=Fem|Number=Sing	5	obj	5:obj	_
+7	e	e	CCONJ	_	_	8	cc	8:cc	_
+8	justiça	justiça	NOUN	_	Gender=Fem|Number=Sing	6	conj	5:obj|6:conj:e	SpaceAfter=No
+9	.	.	PUNCT	_	_	3	punct	3:punct	_

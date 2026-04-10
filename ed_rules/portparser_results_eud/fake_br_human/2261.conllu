@@ -1,0 +1,101 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
+# sent_id = S0001
+# text = Dilma e a árvore parte 2.
+1	Dilma	Dilma	PROPN	_	_	5	dep	5:dep	_
+2	e	e	CCONJ	_	_	4	cc	4:cc	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	árvore	árvore	NOUN	_	Gender=Fem|Number=Sing	1	conj	1:conj:e|5:dep	_
+5	parte	parte	NOUN	_	Gender=Fem|Number=Sing	0	root	0:root	_
+6	2	2	NUM	_	NumType=Card	5	nmod	5:nmod	SpaceAfter=No
+7	.	.	PUNCT	_	_	5	punct	5:punct	_
+
+# sent_id = S0003
+# text = Dilma continua o discurso da árvore.
+1	Dilma	Dilma	PROPN	_	_	2	nsubj	2:nsubj	_
+2	continua	continuar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_
+4	discurso	discurso	NOUN	_	Gender=Masc|Number=Sing	2	obj	2:obj	_
+5-6	da	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	árvore	árvore	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:de	SpaceAfter=No
+8	.	.	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0005
+# text = Você corta a árvore da democracia com um machado [...] a árvore tem fungos!
+1	Você	você	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	2	nsubj	2:nsubj	_
+2	corta	cortar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	árvore	árvore	NOUN	_	Gender=Fem|Number=Sing	2	obj	2:obj	_
+5-6	da	_	_	_	_	_	_	_	_
+5	de	de	ADP	_	_	7	case	7:case	_
+6	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	democracia	democracia	NOUN	_	Gender=Fem|Number=Sing	4	nmod	4:nmod:de	_
+8	com	com	ADP	_	_	10	case	10:case	_
+9	um	um	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_
+10	machado	machado	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:com	_
+11	[	[	PUNCT	_	_	17	punct	17:punct	SpaceAfter=No
+12	.	.	PUNCT	_	_	17	parataxis	17:parataxis	SpaceAfter=No
+13	..	..	PUNCT	_	_	12	punct	12:punct	SpaceAfter=No
+14	]	]	PUNCT	_	_	12	punct	12:punct	_
+15	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	16:det	_
+16	árvore	árvore	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	17:nsubj	_
+17	tem	ter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	2:parataxis	_
+18	fungos	fungo	NOUN	_	Gender=Masc|Number=Plur	17	obj	17:obj	SpaceAfter=No
+19	!	!	PUNCT	_	_	2	punct	2:punct	_
+
+# sent_id = S0007
+# text = A partir do momento que tudo é possível [...] tudo passa a ser possível!
+1	A	a	ADP	_	_	2	mark	2:mark	_
+2	partir	partir	VERB	_	VerbForm=Inf	15	advcl	15:advcl:a	_
+3-4	do	_	_	_	_	_	_	_	_
+3	de	de	ADP	_	_	5	case	5:case	_
+4	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_
+5	momento	momento	NOUN	_	Gender=Masc|Number=Sing	2	obl	2:obl:de|9:nsubj	_
+6	que	que	PRON	_	PronType=Rel	9	nsubj	5:ref	_
+7	tudo	tudo	PRON	_	PronType=Ind	9	nsubj	9:nsubj	_
+8	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	9:cop	_
+9	possível	possível	ADJ	_	Number=Sing	5	acl:relcl	5:acl:relcl	_
+10	[	[	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+11	.	.	PUNCT	_	_	15	punct	15:punct	SpaceAfter=No
+12	..	..	PUNCT	_	_	11	punct	11:punct	SpaceAfter=No
+13	]	]	PUNCT	_	_	11	punct	11:punct	_
+14	tudo	tudo	PRON	_	PronType=Ind	15	nsubj	15:nsubj|18:nsubj	_
+15	passa	passar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+16	a	a	ADP	_	_	18	mark	18:mark	_
+17	ser	ser	AUX	_	VerbForm=Inf	18	cop	18:cop	_
+18	possível	possível	ADJ	_	Number=Sing	15	xcomp	15:xcomp	SpaceAfter=No
+19	!	!	PUNCT	_	_	15	punct	15:punct	_
+
+# sent_id = S0008
+# text = disse Dilma.
+1	disse	dizer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	Dilma	Dilma	PROPN	_	_	1	nsubj	1:nsubj	SpaceAfter=No
+3	.	.	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0010
+# text = Pergunta para a presidenta: A árvore é vítima de desmatamento ou a árvore está doente?
+1	Pergunta	perguntar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+2	para	para	ADP	_	_	4	case	4:case	_
+3	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_
+4	presidenta	presidenta	NOUN	_	Gender=Fem|Number=Sing	1	obl	1:obl:para	SpaceAfter=No
+5	:	:	PUNCT	_	_	9	punct	9:punct	_
+6	A	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_
+7	árvore	árvore	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	9:nsubj	_
+8	é	ser	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	9:cop	_
+9	vítima	vítima	NOUN	_	Gender=Fem|Number=Sing	1	parataxis	1:parataxis	_
+10	de	de	ADP	_	_	11	case	11:case	_
+11	desmatamento	desmatamento	NOUN	_	Gender=Masc|Number=Sing	9	nmod	9:nmod:de	_
+12	ou	ou	CCONJ	_	_	16	cc	16:cc	_
+13	a	o	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_
+14	árvore	árvore	NOUN	_	Gender=Fem|Number=Sing	16	nsubj	16:nsubj	_
+15	está	estar	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	16:cop	_
+16	doente	doente	ADJ	_	Number=Sing	9	conj	1:parataxis|9:conj:ou	SpaceAfter=No
+17	?	?	PUNCT	_	_	1	punct	1:punct	_
+
+# sent_id = S0012
+# text = Não conseguimos entender!
+1	Não	não	ADV	_	_	2	advmod	2:advmod	_
+2	conseguimos	conseguir	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+3	entender	entender	VERB	_	VerbForm=Inf	2	xcomp	2:xcomp	SpaceAfter=No
+4	!	!	PUNCT	_	_	2	punct	2:punct	_

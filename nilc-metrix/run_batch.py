@@ -25,7 +25,7 @@ OUT_ROOT = DATA_ROOT / "results"
 
 def iter_texts(group_dir: Path):
     for subset_dir in sorted(p for p in group_dir.iterdir() if p.is_dir()):
-        for txt_path in sorted(subset_dir.glob("*.txt")):
+        for txt_path in sorted(subset_dir.rglob("*.txt")):
             yield subset_dir.name, txt_path
 
 

@@ -9,9 +9,15 @@ if [ ! -d "$DATASET_DIR" ]; then
     exit 1
 fi
 
+if [ ! -d "$SCRIPT_DIR/nilcmetrix" ]; then
+    echo "Subpasta nilcmetrix/ não encontrada em $SCRIPT_DIR" >&2
+    exit 1
+fi
+
 docker run --rm \
     --link pgs_cohmetrix:pgs_cohmetrix \
-    -v "$SCRIPT_DIR":/opt/text_metrics \
+    -v "$SCRIPT_DIR/nilcmetrix":/opt/text_metrics \
+    -v "$SCRIPT_DIR":/opt/wrapper \
     -v "$DATASET_DIR":/data \
     cohmetrix:focal \
-    bash -c "cd /opt/text_metrics && python3 run_batch.py"
+    bash -c "cd /opt/text_metrics && PYTHONPATH=/opt/text_metrics python3 /opt/wrapper/run_batch.py"

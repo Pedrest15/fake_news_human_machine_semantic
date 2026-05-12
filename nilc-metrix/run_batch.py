@@ -63,8 +63,7 @@ def process_group(group_dir: Path, output_csv: Path) -> None:
             writer.writerow(row)
             f_out.flush()
             n_ok += 1
-            if n_ok % 10 == 0:
-                print(f"  ... {n_ok} textos em {group_dir.name}", flush=True)
+            print(f"  [{n_ok}] {subset}/{txt_path.name}", flush=True)
 
     print(f"[{group_dir.name}] ok={n_ok}  falhas={n_fail}  -> {output_csv}", flush=True)
 

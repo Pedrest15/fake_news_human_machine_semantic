@@ -246,9 +246,38 @@ SUBSET_TO_CORPUS = {
     'fake_true_human': 'fake_true_br', 'fake_true_llm': 'fake_true_br',
 }
 
+# Tier A: contagens absolutas do NILC-Metrix. Removidas para neutralizar o vies
+# de tamanho (humanos avg 175 palavras vs LLM avg 326). A truncagem pareada em
+# corpus_truncated/ ja iguala o comprimento por par, mas mesmo apos truncagem
+# nao queremos features que codifiquem o tamanho residual.
+NILC_TIER_A_ABSOLUTE = frozenset({
+    "words",
+    "sentences",
+    "paragraphs",
+    "subtitles",
+    "logic_operators",
+    "relative_clauses",
+    "subordinate_clauses",
+    "infinite_subordinate_clauses",
+    "sentences_with_zero_clause",
+    "sentences_with_one_clause",
+    "sentences_with_two_clauses",
+    "sentences_with_three_clauses",
+    "sentences_with_four_clauses",
+    "sentences_with_five_clauses",
+    "sentences_with_six_clauses",
+    "sentences_with_seven_more_clauses",
+})
 
-def load_nilcmetrics(human_csv: Path, llm_csv: Path) -> Optional[pd.DataFrame]:
-    """Concatena human/llm CSVs do NILC-Metrix e padroniza colunas."""
+
+def load_nilcmetrics(human_csv: Path, llm_csv: Path,
+                     drop_absolute: bool = True) -> Optional[pd.DataFrame]:
+    """Concatena human/llm CSVs do NILC-Metrix e padroniza colunas.
+
+    Quando drop_absolute=True (default), remove as features Tier A
+    (NILC_TIER_A_ABSOLUTE) que codificam contagens absolutas dependentes
+    do tamanho do texto.
+    """
     if not human_csv.exists() or not llm_csv.exists():
         logger.warning(f"NILCmetrics nao encontrado: {human_csv}, {llm_csv}")
         return None
@@ -262,6 +291,13 @@ def load_nilcmetrics(human_csv: Path, llm_csv: Path) -> Optional[pd.DataFrame]:
     df = df.rename(columns={'file': 'filename'})
     df['subset_corpus'] = df['subset'].map(SUBSET_TO_CORPUS)
     df = df.drop(columns=['subset'])
+
+    if drop_absolute:
+        to_drop = [c for c in df.columns if c in NILC_TIER_A_ABSOLUTE]
+        if to_drop:
+            df = df.drop(columns=to_drop)
+            logger.info(f"  NILCmetrics: removidas {len(to_drop)} features Tier A "
+                        f"(contagens absolutas): {sorted(to_drop)}")
 
     feature_cols = [c for c in df.columns if c not in {'filename', 'subset_corpus', 'label'}]
     df = df[['filename', 'subset_corpus', 'label'] + feature_cols]
@@ -833,6 +869,7 @@ class LinguisticFeaturesPipeline:
         sage_csv: Path = SAGE_CSV_DEFAULT,
         cv_folds: int = 5,
         cache_dir: Optional[Path] = None,
+        drop_nilc_absolute: bool = True,
     ):
         self.exp_dir = exp_dir
         self.feature_mode = feature_mode
@@ -849,6 +886,7 @@ class LinguisticFeaturesPipeline:
         self.ud_rules_dir = ud_rules_dir
         self.ud_top_k = ud_top_k
         self.syllables_csv = syllables_csv
+        self.drop_nilc_absolute = drop_nilc_absolute
         self.pos_tagger_root = pos_tagger_root
         self.parser_human_txt = parser_human_txt
         self.parser_llm_txt = parser_llm_txt
@@ -870,7 +908,8 @@ class LinguisticFeaturesPipeline:
     def _load_linguistic_frame(self) -> Optional[pd.DataFrame]:
         frames = []
         if 'nilcmetrics' in self.feature_groups:
-            df = load_nilcmetrics(self.nilc_human_csv, self.nilc_llm_csv)
+            df = load_nilcmetrics(self.nilc_human_csv, self.nilc_llm_csv,
+                                  drop_absolute=self.drop_nilc_absolute)
             if df is not None:
                 frames.append(df)
         if 'liwc' in self.feature_groups:
@@ -1173,6 +1212,9 @@ Exemplos:
     p.add_argument('--no-normalize', action='store_true')
     p.add_argument('--no-grid-search', action='store_true')
     p.add_argument('--cv-folds', type=int, default=5)
+    p.add_argument('--keep-nilc-absolute', action='store_true',
+                   help='Desativa o blacklist Tier A (mantem words/sentences/paragraphs/'
+                        'subtitles/logic_operators/*_clauses no NILC). Use para ablacao.')
     return p.parse_args()
 
 
@@ -1206,6 +1248,7 @@ def main():
         corpus_dirs=corpus_dirs,
         ud_top_k=args.ud_top_k,
         cv_folds=args.cv_folds,
+        drop_nilc_absolute=not args.keep_nilc_absolute,
     )
 
     classifiers = list(CLASSIFIERS_CONFIG.keys()) if args.classifier == 'all' else [args.classifier]

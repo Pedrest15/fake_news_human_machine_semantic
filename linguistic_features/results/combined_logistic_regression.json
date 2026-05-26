@@ -1,0 +1,136 @@
+{
+  "experiment": "combined",
+  "classifier": "logistic_regression",
+  "feature_mode": "combined",
+  "feature_groups": [
+    "nilcmetrics",
+    "liwc",
+    "enhanced_ud",
+    "syllables",
+    "pos_tagger",
+    "parser_stats",
+    "sage_terms"
+  ],
+  "bert_model": "neuralmind/bert-base-portuguese-cased",
+  "n_features": 1607,
+  "normalized": true,
+  "top_k_selection": null,
+  "data_split": {
+    "train_samples": 5758,
+    "test_samples": 1439
+  },
+  "grid_search": {
+    "enabled": true,
+    "cv_folds": 5,
+    "best_params": {
+      "C": 0.1,
+      "penalty": "l1",
+      "solver": "saga"
+    },
+    "cv_score": 0.9996527767312184
+  },
+  "test_results": {
+    "accuracy": 1.0,
+    "f1": 1.0,
+    "precision": 1.0,
+    "recall": 1.0
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        719,
+        0
+      ],
+      [
+        0,
+        720
+      ]
+    ],
+    "tn": 719,
+    "fp": 0,
+    "fn": 0,
+    "tp": 720
+  },
+  "feature_importance": [
+    [
+      "nilc__lsa_all_std",
+      2.7076195550075197
+    ],
+    [
+      "nilc__sentences_per_paragraph",
+      0.8233502139691689
+    ],
+    [
+      "nilc__punctuation_diversity",
+      0.6708595009359121
+    ],
+    [
+      "nilc__lsa_paragraph_std",
+      0.6502095229551622
+    ],
+    [
+      "nilc__sentence_length_standard_deviation",
+      0.4418398672898183
+    ],
+    [
+      "syll__media_silabas_por_palavra",
+      0.4093270535058398
+    ],
+    [
+      "nilc__gerund_verbs",
+      0.40418207479759277
+    ],
+    [
+      "nilc__honore",
+      0.3372860498170352
+    ],
+    [
+      "bert_bertimbau__31",
+      0.2902289924647623
+    ],
+    [
+      "ud__VERB(PUNCT/punct, *, NOUN/obj)",
+      0.26131472682647844
+    ],
+    [
+      "syll__media_silabas_por_sentenca",
+      0.23869509450578788
+    ],
+    [
+      "nilc__content_word_diversity",
+      0.23591220010116618
+    ],
+    [
+      "bert_bertimbau__188",
+      0.21704296804445203
+    ],
+    [
+      "nilc__add_neg_conn_ratio",
+      0.21039956580306005
+    ],
+    [
+      "bert_bertimbau__165",
+      0.2084777438736274
+    ],
+    [
+      "nilc__verbs_ambiguity",
+      0.19629312094471385
+    ],
+    [
+      "nilc__concretude_4_55_ratio",
+      0.19117030513317787
+    ],
+    [
+      "bert_bertimbau__419",
+      0.19054956593812272
+    ],
+    [
+      "bert_bertimbau__39",
+      0.1830465204480572
+    ],
+    [
+      "bert_bertimbau__386",
+      0.17535578069426688
+    ]
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "experiment": "combined",
+  "classifier": "random_forest",
+  "feature_mode": "combined",
+  "feature_groups": [
+    "nilcmetrics",
+    "liwc",
+    "enhanced_ud",
+    "syllables",
+    "pos_tagger",
+    "parser_stats",
+    "sage_terms"
+  ],
+  "bert_model": "neuralmind/bert-base-portuguese-cased",
+  "n_features": 1607,
+  "normalized": true,
+  "top_k_selection": null,
+  "data_split": {
+    "train_samples": 5758,
+    "test_samples": 1439
+  },
+  "grid_search": {
+    "enabled": true,
+    "cv_folds": 5,
+    "best_params": {
+      "max_depth": 20,
+      "min_samples_leaf": 1,
+      "min_samples_split": 10,
+      "n_estimators": 100
+    },
+    "cv_score": 1.0
+  },
+  "test_results": {
+    "accuracy": 0.9993050729673384,
+    "f1": 0.9993050729673384,
+    "precision": 0.9993060381437726,
+    "recall": 0.9993050729673384
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        719,
+        0
+      ],
+      [
+        1,
+        719
+      ]
+    ],
+    "tn": 719,
+    "fp": 0,
+    "fn": 1,
+    "tp": 719
+  },
+  "feature_importance": [
+    [
+      "nilc__lsa_all_std",
+      0.09563031441884572
+    ],
+    [
+      "nilc__sentences_per_paragraph",
+      0.09036896431296744
+    ],
+    [
+      "nilc__content_word_diversity",
+      0.04867222495831276
+    ],
+    [
+      "nilc__lsa_paragraph_std",
+      0.03547810581141689
+    ],
+    [
+      "nilc__flesch",
+      0.03421837698718309
+    ],
+    [
+      "nilc__syllables_per_content_word",
+      0.027637168877001617
+    ],
+    [
+      "syll__media_silabas_por_palavra",
+      0.026160424560455846
+    ],
+    [
+      "liwc__word_count",
+      0.025896647312608354
+    ],
+    [
+      "nilc__lsa_paragraph_mean",
+      0.024028393070675978
+    ],
+    [
+      "ud__VERB(PUNCT/punct, *, NOUN/obj)",
+      0.02205136281215398
+    ],
+    [
+      "nilc__punctuation_diversity",
+      0.019293317441690945
+    ],
+    [
+      "nilc__honore",
+      0.019044318002699782
+    ],
+    [
+      "nilc__cross_entropy",
+      0.019035994775571
+    ],
+    [
+      "nilc__idade_aquisicao_mean",
+      0.01562880687246341
+    ],
+    [
+      "nilc__gerund_verbs",
+      0.015342612035114356
+    ],
+    [
+      "nilc__ttr",
+      0.014319077058187064
+    ],
+    [
+      "nilc__lsa_givenness_mean",
+      0.013916446954893587
+    ],
+    [
+      "nilc__adjective_ratio",
+      0.012714005090285745
+    ],
+    [
+      "ud__ADJ(*)",
+      0.010947960360718037
+    ],
+    [
+      "liwc__matched_words",
+      0.010201362870272799
+    ]
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "experiment": "combined",
+  "classifier": "svm",
+  "feature_mode": "combined",
+  "feature_groups": [
+    "nilcmetrics",
+    "liwc",
+    "enhanced_ud",
+    "syllables",
+    "pos_tagger",
+    "parser_stats",
+    "sage_terms"
+  ],
+  "bert_model": "neuralmind/bert-base-portuguese-cased",
+  "n_features": 1607,
+  "normalized": true,
+  "top_k_selection": null,
+  "data_split": {
+    "train_samples": 5758,
+    "test_samples": 1439
+  },
+  "grid_search": {
+    "enabled": true,
+    "cv_folds": 5,
+    "best_params": {
+      "C": 0.1,
+      "gamma": "scale",
+      "kernel": "linear"
+    },
+    "cv_score": 0.9982632792612399
+  },
+  "test_results": {
+    "accuracy": 1.0,
+    "f1": 1.0,
+    "precision": 1.0,
+    "recall": 1.0
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        719,
+        0
+      ],
+      [
+        0,
+        720
+      ]
+    ],
+    "tn": 719,
+    "fp": 0,
+    "fn": 0,
+    "tp": 720
+  },
+  "feature_importance": [
+    [
+      "nilc__lsa_all_std",
+      0.137779889047747
+    ],
+    [
+      "nilc__sentences_per_paragraph",
+      0.07685607071391014
+    ],
+    [
+      "nilc__punctuation_diversity",
+      0.05076007435930244
+    ],
+    [
+      "nilc__lsa_paragraph_std",
+      0.049359662444626834
+    ],
+    [
+      "ud__VERB(PUNCT/punct, *, NOUN/obj)",
+      0.04695553089046983
+    ],
+    [
+      "nilc__brunet",
+      0.04584891764148472
+    ],
+    [
+      "nilc__gerund_verbs",
+      0.04442794452010012
+    ],
+    [
+      "nilc__honore",
+      0.04240373044137846
+    ],
+    [
+      "nilc__sentence_length_standard_deviation",
+      0.03522516033788991
+    ],
+    [
+      "ud__ADV(*, PRON/fixed, PUNCT/punct)",
+      0.031843498571352796
+    ],
+    [
+      "nilc__verbs_ambiguity",
+      0.0314160505783608
+    ],
+    [
+      "nilc__function_word_diversity",
+      0.03072929424357749
+    ],
+    [
+      "nilc__positive_words",
+      0.030398376096054745
+    ],
+    [
+      "ud__NOUN(ADP/case, *, ADJ/amod, PROPN/nmod)",
+      0.030341940803351137
+    ],
+    [
+      "syll__media_silabas_por_palavra",
+      0.030101704633571834
+    ],
+    [
+      "liwc__number (Numbers)",
+      0.02914133418975206
+    ],
+    [
+      "nilc__lsa_span_mean",
+      0.028678908528566124
+    ],
+    [
+      "syll__media_silabas_por_sentenca",
+      0.028431321951492113
+    ],
+    [
+      "ud__ADV(CCONJ/cc, *)",
+      0.027908460692822296
+    ],
+    [
+      "nilc__add_neg_conn_ratio",
+      0.027408962333750186
+    ]
+  ]
+}

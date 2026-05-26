@@ -1,0 +1,57 @@
+{
+  "experiment": "combined",
+  "classifier": "mlp",
+  "feature_mode": "combined",
+  "feature_groups": [
+    "nilcmetrics",
+    "liwc",
+    "enhanced_ud",
+    "syllables",
+    "pos_tagger",
+    "parser_stats",
+    "sage_terms"
+  ],
+  "bert_model": "neuralmind/bert-base-portuguese-cased",
+  "n_features": 1607,
+  "normalized": true,
+  "top_k_selection": null,
+  "data_split": {
+    "train_samples": 5758,
+    "test_samples": 1439
+  },
+  "grid_search": {
+    "enabled": true,
+    "cv_folds": 5,
+    "best_params": {
+      "activation": "tanh",
+      "alpha": 0.0001,
+      "hidden_layer_sizes": [
+        256
+      ]
+    },
+    "cv_score": 0.9963532376958257
+  },
+  "test_results": {
+    "accuracy": 0.9986101459346769,
+    "f1": 0.9986101419074995,
+    "precision": 0.9986139959459381,
+    "recall": 0.9986101459346769
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        717,
+        2
+      ],
+      [
+        0,
+        720
+      ]
+    ],
+    "tn": 717,
+    "fp": 2,
+    "fn": 0,
+    "tp": 720
+  },
+  "feature_importance": null
+}

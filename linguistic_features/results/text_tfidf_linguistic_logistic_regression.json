@@ -1,0 +1,53 @@
+{
+  "experiment": "tfidf+linguistic",
+  "vectorizer": "tfidf",
+  "classifier": "logistic_regression",
+  "n_features_text": 10000,
+  "n_features_linguistic": 839,
+  "n_features_total": 10839,
+  "vectorizer_config": {
+    "max_features": 10000,
+    "ngram_range": [
+      1,
+      1
+    ],
+    "min_df": 5,
+    "sublinear_tf": true
+  },
+  "data_split": {
+    "train_samples": 8250,
+    "test_samples": 2052
+  },
+  "grid_search": {
+    "enabled": true,
+    "cv_folds": 5,
+    "best_params": {
+      "C": 0.01,
+      "penalty": "l2",
+      "solver": "lbfgs"
+    },
+    "cv_score": 0.9924842177463413
+  },
+  "test_results": {
+    "accuracy": 0.9941520467836257,
+    "f1": 0.9941517459629869,
+    "precision": 0.9941533393324311,
+    "recall": 0.9941520467836257
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        966,
+        7
+      ],
+      [
+        5,
+        1074
+      ]
+    ],
+    "tn": 966,
+    "fp": 7,
+    "fn": 5,
+    "tp": 1074
+  }
+}

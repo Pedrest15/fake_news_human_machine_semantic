@@ -246,10 +246,8 @@ SUBSET_TO_CORPUS = {
     'fake_true_human': 'fake_true_br', 'fake_true_llm': 'fake_true_br',
 }
 
-# Tier A: contagens absolutas do NILC-Metrix. Removidas para neutralizar o vies
-# de tamanho (humanos avg 175 palavras vs LLM avg 326). A truncagem pareada em
-# corpus_truncated/ ja iguala o comprimento por par, mas mesmo apos truncagem
-# nao queremos features que codifiquem o tamanho residual.
+# Tier A: contagens absolutas do NILC-Metrix.
+# Codificam diretamente o tamanho do texto (words, sentences, paragraphs etc.).
 NILC_TIER_A_ABSOLUTE = frozenset({
     "words",
     "sentences",
@@ -269,14 +267,64 @@ NILC_TIER_A_ABSOLUTE = frozenset({
     "sentences_with_seven_more_clauses",
 })
 
+# Tier B: features formalmente normalizadas mas empiricamente length-biased.
+# Quatro grupos:
+#  - Riqueza vocabular (TTR-like, Tweedie & Baayen 1998): ttr, honore, brunet.
+#  - Diversidades TTR-like por classe gramatical: *_diversity / *_diversity_ratio.
+#  - Max/min/std de contagens por POS e de comprimento de unidades: o MAX
+#    cresce com N, o STD escala com sqrt(N) para muitas distribuicoes.
+#  - Std de similaridades LSA: variancia amostral depende do n. de pares
+#    sentenca-a-sentenca disponivel, que escala com N.
+NILC_TIER_B_LENGTH_CORRELATED = frozenset({
+    # Riqueza vocabular
+    "ttr",
+    "honore",
+    "brunet",
+    # Diversidades TTR-like
+    "content_word_diversity",
+    "function_word_diversity",
+    "noun_diversity",
+    "verb_diversity",
+    "preposition_diversity",
+    "punctuation_diversity",
+    "pronoun_diversity",
+    "indefinite_pronouns_diversity",
+    "adjective_diversity_ratio",
+    "adverbs_diversity_ratio",
+    "relative_pronouns_diversity_ratio",
+    "verbal_time_moods_diversity",
+    # max/min/std de contagens por POS
+    "adjectives_max", "adjectives_min", "adjectives_standard_deviation",
+    "adverbs_max", "adverbs_min", "adverbs_standard_deviation",
+    "content_word_max", "content_word_min", "content_word_standard_deviation",
+    "nouns_max", "nouns_min", "nouns_standard_deviation",
+    "pronouns_max", "pronouns_min", "pronouns_standard_deviation",
+    "verbs_max", "verbs_min", "verbs_standard_deviation",
+    # max/min/std de comprimento de unidades
+    "sentence_length_max",
+    "sentence_length_min",
+    "sentence_length_standard_deviation",
+    "max_noun_phrase",
+    "min_noun_phrase",
+    "std_noun_phrase",
+    # Std das similaridades LSA (mantemos os means: lsa_*_mean)
+    "lsa_adj_std",
+    "lsa_all_std",
+    "lsa_paragraph_std",
+    "lsa_givenness_std",
+    "lsa_span_std",
+})
+
+NILC_LENGTH_BIASED = NILC_TIER_A_ABSOLUTE | NILC_TIER_B_LENGTH_CORRELATED
+
 
 def load_nilcmetrics(human_csv: Path, llm_csv: Path,
                      drop_absolute: bool = True) -> Optional[pd.DataFrame]:
     """Concatena human/llm CSVs do NILC-Metrix e padroniza colunas.
 
-    Quando drop_absolute=True (default), remove as features Tier A
-    (NILC_TIER_A_ABSOLUTE) que codificam contagens absolutas dependentes
-    do tamanho do texto.
+    Quando drop_absolute=True (default), remove as features length-biased:
+    Tier A (contagens absolutas) + Tier B (diversidades TTR-like, riqueza
+    vocabular, max/min/std de contagens, std de coseno LSA).
     """
     if not human_csv.exists() or not llm_csv.exists():
         logger.warning(f"NILCmetrics nao encontrado: {human_csv}, {llm_csv}")
@@ -293,11 +341,13 @@ def load_nilcmetrics(human_csv: Path, llm_csv: Path,
     df = df.drop(columns=['subset'])
 
     if drop_absolute:
-        to_drop = [c for c in df.columns if c in NILC_TIER_A_ABSOLUTE]
+        tier_a = [c for c in df.columns if c in NILC_TIER_A_ABSOLUTE]
+        tier_b = [c for c in df.columns if c in NILC_TIER_B_LENGTH_CORRELATED]
+        to_drop = tier_a + tier_b
         if to_drop:
             df = df.drop(columns=to_drop)
-            logger.info(f"  NILCmetrics: removidas {len(to_drop)} features Tier A "
-                        f"(contagens absolutas): {sorted(to_drop)}")
+            logger.info(f"  NILCmetrics: removidas {len(tier_a)} features Tier A "
+                        f"+ {len(tier_b)} features Tier B = {len(to_drop)} length-biased")
 
     feature_cols = [c for c in df.columns if c not in {'filename', 'subset_corpus', 'label'}]
     df = df[['filename', 'subset_corpus', 'label'] + feature_cols]
@@ -310,8 +360,54 @@ def load_nilcmetrics(human_csv: Path, llm_csv: Path,
     return df
 
 
-def load_liwc(liwc_csv: Path) -> Optional[pd.DataFrame]:
-    """Carrega liwc_per_document_scores.csv (humano+LLM em um arquivo)."""
+# LIWC expoe 3 campos length-direct (contagens/ratio de metadado, nao
+# categorias psicolinguisticas) que devem sair junto com a categoria.
+LIWC_ABSOLUTE_FIELDS = frozenset({
+    "word_count",
+    "matched_words",
+    "dictionary_coverage",
+})
+
+# LIWC tem hierarquia: categorias agregadoras subsumem subcategorias mais
+# especificas. Cada palavra recebe os ids do agregador E dos filhos, criando
+# colinearidade entre eles. Removemos os agregadores e mantemos as folhas
+# (categorias mais especificas). Lista derivada da estrutura LIWC2015:
+#  function   ⊃  pronoun, article, prep, auxverb, adverb, conj, negate
+#  pronoun    ⊃  ppron, ipron
+#  ppron      ⊃  i, we, you, shehe, they
+#  affect     ⊃  posemo, negemo
+#  negemo     ⊃  anx, anger, sad
+#  social     ⊃  family, friend, female, male
+#  cogproc    ⊃  insight, cause, discrep, tentat, certain, differ
+#  percept    ⊃  see, hear, feel
+#  bio        ⊃  body, health, sexual, ingest
+#  drives     ⊃  affiliation, achieve, power, reward, risk
+#  relativ    ⊃  motion, space, time
+#  informal   ⊃  swear, netspeak, assent, nonflu, filler
+LIWC_AGGREGATOR_CATEGORIES = frozenset({
+    "function (Function Words)",
+    "pronoun (Pronouns)",
+    "ppron (Personal Pronouns)",
+    "affect (Affect)",
+    "negemo (Negative Emotions)",
+    "social (Social)",
+    "cogproc (Cognitive Processes)",
+    "percept (Perceptual Processes)",
+    "bio (Biological Processes)",
+    "drives (Drives)",
+    "relativ (Relativity)",
+    "informal (Informal Language)",
+})
+
+
+def load_liwc(liwc_csv: Path, drop_absolute: bool = True) -> Optional[pd.DataFrame]:
+    """Carrega liwc_per_document_scores.csv (humano+LLM em um arquivo).
+
+    Quando drop_absolute=True (default), remove:
+      - LIWC_ABSOLUTE_FIELDS (word_count, matched_words, dictionary_coverage)
+      - LIWC_AGGREGATOR_CATEGORIES (12 categorias agregadoras na hierarquia
+        LIWC2015, mantendo apenas as folhas especificas).
+    """
     if not liwc_csv.exists():
         logger.warning(f"LIWC nao encontrado: {liwc_csv}")
         return None
@@ -331,6 +427,15 @@ def load_liwc(liwc_csv: Path) -> Optional[pd.DataFrame]:
     df = df.drop(columns=['file_path', 'author_type'])
 
     df = df.dropna(subset=['subset_corpus'])
+
+    if drop_absolute:
+        length_direct = [c for c in df.columns if c in LIWC_ABSOLUTE_FIELDS]
+        aggregators = [c for c in df.columns if c in LIWC_AGGREGATOR_CATEGORIES]
+        to_drop = length_direct + aggregators
+        if to_drop:
+            df = df.drop(columns=to_drop)
+            logger.info(f"  LIWC: removidos {len(length_direct)} length-direct "
+                        f"+ {len(aggregators)} categorias agregadoras = {len(to_drop)}")
 
     feature_cols = [c for c in df.columns if c not in {'filename', 'subset_corpus', 'label'}]
     df = df[['filename', 'subset_corpus', 'label'] + feature_cols]

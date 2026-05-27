@@ -1,0 +1,654 @@
+{
+  "n_features_total": 839,
+  "features_by_group": {
+    "nilc": 184,
+    "liwc": 76,
+    "enhanced_ud": 500,
+    "syllables": 2,
+    "pos_tagger": 17,
+    "sage_terms": 60
+  },
+  "data_split": {
+    "train": 8250,
+    "test": 2052
+  },
+  "threshold_for_kmin": 0.9999,
+  "top20_by_mutual_information": [
+    {
+      "feature": "nilc__sentences_per_paragraph",
+      "group": "nilc",
+      "mi": 0.5202647273074177,
+      "f_stat": 549.9512613149734,
+      "p_value": 8.656012026075765e-118,
+      "pearson_corr": 0.25001802797515343,
+      "univariate_f1": 0.7235768221122532
+    },
+    {
+      "feature": "nilc__lsa_all_std",
+      "group": "nilc",
+      "mi": 0.44232823937188703,
+      "f_stat": 800.3259616090813,
+      "p_value": 4.020621090014216e-168,
+      "pearson_corr": 0.2974057314944191,
+      "univariate_f1": 0.7525377821430453
+    },
+    {
+      "feature": "nilc__lsa_paragraph_mean",
+      "group": "nilc",
+      "mi": 0.374921951639253,
+      "f_stat": 34.19934203919471,
+      "p_value": 5.16413648184554e-09,
+      "pearson_corr": 0.06425930672588681,
+      "univariate_f1": 0.40114221344212053
+    },
+    {
+      "feature": "syll__media_silabas_por_palavra",
+      "group": "syllables",
+      "mi": 0.3468732216656145,
+      "f_stat": 7521.021124726844,
+      "p_value": 0.0,
+      "pearson_corr": 0.6906150475090528,
+      "univariate_f1": 0.8404420564475829
+    },
+    {
+      "feature": "nilc__flesch",
+      "group": "nilc",
+      "mi": 0.3327902189399752,
+      "f_stat": 7198.05692623801,
+      "p_value": 0.0,
+      "pearson_corr": -0.6826511449096244,
+      "univariate_f1": 0.8336908829304488
+    },
+    {
+      "feature": "nilc__content_word_diversity",
+      "group": "nilc",
+      "mi": 0.32733820561728444,
+      "f_stat": 4794.340178630025,
+      "p_value": 0.0,
+      "pearson_corr": 0.6062987336231177,
+      "univariate_f1": 0.8152139429257169
+    },
+    {
+      "feature": "nilc__syllables_per_content_word",
+      "group": "nilc",
+      "mi": 0.3213089328119647,
+      "f_stat": 6777.474177197291,
+      "p_value": 0.0,
+      "pearson_corr": 0.6716141577207864,
+      "univariate_f1": 0.8301878753200377
+    },
+    {
+      "feature": "nilc__honore",
+      "group": "nilc",
+      "mi": 0.306536270387354,
+      "f_stat": 4811.04380809859,
+      "p_value": 0.0,
+      "pearson_corr": 0.60696544401213,
+      "univariate_f1": 0.8185370160308325
+    },
+    {
+      "feature": "nilc__lsa_paragraph_std",
+      "group": "nilc",
+      "mi": 0.2974526085575495,
+      "f_stat": 2169.101102637749,
+      "p_value": 0.0,
+      "pearson_corr": -0.45631679965901006,
+      "univariate_f1": 0.7653587226897154
+    },
+    {
+      "feature": "nilc__idade_aquisicao_1_25_ratio",
+      "group": "nilc",
+      "mi": 0.28263544203755075,
+      "f_stat": 3632.18445414694,
+      "p_value": 0.0,
+      "pearson_corr": -0.552932803507788,
+      "univariate_f1": 0.7800398419221739
+    },
+    {
+      "feature": "nilc__long_sentence_ratio",
+      "group": "nilc",
+      "mi": 0.25878873845021966,
+      "f_stat": 4214.125110836004,
+      "p_value": 0.0,
+      "pearson_corr": 0.5815106313301474,
+      "univariate_f1": 0.7625416912741109
+    },
+    {
+      "feature": "nilc__gerund_verbs",
+      "group": "nilc",
+      "mi": 0.25634227709251545,
+      "f_stat": 2887.4851305016036,
+      "p_value": 0.0,
+      "pearson_corr": 0.5092198293949586,
+      "univariate_f1": 0.7625977890593966
+    },
+    {
+      "feature": "nilc__idade_aquisicao_mean",
+      "group": "nilc",
+      "mi": 0.2548263828488957,
+      "f_stat": 5311.647482439926,
+      "p_value": 0.0,
+      "pearson_corr": 0.6258790615787652,
+      "univariate_f1": 0.7882745424140386
+    },
+    {
+      "feature": "nilc__idade_aquisicao_55_7_ratio",
+      "group": "nilc",
+      "mi": 0.2520151748722179,
+      "f_stat": 4023.3707891927943,
+      "p_value": 0.0,
+      "pearson_corr": 0.5725962373001252,
+      "univariate_f1": 0.7802031739271388
+    },
+    {
+      "feature": "nilc__named_entity_ratio_text",
+      "group": "nilc",
+      "mi": 0.25007347246794764,
+      "f_stat": 779.8253156969738,
+      "p_value": 4.698225671512979e-164,
+      "pearson_corr": 0.2939050790622421,
+      "univariate_f1": 0.6804341289940651
+    },
+    {
+      "feature": "nilc__ttr",
+      "group": "nilc",
+      "mi": 0.24800316118893195,
+      "f_stat": 2511.3616905417352,
+      "p_value": 0.0,
+      "pearson_corr": 0.48312707767860297,
+      "univariate_f1": 0.7747354680353853
+    },
+    {
+      "feature": "nilc__punctuation_diversity",
+      "group": "nilc",
+      "mi": 0.24305473979156833,
+      "f_stat": 3823.7217838362317,
+      "p_value": 0.0,
+      "pearson_corr": -0.562805760274852,
+      "univariate_f1": 0.7963184537364386
+    },
+    {
+      "feature": "pos__ADJ",
+      "group": "pos_tagger",
+      "mi": 0.24204535049039144,
+      "f_stat": 3167.437906449683,
+      "p_value": 0.0,
+      "pearson_corr": 0.5267539086760351,
+      "univariate_f1": 0.7611916550179111
+    },
+    {
+      "feature": "nilc__imageabilidade_25_4_ratio",
+      "group": "nilc",
+      "mi": 0.2398924118522332,
+      "f_stat": 4004.383447533676,
+      "p_value": 0.0,
+      "pearson_corr": 0.5716859761419851,
+      "univariate_f1": 0.7609948876899636
+    },
+    {
+      "feature": "nilc__named_entity_ratio_sentence",
+      "group": "nilc",
+      "mi": 0.234972418523818,
+      "f_stat": 412.98880036520035,
+      "p_value": 1.250515052926693e-89,
+      "pearson_corr": 0.2183661910033579,
+      "univariate_f1": 0.6761127094815995
+    }
+  ],
+  "top20_by_f_statistic": [
+    {
+      "feature": "syll__media_silabas_por_palavra",
+      "group": "syllables",
+      "mi": 0.3468732216656145,
+      "f_stat": 7521.021124726844,
+      "p_value": 0.0,
+      "pearson_corr": 0.6906150475090528,
+      "univariate_f1": 0.8404420564475829
+    },
+    {
+      "feature": "nilc__flesch",
+      "group": "nilc",
+      "mi": 0.3327902189399752,
+      "f_stat": 7198.05692623801,
+      "p_value": 0.0,
+      "pearson_corr": -0.6826511449096244,
+      "univariate_f1": 0.8336908829304488
+    },
+    {
+      "feature": "nilc__syllables_per_content_word",
+      "group": "nilc",
+      "mi": 0.3213089328119647,
+      "f_stat": 6777.474177197291,
+      "p_value": 0.0,
+      "pearson_corr": 0.6716141577207864,
+      "univariate_f1": 0.8301878753200377
+    },
+    {
+      "feature": "nilc__idade_aquisicao_mean",
+      "group": "nilc",
+      "mi": 0.2548263828488957,
+      "f_stat": 5311.647482439926,
+      "p_value": 0.0,
+      "pearson_corr": 0.6258790615787652,
+      "univariate_f1": 0.7882745424140386
+    },
+    {
+      "feature": "nilc__honore",
+      "group": "nilc",
+      "mi": 0.306536270387354,
+      "f_stat": 4811.04380809859,
+      "p_value": 0.0,
+      "pearson_corr": 0.60696544401213,
+      "univariate_f1": 0.8185370160308325
+    },
+    {
+      "feature": "nilc__content_word_diversity",
+      "group": "nilc",
+      "mi": 0.32733820561728444,
+      "f_stat": 4794.340178630025,
+      "p_value": 0.0,
+      "pearson_corr": 0.6062987336231177,
+      "univariate_f1": 0.8152139429257169
+    },
+    {
+      "feature": "nilc__long_sentence_ratio",
+      "group": "nilc",
+      "mi": 0.25878873845021966,
+      "f_stat": 4214.125110836004,
+      "p_value": 0.0,
+      "pearson_corr": 0.5815106313301474,
+      "univariate_f1": 0.7625416912741109
+    },
+    {
+      "feature": "nilc__idade_aquisicao_55_7_ratio",
+      "group": "nilc",
+      "mi": 0.2520151748722179,
+      "f_stat": 4023.3707891927943,
+      "p_value": 0.0,
+      "pearson_corr": 0.5725962373001252,
+      "univariate_f1": 0.7802031739271388
+    },
+    {
+      "feature": "nilc__imageabilidade_25_4_ratio",
+      "group": "nilc",
+      "mi": 0.2398924118522332,
+      "f_stat": 4004.383447533676,
+      "p_value": 0.0,
+      "pearson_corr": 0.5716859761419851,
+      "univariate_f1": 0.7609948876899636
+    },
+    {
+      "feature": "nilc__punctuation_diversity",
+      "group": "nilc",
+      "mi": 0.24305473979156833,
+      "f_stat": 3823.7217838362317,
+      "p_value": 0.0,
+      "pearson_corr": -0.562805760274852,
+      "univariate_f1": 0.7963184537364386
+    },
+    {
+      "feature": "nilc__idade_aquisicao_1_25_ratio",
+      "group": "nilc",
+      "mi": 0.28263544203755075,
+      "f_stat": 3632.18445414694,
+      "p_value": 0.0,
+      "pearson_corr": -0.552932803507788,
+      "univariate_f1": 0.7800398419221739
+    },
+    {
+      "feature": "ud__ADJ(*)",
+      "group": "enhanced_ud",
+      "mi": 0.234908788299669,
+      "f_stat": 3574.629885191567,
+      "p_value": 0.0,
+      "pearson_corr": 0.5498680603596884,
+      "univariate_f1": 0.7654993243327135
+    },
+    {
+      "feature": "nilc__imageabilidade_4_55_ratio",
+      "group": "nilc",
+      "mi": 0.23022526015557854,
+      "f_stat": 3483.0085907679013,
+      "p_value": 0.0,
+      "pearson_corr": -0.5448909519603568,
+      "univariate_f1": 0.7574703589333263
+    },
+    {
+      "feature": "nilc__short_sentence_ratio",
+      "group": "nilc",
+      "mi": 0.22294429198432142,
+      "f_stat": 3380.8153018468115,
+      "p_value": 0.0,
+      "pearson_corr": -0.5391914367910411,
+      "univariate_f1": 0.7442023908398625
+    },
+    {
+      "feature": "liwc__word_count",
+      "group": "liwc",
+      "mi": 0.23017351906065708,
+      "f_stat": 3189.1109003470247,
+      "p_value": 0.0,
+      "pearson_corr": 0.5280519428373442,
+      "univariate_f1": 0.7915444129736925
+    },
+    {
+      "feature": "pos__ADJ",
+      "group": "pos_tagger",
+      "mi": 0.24204535049039144,
+      "f_stat": 3167.437906449683,
+      "p_value": 0.0,
+      "pearson_corr": 0.5267539086760351,
+      "univariate_f1": 0.7611916550179111
+    },
+    {
+      "feature": "nilc__imageabilidade_mean",
+      "group": "nilc",
+      "mi": 0.16489856887544274,
+      "f_stat": 3134.079627271017,
+      "p_value": 0.0,
+      "pearson_corr": -0.524740039204998,
+      "univariate_f1": 0.7224134363096664
+    },
+    {
+      "feature": "liwc__matched_words",
+      "group": "liwc",
+      "mi": 0.22526439536150145,
+      "f_stat": 2939.3929927871195,
+      "p_value": 0.0,
+      "pearson_corr": 0.5125832142741311,
+      "univariate_f1": 0.7900725575581636
+    },
+    {
+      "feature": "nilc__gerund_verbs",
+      "group": "nilc",
+      "mi": 0.25634227709251545,
+      "f_stat": 2887.4851305016036,
+      "p_value": 0.0,
+      "pearson_corr": 0.5092198293949586,
+      "univariate_f1": 0.7625977890593966
+    },
+    {
+      "feature": "nilc__non-inflected_verbs",
+      "group": "nilc",
+      "mi": 0.21132553371699214,
+      "f_stat": 2705.7339845955416,
+      "p_value": 0.0,
+      "pearson_corr": 0.49700579595513705,
+      "univariate_f1": 0.7399926120984708
+    }
+  ],
+  "top20_by_univariate_f1": [
+    {
+      "feature": "syll__media_silabas_por_palavra",
+      "group": "syllables",
+      "mi": 0.3468732216656145,
+      "f_stat": 7521.021124726844,
+      "p_value": 0.0,
+      "pearson_corr": 0.6906150475090528,
+      "univariate_f1": 0.8404420564475829
+    },
+    {
+      "feature": "nilc__flesch",
+      "group": "nilc",
+      "mi": 0.3327902189399752,
+      "f_stat": 7198.05692623801,
+      "p_value": 0.0,
+      "pearson_corr": -0.6826511449096244,
+      "univariate_f1": 0.8336908829304488
+    },
+    {
+      "feature": "nilc__syllables_per_content_word",
+      "group": "nilc",
+      "mi": 0.3213089328119647,
+      "f_stat": 6777.474177197291,
+      "p_value": 0.0,
+      "pearson_corr": 0.6716141577207864,
+      "univariate_f1": 0.8301878753200377
+    },
+    {
+      "feature": "nilc__honore",
+      "group": "nilc",
+      "mi": 0.306536270387354,
+      "f_stat": 4811.04380809859,
+      "p_value": 0.0,
+      "pearson_corr": 0.60696544401213,
+      "univariate_f1": 0.8185370160308325
+    },
+    {
+      "feature": "nilc__content_word_diversity",
+      "group": "nilc",
+      "mi": 0.32733820561728444,
+      "f_stat": 4794.340178630025,
+      "p_value": 0.0,
+      "pearson_corr": 0.6062987336231177,
+      "univariate_f1": 0.8152139429257169
+    },
+    {
+      "feature": "nilc__punctuation_diversity",
+      "group": "nilc",
+      "mi": 0.24305473979156833,
+      "f_stat": 3823.7217838362317,
+      "p_value": 0.0,
+      "pearson_corr": -0.562805760274852,
+      "univariate_f1": 0.7963184537364386
+    },
+    {
+      "feature": "liwc__word_count",
+      "group": "liwc",
+      "mi": 0.23017351906065708,
+      "f_stat": 3189.1109003470247,
+      "p_value": 0.0,
+      "pearson_corr": 0.5280519428373442,
+      "univariate_f1": 0.7915444129736925
+    },
+    {
+      "feature": "liwc__matched_words",
+      "group": "liwc",
+      "mi": 0.22526439536150145,
+      "f_stat": 2939.3929927871195,
+      "p_value": 0.0,
+      "pearson_corr": 0.5125832142741311,
+      "univariate_f1": 0.7900725575581636
+    },
+    {
+      "feature": "nilc__idade_aquisicao_mean",
+      "group": "nilc",
+      "mi": 0.2548263828488957,
+      "f_stat": 5311.647482439926,
+      "p_value": 0.0,
+      "pearson_corr": 0.6258790615787652,
+      "univariate_f1": 0.7882745424140386
+    },
+    {
+      "feature": "nilc__idade_aquisicao_55_7_ratio",
+      "group": "nilc",
+      "mi": 0.2520151748722179,
+      "f_stat": 4023.3707891927943,
+      "p_value": 0.0,
+      "pearson_corr": 0.5725962373001252,
+      "univariate_f1": 0.7802031739271388
+    },
+    {
+      "feature": "nilc__idade_aquisicao_1_25_ratio",
+      "group": "nilc",
+      "mi": 0.28263544203755075,
+      "f_stat": 3632.18445414694,
+      "p_value": 0.0,
+      "pearson_corr": -0.552932803507788,
+      "univariate_f1": 0.7800398419221739
+    },
+    {
+      "feature": "ud__VERB(PUNCT/punct, *, NOUN/obj)",
+      "group": "enhanced_ud",
+      "mi": 0.19400073510647653,
+      "f_stat": 2091.37352727046,
+      "p_value": 0.0,
+      "pearson_corr": 0.4497474302631736,
+      "univariate_f1": 0.7762145152994278
+    },
+    {
+      "feature": "nilc__ttr",
+      "group": "nilc",
+      "mi": 0.24800316118893195,
+      "f_stat": 2511.3616905417352,
+      "p_value": 0.0,
+      "pearson_corr": 0.48312707767860297,
+      "univariate_f1": 0.7747354680353853
+    },
+    {
+      "feature": "nilc__lsa_span_mean",
+      "group": "nilc",
+      "mi": 0.2125410039150184,
+      "f_stat": 2059.8468084593205,
+      "p_value": 0.0,
+      "pearson_corr": 0.447026720824939,
+      "univariate_f1": 0.7679870825073659
+    },
+    {
+      "feature": "ud__ADJ(*)",
+      "group": "enhanced_ud",
+      "mi": 0.234908788299669,
+      "f_stat": 3574.629885191567,
+      "p_value": 0.0,
+      "pearson_corr": 0.5498680603596884,
+      "univariate_f1": 0.7654993243327135
+    },
+    {
+      "feature": "nilc__lsa_paragraph_std",
+      "group": "nilc",
+      "mi": 0.2974526085575495,
+      "f_stat": 2169.101102637749,
+      "p_value": 0.0,
+      "pearson_corr": -0.45631679965901006,
+      "univariate_f1": 0.7653587226897154
+    },
+    {
+      "feature": "nilc__lsa_givenness_mean",
+      "group": "nilc",
+      "mi": 0.20555067236724978,
+      "f_stat": 2226.2162605220274,
+      "p_value": 0.0,
+      "pearson_corr": 0.46102333391433997,
+      "univariate_f1": 0.7639962091709939
+    },
+    {
+      "feature": "nilc__gerund_verbs",
+      "group": "nilc",
+      "mi": 0.25634227709251545,
+      "f_stat": 2887.4851305016036,
+      "p_value": 0.0,
+      "pearson_corr": 0.5092198293949586,
+      "univariate_f1": 0.7625977890593966
+    },
+    {
+      "feature": "nilc__long_sentence_ratio",
+      "group": "nilc",
+      "mi": 0.25878873845021966,
+      "f_stat": 4214.125110836004,
+      "p_value": 0.0,
+      "pearson_corr": 0.5815106313301474,
+      "univariate_f1": 0.7625416912741109
+    },
+    {
+      "feature": "pos__ADJ",
+      "group": "pos_tagger",
+      "mi": 0.24204535049039144,
+      "f_stat": 3167.437906449683,
+      "p_value": 0.0,
+      "pearson_corr": 0.5267539086760351,
+      "univariate_f1": 0.7611916550179111
+    }
+  ],
+  "forward_search_curve": [
+    {
+      "k": 1,
+      "f1": 0.8441801577080474,
+      "accuracy": 0.844541910331384
+    },
+    {
+      "k": 2,
+      "f1": 0.8432362397970335,
+      "accuracy": 0.8435672514619883
+    },
+    {
+      "k": 3,
+      "f1": 0.8461821509658893,
+      "accuracy": 0.8464912280701754
+    },
+    {
+      "k": 5,
+      "f1": 0.9034508058118486,
+      "accuracy": 0.9035087719298246
+    },
+    {
+      "k": 7,
+      "f1": 0.9351692033700687,
+      "accuracy": 0.9351851851851852
+    },
+    {
+      "k": 10,
+      "f1": 0.9410185985547241,
+      "accuracy": 0.9410331384015594
+    },
+    {
+      "k": 15,
+      "f1": 0.9571230128487187,
+      "accuracy": 0.9571150097465887
+    },
+    {
+      "k": 20,
+      "f1": 0.9615038070230969,
+      "accuracy": 0.9615009746588694
+    },
+    {
+      "k": 30,
+      "f1": 0.9766144667141833,
+      "accuracy": 0.9766081871345029
+    },
+    {
+      "k": 50,
+      "f1": 0.9883062762314687,
+      "accuracy": 0.9883040935672515
+    },
+    {
+      "k": 75,
+      "f1": 0.9946395102441615,
+      "accuracy": 0.9946393762183235
+    },
+    {
+      "k": 100,
+      "f1": 0.9936657624458696,
+      "accuracy": 0.9936647173489279
+    },
+    {
+      "k": 150,
+      "f1": 0.9917160091062361,
+      "accuracy": 0.9917153996101364
+    },
+    {
+      "k": 200,
+      "f1": 0.9917167662753678,
+      "accuracy": 0.9917153996101364
+    },
+    {
+      "k": 300,
+      "f1": 0.99317738791423,
+      "accuracy": 0.99317738791423
+    },
+    {
+      "k": 400,
+      "f1": 0.9941517459629869,
+      "accuracy": 0.9941520467836257
+    },
+    {
+      "k": 600,
+      "f1": 0.9917147544140118,
+      "accuracy": 0.9917153996101364
+    }
+  ],
+  "k_min": {
+    "k": -1,
+    "f1": -1.0,
+    "features": null
+  }
+}

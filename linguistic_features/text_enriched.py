@@ -64,13 +64,12 @@ if str(SCRIPT_DIR) not in sys.path:
 
 from linguistic_features import (  # noqa: E402
     BERT_MODELS,
+    CORPUS_DIRS_DEFAULT,
     LinguisticFeaturesPipeline,
     load_split_files,
     truncate_pair_min_tokens,
 )
 
-SEMANTICA_ROOT = SCRIPT_DIR.parent
-CARACT_ROOT = SEMANTICA_ROOT.parent / "noticias_falsas_humano_maquina_caracterizacao"
 RESULTS_DIR = SCRIPT_DIR / "results"
 
 # Mesma configuracao do caminho BERT: 512 tokens WordPiece (- 2 reservados
@@ -78,16 +77,37 @@ RESULTS_DIR = SCRIPT_DIR / "results"
 DEFAULT_MAX_LENGTH = 512
 DEFAULT_BERT_MODEL = BERT_MODELS["bertimbau"]  # neuralmind/bert-base-portuguese-cased
 
-# Mapeia (subset_corpus, label) -> diretorio do corpus original (nao-truncado).
-# Mesma convencao do antigo corpus_prep/truncate_pairs.py: lado humano do
-# Fake.Br usa a versao limpa (fake_br_clean) por ser a usada pelo pipeline
-# LIWC/NILC; demais grupos seguem o layout dos repositorios upstream.
-ORIGINAL_CORPUS_DIRS = {
-    ("fake_br",      0): CARACT_ROOT / "corpus" / "Fake.br-Corpus-master" / "full_texts" / "fake_br_clean",
-    ("fake_br",      1): CARACT_ROOT / "corpus" / "fake-news-llm-ptbr-main" / "fake-news-llm-ptbr-main" / "Fake.Br",
-    ("fake_true_br", 0): CARACT_ROOT / "corpus" / "FakeTrue.Br-main" / "fake",
-    ("fake_true_br", 1): CARACT_ROOT / "corpus" / "fake-news-llm-ptbr-main" / "fake-news-llm-ptbr-main" / "FakeTrueBR",
-}
+
+def build_corpus_dirs(corpus_dirs_str: Dict[str, Path]) -> Dict[Tuple[str, int], Path]:
+    """Converte o dict do linguistic_features (chaves string) para o esquema
+    (subset_corpus, label) usado por load_paired_truncated_texts."""
+    return {
+        ("fake_br",      0): corpus_dirs_str["fake_br_human"],
+        ("fake_br",      1): corpus_dirs_str["fake_br_llm"],
+        ("fake_true_br", 0): corpus_dirs_str["fake_true_human"],
+        ("fake_true_br", 1): corpus_dirs_str["fake_true_llm"],
+    }
+
+
+def corpus_dirs_from_root(corpus_root: Path) -> Dict[str, Path]:
+    """Reproduz a logica de override --corpus-root do linguistic_features.py.
+
+    Mantem os mesmos paths internos (mesma versao de Fake.Br humano, mesmas
+    pastas data/ dentro de fake-news-llm-ptbr-main) para garantir que os
+    splits entre text_enriched.py e linguistic_features.py em modo combined
+    fiquem identicos.
+    """
+    return {
+        "fake_br_human":   corpus_root / "corpus" / "Fake.br-Corpus-master" / "full_texts" / "fake",
+        "fake_br_llm":     corpus_root / "corpus" / "fake-news-llm-ptbr-main" / "fake-news-llm-ptbr-main" / "data" / "Fake.Br",
+        "fake_true_human": corpus_root / "corpus" / "FakeTrue.Br-main" / "fake",
+        "fake_true_llm":   corpus_root / "corpus" / "fake-news-llm-ptbr-main" / "fake-news-llm-ptbr-main" / "data" / "FakeTrueBR",
+    }
+
+
+# Default: alinhado com CORPUS_DIRS_DEFAULT de linguistic_features.py.
+# Para override (ex.: layout do servidor), use --corpus-root na CLI.
+ORIGINAL_CORPUS_DIRS = build_corpus_dirs(CORPUS_DIRS_DEFAULT)
 
 
 # =============================================================================
@@ -400,10 +420,13 @@ def run_experiment(vectorizer_kind: str,
                    cv_folds: int,
                    feature_groups: List[str],
                    out_dir: Path,
-                   bert_model_name: str) -> Dict[str, Dict]:
+                   bert_model_name: str,
+                   corpus_dirs: Dict[Tuple[str, int], Path] = ORIGINAL_CORPUS_DIRS,
+                   ) -> Dict[str, Dict]:
     (X_train, y_train, X_test, y_test,
      train_keys, test_keys, feature_names) = build_matrices(
-        vectorizer_kind, max_features, min_df, max_length, tokenizer, feature_groups,
+        vectorizer_kind, max_features, min_df, max_length, tokenizer,
+        feature_groups, corpus_dirs,
     )
 
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -515,6 +538,10 @@ def parse_args(argv):
                         f"(default: {DEFAULT_MAX_LENGTH}; efetivo: {DEFAULT_MAX_LENGTH-2} apos [CLS]/[SEP])")
     p.add_argument("--bert-model", type=str, default=DEFAULT_BERT_MODEL,
                    help=f"Modelo BERT para o tokenizer (default: {DEFAULT_BERT_MODEL})")
+    p.add_argument("--corpus-root", type=str, default=None,
+                   help="Override do diretorio raiz do corpus (mesma semantica do "
+                        "--corpus-root em linguistic_features.py). Se omitido, usa "
+                        "CORPUS_DIRS_DEFAULT importado de linguistic_features.")
     p.add_argument("--cv-folds", type=int, default=5)
     p.add_argument("--features", default="all",
                    help="Grupos linguisticos: nilcmetrics,liwc,enhanced_ud,syllables,"
@@ -540,13 +567,22 @@ def main(argv):
 
     vectorizers = ["tfidf", "bow"] if args.vectorizer == "both" else [args.vectorizer]
 
+    # Resolve corpus_dirs: usa override --corpus-root se fornecido, caso
+    # contrario CORPUS_DIRS_DEFAULT (importado de linguistic_features).
+    if args.corpus_root:
+        logger.info("Override --corpus-root: %s", args.corpus_root)
+        corpus_dirs_str = corpus_dirs_from_root(Path(args.corpus_root))
+        corpus_dirs = build_corpus_dirs(corpus_dirs_str)
+    else:
+        corpus_dirs = ORIGINAL_CORPUS_DIRS
+
     # Sanity check dos diretorios de corpus originais (a truncagem e' em runtime)
-    missing_dirs = [str(p) for p in ORIGINAL_CORPUS_DIRS.values() if not p.exists()]
+    missing_dirs = [str(p) for p in corpus_dirs.values() if not p.exists()]
     if missing_dirs:
         logger.error("Diretorios de corpus originais ausentes:\n  - %s",
                      "\n  - ".join(missing_dirs))
-        logger.error("Ajuste ORIGINAL_CORPUS_DIRS em text_enriched.py para refletir "
-                     "o layout do servidor.")
+        logger.error("Passe --corpus-root <raiz> ou ajuste CORPUS_DIRS_DEFAULT "
+                     "em linguistic_features.py para refletir o layout do servidor.")
         return 1
 
     # Tokenizer BERTimbau carregado uma vez e reusado entre vetorizadores
@@ -572,6 +608,7 @@ def main(argv):
             feature_groups=feature_groups,
             out_dir=args.out_dir,
             bert_model_name=args.bert_model,
+            corpus_dirs=corpus_dirs,
         )
         if len(results) > 1:
             write_comparison(vec_kind, results, args.out_dir)

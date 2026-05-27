@@ -84,9 +84,9 @@ DEFAULT_BERT_MODEL = BERT_MODELS["bertimbau"]  # neuralmind/bert-base-portuguese
 # LIWC/NILC; demais grupos seguem o layout dos repositorios upstream.
 ORIGINAL_CORPUS_DIRS = {
     ("fake_br",      0): CARACT_ROOT / "corpus" / "Fake.br-Corpus-master" / "full_texts" / "fake_br_clean",
-    ("fake_br",      1): CARACT_ROOT / "corpus" / "fake-news-llm-ptbr-main" / "fake-news-llm-ptbr-main" / "data" / "Fake.Br",
+    ("fake_br",      1): CARACT_ROOT / "corpus" / "fake-news-llm-ptbr-main" / "fake-news-llm-ptbr-main" / "Fake.Br",
     ("fake_true_br", 0): CARACT_ROOT / "corpus" / "FakeTrue.Br-main" / "fake",
-    ("fake_true_br", 1): CARACT_ROOT / "corpus" / "fake-news-llm-ptbr-main" / "fake-news-llm-ptbr-main" / "data" / "FakeTrueBR",
+    ("fake_true_br", 1): CARACT_ROOT / "corpus" / "fake-news-llm-ptbr-main" / "fake-news-llm-ptbr-main" / "FakeTrueBR",
 }
 
 

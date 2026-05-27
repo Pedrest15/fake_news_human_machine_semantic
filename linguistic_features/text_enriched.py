@@ -67,6 +67,7 @@ from linguistic_features import (  # noqa: E402
     CORPUS_DIRS_DEFAULT,
     LinguisticFeaturesPipeline,
     load_split_files,
+    save_misclassified,
     truncate_pair_min_tokens,
 )
 
@@ -316,6 +317,31 @@ def evaluate(clf, X_test, y_test) -> Tuple[Dict, np.ndarray, np.ndarray]:
     return metrics, cm, y_pred
 
 
+def extract_feature_importance(clf, feature_names: List[str], top_k: int = 30
+                                ) -> Optional[List[Tuple[str, float]]]:
+    """Extrai importancia de features para classifiers que expoem
+    `feature_importances_` (tree-based: RF, XGBoost) ou `coef_` (lineares: LR,
+    SVM linear). Retorna None para SVM RBF, MLP, NaiveBayes.
+
+    Os pesos sao normalizados/absolutos conforme o tipo de modelo e a saida e'
+    a lista [(name, value), ...] ordenada por importancia decrescente.
+    """
+    if hasattr(clf, "feature_importances_"):
+        imp = np.asarray(clf.feature_importances_)
+    elif hasattr(clf, "coef_"):
+        coef = np.asarray(clf.coef_)
+        imp = np.abs(coef[0]) if coef.ndim > 1 else np.abs(coef)
+    else:
+        return None
+    if len(imp) != len(feature_names):
+        logger.warning("feature_importance: %d valores vs %d nomes — pulando",
+                       len(imp), len(feature_names))
+        return None
+    pairs = sorted(zip(feature_names, imp.tolist()),
+                   key=lambda x: x[1], reverse=True)
+    return [(name, float(val)) for name, val in pairs[:top_k]]
+
+
 # =============================================================================
 # Pipeline
 # =============================================================================
@@ -449,6 +475,12 @@ def run_experiment(vectorizer_kind: str,
                     metrics["precision"], metrics["recall"])
         logger.info("CM: TN=%d FP=%d FN=%d TP=%d", tn, fp, fn, tp)
 
+        fi = extract_feature_importance(best_clf, feature_names, top_k=30)
+        if fi:
+            logger.info("Top-5 features por importancia:")
+            for name, val in fi[:5]:
+                logger.info("  %-55s %.6f", name, val)
+
         result = {
             "experiment": f"{vectorizer_kind}+linguistic",
             "vectorizer": vectorizer_kind,
@@ -479,12 +511,31 @@ def run_experiment(vectorizer_kind: str,
                 "matrix": cm.tolist(),
                 "tn": int(tn), "fp": int(fp), "fn": int(fn), "tp": int(tp),
             },
+            "feature_importance": fi,
         }
 
         out_path = out_dir / f"text_{vectorizer_kind}_linguistic_{clf_type}.json"
         with out_path.open("w", encoding="utf-8") as fh:
             json.dump(result, fh, indent=2, ensure_ascii=False)
         logger.info("Resultado salvo: %s", out_path)
+
+        # Salva lista de misclassified (mesmo formato do combined_*_errors.json)
+        probs = None
+        if hasattr(best_clf, "predict_proba"):
+            try:
+                probs = best_clf.predict_proba(X_test)
+            except Exception as exc:
+                logger.warning("predict_proba falhou para %s: %s", clf_type, exc)
+        miscls_path = out_dir / "misclassified" / f"text_{vectorizer_kind}_linguistic_{clf_type}_errors.json"
+        save_misclassified(
+            keys=test_keys,
+            y_true=y_test,
+            y_pred=y_pred,
+            output_path=miscls_path,
+            experiment=f"{vectorizer_kind}+linguistic / {clf_type}",
+            probs=probs,
+        )
+
         all_results[clf_type] = result
 
     return all_results

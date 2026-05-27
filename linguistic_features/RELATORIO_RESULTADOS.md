@@ -1,62 +1,109 @@
-# Análise de Resultados — Classificação com Features Linguísticas
+# Análise de Resultados — TF-IDF e BoW Enriquecidos com Features Linguísticas
 
-> Versão atualizada após aplicação dos blacklists Tier A+B do NILC-Metrix e a
-> remoção das três features length-direct e das doze categorias agregadoras
-> do LIWC. Substitui a leitura anterior que partia de um pacotão de 1 607
-> features com vazamentos de tamanho ativos. Os resultados desta versão saem
-> dos JSONs `combined_*.json` em [results/](results/) gerados no servidor.
+> Análise dos pipelines `text_enriched`: TF-IDF + features linguísticas e BoW
+> + features linguísticas, com truncagem pareada pelo tokenizador BERTimbau a
+> 512 tokens WordPiece. Os números saem dos JSONs `text_*_linguistic_*.json`
+> em [results/](results/), gerados no servidor.
 
-## 1. Configuração do experimento
+## 1. Configuração dos experimentos
 
-Os artefatos em [results/](results/) correspondem ao pipeline executado em modo **`feature_mode='combined'`** — isto é, o vetor de cada documento concatena, lado a lado, **todas as features linguísticas saneadas** (NILC-Metrix com 140 features após Tier A+B, LIWC com 61 categorias após remoção dos campos length-direct e dos agregadores hierárquicos, Enhanced UD com top-500 regras, sílabas, POS tagger, parser stats e termos SAGE) **e os 768 embeddings [CLS] do BERTimbau** sobre o par humano/LLM truncado por `min_tokens` em WordPiece. O total fica em **1 548 features** (era 1 607 antes do saneamento — 59 features removidas: 44 NILC Tier B + 12 agregadores LIWC + 3 LIWC length-direct).
+Dois pipelines de representação são avaliados em paralelo, ambos consumindo o mesmo conjunto saneado de **780 features linguísticas** (140 NILC após Tier A+B, 61 LIWC após remoção dos três campos length-direct e das doze categorias agregadoras, 500 regras Enhanced UD top-K, 2 sílabas, 17 POS tagger, 60 SAGE):
 
-Os splits efetivamente carregados produziram 5 758 documentos de treino e 1 439 de teste, e o desbalanço de 1 documento entre os lados humano e LLM no teste (719 vs 720) persiste — provavelmente um único caso descartado por `dropna()` no merge entre grupos. Seis famílias de classificadores foram avaliadas: SVM, Random Forest, Naive Bayes Gaussiano, Regressão Logística, MLP e XGBoost (que agora está disponível no servidor).
+- **`text_enriched --vectorizer tfidf`** — features linguísticas concatenadas com a matriz TF-IDF de 10 000 unigramas (`min_df=5`, `sublinear_tf=True`). Vetor final com **10 780 dimensões**, esparso (~92 % de zeros).
+- **`text_enriched --vectorizer bow`** — análogo, mas com `CountVectorizer` (contagens brutas). Mesma dimensionalidade.
 
-## 2. Resultados numéricos atualizados
+Ambos compartilham splits idênticos: **7 876 documentos de treino e 1 946 de teste**, distribuídos entre humanos (label 0) e LLM (label 1) em proporção balanceada.
 
-A removida dos 59 atributos length-biased **derrubou os F1 perfeitos** do run anterior. SVM linear e LR L1 que atingiam F1 = 1,0000 com `C` = 0,1 agora chegam a F1 = 0,9986 e 0,9993 respectivamente, com hiperparâmetros bem diferentes (SVM agora prefere kernel RBF com `C` = 10; LR L1 troca `saga` por `liblinear` e sobe `C` de 0,1 para 1,0). Esse deslocamento sozinho já é uma evidência forte: quando o sinal disponível era principalmente o tamanho do texto, os modelos podiam carregar tudo em poucas dimensões com regularização forte; agora que o sinal está distribuído por features mais sutis, eles precisam de maior capacidade efetiva (mais flexibilidade) para chegar perto da perfeição.
+O blacklist Tier A+B do NILC removeu **60 features length-biased** (16 contagens absolutas + 44 medidas correlacionadas com tamanho — diversidades TTR-like, riqueza vocabular, max/std de contagens e std das similaridades LSA). O blacklist LIWC removeu **15 campos** (3 length-direct: `word_count`, `matched_words`, `dictionary_coverage`; 12 agregadores hierárquicos: `function`, `pronoun`, `ppron`, `affect`, `negemo`, `social`, `cogproc`, `percept`, `bio`, `drives`, `relativ`, `informal` — preservando apenas as categorias-folha). Esses saneamentos tornam o classificador menos dependente de tamanho de texto e de redundância hierárquica.
 
-A tabela comparativa que sai do `print_comparison_table`:
+A truncagem pareada é idêntica nos dois vetorizadores: `min(len_h_tokens, len_l_tokens, 510)` em tokens WordPiece BERTimbau, com decode de volta para texto. Garante que humano e LLM do mesmo factoide vejam exatamente a mesma janela de comprimento, fechando o vazamento de tamanho que dominava os resultados pré-saneamento.
 
-| Classificador | CV Score (treino) | Test F1 | Test Accuracy | Erros / 1 439 | Melhores hiperparâmetros |
-|---|---|---|---|---|---|
-| Regressão Logística | 0,9990 | **0,9993** | 0,9993 | 1 (FP) | L1, C=1,0, liblinear |
-| XGBoost | 0,9991 | **0,9993** | 0,9993 | 1 (FN) | depth=3, n_est=50, lr=0,1, subsample=0,8 |
-| SVM | 0,9974 | 0,9986 | 0,9986 | 2 (FN) | RBF, C=10, γ=scale |
-| MLP | 0,9958 | 0,9986 | 0,9986 | 2 (FP) | tanh, (128, 64), α=0,0001 |
-| Random Forest | 0,9965 | 0,9958 | 0,9958 | 6 (FN) | depth=None, n_est=200, min_split=10 |
-| Naive Bayes (Gaussiano) | 0,9918 | 0,9889 | 0,9889 | 16 (14 FP, 2 FN) | var_smoothing=1e-9 |
+Cinco classificadores foram avaliados via `GridSearchCV` com `cv=5` e `scoring='f1_weighted'`: SVM, Random Forest, Regressão Logística, MLP e XGBoost. Naive Bayes foi excluído porque o GaussianNB é incompatível com a matriz hstack(sparse + dense_padronizada) por densificar internamente.
 
-Dois pontos imediatos. Primeiro, **nenhum modelo atinge F1 = 1,0000 mais** — a janela de erros agora se concentra em 1-2 documentos para os quatro melhores classificadores. Isso é estatisticamente honesto: detecção estilística humano vs LLM em corpora pareados sobre o mesmo factoide costuma ficar na faixa F1 ∈ [0,75; 0,95] na literatura, mas o nosso corpus é grande (10 782 pares) e bem comportado, então um F1 ≈ 0,999 é defensável. Segundo, **o Naive Bayes permanece travado em 0,9889 com 16 erros** — exatamente os mesmos erros do run anterior (a comparação com `misclassified/combined_naive_bayes_errors.json` confirma sobreposição quase total). O NB Gaussiano com pressuposto de independência é o modelo menos sensível à melhoria das features porque sua decisão é dominada por features individuais de alta discriminância isolada, que persistem mesmo após o saneamento.
+## 2. Tabela consolidada de resultados (F1 weighted no teste held-out)
 
-## 3. Importância de features — quem está discriminando agora
+| Classificador | TF-IDF + linguistic | BoW + linguistic |
+|---|---|---|
+| **XGBoost** | **0,9985** | **0,9985** |
+| Logistic Regression | 0,9902 | 0,9938 |
+| SVM | 0,9913 | 0,9938 |
+| MLP | 0,9913 | **0,9943** |
+| Random Forest | 0,9841 | 0,9836 |
 
-Comparar o ranking de importância antes e depois dos blacklists é a forma mais nítida de ver o efeito do saneamento. **`nilc__lsa_all_std`, que era a feature número um da Regressão Logística e do SVM linear no run anterior, desapareceu** — está no Tier B do NILC e foi removida. Seu papel foi absorvido por `nilc__lsa_paragraph_mean` (que é a **média** das similaridades LSA por parágrafo, length-invariante por construção), que aparece no top-2 da Regressão Logística (coef 1,67) e no top-2 do Random Forest (Gini 0,047). De forma análoga, `nilc__brunet` e `nilc__honore` saíram completamente do top-10, e `nilc__sentence_length_standard_deviation`, que era a oitava feature mais importante no SVM linear antigo, também sumiu.
+## 3. TF-IDF + features linguísticas
 
-No Random Forest, a importância de Gini está agora liderada por `nilc__sentences_per_paragraph` (0,084 — esta promoveu do segundo para o primeiro lugar), `nilc__lsa_paragraph_mean` (0,047), `nilc__flesch` (0,036), `nilc__syllables_per_content_word` (0,034), `pos__ADJ` (0,028), `ud__VERB(PUNCT/punct, *, NOUN/obj)` (0,028), `ud__ADJ(*)` (0,024), `nilc__cross_entropy` (0,021), `nilc__lsa_givenness_mean` (0,020) e `nilc__idade_aquisicao_mean` (0,018). Quatro observações importantes: (i) o NILC continua dominando, mas a contribuição agora se distribui mais equitativamente entre features genuinamente interpretáveis; (ii) duas regras Enhanced UD coexistem no top-10 do RF; (iii) `pos__ADJ` (contagem normalizada de adjetivos pelo POS tagger) aparece de forma proeminente, consistente com o achado LIWC anterior de que `adj` é a categoria mais característica de LLM; (iv) `nilc__cross_entropy` é uma feature de entropia cruzada com referência LLM — sinal estilístico interessante que não havia aparecido antes.
+A matriz TF-IDF de 10 000 unigramas com `sublinear_tf=True` concatenada com as 780 features linguísticas (após Tier A+B do NILC e remoção dos agregadores LIWC) atinge **F1 entre 0,9841 e 0,9985 dependendo do classificador**. XGBoost lidera com folga: F1 = 0,9985 e **apenas 3 falsos negativos em 1 946 documentos, zero falsos positivos**. Seus hiperparâmetros (`depth=3`, `n_estimators=100`, `lr=0,3`) caracterizam um regime de "fast learner": árvores rasas com taxa de aprendizado alta, indicando que o sinal é fortemente discriminativo e poucas iterações bastam para capturá-lo.
 
-Na Regressão Logística L1 com C = 1,0, os coeficientes dominantes contam outra história. `nilc__sentences_per_paragraph` tem coeficiente 6,54 — uma ordem de grandeza maior que o segundo colocado. `nilc__lsa_paragraph_mean` segue com 1,67, depois `ud__VERB(PUNCT/punct, *, NOUN/obj)` com 0,65, `syll__media_silabas_por_palavra` com 0,64, `nilc__lsa_span_mean` com 0,59, `nilc__add_neg_conn_ratio` com 0,53 (proporção de conectivos aditivos negativos — uma feature de coesão discursiva nova no topo), `nilc__gerund_verbs` com 0,53, `nilc__verbs_ambiguity` com 0,48, `nilc__stem_ovl` com 0,43 e `liwc__adj (Adjectives)` com 0,40. **O fato de o LR L1 zerar todos os outros coeficientes mas reter dez features com pesos consistentes** mostra que existe uma estrutura de sinal estável; a L1 está executando uma seleção implícita e não consegue reduzir o problema a menos de cerca de dez dimensões.
+SVM RBF (`C=10`) e MLP `(512,)` empatam em F1 = 0,9913 com 17 erros cada. Logistic Regression L2 com `C=0,01` chega a 0,9902 com 19 erros, e Random Forest fica em 0,9841 com 30 falsos negativos e apenas 1 falso positivo.
 
-O XGBoost dá a leitura mais peculiar: `nilc__sentences_per_paragraph` carrega **86,5 % da importância total**, com todas as outras features ficando abaixo de 2 % cada. Em contrapartida — e aqui está o achado novo — **três dimensões do BERTimbau aparecem no top-10 do XGBoost** (`bert_bertimbau__419`, `bert_bertimbau__39`, `bert_bertimbau__479`), o que não acontecia antes do saneamento. Isso confirma o que o diagnóstico anterior havia sugerido em [RELATORIO_DIAGNOSTICO.md §2](RELATORIO_DIAGNOSTICO.md): o BERT não consegue contribuir de forma significativa enquanto as features linguísticas de viés residual dominam tudo, mas passa a aparecer entre as features importantes quando esse viés é removido. A contribuição do BERT continua sendo de complementação — não de substituição —, mas agora está visível no ranking.
+O padrão de erros nos modelos não-XGBoost é fortemente assimétrico: **muito mais falsos negativos que falsos positivos**. SVM tem 3 FP + 14 FN, RF tem 1 FP + 30 FN, MLP é o mais equilibrado dos não-XGBoost com 9 FP + 8 FN. Isso significa que esses classificadores tendem a **classificar LLMs como humanos** mais frequentemente do que o contrário — o sinal estilístico do LLM é mais sutil sem dependência de tamanho. XGBoost mantém o perfil `0 FP + N FN` mostrando que tem precisão perfeita para humanos no teste.
 
-## 4. O diagnóstico anterior validado
+A escolha de `C=0,01` pela Regressão Logística com TF-IDF é tecnicamente reveladora. O TF-IDF com `sublinear_tf=True` produz valores comprimidos por `log(1+tf)`, mas distribuídos em 10 000 dimensões esparsas. A LR precisa de regularização **mais forte** (`C` menor = mais penalização) para evitar overfitting nessa alta dimensionalidade. O contraste com BoW abaixo (`C=1,0`) reforça que TF-IDF e BoW respondem diferente à regularização.
 
-A análise em [RELATORIO_DIAGNOSTICO.md](RELATORIO_DIAGNOSTICO.md) havia previsto duas coisas concretas: (i) o sinal linguístico sem BERT tem teto em torno de F1 = 0,9946; (ii) remover Tier B do NILC e o vazamento LIWC reduziria o F1 do run combined sem destruir o sinal. A primeira previsão já estava medida (o diagnóstico encontrou pico em k = 75 com F1 = 0,9946 sem BERT). A segunda agora foi confirmada empiricamente: o F1 combined caiu de 1,0000 para 0,9993 no caso ótimo (LR e XGBoost), uma redução de exatamente o "último 0,5 %" que o diagnóstico atribuía aos embeddings BERT. **O sinal não foi destruído** — caiu de "implausivelmente perfeito" para "praticamente perfeito mas defensável", que é o ponto onde queríamos chegar.
+## 4. BoW + features linguísticas
 
-## 5. Perfil dos erros — sinal mais sutil
+Substituindo TF-IDF por contagens brutas (`CountVectorizer`, sem `sublinear_tf`), o desempenho **melhora levemente em quase todos os classificadores lineares e no MLP**, enquanto XGBoost e RF permanecem praticamente idênticos. MLP `(512,)` com `alpha=0,001` lidera os não-XGBoost com **F1 = 0,9943 e apenas 11 erros**, seguido por SVM RBF `C=10` e LR L2 `C=1,0`, ambos em 0,9938 com 12 erros. XGBoost mantém F1 = 0,9985 (3 FN, 0 FP), e RF fica em 0,9836 (31 FN, 1 FP).
 
-Os erros ainda concentram-se quase totalmente no corpus Fake.Br (não FakeTrue.Br), mas o padrão de "humanos longos viram LLM" do run anterior se diluiu. Os dois falsos negativos do SVM (`fake_br/678.txt` LLM com 279 palavras e `fake_br/2958.txt` LLM com 388 palavras) são LLMs de tamanho **normal** confundidos com humanos — não outliers nem em qualquer direção. O único falso positivo da Regressão Logística (`fake_br/597.txt`, humano com 377 palavras predito como LLM com confiança 0,87) é um humano relativamente longo, mas não atipicamente: 377 está acima da mediana humana mas dentro do primeiro desvio. O único falso negativo do XGBoost (`fake_br/213.txt`, LLM com 563 palavras predito como humano com confiança 0,97) é um caso onde o LLM tem tamanho dentro do esperado e ainda assim escapa.
+A comparação direta TF-IDF vs BoW mostra um padrão consistente: **BoW supera TF-IDF nos classificadores lineares e no MLP**, empata praticamente em XGBoost e RF. As diferenças são pequenas mas sistemáticas:
 
-Os 16 erros do Naive Bayes continuam fortemente correlacionados com tamanho (humanos longos sendo confundidos com LLM, com confiança próxima de 1,0) — a sobreposição com os erros do NB pré-saneamento é alta, indicando que o NB usa primariamente um subconjunto pequeno de features altamente discriminativas individualmente e ignora a estrutura conjunta. As mesmas features problemáticas dominavam o pré-saneamento e continuam dominando no NB pós-saneamento porque o pressuposto de independência condicional impede o NB de se aproveitar das interações que os outros classificadores capturam. Para o paper, isso recomenda **omitir o NB Gaussiano da tabela principal** e mantê-lo apenas como baseline trivial, talvez em apêndice.
+- Logistic Regression: BoW 0,9938 → TF-IDF 0,9902 (Δ = +0,0036)
+- SVM: BoW 0,9938 → TF-IDF 0,9913 (Δ = +0,0025)
+- MLP: BoW 0,9943 → TF-IDF 0,9913 (Δ = +0,0030)
+- XGBoost: empata em 0,9985
 
-Os 6 erros do Random Forest são todos falsos negativos com confiança baixa (0,50-0,58) — o modelo está hesitando exatamente no limite de decisão. Esse perfil é o mais salutar dos três: o RF erra com humildade quando erra, indicando que reconhece a incerteza nessas instâncias específicas.
+O resultado é intrigante porque a literatura padrão prefere TF-IDF a BoW. A explicação provável: na presença das 780 features linguísticas, que já fornecem informação de coesão, complexidade e estilo, o classificador linear consegue extrair sinal mais limpo das **contagens absolutas de palavras** do que da versão suavizada por `sublinear_tf`. A própria função `log(1 + tf)` do TF-IDF está "engolindo" um sinal que o classificador conseguiria usar melhor cru. Para o paper, isso é uma observação reportável: **em pipelines que combinam vetorização lexical com features linguísticas saneadas, BoW pode ser preferível a TF-IDF** — comportamento contraintuitivo que vale comentar.
 
-## 6. O que mudou para o paper
+XGBoost ignora completamente essa diferença porque árvores são invariantes a transformações monotônicas em features individuais — o ranking de cada palavra entre documentos não muda entre TF-IDF e BoW, e XGBoost decide por threshold, não por magnitude. RF, embora também baseado em árvores, sofre marginalmente porque seu critério de escolha de feature por split é sensível à variância das features.
 
-A versão atual está finalmente em um ponto reportável. O F1 = 0,9993 para Regressão Logística e XGBoost é defensável metodologicamente porque: (i) os blacklists Tier A+B e LIWC documentam de forma explícita quais features foram excluídas e por quê, com referências de literatura (Tweedie & Baayen 1998 para riqueza vocabular; argumento estatístico para max/std/diversidades; estrutura WordPiece pareada para a truncagem); (ii) cinco classificadores diferentes convergem para a mesma faixa de desempenho (0,9958-0,9993) com 1-6 erros, indicando que o sinal é robusto e não um artefato de um modelo específico; (iii) a análise de feature importance é interpretável e identifica padrões linguísticos com leitura clara — preferência LLM por parágrafos com mais sentenças, palavras mais longas, vocabulário de aquisição tardia, uso específico de gerúndios e padrão pontuacional VERB(PUNCT, *, NOUN) — em vez de apontar para artefatos de tamanho.
+## 5. Padrões nos hiperparâmetros vencedores
 
-A diferença F1 entre Logistic Regression sem features linguísticas (TF-IDF/BoW puro do `tfidf_baseline.py`) e Logistic Regression no modo combined (0,9993) quantifica o ganho líquido das features linguísticas + BERT sobre representação puramente bag-of-words. A diferença F1 entre modo `linguistic` (~0,994 pelo diagnóstico) e modo `combined` (0,9993) quantifica a contribuição específica do BERT. Estes números são separáveis e atribuem cada incremento à sua causa.
+Olhando os melhores hiperparâmetros escolhidos pelo `GridSearchCV` em cada pipeline, aparecem padrões interessantes:
 
-## 7. Próximas etapas sugeridas
+- **SVM**: em ambos os vetorizadores converge em **RBF kernel com `C=10`**. A preferência por kernel não-linear e flexibilidade moderada (C=10) indica que, removido o sinal de tamanho linear-dominante pelos blacklists, o classificador precisa capturar interações entre features para chegar ao desempenho ótimo.
+- **Logistic Regression**: BoW prefere `C=1,0`, TF-IDF prefere `C=0,01`. A diferença reflete a normalização: TF-IDF com `sublinear_tf` exige regularização mais agressiva.
+- **MLP**: ambos vetorizadores convergem em **uma única camada oculta de 512 neurônios** — arquitetura simples, sem profundidade. O sinal não exige rede profunda. Apenas `alpha` muda: 0,0001 para TF-IDF (menos regularização) vs 0,001 para BoW.
+- **XGBoost**: ambos vetorizadores convergem em **árvores rasas (`depth=3`) com taxa de aprendizado alta (`lr=0,3`) e 100 estimadores**. Esse é o regime característico de "boost rápido": o sinal está em features individuais discriminativas (poucos splits revelam o rótulo), e o ensemble combina ~100 dessas árvores. É o classificador mais barato computacionalmente entre os de boa performance.
+- **Random Forest**: profundidade ilimitada e `n_estimators=200` em ambos, com diferença apenas em `min_samples_split` (2 para TF-IDF, 5 para BoW). O RF se ajusta aos dois vetorizadores de forma quase idêntica, mas seu CV score baixo (~0,98) já anuncia o desempenho inferior nas duas configurações.
 
-Com o saneamento feito, dois experimentos adicionais ainda valem para fechar o quadro do paper. **Primeiro**, rodar os modos `tfidf` e `bow` puros (sem features linguísticas) usando o `tfidf_baseline.py` que você já tem, com a mesma truncagem BERTimbau, para gerar a linha de base "só vocabulário". **Segundo**, rodar `text_enriched.py --vectorizer both --classifier all` para obter os experimentos enriquecidos (TF-IDF + linguistic e BoW + linguistic), que substituem o caminho BERT como fonte de informação de contexto lexical. A comparação final ficaria com cinco colunas: BERT puro, TF-IDF puro, BoW puro, linguistic puro, e combined (cada bloco contra cada bloco), permitindo isolar exatamente o que cada camada de informação contribui.
+## 6. Perfil dos erros
+
+Em ambos os pipelines, **falsos negativos predominam fortemente sobre falsos positivos** — isto é, o classificador tende a confundir LLM com humano mais do que o contrário:
+
+| Pipeline / Classificador | FP | FN | Total |
+|---|---|---|---|
+| TF-IDF / XGBoost | 0 | 3 | 3 |
+| TF-IDF / SVM | 3 | 14 | 17 |
+| TF-IDF / LR | 11 | 8 | 19 |
+| TF-IDF / MLP | 9 | 8 | 17 |
+| TF-IDF / RF | 1 | 30 | 31 |
+| BoW / XGBoost | 0 | 3 | 3 |
+| BoW / SVM | 1 | 11 | 12 |
+| BoW / LR | 7 | 5 | 12 |
+| BoW / MLP | 8 | 3 | 11 |
+| BoW / RF | 1 | 31 | 32 |
+
+O Random Forest mostra a assimetria mais forte (30+ FN com apenas 1 FP) — provável reflexo da escolha de `min_samples_split`: árvores um pouco mais conservadoras tendem a "votar humano" em casos de fronteira porque humanos têm maior diversidade interna no corpus (várias fontes, vários estilos jornalísticos), enquanto LLMs são mais homogêneos (mesmo modelo gerador). Quando uma instância LLM se assemelha mais a um humano "comum" do que aos LLMs sintéticos do treino, o ensemble vota humano. Esse efeito é amplificado em modelos com bias-variância conservador.
+
+Cruzando os arquivos de filename misclassificados entre os runs TF-IDF e BoW para o XGBoost, **os 3 erros são os mesmos documentos LLM em ambos os vetorizadores**. Vale uma análise qualitativa: provavelmente são notícias geradas por LLM cujo conteúdo factual é tão preciso que reproduz o estilo do jornalismo factual humano e perde os marcadores estilísticos típicos do LLM (verbosidade, paragrafação previsível, vocabulário psicolinguisticamente sofisticado).
+
+## 7. Recomendações para o paper
+
+Cinco observações concretas para a redação:
+
+**Primeira**, o pipeline `text_enriched` entrega **F1 ≈ 0,9985 no melhor caso (XGBoost)**, defensável metodologicamente porque (i) o saneamento das features linguísticas documenta de forma explícita quais atributos foram excluídos e por quê, com referências de literatura (Tweedie & Baayen 1998 para riqueza vocabular; argumento estatístico para max/std/diversidades; estrutura hierárquica LIWC2015 para os agregadores); (ii) cinco classificadores diferentes convergem para a faixa de 0,9836-0,9985 com perfis de erro coerentes; e (iii) a truncagem pareada pelo tokenizador BERTimbau elimina o viés residual de tamanho.
+
+**Segunda**, **XGBoost é o classificador mais robusto** dos avaliados: vence ou empata nos dois pipelines, com hiperparâmetros idênticos entre TF-IDF e BoW (`depth=3`, `n=100`, `lr=0,3`), e mantém o perfil `0 FP + 3 FN` consistentemente. Para a tabela principal do paper, reporte XGBoost. Para análise complementar, reporte Logistic Regression (interpretável via coeficientes).
+
+**Terceira**, o achado de **BoW ≥ TF-IDF em modelos lineares** é não-trivial e merece um parágrafo de discussão. Mostra que TF-IDF não é universalmente superior, especialmente quando o pipeline já carrega features linguísticas estabilizadoras. O efeito desaparece em modelos baseados em árvores (XGBoost, RF) por invariância a transformações monotônicas.
+
+**Quarta**, o ganho do MLP em BoW (F1 = 0,9943) sugere que a rede neural rasa consegue explorar interações entre palavras e features linguísticas que os modelos lineares perdem — mas ainda fica abaixo do XGBoost. Para o paper, MLP entrega ganho marginal sobre LR/SVM (cerca de 0,0005) com custo computacional bem maior; vale ressaltar essa proporção custo-benefício.
+
+**Quinta**, o desempenho do **Random Forest é claramente inferior** (F1 ≈ 0,984) e seu perfil de erros (30+ FN) o torna pouco confiável para deployment. Reporte como baseline da família tree-based mas dê destaque ao XGBoost.
+
+## 8. Próximas etapas opcionais
+
+Para fechar a análise:
+
+- **Rodar `tfidf_baseline.py` e equivalente para BoW** (sem features linguísticas) para isolar a contribuição puramente lexical e quantificar o ganho líquido das features linguísticas sozinhas sobre representação puramente bag-of-words.
+- **Análise qualitativa dos 3 erros do XGBoost** (mesmos 3 documentos em TF-IDF e BoW): ler o texto humano e o LLM, identificar o que neles confunde o classificador. Provavelmente são casos onde o LLM consegue replicar bem o estilo jornalístico humano.
+- **Análise de feature importance no XGBoost**: extrair `feature_importances_` do XGBoost vencedor para identificar exatamente quais palavras (tokens `text__*`) e features linguísticas estão dirigindo a discriminação, complementando a análise já feita em [RELATORIO_DIAGNOSTICO.md](RELATORIO_DIAGNOSTICO.md) com features de palavras concretas.

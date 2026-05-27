@@ -12,7 +12,7 @@
     "sage_terms"
   ],
   "bert_model": "neuralmind/bert-base-portuguese-cased",
-  "n_features": 1607,
+  "n_features": 1548,
   "normalized": true,
   "top_k_selection": null,
   "data_split": {
@@ -23,114 +23,114 @@
     "enabled": true,
     "cv_folds": 5,
     "best_params": {
-      "C": 0.1,
+      "C": 1.0,
       "penalty": "l1",
-      "solver": "saga"
+      "solver": "liblinear"
     },
-    "cv_score": 0.9996527767312184
+    "cv_score": 0.9989580295701692
   },
   "test_results": {
-    "accuracy": 1.0,
-    "f1": 1.0,
-    "precision": 1.0,
-    "recall": 1.0
+    "accuracy": 0.9993050729673384,
+    "f1": 0.9993050722961438,
+    "precision": 0.9993060368051091,
+    "recall": 0.9993050729673384
   },
   "confusion_matrix": {
     "matrix": [
       [
-        719,
-        0
+        718,
+        1
       ],
       [
         0,
         720
       ]
     ],
-    "tn": 719,
-    "fp": 0,
+    "tn": 718,
+    "fp": 1,
     "fn": 0,
     "tp": 720
   },
   "feature_importance": [
     [
-      "nilc__lsa_all_std",
-      2.7076195550075197
-    ],
-    [
       "nilc__sentences_per_paragraph",
-      0.8233502139691689
+      6.536425700859816
     ],
     [
-      "nilc__punctuation_diversity",
-      0.6708595009359121
-    ],
-    [
-      "nilc__lsa_paragraph_std",
-      0.6502095229551622
-    ],
-    [
-      "nilc__sentence_length_standard_deviation",
-      0.4418398672898183
-    ],
-    [
-      "syll__media_silabas_por_palavra",
-      0.4093270535058398
-    ],
-    [
-      "nilc__gerund_verbs",
-      0.40418207479759277
-    ],
-    [
-      "nilc__honore",
-      0.3372860498170352
-    ],
-    [
-      "bert_bertimbau__31",
-      0.2902289924647623
+      "nilc__lsa_paragraph_mean",
+      1.6696698439031001
     ],
     [
       "ud__VERB(PUNCT/punct, *, NOUN/obj)",
-      0.26131472682647844
+      0.6462127230312624
     ],
     [
-      "syll__media_silabas_por_sentenca",
-      0.23869509450578788
+      "syll__media_silabas_por_palavra",
+      0.6400004540517903
     ],
     [
-      "nilc__content_word_diversity",
-      0.23591220010116618
-    ],
-    [
-      "bert_bertimbau__188",
-      0.21704296804445203
+      "nilc__lsa_span_mean",
+      0.587680413252525
     ],
     [
       "nilc__add_neg_conn_ratio",
-      0.21039956580306005
+      0.5328024925996735
     ],
     [
-      "bert_bertimbau__165",
-      0.2084777438736274
+      "nilc__gerund_verbs",
+      0.5297861550655671
     ],
     [
       "nilc__verbs_ambiguity",
-      0.19629312094471385
+      0.4821002413936719
+    ],
+    [
+      "nilc__stem_ovl",
+      0.42657004144323374
+    ],
+    [
+      "liwc__adj (Adjectives)",
+      0.39848699619451733
+    ],
+    [
+      "bert_bertimbau__144",
+      0.39525341476313236
+    ],
+    [
+      "bert_bertimbau__150",
+      0.3918369561029278
     ],
     [
       "nilc__concretude_4_55_ratio",
-      0.19117030513317787
+      0.38735429613841144
+    ],
+    [
+      "bert_bertimbau__31",
+      0.3760016945892876
+    ],
+    [
+      "bert_bertimbau__54",
+      0.3424729156003759
     ],
     [
       "bert_bertimbau__419",
-      0.19054956593812272
+      0.3241537770801147
     ],
     [
-      "bert_bertimbau__39",
-      0.1830465204480572
+      "bert_bertimbau__188",
+      0.32260549780912934
     ],
     [
-      "bert_bertimbau__386",
-      0.17535578069426688
+      "bert_bertimbau__697",
+      0.3143310031516349
+    ],
+    [
+      "nilc__long_sentence_ratio",
+      0.31242198604323296
+    ],
+    [
+      "nilc__adj_stem_ovl",
+      0.30544514430974995
     ]
   ]
 }

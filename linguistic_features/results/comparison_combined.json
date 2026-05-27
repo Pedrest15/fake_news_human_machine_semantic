@@ -1,33 +1,33 @@
 {
   "svm": {
-    "cv_score": 0.9982632792612399,
-    "test_f1": 1.0,
-    "test_accuracy": 1.0,
-    "test_precision": 1.0,
-    "test_recall": 1.0,
+    "cv_score": 0.9973950700007992,
+    "test_f1": 0.9986101445922896,
+    "test_accuracy": 0.9986101459346769,
+    "test_precision": 0.9986140012857596,
+    "test_recall": 0.9986101459346769,
     "best_params": {
-      "C": 0.1,
+      "C": 10.0,
       "gamma": "scale",
-      "kernel": "linear"
+      "kernel": "rbf"
     },
-    "n_features": 1607
+    "n_features": 1548
   },
   "random_forest": {
-    "cv_score": 1.0,
-    "test_f1": 0.9993050729673384,
-    "test_accuracy": 0.9993050729673384,
-    "test_precision": 0.9993060381437726,
-    "test_recall": 0.9993050729673384,
+    "cv_score": 0.9965267040060913,
+    "test_f1": 0.9958303773959041,
+    "test_accuracy": 0.9958304378040306,
+    "test_precision": 0.9958649445256524,
+    "test_recall": 0.9958304378040306,
     "best_params": {
-      "max_depth": 20,
+      "max_depth": null,
       "min_samples_leaf": 1,
       "min_samples_split": 10,
-      "n_estimators": 100
+      "n_estimators": 200
     },
-    "n_features": 1607
+    "n_features": 1548
   },
   "naive_bayes": {
-    "cv_score": 0.9925315378990085,
+    "cv_score": 0.991836928980592,
     "test_f1": 0.9888803297598046,
     "test_accuracy": 0.9888811674774148,
     "test_precision": 0.9890170687595227,
@@ -35,23 +35,23 @@
     "best_params": {
       "var_smoothing": 1e-09
     },
-    "n_features": 1607
+    "n_features": 1548
   },
   "logistic_regression": {
-    "cv_score": 0.9996527767312184,
-    "test_f1": 1.0,
-    "test_accuracy": 1.0,
-    "test_precision": 1.0,
-    "test_recall": 1.0,
+    "cv_score": 0.9989580295701692,
+    "test_f1": 0.9993050722961438,
+    "test_accuracy": 0.9993050729673384,
+    "test_precision": 0.9993060368051091,
+    "test_recall": 0.9993050729673384,
     "best_params": {
-      "C": 0.1,
+      "C": 1.0,
       "penalty": "l1",
-      "solver": "saga"
+      "solver": "liblinear"
     },
-    "n_features": 1607
+    "n_features": 1548
   },
   "mlp": {
-    "cv_score": 0.9963532376958257,
+    "cv_score": 0.9958322521987008,
     "test_f1": 0.9986101419074995,
     "test_accuracy": 0.9986101459346769,
     "test_precision": 0.9986139959459381,
@@ -60,9 +60,24 @@
       "activation": "tanh",
       "alpha": 0.0001,
       "hidden_layer_sizes": [
-        256
+        128,
+        64
       ]
     },
-    "n_features": 1607
+    "n_features": 1548
+  },
+  "xgboost": {
+    "cv_score": 0.9991314916777372,
+    "test_f1": 0.9993050729673384,
+    "test_accuracy": 0.9993050729673384,
+    "test_precision": 0.9993060381437726,
+    "test_recall": 0.9993050729673384,
+    "best_params": {
+      "learning_rate": 0.1,
+      "max_depth": 3,
+      "n_estimators": 50,
+      "subsample": 0.8
+    },
+    "n_features": 1548
   }
 }

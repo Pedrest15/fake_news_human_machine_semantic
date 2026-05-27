@@ -3,8 +3,8 @@
   "vectorizer": "tfidf",
   "classifier": "logistic_regression",
   "n_features_text": 10000,
-  "n_features_linguistic": 839,
-  "n_features_total": 10839,
+  "n_features_linguistic": 780,
+  "n_features_total": 10780,
   "vectorizer_config": {
     "max_features": 10000,
     "ngram_range": [
@@ -14,9 +14,13 @@
     "min_df": 5,
     "sublinear_tf": true
   },
+  "truncation": {
+    "max_words": 400,
+    "strategy": "pairwise_whitespace_runtime"
+  },
   "data_split": {
-    "train_samples": 8250,
-    "test_samples": 2052
+    "train_samples": 7876,
+    "test_samples": 1946
   },
   "grid_search": {
     "enabled": true,
@@ -26,28 +30,28 @@
       "penalty": "l2",
       "solver": "lbfgs"
     },
-    "cv_score": 0.9924842177463413
+    "cv_score": 0.9853981189349463
   },
   "test_results": {
-    "accuracy": 0.9941520467836257,
-    "f1": 0.9941517459629869,
-    "precision": 0.9941533393324311,
-    "recall": 0.9941520467836257
+    "accuracy": 0.9902363823227133,
+    "f1": 0.9902363591184046,
+    "precision": 0.9902410427581545,
+    "recall": 0.9902363823227133
   },
   "confusion_matrix": {
     "matrix": [
       [
-        966,
-        7
+        962,
+        11
       ],
       [
-        5,
-        1074
+        8,
+        965
       ]
     ],
-    "tn": 966,
-    "fp": 7,
-    "fn": 5,
-    "tp": 1074
+    "tn": 962,
+    "fp": 11,
+    "fn": 8,
+    "tp": 965
   }
 }

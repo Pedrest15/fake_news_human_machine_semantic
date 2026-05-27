@@ -2,9 +2,17 @@
 """Baseline TF-IDF / BoW enriquecido com features linguisticas.
 
 Concatena horizontalmente:
-  - vetor TF-IDF ou Bag-of-Words sobre o texto (em corpus_truncated/)
+  - vetor TF-IDF ou Bag-of-Words sobre o texto (truncado pareado em runtime)
   - vetor de features linguisticas (NILC + LIWC + Enhanced UD + silabas + POS +
-    SAGE), com Tier A do NILC ja removido por default.
+    SAGE), com Tier A+B do NILC e agregadores LIWC removidos por default.
+
+A truncagem pareada acontece em runtime com o tokenizador BERTimbau
+(`neuralmind/bert-base-portuguese-cased`), exatamente como nos experimentos
+BERT: para cada par humano/LLM do mesmo filename, calcula-se
+  min_len = min(len_h_tokens, len_l_tokens, max_length - 2)
+em tokens WordPiece (subtracao reserva espaco para [CLS] e [SEP]), e ambas as
+versoes sao cortadas ao mesmo comprimento antes da vetorizacao. Garante
+comparabilidade direta entre baselines BERT, TF-IDF e BoW.
 
 Cada documento (humano e LLM, uma linha cada) vira um vetor combinado:
   [tfidf_or_bow_text | standardized_linguistic_features]
@@ -16,6 +24,7 @@ Uso:
     python3 linguistic_features/text_enriched.py --vectorizer tfidf --classifier all
     python3 linguistic_features/text_enriched.py --vectorizer bow   --classifier svm
     python3 linguistic_features/text_enriched.py --vectorizer both  --classifier all
+    python3 linguistic_features/text_enriched.py --vectorizer tfidf --classifier svm --max-length 256
 """
 from __future__ import annotations
 
@@ -25,8 +34,9 @@ import json
 import logging
 import sys
 import time
+from collections import defaultdict
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 
 import numpy as np
 from scipy.sparse import csr_matrix, hstack as sparse_hstack
@@ -53,20 +63,30 @@ if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
 from linguistic_features import (  # noqa: E402
+    BERT_MODELS,
     LinguisticFeaturesPipeline,
     load_split_files,
+    truncate_pair_min_tokens,
 )
 
 SEMANTICA_ROOT = SCRIPT_DIR.parent
-CORPUS_TRUNCATED = SEMANTICA_ROOT / "corpus_truncated"
+CARACT_ROOT = SEMANTICA_ROOT.parent / "noticias_falsas_humano_maquina_caracterizacao"
 RESULTS_DIR = SCRIPT_DIR / "results"
 
-# Mapeia (subset_corpus, label) → subdir em corpus_truncated/
-SUBSET_DIR_MAP = {
-    ("fake_br",      0): "fake_br_human",
-    ("fake_br",      1): "fake_br_llm",
-    ("fake_true_br", 0): "fake_true_human",
-    ("fake_true_br", 1): "fake_true_llm",
+# Mesma configuracao do caminho BERT: 512 tokens WordPiece (- 2 reservados
+# para [CLS] e [SEP], conforme convencao BERT).
+DEFAULT_MAX_LENGTH = 512
+DEFAULT_BERT_MODEL = BERT_MODELS["bertimbau"]  # neuralmind/bert-base-portuguese-cased
+
+# Mapeia (subset_corpus, label) -> diretorio do corpus original (nao-truncado).
+# Mesma convencao do antigo corpus_prep/truncate_pairs.py: lado humano do
+# Fake.Br usa a versao limpa (fake_br_clean) por ser a usada pelo pipeline
+# LIWC/NILC; demais grupos seguem o layout dos repositorios upstream.
+ORIGINAL_CORPUS_DIRS = {
+    ("fake_br",      0): CARACT_ROOT / "corpus" / "Fake.br-Corpus-master" / "full_texts" / "fake_br_clean",
+    ("fake_br",      1): CARACT_ROOT / "corpus" / "fake-news-llm-ptbr-main" / "fake-news-llm-ptbr-main" / "data" / "Fake.Br",
+    ("fake_true_br", 0): CARACT_ROOT / "corpus" / "FakeTrue.Br-main" / "fake",
+    ("fake_true_br", 1): CARACT_ROOT / "corpus" / "fake-news-llm-ptbr-main" / "fake-news-llm-ptbr-main" / "data" / "FakeTrueBR",
 }
 
 
@@ -126,44 +146,91 @@ logger = logging.getLogger("text_enriched")
 
 
 # =============================================================================
-# Carregamento de textos alinhados aos keys do pipeline linguistico
+# Truncagem pareada em runtime (BERTimbau WordPiece)
 # =============================================================================
 
-def load_texts_for_keys(keys: List[Tuple[str, str, int]],
-                        corpus_root: Path,
-                        ) -> Tuple[List[str], List[int]]:
-    """Le texto truncado para cada key (filename, subset_corpus, label).
+def _read_text(path: Path) -> Optional[str]:
+    try:
+        text = path.read_text(encoding="utf-8").strip()
+    except Exception as exc:
+        logger.warning("erro lendo %s: %s", path, exc)
+        return None
+    return text or None
 
-    Retorna (texts, kept_indices). Linhas onde o arquivo nao existe sao
-    silenciosamente puladas (mas tambem precisamos remover a linha
-    correspondente da matriz linguistica — usamos kept_indices p/ isso).
+
+def load_paired_truncated_texts(
+    keys: List[Tuple[str, str, int]],
+    corpus_dirs: Dict[Tuple[str, int], Path],
+    tokenizer: Any,
+    max_length: int = DEFAULT_MAX_LENGTH,
+) -> Tuple[List[str], List[int], Dict[str, int]]:
+    """Le textos originais e trunca pareadamente em runtime via BERTimbau.
+
+    Para cada (filename, subset_corpus), carrega tanto a versao humana
+    (label=0) quanto a LLM (label=1), tokeniza com o tokenizador BERTimbau e
+    calcula min_len = min(len_h_tokens, len_l_tokens, max_length - 2) em
+    tokens WordPiece (-2 reserva [CLS] e [SEP]). Ambas as versoes do par
+    sao cortadas ao mesmo comprimento e decodificadas de volta para texto,
+    garantindo paridade exata com os experimentos BERT.
+
+    Pares onde uma das versoes esta ausente ou vazia sao descartados
+    inteiros (nao basta truncar um lado sem o outro).
+
+    Retorna (texts, kept_indices, stats). `texts` esta na mesma ordem
+    de `keys` para os indices em `kept_indices`.
     """
-    texts: List[str] = []
+    # Pass 1: carrega ambas as metades de cada par em memoria
+    pair_texts: Dict[Tuple[str, str], Dict[int, str]] = defaultdict(dict)
+    for filename, subset_corpus, label in keys:
+        dir_path = corpus_dirs.get((subset_corpus, label))
+        if dir_path is None:
+            continue
+        text = _read_text(dir_path / filename)
+        if text is None:
+            continue
+        pair_texts[(filename, subset_corpus)][label] = text
+
+    # Pass 2: para cada par completo, trunca via BERTimbau (truncate_pair_min_tokens)
+    # e ja armazena o texto truncado decodificado para cada label.
+    pair_truncated: Dict[Tuple[str, str], Tuple[str, str, int]] = {}
+    constraint_counts = {"human_shorter": 0, "llm_shorter": 0, "max_length_cap": 0}
+    for pair_key, halves in pair_texts.items():
+        if 0 not in halves or 1 not in halves:
+            continue
+        n_h = len(tokenizer.encode(halves[0], add_special_tokens=False))
+        n_l = len(tokenizer.encode(halves[1], add_special_tokens=False))
+        h_t, l_t, min_len = truncate_pair_min_tokens(
+            halves[0], halves[1], tokenizer, max_length=max_length,
+        )
+        pair_truncated[pair_key] = (h_t, l_t, min_len)
+        if min_len == max_length - 2 and min_len < min(n_h, n_l):
+            constraint_counts["max_length_cap"] += 1
+        elif n_h <= n_l:
+            constraint_counts["human_shorter"] += 1
+        else:
+            constraint_counts["llm_shorter"] += 1
+
+    # Pass 3: produz lista de textos truncados na ordem de keys
+    out_texts: List[str] = []
     kept_indices: List[int] = []
     missing = 0
     for i, (filename, subset_corpus, label) in enumerate(keys):
-        subdir = SUBSET_DIR_MAP.get((subset_corpus, label))
-        if subdir is None:
+        truncated = pair_truncated.get((filename, subset_corpus))
+        if truncated is None:
             missing += 1
             continue
-        path = corpus_root / subdir / filename
-        if not path.exists():
-            missing += 1
-            continue
-        try:
-            text = path.read_text(encoding="utf-8").strip()
-        except Exception as exc:
-            logger.warning("erro lendo %s: %s", path, exc)
-            missing += 1
-            continue
-        if not text:
-            missing += 1
-            continue
-        texts.append(text)
+        out_texts.append(truncated[label])  # label 0 -> h_t, label 1 -> l_t
         kept_indices.append(i)
-    if missing:
-        logger.warning("  %d documentos sem texto truncado disponivel (descartados)", missing)
-    return texts, kept_indices
+
+    stats = {
+        "pairs_complete": int(len(pair_truncated)),
+        "keys_kept": int(len(kept_indices)),
+        "keys_discarded": int(missing),
+        "max_length_cap": int(constraint_counts["max_length_cap"]),
+        "human_shorter": int(constraint_counts["human_shorter"]),
+        "llm_shorter": int(constraint_counts["llm_shorter"]),
+    }
+    return out_texts, kept_indices, stats
 
 
 def make_vectorizer(kind: str, max_features: int, min_df: int):
@@ -236,9 +303,16 @@ def evaluate(clf, X_test, y_test) -> Tuple[Dict, np.ndarray, np.ndarray]:
 def build_matrices(vectorizer_kind: str,
                    max_features: int,
                    min_df: int,
-                   feature_groups: List[str]
+                   max_length: int,
+                   tokenizer: Any,
+                   feature_groups: List[str],
+                   corpus_dirs: Dict[Tuple[str, int], Path] = ORIGINAL_CORPUS_DIRS,
                    ):
     """Monta as matrizes train e test combinando texto + features linguisticas.
+
+    Os textos sao carregados dos diretorios originais (corpus_dirs) e
+    truncados pareadamente em runtime via tokenizador BERTimbau, ate
+    max_length - 2 tokens WordPiece (paridade com experimentos BERT).
 
     Retorna X_train, y_train, X_test, y_test, train_keys, test_keys, feature_names.
     """
@@ -257,12 +331,22 @@ def build_matrices(vectorizer_kind: str,
     logger.info("  X_ling_train=%s X_ling_test=%s n_ling=%d",
                 X_ling_train.shape, X_ling_test.shape, len(ling_names))
 
-    logger.info("Carregando textos truncados alinhados aos keys...")
-    train_texts, train_keep = load_texts_for_keys(train_keys, CORPUS_TRUNCATED)
-    test_texts, test_keep = load_texts_for_keys(test_keys, CORPUS_TRUNCATED)
-    logger.info("  textos: train=%d (descartados %d), test=%d (descartados %d)",
-                len(train_texts), len(train_keys) - len(train_texts),
-                len(test_texts), len(test_keys) - len(test_texts))
+    logger.info("Truncagem pareada em runtime (BERTimbau, max_length=%d)...", max_length)
+    train_texts, train_keep, train_stats = load_paired_truncated_texts(
+        train_keys, corpus_dirs, tokenizer, max_length,
+    )
+    test_texts, test_keep, test_stats = load_paired_truncated_texts(
+        test_keys, corpus_dirs, tokenizer, max_length,
+    )
+    logger.info("  train: pares completos=%d, keys mantidas=%d, descartadas=%d",
+                train_stats["pairs_complete"], train_stats["keys_kept"],
+                train_stats["keys_discarded"])
+    logger.info("    truncagem ditada por: human_shorter=%d  llm_shorter=%d  cap=%d",
+                train_stats["human_shorter"], train_stats["llm_shorter"],
+                train_stats["max_length_cap"])
+    logger.info("  test:  pares completos=%d, keys mantidas=%d, descartadas=%d",
+                test_stats["pairs_complete"], test_stats["keys_kept"],
+                test_stats["keys_discarded"])
 
     # Filtra matrizes linguisticas por kept_indices
     X_ling_train = X_ling_train[train_keep]
@@ -311,12 +395,15 @@ def run_experiment(vectorizer_kind: str,
                    classifiers: List[str],
                    max_features: int,
                    min_df: int,
+                   max_length: int,
+                   tokenizer: Any,
                    cv_folds: int,
                    feature_groups: List[str],
-                   out_dir: Path) -> Dict[str, Dict]:
+                   out_dir: Path,
+                   bert_model_name: str) -> Dict[str, Dict]:
     (X_train, y_train, X_test, y_test,
      train_keys, test_keys, feature_names) = build_matrices(
-        vectorizer_kind, max_features, min_df, feature_groups,
+        vectorizer_kind, max_features, min_df, max_length, tokenizer, feature_groups,
     )
 
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -349,6 +436,12 @@ def run_experiment(vectorizer_kind: str,
             "vectorizer_config": {
                 "max_features": max_features, "ngram_range": [1, 1], "min_df": min_df,
                 "sublinear_tf": vectorizer_kind == "tfidf",
+            },
+            "truncation": {
+                "max_length": int(max_length),
+                "effective_min_len_cap": int(max_length - 2),
+                "tokenizer": bert_model_name,
+                "strategy": "pairwise_bertimbau_runtime",
             },
             "data_split": {
                 "train_samples": int(X_train.shape[0]),
@@ -417,6 +510,11 @@ def parse_args(argv):
                    help="Classificador (default: all)")
     p.add_argument("--max-features", type=int, default=10000)
     p.add_argument("--min-df", type=int, default=5)
+    p.add_argument("--max-length", type=int, default=DEFAULT_MAX_LENGTH,
+                   help=f"Limite de tokens WordPiece BERTimbau na truncagem pareada "
+                        f"(default: {DEFAULT_MAX_LENGTH}; efetivo: {DEFAULT_MAX_LENGTH-2} apos [CLS]/[SEP])")
+    p.add_argument("--bert-model", type=str, default=DEFAULT_BERT_MODEL,
+                   help=f"Modelo BERT para o tokenizer (default: {DEFAULT_BERT_MODEL})")
     p.add_argument("--cv-folds", type=int, default=5)
     p.add_argument("--features", default="all",
                    help="Grupos linguisticos: nilcmetrics,liwc,enhanced_ud,syllables,"
@@ -442,11 +540,25 @@ def main(argv):
 
     vectorizers = ["tfidf", "bow"] if args.vectorizer == "both" else [args.vectorizer]
 
-    if not CORPUS_TRUNCATED.exists():
-        logger.error("corpus_truncated/ nao encontrado em %s. "
-                     "Rode corpus_prep/truncate_pairs.py primeiro.",
-                     CORPUS_TRUNCATED)
+    # Sanity check dos diretorios de corpus originais (a truncagem e' em runtime)
+    missing_dirs = [str(p) for p in ORIGINAL_CORPUS_DIRS.values() if not p.exists()]
+    if missing_dirs:
+        logger.error("Diretorios de corpus originais ausentes:\n  - %s",
+                     "\n  - ".join(missing_dirs))
+        logger.error("Ajuste ORIGINAL_CORPUS_DIRS em text_enriched.py para refletir "
+                     "o layout do servidor.")
         return 1
+
+    # Tokenizer BERTimbau carregado uma vez e reusado entre vetorizadores
+    logger.info("Carregando tokenizer '%s'...", args.bert_model)
+    try:
+        from transformers import AutoTokenizer
+    except ImportError:
+        logger.error("transformers nao instalado. Instale com 'pip install transformers' "
+                     "para usar a truncagem BERTimbau dos experimentos BERT.")
+        return 1
+    tokenizer = AutoTokenizer.from_pretrained(args.bert_model)
+    logger.info("Tokenizer pronto.")
 
     for vec_kind in vectorizers:
         results = run_experiment(
@@ -454,9 +566,12 @@ def main(argv):
             classifiers=classifiers,
             max_features=args.max_features,
             min_df=args.min_df,
+            max_length=args.max_length,
+            tokenizer=tokenizer,
             cv_folds=args.cv_folds,
             feature_groups=feature_groups,
             out_dir=args.out_dir,
+            bert_model_name=args.bert_model,
         )
         if len(results) > 1:
             write_comparison(vec_kind, results, args.out_dir)

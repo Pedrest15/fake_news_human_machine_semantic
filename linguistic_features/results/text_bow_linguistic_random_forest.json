@@ -1,6 +1,6 @@
 {
-  "experiment": "tfidf+linguistic",
-  "vectorizer": "tfidf",
+  "experiment": "bow+linguistic",
+  "vectorizer": "bow",
   "classifier": "random_forest",
   "n_features_text": 10000,
   "n_features_linguistic": 780,
@@ -12,7 +12,7 @@
       1
     ],
     "min_df": 5,
-    "sublinear_tf": true
+    "sublinear_tf": false
   },
   "truncation": {
     "max_length": 512,
@@ -29,16 +29,16 @@
     "cv_folds": 5,
     "best_params": {
       "max_depth": null,
-      "min_samples_split": 2,
+      "min_samples_split": 5,
       "n_estimators": 200
     },
-    "cv_score": 0.9810756619934817
+    "cv_score": 0.9808217846882487
   },
   "test_results": {
-    "accuracy": 0.9840698869475848,
-    "f1": 0.9840663483951057,
-    "precision": 0.9845002791028112,
-    "recall": 0.9840698869475848
+    "accuracy": 0.9835560123329907,
+    "f1": 0.9835521033191619,
+    "precision": 0.984016138223717,
+    "recall": 0.9835560123329907
   },
   "confusion_matrix": {
     "matrix": [
@@ -47,13 +47,13 @@
         1
       ],
       [
-        30,
-        943
+        31,
+        942
       ]
     ],
     "tn": 972,
     "fp": 1,
-    "fn": 30,
-    "tp": 943
+    "fn": 31,
+    "tp": 942
   }
 }

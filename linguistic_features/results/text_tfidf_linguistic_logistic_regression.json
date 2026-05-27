@@ -15,8 +15,10 @@
     "sublinear_tf": true
   },
   "truncation": {
-    "max_words": 400,
-    "strategy": "pairwise_whitespace_runtime"
+    "max_length": 512,
+    "effective_min_len_cap": 510,
+    "tokenizer": "neuralmind/bert-base-portuguese-cased",
+    "strategy": "pairwise_bertimbau_runtime"
   },
   "data_split": {
     "train_samples": 7876,

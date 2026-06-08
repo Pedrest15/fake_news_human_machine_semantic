@@ -2,8 +2,10 @@
 
 > Análise dos pipelines `text_enriched`: TF-IDF + features linguísticas e BoW
 > + features linguísticas, com truncagem pareada pelo tokenizador BERTimbau a
-> 512 tokens WordPiece. Os números saem dos JSONs `text_*_linguistic_*.json`
-> em [results/](results/), gerados no servidor.
+> 512 tokens WordPiece. Inclui análise de importância de features (top-30 por
+> classificador tree-based/linear) e mapeamento dos documentos misclassificados.
+> Os números saem dos JSONs `text_*_linguistic_*.json` e respectivos
+> `misclassified/text_*_linguistic_*_errors.json` em [results/](results/).
 
 ## 1. Configuração dos experimentos
 
@@ -18,7 +20,7 @@ O blacklist Tier A+B do NILC removeu **60 features length-biased** (16 contagens
 
 A truncagem pareada é idêntica nos dois vetorizadores: `min(len_h_tokens, len_l_tokens, 510)` em tokens WordPiece BERTimbau, com decode de volta para texto. Garante que humano e LLM do mesmo factoide vejam exatamente a mesma janela de comprimento, fechando o vazamento de tamanho que dominava os resultados pré-saneamento.
 
-Cinco classificadores foram avaliados via `GridSearchCV` com `cv=5` e `scoring='f1_weighted'`: SVM, Random Forest, Regressão Logística, MLP e XGBoost. Naive Bayes foi excluído porque o GaussianNB é incompatível com a matriz hstack(sparse + dense_padronizada) por densificar internamente.
+Cinco classificadores foram avaliados via `GridSearchCV` com `cv=5` e `scoring='f1_weighted'`: SVM, Random Forest, Regressão Logística, MLP e XGBoost.
 
 ## 2. Tabela consolidada de resultados (F1 weighted no teste held-out)
 
@@ -32,7 +34,7 @@ Cinco classificadores foram avaliados via `GridSearchCV` com `cv=5` e `scoring='
 
 ## 3. TF-IDF + features linguísticas
 
-A matriz TF-IDF de 10 000 unigramas com `sublinear_tf=True` concatenada com as 780 features linguísticas (após Tier A+B do NILC e remoção dos agregadores LIWC) atinge **F1 entre 0,9841 e 0,9985 dependendo do classificador**. XGBoost lidera com folga: F1 = 0,9985 e **apenas 3 falsos negativos em 1 946 documentos, zero falsos positivos**. Seus hiperparâmetros (`depth=3`, `n_estimators=100`, `lr=0,3`) caracterizam um regime de "fast learner": árvores rasas com taxa de aprendizado alta, indicando que o sinal é fortemente discriminativo e poucas iterações bastam para capturá-lo.
+A matriz TF-IDF de 10 000 unigramas com `sublinear_tf=True` concatenada com as 780 features linguísticas atinge **F1 entre 0,9841 e 0,9985 dependendo do classificador**. XGBoost lidera com folga: F1 = 0,9985 e **apenas 3 falsos negativos em 1 946 documentos, zero falsos positivos**. Seus hiperparâmetros (`depth=3`, `n_estimators=100`, `lr=0,3`) caracterizam um regime de "fast learner": árvores rasas com taxa de aprendizado alta, indicando que o sinal é fortemente discriminativo e poucas iterações bastam para capturá-lo.
 
 SVM RBF (`C=10`) e MLP `(512,)` empatam em F1 = 0,9913 com 17 erros cada. Logistic Regression L2 com `C=0,01` chega a 0,9902 com 19 erros, e Random Forest fica em 0,9841 com 30 falsos negativos e apenas 1 falso positivo.
 
@@ -65,7 +67,95 @@ Olhando os melhores hiperparâmetros escolhidos pelo `GridSearchCV` em cada pipe
 - **XGBoost**: ambos vetorizadores convergem em **árvores rasas (`depth=3`) com taxa de aprendizado alta (`lr=0,3`) e 100 estimadores**. Esse é o regime característico de "boost rápido": o sinal está em features individuais discriminativas (poucos splits revelam o rótulo), e o ensemble combina ~100 dessas árvores. É o classificador mais barato computacionalmente entre os de boa performance.
 - **Random Forest**: profundidade ilimitada e `n_estimators=200` em ambos, com diferença apenas em `min_samples_split` (2 para TF-IDF, 5 para BoW). O RF se ajusta aos dois vetorizadores de forma quase idêntica, mas seu CV score baixo (~0,98) já anuncia o desempenho inferior nas duas configurações.
 
-## 6. Perfil dos erros
+## 6. Importância de features
+
+Três classificadores expõem importância numérica de cada feature (`feature_importances_` para tree-based; `|coef_|` para LR linear). SVM RBF e MLP não expõem importância por construção do algoritmo e não aparecem nesta seção.
+
+### 6.1 XGBoost — features dominantes (TF-IDF e BoW empatam quase exatamente)
+
+A leitura mais expressiva vem do XGBoost, que com `depth=3` precisa de poucas features muito discriminativas. O top-10 do TF-IDF e do BoW são **quase idênticos** com pequenas variações de ordem:
+
+| Rank | Feature (XGBoost TF-IDF) | Importância | Grupo |
+|---|---|---|---|
+| 1 | `nilc__indicative_present_ratio` | 0,254 | nilc |
+| 2 | `nilc__sentences_per_paragraph` | 0,137 | nilc |
+| 3 | `nilc__clauses_per_sentence` | 0,137 | nilc |
+| 4 | `nilc__named_entity_ratio_text` | 0,126 | nilc |
+| 5 | `nilc__adjunct_per_clause` | 0,066 | nilc |
+| 6 | `ud__PROPN(*)` | 0,054 | enhanced_ud |
+| 7 | `ud__PROPN(ADP/case, DET/det, *)` | 0,031 | enhanced_ud |
+| 8 | `syll__media_silabas_por_palavra` | 0,026 | sílabas |
+| 9 | `nilc__named_entity_ratio_sentence` | 0,021 | nilc |
+| 10 | `nilc__prepositions_per_sentence` | 0,017 | nilc |
+
+A **feature dominante absoluta é `nilc__indicative_present_ratio`** (proporção de verbos no presente do indicativo) com 25,4 % da importância total. Esse achado é linguisticamente interpretável: LLMs tendem a usar o presente do indicativo de forma mais constante (estilo "atemporal" típico de modelos generativos), enquanto textos jornalísticos humanos sobre fake news alternam tempos verbais conforme narram passado, atribuem citações e fazem juízos. As features 2-5 reforçam isso: `sentences_per_paragraph`, `clauses_per_sentence` e `adjunct_per_clause` capturam a granularidade estrutural — LLMs produzem parágrafos mais densos sintaticamente, com mais subordinação e adjuntos por cláusula. `named_entity_ratio_text` (densidade de entidades nomeadas por documento) também distingue os grupos.
+
+As duas regras Enhanced UD no top-7 são particularmente interessantes: **`PROPN(*)`** (substantivo próprio como folha, isolado de pai sintático) e **`PROPN(ADP/case, DET/det, *)`** (substantivo próprio precedido de preposição + determinante, ex.: "do Brasil", "da Universidade"). Ambas refletem a maneira como entidades nomeadas são construídas sintaticamente em cada grupo — LLMs parecem usar substantivos próprios com mais frequência em construções específicas.
+
+O top-30 do XGBoost inclui **5 palavras `text__`** que vale citar: `text__redes`, `text__exclusivo`, `text__revela`, `text__fontes`, `text__bombástica` (TF-IDF) e `text__sociais`, `text__reviravolta`, `text__atenção`, `text__exclusivo` (BoW). Esse vocabulário sensacionalista/clickbait aparece desproporcionalmente em um dos grupos, e o XGBoost o detecta. Dois termos SAGE também emergem: `sage__uma_reviravolta` e `sage__voce_quiser` (TF-IDF) — bigramas característicos.
+
+### 6.2 Random Forest — concentração total no NILC
+
+O Random Forest mostra perfil diferente: **25 das top-30 features são do NILC**, sem nenhuma palavra `text__` no top-30. Ele essencialmente ignora a vetorização lexical e decide tudo via features linguísticas:
+
+- Top-5 TF-IDF: `sentences_per_paragraph` (0,029), `lsa_paragraph_mean` (0,019), `syll__media_silabas_por_palavra` (0,019), `flesch` (0,019), `lsa_givenness_mean` (0,017).
+- A regra `ud__VERB(PUNCT/punct, *, NOUN/obj)` aparece em ambos vetorizadores no top-11 — essa é a mesma regra já identificada no diagnóstico anterior como sinal sintático genuíno.
+- Features psicolinguísticas dominam o middle do ranking: `idade_aquisicao_*` (várias variantes), `imageabilidade_*`, `familiaridade_*` — confirmam que o vocabulário lexical-cognitivo de LLM difere sistematicamente do humano.
+- Uma única feature LIWC sobrevive ao top-30: `liwc__adj (Adjectives)` no rank 28-30. Indica que após o saneamento, LIWC contribui pouco para o sinal residual.
+
+O fato de o RF ignorar palavras `text__` explica seu desempenho inferior (F1 ≈ 0,984): ele perde o sinal lexical que XGBoost captura. Por sua vez, RF prova que as 780 features linguísticas sozinhas (sem ajuda do vocabulário) já carregam aproximadamente 98,4 % do sinal.
+
+### 6.3 Logistic Regression — visão linear complementar
+
+A LR L1/L2 dá uma visão diferente porque coeficientes refletem direção (positivo = mais característico de LLM, negativo = de humano) embora aqui usemos `|coef_|`. O top-10 da LR no TF-IDF:
+
+| Rank | Feature | \|coef\| | Grupo |
+|---|---|---|---|
+| 1 | `nilc__sentences_per_paragraph` | 0,375 | nilc |
+| 2 | `ud__VERB(PUNCT/punct, *, NOUN/obj)` | 0,342 | enhanced_ud |
+| 3 | `nilc__gerund_verbs` | 0,285 | nilc |
+| 4 | `syll__media_silabas_por_palavra` | 0,266 | sílabas |
+| 5 | `nilc__lsa_span_mean` | 0,261 | nilc |
+| 6 | `nilc__add_neg_conn_ratio` | 0,258 | nilc |
+| 7 | `liwc__number (Numbers)` | 0,248 | liwc |
+| 8 | `nilc__adj_stem_ovl` | 0,239 | nilc |
+| 9 | `nilc__stem_ovl` | 0,232 | nilc |
+| 10 | `nilc__syllables_per_content_word` | 0,216 | nilc |
+
+A LR confirma `sentences_per_paragraph` no topo e adiciona contribuições novas que o XGBoost com `depth=3` não capturava: `gerund_verbs` (uso de gerúndio), conectivos negativos aditivos e causais (`add_neg_conn_ratio`, `cau_neg_conn_ratio` — não aparece no top-10 mas está no top-15), sobreposição lexical (`stem_ovl`, `adj_stem_ovl` — coesão referencial), e categorias LIWC como `number`, `posemo`, `certain`, `prep`, `adj`. Várias regras Enhanced UD relacionadas a pontuação aparecem entre 12-26: `PUNCT(PUNCT/punct, *, PUNCT/punct, PUNCT/punct)`, `ADV(*, PRON/obl, PUNCT/punct)`, `ADP(*, DET/fixed, NOUN/fixed, PUNCT/punct)`, `VERB(PUNCT/punct, *, VERB/ccomp)` — padrões pontuacionais específicos.
+
+No BoW, a LR também inclui palavras `text__apenas` (rank 16) e `text__disse` (rank 17) no top-30 — verbos dicendi e advérbios que aparecem com frequência diferente em humanos vs LLMs.
+
+### 6.4 Síntese transversal — features que dominam consistentemente
+
+Cruzando os rankings dos três classificadores em ambos os vetorizadores, **quatro features aparecem em **todos** os 6 runs (3 classificadores × 2 vetorizadores) no top-15**:
+
+- **`nilc__sentences_per_paragraph`** — densidade estrutural dos parágrafos
+- **`syll__media_silabas_por_palavra`** — complexidade lexical
+- **`ud__VERB(PUNCT/punct, *, NOUN/obj)`** — padrão sintático "incisos + verbo + objeto"
+- **`nilc__syllables_per_content_word`** — variante do anterior, complexidade de palavras de conteúdo
+
+Adicionalmente, **`nilc__indicative_present_ratio`** é dominante exclusivamente no XGBoost (rank 1 absoluto em ambos vetorizadores) e desaparece do RF e LR. Isso sugere que XGBoost descobre uma regra simples e altamente discriminativa em torno do tempo verbal, enquanto LR e RF distribuem o peso entre múltiplas features correlacionadas.
+
+## 7. Os 3 erros do XGBoost — identificados e analisados
+
+Os **3 erros do XGBoost são exatamente os mesmos documentos LLM em TF-IDF e em BoW**, com confianças similares. Esse é um achado interessante: XGBoost reproduz seus próprios erros entre vetorizações, indicando que esses 3 documentos têm assinatura suficientemente atípica para escapar do classificador independentemente da representação textual usada.
+
+| Documento | True → Pred | conf TF-IDF | conf BoW | n_palavras humano | n_palavras LLM |
+|---|---|---|---|---|---|
+| `fake_br/213.txt` | LLM → Humano | 0,997 | 0,991 | 141 | 563 |
+| `fake_true_br/555.txt` | LLM → Humano | 0,851 | 0,911 | 204 | 247 |
+| `fake_true_br/1746.txt` | LLM → Humano | 0,733 | 0,631 | 419 | 469 |
+
+Três padrões interessantes nesses três documentos:
+
+**1. `fake_br/213.txt`** é o erro de maior confiança (0,99). É um caso curioso: o humano tem 141 palavras e o LLM 563 (quase 4× mais longo, padrão típico para LLMs). O classificador errar com confiança extrema sugere que esse LLM imitou *muito bem* o estilo jornalístico humano apesar de longo — talvez um caso onde o modelo gerador produziu reportagem factual coerente em vez do tom mais elaborado que o classificador aprendeu a associar com LLM.
+
+**2. `fake_true_br/555.txt` e `fake_true_br/1746.txt`** estão no FakeTrue.Br e têm **humano e LLM com tamanhos próximos** (204 vs 247; 419 vs 469). Isso é raro no corpus, onde LLMs são normalmente bem mais longos. A truncagem pareada (510 tokens WordPiece) corta ambos no mesmo ponto, mas como os originais já tinham comprimentos próximos, o LLM perde menos diferenciação de tamanho. Sem essa "almofada" de tamanho diferencial, o classificador depende ainda mais do sinal estilístico fino — e nesses dois casos a similaridade estrutural é grande o bastante para confundi-lo.
+
+A consistência entre TF-IDF e BoW reforça que **não é um problema de representação lexical** — é um problema de "esses 3 LLMs são genuinamente bem feitos". Para o paper, podem ser citados como exemplos do tipo de LLM mais difícil de detectar: aqueles que reproduzem fielmente o estilo jornalístico.
+
+## 8. Perfil dos erros por classificador
 
 Em ambos os pipelines, **falsos negativos predominam fortemente sobre falsos positivos** — isto é, o classificador tende a confundir LLM com humano mais do que o contrário:
 
@@ -84,26 +174,47 @@ Em ambos os pipelines, **falsos negativos predominam fortemente sobre falsos pos
 
 O Random Forest mostra a assimetria mais forte (30+ FN com apenas 1 FP) — provável reflexo da escolha de `min_samples_split`: árvores um pouco mais conservadoras tendem a "votar humano" em casos de fronteira porque humanos têm maior diversidade interna no corpus (várias fontes, vários estilos jornalísticos), enquanto LLMs são mais homogêneos (mesmo modelo gerador). Quando uma instância LLM se assemelha mais a um humano "comum" do que aos LLMs sintéticos do treino, o ensemble vota humano. Esse efeito é amplificado em modelos com bias-variância conservador.
 
-Cruzando os arquivos de filename misclassificados entre os runs TF-IDF e BoW para o XGBoost, **os 3 erros são os mesmos documentos LLM em ambos os vetorizadores**. Vale uma análise qualitativa: provavelmente são notícias geradas por LLM cujo conteúdo factual é tão preciso que reproduz o estilo do jornalismo factual humano e perde os marcadores estilísticos típicos do LLM (verbosidade, paragrafação previsível, vocabulário psicolinguisticamente sofisticado).
+### 8.1 Documentos sistematicamente difíceis (aparecem em múltiplos classificadores)
 
-## 7. Recomendações para o paper
+Cruzando os arquivos de filename misclassificados entre os 10 runs (5 classificadores × 2 vetorizadores), alguns documentos aparecem em vários classificadores diferentes — são casos genuinamente difíceis, não erros de um modelo específico:
 
-Cinco observações concretas para a redação:
+**LLMs que parecem humanos** (aparecem como FN em múltiplos classificadores):
+
+- **`fake_true_br/1701.txt`** — confunde **8 dos 10 runs**: SVM, RF, LR, MLP em ambos TF-IDF e BoW. Confianças altas (0,73-0,99). É o documento mais sistematicamente mal classificado do conjunto.
+- **`fake_true_br/1759.txt`** — confunde 8 runs (LR, MLP, RF, SVM nos dois vetorizadores). Confianças entre 0,52 e 0,85.
+- **`fake_true_br/555.txt`** — confunde 6 runs (incluindo os dois XGBoost).
+- **`fake_true_br/1414.txt`** — confunde 6 runs (LR, MLP, SVM, RF).
+- **`fake_br/895.txt`** — confunde 5 runs (SVM, RF, LR em ambos vetorizadores).
+
+**Humanos que parecem LLMs** (aparecem como FP em múltiplos classificadores):
+
+- **`fake_br/2511.txt`** — confunde 5 runs (LR e MLP em TF-IDF e BoW, SVM TF-IDF). Confianças altas (0,89-0,99). É um humano que escreve sistematicamente como se fosse LLM.
+- **`fake_true_br/202.txt`** — confunde 4 runs (LR e MLP em ambos vetorizadores). **Confiança 1,000** em todos — extremo.
+- **`fake_br/3421.txt`** — confunde 4 runs (LR e MLP em ambos vetorizadores).
+- **`fake_br/597.txt`** — confunde 4 runs com confiança altíssima (0,93-0,998 em LR e MLP).
+
+A concentração de erros sistemáticos no FakeTrue.Br (especialmente no range 1700-1800) sugere que esse subgrupo do corpus contém LLMs particularmente bem feitos ou humanos com estilo atípico. Para o paper, vale uma análise qualitativa especificamente desses ~10 documentos — eles representam os limites de detectabilidade dos pipelines TF-IDF/BoW + linguistic.
+
+## 9. Recomendações para o paper
+
+Seis observações concretas para a redação:
 
 **Primeira**, o pipeline `text_enriched` entrega **F1 ≈ 0,9985 no melhor caso (XGBoost)**, defensável metodologicamente porque (i) o saneamento das features linguísticas documenta de forma explícita quais atributos foram excluídos e por quê, com referências de literatura (Tweedie & Baayen 1998 para riqueza vocabular; argumento estatístico para max/std/diversidades; estrutura hierárquica LIWC2015 para os agregadores); (ii) cinco classificadores diferentes convergem para a faixa de 0,9836-0,9985 com perfis de erro coerentes; e (iii) a truncagem pareada pelo tokenizador BERTimbau elimina o viés residual de tamanho.
 
-**Segunda**, **XGBoost é o classificador mais robusto** dos avaliados: vence ou empata nos dois pipelines, com hiperparâmetros idênticos entre TF-IDF e BoW (`depth=3`, `n=100`, `lr=0,3`), e mantém o perfil `0 FP + 3 FN` consistentemente. Para a tabela principal do paper, reporte XGBoost. Para análise complementar, reporte Logistic Regression (interpretável via coeficientes).
+**Segunda**, **XGBoost é o classificador mais robusto** dos avaliados: vence ou empata nos dois pipelines, com hiperparâmetros idênticos entre TF-IDF e BoW (`depth=3`, `n=100`, `lr=0,3`), e mantém o perfil `0 FP + 3 FN` consistentemente. Para a tabela principal do paper, reporte XGBoost. Para análise complementar interpretável, reporte Logistic Regression (coeficientes legíveis).
 
 **Terceira**, o achado de **BoW ≥ TF-IDF em modelos lineares** é não-trivial e merece um parágrafo de discussão. Mostra que TF-IDF não é universalmente superior, especialmente quando o pipeline já carrega features linguísticas estabilizadoras. O efeito desaparece em modelos baseados em árvores (XGBoost, RF) por invariância a transformações monotônicas.
 
-**Quarta**, o ganho do MLP em BoW (F1 = 0,9943) sugere que a rede neural rasa consegue explorar interações entre palavras e features linguísticas que os modelos lineares perdem — mas ainda fica abaixo do XGBoost. Para o paper, MLP entrega ganho marginal sobre LR/SVM (cerca de 0,0005) com custo computacional bem maior; vale ressaltar essa proporção custo-benefício.
+**Quarta**, a **`nilc__indicative_present_ratio` é a feature dominante absoluta do XGBoost** (25,4 % da importância em ambos vetorizadores). Esse achado é altamente reportável: o tempo verbal — especificamente uso do presente do indicativo — é o sinal estatístico mais forte que separa humanos de LLMs neste corpus. LLMs produzem texto com tempo verbal mais constante, enquanto humanos alternam tempos conforme contexto narrativo. As outras features dominantes (`sentences_per_paragraph`, `clauses_per_sentence`, `named_entity_ratio_text`, `adjunct_per_clause`) caracterizam estilo estrutural-discursivo.
 
-**Quinta**, o desempenho do **Random Forest é claramente inferior** (F1 ≈ 0,984) e seu perfil de erros (30+ FN) o torna pouco confiável para deployment. Reporte como baseline da família tree-based mas dê destaque ao XGBoost.
+**Quinta**, os **3 erros do XGBoost são casos limítrofes interpretáveis**: dois deles (`fake_true_br/555.txt` e `1746.txt`) têm humano e LLM com tamanhos similares (raro no corpus), e o terceiro (`fake_br/213.txt`) é um LLM que reproduz estilo jornalístico humano com fidelidade. Estes três documentos são citáveis no paper como o limite empírico do que o pipeline consegue detectar.
 
-## 8. Próximas etapas opcionais
+**Sexta**, o subgrupo **`fake_true_br/1700-1800`** concentra erros sistemáticos em múltiplos classificadores. `fake_true_br/1701.txt` é classificado errado por 8 dos 10 runs — é o documento mais difícil do conjunto. Para análise qualitativa, esses ~5-10 documentos no range 1700-1800 são prioridade: provavelmente são LLMs gerados com prompts particularmente eficazes para mimetizar humano, ou humanos com estilo atípico.
+
+## 10. Próximas etapas opcionais
 
 Para fechar a análise:
 
 - **Rodar `tfidf_baseline.py` e equivalente para BoW** (sem features linguísticas) para isolar a contribuição puramente lexical e quantificar o ganho líquido das features linguísticas sozinhas sobre representação puramente bag-of-words.
-- **Análise qualitativa dos 3 erros do XGBoost** (mesmos 3 documentos em TF-IDF e BoW): ler o texto humano e o LLM, identificar o que neles confunde o classificador. Provavelmente são casos onde o LLM consegue replicar bem o estilo jornalístico humano.
-- **Análise de feature importance no XGBoost**: extrair `feature_importances_` do XGBoost vencedor para identificar exatamente quais palavras (tokens `text__*`) e features linguísticas estão dirigindo a discriminação, complementando a análise já feita em [RELATORIO_DIAGNOSTICO.md](RELATORIO_DIAGNOSTICO.md) com features de palavras concretas.
+- **Análise qualitativa dos documentos sistematicamente difíceis**: ler os textos humano e LLM de `fake_true_br/1701.txt`, `1759.txt`, `555.txt`, `1414.txt` (LLMs que confundem 6+ classificadores), e de `fake_br/2511.txt`, `fake_true_br/202.txt` (humanos que confundem 4+ classificadores). Identificar a anatomia desses casos pode fornecer pistas qualitativas que complementem o paper.
+- **Análise do tempo verbal**: dado que `nilc__indicative_present_ratio` é a feature dominante absoluta, vale extrair as distribuições marginais dessa feature para humanos e LLMs e reportar como figura no paper. É a contribuição mais nova e interpretável dos resultados.

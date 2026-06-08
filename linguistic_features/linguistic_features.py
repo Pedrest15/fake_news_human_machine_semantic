@@ -975,9 +975,16 @@ class LinguisticFeaturesPipeline:
         cv_folds: int = 5,
         cache_dir: Optional[Path] = None,
         drop_nilc_absolute: bool = True,
+        experiment_label: Optional[str] = None,
+        results_root: Optional[Path] = None,
     ):
         self.exp_dir = exp_dir
         self.feature_mode = feature_mode
+        # Rotulo usado nos nomes de arquivo/experimento. Por padrao e o
+        # feature_mode (combined/linguistic/embedding); a classificacao por
+        # modulo sobrescreve com "module_<modulo>" para nao colidir os outputs.
+        self.experiment_label = experiment_label or feature_mode
+        self.results_root = results_root
         self.feature_groups = feature_groups or [
             'nilcmetrics', 'liwc', 'enhanced_ud',
             'syllables', 'pos_tagger', 'parser_stats', 'sage_terms',
@@ -1216,7 +1223,7 @@ class LinguisticFeaturesPipeline:
         importance = analyze_feature_importance(best_clf, selected_features, top_k=20)
 
         results = {
-            'experiment': f"{self.feature_mode}",
+            'experiment': self.experiment_label,
             'classifier': classifier_type,
             'feature_mode': self.feature_mode,
             'feature_groups': self.feature_groups if self.feature_mode != 'embedding' else None,
@@ -1238,16 +1245,16 @@ class LinguisticFeaturesPipeline:
             'feature_importance': [[f, float(v)] for f, v in importance] if importance else None,
         }
 
-        results_dir = self.exp_dir / "results"
+        results_dir = self.results_root or (self.exp_dir / "results")
         results_dir.mkdir(parents=True, exist_ok=True)
-        tag = f"{self.feature_mode}_{classifier_type}"
+        tag = f"{self.experiment_label}_{classifier_type}"
         out_json = results_dir / f"{tag}.json"
         with open(out_json, 'w', encoding='utf-8') as fh:
             json.dump(results, fh, indent=2, ensure_ascii=False)
         logger.info(f"  Resultados salvos em {out_json}")
 
         cm_path = results_dir / "confusion_matrices" / f"{tag}_cm.png"
-        save_confusion_matrix(cm, cm_path, f"{self.feature_mode.upper()} + {classifier_type.upper()}")
+        save_confusion_matrix(cm, cm_path, f"{self.experiment_label.upper()} + {classifier_type.upper()}")
 
         probs = None
         if hasattr(best_clf, 'predict_proba'):

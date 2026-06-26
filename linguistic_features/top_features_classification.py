@@ -51,14 +51,14 @@ from linguistic_features import (
 # prefixo que os loaders aplicam (`nilc__`/`liwc__`) e, no caso do LIWC, com
 # o sufixo descritivo entre parenteses que e o nome real da coluna no CSV.
 NILC_HUMAN_TOP = [
-    "nilc__punctuation_diversity",
+    "nilc__familiaridade_55_7_ratio",
     "nilc__idade_aquisicao_1_25_ratio",
     "nilc__imageabilidade_4_55_ratio",
     "nilc__imageabilidade_mean",
     "nilc__concretude_mean",
 ]
 NILC_LLM_TOP = [
-    "nilc__honore",
+    "nilc__imageabilidade_25_4_ratio",
     "nilc__idade_aquisicao_mean",
     "nilc__lsa_span_mean",
     "nilc__idade_aquisicao_55_7_ratio",

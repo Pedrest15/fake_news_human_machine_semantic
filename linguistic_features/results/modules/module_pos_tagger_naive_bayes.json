@@ -1,0 +1,47 @@
+{
+  "experiment": "module_pos_tagger",
+  "classifier": "naive_bayes",
+  "feature_mode": "linguistic",
+  "feature_groups": [
+    "pos_tagger"
+  ],
+  "bert_model": null,
+  "n_features": 17,
+  "normalized": true,
+  "top_k_selection": null,
+  "data_split": {
+    "train_samples": 8256,
+    "test_samples": 2054
+  },
+  "grid_search": {
+    "enabled": true,
+    "cv_folds": 5,
+    "best_params": {
+      "var_smoothing": 1e-09
+    },
+    "cv_score": 0.7904874286040939
+  },
+  "test_results": {
+    "accuracy": 0.802823758519961,
+    "f1": 0.7974495892598247,
+    "precision": 0.8258535386711039,
+    "recall": 0.802823758519961
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        630,
+        345
+      ],
+      [
+        60,
+        1019
+      ]
+    ],
+    "tn": 630,
+    "fp": 345,
+    "fn": 60,
+    "tp": 1019
+  },
+  "feature_importance": null
+}

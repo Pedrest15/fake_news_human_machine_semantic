@@ -1,0 +1,47 @@
+{
+  "experiment": "module_liwc",
+  "classifier": "naive_bayes",
+  "feature_mode": "linguistic",
+  "feature_groups": [
+    "liwc"
+  ],
+  "bert_model": null,
+  "n_features": 61,
+  "normalized": true,
+  "top_k_selection": null,
+  "data_split": {
+    "train_samples": 8624,
+    "test_samples": 2158
+  },
+  "grid_search": {
+    "enabled": true,
+    "cv_folds": 5,
+    "best_params": {
+      "var_smoothing": 1e-09
+    },
+    "cv_score": 0.8029953289543883
+  },
+  "test_results": {
+    "accuracy": 0.7984244670991659,
+    "f1": 0.7956600869445402,
+    "precision": 0.8154970760233918,
+    "recall": 0.7984244670991659
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        736,
+        343
+      ],
+      [
+        92,
+        987
+      ]
+    ],
+    "tn": 736,
+    "fp": 343,
+    "fn": 92,
+    "tp": 987
+  },
+  "feature_importance": null
+}

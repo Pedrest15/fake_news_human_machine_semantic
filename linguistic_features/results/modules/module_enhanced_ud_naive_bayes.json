@@ -1,0 +1,47 @@
+{
+  "experiment": "module_enhanced_ud",
+  "classifier": "naive_bayes",
+  "feature_mode": "linguistic",
+  "feature_groups": [
+    "enhanced_ud"
+  ],
+  "bert_model": null,
+  "n_features": 500,
+  "normalized": true,
+  "top_k_selection": null,
+  "data_split": {
+    "train_samples": 8618,
+    "test_samples": 2156
+  },
+  "grid_search": {
+    "enabled": true,
+    "cv_folds": 5,
+    "best_params": {
+      "var_smoothing": 1e-05
+    },
+    "cv_score": 0.8929340230870734
+  },
+  "test_results": {
+    "accuracy": 0.8928571428571429,
+    "f1": 0.892587625058985,
+    "precision": 0.8967568987227025,
+    "recall": 0.8928571428571429
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        908,
+        169
+      ],
+      [
+        62,
+        1017
+      ]
+    ],
+    "tn": 908,
+    "fp": 169,
+    "fn": 62,
+    "tp": 1017
+  },
+  "feature_importance": null
+}

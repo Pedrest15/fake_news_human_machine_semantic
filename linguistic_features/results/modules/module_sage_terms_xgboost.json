@@ -1,0 +1,131 @@
+{
+  "experiment": "module_sage_terms",
+  "classifier": "xgboost",
+  "feature_mode": "linguistic",
+  "feature_groups": [
+    "sage_terms"
+  ],
+  "bert_model": null,
+  "n_features": 60,
+  "normalized": true,
+  "top_k_selection": null,
+  "data_split": {
+    "train_samples": 8624,
+    "test_samples": 2158
+  },
+  "grid_search": {
+    "enabled": true,
+    "cv_folds": 5,
+    "best_params": {
+      "learning_rate": 0.3,
+      "max_depth": 6,
+      "n_estimators": 200,
+      "subsample": 1.0
+    },
+    "cv_score": 0.7654567059580123
+  },
+  "test_results": {
+    "accuracy": 0.7715477293790547,
+    "f1": 0.7601207452420147,
+    "precision": 0.8354700764006792,
+    "recall": 0.7715477293790547
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        1068,
+        11
+      ],
+      [
+        482,
+        597
+      ]
+    ],
+    "tn": 1068,
+    "fp": 11,
+    "fn": 482,
+    "tp": 597
+  },
+  "feature_importance": [
+    [
+      "sage__se_voce",
+      0.13643483817577362
+    ],
+    [
+      "sage__segundo_fontes",
+      0.12248469144105911
+    ],
+    [
+      "sage__destacando_que",
+      0.09769824147224426
+    ],
+    [
+      "sage__uma_reviravolta",
+      0.07251591980457306
+    ],
+    [
+      "sage__fontes_internas",
+      0.06118692830204964
+    ],
+    [
+      "sage__debates_acalorados",
+      0.05332958698272705
+    ],
+    [
+      "sage__reviravolta_surpreendente",
+      0.04430403187870979
+    ],
+    [
+      "sage__apesar_das",
+      0.041147854179143906
+    ],
+    [
+      "sage__diz_que",
+      0.04095260426402092
+    ],
+    [
+      "sage__fique_atento",
+      0.03833356499671936
+    ],
+    [
+      "sage__documentos_secretos",
+      0.03457137197256088
+    ],
+    [
+      "sage__com_muitos",
+      0.03296360746026039
+    ],
+    [
+      "sage__tem_gerado",
+      0.027295513078570366
+    ],
+    [
+      "sage__fontes_exclusivas",
+      0.0264314915984869
+    ],
+    [
+      "sage__especialistas_alertam",
+      0.024949492886662483
+    ],
+    [
+      "sage__revelam_que",
+      0.024744465947151184
+    ],
+    [
+      "sage__que_promete",
+      0.0239399503916502
+    ],
+    [
+      "sage__agora_enfrenta",
+      0.022836904972791672
+    ],
+    [
+      "sage__especialistas_afirmam",
+      0.020263969898223877
+    ],
+    [
+      "sage__gente_pelo",
+      0.014147096313536167
+    ]
+  ]
+}

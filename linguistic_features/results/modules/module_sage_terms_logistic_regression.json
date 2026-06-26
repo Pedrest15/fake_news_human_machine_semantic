@@ -1,0 +1,130 @@
+{
+  "experiment": "module_sage_terms",
+  "classifier": "logistic_regression",
+  "feature_mode": "linguistic",
+  "feature_groups": [
+    "sage_terms"
+  ],
+  "bert_model": null,
+  "n_features": 60,
+  "normalized": true,
+  "top_k_selection": null,
+  "data_split": {
+    "train_samples": 8624,
+    "test_samples": 2158
+  },
+  "grid_search": {
+    "enabled": true,
+    "cv_folds": 5,
+    "best_params": {
+      "C": 100.0,
+      "penalty": "l2",
+      "solver": "liblinear"
+    },
+    "cv_score": 0.7657158720448797
+  },
+  "test_results": {
+    "accuracy": 0.7715477293790547,
+    "f1": 0.7603235053926951,
+    "precision": 0.8341397576710718,
+    "recall": 0.7715477293790547
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        1066,
+        13
+      ],
+      [
+        480,
+        599
+      ]
+    ],
+    "tn": 1066,
+    "fp": 13,
+    "fn": 480,
+    "tp": 599
+  },
+  "feature_importance": [
+    [
+      "sage__destacando_que",
+      1.8991720104373102
+    ],
+    [
+      "sage__fontes_internas",
+      1.6332418885978564
+    ],
+    [
+      "sage__reviravolta_surpreendente",
+      1.5168067498561422
+    ],
+    [
+      "sage__debates_acalorados",
+      1.367900861446763
+    ],
+    [
+      "sage__se_voce",
+      1.3320612733612436
+    ],
+    [
+      "sage__bit_ly",
+      1.3111190651259141
+    ],
+    [
+      "sage__fontes_exclusivas",
+      1.2738742664977367
+    ],
+    [
+      "sage__que_promete",
+      1.112584853100506
+    ],
+    [
+      "sage__gente_pelo",
+      1.0910099454197333
+    ],
+    [
+      "sage__apesar_das",
+      1.0127251735653362
+    ],
+    [
+      "sage__sugerir_um",
+      0.9967524987428489
+    ],
+    [
+      "sage__segundo_fontes",
+      0.9882824546144007
+    ],
+    [
+      "sage__voce_quiser",
+      0.955944454793227
+    ],
+    [
+      "sage__diz_que",
+      0.9445574271633798
+    ],
+    [
+      "sage__especialistas_afirmam",
+      0.9340537290371287
+    ],
+    [
+      "sage__tema_ao",
+      0.8285361740710719
+    ],
+    [
+      "sage__com_muitos",
+      0.7741514250296531
+    ],
+    [
+      "sage__fique_atento",
+      0.7310476978541137
+    ],
+    [
+      "sage__especialistas_alertam",
+      0.731019339946087
+    ],
+    [
+      "sage__tem_gerado",
+      0.6764767879515121
+    ]
+  ]
+}

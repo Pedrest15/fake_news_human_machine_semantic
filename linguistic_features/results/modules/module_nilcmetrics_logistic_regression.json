@@ -1,0 +1,130 @@
+{
+  "experiment": "module_nilcmetrics",
+  "classifier": "logistic_regression",
+  "feature_mode": "linguistic",
+  "feature_groups": [
+    "nilcmetrics"
+  ],
+  "bert_model": null,
+  "n_features": 140,
+  "normalized": true,
+  "top_k_selection": null,
+  "data_split": {
+    "train_samples": 8624,
+    "test_samples": 2158
+  },
+  "grid_search": {
+    "enabled": true,
+    "cv_folds": 5,
+    "best_params": {
+      "C": 1.0,
+      "penalty": "l1",
+      "solver": "liblinear"
+    },
+    "cv_score": 0.9800561460800653
+  },
+  "test_results": {
+    "accuracy": 0.9837812789620018,
+    "f1": 0.9837811083088267,
+    "precision": 0.9838016409664385,
+    "recall": 0.9837812789620018
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        1058,
+        21
+      ],
+      [
+        14,
+        1065
+      ]
+    ],
+    "tn": 1058,
+    "fp": 21,
+    "fn": 14,
+    "tp": 1065
+  },
+  "feature_importance": [
+    [
+      "nilc__lsa_givenness_mean",
+      6.914600584583062
+    ],
+    [
+      "nilc__stem_ovl",
+      6.156937728495242
+    ],
+    [
+      "nilc__imageabilidade_mean",
+      3.8340150142196894
+    ],
+    [
+      "nilc__lsa_all_mean",
+      3.6394134662165514
+    ],
+    [
+      "nilc__adj_stem_ovl",
+      3.1284374695055055
+    ],
+    [
+      "nilc__lsa_adj_mean",
+      2.043660337349346
+    ],
+    [
+      "nilc__arg_ovl",
+      1.9462913447554269
+    ],
+    [
+      "nilc__concretude_mean",
+      1.8062577524740666
+    ],
+    [
+      "nilc__adj_arg_ovl",
+      1.7424036984579485
+    ],
+    [
+      "nilc__long_sentence_ratio",
+      1.568224492298577
+    ],
+    [
+      "nilc__lsa_span_mean",
+      1.5301735475562295
+    ],
+    [
+      "nilc__imageabilidade_25_4_ratio",
+      1.45809324378723
+    ],
+    [
+      "nilc__dalechall_adapted",
+      1.4506686376216003
+    ],
+    [
+      "nilc__named_entity_ratio_text",
+      1.4187433716186315
+    ],
+    [
+      "nilc__freq_bra",
+      1.4024738503911882
+    ],
+    [
+      "nilc__sentences_per_paragraph",
+      1.3304667832663652
+    ],
+    [
+      "nilc__content_words_ambiguity",
+      1.3124668868937104
+    ],
+    [
+      "nilc__idade_aquisicao_mean",
+      1.2997644593769222
+    ],
+    [
+      "nilc__imageabilidade_55_7_ratio",
+      1.2523364321293502
+    ],
+    [
+      "nilc__passive_ratio",
+      1.167957141671375
+    ]
+  ]
+}

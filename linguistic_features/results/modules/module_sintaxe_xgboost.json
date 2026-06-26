@@ -1,0 +1,134 @@
+{
+  "experiment": "module_sintaxe",
+  "classifier": "xgboost",
+  "feature_mode": "linguistic",
+  "feature_groups": [
+    "syllables",
+    "pos_tagger",
+    "parser_stats",
+    "sage_terms"
+  ],
+  "bert_model": null,
+  "n_features": 79,
+  "normalized": true,
+  "top_k_selection": null,
+  "data_split": {
+    "train_samples": 8256,
+    "test_samples": 2054
+  },
+  "grid_search": {
+    "enabled": true,
+    "cv_folds": 5,
+    "best_params": {
+      "learning_rate": 0.3,
+      "max_depth": 3,
+      "n_estimators": 200,
+      "subsample": 1.0
+    },
+    "cv_score": 0.9433060967810996
+  },
+  "test_results": {
+    "accuracy": 0.9367088607594937,
+    "f1": 0.9366799587438177,
+    "precision": 0.9367651782139448,
+    "recall": 0.9367088607594937
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        902,
+        73
+      ],
+      [
+        57,
+        1022
+      ]
+    ],
+    "tn": 902,
+    "fp": 73,
+    "fn": 57,
+    "tp": 1022
+  },
+  "feature_importance": [
+    [
+      "syll__media_silabas_por_palavra",
+      0.3192395269870758
+    ],
+    [
+      "pos__ADJ",
+      0.06288842111825943
+    ],
+    [
+      "pos__X",
+      0.05223662406206131
+    ],
+    [
+      "pos__PROPN",
+      0.03823024407029152
+    ],
+    [
+      "sage__diz_que",
+      0.03784504532814026
+    ],
+    [
+      "sage__segundo_fontes",
+      0.03297010436654091
+    ],
+    [
+      "sage__que_promete",
+      0.025759072974324226
+    ],
+    [
+      "sage__uma_reviravolta",
+      0.025326162576675415
+    ],
+    [
+      "sage__com_muitos",
+      0.02376813441514969
+    ],
+    [
+      "pos__SCONJ",
+      0.02375129982829094
+    ],
+    [
+      "sage__apesar_das",
+      0.022540593519806862
+    ],
+    [
+      "sage__destacando_que",
+      0.02193903550505638
+    ],
+    [
+      "sage__ou_seja",
+      0.02041061781346798
+    ],
+    [
+      "pos__CCONJ",
+      0.02026692032814026
+    ],
+    [
+      "syll__media_silabas_por_sentenca",
+      0.019457343965768814
+    ],
+    [
+      "sage__promete_ser",
+      0.016560260206460953
+    ],
+    [
+      "sage__especialistas_alertam",
+      0.015036760829389095
+    ],
+    [
+      "sage__fique_atento",
+      0.014749770052731037
+    ],
+    [
+      "sage__especialistas_afirmam",
+      0.014136193320155144
+    ],
+    [
+      "pos__PUNCT",
+      0.013759543187916279
+    ]
+  ]
+}

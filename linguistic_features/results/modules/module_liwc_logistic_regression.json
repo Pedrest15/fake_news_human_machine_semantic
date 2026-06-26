@@ -1,0 +1,130 @@
+{
+  "experiment": "module_liwc",
+  "classifier": "logistic_regression",
+  "feature_mode": "linguistic",
+  "feature_groups": [
+    "liwc"
+  ],
+  "bert_model": null,
+  "n_features": 61,
+  "normalized": true,
+  "top_k_selection": null,
+  "data_split": {
+    "train_samples": 8624,
+    "test_samples": 2158
+  },
+  "grid_search": {
+    "enabled": true,
+    "cv_folds": 5,
+    "best_params": {
+      "C": 0.1,
+      "penalty": "l2",
+      "solver": "liblinear"
+    },
+    "cv_score": 0.8797956419294239
+  },
+  "test_results": {
+    "accuracy": 0.8818350324374421,
+    "f1": 0.8817525353400456,
+    "precision": 0.8829035858989553,
+    "recall": 0.8818350324374421
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        923,
+        156
+      ],
+      [
+        99,
+        980
+      ]
+    ],
+    "tn": 923,
+    "fp": 156,
+    "fn": 99,
+    "tp": 980
+  },
+  "feature_importance": [
+    [
+      "liwc__verb (Verbs)",
+      1.435689179738362
+    ],
+    [
+      "liwc__number (Numbers)",
+      0.9705907874146636
+    ],
+    [
+      "liwc__adverb (Adverbs)",
+      0.8363504892582416
+    ],
+    [
+      "liwc__article (Articles)",
+      0.7303319244611355
+    ],
+    [
+      "liwc__quant (Quantifiers)",
+      0.7298074737983757
+    ],
+    [
+      "liwc__adj (Adjectives)",
+      0.7061602097997417
+    ],
+    [
+      "liwc__insight (Insight)",
+      0.6835081115909086
+    ],
+    [
+      "liwc__shehe (SheHe)",
+      0.6445697217930257
+    ],
+    [
+      "liwc__male (Male)",
+      0.5399079265713499
+    ],
+    [
+      "liwc__filler (Filler Words)",
+      0.5303937157015609
+    ],
+    [
+      "liwc__anx (Anx)",
+      0.5285300118225016
+    ],
+    [
+      "liwc__certain (Certainty)",
+      0.4894218097151162
+    ],
+    [
+      "liwc__assent (Assent)",
+      0.4861358086377017
+    ],
+    [
+      "liwc__posemo (Positive Emotions)",
+      0.4706221900539219
+    ],
+    [
+      "liwc__interrog (Interrogatives)",
+      0.46916901309569164
+    ],
+    [
+      "liwc__prep (Prepositions)",
+      0.41461713955271373
+    ],
+    [
+      "liwc__swear (Swear)",
+      0.4137983349845693
+    ],
+    [
+      "liwc__negate (Negations)",
+      0.37163588048269797
+    ],
+    [
+      "liwc__cause (Causal)",
+      0.36047340626944757
+    ],
+    [
+      "liwc__nonflu (Nonfluencies)",
+      0.35783306375303897
+    ]
+  ]
+}

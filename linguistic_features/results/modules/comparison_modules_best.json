@@ -1,0 +1,75 @@
+{
+  "nilcmetrics": {
+    "best_classifier": "xgboost",
+    "feature_groups": [
+      "nilcmetrics"
+    ],
+    "test_f1": 0.9958294493443011,
+    "test_accuracy": 0.9958294717330862,
+    "cv_score": 0.9987240283953259,
+    "n_features": 140
+  },
+  "liwc": {
+    "best_classifier": "svm",
+    "feature_groups": [
+      "liwc"
+    ],
+    "test_f1": 0.934661597546036,
+    "test_accuracy": 0.9346617238183503,
+    "cv_score": 0.9393497291783206,
+    "n_features": 61
+  },
+  "enhanced_ud": {
+    "best_classifier": "xgboost",
+    "feature_groups": [
+      "enhanced_ud"
+    ],
+    "test_f1": 0.9661405429514197,
+    "test_accuracy": 0.9661410018552876,
+    "cv_score": 0.9682051002582446,
+    "n_features": 500
+  },
+  "syllables": {
+    "best_classifier": "svm",
+    "feature_groups": [
+      "syllables"
+    ],
+    "test_f1": 0.8617637246607098,
+    "test_accuracy": 0.8619091751621872,
+    "cv_score": 0.871149691315243,
+    "n_features": 2
+  },
+  "pos_tagger": {
+    "best_classifier": "svm",
+    "feature_groups": [
+      "pos_tagger"
+    ],
+    "test_f1": 0.8985177991096162,
+    "test_accuracy": 0.8987341772151899,
+    "cv_score": 0.8893776968413984,
+    "n_features": 17
+  },
+  "sage_terms": {
+    "best_classifier": "mlp",
+    "feature_groups": [
+      "sage_terms"
+    ],
+    "test_f1": 0.7607592711933916,
+    "test_accuracy": 0.7720111214087118,
+    "cv_score": 0.765707043374425,
+    "n_features": 60
+  },
+  "sintaxe": {
+    "best_classifier": "svm",
+    "feature_groups": [
+      "syllables",
+      "pos_tagger",
+      "parser_stats",
+      "sage_terms"
+    ],
+    "test_f1": 0.9444834959572355,
+    "test_accuracy": 0.9444985394352483,
+    "cv_score": 0.9396758133051042,
+    "n_features": 79
+  }
+}

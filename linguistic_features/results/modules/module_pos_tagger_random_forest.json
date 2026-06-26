@@ -1,0 +1,119 @@
+{
+  "experiment": "module_pos_tagger",
+  "classifier": "random_forest",
+  "feature_mode": "linguistic",
+  "feature_groups": [
+    "pos_tagger"
+  ],
+  "bert_model": null,
+  "n_features": 17,
+  "normalized": true,
+  "top_k_selection": null,
+  "data_split": {
+    "train_samples": 8256,
+    "test_samples": 2054
+  },
+  "grid_search": {
+    "enabled": true,
+    "cv_folds": 5,
+    "best_params": {
+      "max_depth": null,
+      "min_samples_leaf": 2,
+      "min_samples_split": 10,
+      "n_estimators": 200
+    },
+    "cv_score": 0.8811424496955983
+  },
+  "test_results": {
+    "accuracy": 0.879746835443038,
+    "f1": 0.8796799834247104,
+    "precision": 0.8797642486944163,
+    "recall": 0.879746835443038
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        842,
+        133
+      ],
+      [
+        114,
+        965
+      ]
+    ],
+    "tn": 842,
+    "fp": 133,
+    "fn": 114,
+    "tp": 965
+  },
+  "feature_importance": [
+    [
+      "pos__ADJ",
+      0.3460479512247179
+    ],
+    [
+      "pos__PRON",
+      0.10111464808295384
+    ],
+    [
+      "pos__PROPN",
+      0.09714886254264421
+    ],
+    [
+      "pos__NOUN",
+      0.06564159841881272
+    ],
+    [
+      "pos__X",
+      0.05080316801629648
+    ],
+    [
+      "pos__SCONJ",
+      0.049504035011594734
+    ],
+    [
+      "pos__AUX",
+      0.045750670966943706
+    ],
+    [
+      "pos__PUNCT",
+      0.04500613450845918
+    ],
+    [
+      "pos__CCONJ",
+      0.04119916963725759
+    ],
+    [
+      "pos__VERB",
+      0.03163951623888307
+    ],
+    [
+      "pos__ADP",
+      0.03154198389232922
+    ],
+    [
+      "pos__NUM",
+      0.030301149833324405
+    ],
+    [
+      "pos__ADV",
+      0.0262052633027775
+    ],
+    [
+      "pos__DET",
+      0.02352936210416683
+    ],
+    [
+      "pos__SYM",
+      0.013314769320274932
+    ],
+    [
+      "pos__INTJ",
+      0.0012517168985638526
+    ],
+    [
+      "pos__PART",
+      0.0
+    ]
+  ]
+}

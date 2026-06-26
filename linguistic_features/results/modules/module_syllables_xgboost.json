@@ -1,0 +1,59 @@
+{
+  "experiment": "module_syllables",
+  "classifier": "xgboost",
+  "feature_mode": "linguistic",
+  "feature_groups": [
+    "syllables"
+  ],
+  "bert_model": null,
+  "n_features": 2,
+  "normalized": true,
+  "top_k_selection": null,
+  "data_split": {
+    "train_samples": 8624,
+    "test_samples": 2158
+  },
+  "grid_search": {
+    "enabled": true,
+    "cv_folds": 5,
+    "best_params": {
+      "learning_rate": 0.01,
+      "max_depth": 6,
+      "n_estimators": 50,
+      "subsample": 0.8
+    },
+    "cv_score": 0.868986049061814
+  },
+  "test_results": {
+    "accuracy": 0.8600556070435589,
+    "f1": 0.8599399972491576,
+    "precision": 0.8612483486255135,
+    "recall": 0.8600556070435589
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        897,
+        182
+      ],
+      [
+        120,
+        959
+      ]
+    ],
+    "tn": 897,
+    "fp": 182,
+    "fn": 120,
+    "tp": 959
+  },
+  "feature_importance": [
+    [
+      "syll__media_silabas_por_palavra",
+      0.8883121013641357
+    ],
+    [
+      "syll__media_silabas_por_sentenca",
+      0.11168784648180008
+    ]
+  ]
+}

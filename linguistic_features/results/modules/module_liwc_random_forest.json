@@ -1,0 +1,131 @@
+{
+  "experiment": "module_liwc",
+  "classifier": "random_forest",
+  "feature_mode": "linguistic",
+  "feature_groups": [
+    "liwc"
+  ],
+  "bert_model": null,
+  "n_features": 61,
+  "normalized": true,
+  "top_k_selection": null,
+  "data_split": {
+    "train_samples": 8624,
+    "test_samples": 2158
+  },
+  "grid_search": {
+    "enabled": true,
+    "cv_folds": 5,
+    "best_params": {
+      "max_depth": null,
+      "min_samples_leaf": 1,
+      "min_samples_split": 5,
+      "n_estimators": 200
+    },
+    "cv_score": 0.9124502142459419
+  },
+  "test_results": {
+    "accuracy": 0.906858202038925,
+    "f1": 0.9068524215239414,
+    "precision": 0.9069592216861176,
+    "recall": 0.906858202038925
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        987,
+        92
+      ],
+      [
+        109,
+        970
+      ]
+    ],
+    "tn": 987,
+    "fp": 92,
+    "fn": 109,
+    "tp": 970
+  },
+  "feature_importance": [
+    [
+      "liwc__anx (Anx)",
+      0.07726915098895877
+    ],
+    [
+      "liwc__verb (Verbs)",
+      0.07692512685247102
+    ],
+    [
+      "liwc__adj (Adjectives)",
+      0.07103533636602524
+    ],
+    [
+      "liwc__number (Numbers)",
+      0.05233571793970454
+    ],
+    [
+      "liwc__posemo (Positive Emotions)",
+      0.03345867872806837
+    ],
+    [
+      "liwc__anger (Anger)",
+      0.031998143099185666
+    ],
+    [
+      "liwc__focuspast (Past Focus)",
+      0.03142194465686047
+    ],
+    [
+      "liwc__insight (Insight)",
+      0.031393847453836075
+    ],
+    [
+      "liwc__certain (Certainty)",
+      0.029799911538499552
+    ],
+    [
+      "liwc__money (Money)",
+      0.028682322316888977
+    ],
+    [
+      "liwc__achieve (Achievement)",
+      0.027588419951215488
+    ],
+    [
+      "liwc__hear (Hear)",
+      0.02718000673521474
+    ],
+    [
+      "liwc__see (See)",
+      0.02447557141206526
+    ],
+    [
+      "liwc__ingest (Ingest)",
+      0.02380238621464667
+    ],
+    [
+      "liwc__quant (Quantifiers)",
+      0.022706309652153138
+    ],
+    [
+      "liwc__focusfuture (Future Focus)",
+      0.0211704439338685
+    ],
+    [
+      "liwc__negate (Negations)",
+      0.018783572691171903
+    ],
+    [
+      "liwc__filler (Filler Words)",
+      0.018083712702924734
+    ],
+    [
+      "liwc__auxverb (Auxiliary Verbs)",
+      0.017879823603343177
+    ],
+    [
+      "liwc__work (Work)",
+      0.017041144320133792
+    ]
+  ]
+}

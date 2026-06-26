@@ -1,0 +1,49 @@
+{
+  "experiment": "module_sage_terms",
+  "classifier": "svm",
+  "feature_mode": "linguistic",
+  "feature_groups": [
+    "sage_terms"
+  ],
+  "bert_model": null,
+  "n_features": 60,
+  "normalized": true,
+  "top_k_selection": null,
+  "data_split": {
+    "train_samples": 8624,
+    "test_samples": 2158
+  },
+  "grid_search": {
+    "enabled": true,
+    "cv_folds": 5,
+    "best_params": {
+      "C": 1.0,
+      "gamma": "scale",
+      "kernel": "rbf"
+    },
+    "cv_score": 0.7653324983367696
+  },
+  "test_results": {
+    "accuracy": 0.7710843373493976,
+    "f1": 0.7597867479055599,
+    "precision": 0.8338995172537099,
+    "recall": 0.7710843373493976
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        1066,
+        13
+      ],
+      [
+        481,
+        598
+      ]
+    ],
+    "tn": 1066,
+    "fp": 13,
+    "fn": 481,
+    "tp": 598
+  },
+  "feature_importance": null
+}

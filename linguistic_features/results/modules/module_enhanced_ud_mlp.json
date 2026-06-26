@@ -1,0 +1,51 @@
+{
+  "experiment": "module_enhanced_ud",
+  "classifier": "mlp",
+  "feature_mode": "linguistic",
+  "feature_groups": [
+    "enhanced_ud"
+  ],
+  "bert_model": null,
+  "n_features": 500,
+  "normalized": true,
+  "top_k_selection": null,
+  "data_split": {
+    "train_samples": 8618,
+    "test_samples": 2156
+  },
+  "grid_search": {
+    "enabled": true,
+    "cv_folds": 5,
+    "best_params": {
+      "activation": "relu",
+      "alpha": 0.0001,
+      "hidden_layer_sizes": [
+        256
+      ]
+    },
+    "cv_score": 0.9524190502661032
+  },
+  "test_results": {
+    "accuracy": 0.9522263450834879,
+    "f1": 0.9522237241370984,
+    "precision": 0.9523133065982904,
+    "recall": 0.9522263450834879
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        1018,
+        59
+      ],
+      [
+        44,
+        1035
+      ]
+    ],
+    "tn": 1018,
+    "fp": 59,
+    "fn": 44,
+    "tp": 1035
+  },
+  "feature_importance": null
+}

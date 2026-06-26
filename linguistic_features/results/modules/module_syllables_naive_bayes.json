@@ -1,0 +1,47 @@
+{
+  "experiment": "module_syllables",
+  "classifier": "naive_bayes",
+  "feature_mode": "linguistic",
+  "feature_groups": [
+    "syllables"
+  ],
+  "bert_model": null,
+  "n_features": 2,
+  "normalized": true,
+  "top_k_selection": null,
+  "data_split": {
+    "train_samples": 8624,
+    "test_samples": 2158
+  },
+  "grid_search": {
+    "enabled": true,
+    "cv_folds": 5,
+    "best_params": {
+      "var_smoothing": 1e-09
+    },
+    "cv_score": 0.8682017038776347
+  },
+  "test_results": {
+    "accuracy": 0.8605189990732159,
+    "f1": 0.8600342395280159,
+    "precision": 0.865583671279457,
+    "recall": 0.8605189990732159
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        865,
+        214
+      ],
+      [
+        87,
+        992
+      ]
+    ],
+    "tn": 865,
+    "fp": 214,
+    "fn": 87,
+    "tp": 992
+  },
+  "feature_importance": null
+}

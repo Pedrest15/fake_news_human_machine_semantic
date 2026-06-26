@@ -1,0 +1,134 @@
+{
+  "experiment": "module_sintaxe",
+  "classifier": "random_forest",
+  "feature_mode": "linguistic",
+  "feature_groups": [
+    "syllables",
+    "pos_tagger",
+    "parser_stats",
+    "sage_terms"
+  ],
+  "bert_model": null,
+  "n_features": 79,
+  "normalized": true,
+  "top_k_selection": null,
+  "data_split": {
+    "train_samples": 8256,
+    "test_samples": 2054
+  },
+  "grid_search": {
+    "enabled": true,
+    "cv_folds": 5,
+    "best_params": {
+      "max_depth": null,
+      "min_samples_leaf": 1,
+      "min_samples_split": 2,
+      "n_estimators": 200
+    },
+    "cv_score": 0.935817958021904
+  },
+  "test_results": {
+    "accuracy": 0.9328140214216164,
+    "f1": 0.9328234066502248,
+    "precision": 0.9328487381979507,
+    "recall": 0.9328140214216164
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        909,
+        66
+      ],
+      [
+        72,
+        1007
+      ]
+    ],
+    "tn": 909,
+    "fp": 66,
+    "fn": 72,
+    "tp": 1007
+  },
+  "feature_importance": [
+    [
+      "syll__media_silabas_por_palavra",
+      0.24987291956958652
+    ],
+    [
+      "pos__ADJ",
+      0.15275278862588676
+    ],
+    [
+      "syll__media_silabas_por_sentenca",
+      0.09952870732716072
+    ],
+    [
+      "pos__PROPN",
+      0.05553667244598886
+    ],
+    [
+      "pos__PRON",
+      0.04915954626354714
+    ],
+    [
+      "pos__NOUN",
+      0.03837898180539379
+    ],
+    [
+      "pos__SCONJ",
+      0.031003223325229468
+    ],
+    [
+      "pos__X",
+      0.030780767709641967
+    ],
+    [
+      "pos__PUNCT",
+      0.03010277128975866
+    ],
+    [
+      "pos__CCONJ",
+      0.029543665166198073
+    ],
+    [
+      "pos__ADP",
+      0.027907638250140244
+    ],
+    [
+      "pos__AUX",
+      0.02680204338789123
+    ],
+    [
+      "pos__VERB",
+      0.02411349681918063
+    ],
+    [
+      "pos__ADV",
+      0.02055702960413994
+    ],
+    [
+      "pos__DET",
+      0.018940481264991343
+    ],
+    [
+      "pos__NUM",
+      0.018216263305547216
+    ],
+    [
+      "sage__diz_que",
+      0.015221535632443542
+    ],
+    [
+      "sage__segundo_fontes",
+      0.010797880287156246
+    ],
+    [
+      "pos__SYM",
+      0.010270981390452323
+    ],
+    [
+      "sage__que_promete",
+      0.006175697375887547
+    ]
+  ]
+}

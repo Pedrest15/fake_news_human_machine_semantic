@@ -1,0 +1,130 @@
+{
+  "experiment": "module_enhanced_ud",
+  "classifier": "logistic_regression",
+  "feature_mode": "linguistic",
+  "feature_groups": [
+    "enhanced_ud"
+  ],
+  "bert_model": null,
+  "n_features": 500,
+  "normalized": true,
+  "top_k_selection": null,
+  "data_split": {
+    "train_samples": 8618,
+    "test_samples": 2156
+  },
+  "grid_search": {
+    "enabled": true,
+    "cv_folds": 5,
+    "best_params": {
+      "C": 0.01,
+      "penalty": "l2",
+      "solver": "liblinear"
+    },
+    "cv_score": 0.9542795902466276
+  },
+  "test_results": {
+    "accuracy": 0.9536178107606679,
+    "f1": 0.9536170124846898,
+    "precision": 0.9536424754838871,
+    "recall": 0.9536178107606679
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        1023,
+        54
+      ],
+      [
+        46,
+        1033
+      ]
+    ],
+    "tn": 1023,
+    "fp": 54,
+    "fn": 46,
+    "tp": 1033
+  },
+  "feature_importance": [
+    [
+      "ud__VERB(PUNCT/punct, *, NOUN/obj)",
+      0.6636864209959016
+    ],
+    [
+      "ud__ADJ(*)",
+      0.5140460309417122
+    ],
+    [
+      "ud__PUNCT(PUNCT/punct, *, PUNCT/punct, PUNCT/punct)",
+      0.5095479451066167
+    ],
+    [
+      "ud__ADP(*, DET/fixed, NOUN/fixed, PUNCT/punct)",
+      0.45619032338120274
+    ],
+    [
+      "ud__ADV(*, PRON/obl, PUNCT/punct)",
+      0.44363187491334694
+    ],
+    [
+      "ud__VERB(PUNCT/punct, *, VERB/ccomp)",
+      0.42310046862616524
+    ],
+    [
+      "ud__ADV(*, PRON/fixed, PUNCT/punct)",
+      0.40000143805754546
+    ],
+    [
+      "ud__ADV(*, NUM/appos)",
+      0.34591626048956836
+    ],
+    [
+      "ud__NOUN(ADP/case, DET/det, *, ADJ/amod, PUNCT/punct)",
+      0.3067425232267615
+    ],
+    [
+      "ud__NOUN(DET/det, *, ADJ/amod)",
+      0.2738513964070874
+    ],
+    [
+      "ud__ADJ(PUNCT/punct, *, NOUN/obl, PUNCT/punct)",
+      0.2676495563063156
+    ],
+    [
+      "ud__PUNCT(*)",
+      0.262095652890449
+    ],
+    [
+      "ud__VERB(PUNCT/punct, CCONJ/cc, NOUN/nsubj, *, VERB/ccomp)",
+      0.25978261492445287
+    ],
+    [
+      "ud__NOUN(ADP/case, *, ADJ/amod, PUNCT/punct)",
+      0.25288321734494146
+    ],
+    [
+      "ud__*(NOUN)",
+      0.2521987778575635
+    ],
+    [
+      "ud__NOUN(*)",
+      0.2502722651140044
+    ],
+    [
+      "ud__ADV(ADV/advmod, *)",
+      0.24970249208624706
+    ],
+    [
+      "ud__VERB(PUNCT/punct, *, ADJ/ccomp)",
+      0.24232838883139035
+    ],
+    [
+      "ud__PROPN(ADP/case, *)",
+      0.23803542879489625
+    ],
+    [
+      "ud__NOUN(*, NOUN/nmod)",
+      0.23172491690520103
+    ]
+  ]
+}

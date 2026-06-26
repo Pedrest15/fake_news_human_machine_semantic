@@ -1,0 +1,131 @@
+{
+  "experiment": "module_sage_terms",
+  "classifier": "random_forest",
+  "feature_mode": "linguistic",
+  "feature_groups": [
+    "sage_terms"
+  ],
+  "bert_model": null,
+  "n_features": 60,
+  "normalized": true,
+  "top_k_selection": null,
+  "data_split": {
+    "train_samples": 8624,
+    "test_samples": 2158
+  },
+  "grid_search": {
+    "enabled": true,
+    "cv_folds": 5,
+    "best_params": {
+      "max_depth": null,
+      "min_samples_leaf": 1,
+      "min_samples_split": 5,
+      "n_estimators": 100
+    },
+    "cv_score": 0.7659194658571951
+  },
+  "test_results": {
+    "accuracy": 0.7720111214087118,
+    "f1": 0.7606580969075288,
+    "precision": 0.8357073423078188,
+    "recall": 0.7720111214087118
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        1068,
+        11
+      ],
+      [
+        481,
+        598
+      ]
+    ],
+    "tn": 1068,
+    "fp": 11,
+    "fn": 481,
+    "tp": 598
+  },
+  "feature_importance": [
+    [
+      "sage__segundo_fontes",
+      0.11545314994053406
+    ],
+    [
+      "sage__especialistas_afirmam",
+      0.07492617810372769
+    ],
+    [
+      "sage__diz_que",
+      0.07360039525720145
+    ],
+    [
+      "sage__que_promete",
+      0.06804731702260781
+    ],
+    [
+      "sage__destacando_que",
+      0.0660397759848706
+    ],
+    [
+      "sage__apesar_das",
+      0.05721591777756119
+    ],
+    [
+      "sage__uma_reviravolta",
+      0.049419890363643804
+    ],
+    [
+      "sage__especialistas_alertam",
+      0.04729343335295507
+    ],
+    [
+      "sage__fique_atento",
+      0.04619697554500021
+    ],
+    [
+      "sage__com_muitos",
+      0.04510778216228991
+    ],
+    [
+      "sage__fontes_internas",
+      0.04160067969011357
+    ],
+    [
+      "sage__revelam_que",
+      0.03494385776415326
+    ],
+    [
+      "sage__reviravolta_surpreendente",
+      0.032263758532108035
+    ],
+    [
+      "sage__tem_gerado",
+      0.030716145150674515
+    ],
+    [
+      "sage__debates_acalorados",
+      0.03048197753146558
+    ],
+    [
+      "sage__agora_enfrenta",
+      0.028638258758605546
+    ],
+    [
+      "sage__documentos_secretos",
+      0.02557010776263927
+    ],
+    [
+      "sage__promete_ser",
+      0.021880179354654767
+    ],
+    [
+      "sage__ou_seja",
+      0.018140093837101873
+    ],
+    [
+      "sage__tem_que",
+      0.01724178618713548
+    ]
+  ]
+}

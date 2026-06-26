@@ -1,0 +1,52 @@
+{
+  "experiment": "module_sintaxe",
+  "classifier": "svm",
+  "feature_mode": "linguistic",
+  "feature_groups": [
+    "syllables",
+    "pos_tagger",
+    "parser_stats",
+    "sage_terms"
+  ],
+  "bert_model": null,
+  "n_features": 79,
+  "normalized": true,
+  "top_k_selection": null,
+  "data_split": {
+    "train_samples": 8256,
+    "test_samples": 2054
+  },
+  "grid_search": {
+    "enabled": true,
+    "cv_folds": 5,
+    "best_params": {
+      "C": 10.0,
+      "gamma": "scale",
+      "kernel": "rbf"
+    },
+    "cv_score": 0.9396758133051042
+  },
+  "test_results": {
+    "accuracy": 0.9444985394352483,
+    "f1": 0.9444834959572355,
+    "precision": 0.9445133736887108,
+    "recall": 0.9444985394352483
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        913,
+        62
+      ],
+      [
+        52,
+        1027
+      ]
+    ],
+    "tn": 913,
+    "fp": 62,
+    "fn": 52,
+    "tp": 1027
+  },
+  "feature_importance": null
+}

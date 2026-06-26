@@ -1,0 +1,133 @@
+{
+  "experiment": "module_sintaxe",
+  "classifier": "logistic_regression",
+  "feature_mode": "linguistic",
+  "feature_groups": [
+    "syllables",
+    "pos_tagger",
+    "parser_stats",
+    "sage_terms"
+  ],
+  "bert_model": null,
+  "n_features": 79,
+  "normalized": true,
+  "top_k_selection": null,
+  "data_split": {
+    "train_samples": 8256,
+    "test_samples": 2054
+  },
+  "grid_search": {
+    "enabled": true,
+    "cv_folds": 5,
+    "best_params": {
+      "C": 0.1,
+      "penalty": "l2",
+      "solver": "liblinear"
+    },
+    "cv_score": 0.9104790634344543
+  },
+  "test_results": {
+    "accuracy": 0.9040895813047711,
+    "f1": 0.9041050518038806,
+    "precision": 0.9041415539218497,
+    "recall": 0.9040895813047711
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        880,
+        95
+      ],
+      [
+        102,
+        977
+      ]
+    ],
+    "tn": 880,
+    "fp": 95,
+    "fn": 102,
+    "tp": 977
+  },
+  "feature_importance": [
+    [
+      "syll__media_silabas_por_palavra",
+      2.0549563692690906
+    ],
+    [
+      "pos__ADJ",
+      0.8177594804773152
+    ],
+    [
+      "pos__X",
+      0.7939339483144728
+    ],
+    [
+      "sage__diz_que",
+      0.7839481460160888
+    ],
+    [
+      "sage__destacando_que",
+      0.7417612834986165
+    ],
+    [
+      "sage__segundo_fontes",
+      0.7196585293644765
+    ],
+    [
+      "sage__que_promete",
+      0.7126103638504403
+    ],
+    [
+      "sage__apesar_das",
+      0.6924537589963482
+    ],
+    [
+      "sage__com_muitos",
+      0.6000831688877001
+    ],
+    [
+      "sage__tem_gerado",
+      0.5835238315236725
+    ],
+    [
+      "pos__NOUN",
+      0.544874716801756
+    ],
+    [
+      "sage__revelam_que",
+      0.5349933680840462
+    ],
+    [
+      "sage__especialistas_alertam",
+      0.5261199925663491
+    ],
+    [
+      "sage__uma_reviravolta",
+      0.5060928312961316
+    ],
+    [
+      "sage__especialistas_afirmam",
+      0.5005785837070925
+    ],
+    [
+      "sage__fontes_internas",
+      0.4962424669804711
+    ],
+    [
+      "sage__ou_seja",
+      0.49387574356619496
+    ],
+    [
+      "sage__debates_acalorados",
+      0.4882601687102806
+    ],
+    [
+      "sage__agora_enfrenta",
+      0.47965456019478137
+    ],
+    [
+      "pos__CCONJ",
+      0.46269545348392666
+    ]
+  ]
+}

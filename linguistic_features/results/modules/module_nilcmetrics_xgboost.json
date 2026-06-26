@@ -1,0 +1,131 @@
+{
+  "experiment": "module_nilcmetrics",
+  "classifier": "xgboost",
+  "feature_mode": "linguistic",
+  "feature_groups": [
+    "nilcmetrics"
+  ],
+  "bert_model": null,
+  "n_features": 140,
+  "normalized": true,
+  "top_k_selection": null,
+  "data_split": {
+    "train_samples": 8624,
+    "test_samples": 2158
+  },
+  "grid_search": {
+    "enabled": true,
+    "cv_folds": 5,
+    "best_params": {
+      "learning_rate": 0.3,
+      "max_depth": 6,
+      "n_estimators": 200,
+      "subsample": 0.8
+    },
+    "cv_score": 0.9987240283953259
+  },
+  "test_results": {
+    "accuracy": 0.9958294717330862,
+    "f1": 0.9958294493443011,
+    "precision": 0.9958401190157153,
+    "recall": 0.9958294717330862
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        1077,
+        2
+      ],
+      [
+        7,
+        1072
+      ]
+    ],
+    "tn": 1077,
+    "fp": 2,
+    "fn": 7,
+    "tp": 1072
+  },
+  "feature_importance": [
+    [
+      "nilc__named_entity_ratio_text",
+      0.2908923625946045
+    ],
+    [
+      "nilc__sentences_per_paragraph",
+      0.22052103281021118
+    ],
+    [
+      "nilc__indicative_present_ratio",
+      0.07057212293148041
+    ],
+    [
+      "nilc__flesch",
+      0.06854046881198883
+    ],
+    [
+      "nilc__prepositions_per_sentence",
+      0.06713246554136276
+    ],
+    [
+      "nilc__clauses_per_sentence",
+      0.051367394626140594
+    ],
+    [
+      "nilc__inflected_verbs",
+      0.023040497675538063
+    ],
+    [
+      "nilc__cw_freq_brwac",
+      0.018416518345475197
+    ],
+    [
+      "nilc__syllables_per_content_word",
+      0.013371213339269161
+    ],
+    [
+      "nilc__freq_bra",
+      0.012387730181217194
+    ],
+    [
+      "nilc__yngve",
+      0.010659448802471161
+    ],
+    [
+      "nilc__dalechall_adapted",
+      0.008550100959837437
+    ],
+    [
+      "nilc__lsa_adj_mean",
+      0.008249258622527122
+    ],
+    [
+      "nilc__adjunct_per_clause",
+      0.007560711354017258
+    ],
+    [
+      "nilc__freq_brwac",
+      0.007140331901609898
+    ],
+    [
+      "nilc__lsa_paragraph_mean",
+      0.00686581851914525
+    ],
+    [
+      "nilc__simple_word_ratio",
+      0.0065086400136351585
+    ],
+    [
+      "nilc__cw_freq",
+      0.005906951148062944
+    ],
+    [
+      "nilc__hard_conjunctions_ratio",
+      0.005852014757692814
+    ],
+    [
+      "nilc__idade_aquisicao_55_7_ratio",
+      0.005693055689334869
+    ]
+  ]
+}

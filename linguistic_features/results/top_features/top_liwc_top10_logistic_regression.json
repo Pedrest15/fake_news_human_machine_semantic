@@ -1,0 +1,90 @@
+{
+  "experiment": "top_liwc_top10",
+  "classifier": "logistic_regression",
+  "feature_mode": "linguistic",
+  "feature_groups": [
+    "liwc"
+  ],
+  "bert_model": null,
+  "n_features": 10,
+  "normalized": true,
+  "top_k_selection": null,
+  "data_split": {
+    "train_samples": 8624,
+    "test_samples": 2158
+  },
+  "grid_search": {
+    "enabled": true,
+    "cv_folds": 5,
+    "best_params": {
+      "C": 0.01,
+      "penalty": "l1",
+      "solver": "saga"
+    },
+    "cv_score": 0.7618769062208596
+  },
+  "test_results": {
+    "accuracy": 0.7650602409638554,
+    "f1": 0.7648056513403166,
+    "precision": 0.7662129054520359,
+    "recall": 0.7650602409638554
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        790,
+        289
+      ],
+      [
+        218,
+        861
+      ]
+    ],
+    "tn": 790,
+    "fp": 289,
+    "fn": 218,
+    "tp": 861
+  },
+  "feature_importance": [
+    [
+      "liwc__cogproc (Cognitive Processes)",
+      0.6474827740600717
+    ],
+    [
+      "liwc__focuspast (Past Focus)",
+      0.6347732884523652
+    ],
+    [
+      "liwc__affect (Affect)",
+      0.5130432022793951
+    ],
+    [
+      "liwc__focuspresent (Present Focus)",
+      0.5076503548186543
+    ],
+    [
+      "liwc__social (Social)",
+      0.47487878425194957
+    ],
+    [
+      "liwc__auxverb (Auxiliary Verbs)",
+      0.29427054598039604
+    ],
+    [
+      "liwc__drives (Drives)",
+      0.1945029609177417
+    ],
+    [
+      "liwc__space (Space)",
+      0.18462178413175653
+    ],
+    [
+      "liwc__work (Work)",
+      0.17162630974858037
+    ],
+    [
+      "liwc__function (Function Words)",
+      0.10542308169148178
+    ]
+  ]
+}

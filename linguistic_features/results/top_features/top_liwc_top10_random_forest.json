@@ -1,0 +1,91 @@
+{
+  "experiment": "top_liwc_top10",
+  "classifier": "random_forest",
+  "feature_mode": "linguistic",
+  "feature_groups": [
+    "liwc"
+  ],
+  "bert_model": null,
+  "n_features": 10,
+  "normalized": true,
+  "top_k_selection": null,
+  "data_split": {
+    "train_samples": 8624,
+    "test_samples": 2158
+  },
+  "grid_search": {
+    "enabled": true,
+    "cv_folds": 5,
+    "best_params": {
+      "max_depth": null,
+      "min_samples_leaf": 1,
+      "min_samples_split": 10,
+      "n_estimators": 50
+    },
+    "cv_score": 0.8397029427657117
+  },
+  "test_results": {
+    "accuracy": 0.8276181649675626,
+    "f1": 0.82751801575331,
+    "precision": 0.8283808436580152,
+    "recall": 0.8276181649675626
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        919,
+        160
+      ],
+      [
+        212,
+        867
+      ]
+    ],
+    "tn": 919,
+    "fp": 160,
+    "fn": 212,
+    "tp": 867
+  },
+  "feature_importance": [
+    [
+      "liwc__affect (Affect)",
+      0.15780655957764547
+    ],
+    [
+      "liwc__focuspast (Past Focus)",
+      0.13686437849746177
+    ],
+    [
+      "liwc__function (Function Words)",
+      0.1264488584238183
+    ],
+    [
+      "liwc__cogproc (Cognitive Processes)",
+      0.11852635056410901
+    ],
+    [
+      "liwc__social (Social)",
+      0.0874073478803833
+    ],
+    [
+      "liwc__work (Work)",
+      0.08700469651320406
+    ],
+    [
+      "liwc__auxverb (Auxiliary Verbs)",
+      0.08110986148705357
+    ],
+    [
+      "liwc__space (Space)",
+      0.07621288233775214
+    ],
+    [
+      "liwc__focuspresent (Present Focus)",
+      0.06660034984050563
+    ],
+    [
+      "liwc__drives (Drives)",
+      0.06201871487806664
+    ]
+  ]
+}

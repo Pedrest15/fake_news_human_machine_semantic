@@ -1,0 +1,49 @@
+{
+  "experiment": "top_liwc_top10",
+  "classifier": "svm",
+  "feature_mode": "linguistic",
+  "feature_groups": [
+    "liwc"
+  ],
+  "bert_model": null,
+  "n_features": 10,
+  "normalized": true,
+  "top_k_selection": null,
+  "data_split": {
+    "train_samples": 8624,
+    "test_samples": 2158
+  },
+  "grid_search": {
+    "enabled": true,
+    "cv_folds": 5,
+    "best_params": {
+      "C": 1.0,
+      "gamma": "scale",
+      "kernel": "rbf"
+    },
+    "cv_score": 0.8500536002894545
+  },
+  "test_results": {
+    "accuracy": 0.8512511584800742,
+    "f1": 0.8512242911108663,
+    "precision": 0.8515050713426164,
+    "recall": 0.8512511584800742
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        904,
+        175
+      ],
+      [
+        146,
+        933
+      ]
+    ],
+    "tn": 904,
+    "fp": 175,
+    "fn": 146,
+    "tp": 933
+  },
+  "feature_importance": null
+}

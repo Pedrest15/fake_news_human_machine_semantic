@@ -1,0 +1,90 @@
+{
+  "experiment": "top_nilcmetrics_top10",
+  "classifier": "logistic_regression",
+  "feature_mode": "linguistic",
+  "feature_groups": [
+    "nilcmetrics"
+  ],
+  "bert_model": null,
+  "n_features": 10,
+  "normalized": true,
+  "top_k_selection": null,
+  "data_split": {
+    "train_samples": 8624,
+    "test_samples": 2158
+  },
+  "grid_search": {
+    "enabled": true,
+    "cv_folds": 5,
+    "best_params": {
+      "C": 1.0,
+      "penalty": "l1",
+      "solver": "liblinear"
+    },
+    "cv_score": 0.8962993995854645
+  },
+  "test_results": {
+    "accuracy": 0.8962001853568119,
+    "f1": 0.8961773562374085,
+    "precision": 0.8965489672176387,
+    "recall": 0.8962001853568119
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        951,
+        128
+      ],
+      [
+        96,
+        983
+      ]
+    ],
+    "tn": 951,
+    "fp": 128,
+    "fn": 96,
+    "tp": 983
+  },
+  "feature_importance": [
+    [
+      "nilc__imageabilidade_mean",
+      4.901908235608216
+    ],
+    [
+      "nilc__lsa_span_mean",
+      3.2175401166212234
+    ],
+    [
+      "nilc__concretude_mean",
+      3.183225443754703
+    ],
+    [
+      "nilc__idade_aquisicao_mean",
+      1.8529928010420438
+    ],
+    [
+      "nilc__lsa_givenness_mean",
+      1.03193573272606
+    ],
+    [
+      "nilc__imageabilidade_25_4_ratio",
+      0.9615744110117047
+    ],
+    [
+      "nilc__idade_aquisicao_55_7_ratio",
+      0.8708852826842116
+    ],
+    [
+      "nilc__idade_aquisicao_1_25_ratio",
+      0.8416303725778229
+    ],
+    [
+      "nilc__imageabilidade_4_55_ratio",
+      0.5850332819029866
+    ],
+    [
+      "nilc__familiaridade_55_7_ratio",
+      0.451918555311138
+    ]
+  ]
+}

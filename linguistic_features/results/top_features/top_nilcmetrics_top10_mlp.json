@@ -1,0 +1,52 @@
+{
+  "experiment": "top_nilcmetrics_top10",
+  "classifier": "mlp",
+  "feature_mode": "linguistic",
+  "feature_groups": [
+    "nilcmetrics"
+  ],
+  "bert_model": null,
+  "n_features": 10,
+  "normalized": true,
+  "top_k_selection": null,
+  "data_split": {
+    "train_samples": 8624,
+    "test_samples": 2158
+  },
+  "grid_search": {
+    "enabled": true,
+    "cv_folds": 5,
+    "best_params": {
+      "activation": "relu",
+      "alpha": 0.001,
+      "hidden_layer_sizes": [
+        128,
+        64
+      ]
+    },
+    "cv_score": 0.9133728695276148
+  },
+  "test_results": {
+    "accuracy": 0.9151992585727525,
+    "f1": 0.9151715529542517,
+    "precision": 0.915742397137746,
+    "recall": 0.9151992585727525
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        1007,
+        72
+      ],
+      [
+        111,
+        968
+      ]
+    ],
+    "tn": 1007,
+    "fp": 72,
+    "fn": 111,
+    "tp": 968
+  },
+  "feature_importance": null
+}

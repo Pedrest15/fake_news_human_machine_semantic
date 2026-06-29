@@ -1,0 +1,168 @@
+{
+  "nilcmetrics_top10": {
+    "svm": {
+      "cv_score": 0.9145246306320951,
+      "test_f1": 0.9216818867539607,
+      "test_accuracy": 0.9216867469879518,
+      "test_precision": 0.9217914484446094,
+      "test_recall": 0.9216867469879518,
+      "best_params": {
+        "C": 10.0,
+        "gamma": "scale",
+        "kernel": "rbf"
+      },
+      "n_features": 10
+    },
+    "random_forest": {
+      "cv_score": 0.8955153856935313,
+      "test_f1": 0.8961998287290303,
+      "test_accuracy": 0.8962001853568119,
+      "test_precision": 0.8962056303549572,
+      "test_recall": 0.8962001853568119,
+      "best_params": {
+        "max_depth": null,
+        "min_samples_leaf": 1,
+        "min_samples_split": 5,
+        "n_estimators": 200
+      },
+      "n_features": 10
+    },
+    "naive_bayes": {
+      "cv_score": 0.8544150659254454,
+      "test_f1": 0.8508845628525578,
+      "test_accuracy": 0.8512511584800742,
+      "test_precision": 0.8547396234533203,
+      "test_recall": 0.8512511584800742,
+      "best_params": {
+        "var_smoothing": 1e-09
+      },
+      "n_features": 10
+    },
+    "logistic_regression": {
+      "cv_score": 0.8962993995854645,
+      "test_f1": 0.8961773562374085,
+      "test_accuracy": 0.8962001853568119,
+      "test_precision": 0.8965489672176387,
+      "test_recall": 0.8962001853568119,
+      "best_params": {
+        "C": 1.0,
+        "penalty": "l1",
+        "solver": "liblinear"
+      },
+      "n_features": 10
+    },
+    "mlp": {
+      "cv_score": 0.9133728695276148,
+      "test_f1": 0.9151715529542517,
+      "test_accuracy": 0.9151992585727525,
+      "test_precision": 0.915742397137746,
+      "test_recall": 0.9151992585727525,
+      "best_params": {
+        "activation": "relu",
+        "alpha": 0.001,
+        "hidden_layer_sizes": [
+          128,
+          64
+        ]
+      },
+      "n_features": 10
+    },
+    "xgboost": {
+      "cv_score": 0.908033068952348,
+      "test_f1": 0.9087061046776939,
+      "test_accuracy": 0.9087117701575533,
+      "test_precision": 0.908813250030929,
+      "test_recall": 0.9087117701575533,
+      "best_params": {
+        "learning_rate": 0.3,
+        "max_depth": 3,
+        "n_estimators": 200,
+        "subsample": 0.8
+      },
+      "n_features": 10
+    }
+  },
+  "liwc_top10": {
+    "svm": {
+      "cv_score": 0.8500536002894545,
+      "test_f1": 0.8512242911108663,
+      "test_accuracy": 0.8512511584800742,
+      "test_precision": 0.8515050713426164,
+      "test_recall": 0.8512511584800742,
+      "best_params": {
+        "C": 1.0,
+        "gamma": "scale",
+        "kernel": "rbf"
+      },
+      "n_features": 10
+    },
+    "random_forest": {
+      "cv_score": 0.8397029427657117,
+      "test_f1": 0.82751801575331,
+      "test_accuracy": 0.8276181649675626,
+      "test_precision": 0.8283808436580152,
+      "test_recall": 0.8276181649675626,
+      "best_params": {
+        "max_depth": null,
+        "min_samples_leaf": 1,
+        "min_samples_split": 10,
+        "n_estimators": 50
+      },
+      "n_features": 10
+    },
+    "naive_bayes": {
+      "cv_score": 0.8026406374957918,
+      "test_f1": 0.8071253587177155,
+      "test_accuracy": 0.8076923076923077,
+      "test_precision": 0.8113531591792462,
+      "test_recall": 0.8076923076923077,
+      "best_params": {
+        "var_smoothing": 1e-09
+      },
+      "n_features": 10
+    },
+    "logistic_regression": {
+      "cv_score": 0.7618769062208596,
+      "test_f1": 0.7648056513403166,
+      "test_accuracy": 0.7650602409638554,
+      "test_precision": 0.7662129054520359,
+      "test_recall": 0.7650602409638554,
+      "best_params": {
+        "C": 0.01,
+        "penalty": "l1",
+        "solver": "saga"
+      },
+      "n_features": 10
+    },
+    "mlp": {
+      "cv_score": 0.8476601041432916,
+      "test_f1": 0.8433572140329175,
+      "test_accuracy": 0.8433734939759037,
+      "test_precision": 0.8435163010834736,
+      "test_recall": 0.8433734939759037,
+      "best_params": {
+        "activation": "relu",
+        "alpha": 0.01,
+        "hidden_layer_sizes": [
+          256,
+          128
+        ]
+      },
+      "n_features": 10
+    },
+    "xgboost": {
+      "cv_score": 0.8452839742891858,
+      "test_f1": 0.8368746564046179,
+      "test_accuracy": 0.8368860055607044,
+      "test_precision": 0.836979784641001,
+      "test_recall": 0.8368860055607044,
+      "best_params": {
+        "learning_rate": 0.1,
+        "max_depth": 10,
+        "n_estimators": 100,
+        "subsample": 1.0
+      },
+      "n_features": 10
+    }
+  }
+}

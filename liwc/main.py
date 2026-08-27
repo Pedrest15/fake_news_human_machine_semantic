@@ -22,12 +22,12 @@ def main(dictionary_path: str | None = None):
 
     PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
-    # Caminho do dicionário LIWC
+    # Path to the LIWC dictionary
     if dictionary_path is None:
         if len(sys.argv) > 1:
             dictionary_path = sys.argv[1]
         else:
-            # Caminho padrão: procura na pasta liwc/
+            # Default: look inside the liwc/ folder
             default_paths = [
                 PROJECT_ROOT / 'liwc' / 'Brazilian_Portuguese_LIWC2015_dictionary.dic',
                 PROJECT_ROOT / 'liwc' / 'LIWC2015_Portuguese.dic',
@@ -40,15 +40,15 @@ def main(dictionary_path: str | None = None):
                     break
 
             if dictionary_path is None:
-                print("ERRO: Dicionário LIWC não encontrado.")
-                print("\nColoque o arquivo .dic do LIWC em português em um dos caminhos:")
+                print("ERROR: LIWC dictionary not found.")
+                print("\nPlace the Portuguese LIWC .dic file in one of these paths:")
                 for p in default_paths:
                     print(f"  - {p}")
-                print("\nOu passe o caminho como argumento:")
-                print("  python3 -m liwc.main /caminho/para/dicionario.dic")
+                print("\nOr pass the path as an argument:")
+                print("  python3 -m liwc.main /path/to/dictionary.dic")
                 sys.exit(1)
 
-    # Diretórios do corpus com textos na íntegra
+    # Corpus directories holding the full texts
     CORPUS_DIR = PROJECT_ROOT.parent / 'noticias_falsas_humano_maquina_caracterizacao' / 'corpus'
 
     HUMAN_DIRS = [
@@ -65,19 +65,19 @@ def main(dictionary_path: str | None = None):
 
     # Banner
     print("=" * 80)
-    print("ANÁLISE LIWC DE FAKE NEWS")
+    print("LIWC ANALYSIS OF FAKE NEWS")
     print("Human vs LLM")
     print("=" * 80)
 
-    print(f"\nDicionário: {dictionary_path}")
-    print("\nDiretórios Human:")
+    print(f"\nDictionary: {dictionary_path}")
+    print("\nHuman directories:")
     for d in HUMAN_DIRS:
         print(f"  - {d}")
-    print("\nDiretórios LLM:")
+    print("\nLLM directories:")
     for d in LLM_DIRS:
         print(f"  - {d}")
 
-    # Cria analisador
+    # Build the analyser
     analyzer = LiwcAnalyzer(
         human_dirs=HUMAN_DIRS,
         llm_dirs=LLM_DIRS,
@@ -88,18 +88,18 @@ def main(dictionary_path: str | None = None):
     analyzer.load_texts()
 
     if not analyzer.human_docs or not analyzer.llm_docs:
-        print("\nERRO: Não foi possível carregar documentos de ambos os grupos!")
+        print("\nERROR: could not load documents from both groups!")
         return None
 
     analyzer.compute_liwc_scores()
     analyzer.analyze_discriminative_categories()
 
-    # Exporta resultados
+    # Export the results
     analyzer.export_results(OUTPUT_DIR)
 
     # Preview
     print(f"\n{'='*80}")
-    print("PREVIEW: TOP 10 CATEGORIAS DISCRIMINATIVAS")
+    print("PREVIEW: TOP 10 DISCRIMINATIVE CATEGORIES")
     print("=" * 80)
 
     df = analyzer.discriminative_df
@@ -107,29 +107,29 @@ def main(dictionary_path: str | None = None):
 
     human_top = sig_df[sig_df['characteristic_of'] == 'human'].head(5)
     if len(human_top) > 0:
-        print("\nMais características de HUMAN:")
+        print("\nMore characteristic of HUMAN:")
         for _, row in human_top.iterrows():
             print(f"  {row['category']:<35} (d={row['cohens_d']:+.3f}, p={row['p_value']:.2e})")
 
     llm_top = sig_df[sig_df['characteristic_of'] == 'llm'].head(5)
     if len(llm_top) > 0:
-        print("\nMais características de LLM:")
+        print("\nMore characteristic of LLM:")
         for _, row in llm_top.iterrows():
             print(f"  {row['category']:<35} (d={row['cohens_d']:+.3f}, p={row['p_value']:.2e})")
 
-    # Features para ML
+    # Features for ML
     X, y, features = analyzer.get_features_for_ml()
     print(f"\n{'='*80}")
-    print("FEATURES PARA MACHINE LEARNING")
+    print("FEATURES FOR MACHINE LEARNING")
     print("=" * 80)
-    print(f"\nMatriz X: {X.shape}")
+    print(f"\nMatrix X: {X.shape}")
     print(f"Labels y: {y.shape} (0=human: {np.sum(y==0)}, 1=llm: {np.sum(y==1)})")
-    print(f"Features: {len(features)} categorias LIWC")
+    print(f"Features: {len(features)} LIWC categories")
 
     print(f"\n{'='*80}")
-    print("ANÁLISE LIWC CONCLUÍDA!")
+    print("LIWC ANALYSIS COMPLETE!")
     print("=" * 80)
-    print(f"\nResultados salvos em: {OUTPUT_DIR}/")
+    print(f"\nResults saved to: {OUTPUT_DIR}/")
 
     return analyzer
 

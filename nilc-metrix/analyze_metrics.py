@@ -65,10 +65,10 @@ def numeric_columns(df: pd.DataFrame) -> list[str]:
 def compare(human_csv: Path, llm_csv: Path, out_dir: Path, top: int = 20) -> None:
     h = pd.read_csv(human_csv)
     l = pd.read_csv(llm_csv)
-    print(f"human: {len(h)} textos  |  llm: {len(l)} textos")
+    print(f"human: {len(h)} texts  |  llm: {len(l)} texts")
 
     metrics = sorted(set(numeric_columns(h)) & set(numeric_columns(l)))
-    print(f"métricas numéricas em comum: {len(metrics)}")
+    print(f"numeric metrics in common: {len(metrics)}")
 
     rows = []
     for m in metrics:
@@ -122,15 +122,15 @@ def compare(human_csv: Path, llm_csv: Path, out_dir: Path, top: int = 20) -> Non
     top_llm.to_csv(out_dir / "top_llm.csv", index=False)
 
     cols_show = ["metric", "mean_human", "mean_llm", "cohens_d", "q_value_fdr"]
-    print(f"\n=== TOP {top} métricas predominantes em HUMAN (FDR<0.05) ===")
+    print(f"\n=== TOP {top} metrics predominant in HUMAN (FDR<0.05) ===")
     print(top_human[cols_show].to_string(index=False, float_format=lambda v: f"{v:.4g}"))
-    print(f"\n=== TOP {top} métricas predominantes em LLM (FDR<0.05) ===")
+    print(f"\n=== TOP {top} metrics predominant in LLM (FDR<0.05) ===")
     print(top_llm[cols_show].to_string(index=False, float_format=lambda v: f"{v:.4g}"))
 
-    print(f"\nArquivos salvos em {out_dir}/")
-    print(f"  - full_comparison.csv  ({len(df)} métricas)")
-    print(f"  - top_human.csv        ({len(top_human)} métricas)")
-    print(f"  - top_llm.csv          ({len(top_llm)} métricas)")
+    print(f"\nFiles saved to {out_dir}/")
+    print(f"  - full_comparison.csv  ({len(df)} metrics)")
+    print(f"  - top_human.csv        ({len(top_human)} metrics)")
+    print(f"  - top_llm.csv          ({len(top_llm)} metrics)")
 
 
 def main() -> int:
@@ -142,7 +142,7 @@ def main() -> int:
     args = parser.parse_args()
 
     if not args.human.is_file() or not args.llm.is_file():
-        print(f"CSV não encontrado: {args.human} / {args.llm}")
+        print(f"CSV not found: {args.human} / {args.llm}")
         return 1
 
     compare(args.human, args.llm, args.out, args.top)

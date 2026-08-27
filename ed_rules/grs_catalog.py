@@ -17,8 +17,8 @@ def _strip_line_comments(text: str) -> str:
     """Remove comentários `% ...` até o fim da linha, preservando '\\n'."""
     out = []
     for line in text.split("\n"):
-        # Grew usa `%` para comentário de linha. Não há string com `%` nas regras
-        # do conjunto_regras_porttinari.grs, então um split simples basta.
+        # Grew uses `%` for line comments. No rule in conjunto_regras_porttinari.grs
+        # contains a `%` inside a string, so a plain split is enough.
         idx = line.find("%")
         if idx >= 0:
             line = line[:idx]
@@ -38,7 +38,7 @@ def _find_matching_brace(text: str, open_idx: int) -> int:
             depth -= 1
             if depth == 0:
                 return i
-    raise ValueError(f"Brace não fechada a partir de {open_idx}")
+    raise ValueError(f"Unclosed brace starting at {open_idx}")
 
 
 def _line_of(text: str, idx: int) -> int:
@@ -51,17 +51,17 @@ def _extract_blocks(body: str) -> dict:
     i = 0
     n = len(body)
     while i < n:
-        # pula whitespace
+        # skip whitespace
         while i < n and body[i].isspace():
             i += 1
         if i >= n:
             break
-        # lê palavra-chave
+        # read the keyword
         j = i
         while j < n and (body[j].isalpha() or body[j] == "_"):
             j += 1
         keyword = body[i:j]
-        # encontra '{' após a palavra-chave
+        # find the '{' that follows the keyword
         k = body.find("{", j)
         if k == -1:
             break
@@ -73,18 +73,18 @@ def _extract_blocks(body: str) -> dict:
             blocks["without"].append(block_text)
         elif keyword == "commands":
             blocks["commands"] = block_text
-        # blocos desconhecidos são ignorados
+        # unknown blocks are ignored
         i = end + 1
     return blocks
 
 
 def _comment_above(raw_text: str, decl_idx: int) -> str:
     """Retorna o bloco de comentário `% ...` imediatamente acima de decl_idx."""
-    # caminha para trás até começo da linha da declaração
+    # walk backwards to the start of the declaration line
     line_start = raw_text.rfind("\n", 0, decl_idx) + 1
-    # coleta linhas anteriores que começam com `%` (ignorando indentação)
+    # collect preceding lines that start with `%` (ignoring indentation)
     comments = []
-    cursor = line_start - 1  # posição do '\n' anterior
+    cursor = line_start - 1  # position of the previous '\n'
     while cursor > 0:
         prev_start = raw_text.rfind("\n", 0, cursor) + 1
         line = raw_text[prev_start:cursor]
@@ -100,21 +100,21 @@ def _comment_above(raw_text: str, decl_idx: int) -> str:
 def parse_grs(path: Path) -> list:
     """Parseia um .grs e retorna lista de dicts (uma entrada por regra)."""
     raw = path.read_text(encoding="utf-8")
-    # Para localizar declarações usamos uma versão sem comentários, mas mantemos
-    # o texto original para extrair os comentários acima de cada regra.
+    # Declarations are located on a comment-free copy, but the original text is
+    # kept so the comment above each rule can still be extracted.
     clean = _strip_line_comments(raw)
 
     rules = []
     i = 0
     n = len(clean)
-    package_stack = []  # lista de (nome, end_idx)
+    package_stack = []  # list of (name, end_idx)
 
     while i < n:
-        # encerra packages cujo escopo já passou
+        # close packages whose scope has ended
         while package_stack and i >= package_stack[-1][1]:
             package_stack.pop()
 
-        # procura próxima palavra-chave relevante
+        # look for the next relevant keyword
         c = clean[i]
         if not (c.isalpha() or c == "_"):
             i += 1
@@ -170,7 +170,7 @@ def parse_grs(path: Path) -> list:
             continue
 
         if word == "strat":
-            # strat NAME { ... } — pulamos
+            # strat NAME { ... } — skipped
             brace = clean.find("{", j)
             if brace == -1:
                 break
@@ -190,12 +190,12 @@ def main(argv):
     src = Path(argv[1])
     dst = Path(argv[2])
     if not src.exists():
-        print(f"ERRO: arquivo não encontrado: {src}")
+        print(f"ERROR: file not found: {src}")
         return 2
     rules = parse_grs(src)
     dst.parent.mkdir(parents=True, exist_ok=True)
     dst.write_text(json.dumps(rules, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Catalogadas {len(rules)} regras de {src} -> {dst}")
+    print(f"Catalogued {len(rules)} rules from {src} -> {dst}")
     return 0
 
 

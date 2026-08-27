@@ -1,6 +1,6 @@
 {
-  "experiment": "module_sintaxe",
-  "classifier": "mlp",
+  "experiment": "module_syntax",
+  "classifier": "naive_bayes",
   "feature_mode": "linguistic",
   "feature_groups": [
     "syllables",
@@ -20,36 +20,31 @@
     "enabled": true,
     "cv_folds": 5,
     "best_params": {
-      "activation": "relu",
-      "alpha": 0.0001,
-      "hidden_layer_sizes": [
-        256,
-        128
-      ]
+      "var_smoothing": 1e-05
     },
-    "cv_score": 0.939547820204587
+    "cv_score": 0.6641159909824764
   },
   "test_results": {
-    "accuracy": 0.9396299902629016,
-    "f1": 0.9396458195588419,
-    "precision": 0.9397258736776342,
-    "recall": 0.9396299902629016
+    "accuracy": 0.6728334956183057,
+    "f1": 0.6325447122310054,
+    "precision": 0.7676574721699855,
+    "recall": 0.6728334956183057
   },
   "confusion_matrix": {
     "matrix": [
       [
-        919,
-        56
+        327,
+        648
       ],
       [
-        68,
-        1011
+        24,
+        1055
       ]
     ],
-    "tn": 919,
-    "fp": 56,
-    "fn": 68,
-    "tp": 1011
+    "tn": 327,
+    "fp": 648,
+    "fn": 24,
+    "tp": 1055
   },
   "feature_importance": null
 }

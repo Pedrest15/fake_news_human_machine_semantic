@@ -5,12 +5,12 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 DATASET_DIR="${1:-$HOME/bert/dataset}"
 
 if [ ! -d "$DATASET_DIR" ]; then
-    echo "Dataset não encontrado: $DATASET_DIR" >&2
+    echo "Dataset not found: $DATASET_DIR" >&2
     exit 1
 fi
 
 if [ ! -d "$SCRIPT_DIR/nilcmetrix" ]; then
-    echo "Subpasta nilcmetrix/ não encontrada em $SCRIPT_DIR" >&2
+    echo "Subfolder nilcmetrix/ not found in $SCRIPT_DIR" >&2
     exit 1
 fi
 

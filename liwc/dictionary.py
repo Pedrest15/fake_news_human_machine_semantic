@@ -31,45 +31,45 @@ class LiwcDictionary:
         """Parseia o arquivo .dic"""
         if not self.dic_path.exists():
             raise FileNotFoundError(
-                f"Dicionário LIWC não encontrado: {self.dic_path}\n"
-                "Dicionários LIWC são proprietários. Obtenha o dicionário "
-                "LIWC em português (.dic) em https://www.liwc.app/ e coloque "
-                f"o arquivo em: {self.dic_path}"
+                f"LIWC dictionary not found: {self.dic_path}\n"
+                "LIWC dictionaries are proprietary. Get the Portuguese LIWC "
+                "dictionary (.dic) from https://www.liwc.app/ and place the "
+                f"file at: {self.dic_path}"
             )
 
         with open(self.dic_path, 'r', encoding='utf-8-sig') as f:
             lines = f.readlines()
 
-        # Encontra as linhas com '%' que delimitam as seções
+        # Locate the '%' lines that delimit the sections
         pct_indices = [i for i, line in enumerate(lines) if line.strip() == '%']
 
         if len(pct_indices) < 2:
             raise ValueError(
-                "Formato inválido: esperado pelo menos 2 linhas '%' no arquivo .dic"
+                "Invalid format: at least two '%' lines are expected in the .dic file"
             )
 
-        # Seção de categorias: entre primeira e segunda '%'
-        # Linhas podem ter tabs de indentação para indicar hierarquia
+        # Category section: between the first and the second '%'.
+        # Lines may carry indentation tabs that encode the hierarchy.
         for line in lines[pct_indices[0] + 1:pct_indices[1]]:
             line = line.strip()
             if not line:
                 continue
-            # Extrai o primeiro número e o nome da categoria
-            # Formato: [tabs]número[tab]nome (parenteses)
+            # Extract the leading number and the category name.
+            # Format: [tabs]number[tab]name (parentheses)
             match = re.match(r'(\d+)\s+(.+)', line)
             if match:
                 cat_id = int(match.group(1))
                 cat_name = match.group(2).strip()
                 self.categories[cat_id] = cat_name
 
-        # Seção de palavras: após segunda '%'
+        # Word section: everything after the second '%'
         for line in lines[pct_indices[1] + 1:]:
             line = line.strip()
             if not line or line == '%':
                 continue
             parts = line.split('\t')
             if len(parts) < 2:
-                # Tenta split por espaços múltiplos
+                # Fall back to splitting on runs of spaces
                 parts = line.split()
             if len(parts) < 2:
                 continue
@@ -94,13 +94,13 @@ class LiwcDictionary:
             else:
                 self.exact_matches[word] = cat_ids
 
-        # Ordena prefixos do mais longo para o mais curto (match mais específico primeiro)
+        # Sort prefixes longest-first so the most specific match wins
         self.prefix_matches.sort(key=lambda x: len(x[0]), reverse=True)
 
-        print(f"Dicionário LIWC carregado: {self.dic_path.name}")
-        print(f"  Categorias: {len(self.categories)}")
-        print(f"  Palavras exatas: {len(self.exact_matches)}")
-        print(f"  Prefixos: {len(self.prefix_matches)}")
+        print(f"LIWC dictionary loaded: {self.dic_path.name}")
+        print(f"  Categories: {len(self.categories)}")
+        print(f"  Exact words: {len(self.exact_matches)}")
+        print(f"  Prefixes: {len(self.prefix_matches)}")
 
     def get_category_names(self) -> list[str]:
         """Retorna lista ordenada de nomes de categorias"""
@@ -118,12 +118,12 @@ class LiwcDictionary:
         """
         word = word.lower()
 
-        # Tenta match exato primeiro
+        # Try the exact match first
         if word in self.exact_matches:
             cat_ids = self.exact_matches[word]
             return [self.categories[cid] for cid in cat_ids if cid in self.categories]
 
-        # Tenta match por prefixo
+        # Then try a prefix match
         for prefix, cat_ids in self.prefix_matches:
             if word.startswith(prefix):
                 return [self.categories[cid] for cid in cat_ids if cid in self.categories]

@@ -9,9 +9,9 @@ from pathlib import Path
 from collections import defaultdict
 from extract_grammar_rules import (
     ConlluDependencyGrammar,
-    realizar_testes_estatisticos,
-    imprimir_resultados_estatisticos,
-    exportar_resultados_csv
+    run_statistical_tests,
+    print_statistical_results,
+    export_results_csv
 )
 from eud_runner import apply_eud_batch
 from tfidf_rules import RulesTfidfAnalyzer
@@ -60,25 +60,25 @@ class GrammarBatchProcessor:
 
     def find_conllu_files(self):
         """Encontra todos os arquivos .conllu nos diretórios especificados"""
-        print("\nProcurando arquivos .conllu...")
+        print("\nSearching for .conllu files...")
 
         for input_dir in self.input_dirs:
             input_path = Path(input_dir)
 
             if not input_path.exists():
-                print(f"  AVISO: Diretório não encontrado: {input_dir}")
+                print(f"  WARNING: directory not found: {input_dir}")
                 continue
 
-            # Busca não-recursiva por arquivos .conllu (apenas no diretório raiz)
+            # Non-recursive search for .conllu files (root directory only)
             conllu_files = list(input_path.glob('*.conllu'))
 
             if conllu_files:
-                print(f"  >> Encontrados {len(conllu_files)} arquivo(s) em: {input_dir}")
+                print(f"  >> Found {len(conllu_files)} file(s) in: {input_dir}")
                 self.conllu_files.extend(conllu_files)
             else:
-                print(f"  AVISO: Nenhum arquivo .conllu encontrado em: {input_dir}")
+                print(f"  WARNING: no .conllu file found in: {input_dir}")
 
-        print(f"\nTotal de arquivos encontrados: {len(self.conllu_files)}\n")
+        print(f"\nTotal files found: {len(self.conllu_files)}\n")
         return self.conllu_files
 
     def process_file(self, file_path):
@@ -102,57 +102,57 @@ class GrammarBatchProcessor:
             parser.read_file()
 
             if not parser.sentences:
-                print(f"  AVISO: Arquivo vazio ou sem sentenças: {file_path.name}")
+                print(f"  WARNING: empty file or no sentences: {file_path.name}")
                 return None
 
             sentence_grammars = parser.extract_all_sentence_grammars()
             stats = parser.get_grammar_statistics(sentence_grammars)
 
-            # Adiciona informação do arquivo
+            # Attach the file information
             stats['file_name'] = file_path.name
             stats['file_path'] = str(file_path)
-            stats['file_id'] = str(file_path)  # Identificador único (caminho completo)
+            stats['file_id'] = str(file_path)  # Unique identifier (full path)
 
             return stats
 
         except Exception as e:
-            print(f"  ERRO ao processar {file_path.name}: {e}")
+            print(f"  ERROR while processing {file_path.name}: {e}")
             return None
 
     def process_all_files(self):
         """Processa todos os arquivos CoNLL-U encontrados"""
         if not self.conllu_files:
-            print("Nenhum arquivo para processar!")
+            print("No files to process!")
             return
 
         print("=" * 80)
-        print(f"Processando {len(self.conllu_files)} arquivo(s)...")
+        print(f"Processing {len(self.conllu_files)} file(s)...")
         print("=" * 80)
 
         for i, file_path in enumerate(self.conllu_files, 1):
-            print(f"\n[{i}/{len(self.conllu_files)}] Processando: {file_path.name}")
+            print(f"\n[{i}/{len(self.conllu_files)}] Processing: {file_path.name}")
 
             stats = self.process_file(file_path)
 
             if stats:
                 self.all_stats.append(stats)
-                print(f"  Sentenças: {stats['total_sentences']}, "
-                      f"Regras: {stats['total_rules']}, "
-                      f"Únicas: {stats['unique_rules']}")
+                print(f"  Sentences: {stats['total_sentences']}, "
+                      f"Rules: {stats['total_rules']}, "
+                      f"Unique: {stats['unique_rules']}")
 
         print(f"\n{'='*80}")
-        print(f"Processamento concluído: {len(self.all_stats)}/{len(self.conllu_files)} arquivo(s) processado(s) com sucesso")
+        print(f"Processing finished: {len(self.all_stats)}/{len(self.conllu_files)} file(s) processed successfully")
         print("=" * 80)
 
     def calculate_aggregated_statistics(self):
         """Calcula estatísticas agregadas de todos os arquivos"""
         if not self.all_stats:
-            print("Nenhuma estatística para agregar!")
+            print("No statistics to aggregate!")
             return
 
-        print("\nCalculando estatísticas agregadas...")
+        print("\nComputing aggregated statistics...")
 
-        # Agrega frequências de regras de todos os arquivos
+        # Aggregate the rule frequencies across every file
         aggregated_rule_freq = defaultdict(lambda: {'count': 0, 'is_root_rule': False, 'files': []})
 
         total_sentences = 0
@@ -164,12 +164,12 @@ class GrammarBatchProcessor:
 
             for rule, data in stats['rule_frequencies'].items():
                 aggregated_rule_freq[rule]['count'] += data['count']
-                # Verifica se a chave existe antes de acessar
+                # Make sure the key exists before reading it
                 if 'is_root_rule' in data:
                     aggregated_rule_freq[rule]['is_root_rule'] = data['is_root_rule']
 
-                # Adiciona info do arquivo usando file_id (caminho completo) para evitar duplicatas
-                # Mesmo que arquivos tenham o mesmo nome em diretórios diferentes
+                # Track the file by file_id (full path) to avoid duplicates even
+                # when two files share the same name in different directories
                 if stats['file_id'] not in aggregated_rule_freq[rule]['files']:
                     aggregated_rule_freq[rule]['files'].append(stats['file_id'])
 
@@ -186,12 +186,12 @@ class GrammarBatchProcessor:
             }
         }
 
-        print(f"  Total de arquivos: {self.aggregated_stats['total_files']}")
-        print(f"  Total de sentenças: {self.aggregated_stats['total_sentences']}")
-        print(f"  Total de regras: {self.aggregated_stats['total_rules']}")
-        print(f"  Regras únicas: {self.aggregated_stats['unique_rules']}")
+        print(f"  Total files: {self.aggregated_stats['total_files']}")
+        print(f"  Total sentences: {self.aggregated_stats['total_sentences']}")
+        print(f"  Total rules: {self.aggregated_stats['total_rules']}")
+        print(f"  Unique rules: {self.aggregated_stats['unique_rules']}")
 
-        # Calcula médias
+        # Compute the averages
         avg_sentences = total_sentences / len(self.all_stats)
         avg_rules = total_rules / len(self.all_stats)
         avg_unique = sum(s['unique_rules'] for s in self.all_stats) / len(self.all_stats)
@@ -203,40 +203,40 @@ class GrammarBatchProcessor:
             'avg_rules_per_sentence': total_rules / total_sentences if total_sentences > 0 else 0
         }
 
-        print(f"\n  Médias:")
-        print(f"    - Sentenças por arquivo: {avg_sentences:.2f}")
-        print(f"    - Regras por arquivo: {avg_rules:.2f}")
-        print(f"    - Regras únicas por arquivo: {avg_unique:.2f}")
-        print(f"    - Regras por sentença: {self.aggregated_stats['averages']['avg_rules_per_sentence']:.2f}")
+        print(f"\n  Averages:")
+        print(f"    - Sentences per file: {avg_sentences:.2f}")
+        print(f"    - Rules per file: {avg_rules:.2f}")
+        print(f"    - Unique rules per file: {avg_unique:.2f}")
+        print(f"    - Rules per sentence: {self.aggregated_stats['averages']['avg_rules_per_sentence']:.2f}")
 
     def export_aggregated_results(self, output_dir='aggregated_output'):
         """Exporta resultados agregados em múltiplos formatos"""
         if not self.aggregated_stats:
-            print("Nenhuma estatística agregada para exportar!")
+            print("No aggregated statistics to export!")
             return
 
         output_path = Path(output_dir)
         output_path.mkdir(exist_ok=True)
 
-        print(f"\nExportando resultados para: {output_dir}/")
+        print(f"\nExporting results to: {output_dir}/")
 
-        # 1. Exporta JSON completo
+        # 1. Full JSON export
         json_file = output_path / 'aggregated_grammar_statistics.json'
         with open(json_file, 'w', encoding='utf-8') as f:
             json.dump(self.aggregated_stats, f, ensure_ascii=False, indent=2)
         print(f"  >> {json_file.name}")
 
-        # 2. Exporta resumo em TXT
+        # 2. Plain-text summary
         txt_file = output_path / 'aggregated_grammar_summary.txt'
         self._write_text_summary(txt_file)
         print(f"  >> {txt_file.name}")
 
-        # 3. Exporta apenas frequências de regras (ordenadas)
+        # 3. Rule frequencies only (sorted)
         freq_file = output_path / 'rule_frequencies.txt'
         self._write_rule_frequencies(freq_file)
         print(f"  >> {freq_file.name}")
 
-        # 4. Exporta estatísticas por arquivo
+        # 4. Per-file statistics
         per_file_stats = output_path / 'per_file_statistics.txt'
         self._write_per_file_stats(per_file_stats)
         print(f"  >> {per_file_stats.name}")
@@ -245,25 +245,25 @@ class GrammarBatchProcessor:
         """Escreve resumo em formato texto"""
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write("=" * 80 + "\n")
-            f.write("RESUMO AGREGADO - EXTRAÇÃO DE REGRAS GRAMATICAIS\n")
+            f.write("AGGREGATED SUMMARY - GRAMMAR RULE EXTRACTION\n")
             f.write("=" * 80 + "\n\n")
 
-            f.write("CONFIGURAÇÃO:\n")
+            f.write("CONFIGURATION:\n")
             f.write(f"  Include UPOS: {self.aggregated_stats['config']['include_upos']}\n")
             f.write(f"  Include DEPREL: {self.aggregated_stats['config']['include_deprel']}\n\n")
 
-            f.write("ESTATÍSTICAS GERAIS:\n")
-            f.write(f"  Total de arquivos processados: {self.aggregated_stats['total_files']}\n")
-            f.write(f"  Total de sentenças: {self.aggregated_stats['total_sentences']}\n")
-            f.write(f"  Total de regras: {self.aggregated_stats['total_rules']}\n")
-            f.write(f"  Regras únicas: {self.aggregated_stats['unique_rules']}\n\n")
+            f.write("OVERALL STATISTICS:\n")
+            f.write(f"  Total files processed: {self.aggregated_stats['total_files']}\n")
+            f.write(f"  Total sentences: {self.aggregated_stats['total_sentences']}\n")
+            f.write(f"  Total rules: {self.aggregated_stats['total_rules']}\n")
+            f.write(f"  Unique rules: {self.aggregated_stats['unique_rules']}\n\n")
 
-            f.write("MÉDIAS:\n")
+            f.write("AVERAGES:\n")
             avg = self.aggregated_stats['averages']
-            f.write(f"  Sentenças por arquivo: {avg['avg_sentences_per_file']:.2f}\n")
-            f.write(f"  Regras por arquivo: {avg['avg_rules_per_file']:.2f}\n")
-            f.write(f"  Regras únicas por arquivo: {avg['avg_unique_rules_per_file']:.2f}\n")
-            f.write(f"  Regras por sentença: {avg['avg_rules_per_sentence']:.2f}\n\n")
+            f.write(f"  Sentences per file: {avg['avg_sentences_per_file']:.2f}\n")
+            f.write(f"  Rules per file: {avg['avg_rules_per_file']:.2f}\n")
+            f.write(f"  Unique rules per file: {avg['avg_unique_rules_per_file']:.2f}\n")
+            f.write(f"  Rules per sentence: {avg['avg_rules_per_sentence']:.2f}\n\n")
 
             f.write("=" * 80 + "\n")
 
@@ -273,14 +273,14 @@ class GrammarBatchProcessor:
 
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write("=" * 120 + "\n")
-            f.write("FREQUÊNCIA DE REGRAS GRAMATICAIS (AGREGADAS)\n")
+            f.write("GRAMMAR RULE FREQUENCIES (AGGREGATED)\n")
             f.write("=" * 120 + "\n")
-            f.write(f"Total de regras únicas: {self.aggregated_stats['unique_rules']}\n")
-            f.write("Ordenadas por frequência (decrescente)\n")
+            f.write(f"Total unique rules: {self.aggregated_stats['unique_rules']}\n")
+            f.write("Sorted by frequency (descending)\n")
             f.write("=" * 120 + "\n\n")
 
-            # Cabeçalho da tabela
-            f.write(f"{'Regra':<70} {'Freq Total':>10}  {'Arquivos':>8}  {'Média/Sent':>11}\n")
+            # Table header
+            f.write(f"{'Rule':<70} {'Total freq':>10}  {'Files':>8}  {'Mean/sent':>11}\n")
             f.write("-" * 120 + "\n")
 
             sorted_rules = sorted(
@@ -301,16 +301,16 @@ class GrammarBatchProcessor:
         """Escreve estatísticas individuais de cada arquivo"""
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write("=" * 80 + "\n")
-            f.write("ESTATÍSTICAS POR ARQUIVO\n")
+            f.write("PER-FILE STATISTICS\n")
             f.write("=" * 80 + "\n\n")
 
             for i, stats in enumerate(self.all_stats, 1):
                 f.write(f"\n[{i}] {stats['file_name']}\n")
                 f.write("-" * 80 + "\n")
-                f.write(f"  Sentenças: {stats['total_sentences']}\n")
-                f.write(f"  Regras totais: {stats['total_rules']}\n")
-                f.write(f"  Regras únicas: {stats['unique_rules']}\n")
-                f.write(f"  Caminho: {stats['file_path']}\n")
+                f.write(f"  Sentences: {stats['total_sentences']}\n")
+                f.write(f"  Total rules: {stats['total_rules']}\n")
+                f.write(f"  Unique rules: {stats['unique_rules']}\n")
+                f.write(f"  Path: {stats['file_path']}\n")
 
             f.write("\n" + "=" * 80 + "\n")
 
@@ -330,39 +330,39 @@ class GrammarBatchProcessor:
             dict: Resumo do processamento com arquivos criados
         """
         if not self.conllu_files:
-            print("Nenhum arquivo para processar! Execute find_conllu_files() primeiro.")
+            print("No files to process! Run find_conllu_files() first.")
             return None
 
-        # Normaliza output_dirs para lista
+        # Normalise output_dirs to a list
         if isinstance(output_dirs, str):
             output_dirs = [output_dirs] * len(self.input_dirs)
 
         if len(output_dirs) != len(self.input_dirs):
-            print(f"ERRO: Número de diretórios de saída ({len(output_dirs)}) "
-                  f"deve ser igual ao de entrada ({len(self.input_dirs)})")
+            print(f"ERROR: the number of output directories ({len(output_dirs)}) "
+                  f"must match the number of input directories ({len(self.input_dirs)})")
             return None
 
-        # Cria mapeamento de diretório de entrada -> diretório de saída
+        # Map each input directory to its output directory
         dir_mapping = {str(Path(inp).resolve()): out for inp, out in zip(self.input_dirs, output_dirs)}
 
-        # Cria diretórios de saída se não existirem
+        # Create the output directories when missing
         for out_dir in output_dirs:
             Path(out_dir).mkdir(parents=True, exist_ok=True)
 
         print("=" * 80)
-        print("PROCESSAMENTO INDIVIDUAL DE ARQUIVOS")
+        print("PER-FILE PROCESSING")
         print("=" * 80)
-        print(f"\nProcessando {len(self.conllu_files)} arquivo(s)...")
-        print("Cada arquivo de entrada gerará um arquivo de saída correspondente.\n")
+        print(f"\nProcessing {len(self.conllu_files)} file(s)...")
+        print("Every input file produces one matching output file.\n")
 
         processed_files = []
         failed_files = []
 
         for i, file_path in enumerate(self.conllu_files, 1):
-            print(f"[{i}/{len(self.conllu_files)}] Processando: {file_path.name}")
+            print(f"[{i}/{len(self.conllu_files)}] Processing: {file_path.name}")
 
             try:
-                # Cria o parser e processa
+                # Build the parser and run it
                 parser = ConlluDependencyGrammar(
                     str(file_path),
                     include_upos=self.include_upos,
@@ -372,28 +372,28 @@ class GrammarBatchProcessor:
                 parser.read_file()
 
                 if not parser.sentences:
-                    print(f"  AVISO: Arquivo vazio ou sem sentenças: {file_path.name}")
+                    print(f"  WARNING: empty file or no sentences: {file_path.name}")
                     failed_files.append({'file': str(file_path), 'reason': 'empty'})
                     continue
 
-                # Extrai gramáticas
+                # Extract the grammars
                 sentence_grammars = parser.extract_all_sentence_grammars()
 
-                # Determina diretório de saída baseado no diretório de entrada
+                # Pick the output directory from the input directory
                 input_parent = str(file_path.parent.resolve())
                 output_dir = dir_mapping.get(input_parent, output_dirs[0])
 
-                # Cria nome do arquivo de saída (mesmo nome, extensão .rules.json)
+                # Build the output file name (same stem, .rules.json extension)
                 output_filename = file_path.stem + '.rules.json'
                 output_path = Path(output_dir) / output_filename
 
-                # Extrai apenas as regras (lista de strings)
+                # Keep only the rules themselves (a list of strings)
                 all_rules = []
                 for grammar in sentence_grammars:
                     for rule in grammar['rules']:
                         all_rules.append(rule['rule'])
 
-                # Salva as regras em formato JSON
+                # Write the rules out as JSON
                 output_data = {
                     'source_file': file_path.name,
                     'total_sentences': len(sentence_grammars),
@@ -417,24 +417,24 @@ class GrammarBatchProcessor:
                     'unique_rules': len(set(all_rules))
                 })
 
-                print(f"  >> Salvo: {output_path}")
-                print(f"     Sentenças: {len(sentence_grammars)}, "
-                      f"Regras: {len(all_rules)}, "
-                      f"Únicas: {len(set(all_rules))}")
+                print(f"  >> Saved: {output_path}")
+                print(f"     Sentences: {len(sentence_grammars)}, "
+                      f"Rules: {len(all_rules)}, "
+                      f"Unique: {len(set(all_rules))}")
 
             except Exception as e:
-                print(f"  ERRO ao processar {file_path.name}: {e}")
+                print(f"  ERROR while processing {file_path.name}: {e}")
                 failed_files.append({'file': str(file_path), 'reason': str(e)})
 
-        # Resumo final
+        # Final summary
         print(f"\n{'='*80}")
-        print("RESUMO DO PROCESSAMENTO")
+        print("PROCESSING SUMMARY")
         print("=" * 80)
-        print(f"Arquivos processados com sucesso: {len(processed_files)}")
-        print(f"Arquivos com falha: {len(failed_files)}")
+        print(f"Files processed successfully: {len(processed_files)}")
+        print(f"Files that failed: {len(failed_files)}")
 
         if failed_files:
-            print("\nArquivos com falha:")
+            print("\nFailed files:")
             for f in failed_files:
                 print(f"  - {f['file']}: {f['reason']}")
 
@@ -451,10 +451,10 @@ def compare_human_vs_llm():
     Compara estatísticas de regras gramaticais entre Human e LLM.
     Realiza testes estatísticos e exporta resultados.
     """
-    # Diretório base (raiz do projeto)
+    # Base directory (project root)
     BASE_DIR = Path(__file__).resolve().parent.parent
 
-    # CONFIGURAÇÃO
+    # CONFIGURATION
     HUMAN_DIRS = [
         BASE_DIR / 'portparser_results/fake_true_human',
         BASE_DIR / 'portparser_results/fake_br_human',
@@ -465,21 +465,21 @@ def compare_human_vs_llm():
         BASE_DIR / 'portparser_results/fake_br_llm',
     ]
 
-    OUTPUT_DIR = ED_RULES_DIR / 'comparacao_human_llm'
+    OUTPUT_DIR = ED_RULES_DIR / 'human_llm_comparison'
     INCLUDE_UPOS = True
     INCLUDE_DEPREL = True
     ENHANCED_ONLY = True
 
     # Banner
     print("=" * 80)
-    print("COMPARACAO ESTATISTICA: HUMAN vs LLM")
+    print("STATISTICAL COMPARISON: HUMAN vs LLM")
     print("=" * 80)
-    print(f"\nDiretorios Human: {[str(d) for d in HUMAN_DIRS]}")
-    print(f"Diretorios LLM: {[str(d) for d in LLM_DIRS]}")
+    print(f"\nHuman directories: {[str(d) for d in HUMAN_DIRS]}")
+    print(f"LLM directories: {[str(d) for d in LLM_DIRS]}")
 
-    # Processa grupo Human
+    # Process the Human group
     print("\n" + "=" * 80)
-    print("PROCESSANDO GRUPO HUMAN")
+    print("PROCESSING HUMAN GROUP")
     print("=" * 80)
 
     processor_human = GrammarBatchProcessor(
@@ -492,10 +492,10 @@ def compare_human_vs_llm():
     processor_human.process_all_files()
 
     if not processor_human.all_stats:
-        print("ERRO: Nenhum arquivo Human processado!")
+        print("ERROR: no Human file was processed!")
         return
 
-    # Agrega estatísticas de todos os arquivos Human
+    # Aggregate the statistics across every Human file
     all_rules_per_sentence_human = []
     all_unique_rules_per_sentence_human = []
 
@@ -504,9 +504,9 @@ def compare_human_vs_llm():
             all_rules_per_sentence_human.extend(stats['rules_per_sentence']['values'])
             all_unique_rules_per_sentence_human.extend(stats['unique_rules_per_sentence']['values'])
 
-    # Processa grupo LLM
+    # Process the LLM group
     print("\n" + "=" * 80)
-    print("PROCESSANDO GRUPO LLM")
+    print("PROCESSING LLM GROUP")
     print("=" * 80)
 
     processor_llm = GrammarBatchProcessor(
@@ -519,10 +519,10 @@ def compare_human_vs_llm():
     processor_llm.process_all_files()
 
     if not processor_llm.all_stats:
-        print("ERRO: Nenhum arquivo LLM processado!")
+        print("ERROR: no LLM file was processed!")
         return
 
-    # Agrega estatísticas de todos os arquivos LLM
+    # Aggregate the statistics across every LLM file
     all_rules_per_sentence_llm = []
     all_unique_rules_per_sentence_llm = []
 
@@ -531,10 +531,10 @@ def compare_human_vs_llm():
             all_rules_per_sentence_llm.extend(stats['rules_per_sentence']['values'])
             all_unique_rules_per_sentence_llm.extend(stats['unique_rules_per_sentence']['values'])
 
-    # Cria estrutura de estatísticas agregadas para os testes
+    # Build the aggregated statistics structure consumed by the tests
     import numpy as np
 
-    stats_human_agregado = {
+    stats_human_aggregated = {
         'rules_per_sentence': {
             'mean': np.mean(all_rules_per_sentence_human) if all_rules_per_sentence_human else 0,
             'std': np.std(all_rules_per_sentence_human) if all_rules_per_sentence_human else 0,
@@ -547,7 +547,7 @@ def compare_human_vs_llm():
         }
     }
 
-    stats_llm_agregado = {
+    stats_llm_aggregated = {
         'rules_per_sentence': {
             'mean': np.mean(all_rules_per_sentence_llm) if all_rules_per_sentence_llm else 0,
             'std': np.std(all_rules_per_sentence_llm) if all_rules_per_sentence_llm else 0,
@@ -560,60 +560,60 @@ def compare_human_vs_llm():
         }
     }
 
-    # Realiza testes estatísticos
+    # Run the statistical tests
     print("\n" + "=" * 80)
-    print("TESTES ESTATISTICOS")
+    print("STATISTICAL TESTS")
     print("=" * 80)
 
-    resultados = realizar_testes_estatisticos(
-        stats_human_agregado,
-        stats_llm_agregado,
+    results = run_statistical_tests(
+        stats_human_aggregated,
+        stats_llm_aggregated,
         "Human",
         "LLM"
     )
 
-    # Imprime resultados
-    imprimir_resultados_estatisticos(resultados)
+    # Print the results
+    print_statistical_results(results)
 
-    # Exporta resultados
+    # Export the results
     output_path = OUTPUT_DIR
     output_path.mkdir(parents=True, exist_ok=True)
 
-    csv_file = output_path / 'testes_estatisticos_regras.csv'
-    exportar_resultados_csv(resultados, str(csv_file))
+    csv_file = output_path / 'rule_statistical_tests.csv'
+    export_results_csv(results, str(csv_file))
 
-    # Salva resumo geral
-    summary_file = output_path / 'resumo_comparacao.txt'
+    # Write the overall summary
+    summary_file = output_path / 'comparison_summary.txt'
     with open(summary_file, 'w', encoding='utf-8') as f:
         f.write("=" * 80 + "\n")
-        f.write("RESUMO DA COMPARACAO HUMAN vs LLM\n")
+        f.write("HUMAN vs LLM COMPARISON SUMMARY\n")
         f.write("=" * 80 + "\n\n")
 
-        f.write("DADOS PROCESSADOS:\n")
-        f.write(f"  Arquivos Human: {len(processor_human.all_stats)}\n")
-        f.write(f"  Arquivos LLM: {len(processor_llm.all_stats)}\n")
-        f.write(f"  Sentencas Human: {len(all_rules_per_sentence_human)}\n")
-        f.write(f"  Sentencas LLM: {len(all_rules_per_sentence_llm)}\n\n")
+        f.write("DATA PROCESSED:\n")
+        f.write(f"  Human files: {len(processor_human.all_stats)}\n")
+        f.write(f"  LLM files: {len(processor_llm.all_stats)}\n")
+        f.write(f"  Human sentences: {len(all_rules_per_sentence_human)}\n")
+        f.write(f"  LLM sentences: {len(all_rules_per_sentence_llm)}\n\n")
 
-        f.write("METRICAS:\n")
-        for metrica_key, dados in resultados['metricas'].items():
-            f.write(f"\n  {dados['nome']}:\n")
-            f.write(f"    Human: media = {dados['Human']['media']:.4f}, std = {dados['Human']['std']:.4f}\n")
-            f.write(f"    LLM:   media = {dados['LLM']['media']:.4f}, std = {dados['LLM']['std']:.4f}\n")
-            f.write(f"    Cohen's d: {dados['cohens_d']:.4f} ({dados['interpretacao_cohens_d']})\n")
-            f.write(f"    p-value (t-test): {dados['t_test']['p_value']:.2e}\n")
+        f.write("METRICS:\n")
+        for metric_key, data in results['metrics'].items():
+            f.write(f"\n  {data['name']}:\n")
+            f.write(f"    Human: mean = {data['Human']['mean']:.4f}, std = {data['Human']['std']:.4f}\n")
+            f.write(f"    LLM:   mean = {data['LLM']['mean']:.4f}, std = {data['LLM']['std']:.4f}\n")
+            f.write(f"    Cohen's d: {data['cohens_d']:.4f} ({data['cohens_d_interpretation']})\n")
+            f.write(f"    p-value (t-test): {data['t_test']['p_value']:.2e}\n")
 
         f.write("\n" + "=" * 80 + "\n")
 
-    print(f"\nResultados salvos em: {str(OUTPUT_DIR)}/")
-    print("  - testes_estatisticos_regras.csv")
-    print("  - resumo_comparacao.txt")
+    print(f"\nResults saved to: {str(OUTPUT_DIR)}/")
+    print("  - rule_statistical_tests.csv")
+    print("  - comparison_summary.txt")
 
     print("\n" + "=" * 80)
-    print("COMPARACAO CONCLUIDA!")
+    print("COMPARISON COMPLETE!")
     print("=" * 80)
 
-    return resultados
+    return results
 
 
 def process_individual_files(enhanced_only=True, output_subdir="rules_output"):
@@ -628,7 +628,7 @@ def process_individual_files(enhanced_only=True, output_subdir="rules_output"):
 
     BASE_DIR = Path(__file__).resolve().parent.parent
 
-    # CONFIGURAÇÃO
+    # CONFIGURATION
     HUMAN_INPUT_DIRS = [
         str(BASE_DIR / 'portparser_results/fake_true_human'),
         str(BASE_DIR / 'portparser_results/fake_br_human'),
@@ -639,7 +639,7 @@ def process_individual_files(enhanced_only=True, output_subdir="rules_output"):
         str(BASE_DIR / 'portparser_results/fake_br_llm'),
     ]
 
-    # Diretórios de saída correspondentes (um para cada input)
+    # Matching output directories (one per input directory)
     HUMAN_OUTPUT_DIRS = [
         str(ED_RULES_DIR / output_subdir / 'fake_true_human'),
         str(ED_RULES_DIR / output_subdir / 'fake_br_human'),
@@ -656,13 +656,13 @@ def process_individual_files(enhanced_only=True, output_subdir="rules_output"):
 
     # Banner
     print("=" * 80)
-    print("EXTRAÇÃO DE REGRAS INDIVIDUAIS - PROCESSAMENTO EM LOTE")
+    print("PER-FILE RULE EXTRACTION - BATCH PROCESSING")
     print("=" * 80)
-    print("\nConfiguração:")
+    print("\nConfiguration:")
     print(f"  Include UPOS: {INCLUDE_UPOS}")
     print(f"  Include DEPREL: {INCLUDE_DEPREL}")
 
-    # Cria processador
+    # Build the processor
     processor = GrammarBatchProcessor(
         input_dirs=HUMAN_INPUT_DIRS,
         include_upos=INCLUDE_UPOS,
@@ -670,18 +670,18 @@ def process_individual_files(enhanced_only=True, output_subdir="rules_output"):
         enhanced_only=ENHANCED_ONLY
     )
 
-    # Encontra arquivos
+    # Find the files
     files = processor.find_conllu_files()
 
     if not files:
-        print("\nNenhum arquivo .conllu encontrado!")
-        print("Verifique os diretórios de entrada e tente novamente.")
+        print("\nNo .conllu file found!")
+        print("Check the input directories and try again.")
         return
 
-    # Processa e salva regras individuais
+    # Process and save the per-file rules
     human_result = processor.process_and_save_individual_rules(HUMAN_OUTPUT_DIRS)
 
-        # Cria processador
+        # Build the processor
     processor = GrammarBatchProcessor(
         input_dirs=LLM_INPUT_DIRS,
         include_upos=INCLUDE_UPOS,
@@ -689,22 +689,22 @@ def process_individual_files(enhanced_only=True, output_subdir="rules_output"):
         enhanced_only=ENHANCED_ONLY
     )
 
-    # Encontra arquivos
+    # Find the files
     files = processor.find_conllu_files()
 
     if not files:
-        print("\nNenhum arquivo .conllu encontrado!")
-        print("Verifique os diretórios de entrada e tente novamente.")
+        print("\nNo .conllu file found!")
+        print("Check the input directories and try again.")
         return
 
-    # Processa e salva regras individuais
+    # Process and save the per-file rules
     llm_result = processor.process_and_save_individual_rules(LLM_OUTPUT_DIRS)
 
     if human_result and llm_result:
         print("\n" + "=" * 80)
-        print("PROCESSAMENTO CONCLUÍDO!")
+        print("PROCESSING COMPLETE!")
         print("=" * 80)
-        print(f"\nArquivos de regras criados: {human_result['total_processed'] + llm_result['total_processed']}")
+        print(f"\nRule files created: {human_result['total_processed'] + llm_result['total_processed']}")
 
 
 def main():
@@ -712,7 +712,7 @@ def main():
 
     BASE_DIR = Path(__file__).resolve().parent.parent
 
-    # CONFIGURAÇÃO
+    # CONFIGURATION
     HUMAN_INPUT_DIRS = [
         str(BASE_DIR / 'portparser_results/fake_true_human'),
         str(BASE_DIR / 'portparser_results/fake_br_human'),
@@ -723,8 +723,8 @@ def main():
         str(BASE_DIR / 'portparser_results/fake_br_llm'),
     ]
 
-    HUMAN_OUTPUT_DIR = str(ED_RULES_DIR / 'comparacao_human_llm/human')
-    LLM_OUTPUT_DIR = str(ED_RULES_DIR / 'comparacao_human_llm/llm')
+    HUMAN_OUTPUT_DIR = str(ED_RULES_DIR / 'human_llm_comparison/human')
+    LLM_OUTPUT_DIR = str(ED_RULES_DIR / 'human_llm_comparison/llm')
 
     INCLUDE_UPOS = True
     INCLUDE_DEPREL = True
@@ -732,10 +732,10 @@ def main():
 
     # Banner
     print("=" * 80)
-    print("EXTRAÇÃO DE REGRAS GRAMATICAIS - PROCESSAMENTO EM LOTE")
+    print("GRAMMAR RULE EXTRACTION - BATCH PROCESSING")
     print("=" * 80)
 
-    # Cria processador
+    # Build the processor
     processor = GrammarBatchProcessor(
         input_dirs=HUMAN_INPUT_DIRS,
         include_upos=INCLUDE_UPOS,
@@ -743,24 +743,24 @@ def main():
         enhanced_only=ENHANCED_ONLY
     )
 
-    # Encontra arquivos
+    # Find the files
     files = processor.find_conllu_files()
 
     if not files:
-        print("\nNenhum arquivo .conllu encontrado!")
-        print("Verifique os diretórios de entrada e tente novamente.")
+        print("\nNo .conllu file found!")
+        print("Check the input directories and try again.")
         return
 
-    # Processa e salva regras individuais
+    # Process and save the per-file rules
     processor.process_all_files()
 
-    # Calcula estatísticas agregadas
+    # Compute the aggregated statistics
     processor.calculate_aggregated_statistics()
 
-    # Exporta resultados
+    # Export the results
     processor.export_aggregated_results(HUMAN_OUTPUT_DIR)
 
-    # Cria processador
+    # Build the processor
     processor = GrammarBatchProcessor(
         input_dirs=LLM_INPUT_DIRS,
         include_upos=INCLUDE_UPOS,
@@ -768,29 +768,29 @@ def main():
         enhanced_only=ENHANCED_ONLY
     )
 
-    # Encontra arquivos
+    # Find the files
     files = processor.find_conllu_files()
 
     if not files:
-        print("\nNenhum arquivo .conllu encontrado!")
-        print("Verifique os diretórios de entrada e tente novamente.")
+        print("\nNo .conllu file found!")
+        print("Check the input directories and try again.")
         return
 
-    # Processa e salva regras individuais
+    # Process and save the per-file rules
     processor.process_all_files()
 
     if not processor.all_stats:
-        print("\nNenhum arquivo foi processado com sucesso!")
+        print("\nNo file was processed successfully!")
         return
 
-    # Calcula estatísticas agregadas
+    # Compute the aggregated statistics
     processor.calculate_aggregated_statistics()
 
-    # Exporta resultados
+    # Export the results
     processor.export_aggregated_results(LLM_OUTPUT_DIR)
 
     print("\n" + "=" * 80)
-    print("PROCESSAMENTO CONCLUÍDO COM SUCESSO!")
+    print("PROCESSING COMPLETED SUCCESSFULLY!")
     print("\n" + "=" * 80)
 
 
@@ -813,7 +813,7 @@ def run_tfidf_analysis(prefix="", rules_subdir="rules_output"):
     MIN_DOCS = 1
 
     print("\n" + "=" * 80)
-    print(f"ANÁLISE TF-IDF DE REGRAS GRAMATICAIS [{prefix.strip('_').upper() or 'DEFAULT'}]")
+    print(f"TF-IDF ANALYSIS OF GRAMMAR RULES [{prefix.strip('_').upper() or 'DEFAULT'}]")
     print("Human vs LLM")
     print("=" * 80)
 
@@ -821,35 +821,35 @@ def run_tfidf_analysis(prefix="", rules_subdir="rules_output"):
     analyzer.load_rules_files()
 
     if not analyzer.human_docs or not analyzer.llm_docs:
-        print("\nERRO: Não foi possível carregar documentos de ambos os grupos!")
+        print("\nERROR: could not load documents from both groups!")
         return
 
     analyzer.calculate_tfidf(with_repetition=True)
-    analyzer.analyze_discriminative_rules(mode='com_repeticao', min_docs=MIN_DOCS)
+    analyzer.analyze_discriminative_rules(mode='with_repetition', min_docs=MIN_DOCS)
 
     analyzer.calculate_tfidf(with_repetition=False)
-    analyzer.analyze_discriminative_rules(mode='sem_repeticao', min_docs=MIN_DOCS)
+    analyzer.analyze_discriminative_rules(mode='without_repetition', min_docs=MIN_DOCS)
 
     analyzer.export_results(OUTPUT_DIR)
 
     print("\n" + "=" * 80)
-    print(f"ANÁLISE TF-IDF [{prefix.strip('_').upper() or 'DEFAULT'}] CONCLUÍDA!")
-    print(f"Resultados em: {OUTPUT_DIR}/")
+    print(f"TF-IDF ANALYSIS [{prefix.strip('_').upper() or 'DEFAULT'}] COMPLETE!")
+    print(f"Results in: {OUTPUT_DIR}/")
     print("=" * 80)
 
 
 if __name__ == "__main__":
-    # 1a. Gera .rules.json individuais — só regras ED
+    # 1a. Emit per-file .rules.json — ED rules only
     process_individual_files(enhanced_only=True, output_subdir="rules_output_ed")
 
-    # 1b. Gera .rules.json individuais — todas as regras
+    # 1b. Emit per-file .rules.json — every rule
     process_individual_files(enhanced_only=False, output_subdir="rules_output_all")
 
-    # 2. Comparação estatística agregada (Human vs LLM)
+    # 2. Aggregated statistical comparison (Human vs LLM)
     compare_human_vs_llm()
 
-    # 3a. TF-IDF — só regras ED
+    # 3a. TF-IDF — ED rules only
     run_tfidf_analysis(prefix="ed_only_", rules_subdir="rules_output_ed")
 
-    # 3b. TF-IDF — todas as regras
+    # 3b. TF-IDF — every rule
     run_tfidf_analysis(prefix="all_rules_", rules_subdir="rules_output_all")

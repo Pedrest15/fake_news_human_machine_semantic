@@ -56,11 +56,11 @@ class ConlluDependencyGrammar:
                         current_sentence = []
                         sentence_text = ""
                         sentence_id = ""
-                # Ignora comentarios
+                # Skip comments
                 elif line.startswith("#"):
                     continue
                 else:
-                    # Ignora contracoes, multi-word tokens e empty nodes
+                    # Skip contractions, multi-word tokens and empty nodes
                     token_id = line.split('\t')[0]
                     if '-' not in token_id and '.' not in token_id and '_' not in token_id:
                         current_sentence.append(self.parse_token(line))
@@ -130,7 +130,7 @@ class ConlluDependencyGrammar:
             basic_deprel = token['deprel']
             enhanced = self._parse_enhanced_deps(token['deps'])
             for head_id, deprel in enhanced:
-                # Aresta é "nova" se difere do básico
+                # An edge is "new" if it differs from the basic one
                 if head_id != basic_head or deprel != basic_deprel:
                     edges.append((token, head_id, deprel))
         return edges
@@ -141,7 +141,7 @@ class ConlluDependencyGrammar:
         rules = []
         root_token = None
 
-        # Primeiro, identifica a raiz
+        # First, identify the root
         for token in tokens:
             if token['head'] == 0:
                 root_token = token
@@ -150,13 +150,13 @@ class ConlluDependencyGrammar:
         if self.enhanced_only:
             return self._get_enhanced_grammar(sentence)
 
-        # Para cada token, identifica seus dependentes
+        # For each token, identify its dependents
         for token in tokens:
             token_id = token['id']
             token_pos = token['upos']
             is_root = (token['head'] == 0)
 
-            # Encontra todos os dependentes deste token
+            # Find every dependent of this token
             dependents = []
             for dep_token in tokens:
                 if dep_token['head'] == token_id:
@@ -167,30 +167,30 @@ class ConlluDependencyGrammar:
                         'form': dep_token['form']
                     })
             
-            # Ordena dependentes por posição
+            # Sort dependents by position
             dependents.sort(key=lambda x: x['id'])
             
-            # Separa dependentes à esquerda e à direita
+            # Split dependents into left-side and right-side
             left_deps = [d for d in dependents if d['id'] < token_id]
             right_deps = [d for d in dependents if d['id'] > token_id]
             
-            # Cria a regra base com os dependentes
-            # Formata cada dependente conforme as flags include_upos e include_deprel
+            # Build the base rule with the dependents; each dependent is
+            # formatted according to the include_upos / include_deprel flags
             def format_dependent(dep):
                 """Formata um dependente conforme as flags de configuração"""
                 upos_part = dep['pos'] if self.include_upos else '_'
                 deprel_part = dep['deprel'] if self.include_deprel else '_'
 
-                # Se ambas as flags estão desativadas, retorna apenas '_/_'
+                # Both flags off: return just '_/_'
                 if not self.include_upos and not self.include_deprel:
                     return '_/_'
-                # Se apenas UPOS está ativo, retorna só o UPOS
+                # UPOS only: return just the UPOS
                 elif self.include_upos and not self.include_deprel:
                     return f"{upos_part}/_"
-                # Se apenas DEPREL está ativo, retorna apenas 'deprel' (sem '_/')
+                # DEPREL only: return just 'deprel' (without '_/')
                 elif not self.include_upos and self.include_deprel:
                     return f"_/{deprel_part}"
-                # Se ambas estão ativas, retorna 'UPOS/deprel'
+                # Both flags on: return 'UPOS/deprel'
                 else:
                     return f"{upos_part}/{deprel_part}"
 
@@ -199,7 +199,7 @@ class ConlluDependencyGrammar:
 
             rule_parts = left_pos + ['*'] + right_pos
 
-            # Regra 1: Com dependentes (apenas se houver dependentes)
+            # Rule 1: with dependents (only when the token has any)
             if dependents:
                 if self.include_upos and self.include_deprel:
                     rule_with_deps = f"{token_pos}({', '.join(rule_parts)})"
@@ -222,27 +222,27 @@ class ConlluDependencyGrammar:
                     'num_deps': len(dependents)
                 })
 
-            # Regra 2: Como folha (sempre gerada para todos os tokens)
-            # Formato da regra folha depende das flags include_upos e include_deprel
+            # Rule 2: as a leaf (always emitted, for every token)
+            # The leaf rule format depends on the include_upos / include_deprel flags
             if is_root:
-                # Raiz sem dependentes
+                # Root without dependents
                 if self.include_upos and self.include_deprel:
-                    # Ambos: *(VERB/root)
+                    # Both: *(VERB/root)
                     leaf_rule = f"*({token_pos})"
                 elif not self.include_upos and self.include_deprel:
-                    # Apenas DEPREL: *(root)
+                    # DEPREL only: *(root)
                     leaf_rule = "*(_)"
-                elif self.include_upos and not self.include_deprel: # Apenas UPOS
+                elif self.include_upos and not self.include_deprel:  # UPOS only
                     leaf_rule = f"*({token_pos})"
                 else:
                     leaf_rule = "*(_)"
             else:
-                # Token folha (qualquer token visto como terminal)
+                # Leaf token (any token seen as a terminal)
                 if self.include_upos and self.include_deprel:
                     leaf_rule = f"{token_pos}(*)"
-                elif not self.include_upos and self.include_deprel:  # Apenas DEPREL
+                elif not self.include_upos and self.include_deprel:  # DEPREL only
                     leaf_rule = "_(*)"
-                elif self.include_upos and not self.include_deprel: # Apenas UPOS
+                elif self.include_upos and not self.include_deprel:  # UPOS only
                     leaf_rule = f"{token_pos}(*)"
                 else:
                     leaf_rule = "_(*)"
@@ -278,7 +278,7 @@ class ConlluDependencyGrammar:
         token_map = {t['id']: t for t in tokens}
         edges = self._get_enhanced_only_edges(tokens)
 
-        # Agrupa dependentes enhanced por head
+        # Group enhanced dependents by head
         from collections import defaultdict
         head_to_deps = defaultdict(list)
         for dep_token, head_id, deprel in edges:
@@ -303,7 +303,7 @@ class ConlluDependencyGrammar:
             else:
                 return f"{upos_part}/{deprel_part}"
 
-        # Gera regras para cada head que tem dependentes enhanced
+        # Emit a rule for every head that has enhanced dependents
         for head_id, dependents in head_to_deps.items():
             head_token = token_map.get(head_id)
             if head_token is None:
@@ -336,7 +336,7 @@ class ConlluDependencyGrammar:
                 'num_deps': len(dependents),
             })
 
-        # Gera regras folha para cada dependente enhanced
+        # Emit a leaf rule for every enhanced dependent
         for dep_token, head_id, deprel in edges:
             token_pos = dep_token['upos']
             if self.include_upos:
@@ -372,23 +372,23 @@ class ConlluDependencyGrammar:
     def _write_statistics_to_file(self, f, stats):
         """Método auxiliar para escrever estatísticas em arquivo de texto"""
         f.write("\n" + "=" * 80 + "\n")
-        f.write("ESTATÍSTICAS DAS REGRAS GRAMATICAIS\n")
+        f.write("GRAMMAR RULE STATISTICS\n")
         f.write("=" * 80 + "\n")
-        f.write(f"Total de sentenças: {stats['total_sentences']}\n")
-        f.write(f"Total de regras: {stats['total_rules']}\n")
-        f.write(f"Regras únicas: {stats['unique_rules']}\n")
+        f.write(f"Total sentences: {stats['total_sentences']}\n")
+        f.write(f"Total rules: {stats['total_rules']}\n")
+        f.write(f"Unique rules: {stats['unique_rules']}\n")
 
-        # Novas métricas com desvio padrão
+        # Per-sentence metrics with standard deviation
         if 'rules_per_sentence' in stats:
             rps = stats['rules_per_sentence']
-            f.write(f"\nRegras por sentença: média = {rps['mean']:.4f}, desvio padrão = {rps['std']:.4f}\n")
+            f.write(f"\nRules per sentence: mean = {rps['mean']:.4f}, std = {rps['std']:.4f}\n")
 
         if 'unique_rules_per_sentence' in stats:
             urps = stats['unique_rules_per_sentence']
-            f.write(f"Regras únicas por sentença: média = {urps['mean']:.4f}, desvio padrão = {urps['std']:.4f}\n")
+            f.write(f"Unique rules per sentence: mean = {urps['mean']:.4f}, std = {urps['std']:.4f}\n")
 
         f.write("\n" + "-" * 80 + "\n")
-        f.write("FREQUÊNCIA DE TODAS AS REGRAS (ordenadas por frequência):\n")
+        f.write("FREQUENCY OF ALL RULES (sorted by frequency):\n")
         f.write("-" * 80 + "\n\n")
 
         sorted_rules = sorted(stats['rule_frequencies'].items(),
@@ -404,22 +404,22 @@ class ConlluDependencyGrammar:
         """Exporta gramáticas mantendo agrupamento por sentença"""
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write("=" * 80 + "\n")
-            f.write("GRAMÁTICA DE DEPENDÊNCIAS POR SENTENÇA\n")
+            f.write("DEPENDENCY GRAMMAR PER SENTENCE\n")
             f.write("=" * 80 + "\n")
-            f.write("Formato: POS(dep_esquerda, ..., *, dep_direita, ...)\n")
-            f.write("         *(POS) indica que POS é a raiz sem dependentes\n")
-            f.write("         POS(*) indica que POS não tem dependentes (folha)\n")
-            f.write("         [ROOT] marca o token que é raiz da sentença\n")
+            f.write("Format: POS(left_dep, ..., *, right_dep, ...)\n")
+            f.write("         *(POS) means POS is the root and has no dependents\n")
+            f.write("         POS(*) means POS has no dependents (leaf)\n")
+            f.write("         [ROOT] marks the token that is the sentence root\n")
             f.write("=" * 80 + "\n\n")
 
             for i, grammar in enumerate(sentence_grammars, 1):
                 f.write(f"\n{'='*80}\n")
-                f.write(f"SENTENÇA {i}: {grammar['sentence_id']}\n")
+                f.write(f"SENTENCE {i}: {grammar['sentence_id']}\n")
                 f.write(f"{'='*80}\n")
-                f.write(f"Texto: {grammar['sentence_text']}\n")
+                f.write(f"Text: {grammar['sentence_text']}\n")
                 if grammar['root']:
-                    f.write(f"Raiz: {grammar['root']['form']} ({grammar['root']['upos']})\n")
-                f.write("\nRegras:\n")
+                    f.write(f"Root: {grammar['root']['form']} ({grammar['root']['upos']})\n")
+                f.write("\nRules:\n")
 
                 for rule in grammar['rules']:
                     root_marker = " [ROOT]" if rule['is_root'] else ""
@@ -427,7 +427,7 @@ class ConlluDependencyGrammar:
 
                 f.write("\n")
 
-            # Adiciona estatísticas ao final
+            # Append the statistics block at the end
             if stats:
                 self._write_statistics_to_file(f, stats)
     
@@ -435,15 +435,15 @@ class ConlluDependencyGrammar:
         """Exporta em formato compacto (apenas as regras)"""
         with open(output_file, 'w', encoding='utf-8') as f:
             for i, grammar in enumerate(sentence_grammars, 1):
-                f.write(f"# Sentença {i}: {grammar['sentence_text']}\n")
+                f.write(f"# Sentence {i}: {grammar['sentence_text']}\n")
                 if grammar['root']:
-                    f.write(f"# Raiz: {grammar['root']['form']}\n")
+                    f.write(f"# Root: {grammar['root']['form']}\n")
                 for rule in grammar['rules']:
                     root_marker = " # ROOT" if rule['is_root'] else ""
                     f.write(f"{rule['rule']}{root_marker}\n")
                 f.write("\n")
 
-            # Adiciona estatísticas ao final
+            # Append the statistics block at the end
             if stats:
                 self._write_statistics_to_file(f, stats)
     
@@ -475,9 +475,9 @@ class ConlluDependencyGrammar:
                 ]
             })
 
-        # Adiciona estatísticas
+        # Append the statistics block
         if stats:
-            # Converte estatísticas para formato JSON
+            # Convert the statistics to a JSON-friendly shape
             sorted_rules = sorted(stats['rule_frequencies'].items(),
                                  key=lambda x: x[1]['count'],
                                  reverse=True)
@@ -490,7 +490,7 @@ class ConlluDependencyGrammar:
                     {
                         'rule': rule,
                         'count': data_item['count'],
-                    } for rule, data_item in sorted_rules  # TODAS as regras
+                    } for rule, data_item in sorted_rules  # ALL rules
                 ]
             }
 
@@ -519,7 +519,7 @@ class ConlluDependencyGrammar:
                         'token': rule['token']
                     })
 
-        # Calcula métricas por sentença para desvio padrão
+        # Per-sentence metrics, used for the standard deviation
         rules_per_sentence = [len(g['rules']) for g in sentence_grammars]
         unique_rules_per_sentence = [len(set(r['rule'] for r in g['rules'])) for g in sentence_grammars]
 
@@ -528,7 +528,7 @@ class ConlluDependencyGrammar:
             'total_rules': len(all_rules),
             'unique_rules': len(rule_freq),
             'rule_frequencies': rule_freq,
-            # Novas métricas com desvio padrão
+            # Per-sentence metrics with standard deviation
             'rules_per_sentence': {
                 'mean': np.mean(rules_per_sentence) if rules_per_sentence else 0,
                 'std': np.std(rules_per_sentence) if rules_per_sentence else 0,
@@ -549,169 +549,169 @@ class ConlluDependencyGrammar:
         return self.get_sentence_grammar(self.sentences[sentence_idx])
 
 
-def realizar_testes_estatisticos(stats1: dict, stats2: dict, nome1: str, nome2: str):
+def run_statistical_tests(stats1: dict, stats2: dict, name1: str, name2: str):
     """
     Realiza testes estatísticos comparando métricas de regras gramaticais entre dois grupos.
 
     Args:
         stats1: Estatísticas do primeiro grupo (retorno de get_grammar_statistics)
         stats2: Estatísticas do segundo grupo (retorno de get_grammar_statistics)
-        nome1: Nome do primeiro grupo (ex: "Human")
-        nome2: Nome do segundo grupo (ex: "LLM")
+        name1: Nome do primeiro grupo (ex: "Human")
+        name2: Nome do segundo grupo (ex: "LLM")
 
     Returns:
         dict com resultados dos testes estatísticos
     """
-    resultados = {
-        'grupo1': nome1,
-        'grupo2': nome2,
-        'metricas': {}
+    results = {
+        'group1': name1,
+        'group2': name2,
+        'metrics': {}
     }
 
-    # Métricas para comparar
-    metricas = [
-        ('rules_per_sentence', 'Regras por Sentenca'),
-        ('unique_rules_per_sentence', 'Regras Unicas por Sentenca')
+    # Metrics to compare
+    metrics = [
+        ('rules_per_sentence', 'Rules per Sentence'),
+        ('unique_rules_per_sentence', 'Unique Rules per Sentence')
     ]
 
-    for metrica_key, metrica_nome in metricas:
-        valores1 = np.array(stats1[metrica_key]['values'])
-        valores2 = np.array(stats2[metrica_key]['values'])
+    for metric_key, metric_name in metrics:
+        values1 = np.array(stats1[metric_key]['values'])
+        values2 = np.array(stats2[metric_key]['values'])
 
-        # Estatísticas descritivas
-        media1 = np.mean(valores1)
-        media2 = np.mean(valores2)
-        std1 = np.std(valores1)
-        std2 = np.std(valores2)
+        # Descriptive statistics
+        mean1 = np.mean(values1)
+        mean2 = np.mean(values2)
+        std1 = np.std(values1)
+        std2 = np.std(values2)
 
-        # Teste t independente
-        t_stat, t_pvalue = scipy_stats.ttest_ind(valores1, valores2)
+        # Independent t-test
+        t_stat, t_pvalue = scipy_stats.ttest_ind(values1, values2)
 
-        # Mann-Whitney U (não assume normalidade)
+        # Mann-Whitney U (does not assume normality)
         try:
-            u_stat, u_pvalue = scipy_stats.mannwhitneyu(valores1, valores2, alternative='two-sided')
+            u_stat, u_pvalue = scipy_stats.mannwhitneyu(values1, values2, alternative='two-sided')
         except ValueError:
             u_stat, u_pvalue = 0, 1.0
 
-        # Cohen's d (tamanho do efeito)
+        # Cohen's d (effect size)
         pooled_std = np.sqrt((std1**2 + std2**2) / 2)
         if pooled_std > 0:
-            cohens_d = (media1 - media2) / pooled_std
+            cohens_d = (mean1 - mean2) / pooled_std
         else:
             cohens_d = 0
 
-        # Interpretação do Cohen's d
+        # Cohen's d interpretation
         abs_d = abs(cohens_d)
         if abs_d < 0.2:
-            interpretacao_d = "negligenciavel"
+            interpretation_d = "negligible"
         elif abs_d < 0.5:
-            interpretacao_d = "pequeno"
+            interpretation_d = "small"
         elif abs_d < 0.8:
-            interpretacao_d = "medio"
+            interpretation_d = "medium"
         else:
-            interpretacao_d = "grande"
+            interpretation_d = "large"
 
-        resultados['metricas'][metrica_key] = {
-            'nome': metrica_nome,
-            nome1: {'media': media1, 'std': std1, 'n': len(valores1)},
-            nome2: {'media': media2, 'std': std2, 'n': len(valores2)},
-            'diferenca': media1 - media2,
+        results['metrics'][metric_key] = {
+            'name': metric_name,
+            name1: {'mean': mean1, 'std': std1, 'n': len(values1)},
+            name2: {'mean': mean2, 'std': std2, 'n': len(values2)},
+            'difference': mean1 - mean2,
             't_test': {'statistic': t_stat, 'p_value': t_pvalue},
             'mann_whitney': {'statistic': u_stat, 'p_value': u_pvalue},
             'cohens_d': cohens_d,
-            'interpretacao_cohens_d': interpretacao_d,
-            'significativo_005': t_pvalue < 0.05,
-            'significativo_001': t_pvalue < 0.01
+            'cohens_d_interpretation': interpretation_d,
+            'significant_005': t_pvalue < 0.05,
+            'significant_001': t_pvalue < 0.01
         }
 
-    return resultados
+    return results
 
 
-def imprimir_resultados_estatisticos(resultados: dict):
+def print_statistical_results(results: dict):
     """
     Imprime os resultados dos testes estatísticos de forma formatada.
 
     Args:
-        resultados: Retorno da função realizar_testes_estatisticos
+        results: Retorno da função run_statistical_tests
     """
     print("\n" + "=" * 80)
-    print("TESTES ESTATISTICOS: {} vs {}".format(resultados['grupo1'], resultados['grupo2']))
+    print("STATISTICAL TESTS: {} vs {}".format(results['group1'], results['group2']))
     print("=" * 80)
 
-    for metrica_key, dados in resultados['metricas'].items():
+    for metric_key, data in results['metrics'].items():
         print("\n" + "-" * 60)
-        print("Metrica: {}".format(dados['nome']))
+        print("Metric: {}".format(data['name']))
         print("-" * 60)
 
-        g1 = resultados['grupo1']
-        g2 = resultados['grupo2']
+        g1 = results['group1']
+        g2 = results['group2']
 
-        print("\n  Estatisticas Descritivas:")
-        print("    {}: media = {:.4f}, std = {:.4f}, n = {}".format(
-            g1, dados[g1]['media'], dados[g1]['std'], dados[g1]['n']))
-        print("    {}: media = {:.4f}, std = {:.4f}, n = {}".format(
-            g2, dados[g2]['media'], dados[g2]['std'], dados[g2]['n']))
-        print("    Diferenca ({}  - {}): {:.4f}".format(g1, g2, dados['diferenca']))
+        print("\n  Descriptive statistics:")
+        print("    {}: mean = {:.4f}, std = {:.4f}, n = {}".format(
+            g1, data[g1]['mean'], data[g1]['std'], data[g1]['n']))
+        print("    {}: mean = {:.4f}, std = {:.4f}, n = {}".format(
+            g2, data[g2]['mean'], data[g2]['std'], data[g2]['n']))
+        print("    Difference ({} - {}): {:.4f}".format(g1, g2, data['difference']))
 
-        print("\n  Testes de Significancia:")
+        print("\n  Significance tests:")
         print("    t-test: t = {:.4f}, p = {:.2e}".format(
-            dados['t_test']['statistic'], dados['t_test']['p_value']))
+            data['t_test']['statistic'], data['t_test']['p_value']))
         print("    Mann-Whitney U: U = {:.4f}, p = {:.2e}".format(
-            dados['mann_whitney']['statistic'], dados['mann_whitney']['p_value']))
+            data['mann_whitney']['statistic'], data['mann_whitney']['p_value']))
 
         sig_marker = ""
-        if dados['significativo_001']:
+        if data['significant_001']:
             sig_marker = " **"
-        elif dados['significativo_005']:
+        elif data['significant_005']:
             sig_marker = " *"
 
-        print("\n  Tamanho do Efeito:")
+        print("\n  Effect size:")
         print("    Cohen's d = {:.4f} ({}){}".format(
-            dados['cohens_d'], dados['interpretacao_cohens_d'], sig_marker))
+            data['cohens_d'], data['cohens_d_interpretation'], sig_marker))
 
     print("\n" + "=" * 80)
-    print("Legenda: * p < 0.05, ** p < 0.01")
-    print("Cohen's d: <0.2=negligenciavel, 0.2-0.5=pequeno, 0.5-0.8=medio, >0.8=grande")
+    print("Legend: * p < 0.05, ** p < 0.01")
+    print("Cohen's d: <0.2=negligible, 0.2-0.5=small, 0.5-0.8=medium, >0.8=large")
     print("=" * 80)
 
 
-def exportar_resultados_csv(resultados: dict, output_file: str):
+def export_results_csv(results: dict, output_file: str):
     """
     Exporta resultados dos testes estatísticos para CSV.
 
     Args:
-        resultados: Retorno da função realizar_testes_estatisticos
+        results: Retorno da função run_statistical_tests
         output_file: Caminho do arquivo CSV de saída
     """
     import csv
 
-    g1 = resultados['grupo1']
-    g2 = resultados['grupo2']
+    g1 = results['group1']
+    g2 = results['group2']
 
     with open(output_file, 'w', encoding='utf-8', newline='') as f:
         writer = csv.writer(f)
 
-        # Cabeçalho
+        # Header
         writer.writerow([
-            'metrica', 'nome_metrica',
-            f'{g1}_media', f'{g1}_std', f'{g1}_n',
-            f'{g2}_media', f'{g2}_std', f'{g2}_n',
-            'diferenca', 't_statistic', 't_pvalue',
+            'metric', 'metric_name',
+            f'{g1}_mean', f'{g1}_std', f'{g1}_n',
+            f'{g2}_mean', f'{g2}_std', f'{g2}_n',
+            'difference', 't_statistic', 't_pvalue',
             'mann_whitney_u', 'mann_whitney_pvalue',
-            'cohens_d', 'interpretacao', 'significativo_005', 'significativo_001'
+            'cohens_d', 'interpretation', 'significant_005', 'significant_001'
         ])
 
-        # Dados
-        for metrica_key, dados in resultados['metricas'].items():
+        # Rows
+        for metric_key, data in results['metrics'].items():
             writer.writerow([
-                metrica_key, dados['nome'],
-                dados[g1]['media'], dados[g1]['std'], dados[g1]['n'],
-                dados[g2]['media'], dados[g2]['std'], dados[g2]['n'],
-                dados['diferenca'],
-                dados['t_test']['statistic'], dados['t_test']['p_value'],
-                dados['mann_whitney']['statistic'], dados['mann_whitney']['p_value'],
-                dados['cohens_d'], dados['interpretacao_cohens_d'],
-                dados['significativo_005'], dados['significativo_001']
+                metric_key, data['name'],
+                data[g1]['mean'], data[g1]['std'], data[g1]['n'],
+                data[g2]['mean'], data[g2]['std'], data[g2]['n'],
+                data['difference'],
+                data['t_test']['statistic'], data['t_test']['p_value'],
+                data['mann_whitney']['statistic'], data['mann_whitney']['p_value'],
+                data['cohens_d'], data['cohens_d_interpretation'],
+                data['significant_005'], data['significant_001']
             ])
 
-    print(f"\nResultados exportados para: {output_file}")
+    print(f"\nResults exported to: {output_file}")

@@ -32,19 +32,19 @@ from scipy import stats
 
 
 METRICS_BY_CATEGORY: dict[str, list[str]] = {
-    "complexidade_descritiva": [
+    "complexity_descriptive": [
         "paragraphs", "sentences", "words",
         "sentences_per_paragraph", "words_per_sentence", "syllables_per_content_word",
         "sentence_length_max", "sentence_length_min", "sentence_length_standard_deviation",
         "subtitles",
     ],
-    "complexidade_simplicidade": [
+    "complexity_simplicity": [
         "simple_word_ratio",
         "easy_conjunctions_ratio", "hard_conjunctions_ratio",
         "short_sentence_ratio", "medium_short_sentence_ratio", "medium_long_sentence_ratio",
         "dialog_pronoun_ratio",
     ],
-    "complexidade_diversidade_lexical": [
+    "complexity_lexical_diversity": [
         "ttr", "content_density",
         "content_word_diversity", "content_word_max", "content_word_min", "content_word_standard_deviation",
         "function_word_diversity",
@@ -53,16 +53,16 @@ METRICS_BY_CATEGORY: dict[str, list[str]] = {
         "pronoun_diversity", "indefinite_pronouns_diversity", "relative_pronouns_diversity_ratio",
         "preposition_diversity", "punctuation_diversity",
     ],
-    "complexidade_frequencia": [
+    "complexity_frequency": [
         "cw_freq", "cw_freq_bra", "cw_freq_brwac",
         "freq_bra", "freq_brwac",
         "min_cw_freq", "min_cw_freq_bra", "min_cw_freq_brwac",
         "min_freq_bra", "min_freq_brwac",
     ],
-    "complexidade_leiturabilidade": [
+    "complexity_readability": [
         "flesch", "gunning_fox", "dalechall_adapted", "brunet", "honore",
     ],
-    "complexidade_psicolinguistica": [
+    "complexity_psycholinguistic": [
         "concretude_mean", "concretude_std",
         "concretude_1_25_ratio", "concretude_25_4_ratio",
         "concretude_4_55_ratio", "concretude_55_7_ratio",
@@ -76,12 +76,12 @@ METRICS_BY_CATEGORY: dict[str, list[str]] = {
         "imageabilidade_1_25_ratio", "imageabilidade_25_4_ratio",
         "imageabilidade_4_55_ratio", "imageabilidade_55_7_ratio",
     ],
-    "coesao_referencial": [
+    "cohesion_referential": [
         "adj_arg_ovl", "arg_ovl", "adj_stem_ovl", "stem_ovl", "adj_cw_ovl",
         "adjacent_refs", "anaphoric_refs",
         "coreference_pronoun_ratio", "demonstrative_pronoun_ratio",
     ],
-    "coesao_semantica_lsa": [
+    "cohesion_semantic_lsa": [
         "cross_entropy",
         "lsa_adj_mean", "lsa_adj_std",
         "lsa_all_mean", "lsa_all_std",
@@ -89,7 +89,7 @@ METRICS_BY_CATEGORY: dict[str, list[str]] = {
         "lsa_givenness_mean", "lsa_givenness_std",
         "lsa_span_mean", "lsa_span_std",
     ],
-    "coesao_conectivos": [
+    "cohesion_connectives": [
         "conn_ratio",
         "add_pos_conn_ratio", "add_neg_conn_ratio",
         "cau_pos_conn_ratio", "cau_neg_conn_ratio",
@@ -98,7 +98,7 @@ METRICS_BY_CATEGORY: dict[str, list[str]] = {
         "logic_operators", "and_ratio", "or_ratio", "if_ratio",
         "negation_ratio",
     ],
-    "semantica_palavras": [
+    "semantics_lexical": [
         "abstract_nouns_ratio",
         "content_words_ambiguity",
         "adjectives_ambiguity", "adverbs_ambiguity",
@@ -118,16 +118,16 @@ MAGNITUDE_THRESHOLDS = [
 
 
 CATEGORY_LABELS: dict[str, str] = {
-    "complexidade_descritiva": "Descritivas",
-    "complexidade_simplicidade": "Simplicidade",
-    "complexidade_diversidade_lexical": "Div.\\ lexical",
-    "complexidade_frequencia": "Frequência",
-    "complexidade_leiturabilidade": "Leiturabilidade",
-    "complexidade_psicolinguistica": "Psicolinguística",
-    "coesao_referencial": "Coesão referencial",
-    "coesao_semantica_lsa": "Coesão semântica (LSA)",
-    "coesao_conectivos": "Conectivos",
-    "semantica_palavras": "Semântica lexical",
+    "complexity_descriptive": "Descriptive",
+    "complexity_simplicity": "Simplicity",
+    "complexity_lexical_diversity": "Lexical div.",
+    "complexity_frequency": "Frequency",
+    "complexity_readability": "Readability",
+    "complexity_psycholinguistic": "Psycholinguistic",
+    "cohesion_referential": "Referential cohesion",
+    "cohesion_semantic_lsa": "Semantic cohesion (LSA)",
+    "cohesion_connectives": "Connectives",
+    "semantics_lexical": "Lexical semantics",
 }
 
 
@@ -142,8 +142,8 @@ def magnitude(delta: float) -> str:
 
 
 def cliffs_delta_from_u(u1: float, n_x: int, n_y: int) -> float:
-    # scipy retorna U1 = #(x>y) + 0.5·#(x==y), então δ = 2·U1/(n_x·n_y) − 1
-    # mede P(x>y) − P(x<y) e equivale a 2·AUC − 1.
+    # scipy returns U1 = #(x>y) + 0.5·#(x==y), so δ = 2·U1/(n_x·n_y) − 1
+    # measures P(x>y) − P(x<y) and is equivalent to 2·AUC − 1.
     if n_x == 0 or n_y == 0:
         return np.nan
     return 2.0 * u1 / (n_x * n_y) - 1.0
@@ -176,7 +176,7 @@ def _latex_table(df: pd.DataFrame, group: str, caption: str, label: str) -> str:
         rf"\label{{{label}}}",
         r"\begin{tabular}{llrrr}",
         r"\toprule",
-        r"Métrica & Categoria & Med.\ humano & Med.\ LLM & Cliff's $\delta$ \\",
+        r"Metric & Category & Med.\ human & Med.\ LLM & Cliff's $\delta$ \\",
         r"\midrule",
     ]
     for _, row in sub.iterrows():
@@ -197,18 +197,18 @@ def _latex_table(df: pd.DataFrame, group: str, caption: str, label: str) -> str:
 def rank(human_csv: Path, llm_csv: Path, out_dir: Path) -> None:
     h = pd.read_csv(human_csv)
     l = pd.read_csv(llm_csv)
-    print(f"human: {len(h)} textos  |  llm: {len(l)} textos")
+    print(f"human: {len(h)} texts  |  llm: {len(l)} texts")
 
     lookup = build_metric_lookup()
     whitelist = list(lookup)
-    print(f"whitelist (complexidade + coesão + semântica): {len(whitelist)} métricas")
+    print(f"whitelist (complexity + cohesion + semantics): {len(whitelist)} metrics")
 
     missing = [m for m in whitelist if m not in h.columns or m not in l.columns]
     if missing:
-        print(f"AVISO: {len(missing)} métricas da whitelist ausentes nos CSVs: {missing}")
+        print(f"WARNING: {len(missing)} whitelisted metrics missing from the CSVs: {missing}")
 
     metrics = [m for m in whitelist if m in h.columns and m in l.columns]
-    print(f"métricas analisadas: {len(metrics)}")
+    print(f"metrics analysed: {len(metrics)}")
 
     rows = []
     for m in metrics:
@@ -266,18 +266,18 @@ def rank(human_csv: Path, llm_csv: Path, out_dir: Path) -> None:
     human_tex = _latex_table(
         strong, "human",
         caption=(
-            rf"Métricas mais significativas para identificar texto humano "
-            rf"(n={n_h}): mediana maior em humano que em LLM, com "
-            rf"$|\delta| \geq 0{{,}}330$ e FDR $<$ 0{{,}}05. Ordenadas por $|\delta|$ decrescente."
+            rf"Most significant metrics for identifying human-written text "
+            rf"(n={n_h}): median higher in human than in LLM, with "
+            rf"$|\delta| \geq 0.330$ and FDR $<$ 0.05. Sorted by decreasing $|\delta|$."
         ),
         label="tab:strong_human",
     )
     llm_tex = _latex_table(
         strong, "llm",
         caption=(
-            rf"Métricas mais significativas para identificar texto gerado por LLM "
-            rf"(n={n_l}): mediana maior em LLM que em humano, com "
-            rf"$|\delta| \geq 0{{,}}330$ e FDR $<$ 0{{,}}05. Ordenadas por $|\delta|$ decrescente."
+            rf"Most significant metrics for identifying LLM-generated text "
+            rf"(n={n_l}): median higher in LLM than in human, with "
+            rf"$|\delta| \geq 0.330$ and FDR $<$ 0.05. Sorted by decreasing $|\delta|$."
         ),
         label="tab:strong_llm",
     )
@@ -286,23 +286,23 @@ def rank(human_csv: Path, llm_csv: Path, out_dir: Path) -> None:
 
     cols_show = ["metric", "category", "median_human", "median_llm",
                  "cliffs_delta", "magnitude", "q_value_fdr", "higher_in"]
-    print(f"\n=== TOP 30 métricas por |Cliff's δ| ===")
+    print(f"\n=== TOP 30 metrics by |Cliff's δ| ===")
     print(df.head(30)[cols_show].to_string(index=False, float_format=lambda v: f"{v:.4g}"))
 
-    print(f"\n=== Distribuição por magnitude ===")
+    print(f"\n=== Distribution by magnitude ===")
     print(df["magnitude"].value_counts().to_string())
 
-    print(f"\n=== Top 3 por categoria (maior |δ|) ===")
+    print(f"\n=== Top 3 per category (largest |δ|) ===")
     best_per_cat = (df.sort_values("abs_delta", ascending=False)
                       .groupby("category", sort=False)
                       .head(3))
     print(best_per_cat[cols_show].to_string(index=False, float_format=lambda v: f"{v:.4g}"))
 
-    print(f"\nArquivos salvos em {out_dir}/")
-    print(f"  - ranked_filtered.csv  ({len(df)} métricas)")
-    print(f"  - strong_signals.csv   ({len(strong)} métricas medium+ e FDR<0.05)")
-    print(f"  - table_human.tex      ({n_h} linhas)")
-    print(f"  - table_llm.tex        ({n_l} linhas)")
+    print(f"\nFiles saved to {out_dir}/")
+    print(f"  - ranked_filtered.csv  ({len(df)} metrics)")
+    print(f"  - strong_signals.csv   ({len(strong)} metrics, medium+ and FDR<0.05)")
+    print(f"  - table_human.tex      ({n_h} rows)")
+    print(f"  - table_llm.tex        ({n_l} rows)")
 
 
 def main() -> int:
@@ -316,7 +316,7 @@ def main() -> int:
     args = parser.parse_args()
 
     if not args.human.is_file() or not args.llm.is_file():
-        print(f"CSV não encontrado: {args.human} / {args.llm}")
+        print(f"CSV not found: {args.human} / {args.llm}")
         return 1
 
     rank(args.human, args.llm, args.out)

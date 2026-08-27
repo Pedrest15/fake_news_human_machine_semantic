@@ -1,35 +1,35 @@
 ==============================================================================================================
-ANÁLISE DISCRIMINATIVA LIWC: HUMAN vs LLM
+LIWC DISCRIMINATIVE ANALYSIS: HUMAN vs LLM
 ==============================================================================================================
 
-INTERPRETAÇÃO:
+HOW TO READ THIS REPORT:
 --------------------------------------------------------------------------------------------------------------
-  - mean_human/mean_llm: Média da % de palavras na categoria em cada grupo
+  - mean_human/mean_llm: mean % of words in the category for each group
   - difference: (mean_human - mean_llm)
-      > 0: categoria mais presente em textos HUMANOS
-      < 0: categoria mais presente em textos LLM
-  - p_value: Significância estatística (Mann-Whitney U test)
-  - cohens_d: Tamanho do efeito (>0.8=grande, 0.5=médio, 0.2=pequeno)
+      > 0: category more frequent in HUMAN texts
+      < 0: category more frequent in LLM texts
+  - p_value: statistical significance (Mann-Whitney U test)
+  - cohens_d: effect size (>0.8=large, 0.5=medium, 0.2=small)
 
-ESTATÍSTICAS DO CORPUS:
+CORPUS STATISTICS:
 --------------------------------------------------------------------------------------------------------------
-  Documentos human: 5391
-  Documentos LLM: 5391
+  Human documents: 5391
+  LLM documents: 5391
   Total: 10782
-  Categorias LIWC: 73
+  LIWC categories: 73
 
-RESUMO DA ANÁLISE:
+ANALYSIS SUMMARY:
 --------------------------------------------------------------------------------------------------------------
-  Categorias significativas (p<0.05): 66
-  Categorias significativas (p<0.01): 63
-  Mais características de HUMAN: 44
-  Mais características de LLM: 30
+  Significant categories (p<0.05): 66
+  Significant categories (p<0.01): 63
+  More characteristic of HUMAN: 44
+  More characteristic of LLM: 30
 
 ==============================================================================================================
-TODAS AS CATEGORIAS LIWC (ordenadas por diferença absoluta)
+ALL LIWC CATEGORIES (sorted by absolute difference)
 ==============================================================================================================
 
-#   Categoria                                 Mean_H  Mean_L     Diff    p-value  Cohen d   Caract.
+#   Category                                  Mean_H  Mean_L     Diff    p-value  Cohen d  Charact.
 --------------------------------------------------------------------------------------------------------------
 1   verb (Verbs)                              10.306   8.127  +2.1793**9.38e-272   +0.740     human
 2   social (Social)                            7.362   5.794  +1.5681**7.76e-134   +0.517     human
@@ -107,5 +107,5 @@ TODAS AS CATEGORIAS LIWC (ordenadas por diferença absoluta)
 74  conj (Conjunctions)                        7.735   7.723  +0.0117   4.64e-01   +0.005     human
 
 ==============================================================================================================
-Legenda: ** = p<0.01, * = p<0.05
+Legend: ** = p<0.01, * = p<0.05
 ==============================================================================================================

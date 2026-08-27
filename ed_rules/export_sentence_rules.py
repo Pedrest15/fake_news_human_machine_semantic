@@ -4,8 +4,8 @@ Script para exportar regras gramaticais por sentença de arquivos CoNLL-U.
 Para cada arquivo .conllu no diretório de entrada, gera um arquivo .txt
 com o formato:
 
-Sentença: <texto da sentença>
-Regras:
+Sentence: <texto da sentença>
+Rules:
   - regra1
   - regra2
   ...
@@ -41,11 +41,11 @@ def export_rules_for_file(input_file, output_file, include_upos=True, include_de
             sentence_text = sent_grammar['sentence_text']
             sentence_id = sent_grammar.get('sentence_id', f'S{i}')
 
-            # Extrai apenas as regras únicas (sem repetição na mesma sentença)
+            # Keep only the unique rules (no repetition within the same sentence)
             rules = sorted(set(rule['rule'] for rule in sent_grammar['rules']))
 
-            f.write(f"[{sentence_id}] Sentença: {sentence_text}\n")
-            f.write("Regras:\n")
+            f.write(f"[{sentence_id}] Sentence: {sentence_text}\n")
+            f.write("Rules:\n")
             for rule in rules:
                 f.write(f"  - {rule}\n")
             f.write("\n")
@@ -70,16 +70,16 @@ def process_directory(input_dir, output_dir, include_upos=True, include_deprel=T
     conllu_files = sorted(input_path.glob('*.conllu'))
 
     print("=" * 80)
-    print("EXPORTANDO REGRAS POR SENTENÇA")
+    print("EXPORTING RULES PER SENTENCE")
     print("=" * 80)
-    print(f"\nDiretório de entrada: {input_dir}")
-    print(f"Diretório de saída: {output_dir}")
-    print(f"Arquivos encontrados: {len(conllu_files)}")
-    print(f"\nConfiguração:")
+    print(f"\nInput directory: {input_dir}")
+    print(f"Output directory: {output_dir}")
+    print(f"Files found: {len(conllu_files)}")
+    print(f"\nConfiguration:")
     print(f"  Include UPOS: {include_upos}")
     print(f"  Include DEPREL: {include_deprel}")
     print("\n" + "=" * 80)
-    print("Processando...")
+    print("Processing...")
     print("=" * 80 + "\n")
 
     total_sentences = 0
@@ -94,18 +94,18 @@ def process_directory(input_dir, output_dir, include_upos=True, include_deprel=T
             )
             total_sentences += num_sentences
             processed += 1
-            print(f"[{i}/{len(conllu_files)}] {file_path.name} -> {output_file.name} ({num_sentences} sentenças)")
+            print(f"[{i}/{len(conllu_files)}] {file_path.name} -> {output_file.name} ({num_sentences} sentences)")
 
         except Exception as e:
             errors.append((file_path.name, str(e)))
-            print(f"[{i}/{len(conllu_files)}] ERRO: {file_path.name} - {e}")
+            print(f"[{i}/{len(conllu_files)}] ERROR: {file_path.name} - {e}")
 
     print("\n" + "=" * 80)
-    print("RESUMO")
+    print("SUMMARY")
     print("=" * 80)
-    print(f"Arquivos processados: {processed}/{len(conllu_files)}")
-    print(f"Total de sentenças: {total_sentences}")
+    print(f"Files processed: {processed}/{len(conllu_files)}")
+    print(f"Total sentences: {total_sentences}")
     if errors:
-        print(f"Erros: {len(errors)}")
+        print(f"Errors: {len(errors)}")
         for filename, error in errors:
             print(f"  - {filename}: {error}")

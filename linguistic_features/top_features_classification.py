@@ -47,9 +47,9 @@ from linguistic_features import (
 )
 
 
-# Whitelists (5 top-humano + 5 top-LLM por modulo). Os nomes ja vem com o
-# prefixo que os loaders aplicam (`nilc__`/`liwc__`) e, no caso do LIWC, com
-# o sufixo descritivo entre parenteses que e o nome real da coluna no CSV.
+# Whitelists (top 5 human + top 5 LLM per module). The names already carry the
+# prefix applied by the loaders (`nilc__`/`liwc__`) and, for LIWC, the descriptive
+# suffix in parentheses that is the real column name in the CSV.
 NILC_HUMAN_TOP = [
     "nilc__familiaridade_55_7_ratio",
     "nilc__idade_aquisicao_1_25_ratio",
@@ -84,7 +84,7 @@ EXPERIMENTS: Dict[str, Dict] = {
     "nilcmetrics_top10": {
         "groups": ["nilcmetrics"],
         "features": NILC_HUMAN_TOP + NILC_LLM_TOP,
-        "liwc_keep_aggregators": False,  # nao se aplica
+        "liwc_keep_aggregators": False,  # not applicable here
     },
     "liwc_top10": {
         "groups": ["liwc"],
@@ -128,8 +128,8 @@ class TopFeaturesPipeline(LinguisticFeaturesPipeline):
             )
             if df is not None:
                 frames.append(df)
-        # Outros grupos nao sao necessarios para os whitelists atuais; se for
-        # estender, copie os blocos correspondentes de linguistic_features.py.
+        # The other groups are not needed by the current whitelists; to extend
+        # this, copy the matching blocks from linguistic_features.py.
         if not frames:
             return None
 
@@ -140,15 +140,15 @@ class TopFeaturesPipeline(LinguisticFeaturesPipeline):
         missing = [c for c in self.feature_whitelist if c not in available]
         if missing:
             logger.warning(
-                f"  whitelist: {len(missing)} feature(s) ausente(s) nos dados: {missing}"
+                f"  whitelist: {len(missing)} feature(s) missing from the data: {missing}"
             )
         keep = [c for c in self.feature_whitelist if c in available]
         if not keep:
             raise RuntimeError(
-                "Nenhuma feature do whitelist encontrada apos load. "
-                f"Esperadas: {self.feature_whitelist}"
+                "No whitelisted feature was found after loading. "
+                f"Expected: {self.feature_whitelist}"
             )
-        logger.info(f"  whitelist: usando {len(keep)}/{len(self.feature_whitelist)} features")
+        logger.info(f"  whitelist: using {len(keep)}/{len(self.feature_whitelist)} features")
         return merged[meta + keep]
 
 
@@ -164,7 +164,7 @@ def run_experiment(
     normalize_features: bool,
 ) -> Dict[str, Dict]:
     logger.info("\n" + "#" * 70)
-    logger.info(f"# EXPERIMENTO: {name}  ({len(spec['features'])} features alvo)")
+    logger.info(f"# EXPERIMENT: {name}  ({len(spec['features'])} target features)")
     logger.info("#" * 70)
 
     pipeline = TopFeaturesPipeline(
@@ -189,16 +189,16 @@ def run_experiment(
                 normalize_features=normalize_features,
             )
         except Exception as exc:
-            logger.error(f"  {name} / {clf} falhou: {exc}")
+            logger.error(f"  {name} / {clf} failed: {exc}")
     return results
 
 
 def print_comparison(all_results: Dict[str, Dict[str, Dict]]):
     classifiers = sorted({c for exp in all_results.values() for c in exp})
     logger.info("\n" + "=" * 100)
-    logger.info("COMPARACAO POR EXPERIMENTO (Test F1)")
+    logger.info("COMPARISON PER EXPERIMENT (Test F1)")
     logger.info("=" * 100)
-    logger.info(f"{'Experimento':<22}" + "".join(f"{c:<16}" for c in classifiers))
+    logger.info(f"{'Experiment':<22}" + "".join(f"{c:<16}" for c in classifiers))
     logger.info("-" * 100)
     for exp, clf_res in all_results.items():
         row = f"{exp:<22}"
@@ -211,12 +211,12 @@ def print_comparison(all_results: Dict[str, Dict[str, Dict]]):
 
 def main():
     p = argparse.ArgumentParser(
-        description="Classificacao Humano vs LLM com features hand-picked (top-10)",
+        description="Human vs LLM classification with hand-picked features (top-10)",
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     p.add_argument(
         "--experiments", default="all",
-        help=f"Experimentos separados por virgula ({','.join(EXPERIMENTS)}) ou all",
+        help=f"Comma-separated list of experiments ({','.join(EXPERIMENTS)}) or all",
     )
     p.add_argument(
         "--classifier", default="all",
@@ -227,7 +227,7 @@ def main():
     p.add_argument("--cv-folds", type=int, default=5)
     p.add_argument(
         "--keep-nilc-absolute", action="store_true",
-        help="Mantem features length-biased do NILC (ablacao)",
+        help="Keep the length-biased NILC features (ablation)",
     )
     args = p.parse_args()
 
@@ -237,7 +237,7 @@ def main():
         experiments = [e.strip() for e in args.experiments.split(",")]
         invalid = [e for e in experiments if e not in EXPERIMENTS]
         if invalid:
-            p.error(f"Experimentos invalidos: {invalid}. Validos: {list(EXPERIMENTS)}")
+            p.error(f"Invalid experiments: {invalid}. Valid ones: {list(EXPERIMENTS)}")
 
     classifiers = (
         list(CLASSIFIERS_CONFIG.keys()) if args.classifier == "all"
@@ -280,7 +280,7 @@ def main():
     comp_file = results_root / "comparison_top_features.json"
     with open(comp_file, "w", encoding="utf-8") as fh:
         json.dump(comparison, fh, indent=2, ensure_ascii=False)
-    logger.info(f"\nComparacao salva em: {comp_file}")
+    logger.info(f"\nComparison saved to: {comp_file}")
 
     best_per_exp = {}
     for exp, clf_res in all_results.items():
@@ -305,11 +305,11 @@ def main():
     best_file = results_root / "comparison_top_features_best.json"
     with open(best_file, "w", encoding="utf-8") as fh:
         json.dump(best_per_exp, fh, indent=2, ensure_ascii=False)
-    logger.info(f"Melhor classificador por experimento salvo em: {best_file}")
+    logger.info(f"Best classifier per experiment saved to: {best_file}")
 
     print_comparison(all_results)
 
-    logger.info("\nMelhor classificador por experimento (Test F1):")
+    logger.info("\nBest classifier per experiment (Test F1):")
     for exp, info in sorted(best_per_exp.items(), key=lambda x: x[1]["test_f1"], reverse=True):
         logger.info(
             f"  {exp:<22} {info['best_classifier']:<20} "

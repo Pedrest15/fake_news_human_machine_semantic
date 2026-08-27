@@ -42,7 +42,7 @@ def process_group(group_dir: Path, output_csv: Path) -> None:
             try:
                 text = txt_path.read_text(encoding="utf-8", errors="replace").strip()
                 if not text:
-                    raise ValueError("arquivo vazio")
+                    raise ValueError("empty file")
                 t = text_metrics.Text(text)
                 values = text_metrics.nilc_metrics.values_for_text(t).as_flat_dict()
             except Exception as exc:
@@ -65,27 +65,27 @@ def process_group(group_dir: Path, output_csv: Path) -> None:
             n_ok += 1
             print(f"  [{n_ok}] {subset}/{txt_path.name}", flush=True)
 
-    print(f"[{group_dir.name}] ok={n_ok}  falhas={n_fail}  -> {output_csv}", flush=True)
+    print(f"[{group_dir.name}] ok={n_ok}  failures={n_fail}  -> {output_csv}", flush=True)
 
     if failed:
         log_path = output_csv.with_suffix(".failures.log")
         with log_path.open("w", encoding="utf-8") as logf:
             for p, err in failed:
                 logf.write(f"{p}\t{err}\n")
-        print(f"  log de falhas: {log_path}", flush=True)
+        print(f"  failure log: {log_path}", flush=True)
 
 
 def main() -> int:
     if not DATA_ROOT.is_dir():
-        print(f"Diretório do dataset não encontrado dentro do container: {DATA_ROOT}", file=sys.stderr)
+        print(f"Dataset directory not found inside the container: {DATA_ROOT}", file=sys.stderr)
         return 1
 
     for group in ("human", "llm"):
         group_dir = DATA_ROOT / group
         if not group_dir.is_dir():
-            print(f"[skip] grupo ausente: {group_dir}", file=sys.stderr)
+            print(f"[skip] missing group: {group_dir}", file=sys.stderr)
             continue
-        print(f"=== Grupo: {group} ===", flush=True)
+        print(f"=== Group: {group} ===", flush=True)
         try:
             process_group(group_dir, OUT_ROOT / f"{group}.csv")
         except Exception:

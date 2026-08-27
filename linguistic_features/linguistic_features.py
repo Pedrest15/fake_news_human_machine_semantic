@@ -69,31 +69,34 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 if not XGBOOST_AVAILABLE:
-    logger.warning("XGBoost nao instalado. Use 'pip install xgboost' para habilitar.")
+    logger.warning("XGBoost is not installed. Run 'pip install xgboost' to enable it.")
 
 
 # =============================================================================
-# CONFIGURACAO DE CAMINHOS (paths default no repo)
+# PATH CONFIGURATION (repo defaults)
 # =============================================================================
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-CARACT_ROOT = REPO_ROOT / "linguistic_features" / "data"
+DATA_ROOT = REPO_ROOT / "linguistic_features" / "data"
 
 NILC_HUMAN_CSV_DEFAULT = REPO_ROOT / "nilc-metrix" / "results" / "human.csv"
 NILC_LLM_CSV_DEFAULT = REPO_ROOT / "nilc-metrix" / "results" / "llm.csv"
 LIWC_CSV_DEFAULT = REPO_ROOT / "liwc" / "liwc_output" / "liwc_per_document_scores.csv"
 UD_RULES_DIR_DEFAULT = REPO_ROOT / "ed_rules" / "rules_output_all"
 
-SYLLABLES_CSV_DEFAULT = CARACT_ROOT / "contagem_silabas" / "resultados" / "estatisticas_silabas_nltk.csv"
-POS_TAGGER_ROOT_DEFAULT = CARACT_ROOT / "tagger" / "tagger_results"
-PARSER_HUMAN_TXT_DEFAULT = CARACT_ROOT / "parser" / "aggregated_output" / "human" / "per_file_statistics.txt"
-PARSER_LLM_TXT_DEFAULT = CARACT_ROOT / "parser" / "aggregated_output" / "llm" / "per_file_statistics.txt"
-SAGE_CSV_DEFAULT = CARACT_ROOT / "sage" / "resultados" / "sage_termos_Humano_vs_Maquina.csv"
+# NOTE: the file and column names below are inherited verbatim from the upstream
+# characterisation pipeline, which emits them in Portuguese. They are read as-is
+# so the pre-computed data files do not have to be regenerated.
+SYLLABLES_CSV_DEFAULT = DATA_ROOT / "contagem_silabas" / "resultados" / "estatisticas_silabas_nltk.csv"
+POS_TAGGER_ROOT_DEFAULT = DATA_ROOT / "tagger" / "tagger_results"
+PARSER_HUMAN_TXT_DEFAULT = DATA_ROOT / "parser" / "aggregated_output" / "human" / "per_file_statistics.txt"
+PARSER_LLM_TXT_DEFAULT = DATA_ROOT / "parser" / "aggregated_output" / "llm" / "per_file_statistics.txt"
+SAGE_CSV_DEFAULT = DATA_ROOT / "sage" / "resultados" / "sage_termos_Humano_vs_Maquina.csv"
 
 UPOS_TAGS = ['ADJ', 'ADP', 'ADV', 'AUX', 'CCONJ', 'DET', 'INTJ', 'NOUN',
              'NUM', 'PART', 'PRON', 'PROPN', 'PUNCT', 'SCONJ', 'SYM', 'VERB', 'X']
 
-SILABAS_DATASET_MAP = {
+SYLLABLES_DATASET_MAP = {
     'FakeBR_Human': ('fake_br', 0),
     'FakeBR_LLM': ('fake_br', 1),
     'FakeTrue_Human': ('fake_true_br', 0),
@@ -115,10 +118,10 @@ PARSER_PATH_MAP = {
 }
 
 CORPUS_DIRS_DEFAULT: Dict[str, Path] = {
-    "fake_br_human": CARACT_ROOT / "corpus" / "Fake.br-Corpus-master" / "full_texts" / "fake",
-    "fake_br_llm": CARACT_ROOT / "corpus" / "fake-news-llm-ptbr-main" / "fake-news-llm-ptbr-main" / "data" / "Fake.Br",
-    "fake_true_human": CARACT_ROOT / "corpus" / "FakeTrue.Br-main" / "fake",
-    "fake_true_llm": CARACT_ROOT / "corpus" / "fake-news-llm-ptbr-main" / "fake-news-llm-ptbr-main" / "data" / "FakeTrueBR",
+    "fake_br_human": DATA_ROOT / "corpus" / "Fake.br-Corpus-master" / "full_texts" / "fake",
+    "fake_br_llm": DATA_ROOT / "corpus" / "fake-news-llm-ptbr-main" / "fake-news-llm-ptbr-main" / "data" / "Fake.Br",
+    "fake_true_human": DATA_ROOT / "corpus" / "FakeTrue.Br-main" / "fake",
+    "fake_true_llm": DATA_ROOT / "corpus" / "fake-news-llm-ptbr-main" / "fake-news-llm-ptbr-main" / "data" / "FakeTrueBR",
 }
 
 BERT_MODELS = {
@@ -128,7 +131,7 @@ BERT_MODELS = {
 
 
 # =============================================================================
-# CLASSIFICADORES
+# CLASSIFIERS
 # =============================================================================
 
 def get_classifiers_config() -> Dict:
@@ -216,7 +219,7 @@ def load_split_files(split_dir: Path) -> Dict[str, Dict[str, List[str]]]:
             with open(path, 'r', encoding='utf-8') as f:
                 splits[corpus][kind] = [line.strip() for line in f if line.strip()]
         else:
-            logger.warning(f"Split nao encontrado: {path}")
+            logger.warning(f"Split file not found: {path}")
     return splits
 
 
@@ -238,7 +241,7 @@ def splits_to_keys(splits: Dict) -> Tuple[List[Tuple[str, str, int]], List[Tuple
 
 
 # =============================================================================
-# LOADERS DE FEATURES LINGUISTICAS
+# LINGUISTIC FEATURE LOADERS
 # =============================================================================
 
 SUBSET_TO_CORPUS = {
@@ -246,8 +249,8 @@ SUBSET_TO_CORPUS = {
     'fake_true_human': 'fake_true_br', 'fake_true_llm': 'fake_true_br',
 }
 
-# Tier A: contagens absolutas do NILC-Metrix.
-# Codificam diretamente o tamanho do texto (words, sentences, paragraphs etc.).
+# Tier A: absolute NILC-Metrix counts.
+# These encode text length directly (words, sentences, paragraphs, ...).
 NILC_TIER_A_ABSOLUTE = frozenset({
     "words",
     "sentences",
@@ -267,20 +270,20 @@ NILC_TIER_A_ABSOLUTE = frozenset({
     "sentences_with_seven_more_clauses",
 })
 
-# Tier B: features formalmente normalizadas mas empiricamente length-biased.
-# Quatro grupos:
-#  - Riqueza vocabular (TTR-like, Tweedie & Baayen 1998): ttr, honore, brunet.
-#  - Diversidades TTR-like por classe gramatical: *_diversity / *_diversity_ratio.
-#  - Max/min/std de contagens por POS e de comprimento de unidades: o MAX
-#    cresce com N, o STD escala com sqrt(N) para muitas distribuicoes.
-#  - Std de similaridades LSA: variancia amostral depende do n. de pares
-#    sentenca-a-sentenca disponivel, que escala com N.
+# Tier B: features that are formally normalised but empirically length-biased.
+# Four groups:
+#  - Vocabulary richness (TTR-like, Tweedie & Baayen 1998): ttr, honore, brunet.
+#  - TTR-like diversities per part of speech: *_diversity / *_diversity_ratio.
+#  - Max/min/std of POS counts and of unit lengths: the MAX grows with N and
+#    the STD scales with sqrt(N) for many distributions.
+#  - Std of LSA similarities: the sample variance depends on the number of
+#    available sentence-to-sentence pairs, which scales with N.
 NILC_TIER_B_LENGTH_CORRELATED = frozenset({
-    # Riqueza vocabular
+    # Vocabulary richness
     "ttr",
     "honore",
     "brunet",
-    # Diversidades TTR-like
+    # TTR-like diversities
     "content_word_diversity",
     "function_word_diversity",
     "noun_diversity",
@@ -293,21 +296,21 @@ NILC_TIER_B_LENGTH_CORRELATED = frozenset({
     "adverbs_diversity_ratio",
     "relative_pronouns_diversity_ratio",
     "verbal_time_moods_diversity",
-    # max/min/std de contagens por POS
+    # max/min/std of POS counts
     "adjectives_max", "adjectives_min", "adjectives_standard_deviation",
     "adverbs_max", "adverbs_min", "adverbs_standard_deviation",
     "content_word_max", "content_word_min", "content_word_standard_deviation",
     "nouns_max", "nouns_min", "nouns_standard_deviation",
     "pronouns_max", "pronouns_min", "pronouns_standard_deviation",
     "verbs_max", "verbs_min", "verbs_standard_deviation",
-    # max/min/std de comprimento de unidades
+    # max/min/std of unit lengths
     "sentence_length_max",
     "sentence_length_min",
     "sentence_length_standard_deviation",
     "max_noun_phrase",
     "min_noun_phrase",
     "std_noun_phrase",
-    # Std das similaridades LSA (mantemos os means: lsa_*_mean)
+    # Std of the LSA similarities (the means, lsa_*_mean, are kept)
     "lsa_adj_std",
     "lsa_all_std",
     "lsa_paragraph_std",
@@ -327,7 +330,7 @@ def load_nilcmetrics(human_csv: Path, llm_csv: Path,
     vocabular, max/min/std de contagens, std de coseno LSA).
     """
     if not human_csv.exists() or not llm_csv.exists():
-        logger.warning(f"NILCmetrics nao encontrado: {human_csv}, {llm_csv}")
+        logger.warning(f"NILCmetrics not found: {human_csv}, {llm_csv}")
         return None
 
     df_h = pd.read_csv(human_csv)
@@ -346,8 +349,8 @@ def load_nilcmetrics(human_csv: Path, llm_csv: Path,
         to_drop = tier_a + tier_b
         if to_drop:
             df = df.drop(columns=to_drop)
-            logger.info(f"  NILCmetrics: removidas {len(tier_a)} features Tier A "
-                        f"+ {len(tier_b)} features Tier B = {len(to_drop)} length-biased")
+            logger.info(f"  NILCmetrics: dropped {len(tier_a)} Tier A features "
+                        f"+ {len(tier_b)} Tier B features = {len(to_drop)} length-biased")
 
     feature_cols = [c for c in df.columns if c not in {'filename', 'subset_corpus', 'label'}]
     df = df[['filename', 'subset_corpus', 'label'] + feature_cols]
@@ -356,22 +359,22 @@ def load_nilcmetrics(human_csv: Path, llm_csv: Path,
         'nilc__subset_corpus': 'subset_corpus',
         'nilc__label': 'label',
     })
-    logger.info(f"  NILCmetrics: {len(df)} linhas, {len(df.columns) - 3} features")
+    logger.info(f"  NILCmetrics: {len(df)} rows, {len(df.columns) - 3} features")
     return df
 
 
-# LIWC expoe 3 campos length-direct (contagens/ratio de metadado, nao
-# categorias psicolinguisticas) que devem sair junto com a categoria.
+# LIWC exposes 3 length-direct fields (metadata counts/ratios rather than
+# psycholinguistic categories) that are dropped alongside the categories.
 LIWC_ABSOLUTE_FIELDS = frozenset({
     "word_count",
     "matched_words",
     "dictionary_coverage",
 })
 
-# LIWC tem hierarquia: categorias agregadoras subsumem subcategorias mais
-# especificas. Cada palavra recebe os ids do agregador E dos filhos, criando
-# colinearidade entre eles. Removemos os agregadores e mantemos as folhas
-# (categorias mais especificas). Lista derivada da estrutura LIWC2015:
+# LIWC is hierarchical: aggregator categories subsume more specific ones.
+# Every word receives the ids of the aggregator AND of its children, which makes
+# them collinear. The aggregators are dropped and the leaves (the more specific
+# categories) are kept. The list below follows the LIWC2015 structure:
 #  function   ⊃  pronoun, article, prep, auxverb, adverb, conj, negate
 #  pronoun    ⊃  ppron, ipron
 #  ppron      ⊃  i, we, you, shehe, they
@@ -409,7 +412,7 @@ def load_liwc(liwc_csv: Path, drop_absolute: bool = True) -> Optional[pd.DataFra
         LIWC2015, mantendo apenas as folhas especificas).
     """
     if not liwc_csv.exists():
-        logger.warning(f"LIWC nao encontrado: {liwc_csv}")
+        logger.warning(f"LIWC not found: {liwc_csv}")
         return None
 
     df = pd.read_csv(liwc_csv)
@@ -434,8 +437,8 @@ def load_liwc(liwc_csv: Path, drop_absolute: bool = True) -> Optional[pd.DataFra
         to_drop = length_direct + aggregators
         if to_drop:
             df = df.drop(columns=to_drop)
-            logger.info(f"  LIWC: removidos {len(length_direct)} length-direct "
-                        f"+ {len(aggregators)} categorias agregadoras = {len(to_drop)}")
+            logger.info(f"  LIWC: dropped {len(length_direct)} length-direct fields "
+                        f"+ {len(aggregators)} aggregator categories = {len(to_drop)}")
 
     feature_cols = [c for c in df.columns if c not in {'filename', 'subset_corpus', 'label'}]
     df = df[['filename', 'subset_corpus', 'label'] + feature_cols]
@@ -444,7 +447,7 @@ def load_liwc(liwc_csv: Path, drop_absolute: bool = True) -> Optional[pd.DataFra
         'liwc__subset_corpus': 'subset_corpus',
         'liwc__label': 'label',
     })
-    logger.info(f"  LIWC: {len(df)} linhas, {len(df.columns) - 3} features")
+    logger.info(f"  LIWC: {len(df)} rows, {len(df.columns) - 3} features")
     return df
 
 
@@ -456,7 +459,7 @@ def load_enhanced_ud(rules_root: Path, top_k: int = 500) -> Optional[pd.DataFram
     frequencia normalizada da regra (count / total_rules) no documento.
     """
     if not rules_root.exists():
-        logger.warning(f"Enhanced-UD rules dir nao encontrado: {rules_root}")
+        logger.warning(f"Enhanced-UD rules dir not found: {rules_root}")
         return None
 
     subsets = ['fake_br_human', 'fake_br_llm', 'fake_true_human', 'fake_true_llm']
@@ -466,7 +469,7 @@ def load_enhanced_ud(rules_root: Path, top_k: int = 500) -> Optional[pd.DataFram
     for subset in subsets:
         subset_dir = rules_root / subset
         if not subset_dir.exists():
-            logger.warning(f"  subset ausente em rules_output_all: {subset}")
+            logger.warning(f"  subset missing from rules_output_all: {subset}")
             continue
         label = 1 if subset.endswith('_llm') else 0
         corpus = SUBSET_TO_CORPUS[subset]
@@ -475,7 +478,7 @@ def load_enhanced_ud(rules_root: Path, top_k: int = 500) -> Optional[pd.DataFram
                 with open(json_path, 'r', encoding='utf-8') as fh:
                     payload = json.load(fh)
             except Exception as exc:
-                logger.warning(f"  ignorando {json_path}: {exc}")
+                logger.warning(f"  skipping {json_path}: {exc}")
                 continue
             rules = payload.get('rules', [])
             total = payload.get('total_rules') or len(rules) or 1
@@ -488,7 +491,7 @@ def load_enhanced_ud(rules_root: Path, top_k: int = 500) -> Optional[pd.DataFram
             per_doc.append((filename, corpus, label, counts, total))
 
     if not per_doc:
-        logger.warning("  Enhanced-UD: nenhum documento carregado")
+        logger.warning("  Enhanced-UD: no document loaded")
         return None
 
     top_rules = [r for r, _ in rule_doc_counts.most_common(top_k)]
@@ -508,20 +511,20 @@ def load_enhanced_ud(rules_root: Path, top_k: int = 500) -> Optional[pd.DataFram
     df = pd.DataFrame(matrix, columns=feature_cols)
     meta_df = pd.DataFrame(meta, columns=['filename', 'subset_corpus', 'label'])
     df = pd.concat([meta_df, df], axis=1)
-    logger.info(f"  Enhanced-UD: {len(df)} docs, {len(top_rules)} features (top-{top_k} regras)")
+    logger.info(f"  Enhanced-UD: {len(df)} docs, {len(top_rules)} features (top-{top_k} rules)")
     return df
 
 
 def load_syllables(csv_path: Path) -> Optional[pd.DataFrame]:
     """Le contagem_silabas/.../estatisticas_silabas_nltk.csv e padroniza chaves."""
     if not csv_path.exists():
-        logger.warning(f"Silabas CSV nao encontrado: {csv_path}")
+        logger.warning(f"Syllables CSV not found: {csv_path}")
         return None
 
     df = pd.read_csv(csv_path)
-    df = df.rename(columns={'arquivo': 'filename'})
+    df = df.rename(columns={'arquivo': 'filename'})  # upstream column name
 
-    mapping = df['dataset'].map(SILABAS_DATASET_MAP)
+    mapping = df['dataset'].map(SYLLABLES_DATASET_MAP)
     df = df.assign(
         subset_corpus=mapping.map(lambda x: x[0] if isinstance(x, tuple) else None),
         label=mapping.map(lambda x: x[1] if isinstance(x, tuple) else None),
@@ -529,14 +532,15 @@ def load_syllables(csv_path: Path) -> Optional[pd.DataFrame]:
     df = df.dropna(subset=['subset_corpus', 'label'])
     df['label'] = df['label'].astype(int)
 
+    # Column names come from the upstream CSV and are kept verbatim.
     keep = ['media_silabas_por_sentenca', 'media_silabas_por_palavra']
     missing = [c for c in keep if c not in df.columns]
     if missing:
-        logger.warning(f"  Silabas: colunas esperadas ausentes: {missing}")
+        logger.warning(f"  Syllables: expected columns missing: {missing}")
         return None
     df = df[['filename', 'subset_corpus', 'label'] + keep]
     df = df.rename(columns={c: f"syll__{c}" for c in keep})
-    logger.info(f"  Silabas: {len(df)} linhas, {len(keep)} features")
+    logger.info(f"  Syllables: {len(df)} rows, {len(keep)} features")
     return df
 
 
@@ -556,14 +560,14 @@ def _pos_counts_from_file(path: Path) -> Dict[str, int]:
 def load_pos_tagger(root: Path) -> Optional[pd.DataFrame]:
     """Le tagger_results/*/* e produz frequencia normalizada por UPOS (vetor por doc)."""
     if not root.exists():
-        logger.warning(f"POS-tagger root nao encontrado: {root}")
+        logger.warning(f"POS-tagger root not found: {root}")
         return None
 
     rows = []
     for (top, mid), (corpus, label) in POS_TAGGER_FOLDER_MAP.items():
         folder = root / top / mid
         if not folder.exists():
-            logger.warning(f"  POS-tagger ausente: {folder}")
+            logger.warning(f"  POS-tagger folder missing: {folder}")
             continue
         files = list(folder.rglob('*.txt'))
         for path in files:
@@ -575,7 +579,7 @@ def load_pos_tagger(root: Path) -> Optional[pd.DataFrame]:
             for tag in UPOS_TAGS:
                 row[f"pos__{tag}"] = counts.get(tag, 0) / total
             rows.append(row)
-        logger.info(f"  POS-tagger {top}/{mid}: {len(files)} arquivos")
+        logger.info(f"  POS-tagger {top}/{mid}: {len(files)} files")
 
     if not rows:
         return None
@@ -584,20 +588,22 @@ def load_pos_tagger(root: Path) -> Optional[pd.DataFrame]:
     return df
 
 
+# Accepts both the legacy Portuguese labels and the English ones currently
+# emitted by ed_rules/main.py::_write_per_file_stats.
 _PARSER_BLOCK_RE = re.compile(
     r"\[\d+\]\s+(?P<file>\S+?)\.conllu\s*\n"
     r"-{3,}\s*\n"
-    r"\s*Caminho:\s*(?P<subset>fake_[a-z_]+)\\[^\n]*\n"
-    r"\s*Sentenças:\s*(?P<sentences>\d+)\s*\n"
-    r"\s*Regras totais:\s*(?P<total>\d+)\s*\n"
-    r"\s*Regras únicas:\s*(?P<unique>\d+)",
+    r"\s*(?:Caminho|Path):\s*(?P<subset>fake_[a-z_]+)\\[^\n]*\n"
+    r"\s*(?:Sentenças|Sentences):\s*(?P<sentences>\d+)\s*\n"
+    r"\s*(?:Regras totais|Total rules):\s*(?P<total>\d+)\s*\n"
+    r"\s*(?:Regras únicas|Unique rules):\s*(?P<unique>\d+)",
     re.UNICODE,
 )
 
 
 def _parse_parser_stats_file(path: Path) -> List[Dict]:
     if not path.exists():
-        logger.warning(f"  parser stats ausente: {path}")
+        logger.warning(f"  parser stats missing: {path}")
         return []
     text = path.read_text(encoding='utf-8', errors='replace')
     rows = []
@@ -646,12 +652,12 @@ def _count_bigrams_in_text(text: str, bigrams: List[Tuple[str, str]]) -> Dict[Tu
 def load_sage_terms(csv_path: Path, corpus_dirs: Dict[str, Path]) -> Optional[pd.DataFrame]:
     """Conta ocorrencias dos bigramas distintivos do SAGE em cada doc do corpus."""
     if not csv_path.exists():
-        logger.warning(f"SAGE CSV nao encontrado: {csv_path}")
+        logger.warning(f"SAGE CSV not found: {csv_path}")
         return None
 
     terms_df = pd.read_csv(csv_path, encoding='utf-8-sig')
-    if 'termo' not in terms_df.columns:
-        logger.warning(f"SAGE CSV sem coluna 'termo': {csv_path}")
+    if 'termo' not in terms_df.columns:  # upstream column name, kept verbatim
+        logger.warning(f"SAGE CSV has no 'termo' column: {csv_path}")
         return None
     terms_raw = terms_df['termo'].astype(str).str.lower().str.strip().tolist()
     bigrams: List[Tuple[str, str]] = []
@@ -666,7 +672,7 @@ def load_sage_terms(csv_path: Path, corpus_dirs: Dict[str, Path]) -> Optional[pd
         seen.add(key)
         bigrams.append(key)
     if not bigrams:
-        logger.warning("SAGE: nenhum bigrama valido encontrado")
+        logger.warning("SAGE: no valid bigram found")
         return None
 
     feature_names = [f"sage__{a}_{b}" for (a, b) in bigrams]
@@ -674,7 +680,7 @@ def load_sage_terms(csv_path: Path, corpus_dirs: Dict[str, Path]) -> Optional[pd
     rows = []
     for subset_name, dirpath in corpus_dirs.items():
         if not dirpath.exists():
-            logger.warning(f"  SAGE: corpus dir ausente: {dirpath}")
+            logger.warning(f"  SAGE: corpus dir missing: {dirpath}")
             continue
         corpus = SUBSET_TO_CORPUS[subset_name]
         label = 1 if subset_name.endswith('_llm') else 0
@@ -683,14 +689,14 @@ def load_sage_terms(csv_path: Path, corpus_dirs: Dict[str, Path]) -> Optional[pd
             try:
                 text = path.read_text(encoding='utf-8', errors='replace')
             except Exception as exc:
-                logger.warning(f"    erro lendo {path}: {exc}")
+                logger.warning(f"    error reading {path}: {exc}")
                 continue
             counts = _count_bigrams_in_text(text, bigrams)
             row = {'filename': path.name, 'subset_corpus': corpus, 'label': label}
             for (a, b), name in zip(bigrams, feature_names):
                 row[name] = counts[(a, b)]
             rows.append(row)
-        logger.info(f"  SAGE scan {subset_name}: {len(files)} arquivos")
+        logger.info(f"  SAGE scan {subset_name}: {len(files)} files")
 
     if not rows:
         return None
@@ -702,17 +708,17 @@ def load_sage_terms(csv_path: Path, corpus_dirs: Dict[str, Path]) -> Optional[pd
 def merge_feature_frames(frames: List[pd.DataFrame]) -> pd.DataFrame:
     """Inner join sequencial pelas chaves (filename, subset_corpus, label)."""
     if not frames:
-        raise ValueError("Nenhuma fonte de features fornecida")
+        raise ValueError("No feature source was provided")
     base = frames[0]
     for nxt in frames[1:]:
         before = len(base)
         base = base.merge(nxt, on=['filename', 'subset_corpus', 'label'], how='inner')
-        logger.info(f"  Merge: {before} -> {len(base)} (apos juntar {nxt.shape[1] - 3} colunas)")
+        logger.info(f"  Merge: {before} -> {len(base)} (after joining {nxt.shape[1] - 3} columns)")
     return base
 
 
 # =============================================================================
-# BERT EMBEDDINGS (com cache)
+# BERT EMBEDDINGS (cached)
 # =============================================================================
 
 class BERTEmbeddingExtractor:
@@ -726,7 +732,7 @@ class BERTEmbeddingExtractor:
         self.device = device or ('cuda' if torch.cuda.is_available() else 'cpu')
         self.model_name = model_name
 
-        logger.info(f"  Carregando BERT '{model_name}' em {self.device}...")
+        logger.info(f"  Loading BERT '{model_name}' on {self.device}...")
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         self.model = AutoModel.from_pretrained(model_name)
         self.model.to(self.device)
@@ -778,7 +784,7 @@ def load_paired_texts(splits: Dict, corpus_dirs: Dict[str, Path]) -> Dict[str, L
         else:
             l_dir = corpus_dirs.get(f"{corpus}_llm")
         if h_dir is None or l_dir is None or not h_dir.exists() or not l_dir.exists():
-            logger.warning(f"  Corpus dirs ausentes para {corpus}: {h_dir}, {l_dir}")
+            logger.warning(f"  Corpus dirs missing for {corpus}: {h_dir}, {l_dir}")
             continue
         for kind in ('train', 'test'):
             loaded, missing = 0, 0
@@ -791,7 +797,7 @@ def load_paired_texts(splits: Dict, corpus_dirs: Dict[str, Path]) -> Dict[str, L
                     h = hp.read_text(encoding='utf-8').strip()
                     l = lp.read_text(encoding='utf-8').strip()
                 except Exception as exc:
-                    logger.warning(f"    erro lendo {fn} em {corpus}: {exc}")
+                    logger.warning(f"    error reading {fn} in {corpus}: {exc}")
                     missing += 1
                     continue
                 if h and l:
@@ -799,7 +805,7 @@ def load_paired_texts(splits: Dict, corpus_dirs: Dict[str, Path]) -> Dict[str, L
                     loaded += 1
                 else:
                     missing += 1
-            logger.info(f"  {corpus} {kind}: {loaded} pares carregados, {missing} ausentes")
+            logger.info(f"  {corpus} {kind}: {loaded} pairs loaded, {missing} missing")
     return result
 
 
@@ -829,17 +835,17 @@ def get_or_compute_embeddings(
         arr = np.load(cache_path)
         if arr.shape[0] == len(texts):
             return arr
-        logger.warning(f"  Cache invalido (shape mismatch), recomputando...")
+        logger.warning(f"  Invalid cache (shape mismatch), recomputing...")
 
     extractor = BERTEmbeddingExtractor(model_name)
     arr = extractor.extract(texts, max_length=max_length, batch_size=batch_size)
     np.save(cache_path, arr)
-    logger.info(f"  Embeddings salvos em {cache_path.name} ({arr.shape})")
+    logger.info(f"  Embeddings saved to {cache_path.name} ({arr.shape})")
     return arr
 
 
 # =============================================================================
-# TREINAMENTO / AVALIACAO (genericos)
+# TRAINING / EVALUATION (generic)
 # =============================================================================
 
 def count_grid_combinations(param_grid: Dict) -> int:
@@ -856,17 +862,17 @@ def train_with_grid_search(clf_type: str, X, y, cv=5, scoring='f1_weighted', n_j
         n_groups = len(set(groups))
         n_splits = min(cv, n_groups)
         cv_obj = GroupKFold(n_splits=n_splits)
-        logger.info(f"  Grid Search {clf_type}: {n_comb} combinacoes, GroupKFold n_splits={n_splits} ({n_groups} grupos)")
+        logger.info(f"  Grid Search {clf_type}: {n_comb} combinations, GroupKFold n_splits={n_splits} ({n_groups} groups)")
     else:
         cv_obj = cv
-        logger.info(f"  Grid Search {clf_type}: {n_comb} combinacoes, cv={cv}")
+        logger.info(f"  Grid Search {clf_type}: {n_comb} combinations, cv={cv}")
     gs = GridSearchCV(
         estimator=copy.deepcopy(config['estimator']),
         param_grid=config['param_grid'],
         cv=cv_obj, scoring=scoring, n_jobs=n_jobs, refit=True
     )
     gs.fit(X, y, groups=groups) if groups is not None else gs.fit(X, y)
-    logger.info(f"  Melhores params: {gs.best_params_}")
+    logger.info(f"  Best params: {gs.best_params_}")
     logger.info(f"  CV score: {gs.best_score_:.4f}")
     cv_results = {
         'best_score': float(gs.best_score_),
@@ -890,16 +896,16 @@ def evaluate(clf, X, y):
 def save_confusion_matrix(cm: np.ndarray, output_path: Path, title: str):
     plt.figure(figsize=(8, 6))
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues',
-                xticklabels=['Humano', 'LLM'], yticklabels=['Humano', 'LLM'])
-    plt.xlabel('Predito'); plt.ylabel('Real'); plt.title(title)
+                xticklabels=['Human', 'LLM'], yticklabels=['Human', 'LLM'])
+    plt.xlabel('Predicted'); plt.ylabel('Actual'); plt.title(title)
     plt.tight_layout()
     output_path.parent.mkdir(parents=True, exist_ok=True)
     plt.savefig(output_path, dpi=150); plt.close()
-    logger.info(f"  CM salva em {output_path}")
+    logger.info(f"  Confusion matrix saved to {output_path}")
 
 
 def save_misclassified(keys, y_true, y_pred, output_path: Path, experiment: str, probs=None) -> Dict:
-    label_names = {0: 'Humano', 1: 'LLM'}
+    label_names = {0: 'Human', 1: 'LLM'}
     errors = []
     for i, (key, t, p) in enumerate(zip(keys, y_true, y_pred)):
         if t == p:
@@ -912,7 +918,7 @@ def save_misclassified(keys, y_true, y_pred, output_path: Path, experiment: str,
             'true_label_name': label_names[int(t)],
             'predicted_label': int(p),
             'predicted_label_name': label_names[int(p)],
-            'error_type': 'Falso Positivo' if p == 1 else 'Falso Negativo',
+            'error_type': 'False Positive' if p == 1 else 'False Negative',
         }
         if probs is not None:
             entry['confidence'] = float(probs[i][p])
@@ -923,15 +929,15 @@ def save_misclassified(keys, y_true, y_pred, output_path: Path, experiment: str,
         'experiment': experiment,
         'total_samples': len(keys),
         'total_errors': len(errors),
-        'false_positives': sum(1 for e in errors if e['error_type'] == 'Falso Positivo'),
-        'false_negatives': sum(1 for e in errors if e['error_type'] == 'Falso Negativo'),
+        'false_positives': sum(1 for e in errors if e['error_type'] == 'False Positive'),
+        'false_negatives': sum(1 for e in errors if e['error_type'] == 'False Negative'),
         'error_rate': len(errors) / len(keys) if keys else 0,
         'misclassified': errors,
     }
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with open(output_path, 'w', encoding='utf-8') as fh:
         json.dump(result, fh, indent=2, ensure_ascii=False)
-    logger.info(f"  Erros salvos em {output_path} (n={len(errors)})")
+    logger.info(f"  Errors saved to {output_path} (n={len(errors)})")
     return result
 
 
@@ -980,9 +986,9 @@ class LinguisticFeaturesPipeline:
     ):
         self.exp_dir = exp_dir
         self.feature_mode = feature_mode
-        # Rotulo usado nos nomes de arquivo/experimento. Por padrao e o
-        # feature_mode (combined/linguistic/embedding); a classificacao por
-        # modulo sobrescreve com "module_<modulo>" para nao colidir os outputs.
+        # Label used in the experiment/file names. Defaults to feature_mode
+        # (combined/linguistic/embedding); the per-module classification
+        # overrides it with "module_<module>" so the outputs do not collide.
         self.experiment_label = experiment_label or feature_mode
         self.results_root = results_root
         self.feature_groups = feature_groups or [
@@ -1015,7 +1021,7 @@ class LinguisticFeaturesPipeline:
             logger.info(f"  bert_model={bert_model} ({self.bert_model_name})")
         logger.info(f"  cv_folds={cv_folds}")
 
-    # ---- Carregamento de features linguisticas ----
+    # ---- Loading the linguistic features ----
 
     def _load_linguistic_frame(self) -> Optional[pd.DataFrame]:
         frames = []
@@ -1052,7 +1058,7 @@ class LinguisticFeaturesPipeline:
             return None
         return merge_feature_frames(frames)
 
-    # ---- Montagem das matrizes de treino/teste ----
+    # ---- Assembling the train/test matrices ----
 
     def assemble_matrices(self, splits: Dict) -> Tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray,
                                                        List[Tuple[str, str, int]],
@@ -1064,15 +1070,15 @@ class LinguisticFeaturesPipeline:
         Cada key e (filename, subset_corpus, label). Linhas estao alinhadas com keys.
         """
         train_keys_all, test_keys_all = splits_to_keys(splits)
-        logger.info(f"  Splits: {len(train_keys_all)} train, {len(test_keys_all)} test (instancias)")
+        logger.info(f"  Splits: {len(train_keys_all)} train, {len(test_keys_all)} test (instances)")
 
         feat_df = None
         feat_cols: List[str] = []
         if self.feature_mode in ('linguistic', 'combined'):
-            logger.info("  Carregando features linguisticas...")
+            logger.info("  Loading the linguistic features...")
             feat_df = self._load_linguistic_frame()
             if feat_df is None:
-                raise RuntimeError("Nenhuma feature linguistica carregada")
+                raise RuntimeError("No linguistic feature was loaded")
             feat_df = feat_df.set_index(['filename', 'subset_corpus', 'label'])
             feat_cols = list(feat_df.columns)
 
@@ -1133,8 +1139,8 @@ class LinguisticFeaturesPipeline:
             dim = emb_train.shape[1]
             feature_names.extend([f"bert_{self.bert_model_key}__{i}" for i in range(dim)])
 
-        logger.info(f"  Matriz final: X_train={X_train.shape}, X_test={X_test.shape}")
-        logger.info(f"  Feature names: {len(feature_names)} (esperado {X_train.shape[1]})")
+        logger.info(f"  Final matrices: X_train={X_train.shape}, X_test={X_test.shape}")
+        logger.info(f"  Feature names: {len(feature_names)} (expected {X_train.shape[1]})")
         return X_train, y_train, X_test, y_test, train_keys, test_keys, feature_names
 
     # ---- Embeddings ----
@@ -1143,11 +1149,11 @@ class LinguisticFeaturesPipeline:
         """Carrega textos pareados, trunca, e extrai embeddings (com cache)."""
         from transformers import AutoTokenizer
 
-        logger.info("  Carregando textos pareados do corpus...")
+        logger.info("  Loading the paired corpus texts...")
         paired = load_paired_texts(splits, self.corpus_dirs)
-        logger.info(f"  Pares: train={len(paired['train'])}, test={len(paired['test'])}")
+        logger.info(f"  Pairs: train={len(paired['train'])}, test={len(paired['test'])}")
         if not paired['train'] or not paired['test']:
-            raise RuntimeError("Sem pares de treino/teste — verifique splits e corpus_dirs")
+            raise RuntimeError("No train/test pairs — check the splits and corpus_dirs")
 
         tok = AutoTokenizer.from_pretrained(self.bert_model_name)
 
@@ -1161,7 +1167,7 @@ class LinguisticFeaturesPipeline:
 
         train_keys, train_texts = _expand_and_truncate(paired['train'])
         test_keys, test_texts = _expand_and_truncate(paired['test'])
-        logger.info(f"  Apos truncagem pareada: {len(train_texts)} train texts, {len(test_texts)} test texts")
+        logger.info(f"  After paired truncation: {len(train_texts)} train texts, {len(test_texts)} test texts")
 
         emb_train = get_or_compute_embeddings(
             train_keys, train_texts, self.bert_model_name, self.cache_dir
@@ -1171,7 +1177,7 @@ class LinguisticFeaturesPipeline:
         )
         return emb_train, emb_test, train_keys, test_keys
 
-    # ---- Pipeline principal ----
+    # ---- Main pipeline ----
 
     def run(
         self,
@@ -1181,7 +1187,7 @@ class LinguisticFeaturesPipeline:
         top_k_features: Optional[int] = None,
     ) -> Dict:
         logger.info("=" * 70)
-        logger.info(f"EXECUCAO: mode={self.feature_mode} | classifier={classifier_type}")
+        logger.info(f"RUN: mode={self.feature_mode} | classifier={classifier_type}")
         logger.info("=" * 70)
 
         splits = load_split_files(self.exp_dir)
@@ -1191,7 +1197,7 @@ class LinguisticFeaturesPipeline:
         X_train, y_train, X_test, y_test, train_keys, test_keys, feature_names = self.assemble_matrices(splits)
 
         if normalize_features:
-            logger.info("  Aplicando StandardScaler")
+            logger.info("  Applying StandardScaler")
             scaler = StandardScaler()
             X_train = scaler.fit_transform(X_train)
             X_test = scaler.transform(X_test)
@@ -1251,7 +1257,7 @@ class LinguisticFeaturesPipeline:
         out_json = results_dir / f"{tag}.json"
         with open(out_json, 'w', encoding='utf-8') as fh:
             json.dump(results, fh, indent=2, ensure_ascii=False)
-        logger.info(f"  Resultados salvos em {out_json}")
+        logger.info(f"  Results saved to {out_json}")
 
         cm_path = results_dir / "confusion_matrices" / f"{tag}_cm.png"
         save_confusion_matrix(cm, cm_path, f"{self.experiment_label.upper()} + {classifier_type.upper()}")
@@ -1272,12 +1278,12 @@ class LinguisticFeaturesPipeline:
 
 
 # =============================================================================
-# COMPARACAO
+# COMPARISON
 # =============================================================================
 
 def print_comparison_table(results: Dict, title: str = ""):
     logger.info("\n" + "=" * 85)
-    logger.info(f"COMPARACAO {title}".strip())
+    logger.info(f"COMPARISON {title}".strip())
     logger.info("=" * 85)
     logger.info(f"{'Classifier':<25} {'CV Score':<12} {'Test F1':<12} {'Test Acc':<12}")
     logger.info("-" * 85)
@@ -1298,35 +1304,35 @@ def print_comparison_table(results: Dict, title: str = ""):
 
 def parse_args():
     p = argparse.ArgumentParser(
-        description='Linguistic features + BERT embeddings para deteccao humano vs LLM',
+        description='Linguistic features + BERT embeddings for human vs LLM detection',
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
-Exemplos:
+Examples:
   python linguistic_features.py --feature-mode combined --classifier all
   python linguistic_features.py --feature-mode linguistic --features nilcmetrics,liwc
   python linguistic_features.py --feature-mode embedding --bert-model bertimbau --classifier svm
         """,
     )
     p.add_argument('--feature-mode', choices=['linguistic', 'embedding', 'combined'],
-                   default='combined', help='Tipo de vetor de entrada (default: combined)')
+                   default='combined', help='Input vector type (default: combined)')
     p.add_argument('--classifier', default='all',
                    choices=list(CLASSIFIERS_CONFIG.keys()) + ['all'])
     p.add_argument('--features', default='all',
-                   help=('Grupos linguisticos: nilcmetrics,liwc,enhanced_ud,'
-                         'syllables,pos_tagger,parser_stats,sage_terms ou all'))
+                   help=('Linguistic groups: nilcmetrics,liwc,enhanced_ud,'
+                         'syllables,pos_tagger,parser_stats,sage_terms or all'))
     p.add_argument('--bert-model', default='bertimbau', choices=list(BERT_MODELS.keys()))
     p.add_argument('--corpus-root', type=str, default=None,
-                   help='Override CARACT_ROOT (default: ../noticias_falsas_humano_maquina_caracterizacao)')
+                   help='Override the corpus root (default: linguistic_features/data/corpus)')
     p.add_argument('--ud-top-k', type=int, default=500,
-                   help='Top-K regras Enhanced-UD mais frequentes (default: 500)')
+                   help='Top-K most frequent Enhanced-UD rules (default: 500)')
     p.add_argument('--top-k', type=int, default=None,
-                   help='SelectKBest sobre o vetor final')
+                   help='SelectKBest over the final vector')
     p.add_argument('--no-normalize', action='store_true')
     p.add_argument('--no-grid-search', action='store_true')
     p.add_argument('--cv-folds', type=int, default=5)
     p.add_argument('--keep-nilc-absolute', action='store_true',
-                   help='Desativa o blacklist Tier A (mantem words/sentences/paragraphs/'
-                        'subtitles/logic_operators/*_clauses no NILC). Use para ablacao.')
+                   help='Disable the Tier A blacklist (keeps words/sentences/paragraphs/'
+                        'subtitles/logic_operators/*_clauses in NILC). Use for ablation.')
     return p.parse_args()
 
 
@@ -1390,7 +1396,7 @@ def main():
         comp_file.parent.mkdir(parents=True, exist_ok=True)
         with open(comp_file, 'w', encoding='utf-8') as fh:
             json.dump(comp, fh, indent=2, ensure_ascii=False)
-        logger.info(f"\nComparacao salva em: {comp_file}")
+        logger.info(f"\nComparison saved to: {comp_file}")
         print_comparison_table(all_results, title=args.feature_mode.upper())
 
 

@@ -45,8 +45,8 @@ def apply_eud(
         raise FileNotFoundError(input_conllu)
     if not grs_path.exists():
         raise FileNotFoundError(
-            f"Arquivo .grs não encontrado: {grs_path}. "
-            "Clone o eud-portugues em third_party/."
+            f".grs file not found: {grs_path}. "
+            "Clone eud-portugues into third_party/."
         )
 
     conllu_text = input_conllu.read_text(encoding="utf-8")
@@ -79,19 +79,19 @@ def apply_eud(
         )
         if result.returncode != 0:
             raise RuntimeError(
-                f"grew transform falhou ({result.returncode}) em {input_conllu.name}:\n"
+                f"grew transform failed ({result.returncode}) on {input_conllu.name}:\n"
                 f"STDERR:\n{result.stderr}"
             )
         if not os.path.exists(tmp_out_path):
             raise RuntimeError(
-                f"grew transform não gerou saída para {input_conllu.name}.\n"
+                f"grew transform produced no output for {input_conllu.name}.\n"
                 f"STDOUT: {result.stdout[:500]}\nSTDERR: {result.stderr[:500]}"
             )
         out_text = Path(tmp_out_path).read_text(encoding="utf-8").strip() + "\n"
         if "\t" not in out_text:
             raise RuntimeError(
-                f"Saída sem tokens para {input_conllu.name}.\n"
-                f"Conteúdo (truncado): {out_text[:500]}"
+                f"Output has no tokens for {input_conllu.name}.\n"
+                f"Content (truncated): {out_text[:500]}"
             )
         output_conllu.write_text(out_text, encoding="utf-8")
     finally:
@@ -114,7 +114,7 @@ def apply_eud_batch(
     output_dir = Path(output_dir)
     files = sorted(input_dir.glob("*.conllu"))
     if not files:
-        print(f"AVISO: nenhum .conllu em {input_dir}")
+        print(f"WARNING: no .conllu file in {input_dir}")
         return []
 
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -137,12 +137,12 @@ def apply_eud_batch(
             processed.append(dst)
         except Exception as e:
             msg = f"{src.name}: {e}"
-            print(f"  ERRO em {src.name}: {e}")
+            print(f"  ERROR on {src.name}: {e}")
             errors.append(msg)
 
     if errors:
         error_log.write_text("\n".join(errors) + "\n", encoding="utf-8")
-        print(f"\n  {len(errors)} erro(s) registrado(s) em {error_log}")
+        print(f"\n  {len(errors)} error(s) logged to {error_log}")
 
     return processed
 
@@ -153,13 +153,13 @@ def main(argv):
     parser.add_argument("output_dir", type=Path)
     parser.add_argument("--strategy", default=DEFAULT_STRATEGY)
     parser.add_argument("--grs", type=Path, default=DEFAULT_GRS)
-    parser.add_argument("--no-skip", action="store_true", help="Reprocessa tudo")
+    parser.add_argument("--no-skip", action="store_true", help="Reprocess everything")
     args = parser.parse_args(argv[1:])
 
     if shutil.which("grew") is None:
         print(
-            "AVISO: comando `grew` não encontrado no PATH. "
-            "Instale via https://grew.fr/usage/install/ antes de prosseguir."
+            "WARNING: the `grew` command was not found on PATH. "
+            "Install it from https://grew.fr/usage/install/ before continuing."
         )
 
     out = apply_eud_batch(
@@ -169,7 +169,7 @@ def main(argv):
         grs_path=args.grs,
         skip_existing=not args.no_skip,
     )
-    print(f"\n{len(out)} arquivo(s) processado(s) em {args.output_dir}")
+    print(f"\n{len(out)} file(s) processed into {args.output_dir}")
     return 0
 
 

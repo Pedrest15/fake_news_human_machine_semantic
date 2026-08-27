@@ -62,7 +62,7 @@ def search_rule(target_rule, eud_dir, groups, include_upos, include_deprel,
     for group in groups:
         group_dir = Path(eud_dir) / group
         if not group_dir.is_dir():
-            print(f"[AVISO] Diretório não encontrado: {group_dir}", file=sys.stderr)
+            print(f"[WARNING] directory not found: {group_dir}", file=sys.stderr)
             continue
 
         conllu_files = sorted(group_dir.glob("*.conllu"))
@@ -76,7 +76,7 @@ def search_rule(target_rule, eud_dir, groups, include_upos, include_deprel,
                     enhanced_only=enhanced_only,
                 )
             except Exception as e:
-                print(f"[ERRO] {file_path}: {e}", file=sys.stderr)
+                print(f"[ERROR] {file_path}: {e}", file=sys.stderr)
                 continue
 
             for h in hits:
@@ -97,14 +97,14 @@ def search_rule(target_rule, eud_dir, groups, include_upos, include_deprel,
 def format_text_report(results, target_rule, files_scanned):
     lines = []
     lines.append("=" * 100)
-    lines.append(f"Regra buscada: {target_rule}")
-    lines.append(f"Arquivos .conllu escaneados: {files_scanned}")
-    lines.append(f"Sentenças com ocorrência: {len(results)}")
-    lines.append(f"Total de ocorrências: {sum(r['matches'] for r in results)}")
+    lines.append(f"Rule searched: {target_rule}")
+    lines.append(f".conllu files scanned: {files_scanned}")
+    lines.append(f"Sentences with at least one hit: {len(results)}")
+    lines.append(f"Total occurrences: {sum(r['matches'] for r in results)}")
     lines.append("=" * 100)
 
     if not results:
-        lines.append("\nNenhuma sentença encontrada.")
+        lines.append("\nNo sentence found.")
         return "\n".join(lines)
 
     by_group = {}
@@ -112,41 +112,41 @@ def format_text_report(results, target_rule, files_scanned):
         by_group.setdefault(r["group"], []).append(r)
 
     for group, items in by_group.items():
-        lines.append(f"\n[{group}] {len(items)} sentença(s)")
+        lines.append(f"\n[{group}] {len(items)} sentence(s)")
         lines.append("-" * 100)
         for r in items:
-            lines.append(f"Arquivo: {r['file_path']}")
-            lines.append(f"Sent ID: {r['sentence_id']}  (ocorrências: {r['matches']})")
-            lines.append(f"Texto:   {r['sentence_text']}")
+            lines.append(f"File:    {r['file_path']}")
+            lines.append(f"Sent ID: {r['sentence_id']}  (occurrences: {r['matches']})")
+            lines.append(f"Text:    {r['sentence_text']}")
             lines.append("")
     return "\n".join(lines)
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Encontra sentenças e arquivos onde uma regra ED aparece.",
+        description="Find the sentences and files where an ED rule occurs.",
     )
-    parser.add_argument("rule", help='Regra ED a buscar, ex: "NOUN(*, NOUN/nmod:de)"')
+    parser.add_argument("rule", help='ED rule to search for, e.g. "NOUN(*, NOUN/nmod:de)"')
     parser.add_argument(
         "--eud-dir", default=str(DEFAULT_EUD_DIR),
-        help=f"Diretório com subpastas de grupos (default: {DEFAULT_EUD_DIR})",
+        help=f"Directory holding the per-group subfolders (default: {DEFAULT_EUD_DIR})",
     )
     parser.add_argument(
         "--group", action="append", choices=DEFAULT_GROUPS,
-        help="Restringe a um grupo (pode ser usado múltiplas vezes). Default: todos.",
+        help="Restrict to one group (may be repeated). Default: every group.",
     )
     parser.add_argument("--limit", type=int, default=None,
-                        help="Limita o número total de sentenças retornadas.")
+                        help="Cap the total number of sentences returned.")
     parser.add_argument("--output", default=None,
-                        help="Arquivo de saída (default: stdout).")
+                        help="Output file (default: stdout).")
     parser.add_argument("--json", action="store_true",
-                        help="Exporta em JSON em vez de texto.")
+                        help="Export JSON instead of plain text.")
     parser.add_argument("--no-enhanced-only", action="store_true",
-                        help="Usa todas as regras (não apenas ED enhanced-only).")
+                        help="Use every rule, not just the enhanced-only ED ones.")
     parser.add_argument("--no-upos", action="store_true",
-                        help="Desativa include_upos.")
+                        help="Disable include_upos.")
     parser.add_argument("--no-deprel", action="store_true",
-                        help="Desativa include_deprel.")
+                        help="Disable include_deprel.")
     args = parser.parse_args()
 
     groups = args.group if args.group else DEFAULT_GROUPS
@@ -175,7 +175,7 @@ def main():
 
     if args.output:
         Path(args.output).write_text(output, encoding="utf-8")
-        print(f"Resultado salvo em: {args.output}")
+        print(f"Result saved to: {args.output}")
     else:
         print(output)
 

@@ -32,7 +32,7 @@ from sklearn.metrics import accuracy_score, f1_score
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
 
-# Permite executar como `python3 feature_diagnostic.py` ou como modulo.
+# Allows running either as `python3 feature_diagnostic.py` or as a module.
 SCRIPT_DIR = Path(__file__).resolve().parent
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
@@ -44,7 +44,7 @@ from linguistic_features import (  # noqa: E402
 
 RESULTS_DIR = SCRIPT_DIR / "results"
 
-# Grade inicial para a forward search.
+# Initial grid for the forward search.
 DEFAULT_K_GRID = [1, 2, 3, 5, 7, 10, 15, 20, 30, 50, 75, 100, 150, 200, 300, 400, 600]
 
 GROUP_PREFIXES = (
@@ -85,12 +85,12 @@ def compute_static_metrics(X_train: np.ndarray, y_train: np.ndarray
     mi = mutual_info_classif(X_train, y_train, random_state=42)
     logger.info("  done in %.1fs", time.time() - t0)
 
-    logger.info("F-statistic ANOVA (univariada)...")
+    logger.info("ANOVA F-statistic (univariate)...")
     f_stat, p_val = f_classif(X_train, y_train)
     f_stat = np.nan_to_num(f_stat, nan=0.0)
     p_val = np.nan_to_num(p_val, nan=1.0)
 
-    logger.info("Pearson correlation sinalizada...")
+    logger.info("Signed Pearson correlation...")
     corr = np.zeros(n)
     for i in range(n):
         col = X_train[:, i]
@@ -104,7 +104,7 @@ def univariate_f1(X_train: np.ndarray, y_train: np.ndarray,
                   X_test: np.ndarray, y_test: np.ndarray) -> np.ndarray:
     n = X_train.shape[1]
     out = np.zeros(n)
-    logger.info("F1 univariado no teste para %d features...", n)
+    logger.info("Univariate test-set F1 for %d features...", n)
     t0 = time.time()
     for i in range(n):
         if X_train[:, i].std() == 0:
@@ -138,7 +138,7 @@ def fit_svm_topk(X_train: np.ndarray, y_train: np.ndarray,
 def forward_curve(X_train, y_train, X_test, y_test,
                   sorted_idx: np.ndarray, k_grid: List[int]) -> List[dict]:
     curve = []
-    logger.info("Forward search (curva) sobre k_grid=%s", k_grid)
+    logger.info("Forward search (curve) over k_grid=%s", k_grid)
     n = len(sorted_idx)
     for k in k_grid:
         if k > n:
@@ -154,7 +154,7 @@ def find_kmin(X_train, y_train, X_test, y_test,
               sorted_idx: np.ndarray, threshold: float, k_cap: int = 50
               ) -> Tuple[int, float]:
     """Procura linearmente k=1,2,... ate F1 >= threshold ou k>=k_cap."""
-    logger.info("Refino k_min com threshold=%.4f (cap=%d)", threshold, k_cap)
+    logger.info("Refining k_min with threshold=%.4f (cap=%d)", threshold, k_cap)
     for k in range(1, min(k_cap, len(sorted_idx)) + 1):
         f1, acc = fit_svm_topk(X_train, y_train, X_test, y_test, sorted_idx[:k])
         logger.info("  k=%-3d  F1=%.6f  acc=%.6f", k, f1, acc)
@@ -179,15 +179,15 @@ def main(argv: List[str]) -> int:
     p = argparse.ArgumentParser(description=__doc__,
                                 formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--threshold", type=float, default=0.9999,
-                   help="F1 minimo para considerar 'reproduzir F1=1' (default: 0.9999)")
+                   help="Minimum F1 to count as 'reproducing F1=1' (default: 0.9999)")
     p.add_argument("--k-cap", type=int, default=50,
-                   help="Limite superior do refino linear de k_min (default: 50)")
+                   help="Upper bound for the linear k_min refinement (default: 50)")
     p.add_argument("--out-dir", type=Path, default=RESULTS_DIR)
     args = p.parse_args(argv[1:])
 
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(message)s")
 
-    logger.info("Construindo pipeline linguistic (sem BERT)...")
+    logger.info("Building the linguistic pipeline (no BERT)...")
     pipeline = make_pipeline(SCRIPT_DIR)
 
     splits = load_split_files(SCRIPT_DIR)
@@ -195,13 +195,13 @@ def main(argv: List[str]) -> int:
         logger.info("  splits[%s] = train:%d test:%d",
                     c, len(parts["train"]), len(parts["test"]))
 
-    logger.info("Carregando matrizes (assemble_matrices)...")
+    logger.info("Loading the matrices (assemble_matrices)...")
     X_train, y_train, X_test, y_test, _, _, feature_names = pipeline.assemble_matrices(splits)
     logger.info("  X_train=%s  X_test=%s  n_features=%d",
                 X_train.shape, X_test.shape, len(feature_names))
-    logger.info("  contagem por grupo: %s", group_counts(feature_names))
+    logger.info("  count per group: %s", group_counts(feature_names))
 
-    logger.info("StandardScaler (fit em train, transform em test)...")
+    logger.info("StandardScaler (fit on train, transform on test)...")
     scaler = StandardScaler()
     X_train = scaler.fit_transform(X_train)
     X_test = scaler.transform(X_test)
@@ -217,7 +217,7 @@ def main(argv: List[str]) -> int:
 
     args.out_dir.mkdir(parents=True, exist_ok=True)
 
-    # CSV: todas as features, ranqueadas por univariate_f1
+    # CSV: every feature, ranked by univariate_f1
     csv_path = args.out_dir / "feature_diagnostic_ranking.csv"
     with csv_path.open("w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh)
@@ -237,7 +237,7 @@ def main(argv: List[str]) -> int:
             ])
     logger.info("CSV: %s", csv_path)
 
-    # JSON: sumario
+    # JSON: summary
     def topk(indices: List[int], k: int = 20) -> List[dict]:
         out = []
         for i in indices[:k]:
@@ -276,7 +276,7 @@ def main(argv: List[str]) -> int:
         json.dump(payload, fh, indent=2, ensure_ascii=False)
     logger.info("JSON: %s", json_path)
 
-    logger.info("Concluido. k_min=%d, F1@k_min=%.6f", k_min, f1_at_kmin)
+    logger.info("Done. k_min=%d, F1@k_min=%.6f", k_min, f1_at_kmin)
     return 0
 
 

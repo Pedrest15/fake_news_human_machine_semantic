@@ -46,7 +46,7 @@ class TextExtractor:
         dir_path = Path(dir_path)
 
         if not dir_path.exists():
-            print(f"  AVISO: Diretório não encontrado: {dir_path}")
+            print(f"  WARNING: directory not found: {dir_path}")
             return []
 
         files = sorted(dir_path.glob('*.txt'))

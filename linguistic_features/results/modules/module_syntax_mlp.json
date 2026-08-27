@@ -1,6 +1,6 @@
 {
-  "experiment": "module_sintaxe",
-  "classifier": "svm",
+  "experiment": "module_syntax",
+  "classifier": "mlp",
   "feature_mode": "linguistic",
   "feature_groups": [
     "syllables",
@@ -20,33 +20,36 @@
     "enabled": true,
     "cv_folds": 5,
     "best_params": {
-      "C": 10.0,
-      "gamma": "scale",
-      "kernel": "rbf"
+      "activation": "relu",
+      "alpha": 0.0001,
+      "hidden_layer_sizes": [
+        256,
+        128
+      ]
     },
-    "cv_score": 0.9396758133051042
+    "cv_score": 0.939547820204587
   },
   "test_results": {
-    "accuracy": 0.9444985394352483,
-    "f1": 0.9444834959572355,
-    "precision": 0.9445133736887108,
-    "recall": 0.9444985394352483
+    "accuracy": 0.9396299902629016,
+    "f1": 0.9396458195588419,
+    "precision": 0.9397258736776342,
+    "recall": 0.9396299902629016
   },
   "confusion_matrix": {
     "matrix": [
       [
-        913,
-        62
+        919,
+        56
       ],
       [
-        52,
-        1027
+        68,
+        1011
       ]
     ],
-    "tn": 913,
-    "fp": 62,
-    "fn": 52,
-    "tp": 1027
+    "tn": 919,
+    "fp": 56,
+    "fn": 68,
+    "tp": 1011
   },
   "feature_importance": null
 }

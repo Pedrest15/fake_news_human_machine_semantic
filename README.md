@@ -16,26 +16,6 @@ pipeline that combines all of them:
 Every module writes both machine-readable (CSV/JSON) and human-readable (TXT/MD)
 outputs, and the versioned result files are kept in the repository.
 
-## Results website
-
-An interactive summary of every result in this repository is published with GitHub
-Pages from the [`docs/`](docs/) folder.
-
-```bash
-# Regenerate docs/index.html from the committed result files
-python3 tools/build_docs.py
-
-# Preview locally
-python3 -m http.server -d docs 8000    # then open http://localhost:8000
-```
-
-The page is a single self-contained HTML file — no build step, no external assets.
-[`tools/build_docs.py`](tools/build_docs.py) reads the JSON/CSV artefacts and injects
-them into [`tools/docs_template.html`](tools/docs_template.html), so every number on
-the page traces back to a file in this repository. Re-run it whenever results change.
-
-To enable publishing: **Settings → Pages → Source: Deploy from a branch → `main` / `docs`**.
-
 ## Corpus
 
 Two paired fake-news corpora are used. For each human-written document there is a

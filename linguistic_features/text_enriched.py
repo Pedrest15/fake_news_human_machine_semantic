@@ -6,13 +6,15 @@ Concatena horizontalmente:
   - vetor de features linguisticas (NILC + LIWC + Enhanced UD + silabas + POS +
     SAGE), com Tier A+B do NILC e agregadores LIWC removidos por default.
 
-A truncagem pareada acontece em runtime com o tokenizador BERTimbau
-(`neuralmind/bert-base-portuguese-cased`), exatamente como nos experimentos
-BERT: para cada par humano/LLM do mesmo filename, calcula-se
+A truncagem pareada acontece em runtime com o tokenizador do encoder escolhido
+em --bert-model (default BERTimbau, `neuralmind/bert-base-portuguese-cased`),
+exatamente como nos experimentos com embeddings: para cada par humano/LLM do
+mesmo filename, calcula-se
   min_len = min(len_h_tokens, len_l_tokens, max_length - 2)
-em tokens WordPiece (subtracao reserva espaco para [CLS] e [SEP]), e ambas as
-versoes sao cortadas ao mesmo comprimento antes da vetorizacao. Garante
-comparabilidade direta entre baselines BERT, TF-IDF e BoW.
+em tokens do proprio tokenizador (a subtracao reserva os dois tokens especiais
+do inicio e do fim), e ambas as versoes sao cortadas ao mesmo comprimento antes
+da vetorizacao. Garante comparabilidade direta entre os baselines de embedding,
+TF-IDF e BoW, desde que o mesmo tokenizador seja usado nos dois lados.
 
 Cada documento (humano e LLM, uma linha cada) vira um vetor combinado:
   [tfidf_or_bow_text | standardized_linguistic_features]
@@ -24,7 +26,9 @@ Uso:
     python3 linguistic_features/text_enriched.py --vectorizer tfidf --classifier all
     python3 linguistic_features/text_enriched.py --vectorizer bow   --classifier svm
     python3 linguistic_features/text_enriched.py --vectorizer both  --classifier all
+    python3 linguistic_features/text_enriched.py --vectorizer tfidf --classifier all --no-linguistic
     python3 linguistic_features/text_enriched.py --vectorizer tfidf --classifier svm --max-length 256
+    python3 linguistic_features/text_enriched.py --vectorizer tfidf --bert-model norberto
 """
 from __future__ import annotations
 
@@ -32,6 +36,7 @@ import argparse
 import copy
 import json
 import logging
+import re
 import sys
 import time
 from collections import defaultdict
@@ -47,7 +52,7 @@ from sklearn.metrics import (
     accuracy_score, confusion_matrix, f1_score,
     precision_score, recall_score,
 )
-from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import GridSearchCV, GroupKFold
 from sklearn.neural_network import MLPClassifier
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
@@ -65,18 +70,54 @@ if str(SCRIPT_DIR) not in sys.path:
 from linguistic_features import (  # noqa: E402
     BERT_MODELS,
     CORPUS_DIRS_DEFAULT,
+    DEFAULT_BERT_MODEL_KEY,
+    DEFAULT_MAX_LENGTH,
     LinguisticFeaturesPipeline,
     load_split_files,
     save_misclassified,
+    splits_to_keys,
     truncate_pair_min_tokens,
 )
 
 RESULTS_DIR = SCRIPT_DIR / "results"
 
-# Same setting as the BERT path: 512 WordPiece tokens (minus the 2 reserved
-# for [CLS] and [SEP], following the BERT convention).
-DEFAULT_MAX_LENGTH = 512
-DEFAULT_BERT_MODEL = BERT_MODELS["bertimbau"]  # neuralmind/bert-base-portuguese-cased
+# DEFAULT_MAX_LENGTH is imported from linguistic_features so both scripts agree
+# on what "the default run" is: 512 tokens, minus the 2 reserved for the
+# opening/closing special tokens, following the BERT convention.
+DEFAULT_BERT_MODEL = BERT_MODELS[DEFAULT_BERT_MODEL_KEY]  # neuralmind/bert-base-portuguese-cased
+
+
+def resolve_bert_model(value: str) -> str:
+    """Aceita uma chave de BERT_MODELS (ex.: 'norberto') ou um id completo do HF."""
+    return BERT_MODELS.get(value, value)
+
+
+def bert_model_slug(bert_model_name: str) -> str:
+    """Nome curto do tokenizador, para rotular resultados e arquivos."""
+    for key, name in BERT_MODELS.items():
+        if name == bert_model_name:
+            return key
+    return re.sub(r'[^a-zA-Z0-9]+', '_', bert_model_name.split('/')[-1]).strip('_').lower()
+
+
+def experiment_prefix(vectorizer_kind: str, bert_model_name: str,
+                      max_length: int = DEFAULT_MAX_LENGTH,
+                      use_linguistic: bool = True) -> str:
+    """Prefixo dos arquivos de resultado.
+
+    Mantem os nomes historicos (`text_<vec>_linguistic`) para a configuracao
+    padrao (BERTimbau + 512 tokens) e acrescenta um sufixo para cada parametro
+    fora do default, para que uma bateria nova nao sobrescreva a anterior:
+    `text_tfidf_linguistic_norberto`, `text_tfidf_linguistic_len256`.
+    Sem features linguisticas (--no-linguistic) o sufixo e' `_only`:
+    `text_tfidf_only`.
+    """
+    prefix = f"text_{vectorizer_kind}_" + ("linguistic" if use_linguistic else "only")
+    if bert_model_name != DEFAULT_BERT_MODEL:
+        prefix = f"{prefix}_{bert_model_slug(bert_model_name)}"
+    if max_length != DEFAULT_MAX_LENGTH:
+        prefix = f"{prefix}_len{max_length}"
+    return prefix
 
 
 def build_corpus_dirs(corpus_dirs_str: Dict[str, Path]) -> Dict[Tuple[str, int], Path]:
@@ -168,7 +209,7 @@ logger = logging.getLogger("text_enriched")
 
 
 # =============================================================================
-# Runtime paired truncation (BERTimbau WordPiece)
+# Runtime paired truncation (tokenizer of the chosen encoder)
 # =============================================================================
 
 def _read_text(path: Path) -> Optional[str]:
@@ -186,14 +227,14 @@ def load_paired_truncated_texts(
     tokenizer: Any,
     max_length: int = DEFAULT_MAX_LENGTH,
 ) -> Tuple[List[str], List[int], Dict[str, int]]:
-    """Le textos originais e trunca pareadamente em runtime via BERTimbau.
+    """Le textos originais e trunca pareadamente em runtime via tokenizador.
 
     Para cada (filename, subset_corpus), carrega tanto a versao humana
-    (label=0) quanto a LLM (label=1), tokeniza com o tokenizador BERTimbau e
+    (label=0) quanto a LLM (label=1), tokeniza com o tokenizador recebido e
     calcula min_len = min(len_h_tokens, len_l_tokens, max_length - 2) em
-    tokens WordPiece (-2 reserva [CLS] e [SEP]). Ambas as versoes do par
-    sao cortadas ao mesmo comprimento e decodificadas de volta para texto,
-    garantindo paridade exata com os experimentos BERT.
+    tokens do tokenizador (-2 reserva os dois tokens especiais). Ambas as
+    versoes do par sao cortadas ao mesmo comprimento e decodificadas de volta
+    para texto, garantindo paridade exata com os experimentos de embedding.
 
     Pares onde uma das versoes esta ausente ou vazia sao descartados
     inteiros (nao basta truncar um lado sem o outro).
@@ -212,7 +253,7 @@ def load_paired_truncated_texts(
             continue
         pair_texts[(filename, subset_corpus)][label] = text
 
-    # Pass 2: for every complete pair, truncate via BERTimbau
+    # Pass 2: for every complete pair, truncate with the tokenizer
     # (truncate_pair_min_tokens) and store the decoded truncated text per label.
     pair_truncated: Dict[Tuple[str, str], Tuple[str, str, int]] = {}
     constraint_counts = {"human_shorter": 0, "llm_shorter": 0, "max_length_cap": 0}
@@ -285,21 +326,24 @@ def grid_combinations(grid: Dict) -> int:
     return n
 
 
-def train_with_grid(clf_type: str, X_train, y_train, cv: int):
+def train_with_grid(clf_type: str, X_train, y_train, cv: int, groups):
+    """GridSearchCV com GroupKFold: o par humano/LLM fica sempre no mesmo fold."""
     cfg = CLASSIFIERS_CONFIG[clf_type]
     n_combos = grid_combinations(cfg["param_grid"])
-    logger.info("  GridSearchCV: %s, %d combinations, cv=%d", clf_type, n_combos, cv)
+    n_splits = min(cv, len(set(groups)))
+    logger.info("  GridSearchCV: %s, %d combinations, GroupKFold n_splits=%d (%d groups)",
+                clf_type, n_combos, n_splits, len(set(groups)))
     grid = GridSearchCV(
         estimator=copy.deepcopy(cfg["estimator"]),
         param_grid=cfg["param_grid"],
-        cv=cv,
+        cv=GroupKFold(n_splits=n_splits),
         scoring="f1_weighted",
         n_jobs=-1,
         refit=True,
         verbose=0,
     )
     t0 = time.time()
-    grid.fit(X_train, y_train)
+    grid.fit(X_train, y_train, groups=groups)
     logger.info("  best params: %s", grid.best_params_)
     logger.info("  best CV score (f1_weighted): %.4f  (%.1fs)",
                 grid.best_score_, time.time() - t0)
@@ -354,31 +398,43 @@ def build_matrices(vectorizer_kind: str,
                    tokenizer: Any,
                    feature_groups: List[str],
                    corpus_dirs: Dict[Tuple[str, int], Path] = ORIGINAL_CORPUS_DIRS,
+                   use_linguistic: bool = True,
                    ):
     """Monta as matrizes train e test combinando texto + features linguisticas.
 
+    Com use_linguistic=False, a matriz contem apenas o vetor BoW/TF-IDF
+    (condicao sem features linguisticas); as chaves vem direto dos splits.
+
     Os textos sao carregados dos diretorios originais (corpus_dirs) e
-    truncados pareadamente em runtime via tokenizador BERTimbau, ate
-    max_length - 2 tokens WordPiece (paridade com experimentos BERT).
+    truncados pareadamente em runtime pelo tokenizador recebido, ate
+    max_length - 2 tokens (paridade com os experimentos de embedding).
 
     Retorna X_train, y_train, X_test, y_test, train_keys, test_keys, feature_names.
     """
-    logger.info("Building the linguistic-only pipeline (no BERT)...")
-    pipeline = LinguisticFeaturesPipeline(
-        exp_dir=SCRIPT_DIR,
-        feature_mode="linguistic",
-        feature_groups=feature_groups,
-        drop_nilc_absolute=True,
-    )
-
     splits = load_split_files(SCRIPT_DIR)
-    logger.info("Loading the linguistic matrices (assemble_matrices)...")
-    (X_ling_train, y_train, X_ling_test, y_test,
-     train_keys, test_keys, ling_names) = pipeline.assemble_matrices(splits)
-    logger.info("  X_ling_train=%s X_ling_test=%s n_ling=%d",
-                X_ling_train.shape, X_ling_test.shape, len(ling_names))
+    if use_linguistic:
+        logger.info("Building the linguistic-only pipeline (no BERT)...")
+        pipeline = LinguisticFeaturesPipeline(
+            exp_dir=SCRIPT_DIR,
+            feature_mode="linguistic",
+            feature_groups=feature_groups,
+            drop_nilc_absolute=True,
+        )
+        logger.info("Loading the linguistic matrices (assemble_matrices)...")
+        (X_ling_train, y_train, X_ling_test, y_test,
+         train_keys, test_keys, ling_names) = pipeline.assemble_matrices(splits)
+        logger.info("  X_ling_train=%s X_ling_test=%s n_ling=%d",
+                    X_ling_train.shape, X_ling_test.shape, len(ling_names))
+    else:
+        logger.info("Text-only condition: no linguistic features.")
+        train_keys, test_keys = splits_to_keys(splits)
+        y_train = np.array([k[2] for k in train_keys])
+        y_test = np.array([k[2] for k in test_keys])
+        X_ling_train = X_ling_test = None
+        ling_names = []
 
-    logger.info("Runtime paired truncation (BERTimbau, max_length=%d)...", max_length)
+    logger.info("Runtime paired truncation (%s, max_length=%d)...",
+                bert_model_slug(getattr(tokenizer, "name_or_path", "tokenizer")), max_length)
     train_texts, train_keep, train_stats = load_paired_truncated_texts(
         train_keys, corpus_dirs, tokenizer, max_length,
     )
@@ -396,17 +452,18 @@ def build_matrices(vectorizer_kind: str,
                 test_stats["keys_discarded"])
 
     # Filter the linguistic matrices by kept_indices
-    X_ling_train = X_ling_train[train_keep]
     y_train = y_train[train_keep]
     train_keys = [train_keys[i] for i in train_keep]
-    X_ling_test = X_ling_test[test_keep]
     y_test = y_test[test_keep]
     test_keys = [test_keys[i] for i in test_keep]
 
-    # StandardScaler on the linguistic features
-    scaler = StandardScaler()
-    X_ling_train = scaler.fit_transform(X_ling_train)
-    X_ling_test = scaler.transform(X_ling_test)
+    if use_linguistic:
+        X_ling_train = X_ling_train[train_keep]
+        X_ling_test = X_ling_test[test_keep]
+        # StandardScaler on the linguistic features
+        scaler = StandardScaler()
+        X_ling_train = scaler.fit_transform(X_ling_train)
+        X_ling_test = scaler.transform(X_ling_test)
 
     # Vectorise the text
     logger.info("Vectorising the text (%s, max_features=%d, ngram=(1,1), min_df=%d)...",
@@ -417,15 +474,19 @@ def build_matrices(vectorizer_kind: str,
     text_features = list(vec.get_feature_names_out())
     logger.info("  vocab=%d  X_text_train=%s", len(text_features), X_text_train.shape)
 
-    # hstack: sparse text + sparse(dense linguistic)
-    X_train = sparse_hstack(
-        [X_text_train, csr_matrix(X_ling_train)],
-        format="csr",
-    )
-    X_test = sparse_hstack(
-        [X_text_test, csr_matrix(X_ling_test)],
-        format="csr",
-    )
+    if use_linguistic:
+        # hstack: sparse text + sparse(dense linguistic)
+        X_train = sparse_hstack(
+            [X_text_train, csr_matrix(X_ling_train)],
+            format="csr",
+        )
+        X_test = sparse_hstack(
+            [X_text_test, csr_matrix(X_ling_test)],
+            format="csr",
+        )
+    else:
+        X_train = X_text_train.tocsr()
+        X_test = X_text_test.tocsr()
     feature_names = [f"text__{w}" for w in text_features] + list(ling_names)
 
     logger.info("Combined matrices:")
@@ -449,24 +510,31 @@ def run_experiment(vectorizer_kind: str,
                    out_dir: Path,
                    bert_model_name: str,
                    corpus_dirs: Dict[Tuple[str, int], Path] = ORIGINAL_CORPUS_DIRS,
+                   use_linguistic: bool = True,
                    ) -> Dict[str, Dict]:
     (X_train, y_train, X_test, y_test,
      train_keys, test_keys, feature_names) = build_matrices(
         vectorizer_kind, max_features, min_df, max_length, tokenizer,
-        feature_groups, corpus_dirs,
+        feature_groups, corpus_dirs, use_linguistic,
     )
+    # Group id = (filename, subset): both versions of a pair share it, so
+    # GroupKFold never splits a human/LLM pair across CV folds.
+    train_groups = [f"{k[0]}__{k[1]}" for k in train_keys]
+    cond = "linguistic" if use_linguistic else "only"
+    cond_label = "+linguistic" if use_linguistic else " (text only)"
 
     out_dir.mkdir(parents=True, exist_ok=True)
+    prefix = experiment_prefix(vectorizer_kind, bert_model_name, max_length, use_linguistic)
     all_results: Dict[str, Dict] = {}
 
     for clf_type in classifiers:
         logger.info("=" * 70)
-        logger.info("EXPERIMENT: %s + linguistic  |  classifier=%s",
-                    vectorizer_kind.upper(), clf_type)
+        logger.info("EXPERIMENT: %s%s  |  classifier=%s",
+                    vectorizer_kind.upper(), cond_label, clf_type)
         logger.info("=" * 70)
 
         best_clf, best_params, cv_score = train_with_grid(
-            clf_type, X_train, y_train, cv_folds,
+            clf_type, X_train, y_train, cv_folds, train_groups,
         )
         metrics, cm, y_pred = evaluate(best_clf, X_test, y_test)
         tn, fp, fn, tp = cm.ravel()
@@ -483,7 +551,8 @@ def run_experiment(vectorizer_kind: str,
                 logger.info("  %-55s %.6f", name, val)
 
         result = {
-            "experiment": f"{vectorizer_kind}+linguistic",
+            "experiment": f"{vectorizer_kind}{cond_label}",
+            "condition": cond,
             "vectorizer": vectorizer_kind,
             "classifier": clf_type,
             "n_features_text": int(sum(1 for n in feature_names if n.startswith("text__"))),
@@ -497,14 +566,14 @@ def run_experiment(vectorizer_kind: str,
                 "max_length": int(max_length),
                 "effective_min_len_cap": int(max_length - 2),
                 "tokenizer": bert_model_name,
-                "strategy": "pairwise_bertimbau_runtime",
+                "strategy": f"pairwise_{bert_model_slug(bert_model_name)}_runtime",
             },
             "data_split": {
                 "train_samples": int(X_train.shape[0]),
                 "test_samples": int(X_test.shape[0]),
             },
             "grid_search": {
-                "enabled": True, "cv_folds": cv_folds,
+                "enabled": True, "cv_folds": cv_folds, "cv_scheme": "GroupKFold",
                 "best_params": best_params, "cv_score": cv_score,
             },
             "test_results": metrics,
@@ -515,7 +584,7 @@ def run_experiment(vectorizer_kind: str,
             "feature_importance": fi,
         }
 
-        out_path = out_dir / f"text_{vectorizer_kind}_linguistic_{clf_type}.json"
+        out_path = out_dir / f"{prefix}_{clf_type}.json"
         with out_path.open("w", encoding="utf-8") as fh:
             json.dump(result, fh, indent=2, ensure_ascii=False)
         logger.info("Result saved: %s", out_path)
@@ -527,13 +596,13 @@ def run_experiment(vectorizer_kind: str,
                 probs = best_clf.predict_proba(X_test)
             except Exception as exc:
                 logger.warning("predict_proba failed for %s: %s", clf_type, exc)
-        miscls_path = out_dir / "misclassified" / f"text_{vectorizer_kind}_linguistic_{clf_type}_errors.json"
+        miscls_path = out_dir / "misclassified" / f"{prefix}_{clf_type}_errors.json"
         save_misclassified(
             keys=test_keys,
             y_true=y_test,
             y_pred=y_pred,
             output_path=miscls_path,
-            experiment=f"{vectorizer_kind}+linguistic / {clf_type}",
+            experiment=f"{vectorizer_kind}{cond_label} / {clf_type}",
             probs=probs,
         )
 
@@ -544,7 +613,10 @@ def run_experiment(vectorizer_kind: str,
 
 def write_comparison(vectorizer_kind: str,
                      all_results: Dict[str, Dict],
-                     out_dir: Path):
+                     out_dir: Path,
+                     bert_model_name: str = DEFAULT_BERT_MODEL,
+                     max_length: int = DEFAULT_MAX_LENGTH,
+                     use_linguistic: bool = True):
     summary = {}
     for clf, r in all_results.items():
         summary[clf] = {
@@ -554,14 +626,15 @@ def write_comparison(vectorizer_kind: str,
             "best_params": r["grid_search"]["best_params"],
             "n_features": r["n_features_total"],
         }
-    out_path = out_dir / f"comparison_text_{vectorizer_kind}_linguistic.json"
+    out_path = out_dir / f"comparison_{experiment_prefix(vectorizer_kind, bert_model_name, max_length, use_linguistic)}.json"
     with out_path.open("w", encoding="utf-8") as fh:
         json.dump(summary, fh, indent=2, ensure_ascii=False)
     logger.info("Comparison: %s", out_path)
 
     # Human-readable table in the log
     logger.info("=" * 90)
-    logger.info("COMPARISON  %s + linguistic", vectorizer_kind.upper())
+    logger.info("COMPARISON  %s%s", vectorizer_kind.upper(),
+                "+linguistic" if use_linguistic else " (text only)")
     logger.info("=" * 90)
     logger.info("%-25s %12s %12s %12s", "Classifier", "CV Score", "Test F1", "Test Acc")
     logger.info("-" * 90)
@@ -586,10 +659,13 @@ def parse_args(argv):
     p.add_argument("--max-features", type=int, default=10000)
     p.add_argument("--min-df", type=int, default=5)
     p.add_argument("--max-length", type=int, default=DEFAULT_MAX_LENGTH,
-                   help=f"BERTimbau WordPiece token cap used by the paired truncation "
-                        f"(default: {DEFAULT_MAX_LENGTH}; effective: {DEFAULT_MAX_LENGTH-2} after [CLS]/[SEP])")
+                   help=f"Token cap used by the paired truncation "
+                        f"(default: {DEFAULT_MAX_LENGTH}; effective: {DEFAULT_MAX_LENGTH-2} "
+                        f"after the two special tokens)")
     p.add_argument("--bert-model", type=str, default=DEFAULT_BERT_MODEL,
-                   help=f"BERT model used for the tokenizer (default: {DEFAULT_BERT_MODEL})")
+                   help=f"Encoder whose tokenizer drives the paired truncation: a key of "
+                        f"BERT_MODELS ({', '.join(BERT_MODELS)}) or a full Hugging Face id "
+                        f"(default: {DEFAULT_BERT_MODEL})")
     p.add_argument("--corpus-root", type=str, default=None,
                    help="Override the corpus root directory (same semantics as "
                         "--corpus-root in linguistic_features.py). When omitted, "
@@ -598,6 +674,8 @@ def parse_args(argv):
     p.add_argument("--features", default="all",
                    help="Linguistic groups: nilcmetrics,liwc,enhanced_ud,syllables,"
                         "pos_tagger,parser_stats,sage_terms or all")
+    p.add_argument("--no-linguistic", action="store_true",
+                   help="Text-only condition: BoW/TF-IDF without linguistic features.")
     p.add_argument("--out-dir", type=Path, default=RESULTS_DIR)
     return p.parse_args(argv[1:])
 
@@ -637,15 +715,16 @@ def main(argv):
                      "linguistic_features.py to match the server layout.")
         return 1
 
-    # The BERTimbau tokenizer is loaded once and reused across vectorisers
-    logger.info("Loading tokenizer '%s'...", args.bert_model)
+    # The tokenizer is loaded once and reused across vectorisers
+    bert_model_name = resolve_bert_model(args.bert_model)
+    logger.info("Loading tokenizer '%s'...", bert_model_name)
     try:
         from transformers import AutoTokenizer
     except ImportError:
         logger.error("transformers is not installed. Run 'pip install transformers' "
-                     "to use the BERTimbau truncation from the BERT experiments.")
+                     "to use the paired truncation from the embedding experiments.")
         return 1
-    tokenizer = AutoTokenizer.from_pretrained(args.bert_model)
+    tokenizer = AutoTokenizer.from_pretrained(bert_model_name)
     logger.info("Tokenizer ready.")
 
     for vec_kind in vectorizers:
@@ -659,11 +738,13 @@ def main(argv):
             cv_folds=args.cv_folds,
             feature_groups=feature_groups,
             out_dir=args.out_dir,
-            bert_model_name=args.bert_model,
+            bert_model_name=bert_model_name,
             corpus_dirs=corpus_dirs,
+            use_linguistic=not args.no_linguistic,
         )
         if len(results) > 1:
-            write_comparison(vec_kind, results, args.out_dir)
+            write_comparison(vec_kind, results, args.out_dir, bert_model_name,
+                             args.max_length, not args.no_linguistic)
 
     return 0
 

@@ -53,7 +53,10 @@ from sklearn.metrics import (
     precision_score, recall_score,
 )
 from sklearn.model_selection import GridSearchCV, GroupKFold
+from sklearn.naive_bayes import GaussianNB
 from sklearn.neural_network import MLPClassifier
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import FunctionTransformer
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
 
@@ -155,11 +158,15 @@ ORIGINAL_CORPUS_DIRS = build_corpus_dirs(CORPUS_DIRS_DEFAULT)
 # =============================================================================
 # Classifier configuration
 #
-# Note: GaussianNB and MultinomialNB are left out because they require dense
-# matrices (GaussianNB) or non-negative ones (MultinomialNB), and neither is
-# compatible with the hstack(sparse_tfidf, sparse(standardised_linguistic))
-# matrix produced here.
+# Note: GaussianNB requires dense matrices, so it runs behind a densifying
+# step (inside the CV fold, so the full matrix is never held dense twice) and
+# with n_jobs=1 to bound memory. MultinomialNB is left out because it needs
+# non-negative inputs, which the standardised linguistic features are not.
 # =============================================================================
+def _to_dense(X):
+    return X.toarray() if hasattr(X, "toarray") else X
+
+
 CLASSIFIERS_CONFIG: Dict[str, Dict] = {
     "svm": {
         "estimator": SVC(probability=True, random_state=42),
@@ -176,6 +183,16 @@ CLASSIFIERS_CONFIG: Dict[str, Dict] = {
             "max_depth": [10, 20, None],
             "min_samples_split": [2, 5],
         },
+    },
+    "naive_bayes": {
+        "estimator": Pipeline([
+            ("dense", FunctionTransformer(_to_dense, accept_sparse=True)),
+            ("nb", GaussianNB()),
+        ]),
+        "param_grid": {
+            "nb__var_smoothing": [1e-9, 1e-8, 1e-7, 1e-6, 1e-5],
+        },
+        "n_jobs": 1,
     },
     "logistic_regression": {
         "estimator": LogisticRegression(random_state=42, max_iter=1000),
@@ -338,7 +355,7 @@ def train_with_grid(clf_type: str, X_train, y_train, cv: int, groups):
         param_grid=cfg["param_grid"],
         cv=GroupKFold(n_splits=n_splits),
         scoring="f1_weighted",
-        n_jobs=-1,
+        n_jobs=cfg.get("n_jobs", -1),
         refit=True,
         verbose=0,
     )

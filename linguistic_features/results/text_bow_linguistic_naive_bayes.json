@@ -1,0 +1,60 @@
+{
+  "experiment": "bow+linguistic",
+  "condition": "linguistic",
+  "vectorizer": "bow",
+  "classifier": "naive_bayes",
+  "n_features_text": 10000,
+  "n_features_linguistic": 780,
+  "n_features_total": 10780,
+  "vectorizer_config": {
+    "max_features": 10000,
+    "ngram_range": [
+      1,
+      1
+    ],
+    "min_df": 5,
+    "sublinear_tf": false
+  },
+  "truncation": {
+    "max_length": 512,
+    "effective_min_len_cap": 510,
+    "tokenizer": "neuralmind/bert-base-portuguese-cased",
+    "strategy": "pairwise_bertimbau_runtime"
+  },
+  "data_split": {
+    "train_samples": 7876,
+    "test_samples": 1946
+  },
+  "grid_search": {
+    "enabled": true,
+    "cv_folds": 5,
+    "cv_scheme": "GroupKFold",
+    "best_params": {
+      "nb__var_smoothing": 1e-05
+    },
+    "cv_score": 0.9372415660553985
+  },
+  "test_results": {
+    "accuracy": 0.9552929085303186,
+    "f1": 0.9552710691779036,
+    "precision": 0.9561838540343748,
+    "recall": 0.9552929085303186
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        908,
+        65
+      ],
+      [
+        22,
+        951
+      ]
+    ],
+    "tn": 908,
+    "fp": 65,
+    "fn": 22,
+    "tp": 951
+  },
+  "feature_importance": null
+}

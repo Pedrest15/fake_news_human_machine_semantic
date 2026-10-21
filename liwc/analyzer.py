@@ -96,7 +96,8 @@ class LiwcAnalyzer:
 
             score = {
                 'file_name': doc['file_name'],
-                'file_path': doc['file_path'],
+                # Keep the path portable: no absolute path (and no local user name) in the output.
+                'file_path': '/'.join(Path(doc['file_path']).parts[-4:]),
                 'author_type': label,
                 'word_count': total_words,
                 'matched_words': matched_words,

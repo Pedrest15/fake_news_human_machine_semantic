@@ -28,7 +28,7 @@ Uso:
     python3 linguistic_features/text_enriched.py --vectorizer both  --classifier all
     python3 linguistic_features/text_enriched.py --vectorizer tfidf --classifier all --no-linguistic
     python3 linguistic_features/text_enriched.py --vectorizer tfidf --classifier svm --max-length 256
-    python3 linguistic_features/text_enriched.py --vectorizer tfidf --bert-model norberto
+    python3 linguistic_features/text_enriched.py --vectorizer tfidf --bert-model bert-multilingual
 """
 from __future__ import annotations
 
@@ -44,7 +44,10 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
 import numpy as np
-from scipy.sparse import csr_matrix, hstack as sparse_hstack
+import pandas as pd
+from scipy import sparse
+from sklearn.compose import ColumnTransformer
+from sklearn.impute import SimpleImputer
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
@@ -58,6 +61,7 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import FunctionTransformer
 from sklearn.preprocessing import StandardScaler
+from sklearn.base import clone
 from sklearn.svm import SVC
 
 try:
@@ -91,7 +95,7 @@ DEFAULT_BERT_MODEL = BERT_MODELS[DEFAULT_BERT_MODEL_KEY]  # neuralmind/bert-base
 
 
 def resolve_bert_model(value: str) -> str:
-    """Aceita uma chave de BERT_MODELS (ex.: 'norberto') ou um id completo do HF."""
+    """Aceita uma chave de BERT_MODELS (ex.: 'bert-multilingual') ou um id completo do HF."""
     return BERT_MODELS.get(value, value)
 
 
@@ -111,7 +115,7 @@ def experiment_prefix(vectorizer_kind: str, bert_model_name: str,
     Mantem os nomes historicos (`text_<vec>_linguistic`) para a configuracao
     padrao (BERTimbau + 512 tokens) e acrescenta um sufixo para cada parametro
     fora do default, para que uma bateria nova nao sobrescreva a anterior:
-    `text_tfidf_linguistic_norberto`, `text_tfidf_linguistic_len256`.
+    `text_tfidf_linguistic_bert_multilingual`, `text_tfidf_linguistic_len256`.
     Sem features linguisticas (--no-linguistic) o sufixo e' `_only`:
     `text_tfidf_only`.
     """
@@ -332,6 +336,36 @@ def make_vectorizer(kind: str, max_features: int, min_df: int):
     raise ValueError(f"Unknown vectorizer: {kind!r}")
 
 
+TEXT_COLUMN = "text"
+
+
+def make_preprocessor(vectorizer_kind: str, max_features: int, min_df: int,
+                      ling_columns: List[str]) -> ColumnTransformer:
+    """Vetorizador de texto + (imputer, scaler) das features linguisticas.
+
+    Vive dentro do Pipeline do GridSearchCV: vocabulario, IDF, medianas, medias
+    e desvios sao reajustados so com o treino de cada fold. A saida e sempre
+    esparsa (sparse_threshold=1.0), na ordem texto -> linguisticas.
+    """
+    transformers = [(TEXT_COLUMN, make_vectorizer(vectorizer_kind, max_features, min_df), TEXT_COLUMN)]
+    if ling_columns:
+        transformers.append((
+            "ling",
+            Pipeline([
+                ("imputer", SimpleImputer(strategy="median", keep_empty_features=True)),
+                ("scaler", StandardScaler()),
+            ]),
+            ling_columns,
+        ))
+    return ColumnTransformer(transformers, sparse_threshold=1.0)
+
+
+def fitted_feature_names(model: Pipeline, ling_names: List[str]) -> List[str]:
+    """Nomes das colunas que chegam ao classificador: text__<token> e depois as linguisticas."""
+    vec = model.named_steps["prep"].named_transformers_[TEXT_COLUMN]
+    return [f"text__{w}" for w in vec.get_feature_names_out()] + list(ling_names)
+
+
 # =============================================================================
 # Training + evaluation
 # =============================================================================
@@ -343,16 +377,22 @@ def grid_combinations(grid: Dict) -> int:
     return n
 
 
-def train_with_grid(clf_type: str, X_train, y_train, cv: int, groups):
-    """GridSearchCV com GroupKFold: o par humano/LLM fica sempre no mesmo fold."""
+def train_with_grid(clf_type: str, X_train, y_train, cv: int, groups, preprocessor):
+    """GridSearchCV com GroupKFold: o par humano/LLM fica sempre no mesmo fold.
+
+    O preprocessor entra no Pipeline, entao e reajustado a cada fold.
+    """
     cfg = CLASSIFIERS_CONFIG[clf_type]
     n_combos = grid_combinations(cfg["param_grid"])
     n_splits = min(cv, len(set(groups)))
     logger.info("  GridSearchCV: %s, %d combinations, GroupKFold n_splits=%d (%d groups)",
                 clf_type, n_combos, n_splits, len(set(groups)))
     grid = GridSearchCV(
-        estimator=copy.deepcopy(cfg["estimator"]),
-        param_grid=cfg["param_grid"],
+        estimator=Pipeline([
+            ("prep", clone(preprocessor)),
+            ("clf", copy.deepcopy(cfg["estimator"])),
+        ]),
+        param_grid={f"clf__{k}": v for k, v in cfg["param_grid"].items()},
         cv=GroupKFold(n_splits=n_splits),
         scoring="f1_weighted",
         n_jobs=cfg.get("n_jobs", -1),
@@ -361,10 +401,11 @@ def train_with_grid(clf_type: str, X_train, y_train, cv: int, groups):
     )
     t0 = time.time()
     grid.fit(X_train, y_train, groups=groups)
-    logger.info("  best params: %s", grid.best_params_)
+    best_params = {k.removeprefix("clf__"): v for k, v in grid.best_params_.items()}
+    logger.info("  best params: %s", best_params)
     logger.info("  best CV score (f1_weighted): %.4f  (%.1fs)",
                 grid.best_score_, time.time() - t0)
-    return grid.best_estimator_, grid.best_params_, float(grid.best_score_)
+    return grid.best_estimator_, best_params, float(grid.best_score_)
 
 
 def evaluate(clf, X_test, y_test) -> Tuple[Dict, np.ndarray, np.ndarray]:
@@ -391,7 +432,7 @@ def extract_feature_importance(clf, feature_names: List[str], top_k: int = 30
     if hasattr(clf, "feature_importances_"):
         imp = np.asarray(clf.feature_importances_)
     elif hasattr(clf, "coef_"):
-        coef = np.asarray(clf.coef_)
+        coef = clf.coef_.toarray() if sparse.issparse(clf.coef_) else np.asarray(clf.coef_)
         imp = np.abs(coef[0]) if coef.ndim > 1 else np.abs(coef)
     else:
         return None
@@ -408,25 +449,28 @@ def extract_feature_importance(clf, feature_names: List[str], top_k: int = 30
 # Pipeline
 # =============================================================================
 
-def build_matrices(vectorizer_kind: str,
-                   max_features: int,
-                   min_df: int,
-                   max_length: int,
+def build_matrices(max_length: int,
                    tokenizer: Any,
                    feature_groups: List[str],
                    corpus_dirs: Dict[Tuple[str, int], Path] = ORIGINAL_CORPUS_DIRS,
                    use_linguistic: bool = True,
+                   missing_features: str = "impute",
                    ):
-    """Monta as matrizes train e test combinando texto + features linguisticas.
+    """Monta as entradas train e test: texto truncado + features linguisticas brutas.
 
-    Com use_linguistic=False, a matriz contem apenas o vetor BoW/TF-IDF
+    Nada e vetorizado nem padronizado aqui: X e um DataFrame com a coluna de
+    texto e as colunas linguisticas (NaN onde um grupo nao cobre o documento),
+    e o preprocessor do Pipeline aprende vocabulario, medianas e escala somente
+    com o treino de cada fold.
+
+    Com use_linguistic=False, o DataFrame contem apenas o texto
     (condicao sem features linguisticas); as chaves vem direto dos splits.
 
     Os textos sao carregados dos diretorios originais (corpus_dirs) e
     truncados pareadamente em runtime pelo tokenizador recebido, ate
     max_length - 2 tokens (paridade com os experimentos de embedding).
 
-    Retorna X_train, y_train, X_test, y_test, train_keys, test_keys, feature_names.
+    Retorna X_train, y_train, X_test, y_test, train_keys, test_keys, ling_names.
     """
     splits = load_split_files(SCRIPT_DIR)
     if use_linguistic:
@@ -436,6 +480,7 @@ def build_matrices(vectorizer_kind: str,
             feature_mode="linguistic",
             feature_groups=feature_groups,
             drop_nilc_absolute=True,
+            missing_features=missing_features,
         )
         logger.info("Loading the linguistic matrices (assemble_matrices)...")
         (X_ling_train, y_train, X_ling_test, y_test,
@@ -474,46 +519,26 @@ def build_matrices(vectorizer_kind: str,
     y_test = y_test[test_keep]
     test_keys = [test_keys[i] for i in test_keep]
 
-    if use_linguistic:
-        X_ling_train = X_ling_train[train_keep]
-        X_ling_test = X_ling_test[test_keep]
-        # StandardScaler on the linguistic features
-        scaler = StandardScaler()
-        X_ling_train = scaler.fit_transform(X_ling_train)
-        X_ling_test = scaler.transform(X_ling_test)
-
-    # Vectorise the text
-    logger.info("Vectorising the text (%s, max_features=%d, ngram=(1,1), min_df=%d)...",
-                vectorizer_kind, max_features, min_df)
-    vec = make_vectorizer(vectorizer_kind, max_features, min_df)
-    X_text_train = vec.fit_transform(train_texts)
-    X_text_test = vec.transform(test_texts)
-    text_features = list(vec.get_feature_names_out())
-    logger.info("  vocab=%d  X_text_train=%s", len(text_features), X_text_train.shape)
+    def _frame(texts: List[str], ling: Optional[np.ndarray]) -> pd.DataFrame:
+        frame = pd.DataFrame({TEXT_COLUMN: texts})
+        if ling is not None:
+            frame = pd.concat([frame, pd.DataFrame(ling, columns=ling_names)], axis=1)
+        return frame
 
     if use_linguistic:
-        # hstack: sparse text + sparse(dense linguistic)
-        X_train = sparse_hstack(
-            [X_text_train, csr_matrix(X_ling_train)],
-            format="csr",
-        )
-        X_test = sparse_hstack(
-            [X_text_test, csr_matrix(X_ling_test)],
-            format="csr",
-        )
+        X_train = _frame(train_texts, X_ling_train[train_keep])
+        X_test = _frame(test_texts, X_ling_test[test_keep])
     else:
-        X_train = X_text_train.tocsr()
-        X_test = X_text_test.tocsr()
-    feature_names = [f"text__{w}" for w in text_features] + list(ling_names)
+        X_train = _frame(train_texts, None)
+        X_test = _frame(test_texts, None)
 
-    logger.info("Combined matrices:")
-    logger.info("  X_train=%s (sparsity=%.3f)",
-                X_train.shape, 1 - X_train.nnz / (X_train.shape[0] * X_train.shape[1]))
-    logger.info("  X_test=%s", X_test.shape)
-    logger.info("  feature_names: %d (text=%d, linguistic=%d)",
-                len(feature_names), len(text_features), len(ling_names))
+    logger.info("Model inputs (raw; fitted per CV fold by the pipeline):")
+    logger.info("  X_train=%s  X_test=%s  linguistic columns=%d (NaN cells: train=%d, test=%d)",
+                X_train.shape, X_test.shape, len(ling_names),
+                int(X_train[ling_names].isna().sum().sum()) if ling_names else 0,
+                int(X_test[ling_names].isna().sum().sum()) if ling_names else 0)
 
-    return X_train, y_train, X_test, y_test, train_keys, test_keys, feature_names
+    return X_train, y_train, X_test, y_test, train_keys, test_keys, ling_names
 
 
 def run_experiment(vectorizer_kind: str,
@@ -528,12 +553,14 @@ def run_experiment(vectorizer_kind: str,
                    bert_model_name: str,
                    corpus_dirs: Dict[Tuple[str, int], Path] = ORIGINAL_CORPUS_DIRS,
                    use_linguistic: bool = True,
+                   missing_features: str = "impute",
                    ) -> Dict[str, Dict]:
     (X_train, y_train, X_test, y_test,
-     train_keys, test_keys, feature_names) = build_matrices(
-        vectorizer_kind, max_features, min_df, max_length, tokenizer,
-        feature_groups, corpus_dirs, use_linguistic,
+     train_keys, test_keys, ling_names) = build_matrices(
+        max_length, tokenizer, feature_groups, corpus_dirs, use_linguistic,
+        missing_features,
     )
+    preprocessor = make_preprocessor(vectorizer_kind, max_features, min_df, ling_names)
     # Group id = (filename, subset): both versions of a pair share it, so
     # GroupKFold never splits a human/LLM pair across CV folds.
     train_groups = [f"{k[0]}__{k[1]}" for k in train_keys]
@@ -551,8 +578,9 @@ def run_experiment(vectorizer_kind: str,
         logger.info("=" * 70)
 
         best_clf, best_params, cv_score = train_with_grid(
-            clf_type, X_train, y_train, cv_folds, train_groups,
+            clf_type, X_train, y_train, cv_folds, train_groups, preprocessor,
         )
+        feature_names = fitted_feature_names(best_clf, ling_names)
         metrics, cm, y_pred = evaluate(best_clf, X_test, y_test)
         tn, fp, fn, tp = cm.ravel()
 
@@ -561,7 +589,7 @@ def run_experiment(vectorizer_kind: str,
                     metrics["precision"], metrics["recall"])
         logger.info("CM: TN=%d FP=%d FN=%d TP=%d", tn, fp, fn, tp)
 
-        fi = extract_feature_importance(best_clf, feature_names, top_k=30)
+        fi = extract_feature_importance(best_clf.named_steps["clf"], feature_names, top_k=30)
         if fi:
             logger.info("Top-5 features by importance:")
             for name, val in fi[:5]:
@@ -575,6 +603,8 @@ def run_experiment(vectorizer_kind: str,
             "n_features_text": int(sum(1 for n in feature_names if n.startswith("text__"))),
             "n_features_linguistic": int(sum(1 for n in feature_names if not n.startswith("text__"))),
             "n_features_total": int(len(feature_names)),
+            "preprocessing_scope": "vectorizer/imputer/scaler fitted inside each CV fold",
+            "missing_features": missing_features if use_linguistic else None,
             "vectorizer_config": {
                 "max_features": max_features, "ngram_range": [1, 1], "min_df": min_df,
                 "sublinear_tf": vectorizer_kind == "tfidf",
@@ -691,6 +721,11 @@ def parse_args(argv):
     p.add_argument("--features", default="all",
                    help="Linguistic groups: nilcmetrics,liwc,enhanced_ud,syllables,"
                         "pos_tagger,parser_stats,sage_terms or all")
+    p.add_argument("--missing-features", choices=["impute", "drop"], default="impute",
+                   help="Documents missing in some linguistic group: impute keeps them all "
+                        "(median imputed inside each CV fold) so the test set matches the "
+                        "text-only condition; drop keeps only documents present in every group "
+                        "(default: impute)")
     p.add_argument("--no-linguistic", action="store_true",
                    help="Text-only condition: BoW/TF-IDF without linguistic features.")
     p.add_argument("--out-dir", type=Path, default=RESULTS_DIR)
@@ -758,6 +793,7 @@ def main(argv):
             bert_model_name=bert_model_name,
             corpus_dirs=corpus_dirs,
             use_linguistic=not args.no_linguistic,
+            missing_features=args.missing_features,
         )
         if len(results) > 1:
             write_comparison(vec_kind, results, args.out_dir, bert_model_name,

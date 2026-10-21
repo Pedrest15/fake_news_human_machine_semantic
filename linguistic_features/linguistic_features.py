@@ -4,14 +4,15 @@ Classificacao Humano vs LLM combinando embeddings BERT e features linguisticas.
 
 Modos de operacao (--feature-mode):
   - linguistic : apenas features pre-computadas (NILCmetrics + LIWC + Enhanced-UD)
-  - embedding  : apenas embedding [CLS] do BERT (BERTimbau ou bert-multilingual)
-  - combined   : concatenacao [BERT] + [features linguisticas] (modo principal)
+  - embedding  : apenas o embedding congelado do encoder (BERTimbau ou
+                 bert-multilingual)
+  - combined   : concatenacao [encoder] + [features linguisticas] (modo principal)
 
 Metodologia (identica ao pipeline BERT pareado):
   1. Splits pre-definidos (train_fake_br.txt etc. em linguistic_features/)
   2. Pares humano-LLM por filename, truncados pelo menor numero de tokens do par
   3. GridSearchCV no TREINO para tuning; avaliacao final no TESTE held-out
-  4. Cache de embeddings BERT em .npy para nao recomputar
+  4. Cache de embeddings em .npy (por modelo/pooling/max_length) para nao recomputar
 
 Fontes de features (configuraveis no topo do arquivo):
   - NILCmetrics: nilc-metrix/results/{human,llm}.csv
@@ -22,6 +23,7 @@ Uso:
     python linguistic_features.py --feature-mode combined --classifier all
     python linguistic_features.py --feature-mode linguistic --features nilcmetrics,liwc
     python linguistic_features.py --feature-mode embedding --bert-model bertimbau
+    python linguistic_features.py --feature-mode combined --bert-model bert-multilingual
 """
 
 import argparse
@@ -52,7 +54,9 @@ from sklearn.metrics import (
 )
 from sklearn.model_selection import GridSearchCV, GroupKFold
 from sklearn.naive_bayes import GaussianNB
+from sklearn.impute import SimpleImputer
 from sklearn.neural_network import MLPClassifier
+from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
 
@@ -93,6 +97,8 @@ PARSER_HUMAN_TXT_DEFAULT = DATA_ROOT / "parser" / "aggregated_output" / "human" 
 PARSER_LLM_TXT_DEFAULT = DATA_ROOT / "parser" / "aggregated_output" / "llm" / "per_file_statistics.txt"
 SAGE_CSV_DEFAULT = DATA_ROOT / "sage" / "resultados" / "sage_termos_Humano_vs_Maquina.csv"
 
+MISSING_FEATURE_POLICIES = ('drop', 'impute')
+
 UPOS_TAGS = ['ADJ', 'ADP', 'ADV', 'AUX', 'CCONJ', 'DET', 'INTJ', 'NOUN',
              'NUM', 'PART', 'PRON', 'PROPN', 'PUNCT', 'SCONJ', 'SYM', 'VERB', 'X']
 
@@ -128,6 +134,52 @@ BERT_MODELS = {
     "bertimbau": "neuralmind/bert-base-portuguese-cased",
     "bert-multilingual": "bert-base-multilingual-cased",
 }
+
+DEFAULT_BERT_MODEL_KEY = "bertimbau"
+
+# Pooling used to turn the frozen encoder output into one vector per document.
+# The BERT-family models were pre-trained with NSP, so their [CLS] vector is a
+# sentence representation and is the default. --pooling mean (attention-masked
+# mean over the tokens) is available for ablations.
+DEFAULT_POOLING_BY_MODEL = {
+    "bertimbau": "cls",
+    "bert-multilingual": "cls",
+}
+
+POOLING_STRATEGIES = ("cls", "mean")
+
+# Token cap of the paired truncation. 512 is the BERT limit and the value every
+# experiment run so far used.
+DEFAULT_MAX_LENGTH = 512
+
+
+def resolve_pooling(bert_model: str, pooling: str = "auto") -> str:
+    """Resolve --pooling auto para o padrao do modelo escolhido."""
+    if pooling != "auto":
+        return pooling
+    return DEFAULT_POOLING_BY_MODEL.get(bert_model, "cls")
+
+
+def default_experiment_label(feature_mode: str, bert_model: str, pooling: str,
+                             max_length: int = DEFAULT_MAX_LENGTH) -> str:
+    """Rotulo do experimento, usado como prefixo dos arquivos de resultado.
+
+    Preserva os nomes historicos (`combined`, `embedding`, `linguistic`) para a
+    configuracao padrao (BERTimbau + [CLS] + 512 tokens) e acrescenta um sufixo
+    para cada parametro fora do default, de modo que uma bateria nova nunca
+    sobrescreva a anterior: `combined_bert_multilingual`, `combined_cls`,
+    `embedding_len256`.
+    """
+    if feature_mode == 'linguistic':
+        return feature_mode
+    parts = [feature_mode]
+    if bert_model != DEFAULT_BERT_MODEL_KEY:
+        parts.append(bert_model)
+    if pooling != DEFAULT_POOLING_BY_MODEL.get(bert_model, "cls"):
+        parts.append(pooling)
+    if max_length != DEFAULT_MAX_LENGTH:
+        parts.append(f"len{max_length}")
+    return '_'.join(parts)
 
 
 # =============================================================================
@@ -408,6 +460,7 @@ def load_liwc(liwc_csv: Path, drop_absolute: bool = True) -> Optional[pd.DataFra
 
     Quando drop_absolute=True (default), remove:
       - LIWC_ABSOLUTE_FIELDS (word_count, matched_words, dictionary_coverage)
+      (the same flag also drops the absolute parser counts, keeping psr__rules_per_sentence)
       - LIWC_AGGREGATOR_CATEGORIES (12 categorias agregadoras na hierarquia
         LIWC2015, mantendo apenas as folhas especificas).
     """
@@ -593,10 +646,10 @@ def load_pos_tagger(root: Path) -> Optional[pd.DataFrame]:
 _PARSER_BLOCK_RE = re.compile(
     r"\[\d+\]\s+(?P<file>\S+?)\.conllu\s*\n"
     r"-{3,}\s*\n"
-    r"\s*(?:Caminho|Path):\s*(?P<subset>fake_[a-z_]+)\\[^\n]*\n"
     r"\s*(?:Sentenças|Sentences):\s*(?P<sentences>\d+)\s*\n"
     r"\s*(?:Regras totais|Total rules):\s*(?P<total>\d+)\s*\n"
-    r"\s*(?:Regras únicas|Unique rules):\s*(?P<unique>\d+)",
+    r"\s*(?:Regras únicas|Unique rules):\s*(?P<unique>\d+)\s*\n"
+    r"\s*(?:Caminho|Path):\s*(?P<subset>fake_[a-z_]+)\\[^\n]*",
     re.UNICODE,
 )
 
@@ -624,13 +677,23 @@ def _parse_parser_stats_file(path: Path) -> List[Dict]:
     return rows
 
 
-def load_parser_stats(human_txt: Path, llm_txt: Path) -> Optional[pd.DataFrame]:
-    """Le parser/.../per_file_statistics.txt (humano e LLM) e extrai 3 stats por doc."""
+def load_parser_stats(human_txt: Path, llm_txt: Path, drop_absolute: bool = True) -> Optional[pd.DataFrame]:
+    """
+    Le parser/.../per_file_statistics.txt (humano e LLM) e extrai as stats por doc.
+
+    As tres contagens brutas (sentencas, regras totais, regras unicas) codificam o
+    tamanho do texto; com drop_absolute=True (padrao, igual ao NILC/LIWC) elas saem
+    e ficam so a densidade de regras por sentenca (psr__rules_per_sentence).
+    """
     rows = _parse_parser_stats_file(human_txt) + _parse_parser_stats_file(llm_txt)
     if not rows:
         return None
     df = pd.DataFrame(rows)
-    logger.info(f"  Parser stats: {len(df)} docs, 3 features")
+    df['psr__rules_per_sentence'] = df['psr__total_rules'] / df['psr__sentences'].clip(lower=1)
+    if drop_absolute:
+        df = df.drop(columns=['psr__sentences', 'psr__total_rules', 'psr__unique_rules'])
+    logger.info(f"  Parser stats: {len(df)} docs, {df.shape[1] - 3} features "
+                f"({'length-normalised only' if drop_absolute else 'including absolute counts'})")
     return df
 
 
@@ -705,14 +768,19 @@ def load_sage_terms(csv_path: Path, corpus_dirs: Dict[str, Path]) -> Optional[pd
     return df
 
 
-def merge_feature_frames(frames: List[pd.DataFrame]) -> pd.DataFrame:
-    """Inner join sequencial pelas chaves (filename, subset_corpus, label)."""
+def merge_feature_frames(frames: List[pd.DataFrame], how: str = 'inner') -> pd.DataFrame:
+    """
+    Join sequencial pelas chaves (filename, subset_corpus, label).
+
+    how='inner' descarta documentos ausentes em qualquer grupo; how='outer' os
+    mantem com NaN nas colunas do grupo ausente (imputadas dentro de cada fold).
+    """
     if not frames:
         raise ValueError("No feature source was provided")
     base = frames[0]
     for nxt in frames[1:]:
         before = len(base)
-        base = base.merge(nxt, on=['filename', 'subset_corpus', 'label'], how='inner')
+        base = base.merge(nxt, on=['filename', 'subset_corpus', 'label'], how=how)
         logger.info(f"  Merge: {before} -> {len(base)} (after joining {nxt.shape[1] - 3} columns)")
     return base
 
@@ -722,7 +790,7 @@ def merge_feature_frames(frames: List[pd.DataFrame]) -> pd.DataFrame:
 # =============================================================================
 
 class BERTEmbeddingExtractor:
-    """Extrai embedding [CLS] do BERT com pesos congelados."""
+    """Extrai o embedding do encoder com pesos congelados ([CLS] ou media)."""
 
     def __init__(self, model_name: str, device: Optional[str] = None):
         import torch
@@ -732,7 +800,7 @@ class BERTEmbeddingExtractor:
         self.device = device or ('cuda' if torch.cuda.is_available() else 'cpu')
         self.model_name = model_name
 
-        logger.info(f"  Loading BERT '{model_name}' on {self.device}...")
+        logger.info(f"  Loading encoder '{model_name}' on {self.device}...")
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         self.model = AutoModel.from_pretrained(model_name)
         self.model.to(self.device)
@@ -740,7 +808,10 @@ class BERTEmbeddingExtractor:
         for p in self.model.parameters():
             p.requires_grad = False
 
-    def extract(self, texts: List[str], max_length: int = 512, batch_size: int = 16) -> np.ndarray:
+    def extract(self, texts: List[str], max_length: int = 512, batch_size: int = 16,
+                pooling: str = 'cls') -> np.ndarray:
+        if pooling not in POOLING_STRATEGIES:
+            raise ValueError(f"Unknown pooling '{pooling}' (expected one of {POOLING_STRATEGIES})")
         torch = self.torch
         out = []
         n_batches = (len(texts) + batch_size - 1) // batch_size
@@ -752,8 +823,14 @@ class BERTEmbeddingExtractor:
             ).to(self.device)
             with torch.no_grad():
                 outputs = self.model(**inputs)
-                cls = outputs.last_hidden_state[:, 0, :]
-                out.append(cls.cpu().numpy())
+                hidden = outputs.last_hidden_state
+                if pooling == 'mean':
+                    # Mean over the real tokens only; padding must not dilute it.
+                    mask = inputs['attention_mask'].unsqueeze(-1).to(hidden.dtype)
+                    vec = (hidden * mask).sum(dim=1) / mask.sum(dim=1).clamp(min=1e-9)
+                else:
+                    vec = hidden[:, 0, :]
+                out.append(vec.cpu().numpy())
             bn = i // batch_size + 1
             if bn % 20 == 0:
                 logger.info(f"    Batch {bn}/{n_batches}")
@@ -778,11 +855,12 @@ def load_paired_texts(splits: Dict, corpus_dirs: Dict[str, Path]) -> Dict[str, L
     """
     result = {'train': [], 'test': []}
     for corpus, parts in splits.items():
-        h_dir = corpus_dirs.get(f"{corpus}_human")
-        if corpus == 'fake_true_br':
-            l_dir = corpus_dirs.get('fake_true_llm')
-        else:
-            l_dir = corpus_dirs.get(f"{corpus}_llm")
+        # The split corpus name ('fake_true_br') differs from the corpus_dirs key
+        # prefix ('fake_true'), so the lookup keys are spelled out; building them
+        # from the corpus name silently dropped the whole FakeTrue.Br corpus.
+        dir_prefix = 'fake_true' if corpus == 'fake_true_br' else corpus
+        h_dir = corpus_dirs.get(f"{dir_prefix}_human")
+        l_dir = corpus_dirs.get(f"{dir_prefix}_llm")
         if h_dir is None or l_dir is None or not h_dir.exists() or not l_dir.exists():
             logger.warning(f"  Corpus dirs missing for {corpus}: {h_dir}, {l_dir}")
             continue
@@ -816,9 +894,11 @@ def get_or_compute_embeddings(
     cache_dir: Path,
     max_length: int = 512,
     batch_size: int = 16,
+    pooling: str = 'cls',
 ) -> np.ndarray:
     """
-    Calcula ou recupera embeddings BERT. Cache key inclui modelo + hash das chaves + max_length.
+    Calcula ou recupera embeddings do encoder. Cache key inclui modelo +
+    pooling + hash das chaves + max_length.
     """
     cache_dir.mkdir(parents=True, exist_ok=True)
     sig = hashlib.sha1()
@@ -828,7 +908,10 @@ def get_or_compute_embeddings(
         sig.update(f"{k[0]}|{k[1]}|{k[2]}".encode())
     digest = sig.hexdigest()[:16]
     model_slug = re.sub(r'[^a-zA-Z0-9_-]', '_', model_name)
-    cache_path = cache_dir / f"{model_slug}__{digest}.npy"
+    # The pooling only enters the filename when it is not [CLS], so the caches
+    # written before pooling was configurable are still reused.
+    pooling_slug = '' if pooling == 'cls' else f"__{pooling}"
+    cache_path = cache_dir / f"{model_slug}{pooling_slug}__{digest}.npy"
 
     if cache_path.exists():
         logger.info(f"  Cache hit: {cache_path.name}")
@@ -838,7 +921,7 @@ def get_or_compute_embeddings(
         logger.warning(f"  Invalid cache (shape mismatch), recomputing...")
 
     extractor = BERTEmbeddingExtractor(model_name)
-    arr = extractor.extract(texts, max_length=max_length, batch_size=batch_size)
+    arr = extractor.extract(texts, max_length=max_length, batch_size=batch_size, pooling=pooling)
     np.save(cache_path, arr)
     logger.info(f"  Embeddings saved to {cache_path.name} ({arr.shape})")
     return arr
@@ -855,7 +938,34 @@ def count_grid_combinations(param_grid: Dict) -> int:
     return n
 
 
-def train_with_grid_search(clf_type: str, X, y, cv=5, scoring='f1_weighted', n_jobs=-1, groups=None):
+def build_model_pipeline(clf_type: str, normalize_features: bool = True,
+                         top_k_features: Optional[int] = None) -> Pipeline:
+    """
+    Pipeline imputer -> scaler -> SelectKBest -> classificador.
+
+    Tudo que aprende estatisticas dos dados (mediana, media/desvio, ranking do
+    SelectKBest) fica dentro do pipeline, entao o GridSearchCV reajusta essas
+    etapas somente com o treino de cada fold.
+    """
+    steps = [('imputer', SimpleImputer(strategy='median', keep_empty_features=True))]
+    if normalize_features:
+        steps.append(('scaler', StandardScaler()))
+    if top_k_features:
+        steps.append(('select', SelectKBest(f_classif, k=top_k_features)))
+    steps.append(('clf', copy.deepcopy(CLASSIFIERS_CONFIG[clf_type]['estimator'])))
+    return Pipeline(steps)
+
+
+def selected_feature_names(model: Pipeline, feature_names: List[str]) -> List[str]:
+    """Nomes das colunas que chegam ao classificador (apos o SelectKBest, se houver)."""
+    selector = model.named_steps.get('select')
+    if selector is None:
+        return feature_names
+    return [feature_names[i] for i in selector.get_support(indices=True)]
+
+
+def train_with_grid_search(clf_type: str, X, y, cv=5, scoring='f1_weighted', n_jobs=-1, groups=None,
+                           normalize_features: bool = True, top_k_features: Optional[int] = None):
     config = CLASSIFIERS_CONFIG[clf_type]
     n_comb = count_grid_combinations(config['param_grid'])
     if groups is not None:
@@ -867,19 +977,20 @@ def train_with_grid_search(clf_type: str, X, y, cv=5, scoring='f1_weighted', n_j
         cv_obj = cv
         logger.info(f"  Grid Search {clf_type}: {n_comb} combinations, cv={cv}")
     gs = GridSearchCV(
-        estimator=copy.deepcopy(config['estimator']),
-        param_grid=config['param_grid'],
+        estimator=build_model_pipeline(clf_type, normalize_features, top_k_features),
+        param_grid={f'clf__{k}': v for k, v in config['param_grid'].items()},
         cv=cv_obj, scoring=scoring, n_jobs=n_jobs, refit=True
     )
     gs.fit(X, y, groups=groups) if groups is not None else gs.fit(X, y)
-    logger.info(f"  Best params: {gs.best_params_}")
+    best_params = {k.removeprefix('clf__'): v for k, v in gs.best_params_.items()}
+    logger.info(f"  Best params: {best_params}")
     logger.info(f"  CV score: {gs.best_score_:.4f}")
     cv_results = {
         'best_score': float(gs.best_score_),
-        'best_params': gs.best_params_,
+        'best_params': best_params,
         'cv_scores': gs.cv_results_['mean_test_score'].tolist()
     }
-    return gs.best_estimator_, gs.best_params_, cv_results
+    return gs.best_estimator_, best_params, cv_results
 
 
 def evaluate(clf, X, y):
@@ -966,7 +1077,9 @@ class LinguisticFeaturesPipeline:
         exp_dir: Path,
         feature_mode: str = 'combined',
         feature_groups: Optional[List[str]] = None,
-        bert_model: str = 'bertimbau',
+        bert_model: str = DEFAULT_BERT_MODEL_KEY,
+        pooling: str = 'auto',
+        max_length: int = DEFAULT_MAX_LENGTH,
         corpus_dirs: Optional[Dict[str, Path]] = None,
         nilc_human_csv: Path = NILC_HUMAN_CSV_DEFAULT,
         nilc_llm_csv: Path = NILC_LLM_CSV_DEFAULT,
@@ -983,20 +1096,33 @@ class LinguisticFeaturesPipeline:
         drop_nilc_absolute: bool = True,
         experiment_label: Optional[str] = None,
         results_root: Optional[Path] = None,
+        missing_features: str = 'drop',
     ):
+        if missing_features not in MISSING_FEATURE_POLICIES:
+            raise ValueError(f"missing_features must be one of {MISSING_FEATURE_POLICIES}")
+        # 'drop' keeps only documents present in every feature group (inner join);
+        # 'impute' keeps them all and fills the gaps with the training median
+        # inside each CV fold, so every condition is evaluated on the same split.
+        self.missing_features = missing_features
         self.exp_dir = exp_dir
         self.feature_mode = feature_mode
+        self.bert_model_key = bert_model
+        self.bert_model_name = BERT_MODELS[bert_model]
+        self.pooling = resolve_pooling(bert_model, pooling)
+        self.max_length = max_length
         # Label used in the experiment/file names. Defaults to feature_mode
-        # (combined/linguistic/embedding); the per-module classification
-        # overrides it with "module_<module>" so the outputs do not collide.
-        self.experiment_label = experiment_label or feature_mode
+        # (combined/linguistic/embedding), plus the encoder and the pooling when
+        # they are not the default ones, so a multilingual-BERT battery does not overwrite
+        # the BERTimbau results; the per-module classification overrides it with
+        # "module_<module>" so the outputs do not collide.
+        self.experiment_label = experiment_label or default_experiment_label(
+            feature_mode, bert_model, self.pooling, max_length
+        )
         self.results_root = results_root
         self.feature_groups = feature_groups or [
             'nilcmetrics', 'liwc', 'enhanced_ud',
             'syllables', 'pos_tagger', 'parser_stats', 'sage_terms',
         ]
-        self.bert_model_key = bert_model
-        self.bert_model_name = BERT_MODELS[bert_model]
         self.corpus_dirs = corpus_dirs or CORPUS_DIRS_DEFAULT
         self.nilc_human_csv = nilc_human_csv
         self.nilc_llm_csv = nilc_llm_csv
@@ -1019,7 +1145,10 @@ class LinguisticFeaturesPipeline:
             logger.info(f"  feature_groups={self.feature_groups}")
         if feature_mode in ('embedding', 'combined'):
             logger.info(f"  bert_model={bert_model} ({self.bert_model_name})")
+            logger.info(f"  pooling={self.pooling} | max_length={self.max_length}")
+        logger.info(f"  experiment_label={self.experiment_label}")
         logger.info(f"  cv_folds={cv_folds}")
+        logger.info(f"  missing_features={missing_features}")
 
     # ---- Loading the linguistic features ----
 
@@ -1047,7 +1176,8 @@ class LinguisticFeaturesPipeline:
             if df is not None:
                 frames.append(df)
         if 'parser_stats' in self.feature_groups:
-            df = load_parser_stats(self.parser_human_txt, self.parser_llm_txt)
+            df = load_parser_stats(self.parser_human_txt, self.parser_llm_txt,
+                                   drop_absolute=self.drop_nilc_absolute)
             if df is not None:
                 frames.append(df)
         if 'sage_terms' in self.feature_groups:
@@ -1056,7 +1186,9 @@ class LinguisticFeaturesPipeline:
                 frames.append(df)
         if not frames:
             return None
-        return merge_feature_frames(frames)
+        return merge_feature_frames(
+            frames, how='outer' if self.missing_features == 'impute' else 'inner'
+        )
 
     # ---- Assembling the train/test matrices ----
 
@@ -1160,7 +1292,7 @@ class LinguisticFeaturesPipeline:
         def _expand_and_truncate(pairs):
             keys, texts = [], []
             for fn, corpus, h, l in pairs:
-                h_t, l_t, _ = truncate_pair_min_tokens(h, l, tok, max_length=512)
+                h_t, l_t, _ = truncate_pair_min_tokens(h, l, tok, max_length=self.max_length)
                 keys.append((fn, corpus, 0)); texts.append(h_t)
                 keys.append((fn, corpus, 1)); texts.append(l_t)
             return keys, texts
@@ -1170,10 +1302,12 @@ class LinguisticFeaturesPipeline:
         logger.info(f"  After paired truncation: {len(train_texts)} train texts, {len(test_texts)} test texts")
 
         emb_train = get_or_compute_embeddings(
-            train_keys, train_texts, self.bert_model_name, self.cache_dir
+            train_keys, train_texts, self.bert_model_name, self.cache_dir,
+            max_length=self.max_length, pooling=self.pooling,
         )
         emb_test = get_or_compute_embeddings(
-            test_keys, test_texts, self.bert_model_name, self.cache_dir
+            test_keys, test_texts, self.bert_model_name, self.cache_dir,
+            max_length=self.max_length, pooling=self.pooling,
         )
         return emb_train, emb_test, train_keys, test_keys
 
@@ -1196,37 +1330,35 @@ class LinguisticFeaturesPipeline:
 
         X_train, y_train, X_test, y_test, train_keys, test_keys, feature_names = self.assemble_matrices(splits)
 
+        # Imputation, scaling and SelectKBest live inside the model pipeline: they
+        # are fitted on the training part of each CV fold (and on the full training
+        # set only for the final refit), never on the validation fold or the test set.
+        if top_k_features and top_k_features >= X_train.shape[1]:
+            top_k_features = None
         if normalize_features:
-            logger.info("  Applying StandardScaler")
-            scaler = StandardScaler()
-            X_train = scaler.fit_transform(X_train)
-            X_test = scaler.transform(X_test)
-
-        selected_features = feature_names
-        if top_k_features and top_k_features < X_train.shape[1]:
-            logger.info(f"  SelectKBest top-{top_k_features}")
-            selector = SelectKBest(f_classif, k=top_k_features)
-            X_train = selector.fit_transform(X_train, y_train)
-            X_test = selector.transform(X_test)
-            selected_features = [feature_names[i] for i in selector.get_support(indices=True)]
+            logger.info("  StandardScaler fitted inside each CV fold")
+        if top_k_features:
+            logger.info(f"  SelectKBest top-{top_k_features} fitted inside each CV fold")
 
         if use_grid_search:
             train_groups = [f"{k[0]}__{k[1]}" for k in train_keys]
             best_clf, best_params, cv_results = train_with_grid_search(
-                classifier_type, X_train, y_train, cv=self.cv_folds, groups=train_groups
+                classifier_type, X_train, y_train, cv=self.cv_folds, groups=train_groups,
+                normalize_features=normalize_features, top_k_features=top_k_features,
             )
             cv_score = cv_results['best_score']
         else:
-            best_clf = copy.deepcopy(CLASSIFIERS_CONFIG[classifier_type]['estimator'])
+            best_clf = build_model_pipeline(classifier_type, normalize_features, top_k_features)
             best_clf.fit(X_train, y_train)
             best_params, cv_score = {}, None
+        selected_features = selected_feature_names(best_clf, feature_names)
 
         test_metrics, cm, y_pred = evaluate(best_clf, X_test, y_test)
         tn, fp, fn, tp = cm.ravel()
         logger.info(f"  Test F1={test_metrics['f1']:.4f} Acc={test_metrics['accuracy']:.4f}")
         logger.info(f"  CM: TN={tn} FP={fp} FN={fn} TP={tp}")
 
-        importance = analyze_feature_importance(best_clf, selected_features, top_k=20)
+        importance = analyze_feature_importance(best_clf.named_steps['clf'], selected_features, top_k=20)
 
         results = {
             'experiment': self.experiment_label,
@@ -1234,8 +1366,12 @@ class LinguisticFeaturesPipeline:
             'feature_mode': self.feature_mode,
             'feature_groups': self.feature_groups if self.feature_mode != 'embedding' else None,
             'bert_model': self.bert_model_name if self.feature_mode != 'linguistic' else None,
+            'bert_pooling': self.pooling if self.feature_mode != 'linguistic' else None,
+            'max_length': self.max_length if self.feature_mode != 'linguistic' else None,
             'n_features': len(selected_features),
             'normalized': normalize_features,
+            'preprocessing_scope': 'imputer/scaler/selector fitted inside each CV fold',
+            'missing_features': self.missing_features,
             'top_k_selection': top_k_features,
             'data_split': {'train_samples': int(len(y_train)), 'test_samples': int(len(y_test))},
             'grid_search': {
@@ -1311,6 +1447,7 @@ Examples:
   python linguistic_features.py --feature-mode combined --classifier all
   python linguistic_features.py --feature-mode linguistic --features nilcmetrics,liwc
   python linguistic_features.py --feature-mode embedding --bert-model bertimbau --classifier svm
+  python linguistic_features.py --feature-mode combined --bert-model bert-multilingual --classifier all
         """,
     )
     p.add_argument('--feature-mode', choices=['linguistic', 'embedding', 'combined'],
@@ -1320,7 +1457,17 @@ Examples:
     p.add_argument('--features', default='all',
                    help=('Linguistic groups: nilcmetrics,liwc,enhanced_ud,'
                          'syllables,pos_tagger,parser_stats,sage_terms or all'))
-    p.add_argument('--bert-model', default='bertimbau', choices=list(BERT_MODELS.keys()))
+    p.add_argument('--bert-model', default=DEFAULT_BERT_MODEL_KEY, choices=list(BERT_MODELS.keys()))
+    p.add_argument('--pooling', default='auto', choices=['auto'] + list(POOLING_STRATEGIES),
+                   help='How the frozen encoder output becomes one vector per document. '
+                        '"auto" uses [CLS]; "mean" averages the tokens over the attention mask '
+                        '(ablation)')
+    p.add_argument('--max-length', type=int, default=DEFAULT_MAX_LENGTH,
+                   help=f'Token cap of the paired truncation (default: {DEFAULT_MAX_LENGTH}, '
+                        f'the BERT limit)')
+    p.add_argument('--experiment-label', type=str, default=None,
+                   help='Prefix of the result files (default: derived from the feature mode, '
+                        'the encoder and the pooling)')
     p.add_argument('--corpus-root', type=str, default=None,
                    help='Override the corpus root (default: linguistic_features/data/corpus)')
     p.add_argument('--ud-top-k', type=int, default=500,
@@ -1330,6 +1477,11 @@ Examples:
     p.add_argument('--no-normalize', action='store_true')
     p.add_argument('--no-grid-search', action='store_true')
     p.add_argument('--cv-folds', type=int, default=5)
+    p.add_argument('--missing-features', choices=list(MISSING_FEATURE_POLICIES), default='impute',
+                   help='Documents missing in some feature group: "impute" keeps them all and fills '
+                        'the gaps with the training median inside each CV fold (every condition is '
+                        'evaluated on the same test set); "drop" keeps only documents present in '
+                        'every group (default: impute)')
     p.add_argument('--keep-nilc-absolute', action='store_true',
                    help='Disable the Tier A blacklist (keeps words/sentences/paragraphs/'
                         'subtitles/logic_operators/*_clauses in NILC). Use for ablation.')
@@ -1363,10 +1515,14 @@ def main():
         feature_mode=args.feature_mode,
         feature_groups=feature_groups,
         bert_model=args.bert_model,
+        pooling=args.pooling,
+        max_length=args.max_length,
         corpus_dirs=corpus_dirs,
         ud_top_k=args.ud_top_k,
         cv_folds=args.cv_folds,
         drop_nilc_absolute=not args.keep_nilc_absolute,
+        experiment_label=args.experiment_label,
+        missing_features=args.missing_features,
     )
 
     classifiers = list(CLASSIFIERS_CONFIG.keys()) if args.classifier == 'all' else [args.classifier]
@@ -1392,12 +1548,12 @@ def main():
             }
             for name, r in all_results.items()
         }
-        comp_file = script_dir / "results" / f"comparison_{args.feature_mode}.json"
+        comp_file = script_dir / "results" / f"comparison_{pipeline.experiment_label}.json"
         comp_file.parent.mkdir(parents=True, exist_ok=True)
         with open(comp_file, 'w', encoding='utf-8') as fh:
             json.dump(comp, fh, indent=2, ensure_ascii=False)
         logger.info(f"\nComparison saved to: {comp_file}")
-        print_comparison_table(all_results, title=args.feature_mode.upper())
+        print_comparison_table(all_results, title=pipeline.experiment_label.upper())
 
 
 if __name__ == "__main__":

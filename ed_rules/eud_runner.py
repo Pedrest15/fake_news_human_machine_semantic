@@ -62,21 +62,28 @@ def apply_eud(
 
     tmp_out_path = tmp_in_path.replace(".conllu", "_GREWED.conllu")
     try:
-        cmd = (
-            f"grew transform -config iwpt "
-            f'-grs "{grs_path}" '
-            f"-strat '{strategy}' "
-            f"-i '{tmp_in_path}' "
-            f"-o '{tmp_out_path}'"
-        )
-        result = subprocess.run(
-            cmd,
-            shell=True,
-            capture_output=True,
-            text=True,
-            env=os.environ,
-            timeout=timeout,
-        )
+        # Argument list without a shell: paths and strategy names are never parsed
+        # by /bin/sh, so quotes, spaces or ';' in them cannot alter the command.
+        cmd = [
+            "grew", "transform", "-config", "iwpt",
+            "-grs", str(grs_path),
+            "-strat", strategy,
+            "-i", tmp_in_path,
+            "-o", tmp_out_path,
+        ]
+        try:
+            result = subprocess.run(
+                cmd,
+                capture_output=True,
+                text=True,
+                env=os.environ,
+                timeout=timeout,
+            )
+        except FileNotFoundError as exc:
+            raise RuntimeError(
+                "The 'grew' executable was not found on PATH; install grewpy/grew "
+                "and make sure 'grew' is available in the environment."
+            ) from exc
         if result.returncode != 0:
             raise RuntimeError(
                 f"grew transform failed ({result.returncode}) on {input_conllu.name}:\n"
